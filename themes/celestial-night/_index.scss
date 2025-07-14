@@ -24,15 +24,10 @@ html[saved-theme="dark"] {
   --color-accent-2: hsl(calc(41 - 5), calc(100% * 1.05), calc(100% * 1.29));
   --text-accent: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
   --background-modifier-border: #3b3f56;
-  --color-base-00: #2a3141;
-  --color-base-10: #222a38;
   --color-base-100: #cdd1df;
-  --color-base-20: #262b3b;
   --color-base-30: #1d232f;
   --color-base-35: #3b445d;
   --color-base-40: #515b71;
-  --color-base-50: #5f6980;
-  --color-base-70: #8890a6;
   --color-blue: #56aed6;
   --color-cyan: #6fd2c2;
   --color-green: #a5d18c;
@@ -40,11 +35,9 @@ html[saved-theme="dark"] {
   --color-pink: #ff94c8;
   --color-purple: #b584c7;
   --color-red: #e46f7d;
-  --color-yellow: #ffde73;
   --inline-title-font:
     "Hatolie", "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
     "Arial";
-  --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
 }
 
@@ -194,44 +187,6 @@ html[saved-theme="dark"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -240,9 +195,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(400 + 200);
   --checkbox-radius: 20px;
@@ -266,7 +218,6 @@ body {
     calc(100% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(228, 111, 125, 0.6));
   --graph-node-unresolved: #4f5971;
   --graph-node-tag: #a5d18c;
@@ -305,7 +256,6 @@ body {
   --tag-border-color: hsla(41, 100%, 100%, 0.15);
   --tag-border-color-hover: hsla(41, 100%, 100%, 0.15);
   --background-primary: #14141e;
-  --background-primary-alt: #1d1f2e;
   --background-secondary: #161721;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #0d0d15;
@@ -370,40 +320,6 @@ body {
   padding-top: 0;
   --font-text:
     "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -553,7 +469,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 400;
       color: #91aff3;
       display: block;
@@ -562,7 +477,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 400;
       color: #91aff3;
       display: block;
@@ -663,7 +577,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -812,7 +725,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 900;
     color: inherit;
     font-family: "Merienda";
     font-size: 2em;
@@ -832,7 +744,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 800;
     color: inherit;
     font-family: "Merienda";
     font-size: 1.602em;
@@ -850,7 +761,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: "Merienda";
     font-size: 1.424em;
@@ -868,7 +778,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: "Merienda";
     font-size: 1.266em;
@@ -886,7 +795,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: inherit;
     font-family: "Merienda";
     font-size: 1.125em;
@@ -904,7 +812,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 400;
     color: inherit;
     font-family: "Merienda";
     font-size: 1em;
@@ -1080,7 +987,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: inherit;
       font-family: "Merienda";
       font-size: 1.424em;
@@ -1252,7 +1158,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 700;
         color: inherit;
         font-family: "Merienda";
         font-size: 1.424em;
@@ -1290,7 +1195,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: inherit;
       font-family: "Merienda";
       font-size: 1.424em;

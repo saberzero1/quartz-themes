@@ -31,9 +31,6 @@ html[saved-theme="dark"] {
   --tag-radius: 16px;
   --background-primary: #08090e;
   --background-secondary: #08090e;
-  --color-base-00: #08090e;
-  --color-base-10: #17181e;
-  --color-base-20: #17181e;
   --code-background: #17181e;
   --hr-color: #17181e;
   --background-modifier-hover: #17181e;
@@ -42,16 +39,12 @@ html[saved-theme="dark"] {
   --color-base-35: #4f5053;
   --color-base-40: #4f5053;
   --text-faint: #68696c;
-  --color-base-50: #68696c;
   --text-muted: #818184;
-  --color-base-70: #e1e2e9;
   --color-base-100: #f1f2f5;
   --text-normal: #fbfcfc;
   --collapse-icon-color-collapsed: #fbfcfc;
-  --mono-rgb-100: 251, 252, 252;
   --color-red: #f18196;
   --color-orange: #f19a81;
-  --color-yellow: #ebcb8b;
   --color-blue: #bcf181;
   --color-green: #81f1a4;
   --color-cyan: #8be3eb;
@@ -84,9 +77,6 @@ html[saved-theme="light"] {
   --tag-radius: 16px;
   --background-primary: #fbfcfc;
   --background-secondary: #fbfcfc;
-  --color-base-00: #fbfcfc;
-  --color-base-10: #f1f2f5;
-  --color-base-20: #f1f2f5;
   --code-background: #f1f2f5;
   --hr-color: #f1f2f5;
   --background-modifier-hover: #f1f2f5;
@@ -95,16 +85,12 @@ html[saved-theme="light"] {
   --color-base-35: #68696c;
   --color-base-40: #68696c;
   --text-faint: #818184;
-  --color-base-50: #4f5053;
   --text-muted: #818184;
-  --color-base-70: #17181e;
   --color-base-100: #08090e;
   --text-normal: #08090e;
   --collapse-icon-color-collapsed: #08090e;
-  --mono-rgb-100: 8, 9, 14;
   --color-red: 241, 129, 150;
   --color-orange: #f19a81;
-  --color-yellow: #ebcb8b;
   --color-blue: #bcf181;
   --color-green: #81f1a4;
   --color-cyan: #8be3eb;
@@ -275,44 +261,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -321,9 +269,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
@@ -351,7 +296,6 @@ body {
     calc(73% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(241, 129, 150, 0.6));
   --graph-node-unresolved: #68696c;
   --graph-node-tag: #81f1a4;
@@ -391,7 +335,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(251, 252, 252, 0.067);
   --background-modifier-border: #292a2f;
@@ -445,40 +388,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -626,7 +535,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: #08090e;
 
@@ -634,7 +542,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: #08090e;
     }
@@ -734,7 +641,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -883,7 +789,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -903,7 +808,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -921,7 +825,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -939,7 +842,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -957,7 +859,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -975,7 +876,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -1150,7 +1050,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       font-family: inherit;
       font-size: 1.8em;
       font-style: normal;
@@ -1324,7 +1223,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         font-family: inherit;
         font-size: 1.8em;
         font-style: normal;
@@ -1362,7 +1260,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       font-family: inherit;
       font-size: 1.8em;
       font-style: normal;

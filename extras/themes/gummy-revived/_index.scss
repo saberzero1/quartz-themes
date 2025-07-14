@@ -1,22 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  background: linear-gradient(to right, var(--gradient-header));
-  background-image: linear-gradient(to right, var(--gradient-header));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-}
-
 body {
   figure[data-rehype-pretty-code-figure] pre,
   pre {
@@ -24,10 +5,29 @@ body {
       -24px 24px 69px -3px #8a5cf533,
       24px -24px 69px -3px hsla(438, 88%, 66%, 0.13) !important;
   }
-}
 
-.article-title {
-  width: fit-content;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    background: linear-gradient(to right, var(--gradient-header));
+    background-image: linear-gradient(to right, var(--gradient-header));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+  }
+
+  .article-title {
+    width: fit-content;
+  }
 }
 
 :root,

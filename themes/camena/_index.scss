@@ -21,26 +21,19 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-red: hsl(5, 88%, 66%);
   --color-orange: hsl(25, 88%, 66%);
-  --color-yellow: hsl(50, 88%, 66%);
   --color-green: hsl(100, 88%, 66%);
   --color-cyan: hsl(185, 88%, 66%);
   --color-blue: hsl(210, 88%, 66%);
   --color-purple: hsl(270, 88%, 66%);
   --color-pink: hsl(320, 88%, 66%);
-  --color-base-00: hsl(258, calc(88% / 3), 2%);
-  --color-base-10: hsl(258, calc(88% / 3), 10%);
-  --color-base-20: hsl(258, calc(88% / 3), 15%);
   --color-base-30: hsl(258, calc(88% / 3), 25%);
   --color-base-35: hsl(258, calc(88% / 3), 30%);
   --color-base-40: hsl(258, calc(88% / 3), 35%);
-  --color-base-50: hsl(258, calc(88% / 3), 40%);
-  --color-base-70: hsl(258, calc(88% / 3), 70%);
   --color-base-100: hsl(258, calc(88% / 3), 80%);
 }
 
@@ -58,25 +51,18 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-red: hsl(5, 88%, 66%);
   --color-orange: hsl(25, 88%, 66%);
-  --color-yellow: hsl(50, 88%, 66%);
   --color-green: hsl(100, 88%, 66%);
   --color-cyan: hsl(185, 88%, 66%);
   --color-blue: hsl(210, 88%, 66%);
   --color-purple: hsl(270, 88%, 66%);
   --color-pink: hsl(320, 88%, 66%);
-  --color-base-00: hsl(258, calc(88% / 3), 98%);
-  --color-base-10: hsl(258, calc(88% / 3), 90%);
-  --color-base-20: hsl(258, calc(88% / 3), 85%);
   --color-base-30: hsl(258, calc(88% / 3), 75%);
   --color-base-35: hsl(258, calc(88% / 3), 70%);
   --color-base-40: hsl(258, calc(88% / 3), 65%);
-  --color-base-50: hsl(258, calc(88% / 3), 60%);
-  --color-base-70: hsl(258, calc(88% / 3), 30%);
   --color-base-100: hsl(258, calc(88% / 3), 20%);
 }
 
@@ -100,44 +86,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -146,9 +94,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
@@ -170,7 +115,6 @@ body {
     calc(66% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(from hsl(5, 88%, 66%) r g b / 0.6));
   --h1-font: inherit;
   --h3-line-height: 1.3;
@@ -196,7 +140,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-modifier-border: hsl(258, calc(88% / 3), 25%);
   --background-modifier-border-hover: hsl(258, calc(88% / 3), 30%);
   --background-modifier-border-focus: hsl(258, calc(88% / 3), 35%);
@@ -274,40 +217,6 @@ body {
   --font-text:
     "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -455,7 +364,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
 
@@ -463,7 +371,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
     }
@@ -564,7 +471,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -712,7 +618,6 @@ body {
   /* HEADINGS */
   h1 {
     margin-block-start: 0rem;
-    --font-weight: 700;
     font-size: 2.488em;
     font-style: normal;
     font-variant: normal;
@@ -735,7 +640,6 @@ body {
   h2.page-title a,
   h2 {
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-size: 2.047em;
     font-style: normal;
     font-variant: normal;
@@ -758,7 +662,6 @@ body {
   }
   h3 {
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-size: 1.728em;
     font-variant: normal;
     font-weight: 600;
@@ -778,7 +681,6 @@ body {
   }
   h4 {
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-size: 1.44em;
     font-style: normal;
     font-variant: normal;
@@ -799,7 +701,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-size: 1.2em;
     font-style: normal;
     font-variant: normal;
@@ -818,7 +719,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
@@ -999,7 +899,6 @@ body {
   .backlinks {
     h3 {
       margin-block-start: 0rem;
-      --font-weight: 600;
       font-size: 1.728em;
       font-variant: normal;
       font-weight: 600;
@@ -1173,7 +1072,6 @@ body {
     button.toc-header {
       h3 {
         margin-block-start: 0rem;
-        --font-weight: 600;
         font-size: 1.728em;
         font-variant: normal;
         font-weight: 600;
@@ -1213,7 +1111,6 @@ body {
   .toc {
     h3 {
       margin-block-start: 0rem;
-      --font-weight: 600;
       font-size: 1.728em;
       font-variant: normal;
       font-weight: 600;

@@ -24,15 +24,10 @@ html[saved-theme="dark"] {
   --color-accent-2: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
   --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --text-highlight-bg: hsl(210, 77%, 51%, 0.3);
-  --color-base-00: #3b3347;
-  --color-base-10: #413b4e;
   --color-base-100: #a0a7c4;
-  --color-base-20: #2f2837;
   --color-base-30: #4e4560;
   --color-base-35: #545e76;
   --color-base-40: #626f86;
-  --color-base-50: #7d7f95;
-  --color-base-70: #7f83a1;
   --color-blue: #88c6e3;
   --color-cyan: #6fd2c2;
   --color-green: #75c297;
@@ -40,8 +35,6 @@ html[saved-theme="dark"] {
   --color-pink: #dc76a7;
   --color-purple: #b584c7;
   --color-red: #e17884;
-  --color-yellow: #dcb46f;
-  --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
 }
 
@@ -61,15 +54,10 @@ html[saved-theme="light"] {
   --color-accent-hsl: 210, 77%, 51%;
   --color-accent-2: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --text-highlight-bg: hsl(210, 77%, 51%, 0.2);
-  --color-base-00: #f8f3f2;
-  --color-base-10: #f0e9e4;
   --color-base-100: #594f67;
-  --color-base-20: #f4ebeb;
   --color-base-30: #cec2c577;
   --color-base-35: #b5a7ac;
   --color-base-40: #b6a4b2;
-  --color-base-50: #a391a3;
-  --color-base-70: #685a68;
   --color-blue: #88c6e3;
   --color-cyan: #6fd2c2;
   --color-green: #75c297;
@@ -77,8 +65,6 @@ html[saved-theme="light"] {
   --color-pink: #dc76a7;
   --color-purple: #b584c7;
   --color-red: #e17884;
-  --color-yellow: #dcb46f;
-  --mono-rgb-100: 0, 0, 0;
   color-scheme: light;
 }
 
@@ -373,44 +359,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -419,9 +367,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 0px;
@@ -453,7 +398,6 @@ body {
     calc(51% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(212, 76, 71, 0.6));
   --graph-node-unresolved: #707070;
   --graph-node-tag: #4f8344;
@@ -483,7 +427,6 @@ body {
   --search-icon-color: #a0a0a0;
   --tag-weight: inherit;
   --background-primary: #191919;
-  --background-primary-alt: #2d2d2d;
   --background-secondary: #202020;
   --background-modifier-hover: rgba(0, 0, 0, 0.067);
   --background-modifier-border: #21201e;
@@ -542,40 +485,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -726,7 +635,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: #ffffff;
 
@@ -734,7 +642,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: #ffffff;
     }
@@ -834,7 +741,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -983,7 +889,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: "Linux Libertine", "Georgia", "Times", serif;
     font-size: 1.4em;
@@ -1003,7 +908,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: inherit;
     font-size: 1.3em;
@@ -1021,7 +925,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: inherit;
     font-size: 1.15em;
@@ -1039,7 +942,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: inherit;
     font-size: 1.1em;
@@ -1057,7 +959,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: inherit;
     font-size: 1.05em;
@@ -1075,7 +976,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #ffffff;
     font-family: inherit;
     font-size: 1em;
@@ -1248,7 +1148,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #ffffff;
       font-family: inherit;
       font-size: 1.15em;
@@ -1420,7 +1319,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: #ffffff;
         font-family: inherit;
         font-size: 1.15em;
@@ -1458,7 +1356,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #ffffff;
       font-family: inherit;
       font-size: 1.15em;

@@ -29,17 +29,11 @@ html[saved-theme="dark"] {
   --graph-line: transparent;
   --background-modifier-hover: rgba(217, 224, 238, 0.075);
   --background-primary: rgb(20, 20, 20);
-  --background-primary-alt: rgb(25, 26, 29);
   --background-secondary: rgb(25, 26, 29);
-  --color-base-00: rgb(26, 33, 42);
-  --color-base-10: rgb(25, 26, 29);
   --color-base-100: rgb(217, 224, 238);
-  --color-base-20: rgb(20, 20, 20);
   --color-base-30: rgb(45, 40, 72);
   --color-base-35: rgb(87, 82, 105);
   --color-base-40: rgb(109, 107, 125);
-  --color-base-50: rgb(152, 139, 162);
-  --color-base-70: rgb(190, 179, 193);
   --color-blue: rgb(147, 183, 245);
   --color-cyan: rgb(104, 188, 204);
   --color-green: rgb(56, 198, 141);
@@ -47,8 +41,6 @@ html[saved-theme="dark"] {
   --color-pink: rgb(243, 137, 143);
   --color-purple: rgb(196, 167, 231);
   --color-red: rgb(255, 98, 107);
-  --color-yellow: rgb(249, 226, 175);
-  --mono-rgb-100: 217, 224, 238;
   --text-faint: rgb(190, 179, 193);
   --text-highlight-bg: rgba(247, 157, 124, 0.2);
   --text-muted: rgb(167, 156, 176);
@@ -76,17 +68,11 @@ html[saved-theme="light"] {
   --graph-line: rgb(167, 156, 176);
   --background-modifier-hover: rgba(217, 224, 238, 0.075);
   --background-primary: rgb(20, 20, 20);
-  --background-primary-alt: rgb(25, 26, 29);
   --background-secondary: rgb(25, 26, 29);
-  --color-base-00: rgb(26, 33, 42);
-  --color-base-10: rgb(25, 26, 29);
   --color-base-100: rgb(217, 224, 238);
-  --color-base-20: rgb(20, 20, 20);
   --color-base-30: rgb(45, 40, 72);
   --color-base-35: rgb(87, 82, 105);
   --color-base-40: rgb(109, 107, 125);
-  --color-base-50: rgb(152, 139, 162);
-  --color-base-70: rgb(190, 179, 193);
   --color-blue: rgb(147, 183, 245);
   --color-cyan: rgb(104, 188, 204);
   --color-green: rgb(56, 198, 141);
@@ -94,8 +80,6 @@ html[saved-theme="light"] {
   --color-pink: rgb(243, 137, 143);
   --color-purple: rgb(196, 167, 231);
   --color-red: rgb(255, 98, 107);
-  --color-yellow: rgb(249, 226, 175);
-  --mono-rgb-100: 217, 224, 238;
   --text-faint: rgb(190, 179, 193);
   --text-highlight-bg: rgba(247, 157, 124, 0.2);
   --text-muted: rgb(167, 156, 176);
@@ -263,44 +247,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -309,9 +255,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
@@ -335,7 +278,6 @@ body {
   --collapse-icon-color: rgb(190, 179, 193);
   --collapse-icon-color-collapsed: rgb(235, 188, 186);
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(255, 98, 107, 0.6));
   --graph-node-unresolved: rgb(190, 179, 193);
   --graph-node-tag: rgb(56, 198, 141);
@@ -370,7 +312,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(217, 224, 238, 0.067);
   --background-modifier-border: rgb(45, 40, 72);
@@ -431,40 +372,6 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -614,7 +521,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
       flex-grow: 1;
@@ -623,7 +529,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
       flex-grow: 1;
@@ -724,7 +629,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -873,7 +777,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: rgb(247, 157, 124);
     font-family: var(--interface-font);
     font-size: 1.802em;
@@ -893,7 +796,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: rgb(247, 157, 124);
     font-family:
       ui-sans-serif,
@@ -922,7 +824,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: rgb(247, 157, 124);
     font-family:
       ui-sans-serif,
@@ -951,7 +852,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: rgb(247, 157, 124);
     font-family:
       ui-sans-serif,
@@ -980,7 +880,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: rgb(247, 157, 124);
     font-family:
       ui-sans-serif,
@@ -1009,7 +908,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: rgb(247, 157, 124);
     font-family:
       ui-sans-serif,
@@ -1205,7 +1103,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: rgb(247, 157, 124);
       font-family:
         ui-sans-serif,
@@ -1405,7 +1302,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: rgb(247, 157, 124);
         font-family:
           ui-sans-serif,
@@ -1454,7 +1350,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: rgb(247, 157, 124);
       font-family:
         ui-sans-serif,

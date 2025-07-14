@@ -21,19 +21,12 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
   --color-red: #f85c51;
   --color-orange: #e9973f;
-  --color-yellow: #e0de71;
   --color-green: #23d18c;
   --color-cyan: #0acecb;
   --color-blue: #69afff;
@@ -46,7 +39,6 @@ html[saved-theme="dark"] {
   --text-muted: #807874;
   --text-accent: hsl(4, 89%, 64%);
   --background-primary: #121110;
-  --background-primary-alt: #232120;
   --background-secondary: #181716;
   --color-accent-hsl: 4, 89%, 64%;
   --text-highlight-bg: #69afff;
@@ -67,19 +59,12 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
   --color-base-100: #222222;
   --color-red: #f85c51;
   --color-orange: #e9973f;
-  --color-yellow: #eacf00;
   --color-green: #0cc77c;
   --color-cyan: #0ecdc9;
   --color-blue: #d6e9ff;
@@ -92,7 +77,6 @@ html[saved-theme="light"] {
   --text-muted: #807874;
   --text-accent: hsl(4, 89%, 64%);
   --background-primary: #121110;
-  --background-primary-alt: #232120;
   --background-secondary: #181716;
   --color-accent-hsl: 4, 89%, 64%;
   --text-highlight-bg: #69afff;
@@ -172,44 +156,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -218,17 +164,12 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --collapse-icon-color: hsl(4, 89%, 64%);
   --collapse-icon-color-collapsed: hsl(4, 89%, 64%);
-  --font-weight: 400;
   --link-weight: var(--link-weight);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --text-normal: #dadada;
   --text-muted: #b3b3b3;
@@ -320,40 +261,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", IBM Plex Sans, sans-serif, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -501,7 +408,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
 
@@ -509,7 +415,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
     }
@@ -609,7 +514,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -758,7 +662,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 2em;
@@ -778,7 +681,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 1.8em;
@@ -796,7 +698,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 1.4em;
@@ -814,7 +715,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 1.2em;
@@ -832,7 +732,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 1.125em;
@@ -850,7 +749,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: hsl(4, 89%, 64%);
     font-family: inherit;
     font-size: 1em;
@@ -1025,7 +923,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: hsl(4, 89%, 64%);
       font-family: inherit;
       font-size: 1.4em;
@@ -1191,7 +1088,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: hsl(4, 89%, 64%);
         font-family: inherit;
         font-size: 1.4em;
@@ -1229,7 +1125,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: hsl(4, 89%, 64%);
       font-family: inherit;
       font-size: 1.4em;
