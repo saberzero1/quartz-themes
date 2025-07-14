@@ -1,0 +1,49 @@
+name: Release Themes
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    if: ${{ github.repository == 'saberzero1/quartz-themes' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: "Install just"
+        run: npm i just-install
+
+      - name: Build plugin
+        run: |
+          npm ci --include=dev
+          npm run build
+
+      - name: "Check style"
+        run: npm run --silent verify-ci
+
+      - name: "Prepare themes"
+        run: |
+          mkdir output
+          sed <theme-list 's#.*#cp ./themes/"&"/_index.scss ./output/"&".scss#' | sh
+
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${GITHUB_REF#refs/tags/}"
+
+          files="${sed <theme-list 's#.*#echo ./output/"&".scss \\#' | sh}"
+
+          gh release create "$tag" \
+            --title="$tag" \
+            --draft \
+            "$files"
