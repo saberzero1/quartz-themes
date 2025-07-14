@@ -363,15 +363,22 @@ html {
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
-  //%%.workspace-split.mod-root%background-color%%
-
   background-color: var(--background-primary);
+
+  //%%body%background-color%%
+
   overflow: initial;
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
+
+    //%%.workspace-split.mod-root%background-color%%
+
     > #quartz-root {
       background-color: var(--background-primary);
+
+      //%%body%background-color%%
+
     }
   }
   
@@ -395,13 +402,13 @@ body {
 
       //%%.workspace-split.mod-root%background-color%%
 
-      background-color: var(--background-secondary);
+      /*background-color: var(--background-secondary);*/
     }
     @media all and not ($desktop) {
       &.right {
         //%%.workspace-split.mod-root%background-color%%
 
-        background-color: var(--background-primary);
+        /*background-color: var(--background-primary);*/
       }
     }
     @media all and ($mobile) {
@@ -411,7 +418,7 @@ body {
 
           //%%.workspace-split.mod-root%background-color%%
 
-          background-color: var(--background-secondary);
+          /*background-color: var(--background-secondary);*/
 
           content: " ";
           display: block;
@@ -464,6 +471,9 @@ body {
     &.internal {
       color: var(--text-a, var(--link-color));
       background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+
+      //%%.markdown-rendered .internal-link%%
+
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         --textHighlight-fallback: 255, 208, 0;
@@ -476,6 +486,9 @@ body {
             0.1
           )
         );
+
+        //%%a.tag%%
+
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -483,7 +496,22 @@ body {
             --tag-background-hover,
             hsla(var(--interactive-accent-hsl, var(--highlight-fallback)), 0.2)
           );
+
+          //%%a.tag:hover%%
+
         }
+      }
+
+      &.broken {
+
+        //%%.markdown-rendered .internal-link.is-unresolved%%
+
+        &:hover {
+
+          //%%.markdown-rendered .internal-link.is-unresolved:hover%%
+
+        }
+
       }
     }
     &.external {
@@ -499,9 +527,15 @@ body {
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
+
+      //%%.external-link%%
+
       &:hover {
         color: var(--link-external-color-hover);
         /* text-decoration-line: var(--link-external-decoration-hover); */
+
+        //%%.external-link:hover%%
+
       }
     }
   }
@@ -517,11 +551,17 @@ body {
     /* text-decoration: var(--tag-decoration); */
     /* padding: var(--tag-padding-y) var(--tag-padding-x); */
     /* line-height: 1; */
+
+    //%%a.tag%%
+
     &:hover {
       background-color: var(--tag-background-hover);
       border: var(--tag-border-width) solid var(--tag-border-color-hover);
       color: var(--tag-color-hover);
       text-decoration: var(--tag-decoration-hover);
+
+      //%%a.tag:hover%%
+
     }
   }
   input[type="checkbox"] {
@@ -740,11 +780,11 @@ body {
   }
 
   code {
+    background-color: var(--code-background);
+    color: var(--code-normal);
 
     //%%.markdown-rendered code%%
 
-    background-color: var(--code-background);
-    color: var(--code-normal);
     font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
@@ -815,7 +855,7 @@ body {
 
         //%%.workspace-split.mod-root%background-color%%
 
-        background-color: var(--background-secondary);
+        /*background-color: var(--background-secondary);*/
 
         left: -1rem;
       }
@@ -1166,7 +1206,7 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
-    background-color: var(--background-primary);
+    /*background-color: var(--background-primary);*/
     & .popover-inner {
 
       //%%.popover%border%%
@@ -1175,14 +1215,14 @@ body {
       
       //%%.popover%border-radius%%
 
-      background-color: var(--background-primary);
+      /*background-color: var(--background-primary);*/
     }
   }
 
   /* BACKGROUNDS */
-  section {
+  /*section {
     background-color: var(--background-primary);
-  }
+  }*/
   .page > #quartz-body {
     .center,
     footer {
@@ -1211,9 +1251,11 @@ body {
         }
       }
     }
+    /*
     .sidebar {
       background-color: var(--background-secondary);
     }
+    */
   }
 
   /* TEXT */
