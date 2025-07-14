@@ -133,7 +133,6 @@ html[saved-theme="dark"] {
     --checkbox-border-color-hover: var(--color-d-gray-60);
     --nav-item-color: var(--color-d-gray-40);
     --nav-item-color-active: var(--color-d-gray-40);
-    --nav-item-background-hover: #000000;
     --nav-item-background-active: #000000;
     --nav-indentation-guide-color: var(--indentation-guide-color);
     --nav-heading-color: var(--color-d-gray-50);
@@ -384,7 +383,6 @@ html[saved-theme="light"] {
     --checkbox-border-color-hover: var(--color-l-gray-70);
     --nav-item-color: var(--color-l-gray-110);
     --nav-item-color-active: var(--color-l-gray-110);
-    --nav-item-background-hover: #ffffff;
     --nav-item-background-active: #ffffff;
     --nav-indentation-guide-color: var(--indentation-guide-color);
     --nav-heading-color: var(--color-l-gray-100);
@@ -634,7 +632,6 @@ body {
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
   --nav-item-color-active: var(--text-normal);
-  --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-children-margin-start: var(--size-4-3);
@@ -881,8 +878,6 @@ html {
       rgba(var(--callout-color)) var(--callout-color-opacity),
       var(--editor-bg-color)
     );
-
-    border-color: var(--border);
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -1800,9 +1795,9 @@ body {
   }
 
   .content-meta {
-    color: var(--metadata-input-text-color);
-
     color: var(--text-normal);
+
+    color: var(--metadata-input-text-color);
   }
 
   .breadcrumbs-element p {
@@ -1901,7 +1896,7 @@ body {
 
           font-size: 1rem;
           line-height: 1.5rem;
-          background-color: var(--nav-item-background-hover);
+
           border-radius: 0.25rem;
         }
       }
@@ -1933,6 +1928,11 @@ body {
         position: relative;
 
         a {
+          color: inherit;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 6px 8px 6px 24px;
+
           padding: var(--nav-item-padding);
           border-radius: var(--radius-s);
           color: var(--nav-item-color);
@@ -1946,16 +1946,11 @@ body {
             padding,
             transform var(--anim-duration-fast) var(--anim-motion-smooth);
 
-          color: inherit;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          padding: 6px 8px 6px 24px;
-
           &.active,
           &:not(.folder-title):hover {
             font-size: 1rem;
             line-height: 1.5rem;
-            background-color: var(--nav-item-background-hover);
+
             border-radius: 0.25rem;
           }
           &[data-for$="/index"] {
@@ -2019,21 +2014,20 @@ body {
 
         margin-block: 0;
       }
+      color: inherit;
 
       color: var(--h3-color);
-
-      color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
+        color: inherit;
+
         color: var(--nav-item-color);
 
         font-weight: var(--nav-item-weight);
 
         font-size: var(--nav-item-size);
-
-        color: inherit;
       }
     }
   }
@@ -2142,6 +2136,10 @@ body {
     }
     & > .search-container {
       & > .search-space {
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
+
         background-color: var(--background-primary);
 
         border: var(--prompt-border-width) solid var(--prompt-border-color);
@@ -2150,11 +2148,10 @@ body {
 
         box-shadow: var(--shadow-l);
 
-        color: var(--text-normal);
-        background-color: var(--background-secondary);
-        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
+          background: transparent;
+
           width: 100%;
           padding-inline-end: var(--size-4-12);
           background-color: var(--background-primary);
@@ -2168,13 +2165,13 @@ body {
 
           margin-bottom: 0;
           border-bottom: none;
-          background: transparent;
           font-size: 1.1rem;
         }
         & > * {
+          background: transparent;
+
           color: var(--text-normal);
 
-          background: transparent;
           margin-bottom: 0;
           box-shadow: none;
         }
@@ -2189,9 +2186,9 @@ body {
             border-top-right-radius: 0;
           }
           & .highlight {
-            font-weight: var(--font-semibold);
-
             background-color: var(--quartz-text-highlight);
+
+            font-weight: var(--font-semibold);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -2287,6 +2284,8 @@ body {
   }
 
   .popover {
+    border: unset;
+
     background-color: var(--background-primary);
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius-m);
@@ -2299,7 +2298,6 @@ body {
     display: block;
     position: fixed;
     z-index: 999;
-    border: unset;
 
     & .popover-inner {
       border: 1px solid var(--background-modifier-border);

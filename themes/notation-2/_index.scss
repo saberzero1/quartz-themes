@@ -343,7 +343,6 @@ body {
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
   --nav-item-color-active: var(--text-normal);
-  --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6);
@@ -484,8 +483,6 @@ html {
     padding: 1em;
 
     background-color: transparent;
-
-    border-color: var(--border);
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -1210,9 +1207,9 @@ body {
   }
 
   .content-meta {
-    color: var(--metadata-input-text-color);
-
     color: var(--text-normal);
+
+    color: var(--metadata-input-text-color);
   }
 
   .breadcrumbs-element p {
@@ -1299,7 +1296,7 @@ body {
 
           font-size: 1rem;
           line-height: 1.5rem;
-          background-color: var(--nav-item-background-hover);
+
           border-radius: 0.25rem;
         }
       }
@@ -1331,6 +1328,11 @@ body {
         position: relative;
 
         a {
+          color: inherit;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 6px 8px 6px 24px;
+
           padding: var(--nav-item-padding);
           border-radius: var(--radius-s);
           cursor: var(--cursor);
@@ -1341,16 +1343,11 @@ body {
           font-weight: var(--font-bold);
           margin-bottom: 0.4em;
 
-          color: inherit;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          padding: 6px 8px 6px 24px;
-
           &.active,
           &:not(.folder-title):hover {
             font-size: 1rem;
             line-height: 1.5rem;
-            background-color: var(--nav-item-background-hover);
+
             border-radius: 0.25rem;
           }
           &[data-for$="/index"] {
@@ -1404,21 +1401,20 @@ body {
 
         margin-block: 0;
       }
+      color: inherit;
 
       color: var(--h3-color);
-
-      color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
+        color: inherit;
+
         color: var(--nav-item-color);
 
         font-weight: var(--nav-item-weight);
 
         font-size: var(--nav-item-size);
-
-        color: inherit;
       }
     }
   }
@@ -1517,6 +1513,10 @@ body {
     }
     & > .search-container {
       & > .search-space {
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
+
         background-color: var(--background-primary);
 
         border: var(--prompt-border-width) solid var(--prompt-border-color);
@@ -1525,11 +1525,10 @@ body {
 
         box-shadow: var(--shadow-l);
 
-        color: var(--text-normal);
-        background-color: var(--background-secondary);
-        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
+          background: transparent;
+
           width: 100%;
           padding: var(--size-4-6);
           padding-inline-end: var(--size-4-12);
@@ -1542,13 +1541,13 @@ body {
 
           margin-bottom: 0;
           border-bottom: none;
-          background: transparent;
           font-size: 1.1rem;
         }
         & > * {
+          background: transparent;
+
           color: var(--text-normal);
 
-          background: transparent;
           margin-bottom: 0;
           box-shadow: none;
         }
@@ -1563,9 +1562,9 @@ body {
             border-top-right-radius: 0;
           }
           & .highlight {
-            font-weight: bold;
-
             background-color: var(--quartz-text-highlight);
+
+            font-weight: bold;
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1661,6 +1660,8 @@ body {
   }
 
   .popover {
+    border: unset;
+
     background-color: var(--background-primary);
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius-m);
@@ -1673,7 +1674,6 @@ body {
     display: block;
     position: fixed;
     z-index: 999;
-    border: unset;
 
     & .popover-inner {
       border: 1px solid var(--background-modifier-border);
