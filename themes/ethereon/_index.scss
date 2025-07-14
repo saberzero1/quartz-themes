@@ -372,10 +372,6 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -405,7 +401,6 @@ body {
   -webkit-user-select: none;
   caret-color: hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15));
   --font-monospace: "Source Code Pro", "Courier New", monospace;
-  --font-text: "Inter", sans-serif;
   -webkit-font-smoothing: auto;
   --inline-title-color: #808082;
   --h1-color: #b65e67;
@@ -415,6 +410,11 @@ body {
   --background-modifier-border: #1e1e1e;
   --checkbox-radius: 10px;
   --hr-thickness: 1px;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1575,10 +1575,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

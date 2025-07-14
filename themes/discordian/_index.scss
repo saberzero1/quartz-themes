@@ -245,10 +245,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
@@ -257,7 +253,6 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsla(265, 66%, 72%, 1);
-  padding-top: 0;
   -moz-font-feature-settings: "tnum";
   -moz-font-variant-numeric: tabular-nums;
   -webkit-font-feature-settings: "tnum";
@@ -277,6 +272,11 @@ body {
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
   word-wrap: break-word;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1494,10 +1494,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -322,11 +322,6 @@ body {
     "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "Inter", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -372,6 +367,11 @@ body {
   --checkbox-radius: 4px;
   --hr-thickness: 1px;
   --tag-radius: 1em;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Inter", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1263,10 +1263,10 @@ body {
     transition: 70ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
     &:hover {
-      background-color: #000000;
       box-shadow:
         inset 0px 0px 0px 1px #000000,
         0px 2px 4px -2px #000000;
+      background-color: #000000;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1786,10 +1786,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

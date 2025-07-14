@@ -280,11 +280,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -330,6 +325,11 @@ body {
   --link-external-color: #ffc400;
   --link-external-color-hover: #ffc400;
   --text-faint: #b3b3b3;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1102,7 +1102,6 @@ body {
     user-select: none;
 
     &:hover {
-      background-color: hsla(198, 63%, 57%, 0.25);
       border-radius: 3px;
       color: white;
       animation: 0.3s bighover forwards;
@@ -1112,6 +1111,7 @@ body {
       transition:
         background-color 0.2s,
         box-shadow 0.2s;
+      background-color: hsla(198, 63%, 57%, 0.15);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1662,10 +1662,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -253,11 +253,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -272,6 +267,11 @@ body {
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   color: #ffffffdd;
   font-family: "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1431,13 +1431,13 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
     background-color: #150b55d6;
     border: 1px solid #5050c0;
     border-radius: 20px;
+    display: none;
 
     display: block;
     position: fixed;

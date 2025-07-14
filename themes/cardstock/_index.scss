@@ -394,10 +394,6 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -425,11 +421,15 @@ body {
   -webkit-user-select: none;
   caret-color: #c95454;
   --font-monospace: MonoLisa, "Source Code Pro", monospace;
-  --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
   --inline-title-color: #f0eae2;
   --tag-background: rgba(201, 84, 84, 0.1);
   color: #ffffff;
   font-size: 20px;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1108,8 +1108,8 @@ body {
     color: #f0eae2;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
       cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.15);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1590,10 +1590,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

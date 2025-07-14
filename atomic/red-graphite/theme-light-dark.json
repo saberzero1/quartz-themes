@@ -400,18 +400,6 @@
       "dark": "var(--color-base-160)"
     }
   },
-  ".backlink-pane > .tree-item-self.is-clickable:hover": {
-    "color": {
-      "light": "var(--color-base-00)",
-      "dark": "var(--color-base-100)"
-    }
-  },
-  ".outgoing-link-pane > .tree-item-self.is-clickable:hover": {
-    "color": {
-      "light": "var(--color-base-00)",
-      "dark": "var(--color-base-100)"
-    }
-  },
   ".nav-file-title:hover svg": { "color": "var(--color-base-00)" },
   ".nav-folder-title:hover svg": { "color": "var(--color-base-00)" },
   ".nav-file-title": {
@@ -440,10 +428,6 @@
       "light": "1px solid var(--color-base-90)",
       "dark": "1px solid var(--color-base-110)"
     }
-  },
-  ".menu-item:hover:not(.is-disabled):not(.is-label)": {
-    "color": "var(--color-base-20)",
-    "background-color": "var(--color-accent)"
   },
   ".horizontal-tab-nav-item": {
     "color": {
@@ -690,6 +674,22 @@
     "border-radius": "5px",
     "padding": "10px 20px",
     "margin": "2px 0 2px -20px"
+  },
+  ".backlink-pane > .tree-item-self.is-clickable:hover": {
+    "color": {
+      "light": "var(--color-base-00)",
+      "dark": "var(--color-base-100)"
+    }
+  },
+  ".outgoing-link-pane > .tree-item-self.is-clickable:hover": {
+    "color": {
+      "light": "var(--color-base-00)",
+      "dark": "var(--color-base-100)"
+    }
+  },
+  ".menu-item:hover:not(.is-disabled):not(.is-label)": {
+    "color": "var(--color-base-20)",
+    "background-color": "var(--color-accent)"
   },
   ".dropdown": {
     "background-image": {

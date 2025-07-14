@@ -350,11 +350,6 @@ body {
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-accent-hover: hsl(calc(219 - 5), calc(99% * 1.05), calc(53% * 1.29));
   --interactive-accent-hsl: 219, 99%, 53%;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -394,6 +389,11 @@ body {
   --text-accent: #0f62fe;
   --background-modifier-border-hover: transparent;
   --icon-color: #8d8d8d;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1563,10 +1563,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -470,16 +470,15 @@ body {
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: 258, 88%, 66%;
+  --font-text:
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   --font-monospace:
     "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text:
-    "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -521,6 +520,13 @@ body {
   --h3-line-height: 1.5;
   hanging-punctuation: first allow-end last;
   position: relative;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text:
+    "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1695,6 +1701,7 @@ body {
       0px 6.3px 24.7px #000000,
       0px 30px 90px #000000;
     padding: 0.5rem;
+    display: none;
 
     display: block;
     position: fixed;

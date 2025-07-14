@@ -382,33 +382,6 @@
       "dark": "1px solid #e7e0ee"
     }
   },
-  "body textarea:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input.metadata-input-text:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"date\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"datetime-local\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"text\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"search\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"email\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"password\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "body input[type=\"number\"]:hover": {
-    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
-  },
   "body input[type=\"range\"]::-webkit-slider-thumb": {
     "background": { "light": "#6b36e2", "dark": "#cebdff" },
     "box-shadow": "unset"
@@ -488,13 +461,6 @@
   "body .setting-hotkey-icon.mod-empty .svg-icon": {
     "color": { "light": "#494455", "dark": "#cbc3d8" }
   },
-  "body .setting-hotkey-icon:hover .svg-icon": {
-    "color": { "light": "#fff", "dark": "#690005" }
-  },
-  "body .setting-delete-hotkey:hover": {
-    "background-color": "var(--background-modifier-error)",
-    "color": { "light": "#fff", "dark": "#690005" }
-  },
   "body .tooltip": { "color": { "light": "#f5eefc", "dark": "#322f39" } },
   "body .tooltip.mod-error": {
     "width": "200px",
@@ -569,10 +535,6 @@
     "transform": "translate(-50%, -50%)",
     "width": "100%"
   },
-  "body\n  .multi-select-pill\n  .multi-select-pill-remove-button:hover::after": {
-    "background-color": "#1d1b20",
-    "opacity": "0.08"
-  },
   "body\n  .multi-select-pill\n  .multi-select-pill-remove-button:active::after": {
     "background-color": "#1d1b20",
     "opacity": "0.12"
@@ -590,10 +552,6 @@
     "position": "absolute",
     "transform": "translate(-50%, -50%)",
     "width": "100%"
-  },
-  "body .multi-select-pill:hover::before": {
-    "background-color": "#1d1b20",
-    "opacity": "0.08"
   },
   "body .multi-select-pill:active::before": {
     "background-color": "#1d1b20",
@@ -826,10 +784,6 @@
     "transform": "translate(-50%, -50%)",
     "width": "100%"
   },
-  "body\n  .modal-container\n  .prompt\n  .prompt-input-container\n  .search-input-clear-button:hover::before": {
-    "background-color": "#1d1b20",
-    "opacity": "0.08"
-  },
   "body\n  .modal-container\n  .prompt\n  .prompt-input-container\n  .search-input-clear-button:active::before": {
     "background-color": "#1d1b20",
     "opacity": "0.12"
@@ -869,10 +823,6 @@
     "position": "absolute",
     "transform": "translate(-50%, -50%)",
     "width": "100%"
-  },
-  "body\n  .modal-container\n  .prompt\n  .prompt-results\n  .suggestion-item:hover::after": {
-    "background-color": "#1d1b20",
-    "opacity": "0.08"
   },
   "body\n  .modal-container\n  .prompt\n  .prompt-results\n  .suggestion-item:active::after": {
     "background-color": "#1d1b20",
@@ -999,10 +949,6 @@
     "transform": "translate(-50%, -50%)",
     "width": "100%"
   },
-  "body.is-phone .menu-item.tappable:hover::after": {
-    "background-color": "#1d1b20",
-    "opacity": "0.08"
-  },
   "body.is-phone .menu-item.tappable:active::after": {
     "background-color": "#1d1b20",
     "opacity": "0.12"
@@ -1022,6 +968,60 @@
     "font-size": "1rem",
     "font-weight": "400",
     "line-height": "1.5rem"
+  },
+  "body textarea:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input.metadata-input-text:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"date\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"datetime-local\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"text\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"search\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"email\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"password\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body input[type=\"number\"]:hover": {
+    "transition": "border 0.15s cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "body .setting-hotkey-icon:hover .svg-icon": {
+    "color": { "light": "#fff", "dark": "#690005" }
+  },
+  "body .setting-delete-hotkey:hover": {
+    "background-color": "var(--background-modifier-error)",
+    "color": { "light": "#fff", "dark": "#690005" }
+  },
+  "body\n  .multi-select-pill\n  .multi-select-pill-remove-button:hover::after": {
+    "background-color": "#1d1b20",
+    "opacity": "0.08"
+  },
+  "body .multi-select-pill:hover::before": {
+    "background-color": "#1d1b20",
+    "opacity": "0.08"
+  },
+  "body\n  .modal-container\n  .prompt\n  .prompt-input-container\n  .search-input-clear-button:hover::before": {
+    "background-color": "#1d1b20",
+    "opacity": "0.08"
+  },
+  "body\n  .modal-container\n  .prompt\n  .prompt-results\n  .suggestion-item:hover::after": {
+    "background-color": "#1d1b20",
+    "opacity": "0.08"
+  },
+  "body.is-phone .menu-item.tappable:hover::after": {
+    "background-color": "#1d1b20",
+    "opacity": "0.08"
   },
   ".dropdown": {
     "background-image": {

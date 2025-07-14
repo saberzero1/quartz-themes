@@ -241,11 +241,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -263,6 +258,11 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1427,7 +1427,6 @@ body {
   .popover {
     background-color: hsl(276, 68%, 75%);
     border-radius: 8px;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
@@ -1437,6 +1436,7 @@ body {
     box-shadow: 0 20px 40px #000000;
     min-height: 40px;
     pointer-events: auto;
+    display: none;
 
     display: block;
     position: fixed;

@@ -10,12 +10,6 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  "body:not(.theme-rounded)": {
-    "--background-secondary": {
-      "light": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    var(--accent-l),\n    0.06\n  )",
-      "dark": null
-    }
-  },
   ":not(.theme-rounded)": {
     "--tab-container-background": {
       "light": "var(--color-base-00)",
@@ -112,6 +106,12 @@
     "background-color": {
       "light": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    var(--accent-l),\n    0.08\n  )",
       "dark": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    var(--accent-l),\n    0.3\n  )"
+    }
+  },
+  "body:not(.theme-rounded)": {
+    "--background-secondary": {
+      "light": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    var(--accent-l),\n    0.06\n  )",
+      "dark": null
     }
   },
   ".dropdown": {

@@ -114,18 +114,8 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  ".cards.pln-cards-borders": {
-    "--pln-cards-color-rgb": {
-      "light": "var(--w0-rgb)",
-      "dark": "var(--b3-rgb)"
-    }
-  },
-  ".pln-cards-borders": {
-    "--pln-cards-color-rgb": {
-      "light": "var(--w0-rgb)",
-      "dark": "var(--b3-rgb)"
-    }
-  },
+  ".cards.pln-cards-borders": { "--pln-cards-color-rgb": "var(--w0-rgb)" },
+  ".pln-cards-borders": { "--pln-cards-color-rgb": "var(--w0-rgb)" },
   ".callout[data-callout=\"idea\"]": {
     "--callout-color": {
       "light": "var(--color-yellow-dark-rgb)",

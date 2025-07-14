@@ -81,181 +81,6 @@
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
   ".themed-color-wrapper": { "border": "1px solid var(--text-faint)" },
-  "a": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  "em": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  "i": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  "strong": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  "ol": { "font-family": "\"CMU Typewriter Text\"" },
-  "p": { "font-family": "\"CMU Typewriter Text\"" },
-  "ul": { "font-family": "\"CMU Typewriter Text\"" },
-  "li::before": { "color": "#000", "font-weight": "700" },
-  "li::marker": { "color": "#000", "font-weight": "700" },
-  ".markdown-rendered.show-indentation-guide li > ol::before": {
-    "display": "none"
-  },
-  ".markdown-rendered.show-indentation-guide li > ul::before": {
-    "display": "none"
-  },
-  "hr::after": { "display": "none" },
-  ".task-list-item": { "border-color": "#000" },
-  ".task-list-item input[type=\"checkbox\"]": { "border-color": "#000" },
-  ".task-list-item.is-checked input[type=\"checkbox\"]": {
-    "border-color": "#000"
-  },
-  ".task-list-item.is-checked": { "color": "gray" },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "#000",
-    "border-color": "#000",
-    "color": "gray"
-  },
-  "input[type=\"checkbox\"]:checked:after": {
-    "background-color": "gray",
-    "color": "#000"
-  },
-  "mark": {
-    "background-color": "#a7692b",
-    "color": "#000",
-    "display": "inline-block",
-    "line-height": "19px",
-    "padding": "0 2px"
-  },
-  "hr": { "background-color": "#000", "border-color": "#000", "color": "#000" },
-  ".markdown-preview-view blockquote": {
-    "background-color": "#fff",
-    "border-left": "2px solid #000",
-    "box-shadow": "#000000 1.95px 1.95px 2.6px",
-    "color": "#000"
-  },
-  ".callout": {
-    "background-color": "#fff",
-    "box-shadow": "#000000 1.95px 1.95px 2.6px",
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\""
-  },
-  ".callout .callout-title": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "border": "0"
-  },
-  ".callout .callout-content": { "background-color": "#fff" },
-  ".markdonw-rendered h1": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  ".markdonw-rendered h2": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  ".markdonw-rendered h3": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  ".markdonw-rendered h4": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  ".markdonw-rendered h5": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  ".markdonw-rendered h6": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h1": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h2": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h3": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h4": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h5": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "h6": {
-    "color": "#000",
-    "font-family": "\"CMU Typewriter Text\"",
-    "font-weight": "400"
-  },
-  "img": {
-    "border": "0",
-    "box-shadow": "#3c4043 0 1px 2px 0,\n    #3c4043 0 2px 6px 2px"
-  },
-  "pre[class*=\"language-\"]": {
-    "background-color": "#292929",
-    "border-radius": "3px",
-    "box-shadow": "#000000 1.95px 1.95px 2.6px",
-    "font-family": "\"JetBrains Mono\"",
-    "font-size": "12px"
-  },
-  "pre[class*=\"language-\"] > *": { "background-color": "#292929" },
-  "code": {
-    "background-color": "#292929",
-    "border-radius": "2px",
-    "color": "#fff",
-    "font-family": "\"JetBrains Mono\"",
-    "font-size": "12px"
-  },
-  ".dataview th": {
-    "background-color": "#292929",
-    "border-color": "#fff",
-    "color": "#fff",
-    "font-family": "\"CMU Typewriter Text\""
-  },
-  "th": {
-    "background-color": "#292929",
-    "border-color": "#fff",
-    "color": "#fff",
-    "font-family": "\"CMU Typewriter Text\""
-  },
-  "thead": {
-    "background-color": "#292929",
-    "border-color": "#fff",
-    "color": "#fff",
-    "font-family": "\"CMU Typewriter Text\""
-  },
-  "td": { "border-color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  "tr": { "border-color": "#000", "font-family": "\"CMU Typewriter Text\"" },
-  ".dataview th span": { "color": "#fff" },
-  "button": {
-    "background-color": "transparent",
-    "border": "1px solid #000",
-    "border-radius": "2px",
-    "padding": "0 10px"
-  },
-  "button *": {
-    "font-style": "normal",
-    "font-weight": "100",
-    "font-family": "\"CMU Typewriter Text\""
-  },
-  ".mermaid *": { "font-family": "\"CMU Typewriter Text\"" },
-  ".mermaid g.edgePath": { "fill": "#000", "stroke": "#000" },
-  ".mermaid g.edgePath *": { "stroke": "#000" },
-  ".mermaid g.edgePath * .arrowheadPath": { "fill": "#000" },
-  ".mermaid .node rect": { "fill": "#fff", "stroke": "#000" },
-  ".mermaid g circle": { "color": "#000", "fill": "#fff", "stroke": "#000" },
-  ".mermaid g polygon": { "color": "#000", "fill": "#fff", "stroke": "#000" },
-  ".mermaid g.label": { "color": "#000", "fill": "#fff", "stroke": "#000" },
   "button:hover": {
     "filter": { "light": "brightness(105%)", "dark": "brightness(110%)" }
   },
@@ -681,6 +506,181 @@
     "--color-pink-rgb": { "light": "191, 32, 109", "dark": null },
     "--color-pink": { "light": "#bf206d", "dark": null }
   },
+  "a": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  "em": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  "i": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  "strong": { "color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  "ol": { "font-family": "\"CMU Typewriter Text\"" },
+  "p": { "font-family": "\"CMU Typewriter Text\"" },
+  "ul": { "font-family": "\"CMU Typewriter Text\"" },
+  "li::before": { "color": "#000", "font-weight": "700" },
+  "li::marker": { "color": "#000", "font-weight": "700" },
+  ".markdown-rendered.show-indentation-guide li > ol::before": {
+    "display": "none"
+  },
+  ".markdown-rendered.show-indentation-guide li > ul::before": {
+    "display": "none"
+  },
+  "hr::after": { "display": "none" },
+  ".task-list-item": { "border-color": "#000" },
+  ".task-list-item input[type=\"checkbox\"]": { "border-color": "#000" },
+  ".task-list-item.is-checked input[type=\"checkbox\"]": {
+    "border-color": "#000"
+  },
+  ".task-list-item.is-checked": { "color": "gray" },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "#000",
+    "border-color": "#000",
+    "color": "gray"
+  },
+  "input[type=\"checkbox\"]:checked:after": {
+    "background-color": "gray",
+    "color": "#000"
+  },
+  "mark": {
+    "background-color": "#a7692b",
+    "color": "#000",
+    "display": "inline-block",
+    "line-height": "19px",
+    "padding": "0 2px"
+  },
+  "hr": { "background-color": "#000", "border-color": "#000", "color": "#000" },
+  ".markdown-preview-view blockquote": {
+    "background-color": "#fff",
+    "border-left": "2px solid #000",
+    "box-shadow": "#000000 1.95px 1.95px 2.6px",
+    "color": "#000"
+  },
+  ".callout": {
+    "background-color": "#fff",
+    "box-shadow": "#000000 1.95px 1.95px 2.6px",
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\""
+  },
+  ".callout .callout-title": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "border": "0"
+  },
+  ".callout .callout-content": { "background-color": "#fff" },
+  ".markdonw-rendered h1": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  ".markdonw-rendered h2": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  ".markdonw-rendered h3": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  ".markdonw-rendered h4": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  ".markdonw-rendered h5": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  ".markdonw-rendered h6": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h1": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h2": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h3": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h4": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h5": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "h6": {
+    "color": "#000",
+    "font-family": "\"CMU Typewriter Text\"",
+    "font-weight": "400"
+  },
+  "img": {
+    "border": "0",
+    "box-shadow": "#3c4043 0 1px 2px 0,\n    #3c4043 0 2px 6px 2px"
+  },
+  "pre[class*=\"language-\"]": {
+    "background-color": "#292929",
+    "border-radius": "3px",
+    "box-shadow": "#000000 1.95px 1.95px 2.6px",
+    "font-family": "\"JetBrains Mono\"",
+    "font-size": "12px"
+  },
+  "pre[class*=\"language-\"] > *": { "background-color": "#292929" },
+  "code": {
+    "background-color": "#292929",
+    "border-radius": "2px",
+    "color": "#fff",
+    "font-family": "\"JetBrains Mono\"",
+    "font-size": "12px"
+  },
+  ".dataview th": {
+    "background-color": "#292929",
+    "border-color": "#fff",
+    "color": "#fff",
+    "font-family": "\"CMU Typewriter Text\""
+  },
+  "th": {
+    "background-color": "#292929",
+    "border-color": "#fff",
+    "color": "#fff",
+    "font-family": "\"CMU Typewriter Text\""
+  },
+  "thead": {
+    "background-color": "#292929",
+    "border-color": "#fff",
+    "color": "#fff",
+    "font-family": "\"CMU Typewriter Text\""
+  },
+  "td": { "border-color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  "tr": { "border-color": "#000", "font-family": "\"CMU Typewriter Text\"" },
+  ".dataview th span": { "color": "#fff" },
+  "button": {
+    "background-color": "transparent",
+    "border": "1px solid #000",
+    "border-radius": "2px",
+    "padding": "0 10px"
+  },
+  "button *": {
+    "font-style": "normal",
+    "font-weight": "100",
+    "font-family": "\"CMU Typewriter Text\""
+  },
+  ".mermaid *": { "font-family": "\"CMU Typewriter Text\"" },
+  ".mermaid g.edgePath": { "fill": "#000", "stroke": "#000" },
+  ".mermaid g.edgePath *": { "stroke": "#000" },
+  ".mermaid g.edgePath * .arrowheadPath": { "fill": "#000" },
+  ".mermaid .node rect": { "fill": "#fff", "stroke": "#000" },
+  ".mermaid g circle": { "color": "#000", "fill": "#fff", "stroke": "#000" },
+  ".mermaid g polygon": { "color": "#000", "fill": "#fff", "stroke": "#000" },
+  ".mermaid g.label": { "color": "#000", "fill": "#fff", "stroke": "#000" },
   ".dropdown": {
     "background-image": {
       "light": null,

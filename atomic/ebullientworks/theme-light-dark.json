@@ -290,14 +290,6 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  "button.mod-cta:hover": {
-    "--modifier-text": { "light": "var(--gray-dark-8)", "dark": null },
-    "color": { "light": "var(--modifier-text)", "dark": null }
-  },
-  "button.mod-destructive:hover": {
-    "--modifier-text": { "light": "var(--gray-dark-8)", "dark": null },
-    "color": { "light": "var(--modifier-text)", "dark": null }
-  },
   "body:not(.ebullientworks-nix-tags)": {
     "--tag-color": {
       "light": "var(--color-accent)",
@@ -416,6 +408,14 @@
   },
   "body:not(.swcm6-nix-plugin-styles)": {
     "--show-whitespace-color": { "light": "var(--color-base-30)", "dark": null }
+  },
+  "button.mod-cta:hover": {
+    "--modifier-text": { "light": "var(--gray-dark-8)", "dark": null },
+    "color": { "light": "var(--modifier-text)", "dark": null }
+  },
+  "button.mod-destructive:hover": {
+    "--modifier-text": { "light": "var(--gray-dark-8)", "dark": null },
+    "color": { "light": "var(--modifier-text)", "dark": null }
   },
   ".dropdown": {
     "background-image": {

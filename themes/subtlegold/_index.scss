@@ -310,7 +310,6 @@ body {
   --p-spacing: 1rem;
   --tag-weight: inherit;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  contain: initial;
   overscroll-behavior: none;
   caret-color: #d6ba7c;
   --bold-weight: 600;
@@ -382,16 +381,9 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
-  --font-text:
-    "??", "??", "??", "??", var(--default-font, "??"), ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
   --font-monospace:
     "??", "??", "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace;
-  padding-top: 0;
-  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -418,7 +410,11 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   user-select: none;
   -webkit-user-select: none;
-  overflow: hidden;
+  contain: initial;
+  --font-text: "??", "??", "??", "Arial";
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1587,7 +1583,6 @@ body {
   /* POPOVER */
   .popover {
     z-index: 30;
-    display: none;
     background-color: #202020;
     border: 1px solid transparent;
     box-shadow:
@@ -1598,6 +1593,7 @@ body {
     padding: 20px;
     position: relative;
     max-height: 95vh;
+    display: none;
 
     display: block;
     position: fixed;

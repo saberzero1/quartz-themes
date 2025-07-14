@@ -391,11 +391,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -463,6 +458,11 @@ body {
   --code-string: rgb(124, 211, 124);
   --code-tag: rgb(255, 120, 129);
   --code-value: rgb(203, 158, 255);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1638,7 +1638,6 @@ body {
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000,
       0 -1px 0 0 #555;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
@@ -1646,6 +1645,7 @@ body {
       brightness(130%);
     backdrop-filter: blur(16px) saturate(190%) contrast(50%) brightness(130%);
     background-color: #000000;
+    display: none;
 
     display: block;
     position: fixed;

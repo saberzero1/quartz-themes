@@ -304,11 +304,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -403,6 +398,11 @@ body {
   --text-accent: hsl(212, 100%, 67%);
   --text-accent-hover: hsl(212, 100%, calc(67% + 3.8%));
   --interactive-accent-hsl: 212, 100%, 67%;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1553,10 +1553,10 @@ body {
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow: none;
-    display: flex;
     max-height: 70vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -82,7 +82,6 @@
       "dark": "var(--background-secondary)"
     }
   },
-  "body .app-container": { "background-color": "var(--background-primary)" },
   "body:not(.mod-windows):not(.is-mobile):not(.blur-effect-off)\n  .vertical-tab-header": {
     "background-color": {
       "light": "rgb(from var(--color-base-30) r g b/75%)",
@@ -243,6 +242,7 @@
     "background-color": { "light": "#f2f0e5", "dark": "#282726" },
     "color": { "light": "#403e3c", "dark": "#cecdc3" }
   },
+  "body .app-container": { "background-color": "var(--background-primary)" },
   "body:not(.is-mobile) .mod-root .workspace-tab-container": {
     "outline": { "light": "1px solid #1f2225", "dark": "1px solid #f4f4f4" }
   },
