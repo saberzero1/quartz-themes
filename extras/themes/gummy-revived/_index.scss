@@ -1,4 +1,4 @@
-/*h1,
+h1,
 h2,
 h3,
 h4,
@@ -10,15 +10,12 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-image: linear-gradient(
-    to right,
-    #dddddd,
-    #cbcbcb,
-    #e990eb
-  ) !important;
-}*/
+  background: linear-gradient(to right, var(--gradient-header));
+  background-image: linear-gradient(to right, var(--gradient-header));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
 
 body {
   figure[data-rehype-pretty-code-figure] pre,
@@ -31,4 +28,16 @@ body {
 
 .article-title {
   width: fit-content;
+}
+
+:root,
+html {
+  .callout {
+    background: var(--border)
+      linear-gradient(135deg, var(--border), var(--background-primary));
+  }
+  .callout-title {
+    color: var(--color);
+    background: var(--background-primary);
+  }
 }
