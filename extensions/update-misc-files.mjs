@@ -1,4 +1,10 @@
-import { unlinkSync, copyFileSync, existsSync } from "fs";
+import {
+  unlinkSync,
+  copyFileSync,
+  existsSync,
+  readFileSync,
+  writeFileSync,
+} from "fs";
 import { writePrettier } from "../util/writer.mjs";
 import {
   replaceInFile,
@@ -9,6 +15,7 @@ import {
   listFoldersInDirectory,
 } from "../util/util.mjs";
 import { themes } from "../config.mjs";
+import { format } from "./formatter.mjs";
 
 export default function updateMiscFiles(manifestCollection) {
   // Rebuild README.md
@@ -50,6 +57,12 @@ export default function updateMiscFiles(manifestCollection) {
   replaceInFile(`./README.md`, "//COMPATIBILITY_TABLE", compatibilityTable);
   // Clean up comments
   replaceInFile(`./README.md`, /\<\!\-\-.*?\-\-\>/gms, "");
+
+  // Format README.md
+  const readmeContent = readFileSync(`./README.md`, "utf8");
+  const formattedReadme = format(readmeContent, "markdown");
+  writeFileSync(`./README.md`, formattedReadme, "utf8");
+
   console.log("Finished updating compatibility table");
 
   console.log("Updating Quartz Syncer file list...");
@@ -79,7 +92,7 @@ export default function updateMiscFiles(manifestCollection) {
   // Write the file list to quartz-syncer-file-list.json
   writePrettier(
     `./quartz-syncer-file-list.json`,
-    JSON.stringify(quartzSyncerFileList, null, 2),
+    format(JSON.stringify(quartzSyncerFileList, null, 2), "json"),
     "utf8",
   );
 

@@ -11,6 +11,10 @@
 html[saved-theme="dark"] {
   color-scheme: dark;
 
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
@@ -19,28 +23,72 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
-  --color-accent-hsl: 232, 75%, 70%;
+
+  --color-base-05: #212121;
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 4),
+    var(--accent-s),
+    calc(var(--accent-l) - 2%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) + 2),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) + 4%)
+  );
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-base-00: hsla(216, 16%, 13%, var(--page-transparency));
+  --color-base-10: hsl(216, 17%, 14%);
   --color-base-100: #c8d4e6;
+  --color-base-20: hsl(216, 19%, 16%);
+  --color-base-25: hsl(216, 20%, 20%);
   --color-base-30: hsl(218, 18%, 15%);
   --color-base-35: hsl(218, 19%, 27%);
   --color-base-40: hsl(218, 19%, 31%);
+  --color-base-50: hsl(219, 13%, 51%);
+  --color-base-70: hsl(220, 17%, 66%);
   --color-blue: #009be3;
+  --color-blue-rgb: 0, 155, 227;
   --color-cyan: #00cecb;
+  --color-cyan-rgb: 0, 206, 203;
   --color-green: #7dcf2b;
+  --color-green-rgb: 125, 207, 43;
   --color-orange: #f69c00;
+  --color-orange-rgb: 246, 156, 0;
   --color-pink: #e66ab4;
+  --color-pink-rgb: 230, 106, 180;
   --color-purple: #b45af5;
+  --color-purple-rgb: 180, 90, 245;
   --color-red: #ff4d3a;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #e8c900;
+  --color-yellow-rgb: 232, 201, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --shadow-l:
+    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+  --shadow-s:
+    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
   color-scheme: dark;
-  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-highlight-bg: hsla(var(--color-accent-hsl), 0.475);
+  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 
   code[data-theme*=" "] {
     color: var(--shiki-light);
@@ -52,19 +100,55 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-100: 0, 0, 0;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-secondary-alt: var(--color-base-05);
+  --shadow-s:
+    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+  --shadow-l:
+    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 4),
+    var(--accent-s),
+    calc(var(--accent-l) - 2%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) + 2),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) + 4%)
+  );
+  --color-base-00: hsla(0, 0%, 100%, var(--page-transparency));
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fdfdfd;
   --color-base-100: #252525;
+  --color-base-20: hsl(0, 0%, 96%);
+  --color-base-25: #efefef;
   --color-base-30: #9f9f9f66;
   --color-base-35: #dedede;
   --color-base-40: #d7d7d7;
+  --color-base-50: #878787;
+  --color-base-70: #7f7f7f;
   --color-blue: #4e8aa6;
+  --color-blue-rgb: 0, 155, 227;
   --color-cyan: #49a7ba;
+  --color-cyan-rgb: 0, 206, 203;
   --color-green: #8fb26b;
+  --color-green-rgb: 125, 207, 43;
   --color-orange: #d08344;
+  --color-orange-rgb: 246, 156, 0;
   --color-pink: #ac7aaa;
+  --color-pink-rgb: 230, 106, 180;
   --color-purple: #8076ad;
+  --color-purple-rgb: 180, 90, 245;
   --color-red: #c75f54;
+  --color-red-rgb: 255, 77, 58;
+  --color-yellow: #dca931;
+  --color-yellow-rgb: 232, 201, 0;
   --text-highlight-bg: #ffc800;
 }
 
@@ -787,107 +871,241 @@ html {
   font-family: var(--bodyFont);
 }
 body {
+  --bold-modifier: 200;
   --bold-color: inherit;
-  --bold-weight: calc(700 + 200);
-  --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
-  --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --checkbox-border-color-hover: #6d6b78;
-  --code-background: hsl(220, 9%, 95%);
-  --code-normal: #3e3a4f;
-  --code-comment: #787689;
-  --code-function: #dbca67;
-  --code-important: #ffa058;
-  --code-keyword: #e991c4;
-  --code-property: #54bab6;
-  --code-punctuation: #6d6b78;
-  --code-string: #84cc7c;
-  --code-tag: #ff7272;
-  --code-value: #b78cda;
-  --collapse-icon-color: #787689;
-  --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --border-width: 1px;
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-title-color: inherit;
+  --callout-title-size: inherit;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-content-padding: 0;
+  --callout-content-background: transparent;
+  --callout-default: var(--color-blue-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-success: var(--color-green-rgb);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --callout-quote: 158, 158, 158;
+  --caret-color: var(--text-normal);
+  --checkbox-marker-color: var(--background-primary);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-border-color-hover: var(--text-muted);
+  --code-white-space: pre-wrap;
+  --code-border-width: 0px;
+  --code-border-color: var(--background-modifier-border);
+  --code-radius: var(--radius-s);
+  --code-size: var(--font-smaller);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --collapse-icon-color: var(--text-faint);
+  --collapse-icon-color-collapsed: var(--text-accent);
+  --cursor: default;
   --cursor-link: pointer;
-  --graph-line: var(--color-base-35, rgba(255, 114, 114, 0.6));
-  --graph-node-unresolved: #787689;
-  --graph-node-tag: #84cc7c;
+  --font-smaller: 0.875em;
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 15px;
+  --font-weight: var(--font-normal);
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.2;
   --h3-line-height: 1.3;
-  --hr-color: #d9dde8;
+  --h4-line-height: 1.4;
+  --h5-line-height: var(--line-height-normal);
+  --h6-line-height: var(--line-height-normal);
+  --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
-  --icon-color: #6d6b78;
-  --inline-title-font:
-    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --icon-color: var(--text-muted);
+  --inline-title-font: var(--h1-font);
+  --input-height: 30px;
+  --input-radius: 5px;
+  --input-border-width: 1px;
   --italic-color: inherit;
-  --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --link-color-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
-  --link-weight: var(--link-weight);
-  --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --link-external-color-hover: hsl(
-    calc(232 + 2),
-    calc(75% + 5%),
-    calc(70% + 4%)
-  );
+  --layer-popover: 30;
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.3;
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --link-external-filter: none;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-  --nav-item-children-padding-start: 4px;
-  --nav-item-children-margin-start: 12px;
+  --nav-item-size: var(--font-ui-small);
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
+  --nav-item-children-padding-start: var(--size-2-2);
+  --nav-item-children-margin-start: var(--size-4-3);
+  --nav-item-weight: inherit;
+  --nav-item-weight-active: inherit;
+  --nav-indentation-guide-color: var(--indentation-guide-color);
+  --nav-heading-color: var(--text-normal);
+  --nav-heading-weight: var(--font-medium);
+  --metadata-input-text-color: var(--text-normal);
   --p-spacing: 1rem;
-  --search-icon-color: #6d6b78;
-  --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --popover-max-height: 95vh;
+  --prompt-input-height: 40px;
+  --prompt-border-width: var(--border-width);
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
+  --search-icon-color: var(--text-muted);
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-6: 24px;
+  --size-4-12: 48px;
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(232, 75%, 70%, 0.1);
-  --tag-background-hover: hsla(232, 75%, 70%, 0.2);
-  --tag-border-color: hsla(232, 75%, 70%, 0.15);
-  --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --background-primary: hsla(237, 10%, 97%, 75%);
-  --background-secondary: hsl(229, 14%, 91%);
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-border: #9496ac66;
-  --background-modifier-border-hover: hsl(220, 5%, 78%);
-  --background-modifier-border-focus: hsl(242, 19%, 72%);
-  --text-normal: #3e3a4f;
-  --text-muted: #6d6b78;
-  --text-faint: #787689;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(232, 75%, 70%);
-  --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
-  --interactive-accent-hsl: 232, 75%, 70%;
+  --accent-h: 258;
+  --accent-s: 88%;
+  --accent-l: 66%;
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-form-field: var(--color-base-00);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent: var(--color-accent-1);
+  --interactive-accent-hover: var(--color-accent-2);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default);
+  --font-text-override: "??";
+  --font-text-theme: "??";
+  --font-print-override: "??";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  font-family:
-    "??", "??", var(--default-font, "??"), "Nunito Sans", "Noto Color Emoji",
-    Inter, sans-serif;
-  line-height: 1.3;
-  font-size: 16px;
-  background-color: hsla(237, 10%, 97%, 75%);
-  color: #3e3a4f;
+  font-family: var(--font-interface);
+  line-height: var(--line-height-tight);
+  font-size: var(--font-ui-medium);
+  background-color: var(--background-primary);
+  color: var(--text-normal);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  caret-color: var(--caret-color);
+  --font-main: "Nunito Sans";
+  --font-emoji: "Noto Color Emoji";
+  --font-default: var(--font-main), var(--font-emoji), Inter, sans-serif;
   --font-monospace: "DM Mono", monospace;
-  --h1-font:
-    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --shadow-ui: 0px 1px 2px #000000, 0px 3.4px 6.7px #000000;
+  --nav-indentation-guide-width: 0px;
+  --radius-s: 7px;
+  --radius-m: 14px;
+  --radius-l: 19px;
+  --page-transparency: 100%;
+  --custom-line-height: 2em;
+  --heading-font: "Merriweather Sans", "Book Antiqua", var(--font-default);
+  --heading-font-2: var(--heading-font), var(--font-default);
+  --h1-font: var(--heading-font-2);
+  --h2-font: var(--heading-font-2);
+  --h3-font: var(--heading-font-2);
+  --h4-font: var(--heading-font-2);
+  --h5-font: var(--heading-font-2);
+  --h6-font: var(--heading-font-2);
+  --heading-style: normal;
+  --h1-style: var(--heading-style);
+  --h2-style: var(--heading-style);
+  --h3-style: var(--heading-style);
+  --h4-style: var(--heading-style);
+  --h5-style: var(--heading-style);
+  --h6-style: var(--heading-style);
+  --heading-variant: normal;
+  --h1-variant: var(--heading-variant);
+  --h2-variant: var(--heading-variant);
+  --h3-variant: var(--heading-variant);
+  --h4-variant: var(--heading-variant);
+  --h5-variant: var(--heading-variant);
+  --h6-variant: var(--heading-variant);
+  --heading-weight: 700;
+  --h1-weight: var(--heading-weight);
+  --h2-weight: var(--heading-weight);
+  --h3-weight: var(--heading-weight);
+  --h4-weight: var(--heading-weight);
+  --h5-weight: var(--heading-weight);
+  --h6-weight: var(--heading-weight);
+  --h1-size: 2.2em;
+  --h2-size: 1.87em;
+  --h3-size: 1.57em;
+  --h4-size: 1.35em;
+  --h5-size: 1.3em;
+  --h6-size: 1.1em;
+  --indentation-guide-color: transparent;
   --checkbox-size: 18px;
   --checkbox-color: transparent;
-  --checkbox-radius: 14px;
-  --checkbox-border-color: #ff7272;
-  --inline-title-color: #3e3a4f;
+  --checkbox-radius: var(--radius-m);
+  --checkbox-border-color: var(--color-red);
+  --inline-title-color: var(--text-normal);
+  --callout-bug: var(--color-pink-rgb);
+  --callout-summary: var(--color-green-rgb);
+  --callout-tip: var(--color-yellow-rgb);
+  --callout-question: var(--color-yellow-rgb);
+  --callout-error: var(--color-orange-rgb);
+  --custom-code-height: 1em;
   contain: initial;
   height: auto;
   overflow: auto;
   padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text: var(--font-print);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -895,20 +1113,21 @@ body {
 :root,
 html {
   .callout {
+    --callout-color: var(--callout-default);
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(158, 158, 158, 0.25);
-    border-width: 0px;
-    mix-blend-mode: normal;
-    border: 1px solid rgba(158, 158, 158, 0.35);
-    border-radius: 14px;
+    border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+    border-width: var(--callout-border-width);
+    mix-blend-mode: var(--callout-blend-mode);
+    border: 1px solid rgba(var(--callout-color), 0.35);
+    border-radius: var(--radius-m);
     padding: 0;
     min-width: 320px;
     max-width: 700px;
-    background-color: #9496ac66;
-    margin: calc(2em * 0.4) auto;
+    background-color: var(--background-secondary-alt);
+    margin: calc(var(--custom-line-height) * 0.4) auto;
 
-    background-color: #9496ac66;
+    background-color: var(--background-secondary-alt);
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -917,154 +1136,210 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-default);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-summary);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-summary);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-summary);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-info);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-todo);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-important);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-tip);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-tip);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-success);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-success);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-success);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-question);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-question);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-question);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-warning);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-warning);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-warning);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-fail);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-fail);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-fail);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-error);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-error);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-bug);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-example);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-quote);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: #9496ac66;
+      --callout-color: var(--callout-quote);
+
+      background-color: var(--background-secondary-alt);
       /*background: var(--bg);*/
     }
   }
 
   .callout-title {
     display: flex;
-    gap: 4px;
-    font-size: inherit;
-    color: rgb(158, 158, 158);
-    line-height: 1.3;
+    gap: var(--size-4-1);
+    font-size: var(--callout-title-size);
+    color: rgb(var(--callout-color));
+    line-height: var(--line-height-tight);
     align-items: flex-start;
     padding: 12px;
-    background-color: rgba(158, 158, 158, 0.08);
+    background-color: rgba(var(--callout-color), 0.08);
     margin: 0px auto;
     width: 100%;
 
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      color: inherit;
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
       display: block;
       margin: auto;
       width: fit-content;
-      font-size: 1.25em;
-      font-weight: 400;
+      font-size: var(--h6-size);
+      font-weight: var(--font-normal);
 
       /*color: var(--color);*/
     }
 
     .callout-title-inner {
-      color: inherit;
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
       display: block;
       margin: auto;
       width: fit-content;
-      font-size: 1.25em;
-      font-weight: 400;
+      font-size: var(--h6-size);
+      font-weight: var(--font-normal);
     }
   }
 
   & > .callout-content {
     overflow-x: auto;
-    padding: 0;
-    background-color: transparent;
+    padding: var(--callout-content-padding);
+    background-color: var(--callout-content-background);
   }
 }
 body {
@@ -1073,7 +1348,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: hsla(237, 10%, 97%, 75%);
+  background-color: var(--background-primary);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -1102,13 +1377,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsla(237, 10%, 97%, 75%);
+      background-color: var(--background-primary);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: hsla(237, 10%, 97%, 75%);
+        background-color: var(--background-primary);
 
         background-color: var(--background-primary);
       }
@@ -1117,7 +1392,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: hsla(237, 10%, 97%, 75%);
+          background-color: var(--background-primary);
 
           background-color: var(--background-secondary);
 
@@ -1155,6 +1430,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -1301,120 +1577,114 @@ body {
 
   /* HEADINGS */
   h1 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #54bab6;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h1-weight);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    font-style: var(--h1-style);
+    font-variant: var(--h1-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.2;
+    line-height: var(--h1-line-height);
 
     font-size: 2rem;
   }
   h1 a {
-    --link-weight: 700;
+    --link-weight: var(--h1-weight);
   }
   h2.page-title,
   h2.page-title a,
   h2 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #8391ed;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 2.35em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h2-weight);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    font-style: var(--h2-style);
+    font-variant: var(--h2-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.2;
+    line-height: var(--h2-line-height);
 
     font-size: 1.75rem;
   }
   h2 a {
-    --link-weight: 700;
+    --link-weight: var(--h2-weight);
   }
   h3 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #b78cda;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 2em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h3-weight);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-style: var(--h3-style);
+    font-variant: var(--h3-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.3;
+    line-height: var(--h3-line-height);
 
     font-size: 1.6rem;
   }
   h3 a {
-    --link-weight: 700;
+    --link-weight: var(--h3-weight);
   }
   h4 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #e991c4;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 1.75em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h4-weight);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    font-style: var(--h4-style);
+    font-variant: var(--h4-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.4;
+    line-height: var(--h4-line-height);
 
     font-size: 1.4rem;
   }
   h4 a {
-    --link-weight: 700;
+    --link-weight: var(--h4-weight);
   }
   h5 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #ff7272;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 1.5em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h5-weight);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
+    font-style: var(--h5-style);
+    font-variant: var(--h5-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.5;
+    line-height: var(--h5-line-height);
 
     font-size: 1.2rem;
   }
   h5 a {
-    --link-weight: 700;
+    --link-weight: var(--h5-weight);
   }
   h6 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #ffa058;
-    font-family:
-      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: 1.25em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h6-weight);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
+    font-size: var(--h6-size);
+    font-style: var(--h6-style);
+    font-variant: var(--h6-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.5;
+    line-height: var(--h6-line-height);
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: 700;
+    --link-weight: var(--h6-weight);
   }
   h1,
   h1 a,
@@ -1438,12 +1708,12 @@ body {
   pre {
     position: relative;
     min-height: 38px;
-    background-color: hsl(220, 9%, 95%);
-    border-radius: 7px;
-    white-space: pre-wrap;
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    white-space: var(--code-white-space);
     overflow-x: auto;
-    border: 1px solid #d9dde8;
-    box-shadow: none;
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: var(--shadow-ui);
     padding: 2em;
 
     background-color: var(--code-background);
@@ -1509,15 +1779,15 @@ body {
   }
 
   code {
-    font-family: "DM Mono", monospace;
-    background-color: hsl(220, 9%, 95%);
-    border-radius: 7px;
-    font-size: 1em;
+    font-family: var(--font-monospace);
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    font-size: var(--code-size);
     padding: 0.15em 0.3em;
-    border: 0px solid #d9dde8;
+    border: var(--code-border-width) solid var(--code-border-color);
     -webkit-box-decoration-break: clone;
-    color: #3e3a4f;
-    line-height: 1em;
+    color: var(--text-normal);
+    line-height: var(--custom-code-height);
 
     background-color: var(--code-background);
     color: var(--code-normal);
@@ -1529,17 +1799,15 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #6d6b78;
-    font-size: calc(16px * 0.8);
-    font-family:
-      "??", "??", var(--default-font, "??"), "Nunito Sans", "Noto Color Emoji",
-      Inter, sans-serif;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    font-family: var(--font-interface);
     position: absolute;
     top: 0;
     inset-inline-end: 0;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: var(--background-modifier-hover);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1548,37 +1816,36 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #3e3a4f;
+    color: var(--metadata-input-text-color);
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #787689;
+    color: var(--text-faint);
   }
 
   /* BACKLINKS */
   .backlinks {
     h3 {
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      color: #b78cda;
-      font-family:
-        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-      font-size: 2em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 700;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
+      --font-weight: var(--h3-weight);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-style: var(--h3-style);
+      font-variant: var(--h3-variant);
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
-      line-height: 1.3;
+      line-height: var(--h3-line-height);
     }
 
     ul li {
-      color: #3e3a4f;
+      color: var(--nav-heading-color);
 
-      font-weight: 500;
+      font-weight: var(--nav-heading-weight);
     }
   }
 
@@ -1594,11 +1861,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #8391ed;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsla(237, 10%, 97%, 75%);
+        background-color: var(--background-primary);
 
         background-color: var(--background-secondary);
 
@@ -1609,7 +1876,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(232, 75%, 70%);
+        color: var(--icon-color);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1637,10 +1904,10 @@ body {
           width: 100%;
         }
         &:hover {
-          color: #3e3a4f;
-          font-weight: inherit;
+          color: var(--nav-item-color-active);
+          font-weight: var(--nav-item-weight-active);
           background-color: transparent;
-          border-left: 3px hsl(232, 75%, 70%) solid;
+          border-left: 3px var(--interactive-accent) solid;
 
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1668,20 +1935,21 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 0px solid transparent;
+        border-inline-start: var(--nav-indentation-guide-width) solid
+          var(--nav-indentation-guide-color);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
         position: relative;
 
         a {
-          padding: 6px 8px 6px 24px;
-          color: #3e3a4f;
-          cursor: pointer;
+          padding: var(--nav-item-padding);
+          color: var(--nav-item-color);
+          cursor: var(--cursor);
           display: flex;
-          line-height: 1.3;
-          margin-bottom: 2px;
-          font-weight: 300;
+          line-height: var(--line-height-tight);
+          margin-bottom: var(--size-2-1);
+          font-weight: var(--font-light);
           border-radius: 0px;
           transition: font-size 65ms;
           padding-top: 6.6px;
@@ -1734,39 +2002,37 @@ body {
 
   /* TOC */
   .toc {
-    color: #b78cda;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
-        margin-block-end: 0rem;
-        margin-block-start: 0rem;
-        color: #b78cda;
-        font-family:
-          "Merriweather Sans", "Book Antiqua", "Nunito Sans",
-          "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
-          "Noto Color Emoji", Inter, sans-serif;
-        font-size: 2em;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 700;
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        --font-weight: var(--h3-weight);
+        color: var(--h3-color);
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
         letter-spacing: -0.015em;
-        line-height: 1.3;
+        line-height: var(--h3-line-height);
 
         margin-block: 0;
       }
 
-      color: #b78cda;
+      color: var(--h3-color);
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #3e3a4f;
+        color: var(--nav-item-color);
 
-        font-weight: inherit;
+        font-weight: var(--nav-item-weight);
 
-        font-size: 16px;
+        font-size: var(--nav-item-size);
 
         color: inherit;
       }
@@ -1778,18 +2044,17 @@ body {
   .graph,
   .toc {
     h3 {
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      color: #b78cda;
-      font-family:
-        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
-        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-      font-size: 2em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 700;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
+      --font-weight: var(--h3-weight);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-style: var(--h3-style);
+      font-variant: var(--h3-variant);
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
-      line-height: 1.3;
+      line-height: var(--h3-line-height);
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1852,15 +2117,15 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: #d9dde8;
-      border: 1px solid #d9dde8;
-      border-radius: 5px;
-      color: #3e3a4f;
+      background: var(--background-modifier-form-field);
+      border: var(--input-border-width) solid var(--background-modifier-border);
+      border-radius: var(--input-radius);
+      color: var(--text-normal);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: var(--font-ui-small);
       outline: none;
-      padding: 4px 8px;
-      height: 40px;
+      padding: var(--size-4-1) var(--size-4-2);
+      height: var(--input-height);
 
       font-size: 1rem;
       svg {
@@ -1870,13 +2135,13 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsla(237, 10%, 97%, 75%);
+        background-color: var(--background-primary);
 
-        border: 0.5pt solid var(--color-base-40, rgba(255, 114, 114, 0.6));
+        border: var(--prompt-border-width) solid var(--prompt-border-color);
 
-        border-radius: 19px;
+        border-radius: var(--radius-l);
 
-        box-shadow: none;
+        box-shadow: var(--shadow-l);
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1884,14 +2149,14 @@ body {
         margin: 12vh auto;
         & > input {
           width: 100%;
-          padding: 24px;
-          padding-inline-end: 48px;
-          background-color: hsla(237, 10%, 97%, 75%);
-          font-size: 16px;
+          padding: var(--size-4-6);
+          padding-inline-end: var(--size-4-12);
+          background-color: var(--background-primary);
+          font-size: var(--font-ui-medium);
           border: none;
-          height: 48px;
+          height: var(--prompt-input-height);
           border-radius: 0;
-          border-bottom: 1px solid hsl(229, 14%, 91%);
+          border-bottom: 1px solid var(--background-secondary);
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1899,7 +2164,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #3e3a4f;
+          color: var(--text-normal);
 
           background: transparent;
           margin-bottom: 0;
@@ -1917,7 +2182,7 @@ body {
           }
           & .highlight {
             background-color: transparent;
-            color: hsl(232, 75%, 70%);
+            color: var(--color-accent);
             font-weight: bold;
 
             background-color: var(--quartz-text-highlight);
@@ -1944,15 +2209,15 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: var(--background-modifier-hover);
               }
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #3e3a4f;
+                color: var(--text-normal);
 
                 &.match-tag {
-                  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                  color: var(--text-accent);
                 }
               }
             }
@@ -2020,13 +2285,13 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: hsla(237, 10%, 97%, 75%);
-    border: 1px solid #d9dde8;
-    border-radius: 14px;
-    box-shadow: none;
-    max-height: 95vh;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+    max-height: var(--popover-max-height);
     position: absolute;
-    z-index: 30;
+    z-index: var(--layer-popover);
     display: none;
 
     display: block;
@@ -2035,11 +2300,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid #d9dde8;
+      border: 1px solid var(--background-modifier-border);
 
-      background-color: hsla(237, 10%, 97%, 75%);
+      background-color: var(--background-primary);
 
-      border-radius: 14px;
+      border-radius: var(--radius-m);
 
       background-color: var(--background-primary);
     }

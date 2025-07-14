@@ -18,7 +18,8 @@ export default function replaceAfter(manifestCollection) {
     const darkFilePath = `./themes/${theme}/_dark.scss`;
     const lightFilePath = `./themes/${theme}/_light.scss`;
     const json = JSON.parse(
-      readFileSync(`./atomic/${theme}/theme-static.json`, "utf8"),
+      readFileSync(`./atomic/${theme}/theme.json`, "utf8"),
+      //readFileSync(`./atomic/${theme}/theme-static.json`, "utf8"),
     );
     const mapping = [
       { selector: ":root", declaration: "" },
@@ -237,9 +238,7 @@ export default function replaceAfter(manifestCollection) {
     const cleanedContent = updatedContent.split("\n").slice(0, -3).join("\n");
     writeFileSync(filePath, format(cleanedContent, "scss"), "utf8");
 
-    console.log(
-      `Replaced after variables in ${theme} theme for ${manifest.name}`,
-    );
+    console.log(`Replaced after properties in theme: ${theme}`);
   });
 }
 
