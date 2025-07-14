@@ -9,74 +9,80 @@
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    --color-base-00: #ffffff;
+    --color-base-10: #fafafa;
+    --color-base-20: #f6f6f6;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-70: #5c5c5c;
+    --color-base-100: #222222;
+    color-scheme: light;
+    --h1-color: #0f4761;
+    --h2-color: #12597a;
+    --h3-color: #166c94;
+    --h4-color: #1a7ead;
+    --h5-color: #1e91c7;
+    --h6-color: #22a4e0;
+    --inline-title-color: #000000;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 40, 40, 40;
+    --color-red-rgb: 184, 30, 25;
+    --color-red: #b81e19;
+    --color-orange-rgb: 237, 96, 2;
+    --color-orange: #ed6002;
+    --color-yellow: #fabd2f;
+    --color-green-rgb: 5, 144, 61;
+    --color-green: #05903d;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-cyan: #00bfbc;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #086ddd;
+    --color-purple-rgb: 102, 69, 204;
+    --color-purple: #6645cc;
+    --color-pink: #d53984;
+    --bg-light: #fdf6e3;
+    --background-primary: var(--bg-light);
+    --background-primary-alt: var(--bg-light);
+    --background-secondary: var(--bg-light);
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  color-scheme: light;
-  --h1-color: #0f4761;
-  --h2-color: #12597a;
-  --h3-color: #166c94;
-  --h4-color: #1a7ead;
-  --h5-color: #1e91c7;
-  --h6-color: #22a4e0;
-  --inline-title-color: #000000;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 40, 40, 40;
-  --color-red-rgb: 184, 30, 25;
-  --color-red: #b81e19;
-  --color-orange-rgb: 237, 96, 2;
-  --color-orange: #ed6002;
-  --color-yellow: #fabd2f;
-  --color-green-rgb: 5, 144, 61;
-  --color-green: #05903d;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 102, 69, 204;
-  --color-purple: #6645cc;
-  --color-pink: #d53984;
-  --bg-light: #fdf6e3;
-  --background-primary: var(--bg-light);
-  --background-primary-alt: var(--bg-light);
-  --background-secondary: var(--bg-light);
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
 }
 
 .darkmode {
@@ -1026,7 +1032,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

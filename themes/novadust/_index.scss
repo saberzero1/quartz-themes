@@ -9,139 +9,145 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --text-accent: var(--color-accent-1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --background-primary: var(--dark-blue);
+    --background-primary-alt: var(--soft-dark-blue);
+    --background-secondary: var(--dark-blue);
+    --background-modifier-hover: var(--mid-blue);
+    --background-modifier-border: none;
+    --background-modifier-border-hover: none;
+    --background-modifier-border-focus: none;
+    --background-modifier-form-field: var(--light-blue);
+    --color-red: var(--bright-red);
+    --color-orange: var(--bright-orange);
+    --color-yellow: var(--bright-yellow);
+    --color-green: var(--bright-green);
+    --color-cyan: var(--bright-blue);
+    --color-blue: var(--ocean-blue);
+    --color-purple: var(--bright-purple);
+    --color-pink: var(--bright-orange);
+    --color-red-rgb: var(--bright-red-rgb);
+    --color-orange-rgb: var(--bright-orange-rgb);
+    --color-green-rgb: var(--bright-green-rgb);
+    --color-cyan-rgb: var(--percy-blue-rgb);
+    --color-blue-rgb: var(--bright-blue-rbg);
+    --color-purple-rgb: var(--bright-purple-rgb);
+    --interactive-accent: var(--bright-blue);
+    --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
+    --interactive-accent-hover: rgba(var(--ocean-blue-rgb), 0.8);
+    --accent-h: 140;
+    --accent-s: 56%;
+    --accent-l: 69%;
+    --bold-color: var(--bright-green);
+    --code-normal: var(--blue-gray);
+    --italic-color: var(--bright-yellow);
+    --text-normal: var(--soft-white);
+    --text-muted: var(--basic-gray);
+    --text-faint: var(--bright-blue);
+    --text-highlight-bg: rgba(var(--percy-blue-rgb), 0.5);
+    --h1-color: var(--bright-red);
+    --h2-color: var(--bright-orange);
+    --h3-color: var(--bright-yellow);
+    --h4-color: var(--bright-green);
+    --h5-color: var(--percy-blue);
+    --h6-color: var(--bright-blue);
+    --h1-size: 2.3em;
+    --h2-size: 2.1em;
+    --h3-size: 1.9em;
+    --h4-size: 1.7em;
+    --h5-size: 1.6em;
+    --h6-size: 1.5em;
+    --checkbox-color: var(--soft-yellow);
+    --checkbox-color-hover: rgba(var(--soft-yellow-rgb), 0.8);
+    --checkbox-border-color: rgba(var(--soft-yellow-rgb), 0.8);
+    --checkbox-border-color-hover: rgba(var(--soft-yellow-rgb), 0.6);
+    --checkbox-marker-color: var(--background-primary);
+    --indentation-guide-width: 2px;
+    --indentation-guide-color: rgba(var(--ocean-blue-rgb), 0.4);
+    --link-color: var(--bright-orange);
+    --link-color-hover: rgba(var(--bright-orange-rgb), 0.8);
+    --link-external-color: var(--bright-blue);
+    --link-external-color-hover: rgba(var(--bright-blue-rbg), 0.8);
+    --callout-border-width: 2px;
+    --callout-border-opacity: 0.05;
+    --callout-radius: 10px;
+    --callout-title-color: none;
+    --callout-bug: var(--bright-purple-rgb);
+    --callout-default: var(--bright-blue-rbg);
+    --callout-error: var(--bright-red-rgb);
+    --callout-example: var(--bright-purple-rgb);
+    --callout-fail: var(--bright-red-rgb);
+    --callout-important: var(--bright-orange-rgb);
+    --callout-info: var(--bright-blue-rbg);
+    --callout-question: var(--soft-yellow-rgb);
+    --callout-success: var(--bright-green-rgb);
+    --callout-summary: var(--washed-blue-rgb);
+    --callout-tip: var(--bright-orange-rgb);
+    --callout-todo: var(--bright-blue-rbg);
+    --callout-warning: var(--bright-red-rgb);
+    --callout-quote: var(--soft-yellow-rgb);
+    --tag-background: var(--ocean-blue);
+    --tag-background-hover: var(--light-blue);
+    --tag-color: var(--bright-green);
+    --tag-color-hover: var(--percy-blue);
+    --tag-border-color: none;
+    --tag-border-width: 0px;
+    --tag-radius: 15px;
+    --tag-weight: 600;
+    --graph-line: var(--light-blue);
+    --graph-node-unresolved: var(--washed-blue);
+    --graph-node-tag: var(--bright-blue);
+    --code-comment: var(--washed-blue);
+    --hr-color: var(--percy-blue);
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --text-accent: var(--color-accent-1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --background-primary: var(--dark-blue);
-  --background-primary-alt: var(--soft-dark-blue);
-  --background-secondary: var(--dark-blue);
-  --background-modifier-hover: var(--mid-blue);
-  --background-modifier-border: none;
-  --background-modifier-border-hover: none;
-  --background-modifier-border-focus: none;
-  --background-modifier-form-field: var(--light-blue);
-  --color-red: var(--bright-red);
-  --color-orange: var(--bright-orange);
-  --color-yellow: var(--bright-yellow);
-  --color-green: var(--bright-green);
-  --color-cyan: var(--bright-blue);
-  --color-blue: var(--ocean-blue);
-  --color-purple: var(--bright-purple);
-  --color-pink: var(--bright-orange);
-  --color-red-rgb: var(--bright-red-rgb);
-  --color-orange-rgb: var(--bright-orange-rgb);
-  --color-green-rgb: var(--bright-green-rgb);
-  --color-cyan-rgb: var(--percy-blue-rgb);
-  --color-blue-rgb: var(--bright-blue-rbg);
-  --color-purple-rgb: var(--bright-purple-rgb);
-  --interactive-accent: var(--bright-blue);
-  --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
-  --interactive-accent-hover: rgba(var(--ocean-blue-rgb), 0.8);
-  --accent-h: 140;
-  --accent-s: 56%;
-  --accent-l: 69%;
-  --bold-color: var(--bright-green);
-  --code-normal: var(--blue-gray);
-  --italic-color: var(--bright-yellow);
-  --text-normal: var(--soft-white);
-  --text-muted: var(--basic-gray);
-  --text-faint: var(--bright-blue);
-  --text-highlight-bg: rgba(var(--percy-blue-rgb), 0.5);
-  --h1-color: var(--bright-red);
-  --h2-color: var(--bright-orange);
-  --h3-color: var(--bright-yellow);
-  --h4-color: var(--bright-green);
-  --h5-color: var(--percy-blue);
-  --h6-color: var(--bright-blue);
-  --h1-size: 2.3em;
-  --h2-size: 2.1em;
-  --h3-size: 1.9em;
-  --h4-size: 1.7em;
-  --h5-size: 1.6em;
-  --h6-size: 1.5em;
-  --checkbox-color: var(--soft-yellow);
-  --checkbox-color-hover: rgba(var(--soft-yellow-rgb), 0.8);
-  --checkbox-border-color: rgba(var(--soft-yellow-rgb), 0.8);
-  --checkbox-border-color-hover: rgba(var(--soft-yellow-rgb), 0.6);
-  --checkbox-marker-color: var(--background-primary);
-  --indentation-guide-width: 2px;
-  --indentation-guide-color: rgba(var(--ocean-blue-rgb), 0.4);
-  --link-color: var(--bright-orange);
-  --link-color-hover: rgba(var(--bright-orange-rgb), 0.8);
-  --link-external-color: var(--bright-blue);
-  --link-external-color-hover: rgba(var(--bright-blue-rbg), 0.8);
-  --callout-border-width: 2px;
-  --callout-border-opacity: 0.05;
-  --callout-radius: 10px;
-  --callout-title-color: none;
-  --callout-bug: var(--bright-purple-rgb);
-  --callout-default: var(--bright-blue-rbg);
-  --callout-error: var(--bright-red-rgb);
-  --callout-example: var(--bright-purple-rgb);
-  --callout-fail: var(--bright-red-rgb);
-  --callout-important: var(--bright-orange-rgb);
-  --callout-info: var(--bright-blue-rbg);
-  --callout-question: var(--soft-yellow-rgb);
-  --callout-success: var(--bright-green-rgb);
-  --callout-summary: var(--washed-blue-rgb);
-  --callout-tip: var(--bright-orange-rgb);
-  --callout-todo: var(--bright-blue-rbg);
-  --callout-warning: var(--bright-red-rgb);
-  --callout-quote: var(--soft-yellow-rgb);
-  --tag-background: var(--ocean-blue);
-  --tag-background-hover: var(--light-blue);
-  --tag-color: var(--bright-green);
-  --tag-color-hover: var(--percy-blue);
-  --tag-border-color: none;
-  --tag-border-width: 0px;
-  --tag-radius: 15px;
-  --tag-weight: 600;
-  --graph-line: var(--light-blue);
-  --graph-node-unresolved: var(--washed-blue);
-  --graph-node-tag: var(--bright-blue);
-  --code-comment: var(--washed-blue);
-  --hr-color: var(--percy-blue);
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1181,7 +1187,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

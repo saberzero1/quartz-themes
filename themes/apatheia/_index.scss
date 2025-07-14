@@ -9,102 +9,108 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    --color-orange-rgb: 233, 151, 63;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-blue-rgb: 2, 122, 255;
+    --color-purple-rgb: 168, 130, 255;
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    --accent-d: var(--ap-primary-d);
+    --accent-h: var(--ap-primary-h);
+    --accent-l: var(--ap-primary-l);
+    --accent-s: var(--ap-primary-s);
+    --background-modifier-form-field: var(--color-base-25);
+    --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
+    --base-d: var(--ap-base0-d);
+    --base-h: var(--ap-base0-h);
+    --base-s: var(--ap-base0-s);
+    --checkbox-radius: 30%;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      calc(var(--accent-l) - 3.8%)
+    );
+    --color-accent-2: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      calc(var(--accent-l) + 3.8%)
+    );
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-base-00: var(--ap-color-dp1);
+    --color-base-10: var(--ap-color-dp2);
+    --color-base-100: var(--ap-color-dp11);
+    --color-base-20: var(--ap-color-dp0);
+    --color-base-25: var(--ap-color-dp0);
+    --color-base-30: var(--ap-color-dp0);
+    --color-base-35: var(--ap-color-dp4);
+    --color-base-40: var(--ap-color-dp0);
+    --color-base-50: var(--ap-color-dp6);
+    --color-base-70: var(--ap-color-dp10);
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-green-rgb: 68, 207, 110;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-red-rgb: 251, 70, 76;
+    --color-yellow: #e0de71;
+    --font-interface-theme: var(--ap-font-interface);
+    --font-monospace-theme: var(--ap-font-monospace);
+    --font-text-theme: var(--ap-font-text);
+    --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+    --graph-node-tag: var(--ap-secondary);
+    --graph-node-unresolved: var(--text-faint);
+    --h1-color: var(--ap-h1);
+    --h2-color: var(--ap-h2);
+    --h3-color: var(--ap-h3);
+    --h4-color: var(--ap-h4);
+    --h5-color: var(--ap-h5);
+    --h6-color: var(--ap-h6);
+    --mono-rgb-100: 255, 255, 255;
+    --radius-l: var(--ap-radius-l);
+    --radius-m: var(--ap-radius-m);
+    --radius-s: var(--ap-radius-s);
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --tag-background: var(--ap-color-tag-background);
+    --tag-color: var(--ap-color-tag-text);
+    --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+    --text-accent-hover: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      calc(var(--accent-d) + 12%)
+    );
+    --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+    --text-highlight-bg: #ffd000;
+    --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+    color-scheme: dark;
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  --color-orange-rgb: 233, 151, 63;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-blue-rgb: 2, 122, 255;
-  --color-purple-rgb: 168, 130, 255;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --accent-d: var(--ap-primary-d);
-  --accent-h: var(--ap-primary-h);
-  --accent-l: var(--ap-primary-l);
-  --accent-s: var(--ap-primary-s);
-  --background-modifier-form-field: var(--color-base-25);
-  --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
-  --base-d: var(--ap-base0-d);
-  --base-h: var(--ap-base0-h);
-  --base-s: var(--ap-base0-s);
-  --checkbox-radius: 30%;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-base-00: var(--ap-color-dp1);
-  --color-base-10: var(--ap-color-dp2);
-  --color-base-100: var(--ap-color-dp11);
-  --color-base-20: var(--ap-color-dp0);
-  --color-base-25: var(--ap-color-dp0);
-  --color-base-30: var(--ap-color-dp0);
-  --color-base-35: var(--ap-color-dp4);
-  --color-base-40: var(--ap-color-dp0);
-  --color-base-50: var(--ap-color-dp6);
-  --color-base-70: var(--ap-color-dp10);
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
-  --font-interface-theme: var(--ap-font-interface);
-  --font-monospace-theme: var(--ap-font-monospace);
-  --font-text-theme: var(--ap-font-text);
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
-  --graph-node-tag: var(--ap-secondary);
-  --graph-node-unresolved: var(--text-faint);
-  --h1-color: var(--ap-h1);
-  --h2-color: var(--ap-h2);
-  --h3-color: var(--ap-h3);
-  --h4-color: var(--ap-h4);
-  --h5-color: var(--ap-h5);
-  --h6-color: var(--ap-h6);
-  --mono-rgb-100: 255, 255, 255;
-  --radius-l: var(--ap-radius-l);
-  --radius-m: var(--ap-radius-m);
-  --radius-s: var(--ap-radius-s);
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --tag-background: var(--ap-color-tag-background);
-  --tag-color: var(--ap-color-tag-text);
-  --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
-  --text-highlight-bg: #ffd000;
-  --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
-  color-scheme: dark;
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1177,7 +1183,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

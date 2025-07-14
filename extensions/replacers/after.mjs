@@ -200,6 +200,20 @@ export default function replaceAfter(manifestCollection) {
       },
     ];
 
+    const darkMapping = [
+      { selector: ".theme-dark", declaration: "" },
+      { selector: "body", declaration: "--accent-h" },
+      { selector: "body", declaration: "--accent-s" },
+      { selector: "body", declaration: "--accent-l" },
+    ];
+
+    const lightMapping = [
+      { selector: ".theme-light", declaration: "" },
+      { selector: "body", declaration: "--accent-h" },
+      { selector: "body", declaration: "--accent-s" },
+      { selector: "body", declaration: "--accent-l" },
+    ];
+
     mapping.forEach(({ selector, declaration }) => {
       replaceInFile(
         filePath,
@@ -209,19 +223,23 @@ export default function replaceAfter(manifestCollection) {
     });
 
     if (isDarkTheme(theme)) {
-      replaceInFile(
-        darkFilePath,
-        target(".theme-dark", ""),
-        getValueFromJSON(json, ".theme-dark", ""),
-      );
+      darkMapping.forEach(({ selector, declaration }) => {
+        replaceInFile(
+          darkFilePath,
+          target(selector, declaration),
+          getValueFromJSON(json, selector, declaration),
+        );
+      });
     }
 
     if (isLightTheme(theme)) {
-      replaceInFile(
-        lightFilePath,
-        target(".theme-light", ""),
-        getValueFromJSON(json, ".theme-light", ""),
-      );
+      lightMapping.forEach(({ selector, declaration }) => {
+        replaceInFile(
+          lightFilePath,
+          target(selector, declaration),
+          getValueFromJSON(json, selector, declaration),
+        );
+      });
     }
 
     let fixes = "";

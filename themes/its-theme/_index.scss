@@ -9,236 +9,248 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 0;
+    --accent-s: 49%;
+    --accent-l: 49%;
+
+    color-scheme: dark;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #fb464c;
+    --color-orange-rgb: 233, 151, 63;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-green-rgb: 68, 207, 110;
+    --color-green: #44cf6e;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-cyan: #53dfdd;
+    --color-blue-rgb: 2, 122, 255;
+    --color-blue: #027aff;
+    --color-purple-rgb: 168, 130, 255;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --accent-h: 0;
+    --accent-l: 49%;
+    --accent-s: 49%;
+    --background-modifier-border: var(--lines);
+    --background-modifier-border-focus: var(--accent);
+    --background-modifier-border-hover: var(--bg);
+    --background-modifier-form-field: var(--input-bg);
+    --background-modifier-hover: var(--hvr-active);
+    --background-primary: var(--note);
+    --background-secondary: var(--side-bar);
+    --bold-color: inherit;
+    --icon-color: var(--soft-text);
+    --interactive-accent: var(--bttn);
+    --interactive-accent-hover: var(--bg);
+    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --italic-color: inherit;
+    --prompt-border-color: var(--outline);
+    --text-accent: var(--accent2-lite);
+    --text-accent-hover: var(--lite-accent);
+    --text-dl: #e5ebee;
+    --text-faint: var(--faint-text);
+    --text-highlight-bg: var(--hvr);
+    --text-muted: var(--soft-text);
+    --text-normal: var(--text);
+    --dark-accent: #652121;
+    --lite-accent: #c94d4d;
+    --accent: #863737;
+    --accent2-lite: #61afef;
+    --side-bar: var(--note);
+    --outer-bar: #0b0f13;
+    --dark-sidebar: #0d1014;
+    --bttn: var(--dark-accent);
+    --input-bg: #000000;
+    --hvr: #a83c3c;
+    --hvr-active: #d42f2f;
+    --bg: #252c36;
+    --inactive: #586477;
+    --outline: var(--outer-bar);
+    --lines: var(--hr);
+    --note: #1a1e24;
+    --text: #bccad8;
+    --headers: #c14343;
+    --soft-text: #97a1b9;
+    --faint-text: #4e5b6f;
+    --code-text: #fa4545;
+    --code-bg: #232831;
+    --embed-bg: var(--dark-sidebar);
+    --td: #06080c60;
+    --tag: var(--dark-accent);
+    --hr: #2f3b4d;
+    --graph-lines: var(--dark-accent);
+    --graph-404: #727e93;
+    --graph-tag: var(--headers);
+    --link-color-hover: var(--lite-accent);
+    --link-external-color-hover: var(--text-accent-hover);
+    --checkbox-border-color: var(--accent);
+    --checkbox-border-color-hover: var(--dark-accent);
+    --checkbox-color: var(--accent);
+    --checkbox-color-hover: var(--dark-accent);
+    --checkbox-size: var(--font-text-size);
+    --collapse-icon-color-collapsed: var(--inactive);
+    --tag-background: var(--tag);
+    --tag-background-hover: var(--accent);
+    --tag-border-color: var(--tag);
+    --tag-border-color-hover: var(--accent);
+    --tag-color: var(--text-dl);
+    --tag-color-hover: var(--text-dl);
+    --tag-decoration-hover: underline;
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink: #fa99cd;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --accent-h: 0;
-  --accent-l: 49%;
-  --accent-s: 49%;
-  --background-modifier-border: var(--lines);
-  --background-modifier-border-focus: var(--accent);
-  --background-modifier-border-hover: var(--bg);
-  --background-modifier-form-field: var(--input-bg);
-  --background-modifier-hover: var(--hvr-active);
-  --background-primary: var(--note);
-  --background-secondary: var(--side-bar);
-  --bold-color: inherit;
-  --icon-color: var(--soft-text);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --italic-color: inherit;
-  --prompt-border-color: var(--outline);
-  --text-accent: var(--accent2-lite);
-  --text-accent-hover: var(--lite-accent);
-  --text-dl: #e5ebee;
-  --text-faint: var(--faint-text);
-  --text-highlight-bg: var(--hvr);
-  --text-muted: var(--soft-text);
-  --text-normal: var(--text);
-  --dark-accent: #652121;
-  --lite-accent: #c94d4d;
-  --accent: #863737;
-  --accent2-lite: #61afef;
-  --side-bar: var(--note);
-  --outer-bar: #0b0f13;
-  --dark-sidebar: #0d1014;
-  --bttn: var(--dark-accent);
-  --input-bg: #000000;
-  --hvr: #a83c3c;
-  --hvr-active: #d42f2f;
-  --bg: #252c36;
-  --inactive: #586477;
-  --outline: var(--outer-bar);
-  --lines: var(--hr);
-  --note: #1a1e24;
-  --text: #bccad8;
-  --headers: #c14343;
-  --soft-text: #97a1b9;
-  --faint-text: #4e5b6f;
-  --code-text: #fa4545;
-  --code-bg: #232831;
-  --embed-bg: var(--dark-sidebar);
-  --td: #06080c60;
-  --tag: var(--dark-accent);
-  --hr: #2f3b4d;
-  --graph-lines: var(--dark-accent);
-  --graph-404: #727e93;
-  --graph-tag: var(--headers);
-  --link-color-hover: var(--lite-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
-  --collapse-icon-color-collapsed: var(--inactive);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
-  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 0;
+    --accent-s: 49%;
+    --accent-l: 49%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --color-red-rgb: 233, 49, 71;
+    --color-red: #e93147;
+    --color-orange-rgb: 236, 117, 0;
+    --color-orange: #ec7500;
+    --color-yellow: #e0ac00;
+    --color-green-rgb: 8, 185, 78;
+    --color-green: #08b94e;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-cyan: #00bfbc;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #086ddd;
+    --color-purple-rgb: 120, 82, 238;
+    --color-purple: #7852ee;
+    --color-pink: #d53984;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-100: #222222;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --accent-h: 0;
+    --accent-l: 49%;
+    --accent-s: 49%;
+    --background-modifier-border: var(--lines);
+    --background-modifier-border-focus: var(--accent);
+    --background-modifier-border-hover: var(--bg);
+    --background-modifier-form-field: var(--input-bg);
+    --background-modifier-hover: var(--hvr-active);
+    --background-primary: var(--note);
+    --background-secondary: var(--side-bar);
+    --bold-color: inherit;
+    --icon-color: var(--soft-text);
+    --interactive-accent: var(--bttn);
+    --interactive-accent-hover: var(--bg);
+    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --italic-color: inherit;
+    --prompt-border-color: var(--outline);
+    --text-accent: var(--accent2-lite);
+    --text-accent-hover: var(--lite-accent);
+    --text-dl: #e5ebee;
+    --text-faint: var(--faint-text);
+    --text-highlight-bg: var(--hvr);
+    --text-muted: var(--soft-text);
+    --text-normal: var(--text);
+    --dark-accent: #c35c5c;
+    --lite-accent: #cd2626;
+    --accent: #912e2e;
+    --accent2-lite: #5599d0;
+    --side-bar: var(--note);
+    --outer-bar: #eef3fd;
+    --dark-sidebar: #f1f5ff;
+    --bttn: var(--headers);
+    --input-bg: var(--td);
+    --hvr: #ff0000;
+    --hvr-active: #fd7373;
+    --bg: #e1e9f6;
+    --inactive: #a6bbde;
+    --outline: var(--bg);
+    --lines: #b5c2d8;
+    --note: #f8fbff;
+    --text: #30353a;
+    --headers: #c14343;
+    --faint-text: #4e5b6f;
+    --soft-text: #697580;
+    --code-text: #ea4262;
+    --code-bg: var(--embed-bg);
+    --embed-bg: var(--dark-sidebar);
+    --td: #d0ddef62;
+    --tag: #c65656;
+    --hr: #d6deea;
+    --graph-lines: #e4e7f8;
+    --graph-404: #727e93;
+    --graph-tag: #000000;
+    --link-color-hover: var(--lite-accent);
+    --link-external-color-hover: var(--text-accent-hover);
+    --checkbox-border-color: var(--accent);
+    --checkbox-border-color-hover: var(--dark-accent);
+    --checkbox-color: var(--accent);
+    --checkbox-color-hover: var(--dark-accent);
+    --checkbox-size: var(--font-text-size);
+    --collapse-icon-color-collapsed: var(--inactive);
+    --tag-background: var(--tag);
+    --tag-background-hover: var(--accent);
+    --tag-border-color: var(--tag);
+    --tag-border-color-hover: var(--accent);
+    --tag-color: var(--text-dl);
+    --tag-color-hover: var(--text-dl);
+    --tag-decoration-hover: underline;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink: #d53984;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --accent-h: 0;
-  --accent-l: 49%;
-  --accent-s: 49%;
-  --background-modifier-border: var(--lines);
-  --background-modifier-border-focus: var(--accent);
-  --background-modifier-border-hover: var(--bg);
-  --background-modifier-form-field: var(--input-bg);
-  --background-modifier-hover: var(--hvr-active);
-  --background-primary: var(--note);
-  --background-secondary: var(--side-bar);
-  --bold-color: inherit;
-  --icon-color: var(--soft-text);
-  --interactive-accent: var(--bttn);
-  --interactive-accent-hover: var(--bg);
-  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --italic-color: inherit;
-  --prompt-border-color: var(--outline);
-  --text-accent: var(--accent2-lite);
-  --text-accent-hover: var(--lite-accent);
-  --text-dl: #e5ebee;
-  --text-faint: var(--faint-text);
-  --text-highlight-bg: var(--hvr);
-  --text-muted: var(--soft-text);
-  --text-normal: var(--text);
-  --dark-accent: #c35c5c;
-  --lite-accent: #cd2626;
-  --accent: #912e2e;
-  --accent2-lite: #5599d0;
-  --side-bar: var(--note);
-  --outer-bar: #eef3fd;
-  --dark-sidebar: #f1f5ff;
-  --bttn: var(--headers);
-  --input-bg: var(--td);
-  --hvr: #ff0000;
-  --hvr-active: #fd7373;
-  --bg: #e1e9f6;
-  --inactive: #a6bbde;
-  --outline: var(--bg);
-  --lines: #b5c2d8;
-  --note: #f8fbff;
-  --text: #30353a;
-  --headers: #c14343;
-  --faint-text: #4e5b6f;
-  --soft-text: #697580;
-  --code-text: #ea4262;
-  --code-bg: var(--embed-bg);
-  --embed-bg: var(--dark-sidebar);
-  --td: #d0ddef62;
-  --tag: #c65656;
-  --hr: #d6deea;
-  --graph-lines: #e4e7f8;
-  --graph-404: #727e93;
-  --graph-tag: #000000;
-  --link-color-hover: var(--lite-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --checkbox-border-color: var(--accent);
-  --checkbox-border-color-hover: var(--dark-accent);
-  --checkbox-color: var(--accent);
-  --checkbox-color-hover: var(--dark-accent);
-  --checkbox-size: var(--font-text-size);
-  --collapse-icon-color-collapsed: var(--inactive);
-  --tag-background: var(--tag);
-  --tag-background-hover: var(--accent);
-  --tag-border-color: var(--tag);
-  --tag-border-color-hover: var(--accent);
-  --tag-color: var(--text-dl);
-  --tag-color-hover: var(--text-dl);
-  --tag-decoration-hover: underline;
 }
 
 @font-face {
@@ -1221,7 +1233,7 @@ body {
     overflow-x: auto;
     box-shadow: var(--code-shadow);
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

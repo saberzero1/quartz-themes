@@ -9,69 +9,75 @@
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-red: #e93147;
+    --color-orange: #ec7500;
+    --color-yellow: #e0ac00;
+    --color-green: #08b94e;
+    --color-cyan: #00bfbc;
+    --color-blue: #086ddd;
+    --color-purple: #7852ee;
+    --color-pink: #d53984;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --code-background: #4b2139;
+    --color-base-00: #fcfef3;
+    --color-base-10: #a48783;
+    --color-base-100: #666666;
+    --color-base-20: #4b2139;
+    --color-base-30: #a48783;
+    --color-base-35: #202430;
+    --color-base-40: #202430;
+    --color-base-50: #a48783;
+    --color-base-70: #c1aeac;
+    --hr-thickness: 1px;
+    --icon-color: #c8bcac;
+    --nav-item-background-active: none;
+    --nav-item-background-hover: #a48783;
+    --nav-item-color: #fff;
+    --nav-item-color-active: #7f6c5e;
+    --tag-background: transparent;
+    --tag-background-hover: transparent;
+    --tag-color: #a48783;
+    --tag-color-hover: #e5dfd3;
+    --text-accent: #527a98;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red: #e93147;
-  --color-orange: #ec7500;
-  --color-yellow: #e0ac00;
-  --color-green: #08b94e;
-  --color-cyan: #00bfbc;
-  --color-blue: #086ddd;
-  --color-purple: #7852ee;
-  --color-pink: #d53984;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --code-background: #4b2139;
-  --color-base-00: #fcfef3;
-  --color-base-10: #a48783;
-  --color-base-100: #666666;
-  --color-base-20: #4b2139;
-  --color-base-30: #a48783;
-  --color-base-35: #202430;
-  --color-base-40: #202430;
-  --color-base-50: #a48783;
-  --color-base-70: #c1aeac;
-  --hr-thickness: 1px;
-  --icon-color: #c8bcac;
-  --nav-item-background-active: none;
-  --nav-item-background-hover: #a48783;
-  --nav-item-color: #fff;
-  --nav-item-color-active: #7f6c5e;
-  --tag-background: transparent;
-  --tag-background-hover: transparent;
-  --tag-color: #a48783;
-  --tag-color-hover: #e5dfd3;
-  --text-accent: #527a98;
 }
 
 .darkmode {
@@ -863,7 +869,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

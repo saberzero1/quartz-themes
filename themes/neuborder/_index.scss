@@ -9,100 +9,110 @@
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 80%;
+    --accent-l: 64%;
+
+    color-scheme: light;
+    --text-faint: hsl(var(--accent-h), 6%, 64%);
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-red-rgb: 254, 121, 104;
+    --color-red: rgb(var(--color-red-rgb));
+    --color-green-rgb: 120, 186, 126;
+    --color-green: rgb(var(--color-green-rgb));
+    --color-orange-rgb: 243, 156, 18;
+    --color-orange: rgb(var(--color-orange-rgb));
+    --color-yellow-rgb: 229, 199, 0;
+    --color-yellow: rgb(var(--color-yellow-rgb));
+    --color-cyan-rgb: 54, 215, 183;
+    --color-cyan: rgb(var(--color-cyan-rgb));
+    --color-blue-rgb: 3, 138, 255;
+    --color-blue: rgb(var(--color-blue-rgb));
+    --color-purple-rgb: 148, 85, 236;
+    --color-purple: rgb(var(--color-purple-rgb));
+    --color-pink-rgb: 242, 63, 165;
+    --color-pink: rgb(var(--color-pink-rgb));
+    --color-base-00: #ffffff;
+    --color-base-10: #fafafa;
+    --color-base-20: #f0f0f0;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-70: #5a5a5a;
+    --color-base-100: #222222;
+    --accent-h: var(--accent-light-h);
+    --accent-s: var(--accent-light-s);
+    --accent-l: var(--accent-light-l);
+    --accent-light-h: 232;
+    --accent-light-s: 80%;
+    --accent-light-l: 64%;
+    --color-accent-hsl: var(--color-accent-hsl-light);
+    --color-accent: var(--color-accent-light);
+    --color-accent-1: var(--color-accent-1-light);
+    --color-accent-2: var(--color-accent-2-light);
+    --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent-light: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l)
+    );
+    --color-accent-1-light: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      calc(var(--accent-l) + 2.5%)
+    );
+    --color-accent-2-light: hsl(
+      var(--accent-h),
+      var(--accent-s),
+      calc(var(--accent-l) + 5%)
+    );
+    --background-modifier-border-focus: hsla(
+      var(--accent-h),
+      calc(var(--accent-s) * 0.4),
+      calc(var(--accent-l)),
+      0.3
+    );
+    --background-primary-alt: var(--color-base-10);
+    --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
+    --background-modifier-form-field: transparent;
+    --text-highlight-bg: #ffd000;
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --color: 0, 0%;
+    --l: 100%;
+    --color-primary-lightest: hsl(var(--color), var(--l));
+    --color-primary-light: hsl(var(--color), calc(var(--l) - 7.5%));
+    --list-radius-medium: 6px;
+    --button-radius-medium: 6px;
+    --background-primary: var(--color-primary-lightest);
+    --background-modifier-border: #eaeaea;
+    --background-secondary: #f6f6f6;
+    --text-normal: #000000;
+    --text-muted: #232323;
+    --interactive-accent-hover: var(--interactive-accent);
+    --input-radius: var(--input-radius-light);
+    --input-radius-light: 5px;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --text-faint: hsl(var(--accent-h), 6%, 64%);
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 254, 121, 104;
-  --color-red: rgb(var(--color-red-rgb));
-  --color-green-rgb: 120, 186, 126;
-  --color-green: rgb(var(--color-green-rgb));
-  --color-orange-rgb: 243, 156, 18;
-  --color-orange: rgb(var(--color-orange-rgb));
-  --color-yellow-rgb: 229, 199, 0;
-  --color-yellow: rgb(var(--color-yellow-rgb));
-  --color-cyan-rgb: 54, 215, 183;
-  --color-cyan: rgb(var(--color-cyan-rgb));
-  --color-blue-rgb: 3, 138, 255;
-  --color-blue: rgb(var(--color-blue-rgb));
-  --color-purple-rgb: 148, 85, 236;
-  --color-purple: rgb(var(--color-purple-rgb));
-  --color-pink-rgb: 242, 63, 165;
-  --color-pink: rgb(var(--color-pink-rgb));
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f0f0f0;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5a5a5a;
-  --color-base-100: #222222;
-  --accent-h: var(--accent-light-h);
-  --accent-s: var(--accent-light-s);
-  --accent-l: var(--accent-light-l);
-  --accent-light-h: 232;
-  --accent-light-s: 80%;
-  --accent-light-l: 64%;
-  --color-accent-hsl: var(--color-accent-hsl-light);
-  --color-accent: var(--color-accent-light);
-  --color-accent-1: var(--color-accent-1-light);
-  --color-accent-2: var(--color-accent-2-light);
-  --color-accent-hsl-light: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-light: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-light: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 2.5%)
-  );
-  --color-accent-2-light: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 5%)
-  );
-  --background-modifier-border-focus: hsla(
-    var(--accent-h),
-    calc(var(--accent-s) * 0.4),
-    calc(var(--accent-l)),
-    0.3
-  );
-  --background-primary-alt: var(--color-base-10);
-  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15);
-  --background-modifier-form-field: transparent;
-  --text-highlight-bg: #ffd000;
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --color: 0, 0%;
-  --l: 100%;
-  --color-primary-lightest: hsl(var(--color), var(--l));
-  --color-primary-light: hsl(var(--color), calc(var(--l) - 7.5%));
-  --list-radius-medium: 6px;
-  --button-radius-medium: 6px;
-  --background-primary: var(--color-primary-lightest);
-  --background-modifier-border: #eaeaea;
-  --background-secondary: #f6f6f6;
-  --text-normal: #000000;
-  --text-muted: #232323;
-  --interactive-accent-hover: var(--interactive-accent);
-  --input-radius: var(--input-radius-light);
-  --input-radius-light: 5px;
 }
 
 .darkmode {
@@ -1172,7 +1182,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

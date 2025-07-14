@@ -9,138 +9,144 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red-rgb: 251, 70, 76;
+    --color-orange-rgb: 233, 151, 63;
+    --color-green-rgb: 68, 207, 110;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-blue-rgb: 2, 122, 255;
+    --color-purple-rgb: 168, 130, 255;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --text-accent: var(--color-accent-1);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --accent-h: 202;
+    --accent-s: 100%;
+    --accent-l: 75%;
+    --bg_dark_x: 36, 40, 59;
+    --bg_dark: rgb(var(--bg_dark_x));
+    --bg_x: 36, 40, 59;
+    --bg: rgb(var(--bg_x));
+    --bg_highlight_x: 65, 72, 104;
+    --bg_highlight: rgb(var(--bg_highlight_x));
+    --bg_highlight_dark_x: 35, 35, 55;
+    --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+    --fg_x: 192, 202, 245;
+    --fg: rgb(var(--fg_x));
+    --fg_dark_x: 169, 177, 214;
+    --fg_dark: rgb(var(--fg_dark_x));
+    --comment_x: 86, 95, 137;
+    --comment: rgb(var(--comment_x));
+    --blue_x: 122, 162, 247;
+    --blue: rgb(var(--blue_x));
+    --cyan_x: 125, 207, 255;
+    --cyan: rgb(var(--cyan_x));
+    --magenta_x: 187, 154, 247;
+    --magenta: rgb(var(--magenta_x));
+    --purple_x: 157, 124, 21;
+    --purple: rgb(var(--purple_x));
+    --orange_x: 255, 158, 100;
+    --orange: rgb(var(--orange_x));
+    --yellow_x: 224, 175, 104;
+    --yellow: rgb(var(--yellow_x));
+    --green_x: 158, 206, 106;
+    --green: rgb(var(--green_x));
+    --red_x: 255, 117, 127;
+    --red: rgb(var(--red_x));
+    --color-red: var(--red);
+    --color-purple: var(--purple);
+    --color-green: var(--green);
+    --color-cyan: var(--cyan);
+    --color-blue: var(--blue);
+    --color-yellow: var(--yellow);
+    --color-orange: var(--orange);
+    --color-pink: var(--magenta);
+    --background-primary: var(--bg);
+    --background-primary-alt: var(--bg);
+    --background-secondary: var(--bg_dark);
+    --background-modifier-border: var(--bg_highlight);
+    --background-modifier-border-focus: var(--bg_highlight);
+    --background-modifier-border-hover: var(--bg_highlight);
+    --background-modifier-form-field: var(--bg_dark);
+    --background-modifier-hover: var(--bg_highlight);
+    --text-normal: var(--fg);
+    --text-faint: var(--comment);
+    --text-muted: var(--fg_dark);
+    --h1-color: var(--red);
+    --h2-color: var(--yellow);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--magenta);
+    --tag-color: var(--magenta);
+    --tag-background: rgba(var(--magenta_x), 0.15);
+    --inline-title-color: var(--magenta);
+    --text-highlight-bg: rgba(var(--orange_x), 0.4);
+    --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --italic-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --checkbox-color: var(--comment);
+    --checkbox-color-hover: var(--comment);
+    --checkbox-border-color: var(--comment);
+    --checkbox-border-color-hover: var(--comment);
+    --code-normal: var(--fg);
+    --code-background: var(--bg_highlight_dark);
+    --nav-item-background-hover: var(--bg_highlight);
+    --nav-item-color-active: var(--red);
+    --nav-item-background-active: var(--bg_highlight);
+    --nav-indentation-guide-color: var(--bg_highlight);
+    --indentation-guide-color: var(--comment);
+    --graph-line: var(--comment);
+    --graph-node-tag: var(--orange);
+    --prompt-border-color: var(--bg_highlight);
+    --border-width: 2px;
+    --callout-quote: var(--fg_dark);
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-orange-rgb: 233, 151, 63;
-  --color-green-rgb: 68, 207, 110;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-blue-rgb: 2, 122, 255;
-  --color-purple-rgb: 168, 130, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --accent-h: 202;
-  --accent-s: 100%;
-  --accent-l: 75%;
-  --bg_dark_x: 36, 40, 59;
-  --bg_dark: rgb(var(--bg_dark_x));
-  --bg_x: 36, 40, 59;
-  --bg: rgb(var(--bg_x));
-  --bg_highlight_x: 65, 72, 104;
-  --bg_highlight: rgb(var(--bg_highlight_x));
-  --bg_highlight_dark_x: 35, 35, 55;
-  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
-  --fg_x: 192, 202, 245;
-  --fg: rgb(var(--fg_x));
-  --fg_dark_x: 169, 177, 214;
-  --fg_dark: rgb(var(--fg_dark_x));
-  --comment_x: 86, 95, 137;
-  --comment: rgb(var(--comment_x));
-  --blue_x: 122, 162, 247;
-  --blue: rgb(var(--blue_x));
-  --cyan_x: 125, 207, 255;
-  --cyan: rgb(var(--cyan_x));
-  --magenta_x: 187, 154, 247;
-  --magenta: rgb(var(--magenta_x));
-  --purple_x: 157, 124, 21;
-  --purple: rgb(var(--purple_x));
-  --orange_x: 255, 158, 100;
-  --orange: rgb(var(--orange_x));
-  --yellow_x: 224, 175, 104;
-  --yellow: rgb(var(--yellow_x));
-  --green_x: 158, 206, 106;
-  --green: rgb(var(--green_x));
-  --red_x: 255, 117, 127;
-  --red: rgb(var(--red_x));
-  --color-red: var(--red);
-  --color-purple: var(--purple);
-  --color-green: var(--green);
-  --color-cyan: var(--cyan);
-  --color-blue: var(--blue);
-  --color-yellow: var(--yellow);
-  --color-orange: var(--orange);
-  --color-pink: var(--magenta);
-  --background-primary: var(--bg);
-  --background-primary-alt: var(--bg);
-  --background-secondary: var(--bg_dark);
-  --background-modifier-border: var(--bg_highlight);
-  --background-modifier-border-focus: var(--bg_highlight);
-  --background-modifier-border-hover: var(--bg_highlight);
-  --background-modifier-form-field: var(--bg_dark);
-  --background-modifier-hover: var(--bg_highlight);
-  --text-normal: var(--fg);
-  --text-faint: var(--comment);
-  --text-muted: var(--fg_dark);
-  --h1-color: var(--red);
-  --h2-color: var(--yellow);
-  --h3-color: var(--green);
-  --h4-color: var(--cyan);
-  --h5-color: var(--blue);
-  --h6-color: var(--magenta);
-  --tag-color: var(--magenta);
-  --tag-background: rgba(var(--magenta_x), 0.15);
-  --inline-title-color: var(--magenta);
-  --text-highlight-bg: rgba(var(--orange_x), 0.4);
-  --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --italic-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --checkbox-color: var(--comment);
-  --checkbox-color-hover: var(--comment);
-  --checkbox-border-color: var(--comment);
-  --checkbox-border-color-hover: var(--comment);
-  --code-normal: var(--fg);
-  --code-background: var(--bg_highlight_dark);
-  --nav-item-background-hover: var(--bg_highlight);
-  --nav-item-color-active: var(--red);
-  --nav-item-background-active: var(--bg_highlight);
-  --nav-indentation-guide-color: var(--bg_highlight);
-  --indentation-guide-color: var(--comment);
-  --graph-line: var(--comment);
-  --graph-node-tag: var(--orange);
-  --prompt-border-color: var(--bg_highlight);
-  --border-width: 2px;
-  --callout-quote: var(--fg_dark);
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1133,7 +1139,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

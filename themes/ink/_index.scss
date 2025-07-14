@@ -9,67 +9,73 @@
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-red-rgb: 233, 49, 71;
+    --color-red: #e93147;
+    --color-orange-rgb: 236, 117, 0;
+    --color-orange: #ec7500;
+    --color-green-rgb: 8, 185, 78;
+    --color-green: #08b94e;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-cyan: #00bfbc;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #086ddd;
+    --color-purple-rgb: 120, 82, 238;
+    --color-purple: #7852ee;
+    --color-pink: #d53984;
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --color-base-00: hsl(0, 0%, 100%);
+    --color-base-05: hsl(0, 0%, 95%);
+    --color-base-10: hsl(0, 0%, 90%);
+    --color-base-20: hsl(0, 0%, 80%);
+    --color-base-30: hsl(0, 0%, 70%);
+    --color-base-35: hsl(0, 0%, 65%);
+    --color-base-40: hsl(0, 0%, 60%);
+    --color-base-50: hsl(0, 0%, 50%);
+    --color-base-60: hsl(0, 0%, 40%);
+    --color-base-65: hsl(0, 0%, 35%);
+    --color-base-70: hsl(0, 0%, 30%);
+    --color-base-75: hsl(0, 0%, 25%);
+    --color-base-80: hsl(0, 0%, 20%);
+    --color-base-95: hsl(0, 0%, 5%);
+    --color-base-100: hsl(0, 0%, 0%);
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 40%;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--color-accent-hsl));
+    --color-accent-2: var(--color-base-80);
+    --background-primary: var(--color-base-00);
+    --background-primary-alt: var(--color-base-05);
+    --background-secondary: var(--color-base-05);
+    --text-highlight-bg: hsla(var(--color-accent-hsl), 0.3);
+    --caret-color: var(--color-base-70);
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink: #d53984;
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --color-base-00: hsl(0, 0%, 100%);
-  --color-base-05: hsl(0, 0%, 95%);
-  --color-base-10: hsl(0, 0%, 90%);
-  --color-base-20: hsl(0, 0%, 80%);
-  --color-base-30: hsl(0, 0%, 70%);
-  --color-base-35: hsl(0, 0%, 65%);
-  --color-base-40: hsl(0, 0%, 60%);
-  --color-base-50: hsl(0, 0%, 50%);
-  --color-base-60: hsl(0, 0%, 40%);
-  --color-base-65: hsl(0, 0%, 35%);
-  --color-base-70: hsl(0, 0%, 30%);
-  --color-base-75: hsl(0, 0%, 25%);
-  --color-base-80: hsl(0, 0%, 20%);
-  --color-base-95: hsl(0, 0%, 5%);
-  --color-base-100: hsl(0, 0%, 0%);
-  --accent-h: 0;
-  --accent-s: 0%;
-  --accent-l: 40%;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--color-accent-hsl));
-  --color-accent-2: var(--color-base-80);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-05);
-  --background-secondary: var(--color-base-05);
-  --text-highlight-bg: hsla(var(--color-accent-hsl), 0.3);
-  --caret-color: var(--color-base-70);
 }
 
 .darkmode {
@@ -1080,7 +1086,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;
