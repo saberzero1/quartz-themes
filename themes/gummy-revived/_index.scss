@@ -200,6 +200,14 @@ body {
   .article-title {
     width: fit-content;
   }
+
+  .page > #quartz-body .sidebar {
+    &.left,
+    &.left:has(.explorer),
+    &.right {
+      background-color: transparent;
+    }
+  }
 }
 :root,
 html {
