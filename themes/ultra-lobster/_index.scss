@@ -790,6 +790,7 @@ body {
         "WONK" 1;
       font-weight: 700;
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -819,6 +820,7 @@ body {
         padding: 4px 8px;
         transition: var(--transition-03);
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -850,6 +852,7 @@ body {
           "WONK" 1;
         font-weight: 700;
 
+        text-decoration-line: none;
         &:hover {
           font-family: var(--font-header);
           font-variation-settings:

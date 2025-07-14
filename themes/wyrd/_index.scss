@@ -833,6 +833,7 @@ body {
       border-radius: 5px;
       color: var(--link-color);
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -858,6 +859,7 @@ body {
         padding: var(--tag-padding-y) var(--tag-padding-x);
         line-height: 1;
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -881,6 +883,7 @@ body {
         border-color: var(--link-unresolved-color);
         color: var(--link-unresolved-color);
 
+        text-decoration-line: none;
         &:hover {
           border-color: var(--link-unresolved-color);
           color: var(--link-color-hover);

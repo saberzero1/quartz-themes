@@ -852,6 +852,7 @@ body {
       text-decoration: underline;
       text-decoration-color: hsl(var(--color-alternate));
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -880,6 +881,7 @@ body {
         text-decoration: none;
         transition: 250ms;
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -912,6 +914,7 @@ body {
         text-decoration: underline;
         text-decoration-color: hsl(var(--color-stop));
 
+        text-decoration-line: none;
         &:hover {
           text-decoration: underline;
           color: var(--link-color-hover);

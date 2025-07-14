@@ -3105,6 +3105,7 @@ body {
       color: var(--col-ed-hyperlink);
       text-decoration: underline;
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -3131,6 +3132,7 @@ body {
         color: var(--col-pr-txt-tag);
         padding-bottom: 0px;
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -3154,6 +3156,7 @@ body {
         text-decoration-style: var(--link-unresolved-decoration-style);
         color: var(--col-pr-hyperlink-broken);
 
+        text-decoration-line: none;
         &:hover {
           color: var(--link-color-hover);
           opacity: 1;
