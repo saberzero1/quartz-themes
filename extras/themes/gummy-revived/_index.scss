@@ -36,6 +36,18 @@ body {
       background-color: transparent;
     }
   }
+
+  @media all and ($mobile) {
+    .page
+      > #quartz-body
+      .sidebar.left:has(.explorer)
+      :not(.folder-container, a[data-for]) {
+      &:before,
+      &:after {
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 :root,
