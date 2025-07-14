@@ -81,6 +81,7 @@ html[saved-theme="dark"] {
     --accent-h: 208;
     --accent-s: 100%;
     --accent-l: 50%;
+    --color-yellow-rgb: 255, 238, 128;
     --color-dark-blue: #011627;
     --color-deep-blue: #010e1a;
     --color-selected-blue: #1f4662;
@@ -94,6 +95,9 @@ html[saved-theme="dark"] {
     --interactive-accent-hsl: 208, 100%, 50%;
     --interactive-accent-hover: var(--color-light-blue);
     --icon-color: #ffffff;
+    --scrollbar-bg: var(--color-yellow);
+    --scrollbar-thumb-bg: rgba(var(--color-yellow-rgb), 0.5);
+    --scrollbar-active-thumb-bg: var(--color-yellow);
     --nav-item-color: #ffffff;
     --nav-item-color-active: var(--color-orange);
     --nav-item-background-active: var(--color-deep-blue);
@@ -471,6 +475,9 @@ body {
     --color-base-40,
     var(--background-modifier-border-focus)
   );
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -762,6 +769,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

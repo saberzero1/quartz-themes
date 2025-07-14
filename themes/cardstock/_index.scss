@@ -71,6 +71,7 @@ html[saved-theme="dark"] {
     --background-primary: var(--dark-bg);
     --background-primary-alt: var(--dark-secondary);
     --background-secondary: var(--dark-bg);
+    --darky-dark: var(--dark-bg);
     --background-modifier-hover: var(--dark-bg);
     --background-modifier-border: var(--dark-secondary);
     --background-modifier-border-hover: var(--red-deep);
@@ -89,6 +90,9 @@ html[saved-theme="dark"] {
     --nav-item-color: var(--text-muted);
     --nav-item-color-active: var(--main-bg);
     --nav-item-background-active: var(--red);
+    --scrollbar-active-thumb-bg: #000000;
+    --scrollbar-bg: #000000;
+    --scrollbar-thumb-bg: #000000;
     --highlight-mix-blend-mode: darken;
   }
 }
@@ -159,6 +163,7 @@ html[saved-theme="light"] {
     --background-primary: var(--main-bg);
     --background-primary-alt: var(--beige);
     --background-secondary: var(--main-bg);
+    --darky-dark: var(--dark-beige);
     --background-modifier-hover: var(--beige);
     --background-modifier-border: var(--beige);
     --background-modifier-border-hover: var(--red-deep);
@@ -177,6 +182,9 @@ html[saved-theme="light"] {
     --nav-item-color: var(--text-muted);
     --nav-item-color-active: var(--main-bg);
     --nav-item-background-active: var(--red);
+    --scrollbar-active-thumb-bg: #000000;
+    --scrollbar-bg: #000000;
+    --scrollbar-thumb-bg: #000000;
     --highlight-mix-blend-mode: darken;
   }
 }
@@ -344,6 +352,7 @@ html[saved-theme="light"] {
 :root {
   --main-bg: #ffffff;
   --beige: #f0eae2;
+  --dark-beige: #e6dbcc;
   --light-beige: #f8f5f1;
   --red: #c95454;
   --red-rgb: 201, 84, 84;
@@ -601,6 +610,9 @@ body {
   caret-color: var(--caret-color);
   --font-monospace: MonoLisa, "Source Code Pro", monospace;
   --inline-title-color: var(--text-muted);
+  --scrollbar-active-thumb-bg: var(--background-secondary);
+  --scrollbar-bg: var(--darky-dark);
+  --scrollbar-thumb-bg: var(--darky-dark);
   --tag-background: rgba(var(--red-rgb), 0.1);
   color: var(--text-normal);
   font-size: 20px;
@@ -807,6 +819,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

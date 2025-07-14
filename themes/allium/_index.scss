@@ -72,10 +72,12 @@ html[saved-theme="dark"] {
     --background-modifier-border-focus: var(--AccentA1);
     --checkbox-color: var(--AccentA1);
     --prompt-border-color: var(--AccentA1);
+    --scrollbar-active-thumb-bg: var(--AccentA1);
     --interactive-accent: var(--AccentA1);
     --Axt: #a32d7f36;
     --background-modifier-border: var(--Axt);
     --nav-indentation-guide-color: var(--Axt);
+    --scrollbar-thumb-bg: var(--Axt);
     --AccentA2: #d560b1;
     --interactive-accent-hover: var(--AccentA2);
     --text-accent-hover: var(--AccentA2);
@@ -99,6 +101,7 @@ html[saved-theme="dark"] {
     --h4-color: #946a94;
     --h5-color: #835783;
     --h6-color: #805380;
+    --scrollbar-bg: transparent;
     --color-base-00: var(--EBgnd);
     --color-base-10: var(--EBgnd);
     --color-base-20: var(--Bgnd);
@@ -183,10 +186,12 @@ html[saved-theme="light"] {
     --background-modifier-border-focus: var(--AccentA1);
     --checkbox-color: var(--AccentA1);
     --prompt-border-color: var(--AccentA1);
+    --scrollbar-active-thumb-bg: var(--AccentA1);
     --interactive-accent: var(--AccentA1);
     --Axt: #a32d7f36;
     --background-modifier-border: var(--Axt);
     --nav-indentation-guide-color: var(--Axt);
+    --scrollbar-thumb-bg: var(--Axt);
     --AccentA2: #d560b1;
     --interactive-accent-hover: var(--AccentA2);
     --text-accent-hover: var(--AccentA2);
@@ -204,6 +209,7 @@ html[saved-theme="light"] {
     --bold-color: #24262a;
     --italic-color: #fca287;
     --icon-color: #24262a;
+    --scrollbar-bg: transparent;
     --color-base-00: var(--EBgnd);
     --color-base-10: var(--EBgnd);
     --color-base-20: var(--Bgnd);
@@ -397,6 +403,9 @@ body {
     --color-base-40,
     var(--background-modifier-border-focus)
   );
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -688,6 +697,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

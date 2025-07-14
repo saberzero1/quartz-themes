@@ -164,9 +164,11 @@ function processAndInline(
           nodesToKeepOrReplace.push(node);
         }
       } else {
-        console.warn(
-          `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
-        );
+        if (modulePath !== "../variables.scss") {
+          console.warn(
+            `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
+          );
+        }
         nodesToKeepOrReplace.push(node);
       }
     } else {
