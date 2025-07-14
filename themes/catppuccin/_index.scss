@@ -89,6 +89,9 @@ html[saved-theme="dark"] {
     --interactive-accent: rgb(var(--ctp-accent));
     --interactive-accent-hover: rgb(var(--ctp-accent));
     --mono-rgb-100: var(--ctp-text);
+    --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
+    --scrollbar-bg: rgb(var(--ctp-text), 5%);
+    --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
     --text-accent: rgb(var(--ctp-accent));
     --text-accent-hover: rgb(var(--ctp-accent));
     --text-faint: rgb(var(--ctp-surface1));
@@ -185,6 +188,9 @@ html[saved-theme="light"] {
     --interactive-accent: rgb(var(--ctp-accent));
     --interactive-accent-hover: rgb(var(--ctp-accent));
     --mono-rgb-100: var(--ctp-text);
+    --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
+    --scrollbar-bg: rgb(var(--ctp-text), 5%);
+    --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
     --text-accent: rgb(var(--ctp-accent));
     --text-accent-hover: rgb(var(--ctp-accent));
     --text-faint: rgb(var(--ctp-surface1));
@@ -539,6 +545,9 @@ body {
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
+  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100), 20%);
+  --scrollbar-bg: rgb(var(--mono-rgb-100), 5%);
+  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100), 10%);
   --search-icon-color: var(--text-muted);
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -792,6 +801,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

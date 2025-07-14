@@ -164,6 +164,28 @@ const mapping = [
   { selector: "a.tag:hover", declaration: "" },
   { selector: "a", declaration: "" },
   { selector: "a:hover", declaration: "" },
+  { selector: "body.styled-scrollbars", declaration: "" },
+  { selector: "body.styled-scrollbars ::-webkit-scrollbar", declaration: "" },
+  {
+    selector: "body.styled-scrollbars ::-webkit-scrollbar-thumb",
+    declaration: "",
+  },
+  {
+    selector: "body.styled-scrollbars ::-webkit-scrollbar-thumb:hover",
+    declaration: "",
+  },
+  {
+    selector: "body.styled-scrollbars ::-webkit-scrollbar-thumb:active",
+    declaration: "",
+  },
+  {
+    selector: "body.styled-scrollbars ::-webkit-scrollbar-track",
+    declaration: "",
+  },
+  {
+    selector: "body.styled-scrollbars ::-webkit-scrollbar-corner",
+    declaration: "",
+  },
 ];
 
 const darkMapping = [

@@ -1501,6 +1501,46 @@
       "value": "1px solid var(--background-secondary)"
     }
   ],
+  "body.styled-scrollbars ::-webkit-scrollbar": [
+    { "property": "width", "value": "12px" },
+    { "property": "height", "value": "12px" },
+    { "property": "-webkit-border-radius", "value": "var(--radius-l)" },
+    { "property": "background-color", "value": "transparent" }
+  ],
+  "body.styled-scrollbars ::-webkit-scrollbar-track": [
+    { "property": "background-color", "value": "transparent" }
+  ],
+  "body.styled-scrollbars ::-webkit-scrollbar-thumb": [
+    { "property": "background-color", "value": "var(--scrollbar-thumb-bg)" },
+    { "property": "-webkit-border-radius", "value": "var(--radius-l)" },
+    { "property": "background-clip", "value": "padding-box" },
+    { "property": "border", "value": "2px solid transparent" },
+    { "property": "border-width", "value": "3px 3px 3px 2px" },
+    { "property": "min-height", "value": "45px" }
+  ],
+  "body.styled-scrollbars ::-webkit-scrollbar-thumb:active": [
+    { "property": "-webkit-border-radius", "value": "var(--radius-l)" },
+    {
+      "property": "background-color",
+      "value": "var(--scrollbar-active-thumb-bg)"
+    }
+  ],
+  "body.styled-scrollbars ::-webkit-scrollbar-thumb:hover": [
+    {
+      "property": "background-color",
+      "value": "var(--scrollbar-active-thumb-bg)"
+    }
+  ],
+  "body.styled-scrollbars ::-webkit-scrollbar-corner": [
+    { "property": "background", "value": "transparent" }
+  ],
+  "body.styled-scrollbars": [
+    { "property": "scrollbar-width", "value": "thin" },
+    {
+      "property": "scrollbar-color",
+      "value": "var(--scrollbar-thumb-bg) var(--scrollbar-bg)"
+    }
+  ],
   ".suggestion-item.is-selected": [
     { "property": "background-color", "value": "var(--text-selection)" }
   ],

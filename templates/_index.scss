@@ -369,6 +369,43 @@ body {
 
   overflow: initial;
 
+  //%%body.styled-scrollbars%%
+
+  ::-webkit-scrollbar {
+
+    //%%body.styled-scrollbars ::-webkit-scrollbar%%
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+
+    //%%body.styled-scrollbars ::-webkit-scrollbar-thumb%%
+
+    &:hover {
+
+      //%%body.styled-scrollbars ::-webkit-scrollbar-thumb:hover%%
+
+    }
+
+    &:active {
+
+      //%%body.styled-scrollbars ::-webkit-scrollbar-thumb:active%%
+
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+
+    //%%body.styled-scrollbars ::-webkit-scrollbar-track%%
+
+  }
+
+  ::-webkit-scrollbar-corner {
+
+    //%%body.styled-scrollbars ::-webkit-scrollbar-corner%%
+
+  }
+
   @media all and ($desktop) {
     background-color: var(--background-secondary);
 

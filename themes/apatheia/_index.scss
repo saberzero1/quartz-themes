@@ -44,6 +44,7 @@ html[saved-theme="dark"] {
     --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
     --base-d: var(--ap-base0-d);
     --base-h: var(--ap-base0-h);
+    --base-l: var(--ap-base0-l);
     --base-s: var(--ap-base0-s);
     --checkbox-radius: 30%;
     --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -96,6 +97,24 @@ html[saved-theme="dark"] {
     --radius-l: var(--ap-radius-l);
     --radius-m: var(--ap-radius-m);
     --radius-s: var(--ap-radius-s);
+    --scrollbar-active-thumb-bg: hsla(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l),
+      0.4
+    );
+    --scrollbar-bg: hsla(
+      var(--base-h),
+      var(--base-s),
+      calc(var(--base-l) + 15%),
+      1
+    );
+    --scrollbar-thumb-bg: hsla(
+      var(--base-h),
+      var(--base-s),
+      calc(var(--base-l) + 15%),
+      1
+    );
     --shadow-l:
       0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
     --shadow-s:
@@ -499,6 +518,9 @@ body {
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 12px;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -785,6 +807,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

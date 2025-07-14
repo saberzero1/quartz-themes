@@ -108,11 +108,12 @@ function parseCssWithPostCSS(cssString) {
     }));
 
     rule.selectors.forEach((selector) => {
+      const trimmedSelector = selector.replace(/\s+/gms, " ").trim();
       // Use the selector as a key in the results object
-      if (!results[selector]) {
-        results[selector] = [];
+      if (!results[trimmedSelector]) {
+        results[trimmedSelector] = [];
       }
-      results[selector].push(...declarations);
+      results[trimmedSelector].push(...declarations);
     });
   });
 

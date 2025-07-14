@@ -65,6 +65,7 @@ html[saved-theme="dark"] {
       0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
     --color-base-00: #000000;
     --background-settings-2: #4e4b4b;
+    --text-selection: hsla(var(--interactive-accent-hsl), 0.35);
     --accent-h: 198;
     --accent-s: 63%;
     --accent-l: 57%;
@@ -144,6 +145,7 @@ html[saved-theme="light"] {
       0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
     --color-base-00: #e6e5e5;
     --background-settings-2: #b3b3b3;
+    --text-selection: hsla(var(--interactive-accent-hsl), 0.35);
     --accent-h: 198;
     --accent-s: 78%;
     --accent-l: 64%;
@@ -407,6 +409,7 @@ body {
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-on-accent: white;
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-accent: var(--color-accent);
@@ -495,6 +498,9 @@ body {
   --radius-l: 10px;
   --radius-m: 3px;
   --radius-s: 3px;
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--text-selection);
+  --scrollbar-thumb-bg: var(--color-accent-active);
   --text-faint: var(--text-muted);
   contain: initial;
   height: auto;
@@ -711,6 +717,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

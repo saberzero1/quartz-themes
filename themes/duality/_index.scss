@@ -119,6 +119,9 @@ html[saved-theme="dark"] {
     --code-string: #b0a38c;
     --callout-title-color: #ff4500;
     --callout-content-background: #2a2a2a;
+    --scrollbar-bg: #151515;
+    --scrollbar-thumb-bg: #4a2c2a;
+    --scrollbar-active-thumb-bg: #663b38;
     --font-text-theme: "Times New Roman", Times, serif;
     --font-interface-theme: "Times New Roman", Times, serif;
     --font-monospace-theme: "Courier New", Courier, monospace;
@@ -245,6 +248,9 @@ html[saved-theme="light"] {
     --italic-color: var(--color-purple);
     --bold-weight: 700;
     --bold-modifier: 200;
+    --scrollbar-bg: var(--color-base-10);
+    --scrollbar-thumb-bg: var(--color-base-40);
+    --scrollbar-active-thumb-bg: var(--color-base-50);
     --callout-border-width: var(--border-width);
     --callout-border-opacity: 0.7;
     --callout-padding: var(--size-4-3);
@@ -660,6 +666,9 @@ body {
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 12px;
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -946,6 +955,42 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
