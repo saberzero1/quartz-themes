@@ -484,6 +484,7 @@ body {
 
       //%%.markdown-rendered .internal-link%%
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         --textHighlight-fallback: 255, 208, 0;
@@ -499,6 +500,7 @@ body {
 
         //%%a.tag%%
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -516,6 +518,7 @@ body {
 
         //%%.markdown-rendered .internal-link.is-unresolved%%
 
+        text-decoration-line: none;
         &:hover {
 
           //%%.markdown-rendered .internal-link.is-unresolved:hover%%
@@ -1126,7 +1129,7 @@ body {
           & .highlight {
             //%%.suggestion-highlight%%
 
-            background-color: var(--quartz-text-highlight)
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

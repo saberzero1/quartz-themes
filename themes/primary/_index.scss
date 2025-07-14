@@ -1300,6 +1300,7 @@ body {
       text-decoration-color: var(--link-decoration-color);
       text-underline-offset: var(--link-underline-offset);
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -1327,6 +1328,7 @@ body {
         font-weight: var(--pill-tag-weight);
         transition: var(--anim-duration-superfast) var(--anim-motion-smooth);
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -1351,6 +1353,7 @@ body {
         text-decoration-color: var(--link-unresolved-decoration-color);
         text-underline-offset: var(--link-underline-offset);
 
+        text-decoration-line: none;
         &:hover {
           color: var(--link-color-hover);
           opacity: 1;

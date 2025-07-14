@@ -31,7 +31,7 @@ body {
 
   .page > #quartz-body .sidebar {
     &.left,
-    &.left:has(.explorer),
+    &.left:has(div.explorer),
     &.right {
       background-color: transparent;
     }

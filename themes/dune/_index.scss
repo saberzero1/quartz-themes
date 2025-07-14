@@ -903,6 +903,7 @@ body {
       transition: opacity 0.15s ease-in-out;
       color: var(--link-color-dune);
 
+      text-decoration-line: none;
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
         color: var(--tag-color, var(--text-accent));
@@ -929,6 +930,7 @@ body {
         padding: 2px 4px;
         white-space: nowrap;
 
+        text-decoration-line: none;
         &:hover {
           color: var(--tag-color-hover, var(--text-accent));
           text-decoration: var(--tag-decoration-hover, none);
@@ -952,6 +954,7 @@ body {
         text-decoration-line: underline;
         text-decoration-style: dotted;
 
+        text-decoration-line: none;
         &:hover {
           color: var(--link-color-hover);
           opacity: 1;
