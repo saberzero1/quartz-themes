@@ -19,7 +19,6 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --mono-rgb-100: 255, 255, 255;
   --color-accent-hsl: 200, 70%, 45%;
   --color-accent-2: hsl(calc(200 - 5), calc(70% * 1.05), calc(45% * 1.29));
   color-scheme: dark;
@@ -32,17 +31,12 @@ html[saved-theme="dark"] {
   --color-pink: #ec95ee;
   --color-purple: #b491ed;
   --color-red: #e6578a;
-  --color-yellow: #cfba00;
   --code-normal: #d6e3f0;
   --code-background: #15222c;
-  --color-base-00: #070b0d;
-  --color-base-10: #0c1417;
-  --color-base-20: #0e161b;
   --color-base-30: #141f25;
   --color-base-35: #19272e;
   --color-base-40: #1e3038;
   --color-base-50: #243842;
-  --color-base-70: #7aa3b8;
   --color-base-100: #bdd1db;
   --text-normal: #bdd1db;
   --text-accent: hsl(200, 70%, 55%);
@@ -67,7 +61,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 200, 70%, 45%;
   --color-accent-2: hsl(calc(200 - 3), calc(70% * 1.02), calc(45% * 1.15));
   color-scheme: light;
@@ -80,16 +73,11 @@ html[saved-theme="light"] {
   --color-pink: #e135e4;
   --color-purple: #9c7ad3;
   --color-red: #f51a68;
-  --color-yellow: #c2ba8c;
   --code-background: #1e1e1e;
-  --color-base-00: #f6f9fb;
-  --color-base-10: #eff3f6;
-  --color-base-20: #e3edf2;
   --color-base-30: #98acba;
   --color-base-35: #52697a;
   --color-base-40: #2e3d49;
   --color-base-50: #1a2833;
-  --color-base-70: #141f25;
   --color-base-100: #070b0d;
   --text-normal: #7aa3b8;
   --text-accent: hsl(200, 70%, 45%);
@@ -274,44 +262,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -320,9 +270,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-size: 16px;
@@ -340,7 +287,6 @@ body {
   --collapse-icon-color: #355464;
   --collapse-icon-color-collapsed: hsl(200, 70%, 55%);
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(280, 87, 138, 0.6));
   --graph-node-unresolved: #355464;
   --graph-node-tag: #39f098;
@@ -363,7 +309,6 @@ body {
   --tag-border-width: 0px;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-border-hover: #19272e;
   --background-modifier-border-focus: #1e3038;
@@ -437,40 +382,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -619,7 +530,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
 
@@ -627,7 +537,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
     }
@@ -728,7 +637,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -877,7 +785,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #dee8ed;
     font-family: inherit;
     font-size: 2.25em;
@@ -898,7 +805,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #dee8ed;
     font-family: inherit;
     font-size: 1.75em;
@@ -917,7 +823,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #dee8ed;
     font-family: inherit;
     font-size: 1.5em;
@@ -936,7 +841,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #dee8ed;
     font-family: inherit;
     font-size: 1.25em;
@@ -955,7 +859,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #dee8ed;
     font-family: inherit;
     font-size: 1em;
@@ -974,7 +877,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #dee8ed;
     font-family: inherit;
     font-size: 0.75em;
@@ -1153,7 +1055,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #dee8ed;
       font-family: inherit;
       font-size: 1.5em;
@@ -1327,7 +1228,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: #dee8ed;
         font-family: inherit;
         font-size: 1.5em;
@@ -1366,7 +1266,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #dee8ed;
       font-family: inherit;
       font-size: 1.5em;

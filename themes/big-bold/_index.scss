@@ -23,15 +23,10 @@ html[saved-theme="dark"] {
   --background-modifier-border: #d9dde8;
   --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
   --color-accent-hsl: 232, 75%, 70%;
-  --color-base-00: hsla(216, 16%, 13%, 75%);
-  --color-base-10: hsl(216, 17%, 14%);
   --color-base-100: #c8d4e6;
-  --color-base-20: hsl(216, 19%, 16%);
   --color-base-30: hsl(218, 18%, 15%);
   --color-base-35: hsl(218, 19%, 27%);
   --color-base-40: hsl(218, 19%, 31%);
-  --color-base-50: hsl(219, 13%, 51%);
-  --color-base-70: hsl(220, 17%, 66%);
   --color-blue: #009be3;
   --color-cyan: #00cecb;
   --color-green: #7dcf2b;
@@ -39,8 +34,6 @@ html[saved-theme="dark"] {
   --color-pink: #e66ab4;
   --color-purple: #b45af5;
   --color-red: #ff4d3a;
-  --color-yellow: #e8c900;
-  --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
   --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
 }
@@ -59,18 +52,12 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 232, 75%, 70%;
   --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
-  --color-base-00: hsla(0, 0%, 100%, 75%);
-  --color-base-10: #fdfdfd;
   --color-base-100: #252525;
-  --color-base-20: hsl(0, 0%, 96%);
   --color-base-30: #9f9f9f66;
   --color-base-35: #dedede;
   --color-base-40: #d7d7d7;
-  --color-base-50: #878787;
-  --color-base-70: #7f7f7f;
   --color-blue: #4e8aa6;
   --color-cyan: #49a7ba;
   --color-green: #8fb26b;
@@ -78,7 +65,6 @@ html[saved-theme="light"] {
   --color-pink: #ac7aaa;
   --color-purple: #8076ad;
   --color-red: #c75f54;
-  --color-yellow: #dca931;
   --text-highlight-bg: #ffc800;
 }
 
@@ -793,44 +779,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -839,9 +787,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(700 + 200);
   --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
@@ -861,7 +806,6 @@ body {
   --collapse-icon-color: #787689;
   --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(255, 114, 114, 0.6));
   --graph-node-unresolved: #787689;
   --graph-node-tag: #84cc7c;
@@ -901,7 +845,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: hsla(237, 10%, 97%, 75%);
-  --background-primary-alt: hsl(220, 9%, 95%);
   --background-secondary: hsl(229, 14%, 91%);
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #9496ac66;
@@ -945,40 +888,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -1132,7 +1041,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       display: block;
       margin: auto;
@@ -1144,7 +1052,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       display: block;
       margin: auto;
@@ -1248,7 +1155,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -1397,7 +1303,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #54bab6;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1419,7 +1324,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #8391ed;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1439,7 +1343,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #b78cda;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1459,7 +1362,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #e991c4;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1479,7 +1381,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #ff7272;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1499,7 +1400,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #ffa058;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1663,7 +1563,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1841,7 +1740,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 700;
         color: #b78cda;
         font-family:
           "Merriweather Sans", "Book Antiqua", "Nunito Sans",
@@ -1882,7 +1780,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",

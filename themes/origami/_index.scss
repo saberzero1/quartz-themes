@@ -24,23 +24,16 @@ html[saved-theme="dark"] {
   --color-accent-2: hsl(calc(191 - 5), calc(54% * 1.05), calc(64% * 1.29));
   --text-accent: hsl(calc(191 - 3), calc(54% * 1.02), calc(64% * 1.15));
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-red: #f74545;
   --color-orange: #f78a45;
-  --color-yellow: #f7cc44;
   --color-green: #95f745;
   --color-cyan: #45cef7;
   --color-blue: #5a64f8;
   --color-purple: #aa45f7;
   --color-pink: #fb5ed8;
-  --color-base-00: #202020;
-  --color-base-10: #444444;
-  --color-base-20: #555555;
   --color-base-30: #555555;
   --color-base-35: #3f3f3f;
   --color-base-40: #606060;
-  --color-base-50: #707070;
-  --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
 }
 
@@ -60,23 +53,16 @@ html[saved-theme="light"] {
   --color-accent-hsl: 191, 54%, 64%;
   --color-accent-2: hsl(calc(191 - 3), calc(54% * 1.02), calc(64% * 1.15));
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-red: #ff5e23;
   --color-green: #689c2b;
   --color-orange: #fd912c;
-  --color-yellow: #fcdc37;
   --color-cyan: #42a3ad;
   --color-blue: #70b4f9;
   --color-purple: #744cb4;
   --color-pink: #f9a7e8;
-  --color-base-00: #f8f5f3;
-  --color-base-10: #e4e1de;
-  --color-base-20: #e9e9e9;
   --color-base-30: #d3d3d3;
   --color-base-35: #c7c7c7;
   --color-base-40: #dddddd;
-  --color-base-50: #b3b3b3;
-  --color-base-70: #222222;
   --color-base-100: #000;
 }
 
@@ -241,44 +227,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -287,9 +235,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -350,7 +295,6 @@ body {
   --collapse-icon-color: #7c7c7c;
   --collapse-icon-color-collapsed: hsl(191, 54%, 64%);
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(231, 111, 81, 0.6));
   --graph-node-unresolved: #7c7c7c;
   --graph-node-tag: hsl(191, 54%, 64%);
@@ -390,7 +334,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000000;
-  --background-primary-alt: #000000;
   --background-secondary: #424242;
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-border: #ffffff;
@@ -411,40 +354,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "IAWriter", sans-serif, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -598,7 +507,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: bold;
       font-variation-settings: "WGHT" 900;
@@ -609,7 +517,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: bold;
       font-variation-settings: "WGHT" 900;
@@ -713,7 +620,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -862,7 +768,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 900;
     color: #e76f51;
     font-size: 16px;
     font-style: normal;
@@ -887,7 +792,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 800;
     color: #b5e48c;
     font-family: inherit;
     font-size: 16px;
@@ -905,7 +809,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #f4a261;
     font-family: inherit;
     font-size: 16px;
@@ -923,7 +826,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #64dfdf;
     font-family: inherit;
     font-size: 16px;
@@ -941,7 +843,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #00a6fb;
     font-family: inherit;
     font-size: 16px;
@@ -959,7 +860,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #a06cd5;
     font-family: inherit;
     font-size: 16px;
@@ -1142,7 +1042,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #f4a261;
       font-family: inherit;
       font-size: 16px;
@@ -1321,7 +1220,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 700;
         color: #f4a261;
         font-family: inherit;
         font-size: 16px;
@@ -1359,7 +1257,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #f4a261;
       font-family: inherit;
       font-size: 16px;

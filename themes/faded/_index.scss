@@ -21,28 +21,20 @@ html[saved-theme="dark"] {
   }
   --text-accent: #d6ba7c;
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-red: #fb464c;
   --color-green: #44cf6e;
   --color-orange: #e9973f;
-  --color-yellow: #e0de71;
   --color-cyan: #53dfdd;
   --color-blue: #027aff;
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555;
-  --color-base-50: #666;
-  --color-base-70: #bababa;
   --color-base-100: #dadada;
   --color-accent-hsl: 254, 80%, 68%;
   --color-accent-2: #ffdd93;
   --background-primary: #1a1e24;
-  --background-primary-alt: #14171b;
   --background-secondary: #14171b;
   --text-highlight-bg: #ffd000;
   --interactive-accent-hsl: 254, 80%, 68%;
@@ -236,44 +228,6 @@ html[saved-theme="dark"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -282,10 +236,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-  --font-weight: 400;
   --link-weight: var(--link-weight);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
@@ -367,7 +317,6 @@ body {
   --tag-border-width: 0px;
   --tag-radius: 4px;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-border: #363636;
@@ -384,40 +333,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -567,7 +482,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 700;
       color: inherit;
 
@@ -575,7 +489,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 700;
       color: inherit;
     }
@@ -675,7 +588,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -824,7 +736,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 2em;
@@ -844,7 +755,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.6em;
@@ -862,7 +772,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.37em;
@@ -880,7 +789,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.25em;
@@ -898,7 +806,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.12em;
@@ -916,7 +823,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.12em;
@@ -1099,7 +1005,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: inherit;
       font-family: inherit;
       font-size: 1.37em;
@@ -1265,7 +1170,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 700;
         color: inherit;
         font-family: inherit;
         font-size: 1.37em;
@@ -1303,7 +1207,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: inherit;
       font-family: inherit;
       font-size: 1.37em;

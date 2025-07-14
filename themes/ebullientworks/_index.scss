@@ -21,11 +21,9 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-accent-hsl: 344, 30%, 51%;
   --color-accent-2: hsl(calc(344 - 5), calc(30% * 1.05), calc(51% * 1.29));
   --background-primary: #1e1e1e;
-  --background-primary-alt: #272727;
   --background-secondary: #2f2f2f;
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-border: #1b1b1b;
@@ -39,20 +37,14 @@ html[saved-theme="dark"] {
   --text-highlight-bg: #deaab8;
   --color-red: #eda6a5;
   --color-orange: #e3ac97;
-  --color-yellow: #e0b15e;
   --color-green: #adbcb0;
   --color-cyan: #74c6c5;
   --color-blue: #9fbbd8;
   --color-purple: #c6b2c3;
   --color-pink: #deaab8;
-  --color-base-00: #070707;
-  --color-base-10: #1e1e1e;
-  --color-base-20: #212121;
   --color-base-30: #2f2f2f;
   --color-base-35: #3f3f3f;
   --color-base-40: #484848;
-  --color-base-50: #737373;
-  --color-base-70: #b8b8b8;
   --color-base-100: #cdcdcd;
   --graph-line: #484848;
   --graph-node-tag: #d38d9f;
@@ -75,11 +67,9 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 344, 30%, 51%;
   --color-accent-2: hsl(calc(344 - 3), calc(30% * 1.02), calc(51% * 1.15));
   --background-primary: #f8f8f8;
-  --background-primary-alt: #f1f1f1;
   --background-secondary: #e3e3e3;
   --background-modifier-hover: #000000;
   --background-modifier-border: #cdcdcd;
@@ -93,20 +83,14 @@ html[saved-theme="light"] {
   --text-highlight-bg: rgba(var(--primary-accent-2-rgb), 0.2);
   --color-red: #c24c4a;
   --color-orange: #9d6553;
-  --color-yellow: #c49a52;
   --color-green: #5c7a62;
   --color-cyan: #058080;
   --color-blue: #4575ae;
   --color-purple: #8e6787;
   --color-pink: #a75c70;
-  --color-base-00: #fafafa;
-  --color-base-10: #f5f5f5;
-  --color-base-20: #f1f1f1;
   --color-base-30: #dbdbdb;
   --color-base-35: #cdcdcd;
   --color-base-40: #b8b8b8;
-  --color-base-50: #a0a0a0;
-  --color-base-70: #5d5d5d;
   --color-base-100: #212121;
   --graph-line: #cdcdcd;
   --graph-node-tag: #d38d9f;
@@ -280,44 +264,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -326,9 +272,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-weight: calc(500 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -351,7 +294,6 @@ body {
   --collapse-icon-color: #a0a0a0;
   --collapse-icon-color-collapsed: #deaab8;
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(122, 48, 47, 0.6));
   --graph-node-unresolved: #a0a0a0;
   --graph-node-tag: #adbcb0;
@@ -379,7 +321,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #2f2f2f;
@@ -443,40 +384,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "IBM Plex Sans", Helvetica Neue, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -625,7 +532,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 500;
       color: #5d5d5d;
 
@@ -633,7 +539,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 500;
       color: #5d5d5d;
     }
@@ -733,7 +638,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -882,7 +786,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #e0b15e;
     font-family: "Architects Daughter";
     font-size: 2em;
@@ -903,7 +806,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #91a695;
     font-family: "Architects Daughter";
     font-size: 1.8em;
@@ -921,7 +823,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #41b0b0;
     font-family: "Architects Daughter";
     font-size: 1.6em;
@@ -939,7 +840,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #7fa4ca;
     font-family: "Architects Daughter";
     font-size: 1.4em;
@@ -957,7 +857,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #b399ae;
     font-family: "Architects Daughter";
     font-size: 1.2em;
@@ -975,7 +874,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: #d38d9f;
     font-family: "Architects Daughter";
     font-size: 1.2em;
@@ -1163,7 +1061,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 500;
       color: #41b0b0;
       font-family: "Architects Daughter";
       font-size: 1.6em;
@@ -1335,7 +1232,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 500;
         color: #41b0b0;
         font-family: "Architects Daughter";
         font-size: 1.6em;
@@ -1373,7 +1269,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 500;
       color: #41b0b0;
       font-family: "Architects Daughter";
       font-size: 1.6em;

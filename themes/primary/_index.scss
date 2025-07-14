@@ -19,30 +19,22 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
-  --color-base-00: hsla(32, 21%, 9%, 1);
-  --color-base-10: hsla(30, 19%, 15%, 1);
-  --color-base-20: hsla(33, 20%, 17%, 1);
   --color-base-30: hsla(31, 27%, 25%, 1);
   --color-base-35: hsla(33, 27%, 33%, 1);
   --color-base-40: hsla(34, 24%, 46%, 1);
-  --color-base-50: hsla(35, 27%, 55%, 1);
-  --color-base-70: hsla(34, 39%, 74%, 1);
   --color-base-100: hsla(32, 48%, 85%, 1);
   --color-accent-hsl: 31, 27%, 24%;
   --color-accent-2: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
   --interactive-accent-hsl: 31, 27%, 24%;
   --color-red: #c04e4e;
   --color-orange: #cb8035;
-  --color-yellow: #e1b243;
   --color-green: #50c465;
   --color-cyan: #46a9b4;
   --color-blue: #3f89b0;
   --color-purple: #7161c2;
   --color-pink: #b46464;
   --background-primary: hsla(30, 19%, 15%, 1);
-  --background-primary-alt: hsla(30, 17%, 14%, 1);
   --background-secondary: hsla(29, 16%, 13%, 1);
   --background-modifier-hover: #000000;
   --background-modifier-border: hsla(28, 22%, 19%, 1);
@@ -109,30 +101,22 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --mono-rgb-100: 0, 0, 0;
   color-scheme: light;
-  --color-base-00: hsla(36, 38%, 98%, 1);
-  --color-base-10: hsla(35, 37%, 92%, 1);
-  --color-base-20: hsla(34, 34%, 90%, 1);
   --color-base-30: hsla(37, 38%, 83%, 1);
   --color-base-35: hsla(34, 37%, 70%, 1);
   --color-base-40: hsla(34, 29%, 60%, 1);
-  --color-base-50: hsla(31, 23%, 50%, 1);
-  --color-base-70: hsla(36, 32%, 30%, 1);
   --color-base-100: hsla(33, 54%, 17%, 1);
   --color-accent-hsl: 31, 27%, 24%;
   --color-accent-2: hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19));
   --interactive-accent-hsl: 31, 27%, 24%;
   --color-red: hsla(0, 58%, 53%, 1);
   --color-orange: hsla(30, 66%, 52%, 1);
-  --color-yellow: hsla(42, 89%, 46%, 1);
   --color-green: hsla(146, 37%, 49%, 1);
   --color-cyan: hsla(178, 39%, 49%, 1);
   --color-blue: hsla(206, 57%, 44%, 1);
   --color-purple: hsla(249, 39%, 60%, 1);
   --color-pink: hsla(351, 44%, 61%, 1);
   --background-primary: hsla(35, 36%, 96%, 1);
-  --background-primary-alt: hsla(35, 37%, 92%, 1);
   --background-secondary: hsla(34, 34%, 90%, 1);
   --background-modifier-hover: #ffffff;
   --background-modifier-border: hsla(37, 38%, 83%, 1);
@@ -193,44 +177,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -239,9 +185,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --checkbox-size: 16px;
   --checkbox-marker-color: var(--editor-bg-color);
@@ -263,7 +206,6 @@ body {
   --collapse-icon-color: hsla(34, 24%, 46%, 1);
   --collapse-icon-color-collapsed: hsl(31, 27%, 24%);
   --cursor-link: pointer;
-  --font-weight: 450;
   --graph-line: var(--color-base-35, rgba(228, 87, 78, 0.6));
   --graph-node-unresolved: hsla(34, 24%, 46%, 1);
   --graph-node-tag: #50c465;
@@ -301,7 +243,6 @@ body {
   --tag-border-width: 0px;
   --tag-weight: inherit;
   --background-primary: hsla(32, 21%, 9%, 1);
-  --background-primary-alt: hsla(30, 19%, 15%, 1);
   --background-secondary: hsla(33, 20%, 17%, 1);
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: hsla(31, 27%, 25%, 1);
@@ -372,40 +313,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "Inter", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -677,7 +584,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       color: hsla(34, 39%, 74%, 1);
       font-weight: 650;
 
@@ -685,7 +591,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       color: hsla(34, 39%, 74%, 1);
       font-weight: 650;
     }
@@ -794,7 +699,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -943,7 +847,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1.802em;
@@ -973,7 +876,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1.602em;
@@ -1001,7 +903,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1.424em;
@@ -1029,7 +930,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1.266em;
@@ -1057,7 +957,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1.125em;
@@ -1085,7 +984,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: hsla(32, 48%, 85%, 1);
     font-family: inherit;
     font-size: 1em;
@@ -1290,7 +1188,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 650;
       color: hsla(32, 48%, 85%, 1);
       font-family: inherit;
       font-size: 1.424em;
@@ -1480,7 +1377,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 650;
         color: hsla(32, 48%, 85%, 1);
         font-family: inherit;
         font-size: 1.424em;
@@ -1528,7 +1424,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 650;
       color: hsla(32, 48%, 85%, 1);
       font-family: inherit;
       font-size: 1.424em;

@@ -22,28 +22,20 @@ html[saved-theme="dark"] {
 
   --text-accent: hsl(223, 100%, calc(62% - 3.8%));
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-red: #fa5252;
   --color-orange: #ff9a67;
-  --color-yellow: #ffe452;
   --color-green: #69db7c;
   --color-cyan: #59e8d4;
   --color-blue: #6a94fc;
   --color-purple: #d0bfff;
   --color-pink: #ffc9c9;
-  --color-base-00: #0e0e0f;
-  --color-base-10: #212529;
-  --color-base-20: #343a40;
   --color-base-30: #646b73;
   --color-base-35: #979fa7;
   --color-base-40: #adb5bd;
-  --color-base-50: #dee2e6;
-  --color-base-70: #f8f9fa;
   --color-base-100: #fefefe;
   --color-accent-hsl: 223, 100%, 62%;
   --color-accent-2: hsl(223, 100%, calc(62% + 3.8%));
   --background-primary: #111;
-  --background-primary-alt: #646b73;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: #ffffff;
   --background-modifier-border: #ffffff;
@@ -66,28 +58,20 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-red: #e93147;
   --color-green: #40c057;
   --color-orange: #fd7e14;
-  --color-yellow: #f5a200;
   --color-cyan: #28adca;
   --color-blue: #3d73ff;
   --color-purple: #7950f2;
   --color-pink: #f558ad;
-  --color-base-00: #ffffff;
-  --color-base-10: #f8f9fa;
-  --color-base-20: #f1f3f5;
   --color-base-30: #adb5bd;
   --color-base-35: #868e96;
   --color-base-40: #495057;
-  --color-base-50: #343a40;
-  --color-base-70: #15171a;
   --color-base-100: #0e0e0f;
   --color-accent-hsl: 223, 100%, 62%;
   --color-accent-2: hsl(223, 100%, calc(62% + 5%));
   --background-primary: #262521;
-  --background-primary-alt: #5f5d54;
   --background-secondary: #4c4a43;
   --background-modifier-hover: #ffffff;
   --background-modifier-border: #4c4a43;
@@ -257,45 +241,8 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --default-font: "Inter", sans-serif;
   --font-monospace: "Source Code Pro", monospace;
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -305,10 +252,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-  --font-weight: 400;
   --h1-font: inherit;
   --link-weight: var(--link-weight);
   --nav-item-children-padding-start: 4px;
@@ -316,7 +259,6 @@ body {
   --p-spacing: 1rem;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #646b73;
@@ -421,40 +363,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -602,7 +510,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: 400;
       border-left: none;
@@ -611,7 +518,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: 400;
       border-left: none;
@@ -712,7 +618,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -861,7 +766,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 1.375rem;
@@ -881,7 +785,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 1.25rem;
@@ -899,7 +802,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 1.125rem;
@@ -917,7 +819,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 1rem;
@@ -935,7 +836,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 0.875rem;
@@ -953,7 +853,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 0.813rem;
@@ -1125,7 +1024,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: inherit;
       font-family: inherit;
       font-size: 1.125rem;
@@ -1291,7 +1189,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: inherit;
         font-family: inherit;
         font-size: 1.125rem;
@@ -1329,7 +1226,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: inherit;
       font-family: inherit;
       font-size: 1.125rem;

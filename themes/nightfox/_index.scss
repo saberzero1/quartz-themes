@@ -24,23 +24,16 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 181, 37%, 51%;
   --color-accent-2: hsl(calc(181 - 5), calc(37% * 1.05), calc(51% * 1.29));
   --text-accent: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
-  --mono-rgb-100: 205, 206, 207;
   --color-base-100: #cdcecf;
-  --color-base-70: #aeafb0;
-  --color-base-50: #5d728e;
   --color-base-40: #496283;
   --color-base-35: #39506d;
   --color-base-30: #29394f;
-  --color-base-20: #212e3f;
-  --color-base-10: #192330;
-  --color-base-00: #131a24;
   --color-cyan: #63cdcf;
   --color-pink: #d67ad2;
   --color-purple: #9d79d6;
   --color-blue: #719cd6;
   --color-orange: #f4a261;
   --color-red: #c94f6d;
-  --color-yellow: #dbc074;
   --color-green: #81b29a;
   --graph-node-tag: #4f9c77;
   --code-comment: #738091;
@@ -62,23 +55,16 @@ html[saved-theme="light"] {
   color-scheme: light;
   --color-accent-hsl: 181, 37%, 51%;
   --color-accent-2: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
-  --mono-rgb-100: 61, 43, 90;
   --color-base-100: #3d2b5a;
-  --color-base-70: #643f61;
-  --color-base-50: #99868a;
   --color-base-40: #9f9496;
   --color-base-35: #a4a2a1;
   --color-base-30: #aab0ad;
-  --color-base-20: #dbd1dd;
-  --color-base-10: #f6f2ee;
-  --color-base-00: #e4dcd4;
   --color-cyan: #287980;
   --color-pink: #a440b5;
   --color-purple: #6e33ce;
   --color-blue: #2848a9;
   --color-orange: #955f61;
   --color-red: #a5222f;
-  --color-yellow: #ac5402;
   --color-green: #396847;
   --graph-line: #1e1e1e;
   --graph-node-tag: #19ae5b;
@@ -246,44 +232,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -292,9 +240,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-weight: calc(700 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -324,7 +269,6 @@ body {
     calc(51% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(201, 79, 109, 0.6));
   --graph-node-unresolved: #5d728e;
   --graph-node-tag: #81b29a;
@@ -406,7 +350,6 @@ body {
   -webkit-user-select: none;
   caret-color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
   --background-primary: #111;
-  --background-primary-alt: #151d28;
   --background-secondary: #151d28;
   --code-background: #151d28;
   --background-modifier-border: #243347;
@@ -420,40 +363,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "??", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -601,7 +510,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 700;
       color: inherit;
 
@@ -609,7 +517,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 700;
       color: inherit;
     }
@@ -709,7 +616,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -858,7 +764,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 300;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 2.75em;
@@ -878,7 +783,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 2em;
@@ -896,7 +800,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 1.75em;
@@ -914,7 +817,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 1.4em;
@@ -932,7 +834,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 1.2em;
@@ -950,7 +851,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #d6d6d7;
     font-family: inherit;
     font-size: 1em;
@@ -1125,7 +1025,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #d6d6d7;
       font-family: inherit;
       font-size: 1.75em;
@@ -1297,7 +1196,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 700;
         color: #d6d6d7;
         font-family: inherit;
         font-size: 1.75em;
@@ -1335,7 +1233,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 700;
       color: #d6d6d7;
       font-family: inherit;
       font-size: 1.75em;

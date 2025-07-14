@@ -21,15 +21,9 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
@@ -41,7 +35,6 @@ html[saved-theme="dark"] {
   --color-pink: hsl(from hsl(40, 2%, 50%) 331 s l);
   --color-purple: hsl(from hsl(40, 2%, 50%) 253 s l);
   --color-red: hsl(from hsl(40, 2%, 50%) 356 s l);
-  --color-yellow: hsl(from hsl(40, 2%, 50%) 57 s l);
   --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --background-modifier-border-focus: color-mix(
     in srgb,
@@ -75,15 +68,9 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -94,7 +81,6 @@ html[saved-theme="light"] {
   --color-pink: hsl(from hsl(40, 2%, 50%) 331 s l);
   --color-purple: hsl(from hsl(40, 2%, 50%) 253 s l);
   --color-red: hsl(from hsl(40, 2%, 50%) 356 s l);
-  --color-yellow: hsl(from hsl(40, 2%, 50%) 57 s l);
   --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --background-modifier-border-focus: hsl(40, 2%, 50%);
   --background-modifier-hover: hsl(40, 2%, 50%);
@@ -351,44 +337,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -397,9 +345,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(500 + 200);
   --checkbox-radius: 0.25rem;
@@ -421,7 +366,6 @@ body {
     calc(66% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(
     --color-base-35,
     color-mix(in srgb, hsl(40, 2%, 50%), black 25%)
@@ -459,7 +403,6 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #363636;
   --background-modifier-border-hover: #3f3f3f;
@@ -527,40 +470,6 @@ body {
   --font-text:
     "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -712,7 +621,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 500;
       color: inherit;
 
@@ -720,7 +628,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 500;
       color: inherit;
     }
@@ -820,7 +727,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -969,7 +875,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 100;
     color: inherit;
     font-family: inherit;
     font-size: calc(
@@ -992,7 +897,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 200;
     color: inherit;
     font-family: inherit;
     font-size: calc(
@@ -1012,7 +916,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 300;
     color: inherit;
     font-family: inherit;
     font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
@@ -1030,7 +933,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 400;
     color: inherit;
     font-family: inherit;
     font-size: calc(1.618 * calc(1.618 * calc(0.8 * 16px)));
@@ -1048,7 +950,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: inherit;
     font-family: inherit;
     font-size: calc(1.618 * calc(0.8 * 16px));
@@ -1066,7 +967,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 500;
     color: inherit;
     font-family: inherit;
     font-size: calc(0.8 * 16px);
@@ -1232,7 +1132,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 300;
       color: inherit;
       font-family: inherit;
       font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
@@ -1409,7 +1308,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 300;
         color: inherit;
         font-family: inherit;
         font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
@@ -1447,7 +1345,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 300;
       color: inherit;
       font-family: inherit;
       font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));

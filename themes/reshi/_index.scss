@@ -21,27 +21,19 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
   --color-accent-2: hsl(calc(84 - 5), calc(25% * 1.05), calc(66% * 1.29));
   --color-red: #8e4646;
   --color-orange: #cf844f;
-  --color-yellow: #dfbf74;
   --color-green: #91a86e;
   --color-cyan: #7fbbb8;
   --color-blue: #7babd4;
   --color-purple: #9b7ad1;
   --color-pink: #b96b88;
   --background-primary: #252525;
-  --background-primary-alt: #1f1f1f;
   --background-secondary: #1d1d1d;
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-border: #9d9d9d;
@@ -93,27 +85,19 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
   --color-base-100: #222222;
   --color-accent-2: hsl(calc(84 - 3), calc(25% * 1.02), calc(66% * 1.15));
   --color-red: #802020;
   --color-orange: #cf5e0e;
-  --color-yellow: #d3980c;
   --color-green: #596d3a;
   --color-cyan: #2b8b87;
   --color-blue: #316793;
   --color-purple: #452c6c;
   --color-pink: #c62f46;
   --background-primary: #ececec;
-  --background-primary-alt: #d7d7d7;
   --background-secondary: #e1e1e1;
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-border: #404040;
@@ -312,44 +296,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -358,9 +304,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --checkbox-marker-color: #252525;
   --checkbox-color: #778e55;
@@ -369,7 +312,6 @@ body {
   --checkbox-border-color-hover: #707070;
   --collapse-icon-color: #6a6a6a;
   --collapse-icon-color-collapsed: #778e55;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(#8e4646, 0.6));
   --graph-node-unresolved: #6a6a6a;
   --graph-node-tag: #91a86e;
@@ -392,7 +334,6 @@ body {
   --tag-border-color: hsla(#778e55, 0.15);
   --tag-border-color-hover: hsla(#778e55, 0.15);
   --background-primary: #000;
-  --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #363636;
@@ -454,40 +395,6 @@ body {
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "Noto Sans", sans-serif, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -635,7 +542,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 650;
       color: inherit;
 
@@ -643,7 +549,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 650;
       color: inherit;
     }
@@ -743,7 +648,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -892,7 +796,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #778e55;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.802em;
@@ -912,7 +815,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #e0c252;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.602em;
@@ -930,7 +832,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #849e5f;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.424em;
@@ -948,7 +849,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #e4c967;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.266em;
@@ -966,7 +866,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #91a86e;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.125em;
@@ -984,7 +883,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 650;
     color: #e8d17d;
     font-family: "Noto Sans", sans-serif;
     font-size: 1em;
@@ -1142,7 +1040,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 650;
       color: #849e5f;
       font-family: "Noto Sans", sans-serif;
       font-size: 1.424em;
@@ -1308,7 +1205,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 650;
         color: #849e5f;
         font-family: "Noto Sans", sans-serif;
         font-size: 1.424em;
@@ -1346,7 +1242,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 650;
       color: #849e5f;
       font-family: "Noto Sans", sans-serif;
       font-size: 1.424em;

@@ -21,10 +21,8 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-red: #fb464c;
   --color-orange: #e9973f;
-  --color-yellow: #e0de71;
   --color-green: #44cf6e;
   --color-cyan: #53dfdd;
   --color-blue: #027aff;
@@ -32,14 +30,9 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --color-accent-hsl: 184, 79%, 45%;
-  --color-base-00: hsl(0 0% 12%);
-  --color-base-10: hsl(0 0% 14%);
-  --color-base-20: hsl(0 0% 16%);
   --color-base-30: hsl(0 0% 22%);
   --color-base-35: hsl(0 0% 25%);
   --color-base-40: hsl(0 0% 33%);
-  --color-base-50: hsl(0 0% 40%);
-  --color-base-70: hsl(0 0% 73%);
   --color-base-100: hsl(0 0% 85%);
   --bold-color: #d85f0e;
   --interactive-accent-hsl: 358 100% 31%;
@@ -71,10 +64,8 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-red: #e93147;
   --color-orange: #ec7500;
-  --color-yellow: #e0ac00;
   --color-green: #08b94e;
   --color-cyan: #00bfbc;
   --color-blue: #086ddd;
@@ -82,14 +73,9 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent-hsl: 184, 79%, 35%;
-  --color-base-00: hsl(0 calc(0% * 1.5) 99%);
-  --color-base-10: hsl(0 0% 97%);
-  --color-base-20: hsl(0 0% 95%);
   --color-base-30: hsl(0 0% 88%);
   --color-base-35: hsl(0 0% 83%);
   --color-base-40: hsl(0 0% 74%);
-  --color-base-50: hsl(0 0% 67%);
-  --color-base-70: hsl(0 0% 35%);
   --color-base-100: hsl(0 0% 13%);
   --bold-color: #d85f0e;
   --interactive-accent-hsl: 358 100% 31%;
@@ -324,44 +310,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -370,9 +318,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --code-normal: #ebdbb2;
@@ -388,7 +333,6 @@ body {
   --collapse-icon-color: #a89985;
   --collapse-icon-color-collapsed: #f84935;
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, #3b3735);
   --graph-node-unresolved: #a89985;
   --graph-node-tag: #b8ba26;
@@ -479,47 +423,12 @@ body {
   --hr-thickness: 2px;
   --code-background: #292929;
   --background-primary: #292929;
-  --background-primary-alt: #32302f;
   --background-secondary: #292929;
   contain: initial;
   height: auto;
   overflow: auto;
   padding-top: 0;
   --font-text: "??", "??", "iA Writer Quattro S", "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -670,7 +579,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: 700;
       margin-right: 6px;
@@ -679,7 +587,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       color: inherit;
       font-weight: 700;
       margin-right: 6px;
@@ -780,7 +687,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -929,7 +835,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #fe811b;
     font-family: "Optima", "Recursive S";
     font-size: calc(1.7em * 1);
@@ -949,7 +854,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #b8ba26;
     font-family: "Optima", "Recursive S";
     font-size: calc(1.5em * 1);
@@ -967,7 +871,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #fabd2e;
     font-family: "Optima", "Recursive S";
     font-size: calc(1.35em * 1);
@@ -985,7 +888,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #f84935;
     font-family: "Optima", "Recursive S";
     font-size: calc(1.2em * 1);
@@ -1003,7 +905,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #279b99;
     font-family: "Optima", "Recursive S";
     font-size: calc(1.1em * 1);
@@ -1021,7 +922,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #83a598;
     font-family: "Optima", "Recursive S";
     font-size: calc(1em * 1);
@@ -1196,7 +1096,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #fabd2e;
       font-family: "Optima", "Recursive S";
       font-size: calc(1.35em * 1);
@@ -1369,7 +1268,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: #fabd2e;
         font-family: "Optima", "Recursive S";
         font-size: calc(1.35em * 1);
@@ -1407,7 +1305,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #fabd2e;
       font-family: "Optima", "Recursive S";
       font-size: calc(1.35em * 1);

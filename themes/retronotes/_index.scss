@@ -21,7 +21,6 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
   --color-accent-hsl: 294.4, 19.4%, 58.6%;
   --color-accent-2: hsl(
     calc(294.4 - 5),
@@ -31,7 +30,6 @@ html[saved-theme="dark"] {
   --text-accent: hsl(calc(294.4 - 3), calc(19.4% * 1.02), calc(58.6% * 1.15));
   --color-red: #e35e66;
   --color-orange: #eb8556;
-  --color-yellow: #ffb557;
   --color-green: #14b858;
   --color-cyan: #dadfe1;
   --color-blue: #42c0ff;
@@ -41,14 +39,9 @@ html[saved-theme="dark"] {
   --link-external-color-hover: #e3dfe9;
   --hr-color: #a598ba;
   --inline-title-color: #e6e6fa;
-  --color-base-00: #0c0c0c;
-  --color-base-10: #202020;
-  --color-base-20: #333333;
   --color-base-30: #474747;
   --color-base-35: #515151;
   --color-base-40: #5a5a5a;
-  --color-base-50: #6e6e6e;
-  --color-base-70: #959595;
   --color-base-100: #d0d0d0;
 }
 
@@ -66,7 +59,6 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 294.4, 19.4%, 58.6%;
   --color-accent-2: hsl(
     calc(294.4 - 3),
@@ -75,20 +67,14 @@ html[saved-theme="light"] {
   );
   --color-red: #9c1a21;
   --color-orange: #e8733d;
-  --color-yellow: #f18700;
   --color-green: #004d20;
   --color-cyan: #008acf;
   --color-blue: #163259;
   --color-purple: #6c00cf;
   --color-pink: #d53984;
-  --color-base-00: #f9f6ee;
-  --color-base-10: #efe7d1;
-  --color-base-20: #e5d7b4;
   --color-base-30: #dac897;
   --color-base-35: #d5c089;
   --color-base-40: #c6a95d;
-  --color-base-50: #ba9942;
-  --color-base-70: #80692d;
   --color-base-100: #29220e;
   --text-accent: #dcc5f3;
 }
@@ -150,44 +136,6 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 html {
@@ -196,9 +144,6 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --h1-color: var(--text-normal);
-
-  --nav-item-background-hover: var(--background-modifier-hover);
   --bold-weight: calc(600 + 200);
   --checkbox-size: 12px;
   --code-background: #443955;
@@ -219,7 +164,6 @@ body {
     calc(58.6% * 1.15)
   );
   --cursor-link: pointer;
-  --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(227, 94, 102, 0.6));
   --graph-node-unresolved: #9181aa;
   --graph-node-tag: #14b858;
@@ -282,7 +226,6 @@ body {
   -webkit-user-select: none;
   caret-color: hsl(calc(294.4 - 3), calc(19.4% * 1.02), calc(58.6% * 1.15));
   --background-primary: #3b3149;
-  --background-primary-alt: #4d4161;
   --background-secondary: #e6e6fa;
   --background-modifier-hover: #dcc5f3;
   --background-modifier-border: #9181aa;
@@ -324,40 +267,6 @@ body {
   --font-text:
     "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
     monospace, "Arial";
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-border-focus: var(--color-base-40);
-
-  --button-secondary-bg-color: transparent;
-  --button-secondary-fg-color: var(--text-primary-color);
-  --code-background: var(--background-primary-alt);
-  --code-normal: var(--text-normal);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
-
-  --icon-color: var(--text-muted);
-
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-weight: var(--font-weight);
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -506,7 +415,6 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
 
@@ -514,7 +422,6 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
       color: inherit;
     }
@@ -614,7 +521,6 @@ body {
   /* LINKS */
   a,
   footer a {
-    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -763,7 +669,6 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 700;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 2em;
@@ -783,7 +688,6 @@ body {
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 1.8em;
@@ -801,7 +705,6 @@ body {
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 1.6em;
@@ -819,7 +722,6 @@ body {
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 1.4em;
@@ -837,7 +739,6 @@ body {
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 1.2em;
@@ -855,7 +756,6 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: 600;
     color: #e6e6fa;
     font-family: "Loew", sans-serif;
     font-size: 1em;
@@ -1032,7 +932,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #e6e6fa;
       font-family: "Loew", sans-serif;
       font-size: 1.6em;
@@ -1204,7 +1103,6 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: 600;
         color: #e6e6fa;
         font-family: "Loew", sans-serif;
         font-size: 1.6em;
@@ -1242,7 +1140,6 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: 600;
       color: #e6e6fa;
       font-family: "Loew", sans-serif;
       font-size: 1.6em;
