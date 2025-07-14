@@ -859,7 +859,7 @@ body {
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: (var(--background-secondary));
+        background-color: var(--background-secondary);
       }
     }
     @media all and ($mobile) {
@@ -920,11 +920,15 @@ body {
     cursor: var(--cursor-link);
     transition: opacity 0.15s ease-in-out;
 
+    text-decoration-line: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
 
       color: var(--link-color-hover);
       text-decoration-line: var(--link-decoration-hover);
+
+      text-decoration-line: none;
     }
     &.internal {
       color: var(--text-a, var(--link-color));

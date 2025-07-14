@@ -805,11 +805,15 @@ body {
     transition: opacity 0.15s ease-in-out;
     color: var(--color-5);
 
+    text-decoration-line: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
 
       color: var(--link-color-hover);
       text-decoration-line: var(--link-decoration-hover);
+
+      text-decoration-line: none;
     }
     &.internal {
       color: var(--text-a, var(--link-color));
