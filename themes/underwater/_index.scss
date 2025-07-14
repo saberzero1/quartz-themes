@@ -9,316 +9,328 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --background-modifier-border: rgba(var(--highlight-med-rgb), 0.6);
+    --background-modifier-border-focus: var(--background-modifier-border);
+    --background-modifier-border-hover: var(--highlight-med);
+    --background-modifier-form-field: var(--overlay);
+    --background-primary: var(--surface);
+    --background-primary-alt: var(--overlay);
+    --background-secondary: var(--background-primary);
+    --bold-color: var(--love);
+    --border-width: 1px;
+    --callout-radius: 13px;
+    --callout-title-size: 1rem;
+    --callout-title-weight: var(--font-weight);
+    --caret-color: var(--love);
+    --checkbox-border-color: var(--rose);
+    --checkbox-border-color-hover: var(--love);
+    --checkbox-color: var(--pine);
+    --checkbox-color-hover: var(--foam);
+    --checkbox-marker-color: white;
+    --checkbox-radius: 5px;
+    --code-background: var(--base);
+    --code-comment: var(--text-faint);
+    --code-function: var(--color-cyan);
+    --code-important: var(--color-red);
+    --code-keyword: var(--color-red);
+    --code-normal: var(--subtle);
+    --code-property: var(--color-blue);
+    --code-punctuation: var(--color-pink);
+    --code-string: var(--color-yellow);
+    --code-tag: var(--color-green);
+    --code-value: var(--color-purple);
+    --color-accent-1: var(--rose);
+    --color-accent-2: var(--foam);
+    --color-base-00: var(--base);
+    --color-base-10: var(--surface);
+    --color-base-100: var(--text);
+    --color-base-20: var(--surface);
+    --color-base-30: var(--highlight-high);
+    --color-base-35: var(--background-modifier-border);
+    --color-base-40: var(--highlight-med);
+    --color-base-50: var(--highlight-low);
+    --color-base-70: var(--subtle);
+    --color-blue: var(--pine);
+    --color-blue-rgb: var(--pine-rgb);
+    --color-cyan: var(--foam);
+    --color-cyan-rgb: var(--foam-rgb);
+    --color-green: var(--foam);
+    --color-green-rgb: var(--foam-rgb);
+    --color-orange: var(--gold);
+    --color-orange-rgb: var(--gold-rgb);
+    --color-pink: var(--love);
+    --color-pink-rgb: var(--love-rgb);
+    --color-purple: var(--iris);
+    --color-purple-rgb: var(--iris-rgb);
+    --color-red: var(--rose);
+    --color-red-rgb: var(--rose-rgb);
+    --color-yellow: var(--gold);
+    --cursor: pointer;
+    --foam: rgb(var(--foam-rgb));
+    --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
+    --font-text-theme:
+      var(--font-text-override), "Lexend", "Inter", var(--font-default),
+      sans-serif;
+    --gold: rgb(var(--gold-rgb));
+    --graph-line: var(--highlight-med);
+    --graph-node-tag: var(--foam);
+    --graph-node-unresolved: var(--text-faint);
+    --h1-color: var(--love);
+    --h1-font: var(--headings-font);
+    --h2-color: var(--rose);
+    --h2-font: var(--headings-font);
+    --h3-color: var(--gold);
+    --h3-font: var(--headings-font);
+    --h4-color: var(--pine);
+    --h4-font: var(--headings-font);
+    --h5-color: var(--iris);
+    --h5-font: var(--headings-font);
+    --h6-color: var(--text-normal);
+    --h6-font: var(--headings-font);
+    --h6-size: 1em;
+    --h6-variant: small-caps;
+    --headings-font:
+      var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
+    --highlight-med: rgb(var(--highlight-med-rgb));
+    --hr-color: var(--background-modifier-border);
+    --hr-thickness: 2px;
+    --icon-color: var(--text);
+    --inline-title-color: var(--foam);
+    --interactive-accent: var(--rose);
+    --interactive-accent-hover: rgba(var(--rose-rgb), 0.8);
+    --iris: rgb(var(--iris-rgb));
+    --italic-color: var(--foam);
+    --link-color: var(--rose);
+    --link-color-hover: rgba(var(--rose-rgb), 0.6);
+    --link-external-color: var(--pine);
+    --link-external-color-hover: rgba(var(--pine-rgb), 0.6);
+    --love: rgb(var(--love-rgb));
+    --nav-heading-color: var(--pine);
+    --nav-item-background-active: var(--foam);
+    --nav-item-color: var(--text);
+    --nav-item-color-active: var(--surface);
+    --pine: rgb(var(--pine-rgb));
+    --rose: rgb(var(--rose-rgb));
+    --surface: rgb(var(--surface-rgb));
+    --tag-background: rgba(var(--rose-rgb), 0.1);
+    --tag-background-hover: rgba(var(--rose-rgb), 0.2);
+    --tag-color: var(--link-color);
+    --text-accent: var(--rose);
+    --text-faint: var(--muted);
+    --text-highlight-bg: rgba(var(--gold-rgb), 0.2);
+    --text-muted: var(--muted);
+    --text-normal: var(--text);
+    --love-rgb: 235, 111, 146;
+    --gold-rgb: 246, 193, 119;
+    --rose-rgb: 235, 188, 186;
+    --pine-rgb: 49, 116, 143;
+    --foam-rgb: 156, 207, 216;
+    --iris-rgb: 196, 167, 231;
+    --base: #191724;
+    --surface-rgb: 31, 29, 46;
+    --overlay: #26233a;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --highlight-low: #21202e;
+    --highlight-med-rgb: 64, 61, 82;
+    --highlight-high: #524f67;
+    --accent-h: 193;
+    --accent-s: 46%;
+    --accent-l: 75%;
+    --color-accent-hsl: 193, 46%, 75%;
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --background-modifier-border: rgba(var(--highlight-med-rgb), 0.6);
-  --background-modifier-border-focus: var(--background-modifier-border);
-  --background-modifier-border-hover: var(--highlight-med);
-  --background-modifier-form-field: var(--overlay);
-  --background-primary: var(--surface);
-  --background-primary-alt: var(--overlay);
-  --background-secondary: var(--background-primary);
-  --bold-color: var(--love);
-  --border-width: 1px;
-  --callout-radius: 13px;
-  --callout-title-size: 1rem;
-  --callout-title-weight: var(--font-weight);
-  --caret-color: var(--love);
-  --checkbox-border-color: var(--rose);
-  --checkbox-border-color-hover: var(--love);
-  --checkbox-color: var(--pine);
-  --checkbox-color-hover: var(--foam);
-  --checkbox-marker-color: white;
-  --checkbox-radius: 5px;
-  --code-background: var(--base);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-cyan);
-  --code-important: var(--color-red);
-  --code-keyword: var(--color-red);
-  --code-normal: var(--subtle);
-  --code-property: var(--color-blue);
-  --code-punctuation: var(--color-pink);
-  --code-string: var(--color-yellow);
-  --code-tag: var(--color-green);
-  --code-value: var(--color-purple);
-  --color-accent-1: var(--rose);
-  --color-accent-2: var(--foam);
-  --color-base-00: var(--base);
-  --color-base-10: var(--surface);
-  --color-base-100: var(--text);
-  --color-base-20: var(--surface);
-  --color-base-30: var(--highlight-high);
-  --color-base-35: var(--background-modifier-border);
-  --color-base-40: var(--highlight-med);
-  --color-base-50: var(--highlight-low);
-  --color-base-70: var(--subtle);
-  --color-blue: var(--pine);
-  --color-blue-rgb: var(--pine-rgb);
-  --color-cyan: var(--foam);
-  --color-cyan-rgb: var(--foam-rgb);
-  --color-green: var(--foam);
-  --color-green-rgb: var(--foam-rgb);
-  --color-orange: var(--gold);
-  --color-orange-rgb: var(--gold-rgb);
-  --color-pink: var(--love);
-  --color-pink-rgb: var(--love-rgb);
-  --color-purple: var(--iris);
-  --color-purple-rgb: var(--iris-rgb);
-  --color-red: var(--rose);
-  --color-red-rgb: var(--rose-rgb);
-  --color-yellow: var(--gold);
-  --cursor: pointer;
-  --foam: rgb(var(--foam-rgb));
-  --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
-  --font-text-theme:
-    var(--font-text-override), "Lexend", "Inter", var(--font-default),
-    sans-serif;
-  --gold: rgb(var(--gold-rgb));
-  --graph-line: var(--highlight-med);
-  --graph-node-tag: var(--foam);
-  --graph-node-unresolved: var(--text-faint);
-  --h1-color: var(--love);
-  --h1-font: var(--headings-font);
-  --h2-color: var(--rose);
-  --h2-font: var(--headings-font);
-  --h3-color: var(--gold);
-  --h3-font: var(--headings-font);
-  --h4-color: var(--pine);
-  --h4-font: var(--headings-font);
-  --h5-color: var(--iris);
-  --h5-font: var(--headings-font);
-  --h6-color: var(--text-normal);
-  --h6-font: var(--headings-font);
-  --h6-size: 1em;
-  --h6-variant: small-caps;
-  --headings-font:
-    var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
-  --highlight-med: rgb(var(--highlight-med-rgb));
-  --hr-color: var(--background-modifier-border);
-  --hr-thickness: 2px;
-  --icon-color: var(--text);
-  --inline-title-color: var(--foam);
-  --interactive-accent: var(--rose);
-  --interactive-accent-hover: rgba(var(--rose-rgb), 0.8);
-  --iris: rgb(var(--iris-rgb));
-  --italic-color: var(--foam);
-  --link-color: var(--rose);
-  --link-color-hover: rgba(var(--rose-rgb), 0.6);
-  --link-external-color: var(--pine);
-  --link-external-color-hover: rgba(var(--pine-rgb), 0.6);
-  --love: rgb(var(--love-rgb));
-  --nav-heading-color: var(--pine);
-  --nav-item-background-active: var(--foam);
-  --nav-item-color: var(--text);
-  --nav-item-color-active: var(--surface);
-  --pine: rgb(var(--pine-rgb));
-  --rose: rgb(var(--rose-rgb));
-  --surface: rgb(var(--surface-rgb));
-  --tag-background: rgba(var(--rose-rgb), 0.1);
-  --tag-background-hover: rgba(var(--rose-rgb), 0.2);
-  --tag-color: var(--link-color);
-  --text-accent: var(--rose);
-  --text-faint: var(--muted);
-  --text-highlight-bg: rgba(var(--gold-rgb), 0.2);
-  --text-muted: var(--muted);
-  --text-normal: var(--text);
-  --love-rgb: 235, 111, 146;
-  --gold-rgb: 246, 193, 119;
-  --rose-rgb: 235, 188, 186;
-  --pine-rgb: 49, 116, 143;
-  --foam-rgb: 156, 207, 216;
-  --iris-rgb: 196, 167, 231;
-  --base: #191724;
-  --surface-rgb: 31, 29, 46;
-  --overlay: #26233a;
-  --muted: #6e6a86;
-  --subtle: #908caa;
-  --text: #e0def4;
-  --highlight-low: #21202e;
-  --highlight-med-rgb: 64, 61, 82;
-  --highlight-high: #524f67;
-  --accent-h: 193;
-  --accent-s: 46%;
-  --accent-l: 75%;
-  --color-accent-hsl: 193, 46%, 75%;
-  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --background-modifier-border: rgba(var(--highlight-med-rgb), 0.6);
+    --background-modifier-border-focus: var(--background-modifier-border);
+    --background-modifier-border-hover: var(--highlight-med);
+    --background-modifier-form-field: var(--overlay);
+    --background-primary: var(--surface);
+    --background-primary-alt: var(--overlay);
+    --background-secondary: var(--background-primary);
+    --bold-color: var(--love);
+    --border-width: 1px;
+    --callout-radius: 13px;
+    --callout-title-size: 1rem;
+    --callout-title-weight: var(--font-weight);
+    --caret-color: var(--love);
+    --checkbox-border-color: var(--rose);
+    --checkbox-border-color-hover: var(--love);
+    --checkbox-color: var(--pine);
+    --checkbox-color-hover: var(--foam);
+    --checkbox-marker-color: white;
+    --checkbox-radius: 5px;
+    --code-background: var(--base);
+    --code-comment: var(--text-faint);
+    --code-function: var(--color-cyan);
+    --code-important: var(--color-red);
+    --code-keyword: var(--color-red);
+    --code-normal: var(--subtle);
+    --code-property: var(--color-blue);
+    --code-punctuation: var(--color-pink);
+    --code-string: var(--color-yellow);
+    --code-tag: var(--color-green);
+    --code-value: var(--color-purple);
+    --color-accent-1: var(--rose);
+    --color-accent-2: var(--foam);
+    --color-base-00: var(--base);
+    --color-base-10: var(--surface);
+    --color-base-100: var(--text);
+    --color-base-20: var(--surface);
+    --color-base-30: var(--highlight-high);
+    --color-base-35: var(--background-modifier-border);
+    --color-base-40: var(--highlight-med);
+    --color-base-50: var(--highlight-low);
+    --color-base-70: var(--subtle);
+    --color-blue: var(--pine);
+    --color-blue-rgb: var(--pine-rgb);
+    --color-cyan: var(--foam);
+    --color-cyan-rgb: var(--foam-rgb);
+    --color-green: var(--foam);
+    --color-green-rgb: var(--foam-rgb);
+    --color-orange: var(--gold);
+    --color-orange-rgb: var(--gold-rgb);
+    --color-pink: var(--love);
+    --color-pink-rgb: var(--love-rgb);
+    --color-purple: var(--iris);
+    --color-purple-rgb: var(--iris-rgb);
+    --color-red: var(--rose);
+    --color-red-rgb: var(--rose-rgb);
+    --color-yellow: var(--gold);
+    --cursor: pointer;
+    --foam: rgb(var(--foam-rgb));
+    --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
+    --font-text-theme:
+      var(--font-text-override), "Lexend", "Inter", var(--font-default),
+      sans-serif;
+    --gold: rgb(var(--gold-rgb));
+    --graph-line: var(--highlight-med);
+    --graph-node-tag: var(--foam);
+    --graph-node-unresolved: var(--text-faint);
+    --h1-color: var(--love);
+    --h1-font: var(--headings-font);
+    --h2-color: var(--rose);
+    --h2-font: var(--headings-font);
+    --h3-color: var(--gold);
+    --h3-font: var(--headings-font);
+    --h4-color: var(--pine);
+    --h4-font: var(--headings-font);
+    --h5-color: var(--iris);
+    --h5-font: var(--headings-font);
+    --h6-color: var(--text-normal);
+    --h6-font: var(--headings-font);
+    --h6-size: 1em;
+    --h6-variant: small-caps;
+    --headings-font:
+      var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
+    --highlight-med: rgb(var(--highlight-med-rgb));
+    --hr-color: var(--background-modifier-border);
+    --hr-thickness: 2px;
+    --icon-color: var(--text);
+    --inline-title-color: var(--foam);
+    --interactive-accent: var(--rose);
+    --interactive-accent-hover: rgba(var(--rose-rgb), 0.8);
+    --iris: rgb(var(--iris-rgb));
+    --italic-color: var(--foam);
+    --link-color: var(--rose);
+    --link-color-hover: rgba(var(--rose-rgb), 0.6);
+    --link-external-color: var(--pine);
+    --link-external-color-hover: rgba(var(--pine-rgb), 0.6);
+    --love: rgb(var(--love-rgb));
+    --nav-heading-color: var(--pine);
+    --nav-item-background-active: var(--foam);
+    --nav-item-color: var(--text);
+    --nav-item-color-active: var(--surface);
+    --pine: rgb(var(--pine-rgb));
+    --rose: rgb(var(--rose-rgb));
+    --surface: rgb(var(--surface-rgb));
+    --tag-background: rgba(var(--rose-rgb), 0.1);
+    --tag-background-hover: rgba(var(--rose-rgb), 0.2);
+    --tag-color: var(--link-color);
+    --text-accent: var(--rose);
+    --text-faint: var(--muted);
+    --text-highlight-bg: rgba(var(--gold-rgb), 0.2);
+    --text-muted: var(--muted);
+    --text-normal: var(--text);
+    --love-rgb: 180, 99, 122;
+    --gold-rgb: 234, 157, 52;
+    --rose-rgb: 215, 130, 126;
+    --pine-rgb: 40, 105, 131;
+    --foam-rgb: 86, 148, 159;
+    --iris-rgb: 144, 122, 169;
+    --base: #faf4ed;
+    --surface-rgb: 255, 250, 243;
+    --overlay: #f2e9e1;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --highlight-low: #f4ede8;
+    --highlight-med-rgb: 223, 218, 217;
+    --highlight-high: #cecacd;
+    --accent-h: 187;
+    --accent-s: 30%;
+    --accent-l: 45%;
+    --color-accent-hsl: 187, 30%, 45%;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --background-modifier-border: rgba(var(--highlight-med-rgb), 0.6);
-  --background-modifier-border-focus: var(--background-modifier-border);
-  --background-modifier-border-hover: var(--highlight-med);
-  --background-modifier-form-field: var(--overlay);
-  --background-primary: var(--surface);
-  --background-primary-alt: var(--overlay);
-  --background-secondary: var(--background-primary);
-  --bold-color: var(--love);
-  --border-width: 1px;
-  --callout-radius: 13px;
-  --callout-title-size: 1rem;
-  --callout-title-weight: var(--font-weight);
-  --caret-color: var(--love);
-  --checkbox-border-color: var(--rose);
-  --checkbox-border-color-hover: var(--love);
-  --checkbox-color: var(--pine);
-  --checkbox-color-hover: var(--foam);
-  --checkbox-marker-color: white;
-  --checkbox-radius: 5px;
-  --code-background: var(--base);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-cyan);
-  --code-important: var(--color-red);
-  --code-keyword: var(--color-red);
-  --code-normal: var(--subtle);
-  --code-property: var(--color-blue);
-  --code-punctuation: var(--color-pink);
-  --code-string: var(--color-yellow);
-  --code-tag: var(--color-green);
-  --code-value: var(--color-purple);
-  --color-accent-1: var(--rose);
-  --color-accent-2: var(--foam);
-  --color-base-00: var(--base);
-  --color-base-10: var(--surface);
-  --color-base-100: var(--text);
-  --color-base-20: var(--surface);
-  --color-base-30: var(--highlight-high);
-  --color-base-35: var(--background-modifier-border);
-  --color-base-40: var(--highlight-med);
-  --color-base-50: var(--highlight-low);
-  --color-base-70: var(--subtle);
-  --color-blue: var(--pine);
-  --color-blue-rgb: var(--pine-rgb);
-  --color-cyan: var(--foam);
-  --color-cyan-rgb: var(--foam-rgb);
-  --color-green: var(--foam);
-  --color-green-rgb: var(--foam-rgb);
-  --color-orange: var(--gold);
-  --color-orange-rgb: var(--gold-rgb);
-  --color-pink: var(--love);
-  --color-pink-rgb: var(--love-rgb);
-  --color-purple: var(--iris);
-  --color-purple-rgb: var(--iris-rgb);
-  --color-red: var(--rose);
-  --color-red-rgb: var(--rose-rgb);
-  --color-yellow: var(--gold);
-  --cursor: pointer;
-  --foam: rgb(var(--foam-rgb));
-  --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
-  --font-text-theme:
-    var(--font-text-override), "Lexend", "Inter", var(--font-default),
-    sans-serif;
-  --gold: rgb(var(--gold-rgb));
-  --graph-line: var(--highlight-med);
-  --graph-node-tag: var(--foam);
-  --graph-node-unresolved: var(--text-faint);
-  --h1-color: var(--love);
-  --h1-font: var(--headings-font);
-  --h2-color: var(--rose);
-  --h2-font: var(--headings-font);
-  --h3-color: var(--gold);
-  --h3-font: var(--headings-font);
-  --h4-color: var(--pine);
-  --h4-font: var(--headings-font);
-  --h5-color: var(--iris);
-  --h5-font: var(--headings-font);
-  --h6-color: var(--text-normal);
-  --h6-font: var(--headings-font);
-  --h6-size: 1em;
-  --h6-variant: small-caps;
-  --headings-font:
-    var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
-  --highlight-med: rgb(var(--highlight-med-rgb));
-  --hr-color: var(--background-modifier-border);
-  --hr-thickness: 2px;
-  --icon-color: var(--text);
-  --inline-title-color: var(--foam);
-  --interactive-accent: var(--rose);
-  --interactive-accent-hover: rgba(var(--rose-rgb), 0.8);
-  --iris: rgb(var(--iris-rgb));
-  --italic-color: var(--foam);
-  --link-color: var(--rose);
-  --link-color-hover: rgba(var(--rose-rgb), 0.6);
-  --link-external-color: var(--pine);
-  --link-external-color-hover: rgba(var(--pine-rgb), 0.6);
-  --love: rgb(var(--love-rgb));
-  --nav-heading-color: var(--pine);
-  --nav-item-background-active: var(--foam);
-  --nav-item-color: var(--text);
-  --nav-item-color-active: var(--surface);
-  --pine: rgb(var(--pine-rgb));
-  --rose: rgb(var(--rose-rgb));
-  --surface: rgb(var(--surface-rgb));
-  --tag-background: rgba(var(--rose-rgb), 0.1);
-  --tag-background-hover: rgba(var(--rose-rgb), 0.2);
-  --tag-color: var(--link-color);
-  --text-accent: var(--rose);
-  --text-faint: var(--muted);
-  --text-highlight-bg: rgba(var(--gold-rgb), 0.2);
-  --text-muted: var(--muted);
-  --text-normal: var(--text);
-  --love-rgb: 180, 99, 122;
-  --gold-rgb: 234, 157, 52;
-  --rose-rgb: 215, 130, 126;
-  --pine-rgb: 40, 105, 131;
-  --foam-rgb: 86, 148, 159;
-  --iris-rgb: 144, 122, 169;
-  --base: #faf4ed;
-  --surface-rgb: 255, 250, 243;
-  --overlay: #f2e9e1;
-  --muted: #9893a5;
-  --subtle: #797593;
-  --text: #575279;
-  --highlight-low: #f4ede8;
-  --highlight-med-rgb: 223, 218, 217;
-  --highlight-high: #cecacd;
-  --accent-h: 187;
-  --accent-s: 30%;
-  --accent-l: 45%;
-  --color-accent-hsl: 187, 30%, 45%;
 }
 
 /* vietnamese */
@@ -1211,7 +1223,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

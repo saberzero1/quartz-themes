@@ -9,417 +9,429 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
-  }
+    .callout {
+      --callout-blend-mode: lighten;
+    }
 
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
 
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+    --mono-rgb-100: 255, 255, 255;
+    color-scheme: dark;
+    --color-d-gray-10: hsla(32, 48%, 85%, 1);
+    --color-d-gray-20: hsla(34, 39%, 74%, 1);
+    --color-d-gray-40: hsla(35, 27%, 55%, 1);
+    --color-d-gray-50: hsla(34, 24%, 46%, 1);
+    --color-d-gray-60: hsla(33, 27%, 33%, 1);
+    --color-d-gray-70: hsla(31, 27%, 25%, 1);
+    --color-d-gray-80: hsla(28, 22%, 19%, 1);
+    --color-d-gray-90: hsla(33, 20%, 17%, 1);
+    --color-d-gray-100: hsla(30, 19%, 15%, 1);
+    --color-d-gray-110: hsla(30, 17%, 14%, 1);
+    --color-d-gray-120: hsla(29, 16%, 13%, 1);
+    --color-d-gray-130: hsla(24, 18%, 11%, 1);
+    --color-d-gray-140: hsla(32, 21%, 9%, 1);
+    --color-d-red-30: hsla(4, 88%, 61%, 1);
+    --color-d-yellow-10: hsla(43, 69%, 63%, 1);
+    --color-d-yellow-20: hsla(42, 79%, 51%, 1);
+    --color-d-alpha-yellow: hsla(44, 100%, 50%, 0.2);
+    --color-d-green-10: hsla(152, 51%, 54%, 1);
+    --color-d-green-20: hsla(154, 57%, 42%, 1);
+    --color-d-green-30: hsla(155, 78%, 29%, 1);
+    --color-d-green-40: hsla(154, 75%, 26%, 1);
+    --color-d-blue-20: hsla(194, 59%, 56%, 1);
+    --color-d-blue-30: hsla(197, 48%, 49%, 1);
+    --color-base-00: var(--color-d-gray-140);
+    --color-base-10: var(--color-d-gray-100);
+    --color-base-20: var(--color-d-gray-90);
+    --color-base-30: var(--color-d-gray-70);
+    --color-base-35: var(--color-d-gray-60);
+    --color-base-40: var(--color-d-gray-50);
+    --color-base-50: var(--color-d-gray-40);
+    --color-base-70: var(--color-d-gray-20);
+    --color-base-100: var(--color-d-gray-10);
+    --accent-h: 31;
+    --accent-s: 27%;
+    --accent-l: 24%;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.16),
+      calc(var(--accent-l) * 1.34)
+    );
+    --interactive-accent-hsl: var(--color-accent-hsl);
+    --interactive-accent: var(--color-accent-1);
+    --interactive-accent-hover: var(--color-accent-2);
+    --color-red: #c04e4e;
+    --color-orange: #cb8035;
+    --color-yellow-rgb: 249, 207, 81;
+    --color-yellow: #e1b243;
+    --color-green: #50c465;
+    --color-cyan: #46a9b4;
+    --color-blue: #3f89b0;
+    --color-purple: #7161c2;
+    --color-pink: #b46464;
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --background-primary: var(--color-d-gray-100);
+    --background-primary-alt: var(--color-d-gray-110);
+    --background-secondary: var(--color-d-gray-120);
+    --background-modifier-hover: #000000;
+    --background-modifier-border: var(--color-d-gray-80);
+    --background-modifier-border-hover: color-mix(
+      in srgb,
+      var(--color-d-gray-70) 40%,
+      var(--color-d-gray-80)
+    );
+    --background-modifier-border-focus: color-mix(
+      in srgb,
+      var(--color-d-gray-70) 40%,
+      var(--color-d-gray-80)
+    );
+    --text-normal: var(--color-d-gray-20);
+    --text-muted: var(--color-d-gray-40);
+    --text-faint: var(--color-d-gray-50);
+    --text-highlight-bg-rgb: var(--color-yellow-rgb);
+    --text-highlight-bg: var(--color-d-alpha-yellow);
+    --text-accent: var(--color-accent);
+    --text-accent-hover: var(--color-accent-2);
+    --icon-color: color-mix(
+      in srgb,
+      var(--color-d-gray-60) 30%,
+      var(--color-d-gray-50)
+    );
+    --copy-code-btn-shadow:
+      inset 0px 0px 0px 1px #000000, 0px 2px 4px -2px #000000;
+    --caret-color: var(--color-d-gray-50);
+    --checkbox-marker-color: white;
+    --checkbox-color: var(--color-d-green-40);
+    --checkbox-color-hover: var(--color-d-green-30);
+    --checkbox-border-color: var(--color-d-gray-70);
+    --checkbox-border-color-hover: var(--color-d-gray-60);
+    --nav-item-color: var(--color-d-gray-40);
+    --nav-item-color-active: var(--color-d-gray-40);
+    --nav-item-background-hover: #000000;
+    --nav-item-background-active: #000000;
+    --nav-indentation-guide-color: var(--indentation-guide-color);
+    --nav-heading-color: var(--color-d-gray-50);
+    --nav-file-shadow-active:
+      inset 0px 0px 0px 1px #000000,
+      inset 0px calc(var(--button-axis-offset) * -1) 0px
+        var(--button-axis-offset) #000000,
+      0px 2px 3px 0px #000000;
+    --collapse-icon-color: var(--color-d-gray-60);
+    --collapse-icon-color-collapsed: var(--color-d-gray-60);
+    --indentation-guide-color: var(--background-modifier-border);
+    --prompt-input-background: var(--background-primary);
+    --prompt-separator-border: 1px solid var(--color-d-gray-90);
+    --prompt-border-color: var(--background-modifier-border-focus);
+    --search-icon-color: var(--icon-color);
+    --background-modifier-form-field: var(--color-d-gray-130);
+    --text-input-color: var(--color-d-gray-20);
+    --editor-bg-color: var(--background-primary);
+    --callout-color-opacity: 32.5%;
+    --callout-border-opacity: 0.1;
+    --callout-title-color: var(--text-normal);
+    --callout-content-background: color-mix(
+      in srgb,
+      var(--background-primary-alt) 50%,
+      var(--editor-bg-color)
+    );
+    --callout-container-shadow:
+      inset 0px 0px 0px 1px #000000, 0px 2px 6px 0px #000000;
+    --callout-title-shadow:
+      inset 0px -1px 1px 0px #000000, inset 0px 1px 1px 0px #ffffff;
+    --callout-content-shadow:
+      inset 0px 0px 0px 1px #000000,
+      inset 0px calc(var(--callout-shadow-offset) * -1 - 1px)
+        var(--callout-content-shadow-blur) 0px #000000;
+    --bold-color: var(--color-d-red-30);
+    --italic-color: var(--color-d-blue-20);
+    --breadcrumb-separator-color: var(--background-modifier-border);
+    --h1-color: var(--color-d-gray-10);
+    --h1-bg-color: transparent;
+    --h1-border-top-color: var(--background-modifier-border);
+    --h1-border-right-color: var(--background-modifier-border);
+    --h1-border-bottom-color: var(--background-modifier-border);
+    --h1-border-left-color: var(--background-modifier-border);
+    --h2-color: var(--color-d-gray-10);
+    --h2-bg-color: transparent;
+    --h2-border-top-color: var(--background-modifier-border);
+    --h2-border-right-color: var(--background-modifier-border);
+    --h2-border-bottom-color: var(--background-modifier-border);
+    --h2-border-left-color: var(--background-modifier-border);
+    --h3-color: var(--color-d-gray-10);
+    --h3-bg-color: transparent;
+    --h3-border-top-color: var(--background-modifier-border);
+    --h3-border-right-color: var(--background-modifier-border);
+    --h3-border-bottom-color: var(--background-modifier-border);
+    --h3-border-left-color: var(--background-modifier-border);
+    --h4-color: var(--color-d-gray-10);
+    --h4-bg-color: transparent;
+    --h4-border-top-color: var(--background-modifier-border);
+    --h4-border-right-color: var(--background-modifier-border);
+    --h4-border-bottom-color: var(--background-modifier-border);
+    --h4-border-left-color: var(--background-modifier-border);
+    --h5-color: var(--color-d-gray-10);
+    --h5-bg-color: transparent;
+    --h5-border-top-color: var(--background-modifier-border);
+    --h5-border-right-color: var(--background-modifier-border);
+    --h5-border-bottom-color: var(--background-modifier-border);
+    --h5-border-left-color: var(--background-modifier-border);
+    --h6-color: var(--color-d-gray-10);
+    --h6-bg-color: transparent;
+    --h6-border-top-color: var(--background-modifier-border);
+    --h6-border-right-color: var(--background-modifier-border);
+    --h6-border-bottom-color: var(--background-modifier-border);
+    --h6-border-left-color: var(--background-modifier-border);
+    --inline-title-color: var(--color-d-gray-10);
+    --link-color: var(--color-d-yellow-20);
+    --link-color-hover: var(--color-d-yellow-10);
+    --link-external-color: var(--color-d-green-20);
+    --link-external-color-hover: var(--color-d-green-10);
+    --metadata-input-text-color: var(--color-d-gray-40);
+    --tag-color: var(--color-d-blue-30);
+    --tag-color-hover: var(--color-d-blue-20);
+    --tag-background: #000000;
+    --tag-background-hover: #000000;
+    --tag-border-width: 1px;
+    --tag-border-color: #000000;
+    --tag-border-color-hover: #000000;
+    --graph-node-unresolved: var(--color-d-yellow-20);
+    --graph-node-tag: var(--color-d-red-30);
+    --graph-line: var(--background-modifier-border);
   }
-  --mono-rgb-100: 255, 255, 255;
-  color-scheme: dark;
-  --color-d-gray-10: hsla(32, 48%, 85%, 1);
-  --color-d-gray-20: hsla(34, 39%, 74%, 1);
-  --color-d-gray-40: hsla(35, 27%, 55%, 1);
-  --color-d-gray-50: hsla(34, 24%, 46%, 1);
-  --color-d-gray-60: hsla(33, 27%, 33%, 1);
-  --color-d-gray-70: hsla(31, 27%, 25%, 1);
-  --color-d-gray-80: hsla(28, 22%, 19%, 1);
-  --color-d-gray-90: hsla(33, 20%, 17%, 1);
-  --color-d-gray-100: hsla(30, 19%, 15%, 1);
-  --color-d-gray-110: hsla(30, 17%, 14%, 1);
-  --color-d-gray-120: hsla(29, 16%, 13%, 1);
-  --color-d-gray-130: hsla(24, 18%, 11%, 1);
-  --color-d-gray-140: hsla(32, 21%, 9%, 1);
-  --color-d-red-30: hsla(4, 88%, 61%, 1);
-  --color-d-yellow-10: hsla(43, 69%, 63%, 1);
-  --color-d-yellow-20: hsla(42, 79%, 51%, 1);
-  --color-d-alpha-yellow: hsla(44, 100%, 50%, 0.2);
-  --color-d-green-10: hsla(152, 51%, 54%, 1);
-  --color-d-green-20: hsla(154, 57%, 42%, 1);
-  --color-d-green-30: hsla(155, 78%, 29%, 1);
-  --color-d-green-40: hsla(154, 75%, 26%, 1);
-  --color-d-blue-20: hsla(194, 59%, 56%, 1);
-  --color-d-blue-30: hsla(197, 48%, 49%, 1);
-  --color-base-00: var(--color-d-gray-140);
-  --color-base-10: var(--color-d-gray-100);
-  --color-base-20: var(--color-d-gray-90);
-  --color-base-30: var(--color-d-gray-70);
-  --color-base-35: var(--color-d-gray-60);
-  --color-base-40: var(--color-d-gray-50);
-  --color-base-50: var(--color-d-gray-40);
-  --color-base-70: var(--color-d-gray-20);
-  --color-base-100: var(--color-d-gray-10);
-  --accent-h: 31;
-  --accent-s: 27%;
-  --accent-l: 24%;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.16),
-    calc(var(--accent-l) * 1.34)
-  );
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --color-red: #c04e4e;
-  --color-orange: #cb8035;
-  --color-yellow-rgb: 249, 207, 81;
-  --color-yellow: #e1b243;
-  --color-green: #50c465;
-  --color-cyan: #46a9b4;
-  --color-blue: #3f89b0;
-  --color-purple: #7161c2;
-  --color-pink: #b46464;
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --background-primary: var(--color-d-gray-100);
-  --background-primary-alt: var(--color-d-gray-110);
-  --background-secondary: var(--color-d-gray-120);
-  --background-modifier-hover: #000000;
-  --background-modifier-border: var(--color-d-gray-80);
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    var(--color-d-gray-70) 40%,
-    var(--color-d-gray-80)
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--color-d-gray-70) 40%,
-    var(--color-d-gray-80)
-  );
-  --text-normal: var(--color-d-gray-20);
-  --text-muted: var(--color-d-gray-40);
-  --text-faint: var(--color-d-gray-50);
-  --text-highlight-bg-rgb: var(--color-yellow-rgb);
-  --text-highlight-bg: var(--color-d-alpha-yellow);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --icon-color: color-mix(
-    in srgb,
-    var(--color-d-gray-60) 30%,
-    var(--color-d-gray-50)
-  );
-  --copy-code-btn-shadow:
-    inset 0px 0px 0px 1px #000000, 0px 2px 4px -2px #000000;
-  --caret-color: var(--color-d-gray-50);
-  --checkbox-marker-color: white;
-  --checkbox-color: var(--color-d-green-40);
-  --checkbox-color-hover: var(--color-d-green-30);
-  --checkbox-border-color: var(--color-d-gray-70);
-  --checkbox-border-color-hover: var(--color-d-gray-60);
-  --nav-item-color: var(--color-d-gray-40);
-  --nav-item-color-active: var(--color-d-gray-40);
-  --nav-item-background-hover: #000000;
-  --nav-item-background-active: #000000;
-  --nav-indentation-guide-color: var(--indentation-guide-color);
-  --nav-heading-color: var(--color-d-gray-50);
-  --nav-file-shadow-active:
-    inset 0px 0px 0px 1px #000000,
-    inset 0px calc(var(--button-axis-offset) * -1) 0px var(--button-axis-offset)
-      #000000,
-    0px 2px 3px 0px #000000;
-  --collapse-icon-color: var(--color-d-gray-60);
-  --collapse-icon-color-collapsed: var(--color-d-gray-60);
-  --indentation-guide-color: var(--background-modifier-border);
-  --prompt-input-background: var(--background-primary);
-  --prompt-separator-border: 1px solid var(--color-d-gray-90);
-  --prompt-border-color: var(--background-modifier-border-focus);
-  --search-icon-color: var(--icon-color);
-  --background-modifier-form-field: var(--color-d-gray-130);
-  --text-input-color: var(--color-d-gray-20);
-  --editor-bg-color: var(--background-primary);
-  --callout-color-opacity: 32.5%;
-  --callout-border-opacity: 0.1;
-  --callout-title-color: var(--text-normal);
-  --callout-content-background: color-mix(
-    in srgb,
-    var(--background-primary-alt) 50%,
-    var(--editor-bg-color)
-  );
-  --callout-container-shadow:
-    inset 0px 0px 0px 1px #000000, 0px 2px 6px 0px #000000;
-  --callout-title-shadow:
-    inset 0px -1px 1px 0px #000000, inset 0px 1px 1px 0px #ffffff;
-  --callout-content-shadow:
-    inset 0px 0px 0px 1px #000000,
-    inset 0px calc(var(--callout-shadow-offset) * -1 - 1px)
-      var(--callout-content-shadow-blur) 0px #000000;
-  --bold-color: var(--color-d-red-30);
-  --italic-color: var(--color-d-blue-20);
-  --breadcrumb-separator-color: var(--background-modifier-border);
-  --h1-color: var(--color-d-gray-10);
-  --h1-bg-color: transparent;
-  --h1-border-top-color: var(--background-modifier-border);
-  --h1-border-right-color: var(--background-modifier-border);
-  --h1-border-bottom-color: var(--background-modifier-border);
-  --h1-border-left-color: var(--background-modifier-border);
-  --h2-color: var(--color-d-gray-10);
-  --h2-bg-color: transparent;
-  --h2-border-top-color: var(--background-modifier-border);
-  --h2-border-right-color: var(--background-modifier-border);
-  --h2-border-bottom-color: var(--background-modifier-border);
-  --h2-border-left-color: var(--background-modifier-border);
-  --h3-color: var(--color-d-gray-10);
-  --h3-bg-color: transparent;
-  --h3-border-top-color: var(--background-modifier-border);
-  --h3-border-right-color: var(--background-modifier-border);
-  --h3-border-bottom-color: var(--background-modifier-border);
-  --h3-border-left-color: var(--background-modifier-border);
-  --h4-color: var(--color-d-gray-10);
-  --h4-bg-color: transparent;
-  --h4-border-top-color: var(--background-modifier-border);
-  --h4-border-right-color: var(--background-modifier-border);
-  --h4-border-bottom-color: var(--background-modifier-border);
-  --h4-border-left-color: var(--background-modifier-border);
-  --h5-color: var(--color-d-gray-10);
-  --h5-bg-color: transparent;
-  --h5-border-top-color: var(--background-modifier-border);
-  --h5-border-right-color: var(--background-modifier-border);
-  --h5-border-bottom-color: var(--background-modifier-border);
-  --h5-border-left-color: var(--background-modifier-border);
-  --h6-color: var(--color-d-gray-10);
-  --h6-bg-color: transparent;
-  --h6-border-top-color: var(--background-modifier-border);
-  --h6-border-right-color: var(--background-modifier-border);
-  --h6-border-bottom-color: var(--background-modifier-border);
-  --h6-border-left-color: var(--background-modifier-border);
-  --inline-title-color: var(--color-d-gray-10);
-  --link-color: var(--color-d-yellow-20);
-  --link-color-hover: var(--color-d-yellow-10);
-  --link-external-color: var(--color-d-green-20);
-  --link-external-color-hover: var(--color-d-green-10);
-  --metadata-input-text-color: var(--color-d-gray-40);
-  --tag-color: var(--color-d-blue-30);
-  --tag-color-hover: var(--color-d-blue-20);
-  --tag-background: #000000;
-  --tag-background-hover: #000000;
-  --tag-border-width: 1px;
-  --tag-border-color: #000000;
-  --tag-border-color-hover: #000000;
-  --graph-node-unresolved: var(--color-d-yellow-20);
-  --graph-node-tag: var(--color-d-red-30);
-  --graph-line: var(--background-modifier-border);
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
-  }
+    .callout {
+      --callout-blend-mode: darken;
+    }
 
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
 
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+    --mono-rgb-100: 0, 0, 0;
+    color-scheme: light;
+    --color-l-gray-10: hsla(36, 38%, 98%, 1);
+    --color-l-gray-20: hsla(35, 36%, 96%, 1);
+    --color-l-gray-30: hsla(35, 37%, 92%, 1);
+    --color-l-gray-40: hsla(34, 34%, 90%, 1);
+    --color-l-gray-60: hsla(37, 38%, 83%, 1);
+    --color-l-gray-70: hsla(34, 37%, 70%, 1);
+    --color-l-gray-80: hsla(34, 29%, 60%, 1);
+    --color-l-gray-90: hsla(31, 23%, 50%, 1);
+    --color-l-gray-100: hsla(35, 28%, 40%, 1);
+    --color-l-gray-110: hsla(34, 30%, 37%, 1);
+    --color-l-gray-120: hsla(36, 32%, 30%, 1);
+    --color-l-gray-130: hsla(31, 45%, 24%, 1);
+    --color-l-gray-140: hsla(33, 54%, 17%, 1);
+    --color-l-red-20: hsla(4, 72%, 55%, 1);
+    --color-l-red-30: hsla(4, 56%, 48%, 1);
+    --color-l-yellow-20: hsla(43, 83%, 57%, 1);
+    --color-l-yellow-30: hsla(40, 79%, 47%, 1);
+    --color-l-alpha-yellow: hsla(44, 100%, 50%, 0.2);
+    --color-l-green-20: hsla(148, 48%, 47%, 1);
+    --color-l-green-30: hsla(149, 50%, 39%, 1);
+    --color-l-blue-20: hsla(202, 66%, 48%, 1);
+    --color-l-blue-30: hsla(200, 64%, 37%, 1);
+    --color-base-00: var(--color-l-gray-10);
+    --color-base-10: var(--color-l-gray-30);
+    --color-base-20: var(--color-l-gray-40);
+    --color-base-30: var(--color-l-gray-60);
+    --color-base-35: var(--color-l-gray-70);
+    --color-base-40: var(--color-l-gray-80);
+    --color-base-50: var(--color-l-gray-90);
+    --color-base-70: var(--color-l-gray-120);
+    --color-base-100: var(--color-l-gray-140);
+    --accent-h: 31;
+    --accent-s: 23%;
+    --accent-l: 50%;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.33),
+      calc(var(--accent-l) * 1.19)
+    );
+    --interactive-accent-hsl: var(--color-accent-hsl);
+    --interactive-accent: var(--color-accent-1);
+    --interactive-accent-hover: var(--color-accent-2);
+    --color-red: hsla(0, 58%, 53%, 1);
+    --color-orange: hsla(30, 66%, 52%, 1);
+    --color-yellow-rgb: 248, 197, 46;
+    --color-yellow: hsla(42, 89%, 46%, 1);
+    --color-green: hsla(146, 37%, 49%, 1);
+    --color-cyan: hsla(178, 39%, 49%, 1);
+    --color-blue: hsla(206, 57%, 44%, 1);
+    --color-purple: hsla(249, 39%, 60%, 1);
+    --color-pink: hsla(351, 44%, 61%, 1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --background-primary: var(--color-l-gray-20);
+    --background-primary-alt: var(--color-l-gray-30);
+    --background-secondary: var(--color-l-gray-40);
+    --background-modifier-hover: #ffffff;
+    --background-modifier-border: var(--color-l-gray-60);
+    --background-modifier-border-hover: color-mix(
+      in hsl,
+      var(--color-l-gray-70) 60%,
+      var(--color-l-gray-60)
+    );
+    --background-modifier-border-focus: color-mix(
+      in hsl,
+      var(--color-l-gray-70) 60%,
+      var(--color-l-gray-60)
+    );
+    --text-normal: var(--color-l-gray-130);
+    --text-muted: var(--color-l-gray-100);
+    --text-faint: var(--color-l-gray-80);
+    --text-highlight-bg-rgb: var(--color-yellow-rgb);
+    --text-highlight-bg: var(--color-l-alpha-yellow);
+    --text-accent: var(--color-accent);
+    --text-accent-hover: var(--color-accent-2);
+    --icon-color: var(--color-l-gray-80);
+    --copy-code-btn-shadow:
+      inset 0px 0px 0px 1px #000000, 0px 2px 4px -2px #000000;
+    --caret-color: var(--color-l-gray-80);
+    --checkbox-marker-color: white;
+    --checkbox-color: var(--color-l-green-30);
+    --checkbox-color-hover: var(--color-l-green-20);
+    --checkbox-border-color: var(--color-l-gray-60);
+    --checkbox-border-color-hover: var(--color-l-gray-70);
+    --nav-item-color: var(--color-l-gray-110);
+    --nav-item-color-active: var(--color-l-gray-110);
+    --nav-item-background-hover: #ffffff;
+    --nav-item-background-active: #ffffff;
+    --nav-indentation-guide-color: var(--indentation-guide-color);
+    --nav-heading-color: var(--color-l-gray-100);
+    --nav-file-shadow-active:
+      inset 0px 0px 0px 1px #000000,
+      inset 0px calc(var(--button-axis-offset) * -1) 0px
+        var(--button-axis-offset) #000000,
+      0px 2px 3px 0px #000000;
+    --collapse-icon-color: var(--color-l-gray-70);
+    --collapse-icon-color-collapsed: var(--color-l-gray-70);
+    --indentation-guide-color: var(--background-modifier-border);
+    --prompt-input-background: var(--background-primary);
+    --prompt-separator-border: 1px solid var(--color-l-gray-40);
+    --prompt-border-color: var(--background-modifier-border-focus);
+    --search-icon-color: var(--color-l-gray-80);
+    --background-modifier-form-field: var(--color-l-gray-30);
+    --text-input-color: var(--color-l-gray-130);
+    --editor-bg-color: var(--background-primary);
+    --callout-color-opacity: 32.5%;
+    --callout-border-opacity: 0.2;
+    --callout-title-color: var(--text-normal);
+    --callout-content-background: color-mix(
+      in srgb,
+      var(--background-primary-alt) 50%,
+      var(--background-primary)
+    );
+    --callout-container-shadow:
+      inset 0px 0px 0px 1px #000000, 0px 1px 6px 0px #000000;
+    --callout-title-shadow:
+      inset 0px -1px 0px 0px #000000, inset 0px 1px 1px 0px #ffffff;
+    --callout-content-shadow:
+      inset 0px 0px 0px 1px #000000,
+      inset 0px calc(var(--callout-shadow-offset) * -1)
+        var(--callout-content-shadow-blur) 0px #646464;
+    --bold-color: var(--color-l-red-30);
+    --italic-color: var(--color-l-blue-30);
+    --breadcrumb-separator-color: var(--background-modifier-border);
+    --h1-color: var(--color-l-gray-140);
+    --h1-bg-color: transparent;
+    --h1-border-top-color: var(--background-modifier-border);
+    --h1-border-right-color: var(--background-modifier-border);
+    --h1-border-bottom-color: var(--background-modifier-border);
+    --h1-border-left-color: var(--background-modifier-border);
+    --h2-color: var(--color-l-gray-140);
+    --h2-bg-color: transparent;
+    --h2-border-top-color: var(--background-modifier-border);
+    --h2-border-right-color: var(--background-modifier-border);
+    --h2-border-bottom-color: var(--background-modifier-border);
+    --h2-border-left-color: var(--background-modifier-border);
+    --h3-color: var(--color-l-gray-140);
+    --h3-bg-color: transparent;
+    --h3-border-top-color: var(--background-modifier-border);
+    --h3-border-right-color: var(--background-modifier-border);
+    --h3-border-bottom-color: var(--background-modifier-border);
+    --h3-border-left-color: var(--background-modifier-border);
+    --h4-color: var(--color-l-gray-140);
+    --h4-bg-color: transparent;
+    --h4-border-top-color: var(--background-modifier-border);
+    --h4-border-right-color: var(--background-modifier-border);
+    --h4-border-bottom-color: var(--background-modifier-border);
+    --h4-border-left-color: var(--background-modifier-border);
+    --h5-color: var(--color-l-gray-140);
+    --h5-bg-color: transparent;
+    --h5-border-top-color: var(--background-modifier-border);
+    --h5-border-right-color: var(--background-modifier-border);
+    --h5-border-bottom-color: var(--background-modifier-border);
+    --h5-border-left-color: var(--background-modifier-border);
+    --h6-color: var(--color-l-gray-140);
+    --h6-bg-color: transparent;
+    --h6-border-top-color: var(--background-modifier-border);
+    --h6-border-right-color: var(--background-modifier-border);
+    --h6-border-bottom-color: var(--background-modifier-border);
+    --h6-border-left-color: var(--background-modifier-border);
+    --inline-title-color: var(--color-l-gray-140);
+    --link-color: var(--color-l-yellow-30);
+    --link-color-hover: var(--color-l-yellow-20);
+    --link-external-color: var(--color-l-green-30);
+    --link-external-color-hover: var(--color-l-green-20);
+    --metadata-input-text-color: var(--color-l-gray-120);
+    --tag-color: var(--color-l-blue-30);
+    --tag-color-hover: var(--color-l-blue-20);
+    --tag-background: #ffffff;
+    --tag-background-hover: #ffffff;
+    --tag-border-width: 1px;
+    --tag-border-color: #000000;
+    --tag-border-color-hover: #000000;
+    --graph-node-unresolved: var(--color-l-yellow-20);
+    --graph-node-tag: var(--color-l-red-20);
+    --graph-line: var(--background-modifier-border);
   }
-  --mono-rgb-100: 0, 0, 0;
-  color-scheme: light;
-  --color-l-gray-10: hsla(36, 38%, 98%, 1);
-  --color-l-gray-20: hsla(35, 36%, 96%, 1);
-  --color-l-gray-30: hsla(35, 37%, 92%, 1);
-  --color-l-gray-40: hsla(34, 34%, 90%, 1);
-  --color-l-gray-60: hsla(37, 38%, 83%, 1);
-  --color-l-gray-70: hsla(34, 37%, 70%, 1);
-  --color-l-gray-80: hsla(34, 29%, 60%, 1);
-  --color-l-gray-90: hsla(31, 23%, 50%, 1);
-  --color-l-gray-100: hsla(35, 28%, 40%, 1);
-  --color-l-gray-110: hsla(34, 30%, 37%, 1);
-  --color-l-gray-120: hsla(36, 32%, 30%, 1);
-  --color-l-gray-130: hsla(31, 45%, 24%, 1);
-  --color-l-gray-140: hsla(33, 54%, 17%, 1);
-  --color-l-red-20: hsla(4, 72%, 55%, 1);
-  --color-l-red-30: hsla(4, 56%, 48%, 1);
-  --color-l-yellow-20: hsla(43, 83%, 57%, 1);
-  --color-l-yellow-30: hsla(40, 79%, 47%, 1);
-  --color-l-alpha-yellow: hsla(44, 100%, 50%, 0.2);
-  --color-l-green-20: hsla(148, 48%, 47%, 1);
-  --color-l-green-30: hsla(149, 50%, 39%, 1);
-  --color-l-blue-20: hsla(202, 66%, 48%, 1);
-  --color-l-blue-30: hsla(200, 64%, 37%, 1);
-  --color-base-00: var(--color-l-gray-10);
-  --color-base-10: var(--color-l-gray-30);
-  --color-base-20: var(--color-l-gray-40);
-  --color-base-30: var(--color-l-gray-60);
-  --color-base-35: var(--color-l-gray-70);
-  --color-base-40: var(--color-l-gray-80);
-  --color-base-50: var(--color-l-gray-90);
-  --color-base-70: var(--color-l-gray-120);
-  --color-base-100: var(--color-l-gray-140);
-  --accent-h: 31;
-  --accent-s: 23%;
-  --accent-l: 50%;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.33),
-    calc(var(--accent-l) * 1.19)
-  );
-  --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --color-red: hsla(0, 58%, 53%, 1);
-  --color-orange: hsla(30, 66%, 52%, 1);
-  --color-yellow-rgb: 248, 197, 46;
-  --color-yellow: hsla(42, 89%, 46%, 1);
-  --color-green: hsla(146, 37%, 49%, 1);
-  --color-cyan: hsla(178, 39%, 49%, 1);
-  --color-blue: hsla(206, 57%, 44%, 1);
-  --color-purple: hsla(249, 39%, 60%, 1);
-  --color-pink: hsla(351, 44%, 61%, 1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --background-primary: var(--color-l-gray-20);
-  --background-primary-alt: var(--color-l-gray-30);
-  --background-secondary: var(--color-l-gray-40);
-  --background-modifier-hover: #ffffff;
-  --background-modifier-border: var(--color-l-gray-60);
-  --background-modifier-border-hover: color-mix(
-    in hsl,
-    var(--color-l-gray-70) 60%,
-    var(--color-l-gray-60)
-  );
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    var(--color-l-gray-70) 60%,
-    var(--color-l-gray-60)
-  );
-  --text-normal: var(--color-l-gray-130);
-  --text-muted: var(--color-l-gray-100);
-  --text-faint: var(--color-l-gray-80);
-  --text-highlight-bg-rgb: var(--color-yellow-rgb);
-  --text-highlight-bg: var(--color-l-alpha-yellow);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --icon-color: var(--color-l-gray-80);
-  --copy-code-btn-shadow:
-    inset 0px 0px 0px 1px #000000, 0px 2px 4px -2px #000000;
-  --caret-color: var(--color-l-gray-80);
-  --checkbox-marker-color: white;
-  --checkbox-color: var(--color-l-green-30);
-  --checkbox-color-hover: var(--color-l-green-20);
-  --checkbox-border-color: var(--color-l-gray-60);
-  --checkbox-border-color-hover: var(--color-l-gray-70);
-  --nav-item-color: var(--color-l-gray-110);
-  --nav-item-color-active: var(--color-l-gray-110);
-  --nav-item-background-hover: #ffffff;
-  --nav-item-background-active: #ffffff;
-  --nav-indentation-guide-color: var(--indentation-guide-color);
-  --nav-heading-color: var(--color-l-gray-100);
-  --nav-file-shadow-active:
-    inset 0px 0px 0px 1px #000000,
-    inset 0px calc(var(--button-axis-offset) * -1) 0px var(--button-axis-offset)
-      #000000,
-    0px 2px 3px 0px #000000;
-  --collapse-icon-color: var(--color-l-gray-70);
-  --collapse-icon-color-collapsed: var(--color-l-gray-70);
-  --indentation-guide-color: var(--background-modifier-border);
-  --prompt-input-background: var(--background-primary);
-  --prompt-separator-border: 1px solid var(--color-l-gray-40);
-  --prompt-border-color: var(--background-modifier-border-focus);
-  --search-icon-color: var(--color-l-gray-80);
-  --background-modifier-form-field: var(--color-l-gray-30);
-  --text-input-color: var(--color-l-gray-130);
-  --editor-bg-color: var(--background-primary);
-  --callout-color-opacity: 32.5%;
-  --callout-border-opacity: 0.2;
-  --callout-title-color: var(--text-normal);
-  --callout-content-background: color-mix(
-    in srgb,
-    var(--background-primary-alt) 50%,
-    var(--background-primary)
-  );
-  --callout-container-shadow:
-    inset 0px 0px 0px 1px #000000, 0px 1px 6px 0px #000000;
-  --callout-title-shadow:
-    inset 0px -1px 0px 0px #000000, inset 0px 1px 1px 0px #ffffff;
-  --callout-content-shadow:
-    inset 0px 0px 0px 1px #000000,
-    inset 0px calc(var(--callout-shadow-offset) * -1)
-      var(--callout-content-shadow-blur) 0px #646464;
-  --bold-color: var(--color-l-red-30);
-  --italic-color: var(--color-l-blue-30);
-  --breadcrumb-separator-color: var(--background-modifier-border);
-  --h1-color: var(--color-l-gray-140);
-  --h1-bg-color: transparent;
-  --h1-border-top-color: var(--background-modifier-border);
-  --h1-border-right-color: var(--background-modifier-border);
-  --h1-border-bottom-color: var(--background-modifier-border);
-  --h1-border-left-color: var(--background-modifier-border);
-  --h2-color: var(--color-l-gray-140);
-  --h2-bg-color: transparent;
-  --h2-border-top-color: var(--background-modifier-border);
-  --h2-border-right-color: var(--background-modifier-border);
-  --h2-border-bottom-color: var(--background-modifier-border);
-  --h2-border-left-color: var(--background-modifier-border);
-  --h3-color: var(--color-l-gray-140);
-  --h3-bg-color: transparent;
-  --h3-border-top-color: var(--background-modifier-border);
-  --h3-border-right-color: var(--background-modifier-border);
-  --h3-border-bottom-color: var(--background-modifier-border);
-  --h3-border-left-color: var(--background-modifier-border);
-  --h4-color: var(--color-l-gray-140);
-  --h4-bg-color: transparent;
-  --h4-border-top-color: var(--background-modifier-border);
-  --h4-border-right-color: var(--background-modifier-border);
-  --h4-border-bottom-color: var(--background-modifier-border);
-  --h4-border-left-color: var(--background-modifier-border);
-  --h5-color: var(--color-l-gray-140);
-  --h5-bg-color: transparent;
-  --h5-border-top-color: var(--background-modifier-border);
-  --h5-border-right-color: var(--background-modifier-border);
-  --h5-border-bottom-color: var(--background-modifier-border);
-  --h5-border-left-color: var(--background-modifier-border);
-  --h6-color: var(--color-l-gray-140);
-  --h6-bg-color: transparent;
-  --h6-border-top-color: var(--background-modifier-border);
-  --h6-border-right-color: var(--background-modifier-border);
-  --h6-border-bottom-color: var(--background-modifier-border);
-  --h6-border-left-color: var(--background-modifier-border);
-  --inline-title-color: var(--color-l-gray-140);
-  --link-color: var(--color-l-yellow-30);
-  --link-color-hover: var(--color-l-yellow-20);
-  --link-external-color: var(--color-l-green-30);
-  --link-external-color-hover: var(--color-l-green-20);
-  --metadata-input-text-color: var(--color-l-gray-120);
-  --tag-color: var(--color-l-blue-30);
-  --tag-color-hover: var(--color-l-blue-20);
-  --tag-background: #ffffff;
-  --tag-background-hover: #ffffff;
-  --tag-border-width: 1px;
-  --tag-border-color: #000000;
-  --tag-border-color-hover: #000000;
-  --graph-node-unresolved: var(--color-l-yellow-20);
-  --graph-node-tag: var(--color-l-red-20);
-  --graph-line: var(--background-modifier-border);
 }
 
 @font-face {
@@ -1526,7 +1538,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

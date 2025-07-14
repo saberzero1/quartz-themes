@@ -9,136 +9,148 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --background-modifier-form-field: var(--color-base-25);
+    --text-accent: var(--color-accent-1);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --color-red-rgb: 209, 77, 65;
+    --color-orange-rgb: 218, 112, 44;
+    --color-green-rgb: 135, 154, 57;
+    --color-cyan-rgb: 58, 169, 159;
+    --color-blue-rgb: 67, 133, 190;
+    --color-purple-rgb: 139, 126, 200;
+    --color-red: #d14d41;
+    --color-orange: #da702c;
+    --color-yellow: #d0a215;
+    --color-green: #879a39;
+    --color-cyan: #3aa99f;
+    --color-blue: #4385be;
+    --color-purple: #8b7ec8;
+    --color-pink: #ce5d97;
+    --accent-h: 175;
+    --accent-s: 57%;
+    --accent-l: 33%;
+    --color-base-00: #100f0f;
+    --color-base-10: #1c1b1a;
+    --color-base-20: #1c1b1a;
+    --color-base-25: #282726;
+    --color-base-30: #282726;
+    --color-base-35: #343331;
+    --color-base-40: #403e3c;
+    --color-base-50: #575653;
+    --color-base-70: #878580;
+    --color-base-100: #cecdc3;
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --background-modifier-form-field: var(--color-base-25);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --color-red-rgb: 209, 77, 65;
-  --color-orange-rgb: 218, 112, 44;
-  --color-green-rgb: 135, 154, 57;
-  --color-cyan-rgb: 58, 169, 159;
-  --color-blue-rgb: 67, 133, 190;
-  --color-purple-rgb: 139, 126, 200;
-  --color-red: #d14d41;
-  --color-orange: #da702c;
-  --color-yellow: #d0a215;
-  --color-green: #879a39;
-  --color-cyan: #3aa99f;
-  --color-blue: #4385be;
-  --color-purple: #8b7ec8;
-  --color-pink: #ce5d97;
-  --accent-h: 175;
-  --accent-s: 57%;
-  --accent-l: 33%;
-  --color-base-00: #100f0f;
-  --color-base-10: #1c1b1a;
-  --color-base-20: #1c1b1a;
-  --color-base-25: #282726;
-  --color-base-30: #282726;
-  --color-base-35: #343331;
-  --color-base-40: #403e3c;
-  --color-base-50: #575653;
-  --color-base-70: #878580;
-  --color-base-100: #cecdc3;
-  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --color-red-rgb: 175, 48, 41;
+    --color-orange-rgb: 188, 82, 21;
+    --color-green-rgb: 102, 128, 11;
+    --color-cyan-rgb: 36, 131, 123;
+    --color-blue-rgb: 32, 94, 166;
+    --color-purple-rgb: 94, 64, 157;
+    --color-red: #af3029;
+    --color-orange: #bc5215;
+    --color-yellow: #ad8301;
+    --color-green: #66800b;
+    --color-cyan: #24837b;
+    --color-blue: #205ea6;
+    --color-purple: #5e409d;
+    --color-pink: #a02f6f;
+    --accent-h: 175;
+    --accent-s: 57%;
+    --accent-l: 33%;
+    --color-base-00: #fffcf0;
+    --color-base-10: #f2f0e5;
+    --color-base-20: #f2f0e5;
+    --color-base-25: #e6e4d9;
+    --color-base-30: #e6e4d9;
+    --color-base-35: #dad8ce;
+    --color-base-40: #cecdc3;
+    --color-base-50: #b7b5ac;
+    --color-base-70: #6f6e69;
+    --color-base-100: #100f0f;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --color-red-rgb: 175, 48, 41;
-  --color-orange-rgb: 188, 82, 21;
-  --color-green-rgb: 102, 128, 11;
-  --color-cyan-rgb: 36, 131, 123;
-  --color-blue-rgb: 32, 94, 166;
-  --color-purple-rgb: 94, 64, 157;
-  --color-red: #af3029;
-  --color-orange: #bc5215;
-  --color-yellow: #ad8301;
-  --color-green: #66800b;
-  --color-cyan: #24837b;
-  --color-blue: #205ea6;
-  --color-purple: #5e409d;
-  --color-pink: #a02f6f;
-  --accent-h: 175;
-  --accent-s: 57%;
-  --accent-l: 33%;
-  --color-base-00: #fffcf0;
-  --color-base-10: #f2f0e5;
-  --color-base-20: #f2f0e5;
-  --color-base-25: #e6e4d9;
-  --color-base-30: #e6e4d9;
-  --color-base-35: #dad8ce;
-  --color-base-40: #cecdc3;
-  --color-base-50: #b7b5ac;
-  --color-base-70: #6f6e69;
-  --color-base-100: #100f0f;
 }
 
 @font-face {
@@ -1147,7 +1159,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

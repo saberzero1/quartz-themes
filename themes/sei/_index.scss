@@ -9,139 +9,151 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
-  }
+    .callout {
+      --callout-blend-mode: lighten;
+    }
 
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
 
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+    --mono-rgb-100: 255, 255, 255;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-25: #2a2a2a;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --background-modifier-form-field: var(--color-base-25);
+    --text-accent: var(--color-accent-1);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    color-scheme: dark;
+    --background-primary: hsl(220, 2%, 15%);
+    --background-primary-alt: hsl(220, 2%, 13%);
+    --background-secondary: hsl(220, 2%, 13%);
+    --color-red-rgb: 243, 139, 168;
+    --color-red: #f38ba8;
+    --color-orange-rgb: 250, 179, 135;
+    --color-orange: #fab387;
+    --color-green-rgb: 166, 227, 161;
+    --color-green: #a6e3a1;
+    --color-cyan-rgb: 148, 226, 213;
+    --color-cyan: #94e2d5;
+    --color-blue-rgb: 116, 199, 236;
+    --color-blue: #74c7ec;
+    --color-purple-rgb: 169, 180, 250;
+    --color-purple: #a9b4fa;
+    --color-pink: #f5c2e7;
+    --divider-color: #ffffff;
+    --italic-color: #898f9d;
+    --bold-color: #e3dfa1;
+    --modal-border-color: #ffffff;
+    --nav-item-color: var(--text-muted);
+    --nav-item-color-active: var(--text-muted);
+    --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l: #000000 0px 22px 70px 4px;
+    --highlight-mix-blend-mode: darken;
   }
-  --mono-rgb-100: 255, 255, 255;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --background-modifier-form-field: var(--color-base-25);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  color-scheme: dark;
-  --background-primary: hsl(220, 2%, 15%);
-  --background-primary-alt: hsl(220, 2%, 13%);
-  --background-secondary: hsl(220, 2%, 13%);
-  --color-red-rgb: 243, 139, 168;
-  --color-red: #f38ba8;
-  --color-orange-rgb: 250, 179, 135;
-  --color-orange: #fab387;
-  --color-green-rgb: 166, 227, 161;
-  --color-green: #a6e3a1;
-  --color-cyan-rgb: 148, 226, 213;
-  --color-cyan: #94e2d5;
-  --color-blue-rgb: 116, 199, 236;
-  --color-blue: #74c7ec;
-  --color-purple-rgb: 169, 180, 250;
-  --color-purple: #a9b4fa;
-  --color-pink: #f5c2e7;
-  --divider-color: #ffffff;
-  --italic-color: #898f9d;
-  --bold-color: #e3dfa1;
-  --modal-border-color: #ffffff;
-  --nav-item-color: var(--text-muted);
-  --nav-item-color-active: var(--text-muted);
-  --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.08);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l: #000000 0px 22px 70px 4px;
-  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-base-00: #ffffff;
+    --color-base-10: #fafafa;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-70: #5c5c5c;
+    --color-base-100: #222222;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    color-scheme: light;
+    --background-modifier-border-hover: var(--color-base-25);
+    --color-red-rgb: 255, 59, 48;
+    --color-red: #ff3b30;
+    --color-orange-rgb: 255, 149, 0;
+    --color-orange: #ff9500;
+    --color-green-rgb: 40, 205, 65;
+    --color-green: #28cd41;
+    --color-cyan-rgb: 85, 190, 240;
+    --color-cyan: #55bef0;
+    --color-blue-rgb: 0, 122, 255;
+    --color-blue: #007aff;
+    --color-purple-rgb: 175, 82, 222;
+    --color-purple: #af52de;
+    --color-pink: #ff2d55;
+    --divider-color: #000000;
+    --hr-color: var(--background-modifier-hover);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l: #000000 0px 22px 70px 4px;
+    --modal-border-color: #000000;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  color-scheme: light;
-  --background-modifier-border-hover: var(--color-base-25);
-  --color-red-rgb: 255, 59, 48;
-  --color-red: #ff3b30;
-  --color-orange-rgb: 255, 149, 0;
-  --color-orange: #ff9500;
-  --color-green-rgb: 40, 205, 65;
-  --color-green: #28cd41;
-  --color-cyan-rgb: 85, 190, 240;
-  --color-cyan: #55bef0;
-  --color-blue-rgb: 0, 122, 255;
-  --color-blue: #007aff;
-  --color-purple-rgb: 175, 82, 222;
-  --color-purple: #af52de;
-  --color-pink: #ff2d55;
-  --divider-color: #000000;
-  --hr-color: var(--background-modifier-hover);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l: #000000 0px 22px 70px 4px;
-  --modal-border-color: #000000;
 }
 
 @font-face {
@@ -1153,7 +1165,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

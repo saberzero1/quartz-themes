@@ -9,93 +9,99 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 354;
+    --accent-s: 42%;
+    --accent-l: 56%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-pink: #fa99cd;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-25: #2a2a2a;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --background-modifier-form-field: var(--color-base-25);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --color-red-rgb: var(--red_x);
+    --color-red: var(--red);
+    --color-purple-rgb: var(--purple_x);
+    --color-purple: var(--purple);
+    --color-green-rgb: var(--green_x);
+    --color-green: var(--green);
+    --color-cyan-rgb: var(--frost1_x);
+    --color-cyan: var(--frost1);
+    --color-blue-rgb: var(--frost3_x);
+    --color-blue: var(--frost3);
+    --color-yellow: var(--yellow);
+    --color-orange-rgb: var(--orange_x);
+    --color-orange: var(--orange);
+    --background-primary: var(--dark0);
+    --background-primary-alt: var(--dark0);
+    --background-secondary: var(--dark1);
+    --background-modifier-border: var(--dark2);
+    --text-normal: var(--light2);
+    --text-faint: var(--light0);
+    --text-muted: var(--light1);
+    --h1-color: var(--red);
+    --text-highlight-bg: var(--frost1);
+    --text-accent: var(--orange);
+    --text-accent-hover: var(--frost2);
+    --tag-color: var(--dark4);
+    --tag-background: var(--dark1);
+    --tag-background-hover: var(--dark1);
+    --inline-title-color: var(--yellow);
+    --bold-color: var(--yellow);
+    --italic-color: var(--yellow);
+    --checkbox-color: var(--frost0);
+    --checkbox-color-hover: var(--frost0);
+    --checkbox-border-color: var(--frost0);
+    --checkbox-border-color-hover: var(--frost0);
+    --code-normal: var(--frost1);
+    --code-background: var(--dark1);
+    --nav-item-color-active: var(--frost2);
+    --graph-line: var(--dark3);
+    --graph-node-tag: var(--red);
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --background-modifier-form-field: var(--color-base-25);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --color-red-rgb: var(--red_x);
-  --color-red: var(--red);
-  --color-purple-rgb: var(--purple_x);
-  --color-purple: var(--purple);
-  --color-green-rgb: var(--green_x);
-  --color-green: var(--green);
-  --color-cyan-rgb: var(--frost1_x);
-  --color-cyan: var(--frost1);
-  --color-blue-rgb: var(--frost3_x);
-  --color-blue: var(--frost3);
-  --color-yellow: var(--yellow);
-  --color-orange-rgb: var(--orange_x);
-  --color-orange: var(--orange);
-  --background-primary: var(--dark0);
-  --background-primary-alt: var(--dark0);
-  --background-secondary: var(--dark1);
-  --background-modifier-border: var(--dark2);
-  --text-normal: var(--light2);
-  --text-faint: var(--light0);
-  --text-muted: var(--light1);
-  --h1-color: var(--red);
-  --text-highlight-bg: var(--frost1);
-  --text-accent: var(--orange);
-  --text-accent-hover: var(--frost2);
-  --tag-color: var(--dark4);
-  --tag-background: var(--dark1);
-  --tag-background-hover: var(--dark1);
-  --inline-title-color: var(--yellow);
-  --bold-color: var(--yellow);
-  --italic-color: var(--yellow);
-  --checkbox-color: var(--frost0);
-  --checkbox-color-hover: var(--frost0);
-  --checkbox-border-color: var(--frost0);
-  --checkbox-border-color-hover: var(--frost0);
-  --code-normal: var(--frost1);
-  --code-background: var(--dark1);
-  --nav-item-color-active: var(--frost2);
-  --graph-line: var(--dark3);
-  --graph-node-tag: var(--red);
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1137,7 +1143,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

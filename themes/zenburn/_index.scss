@@ -9,119 +9,125 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #fb464c;
+    --color-orange-rgb: 233, 151, 63;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-green-rgb: 68, 207, 110;
+    --color-green: #44cf6e;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-cyan: #53dfdd;
+    --color-blue-rgb: 2, 122, 255;
+    --color-blue: #027aff;
+    --color-purple-rgb: 168, 130, 255;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-25: #2a2a2a;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --background-modifier-form-field: var(--color-base-25);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --link-external-color: var(--red-dim);
+    --magenta-bright: #dcbecd;
+    --white-bright: #f8f5ed;
+    --black-dim: #333333;
+    --blue-dim: #6699cc;
+    --red-dim: #f2777a;
+    --yellow-dim: #ffcc66;
+    --background-primary: var(--black-dim);
+    --background-primary-alt: var(--black-dim);
+    --background-secondary: var(--black);
+    --text-normal: var(--white-bright);
+    --text-faint: var(--white-bright);
+    --text-muted: var(--yellow);
+    --text-title-h1: var(--magenta-bright);
+    --text-title-h2: var(--yellow);
+    --text-title-h3: var(--yellow);
+    --text-title-h4: var(--magenta-bright);
+    --text-title-h5: var(--white-bright);
+    --text-title-h6: var(--white-bright);
+    --text-a: var(--red-dim);
+    --text-a-hover: var(--red-dim);
+    --pre-code: var(--black);
+    --text-highlight-bg: var(--blue-dim);
+    --interactive-accent: var(--yellow-dim);
+    --interactive-accent-hover: var(--yellow);
+    --background-modifier-border: var(--red);
+    --text-accent: var(--red-dim);
+    --text-accent-hover: var(--red);
+    --code-block: var(--green);
+    --h1-size: 2em;
+    --h2-size: 1.6em;
+    --h3-size: 1.37em;
+    --h4-size: 1.25em;
+    --h5-size: 1.12em;
+    --h6-size: 1.12em;
+    --h1-color: var(--text-title-h1);
+    --h2-color: var(--text-title-h2);
+    --h3-color: var(--text-title-h3);
+    --h4-color: var(--text-title-h4);
+    --h5-color: var(--text-title-h5);
+    --h6-color: var(--text-title-h6);
+    --h1-weight: 700;
+    --h2-weight: 700;
+    --h3-weight: 700;
+    --h4-weight: 400;
+    --h5-weight: 400;
+    --h6-weight: 400;
+    --checkbox-color: var(--yellow);
+    --tag-color: var(--red-dim);
+    --tag-color-hover: var(--black);
+    --tag-background: var(--black);
+    --tag-background-hover: var(--magenta-bright);
+    --tag-radius: 0.55em;
+    --tag-decoration-hover: underline;
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-yellow: #e0de71;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --background-modifier-form-field: var(--color-base-25);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --link-external-color: var(--red-dim);
-  --magenta-bright: #dcbecd;
-  --white-bright: #f8f5ed;
-  --black-dim: #333333;
-  --blue-dim: #6699cc;
-  --red-dim: #f2777a;
-  --yellow-dim: #ffcc66;
-  --background-primary: var(--black-dim);
-  --background-primary-alt: var(--black-dim);
-  --background-secondary: var(--black);
-  --text-normal: var(--white-bright);
-  --text-faint: var(--white-bright);
-  --text-muted: var(--yellow);
-  --text-title-h1: var(--magenta-bright);
-  --text-title-h2: var(--yellow);
-  --text-title-h3: var(--yellow);
-  --text-title-h4: var(--magenta-bright);
-  --text-title-h5: var(--white-bright);
-  --text-title-h6: var(--white-bright);
-  --text-a: var(--red-dim);
-  --text-a-hover: var(--red-dim);
-  --pre-code: var(--black);
-  --text-highlight-bg: var(--blue-dim);
-  --interactive-accent: var(--yellow-dim);
-  --interactive-accent-hover: var(--yellow);
-  --background-modifier-border: var(--red);
-  --text-accent: var(--red-dim);
-  --text-accent-hover: var(--red);
-  --code-block: var(--green);
-  --h1-size: 2em;
-  --h2-size: 1.6em;
-  --h3-size: 1.37em;
-  --h4-size: 1.25em;
-  --h5-size: 1.12em;
-  --h6-size: 1.12em;
-  --h1-color: var(--text-title-h1);
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
-  --h4-color: var(--text-title-h4);
-  --h5-color: var(--text-title-h5);
-  --h6-color: var(--text-title-h6);
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 700;
-  --h4-weight: 400;
-  --h5-weight: 400;
-  --h6-weight: 400;
-  --checkbox-color: var(--yellow);
-  --tag-color: var(--red-dim);
-  --tag-color-hover: var(--black);
-  --tag-background: var(--black);
-  --tag-background-hover: var(--magenta-bright);
-  --tag-radius: 0.55em;
-  --tag-decoration-hover: underline;
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1014,7 +1020,7 @@ body {
     overflow-x: auto;
     padding: 0;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

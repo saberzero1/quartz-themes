@@ -9,97 +9,103 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 258;
+    --accent-s: 88%;
+    --accent-l: 66%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #fb464c;
+    --color-orange-rgb: 233, 151, 63;
+    --color-orange: #e9973f;
+    --color-green-rgb: 68, 207, 110;
+    --color-green: #44cf6e;
+    --color-purple-rgb: 168, 130, 255;
+    --color-purple: #a882ff;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-25: #2a2a2a;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent-1: hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    );
+    --color-accent-2: hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    );
+    --background-modifier-form-field: var(--color-base-25);
+    --text-accent: var(--color-accent-1);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-1);
+    --shadow-s:
+      0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --accent-h: 85;
+    --accent-s: 45%;
+    --accent-l: 40%;
+    --color-accent: hsl(85, 45%, 40%);
+    --color-red-alt: hsl(355, 65%, 70%);
+    --color-red-alt2-rgb: 138, 15, 15;
+    --color-orange-alt: hsl(29, 54%, 61%);
+    --color-yellow: hsl(50, 65%, 70%);
+    --color-yellow-rgb: 228, 212, 129;
+    --color-green-alt: hsl(95, 38%, 62%);
+    --color-green-alt-rgb: 152, 195, 121;
+    --color-cyan: hsl(187, 47%, 55%);
+    --color-cyan-rgb: 86, 182, 194;
+    --color-blue: hsl(207, 82%, 70%);
+    --color-blue-rgb: 116, 185, 241;
+    --color-pink: hsl(286, 60%, 67%);
+    --background-primary: var(--color-base-25);
+    --background-secondary: var(--color-base-00);
+    --background-primary-alt: var(--color-base-30);
+    --hr-color: var(--color-base-40);
+    --bold-color: var(--color-red-alt);
+    --italic-color: var(--color-yellow);
+    --highlight-color: var(--color-red-alt2-rgb);
+    --h1-color: var(--color-red-alt);
+    --h2-color: var(--color-yellow);
+    --h3-color: var(--color-blue);
+    --h4-color: var(--color-orange-alt);
+    --h5-color: var(--color-green-alt);
+    --h6-color: var(--color-purple);
+    --code-function: var(--color-blue);
+    --code-property: var(--color-red-alt);
+    --code-punctuation: var(--color-orange-alt);
+    --code-string: var(--color-green-alt);
+    --code-tag: var(--color-red-alt);
+    --code-value: var(--color-orange-alt);
+    --text-highlight-bg-rgb: var(--highlight-color);
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-orange-rgb: 233, 151, 63;
-  --color-orange: #e9973f;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-purple-rgb: 168, 130, 255;
-  --color-purple: #a882ff;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --background-modifier-form-field: var(--color-base-25);
-  --text-accent: var(--color-accent-1);
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --shadow-s:
-    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --accent-h: 85;
-  --accent-s: 45%;
-  --accent-l: 40%;
-  --color-accent: hsl(85, 45%, 40%);
-  --color-red-alt: hsl(355, 65%, 70%);
-  --color-red-alt2-rgb: 138, 15, 15;
-  --color-orange-alt: hsl(29, 54%, 61%);
-  --color-yellow: hsl(50, 65%, 70%);
-  --color-yellow-rgb: 228, 212, 129;
-  --color-green-alt: hsl(95, 38%, 62%);
-  --color-green-alt-rgb: 152, 195, 121;
-  --color-cyan: hsl(187, 47%, 55%);
-  --color-cyan-rgb: 86, 182, 194;
-  --color-blue: hsl(207, 82%, 70%);
-  --color-blue-rgb: 116, 185, 241;
-  --color-pink: hsl(286, 60%, 67%);
-  --background-primary: var(--color-base-25);
-  --background-secondary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-30);
-  --hr-color: var(--color-base-40);
-  --bold-color: var(--color-red-alt);
-  --italic-color: var(--color-yellow);
-  --highlight-color: var(--color-red-alt2-rgb);
-  --h1-color: var(--color-red-alt);
-  --h2-color: var(--color-yellow);
-  --h3-color: var(--color-blue);
-  --h4-color: var(--color-orange-alt);
-  --h5-color: var(--color-green-alt);
-  --h6-color: var(--color-purple);
-  --code-function: var(--color-blue);
-  --code-property: var(--color-red-alt);
-  --code-punctuation: var(--color-orange-alt);
-  --code-string: var(--color-green-alt);
-  --code-tag: var(--color-red-alt);
-  --code-value: var(--color-orange-alt);
-  --text-highlight-bg-rgb: var(--highlight-color);
-  --highlight-mix-blend-mode: darken;
 }
 
 .darkmode {
@@ -1114,7 +1120,7 @@ body {
     overflow: hidden;
     margin: 0;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;

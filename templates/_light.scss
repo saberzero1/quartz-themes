@@ -1,22 +1,28 @@
 :root[saved-theme="light"],
 html[saved-theme="light"] {
+  body {
 
-  color-scheme: light;
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    //%%body%--accent-h%%
+    //%%body%--accent-s%%
+    //%%body%--accent-l%%
+
+    //%%.theme-light%%
+
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  //%%.theme-light%%
-
 }
 

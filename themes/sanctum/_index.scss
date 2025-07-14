@@ -9,174 +9,186 @@
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-  color-scheme: dark;
+  body {
+    color-scheme: dark;
 
-  .callout {
-    --callout-blend-mode: lighten;
+    .callout {
+      --callout-blend-mode: lighten;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+    }
+
+    --accent-h: 24.4;
+    --accent-s: 90.8%;
+    --accent-l: 61.8%;
+
+    color-scheme: dark;
+    --mono-rgb-100: 255, 255, 255;
+    --color-red: #fb464c;
+    --color-orange: #e9973f;
+    --color-yellow: #e0de71;
+    --color-green: #44cf6e;
+    --color-cyan: #53dfdd;
+    --color-blue-rgb: 2, 122, 255;
+    --color-blue: #027aff;
+    --color-purple: #a882ff;
+    --color-pink: #fa99cd;
+    --color-base-00: #1e1e1e;
+    --color-base-10: #242424;
+    --color-base-20: #262626;
+    --color-base-30: #363636;
+    --color-base-35: #3f3f3f;
+    --color-base-40: #555555;
+    --color-base-50: #666666;
+    --color-base-70: #b3b3b3;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --text-accent: var(--color-accent-1);
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --shadow-color: 0deg 0% 1%;
+    --background: rgb(var(--gray-100));
+    --background-hover: rgba(var(--gray-50), 0.16);
+    --background-selected: rgba(var(--gray-50), 0.24);
+    --border-strong-1: rgb(var(--gray-60));
+    --border-subtle-0: rgb(var(--gray-80));
+    --border-subtle-1: rgb(var(--gray-80));
+    --color-accent-rgb: var(--color-accent-rgb-d);
+    --field-1: rgb(var(--gray-90));
+    --focus: var(--cyan-60);
+    --highlight: rgba(var(--color-accent-rgb), 0.7);
+    --interactive: rgb(var(--color-accent-rgb));
+    --layer-1: rgb(var(--gray-90));
+    --layer-hover-2: rgba(var(--gray-70), 0.5);
+    --text-placeholder: rgb(var(--gray-60));
+    --text-primary: rgb(var(--gray-10));
+    --text-secondary: rgb(var(--gray-30));
+    --background-modifier-border: var(--border-subtle-0);
+    --background-modifier-border-focus: var(--focus);
+    --background-modifier-border-hover: var(--border-subtle-1);
+    --background-modifier-form-field: var(--field-1);
+    --background-modifier-hover: var(--background-hover);
+    --background-primary: var(--background);
+    --background-primary-alt: var(--layer-1);
+    --background-secondary: var(--background);
+    --color-accent: var(--interactive);
+    --color-accent-1: var(--interactive);
+    --color-accent-2: var(--interactive);
+    --text-faint: var(--text-placeholder);
+    --text-highlight-bg: var(--highlight);
+    --text-muted: var(--text-secondary);
+    --text-normal: var(--text-primary);
+    --code-normal: var(--text-muted);
+    --code-comment: var(--text-faint);
+    --code-punctuation: var(--text-muted);
+    --code-tag: var(--red-50);
+    --code-value: var(--lavender);
+    --code-string: var(--green-40);
+    --code-property: var(--cyan);
+    --code-function: var(--orange-30);
+    --code-keyword: var(--pink);
+    --code-important: var(--lavender);
+    --highlight-mix-blend-mode: darken;
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  color-scheme: dark;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red: #fb464c;
-  --color-orange: #e9973f;
-  --color-yellow: #e0de71;
-  --color-green: #44cf6e;
-  --color-cyan: #53dfdd;
-  --color-blue-rgb: 2, 122, 255;
-  --color-blue: #027aff;
-  --color-purple: #a882ff;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-70: #b3b3b3;
-  --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --text-accent: var(--color-accent-1);
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --shadow-color: 0deg 0% 1%;
-  --background: rgb(var(--gray-100));
-  --background-hover: rgba(var(--gray-50), 0.16);
-  --background-selected: rgba(var(--gray-50), 0.24);
-  --border-strong-1: rgb(var(--gray-60));
-  --border-subtle-0: rgb(var(--gray-80));
-  --border-subtle-1: rgb(var(--gray-80));
-  --color-accent-rgb: var(--color-accent-rgb-d);
-  --field-1: rgb(var(--gray-90));
-  --focus: var(--cyan-60);
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-  --interactive: rgb(var(--color-accent-rgb));
-  --layer-1: rgb(var(--gray-90));
-  --layer-hover-2: rgba(var(--gray-70), 0.5);
-  --text-placeholder: rgb(var(--gray-60));
-  --text-primary: rgb(var(--gray-10));
-  --text-secondary: rgb(var(--gray-30));
-  --background-modifier-border: var(--border-subtle-0);
-  --background-modifier-border-focus: var(--focus);
-  --background-modifier-border-hover: var(--border-subtle-1);
-  --background-modifier-form-field: var(--field-1);
-  --background-modifier-hover: var(--background-hover);
-  --background-primary: var(--background);
-  --background-primary-alt: var(--layer-1);
-  --background-secondary: var(--background);
-  --color-accent: var(--interactive);
-  --color-accent-1: var(--interactive);
-  --color-accent-2: var(--interactive);
-  --text-faint: var(--text-placeholder);
-  --text-highlight-bg: var(--highlight);
-  --text-muted: var(--text-secondary);
-  --text-normal: var(--text-primary);
-  --code-normal: var(--text-muted);
-  --code-comment: var(--text-faint);
-  --code-punctuation: var(--text-muted);
-  --code-tag: var(--red-50);
-  --code-value: var(--lavender);
-  --code-string: var(--green-40);
-  --code-property: var(--cyan);
-  --code-function: var(--orange-30);
-  --code-keyword: var(--pink);
-  --code-important: var(--lavender);
-  --highlight-mix-blend-mode: darken;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
-  color-scheme: light;
+  body {
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    --accent-h: 24.4;
+    --accent-s: 90.8%;
+    --accent-l: 61.8%;
+
+    color-scheme: light;
+    --highlight-mix-blend-mode: darken;
+    --mono-rgb-100: 0, 0, 0;
+    --color-red: #e93147;
+    --color-orange: #ec7500;
+    --color-yellow: #e0ac00;
+    --color-green: #08b94e;
+    --color-cyan: #00bfbc;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #086ddd;
+    --color-purple: #7852ee;
+    --color-pink: #d53984;
+    --color-base-00: #ffffff;
+    --color-base-10: #fafafa;
+    --color-base-20: #f6f6f6;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-70: #5c5c5c;
+    --color-base-100: #222222;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --shadow-l:
+      0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+    --shadow-color: 0deg 5% 59%;
+    --background: rgb(var(--gray-10));
+    --background-hover: rgba(var(--gray-50), 0.12);
+    --background-selected: rgba(var(--gray-50), 0.2);
+    --border-strong-1: rgb(var(--gray-50));
+    --border-subtle-0: rgb(var(--gray-20));
+    --border-subtle-1: rgb(var(--gray-20));
+    --color-accent-rgb: var(--color-accent-rgb-l);
+    --field-1: rgb(var(--white));
+    --focus: var(--cyan-60);
+    --highlight: rgba(var(--color-accent-rgb), 0.7);
+    --interactive: rgb(var(--color-accent-rgb));
+    --layer-1: rgb(var(--white));
+    --layer-hover-2: rgba(var(--gray-20), 0.5);
+    --text-placeholder: rgb(var(--gray-40));
+    --text-primary: rgb(var(--gray-100));
+    --text-secondary: rgb(var(--gray-70));
+    --background-modifier-border: var(--border-subtle-0);
+    --background-modifier-border-focus: var(--focus);
+    --background-modifier-border-hover: var(--border-subtle-1);
+    --background-modifier-form-field: var(--field-1);
+    --background-modifier-hover: var(--background-hover);
+    --background-primary: var(--background);
+    --background-primary-alt: var(--layer-1);
+    --background-secondary: var(--background);
+    --color-accent: var(--interactive);
+    --color-accent-1: var(--interactive);
+    --color-accent-2: var(--interactive);
+    --text-faint: var(--text-placeholder);
+    --text-highlight-bg: var(--highlight);
+    --text-muted: var(--text-secondary);
+    --text-normal: var(--text-primary);
+    --code-background: var(--layer-hover-2);
+    --code-normal: var(--text-muted);
+    --code-comment: var(--text-faint);
+    --code-punctuation: var(--text-muted);
+    --code-tag: var(--red);
+    --code-value: var(--lavender);
+    --code-string: var(--green);
+    --code-property: var(--cyan);
+    --code-function: var(--orange);
+    --code-keyword: var(--pink);
+    --code-important: var(--lavender);
   }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  color-scheme: light;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red: #e93147;
-  --color-orange: #ec7500;
-  --color-yellow: #e0ac00;
-  --color-green: #08b94e;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple: #7852ee;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-  --shadow-l:
-    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
-  --shadow-color: 0deg 5% 59%;
-  --background: rgb(var(--gray-10));
-  --background-hover: rgba(var(--gray-50), 0.12);
-  --background-selected: rgba(var(--gray-50), 0.2);
-  --border-strong-1: rgb(var(--gray-50));
-  --border-subtle-0: rgb(var(--gray-20));
-  --border-subtle-1: rgb(var(--gray-20));
-  --color-accent-rgb: var(--color-accent-rgb-l);
-  --field-1: rgb(var(--white));
-  --focus: var(--cyan-60);
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-  --interactive: rgb(var(--color-accent-rgb));
-  --layer-1: rgb(var(--white));
-  --layer-hover-2: rgba(var(--gray-20), 0.5);
-  --text-placeholder: rgb(var(--gray-40));
-  --text-primary: rgb(var(--gray-100));
-  --text-secondary: rgb(var(--gray-70));
-  --background-modifier-border: var(--border-subtle-0);
-  --background-modifier-border-focus: var(--focus);
-  --background-modifier-border-hover: var(--border-subtle-1);
-  --background-modifier-form-field: var(--field-1);
-  --background-modifier-hover: var(--background-hover);
-  --background-primary: var(--background);
-  --background-primary-alt: var(--layer-1);
-  --background-secondary: var(--background);
-  --color-accent: var(--interactive);
-  --color-accent-1: var(--interactive);
-  --color-accent-2: var(--interactive);
-  --text-faint: var(--text-placeholder);
-  --text-highlight-bg: var(--highlight);
-  --text-muted: var(--text-secondary);
-  --text-normal: var(--text-primary);
-  --code-background: var(--layer-hover-2);
-  --code-normal: var(--text-muted);
-  --code-comment: var(--text-faint);
-  --code-punctuation: var(--text-muted);
-  --code-tag: var(--red);
-  --code-value: var(--lavender);
-  --code-string: var(--green);
-  --code-property: var(--cyan);
-  --code-function: var(--orange);
-  --code-keyword: var(--pink);
-  --code-important: var(--lavender);
 }
 
 @font-face {
@@ -1146,7 +1158,7 @@ body {
     border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
     & > code {
       border: none;
