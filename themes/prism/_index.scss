@@ -339,11 +339,6 @@ body {
     "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "Source Sans 3", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -384,6 +379,11 @@ body {
   --checkbox-border-color-hover: hsl(0, 0%, 41%);
   --code-comment: hsl(0, 0%, 67%);
   --collapse-icon-color-collapsed: hsl(2, 48%, 93%);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Source Sans 3", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1550,7 +1550,6 @@ body {
     background-color: hsl(2, 48%, 19%);
     border: 1px solid transparent;
     border-radius: 8px;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
@@ -1559,6 +1558,7 @@ body {
       hsla(2, 48%, 7%, 10%) 0 2px 4px,
       hsla(2, 48%, 7%, 10%) 0 4px 8px,
       hsla(2, 48%, 7%, 10%) 0 6px 12px;
+    display: none;
 
     display: block;
     position: fixed;

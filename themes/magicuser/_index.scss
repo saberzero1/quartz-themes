@@ -228,11 +228,6 @@ body {
     sans-serif;
   --font-monospace:
     "??", "??", "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -311,6 +306,11 @@ body {
   --text-accent: hsl(254, 80%, 68%);
   --text-accent-hover: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
   --tag-radius: calc(1 * 1em);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1464,10 +1464,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 70vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

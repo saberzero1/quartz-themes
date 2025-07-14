@@ -194,7 +194,6 @@ body {
   --link-weight: var(--link-weight);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
-  contain: initial;
   overscroll-behavior: none;
   caret-color: #a27f47;
   --bold-weight: 600;
@@ -273,9 +272,6 @@ body {
     "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -303,7 +299,11 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  overflow: hidden;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1465,7 +1465,6 @@ body {
   /* POPOVER */
   .popover {
     z-index: 30;
-    display: none;
     background-color: #000;
     border: 1px solid transparent;
     box-shadow:
@@ -1476,6 +1475,7 @@ body {
     padding: 20px;
     position: relative;
     max-height: 95vh;
+    display: none;
 
     display: block;
     position: fixed;

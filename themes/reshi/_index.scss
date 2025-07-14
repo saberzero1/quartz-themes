@@ -406,11 +406,6 @@ body {
   --text-accent-hover: hsl(calc(84 - 5), calc(25% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: #778e55;
   --font-monospace: "??", "??", "JetBrains Mono", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "Noto Sans", sans-serif, "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -454,6 +449,11 @@ body {
   --cursor-link: pointer;
   --bold-weight: 600;
   --font-default: "Noto Sans", sans-serif;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Noto Sans", sans-serif, "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1586,7 +1586,6 @@ body {
 
   /* POPOVER */
   .popover {
-    display: flex;
     z-index: 30;
     background-color: #252525;
     border: 1px solid #9d9d9d;
@@ -1598,6 +1597,7 @@ body {
     padding: 20px;
     position: relative;
     max-height: 95vh;
+    display: none;
 
     display: block;
     position: fixed;

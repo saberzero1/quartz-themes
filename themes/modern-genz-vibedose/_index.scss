@@ -450,11 +450,6 @@ body {
     "??", "JetBrains Mono", serif, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "Satoshi", sans-serif, "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -486,6 +481,11 @@ body {
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --checkbox-radius: 4px;
   --inline-title-font: "Syne", sans-serif;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Satoshi", sans-serif, "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1649,10 +1649,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -401,11 +401,6 @@ body {
   --font-monospace:
     "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
     SFMono-Regular, Consolas, "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -464,6 +459,11 @@ body {
   --color-purple: #8c6ef0;
   --checkbox-radius: calc(0.1px * 20);
   --checkbox-border-color: rgb(250, 247, 245);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1155,8 +1155,8 @@ body {
 
     &:hover {
       color: #839496;
-      background-color: #000;
       box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.15);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1639,10 +1639,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

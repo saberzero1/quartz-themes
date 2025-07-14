@@ -408,10 +408,6 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -426,7 +422,6 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #c86464;
-  --font-text: "??", "??", "New York", "Georgia", ui-serif, serif;
   --font-monospace:
     "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
     Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -437,6 +432,11 @@ body {
   --hr-thickness: 0.125rem;
   --checkbox-radius: 3px;
   --tag-radius: 3px;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1591,10 +1591,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

@@ -914,11 +914,6 @@ body {
   --text-accent: hsl(232, 75%, 70%);
   --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
   --interactive-accent-hsl: 232, 75%, 70%;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -945,6 +940,11 @@ body {
   --checkbox-radius: 14px;
   --checkbox-border-color: #ff7272;
   --inline-title-color: #3e3a4f;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -2127,10 +2127,10 @@ body {
     border: 1px solid #d9dde8;
     border-radius: 14px;
     box-shadow: none;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

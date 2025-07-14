@@ -384,11 +384,6 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", "??", "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -404,6 +399,11 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   --font-monospace: "Fira Code", "Source Code Pro", monospace;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1575,7 +1575,6 @@ body {
 
   /* POPOVER */
   .popover {
-    display: flex;
     max-height: 95vh;
     z-index: 30;
     background-color: #343434;
@@ -1588,6 +1587,7 @@ body {
     -webkit-text-stroke: 0.2px;
     -webkit-font-smoothing: none;
     color: #ffffff;
+    display: none;
 
     display: block;
     position: fixed;

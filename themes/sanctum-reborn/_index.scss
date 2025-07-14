@@ -327,11 +327,6 @@ body {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial;
-  overflow: auto;
-  padding-top: 0;
-  --font-text: "??", "??", inter, sans-serif, "Arial";
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -397,6 +392,11 @@ body {
   --graph-line: var(--border-subtle-1, rgba(197, 65, 40, 0.6));
   --graph-node-unresolved: #aabfc9;
   --graph-node-tag: hsl(9.6, 66.2%, 46.5%);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", inter, sans-serif, "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1087,10 +1087,10 @@ body {
     clip-path: polygon(0 0, 24px 0, 24px 36px, 0 36px);
 
     &:hover {
-      background-color: rgb(38, 38, 37);
       animation: outdent 240ms;
       margin-right: 4px;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background-color: rgba(255, 255, 255, 0.15);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1570,7 +1570,6 @@ body {
     background-color: rgb(253, 254, 254);
     border: 1px solid transparent;
     border-radius: 8px;
-    display: flex;
     max-height: 70vh;
     position: absolute;
     z-index: 30;
@@ -1579,6 +1578,7 @@ body {
       0 1.5px 1.6px -1px hsl(0deg 0% 1% / 40%),
       0 4px 4.2px -2px hsl(0deg 0% 1% / 36%),
       0 10.1px 10.6px -3px hsl(0deg 0% 1% / 32%);
+    display: none;
 
     display: block;
     position: fixed;
