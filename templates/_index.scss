@@ -972,12 +972,12 @@ body {
 
         a {
           color: inherit;
-          font-size: 1rem;
           line-height: 1.5rem;
           padding: 6px 8px 6px 24px;
 
           //%%.nav-file-title%%
 
+          font-size: 1rem;
           &.active,
           &:not(.folder-title):hover {
             font-size: 1rem;
@@ -1045,6 +1045,7 @@ body {
 
         //%%.tree-item-self%font-size%%
 
+        font-size: 1rem;
       }
     }
   }
