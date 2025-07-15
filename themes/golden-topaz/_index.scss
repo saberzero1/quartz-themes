@@ -1411,7 +1411,6 @@ body {
 
         a {
           color: inherit;
-          font-size: 1rem;
           line-height: 1.5rem;
           padding: 6px 8px 6px 24px;
 
@@ -1435,6 +1434,7 @@ body {
           position: relative;
           padding: 1px 5px 0px 4px;
 
+          font-size: 1rem;
           &.active,
           &:not(.folder-title):hover {
             font-size: 1rem;
@@ -1507,6 +1507,8 @@ body {
         font-weight: var(--nav-item-weight);
 
         font-size: var(--nav-item-size);
+
+        font-size: 1rem;
       }
     }
   }

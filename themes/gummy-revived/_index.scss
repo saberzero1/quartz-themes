@@ -1589,7 +1589,6 @@ body {
 
         a {
           color: inherit;
-          font-size: 1rem;
           line-height: 1.5rem;
           padding: 6px 8px 6px 24px;
 
@@ -1604,6 +1603,7 @@ body {
           padding: 4px 0 4px 8px;
           padding-left: 1.5em;
 
+          font-size: 1rem;
           &.active,
           &:not(.folder-title):hover {
             font-size: 1rem;
@@ -1682,6 +1682,8 @@ body {
         font-weight: var(--nav-item-weight);
 
         font-size: var(--nav-item-size);
+
+        font-size: 1rem;
       }
     }
   }
