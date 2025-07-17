@@ -39,17 +39,19 @@ export default function updateMiscFiles(manifestCollection) {
         ? "dark"
         : "light";
     const compatibilityArray = themes[themeName]["compatibility"];
+    const license = themes[themeName]["license"]["spdx_id"];
+    const licenseString = `<svg src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/>`;
     let compatibilityString = "";
     compatibilityArray.forEach((compatibility) => {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
     });
     compatibilityTableLines.push(
-      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName}/syntax) |`,
+      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName}/syntax) | ${licenseString} |`,
     );
   });
 
   const compatibilityTable =
-    "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview |\n| --- | --- | --- | --- |".concat(
+    "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview | Theme License |\n| --- | --- | --- | --- | --- |".concat(
       ...compatibilityTableLines,
     );
 
