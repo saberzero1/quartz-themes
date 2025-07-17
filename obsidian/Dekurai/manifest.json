@@ -3,5 +3,9 @@
   "version": "1.0.1",
   "minAppVersion": "1.0.0",
   "author": "sergey",
-  "authorUrl": "https://github.com/sergey900553"
+  "authorUrl": "https://github.com/sergey900553",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

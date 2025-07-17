@@ -3,5 +3,9 @@
   "version": "0.1",
   "minAppVersion": "0.16",
   "author": "schrunchee",
-  "authorUrl": "https://github.com/schrunchee"
+  "authorUrl": "https://github.com/schrunchee",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

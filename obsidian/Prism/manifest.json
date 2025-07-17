@@ -4,5 +4,9 @@
   "minAppVersion": "1.6.0",
   "author": "Damian Korcz",
   "authorUrl": "https://github.com/damiankorcz",
-  "fundingUrl": "https://www.buymeacoffee.com/DamianKorcz"
+  "fundingUrl": "https://www.buymeacoffee.com/DamianKorcz",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

@@ -3,5 +3,9 @@
   "version": "0.0.2",
   "minAppVersion": "0.16.0",
   "author": "prradox",
-  "authorUrl": "https://github.com/prradox"
+  "authorUrl": "https://github.com/prradox",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

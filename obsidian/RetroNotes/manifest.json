@@ -3,5 +3,9 @@
   "version": "1.0.3",
   "minAppVersion": "0.16.0",
   "author": "Sr.Campelo",
-  "authorUrl": "https://rubencampelo.com"
+  "authorUrl": "https://rubencampelo.com",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

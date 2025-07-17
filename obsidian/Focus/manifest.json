@@ -3,5 +3,9 @@
   "version": "0.1.8",
   "minAppVersion": "1.5.0",
   "author": "Moritz Jung",
-  "authorUrl": "https://www.moritzjung.dev"
+  "authorUrl": "https://www.moritzjung.dev",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }

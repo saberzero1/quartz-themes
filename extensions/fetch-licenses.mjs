@@ -15,11 +15,18 @@ import fs from "fs/promises";
 import { readFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import getManifestCollection from "./manifest.mjs";
+import {
+  sanitizeFilenamePreservingEmojis,
+  listFoldersInDirectory,
+} from "../util/util.mjs";
 
 const manifestCollection = getManifestCollection();
 const repositories = JSON.parse(
   readFileSync("./obsidian/obsidian-theme-list.json", "utf8"),
 );
+
+const themes = JSON.parse(readFileSync("./themes.json", "utf8"));
+const themesObject = themes["themes"];
 
 const flags = process.argv.slice(2);
 
@@ -45,6 +52,7 @@ const repoInfo = manifestCollection
       return { repository: null, downloadTarget: null };
     }
     return {
+      name: manifest.name, // Theme name
       repository: repo, // e.g., "owner/repo-name"
       downloadTarget: downloadTarget, // e.g., "obsidian/theme-name/LICENSE.md"
     };
@@ -60,6 +68,12 @@ const repoInfo = manifestCollection
 async function getLicenseContent(repoFullName) {
   const apiUrl = `https://api.github.com/repos/${repoFullName}/license`;
   console.log(`Fetching license info from: ${apiUrl}`);
+
+  const result = {
+    licenseContent: null,
+    licenseSpdxId: "No SPDX ID Found",
+    licenseName: "No License Found",
+  };
 
   const headers = {
     Accept: "application/vnd.github.v3+json",
@@ -78,7 +92,7 @@ async function getLicenseContent(repoFullName) {
 
     if (response.status === 404) {
       console.warn(`[WARN] No license file found for ${repoFullName}.`);
-      return null;
+      return result; // Return empty result if no license file is found
     }
 
     if (!response.ok) {
@@ -90,15 +104,18 @@ async function getLicenseContent(repoFullName) {
     const licenseData = await response.json();
 
     // The license content from the API is Base64 encoded. We need to decode it.
-    const content = Buffer.from(licenseData.content, "base64").toString("utf8");
-    return content;
+    result.licenseContent =
+      Buffer.from(licenseData.content, "base64").toString("utf8") || null;
+    result.licenseSpdxId = licenseData.license.spdx_id || "Non-SPDX License";
+    result.licenseName = licenseData.license.name || "Unknown License";
+    return result;
   } catch (error) {
     console.error(
       `[ERROR] Failed to fetch license for ${repoFullName}:`,
       error.message,
     );
     // Return null to signify failure, allowing the script to continue.
-    return null;
+    return {};
   }
 }
 
@@ -129,7 +146,46 @@ async function fetchAndDownloadLicenses(repos) {
     const { repository, downloadTarget } = info;
     console.log(`\nProcessing ${repository}...`);
 
-    const licenseContent = await getLicenseContent(repository);
+    const { licenseContent, licenseSpdxId, licenseName } =
+      await getLicenseContent(repository);
+
+    console.log(licenseName, licenseSpdxId);
+
+    // Add SPDX ID to the theme's manifest.json.
+    if (licenseSpdxId && licenseName) {
+      const manifestPath = join("obsidian", info.name, "manifest.json");
+      try {
+        const manifestData = JSON.parse(
+          await fs.readFile(manifestPath, "utf8"),
+        );
+        manifestData.license = { name: licenseName, spdx_id: licenseSpdxId };
+        await fs.writeFile(
+          manifestPath,
+          JSON.stringify(manifestData, null, 2),
+          "utf8",
+        );
+        console.log(
+          `[INFO] Updated manifest.json for ${info.name} with license info.`,
+        );
+      } catch (error) {
+        console.error(
+          `[ERROR] Could not update manifest.json for ${info.name}:`,
+          error.message,
+        );
+      }
+      try {
+        // Also update the themes.json file with the license info.
+        themesObject[sanitizeFilenamePreservingEmojis(info.name)].license = {
+          name: licenseName,
+          spdx_id: licenseSpdxId,
+        };
+      } catch (error) {
+        console.error(
+          `[ERROR] Could not update themes.json for ${info.name}:`,
+          error.message,
+        );
+      }
+    }
 
     if (licenseContent) {
       console.log(
@@ -179,4 +235,33 @@ console.log("Starting license fetch script...");
 console.log(`Fetching licenses for ${repoInfo.length} repositories...`);
 console.log("Or until GitHub API rate limit is reached...");
 // Run the main function with the configured repository list.
-fetchAndDownloadLicenses(repoInfo);
+await fetchAndDownloadLicenses(repoInfo);
+
+// Add information for themes without a license file.
+const themesNew = {};
+for (const theme of Object.entries(themesObject)) {
+  if (!theme.license) {
+    theme.license = { name: "No License Found", spdx_id: "No SPDX ID Found" };
+  }
+  themesNew[theme[0]] = theme[1];
+}
+
+// Add NO_LICENSE_IN_REPOSITORY file for themes that have no LICENSE.md or NO_LICENSE_IN_REPOSITORY file.
+for (const folder of listFoldersInDirectory("./obsidian")) {
+  const targetNoLicensePath = join(
+    "./obsidian",
+    folder,
+    "NO_LICENSE_IN_REPOSITORY",
+  );
+  const targetPath = join("./obsidian", folder, "LICENSE.md");
+  if (!existsSync(targetPath) && !existsSync(targetNoLicensePath)) {
+    console.log(
+      `[INFO] Creating NO_LICENSE_IN_REPOSITORY file for ${folder} at ${targetPath}`,
+    );
+    await fs.writeFile(targetNoLicensePath, "", "utf8");
+  }
+}
+
+// Write the updated themes.json file back to disk.
+themes["themes"] = themesNew;
+await fs.writeFile("./themes.json", JSON.stringify(themes, null, 2), "utf8");

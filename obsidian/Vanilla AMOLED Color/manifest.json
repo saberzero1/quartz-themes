@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "author": "sskki",
-  "authorUrl": "https://github.Com/Sskki-exe"
+  "authorUrl": "https://github.Com/Sskki-exe",
+  "license": {
+    "name": "ISC License",
+    "spdx_id": "ISC"
+  }
 }

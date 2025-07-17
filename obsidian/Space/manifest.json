@@ -4,5 +4,9 @@
   "minAppVersion": "1.2.0",
   "author": "BHappen",
   "authorUrl": "https://bhappen.com",
-  "fundingUrl": "https://buymeacoffee.com/bhappen"
+  "fundingUrl": "https://buymeacoffee.com/bhappen",
+  "license": {
+    "name": "Other",
+    "spdx_id": "NOASSERTION"
+  }
 }

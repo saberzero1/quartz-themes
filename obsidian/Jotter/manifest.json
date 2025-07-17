@@ -3,5 +3,9 @@
   "version": "1.32.0",
   "minAppVersion": "1.0.0",
   "author": "lnbgc",
-  "authorUrl": "https://github.com/lnbgc"
+  "authorUrl": "https://github.com/lnbgc",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

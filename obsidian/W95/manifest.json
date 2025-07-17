@@ -4,5 +4,9 @@
   "minAppVersion": "1.2.8",
   "author": "@phchang",
   "authorUrl": "https://github.com/phchang",
-  "fundingUrl": "https://buymeacoffee.com/phchang"
+  "fundingUrl": "https://buymeacoffee.com/phchang",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

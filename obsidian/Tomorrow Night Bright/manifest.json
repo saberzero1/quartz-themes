@@ -2,5 +2,9 @@
   "name": "Tomorrow Night Bright",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "Gerard Braad"
+  "author": "Gerard Braad",
+  "license": {
+    "name": "Other",
+    "spdx_id": "NOASSERTION"
+  }
 }

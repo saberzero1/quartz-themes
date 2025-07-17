@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "author": "Manuel Coca",
-  "authorUrl": "https://github.com/manuelcoca"
+  "authorUrl": "https://github.com/manuelcoca",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

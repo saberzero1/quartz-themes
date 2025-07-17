@@ -3,5 +3,9 @@
   "version": "0.11.8",
   "minAppVersion": "1.0.0",
   "author": "@caro401",
-  "authorUrl": "https://github.com/caro401"
+  "authorUrl": "https://github.com/caro401",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

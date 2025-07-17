@@ -17,7 +17,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "abate": {
       "compatibility": ["partial"],
@@ -26,7 +27,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["noto-sans"]
+      "fonts": ["noto-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "abecedarium": {
       "compatibility": ["full"],
@@ -35,7 +37,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "absolutegruv": {
       "compatibility": ["partial", "collection"],
@@ -44,7 +47,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "abyssal": {
       "compatibility": ["partial", "collection"],
@@ -55,7 +59,8 @@
       ],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "adrenaline": {
       "compatibility": ["full"],
@@ -64,7 +69,8 @@
       "variations": [],
       "extras": [],
       "fixes": ["heading-colors"],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "adwaita": {
       "compatibility": ["partial", "collection"],
@@ -73,7 +79,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cantarell"]
+      "fonts": ["cantarell"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "agate": {
       "compatibility": ["full"],
@@ -82,7 +89,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": ["heading-colors"],
-      "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"]
+      "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "aged-whisky": {
       "compatibility": ["checking"],
@@ -91,7 +99,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "al-dente": {
       "compatibility": ["checking"],
@@ -100,7 +109,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["nunito-sans", "courier-prime", "bitter"]
+      "fonts": ["nunito-sans", "courier-prime", "bitter"],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "allium": {
       "compatibility": ["checking", "collection"],
@@ -109,7 +122,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["icons/its"]
+      "fonts": ["icons/its"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "amoled-serenity": {
       "compatibility": ["checking", "collection"],
@@ -118,7 +132,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["bricolage-grotesque", "roboto", "montserrat"]
+      "fonts": ["bricolage-grotesque", "roboto", "montserrat"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "anuppuccin": {
       "compatibility": ["checking", "collection"],
@@ -127,7 +142,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["noto-serif"]
+      "fonts": ["noto-serif"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "apatheia": {
       "compatibility": ["checking", "collection"],
@@ -136,7 +155,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "apex": {
       "compatibility": ["checking"],
@@ -145,7 +165,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "arcane": {
       "compatibility": ["checking"],
@@ -154,7 +175,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "atom": {
       "compatibility": ["checking"],
@@ -163,7 +185,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "atomus": {
       "compatibility": ["checking"],
@@ -172,7 +195,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "aura-dark": {
       "compatibility": ["checking", "collection"],
@@ -181,7 +205,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "aura": {
       "compatibility": ["full", "collection"],
@@ -195,7 +220,11 @@
         "ia-writer-duo",
         "ia-writer-quattro-s",
         "monaco"
-      ]
+      ],
+      "license": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0"
+      }
     },
     "aurora-twilight": {
       "compatibility": ["checking"],
@@ -204,7 +233,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cabin", "quicksand"]
+      "fonts": ["cabin", "quicksand"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "aurora": {
       "compatibility": ["checking"],
@@ -213,7 +243,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "autotape": {
       "compatibility": ["checking"],
@@ -222,7 +253,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "ayu-light-mirage": {
       "compatibility": ["checking"],
@@ -231,7 +263,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lora", "monaspace-neon"]
+      "fonts": ["lora", "monaspace-neon"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "ayu-mirage": {
       "compatibility": ["checking"],
@@ -240,7 +273,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
+      "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "base2tone": {
       "compatibility": ["checking"],
@@ -249,7 +283,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "behave-dark": {
       "compatibility": ["checking"],
@@ -258,7 +293,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "big-bold": {
       "compatibility": ["checking", "collection"],
@@ -284,7 +320,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "blackbird": {
       "compatibility": ["checking"],
@@ -293,7 +330,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "blossom": {
       "compatibility": ["checking"],
@@ -302,7 +340,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "blue-topaz": {
       "compatibility": ["checking", "collection"],
@@ -311,7 +350,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lucida-handwriting", "icons/boxicons"]
+      "fonts": ["lucida-handwriting", "icons/boxicons"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "bolt": {
       "compatibility": ["checking", "collection"],
@@ -320,7 +360,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["formular"]
+      "fonts": ["formular"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "border": {
       "compatibility": ["checking", "collection"],
@@ -329,7 +370,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "borealis": {
       "compatibility": ["checking", "collection"],
@@ -338,7 +380,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "bossidian": {
       "compatibility": ["checking"],
@@ -347,7 +390,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "brainhack": {
       "compatibility": ["checking", "collection"],
@@ -356,7 +400,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cascadia-mono"]
+      "fonts": ["cascadia-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "brutalism": {
       "compatibility": ["checking"],
@@ -365,7 +410,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["archivo"]
+      "fonts": ["archivo"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "buena-vista": {
       "compatibility": ["checking", "collection"],
@@ -374,7 +420,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "camena": {
       "compatibility": ["checking"],
@@ -383,7 +433,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["avenir", "cascadia-code"]
+      "fonts": ["avenir", "cascadia-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "carbon": {
       "compatibility": ["checking"],
@@ -392,7 +443,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ibm-plex-mono", "ibm-plex-sans"]
+      "fonts": ["ibm-plex-mono", "ibm-plex-sans"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "cardstock": {
       "compatibility": ["checking"],
@@ -401,7 +456,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "catppuccin": {
       "compatibility": ["checking", "collection"],
@@ -410,7 +466,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["nunito-sans", "vollkorn"]
+      "fonts": ["nunito-sans", "vollkorn"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "celestial-night": {
       "compatibility": ["checking", "collection"],
@@ -419,7 +476,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["bookerly", "hatolie", "merienda"]
+      "fonts": ["bookerly", "hatolie", "merienda"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "charcoal": {
       "compatibility": ["checking"],
@@ -428,7 +486,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
+      "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "chiaroscuroflow": {
       "compatibility": ["checking", "collection"],
@@ -437,7 +496,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["manrope", "nunito-sans"]
+      "fonts": ["manrope", "nunito-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "chime": {
       "compatibility": ["checking", "collection"],
@@ -461,7 +521,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "cobalt-peacock": {
       "compatibility": ["checking"],
@@ -470,7 +531,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "cocoa": {
       "compatibility": ["checking"],
@@ -479,7 +541,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["palatino"]
+      "fonts": ["palatino"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "colored-candy": {
       "compatibility": ["checking", "collection"],
@@ -488,7 +551,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "comfort-color-dark": {
       "compatibility": ["checking"],
@@ -497,7 +561,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "comfort-dark": {
       "compatibility": ["checking"],
@@ -506,7 +571,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["iosevka-web", "jetbrains-mono"]
+      "fonts": ["iosevka-web", "jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "comfort-smooth": {
       "compatibility": ["checking"],
@@ -515,7 +581,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "comfort": {
       "compatibility": ["partial", "collection"],
@@ -524,7 +591,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "composer": {
       "compatibility": ["checking", "collection"],
@@ -533,7 +601,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "consolas": {
       "compatibility": ["checking"],
@@ -542,7 +611,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["inconsolata"]
+      "fonts": ["inconsolata"],
+      "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
     },
     "covert": {
       "compatibility": ["checking"],
@@ -551,7 +621,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "creature": {
       "compatibility": ["checking"],
@@ -560,7 +631,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["sf-mono"]
+      "fonts": ["sf-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "creme-brulee": {
       "compatibility": ["checking"],
@@ -569,7 +641,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["merriweather-sans"]
+      "fonts": ["merriweather-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "cupertino": {
       "compatibility": ["checking", "collection"],
@@ -578,7 +651,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["sf-pro-display"]
+      "fonts": ["sf-pro-display"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "cyber-glow": {
       "compatibility": ["checking", "collection"],
@@ -587,7 +661,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ballet", "oxanium", "space-wham", "orbitron"]
+      "fonts": ["ballet", "oxanium", "space-wham", "orbitron"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "cybertron-shifted": {
       "compatibility": ["checking"],
@@ -596,7 +671,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "cybertron": {
       "compatibility": ["checking"],
@@ -605,7 +681,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "dark-castle": {
       "compatibility": ["checking"],
@@ -614,7 +691,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dark-clarity": {
       "compatibility": ["checking", "collection"],
@@ -623,7 +701,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["noto-sans", "jetbrains-mono"]
+      "fonts": ["noto-sans", "jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dark-graphite-pie": {
       "compatibility": ["checking"],
@@ -632,7 +711,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "dark-graphite": {
       "compatibility": ["checking"],
@@ -641,7 +721,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco"]
+      "fonts": ["ia-writer-quattro-s", "monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "dark-moss": {
       "compatibility": ["checking"],
@@ -650,7 +731,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "darkember": {
       "compatibility": ["checking", "collection"],
@@ -659,7 +741,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "darkyan": {
       "compatibility": ["checking"],
@@ -668,7 +751,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "dashboard": {
       "compatibility": ["checking", "collection"],
@@ -677,7 +764,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dawn": {
       "compatibility": ["checking"],
@@ -686,7 +774,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dayspring": {
       "compatibility": ["checking"],
@@ -695,7 +784,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["crimson-pro", "figtree"]
+      "fonts": ["crimson-pro", "figtree"],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "deep-submerge": {
       "compatibility": ["checking"],
@@ -704,7 +797,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "deeper-work": {
       "compatibility": ["checking", "collection"],
@@ -713,7 +807,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "default": {
       "compatibility": ["checking"],
@@ -722,7 +817,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["flow-circular"]
+      "fonts": ["flow-circular"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "dekurai": {
       "compatibility": ["checking"],
@@ -731,7 +827,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "discordian": {
       "compatibility": ["checking"],
@@ -740,7 +837,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["catamaran"]
+      "fonts": ["catamaran"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-for-obsidian": {
       "compatibility": ["checking"],
@@ -749,7 +847,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-gemini": {
       "compatibility": ["checking"],
@@ -758,7 +857,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-lyt": {
       "compatibility": ["checking"],
@@ -767,7 +867,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["monaco", "sf-mono"]
+      "fonts": ["monaco", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-official": {
       "compatibility": ["checking"],
@@ -776,7 +877,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-plus": {
       "compatibility": ["checking", "collection"],
@@ -785,7 +887,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "monaco"]
+      "fonts": ["jetbrains-mono", "monaco"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dracula-slim": {
       "compatibility": ["checking"],
@@ -794,7 +897,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "duality": {
       "compatibility": ["checking"],
@@ -803,7 +907,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "dune": {
       "compatibility": ["checking", "collection"],
@@ -812,7 +920,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0"
+      }
     },
     "dunite": {
       "compatibility": ["checking"],
@@ -821,7 +933,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "dust": {
       "compatibility": ["checking"],
@@ -830,7 +943,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["icons/material-icons", "fira-code"]
+      "fonts": ["icons/material-icons", "fira-code"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "dynamic-color": {
       "compatibility": ["checking"],
@@ -839,7 +953,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
     },
     "ebullientworks": {
       "compatibility": ["checking", "collection"],
@@ -848,7 +963,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "eldritch": {
       "compatibility": ["checking"],
@@ -857,7 +976,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "elegance": {
       "compatibility": ["checking"],
@@ -866,7 +986,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["monaco"]
+      "fonts": ["monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "emerald-echo": {
       "compatibility": ["checking"],
@@ -875,7 +996,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "encore": {
       "compatibility": ["checking", "collection"],
@@ -884,7 +1006,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "enhanced-file-explorer-tree": {
       "compatibility": ["checking"],
@@ -893,7 +1016,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "ethereon": {
       "compatibility": ["checking"],
@@ -902,7 +1026,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "evangelion": {
       "compatibility": ["checking"],
@@ -911,7 +1039,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "everblush": {
       "compatibility": ["checking"],
@@ -920,7 +1052,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "everforest-enchanted": {
       "compatibility": ["checking", "collection"],
@@ -929,7 +1062,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "everforest": {
       "compatibility": ["checking"],
@@ -938,7 +1072,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "evergreen-shadow": {
       "compatibility": ["checking"],
@@ -947,7 +1082,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
+      "fonts": ["noto-sans-old-persian", "noto-serif-kr"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "evilred": {
       "compatibility": ["checking"],
@@ -956,7 +1092,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "faded": {
       "compatibility": ["checking", "collection"],
@@ -965,7 +1102,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0"
+      }
     },
     "fancy-a-story": {
       "compatibility": ["checking", "collection"],
@@ -981,7 +1122,8 @@
         "orbitron",
         "playfair-display",
         "walter-turncoat"
-      ]
+      ],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "fastppuccin": {
       "compatibility": ["checking", "collection"],
@@ -990,7 +1132,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["noto-serif"]
+      "fonts": ["noto-serif"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "feather": {
       "compatibility": ["checking", "collection"],
@@ -999,7 +1145,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "firefly": {
       "compatibility": ["checking"],
@@ -1008,7 +1155,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "flexcyon": {
       "compatibility": ["checking", "collection"],
@@ -1017,7 +1168,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "flexoki-warm": {
       "compatibility": ["checking", "collection"],
@@ -1026,7 +1178,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "flexoki": {
       "compatibility": ["checking"],
@@ -1035,7 +1188,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "focus": {
       "compatibility": ["checking"],
@@ -1044,7 +1198,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "frost": {
       "compatibility": ["checking"],
@@ -1053,7 +1211,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "roboto"]
+      "fonts": ["jetbrains-mono", "roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "fusion": {
       "compatibility": ["checking", "collection"],
@@ -1062,7 +1221,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "garden-gnome-adwaita-gtk": {
       "compatibility": ["checking", "collection"],
@@ -1071,7 +1231,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "gdct-dark": {
       "compatibility": ["checking"],
@@ -1080,7 +1244,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco"]
+      "fonts": ["ia-writer-quattro-s", "monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "gdct": {
       "compatibility": ["checking"],
@@ -1089,7 +1254,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco"]
+      "fonts": ["ia-writer-quattro-s", "monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "github-theme": {
       "compatibility": ["checking", "collection"],
@@ -1098,7 +1264,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "githubdhc": {
       "compatibility": ["checking", "collection"],
@@ -1107,7 +1274,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["fira-code", "noto-sans"]
+      "fonts": ["fira-code", "noto-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "gitsidian": {
       "compatibility": ["checking"],
@@ -1116,7 +1284,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "glass-robo": {
       "compatibility": ["checking", "collection"],
@@ -1125,7 +1294,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["figtree", "jetbrains-mono"]
+      "fonts": ["figtree", "jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "golden-topaz": {
       "compatibility": ["checking"],
@@ -1134,7 +1304,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lucida-handwriting", "monaco"]
+      "fonts": ["lucida-handwriting", "monaco"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "green-nightmare": {
       "compatibility": ["checking"],
@@ -1143,7 +1314,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "gummy-revived": {
       "compatibility": ["checking", "collection"],
@@ -1152,7 +1324,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["peace-sans", "space-grotesk"]
+      "fonts": ["peace-sans", "space-grotesk"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "hackthebox": {
       "compatibility": ["full"],
@@ -1161,7 +1334,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["open-sans"]
+      "fonts": ["open-sans"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "handwriting-kalam": {
       "compatibility": ["checking"],
@@ -1170,7 +1344,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["courier-prime", "kalam"]
+      "fonts": ["courier-prime", "kalam"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "halcyon": {
       "compatibility": ["checking"],
@@ -1179,7 +1354,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "heboric": {
       "compatibility": ["checking"],
@@ -1188,7 +1364,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "hipstersmoothie": {
       "compatibility": ["checking"],
@@ -1197,7 +1377,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "hojicha": {
       "compatibility": ["checking"],
@@ -1206,7 +1387,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "hulk": {
       "compatibility": ["checking"],
@@ -1215,7 +1400,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["monaco"]
+      "fonts": ["monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "ia-writer": {
       "compatibility": ["checking"],
@@ -1224,7 +1410,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-duo"]
+      "fonts": ["ia-writer-duo"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ib-writer": {
       "compatibility": ["checking"],
@@ -1233,7 +1420,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-quattro"]
+      "fonts": ["ia-writer-quattro"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "iceberg": {
       "compatibility": ["checking"],
@@ -1242,7 +1430,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "improved-potato": {
       "compatibility": ["checking", "collection"],
@@ -1251,7 +1440,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ink": {
       "compatibility": ["checking"],
@@ -1260,7 +1450,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "ion": {
       "compatibility": ["checking", "collection"],
@@ -1269,7 +1463,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "its-theme": {
       "compatibility": ["checking", "collection"],
@@ -1278,7 +1473,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["icons/its"]
+      "fonts": ["icons/its"],
+      "license": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0"
+      }
     },
     "jotter": {
       "compatibility": ["checking", "collection"],
@@ -1287,7 +1486,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kakano": {
       "compatibility": ["checking", "collection"],
@@ -1296,7 +1496,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["roboto", "sf-mono"]
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kanagawa-paper": {
       "compatibility": ["checking"],
@@ -1305,7 +1506,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kanagawa": {
       "compatibility": ["checking"],
@@ -1314,7 +1516,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kiwi-mono": {
       "compatibility": ["checking"],
@@ -1323,7 +1526,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cascadia-mono"]
+      "fonts": ["cascadia-mono"],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "kurokula": {
       "compatibility": ["checking"],
@@ -1332,7 +1536,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["atkinson-hyperlegible", "jetbrains-mono"]
+      "fonts": ["atkinson-hyperlegible", "jetbrains-mono"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "lagom": {
       "compatibility": ["checking", "collection"],
@@ -1341,7 +1549,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["formular"]
+      "fonts": ["formular"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "latex": {
       "compatibility": ["checking"],
@@ -1350,7 +1562,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["computer-modern-bright"]
+      "fonts": ["computer-modern-bright"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "lavender-mist": {
       "compatibility": ["checking"],
@@ -1359,7 +1572,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["noto-serif-kr"]
+      "fonts": ["noto-serif-kr"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "lemons-theme": {
       "compatibility": ["checking"],
@@ -1368,7 +1582,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "lesswrong": {
       "compatibility": ["checking"],
@@ -1377,7 +1595,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "light-bright": {
       "compatibility": ["checking", "collection"],
@@ -1386,7 +1605,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lato", "roboto", "work-sans"]
+      "fonts": ["lato", "roboto", "work-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "listive": {
       "compatibility": ["checking", "collection"],
@@ -1395,7 +1615,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["courgette", "karla", "open-sans"]
+      "fonts": ["courgette", "karla", "open-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "lorens": {
       "compatibility": ["checking"],
@@ -1404,7 +1625,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "lumines": {
       "compatibility": ["checking", "collection"],
@@ -1413,7 +1635,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "lyt-mode": {
       "compatibility": ["checking"],
@@ -1422,7 +1645,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["dm-mono", "dm-sans", "fira-code"]
+      "fonts": ["dm-mono", "dm-sans", "fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mado-11": {
       "compatibility": ["checking", "collection"],
@@ -1431,7 +1655,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mado-miniflow": {
       "compatibility": ["checking", "collection"],
@@ -1440,7 +1665,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "magicuser": {
       "compatibility": ["checking", "collection"],
@@ -1449,7 +1675,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mammoth": {
       "compatibility": ["checking"],
@@ -1458,7 +1685,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "maple": {
       "compatibility": ["checking", "collection"],
@@ -1467,7 +1698,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["maple-mono"]
+      "fonts": ["maple-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "marathon": {
       "compatibility": ["checking"],
@@ -1476,7 +1708,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["inter"]
+      "fonts": ["inter"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "material-3": {
       "compatibility": ["checking"],
@@ -1485,7 +1718,11 @@
       "variations": [],
       "extras": ["material"],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "material-flat": {
       "compatibility": ["checking", "collection"],
@@ -1494,7 +1731,8 @@
       "variations": [],
       "extras": ["material"],
       "fixes": [],
-      "fonts": ["roboto", "roboto-mono"]
+      "fonts": ["roboto", "roboto-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "material-gruvbox": {
       "compatibility": ["checking", "collection"],
@@ -1503,7 +1741,8 @@
       "variations": [],
       "extras": ["material"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "material-ocean": {
       "compatibility": ["checking"],
@@ -1512,7 +1751,8 @@
       "variations": [],
       "extras": ["hide-toggle", "material"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "meridian": {
       "compatibility": ["checking"],
@@ -1521,7 +1761,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "micro-mike": {
       "compatibility": ["checking", "collection"],
@@ -1530,7 +1771,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "midnight-fjord": {
       "compatibility": ["checking"],
@@ -1539,7 +1781,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["finlandica"]
+      "fonts": ["finlandica"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "midnight": {
       "compatibility": ["checking"],
@@ -1548,7 +1791,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "minimal-dark-coder": {
       "compatibility": ["checking"],
@@ -1557,7 +1801,8 @@
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "minimal-dracula": {
       "compatibility": ["checking"],
@@ -1566,7 +1811,11 @@
       "variations": [],
       "extras": ["minimal"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "minimal-edge": {
       "compatibility": ["checking", "collection"],
@@ -1575,7 +1824,8 @@
       "variations": [],
       "extras": ["minimal"],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "minimal-red": {
       "compatibility": ["checking"],
@@ -1584,7 +1834,8 @@
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fixes": [],
-      "fonts": ["geist"]
+      "fonts": ["geist"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "minimal-resources": {
       "compatibility": ["checking"],
@@ -1593,7 +1844,8 @@
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "minimal": {
       "compatibility": ["checking", "collection"],
@@ -1602,7 +1854,8 @@
       "variations": [],
       "extras": ["minimal"],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "minimalists-paradise": {
       "compatibility": ["checking", "collection"],
@@ -1611,7 +1864,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["fira-code"]
+      "fonts": ["fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mint-breeze": {
       "compatibility": ["checking"],
@@ -1620,7 +1874,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
+      "fonts": ["noto-sans-old-persian", "noto-serif-kr"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mistymauve": {
       "compatibility": ["checking"],
@@ -1629,7 +1884,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["arvo", "permanent-marker"]
+      "fonts": ["arvo", "permanent-marker"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "modern-genz-vibedose": {
       "compatibility": ["checking"],
@@ -1638,7 +1894,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jost", "satoshi", "syne", "jetbrains-mono"]
+      "fonts": ["jost", "satoshi", "syne", "jetbrains-mono"],
+      "license": {
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0"
+      }
     },
     "mono-high-contrast": {
       "compatibility": ["checking"],
@@ -1647,7 +1907,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["fira-code"]
+      "fonts": ["fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mono-black-monochrome-charcoal": {
       "compatibility": ["checking"],
@@ -1656,7 +1917,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "monochroyou": {
       "compatibility": ["checking"],
@@ -1665,7 +1927,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Mozilla Public License 2.0", "spdx_id": "MPL-2.0" }
     },
     "monokai": {
       "compatibility": ["checking"],
@@ -1674,7 +1937,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "moonlight": {
       "compatibility": ["checking"],
@@ -1683,7 +1950,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "mulled-wine": {
       "compatibility": ["checking"],
@@ -1692,7 +1960,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "muted-blue": {
       "compatibility": ["checking"],
@@ -1701,7 +1970,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "myst": {
       "compatibility": ["checking"],
@@ -1710,7 +1983,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["icons/material-symbols-outlined", "s-core-dream-3-light"]
+      "fonts": ["icons/material-symbols-outlined", "s-core-dream-3-light"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nebula": {
       "compatibility": ["checking"],
@@ -1719,7 +1993,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["montserrat"]
+      "fonts": ["montserrat"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "neo": {
       "compatibility": ["checking", "collection"],
@@ -1728,7 +2003,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "neon-synthwave": {
       "compatibility": ["checking"],
@@ -1737,7 +2013,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "neovim": {
       "compatibility": ["checking"],
@@ -1746,7 +2026,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "neuborder": {
       "compatibility": ["checking"],
@@ -1755,7 +2036,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "neumorphism": {
       "compatibility": ["checking"],
@@ -1764,7 +2046,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "neutral-academia": {
       "compatibility": ["checking"],
@@ -1773,7 +2056,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cormorant", "manrope"]
+      "fonts": ["cormorant", "manrope"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nier": {
       "compatibility": ["checking"],
@@ -1782,7 +2066,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nightfox": {
       "compatibility": ["checking"],
@@ -1791,7 +2076,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nightingale": {
       "compatibility": ["checking"],
@@ -1800,7 +2086,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["inconsolata", "noto-sans"]
+      "fonts": ["inconsolata", "noto-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nobb": {
       "compatibility": ["checking"],
@@ -1809,7 +2096,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "nordic": {
       "compatibility": ["checking", "collection"],
@@ -1818,7 +2109,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["deadhead-script", "gentium-book-basic", "norwester"]
+      "fonts": ["deadhead-script", "gentium-book-basic", "norwester"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "northern-sky": {
       "compatibility": ["checking"],
@@ -1827,7 +2122,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["finlandica"]
+      "fonts": ["finlandica"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "notation-2": {
       "compatibility": ["checking", "collection"],
@@ -1836,7 +2132,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lyons-serif", "ia-writer-duospace"]
+      "fonts": ["lyons-serif", "ia-writer-duospace"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "notation": {
       "compatibility": ["checking"],
@@ -1845,7 +2142,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["sf-mono"]
+      "fonts": ["sf-mono"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "notswift": {
       "compatibility": ["checking"],
@@ -1854,7 +2152,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["roboto", "sf-mono", "sf-pro-display"]
+      "fonts": ["roboto", "sf-mono", "sf-pro-display"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "novadust": {
       "compatibility": ["checking"],
@@ -1863,7 +2165,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidian-boom": {
       "compatibility": ["checking"],
@@ -1872,7 +2175,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "obsidian-gruvbox": {
       "compatibility": ["checking"],
@@ -1881,7 +2185,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidian-nord": {
       "compatibility": ["checking"],
@@ -1890,7 +2195,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidian_ia": {
       "compatibility": ["checking"],
@@ -1899,7 +2205,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-mono", "ia-writer-quattro"]
+      "fonts": ["ia-writer-mono", "ia-writer-quattro"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidian_vibrant": {
       "compatibility": ["checking"],
@@ -1908,7 +2215,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "obsidianite": {
       "compatibility": ["checking"],
@@ -1917,7 +2225,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["rubik", "space-mono"]
+      "fonts": ["rubik", "space-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidianotion": {
       "compatibility": ["checking", "collection"],
@@ -1926,7 +2235,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["fira-code", "ia-writer-quattro", "ibm-plex-sans"]
+      "fonts": ["fira-code", "ia-writer-quattro", "ibm-plex-sans"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "obuntu": {
       "compatibility": ["checking"],
@@ -1935,7 +2245,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "oistnb": {
       "compatibility": ["checking"],
@@ -1944,7 +2255,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "old-world": {
       "compatibility": ["checking"],
@@ -1953,7 +2265,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "oldsidian-purple": {
       "compatibility": ["checking"],
@@ -1962,7 +2275,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "oledblack": {
       "compatibility": ["checking"],
@@ -1971,7 +2285,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "oliviers-theme": {
       "compatibility": ["checking", "collection"],
@@ -1980,7 +2295,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ibm-plex-mono"]
+      "fonts": ["ibm-plex-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "onenice": {
       "compatibility": ["checking"],
@@ -1989,7 +2305,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "ono-sendai": {
       "compatibility": ["checking"],
@@ -1998,7 +2315,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cairo", "fira-code"]
+      "fonts": ["cairo", "fira-code"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "orange": {
       "compatibility": ["checking"],
@@ -2007,7 +2325,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "oreo": {
       "compatibility": ["checking", "collection"],
@@ -2016,7 +2335,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "origami": {
       "compatibility": ["checking", "collection"],
@@ -2025,7 +2348,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "origin": {
       "compatibility": ["checking", "collection"],
@@ -2034,7 +2358,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "overcast": {
       "compatibility": ["checking"],
@@ -2043,7 +2368,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pale": {
       "compatibility": ["checking"],
@@ -2052,7 +2378,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "panic-mode": {
       "compatibility": ["checking"],
@@ -2061,7 +2388,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["ia-writer-quattro-s", "monaco"]
+      "fonts": ["ia-writer-quattro-s", "monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "parfait": {
       "compatibility": ["checking"],
@@ -2070,7 +2398,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "penumbra": {
       "compatibility": ["checking"],
@@ -2079,7 +2408,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "perso": {
       "compatibility": ["checking"],
@@ -2088,7 +2418,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "phoenix": {
       "compatibility": ["checking"],
@@ -2097,7 +2428,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "sf-pro-display"]
+      "fonts": ["jetbrains-mono", "sf-pro-display"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pine-forest-berry": {
       "compatibility": ["checking"],
@@ -2106,7 +2438,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["inconsolata"]
+      "fonts": ["inconsolata"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pink-topaz": {
       "compatibility": ["checking"],
@@ -2115,7 +2448,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lucida-handwriting", "monaco"]
+      "fonts": ["lucida-handwriting", "monaco"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pisum": {
       "compatibility": ["checking"],
@@ -2124,7 +2458,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["monaco"]
+      "fonts": ["monaco"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "planetary": {
       "compatibility": ["checking"],
@@ -2133,7 +2468,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ibm-plex-sans"]
+      "fonts": ["ibm-plex-sans"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "playground": {
       "compatibility": ["checking"],
@@ -2142,7 +2481,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["bricolage-grotesque"]
+      "fonts": ["bricolage-grotesque"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pln": {
       "compatibility": ["checking", "collection"],
@@ -2151,7 +2491,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "poimandres": {
       "compatibility": ["checking"],
@@ -2160,7 +2504,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "polka": {
       "compatibility": ["checking", "collection"],
@@ -2169,7 +2514,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["rubik", "ibm-plex-mono"]
+      "fonts": ["rubik", "ibm-plex-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pomme-notes": {
       "compatibility": ["checking", "collection"],
@@ -2178,7 +2524,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "powered-by-lancer": {
       "compatibility": ["checking"],
@@ -2187,7 +2534,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["arimo", "anonymous-pro"]
+      "fonts": ["arimo", "anonymous-pro"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "primary": {
       "compatibility": ["checking", "collection"],
@@ -2196,7 +2544,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cascadia-code"]
+      "fonts": ["cascadia-code"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "prime": {
       "compatibility": ["checking", "collection"],
@@ -2205,7 +2557,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "prism": {
       "compatibility": ["checking", "collection"],
@@ -2214,7 +2570,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "source-sans-3"]
+      "fonts": ["jetbrains-mono", "source-sans-3"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "proper-dark": {
       "compatibility": ["checking"],
@@ -2223,7 +2580,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "protocolblue": {
       "compatibility": ["checking"],
@@ -2232,7 +2590,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "prussian-blue": {
       "compatibility": ["checking"],
@@ -2241,7 +2600,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "publisher": {
       "compatibility": ["checking"],
@@ -2250,7 +2610,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lato"]
+      "fonts": ["lato"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pure": {
       "compatibility": ["checking"],
@@ -2259,7 +2620,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "purple-aurora": {
       "compatibility": ["checking"],
@@ -2268,7 +2630,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "purple-owl": {
       "compatibility": ["checking"],
@@ -2277,7 +2640,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["monaspace-argon"]
+      "fonts": ["monaspace-argon"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "pxld": {
       "compatibility": ["checking", "collection"],
@@ -2286,7 +2650,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "qlean": {
       "compatibility": ["checking", "collection"],
@@ -2295,7 +2660,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-mono", "noto-sans-jp"]
+      "fonts": ["ia-writer-mono", "noto-sans-jp"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "quillcode": {
       "compatibility": ["checking"],
@@ -2304,7 +2670,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "red-graphite": {
       "compatibility": ["checking", "collection"],
@@ -2313,7 +2683,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "red-shadow": {
       "compatibility": ["checking"],
@@ -2322,7 +2693,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["fira-code", "montserrat"]
+      "fonts": ["fira-code", "montserrat"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "refined-default": {
       "compatibility": ["checking"],
@@ -2331,7 +2703,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "reshi": {
       "compatibility": ["checking"],
@@ -2340,7 +2713,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "noto-sans"]
+      "fonts": ["jetbrains-mono", "noto-sans"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "retro-windows": {
       "compatibility": ["checking"],
@@ -2349,7 +2726,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "retronotes": {
       "compatibility": ["checking", "collection"],
@@ -2358,7 +2736,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ibm-plex-mono"]
+      "fonts": ["ibm-plex-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "retroos-98": {
       "compatibility": ["checking"],
@@ -2367,7 +2746,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["libre-franklin"]
+      "fonts": ["libre-franklin"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "reverie": {
       "compatibility": ["checking"],
@@ -2376,7 +2756,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "rezin": {
       "compatibility": ["checking"],
@@ -2385,7 +2766,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ribbons": {
       "compatibility": ["checking", "collection"],
@@ -2394,7 +2776,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["icons/its"]
+      "fonts": ["icons/its"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "rift": {
       "compatibility": ["checking"],
@@ -2403,7 +2786,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "rmaki": {
       "compatibility": ["checking"],
@@ -2412,7 +2796,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["fira-code"]
+      "fonts": ["fira-code"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "rose-pine-moon": {
       "compatibility": ["checking"],
@@ -2421,7 +2809,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "rose-pine-2": {
       "compatibility": ["checking", "collection"],
@@ -2430,7 +2819,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "rose-pine": {
       "compatibility": ["checking"],
@@ -2439,7 +2829,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "rose-red": {
       "compatibility": ["checking"],
@@ -2448,7 +2839,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "royal-velvet": {
       "compatibility": ["checking", "collection"],
@@ -2457,7 +2852,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["fira-sans", "fira-code"]
+      "fonts": ["fira-sans", "fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sad-machine-druid": {
       "compatibility": ["checking"],
@@ -2466,7 +2862,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["hack"]
+      "fonts": ["hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sakurajima": {
       "compatibility": ["checking"],
@@ -2475,7 +2872,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "salem": {
       "compatibility": ["checking"],
@@ -2484,7 +2882,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "sanctum-reborn": {
       "compatibility": ["checking", "collection"],
@@ -2493,7 +2892,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["sf-mono"]
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sanctum": {
       "compatibility": ["checking", "collection"],
@@ -2502,7 +2902,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["sf-mono"]
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sandover": {
       "compatibility": ["checking", "collection"],
@@ -2511,7 +2912,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["special-elite"]
+      "fonts": ["special-elite"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sandstorm": {
       "compatibility": ["checking"],
@@ -2520,7 +2922,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["flow-circular"]
+      "fonts": ["flow-circular"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sanguine": {
       "compatibility": ["checking"],
@@ -2529,7 +2932,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["slasher-film"]
+      "fonts": ["slasher-film"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sea-glass": {
       "compatibility": ["checking"],
@@ -2538,7 +2942,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["euclid-circular-a", "hack"]
+      "fonts": ["euclid-circular-a", "hack"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "seamless-view": {
       "compatibility": ["checking"],
@@ -2547,7 +2952,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sei": {
       "compatibility": ["checking", "collection"],
@@ -2556,7 +2962,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "serenity": {
       "compatibility": ["checking", "collection"],
@@ -2565,7 +2972,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"]
+      "fonts": ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "serif": {
       "compatibility": ["checking"],
@@ -2574,7 +2982,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0"
+      }
     },
     "serika": {
       "compatibility": ["checking"],
@@ -2583,7 +2995,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "shade-sanctuary": {
       "compatibility": ["checking", "collection"],
@@ -2592,7 +3008,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["computer-modern-bright", "jetbrains-mono"]
+      "fonts": ["computer-modern-bright", "jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "shadeflow": {
       "compatibility": ["checking"],
@@ -2601,7 +3018,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["geist", "geist-mono"]
+      "fonts": ["geist", "geist-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "shiba-inu": {
       "compatibility": ["checking", "collection"],
@@ -2610,7 +3028,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "shimmering-focus": {
       "compatibility": ["checking", "collection"],
@@ -2625,7 +3044,8 @@
         "optima",
         "recursive",
         "icons/material-icons"
-      ]
+      ],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "simple-color": {
       "compatibility": ["checking"],
@@ -2634,7 +3054,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "simple": {
       "compatibility": ["checking", "collection"],
@@ -2643,7 +3064,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-quattro", "fira-code", "ibm-plex-sans"]
+      "fonts": ["ia-writer-quattro", "fira-code", "ibm-plex-sans"],
+      "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "simplicity": {
       "compatibility": ["checking", "collection"],
@@ -2652,7 +3074,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "simply-colorful": {
       "compatibility": ["checking", "collection"],
@@ -2661,7 +3084,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sodalite": {
       "compatibility": ["checking"],
@@ -2670,7 +3094,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "solarized": {
       "compatibility": ["checking"],
@@ -2679,7 +3104,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "soli-deo-gloria": {
       "compatibility": ["checking"],
@@ -2688,7 +3114,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cormorant", "germania-one"]
+      "fonts": ["cormorant", "germania-one"],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "solitude": {
       "compatibility": ["checking", "collection"],
@@ -2697,7 +3124,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["fira-code"]
+      "fonts": ["fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "soloing": {
       "compatibility": ["checking"],
@@ -2706,7 +3134,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "soothe": {
       "compatibility": ["checking"],
@@ -2715,7 +3144,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "space": {
       "compatibility": ["checking", "collection"],
@@ -2724,7 +3154,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["bai-jamjuree", "orbitron", "unbounded"]
+      "fonts": ["bai-jamjuree", "orbitron", "unbounded"],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "sparkling-day": {
       "compatibility": ["checking"],
@@ -2733,7 +3164,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sparkling-night": {
       "compatibility": ["checking"],
@@ -2742,7 +3174,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sparkling-wisdom": {
       "compatibility": ["checking"],
@@ -2751,7 +3184,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["flow-circular", "open-sans"]
+      "fonts": ["flow-circular", "open-sans"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "spectrum-blue": {
       "compatibility": ["checking", "collection"],
@@ -2760,7 +3194,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "roboto"]
+      "fonts": ["jetbrains-mono", "roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "spectrumplus": {
       "compatibility": ["checking"],
@@ -2769,7 +3204,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "spectrum": {
       "compatibility": ["checking"],
@@ -2778,7 +3214,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "spring": {
       "compatibility": ["checking"],
@@ -2787,7 +3224,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["apercu-pro"]
+      "fonts": ["apercu-pro"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sqdthone": {
       "compatibility": ["checking", "collection"],
@@ -2796,7 +3234,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cascadia-code", "source-sans-pro"]
+      "fonts": ["cascadia-code", "source-sans-pro"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "strict": {
       "compatibility": ["checking"],
@@ -2805,7 +3247,11 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0"
+      }
     },
     "subtlegold": {
       "compatibility": ["checking"],
@@ -2814,7 +3260,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["flow-circular", "sf-mono"]
+      "fonts": ["flow-circular", "sf-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "suddha": {
       "compatibility": ["checking"],
@@ -2823,7 +3270,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["monaco", "roboto"]
+      "fonts": ["monaco", "roboto"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "sunbather": {
       "compatibility": ["checking"],
@@ -2832,7 +3280,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["roboto"]
+      "fonts": ["roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "synthwave-84": {
       "compatibility": ["checking"],
@@ -2841,7 +3290,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "synthwave": {
       "compatibility": ["checking"],
@@ -2850,7 +3300,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "terminal": {
       "compatibility": ["checking", "collection"],
@@ -2859,7 +3310,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["fira-code"]
+      "fonts": ["fira-code"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "terminal2k": {
       "compatibility": ["checking"],
@@ -2868,7 +3320,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "terraflow": {
       "compatibility": ["checking"],
@@ -2877,7 +3330,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "theme-that-shall-not-be-named": {
       "compatibility": ["checking"],
@@ -2886,7 +3340,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "things-3": {
       "compatibility": ["checking"],
@@ -2895,7 +3350,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["formular"]
+      "fonts": ["formular"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "things": {
       "compatibility": ["checking", "collection"],
@@ -2904,7 +3360,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "roboto"]
+      "fonts": ["jetbrains-mono", "roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "tiniri": {
       "compatibility": ["checking"],
@@ -2913,7 +3370,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "tokyo-night-storm": {
       "compatibility": ["checking"],
@@ -2922,7 +3380,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["anonymous-pro", "jetbrains-mono"]
+      "fonts": ["anonymous-pro", "jetbrains-mono"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "tokyo-night": {
       "compatibility": ["partial", "collection"],
@@ -2931,7 +3390,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono"]
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "tomorrow-night-bright": {
       "compatibility": ["checking"],
@@ -2940,7 +3400,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
     },
     "tomorrow": {
       "compatibility": ["checking"],
@@ -2949,7 +3410,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "toms-theme": {
       "compatibility": ["checking"],
@@ -2958,7 +3420,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "trace-labs": {
       "compatibility": ["checking"],
@@ -2967,7 +3430,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "transient": {
       "compatibility": ["checking"],
@@ -2976,7 +3440,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "transparent": {
       "compatibility": ["checking"],
@@ -2985,7 +3450,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "typewriter": {
       "compatibility": ["checking", "collection"],
@@ -2994,7 +3463,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"]
+      "fonts": ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "typomagical": {
       "compatibility": ["checking", "collection"],
@@ -3003,7 +3476,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["alegreya", "amiri", "bitter", "playfair-display", "spectral"]
+      "fonts": ["alegreya", "amiri", "bitter", "playfair-display", "spectral"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "typora-vue": {
       "compatibility": ["checking"],
@@ -3012,7 +3489,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ukiyo": {
       "compatibility": ["removed", "collection"],
@@ -3021,7 +3499,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["cmu-typewriter-text", "jetbrains-mono"]
+      "fonts": ["cmu-typewriter-text", "jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ultra-lobster": {
       "compatibility": ["checking", "collection"],
@@ -3030,7 +3509,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["nightingale", "monaspace-neon"]
+      "fonts": ["nightingale", "monaspace-neon"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "underwater": {
       "compatibility": ["checking", "collection"],
@@ -3039,7 +3519,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["lexend"]
+      "fonts": ["lexend"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ursa": {
       "compatibility": ["checking"],
@@ -3048,7 +3529,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "vanilla-amoled-color": {
       "compatibility": ["checking"],
@@ -3057,7 +3539,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "ISC License", "spdx_id": "ISC" }
     },
     "vanilla-amoled": {
       "compatibility": ["checking"],
@@ -3066,7 +3549,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "ISC License", "spdx_id": "ISC" }
     },
     "vanilla-palettes": {
       "compatibility": ["checking", "collection"],
@@ -3075,7 +3559,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "vauxhall": {
       "compatibility": ["checking", "collection"],
@@ -3084,7 +3569,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "velvet-moon": {
       "compatibility": ["checking"],
@@ -3093,7 +3579,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["finlandica"]
+      "fonts": ["finlandica"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "venom": {
       "compatibility": ["checking"],
@@ -3102,7 +3589,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "vercel-geist": {
       "compatibility": ["checking", "collection"],
@@ -3111,7 +3599,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["geist", "geist-mono"]
+      "fonts": ["geist", "geist-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "vesper": {
       "compatibility": ["checking"],
@@ -3120,7 +3609,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "vibrant": {
       "compatibility": ["checking"],
@@ -3129,7 +3619,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "vicious": {
       "compatibility": ["checking", "collection"],
@@ -3138,7 +3629,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "violet-evening": {
       "compatibility": ["checking"],
@@ -3147,7 +3639,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "virgo": {
       "compatibility": ["checking"],
@@ -3156,7 +3649,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "vortex": {
       "compatibility": ["checking"],
@@ -3165,7 +3659,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["rubik"]
+      "fonts": ["rubik"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "w95": {
       "compatibility": ["checking", "collection"],
@@ -3174,7 +3669,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wasp": {
       "compatibility": ["checking"],
@@ -3183,7 +3679,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "wikipedia": {
       "compatibility": ["checking", "collection"],
@@ -3192,7 +3689,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["archivo", "linux-libertine"]
+      "fonts": ["archivo", "linux-libertine"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wilcoxone": {
       "compatibility": ["checking"],
@@ -3201,7 +3699,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["lato", "fira-code"]
+      "fonts": ["lato", "fira-code"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "willemstad": {
       "compatibility": ["checking", "collection"],
@@ -3216,7 +3715,11 @@
         "dm-sans",
         "manrope",
         "icons/remixicon"
-      ]
+      ],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "winter-spices": {
       "compatibility": ["checking"],
@@ -3225,7 +3728,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["myriad-apple"]
+      "fonts": ["myriad-apple"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wiselight": {
       "compatibility": ["checking"],
@@ -3234,7 +3738,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["karla", "open-sans"]
+      "fonts": ["karla", "open-sans"],
+      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
     "wombat": {
       "compatibility": ["checking"],
@@ -3243,7 +3748,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wy-console": {
       "compatibility": ["partial"],
@@ -3252,7 +3758,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["audiowide", "dotgothic16"]
+      "fonts": ["audiowide", "dotgothic16"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wyrd": {
       "compatibility": ["checking"],
@@ -3261,7 +3768,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["architects-daughter", "neucha", "space-mono"]
+      "fonts": ["architects-daughter", "neucha", "space-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "yue": {
       "compatibility": ["checking", "collection"],
@@ -3270,7 +3778,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "roboto"]
+      "fonts": ["jetbrains-mono", "roboto"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "zario": {
       "compatibility": ["checking"],
@@ -3279,7 +3788,11 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": ["jetbrains-mono", "roboto"]
+      "fonts": ["jetbrains-mono", "roboto"],
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "zen": {
       "compatibility": ["checking"],
@@ -3288,7 +3801,8 @@
       "variations": [],
       "extras": [],
       "fixes": [],
-      "fonts": []
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "zenburn": {
       "compatibility": ["checking"],
@@ -3297,7 +3811,8 @@
       "variations": [],
       "extras": ["hide-toggle"],
       "fixes": [],
-      "fonts": ["inconsolata"]
+      "fonts": ["inconsolata"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     }
   }
 }

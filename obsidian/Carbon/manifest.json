@@ -4,5 +4,9 @@
   "minAppVersion": "1.0.0",
   "author": "V.H. Belvadi",
   "authorUrl": "https://vhbelvadi.com",
-  "fundingUrl": "https://buymeacoffee.com/vhbelvadi"
+  "fundingUrl": "https://buymeacoffee.com/vhbelvadi",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }

@@ -3,5 +3,9 @@
   "version": "0.3.4",
   "minAppVersion": "1.1.9",
   "author": "ABDO",
-  "authorUrl": "https://github.com/x0aa7i"
+  "authorUrl": "https://github.com/x0aa7i",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

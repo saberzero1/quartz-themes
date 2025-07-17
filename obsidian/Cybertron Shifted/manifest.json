@@ -3,5 +3,9 @@
   "version": "0.0.3",
   "minAppVersion": "0.0.3",
   "author": "JorgEdmundo",
-  "authorUrl": "https://github.com/JorgEdmundo"
+  "authorUrl": "https://github.com/JorgEdmundo",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

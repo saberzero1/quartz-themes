@@ -3,5 +3,9 @@
   "version": "1.4.0",
   "minAppVersion": "1.5.8",
   "author": "Nato",
-  "authorUrl": "https://github.com/natowb"
+  "authorUrl": "https://github.com/natowb",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }

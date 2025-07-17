@@ -4,5 +4,9 @@
   "minAppVersion": "1.0.0",
   "author": "eliz-abeth",
   "authorUrl": "https://github.com/eliz-abeth",
-  "fundingUrl": "http://ko-fi.com/eliz0beth"
+  "fundingUrl": "http://ko-fi.com/eliz0beth",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

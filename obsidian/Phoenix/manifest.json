@@ -3,5 +3,9 @@
   "version": "2.2.10",
   "minAppVersion": "1.0.0",
   "author": "RyzenFromFire",
-  "authorUrl": "https://github.com/RyzenFromFire"
+  "authorUrl": "https://github.com/RyzenFromFire",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

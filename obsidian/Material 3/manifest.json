@@ -3,5 +3,9 @@
   "version": "1.9.1",
   "minAppVersion": "1.0.0",
   "author": "HarmfulBreeze",
-  "authorUrl": "https://github.com/HarmfulBreeze"
+  "authorUrl": "https://github.com/HarmfulBreeze",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }
