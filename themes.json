@@ -311,7 +311,11 @@
         "noto-color-emoji",
         "noto-emoji",
         "nunito-sans"
-      ]
+      ],
+      "license": {
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0"
+      }
     },
     "black": {
       "compatibility": ["checking"],
@@ -512,7 +516,8 @@
         "ibm-plex-sans",
         "linux-libertine",
         "icons/noto-sans-symbols-2"
-      ]
+      ],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "christmas": {
       "compatibility": ["checking"],

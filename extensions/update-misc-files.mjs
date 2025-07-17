@@ -29,24 +29,24 @@ export default function updateMiscFiles(manifestCollection) {
   const compatibilityTableLines = [];
   const themeList = [];
   manifestCollection.forEach((manifest) => {
-    themeList.push(getTheme(manifest, "name"));
+    themeList.push({ theme: getTheme(manifest, "name"), name: manifest.name });
   });
   themeList.sort();
   themeList.forEach((themeName) => {
-    const mode = isFullTheme(themeName)
+    const mode = isFullTheme(themeName.theme)
       ? "both"
-      : isDarkTheme(themeName)
+      : isDarkTheme(themeName.theme)
         ? "dark"
         : "light";
-    const compatibilityArray = themes[themeName]["compatibility"];
-    const license = themes[themeName]["license"]["spdx_id"];
-    const licenseString = `<svg src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/>`;
+    const compatibilityArray = themes[themeName.theme]["compatibility"];
+    const license = themes[themeName.theme]["license"]["spdx_id"];
+    const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><svg src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
     let compatibilityString = "";
     compatibilityArray.forEach((compatibility) => {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
     });
     compatibilityTableLines.push(
-      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName}/syntax) | ${licenseString} |`,
+      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName.theme}/syntax) | ${licenseString} |`,
     );
   });
 
