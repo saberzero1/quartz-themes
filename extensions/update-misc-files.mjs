@@ -47,7 +47,7 @@ export default function updateMiscFiles(manifestCollection) {
         : "light";
     const compatibilityArray = themes[themeName.theme]["compatibility"];
     const license = themes[themeName.theme]["license"]["spdx_id"];
-    const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><svg src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
+    const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
     let compatibilityString = "";
     compatibilityArray.forEach((compatibility) => {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
