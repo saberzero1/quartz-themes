@@ -1123,7 +1123,10 @@
         "playfair-display",
         "walter-turncoat"
       ],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0"
+      }
     },
     "fastppuccin": {
       "compatibility": ["checking", "collection"],
@@ -1527,7 +1530,7 @@
       "extras": [],
       "fixes": [],
       "fonts": ["cascadia-mono"],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kurokula": {
       "compatibility": ["checking"],
@@ -2326,7 +2329,7 @@
       "extras": [],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "oreo": {
       "compatibility": ["checking", "collection"],
@@ -2591,7 +2594,7 @@
       "extras": ["hide-toggle"],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "BSD 3-Clause License", "spdx_id": "BSD 3-Clause" }
     },
     "prussian-blue": {
       "compatibility": ["checking"],
@@ -2601,7 +2604,7 @@
       "extras": ["hide-toggle"],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "BSD 3-Clause License", "spdx_id": "BSD 3-Clause" }
     },
     "publisher": {
       "compatibility": ["checking"],
@@ -2787,7 +2790,7 @@
       "extras": ["hide-toggle"],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "Joke License", "spdx_id": "Joke License" }
     },
     "rmaki": {
       "compatibility": ["checking"],
@@ -3115,7 +3118,10 @@
       "extras": [],
       "fixes": [],
       "fonts": ["cormorant", "germania-one"],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": {
+        "name": "Attribution-ShareAlike 4.0 International",
+        "spdx_id": "CC BY-SA 4.0"
+      }
     },
     "solitude": {
       "compatibility": ["checking", "collection"],
@@ -3155,7 +3161,7 @@
       "extras": ["hide-toggle"],
       "fixes": [],
       "fonts": ["bai-jamjuree", "orbitron", "unbounded"],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sparkling-day": {
       "compatibility": ["checking"],
@@ -3401,7 +3407,7 @@
       "extras": ["hide-toggle"],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "tomorrow": {
       "compatibility": ["checking"],
