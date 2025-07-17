@@ -5,5 +5,9 @@
   "version": "0.1.4",
   "minAppVersion": "0.12.0",
   "theme": true,
-  "isDesktopOnly": false
+  "isDesktopOnly": false,
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

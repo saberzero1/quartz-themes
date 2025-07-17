@@ -2,5 +2,9 @@
   "name": "Powered by Lancer",
   "version": "1.0.0",
   "minAppVersion": "0.0.1",
-  "author": "Dion McMillan"
+  "author": "Dion McMillan",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

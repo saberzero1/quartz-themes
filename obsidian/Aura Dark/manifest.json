@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "author": "ProbablyNot",
-  "authorUrl": "https://github.com/Possibly-Matt/obsidian-aura-theme"
+  "authorUrl": "https://github.com/Possibly-Matt/obsidian-aura-theme",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

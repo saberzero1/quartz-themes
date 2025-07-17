@@ -26,6 +26,9 @@ jobs:
         run: |
           GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" node ./extensions/fetch-licenses.mjs --token
 
+      - name: "Format"
+        run: prettier . --check --write --cache
+
       - name: "Push Themes"
         run: |
           git config --local user.name 'Quartz Themes Bot'

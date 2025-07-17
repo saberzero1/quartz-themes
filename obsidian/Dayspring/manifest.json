@@ -3,5 +3,9 @@
   "version": "1.1.1",
   "minAppVersion": "1.0.0",
   "author": "Eric Rykwalder",
-  "authorUrl": "https://github.com/erykwalder"
+  "authorUrl": "https://github.com/erykwalder",
+  "license": {
+    "name": "Creative Commons Zero v1.0 Universal",
+    "spdx_id": "CC0-1.0"
+  }
 }

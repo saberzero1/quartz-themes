@@ -2,5 +2,9 @@
   "name": "Atom",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "kognise"
+  "author": "kognise",
+  "license": {
+    "name": "The Unlicense",
+    "spdx_id": "Unlicense"
+  }
 }

@@ -2,5 +2,9 @@
   "name": "Moonlight",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "karz"
+  "author": "karz",
+  "license": {
+    "name": "No License Found",
+    "spdx_id": "No SPDX ID Found"
+  }
 }

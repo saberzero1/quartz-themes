@@ -3,5 +3,9 @@
   "version": "21.8.0",
   "minAppVersion": "1.1.0",
   "author": "Bernardo Pires",
-  "authorUrl": "https://www.github.com/drbap"
+  "authorUrl": "https://www.github.com/drbap",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

@@ -3,5 +3,9 @@
   "version": "1.0.4",
   "minAppVersion": "1.4.12",
   "author": "Behrouze",
-  "authorUrl": "https://blog.behrouze.com"
+  "authorUrl": "https://blog.behrouze.com",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

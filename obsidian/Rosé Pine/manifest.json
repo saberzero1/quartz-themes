@@ -3,5 +3,9 @@
   "version": "2.0.0",
   "minAppVersion": "1.0.0",
   "author": "Simon Späti",
-  "authorUrl": "https://ssp.sh"
+  "authorUrl": "https://ssp.sh",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

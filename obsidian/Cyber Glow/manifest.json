@@ -3,5 +3,9 @@
   "version": "2.0.6",
   "minAppVersion": "1.3.0",
   "author": "TheEmperorArt",
-  "authorUrl": "https://github.com/ArtexJay/Obsidian-CyberGlow"
+  "authorUrl": "https://github.com/ArtexJay/Obsidian-CyberGlow",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

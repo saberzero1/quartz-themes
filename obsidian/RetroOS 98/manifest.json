@@ -3,5 +3,9 @@
   "version": "0.0.1",
   "minAppVersion": "1.3.0",
   "author": "ThePharaohArt",
-  "authorUrl": "https://github.com/ThePharaohArt/"
+  "authorUrl": "https://github.com/ThePharaohArt/",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

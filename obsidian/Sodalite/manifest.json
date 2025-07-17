@@ -3,5 +3,9 @@
   "version": "0.8.4",
   "minAppVersion": "1.0.0",
   "author": "tomzorz",
-  "authorUrl": "https://twitter.com/tomzorz_"
+  "authorUrl": "https://twitter.com/tomzorz_",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

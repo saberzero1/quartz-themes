@@ -3,5 +3,9 @@
   "minAppVersion": "1.6.0",
   "author": "Ashwin Jadhav",
   "authorUrl": "https://github.com/ashwinjadhav818/",
-  "version": "2.3.3"
+  "version": "2.3.3",
+  "license": {
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0"
+  }
 }

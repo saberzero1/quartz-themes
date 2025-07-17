@@ -2,5 +2,9 @@
   "name": "Dracula for Obsidian",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "jarodise"
+  "author": "jarodise",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

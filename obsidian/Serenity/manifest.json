@@ -3,5 +3,9 @@
   "version": "2.1.0",
   "minAppVersion": "1.0.0",
   "author": "Ha'ani Whitlock",
-  "authorUrl": "https://github.com/Bluemoondragon07"
+  "authorUrl": "https://github.com/Bluemoondragon07",
+  "license": {
+    "name": "The Unlicense",
+    "spdx_id": "Unlicense"
+  }
 }

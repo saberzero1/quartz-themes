@@ -3,5 +3,9 @@
   "version": "0.2.0",
   "minAppVersion": "0.16.0",
   "author": "insanum",
-  "authorUrl": "https://insanum.com"
+  "authorUrl": "https://insanum.com",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }
