@@ -1,0 +1,35 @@
+name: Update licenses
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch-licenses:
+    if: ${{ github.repository == 'saberzero1/quartz-themes' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: "Install npm dependencies"
+        run: npm ci
+
+      - name: "Fetch licenses"
+        run: |
+          GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" node ./extensions/fetch-licenses.mjs --token
+
+      - name: "Push Themes"
+        run: |
+          git config --local user.name 'Quartz Themes Bot'
+          git config --local user.email 'quartz-themes-bot@emilebangma.com'
+          git add .
+          git commit -m "chore: Updated Licenses" || exit 0
+          git push
