@@ -31,7 +31,14 @@ export default function updateMiscFiles(manifestCollection) {
   manifestCollection.forEach((manifest) => {
     themeList.push({ theme: getTheme(manifest, "name"), name: manifest.name });
   });
-  themeList.sort();
+  themeList.sort((a, b) => {
+    const aTheme = a.theme.toUpperCase();
+    const bTheme = b.theme.toUpperCase();
+
+    if (aTheme < bTheme) return -1;
+    if (aTheme > bTheme) return 1;
+    return 0;
+  });
   themeList.forEach((themeName) => {
     const mode = isFullTheme(themeName.theme)
       ? "both"
