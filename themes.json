@@ -2264,7 +2264,7 @@
       "extras": [],
       "fixes": [],
       "fonts": [],
-      "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+      "license": { "name": "Joke License", "spdx_id": "Joke License" }
     },
     "old-world": {
       "compatibility": ["checking"],
