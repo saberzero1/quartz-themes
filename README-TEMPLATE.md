@@ -19,6 +19,18 @@ Add goals:
  - Match styling as closely as possible (within reason)
 -->
 
+## Table of Contents
+
+- [Quartz Themes](#quartz-themes)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+    - [GitHub Actions (Recommended)](#github-actions-recommended)
+    - [Automatic install into Quartz repository](#automatic-install-into-quartz-repository)
+    - [Manual install](#manual-install)
+    - [Quartz Syncer](#quartz-syncer)
+  - [Supported Themes](#supported-themes)
+  - [Licenses](#licenses)
+
 ## Installation
 
 ### GitHub Actions (Recommended)
@@ -192,3 +204,11 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 Compatibility table is built from the settings in `themes.json`
 -->
 //COMPATIBILITY_TABLE
+
+## Licenses
+
+Quartz Themes is licensed under the [MIT License](LICENSE).
+
+The themes themselves are licensed under the same license as the respective Obsidian theme, which can be found in the individual theme directories. This is to ensure that the themes remain compatible with their original licenses and to respect the work of the original theme authors, while allowing users to use them in their Quartz repositories.
+
+An overview of the licenses per theme can be found in the [compatibility table above](#supported-themes). Please refer to the original theme repositories for more extensive information on their licenses.
