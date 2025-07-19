@@ -108,10 +108,13 @@ body {
   --code-size: inherit;
 
   --font-heading-theme: var(--font-text-theme);
-  --font-interface-theme: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
-  --font-monospace-theme: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --font-interface-theme:
+    Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+  --font-monospace-theme:
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
-  --font-text-theme: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+  --font-text-theme:
+    Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
   --font-text-size: 16px;
 
   --graph-node: var(--color-red);
@@ -638,13 +641,13 @@ mark.line {
 
 /* PRE */
 /* .markdown-rendered pre {
-	position: relative;
-	font-family: var(--font-monospace);
-	padding: 0;
-	min-height: 0;
-	background-color: transparent;
-	border-radius: 0;
-	overflow-x: auto;
+    position: relative;
+    font-family: var(--font-monospace);
+    padding: 0;
+    min-height: 0;
+    background-color: transparent;
+    border-radius: 0;
+    overflow-x: auto;
 } */
 
 /* SUPER/SUBSCRIPT */
@@ -755,8 +758,12 @@ table {
 }
 
 .pdf-findbar .mod-not-found {
-  --background-modifier-form-field: rgba(var(--background-modifier-error-rgb) / 0.1);
-  --background-modifier-border-focus: rgba(var(--background-modifier-error-rgb) / 0.6);
+  --background-modifier-form-field: rgba(
+    var(--background-modifier-error-rgb) / 0.1
+  );
+  --background-modifier-border-focus: rgba(
+    var(--background-modifier-error-rgb) / 0.6
+  );
 }
 
 .annotationLayer .mod-focused {

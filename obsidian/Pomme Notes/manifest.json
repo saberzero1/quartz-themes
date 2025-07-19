@@ -3,5 +3,9 @@
   "version": "1.4.2",
   "minAppVersion": "1.7.0",
   "author": "Denis Volkov",
-  "authorUrl": "https://medium.com/@paralloid"
+  "authorUrl": "https://medium.com/@paralloid",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

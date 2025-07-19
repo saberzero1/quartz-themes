@@ -1,19 +1,21 @@
 /*
-	Note to self:
-	- https://publish.obsidian.md/hub/CONTRIBUTING 
-	- https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/for+Theme+Designers
+    Note to self:
+    - https://publish.obsidian.md/hub/CONTRIBUTING 
+    - https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/for+Theme+Designers
 */
 
 /* Configuration */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 
 :root {
-  --default-font: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
+  --default-font:
+    "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
-  --font-monospace: "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;
+  --font-monospace:
+    "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;
 
   --fast: 0.1s;
   --medium: 0.2s;
@@ -152,7 +154,10 @@ li > ul {
 
 /* My actual styles */
 html {
-  accent-color: var(--color-5, auto); /* Apparently not supported by Electron yet? */
+  accent-color: var(
+    --color-5,
+    auto
+  ); /* Apparently not supported by Electron yet? */
 }
 
 hr,
@@ -247,8 +252,16 @@ button + button {
   padding: 0.25rem;
 }
 /* Show indentation guides for deep lists */
-.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-folder,
-.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-file {
+.nav-folder.mod-root
+  > .nav-folder-children
+  .nav-folder
+  .nav-folder-children
+  .nav-folder,
+.nav-folder.mod-root
+  > .nav-folder-children
+  .nav-folder
+  .nav-folder-children
+  .nav-file {
   border-left: 1px solid var(--color-3-alt);
 }
 
@@ -371,7 +384,9 @@ button + button {
   border-bottom: 0.5rem solid transparent;
 }
 
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-radius: 0 !important;
 }
 

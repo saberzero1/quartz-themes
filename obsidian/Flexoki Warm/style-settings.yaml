@@ -1,0 +1,51 @@
+name: Flexoki Warm
+id: flexoki-warm-theme-settings
+settings:
+  - id: flexoki-warm-light-theme-accent-override
+    title: Light Theme Accent Color
+    description: Select your preferred light theme accent color from the Flexoki palette. 'Native accent color' means the color from the Appearance settings.
+    type: variable-select
+    default: var(--accent-h), var(--accent-s), var(--accent-l)
+    options:
+      - label: Native accent color
+        value: var(--accent-h), var(--accent-s), var(--accent-l)
+      - label: Red
+        value: 3, 62%, 42.4%
+      - label: Orange
+        value: 22, 80%, 41%
+      - label: Yellow
+        value: 45, 99%, 34%
+      - label: Green
+        value: 73, 84%, 27%
+      - label: Cyan
+        value: 175, 57%, 33%
+      - label: Blue
+        value: 212, 68%, 39%
+      - label: Purple
+        value: 259, 42%, 43%
+      - label: Magenta
+        value: 326, 55%, 41%
+  - id: flexoki-warm-dark-theme-accent-override
+    title: Dark Theme Accent Color
+    description: Select your preferred dark theme accent color from the Flexoki palette. 'Native accent color' means the color from the Appearance settings.
+    type: variable-select
+    default: var(--accent-h), var(--accent-s), var(--accent-l)
+    options:
+      - label: Native accent color
+        value: var(--accent-h), var(--accent-s), var(--accent-l)
+      - label: Red
+        value: 5, 61%, 54%
+      - label: Orange
+        value: 23, 70%, 51%
+      - label: Yellow
+        value: 45, 82%, 45%
+      - label: Green
+        value: 72, 46%, 41%
+      - label: Cyan
+        value: 175, 49%, 45%
+      - label: Blue
+        value: 208, 49%, 50%
+      - label: Purple
+        value: 251, 40%, 64%
+      - label: Magenta
+        value: 329, 54%, 59%

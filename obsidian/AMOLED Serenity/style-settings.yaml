@@ -1,0 +1,136 @@
+name: AMOLED Serenity
+id: amoled-serenity-style
+settings:
+  - id: features
+    title: Features
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Pure AMOLED Background
+    description: Use pure black (#000000) for the background instead of dark gray.
+    id: pure-amoled-background
+    type: class-toggle
+    default: false
+  - id: typography
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Header Font
+    description: Select a custom font for headings (H1-H6).
+    id: header-font
+    type: variable-select
+    default: "Inter"
+    options:
+      - "Arial"
+      - "Inter"
+      - "Bricolage Grotesque"
+      - "Roboto"
+      - "Montserrat"
+  - title: Body Font
+    description: Select a custom font for body
+    id: body-font
+    type: variable-select
+    default: "Inter"
+    options:
+      - "Arial"
+      - "Inter"
+      - "Bricolage Grotesque"
+      - "Roboto"
+      - "Montserrat"
+  - title: Heading Colors
+    description: Customize the colors of your headings.
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-color
+    title: H1 Color
+    type: variable-color
+    format: hex
+    default: "#bf616a"
+  - id: h2-color
+    title: H2 Color
+    type: variable-color
+    format: hex
+    default: "#ebcb8b"
+  - id: h3-color
+    title: H3 Color
+    type: variable-color
+    format: hex
+    default: "#a3be8c"
+  - id: h4-color
+    title: H4 Color
+    type: variable-color
+    format: hex
+    default: "#b48ead"
+  - id: h5-color
+    title: H5 Color
+    type: variable-color
+    format: hex
+    default: "#8fbcbb"
+  - id: h6-color
+    title: H6 Color
+    type: variable-color
+    format: hex
+    default: "#81a1c1"
+  - title: Font Customization
+    description: Customize the font size and weight of headings.
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-size
+    title: H1 Font Size
+    type: variable-text
+    default: "2.2em"
+  - id: h2-size
+    title: H2 Font Size
+    type: variable-text
+    default: "1.8em"
+  - id: h3-size
+    title: H3 Font Size
+    type: variable-text
+    default: "1.5em"
+  - id: h4-size
+    title: H4 Font Size
+    type: variable-text
+    default: "1.3em"
+  - id: h5-size
+    title: H5 Font Size
+    type: variable-text
+    default: "1.1em"
+  - id: h6-size
+    title: H6 Font Size
+    type: variable-text
+    default: "1em"
+  - id: accent-colors
+    title: Accent Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: primary-accent
+    title: Primary Accent Color
+    description: The main accent color used for buttons, links, and highlights.
+    type: variable-color
+    format: hex
+    default: "#8fbcbb"
+  - id: secondary-accent
+    title: Secondary Accent Color
+    description: A secondary accent color for less prominent elements.
+    type: variable-color
+    format: hex
+    default: "#81a1c1"
+  - id: status-bar
+    title: Status Bar
+    type: heading
+    level: 2
+    collapsed: true
+  - id: status-bar-background
+    title: Status Bar Background
+    type: variable-color
+    format: hex
+    default: "#343434"
+  - id: status-bar-foreground
+    title: Status Bar Foreground
+    type: variable-color
+    format: hex
+    default: "#ffffff"

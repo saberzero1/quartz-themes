@@ -3,5 +3,9 @@
   "version": "1.0.9",
   "minAppVersion": "1.1.16",
   "author": "whereiswhere",
-  "authorUrl": "https://toablind.horse"
+  "authorUrl": "https://toablind.horse",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

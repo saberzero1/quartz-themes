@@ -1,0 +1,52 @@
+name: Red Graphite
+id: red-graphite
+settings:
+  - id: red-graphite-colors
+    title: Colors
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: red-graphite-base-color
+    title: Base Color
+    description: |
+      This sets the base color that many other colors are derived from.
+      Note that the light theme defaults to a contrast of darker side panels. Those darker panels are what you are changing here. However, with the dark theme, you will be adjusting the entire theme. Try some changes to see how it looks.
+    type: variable-themed-color
+    format: hsl-split
+    opacity: false
+    default-light: "#292C2E"
+    default-dark: "#1e232f"
+
+  - id: red-graphite-accent-color
+    title: Accent Color
+    description: In the light theme, this is the red highlight. In the dark theme, this is the yellow highlight. This can also be adjusted in the Appearance settings section, but changing it there will override this setting. You will have to reset that color for this one to work.
+    type: variable-themed-color
+    format: hsl-split
+    opacity: false
+    default-light: "#cb4c48"
+    default-dark: "#f6cd74"
+
+  - id: red-graphite-fonts
+    title: Fonts
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: red-graphite-interface-font
+    title: Interface font
+    description: Font used for the user interface
+    type: variable-text
+    default: "'Avenir'"
+
+  - id: red-graphite-text-font
+    title: Text font
+    description: Font used for text
+    type: variable-text
+    default: "'Avenir'"
+
+  - id: red-graphite-monospace-font
+    title: Monospace font
+    description: Font used for monospace text
+    type: variable-text
+    default: ""

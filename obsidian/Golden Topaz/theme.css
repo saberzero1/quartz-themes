@@ -319,12 +319,15 @@ to get a right-side note block
   --text-size-cloze: 0.9375em;
 
   /*font family*/
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-family-list: var(--font-default); /*列表字体*/
-  --font-family-major: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light",
-    sans-serif;
+  --font-family-major:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-family-h1: var(--font-text), var(--font-default);
   --font-family-h2: var(--font-text), var(--font-default);
   --font-family-h3: var(--font-text), var(--font-default);
@@ -332,16 +335,19 @@ to get a right-side note block
   --font-family-h5: var(--font-text), var(--font-default);
   --font-family-h6: var(--font-text), var(--font-default);
   --font-family-title: var(--font-text, var(--font-default)); /*文件抬头标题*/
-  --font-family-folder-file-title: var(--font-text-override), Arlrdbd, "Source Han Sans",
-    "Noto Sans CJK", "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
+  --font-family-folder-file-title:
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
+    "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
   --text-family-inline-code: "Consolas", "Monaco", monospace;
-  --font-family-tag: Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
+  --font-family-tag:
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji"; /*左侧库名字体*/
-  --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina",
-    cursive;
-  --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-family-special-tag:
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-family-YAML:
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
 }
 
@@ -706,7 +712,9 @@ to get a right-side note block
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-important:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-important:not(.cm-formatting-hashtag) {
   color: var(--stag1);
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -723,7 +731,9 @@ to get a right-side note block
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-complete:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-complete:not(.cm-formatting-hashtag) {
   color: var(--stag3);
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -740,7 +750,9 @@ to get a right-side note block
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
   color: var(--stag2);
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -761,7 +773,9 @@ to get a right-side note block
   content: " 🐈";
   font-size: 25px;
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
   color: #277cdd;
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -775,7 +789,9 @@ to get a right-side note block
   content: " 🥑";
   font-size: 25px;
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
   color: #419aff;
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -789,7 +805,9 @@ to get a right-side note block
   content: " ❓";
   font-size: 25px;
 }
-.cm-s-obsidian .CodeMirror-line span.cm-tag-questions:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-questions:not(.cm-formatting-hashtag) {
   color: #8555df;
   font-family: var(--font-family-special-tag);
   font-weight: 600;
@@ -1149,7 +1167,9 @@ input.search-input {
 }
 
 /*==== separators =====*/
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+.workspace-split.mod-root
+  .workspace-split.mod-vertical
+  .workspace-leaf-content {
   padding-right: 0px;
 }
 .workspace-leaf-resize-handle {
@@ -1302,14 +1322,22 @@ span.cm-formatting-task.cm-property {
   color: var(--text-accent);
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-meta,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task.cm-meta,
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task.cm-property {
   color: transparent;
   position: relative;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-meta:after,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property:after {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task.cm-meta:after,
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task.cm-property:after {
   content: "☐";
   position: absolute;
   top: 2px;
@@ -1318,7 +1346,9 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-pr
   font-size: 23px;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property:after {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-task.cm-property:after {
   content: "☑";
   color: var(--text-accent) !important;
 }
@@ -1511,7 +1541,9 @@ mjx-container[jax="CHTML"] {
 
 .theme-dark .cm-s-obsidian pre.HyperMD-codeblock,
 .theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.theme-dark
+  .cm-s-obsidian
+  span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .theme-dark .markdown-preview-view code {
   color: #e48900;
   font-size: var(--font-size-edit-code) !important;
@@ -1750,7 +1782,11 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #f55454;
-  background-image: linear-gradient(120deg, #11a0ff 0%, #f0d040 100%) !important;
+  background-image: linear-gradient(
+    120deg,
+    #11a0ff 0%,
+    #f0d040 100%
+  ) !important;
   /* adapted from Obsidianite*/
 
   /*background-color: var(--background-secondary-alt);
@@ -1786,7 +1822,10 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   color: var(--text-accent);
 }
 
-.theme-dark div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
+.theme-dark
+  div.CodeMirror-activeline
+  .CodeMirror-line
+  span.cm-formatting.cm-formatting-em.cm-em {
   opacity: 1;
   color: var(--text-orange);
 }
@@ -1807,7 +1846,10 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   color: var(--orange);
 }
 
-.theme-light div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
+.theme-light
+  div.CodeMirror-activeline
+  .CodeMirror-line
+  span.cm-formatting.cm-formatting-em.cm-em {
   opacity: 1;
   color: var(--orange);
 }
@@ -1820,7 +1862,10 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   color: var(--orange);
 }
 
-.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace
+  > .workspace-split
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   border: none;
 }
 
@@ -2404,12 +2449,16 @@ pre[class~="language-txt"]:before {
   padding: 0 5px;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-header {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting.cm-formatting-header {
   font-size: 12px;
   opacity: 0.5;
 }
 
-div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-header {
+div.CodeMirror-activeline
+  .CodeMirror-line
+  span.cm-formatting.cm-formatting-header {
   font-size: 12px;
   opacity: 1;
 }
@@ -2650,7 +2699,7 @@ span.cm-formatting-task {
   bottom: 0;
   transform: translateY(-50%);
   z-index: 200;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=");
+  background-image: url("data:image/svg+xml,base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=");
 }
 
 /*file explorer columns view : slightly buggy ----*/
@@ -2794,7 +2843,10 @@ span.cm-formatting-task {
   width: 7px;
 }
 
-.backlink-pane .search-result-container .tree-item.search-result.is-collapsed .collapse-icon {
+.backlink-pane
+  .search-result-container
+  .tree-item.search-result.is-collapsed
+  .collapse-icon {
   transform: translateX(1px) translateY(1px) rotate(-90deg);
   opacity: 0.5;
 }
@@ -3000,12 +3052,14 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 }
 
 /* list collaspe icon */
-.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon {
+.markdown-preview-view
+  .list-collapse-indicator.collapse-indicator.collapse-icon {
   margin-top: 0px;
   transition: transform 20ms linear 0s;
 }
 
-.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+.markdown-preview-view
+  .list-collapse-indicator.collapse-indicator.collapse-icon::before {
   content: "↓";
   font-size: 14px;
   margin-left: -11px;
@@ -3014,7 +3068,9 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
   transition: transform 10ms linear 0s;
 }
 
-.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon svg {
+.markdown-preview-view
+  .list-collapse-indicator.collapse-indicator.collapse-icon
+  svg {
   display: none;
   color: var(--accent-strong);
   height: 7px;
@@ -3154,7 +3210,10 @@ div > .HyperMD-quote:active {
 /* from Notation by death_au  https://github.com/deathau/Notation-for-Obsidian */
 /* Original idea from: https://gist.github.com/mklepaczewski/54e451f09994b9d450de81c8baaf8aa4 */
 /* but also with simpler classes so you can use `<span class='colour'>` as well */
-.app-container .markdown-preview-view pre[class*="language-note-"] code[class*="language-note-"] {
+.app-container
+  .markdown-preview-view
+  pre[class*="language-note-"]
+  code[class*="language-note-"] {
   white-space: pre-wrap !important;
 }
 
@@ -3248,53 +3307,83 @@ pre.language-note-imp::before {
   background-color: transparent;
 }
 
-.app-container .markdown-preview-view pre.language-note-gray code.language-note-gray,
+.app-container
+  .markdown-preview-view
+  pre.language-note-gray
+  code.language-note-gray,
 .gray {
   color: var(--text-gray);
 }
 
-.app-container .markdown-preview-view pre.language-note-brown code.language-note-brown,
+.app-container
+  .markdown-preview-view
+  pre.language-note-brown
+  code.language-note-brown,
 .brown {
   color: var(--text-brown);
 }
 
-.app-container .markdown-preview-view pre.language-note-orange code.language-note-orange,
+.app-container
+  .markdown-preview-view
+  pre.language-note-orange
+  code.language-note-orange,
 .orange {
   color: var(--text-orange);
 }
 
-.app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
+.app-container
+  .markdown-preview-view
+  pre.language-note-yellow
+  code.language-note-yellow,
 .yellow {
   color: var(--text-yellow);
 }
 
-.app-container .markdown-preview-view pre.language-note-green code.language-note-green,
+.app-container
+  .markdown-preview-view
+  pre.language-note-green
+  code.language-note-green,
 .green {
   color: var(--text-green);
 }
 
-.app-container .markdown-preview-view pre.language-note-blue code.language-note-blue,
+.app-container
+  .markdown-preview-view
+  pre.language-note-blue
+  code.language-note-blue,
 .blue {
   color: var(--text-blue);
 }
 
-.app-container .markdown-preview-view pre.language-note-purple code.language-note-purple,
+.app-container
+  .markdown-preview-view
+  pre.language-note-purple
+  code.language-note-purple,
 .purple {
   color: var(--text-purple);
 }
 
-.app-container .markdown-preview-view pre.language-note-pink code.language-note-pink,
+.app-container
+  .markdown-preview-view
+  pre.language-note-pink
+  code.language-note-pink,
 .pink {
   color: var(--text-pink);
 }
 
-.app-container .markdown-preview-view pre.language-note-red code.language-note-red,
+.app-container
+  .markdown-preview-view
+  pre.language-note-red
+  code.language-note-red,
 .red {
   color: var(--text-red);
 }
 
 /* cloze */
-.app-container .markdown-preview-view pre.language-note-cloze code.language-note-cloze,
+.app-container
+  .markdown-preview-view
+  pre.language-note-cloze
+  code.language-note-cloze,
 .cloze {
   color: var(--text-normal);
   background-color: var(--text-normal);
@@ -4186,7 +4275,10 @@ body.plugin-sliding-panes .view-header-icon {
   margin-left: -1px !important;
 }
 
-body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header-title {
+body.plugin-sliding-panes
+  .mod-root
+  .workspace-leaf.mod-active
+  .view-header-title {
   color: var(--header-color);
   font-family: var(--font-family-title);
   padding-top: 4px;
@@ -4474,7 +4566,7 @@ pre.frontmatter.language-yaml:before {
 /*not word now*/
 /*
 img[src$="#tape"]::before {
-  content: "";
+  content: '';
   display: block;
   width: 100px;
   height: 30px;
@@ -4527,7 +4619,7 @@ div[src$="#pin"] {
 }
 
 div[src$="#pin"]::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 5px;
   height: 5px;
@@ -4570,7 +4662,7 @@ div[alt="-sbq"] {
 }
 
 div[alt="-sbq"]::after {
-  content: "";
+  content: '';
   display: block;
   height: 32px;
   width: 2px;
@@ -4818,7 +4910,7 @@ div {
       }
 
       div[alt*="+tape"]::before {
-          content: "";
+          content: '';
           display: block;
           position: relative;
           margin: auto;
@@ -4867,7 +4959,7 @@ div {
           -ms-transform: rotate(0deg);
           transform: rotate(2deg);}
       div[alt*="+pin"]::before {
-          content: "";
+          content: '';
           position: absolute;
           width: 5px;
           height: 5px;
@@ -5396,7 +5488,9 @@ img[alt$="inlR"] {
 }
 .theme-dark .cm-s-obsidian pre.HyperMD-codeblock,
 .theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.theme-dark
+  .cm-s-obsidian
+  span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .theme-dark .markdown-preview-view code {
   color: #786b54;
   font-size: var(--font-size-edit-code) !important;

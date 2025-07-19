@@ -2,5 +2,9 @@
   "name": "Hipstersmoothie",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "Andrew Lisowski"
+  "author": "Andrew Lisowski",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

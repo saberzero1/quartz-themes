@@ -1,12 +1,20 @@
 import { themes } from "./../config.mjs"
 import {
-  splitCombinedRules,
-  combineIdenticalSelectors,
-  removeEmptyRules,
   getRuleDeclarations,
 } from "./postcss.mjs"
 import * as fs from "fs"
 import * as path from "path"
+
+/**
+ * Checks if a string ends with any of the provided endings.
+ * @param {string[]} endings - An array of possible endings to check against.
+ * @return {boolean} True if the string ends with any of the provided endings, false otherwise.
+ */
+export function endsWithAnyOf(endings) {
+  const str = this.toString()
+  // Check if the string ends with any of the provided endings
+  return endings.some((ending) => str.endsWith(ending))
+}
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
@@ -78,6 +86,30 @@ export function getCurrentFolder() {
 }
 
 /**
+ * Retrieves the variations of a theme from the themes configuration.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {Object[]} An array of variations for the specified theme.
+ */
+export function getVariationsFromTheme(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["variations"]
+}
+
+/**
+ * Retrieves the names of variations for a specified theme.
+ *
+ * @param {string} theme - The name of the theme.
+ * @returns {string[]} An array of variation names for the specified theme.
+ */
+export function getVariationNamesFromTheme(theme) {
+  // Get the variations for the specified theme
+  const variations = getVariationsFromTheme(theme)
+
+  // Map the variations to their names
+  return variations.map((variation) => variation.name)
+}
+
+/**
  * Retrieves the value associated with a given key in a dictionary.
  *
  * @param {Object} dictionary - The dictionary (JavaScript object) to search.
@@ -132,6 +164,50 @@ export function sanitizeFilenamePreservingEmojis(input) {
   sanitized = sanitized.replace(/-+$/gu, "")
 
   return sanitized
+}
+
+/**
+ * Removes all directories of a specified directory, but does not remove files within the root directory.
+ * This function is useful for clearing out a directory while preserving the root files.
+ *
+ * @param {string} dirPath - The path of the directory to clear.
+ * @throws {Error} If the directory cannot be accessed or if an error occurs during deletion.
+ */
+export function clearDirectories(dirPath) {
+  try {
+    // Read all items in the directory
+    const items = fs.readdirSync(dirPath)
+
+    // Iterate over each item and remove it if it's a directory
+    items.forEach((item) => {
+      const itemPath = path.join(dirPath, item)
+      const stats = fs.statSync(itemPath)
+
+      // Check if it's a directory
+      if (stats.isDirectory()) {
+        // Recursively remove the directory
+        clearDirectoryContents(itemPath)
+      }
+    })
+  } catch (error) {
+    throw new Error(`Unable to clear directory: ${error.message}`)
+  }
+}
+
+/**
+ * Recursively walks through a directory and yields all file paths.
+ * This function uses async iteration to handle large directories efficiently.
+ *
+ * @param {string} dir - The path of the directory to walk through.
+ * @returns {AsyncGenerator<string>} An async generator that yields file paths.
+ * @throws {Error} If the directory cannot be accessed or read.
+ */
+export async function* walk(dir) {
+    for await (const d of await fs.promises.opendir(dir)) {
+        const entry = path.join(dir, d.name);
+        if (d.isDirectory()) yield* walk(entry);
+        else if (d.isFile()) yield entry;
+    }
 }
 
 /**
@@ -297,6 +373,16 @@ export function getExtras(theme) {
 }
 
 /**
+ * Gets fixes for a specific game
+ *
+ * @param {string} theme theme name
+ * @returns {string[]} Array of fixes to install.
+ */
+export function getFixes(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["fixes"] || []
+}
+
+/**
  * Gets extra fonts for a specific game
  *
  * @param {string} theme theme name
@@ -381,10 +467,7 @@ export function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ru
 export function applyRuleToString(sourceString, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
   try {
     // Find the rule declarations for the specified selector
-    const ruleDeclarations =
-      ruleToExtract === ""
-        ? getRuleDeclarations(inputCSS, ruleSelector)
-        : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
+    const ruleDeclarations = getRuleOccurences(inputCSS, ruleSelector, ruleToExtract)
     if (ruleDeclarations) {
       // Apply the rule declarations to the specified file
       return replaceInString(sourceString, targetText, `${ruleDeclarations}\n\n`)
@@ -392,10 +475,24 @@ export function applyRuleToString(sourceString, ruleSelector, targetText, inputC
       throw new Error(`No declarations found for selector: ${ruleSelector}`)
     }
   } catch (error) {
-    throw new Error(`Unable to apply rule to file: ${error.message}`)
+    return replaceInString(sourceString, targetText, `/* Unable to apply rule: ${error.message} */`)
+    //throw new Error(`Unable to apply rule to file: ${error.message}`)
   }
 }
 
+/**
+ * Get all occurrences of a CSS rule in a given CSS string.
+ *
+ * @param {string} inputCSS - The CSS string to search for the rule.
+ * @param {string} ruleSelector - The CSS selector for the rule to be extracted.
+ * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
+ * @returns {string|null} A string containing all declarations for the specified rule selector.
+ */
+export function getRuleOccurences(inputCSS, ruleSelector, ruleToExtract = "") {
+  return ruleToExtract === ""
+    ? getRuleDeclarations(inputCSS, ruleSelector)
+    : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
+}
 
 /**
  * Get all files under a directory and return them as an array of strings.
@@ -473,4 +570,65 @@ export function generateFundingLinks(manifest) {
   }
 
   return "";
+}
+
+/**
+ * Cleans up CSS rules after running the PostCSS processor.
+ *
+  * @param {string} cssString - The CSS string to clean up.
+  * @returns {string} The cleaned CSS string with specific fixes applied.
+  */
+export function cleanRulesAfterRun(cssString) {
+  // Small fixes for `light-dark()` functions
+  const lightDarkHSL = /light-dark\((\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%)),(\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%))\)(?=$|;|,)/gms
+  const lightDarkRGB = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?)),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?))\)(?=$|;|,)/gms
+  const lightDarkRGBA = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?)\)(?=$|;|,)/gms
+  const lightDarkInherit = /light-dark\(((?:\s*?\w+\()?inherit(?:\))?),\s*?((?:\s*?\w+\()?inherit(?:\))?)\s*?\)(?=$|;|,)/gms
+  cssString = cssString.replaceAll(lightDarkHSL, "light-dark(hsl($1), hsl($2))")
+  cssString = cssString.replaceAll(lightDarkRGB, "light-dark(rgb($1), rgb($2))")
+  cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2))")
+  cssString = cssString.replaceAll(lightDarkInherit, "inherit")
+
+  return cssString
+}
+
+export function cleanup(cssString) {
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "light-dark(rgba($1, $2, $3, $7), rgba($4, $5, $6, $7))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})([\d\.]+,\s*)([\d\.\%]+)\)(?=$|;|,)/gms, "rgba($1$3)") // Fix rgba with more than 4 values
+  cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\)(?=$|;|,)/gms, "$1") // Fix hex colors in rgba
+  cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8})(?=$|;|,)/gms, "#$1") // Fix hex colors with more than 2 #
+  cssString = cssString.replaceAll(/rgba?\((light-dark\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix light-dark() in rgba
+  cssString = cssString.replaceAll(/rgba?\((rgba?\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix rgb(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix hsl(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?(?:,\s*?[\d\.\%]+\s*?)?\)(?=$|;|,)/gms, "inherit")
+  cssString = cssString.replaceAll(/rgba?\(\s*?(oklch\([^\)]+\)),\s*?([\d\.\%]+)\)(?=$|;|,)/gms, "color.change($1, \$alpha: $2)")
+  cssString = cssString.replaceAll(/rgb\(\s*?(oklch\([^\)]+\))\)(?=$|;|,)/gms, "color.change($1)")
+  cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?\#[\da-fA-F]{3,8}.*?)\);$/gm, "")
+  cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?calc\(.*?deg.*?\).*?)\);$/gm, "")
+  cssString = cssString.replaceAll(/^\s*?rgb\(light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)\)(?=$|;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:background-|border-)?color:|background:)\s*?)?)hsl\(light-dark\(([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+)\s*?\)\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $3, $5), hsl($2, $4, $6))") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
+
+  cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#l\)]+(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)(?=$|;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))(?:light-dark|hsl)\(\s*?(light-dark\([^\)]+\))\s*?\)\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))hsl\(\s*?light-dark\(\s*?(light-dark\([^\)]+\))\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/(?<=solid\s*?)light-dark\(\#[\da-fA-F]{3,8},\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?(?:light-dark\((\#[\da-fA-F]{3,8}),\s*?\#[\da-fA-F]{3,8}\)),\s*?(light-dark\((\#[\da-fA-F]{3,8}),\s*?\#[\da-fA-F]{3,8}\))\s*?\)(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\)),\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\))\s*?\)(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?(light-dark\([^\)]+\)),\s*?(light-dark\([^\)]+\))\s*?\)(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))rgba\(\s*?light-dark\(\s*?rgb\(([^\)]+)\),\s*?rgb\(([^\)]+)\)\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "light-dark(rgba($1, $3), rgba($2, $3))") // Fix light-dark(rgba) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))rgba\(\s*?light-dark\(rgb\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\),\s*?rgb\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "light-dark(rgba($1, $2, $3, $7), rgba($4, $5, $6, $7))") // Fix light-dark(rgb) with 6 values
+
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\),\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(hsl) with 6 values
+
+  cssString = cssString.replaceAll(/rgba?\(inherit\)/gms, "inherit") // Fix rgba(inherit) to inherit
+  cssString = cssString.replaceAll(/hsla\(hsl\((.*?)\),(.*?)\)/gms, "hsla($1, $2)") // Fix hsla(hsl(...)) to hsl(...)
+  cssString = cssString.replaceAll(/light-dark\(hsl\((.*?)\), hsl\((.*?)\),(.*?)\)/gms, "light-dark(hsla($1,$3), hsl($2,$3))") // Fix light-dark(hsl(...)) to hsl(...)
+  cssString = cssString.replaceAll(/rgba\((\d+) (\d+) (\d+), ([\d\.]+)\)/gms, "rgb($1, $2, $3, $4)") // Fix rgba to rgb
+
+  cssString = cssString.replaceAll("%%", "%") // Fix double percent signs
+
+  return cssString
 }

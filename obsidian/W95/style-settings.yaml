@@ -1,0 +1,73 @@
+name: W95 Display Properties
+id: w95-display-props
+settings:
+  - id: w95-display-props-font
+    title: Font
+    type: heading
+    level: 3
+  - id: font-ui-smaller
+    title: Smaller font size (px)
+    type: variable-number
+    default: 11
+    format: px
+  - id: font-ui-small
+    title: Small font size (px)
+    type: variable-number
+    default: 12
+    format: px
+  - id: font-ui-medium
+    title: Medium font size (px)
+    type: variable-number
+    default: 14
+    format: px
+  - id: font-ui-large
+    title: Large font size (px)
+    type: variable-number
+    default: 20
+    format: px
+  - id: w95-display-theme
+    title: Appearance
+    type: heading
+    level: 3
+  - id: w95-display-themes
+    title: Scheme
+    type: class-select
+    allowEmpty: false
+    default: w95-default
+    options:
+      - label: W95 Standard
+        value: w95-default
+      - label: Reactionary
+        value: w95-reactionary
+      - label: Brick
+        value: w95-scheme-brick
+      - label: Desert
+        value: w95-scheme-desert
+      - label: Eggplant
+        value: w95-scheme-eggplant
+      - label: Lilac
+        value: w95-scheme-lilac
+      - label: Maple
+        value: w95-scheme-maple
+      - label: Marine (high color)
+        value: w95-scheme-marine
+      - label: Mystery
+        value: w95-scheme-mystery
+      - label: Plum (high color)
+        value: w95-scheme-plum
+      - label: Pumpkin
+        value: w95-scheme-pumpkin
+      - label: Rainy Day
+        value: w95-scheme-rainy-day
+      - label: Rose
+        value: w95-scheme-rose
+      - label: Slate
+        value: w95-scheme-slate
+      - label: Spruce
+        value: w95-scheme-spruce
+      - label: Storm (VGA)
+        value: w95-scheme-storm
+      - label: Teal (VGA)
+        value: w95-scheme-teal
+      - label: Wheat
+        value: w95-scheme-wheat

@@ -209,7 +209,11 @@ body {
 
 /* change list line 3 to a solid square */
 .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
-.markdown-reading-view .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet:after {
+.markdown-reading-view
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet:after {
   height: 4px;
   width: 4px;
   background-color: var(--list-marker-color);

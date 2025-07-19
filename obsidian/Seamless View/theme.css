@@ -202,17 +202,38 @@ del {
 div:has(> p):has(+ div > :is(p)),
 div:has(> pre:not(.frontmatter)):has(+ div > :is(pre, blockquote, .callout)),
 div:has(> :is(ul, ol)):has(+ div > :is(p, blockquote, .callout)),
-div:has(> :is(blockquote, .callout)):has(+ div > :is(p, blockquote, .callout):not(.admonition)),
-div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(+ div > :is(h1, h2, h3, h4, h5, h6)),
-div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(
-    + .mod-footer
-  ) {
+div:has(> :is(blockquote, .callout)):has(
+    + div > :is(p, blockquote, .callout):not(.admonition)
+  ),
+div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(
+    + div > :is(h1, h2, h3, h4, h5, h6)
+  ),
+div:has(
+    > :is(
+        p,
+        ul,
+        ol,
+        pre,
+        blockquote,
+        .callout,
+        table,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6
+      )
+  ):has(+ .mod-footer) {
   margin-bottom: 1.5em;
 }
 
 /* remove the bottom-margin of the first line in read mode if it's before a heading */
 div:has(> :is(h1, h2, h3, h4, h5, h6)):has(+ .mod-footer):is(.is-collapsed),
-div:has(> :is(.inline-title, .frontmatter)):has(+ div > :is(h1, h2, h3, h4, h5, h6)) {
+div:has(> :is(.inline-title, .frontmatter)):has(
+    + div > :is(h1, h2, h3, h4, h5, h6)
+  ) {
   margin-bottom: 0;
 }
 
@@ -234,7 +255,9 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 }
 
 /* Move Vault menu to the top */
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--titlebar-background);
   padding: 5px var(--size-4-2);
   border-top: none;
@@ -242,7 +265,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 
 /* change Vault menu background on focus to match titlebar */
-body.is-focused:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body.is-focused:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--titlebar-background-focused);
 }
 
@@ -346,15 +371,21 @@ div:has(> .cm-hmd-frontmatter),
 }
 
 /* match live preview and read mode padding in canvas cards */
-.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view,
+.canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view,
 .markdown-source-view.mod-inside-iframe > .cm-editor > .cm-scroller {
   padding-right: calc(var(--canvas-space-x) - var(--scrollbar-width));
   padding-left: var(--canvas-space-x);
 }
 
 /* read mode canvas card blocks height above and bellow content */
-.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view::before,
-.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view::after {
+.canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view::before,
+.canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view::after {
   min-height: min(var(--canvas-node-height) * 0.1 - 3px, var(--canvas-space-y));
   max-height: var(--canvas-space-y);
 }
@@ -391,7 +422,10 @@ div:has(> .cm-hmd-frontmatter),
 /* hr margins in read to match the height in live preview mode */
 hr,
 .markdown-rendered hr {
-  margin: calc((var(--font-text-size) * var(--line-height-normal) - 0.125em) / 2) 0;
+  margin: calc(
+      (var(--font-text-size) * var(--line-height-normal) - 0.125em) / 2
+    )
+    0;
 }
 
 /* align read mode heading collapse indicator */
@@ -639,7 +673,7 @@ pre.language-jsx {
 
 /* change first column bold color to match header color in both modes */
 .markdown-rendered td:first-child {
-  --bold-color: inherent;
+  --bold-color: inherit;
 }
 
 /* match list bullet points inside tables in both modes */
@@ -762,11 +796,14 @@ span.lc-li-wrapper .inline-field {
 }
 
 /* lane title orientation when it is collapsed */
-.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper {
+.kanban-plugin__lane-wrapper.collapse-horizontal
+  .kanban-plugin__lane-header-wrapper {
   text-orientation: upright;
 }
-.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-title-text,
-.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-title-count {
+.kanban-plugin__lane-wrapper.collapse-horizontal
+  .kanban-plugin__lane-title-text,
+.kanban-plugin__lane-wrapper.collapse-horizontal
+  .kanban-plugin__lane-title-count {
   transform: none;
 }
 

@@ -34,7 +34,8 @@ body.classic-layout,
 }
 .card-board-column {
   background-color: var(--background-primary-alt);
-  border: var(--border-width) var(--line-style) var(--background-modifier-border);
+  border: var(--border-width) var(--line-style)
+    var(--background-modifier-border);
 }
 
 /* --- line style ---*/
@@ -144,7 +145,8 @@ body.classic-layout,
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
-  border: var(--border-width) var(--line-style) var(--background-modifier-border);
+  border: var(--border-width) var(--line-style)
+    var(--background-modifier-border);
 }
 
 .classic-layout .workspace-leaf-content,
@@ -178,14 +180,22 @@ body.classic-layout {
 }
 
 /* --- cards layout --- */
-.cards-layout .workspace-split.mod-horizontal.mod-left-split .workspace-leaf-content {
-  border: var(--border-width) var(--line-style) var(--background-modifier-border);
+.cards-layout
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-leaf-content {
+  border: var(--border-width) var(--line-style)
+    var(--background-modifier-border);
   box-shadow: none;
   background-color: var(--background-primary);
 }
 
-.cards-layout.classic-layout .workspace-split.mod-horizontal.mod-left-split .workspace-leaf-content,
-.cards-layout .is-mobile .workspace-split.mod-horizontal.mod-left-split .workspace-leaf-content {
+.cards-layout.classic-layout
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-leaf-content,
+.cards-layout
+  .is-mobile
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-leaf-content {
   border: none;
   box-shadow: none;
   background-color: var(--background-secondary);
@@ -198,7 +208,8 @@ body.classic-layout {
 }
 
 .classic-layout .workspace-ribbon::before {
-  border-bottom: var(--border-width) var(--line-style) var(--background-modifier-border) !important;
+  border-bottom: var(--border-width) var(--line-style)
+    var(--background-modifier-border) !important;
 }
 /* --- make line style effect sidebar --- */
 .workspace-ribbon {
@@ -219,7 +230,8 @@ body.classic-layout {
 
 /* --- window control buttons --- */
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right,
-.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+.is-hidden-frameless:not(.is-fullscreen).is-focused
+  .titlebar-button-container.mod-right {
   background-color: #3a2e2000;
 }
 .is-focused .titlebar-inner,
@@ -279,7 +291,8 @@ body {
 
 .classic-layout .workspace-tab-header-container,
 .is-mobile .workspace-tab-header-container {
-  border-bottom: var(--border-width) var(--line-style) var(--background-modifier-border);
+  border-bottom: var(--border-width) var(--line-style)
+    var(--background-modifier-border);
   margin-bottom: 0px;
 }
 
@@ -411,7 +424,9 @@ thead {
   border: 1px solid var(--background-modifier-border);
 }
 
-.wiki-page.markdown-preview-view .callout[data-callout*="info"] .callout-content {
+.wiki-page.markdown-preview-view
+  .callout[data-callout*="info"]
+  .callout-content {
   width: 100%;
   display: block;
   margin-left: auto;
@@ -444,7 +459,10 @@ thead {
   border-bottom: none !important;
 }
 
-.wiki-page.markdown-preview-view .callout[data-callout*="info"] .callout-icon .svg-icon {
+.wiki-page.markdown-preview-view
+  .callout[data-callout*="info"]
+  .callout-icon
+  .svg-icon {
   padding-right: 0.2em;
   width: 1.3em;
   height: 1.3em;
@@ -830,7 +848,11 @@ h1,
 }
 /* ----- colorful headings class */
 .colorful-headings {
-  --h1-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
+  --h1-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 10%)
+  );
   --h2-color: hsl(
     calc(var(--accent-h) + 40),
     calc(var(--accent-s) - 5%),
@@ -1047,7 +1069,7 @@ body {
   top: 0px;
   bottom: 0px;
   -webkit-mask-size: 100%;
-  -webkit-mask-image: url(<?xmlversion="1.0"?><svgdata-name="Capa 1"id="Capa_1"viewBox="0 0 20 19.84"xmlns="http://www.w3.org/2000/svg"><pathd="M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z"/></svg>);
+  -webkit-mask-image: url("<?xmlversion='1.0'?><svgdata-name='Capa 1'id='Capa_1'viewBox='0 0 20 19.84'xmlns='http://www.w3.org/2000/svg'><pathd='M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z'/></svg>");
 }
 .theme-anytype.checkbox-anytype input[type="checkbox"]:checked:after {
   background-color: #1eabeb;
@@ -1065,10 +1087,20 @@ body {
 /* ----- all themes ----- */
 
 .theme-light {
-  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --text-highlight-bg: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.2
+  );
 }
 .theme-dark {
-  --text-highlight-bg: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+  --text-highlight-bg: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.3
+  );
   --color-base-05: var(--color-base-20);
 }
 
@@ -1164,7 +1196,8 @@ body,
 }
 
 .theme-crystal {
-  --font-default: "IBM Plex Sans", "Yu Micho", "Franklin Gothic", "Lucida Sans", sans-serif;
+  --font-default:
+    "IBM Plex Sans", "Yu Micho", "Franklin Gothic", "Lucida Sans", sans-serif;
   --nav-item-color-active: var(--color-accent);
 }
 .theme-crystal .nav-folder.mod-root > .nav-folder-title {
@@ -1462,12 +1495,14 @@ body,
 
 /* ----- novelist theme + novel css class ----- */
 .theme-novelist {
-  --font-default: Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face",
+  --font-default:
+    Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face",
     "Book Antiqua", sans-serif;
 }
 .novel {
-  --font-text: Merriweather, "Libre Baskerville", Georgia, "Baskerville Old Face", "Book Antiqua",
-    Alice, "EB Garamond", sans-serif !important;
+  --font-text:
+    Merriweather, "Libre Baskerville", Georgia, "Baskerville Old Face",
+    "Book Antiqua", Alice, "EB Garamond", sans-serif !important;
   --inline-title-color: var(--text-normal);
 }
 .novel img {
@@ -1823,7 +1858,11 @@ body,
     calc(95% - calc(var(--accent-l) / 100))
   );
   --color-base-25: hsl(calc(0 + var(--accent-h)), 80%, 42%);
-  --color-base-30: hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%);
+  --color-base-30: hsl(
+    calc(0 + var(--accent-h)),
+    calc(var(--accent-s) - 55%),
+    89%
+  );
   --color-base-35: hsl(calc(0 + var(--accent-h)), 70%, 88%);
   --color-base-40: hsl(calc(0 + var(--accent-h)), 65%, 86%);
   --color-base-50: hsl(calc(0 + var(--accent-h)), 18%, 63%);
@@ -2525,8 +2564,9 @@ body,
   --accent-s: 77% !important;
   --accent-l: 51% !important;
   --callout-quote: 120, 119, 116;
-  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
-    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-default:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* - alternate colorful headings - */
@@ -2739,7 +2779,10 @@ body,
   clear: both;
   padding: 0.5rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  );
   grid-column-gap: 0.3rem;
   grid-row-gap: 0.3rem;
 }
@@ -2757,7 +2800,8 @@ body,
 }
 
 .cards table.dataview > tbody > tr:hover {
-  border: var(--cards-border-width) var(--line-style) var(--background-modifier-border-hover);
+  border: var(--cards-border-width) var(--line-style)
+    var(--background-modifier-border-hover);
   box-shadow:
     0 4px 6px 0px rgba(0, 0, 0, 0.05),
     0 1px 3px 1px rgba(0, 0, 0, 0.025);
@@ -2765,12 +2809,20 @@ body,
 }
 
 /* Styling elements inside cards */
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .trim-cols .cards table.dataview tbody > tr > td {
   white-space: normal;
 }
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6.cards
+  .dataview.table-view-table
+  > tbody
+  > tr
+  > td,
 .cards table.dataview tbody > tr > td {
   border-bottom: none;
   padding: 0 !important;
@@ -2953,11 +3005,11 @@ body,
   opacity: 0.25;
   background-position: center center;
   background-size: var(--icon-size);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="white"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
 }
 
 .theme-light .cards table.dataview thead:before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="black"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
 }
 
 .cards table.dataview thead:hover:before {
@@ -3061,7 +3113,11 @@ body,
 }
 
 .page-gallery__fallback:hover {
-  background: linear-gradient(to bottom right, var(--code-color), var(--background-secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--code-color),
+    var(--background-secondary)
+  );
   box-shadow: var(--shadow-s);
 }
 
@@ -3389,7 +3445,7 @@ settings:
     -
         id: border-radius-average
         title: Border Radius (Roundness)
-	    description: Adjust the roundness of the panes and other small elements (overriden with classic mode turned on)
+        description: Adjust the roundness of the panes and other small elements (overriden with classic mode turned on)
         type: variable-number-slider
         default: 11
         min: 0

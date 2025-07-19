@@ -1,0 +1,26 @@
+name: Garden Gnome
+id: garden-gnome
+settings:
+  - id: tweaks
+    title: Tweaks
+    type: heading
+    level: 1
+  - id: hide-window-buttons
+    title: Hide minimize and maximize buttons
+    type: class-toggle
+    default: true
+  - id: hide-only-tab
+    title: Hide single tab
+    title.es: Esconder pestaña única
+    description: Hides the tab when there is a single one
+    description.es: Esconde la pestaña cuando sólo hay una
+    type: class-select
+    allowEmpty: false
+    default: "hide-only-tab_interactive"
+    options:
+      - label: Full
+        value: "hide-only-tab_full"
+      - label: Interactive
+        value: "hide-only-tab_interactive"
+      - label: No
+        value: "hide-only-tab_none"

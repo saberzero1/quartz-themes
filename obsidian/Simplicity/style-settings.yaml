@@ -1,0 +1,279 @@
+name: Theme simplicity
+id: perso
+settings:
+  - id: credits
+    title: ⭐️ Credits
+    type: info-text
+    description: Made by @Thiews to be shared. Support my work at "[https://buymeacoffee.com/thiews](https://buymeacoffee.com/thiews)"
+    markdown: true
+  - id: logo
+    title: 1. Global customization (Title, Accent color, navigation panel)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: site-title
+    title: Your obsidian title
+    description: Put the title in quotation marks (see default parameter)
+    type: variable-text
+    default: '"OBSIDIAN"'
+  - id: accent
+    title: Accent color
+    type: variable-color
+    Description: Choose a the main color
+    format: hsl-split
+    default: "#41ACAC"
+  - id: theme-rounded
+    title: Activate rounded style
+    type: class-toggle
+  - id: other-active-tab
+    title: Activate other active tab for rounded style
+    type: class-toggle
+  - id: theme-black
+    title: Black background for dark theme
+    type: class-toggle
+  - id: line-height-value
+    title: Choose line height for body text
+    type: variable-number-slider
+    default: 2
+    min: 1
+    max: 4
+    step: 0.2
+    format: em
+  - id: file-line-width-value
+    title: Choose line width
+    type: variable-number-slider
+    default: 700
+    min: 500
+    max: 1600
+    step: 1
+    format: px
+  - id: navigation-ui
+    title: 2. Navigation UI customization
+    type: heading
+    level: 2
+    collapsed: true
+  - id: nav
+    title: Choose folder navigation panel style
+    type: class-select
+    allowEmpty: false
+    default: tab-header-1
+    options:
+      - classic
+      - nav-1
+      - nav-2
+  - id: trim
+    title: Don't show full file name
+    type: class-toggle
+  - id: new-note-button
+    title: Desactivate "New note" button
+    type: class-toggle
+  - id: show-nav-icon
+    title: Show icon file in navigation panel
+    type: class-toggle
+  - id: tab-header
+    title: Choose the tab header style
+    type: class-select
+    allowEmpty: false
+    default: tab-header-1
+    options:
+      - tab-header-1
+      - tab-header-2
+      - tab-header-3
+  - id: nav-folder-hue
+    title: Change folder icon and name color to bold and italic color accent
+    type: class-toggle
+  - id: focus
+    title: 3. Keep focus when writing
+    type: heading
+    level: 2
+    collapsed: true
+  - id: active-line
+    title: Focus on the active line when writing
+    type: class-toggle
+  - id: ribbon-off
+    title: Hide the left workspace ribbon
+    type: class-toggle
+  - id: tab-header-off
+    title: Hide the Tab header
+    type: class-toggle
+  - id: view-header-off
+    title: Hide the View header
+    type: class-toggle
+  - id: formatting-off
+    title: Hide formatting in writing mode (can be tricky!)
+    type: class-toggle
+  - id: headers
+    title: 4. Personnalize headers
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-accent-title
+    title: Titles in accent color
+    type: class-toggle
+  - id: title-underline
+    title: To underline titles
+    type: class-toggle
+  - id: font-title
+    title: Choose title font
+    type: variable-text
+    default: "Avenir Next Cyr"
+  - id: letter-spacing-title
+    title: Choose letter spacing for titles
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 10
+    step: 0.2
+    format: px
+  - id: h1-weight
+    title: Choose H1 font weight
+    type: variable-number-slider
+    default: 400
+    min: 300
+    max: 800
+    step: 100
+  - id: h1-size
+    title: Choose H1 font size
+    type: variable-number-slider
+    default: 2
+    min: 0.2
+    max: 6
+    step: 0.1
+    format: em
+  - id: h2-weight
+    title: Choose H2 font weight
+    type: variable-number-slider
+    default: 400
+    min: 300
+    max: 800
+    step: 100
+  - id: h2-size
+    title: Choose H2 font size
+    type: variable-number-slider
+    default: 1.5
+    min: 0.2
+    max: 6
+    step: 0.1
+    format: em
+  - id: h3-weight
+    title: Choose H3 font weight
+    type: variable-number-slider
+    default: 400
+    min: 300
+    max: 800
+    step: 100
+  - id: h3-size
+    title: Choose H3 font size
+    type: variable-number-slider
+    default: 1.2
+    min: 0.2
+    max: 6
+    step: 0.1
+    format: em
+  - id: h4-weight
+    title: Choose H4 font weight
+    type: variable-number-slider
+    default: 400
+    min: 300
+    max: 800
+    step: 100
+  - id: h4-size
+    title: Choose H4 font size
+    type: variable-number-slider
+    default: 1.1
+    min: 0.2
+    max: 6
+    step: 0.1
+    format: em
+  - id: pop
+    title: 5. Make pages pop (bold and italic accentuation, blockquotes, links)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: bold-italic
+    title: Personalize bold and italic
+    type: heading
+    level: 3
+    collapsed: true
+  - id: bold-italic-accent
+    title: Bold and italic accentuation
+    description: Make bold and italic pop with an other color
+    type: class-toggle
+  - id: hue-bold-italic
+    title: Bold and italic hue
+    description: Change the hue of the accent color (step -> 20 degrees)
+    type: variable-number-slider
+    default: 40
+    min: 0
+    max: 360
+    step: 20
+    format: deg
+  - id: links
+    title: Personalize links
+    type: heading
+    level: 3
+    collapsed: true
+  - id: icon-internal-link
+    title: Display icon for internal links
+    type: class-toggle
+  - id: not-colored-internal-link
+    title: Display links in normal text color
+    type: class-toggle
+  - id: link-italic
+    title: Display links in italic
+    type: class-toggle
+  - id: tags
+    title: Personalize tags
+    type: heading
+    level: 3
+    collapsed: true
+  - id: tag-background-transparent
+    title: Desactivate background color for tags
+    type: class-toggle
+  - id: checkbox
+    title: Personalize checkboxes
+    type: heading
+    level: 3
+    collapsed: true
+  - id: checklist-round
+    title: Display round checkboxes
+    type: class-toggle
+  - id: quote
+    title: Personalize quotes
+    type: heading
+    level: 3
+    collapsed: true
+  - id: quote-italic
+    title: Display quotes in italic
+    type: class-toggle
+  - id: quote-bigger
+    title: Display quotes with a bigger font size
+    type: class-toggle
+  - id: quote-border
+    title: Hide the quote left border
+    type: class-toggle
+  - id: quote-background
+    title: Show a colored background for quotes
+    type: class-toggle
+  - id: quote-serif
+    title: Display quotes with a serif font
+    type: class-toggle
+  - id: Images
+    title: Personalize images
+    type: heading
+    level: 3
+    collapsed: true
+  - id: image-radius
+    title: Display images with border radius
+    type: class-toggle
+  - id: zoom-off
+    title: Desactivate zoom of an image when clicking
+    type: class-toggle
+  - id: Extra
+    title: Extra
+    type: heading
+    level: 3
+    collapsed: true
+  - id: img-grid
+    title: Display a sequence of images as grid
+    type: class-toggle

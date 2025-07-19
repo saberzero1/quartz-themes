@@ -165,7 +165,8 @@ body {
   --mu-file-header-border-value: 1;
   --mu-file-header-border-width: calc(var(--mu-file-header-border-value) * 1px);
   --mu-file-header-border-color: #007fff20;
-  --file-header-border: var(--mu-file-header-border-width) solid var(--mu-file-header-border-color);
+  --file-header-border: var(--mu-file-header-border-width) solid
+    var(--mu-file-header-border-color);
   --file-header-justify: left;
 
   /* Relative font sizes */
@@ -647,10 +648,13 @@ body {
   --text-accent-hover: var(--color-accent-2);
 
   /* Font Settings */
-  --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
+  --mu-font-headings:
+    -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
-  --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+  --mu-font-mono:
+    "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New",
+    monospace;
   --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
   --mu-global-font-stylistic-set: normal;
   --mu-global-font-letter-spacing: normal;
@@ -689,14 +693,14 @@ body {
   --mu-line-highlight-border: transparent;
   --mu-line-highlight-background: transparent;
 
-  --mu-folder-icon-opened-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
-  --mu-folder-icon-closed-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
+  --mu-folder-icon-opened-default: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/></svg>");
+  --mu-folder-icon-closed-default: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/></svg>");
 
-  --mu-folder-icon-opened-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
-  --mu-folder-icon-opened-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>');
+  --mu-folder-icon-opened-unfilled: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/></svg>");
+  --mu-folder-icon-opened-op3: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/></svg>");
 
-  --mu-folder-icon-closed-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
-  --mu-folder-icon-closed-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M2 10h20"/></svg>');
+  --mu-folder-icon-closed-unfilled: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/></svg>");
+  --mu-folder-icon-closed-op3: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/><path d='M2 10h20'/></svg>");
 
   --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-default);
   --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-default);
@@ -707,11 +711,15 @@ body {
   --mu-reading-glow-radius-value: 1;
   --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
   --mu-reading-glow-border-size-value: 3;
-  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
+  --mu-reading-glow-border-size: calc(
+    var(--mu-reading-glow-border-size-value) * 1px
+  );
 
   --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
+  --mu-reading-indicator-width: calc(
+    var(--mu-reading-indicator-width-value-rem) * -1rem
+  );
 
   --mu-indent-color-level-1: #007fff7f;
   --mu-indent-color-level-2: #d372ff7f;
@@ -731,19 +739,25 @@ body {
   --mu-folder-area-background: #007fff10;
 
   --mu-stacked-mode-border-value: 1;
-  --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
+  --mu-stacked-mode-border-width: calc(
+    var(--mu-stacked-mode-border-value) * 1px
+  );
   --mu-stacked-mode-border-color: #0088ff;
   --mu-footnote-color: #f07f48;
 
   /* Inline title font size slider */
   --mu-inline-title-font-size-value: 0.88;
-  --mu-inline-title-font-size: calc(var(--mu-inline-title-font-size-value) * 1em);
+  --mu-inline-title-font-size: calc(
+    var(--mu-inline-title-font-size-value) * 1em
+  );
 
   /* Th Cards Layout */
   --cards-th-display: none;
   --mu-transparency-menus-level: 0.5;
   --mu-transparency-blur-level-value: 8;
-  --mu-transparency-blur-level: calc(var(--mu-transparency-blur-level-value) * 1px);
+  --mu-transparency-blur-level: calc(
+    var(--mu-transparency-blur-level-value) * 1px
+  );
 
   --mu-neon-mode-glow-value: 0.5;
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
@@ -751,10 +765,14 @@ body {
 
   /* MU Tables */
   --mu-table-outer-border-width-value: 2;
-  --mu-table-outer-border-width: calc(var(--mu-table-outer-border-width-value) * 1px);
+  --mu-table-outer-border-width: calc(
+    var(--mu-table-outer-border-width-value) * 1px
+  );
 
   --mu-table-inner-border-width-value: 0;
-  --mu-table-inner-border-width: calc(var(--mu-table-inner-border-width-value) * 1px);
+  --mu-table-inner-border-width: calc(
+    var(--mu-table-inner-border-width-value) * 1px
+  );
 
   --mu-table-th-background: #004882;
   --mu-table-th-foreground-edit: var(--mu-text-1);
@@ -772,7 +790,9 @@ body {
   --muc-icon-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffbf00' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
   --mu-default-mode-border-color: #0088ff;
   --mu-default-mode-border-value: 1;
-  --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
+  --mu-default-mode-border-width: calc(
+    var(--mu-default-mode-border-value) * 1px
+  );
 
   --mu-laser-top-value: 50;
   --mu-laser-top: calc(var(--mu-laser-top-value) * 1%);
@@ -785,9 +805,13 @@ body {
   --mu-hover-underline-color: #ff0000cf;
   --mu-hover-underline-style: solid;
   --mu-hover-underline-thickness-value: 2;
-  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value) * 1px);
+  --mu-hover-underline-thickness: calc(
+    var(--mu-hover-underline-thickness-value) * 1px
+  );
   --mu-hover-underline-offset-value: 2;
-  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value) * 1px);
+  --mu-hover-underline-offset: calc(
+    var(--mu-hover-underline-offset-value) * 1px
+  );
 
   --mu-amulet-hue: 224;
   --mu-amulet-sat-value: 50;
@@ -800,8 +824,12 @@ body {
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value) * 1px);
 
   --mu-scrollbar-thumb-size-value: 10;
-  --mu-scrollbar-thumb-size-adjusted-value: calc(12 - var(--mu-scrollbar-thumb-size-value));
-  --mu-scrollbar-thumb-size: calc(var(--mu-scrollbar-thumb-size-adjusted-value) * 1px);
+  --mu-scrollbar-thumb-size-adjusted-value: calc(
+    12 - var(--mu-scrollbar-thumb-size-value)
+  );
+  --mu-scrollbar-thumb-size: calc(
+    var(--mu-scrollbar-thumb-size-adjusted-value) * 1px
+  );
 
   --mu-scrollbar-track-bg: transparent;
   --mu-scrollbar-track-bg-hover: transparent;
@@ -889,7 +917,8 @@ body::before {
 }
 
 /* Files and folders */
-body:not(.mu-hide-folders) .nav-folder-title-content:not(:nth-child(1))::before {
+body:not(.mu-hide-folders)
+  .nav-folder-title-content:not(:nth-child(1))::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -908,12 +937,15 @@ body:not(.mu-hide-folders) .nav-folder-title-content:not(:nth-child(1))::before 
   color: var(--mu-folder-icon-color-active);
 }
 
-body:not(.mu-disable-folder-style) .nav-folder-title-content:not(:nth-child(1)) {
+body:not(.mu-disable-folder-style)
+  .nav-folder-title-content:not(:nth-child(1)) {
   font-weight: var(--font-semibold);
   color: var(--mu-folder-text-color);
 }
 
-body:not(.mu-hide-folders) .is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
+body:not(.mu-hide-folders)
+  .is-collapsed
+  .nav-folder-title-content:not(:nth-child(1))::before {
   mask-image: var(--mu-folder-icon-closed-selected);
   -webkit-mask-image: var(--mu-folder-icon-closed-selected);
   color: var(--mu-folder-icon-color);
@@ -935,16 +967,16 @@ body:not(.mu-hide-file-icons) .nav-file-title-content:before {
   background-color: currentColor;
   background-size: cover;
   background-repeat: no-repeat;
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>');
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>');
+  mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4'/></svg>");
   color: var(--mu-file-icon-color);
 }
 
 body:not(.mu-hide-file-icons)
   .tree-item-self[data-path*=".canvas"]
   .nav-file-title-content::before {
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>');
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>');
+  mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect width='7' height='9' x='3' y='3' rx='1'/><rect width='7' height='5' x='14' y='3' rx='1'/><rect width='7' height='9' x='14' y='12' rx='1'/><rect width='7' height='5' x='3' y='16' rx='1'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect width='7' height='9' x='3' y='3' rx='1'/><rect width='7' height='5' x='14' y='3' rx='1'/><rect width='7' height='9' x='14' y='12' rx='1'/><rect width='7' height='5' x='3' y='16' rx='1'/></svg>");
 }
 
 body.mu-folder-icon-opened-unfilled {
@@ -1067,7 +1099,10 @@ span.is-flashing {
   background-color: var(--background-modifier-hover);
 }
 
-.suggestion-item.mod-complex.search-suggest-item .suggestion-content > div > span:nth-child(1) {
+.suggestion-item.mod-complex.search-suggest-item
+  .suggestion-content
+  > div
+  > span:nth-child(1) {
   font-weight: var(--font-semibold);
   color: #0072d3;
 }
@@ -1147,10 +1182,18 @@ input[type="search"] {
   margin-left: var(--size-4-1);
 }
 
-.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.mod-left-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-left-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
   opacity: var(--icon-opacity-active);
   color: var(--mu-icon-focused) !important;
 }
@@ -1295,7 +1338,10 @@ button:not(
   color: #00a3ff;
 }
 
-.theme-dark .setting-item.setting-item-heading > .setting-item-info > .setting-item-name {
+.theme-dark
+  .setting-item.setting-item-heading
+  > .setting-item-info
+  > .setting-item-name {
   color: #00a3ff;
 }
 
@@ -1402,7 +1448,10 @@ input.slider {
   color: #0048f1;
 }
 
-.theme-light .setting-item.setting-item-heading > .setting-item-info > .setting-item-name {
+.theme-light
+  .setting-item.setting-item-heading
+  > .setting-item-info
+  > .setting-item-name {
   color: #0048f1;
 }
 
@@ -1413,7 +1462,8 @@ body:not(.disable-alt-checkboxes) li[data-task="!"] > p > input:checked,
 body:not(.disable-alt-checkboxes) input[data-task="?"]:checked,
 body:not(.disable-alt-checkboxes) li[data-task="?"] > input:checked,
 body:not(.disable-alt-checkboxes) li[data-task="?"] > p > input:checked,
-body:not(.disable-alt-checkboxes) input[type="checkbox"][data-task="-"]:checked::before,
+body:not(.disable-alt-checkboxes)
+  input[type="checkbox"][data-task="-"]:checked::before,
 body:not(.disable-alt-checkboxes) li[data-task="-"] > input:checked::before,
 body:not(.disable-alt-checkboxes) li[data-task="-"] > p > input:checked::before,
 body:not(.disable-alt-checkboxes) input[data-task="b"]:checked,
@@ -1958,7 +2008,6 @@ body:not(.disable-alt-checkboxes) li[data-task="m"] > p > input:checked::after {
 body:not(.disable-alt-checkboxes) input[data-task="t"]:checked::after,
 body:not(.disable-alt-checkboxes) li[data-task="t"] > input:checked::after,
 body:not(.disable-alt-checkboxes) li[data-task="t"] > p > input:checked::after {
-  content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cg%3E%3Crect x='159' y='1.32' width='195' height='511' fill='%23484848' style='paint-order:fill markers stroke'/%3E%3Ccircle cx='256' cy='256' r='210' fill='%23a3a3a3' /%3E%3Ccircle cx='256' cy='256' r='190' fill='%23cccccc' stroke='%23828282' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='22' style='paint-order:fill markers stroke'/%3E%3C/g%3E%3Cpath d='m458 216h38.6v83.5h-38.6z' fill='%23828282' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='69' style='paint-order:fill markers stroke'/%3E%3Cpath d='m271 260a15 15 0 0 1-15 15 15 15 0 0 1-15-15 15 15 0 0 1 15-15 15 15 0 0 1 15 15zm-13.9 11.8 4.28-176m-4.28 168 94.3 66.4' fill='%2300ff00' stroke='%23000000' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20' /%3E%3C/svg%3E");
   background: transparent;
   vertical-align: middle;
   position: absolute;
@@ -3212,12 +3261,14 @@ body:not(.disable-alt-checkboxes) li[data-task="G"] > p > input:checked::after {
 }
 
 .callout[data-callout="table"] table tr:not(:last-child) > td {
-  border-bottom: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
+  border-bottom: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background);
 }
 
 .callout[data-callout="table"] table th:not(:last-child) {
   padding: 4px 8px;
-  border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
+  border-right: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background);
 }
 
 .callout[data-callout="table"] table tr:hover {
@@ -3322,9 +3373,24 @@ body:not(.disable-alt-checkboxes) li[data-task="G"] > p > input:checked::after {
   cursor: pointer;
 }
 
-.markdown-reading-view .callout[data-callout="g-gray"] .callout-content > p > span img:active,
-.markdown-reading-view .callout[data-callout="g-black"] .callout-content > p > span img:active,
-.markdown-reading-view .callout[data-callout="g-white"] .callout-content > p > span img:active {
+.markdown-reading-view
+  .callout[data-callout="g-gray"]
+  .callout-content
+  > p
+  > span
+  img:active,
+.markdown-reading-view
+  .callout[data-callout="g-black"]
+  .callout-content
+  > p
+  > span
+  img:active,
+.markdown-reading-view
+  .callout[data-callout="g-white"]
+  .callout-content
+  > p
+  > span
+  img:active {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -3443,7 +3509,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"] > p > input:checked::after {
 }
 
 .workspace-tabs.mod-stacked .workspace-tab-header.mod-active {
-  border-left: var(--mu-stacked-mode-border-width) solid var(--mu-stacked-mode-border-color);
+  border-left: var(--mu-stacked-mode-border-width) solid
+    var(--mu-stacked-mode-border-color);
 }
 
 .workspace-tabs.mod-stacked .workspace-tab-header:not(.mod-active) {
@@ -3474,14 +3541,16 @@ body:not(.disable-alt-checkboxes) li[data-task="G"] > p > input:checked::after {
 .markdown-reading-view table tr:not(:last-child) > td,
 table tr:not(:last-child) > th,
 table tr:not(:last-child) > td {
-  border-bottom: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
+  border-bottom: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background);
 }
 
 .markdown-reading-view th:not(:last-child),
 .markdown-reading-view td:not(:last-child),
 th:not(:last-child),
 td:not(:last-child) {
-  border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background) !important;
+  border-right: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background) !important;
 }
 
 /* Table row hover */
@@ -3536,13 +3605,15 @@ body:not(.mu-disable-tr-hover) .cm-callout.cm-embed-block table th {
 
 .cm-callout.cm-embed-block table tr:not(:last-child) > th,
 .cm-callout.cm-embed-block table tr:not(:last-child) > td {
-  border-bottom: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
+  border-bottom: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background);
 }
 
 .cm-callout.cm-embed-block table th:not(:last-child),
 .cm-callout.cm-embed-block table td:not(:last-child) {
   padding: 4px 8px;
-  border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
+  border-right: var(--mu-table-inner-border-width) solid
+    var(--mu-table-th-background);
 }
 
 .cm-callout.cm-embed-block table {
@@ -3771,8 +3842,14 @@ table.calendar.svelte-pcimu8 th {
   color: var(--mu-table-th-foreground-main);
 }
 
-.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) .cards td::before,
-.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) .cards th::before {
+.num-table
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
+  .cards
+  td::before,
+.num-table
+  .workspace-leaf-content:not([data-type="full-calendar-view"])
+  .cards
+  th::before {
   display: none;
 }
 
@@ -4103,7 +4180,8 @@ body:not(.is-mobile) .workspace-ribbon.mod-left {
 /* Distraction-free mode */
 
 body:not(.is-mobile).mu-distraction-free-mode .workspace-tab-header-container,
-body:not(.is-mobile).mu-distraction-free-mode .titlebar-button-container.mod-right {
+body:not(.is-mobile).mu-distraction-free-mode
+  .titlebar-button-container.mod-right {
   display: none;
 }
 
@@ -4111,12 +4189,14 @@ body:not(.is-mobile).mu-distraction-free-mode .sidebar-toggle-button.mod-left {
   display: var(--ui-distraction-free-toggle-button);
 }
 
-body:not(.is-mobile).mu-distraction-free-mode .workspace-ribbon.side-dock-ribbon.mod-left {
+body:not(.is-mobile).mu-distraction-free-mode
+  .workspace-ribbon.side-dock-ribbon.mod-left {
   padding: 0;
   background: var(--ribbon-background);
 }
 
-body:not(.is-mobile).mu-distraction-free-mode .workspace-ribbon.side-dock-ribbon.mod-left:hover {
+body:not(.is-mobile).mu-distraction-free-mode
+  .workspace-ribbon.side-dock-ribbon.mod-left:hover {
   --ribbon-width: 44px;
   --ui-distraction-free-toggle-button: flex;
   padding: var(--ribbon-padding);
@@ -4138,18 +4218,23 @@ body.is-mobile.mu-total-concentration-mode .mobile-navbar {
   display: none;
 }
 
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   background-color: transparent;
 }
 
 /* Total concentration mode */
 
-body:not(.is-mobile).mu-total-concentration-mode .workspace-ribbon.side-dock-ribbon.mod-left,
-body:not(.is-mobile).mu-total-concentration-mode .sidebar-toggle-button.mod-left,
+body:not(.is-mobile).mu-total-concentration-mode
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+body:not(.is-mobile).mu-total-concentration-mode
+  .sidebar-toggle-button.mod-left,
 body:not(.is-mobile).mu-total-concentration-mode .status-bar,
 body:not(.is-mobile).mu-total-concentration-mode .view-header,
-body:not(.is-mobile).mu-total-concentration-mode .workspace-tab-header-container,
-body:not(.is-mobile).mu-total-concentration-mode .titlebar-button-container.mod-right {
+body:not(.is-mobile).mu-total-concentration-mode
+  .workspace-tab-header-container,
+body:not(.is-mobile).mu-total-concentration-mode
+  .titlebar-button-container.mod-right {
   display: none;
 }
 
@@ -4181,7 +4266,9 @@ body:not(.is-mobile) .nav-header {
   background-color: var(--mu-sidebar-top-buttons-container-bg-color);
 }
 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--mu-sidebar-bottom-vault-profile-bg-color);
 }
 
@@ -4266,8 +4353,12 @@ body:not(.is-mobile) .inline-title:hover {
 
 /* Reading mode */
 
-.markdown-reading-view > div > div > div:not(.mod-header, .obsidian-banner-wrapper):hover {
-  box-shadow: var(--mu-reading-indicator-width) 0 0 0 var(--mu-reading-indicator-color);
+.markdown-reading-view
+  > div
+  > div
+  > div:not(.mod-header, .obsidian-banner-wrapper):hover {
+  box-shadow: var(--mu-reading-indicator-width) 0 0 0
+    var(--mu-reading-indicator-color);
 }
 
 body:not(.mu-reading-glow-status-off)
@@ -4833,7 +4924,11 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
   --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 90%);
   --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 82%);
-  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 80%);
+  --mu-titlebar-background: hsl(
+    var(--mu-amulet-hue),
+    var(--mu-amulet-sat),
+    80%
+  );
   --mu-caret-color: #0072d3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
@@ -5171,19 +5266,22 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-dreams-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
     ),
-    linear-gradient(to bottom, #ff00ff48 0%, #000 100%), linear-gradient(to top, #0000ff88, #000);
+    linear-gradient(to bottom, #ff00ff48 0%, #000 100%),
+    linear-gradient(to top, #0000ff88, #000);
 }
 
 .theme-dark.magicuser-bg-slide-theme
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-slide-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5195,7 +5293,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-synth-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5209,7 +5308,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-night-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5221,7 +5321,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   .workspace-split:not(.mod-right-split, .mod-left-split)
   .view-content,
 .theme-dark.magicuser-bg-classic-theme .view-content > .canvas-wrapper {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       0deg,
       rgba(0, 0, 0, var(--mu-bg-image-overlay)),
       rgba(0, 0, 0, var(--mu-bg-image-overlay))
@@ -5294,7 +5395,9 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 }
 
 /* Sidebar adjustment - light mode */
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
   --mu-folder-text-color: #97bff1 !important;
   --mu-bg-search-results: #2f0f18;
 }
@@ -5304,7 +5407,9 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-moon-theme {
   --mu-bg-search-results: #001122;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
   --mu-folder-text-color: #a0ac82 !important;
   --mu-bg-search-results: #24281c;
 }
@@ -5319,27 +5424,37 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teal-theme {
   --mu-bg-search-results: #002828;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-purple-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-purple-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #330048;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-concentration-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-concentration-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #1b1b21;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-creativity-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-creativity-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #291522;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #28392f;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-stealth-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-stealth-theme {
   --mu-folder-text-color: #727272;
   --mu-bg-search-results: #181818;
   --mu-folder-area-background: #bfbfbf11;
@@ -5347,26 +5462,46 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-stealth-them
   --background-modifier-border: #282828;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-accent-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-accent-theme {
   --mu-folder-text-color: #979797;
   --mu-bg-search-results: #181818;
   --nav-collapse-icon-color: #484848;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
   --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
   --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
   --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #000;
 }
@@ -5414,7 +5549,8 @@ div.nav-files-container.node-insert-event
   > div.tree-item-children.nav-folder-children
   > div
   > div.tree-item-children.nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-2);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--mu-indent-color-level-2);
 }
 
 div.nav-files-container.node-insert-event
@@ -5426,21 +5562,8 @@ div.nav-files-container.node-insert-event
   > div.tree-item-children.nav-folder-children
   > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-3);
-}
-
-div.nav-files-container.node-insert-event
-  > div
-  > div.tree-item-children.nav-folder-children
-  > div
-  > div.tree-item-children.nav-folder-children
-  > div
-  > div.tree-item-children.nav-folder-children
-  > div.tree-item.nav-folder
-  > div.tree-item-children.nav-folder-children
-  > div.tree-item.nav-folder
-  > div.tree-item-children.nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-4);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--mu-indent-color-level-3);
 }
 
 div.nav-files-container.node-insert-event
@@ -5453,10 +5576,9 @@ div.nav-files-container.node-insert-event
   > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children
   > div.tree-item.nav-folder
-  > div.tree-item-children.nav-folder-children
-  > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-5);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--mu-indent-color-level-4);
 }
 
 div.nav-files-container.node-insert-event
@@ -5471,10 +5593,28 @@ div.nav-files-container.node-insert-event
   > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children
   > div.tree-item.nav-folder
+  > div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--mu-indent-color-level-5);
+}
+
+div.nav-files-container.node-insert-event
+  > div
+  > div.tree-item-children.nav-folder-children
+  > div
+  > div.tree-item-children.nav-folder-children
+  > div
+  > div.tree-item-children.nav-folder-children
+  > div.tree-item.nav-folder
+  > div.tree-item-children.nav-folder-children
+  > div.tree-item.nav-folder
+  > div.tree-item-children.nav-folder-children
+  > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children
   > div.tree-item.nav-folder
   > div.tree-item-children.nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-6);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--mu-indent-color-level-6);
 }
 
 .style-settings-heading[data-level="2"] + .style-settings-container {
@@ -5809,7 +5949,8 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
   --mu-special-folder-color: #000;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .workspace-leaf-content {
   background-color: var(--mu-dark-sidebar-color);
   --mu-sidebar-top-buttons-container-bg-color: transparent;
 }
@@ -5833,7 +5974,9 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
   --color-text-weeknum: #cfcfcf;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark table.calendar.svelte-pcimu8 th {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  table.calendar.svelte-pcimu8
+  th {
   color: #727272 !important;
 }
 
@@ -5842,38 +5985,58 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .reset-button {
   color: #727272 !important;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .workspace-leaf-content
+  .dropdown {
   color: #000;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown:hover {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .workspace-leaf-content
+  .dropdown:hover {
   color: #0072d3;
 }
 
-body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark
+body:not(
+    .mu-cards-interface,
+    .mu-automatic-rainbow-folders
+  ).theme-light.mu-sidebar-dark
   .workspace-leaf-content
   .tree-item-self.nav-file-title:not(.is-being-dragged),
-body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark
+body:not(
+    .mu-cards-interface,
+    .mu-automatic-rainbow-folders
+  ).theme-light.mu-sidebar-dark
   .workspace-leaf-content
   .tree-item-flair,
-body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark
+body:not(
+    .mu-cards-interface,
+    .mu-automatic-rainbow-folders
+  ).theme-light.mu-sidebar-dark
   .workspace-leaf-content
   .search-params
   .setting-item-name,
-body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark
+body:not(
+    .mu-cards-interface,
+    .mu-automatic-rainbow-folders
+  ).theme-light.mu-sidebar-dark
   .workspace-leaf-content
   .backlink-pane
   > .tree-item-self,
-body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).outgoing-link-pane > .tree-item-self {
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).outgoing-link-pane
+  > .tree-item-self {
   color: #bfbfbf !important;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .search-result-file-match {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .search-result-file-match {
   background-color: var(--mu-bg-search-results);
   color: #a3a3a3;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .embedded-backlinks .tree-item-inner {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .embedded-backlinks
+  .tree-item-inner {
   color: #000 !important;
 }
 
@@ -5891,7 +6054,8 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
   color: var(--text-on-accent);
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .search-result-file-match:hover {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark
+  .search-result-file-match:hover {
   background-color: hsla(var(--color-accent-hsl), 0.8) !important;
   color: var(--text-on-accent);
 }
@@ -6076,7 +6240,9 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="08"]:hover {
 }
 
 /* Automatic rainbow folders */
-body:not(.mu-cards-interface).theme-light.mu-automatic-rainbow-folders.mu-sidebar-dark
+body:not(
+    .mu-cards-interface
+  ).theme-light.mu-automatic-rainbow-folders.mu-sidebar-dark
   .workspace-leaf-content,
 body.mu-automatic-rainbow-folders {
   --mu-folder-icon-color: #000 !important;
@@ -6097,7 +6263,10 @@ body.mu-automatic-rainbow-folders {
   --nav-collapse-icon-color: #000;
 }
 
-body.mu-automatic-rainbow-folders .nav-files-container.node-insert-event > div > .nav-file {
+body.mu-automatic-rainbow-folders
+  .nav-files-container.node-insert-event
+  > div
+  > .nav-file {
   --mu-file-icon-color: var(--text-normal) !important;
   --mu-folder-text-color: var(--text-normal) !important;
   --nav-item-color: var(--text-normal) !important;
@@ -6190,146 +6359,167 @@ body.mu-automatic-folder-name-rainbow-colors
   --nav-item-background-selected: var(--text-normal);
 }
 
-body.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 1) {
+body.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 1) {
   --mu-folder-icon-color: var(--text-normal);
   --mu-file-icon-color: var(--text-normal);
   --mu-folder-text-color: var(--text-normal);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 2) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 2) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 3) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 3) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 4) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 4) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 5) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 5) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 6) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 6) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 7) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 7) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 8) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 8) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 9) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 9) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 10) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 10) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
 }
 
-body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 11) {
+body.theme-dark.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 11) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 2) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 2) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 3) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 3) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 4) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 4) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 5) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 5) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 6) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 6) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 7) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 7) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 8) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 8) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 9) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 9) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 10) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 10) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
   --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
 }
 
-body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n + 11) {
+body.theme-light.mu-automatic-folder-name-rainbow-colors
+  .tree-item.nav-folder:nth-child(10n + 11) {
   --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
   --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
   --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
@@ -6592,7 +6782,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h1-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h1-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h1-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6606,7 +6797,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h2-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h2-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h2-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6620,7 +6812,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h3-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h3-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h3-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6634,7 +6827,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h4-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h4-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h4-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6648,7 +6842,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h5-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h5-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h5-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6662,7 +6857,8 @@ body:is(.mu-neon-mode, .mu-outline-neon-mode).mu-underline-headings
   width: 100%;
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(var(--mu-neon-h6-color));
-  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity) rgba(var(--mu-neon-h6-color), 0.7);
+  box-shadow: 0 2px var(--mu-neon-mode-glow-intensity)
+    rgba(var(--mu-neon-h6-color), 0.7);
   margin-bottom: 4px;
 }
 
@@ -6675,7 +6871,10 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children {
   border-left: 1px solid var(--mu-indent-color-level-2);
 }
 
-div.view-content.node-insert-event .tree-item-children .tree-item-children .tree-item-children {
+div.view-content.node-insert-event
+  .tree-item-children
+  .tree-item-children
+  .tree-item-children {
   border-left: 1px solid var(--mu-indent-color-level-3);
 }
 
@@ -7151,7 +7350,9 @@ i.muc:hover > span > img {
 }
 
 /* MUC inside tables */
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable="false"]:has(i.muc) {
+.markdown-source-view.mod-cm6
+  .cm-content
+  > [contenteditable="false"]:has(i.muc) {
   contain: none !important;
 }
 
@@ -7230,7 +7431,9 @@ body.mu-automatic-rainbow-folders .view-header-breadcrumb:hover {
   margin-left: -4px;
 }
 
-body.mu-hide-tabs-icons .workspace-tabs.mod-stacked .workspace-tab-header-inner-icon,
+body.mu-hide-tabs-icons
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header-inner-icon,
 body.mu-hide-tabs-icons
   .workspace-split.mod-vertical.mod-root
   .workspace-tab-header-container
@@ -7240,21 +7443,29 @@ body.mu-hide-tabs-icons
 }
 
 /* Tabs */
-.workspace .mod-root .workspace-tab-header[data-type="markdown"] .workspace-tab-header-inner-icon,
-.workspace .mod-root .workspace-tab-header[data-type="empty"] .workspace-tab-header-inner-icon {
+.workspace
+  .mod-root
+  .workspace-tab-header[data-type="markdown"]
+  .workspace-tab-header-inner-icon,
+.workspace
+  .mod-root
+  .workspace-tab-header[data-type="empty"]
+  .workspace-tab-header-inner-icon {
   display: flex;
 }
 
 .workspace-split:not(.mod-right-split, .mod-left-split)
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header {
-  border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-titlebar-background);
 }
 
 .workspace-split:not(.mod-right-split, .mod-left-split)
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active {
-  border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-default-mode-border-color);
 }
 
 /* Tabs -> Square */
@@ -7275,7 +7486,8 @@ body.mu-hide-tabs-icons
   .workspace-tab-header {
   --tab-radius-active: 0;
   --tab-radius: 0;
-  border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-titlebar-background);
 }
 
 .mu-tabs-square
@@ -7284,7 +7496,8 @@ body.mu-hide-tabs-icons
   .workspace-tab-header.is-active {
   --tab-radius-active: 0;
   --tab-radius: 0;
-  border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  border-top: var(--mu-default-mode-border-width) solid
+    var(--mu-default-mode-border-color);
 }
 
 /* Tabs -> Pill */
@@ -7312,7 +7525,8 @@ body.mu-hide-tabs-icons
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner {
-  border: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  border: var(--mu-default-mode-border-width) solid
+    var(--mu-default-mode-border-color);
   background-color: var(--mu-background-color-1);
 }
 
@@ -7331,7 +7545,8 @@ body.mu-hide-tabs-icons
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header
   .workspace-tab-header-inner:hover {
-  border: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  border: var(--mu-default-mode-border-width) solid
+    var(--mu-default-mode-border-color);
 }
 
 .mu-tabs-pill
@@ -7574,7 +7789,10 @@ body.mu-hover-underline
   .markdown-reading-view
   .markdown-preview-sizer
   *:not(.mod-header, .inline-title):hover,
-body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
+body.mu-hover-underline
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-content
+  *:hover {
   text-decoration: underline;
   text-decoration-color: var(--mu-hover-underline-color) !important;
   text-decoration-skip-ink: none;
@@ -7616,14 +7834,22 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   max-width: var(--file-line-width);
 }
 
-.tcw100 + .markdown-reading-view .markdown-preview-sizer > div > *:not(table, .callout) {
+.tcw100
+  + .markdown-reading-view
+  .markdown-preview-sizer
+  > div
+  > *:not(table, .callout) {
   margin-left: auto;
   margin-right: auto;
   width: var(--file-line-width);
   max-width: var(--file-line-width);
 }
 
-.cw100 + .markdown-reading-view .markdown-preview-sizer > div > *:not(.callout) {
+.cw100
+  + .markdown-reading-view
+  .markdown-preview-sizer
+  > div
+  > *:not(.callout) {
   margin-left: auto;
   margin-right: auto;
   width: var(--file-line-width);
@@ -7674,12 +7900,17 @@ body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
   border: 1px solid var(--mu-cards-border);
 }
 
-body:not(.is-mobile, .mu-distraction-free-mode, .mu-total-concentration-mode).mu-cards-interface
+body:not(
+    .is-mobile,
+    .mu-distraction-free-mode,
+    .mu-total-concentration-mode
+  ).mu-cards-interface
   .workspace-tab-container {
   margin-bottom: 16px;
 }
 
-body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode .workspace-tab-container {
+body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode
+  .workspace-tab-container {
   border-radius: 8px;
   margin-left: 8px;
   margin-right: 16px;
@@ -7688,7 +7919,8 @@ body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode .workspace-tab-
   border: 1px solid var(--mu-cards-border);
 }
 
-body:not(.is-mobile).mu-cards-interface.mu-total-concentration-mode .workspace-tab-container {
+body:not(.is-mobile).mu-cards-interface.mu-total-concentration-mode
+  .workspace-tab-container {
   border-radius: 8px;
   margin: 8px;
   border: 1px solid var(--mu-cards-border);
@@ -7700,8 +7932,14 @@ body:not(.is-mobile).mu-cards-interface .workspace {
 }
 
 body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf,
-body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-header,
-body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-content {
+body:not(.is-mobile).mu-cards-interface
+  .workspace-tabs
+  .workspace-leaf
+  .view-header,
+body:not(.is-mobile).mu-cards-interface
+  .workspace-tabs
+  .workspace-leaf
+  .view-content {
   background-color: var(--mu-background-color-1);
 }
 
@@ -7779,7 +8017,10 @@ body.mu-active-line-zoom .view-content .cm-line.cm-active .cm-header {
   font-size: 1.5em !important;
 }
 
-body.mu-active-line-zoom .view-content .cm-line.cm-active input[type="checkbox"] {
+body.mu-active-line-zoom
+  .view-content
+  .cm-line.cm-active
+  input[type="checkbox"] {
   margin-inline-start: 8px;
 }
 
@@ -7819,7 +8060,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
   background-color: var(--mu-scrollbar-thumb-bg-hover);
-  border: var(--mu-scrollbar-thumb-size) solid var(--mu-scrollbar-thumb-bg-hover);
+  border: var(--mu-scrollbar-thumb-size) solid
+    var(--mu-scrollbar-thumb-bg-hover);
 }
 
 .modal.mod-settings.mod-sidebar-layout .modal-close-button {
@@ -7889,7 +8131,8 @@ body.mu-outline-blockquote .HyperMD-quote + .cm-line:not(.HyperMD-quote) {
   border-top: 1px solid var(--mu-blockquote-border) !important;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-1,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-1,
 .HyperMD-quote-1::before {
   width: 1em;
   background: #0072d348;
@@ -7907,42 +8150,58 @@ body.mu-outline-blockquote .HyperMD-quote + .cm-line:not(.HyperMD-quote) {
   box-shadow: -1em 0 0 0 #00ff0048;
 }
 
-.markdown-reading-view blockquote > blockquote > blockquote > blockquote > blockquote {
+.markdown-reading-view
+  blockquote
+  > blockquote
+  > blockquote
+  > blockquote
+  > blockquote {
   box-shadow: -1em 0 0 0 #ff000048;
 }
 
-.markdown-reading-view blockquote > blockquote > blockquote > blockquote > blockquote > blockquote {
+.markdown-reading-view
+  blockquote
+  > blockquote
+  > blockquote
+  > blockquote
+  > blockquote
+  > blockquote {
   box-shadow: -1em 0 0 0 #ffff0048;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-2,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-2,
 .HyperMD-quote-2::before {
   min-width: 1em;
   background: #d300ff48;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-3,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-3,
 .HyperMD-quote-3::before {
   width: 5px;
   min-width: 2em;
   background: #ffa30048;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-4,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-4,
 .HyperMD-quote-4::before {
   width: 5px;
   min-width: 2.8em;
   background: #00ff0048;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-5,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-5,
 .HyperMD-quote-5::before {
   width: 5px;
   min-width: 3.8em;
   background: #ff000048;
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-6,
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote.cm-formatting-quote-6,
 .HyperMD-quote-6::before {
   width: 5px;
   min-width: 4.6em;
@@ -7956,7 +8215,9 @@ blockquote {
 }
 
 /* Outline UI */
-body.mu-o-ui-sidebars .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-leaf {
+body.mu-o-ui-sidebars
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-leaf {
   border: 1px solid var(--mu-o-ui-border);
 }
 
@@ -7983,7 +8244,9 @@ body.mu-o-ui-sidebars .status-bar {
   border-left: 1px solid var(--mu-o-ui-border);
 }
 
-body.mu-o-ui-icons .workspace-split:is(.mod-left-split, .mod-right-split) .is-active {
+body.mu-o-ui-icons
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .is-active {
   border: 1px solid var(--mu-o-ui-border);
 }
 
@@ -8005,7 +8268,8 @@ a.tag,
   border-left: 0;
 }
 
-body.mu-tags-hide-hashtag .cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta {
+body.mu-tags-hide-hashtag
+  .cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta {
   border-right: 0;
   padding-right: var(--mu-tags-hashtag-padding);
   padding-left: var(--mu-tags-hashtag-padding);
@@ -8464,49 +8728,78 @@ body.is-mobile .clickable-icon.workspace-drawer-active-tab-chevron {
 /* Lists indentation */
 /* live preview and source modes */
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(1)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-1);
 }
 
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(2)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-2);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-2);
 }
 
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(3)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-3);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-3);
 }
 
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(4)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-4);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-4);
 }
 
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(5)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-5);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-5);
 }
 
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(6)::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-6);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-6);
 }
 
 /* reading mode */
 .markdown-rendered.show-indentation-guide li > ul::before,
 .markdown-rendered.show-indentation-guide li > ol::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-1);
 }
 
 .markdown-rendered.show-indentation-guide li > ul > li > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-2);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-2);
 }
 
 .markdown-rendered.show-indentation-guide li > ul > li > ul > li > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-3);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-3);
 }
 
-.markdown-rendered.show-indentation-guide li > ul > li > ul > li > ul > li > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-4);
+.markdown-rendered.show-indentation-guide
+  li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul::before {
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-4);
 }
 
-.markdown-rendered.show-indentation-guide li > ul > li > ul > li > ul > li > ul > li > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-5);
+.markdown-rendered.show-indentation-guide
+  li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul::before {
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-5);
 }
 
 .markdown-rendered.show-indentation-guide
@@ -8522,7 +8815,8 @@ body.is-mobile .clickable-icon.workspace-drawer-active-tab-chevron {
   > ul
   > li
   > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-6);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-6);
 }
 
 .markdown-rendered.show-indentation-guide
@@ -8540,7 +8834,8 @@ body.is-mobile .clickable-icon.workspace-drawer-active-tab-chevron {
   > ul
   > li
   > ul::before {
-  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
+  border-right: var(--indentation-guide-width) solid
+    var(--mu-indent-color-level-1);
 }
 
 body.mu-global-font-mode {
@@ -8555,7 +8850,9 @@ body.mu-global-font-mode {
   --h5-font: var(--mu-global-font);
   --h6-font: var(--mu-global-font);
   font-feature-settings: var(--mu-global-font-stylistic-set);
-  letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
+  letter-spacing: calc(
+    min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing))
+  );
 }
 
 /* Indicator size */
@@ -8587,13 +8884,17 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
 
 /* Window */
 body.is-popout-window {
-  border: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color);
+  border: var(--mu-new-window-border-width) solid
+    var(--mu-new-window-border-color);
 }
 
 body.is-popout-window .titlebar {
-  border-top: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
-  border-left: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
-  border-right: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+  border-top: var(--mu-new-window-border-width) solid
+    var(--mu-new-window-border-color) !important;
+  border-left: var(--mu-new-window-border-width) solid
+    var(--mu-new-window-border-color) !important;
+  border-right: var(--mu-new-window-border-width) solid
+    var(--mu-new-window-border-color) !important;
 }
 
 /* Style Settings */

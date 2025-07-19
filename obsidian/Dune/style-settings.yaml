@@ -1,0 +1,924 @@
+name: DUNE - Silver
+id: obsidian-joval-theme
+settings:
+  - id: all-fonts
+    title: "𝚨 Fonts"
+    description: manage fonts
+    title.de: "𝚨 Schriften"
+    description.de: Schriften verwalten
+    type: heading
+    level: 1
+    collapsed: true
+  - id: common-fonts
+    title: Typesets
+    title.de: Schriftsätze
+    description: (–) Obsidian, (1) Modern, (2) Poetry, (3) Dashboard
+    description.de: (–) Obsidian, (1) Modern, (2) Poesie, (3) Hauptseite
+    type: heading
+    level: 2
+    collapsed: true
+  - id: glob-fonts
+    title: ""
+    description: please click the "reset" button of "Font size" of (1 - Modern, 2 - Poetry, 3 - Dashboard) on first use.
+    description.de: Bitte drücke die "wiederherstellen" Taste von "Schriftgröße" von (1 - Modern, 2 - Poesie, 3 - Hauptseite) vor den ersten Gebrauch.
+    type: class-select
+    allowEmpty: false
+    default: fontmod-0
+    options:
+      - label: "–"
+        value: fontmod-0
+      - label: "𝚨-1"
+        value: fontmod-1
+      - label: "𝚨-2"
+        value: fontmod-2
+      - label: "𝚨-3"
+        value: fontmod-3
+  - id: font-modern
+    title: 1 - Modern
+    type: heading
+    level: 3
+    collapsed: true
+  - id: modern-font-h
+    title: Header Font
+    title.de: Überschriften
+    type: variable-text
+    default: '"Louis George Cafe", "DejaVu Serif", sans-serif'
+  - id: modern-font-c
+    title: Character Font
+    title.de: Charakterschrift
+    type: variable-text
+    default: '"Louis George Cafe", "Liberation Serif", sans-serif'
+  - id: custom-fsz-1
+    title: Font size
+    title.de: Schriftgröße
+    type: variable-number-slider
+    format: px
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+  - id: poetry-font-chars
+    title: 2 - Poetry
+    title.de: 2 - Poesie
+    type: heading
+    level: 3
+    collapsed: true
+  - id: poetry-font-h
+    title: Header Font
+    description: (default = Manuskript Gothisch)
+    title.de: Überschriften
+    description.de: (Standard = Manuskript Gothisch)
+    type: variable-text
+    default: '"Manuskript Gothisch", Pecita, Mumsies, sans-serif'
+  - id: poetry-font-c
+    title: Character Font
+    title.de: Charakterschrift
+    type: variable-text
+    default: "cursive, Pecita, Mumsies, sans-serif"
+  - id: custom-fsz-2
+    title: Font size
+    title.de: Schriftgröße
+    type: variable-number-slider
+    format: px
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+  - id: custom-font-chars
+    title: 3 - Dashboard
+    title.de: 3 - Hauptseite
+    type: heading
+    level: 3
+    collapsed: true
+  - id: custom-font-h
+    title: Header Font
+    title.de: Überschriften
+    type: variable-text
+    default: "Helvetica, Sengoa, Optima-Regular, GillSans"
+  - id: custom-font-c
+    title: Character Font
+    title.de: Charakterschrift
+    type: variable-text
+    default: "Helvetica, Sengoa, Optima-Regular, GillSans"
+  - id: custom-fsz-3
+    title: Font size
+    title.de: Schriftgröße
+    type: variable-number-slider
+    format: px
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+  - id: general-spacing
+    title: Text layout
+    title.de: Schriftgestaltung
+    description: change spacing of lines
+    description.de: Ändere den Abstand von Zeilen
+    type: heading
+    level: 2
+    collapsed: true
+  - id: indent-l
+    title: Indent line
+    title.de: Zeileneinzug
+    description: indent paragraphs "#indent ==first word=="
+    description.de: Zeileneinzug Paragrafen "#einzug ==erstes Wort=="
+    type: variable-number-slider
+    format: em
+    default: 4
+    min: 2
+    max: 10
+    step: 1
+  - id: prg-break
+    title: Linebreak - blank
+    description: ignore blank lines
+    title.de: Umbruch - Leerzeile
+    description.de: ignoriere Leerzeilen
+    type: class-toggle
+  - id: add-link-space
+    title: Empty space between links
+    description: empty space before and after links
+    title.de: Leerzeichen zwischen Verweise
+    description.de: Leerraum vor und nach Verweisen
+    type: class-toggle
+  - id: mod-lines-fonts
+    title: Headers
+    title.de: Kopfzeilen
+    type: heading
+    level: 3
+    collapsed: true
+  - id: initial-sz
+    title: Initial size
+    title.de: Initiale/Majuskel Größe
+    description: "#raisecap ==L==orem - #dropcap ==L==orem"
+    description.de: "#majuskel ==L==orem - #initiale ==L==orem"
+    type: variable-number-slider
+    format: px
+    default: 110
+    min: 110
+    max: 160
+    step: 5
+  - id: special-fonts
+    title: Special Fonts
+    title.de: Spezielle Schriften
+    description: Contacts, Recipes, Movies
+    description.de: Kontakte, Rezepte, Filme
+    type: heading
+    level: 2
+    collapsed: true
+  - id: contacts-font
+    title: Header - Contacts
+    title.de: Überschrift - Kontakte
+    description: cssclass "contacts"
+    type: variable-text
+    default: 'Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+  - id: recipes-font
+    title: Header - Recipes
+    title.de: Überschrift - Rezepte
+    description: cssclass "recipes"
+    type: variable-text
+    default: 'cursive, Mumsies, Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+  - id: movies-font
+    title: Header - Movies
+    title.de: Überschrift - Filme
+    description: cssclass "movies"
+    type: variable-text
+    default: 'AbadiMT-CondensedLight, Helvetica, "Century Gothic", Roboto, Arial, sans-serif'
+  - id: initial-font
+    title: Initial Font
+    title.de: Initiale/Majuskelschrift
+    type: variable-text
+    default: '"Manuskript Gothisch", Pecita, Mumsies, Helvetica, Sengoa, Optima-Regular'
+  - id: img-options
+    title: "∗ Pictures"
+    description: manage pictures
+    title.de: "∗ Bilder"
+    description.de: Bilder verwalten
+    type: heading
+    level: 1
+    collapsed: true
+  - id: banner-opt
+    title: Banners
+    title.de: Banner
+    description: for Header and Footer
+    description.de: für Kopf und Fußzeile
+    type: heading
+    level: 2
+    collapsed: true
+  - id: banner-ah
+    title: Resize banner -top
+    title.de: Größe Banner -Oben
+    description: cssclass "banner-a" + "![[image.png | banner-a]]"
+    type: variable-number-slider
+    format: px
+    default: 240
+    min: 140
+    max: 500
+    step: 20
+  - id: banner-bh
+    title: Resize banner -bottom
+    title.de: Größe Banner -Unten
+    description: cssclass "banner-b" + "![[image.png | banner-b]]"
+    type: variable-number-slider
+    format: px
+    default: 200
+    min: 200
+    max: 600
+    step: 20
+  - id: image-frames-all
+    title: Picture frames
+    title.de: Bilderrahmen
+    description: frames for images, simple or elegant.
+    description.de: Rahmen für Bilder, einfach oder elegant
+    type: heading
+    level: 2
+    collapsed: true
+  - id: img-border
+    title: Hairline frame
+    description: frames for bright pictures on bright background
+    title.de: Haarlinie Rahmen
+    description.de: für helle Bilder auf hellen Hintergrund
+    type: class-toggle
+    default: true
+  - id: image-frames-simple
+    title: Simple frames
+    title.de: Einfacher Rahmen
+    description: simple frame for images.
+    description.de: einfacher Rahmen für Bilder.
+    type: heading
+    level: 3
+    collapsed: true
+  - id: bwidth-s1
+    title: Frame 1 - frame thickness
+    title.de: Rahmen 1 - Rahmenstärke
+    description: "![[image.png | frame-s1]]"
+    description.de: "![[bild.png | rahmen-s1]]"
+    type: variable-number-slider
+    format: px
+    default: 6
+    min: 2
+    max: 14
+    step: 2
+  - id: frame-color-s1
+    title: Frame 1 - frame color
+    title.de: Rahmen 1 - Rahmenfarbe
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#4a6cb0"
+    default-dark: "#ff7029"
+  - id: bwidth-s2
+    title: Frame 2 - frame thickness
+    title.de: Rahmen 2 - Rahmenstärke
+    description: "![[image.png | frame-s2]]"
+    description.de: "![[bild.png | rahmen-s2]]"
+    type: variable-number-slider
+    format: px
+    default: 6
+    min: 2
+    max: 14
+    step: 2
+  - id: frame-color-s2
+    title: Frame 2 - frame color
+    title.de: Rahmen 2 - Rahmenfarbe
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#4a6cb0"
+    default-dark: "#ff7029"
+  - id: image-frames-deco
+    title: Deco frame
+    title.de: Deko Rahmen
+    description: beautiful frames
+    description.de: schöne Rahmen
+    type: heading
+    level: 3
+    collapsed: true
+  - id: bframe-a
+    title: "picture.png | frame-a"
+    title.de: "![[bild.png | rahmen-a]]"
+    description: load (png) image frames from the web.
+    description.de: es werden (png)-Bilderrahmen aus dem Netz geladen.
+    type: variable-text
+    default: "url('')"
+  - id: bslice-a
+    title: Frame tiling
+    title.de: Rahmenteilung
+    type: variable-number-slider
+    format: px
+    default: 100
+    min: 50
+    max: 200
+    step: 4
+  - id: bwidth-a
+    title: Frame thickness
+    title.de: Rahmenstärke
+    type: variable-number-slider
+    format: px
+    default: 60
+    min: 40
+    max: 100
+    step: 5
+  - id: bframe-b
+    title: "picture.png | frame-b"
+    title.de: "![[bild.png | rahmen-b]]"
+    description: load (png) image frames from the web.
+    description.de: es werden (png)-Bilderrahmen aus dem Netz geladen.
+    type: variable-text
+    default: "url('')"
+  - id: bslice-b
+    title: Frame tiling
+    title.de: Rahmenteilung
+    type: variable-number-slider
+    format: px
+    default: 100
+    min: 50
+    max: 200
+    step: 4
+  - id: bwidth-b
+    title: Frame thickness
+    title.de: Rahmenstärke
+    type: variable-number-slider
+    format: px
+    default: 60
+    min: 40
+    max: 100
+    step: 5
+  - id: heading-profile-pic
+    title: Profile Picture  - (phone)
+    title.de: Profilbild - (Tel)
+    description: Your Profile Icon
+    description.de: Dein Profilsymbol
+    type: heading
+    level: 2
+    collapsed: true
+  - id: simple-profile
+    title: Colored Profile
+    title.de: Farbiges Profil
+    type: class-select
+    allowEmpty: false
+    default: no-prof
+    options:
+      - label: –
+        value: no-prof
+      - label: 🔍
+        value: study-prof
+      - label: 🎨
+        value: design-prof
+      - label: 📐
+        value: work-prof
+      - label: 📢
+        value: promo-prof
+      - label: 💖
+        value: health-prof
+      - label: 🍽
+        value: recipes-prof
+      - label: 🎶
+        value: music-prof
+      - label: 🕹
+        value: game-prof
+      - label: 💰
+        value: profit-prof
+  - id: profile-pic-mono
+    title: Monochrome Profile
+    description: automatic B/W switch
+    title.de: Profil - Schwarzweiß
+    description.de: S/W Schalter (dunkles Thema)
+    type: class-toggle
+  - id: profile-path
+    title: Alternative profile image
+    description: image must be an equilateral png (requires live connection)
+    title.de: Alternatives Profilbild
+    description.de: Das Profilbild muss als gleichseitiges png vorliegen (aktive Netzverbindung erforderlich)
+    type: variable-text
+    default: "url('')"
+  - id: all-colors
+    title: "⫺ Colors"
+    description: manage colors
+    title.de: "⫺ Farben"
+    description.de: Farben verwalten
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-colors-scheme
+    title: Theme
+    description: Color presets for Day-Night
+    title.de: Thema
+    description.de: Farbvoreinstellungen für Tag-Nacht
+    type: heading
+    level: 2
+    collapsed: false
+  - id: switch-dcol
+    title: "○ Light Theme"
+    title.de: "○ Helles Thema"
+    type: class-select
+    allowEmpty: false
+    default: col-mod-0
+    options:
+      - label: "–"
+        value: col-mod-0
+      - label: "Dune-1"
+        value: col-mod-a
+      - label: "Dune-2"
+        value: col-mod-b
+      - label: "Dune-3"
+        value: col-mod-c
+  - id: switch-lcol
+    title: "● Dark Theme"
+    title.de: "● Dunkles Thema"
+    type: class-select
+    allowEmpty: false
+    default: col-mod-1
+    options:
+      - label: "–"
+        value: col-mod-1
+      - label: "Dune-4"
+        value: col-mod-d
+      - label: "Dune-5"
+        value: col-mod-e
+      - label: "Dune-6"
+        value: col-mod-f
+  - id: dim-pictures
+    title: Dim Pictures
+    title.de: Bilder abdunkeln
+    description: reduce brightness (dark themes)
+    description.de: Verringere Helligkeit (Dunkle Themen)
+    type: class-select
+    allowEmpty: false
+    default: dark-1
+    options:
+      - label: "–"
+        value: dark-1
+      - label: "● 1"
+        value: dark-2
+      - label: "● 2"
+        value: dark-3
+      - label: "● 3"
+        value: dark-4
+      - label: "● 4"
+        value: dark-5
+  - id: custom-colors-scheme
+    title: Custom Theme
+    description: '"● Dark Theme / ○ Light Theme" toggle must be off (-)'
+    title.de: Eigenes Thema
+    description.de: '"● Dunkles Thema / ○ Helles Thema" Schalter muß aus sein (-)'
+    type: heading
+    level: 2
+    collapsed: true
+  - id: text-colors
+    title: Text Colors
+    title.de: Schriftfarbe
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-color-c
+    title: Header
+    title.de: Überschrift
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#866A49"
+    default-dark: "#DA8924"
+  - id: text-normal-c
+    title: "Text: Normal"
+    title.de: Charakterschrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#433721"
+    default-dark: "#CAD3EB"
+  - id: text-muted-c
+    title: "Text: Muted"
+    title.de: Kontrastarme Schrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#2C455F"
+    default-dark: "#B6B6B6"
+  - id: text-faint-c
+    title: "Text: Faint"
+    title.de: Blasse Schrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#2C455F"
+    default-dark: "#B6B6B6"
+  - id: link-color-c
+    title: "Text: Links"
+    title.de: Verweise Schrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#965416"
+    default-dark: "#CFA96F"
+  - id: bold-color-c
+    title: "Text: Bold"
+    title.de: Fett Schrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#9A4931"
+    default-dark: "#E2A648"
+  - id: italic-color-c
+    title: "Text: Italic"
+    title.de: Kursiv Schrift
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#9A4931"
+    default-dark: "#E2A648"
+  - id: text-selection-c
+    title: "Text: Background highlight"
+    description: for selected text
+    title.de: Hervorhebung Characterschrift
+    description.de: für angewählten Text
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#DD94178A"
+    default-dark: "#4A6CB0A1"
+  - id: interface-col-scheme
+    title: Interface colors
+    title.de: Oberflächenfarbe
+    type: heading
+    level: 3
+    collapsed: true
+  - id: background-primary-c
+    title: Background Primary
+    title.de: Hintergrund Primär
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#D9B98C"
+    default-dark: "#2D2A28"
+  - id: background-secondary-c
+    title: Background Secondary
+    title.de: Hintergrund Sekundär
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#D5975F"
+    default-dark: "#33362D"
+  - id: background-modifier-border-c
+    title: "Background Modifier: Border"
+    description: for border lines in Obsidians interface
+    title.de: Menüunterteilungen
+    description.de: Randlinien für Obsidians Oberfläche
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#B1B1B1"
+    default-dark: "#4B4D45"
+  - id: def-red
+    title: Default red
+    title.de: Standard Rot
+    description: for tables, text highlight types
+    description.de: für Tabellen, Textmarkierungen
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#db3434"
+    default-dark: "#b92b2b"
+  - id: def-green
+    title: Default green
+    title.de: Standard Grün
+    description: for tables, text highlight types
+    description.de: für Tabellen, Textmarkierungen
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#52a543"
+    default-dark: "#228b22"
+  - id: def-blue
+    title: Default blue
+    title.de: Standard Blau
+    description: for tables, text highlight types
+    description.de: für Tabellen, Textmarkierungen
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#0080ff"
+    default-dark: "#0080ff"
+  - id: extra-col-palette
+    title: Extra colors
+    title.de: Zusätzliche Farben
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hr-color
+    title: Simple delimiters
+    description: decorative fences "fade, fade2"
+    title.de: Trenner - einfach
+    description.de: für dekorative Zäune "trenner, trenner2"
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#808080"
+    default-dark: "#808080"
+  - id: hr-stars
+    title: Decorative Stars
+    description: decorative fences "stars"
+    title.de: Trenner - Sterne
+    description.de: für dekorative Zäune "sterne"
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-light: "#808080"
+    default-dark: "#808080"
+  - id: initial-col
+    title: Initial (Poetry)
+    description: "#dropcap ==L==orem - #raisecap ==L==orem"
+    title.de: Majuskel / Initiale (Poesie)
+    description.de: "#initiale ==L==orem - #majuskel ==L==orem"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#800000"
+    default-dark: "#800000"
+  - id: checkB-col
+    title: Checkbox color
+    title.de: Ankreuzpunkt - Farbe
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 360
+    step: 10
+  - id: fade-options
+    title: ( ) Show
+    description: manage ui elements
+    title.de: ( ) Einblenden
+    description.de: Bedienelemente verwalten
+    type: heading
+    level: 1
+    collapsed: true
+  - id: fade-op-a
+    title: Main window
+    title.de: Hauptfenster
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-sidepanels
+    title: Writer mode
+    description: Hide panels
+    title.de: Schriftsteller Modus
+    description.de: Verstecke Panele
+    type: class-toggle
+    default: false
+  - id: show-ui-btns
+    title: Buttons
+    description: restore buttons (Mobile & Pc)
+    title.de: Tasten
+    description.de: Wiederherstellung Tasten (Telefon & Rechner)
+    type: class-toggle
+  - id: show-nav-btns
+    title: Buttons - panels
+    description: restore panel buttons
+    title.de: Tasten - Panele
+    description.de: Wiederherstellung Panele Tasten
+    type: class-toggle
+    default: true
+  - id: show-status-bar
+    title: Status bar
+    description: restore statusbar
+    title.de: Statusleiste
+    description.de: Wiederherstellung Statusleiste
+    type: class-toggle
+  - id: show-tab-name
+    title: Tabs
+    description: restore inactive tabs
+    title.de: Reiter
+    description.de: Wiederherstellung inaktiver Reiter
+    type: class-toggle
+  - id: slim-bars
+    title: Slim bars
+    description: restore default tab-height (Phone & Desktop)
+    title.de: Schmale Leisten
+    description.de: Wiederherstellung normale Reiterhöhe (Telefon & Rechner)
+    type: class-toggle
+  - id: stacked-tabs-focused
+    title: Stacked notes (One page)
+    description: restore defaults for stacked-view (2 pages)
+    title.de: Stapelansicht (Eine Seite)
+    description.de: Wiederherstellung normale Stapelansicht (2 Seiten)
+    type: class-toggle
+  - id: show-title-name
+    title: Note title
+    description: restore note title
+    title.de: Notizname
+    description.de: Wiederherstellung Notizname (Titelleiste)
+    type: class-toggle
+    default: false
+  - id: show-title-parent
+    title: Note path
+    description: restore path in title bar
+    title.de: Notizpfad
+    description.de: Wiederherstellung Pfad (Titelleiste)
+    type: class-toggle
+  - id: show-scrollbars
+    title: Scrollbars
+    description: restore scrollbars (page browsing)
+    title.de: Rolleiste
+    description.de: Wiederherstellung Rolleiste (Seiten blättern)
+    type: class-toggle
+    default: true
+  - id: dune-accent-col
+    title: Dune accent
+    description: restore color-accent
+    title.de: Dune Akzent
+    description.de: Wiederherstellung Farbakzent
+    type: class-toggle
+    default: true
+  - id: fade-op-b
+    title: Text body
+    title.de: Textkörper
+    type: heading
+    level: 2
+    collapsed: true
+  - id: show-strikeout
+    title: Tasks strikeout
+    description: restore strikeout (tasks)
+    title.de: Aufgaben, durchstrichen
+    description.de: Wiederherstellung durchstrichene Aufgaben
+    type: class-toggle
+  - id: show-ls-marker
+    title: List marker
+    description: restore list marker
+    title.de: Listen Platzhalter
+    description.de: Wiederherstellung Punkt anstatt Klammer
+    type: class-toggle
+  - id: edgy-tables
+    title: Tables, edgy
+    description: restore edgy tables (colored, monochrome tables)
+    title.de: Tabellen, eckig
+    description.de: Wiederherstellung eckige Tabellen (farbige, monochrome Tabellen)
+    type: class-toggle
+  - id: edgy-banners
+    title: Banners, edgy
+    description: restore edgy banners
+    title.de: Banner, eckig
+    description.de: Wiederherstellung eckige Banner
+    type: class-toggle
+    default: true
+  - id: monoch-admo
+    title: Simple Mini-Admonitions
+    title.de: Einfache Mini-Admonitions
+    description: restore colored Checkboxes "- [!], - [?], - [n], etc.."
+    description.de: Wiederherstellung farbige Ankreuzpunkte "- [!], - [?], - [n], etc.."
+    type: class-toggle
+    default: true
+  - id: simple-aside
+    title: Simple Aside-boxes
+    title.de: Einfache Seiten-Felder
+    description: restore aside boxes "aside|l, aside|lh, aside|r, aside|rh"
+    description.de: Wiederherstellung Seitenfelder "seite|l, seite|lv, seite|r, seite|rv"
+    type: class-toggle
+    default: false
+  - id: simple-border
+    title: Simple highlights
+    description: restore normal highlights "#red ==Text==", "#green ==Text==", etc
+    title.de: Einfache Markierungen
+    description.de: Wiederherstellung normale Markierungen "#rot ==Text==", "#grün ==Text==", etc
+    type: class-toggle
+    default: false
+  - id: shade-Hd
+    title: Shaded Headers
+    title.de: Schattierte Titel
+    description: restore Header color
+    description.de: Wiederherstellung Titelfarbe
+    type: class-toggle
+    default: false
+  - id: inactive-notes
+    title: Shaded nactive Notes
+    description: highlight active notes (split view)
+    title.de: Schattiere inaktive Notizen
+    description.de: aktive Notizen hervorheben (Geteilte Ansicht)
+    type: class-toggle
+  - id: short-Hs
+    title: Header hash
+    title.de: Titel Raute
+    description: restore Header hash or click on the header placeholder to add/remove hashes.
+    description.de: Wiederherstellung der Titel Raute(n) oder klicke auf den Titel-Platzhalter um daraufhin Rauten zu subtrahieren/addieren.
+    type: class-toggle
+    default: true
+  - id: codeblock-dev
+    title: Codeblocks full length
+    title.de: Befehlszeilen ganze Länge
+    description: for developers
+    description.de: Für Entwickler
+    type: class-toggle
+    default: false
+  - id: show-textHL
+    title: Line highlight
+    title.de: Zeilenmarkierung
+    description: highlight active line (edit mode)
+    description.de: Aktuelle Zeile hervorheben (Bearbeitungs-Modus)
+    type: class-toggle
+    default: false
+  - id: fade-op-c
+    title: Core plugins
+    title.de: Kernerweiterungen
+    type: heading
+    level: 2
+    collapsed: true
+  - id: show-canvas-ui
+    title: Canvas buttons
+    description: restore canvas buttons
+    title.de: Canvas Tasten
+    description.de: Wiederherstellung Canvas Tasten
+    type: class-toggle
+    default: true
+  - id: show-canvas-nl
+    title: Canvas node labels
+    description: restore node labels
+    title.de: Canvas Knotentitel
+    description.de: Wiederherstellung Knotentitel
+    type: class-toggle
+  - id: show-graph-btns
+    title: Graph buttons
+    description: restore buttons
+    title.de: Graph Tasten
+    description.de: Wiederherstellung Graph Tasten
+    type: class-toggle
+  - id: zoom-svg
+    title: Mermaid Proportions
+    description: restore default proportions
+    title.de: Mermaid Proportionen
+    description.de: Wiederherstellung Standard Proportionen
+    type: class-toggle
+  - id: show-prop
+    title: Yaml header
+    title.de: Yaml Kopfzeile
+    description: restores standard. Note, 'Editor > Display > Properties in document > Visible / Source' must be active
+    description.de: Wiederherstellung Standard. Beachte, 'Editor > Anzeige > Eigenschaften im Dokument > Sichtbar / Quelle' muss eingeschaltet sein
+    type: class-toggle
+  - id: print-fontmatter
+    title: Print yaml-fontmatter (PDF)
+    title.de: Yaml-Kopfzeile ausdrucken (PDF)
+    type: class-toggle
+    default: false
+  - id: fade-op-d
+    title: Extra toggles
+    title.de: Zusätzliche Schalter
+    type: heading
+    level: 2
+    collapsed: true
+  - id: show-tooltips
+    title: Tooltips
+    description: restore help bubbles
+    title.de: Hilfeblasen
+    description.de: Wiederherstellung Hilfeblasen
+    type: class-toggle
+    default: true
+  - id: zoom-prefs-descr
+    title: Zoom descriptions
+    title.de: Vergrößere Beschreibungen
+    description: zoom Dunes descriptions
+    description.de: Vergrößere Dunes Beschreibungen
+    type: variable-number-slider
+    format: px
+    default: 15
+    min: 12
+    max: 18
+    step: 1
+  - id: phone-grid-tb
+    title: Toolbar lines
+    title.de: Werkzeugleiste Zeilen
+    type: variable-number-slider
+    description: Multiple rows (max 4) - phone
+    description.de: Mehrfache Zeilen (max 4) - Telefon
+    format: px
+    default: 70
+    min: 35
+    max: 140
+    step: 35
+  - id: resource-docs
+    title: □ Info
+    description: Help & extensions
+    description.de: Hilfe & Erweiterungen
+    type: heading
+    level: 1
+    collapsed: true
+  - id: man-info
+    title: Manual
+    title.de: Handbuch (in englisch, mit deutschen Optionen)
+    description: "[First steps](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Features](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br> [Troubleshooting](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[License](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)"
+    description.de: "[Erste Schritte](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main#first-steps)<br>[Funktionen](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main/Wiki)<br>[Problemsuche](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/Troubleshooting.md)<br>[Lizenz](https://github.com/Jopp-gh/Obsidian-Dune84/tree/main?tab=GPL-2.0-1-ov-file#)"
+    type: info-text
+    markdown: true
+  - id: css-info
+    title: Cheatsheet (Dune shorthands)
+    title.de: Spickzettel (Dune Kürzel)
+    description: "[Css classes](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet%20cssclasses%20Dune.md)<br>[Callout, fences, tags](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/Wiki/cheatsheet-Callouts%2C%20Fences%2C%20Tags.md)"
+    type: info-text
+    markdown: true
+  - id: snipp-info
+    title: Css Snippets (Dune expansions)
+    title.de: Css Schnipsel (Dune Erweiterungen)
+    description: 1.[Dune-Supported-plugins](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/snippets/Dune-pluginsupport.css)<br>2.[Dune-Mermaid-theme](https://github.com/Jopp-gh/Obsidian-Dune84/blob/main/snippets/Dune-mermaid.css)
+    type: info-text
+    markdown: true
+  - id: update-dune
+    title: Upgrade to Dune-Gold today!
+    title.de: Hole dir Dune-Gold noch heute!
+    description: <a href="https://www.buymeacoffee.com/jopp.gh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+    type: info-text
+    markdown: true

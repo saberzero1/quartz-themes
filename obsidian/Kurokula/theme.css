@@ -92,9 +92,10 @@
   --kuro-code-comment: var(--kuro-yellow-light);
   --kuro-code-fg: var(--kuro-white-light);
   --kuro-code-bg: var(--kuro-black-dark);
-  --kuro-monospace-default: "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace,
-    SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-    Monaco, "Consolas", "Source Code Pro", monospace;
+  --kuro-monospace-default:
+    "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular,
+    "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
 }
 
 body {
@@ -151,7 +152,8 @@ body {
   --embed-font-style: inherit;
 
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
 
   /* Graphs */
@@ -216,7 +218,10 @@ body {
 
   /* Modals - e.g. settings, community themes, community plugins */
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
 
   /* Multi-select pills */
   --pill-color: var(--text-muted);
@@ -359,12 +364,12 @@ body {
   --h5-color: var(--kuro-red-dark);
   --h6-color: var(--kuro-blue-dark);
   /*
-	--h1-size: 1.802em;
-	--h2-size: 1.602em;
-	--h3-size: 1.424em;
-	--h4-size: 1.266em;
-	--h5-size: 1.125em;
-	--h6-size: 1em;
+    --h1-size: 1.802em;
+    --h2-size: 1.602em;
+    --h3-size: 1.424em;
+    --h4-size: 1.266em;
+    --h5-size: 1.125em;
+    --h6-size: 1em;
 */
   --h-font-style: oblique 10deg;
   --h1-style: var(--h-font-style);
@@ -563,17 +568,17 @@ body {
   --interactive-normal: red;
 
   /*
-	Couldn't figure this out
-	--text-selection: hsla(var(--color-accent-hsl), 0.2);
-	--text-highlight-bg-rgb: 255, 208, 0;
-	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
-	--text-accent: var(--color-accent);
-	--text-accent-hover: var(--color-accent-2);
-	--interactive-normal: var(--color-base-00);
-	--interactive-hover: var(--color-base-10);
-	--interactive-accent-hsl: var(--color-accent-hsl);
-	--interactive-accent: var(--color-accent-1);
-	--interactive-accent-hover: var(--color-accent-2);
+    Couldn't figure this out
+    --text-selection: hsla(var(--color-accent-hsl), 0.2);
+    --text-highlight-bg-rgb: 255, 208, 0;
+    --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+    --text-accent: var(--color-accent);
+    --text-accent-hover: var(--color-accent-2);
+    --interactive-normal: var(--color-base-00);
+    --interactive-hover: var(--color-base-10);
+    --interactive-accent-hsl: var(--color-accent-hsl);
+    --interactive-accent: var(--color-accent-1);
+    --interactive-accent-hover: var(--color-accent-2);
 */
 }
 

@@ -2,5 +2,9 @@
   "name": "LYT Mode",
   "version": "1.9.1",
   "minAppVersion": "1.0",
-  "author": "Nick Milo"
+  "author": "Nick Milo",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

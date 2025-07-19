@@ -28,20 +28,26 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
       - name: "Install just"
         run: npm i just-install
+
       - name: "Install npm dependencies"
         run: npm ci
+
       - name: "Check style"
         run: npm run --silent verify-ci
+
       - name: "Copy current lists"
         run: |
           cp quartz-syncer-file-list.json quartz-syncer-file-list-old.json
           cp theme-list theme-list-old
+
       - name: "Check Quartz Syncer file list"
         run: |
-          npm run --silent build
+          npm run --silent json-compile
           npx prettier quartz-syncer-file-list.json --write
           cmp --silent quartz-syncer-file-list.json quartz-syncer-file-list-old.json && echo "Quartz Syncer file list up to date" && exit 0 || echo "Quartz Syncer file list mismatch" && exit 1
+
       - name: "Check theme list"
         run: cmp --silent theme-list theme-list-old && echo "Theme list up to date" && exit 0 || echo "Theme list mismatch" && exit 1

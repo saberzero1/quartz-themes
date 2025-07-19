@@ -467,14 +467,14 @@ input[type="number"] {
 }
 
 .theme-dark .markdown-preview-view input[type="checkbox"]:checked {
-  background-image: url('data:image/svg+xml; utf8, <svg width="100%" height="100%" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="matrix(1,0,0,1,-333.852,-754.822)"><path d="M335.935,764.767L342.24,770.888L352.371,756.905" fill="none" stroke="%23cbcccc" stroke-width="4.17px"/></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='100%' height='100%' viewBox='0 0 21 19' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='matrix(1,0,0,1,-333.852,-754.822)'><path d='M335.935,764.767L342.24,770.888L352.371,756.905' fill='none' stroke='%23cbcccc' stroke-width='4.17px'/></g></svg>");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
 }
 
 .theme-light .markdown-preview-view input[type="checkbox"]:checked {
-  background-image: url('data:image/svg+xml; utf8, <svg width="100%" height="100%" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="matrix(1,0,0,1,-333.852,-754.822)"><path d="M335.935,764.767L342.24,770.888L352.371,756.905" fill="none" stroke="%23191919" stroke-width="4.17px"/></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='100%' height='100%' viewBox='0 0 21 19' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='matrix(1,0,0,1,-333.852,-754.822)'><path d='M335.935,764.767L342.24,770.888L352.371,756.905' fill='none' stroke='%23191919' stroke-width='4.17px'/></g></svg>");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -588,7 +588,7 @@ input[type="number"] {
 }
 
 .dropdown {
-  background-image: url('data:image/svg+xml;charset=utf-8, <svg width="100%" height="100%" viewBox="0 0 184 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-877.45,-1362.33)"><g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1938.66,2773.3)"><path d="M969.328,1362.33L1061.21,1410.97L877.45,1410.97L969.328,1362.33Z" style="fill:rgb(0,177,239);"/></g></g></svg>');
+  background-image: url("data:image/svg+xml,charset=utf-8, <svg width='100%' height='100%' viewBox='0 0 184 49' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd,clip-rule:evenodd,stroke-linejoin:round,stroke-miterlimit:2,'><g transform='matrix(1,0,0,1,-877.45,-1362.33)'><g transform='matrix(-1,-1.22465e-16,1.22465e-16,-1,1938.66,2773.3)'><path d='M969.328,1362.33L1061.21,1410.97L877.45,1410.97L969.328,1362.33Z' style='fill:rgb(0,177,239),'/></g></g></svg>");
   background-size:
     1em auto,
     100%;
@@ -691,7 +691,9 @@ input[type="number"] {
   border-radius: 0px;
 }
 
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-radius: 0px;
 }
 
@@ -699,7 +701,9 @@ input[type="number"] {
   padding: 0 4px 30px 0;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   border-radius: 0px;
 }
 
@@ -749,11 +753,15 @@ input[type="number"] {
   padding-right: 4px;
 }
 
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+.workspace-split.mod-root
+  .workspace-split.mod-vertical
+  .workspace-leaf-content {
   padding-right: 4px;
 }
 
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content:last-child {
+.workspace-split.mod-root
+  .workspace-split.mod-vertical
+  .workspace-leaf-content:last-child {
   padding-right: 0;
 }
 
@@ -765,7 +773,9 @@ input[type="number"] {
   padding-top: 0px;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   border-bottom: none;
 }
 

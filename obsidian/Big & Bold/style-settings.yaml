@@ -1,0 +1,1154 @@
+name: Big & Bold
+id: big-and-bold-theme
+settings:
+  - id: color-schemes-heading
+    title: 🎨 Color Schemes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: theme-select-light
+    title: Light Mode Theme
+    type: class-select
+    allowEmpty: false
+    default: theme-default-light
+    options:
+      - label: 💎 Default
+        value: theme-default-light
+      - label: 🍵 Matcha
+        value: theme-matcha-light
+      - label: 🌺 Tropical
+        value: theme-tropical-light
+      - label: ❄️ Nord
+        value: theme-nord-light
+      - label: 📚 Library
+        value: theme-library
+      - label: 💍 Gleam
+        value: theme-gleam
+  - id: theme-select-dark
+    title: Dark Mode Theme
+    type: class-select
+    allowEmpty: false
+    default: theme-default-dark
+    options:
+      - label: 💎 Default
+        value: theme-default-dark
+      - label: 🍵 Matcha
+        value: theme-matcha-dark
+      - label: 🌺 Tropical
+        value: theme-tropical-dark
+      - label: ❄️ Nord
+        value: theme-nord-dark
+      - label: ⚡ Electric
+        value: theme-electric
+      - label: ☄️ Spectre
+        value: theme-spectre
+      - label: 🌑 Jet Black
+        value: theme-black
+  - id: editor-heading
+    title: ⌨️ Editor
+    type: heading
+    level: 2
+    collapsed: true
+  - id: page-shadow
+    title: Paper Shadow
+    description: Add a paper-like gradient around the edges of each note (inspired by ITS theme).
+    type: class-toggle
+    default: false
+  - id: file-line-width
+    title: Readable Line Length
+    description: Adjust the width of the note when Readable Line Length is turned on.
+    type: variable-number-slider
+    default: 900
+    format: px
+    min: 650
+    max: 1500
+    step: 50
+  - id: focus-mode-heading
+    title: Focus Mode
+    type: heading
+    level: 3
+    collapsed: true
+  - id: highlight-active-line
+    title: Highlight Active Line
+    type: class-toggle
+    addCommand: true
+    default: false
+  - id: ultra-focus
+    title: Full Focus
+    type: class-toggle
+    description: Completely remove tabs and the sidebar, and hide the note titlebar until hover. The note takes up the entire screen. I recommend setting hotkeys for the sidebars before enabling this option.
+    default: false
+    addCommand: true
+  - id: floating-doc
+    title: Floating Document
+    description: Give the note a floating document appearance, like Google Docs or Microsoft Word. Recommeded for use with a low readable line length.
+    type: class-toggle
+    default: false
+    addCommand: true
+  - id: floating-doc-heading
+    title: Floating Document Settings
+    type: heading
+    level: 4
+    collapsed: true
+  - id: custom-doc
+    title: Use Custom Background Color
+    description: Use a custom background color when Floating Document is enabled.
+    type: class-toggle
+    default: false
+  - id: custom-doc-bg
+    title: Floating Document Background
+    description: Choose the background color that is used when Floating Document is turned on. Requires the setting above to be toggled ON. NOTE - will be overriden if a background image is set.
+    type: class-select
+    default: color-accent-1
+    allowEmpty: false
+    options:
+      - label: Accent 1
+        value: doc-1
+      - label: Accent 2
+        value: doc-2
+      - label: Accent 3
+        value: doc-3
+  - id: frontmatter-heading
+    title: Frontmatter
+    type: heading
+    level: 3
+    collapsed: true
+  - id: hide-m
+    title: Hide Frontmatter
+    description: Make frontmatter invisible in reading mode.
+    type: class-toggle
+    default: false
+  - id: minimal-m
+    title: Minimalistic Frontmatter
+    type: class-toggle
+    default: false
+  - id: workspace-heading
+    title: 🖥️ Workspace
+    type: heading
+    level: 2
+    collapsed: true
+  - id: no-shadows
+    title: Turn off box shadows
+    description: Turn off box shadows for certain elements (does not apply to the "paper shadow" setting).
+    type: class-toggle
+    default: false
+  - id: unhide-ribbon
+    title: Unhide Ribbon
+    description: Show the left ribbon, which is hidden by default.
+    type: class-toggle
+    default: false
+  - id: files-heading
+    title: Files
+    type: heading
+    level: 3
+    collapsed: true
+  - id: remove-file-icons
+    title: Remove File Icons
+    description: Remove the note icons in the file explorer.
+    type: class-toggle
+    default: false
+  - id: no-special-files
+    title: Remove Special File Icons
+    description: Force all notes to use the default note icon rather than prefixing special icons based on the file path.
+    type: class-toggle
+    default: false
+  - id: file-emoji
+    title: File Emoji
+    type: variable-select
+    allowEmpty: false
+    default: "Noto Emoji"
+    options:
+      - "Noto Emoji"
+      - "Noto Color Emoji"
+  - id: folders-heading
+    title: Folders
+    type: heading
+    level: 3
+    collapsed: true
+  - id: remove-folder-icons
+    title: Remove Folder Icons
+    description: Remove the folder icons in the file explorer.
+    type: class-toggle
+    default: false
+  - id: remove-vault-icon
+    title: Remove Vault Icon
+    description: Remove the vault icon in the file explorer.
+    type: class-toggle
+    default: false
+  - id: folder-icon-size
+    title: Folder Icon Size
+    type: variable-number-slider
+    default: 1.6
+    min: 1.25
+    max: 1.75
+    step: 0.01
+    format: em
+  - id: folder-padding
+    title: Folder Padding
+    type: variable-number-slider
+    default: 4
+    min: 0
+    max: 17
+    format: px
+  - id: folder-emoji
+    title: Folder Emoji
+    type: variable-select
+    allowEmpty: false
+    default: "Noto Emoji"
+    options:
+      - "Noto Emoji"
+      - "Noto Color Emoji"
+  - id: folder-style
+    title: Folder Style
+    type: class-select
+    allowEmpty: false
+    default: folder-notebooks
+    options:
+      - label: Notebooks
+        value: folder-notebooks
+      - label: Library
+        value: folder-library
+      - label: Simple Folders
+        value: folder-folders
+      - label: Nested Folders
+        value: folder-folders-2
+      - label: Navigator
+        value: folder-navigator
+      - label: Garden
+        value: folder-garden
+      - label: Custom
+        value: folder-custom
+  - id: custom-folders-heading
+    title: Custom Folders
+    type: heading
+    level: 4
+    collapsed: true
+  - id: custom-folder-1
+    title: Level 1 Emoji
+    description: "This is the emoji that will be displayed on a level 1 folder. You must wrap the emoji in quotes, like this: '⭐'"
+    type: variable-text
+    default: "'⭐'"
+  - id: custom-folder-1-open
+    title: Level 1 Emoji - Open
+    description: This is the emoji that will be displayed on a level 1 folder when it is open.
+    type: variable-text
+    default: "'🌟'"
+  - id: custom-folder-2
+    title: Level 2 Emoji
+    default: "'🌷'"
+    type: variable-text
+  - id: custom-folder-2-open
+    title: Level 2 Emoji - Open
+    default: "'🌺'"
+    type: variable-text
+  - id: custom-folder-3
+    title: Level 3 Emoji
+    default: "'🐱'"
+    type: variable-text
+  - id: custom-folder-3-open
+    title: Level 3 Emoji - Open
+    default: "'😸'"
+    type: variable-text
+  - id: workspace-background-heading
+    title: Background Image
+    type: heading
+    level: 3
+    collapsed: true
+  - id: enable-bg-img
+    title: Enable Background Image
+    type: class-toggle
+    default: false
+  - id: img-bg
+    title: Background Image
+    type: variable-select
+    default: url('https://images.unsplash.com/photo-1679245883026-adea0f43e6f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80')
+    options:
+      - label: 3-D Waves 1
+        value: url('https://images.unsplash.com/photo-1679245883026-adea0f43e6f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80')
+      - label: 3-D Waves 2
+        value: url('https://images.unsplash.com/photo-1676513727408-631151da9fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80')
+      - label: 3-D Waves 3
+        value: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80)
+      - label: 3-D Waves 4
+        value: url('https://images.unsplash.com/photo-1585854467604-cf2080ccef31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80')
+      - label: 3-D Waves 5
+        value: url('https://images.unsplash.com/photo-1637611331620-51149c7ceb94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Gradient 1
+        value: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+      - label: Gradient 2
+        value: url(https://images.unsplash.com/photo-1557682260-96773eb01377?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80)
+      - label: Colorful Mist 1
+        value: url('https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Colorful Mist 2
+        value: url('https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Stars in the Sand
+        value: url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Purple Mountains over Water
+        value: url('https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Blue Mountains and Stars
+        value: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2117&q=80')
+      - label: Canyon and Sky
+        value: url('https://images.unsplash.com/photo-1479030160180-b1860951d696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Valley
+        value: url('https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Fiery Mountains
+        value: url('https://images.unsplash.com/photo-1509565840034-3c385bbe6451?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80')
+      - label: Ominous Crags
+        value: url('https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Snowy Peaks
+        value: url('https://images.unsplash.com/photo-1610128114197-485d933885c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Air Balloons
+        value: url('https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Quiet Mountain Lake
+        value: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Over a Forest at Dawn
+        value: url('https://images.unsplash.com/photo-1512923927402-a9867a68180e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+      - label: Jungle Plants
+        value: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+      - label: Mountain River
+        value: url('https://images.unsplash.com/photo-1565191999001-551c187427bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHx3YWxscGFwZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60')
+      - label: Starlight Morphos
+        value: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+      - label: Above the Clouds
+        value: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+      - label: Serene White Mountain
+        value: url(https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80)
+      - label: City at Dawn
+        value: url(https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80)
+      - label: Morning Coast
+        value: url(https://images.unsplash.com/photo-1555117746-a7c449e5d0ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80)
+      - label: Dramatic Woods
+        value: url(https://images.unsplash.com/photo-1562627952-f52a76c3c823?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80)
+      - label: Snowy Sunrise
+        value: url(https://images.unsplash.com/photo-1487349703519-90c8e4f426a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2906&q=80)
+      - label: Sakura Blossoms
+        value: url(https://images.unsplash.com/photo-1560719613-9f0bdc469ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80)
+      - label: Neon City
+        value: url(https://images.unsplash.com/photo-1531931477284-7e16215c9540?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)
+      - label: Edge of the World
+        value: url('https://cdn.pixabay.com/photo/2019/02/27/22/18/fantasy-4025091_1280.jpg')
+      - label: Wolf in Painted Splashes
+        value: url('https://cdn.pixabay.com/photo/2018/01/08/15/56/wolf-3069636_1280.jpg')
+      - label: Galactic City
+        value: url('https://images.wallpaperscraft.com/image/single/city_futurism_scifi_131831_1280x720.jpg')
+      - label: Dark Dragon
+        value: url('https://images.wallpaperscraft.com/image/single/magician_dragon_art_131303_1280x720.jpg')
+      - label: Fantasy Kingdom
+        value: url('https://images.wallpaperscraft.com/image/single/castle_waterfall_mountains_60065_1280x720.jpg')
+      - label: Fantasy Kingdom 2
+        value: url('https://images.wallpaperscraft.com/image/single/castle_rock_sea_63055_1280x720.jpg')
+      - label: Floating Islands
+        value: url('https://images.wallpaperscraft.com/image/single/island_sea_sky_62536_1280x720.jpg')
+      - label: Sunrise Valley
+        value: url('https://img5.goodfon.com/wallpaper/nbig/3/57/mountains-valley-river-trees-forest-sunset-creatures-sky-clo.jpg')
+      - label: The Warrior
+        value: url('https://img4.goodfon.com/wallpaper/nbig/c/a5/knight-dragon-horse-banner-spear-sky-clouds-countryside-natu.jpg')
+      - label: Night Fortress
+        value: url('https://img1.goodfon.com/wallpaper/nbig/6/d3/art-paint-painting-castle.jpg')
+      - label: Medieval Parchment
+        value: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+  - id: page-transparency-custom
+    title: Note Transparency
+    default: 75
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 5
+  - id: filter-heading
+    title: Filters
+    type: heading
+    level: 4
+    collapsed: true
+  - id: img-blur
+    title: Blur
+    type: variable-number-slider
+    default: 3
+    format: px
+    max: 10
+    min: 0
+    step: 1
+  - id: img-sat
+    title: Saturation
+    default: 100
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 200
+    step: 5
+  - id: position-heading
+    title: Size and Position
+    type: heading
+    level: 4
+    collapsed: true
+  - id: img-position-y
+    title: Vertical Position
+    type: variable-number-slider
+    format: "%"
+    default: 50
+    min: 0
+    max: 100
+    step: 5
+  - id: img-position-x
+    title: Horizontal Position
+    type: variable-number-slider
+    format: "%"
+    default: 50
+    min: 0
+    max: 100
+    step: 5
+  - id: img-bg-size
+    title: Size
+    type: variable-select
+    default: cover
+    options:
+      - label: Cover
+        value: cover
+      - label: Custom Zoom
+        value: var(--img-bg-size-custom)
+  - id: img-bg-size-custom
+    title: Zoom
+    type: variable-number-slider
+    format: "%"
+    default: 100
+    min: 100
+    max: 200
+    step: 5
+  - id: typography-heading
+    title: 🅰️ Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - id: headings-and-titles-heading
+    title: Headings and Titles
+    type: heading
+    level: 3
+    collapsed: true
+  - id: headings-heading
+    title: Headings
+    type: heading
+    level: 4
+    collapsed: true
+  - id: heading-font
+    title: Heading Font
+    description: This font effects headings, links, and highlighted text.
+    type: variable-select
+    allowEmpty: false
+    default: "Merriweather Sans"
+    options:
+      - "Merriweather Sans"
+      - "Merriweather"
+      - "DM Serif Display"
+      - "Vollkorn"
+      - "EB Garamond"
+      - "Abril Fatface"
+      - "Playfair Display"
+      - "Inknut Antiqua"
+      - "Marko One"
+      - "Quattrocento"
+      - "Avenir Next"
+      - "Crimson Text"
+      - "Fraunces"
+      - "Gentium Book Plus"
+      - "Koh Santepheap"
+      - "PT Serif"
+      - "Tajawal"
+      - "Vesper Libre"
+      - "Montserrat"
+      - "Faster One"
+      - "Oleo Script"
+      - "Lemon"
+      - "Lilita One"
+      - "Merienda"
+      - "Playball"
+      - "Rowdies"
+      - "Nabla"
+      - "Shrikhand"
+      - "Aboreto"
+      - "Bangers"
+      - "Figtree"
+      - "Albert Sans"
+      - "General Sans"
+      - "Outfit"
+      - "Lexend"
+      - "Red Hat Text"
+      - "Satoshi"
+      - "Sen"
+      - "Spline Sans"
+      - "Inter"
+      - "Prompt"
+      - "Poppins"
+      - "Roboto"
+      - "Roboto Condensed"
+      - "Rubik"
+      - "Nunito"
+      - "Nunito Sans"
+      - "Quicksand"
+      - "Tilt Warp"
+      - "Fira Code"
+      - "Fira Sans"
+      - "Fira Sans Condensed"
+      - "Teko"
+      - "Cutive Mono"
+      - "IBM Plex Mono"
+      - "Jetbrains Mono"
+      - "Spline Sans Mono"
+      - "Space Mono"
+      - "Titillium Web"
+      - "Martian Mono"
+      - "DM Mono"
+      - "Source Code Pro"
+  - id: heading-weight
+    title: Heading Weight
+    type: variable-select
+    allowEmpty: false
+    default: "700"
+    options:
+      - label: Light
+        value: 300
+      - label: Normal
+        value: 400
+      - label: Medium
+        value: 500
+      - label: Semi Bold
+        value: 600
+      - label: Bold
+        value: 700
+      - label: Extra Bold
+        value: 800
+  - id: headings-size
+    title: Heading Size
+    type: class-select
+    default: headings-medium
+    options:
+      - label: Tiny
+        value: headings-tiny
+      - label: Small
+        value: headings-small
+      - label: Medium
+        value: headings-medium
+      - label: Large
+        value: headings-large
+      - label: Huge
+        value: headings-huge
+  - id: heading-style
+    title: Heading Style
+    type: variable-select
+    default: normal
+    options:
+      - italic
+      - normal
+  - id: heading-variant
+    title: Heading Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+      - all-small-caps
+  - id: left-align-h1
+    title: Left-Align Level 1 Headings
+    description: By default, level 1 headings are centered. Toggle this setting to make them left-aligned.
+    type: class-toggle
+    default: false
+  - id: header-shadow
+    title: Heading Text Shadow
+    type: class-toggle
+    default: false
+  - id: colored-headings
+    title: Colorful Headings
+    addCommand: true
+    type: class-toggle
+    default: false
+  - id: colored-headings-heading
+    title: Colorful Headings
+    type: heading
+    collapsed: true
+    level: 5
+  - id: h1-color-custom
+    title: Heading 1 Color
+    type: variable-select
+    default: var(--color-cyan)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: h2-color-custom
+    title: Heading 2 Color
+    type: variable-select
+    default: var(--color-blue)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: h3-color-custom
+    title: Heading 3 Color
+    type: variable-select
+    default: var(--color-purple)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: h4-color-custom
+    title: Heading 4 Color
+    type: variable-select
+    default: var(--color-pink)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: h5-color-custom
+    title: Heading 5 Color
+    type: variable-select
+    default: var(--color-red)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: h6-color-custom
+    title: Heading 6 Color
+    type: variable-select
+    default: var(--color-orange)
+    options:
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+  - id: inline-title-heading
+    title: Inline Titles
+    type: heading
+    level: 4
+    collapsed: true
+  - id: inline-title-size
+    title: Inline Title Size
+    type: variable-select
+    allowEmpty: false
+    default: 2.5em
+    options:
+      - label: Small
+        value: 2em
+      - label: Medium
+        value: 2.5em
+      - label: Large
+        value: 3.8em
+      - label: Huge
+        value: 4.4em
+
+  - id: inline-title-weight
+    title: Inline Title Weight
+    default: var(--heading-weight)
+    type: variable-select
+    options:
+      - label: Heading Weight (Default)
+        value: var(--heading-weight)
+      - label: Light
+        value: 300
+      - label: Normal
+        value: 400
+      - label: Medium
+        value: 500
+      - label: Semi Bold
+        value: 600
+      - label: Bold
+        value: 700
+      - label: Extra Bold
+        value: 800
+
+  - id: inline-title-font
+    title: Inline Title Font Font
+    type: variable-select
+    allowEmpty: false
+    default: var(--heading-font)
+    options:
+      - var(--heading-font)
+      - "Merriweather Sans"
+      - "Merriweather"
+      - "DM Serif Display"
+      - "Vollkorn"
+      - "EB Garamond"
+      - "Abril Fatface"
+      - "Playfair Display"
+      - "Inknut Antiqua"
+      - "Marko One"
+      - "Quattrocento"
+      - "Avenir Next"
+      - "Crimson Text"
+      - "Fraunces"
+      - "Gentium Book Plus"
+      - "Koh Santepheap"
+      - "PT Serif"
+      - "Tajawal"
+      - "Vesper Libre"
+      - "Montserrat"
+      - "Faster One"
+      - "Oleo Script"
+      - "Lemon"
+      - "Lilita One"
+      - "Merienda"
+      - "Playball"
+      - "Rowdies"
+      - "Nabla"
+      - "Shrikhand"
+      - "Aboreto"
+      - "Bangers"
+      - "Figtree"
+      - "Albert Sans"
+      - "General Sans"
+      - "Outfit"
+      - "Lexend"
+      - "Red Hat Text"
+      - "Satoshi"
+      - "Sen"
+      - "Spline Sans"
+      - "Inter"
+      - "Prompt"
+      - "Poppins"
+      - "Roboto"
+      - "Roboto Condensed"
+      - "Rubik"
+      - "Nunito"
+      - "Nunito Sans"
+      - "Quicksand"
+      - "Tilt Warp"
+      - "Fira Code"
+      - "Fira Sans"
+      - "Fira Sans Condensed"
+      - "Teko"
+      - "Cutive Mono"
+      - "IBM Plex Mono"
+      - "Jetbrains Mono"
+      - "Spline Sans Mono"
+      - "Space Mono"
+      - "Titillium Web"
+      - "Martian Mono"
+      - "DM Mono"
+      - "Source Code Pro"
+  - id: inline-title-style
+    title: Inline Title Style
+    type: variable-select
+    default: normal
+    options:
+      - italic
+      - normal
+  - id: inline-title-variant
+    title: Inline Title Variant
+    type: variable-select
+    default: var(--heading-variant)
+    options:
+      - var(--heading-variant)
+      - normal
+      - small-caps
+      - all-small-caps
+  - id: inline-title-color
+    title: Inline Title Color
+    type: variable-select
+    default: var(--text-normal)
+    options:
+      - label: Default
+        value: var(--text-normal)
+      - label: Accent 1
+        value: var(--color-accent-1)
+      - label: Accent 2
+        value: var(--color-accent-2)
+      - label: Accent 3
+        value: var(--color-accent-3)
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Yellow
+        value: var(--color-yellow)
+      - label: Green
+        value: var(--color-green)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+  - id: title-shadow
+    title: Inline Title Text Shadow
+    type: class-toggle
+    default: false
+  - id: hide-title
+    title: Hide Inline Title
+    type: class-toggle
+    default: false
+  - id: main-text-heading
+    title: Main Text
+    type: heading
+    level: 3
+    collapsed: true
+  - id: p-indent-bab
+    title: Indent Paragraphs
+    type: class-toggle
+    default: true
+  - id: font-main
+    title: Main Font
+    description: This font is used for much of the interface and makes up most of a notes body.
+    type: variable-select
+    allowEmpty: false
+    default: "Nunito Sans"
+    options:
+      - "Nunito Sans"
+      - "Nunito"
+      - "Quicksand"
+      - "Albert Sans"
+      - "Avenir Next"
+      - "Red Hat Text"
+      - "Figtree"
+      - "Inter"
+      - "Lexend"
+      - "Outfit"
+      - "Poppins"
+      - "Prompt"
+      - "Roboto"
+      - "Roboto Condensed"
+      - "Rubik"
+      - "General Sans"
+      - "Satoshi"
+      - "Sen"
+      - "Spline Sans"
+      - "Merriweather Sans"
+      - "Merriweather"
+      - "Crimson Text"
+      - "Fraunces"
+      - "Gentium Book Plus"
+      - "Vesper Libre"
+      - "PT Serif"
+      - "Koh Santepheap"
+      - "Tajawal"
+      - "EB Garamond"
+      - "Quattrocento"
+      - "Vollkorn"
+      - "Inknut Antiqua"
+      - "Montserrat"
+      - "Oleo Script"
+      - "Playball"
+      - "Merienda"
+      - "Fira Code"
+      - "Fira Sans"
+      - "Fira Sans Condensed"
+      - "Titillium Web"
+      - "Cutive Mono"
+      - "Martian Mono"
+      - "Space Mono"
+      - "Spline Sans Mono"
+      - "DM Mono"
+      - "IBM Plex Mono"
+      - "Jetbrains Mono"
+      - "Source Code Pro"
+  - id: font-normal
+    title: Main Font Weight
+    type: variable-select
+    allowEmpty: false
+    default: "400"
+    options:
+      - label: Light
+        value: 300
+      - label: Normal
+        value: 400
+      - label: Medium
+        value: 500
+      - label: Semi Bold
+        value: 600
+      - label: Bold
+        value: 700
+      - label: Extra Bold
+        value: 800
+  - id: font-emoji
+    title: Emoji Style
+    description: Choose how emojis will appear in the body of a note.
+    type: variable-select
+    allowEmpty: false
+    default: "Noto Color Emoji"
+    options:
+      - "Noto Color Emoji"
+      - "Noto Emoji"
+  - id: custom-line-height
+    title: Line Height
+    description: Control the line spacing in the body of a note.
+    type: variable-number-slider
+    default: 2
+    format: em
+    min: 1.5
+    max: 3
+    step: 0.1
+  - id: code-heading
+    title: Code
+    type: heading
+    level: 3
+    collapsed: true
+  - id: code-blocks-heading
+    title: Code Blocks
+    type: heading
+    level: 4
+    collapsed: true
+  - id: custom-code-height
+    title: Code Block Line Height
+    description: Control the line height of code blocks
+    type: variable-number-slider
+    default: 1
+    format: em
+    min: 1
+    max: 3
+    step: 0.1
+  - id: img-heading
+    title: 🖼️ Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: img-adjust
+    title: Adjust Image Size
+    description: Limit the width of images to 700px. Works best with wide line lengths.
+    type: class-toggle
+    addCommand: true
+    default: true
+  - id: img-center
+    title: Center Images
+    type: class-toggle
+    default: true
+  - id: tags-heading
+    title: 🏷️ Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-tag-icons
+    title: Hide Special Tag Icons
+    type: class-toggle
+    default: false
+  - id: icons-heading
+    title: ℹ️ Icons
+    description: Customize note title icons created using the `icon` css class.
+    type: heading
+    level: 2
+    collapsed: true
+  - id: icon-style
+    title: Icon Style
+    type: class-select
+    allowEmpty: false
+    default: icon-default
+    options:
+      - label: Round
+        value: icon-default
+      - label: Square
+        value: icon-square
+      - label: Circle
+        value: icon-circle
+      - label: Outlined Circle
+        value: icon-bordered
+  - id: icon-emoji
+    title: Icon Emoji Style
+    type: variable-select
+    allowEmpty: false
+    default: "Noto Color Emoji"
+    options:
+      - "Noto Color Emoji"
+      - "Noto Emoji"
+  - id: icon-background
+    title: Icon Background
+    type: variable-select
+    allowEmpty: false
+    default: var(--background-secondary-alt)
+    options:
+      - label: Transparent
+        value: transparent
+      - label: Lighter
+        value: var(--panel-child)
+      - label: Pale
+        value: var(--background-secondary-alt)
+      - label: Medium
+        value: var(--background-secondary)
+      - label: Accent
+        value: var(--color-accent-2)
+  - id: icon-shadow
+    title: Icon Shadow
+    description: NOTE - will be overriden by the Turn Off Shadows option under the Workspace heading.
+    type: variable-select
+    allowEmpty: false
+    default: var(--shadow-ui) inset, var(--shadow-ui);
+    options:
+      - label: Inset and Outset
+        value: var(--shadow-ui) inset, var(--shadow-ui);
+      - label: Outset
+        value: var(--shadow-ui)
+      - label: Inset
+        value: var(--shadow-ui) inset
+      - label: None
+        value: none
+  - id: icon-no-border
+    title: Remove Icon Border
+    type: class-toggle
+    default: false
+  - id: modals-heading
+    title: 💬 Modals
+    type: heading
+    level: 2
+    collapsed: true
+  - id: full-screen-modal
+    title: Full-Screen Modals
+    description: Show settings and Community Modals in full-screen.
+    type: class-toggle
+    default: true
+  - id: plugins-heading
+    title: 🔌 Plug-Ins
+    type: heading
+    level: 2
+    collapsed: true
+  - id: page-gallery-heading
+    title: Page Gallery
+    type: heading
+    level: 3
+    collapsed: true
+  - id: tile-radius
+    title: Tile Radius
+    description: Adjust the border radius for page gallery tiles.
+    type: variable-number-slider
+    default: 14
+    format: px
+    min: 0
+    max: 30
+    step: 1
+  - id: tile-img-radius
+    title: Image Radius
+    description: Adjust the border radius for page gallery images only. By default, this is the same as the tile radius, but you can override it with something like "16px" or "10px 10px 0px 0px".
+    type: variable-text
+    default: var(--tile-radius)
+  - id: tile-padding
+    title: Padding
+    description: Change the padding inside page gallery tiles.
+    type: variable-number-slider
+    default: 8
+    format: px
+    min: 0
+    max: 20
+    step: 1
+  - id: tile-field-padding
+    title: Field Padding
+    description: Change the padding around page gallery fields only.
+    type: variable-number-slider
+    default: 5
+    format: px
+    min: 0
+    max: 20
+    step: 1
+  - id: page-gallery-flexgrow
+    title: Flexgrow for Tiles
+    description: When turned on, tile widths will increase to fill empty gaps.
+    type: class-toggle
+    default: false

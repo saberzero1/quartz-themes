@@ -3,5 +3,9 @@
   "version": "1.0.2",
   "minAppVersion": "1.0.0",
   "author": "Tom Kay",
-  "authorUrl": "https://tomkay.dev"
+  "authorUrl": "https://tomkay.dev",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

@@ -2,7 +2,7 @@
 Flexoki Warm
 MIT License
 Copyright (c) 2023 Steph Ango
-Copyright (c) 2024 Olivér Falvai
+Copyright (c) 2024 Oliver Falvai
 https://stephango.com/flexoki
 */
 
@@ -105,12 +105,15 @@ settings:
   --accent-l: 33%;
   /* BEGIN changes to original Flexoki theme */
   /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
-  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl-default:
+    var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
   --color-accent-hsl: var(
     --flexoki-warm-light-theme-accent-override,
     var(--color-accent-hsl-default)
   ); /* Override of base theme variable */
-  --color-accent: hsl(var(--color-accent-hsl)); /* Override of base theme variable */
+  --color-accent: hsl(
+    var(--color-accent-hsl)
+  ); /* Override of base theme variable */
   --color-accent-1: hsl(
     from var(--color-accent) calc(h - 3) calc(s * 1.02) calc(l * 1.15)
   ); /* Override of base theme variable */
@@ -162,12 +165,15 @@ settings:
   --accent-l: 33%;
   /* BEGIN changes to original Flexoki theme */
   /* Final accent color is either the override theme setting or the native accent color (which defaults to the above) */
-  --color-accent-hsl-default: var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
+  --color-accent-hsl-default:
+    var(--accent-h), var(--accent-s), var(--accent-l); /* This is extracted to a new variable in order to make the variable below work */
   --color-accent-hsl: var(
     --flexoki-warm-dark-theme-accent-override,
     var(--color-accent-hsl-default)
   ); /* Override of base theme variable */
-  --color-accent: hsl(var(--color-accent-hsl)); /* Override of base theme variable */
+  --color-accent: hsl(
+    var(--color-accent-hsl)
+  ); /* Override of base theme variable */
   --color-accent-1: hsl(
     from var(--color-accent) calc(h - 3) calc(s * 1.02) calc(l * 1.15)
   ); /* Override of base theme variable */

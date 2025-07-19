@@ -104,7 +104,8 @@ settings:
 }
 
 /**/
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   background: transparent;
   position: relative;
   --frame-left-space: 0px !important;
@@ -419,7 +420,9 @@ svg * {
 .theme-light.is-frameless.is-hidden-frameless .titlebar:before,
 .theme-light div.app-container:before,
 .theme-light .titlebar-button-container:before,
-.theme-light .workspace-split.mod-left-split .workspace-sidedock-vault-profile:before,
+.theme-light
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile:before,
 .theme-light .workspace-leaf:before,
 .theme-light
   div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
@@ -448,7 +451,8 @@ svg * {
 }
 
 /*MACOS FIX*/
-.mod-macos.theme-light .workspace-tab-header-container:not(.workspace-split):before {
+.mod-macos.theme-light
+  .workspace-tab-header-container:not(.workspace-split):before {
   content: "";
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
@@ -467,7 +471,9 @@ svg * {
 .theme-dark.is-frameless.is-hidden-frameless .titlebar:before,
 .theme-dark div.app-container:before,
 .theme-dark .titlebar-button-container:before,
-.theme-dark .workspace-split.mod-left-split .workspace-sidedock-vault-profile:before,
+.theme-dark
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile:before,
 .theme-dark .workspace-leaf:before,
 .theme-dark
   div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
@@ -496,7 +502,8 @@ svg * {
 }
 
 /*MACOS FIX*/
-.mod-macos.theme-dark .workspace-tab-header-container:not(.workspace-split):before {
+.mod-macos.theme-dark
+  .workspace-tab-header-container:not(.workspace-split):before {
   content: "";
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
@@ -542,7 +549,8 @@ div.app-container
   content: "";
   border-radius: 0.4em;
   padding-left: 10px !important;
-  background-image: linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
+  background-image:
+    linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 182px;
@@ -553,7 +561,8 @@ div.app-container
   position: relative;
   border-radius: 0.4em;
   padding-left: 10px !important;
-  background-image: linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
+  background-image:
+    linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 182px;
@@ -568,7 +577,8 @@ div.app-container
   margin-bottom: 0.5em !important;
   content: "";
   padding-left: 10px !important;
-  background-image: linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
+  background-image:
+    linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 182px;
@@ -581,7 +591,8 @@ div.app-container
   margin-bottom: 0.5em !important;
   content: "";
   padding-left: 10px !important;
-  background-image: linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
+  background-image:
+    linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 182px;
@@ -1061,7 +1072,12 @@ mjx-math {
 .theme-light .cm-formatting-header {
   font-weight: 900;
   color: transparent;
-  background: linear-gradient(0deg, var(--accent-color-alt), black, var(--accent-color-alt));
+  background: linear-gradient(
+    0deg,
+    var(--accent-color-alt),
+    black,
+    var(--accent-color-alt)
+  );
   background-size: 100% 200%;
   background-clip: text;
   animation: 5s animated-syntax linear infinite;
@@ -1273,7 +1289,8 @@ button.mod-cta:hover {
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
   transition: 0.5s ease-in-out;
-  box-shadow: inset 0 0 5px hsla(var(--accent-h), var(--accent-s), calc(0.7 * var(--accent-l)), 1);
+  box-shadow: inset 0 0 5px
+    hsla(var(--accent-h), var(--accent-s), calc(0.7 * var(--accent-l)), 1);
   color: var(--accent-color-h1);
   border-radius: 5px;
   background-color: var(--accent-color-light10);
@@ -1422,7 +1439,9 @@ body
 }
 
 /*align top right items so that they dont interfere with ui buttons*/
-.workspace-split.mod-right-split .workspace-tabs .workspace-tab-header-container {
+.workspace-split.mod-right-split
+  .workspace-tabs
+  .workspace-tab-header-container {
   padding-right: 120px !important;
 }
 
@@ -1578,8 +1597,12 @@ body.is-frameless.is-hidden-frameless .titlebar {
   --callout-border-opacity: 0.8 !important;
   border-radius: 8px;
   border-color: var(--accent-color-light9);
-  background-color: var(--accent-color-light01, var(--callout-background-color, #f5f5f5));
-  box-shadow: 0 0 5px var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
+  background-color: var(
+    --accent-color-light01,
+    var(--callout-background-color, #f5f5f5)
+  );
+  box-shadow: 0 0 5px
+    var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
   padding: 1.2em 1.2em 1.2em 1.2em;
   margin-left: 5px !important;
   margin-right: 5px !important;
@@ -1612,8 +1635,12 @@ body.is-frameless.is-hidden-frameless .titlebar {
   --callout-border-opacity: 0.8 !important;
   border-radius: 8px;
   border-color: var(--accent-color-light9);
-  background-color: var(--accent-color-light01, var(--callout-background-color, #f5f5f5));
-  box-shadow: 0 0 5px var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
+  background-color: var(
+    --accent-color-light01,
+    var(--callout-background-color, #f5f5f5)
+  );
+  box-shadow: 0 0 5px
+    var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
   padding: 1.2em 1.2em 1.2em 1.2em;
   margin-left: 5px !important;
   margin-right: 5px !important;

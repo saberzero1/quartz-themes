@@ -2,7 +2,7 @@ import * as postcss from "postcss";
 import * as scssSyntax from "postcss-scss";
 import * as fs from "fs"
 import * as path from "path"
-import { combineIdenticalSelectors } from "./postcss.mjs";
+import { format } from "../extensions/formatter.mjs";
 
 /**
  * Resolves the full path for an SCSS @use rule.
@@ -164,9 +164,11 @@ function processAndInline(
           nodesToKeepOrReplace.push(node);
         }
       } else {
-        console.warn(
-          `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
-        );
+        if (modulePath !== "../variables.scss") {
+          console.warn(
+            `Could not resolve @use path: "${modulePath}" in ${absoluteCurrentFilePath}`,
+          );
+        }
         nodesToKeepOrReplace.push(node);
       }
     } else {

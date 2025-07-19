@@ -1,0 +1,38 @@
+name: Buena Vista
+id: buenavista
+settings:
+  - id: highlight-mode
+    title: Colour scheme mode
+    type: class-select
+    allowEmpty: false
+    default: "color-scheme-complementary"
+    options:
+      - label: None
+        value: "color-scheme-none"
+      - label: Monochromatic
+        value: "color-scheme-monochrome"
+      - label: Complementary
+        value: "color-scheme-complementary"
+      - label: Even triad
+        value: "color-scheme-even-triad"
+      - label: Complementary triad
+        value: "color-scheme-comp-triad"
+      - label: Analogous
+        value: "color-scheme-analogous"
+      - label: Tetradic (experimental)
+        value: "color-scheme-tetradic"
+  - id: title-effects
+    title: Effects
+    type: heading
+    level: 1
+  - id: blur-enabled
+    title: Blur
+    type: class-toggle
+    default: false
+  - id: blur-size
+    title: Blur size
+    type: variable-number-slider
+    default: 4
+    min: 1
+    max: 8
+    step: 1

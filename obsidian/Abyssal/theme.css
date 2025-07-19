@@ -144,17 +144,33 @@ body {
   --color-base-70: #141f25;
   --color-base-100: #070b0d;
 
-  --color-accent-alt: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%));
+  --color-accent-alt: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 25%)
+  );
 
   /* 2.b —— Text and Titles Colors                           */
   --text-normal: var(--color-base-70);
   --text-completed-checkboxes: #3e657c;
   --text-completed-checkboxes-embed: #3f6b88;
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  );
 
-  --text-accent-hover-embed: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-  --text-accent-emphasis: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%));
+  --text-accent-hover-embed: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 5%)
+  );
+  --text-accent-emphasis: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 2%)
+  );
 
   --inline-title-border: var(--color-base-25);
   --inline-title-color: #7c93a4;
@@ -193,7 +209,10 @@ body {
   --tab-radius: 9px;
   --tab-radius-active: 6px 6px 0 0;
 
-  --modal-border-color: var(--color-base-25, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-25,
+    var(--background-modifier-border-focus)
+  );
 
   --workspace-background-translucent: hsla(205, 35%, 92%, 0.6);
 
@@ -229,8 +248,10 @@ body {
   --graph-node-attachment: var(--color-yellow);
 
   /* 2.h —— Shadows                             */
-  --box-shadow-layered: 0px 3px 10px -100px rgba(26, 40, 51, 0.15),
-    0px 11px 35px -100px rgba(26, 40, 51, 0.25), 0px 52px 150px -100px rgba(26, 40, 51, 0.35);
+  --box-shadow-layered:
+    0px 3px 10px -100px rgba(26, 40, 51, 0.15),
+    0px 11px 35px -100px rgba(26, 40, 51, 0.25),
+    0px 52px 150px -100px rgba(26, 40, 51, 0.35);
 
   --background-modifier-border-focus: var(--color-base-30);
 
@@ -306,17 +327,33 @@ body {
   --color-base-70: #7aa3b8;
   --color-base-100: #bdd1db;
 
-  --color-accent-alt: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 15%));
+  --color-accent-alt: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-dark) + 15%)
+  );
 
   /* 3.b —— Text and Titles Colors                           */
   --text-normal: var(--color-base-100);
   --text-completed-checkboxes: #3e657c;
   --text-completed-checkboxes-embed: #3f6b88;
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-dark));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 20%));
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-dark) + 20%)
+  );
 
-  --text-accent-hover-embed: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%));
-  --text-accent-emphasis: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 10%));
+  --text-accent-hover-embed: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 50%)
+  );
+  --text-accent-emphasis: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-dark) + 10%)
+  );
 
   --inline-title-border: var(--color-base-35);
   --inline-title-color: #3d6681;
@@ -382,9 +419,10 @@ body {
   --graph-node-attachment: var(--color-yellow);
 
   /* 3.h —— Shadows                             */
-  --box-shadow-layered: 1.5px 0px 5px rgba(10, 17, 20, 0.015),
-    3.5px 0px 15px rgba(10, 17, 20, 0.025), 8px 0px 35px rgba(10, 17, 20, 0.035),
-    27px 0px 125px rgba(10, 17, 20, 0.05);
+  --box-shadow-layered:
+    1.5px 0px 5px rgba(10, 17, 20, 0.015),
+    3.5px 0px 15px rgba(10, 17, 20, 0.025),
+    8px 0px 35px rgba(10, 17, 20, 0.035), 27px 0px 125px rgba(10, 17, 20, 0.05);
 
   /* 3.i —— Canvas                             */
   --canvas-color: 53, 84, 100;
@@ -661,7 +699,11 @@ span.cm-highlight strong {
 .markdown-preview-view mark,
 span.search-result-file-matched-text {
   background: rgb(226, 228, 99);
-  background: linear-gradient(270deg, rgba(253, 255, 134, 0.75) 0%, rgba(241, 245, 90, 0.9) 88%);
+  background: linear-gradient(
+    270deg,
+    rgba(253, 255, 134, 0.75) 0%,
+    rgba(241, 245, 90, 0.9) 88%
+  );
   border-radius: var(--radius-s);
   padding: 0.05em 0.25em;
 }
@@ -669,7 +711,11 @@ span.search-result-file-matched-text {
 .theme-light .markdown-preview-view mark,
 span.search-result-file-matched-text {
   background: rgb(253, 250, 10);
-  background: linear-gradient(270deg, rgba(253, 220, 10, 0.85) 0%, rgba(241, 235, 30, 0.9) 88%);
+  background: linear-gradient(
+    270deg,
+    rgba(253, 220, 10, 0.85) 0%,
+    rgba(241, 235, 30, 0.9) 88%
+  );
   border-radius: var(--radius-s);
   padding: 0.05em 0.25em;
 }
@@ -1047,7 +1093,10 @@ hr {
   color: var(--text-completed-checkboxes);
 }
 
-.markdown-preview-view .markdown-embed-content ul > li.task-list-item.is-checked,
+.markdown-preview-view
+  .markdown-embed-content
+  ul
+  > li.task-list-item.is-checked,
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
   color: var(--text-completed-checkboxes-embed);

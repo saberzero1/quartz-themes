@@ -1,9 +1,34 @@
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  body {
 
-  //%%LIGHT%%
+    color-scheme: light;
 
-  .callout {
-    --callout-blend-mode: darken;
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    //%%:root%--accent-h%%
+    //%%:root%--accent-s%%
+    //%%:root%--accent-l%%
+    //%%body%--accent-h%%
+    //%%body%--accent-s%%
+    //%%body%--accent-l%%
+    //%%.theme-light%--accent-h%%
+    //%%.theme-light%--accent-s%%
+    //%%.theme-light%--accent-l%%
+
+    //%%.theme-light%%
+
   }
 }
 

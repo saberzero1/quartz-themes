@@ -1,12 +1,16 @@
 body {
   --sans-serif: "SF Pro", ui-sans-serif, sans-serif;
   --serif: "New York", "Georgia", ui-serif, serif;
-  --mono: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-    "DejaVu Sans Mono", monospace;
+  --mono:
+    "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+    Consolas, "DejaVu Sans Mono", monospace;
 
-  --font-interface: var(--font-interface-override), var(--font-interface-theme), var(--sans-serif);
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--sans-serif);
   --font-text: var(--font-text-override), var(--font-text-theme), var(--serif);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--mono);
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme), var(--mono);
 
   --h1-font: var(--sans-serif);
   --h2-font: var(--sans-serif);

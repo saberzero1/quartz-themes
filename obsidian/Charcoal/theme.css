@@ -14,10 +14,13 @@
   --font-medium: 21px;
   --line-height-preview: 1.7em;
   --line-height-header-preview: 1em;
-  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next,
+  --font-family-mdpreview:
+    Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next,
     Times New Roman;
-  --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
-  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next,
+  --font-family-editor:
+    Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
+  --font-family-preview:
+    Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next,
     Times New Roman;
   --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
 }
@@ -668,7 +671,8 @@ code {
 /* in-line block for editor */
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg) !important;
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -746,12 +750,12 @@ background-color: var(--text-selection) !important;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  /* 	margin-right: 0.25em; */
+  /*     margin-right: 0.25em; */
   vertical-align: -0.4em;
 }
 
 .markdown-preview-view blockquote p {
-  /* 	color: #23384d; */
+  /*     color: #23384d; */
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   display: inline;
@@ -830,7 +834,7 @@ input[type="checkbox"]:checked,
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
 input[type="range"] {
@@ -1143,7 +1147,11 @@ background-color: var(--checkbox-color);
 }
 
 .theme-dark .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .theme-dark .workspace-leaf.mod-active .view-header {
@@ -1155,7 +1163,11 @@ background-color: var(--checkbox-color);
 .workspace-leaf .view-header-title-container:after,
 .workspace-leaf.mod-active .view-header-title-container:after {
   width: 0px;
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title,
@@ -1253,7 +1265,11 @@ background-color: var(--checkbox-color);
   height: 30px;
   top: unset;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 /* unset the title container height and swap padding */
@@ -1366,7 +1382,13 @@ Hide scrollbar for editor.CodeMirror-vscrollbar {
   display: none !important;
 }
 
-disable the scrollbar for search pane .search-result-container::-webkit-scrollbar,
+disable
+  the
+  scrollbar
+  for
+  search
+  pane
+  .search-result-container::-webkit-scrollbar,
 .nav-files-container::-webkit-scrollbar,
 .tag-pane-tags::-webkit-scrollbar {
   display: none;
@@ -1515,11 +1537,13 @@ disable
 .workspace-ribbon.mod-right.is-collapsed ~ .workspace-split.mod-right-split {
   margin-right: 0px;
 }
-.workspace-ribbon.mod-right.is-collapsed:hover ~ .workspace-split.mod-right-split {
+.workspace-ribbon.mod-right.is-collapsed:hover
+  ~ .workspace-split.mod-right-split {
   transition: all 300ms ease-in-out;
   margin-right: 30px;
 }
-.workspace-ribbon.mod-left.is-collapsed:hover ~ .workspace-split.mod-left-split {
+.workspace-ribbon.mod-left.is-collapsed:hover
+  ~ .workspace-split.mod-left-split {
   transition: all 300ms ease-in-out;
   margin-right: 30px;
 }
@@ -1634,12 +1658,16 @@ background-color: var(--tag-bg);
   border-color: var(--interface-color-background);
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   border-bottom: 2px var(--interface-color-border);
   background-color: var(--interface-color-border);
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .workspace-leaf-content {
   border-color: var(--interface-color-border);
 }
 
@@ -1781,14 +1809,14 @@ background: white!important;
 .internal-embed > .markdown-embed,
 .internal-embed > .markdown-embed > .markdown-embed-content,
 .markdown-embed-content > * {
-	display: inline;
-	padding:10px;
+    display: inline;
+    padding:10px;
 }
  */
 /*
 .markdown-embed-link {
-	position: static;
-	display: inline;
+    position: static;
+    display: inline;
 }
  */
 
@@ -1888,11 +1916,15 @@ span.obsidian-search-match-highlight {
   left: -10px;
   top: -10px;
 }
-div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  .cm-string.cm-url:not(.cm-formatting) {
   font-size: 0;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  .cm-string.cm-url:not(.cm-formatting)::after {
   content: "🔗";
   font-size: 1rem;
 }
@@ -1943,7 +1975,7 @@ ol.footnotes-list {
 sub,
 sup {
   font-size: 0.7em;
-  /* 	color: #666; */
+  /*     color: #666; */
   position: middle;
   line-height: 0;
   vertical-align: super;

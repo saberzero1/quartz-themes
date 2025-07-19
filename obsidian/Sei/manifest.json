@@ -3,5 +3,9 @@
   "version": "1.0.5",
   "minAppVersion": "1.8.0",
   "author": "iwa",
-  "authorUrl": "https://github.com/iwa"
+  "authorUrl": "https://github.com/iwa",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

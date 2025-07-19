@@ -3,5 +3,9 @@
   "version": "1.5.1",
   "minAppVersion": "1.1.9",
   "author": "@antoKeinanen",
-  "authorUrl": "https://github.com/antoKeinanen/"
+  "authorUrl": "https://github.com/antoKeinanen/",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

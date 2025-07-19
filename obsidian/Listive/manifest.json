@@ -3,5 +3,9 @@
   "version": "0.7.1",
   "minAppVersion": "1.6.0",
   "author": "efemkay",
-  "authorUrl": "https://efemkay.github.io/"
+  "authorUrl": "https://efemkay.github.io/",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

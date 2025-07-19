@@ -3,5 +3,9 @@
   "version": "0.0.3",
   "minAppVersion": "1.0.0",
   "author": "dbarenholz",
-  "authorUrl": "https://github.com/dbarenholz"
+  "authorUrl": "https://github.com/dbarenholz",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

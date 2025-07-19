@@ -3,5 +3,9 @@
   "version": "1.12.11",
   "minAppVersion": "0.16.0",
   "author": "Akifyss",
-  "authorUrl": "https://github.com/Akifyss"
+  "authorUrl": "https://github.com/Akifyss",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

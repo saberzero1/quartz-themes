@@ -94,7 +94,11 @@ body {
   --accent-s: 41%;
   --accent-l: 60%;
 
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8.8%));
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 8.8%)
+  );
 }
 
 .theme-light {
@@ -194,7 +198,8 @@ ul > li.task-list-item[data-task="x"] a.internal-link {
 }
 
 .metadata-property[data-property-key="cssclasses"] .multi-select-pill {
-  border: var(--pill-border-width) var(--pill-border-style) var(--pill-border-color);
+  border: var(--pill-border-width) var(--pill-border-style)
+    var(--pill-border-color);
   cursor: crosshair;
 }
 
@@ -289,7 +294,9 @@ ul > li.task-list-item[data-task="X"] {
   background-color: transparent !important;
 }
 
-.tree-item-children.nav-folder-children .tree-item.nav-folder .nav-folder-title {
+.tree-item-children.nav-folder-children
+  .tree-item.nav-folder
+  .nav-folder-title {
   background: var(--active-bg);
 }
 
@@ -301,7 +308,15 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 .HyperMD-header
-  :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6, ),
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6,
+
+  ),
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
   text-transform: capitalize;
 }
@@ -421,7 +436,8 @@ a[href="#article"] {
 
 .callout[data-callout="center"] .callout-content blockquote,
 .callout[data-callout="cent"] .callout-content blockquote {
-  border-right: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-right: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
 }
 
 /* transparent Callouts */
@@ -555,7 +571,10 @@ a[href="#article"] {
 }
 
 /* Folders Icons */
-.nav-folder .nav-folder-title-content:not(div[data-path="/"] .nav-folder-title-content)::before {
+.nav-folder
+  .nav-folder-title-content:not(
+    div[data-path="/"] .nav-folder-title-content
+  )::before {
   content: "";
   position: relative;
   display: inline-block;
@@ -568,7 +587,7 @@ a[href="#article"] {
 }
 
 .nav-folder .nav-folder-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder-plus"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="feather feather-folder-plus"><pathd="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><linex1="12"y1="11"x2="12"y2="17"></line><linex1="9"y1="14"x2="15"y2="14"></line></svg>');
 }
 div[data-path="/"] .nav-folder-title-content {
   line-height: 1;

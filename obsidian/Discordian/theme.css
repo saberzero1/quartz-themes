@@ -4,11 +4,13 @@ DISCORDIAN THEME version 0.8.6
 
 :root {
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-editor: Catamaran, Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-monospace: Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S,
-    Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier,
-    monospace;
+  --font-editor:
+    Catamaran, Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-monospace:
+    Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S,
+    Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L,
+    Monaco, Courier New, Courier, monospace;
 
   /* discord palette */
   --discord-green: hsla(153, 46%, 49%, 1);
@@ -29,7 +31,8 @@ DISCORDIAN THEME version 0.8.6
   --discord-dark-hover: hsla(216, 7%, 14%, 0.7);
 
   --elevation-stroke: 0 1px 0 1px hsla(240, 11%, 2%, 0.1);
-  --elevation-low: 0 1px 0 hsla(240, 11%, 2%, 0.2), 0 1.5px 0 hsla(240, 8%, 3%, 0.05),
+  --elevation-low:
+    0 1px 0 hsla(240, 11%, 2%, 0.2), 0 1.5px 0 hsla(240, 8%, 3%, 0.05),
     0 2px 0 hsla(240, 11%, 2%, 0.05);
   --elevation-medium: 0 4px 4px hsla(0, 0%, 0%, 0.16);
   --elevation-high: 0 8px 16px hsla(0, 0%, 0%, 0.24);
@@ -130,7 +133,9 @@ DISCORDIAN THEME version 0.8.6
 }
 
 /* HACK for settings panel if title bar is brought back by user */
-body.theme-dark:not(.hider-frameless):not(.discordian-writer):not(.discordian-theme)
+body.theme-dark:not(.hider-frameless):not(.discordian-writer):not(
+    .discordian-theme
+  )
   .modal-container {
   top: -22px !important;
   height: 100vh !important;
@@ -151,7 +156,9 @@ body {
   padding-top: 0 !important;
 }
 
-body:not(.mod-windows):not(.discordian-theme) .mod-left-split .workspace-tab-header-container {
+body:not(.mod-windows):not(.discordian-theme)
+  .mod-left-split
+  .workspace-tab-header-container {
   padding-left: 24px !important;
 }
 
@@ -164,7 +171,9 @@ body:not(.plugin-sliding-panes):not(.is-fullscreen):not(.mod-windows)
   transition: padding-left 0.15s ease;
 }
 
-body.hider-ribbon:not(.plugin-sliding-panes):not(.is-fullscreen):not(.mod-windows)
+body.hider-ribbon:not(.plugin-sliding-panes):not(.is-fullscreen):not(
+    .mod-windows
+  )
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
@@ -173,7 +182,9 @@ body.hider-ribbon:not(.plugin-sliding-panes):not(.is-fullscreen):not(.mod-window
   transition: padding-left 0.15s ease;
 }
 
-body.theme-dark:not(.hider-frameless):not(.discordian-writer):not(.discordian-theme)
+body.theme-dark:not(.hider-frameless):not(.discordian-writer):not(
+    .discordian-theme
+  )
   .modal-container,
 body.theme-dark:not(.hider-frameless) .modal-container,
 body.theme-dark:not(.discordian-writer) .modal-container,
@@ -484,7 +495,7 @@ Dropdown */
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(32, 34, 37, 0.5) !important;
   border-radius: 6px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat, repeat;
   background-position:
     right 0.7em top 50%,
@@ -571,7 +582,9 @@ Editor */
   width: calc(var(--readable-line-length) + 16px);
 }
 
-.discordian-writer-mode .markdown-source-view.is-readable-line-width .CodeMirror {
+.discordian-writer-mode
+  .markdown-source-view.is-readable-line-width
+  .CodeMirror {
   width: calc(var(--readable-line-length) + 0px);
 }
 
@@ -826,46 +839,46 @@ Inline code in headers should respect header size
 */
 
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-1:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-1:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-1 {
   font-size: 2rem;
 }
 
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-2:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-2:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-2 {
   font-size: 1.625rem;
 }
 
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-3:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-3:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-3 {
   font-size: 1.375rem;
 }
 
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-4:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-4:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-4,
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-5:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-5:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-5 {
   font-size: 1.125rem;
 }
 
 .cm-s-obsidian
-  span.cm-inline-code.cm-header-6:not(.cm-formatting):not(.cm-hmd-indented-code):not(
-    .obsidian-search-match-highlight
-  ),
+  span.cm-inline-code.cm-header-6:not(.cm-formatting):not(
+    .cm-hmd-indented-code
+  ):not(.obsidian-search-match-highlight),
 .cm-s-obsidian span.cm-inline-code.cm-header-6 {
   font-size: 1rem;
 }
@@ -1055,7 +1068,9 @@ codeblocks - scrollable content without horizontal scrollbar */
 }
 
 .markdown-preview-section pre::-webkit-scrollbar-thumb {
-  background-color: var(--background-primary); /* --scrollbar-thin-thumb to reveal */
+  background-color: var(
+    --background-primary
+  ); /* --scrollbar-thin-thumb to reveal */
   border: 6px solid transparent;
 }
 
@@ -1069,7 +1084,9 @@ tables - scrollable content without horizontal scrollbar */
 }
 
 .CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--background-primary); /* --scrollbar-thin-thumb to reveal */
+  background-color: var(
+    --background-primary
+  ); /* --scrollbar-thin-thumb to reveal */
   border: 6px solid transparent;
 }
 
@@ -1077,14 +1094,18 @@ tables - scrollable content without horizontal scrollbar */
   overflow-x: auto;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-section::-webkit-scrollbar-track {
+.markdown-preview-view.is-readable-line-width
+  .markdown-preview-section::-webkit-scrollbar-track {
   border: 0;
   border-radius: 0;
   background-color: var(--background-primary);
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-section::-webkit-scrollbar-thumb {
-  background-color: var(--background-primary); /* --scrollbar-thin-thumb to reveal */
+.markdown-preview-view.is-readable-line-width
+  .markdown-preview-section::-webkit-scrollbar-thumb {
+  background-color: var(
+    --background-primary
+  ); /* --scrollbar-thin-thumb to reveal */
   border: 6px solid transparent;
 }
 
@@ -1187,7 +1208,9 @@ Split Mode */
   height: 2px;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   padding-right: 0;
 }
 
@@ -1205,7 +1228,10 @@ Split Mode */
   transition: none;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content .view-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content
+  .view-content {
   padding-right: 0;
 }
 
@@ -1365,7 +1391,11 @@ Avoid character-level word breaks */
   margin-right: 10px;
 }
 
-.nav-folder-children .nav-folder-children > .nav-file > .nav-file-title > .nav-file-title-content {
+.nav-folder-children
+  .nav-folder-children
+  > .nav-file
+  > .nav-file-title
+  > .nav-file-title-content {
   padding: 2px 0;
 }
 
@@ -1382,7 +1412,10 @@ Files & folders: active & hover */
   left: -4px;
 }
 
-.nav-folder-children .nav-folder-children > .nav-file > .nav-file-title.is-active::before {
+.nav-folder-children
+  .nav-folder-children
+  > .nav-file
+  > .nav-file-title.is-active::before {
   content: none;
 }
 
@@ -1565,7 +1598,9 @@ Search */
 /*----------------------------------------------------------------
 Header */
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   border-bottom: 0;
   background-color: var(--background-primary);
 }
@@ -1622,7 +1657,11 @@ Header */
 }
 
 .view-header-title-container::after {
-  background: linear-gradient(to right, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 /* Change color of note title active pane */
@@ -1812,7 +1851,7 @@ input[type="checkbox"]:checked {
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 20 20'%3E%3Cpath d='M0 11l2-2l5 5L18 3l2 2L7 18z' fill='%23fff'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg), -webkit-transform: rotate(360deg), transform: rotate(360deg),' preserveAspectRatio='xMidYMid meet' viewBox='0 0 20 20'%3E%3Cpath d='M0 11l2-2l5 5L18 3l2 2L7 18z' fill='%23fff'/%3E%3C/svg%3E");
 }
 
 /*----------------------------------------------------------------
@@ -1902,7 +1941,9 @@ Adjust nested level task lists when collapsed
 Order matters here - from top level supported (7) down to first */
 
 .discordian-pretty-tasks-editor pre.HyperMD-list-line-7 {
-  padding-left: calc(12.25 * calc(var(--font-size-notes) + 0.125rem)) !important;
+  padding-left: calc(
+    12.25 * calc(var(--font-size-notes) + 0.125rem)
+  ) !important;
 }
 
 .discordian-pretty-tasks-editor pre.HyperMD-list-line-6 {
@@ -1921,7 +1962,8 @@ Order matters here - from top level supported (7) down to first */
   padding-left: calc(5.25 * calc(var(--font-size-notes) + 0.125rem)) !important;
 }
 
-.discordian-pretty-tasks-editor pre.HyperMD-list-line-2:not(.HyperMD-list-line-1) {
+.discordian-pretty-tasks-editor
+  pre.HyperMD-list-line-2:not(.HyperMD-list-line-1) {
   padding-left: calc(3.5 * calc(var(--font-size-notes) + 0.125rem)) !important;
 }
 
@@ -2991,11 +3033,16 @@ Graph controls */
   border-bottom: thin solid var(--background-modifier-accent);
 }
 
-.graph-control-section:not(:last-child) .tree-item-children > .setting-item:last-child {
+.graph-control-section:not(:last-child)
+  .tree-item-children
+  > .setting-item:last-child {
   padding-bottom: 20px;
 }
 
-.graph-controls .setting-item.mod-search-setting .setting-item-control .search-input-container {
+.graph-controls
+  .setting-item.mod-search-setting
+  .setting-item-control
+  .search-input-container {
   width: 100%;
 }
 
@@ -3059,12 +3106,12 @@ FOLDING (credits to @mgmeyers for svg icons)
   display: block;
   width: 18px;
   opacity: 0.3;
-  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0);"><path d="M16.293 9.293L12 13.586 7.707 9.293 6.293 10.707 12 16.414 17.707 10.707z"></path></svg>');
+  content: url("data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' style='fill:rgba(0, 0, 0),'><path d='M16.293 9.293L12 13.586 7.707 9.293 6.293 10.707 12 16.414 17.707 10.707z'></path></svg>");
 }
 
 .theme-dark .markdown-preview-view .collapse-indicator::before,
 .theme-dark .CodeMirror-foldgutter-open::after {
-  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgba(204,204,204);"><path d="M16.293 9.293L12 13.586 7.707 9.293 6.293 10.707 12 16.414 17.707 10.707z"></path></svg>');
+  content: url("data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' style='fill:rgba(204,204,204),'><path d='M16.293 9.293L12 13.586 7.707 9.293 6.293 10.707 12 16.414 17.707 10.707z'></path></svg>");
 }
 
 .theme-dark .markdown-preview-view .collapse-indicator::before {
@@ -3081,7 +3128,11 @@ FOLDING (credits to @mgmeyers for svg icons)
   margin-top: 2px;
 }
 
-.theme-dark .markdown-preview-view ul.contains-task-list li .collapse-indicator::before {
+.theme-dark
+  .markdown-preview-view
+  ul.contains-task-list
+  li
+  .collapse-indicator::before {
   margin-left: 18px;
   margin-top: 0;
 }
@@ -3092,12 +3143,12 @@ FOLDING (credits to @mgmeyers for svg icons)
   width: 18px;
   /*height: 18px;*/
   opacity: 0.3;
-  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(0, 0, 0);"><path d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z"></path></svg>');
+  content: url("data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' style='fill:rgb(0, 0, 0),'><path d='M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z'></path></svg>");
 }
 
 .theme-dark .markdown-preview-view .is-collapsed .collapse-indicator::before,
 .theme-dark .CodeMirror-foldgutter-folded::after {
-  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(204,204,204);"><path d="M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z"></path></svg>');
+  content: url("data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' style='fill:rgb(204,204,204),'><path d='M10.707 17.707L16.414 12 10.707 6.293 9.293 7.707 13.586 12 9.293 16.293z'></path></svg>");
 }
 
 .CodeMirror-gutter-wrapper {
@@ -3258,8 +3309,12 @@ Internal Queries */
   cursor: default !important;
 }
 
-.markdown-preview-view .internal-query.is-embed .internal-query-header-title::before,
-.markdown-preview-view .internal-query.is-embed .internal-query-header-title::after {
+.markdown-preview-view
+  .internal-query.is-embed
+  .internal-query-header-title::before,
+.markdown-preview-view
+  .internal-query.is-embed
+  .internal-query-header-title::after {
   content: "";
 }
 
@@ -3325,7 +3380,10 @@ body:not(.discordian-theme) .markdown-preview-view ul ul {
   position: relative;
 }
 
-body.discordian-theme.discordian-rel-preview .markdown-preview-view ul ul::before,
+body.discordian-theme.discordian-rel-preview
+  .markdown-preview-view
+  ul
+  ul::before,
 body:not(.discordian-theme) .markdown-preview-view ul ul::before {
   content: "";
   border-left: 1px solid var(--text-muted);
@@ -3341,7 +3399,10 @@ body.discordian-theme.discordian-rel-preview
   .markdown-preview-view
   ul.contains-task-list
   ul::before,
-body:not(.discordian-theme) .markdown-preview-view ul.contains-task-list ul::before {
+body:not(.discordian-theme)
+  .markdown-preview-view
+  ul.contains-task-list
+  ul::before {
   left: -0.2em;
   top: 0.3em;
   bottom: -0.3em;
@@ -3430,7 +3491,8 @@ Floating images with captions by @radekkozak */
   width: fit-content;
 }
 
-.markdown-preview-view.img-captions .image-embed:not([src$="left"]):not([src$="right"])::after {
+.markdown-preview-view.img-captions
+  .image-embed:not([src$="left"]):not([src$="right"])::after {
   content: attr(alt);
   padding: 0 1rem 0 1rem;
   margin-top: 1rem;
@@ -3490,11 +3552,19 @@ Original credits to @kepano */
   padding: 0 0.75rem 0 0.75rem;
 }
 
-.img-grid .markdown-preview-section > div > p > .image-embed[alt*="."]:last-child {
+.img-grid
+  .markdown-preview-section
+  > div
+  > p
+  > .image-embed[alt*="."]:last-child {
   padding-right: 0;
 }
 
-.img-grid .markdown-preview-section > div > p > .image-embed[alt*="."]:first-child {
+.img-grid
+  .markdown-preview-section
+  > div
+  > p
+  > .image-embed[alt*="."]:first-child {
   padding-left: 0;
 }
 
@@ -3566,8 +3636,12 @@ HIDER PLUGIN v1.0.5
 .discordian-writer-mode.hider-ribbon:not(.mod-windows)
   .mod-left-split
   .workspace-tab-header-container,
-.hider-frameless.hider-ribbon:not(.mod-windows) .mod-left-split .workspace-tab-header-container,
-.hider-ribbon:not(.mod-windows) .mod-left-split .workspace-tab-header-container {
+.hider-frameless.hider-ribbon:not(.mod-windows)
+  .mod-left-split
+  .workspace-tab-header-container,
+.hider-ribbon:not(.mod-windows)
+  .mod-left-split
+  .workspace-tab-header-container {
   padding-left: 54px;
 }
 
@@ -3585,40 +3659,50 @@ body:not(.mod-windows):not(.discordian-theme).hider-ribbon
   padding-top: 0 !important;
 }
 
-body.discordian-theme:not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-windows)
+body.discordian-theme:not(.is-fullscreen):not(.plugin-sliding-panes):not(
+    .mod-windows
+  )
   .workspace-leaf:first-of-type:last-of-type
   .view-header,
-body.discordian-theme:not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-windows)
+body.discordian-theme:not(.is-fullscreen):not(.plugin-sliding-panes):not(
+    .mod-windows
+  )
   .workspace-leaf:first-of-type
   .view-header {
   padding-left: 0 !important;
 }
 
-.discordian-writer-mode:not(.plugin-sliding-panes):not(.is-fullscreen):not(.mod-windows)
-  .mod-left-split.is-collapsed
-  + div.mod-root
-  .workspace-leaf:first-of-type
-  .view-header,
-.discordian-writer-mode.hider-frameless:not(.plugin-sliding-panes):not(.is-fullscreen):not(
+.discordian-writer-mode:not(.plugin-sliding-panes):not(.is-fullscreen):not(
     .mod-windows
   )
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
   .view-header,
-.discordian-writer-mode.discordian-hide-titlebar:not(.plugin-sliding-panes):not(.is-fullscreen):not(
+.discordian-writer-mode.hider-frameless:not(.plugin-sliding-panes):not(
+    .is-fullscreen
+  ):not(.mod-windows)
+  .mod-left-split.is-collapsed
+  + div.mod-root
+  .workspace-leaf:first-of-type
+  .view-header,
+.discordian-writer-mode.discordian-hide-titlebar:not(.plugin-sliding-panes):not(
+    .is-fullscreen
+  ):not(.mod-windows)
+  .mod-left-split.is-collapsed
+  + div.mod-root
+  .workspace-leaf:first-of-type
+  .view-header,
+.hider-frameless:not(.plugin-sliding-panes):not(.is-fullscreen):not(
+    .mod-windows
+  ).discordian-theme
+  .mod-left-split.is-collapsed
+  + div.mod-root
+  .workspace-leaf:first-of-type
+  .view-header,
+.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes):not(
     .mod-windows
   )
-  .mod-left-split.is-collapsed
-  + div.mod-root
-  .workspace-leaf:first-of-type
-  .view-header,
-.hider-frameless:not(.plugin-sliding-panes):not(.is-fullscreen):not(.mod-windows).discordian-theme
-  .mod-left-split.is-collapsed
-  + div.mod-root
-  .workspace-leaf:first-of-type
-  .view-header,
-.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
@@ -3627,28 +3711,30 @@ body.discordian-theme:not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-wi
   transition: padding-left 0.15s ease;
 }
 
-.discordian-writer-mode.hider-ribbon:not(.is-fullscreen):not(.plugin-sliding-panes):not(
-    .mod-windows
-  )
+.discordian-writer-mode.hider-ribbon:not(.is-fullscreen):not(
+    .plugin-sliding-panes
+  ):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
   .view-header,
-.hider-frameless.hider-ribbon:not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-windows)
+.hider-frameless.hider-ribbon:not(.is-fullscreen):not(
+    .plugin-sliding-panes
+  ):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
   .view-header,
-.hider-ribbon.discordian-hide-titlebar:not(.is-fullscreen):not(.plugin-sliding-panes):not(
-    .mod-windows
-  )
+.hider-ribbon.discordian-hide-titlebar:not(.is-fullscreen):not(
+    .plugin-sliding-panes
+  ):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
   .view-header,
-.hider-ribbon.discordian-theme.discordian-hide-titlebar:not(.hider-frameless):not(
-    .is-fullscreen
-  ):not(.plugin-sliding-panes):not(.mod-windows)
+.hider-ribbon.discordian-theme.discordian-hide-titlebar:not(
+    .hider-frameless
+  ):not(.is-fullscreen):not(.plugin-sliding-panes):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
@@ -3849,18 +3935,24 @@ body.plugin-sliding-panes-rotate-header
   right: 0;
   width: 26px;
   height: 26px;
-  background: linear-gradient(to bottom, transparent, var(--background-secondary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary)
+  ) !important;
 }
 
 body.plugin-sliding-panes .mod-horizontal .workspace-leaf {
   box-shadow: none !important;
 }
 
-body.plugin-sliding-panes:not(.discordian-writer) .workspace-split.mod-left-split {
+body.plugin-sliding-panes:not(.discordian-writer)
+  .workspace-split.mod-left-split {
   border-right: 1px solid var(--background-tertiary);
 }
 
-body.plugin-sliding-panes:not(.discordian-writer) .workspace-split.mod-right-split {
+body.plugin-sliding-panes:not(.discordian-writer)
+  .workspace-split.mod-right-split {
   border-left: 1px solid var(--background-tertiary);
 }
 
@@ -3904,7 +3996,10 @@ body.plugin-sliding-panes.hider-frameless
   padding-left: 0 !important;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-title-container,
+body.plugin-sliding-panes-rotate-header
+  .workspace
+  > .mod-root
+  .view-header-title-container,
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
   .workspace
   > .mod-root
@@ -3912,7 +4007,10 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt
   margin-top: 0;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-title-container {
+body.plugin-sliding-panes-rotate-header
+  .workspace
+  > .mod-root
+  .view-header-title-container {
   margin-left: 0;
   padding-top: 0;
 }
@@ -3928,7 +4026,8 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-actions {
   bottom: 0;
 }
 
-body.plugin-sliding-panes.is-fullscreen.plugin-sliding-panes-rotate-header .view-header-icon {
+body.plugin-sliding-panes.is-fullscreen.plugin-sliding-panes-rotate-header
+  .view-header-icon {
   padding-top: 8px;
 }
 
@@ -3952,17 +4051,17 @@ body.plugin-sliding-panes.hider-ribbon:not(.is-fullscreen):not(.hider-ribbon)
 }
 
 /* or workspace-leaf:first-of-type if only padding first header under OSX icons */
-body.plugin-sliding-panes.plugin-sliding-panes-rotate-header:not(.is-fullscreen):not(
-    .mod-windows
-  ).hider-frameless
+body.plugin-sliding-panes.plugin-sliding-panes-rotate-header:not(
+    .is-fullscreen
+  ):not(.mod-windows).hider-frameless
   .mod-left-split.is-collapsed
   + div.mod-root
   > .workspace-leaf:first-of-type
   > .workspace-leaf-content
   > .view-header,
-body.plugin-sliding-panes.plugin-sliding-panes-rotate-header:not(.is-fullscreen):not(
-    .mod-windows
-  ).discordian-hide-titlebar
+body.plugin-sliding-panes.plugin-sliding-panes-rotate-header:not(
+    .is-fullscreen
+  ):not(.mod-windows).discordian-hide-titlebar
   .mod-left-split.is-collapsed
   + div.mod-root
   > .workspace-leaf:first-of-type
@@ -3972,16 +4071,16 @@ body.plugin-sliding-panes.plugin-sliding-panes-rotate-header:not(.is-fullscreen)
   /*  transition: padding .1s ease;*/
 }
 
-body.discordian-hide-titlebar:not(.is-fullscreen):not(.hider-ribbon):not(.plugin-sliding-panes):not(
-    .mod-windows
-  )
+body.discordian-hide-titlebar:not(.is-fullscreen):not(.hider-ribbon):not(
+    .plugin-sliding-panes
+  ):not(.mod-windows)
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
   .view-header,
-body.hider-frameless:not(.is-fullscreen):not(.hider-ribbon):not(.plugin-sliding-panes):not(
-    .mod-windows
-  ).discordian-theme
+body.hider-frameless:not(.is-fullscreen):not(.hider-ribbon):not(
+    .plugin-sliding-panes
+  ):not(.mod-windows).discordian-theme
   .mod-left-split.is-collapsed
   + div.mod-root
   .workspace-leaf:first-of-type
@@ -4011,7 +4110,9 @@ body.plugin-sliding-panes.hider-frameless:not(.hider-ribbon):not(
 ADVANCED TABLES v0.11.0
 ----------------------------------------------------------------*/
 
-.workspace-leaf-content[data-type="advanced-tables-toolbar"] .nav-action-button svg.widget-icon {
+.workspace-leaf-content[data-type="advanced-tables-toolbar"]
+  .nav-action-button
+  svg.widget-icon {
   width: 20px;
 }
 
@@ -4037,7 +4138,9 @@ HIDE STATUS BAR */
   display: none;
 }
 
-.theme-dark:not(.hider-status):not(.discordian-hide-statusbar):not(.discordian-writer-mode)
+.theme-dark:not(.hider-status):not(.discordian-hide-statusbar):not(
+    .discordian-writer-mode
+  )
   .status-bar {
   display: flex;
 }
@@ -4063,19 +4166,24 @@ body.discordian-hide-titlebar:not(.hider-ribbon):not(.mod-windows)
   padding-left: 24px;
 }
 
-body.discordian-hide-titlebar .workspace-leaf:first-of-type:last-of-type .view-header {
+body.discordian-hide-titlebar
+  .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   padding-left: 0;
 }
 
 /* unhide */
 
-body:not(.discordian-hide-titlebar):not(.hider-frameless):not(.discordian-writer-mode) .titlebar {
+body:not(.discordian-hide-titlebar):not(.hider-frameless):not(
+    .discordian-writer-mode
+  )
+  .titlebar {
   display: flex !important;
 }
 
-body.discordian-theme:not(.discordian-hide-titlebar):not(.is-fullscreen):not(.hider-frameless):not(
-    .discordian-writer-mode
-  ) {
+body.discordian-theme:not(.discordian-hide-titlebar):not(.is-fullscreen):not(
+    .hider-frameless
+  ):not(.discordian-writer-mode) {
   padding-top: 22px !important;
 }
 
@@ -4154,7 +4262,9 @@ DISCORD ORIGINAL MARKINGS */
 /* inline code in Editor */
 
 .discordian-original-markings .markdown-preview-view code,
-.discordian-original-markings .cm-s-obsidian span.cm-formatting-code.cm-inline-code,
+.discordian-original-markings
+  .cm-s-obsidian
+  span.cm-formatting-code.cm-inline-code,
 .discordian-original-markings
   .cm-s-obsidian
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
@@ -4173,7 +4283,9 @@ DISCORD ORIGINAL MARKINGS */
   font-size: unset;
 }
 
-.discordian-original-markings .cm-s-obsidian span.cm-formatting-code.cm-inline-code {
+.discordian-original-markings
+  .cm-s-obsidian
+  span.cm-formatting-code.cm-inline-code {
   color: var(--text-muted) !important;
   background-color: var(--background-secondary);
   border-radius: 3px 0 0 3px;
@@ -4219,52 +4331,82 @@ DISCORD ORIGINAL MARKINGS */
 /*----------------------------------------------------------------
 DARK NOTE HEADERS */
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .view-header::before {
   -webkit-box-shadow: var(--elevation-stroke) !important;
   box-shadow: var(--elevation-stroke) !important;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode) .view-header {
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
+  .view-header {
   background-color: var(--background-secondary) !important;
   height: 30px;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .workspace-split.mod-root
   > .workspace-leaf:first-of-type:last-of-type
   .view-header {
   background-color: var(--background-secondary) !important;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .workspace-split.mod-root
   > .workspace-leaf:first-of-type:last-of-type
   .view-header-title-container::after {
-  background: linear-gradient(to right, transparent, var(--background-secondary)) !important;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-secondary)
+  ) !important;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .view-header-title-container::after {
-  background: linear-gradient(to right, transparent, var(--background-secondary)) !important;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-secondary)
+  ) !important;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .workspace-leaf.mod-active
   .view-header {
   background-color: var(--background-secondary) !important;
 }
 
-body.discordian-dark-enhance:not(.plugin-sliding-panes):not(.discordian-writer-mode)
+body.discordian-dark-enhance:not(.plugin-sliding-panes):not(
+    .discordian-writer-mode
+  )
   .workspace-leaf.mod-active
   .view-header-title-container::after {
-  background: linear-gradient(to right, transparent, var(--background-secondary)) !important;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-secondary)
+  ) !important;
 }
 
 /*----------------------------------------------------------------
 FLAT ANDY MODE */
 
-body.discordian-flat-andy-mode.plugin-sliding-panes .workspace > .mod-root > .workspace-leaf,
+body.discordian-flat-andy-mode.plugin-sliding-panes
+  .workspace
+  > .mod-root
+  > .workspace-leaf,
 body.discordian-flat-andy-mode.plugin-sliding-panes
   .workspace-split.mod-vertical
   > .workspace-leaf {
@@ -4274,8 +4416,16 @@ body.discordian-flat-andy-mode.plugin-sliding-panes
 /*----------------------------------------------------------------
 WRITER MODE */
 
-body.discordian-writer-mode .mod-left.is-collapsed ~ .mod-root .mod-active .view-header,
-body.discordian-writer-mode .mod-right.is-collapsed ~ .mod-root .mod-active .view-header {
+body.discordian-writer-mode
+  .mod-left.is-collapsed
+  ~ .mod-root
+  .mod-active
+  .view-header,
+body.discordian-writer-mode
+  .mod-right.is-collapsed
+  ~ .mod-root
+  .mod-active
+  .view-header {
   border-bottom: 0;
 }
 
@@ -4299,8 +4449,12 @@ body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed {
     background-color 0s ease-in-out 0s;
 }
 
-body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed:hover .side-dock-actions,
-body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed:hover .side-dock-settings {
+body.discordian-writer-mode
+  .workspace-ribbon.mod-left.is-collapsed:hover
+  .side-dock-actions,
+body.discordian-writer-mode
+  .workspace-ribbon.mod-left.is-collapsed:hover
+  .side-dock-settings {
   opacity: 1;
   /*transition:opacity 0s ease-in-out;*/
 }
@@ -4312,10 +4466,20 @@ body.discordian-writer-mode .view-action.is-active {
 /* view actions */
 
 body.discordian-writer-mode .view-actions,
-body.discordian-writer-mode .workspace-ribbon.mod-right.is-collapsed ~ .mod-root .view-actions,
-body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed ~ .mod-root .view-actions,
-body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed .side-dock-actions,
-body.discordian-writer-mode .workspace-ribbon.mod-left.is-collapsed .side-dock-settings {
+body.discordian-writer-mode
+  .workspace-ribbon.mod-right.is-collapsed
+  ~ .mod-root
+  .view-actions,
+body.discordian-writer-mode
+  .workspace-ribbon.mod-left.is-collapsed
+  ~ .mod-root
+  .view-actions,
+body.discordian-writer-mode
+  .workspace-ribbon.mod-left.is-collapsed
+  .side-dock-actions,
+body.discordian-writer-mode
+  .workspace-ribbon.mod-left.is-collapsed
+  .side-dock-settings {
   opacity: 0;
   transition: opacity 0.17s ease-in-out;
 }
@@ -4326,7 +4490,10 @@ body.discordian-writer-mode
   ~ .mod-root
   .view-header:hover
   .view-actions,
-.workspace-ribbon.mod-left.is-collapsed ~ .mod-root .view-header:hover .view-actions,
+.workspace-ribbon.mod-left.is-collapsed
+  ~ .mod-root
+  .view-header:hover
+  .view-actions,
 .mod-right.is-collapsed ~ .mod-root .view-header:hover .view-actions {
   opacity: 1;
   transition: opacity 0.17s ease-in-out;
@@ -4358,7 +4525,10 @@ body.discordian-writer-mode
 }
 
 .workspace-ribbon:not(.is-collapsed) ~ .mod-root ::-webkit-scrollbar,
-body.discordian-writer-mode .workspace-ribbon:not(.is-collapsed) ~ .mod-root ::-webkit-scrollbar,
+body.discordian-writer-mode
+  .workspace-ribbon:not(.is-collapsed)
+  ~ .mod-root
+  ::-webkit-scrollbar,
 .workspace-ribbon.mod-left.is-collapsed ~ .mod-root ::-webkit-scrollbar,
 .mod-right.is-collapsed ~ .mod-root ::-webkit-scrollbar {
   width: 16px;
@@ -4458,7 +4628,10 @@ body.discordian-writer-mode
 }
 
 .workspace-ribbon:not(.is-collapsed) ~ .mod-root .view-header::before,
-body.discordian-writer-mode .workspace-ribbon:not(.is-collapsed) ~ .mod-root .view-header::before,
+body.discordian-writer-mode
+  .workspace-ribbon:not(.is-collapsed)
+  ~ .mod-root
+  .view-header::before,
 .workspace-ribbon.mod-left.is-collapsed ~ .mod-root .view-header::before,
 .mod-right.is-collapsed ~ .mod-root .view-header::before {
   -webkit-box-shadow: var(--elevation-low) !important;

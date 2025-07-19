@@ -3,5 +3,9 @@
   "version": "1.0.8",
   "minAppVersion": "1.0.0",
   "author": "lucas",
-  "authorUrl": "https://www.lfern.com/"
+  "authorUrl": "https://www.lfern.com/",
+  "license": {
+    "name": "The Unlicense",
+    "spdx_id": "Unlicense"
+  }
 }

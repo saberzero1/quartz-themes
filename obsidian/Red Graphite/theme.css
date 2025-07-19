@@ -501,7 +501,8 @@
 }
 
 body {
-  --embed-block-shadow-hover: 0 0 0 0 var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 0 var(--background-modifier-border),
     inset 0 0 0 0 var(--background-modifier-border);
 }
 
@@ -531,7 +532,8 @@ body .markdown-source-view.mod-cm6 .code-block-flair {
 .cm-s-obsidian div.HyperMD-codeblock-bg {
   border-style: var(--code-block-border-style);
   border-color: var(--code-block-border-color);
-  border-width: 0 var(--code-block-border-width) 0 var(--code-block-border-width);
+  border-width: 0 var(--code-block-border-width) 0
+    var(--code-block-border-width);
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
@@ -569,7 +571,8 @@ body {
   --nav-indentation-guide-color: var(--color-base-90);
   --nav-collapse-icon-color: var(--color-accent);
   --nav-collapse-icon-color-collapsed: var(--color-accent);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
 }
 
 .theme-light .nav-file-title:hover svg,
@@ -622,7 +625,10 @@ body {
   --icon-color-focused: var(--color-accent);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
   color: var(--color-accent);
 }
 
@@ -767,12 +773,24 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .metadata-property-icon {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .metadata-property-icon {
   color: var(--color-base-40);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .metadata-property-key,
-.theme-light .mod-right-split .metadata-container .metadata-content .metadata-property-value {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .metadata-property-key,
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .metadata-property-value {
   border-bottom-color: var(--color-base-90);
 }
 
@@ -803,15 +821,27 @@ body {
   color: var(--color-base-20);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .multi-select-input {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .multi-select-input {
   color: var(--color-base-20);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .multi-select-pill:hover {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .multi-select-pill:hover {
   color: var(--color-accent);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .metadata-input-longtext {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .metadata-input-longtext {
   color: var(--color-base-40);
 }
 
@@ -827,7 +857,11 @@ body {
   --pill-color: var(--color-base-40);
 }
 
-.theme-light .mod-right-split .metadata-container .metadata-content .metadata-add-button:hover {
+.theme-light
+  .mod-right-split
+  .metadata-container
+  .metadata-content
+  .metadata-add-button:hover {
   color: var(--color-base-40);
   background-color: var(--color-base-90);
 }
@@ -898,7 +932,10 @@ body {
 }
 
 .theme-light .suggestion-container .suggestion .suggestion-item.is-selected,
-.theme-light .suggestion-container.mod-search-suggestion .suggestion .suggestion-item.is-selected {
+.theme-light
+  .suggestion-container.mod-search-suggestion
+  .suggestion
+  .suggestion-item.is-selected {
   background-color: var(--color-accent);
   color: var(--color-base-20);
 }
@@ -1150,7 +1187,11 @@ body {
   border-color: var(--color-base-120);
 }
 
-.theme-light .chat-container .chat-messages .chat-message-container .message.user-message {
+.theme-light
+  .chat-container
+  .chat-messages
+  .chat-message-container
+  .message.user-message {
   color: var(--interactive-normal);
 }
 
@@ -1167,7 +1208,13 @@ body {
   color: var(--color-base-10);
 }
 
-.theme-light .chat-container .chat-messages .chat-message-container pre code .comment {
+.theme-light
+  .chat-container
+  .chat-messages
+  .chat-message-container
+  pre
+  code
+  .comment {
   color: var(--color-base-60);
 }
 
@@ -1177,7 +1224,12 @@ body {
   color: var(--color-base-10);
 }
 
-.theme-light .chat-container .chat-messages .chat-message-container code .comment {
+.theme-light
+  .chat-container
+  .chat-messages
+  .chat-message-container
+  code
+  .comment {
   color: var(--color-base-60);
 }
 

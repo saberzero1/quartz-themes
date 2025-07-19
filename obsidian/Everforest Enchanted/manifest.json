@@ -3,5 +3,9 @@
   "version": "3.12.2",
   "minAppVersion": "1.0.0",
   "author": "FireIsGood",
-  "authorUrl": "https://github.com/FireIsGood"
+  "authorUrl": "https://github.com/FireIsGood",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

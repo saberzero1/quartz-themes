@@ -1,0 +1,658 @@
+name: PLN by PipeItToDevNull
+id: pln
+settings:
+  - id: pln-head-colours
+    title: Colours
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-red
+    title: Red
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-red-rgb
+        format: rgb
+    default: "#bf616a"
+  - id: color-orange
+    title: Orange
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-orange-rgb
+        format: rgb
+    default: "#d08770"
+  - id: color-yellow-light
+    title: Yellow-Light
+    description: Used on the dark theme
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-yellow-light-rgb
+        format: rgb
+    default: "#ebcb8b"
+  - id: color-yellow-dark
+    title: Yellow-Dark
+    description: Used on the light theme
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-yellow-dark-rgb
+        format: rgb
+    default: "#e4b860"
+  - id: color-green
+    title: Green
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-green-rgb
+        format: rgb
+    default: "#a3be8c"
+  - id: color-purple
+    title: Purple
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-purple-rgb
+        format: rgb
+    default: "#b48ead"
+  - id: color-sea-green
+    title: Sea-Green
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-sea-green-rgb
+        format: rgb
+    default: "#8fbcbb"
+  - id: color-cyan
+    title: Cyan
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-cyan-rgb
+        format: rgb
+    default: "#88c0d0"
+  - id: color-frost
+    title: Frost
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-frost-rgb
+        format: rgb
+    default: "#81a1c1"
+  - id: color-blue
+    title: Blue
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-blue-rgb
+        format: rgb
+    default: "#5e81ac"
+  - id: color-salmon
+    title: Salmon
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-salmon-rgb
+        format: rgb
+    default: "#FC6E68"
+  - id: accent-light-hsl
+    title: Accent Light
+    type: variable-color
+    opacity: false
+    format: hsl-split
+    default: "#5E81AC"
+  - id: accent-dark-hsl
+    title: Accent Dark
+    type: variable-color
+    opacity: false
+    format: hsl-split
+    default: "#81a1c1"
+  - id: b0
+    title: B0
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: b0-rgb
+        format: rgb
+    default: "#2E3440"
+  - id: b1
+    title: B1
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: b1-rgb
+        format: rgb
+    default: "#3B4252"
+  - id: b2
+    title: B2
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: b2-rgb
+        format: rgb
+    default: "#434C5E"
+  - id: b3
+    title: B3
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: b3-rgb
+        format: rgb
+    default: "#4C566A"
+  - id: w0
+    title: W0
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: w0-rgb
+        format: rgb
+    default: "#D8DEE9"
+  - id: w1
+    title: W1
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: w1-rgb
+        format: rgb
+    default: "#E5E9F0"
+  - id: w2
+    title: W2
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: w2-rgb
+        format: rgb
+    default: "#ECEFF4"
+  - id: w3
+    title: W3
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: w3-rgb
+        format: rgb
+    default: "#f5f7f9"
+  - id: text-highlight-bg
+    title: Text Highlight Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "180, 142, 173, 0.4"
+  - id: text-highlight-bg-active
+    title: Text Highlight Background - Active
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "180, 142, 173, 0.4"
+  - id: pln-head-fonts
+    title: Font modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-ui-smaller
+    title: Font-UI-Smaller
+    description: Used for settings panel category headers and other things
+    type: variable-number-slider
+    default: 10
+    min: 10
+    max: 30
+    step: 1
+    format: px
+  - id: font-ui-small
+    title: Font-UI-Small
+    description: Used for folder names and other things
+    type: variable-number-slider
+    default: 10
+    min: 10
+    max: 30
+    step: 1
+    format: px
+  - id: font-ui-medium
+    title: Font-UI-Medium
+    description: Used for settings panel body, calendar
+    type: variable-number-slider
+    default: 12
+    min: 10
+    max: 30
+    step: 1
+    format: px
+  - id: font-ui-large
+    title: Font-UI-Large
+    description: Used for things
+    type: variable-number-slider
+    default: 14
+    min: 10
+    max: 30
+    step: 1
+    format: px
+  - id: pln-italics
+    title: More italic italics
+    description: Make italics more pronounced
+    type: class-toggle
+    default: true
+  - id: pln-head-gen
+    title: General modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-link-mods
+    title: Link modifications
+    description: Underline only external links and remove the distinction from unresolved links
+    type: class-toggle
+    default: true
+  - id: pln-hilite-mods
+    title: Highlight (mark) modifications
+    description: Change ==highlight== (mark) styling from the default. This may interfere with some plugins, disable this if you see issues.
+    type: class-toggle
+    default: true
+  - id: pln-hi-line
+    title: Highlight active line
+    description: Highlight the active line
+    type: class-toggle
+    default: false
+  - id: pln-hi-line-hover
+    title: Highlight cursor line
+    description: Highlight the line your mouse cursor is on
+    type: class-toggle
+    default: false
+  - id: pln-hi-tr
+    title: Highlight table rows when hovering
+    description: Highlight the row in a table that your cursor is hovering over
+    type: class-toggle
+    default: false
+  - id: pln-hide-files
+    title: Enable hidden directories and files
+    description: Hide any file/folder starting with _ (underscore)
+    type: class-toggle
+    default: false
+  - id: pln-folder-icons
+    title: Use folder icons in the file tree
+    description: Replace the chevrons in the file tree with open/closed folder icons
+    type: class-toggle
+    default: false
+  - id: pln-dv-mods
+    title: Dataview modifications
+    description: Globally toggle my various DV modifications
+    type: class-toggle
+    default: true
+  - id: pln-dv-count
+    title: Dataview list count
+    description: Toggle the list count on a DV result
+    type: class-toggle
+    default: true
+  - id: pln-view-invert
+    title: Invert view icons
+    description: Invert the Reading and Edit view icons in the top right of notes
+    type: class-toggle
+    default: false
+  - id: pln-boxed-tags
+    title: Box tags
+    description: Make tags more boxy with a solid border
+    type: class-toggle
+    default: true
+  - id: pln-head-tabs
+    title: Tab modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-tab-rows
+    title: Multiple tab rows
+    description: When hovering, the tabs area will be expanded into multiple rows to make viewing tab titles easier.
+    type: class-toggle
+    default: false
+  - id: pln-pretty-pinned
+    title: Prettier pinned tabs
+    description: Shrink down pinned tabs to only the note icon. I recommend making custom note icons as well if you do this.
+    type: class-toggle
+    default: false
+  - id: pln-pin-protect
+    title: Protect the Pin icon
+    description: Blocks the click event on the Pin icon so it cannot be removed accidently
+    type: class-toggle
+    default: false
+  - id: pln-stacked-100
+    title: Stacked tabs 100% width
+    description: Make stacked tabs take up 100% of the window width instead of an annoying amount of unknown space
+    type: class-toggle
+    default: false
+  - id: pln-head-attachments
+    title: Attachment modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-attachments
+    title: Hide attachments
+    description: Hide all attachments in the file explorer
+    type: class-toggle
+    default: false
+  - id: pln-attachments-canvas
+    title: Unhide canvas files
+    type: class-toggle
+    default: false
+  - id: pln-attachments-pdf
+    title: Unhide pdf files
+    type: class-toggle
+    default: false
+  - id: pln-attachments-docx
+    title: Unhide docx files
+    type: class-toggle
+    default: false
+  - id: pln-attachments-xlsx
+    title: Unhide xlsx files
+    type: class-toggle
+    default: false
+  - id: pln-attachments-images
+    title: Unhide image files
+    type: class-toggle
+    default: false
+  - id: pln-head-heads
+    title: Header colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-hdcl
+    title: Header color toggle
+    description: You must open each color and "save" it to render properly
+    type: class-toggle
+    default: false
+  - id: pln-hdcl-1
+    title: H1 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#BF616A"
+  - id: pln-hdcl-2
+    title: H2 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#D08770"
+  - id: pln-hdcl-3
+    title: H3 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#EBCB8B"
+  - id: pln-hdcl-4
+    title: H4 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#A3BE8C"
+  - id: pln-hdcl-5
+    title: H5 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#8FBCBB"
+  - id: pln-hdcl-6
+    title: H5 color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#88C0D0"
+  - id: pln-head-props
+    title: Properties modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-properties
+    title: Hide properties in reading mode
+    description: Hide the metadata properties box when in reading mode. Add 'hide-properties' as a class to any file to selectively apply this.
+    type: class-toggle
+    default: true
+  - id: pln-props-heading
+    title: Hide properties heading
+    description: We know it is a properties box, you don't need to label it.
+    type: class-toggle
+    default: true
+  - id: pln-props-emptyval
+    title: Hide placeholder text
+    description: Hide the "Empty" text that is a placeholder for empty keys
+    type: class-toggle
+    default: true
+  - id: pln-props-list
+    title: List 'list' properties
+    description: Put every property on its own line instead of a long single line list.
+    type: class-toggle
+    default: true
+  - id: pln-head-embd
+    title: Embed modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-embd-mods
+    title: Embed modifications
+    description: Globally toggle my various embed modifications
+    type: class-toggle
+    default: true
+  - id: pln-embd-link
+    title: Embeded note link icon
+    description: Hide the link icon for an embedded note
+    type: class-toggle
+    default: true
+  - id: pln-embd-title
+    title: Embeded note titles
+    description: Hide the title of an embeded note
+    type: class-toggle
+    default: true
+  - id: pln-embd-first
+    title: Hide the first header in embeds
+    description: Do not display the first header in an embed
+    type: class-toggle
+    default: true
+  - id: pln-embd-h1
+    title: Hide H1 in embeds
+    description: Do not display h1 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-embd-h2
+    title: Hide H2 in embeds
+    description: Do not display h2 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-embd-h3
+    title: Hide H3 in embeds
+    description: Do not display h3 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-embd-h4
+    title: Hide H4 in embeds
+    description: Do not display h4 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-embd-h5
+    title: Hide H5 in embeds
+    description: Do not display h5 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-embd-h6
+    title: Hide H6 in embeds
+    description: Do not display h6 in embeds
+    type: class-toggle
+    default: false
+  - id: pln-head-rm
+    title: Removals
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-rm-mods
+    title: Removals toggle
+    description: Globally toggle my various removals
+    type: class-toggle
+    default: true
+  - id: pln-rm-folder-nav
+    title: Remove folder nav
+    description: Remove the folder navigation icons
+    type: class-toggle
+    default: false
+  - id: pln-rm-settings
+    title: Remove settings pane
+    description: Remove the settings pane at the bottom of the left sidebar added in 1.6
+    type: class-toggle
+    default: false
+  - id: pln-rm-rside
+    title: Remove sidebar indicators
+    description: Remove the sidebar indicators. They can still be opened with hotkeys
+    type: class-toggle
+    default: true
+  - id: pln-rm-win-lside-tl
+    title: Remove mod top left
+    description: Remove the top tab container in the left sidebar in Windows in hidden frameless
+    type: class-toggle
+    default: false
+  - id: pln-rm-status
+    title: Remove statusbar
+    description: Removes the bottom statusbar
+    type: class-toggle
+    default: true
+  - id: pln-rm-tablist
+    title: Remove tablist icon
+    description: Removes the header tab list icon
+    type: class-toggle
+    default: true
+  - id: pln-rm-nt
+    title: Remove new tab icon
+    description: Removes the new tab header icon
+    type: class-toggle
+    default: true
+  - id: pln-rm-clstab
+    title: Remove close icon
+    description: Remove the close X from tabs
+    type: class-toggle
+    default: true
+  - id: pln-rm-nav
+    title: Remove nav icons
+    description: Remove the back and forward icons
+    type: class-toggle
+    default: true
+  - id: pln-rm-act
+    title: Remove view actions
+    description: Remove the view action icons from the top of notes
+    type: class-toggle
+    default: true
+  - id: pln-rm-noteic
+    title: Remove note icon
+    description: Remove the note icon from stacked tabs (we all know is a note...)
+    type: class-toggle
+    default: true
+  - id: pln-rm-scroll
+    title: Remove scroll bars
+    description: Hide scroll bars, hover to view them
+    type: class-toggle
+    default: true
+  - id: pln-rm-mac-tside
+    title: Hide top bar in MacOS
+    description: Hide the top bar on MacOS when in stacked tabs. (Works best in Frameless/hidden title bars)
+    type: class-toggle
+    default: true
+  - id: pln-rm-srchSug
+    title: Hide search help
+    description: Hide the pop up that appears when clicking the search field
+    type: class-toggle
+    default: true
+  - id: pln-head-check
+    title: Checkbox modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-checkboxes
+    title: Custom Checkboxes
+    description: Globally toggle custom checkbox types and changes made in PLN
+    type: class-toggle
+    default: true
+  - id: pln-head-co
+    title: Callout modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-rm-co-meta
+    title: Hide Meta callout in reading mode
+    description: Remove the custom "meta" callout in reading mode
+    type: class-toggle
+    default: false
+  - id: pln-pdf-rm-co-meta
+    title: Hide Meta callout in PDF exports
+    description: Remove the custom "meta" callout in PDF exports only
+    type: class-toggle
+    default: true
+  - id: pln-rm-co-links
+    title: Hide Links callout in reading mode
+    description: Remove the custom "links" callout in reading mode
+    type: class-toggle
+    default: false
+  - id: pln-pdf-rm-co-links
+    title: Hide Links callout in PDF exports
+    description: Remove the custom "links" callout in PDF exports only
+    type: class-toggle
+    default: true
+  - id: pln-head-cards
+    title: Kepano Cards modificationss
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-cards-sort
+    title: Hide Remove sort icon
+    description: Remove the sort icon from above a collection of cards
+    type: class-toggle
+    default: true
+  - id: pln-cards-borders
+    title: Card border edits
+    description: Change the border of cards to match callouts. You are required to have Kepano's snippet, this just changes it's style
+    type: class-toggle
+    default: true
+  - id: pln-cards-color-rgb
+    title: Card border color
+    type: variable-themed-color
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(216, 222, 233)"
+    default-dark: "rgb(76, 86, 106)"
+  - id: cards
+    title: Add cards class to all files, and allow export.
+    description: This will add the cards class to all files, a primary function for this will be cards rendering when you PDF export a file
+    type: class-toggle
+    default: false
+  - id: pln-head-vi
+    title: High contrast modifications
+    type: heading
+    level: 2
+    collapsed: true
+  - id: pln-vision
+    title: High contrast toggle
+    descriptioon: Change main text to a vision impaired yellow. You should change your accent colour to something that compliments #cccc00. Don't use this with light mode...
+    type: class-toggle
+    default: false
+  - id: pln-vision-high
+    title: Primary color
+    description: This is the primary color to be used in vision impaired mode
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#cccc00"
+  - id: pln-vision-low
+    title: Secondary color
+    description: This is used for code blocks and buttons mostly
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#4C4E52"

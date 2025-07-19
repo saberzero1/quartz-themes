@@ -1,0 +1,382 @@
+name: Cyber Glow Tweakbox
+id: CG
+collapsed: false
+settings:
+  - id: CG-workspace
+    title: Background Controls
+    type: heading
+    level: 1
+    description: Custom Background/Wallpaper Controls
+    collapsed: true
+  - id: CG-workspace-background
+    title: Enable Workspace Backgound
+    description: Enable Custom Wallpaper background
+    type: class-toggle
+    default: true
+  - id: CG-workspace-background-image
+    title: Select Background Image
+    description: Select Custom to use your custom links or paths to your wallpaper in "Custom Workspace Background Image". (Author's)
+    type: class-select
+    allowEmpty: false
+    default: CG-workspace-background-image-obsidianbg
+    options:
+      - label: Ariverkao - Twilight of the Empire
+        value: CG-workspace-background-image-obsidianbg
+      - label: Custom
+        value: CG-workspace-background-image-custom
+  - id: CG-workspace-background-image-custom-option
+    title: Custom Workspace Background Image
+    description: Add your wallpaper. Paste the entire link to the image including "https://" -> url("your link here"). Local file links are no longer supported by Obsidian and Style Settings haven't been updated to support any alternatives.
+    type: variable-text
+    default: url("")
+    value: CG-workspace-background-image-custom
+  - id: CG-workspace-background-workspace-slider
+    title: Container opacity
+    description: Suggestion Increase opacity a bit on Dark mode, decrease opacity on light mode.
+    type: variable-number-slider
+    min: 0.10
+    max: 1
+    step: 0.01
+    default: 0.45
+  - id: CG-workspace-background-blur
+    title: Background blur
+    description: Level of blurryness
+    type: variable-number-slider
+    min: 0
+    max: 20
+    step: 1
+    default: 15
+    format: px
+  - id: CG-workspace-background-brightness
+    title: Background brightness
+    description: Suggestion Increase brightness on Dark mode, decrease brightness on light mode.
+    type: variable-number-slider
+    min: 0
+    max: 3
+    step: 0.01
+    default: 1.15
+  - id: CG-workspace-background-saturation
+    title: Background Saturation
+    description: Increase/Decrease the color vibrancy of the background image.
+    type: variable-number-slider
+    min: 0
+    max: 4
+    step: 0.01
+    default: 2
+  - id: CG-workspace-background-contrast
+    title: Background Contrast
+    description: Increase/Decrease the contrast of the background image.
+    type: variable-number-slider
+    min: 40
+    max: 200
+    step: 1
+    default: 100
+    format: "%"
+  - id: CG-Workspace
+    title: Workspace Controls
+    type: heading
+    description: Active Page Highlight, Color Folders, Hide folder icons, Disable Animation, Phone Header Folder Path, Full Statusbar, Sidebar Logo, Stacked tabs width
+    level: 1
+    collapsed: true
+  - id: CG-active-header
+    title: Enable Active Header Styling
+    description: Active Style will only be active on active pages, exact same behavior to previous versions of the theme
+    default: false
+    type: class-toggle
+  - id: CG-active-background
+    title: Remove Active Page Highlight
+    description: Enable to Removes the active page highlight
+    default: false
+    type: class-toggle
+  - id: CG-colorfulFolder
+    title: Colorful Folders
+    description: Enable Colorful Folders
+    default: false
+    type: class-toggle
+  - id: CG-disableAni
+    title: Disable Animations
+    description: Toggle to remove theme animation (Enable if you see lag, battery drain or huge resource consumption)
+    default: false
+    type: class-toggle
+  - id: CG-header-crumbs
+    title: Disable Phone's Header Folder Path
+    description: The folder paths in the header easily hides the note's title. Toggle off if you want the folder path on phone.
+    default: true
+    type: class-toggle
+  - title: Disable Full  Status-bar
+    description: Returns Status-bar to a hover state
+    id: CG-Fullstatus-off
+    type: class-toggle
+    default: false
+  - id: CG-folder-icon
+    title: Hide Folder Icon
+    description: Enable to ide file explorer icon
+    type: class-toggle
+    default: false
+  - id: CG-chevron
+    title: Show Chevron (Collapse Arrow)
+    description: Toggle the visibility of the chevron icons
+    type: class-toggle
+    default: false
+  - id: CG-workspace-sbt
+    title: Left Sidebar Toggle
+    type: class-select
+    allowEmpty: false
+    description: Pick the Icon/image, be sure that all custom images/gifs are square aspect.
+    default: CG-MObsidian-sbt
+    options:
+      - label: New Obsidian Logo
+        value: CG-MObsidian-sbt
+      - label: Classic Obsidian Logo
+        value: CG-Obsidian-sbt
+      - label: Custom
+        value: CG-Custom-sbt
+  - id: CG-workspace-custom-sbt
+    title: Custom Left Sidebar Toggle
+    description: Add your custom Left Toggle. Paste the entire link to the image including "https://" -> url("your link here"), Obsidian no longer supports local links.
+    type: variable-text
+    default: url("")
+    value: CG-Custom-sbt
+  - id: GC-stacked-width
+    title: Stacked tabs header width
+    description: If the stacked tab looks weird, after altering the width, please change tabs first or open a new tab to "refresh" the theme
+    type: variable-number-slider
+    min: 20
+    max: 70
+    step: 1
+    default: 35
+    format: px
+  - id: CG-Note
+    title: 🆕 Note Controls
+    type: heading
+    description: Custom Checkboxes, Line Width, Codeblocks Controls, Signature/Cite font, Base Font
+    level: 1
+    collapsed: true
+  - id: CG-custom-checkbox
+    title: Custom Checkbox
+    description: Enable custom checkboxes for checkbox customization
+    default: true
+    type: class-toggle
+  - id: CG-line-width
+    title: Readable line width
+    description: The maximum line width in rem (unit relative to Appearance -> Font Size)
+    type: variable-number-slider
+    default: 40
+    min: 30
+    max: 70
+    step: 1
+    format: "rem"
+  - title: Disable Codeblocks Gutter
+    description: Remove line numbers and additional styling to code blocks
+    id: no-codeblock-line-numbers
+    type: class-toggle
+    default: false
+  - id: CG-cite-font
+    title: Cite/Signature Font (Used in blockquotes and quote callouts)
+    description: Get Font from Cyber Glow's Github page. Recommend using a cursive font style
+    type: variable-text
+    default: "Edwardian Script ITC"
+  - id: CG-bullet-style
+    title: 🆕 Bullet Style
+    type: class-select
+    allowEmpty: false
+    default: CG-triangle
+    options:
+      - label: ▻ Triangle Bullet
+        value: CG-triangle
+      - label: 𓂀 Eye of Horus Bullet
+        value: CG-EyeofHorus
+      - label: 𖤍 Phase-D Bullet
+        value: CG-Triwing
+      - label: ○ Circle Bullet
+        value: CG-round
+      - label: □ Square Bullet
+        value: CG-Square
+  - title: 🆕 Disable Bullets in Callout
+    description: Remove bullet list ticker when inside of callouts
+    id: CG-bulletcallout
+    type: class-toggle
+    default: false
+  - id: headings
+    title: Heading Controls
+    type: heading
+    description: Header Dividing Line Controls
+    level: 1
+    collapsed: true
+  - id: CG-hr
+    title: Heading Dividing Line (---)
+    type: class-select
+    allowEmpty: false
+    default: CG-NewObsidian-hr
+    options:
+      - label: New Obsidian Outline
+        value: CG-NewObsidian-hr
+      - label: CG Old Default
+        value: CG-OG-hr
+      - label: No Logo
+        value: CG-None-hr
+      - label: Classic Obsidian Outline
+        value: CG-ClassicObsidian-hr
+      - label: Windows
+        value: CG-Windows-hr
+      - label: Apple
+        value: CG-Apple-hr
+  - id: CG-workspace-custom-sbt
+    title: Custom Left Sidebar Toggle
+    description: Add your custom Left Toggle. Paste the entire link to the image including "https://" -> url("your link here") or paste the local file location. Be sure to use "/" instead of "\" on Windows.
+    type: variable-text
+    default: url("app://local/")
+    value: CG-Custom-sbt
+  - id: mini-header-hide
+    title: Show Header Indication
+    description: Enabling this will show the small header indicator next to headers, such as H1, H2, etc.
+    type: class-toggle
+    default: true
+  - id: CG-Color
+    title: Color Picker
+    type: heading
+    description: Change Colors of certain elements
+    level: 1
+    collapsed: true
+  - title: Selected Accent
+    id: custom-selected-accent
+    type: variable-color
+    format: hsl-values
+    default: "hsl(198, 63%, 57%)"
+  - title: Active Tab Accent
+    id: activetab-color
+    type: variable-color
+    format: hsl-values
+    default: "hsl(198, 63%, 57%)"
+  - title: Active Note Title Color
+    id: active-title
+    type: variable-color
+    format: hsl-values
+    default: "hsl(198, 63%, 57%)"
+  - title: Blockquote color
+    id: block-color
+    type: variable-color
+    format: hsl
+    default: "hsl(198, 63%, 57%)"
+  - title: Hover Color
+    id: hover-accent
+    type: variable-color
+    format: hsl-values
+    default: "hsl(198, 63%, 57%)"
+  - title: Outgoing link color
+    id: outlink-color
+    type: variable-color
+    format: hex
+    default: "#FFA500"
+  - title: Internal link color
+    id: inlink-color
+    type: variable-color
+    format: hex
+    default: "#ffc400"
+  - title: List Color
+    id: bulletlist-color
+    type: variable-color
+    format: hex
+    default: "#4CADD6"
+  - title: Bold Text Glow
+    id: custom-boldText-glow
+    type: variable-color
+    format: hsl-values
+    default: "hsl(198, 63%, 57%)"
+  - title: Bold Text Color
+    id: custom-boldText-color
+    type: variable-color
+    format: rgb-values
+    default: "rgb(230, 229, 229)"
+  - title: Header 1 Color
+    id: h1-glow
+    type: variable-color
+    format: hex
+    default: "#4CADD6"
+  - title: Header 2 Color
+    id: h2-glow
+    type: variable-color
+    format: hex
+    default: "#0cd0d0"
+  - title: Header 3 Color
+    id: h3-glow
+    type: variable-color
+    format: hex
+    default: "#00d200"
+  - title: Header 4 Color
+    id: h4-glow
+    type: variable-color
+    format: hex
+    default: "#ffc400"
+  - title: Header 5 Color
+    id: h5-glow
+    type: variable-color
+    format: hex
+    default: "#FF0000"
+  - title: Header 6 Color
+    id: h6-glow
+    type: variable-color
+    format: hex
+    default: "#FF00FF"
+  - id: CG-other
+    title: Font Changer
+    type: heading
+    description: Change font/size for Default Font, Major/Minor/Title Headings
+    level: 1
+    collapsed: true
+  - id: default-font
+    title: Base font (UI and notes font)
+    description: Change the base font by typing the name of the desired font in the textbox, For System Default type Inter.
+    type: variable-text
+    default: "Quantico"
+  - id: title-heading
+    title: Title Heading (H1)
+    description: Change the Heading 1 font by typing the name of the desired font in the textbox, For System Default type Inter.
+    type: variable-text
+    default: "Space Wham"
+  - id: major-heading
+    title: Major Heading font (H2-3)
+    description: Change the Heading 2 and 3 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
+    type: variable-text
+    default: "Quantico"
+  - id: minor-heading
+    title: Minor Headings font (H4-6)
+    description: Change the Heading 4-6 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
+    type: variable-text
+    default: "Oxanium"
+  - id: h1-size
+    title: H1 font size
+    description: Enter Header 1 Font size
+    type: variable-text
+    default: 2.1em
+  - id: h2-size
+    title: H2 font size
+    description: Enter Header 2 Font size
+    type: variable-text
+    default: 1.85em
+  - id: h3-size
+    title: H3 font size
+    description: Enter Header 3 Font size
+    type: variable-text
+    default: 1.65em
+  - id: h4-size
+    title: H4 font size
+    description: Enter Header 4 Font size
+    type: variable-text
+    default: 1.45em
+  - id: h5-size
+    title: H5 font size
+    description: Enter Header 5 Font size
+    type: variable-text
+    default: 1.25em
+  - id: h6-size
+    title: H6 font size
+    description: Enter Header 6 Font size
+    type: variable-text
+    default: 1.25em
+  - id: CG-other
+    title: ⚠️ In Progress Controls ⚠️
+    type: heading
+    description: Empty for Now
+    level: 1
+    collapsed: true

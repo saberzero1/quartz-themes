@@ -3,5 +3,9 @@
   "version": "0.0.11",
   "minAppVersion": "1.4.0",
   "author": "Moritz Jung",
-  "authorUrl": "https://mprojectscode.github.io/"
+  "authorUrl": "https://mprojectscode.github.io/",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }

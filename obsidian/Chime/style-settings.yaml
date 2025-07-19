@@ -1,0 +1,620 @@
+name: Chime Theme
+id: chime-theme
+settings:
+  - id: theme-settings
+    title: Theme
+    type: class-select
+    allowEmpty: false
+    default: theme-default
+    options:
+      - label: Macaroon
+        value: theme-default
+      - label: Ash
+        value: theme-crystal
+      - label: Ash (old)
+        value: theme-ash-old
+      - label: Anytype
+        value: theme-anytype
+      - label: Celestial
+        value: theme-celestial
+      - label: Chinchilla
+        value: theme-chinchilla
+      - label: Spring
+        value: theme-spring
+      - label: Novelist
+        value: theme-novelist
+      - label: Nord
+        value: theme-nord
+      - label: Notion
+        value: theme-notion
+      - label: Solarized
+        value: theme-solarized
+      - label: Gruvbox
+        value: theme-gruvbox
+      - label: Obsidian
+        value: theme-classic
+      - label: Light & Bright
+        value: theme-light-and-bright
+
+  - id: ui-options
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-dividers
+    title: Hide Workspace Dividers
+    type: class-toggle
+
+  - id: cards-layout
+    title: Cards Sidebar Layout
+    description: Toggle a cards layout for sidebars. NOTE - will not have any effect if Classic Layout is turned on.
+    type: class-toggle
+  - id: classic-layout
+    title: Classic Layout
+    description: Get rid of rounded note corners for a more blocky, classic look. NOTE - will override Cards Layout.
+    type: class-toggle
+  - id: line-style
+    title: Line Style
+    description: Line style displayed on borders.
+    type: class-select
+    allowEmpty: false
+    default: line-style-solid
+    options:
+      - label: Solid
+        value: line-style-solid
+      - label: Dashed
+        value: line-style-dashed
+      - label: Dotted
+        value: line-style-dotted
+      - label: Double
+        value: line-style-double
+      - label: Groove
+        value: line-style-groove
+      - label: Ridge
+        value: line-style-ridge
+      - label: Inset
+        value: line-style-inset
+      - label: outset
+        value: line-style-outset
+  - id: border-width
+    title: Border Width
+    type: variable-number-slider
+    default: 1.2
+    min: 1
+    max: 2.5
+    step: 0.1
+    format: px
+  - id: border-radius-average
+    title: Border Radius (Roundness)
+    description: Adjust the roundness of the panes and other small elements (overriden with classic mode turned on)
+    type: variable-number-slider
+    default: 11
+    min: 0
+    max: 30
+    step: 1
+    format: px
+  - id: editor-heading
+    title: Editor
+    type: heading
+    level: 2
+    collapsed: true
+  - id: file-line-width
+    title: Readable Line Length
+    description: Change the width of the note when Readable Line Length is turned on.
+    type: variable-text
+    default: "700px"
+  - id: folders-heading
+    title: Folders
+    type: heading
+    level: 2
+    collapsed: true
+  - id: folder-color-options
+    title: Folder Colors
+    description: Enable or disable rainbow folders (original rainbow folders created by Lithou)
+    type: class-select
+    allowEmpty: false
+    default: folder-default
+    options:
+      - label: Default
+        value: folder-default
+      - label: Rainbow Folder Titles
+        value: folder-rainbow-titles
+      - label: Rainbow Folder Backgrounds
+        value: folder-rainbow-backgrounds
+  - id: tabs-heading
+    title: Tabs
+    type: heading
+    level: 2
+    collapsed: true
+  - id: tab-text-color-focused-active-current
+    title: Active Tab Color
+    description: Change the text color of the active tab.
+    type: variable-select
+    default: var(--text-accent)
+    options:
+      - label: Accent Color
+        value: var(--text-accent)
+      - label: Muted
+        value: var(--text-muted)
+      - label: Faint
+        value: var(--text-faint)
+      - label: Normal
+        value: var(--text-normal)
+
+  - id: workspace-options
+    title: Background Image
+    type: heading
+    level: 2
+    collapsed: true
+  - id: background-image
+    title: Enable Workspace Background Image
+    description: Set a background image for your workspace.
+    type: class-toggle
+    default: false
+  - id: custom-image
+    title: Custom Background Image
+    type: variable-select
+    default: Above the Clouds
+    options:
+      - label: Gradient 1
+        value: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+      - label: Gradient 2
+        value: url(https://images.unsplash.com/photo-1557682260-96773eb01377?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80)
+      - label: Color Waves
+        value: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80)
+      - label: Stacked Colors
+        value: url(https://images.unsplash.com/photo-1576502200916-3808e07386a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2065&q=80)
+      - label: Above the Clouds
+        value: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+      - label: Serene White Mountain
+        value: url(https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80)
+      - label: City at Dawn
+        value: url(https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80)
+      - label: Morning Coast
+        value: url(https://images.unsplash.com/photo-1555117746-a7c449e5d0ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80)
+      - label: Dramatic Woods
+        value: url(https://images.unsplash.com/photo-1562627952-f52a76c3c823?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80)
+      - label: Snowy Sunrise
+        value: url(https://images.unsplash.com/photo-1487349703519-90c8e4f426a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2906&q=80)
+      - label: Sakura Blossoms
+        value: url(https://images.unsplash.com/photo-1560719613-9f0bdc469ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80)
+      - label: Mountain Silhouette at Dusk
+        value: url(https://images.unsplash.com/photo-1509226704106-8a5a71ffbfa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+      - label: Neon City
+        value: url(https://images.unsplash.com/photo-1531931477284-7e16215c9540?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)
+  - id: bg-blur
+    title: Background Blur
+    type: variable-number
+    description: Apply a blurring effect to the background image. I recommend using higher values for dark mode.
+    default: 0
+    format: px
+  - id: blockquote-options
+    title: Blockquotes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: blockquote-style
+    title: Blockquote style
+    type: class-select
+    allowEmpty: false
+    default: blockquote-normal
+    options:
+      - label: Chime
+        value: blockquote-normal
+      - label: Simple Block
+        value: blockquote-block
+      - label: Obsidian
+        value: blockquote-quote
+      - label: Minimalist
+        value: blockquote-minimal
+      - label: Card
+        value: blockquote-floating
+      - label: Sleek
+        value: blockquote-sleek
+      - label: Basic
+        value: blockquote-basic
+  - id: blockquote-mark
+    title: Quote Marking
+    type: class-toggle
+    default: false
+  - id: callout-options
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: callout-style
+    title: Callout Style
+    type: class-select
+    allowEmpty: false
+    default: callout-normal
+    options:
+      - label: Default
+        value: callout-normal
+      - label: Bordered
+        value: callout-bordered
+      - label: Outlined
+        value: callout-outlined
+      - label: Card
+        value: callout-floating
+  - id: checkbox-options
+    title: Checkboxes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: checkbox-style
+    title: Checkbox Style
+    type: class-select
+    allowEmpty: false
+    default: checkbox-default
+    options:
+      - label: Default
+        value: checkbox-default
+      - label: Block
+        value: checkbox-block
+      - label: Anytype
+        value: checkbox-anytype
+  - id: tag-options
+    title: Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: tag-style
+    title: Tag Style
+    type: class-select
+    allowEmpty: false
+    default: tag-default
+    options:
+      - label: Default
+        value: tag-default
+      - label: Block
+        value: tag-block
+      - label: Minimalistic
+        value: tag-minimal
+      - label: Button
+        value: tag-button
+  - id: link-options
+    title: Links
+    type: heading
+    level: 2
+    collapsed: true
+  - id: link-style
+    title: Link Style
+    type: class-select
+    allowEmpty: false
+    default: link-default
+    options:
+      - label: Default
+        value: link-default
+      - label: Web
+        value: link-web
+      - label: Emphasized
+        value: link-em
+      - label: Button
+        value: link-button
+  - id: code-heading
+    title: Code
+    type: heading
+    level: 2
+    collapsed: true
+  - id: code-normal
+    title: Inline Code Color
+    type: variable-select
+    default: var(--text-muted)
+    options:
+      - label: Muted
+        value: var(--text-muted)
+      - label: Normal
+        value: var(--text-normal)
+      - label: Red
+        value: var(--color-red)
+      - label: Accent
+        value: var(--text-accent)
+  - id: code-background
+    title: Code background
+    type: variable-select
+    default: var(--background-primary-alt)
+    options:
+      - label: Default
+        value: var(--background-primary-alt)
+      - label: Background Primary
+        value: var(--background-primary)
+      - label: Background Secondary
+        value: var(--background-secondary)
+      - label: Background Secondary Alt
+        value: var(--background-secondary-alt)
+      - label: Transparent
+        value: transparent
+      - label: Accent
+        value: hsla(var(--color-accent-hsl), 0.1
+
+  - id: headings-settings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: heading-colors
+    title: Heading Colors
+    type: class-select
+    allowEmpty: false
+    default: heading-default
+    options:
+      - label: Default
+        value: heading-default
+      - label: Colorful Headings
+        value: colorful-headings
+      - label: Alternate Colorful Headings
+        value: colorful-headings-alt
+  - id: smaller-headings
+    title: Smaller Headings
+    description: Make headings smaller and less distracting.
+    type: class-toggle
+    default: false
+  - id: h1-options
+    title: Header 1
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-weight
+    title: Header 1 Weight
+    type: variable-number
+    default: 600
+  - id: h1-variant
+    title: Header 1 Font Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h1-center
+    title: Center Header 1
+    type: class-toggle
+    default: false
+  - id: h1-bottom-border
+    title: Header 1 Bottom Border
+    type: class-toggle
+    default: false
+  - id: h2-options
+    title: Header 2
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-weight
+    title: Header 2 Weight
+    type: variable-number
+    default: 600
+  - id: h2-variant
+    title: Header 2 Font Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h2-center
+    title: Center Header 2
+    type: class-toggle
+    default: false
+  - id: h2-bottom-border
+    title: Header 2 Bottom Border
+    type: class-toggle
+    default: false
+  - id: h3-options
+    title: Header 3
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-weight
+    title: Header 3 Weight
+    type: variable-number
+    default: 600
+  - id: h3-variant
+    title: Header 3 Font Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h3-center
+    title: Center Header 3
+    type: class-toggle
+    default: false
+  - id: h3-bottom-border
+    title: Header 3 Bottom Border
+    type: class-toggle
+    default: false
+  - id: h4-options
+    title: Header 4
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-weight
+    title: Header 4 Weight
+    type: variable-number
+    default: 600
+  - id: h4-variant
+    title: Header 4 Font Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h4-center
+    title: Center Header 4
+    type: class-toggle
+    default: false
+  - id: h4-bottom-border
+    title: Header 4 Bottom Border
+    type: class-toggle
+    default: false
+  - id: h5-options
+    title: Header 5
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-weight
+    title: Header 5 Weight
+    type: variable-number
+    default: 600
+  - id: h5-variant
+    title: Header 5 Font Variant
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h5-center
+    title: Center Header 5
+    type: class-toggle
+    default: false
+  - id: h5-bottom-border
+    title: Header 5 Bottom Border
+    type: class-toggle
+    default: false
+  - id: h6-options
+    title: Header 6
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-weight
+    title: Header 6 Weight
+    type: variable-number
+    default: 600
+  - id: h6-variant
+    title: Header 6 Font Variant
+    type: variable-select
+    default: petite-caps
+    options:
+      - normal
+      - petite-caps
+      - small-caps
+      - all-small-caps
+      - unicase
+  - id: h6-center
+    title: Center Header 6
+    type: class-toggle
+    default: false
+  - id: h6-bottom-border
+    title: Header 6 Bottom Border
+    type: class-toggle
+    default: false
+  - id: text-options
+    title: Text
+    type: heading
+    level: 2
+    collapsed: true
+  - id: colored-bold-and-italic
+    title: Colorful bold and italic text
+    type: class-toggle
+    default: false
+  - id: underlined-highlight
+    title: Underlined Highlights
+    description: Show highlights as underlined text.
+    type: class-toggle
+    default: false
+  - id: increased-line-height
+    title: Increased Line Height
+    description: Increase line height and paragraph spacing for more readability.
+    type: class-toggle
+    default: false
+  - id: custom-font-toggle
+    title: Enable custom font
+    type: class-toggle
+    default: false
+  - id: custom-font
+    title: Custom font
+    type: variable-select
+    description: This will override theme fonts, but it will not override any font defined in Settings/Appearance.
+    default: Monsterrat
+    options:
+      - Hindi
+      - Roboto
+      - "Merriweather Sans"
+      - "Merriweather"
+      - "Nunito Sans"
+      - "IBM Plex Sans"
+      - Forum
+      - "EB Garamond"
+      - "Koh Santepheap"
+      - Alice
+      - Comfortaa
+      - Nunito
+      - Montserrat
+      - Figtree
+      - Poppins
+      - Rubik
+      - Tilt Warp
+      - Merienda
+      - Handlee
+      - Arima
+      - Courgette
+      - "Inknut Antiqua"
+      - "Averia Gruesa Libre"
+      - "Anonymous Pro"
+      - "Space Mono"
+      - "Ubuntu Mono"
+      - "DM Mono"
+  - id: plugin-options
+    title: Plugins
+    type: heading
+    level: 2
+    collapsed: true
+  - id: page-gallery
+    title: Page Gallery
+    type: heading
+    level: 3
+    collapsed: true
+  - id: hide-filter
+    title: Hide Search Bar
+    type: class-toggle
+    default: false
+  - id: responsive-tile-height
+    title: Responsive Tile Height
+    type: class-toggle
+    default: true
+    description: Make text break and continue on the next line rather than overflowing. Tile heights will change to accommodate the whole text.
+  - id: flex-tiles
+    title: Loose Tiles
+    description: Make the tiles resize and rearrange themselves depending on the size of their content. This gets rid of the rigid columnar layout.
+    type: class-toggle
+    default: false
+  - id: focus-mode-heading
+    title: Focus Mode
+    type: heading
+    description: Hide certain UI elements until you hover over them with your mouse.
+    level: 2
+    collapsed: true
+  - id: hide-buttons
+    title: Hide Buttons
+    type: class-toggle
+    default: false
+  - id: hide-tabs
+    title: Hide Tabs
+    type: class-toggle
+    default: false
+  - id: hide-titlebar
+    title: Hide Floating Note Titlebar
+    type: class-toggle
+    default: false
+  - id: hide-scrollbars
+    title: Hide Scrollbars
+    type: class-toggle
+    default: false
+  - id: ultra-focus
+    title: Enable Ultra Focus (A.K.A. Full-Screen)
+    description: Everything except your note is completely invisible until you hover over it. Your note takes up most of the screen.
+    type: class-toggle
+    default: false

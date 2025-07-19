@@ -2,18 +2,23 @@
   "name": "quartz-themes",
   "version": "1.0.0",
   "description": "Quartz-compatible Obsidian themes",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
     "build": "just build",
     "compile": "just compile",
     "compile-all": "just compile-all",
     "compile-single": "just compile-single",
     "check": "just check",
+    "force-compile": "just force-atomize",
+    "force-format": "just force-format",
     "format": "just format",
-    "update": "just update",
     "theme": "just theme",
+    "update": "just update",
     "verify": "just verify",
-    "verify-ci": "just verify-ci"
+    "verify-ci": "just verify-ci",
+    "json-compile": "just json-compile",
+    "json-compile-full": "just json-compile-full"
   },
   "repository": {
     "type": "git",
@@ -34,13 +39,32 @@
   "homepage": "https://github.com/saberzero1/quartz-themes#readme",
   "devDependencies": {
     "css": "^3.0.0",
-    "prettier": "^3.3.3",
-    "sass": "^1.79.3"
+    "prettier": "^3.5.3",
+    "sass": "^1.79.3",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@csstools/postcss-color-mix-function": "^3.0.10",
+    "@csstools/postcss-relative-color-syntax": "^3.0.10",
+    "@prettier/sync": "github:prettier/sync",
+    "js-yaml": "^4.1.0",
     "just-install": "^2.0.2",
     "postcss": "^8.5.3",
+    "postcss-calc": "^10.1.1",
+    "postcss-color-converter": "^1.2.1",
+    "postcss-color-hsl": "^2.0.0",
+    "postcss-color-hwb": "^3.0.0",
+    "postcss-color-rgb": "^2.0.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^2.0.0",
+    "postcss-custom-properties": "^14.0.6",
+    "postcss-nesting": "^13.0.2",
     "postcss-prune-var": "^1.1.2",
-    "postcss-scss": "^4.0.9"
+    "postcss-pseudo-is": "^0.3.0",
+    "postcss-rgba-hex": "^0.3.7",
+    "postcss-scss": "^4.0.9",
+    "postcss-selector-not": "^8.0.1",
+    "postcss-unprefix": "^2.1.4",
+    "ts-node": "^10.9.2"
   }
 }

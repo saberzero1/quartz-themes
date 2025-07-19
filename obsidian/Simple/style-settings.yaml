@@ -1,0 +1,89 @@
+name: Simple visual control settings
+id: custom-diegoeis-simple
+settings:
+  - id: appearance
+    title: General appearance
+    description: Where you config the interface appearance and other general options
+    type: heading
+    level: 1
+  - id: eis-sidebar-dark
+    title: Dark sidebar
+    description: If enable, the sidebar will be dark, even in light mode.
+    type: class-toggle
+    default: false
+  - id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle
+  - id: eis-font-family
+    title: Font size of headings and paragraphs
+    type: heading
+    level: 1
+  - id: font-default
+    title: Custom Body family
+    description: Font family of body text
+    type: variable-text
+    default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif
+  - id: eis-font-type
+    title: Choose what type of font you want to use
+    description: These are beautyful fonts to write and read.
+    type: class-select
+    allowEmpty: false
+    default: eis-font-default
+    options:
+      - eis-font-default
+      - eis-font-ibm
+      - eis-font-iawriter-quattro
+
+  - id: eis-font-size
+    title: Font size of headings and paragraphs
+    type: heading
+    level: 1
+  - id: size-h1
+    title: H1
+    description: Font size of H1
+    type: variable-number
+    default: 1.75
+    format: rem
+  - id: size-h2
+    title: H2
+    description: Font size of H2
+    type: variable-number
+    default: 1.45
+    format: rem
+  - id: size-h3
+    title: H3
+    description: Font size of H3
+    type: variable-number
+    default: 1.2
+    format: rem
+  - id: size-h4
+    title: H4
+    description: Font size of H4
+    type: variable-number
+    default: 1
+    format: rem
+  - id: size-h5
+    title: H5
+    description: Font size of H5
+    type: variable-number
+    default: .95
+    format: rem
+  - id: size-h6
+    title: H6
+    description: Font size of H6
+    type: variable-number
+    default: .95
+    format: rem
+  - id: font-paragraph
+    title: Body paragraph
+    description: Font size of body size
+    type: variable-number
+    default: 0.9
+    format: rem
+  - id: eis-vintage-color
+    title: Vintage Theme
+    description: If enable, you will have a beauty vintage neutral style
+    type: class-toggle
+    default: true

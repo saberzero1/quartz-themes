@@ -3,5 +3,9 @@
   "version": "0.0.0",
   "minAppVersion": "1.6.0",
   "author": "Thibaut de Saivre",
-  "authorUrl": "https://github.com/GnRlLeclerc"
+  "authorUrl": "https://github.com/GnRlLeclerc",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

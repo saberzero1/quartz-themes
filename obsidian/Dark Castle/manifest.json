@@ -7,5 +7,9 @@
   "fundingUrl": {
     "Buy Me a Coffee": "https://buymeacoffee.com/scottgriv",
     "GitHub Sponsor": "https://github.com/sponsors/scottgriv"
+  },
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
   }
 }

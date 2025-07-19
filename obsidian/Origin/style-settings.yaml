@@ -1,0 +1,25 @@
+name: Origin
+id: origin-theme
+settings:
+  - id: tab-options
+    title: Tab Display
+    type: class-select
+    allowEmpty: false
+    default: tabs-default
+    options:
+      - label: Hide Tabs Completely
+        value: hide-tabs
+      - label: Show Tabs on Hover
+        value: tabs-default
+      - label: Show Tabs Completely
+        value: show-tabs
+  - id: frontmatter-style
+    title: Frontmatter/Properties Style
+    type: class-select
+    allowEmpty: false
+    default: frontmatter-classic
+    options:
+      - label: Classic Frontmatter
+        value: frontmatter-classic
+      - label: Properties
+        value: frontmatter-properties

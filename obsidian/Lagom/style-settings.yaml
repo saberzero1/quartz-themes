@@ -1,0 +1,524 @@
+name: Hide elements
+id: hide-elements
+settings:
+  - id: icon-settings
+    title: Show settings
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: num-of-notes
+    title: Show number of notes
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: show-explorer-buttons
+    title: Show explorer buttons
+
+    type: variable-select
+    default: unset
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: show-editor-text-bar
+    title: Show toolbar
+    type: variable-select
+    default: unset
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: files-bookmarks-search-bar
+    title: Show menu files
+    type: variable-select
+    default: flex
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: flex
+  - id: show-vault-name
+    title: Show vault
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: scrollbars
+    title: Show scrollbars
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  #name: Notes & Editor
+  #id: notes-values
+  - id: text-note-section
+    title: Text note
+    type: heading
+    level: 2
+    collapsed: true
+  - id: default-font-size
+    title: Font size
+    type: variable-number
+    default: 17.5
+    format: px
+  - id: p-spacing
+    title: Paragraph spacing
+    type: variable-number
+    default: 24
+    format: px
+  - id: list-indent
+    title: List indent
+    type: variable-number
+    default: 17
+    format: px
+  - id: letter-spacing-note
+    title: Letter spacing
+    type: variable-number
+    default: 0.03
+    format: px
+  - id: line-height-note
+    title: Line height
+    type: variable-number
+    default: 24.5
+    format: px
+  - id: text-note-align
+    title: Text align
+    type: variable-select
+    default: justify
+    options:
+      - label: Justify
+        value: justify
+      - label: Center
+        value: center
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+  - id: focus-active-line-opacity
+    title: Opacity active line
+    type: variable-number
+    default: 0.8
+  - id: focus-non-active-line-opacity
+    title: Opacity non-active line
+    type: variable-number
+    default: 0.65
+  - id: separator-icon
+    title: Separator content
+    type: variable-text
+    default: o0o
+    quotes: true
+  - id: separator-icon-color
+    title: Separator color
+    type: variable-color
+    opacity: true
+    format: rgb
+    alt-format:
+      - id: accent-rgb
+        format: rgb
+    default: "#6C6C6C6B"
+  - id: active-line-indicator
+    title: Active line indicator
+    type: variable-text
+    default: —
+    quotes: true
+  - id: active-line-background
+    title: Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    alt-format:
+      - id: accent-rgb
+        format: rgb
+    default: "#6C6C6C6B"
+  - id: show-dotted-line
+    title: Show line indicator
+    type: variable-select
+    default: 1.5px
+    options:
+      - label: Show
+        value: 1.5px
+      - label: Hide
+        value: 0px
+  - id: page-style-read-mode
+    title: Style Page
+    type: class-toggle
+    default: false
+  - id: background-image-editor
+    title: Background image (source mode)
+    type: variable-text
+    description: url(https://example.com/image.jpg)
+    default: None
+  - id: background-image-editor-size
+    title: Background size
+    type: variable-number
+    default: 200
+    format: px
+  - id: headers-section
+    title: Headers
+    type: heading
+    level: 2
+    collapsed: true
+  - id: headers-font-size
+    title: Font size
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-size
+    title: Header H1
+    type: variable-number
+    default: 20
+    format: px
+  - id: h2-size
+    title: Header H2
+    type: variable-number
+    default: 18
+    format: px
+  - id: h3-size
+    title: Header H3
+    type: variable-number
+    default: 16
+    format: px
+  - id: h4-size
+    title: Header H4
+    type: variable-number
+    default: 14
+    format: px
+  - id: h5-size
+    title: Header H5
+    type: variable-number
+    default: 12
+    format: px
+  - id: h6-size
+    title: Header H6
+    type: variable-number
+    default: 10
+    format: px
+  - id: headers-others
+    title: Others
+    type: heading
+    level: 3
+    collapsed: true
+  - id: headers-space-simetry
+    title: Header space
+    type: variable-number
+    default: 1.5
+    format: em
+  - id: inline-title-section
+    title: Inline title
+    type: heading
+    level: 2
+    collapsed: true
+  - id: block-title-read-mode
+    title: Block Inline Title
+    type: class-toggle
+    default: true
+  - id: inline-title-align
+    title: Title align
+    type: variable-select
+    default: justify
+    options:
+      - label: Justify
+        value: justify
+      - label: Center
+        value: center
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+  - id: inline-title-size
+    title: Font size
+    type: variable-number
+    default: 18.2
+    format: px
+  - id: inline-title-bold
+    title: Bold
+    type: variable-number
+    default: 400
+    format: px
+  - id: inline-title-always-uppercase
+    title: Uppercase lock
+    type: class-toggle
+    default: true
+  - id: code-block-section
+    title: Code blocks & Inline code
+    type: heading
+    level: 2
+    collapsed: true
+  - id: wrap-code-blocks
+    title: Wrap code (Read mode)
+    type: variable-select
+    default: normal
+    options:
+      - label: Enable
+        value: pre
+      - label: Disabled
+        value: normal
+  - id: code-size
+    title: Font size (Preview)
+    type: variable-number
+    default: 15
+    format: px
+  - id: code-size-edit-mode
+    title: Font size (Editor)
+    type: variable-number
+    default: 15
+    format: px
+  - id: macos-button-size
+    title: MacOS buttons size
+    type: variable-number
+    default: 16
+    format: px
+  - id: quotes-section
+    title: Quotes
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: quote-font-size
+    title: Font size
+    type: variable-number
+    default: 15.7
+    format: px
+  - id: quotes-align
+    title: Align text
+    type: variable-select
+    default: justify
+    options:
+      - label: Justify
+        value: justify
+      - label: Center
+        value: center
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+  - id: quote-padding
+    title: Quote padding
+    type: variable-text
+    default: 10px 15px 10px 15px
+  - id: quote-icon
+    title: Quote icon
+    type: variable-text
+    default: "“"
+  - id: quote-hide-top-line
+    title: Hide top line
+    type: variable-select
+    default: Show
+    options:
+      - label: Hide
+        value: 0px
+      - label: Show
+        value: 1.5px
+  - id: quote-hide-down-line
+    title: Hide down line
+    type: variable-select
+    default: Show
+    options:
+      - label: Hide
+        value: 0px
+      - label: Show
+        value: 1.5px
+  - id: callouts-section
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-callout-title
+    title: Show  title
+    type: variable-select
+    default: unset
+    options:
+      - label: Hide
+        value: None
+      - label: Show
+        value: unset
+  - id: callout-font-size-title
+    title: Font size
+    type: variable-number
+    default: 16
+    format: px
+  - id: callouts-align-text
+    title: Align text
+    type: variable-select
+    default: justify
+    options:
+      - label: Justify
+        value: justify
+      - label: Center
+        value: center
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+
+  - id: embed-section
+    title: Embed notes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: show-embed-title
+    title: Show  embed title
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: block
+  - id: images-section
+    title: Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: grayscale-dark-mode
+    title: Grayscale images
+    description: Only dark mode
+    type: class-toggle
+    default: true
+  - id: opacity-grayscale-images
+    title: Opacity
+    type: variable-number
+    default: 0.9
+    format:
+  - id: links-section
+    title: Links
+    type: heading
+    level: 2
+    collapsed: true
+  - id: internal-link-border-style
+    title: Underline style
+    description: Only affect local links
+    type: variable-select
+    default: dotted
+    options:
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+      - label: Solid
+        value: solid
+  #name: Properties & YAML
+  #id: yaml-values
+  - id: hide-empty-properties
+    title: Show empty properties
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: none
+      - label: Show
+        value: unset
+  - id: hide-add-button
+    title: Show 'add properties' button
+    type: variable-select
+    default: None
+    options:
+      - label: Hide
+        value: None
+      - label: Show
+        value: flex
+  - id: properties-icon-size
+    title: Icon size
+    type: variable-number
+    default: unset
+    format: px
+  - id: properties-editor-font-size
+    title: YAML font size
+    type: variable-number
+    default: 16
+    format: px
+  - id: hide-separator-yaml
+    title: Show separators in Source mode
+    type: variable-select
+    default: none
+    options:
+      - label: Hide
+        value: None
+      - label: Show
+        value: unset
+  #name: Obsidian UI
+  #id: others-values
+  - id: radius-s
+    title: Radius border
+    type: variable-number
+    default: 11.2
+    format: px
+  - id: icon-ui-opacity
+    title: Icons opacity
+    type: variable-number
+    default: 0.85
+    format: px
+  - id: theme-light-opacity
+    title: Light mode - Opacity
+    type: variable-number
+    default: 0.85
+    format:
+  - id: theme-dark-opacity
+    title: Dark mode - Opacity
+    type: variable-number
+    default: 0.75
+    format:
+  #name: Explorer & Files
+  #id: files-folders
+  - id: icon-file
+    title: Icon file
+    type: variable-text
+    default: "·"
+    quotes: true
+  - id: nav-item-size
+    title: Font size
+    type: variable-number
+    default: 16
+    format: px
+  - id: popup-explorer
+    title: Pop-up style
+    type: class-toggle
+    default: true
+  - id: folder-border-color
+    title: Border color (folders)
+    type: variable-color
+    opacity: true
+    format: rgb
+    alt-format:
+      - id: accent-rgb
+        format: rgb
+    default: "#6c6c6c6b"
+  - id: filename-separator-style
+    title: Separator style
+    type: variable-select
+    default: dotted
+    options:
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+      - label: Solid
+        value: solid
+  - id: filename-line-thickness
+    title: Line thickness
+    type: variable-number
+    default: 1.8
+    format: px
+  #name: Tabs
+  #id: tabs
+  - id: tabs-height
+    title: Tab height
+    type: variable-number
+    default: 300
+    format: px

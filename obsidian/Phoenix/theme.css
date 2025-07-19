@@ -123,10 +123,16 @@ ______  ___  ______ _   __
   --text-accent: var(--r-bright-orange);
   --text-accent-hover: var(--r-yellow-orange);
   --interactive-accent-rgb: var(--r-bright-orange);
-  --inline-code: var(--code-light-gray); /* text in inline code, edit and preview */
-  --code-block: var(--code-light-gray); /* text in preview mode from codeblock */
+  --inline-code: var(
+    --code-light-gray
+  ); /* text in inline code, edit and preview */
+  --code-block: var(
+    --code-light-gray
+  ); /* text in preview mode from codeblock */
   --code-normal: var(--code-light-gray);
-  --default-codeblock: var(--obsidian-codeblock); /* codeblock background color */
+  --default-codeblock: var(
+    --obsidian-codeblock
+  ); /* codeblock background color */
   --pre-code: var(--default-codeblock); /* inline code background color */
   --vim-cursor: var(--r-bright-orange);
   --text-selection: var(--r-bg-selection);
@@ -165,7 +171,9 @@ ______  ___  ______ _   __
   --text-title-h6: var(--r-mist-energy-blue);
   --text-link: var(--r-dark-orange);
   --text-link-hover: var(--r-deep-orange);
-  --text-a: var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+  --text-a: var(
+    --r-bright-orange
+  ); /* also controls color of sidebar icons when hovered */
   --text-a-hover: var(--r-yellow-orange);
   --text-mark: var(--r-bg-highlight);
   --text-highlight-bg: var(--r-bg-highlight);
@@ -267,10 +275,12 @@ ______  ___  ______ _   __
 }
 
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
-    Inter;
-  --editor-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text, Liberation Sans,
-    Inter;
+  --default-font:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text,
+    Liberation Sans, Inter;
+  --editor-font:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", SF Pro Text,
+    Liberation Sans, Inter;
   --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
@@ -467,7 +477,7 @@ blockquote {
 /* changes dropdown color, somewhere in that url: color: deep-orange/h3/ed5b0f */
 .dropdown {
   cursor: pointer;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url("data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 th {
@@ -778,8 +788,18 @@ h6 a {
   background-size: 8px 2px;
   background-image: linear-gradient(
     to right,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%,
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%
   );
 }
 
@@ -831,8 +851,18 @@ h6 a {
   color: inherit !important;
   background-image: linear-gradient(
     to right,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%,
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%
   );
 }
 
@@ -877,8 +907,18 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   color: inherit !important;
   background-image: linear-gradient(
     to right,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
-    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%,
+    color-mix(
+        in srgb,
+        currentColor var(--hx-link-ul-transparency-pct),
+        transparent
+      )
+      75%
   );
   background-position: 0.5em 1.04em !important;
   background-repeat: repeat-x;
@@ -892,11 +932,22 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 .callout-title-inner a.external-link {
   text-decoration: none;
   color: inherit !important;
-  background-image: url(public/images/874d8b8e340f75575caa.svg),
+  background-image:
+    url(public/images/874d8b8e340f75575caa.svg),
     linear-gradient(
       to right,
-      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%,
-      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+      color-mix(
+          in srgb,
+          currentColor var(--hx-link-ul-transparency-pct),
+          transparent
+        )
+        75%,
+      color-mix(
+          in srgb,
+          currentColor var(--hx-link-ul-transparency-pct),
+          transparent
+        )
+        75%
     );
   background-position:
     center right,
@@ -988,7 +1039,9 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* add same hover box shadow to sub-level of callout (below the padding added ~10 lines above) */
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget) > .markdown-rendered:hover {
+.markdown-source-view.mod-cm6
+  .cm-embed-block:not(.cm-table-widget)
+  > .markdown-rendered:hover {
   box-shadow: var(--embed-block-shadow-hover);
   border-radius: var(--radius-s);
   overflow: hidden;
@@ -1064,8 +1117,12 @@ div.HyperMD-task-line span.cm-indent::before,
 
 /* fix for annoying bright links when checked */
 li.task-list-item[data-task="x"] a.internal-link,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] span.cm-underline,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] span.cm-underline {
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task="x"]
+  span.cm-underline,
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task="X"]
+  span.cm-underline {
   color: var(--code-orange);
   text-decoration-color: var(--text-faint);
 }
@@ -1155,7 +1212,8 @@ body {
 /* slightly reduce left side padding of callout to counter new icon width */
 /* default is var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6) */
 body {
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-5);
 }
 
 /* adjust padding of task/checkbox lists inside callouts */
@@ -1196,7 +1254,9 @@ body {
 /* this kind of visual fix isn't feasible for checkboxes */
 /* this fix is unnecessary for and does not affect ordered/numbered lists */
 .HyperMD-list-line[class*="HyperMD-list-line-"].cm-line
-  > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
+  > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(
+    :has(span.list-bullet)
+  ) {
   display: inline-block;
   padding-left: 3px;
   padding-right: 1px;
