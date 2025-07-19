@@ -1,0 +1,115 @@
+name: Adwaita
+id: com-github-birneee-obsidian-adwaita
+settings:
+  - title: Window Buttons
+    description: Style of minimize, maximize and close window buttons
+    type: heading
+    level: 2
+    collapsed: false
+  - id: adwaita-mod
+    title: Enable
+    description: Whether to use the Adwaita style window buttons
+    type: class-select
+    default: adwaita-mod-linux-only
+    allowEmpty: false
+    options:
+      - label: Always
+        value: adwaita-mod-always
+      - label: Linux Only
+        value: adwaita-mod-linux-only
+      - label: Never
+        value: adwaita-mod-never
+  - id: adwaita-mod-scale
+    title: Scale
+    description:
+    type: variable-number
+    default: 1
+  - id: adwaita-mod-right-margin
+    title: Right Margin
+    type: variable-number
+    default: 8
+    format: px
+  - id: adwaita-window-button-minimize-hide
+    title: Hide minimize button
+    type: class-toggle
+  - id: adwaita-window-button-maximize-hide
+    title: Hide maximize button
+    type: class-toggle
+  - id: adwaita-window-button-close-hide
+    title: Hide close button
+    type: class-toggle
+
+  - title: Tabs
+    type: heading
+    level: 2
+    collapsed: false
+  - id: adwaita-tabs
+    title: Enable
+    description: Whether to use the Adwaita style tabs
+    type: class-select
+    default: adwaita-tabs-linux-only
+    allowEmpty: false
+    options:
+      - label: Always
+        value: adwaita-tabs-always
+      - label: Linux Only
+        value: adwaita-tabs-linux-only
+      - label: Never
+        value: adwaita-tabs-never
+  - id: adwaita-tabs-short
+    title: Short
+    type: class-toggle
+
+  - title: Colors
+    type: heading
+    level: 2
+    collapsed: false
+  - id: adwaita-colors
+    title: Enable
+    description: Whether to use the Adwaita colors
+    type: class-select
+    default: adwaita-colors-linux-only
+    allowEmpty: false
+    options:
+      - label: Always
+        value: adwaita-colors-always
+      - label: Linux Only
+        value: adwaita-colors-linux-only
+      - label: Never
+        value: adwaita-colors-never
+
+  - title: Font
+    type: heading
+    level: 2
+    collapsed: false
+  - id: adwaita-font
+    title: Enable
+    description: Whether to use the Cantarell font (must be installed on system)
+    type: class-select
+    default: adwaita-font-linux-only
+    allowEmpty: false
+    options:
+      - label: Always
+        value: adwaita-font-always
+      - label: Linux Only
+        value: adwaita-font-linux-only
+      - label: Never
+        value: adwaita-font-never
+
+  - title: Icons
+    type: heading
+    level: 2
+    collapsed: false
+  - id: adwaita-icon
+    title: Enable
+    description: Whether to use the Adwaita icons
+    type: class-select
+    default: adwaita-icons-linux-only
+    allowEmpty: false
+    options:
+      - label: Always
+        value: adwaita-icons-always
+      - label: Linux Only
+        value: adwaita-icons-linux-only
+      - label: Never
+        value: adwaita-icons-never

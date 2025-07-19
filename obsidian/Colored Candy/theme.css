@@ -68,7 +68,11 @@ settings:
   /* --background-modifier-border-hover:
         --background-modifier-border-focus: */
   --divider-color: var(--hr-color);
-  --divider-color-hover: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
+  --divider-color-hover: hsl(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-readable)
+  );
   --status-bar-border-color: var(--divider-color);
   --sidebar-left-border-color: var(--divider-color);
   --nav-item-border-color: var(--divider-color);
@@ -92,16 +96,29 @@ settings:
   /* #endregion */
 
   /* #region accents */
-  --text-accent: hsl(var(--accent-minus-60), var(--accent-s), var(--accent-l-readable));
+  --text-accent: hsl(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-readable)
+  );
 
-  --interactive-accent: hsl(var(--accent-plus-60), var(--accent-s-pastel), var(--accent-l-closer));
+  --interactive-accent: hsl(
+    var(--accent-plus-60),
+    var(--accent-s-pastel),
+    var(--accent-l-closer)
+  );
   --interactive-accent-hover: hsl(
     calc(var(--accent-plus-60) - 3),
     calc(var(--accent-s-pastel) * 1.02),
     calc(var(--accent-l-closer) * 1.15)
   );
 
-  --tag-background: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
+  --tag-background: hsla(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-closer),
+    0.25
+  );
   --tag-background-hover: hsla(
     var(--accent-minus-60),
     var(--accent-s),
@@ -112,7 +129,12 @@ settings:
   --checkbox-color: var(--interactive-accent);
   --checkbox-color-hover: var(--interactive-accent-hover);
 
-  --text-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.25);
+  --text-selection: hsla(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-closer),
+    0.25
+  );
   --text-highlight-bg: hsla(
     var(--accent-plus-60),
     var(--accent-s-pastel),
@@ -120,7 +142,12 @@ settings:
     0.6
   );
 
-  --table-selection: hsla(var(--accent-minus-60), var(--accent-s), var(--accent-l-closer), 0.2);
+  --table-selection: hsla(
+    var(--accent-minus-60),
+    var(--accent-s),
+    var(--accent-l-closer),
+    0.2
+  );
   --table-selection-border-color: hsl(
     var(--accent-minus-60),
     var(--accent-s),
@@ -372,24 +399,29 @@ mark,
   bottom: var(--size-1-1);
 }
 
-:not(.cm-formatting-hashtag) + .cm-highlight.cm-hashtag:not(.cm-formatting-hashtag)::before {
+:not(.cm-formatting-hashtag)
+  + .cm-highlight.cm-hashtag:not(.cm-formatting-hashtag)::before {
   content: "#";
 }
 
-.cm-highlight:not(.cm-formatting) + .cm-highlight.cm-formatting:not(:has(+ .cm-highlight)) {
+.cm-highlight:not(.cm-formatting)
+  + .cm-highlight.cm-formatting:not(:has(+ .cm-highlight)) {
   padding-right: var(--size-2-3);
   border-top-right-radius: var(--size-4-5);
   border-bottom-right-radius: var(--size-4-5);
 }
 
-:not(.cm-highlight) + .cm-highlight.cm-formatting:has(+ .cm-highlight:not(.cm-formatting)) {
+:not(.cm-highlight)
+  + .cm-highlight.cm-formatting:has(+ .cm-highlight:not(.cm-formatting)) {
   padding-left: var(--size-2-3);
   border-top-left-radius: var(--size-4-5);
   border-bottom-left-radius: var(--size-4-5);
 }
 
 .cm-highlight:has(+ .cm-highlight),
-.cm-highlight:has(+ .cm-widgetBuffer + :empty + .cm-widgetBuffer + .cm-highlight),
+.cm-highlight:has(
+    + .cm-widgetBuffer + :empty + .cm-widgetBuffer + .cm-highlight
+  ),
 .cm-highlight:has(
     + .cm-widgetBuffer
       + :empty
@@ -451,20 +483,27 @@ mark,
 }
 
 .cm-s-obsidian .cm-inline-code.cm-formatting,
-.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian
+  .cm-inline-code.cm-formatting
+  ~ .cm-inline-code:not(.cm-formatting) {
   padding-top: var(--size-2-2);
   padding-bottom: var(--size-2-2);
 }
 
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+.cm-s-obsidian
+  .cm-inline-code:not(.cm-formatting)
+  + .cm-inline-code.cm-formatting {
   padding-right: var(--size-2-3);
 }
 
-.cm-s-obsidian .cm-inline-code.cm-formatting:has(+ .cm-inline-code:not(.cm-formatting)) {
+.cm-s-obsidian
+  .cm-inline-code.cm-formatting:has(+ .cm-inline-code:not(.cm-formatting)) {
   padding-left: var(--size-2-3);
 }
 
-.cm-s-obsidian .cm-inline-code.cm-formatting + .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian
+  .cm-inline-code.cm-formatting
+  + .cm-inline-code:not(.cm-formatting) {
   padding-left: 0;
   padding-right: 0;
 }

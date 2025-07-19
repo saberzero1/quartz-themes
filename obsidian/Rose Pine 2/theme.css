@@ -122,25 +122,25 @@
 }
 
 /* @settings
-name: Rosé Pine Themes
-id: rosé-pine-theme-settings
+name: Rose Pine Themes
+id: rose-pine-theme-settings
 settings:
   -
-    id: rosé-pine-theme
+    id: rose-pine-theme
     title: Theme variants
-    description: Select your preferred theme, Rosé Pine Moon is enabled by setting light mode on
+    description: Select your preferred theme, Rose Pine Moon is enabled by setting light mode on
     type: class-select
     allowEmpty: false
     default: rose-norm
     options:
       -
-        label: 'Rosé Pine'
+        label: 'Rose Pine'
         value: rose-norm
       -
-        label: 'Rosé Pine Moon'
+        label: 'Rose Pine Moon'
         value: rose-moon
   -
-    id: rosé-pine-theme-accents
+    id: rose-pine-theme-accents
     title: Theme accent
     description: Select your preferred accent
     type: class-select
@@ -535,7 +535,11 @@ strong {
   padding: 0 0.1rem;
   color: var(--rp-love);
   background-color: var(--rp-love);
-  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+  background-image: linear-gradient(
+    62deg,
+    var(--rp-love) 0%,
+    var(--rp-iris) 100%
+  ) !important;
 }
 
 strong .math.math-inline .MathJax {
@@ -560,7 +564,11 @@ strong {
   padding: 0 0.1rem;
   color: var(--rp-love);
   background-color: var(--rp-love);
-  background-image: linear-gradient(62deg, var(--rp-love) 0%, var(--rp-iris) 100%) !important;
+  background-image: linear-gradient(
+    62deg,
+    var(--rp-love) 0%,
+    var(--rp-iris) 100%
+  ) !important;
 }
 
 strong .math.math-inline .MathJax {
@@ -885,7 +893,11 @@ thead {
 }
 
 .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header {
@@ -895,7 +907,11 @@ thead {
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title,
@@ -931,7 +947,8 @@ ul .task-list-item ul::before {
 
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -1019,11 +1036,19 @@ em,
 }
 
 .cm-s-obsidian span.cm-link {
-  background-image: linear-gradient(to bottom, var(--rp-iris) 0%, var(--rp-rose) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--rp-iris) 0%,
+    var(--rp-rose) 100%
+  );
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link {
-  background-image: linear-gradient(to bottom, var(--rp-iris) 0%, var(--rp-rose) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--rp-iris) 0%,
+    var(--rp-rose) 100%
+  );
 }
 
 .cm-s-obsidian span.cm-formatting-link {
@@ -1064,7 +1089,11 @@ em,
 }
 
 .internal-link {
-  background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-accent-55) 0%,
+    var(--bg-accent-55) 100%
+  );
 }
 
 .external-link {
@@ -1156,7 +1185,7 @@ input[type="checkbox"]:checked,
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
 .graph-view.color-fill-unresolved {

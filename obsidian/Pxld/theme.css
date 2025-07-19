@@ -141,7 +141,9 @@ button:not(.clickable-icon) {
 .sidebar-toggle-button {
   background-color: var(--background-primary);
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: var(--background-primary);
 }
 .nav-header {
@@ -237,14 +239,14 @@ settings:
     format: hex
     default: '#ff0000'
   - 
-	 id: text-accent-hover
-	 title: Accent Hover Color
-	 type: variable-color
-	 format: hex
-	 default: '#5e0b11'
+     id: text-accent-hover
+     title: Accent Hover Color
+     type: variable-color
+     format: hex
+     default: '#5e0b11'
   - 
-	 id: font-text
-	 title: Base Font
-	 type: variable-text
-	 default: 'Pixel Square' 
+     id: font-text
+     title: Base Font
+     type: variable-text
+     default: 'Pixel Square' 
 */

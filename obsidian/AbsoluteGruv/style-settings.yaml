@@ -1,0 +1,34 @@
+name: Gruvmeplease ⟡
+id: grubbed
+settings:
+  - id: show-hide-elements
+    title: 🙈 Show/Hide UI Elements
+    description: Re-enable elements hidden by this theme
+    type: heading
+    level: 1
+    collapsed: true
+  - id: show-sidebar-tabs
+    title: Permanently show the Sidebar Tabs
+    type: class-toggle
+    description: When false, the Sidebar Tabs become visible upon hovering.
+    default: false
+  - id: show-titlebar
+    title: Re-enable Title Bar
+    type: class-toggle
+    description: Enable this to have a title bar, for example to move the Obsidian window
+    default: false
+  - id: show-scrollbar
+    title: Re-enable Scrollbars
+    type: class-toggle
+    description: When false, only the scroll bars in the Editor are shown.
+    default: false
+  - id: collapsed-borders
+    title: Re-enable collapsed panes' borders
+    type: class-toggle
+    description: When false, collapsed panes' borders won't show.
+    default: false
+  - id: status-bar-border
+    title: Re-enable status bar border
+    type: class-toggle
+    description: When false, status bar's border won't show.
+    default: false

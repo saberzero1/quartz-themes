@@ -25,9 +25,10 @@
 }
 
 :root {
-  --default-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+  --default-font:
+    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Source Code Pro", monospace;
@@ -562,7 +563,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 /****Left Pane Navigation Tree Icons/Colors/Fonts*******/
 
 .theme-light .nav-folder-children .nav-file-title-content:first-child::before {
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/GjcGnQJ.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url("https://i.imgur.com/GjcGnQJ.png");
   background-size: 22px;
   background-repeat: no-repeat;
   padding: 10px 2px 10px 23px;
@@ -571,7 +574,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 .theme-dark .nav-folder-children .nav-file-title-content:first-child::before {
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/fiGt6Vn.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url("https://i.imgur.com/fiGt6Vn.png");
   background-size: 22px;
   background-repeat: no-repeat;
   padding: 10px 2px 10px 23px;
@@ -580,7 +585,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 .nav-folder-children .nav-folder-title-content::before {
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/2aAx6Es.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url("https://i.imgur.com/2aAx6Es.png");
   background-size: 20px;
   background-repeat: no-repeat;
   padding: 10px 0px 10px 26px;
@@ -593,7 +600,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .theme-light .internal-link {
   background-position: left;
   background-repeat: no-repeat;
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/GjcGnQJ.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url("https://i.imgur.com/GjcGnQJ.png");
   background-size: 20px;
   padding: 10px 0px 0px 21px;
   background-position-y: 11px;
@@ -609,7 +618,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   font-weight: 500;
   background-position: left;
   background-repeat: no-repeat;
-  background-image: linear-gradient(transparent, transparent), url(https://i.imgur.com/As68C4R.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url("https://i.imgur.com/As68C4R.png");
   background-size: 30px;
   padding: 10px 2px 10px 35px;
   background-position-y: 7px;
@@ -944,7 +955,12 @@ li:hover {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-width: 3px;
-  border-image-source: linear-gradient(to right, transparent, black, transparent);
+  border-image-source: linear-gradient(
+    to right,
+    transparent,
+    black,
+    transparent
+  );
   transition: 0.35s;
 }
 

@@ -24,53 +24,53 @@ id: lemons-theme-settings
 collapsed: false
 settings:
   - 
-	id: lt-set-settings
-	title: Lemons Theme Settings
-	type: heading
-	level: 1
+    id: lt-set-settings
+    title: Lemons Theme Settings
+    type: heading
+    level: 1
   -
-	id: lt-set-file-icons
-	title: File Icons
-	description: Adds file and folder icons for different file types
-	type: class-toggle
+    id: lt-set-file-icons
+    title: File Icons
+    description: Adds file and folder icons for different file types
+    type: class-toggle
   -
-	id: lt-pride-month-colors
-	title: Pride Month Colors
-	description: Adds some colorful pride month flags to some UI elements.
-	type: class-toggle
+    id: lt-pride-month-colors
+    title: Pride Month Colors
+    description: Adds some colorful pride month flags to some UI elements.
+    type: class-toggle
   -
-	id: lt-hide-tab-title-bar-file-name
-	title: Hide Tab Title Bar File Name
-	description: Hide the file name in the tab title bar. Who needs to see the tab title three times anyways.
-	type: class-toggle
+    id: lt-hide-tab-title-bar-file-name
+    title: Hide Tab Title Bar File Name
+    description: Hide the file name in the tab title bar. Who needs to see the tab title three times anyways.
+    type: class-toggle
   -
-	id: lt-accent-headings
-	title: More Visible Headings
-	description: Colors the heading in the accent color to make them more visible.
-	type: class-toggle
+    id: lt-accent-headings
+    title: More Visible Headings
+    description: Colors the heading in the accent color to make them more visible.
+    type: class-toggle
   -
-	id: lt-hashtag-headings
-	title: Hashtag Headings
-	description: Prefix headings with a hashtag even in reading mode.
-	type: class-toggle
-	default: true
+    id: lt-hashtag-headings
+    title: Hashtag Headings
+    description: Prefix headings with a hashtag even in reading mode.
+    type: class-toggle
+    default: true
   - 
-	id: lt-set-mode-toggles
-	title: Mode Toggles
-	type: heading
-	level: 2
+    id: lt-set-mode-toggles
+    title: Mode Toggles
+    type: heading
+    level: 2
   - 
-	id: lt-set-focus-mode
-	title: Focus Mode
-	description: Disables part of the UI to help you focus.
-	type: class-toggle
-	addCommand: true
+    id: lt-set-focus-mode
+    title: Focus Mode
+    description: Disables part of the UI to help you focus.
+    type: class-toggle
+    addCommand: true
   -
-	id: lt-set-full-width-editor
-	title: Full Width Editor
-	description: Removes the width limit on the editor.
-	type: class-toggle
-	addCommand: true
+    id: lt-set-full-width-editor
+    title: Full Width Editor
+    description: Removes the width limit on the editor.
+    type: class-toggle
+    addCommand: true
  */
 .style-settings-heading[data-level="0"] {
   margin-bottom: var(--size-4-2);
@@ -112,15 +112,23 @@ body.lt-set-focus-mode {
   --titlebar-background: var(--background-primary);
   --titlebar-background-focused: var(--background-primary);
 }
-body.lt-set-focus-mode .workspace:not(.is-left-sidedock-open) .side-dock-actions {
+body.lt-set-focus-mode
+  .workspace:not(.is-left-sidedock-open)
+  .side-dock-actions {
   display: none;
 }
-body.lt-set-focus-mode .workspace .workspace-ribbon.is-collapsed .sidebar-toggle-button.mod-left {
+body.lt-set-focus-mode
+  .workspace
+  .workspace-ribbon.is-collapsed
+  .sidebar-toggle-button.mod-left {
   animation: lt-set-focus-mode-sidebar-toggle-button-transition 0ms;
   animation-delay: 250ms;
   animation-fill-mode: forwards;
 }
-body.lt-set-focus-mode .workspace .workspace-ribbon .sidebar-toggle-button.mod-left {
+body.lt-set-focus-mode
+  .workspace
+  .workspace-ribbon
+  .sidebar-toggle-button.mod-left {
   background-color: var(--background-secondary);
 }
 body.lt-set-focus-mode .workspace-tab-header-container {
@@ -157,22 +165,34 @@ body.lt-pride-month-colors .vertical-tab-nav-item.is-active:nth-child(5n + 4) {
 body.lt-pride-month-colors .vertical-tab-nav-item.is-active:nth-child(5n + 5) {
   background: var(--lt-gradient-non-bin);
 }
-body.lt-pride-month-colors .tree-item:nth-child(5n + 1) > .tree-item-self.is-active {
+body.lt-pride-month-colors
+  .tree-item:nth-child(5n + 1)
+  > .tree-item-self.is-active {
   background: var(--lt-gradient-pride);
 }
-body.lt-pride-month-colors .tree-item:nth-child(5n + 2) > .tree-item-self.is-active {
+body.lt-pride-month-colors
+  .tree-item:nth-child(5n + 2)
+  > .tree-item-self.is-active {
   background: var(--lt-gradient-trans);
 }
-body.lt-pride-month-colors .tree-item:nth-child(5n + 3) > .tree-item-self.is-active {
+body.lt-pride-month-colors
+  .tree-item:nth-child(5n + 3)
+  > .tree-item-self.is-active {
   background: var(--lt-gradient-lesbian);
 }
-body.lt-pride-month-colors .tree-item:nth-child(5n + 4) > .tree-item-self.is-active {
+body.lt-pride-month-colors
+  .tree-item:nth-child(5n + 4)
+  > .tree-item-self.is-active {
   background: var(--lt-gradient-gay);
 }
-body.lt-pride-month-colors .tree-item:nth-child(5n + 5) > .tree-item-self.is-active {
+body.lt-pride-month-colors
+  .tree-item:nth-child(5n + 5)
+  > .tree-item-self.is-active {
   background: var(--lt-gradient-non-bin);
 }
-body.lt-hide-tab-title-bar-file-name .view-header-title-container .view-header-title {
+body.lt-hide-tab-title-bar-file-name
+  .view-header-title-container
+  .view-header-title {
   display: none;
 }
 body.lt-accent-headings .markdown-reading-view h1,
@@ -384,9 +404,15 @@ cite {
   border-radius: var(--callout-radius);
   --lt-callout-padding-size-start: 18px;
   --lt-callout-padding-size-end: var(--size-4-3);
-  --lt-callout-padding-start: calc(var(--lt-callout-indent) * var(--lt-callout-padding-size-start));
-  --lt-callout-padding-end: calc(var(--lt-callout-indent) * var(--lt-callout-padding-size-end));
-  padding-inline-start: calc(var(--size-4-2) + var(--lt-callout-padding-start)) !important;
+  --lt-callout-padding-start: calc(
+    var(--lt-callout-indent) * var(--lt-callout-padding-size-start)
+  );
+  --lt-callout-padding-end: calc(
+    var(--lt-callout-indent) * var(--lt-callout-padding-size-end)
+  );
+  padding-inline-start: calc(
+    var(--size-4-2) + var(--lt-callout-padding-start)
+  ) !important;
   background: rgb(var(--callout-quote), 0.1);
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote > :first-child {
@@ -404,7 +430,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-1:not(.HyperMD-callout):has(+ .HyperMD-quote-1:not(.HyperMD-callout)) {
+  .HyperMD-quote-1:not(.HyperMD-callout):has(
+    + .HyperMD-quote-1:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-2 {
@@ -416,7 +444,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-2:not(.HyperMD-callout):has(+ .HyperMD-quote-2:not(.HyperMD-callout)) {
+  .HyperMD-quote-2:not(.HyperMD-callout):has(
+    + .HyperMD-quote-2:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-3 {
@@ -428,7 +458,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-3:not(.HyperMD-callout):has(+ .HyperMD-quote-3:not(.HyperMD-callout)) {
+  .HyperMD-quote-3:not(.HyperMD-callout):has(
+    + .HyperMD-quote-3:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-4 {
@@ -440,7 +472,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-4:not(.HyperMD-callout):has(+ .HyperMD-quote-4:not(.HyperMD-callout)) {
+  .HyperMD-quote-4:not(.HyperMD-callout):has(
+    + .HyperMD-quote-4:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-5 {
@@ -452,7 +486,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-5:not(.HyperMD-callout):has(+ .HyperMD-quote-5:not(.HyperMD-callout)) {
+  .HyperMD-quote-5:not(.HyperMD-callout):has(
+    + .HyperMD-quote-5:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-6 {
@@ -464,7 +500,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-6:not(.HyperMD-callout):has(+ .HyperMD-quote-6:not(.HyperMD-callout)) {
+  .HyperMD-quote-6:not(.HyperMD-callout):has(
+    + .HyperMD-quote-6:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-7 {
@@ -476,7 +514,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-7:not(.HyperMD-callout):has(+ .HyperMD-quote-7:not(.HyperMD-callout)) {
+  .HyperMD-quote-7:not(.HyperMD-callout):has(
+    + .HyperMD-quote-7:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-8 {
@@ -488,7 +528,9 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-8:not(.HyperMD-callout):has(+ .HyperMD-quote-8:not(.HyperMD-callout)) {
+  .HyperMD-quote-8:not(.HyperMD-callout):has(
+    + .HyperMD-quote-8:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote-9 {
@@ -500,10 +542,13 @@ cite {
   padding-top: 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview
-  .HyperMD-quote-9:not(.HyperMD-callout):has(+ .HyperMD-quote-9:not(.HyperMD-callout)) {
+  .HyperMD-quote-9:not(.HyperMD-callout):has(
+    + .HyperMD-quote-9:not(.HyperMD-callout)
+  ) {
   padding-bottom: 0;
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote) {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote:has(+ .HyperMD-quote) {
   border-radius: var(--callout-radius) var(--callout-radius) 0 0;
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
@@ -520,26 +565,37 @@ cite {
   font-weight: 600;
   position: relative;
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote.HyperMD-callout:before {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote.HyperMD-callout:before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: calc((var(--lt-callout-indent) - 1) * var(--lt-callout-padding-size-start));
-  right: calc((var(--lt-callout-indent) - 1) * var(--lt-callout-padding-size-end));
+  left: calc(
+    (var(--lt-callout-indent) - 1) * var(--lt-callout-padding-size-start)
+  );
+  right: calc(
+    (var(--lt-callout-indent) - 1) * var(--lt-callout-padding-size-end)
+  );
   background: rgb(var(--callout-quote), 0.1);
   z-index: -1;
   width: unset;
   border: none;
   border-radius: var(--callout-radius);
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote.HyperMD-callout > :first-child {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote.HyperMD-callout
+  > :first-child {
   margin-top: 0;
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote.HyperMD-callout > :last-child {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote.HyperMD-callout
+  > :last-child {
   margin-bottom: 0;
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote.HyperMD-callout + .HyperMD-quote {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote.HyperMD-callout
+  + .HyperMD-quote {
   padding: var(--callout-padding);
   border-radius: 0 0 var(--callout-radius) var(--callout-radius);
 }
@@ -572,7 +628,10 @@ cite {
   border: none;
   background-color: transparent;
 }
-.canvas-wrapper .canvas-controls .canvas-control-group .canvas-control-item:hover {
+.canvas-wrapper
+  .canvas-controls
+  .canvas-control-group
+  .canvas-control-item:hover {
   background-color: var(--background-modifier-hover);
   color: var(--text-accent);
 }
@@ -1693,7 +1752,10 @@ body.lt-set-file-icons
 .view-content .graph-controls .graph-control-section.tree-item .tree-item-self {
   padding: var(--size-4-2);
 }
-.view-content .graph-controls .graph-control-section.tree-item .tree-item-self:hover {
+.view-content
+  .graph-controls
+  .graph-control-section.tree-item
+  .tree-item-self:hover {
   position: relative;
 }
 .view-content
@@ -1703,7 +1765,10 @@ body.lt-set-file-icons
   .graph-control-section-header {
   color: var(--text-accent);
 }
-.view-content .graph-controls .graph-control-section.tree-item .tree-item-self:hover:before {
+.view-content
+  .graph-controls
+  .graph-control-section.tree-item
+  .tree-item-self:hover:before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1732,17 +1797,28 @@ body.lt-set-file-icons
   svg {
   color: var(--text-accent);
 }
-.view-content .graph-controls .graph-control-section.tree-item .tree-item-children {
+.view-content
+  .graph-controls
+  .graph-control-section.tree-item
+  .tree-item-children {
   padding-right: var(--size-4-2);
   padding-left: var(--nav-item-children-padding-left);
   margin-left: var(--nav-item-children-margin-left);
-  border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   position: relative;
 }
-.view-content .graph-controls .graph-control-section.tree-item .tree-item-children:hover {
+.view-content
+  .graph-controls
+  .graph-control-section.tree-item
+  .tree-item-children:hover {
   border-left: var(--nav-indentation-guide-width) solid var(--color-accent);
 }
-.view-content .graph-controls .graph-control-section.tree-item .tree-item-children .setting-item {
+.view-content
+  .graph-controls
+  .graph-control-section.tree-item
+  .tree-item-children
+  .setting-item {
   padding: var(--nav-item-padding);
 }
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers {
@@ -1752,7 +1828,10 @@ body.lt-set-file-icons
   position: relative;
   overflow: visible;
 }
-.markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement:before {
+.markdown-source-view.mod-cm6
+  .cm-gutters
+  .cm-lineNumbers
+  .cm-gutterElement:before {
   content: "";
   position: absolute;
   border-right: 1px solid var(--background-secondary);
@@ -1761,10 +1840,16 @@ body.lt-set-file-icons
   right: calc(-1 * var(--size-2-3));
   left: 0;
 }
-.markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement.cm-active {
+.markdown-source-view.mod-cm6
+  .cm-gutters
+  .cm-lineNumbers
+  .cm-gutterElement.cm-active {
   color: var(--text-accent);
 }
-.markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement.cm-active:before {
+.markdown-source-view.mod-cm6
+  .cm-gutters
+  .cm-lineNumbers
+  .cm-gutterElement.cm-active:before {
   border-right: 1px solid var(--color-accent);
 }
 .modal.mod-settings .vertical-tab-header {
@@ -1939,12 +2024,16 @@ body.lt-set-file-icons
 }
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible):hover
+    + .tree-item-children
+      > .tree-item
+      > .tree-item-self:not(.mod-collapsible):hover
   )
   .tree-item-inner,
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible:hover
+    + .tree-item-children
+      > .tree-item.is-collapsed
+      > .tree-item-self.mod-collapsible:hover
   )
   .tree-item-inner {
   --lt-file-icon-color: var(--text-accent);
@@ -1952,13 +2041,17 @@ body.lt-set-file-icons
 }
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible):hover
+    + .tree-item-children
+      > .tree-item
+      > .tree-item-self:not(.mod-collapsible):hover
   )
   .tree-item-icon
   svg,
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible:hover
+    + .tree-item-children
+      > .tree-item.is-collapsed
+      > .tree-item-self.mod-collapsible:hover
   )
   .tree-item-icon
   svg {
@@ -1966,12 +2059,16 @@ body.lt-set-file-icons
 }
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible):hover
+    + .tree-item-children
+      > .tree-item
+      > .tree-item-self:not(.mod-collapsible):hover
   )
   + .tree-item-children,
 .tree-item
   .tree-item-self:has(
-    + .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible:hover
+    + .tree-item-children
+      > .tree-item.is-collapsed
+      > .tree-item-self.mod-collapsible:hover
   )
   + .tree-item-children {
   border-left: var(--nav-indentation-guide-width) solid var(--color-accent);
@@ -1982,15 +2079,18 @@ body.lt-set-file-icons
 .meta-bind-plugin-card > :last-child {
   margin-bottom: 0;
 }
-.meta-bind-plugin-select-input-element .meta-bind-plugin-select-input-element-hover {
+.meta-bind-plugin-select-input-element
+  .meta-bind-plugin-select-input-element-hover {
   color: var(--text-accent);
 }
-.meta-bind-plugin-select-input-element .meta-bind-plugin-select-input-element-selected {
+.meta-bind-plugin-select-input-element
+  .meta-bind-plugin-select-input-element-selected {
   color: var(--text-on-accent);
   background-color: var(--color-accent);
   border: none;
 }
-.meta-bind-plugin-input-wrapper select.meta-bind-plugin-input-element-group-element {
+.meta-bind-plugin-input-wrapper
+  select.meta-bind-plugin-input-element-group-element {
   background: var(--background-secondary);
 }
 .meta-bind-plugin-input-wrapper input {
@@ -2013,7 +2113,8 @@ body {
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-hover: var(--text-accent);
   --nav-item-children-padding-left: var(--size-4-2);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --icon-color-focused: var(--text-accent);
   --icon-color-active: var(--text-accent);
   --icon-color-hover: var(--text-accent);
@@ -2163,8 +2264,16 @@ body {
   --color-base-100: #ffffff;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 3.8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 3.8%)
+  );
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-25);
   --interactive-normal: var(--color-base-30);
@@ -2176,25 +2285,30 @@ body {
   --text-selection: rgba(255, 255, 255, 0.2);
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
     0px 15px 30px rgba(0, 0, 0, 0.15);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
     0px 30px 90px rgba(0, 0, 0, 0.15);
 }
 body {
   --font-default: var(--font-monospace);
-  --font-monospace-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-    monospace;
+  --font-monospace-default:
+    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-text-override: "??";
   --font-text-theme: "??";
-  --font-text: var(--font-text-override), var(--font-text-theme), var(--font-interface);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-interface);
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
@@ -2212,7 +2326,9 @@ body.theme-dark {
 .mod-left-split > :nth-last-child(1 of .workspace-tabs) {
   background-color: var(--background-primary);
 }
-.mod-left-split > :nth-last-child(1 of .workspace-tabs) > .workspace-tab-container {
+.mod-left-split
+  > :nth-last-child(1 of .workspace-tabs)
+  > .workspace-tab-container {
   border-bottom-right-radius: var(--radius-l);
 }
 .mod-right-split > :nth-child(1 of .workspace-tabs) {
@@ -2224,7 +2340,9 @@ body.theme-dark {
 .mod-right-split > :nth-last-child(1 of .workspace-tabs) {
   background-color: var(--background-primary);
 }
-.mod-right-split > :nth-last-child(1 of .workspace-tabs) > .workspace-tab-container {
+.mod-right-split
+  > :nth-last-child(1 of .workspace-tabs)
+  > .workspace-tab-container {
   border-bottom-left-radius: var(--radius-l);
 }
 .workspace-tab-header:hover {
@@ -2292,7 +2410,12 @@ body.theme-dark {
 pre code[class*="language-"] {
   white-space: pre;
 }
-.image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {
+.image-embed[alt]:not(
+    [alt$=".png"],
+    [alt$=".jpg"],
+    [alt$=".jpeg"],
+    [alt$=".tiff"]
+  )::after {
   content: attr(alt);
   display: block;
   color: var(--text-muted);

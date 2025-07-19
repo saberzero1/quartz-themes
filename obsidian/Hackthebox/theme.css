@@ -1,13 +1,13 @@
 body {
   /* --radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px; */
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px; */
   /* font family  */
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -21,7 +21,7 @@ svg * {
   stroke-linecap: square;
   stroke-linejoin: miter;
   /* rx: 0;
-	ry: 0; */
+    ry: 0; */
   /* supress warning  */
 }
 
@@ -181,11 +181,11 @@ body {
 /* --------------------------- golam old css-------------------------- */
 /* blockquote */
 /* body {
-	--blockquote-background-color: var(--background-secondary);
-	--blockquote-border-thickness: 2px;
-	--blockquote-border-color: var(--htb-lime);
-	--blockquote-font-style: normal;
-	--blockquote-color: inherit;
+    --blockquote-background-color: var(--background-secondary);
+    --blockquote-border-thickness: 2px;
+    --blockquote-border-color: var(--htb-lime);
+    --blockquote-font-style: normal;
+    --blockquote-color: inherit;
 } */
 
 .mod-empty-attachment {
@@ -210,7 +210,8 @@ body {
 /* Blockquote styling for Read Only mode */
 .el-blockquote > blockquote {
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   color: var(--blockquote-color);
   font-style: var(--blockquote-font-style);
   border-radius: var(--blockquote-border-radius);
@@ -220,7 +221,8 @@ body {
 /* Blockquote styling for Live Preview mode */
 div.HyperMD-quote {
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   color: var(--blockquote-color);
   font-style: italic !important;
   padding: var(--blockquote-padding) !important;
@@ -521,10 +523,10 @@ body {
 }
 
 /*.metadata-properties-title {
-	color:var(--htb-lime); not sure  if i do lime or not 
-	color: var(--htb-lime);
-	this is the property text  
-	did not combine them 3 for readability 
+    color:var(--htb-lime); not sure  if i do lime or not 
+    color: var(--htb-lime);
+    this is the property text  
+    did not combine them 3 for readability 
 } */
 
 /* table  */
@@ -535,7 +537,7 @@ body {
   /* --table-border-color: var(--htb-text-color) !important; */
   --table-border-color: var(--htb-border) !important;
 
-  /* i mean for real i was expectine padding property but it does not exist	 */
+  /* i mean for real i was expectine padding property but it does not exist     */
   --table-row-alt-background: var(--background-secondary);
   --table-column-alt-background: var(--background-secondary);
 }
@@ -774,8 +776,8 @@ body {
 /* todo later */
 /*
 .workspace .tappable.is-active.mod-active svg{
-	fill:var(--htb-text-color);
+    fill:var(--htb-text-color);
 }
 div.workspace-tab-header-inner-close-button svg{
-	stroke:var(--htb-text-color) !important;
+    stroke:var(--htb-text-color) !important;
 }*/

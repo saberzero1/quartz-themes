@@ -3,5 +3,9 @@
   "version": "0.0.1",
   "minAppVersion": "1.7.7",
   "author": "Malcolm Mielle",
-  "authorUrl": "https://codeberg.org/MalcolmMielle"
+  "authorUrl": "https://codeberg.org/MalcolmMielle",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

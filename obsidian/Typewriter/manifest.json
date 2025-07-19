@@ -3,5 +3,9 @@
   "version": "2.1.10",
   "minAppVersion": "0.16.0",
   "author": "crashmoney",
-  "authorUrl": "https://github.com/crashmoney"
+  "authorUrl": "https://github.com/crashmoney",
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
+  }
 }

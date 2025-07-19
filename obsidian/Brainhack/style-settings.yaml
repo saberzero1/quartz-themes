@@ -1,0 +1,34 @@
+name: Brainhack
+id: a-unique-id
+settings:
+  - id: grayscale-toggle
+    title: Disable Grayscale Images
+    type: class-toggle
+  - id: animation-toggle
+    title: Disable Animations
+    type: class-toggle
+  - id: accento
+    title: Override Accent Color
+    type: variable-color
+    opacity: false
+    format: hsl-split
+    alt-format:
+      - id: accent-rgb
+        format: rgb
+    default: "#none"
+  - id: noise-opacity-lm
+    title: Background Noise Opacity (light Mode)
+    description: Change the opacity of the background noise
+    type: variable-number-slider
+    default: 0.5
+    min: 0
+    max: .5
+    step: .01
+  - id: noise-opacity-dm
+    title: Background Noise Opacity (Dark Mode)
+    description: Change the opacity of the background noise
+    type: variable-number-slider
+    default: 0.1
+    min: 0
+    max: .5
+    step: .01

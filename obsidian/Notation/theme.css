@@ -33,9 +33,11 @@
 /* 1. Font */
 body {
   /* font stacks taken directly from Notion */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
-    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace: "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace:
+    "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
     monospace;
   -webkit-font-smoothing: auto;
 }
@@ -258,7 +260,7 @@ strong,
 
 .markdown-preview-view .internal-link.is-unresolved::before {
   background-color: var(--text-muted);
-  -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.977 14.963c.407 0 .747-.324.747-.723V8.72h5.362c.399 0 .74-.34.74-.747a.746.746 0 00-.74-.738H8.724V1.706c0-.398-.34-.722-.747-.722a.732.732 0 00-.739.722v5.529h-5.37a.746.746 0 00-.74.738c0 .407.341.747.74.747h5.37v5.52c0 .399.332.723.739.723z"></path></svg>');
+  -webkit-mask-image: url('    data:image/svg+xml,charset=UTF-8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 16 16"><pathd="M7.977 14.963c.407 0 .747-.324.747-.723V8.72h5.362c.399 0 .74-.34.74-.747a.746.746 0 00-.74-.738H8.724V1.706c0-.398-.34-.722-.747-.722a.732.732 0 00-.739.722v5.529h-5.37a.746.746 0 00-.74.738c0 .407.341.747.74.747h5.37v5.52c0 .399.332.723.739.723z"></path></svg> ');
   width: 13px;
   height: 13px;
 }
@@ -505,7 +507,10 @@ ol > li {
   border-radius: 0;
 }
 
-.app-container .markdown-preview-view pre[class*="language-note-"] code[class*="language-note-"] {
+.app-container
+  .markdown-preview-view
+  pre[class*="language-note-"]
+  code[class*="language-note-"] {
   color: var(--text-normal);
   white-space: pre-wrap;
   font-family: var(--default-font);
@@ -593,47 +598,74 @@ ol > li {
   background-color: transparent;
 }
 
-.app-container .markdown-preview-view pre.language-note-gray code.language-note-gray,
+.app-container
+  .markdown-preview-view
+  pre.language-note-gray
+  code.language-note-gray,
 .gray {
   color: var(--text-gray);
 }
 
-.app-container .markdown-preview-view pre.language-note-brown code.language-note-brown,
+.app-container
+  .markdown-preview-view
+  pre.language-note-brown
+  code.language-note-brown,
 .brown {
   color: var(--text-brown);
 }
 
-.app-container .markdown-preview-view pre.language-note-orange code.language-note-orange,
+.app-container
+  .markdown-preview-view
+  pre.language-note-orange
+  code.language-note-orange,
 .orange {
   color: var(--text-orange);
 }
 
-.app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
+.app-container
+  .markdown-preview-view
+  pre.language-note-yellow
+  code.language-note-yellow,
 .yellow {
   color: var(--text-yellow);
 }
 
-.app-container .markdown-preview-view pre.language-note-green code.language-note-green,
+.app-container
+  .markdown-preview-view
+  pre.language-note-green
+  code.language-note-green,
 .green {
   color: var(--text-green);
 }
 
-.app-container .markdown-preview-view pre.language-note-blue code.language-note-blue,
+.app-container
+  .markdown-preview-view
+  pre.language-note-blue
+  code.language-note-blue,
 .blue {
   color: var(--text-blue);
 }
 
-.app-container .markdown-preview-view pre.language-note-purple code.language-note-purple,
+.app-container
+  .markdown-preview-view
+  pre.language-note-purple
+  code.language-note-purple,
 .purple {
   color: var(--text-purple);
 }
 
-.app-container .markdown-preview-view pre.language-note-pink code.language-note-pink,
+.app-container
+  .markdown-preview-view
+  pre.language-note-pink
+  code.language-note-pink,
 .pink {
   color: var(--text-pink);
 }
 
-.app-container .markdown-preview-view pre.language-note-red code.language-note-red,
+.app-container
+  .markdown-preview-view
+  pre.language-note-red
+  code.language-note-red,
 .red {
   color: var(--text-red);
 }
@@ -663,7 +695,9 @@ ol > li {
 
 /* This is where the magic happens */
 .workspace-leaf-content[data-type="markdown"] .view-header,
-.workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"] .view-header {
+.workspace-leaf.mod-active
+  .workspace-leaf-content[data-type="markdown"]
+  .view-header {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -704,7 +738,8 @@ ol > li {
   padding: 0;
 }
 
-.workspace-leaf-content[data-type="markdown"] .view-header-title-container:after {
+.workspace-leaf-content[data-type="markdown"]
+  .view-header-title-container:after {
   content: none;
 }
 
@@ -768,12 +803,15 @@ ol > li {
 
 /* 7.1. Adjustments for non-in-document headers (graphs, etc) */
 .workspace-leaf-content:not([data-type="markdown"]) .view-header,
-.workspace-leaf.mod-active .workspace-leaf-content:not([data-type="markdown"]) .view-header {
+.workspace-leaf.mod-active
+  .workspace-leaf-content:not([data-type="markdown"])
+  .view-header {
   border: none;
   background-color: var(--background-primary);
 }
 
-.workspace-leaf-content:not([data-type="markdown"]) .view-header-title-container:after,
+.workspace-leaf-content:not([data-type="markdown"])
+  .view-header-title-container:after,
 .workspace-leaf.mod-active
   .workspace-leaf-content:not([data-type="markdown"])
   .view-header-title-container:after {

@@ -207,7 +207,9 @@ button.mod-cta {
   .mod-root.workspace-split.mod-vertical
   .workspace-split.mod-vertical
   > div.workspace-leaf:not(.stayopen),
-.plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf:not(.stayopen) {
+.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  > div.workspace-leaf:not(.stayopen) {
   border-radius: 5px 5px 0px 0px !important;
 }
 
@@ -217,7 +219,9 @@ button.mod-cta {
   border-right-width: 0px !important;
 }
 
-.theme-light.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf {
+.theme-light.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  div.workspace-leaf {
   border-color: var(--background-secondary-alt) !important;
   border-left-width: 3px !important;
   border-bottom-width: 0px !important;
@@ -235,12 +239,21 @@ button.mod-cta {
   display: none;
 }
 
-.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf .view-header {
+.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  div.workspace-leaf
+  .view-header {
   border-left-color: transparent !important;
 }
 
-.plugin-tabs .workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content,
-.plugin-tabs .workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+.plugin-tabs
+  .workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content,
+.plugin-tabs
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   border-radius: 0px !important;
 }
 
@@ -249,21 +262,30 @@ button.mod-cta {
   .mod-root.workspace-split.mod-vertical
   .workspace-split.mod-vertical
   > div.workspace-leaf.mod-active,
-.plugin-tabs .theme-dark .mod-root.workspace-split.mod-vertical > div.workspace-leaf.mod-active {
+.plugin-tabs
+  .theme-dark
+  .mod-root.workspace-split.mod-vertical
+  > div.workspace-leaf.mod-active {
   border: 0 !important;
   border-radius: 0px 0px 0px 0px !important;
 }
 
 button.mod-cta {
-  background-color: var(--button-bg-color); /* Uses variable for background color */
+  background-color: var(
+    --button-bg-color
+  ); /* Uses variable for background color */
   color: var(--button-text-color); /* Uses variable for text color */
   font-weight: 600; /* Makes text bold but less than standard bold */
 }
 
 button.mod-cta:hover,
 button.mod-cta:focus {
-  background-color: var(--button-hover-bg-color); /* Darker Yellow Background for Hover */
-  color: var(--button-text-color); /* Keeps the default light gray text color on hover */
+  background-color: var(
+    --button-hover-bg-color
+  ); /* Darker Yellow Background for Hover */
+  color: var(
+    --button-text-color
+  ); /* Keeps the default light gray text color on hover */
   font-weight: 600; /* Makes text bold but less than standard bold */
 }
 
@@ -276,13 +298,19 @@ button.mod-cta:focus {
 
 .vertical-tab-nav-item.is-active:hover,
 .vertical-tab-nav-item.is-active:focus {
-  background-color: var(--button-hover-bg-color); /* Darker Yellow Background for Hover */
-  color: var(--button-text-color); /* Keeps the default light gray text color on hover */
+  background-color: var(
+    --button-hover-bg-color
+  ); /* Darker Yellow Background for Hover */
+  color: var(
+    --button-text-color
+  ); /* Keeps the default light gray text color on hover */
   font-weight: 600; /* Makes text bold but less than standard bold */
 }
 
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-  --background-modifier-hover: var(--button-hover-bg-color); /* More specific variable for hover */
+  --background-modifier-hover: var(
+    --button-hover-bg-color
+  ); /* More specific variable for hover */
   --icon-color: var(--button-text-color);
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
@@ -302,8 +330,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:focus {
 
 .checkbox-container.is-enabled:hover,
 .checkbox-container.is-enabled:focus {
-  background-color: var(--button-hover-bg-color); /* Darker Yellow Background for Hover */
-  color: var(--button-text-color); /* Keeps the default light gray text color on hover */
+  background-color: var(
+    --button-hover-bg-color
+  ); /* Darker Yellow Background for Hover */
+  color: var(
+    --button-text-color
+  ); /* Keeps the default light gray text color on hover */
 }
 
 .flair.mod-pop {
@@ -313,8 +345,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:focus {
 
 .flair.mod-pop:hover,
 .flair.mod-pop:focus {
-  background-color: var(--button-hover-bg-color); /* Darker Yellow Background for Hover */
-  color: var(--button-text-color); /* Keeps the default light gray text color on hover */
+  background-color: var(
+    --button-hover-bg-color
+  ); /* Darker Yellow Background for Hover */
+  color: var(
+    --button-text-color
+  ); /* Keeps the default light gray text color on hover */
 }
 
 /** hr styles -- PREVIEW MODE */
@@ -327,7 +363,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:focus {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+  border-image-source: linear-gradient(
+    to right,
+    transparent,
+    var(--text-accent),
+    transparent
+  );
 }
 
 .cm-line hr::after,

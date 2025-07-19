@@ -1,0 +1,403 @@
+name: Apatheia
+id: ap-theme
+settings:
+  - id: ap-radius-s
+    title: Border radius S
+    description: variable-number-slider
+    type: variable-number-slider
+    default: 4
+    min: 0
+    max: 20
+    step: px
+    format: px
+  - id: ap-radius-m
+    title: Border radius M
+    description: variable-number-slider
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: px
+    format: px
+  - id: ap-radius-l
+    title: Border radius L
+    description: variable-number-slider
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 20
+    step: px
+    format: px
+  - id: a-theme-settings
+    title: Theme settings
+    description: Change theme appearance here
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-dark
+    title: Theme variant
+    description: Select theme variant
+    type: class-select
+    default: a-theme-apatheia
+    allowEmpty: false
+    options:
+      - label: 🗿 Apatheia
+        value: a-theme-apatheia
+
+      - label: 👾 Purple
+        value: a-theme-purple
+
+      - label: 🌿 Catpuccin Mocha
+        value: a-catpuccin-mocha
+
+      - label: ☕ Catpuccin Espresso
+        value: a-catpuccin-espresso
+
+      - label: ❄ Winter
+        value: a-winter
+  - id: a-theme-purple-settings
+    title: Test theme settings
+    description: Settings for the test theme
+    type: heading
+    level: 2
+    collapsed: true
+  - id: a-theme-purple-test
+    title: Toggle test
+    description: toggle to test
+    type: class-toggle
+  - id: a-effect-settings
+    title: Effects
+    description: Add effects
+    type: heading
+    level: 1
+    collapsed: true
+  - id: glassMorphism
+    title: Glassmorphism
+    description: Add glassmorphism to your theme
+    type: class-toggle
+  - id: smoothIndent
+    title: Smooth indent
+    description: Smooth Indent headers. Vim users may experience weird glitches
+    type: class-toggle
+  - id: Fade
+    title: Fade
+    description: Fade
+    type: class-toggle
+  - id: Hover
+    title: Hover effect
+    description: On hover transition on components
+    type: class-toggle
+  - id: a-font-settings
+    title: Fonts
+    description: Select fonts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: inline-title-font
+    title: Title font
+    description: Change title font
+    type: variable-select
+    default: Open Sans
+    options:
+      - Alegreya
+      - Anybody
+      - Archivo
+      - Archivo Narrow
+      - Asap
+      - Assistant
+      - Azeret Mono
+      - Baloo 2
+      - Besley
+      - Bitter
+      - Bodoni Moda
+      - Cabin
+      - Cairo
+      - Cairo Play
+      - Catamaran
+      - Cinzel
+      - Comfortaa
+      - Crimson Pro
+      - Domine
+      - Dosis
+      - EB Garamond
+      - Encode Sans
+      - Epilogue
+      - Exo 2
+      - Figtree
+      - Finlandica
+      - Heebo
+      - Inconsolata
+      - Inter
+      - Josefin Sans
+      - Jost
+      - Jura
+      - Karla
+      - Lexend
+      - Lexend Deca
+      - Lexend Exa
+      - Libre Franklin
+      - Lora
+      - M PLUS 1
+      - Manrope
+      - Maven Pro
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - MuseoModerno
+      - Noto Sans Display
+      - Nunito
+      - Open Sans
+      - Oswald
+      - Outfit
+      - Overpass
+      - Podkova
+      - Public Sans
+      - Quicksand
+      - Raleway
+      - Readex Pro
+      - Recursive
+      - Red Hat Display
+      - Red Hat Text
+      - Red Rose
+      - Rosario
+      - Rubik
+      - STIX Two Text
+      - Saira
+      - Signika
+      - Signika Negative
+      - Space Grotesk
+      - Syne
+      - Vollkorn
+      - Work Sans
+      - Yanone Kaffeesatz
+  - id: font-interface
+    title: Interface font
+    description: Change interface font
+    type: variable-select
+    default: Open Sans
+    options:
+      - Alegreya
+      - Anybody
+      - Archivo
+      - Archivo Narrow
+      - Asap
+      - Assistant
+      - Azeret Mono
+      - Baloo 2
+      - Besley
+      - Bitter
+      - Bodoni Moda
+      - Cabin
+      - Cairo
+      - Cairo Play
+      - Catamaran
+      - Cinzel
+      - Comfortaa
+      - Crimson Pro
+      - Domine
+      - Dosis
+      - EB Garamond
+      - Encode Sans
+      - Epilogue
+      - Exo 2
+      - Figtree
+      - Finlandica
+      - Heebo
+      - Inconsolata
+      - Inter
+      - Josefin Sans
+      - Jost
+      - Jura
+      - Karla
+      - Lexend
+      - Lexend Deca
+      - Lexend Exa
+      - Libre Franklin
+      - Lora
+      - M PLUS 1
+      - Manrope
+      - Maven Pro
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - MuseoModerno
+      - Noto Sans Display
+      - Nunito
+      - Open Sans
+      - Oswald
+      - Outfit
+      - Overpass
+      - Podkova
+      - Public Sans
+      - Quicksand
+      - Raleway
+      - Readex Pro
+      - Recursive
+      - Red Hat Display
+      - Red Hat Text
+      - Red Rose
+      - Rosario
+      - Rubik
+      - STIX Two Text
+      - Saira
+      - Signika
+      - Signika Negative
+      - Space Grotesk
+      - Syne
+      - Vollkorn
+      - Work Sans
+      - Yanone Kaffeesatz
+  - id: font-text
+    title: Text font
+    description: Change text font
+    type: variable-select
+    default: Open Sans
+    options:
+      - Alegreya
+      - Anybody
+      - Archivo
+      - Archivo Narrow
+      - Asap
+      - Assistant
+      - Azeret Mono
+      - Baloo 2
+      - Besley
+      - Bitter
+      - Bodoni Moda
+      - Cabin
+      - Cairo
+      - Cairo Play
+      - Catamaran
+      - Cinzel
+      - Comfortaa
+      - Crimson Pro
+      - Domine
+      - Dosis
+      - EB Garamond
+      - Encode Sans
+      - Epilogue
+      - Exo 2
+      - Figtree
+      - Finlandica
+      - Heebo
+      - Inconsolata
+      - Inter
+      - Josefin Sans
+      - Jost
+      - Jura
+      - Karla
+      - Lexend
+      - Lexend Deca
+      - Lexend Exa
+      - Libre Franklin
+      - Lora
+      - M PLUS 1
+      - Manrope
+      - Maven Pro
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - MuseoModerno
+      - Noto Sans Display
+      - Nunito
+      - Open Sans
+      - Oswald
+      - Outfit
+      - Overpass
+      - Podkova
+      - Public Sans
+      - Quicksand
+      - Raleway
+      - Readex Pro
+      - Recursive
+      - Red Hat Display
+      - Red Hat Text
+      - Red Rose
+      - Rosario
+      - Rubik
+      - STIX Two Text
+      - Saira
+      - Signika
+      - Signika Negative
+      - Space Grotesk
+      - Syne
+      - Vollkorn
+      - Work Sans
+      - Yanone Kaffeesatz
+  - id: font-monospace
+    title: Monospace font
+    description: Change the monospace font
+    type: variable-select
+    default: Source code pro
+    options:
+      - Alegreya
+      - Anybody
+      - Archivo
+      - Archivo Narrow
+      - Asap
+      - Assistant
+      - Azeret Mono
+      - Baloo 2
+      - Besley
+      - Bitter
+      - Bodoni Moda
+      - Cabin
+      - Cairo
+      - Cairo Play
+      - Catamaran
+      - Cinzel
+      - Comfortaa
+      - Crimson Pro
+      - Domine
+      - Dosis
+      - EB Garamond
+      - Encode Sans
+      - Epilogue
+      - Exo 2
+      - Figtree
+      - Finlandica
+      - Heebo
+      - Inconsolata
+      - Inter
+      - Josefin Sans
+      - Jost
+      - Jura
+      - Karla
+      - Lexend
+      - Lexend Deca
+      - Lexend Exa
+      - Libre Franklin
+      - Lora
+      - M PLUS 1
+      - Manrope
+      - Maven Pro
+      - Merriweather Sans
+      - Montserrat
+      - Mulish
+      - MuseoModerno
+      - Noto Sans Display
+      - Nunito
+      - Open Sans
+      - Oswald
+      - Outfit
+      - Overpass
+      - Podkova
+      - Public Sans
+      - Quicksand
+      - Raleway
+      - Readex Pro
+      - Recursive
+      - Red Hat Display
+      - Red Hat Text
+      - Red Rose
+      - Rosario
+      - Rubik
+      - STIX Two Text
+      - Saira
+      - Signika
+      - Signika Negative
+      - Space Grotesk
+      - Syne
+      - Vollkorn
+      - Work Sans
+      - Yanone Kaffeesatz

@@ -2,5 +2,9 @@
   "name": "Firefly",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "Ali Soueidan"
+  "author": "Ali Soueidan",
+  "license": {
+    "name": "Creative Commons Zero v1.0 Universal",
+    "spdx_id": "CC0-1.0"
+  }
 }

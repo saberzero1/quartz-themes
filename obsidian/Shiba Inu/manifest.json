@@ -3,5 +3,9 @@
   "version": "1.0.8.1",
   "minAppVersion": "1.1.9",
   "author": "Farouk",
-  "authorUrl": "https://github.com/faroukx"
+  "authorUrl": "https://github.com/faroukx",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

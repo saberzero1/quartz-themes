@@ -1,0 +1,892 @@
+name: Flexcyon Style Settings
+id: flexcyon
+settings:
+  - title: Editor
+    type: heading
+    level: 4
+    collapsed: true
+    description: Editor related style settings
+
+  - title: Accent Colors
+    type: heading
+    level: 5
+    collapsed: true
+  - id: flexcyon-cyan
+    title: Cyan Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#3cb9c2"
+    alt-format:
+      - id: color-cyan-rgb
+        format: rgb
+  - id: flexcyon-lime-green
+    title: Green Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#a1c05c"
+    alt-format:
+      - id: color-green-rgb
+        format: rgb
+  - id: flexcyon-orange
+    title: Orange Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#cc8449"
+    alt-format:
+      - id: color-orange-rgb
+        format: rgb
+  - id: flexcyon-yellow
+    title: Yellow Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#c29e42"
+    alt-format:
+      - id: color-yellow-rgb
+        format: rgb
+  - id: flexcyon-purple-lilac
+    title: Purple Color
+    type: variable-color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: color-purple-rgb
+        format: rgb
+    default: "#a461c8"
+  - id: flexcyon-red-salmon
+    title: Red Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#c03a47"
+    alt-format:
+      - id: color-red-rgb
+        format: rgb
+  - id: flexcyon-blue
+    title: Blue Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#5a8fcd"
+    alt-format:
+      - id: color-blue-rgb
+        format: rgb
+  - id: flexcyon-pink
+    title: Pink Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#d458a3"
+    alt-format:
+      - id: color-pink-rgb
+        format: rgb
+  - id: flexcyon-accent
+    title: Accent Color
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#92a871"
+
+  - title: Base Colors
+    type: heading
+    level: 5
+    collapsed: true
+  - id: flexcyon-base-blue-01
+    title: Base Color 01
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#14161c"
+  - id: flexcyon-base-blue-02
+    title: Base Color 02
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#191d28"
+  - id: flexcyon-base-blue-03
+    title: Base Color 03
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#24262c"
+  - id: flexcyon-base-blue-04
+    title: Base Color 04
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#4d566b"
+  - id: flexcyon-base-blue-05
+    title: Base Color 05
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#6f7685"
+  - id: flexcyon-base-grey-dark
+    title: Base dark grey
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#898c93"
+  - id: flexcyon-base-grey-light
+    title: Base light grey
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#d3d5d3"
+  - id: flexcyon-base-grey-tab
+    title: Base grey tab
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#71777f"
+  - id: flexcyon-base-grey-token
+    title: Base grey token
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#586582"
+  - id: flexcyon-base-grey-scroll
+    title: Base grey scroll
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#3f495e"
+  - id: flexcyon-base-grey-scroll-hover
+    title: Base grey scroll hover
+    type: variable-color
+    opacity: false
+    format: hex
+    default: "#5d6782"
+
+  - title: Typography
+    description: Muted text color, Headings, UI Font sizes
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Muted text color
+    id: flexcyon-text-muted
+    type: variable-color
+    opacity: true
+    format: hex
+    default: "#6f768599"
+  - title: Headings
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Enable coloured headings
+    id: flexcyon-headings-coloured-enabled
+    type: class-toggle
+    default: true
+  - title: Heading 1 font weight
+    id: h1-weight
+    type: variable-number
+    default: 700
+  - title: Heading 2 font weight
+    id: h2-weight
+    type: variable-number
+    default: 675
+  - title: Heading 3 font weight
+    id: h3-weight
+    type: variable-number
+    default: 650
+  - title: Heading 4 font weight
+    id: h4-weight
+    type: variable-number
+    default: 625
+  - title: Heading 5 font weight
+    id: h5-weight
+    type: variable-number
+    default: 600
+  - title: Heading 6 font weight
+    id: h6-weight
+    type: variable-number
+    default: 575
+  - title: Heading 1 line height
+    id: h1-line-height
+    type: variable-number
+    default: 1.2
+  - title: Heading 2 line height
+    id: h2-line-height
+    type: variable-number
+    default: 1.2
+  - title: Heading 3 line height
+    id: h3-line-height
+    type: variable-number
+    default: 1.3
+  - title: Heading 4 line height
+    id: h4-line-height
+    type: variable-number
+    default: 1.4
+  - title: Heading 5 line height
+    id: h5-line-height
+    type: variable-number
+    default: 1.5
+  - title: Heading 6 line height
+    id: h6-line-height
+    type: variable-number
+    default: 1.5
+  - title: Enable underline for Heading 1
+    id: flexcyon-h1-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Enable underline for Heading 2
+    id: flexcyon-h2-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Enable underline for Heading 3
+    id: flexcyon-h3-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Enable underline for Heading 4
+    id: flexcyon-h4-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Enable underline for Heading 5
+    id: flexcyon-h5-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Enable underline for Heading 6
+    id: flexcyon-h6-underline-enabled
+    type: class-toggle
+    default: false
+  - title: Inline title
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Inline title font size
+    id: inline-title-size
+    type: variable-number
+    default: 1.802
+    format: em
+  - title: Inline title font weight
+    id: inline-title-weight
+    type: variable-number
+    default: 700
+  - title: Inline title line height
+    id: inline-title-line-height
+    type: variable-number
+    default: 1.2
+  - title: UI Font sizes
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Smaller UI Font size
+    id: font-ui-smaller
+    type: variable-number
+    default: 12
+    format: px
+  - title: Small UI Font size
+    id: font-ui-small
+    type: variable-number
+    default: 13
+    format: px
+  - title: Medium UI Font size
+    id: font-ui-medium
+    type: variable-number
+    default: 15
+    format: px
+  - title: Large UI Font size
+    id: font-ui-large
+    type: variable-number
+    default: 20
+    format: px
+
+  - title: Table
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Table border color
+    id: table-border-color
+    type: variable-color
+    opacity: true
+    format: hex
+    default: "#6f768566"
+  - title: Width of table in reading mode
+    id: flexcyon-table-reading-mode-width
+    type: variable-text
+    default: 100%
+
+  - title: Files
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Enable dimmed file extensions in file exploroer
+    id: flexcyon-file-exp-dimmed-file-exts-enabled
+    type: class-toggle
+    default: true
+  - title: Select folder style
+    description: Select the folder style, sometimes need to restart or force reload for it to take effect properly. Alternate folder style Adds padding for active file item, makes collapse icons and borders blue for active folders.
+    type: class-select
+    id: theme-variant
+    allowEmpty: true
+    default: none
+    options:
+      - label: Rainbow folders
+        value: flexcyon-rainbow-folders
+      - label: Alternate folder style
+        value: flexcyon-alt-folder-style
+  - title: Enable minimalist trees
+    description: Removes left borders and collapse icons from trees in the app, this affects folder and outlines
+    id: flexcyon-minimalist-tree
+    type: class-toggle
+    default: false
+
+  - title: Workspace
+    type: heading
+    level: 5
+    collapsed: true
+  - title: File line width
+    id: file-line-width
+    description: File line width when readable line length is enabled
+    type: variable-number
+    default: 50
+    format: rem
+  - title: Opacity of dimmed elements
+    id: dimmed
+    description: Opacity of dimmed UI elements
+    type: variable-number
+    default: 0.55
+  - title: Top Actions Alignment
+    description: Alignment of the top actions (the ones with icons that allow you to make a new note, new folder etc.). Defaults to left if an invalid value is given.
+    id: flexcyon-top-actions-alignment
+    type: variable-text
+    default: center
+  - title: Upscale percentage of icons
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Upscale percentage of icons 1
+    id: upsize
+    description: Upscale percentage used in smiley icons and side dock icon effects
+    type: variable-text
+    default: 103%
+  - title: Upscale percentage of icons 2
+    id: expand
+    description: Upscale percentage used in side dock icon effects
+    type: variable-text
+    default: 110%
+  - title: Prompts
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Prompt width
+    description: Sets the width of prompts like the command prompt
+    id: prompt-width
+    type: variable-number
+    default: 700
+    format: px
+  - title: Prompt max width
+    description: Sets the maximum width of prompts like the command prompt
+    id: prompt-max-width
+    type: variable-number
+    default: 80
+    format: vw
+  - title: Prompt max height
+    description: Sets the maximum height of prompts like the command prompt
+    id: prompt-max-height
+    type: variable-number
+    default: 70
+    format: vh
+  - title: Prompt alignment
+    description: Configure the alignment of prompt such as the command prompt and Omnisearch search prompt
+    type: class-select
+    id: theme-variant
+    allowEmpty: true
+    default: none
+    options:
+      - label: Top left
+        value: flexcyon-prompt-align-top-left
+      - label: Top center
+        value: flexcyon-prompt-align-top-center
+      - label: Center left
+        value: flexcyon-prompt-align-center-left
+      - label: Bottom left
+        value: flexcyon-prompt-align-bottom-left
+      - label: Bottom center
+        value: flexcyon-prompt-align-bottom-center
+
+  - title: Editor Background
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Select Background Type
+    description: Select the background type for the editor
+    type: class-select
+    id: theme-variant
+    allowEmpty: true
+    default: none
+    options:
+      - label: Grid Background
+        value: flexcyon-editor-grid
+
+      - label: Dotted Background
+        value: flexcyon-editor-dots
+
+  - title: Width between each dot/line for grid/dotted background
+    id: flexcyon-editor-bg-width
+    type: variable-number
+    default: 15
+    format: px
+  - title: Size of dots for dotted background
+    id: flexcyon-editor-dot-size
+    type: variable-number
+    default: 2
+    format: px
+  - title: Layout
+    type: heading
+    level: 6
+    collapsed: true
+  - title: Select workspace layout
+    description: Select the workspace layout. Card layout adds solid rounded borders. Angled layout is inspired by Powerlevel10k.
+    type: class-select
+    id: theme-variant
+    allowEmpty: true
+    default: none
+    options:
+      - label: Cards Layout
+        value: flexcyon-workspace-card-layout
+      - label: Angled Layout
+        value: flexcyon-workspace-angled-layout
+  - title: Enable TUI add-on for cards layout
+    description: Makes Files, properties and other items adopt styling inspired by TUIs.
+    id: flexcyon-workspace-cards-tui-ext
+    type: class-toggle
+    default: true
+
+  - title: Callouts
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Callout Icon Right padding
+    id: flexcyon-callout-icon-right-padding
+    description: Right padding for the callout icon
+    type: variable-number
+    default: 4
+    format: px
+  - title: First Codeblock Margin Top
+    id: flexcyon-callout-first-codeblock-margin-top
+    description: Margin top for the first codeblock in a callout, affects images too.
+    type: variable-number
+    default: 1
+    format: rem
+  - title: Callout Metadata Background Opacity
+    id: flexcyon-callout-bg-opacity
+    description: Configures the opacity of callouts when they have metadata of <all-*> or <bg-*>
+    type: variable-text
+    default: 20%
+
+  - title: Callout Vertical Margin
+    id: flexcyon-callout-vertical-margin
+    description: Configures the vertical margin of callouts
+    type: variable-number
+    default: 1
+    format: em
+  - title: Callout Border Radius
+    id: callout-radius
+    description: Configures the border radius of callouts
+    type: variable-number
+    default: 2
+    format: px
+
+  - title: Checkboxes
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Enable ASCII checkboxes
+    type: class-toggle
+    id: flexcyon-ascii-checkboxes-enabled
+    default: true
+  - title: ASCII checkboxes font size
+    id: flexcyon-ascii-checkboxes-font-size
+    type: variable-number
+    default: 1.2
+    format: rem
+
+  - title: Bullet lists
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Enable Rainbow bullet lists
+    type: class-toggle
+    id: flexcyon-rainbow-bullet-points
+    default: false
+  - title: Media
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Media Embed Vertical margin
+    type: variable-number
+    id: flexcyon-media-embed-vertical-margin
+    default: 8
+    format: px
+  - title: Image Border Radius
+    type: variable-number
+    id: img-border-radius
+    default: 15
+    format: px
+
+  - title: Links
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Link Color
+    id: flexcyon-link-color
+    type: variable-color
+    default: "#a461c8"
+    format: hex
+  - title: External Color
+    id: flexcyon-external-link-color
+    type: variable-color
+    format: hex
+    default: "#5a8fcd"
+  - title: Unresolved Link Color
+    id: flexcyon-link-unresolved-color
+    type: variable-color
+    format: hex
+    default: "#a461c8"
+
+  - title: Properties
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Do not show properties in reading mode
+    id: flexcyon-metadata-display-reading-disabled
+    type: class-toggle
+    default: true
+  - title: Do not show properties in live preview mode
+    id: flexcyon-metadata-display-editing-disabled
+    type: class-toggle
+    default: false
+
+  - title: Status Bar
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Hide until hover
+    id: flexcyon-status-hide-until-hover
+    description: Hide status bar until hover
+    type: class-toggle
+    default: false
+  - title: Text when hide until hover enabled
+    id: flexcyon-status-hide-until-hover-text
+    description: Text to show when hide until hover is enabled, do not leave empty
+    type: variable-text
+    default: "Show status"
+    quotes: true
+  - title: Transition duration for showing status bar on hover
+    id: flexcyon-status-hide-hover-duration
+    description: Transition duration for showing status bar on hover, requires hide until hover to be enabled.
+    type: variable-number
+    default: 0.35
+    format: s
+  - title: Transition timing function for showing status bar on hover
+    description: Transition timing function for showing status bar on hover, requires hide until hover to be enabled.
+    id: flexcyon-status-hide-hover-function
+    type: variable-text
+    default: ease-out
+  - title: Use text instead of icons for mode status
+    id: flexcyon-status-text-mode
+    description: Use text instead of icons for mode status
+    type: class-toggle
+    default: false
+  - title: Reading Mode Text
+    id: flexcyon-status-reading-text
+    description: Text to display when in reading mode, needs use text instead of icons for mode status enabled.
+    type: variable-text
+    default: "READ"
+    quotes: true
+  - title: Source Mode Text
+    id: flexcyon-status-source-text
+    description: Text to display when in source mode, needs use text instead of icons for mode status enabled.
+    type: variable-text
+    default: "SOURCE"
+    quotes: true
+  - title: Live Preview Mode Text
+    id: flexcyon-status-live-text
+    description: Text to display when in live preview mode, needs use text instead of icons for mode status enabled.
+    type: variable-text
+    default: "LIVE"
+    quotes: true
+  - title: Show status bar on mobile
+    id: flexcyon-status-mobile-enabled
+    type: class-toggle
+    default: false
+  - title: Status bar font size
+    id: status-bar-font-size
+    type: variable-number
+    default: 12.5
+    format: px
+  - title: Select status bar style
+    description: angled status bar style is inspired by Powerlevel10k
+    type: class-select
+    id: theme-variant
+    allowEmpty: true
+    default: none
+    options:
+      - label: angled
+        value: flexcyon-status-style-angled
+      - label: Cards
+        value: flexcyon-status-style-card
+
+  - title: Enable status text color
+    id: flexcyon-status-text-enable-color
+    description: Affects text colors for vim mode status text as well.
+    type: class-toggle
+    default: false
+
+  - title: Title Bar
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Titlebar Button Effects
+    description: Enable hover effects on titlebar buttons
+    id: flexcyon-titlebar-button-effects
+    type: class-toggle
+    default: true
+
+  - title: Settings
+    type: heading
+    level: 4
+    collapsed: true
+    description: Customise the appearance of settings
+  - title: Smiley Toggle Icons in Settings
+    description: Display smiley toggle icons for settings toggle buttons
+    id: flexcyon-settings-smiley-icons-enabled
+    type: class-toggle
+    default: true
+  - title: Coloured Icons in Settings
+    description: Display coloured icons for buttons in setting like uninstall, options, hotkeys, etc.
+    id: flexcyon-settings-coloured-icons
+    type: class-toggle
+    default: false
+  - title: Enable community item effects
+    description: Enable installed tooltip effects such as subtle dimming of community items and fixing positioning of installed tooltip in community items.
+    id: flexcyon-settings-comm-item-enabled
+    type: class-toggle
+    default: true
+  - title: Opacity of community items (unselected)
+    id: flexcyon-comm-item-opacity
+    type: variable-number
+    default: 0.89
+  - title: Installed tooltip left margin
+    description: Control the left margin of the installed tooltip
+    id: flexcyon-settings-installed-tooltip-left-margin
+    type: variable-number
+    default: 1
+    format: rem
+  - title: Do not show scrollbar in settings
+    id: flexcyon-settings-scrollbar-removed
+    description: Do not show scrollbar in settings
+    type: class-toggle
+    default: true
+  - title: Enable alternate active item effect in settings
+    id: flexcyon-enable-alt-active-item-effect
+    type: class-toggle
+    default: true
+
+  - title: Plugins
+    type: heading
+    level: 4
+    collapsed: true
+    description: Style settings related to supported plugins
+  - title: Alternate file tree
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Folders font size
+    id: oz-fta-folder-font-size
+    description: Used in alternate file tree folder
+    type: variable-number
+    default: 0.925
+    format: rem
+  - title: Folders font color
+    id: oz-fta-folder-pane-file-name-color
+    type: variable-color
+    format: hex
+    opacity: true
+    default: "#d3d5d3"
+  - title: Active folder color
+    id: oz-fta-all-panes-active-text-color
+    type: variable-color
+    format: hex
+    default: "#d3d5d3"
+  - title: Files font size
+    id: oz-fta-file-font-size
+    description: Used in alternate file tree files
+    type: variable-number
+    default: 0.9
+    format: rem
+  - title: Files font color
+    id: oz-fta-file-pane-file-name-color
+    type: variable-color
+    opacity: true
+    format: hex
+    default: "#6f768599"
+  - title: Disable folder icons
+    id: flexcyon-oz-folder-icons-disabled
+    description: Remove folder icons
+    type: class-toggle
+    default: false
+  - title: Disable file tree header
+    id: flexcyon-oz-file-tree-header-disabled
+    description: Remove file tree header
+    type: class-toggle
+    default: false
+  - title: Enable Alternate folder count
+    id: flexcyon-oz-alternate-folder-count
+    description: Alternate folder count style, shows count on hover
+    type: class-toggle
+    default: false
+  - title: Enable dimmed file extensions in file tree
+    id: flexcyon-oz-dimmed-file-exts-enabled
+    type: class-toggle
+    default: true
+  - title: Full Calendar
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Opacity of dimmed full calendar items
+    id: flexcyon-fc-dimmed-items-opacity
+    type: variable-number
+    default: 0.89
+  - title: Dataview
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Horizontal padding of dataview error messages
+    id: flexcyon-dataview-horizontal-padding
+    type: variable-number
+    default: 8
+    format: px
+
+  - title: Others
+    type: heading
+    level: 4
+    collapsed: true
+    description: Vim mode text, new tab appearance, side dock icons, tooltip radius
+  - title: Vim Mode Text
+    description: Text to display modes when using built-in vim bindings, inherits style and color from status bar style
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Enable Vim Mode Text
+    id: flexcyon-vim-mode-text-enable
+    description: Enable text for displaying current vim mode
+    type: class-toggle
+    default: true
+  - title: Vim mode text left positioning
+    id: flexcyon-vim-left-positioning
+    type: variable-number
+    description: How far from the left of the screen the current vim mode text is (as the number gets greater, the text moves to the right of the screen)
+    default: 6
+    format: px
+  - title: Vim mode text bottom positioning
+    id: flexcyon-vim-bottom-positioning
+    type: variable-number
+    description: How far from the bottom of the screen the current vim mode text is (as the number gets greater, the text moves higher up the screen)
+    default: -4
+    format: px
+  - title: Insert Mode Text
+    description: Text to display when in insert mode
+    id: flexcyon-vim-insert-text
+    type: variable-text
+    default: "INSERT"
+    quotes: true
+  - title: Normal Mode Text
+    description: Text to display when in normal mode
+    id: flexcyon-vim-normal-text
+    type: variable-text
+    default: "NORMAL"
+    quotes: true
+  - title: Command Mode Text
+    description: Text to display when in command mode
+    id: flexcyon-vim-command-text
+    type: variable-text
+    default: "COMMAND"
+    quotes: true
+
+  - title: New Tab Appearance
+    type: heading
+    level: 5
+    collapsed: true
+    description: Customise the appearance of new tabs
+  - title: Enable ASCII Art
+    id: flexcyon-ascii-enable
+    description: Enable ASCII art in new tab
+    type: class-toggle
+    default: true
+  - title: ASCII Art
+    id: flexcyon-ascii-art
+    description: ASCII art to display in new tab
+    type: variable-text
+    default: " \a\
+      _______________                                       \a\
+      ___  ____/__  /________  ____________  ______________ \a\
+      __  /_   __  /_  _ \\_  |/_/  ___/_  / / /  __ \\_  __ \\ \a\
+      _  __/   _  / /  __/_>  < / /__ _  /_/ // /_/ /  / / / \a\
+      /_/      /_/  \\___//_/|_| \\___/ _\\__, / \\____//_/ /_/ \a\
+      /____/                \a\a\a "
+    quotes: true
+  - title: ASCII art font size limit
+    description: The maximum size of the ASCII art
+    id: flexcyon-ascii-max-font-size
+    type: variable-number
+    default: 14
+    format: px
+  - title: ASCII art line height
+    description: The line height of the ASCII art
+    id: flexcyon-ascii-line-height
+    type: variable-number
+    default: 1
+  - title: Disable Empty State title
+    id: flexcyon-empty-state-title-disable
+    description: Toggle the empty state title
+    type: class-toggle
+    default: true
+  - title: Disable Empty State Actions
+    id: flexcyon-empty-state-actions-disable
+    description: Toggle the empty state actions
+    type: class-toggle
+    default: false
+
+  - title: Side Dock Icons
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Enable side dock icon effects
+    id: flexcyon-sidedock-icon-effects
+    description: Enable the colors, dim till hover effects for side dock icons
+    type: class-toggle
+    default: true
+  - title: Hide the side dock ribbon
+    id: flexcyon-sidedock-ribbon-hidden
+    type: class-toggle
+    default: false
+
+  - title: Tooltip radius
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Small radius
+    id: radius-s
+    type: variable-number
+    default: 2
+    format: px
+  - title: Medium radius
+    id: radius-m
+    type: variable-number
+    default: 4
+    format: px
+  - title: Large radius
+    id: radius-l
+    type: variable-number
+    default: 6
+    format: px
+  - title: Extra large radius
+    id: radius-xl
+    type: variable-number
+    default: 8
+    format: px

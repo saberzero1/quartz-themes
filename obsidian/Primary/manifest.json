@@ -5,5 +5,9 @@
   "author": "Cecilia May",
   "fundingUrl": {
     "Ko-fi": "https://ko-fi.com/ceciliamay"
+  },
+  "license": {
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0"
   }
 }

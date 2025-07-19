@@ -1,0 +1,1059 @@
+name: Appearance
+id: Appearance
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: accent
+    title: Accent Color
+    type: variable-themed-color
+    format: hsl-split
+    opacity: false
+    default-light: "#0F87CC"
+    default-dark: "#80D0FF"
+  - id: Extended-colors
+    title: Extended Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: red
+    title: Red
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(115, 42, 56)"
+    default-dark: "rgb(219, 75, 75)"
+  - id: red1
+    title: Red1
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(140, 67, 81)"
+    default-dark: "rgb(255, 117, 127)"
+  - id: green
+    title: Green
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(51, 99, 92)"
+    default-dark: "rgb(158, 206, 106)"
+  - id: cyan
+    title: Cyan
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(15, 75, 110)"
+    default-dark: "rgb(125, 207, 255)"
+  - id: blue
+    title: Blue
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(52, 84, 138)"
+    default-dark: "rgb(122, 162, 247)"
+  - id: yellow
+    title: Yellow
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(143, 94, 21)"
+    default-dark: "rgb(224, 175, 104)"
+  - id: orange
+    title: Orange
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(150, 80, 39)"
+    default-dark: "rgb(255, 158, 100)"
+  - id: magenta
+    title: Magenta
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(90, 74, 120)"
+    default-dark: "rgb(187, 154, 247)"
+  - id: pink
+    title: Pink
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(109, 74, 120)"
+    default-dark: "rgb(217, 0, 105)"
+  - id: Background-colors
+    title: Background Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: bg
+    title: Background Primary
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(213, 214, 219)"
+    default-dark: "rgb(26, 27, 38)"
+  - id: bg_dark
+    title: Background Dark
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(203, 204, 209)"
+    default-dark: "rgb(22, 22, 30)"
+  - id: bg_highlight
+    title: Background Highlight
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(220, 222, 226)"
+    default-dark: "rgb(41, 46, 66)"
+  - id: bg_highlight_dark
+    title: Background Highlight Dark
+    description: "Used for code bg"
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(195, 197, 201)"
+    default-dark: "rgb(36, 40, 59)"
+  - id: bg_dark2
+    title: Background Dark2
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "rgb(188, 189, 194)"
+    default-dark: "rgb(15, 15, 20)"
+  - id: foreground-header
+    title: Foreground
+    type: heading
+    level: 2
+    collapsed: true
+  - id: text-color-heading
+    title: Text / Icon Color
+    type: heading
+    level: 3
+    collapsed: true
+  - id: text-normal
+    title: Text Normal
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-muted
+    title: Text Muted
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-faint
+    title: Text Faint
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-accent
+    title: Text Accent
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-accent-hover
+    title: Text Accent Hover
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-on-accent
+    title: Text on Accent
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-on-accent-inverted
+    title: Text on Accent Inverted
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-error
+    title: Text Error
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-warning
+    title: Text Warning
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-success
+    title: Text Success
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: interactive-heading
+    title: Interactive color
+    type: heading
+    level: 3
+    collapsed: true
+  - id: interactive-normal
+    title: Interactive Normal
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: interactive-hover
+    title: Interactive Hover
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: interactive-accent
+    title: Interactive Accent
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: interactive-accent-hover
+    title: Interactive Accent Hover
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: interactive-accent-hsl
+    title: Interactive Accent HSL
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  #name: Editor
+  #id: Editor
+  - id: headings
+    title: Tabs
+    type: heading
+    level: 1
+    collapsed: true
+  - id: tab-text-color-focused-active
+    title: Tab Focus Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: tab-text-color-focused-active-current
+    title: Current Tab Focus Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: headings
+    title: Headings
+    type: heading
+    level: 1
+    collapsed: true
+  - id: level-1-heading
+    title: Level 1
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-divider-on
+    title: disable H1 divider
+    type: class-toggle
+    default: false
+  - id: h1-font
+    title: H1 Font
+    type: variable-text
+    default: ""
+  - id: h1-size
+    title: H1 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h1-weight
+    title: H1 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 700
+  - id: h1-color
+    title: H1 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: level-2-heading
+    title: Level 2
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h2-divider-on
+    title: disable H2 divider
+    type: class-toggle
+    default: false
+  - id: h2-font
+    title: H2 Font
+    type: variable-text
+    default: ""
+  - id: h2-size
+    title: H2 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h2-weight
+    title: H2 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 600
+  - id: h2-color
+    title: H2 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: level-3-heading
+    title: Level 3
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h3-divider-on
+    title: disable H3 divider
+    type: class-toggle
+    default: false
+  - id: h3-font
+    title: H3 Font
+    type: variable-text
+    default: ""
+  - id: h3-size
+    title: H3 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h3-weight
+    title: H3 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 600
+  - id: h3-color
+    title: H3 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: level-4-heading
+    title: Level 4
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h4-divider-on
+    title: disable H4 divider
+    type: class-toggle
+    default: false
+  - id: h4-font
+    title: H4 Font
+    type: variable-text
+    default: ""
+  - id: h4-size
+    title: H4 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h4-weight
+    title: H4 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 600
+  - id: h4-color
+    title: H4 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: level-5-heading
+    title: Level 5
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h5-divider-on
+    title: disable H5 divider
+    type: class-toggle
+    default: false
+  - id: h5-font
+    title: H5 Font
+    type: variable-text
+    default: ""
+  - id: h5-size
+    title: H5 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h5-weight
+    title: H5 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 600
+  - id: h5-color
+    title: H5 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: level-6-heading
+    title: Level 6
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h6-divider-on
+    title: disable H6 divider
+    type: class-toggle
+    default: false
+  - id: h6-font
+    title: H6 Font
+    type: variable-text
+    default: ""
+  - id: h6-size
+    title: H6 Font Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: h6-weight
+    title: H6 Font Weight
+    description: Value from 100 - 900
+    type: variable-text
+    default: 600
+  - id: h6-color
+    title: H6 Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: text-heading
+    title: Text
+    type: heading
+    level: 1
+    collapsed: true
+  - id: bold-color
+    title: Bold Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: italic-color
+    title: Italic Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-heading
+    title: Links
+    type: heading
+    level: 1
+    collapsed: true
+  - id: link-color
+    title: Link Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-color-hover
+    title: Link Hover Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-decoration
+    title: Link decoration
+    description: Any CSS text-decoration-line value
+    type: variable-text
+    default: underline
+  - id: link-decoration-hover
+    title: Link Hover decoration
+    description: Any CSS text-decoration-line value
+    type: variable-text
+    default: underline
+  - id: link-decoration-thickness
+    title: Link decoration thickness
+    description: Any CSS text-decoration-thickness value
+    type: variable-text
+    default: auto
+  - id: external-link-heading
+    title: External Link
+    type: heading
+    level: 3
+    collapsed: true
+  - id: link-external-color
+    title: External Link Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-external-color-hover
+    title: External Link Hover Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-external-decoration
+    title: External Link decoration
+    description: Any CSS text-decoration-line value
+    type: variable-text
+    default: underline
+  - id: link-external-decoration-hover
+    title: External Link Hover decoration
+    description: Any CSS text-decoration-line value
+    type: variable-text
+    default: underline
+  - id: link-external-filter
+    title: External Link Filter
+    description: Any CSS filter value
+    type: variable-text
+    default: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%) contrast(85%)
+  - id: unresolved-link-heading
+    title: Unresolved Link
+    type: heading
+    level: 3
+    collapsed: true
+  - id: link-unresolved-color
+    title: Unresolved Link Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: link-unresolved-opacity
+    title: Unresolved link opacity
+    type: variable-number-slider
+    default: 0.7
+    min: 0.25
+    max: 1
+    step: 0.05
+  - id: link-unresolved-filter
+    title: Unresolved Link Filter
+    description: Any CSS filter value
+    type: variable-text
+    default: none
+  - id: link-unresolved-decoration
+    title: Unresolved Link decoration
+    description: Any CSS text-decoration-line value
+    type: variable-text
+    default: solid
+  - id: link-unresolved-decoration-color
+    title: Unresolved Link decoration Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: lists-heading
+    title: Lists
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-indent
+    title: List Indent
+    type: variable-text
+    default: 2.25em
+  - id: list-spacing
+    title: list spacing
+    type: variable-text
+    default: 0.075em
+  - id: list-bullet-size
+    title: list marker size
+    type: variable-text
+    default: 0.3em
+  - id: list-marker-color
+    title: list marker color
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: list-marker-color-hover
+    title: list marker color (hover)
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: list-marker-color-collapsed
+    title: list marker color (collapsed)
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: Tags
+    title: Tags
+    type: heading
+    collapsed: true
+    level: 2
+  - id: tag-color
+    title: Tag text color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: tag-background
+    title: Tag background color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: tag-background-hover
+    title: Tag background color (hover)
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: Dates
+    title: Dates
+    type: heading
+    collapsed: true
+    level: 2
+  - id: date-color
+    title: Tag text color
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: date-background-color
+    title: Date background color
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: table-heading
+    title: Tables
+    type: heading
+    level: 2
+    collapsed: true
+  - id: table-border-width
+    title: Table Border Width
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - id: table-border-color
+    title: Table Border Color
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: code-headigeng
+    title: Code
+    type: heading
+    level: 2
+    collapsed: true
+  - id: code-background
+    title: Code Background
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-normal
+    title: Code Normal
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-comment
+    title: Code Comment
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-function
+    title: Code Function
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-important
+    title: Code Important
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-keyword
+    title: Code Keyword
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-operator
+    title: Code Operator
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-property
+    title: Code Property
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-punctuation
+    title: Code Punctuation
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-string
+    title: Code String
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-tag
+    title: Code Tag
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: code-value
+    title: Code Value
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: blockquote-heading
+    title: Blockquote
+    type: heading
+    level: 2
+    collapsed: true
+  - id: blockquote-border-thickness
+    title: Blockquote Border Thickness
+    type: variable-number-slider
+    default: 3
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - id: blockquote-border-color
+    title: Blockquote Border Color
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: blockquote-color
+    title: Blockquote Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: blockquote-background-color
+    title: Blockquote Background Color
+    type: variable-themed-color
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: checkbox-heading
+    title: Checkboxes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: disable-alternative-checkboxes
+    title: Disable Alternative Checkboxes
+    description: Enable this if you are using your own implementation via a CSS Snippet.
+    default: false
+    type: class-toggle
+  - id: checkbox-radius
+    title: Checkbox Radius
+    description: Any CSS border-radius value
+    type: variable-text
+    default: ""
+  - id: checkbox-color
+    title: Checkbox Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: checkbox-color-hover
+    title: Checkbox Hover Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: checkbox-marker-color
+    title: Checkbox Marker Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: checkbox-border-color
+    title: Checkbox Border Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: checkbox-border-color-hover
+    title: Checkbox Border Hover Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-heading
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: callout-style-select
+    title: Callout Style
+    type: class-select
+    allowEmpty: false
+    default: callout-style-customize
+    options:
+      - label: Customize
+        value: callout-style-customize
+      - label: style 1
+        value: callout-style-1
+      - label: style 2
+        value: callout-style-2
+      - label: style 3
+        value: callout-style-3
+      - label: style 4
+        value: callout-style-4
+  - id: callout-border-width
+    title: Callout Border Width
+    type: variable-text
+    description: Any CSS border-width value
+    default: 0px
+  - id: callout-border-opacity
+    title: Callout Border Opacity
+    type: variable-number-slider
+    default: 0.25
+    min: 0
+    max: 1
+    step: 0.05
+  - id: callout-padding
+    title: Callout Padding
+    description: Accepts any CSS padding value
+    type: variable-text
+    default: ""
+  - id: callout-radius
+    title: Callout Radius
+    description: Input your border-radius value here
+    type: variable-text
+    default: ""
+  - id: callout-title-color
+    title: Callout Title Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-title-padding
+    title: Callout Title Padding
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: callout-title-size
+    title: Callout Title Size
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: callout-content-padding
+    title: Callout Content Padding
+    description: Any CSS font-size value
+    type: variable-text
+    default: ""
+  - id: callout-content-background
+    title: Callout Content Background
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-content-radius
+    title: Callout Content Radius
+    description: Input your border-radius value here
+    type: variable-text
+    default: ""
+  - id: callout-color-heading
+    title: Callout Colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: callout-default
+    title: Default Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-info
+    title: Info Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-summary
+    title: Summary Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-tip
+    title: Tip Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-todo
+    title: Todo Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-bug
+    title: Bug Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-error
+    title: Error Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-fail
+    title: Fail Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-example
+    title: Example Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-important
+    title: Important Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-success
+    title: Success Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-question
+    title: Question Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-warning
+    title: Warning Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: callout-quote
+    title: Quote Callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#"
+    default-dark: "#"
+  - id: embed-heading
+    title: Embeds
+    type: heading
+    level: 2
+    collapsed: true
+  - id: embed-background
+    title: Embed Background
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: embed-padding
+    title: Embed Padding
+    description: Any CSS padding value
+    type: variable-text
+    default: ""
+  - id: embed-border-radius
+    title: Embed Border Radius
+    description: Any CSS border-radius value
+    type: variable-text
+    default: ""
+  - id: embed-font-style
+    title: Embed Font Style
+    description: Any CSS font-style value
+    type: variable-text
+    default: ""
+  - id: image-heading
+    title: Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: image-radius
+    title: Image Radius
+    description: Any CSS border-radius value
+    type: variable-text
+    default: ""

@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "author": "ryanjrman",
-  "authorUrl": "https://github.com/ryanjrman"
+  "authorUrl": "https://github.com/ryanjrman",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

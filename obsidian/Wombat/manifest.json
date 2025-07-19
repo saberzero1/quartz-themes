@@ -2,5 +2,9 @@
   "name": "Wombat",
   "version": "0.0.0",
   "minAppVersion": "0.16.0",
-  "author": "hush-hush"
+  "author": "hush-hush",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

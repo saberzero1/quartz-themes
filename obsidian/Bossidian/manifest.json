@@ -4,5 +4,9 @@
   "version": "1.0.0",
   "minAppVersion": "0.16.0",
   "author": "BossElijah",
-  "authorUrl": "https://BossELijah.github.io"
+  "authorUrl": "https://BossELijah.github.io",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

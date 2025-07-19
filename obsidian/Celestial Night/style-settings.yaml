@@ -1,0 +1,38 @@
+name: Celestial Night
+id: celestial-night-theme
+settings:
+  - id: colors-heading
+    title: Colors
+    type: class-select
+    default: default
+    options:
+      - label: Moonlight
+        value: default
+      - label: Half-moon
+        value: theme-midnight
+      - label: Crescent
+        value: theme-crescent
+      - label: Starless
+        value: theme-black
+  - id: font-text-theme
+    title: Main (Body) Font
+    type: variable-select
+    default: var(--font-serif)
+    options:
+      - label: Serif
+        value: var(--font-serif)
+      - label: Sans
+        value: var(--font-sans)
+      - label: Cursive
+        value: var(--font-cursive)
+  - id: heading-font
+    title: Heading Font
+    type: variable-select
+    default: var(--font-cursive)
+    options:
+      - label: Serif
+        value: var(--font-serif)
+      - label: Sans
+        value: var(--font-sans)
+      - label: Cursive
+        value: var(--font-cursive)

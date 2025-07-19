@@ -4,5 +4,9 @@
   "minAppVersion": "1.7.6",
   "author": "Lorens Osman",
   "authorUrl": "https://twitter.com/lorans_othman",
-  "fundingUrl": "https://www.buymeacoffee.com/lorens"
+  "fundingUrl": "https://www.buymeacoffee.com/lorens",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

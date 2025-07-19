@@ -202,7 +202,9 @@ button.mod-cta {
   .mod-root.workspace-split.mod-vertical
   .workspace-split.mod-vertical
   > div.workspace-leaf:not(.stayopen),
-.plugin-tabs .mod-root.workspace-split.mod-vertical > div.workspace-leaf:not(.stayopen) {
+.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  > div.workspace-leaf:not(.stayopen) {
   border-radius: 5px 5px 0px 0px !important;
 }
 
@@ -212,7 +214,9 @@ button.mod-cta {
   border-right-width: 0px !important;
 }
 
-.theme-light.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf {
+.theme-light.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  div.workspace-leaf {
   border-color: var(--background-secondary-alt) !important;
   border-left-width: 3px !important;
   border-bottom-width: 0px !important;
@@ -230,12 +234,21 @@ button.mod-cta {
   display: none;
 }
 
-.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf .view-header {
+.plugin-tabs
+  .mod-root.workspace-split.mod-vertical
+  div.workspace-leaf
+  .view-header {
   border-left-color: transparent !important;
 }
 
-.plugin-tabs .workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content,
-.plugin-tabs .workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+.plugin-tabs
+  .workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content,
+.plugin-tabs
+  .workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   border-radius: 0px !important;
 }
 
@@ -244,7 +257,10 @@ button.mod-cta {
   .mod-root.workspace-split.mod-vertical
   .workspace-split.mod-vertical
   > div.workspace-leaf.mod-active,
-.plugin-tabs .theme-dark .mod-root.workspace-split.mod-vertical > div.workspace-leaf.mod-active {
+.plugin-tabs
+  .theme-dark
+  .mod-root.workspace-split.mod-vertical
+  > div.workspace-leaf.mod-active {
   border: 0 !important;
   border-radius: 0px 0px 0px 0px !important;
 }

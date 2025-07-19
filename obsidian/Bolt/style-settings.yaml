@@ -1,0 +1,22 @@
+name: Bolt
+id: bolt-theme
+settings:
+  - id: theme-class-select
+    title: Theme
+    type: class-select
+    default: none
+    allowEmpty: false
+    options:
+      - label: Default
+        value: none
+      - label: Garden
+        value: theme-green
+      - label: Classic
+        value: theme-classic
+      - label: Lumen
+        value: theme-lumen
+  - id: restore-ribbon
+    title: Restore Default Ribbon
+    description: Replace the floating sidebar button with the default Obsidian ribbon on desktop.
+    type: class-toggle
+    default: false

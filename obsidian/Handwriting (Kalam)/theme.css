@@ -108,7 +108,9 @@
 /* ---------- 3‑B Live Preview (editing) --------------------------- */
 /* Real <table> lives inside .cm-table-widget */
 
-.markdown-source-view.handwriting.mod-cm6.is-live-preview .cm-table-widget table {
+.markdown-source-view.handwriting.mod-cm6.is-live-preview
+  .cm-table-widget
+  table {
   font-family: "Kalam", cursive;
   font-size: 1.3em;
   width: 100%;
@@ -131,7 +133,12 @@
 }
 
 /* Body cells (fallback selector hits token view if widget absent) */
-.markdown-source-view.handwriting.mod-cm6.is-live-preview .cm-table-widget tbody td,
-.markdown-source-view.handwriting.mod-cm6.is-live-preview .cm-line span.cm-table-row {
+.markdown-source-view.handwriting.mod-cm6.is-live-preview
+  .cm-table-widget
+  tbody
+  td,
+.markdown-source-view.handwriting.mod-cm6.is-live-preview
+  .cm-line
+  span.cm-table-row {
   color: #4682b4 !important;
 }

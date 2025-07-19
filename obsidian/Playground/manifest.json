@@ -3,5 +3,9 @@
   "version": "0.1.10",
   "minAppVersion": "1.6.1",
   "author": "Ezben",
-  "authorUrl": "https://www.benjaminezequiel.com/"
+  "authorUrl": "https://www.benjaminezequiel.com/",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }

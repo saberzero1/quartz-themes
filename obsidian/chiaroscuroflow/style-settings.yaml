@@ -1,0 +1,81 @@
+name: Chiaroscuro Flow
+id: chiaroscuro-flow
+settings:
+  - id: body-font
+    title: Body Font
+    type: variable-text
+    default: Manrope
+
+  - id: header-font
+    title: Header Font
+    type: variable-text
+    default: "Nunito Sans Bold"
+    weight: 800
+
+  - id: background-primary-light
+    title: Light Mode Primary Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#FFFFFF"
+
+  - id: background-secondary-light
+    title: Light Mode Secondary Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#F0F0F0"
+
+  - id: background-primary-dark
+    title: Dark Mode Primary Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#1E1E1E"
+
+  - id: background-secondary-dark
+    title: Dark Mode Secondary Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#2D2D2D"
+
+  - id: text-normal-light
+    title: Light Mode Text Color
+    type: variable-color
+    format: rgb
+    default: "#333333"
+
+  - id: text-normal-dark
+    title: Dark Mode Text Color
+    type: variable-color
+    format: rgb
+    default: "#DDDDDD"
+
+  - id: code-background
+    title: Code Block Background (Light Mode)
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#F0F0F0"
+
+  - id: code-background-dark
+    title: Dark Mode Code Block Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#2D2D2D"
+
+  - id: math-background
+    title: Math Block Background (Light Mode)
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#F0F0F0"
+
+  - id: graph-background
+    title: Graph View Background
+    type: variable-color
+    opacity: true
+    format: rgb
+    default: "#FFFFFF"

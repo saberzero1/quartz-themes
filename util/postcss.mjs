@@ -6,11 +6,41 @@ import * as postcss from "postcss"
  * @param {string} cssString - The CSS string to process.
  * @returns {string} The transformed CSS string with split rules.
  */
-export function splitCombinedRules(cssString) {
+export function splitCombinedRules(cssString, mode = "both") {
   const root = postcss.parse(cssString)
 
   root.walkRules((originalRule) => {
     if (originalRule.selectors && originalRule.selectors.length > 1) {
+      /*
+      if (originalRule.selectors.length === 2) {
+        // Check if the selectors are ".theme-dark" and ".theme-light"
+        // if these are the only selectors, we replace both selectors with 'body'
+        if (
+          (originalRule.selectors[0] === ".theme-dark" && originalRule.selectors[1] === ".theme-light") ||
+          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === ".theme-dark") ||
+          (originalRule.selectors[0] === "body.theme-dark" && originalRule.selectors[1] === ".theme-light") ||
+          (originalRule.selectors[0] === ".theme-dark" && originalRule.selectors[1] === "body.theme-light") ||
+          (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === ".theme-dark") ||
+          (originalRule.selectors[0] === ".theme-light" && originalRule.selectors[1] === "body.theme-dark") ||
+          (originalRule.selectors[0] === "body.theme-dark" && originalRule.selectors[1] === "body.theme-light") ||
+          (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === "body.theme-dark")
+        ) {
+          originalRule.selectors.push(["body"])
+        }
+      }
+      if (mode !== "both" && originalRule.selectors.length === 1) {
+        if (mode === "dark") {
+          if (originalRule.selectors[0] === ".theme-dark" || originalRule.selectors[0] === "body.theme-dark") {
+            originalRule.selectors.push("body")
+          }
+        }
+        if (mode === "light") {
+          if (originalRule.selectors[0] === ".theme-light" || originalRule.selectors[0] === "body.theme-light") {
+            originalRule.selectors.push("body")
+          }
+        }
+      }
+      */
       const parent = originalRule.parent
       const newRules = []
 
@@ -240,4 +270,200 @@ function compareDeclarations(declA, declB) {
 
   // If both are custom or both are standard, sort alphabetically
   return propA.localeCompare(propB)
+}
+
+/**
+ * Extracts all CSS rules that apply to the dark theme (identified by the presence of ".theme-dark" in the selector).
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @param {boolean} [wrapRoot=false] - If true, wraps the rules in a `:root` selector.
+ * @returns {string[]} An array of strings, each representing a rule
+ */
+export function getAllDarkThemeRules(cssString, wrapRoot = false) {
+  const root = postcss.parse(cssString)
+  const darkThemeRules = []
+
+  root.walkRules((rule) => {
+    if (rule.selector === ".theme-dark") {
+      // concat all declarations inside the rule
+      const ruleString = rule.nodes
+        .filter((node) => node.type === "decl")
+        .map((decl) => `${decl.prop}: ${decl.value};`)
+        .join("\n")
+      if (wrapRoot) {
+        darkThemeRules.push(`:root {\n${ruleString}\n}\n`)
+      } else {
+        darkThemeRules.push(ruleString)
+      }
+    }
+    else if (rule.selector.includes(".theme-dark")) {
+      const ruleString = rule.toString().split(".theme-dark").join("")
+      darkThemeRules.push(ruleString)
+    }
+  })
+
+  return darkThemeRules
+}
+
+/**
+ * Extracts all CSS rules that apply to the light theme (identified by the presence of ".theme-light" in the selector).
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @param {boolean} [wrapRoot=false] - If true, wraps the rules in a `:root` selector.
+ * @returns {string[]} An array of strings, each representing a rule
+ */
+export function getAllLightThemeRules(cssString, wrapRoot = false) {
+  const root = postcss.parse(cssString)
+  const lightThemeRules = []
+
+  root.walkRules((rule) => {
+    if (rule.selector === ".theme-light") {
+      // concat all declarations inside the rule
+      const ruleString = rule.nodes
+        .filter((node) => node.type === "decl")
+        .map((decl) => `${decl.prop}: ${decl.value};`)
+        .join("\n")
+      if (wrapRoot) {
+        lightThemeRules.push(`:root {\n${ruleString}\n}\n`)
+      } else {
+        lightThemeRules.push(ruleString)
+      }
+    } else if (rule.selector.includes(".theme-light")) {
+      const ruleString = rule.toString().split(".theme-light").join("")
+      lightThemeRules.push(ruleString)
+    }
+  })
+
+  return lightThemeRules
+}
+
+/**
+ * Combine all color variables from the dark and light themes into a single object.
+ * This function then combines the two sets of varaibles if they overlap using the `light-dark()` function.
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @param {string} [darkThemeSelector=".theme-dark"] - The selector for the dark theme.
+ * @param {string} [lightThemeSelector=".theme-light"] - The selector for the light theme.
+ * @returns {Record<string, string>} An object where keys are variable names and values are their static values.
+ */
+export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme-dark", lightThemeSelector = ".theme-light") {
+  const root = postcss.parse(cssString)
+  const combinedVariables = {}
+
+  const skippableProps = ["--accent-h", "--accent-s", "--accent-l", "--accent-a"]
+
+  const isColorVariable = (value) => {
+    // Check if the value is a color variable
+    return value.startsWith("var(--") || value.startsWith("#") || value.startsWith("rgb(") || value.startsWith("hsl(") || value.startsWith("oklch(") || value.startsWith("oklab(")
+  }
+
+  // Helper function to create tuples of light and dark variables
+  const createLightDarkTuple = (lightVar, darkVar, propName) => {
+    if ((!isColorVariable(lightVar) || !isColorVariable(darkVar)) && !skippableProps.includes(propName)) {
+      return "none";
+    }
+    return `light-dark(${lightVar}, ${darkVar})`
+  }
+
+  // Process dark theme variables
+  root.walkRules(darkThemeSelector, (rule) => {
+    rule.walkDecls((decl) => {
+      if (decl.prop.startsWith("--")) {
+        combinedVariables[decl.prop] = decl.value
+      }
+    })
+  })
+
+  // Process light theme variables
+  // We will combine the light and dark theme variables into a single object
+  // and use the `light-dark()` function for overlapping variables.
+  // This will ensure that if a variable exists in both themes, it will be combined.
+  root.walkRules(lightThemeSelector, (rule) => {
+    rule.walkDecls((decl) => {
+      if (decl.prop.startsWith("--")) {
+        // If the variable already exists in the combinedVariables,
+        // we combine them using the light-dark() function.
+        if (combinedVariables[decl.prop]) {
+          combinedVariables[decl.prop] = createLightDarkTuple(decl.value, combinedVariables[decl.prop], decl.prop)
+        } else {
+          combinedVariables[decl.prop] = decl.value
+        }
+      }
+    })
+  })
+
+  // Remove any variable that is not a `light-dark()` function
+  for (const key in combinedVariables) {
+    if (!combinedVariables[key].startsWith("light-dark(") && skippableProps.indexOf(key) === -1) {
+      // If the variable is not a light-dark function, we remove it
+      delete combinedVariables[key]
+    }
+  }
+
+  // Map to a string newline separated string
+  const combinedVariablesString = Object.entries(combinedVariables)
+    .map(([key, value]) => `${key}: ${value};`)
+    .join("\n")
+
+  return combinedVariablesString
+}
+
+/**
+ * Combine shared CSS custom properties into a single `light-dark` variable.
+ * This function processes the provided CSS string to extract and combine
+ * custom properties that are shared between light and dark themes.
+ * It identifies properties that are defined in both light and dark themes
+ * and combines them into a single variable for each property.
+ * This is done for each shared selector in the CSS string if a `.theme-light` and `.theme-dark` selector is present.
+ *
+ * @param {string} css - The CSS string to process.
+ * @return {string} The combined CSS custom properties as a string.
+ */
+export function combineThemeVariables(css) {
+  const darkThemeRules = getAllDarkThemeRules(css, true)
+  const lightThemeRules = getAllLightThemeRules(css, true)
+
+  const splitDarkThemeRules = darkThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
+  const splitLightThemeRules = lightThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
+
+  const splitDarkThemeMap = new Map(splitDarkThemeRules)
+  const splitLightThemeMap = new Map(splitLightThemeRules)
+
+  // Combine the rules into a single pair for every color property that exists in both themes.
+  let result = "" 
+
+  for (const [selector, darkDeclarations] of splitDarkThemeMap) {
+    if (splitLightThemeMap.has(selector)) {
+      const lightDeclarations = splitLightThemeMap.get(selector)
+      const combinedDeclarations = []
+
+      // Combine declarations from both themes
+      for (const [prop, darkValue] of darkDeclarations) {
+        const lightValue = lightDeclarations.find(([lightProp]) => lightProp === prop)?.[1]
+        if (lightValue !== undefined && darkValue !== undefined && lightValue !== darkValue) {
+          // If both values exist, and they are not identical, combine them using the `light-dark()` function
+          combinedDeclarations.push([prop, `light-dark(${lightValue.endsWith(";") ? lightValue.slice(0, -1) : lightValue}, ${darkValue.endsWith(";") ? darkValue.slice(0, -1) : darkValue})`])
+        }
+      }
+      // Add the combined declarations to the result
+      if (combinedDeclarations.length > 0) {
+        if (selector.includes(":root")) {
+          combinedDeclarations.forEach(([prop, value]) => {
+            result += `  ${prop}: ${value};\n`
+          })
+        }
+        result += `${selector} {\n`
+        combinedDeclarations.forEach(([prop, value]) => {
+          result += `  ${prop}: ${value};\n`
+        })
+        result += `}\n\n`
+      }
+    }
+  }
+
+  result = result.replaceAll("undefined", "")
+
+  // Turn the combined properties into a string
+  return result !== "" ? `${css}\n\n${result}\n\n` : css
+
 }

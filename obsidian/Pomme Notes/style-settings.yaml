@@ -1,0 +1,15 @@
+name: Pomme Notes Settings
+id: pomme-settings
+settings:
+  - id: phone-full-black
+    title: Use Fully Black Backgrounds on Phones
+    type: class-toggle
+    default: true
+  - id: tablet-full-black
+    title: Use Fully Black Background on Tablets
+    type: class-toggle
+    default: false
+  - id: desktop-full-black
+    title: Use Fully Black Background on Desktop
+    type: class-toggle
+    default: false

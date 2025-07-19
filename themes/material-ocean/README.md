@@ -39,7 +39,8 @@ Then, add the following to your `quartz/styles/custom.scss` file after the `@use
 @use "themes";
 ```
 
-> [!IMPORTANT] For dark-only or light-only themes, remember to remove `Component.Darkmode()` from your `quartz.config.ts` file.
+> [!IMPORTANT]
+> For dark-only or light-only themes, remember to remove `Component.Darkmode()` from your `quartz.config.ts` file.
 
 ### Quartz Syncer
 

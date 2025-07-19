@@ -1,29 +1,29 @@
 body {
   /*--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
 
-	--radius-s: 4px;
-	--radius-m: 8px;
-	--radius-l: 12px;
-	--radius-xl: 16px;
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+    --radius-xl: 16px;
 
-	--font-text-theme: Noto Sans;
-	--callout-border-width: 2px;
-	--callout-border-opacity: 1;
+    --font-text-theme: Noto Sans;
+    --callout-border-width: 2px;
+    --callout-border-opacity: 1;
 
-	--list-indent: 2.25em;
-	--list-indent-editing: 1.5em;
-	--list-indent-source: 0;
-	--list-spacing: 0.2em;
+    --list-indent: 2.25em;
+    --list-indent-editing: 1.5em;
+    --list-indent-source: 0;
+    --list-spacing: 0.2em;
 
-	/*--nav-item-background-hover: var(--color-red);*/
+    /*--nav-item-background-hover: var(--color-red);*/
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.08);
   --nav-item-background-active: rgba(var(--mono-rgb-100), 0.15);
 
@@ -45,14 +45,15 @@ body {
   --indentation-guide-source-indent: 0.25em;
 
   /* Headings */
-  --heading-color: #0f4761
+  --heading-color:
+    #0f4761
       /*hsl(
-		var(--accent-h) 
-		calc(var(--accent-s) * 0.45) 
-		calc(var(--accent-l) * 0.45)
-	);*
-	
-	//* Font */
+        var(--accent-h) 
+        calc(var(--accent-s) * 0.45) 
+        calc(var(--accent-l) * 0.45)
+    );*
+    
+    //* Font */
       --font-text-theme: "Noto Sans",
     Open Sans serif;
 
@@ -150,16 +151,16 @@ body {
   --bold-modifier: 300;
 
   /* --color-base-00: #283035;
-	--color-base-05: #30393f;
-	--color-base-10: #39454b;
-	--color-base-20: #434f55;
-	--color-base-25: #4e5b63;
-	--color-base-30: #57636c;
-	--color-base-35: #5e6a74;
-	--color-base-40: #64727c;
-	--color-base-50: #73828d;
-	--color-base-60: #e6ded1 --color-base-70: #e6ded1;
-	--color-base-100: #e6ded1; */
+    --color-base-05: #30393f;
+    --color-base-10: #39454b;
+    --color-base-20: #434f55;
+    --color-base-25: #4e5b63;
+    --color-base-30: #57636c;
+    --color-base-35: #5e6a74;
+    --color-base-40: #64727c;
+    --color-base-50: #73828d;
+    --color-base-60: #e6ded1 --color-base-70: #e6ded1;
+    --color-base-100: #e6ded1; */
 
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -183,15 +184,19 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -228,17 +233,17 @@ body {
   --color-pink-rgb: 213, 57, 132;
   --color-pink: #d53984;
   /*--color-base-00: #fff6e7;
-	--color-base-05: #f7efe0;
-	--color-base-10: #ede5d6;
-	--color-base-20: #e6ded1;
-	--color-base-25: #cfc8bb;
-	--color-base-30: #cbc4b7;
-	--color-base-35: #c6beaf;
-	--color-base-40: #c4bdb1;
-	--color-base-50: #aca69b;
-	--color-base-60: #aba59b;
-	--color-base-70: #5d5d5d;
-	--color-base-100: #222222;*/
+    --color-base-05: #f7efe0;
+    --color-base-10: #ede5d6;
+    --color-base-20: #e6ded1;
+    --color-base-25: #cfc8bb;
+    --color-base-30: #cbc4b7;
+    --color-base-35: #c6beaf;
+    --color-base-40: #c4bdb1;
+    --color-base-50: #aca69b;
+    --color-base-60: #aba59b;
+    --color-base-70: #5d5d5d;
+    --color-base-100: #222222;*/
   --bg-light: #fdf6e3;
   --background-primary: var(--bg-light);
   --background-primary-alt: var(--bg-light);
@@ -261,13 +266,19 @@ body {
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
@@ -304,8 +315,8 @@ body {
 }
 
 /*.inline-title {
-	border-block-end: var(--divider-width) solid;
-	padding: 0.25em;
+    border-block-end: var(--divider-width) solid;
+    padding: 0.25em;
 }*/
 
 ::-webkit-scrollbar {

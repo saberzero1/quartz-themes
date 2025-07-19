@@ -1,0 +1,26 @@
+name: Nordic
+id: natowb-nordic
+settings:
+  - id: nordic-theme-flavors
+    title: Flavor
+    description: Variations on the base nord theme
+    type: class-select
+    allowEmpty: false
+    default: nordic-base
+    options:
+      - nordic-base
+      - nordic-uniform
+
+  - id: nordic-colored-headers
+    title: Colored Headers (Rainbow Headers)
+    description: adds different colors for each of the headings
+    type: class-toggle
+  - id: nordic-darken
+    title: Darker Dark Theme
+    description: prefer things a little darker? mix the base colors with this percentage of black
+    type: variable-number-slider
+    format: "%"
+    default: 0
+    min: 0
+    max: 50
+    step: 1

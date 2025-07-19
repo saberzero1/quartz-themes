@@ -1,0 +1,221 @@
+name: origami
+id: o-theme-settings
+settings:
+  - id: theme-info
+    title: origami, Info
+    description: |
+      see an issue? missing your favorite color scheme? wanna say hi? let me know [on gitHub!](https://github.com/7368697661/Origami)
+
+      this theme was made with 💖 by kneecaps.
+    markdown: true
+    type: info-text
+    level: 0
+
+  - id: o-sub-themes
+    title: 🎨 color palettes
+    description: a curation of custom & classic color palettes. don't see your favorite scheme? open a feature request on gitHub!
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: o-color-accent
+    title: accent
+    type: class-select
+    allowEmpty: false
+    default: "o-red"
+    options:
+      - label: 💖 sorcery
+        value: o-red
+      - label: 💚 eidolon
+        value: o-green
+      - label: 💙 shadow
+        value: o-blue
+      - label: 💜 umbra
+        value: o-purple
+
+  - id: o-theme-light
+    title: themes, light
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: 🔴 sorcery
+        value: o-red-l
+      - label: 🟢 eidolon
+        value: o-green-l
+      - label: 🔵 shadow
+        value: o-blue-l
+      - label: 🟣 umbra
+        value: o-purple-l
+      - label: 🤍 minimum
+        value: o-min-l
+      - label: 📄 soft
+        value: o-soft-l
+      - label: 🦈 shark Time
+        value: o-shark-l
+      - label: ☀️ solarized
+        value: o-solar-lt
+      - label: 🧰 gruvbox
+        value: o-gruvbox-lt
+
+  - id: o-theme-dark
+    title: themes, dark
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: 🔴 sorcery
+        value: o-red-d
+      - label: 🟢 eidolon
+        value: o-green-d
+      - label: 🔵 shadow
+        value: o-blue-d
+      - label: 🟣 umbra
+        value: o-purple-d
+      - label: 🖤 minimum
+        value: o-min-d
+      - label: 📄 soft
+        value: o-soft-d
+      - label: 🦈 shark Time
+        value: o-shark-d
+      - label: 🌑 solarized
+        value: o-solar-dt
+      - label: 🧰 gruvbox
+        value: o-gruvbox-dt
+      - label: 🧛‍♀️ dracula
+        value: o-dracula-dt
+      - label: 🧠 linking your thinking
+        value: o-lyt-dt
+      - label: 🔪 abaddon
+        value: o-end-d
+      - label: 💻 nano
+        value: o-hack-d
+
+  - id: o-list-distinct
+    title: top level lists
+    description: enable list header demarking 🚨 does not work in reading mode
+    type: class-toggle
+
+  - id: o-border
+    title: border style
+    type: variable-select
+    allowEmpty: false
+    default: "--bb-border-dashed"
+    options:
+      - label: dashed
+        value: "var(--bb-border-dashed)"
+      - label: solid
+        value: "var(--bb-border)"
+      - label: none
+        value: "none"
+
+  - id: o-typography
+    title: 📑 typography
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: o-bold-italic
+    title: change bold-italic to accent color
+    type: class-toggle
+
+  - id: o-justify
+    title: justify text
+    type: class-toggle
+
+  - id: o-headings
+    title: ⌨️ heading settings
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: o-colorful-headings
+    title: rainbow headers
+    type: class-toggle
+
+  - id: o-header-size
+    title: header size arrays
+    type: class-select
+    allowempty: false
+    default: o-headings-origami
+    options:
+      - label: origami
+        value: o-headings-origami
+      - label: origami small
+        value: o-headings-origami-smaller
+      - label: opinionated
+        value: o-headings-opinionated
+      - label: descending
+        value: o-headings-descending
+      - label: flat
+        value: o-headings-flat
+      - label: fabulous
+        value: o-headings-fabulous
+
+  - id: o-header-line-accent
+    title: header underline color
+    type: class-select
+    allowempty: false
+    default: o-mono-headers-body
+    options:
+      - label: monochrome
+        value: o-mono-headers-body
+      - label: accent
+        value: o-accent-headers-body
+      - label: rainbow
+        value: o-rainbow-headers-body
+  - id: o-header-line-h1
+    title: header 1 underline
+    type: class-toggle
+  - id: o-header-line-h2
+    title: header 2 underline
+    type: class-toggle
+  - id: o-header-line-h3
+    title: header 3 underline
+    type: class-toggle
+  - id: o-header-line-h4
+    title: header 4 underline
+    type: class-toggle
+  - id: o-header-line-h5
+    title: header 5 underline
+    type: class-toggle
+  - id: o-header-line-h6
+    title: header 6 underline
+    type: class-toggle
+
+  - id: o-special-features
+    title: 🧪 special features
+    description: option toggles, experimental features, wip testbed
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: o-frontmatter
+    title: frontmatter card
+    type: class-toggle
+
+  - id: o-header-lapel
+    title: header lapels
+    description: Add numbered tags to each header gutter
+    type: class-toggle
+
+  - id: o-plugins
+    title: ⬇️ plugins
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: o-kanban-wrap
+    title: wrap kanban lanes
+    type: class-toggle
+
+  - id: o-kanban-style
+    title: kanban Style
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: border
+        value: o-kanban-border
+      - label: notion-inspired
+        value: o-kanban-notion

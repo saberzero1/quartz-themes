@@ -1,0 +1,2060 @@
+name: MagicUser Theme
+id: magicuser-theme-for-obsidian
+settings:
+  - id: magicuser-theme-presets
+    title: Preset Themes
+    type: heading
+    description: MagicUser preset themes
+    level: 2
+    collapsed: true
+  - id: mu-presets-themes
+    title: Preset themes
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: MagicUser
+        value: none
+      - label: MagicUser Room Lamp
+        value: magicuser-room-lamp-theme
+      - label: MagicUser Purple
+        value: magicuser-purple-theme
+      - label: MagicUser Teal
+        value: magicuser-teal-theme
+      - label: MagicUser Camouflage
+        value: magicuser-camouflage-theme
+      - label: MagicUser Gray
+        value: magicuser-gray-theme
+      - label: MagicUser Moon
+        value: magicuser-moon-theme
+      - label: MagicUser Teacher
+        value: magicuser-teacher-theme
+      - label: MagicUser Creativity
+        value: magicuser-creativity-theme
+      - label: MagicUser Concentration
+        value: magicuser-concentration-theme
+      - label: MagicUser Stealth
+        value: magicuser-stealth-theme
+      - label: MagicUser Chroma Amulet
+        value: magicuser-chroma-amulet-theme
+      - label: MagicUser Accent
+        value: magicuser-accent-theme
+      - label: MagicUser BG Night
+        value: magicuser-bg-night-theme
+      - label: MagicUser BG Synth
+        value: magicuser-bg-synth-theme
+      - label: MagicUser BG Dreams
+        value: magicuser-bg-dreams-theme
+      - label: MagicUser BG Slide
+        value: magicuser-bg-slide-theme
+      - label: MagicUser BG Classic
+        value: magicuser-bg-classic-theme
+      - label: MagicUser BG Sunset
+        value: magicuser-bg-sunset-theme
+      - label: MagicUser BG North Pole
+        value: magicuser-bg-north-pole-theme
+      - label: MagicUser BG Old School
+        value: magicuser-bg-old-school-theme
+  - id: mu-cards-interface
+    title: Cards UI
+    description: Activate cards user interface
+    type: class-toggle
+    addCommand: true
+  - id: mu-amulet-hue
+    title: Preset Chroma Amulet - color
+    description: MagicUser Chroma Amulet theme - select color
+    type: variable-number-slider
+    default: 224
+    min: 0
+    max: 360
+    step: 1
+  - id: mu-amulet-sat-value
+    title: Preset Chroma Amulet - saturation
+    description: MagicUser Chroma Amulet theme - select saturation
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+  - id: mu-bg-image-overlay
+    title: Preset BG themes (dark mode) - darken background
+    description: MagicUser BG themes (dark mode) - darken background
+    type: variable-number-slider
+    default: 0.0
+    min: 0.0
+    max: 0.90
+    step: .05
+  - id: mu-o-ui-sidebars
+    title: Outline UI - sidebars
+    description: Add borders to left and right sidebars
+    type: class-toggle
+  - id: mu-o-ui-icons
+    title: Outline UI - active icons
+    description: Add borders to active icons and elements
+    type: class-toggle
+  - id: mu-o-ui-border
+    title: Outline UI - border color
+    type: variable-themed-color
+    description: Select border color of outline UI elements
+    format: hex
+    opacity: true
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: magicuser-theme-ui
+    title: User Interface (UI)
+    type: heading
+    description: Background colors, caret and other settings
+    level: 2
+    collapsed: true
+  - id: magicuser-theme-main-colors
+    title: Main Theme Colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-titlebar-background
+    title: Frame color
+    type: variable-themed-color
+    description: Theme frame color
+    format: hex
+    opacity: false
+    default-light: "#003388"
+    default-dark: "#003388"
+  - id: mu-background-color-1
+    title: Primary background color
+    type: variable-themed-color
+    description: Main editor theme background color
+    format: hex
+    opacity: false
+    default-light: "#e8efff"
+    default-dark: "#002248"
+  - id: mu-background-color-2
+    title: Secondary background color
+    type: variable-themed-color
+    description: Secondary theme background color
+    format: hex
+    opacity: false
+    default-light: "#d1dfff"
+    default-dark: "#001122"
+  - id: background-modifier-hover
+    title: Hover menu items and hover icons background color
+    type: variable-themed-color
+    description: Select the background color of hover menu items and icons
+    format: hex
+    opacity: true
+    default-light: "#007fff28"
+    default-dark: "#007fff28"
+  - id: nav-item-background-active
+    title: Active item background color
+    type: variable-themed-color
+    description: Select active item background color
+    format: hex
+    opacity: true
+    default-light: "#007fff28"
+    default-dark: "#007fff28"
+  - id: nav-item-color-active
+    title: Active item foreground color
+    type: variable-themed-color
+    description: Select active item foreground color
+    format: hex
+    opacity: true
+    default-light: "#007fff28"
+    default-dark: "#007fff28"
+  - id: mu-caret-color
+    title: Caret color
+    type: variable-themed-color
+    description: Caret / text cursor color
+    format: hex
+    opacity: false
+    default-light: "#cf00ff"
+    default-dark: "#00cfff"
+  - id: magicuser-theme-vault-title
+    title: Vault Title and Inline Title
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-vault-title
+    title: Vault title color
+    type: variable-themed-color
+    description: Sidebar vault title color
+    format: hex
+    opacity: false
+    default-light: "#a300cf"
+    default-dark: "#a273d8"
+  - id: mu-text-title
+    title: Inline title color
+    type: variable-themed-color
+    description: Filename inline title color
+    format: hex
+    opacity: false
+    default-light: "#a300cf"
+    default-dark: "#af47eb"
+  - id: mu-inline-title-font-size-value
+    title: Inline title font size
+    description: Filename inline title font size
+    type: variable-number-slider
+    default: 0.88
+    min: 0.6
+    max: 2
+    step: 0.01
+  - id: magicuser-theme-blockquote
+    title: Blockquote
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-blockquote-background
+    title: Blockquote background color
+    type: variable-themed-color
+    description: Select blockquote background color
+    format: hex
+    opacity: true
+    default-light: "#cfcfcf88"
+    default-dark: "#cfcfcf20"
+  - id: mu-blockquote-border
+    title: Blockquote border color
+    type: variable-themed-color
+    description: Select blockquote left border color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-outline-blockquote
+    title: Outline blockquote border
+    description: Turn on outline blockquote border
+    type: class-toggle
+  - id: magicuser-theme-lists
+    title: Lists
+    type: heading
+    level: 4
+    collapsed: true
+  - id: list-marker-color
+    title: Lists color
+    type: variable-themed-color
+    description: Ordered and unordered lists color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: list-marker-color-collapsed
+    title: Lists collapsed color
+    type: variable-themed-color
+    description: Ordered and unordered lists collapsed color
+    format: hex
+    opacity: false
+    default-light: "#f100f1"
+    default-dark: "#f100f1"
+  - id: magicuser-theme-hr
+    title: Horizontal Rule and Dividers
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-hr-color
+    title: Horizontal rule color
+    type: variable-themed-color
+    description: Select horizontal rule color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: mu-file-header-border-color
+    title: File header border color
+    type: variable-themed-color
+    description: Select file header border color
+    format: hex
+    opacity: true
+    default-light: "#007fff20"
+    default-dark: "#007fff20"
+  - id: mu-file-header-border-value
+    title: File header border width
+    description: Set file header border width (0 = no border)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 5
+    step: 1
+  - id: mu-divider-color
+    title: Divider color
+    type: variable-themed-color
+    description: Select panel divider color
+    format: hex
+    opacity: false
+    default-light: "#007fff10"
+    default-dark: "#007fff10"
+  - id: mu-divider-width-value
+    title: Divider width
+    description: Set the divider width (0 =  no divider)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 8
+    step: 1
+  - id: mu-divider-color-hover
+    title: Divider hover color
+    type: variable-themed-color
+    description: Panel divider hover color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-divider-hover-width-value
+    title: Divider hover width
+    description: Set the divider hover width (0 =  no divider)
+    type: variable-number-slider
+    default: 3
+    min: 0
+    max: 8
+    step: 1
+  - id: mu-menu-separator-color
+    title: Menu and settings separators color
+    type: variable-themed-color
+    description: Color of menu and settings separators
+    format: hex
+    opacity: true
+    default-light: "#0072d322"
+    default-dark: "#0072d322"
+  - id: magicuser-theme-frontmatter
+    title: Frontmatter Properties
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-properties-container-color
+    title: Frontmatter properties container background color
+    type: variable-themed-color
+    description: Frontmatter properties container background color
+    format: hex
+    opacity: true
+    default-light: "#007fff10"
+    default-dark: "#007fff10"
+  - id: mu-property-title-color
+    title: Frontmatter properties title color
+    type: variable-themed-color
+    description: Frontmatter properties title color (top container title)
+    format: hex
+    opacity: true
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: mu-property-color
+    title: Frontmatter property name color
+    type: variable-themed-color
+    description: Frontmatter property name color
+    format: hex
+    opacity: true
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: magicuser-theme-folders-icons
+    title: Icons, Folders and Sidebars
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-automatic-rainbow-folders
+    title: Automatic rainbow colored folders
+    description: Automatic rainbow colored folders and subfolders
+    type: class-toggle
+    addCommand: true
+  - id: mu-automatic-folder-name-rainbow-colors
+    title: Automatic rainbow-colored folder names and icons
+    description: Automatic rainbow colors for folder/subfolder names and icons
+    type: class-toggle
+    addCommand: true
+  - id: mu-rainbow-hue-start-value
+    title: Initial color for automatic rainbow folders
+    description: Select the initial color (0 =  red color)
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 360
+    step: 30
+  - id: mu-rainbow-folders
+    title: Numbered rainbow colored folders
+    description: Special rainbow colored folders (001-,01- to 008-,08-)
+    type: class-toggle
+    addCommand: true
+  - id: mu-hide-folders
+    title: Hide folder icons
+    description: Toggle folder icons
+    type: class-toggle
+    addCommand: true
+  - id: mu-hide-file-icons
+    title: Hide file icons
+    description: Toggle file icons
+    type: class-toggle
+    addCommand: true
+  - id: mu-hide-tabs-icons
+    title: Hide tabs icons
+    description: Toggle tab icons in normal and stacked tabs
+    type: class-toggle
+  - id: mu-folder-text-color
+    title: Folder name color
+    type: variable-themed-color
+    description: Folder text color
+    format: hex
+    opacity: false
+    default-light: "#0048a3"
+    default-dark: "#72a3ff"
+  - id: mu-closed-folders-design-style
+    title: Closed folder icon
+    type: class-select
+    description: Select closed folder icon
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default
+        value: none
+      - label: Unfilled folder
+        value: mu-folder-icon-closed-unfilled
+      - label: Closed folder 2
+        value: mu-folder-icon-closed-op3
+  - id: mu-folder-icon-color
+    title: Closed folder icon color
+    type: variable-themed-color
+    description: Closed folder icon color
+    format: hex
+    opacity: false
+    default-light: "#0048a3"
+    default-dark: "#0048a3"
+  - id: mu-opened-folders-design-style
+    title: Opened folder icon
+    type: class-select
+    description: Select opened folder icon
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default
+        value: none
+      - label: Unfilled folder
+        value: mu-folder-icon-opened-unfilled
+      - label: Traditional
+        value: mu-folder-icon-opened-op3
+  - id: mu-folder-icon-color-active
+    title: Opened folder icon color
+    type: variable-themed-color
+    description: Opened folder icon color
+    format: hex
+    opacity: false
+    default-light: "#00a3ff"
+    default-dark: "#00a3ff"
+  - id: mu-file-icon-color
+    title: File icon color
+    type: variable-themed-color
+    description: File icon color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: mu-disable-folder-style
+    title: Disable sidebar files and folders styles
+    description: Activate this option to use plugins for coloring files and folders
+    type: class-toggle
+  - id: magicuser-theme-ui-icons
+    title: UI Icons
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-icon
+    title: Icon color
+    type: variable-themed-color
+    description: Select icon color
+    format: hex
+    opacity: false
+    default-light: "#5382d3"
+    default-dark: "#5382d3"
+  - id: mu-icon-hover
+    title: Icon hover color
+    type: variable-themed-color
+    description: Select icon hover color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-icon-active
+    title: Icon active color
+    type: variable-themed-color
+    description: Select icon active color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-icon-focused
+    title: Icon focused color
+    type: variable-themed-color
+    description: Current focused icon color
+    format: hex
+    opacity: false
+    default-light: "#00a3ff"
+    default-dark: "#00a3ff"
+  - id: mu-icon-statusbar-menu
+    title: Icon color - status bar and menus
+    type: variable-themed-color
+    description: Select icon color (status bar and menus)
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: search-icon-color
+    title: Search icon color
+    type: variable-themed-color
+    description: Select search icon color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-bookmarked-note-icon-bg
+    title: Bookmarked note icon background color
+    type: variable-themed-color
+    description: Set bookmarked note icon background color
+    format: hex
+    opacity: true
+    default-light: "#007fff30"
+    default-dark: "#007fff40"
+  - id: magicuser-theme-sidebar
+    title: Sidebars
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-sidebar-dark
+    title: Dark sidebar (light mode)
+    description: Turn on dark sidebar (light mode - normal UI)
+    type: class-toggle
+  - id: mu-sidebar-top-buttons-container-bg-color
+    title: Sidebar top buttons container background color
+    type: variable-themed-color
+    description: Select sidebar top buttons container background color
+    format: hex
+    opacity: false
+    default-light: "#d1dfff"
+    default-dark: "#001122"
+  - id: mu-sidebar-bottom-vault-profile-bg-color
+    title: Sidebar vault profile background color
+    type: variable-themed-color
+    description: Select sidebar vault profile background color (bottom container)
+    format: hex
+    opacity: false
+    default-light: "#d1dfff"
+    default-dark: "#001122"
+  - id: mu-suggestion-search-panel-bg-color
+    title: Sidebar search panel background color
+    type: variable-themed-color
+    description: Select sidebar search/suggestions panel background color
+    format: hex
+    opacity: false
+    default-light: "#d1dfff"
+    default-dark: "#001122"
+  - id: mu-folder-area-border
+    title: Sidebar open folder area border
+    type: variable-themed-color
+    description: Open folder area border color
+    format: hex
+    opacity: true
+    default-light: "#007fff30"
+    default-dark: "#007fff30"
+  - id: mu-folder-area-background
+    title: Sidebar open folder area background
+    type: variable-themed-color
+    description: Open folder area background color
+    format: hex
+    opacity: true
+    default-light: "#007fff10"
+    default-dark: "#007fff10"
+  - id: mu-hide-folder-open-area
+    title: Hide sidebar open folder area
+    description: Hide sidebar open folder area
+    type: class-toggle
+  - id: mu-sidebar-pane-numbers
+    title: Sidebar numbers color
+    type: variable-themed-color
+    description: Tags count, search results and other sidebar numbers color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: magicuser-theme-breadcrumb
+    title: Breadcrumb
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-slanted-breadcrumb
+    title: Slanted breadcrumb layout
+    description: Slanted breadcrumb (view header breadcrumb)
+    type: class-toggle
+  - id: magicuser-theme-collapse-icons
+    title: Collapse Icons
+    type: heading
+    level: 4
+    collapsed: true
+  - id: nav-collapse-icon-color
+    title: Sidebars collapse icon color
+    type: variable-themed-color
+    description: Sidebars collapse icon color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: mu-collapse-icon-size
+    title: Editor - collapse icon size
+    description: Editor collapse icon size (live preview, source and reading modes)
+    type: variable-number-slider
+    default: 1.2
+    min: 0.8
+    max: 2
+    step: 0.1
+  - id: collapse-icon-color
+    title: Editor - collapse icon color
+    type: variable-themed-color
+    description: Editor collapse icon color (live preview, source and reading modes)
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: collapse-icon-color-collapsed
+    title: Editor - collapse icon color collapsed
+    type: variable-themed-color
+    description: Editor collapse icon color collapsed (live preview, source and reading modes)
+    format: hex
+    opacity: false
+    default-light: "#d300ff"
+    default-dark: "#d300ff"
+  - id: magicuser-theme-indent-guides-color
+    title: Indent Guides
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-hide-indent-guides
+    title: Hide indent guides
+    description: Hide indent guides
+    type: class-toggle
+  - id: mu-indent-color-level-1
+    title: Indent guide - color 1
+    type: variable-themed-color
+    description: Indent guide color 1
+    format: hex
+    opacity: true
+    default-light: "#007fff7f"
+    default-dark: "#007fff7f"
+  - id: mu-indent-color-level-2
+    title: Indent guide - color 2
+    type: variable-themed-color
+    description: Indent guide color 2
+    format: hex
+    opacity: true
+    default-light: "#d372ff7f"
+    default-dark: "#d372ff7f"
+  - id: mu-indent-color-level-3
+    title: Indent guide - color 3
+    type: variable-themed-color
+    description: Indent guide color 3
+    format: hex
+    opacity: true
+    default-light: "#ff7f007f"
+    default-dark: "#ff7f007f"
+  - id: mu-indent-color-level-4
+    title: Indent guide - color 4
+    type: variable-themed-color
+    description: Indent guide color 4
+    format: hex
+    opacity: true
+    default-light: "#00a3487f"
+    default-dark: "#00a3487f"
+  - id: mu-indent-color-level-5
+    title: Indent guide - color 5
+    type: variable-themed-color
+    description: Indent guide color 5
+    format: hex
+    opacity: true
+    default-light: "#e500007f"
+    default-dark: "#e500007f"
+  - id: mu-indent-color-level-6
+    title: Indent guide - color 6
+    type: variable-themed-color
+    description: Indent guide color 6
+    format: hex
+    opacity: true
+    default-light: "#9797007f"
+    default-dark: "#9797007f"
+  - id: magicuser-theme-line-highlight
+    title: Line Highlight
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-line-highlight-border
+    title: Line highlight border color
+    type: class-select
+    description: Border color of the active line
+    allowEmpty: false
+    default: line-highlight-border-default
+    options:
+      - label: No border
+        value: line-highlight-border-default
+      - label: Blue border
+        value: line-highlight-border-blue
+      - label: Green border
+        value: line-highlight-border-green
+      - label: Orange border
+        value: line-highlight-border-orange
+      - label: Yellow border
+        value: line-highlight-border-yellow
+      - label: Red border
+        value: line-highlight-border-red
+      - label: Purple border
+        value: line-highlight-border-purple
+      - label: Pink border
+        value: line-highlight-border-pink
+      - label: Gray border
+        value: line-highlight-border-gray
+  - id: mu-line-highlight-background
+    title: Line highlight background color
+    type: class-select
+    description: Background color of the active line
+    allowEmpty: false
+    default: line-highlight-background-default
+    options:
+      - label: No background
+        value: line-highlight-background-default
+      - label: Blue background
+        value: line-highlight-background-blue
+      - label: Green background
+        value: line-highlight-background-green
+      - label: Orange background
+        value: line-highlight-background-orange
+      - label: Yellow background
+        value: line-highlight-background-yellow
+      - label: Red background
+        value: line-highlight-background-red
+      - label: Purple background
+        value: line-highlight-background-purple
+      - label: Pink background
+        value: line-highlight-background-pink
+      - label: Gray background
+        value: line-highlight-background-gray
+  - id: mu-active-line-zoom
+    title: MagicUser active line zoom
+    description: Turn on active line zoom (live preview, source and reading modes)
+    type: class-toggle
+    addCommand: true
+  - id: magicuser-theme-hover-underline
+    title: Hover Underline
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-hover-underline
+    title: Hover underline
+    description: Turn on hover underline (live preview, source and reading modes)
+    type: class-toggle
+    addCommand: true
+  - id: mu-hover-underline-style
+    title: Hover underline style
+    type: class-select
+    description: Select hover underline style
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default
+        value: none
+      - label: Dashed
+        value: mu-hover-underline-style-dashed
+      - label: Dotted
+        value: mu-hover-underline-style-dotted
+      - label: Double
+        value: mu-hover-underline-style-double
+  - id: mu-hover-underline-color
+    title: Hover underline color
+    type: variable-themed-color
+    description: Select hover underline color
+    format: hex
+    opacity: true
+    default-light: "#ff0000cf"
+    default-dark: "#ff0000cf"
+  - id: mu-hover-underline-thickness-value
+    title: Hover underline thickness
+    description: Select hover underline thickness
+    type: variable-number-slider
+    default: 2
+    min: 1
+    max: 5
+    step: 1
+  - id: mu-hover-underline-offset-value
+    title: Gap between text and hover underline
+    description: Select the gap between text and hover underline
+    type: variable-number-slider
+    default: 2
+    min: 0
+    max: 5
+    step: 1
+  - id: magicuser-theme-laser
+    title: Laser
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-laser-active
+    title: MagicUser laser
+    description: Turn on MagicUser laser
+    type: class-toggle
+    addCommand: true
+  - id: mu-laser-type
+    title: Laser focus type
+    type: class-select
+    description: Select laser focus type
+    allowEmpty: false
+    default: mu-laser-type-line
+    options:
+      - label: Line
+        value: mu-laser-type-line
+      - label: Area
+        value: mu-laser-type-area
+  - id: mu-laser-intensity
+    title: Laser intensity
+    description: Adjust the laser intensity
+    type: variable-number-slider
+    default: 1.5
+    min: 0.5
+    max: 3.0
+    step: 0.1
+  - id: mu-laser-color
+    title: Laser color
+    type: class-select
+    description: Select laser color
+    allowEmpty: false
+    default: mu-laser-blue
+    options:
+      - label: Blue laser
+        value: mu-laser-blue
+      - label: Green laser
+        value: mu-laser-green
+      - label: Orange laser
+        value: mu-laser-orange
+      - label: Yellow laser
+        value: mu-laser-yellow
+      - label: Red laser
+        value: mu-laser-red
+      - label: Purple laser
+        value: mu-laser-purple
+      - label: Pink laser
+        value: mu-laser-pink
+  - id: mu-laser-area-value
+    title: Laser area size
+    description: Adjust the laser area size
+    type: variable-number-slider
+    default: 82
+    min: 1
+    max: 300
+    step: 1
+  - id: mu-laser-top-value
+    title: Laser position
+    description: Adjust the laser vertical position
+    type: variable-number-slider
+    default: 50
+    min: 10
+    max: 90
+    step: 1
+  - id: magicuser-theme-graph
+    title: Graph
+    type: heading
+    level: 3
+    collapsed: true
+  - id: graph-node
+    title: Graph node color
+    type: variable-themed-color
+    description: Graph node color
+    format: hex
+    opacity: false
+    default-light: "#d372ff"
+    default-dark: "#d372ff"
+  - id: graph-node-focused
+    title: Graph node focused color
+    type: variable-themed-color
+    description: Graph node focused color
+    format: hex
+    opacity: false
+    default-light: "#0048a3"
+    default-dark: "#00cfff"
+  - id: graph-node-unresolved
+    title: Graph node unresolved color
+    type: variable-themed-color
+    description: Graph node unresolved color
+    format: hex
+    opacity: false
+    default-light: "#a3a3a3"
+    default-dark: "#a3a3a3"
+  - id: graph-text
+    title: Graph text color
+    type: variable-themed-color
+    description: Graph text color
+    format: hex
+    opacity: false
+    default-light: "#000"
+    default-dark: "#f1f1f1"
+  - id: graph-line
+    title: Graph line color
+    type: variable-themed-color
+    description: Graph line color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: graph-node-attachment
+    title: Graph node attachment color
+    type: variable-themed-color
+    description: Graph node attachment color
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: graph-node-tag
+    title: Graph node tag color
+    type: variable-themed-color
+    description: Graph node tag color
+    format: hex
+    opacity: false
+    default-light: "#20cf20"
+    default-dark: "#20f120"
+  - id: magicuser-theme-tables-options
+    title: Tables
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-presets-tables
+    title: Preset tables
+    description: Set table layout
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default table
+        value: none
+      - label: Preset table1
+        value: table1
+      - label: Preset table2
+        value: table2
+      - label: Preset table3
+        value: table3
+      - label: Preset table4
+        value: table4
+      - label: Preset table5
+        value: table5
+      - label: Preset table6
+        value: table6
+      - label: Preset plain data
+        value: plain-data
+      - label: Preset numbered table
+        value: num-table
+  - id: table-text-color
+    title: Table body text foreground color
+    type: variable-themed-color
+    description: Set a color of the text within table body
+    format: hex
+    opacity: true
+    default-light: "#000000"
+    default-dark: "#f1f1f1"
+  - id: mu-table-th-foreground-main
+    title: Table header foreground color
+    type: variable-themed-color
+    description: Foreground color of the table header (th)
+    format: hex
+    opacity: true
+    default-light: "#e1e1e1"
+    default-dark: "#e1e1e1"
+  - id: mu-table-th-background
+    title: Table header background color
+    type: variable-themed-color
+    description: Background color of the table header (th)
+    format: hex
+    opacity: true
+    default-light: "#004882"
+    default-dark: "#004882"
+  - id: mu-table-color-2
+    title: Table row background color (odd)
+    type: variable-themed-color
+    description: Background color of the table rows (odd)
+    format: hex
+    opacity: true
+    default-light: "#a3a3a348"
+    default-dark: "#a3a3a348"
+  - id: mu-table-color-1
+    title: Table row background color (even)
+    type: variable-themed-color
+    description: Background color of the table rows (even)
+    format: hex
+    opacity: true
+    default-light: "#a3a3a328"
+    default-dark: "#a3a3a328"
+  - id: mu-table-row-hover
+    title: Table row hover background color
+    type: variable-themed-color
+    description: Background color of the table row hover
+    format: hex
+    opacity: true
+    default-light: "#0088ff33"
+    default-dark: "#0088ff33"
+  - id: mu-table-outer-border-width-value
+    title: Outer table border width
+    description: Outer table border width (0 = no outer border)
+    type: variable-number-slider
+    default: 2
+    min: 0
+    max: 5
+    step: 1
+  - id: mu-table-inner-border-width-value
+    title: Inner table borders width
+    description: Inner table borders width (0 = no inner borders)
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 5
+    step: 1
+  - id: mu-disable-tr-hover
+    title: Disable table row hover
+    description: Disable table row hover background change
+    type: class-toggle
+  - id: mu-column-stripped-background
+    title: Column stripped tables - column background color (even)
+    type: variable-themed-color
+    description: Background color of the even columns (table1 and table6 presets)
+    format: hex
+    opacity: true
+    default-light: "#00000011"
+    default-dark: "#00000082"
+  - id: mu-num-table-bg-col
+    title: Preset numbered table - column number
+    type: variable-themed-color
+    description: Background color of the column number (preset numbered table)
+    format: hex
+    opacity: true
+    default-light: "#00000082"
+    default-dark: "#00000082"
+  - id: mu-num-table-bg-row
+    title: Preset numbered table - row number
+    type: variable-themed-color
+    description: Background color of the row number (preset numbered table)
+    format: hex
+    opacity: true
+    default-light: "#00000022"
+    default-dark: "#00000022"
+  - id: magicuser-theme-tabs-options
+    title: Tabs
+    type: heading
+    level: 3
+    collapsed: true
+  - id: tab-text-color-focused-active-current
+    title: Active tab foreground color
+    type: variable-themed-color
+    description: Foreground color of the active tab (default and stacked tabs modes)
+    format: hex
+    opacity: false
+    default-light: "#000000"
+    default-dark: "#f1f1f1"
+  - id: mu-tabs-style
+    title: Tabs style
+    type: class-select
+    description: Select tabs style
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default tabs
+        value: none
+      - label: Square tabs
+        value: mu-tabs-square
+      - label: Pill tabs
+        value: mu-tabs-pill
+  - id: mu-default-mode-border-color
+    title: Default tabs mode - active tab border color
+    type: variable-themed-color
+    description: Default tabs mode - border color of active tab
+    format: hex
+    opacity: false
+    default-light: "#0088ff"
+    default-dark: "#0088ff"
+  - id: mu-default-mode-border-value
+    title: Default tabs mode - active tab border width
+    description: Default tabs mode - border width of active tab
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 2
+    step: 1
+  - id: mu-stacked-mode-border-color
+    title: Stacked tabs mode - active tab border color
+    type: variable-themed-color
+    description: Stacked tabs mode - border color of active tab
+    format: hex
+    opacity: false
+    default-light: "#0088ff"
+    default-dark: "#0088ff"
+  - id: mu-stacked-mode-border-value
+    title: Stacked tabs mode - active tab border width
+    description: Stacked tabs mode - border width of active tab
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 5
+    step: 1
+  - id: magicuser-theme-tags-options
+    title: Tags
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-tags-colored
+    title: Colored tags
+    description: Toggle colored tags
+    type: class-toggle
+    addCommand: true
+  - id: tag-radius-value
+    title: Tags shape
+    description: Set tags shape (0 = square tags)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 1
+    step: 0.1
+  - id: mu-tags-hashtag-padding-value
+    title: Spacing between the text and the hashtag
+    description: Set the spacing between hashtag(#) and tag text - live preview and source modes
+    type: variable-number-slider
+    default: 2
+    min: 0
+    max: 12
+    step: 0.5
+  - id: mu-tags-hide-hashtag
+    title: Hide hashtags (#)
+    description: Hide hashtags - live preview and source modes
+    type: class-toggle
+  - id: tag-color
+    title: Tags text color
+    type: variable-themed-color
+    description: Select tags text foreground color
+    format: hex
+    opacity: false
+    default-light: "#8b6cef"
+    default-dark: "#8b6cef"
+  - id: tag-color-hover
+    title: Tags text hover color
+    type: variable-themed-color
+    description: Select tags text foreground hover color
+    format: hex
+    opacity: false
+    default-light: "#a994f3"
+    default-dark: "#a994f3"
+  - id: tag-background
+    title: Tags background color
+    type: variable-themed-color
+    description: Select tags background color
+    format: hex
+    opacity: true
+    default-light: "#8b6cef82"
+    default-dark: "#8b6cef82"
+  - id: tag-background-hover
+    title: Tags background hover color
+    type: variable-themed-color
+    description: Select tags background hover color
+    format: hex
+    opacity: true
+    default-light: "#a994f382"
+    default-dark: "#a994f382"
+  - id: tag-border-color
+    title: Tags border color
+    type: variable-themed-color
+    description: Select tags border color
+    format: hex
+    opacity: true
+    default-light: "#0072d33f"
+    default-dark: "#0072d33f"
+  - id: tag-border-color-hover
+    title: Tags border hover color
+    type: variable-themed-color
+    description: Select tags border hover color
+    format: hex
+    opacity: true
+    default-light: "#00bfff"
+    default-dark: "#00bfff"
+  - id: magicuser-theme-reading-mode-options
+    title: Reading Mode
+    type: heading
+    level: 3
+    collapsed: true
+  - id: magicuser-theme-reading-glow
+    title: Reading Glow
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-reading-glow
+    title: Reading glow color
+    type: class-select
+    description: Reading glow color
+    allowEmpty: false
+    default: reading-glow-blue
+    options:
+      - label: Blue glow
+        value: reading-glow-blue
+      - label: Green glow
+        value: reading-glow-green
+      - label: Orange glow
+        value: reading-glow-orange
+      - label: Yellow glow
+        value: reading-glow-yellow
+      - label: Red glow
+        value: reading-glow-red
+      - label: Pink glow
+        value: reading-glow-pink
+      - label: Purple glow
+        value: reading-glow-purple
+  - id: mu-reading-glow-border-size-value
+    title: Reading glow border size
+    description: Reading glow border size (0 = glow only)
+    type: variable-number-slider
+    default: 3
+    min: 0
+    max: 8
+    step: 1
+  - id: mu-reading-glow-radius-value
+    title: Reading glow corners
+    description: Reading glow corners (0 = square corners)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 2
+    step: 0.5
+  - id: mu-reading-glow-status-off
+    title: Turn off reading glow
+    description: Turn off the reading glow effect
+    type: class-toggle
+    addCommand: true
+  - id: magicuser-theme-reading-indicator
+    title: Reading Indicator and Labels
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-reading-indicator-color
+    title: Reading indicator color
+    type: variable-themed-color
+    description: Color of the reading indicator
+    format: hex
+    opacity: true
+    default-light: "#007fffa3"
+    default-dark: "#007fffa3"
+  - id: mu-reading-indicator-width-value-rem
+    title: Reading indicator width
+    description: Select reading indicator width (0 = no indicator)
+    type: variable-number-slider
+    default: 0.3
+    min: 0
+    max: 1
+    step: 0.05
+  - id: mu-hide-reading-indicator
+    title: Hide reading indicator
+    description: Hide reading indicator
+    type: class-toggle
+  - id: mu-hide-heading-labels
+    title: Hide headings labels
+    description: Hide headings labels
+    type: class-toggle
+  - id: mu-label-h1
+    title: H1 label color
+    type: variable-themed-color
+    description: Reading mode - H1 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: mu-label-h2
+    title: H2 label color
+    type: variable-themed-color
+    description: Reading mode - H2 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: mu-label-h3
+    title: H3 label color
+    type: variable-themed-color
+    description: Reading mode - H3 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: mu-label-h4
+    title: H4 label color
+    type: variable-themed-color
+    description: Reading mode - H4 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: mu-label-h5
+    title: H5 label color
+    type: variable-themed-color
+    description: Reading mode - H5 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: mu-label-h6
+    title: H6 label color
+    type: variable-themed-color
+    description: Reading mode - H6 label color
+    format: hex
+    opacity: false
+    default-light: "#bf72d8"
+    default-dark: "#a35fbf"
+  - id: magicuser-theme-modals
+    title: Modals and Prompts
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-new-window-border-color
+    title: New window border color
+    type: variable-themed-color
+    description: Select the border color for content opened in a new window
+    format: hex
+    opacity: false
+    default-light: "#007fff"
+    default-dark: "#007fff"
+  - id: mu-new-window-border-value
+    title: New window border width
+    description: Select the border width for content opened in a new window (0 = no border)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 5
+    step: 1
+  - id: modal-border-color
+    title: Modals and prompts border color
+    type: variable-themed-color
+    description: Select modals border color
+    format: hex
+    opacity: true
+    default-light: "#007fff30"
+    default-dark: "#007fff30"
+  - id: mu-border-width-value
+    title: Modals and prompts border width
+    description: Set modals border width (0 =  no border)
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 8
+    step: 1
+  - id: mu-transparent-prompts-menus
+    title: Transparent menus, modals and prompts
+    description: Activate transparency (menus, modals and prompts)
+    type: class-toggle
+    addCommand: true
+  - id: mu-transparency-menus-level
+    title: Transparency level
+    description: Adjust the opacity (transparent menus, modals and prompts)
+    type: variable-number-slider
+    default: 0.5
+    min: 0.1
+    max: 1
+    step: 0.05
+  - id: mu-transparency-blur-level-value
+    title: Transparent elements - blur level
+    description: Adjust the blur level of transparent menus, modals and prompts
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: 1
+  - id: mu-compact-prompt
+    title: Compact prompts
+    description: Activate compact version of command palette and prompts
+    type: class-toggle
+    addCommand: true
+  - id: magicuser-theme-scrollbars
+    title: Scrollbars
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-scrollbar-width-value
+    title: Scrollbar width
+    description: Adjust the scrollbar width
+    type: variable-number-slider
+    default: 16
+    min: 8
+    max: 32
+    step: 2
+  - id: mu-scrollbar-track-bg
+    title: Scrollbar track color
+    type: variable-themed-color
+    description: Scrollbar track color
+    format: hex
+    opacity: true
+    default-light: "#ffffff00"
+    default-dark: "#00000000"
+  - id: mu-scrollbar-track-bg-hover
+    title: Scrollbar track hover color
+    type: variable-themed-color
+    description: Scrollbar track hover color
+    format: hex
+    opacity: true
+    default-light: "#82828221"
+    default-dark: "#00000021"
+  - id: mu-scrollbar-thumb-size-value
+    title: Scrollbar thumb size
+    description: Adjust the scrollbar thumb size
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 12
+    step: 2
+  - id: mu-scrollbar-thumb-bg
+    title: Scrollbar thumb color
+    type: variable-themed-color
+    description: Scrollbar thumb color
+    format: hex
+    opacity: true
+    default-light: "#48484822"
+    default-dark: "#84848422"
+  - id: mu-scrollbar-thumb-bg-hover
+    title: Scrollbar thumb hover color
+    type: variable-themed-color
+    description: Scrollbar thumb hover color
+    format: hex
+    opacity: true
+    default-light: "#48484848"
+    default-dark: "#84848448"
+  - id: magicuser-theme-ui-advanced
+    title: UI Advanced
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-warm-screen-mode
+    title: Warm screen mode
+    description: Adjust the intensity of the warm screen mode (0 = off)
+    type: variable-number-slider
+    default: 0.0
+    min: 0.0
+    max: 1.0
+    step: 0.01
+  - id: mu-distraction-free-mode
+    title: Distraction-free mode
+    description: Activate distraction-free mode
+    type: class-toggle
+    addCommand: true
+  - id: mu-total-concentration-mode
+    title: Total concentration mode
+    description: Activate total concentration mode
+    type: class-toggle
+    addCommand: true
+  - id: mu-file-line-width-value
+    title: File line width
+    description: Adjust file line width (note width)
+    type: variable-number-slider
+    default: 700
+    min: 500
+    max: 2560
+    step: 1
+  - id: magicuser-theme-hide-ui-elements
+    title: Hide UI Elements
+    type: heading
+    level: 4
+    collapsed: true
+  - id: mu-hide-vault-title
+    title: Hide vault name
+    description: Hide sidebar vault name (Obsidian < v1.6)
+    type: class-toggle
+  - id: mu-hide-nav-buttons-container
+    title: Hide sidebar buttons
+    description: Hide sidebar buttons (new note, new folder and others)
+    type: class-toggle
+  - id: mu-hide-view-header-nav-buttons
+    title: Hide tab navigation buttons
+    description: Hide tab navigation back and forward buttons
+    type: class-toggle
+  - id: mu-hide-titlebar-top-left-buttons
+    title: Auto hide title bar top left buttons
+    description: Auto hide title bar top left buttons
+    type: class-toggle
+  - id: mu-hide-side-dock-actions
+    title: Auto hide top ribbon buttons
+    description: Auto hide top ribbon buttons
+    type: class-toggle
+  - id: mu-hide-side-dock-settings
+    title: Auto hide bottom ribbon buttons
+    description: Auto hide bottom ribbon buttons (Obsidian < v1.6)
+    type: class-toggle
+  - id: mu-hide-inline-title
+    title: Auto hide inline title
+    description: Auto hide inline title
+    type: class-toggle
+  - id: mu-hide-status-bar
+    title: Auto hide status bar
+    description: Auto hide status bar
+    type: class-toggle
+  - id: magicuser-theme-headings
+    title: Headings H1-H6
+    type: heading
+    description: H1-H6 font, font sizes and colors
+    level: 2
+    collapsed: true
+  - id: mu-neon-mode
+    title: Neon mode
+    description: Activate headings neon mode (live preview, source and reading modes)
+    type: class-toggle
+    addCommand: true
+  - id: mu-outline-neon-mode
+    title: Outline neon mode
+    description: Activate headings outline neon mode (live preview, source and reading modes)
+    type: class-toggle
+    addCommand: true
+  - id: mu-neon-mode-glow-value
+    title: Neon modes - glow controller
+    description: Adjust the glow intensity of neon and outline neon modes
+    type: variable-number-slider
+    default: 0.5
+    min: 0.1
+    max: 1
+    step: 0.05
+  - id: mu-underline-headings
+    title: Underline headings
+    description: Activate underline headings H1-H6
+    type: class-toggle
+    addCommand: true
+  - id: magicuser-theme-normal-mode-headings
+    title: Headings Settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-font-headings
+    title: Global headings font (H1-H6)
+    type: variable-text
+    description: Font used in headings (H1-H6)
+    default: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
+  - id: h1-font
+    title: H1 font
+    type: variable-text
+    description: Font used in H1 headings
+    default: Inter, sans-serif
+  - id: h1-size
+    title: H1 font size
+    type: variable-text
+    description: Heading 1 font size
+    default: 2em
+  - id: h1-weight
+    title: H1 font weight
+    description: Heading 1 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h1
+    title: H1 color
+    type: variable-themed-color
+    description: Heading 1 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: h2-font
+    title: H2 font
+    type: variable-text
+    description: Font used in H2 headings
+    default: Inter, sans-serif
+  - id: h2-size
+    title: H2 font size
+    type: variable-text
+    description: Heading 2 font size
+    default: 1.5em
+  - id: h2-weight
+    title: H2 font weight
+    description: Heading 2 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h2
+    title: H2 color
+    type: variable-themed-color
+    description: Heading 2 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: h3-font
+    title: H3 font
+    type: variable-text
+    description: Font used in H3 headings
+    default: Inter, sans-serif
+  - id: h3-size
+    title: H3 font size
+    type: variable-text
+    description: Heading 3 font size
+    default: 1.17em
+  - id: h3-weight
+    title: H3 font weight
+    description: Heading 3 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h3
+    title: H3 color
+    type: variable-themed-color
+    description: Heading 3 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: h4-font
+    title: H4 font
+    type: variable-text
+    description: Font used in H4 headings
+    default: Inter, sans-serif
+  - id: h4-size
+    title: H4 font size
+    type: variable-text
+    description: Heading 4 font size
+    default: 1em
+  - id: h4-weight
+    title: H4 font weight
+    description: Heading 4 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h4
+    title: H4 color
+    type: variable-themed-color
+    description: Heading 4 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: h5-font
+    title: H5 font
+    type: variable-text
+    description: Font used in H5 headings
+    default: Inter, sans-serif
+  - id: h5-size
+    title: H5 font size
+    type: variable-text
+    description: Heading 5 font size
+    default: 0.83em
+  - id: h5-weight
+    title: H5 font weight
+    description: Heading 5 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h5
+    title: H5 color
+    type: variable-themed-color
+    description: Heading 5 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: h6-font
+    title: H6 font
+    type: variable-text
+    description: Font used in H6 headings
+    default: Inter, sans-serif
+  - id: h6-size
+    title: H6 font size
+    type: variable-text
+    description: Heading 6 font size
+    default: 0.67em
+  - id: h6-weight
+    title: H6 font weight
+    description: Heading 6 font weight (bold controller)
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 800
+    step: 100
+  - id: mu-h6
+    title: H6 color
+    type: variable-themed-color
+    description: Heading 6 color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#00a3ff"
+  - id: magicuser-theme-neon-mode-headings
+    title: Neon Mode Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: mu-neon-h1-color-hex
+    title: Neon H1 color
+    type: variable-themed-color
+    description: Neon heading 1 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h1-color
+        format: rgb-values
+    default-light: "#007fff"
+    default-dark: "#00e1ff"
+  - id: mu-neon-h2-color-hex
+    title: Neon H2 color
+    type: variable-themed-color
+    description: Neon heading 2 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h2-color
+        format: rgb-values
+    default-light: "#c547ff"
+    default-dark: "#d372ff"
+  - id: mu-neon-h3-color-hex
+    title: Neon H3 color
+    type: variable-themed-color
+    description: Neon heading 3 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h3-color
+        format: rgb-values
+    default-light: "#eb9800"
+    default-dark: "#ffbf48"
+  - id: mu-neon-h4-color-hex
+    title: Neon H4 color
+    type: variable-themed-color
+    description: Neon heading 4 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h4-color
+        format: rgb-values
+    default-light: "#00c000"
+    default-dark: "#72ff72"
+  - id: mu-neon-h5-color-hex
+    title: Neon H5 color
+    type: variable-themed-color
+    description: Neon heading 5 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h5-color
+        format: rgb-values
+    default-light: "#b10000"
+    default-dark: "#ff7272"
+  - id: mu-neon-h6-color-hex
+    title: Neon H6 color
+    type: variable-themed-color
+    description: Neon heading 6 color
+    opacity: false
+    format: hex
+    alt-format:
+      - id: mu-neon-h6-color
+        format: rgb-values
+    default-light: "#828200"
+    default-dark: "#f1f138"
+  - id: magicuser-theme-text
+    title: Text
+    type: heading
+    description: Bold, italic and highlighted text
+    level: 2
+    collapsed: true
+  - id: mu-global-font-mode
+    title: Global font mode
+    description: Activate global font mode (text and other UI elements)
+    type: class-toggle
+    addCommand: true
+  - id: mu-global-font
+    title: Global font
+    type: variable-text
+    description: Select global font (global font mode)
+    default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
+  - id: mu-global-font-stylistic-set
+    title: Global font stylistic sets
+    type: variable-text
+    description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
+    default: normal
+  - id: mu-global-font-letter-spacing
+    title: Global font letter spacing
+    type: variable-text
+    description: Set a value in pixels to customize spacing between characters (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
+    default: normal
+  - id: text-normal
+    title: Theme text color
+    type: variable-themed-color
+    description: Select theme text color
+    format: hex
+    opacity: false
+    default-light: "#000000"
+    default-dark: "#f1f1f1"
+  - id: mu-text-bold
+    title: Bold text color
+    type: variable-themed-color
+    description: Bold text color
+    format: hex
+    opacity: false
+    default-light: "#000000"
+    default-dark: "#f1f1f1"
+  - id: mu-text-italic
+    title: Italic text color
+    type: variable-themed-color
+    description: Italic text color
+    format: hex
+    opacity: false
+    default-light: "#000000"
+    default-dark: "#f1f1f1"
+  - id: text-highlight-bg
+    title: Highlighted text background color
+    type: variable-themed-color
+    description: Background color used to highlight text
+    format: hex
+    opacity: true
+    default-light: "#ffff0088"
+    default-dark: "#ffff0088"
+  - id: mu-underline-text-color-hex
+    title: Underline text color
+    type: variable-themed-color
+    description: Color used to underline text
+    format: hex
+    opacity: false
+    alt-format:
+      - id: mu-underline-text-color-rgb
+        format: rgb-values
+    default-light: "#ff2848"
+    default-dark: "#ff2848"
+  - id: hidden-text-underline-background-color
+    title: Hidden text underline background color
+    type: variable-themed-color
+    description: Background color (highlight) of the hidden text underline
+    format: hex
+    opacity: true
+    default-light: "#ffff0088"
+    default-dark: "#ffff0088"
+  - id: hidden-text-underline-foreground-color
+    title: Hidden text underline foreground color
+    type: variable-themed-color
+    description: Foreground color of the hidden text underline
+    format: hex
+    opacity: true
+    default-light: "#000"
+    default-dark: "#f1f1f1"
+  - id: mu-footnote-color
+    title: Footnotes color
+    type: variable-themed-color
+    description: Select footnotes color (live preview and source modes)
+    format: hex
+    opacity: false
+    default-light: "#f07f48"
+    default-dark: "#f07f48"
+  - id: magicuser-theme-links
+    title: Links
+    type: heading
+    description: Internal and external links
+    level: 2
+    collapsed: true
+  - id: link-decoration
+    title: Internal link decoration
+    type: variable-select
+    description: Internal link decoration
+    default: "underline"
+    options:
+      - "underline"
+      - "none"
+  - id: mu-link
+    title: Internal link color
+    type: variable-themed-color
+    description: Internal link color
+    format: hex
+    opacity: false
+    default-light: "#a200ff"
+    default-dark: "#d372ff"
+  - id: mu-link-hover
+    title: Internal link hover color
+    type: variable-themed-color
+    description: Internal link hover color
+    format: hex
+    opacity: false
+    default-light: "#c300ff"
+    default-dark: "#db8fff"
+  - id: link-external-decoration
+    title: External link decoration
+    type: variable-select
+    description: External link decoration
+    default: "underline"
+    options:
+      - "underline"
+      - "none"
+  - id: mu-external-link
+    title: External link color
+    type: variable-themed-color
+    description: External link color
+    format: hex
+    opacity: false
+    default-light: "#0033ff"
+    default-dark: "#00a9dd"
+  - id: mu-external-link-hover
+    title: External link hover color
+    type: variable-themed-color
+    description: External link hover color
+    format: hex
+    opacity: false
+    default-light: "#00a3ff"
+    default-dark: "#00c3ff"
+  - id: magicuser-theme-checkboxes
+    title: Checklist
+    type: heading
+    description: Checklist settings
+    level: 2
+    collapsed: true
+  - id: disable-alt-checkboxes
+    title: Disable theme alternative checkboxes
+    description: Use this option to add alternative checkboxes via CSS snippet
+    type: class-toggle
+  - id: mu-checkbox-type
+    title: Checkbox shape
+    type: class-select
+    description: Select checkbox shape
+    allowEmpty: false
+    default: none
+    options:
+      - label: Default
+        value: none
+      - label: Square
+        value: mu-checkbox-square
+      - label: Circle
+        value: mu-checkbox-circle
+  - id: checklist-done-decoration
+    title: Checklist done decoration
+    type: variable-select
+    description: Text decoration of the completed task
+    default: "underline"
+    options:
+      - "underline"
+      - "line-through"
+      - "none"
+  - id: checklist-done-color
+    title: Checklist done text color
+    type: variable-color
+    description: Text color of the completed task
+    format: hex
+    opacity: false
+    default: "#00cf48"
+  - id: magicuser-theme-code
+    title: Code
+    type: heading
+    description: Code background and syntax highlighting
+    level: 2
+    collapsed: true
+  - id: mu-font-mono
+    title: Code font
+    type: variable-text
+    description: Font used for source mode
+    default: JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace
+  - id: mu-outline-inline-code
+    title: Outline inline code
+    description: Turn on outline inline code
+    type: class-toggle
+    addCommand: true
+  - id: mu-inline-code-border
+    title: Inline code border color
+    type: variable-themed-color
+    description: Inline code border color (outline code on)
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: mu-outline-code
+    title: Outline code block
+    description: Turn on outline code blocks
+    type: class-toggle
+    addCommand: true
+  - id: mu-code-block-border
+    title: Code block border color
+    description: Code block border color (outline code on)
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#0072d3"
+    default-dark: "#0072d3"
+  - id: magicuser-theme-syntax-highlighting
+    title: Syntax Highlighting
+    type: heading
+    level: 3
+    collapsed: true
+  - id: code-background
+    title: Code background color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#f1f1f1"
+    default-dark: "#001122"
+  - id: code-keyword
+    title: Keyword color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#c300f1"
+    default-dark: "#d372ff"
+  - id: code-string
+    title: String color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#0000f1"
+    default-dark: "#00d8ff"
+  - id: code-value
+    title: Number / Value color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#f18f00"
+    default-dark: "#ffa300"
+  - id: code-comment
+    title: Comment color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#a3a3a3"
+    default-dark: "#a3a3a3"
+  - id: code-function
+    title: Function color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#00a300"
+    default-dark: "#48f148"
+  - id: code-property
+    title: Property color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#0048a3"
+    default-dark: "#0088f1"
+  - id: code-tag
+    title: HTML tag color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#c300f1"
+    default-dark: "#d372ff"
+  - id: mu-code-attribute
+    title: Attribute color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#e50000"
+    default-dark: "#ffa3a3"
+  - id: code-operator
+    title: Operator color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#c300f1"
+    default-dark: "#d372ff"
+  - id: code-punctuation
+    title: Punctuation color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#c300f1"
+    default-dark: "#d372ff"
+  - id: magicuser-theme-about
+    title: MagicUser Theme
+    type: heading
+    description: Made with ♥ by Bernardo Pires
+    level: 2
+    collapsed: true
+  - id: my-info-text
+    title: MagicUser Theme for Obsidian
+    description: Made with ♥ by Bernardo Pires (@drbap). I hope you enjoy. Thanks for using it.
+    type: info-text
+    markdown: false

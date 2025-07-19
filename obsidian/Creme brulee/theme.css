@@ -158,8 +158,9 @@ body {
   --blockquote-padding-bottom: 6px;
   --blockquote-padding-left: 16px;
   --blockquote-padding-right: 8px;
-  --blockquote-padding: var(--blockquote-padding-top) var(--blockquote-padding-right)
-    var(--blockquote-padding-bottom) var(--blockquote-padding-left);
+  --blockquote-padding: var(--blockquote-padding-top)
+    var(--blockquote-padding-right) var(--blockquote-padding-bottom)
+    var(--blockquote-padding-left);
 
   --callout-padding: 0;
   --callout-title-padding: 6px 12px;
@@ -199,8 +200,8 @@ body {
   --file-right-margin-mobile: 10px;
   --file-bottom-margin-mobile: 0;
   --file-left-margin-mobile: 20px;
-  --file-margins: var(--file-top-margin) var(--file-right-margin) var(--file-bottom-margin)
-    var(--file-left-margin);
+  --file-margins: var(--file-top-margin) var(--file-right-margin)
+    var(--file-bottom-margin) var(--file-left-margin);
   --file-header-justify: left;
 
   --button-size: 0.8em;
@@ -479,8 +480,11 @@ blockquote {
 
 /*Narrow empty blockquote line*/
 
-.is-live-preview .HyperMD-quote:not(:has(.cm-quote:not(.cm-formatting))):not(.cm-active),
-.is-live-preview .HyperMD-quote:not(:has(.cm-quote:not(.cm-formatting))):not(.cm-active) .cm-quote {
+.is-live-preview
+  .HyperMD-quote:not(:has(.cm-quote:not(.cm-formatting))):not(.cm-active),
+.is-live-preview
+  .HyperMD-quote:not(:has(.cm-quote:not(.cm-formatting))):not(.cm-active)
+  .cm-quote {
   line-height: calc(1rem / 1.5);
 }
 
@@ -868,7 +872,9 @@ p:has(> span:only-child > br:only-child) {
   opacity: 0.5;
 }
 
-.is-mobile.is-phone .workspace-leaf-content:not([data-type="canvas"]) .view-header-left {
+.is-mobile.is-phone
+  .workspace-leaf-content:not([data-type="canvas"])
+  .view-header-left {
   display: none;
 }
 

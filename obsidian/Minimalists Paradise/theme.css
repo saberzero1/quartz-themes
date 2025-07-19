@@ -47,12 +47,22 @@ SOFTWARE.
   .markdown-source-view.mod-cm6,
   .markdown-source-view.mod-cm6 .cm-scroller,
   .cm-s-obsidian {
-    font-family: var(--default-font, "Times New Roman", Times, serif) !important;
+    font-family: var(
+      --default-font,
+      "Times New Roman",
+      Times,
+      serif
+    ) !important;
     font-size: var(--default-font-size);
   }
 
   .markdown-preview-view {
-    font-family: var(--default-font, "Times New Roman", Times, serif) !important;
+    font-family: var(
+      --default-font,
+      "Times New Roman",
+      Times,
+      serif
+    ) !important;
     font-size: var(--default-font-size);
   }
 
@@ -362,7 +372,9 @@ SOFTWARE.
     margin-bottom: 8px;
   }
 
-  .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+  .workspace-fake-target-overlay:not(.is-in-sidebar)
+    .workspace-tabs
+    .workspace-leaf,
   .mod-root .workspace-tabs .workspace-leaf {
     background-color: var(--card-bg);
   }
@@ -500,7 +512,8 @@ SOFTWARE.
     display: none;
   }
 
-  .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
+  .workspace-tab-header:not(.is-active)
+    .workspace-tab-header-inner-close-button {
     box-sizing: border-box;
     display: none;
   }
@@ -650,7 +663,7 @@ SOFTWARE.
 
   .cm-s-obsidian span.cm-property {
     color: var(--syntax-property);
-    /* métodos chamados via obj.metodo() */
+    /* metodos chamados via obj.metodo() */
     font-style: italic;
   }
 
@@ -1283,7 +1296,9 @@ settings:
   --blockquote-radius: 8px;
   --blockquote-text: inherit;
   --citation-bg: var(--color-accent);
-  --card-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
+  --card-shadow:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
   --graph-bg: #a5aaae;
   --graph-line-color: #6767672c;
   --tab-background-active: rgba(0, 0, 0, 0.08);
@@ -1865,12 +1880,22 @@ settings:
     .markdown-source-view.mod-cm6,
     .markdown-source-view.mod-cm6 .cm-scroller,
     .cm-s-obsidian {
-      font-family: var(--default-font, "Times New Roman", Times, serif) !important;
+      font-family: var(
+        --default-font,
+        "Times New Roman",
+        Times,
+        serif
+      ) !important;
       font-size: var(--default-font-size);
     }
 
     .markdown-preview-view {
-      font-family: var(--default-font, "Times New Roman", Times, serif) !important;
+      font-family: var(
+        --default-font,
+        "Times New Roman",
+        Times,
+        serif
+      ) !important;
       font-size: var(--default-font-size);
     }
 
@@ -2189,7 +2214,9 @@ settings:
       margin-bottom: 8px;
     }
 
-    .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
+    .workspace-fake-target-overlay:not(.is-in-sidebar)
+      .workspace-tabs
+      .workspace-leaf,
     .mod-root .workspace-tabs .workspace-leaf {
       background-color: var(--card-bg);
     }
@@ -2321,7 +2348,8 @@ settings:
       display: none;
     }
 
-    .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
+    .workspace-tab-header:not(.is-active)
+      .workspace-tab-header-inner-close-button {
       box-sizing: border-box;
       display: none;
     }

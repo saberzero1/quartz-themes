@@ -3,5 +3,9 @@
   "version": "1.12.0",
   "minAppVersion": "1.8.0",
   "author": "mvahaste",
-  "authorUrl": "https://github.com/mvahaste"
+  "authorUrl": "https://github.com/mvahaste",
+  "license": {
+    "name": "MIT License",
+    "spdx_id": "MIT"
+  }
 }
