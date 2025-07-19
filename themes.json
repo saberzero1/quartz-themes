@@ -2304,7 +2304,7 @@
       "extras": [],
       "fixes": [],
       "fonts": ["ibm-plex-mono"],
-      "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "onenice": {
       "compatibility": ["checking"],
