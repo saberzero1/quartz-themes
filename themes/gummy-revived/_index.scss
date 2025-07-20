@@ -196,7 +196,7 @@ body {
     -webkit-text-fill-color: transparent;
     width: fit-content;
     code {
-      -webkit-text-fill-color: unset;
+      -webkit-text-fill-color: var(--color-accent);
       -webkit-background-clip: unset;
     }
   }
