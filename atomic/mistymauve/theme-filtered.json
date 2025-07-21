@@ -446,7 +446,6 @@
     { "property": "--link-weight", "value": "var(--font-weight)" },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     {
       "property": "--list-indent",
       "value": "calc(var(--indent-unit) * var(--indent-size))"
@@ -1172,7 +1171,6 @@
       "value": "color.mix(\n    var(--color-timberwolf),\n    var(--color-light-carmine-pink)\n  )"
     },
     { "property": "--link-unresolved-opacity", "value": "0.6" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -1900,7 +1898,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".markdown-rendered .internal-link": [
@@ -1911,7 +1908,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",

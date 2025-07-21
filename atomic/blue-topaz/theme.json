@@ -306,9 +306,7 @@
     { "property": "background-color", "value": "var(--radio-bg-color)" },
     { "property": "border", "value": "1px solid var(--radio-border-color)" }
   ],
-  ".dialog .mainContainer .radio > .radioButton input:hover": [
-    { "property": "filter", "value": "var(--hover-filter)" }
-  ],
+  ".dialog .mainContainer .radio > .radioButton input:hover": [],
   ".dialog .mainContainer .radio > .radioButton input:checked": [
     {
       "property": "background-color",
@@ -341,8 +339,7 @@
     { "property": "height", "value": "32px" }
   ],
   ".dialog .mainContainer button:not(.toggle-button):not(.closeButton):hover": [
-    { "property": "cursor", "value": "pointer" },
-    { "property": "filter", "value": "var(--hover-filter)" }
+    { "property": "cursor", "value": "pointer" }
   ],
   ".dialog .mainContainer button.secondaryButton:not(.toggle-button):not(.closeButton)": [
     { "property": "color", "value": "var(--button-secondary-fg-color)" },
@@ -1956,10 +1953,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -11188,20 +11183,12 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "position", "value": "relative" }
   ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div": [
     {
       "property": "background-color",
       "value": "var(--background-secondary-alt)"
-    },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   ],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div::after": [
@@ -11812,11 +11799,7 @@
   ".popupWrapper > div": [
     { "property": "margin", "value": "var(--size-4-3)" },
     { "property": "background-color", "value": "var(--background-primary)" },
-    { "property": "border-radius", "value": "var(--radius-s)" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px #000000) drop-shadow(0px 1px 2px #000000)\n    drop-shadow(0px 4px 6px #000000)"
-    }
+    { "property": "border-radius", "value": "var(--radius-s)" }
   ],
   ".popupWrapper > div:after": [
     { "property": "background", "value": "var(--background-primary)" },
@@ -12291,12 +12274,7 @@
     { "property": "top", "value": "0" },
     { "property": "inset-inline-end", "value": "0" }
   ],
-  ".theme-dark .mermaid > svg": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    }
-  ],
+  ".theme-dark .mermaid > svg": [],
   ".markdown-source-view.mod-cm6 .cm-hmd-codeblock": [
     { "property": "--indentation-guide-editing-indent", "value": "0" }
   ],
@@ -14413,7 +14391,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
@@ -14445,7 +14422,6 @@
   ],
   ".metadata-property-value .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -14458,7 +14434,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -14483,7 +14458,6 @@
   ],
   ".cm-s-obsidian span.cm-formatting-link.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -14492,7 +14466,6 @@
     { "property": "word-break", "value": "break-all" }
   ],
   ".cm-s-obsidian span.cm-url": [
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -14528,8 +14501,7 @@
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" }
+    { "property": "opacity", "value": "var(--link-unresolved-opacity)" }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved .cm-underline": [
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
@@ -15266,8 +15238,7 @@
   ],
   ".task-list-item-checkbox": [
     { "property": "width", "value": "var(--checkbox-size)" },
-    { "property": "height", "value": "var(--checkbox-size)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "height", "value": "var(--checkbox-size)" }
   ],
   ".markdown-preview-view .task-list-item-checkbox": [
     { "property": "position", "value": "relative" },
@@ -29118,32 +29089,28 @@
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(70deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .tag:not(.token):nth-child(5n + 3)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(140deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .tag:not(.token):nth-child(5n + 4)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(210deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .tag:not(.token):nth-child(5n)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(280deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 1)": [
     {
@@ -29178,128 +29145,112 @@
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(210deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 2) + span.cm-hashtag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(210deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 2) + .cm-hashtag.cm-meta": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(210deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(210deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 3)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(70deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 3) + span.cm-hashtag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(70deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 3) + .cm-hashtag.cm-meta": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(70deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(70deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 4)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(280deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 4) + span.cm-hashtag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(280deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 4) + .cm-hashtag.cm-meta": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(280deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(280deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n)": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(140deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n) + span.cm-hashtag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(140deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n) + .cm-hashtag.cm-meta": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(140deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.rainbow-tag .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(140deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.colorful-tag-bt a.tag:not(.token)": [
     { "property": "font-size", "value": "var(--font-size-tag)" },
@@ -29616,56 +29567,49 @@
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--tag-dailynote-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--tag-dailynote-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-weeklynote": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--tag-weeklynote-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--tag-weeklynote-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-ideas": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--tag-ideas-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--tag-ideas-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-inprogress": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--stag2-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--stag2-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-important": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--stag1-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--stag1-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-questions": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--tag-questions-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--tag-questions-bg)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-complete": [
     { "property": "color", "value": "var(--white)" },
     { "property": "display", "value": "inline" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
-    { "property": "background-color", "value": "var(--stag3-bg)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "background-color", "value": "var(--stag3-bg)" }
   ],
   "body.colorful-tag-bt .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + 1)": [
     { "property": "background-color", "value": "var(--tag1)" }
@@ -29741,74 +29685,64 @@
     { "property": "background-color", "value": "var(--stag1-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) span.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-important:not( .cm-formatting-hashtag )": [
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--stag1-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "calc(var(--font-size-tag) - 0.3em)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "calc(var(--font-size-tag) - 0.3em)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#重要\"]:not(.token)": [
     { "property": "background-color", "value": "var(--stag1-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "Webdings, \"Microsoft YaHei\"" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#complete\"]:not(.token)": [
     { "property": "background-color", "value": "var(--stag3-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) span.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-complete:not( .cm-formatting-hashtag )": [
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--stag3-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "0.95em" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "0.95em" }
   ],
   "body:not(.tag-default) .tag[href^=\"#完成\"]:not(.token)": [
     { "property": "background-color", "value": "var(--stag3-bg)" },
     { "property": "font-family", "value": "Origin, \"Microsoft YaHei\"" },
     { "property": "font-weight", "value": "600" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#inprogress\"]:not(.token)": [
     { "property": "background-color", "value": "var(--stag2-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .cm-s-obsidian:not([class=\"markdown-source-view cm-s-obsidian mod-cm6\"]) span.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-inprogress:not( .cm-formatting-hashtag )": [
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--stag2-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "0.95em" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "0.95em" }
   ],
   "body:not(.tag-default) .tag[href^=\"#进行中\"]:not(.token)": [
     { "property": "background-color", "value": "var(--stag2-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "Wingdings, \"Microsoft YaHei\"" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#dailynote\"]:not(.token)": [
     { "property": "background-color", "value": "var(--tag-dailynote-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#dailynote\"]::after": [
     { "property": "content", "value": "\" 🐈\"" },
@@ -29822,15 +29756,13 @@
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--tag-dailynote-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "0.95em" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "0.95em" }
   ],
   "body:not(.tag-default) .tag[href^=\"#weeklynote\"]:not(.token)": [
     { "property": "background-color", "value": "var(--tag-weeklynote-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#weeklynote\"]::after": [
     { "property": "content", "value": "\" 🥑\"" },
@@ -29844,15 +29776,13 @@
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--tag-weeklynote-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "0.95em" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "0.95em" }
   ],
   "body:not(.tag-default) .tag[href^=\"#questions\"]:not(.token)": [
     { "property": "background-color", "value": "var(--tag-questions-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#questions\"]::after": [
     { "property": "content", "value": "\" ❓\"" },
@@ -29866,15 +29796,13 @@
     { "property": "font-weight", "value": "600" },
     { "property": "background-color", "value": "var(--tag-questions-bg)" },
     { "property": "color", "value": "var(--white)" },
-    { "property": "font-size", "value": "0.95em" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "font-size", "value": "0.95em" }
   ],
   "body:not(.tag-default) .tag[href^=\"#ideas\"]:not(.token)": [
     { "property": "background-color", "value": "var(--tag-ideas-bg)" },
     { "property": "font-weight", "value": "600" },
     { "property": "font-family", "value": "var(--font-family-special-tag)" },
-    { "property": "color", "value": "var(--white)" },
-    { "property": "filter", "value": "hue-rotate(0)" }
+    { "property": "color", "value": "var(--white)" }
   ],
   "body:not(.tag-default) .tag[href^=\"#ideas\"]::after": [
     { "property": "content", "value": "\" 💡\"" },
@@ -30640,12 +30568,10 @@
     { "property": "border-radius", "value": "var(--radius-xs)" }
   ],
   "body:not(.unmute-checkbox-animation) .is-flashing input.task-list-item-checkbox[type=\"checkbox\"]:checked:hover": [
-    { "property": "animation", "value": "tada 1s" },
-    { "property": "filter", "value": "hue-rotate(160deg)" }
+    { "property": "animation", "value": "tada 1s" }
   ],
   "body:not(.unmute-checkbox-animation) input.task-list-item-checkbox[type=\"checkbox\"]:checked:hover": [
-    { "property": "animation", "value": "tada 1s" },
-    { "property": "filter", "value": "hue-rotate(160deg)" }
+    { "property": "animation", "value": "tada 1s" }
   ],
   "body.enable-alternative-checkboxes input[data-task=\">\"]:checked": [
     { "property": "background-color", "value": "var(--checkbox-color-1)" },
@@ -32857,51 +32783,21 @@
     { "property": "top", "value": "0" },
     { "property": "width", "value": "var(--list-indent)" }
   ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-2:not( :has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3 ):hover )::after": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-2:not( :has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-3:hover, ~ .HyperMD-list-line-3 ~ :is( .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover )::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ):is( :hover, :has( ~ :is( .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover ) )::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4 ):hover )::after": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-4:hover, ~ .HyperMD-list-line-4 ~ :is( .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover )::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ):is( :hover, :has( ~ :is( .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover ) )::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5 ):hover )::after": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-5:hover, ~ .HyperMD-list-line-5 ~ :is(.HyperMD-list-line-6, .HyperMD-list-line-7):hover )::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ):is( :hover, :has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-7):hover) )::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ):has(~ :is(.HyperMD-list-line-7, .HyperMD-list-line-6):hover)::after": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-6:hover, ~ .HyperMD-list-line-6 ~ :is(.HyperMD-list-line-7):hover )::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ):is(:hover, :has(~ :is(.HyperMD-list-line-7):hover))::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ):has(~ :is(.HyperMD-list-line-7):hover)::after": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-7:hover, ~ .HyperMD-list-line-7 ~ :is(.HyperMD-list-line-8):hover )::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-7:not( :has(~ .HyperMD-list-line-7 ~ .HyperMD-list-line:hover) ):hover::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-2:not( :has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3 ):hover )::after": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-2:not( :has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-3:hover, ~ .HyperMD-list-line-3 ~ :is( .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ):is( :hover, :has( ~ :is( .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover ) )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4 ):hover )::after": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-3:not( :has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-4:hover, ~ .HyperMD-list-line-4 ~ :is( .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ):is( :hover, :has( ~ :is( .HyperMD-list-line-5, .HyperMD-list-line-6, .HyperMD-list-line-7 ):hover ) )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ):has( ~ :is( .HyperMD-list-line-7, .HyperMD-list-line-6, .HyperMD-list-line-5 ):hover )::after": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-4:not( :has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-5:hover, ~ .HyperMD-list-line-5 ~ :is(.HyperMD-list-line-6, .HyperMD-list-line-7):hover )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ):is( :hover, :has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-7):hover) )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ):has(~ :is(.HyperMD-list-line-7, .HyperMD-list-line-6):hover)::after": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-5:not( :has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-6:hover, ~ .HyperMD-list-line-6 ~ :is(.HyperMD-list-line-7):hover )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ):is(:hover, :has(~ :is(.HyperMD-list-line-7):hover))::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ):has(~ :is(.HyperMD-list-line-7):hover)::after": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-6:not( :has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover) ) ~ .HyperMD-list-line:has( ~ .HyperMD-list-line-7:hover, ~ .HyperMD-list-line-7 ~ :is(.HyperMD-list-line-8):hover )::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line-7:not( :has(~ .HyperMD-list-line-7 ~ .HyperMD-list-line:hover) ):hover::before": [],
   "body.bt-connected-indent-hover .cm-s-obsidian:not(.kanban) .HyperMD-list-line.HyperMD-task-line::after": [
     { "property": "max-height", "value": "calc(100% - 1.2em)" }
   ],
@@ -33105,36 +33001,31 @@
     {
       "property": "border-right-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol)::before": [
     {
       "property": "border-right-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol)::before": [
     {
       "property": "border-right-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol)::before": [
     {
       "property": "border-right-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol)::before": [
     {
       "property": "border-right-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-2 .cm-hmd-list-indent > .cm-indent::before": [
     {
@@ -33188,176 +33079,151 @@
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-4 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-5 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-6 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-7 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-8 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-9 .cm-hmd-list-indent > .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-4 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-5 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-6 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-7 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-8 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-9 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-5 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-6 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-7 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-8 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-9 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-6 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-7 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-8 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-9 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-7 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-8 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    }
   ],
   "body.bt-colorful-indentation-lines-editing .HyperMD-list-line-9 .cm-hmd-list-indent > .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent ~ .cm-indent::before": [
     {
       "property": "border-color",
       "value": "var(--bt-connected-indent-line-color)"
-    },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    }
   ],
   "body.bt-connected-indent-hover .markdown-preview-view:not(.kanban) li": [
     { "property": "position", "value": "relative" }
@@ -33419,66 +33285,26 @@
       "value": "var(--bt-indentation-width-hover) solid\n    var(--bt-connected-indent-line-color)"
     }
   ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > ul:has(+ ol) > li::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > ol:has(+ ul) > li::before": [
-    { "property": "filter", "value": "hue-rotate(60deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [
-    { "property": "filter", "value": "hue-rotate(120deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [
-    { "property": "filter", "value": "hue-rotate(240deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
-  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [
-    { "property": "filter", "value": "hue-rotate(300deg)" }
-  ],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > ul:has(+ ol) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > ol:has(+ ul) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:has(~ li:hover)::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li:hover::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ul:has(+ ol) > li::before": [],
+  "body.bt-connected-indent-hover.bt-colorful-connected-indent-hover .markdown-preview-view:not(.kanban) *:not([data-callout=\"kanban\"]) > div > :is(ul, ol) li:hover > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > :is(ul, ol) > li > ol:has(+ ul) > li::before": [],
   ":is(.markdown-preview-view, .markdown-rendered) :is(b, strong)": [
     { "property": "font-weight", "value": "bold" }
   ],
@@ -34701,7 +34527,6 @@
       "value": "var(--theme-color-translucent-015)"
     },
     { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(160deg)" },
     { "property": "font-weight", "value": "bold" },
     { "property": "opacity", "value": "1" }
   ],
@@ -34711,7 +34536,6 @@
       "value": "var(--theme-color-translucent-015)"
     },
     { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(160deg)" },
     { "property": "font-weight", "value": "bold" },
     { "property": "opacity", "value": "1" }
   ],
@@ -34729,12 +34553,8 @@
     },
     { "property": "box-shadow", "value": "none" }
   ],
-  "body.is-grabbing:not(.remove-file-icons):not( .bt-toggle-colorful-folder.folder-style-change-options-colorful ) .nav-file-title.is-active[data-path$=\".md\"] > .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(160deg)" }
-  ],
-  "body:not(.remove-file-icons):not( .bt-toggle-colorful-folder.folder-style-change-options-colorful ) .nav-file-title.is-active[data-path$=\".md\"]:hover > .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(160deg)" }
-  ],
+  "body.is-grabbing:not(.remove-file-icons):not( .bt-toggle-colorful-folder.folder-style-change-options-colorful ) .nav-file-title.is-active[data-path$=\".md\"] > .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons):not( .bt-toggle-colorful-folder.folder-style-change-options-colorful ) .nav-file-title.is-active[data-path$=\".md\"]:hover > .nav-file-title-content::before": [],
   ".side-dock-plugin-panel-inner": [
     { "property": "padding-left", "value": "6px" }
   ],
@@ -35217,10 +35037,6 @@
     {
       "property": "border",
       "value": "1px solid rgba(var(--mono-rgb-100), 0.1)"
-    },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 3px rgba(var(--mono-rgb-100), 0.2))"
     }
   ],
   "body:not(.obsidian-default-image) :is(.markdown-preview-view, .markdown-rendered) .workspace-leaf-content[data-type=\"markdown\"] img:not([class*=\"emoji\"])": [
@@ -37601,8 +37417,7 @@
   ".kanban-plugin__item-prefix-button-wrapper input[type=\"checkbox\"]": [
     { "property": "margin", "value": "1px 6px 0 0" },
     { "property": "width", "value": "14px" },
-    { "property": "height", "value": "14px" },
-    { "property": "filter", "value": "hue-rotate(var(--theme-color))" }
+    { "property": "height", "value": "14px" }
   ],
   ".theme-dark .kanban-plugin__lane-wrapper:nth-child(7n + 1)": [
     {
@@ -38171,39 +37986,17 @@
     },
     { "property": "transition", "value": "0.3s" }
   ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 2)": [
-    { "property": "filter", "value": "hue-rotate(50deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 2)": [
-    { "property": "filter", "value": "hue-rotate(50deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 3)": [
-    { "property": "filter", "value": "hue-rotate(140deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 3)": [
-    { "property": "filter", "value": "hue-rotate(140deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 4)": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 4)": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 5)": [
-    { "property": "filter", "value": "hue-rotate(220deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 5)": [
-    { "property": "filter", "value": "hue-rotate(220deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 6)": [
-    { "property": "filter", "value": "hue-rotate(280deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 6)": [
-    { "property": "filter", "value": "hue-rotate(280deg)" }
-  ],
-  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n) body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n)": [
-    { "property": "filter", "value": "hue-rotate(330deg)" }
-  ],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 2)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 2)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 3)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 3)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 4)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 4)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 5)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 5)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n + 6)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n + 6)": [],
+  "body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane-wrapper:nth-child(7n) body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane-wrapper:nth-child(7n)": [],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(n)": [
     { "property": "background", "value": "unset" },
     { "property": "position", "value": "relative" },
@@ -38211,8 +38004,7 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "cursor", "value": "pointer" },
     { "property": "transition", "value": "0.3s" },
-    { "property": "animation", "value": "huerotate-1 6s infinite linear" },
-    { "property": "filter", "value": "hue-rotate(360deg)" }
+    { "property": "animation", "value": "huerotate-1 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(n)::before": [
     { "property": "content", "value": "\"\"" },
@@ -38265,27 +38057,21 @@
     { "property": "transition", "value": "0.3s" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 2)": [
-    { "property": "animation", "value": "huerotate-2 6s infinite linear" },
-    { "property": "filter", "value": "hue-rotate(410deg)" }
+    { "property": "animation", "value": "huerotate-2 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 3)": [
-    { "property": "animation", "value": "huerotate-3 6s infinite linear" },
-    { "property": "filter", "value": "hue-rotate(500deg)" }
+    { "property": "animation", "value": "huerotate-3 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 4)": [
-    { "property": "filter", "value": "hue-rotate(540deg)" },
     { "property": "animation", "value": "huerotate-4 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 5)": [
-    { "property": "filter", "value": "hue-rotate(580deg)" },
     { "property": "animation", "value": "huerotate-5 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 6)": [
-    { "property": "filter", "value": "hue-rotate(640deg)" },
     { "property": "animation", "value": "huerotate-6 6s infinite linear" }
   ],
   "body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane-wrapper:nth-child(7n + 0)": [
-    { "property": "filter", "value": "hue-rotate(690deg)" },
     { "property": "animation", "value": "huerotate-7 6s infinite linear" }
   ],
   ".stickies": [
@@ -39390,8 +39176,7 @@
     {
       "property": "background-image",
       "value": "url(\"data:image/svg+xml,base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiNmZmRjNTEiPjxnPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIvPjwvZz48Zz48Zy8+PGc+PHBhdGggZD0iTTEyLDNjLTAuNDYsMC0wLjkzLDAuMDQtMS40LDAuMTRDNy44NCwzLjY3LDUuNjQsNS45LDUuMTIsOC42NmMtMC40OCwyLjYxLDAuNDgsNS4wMSwyLjIyLDYuNTYgQzcuNzcsMTUuNiw4LDE2LjEzLDgsMTYuNjlWMTljMCwxLjEsMC45LDIsMiwyaDAuMjhjMC4zNSwwLjYsMC45OCwxLDEuNzIsMXMxLjM4LTAuNCwxLjcyLTFIMTRjMS4xLDAsMi0wLjksMi0ydi0yLjMxIGMwLTAuNTUsMC4yMi0xLjA5LDAuNjQtMS40NkMxOC4wOSwxMy45NSwxOSwxMi4wOCwxOSwxMEMxOSw2LjEzLDE1Ljg3LDMsMTIsM3ogTTE0LDE3aC00di0xaDRWMTd6IE0xMCwxOXYtMWg0djFIMTB6IE0xNS4zMSwxMy43NGMtMC4wOSwwLjA4LTAuMTYsMC4xOC0wLjI0LDAuMjZIOC45MmMtMC4wOC0wLjA5LTAuMTUtMC4xOS0wLjI0LTAuMjdjLTEuMzItMS4xOC0xLjkxLTIuOTQtMS41OS00LjcgYzAuMzYtMS45NCwxLjk2LTMuNTUsMy44OS0zLjkzQzExLjMyLDUuMDMsMTEuNjYsNSwxMiw1YzIuNzYsMCw1LDIuMjQsNSw1QzE3LDExLjQzLDE2LjM5LDEyLjc5LDE1LjMxLDEzLjc0eiIvPjwvZz48Zz48cmVjdCBoZWlnaHQ9IjMiIHdpZHRoPSIxIiB4PSIxMS41IiB5PSIxMSIvPjxyZWN0IGhlaWdodD0iMyIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIC0wLjcwNzEgMC43MDcxIDAuNzA3MSAtNC4wMzEyIDEwLjg1MzYpIiB3aWR0aD0iMSIgeD0iMTAuNTkiIHk9IjguNzkiLz48cmVjdCBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEgLTAuNzA3MSAwLjcwNzEgLTAuNzA3MSAxNC43Njc4IDI2LjcwMjgpIiB3aWR0aD0iMSIgeD0iMTIuNDEiIHk9IjguNzkiLz48L2c+PC9nPjwvc3ZnPg==\")"
-    },
-    { "property": "filter", "value": "invert(0)" }
+    }
   ],
   ".cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"!\"]::before": [
     { "property": "content", "value": "\" \"" },
@@ -39453,39 +39238,17 @@
     { "property": "background-color", "value": "var(--checkbox-color-6)" },
     { "property": "z-index", "value": "-1" }
   ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"<\"]": [
-    { "property": "filter", "value": "invert(0)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\">\"]": [
-    { "property": "filter", "value": "invert(0)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"?\"]": [
-    { "property": "filter", "value": "invert(0)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"+\"]": [
-    { "property": "filter", "value": "invert(0)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"-\"]": [
-    { "property": "filter", "value": "invert(0)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"<\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\">\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"!\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"?\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"+\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
-  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"-\"]::before": [
-    { "property": "filter", "value": "invert(0) opacity(0.5)" }
-  ],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"<\"]": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\">\"]": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"?\"]": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"+\"]": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"-\"]": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"<\"]::before": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\">\"]::before": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"!\"]::before": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"?\"]::before": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"+\"]::before": [],
+  ".theme-dark .cm-formatting.cm-formatting-task.cm-property.hmd-hidden-token[data-task=\"-\"]::before": [],
   "span.cm-formatting.cm-formatting-highlight.cm-strong.cm-em.cm-highlight.hmd-hidden-token": [
     { "property": "padding", "value": "0" }
   ],
@@ -40052,8 +39815,7 @@
     },
     { "property": "width", "value": "1.2em" },
     { "property": "height", "value": "1.2em" },
-    { "property": "margin", "value": "0.2em 0.5em 0em 0" },
-    { "property": "filter", "value": "hue-rotate(var(--theme-color))" }
+    { "property": "margin", "value": "0.2em 0.5em 0em 0" }
   ],
   ".card-board input[type=\"checkbox\"]:checked": [
     { "property": "background-position", "value": "center" },
@@ -40338,8 +40100,7 @@
     { "property": "border", "value": "1px solid var(--memos-memo-border)" }
   ],
   "body:not(.thino-default) .heatmap-date-picker-wrapper > .date-picker-day-container > .date-picker-day-content > .day-item.current": [
-    { "property": "background-color", "value": "var(--memos-stat-day-L1-bg)" },
-    { "property": "filter", "value": "opacity(0.8)" }
+    { "property": "background-color", "value": "var(--memos-stat-day-L1-bg)" }
   ],
   "body:not(.thino-default) .heatmap-date-picker-wrapper > .date-picker-day-container > .date-picker-day-content > .day-item.current .day-item-text": [
     { "property": "color", "value": "var(--color-base-70)" }
@@ -41057,27 +40818,14 @@
     { "property": "--banner-internal-embed-height", "value": "200px" },
     { "property": "--banner-preview-embed-height", "value": "120px" }
   ],
-  "body.color-scheme-options-simplicity-topaz.theme-dark.background-settings-workplace-background-image .webpage-container::before": [
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(calc(var(--brightness-4-bg) - 0.5))\n    saturate(var(--saturate-4-bg))"
-    }
-  ],
+  "body.color-scheme-options-simplicity-topaz.theme-dark.background-settings-workplace-background-image .webpage-container::before": [],
   "body.background-settings-workplace-background-image.theme-light .webpage-container::before": [
     { "property": "background-image", "value": "var(--theme-background)" },
-    { "property": "background-size", "value": "cover" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    }
+    { "property": "background-size", "value": "cover" }
   ],
   "body.background-settings-workplace-background-image.theme-dark .webpage-container::before": [
     { "property": "background-image", "value": "var(--theme-background)" },
-    { "property": "background-size", "value": "cover" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    }
+    { "property": "background-size", "value": "cover" }
   ],
   "body.background-settings-workplace-background-image.background-settings-workplace-waves2-light.theme-light .webpage-container::before": [
     {
@@ -41087,10 +40835,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -41106,10 +40850,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -41131,10 +40871,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -41148,10 +40884,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -43219,8 +42951,7 @@
     { "property": "background-size", "value": "contain" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-position", "value": "center center" },
-    { "property": "background-color", "value": "var(--text-folder-file-icon)" },
-    { "property": "filter", "value": "hue-rotate(160deg)" }
+    { "property": "background-color", "value": "var(--text-folder-file-icon)" }
   ],
   "body.folder-icons .nav-folder-children .nav-folder.is-collapsed .nav-folder-title-content::before": [
     { "property": "position", "value": "relative" },
@@ -43231,8 +42962,7 @@
     { "property": "background-size", "value": "contain" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-position", "value": "center center" },
-    { "property": "background-color", "value": "var(--text-folder-file-icon)" },
-    { "property": "filter", "value": "hue-rotate(160deg)" }
+    { "property": "background-color", "value": "var(--text-folder-file-icon)" }
   ],
   ".folder-note-underline .nav-folder.is-collapsed .nav-folder-title-content": [
     { "property": "text-decoration-line", "value": "underline" },
@@ -43296,231 +43026,167 @@
     { "property": "background-position", "value": "center center" },
     { "property": "background-color", "value": "var(--text-folder-file-icon)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-45deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-folder-title[data-path*=\"banner\"] .nav-folder-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-folder-title[data-path*=\"banner\"] .nav-folder-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".canvas\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(180deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".canvas\"] .nav-file-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".canvas\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".excalidraw.md\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(135deg)" }
-  ],
-  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".loom\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(200deg)" }
-  ],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".excalidraw.md\"] .nav-file-title-content::before": [],
+  "body:not(.remove-file-icons) .nav-file-title[data-path$=\".loom\"] .nav-file-title-content::before": [],
   "body:not(.remove-file-icons) .nav-file-title[data-path$=\".loom\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--theme-color-translucent-01)"
     },
-    { "property": "color", "value": "var(--theme-color)" },
-    { "property": "filter", "value": "hue-rotate(200deg)" }
+    { "property": "color", "value": "var(--theme-color)" }
   ],
   "body.dark-background-file:not(.remove-file-icons):not( .bt-toggle-colorful-folder.folder-style-change-options-colorful ) .nav-file-title.is-active[data-path$=\".md\"] > .nav-file-title-content::before": [
     { "property": "background-color", "value": "var(--white)" }
@@ -44341,339 +44007,121 @@
     },
     { "property": "opacity", "value": "0.8" }
   ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"]": [
-    { "property": "filter", "value": "var(--Fold0)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold0)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold0)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"]": [
-    { "property": "filter", "value": "var(--Fold1)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold1)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold1)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"]": [
-    { "property": "filter", "value": "var(--Fold2)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold2)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold2)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"]": [
-    { "property": "filter", "value": "var(--Fold3)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold3)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold3)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"]": [
-    { "property": "filter", "value": "var(--Fold4)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold4)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold4)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"]": [
-    { "property": "filter", "value": "var(--Fold5)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold5)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold5)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"]": [
-    { "property": "filter", "value": "var(--Fold6)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold6)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold6)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"]": [
-    { "property": "filter", "value": "var(--Fold7)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold7)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold7)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"]": [
-    { "property": "filter", "value": "var(--Fold8)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold8)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold8)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"]": [
-    { "property": "filter", "value": "var(--Fold9)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--Fold9)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--Fold9)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"]": [
-    { "property": "filter", "value": "var(--FoldA)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldA)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldA)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"]": [
-    { "property": "filter", "value": "var(--FoldB)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldB)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldB)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"]": [
-    { "property": "filter", "value": "var(--FoldC)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldC)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldC)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"]": [
-    { "property": "filter", "value": "var(--FoldD)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldD)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldD)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"]": [
-    { "property": "filter", "value": "var(--FoldE)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldE)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldE)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"]": [
-    { "property": "filter", "value": "var(--FoldF)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldF)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldF)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"]": [
-    { "property": "filter", "value": "var(--FoldG)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldG)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldG)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"]": [
-    { "property": "filter", "value": "var(--FoldH)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldH)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldH)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"]": [
-    { "property": "filter", "value": "var(--FoldI)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldI)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldI)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"]": [
-    { "property": "filter", "value": "var(--FoldJ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldJ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldJ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"]": [
-    { "property": "filter", "value": "var(--FoldK)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldK)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldK)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"]": [
-    { "property": "filter", "value": "var(--FoldL)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldL)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldL)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"]": [
-    { "property": "filter", "value": "var(--FoldM)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldM)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldM)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"]": [
-    { "property": "filter", "value": "var(--FoldN)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldN)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldN)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"]": [
-    { "property": "filter", "value": "var(--FoldO)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldO)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldO)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"]": [
-    { "property": "filter", "value": "var(--FoldP)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldP)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldP)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"]": [
-    { "property": "filter", "value": "var(--FoldQ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldQ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldQ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"]": [
-    { "property": "filter", "value": "var(--FoldR)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldR)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldR)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"]": [
-    { "property": "filter", "value": "var(--FoldS)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldS)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldS)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"]": [
-    { "property": "filter", "value": "var(--FoldT)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldT)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldT)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"]": [
-    { "property": "filter", "value": "var(--FoldU)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldU)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldU)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"]": [
-    { "property": "filter", "value": "var(--FoldV)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldV)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldV)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"]": [
-    { "property": "filter", "value": "var(--FoldW)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldW)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldW)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"]": [
-    { "property": "filter", "value": "var(--FoldX)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldX)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldX)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"]": [
-    { "property": "filter", "value": "var(--FoldY)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldY)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldY)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"]": [
-    { "property": "filter", "value": "var(--FoldZ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"] + .nav-folder-children": [
-    { "property": "filter", "value": "var(--FoldZ)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"] + .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "var(--FoldZ)" }
-  ],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"0\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"1\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"2\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"3\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"4\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"5\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"6\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"7\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"8\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"9\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"A\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"B\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"C\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"D\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"E\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"F\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"G\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"H\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"I\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"J\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"K\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"L\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"M\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"N\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"O\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"P\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Q\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"R\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"S\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"T\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"U\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"V\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"W\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"X\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Y\"] + .nav-folder-children .nav-file-title.is-active": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"]": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"] + .nav-folder-children": [],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"] + .nav-folder-children .nav-file-title.is-active": [],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order .nav-files-container > div > .tree-item.nav-folder .nav-file-title": [
     { "property": "color", "value": "var(--FoldText)" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order .nav-files-container > div > .tree-item.nav-folder .nav-folder-title.is-active": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order .nav-files-container > div > .tree-item.nav-folder .nav-folder-title:hover": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-folder-title": [
@@ -44749,25 +44197,20 @@
     { "property": "--tab-color", "value": "var(--FoldB)" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder .nav-folder-title.is-active": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder .nav-file-title.is-active": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder .nav-folder-title:hover": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder .nav-file-title:hover": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder .nav-folder-title": [
     { "property": "font-weight", "value": "600" },
-    { "property": "color", "value": "var(--tab-color)" },
-    { "property": "filter", "value": "brightness(0.8)" }
+    { "property": "color", "value": "var(--tab-color)" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-folder-title": [
     { "property": "--tab-color", "value": "var(--Fold0)" }
@@ -44841,12 +44284,8 @@
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 13) .nav-file-title": [
     { "property": "--tab-color", "value": "var(--FoldB)" }
   ],
-  "body.theme-dark.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not( .folder-colorful-six ) .nav-files-container > div > .tree-item.nav-folder .nav-folder-title": [
-    { "property": "filter", "value": "brightness(2)" }
-  ],
-  "body.theme-dark.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not( .folder-colorful-six ) .nav-files-container > div > .tree-item.nav-folder .nav-file-title": [
-    { "property": "filter", "value": "brightness(2)" }
-  ],
+  "body.theme-dark.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not( .folder-colorful-six ) .nav-files-container > div > .tree-item.nav-folder .nav-folder-title": [],
+  "body.theme-dark.bt-toggle-colorful-folder.folder-style-change-options-colorful-title:not( .folder-colorful-six ) .nav-files-container > div > .tree-item.nav-folder .nav-file-title": [],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder .nav-folder-title": [
     {
       "property": "background-color",
@@ -44866,19 +44305,15 @@
     }
   ],
   "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ) .nav-files-container > div > .tree-item.nav-folder .nav-folder-title.is-active": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ) .nav-files-container > div > .tree-item.nav-folder .nav-file-title.is-active": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ) .nav-files-container > div > .tree-item.nav-folder .nav-folder-title:hover": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ) .nav-files-container > div > .tree-item.nav-folder .nav-file-title:hover": [
-    { "property": "filter", "value": "saturate(150%)" },
     { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-title.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder .nav-folder-title": [
@@ -44889,98 +44324,47 @@
     { "property": "color", "value": "var(--folder-colorful-custom-color)" },
     { "property": "font-weight", "value": "600" }
   ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold0)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold0)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 3) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold1)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 3) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold1)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 4) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold2)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 4) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold2)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 5) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold3)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 5) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold3)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 6) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold4)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 6) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold4)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 7) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold5)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 7) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold5)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 8) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold6)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 8) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold6)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 9) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold7)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 9) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold7)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 10) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold8)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 10) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold8)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 11) .nav-folder-title": [
-    { "property": "filter", "value": "var(--Fold9)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 11) .nav-file-title": [
-    { "property": "filter", "value": "var(--Fold9)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 12) .nav-folder-title": [
-    { "property": "filter", "value": "var(--FoldA)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 12) .nav-file-title": [
-    { "property": "filter", "value": "var(--FoldA)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 13) .nav-folder-title": [
-    { "property": "filter", "value": "var(--FoldB)" }
-  ],
-  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 13) .nav-file-title": [
-    { "property": "filter", "value": "var(--FoldB)" }
-  ],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 2) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 3) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 3) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 4) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 4) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 5) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 5) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 6) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 6) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 7) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 7) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 8) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 8) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 9) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 9) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 10) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 10) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 11) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 11) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 12) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 12) .nav-file-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 13) .nav-folder-title": [],
+  "body.bt-toggle-colorful-folder.folder-colorful-custom:not( .folder-style-change-options-colorful-default ):not(.folder-style-change-options-colorful-tab-liked) .nav-files-container > div > .tree-item.nav-folder:nth-child(12n + 13) .nav-file-title": [],
   "body.theme-dark.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful-border ).folder-colorful-custom:not(.is-grabbing) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder-title": [
     {
       "property": "color",
       "value": "color-mix(in hsl, var(--folder-colorful-custom-color), white 38%)"
-    },
-    { "property": "filter", "value": "var(--tab-color)" }
+    }
   ],
   "body.theme-dark.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful-border ).folder-colorful-custom:not(.is-grabbing) .workspace-leaf-content[data-type=\"file-explorer\"] .tree-item-self.is-clickable.nav-folder-title": [
     {
       "property": "color",
       "value": "color-mix(in hsl, var(--folder-colorful-custom-color), white 38%)"
-    },
-    { "property": "filter", "value": "var(--tab-color)" }
+    }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-border.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder": [
     {
       "property": "border-left",
       "value": "2px solid var(--folder-colorful-custom-color)"
-    },
-    { "property": "filter", "value": "var(--tab-color)" }
+    }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder": [
     { "property": "border", "value": "none" },
@@ -44988,7 +44372,6 @@
       "property": "border-left",
       "value": "2px solid var(--folder-colorful-custom-color)"
     },
-    { "property": "filter", "value": "var(--tab-color)" },
     {
       "property": "border",
       "value": "1px solid\n      color-mix(\n        in srgb,\n        var(--folder-colorful-custom-color) 30%,\n        var(--background-secondary)\n      )"
@@ -44998,15 +44381,13 @@
     {
       "property": "background-color",
       "value": "var(--folder-colorful-custom-color)"
-    },
-    { "property": "filter", "value": "var(--tab-color)" }
+    }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked.folder-colorful-custom .nav-files-container > div > .tree-item.nav-folder > .tree-item-self.is-clickable.nav-folder-title::before": [
     {
       "property": "background-color",
       "value": "var(--folder-colorful-custom-color)"
-    },
-    { "property": "filter", "value": "var(--tab-color)" }
+    }
   ],
   "body.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful, .folder-style-change-options-colorful-order ) .nav-files-container": [
     { "property": "margin", "value": "0 5px" }
@@ -45392,9 +44773,7 @@
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title[data-path^=\"Z\"] + .nav-folder-children .nav-file-title.is-active": [
     { "property": "--tab-color", "value": "var(--FoldZ)" }
   ],
-  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful .nav-folder.mod-root > .nav-folder-children .nav-file-title.is-active": [
-    { "property": "filter", "value": "hue-rotate(110deg)" }
-  ],
+  "body.bt-toggle-colorful-folder.folder-style-change-options-colorful .nav-folder.mod-root > .nav-folder-children .nav-file-title.is-active": [],
   "body.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful, .folder-style-change-options-colorful-order ) .nav-files-container > div > .tree-item.nav-folder > .nav-folder-title + .nav-folder-children": [
     {
       "property": "background-color",
@@ -45408,8 +44787,7 @@
     }
   ],
   "body.bt-toggle-colorful-folder.folder-style-change-options-colorful .nav-folder-title:hover": [
-    { "property": "font-weight", "value": "bold" },
-    { "property": "filter", "value": "saturate(250%)" }
+    { "property": "font-weight", "value": "bold" }
   ],
   "body.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful, .folder-style-change-options-colorful-order ) .theme-dark .workspace-leaf-content[data-type=\"file-explorer\"]": [
     {
@@ -45646,27 +45024,14 @@
     { "property": "background-size", "value": "cover" },
     { "property": "opacity", "value": "0.8" }
   ],
-  "body.color-scheme-options-simplicity-topaz.theme-dark.background-settings-workplace-background-image .workspace::before": [
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(calc(var(--brightness-4-bg) - 0.5))\n    saturate(var(--saturate-4-bg))"
-    }
-  ],
+  "body.color-scheme-options-simplicity-topaz.theme-dark.background-settings-workplace-background-image .workspace::before": [],
   "body.background-settings-workplace-background-image.theme-light .workspace::before": [
     { "property": "background-image", "value": "var(--theme-background)" },
-    { "property": "background-size", "value": "cover" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    }
+    { "property": "background-size", "value": "cover" }
   ],
   "body.background-settings-workplace-background-image.theme-dark .workspace::before": [
     { "property": "background-image", "value": "var(--theme-background)" },
-    { "property": "background-size", "value": "cover" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    }
+    { "property": "background-size", "value": "cover" }
   ],
   "body.is-mobile.background-settings-workplace-background-image:is( .background-settings-workplace-waves-light, .background-settings-workplace-waves2-light, .background-settings-workplace-waves, .background-settings-workplace-waves2 )": [
     { "property": "background", "value": "hsla(210, 45%, 95%, 1)" }
@@ -45691,10 +45056,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45708,10 +45069,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45728,10 +45085,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45747,10 +45100,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45764,10 +45113,6 @@
     { "property": "bottom", "value": "0px" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "left", "value": "-15px" },
     { "property": "position", "value": "absolute" },
     { "property": "right", "value": "-15px" },
@@ -45779,10 +45124,6 @@
     { "property": "bottom", "value": "0px" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "left", "value": "-15px" },
     { "property": "position", "value": "absolute" },
     { "property": "right", "value": "-15px" },
@@ -45793,10 +45134,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45810,10 +45147,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45830,10 +45163,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -45849,10 +45178,6 @@
     { "property": "background-image", "value": "unset" },
     { "property": "background-size", "value": "100% 100%" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth)) brightness(var(--brightness-4-bg))\n    saturate(var(--saturate-4-bg))"
-    },
     { "property": "height", "value": "auto" },
     { "property": "left", "value": "-25%" },
     { "property": "opacity", "value": "0.7" },
@@ -46018,10 +45343,6 @@
   ],
   "body.background-image-settings-command-palette-same-as-workplace.background-image-settings-command-palette-switch .modal-container .prompt::before": [
     { "property": "background-image", "value": "var(--theme-background)" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))\n    saturate(var(--saturate-4-bg-cp))"
-    },
     { "property": "opacity", "value": "var(--opacity-cp)" },
     { "property": "z-index", "value": "-1" }
   ],
@@ -46067,10 +45388,6 @@
   ],
   "body.background-image-settings-command-palette-custom.background-image-settings-command-palette-switch .modal-container .prompt::before": [
     { "property": "background-size", "value": "auto" },
-    {
-      "property": "filter",
-      "value": "blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))\n    saturate(var(--saturate-4-bg-cp))"
-    },
     { "property": "opacity", "value": "var(--opacity-cp)" },
     { "property": "z-index", "value": "-1" }
   ],
@@ -46343,16 +45660,10 @@
     { "property": "margin-top", "value": "-20px" },
     { "property": "font-size", "value": "initial" },
     { "property": "color", "value": "var(--text-muted)" },
-    { "property": "filter", "value": "hue-rotate(-55deg) saturate(120%)" },
     { "property": "position", "value": "initial" },
     { "property": "animation", "value": "unset" }
   ],
-  "body:not(.default-loading-page).loading-animation-cat.theme-dark .progress-bar-message::before": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(153deg) saturate(250%)"
-    }
-  ],
+  "body:not(.default-loading-page).loading-animation-cat.theme-dark .progress-bar-message::before": [],
   "body:not(.default-loading-page).loading-animation-cat.theme-light .progress-bar": [
     { "property": "background-color", "value": "white" }
   ],
@@ -47002,18 +46313,10 @@
       "value": "0 0 0 1px #000000, 0 2px 8px transparent"
     }
   ],
-  "body.pdf-style-invert-color-light.theme-light .pdf-viewer .canvasWrapper": [
-    { "property": "filter", "value": "invert(1) hue-rotate(180deg)" }
-  ],
-  "body.pdf-style-invert-color-dark.theme-dark .pdf-viewer .canvasWrapper": [
-    { "property": "filter", "value": "invert(1) hue-rotate(180deg)" }
-  ],
-  "body.pdf-style-invert-color.theme-light .pdf-thumbnail-view .thumbnailImage": [
-    { "property": "filter", "value": "invert(1) hue-rotate(180deg)" }
-  ],
-  "body.pdf-style-invert-color.theme-dark .pdf-thumbnail-view .thumbnailImage": [
-    { "property": "filter", "value": "invert(1) hue-rotate(180deg)" }
-  ],
+  "body.pdf-style-invert-color-light.theme-light .pdf-viewer .canvasWrapper": [],
+  "body.pdf-style-invert-color-dark.theme-dark .pdf-viewer .canvasWrapper": [],
+  "body.pdf-style-invert-color.theme-light .pdf-thumbnail-view .thumbnailImage": [],
+  "body.pdf-style-invert-color.theme-dark .pdf-thumbnail-view .thumbnailImage": [],
   "body.pdf-style-green-bg-light.theme-light .pdf-viewer .textLayer": [
     { "property": "background-color", "value": "#74c969" }
   ],
@@ -47568,12 +46871,9 @@
     { "property": "width", "value": "10%" }
   ],
   ".callout.callout[data-callout=\"cloze\"]": [
-    { "property": "border-left-width", "value": "0" },
-    { "property": "filter", "value": "blur(4px)" }
+    { "property": "border-left-width", "value": "0" }
   ],
-  ".callout.callout[data-callout=\"cloze\"]:hover": [
-    { "property": "filter", "value": "none" }
-  ],
+  ".callout.callout[data-callout=\"cloze\"]:hover": [],
   ".callout.callout[data-callout=\"cloze\"] .callout-title": [
     { "property": "display", "value": "none" }
   ],
@@ -48873,64 +48173,49 @@
     { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .has-list-bullet .has-list-bullet .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line div.cm-fold-indicator ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line span.cm-hmd-list-indent ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line div.cm-fold-indicator ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line span.cm-hmd-list-indent ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-4.cm-line div.cm-fold-indicator ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-4.cm-line span.cm-hmd-list-indent ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-5.cm-line div.cm-fold-indicator ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-5.cm-line span.cm-hmd-list-indent ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-6.cm-line div.cm-fold-indicator ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-6.cm-line span.cm-hmd-list-indent ~ span.cm-formatting .list-bullet::after": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-unordered-list li.is-collapsed .list-collapse-indicator:hover ~ .list-bullet:after": [
     {
@@ -49306,16 +48591,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(60deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) ol li::marker": [
     {
@@ -49324,16 +48606,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(120deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::marker": [
     {
@@ -49342,16 +48621,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-4.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-4.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(180deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::marker": [
     {
@@ -49360,16 +48636,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-5.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-5.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(240deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::marker": [
     {
@@ -49378,16 +48651,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-6.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-6.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(300deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::marker": [
     {
@@ -49396,16 +48666,13 @@
     }
   ],
   "body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::before": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(0deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-7.cm-line div.cm-fold-indicator ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(0deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.colorful-ordered-list .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-7.cm-line span.cm-hmd-list-indent ~ span.cm-formatting.cm-formatting-list-ol": [
-    { "property": "color", "value": "var(--list-colorful-marker)" },
-    { "property": "filter", "value": "hue-rotate(0deg)" }
+    { "property": "color", "value": "var(--list-colorful-marker)" }
   ],
   "body.enable-icon-anima div.nav-header:hover": [
     {
@@ -50517,7 +49784,6 @@
   ],
   "body.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful-title, .folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border ).folder-icons .nav-folder-children .nav-folder-title-content::before": [
     { "property": "background-color", "value": "var(--tab-color)" },
-    { "property": "filter", "value": "none" },
     { "property": "opacity", "value": "0.5" }
   ],
   "body.folder-colorful-custom.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful-title, .folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border ).folder-icons .nav-folder-children .nav-folder-title-content::before": [
@@ -50537,7 +49803,6 @@
       "property": "background-color",
       "value": "var(--tab-color, var(--text-folder-file-icon))"
     },
-    { "property": "filter", "value": "none" },
     { "property": "opacity", "value": "0.5" }
   ],
   "body.bt-toggle-colorful-folder:is( .folder-style-change-options-colorful-title, .folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border ):not(.default-icons):not(.remove-arrow) .nav-folder-collapse-indicator::before": [
@@ -52324,8 +51589,7 @@
     {
       "property": "transform",
       "value": "translateY(-6px) scale(var(--direction), 1)"
-    },
-    { "property": "filter", "value": "drop-shadow(0px 6px 2px #000000)" }
+    }
   ],
   ".canvas-control-item:hover": [
     { "property": "color", "value": "var(--text-normal)" },

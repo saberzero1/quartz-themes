@@ -306,9 +306,7 @@
     { "property": "background-color", "value": "var(--radio-bg-color)" },
     { "property": "border", "value": "1px solid var(--radio-border-color)" }
   ],
-  ".dialog .mainContainer .radio > .radioButton input:hover": [
-    { "property": "filter", "value": "var(--hover-filter)" }
-  ],
+  ".dialog .mainContainer .radio > .radioButton input:hover": [],
   ".dialog .mainContainer .radio > .radioButton input:checked": [
     {
       "property": "background-color",
@@ -341,8 +339,7 @@
     { "property": "height", "value": "32px" }
   ],
   ".dialog .mainContainer button:not(.toggle-button):not(.closeButton):hover": [
-    { "property": "cursor", "value": "pointer" },
-    { "property": "filter", "value": "var(--hover-filter)" }
+    { "property": "cursor", "value": "pointer" }
   ],
   ".dialog .mainContainer button.secondaryButton:not(.toggle-button):not(.closeButton)": [
     { "property": "color", "value": "var(--button-secondary-fg-color)" },
@@ -1909,10 +1906,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -10383,20 +10378,12 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "position", "value": "relative" }
   ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div": [
     {
       "property": "background-color",
       "value": "var(--background-secondary-alt)"
-    },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   ],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div::after": [
@@ -11020,11 +11007,7 @@
   ".popupWrapper > div": [
     { "property": "margin", "value": "var(--size-4-3)" },
     { "property": "background-color", "value": "var(--background-primary)" },
-    { "property": "border-radius", "value": "var(--radius-s)" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px #000000) drop-shadow(0px 1px 2px #000000)\n    drop-shadow(0px 4px 6px #000000)"
-    }
+    { "property": "border-radius", "value": "var(--radius-s)" }
   ],
   ".popupWrapper > div:after": [
     { "property": "background", "value": "var(--background-primary)" },
@@ -11505,12 +11488,7 @@
     { "property": "inset-inline-end", "value": "0" },
     { "property": "background-color", "value": "rgb(var(--exterior))" }
   ],
-  ".theme-dark .mermaid > svg": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    }
-  ],
+  ".theme-dark .mermaid > svg": [],
   ".markdown-source-view.mod-cm6 .cm-hmd-codeblock": [
     { "property": "--indentation-guide-editing-indent", "value": "0" }
   ],
@@ -13717,7 +13695,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
@@ -13751,7 +13728,6 @@
   ],
   ".metadata-property-value .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13764,7 +13740,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13790,7 +13765,6 @@
   ],
   ".cm-s-obsidian span.cm-formatting-link.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13800,7 +13774,6 @@
   ],
   ".cm-s-obsidian span.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13835,8 +13808,7 @@
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" }
+    { "property": "opacity", "value": "var(--link-unresolved-opacity)" }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved .cm-underline": [
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
@@ -25727,12 +25699,10 @@
     { "property": "background", "value": "rgba(var(--callout-color), 0.2)" }
   ],
   ".shib-callout-toggle.shib-callout-style-4.theme-light .callout-title .callout-icon": [
-    { "property": "border-radius", "value": "10px" },
-    { "property": "filter", "value": "brightness(0.75)" }
+    { "property": "border-radius", "value": "10px" }
   ],
   ".shib-callout-toggle.shib-callout-style-4.theme-dark .callout-title .callout-icon": [
-    { "property": "border-radius", "value": "10px" },
-    { "property": "filter", "value": "brightness(1)" }
+    { "property": "border-radius", "value": "10px" }
   ],
   ".shib-callout-toggle.shib-callout-style-4.theme-light .callout.is-collapsed:not(.is-collapsed) .callout-title": [
     { "property": "padding", "value": "0" },
@@ -25746,12 +25716,8 @@
     { "property": "padding-right", "value": "0" },
     { "property": "color", "value": "rgba(var(--callout-color), 1)" }
   ],
-  ".shib-callout-toggle.shib-callout-style-4.theme-light .callout-fold": [
-    { "property": "filter", "value": "brightness(0.75)" }
-  ],
-  ".shib-callout-toggle.shib-callout-style-4.theme-dark .callout-fold": [
-    { "property": "filter", "value": "brightness(1)" }
-  ],
+  ".shib-callout-toggle.shib-callout-style-4.theme-light .callout-fold": [],
+  ".shib-callout-toggle.shib-callout-style-4.theme-dark .callout-fold": [],
   ".shib-callout-toggle.shib-callout-style-4.theme-light .callout-content": [
     { "property": "padding", "value": "var(--size-4-4)" },
     { "property": "background-color", "value": "rgba(var(--side), 1)" },
@@ -27914,207 +27880,151 @@
     { "property": "background-position", "value": "center center" },
     { "property": "background-color", "value": "var(--interactive-accent)" }
   ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-45deg)" }
-  ],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-title-content::before": [],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".pdf\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(45deg)" }
-  ],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-title-content::before": [],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".bmp\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".gif\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpeg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".jpg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".png\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".svg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(45deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(90deg)" }
-  ],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-title-content::before": [],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mkv\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mov\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp4\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogv\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".webm\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
-  ],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-title-content::before": [],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-title-content::before": [],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".3gp\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".flac\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".m4a\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".mp3\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".ogg\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
   "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".wav\"] .nav-file-tag": [
     {
       "property": "background-color",
       "value": "var(--color-accent-translucent-01)"
     },
-    { "property": "color", "value": "var(--color-accent)" },
-    { "property": "filter", "value": "hue-rotate(-90deg)" }
+    { "property": "color", "value": "var(--color-accent)" }
   ],
-  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".excalidraw.md\"] .nav-file-title-content::before": [
-    { "property": "filter", "value": "hue-rotate(135deg)" }
-  ],
+  "body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=\".excalidraw.md\"] .nav-file-title-content::before": [],
   "body:not(.shiba-remove-file-icons) .nav-file-title.is-active[data-path$=\".md\"] > .nav-file-title-content::before": [
     { "property": "background-color", "value": "var(--interactive-accent)" },
     { "property": "opacity", "value": "1" }
@@ -29796,8 +29706,7 @@
     {
       "property": "transform",
       "value": "translateY(-6px) scale(var(--direction), 1)"
-    },
-    { "property": "filter", "value": "drop-shadow(0px 6px 2px #000000)" }
+    }
   ],
   ".canvas-control-item:hover": [
     { "property": "color", "value": "var(--text-normal)" },

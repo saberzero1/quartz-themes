@@ -258,9 +258,7 @@
     { "property": "height", "value": "16px" },
     { "property": "width", "value": "16px" }
   ],
-  ".dialog .mainContainer .radio > .radioButton input:hover": [
-    { "property": "filter", "value": "none" }
-  ],
+  ".dialog .mainContainer .radio > .radioButton input:hover": [],
   ".dialog .mainContainer .radio > .radioButton input:checked": [
     { "property": "background-color", "value": "ButtonFace" },
     { "property": "border", "value": "4px solid ButtonText" }
@@ -287,8 +285,7 @@
     { "property": "width", "value": "auto" }
   ],
   ".dialog .mainContainer button:not(.toggle-button):not(.closeButton):hover": [
-    { "property": "cursor", "value": "pointer" },
-    { "property": "filter", "value": "none" }
+    { "property": "cursor", "value": "pointer" }
   ],
   ".dialog .mainContainer button.secondaryButton:not(.toggle-button):not(.closeButton)": [
     { "property": "background-color", "value": "ButtonFace" },
@@ -1738,11 +1735,9 @@
     { "property": "--link-external-color-hover", "value": "#c5b6fc" },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "#a68af9" },
     { "property": "--link-unresolved-decoration-color", "value": "#8a5cf54d" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
     { "property": "--link-weight", "value": "600" },
     { "property": "--list-bullet-border", "value": "none" },
@@ -8798,18 +8793,10 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "position", "value": "relative" }
   ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div": [
-    { "property": "background-color", "value": "#363636" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px #999999)\n    drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))\n    drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
-    }
+    { "property": "background-color", "value": "#363636" }
   ],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div::after": [
     { "property": "background-color", "value": "#363636" }
@@ -9351,10 +9338,6 @@
   ".popupWrapper > div": [
     { "property": "background-color", "value": "#000" },
     { "property": "border-radius", "value": "4px" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))\n    drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3))\n    drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3))"
-    },
     { "property": "margin", "value": "12px" }
   ],
   ".popupWrapper > div:after": [
@@ -9785,12 +9768,7 @@
   ".markdown-rendered button.copy-code-button:hover": [
     { "property": "background-color", "value": "#ffffff26" }
   ],
-  ".theme-dark .mermaid > svg": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    }
-  ],
+  ".theme-dark .mermaid > svg": [],
   ".markdown-source-view.mod-cm6 .cm-hmd-codeblock": [
     { "property": "--indentation-guide-editing-indent", "value": "0" }
   ],
@@ -11761,7 +11739,6 @@
     { "property": "background-size", "value": "0.825em" },
     { "property": "color", "value": "#a68af9" },
     { "property": "cursor", "value": "default" },
-    { "property": "filter", "value": "none" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "text-decoration-line", "value": "underline" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
@@ -11807,14 +11784,12 @@
   ],
   ".metadata-property-value .internal-link.is-unresolved": [
     { "property": "color", "value": "#a68af9" },
-    { "property": "filter", "value": "none" },
     { "property": "opacity", "value": "0.7" },
     { "property": "text-decoration-color", "value": "#8a5cf54d" },
     { "property": "text-decoration-style", "value": "solid" }
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "#a68af9" },
-    { "property": "filter", "value": "none" },
     { "property": "opacity", "value": "0.7" },
     { "property": "text-decoration-color", "value": "#8a5cf54d" },
     { "property": "text-decoration-style", "value": "solid" }
@@ -11853,14 +11828,12 @@
   ],
   ".cm-s-obsidian span.cm-formatting-link.cm-url": [
     { "property": "color", "value": "#a68af9" },
-    { "property": "filter", "value": "none" },
     { "property": "font-weight", "value": "600" },
     { "property": "text-decoration-line", "value": "underline" },
     { "property": "word-break", "value": "break-all" }
   ],
   ".cm-s-obsidian span.cm-url": [
     { "property": "color", "value": "#a68af9" },
-    { "property": "filter", "value": "none" },
     { "property": "font-weight", "value": "600" },
     { "property": "text-decoration-line", "value": "underline" },
     { "property": "word-break", "value": "break-all" }
@@ -11903,7 +11876,6 @@
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved": [
     { "property": "color", "value": "#a68af9" },
-    { "property": "filter", "value": "none" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved:hover": [
@@ -15521,10 +15493,6 @@
     { "property": "transition", "value": "90ms transform ease-out" }
   ],
   ".canvas-card-menu .canvas-card-menu-button.mod-draggable:hover svg": [
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 6px 2px rgba(0, 0, 0, 0.1))"
-    },
     { "property": "transform", "value": "translateY(-6px) scale(-1, 1)" }
   ],
   ".canvas-control-group": [

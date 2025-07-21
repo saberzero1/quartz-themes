@@ -104,7 +104,6 @@ html[saved-theme="dark"] {
     --link-weight: normal;
     --link-unresolved-color: #ff6347;
     --link-unresolved-opacity: 0.7;
-    --link-unresolved-filter: brightness(0.8);
     --link-unresolved-decoration-style: dashed;
     --link-unresolved-decoration-color: #ff6347;
     --link-external-color: #98fb98;
@@ -223,7 +222,6 @@ html[saved-theme="light"] {
     --link-weight: normal;
     --link-unresolved-color: #ff4500;
     --link-unresolved-opacity: 0.7;
-    --link-unresolved-filter: brightness(0.8);
     --link-unresolved-decoration-style: dashed;
     --link-unresolved-decoration-color: #ff4500;
     --link-external-color: #32cd32;
@@ -511,7 +509,6 @@ body {
   --icon-color: var(--text-muted);
   --italic-color: inherit;
   --layer-popover: 30;
-  --link-external-filter: none;
   --p-spacing: 1rem;
   --prompt-border-color: var(
     --color-base-40,
@@ -643,7 +640,6 @@ body {
   --link-weight: normal;
   --link-unresolved-color: #ff4500;
   --link-unresolved-opacity: 0.7;
-  --link-unresolved-filter: brightness(0.8);
   --link-unresolved-decoration-style: dashed;
   --link-unresolved-decoration-color: #ff4500;
   --link-external-color: #32cd32;
@@ -1056,7 +1052,6 @@ body {
 
       &.broken {
         color: var(--link-unresolved-color);
-        filter: var(--link-unresolved-filter);
         opacity: var(--link-unresolved-opacity);
         text-decoration-color: var(--link-unresolved-decoration-color);
         text-decoration-style: var(--link-unresolved-decoration-style);
@@ -1075,7 +1070,7 @@ body {
 
       background-position: center right;
       background-repeat: no-repeat;
-      background-image: linear-gradient(transparent, transparent);
+      background-image: transparent;
       background-color: transparent;
 
       cursor: var(--cursor-link);
@@ -1093,7 +1088,6 @@ body {
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
       cursor: var(--cursor-link);
-      filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
 
       &:hover {

@@ -306,9 +306,7 @@
     { "property": "background-color", "value": "var(--radio-bg-color)" },
     { "property": "border", "value": "1px solid var(--radio-border-color)" }
   ],
-  ".dialog .mainContainer .radio > .radioButton input:hover": [
-    { "property": "filter", "value": "var(--hover-filter)" }
-  ],
+  ".dialog .mainContainer .radio > .radioButton input:hover": [],
   ".dialog .mainContainer .radio > .radioButton input:checked": [
     {
       "property": "background-color",
@@ -341,8 +339,7 @@
     { "property": "height", "value": "32px" }
   ],
   ".dialog .mainContainer button:not(.toggle-button):not(.closeButton):hover": [
-    { "property": "cursor", "value": "pointer" },
-    { "property": "filter", "value": "var(--hover-filter)" }
+    { "property": "cursor", "value": "pointer" }
   ],
   ".dialog .mainContainer button.secondaryButton:not(.toggle-button):not(.closeButton)": [
     { "property": "color", "value": "var(--button-secondary-fg-color)" },
@@ -2148,10 +2145,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -10515,20 +10510,12 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "position", "value": "relative" }
   ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div": [
     {
       "property": "background-color",
       "value": "var(--background-secondary-alt)"
-    },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   ],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div::after": [
@@ -11139,11 +11126,7 @@
   ".popupWrapper > div": [
     { "property": "margin", "value": "var(--size-4-3)" },
     { "property": "background-color", "value": "var(--background-primary)" },
-    { "property": "border-radius", "value": "var(--radius-s)" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px #000000) drop-shadow(0px 1px 2px #000000)\n    drop-shadow(0px 4px 6px #000000)"
-    }
+    { "property": "border-radius", "value": "var(--radius-s)" }
   ],
   ".popupWrapper > div:after": [
     { "property": "background", "value": "var(--background-primary)" },
@@ -11607,12 +11590,7 @@
     { "property": "top", "value": "0" },
     { "property": "inset-inline-end", "value": "0" }
   ],
-  ".theme-dark .mermaid > svg": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    }
-  ],
+  ".theme-dark .mermaid > svg": [],
   ".markdown-source-view.mod-cm6 .cm-hmd-codeblock": [
     { "property": "--indentation-guide-editing-indent", "value": "0" }
   ],
@@ -13660,7 +13638,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
@@ -13699,7 +13676,6 @@
   ],
   ".metadata-property-value .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13712,7 +13688,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13737,7 +13712,6 @@
   ],
   ".cm-s-obsidian span.cm-formatting-link.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13747,7 +13721,6 @@
   ],
   ".cm-s-obsidian span.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13782,8 +13755,7 @@
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" }
+    { "property": "opacity", "value": "var(--link-unresolved-opacity)" }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved .cm-underline": [
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
@@ -21799,7 +21771,6 @@
     { "property": "font-weight", "value": "600" }
   ],
   ":is(:is(.theme-light, .theme-dark) .inline-title):hover": [
-    { "property": "filter", "value": "brightness(1.05)" },
     { "property": "transition", "value": "filter 0.2s ease" }
   ],
   ".markdown-preview-view h1": [
@@ -22113,7 +22084,6 @@
   ],
   ":is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-line) :is( h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 ):hover": [
     { "property": "transform", "value": "translateY(-2px)" },
-    { "property": "filter", "value": "brightness(1.05)" },
     {
       "property": "box-shadow",
       "value": "0 3px 6px #000000,\n    0 0 1px #000000"
@@ -22225,8 +22195,7 @@
     { "property": "font-weight", "value": "500" }
   ],
   ":is( .tag, a.tag, .cm-hashtag, .token.hashtag, .cm-s-obsidian span.cm-hashtag, .markdown-source-view.mod-cm6 .cm-hashtag, .cm-hashtag-begin, .cm-hashtag-end ):hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    { "property": "filter", "value": "brightness(1.2)" }
+    { "property": "color", "value": "var(--link-color-hover)" }
   ],
   ":is(.multi-select-pill-content span, .multi-select-pill-content)": [
     { "property": "border-radius", "value": "6px" },
@@ -22311,12 +22280,10 @@
   ],
   ".markdown-rendered img:hover": [
     { "property": "box-shadow", "value": "0 2px 6px #000000" },
-    { "property": "filter", "value": "brightness(1.05)" },
     { "property": "transform", "value": "scale(1)" }
   ],
   ".markdown-source-view.mod-cm6 .cm-content img:hover": [
     { "property": "box-shadow", "value": "0 2px 6px #000000" },
-    { "property": "filter", "value": "brightness(1.05)" },
     { "property": "transform", "value": "scale(1)" }
   ],
   ":is(.callout, .cm-callout)": [
@@ -22431,7 +22398,6 @@
     { "property": "margin", "value": "0.5em 0" }
   ],
   ":is(.callout, .cm-callout) .callout-content :is(h1, h2, h3, h4, h5, h6):hover": [
-    { "property": "filter", "value": "brightness(1.05)" },
     { "property": "box-shadow", "value": "0 2px 4px #000000" },
     { "property": "transform", "value": "translateY(-2px)" }
   ],
@@ -23126,12 +23092,10 @@
     }
   ],
   ":is( button, .nav-action-button, .workspace-tab-header, .suggestion-item, .menu-item, .nav-file-title, .setting-item-control button, input[type=\"checkbox\"], .multi-select-pill-content, .dropdown-item ):hover": [
-    { "property": "transform", "value": "scale(1.02)" },
-    { "property": "filter", "value": "brightness(1.02)" }
+    { "property": "transform", "value": "scale(1.02)" }
   ],
   ":is( button, .nav-action-button, .workspace-tab-header, .suggestion-item, .menu-item, .nav-file-title, .setting-item-control button, input[type=\"checkbox\"], .multi-select-pill-content, .dropdown-item ):active": [
     { "property": "transform", "value": "scale(0.98)" },
-    { "property": "filter", "value": "brightness(0.98)" },
     { "property": "transition-duration", "value": "0.15s" }
   ],
   ":is( button, .clickable-icon, .nav-action-button, input, textarea, select ):focus-visible": [
@@ -23173,8 +23137,7 @@
     { "property": "min-width", "value": "0" }
   ],
   ".nav-folder-title:hover": [
-    { "property": "background-color", "value": "inherit" },
-    { "property": "filter", "value": "brightness(1.15)" }
+    { "property": "background-color", "value": "inherit" }
   ],
   ".theme-light .nav-folder-title:hover": [
     { "property": "background-color", "value": "#ffffff" }
@@ -23333,8 +23296,7 @@
     { "property": "font-weight", "value": "500" }
   ],
   ".nav-file-title:not(.is-active):hover": [
-    { "property": "background-color", "value": "inherit" },
-    { "property": "filter", "value": "brightness(1.15)" }
+    { "property": "background-color", "value": "inherit" }
   ],
   ".theme-light .nav-file-title:not(.is-active):hover": [
     { "property": "background-color", "value": "#ffffff" }
@@ -24757,8 +24719,7 @@
     {
       "property": "transform",
       "value": "translateY(-6px) scale(var(--direction), 1)"
-    },
-    { "property": "filter", "value": "drop-shadow(0px 6px 2px #000000)" }
+    }
   ],
   ".canvas-control-item:hover": [
     { "property": "color", "value": "var(--text-normal)" },
