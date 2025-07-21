@@ -82,9 +82,7 @@
     { "property": "display", "value": "inline-block" },
     { "property": "width", "value": "16px" },
     { "property": "height", "value": "16px" },
-    { "property": "-webkit-mask-image", "value": "var(--message-bar-icon)" },
     { "property": "mask-image", "value": "var(--message-bar-icon)" },
-    { "property": "-webkit-mask-size", "value": "cover" },
     { "property": "mask-size", "value": "cover" },
     {
       "property": "background-color",
@@ -115,9 +113,7 @@
     { "property": "display", "value": "inline-block" },
     { "property": "width", "value": "16px" },
     { "property": "height", "value": "16px" },
-    { "property": "-webkit-mask-image", "value": "var(--closing-button-icon)" },
     { "property": "mask-image", "value": "var(--closing-button-icon)" },
-    { "property": "-webkit-mask-size", "value": "cover" },
     { "property": "mask-size", "value": "cover" },
     {
       "property": "background-color",
@@ -642,10 +638,6 @@
     { "property": "padding", "value": "1px" },
     { "property": "background-color", "value": "var(--highlight-bg-color)" },
     {
-      "property": "-webkit-backdrop-filter",
-      "value": "var(--highlight-backdrop-filter)"
-    },
-    {
       "property": "backdrop-filter",
       "value": "var(--highlight-backdrop-filter)"
     },
@@ -677,10 +669,6 @@
     {
       "property": "background-color",
       "value": "var(--highlight-selected-bg-color)"
-    },
-    {
-      "property": "-webkit-backdrop-filter",
-      "value": "var(--highlight-selected-backdrop-filter)"
     },
     {
       "property": "backdrop-filter",
@@ -8310,7 +8298,6 @@
   ".workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-title": [
     { "property": "order", "value": "3" },
     { "property": "width", "value": "auto" },
-    { "property": "-webkit-mask-image", "value": "unset" },
     { "property": "padding", "value": "var(--size-4-1) 0" },
     { "property": "transform", "value": "var(--tab-stacked-text-transform)" },
     { "property": "text-align", "value": "var(--tab-stacked-text-align)" },
@@ -12283,10 +12270,6 @@
     }
   ],
   ".pdf-findbar .mod-pending::before": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12a9 9 0 1 1-6.219-8.56\"></path></svg>')"
-    },
     { "property": "animation", "value": "rotation 1s infinite linear" }
   ],
   ".is-phone .pdf-findbar": [{ "property": "overflow", "value": "none" }],
@@ -15976,13 +15959,6 @@
     { "property": "position", "value": "absolute" },
     { "property": "display", "value": "block" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
-    { "property": "-webkit-mask-position", "value": "52% 52%" },
-    { "property": "-webkit-mask-size", "value": "65%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url('data:image/svg+xml, utf8, <svg width=\"12px\" height=\"10px\" viewBox=\"0 0 12 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g transform=\"translate%28-4.000000, -6.000000%29\" fill=\"%23000000\"><path d=\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\"></path></g></g></svg>')"
-    },
     { "property": "width", "value": "100%" },
     { "property": "height", "value": "100%" },
     { "property": "top", "value": "0" },
@@ -18347,12 +18323,7 @@
     { "property": "height", "value": "var(--search-icon-size)" },
     { "property": "width", "value": "var(--search-icon-size)" },
     { "property": "display", "value": "block" },
-    { "property": "background-color", "value": "var(--search-icon-color)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27currentColor%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27><circle cx=%2711%27 cy=%2711%27 r=%278%27></circle><line x1=%2721%27 y1=%2721%27 x2=%2716.65%27 y2=%2716.65%27></line></svg>\")"
-    },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" }
+    { "property": "background-color", "value": "var(--search-icon-color)" }
   ],
   ".search-input-container input": [
     { "property": "display", "value": "block" },
@@ -18384,12 +18355,7 @@
     { "property": "height", "value": "var(--search-clear-button-size)" },
     { "property": "width", "value": "var(--search-clear-button-size)" },
     { "property": "display", "value": "block" },
-    { "property": "background-color", "value": "currentColor" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml,<svg viewBox=%270 0 12 12%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3.8705 3.09766L6.00003 5.22718L8.12955 3.09766L8.9024 3.8705L6.77287 6.00003L8.9024 8.12955L8.12955 8.9024L6.00003 6.77287L3.8705 8.9024L3.09766 8.12955L5.22718 6.00003L3.09766 3.8705L3.8705 3.09766Z%27 fill=%27currentColor%27/></svg>\")"
-    },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" }
+    { "property": "background-color", "value": "currentColor" }
   ],
   ".search-input-clear-button:hover": [
     { "property": "color", "value": "var(--text-normal)" },
@@ -22692,11 +22658,7 @@
     { "property": "padding", "value": "var(--size-4-1) 0" },
     { "property": "white-space", "value": "nowrap" },
     { "property": "text-overflow", "value": "clip" },
-    { "property": "width", "value": "100%" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "linear-gradient(\n    to left,\n    #000000 var(--size-4-4),\n    #000000 var(--size-4-8)\n  )"
-    }
+    { "property": "width", "value": "100%" }
   ],
   ".mobile-navbar-actions": [
     { "property": "--icon-size", "value": "26px" },
@@ -25240,9 +25202,6 @@
     { "property": "position", "value": "relative" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"/\"]:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25253,16 +25212,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='12,-12 48,-12 48,36 12,36' transform='rotate(45) translate(5,-12)'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"<\"]:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25273,16 +25225,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"!\"]:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25293,16 +25238,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='12' x2='12' y1='5' y2='13'/><line x1='12' x2='12' y1='19' y2='19'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"?\"]:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25313,16 +25251,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5'/><path d='M12.25,20l-0.443,-0'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"/\"] > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25333,16 +25264,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='12,-12 48,-12 48,36 12,36' transform='rotate(45) translate(5,-12)'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"<\"] > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25353,16 +25277,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"!\"] > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25373,16 +25290,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='12' x2='12' y1='5' y2='13'/><line x1='12' x2='12' y1='19' y2='19'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"?\"] > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25393,16 +25303,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5'/><path d='M12.25,20l-0.443,-0'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"/\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25413,16 +25316,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='12,-12 48,-12 48,36 12,36' transform='rotate(45) translate(5,-12)'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"<\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25433,16 +25329,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5'></polyline></g></g></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"!\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25453,16 +25342,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='12' x2='12' y1='5' y2='13'/><line x1='12' x2='12' y1='19' y2='19'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"?\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     {
       "property": "background-color",
       "value": "var(--theme-color-controlContentArea)"
@@ -25473,11 +25355,7 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5'/><path d='M12.25,20l-0.443,-0'/></svg>\")"
-    }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=\"x\"]": [
     { "property": "color", "value": "var(--checklist-done-color)" },
@@ -25669,7 +25547,6 @@
     { "property": "position", "value": "relative" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"x\"]:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25677,16 +25554,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "52% 52%" },
-    { "property": "-webkit-mask-size", "value": "65%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"x\"] > input:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25694,16 +25564,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "52% 52%" },
-    { "property": "-webkit-mask-size", "value": "65%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"x\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25711,16 +25574,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "52% 52%" },
-    { "property": "-webkit-mask-size", "value": "65%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\"-\"]:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25728,16 +25584,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='4,10.5 20,10.5 20,13.5 4,13.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"-\"] > input:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25745,16 +25594,9 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='4,10.5 20,10.5 20,13.5 4,13.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\"-\"] > p > input:checked:after": [
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -25762,13 +25604,7 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='4,10.5 20,10.5 20,13.5 4,13.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes input[data-task=\">\"]:checked:after": [
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
@@ -25778,14 +25614,7 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\">\"] > input:checked:after": [
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
@@ -25795,14 +25624,7 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   "body.theme-setting-enableBuiltInAlternativeCheckboxes li[data-task=\">\"] > p > input:checked:after": [
     { "property": "background-color", "value": "var(--checkbox-marker-color)" },
@@ -25812,14 +25634,7 @@
     { "property": "left", "value": "-1px" },
     { "property": "position", "value": "absolute" },
     { "property": "top", "value": "-1px" },
-    { "property": "width", "value": "var(--checkbox-size)" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g fill='%23000000'><polyline points='9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5'></polyline></g></g></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" }
+    { "property": "width", "value": "var(--checkbox-size)" }
   ],
   ".is-mobile .workspace-split.mod-root .workspace-tabs": [
     { "property": "padding", "value": "0" }
@@ -28269,13 +28084,6 @@
     }
   ],
   ".external-link:after": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg' stroke='black' fill='none' stroke-width='1'><path d='M6.125,3.938L1.313,3.938L1.313,12.688L10.063,12.688L10.063,7.875M7.875,1.75L12.25,1.75L12.25,6.125M12.25,1.75L6.125,7.875'/></svg>\")"
-    },
-    { "property": "-webkit-mask-position", "value": "50% 50%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "100%" },
     { "property": "background-color", "value": "var(--link-external-color)" },
     { "property": "background-image", "value": "none" },
     { "property": "content", "value": "\"\"" },
@@ -29758,11 +29566,6 @@
     { "property": "width", "value": "10px" },
     { "property": "height", "value": "10px" },
     { "property": "margin-top", "value": "-5px" },
-    { "property": "-webkit-mask-size", "value": "100% 100%" },
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><path d='M3 8L12 17L21 8'></path></svg>\")"
-    },
     { "property": "transition", "value": "transform 100ms ease-in-out" },
     { "property": "transform", "value": "rotate(-90deg)" }
   ],
@@ -30107,10 +29910,6 @@
     { "property": "outline", "value": "var(--link-outline)" }
   ],
   ".annotationLayer .linkAnnotation:hover": [
-    {
-      "property": "-webkit-backdrop-filter",
-      "value": "var(--hcm-highlight-filter)"
-    },
     { "property": "backdrop-filter", "value": "var(--hcm-highlight-filter)" }
   ],
   ".annotationLayer .linkAnnotation > a:hover": [
@@ -30132,10 +29931,6 @@
     { "property": "left", "value": "0" },
     { "property": "width", "value": "100%" },
     { "property": "height", "value": "100%" },
-    {
-      "property": "-webkit-backdrop-filter",
-      "value": "var(--hcm-highlight-filter)"
-    },
     { "property": "backdrop-filter", "value": "var(--hcm-highlight-filter)" },
     { "property": "content", "value": "\"\"" },
     { "property": "pointer-events", "value": "none" }
