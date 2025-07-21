@@ -1198,10 +1198,8 @@
     },
     { "property": "--link-external-decoration", "value": "none" },
     { "property": "--link-external-decoration-hover", "value": "none" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-muted)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -1948,7 +1946,6 @@
     { "property": "color", "value": "var(--link-external-color)" },
     { "property": "background-image", "value": "none" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "padding-right", "value": "16px" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     {
@@ -1971,7 +1968,6 @@
     { "property": "font-weight", "value": "700" }
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",

@@ -411,9 +411,7 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -5787,7 +5785,6 @@
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -5824,7 +5821,6 @@
     }
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-style",

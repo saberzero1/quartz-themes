@@ -473,10 +473,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -1853,7 +1851,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".markdown-rendered .internal-link": [
@@ -1864,7 +1861,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -1908,8 +1904,7 @@
     { "property": "font-weight", "value": "var(--nav-item-weight)" },
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin-bottom", "value": "var(--size-2-1)" },
-    { "property": "color", "value": "#5c7080" },
-    { "property": "filter", "value": "contrast(0.9)" }
+    { "property": "color", "value": "#5c7080" }
   ],
   ".nav-file-title.is-active": [
     {

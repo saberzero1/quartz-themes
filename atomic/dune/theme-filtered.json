@@ -545,10 +545,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -2175,7 +2173,6 @@
     { "property": "background-image", "value": "none" },
     { "property": "background-position", "value": "0" },
     { "property": "padding-right", "value": "0" },
-    { "property": "filter", "value": "none" },
     { "property": "background-size", "value": "0" },
     { "property": "word-wrap", "value": "break-word" },
     { "property": "color", "value": "var(--link-color-dune)" }
@@ -2188,7 +2185,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     { "property": "text-decoration-color", "value": "inherit" },
     { "property": "text-decoration-line", "value": "underline" },

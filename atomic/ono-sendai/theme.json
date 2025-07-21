@@ -306,9 +306,7 @@
     { "property": "background-color", "value": "var(--radio-bg-color)" },
     { "property": "border", "value": "1px solid var(--radio-border-color)" }
   ],
-  ".dialog .mainContainer .radio > .radioButton input:hover": [
-    { "property": "filter", "value": "var(--hover-filter)" }
-  ],
+  ".dialog .mainContainer .radio > .radioButton input:hover": [],
   ".dialog .mainContainer .radio > .radioButton input:checked": [
     {
       "property": "background-color",
@@ -341,8 +339,7 @@
     { "property": "height", "value": "32px" }
   ],
   ".dialog .mainContainer button:not(.toggle-button):not(.closeButton):hover": [
-    { "property": "cursor", "value": "pointer" },
-    { "property": "filter", "value": "var(--hover-filter)" }
+    { "property": "cursor", "value": "pointer" }
   ],
   ".dialog .mainContainer button.secondaryButton:not(.toggle-button):not(.closeButton)": [
     { "property": "color", "value": "var(--button-secondary-fg-color)" },
@@ -1920,10 +1917,8 @@
     },
     { "property": "--link-external-decoration", "value": "underline" },
     { "property": "--link-external-decoration-hover", "value": "underline" },
-    { "property": "--link-external-filter", "value": "none" },
     { "property": "--link-unresolved-color", "value": "var(--text-accent)" },
     { "property": "--link-unresolved-opacity", "value": "0.7" },
-    { "property": "--link-unresolved-filter", "value": "none" },
     { "property": "--link-unresolved-decoration-style", "value": "solid" },
     {
       "property": "--link-unresolved-decoration-color",
@@ -5863,8 +5858,7 @@
     { "property": "height", "value": "100%" }
   ],
   ".is-translucent .workspace": [
-    { "property": "background-color", "value": "transparent" },
-    { "property": "filter", "value": "contrast(1.2) brightness(1.34)" }
+    { "property": "background-color", "value": "transparent" }
   ],
   ".workspace-split": [
     { "property": "display", "value": "flex" },
@@ -10158,20 +10152,12 @@
     { "property": "overflow", "value": "hidden" },
     { "property": "position", "value": "relative" }
   ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
-  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [
-    { "property": "filter", "value": "invert(100%) hue-rotate(180deg)" }
-  ],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": [],
+  ".theme-dark .pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": [],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div": [
     {
       "property": "background-color",
       "value": "var(--background-secondary-alt)"
-    },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   ],
   ".theme-dark .pdf-container.mod-themed .popupWrapper > div::after": [
@@ -10795,11 +10781,7 @@
   ".popupWrapper > div": [
     { "property": "margin", "value": "var(--size-4-3)" },
     { "property": "background-color", "value": "var(--background-primary)" },
-    { "property": "border-radius", "value": "var(--radius-s)" },
-    {
-      "property": "filter",
-      "value": "drop-shadow(0px 0px 1px #000000) drop-shadow(0px 1px 2px #000000)\n    drop-shadow(0px 4px 6px #000000)"
-    }
+    { "property": "border-radius", "value": "var(--radius-s)" }
   ],
   ".popupWrapper > div:after": [
     { "property": "background", "value": "var(--background-primary)" },
@@ -11263,12 +11245,7 @@
     { "property": "top", "value": "0" },
     { "property": "inset-inline-end", "value": "0" }
   ],
-  ".theme-dark .mermaid > svg": [
-    {
-      "property": "filter",
-      "value": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    }
-  ],
+  ".theme-dark .mermaid > svg": [],
   ".markdown-source-view.mod-cm6 .cm-hmd-codeblock": [
     { "property": "--indentation-guide-editing-indent", "value": "0" }
   ],
@@ -13513,7 +13490,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
@@ -13545,7 +13521,6 @@
   ],
   ".metadata-property-value .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13558,7 +13533,6 @@
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" },
     { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
     {
       "property": "text-decoration-color",
@@ -13583,7 +13557,6 @@
   ],
   ".cm-s-obsidian span.cm-formatting-link.cm-url": [
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13592,7 +13565,6 @@
     { "property": "word-break", "value": "break-all" }
   ],
   ".cm-s-obsidian span.cm-url": [
-    { "property": "filter", "value": "var(--link-external-filter)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     {
       "property": "text-decoration-line",
@@ -13629,8 +13601,7 @@
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
-    { "property": "opacity", "value": "var(--link-unresolved-opacity)" },
-    { "property": "filter", "value": "var(--link-unresolved-filter)" }
+    { "property": "opacity", "value": "var(--link-unresolved-opacity)" }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved .cm-underline": [
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
@@ -14365,8 +14336,7 @@
   ".markdown-preview-view .task-list-item-checkbox": [
     { "property": "position", "value": "relative" },
     { "property": "top", "value": "0.2em" },
-    { "property": "margin-inline-end", "value": "0.6em" },
-    { "property": "filter", "value": "hue-rotate(var(--checkboxbg))" }
+    { "property": "margin-inline-end", "value": "0.6em" }
   ],
   "ul > li.task-list-item": [{ "property": "list-style", "value": "none" }],
   "ul > li.task-list-item > p > .task-list-item-checkbox": [
@@ -21705,9 +21675,7 @@
     { "property": "margin", "value": "10px 0px 10px 0px" }
   ],
   "p": [{ "property": "padding-left", "value": "10px" }],
-  ".markdown-embed-content .task-list-item-checkbox": [
-    { "property": "filter", "value": "hue-rotate(var(--checkboxbg))" }
-  ],
+  ".markdown-embed-content .task-list-item-checkbox": [],
   ".workspace-tab-container-before": [
     { "property": "transition", "value": "background-color 100ms linear" },
     { "property": "height", "value": "100%" },
@@ -22651,8 +22619,7 @@
   "div[aria-label=\"Minimize\"] svg rect": [
     { "property": "opacity", "value": "0.7" },
     { "property": "stroke", "value": "var(--text-accent2)" },
-    { "property": "fill", "value": "var(--text-accent2)" },
-    { "property": "filter", "value": "saturate(100)" }
+    { "property": "fill", "value": "var(--text-accent2)" }
   ],
   "div[aria-label=\"Restore down\"] svg rect": [
     { "property": "fill", "value": "none" },
@@ -22667,7 +22634,6 @@
   "div[aria-label=\"Close window\"]": [
     { "property": "color", "value": "red" },
     { "property": "opacity", "value": "0.7" },
-    { "property": "filter", "value": "saturate(100)" },
     { "property": "stroke", "value": "red" }
   ],
   ".is-translucent.theme-light .titlebar": [
@@ -22678,7 +22644,6 @@
   ],
   ".is-translucent img": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "filter", "value": "contrast(1.12) brightness(0.74)" },
     { "property": "opacity", "value": "1" }
   ],
   ".is-translucent .workspace-split.mod-root": [
@@ -22856,81 +22821,62 @@
     { "property": "font-size", "value": "13px" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-link": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-internal-link": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-url": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-escape-backslash": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-inline-code": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line.HyperMD-codeblock": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-builtin": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-footref": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line pre.HyperMD-footnote span.cm-hmd-footnote": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-highlight": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" },
     { "property": "background-color", "value": "transparent" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-highlight": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" },
     { "property": "background-color", "value": "transparent" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-list": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-quote": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-math": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.hmd-fold-math-placeholder": [
-    { "property": "filter", "value": "saturate(0.7)" },
     { "property": "opacity", "value": "0.7" }
   ],
   ".CodeMirror-activeline": [{ "property": "opacity", "value": "1" }],
@@ -24754,8 +24700,7 @@
     {
       "property": "transform",
       "value": "translateY(-6px) scale(var(--direction), 1)"
-    },
-    { "property": "filter", "value": "drop-shadow(0px 6px 2px #000000)" }
+    }
   ],
   ".canvas-control-item:hover": [
     { "property": "color", "value": "var(--text-normal)" },
