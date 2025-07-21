@@ -17,6 +17,13 @@ const declarationsToFilter = [
   "text-rendering",
   "-webkit-overscroll-behavior",
   "overscroll-behavior",
+  "-webkit-backdrop-filter",
+  "-webkit-mask-image",
+  "-webkit-mask-composite",
+  "-webkit-mask-size",
+  "-webkit-mask-position",
+  "-webkit-mask-repeat",
+  "-webkit-mask-origin",
 ];
 
 export function convert(css, fullMode = false) {
