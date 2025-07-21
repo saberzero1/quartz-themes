@@ -875,9 +875,6 @@ body {
       text-decoration-line: var(--link-external-decoration);
       background-position: center right;
       background-repeat: no-repeat;
-      background-image:
-        linear-gradient(transparent, transparent),
-        url(public/images/6155340132a851f6089e.svg);
       background-size: 0.825em;
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
@@ -885,9 +882,6 @@ body {
       transition: opacity 0.15s ease-in-out;
       color: var(--external-link);
       font-weight: 500;
-      background-image:
-        linear-gradient(transparent, transparent),
-        url("https://i.imgur.com/As68C4R.png");
       background-size: 21px;
       cursor: pointer;
       background-position: left;

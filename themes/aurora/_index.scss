@@ -81,7 +81,6 @@ html[saved-theme="dark"] {
     --interactive-accent: #893cf5;
     --interactive-accent-hover: #893cf5;
     --tag-background: #a7b0b3;
-    --bg-sub-accent-55: #5db4dc;
     --bg-accent-55: #893cf5;
     --text-highlight-bg: var(--bg-accent-55);
     --background-modifier-border: #202020;
@@ -955,11 +954,6 @@ body {
       background-size: 5px 5px;
       color: var(--text-normal);
       text-decoration: none;
-      background-image: linear-gradient(
-        to bottom,
-        var(--bg-sub-accent-55) 0%,
-        var(--bg-sub-accent-55) 100%
-      );
       transition: background 350ms ease-in-out;
 
       &:hover {

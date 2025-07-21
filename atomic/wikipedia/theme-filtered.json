@@ -1923,10 +1923,6 @@
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 12 12'%3e%3ctitle%3e external link %3c/title%3e%3cpath fill='%2336c' d='M6 1h5v5L8.86 3.85 4.7 8 4 7.3l4.15-4.16L6 1ZM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z'/%3e%3c/svg%3e\")"
-    },
     { "property": "background-position-y", "value": "50%" }
   ],
   ".markdown-rendered .internal-link": [

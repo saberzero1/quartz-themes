@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7344,10 +7312,6 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    },
     { "property": "border-radius", "value": "5px" },
     { "property": "background-color", "value": "var(--accent-color-light1)" }
   ],
@@ -7365,12 +7329,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13575,10 +13534,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13588,10 +13543,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18741,7 +18692,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21710,10 +21660,6 @@
   ],
   ".theme-light.is-frameless.is-hidden-frameless .titlebar:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21727,10 +21673,6 @@
   ],
   ".theme-light div.app-container:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21744,10 +21686,6 @@
   ],
   ".theme-light .titlebar-button-container:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21761,10 +21699,6 @@
   ],
   ".theme-light .workspace-split.mod-left-split .workspace-sidedock-vault-profile:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21778,10 +21712,6 @@
   ],
   ".theme-light .workspace-leaf:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21795,10 +21725,6 @@
   ],
   ".theme-light div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-container > div > div:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21812,10 +21738,6 @@
   ],
   ".theme-light div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div > div:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21830,10 +21752,6 @@
   ".mod-macos.theme-light .workspace-tab-header-container:not(.workspace-split):before": [
     { "property": "content", "value": "\"\"" },
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "opacity", "value": "0.5" },
@@ -21846,10 +21764,6 @@
   ],
   ".theme-dark.is-frameless.is-hidden-frameless .titlebar:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21863,10 +21777,6 @@
   ],
   ".theme-dark div.app-container:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21880,10 +21790,6 @@
   ],
   ".theme-dark .titlebar-button-container:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21897,10 +21803,6 @@
   ],
   ".theme-dark .workspace-split.mod-left-split .workspace-sidedock-vault-profile:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21914,10 +21816,6 @@
   ],
   ".theme-dark .workspace-leaf:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21931,10 +21829,6 @@
   ],
   ".theme-dark div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-container > div > div:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21948,10 +21842,6 @@
   ],
   ".theme-dark div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div > div:before": [
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "content", "value": "\"\"" },
@@ -21966,10 +21856,6 @@
   ".mod-macos.theme-dark .workspace-tab-header-container:not(.workspace-split):before": [
     { "property": "content", "value": "\"\"" },
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "opacity", "value": "0.1" },
@@ -21991,10 +21877,6 @@
     { "property": "content", "value": "\"\"" },
     { "property": "border-radius", "value": "0.4em" },
     { "property": "padding-left", "value": "10px" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),\n    url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" }
   ],
@@ -22003,10 +21885,6 @@
     { "property": "position", "value": "relative" },
     { "property": "border-radius", "value": "0.4em" },
     { "property": "padding-left", "value": "10px" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),\n    url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" }
   ],
@@ -22017,10 +21895,6 @@
     { "property": "margin-bottom", "value": "0.5em" },
     { "property": "content", "value": "\"\"" },
     { "property": "padding-left", "value": "10px" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),\n    url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "transition", "value": "all 1s" }
@@ -22032,10 +21906,6 @@
     { "property": "margin-bottom", "value": "0.5em" },
     { "property": "content", "value": "\"\"" },
     { "property": "padding-left", "value": "10px" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),\n    url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "transition", "value": "all 1s" }
@@ -22759,10 +22629,6 @@
   ".theme-dark .canvas-wrapper:not(.mod-readonly) .canvas-node:not(.is-editing) .canvas-node-container:before": [
     { "property": "content", "value": "\"\"" },
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "opacity", "value": "0.1" },
@@ -22776,10 +22642,6 @@
   ".theme-light .canvas-wrapper:not(.mod-readonly) .canvas-node:not(.is-editing) .canvas-node-container:before": [
     { "property": "content", "value": "\"\"" },
     { "property": "background-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "repeat" },
     { "property": "background-size", "value": "182px" },
     { "property": "opacity", "value": "0.3" },

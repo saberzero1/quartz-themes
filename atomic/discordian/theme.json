@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1194,23 +1172,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1219,10 +1191,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7344,10 +7312,6 @@
     { "property": "background-color", "value": "#000000" },
     { "property": "border", "value": "1px solid #202225" },
     { "property": "border-radius", "value": "6px" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E\")"
-    },
     { "property": "background-repeat", "value": "no-repeat, repeat" },
     {
       "property": "background-position",
@@ -7383,12 +7347,7 @@
       "value": "var(--background-modifier-form-field-highlighted)"
     }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13716,16 +13675,11 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "unset" },
     { "property": "padding-right", "value": "0" }
   ],
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -14614,11 +14568,7 @@
     { "property": "border", "value": "1px solid hsla(227, 58%, 65%, 1)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-size", "value": "70%" },
-    { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg), -webkit-transform: rotate(360deg), transform: rotate(360deg),' preserveAspectRatio='xMidYMid meet' viewBox='0 0 20 20'%3E%3Cpath d='M0 11l2-2l5 5L18 3l2 2L7 18z' fill='%23fff'/%3E%3C/svg%3E\")"
-    }
+    { "property": "background-repeat", "value": "no-repeat" }
   ],
   "input[type=\"checkbox\"][data-indeterminate=\"true\"]:not(:checked):after": [
     { "property": "content", "value": "\"\"" },
@@ -18962,7 +18912,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [

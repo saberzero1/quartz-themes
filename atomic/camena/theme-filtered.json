@@ -2024,7 +2024,6 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     { "property": "padding-inline-end", "value": "0" }
   ],
   ".markdown-rendered .internal-link": [

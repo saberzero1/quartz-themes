@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1147,23 +1125,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1172,10 +1144,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7089,11 +7057,7 @@
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
-    { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
+    { "property": "padding", "value": "var(--dropdown-padding)" }
   ],
   "select:focus": [
     {
@@ -7109,12 +7073,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13316,10 +13275,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13329,10 +13284,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18519,7 +18470,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21918,12 +21868,7 @@
   "body:not(.is-mobile) button:not(.ant-btn):not(.ant-switch):not(.excalidraw button)": [
     { "property": "padding", "value": "4px 10px" }
   ],
-  "body:not(.is-mobile) button[class*=\"mod-\"]:not(.mod-cancel):not(.mod-destructive):not( .mod-bookmark ):not(.mod-secondary)": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)"
-    }
-  ],
+  "body:not(.is-mobile) button[class*=\"mod-\"]:not(.mod-cancel):not(.mod-destructive):not( .mod-bookmark ):not(.mod-secondary)": [],
   "body:not(.is-mobile) .checkbox-container": [
     {
       "property": "box-shadow",
@@ -21932,10 +21877,6 @@
   ],
   "body:not(.is-mobile) .checkbox-container.is-enabled": [
     { "property": "box-shadow", "value": "0px 0.5px 2.5px 0px #666666 inset" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(180deg, #666666 0%, #666666 67.71%)"
-    },
     { "property": "background-blend-mode", "value": "overlay, normal" }
   ],
   "body:not(.is-mobile) .checkbox-container::after": [
@@ -26697,10 +26638,6 @@
     { "property": "z-index", "value": "-1" },
     { "property": "mix-blend-mode", "value": "overlay" },
     { "property": "inset", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/jpeg,base64,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\")"
-    },
     { "property": "content", "value": "\"\"" }
   ],
   "body.mod-windows:not(.windows-mode-off):not(.is-mobile):not(.is-translucent) .horizontal-main-container": [
@@ -26728,8 +26665,7 @@
     { "property": "padding", "value": "6px 32px 6px 16px" }
   ],
   "body.mod-windows:not(.windows-mode-off):not(.is-mobile) button[class*=\"mod-\"]:not(.view-action)": [
-    { "property": "box-shadow", "value": "var(--input-shadow)" },
-    { "property": "background-image", "value": "none" }
+    { "property": "box-shadow", "value": "var(--input-shadow)" }
   ],
   "body.mod-windows:not(.windows-mode-off):not(.is-mobile) button[class*=\"mod-\"]:not(.view-action)::before": [
     { "property": "display", "value": "none" }

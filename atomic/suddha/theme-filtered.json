@@ -2129,10 +2129,6 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(\"/public/images/fdc8603….svg\")"
-    },
     { "property": "text-decoration", "value": "none" },
     { "property": "color", "value": "var(--color-accent-bright)" },
     { "property": "margin", "value": "0 0 0 0" },

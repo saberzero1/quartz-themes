@@ -2036,7 +2036,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "text-decoration-skip-ink", "value": "none" },
     { "property": "text-underline-offset", "value": "2px" },
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".markdown-rendered .internal-link": [

@@ -779,7 +779,6 @@ body {
     transition: opacity 0.15s ease-in-out;
     color: var(--text-normal);
     text-decoration-line: none;
-    background-image: none;
     font-variation-settings:
       "wght" 700,
       "SOFT" 100,
@@ -816,7 +815,6 @@ body {
       transition: opacity 0.15s ease-in-out;
       color: var(--text-normal);
       text-decoration-line: none;
-      background-image: none;
       font-variation-settings:
         "wght" 700,
         "SOFT" 100,
@@ -877,7 +875,6 @@ body {
         text-decoration-style: var(--link-unresolved-decoration-style);
         color: var(--text-normal);
         text-decoration-line: none;
-        background-image: none;
         font-variation-settings:
           "wght" 700,
           "SOFT" 100,
@@ -917,7 +914,6 @@ body {
       transition: opacity 0.15s ease-in-out;
       background-position-y: 4px;
       color: var(--link-external-color);
-      background-image: none;
       background-repeat: no-repeat;
       padding-right: 16px;
       cursor: var(--cursor-link);

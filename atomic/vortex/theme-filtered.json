@@ -1949,10 +1949,6 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "padding", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to bottom,\n    var(--sub-accent-60) 0%,\n    var(--sub-accent-60) 100%\n  )"
-    },
     { "property": "background-position", "value": "0 100%" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "100% 18%" },

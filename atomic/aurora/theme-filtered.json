@@ -1903,10 +1903,6 @@
     { "property": "background-size", "value": "5px 5px" },
     { "property": "color", "value": "var(--text-normal)" },
     { "property": "text-decoration", "value": "none" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to bottom,\n    var(--bg-sub-accent-55) 0%,\n    var(--bg-sub-accent-55) 100%\n  )"
-    },
     { "property": "transition", "value": "background 350ms ease-in-out" }
   ],
   ".markdown-rendered .internal-link": [

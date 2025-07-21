@@ -1843,10 +1843,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },

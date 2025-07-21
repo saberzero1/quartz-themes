@@ -869,9 +869,6 @@ body {
       transition: opacity 0.15s ease-in-out;
       will-change: opacity;
 
-      background-image:
-        linear-gradient(transparent, transparent),
-        url(public/images/6155340132a851f6089e.svg);
       caret-color: var(--accent-color);
       text-decoration: none;
       color: var(--link-external-color);

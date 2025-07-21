@@ -1968,11 +1968,7 @@
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "5px 5px" },
     { "property": "text-decoration", "value": "none" },
-    { "property": "transition", "value": "all 350ms ease" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to bottom,\n    var(--bg-sub-accent-55) 0%,\n    var(--bg-sub-accent-55) 100%\n  )"
-    }
+    { "property": "transition", "value": "all 350ms ease" }
   ],
   ".markdown-rendered .internal-link": [
     { "property": "color", "value": "var(--link-color)" },

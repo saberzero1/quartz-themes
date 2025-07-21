@@ -668,10 +668,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -686,10 +682,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -707,10 +699,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -725,10 +713,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -747,10 +731,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -890,7 +870,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -900,7 +879,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1147,23 +1125,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1172,10 +1144,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7237,10 +7205,6 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    },
     { "property": "background-color", "value": "var(--background-secondary)" },
     { "property": "border-radius", "value": "0px" },
     {
@@ -7270,12 +7234,7 @@
     { "property": "outline", "value": "1px dotted black" },
     { "property": "outline-offset", "value": "-4px" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -7518,10 +7477,6 @@
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD//wAAAACAgACAW77wAAAAAXRSTlMAQObYZgAAAEBJREFUCNdjgIIGGMGcACN4IxgY7L+GrWDgDA1NYGAKDQVKTw0DSlwFEsxhVxsYmCNUGxh4F3AlMPAxMCwAmwMAznsNJni8KusAAAAASUVORK5CYII=\")"
-    },
     { "property": "fill", "value": "transparent" },
     { "property": "background-size", "value": "115%" }
   ],
@@ -13573,10 +13528,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13586,10 +13537,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -16618,11 +16565,7 @@
     { "property": "transition", "value": "color 0.15s ease-in-out" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD///8AAICAAADEt9qwAAAAAXRSTlMAQObYZgAAADFJREFUCNdjQAJaq1YxMEwNDWNgig+/xsAZf/8ag2r4/zCg0N8wMAssBpYFq4PoQAUAERQSslDy7wcAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   ".search-input-clear-button:after": [
     { "property": "content", "value": "\"\"" },
@@ -18741,7 +18684,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21986,10 +21928,6 @@
     { "property": "height", "value": "11px" },
     { "property": "width", "value": "11px" },
     { "property": "content", "value": "\"\"" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/gif,base64,R0lGODlhDAAMAJEAAAAAAP///5mZmf///yH5BAEAAAMALAAAAAAMAAwAAAIbnI8TmSF83IMSKvFWw3dnHnFV+GVGhZZXmaoFADs=\")"
-    },
     { "property": "z-index", "value": "100" }
   ],
   ".workspace-tab-header:active": [
@@ -22184,15 +22122,10 @@
   ],
   "body:not(.native-scrollbars) ::-webkit-scrollbar-button:horizontal": [
     { "property": "width", "value": "18px" },
-    { "property": "background-image", "value": "var(--righticon)" },
     { "property": "background-repeat", "value": "no-repeat, repeat-x" }
   ],
-  "body:not(.native-scrollbars) ::-webkit-scrollbar-button:horizontal:decrement": [
-    { "property": "background-image", "value": "var(--lefticon)" }
-  ],
-  "body:not(.native-scrollbars) ::-webkit-scrollbar-button:decrement": [
-    { "property": "background-image", "value": "var(--upicon)" }
-  ],
+  "body:not(.native-scrollbars) ::-webkit-scrollbar-button:horizontal:decrement": [],
+  "body:not(.native-scrollbars) ::-webkit-scrollbar-button:decrement": [],
   "body:not(.native-scrollbars) ::-webkit-scrollbar-button:active": [
     { "property": "background-position", "value": "1px 1px" },
     {
@@ -22651,730 +22584,426 @@
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAACZAAD/AADMAADMMzOZZmb/mTP/ZgBt+AkRAAAAAXRSTlMAQObYZgAAAE1JREFUCNdjwAKCA0CkAQODmSKQNgRiZiUBBmYBBhBLESgABkbCQAGoEFRESAAmoAgREGBgAgmxFAMJBSB2A4kzAbGTAFQPI5hUgNsNAGpQBNLvuymXAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-file-down": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAACGhoYAAAB3d3fAwMD4+PjMzMyXl5fd3d3X19egoKTx8fHq6urj4+OysrLMADMA/wBmmQD/AADSUZVFAAAAAXRSTlMAQObYZgAAAHlJREFUGNNNzlkShCAMRdHOSALY0/4X64uWKH/3VKjktR4R3VE9hj2JtjnMgvkaz5hzxEoT1diCr4xMArGKoC3i+3NPoQIGmGX+P+6KxQeomrl7a+gCBKj1aiqQLOmtJuoMiEAASClgVVDvzPgAgPBb5c6TsPLMRSt3w74DMoItmakAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-git-fork": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAHlBMVEUAAAD///8AAADAwMCAgIAA/wD/AP+AgAAAgID/AABjp3oLAAAAAXRSTlMAQObYZgAAAHVJREFUKM9joAZgcUEBTgwsxigAKGAoiAxAAqZIQBEkEIwEwAJKSEARwwyIgBkcQFUkwwFUgKAZQFAMBXAV5lAAMwNuCkxAEcUMkIygYDMYwJwOVGIBBooIFbjMgAqA2ZOBAMWllkCAIoDDL5jRwKSECsiIWgBGrkG1BF4YgwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-file-audio": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEUAAAAEBASGhob//5nMzGbq6urAwMCAgAD///9mZgDj4+P//8wzMwCtqZDX19d3d3dfX185OTmafmh9AAAAAXRSTlMAQObYZgAAAHNJREFUGNNVzlsOwyAMRNHOGMzDpI/9b7Z2QmN1fpJ7hASPvbbA+N5dBJP/rdUl+6DWzmxb6jB5ZrRBdfbKaGtiYiB1Q2negq6fHwzxgS9cMMYoUgSABviAEJDPC3whizrj2luOt9Y4kLKfnjIQnYPv/PkC0r0DVnaSjFUAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-palette": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAAAAAD//wDAwMD///8AAP+AgID/AP//AAAA/wBujYICAAAAAXRSTlMAQObYZgAAAHhJREFUCNcljdEJwzAQQ3U//bZsLxCO0vbTB6X9Lc0EAQ8QAlkhK2SCQLbNxbkfnR5CAsCAdtL/ri+blQb+j0UDxMFniQSRXxu1k4C8b2ZGz86TdmNy4r4wFshzTeopyHeN1qoi77U6gdi7DnauMKnS9UZh0/HaPgCOXBAfgZgfGgAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-arrow-up-right": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEUAAACZmQD/zJkAAAD//8z//5kA//+GhoYEBAQAAP/MzGbAwMD///8AAIDx8fGAgAAuOpuWAAAAAXRSTlMAQObYZgAAAG5JREFUCNdjQABBQWEwzfjENcoAxJBatWrVQkFBBgYRp/J2F5dAAwYR9WMnSkMVgYyanOymIJBI2bFtTapgkWyoiPq2HfVgkaCK9p2TQAxVVaVrM4EMQSCQzZxowMBsDATXZhpALObNbIA6oYMBALaoH9E6LFUpAAAAAElFTkSuQmCC\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-timer": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAALVBMVEUAAACAAAD///8EBAT/AADx8fHMADP/fIAAAIDq6uqAgADAwMD/+/DMZmalACFZgzykAAAAAXRSTlMAQObYZgAAAIBJREFUCNdjYGBgFBQUYADR4iUuiSCWuIuhoIsjUKDMWElJsMyAgdFZSVtJScSAQdxZSQPISGYQN1LS0FINfMwgAmQsigxMBjM6dk8EMxaphgJFZJ21VENDgYoZXZR0QiPFDIAMw9BIwWQDBgYRF0FBN2OQpWJpaUABIGA2NgbSAH2uGCk/k94UAAAAAElFTkSuQmCC\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-rotate-ccw": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAAAzZv+Z//8zzP/M//////9WVqL5AAAAAXRSTlMAQObYZgAAAElJREFUCNdjIACUlBQgtLGxIQMDEwOTsaOgswADk4CyowCDiCEDU6KJAFAcyAgFykMYjlCGiwtQStmRgVFQUBDIEIAaKSiAxz4A8NUGq1G/4ZIAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-check-square": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD///+BgYEAAADEVPgKAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjQACuVasaGDhDQ0FELIioBRJX/wKJ71+BxP+rQKIeJBsbClEH0YEKAAp6En6nS+fDAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "115%" }
   ],
   "svg.svg-icon.lucide-scissors": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4jbWSwQoAIAhDZ/T/v2ynMsPKEnexQN62CEgSX+5DJeqUCuBlPssFuFX4dncDDgmY9XwGAABIIDao7p0VZwL1s5mgL+ilk8IfyaiwikhquZLtHyxFDTAmHAru+wbvAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "115%" }
   ],
   "svg.svg-icon.lucide-layout": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD///8AAIAAAAAlgsEwAAAAAXRSTlMAQObYZgAAACBJREFUCNdjQACtVatWQAjV1NAICKGe+h8nC0JAdMABABKnE2Z7QO/AAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-binary": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEUAAABVVVXMzMyAgID/+/D/AACGhoYAAAD///93d3eZmZnx8fHn59YzMzPq6urAwMCysrLX19cN9e+UAAAAAXRSTlMAQObYZgAAAHFJREFUGNNVjEESwyAMA8GO6+IAgf9/tkINBxYuu5pxIuXzh8LwJaHnfsWt555baylZKhfBHiXD33CvPRgMhifYJUMBS5dgUDVddFVhMJ9zPkNdncGSPuAINsaAOsI+6otaGYD1Xis+QmYosoEy5A3CD7abBPbugWlKAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-terminal": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAAAAAADAwMCAgID///8AAP8JRgk4AAAAAXRSTlMAQObYZgAAAEBJREFUCNdjgAMlKGBQFAQDYQZl01BVVdVQY4QIgiHiKCgCZjiKiEAZQAlHqAiEIQIUEoHpEkLWjrDCGALgrgAAfh0MRyov3jIAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-layout-dashboard": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEUAAAD///8EBAQAM2bMzMwAAP+GhoYAAIAzZv/M///MzP/AwMAAMzMAgAAAzAAzmf8AgICAAAD3moCxAAAAAXRSTlMAQObYZgAAAFFJREFUGNN1zVsKgDAMRNE4baPpS93/ZhUUnFR6/nIJjPwkD5L2jUFWD6ILi08Iry9YNlimcN8dRuFAbw0USkGDcUCtlT9U9VQNk9noQDCQ0QUpkwO59WG8KQAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-text-select": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAPFBMVEUAAACZmZl3d3f/+/Dn59bMzMxVVVXM//8cHBwAAGYAmf8zM//AwMBmZmYz//8A//9NTU0iIiLq6upfX1//6M6mAAAAAXRSTlMAQObYZgAAAHpJREFUGNNdjtsSwyAIBaWAEC+paf//X3twYpPJvjisO0oKXosvhilEOCCFiXs/SCUEa8dszcxhhHMeA/On2b57J2JRzRDcjMhJAoirAPwsIM5HD9r6WcAMfMt9o1msxWopaP6Cmeu7oFlCwTRLZDAcJkNcRIPjbmpKP5V7BMAGmCiYAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-box-select": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAD///8AAAAAALbq2WGyAAAAAXRSTlMAQObYZgAAACFJREFUCNdj0Fq1agWDamhoBIRQ////BnGsvxAdCAJsFACj2R0b4+fVWwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-refresh-cw": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD4+Pj//5kAAACGhobMzMwzmQAAZmYAmWb///9EkQSpAAAAAXRSTlMAQObYZgAAAFpJREFUCNdjYHABAQYgcBQUFBQxgDAUVSZDGEnCxgZgRppiKIghlJaWJApiqDemKaqCGOJCSUIQEUVFdbCIkFCSOFhEUS2xXRWmCyaiCBGB6nINBQEgwxgMDADwbhZxyVhIOgAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-file-text": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAD1BMVEUAAAD///+BgYEAAADBwcHsWkoGAAAAAXRSTlMAQObYZgAAAFlJREFUKM+lzsEJwDAIheG3QjpBNR0gkBHa/WeqYF4PFuLB7/jzEAEonXDSlh6DjhCkx3CMcGNOBrpXUCcM/wUH2UI3C5PcMNkfTup/tOof1UUM1/PxMA0BL2PXKaa60kNOAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-book-up": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVQ4jaVTQQ7AIAgD4sP9eXdwZhVQltiDM0BLIU7kEvqzDjteJeCJwYAdisCXLu+xVsMSAjz55MtkHaOyHKAQgea7wDxCkoJGsUkAyEm6ZQoad8d2hLHG3oc6o42QajIGlg8nIKJ+hE8biH32oK6eNFNxjexA04qPWaI5whQ8OF3Fq0d0+6/UeAA0WDd/oGlX5wAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-file": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAD///8AAAD//5mGhobMzMz//8wlzX+PAAAAAXRSTlMAQObYZgAAAD1JREFUCNdjwAJcgADMcBQUFFGAMYSgDCMlBTBDWDgUwjA0NAUzhIWFRcEMQ5wibjAR11AgADGUQEABYTcA+AEL5TaXpPQAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-file-plus": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAD///8AAAD//5mGhobMzMz//8wlzX+PAAAAAXRSTlMAQObYZgAAAD1JREFUCNdjwAJcgADMcBQUFFGAMYSgDCMlBTBDWDgUwjA0NAUzhIWFRcEMQ5wibjAR11AgADGUQEABYTcA+AEL5TaXpPQAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-move-vertical": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAAAAIBI3zrvAAAAAXRSTlMAQObYZgAAAB1JREFUCNdjgABGBgbmBgb2A0AGMgKKAMWBDDgAAEFuApw8CYALAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "125%" }
   ],
   "svg.svg-icon.lucide-search": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEUAAAAAAADAx8gDyHSLAAAAAXRSTlMAQObYZgAAADtJREFUCNdjAAPGAFEgMUESymINCXVgYAtJdWAQDQ0NYIiMTA2BEJKhQCI0JDSEIdWBDUqEOrCGMMABAO1IDK5kWHxVAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-arrow-up": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVQ4jd2RSw6AIAwFR+ONuBN3KnfyTM8NmoKCn43GSbqg5E1agE8TogTocdgkBetLxlY42nqAYKIl2QmKMMCc+x2JR76qFXxtTJVg8JO07ror3OXvgpTOBYcvm7n0C++zAHiZLoXUp9tyAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "115%" }
   ],
   "svg.svg-icon.lucide-arrow-down": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAa0lEQVQ4jd2SYQqAMAiFNbqRd1pncmfazvT6sRVC06BBQe+XTv32QIm+FnsFScAR18xu7xLRVYkoxQ5CQPt+FnCjHwBWm9jVDWRrfAlsoxSQSku23F9rfA8jCBSAFKA7i9z5kKfDJ2Rm+B3tU4goxLUNvXgAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "115%" }
   ],
   "svg.svg-icon.lucide-archive": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAG1BMVEUAAAAAAAAEBATMzGb//5n//8yAgIDAwMD/zJmsfrm6AAAAAXRSTlMAQObYZgAAAGBJREFUCNc9jbENwCAMBA0T5JukTbwBQtmAgjqS+1BRswODxwaRa/w6F0eKA0DGUWvdiPgEMxp5eexbyMfIzDZuEQmu6Ug5h2FS6tPk3/RpojLMBaOtRFlRbY35zosd+ACUvBLvN8qL1AAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-clipboard-check": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAAAAADMzJn///9mZjOGhoatqZDMzMyZmWb//5nMmQDn59b//8wAM8z/zDMAAP+ZZgBmZgB3d3ek0gHOAAAAAXRSTlMAQObYZgAAAHJJREFUGNNtj0EShCAMBJ1kAyayqPv/x25I0Iv2hZqmiyqWd8zsuMfHMVaMMzYzm56ngcqKEM20924H6BKYzKJtjTaiQmWK3BKEyHthJ0X2wsoqDBexvdh3/gHwIt4THUmtLtZA+DtwsSCQmrhIcPH4+B8nSQQAY0IcqwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-clipboard-type": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAAAAADMzJn///9mZjOGhoatqZDMzMyZmWb//5nMmQDn59b//8wAM8z/zDMAAP+ZZgBmZgB3d3ek0gHOAAAAAXRSTlMAQObYZgAAAHJJREFUGNNtj0EShCAMBJ1kAyayqPv/x25I0Iv2hZqmiyqWd8zsuMfHMVaMMzYzm56ngcqKEM20924H6BKYzKJtjTaiQmWK3BKEyHthJ0X2wsoqDBexvdh3/gHwIt4THUmtLtZA+DtwsSCQmrhIcPH4+B8nSQQAY0IcqwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-copy": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAG1BMVEUAAAD///+GhoYAAADMzMz//5kAAP8AM5kzZv+BlZDyAAAAAXRSTlMAQObYZgAAAFdJREFUCNdjwARMSkoKEIagoDKUIapoAGaIFxqBZZkCA4OAsiCR8iKQLFhEotHYGCwiKirizMDk4uIUlpbmzMBsbGwkKirqDDYBLAIEQFkXEAMkC9QFAwCEhQ8ImESPBgAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-files": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAG1BMVEUAAAD///+GhoYAAADMzMz//5kAAP8AM5kzZv+BlZDyAAAAAXRSTlMAQObYZgAAAFdJREFUCNdjwARMSkoKEIagoDKUIapoAGaIFxqBZZkCA4OAsiCR8iKQLFhEotHYGCwiKirizMDk4uIUlpbmzMBsbGwkKirqDDYBLAIEQFkXEAMkC9QFAwCEhQ8ImESPBgAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-list-ordered": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAAD///8AAADMzMwzZv8AAP8AAICGhobn59YAM5kzmf+LLtRyAAAAAXRSTlMAQObYZgAAAEVJREFUCNdjgINQCAhiiHIBAyeGNAhIYigUEgQBIyBDxBHKUJEUElIEMSRnNkJEBDsacagRhKkRhKopNgYDIwYlKIC7AgCHVBjTL91VgwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-list": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAAD///8AAADMzMwzZv8AAP8AAICGhobn59YAM5kzmf+LLtRyAAAAAXRSTlMAQObYZgAAAEVJREFUCNdjgINQCAhiiHIBAyeGNAhIYigUEgQBIyBDxBHKUJEUElIEMSRnNkJEBDsacagRhKkRhKopNgYDIwYlKIC7AgCHVBjTL91VgwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.links-coming-in": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAAAAADAwMCAAABabDR/AAAAAXRSTlMAQObYZgAAAEFJREFUCNdjCA1gYGVYtYRBiiE0MjSVgXHqqkgGxqWhmQyMWauWMjCEhoYAJRhSwUogioHgABAzfwAS/H/AXAQBAPUBEVPO8uBCAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-ruler": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAa0lEQVQ4jdWPwQ2AMAwDjZTBM1TH8E7mQVtVQaD6wQNLfSXnXAEjmZCzf4MlKiL8kgGTEAmvZMKC1AtICNj4zoBV4MzrvZas2uraPlwuR8Q+/FPtCn+vvcTX7jnWEhJobZrV+VYs7ccSZ/kE5+Hi019O0IYAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-picture-in-picture-2": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4jb2SUQqEMAxEX8Qbmfu1+9M7uGdKz5T9ULFVFrUFH4TQQmYmpdCJgHvP+AgwzUB+Pp6/IBA7EkRIKXkLZuaAD+3uC+8JiEhVbQl8rYLxjnPFZ2mq+iBB6Rzq82WCyjnsCTbuCWxbhLXHg0DO//+xmQH7zuW9qiKc3vVlfhScVWu4005UAAAAAElFTkSuQmCC\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-separator-horizontal": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVklEQVQ4je2Syw2AQAhEH2Y7ssE9QQ1aE9SEh7UBwcSL7z6fTAaaCGR25ANgP4B4Lo8TBGajwQRVzQrunkBu9fTF9wYDwMzqDv+Ia8SIwo9vBGhc+QUu/0aBk+6DyCUAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-separator-vertical": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVQ4je2SuQ2AQAwEx+g6ogfXdZF7gJrsmkxAbCQwEWLS1T7BQhOBzI59AKwbEPftsYPAbCyYYGZZ4e5Z6e6eQC7P20/+gE8EDICI+seqeqkL0LjyCxy2VEZ0ravdfgAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-link": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAACVBMVEUAAAAAAADBwcEtjAGeAAAAAXRSTlMAQObYZgAAACdJREFUCNdjIBuwhogGACmplVlLgFRmaGgmkErJWikJ5UHlYCopBABLYgmn0DGfgAAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-git-merge": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJ1BMVEUAAABVVVUAAP////93d3fMzMzq6uqGhobx8fH/+/CZmZkzMzPn59betX1gAAAAAXRSTlMAQObYZgAAAGBJREFUCNdjcC8vYAADZ+OFUMYM6Q0QhlKUEIQxLVVAQQEsoibABGak9QgogRiuoaECLOXlDAyCgoICLMZWAmANLJaNuyEMI9WFUJG0QKiIUiKEYZZxEMIIDYVIMQLNAAB5ARH8325TSwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-plus-circle": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAALVBMVEUAAAAAAADMzMz///+ZmWb//5nMzJmGhoYzZv///8wAAP9mZjOZ//8zzP8zmf8mc5seAAAAAXRSTlMAQObYZgAAAGNJREFUCNdjQAYsLi4OHSCGs+XMKWdAAhNnpqXdZSgv9xTblubyjqHYZGJ2totjB0Oxp5DYNkFBQYZiQVXFREWg0mKl4CAhMMMUCMCMjoiODlSRVVGrVoEYRUpAAGIIggGSEwCXLxueZhhMpAAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-info": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAALVBMVEUAAAAAAADMzMz///+ZmWb//5nMzJmGhoYzZv///8wAAP9mZjOZ//8zzP8zmf8mc5seAAAAAXRSTlMAQObYZgAAAGNJREFUCNdjQAYsLi4OHSCGs+XMKWdAAhNnpqXdZSgv9xTblubyjqHYZGJ2totjB0Oxp5DYNkFBQYZiQVXFREWg0mKl4CAhMMMUCMCMjoiODlSRVVGrVoEYRUpAAGIIggGSEwCXLxueZhhMpAAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-gallery-vertical": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAD///8AAAD//5mGhobMzMyAAAD//8zrvzCcAAAAAXRSTlMAQObYZgAAAEpJREFUCNdjwAZYXFxcHMAMQUFBJxjDUYEhIQ3IEFZSgogYmgYxMABFhIWFg8AihoaGQSA1wqgiDEgihUARMCMUCEAMJiUQgFsNAD9FDV3dD6giAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.links-going-out": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAAAAADAwMCAAABabDR/AAAAAXRSTlMAQObYZgAAAD9JREFUCNdjCA1gYGVYtYRBiiE0MjSVgXHqqkgGxqWhmQyMWauWMjCEhoYAJRhSwUogioHgAArB/wdIMH8AcwHwjRFThfgVWwAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-external-link": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAAAAAADAwMCAAABabDR/AAAAAXRSTlMAQObYZgAAAD9JREFUCNdjCA1gYGVYtYRBiiE0MjSVgXHqqkgGxqWhmQyMWauWMjCEhoYAJRhSwUogioHgAArB/wdIMH8AcwHwjRFThfgVWwAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-sort-asc": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAD///8EBAQzZv+ZzP+AAADMAAD/AABEb/RjAAAAAXRSTlMAQObYZgAAAEBJREFUCNdjgANjIFBgYGNgMBQUFFFgSE+AMNjSgqAirAz4GCYuLi5ghhIQgBgQAGEwGytAGYIwhgiUwQRWDAcAB3EIpndeGUQAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-folder-tree": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD//5kAAAD/////zACGhoZmZgAAAIDMmQDMzMwAM8wAM5lKj+uFAAAAAXRSTlMAQObYZgAAAGxJREFUCNdjCA0NZQCDYGNTBYbyAjDDiIGBHcQQUlLgWl3OEGxoOFOBobqAIVhYWFIBLGVolqYA1iWcKJiWlgYSSRQEAgWQiLOji4cCg5JSookIkAFUlejo4tIBZgAFICIuLi1gESUQADKgAADRkBcLTgPjnwAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-sliders-horizontal": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAACAgIDAwMAAAAD///+w70kVAAAAAXRSTlMAQObYZgAAAC9JREFUCNdjwAcYBYFAGMRwAQIQg0FESUnRACznpAQUAAuBBMBCygwEGczGDHgBAEVoA8k8wzXXAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "115%" }
   ],
   "svg.svg-icon.lucide-wand-2": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAD///8AAACAgIAAAP//AAD//wAAvwDx28/ZAAAAAXRSTlMAQObYZgAAAFJJREFUCNdjAANjAzDFbCyoAOYaCikZgGhBJTCfOU0Joo4pTRkEgCJCYKDAwKwIAspAhiAICIMYgYKO4iCGqKiIiDi6iAuIgVBsDAZAW5TAQAEA+fYL/LAAC7cAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-edit": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJ1BMVEUAAAAAAADAwMD/+/CAgID////q6urx8fHn59bMzAAAAMwAAP///wD/aHs6AAAAAXRSTlMAQObYZgAAAHhJREFUCNdjYBAAAQYGBsYQIAgEMlyFQUCAi8HV2NzY3EhgNZBhbJ5cJLWVwUkJBKSiGVyLzczTigR3AaXSyyw6BaUgUnMmCjK4JqdXZB6aIsDgalZmNidTkAEkpSkoKMAA1FUm2NEEYqRZVIAYUAOBDEZBIACqBQDTnhxDQpGUvgAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-folder-plus": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD/zADMAADMmQBmZgD//5kEBAT//8yZAAD///+rdvGcAAAAAXRSTlMAQObYZgAAAFhJREFUCNdjAAMmBgRAFVEAIxcXBiYmoBDL1NAEBg2wgIuTUmcTE4NrKBCARFzFxQWFhJiAjMJCQUMzBgWgiKCwsBEDUAQoYGwGYgAFIAygAJiRBgZI9gIAkj4PggzxT+sAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-mic": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAAAAAACAgID///8AgIAAmczAwMBVVVVfX18A///MzJnREucMAAAAAXRSTlMAQObYZgAAAF1JREFUCNdjAAOlDgjNpKxWAGEYLYIwOLSEBMAMj0R1MIPFtFwQLOAsCJFgMQxkgAiIToQImApKKikAGWqBDIzGIEWKAgxMZkAGkyAQKwIZQBpCgGSZkgSgDCMBBgALlQmNW1fl6AAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-code-2": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAAD////AwMCAgIAAAAAAgIAc7xoSAAAAAXRSTlMAQObYZgAAAFhJREFUCNddjdENgDAIBYm6QI0OIHYC6QAYXYH9V/GIJia9r8uDByJiIDAqpB0F1JE1olQmG8HsKRGBdEnxr/VLTeHwubzLtbE90LmokaTs+UK1mSHTncgDIpcPpryXiYoAAAAASUVORK5CYII=\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-tags": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAAAAAAD//////wCAgICrksu7AAAAAXRSTlMAQObYZgAAADpJREFUCNdjgAMWAShDgAXKcGDEIyIIAgJAESMQMGRgFFEGAUUGBiFHiAiDsCBMxAgqwghTwwDVjgEA6UwIGe0T1Y8AAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-trash-2": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEUAAACGhobMzMzn59ZNTU34+PgAgAAAAABmZmZVVVXAwMCtqZAzmTN3d3dmmWYpKSllg4LiAAAAAXRSTlMAQObYZgAAAH5JREFUCNdjYGAQFAQSIHpiqCCYLp8pDWaJhldO3ARiCakGzpRWUhVhEDZSCp24KRDIMLY5FBoq2MLAaJxlmKUoAWTYpC1LVuwoYWC0yjI21u0oYGAQPpWcJNECYpilPZJwZwAapJys1AJisDgpKbkAZUAsRZcPDGCWSzkDAwDc/RyD0VXO3gAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   "svg.svg-icon.lucide-edit-3": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEUAAAAAAAD//////wCAgABGKkibAAAAAXRSTlMAQObYZgAAAC5JREFUCNdjQAOMMIaQAFRAGcoQMhSACQhABRjRBQTRBdDMEHGEmi4IMx1CIwAA1R0DDYNNT2cAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-book-open": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAACAgAAAAACAgIDAwMD///8eqVfnAAAAAXRSTlMAQObYZgAAAFFJREFUCNctycENgDAMQ9GUDZoskNAJiFgACSbo/rvg1PXp61mw5sKZstrVWdY7agHmBRTC8A33KRoFr4plAB5cM6NAxjezQA5UwSoAC8Aq+AGycgrTo9r4bQAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-file-search": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWBAMAAAA2mnEIAAAAMFBMVEUAAAD///8AAACGhob//5nMzMwzmcyZ//8zZpmZzP/MAAAzzP/M////mQD/AABNTU1+jNGuAAAAAXRSTlMAQObYZgAAAIpJREFUGNNjQAbMxiAAZQsCgbACElsIiS2oAGWLiAgpKUHZjo6OoUEQtggIQNgg4WBjI5i4qNnMJJh48ESZCgUQG6jYTFC8ogkqbil4fEYSVNzyePmOJKi4WfnsjCaoePDubRlKUHHXb2lNrxSAbLCtSlr3FgHZoWAQtBYowaQEAVy3FBCeVULxOgCUKSNgSvUSVQAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "110%" }
   ],
   "svg.svg-icon.lucide-layout-grid": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEUAAAD///8AAAAzZv/MzMwAAP/n59YAM5kAAICGhoYzmf80iujOAAAAAXRSTlMAQObYZgAAAEJJREFUCNdjgINQCAhiiDIGAyOGDghoYpgoCAZODBOFDQWBCMQQFwQiIEO8PBGIgAzBtEQgIk7NFBcwcGJQggK4KwCayh1JjAo++wAAAABJRU5ErkJggg==\")"
-    }
+    { "property": "color", "value": "transparent" }
   ],
   ".menu-item-icon svg.svg-icon.lucide-bookmark": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAD1BMVEUAAAD//wAAAAAAvwCAgAArDRlMAAAAAXRSTlMAQObYZgAAAGpJREFUKM+1jMENgDAMA1HpAskEaSZAYgEqdf+ZKCVuxAPyws/z2cufySGoRwAycQAqkbyD3FojIlbVWVtkPo7gF8rjBYIrENxgGABSDNhCl1RIHFxl6mDd7gWPThkgmasGPHvPN8AkAGFOzLgM46tAbEgAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-bookmark-plus": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAD1BMVEUAAAD//wAAAAAAvwCAgAArDRlMAAAAAXRSTlMAQObYZgAAAGpJREFUKM+1jMENgDAMA1HpAskEaSZAYgEqdf+ZKCVuxAPyws/z2cufySGoRwAycQAqkbyD3FojIlbVWVtkPo7gF8rjBYIrENxgGABSDNhCl1RIHFxl6mDd7gWPThkgmasGPHvPN8AkAGFOzLgM46tAbEgAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   ".workspace-tab-header-inner-icon svg.svg-icon.lucide-bookmark": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD//5nMzGaZmQAAAAD/zJn//8wAAP8AAIDx8fFA+GAaAAAAAXRSTlMAQObYZgAAAFRJREFUCNdjQABjYwMwzTwtURjMMFJSUjI2NmZgMEsDASEHBjNBEAgCMwpLRSEiEoKBYBHx8nKYSCBERLS0VBTECASCUCDDSAkMHBhYXMDAgQEDAACaWRRACZ2ZugAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "110%" }
   ],
   "svg.svg-icon.lucide-settings": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAACAgACAgID//////wDAwMA8dePgAAAAAXRSTlMAQObYZgAAAG5JREFUCNdNyDsOgzAQhOEhkVJ7l4R+F+cAkVfpEZjevHrg/ncASxT8zXwa3HuGC9a7PI/6H8r6hJ9t53h+3Fl4Dw6qre3lQvB+tMCxAWskqpKAxcdpFsHvk3TjnoAvazOoy2ChjLUq0ouQKwi3DgVsDkwV1wBDAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-folder-open": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAD//5mZmQAAAAD4+Pj/zJnMzGbOFUBaAAAAAXRSTlMAQObYZgAAAFlJREFUCNdjQAAmJSUIQ8XFRQEs4Cgo6KSkpABmCLq4JIMYIJDMoAQGickMKkBuYJgZmBEoKmYGURMYqqwMZIiKioYmKwMNDAwMDU0yZoBqAzKYjcGAAQMAAFJmD+Pc+RvGAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-folder-closed": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVQ4jb1T2w2AIAw8jRuxk52pzATDMMH5ISSC8tLES0gI7T0gBfiIJW1UwbIokvdUoQqGEEi6uJSk0rmdwF04S6AKGrM3Dby3tzORM9kGAD2BvO5hrSAmW7ZrYQhF2zpF8gDMGwFzIU8lKJ2nE5TOwwlqzg/vvA6RKmQgDlLzGhWkMU9z/kak/0d+wQEBDz4+oW4zdQAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.sidebar-right": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAAAzZv8zmf+Z///M//8zzP9q4PQDAAAAAXRSTlMAQObYZgAAAENJREFUCNdjwA8UGJSUwAxFBhVHMENNQMUQSCkpqSaCGaqhoW4mIIaasXESWERQUFgRyAABIQEoQ5BBGcIQAErjsxAADBsHCzPYvG8AAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.sidebar-left": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAAAAAAAzZv8zmf+Z//8zzP8tl8U0AAAAAXRSTlMAQObYZgAAAEFJREFUCNdjwAeUlBgYwQwVRwZFCMOQyRHKUHFUUgQxjFxcXAzBIqbGxhCGsKGgIJjBaAhWrGzIIAhmAIUZGfACAO96Bp+OcnygAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.lucide-layout-list": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAAAAAAAzZv8zmf+Z//8zzP8tl8U0AAAAAXRSTlMAQObYZgAAAEFJREFUCNdjwAeUlBgYwQwVRwZFCMOQyRHKUHFUUgQxjFxcXAzBIqbGxhCGsKGgIJjBaAhWrGzIIAhmAIUZGfACAO96Bp+OcnygAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.help": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAACAAIDMAMwAAABmAGbAwMCZAJn/mf/n59aZmZn//wDWAJNmZmaZZjPMZsytqZD/zDOGhobMmTM1eNxEAAAAAXRSTlMAQObYZgAAAG5JREFUGNNVzVEOhSAMRFGHtjzoE1H3v1iHWDFOwse5IekSgyyf4ZdUvk4pRwq3poDKtLufLCJhbneFYNp9b5AVYSojy1p5HQAPZD76GKEa0+1OMxTr4P+jGs3w30oxQ+3DY6pMbOGZwm8Kv+nxBbR5A2SXmbJNAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-plus": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAD///8AAACGhobMzMwA/wAAgADko50aAAAAAXRSTlMAQObYZgAAAEZJREFUCNdjwATGxsZGYIahoKATnAEUNYAxjFAYLi5KSk5ABhCoBkEYSqpJSmCGamhoEISRmpaEkDJxAQLVJCcGJSiAWw4AEo4QxF6jaBIAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-zoom-out": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAD///8zZv8EBASZzP8AAICAAAD/AAD5potjAAAAAXRSTlMAQObYZgAAAExJREFUCNdjYGBQUgISIFpQEMxiEhQUFFFAZigKAoEziCEaGhqIYMClYIoNQAwXQUEXA7CBLi7GyWCjjY0ZyoBCYMCeDGUgCSUwwAAAD6kKzYSZbBMAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-zoom-in": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAD///8zZv8AAIAEBASZzP+AAAD/AABaDBHsAAAAAXRSTlMAQObYZgAAAFBJREFUCNdjYGBQUgISIFpQEMxiEhQUFFUAM4QNwQxFIEMwBMQQNjY2RDDgUjDFDiBGqKBgqAPYwNBQlxSw0S4uDGVAITBgT4EykIQSGGAAADM2C4mnOuTsAAAAAElFTkSuQmCC\")"
-    },
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-arrow-right": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWBAMAAAA2mnEIAAAAFVBMVEUAAAAAAAAzZv8zzP/M//8zmf+Z//+J/hX7AAAAAXRSTlMAQObYZgAAAEVJREFUGNNjoBwoILEVkdjKAgi2iiGEVgIClWQBiJgLEJgZQtjGIGAEllANBQJjiEmCQCBqhDBIFMkCISTzBZHsFSDHEwDtjQfKrO9Y+gAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.lucide-arrow-left": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAiUlEQVQ4je2TUQqAIBBEZ6MbeSc703qm9kzTTxSG2ip9BPVA0GV9DIsCP5+APc2TpylEdkldhEiuJNGZ2CXVAfHckqoCBiDZWav1WxIAkKa4JNXGmFNyJC5Jcdl7kEqdQQmE/eSQ2pKPoibO5XZcdAdtvWOxRa5p5WYd3H0QcSYd5tkPUpD/vIgN7cFBZoHWjZYAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.lucide-chevron-left": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAiUlEQVQ4je2TUQqAIBBEZ6MbeSc703qm9kzTTxSG2ip9BPVA0GV9DIsCP5+APc2TpylEdkldhEiuJNGZ2CXVAfHckqoCBiDZWav1WxIAkKa4JNXGmFNyJC5Jcdl7kEqdQQmE/eSQ2pKPoibO5XZcdAdtvWOxRa5p5WYd3H0QcSYd5tkPUpD/vIgN7cFBZoHWjZYAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   "svg.svg-icon.lucide-chevron-right": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWBAMAAAA2mnEIAAAAFVBMVEUAAAAAAAAzZv8zzP/M//8zmf+Z//+J/hX7AAAAAXRSTlMAQObYZgAAAEVJREFUGNNjoBwoILEVkdjKAgi2iiGEVgIClWQBiJgLEJgZQtjGIGAEllANBQJjiEmCQCBqhDBIFMkCISTzBZHsFSDHEwDtjQfKrO9Y+gAAAABJRU5ErkJggg==\")"
-    },
     { "property": "background-size", "value": "120%" }
   ],
   ".is-phone svg.svg-icon.lucide-plus-circle": [
     { "property": "background-size", "value": "100%" }
   ],
   "svg.svg-icon.lucide-layers": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAG1BMVEUAAACAgID/+/DAwMAAAAAAM8wzAJn///9mAP8R0egwAAAAAXRSTlMAQObYZgAAAElJREFUCNdjEAQDBgYGYWMgEAEx0kJbO8CM1HR3dzBDEKpKWAmiCsgAqwIxwKpADLAqMEMJCESAJkMZLi5QBgMDBgNiP4jhAgYAEDURQaxc6oIAAAAASUVORK5CYII=\")"
-    },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-position", "value": "center" },
     { "property": "color", "value": "transparent" }

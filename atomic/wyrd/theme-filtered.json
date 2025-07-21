@@ -1946,7 +1946,6 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "-webkit-text-stroke", "value": "0.02rem transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "border-radius", "value": "5px" },
     {
       "property": "border-top",

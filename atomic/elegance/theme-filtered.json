@@ -2090,10 +2090,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -2101,10 +2097,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "color", "value": "var(--external-link)" },
     { "property": "font-weight", "value": "500" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(\"https://i.imgur.com/As68C4R.png\")"
-    },
     { "property": "background-size", "value": "21px" },
     { "property": "cursor", "value": "pointer" },
     { "property": "background-position", "value": "left" },

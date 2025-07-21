@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1227,23 +1205,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1252,10 +1224,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7370,11 +7338,7 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    { "property": "cursor", "value": "pointer" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E\")"
-    }
+    { "property": "cursor", "value": "pointer" }
   ],
   "select:focus": [
     {
@@ -7390,12 +7354,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13608,10 +13567,6 @@
       "value": "var(--link-external-decoration)"
     },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13622,10 +13577,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18767,7 +18718,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -22023,19 +21973,11 @@
   ],
   ".MJX-TEX": [{ "property": "font-size", "value": "115%" }],
   ".cm-s-obsidian .HyperMD-header span.cm-underline": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" }
   ],
   ".cm-header .cm-underline": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" }
@@ -22095,60 +22037,36 @@
     { "property": "color", "value": "var(--h6-link-hover-color)" }
   ],
   ".markdown-preview-section h1 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
     { "property": "color", "value": "inherit" }
   ],
   ".markdown-preview-section h2 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
     { "property": "color", "value": "inherit" }
   ],
   ".markdown-preview-section h3 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
     { "property": "color", "value": "inherit" }
   ],
   ".markdown-preview-section h4 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
     { "property": "color", "value": "inherit" }
   ],
   ".markdown-preview-section h5 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
     { "property": "color", "value": "inherit" }
   ],
   ".markdown-preview-section h6 a.internal-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "8px 2px" },
@@ -22180,10 +22098,6 @@
   ],
   ".admonition-title-markdown a.internal-link": [
     { "property": "--font-weight", "value": "var(--callout-title-weight)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0.5em 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "4px 2px" },
@@ -22194,10 +22108,6 @@
   ],
   ".callout-title-inner a.internal-link": [
     { "property": "--font-weight", "value": "var(--callout-title-weight)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%,\n    color-mix(\n        in srgb,\n        currentColor var(--hx-link-ul-transparency-pct),\n        transparent\n      )\n      75%\n  )"
-    },
     { "property": "background-position", "value": "0.5em 1.04em" },
     { "property": "background-repeat", "value": "repeat-x" },
     { "property": "background-size", "value": "4px 2px" },
@@ -22210,10 +22120,6 @@
     { "property": "--font-weight", "value": "var(--callout-title-weight)" },
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "padding-inline-end", "value": "0px" },
-    {
-      "property": "background-image",
-      "value": "url(public/images/874d8b8e340f75575caa.svg),\n    linear-gradient(\n      to right,\n      color-mix(\n          in srgb,\n          currentColor var(--hx-link-ul-transparency-pct),\n          transparent\n        )\n        75%,\n      color-mix(\n          in srgb,\n          currentColor var(--hx-link-ul-transparency-pct),\n          transparent\n        )\n        75%\n    )"
-    },
     {
       "property": "background-position",
       "value": "center right,\n    0.5em 1.04em"
@@ -22228,10 +22134,6 @@
     { "property": "--font-weight", "value": "var(--callout-title-weight)" },
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "padding-inline-end", "value": "0px" },
-    {
-      "property": "background-image",
-      "value": "url(public/images/874d8b8e340f75575caa.svg),\n    linear-gradient(\n      to right,\n      color-mix(\n          in srgb,\n          currentColor var(--hx-link-ul-transparency-pct),\n          transparent\n        )\n        75%,\n      color-mix(\n          in srgb,\n          currentColor var(--hx-link-ul-transparency-pct),\n          transparent\n        )\n        75%\n    )"
-    },
     {
       "property": "background-position",
       "value": "center right,\n    0.5em 1.04em"

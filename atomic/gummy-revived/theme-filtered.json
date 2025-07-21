@@ -1803,10 +1803,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h2": [
@@ -1827,10 +1823,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h3": [
@@ -1851,10 +1843,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h4": [
@@ -1875,10 +1863,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h5": [
@@ -1899,10 +1883,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h6": [
@@ -1923,10 +1903,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h1 a": [{ "property": "--link-weight", "value": "var(--h1-weight)" }],
@@ -1946,7 +1922,6 @@
     },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -1961,10 +1936,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -1976,7 +1947,6 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -1994,7 +1964,6 @@
       "property": "text-decoration-style",
       "value": "var(--link-unresolved-decoration-style)"
     },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
