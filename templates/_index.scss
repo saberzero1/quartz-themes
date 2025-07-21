@@ -378,6 +378,7 @@ body {
 
   overflow: initial;
 
+  /*
   &::-webkit-scrollbar {
 
     //%%body.styled-scrollbars ::-webkit-scrollbar%%
@@ -412,6 +413,7 @@ body {
     //%%body.styled-scrollbars ::-webkit-scrollbar-corner%%
 
   }
+  */
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

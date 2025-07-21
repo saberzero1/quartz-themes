@@ -473,7 +473,6 @@ body {
   --strict-color-0: #000000;
   --strict-color-1: #101010;
   --strict-color-4: #404040;
-  --strict-color-6: #606060;
   --strict-color-separator: #404040;
   --strict-separator: 1px solid var(--strict-color-separator);
   --background-modifier-border: var(--strict-color-separator);
@@ -489,7 +488,6 @@ body {
   --code-value: #b5cea8;
   --scrollbar-bg: var(--strict-color-1);
   --scrollbar-thumb-bg: var(--strict-color-4);
-  --scrollbar-active-thumb-bg: var(--strict-color-6);
   --radius-m: 0;
   --radius-l: 0;
   --radius-s: 0;
@@ -708,39 +706,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

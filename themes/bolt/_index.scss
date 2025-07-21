@@ -69,7 +69,6 @@ html[saved-theme="dark"] {
     --primary: hsl(181, 80%, 41%);
     --primary-container: #2f8a8b;
     --secondary: #b0cccc;
-    --secondary-container: #156f73;
     --surface: #192e2e;
     --surface-variant: #2f3f3f;
     --tertiary: #b4c8e9;
@@ -152,7 +151,6 @@ html[saved-theme="light"] {
     --primary: #00696b;
     --primary-container: #5fb9bb;
     --secondary: #4a6363;
-    --secondary-container: #cce8e8;
     --surface: #eef5f3;
     --surface-variant: #dbe8e8;
     --tertiary: #4c5f7c;
@@ -439,7 +437,6 @@ body {
   --tag-background-hover: var(--tertiary-container);
   --checkbox-radius: 0.2rem;
   --scrollbar-thumb-bg: var(--surface-variant);
-  --scrollbar-active-thumb-bg: var(--secondary-container);
   contain: initial;
   height: auto;
   overflow: auto;
@@ -649,39 +646,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
