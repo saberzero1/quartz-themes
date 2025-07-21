@@ -783,6 +783,12 @@ html {
     background-color: var(--callout-content-background);
   }
 }
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  }
+}
 body {
   --quartz-text-highlight: var(
     --text-highlight-bg,
@@ -795,10 +801,7 @@ body {
 
   overflow: initial;
 
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
-
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     background-color: var(--scrollbar-bg);
     width: 12px;
     height: 12px;
@@ -806,7 +809,7 @@ body {
     background-color: transparent;
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-thumb-bg);
     -webkit-border-radius: var(--radius-l);
     background-clip: padding-box;
@@ -824,11 +827,11 @@ body {
     }
   }
 
-  ::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background-color: transparent;
   }
 
-  ::-webkit-scrollbar-corner {
+  &::-webkit-scrollbar-corner {
     background: transparent;
   }
 
