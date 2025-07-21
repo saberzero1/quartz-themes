@@ -583,10 +583,8 @@ body {
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
   --link-external-decoration-hover: underline;
-  --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
   --link-unresolved-opacity: 0.7;
-  --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
   --nav-item-size: var(--font-ui-small);
@@ -1114,7 +1112,6 @@ body {
 
       &.broken {
         color: var(--link-unresolved-color);
-        filter: var(--link-unresolved-filter);
         opacity: var(--link-unresolved-opacity);
         text-decoration-color: var(--link-unresolved-decoration-color);
         text-decoration-style: var(--link-unresolved-decoration-style);
@@ -1133,7 +1130,7 @@ body {
 
       background-position: center right;
       background-repeat: no-repeat;
-      background-image: linear-gradient(transparent, transparent);
+      background-image: transparent;
       background-color: transparent;
 
       cursor: var(--cursor-link);
@@ -1148,7 +1145,6 @@ body {
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
       cursor: var(--cursor-link);
-      filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
       background-image: none;
       padding-right: unset;

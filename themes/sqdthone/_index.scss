@@ -421,9 +421,7 @@ body {
   --link-external-color-hover: var(--text-accent-hover);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
-  --link-external-filter: none;
   --link-unresolved-opacity: 0.7;
-  --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
@@ -941,7 +939,6 @@ body {
       }
 
       &.broken {
-        filter: var(--link-unresolved-filter);
         opacity: var(--link-unresolved-opacity);
         text-decoration-style: var(--link-unresolved-decoration-style);
         color: hsl(var(--color-stop));
@@ -963,7 +960,7 @@ body {
 
       background-position: center right;
       background-repeat: no-repeat;
-      background-image: linear-gradient(transparent, transparent);
+      background-image: transparent;
       background-color: transparent;
 
       cursor: var(--cursor-link);
@@ -981,7 +978,6 @@ body {
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
       cursor: var(--cursor-link);
-      filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
 
       &:hover {
