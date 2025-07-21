@@ -24,6 +24,9 @@ const declarationsToFilter = [
   "-webkit-mask-position",
   "-webkit-mask-repeat",
   "-webkit-mask-origin",
+  "--link-external-filter",
+  "--link-unresolved-filter",
+  "filter",
 ];
 
 export function convert(css, fullMode = false) {

@@ -352,9 +352,7 @@ body {
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
   --link-external-decoration-hover: underline;
-  --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
-  --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
   --nav-item-size: var(--font-ui-small);
@@ -898,7 +896,6 @@ body {
 
       &.broken {
         color: var(--link-unresolved-color);
-        filter: var(--link-unresolved-filter);
         opacity: var(--link-unresolved-opacity);
         text-decoration-color: var(--link-unresolved-decoration-color);
         text-decoration-style: var(--link-unresolved-decoration-style);
@@ -917,7 +914,7 @@ body {
 
       background-position: center right;
       background-repeat: no-repeat;
-      background-image: linear-gradient(transparent, transparent);
+      background-image: transparent;
       background-color: transparent;
 
       cursor: var(--cursor-link);
@@ -931,7 +928,6 @@ body {
       background-size: 0.825em;
       padding-inline-end: 0.9em;
       cursor: var(--cursor-link);
-      filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
       background-image: url("data:image/svg+xml,charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8'?%3e%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 12 12'%3e%3ctitle%3e external link %3c/title%3e%3cpath fill='%2336c' d='M6 1h5v5L8.86 3.85 4.7 8 4 7.3l4.15-4.16L6 1ZM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z'/%3e%3c/svg%3e");
       background-position-y: 50%;
