@@ -960,11 +960,6 @@ body {
       background-size: 5px 5px;
       text-decoration: none;
       transition: all 350ms ease;
-      background-image: linear-gradient(
-        to bottom,
-        var(--bg-sub-accent-55) 0%,
-        var(--bg-sub-accent-55) 100%
-      );
 
       &:hover {
         color: var(--link-external-color-hover);

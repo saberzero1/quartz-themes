@@ -75,8 +75,6 @@ html[saved-theme="dark"] {
     --orange-hue: 35;
     --yellow-hue: 60;
     --green-hue: 115;
-    --blue-hue: 170;
-    --purple-hue: 250;
     --purple-pink-hue: 285;
     --pink-hue: 330;
     --primary-sat: 100%;
@@ -90,12 +88,9 @@ html[saved-theme="dark"] {
     --background-primary: var(--layer-2);
     --background-primary-alt: var(--layer-1);
     --background-secondary: var(--layer-1);
-    --blue: hsl(var(--blue-tuple));
-    --blue-tuple: var(--blue-hue), var(--primary-sat), var(--primary-lit);
     --checkbox-color-hover: var(--list-marker-color);
     --code-normal: var(--purple-pink);
     --code-size: 1em;
-    --gradientDegree: 135deg;
     --green: hsl(var(--green-tuple));
     --green-secondary-tuple:
       var(--green-hue), var(--secondary-sat), var(--secondary-lit);
@@ -126,11 +121,9 @@ html[saved-theme="dark"] {
     --pink-tuple: var(--pink-hue), var(--primary-sat), var(--primary-lit);
     --pinkSecondary: hsl(var(--pink-secondary-tuple));
     --prompt-border-color: transparent;
-    --purple: hsl(var(--purple-tuple));
     --purple-pink: hsl(var(--purple-pink-tuple));
     --purple-pink-tuple:
       var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
-    --purple-tuple: var(--purple-hue), var(--primary-sat), var(--primary-lit);
     --scrollbar-active-thumb-bg: var(--pink-300);
     --scrollbar-bg: var(--layer-2);
     --scrollbar-thumb-bg: var(--pink-100);
@@ -219,8 +212,6 @@ html[saved-theme="light"] {
     --orange-hue: 30;
     --yellow-hue: 40;
     --green-hue: 105;
-    --blue-hue: 200;
-    --purple-hue: 300;
     --purple-pink-hue: 310;
     --pink-hue: 330;
     --primary-sat: 100%;
@@ -234,12 +225,9 @@ html[saved-theme="light"] {
     --background-primary: var(--layer-2);
     --background-primary-alt: var(--layer-1);
     --background-secondary: var(--layer-1);
-    --blue: hsl(var(--blue-tuple));
-    --blue-tuple: var(--blue-hue), var(--primary-sat), var(--primary-lit);
     --checkbox-color-hover: var(--list-marker-color);
     --code-normal: var(--purple-pink);
     --code-size: 1em;
-    --gradientDegree: 135deg;
     --green: hsl(var(--green-tuple));
     --green-secondary-tuple:
       var(--green-hue), var(--secondary-sat), var(--secondary-lit);
@@ -270,11 +258,9 @@ html[saved-theme="light"] {
     --pink-tuple: var(--pink-hue), var(--primary-sat), var(--primary-lit);
     --pinkSecondary: hsl(var(--pink-secondary-tuple));
     --prompt-border-color: transparent;
-    --purple: hsl(var(--purple-tuple));
     --purple-pink: hsl(var(--purple-pink-tuple));
     --purple-pink-tuple:
       var(--purple-pink-hue), var(--primary-sat), var(--primary-lit);
-    --purple-tuple: var(--purple-hue), var(--primary-sat), var(--primary-lit);
     --scrollbar-active-thumb-bg: var(--pink-300);
     --scrollbar-bg: var(--layer-2);
     --scrollbar-thumb-bg: var(--pink-100);
@@ -1118,9 +1104,6 @@ body {
       text-decoration-line: var(--link-external-decoration);
       background-position: center right;
       background-repeat: no-repeat;
-      background-image:
-        linear-gradient(transparent, transparent),
-        url(public/images/6155340132a851f6089e.svg);
       background-size: 0.825em;
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
@@ -1245,11 +1228,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--pink) 0,
-      var(--orange) 100%
-    );
 
     font-size: 2rem;
   }
@@ -1273,11 +1251,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--orange) 0,
-      var(--yellow) 100%
-    );
 
     font-size: 1.75rem;
   }
@@ -1299,11 +1272,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--yellow) 0,
-      var(--green) 100%
-    );
 
     font-size: 1.6rem;
   }
@@ -1325,11 +1293,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--green) 0,
-      var(--blue) 100%
-    );
 
     font-size: 1.4rem;
   }
@@ -1351,11 +1314,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--blue) 0,
-      var(--purple) 100%
-    );
 
     font-size: 1.2rem;
   }
@@ -1377,11 +1335,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--purple) 0,
-      var(--pink) 100%
-    );
 
     font-size: 1.1rem;
   }
@@ -1540,11 +1493,6 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      background-image: linear-gradient(
-        var(--gradientDegree),
-        var(--yellow) 0,
-        var(--green) 100%
-      );
     }
 
     ul li {
@@ -1714,11 +1662,6 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        background-image: linear-gradient(
-          var(--gradientDegree),
-          var(--yellow) 0,
-          var(--green) 100%
-        );
 
         margin-block: 0;
       }
@@ -1761,11 +1704,6 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      background-image: linear-gradient(
-        var(--gradientDegree),
-        var(--yellow) 0,
-        var(--green) 100%
-      );
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;

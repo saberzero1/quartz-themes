@@ -94,7 +94,6 @@ html[saved-theme="light"] {
     --checkbox-color-hover: var(--mint);
     --link-text-shadow: var(--white);
     --link-text-color: var(--rich-black);
-    --link-ext-color: var(--mint);
   }
 }
 
@@ -971,11 +970,6 @@ body {
         -1px 1px 2px var(--link-text-shadow),
         1px -1px 2px var(--link-text-shadow),
         1px 1px 2px var(--link-text-shadow);
-      background-image: linear-gradient(
-        to bottom,
-        var(--link-ext-color) 0%,
-        var(--link-ext-color) 100%
-      );
 
       &:hover {
         color: var(--link-external-color-hover);

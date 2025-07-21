@@ -922,7 +922,6 @@ body {
     text-decoration-thickness: var(--link-decoration-thickness);
     cursor: var(--cursor-link);
     transition: opacity 0.15s ease-in-out;
-    background-image: none;
     font-variation-settings:
       "wght" 700,
       "SOFT" 100,
@@ -959,7 +958,6 @@ body {
       cursor: var(--cursor-link);
       text-decoration-line: var(--link-decoration);
       transition: opacity 0.15s ease-in-out;
-      background-image: none;
       font-variation-settings:
         "wght" 700,
         "SOFT" 100,
@@ -1019,7 +1017,6 @@ body {
         opacity: var(--link-unresolved-opacity);
         text-decoration-color: var(--link-unresolved-decoration-color);
         text-decoration-style: var(--link-unresolved-decoration-style);
-        background-image: none;
         font-variation-settings:
           "wght" 700,
           "SOFT" 100,
@@ -1059,9 +1056,6 @@ body {
       text-decoration-line: var(--link-external-decoration);
       background-position: center right;
       background-repeat: no-repeat;
-      background-image:
-        linear-gradient(transparent, transparent),
-        url(public/images/6155340132a851f6089e.svg);
       background-size: 0.825em;
       padding-inline-end: 0.9em;
       background-position-y: 0.25em;
@@ -1192,7 +1186,6 @@ body {
       var(--h1-color), var(--chalk-grey-accent), var(--h1-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 2rem;
@@ -1218,7 +1211,6 @@ body {
       var(--h2-color), var(--chalk-grey-accent), var(--h2-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 1.75rem;
@@ -1242,7 +1234,6 @@ body {
       var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 1.6rem;
@@ -1266,7 +1257,6 @@ body {
       var(--h4-color), var(--chalk-grey-accent), var(--h4-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 1.4rem;
@@ -1290,7 +1280,6 @@ body {
       var(--h5-color), var(--chalk-grey-accent), var(--h5-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 1.2rem;
@@ -1314,7 +1303,6 @@ body {
       var(--h6-color), var(--chalk-grey-accent), var(--h6-gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-header));
     width: fit-content;
 
     font-size: 1.1rem;
@@ -1484,7 +1472,6 @@ body {
         var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, var(--gradient-header));
       width: fit-content;
     }
 
@@ -1660,7 +1647,6 @@ body {
           var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, var(--gradient-header));
         width: fit-content;
 
         margin-block: 0;
@@ -1705,7 +1691,6 @@ body {
         var(--h3-color), var(--chalk-grey-accent), var(--h3-gradient-accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, var(--gradient-header));
       width: fit-content;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));

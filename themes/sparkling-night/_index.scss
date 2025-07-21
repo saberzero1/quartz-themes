@@ -92,7 +92,6 @@ html[saved-theme="dark"] {
     --h6-color: var(--tropical-indigo);
     --inline-code-color: var(--bright-green);
     --interactive-accent: var(--tropical-indigo);
-    --link-ext-color: var(--tropical-indigo);
     --link-text-color: var(--white);
     --link-text-shadow: var(--raisin-black);
     --radius-s: 3px;
@@ -188,7 +187,6 @@ html[saved-theme="light"] {
     --h6-color: var(--tropical-indigo);
     --inline-code-color: var(--bright-green);
     --interactive-accent: var(--tropical-indigo);
-    --link-ext-color: var(--tropical-indigo);
     --link-text-color: var(--white);
     --link-text-shadow: var(--raisin-black);
     --radius-s: 3px;
@@ -1065,11 +1063,6 @@ body {
         -1px 1px 2px var(--link-text-shadow),
         1px -1px 2px var(--link-text-shadow),
         1px 1px 2px var(--link-text-shadow);
-      background-image: linear-gradient(
-        to bottom,
-        var(--link-ext-color) 0%,
-        var(--link-ext-color) 100%
-      );
 
       &:hover {
         color: var(--link-external-color-hover);
