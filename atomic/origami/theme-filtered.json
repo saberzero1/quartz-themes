@@ -206,18 +206,13 @@
     { "property": "--font-text-size", "value": "16px" },
     { "property": "--font-mermaid", "value": "var(--font-text)" },
     { "property": "margin", "value": "0" },
-    { "property": "overscroll-behavior", "value": "none" },
     { "property": "padding", "value": "0" },
     { "property": "width", "value": "100%" },
-    { "property": "text-rendering", "value": "optimizeLegibility" },
     { "property": "font-family", "value": "var(--font-interface)" },
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "font-size", "value": "var(--font-ui-medium)" },
     { "property": "background-color", "value": "var(--background-primary)" },
     { "property": "color", "value": "var(--text-normal)" },
-    { "property": "-webkit-tap-highlight-color", "value": "#ffffff" },
-    { "property": "user-select", "value": "none" },
-    { "property": "-webkit-user-select", "value": "none" },
     { "property": "caret-color", "value": "var(--caret-color)" },
     { "property": "--zoom-factor", "value": "1" },
     { "property": "--titlebar-height", "value": "30px" },
@@ -1477,7 +1472,6 @@
     { "property": "background", "value": "transparent" }
   ],
   "input[type=\"search\"]": [
-    { "property": "-webkit-app-region", "value": "no-drag" },
     {
       "property": "background",
       "value": "var(--background-modifier-form-field)"
@@ -1800,7 +1794,6 @@
   ],
   ".markdown-rendered code": [
     { "property": "font-size", "value": "var(--code-size)" },
-    { "property": "-webkit-box-decoration-break", "value": "clone" },
     {
       "property": "font-feature-settings",
       "value": "\"calt\", \"liga\", \"ss01\", \"ss02\", \"ss03\", \"ss04\", \"ss05\", \"ss06\", \"ss07\",\n    \"ss08\", \"ss09\""

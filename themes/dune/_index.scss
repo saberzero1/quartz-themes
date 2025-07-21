@@ -561,18 +561,13 @@ body {
     var(--font-monospace-default);
   --font-text-size: 16px;
   margin: 0;
-  overscroll-behavior: none;
   padding: 0;
   width: 100%;
-  text-rendering: optimizeLegibility;
   font-family: var(--font-interface);
   line-height: var(--line-height-tight);
   font-size: var(--font-ui-medium);
   background-color: var(--background-primary);
   color: var(--text-normal);
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  user-select: none;
-  -webkit-user-select: none;
   caret-color: var(--caret-color);
   --code-color: var(--text-muted);
   --h1-color: var(--header-col);
@@ -1143,7 +1138,6 @@ body {
     line-height: var(--h1-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 2rem;
   }
@@ -1165,7 +1159,6 @@ body {
     line-height: var(--h2-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 1.75rem;
   }
@@ -1185,7 +1178,6 @@ body {
     line-height: var(--h3-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 1.6rem;
   }
@@ -1205,7 +1197,6 @@ body {
     line-height: var(--h4-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 1.4rem;
   }
@@ -1225,7 +1216,6 @@ body {
     line-height: var(--h5-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 1.2rem;
   }
@@ -1245,7 +1235,6 @@ body {
     line-height: var(--h6-line-height);
     color: #c66102;
     page-break-after: avoid;
-    text-rendering: optimizeLegibility;
 
     font-size: 1.1rem;
   }
@@ -1350,7 +1339,6 @@ body {
     border-radius: var(--code-radius);
     font-size: var(--code-size);
     padding: 0.15em 0.3em;
-    -webkit-box-decoration-break: clone;
     background-color: var(--codebg-col);
     border: 1px solid gray;
 
@@ -1402,7 +1390,6 @@ body {
       line-height: var(--h3-line-height);
       color: #c66102;
       page-break-after: avoid;
-      text-rendering: optimizeLegibility;
     }
 
     ul li {
@@ -1416,6 +1403,7 @@ body {
     @media all and ($mobile) {
       margin-top: calc((var(--quartz-themes-title-font-size) - 10px) / 4);
       &:not(.collapsed) > .explorer-content {
+        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
@@ -1476,10 +1464,12 @@ body {
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
+        -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
         background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
+        -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
         padding-inline-start: var(
@@ -1545,7 +1535,7 @@ body {
           align-self: center;
           background: var(--icon-color);
           mask-image: var(--file-icon);
-
+          -webkit-mask-image: var(--file-icon);
           margin-inline-end: 0.5rem;
         }
       }
@@ -1569,7 +1559,6 @@ body {
         line-height: var(--h3-line-height);
         color: #c66102;
         page-break-after: avoid;
-        text-rendering: optimizeLegibility;
 
         margin-block: 0;
       }
@@ -1610,7 +1599,6 @@ body {
       line-height: var(--h3-line-height);
       color: #c66102;
       page-break-after: avoid;
-      text-rendering: optimizeLegibility;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1625,7 +1613,7 @@ body {
     --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
-
+    -webkit-mask-image: var(--readermode-icon);
     width: 24px;
     height: 24px;
   }
@@ -1638,7 +1626,7 @@ body {
     --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
-
+    -webkit-mask-image: var(--graph-icon);
     width: 24px;
     height: 24px;
   }
@@ -1670,7 +1658,6 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
 
-      -webkit-app-region: no-drag;
       background: var(--background-modifier-form-field);
       border: var(--input-border-width) solid var(--background-modifier-border);
       border-radius: var(--input-radius);
@@ -1933,15 +1920,18 @@ body {
   }
 
   user-select: text;
+  -webkit-user-select: text;
 }
 :root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
+    -webkit-mask-image: var(--sun-icon);
   }
 }
 :root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
+    -webkit-mask-image: var(--moon-icon);
   }
 }
 :root:root:root {

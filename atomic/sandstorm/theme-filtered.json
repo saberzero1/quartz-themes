@@ -248,7 +248,6 @@
       "property": "--vault-profile-color-hover",
       "value": "var(--vault-profile-color)"
     },
-    { "property": "overscroll-behavior", "value": "none" },
     { "property": "caret-color", "value": "var(--caret-color)" },
     { "property": "--direction", "value": "1" },
     { "property": "--anim-duration-none", "value": "0" },
@@ -1209,15 +1208,11 @@
     { "property": "margin", "value": "0" },
     { "property": "padding", "value": "0" },
     { "property": "width", "value": "100%" },
-    { "property": "text-rendering", "value": "optimizeLegibility" },
     { "property": "font-family", "value": "var(--font-interface)" },
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "font-size", "value": "var(--font-ui-medium)" },
     { "property": "background-color", "value": "var(--background-primary)" },
     { "property": "color", "value": "var(--text-normal)" },
-    { "property": "-webkit-tap-highlight-color", "value": "#ffffff" },
-    { "property": "user-select", "value": "none" },
-    { "property": "-webkit-user-select", "value": "none" },
     { "property": "--zoom-factor", "value": "1" },
     { "property": "--titlebar-height", "value": "30px" },
     { "property": "--pill-focus-width", "value": "calc(100% + 6px)" },
@@ -1404,7 +1399,6 @@
     { "property": "background-color", "value": "var(--background-primary)" }
   ],
   "input[type=\"search\"]": [
-    { "property": "-webkit-app-region", "value": "no-drag" },
     {
       "property": "background",
       "value": "var(--background-modifier-form-field)"
@@ -1723,8 +1717,7 @@
     { "property": "background-color", "value": "var(--code-background)" },
     { "property": "border-radius", "value": "var(--code-radius)" },
     { "property": "font-size", "value": "var(--code-size)" },
-    { "property": "padding", "value": "0.1em 0.25em" },
-    { "property": "-webkit-box-decoration-break", "value": "clone" }
+    { "property": "padding", "value": "0.1em 0.25em" }
   ],
   ".markdown-rendered pre": [
     {

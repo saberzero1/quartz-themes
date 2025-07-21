@@ -1211,18 +1211,13 @@
     { "property": "--font-text-size", "value": "16px" },
     { "property": "--font-mermaid", "value": "var(--font-text)" },
     { "property": "margin", "value": "0" },
-    { "property": "overscroll-behavior", "value": "none" },
     { "property": "padding", "value": "0" },
     { "property": "width", "value": "100%" },
-    { "property": "text-rendering", "value": "optimizeLegibility" },
     { "property": "font-family", "value": "var(--font-interface)" },
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "font-size", "value": "var(--font-ui-medium)" },
     { "property": "background-color", "value": "var(--background-primary)" },
     { "property": "color", "value": "var(--text-normal)" },
-    { "property": "-webkit-tap-highlight-color", "value": "#ffffff" },
-    { "property": "user-select", "value": "none" },
-    { "property": "-webkit-user-select", "value": "none" },
     { "property": "caret-color", "value": "var(--caret-color)" },
     { "property": "--zoom-factor", "value": "1" },
     { "property": "--titlebar-height", "value": "30px" },
@@ -1599,7 +1594,6 @@
     { "property": "background-color", "value": "var(--background-primary)" }
   ],
   "input[type=\"search\"]": [
-    { "property": "-webkit-app-region", "value": "no-drag" },
     {
       "property": "background",
       "value": "var(--background-modifier-form-field)"
@@ -1906,8 +1900,7 @@
     {
       "property": "border",
       "value": "var(--code-border-width) solid var(--code-border-color)"
-    },
-    { "property": "-webkit-box-decoration-break", "value": "clone" }
+    }
   ],
   ".markdown-rendered pre": [
     { "property": "position", "value": "relative" },
