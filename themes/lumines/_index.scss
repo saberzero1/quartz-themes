@@ -1083,7 +1083,6 @@ body {
       cursor: var(--cursor-link);
       transition: opacity 0.15s ease-in-out;
       padding-right: unset;
-      background-image: none;
 
       &:hover {
         color: var(--link-external-color-hover);

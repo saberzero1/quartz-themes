@@ -1060,13 +1060,11 @@ body {
       background-position-y: 0.25em;
       cursor: var(--cursor-link);
       transition: opacity 0.15s ease-in-out;
-      background-image: none;
       padding-right: 0;
 
       &:hover {
         color: var(--link-external-color-hover);
 
-        background-image: none;
         padding-right: 0;
         color: var(--link-external-color-hover);
         text-decoration-line: var(--link-external-decoration-hover);

@@ -27,6 +27,7 @@ const declarationsToFilter = [
   "--link-external-filter",
   "--link-unresolved-filter",
   "filter",
+  "background-image",
 ];
 
 export function convert(css, fullMode = false) {
