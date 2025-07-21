@@ -8,6 +8,17 @@ import stripComments from "../packages/strip-css-comments.mjs";
 import createStatic from "../../util/static-custom-properties.mjs";
 import postcss from "postcss";
 
+const declarationsToFilter = [
+  "-webkit-box-decoration-break",
+  "-webkit-app-region",
+  "-webkit-tap-highlight-color",
+  "-webkit-user-select",
+  "user-select",
+  "text-rendering",
+  "-webkit-overscroll-behavior",
+  "overscroll-behavior",
+];
+
 export function convert(css, fullMode = false) {
   if (fullMode) {
     // Preprocess the CSS
@@ -106,6 +117,11 @@ function parseCssWithPostCSS(cssString) {
       property: decl.property.replace(/\s+/gms, " ").trim(),
       value: decl.value,
     }));
+
+    // Filter out unwanted declarations
+    declarations = declarations.filter((decl) => {
+      return !declarationsToFilter.includes(decl.property);
+    });
 
     rule.selectors.forEach((selector) => {
       const trimmedSelector = selector.replace(/\s+/gms, " ").trim();
