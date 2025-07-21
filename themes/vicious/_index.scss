@@ -1023,6 +1023,7 @@ body {
 
     cursor: var(--cursor-link);
     transition: opacity 0.15s ease-in-out;
+    will-change: opacity;
     background-position: center right;
     background-repeat: no-repeat;
 
@@ -1129,6 +1130,7 @@ body {
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       transition: opacity 0.15s ease-in-out;
+      will-change: opacity;
 
       color: var(--link-external-color);
       text-decoration-line: var(--link-external-decoration);
@@ -1198,6 +1200,7 @@ body {
     height: var(--checkbox-size);
     position: relative;
     transition: box-shadow 0.15s ease-in-out;
+    will-change: box-shadow;
   }
   input[type="checkbox"]:hover,
   input[type="checkbox"]:active,
@@ -1548,6 +1551,7 @@ body {
         }
         & > svg {
           opacity: 0.001;
+          will-change: opacity;
           position: absolute;
         }
         &:before {
