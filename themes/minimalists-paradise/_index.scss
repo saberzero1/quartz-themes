@@ -1349,11 +1349,11 @@ body {
           border-radius: 0.25rem;
         }
       }
-      li:has(> .folder-outer:not(.open)) > .folder-container:before {
+      li > .folder-outer > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
       }
-      li:has(> .folder-outer.open) > .folder-container:before {
+      li > .folder-outer.open > .folder-container:before {
         background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
       }
