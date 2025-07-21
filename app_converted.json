@@ -42,8 +42,6 @@
     { "property": "gap", "value": "8px" }
   ],
   ".messageBar > div::before": [
-    { "property": "-webkit-mask-image", "value": "var(--message-bar-icon)" },
-    { "property": "-webkit-mask-size", "value": "cover" },
     { "property": "background-color", "value": "CanvasText" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "inline-block" },
@@ -69,8 +67,6 @@
     { "property": "width", "value": "32px" }
   ],
   ".messageBar .closeButton::before": [
-    { "property": "-webkit-mask-image", "value": "var(--closing-button-icon)" },
-    { "property": "-webkit-mask-size", "value": "cover" },
     { "property": "background-color", "value": "ButtonText" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "inline-block" },
@@ -426,7 +422,6 @@
     { "property": "--highlight-bg-color", "value": "transparent" },
     { "property": "--highlight-selected-backdrop-filter", "value": "none" },
     { "property": "--highlight-selected-bg-color", "value": "transparent" },
-    { "property": "-webkit-backdrop-filter", "value": "none" },
     { "property": "backdrop-filter", "value": "none" },
     { "property": "background-color", "value": "transparent" },
     { "property": "border-radius", "value": "4px" },
@@ -446,7 +441,6 @@
     { "property": "border-radius", "value": "0" }
   ],
   ".textLayer .highlight.selected": [
-    { "property": "-webkit-backdrop-filter", "value": "none" },
     { "property": "backdrop-filter", "value": "none" },
     { "property": "background-color", "value": "transparent" }
   ],
@@ -510,7 +504,6 @@
     { "property": "outline", "value": "1.5px solid LinkText" }
   ],
   ".annotationLayer .linkAnnotation:hover": [
-    { "property": "-webkit-backdrop-filter", "value": "invert(100%)" },
     { "property": "backdrop-filter", "value": "invert(100%)" }
   ],
   ".annotationLayer .linkAnnotation > a:hover": [
@@ -524,7 +517,6 @@
     { "property": "outline", "value": "1.5px solid CanvasText" }
   ],
   ".annotationLayer .highlightArea:hover::after": [
-    { "property": "-webkit-backdrop-filter", "value": "invert(100%)" },
     { "property": "backdrop-filter", "value": "invert(100%)" },
     { "property": "content", "value": "\"\"" },
     { "property": "height", "value": "100%" },
@@ -5818,7 +5810,6 @@
     { "property": "display", "value": "none" }
   ],
   ".workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-title": [
-    { "property": "-webkit-mask-image", "value": "unset" },
     { "property": "font-size", "value": "14.992px" },
     { "property": "font-weight", "value": "400" },
     { "property": "order", "value": "3" },
@@ -9152,10 +9143,6 @@
     { "property": "--background-modifier-form-field", "value": "#fb464c1a" }
   ],
   ".pdf-findbar .mod-pending::before": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12a9 9 0 1 1-6.219-8.56\"></path></svg>')"
-    },
     { "property": "animation", "value": "rotation 1s infinite linear" }
   ],
   ".is-phone .pdf-findbar": [{ "property": "overflow", "value": "none" }],
@@ -12565,13 +12552,6 @@
     { "property": "box-shadow", "value": "0 0 0 2px #fb464c99" }
   ],
   "input[type=\"checkbox\"]:checked:after": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url('data:image/svg+xml, utf8, <svg width=\"12px\" height=\"10px\" viewBox=\"0 0 12 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g transform=\"translate%28-4.000000, -6.000000%29\" fill=\"%23000000\"><path d=\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\"></path></g></g></svg>')"
-    },
-    { "property": "-webkit-mask-position", "value": "52% 52%" },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
-    { "property": "-webkit-mask-size", "value": "65%" },
     { "property": "background-color", "value": "#ffffff" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -14453,11 +14433,6 @@
   ],
   ".search-input-container": [{ "property": "position", "value": "relative" }],
   ".search-input-container:before": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27currentColor%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27><circle cx=%2711%27 cy=%2711%27 r=%278%27></circle><line x1=%2721%27 y1=%2721%27 x2=%2716.65%27 y2=%2716.65%27></line></svg>\")"
-    },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "#666666" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -14493,11 +14468,6 @@
     { "property": "width", "value": "28px" }
   ],
   ".search-input-clear-button:after": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "url(\"data:image/svg+xml,<svg viewBox=%270 0 12 12%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3.8705 3.09766L6.00003 5.22718L8.12955 3.09766L8.9024 3.8705L6.77287 6.00003L8.9024 8.12955L8.12955 8.9024L6.00003 6.77287L3.8705 8.9024L3.09766 8.12955L5.22718 6.00003L3.09766 3.8705L3.8705 3.09766Z%27 fill=%27currentColor%27/></svg>\")"
-    },
-    { "property": "-webkit-mask-repeat", "value": "no-repeat" },
     { "property": "background-color", "value": "currentColor" },
     { "property": "content", "value": "\"\"" },
     { "property": "display", "value": "block" },
@@ -18287,10 +18257,6 @@
   ],
   "body.is-tablet .mobile-navbar": [{ "property": "display", "value": "none" }],
   ".mobile-navbar-text": [
-    {
-      "property": "-webkit-mask-image",
-      "value": "linear-gradient(\n    to left,\n    rgba(0, 0, 0, 0) 16px,\n    #000000 32px\n  )"
-    },
     { "property": "font-size", "value": "14.992px" },
     { "property": "padding", "value": "4px 0" },
     { "property": "text-overflow", "value": "clip" },
