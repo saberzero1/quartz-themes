@@ -99,7 +99,6 @@ html[saved-theme="dark"] {
     --link-external-color: var(--orange-60);
     --link-external-color-hover: var(--orange-50);
     --scrollbar-thumb-bg: var(--black-60);
-    --scrollbar-active-thumb-bg: var(--black-80);
     --text-normal: var(--white-80);
     --text-muted: var(--white-70);
     --text-faint: var(--white-60);
@@ -187,7 +186,6 @@ html[saved-theme="light"] {
     --background-modifier-border-focus: transparent;
     --icon-color: var(--black-80);
     --scrollbar-thumb-bg: var(--black-60);
-    --scrollbar-active-thumb-bg: var(--black-80);
     --accent-h: 11;
     --accent-s: 100%;
     --accent-l: 60%;
@@ -380,7 +378,6 @@ body {
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 12px;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
@@ -718,39 +715,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

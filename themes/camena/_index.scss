@@ -423,7 +423,6 @@ body {
   --nav-item-color: var(--color-base-50);
   --nav-item-color-active: var(--color-base-60);
   --p-spacing: calc(var(--line-height-normal) * 1rem);
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100) / 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100) / 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100) / 0.1);
   --text-highlight-bg-rgb: var(--accent-rgb);
@@ -695,39 +694,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);

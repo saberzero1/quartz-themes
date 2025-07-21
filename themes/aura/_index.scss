@@ -533,7 +533,6 @@ body {
   --h5-size: 1em;
   --h6-size: 1em;
   --hr-color: rgb(var(--cpt-aura));
-  --scrollbar-active-thumb-bg: rgba(var(--cpt-crust), 0.7);
   --scrollbar-thumb-bg: rgba(var(--cpt-crust), 0.5);
   --font-default: "iA Writer Quattro S";
   --font-monospace: "iA Writer Mono";
@@ -746,39 +745,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
