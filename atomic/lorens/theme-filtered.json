@@ -1974,10 +1974,6 @@
     { "property": "position", "value": "absolute" },
     { "property": "z-index", "value": "var(--layer-popover)" },
     {
-      "property": "-webkit-backdrop-filter",
-      "value": "blur(12px) saturate(190%) contrast(50%)\n    brightness(130%)"
-    },
-    {
       "property": "backdrop-filter",
       "value": "blur(12px) saturate(190%) contrast(50%) brightness(130%)"
     },
@@ -2003,10 +1999,6 @@
     { "property": "max-width", "value": "var(--prompt-max-width)" },
     { "property": "max-height", "value": "var(--prompt-max-height)" },
     { "property": "overflow", "value": "hidden" },
-    {
-      "property": "-webkit-backdrop-filter",
-      "value": "blur(12px) saturate(190%) contrast(50%)\n    brightness(130%)"
-    },
     {
       "property": "backdrop-filter",
       "value": "blur(12px) saturate(190%) contrast(50%) brightness(130%)"

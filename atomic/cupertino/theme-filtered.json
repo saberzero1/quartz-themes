@@ -1420,7 +1420,6 @@
     { "property": "max-height", "value": "var(--popover-max-height)" },
     { "property": "position", "value": "absolute" },
     { "property": "z-index", "value": "var(--layer-popover)" },
-    { "property": "-webkit-backdrop-filter", "value": "blur(16px)" },
     { "property": "backdrop-filter", "value": "blur(16px)" },
     { "property": "border-radius", "value": "var(--radius-l)" },
     {
