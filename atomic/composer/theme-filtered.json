@@ -1965,10 +1965,6 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7 7 17 7 17 17'%3E%3C/polyline%3E%3C/svg%3E\")"
-    },
     { "property": "background-position", "value": "right center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "line-height", "value": "var(--line-height-normal)" },

@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -2208,23 +2186,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -2233,10 +2205,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -9277,11 +9245,7 @@
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
-    { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
+    { "property": "padding", "value": "var(--dropdown-padding)" }
   ],
   "select:focus": [
     {
@@ -9297,12 +9261,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -15274,10 +15233,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -15287,10 +15242,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -20395,7 +20346,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -24874,7 +24824,6 @@
   "div.is-live-preview input[type=\"checkbox\"]:not([data-task=\"x\"]):not( [data-task=\" \"] ):checked::after": [
     { "property": "align-items", "value": "center" },
     { "property": "background-color", "value": "var(--icon-mask-color)" },
-    { "property": "background-image", "value": "var(--icon-image)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "var(--icon-content-color)" },
@@ -24891,7 +24840,6 @@
   "li:not([data-task=\"x\"]):not([data-task=\" \"]) > input[type=\"checkbox\"]:checked::after": [
     { "property": "align-items", "value": "center" },
     { "property": "background-color", "value": "var(--icon-mask-color)" },
-    { "property": "background-image", "value": "var(--icon-image)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "var(--icon-content-color)" },
@@ -24908,7 +24856,6 @@
   "li:not([data-task=\"x\"]):not([data-task=\" \"]) > p > input[type=\"checkbox\"]:checked::after": [
     { "property": "align-items", "value": "center" },
     { "property": "background-color", "value": "var(--icon-mask-color)" },
-    { "property": "background-image", "value": "var(--icon-image)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "color", "value": "var(--icon-content-color)" },
@@ -26908,9 +26855,7 @@
   ".oldAndroid .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher .workspace-drawer-vault-name": [
     { "property": "color", "value": "var(--keyboardButtonIconColor)" }
   ],
-  ".enableNewIcons .mod-root .workspace-tab-header-container-inner .workspace-tab-header": [
-    { "property": "background-image", "value": "none" }
-  ],
+  ".enableNewIcons .mod-root .workspace-tab-header-container-inner .workspace-tab-header": [],
   ".enableNewIcons .clickable-icon[aria-label]": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
@@ -26941,15 +26886,13 @@
       "property": "background-size",
       "value": "calc(var(--sidebarTabHeight) * 0.8)"
     },
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconStack)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .sidebar-toggle-button .clickable-icon": [
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-size", "value": "80% auto" },
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSidebarToggle)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-leaf-content :is(.view-header-nav-buttons, .view-actions) .clickable-icon": [
     {
@@ -26976,216 +26919,157 @@
     }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Settings\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSettings)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Help\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconHelp)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open another vault\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconAnotherVault)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label*=\"Toggle Focus Mode\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconFocus)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open homepage\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconHome)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open graph view\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconGraph)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Insert template\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconTemplate)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open command palette\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconCommandPalette)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open today\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconToday)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Files\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconFileExplorer)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Recent Files\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconRecentFiles)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Bookmarks\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconStarred)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Tags\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconTags)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Search\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSearch)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"New note\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconNote)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"New folder\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconNewFolder)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Change sort order\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSortOrder)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Collapse all\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconExpand)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Expand all\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconCollapse)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .nav-action-button.reveal-active-file-button": [
-    { "property": "background-size", "value": "24px" },
-    { "property": "background-image", "value": "var(--iconActiveFile)" }
+    { "property": "background-size", "value": "24px" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Match case\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconCase)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Explain search term\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconHelp)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Collapse results\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconExpand)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Show more context\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconPlus)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Copy search results\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconCopy)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Show nested tags\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconNested)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Navigate back\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconBack)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Navigate forward\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconForward)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label*=\"Current view: reading\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconPreview)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label*=\"Current view: editing\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconEditor)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"More options\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSettings)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Star/unstar current file\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconNote)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Star/unstar current search\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconFocus)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"New tab\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconPlus)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Outline\"]": [
-    { "property": "background-image", "value": "var(--iconOutline)" },
     { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label*=\"Outline\"]": [
-    { "property": "background-image", "value": "var(--iconOutline)" },
     { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Manage workspace layouts\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconLayout)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Create new unique note\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconUniqueNote)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open random note\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconRandomNote)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Publish changes\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconPublish)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open format converter\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconConvert)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open today's daily note\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconToday)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Start/stop recording\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconRecord)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label*=\"Backlinks\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconBacklinks)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label*=\"Outgoing\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconOutgoing)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[aria-label=\"Graph view\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconGraph)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Show search filter\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconSearch)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .workspace-tab-header[data-type=\"markdown\"]:not( .mod-root .workspace-tab-header[data-type=\"markdown\"] )": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconNote)" }
+    { "property": "color", "value": "green" }
   ],
   ".enableNewIcons .clickable-icon[aria-label=\"Open quick switcher\"]": [
-    { "property": "color", "value": "green" },
-    { "property": "background-image", "value": "var(--iconQuickSwitcher)" }
+    { "property": "color", "value": "green" }
   ],
-  ".enableNewIcons .clickable-icon[aria-label=\"New group\"]": [
-    { "property": "background-image", "value": "var(--iconNewFolder)" }
-  ],
-  ".enableNewIcons .clickable-icon[aria-label=\"Bookmark the active tab...\"]": [
-    { "property": "background-image", "value": "var(--iconPlus)" }
-  ],
-  ".enableNewIcons .clickable-icon[aria-label=\"Create new canvas\"]": [
-    { "property": "background-image", "value": "var(--iconPreview)" }
-  ],
-  ".enableNewIcons .clickable-icon[aria-label=\"Publish changes...\"]": [
-    { "property": "background-image", "value": "var(--iconGlobe)" }
-  ],
-  ".enableNewIcons .clickable-icon[aria-label=\"All properties\"]": [
-    { "property": "background-image", "value": "var(--iconDrawCanvas)" }
-  ],
+  ".enableNewIcons .clickable-icon[aria-label=\"New group\"]": [],
+  ".enableNewIcons .clickable-icon[aria-label=\"Bookmark the active tab...\"]": [],
+  ".enableNewIcons .clickable-icon[aria-label=\"Create new canvas\"]": [],
+  ".enableNewIcons .clickable-icon[aria-label=\"Publish changes...\"]": [],
+  ".enableNewIcons .clickable-icon[aria-label=\"All properties\"]": [],
   "All properties .enableNewIcons .clickable-icon[aria-label=\"Settings\"] svg": [
     { "property": "display", "value": "none" }
   ],
@@ -28245,10 +28129,6 @@
     }
   ],
   ".dtm08 .status-bar": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    hsl(218.2, 10.5%, 20.6%),\n    hsl(216, 11.4%, 17.3%) 50%,\n    hsl(220, 12.3%, 14.3%) 50%,\n    hsl(220, 13%, 9%)\n  )"
-    },
     { "property": "box-shadow", "value": "inset 0 2px #ffffff" },
     { "property": "border-top", "value": "solid 1px #000000" }
   ],
@@ -28856,7 +28736,6 @@
     }
   ],
   ".dtm08 .modal.mod-settings .modal-content .vertical-tab-header .vertical-tab-header-group .vertical-tab-header-group-title": [
-    { "property": "background-image", "value": "var(--settingHeaderBG)" },
     { "property": "min-height", "value": "31px" },
     { "property": "font-weight", "value": "800" },
     { "property": "font-size", "value": "12px" },

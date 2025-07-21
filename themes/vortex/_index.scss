@@ -454,8 +454,6 @@ body {
   color: var(--text-normal);
   caret-color: var(--caret-color);
   --theme-color: var(--color-accent);
-  --sub-accent: #f4569d;
-  --sub-accent-60: color-mix(in srgb, var(--sub-accent) 60%, transparent);
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif;
   --text-title-h1: #00e5ff;
   --text-title-h2: #ffca28;
@@ -1014,11 +1012,6 @@ body {
       background-position-y: 0.25em;
       cursor: var(--cursor-link);
       padding: 0;
-      background-image: linear-gradient(
-        to bottom,
-        var(--sub-accent-60) 0%,
-        var(--sub-accent-60) 100%
-      );
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 100% 18%;

@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7055,11 +7023,7 @@
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
-    { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
+    { "property": "padding", "value": "var(--dropdown-padding)" }
   ],
   "select:focus": [
     {
@@ -7075,12 +7039,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13240,10 +13199,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13253,10 +13208,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -14210,16 +14161,11 @@
   ],
   ".cm-s-obsidian span.cm-formatting-highlight": [
     { "property": "background-color", "value": "var(--text-highlight-bg)" },
-    { "property": "color", "value": "var(--text-normal)" },
-    { "property": "background-image", "value": "none" }
+    { "property": "color", "value": "var(--text-normal)" }
   ],
   ".cm-s-obsidian span.cm-highlight": [
     { "property": "background-color", "value": "var(--text-highlight-bg)" },
     { "property": "background", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    105deg,\n    transparent 0,\n    transparent 0.3em,\n    rgba(var(--text-highlight-rgb), 0.7) 0.5em,\n    rgba(var(--text-highlight-rgb), 0.4) 1.6em,\n    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),\n    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),\n    transparent calc(100% - 0.3em),\n    transparent 100%\n  )"
-    },
     { "property": "border-radius", "value": "0.8em 0.3em" },
     { "property": "box-decoration-break", "value": "clone" },
     { "property": "color", "value": "inherit" },
@@ -18365,7 +18311,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21272,10 +21217,6 @@
   ],
   "mark": [
     { "property": "background", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    105deg,\n    transparent 0,\n    transparent 0.3em,\n    rgba(var(--text-highlight-rgb), 0.7) 0.5em,\n    rgba(var(--text-highlight-rgb), 0.4) 1.6em,\n    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),\n    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),\n    transparent calc(100% - 0.3em),\n    transparent 100%\n  )"
-    },
     { "property": "border-radius", "value": "0.8em 0.3em" },
     { "property": "box-decoration-break", "value": "clone" },
     { "property": "color", "value": "inherit" },
@@ -21288,10 +21229,6 @@
   ],
   ".markdown-preview-view mark": [
     { "property": "background", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    105deg,\n    transparent 0,\n    transparent 0.3em,\n    rgba(var(--text-highlight-rgb), 0.7) 0.5em,\n    rgba(var(--text-highlight-rgb), 0.4) 1.6em,\n    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),\n    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),\n    transparent calc(100% - 0.3em),\n    transparent 100%\n  )"
-    },
     { "property": "border-radius", "value": "0.8em 0.3em" },
     { "property": "box-decoration-break", "value": "clone" },
     { "property": "color", "value": "inherit" },
@@ -21302,9 +21239,7 @@
       "value": "0 0 0.75em var(--background-primary-alt)"
     }
   ],
-  ".cm-s-obsidian .cm-highlight + span.cm-formatting-highlight": [
-    { "property": "background-image", "value": "none" }
-  ],
+  ".cm-s-obsidian .cm-highlight + span.cm-formatting-highlight": [],
   "div:has(> h2 > span)": [
     { "property": "display", "value": "block" },
     { "property": "text-align", "value": "center" },

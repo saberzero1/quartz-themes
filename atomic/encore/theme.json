@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1151,23 +1129,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1176,10 +1148,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -3675,11 +3643,7 @@
     { "property": "border-radius", "value": "var(--radius-s)" },
     { "property": "cursor", "value": "var(--cursor)" },
     { "property": "transition", "value": "opacity 100ms" },
-    { "property": "color", "value": "var(--color-accent-2)" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(\n    circle closest-side,\n    var(--color-accent) -300%,\n    transparent\n  )"
-    }
+    { "property": "color", "value": "var(--color-accent-2)" }
   ],
   ".markdown-source-view.mod-cm6 .cm-panels": [
     { "property": "background-color", "value": "inherit" },
@@ -7110,11 +7074,7 @@
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
-    { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
+    { "property": "padding", "value": "var(--dropdown-padding)" }
   ],
   "select:focus": [
     {
@@ -7130,12 +7090,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13284,10 +13239,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13297,10 +13248,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18482,7 +18429,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21707,27 +21653,18 @@
     { "property": "border-bottom-right-radius", "value": "8px" }
   ],
   "body:not(.encore-disable-logo-on-hr) .markdown-rendered hr": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent,\n    var(--hr-color) 46.2%,\n    transparent 46.2%,\n    transparent 54%,\n    var(--hr-color) 54%,\n    transparent\n  )"
-    },
     { "property": "border", "value": "none" },
     { "property": "height", "value": "1px" },
     { "property": "overflow", "value": "visible" },
     { "property": "position", "value": "relative" }
   ],
   "body:not(.encore-disable-logo-on-hr) .cm-line.hr hr": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent,\n    var(--hr-color) 46.2%,\n    transparent 46.2%,\n    transparent 54%,\n    var(--hr-color) 54%,\n    transparent\n  )"
-    },
     { "property": "border", "value": "none" },
     { "property": "height", "value": "1px" },
     { "property": "overflow", "value": "visible" },
     { "property": "position", "value": "relative" }
   ],
   "body:not(.encore-disable-logo-on-hr) .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after": [
-    { "property": "background-image", "value": "var(--obsidian-logo-small)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-size", "value": "contain" },
@@ -21739,7 +21676,6 @@
     { "property": "top", "value": "2px" }
   ],
   "body:not(.encore-disable-logo-on-hr) .markdown-rendered hr::after": [
-    { "property": "background-image", "value": "var(--obsidian-logo-small)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-size", "value": "contain" },
@@ -21751,7 +21687,6 @@
     { "property": "top", "value": "-12px" }
   ],
   "body:not(.encore-disable-logo-on-hr) .cm-line.hr hr::after": [
-    { "property": "background-image", "value": "var(--obsidian-logo-small)" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "background-size", "value": "contain" },
@@ -21771,25 +21706,13 @@
     { "property": "left", "value": "0" },
     { "property": "right", "value": "0" },
     { "property": "top", "value": "13px" },
-    { "property": "height", "value": "1px" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent 10%,\n    var(--hr-color) 46.2%,\n    transparent 46.2%,\n    transparent 54%,\n    var(--hr-color) 54%,\n    transparent\n  )"
-    }
+    { "property": "height", "value": "1px" }
   ],
   "body.encore-disable-logo-on-hr .markdown-rendered hr": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent,\n    var(--hr-color) 30%,\n    var(--hr-color) 70%,\n    transparent\n  )"
-    },
     { "property": "border", "value": "none" },
     { "property": "height", "value": "1px" }
   ],
   "body.encore-disable-logo-on-hr .cm-line.hr hr": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent,\n    var(--hr-color) 30%,\n    var(--hr-color) 70%,\n    transparent\n  )"
-    },
     { "property": "border", "value": "none" },
     { "property": "height", "value": "1px" }
   ],
@@ -21797,10 +21720,6 @@
     { "property": "border-radius", "value": "4px" }
   ],
   "body.encore-translucency.encore-bg-image .app-container": [
-    {
-      "property": "background-image",
-      "value": "url(\"https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\")"
-    },
     { "property": "background-size", "value": "cover" }
   ],
   "body.encore-translucency.encore-bg-image .app-container::before": [
@@ -21810,22 +21729,13 @@
     { "property": "background", "value": "transparent" },
     { "property": "backdrop-filter", "value": "blur(calc(1px * pow(10, 2)))" }
   ],
-  "body.encore-translucency.encore-bg-frosty": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(#0c887e, #4e04fa)"
-    }
-  ],
+  "body.encore-translucency.encore-bg-frosty": [],
   "body.encore-translucency.encore-bg-frosty .app-container": [
     { "property": "background-size", "value": "cover" },
     { "property": "background-repeat", "value": "mirror" },
     { "property": "animation", "value": "scroll-up infinite 120s linear" }
   ],
   "body.encore-translucency.encore-bg-chromatic": [
-    {
-      "property": "background-image",
-      "value": "repeating-linear-gradient(\n    45deg,\n    #0ff5fe,\n    #6f00ff,\n    #ff0000,\n    #ffde00,\n    #a7ff00,\n    #00ff88,\n    #0ff5fe,\n    #6f00ff,\n    #fd0000,\n    #ffde00,\n    #a7ff00,\n    #00ff88,\n    #0ff5fe,\n    #6f00ff\n  )"
-    },
     { "property": "background-size", "value": "100% 800vh" },
     {
       "property": "animation",
@@ -21835,35 +21745,18 @@
   "body.encore-translucency.encore-bg-chromatic::before": [
     { "property": "position", "value": "fixed" },
     { "property": "inset", "value": "0" },
-    { "property": "content", "value": "\"\"" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #000000)"
-    }
+    { "property": "content", "value": "\"\"" }
   ],
   "body.encore-translucency.encore-bg-prismatic": [
-    {
-      "property": "background-image",
-      "value": "repeating-linear-gradient(\n    45deg,\n    #0004ff,\n    #6b0ffe,\n    #9900ff,\n    #ff00f2,\n    #ff00aa,\n    #ff00f2,\n    #9900ff,\n    #6b0ffe,\n    #0004ff,\n    #6b0ffe,\n    #9900ff,\n    #ff00f2\n  )"
-    },
     { "property": "background-size", "value": "100% 400vh" },
     { "property": "animation", "value": "scroll-up infinite 30s linear" }
   ],
   "body.encore-translucency.encore-bg-prismatic::before": [
     { "property": "position", "value": "fixed" },
     { "property": "inset", "value": "0" },
-    { "property": "content", "value": "\"\"" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #000000)"
-    }
+    { "property": "content", "value": "\"\"" }
   ],
-  "body.encore-translucency.encore-bg-dawn": [
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #010224),\n    linear-gradient(to bottom, #def4ff, transparent),\n    linear-gradient(to bottom left, #0036e6, #400dcc)"
-    }
-  ],
+  "body.encore-translucency.encore-bg-dawn": [],
   "body.encore-translucency.encore-bg-dawn::before": [
     { "property": "position", "value": "fixed" },
     { "property": "inset", "value": "0" },
@@ -21871,18 +21764,9 @@
     {
       "property": "animation",
       "value": "fade-in 60s linear infinite alternate"
-    },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #010224),\n    linear-gradient(to bottom, #def4ff, transparent),\n    linear-gradient(to bottom left, #ee8d4d, #0012b6)"
     }
   ],
-  "body.encore-translucency.encore-bg-lava": [
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #360700),\n    linear-gradient(to top, #d86800, transparent),\n    linear-gradient(to bottom left, #b43900, #1a0101)"
-    }
-  ],
+  "body.encore-translucency.encore-bg-lava": [],
   "body.encore-translucency.encore-bg-lava::before": [
     { "property": "position", "value": "fixed" },
     { "property": "inset", "value": "0" },
@@ -21890,24 +21774,10 @@
     {
       "property": "animation",
       "value": "fade-in 60s linear infinite alternate"
-    },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #360700),\n    linear-gradient(to top, #f5e498, transparent),\n    linear-gradient(to bottom left, #ff0000, #ff0000)"
     }
   ],
-  "body.encore-translucency.encore-bg-emerald": [
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #071400),\n    linear-gradient(to top, #54f1d7, transparent),\n    linear-gradient(to bottom left, #55df00, #1b4900)"
-    }
-  ],
-  "body.encore-translucency.encore-bg-sapphire": [
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, #000018),\n    linear-gradient(to top, #5871ff, transparent),\n    linear-gradient(to bottom left, #0400ff, #0084ff)"
-    }
-  ],
+  "body.encore-translucency.encore-bg-emerald": [],
+  "body.encore-translucency.encore-bg-sapphire": [],
   "body.encore-translucency .horizontal-main-container": [
     {
       "property": "background-color",
@@ -21977,8 +21847,7 @@
   "body:not(.encore-disable-grain) .workspace::before": [
     { "property": "content", "value": "\"\"" },
     { "property": "position", "value": "fixed" },
-    { "property": "inset", "value": "0" },
-    { "property": "background-image", "value": "var(--grain)" }
+    { "property": "inset", "value": "0" }
   ],
   "body.theme-light:not(.encore-disable-grain) .workspace::before": [],
   "body:not(.encore-disable-grain)": [
@@ -22245,11 +22114,7 @@
     { "property": "content", "value": "\"\"" },
     { "property": "--gradient-color", "value": "var(--color-base-20)" },
     { "property": "position", "value": "absolute" },
-    { "property": "inset", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent 40%, var(--gradient-color))"
-    }
+    { "property": "inset", "value": "0" }
   ],
   "body:not(.encore-no-makemd) .mk-file-context-file": [
     { "property": "text-shadow", "value": "0 0 5px var(--color-base-00)" }
@@ -22421,11 +22286,7 @@
   ".dataview.dataview-error-box": [
     { "property": "border", "value": "none" },
     { "property": "--stripe-a", "value": "var(--color-base-00)" },
-    { "property": "--stripe-b", "value": "var(--color-base-05)" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(transparent, var(--color-base-00) 100%),\n    repeating-linear-gradient(\n      45deg,\n      var(--stripe-a) 0px,\n      var(--stripe-a) 10px,\n      var(--stripe-b) 10px,\n      var(--stripe-b) 20px\n    )"
-    }
+    { "property": "--stripe-b", "value": "var(--color-base-05)" }
   ],
   ".dataview.dataview-error-box > .dataview-error-message": [
     { "property": "font-weight", "value": "bold" },
@@ -22435,10 +22296,6 @@
   ".dataview.dataview-error": [
     { "property": "--stripe-a", "value": "var(--color-base-00)" },
     { "property": "--stripe-b", "value": "var(--color-base-05)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--color-base-00) 40%, transparent 120%),\n    repeating-linear-gradient(\n      45deg,\n      var(--stripe-a) 0px,\n      var(--stripe-a) 10px,\n      var(--stripe-b) 10px,\n      var(--stripe-b) 20px\n    )"
-    },
     { "property": "background-color", "value": "var(--color-base-00)" },
     { "property": "font-weight", "value": "bold" },
     { "property": "color", "value": "var(--color-red)" },
@@ -22453,24 +22310,9 @@
     { "property": "--h5-color", "value": "#ee7e51" },
     { "property": "--h6-color", "value": "#ecc68b" }
   ],
-  "body.theme-light .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after": [
-    {
-      "property": "background-image",
-      "value": "var(--obsidian-logo-small-dark)"
-    }
-  ],
-  "body.theme-light .markdown-rendered hr::after": [
-    {
-      "property": "background-image",
-      "value": "var(--obsidian-logo-small-dark)"
-    }
-  ],
-  "body.theme-light .cm-line.hr hr::after": [
-    {
-      "property": "background-image",
-      "value": "var(--obsidian-logo-small-dark)"
-    }
-  ],
+  "body.theme-light .markdown-source-view:not(.is-live-preview) .HyperMD-hr::after": [],
+  "body.theme-light .markdown-rendered hr::after": [],
+  "body.theme-light .cm-line.hr hr::after": [],
   "body.theme-light .mk-note-header:after": [
     { "property": "--gradient-color", "value": "var(--color-base-10)" }
   ],
@@ -22831,7 +22673,6 @@
     { "property": "right", "value": "0" },
     { "property": "height", "value": "30px" },
     { "property": "background-color", "value": "red" },
-    { "property": "background-image", "value": "var(--rainbow-gradient)" },
     {
       "property": "animation",
       "value": "pan-right 5s linear infinite forwards"
@@ -22845,7 +22686,6 @@
     { "property": "right", "value": "0" },
     { "property": "height", "value": "10px" },
     { "property": "background-color", "value": "red" },
-    { "property": "background-image", "value": "var(--rainbow-gradient)" },
     {
       "property": "animation",
       "value": "pan-right 5s linear infinite forwards"
@@ -22995,10 +22835,6 @@
   ],
   "body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content": [
     { "property": "--en-opacity", "value": "0.75" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(#000000, #000000), linear-gradient(#ffffff, #ffffff)"
-    },
     { "property": "backdrop-filter", "value": "blur(32px) saturate(2)" }
   ],
   "body.encore-theme-dark-glass-royale.theme-dark .mod-root .workspace-tab-container .workspace-leaf-content .canvas-wrapper .canvas-background": [
@@ -23103,18 +22939,9 @@
     { "property": "height", "value": "30%" },
     { "property": "background-size", "value": "contain" },
     { "property": "background-position", "value": "center" },
-    { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='%23ffffff50' stroke-width='2%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E\")"
-    }
+    { "property": "background-repeat", "value": "no-repeat" }
   ],
-  ".theme-light .empty-state::before": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='%2300000080' stroke-width='2%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-light .empty-state::before": [],
   ".sidebar-toggle-button > .clickable-icon": [
     { "property": "color", "value": "var(--interactive-accent)" }
   ],

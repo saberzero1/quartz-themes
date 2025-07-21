@@ -2202,10 +2202,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".external-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "padding-inline-end", "value": "16px" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "color", "value": "var(--link-external-color)" },

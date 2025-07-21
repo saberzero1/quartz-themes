@@ -1967,8 +1967,7 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "padding-right", "value": "unset" },
-    { "property": "background-image", "value": "none" }
+    { "property": "padding-right", "value": "unset" }
   ],
   ".markdown-rendered .internal-link": [
     { "property": "color", "value": "var(--link-color)" },

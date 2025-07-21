@@ -1248,10 +1248,6 @@
       "value": "\"nunito sans\",\n    gotham,\n    metropolis,\n    prologue,\n    manrope,\n    inter,\n    poppins,\n    -apple-system,\n    BlinkMacSystemFont,\n    \"Segoe UI\",\n    Roboto,\n    Helvetica,\n    Arial,\n    sans-serif,\n    \"Apple Color Emoji\",\n    \"Segoe UI Emoji\",\n    \"Segoe UI Symbol\",\n    \"Microsoft YaHei Light\",\n    sans-serif"
     },
     { "property": "font-weight", "value": "400" },
-    {
-      "property": "background-image",
-      "value": "radial-gradient(circle at 12.17% 41.13%, #f7f6f0, transparent 100%),\n    radial-gradient(circle at 88.72% 61.69%, #ebe6de, transparent 100%),\n    radial-gradient(circle at 50% 50%, #e1e0da, #e9e8e6 100%)"
-    },
     { "property": "background-attachment", "value": "fixed" },
     { "property": "background-size", "value": "cover" },
     { "property": "contain", "value": "initial" },
@@ -1948,10 +1944,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },

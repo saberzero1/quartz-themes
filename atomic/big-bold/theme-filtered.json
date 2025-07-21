@@ -1980,7 +1980,6 @@
     },
     { "property": "text-indent", "value": "0px" },
     { "property": "text-underline-offset", "value": "0.19em" },
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "unset" }
   ],
   ".markdown-rendered .internal-link": [

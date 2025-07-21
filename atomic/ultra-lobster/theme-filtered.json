@@ -1932,7 +1932,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "color", "value": "var(--text-normal)" },
     { "property": "text-decoration-line", "value": "none" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -1944,7 +1943,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "background-position-y", "value": "4px" },
     { "property": "color", "value": "var(--link-external-color)" },
-    { "property": "background-image", "value": "none" },
     { "property": "background-repeat", "value": "no-repeat" },
     { "property": "padding-right", "value": "16px" },
     { "property": "cursor", "value": "var(--cursor-link)" },
@@ -1960,7 +1958,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
     { "property": "color", "value": "var(--text-normal)" },
     { "property": "text-decoration-line", "value": "none" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -1979,7 +1976,6 @@
     },
     { "property": "color", "value": "var(--text-normal)" },
     { "property": "text-decoration-line", "value": "none" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"

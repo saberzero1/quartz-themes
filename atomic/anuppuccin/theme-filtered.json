@@ -2285,7 +2285,6 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0px" }
   ],
   ".markdown-rendered .internal-link": [
@@ -2367,7 +2366,6 @@
     }
   ],
   ".external-link:hover": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0px" },
     { "property": "color", "value": "var(--link-external-color-hover)" },
     {

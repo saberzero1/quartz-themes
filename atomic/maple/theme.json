@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7271,10 +7239,6 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    },
     { "property": "transition", "value": "var(--animation)" }
   ],
   "select:focus": [
@@ -7291,12 +7255,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13301,10 +13260,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13314,10 +13269,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18446,7 +18397,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -22598,11 +22548,7 @@
   ".code-preview-bg .markdown-preview-view .markdown-preview-section div:has(> pre:not([class*=\"frontmatter\"]))": [
     { "property": "padding", "value": "var(--size-4-4) var(--size-4-8)" },
     { "property": "margin-block", "value": "var(--size-4-4)" },
-    { "property": "border-radius", "value": "var(--setting-code-bg-radius)" },
-    {
-      "property": "background-image",
-      "value": "var(\n    --setting-code-bg-outer,\n    linear-gradient(\n      -30deg,\n      hsl(calc(var(--accent-h) + 145), var(--code-bg-s), var(--code-bg-l)),\n      hsl(calc(var(--accent-h) + 115), var(--code-bg-s), var(--code-bg-l)),\n      hsl(calc(var(--accent-h) + 90), var(--code-bg-s), var(--code-bg-l)),\n      hsl(calc(var(--accent-h) + 65), var(--code-bg-s), var(--code-bg-l)),\n      hsl(calc(var(--accent-h) + 35), var(--code-bg-s), var(--code-bg-l))\n    )\n  )"
-    }
+    { "property": "border-radius", "value": "var(--setting-code-bg-radius)" }
   ],
   ".code-preview-bg .markdown-preview-view .markdown-preview-section pre:not([class*=\"frontmatter\"])": [
     {
@@ -22734,11 +22680,7 @@
     { "property": "overflow", "value": "initial" },
     { "property": "border", "value": "none" },
     { "property": "position", "value": "relative" },
-    { "property": "height", "value": "var(--size-4-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    transparent 0%,\n    hsla(var(--color-accent-hsl), 40%) 16%,\n    hsla(var(--color-accent-hsl), 90%) 44%,\n    transparent 44%,\n    transparent 56%,\n    hsla(var(--color-accent-hsl), 90%) 56%,\n    hsla(var(--color-accent-hsl), 40%) 84%,\n    transparent 100%\n  )"
-    }
+    { "property": "height", "value": "var(--size-4-1)" }
   ],
   "body.hr-enable :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr::after": [
     { "property": "content", "value": "\"⭐\"" },
@@ -22954,7 +22896,6 @@
     { "property": "background-color", "value": "var(--link-external-color)" }
   ],
   "body.link-icon:not(.link-click-to-edit-in-live-preview) a.external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "background-size", "value": "unset" },
     { "property": "padding-right", "value": "0" }
   ],
@@ -23170,7 +23111,6 @@
   ".list-checkbox-alternative input[data-task=\"<\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23178,7 +23118,6 @@
   ".list-checkbox-alternative li[data-task=\"<\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23186,7 +23125,6 @@
   ".list-checkbox-alternative li[data-task=\"<\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23194,7 +23132,6 @@
   ".list-checkbox-alternative input[data-task=\">\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23202,7 +23139,6 @@
   ".list-checkbox-alternative li[data-task=\">\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23210,7 +23146,6 @@
   ".list-checkbox-alternative li[data-task=\">\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23218,7 +23153,6 @@
   ".list-checkbox-alternative input[data-task=\"d\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23226,7 +23160,6 @@
   ".list-checkbox-alternative li[data-task=\"d\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23234,7 +23167,6 @@
   ".list-checkbox-alternative li[data-task=\"d\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23242,7 +23174,6 @@
   ".list-checkbox-alternative input[data-task=\"u\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23250,7 +23181,6 @@
   ".list-checkbox-alternative li[data-task=\"u\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23258,7 +23188,6 @@
   ".list-checkbox-alternative li[data-task=\"u\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23266,7 +23195,6 @@
   ".list-checkbox-alternative input[data-task=\"S\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23274,7 +23202,6 @@
   ".list-checkbox-alternative li[data-task=\"S\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23282,7 +23209,6 @@
   ".list-checkbox-alternative li[data-task=\"S\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23290,7 +23216,6 @@
   ".list-checkbox-alternative input[data-task=\"“\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
     { "property": "color", "value": "var(--color-purple)" }
@@ -23298,7 +23223,6 @@
   ".list-checkbox-alternative li[data-task=\"“\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
     { "property": "color", "value": "var(--color-purple)" }
@@ -23306,7 +23230,6 @@
   ".list-checkbox-alternative li[data-task=\"“\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
     { "property": "color", "value": "var(--color-purple)" }
@@ -23314,7 +23237,6 @@
   ".list-checkbox-alternative input[data-task=\"c\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23322,7 +23244,6 @@
   ".list-checkbox-alternative li[data-task=\"c\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23330,7 +23251,6 @@
   ".list-checkbox-alternative li[data-task=\"c\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23338,7 +23258,6 @@
   ".list-checkbox-alternative input[data-task=\"p\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23346,7 +23265,6 @@
   ".list-checkbox-alternative li[data-task=\"p\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23354,7 +23272,6 @@
   ".list-checkbox-alternative li[data-task=\"p\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
     { "property": "color", "value": "var(--color-green)" }
@@ -23362,7 +23279,6 @@
   ".list-checkbox-alternative input[data-task=\"n\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23370,7 +23286,6 @@
   ".list-checkbox-alternative li[data-task=\"n\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23378,7 +23293,6 @@
   ".list-checkbox-alternative li[data-task=\"n\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23386,7 +23300,6 @@
   ".list-checkbox-alternative input[data-task=\"b\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23394,7 +23307,6 @@
   ".list-checkbox-alternative li[data-task=\"b\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23402,7 +23314,6 @@
   ".list-checkbox-alternative li[data-task=\"b\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
     { "property": "color", "value": "var(--color-blue)" }
@@ -23410,7 +23321,6 @@
   ".list-checkbox-alternative input[data-task=\"-\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--text-faint)" },
     { "property": "color", "value": "var(--text-faint)" }
@@ -23418,7 +23328,6 @@
   ".list-checkbox-alternative li[data-task=\"-\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--text-faint)" },
     { "property": "color", "value": "var(--text-faint)" }
@@ -23426,7 +23335,6 @@
   ".list-checkbox-alternative li[data-task=\"-\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--text-faint)" },
     { "property": "color", "value": "var(--text-faint)" }
@@ -23434,7 +23342,6 @@
   ".list-checkbox-alternative input[data-task=\"l\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23442,7 +23349,6 @@
   ".list-checkbox-alternative li[data-task=\"l\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23450,7 +23356,6 @@
   ".list-checkbox-alternative li[data-task=\"l\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
     { "property": "color", "value": "var(--color-red)" }
@@ -23458,7 +23363,6 @@
   ".list-checkbox-alternative input[data-task=\"I\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -23466,7 +23370,6 @@
   ".list-checkbox-alternative li[data-task=\"I\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -23474,7 +23377,6 @@
   ".list-checkbox-alternative li[data-task=\"I\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -23482,7 +23384,6 @@
   ".list-checkbox-alternative input[data-task=\"/\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23490,7 +23391,6 @@
   ".list-checkbox-alternative li[data-task=\"/\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23498,7 +23398,6 @@
   ".list-checkbox-alternative li[data-task=\"/\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23506,7 +23405,6 @@
   ".list-checkbox-alternative input[data-task=\"i\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23514,7 +23412,6 @@
   ".list-checkbox-alternative li[data-task=\"i\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23522,7 +23419,6 @@
   ".list-checkbox-alternative li[data-task=\"i\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
     { "property": "color", "value": "var(--color-cyan)" }
@@ -23530,7 +23426,6 @@
   ".list-checkbox-alternative input[data-task=\"*\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23538,7 +23433,6 @@
   ".list-checkbox-alternative li[data-task=\"*\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23546,7 +23440,6 @@
   ".list-checkbox-alternative li[data-task=\"*\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
     { "property": "color", "value": "var(--color-yellow)" }
@@ -23554,7 +23447,6 @@
   ".list-checkbox-alternative input[data-task=\"?\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23562,7 +23454,6 @@
   ".list-checkbox-alternative li[data-task=\"?\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23570,7 +23461,6 @@
   ".list-checkbox-alternative li[data-task=\"?\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
     { "property": "color", "value": "var(--color-pink)" }
@@ -23578,7 +23468,6 @@
   ".list-checkbox-alternative input[data-task=\"!\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -23586,7 +23475,6 @@
   ".list-checkbox-alternative li[data-task=\"!\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -23594,7 +23482,6 @@
   ".list-checkbox-alternative li[data-task=\"!\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
     { "property": "color", "value": "var(--color-orange)" }
@@ -24184,11 +24071,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h1-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h1-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h1-underline h1::after": [{ "property": "left", "value": "0" }],
   "body.heading-h1-underline .HyperMD-header-1::after": [
@@ -24220,11 +24103,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h2-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h2-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h2-underline h2::after": [{ "property": "left", "value": "0" }],
   "body.heading-h2-underline .HyperMD-header-2::after": [
@@ -24256,11 +24135,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h3-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h3-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h3-underline h3::after": [{ "property": "left", "value": "0" }],
   "body.heading-h3-underline .HyperMD-header-3::after": [
@@ -24292,11 +24167,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h4-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h4-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h4-underline h4::after": [{ "property": "left", "value": "0" }],
   "body.heading-h4-underline .HyperMD-header-4::after": [
@@ -24328,11 +24199,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h5-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h5-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h5-underline h5::after": [{ "property": "left", "value": "0" }],
   "body.heading-h5-underline .HyperMD-header-5::after": [
@@ -24364,11 +24231,7 @@
       "property": "transform",
       "value": "translateY(\n    max(var(--h6-size) * var(--line-height-normal) * 0.3, var(--size-4-3))\n  )"
     },
-    { "property": "border-radius", "value": "var(--size-2-1)" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    var(--h6-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "border-radius", "value": "var(--size-2-1)" }
   ],
   "body.heading-h6-underline h6::after": [{ "property": "left", "value": "0" }],
   "body.heading-h6-underline .HyperMD-header-6::after": [
@@ -24421,11 +24284,7 @@
     { "property": "margin", "value": "0" },
     { "property": "border-radius", "value": "0" },
     { "property": "inset", "value": "0" },
-    { "property": "z-index", "value": "200" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to right,\n    hsl(var(--background-primary-hsl)),\n    hsl(var(--background-secondary-hsl)),\n    hsl(var(--background-primary-hsl))\n  )"
-    }
+    { "property": "z-index", "value": "200" }
   ],
   "body.image-zoom.image-zoom-out :is(.markdown-preview-view, .workspace-leaf-content[data-type=\"image\"]) img:not([class*=\"emoji\"]):not(.banner-image):active": [
     { "property": "position", "value": "fixed" }
@@ -25360,8 +25219,7 @@
     {
       "property": "background-position",
       "value": "right calc(var(--size-4-4) * 0.4) top 56%,\n    0 0"
-    },
-    { "property": "background-image", "value": "var(--select-bg-img)" }
+    }
   ],
   ".modal-container .is-loading": [
     { "property": "position", "value": "initial" }

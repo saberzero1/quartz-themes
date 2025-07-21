@@ -2048,10 +2048,6 @@
     {
       "property": "text-shadow",
       "value": "-1px -1px 2px var(--link-text-shadow),\n    -1px 1px 2px var(--link-text-shadow),\n    1px -1px 2px var(--link-text-shadow),\n    1px 1px 2px var(--link-text-shadow)"
-    },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to bottom,\n    var(--link-ext-color) 0%,\n    var(--link-ext-color) 100%\n  )"
     }
   ],
   ".markdown-rendered .internal-link": [

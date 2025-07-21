@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7632,10 +7600,6 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    },
     { "property": "cursor", "value": "pointer" }
   ],
   "select:focus": [
@@ -7652,12 +7616,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -13939,10 +13898,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13952,10 +13907,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -19091,7 +19042,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -25046,7 +24996,6 @@
     { "property": "background-size", "value": "contain" },
     { "property": "background-position", "value": "center" },
     { "property": "background-repeat", "value": "no-repeat" },
-    { "property": "background-image", "value": "var(--new-tab-image)" },
     { "property": "-webkit-mask", "value": "unset" }
   ],
   ".new-tab-image-none .workspace-leaf-content[data-type=\"empty\"] .empty-state::before": [
@@ -26192,10 +26141,6 @@
   ],
   ".tab-autohide .notice-container": [{ "property": "top", "value": "6px" }],
   ".editor-grid-background-pattren .workspace-leaf-content[data-type=\"markdown\"]": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n      to right,\n      var(--grid-background-pattern-color) 1px,\n      transparent 1px\n    ),\n    linear-gradient(\n      to bottom,\n      var(--grid-background-pattern-color) 1px,\n      transparent 1px\n    )"
-    },
     { "property": "background-position", "value": "center" },
     {
       "property": "background-size",
@@ -26203,10 +26148,6 @@
     }
   ],
   ".editor-grid-background-pattren .export-image-preview-container.markdown-rendered": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n      to right,\n      var(--grid-background-pattern-color) 1px,\n      transparent 1px\n    ),\n    linear-gradient(\n      to bottom,\n      var(--grid-background-pattern-color) 1px,\n      transparent 1px\n    )"
-    },
     { "property": "background-position", "value": "center" },
     {
       "property": "background-size",
@@ -26328,11 +26269,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h1-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h1-divider-on .markdown-rendered > h1::after": [
     { "property": "content", "value": "\"\"" },
@@ -26341,11 +26278,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h1-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h1-divider-on .HyperMD-header-1::after": [
     { "property": "content", "value": "\"\"" },
@@ -26354,11 +26287,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h1-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-1 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -26431,11 +26360,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h2-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h2-divider-on .markdown-rendered > h2::after": [
     { "property": "content", "value": "\"\"" },
@@ -26444,11 +26369,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h2-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h2-divider-on .HyperMD-header-2::after": [
     { "property": "content", "value": "\"\"" },
@@ -26457,11 +26378,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h2-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-2 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -26534,11 +26451,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h3-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h3-divider-on .markdown-rendered > h3::after": [
     { "property": "content", "value": "\"\"" },
@@ -26547,11 +26460,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h3-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h3-divider-on .HyperMD-header-3::after": [
     { "property": "content", "value": "\"\"" },
@@ -26560,11 +26469,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h3-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-3 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -26637,11 +26542,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h4-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h4-divider-on .markdown-preview-sizer > div > h4::after": [
     { "property": "content", "value": "\"\"" },
@@ -26650,11 +26551,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h4-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h4-divider-on .HyperMD-header-4::after": [
     { "property": "content", "value": "\"\"" },
@@ -26663,11 +26560,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h4-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-4 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -26740,11 +26633,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h5-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h5-divider-on .markdown-preview-sizer > div > h5::after": [
     { "property": "content", "value": "\"\"" },
@@ -26753,11 +26642,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h5-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h5-divider-on .HyperMD-header-5::after": [
     { "property": "content", "value": "\"\"" },
@@ -26766,11 +26651,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h5-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-5 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -26843,11 +26724,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h6-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h6-divider-on .markdown-preview-sizer > div > h6::after": [
     { "property": "content", "value": "\"\"" },
@@ -26856,11 +26733,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h6-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body.h6-divider-on .HyperMD-header-6::after": [
     { "property": "content", "value": "\"\"" },
@@ -26869,11 +26742,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h6-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-6 .collapse-indicator.collapse-icon svg": [
     { "property": "background-color", "value": "currentColor" },
@@ -27318,7 +27187,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"<\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27327,7 +27195,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"<\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27336,7 +27203,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"<\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27345,7 +27211,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\">\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
@@ -27354,7 +27219,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\">\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
@@ -27363,7 +27227,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\">\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-pink)" },
@@ -27372,7 +27235,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"d\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27381,7 +27243,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"d\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27390,7 +27251,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"d\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27399,7 +27259,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"u\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27408,7 +27267,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"u\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27417,7 +27275,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"u\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27426,7 +27283,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"S\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27435,7 +27291,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"S\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27444,7 +27299,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"S\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27453,7 +27307,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"“\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27462,7 +27315,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"“\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27471,7 +27323,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"“\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27480,7 +27331,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task='\"']:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27489,7 +27339,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task='\"'] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27498,7 +27347,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task='\"'] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-purple)" },
@@ -27507,7 +27355,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"c\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27516,7 +27363,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"c\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27525,7 +27371,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"c\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27534,7 +27379,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"p\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27543,7 +27387,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"p\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27552,7 +27395,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"p\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-green)" },
@@ -27561,7 +27403,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"n\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
@@ -27570,7 +27411,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"n\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
@@ -27579,7 +27419,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"n\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-cyan)" },
@@ -27588,7 +27427,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"b\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27597,7 +27435,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"b\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27606,7 +27443,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"b\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-blue)" },
@@ -27615,7 +27451,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"l\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27624,7 +27459,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"l\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27633,7 +27467,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"l\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-red)" },
@@ -27642,7 +27475,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"I\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
@@ -27651,7 +27483,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"I\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
@@ -27660,7 +27491,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"I\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-orange)" },
@@ -27669,7 +27499,6 @@
   "body:not(.disable-alternative-checkboxes) input[data-task=\"*\"]:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
@@ -27678,7 +27507,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"*\"] > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
@@ -27687,7 +27515,6 @@
   "body:not(.disable-alternative-checkboxes) li[data-task=\"*\"] > p > input:checked": [
     { "property": "--checkbox-marker-color", "value": "transparent" },
     { "property": "background-color", "value": "currentColor" },
-    { "property": "background-image", "value": "none" },
     { "property": "border", "value": "none" },
     { "property": "border-radius", "value": "0" },
     { "property": "--checkbox-color-hover", "value": "var(--color-yellow)" },
@@ -29290,11 +29117,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h1-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.heading-indicator-off) h2::before": [
     { "property": "margin-right", "value": "6px" },
@@ -29315,11 +29138,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h2-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.heading-indicator-off) h3::before": [
     { "property": "margin-right", "value": "6px" },
@@ -29340,11 +29159,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h3-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.heading-indicator-off) h4::before": [
     { "property": "margin-right", "value": "6px" },
@@ -29365,11 +29180,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h4-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.heading-indicator-off) h5::before": [
     { "property": "margin-right", "value": "6px" },
@@ -29390,11 +29201,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h5-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   "body:not(.heading-indicator-off) h6::before": [
     { "property": "margin-right", "value": "6px" },
@@ -29415,11 +29222,7 @@
     { "property": "width", "value": "100%" },
     { "property": "right", "value": "0px" },
     { "property": "opacity", "value": "0.5" },
-    { "property": "bottom", "value": "0" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    to left,\n    var(--h6-accent-color) 30%,\n    transparent 70%\n  )"
-    }
+    { "property": "bottom", "value": "0" }
   ],
   ".markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn:hover": [
     { "property": "opacity", "value": "1" }

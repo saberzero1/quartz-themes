@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7115,11 +7083,7 @@
     { "property": "line-height", "value": "var(--line-height-tight)" },
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
-    { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
+    { "property": "padding", "value": "var(--dropdown-padding)" }
   ],
   "select:focus": [
     {
@@ -7135,12 +7099,7 @@
     },
     { "property": "outline", "value": "none" }
   ],
-  ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    }
-  ],
+  ".theme-dark .dropdown": [],
   ".dropdown option": [
     { "property": "font-weight", "value": "normal" },
     { "property": "background-color", "value": "var(--background-primary)" }
@@ -12415,10 +12374,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h2": [
@@ -12439,10 +12394,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h3": [
@@ -12463,10 +12414,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h4": [
@@ -12487,10 +12434,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h5": [
@@ -12511,10 +12454,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   "h6": [
@@ -12535,10 +12474,6 @@
     },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   ".markdown-rendered h1": [
@@ -13315,7 +13250,6 @@
     },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -13331,10 +13265,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
@@ -13344,10 +13274,6 @@
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -13361,7 +13287,6 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -13397,7 +13322,6 @@
       "property": "text-decoration-style",
       "value": "var(--link-unresolved-decoration-style)"
     },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -13509,7 +13433,6 @@
       "property": "text-decoration-line",
       "value": "var(--link-external-decoration)"
     },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -13523,7 +13446,6 @@
       "property": "text-decoration-line",
       "value": "var(--link-external-decoration)"
     },
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -18529,7 +18451,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -21409,10 +21330,6 @@
   ".cm-header:not(.cm-formatting)": [
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(to right, var(--gradient-header))"
-    },
     { "property": "width", "value": "fit-content" }
   ],
   ".cm-header-1": [
@@ -21765,60 +21682,15 @@
   ".canvas-node.is-themed.mod-canvas-color-6 .canvas-node-container": [
     { "property": "border", "value": "none" }
   ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(0, 87%, 79%) 0%,\n    hsl(360, 87%, 78%) 21%,\n    hsl(360, 87%, 77%) 30%,\n    hsl(359, 87%, 75%) 39%,\n    hsl(359, 87%, 74%) 46%,\n    hsl(359, 87%, 73%) 54%,\n    hsl(359, 86%, 72%) 61%,\n    hsl(358, 86%, 71%) 69%,\n    hsl(358, 86%, 70%) 79%,\n    hsl(358, 85%, 68%) 100%\n  )"
-    }
-  ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(15, 82%, 54%) 0%,\n    hsl(14, 83%, 54%) 11%,\n    hsl(14, 83%, 53%) 22%,\n    hsl(13, 84%, 53%) 33%,\n    hsl(13, 84%, 53%) 44%,\n    hsl(12, 85%, 53%) 56%,\n    hsl(11, 85%, 53%) 67%,\n    hsl(11, 86%, 52%) 78%,\n    hsl(10, 86%, 52%) 89%,\n    hsl(9, 87%, 52%) 100%\n  )"
-    }
-  ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(16, 100%, 76%) 0%,\n    hsl(20, 100%, 76%) 21%,\n    hsl(23, 100%, 76%) 30%,\n    hsl(27, 100%, 77%) 39%,\n    hsl(30, 100%, 77%) 46%,\n    hsl(34, 100%, 77%) 54%,\n    hsl(37, 100%, 78%) 61%,\n    hsl(41, 100%, 79%) 69%,\n    hsl(45, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )"
-    }
-  ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(29, 82%, 54%) 0%,\n    hsl(28, 83%, 53%) 11%,\n    hsl(28, 83%, 53%) 22%,\n    hsl(27, 84%, 53%) 33%,\n    hsl(26, 84%, 53%) 44%,\n    hsl(25, 85%, 53%) 56%,\n    hsl(25, 85%, 52%) 67%,\n    hsl(24, 86%, 52%) 78%,\n    hsl(23, 86%, 52%) 89%,\n    hsl(22, 87%, 52%) 100%\n  )"
-    }
-  ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(60, 89%, 72%) 0%,\n    hsl(59, 91%, 73%) 21%,\n    hsl(57, 92%, 74%) 30%,\n    hsl(56, 94%, 76%) 39%,\n    hsl(55, 96%, 77%) 46%,\n    hsl(53, 97%, 78%) 54%,\n    hsl(52, 98%, 79%) 61%,\n    hsl(51, 99%, 80%) 69%,\n    hsl(50, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )"
-    }
-  ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(44, 82%, 54%) 0%,\n    hsl(44, 83%, 54%) 11%,\n    hsl(45, 83%, 53%) 22%,\n    hsl(45, 84%, 53%) 33%,\n    hsl(46, 84%, 53%) 44%,\n    hsl(46, 85%, 53%) 56%,\n    hsl(47, 85%, 53%) 67%,\n    hsl(47, 86%, 53%) 78%,\n    hsl(48, 86%, 52%) 89%,\n    hsl(48, 87%, 52%) 100%\n  )"
-    }
-  ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(99, 75%, 75%) 0%,\n    hsl(103, 75%, 77%) 21%,\n    hsl(108, 75%, 79%) 30%,\n    hsl(113, 76%, 81%) 39%,\n    hsl(119, 76%, 83%) 46%,\n    hsl(124, 77%, 84%) 54%,\n    hsl(129, 79%, 85%) 61%,\n    hsl(133, 80%, 86%) 69%,\n    hsl(137, 81%, 86%) 79%,\n    hsl(141, 81%, 87%) 100%\n  )"
-    }
-  ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(98, 32%, 45%) 0%,\n    hsl(101, 31%, 44%) 11%,\n    hsl(104, 30%, 43%) 22%,\n    hsl(108, 29%, 41%) 33%,\n    hsl(112, 28%, 40%) 44%,\n    hsl(116, 27%, 39%) 56%,\n    hsl(120, 26%, 37%) 67%,\n    hsl(124, 27%, 35%) 78%,\n    hsl(128, 28%, 33%) 89%,\n    hsl(132, 29%, 31%) 100%\n  )"
-    }
-  ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(187, 100%, 89%) 0%,\n    hsl(187, 100%, 87%) 21%,\n    hsl(187, 100%, 85%) 30%,\n    hsl(187, 100%, 83%) 39%,\n    hsl(187, 100%, 81%) 46%,\n    hsl(187, 100%, 79%) 54%,\n    hsl(187, 100%, 77%) 61%,\n    hsl(186, 100%, 75%) 69%,\n    hsl(186, 100%, 72%) 79%,\n    hsl(186, 100%, 69%) 100%\n  )"
-    }
-  ],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": [],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": [],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": [],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": [],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": [],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": [],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": [],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": [],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": [],
   ".theme-dark .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p": [
     { "property": "color", "value": "white" }
   ],
@@ -21837,24 +21709,9 @@
   ".theme-dark .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content p": [
     { "property": "color", "value": "white" }
   ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(218, 82%, 54%) 0%,\n    hsl(218, 83%, 53%) 11%,\n    hsl(218, 85%, 52%) 22%,\n    hsl(219, 85%, 51%) 33%,\n    hsl(219, 86%, 51%) 44%,\n    hsl(220, 87%, 50%) 56%,\n    hsl(221, 87%, 50%) 67%,\n    hsl(223, 87%, 51%) 78%,\n    hsl(224, 87%, 51%) 89%,\n    hsl(227, 87%, 52%) 100%\n  )"
-    }
-  ],
-  ".theme-light .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(298, 68%, 90%) 0%,\n    hsl(287, 68%, 89%) 21%,\n    hsl(277, 68%, 89%) 30%,\n    hsl(267, 67%, 88%) 39%,\n    hsl(258, 65%, 87%) 46%,\n    hsl(249, 63%, 87%) 54%,\n    hsl(240, 61%, 86%) 61%,\n    hsl(232, 62%, 83%) 69%,\n    hsl(225, 62%, 81%) 79%,\n    hsl(220, 61%, 79%) 100%\n  )"
-    }
-  ],
-  ".theme-dark .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    45deg,\n    hsl(308, 33%, 41%) 0%,\n    hsl(308, 35%, 41%) 11%,\n    hsl(308, 37%, 40%) 22%,\n    hsl(308, 40%, 39%) 33%,\n    hsl(308, 42%, 39%) 44%,\n    hsl(308, 45%, 38%) 56%,\n    hsl(308, 47%, 37%) 67%,\n    hsl(308, 51%, 36%) 78%,\n    hsl(308, 54%, 35%) 89%,\n    hsl(308, 58%, 35%) 100%\n  )"
-    }
-  ],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": [],
+  ".theme-light .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": [],
+  ".theme-dark .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": [],
   "button:not(.clickable-icon):not(.canvas-controls button):not( .mk-inline-button ):not(.mk-tree-wrapper button):not(.mk-view-selector button)": [
     { "property": "background-color", "value": "var(--background-primary)" },
     { "property": "border", "value": "var(--o-border)" },
@@ -22077,7 +21934,6 @@
     }
   ],
   ".markdown-source-view.mod-cm6 .is-unresolved .cm-underline:hover": [
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -22085,7 +21941,6 @@
     { "property": "font-weight", "value": "700" }
   ],
   ".markdown-source-view.mod-cm6 .cm-underline.is-unresolved:hover": [
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"
@@ -22093,7 +21948,6 @@
     { "property": "font-weight", "value": "700" }
   ],
   ".markdown-source-view.mod-cm6 .cm-underline:hover": [
-    { "property": "background-image", "value": "none" },
     {
       "property": "font-variation-settings",
       "value": "\"wght\" 700,\n    \"SOFT\" 100,\n    \"WONK\" 1"

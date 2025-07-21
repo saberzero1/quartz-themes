@@ -1866,10 +1866,6 @@
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
   ".external-link": [
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "caret-color", "value": "var(--accent-color)" },
     { "property": "text-decoration", "value": "none" },
     { "property": "color", "value": "var(--link-external-color)" },

@@ -3018,7 +3018,6 @@
     { "property": "border-bottom", "value": "var(--link-border)" },
     { "property": "font-weight", "value": "var(--link-weight)" },
     { "property": "text-transform", "value": "var(--link-transform)" },
-    { "property": "background-image", "value": "url()" },
     { "property": "padding-right", "value": "unset" }
   ],
   ".markdown-rendered .internal-link": [

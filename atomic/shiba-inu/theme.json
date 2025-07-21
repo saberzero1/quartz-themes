@@ -667,10 +667,6 @@
   ],
   ".annotationLayer .textWidgetAnnotation input": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -685,10 +681,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .textWidgetAnnotation textarea": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -706,10 +698,6 @@
   ],
   ".annotationLayer .choiceWidgetAnnotation select": [
     {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
-    {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
     },
@@ -724,10 +712,6 @@
     { "property": "width", "value": "100%" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -746,10 +730,6 @@
     { "property": "appearance", "value": "none" }
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton input": [
-    {
-      "property": "background-image",
-      "value": "var(--annotation-unfocused-field-background)"
-    },
     {
       "property": "border",
       "value": "2px solid var(--input-unfocused-border-color)"
@@ -889,7 +869,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.checkBox :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -899,7 +878,6 @@
   ],
   ".annotationLayer .buttonWidgetAnnotation.radioButton :focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     {
       "property": "border",
       "value": "2px solid var(--input-focus-border-color)"
@@ -1146,23 +1124,17 @@
   ],
   ".xfaTextfield:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaSelect:focus": [
     { "property": "background-color", "value": "transparent" },
-    { "property": "background-image", "value": "none" },
     { "property": "outline", "value": "auto" },
     { "property": "outline-offset", "value": "-1px" }
   ],
   ".xfaCheckbox:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaRadio:focus": [{ "property": "outline", "value": "auto" }],
   ".xfaTextfield": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -1171,10 +1143,6 @@
     { "property": "background", "value": "transparent" }
   ],
   ".xfaSelect": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
-    },
     { "property": "border", "value": "none" },
     { "property": "flex", "value": "1 1 auto" },
     { "property": "height", "value": "100%" },
@@ -7483,10 +7451,6 @@
     { "property": "margin", "value": "0" },
     { "property": "max-width", "value": "100%" },
     { "property": "padding", "value": "var(--dropdown-padding)" },
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
-    },
     { "property": "font-family", "value": "var(--font-text-theme)" },
     { "property": "font-size", "value": "0.89em" }
   ],
@@ -7505,10 +7469,6 @@
     { "property": "outline", "value": "none" }
   ],
   ".theme-dark .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4' viewBox='0 0 512 512' version='1.1'%3E%3Cpath d='' stroke='none' fill='%23787474' fill-rule='evenodd'/%3E%3Cpath d='M 43 101.567 C 23.371 105.817, 6.617 122.017, 1.489 141.703 C -0.419 149.028, -0.419 161.972, 1.489 169.297 C 5.349 184.116, 0.342 178.636, 114.844 293.362 C 183.630 362.282, 222.579 400.593, 226.458 403.146 C 243.573 414.414, 268.427 414.414, 285.542 403.146 C 289.417 400.595, 328.442 362.222, 397.192 293.362 C 500.204 190.185, 502.975 187.310, 506.464 180 C 508.432 175.875, 510.317 170.803, 510.653 168.728 C 510.988 166.653, 511.654 164.714, 512.131 164.419 C 512.609 164.124, 513 159.607, 513 154.382 C 513 149.157, 512.606 145.125, 512.125 145.423 C 511.644 145.720, 510.978 144.284, 510.646 142.232 C 508.623 129.718, 494.926 112.472, 482 106.161 C 474.893 102.691, 464.053 100.035, 457 100.035 C 450.005 100.035, 439.142 102.678, 432 106.118 C 426.058 108.980, 418.222 116.515, 340.750 193.861 L 256 278.473 171.250 193.861 C 93.778 116.515, 85.942 108.980, 80 106.118 C 68.101 100.387, 55.568 98.845, 43 101.567 M 0.365 155.500 C 0.368 161, 0.536 163.122, 0.738 160.216 C 0.941 157.311, 0.939 152.811, 0.734 150.216 C 0.528 147.622, 0.363 150, 0.365 155.500' stroke='none' fill='%23747474' fill-rule='evenodd'/%3E%3C/svg%3E\")"
-    },
     { "property": "color", "value": "var(--color-white)" },
     {
       "property": "background-color",
@@ -13696,16 +13656,11 @@
     { "property": "background-position-y", "value": "0.25em" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".external-link.mobile-tap": [{ "property": "opacity", "value": "0.5" }],
   ":dir(rtl) .external-link": [
     { "property": "background-position", "value": "center left" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/2308ab1944a6bfa5c5b8.svg)"
-    },
     { "property": "background-repeat", "value": "no-repeat" }
   ],
   ".metadata-property-value .internal-link": [
@@ -18847,7 +18802,6 @@
     { "property": "margin-right", "value": "auto" }
   ],
   ".webviewer-content .markdown-preview-view .external-link": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" }
   ],
   ".webviewer-content .error-notice": [
@@ -22178,18 +22132,10 @@
       "value": "rgb(var(--shib-bold-color, var(--red)))"
     }
   ],
-  ".is-translucent.shib-translucent-center:not(.is-fullscreen) .view-header-title-container:not(.mod-at-end):after": [
-    { "property": "background-image", "value": "none" }
-  ],
-  "body .markdown-preview-view th": [
-    { "property": "background-image", "value": "none" }
-  ],
-  "body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th": [
-    { "property": "background-image", "value": "none" }
-  ],
-  "body .table-view-table > thead > tr > th": [
-    { "property": "background-image", "value": "none" }
-  ],
+  ".is-translucent.shib-translucent-center:not(.is-fullscreen) .view-header-title-container:not(.mod-at-end):after": [],
+  "body .markdown-preview-view th": [],
+  "body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th": [],
+  "body .table-view-table > thead > tr > th": [],
   ".markdown-rendered .internal-link.is-unresolved:hover": [
     { "property": "color", "value": "var(--link-color-hover)" },
     { "property": "opacity", "value": "1" },
@@ -22229,7 +22175,6 @@
     { "property": "color", "value": "var(--text-normal)" }
   ],
   ".external-link:hover": [
-    { "property": "background-image", "value": "none" },
     { "property": "padding-right", "value": "0" },
     { "property": "color", "value": "var(--link-external-color-hover)" },
     {
@@ -23095,10 +23040,6 @@
     { "property": "z-index", "value": "100" }
   ],
   ".theme-light .dropdown": [
-    {
-      "property": "background-image",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4' viewBox='0 0 512 512' version='1.1'%3E%3Cpath d='' stroke='none' fill='%23787474' fill-rule='evenodd'/%3E%3Cpath d='M 43 101.567 C 23.371 105.817, 6.617 122.017, 1.489 141.703 C -0.419 149.028, -0.419 161.972, 1.489 169.297 C 5.349 184.116, 0.342 178.636, 114.844 293.362 C 183.630 362.282, 222.579 400.593, 226.458 403.146 C 243.573 414.414, 268.427 414.414, 285.542 403.146 C 289.417 400.595, 328.442 362.222, 397.192 293.362 C 500.204 190.185, 502.975 187.310, 506.464 180 C 508.432 175.875, 510.317 170.803, 510.653 168.728 C 510.988 166.653, 511.654 164.714, 512.131 164.419 C 512.609 164.124, 513 159.607, 513 154.382 C 513 149.157, 512.606 145.125, 512.125 145.423 C 511.644 145.720, 510.978 144.284, 510.646 142.232 C 508.623 129.718, 494.926 112.472, 482 106.161 C 474.893 102.691, 464.053 100.035, 457 100.035 C 450.005 100.035, 439.142 102.678, 432 106.118 C 426.058 108.980, 418.222 116.515, 340.750 193.861 L 256 278.473 171.250 193.861 C 93.778 116.515, 85.942 108.980, 80 106.118 C 68.101 100.387, 55.568 98.845, 43 101.567 M 0.365 155.500 C 0.368 161, 0.536 163.122, 0.738 160.216 C 0.941 157.311, 0.939 152.811, 0.734 150.216 C 0.528 147.622, 0.363 150, 0.365 155.500' stroke='none' fill='%23747474' fill-rule='evenodd'/%3E%3C/svg%3E\")"
-    },
     { "property": "background-color", "value": "var(--color-white)" },
     { "property": "color", "value": "rgb(var(--color-black))" },
     { "property": "border", "value": "1px solid #646464" },

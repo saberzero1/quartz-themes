@@ -2130,11 +2130,7 @@
     { "property": "line-height", "value": "var(--h1-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--pink) 0,\n    var(--orange) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h2": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2150,11 +2146,7 @@
     { "property": "line-height", "value": "var(--h2-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--orange) 0,\n    var(--yellow) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h3": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2170,11 +2162,7 @@
     { "property": "line-height", "value": "var(--h3-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--yellow) 0,\n    var(--green) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h4": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2190,11 +2178,7 @@
     { "property": "line-height", "value": "var(--h4-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--green) 0,\n    var(--blue) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h5": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2210,11 +2194,7 @@
     { "property": "line-height", "value": "var(--h5-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--blue) 0,\n    var(--purple) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h6": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2230,11 +2210,7 @@
     { "property": "line-height", "value": "var(--h6-line-height)" },
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
-    { "property": "background-clip", "value": "text" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(\n    var(--gradientDegree),\n    var(--purple) 0,\n    var(--pink) 100%\n  )"
-    }
+    { "property": "background-clip", "value": "text" }
   ],
   "h1 a": [{ "property": "--link-weight", "value": "var(--h1-weight)" }],
   "h2 a": [{ "property": "--link-weight", "value": "var(--h2-weight)" }],
@@ -2263,10 +2239,6 @@
     },
     { "property": "background-position", "value": "center right" },
     { "property": "background-repeat", "value": "no-repeat" },
-    {
-      "property": "background-image",
-      "value": "linear-gradient(transparent, transparent),\n    url(public/images/6155340132a851f6089e.svg)"
-    },
     { "property": "background-size", "value": "0.825em" },
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "background-position-y", "value": "0.25em" },
