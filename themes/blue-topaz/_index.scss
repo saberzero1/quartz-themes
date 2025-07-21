@@ -97,7 +97,6 @@ html[saved-theme="dark"] {
     --link-unresolved-decoration-color: var(--graph-unresolved);
     --prompt-box-shadow: #555555;
     --purple: #c594d4;
-    --scrollbar-active-thumb-bg: #4d4d4d88;
     --scrollbar-thumb-bg: #3f3f3f7e;
     --text-accent: var(--color-accent);
     --text-accent-hover: var(--color-accent-2);
@@ -202,7 +201,6 @@ html[saved-theme="light"] {
     );
     --bg-color-settings-4: #ffffffd2;
     --scrollbar-thumb-bg: #dcdcdcbe;
-    --scrollbar-active-thumb-bg: #ddddddd9;
     --green: var(--nord14);
     --darkgreen: #068a5e;
     --blue: var(--nord10);
@@ -5714,7 +5712,6 @@ body {
   --p-spacing: 1rem;
   --popover-max-height: 95vh;
   --prompt-input-height: 40px;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-icon-color: var(--text-muted);
@@ -6045,39 +6042,6 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: var(--radius-l);
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg);
-    -webkit-border-radius: var(--radius-l);
-    background-clip: padding-box;
-    border: 2px solid transparent;
-    border-width: 3px 3px 3px 2px;
-    min-height: 45px;
-
-    &:hover {
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-
-    &:active {
-      -webkit-border-radius: var(--radius-l);
-      background-color: var(--scrollbar-active-thumb-bg);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
