@@ -360,6 +360,15 @@ html {
   }
 }
 
+/* Scrollbars */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+
+    //%%body.styled-scrollbars%%
+
+  }
+}
+
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
@@ -369,15 +378,13 @@ body {
 
   overflow: initial;
 
-  //%%body.styled-scrollbars%%
-
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
 
     //%%body.styled-scrollbars ::-webkit-scrollbar%%
 
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
 
     //%%body.styled-scrollbars ::-webkit-scrollbar-thumb%%
 
@@ -394,13 +401,13 @@ body {
     }
   }
 
-  ::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
 
     //%%body.styled-scrollbars ::-webkit-scrollbar-track%%
 
   }
 
-  ::-webkit-scrollbar-corner {
+  &::-webkit-scrollbar-corner {
 
     //%%body.styled-scrollbars ::-webkit-scrollbar-corner%%
 
