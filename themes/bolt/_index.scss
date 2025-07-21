@@ -69,6 +69,7 @@ html[saved-theme="dark"] {
     --primary: hsl(181, 80%, 41%);
     --primary-container: #2f8a8b;
     --secondary: #b0cccc;
+    --secondary-container: #156f73;
     --surface: #192e2e;
     --surface-variant: #2f3f3f;
     --tertiary: #b4c8e9;
@@ -151,6 +152,7 @@ html[saved-theme="light"] {
     --primary: #00696b;
     --primary-container: #5fb9bb;
     --secondary: #4a6363;
+    --secondary-container: #cce8e8;
     --surface: #eef5f3;
     --surface-variant: #dbe8e8;
     --tertiary: #4c5f7c;
@@ -437,6 +439,7 @@ body {
   --tag-background-hover: var(--tertiary-container);
   --checkbox-radius: 0.2rem;
   --scrollbar-thumb-bg: var(--surface-variant);
+  --scrollbar-active-thumb-bg: var(--secondary-container);
   contain: initial;
   height: auto;
   overflow: auto;
@@ -646,6 +649,39 @@ body {
   background-color: var(--background-primary);
 
   overflow: initial;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: var(--radius-l);
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    -webkit-border-radius: var(--radius-l);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-width: 3px 3px 3px 2px;
+    min-height: 45px;
+
+    &:hover {
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+
+    &:active {
+      -webkit-border-radius: var(--radius-l);
+      background-color: var(--scrollbar-active-thumb-bg);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
   @media all and ($desktop) {
     background-color: var(--background-secondary);
@@ -1222,7 +1258,6 @@ body {
     @media all and ($mobile) {
       margin-top: calc((var(--quartz-themes-title-font-size) - 10px) / 4);
       &:not(.collapsed) > .explorer-content {
-        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
@@ -1283,12 +1318,10 @@ body {
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
-        -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
         background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
-        -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
         padding-inline-start: var(
@@ -1355,7 +1388,7 @@ body {
           align-self: center;
           background: var(--icon-color);
           mask-image: var(--file-icon);
-          -webkit-mask-image: var(--file-icon);
+
           margin-inline-end: 0.5rem;
         }
       }
@@ -1431,7 +1464,7 @@ body {
     --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
-    -webkit-mask-image: var(--readermode-icon);
+
     width: 24px;
     height: 24px;
   }
@@ -1444,7 +1477,7 @@ body {
     --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
-    -webkit-mask-image: var(--graph-icon);
+
     width: 24px;
     height: 24px;
   }
@@ -1739,18 +1772,15 @@ body {
   }
 
   user-select: text;
-  -webkit-user-select: text;
 }
 :root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
-    -webkit-mask-image: var(--sun-icon);
   }
 }
 :root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
-    -webkit-mask-image: var(--moon-icon);
   }
 }
 :root:root:root {
