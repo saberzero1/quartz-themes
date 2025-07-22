@@ -1470,6 +1470,7 @@ body {
           opacity: 0.001;
           will-change: opacity;
           position: absolute;
+          transform: none !important;
         }
         &:before {
           width: 1rem;
@@ -1495,11 +1496,11 @@ body {
           border-radius: 0.25rem;
         }
       }
-      li:has(> .folder-outer:not(.open)) > .folder-container:before {
+      li > .folder-container:has(+ .folder-outer):before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
       }
-      li:has(> .folder-outer.open) > .folder-container:before {
+      li > .folder-container:has(+ .folder-outer.open):before {
         background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
       }
