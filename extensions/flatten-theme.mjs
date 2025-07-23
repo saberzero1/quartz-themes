@@ -24,7 +24,6 @@ export default function flattenTheme() {
       const scssContent = readFileSync(themePath, "utf8");
       const processedScss = inlineScssUseRulesAndClean(scssContent, themePath);
       const prunedScss = prune(processedScss);
-
       writeFileSync(themePath, format(prunedScss, "scss"), "utf8");
 
       // Remove all directories under themes/${folder}
