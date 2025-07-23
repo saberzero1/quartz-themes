@@ -5,6 +5,7 @@ import { getTheme } from "../../util/util.mjs";
 import { themes } from "../../config.mjs";
 import { splitCombinedRules } from "../../util/postcss.mjs";
 import postcss from "postcss";
+import postcssCssVariables from "postcss-css-variables";
 import calc from "postcss-calc";
 import postcssNesting from "postcss-nesting";
 import postcssCustomProperties from "postcss-custom-properties";
@@ -50,6 +51,11 @@ export default function combineThemeCssWithObsidianCss(
       "./skip-css-regeneration",
       "This file is used as a flag to skip CSS regeneration. Delete this file to regenerate the CSS for the default Obsidian theme.",
     );
+
+    postcss([postcssCssVariables({ preserve: false })]).process(
+      format(obsidianCSS, "css"),
+      {},
+    ).css;
 
     writeFileSync(`./app_converted.css`, format(obsidianCSS, "css"));
   } else {

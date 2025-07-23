@@ -10436,6 +10436,10 @@ body {
       padding: 0;
       background-color: transparent;
 
+      background-color: transparent;
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
+
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--code-value) !important;
         color: var(--color-purple) !important;
@@ -10484,10 +10488,6 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
-
-      background-color: transparent;
-      color: var(--code-normal);
-      font-family: var(--codeFont, var(--font-monospace));
     }
   }
 
