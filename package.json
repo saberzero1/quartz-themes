@@ -57,6 +57,7 @@
     "postcss-color-rgb": "^2.0.0",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-combine-media-query": "^2.0.0",
+    "postcss-css-variables": "^0.19.0",
     "postcss-custom-properties": "^14.0.6",
     "postcss-nesting": "^13.0.2",
     "postcss-prune-var": "^1.1.2",
