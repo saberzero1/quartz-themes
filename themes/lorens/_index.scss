@@ -318,6 +318,11 @@ body {
   --accent-s: 80%;
   --accent-l: 64%;
   --h1-color: hsl(59, 81%, 47%);
+  --h2-color: hsl(191, 90%, 50%);
+  --h3-color: hsl(151, 54%, 64%);
+  --h4-color: hsl(224, 37%, 80%);
+  --h5-color: hsl(224, 37%, 80%);
+  --h6-color: hsl(224, 37%, 80%);
   --inline-title-color: inherit;
   --color-accent-dark: #0ba360;
   --tag-color: var(--color-accent);
@@ -866,7 +871,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(59, 81%, 47%);
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.5em;
     font-style: normal;
@@ -883,7 +888,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(191, 90%, 50%);
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.425em;
     font-style: normal;
@@ -898,7 +903,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(151, 54%, 64%);
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.35em;
     font-style: normal;
@@ -913,7 +918,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(224, 37%, 80%);
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.275em;
     font-style: normal;
@@ -928,7 +933,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(224, 37%, 80%);
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.2em;
     font-style: normal;
@@ -943,7 +948,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(224, 37%, 80%);
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1111,7 +1116,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: hsl(151, 54%, 64%);
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;
@@ -1139,7 +1144,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsl(191, 90%, 50%);
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1271,13 +1276,13 @@ body {
   }
 
   .toc {
-    color: hsl(151, 54%, 64%);
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: hsl(151, 54%, 64%);
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.35em;
         font-style: normal;
@@ -1291,7 +1296,7 @@ body {
       }
       color: inherit;
 
-      color: hsl(151, 54%, 64%);
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1316,7 +1321,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: hsl(151, 54%, 64%);
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;

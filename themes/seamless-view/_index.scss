@@ -65,8 +65,10 @@ html[saved-theme="dark"] {
     --accent-l: 40%;
     --color-accent: hsl(85, 45%, 40%);
     --color-red-alt: hsl(355, 65%, 70%);
+    --color-orange-alt: hsl(29, 54%, 61%);
     --color-yellow: hsl(50, 65%, 70%);
     --color-yellow-rgb: 228, 212, 129;
+    --color-green-alt: hsl(95, 38%, 62%);
     --color-green-alt-rgb: 152, 195, 121;
     --color-cyan: hsl(187, 47%, 55%);
     --color-cyan-rgb: 86, 182, 194;
@@ -75,6 +77,11 @@ html[saved-theme="dark"] {
     --color-pink: hsl(286, 60%, 67%);
     --hr-color: var(--color-base-40);
     --h1-color: var(--color-red-alt);
+    --h2-color: var(--color-yellow);
+    --h3-color: var(--color-blue);
+    --h4-color: var(--color-orange-alt);
+    --h5-color: var(--color-green-alt);
+    --h6-color: var(--color-purple);
     --highlight-mix-blend-mode: darken;
   }
 }
@@ -259,6 +266,11 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
@@ -845,7 +857,7 @@ body {
   h1 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.71875em;
     font-style: normal;
@@ -861,7 +873,7 @@ body {
   h2 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.5625em;
     font-style: normal;
@@ -875,7 +887,7 @@ body {
   h3 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.375em;
     font-style: normal;
@@ -889,7 +901,7 @@ body {
   h4 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.25em;
     font-style: normal;
@@ -903,7 +915,7 @@ body {
   h5 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -917,7 +929,7 @@ body {
   h6 {
     margin-block-end: 0;
     margin-block-start: 0;
-    color: inherit;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1086,7 +1098,7 @@ body {
     h3 {
       margin-block-end: 0;
       margin-block-start: 0;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;
@@ -1113,7 +1125,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1245,13 +1257,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 0;
         margin-block-start: 0;
-        color: inherit;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.375em;
         font-style: normal;
@@ -1264,7 +1276,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1289,7 +1301,7 @@ body {
     h3 {
       margin-block-end: 0;
       margin-block-start: 0;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;

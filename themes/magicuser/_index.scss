@@ -236,7 +236,7 @@ html {
   font-family: var(--bodyFont);
 }
 body {
-  --inline-title-color: var(--mu-h1);
+  --inline-title-color: var(--h1-color);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --interactive-accent-hsl: var(--color-accent-hsl);
@@ -269,6 +269,11 @@ body {
   --graph-node-unresolved: var(--mu-gray-1);
   --graph-node-tag: var(--mu-green-1);
   --h1-color: var(--mu-h1);
+  --h2-color: var(--mu-h2);
+  --h3-color: var(--mu-h3);
+  --h4-color: var(--mu-h4);
+  --h5-color: var(--mu-h5);
+  --h6-color: var(--mu-h6);
   --hr-color: var(--mu-hr-color);
   --link-color: var(--mu-link);
   --link-color-hover: var(--mu-link-hover);
@@ -833,7 +838,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h1);
+    color: var(--h1-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -851,7 +856,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h2);
+    color: var(--h2-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -867,7 +872,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h3);
+    color: var(--h3-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -883,7 +888,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h4);
+    color: var(--h4-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -899,7 +904,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h5);
+    color: var(--h5-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -915,7 +920,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: var(--mu-h6);
+    color: var(--h6-color);
     font-family:
       -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
       "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1083,7 +1088,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: var(--mu-h3);
+      color: var(--h3-color);
       font-family:
         -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
         "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1112,7 +1117,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: var(--mu-h2);
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1244,13 +1249,13 @@ body {
   }
 
   .toc {
-    color: var(--mu-h3);
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: var(--mu-h3);
+        color: var(--h3-color);
         font-family:
           -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
           "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1265,7 +1270,7 @@ body {
       }
       color: inherit;
 
-      color: var(--mu-h3);
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1290,7 +1295,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: var(--mu-h3);
+      color: var(--h3-color);
       font-family:
         -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
         "Helvetica Neue", Helvetica, Arial, sans-serif;

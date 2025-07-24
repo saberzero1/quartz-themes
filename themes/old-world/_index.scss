@@ -45,9 +45,18 @@ html[saved-theme="dark"] {
     --accent-h: 10;
     --accent-l: 77%;
     --accent-s: 83%;
+    --color-blue: #92a2d5;
     --color-green: #90b99f;
+    --color-orange: #f5a191;
+    --color-pink: #e29eca;
+    --color-red: #ea83a5;
     --color-yellow: #e6b99d;
     --h1-color: var(--color-yellow);
+    --h2-color: var(--color-blue);
+    --h3-color: var(--color-pink);
+    --h4-color: var(--color-orange);
+    --h5-color: var(--color-green);
+    --h6-color: var(--color-red);
     --link-accent: hsl(
       var(--link-accent-h),
       var(--link-accent-s),
@@ -239,7 +248,7 @@ body {
   --graph-line: var(--color-base-35, var(--color-base-40));
   --graph-node-tag: #90b99f;
   --hr-color: var(--color-base-30);
-  --inline-title-color: #e6b99d;
+  --inline-title-color: var(--h1-color);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
@@ -278,9 +287,18 @@ body {
   --accent-h: 10;
   --accent-l: 77%;
   --accent-s: 83%;
+  --color-blue: #92a2d5;
   --color-green: #90b99f;
+  --color-orange: #f5a191;
+  --color-pink: #e29eca;
+  --color-red: #ea83a5;
   --color-yellow: #e6b99d;
   --h1-color: #e6b99d;
+  --h2-color: #92a2d5;
+  --h3-color: #e29eca;
+  --h4-color: #f5a191;
+  --h5-color: #90b99f;
+  --h6-color: #ea83a5;
   --link-accent: hsl(226, 44%, 70%);
   --link-accent-h: 226;
   --link-accent-l: 70%;
@@ -825,7 +843,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #e6b99d;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -841,7 +859,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #92a2d5;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -855,7 +873,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #e29eca;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -869,7 +887,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #f5a191;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -883,7 +901,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #90b99f;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -897,7 +915,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #ea83a5;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1063,7 +1081,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #e29eca;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1090,7 +1108,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #92a2d5;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1222,13 +1240,13 @@ body {
   }
 
   .toc {
-    color: #e29eca;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: #e29eca;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1241,7 +1259,7 @@ body {
       }
       color: inherit;
 
-      color: #e29eca;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1266,7 +1284,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #e29eca;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

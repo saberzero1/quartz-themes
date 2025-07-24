@@ -194,6 +194,11 @@ body {
   --accent-s: 18.2222%;
   --accent-l: 55.8824%;
   --h1-color: #94959b;
+  --h2-color: #60bebe;
+  --h3-color: #cc83bd;
+  --h4-color: #dbbb43;
+  --h5-color: #b66056;
+  --h6-color: #6890d7;
   --tag-color: #ddd0c4;
   --tag-color-hover: #ffffff;
   --tag-background: rgba(136, 122, 163, 0.5);
@@ -746,7 +751,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #94959b;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.802em;
     font-style: oblique 10deg;
@@ -762,7 +767,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #60bebe;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.602em;
     font-style: oblique 10deg;
@@ -776,7 +781,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #cc83bd;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.424em;
     font-style: oblique 10deg;
@@ -790,7 +795,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #dbbb43;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.266em;
     font-style: oblique 10deg;
@@ -804,7 +809,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #b66056;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: oblique 10deg;
@@ -818,7 +823,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #6890d7;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: oblique 10deg;
@@ -975,7 +980,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #cc83bd;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: oblique 10deg;
@@ -1002,7 +1007,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #60bebe;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1134,13 +1139,13 @@ body {
   }
 
   .toc {
-    color: #cc83bd;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: #cc83bd;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.424em;
         font-style: oblique 10deg;
@@ -1153,7 +1158,7 @@ body {
       }
       color: inherit;
 
-      color: #cc83bd;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1178,7 +1183,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #cc83bd;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: oblique 10deg;

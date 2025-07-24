@@ -232,7 +232,7 @@ body {
   --graph-line: var(--color-base-35, var(--color-base-40));
   --h1-color: inherit;
   --hr-color: #2c1c42;
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --search-icon-color: #d4d4d4;

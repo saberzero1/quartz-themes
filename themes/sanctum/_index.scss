@@ -246,7 +246,7 @@ html {
 body {
   --collapse-icon-color: var(--color-base-50);
   --collapse-icon-color-collapsed: var(--color-accent);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --search-icon-color: var(--color-base-70);
@@ -306,6 +306,11 @@ body {
     "ss02" on;
   -webkit-font-smoothing: subpixel-antialiased;
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --graph-line: var(--border-subtle-1, var(--color-base-40));
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: hsl(9.6, 66.2%, 46.5%);
@@ -854,7 +859,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-size: 2em;
     font-style: normal;
     font-variant: normal;
@@ -871,7 +876,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family: "??", "??", Inter, sans-serif, "Arial";
     font-size: 1.75em;
     font-style: normal;
@@ -885,7 +890,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family: "??", "??", Inter, sans-serif, "Arial";
     font-size: 1.5em;
     font-style: normal;
@@ -899,7 +904,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family: "??", "??", Inter, sans-serif, "Arial";
     font-size: 1.25em;
     font-style: normal;
@@ -913,7 +918,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: "??", "??", Inter, sans-serif, "Arial";
     font-size: 1.125em;
     font-style: normal;
@@ -927,7 +932,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: "??", "??", Inter, sans-serif, "Arial";
     font-size: 1em;
     font-style: normal;
@@ -1103,7 +1108,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "??", "??", Inter, sans-serif, "Arial";
       font-size: 1.5em;
       font-style: normal;
@@ -1130,7 +1135,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1262,13 +1267,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family: "??", "??", Inter, sans-serif, "Arial";
         font-size: 1.5em;
         font-style: normal;
@@ -1281,7 +1286,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1306,7 +1311,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "??", "??", Inter, sans-serif, "Arial";
       font-size: 1.5em;
       font-style: normal;

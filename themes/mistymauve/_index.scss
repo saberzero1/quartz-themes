@@ -64,6 +64,11 @@ html[saved-theme="dark"] {
     --shadow-l:
       0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
     --h1-color: var(--color-bright-gray);
+    --h2-color: var(--color-bright-gray);
+    --h3-color: var(--color-bright-gray);
+    --h4-color: var(--color-bright-gray);
+    --h5-color: var(--color-bright-gray);
+    --h6-color: var(--color-bright-gray);
     --text-highlight-bg: var(--color-light-carmine-pink);
     --graph-node-unresolved: var(--color-timberwolf);
     --highlight-mix-blend-mode: darken;
@@ -130,6 +135,11 @@ html[saved-theme="light"] {
     --shadow-l:
       0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
     --h1-color: var(--color-tulip);
+    --h2-color: var(--color-tulip);
+    --h3-color: var(--color-tulip);
+    --h4-color: var(--color-tulip);
+    --h5-color: var(--color-tulip);
+    --h6-color: var(--color-tulip);
     --text-highlight-bg: var(--color-tulip);
     --graph-node-unresolved: gray;
   }
@@ -181,6 +191,11 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
@@ -761,7 +776,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-family: "Arvo", serif;
     font-size: 2em;
     font-style: normal;
@@ -777,7 +792,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family: "Arvo", serif;
     font-size: 1.7em;
     font-style: normal;
@@ -791,7 +806,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family: "Arvo", serif;
     font-size: 1.5em;
     font-style: normal;
@@ -805,7 +820,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family: "Arvo", serif;
     font-size: 1.3em;
     font-style: normal;
@@ -819,7 +834,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: "Arvo", serif;
     font-size: 1.1em;
     font-style: normal;
@@ -833,7 +848,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: "Arvo", serif;
     font-size: 0.8em;
     font-style: normal;
@@ -999,7 +1014,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "Arvo", serif;
       font-size: 1.5em;
       font-style: normal;
@@ -1026,7 +1041,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1161,13 +1176,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family: "Arvo", serif;
         font-size: 1.5em;
         font-style: normal;
@@ -1180,7 +1195,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1205,7 +1220,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "Arvo", serif;
       font-size: 1.5em;
       font-style: normal;
