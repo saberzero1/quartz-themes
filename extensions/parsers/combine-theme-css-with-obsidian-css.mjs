@@ -52,11 +52,6 @@ export default function combineThemeCssWithObsidianCss(
       "This file is used as a flag to skip CSS regeneration. Delete this file to regenerate the CSS for the default Obsidian theme.",
     );
 
-    postcss([postcssCssVariables({ preserve: false })]).process(
-      format(obsidianCSS, "css"),
-      {},
-    ).css;
-
     writeFileSync(`./app_converted.css`, format(obsidianCSS, "css"));
   } else {
     obsidianCSS = format(readFileSync("./app_converted.css"), "css");

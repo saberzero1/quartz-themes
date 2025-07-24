@@ -28,10 +28,13 @@ import combineThemeCSSWithObsidianCSS from "./extensions/parsers/combine-theme-c
 import flattenTheme from "./extensions/flatten-theme.mjs";
 import updateMiscFiles from "./extensions/update-misc-files.mjs";
 import filterJSONSelectors from "./extensions/filter-json-selectors.mjs";
-
-const manifestCollection = getManifestCollection();
+import replaceJSONSelectors from "./extensions/parsers/replace-json-selectors.mjs";
 
 const inputParameters = process.argv.slice(2);
+
+const manifestCollection = inputParameters.includes("--single")
+  ? [getManifestCollection()[0]]
+  : getManifestCollection();
 
 const fullMode = inputParameters.includes("--full");
 
@@ -47,6 +50,8 @@ if (fullMode) {
   combineThemeCSSWithObsidianCSS(manifestCollection, regenerateCSS);
 
   toJSON(manifestCollection);
+
+  replaceJSONSelectors(manifestCollection);
 
   //combineLightDarkInJson(manifestCollection);
 

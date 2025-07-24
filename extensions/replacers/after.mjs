@@ -11,6 +11,7 @@ import {
 } from "../../util/util.mjs";
 import { readFileSync, writeFileSync } from "fs";
 import { format } from "../formatter.mjs";
+import resolveCssVariables from "../packages/resolve-css-variables.mjs";
 
 const mapping = [
   { selector: ":root", declaration: "" },
@@ -288,7 +289,16 @@ export function replaceAfter(manifestCollection) {
       target("/\/\/%%FIXES%%/g"),
       fixes,
     );
-    writeFileSync(filePath, cleanSCSSString(updatedContent), "utf8");
+
+    const cleanedContent = cleanSCSSString(updatedContent);
+    const variableMap = JSON.parse(
+      readFileSync(`./atomic/${theme}/theme-resolved.json`, "utf8"),
+    );
+    writeFileSync(
+      filePath,
+      format(resolveCssVariables(cleanedContent, variableMap), "scss"),
+      "utf8",
+    );
 
     console.log(`Replaced after properties in theme: ${theme}`);
   });
