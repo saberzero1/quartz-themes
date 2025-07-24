@@ -312,7 +312,7 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --hr-color: var(--color-base-30);
-  --inline-title-color: #8470a6;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
@@ -355,6 +355,11 @@ body {
   color: var(--color-base-100);
   caret-color: var(--color-base-100);
   --h1-color: #8470a6;
+  --h2-color: #507a9e;
+  --h3-color: #5a8d76;
+  --h4-color: #a67a5b;
+  --h5-color: #a19c6c;
+  --h6-color: #6c8299;
   --text-highlight-bg: #746119;
   contain: initial;
   height: auto;
@@ -904,7 +909,7 @@ body {
     letter-spacing: -0.015em;
     line-height: 1.2;
     font-weight: bold;
-    color: #8470a6;
+    color: var(--h1-color);
 
     font-size: 2rem;
   }
@@ -920,7 +925,7 @@ body {
     letter-spacing: -0.015em;
     line-height: 1.2;
     font-weight: bold;
-    color: #507a9e;
+    color: var(--h2-color);
 
     font-size: 1.75rem;
   }
@@ -934,7 +939,7 @@ body {
     letter-spacing: -0.015em;
     line-height: 1.3;
     font-weight: bold;
-    color: #5a8d76;
+    color: var(--h3-color);
 
     font-size: 1.6rem;
   }
@@ -948,7 +953,7 @@ body {
     letter-spacing: 0.015em;
     line-height: 1.4;
     font-weight: bold;
-    color: #a67a5b;
+    color: var(--h4-color);
 
     font-size: 1.4rem;
   }
@@ -962,7 +967,7 @@ body {
     letter-spacing: 0.015em;
     line-height: 1.5;
     font-weight: bold;
-    color: #a19c6c;
+    color: var(--h5-color);
 
     font-size: 1.2rem;
   }
@@ -976,7 +981,7 @@ body {
     letter-spacing: 0.015em;
     line-height: 1.5;
     font-weight: bold;
-    color: #6c8299;
+    color: var(--h6-color);
 
     font-size: 1.1rem;
   }
@@ -1142,7 +1147,7 @@ body {
       letter-spacing: -0.015em;
       line-height: 1.3;
       font-weight: bold;
-      color: #5a8d76;
+      color: var(--h3-color);
     }
 
     ul li {
@@ -1162,7 +1167,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #507a9e;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1294,7 +1299,7 @@ body {
   }
 
   .toc {
-    color: #5a8d76;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
@@ -1307,13 +1312,13 @@ body {
         letter-spacing: -0.015em;
         line-height: 1.3;
         font-weight: bold;
-        color: #5a8d76;
+        color: var(--h3-color);
 
         margin-block: 0;
       }
       color: inherit;
 
-      color: #5a8d76;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1345,7 +1350,7 @@ body {
       letter-spacing: -0.015em;
       line-height: 1.3;
       font-weight: bold;
-      color: #5a8d76;
+      color: var(--h3-color);
 
       min-height: calc(2 * 1rem + 1.3);
       margin-block: 0;

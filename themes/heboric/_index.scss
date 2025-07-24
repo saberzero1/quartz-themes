@@ -60,6 +60,11 @@ html[saved-theme="dark"] {
     --color-accent-2: #dc7878;
     --inline-title-color: var(--color-base-100);
     --h1-color: var(--color-base-100);
+    --h2-color: var(--color-base-100);
+    --h3-color: var(--color-base-80);
+    --h4-color: var(--color-base-80);
+    --h5-color: var(--color-base-80);
+    --h6-color: var(--color-base-80);
     --link-color: var(--color-accent);
     --collapse-icon-color-collapsed: var(--color-accent);
     --hr-color: var(--color-base-25);
@@ -127,6 +132,11 @@ html[saved-theme="light"] {
     --color-accent-2: #dc7878;
     --inline-title-color: var(--color-base-100);
     --h1-color: var(--color-base-100);
+    --h2-color: var(--color-base-100);
+    --h3-color: var(--color-base-80);
+    --h4-color: var(--color-base-80);
+    --h5-color: var(--color-base-80);
+    --h6-color: var(--color-base-80);
     --collapse-icon-color-collapsed: var(--color-accent);
     --hr-color: var(--color-base-25);
     --tag-color: var(--color-base-10);
@@ -310,8 +320,13 @@ body {
   --collapse-icon-color-collapsed: var(--color-accent);
   --graph-line: var(--color-base-35, var(--color-base-40));
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
@@ -886,7 +901,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -904,7 +919,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.65rem;
     font-style: normal;
@@ -920,7 +935,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.5rem;
     font-style: normal;
@@ -934,7 +949,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.25rem;
     font-style: normal;
@@ -948,7 +963,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.125rem;
     font-style: normal;
@@ -962,7 +977,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -1113,7 +1128,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       font-size: 1.5rem;
       font-style: normal;
@@ -1140,7 +1155,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1272,13 +1287,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family: "SF Pro", ui-sans-serif, sans-serif;
         font-size: 1.5rem;
         font-style: normal;
@@ -1291,7 +1306,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1316,7 +1331,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       font-size: 1.5rem;
       font-style: normal;
