@@ -219,8 +219,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
     "Source Code Pro",
     ui-monospace,
     ui-sans-serif,
@@ -917,7 +915,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-70);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -977,15 +974,13 @@ body {
     border: 0px solid var(--color-base-30);
     color: var(--color-base-70);
     font-family:
-      "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
-      "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-      "Consolas", "Source Code Pro", monospace;
+      ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+      "Source Code Pro", monospace;
     background-color: var(--color-base-10);
     border-radius: 4px;
     font-size: 0.875em;
     padding: 0.1em 0.25em;
-
-    font-family: "??";
   }
   .clipboard-button {
     inset-inline-end: 0;
@@ -997,8 +992,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
       "Source Code Pro",
       ui-monospace,
       ui-sans-serif,
@@ -1553,12 +1546,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

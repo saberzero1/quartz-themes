@@ -5554,9 +5554,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6132,8 +6129,6 @@ body {
     margin-block-start: 1rem;
     color: var(--h1-color);
     font-family:
-      "??",
-      "??",
       Bookerly,
       "Inter",
       "Segoe UI",
@@ -6168,8 +6163,6 @@ body {
     margin-block-start: 1rem;
     color: var(--h2-color);
     font-family:
-      "??",
-      "??",
       Bookerly,
       "Inter",
       "Segoe UI",
@@ -6203,8 +6196,6 @@ body {
     margin-block-start: 1rem;
     color: var(--h3-color);
     font-family:
-      "??",
-      "??",
       Bookerly,
       "Inter",
       "Segoe UI",
@@ -6238,8 +6229,6 @@ body {
     margin-block-start: 1rem;
     color: var(--h4-color);
     font-family:
-      "??",
-      "??",
       Bookerly,
       "Inter",
       "Segoe UI",
@@ -6334,7 +6323,6 @@ body {
 
       background-color: transparent;
       color: #d4d4d4;
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: #abd58e !important;
@@ -6397,15 +6385,13 @@ body {
     border: 0px solid var(--color-base-30);
     color: #d58000;
     font-family:
-      "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
-      "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
-      "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
-      SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-      "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
+      "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
+      "Source Code Pro", monospace, ui-monospace, SFMono-Regular,
+      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+      Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     font-size: 0.825em;
     text-align: start;
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -6416,9 +6402,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -6458,8 +6441,6 @@ body {
       margin-block-start: 1rem;
       color: var(--h3-color);
       font-family:
-        "??",
-        "??",
         Bookerly,
         "Inter",
         "Segoe UI",
@@ -6644,8 +6625,6 @@ body {
         margin-block-start: 1rem;
         color: var(--h3-color);
         font-family:
-          "??",
-          "??",
           Bookerly,
           "Inter",
           "Segoe UI",
@@ -6703,8 +6682,6 @@ body {
       margin-block-start: 1rem;
       color: var(--h3-color);
       font-family:
-        "??",
-        "??",
         Bookerly,
         "Inter",
         "Segoe UI",
@@ -6905,8 +6882,6 @@ body {
       var(--h1-color, var(--link-color, var(--darkgray)))
     );
     font-family:
-      "??",
-      "??",
       Bookerly,
       "Inter",
       "Segoe UI",
@@ -7057,14 +7032,14 @@ body {
   .math {
     color: var(--color-base-100);
     font-family:
-      "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+      Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
       "Microsoft YaHei", "Arial";
     hyphens: none;
   }
   .page article a,
   a {
     font-family:
-      "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+      Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
       "Microsoft YaHei", "Arial";
     hyphens: none;
   }

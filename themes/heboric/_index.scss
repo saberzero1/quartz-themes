@@ -349,7 +349,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
+  font-family: "SF Pro", ui-sans-serif, sans-serif;
   line-height: 1.3;
   font-size: 15px;
   background-color: var(--color-base-00);
@@ -1024,7 +1024,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-100);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -1083,15 +1082,13 @@ body {
 
     color: var(--color-base-100);
     font-family:
-      "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
-      Menlo, Consolas, "DejaVu Sans Mono", monospace;
+      "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+      Consolas, "DejaVu Sans Mono", monospace;
     background-color: var(--color-base-10);
     border-radius: 3px;
     font-size: 0.8rem;
     padding: 0.15em 0.3em;
     border: 0px solid var(--color-base-30);
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1101,7 +1098,7 @@ body {
     box-shadow: none;
     color: var(--color-base-70);
     font-size: 12px;
-    font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
+    font-family: "SF Pro", ui-sans-serif, sans-serif;
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -1645,12 +1642,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

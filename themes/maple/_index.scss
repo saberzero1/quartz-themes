@@ -200,9 +200,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -770,7 +767,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h1-color);
-    font-family: "??";
     font-size: calc(16px * 1.6);
     font-style: normal;
     font-variant: normal;
@@ -786,7 +782,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h2-color);
-    font-family: "??";
     font-size: calc(16px * 1.5);
     font-style: normal;
     font-variant: normal;
@@ -800,7 +795,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h3-color);
-    font-family: "??";
     font-size: calc(16px * 1.4);
     font-style: normal;
     font-variant: normal;
@@ -814,7 +808,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h4-color);
-    font-family: "??";
     font-size: calc(16px * 1.3);
     font-style: normal;
     font-variant: normal;
@@ -828,7 +821,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h5-color);
-    font-family: "??";
     font-size: calc(16px * 1.2);
     font-style: normal;
     font-variant: normal;
@@ -842,7 +834,6 @@ body {
     margin-block-end: 4px;
     margin-block-start: 4px;
     color: var(--h6-color);
-    font-family: "??";
     font-size: calc(16px * 1.1);
     font-style: normal;
     font-variant: normal;
@@ -888,7 +879,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-100);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -946,7 +936,7 @@ body {
     color: var(--color-base-100);
 
     font-family:
-      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
     background-color: var(--color-base-10);
@@ -955,8 +945,6 @@ body {
     padding: 0.15em 0.3em;
     color: var(--setting-code-inline, var(--color-red));
     border: 2px solid rgba(var(--mono-rgb-100), 0.067);
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -967,9 +955,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1008,7 +993,6 @@ body {
       margin-block-end: 4px;
       margin-block-start: 4px;
       color: var(--h3-color);
-      font-family: "??";
       font-size: calc(16px * 1.4);
       font-style: normal;
       font-variant: normal;
@@ -1170,7 +1154,6 @@ body {
         margin-block-end: 4px;
         margin-block-start: 4px;
         color: var(--h3-color);
-        font-family: "??";
         font-size: calc(16px * 1.4);
         font-style: normal;
         font-variant: normal;
@@ -1208,7 +1191,6 @@ body {
       margin-block-end: 4px;
       margin-block-start: 4px;
       color: var(--h3-color);
-      font-family: "??";
       font-size: calc(16px * 1.4);
       font-style: normal;
       font-variant: normal;
@@ -1389,7 +1371,6 @@ body {
       --inline-title-color,
       var(--h1-color, var(--link-color, var(--darkgray)))
     );
-    font-family: "??";
     font-size: 1.75rem;
   }
 
@@ -1521,12 +1502,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

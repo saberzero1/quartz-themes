@@ -350,11 +350,9 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     Inter,
     Heiti,
     Dotum,
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1076,7 +1074,6 @@ body {
 
       background-color: transparent;
       color: color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 100%);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: rgb(var(--syntax-constant)) !important;
@@ -1155,7 +1152,6 @@ body {
 
     color: color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 100%);
     font-family:
-      "??",
       Monaspace Neon,
       ui-monospace,
       SFMono-Regular,
@@ -1178,8 +1174,6 @@ body {
     padding: 0.15em 0.3em;
     border: 0px solid
       color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 30%);
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1190,11 +1184,9 @@ body {
     color: color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 70%);
     font-size: 12px;
     font-family:
-      "??",
       Inter,
       Heiti,
       Dotum,
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1835,12 +1827,12 @@ body {
   .katex,
   .math {
     color: color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 100%);
-    font-family: "??", "??", Lora, Songti, Batang, "Arial";
+    font-family: Lora, Songti, Batang, "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", Lora, Songti, Batang, "Arial";
+    font-family: Lora, Songti, Batang, "Arial";
     hyphens: none;
   }
 }

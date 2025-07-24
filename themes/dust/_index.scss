@@ -218,9 +218,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -997,9 +994,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1557,12 +1551,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

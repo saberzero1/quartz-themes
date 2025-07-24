@@ -353,7 +353,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     "Franklin Gothic Book",
     "Rubik",
     "Helvetica Neue",
@@ -362,7 +361,6 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "??",
     "Franklin Gothic Book",
     "Rubik",
     "Helvetica Neue",
@@ -1038,8 +1036,8 @@ body {
     overflow-x: auto;
     color: hsl(0, 0%, 89%);
     font-family:
-      "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
-      SFMono-Regular, Consolas, "Source Code Pro", monospace;
+      "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
+      Consolas, "Source Code Pro", monospace;
 
     white-space: pre;
     & > code {
@@ -1049,7 +1047,6 @@ body {
 
       background-color: transparent;
       color: hsl(0, 0%, 89%);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: #8c6ef0 !important;
@@ -1108,15 +1105,13 @@ body {
 
     color: hsl(0, 0%, 89%);
     font-family:
-      "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
-      SFMono-Regular, Consolas, "Source Code Pro", monospace;
+      "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
+      Consolas, "Source Code Pro", monospace;
     background-color: var(--background-dark);
     border-radius: calc(0.1px * 20);
     font-size: 0.875em;
     padding: 0.15em 0.3em;
     border: 0px solid var(--color-base-30);
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1125,7 +1120,6 @@ body {
     box-shadow: none;
     font-size: 13px;
     font-family:
-      "??",
       "Franklin Gothic Book",
       "Rubik",
       "Helvetica Neue",
@@ -1134,7 +1128,6 @@ body {
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif,
-      "??",
       "Franklin Gothic Book",
       "Rubik",
       "Helvetica Neue",
@@ -1692,12 +1685,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }
