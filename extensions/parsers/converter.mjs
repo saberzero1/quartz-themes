@@ -105,7 +105,7 @@ export function preprocessCSS(css, index = 0) {
   css = format(css, "css");
 
   // Process CSS with PostCSS plugins
-  css = createStatic(css);
+  //css = createStatic(css);
 
   if (css === current || index >= 25) {
     return css;

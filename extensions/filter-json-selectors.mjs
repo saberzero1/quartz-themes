@@ -6,6 +6,7 @@ import { allSelectors } from "./replacers/after.mjs";
 export default function filterJsonSelectors(manifestCollection) {
   manifestCollection.forEach((manifest) => {
     const theme = getTheme(manifest);
+    //const inputFile = `./atomic/${theme}/theme.json`;
     const inputFile = `./atomic/${theme}/theme.json`;
     const outputFile = `./atomic/${theme}/theme-filtered.json`;
 

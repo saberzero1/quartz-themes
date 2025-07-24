@@ -96,6 +96,12 @@ json-compile-full:
 json-compile-full-regenerate:
   node main.js --full --regenerate-css
 
+json-compile-single:
+  node main.js --full --single
+
+json-compile-single-regenerate:
+  node main.js --full --regenerate-css --single
+
 [doc('Update themes')]
 update:
   git pull
