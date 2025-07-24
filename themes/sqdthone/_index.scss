@@ -284,7 +284,7 @@ body {
   --background-modifier-border-focus: var(--color-base-40);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   margin: 0;
@@ -1628,12 +1628,12 @@ body {
   .katex,
   .math {
     color: hsl(var(--color-text-normal));
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

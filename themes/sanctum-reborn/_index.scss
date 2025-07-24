@@ -261,10 +261,8 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     inter,
     sans-serif,
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -865,7 +863,7 @@ body {
     letter-spacing: -0.015em;
     line-height: 1.2;
     border: none;
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
 
     font-size: 2rem;
   }
@@ -875,7 +873,7 @@ body {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
     color: var(--h2-color);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1.75em;
     font-style: normal;
     font-variant: normal;
@@ -889,7 +887,7 @@ body {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
     color: var(--h3-color);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
@@ -903,7 +901,7 @@ body {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
     color: var(--h4-color);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
@@ -917,7 +915,7 @@ body {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
     color: var(--h5-color);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1.125em;
     font-style: normal;
     font-variant: normal;
@@ -931,7 +929,7 @@ body {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
     color: var(--h6-color);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
@@ -977,7 +975,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-100);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -1036,17 +1033,14 @@ body {
 
     color: var(--color-base-100);
     font-family:
-      "??", menlo, sfmono-regular, consolas, "Roboto Mono", monospace,
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+      menlo, sfmono-regular, consolas, "Roboto Mono", monospace, ui-monospace,
+      SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+      "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     background-color: var(--color-base-10);
     border-radius: 4px;
     font-size: 0.875em;
     padding: 0.15em 0.3em;
     border: 0px solid var(--color-base-30);
-
-    font-family: "??";
   }
   .clipboard-button {
     padding: 6px 8px;
@@ -1056,10 +1050,8 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
       inter,
       sans-serif,
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1107,7 +1099,7 @@ body {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
       color: var(--h3-color);
-      font-family: "??", "??", inter, sans-serif, "Arial";
+      font-family: inter, sans-serif, "Arial";
       font-size: 1.5em;
       font-style: normal;
       font-variant: normal;
@@ -1272,7 +1264,7 @@ body {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
         color: var(--h3-color);
-        font-family: "??", "??", inter, sans-serif, "Arial";
+        font-family: inter, sans-serif, "Arial";
         font-size: 1.5em;
         font-style: normal;
         font-variant: normal;
@@ -1310,7 +1302,7 @@ body {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
       color: var(--h3-color);
-      font-family: "??", "??", inter, sans-serif, "Arial";
+      font-family: inter, sans-serif, "Arial";
       font-size: 1.5em;
       font-style: normal;
       font-variant: normal;
@@ -1494,7 +1486,7 @@ body {
       --inline-title-color,
       var(--h1-color, var(--link-color, var(--darkgray)))
     );
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     font-size: 1.75rem;
   }
 
@@ -1630,12 +1622,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", inter, sans-serif, "Arial";
+    font-family: inter, sans-serif, "Arial";
     hyphens: none;
   }
 }

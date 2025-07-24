@@ -293,7 +293,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "??", "??", "??", "iA Writer Quattro S";
+  font-family: "iA Writer Quattro S";
   line-height: 1.3;
   font-size: 15px;
   background-color: var(--color-base-00);
@@ -1034,7 +1034,7 @@ body {
     box-shadow: none;
     color: var(--color-base-70);
     font-size: 12px;
-    font-family: "??", "??", "??", "iA Writer Quattro S";
+    font-family: "iA Writer Quattro S";
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -1578,12 +1578,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }
