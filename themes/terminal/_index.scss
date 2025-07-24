@@ -186,8 +186,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
     Fira Code,
     ui-sans-serif,
     -apple-system,
@@ -950,8 +948,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
       Fira Code,
       ui-sans-serif,
       -apple-system,
@@ -1509,12 +1505,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

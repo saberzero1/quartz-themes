@@ -1030,18 +1030,18 @@
       "property": "--font-monospace-default",
       "value": "ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\",\n    \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\",\n    \"Source Code Pro\", monospace"
     },
-    { "property": "--font-interface-override", "value": "\"??\"" },
+    { "property": "--font-interface-override", "value": "" },
     {
       "property": "--font-interface",
-      "value": "var(--font-interface-override), var(--font-interface-theme),\n    var(--default-font, \"??\"), var(--font-default)"
+      "value": "var(--font-interface-override), var(--font-interface-theme),\n    var(--default-font,  ), var(--font-default)"
     },
-    { "property": "--font-text-override", "value": "\"??\"" },
-    { "property": "--font-print-override", "value": "\"??\"" },
+    { "property": "--font-text-override", "value": "" },
+    { "property": "--font-print-override", "value": "" },
     {
       "property": "--font-print",
       "value": "var(--font-print-override), var(--font-text-override),\n    var(--font-text-theme), \"Arial\""
     },
-    { "property": "--font-monospace-override", "value": "\"??\"" },
+    { "property": "--font-monospace-override", "value": "" },
     {
       "property": "--font-monospace",
       "value": "var(--font-monospace-override), var(--font-monospace-theme),\n    var(--font-monospace-default)"

@@ -406,8 +406,6 @@ body {
   width: 100%;
   font-family:
     "Avenir",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1143,7 +1141,7 @@ body {
 
     color: var(--color-base-100);
     font-family:
-      "", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
     background-color: var(--color-base-10);
@@ -1164,8 +1162,6 @@ body {
     font-size: 12px;
     font-family:
       "Avenir",
-      "??",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1720,12 +1716,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "Avenir", "??", "Arial";
+    font-family: "Avenir", "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "Avenir", "??", "Arial";
+    font-family: "Avenir", "Arial";
     hyphens: none;
   }
 }

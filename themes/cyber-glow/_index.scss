@@ -265,7 +265,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     "OxaniumFira",
     "Inter",
     "Rubik",
@@ -1041,7 +1040,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-100);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -1105,15 +1103,12 @@ body {
     padding: 0.15em 0.3em;
     border: 0px solid var(--color-base-30);
     font-family: "OxaniumFira";
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
     height: auto;
     font-size: 12px;
     font-family:
-      "??",
       "OxaniumFira",
       "Inter",
       "Rubik",
@@ -1740,14 +1735,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family:
-      "??", "??", "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
+    font-family: "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family:
-      "??", "??", "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
+    font-family: "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
     hyphens: none;
   }
 }

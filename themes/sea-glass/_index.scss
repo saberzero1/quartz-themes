@@ -231,9 +231,7 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     "Euclid Circular A",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -924,7 +922,6 @@ body {
 
       background-color: transparent;
       color: #ebdbb2;
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: #8be1c0 !important;
@@ -983,16 +980,14 @@ body {
 
     color: #ebdbb2;
     font-family:
-      "??", "Hack", "CaskaydiaCove Nerd Font Mono", ui-monospace,
-      SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-      "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      "Hack", "CaskaydiaCove Nerd Font Mono", ui-monospace, SFMono-Regular,
+      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+      Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     background-color: #1d2021;
     border-radius: 4px;
     font-size: 0.875em;
     padding: 0.15em 0.3em;
     border: 0px solid var(--color-base-30);
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1003,9 +998,7 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
       "Euclid Circular A",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1560,12 +1553,12 @@ body {
   .katex,
   .math {
     color: #ebdbb2;
-    font-family: "??", "??", "Euclid Circular A", "Arial";
+    font-family: "Euclid Circular A", "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "Euclid Circular A", "Arial";
+    font-family: "Euclid Circular A", "Arial";
     hyphens: none;
   }
 }

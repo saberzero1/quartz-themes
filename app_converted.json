@@ -1817,10 +1817,10 @@
     { "property": "--font-extralight", "value": "200" },
     {
       "property": "--font-interface",
-      "value": "var(--font-interface-override), var(--font-interface-theme),\n    var(--default-font, \"??\"), var(--font-default)"
+      "value": "var(--font-interface-override), var(--font-interface-theme),\n    var(--default-font,  ), var(--font-default)"
     },
-    { "property": "--font-interface-override", "value": "\"??\"" },
-    { "property": "--font-interface-theme", "value": "\"??\"" },
+    { "property": "--font-interface-override", "value": "" },
+    { "property": "--font-interface-theme", "value": "" },
     { "property": "--font-light", "value": "300" },
     { "property": "--font-medium", "value": "500" },
     { "property": "--font-mermaid", "value": "var(--font-text)" },
@@ -1832,22 +1832,22 @@
       "property": "--font-monospace-default",
       "value": "ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\",\n    \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\",\n    \"Source Code Pro\", monospace"
     },
-    { "property": "--font-monospace-override", "value": "\"??\"" },
-    { "property": "--font-monospace-theme", "value": "\"??\"" },
+    { "property": "--font-monospace-override", "value": "" },
+    { "property": "--font-monospace-theme", "value": "" },
     { "property": "--font-normal", "value": "400" },
     {
       "property": "--font-print",
       "value": "var(--font-print-override), var(--font-text-override),\n    var(--font-text-theme), \"Arial\""
     },
-    { "property": "--font-print-override", "value": "\"??\"" },
+    { "property": "--font-print-override", "value": "" },
     { "property": "--font-semibold", "value": "600" },
     { "property": "--font-small", "value": "0.933em" },
     { "property": "--font-smaller", "value": "0.875em" },
     { "property": "--font-smallest", "value": "0.8em" },
     { "property": "--font-text", "value": "var(--font-print)" },
-    { "property": "--font-text-override", "value": "\"??\"" },
+    { "property": "--font-text-override", "value": "" },
     { "property": "--font-text-size", "value": "16px" },
-    { "property": "--font-text-theme", "value": "\"??\"" },
+    { "property": "--font-text-theme", "value": "" },
     { "property": "--font-thin", "value": "100" },
     { "property": "--font-ui-large", "value": "20px" },
     { "property": "--font-ui-medium", "value": "15px" },

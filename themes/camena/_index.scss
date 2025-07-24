@@ -184,14 +184,12 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
     Avenir,
     Montserrat,
     Corbel,
     "URW Gothic",
     source-sans-pro,
     sans-serif,
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -900,7 +898,6 @@ body {
 
       background-color: transparent;
       color: var(--accent-color);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -959,7 +956,7 @@ body {
 
     color: var(--accent-color);
     font-family:
-      "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+      ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
       "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
       "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
       Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -968,8 +965,6 @@ body {
     font-size: inherit;
     border: 0px solid var(--color-base-30);
     padding: 0.1em 0.6em;
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -980,14 +975,12 @@ body {
     color: var(--color-base-50);
     font-size: 12px;
     font-family:
-      "??",
       Avenir,
       Montserrat,
       Corbel,
       "URW Gothic",
       source-sans-pro,
       sans-serif,
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1549,15 +1542,15 @@ body {
   .math {
     color: var(--color-base-100);
     font-family:
-      "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-      sans-serif, "Arial";
+      Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif,
+      "Arial";
     hyphens: none;
   }
   .page article a,
   a {
     font-family:
-      "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-      sans-serif, "Arial";
+      Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif,
+      "Arial";
     hyphens: none;
   }
 }

@@ -453,8 +453,8 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.3;
@@ -1160,7 +1160,6 @@ body {
 
       background-color: transparent;
       color: var(--color-base-100);
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--color-purple) !important;
@@ -1223,7 +1222,7 @@ body {
 
     color: var(--color-base-100);
     font-family:
-      "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+      ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular,
       Consolas, "Roboto Mono", "Source Code Pro", monospace;
     background-color: light-dark(#000000, #ffffff);
@@ -1231,8 +1230,6 @@ body {
     font-size: 0.875em;
     border: 0px solid var(--color-base-30);
     padding: 0.25em 0.5em;
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1243,8 +1240,8 @@ body {
     color: color-mix(in srgb, var(--color-base-100), transparent 30%);
     font-size: 11px;
     font-family:
-      "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
+      system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     position: absolute;
@@ -1843,7 +1840,7 @@ body {
   .math {
     color: var(--color-base-100);
     font-family:
-      "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1852,7 +1849,7 @@ body {
   .page article a,
   a {
     font-family:
-      "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
