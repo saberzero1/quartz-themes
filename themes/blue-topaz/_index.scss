@@ -71,6 +71,11 @@ html[saved-theme="dark"] {
     --background-modifier-border: #343434;
     --graph-line: #8c8c8c;
     --h1-color: var(--print-h1-color, hsl(78, 62%, 47%));
+    --h2-color: var(--print-h2-color, hsl(118, 42%, 49%));
+    --h3-color: var(--print-h3-color, hsl(180, 53%, 48%));
+    --h4-color: var(--print-h4-color, hsl(216, 69%, 68%));
+    --h5-color: var(--print-h5-color, hsl(258, 79%, 77%));
+    --h6-color: var(--print-h6-color, hsl(290, 85%, 81%));
     --hr-color: var(--color-base-10);
     --text-faint: #797979;
     --text-highlight-bg: hsla(
@@ -158,6 +163,11 @@ html[saved-theme="light"] {
       var(--text-highlight-bg-a-light)
     );
     --h1-color: var(--print-h1-color, hsl(216, 88%, 26%));
+    --h2-color: var(--print-h2-color, hsl(212, 100%, 33%));
+    --h3-color: var(--print-h3-color, hsl(210, 86%, 39%));
+    --h4-color: var(--print-h4-color, hsl(208, 58%, 49%));
+    --h5-color: var(--print-h5-color, hsl(209, 70%, 62%));
+    --h6-color: var(--print-h6-color, hsl(209, 65%, 72%));
     --graph-line: #b1b1b1;
   }
 }
@@ -5514,8 +5524,13 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
@@ -6115,7 +6130,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-family:
       "??",
       "??",
@@ -6151,7 +6166,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family:
       "??",
       "??",
@@ -6186,7 +6201,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family:
       "??",
       "??",
@@ -6221,7 +6236,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family:
       "??",
       "??",
@@ -6256,7 +6271,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.0625em;
     font-style: normal;
@@ -6271,7 +6286,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -6441,7 +6456,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family:
         "??",
         "??",
@@ -6489,7 +6504,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -6621,13 +6636,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family:
           "??",
           "??",
@@ -6661,7 +6676,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -6686,7 +6701,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family:
         "??",
         "??",

@@ -309,7 +309,7 @@ body {
   --graph-node-tag: rgb(var(--syntax-string));
   --h1-color: inherit;
   --hr-color: color-mix(in srgb, rgb(var(--ui-bg)), rgb(var(--ui-fg)) 30%);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;

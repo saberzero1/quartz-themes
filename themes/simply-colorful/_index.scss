@@ -83,6 +83,11 @@ html[saved-theme="dark"] {
     --background-modifier-border-hover: var(--color-base-30);
     --collapse-icon-color-collapsed: var(--text-faint);
     --h1-color: var(--color-blue);
+    --h2-color: var(--color-purple);
+    --h3-color: var(--color-pink);
+    --h4-color: var(--color-red);
+    --h5-color: var(--color-orange);
+    --h6-color: var(--color-yellow);
     --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
     --text-highlight-bg-rgb: 236, 235, 0;
     --highlight-mix-blend-mode: darken;
@@ -168,6 +173,11 @@ html[saved-theme="light"] {
     --background-modifier-border-hover: var(--color-base-30);
     --collapse-icon-color-collapsed: var(--text-faint);
     --h1-color: var(--color-blue);
+    --h2-color: var(--color-purple);
+    --h3-color: var(--color-pink);
+    --h4-color: var(--color-red);
+    --h5-color: var(--color-orange);
+    --h6-color: var(--color-yellow);
     --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
     --text-highlight-bg-rgb: 236, 235, 0;
   }
@@ -326,6 +336,11 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
@@ -915,7 +930,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -929,7 +944,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h1-color) var(--h-transparency),
       transparent
     );
 
@@ -940,7 +955,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -954,7 +969,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h2-color) var(--h-transparency),
       transparent
     );
 
@@ -963,7 +978,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -977,7 +992,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h3-color) var(--h-transparency),
       transparent
     );
 
@@ -986,7 +1001,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1000,7 +1015,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h4-color) var(--h-transparency),
       transparent
     );
 
@@ -1009,7 +1024,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1023,7 +1038,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h5-color) var(--h-transparency),
       transparent
     );
 
@@ -1032,7 +1047,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1046,7 +1061,7 @@ body {
     transition: background-color 0.75s ease;
     background-color: color-mix(
       in srgb,
-      inherit var(--h-transparency),
+      var(--h6-color) var(--h-transparency),
       transparent
     );
 
@@ -1207,7 +1222,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1221,7 +1236,7 @@ body {
       transition: background-color 0.75s ease;
       background-color: color-mix(
         in srgb,
-        inherit var(--h-transparency),
+        var(--h3-color) var(--h-transparency),
         transparent
       );
     }
@@ -1243,7 +1258,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1375,13 +1390,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1395,7 +1410,7 @@ body {
         transition: background-color 0.75s ease;
         background-color: color-mix(
           in srgb,
-          inherit var(--h-transparency),
+          var(--h3-color) var(--h-transparency),
           transparent
         );
 
@@ -1403,7 +1418,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1428,7 +1443,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1442,7 +1457,7 @@ body {
       transition: background-color 0.75s ease;
       background-color: color-mix(
         in srgb,
-        inherit var(--h-transparency),
+        var(--h3-color) var(--h-transparency),
         transparent
       );
 

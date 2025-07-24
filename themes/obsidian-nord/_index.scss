@@ -68,6 +68,11 @@ html[saved-theme="dark"] {
     --text-faint: var(--light0);
     --text-muted: var(--light1);
     --h1-color: var(--red);
+    --h2-color: var(--yellow);
+    --h3-color: var(--green);
+    --h4-color: var(--purple);
+    --h5-color: var(--frost0);
+    --h6-color: var(--frost2);
     --text-highlight-bg: var(--frost1);
     --tag-color: var(--frost0);
     --tag-background: var(--dark2);
@@ -143,6 +148,11 @@ html[saved-theme="light"] {
     --text-faint: var(--dark0);
     --text-muted: var(--dark1);
     --h1-color: var(--red);
+    --h2-color: var(--yellow);
+    --h3-color: var(--green);
+    --h4-color: var(--purple);
+    --h5-color: var(--frost0);
+    --h6-color: var(--frost2);
     --text-highlight-bg: var(--yellow);
     --tag-color: var(--dark3);
     --tag-background: var(--light1);
@@ -324,6 +334,7 @@ html[saved-theme="light"] {
   --frost0: rgb(143, 188, 187);
   --frost1_x: 136, 192, 208;
   --frost1: rgb(136, 192, 208);
+  --frost2: rgb(129, 161, 193);
   --frost3_x: 94, 129, 172;
   --frost3: rgb(94, 129, 172);
   --red_x: 191, 97, 106;
@@ -349,8 +360,13 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
@@ -934,7 +950,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -950,7 +966,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -964,7 +980,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -978,7 +994,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -992,7 +1008,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1006,7 +1022,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: inherit;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1172,7 +1188,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1199,7 +1215,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1331,13 +1347,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: inherit;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1350,7 +1366,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1375,7 +1391,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: inherit;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

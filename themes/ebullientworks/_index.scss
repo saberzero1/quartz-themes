@@ -72,6 +72,11 @@ html[saved-theme="dark"] {
     --graph-node-tag: var(--secondary-accent-3);
     --graph-node-unresolved: var(--gray);
     --h1-color: var(--yellow-2);
+    --h2-color: var(--green-3);
+    --h3-color: var(--cyan-3);
+    --h4-color: var(--blue-3);
+    --h5-color: var(--purple-3);
+    --h6-color: var(--pink-3);
     --highlight-mix-blend-mode: darken;
   }
 }
@@ -144,6 +149,11 @@ html[saved-theme="light"] {
     --graph-node-tag: var(--secondary-accent-3);
     --graph-node-unresolved: var(--gray);
     --h1-color: var(--yellow-3);
+    --h2-color: var(--green-4);
+    --h3-color: var(--cyan-3);
+    --h4-color: var(--blue-4);
+    --h5-color: var(--purple-4);
+    --h6-color: var(--pink-4);
     --link-color: var(--gray-dark-3);
     --link-color-hover: var(--cyan-4);
   }
@@ -328,8 +338,13 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
   --hr-color: var(--color-base-30);
-  --inline-title-color: inherit;
+  --inline-title-color: var(--h1-color);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --search-icon-color: var(--color-base-70);
@@ -377,16 +392,21 @@ body {
   --yellow-2: #e0b15e;
   --yellow-3: #c49a52;
   --green-2: #adbcb0;
+  --green-3: #91a695;
   --green-4: #5c7a62;
   --cyan-2: #74c6c5;
+  --cyan-3: #41b0b0;
   --cyan-4: #058080;
   --blue-2: #9fbbd8;
+  --blue-3: #7fa4ca;
   --blue-4: #4575ae;
   --blue-2-rgb: 159, 187, 216;
   --blue-4-rgb: 69, 117, 174;
   --purple-2: #c6b2c3;
+  --purple-3: #b399ae;
   --purple-4: #8e6787;
   --pink-2: #deaab8;
+  --pink-3: #d38d9f;
   --pink-4: #a75c70;
   --gray-light-8: #fafafa;
   --gray-light-6: #f5f5f5;
@@ -955,7 +975,7 @@ body {
   h1 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h1-color);
     font-family: "Architects Daughter";
     font-size: 2em;
     font-style: normal;
@@ -972,7 +992,7 @@ body {
   h2 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h2-color);
     font-family: "Architects Daughter";
     font-size: 1.8em;
     font-style: normal;
@@ -986,7 +1006,7 @@ body {
   h3 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h3-color);
     font-family: "Architects Daughter";
     font-size: 1.6em;
     font-style: normal;
@@ -1000,7 +1020,7 @@ body {
   h4 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h4-color);
     font-family: "Architects Daughter";
     font-size: 1.4em;
     font-style: normal;
@@ -1014,7 +1034,7 @@ body {
   h5 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h5-color);
     font-family: "Architects Daughter";
     font-size: 1.2em;
     font-style: normal;
@@ -1028,7 +1048,7 @@ body {
   h6 {
     margin-block-end: calc(16px * 1);
     margin-block-start: calc(16px * 1);
-    color: inherit;
+    color: var(--h6-color);
     font-family: "Architects Daughter";
     font-size: 1.2em;
     font-style: normal;
@@ -1207,7 +1227,7 @@ body {
     h3 {
       margin-block-end: calc(16px * 1);
       margin-block-start: calc(16px * 1);
-      color: inherit;
+      color: var(--h3-color);
       font-family: "Architects Daughter";
       font-size: 1.6em;
       font-style: normal;
@@ -1234,7 +1254,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1366,13 +1386,13 @@ body {
   }
 
   .toc {
-    color: inherit;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: calc(16px * 1);
         margin-block-start: calc(16px * 1);
-        color: inherit;
+        color: var(--h3-color);
         font-family: "Architects Daughter";
         font-size: 1.6em;
         font-style: normal;
@@ -1385,7 +1405,7 @@ body {
       }
       color: inherit;
 
-      color: inherit;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1410,7 +1430,7 @@ body {
     h3 {
       margin-block-end: calc(16px * 1);
       margin-block-start: calc(16px * 1);
-      color: inherit;
+      color: var(--h3-color);
       font-family: "Architects Daughter";
       font-size: 1.6em;
       font-style: normal;
