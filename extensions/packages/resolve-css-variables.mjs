@@ -1,4 +1,20 @@
-const ignoreList = ["--callout-color"];
+const ignoreList = [
+  "--callout-color",
+  "--h1-color",
+  "--h2-color",
+  "--h3-color",
+  "--h4-color",
+  "--h5-color",
+  "--h6-color",
+  "--bodyFont",
+  "--codeFont",
+  "--headerFont",
+  "--titleFont",
+  "--shiki-dark",
+  "--shiki-dark-bg",
+  "--shiki-light",
+  "--shiki-light-bg",
+];
 
 /**
  * Resolves CSS custom property `var()` functions within a string,

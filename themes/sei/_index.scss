@@ -303,7 +303,7 @@ body {
   --graph-node-unresolved: var(--color-base-50);
   --graph-node-tag: var(--color-green);
   --hr-color: var(--background-modifier-border);
-  --inline-title-color: #a6e3a1;
+  --inline-title-color: var(--h1-color);
   --link-color: var(--color-accent);
   --link-color-hover: var(--color-accent-2);
   --nav-item-children-padding-start: 4px;
@@ -349,6 +349,11 @@ body {
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.05);
   --text-highlight-bg: rgba(var(--color-orange-rgb), 0.25);
   --h1-color: #a6e3a1;
+  --h2-color: #94e2d5;
+  --h3-color: #89dceb;
+  --h4-color: #74c7ec;
+  --h5-color: #87b0f9;
+  --h6-color: #87b0f9;
   contain: initial;
   height: auto;
   overflow: auto;
@@ -891,7 +896,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #a6e3a1;
+    color: var(--h1-color);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -908,7 +913,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #94e2d5;
+    color: var(--h2-color);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -922,7 +927,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #89dceb;
+    color: var(--h3-color);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -936,7 +941,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #74c7ec;
+    color: var(--h4-color);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -950,7 +955,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #87b0f9;
+    color: var(--h5-color);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -964,7 +969,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: #87b0f9;
+    color: var(--h6-color);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1131,7 +1136,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #89dceb;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1158,7 +1163,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #94e2d5;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1290,13 +1295,13 @@ body {
   }
 
   .toc {
-    color: #89dceb;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: #89dceb;
+        color: var(--h3-color);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1309,7 +1314,7 @@ body {
       }
       color: inherit;
 
-      color: #89dceb;
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1334,7 +1339,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: #89dceb;
+      color: var(--h3-color);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

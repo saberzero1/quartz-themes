@@ -222,7 +222,7 @@ body {
   --collapse-icon-color: var(--color-base-50);
   --collapse-icon-color-collapsed: var(--color-accent);
   --hr-color: var(--color-yellow);
-  --inline-title-color: hsl(270, 65%, 58.8%);
+  --inline-title-color: var(--h1-color);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --search-icon-color: var(--color-base-70);
@@ -285,6 +285,11 @@ body {
   --wyrd-purple: hsl(270, 65%, 58.8%);
   --wyrd-pink: hsl(330, 85%, 47.2%);
   --h1-color: hsl(270, 65%, 58.8%);
+  --h2-color: hsl(330, 85%, 47.2%);
+  --h3-color: hsl(257, 60%, 50%);
+  --h4-color: hsl(100, 90%, 33.5%);
+  --h5-color: hsl(160, 100%, 36%);
+  --h6-color: hsl(190, 100%, 26%);
   --link-color: hsl(37, 100%, 50%);
   --link-color-hover: hsl(37, 100%, 60%);
   --graph-line: hsl(37, 100%, 40%);
@@ -840,7 +845,7 @@ body {
   h1 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(270, 65%, 58.8%);
+    color: var(--h1-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1.802em;
     font-style: normal;
@@ -860,7 +865,7 @@ body {
   h2 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(330, 85%, 47.2%);
+    color: var(--h2-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1.602em;
     font-style: normal;
@@ -878,7 +883,7 @@ body {
   h3 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(257, 60%, 50%);
+    color: var(--h3-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1.424em;
     font-style: normal;
@@ -896,7 +901,7 @@ body {
   h4 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(100, 90%, 33.5%);
+    color: var(--h4-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1.266em;
     font-style: normal;
@@ -914,7 +919,7 @@ body {
   h5 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(160, 100%, 36%);
+    color: var(--h5-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1.125em;
     font-style: normal;
@@ -932,7 +937,7 @@ body {
   h6 {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
-    color: hsl(190, 100%, 26%);
+    color: var(--h6-color);
     font-family: "Architects Daughter", Neucha;
     font-size: 1em;
     font-style: normal;
@@ -1102,7 +1107,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: hsl(257, 60%, 50%);
+      color: var(--h3-color);
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
       font-style: normal;
@@ -1133,7 +1138,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsl(330, 85%, 47.2%);
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1265,13 +1270,13 @@ body {
   }
 
   .toc {
-    color: hsl(257, 60%, 50%);
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
         margin-block-end: 1rem;
         margin-block-start: 1rem;
-        color: hsl(257, 60%, 50%);
+        color: var(--h3-color);
         font-family: "Architects Daughter", Neucha;
         font-size: 1.424em;
         font-style: normal;
@@ -1288,7 +1293,7 @@ body {
       }
       color: inherit;
 
-      color: hsl(257, 60%, 50%);
+      color: var(--h3-color);
     }
     ul.toc-content.overflow {
       li,
@@ -1313,7 +1318,7 @@ body {
     h3 {
       margin-block-end: 1rem;
       margin-block-start: 1rem;
-      color: hsl(257, 60%, 50%);
+      color: var(--h3-color);
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
       font-style: normal;
