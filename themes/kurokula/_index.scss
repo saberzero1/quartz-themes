@@ -168,9 +168,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -870,7 +867,6 @@ body {
 
       background-color: transparent;
       color: #ffffff;
-      font-family: "??";
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: #9d5918 !important;
@@ -938,8 +934,6 @@ body {
       "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
       Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     font-weight: bolder;
-
-    font-family: "??";
   }
   .clipboard-button {
     margin: 6px;
@@ -1497,12 +1491,12 @@ body {
   .katex,
   .math {
     color: rgba(255, 255, 255, 1);
-    font-family: "??", "??", "Atkinson Hyperlegible", "serif", "Arial";
+    font-family: "Atkinson Hyperlegible", "serif", "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "Atkinson Hyperlegible", "serif", "Arial";
+    font-family: "Atkinson Hyperlegible", "serif", "Arial";
     hyphens: none;
   }
 }

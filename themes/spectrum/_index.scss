@@ -217,8 +217,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
     "JetBrains Mono",
     monospace,
     ui-sans-serif,
@@ -969,8 +967,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
       "JetBrains Mono",
       monospace,
       ui-sans-serif,
@@ -1527,12 +1523,12 @@ body {
   .katex,
   .math {
     color: #c9c9c9;
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

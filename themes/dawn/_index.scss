@@ -326,8 +326,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
     "Inter",
     sans-serif,
     ui-sans-serif,
@@ -1110,8 +1108,6 @@ body {
     color: var(--color-base-50);
     font-size: 11px;
     font-family:
-      "??",
-      "??",
       "Inter",
       sans-serif,
       ui-sans-serif,
@@ -1662,12 +1658,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-60);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

@@ -256,9 +256,6 @@ body {
   padding: 0;
   width: 100%;
   font-family:
-    "??",
-    "??",
-    "??",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1020,9 +1017,6 @@ body {
     color: var(--color-base-70);
     font-size: 12px;
     font-family:
-      "??",
-      "??",
-      "??",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -1184,8 +1178,8 @@ body {
           display: flex;
           flex-direction: row;
           font-family:
-            "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK",
-            "Source Sans Pro", "Segoe UI Emoji", sans-serif;
+            Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
+            "Segoe UI Emoji", sans-serif;
           font-size: 0.8125em;
           line-height: 1.2;
           position: relative;
@@ -1589,12 +1583,12 @@ body {
   .katex,
   .math {
     color: var(--color-base-100);
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
   .page article a,
   a {
-    font-family: "??", "??", "??", "Arial";
+    font-family: "Arial";
     hyphens: none;
   }
 }

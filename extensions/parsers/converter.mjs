@@ -126,7 +126,7 @@ function parseCssWithPostCSS(cssString) {
 
     declarations = declarations.map((decl) => ({
       property: decl.property.replace(/\s+/gms, " ").trim(),
-      value: decl.value,
+      value: decl.value.replace(/['"]\?\?['"]\s*?,?/gms, " ").trim(),
     }));
 
     // Filter out unwanted declarations

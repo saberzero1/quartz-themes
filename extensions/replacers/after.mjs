@@ -296,7 +296,12 @@ export function replaceAfter(manifestCollection) {
     );
     writeFileSync(
       filePath,
-      format(resolveCssVariables(cleanedContent, variableMap), "scss"),
+      format(
+        resolveCssVariables(cleanedContent, variableMap)
+          .replace(/:(?:\s*['"]*?,)+/gms, ": ")
+          .replace(/,(?:\s*?,)+/gms, ","),
+        "scss",
+      ),
       "utf8",
     );
 
