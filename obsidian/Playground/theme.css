@@ -1035,8 +1035,8 @@ body input[data-task="X"][type="checkbox"]:checked:after {
   -webkit-mask-size: 23px;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16px' viewBox='0 -960 960 960' width='20px' fill='%23e8eaed'%3E%3Cpath d='m419-285 291-292-63-64-228 228-111-111-63 64 174 175Zm60.68 226q-86.32 0-163.65-32.6-77.32-32.61-134.57-89.86T91.6-316.03Q59-393.35 59-479.86q0-87.41 32.66-164.28Q124.33-721 181.7-778.58q57.38-57.57 134.41-90.49Q393.15-902 479.34-902q87.55 0 164.83 32.85 77.29 32.85 134.57 90.3 57.29 57.46 90.27 134.52Q902-567.26 902-479.46q0 86.74-32.93 163.55-32.92 76.81-90.49 134.2Q721-124.33 644.13-91.66 567.26-59 479.68-59Z'/%3E%3C/svg%3E");
 }
-body input[data-task="x"][type="checkbox"]:checked:after:checked,
-body input[data-task="X"][type="checkbox"]:checked:after:checked {
+body input[data-task="x"][type="checkbox"]:checked:after,
+body input[data-task="X"][type="checkbox"]:checked:after {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1230,9 +1230,9 @@ body li[data-task="*"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='19px' viewBox='0 -960 960 960' width='19px' fill='%23e8eaed'%3E%3Cpath d='m480-270-157 94q-15 8-29.5 7t-25.5-9q-11-8-16-22.5t-1-29.5l41-176-139-118q-13-10-15.5-24.5T139-576q4-13 16-22.5t27-10.5l181-16 72-167q7-16 19-23t26-7q14 0 26 7t19 23l72 168 181 15q15 1 27 11t16 23q4 13 1 27t-16 24L668-406l41 176q4 15-1 29.5T692-178q-11 8-25.5 9t-29.5-7l-157-94Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body input[data-task=\"]:checked,
-body li[data-task=\"] > input:checked,
-body li[data-task=\"] > p > input:checked {
+body input[data-task='"']:checked,
+body li[data-task='"'] > input:checked,
+body li[data-task='"'] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1240,9 +1240,9 @@ body li[data-task=\"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task=\"]:checked,
-body li[data-task=\"] > input:checked,
-body li[data-task=\"] > p > input:checked {
+body input[data-task='"']:checked,
+body li[data-task='"'] > input:checked,
+body li[data-task='"'] > p > input:checked {
   color: var(--checkbox-quote-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-quote'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
   transform: scaleY(0.9);
@@ -1788,7 +1788,7 @@ body li[data-task="d"] > p > input:checked {
 .contains-task-list.plugin-tasks-query-result .dataview.inline-field-value {
   border-radius: 0px 8px 8px 0px;
   overflow: hidden;
-  background-color: var(-f-gray-200);
+  background-color: var(--f-gray-200);
 }
 .contains-task-list.plugin-tasks-query-result .task-description {
   margin-right: 4px;
