@@ -2101,10 +2101,12 @@ button:hover {
   float: none;
 }
 
+/*
 .nav-folder-title-content {
   text-align: left;
   padding: 0px;
 }
+*/
 
 .nav-folder-title-content {
   text-align: left;
@@ -2123,7 +2125,7 @@ button:hover {
   content: url("data:image/svg+xml,charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 100 100' width='74' height='74'><path  fill='white' stroke='currentColor' d='M 16 5.9375 L 15.65625 6.0625 L 2.65625 10.96875 L 2 11.21875 L 2 12.78125 L 2.65625 13.03125 L 15.65625 17.9375 L 16 18.0625 L 16.34375 17.9375 L 29.34375 13.03125 L 30 12.78125 L 30 11.21875 L 29.34375 10.96875 L 16.34375 6.0625 Z M 16 8.0625 L 26.40625 12 L 16 15.9375 L 5.59375 12 Z M 2 13.90625 L 2 16.78125 L 16 22.0625 L 30 16.78125 L 30 13.90625 L 28 14.65625 L 28 15.40625 L 16 19.9375 L 4 15.40625 L 4 14.65625 Z M 2 17.90625 L 2 20.78125 L 16 26.0625 L 30 20.78125 L 30 17.90625 L 28 18.65625 L 28 19.40625 L 16 23.9375 L 4 19.40625 L 4 18.65625 Z'/></svg>");
 }
 
-.mod-root > .nav-folder-title:before::hover {
+.mod-root > .nav-folder-title:before:hover {
   visibility: visible;
   filter: brightness(50%);
   margin-top: 0px;
@@ -2179,9 +2181,11 @@ button:hover {
   text-overflow: ellipsis;
 }
 
+/*
 .nav-folder.mod-root > .nav-folder-children {
   padding-left: 0px;
 }
+*/
 
 .nav-folder.mod-root > .nav-folder-children {
   padding-left: 1px;
@@ -2538,7 +2542,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   hyphens: none;
   border-radius: 14px;
   color: var(--color-accent);
-  text-align: -webkit-center;
+  text-align: center;
   transition: all 200ms cubic-bezier(0.4, 0, 1, 1);
   text-shadow: 0 0 20px var(--color-accent-hover);
 }
