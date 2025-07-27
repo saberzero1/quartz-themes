@@ -258,7 +258,7 @@ u {
 /* ----------- Text Formatting ----------- */
 .cm-strong {
   color: var(--bold-color) !important;
-  font-weight: bold !;
+  font-weight: bold !important;
 }
 
 /* ----------- Quotes ----------- */
@@ -333,7 +333,7 @@ table {
 
 /* ----------- Checkboxes ----------- */
 
-input[type="checkbox"]çchecked:hover {
+input[type="checkbox"]:checked:hover {
   background-color: var(--checklist-done-color);
   border-color: var(--checklist-done-color);
 }

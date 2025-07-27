@@ -2650,19 +2650,17 @@ ul > li.task-list-item .task-list-item-checkbox {
 
 /* Notation checkboxes */
 
-*/ .markdown-preview-view .task-list-item-checkbox:hover {
+.markdown-preview-view .task-list-item-checkbox:hover {
   background-color: #6b8760;
 }
 
-*/
-  /* yellow background colour for question/more info task ('- [?]') */
-.markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked {
+/* yellow background colour for question/more info task ('- [?]') */
+.markdown-preview-view li[data-task="?"] > .task-list-item-checkbox:checked {
   background-color: rgb(169, 148, 0);
 }
 
-*/
-  /* red background colour for important task ('- [!]') */
-.markdown-preview-view li[data-task="!"]>.task-list-item-checkbox:checked {
+/* red background colour for important task ('- [!]') */
+.markdown-preview-view li[data-task="!"] > .task-list-item-checkbox:checked {
   background-color: #a90000;
 }
 
@@ -2831,7 +2829,7 @@ table {
   color: var(--table-text-color);
 }
 
-is(.markdown-preview-view,.markdown-rendered)
+:is(.markdown-preview-view, .markdown-rendered)
   :is(.markdown-preview-section, .markdown-rendered)
   .block-language-itinerary.fc
   table {
@@ -3083,7 +3081,8 @@ pre code {
   text-align: justify;
   color: var(--text-normal) !important;
 }
--5px 35px 33px 35px .callout-icon .svg-icon {
+/*-5px 35px 33px 35px*/
+.callout-icon .svg-icon {
   color: var(--text-normal);
 }
 
@@ -4191,7 +4190,7 @@ body:not(.minimal-icons-off) svg.checkbox-glyph {
   width: 18px;
 }
 
-checklist-plugin-main .group .checkbox:hover {
+.checklist-plugin-main .group .checkbox:hover {
   border: 1px solid var(--background-modifier-border-focus);
 }
 
@@ -4253,12 +4252,12 @@ a.tag[href*="#ToDo"]:hover {
   font-weight: bold;
 }
 
-span.cm-formatting
-  cm-formatting-hashtag
-  cm-hashtag
-  cm-hashtag-begin
-  cm-meta
-  cm-tag-ToDo {
+span.cm-formatting,
+span.cm-formatting-hashtag,
+span.cm-hashtag,
+span.cm-hashtag-begin,
+span.cm-meta,
+span.cm-tag-ToDo {
   background-color: rgb(173 0 0) !important;
   color: white !important;
 }
@@ -4478,7 +4477,7 @@ img:not(:hover) {
 /* Snippet - MathJax */
 /*==================*/
 
-mjx-math {
+.mjx-math {
   font-size: 120% !important;
 }
 

@@ -26457,7 +26457,7 @@ body.is-mobile .menu-item-title {
   font-size: calc(var(--font-size-folder-and-file) + 0.15em);
 }
 /*小屏幕特别优化*/
-@media screen and(min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   body.style-options-for-admonition-plugin
     .admonition-flex
     .admonition-content {
