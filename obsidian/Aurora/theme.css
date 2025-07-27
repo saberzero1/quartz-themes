@@ -1140,7 +1140,7 @@ blockquote {
   color: var(--text-sub-accent);
 }
 
-..markdown-preview-view pre code {
+.markdown-preview-view pre code {
   color: var(--text-normal) !important;
 }
 

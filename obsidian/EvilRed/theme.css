@@ -390,7 +390,7 @@ thead {
   background-color: var(--sideRed);
 }
 
-..workspace-leaf-content {
+.workspace-leaf-content {
   background-color: #5fa57a;
 }
 

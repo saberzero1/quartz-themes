@@ -915,7 +915,7 @@ body .kanban-plugin__lane {
   overflow-wrap: break-word;
   background-color: var(--background-primary);
 }
-.kanban-plugin__markdown-preview-view:not(> div > *:last-child) {
+.kanban-plugin__markdown-preview-view:not(div > *:last-child) {
   background-color: var(--background-primary) !important;
 }
 body .kanban-plugin__markdown-preview-view,

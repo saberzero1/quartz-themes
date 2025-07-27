@@ -2,12 +2,12 @@
 /* ----- by: Ha'ani Whitlock ----- */
 
 /* ---------- fonts ---------- */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700;800&family=Koh+Santepheap:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Warp&family=Merriweather:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100;200;300;400;500;600;700&family=Averia+Gruesa+Libre&family=Comfortaa:wght@300;400;500;600;700&family=Courgette&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Forum&family=Handlee&family=Hind:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700;800&family=Koh+Santepheap:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Warp&family=Merriweather:wght@300;400;500;600;700;800&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Alice&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100;200;300;400;500;600;700&family=Averia+Gruesa+Libre&family=Comfortaa:wght@300;400;500;600;700&family=Courgette&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Forum&family=Handlee&family=Hind:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"); */
 
 /* -- custom font -- */
 .custom-font-toggle {
@@ -3005,11 +3005,11 @@ body,
   opacity: 0.25;
   background-position: center center;
   background-size: var(--icon-size);
-  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="white"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  background-image: url('data:image/svg+xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="white"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
 }
 
 .theme-light .cards table.dataview thead:before {
-  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="black"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+  background-image: url('data:image/svg+xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="black"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
 }
 
 .cards table.dataview thead:hover:before {
