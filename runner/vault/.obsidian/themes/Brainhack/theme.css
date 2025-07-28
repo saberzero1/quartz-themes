@@ -1,0 +1,965 @@
+/*===================================== INFORMATION =================================================
+This theme uses content created by other theme creators.
+Wherever such content is used, their author is attributed.
+If you have any questions or concerns, please contact me on GitHub: https://github.com/Spekulucius */
+
+/*========== STYLE SETTINGS ================*/
+/* @settings
+
+name: Theme Settings
+id: Adrenaline
+description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
+settings:
+    -
+        id: Text and Spacing
+        title: Text and Spacing
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: custom-font-weight
+        title: Adjust Font Weight
+        description: 
+        type: variable-number-slider
+        default: 300
+        min: 100
+        max: 900
+        step: 100
+    -
+        id: custom-letter-spacing
+        title: Adjust Letter Spacing
+        description:
+        type: variable-number-slider
+        format: px
+        default: 0.1
+        min: -.5
+        max: 1.5
+        step: .1
+    -
+        id: custom-line-height
+        title: Adjust Line Spacing
+        description:
+        type: variable-number-slider
+        format:
+        default: 1.5
+        min: 1
+        max: 2.5
+        step: .1
+    -
+        id: Colors
+        title: Colors
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: bgt_s
+        title: Adjust Background Saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 100
+        step: 1
+    - 
+        id: bgt_l
+        title: Adjust Background Brightness
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+    -
+        id: Experimental Settings
+        title: Experimental Settings
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: cbr
+        title: Custom Workspace Border Radius
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 50
+        step: 1
+        format: px
+*/
+
+/*////////////////////////////////////////////////////////////////// COLORS ///////////////////////////////////////////////////////////////////////////////*/
+body {
+	--file-line-width:1000px;
+    --canvas-dot-pattern: var(--background-3-1);
+}
+
+.theme-light, .theme-dark {
+    --colored-accent-i1: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 49%)*-100));
+    --colored-accent-i2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 20%)*-100));
+    --colored-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --colored-accent-2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --shadow-1: hsla(var(--accent-h), var(--accent-s), 5%, .5);
+    --custom-accent-bold: var(--colored-accent-1);
+    
+    --background-secondary: var(--background-2);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-3);
+    --bold-color: var(--colored-accent-1);
+
+}
+
+.theme-light {
+    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .2) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 5%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-1: hsl(var(--accent-h), calc(var(--accent-s) - 20%), 90%, 100%);
+    --background-1_2: rgb(234, 234, 234);
+    --background-1-h: #bdbdbd;
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 10%;
+    --background-2_l: 96%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .1) + calc(1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) + 0%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: hsl(0, 0%, 93%);
+    --background-3-1: rgb(197, 197, 197);
+    --background-3-2: rgba(197, 197, 197, 0.288);
+    --background-4: white;
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
+    --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
+    
+    --highlight-1: rgba(0, 0, 0, 0.056);
+    --highlight-2: rgba(214, 214, 214, 0.308);
+
+    --shadow-2: rgba(0, 0, 0, 0.257);
+    --shadow-3: rgba(0, 0, 0, 0.227);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .2);
+
+    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .9), calc(var(--accent-l) * 1.2), 1);
+
+    --divider-color: rgba(200, 200, 200, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-accent: var(--colored-accent-1);
+    --icon-color: var(--colored-accent-1);
+    --text-color-inverted: black;
+    --tc: rgb(67, 67, 67);
+    --italic-color: rgb(154, 154, 154);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-1_2);
+}
+
+.theme-dark {
+    --background-1: #171717;
+    --background-1-h: var(--colored-accent-1);
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 0%;
+    --background-2_l: 10%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .01) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: rgb(33, 33, 33);
+    --background-3-1: rgb(70, 70, 70);
+    --background-3-2: rgba(70, 70, 70, 0.27);
+    --background-4: rgb(12, 12, 12);
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
+    --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
+
+    --highlight-1: rgba(255, 255, 255, 0.075);
+    --highlight-2: rgba(255, 255, 255, 0.075);
+
+    --shadow-2: hsla(var(--accent-h), calc(var(--accent-s) * 0), calc(var(--accent-l) * .1), .4);
+    --shadow-3: rgba(0, 0, 0, 0.47);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .5);
+
+    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .4), calc(var(--accent-l) * .6), 1);
+
+    --divider-color: rgba(105, 105, 105, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-accent: var(--colored-accent-1);
+    --text-color-inverted: white;
+    --tc: rgb(174, 174, 174);
+    --italic-color: rgb(97, 97, 97);
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - GENERAL CONFIG //////////////////////////////////////////////////////////////////////////////*/
+/*============================= ADJUST SPACING OF MAIN BODY ===================================*/
+body:not(.is-mobile)
+.workspace {
+    background-color: transparent;
+    right: 10px !important;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex: 1 0 0;
+    width: calc(100% - 10px) !important;
+    margin-left: 10px;
+}
+body:not(.is-mobile)
+.horizontal-main-container {
+    padding-bottom: 10px;
+    display: flex;
+    overflow: visible;
+    flex: 1 0 0;
+    background: transparent;
+}
+body:not(.is-mobile):not(.show-ribbon)
+.horizontal-main-container {
+    padding-left: 10px;
+}
+
+body:not(.is-mobile):not(.show-ribbon) .workspace:before {
+    width: 100%;
+}
+/*============== Ribbon ===========================*/
+.workspace-ribbon.side-dock-ribbon.mod-left {
+    flex-basis: 44px;
+    background: transparent !important;
+}
+/*==================== REMOVE BORDERS ===============================*/
+.workspace-tab-header-container, .workspace-ribbon.side-dock-ribbon.mod-left {
+    border: none !important;
+}
+.workspace-tab-header-container {
+    background: transparent;
+}
+
+/*============== ADD NEW BORDERS =====================*/
+.workspace:not(.is-mobile)::before {
+    content: " ";
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: transparent;
+    border-radius: var(--cbr, 15px);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 0px 1px var(--divider-color), 0 0 5px 1px var(--shadow-4);
+}
+/*adjust borders to align with ribbon animation*/
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+    width: calc(100% - 44px);
+    transition-duration: .1s;
+}
+
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
+    width: calc(100% - 44px);
+    transition: all .5s ease;
+}
+
+/*================ ADJUST WORKSPACE BACKGROUND ========================*/
+.titlebar-button-container.mod-right,
+.workspace-split {
+    background: transparent !important;
+}
+.view-header,
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+.empty-state,
+.markdown-rendered,
+.community-modal-details,
+.workspace-tab-container,
+.cm-scroller {
+    background-color: var(--background-2) !important;
+}
+.workspace-tabs:not(.mod-top) {
+    background: var(--background-2);
+}
+
+
+
+/*==================== ADJUST RESIZE HANDLES ====================*/
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle { 
+    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+    bottom: 0px !important;
+    border-right-style: dashed;
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle { 
+    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+    bottom: 0px !important;
+    border-left-style: dashed;
+}
+
+/*=================== workspace rounded corners ===================*/
+body:has(.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed):not(.is-mobile)
+.mod-root {
+    border-bottom-left-radius: var(--cbr, 15px) !important;
+    overflow: hidden;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.mod-root {
+    border-bottom-right-radius: var(--cbr, 15px) !important;
+    overflow: hidden;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.workspace-split:last-of-type .mod-top-right-space .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-top-left-space .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 15px) !important;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.workspace-tabs.mod-top-right-space:last-of-type .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-right-split{
+    border-bottom-right-radius: var(--cbr, 15px);
+    overflow: hidden !important;
+}
+body:not(.is-mobile)
+.workspace-sidedock-vault-profile {
+    border-bottom-left-radius: var(--cbr, 15px);
+    background: var(--background-3) !important;
+    border-bottom-right-radius: 0px !important;
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-right-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-left-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 15px);
+}
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - TAB BAR //////////////////////////////////////////////////////////////////////////////*/
+/*========================= TABS ===========================*/
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container {
+    padding-bottom: 3px;
+}
+.workspace-split.mod-vertical .workspace-tab-header-container-inner { 
+    margin-top: 5px !important;
+    padding-top: 1.5px !important;
+}
+.workspace .mod-root .workspace-tab-header {
+    box-shadow: none;
+    padding-bottom: 5.5px;
+    background: transparent;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*tabs AND buttons height adjustment*/
+.workspace-tab-header.tappable {
+    margin-top: -2px;
+    margin-bottom: -1px;
+}
+/*Tabs text color */
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title {
+    color: var(--colored-accent-i2) !important;
+}
+.mod-vertical .workspace-tab-header.tappable .workspace-tab-header-inner-title {
+    color: var(--text-color-inverted) !important;
+}
+/*Tab headers*/
+.mod-vertical .workspace-tabs:not(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
+    position: relative;
+    background-color: var(--background-6);
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i1) !important;
+        }
+}
+.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
+    position: relative;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i1) !important;
+        }
+}
+.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header {
+    box-shadow: none !important;
+    transform: scale(1.001);
+}
+
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+    position: relative;
+    color: var(--colored-accent-i1) !important;
+    background-color: var(--colored-accent-2) !important;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i2) !important;
+    }
+}
+.workspace-tab-header-inner-close-button {
+    color: var(--colored-accent-i1) !important;
+    transition: all .2s !important;
+            &:hover {
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        color: var(--colored-accent-i1) !important;
+    }
+}
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container {
+    overflow: hidden;
+}
+
+/*Macos sidebar toggle button fix*/
+.sidebar-toggle-button.mod-right {
+    background: transparent !important;
+}
+
+
+/*win-app-symbols*/
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-minimize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-maximize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-close {
+    border-radius: 10px;
+    padding: 0px 9px 0px 9px;
+    margin: 0px 5px 0px 5px;
+}
+body > div.titlebar > div > div.titlebar-button-container.mod-right {
+    padding: 5px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// LEFT WORKSPACE / RIBBON //////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+/*=============== HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used ==================*/
+div[data-path$='000_attachments_000'], 
+div[data-path$='000_attachments_000'] + div.nav-folder-children 
+{
+    display: none;
+}
+
+
+
+/*=========================================== Settings general styling ===================================================*/
+
+/* settings switches background */
+.checkbox-container.is-enabled {
+    background-color: var(--colored-accent-2);
+}
+/* settings switches auto coloring */
+.checkbox-container.is-enabled::after {
+    background-color: var(--colored-accent-i2);
+    transition: .2s;
+}
+
+
+
+
+
+
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > div.workspace-tab-header.tappable {
+    margin-top: -1px;
+}
+
+
+
+
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================= EDITOR =================================*/
+.callout {
+    color: inherit;
+    margin-bottom: .5em !important;
+    margin-top: .5em !important;
+    border-radius: 10px;
+    --callout-padding: 0;
+    --callout-title-color: inherit;
+    --callout-title-padding: 4px 10px;
+    --callout-title-size: inherit;
+    --callout-content-radius: 0px;
+    --callout-blend-mode: normal !important;
+    background: var(--background-3);
+    box-shadow: inset 0 0 0 1px var(--background-3-1) !important;
+    overflow: hidden !important;
+}
+.callout-content {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.cm-embed-block:hover {
+    box-shadow: 0 0 rgba(255, 0, 0, 0) !important;
+}
+
+.cm-embed-block.cm-callout {
+    border-radius: 10px;
+    bottom: 0 !important;
+    overflow: hidden !important;
+}
+.callout-content, .blockquote {
+    overflow: hidden !important;
+}
+.callout-title {
+    position: relative;
+    color: var(--colored-accent-text-color-inverted);
+    font-size: 1.2em;
+    border-bottom: dotted 2px var(--background-3-1);
+    background: var(--background-3-2);
+}
+.markdown-rendered blockquote,
+.blockquote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+    border-radius: var(--radius-m);
+    background-color: var(--background-3);
+    border-left: none;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.markdown-rendered blockquote:before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.el-blockquote, blockquote {
+    z-index: -1;
+    width: 100%;
+    border-radius: var(--radius-m);
+    box-shadow: 0 0 0 1px var(--background-3-1);
+}
+.callout-content blockquote {
+    margin-bottom: .5em;
+    margin-top: .5em !important;
+    padding-left: .5em;
+}
+.callout-content ol {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.callout-icon {
+    display: none;
+}
+.markdown-preview-view .callout.is-collapsible:hover {
+    box-shadow: 0 0 0px 2px rgba(115, 115, 115, 0.508);
+}
+.is-live-preview .HyperMD-quote:before {
+    border: 0px solid transparent !important;
+}
+
+
+/* Even columns */
+.callout[data-callout="2"] > .callout-title  {
+  /* Removes padding and background colour from the container */
+  justify-content: center;
+}
+.callout[data-callout="2"] > .callout-content {
+  /* Arranges the content in columns */
+  display: grid;
+  /* minmax sets the minimum width of a column. Make the columns 'skinnier' by setting 15rem to a smaller number */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 10px;
+}
+
+
+
+
+
+
+/*BLOCKQUOTE PREVIEW VIEW BORDER FIX*/
+.HyperMD-quote + .HyperMD-quote {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+.HyperMD-quote:has(+.HyperMD-quote) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+ul.has-list-bullet * blockquote {
+    margin-top: 0;
+}
+.HyperMD-quote + .HyperMD-quote {
+    &:before {
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important
+    }
+}
+.HyperMD-quote:has(+ .HyperMD-quote) {
+    &:before {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }    
+}
+.markdown-preview-view blockquote {
+   padding: .5em;
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
+    padding-top: 0em !important;
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote) {
+    padding-bottom: 0em !important;
+}
+
+
+.el-p + .el-p {
+    margin-top: 2em !important;
+}
+
+p + p {
+    margin-top: 2em !important;
+}
+
+p + ul {
+    margin-top: 0px !important;
+}
+
+ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+p:has(+ ul.has-list-bullet) {
+    margin-bottom: 0px;
+}
+
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon:before {
+    margin-left: -5px;
+}
+.HyperMD-header.HyperMD-header.cm-line {
+    padding-bottom: 20px;
+}
+
+
+/*heading mark*/
+.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+.cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4),
+.cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5),
+.cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6),
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    display: inline-block;
+    color: var(--colored-accent-i1);
+    background-color: var(--colored-accent-1) !important;
+    padding: 2px 8px 2px 8px;
+        -moz-border-bottom-left-radius: var(--radius-m);
+        -webkit-border-bottom-left-radius: var(--radius-m);
+        border-bottom-left-radius: var(--radius-m);
+        -moz-border-bottom-right-radius: var(--radius-m);
+        -webkit-border-bottom-right-radius: var(--radius-m);
+        border-bottom-right-radius: var(--radius-m);
+        -moz-border-top-right-radius: var(--radius-m);
+        -webkit-border-top-right-radius: var(--radius-m);
+        border-top-right-radius: var(--radius-m);
+        -moz-border-top-left-radius: var(--radius-m);
+        -webkit-border-top-left-radius: var(--radius-m);
+        border-top-left-radius: var(--radius-m);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+/* heading mark link color correction */
+h1 > a, 
+h2 > a, 
+h3 > a, 
+h4 > a, 
+h5 > a, 
+h6 > a {
+    color: var(--text-color-inverted) !important;
+}
+
+/*DYNAMIC HEADING SPACING ADJUST*/
+div.el-h1 {
+    margin-top: var(--dynamic-heading-spacing, 2em);
+}
+
+div.el-h2 {
+    margin-top: var(--dynamic-heading-spacing, 2em) !important;
+}
+
+div.el-h3 {
+    margin-top: var(--dynamic-heading-spacing, 2em) !important;
+}
+
+
+div.el-h1 + div.el-h1 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h2, div.el-h2 + div.el-h2 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h3, div.el-h2 + div.el-h3, div.el-h3 + div.el-h3 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h4, div.el-h2 + div.el-h4, div.el-h3 + div.el-h4, div.el-h4 + div.el-h4  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h5, div.el-h2 + div.el-h5, div.el-h3 + div.el-h5, div.el-h4 + div.el-h5, div.el-h5 + div.el-h5  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 + div.el-h6, div.el-h5 + div.el-h6, div.el-h6 + div.el-h6  {
+    margin-top: 0em !important;
+}
+
+
+/*==================== HIGHLIGHTING ====================*/
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    1px;
+    padding-bottom: 1px;
+    pointer-events: none;
+    background-color: var(--colored-accent-1);
+    color: var(--colored-accent-i1);
+        -moz-border-bottom-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+
+.cm-formatting.cm-formatting-highlight.cm-highlight {
+    background: none;
+    color: var(--colored-accent-1);
+}
+/*======== SEARCHED TEXT HIGHLIGHTING =================*/
+.search-result-file-matched-text {
+    background:var(--colored-accent-1);
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+
+.is-flashing {
+    background:var(--colored-accent-1) !important;
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+
+
+
+/*================== adjust font weight ===============*/
+.markdown-preview-view, .view-content>.cm-s-obsidian, .view-content>.markdown-source-view.mod-cm6.is-live-preview>.cm-scroller, body {
+    font-weight: var(--custom-font-weight, 400);
+    color: var(--tc);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.cm-html-embed th, .markdown-rendered th {
+    font-weight: var(--custom-font-weight, 400);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+table {
+    font-weight: var(--custom-font-weight, 400);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.view-content {
+    border: 0px;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+
+body {
+    --bold-modifier: 300;
+    --line-height-normal: var(--custom-line-height, 1.5);
+}
+
+
+
+
+/*disable some elements*/
+.workspace-ribbon.side-dock-ribbon.mod-left::before,
+.workspace-tab-header.tappable:before,
+.workspace-tab-header.tappable:after,
+.workspace-tab-header-inner:after,
+.workspace-tab-header-container:before {
+    display: none !important;
+}
+/*================ EMBEDS =================*/
+img {
+    border-radius: 10px;
+}
+/*================= ROUNDED TABLES =================*/
+/*Credit goes to "FireIsGood": https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+/* TABLES: Fix the borders and add a radius variable */
+:root table {
+    --table-border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+/* Add the radius */
+th:first-child {border-top-left-radius: var(--table-border-radius)}
+th:last-child {border-top-right-radius: var(--table-border-radius)}
+tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
+tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
+      
+/* Redo the borders */
+:root :is(td, th) {
+    border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+    border-color: var(--accent-color-light10) !important;
+}
+      
+.cm-html-embed table, .markdown-rendered table {
+    margin-top: 15px;
+}
+/*virtual link styling*/
+.virtual-link-default {
+    filter: brightness(1);
+}
+
+/*increase popup size*/
+.theme-light, .theme-dark {
+    --popover-width: 1050px;
+    --popover-height: 1250px;
+}
+
+.markdown-preview-view hr,
+.markdown-source-view hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed grey !important;
+}
+
+
+ul:before {
+    border-right: .15em solid var(--colored-accent-1) !important;
+    translate: 1.2em !important;
+
+}

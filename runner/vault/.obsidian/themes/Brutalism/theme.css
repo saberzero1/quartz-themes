@@ -1,0 +1,70 @@
+body {
+  /* Backgrounds */
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-00);
+  --background-secondary: var(--color-base-00);
+  --background-modifier-border: var(--color-base-60);
+  --background-modifier-border-hover: var(--color-base-40);
+  --background-modifier-border-focus: var(--color-base-40);
+  --interactive-hover: var(--color-base-00);
+
+  /* Normalize title bar colors */
+  --tab-container-background: var(--color-base-00);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-00);
+
+  /* Graph adjustements */
+  --graph-line: var(--color-base-40, var(--background-modifier-border-focus));
+
+  /* Font sizes */
+  --header-size: 1.25em;
+  --h1-size: var(--header-size);
+  --h2-size: var(--header-size);
+  --h3-size: var(--header-size);
+  --h4-size: var(--header-size);
+  --h5-size: var(--header-size);
+  --h6-size: var(--header-size);
+
+  /* UI font sizes */
+  --font-ui-smaller: 13px;
+  --font-ui-small: 14px;
+  --font-ui-medium: 16px;
+  --font-ui-large: 22px; 
+
+  /* UI font colors */
+  --h1-color: var(--header-color);
+  --h2-color: var(--header-color);
+  --h3-color: var(--header-color);
+  --h4-color: var(--header-color);
+  --h5-color: var(--header-color);
+  --h6-color: var(--header-color);
+}
+
+.theme-dark {
+  --color-base-00: #1a1b26;
+  --header-color: #7aa2f7; /* #0f4bef alternative*/
+  --bold-color: #bb9af7;
+  --italic-color: #9aa5ce;
+  --text-highlight-bg: #9ece6a66;
+  --text-faint: #565f8988;
+}
+
+.theme-light  {
+  --color-base-00: #d5d6db;
+  --header-color: #34548a; /* #0f4bef alternative*/
+  --bold-color: #5a4a78;
+  --italic-color: #343b58;
+  --text-highlight-bg: #485e3066;
+  --text-faint: #9699a388;
+}
+
+/* Inline title fun */
+.inline-title {
+  font-size: calc(26px + (72 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1;
+  font-family: 'Archivo', 'Archivo SemiBold', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: -webkit-radial-gradient(#bb9af7, #f7768e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+

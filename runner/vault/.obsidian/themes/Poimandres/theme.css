@@ -1,0 +1,252 @@
+body {
+	--radius-s: 4px;
+	--radius-m: 4px;
+	--radius-l: 4px;
+	--input-radius: 4px;
+	--tab-radius-active: 4px;
+	--checkbox-radius: 4px;
+	--toggle-radius: 4px;
+	--toggle-thumb-radius: 4px;
+	--slider-thumb-radius: 4px;
+}
+
+.theme-dark {
+	--accent-h: 210;
+	/* Adjusted hue for a more muted blue */
+	--accent-s: 40%;
+	/* Reduced saturation for a softer accent */
+	--accent-l: 50%;
+	/* Adjusted lightness for a balanced look */
+
+	/* Background colors */
+	--bg_dark2: #14161a;
+	/* Darker background for contrast */
+	--bg: #1b1d23;
+	/* Primary background */
+	--bg_highlight: #25272e;
+	/* Highlighted background */
+	--bg_highlight_dark: #20232a;
+	/* Darker highlight for contrast */
+
+	/* Text colors */
+	--fg: #e4e7ea;
+	/* Slightly lighter foreground */
+	--fg_dark: #b8bfc9;
+	/* Muted text color */
+
+	/* Muted Color Palette */
+	--comment: #7da0b3;
+	/* Muted cyan */
+	--blue0: #c5d0e6;
+	/* Muted light blue */
+	--cyan: #84bfcf;
+	/* Muted cyan */
+	--cyan0: #6f9fad;
+	/* Darker cyan */
+	--magenta: #d2a5c4;
+	/* Muted magenta */
+	--orange: #f2a070;
+	/* Muted orange */
+	--yellow: #dcb583;
+	/* Muted yellow */
+	--green: #7bbfb0;
+	/* Muted green */
+	--green0: #6a998f;
+	/* Darker green */
+	--teal: #5db3be;
+	/* Muted teal */
+	--red: #d1889a;
+	/* Muted red */
+	--red1: #c06075;
+	/* Darker red */
+	--unknown: #ffffff;
+	/* White for unknown text */
+
+	/* Updated Color Usage */
+	--color_red_rgb: var(--red);
+	--color_red: var(--red);
+	--color_purple_rgb: var(--magenta);
+	--color_purple: var(--magenta);
+	--color_green_rgb: var(--green);
+	--color_green: var(--green);
+	--color_cyan_rgb: var(--cyan);
+	--color_cyan: var(--cyan);
+	--color_blue_rgb: var(--blue0);
+	--color_blue: var(--blue0);
+	--color_yellow_rgb: var(--yellow);
+	--color_yellow: var(--yellow);
+	--color_orange_rgb: var(--orange);
+	--color_orange: var(--orange);
+	--color_pink_rgb: var(--magenta);
+	--color_pink: var(--magenta);
+
+	--background-primary: var(--bg);
+	--background-primary-alt: var(--bg);
+	--background-secondary: var(--bg_dark2);
+	--background-secondary-alt: var(--bg_dark2);
+
+	--background-modifier-border: var(--bg_highlight);
+	--background-modifier-border-focus: var(--bg_highlight);
+	--background-modifier-border-hover: var(--bg_highlight);
+	--background-modifier-form-field: var(--bg_dark2);
+	--background-modifier-form-field-highlighted: var(--bg_dark2);
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+	--background-modifier-success: var(--green);
+	--background-modifier-error: var(--red1);
+	--background-modifier-error-hover: var(--red);
+	--background-modifier-cover: var(--bg_dark2);
+	--background-modifier-hover: var(--accent-s);
+	--background-modifier-message: var(--bg_highlight_dark);
+	--background-modifier-active-hover: var(--bg);
+
+	--text-normal: var(--fg);
+	--text-faint: var(--comment);
+	--text-muted: var(--fg_dark);
+	--text-error: var(--red);
+	--text-accent: var(--magenta);
+	--text-accent-hover: var(--cyan);
+	--text-error-hover: var(--fg);
+	--text-selection: var(--bg_highlight_dark);
+	--text-on-accent: var(--bg);
+	--text-highlight-bg: var(--orange);
+	--bold-color: var(--cyan);
+	--italic-color: var(--cyan);
+
+	--interactive-normal: var(--bg_dark2);
+	--interactive-hover: var(--bg);
+	--interactive-success: var(--green);
+	--interactive-accent: hsl(var(--accent-h),
+			var(--accent-s),
+			var(--accent-l));
+	--interactive-accent-hover: var(--fg);
+
+	--scrollbar-bg: var(--bg_dark2);
+	--scrollbar-thumb-bg: var(--bg_dark2);
+	--scrollbar-active-thumb-bg: var(--bg_dark2);
+	--scrollbar-width: 8px;
+
+	--h1-color: var(--cyan);
+	--h2-color: var(--cyan0);
+	--h3-color: var(--unknown);
+	--h4-color: var(--magenta);
+	--h5-color: var(--blue0);
+	--h6-color: var(--yellow);
+
+	--border-width: 2px;
+
+	--tag-color: var(--magenta);
+	--tag-background: var(--magenta);
+	--tag-color-hover: var(--cyan);
+	--tag-background-hover: var(--cyan);
+
+	--link-color: var(--fg_dark);
+	--link-color-hover: var(--cyan);
+	--link-external-color: var(--fg_dark);
+	--link-external-color-hover: var(--cyan);
+
+	--checkbox-radius: 4px;
+	--checkbox-color: var(--comment);
+	--checkbox-color-hover: var(--comment);
+	--checkbox-marker-color: var(--cyan0);
+	--checkbox-border-color: var(--comment);
+	--checkbox-border-color-hover: var(--comment);
+	--checklist-done-color: var(--cyan);
+
+	--table-header-background: var(--bg);
+	--table-header-background-hover: var(--bg_dark2);
+	--table-row-alt-background: var(--bg_dark2);
+	--table-row-background-hover: var(--bg_dark2);
+
+	--flashing-background: var(--bg_dark2);
+
+	--code-normal: var(--fg);
+	--code-background: var(--bg_highlight_dark);
+	--code-comment: var(--fg_dark);
+	--code-function: var(--cyan);
+	--code-important: var(--red1);
+	--code-keyword: var(--green0);
+	--code-operator: var(--cyan0);
+	--code-property: var(--fg);
+	--code-punctuation: var(--green0);
+	--code-string: var(--green);
+	--code-tag: var(--green);
+	--code-value: var(--green);
+
+	--mermaid-note: var(--blue0);
+	--mermaid-actor: var(--fg_dark);
+	--mermaid-loopline: var(--blue0);
+
+	--blockquote-background-color: var(--bg_dark2);
+	--callout-default: var(--blue0);
+	--callout-info: var(--blue0);
+	--callout-summary: var(--cyan);
+	--callout-tip: var(--cyan);
+	--callout-todo: var(--cyan);
+	--callout-bug: var(--red);
+	--callout-error: var(--red1);
+	--callout-fail: var(--red1);
+	--callout-example: var(--magenta);
+	--callout-important: var(--green);
+	--callout-success: var(--teal);
+	--callout-question: var(--yellow);
+	--callout-warning: var(--orange);
+	--callout-quote: var(--fg_dark);
+
+	--icon-color-hover: var(--blue0);
+	--icon-color-focused: var(--teal);
+	--icon-color-active: var(--green);
+
+	--nav-item-color-hover: var(--unknown);
+	--nav-item-background-hover: var(--bg_highlight);
+	--nav-item-color-active: var(--green);
+	--nav-item-background-active: var(--bg_highlight);
+	--nav-file-tag: var(--yellow);
+	--nav-indentation-guide-color: var(--bg_highlight);
+
+	--indentation-guide-color: var(--comment);
+	--indentation-guide-color-active: var(--comment);
+
+	--graph-line: var(--comment);
+	--graph-node: var(--fg);
+	--graph-node-tag: var(--orange);
+	--graph-node-attachment: var(--blue0);
+
+	--tab-text-color-focused-active: var(--green);
+	--tab-text-color-focused-active-current: var(--unknown);
+
+	--modal-border-color: var(--bg_highlight);
+	--prompt-border-color: var(--bg_highlight);
+	--slider-track-background: var(--bg_highlight);
+
+	--embed-background: var(--bg_highlight);
+	--embed-padding: 1.5rem 1.5rem 0.5rem;
+
+	--canvas-color: var(--bg_highlight_dark);
+
+	--toggle-thumb-color: var(--bg);
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.menu>.item,
+.menu-separator {
+	border-radius: 0;
+}
+
+.workspace-tab-header-container {
+	border-radius: 0;
+}
+
+.status-bar {
+	border-radius: 0;
+}

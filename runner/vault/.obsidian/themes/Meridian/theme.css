@@ -1,0 +1,755 @@
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                     Monospace font                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-monospace * {
+  font-family: var(--font-monospace) !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Font weights                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text cases                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text align                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-left {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Image align                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-center .image-embed {
+  display: flex !important;
+  justify-content: center;
+}
+
+.image-left .image-embed {
+  display: flex !important;
+  justify-content: start;
+}
+
+.image-right .image-embed {
+  display: flex !important;
+  justify-content: end;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image filters                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-invert img,
+.image-grayscale img,
+.image-sepia img,
+.image-blur-sm img,
+.image-blur-md img,
+.image-blur-lg img {
+  transition: filter 0.3s ease;
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(var(--blur, 0));
+}
+
+.image-invert img:hover,
+.image-grayscale img:hover,
+.image-sepia img:hover,
+.image-blur-sm img:hover,
+.image-blur-md img:hover,
+.image-blur-lg img:hover {
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(0);
+}
+
+.image-invert img {
+  --invert: 1;
+}
+
+.image-grayscale img {
+  --grayscale: 1;
+}
+
+.image-sepia img {
+  --sepia: 1;
+}
+
+.image-blur-sm img {
+  --blur: 5px;
+}
+
+.image-blur-md img {
+  --blur: 10px;
+}
+
+.image-blur-lg img {
+  --blur: 15px;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Make images square (remove rounded corners)       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-square img {
+  border-radius: 0;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Scale images on hover                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
+  transition: transform 0.3s ease;
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xs
+  .image-embed:hover {
+  transform: scale(1.2);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-sm
+  .image-embed:hover {
+  transform: scale(1.4);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-md
+  .image-embed:hover {
+  transform: scale(1.6);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-lg
+  .image-embed:hover {
+  transform: scale(1.8);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xl
+  .image-embed:hover {
+  transform: scale(2);
+}
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │            Workspace Tabs (Tab Bar, Headers)            │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide tab bar dynamically if only one tab */
+.hide-tab-bar-dynamic
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container {
+  max-height: 3em;
+  opacity: 1;
+  overflow: hidden;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.hide-tab-bar-dynamic
+  .mod-root
+  .workspace-tabs:not(.mod-stacked):not(
+    :has(.workspace-tab-header:nth-of-type(2))
+  )
+  .workspace-tab-header-container {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Always hide tab bar */
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+  display: none;
+}
+
+/* macOS frameless window spacing fix */
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .workspace
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  padding-right: 4px;
+}
+
+/* Hide navigation buttons in view header */
+.view-header-nav-buttons {
+  display: none;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Sidebars & Dock Areas                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide left/right sidebar toggle buttons */
+.sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-left {
+  display: none;
+}
+
+/* Hide vault switcher unless hovered or active */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
+.workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher.has-active-menu {
+  opacity: 1;
+}
+
+/* Hide vault action buttons (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+  display: none !important;
+}
+
+/* Hide tag, backlinks, outgoing links, and outline headers unless hovered */
+.workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outline"] .nav-header {
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  transition:
+    opacity 0.3s ease,
+    height 0.3s ease,
+    padding 0.3s ease;
+}
+
+.workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outgoing-link"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="backlink"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outline"]
+  .nav-header {
+  opacity: 1;
+  height: 1.75em;
+}
+
+/* Hide file explorer nav header */
+.workspace-leaf-content[data-type="file-explorer"] .nav-header {
+  display: none;
+}
+
+/* Hide local graph tab unless hovered */
+.workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-header-container:hover
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 1;
+}
+
+/* Hide left panel tab headers unless hovered */
+.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container-inner:hover {
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Metadata & Document Display               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide metadata in reading view */
+.markdown-reading-view .metadata-container {
+  display: none;
+}
+
+/* Hide header underline for internal links */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Graph View                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide graph controls unless hovered */
+.workspace-tab-container .graph-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-container:hover .graph-controls {
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                UI Chrome & Miscellaneous                │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide all scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide search result flair (except tag count) */
+.tree-item-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+/* Hide instructions (e.g. in modals or prompts) */
+.prompt-instructions {
+  display: none;
+}
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                Obsidian Global Variables                │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+body {
+  /* Typography */
+  --line-height-normal: 1.6;
+
+  /* Links */
+  --link-decoration: underline;
+  --link-unresolved-decoration-style: dotted;
+  --link-unresolved-decoration-color: var(----link-unresolved-color);
+
+  /* Lists */
+  --checkbox-marker-color: var(--background-secondary);
+
+  /* Blockquotes */
+  --blockquote-border-color: var(--text-muted);
+  --blockquote-color: var(--text-muted);
+
+  /* Inline Code */
+  --code-background: rgba(var(--mono-rgb-100), 0.05);
+
+  /* Workspace & Modal Backgrounds */
+  --workspace-background-translucent: rgba(
+    var(--mono-rgb-0),
+    var(--background-opacity, 0.5)
+  );
+  --modal-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-primary);
+
+  /* Dividers */
+  --divider-color: transparent !important;
+
+  /* Headings */
+  --h1-size: calc(var(--font-text-size) * 2);
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Theme Color Variables                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Light theme colors */
+.theme-light {
+  --background-primary: #f7f7f7;
+  --background-secondary: #fcfcfc;
+  --text-normal: #1a1a1a;
+  --text-muted: #b5b3b1;
+}
+
+/* Dark theme colors */
+.theme-dark {
+  --background-primary: #111111;
+  --background-secondary: #141414;
+  --text-normal: #ccc;
+  --text-muted: #707070;
+}
+
+/* Ensure fullscreen dark mode uses same primary background */
+.theme-dark.is-fullscreen {
+  --background-primary: #111111;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                   Transparency Tweaks                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Enable transparency on all non-Windows systems (e.g., macOS/Linux) */
+:not(.mod-windows).theme-dark {
+  --background-primary: transparent;
+}
+/* @settings
+
+name: Meridian
+id: mvahaste-meridian
+settings:
+
+  - 
+    id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: show-header-levels
+    title: Show Header Levels
+    description: Show header levels instead of collapse indicators in the editor (preview mode).
+    type: class-select
+    allowEmpty: false
+    default: show-header-levels-hover
+    options:
+      -
+        label: Always
+        value: show-header-levels-always
+      -
+        label: Hover
+        value: show-header-levels-hover
+
+  -
+    id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: false
+
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-tab-bar-dynamic
+      -
+        label: Always
+        value: hide-tab-bar-always
+      -
+        label: Never
+        value: hide-tab-bar-never
+
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+*/
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Status Bar Deemphasis                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.deemphasize-status-bar .status-bar {
+  filter: saturate(0);
+  opacity: 0.5;
+  border: none;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deemphasize-status-bar .status-bar:hover,
+.deemphasize-status-bar .status-bar:focus-within {
+  filter: saturate(1);
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │     Embedded Backlinks & File Properties Deemphasis     │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.deemphasize-embedded-backlinks .embedded-backlinks,
+.deemphasize-file-properties .metadata-container {
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deemphasize-embedded-backlinks .embedded-backlinks:hover,
+.deemphasize-embedded-backlinks .embedded-backlinks:focus-within,
+.deemphasize-file-properties .metadata-container:hover,
+.deemphasize-file-properties .metadata-container:focus-within {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image Styling                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+img {
+  border-radius: var(--radius-s);
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │              Transparent Background Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+:not(.mod-windows) .prompt,
+:not(.mod-windows) .popover,
+:not(.mod-windows) .suggestion,
+:not(.mod-windows) .graph-controls,
+:not(.mod-windows) .lt-predictions-container,
+:not(.mod-windows) .vertical-tab-content {
+  background-color: var(--modal-background) !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Titlebar Draggability Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.view-header-title-container {
+  -webkit-app-region: drag;
+}
+
+.view-header-title-container div {
+  -webkit-app-region: no-drag;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Stacked Tabs Background Fix               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.mod-stacked
+  .workspace-tab-container
+  > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
+  --background-primary: #111111;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Header Spacing Between Header and Paragraph       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.HyperMD-header-1:has(+ .cm-line):not(:has(+ .HyperMD-header-2)),
+.HyperMD-header-2:has(+ .cm-line):not(:has(+ .HyperMD-header-3)) {
+  padding-bottom: 0.125em !important;
+}
+
+.HyperMD-header-3:has(+ .cm-line):not(:has(+ .HyperMD-header-4)) {
+  padding-bottom: 0.1em !important;
+}
+
+.HyperMD-header-4:has(+ .cm-line):not(:has(+ .HyperMD-header-5)) {
+  padding-bottom: 0.075em !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Show Header Hashtags                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
+  content: "# ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-2:not(.cm-active) .cm-header::before {
+  content: "## ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-3:not(.cm-active) .cm-header::before {
+  content: "### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-4:not(.cm-active) .cm-header::before {
+  content: "#### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-5:not(.cm-active) .cm-header::before {
+  content: "##### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
+  content: "###### ";
+  color: var(--text-faint);
+}
+
+/* ───────────────────────────────────────────────
+   Minimal Image Captions
+─────────────────────────────────────────────── */
+.minimal-image-captions .image-captions-figure {
+  background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.8em !important;
+  text-align: left !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │    Show Header Levels Instead of Collapse Indicators    │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.show-header-levels-always
+  .HyperMD-header
+  .cm-fold-indicator
+  .collapse-indicator {
+  opacity: 1 !important;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator svg {
+  display: none;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator::before {
+  font-size: calc(var(--font-text-size) * 0.75);
+  font-weight: 600 !important;
+  color: var(--text-faint);
+  width: max-content;
+  margin-right: 0.25em;
+}
+
+.HyperMD-header-1 .cm-fold-indicator .collapse-indicator::before {
+  content: "H1";
+}
+.HyperMD-header-2 .cm-fold-indicator .collapse-indicator::before {
+  content: "H2";
+}
+.HyperMD-header-3 .cm-fold-indicator .collapse-indicator::before {
+  content: "H3";
+}
+.HyperMD-header-4 .cm-fold-indicator .collapse-indicator::before {
+  content: "H4";
+}
+.HyperMD-header-5 .cm-fold-indicator .collapse-indicator::before {
+  content: "H5";
+}
+.HyperMD-header-6 .cm-fold-indicator .collapse-indicator::before {
+  content: "H6";
+}

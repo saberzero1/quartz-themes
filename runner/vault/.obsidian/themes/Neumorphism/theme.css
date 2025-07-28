@@ -1,0 +1,295 @@
+body {
+    color-scheme: light dark;
+    --header-height: 40px;
+
+    --gap: 1rem;
+    --scroll-button-offset: 50px;
+
+    --header-padding: 5px;
+    --titlebar-background: #171717;
+    --titlebar-border-color: transparent;
+
+    --light-background: #ffffff;
+    --light-shadow-first: #949494;
+    --light-shadow-second: #ffffff;
+
+    --dark-background: #1c1c1c;
+    --dark-shadow-first: #0a0a0a;
+    --dark-shadow-second: #111111;
+
+    --background: light-dark(var(--light-background), var(--dark-background));
+
+    --floating-background: var(--background);
+    --box-shadow: calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2) light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
+    calc(var(--gap) / 2 * -1) calc(var(--gap) / 2 * -1) calc(var(--gap) * 2) light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+
+    --border-radius: 10px;
+    --overflow: unset;
+}
+
+hr:not(.cm-editor hr) {
+    opacity: 0 !important;
+}
+
+.cm-editor img {
+    border-radius: var(--border-radius) !important;
+}
+
+.workspace-ribbon.mod-left:before,
+.side-dock-settings {
+    display: none !important;
+}
+
+
+.mod-left-split .mod-top-left-space .workspace-tab-header-container,
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-tab-header-container-inner,
+.workspace-sidedock-vault-profile{
+    border: none !important;
+}
+
+.workspace,
+.workspace-split {
+    background: var(--background) !important;
+}
+
+body:not(.mod-macos) .sidebar-toggle-button.mod-left,
+.workspace-split.mod-vertical.mod-root,
+.mod-left-split .mod-top-left-space .workspace-tab-header-container,
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-sidedock-vault-profile,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split,
+.mod-left-split .mod-top-left-space .workspace-tab-container .workspace-leaf {
+    background: var(--floating-background) !important;
+    border-radius: var(--border-radius) !important;
+    overflow: hidden !important;
+    box-shadow: var(--box-shadow);
+}
+
+#editingToolbarModalBar,
+.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container,
+.view-header,
+.view-content,
+.status-bar {
+    background: var(--floating-background) !important;
+}
+
+.status-bar {
+    background: var(--floating-background) !important;
+    border-radius: var(--border-radius) !important;
+    border-width: 1px;
+}
+
+.mod-fade:not(.mod-at-end):after {
+    background: linear-gradient(to right, transparent, var(--background));
+}
+
+.workspace,
+.workspace-tabs.mod-top.mod-top-left-space,
+.workspace-split {
+    gap: var(--gap);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+    gap: 0;
+}
+
+.workspace > *,
+.sidebar-toggle-button.mod-left,
+.mod-macos .sidebar-toggle-button.mod-right {
+    margin-block-start: var(--gap);
+}
+
+.workspace-ribbon.mod-left {
+    margin-block-start: calc(var(--header-height) + (var(--gap) * 2));
+}
+
+.horizontal-main-container .mod-right-split .workspace-tabs,
+.mod-right-split .workspace-tabs.mod-active,
+.mod-macos .sidebar-toggle-button.mod-left {
+    margin-block-start: 0;
+}
+
+.workspace-ribbon.mod-left,
+.workspace-sidedock-vault-profile {
+    margin-block-end: var(--gap);
+}
+
+.mod-right-split .mod-top-right-space .workspace-leaf-content .view-content {
+    margin-block-end: 0;
+}
+
+.is-mobile .workspace-drawer.mod-left {
+    margin-block-end: calc(var(--gap) * 2);
+    margin-block-start: calc(4rem - 5px);
+    padding-block-start: calc(var(--gap) * 0.5) !important;
+}
+
+.workspace-ribbon.mod-left,
+.sidebar-toggle-button.mod-left,
+body:not(.show-ribbon) .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
+body:not(.show-ribbon) .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical.mod-root,
+.is-mobile .workspace-split.mod-vertical.mod-root {
+    margin-inline-start: var(--gap);
+}
+
+.mod-macos .sidebar-toggle-button.mod-left {
+    margin-inline-start: 0;
+}
+
+.workspace-split.mod-right-split,
+.mod-macos .sidebar-toggle-button.mod-right,
+.workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical.mod-root {
+    margin-inline-end: var(--gap);
+}
+
+body:not(.show-ribbon) .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left {
+    margin: 0 !important;
+}
+
+.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container,
+.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container-inner {
+    padding: 0 !important;
+    padding-inline: calc(1rem / 4) !important;
+    margin: 0 !important;
+}
+
+.workspace-tabs.mod-top .workspace-tab-header-container {
+    padding-inline-start: 0 !important;
+}
+
+.workspace-tabs.mod-top .workspace-tab-header-container-inner,
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner {
+    padding-inline: 12px !important;
+    margin-block: 0 !important;
+}
+
+.nav-header,
+.workspace-leaf-content .view-header-left {
+    height: var(--header-height) !important;
+}
+
+.workspace-split.mod-vertical.mod-root,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+    height: calc(100% - var(--gap) * 2);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split {
+    height: calc(100% - var(--gap) * 1);
+}
+
+.mod-left-split .mod-top-left-space .workspace-tab-container .workspace-leaf,
+.mod-right-split .mod-top-right-space .workspace-tab-container .workspace-leaf {
+    height: 100%;
+}
+
+.workspace-tab-header-new-tab,
+.sidebar-toggle-button,
+.workspace-tab-header-tab-list {
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.workspace-tab-header-new-tab span,
+.workspace-tab-header-tab-list span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner,
+.workspace,
+.workspace-tabs,
+.workspace-tab-container,
+.workspace-leaf,
+.workspace-leaf-content,
+.workspace-ribbon,
+.workspace-split,
+.view-header,
+.view-content {
+    overflow: var(--overflow) !important;
+}
+
+div[class^="div-scrollTo"] {
+    right: var(--gap) !important;
+}
+
+.div-scrollToBottom {
+    bottom: calc(var(--gap) * 4);
+}
+
+.div-scrollToTop {
+    bottom: calc(var(--gap) * 4 + var(--scroll-button-offset));
+}
+
+.div-scrollToCursor {
+    bottom: calc(var(--gap) * 4 + (var(--scroll-button-offset) * 2));
+}
+
+.status-bar {
+    right: calc(var(--gap) * 2) !important;
+    bottom: calc(var(--gap) * 2) !important;
+}
+
+.workspace-tab-header-inner {
+    padding-block: 0 !important;
+    margin-block: var(--header-padding);
+    height: calc(100% - (var(--header-padding) * 2));
+}
+
+.workspace-tab-header-container-inner {
+    padding-inline: var(--header-padding) !important;
+    border-bottom: none !important;
+}
+
+.workspace-tab-header.tappable.is-active {
+    margin-block-start: var(--header-padding);
+    box-shadow:
+            calc(-1 * var(--tab-outline-width)) 0 0 var(--tab-outline-color),
+            var(--tab-outline-width) 0 0 var(--tab-outline-color),
+            0 calc(-1 * var(--tab-outline-width)) 0 var(--tab-outline-color),
+            0 var(--tab-outline-width) 0 var(--tab-outline-color);
+}
+
+.workspace-tab-header.tappable.is-active:not(.workspace-tabs.mod-top .workspace-tab-header.tappable.is-active),
+.workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-header-container-inner .is-active {
+    margin-block-start: var(--header-padding);
+    height: calc(100% - (var(--header-padding) * 2));
+}
+
+.workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-header-container .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner {
+    height: calc(100% - (var(--header-padding) * 1));
+    overflow: var(--overflow);
+}
+
+.workspace-tabs.mod-top .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+    position: relative;
+    overflow: var(--overflow) !important;
+    isolation: isolate;
+}
+
+.workspace-tabs.mod-top .workspace-tab-header.tappable.is-active .workspace-tab-header-inner:before {
+    position: absolute;
+    content: '';
+    background: var(--background);
+    width: calc(100% + 16px);
+    height: 4px;
+    bottom: -12px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tab-header-inner:before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-inner:before {
+    display: none !important;
+}
+
+.mod-windows .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-active.mod-top.mod-top-right-space .workspace-tab-header-container {
+    padding-inline-end: calc(var(--size-4-2) + var(--frame-right-space)) !important;
+}

@@ -1,0 +1,162 @@
+/* --------------------------------------------------------------------------
+
+*** Simply Colorful by @LorenzoPegorari ***
+
+User interface replacement for Obsidian.
+
+-----------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2024-2025 Lorenzo Pegorari (@LorenzoPegorari)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------- */
+body{--font-editor-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;--font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme)}body{--icon-color-hover: hsl(var(--color-accent-hsl));--icon-color-active: hsl(var(--color-accent-hsl));--icon-color-focused: hsl(var(--color-accent-hsl));--icon-opacity: 0.8;--bold-color: var(--color-cyan);--italic-color: var(--color-green);--p-spacing-empty: 0.1rem}body{--divider-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);--scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5)}body{--nav-item-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.775);--nav-item-color-active: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);--nav-item-color-selected: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);--nav-item-weight: 500;--nav-item-weight-hover: 500;--slider-thumb-border-width: 2px;--slider-thumb-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.75);--slider-track-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);--slider-track-height: 3px;--tab-text-color: var(--text-faint);--tab-text-color-active: var(--text-muted);--tab-text-color-focused: var(--text-muted);--tab-text-color-focused-active: var(--text-muted);--tab-text-color-focused-highlighted: var(--text-accent);--tab-text-color-focused-active-current: hsl(var(--accent-h), var(--accent-s), var(--accent-l));--tab-font-weight: 700;--tab-stacked-font-weight: 700}body{--embed-block-shadow-hover: none;--blockquote-background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);--blockquote-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);--blockquote-color: var(--text-muted);--callout-border-width: 2px;--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);--callout-radius: var(--radius-m);--code-radius: var(--radius-m);--embed-max-height: 750px;--embed-border-start: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);--file-header-font-weight: 700;--h1-size: 1.802em;--h2-size: 1.602em;--h3-size: 1.424em;--h4-size: 1.266em;--h5-size: 1.125em;--h6-size: 1em;--h1-weight: 700;--h2-weight: 700;--h3-weight: 700;--h4-weight: 700;--h5-weight: 700;--h6-weight: 700;--inline-title-color: var(--text-normal);--inline-title-size: 1.92em;--inline-title-weight: 700;--link-unresolved-opacity: 0.7;--link-unresolved-filter: grayscale(25%);--list-indent: 2em;--list-marker-color-collapsed: var(--text-faint);--metadata-background: var(--color-base-10);--metadata-border-radius: var(--radius-m);--metadata-property-radius: var(--radius-s);--metadata-property-radius-hover: var(--radius-s);--metadata-property-radius-focus: var(--radius-s);--table-background: var(--background-secondary);--table-border-color: var(--background-modifier-border);--dataview-table-tbody-size: calc(var(--font-text-size) * 0.82);--dataview-table-thead-size: calc(var(--font-text-size) * 0.88);--tag-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.925);--tag-color-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);--tag-padding-x: 0.7em;--tag-padding-y: 0.3em;--tag-radius: 1em}.theme-light{--color-red-rgb: 224, 48, 53;--color-orange-rgb: 224, 131, 48;--color-yellow-rgb: 206, 201, 42;--color-green-rgb: 47, 206, 42;--color-cyan-rgb: 42, 206, 201;--color-blue-rgb: 36, 113, 212;--color-purple-rgb: 131, 48, 224;--color-pink-rgb: 224, 48, 141;--color-red: #e03035;--color-orange: #d57929;--color-yellow: #b6b11c;--color-green: #0fa50a;--color-cyan: #18ada8;--color-blue: #2471d4;--color-purple: #8330e0;--color-pink: #e0308d;--color-base-00: #f7f7f7;--color-base-05: #f0f0f0;--color-base-10: #e7e7e7;--color-base-20: #e0e0e0;--color-base-25: #dadada;--color-base-30: #d4d4d4;--color-base-35: #c7c7c7;--color-base-40: #bdbdbd;--color-base-50: #aaaaaa;--color-base-60: #707070;--color-base-70: #4f4f4f;--color-base-100: #222222;--text-accent: #7e55dd;--text-accent-hover: rgba(126, 85, 221, 0.825);--dataview-table-even-bg-color: var(--color-base-10);--dataview-table-odd-bg-color: var(--color-base-05);--dataview-table-row-hover: var(--color-accent-hsl);--tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.125);--tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);--h-transparency: 12%;--h-hover-transparency: 25%}.theme-dark{--color-red-rgb: 224, 48, 53;--color-orange-rgb: 224, 131, 48;--color-yellow-rgb: 206, 201, 42;--color-green-rgb: 47, 206, 42;--color-cyan-rgb: 42, 206, 201;--color-blue-rgb: 36, 113, 212;--color-purple-rgb: 131, 48, 224;--color-pink-rgb: 224, 48, 141;--color-red: #e03035;--color-orange: #e08330;--color-yellow: #cec92a;--color-green: #32ce2d;--color-cyan: #2dcec9;--color-blue: #2471d4;--color-purple: #9149e4;--color-pink: #e0308d;--color-base-00: #191919;--color-base-05: #1e1e1e;--color-base-10: #222222;--color-base-20: #313131;--color-base-25: #363636;--color-base-30: #414141;--color-base-35: #4c4c4c;--color-base-40: #555555;--color-base-50: #666666;--color-base-60: #999999;--color-base-70: #b3b3b3;--color-base-100: #dadada;--text-accent: #8a5cf5;--text-accent-hover: rgba(138, 92, 245, 0.825);--dataview-table-even-bg-color: var(--color-base-10);--dataview-table-odd-bg-color: var(--color-base-05);--dataview-table-row-hover: var(--color-accent-hsl);--tag-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.075);--tag-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);--h-transparency: 7%;--h-hover-transparency: 20%}.theme-light,.theme-dark{--background-primary: var(--color-base-00);--background-primary-alt: var(--color-base-10);--background-secondary: var(--color-base-05);--background-secondary-alt: var(--color-base-05);--background-modifier-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);--background-modifier-active-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);--background-modifier-border: var(--color-base-25);--background-modifier-border-hover: var(--color-base-30);--background-modifier-border-focus: var(--color-base-35);--background-modifier-form-field: var(--color-base-05);--text-highlight-bg-rgb: 236, 235, 0;--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);--h1-color: var(--color-blue);--h2-color: var(--color-purple);--h3-color: var(--color-pink);--h4-color: var(--color-red);--h5-color: var(--color-orange);--h6-color: var(--color-yellow);--link-external-color: #0071e3;--link-external-color-hover: #0764c1;--collapse-icon-color-collapsed: var(--text-faint)}.nav-file-title,body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover{font-weight:400}.nav-folder.is-being-dragged-over>.nav-folder-title{color:var(--nav-item-color-active)}.view-content.node-insert-event .tree-item-inner{border-radius:2px;padding:2px 6px 3px 6px;font-weight:500;transition:background-color .75s ease-in-out}.view-content.node-insert-event .tree-item .tree-item-self.is-active,.view-content.node-insert-event .tree-item .tree-item-self.is-clickable:hover{background-color:inherit}.view-content.node-insert-event .tree-item .tree-item-inner{color:var(--h1-color);background-color:color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h1-color);background-color:color-mix(in srgb, var(--h1-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h1-color);padding-left:4px}.view-content.node-insert-event .tree-item .tree-item .tree-item-inner{color:var(--h2-color);background-color:color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h2-color);background-color:color-mix(in srgb, var(--h2-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h2-color);padding-left:4px}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item-inner{color:var(--h3-color);background-color:color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h3-color);background-color:color-mix(in srgb, var(--h3-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h3-color);padding-left:4px}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item-inner{color:var(--h4-color);background-color:color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h4-color);background-color:color-mix(in srgb, var(--h4-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h4-color);padding-left:4px}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-inner{color:var(--h5-color);background-color:color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h5-color);background-color:color-mix(in srgb, var(--h5-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h5-color);padding-left:4px}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-inner{color:var(--h6-color);background-color:color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-active .tree-item-inner,.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{color:var(--h6-color);background-color:color-mix(in srgb, var(--h6-color) var(--h-hover-transparency), transparent)}.view-content.node-insert-event .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item-self.is-clickable:hover .tree-item-inner{border-left:2px solid var(--h6-color);padding-left:4px}.workspace-leaf-content[data-type~="graph"]{background:radial-gradient(circle, var(--color-base-10) 0%, var(--background-primary-alt) 20%, var(--background-primary) 80%, var(--background-primary) 100%)}.workspace-leaf-content[data-type~="graph"] .view-header{background:transparent}.is-focused .workspace-leaf.mod-active .view-header{background:transparent}.workspace-leaf-content[data-type~="graph"] .view-content{background:transparent}.graph-controls.is-close{background:transparent}h1,h2,h3,h4,h5,h6{margin:8px -8px;border-radius:var(--radius-s);padding:4px 8px;transition:background-color .75s ease}h1{background-color:color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent)}h1:hover{background-color:color-mix(in srgb, var(--h1-color) var(--h-hover-transparency), transparent)}h2{background-color:color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent)}h2:hover{background-color:color-mix(in srgb, var(--h2-color) var(--h-hover-transparency), transparent)}h3{background-color:color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent)}h3:hover{background-color:color-mix(in srgb, var(--h3-color) var(--h-hover-transparency), transparent)}h4{background-color:color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent)}h4:hover{background-color:color-mix(in srgb, var(--h4-color) var(--h-hover-transparency), transparent)}h5{background-color:color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent)}h5:hover{background-color:color-mix(in srgb, var(--h5-color) var(--h-hover-transparency), transparent)}h6{background-color:color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent)}h6:hover{background-color:color-mix(in srgb, var(--h6-color) var(--h-hover-transparency), transparent)}.markdown-preview-view .heading-collapse-indicator{margin-inline-start:-30px}body{--live-heading-bg-top: calc((var(--p-spacing) * 9) / 16);--live-heading-bg-bottom: calc((var(--p-spacing) * 7) / 16);--live-heading-padding: calc(var(--live-heading-bg-top) * 1.5)}.cm-s-obsidian.is-live-preview .cm-line.HyperMD-header{padding-top:var(--live-heading-padding);padding-bottom:var(--live-heading-padding)}.cm-s-obsidian.is-live-preview .HyperMD-header-1{background:var(--h1-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h1-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.cm-s-obsidian.is-live-preview .HyperMD-header-2{background:var(--h2-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h2-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.cm-s-obsidian.is-live-preview .HyperMD-header-3{background:var(--h3-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h3-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.cm-s-obsidian.is-live-preview .HyperMD-header-4{background:var(--h4-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h4-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.cm-s-obsidian.is-live-preview .HyperMD-header-5{background:var(--h5-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h5-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.cm-s-obsidian.is-live-preview .HyperMD-header-6{background:var(--h6-color);background:linear-gradient(180deg, transparent 0px, transparent var(--live-heading-bg-top), color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent) var(--live-heading-bg-top), color-mix(in srgb, var(--h6-color) var(--h-transparency), transparent) calc(100% - var(--live-heading-bg-bottom)), transparent calc(100% - var(--live-heading-bg-bottom)), transparent 100%)}.markdown-rendered blockquote{border-radius:0 var(--radius-m) var(--radius-m) 0;padding:var(--size-4-3) var(--size-4-3) var(--size-4-5) var(--size-4-6)}.callout{border-top:none;border-bottom:none;border-right:none;border-radius:0 var(--callout-radius) var(--callout-radius) 0}.cm-html-embed thead>tr>th,.markdown-rendered thead>tr>th,.cm-html-embed tbody>tr>td,.markdown-rendered tbody>tr>td{background-color:var(--dataview-table-odd-bg-color)}.cm-html-embed thead>tr:hover>th,.markdown-rendered thead>tr:hover>th,.cm-html-embed tbody>tr:hover>td,.markdown-rendered tbody>tr:hover>td{background-color:color-mix(in srgb, hsl(var(--accent-h), var(--accent-s), var(--accent-l)) 15%, var(--dataview-table-odd-bg-color))}.cm-html-embed thead tr>th:nth-child(even),.markdown-rendered thead tr>th:nth-child(even),.cm-html-embed tbody tr>td:nth-child(even),.markdown-rendered tbody tr>td:nth-child(even){background-color:var(--dataview-table-even-bg-color)}.cm-html-embed thead tr:hover>th:nth-child(even),.markdown-rendered thead tr:hover>th:nth-child(even),.cm-html-embed tbody tr:hover>td:nth-child(even),.markdown-rendered tbody tr:hover>td:nth-child(even){background-color:color-mix(in srgb, hsl(var(--accent-h), var(--accent-s), var(--accent-l)) 15%, var(--dataview-table-even-bg-color))}.cm-s-obsidian .cm-line.HyperMD-header+.cm-line:not(.HyperMD-header):has(>.cm-hashtag.cm-meta){padding-top:0.35rem}span.advanced-tables-row-label{font-size:var(--font-ui-small);font-weight:400;color:var(--text-muted)}[data-type="advanced-tables-toolbar"] .nav-buttons-container .nav-action-button:hover .widget-icon{fill:hsl(var(--accent-h), var(--accent-s), var(--accent-l))}h3.title.svelte-1vwr9dd.svelte-1vwr9dd{background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2)}div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd{color:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9)}.dataview.table-view-table .table-view-thead{font-size:var(--dataview-table-thead-size)}.dataview.table-view-table .table-view-thead .table-view-th{border:var(--table-border-width) solid var(--table-border-color);border-bottom:calc(var(--table-border-width) * 2) solid var(--table-border-color);padding:10px 5px;text-align:center}.dataview.table-view-table .table-view-tbody tr:last-child{border-bottom:none}.dataview.table-view-table .table-view-tbody td{border:var(--table-border-width) solid var(--table-border-color);font-size:var(--dataview-table-tbody-size);text-align:center}.themed-color-wrapper .pickr-reset>button{background-color:var(--color-base-20);color:var(--color-base-100)}
+/* @settings
+
+name: Simply Colorful theme settings
+id: simply-colorful-theme
+settings:
+	-
+		id: bold-color
+		title: Bold color
+		description: Defines the color of bold text
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: italic-color
+		title: Italic color
+		description: Defines the color of italic text
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-accent
+		title: Internal link color
+		description: Defines the color of internal links
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-accent-hover
+		title: Internal link hover color
+		description: Defines the color of internal links while hovered
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: link-external-color
+		title: External link color
+		description: Defines the color of external links
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: link-external-color-hover
+		title: External link hover color
+		description: Defines the color of external links while hovered
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-highlight-bg
+		title: Highlight color
+		description: Defines the color of highlighted text
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: sc-headings
+		title: Interface colors
+		description: Defines the colors of all the headings
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: h1-color
+		title: Heading 1 color
+		description: Defines the color of heading 1
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h2-color
+		title: Heading 2 color
+		description: Defines the color of heading 2
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h3-color
+		title: Heading 3 color
+		description: Defines the color of heading 3
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h4-color
+		title: Heading 4 color
+		description: Defines the color of heading 4
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h5-color
+		title: Heading 5 color
+		description: Defines the color of heading 5
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h6-color
+		title: Heading 6 color
+		description: Defines the color of heading 6
+		type: variable-themed-color
+		opacity: false
+		format: rgb
+		default-light: '#'
+		default-dark: '#'
+*/

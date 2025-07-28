@@ -1,0 +1,1225 @@
+/*
+Phoenix Theme for Obsidian by RyzenFromFire
+Adapted from the gruvbox and Atom themes.
+*/
+
+:root
+{
+    /* Custom Config */
+
+    /* Maximum Height (px) for note embeds (probably applies to other embeds too) */
+    --max-embed-height: 1000px; /* Obsidian Default is 600px */
+
+    /* Gruvbox Colors */
+    --dark0-hard:         #1d2021;
+    --dark0:              #282828;
+    --dark0-soft:         #32302f;
+    --dark1:              #3c3836;
+    --dark2:              #504945;
+    --dark3:              #665c54;
+    --dark4:              #7c6f64;
+
+    --gray:               #928374;
+
+    --light0-hard:        #f9f5d7;
+    --light0:             #fbf1c7;
+    --light0-soft:        #f2e5bc;
+    --light1:             #ebdbb2;
+    --light2:             #d5c4a1;
+    --light3:             #bdae93;
+    --light4:             #a89984;
+
+    --bright-red:         #fb4934;
+    --bright-orange-v:    #fe8019;
+    --bright-yellow-v:    #fabd2f;
+
+    --neutral-red:        #cc241d;
+    --neutral-orange:     #d65d0e;
+    --neutral-yellow:     #d79921;
+
+    --faded-red:          #9d0006;
+    --faded-orange:       #af3a03;
+    --faded-yellow:       #b57614;
+
+    /* My Custom Colors */
+    --platinum:           #cccccc;
+    --r-dark0-accent:     #1e1e1e;
+    --r-gray:             #9d8f82;
+    --r-gray2:            #a89c90;
+    --r-gray3:            #b3ab9e;
+    --r-lightn1:          #f2e5d8;   
+    --r-light0:           #e7cfb8;
+    --r-light1:           #dbc5af;
+    --r-light2:           #d0baa6;
+    --r-light2-soft:      #c4b09c;
+    --r-light3:           #b9a693;
+    --r-light4:           #a79584;
+
+    /* Background Colors */
+    --r-dark0:            #212121;
+    --r-dark1:            #191717;
+    --r-dark2:            #161414;
+
+    /* Text, Header, and Code Colors */
+    --r-standard-text:    #eadad9;
+    --r-dark-red:         #bc0104; /* H1 */
+    --r-red-orange:       #c52d0a; /* Old H2 */
+    --r-orange:           #ea4f0d; /* New H2 */
+    --r-deep-orange:      #ed5b0f; /* Old H3 */
+    --r-bright-orange:    #fe750e; /* New H3, Old H4 */
+    --r-yellow-orange:    #fe9109; /* Old H5 */
+    --r-bright-yellow:    #fea30f; /* New H4 */
+    --r-yellow-green:     #c0c90a; /* New H5 */
+    --r-mist-energy-blue: #27cac7; /* New H6 */ /* If you get this reference, o7 */
+    --r-dark-orange:      #d5520e; 
+    --r-meteor:           #72504b;
+    --r-gunmetal:         #534f4e;
+    --r-scorpion:         #625e5e; /* "scorpion" grey according to some color picker site */
+    --code-orange:        #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
+    --code-light-gray:    #cccccc; /* this is the standard text color in VSCode */
+    --obsidian-codeblock: #1a1a1a; /* Obsidian default codeblock color */
+    --test-green:         #00ff00; /* for testing purposes */
+    --r-bg-highlight:     color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
+    --r-bg-selection:     color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
+    --r-pdf-highlight:    var(--r-bright-orange);
+}
+
+/*
+______  ___  ______ _   __
+|  _  \/ _ \ | ___ \ | / /
+| | | / /_\ \| |_/ / |/ / 
+| | | |  _  ||    /|    \ 
+| |/ /| | | || |\ \| |\  \
+|___/ \_| |_/\_| \_\_| \_/                 
+
+*/
+.theme-dark
+{
+  --background-primary:         var(--r-dark0);
+  --background-primary-alt:     var(--dark0);
+  --background-secondary:       var(--r-dark1);
+  --background-secondary-alt:   var(--r-dark2);
+  --text-normal:                var(--r-standard-text);
+  --text-faint:                 var(--r-scorpion);
+  --text-muted:                 var(--color-base-70);
+  --text-platinum:              var(--platinum);
+  --text-title-h1:              var(--r-dark-red);
+  --text-title-h2:              var(--r-orange);
+  --text-title-h3:              var(--r-bright-orange);
+  --text-title-h4:              var(--r-bright-yellow);
+  --text-title-h5:              var(--r-yellow-green);
+  --text-title-h6:              var(--r-mist-energy-blue);
+  --text-link:                  var(--text-a); /* this is for external links */
+  --text-link-hover:            var(--text-a-hover);
+  --text-a:                     var(--r-bright-orange); /* this is for internal links */ /* also controls color of sidebar icons when hovered */
+  --text-a-hover:               var(--r-yellow-orange);
+  --text-mark:                  var(--r-bg-highlight);
+  --text-highlight-bg:          var(--r-bg-highlight);
+  --interactive-accent:         var(--r-deep-orange);
+  --interactive-before:         var(--dark4);
+  --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
+  --text-accent:                var(--r-bright-orange);
+  --text-accent-hover:          var(--r-yellow-orange);
+  --interactive-accent-rgb:     var(--r-bright-orange);
+  --inline-code:                var(--code-light-gray); /* text in inline code, edit and preview */
+  --code-block:                 var(--code-light-gray); /* text in preview mode from codeblock */
+  --code-normal:                var(--code-light-gray);
+  --default-codeblock:          var(--obsidian-codeblock); /* codeblock background color */
+  --pre-code:                   var(--default-codeblock); /* inline code background color */
+  --vim-cursor:                 var(--r-bright-orange);
+  --text-selection:             var(--r-bg-selection);
+  --text-tag:                   var(--r-bright-orange);
+  --text-card:                  var(--r-light2-soft);
+  --status-bar-background:      var(--background-secondary);
+  --interactive-normal:         var(--color-base-30);
+  --callout-bg-darken-pct:      0%;
+  --button-text-color:          var(--background-secondary-alt);
+  --graph-view-line-color:      var(--dark1);
+}
+
+/*
+ _     _____ _____  _   _ _____ 
+| |   |_   _|  __ \| | | |_   _|
+| |     | | | |  \/| |_| | | |  
+| |     | | | | __ |  _  | | |  
+| |_____| |_| |_\ \| | | | | |  
+\_____/\___/ \____/\_| |_/ \_/  
+                               
+*/
+.theme-light {
+  --background-primary:         var(--r-light1);
+  --background-primary-alt:     var(--r-light0);
+  --background-secondary:       var(--r-light2);
+  --background-secondary-alt:   var(--r-light3);
+  --text-normal:                var(--r-dark0-accent);
+  --text-faint:                 var(--r-gunmetal);
+  --text-muted:                 var(--r-gunmetal);
+  --text-platinum:              var(--platinum);
+  --text-title-h1:              var(--r-dark-red);
+  --text-title-h2:              var(--r-orange);
+  --text-title-h3:              var(--r-bright-orange);
+  --text-title-h4:              var(--r-bright-yellow);
+  --text-title-h5:              var(--r-yellow-green);
+  --text-title-h6:              var(--r-mist-energy-blue);
+  --text-link:                  var(--r-dark-orange);
+  --text-link-hover:            var(--r-deep-orange);
+  --text-a:                     var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+  --text-a-hover:               var(--r-yellow-orange);
+  --text-mark:                  var(--r-bg-highlight);
+  --text-highlight-bg:          var(--r-bg-highlight);
+  --interactive-accent:         var(--r-deep-orange);
+  --interactive-before:         var(--r-light4);
+  --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
+  --text-accent:                var(--r-bright-orange);
+  --text-accent-hover:          var(--r-yellow-orange);
+  --interactive-accent-rgb:     var(--r-bright-orange);
+  --inline-code:                var(--r-dark2); /* text in inline code, edit and preview */
+  --code-block:                 var(--r-dark2); /* text in preview mode from codeblock */
+  --code-normal:                var(--r-dark2);
+  --default-codeblock:          var(--r-light3); /* codeblock background color */
+  --pre-code:                   var(--default-codeblock); /* inline code background color */
+  --vim-cursor:                 var(--r-bright-orange);
+  --text-selection:             var(--r-bg-selection);
+  --text-tag:                   var(--r-deep-orange);
+  --text-card:                  var(--r-dark2);
+  --status-bar-background:      var(--r-light2-soft);
+  --interactive-normal:         var(--r-light2);
+  --interactive-hover:          var(--r-light0);
+  --callout-bg-darken-pct:      5%;
+  --button-text-color:          var(--text-on-accent);
+  --graph-view-line-color:      var(--light4);
+}
+
+/* 
+ _____ ________  ______  ________ _   _ 
+/  __ \  _  |  \/  ||  \/  |  _  | \ | |
+| /  \/ | | | .  . || .  . | | | |  \| |
+| |   | | | | |\/| || |\/| | | | | . ` |
+| \__/\ \_/ / |  | || |  | \ \_/ / |\  |
+ \____/\___/\_|  |_/\_|  |_/\___/\_| \_/
+
+ */
+.theme-dark, .theme-light {
+  /* font size variables */
+  --h1-size: 2.2em;
+  --h2-size: 2.0em;
+  --h3-size: 1.85em;
+  --h4-size: 1.6em;
+  --h5-size: 1.47em;
+  --h6-size: 1.35em;
+
+  --list-indent: 1em;
+  --p-spacing: 0.25rem;
+
+  /* Fix issues with hovering generating underlines */
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-decoration: none;
+  --link-unresolved-decoration-hover: none;
+
+  /* Heading Link Trickery */
+  /* color-mix syntax: color-mix(in colorspace, color1 %-to-mix, color2)*/
+  --hx-link-ul-transparency-pct: 33%;
+  --h1-link-ul-color: color-mix(in srgb, var(--text-title-h1) var(--hx-link-ul-transparency-pct), transparent);
+  --h2-link-ul-color: color-mix(in srgb, var(--text-title-h2) var(--hx-link-ul-transparency-pct), transparent);
+  --h3-link-ul-color: color-mix(in srgb, var(--text-title-h3) var(--hx-link-ul-transparency-pct), transparent);
+  --h4-link-ul-color: color-mix(in srgb, var(--text-title-h4) var(--hx-link-ul-transparency-pct), transparent);
+  --h5-link-ul-color: color-mix(in srgb, var(--text-title-h5) var(--hx-link-ul-transparency-pct), transparent);
+  --h6-link-ul-color: color-mix(in srgb, var(--text-title-h6) var(--hx-link-ul-transparency-pct), transparent);
+
+  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
+  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
+  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
+  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
+  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
+  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
+} 
+
+:root {
+  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
+  --font-monospace: JetBrains Mono, Liberation Mono, Monospace, Courier New;
+  --size-normal: 16px;
+  --size-code: 14.4px;
+}
+
+/* Fix highlighting in PDF */
+.pdf-container {
+  --text-selection: var(--r-pdf-highlight); /* Yes, this has no transparency -- it does still appear translucent in the PDF viewer. */
+}
+
+.markdown-source-view {
+  font-family: var(--editor-font);
+}
+
+.markdown-preview-view {
+  font-family: var(--default-font);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+}
+
+/* Graph View */
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb) !important;
+}
+.graph-view.color-text
+{
+    color: var(--text-a-hover) !important;
+}
+
+/* fix for graph view line colors */
+.graph-view.color-line {
+  color: var(--graph-view-line-color);
+}
+
+strong, .cm-strong, strong a, strong em a
+{
+    --font-weight: 700 !important;
+    font-weight: 700 !important;
+}
+
+/* List Indentations */
+ul {
+  padding-left: 15px;
+}
+
+ol {
+  padding-left: 15px;
+}
+
+/* Remove link underlines */
+.markdown-preview-view a.internal-link,
+.markdown-preview-view a.external-link,
+.cm-s-obsidian span.cm-hmd-internal-link
+{
+  text-decoration: none;
+}
+
+/* Fix for internal link appearing with underline in edit mode, hopefully doesn't break anything else */
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-decoration: none;
+}
+
+.markdown-source-view.mod-cm6 span.cm-url {
+  text-decoration: none;
+}
+
+/* Color Links */
+.markdown-preview-view a.internal-link,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  color: var(--text-a);
+  text-decoration: none;
+}
+
+.markdown-rendered mark .internal-link {
+  color: var(--text-a);
+}
+
+/* Fix issues with hovering generating underlines */
+a.internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.markdown-rendered .internal-link:hover,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+    color: var(--text-a-hover);
+    text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-url {
+  color: var(--text-link);
+}
+
+.markdown-preview-view a.external-link {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+.markdown-preview-view a.external-link:hover,
+.cm-s-obsidian span.cm-url:hover {
+  color: var(--text-link-hover);
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag) !important;
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+mark
+{
+  color: var(--text-normal);
+  background-color: var(--text-mark) !important;
+}
+
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.view-actions a
+{
+    color: var(--text-normal) !important;
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a) !important;
+}
+
+/* codeblock background */
+.HyperMD-codeblock-bg
+{
+    background-color: var(--default-codeblock) !important;
+}
+
+.HyperMD-codeblock
+{
+    line-height: 1.4em !important;
+}
+
+.HyperMD-codeblock-begin
+{
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock-end
+{
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+/* fix the background issue */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    border: 0;
+}
+
+/* fix the codeblock padding preview issue */
+.markdown-preview-view pre {
+    padding: 0px 0px;
+}
+
+/* uniform formatting for codeblocks in callouts */
+.markdown-rendered pre {
+  padding: var(--size-4-3) var(--size-4-4);
+}
+
+blockquote {
+  margin: 10px 0;
+  border-radius: 4px !important;
+}
+
+/* reduce margins of preview mode blockquote */
+.markdown-preview-view :is(blockquote) {
+  margin: 0 0;
+  margin-bottom: 0.25em;
+}
+
+/* fix large space at end within blockquote */
+.markdown-rendered blockquote > p {
+  margin-bottom: 0.25em !important;
+}
+
+
+
+/* changes dropdown color, somewhere in that url: color: deep-orange/h3/ed5b0f */
+.dropdown {
+  cursor: pointer;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ed5b0f%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+th
+{
+    font-weight: 600 !important;
+}
+
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+
+.HyperMD-table-row
+{
+    line-height: normal !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+table,
+.markdown-rendered table {
+  margin-top: 0px;
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--text-a) !important;
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a) !important;
+    background-color: var(--background-primary-alt) !important;
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.HyperMD-list-line
+{
+    padding-top: 0 !important;
+}
+
+.cm-hashtag
+{
+    color: var(--text-tag) !important;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em !important;
+    background-color: var(--pre-code) !important;
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px !important;
+    line-height: 1.4em !important;
+    /* display: block !important; */ /* caused issue #2 (see github) */
+    /*color: var(--code-block) !important;*/
+}
+
+/*
+.markdown-preview-section code
+{
+    color: var(--inline-code) !important;
+}*/
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto !important;
+}
+
+.cm-inline-code
+{
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    padding: 1px !important;
+    border-radius: 3px;
+}
+
+.admonition code,
+div.admonition-content-holder code {
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    border-radius: 2px;
+    font-family: var(--font-monospace);
+    font-size: var(--size-code);
+}
+
+div.admonition-title-markdown code {
+    font-family: var(--font-monospace);
+    border-radius: 4px;
+}
+
+code {
+  padding: 1px !important;
+  border-radius: 3px;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600 !important;
+}
+
+.side-dock-title
+{
+    padding-top: 15px !important;
+    font-size: 20px !important;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0 !important;
+}
+
+.cm-s-obsidian,
+.markdown-preview-view
+{
+    /* padding-left: 10px !important; */
+    padding-right: 10px !important;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+  padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+  font-weight: 600 !important;
+}
+
+.markdown-embed
+{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/* Header Settings */
+.cm-header-1,
+.cm-header-1 .cm-underline,
+.markdown-preview-section h1,
+.markdown-preview-section h1 code,
+h1 a
+{
+  font-weight: 500 !important;
+  /*font-size: 2.2em !important;*/
+  color: var(--text-title-h1) !important;
+}
+
+.cm-header-2,
+.cm-header-2 .cm-underline,
+.markdown-preview-section h2,
+.markdown-preview-section h2 code,
+h2 a
+{
+  font-weight: 500 !important;
+  color: var(--text-title-h2) !important;
+}
+
+.cm-header-3,
+.cm-header-3 .cm-underline,
+.markdown-preview-section h3,
+.markdown-preview-section h3 code,
+h3 a
+{
+  font-weight: 500 !important;
+  color: var(--text-title-h3) !important;
+}
+
+.cm-header-4,
+.cm-header-4 .cm-underline,
+.markdown-preview-section h4,
+.markdown-preview-section h4 code,
+h4 a
+{
+  font-weight: 500 !important;
+  color: var(--text-title-h4) !important;
+}
+
+.cm-header-5,
+.cm-header-5 .cm-underline,
+.markdown-preview-section h5,
+.markdown-preview-section h5 code,
+h5 a
+{
+  font-weight: 500 !important;
+  color: var(--text-title-h5) !important;
+}
+
+.cm-header-6,
+.cm-header-6 .cm-underline,
+.markdown-preview-section h6,
+.markdown-preview-section h6 code,
+h6 a
+{
+  font-weight: 500 !important;
+  color: var(--text-title-h6) !important;
+}
+
+.suggestion-item.is-selected
+{
+  background-color: var(--background-secondary);
+}
+
+.empty-state-action:hover
+{
+  color: var(--interactive-accent);
+}
+
+.empty-state-action:hover
+{
+  color: var(--interactive-accent);
+}
+
+.mod-cta
+{
+  color: var(--button-text-color) !important;
+  font-weight: 600 !important;
+}
+
+.mod-cta a
+{
+  color: var(--button-text-color) !important;
+  font-weight: 600 !important;
+}
+
+.mod-cta:hover
+{
+  background-color: var(--interactive-before) !important;
+  font-weight: 600 !important;
+}
+
+.CodeMirror-cursor
+{
+  background-color: var(--vim-cursor) !important;
+  opacity: 60% !important;
+}
+
+::selection
+{
+  background-color: var(--text-selection) !important;
+}
+
+.mermaid .note
+{
+  fill: var(--dark3) !important;
+}
+
+/* ccard font size fix for Folder Cards plugin, change text color and weight */
+.cute-card-view h1,
+.strip-card-view h1 {
+  font-size: 1.2rem !important;
+  font-weight: 550 !important;
+  margin: 0;
+  color: var(--text-card) !important;
+}
+
+/* ccard text coloring */
+.cute-card-view p,
+.strip-card-view p {
+  color: var(--gray) !important;
+}
+
+/* fix notes having scrollbar when they could just not */
+.markdown-embed-content {
+  max-height: var(--max-embed-height);
+}
+
+/* remove margins/some padding from embedded notes */
+.markdown-source-view .markdown-embed,
+.markdown-preview-view .markdown-embed {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.markdown-embed .markdown-preview-view {
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+}
+
+/* change border color of note embed */
+.markdown-source-view .markdown-embed {
+  border: 2px solid var(--dark0-soft);
+}
+
+/* increase tex size */
+.MJX-TEX {
+	font-size: 115%;
+}
+
+/* heading links */
+.cm-s-obsidian .HyperMD-header span.cm-underline,
+.cm-header .cm-underline {
+  /*text-decoration-line: underline;*/
+  /*background-image: linear-gradient(to right, var(--scorpion) 75%, transparent 75%);*/
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
+}
+
+.cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-1 .cm-underline:hover,
+.markdown-preview-section h1 a.internal-link:hover {
+  color: var(--h1-link-hover-color) !important;
+}
+
+.cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-2 .cm-underline:hover,
+.markdown-preview-section h2 a.internal-link:hover {
+  color: var(--h2-link-hover-color) !important;
+}
+
+.cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-3 .cm-underline:hover,
+.markdown-preview-section h3 a.internal-link:hover {
+  color: var(--h3-link-hover-color) !important;
+}
+
+.cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-4 .cm-underline:hover,
+.markdown-preview-section h4 a.internal-link:hover {
+  color: var(--h4-link-hover-color) !important;
+}
+
+.cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-5 .cm-underline:hover,
+.markdown-preview-section h5 a.internal-link:hover {
+  color: var(--h5-link-hover-color) !important;
+}
+
+.cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-6 .cm-underline:hover,
+.markdown-preview-section h6 a.internal-link:hover {
+  color: var(--h6-link-hover-color) !important;
+}
+
+.markdown-preview-section h1 a.internal-link,
+.markdown-preview-section h2 a.internal-link,
+.markdown-preview-section h3 a.internal-link,
+.markdown-preview-section h4 a.internal-link,
+.markdown-preview-section h5 a.internal-link,
+.markdown-preview-section h6 a.internal-link {
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
+  color: inherit !important;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
+}
+
+.markdown-preview-view h1, 
+.markdown-preview-view h2, 
+.markdown-preview-view h3, 
+.markdown-preview-view h4, 
+.markdown-preview-view h5, 
+.markdown-preview-view h6 {
+    margin: 0 0;
+    padding: 0px 2px 4px 4px;
+}
+
+
+/* admonition settings */
+
+/* make overflow visible */
+/* I determined that this makes the weird behavior with admonitions not closing fully.
+IIRC I initially implemented it to fix some weird behavior with bullet points,
+but that doesn't seem to be necessary now, so I'm disabling it but keeping it here just in case. */
+/*
+.admonition-content {
+    overflow-x: visible !important;
+}*/
+
+/* format links properly */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  text-decoration: none;
+}
+
+/* try to fix issue with external link icons being misaligned */
+.external-link {
+  background-position: center right !important;
+}
+
+/* format links in callout titles like header links */
+.admonition-title-markdown a.internal-link,
+.callout-title-inner a.internal-link,
+.admonition-title-markdown a.external-link,
+.callout-title-inner a.external-link {
+  text-decoration: none;
+  color: inherit !important;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
+  background-position: 0.5em 1.04em !important;
+  background-repeat: repeat-x;
+  background-size: 4px 2px;
+  --font-weight: var(--callout-title-weight) !important;
+  font-weight: var(--font-weight) !important;
+  padding-inline-end: 0px;
+}
+
+.admonition-title-markdown a.external-link,
+.callout-title-inner a.external-link {
+  text-decoration: none;
+  color: inherit !important;
+  background-image: 
+    url(public/images/874d8b8e340f75575caa.svg),
+    linear-gradient(
+      to right, 
+      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+    );
+  background-position:  center right, 0.5em 1.04em !important;
+  background-position-y: 3px, 1.04em !important;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 13px, 4px 2px;
+}
+
+.admonition-title-markdown a.internal-link:hover,
+.admonition-title-markdown a.external-link:hover,
+.callout-title-inner a.internal-link:hover,
+.callout-title-inner a.external-link:hover {
+  /* the two things below *should* work, but don't */
+  /* color: color-mix(in srgb, currentColor 75%, white) !important;   */
+  /* color: color-mix(in srgb, white 25%, var(--callout-color)) !important; */
+  filter: brightness(1.2);
+}
+
+.admonition-content a.internal-link,
+.admonition-content a.external-link,
+.callout-content a.internal-link,
+.callout-content a.external-link {
+  text-decoration: none;
+}
+
+/* fix for light theme callout title backgrounds */
+.callout {
+  background-color: color-mix(in srgb, #000000 var(--callout-bg-darken-pct), rgba(var(--callout-color), 0.1))
+}
+
+/* add space between adm/callout title and body in preview mode */
+.markdown-preview-view .callout-title {
+  margin-bottom: 0.3em;
+}
+
+
+/* format callout titles with a little more spacing */
+.callout-title {
+  gap: var(--size-2-3);
+}
+
+/* standardize space between callouts inside callouts */
+.callout-content .callout {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* remove collapse indicators inside preview callouts */
+.markdown-preview-view .collapse-indicator {
+  opacity: 0 !important;
+}
+
+/* margins for source view callouts (non-nested) */
+/* this specific selector prevents strange behavior with the hover outline including margins */
+/* the commented selector caused this behavior evidently */
+/*.markdown-source-view.mod-cm6 .callout*/
+.markdown-source-view.mod-cm6 .cm-embed-block {
+  /* using margins prevents the line above from being selectable due to codemirror hijinks */
+  /* must use padding instead, for live preview embed blocks specifically */
+  /* codeblock-style admonitions don't seem to be affected by this issue, */
+  /* and the margins for nested callouts ~15 lines above is not the same type of selector */
+  /* margin-top: 0.5em !important; */
+  /* margin-bottom: 0.5em !important; */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* fix position of callout edit button </> that appears on hover */
+.markdown-source-view.mod-cm6 .edit-block-button {
+  padding: var(--size-2-3) var(--size-2-3);
+  position: absolute;
+  top: var(--size-4-3);
+  right: var(--size-2-2);
+}
+
+/* fix for embed block hover excess padding */
+/* remove existing hover box shadow around top level of callout */
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: unset;
+}
+
+/* add same hover box shadow to sub-level of callout (below the padding added ~10 lines above) */
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget) > .markdown-rendered:hover {
+  box-shadow: var(--embed-block-shadow-hover);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  cursor: text;
+}
+/* end fix for embed block hover excess padding */
+
+/* fixes for admonition codeblocks */
+.markdown-source-view.mod-cm6 .cm-embed-block pre {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* fix mathjax formatting */
+.is-live-preview .admonition-content .math-block>mjx-container {
+  padding: 15px 0px 15px 0px !important;
+}
+
+/* fix header mathjax not colored when in header in live preview */
+.HyperMD-header-1 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h1)
+} 
+.HyperMD-header-2 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h2)
+} 
+.HyperMD-header-3 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h3)
+} 
+.HyperMD-header-4 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h4)
+} 
+.HyperMD-header-5 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h5)
+} 
+.HyperMD-header-6 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h6)
+} 
+
+/* Fixes embeds being like 2/3 length */
+.markdown-embed div.admonition-parent {
+  display: block !important;
+}
+
+/* new live preview indents fix */
+/*
+div.HyperMD-list-line span.cm-indent::before {
+  transform: translateX(1.5px);
+}
+
+div.HyperMD-task-line span.cm-indent::before,
+div.HyperMD-list-line-2 span.cm-indent::before,
+div.HyperMD-list-line-3 span.cm-indent::before,
+div.HyperMD-list-line-4 span.cm-indent::before,
+div.HyperMD-list-line-5 span.cm-indent::before,
+div.HyperMD-list-line-6 span.cm-indent::before {
+  transform: translateX(12.5px);
+}*/
+
+/* remove live preview indents since they seem broken */
+div.HyperMD-list-line span.cm-indent::before,
+div.HyperMD-task-line span.cm-indent::before,
+.markdown-source-view.mod-cm6 .cm-indent::before,
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  content: "";
+  border: none;
+}
+
+/*
+.cm-s-obsidian .HyperMD-task-line .collapse-icon :not(.cm-s-obsidian .HyperMD-task-line .is-collapsed .collapse-icon svg) {
+  transform: translateX(5px);
+}*/
+
+
+/* fix for annoying bright links when checked */
+li.task-list-item[data-task="x"] a.internal-link,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] span.cm-underline,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] span.cm-underline {
+  color: var(--code-orange);
+  text-decoration-color: var(--text-faint);
+}
+
+/* various list fixes for preview view/export */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul,
+.markdown-rendered ul, .markdown-rendered ol {
+  /*text-indent: 1em !important;*/
+  padding-inline-start: 0.5em; /* formerly 1.5em */
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
+  padding-left: 15px;
+}
+
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer p {
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
+  margin-bottom: 0;
+}
+
+/* remove embed title */
+.embed-title.markdown-embed-title {
+  color: transparent;
+  height: 0;
+  padding: 0;
+}
+
+/* fixes for strange embed padding */
+.markdown-source-view .markdown-embed, .markdown-preview-view .markdown-embed,
+.markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide.allow-fold-headings.allow-fold-lists {
+  /* padding-top: 5px; */
+  padding-top: 0 !important;
+  padding-right: 0px !important;
+  padding-inline-end: 0 !important;
+  scroll-padding-right: 0 !important;
+  padding-bottom: 1px !important;
+}
+
+.markdown-source-view .markdown-preview-sizer.markdown-preview-section {
+  margin-right: -7px;
+}
+
+.markdown-embed-link {
+  margin: 4px;
+}
+
+.markdown-embed-content.node-insert-event .callout {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
+}
+
+.markdown-preview-view .markdown-embed {
+  margin-right: -7px !important;
+}
+
+.markdown-preview-view .markdown-embed .markdown-embed-link {
+  margin-right: 12px;
+}
+
+/* end fixes for strange embed padding */
+
+/* remove blockquote-like border on embeds in preview mode */
+body {
+  --embed-border-left: none !important;
+}
+
+/* standardize callout icon width and center items */
+.callout-icon {
+  width: 20px;
+}
+
+.callout-icon svg {
+  margin: auto;
+}
+
+/* slightly reduce left side padding of callout to counter new icon width */
+/* default is var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6) */
+body {
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5);
+}
+
+/* adjust padding of task/checkbox lists inside callouts */
+.callout-content ul.contains-task-list {
+  padding-left: 0;
+  padding-top: var(--size-4-1);
+}
+
+/* remove trailing bottom margin on codeblock-type admonitions */
+.is-live-preview .admonition-content:last-child {
+  margin-bottom: 0;
+}
+
+/* fix code background color in callouts */
+body {
+  --code-background: var(--default-codeblock);
+  --callout-blend-mode: normal !important; /* for nested callouts */
+}
+
+/* fix for Obsidian 1.5 indent change */
+/* removes additional indent from checkbox, bullet point, and enumeration lines */
+
+.cm-formatting-list-ul,
+.cm-formatting-list-ol {
+  padding-inline-start: 0;
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  margin-inline-start: 0.25em;
+}
+
+[class*="HyperMD-list-line"] > .cm-fold-indicator {
+  position: absolute;
+  translate: -0.5em;
+}
+
+/* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
+/* this kind of visual fix isn't feasible for checkboxes */
+/* this fix is unnecessary for and does not affect ordered/numbered lists */
+.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 1px;
+  min-width: 1em;
+}
+/* end fixes for "editing unordered list bullet point causes 4px padding decrease" */
+
+/* reduce image border radius */
+body {
+  --img-border-radius: 2px !important;
+}
+
+/* fix alignment issue with source mode properties collapse indicator with banner */
+.has-banner > .cm-fold-indicator > .collapse-indicator {
+  margin-top: 7px;
+}

@@ -1,0 +1,1253 @@
+/* ---------------------------------------------------------------------------
+
+Radiance Modern Obsidian Theme - theme.css (inspired by Raycast).
+
+Sponsor my work:
+https://www.buymeacoffee.com/jabarid
+
+Readme:
+https://github.com/jabarid/obsidian-raycast
+
+-----------------------------------------------------------------------------
+
+ MIT License
+
+ Copyright (c) 2025 Payton Dennis (@jabarid)
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+*/
+
+/* -------------------------------------------------------------------------- */
+/*                                 VARIABLES                                  */
+/* -------------------------------------------------------------------------- */
+
+/* Light mode variables */
+:root {
+    /* -- Base Colors (Inspired by Raycast - Light Mode) -- */
+    --background-primary: #ffffff; /* Light background */
+    --background-secondary: #f8f9fa; /* Slightly darker background for elements */
+    --background-modifier-hover: #f1f3f4;
+    --background-modifier-active: #e8eaed;
+    --background-modifier-border: #dadce0; /* Borders */
+
+    --text-normal: #202124; /* Primary text color */
+    --text-muted: #5f6368; /* Secondary/less important text */
+    --accent-h: 353;
+    --accent-s: 65%;
+    --accent-l: 60%; /* Target: #d04255 - Increased lightness for dark mode */
+    --text-accent: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        var(--accent-l)
+    ); /* Raycast signature red/orange */
+    --text-accent-hover: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        48% /* Darker red for hover */
+    ); /* Target: darker #d04255 */
+    --text-accent-rgb:
+        208, 66, 85; /* RGB values for rgba usage, matches #d04255 */
+    --text-on-accent: #ffffff;
+    --text-selection: rgba(
+        208,
+        66,
+        85,
+        0.2
+    ); /* Accent color for text selection */
+
+    --interactive-accent: var(
+        --text-accent
+    ); /* Accent for interactive elements */
+    --interactive-accent-hover: var(--text-accent-hover);
+    --interactive-accent-rgb: var(--text-accent-rgb);
+
+    /* -- UI Elements -- */
+    --input-background: #ffffff;
+    --input-border-color: var(--background-modifier-border);
+    --input-text-color: var(--text-normal);
+    --input-focus-border-color: var(--text-accent);
+
+    /* -- Obsidian Specific CSS Variables -- */
+    --accent-color: var(--text-accent);
+    --accent-color-hover: var(--text-accent-hover);
+    --accent-color-rgb: var(--text-accent-rgb);
+    --color-accent: var(--text-accent);
+    --color-accent-hover: var(--text-accent-hover);
+    --color-accent-rgb: var(--text-accent-rgb);
+    --interactive-accent: var(--text-accent);
+    --interactive-accent-hover: var(--text-accent-hover);
+    --interactive-accent-rgb: var(--text-accent-rgb);
+
+    /* -- Fonts -- */
+    --font-family-sans:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    --font-family-monospace:
+        "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+    /* -- Sizing & Spacing -- */
+    --radius-s: 3px; /* Small radius */
+    --radius-m: 5px; /* Medium radius (common for Raycast elements) */
+    --radius-l: 8px; /* Large radius */
+
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    --spacing-l: 16px;
+    --spacing-xl: 24px;
+
+    /* -- Obsidian Specific CSS Variables -- */
+    --accent-color: var(--text-accent);
+    --accent-color-hover: var(--text-accent-hover);
+    --accent-color-rgb: var(--text-accent-rgb);
+    --color-accent: var(--text-accent);
+    --color-accent-hover: var(--text-accent-hover);
+    --color-accent-rgb: var(--text-accent-rgb);
+    --interactive-accent: var(--text-accent);
+    --interactive-accent-hover: var(--text-accent-hover);
+    --interactive-accent-rgb: var(--text-accent-rgb);
+
+    --titlebar-background-focused: var(--background-secondary);
+    --titlebar-background: var(--background-primary);
+    --sidebar-background: var(--background-primary);
+    --sidebar-border-color: var(--background-modifier-border);
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* -- Base Colors (Inspired by Raycast - Dark Mode) -- */
+        --background-primary: #1e1e1e; /* Dark background */
+        --background-secondary: #252525; /* Slightly lighter background for elements */
+        --background-modifier-hover: #2a2a2a;
+        --background-modifier-active: #303030;
+        --background-modifier-border: #383838; /* Borders */
+
+        --text-normal: #e0e0e0; /* Primary text color */
+        --text-muted: #a0a0a0; /* Secondary/less important text */
+        --accent-h: 353; /* Target: #d04255 */
+        --accent-s: 65%;
+        --accent-l: 60%; /* Target: #d04255 - Increased lightness for dark mode */
+        --text-accent: hsl(
+            var(--accent-h),
+            var(--accent-s),
+            var(--accent-l)
+        ); /* Raycast signature red/orange */
+        --text-accent-hover: hsl(
+            var(--accent-h),
+            var(--accent-s),
+            48% /* Darker red for hover */
+        ); /* Target: darker #d04255 */
+        --text-accent-rgb:
+            208, 66, 85; /* RGB values for rgba usage, matches #d04255 */
+        --text-on-accent: #ffffff;
+        --text-selection: rgba(
+            208,
+            66,
+            85,
+            0.3
+        ); /* Accent color for text selection */
+
+        --interactive-accent: var(
+            --text-accent
+        ); /* Accent for interactive elements */
+        --interactive-accent-hover: var(--text-accent-hover);
+        --interactive-accent-rgb: var(--text-accent-rgb);
+
+        /* -- UI Elements -- */
+        --input-background: #2d2d2d;
+        --input-border-color: var(--background-modifier-border);
+        --input-text-color: var(--text-normal);
+        --input-focus-border-color: var(--text-accent);
+
+        /* -- Obsidian Specific CSS Variables -- */
+        --accent-color: var(--text-accent);
+        --accent-color-hover: var(--text-accent-hover);
+        --accent-color-rgb: var(--text-accent-rgb);
+        --color-accent: var(--text-accent);
+        --color-accent-hover: var(--text-accent-hover);
+        --color-accent-rgb: var(--text-accent-rgb);
+        --interactive-accent-rgb: var(--text-accent-rgb);
+
+        --titlebar-background-focused: var(--background-secondary);
+        --titlebar-background: var(--background-primary);
+        --sidebar-background: var(--background-primary);
+        --sidebar-border-color: var(--background-modifier-border);
+    }
+}
+
+/* Force dark mode when body has theme-dark class */
+body.theme-dark {
+    /* -- Base Colors (Inspired by Raycast - Dark Mode) -- */
+    --background-primary: #1e1e1e; /* Dark background */
+    --background-secondary: #252525; /* Slightly lighter background for elements */
+    --background-modifier-hover: #2a2a2a;
+    --background-modifier-active: #303030;
+    --background-modifier-border: #383838; /* Borders */
+
+    --text-normal: #e0e0e0; /* Primary text color */
+    --text-muted: #a0a0a0; /* Secondary/less important text */
+    --accent-h: 353; /* Target: #d04255 */
+    --accent-s: 65%;
+    --accent-l: 54%; /* Target: #d04255 */
+    --text-accent: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        var(--accent-l)
+    ); /* Raycast signature red/orange */
+    --text-accent-hover: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        48% /* Darker red for hover */
+    ); /* Target: darker #d04255 */
+    --text-accent-rgb:
+        208, 66, 85; /* RGB values for rgba usage, matches #d04255 */
+    --text-on-accent: #ffffff;
+    --text-selection: rgba(
+        208,
+        66,
+        85,
+        0.3
+    ); /* Accent color for text selection */
+
+    --interactive-accent: var(
+        --text-accent
+    ); /* Accent for interactive elements */
+    --interactive-accent-hover: var(--text-accent-hover);
+
+    /* -- UI Elements -- */
+    --input-background: #2d2d2d;
+    --input-border-color: var(--background-modifier-border);
+    --input-text-color: var(--text-normal);
+    --input-focus-border-color: var(--text-accent);
+
+    /* -- Fonts -- */
+    --font-family-sans:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    --font-family-monospace:
+        "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+    /* -- Sizing & Spacing -- */
+    --radius-s: 3px; /* Small radius */
+    --radius-m: 5px; /* Medium radius (common for Raycast elements) */
+    --radius-l: 8px; /* Large radius */
+
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    --spacing-l: 16px;
+    --spacing-xl: 24px;
+
+    /* -- Obsidian Specific CSS Variables -- */
+    --accent-color: var(--text-accent);
+    --accent-color-hover: var(--text-accent-hover);
+    --accent-color-rgb: var(--text-accent-rgb);
+    --color-accent: var(--text-accent);
+    --color-accent-hover: var(--text-accent-hover);
+    --color-accent-rgb: var(--text-accent-rgb);
+    --interactive-accent: var(--text-accent);
+    --interactive-accent-hover: var(--text-accent-hover);
+    --interactive-accent-rgb: var(--text-accent-rgb);
+
+    --titlebar-background-focused: var(--background-secondary);
+    --titlebar-background: var(--background-primary);
+    --sidebar-background: var(--background-primary);
+    --sidebar-border-color: var(--background-modifier-border);
+}
+
+body.theme-light {
+    /* -- Base Colors (Inspired by Raycast - Light Mode) -- */
+    --background-primary: #ffffff; /* Light background */
+    --background-secondary: #f8f9fa; /* Slightly darker background for elements */
+    --background-modifier-hover: #f1f3f4;
+    --background-modifier-active: #e8eaed;
+    --background-modifier-border: #dadce0; /* Borders */
+
+    --text-normal: #202124; /* Primary text color */
+    --text-muted: #5f6368; /* Secondary/less important text */
+    --accent-h: 353;
+    --accent-s: 65%;
+    --accent-l: 60%; /* Target: #d04255 - Increased lightness for dark mode */
+    --text-accent: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        var(--accent-l)
+    ); /* Raycast signature red/orange */
+    --text-accent-hover: hsl(
+        var(--accent-h),
+        var(--accent-s),
+        48% /* Darker red for hover */
+    ); /* Target: darker #d04255 */
+    --text-accent-rgb:
+        208, 66, 85; /* RGB values for rgba usage, matches #d04255 */
+    --text-on-accent: #ffffff;
+    --text-selection: rgba(
+        208,
+        66,
+        85,
+        0.2
+    ); /* Accent color for text selection */
+
+    --interactive-accent: var(
+        --text-accent
+    ); /* Accent for interactive elements */
+    --interactive-accent-hover: var(--text-accent-hover);
+
+    /* -- UI Elements -- */
+    --input-background: #ffffff;
+    --input-border-color: var(--background-modifier-border);
+    --input-text-color: var(--text-normal);
+    --input-focus-border-color: var(--text-accent);
+
+    /* -- Obsidian Specific CSS Variables -- */
+    --accent-color: var(--text-accent);
+    --accent-color-hover: var(--text-accent-hover);
+    --accent-color-rgb: var(--text-accent-rgb);
+    --color-accent: var(--text-accent);
+    --color-accent-hover: var(--text-accent-hover);
+    --color-accent-rgb: var(--text-accent-rgb);
+    --interactive-accent: var(--text-accent);
+    --interactive-accent-hover: var(--text-accent-hover);
+    --interactive-accent-rgb: var(--text-accent-rgb);
+
+    /* -- Fonts -- */
+    --font-family-sans:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    --font-family-monospace:
+        "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+    /* -- Sizing & Spacing -- */
+    --radius-s: 3px; /* Small radius */
+    --radius-m: 5px; /* Medium radius (common for Raycast elements) */
+    --radius-l: 8px; /* Large radius */
+
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    --spacing-l: 16px;
+    --spacing-xl: 24px;
+
+    /* -- Obsidian Specific -- */
+    --titlebar-background-focused: var(--background-secondary);
+    --titlebar-background: var(--background-primary);
+    --sidebar-background: var(--background-primary);
+    --sidebar-border-color: var(--background-modifier-border);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                BASE STYLES                                 */
+/* -------------------------------------------------------------------------- */
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    font-family: var(--font-family-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a,
+.cm-link,
+.markdown-preview-view .internal-link {
+    color: var(--text-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:hover,
+.cm-link:hover,
+.markdown-preview-view .internal-link:hover {
+    color: var(--text-accent-hover);
+    text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cm-header {
+    color: var(--text-normal);
+    font-weight: 600;
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-s);
+}
+h1,
+.cm-header-1 {
+    font-size: 1.8em;
+}
+h2,
+.cm-header-2 {
+    font-size: 1.5em;
+}
+h3,
+.cm-header-3 {
+    font-size: 1.3em;
+}
+
+/* Code Blocks & Inline Code */
+pre,
+code,
+.cm-s-obsidian span.cm-inline-code {
+    font-family: var(--font-family-monospace);
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-s);
+    padding: 0.1em 0.3em;
+}
+pre {
+    padding: var(--spacing-s) var(--spacing-m);
+    overflow-x: auto;
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 3px solid var(--text-accent);
+    padding-left: var(--spacing-m);
+    margin-left: 0;
+    color: var(--text-muted);
+}
+
+/* Selection */
+::selection {
+    background-color: var(--text-selection);
+    color: var(--text-normal);
+}
+.workspace .cm-s-obsidian .CodeMirror-selectedtext {
+    background-color: var(--text-selection);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 UI ELEMENTS                                */
+/* -------------------------------------------------------------------------- */
+
+/* Buttons */
+button,
+.clickable-icon,
+.nav-action-button {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    padding: var(--spacing-m) var(--spacing-l); /* Increased padding for better text spacing */
+    border-radius: var(--radius-m);
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+    font-family: var(--font-family-sans);
+    font-size: 14px; /* Ensure consistent font size */
+    line-height: 1.4; /* Better line height for text */
+    min-height: 36px; /* Minimum height to prevent cutoff */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover,
+.clickable-icon:hover,
+.nav-action-button:hover {
+    background-color: var(--background-modifier-hover);
+    border-color: var(--text-accent);
+}
+button:active,
+.clickable-icon:active,
+.nav-action-button:active {
+    background-color: var(--background-modifier-active);
+}
+button.mod-cta,
+.button.mod-cta {
+    /* Call to action button */
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+button.mod-cta:hover,
+.button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+    border-color: var(--interactive-accent-hover);
+}
+
+/* Inputs & Textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+textarea,
+.dropdown {
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    border: 1px solid var(--input-border-color);
+    padding: var(--spacing-s) var(--spacing-m); /* Increased horizontal padding */
+    border-radius: var(--radius-m);
+    font-family: var(--font-family-sans);
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Fix dropdown spacing to prevent text overlap with arrow */
+select,
+.dropdown,
+.setting-item-control select,
+.setting-item-control .dropdown {
+    padding-right: calc(var(--spacing-l) + 16px); /* Extra right padding for dropdown arrow */
+    padding-top: 2px; /* Small vertical padding to prevent text cutoff */
+    padding-bottom: 2px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+.dropdown:focus-within {
+    /* For dropdowns that contain an input */
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 0 2px rgba(var(--text-accent-rgb), 0.3); /* Use RGB if --text-accent is hex */
+    outline: none;
+}
+/* Placeholder text */
+::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+/* Scrollbars (Webkit - for Chrome/Safari/Edge) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--background-primary);
+    border-radius: var(--radius-l);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-border);
+    border-radius: var(--radius-l);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         OBSIDIAN SPECIFIC STYLING                          */
+/* -------------------------------------------------------------------------- */
+
+/* --- Workspace & Layout --- */
+.workspace {
+    background-color: var(
+        --background-primary
+    ); /* Ensures main workspace matches */
+}
+
+.workspace-split.mod-root > .workspace-leaf,
+.workspace-tabs {
+    background-color: var(--background-primary);
+}
+
+.workspace-leaf-content {
+    background-color: var(--background-primary); /* Content area of a pane */
+}
+
+/* --- Title Bar --- */
+.titlebar {
+    background-color: var(--titlebar-background);
+    border-bottom: 1px solid var(--sidebar-border-color); /* Consistent border */
+    height: 40px; /* Adjust as needed */
+    padding: var(--spacing-xs) var(--spacing-m); /* Increased padding for better spacing */
+}
+.titlebar-inner {
+    color: var(--text-muted);
+}
+.titlebar-button {
+    color: var(--text-muted);
+}
+.titlebar-button:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+.titlebar.is-focused {
+    background-color: var(--titlebar-background-focused);
+}
+.titlebar-text {
+    color: var(--text-normal);
+}
+
+/* --- Sidebars (Left & Right) --- */
+.mod-left-split,
+.mod-right-split {
+    background-color: var(--sidebar-background);
+    border-right: 1px solid var(--sidebar-border-color); /* For left sidebar */
+}
+.mod-right-split {
+    border-left: 1px solid var(--sidebar-border-color); /* For right sidebar */
+    border-right: none;
+}
+/* --- Left Sidebar Ribbon --- */
+.workspace-ribbon.mod-left {
+    padding-top: var(--spacing-m); /* Add padding to the top of the ribbon */
+    padding-bottom: var(
+        --spacing-m
+    ); /* Add padding to the bottom of the ribbon */
+}
+/* Adjust padding for icon buttons within the left ribbon for better fit */
+.workspace-ribbon.mod-left .clickable-icon {
+    padding: var(--spacing-m) var(--spacing-s); /* 12px top/bottom, 8px left/right */
+}
+
+/* Fix for squished side-dock-actions buttons in the workspace-ribbon side-dock-ribbon */
+body .workspace .workspace-ribbon.side-dock-ribbon {
+    padding: var(--spacing-xs);
+}
+
+body .workspace .side-dock-actions {
+    margin: 0 var(--spacing-xs);
+}
+
+body .workspace .side-dock-actions .side-dock-ribbon-action {
+    margin: var(--spacing-xs) 0;
+    padding: var(--spacing-xs);
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .workspace .side-dock-actions .side-dock-ribbon-action svg {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-header {
+    padding: var(--spacing-m) var(--spacing-m) var(--spacing-s);
+    border-bottom: 1px solid var(--sidebar-border-color);
+}
+
+.nav-file-title,
+.nav-folder-title {
+    padding: var(--spacing-xs) var(--spacing-m);
+    border-radius: var(--radius-s);
+    transition: background-color 0.1s ease;
+}
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--background-modifier-hover);
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    background-color: var(--background-modifier-active);
+    color: var(--text-accent);
+}
+.nav-action-button {
+    margin-left: var(--spacing-xs);
+}
+
+/* --- Editor View (Reading & Source Mode) --- */
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-preview-view {
+    padding: var(--spacing-l) var(--spacing-xl);
+}
+
+.cm-editor {
+    /* CodeMirror 6 editor general styling */
+    font-family: var(
+        --font-family-sans
+    ); /* Or --font-family-monospace if preferred for editor */
+}
+.cm-gutters {
+    background-color: var(--background-primary);
+    border-right: 1px solid var(--background-modifier-border);
+    color: var(--text-muted);
+}
+.cm-lineNumbers .cm-gutterElement {
+    padding: 0 var(--spacing-s);
+}
+
+/* --- Status Bar --- */
+.status-bar {
+    background-color: var(--background-primary);
+    border-top: 1px solid var(--sidebar-border-color);
+    color: var(--text-muted);
+    padding: var(--spacing-xs) var(--spacing-m);
+}
+.status-bar-item:hover {
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--radius-s);
+}
+
+/* --- Modals --- */
+.modal {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-l);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--background-modifier-border);
+}
+.modal-title {
+    color: var(--text-normal);
+    font-size: 1.2em;
+    padding: var(--spacing-m);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+.modal-content {
+    padding: var(--spacing-m);
+}
+.modal-button-container {
+    padding: var(--spacing-m);
+    border-top: 1px solid var(--background-modifier-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-s);
+}
+
+/* --- Command Palette / Quick Switcher (Raycast-inspired) --- */
+.prompt {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-l);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--background-modifier-border);
+    overflow: hidden;
+}
+.prompt-input {
+    background-color: var(--input-background);
+    border: none;
+    border-bottom: 1px solid var(--background-modifier-border);
+    color: var(--input-text-color);
+    padding: var(--spacing-l); /* More padding for a command-bar feel */
+    border-radius: 0;
+    font-size: 1.1em; /* Larger font */
+    font-weight: 500;
+}
+.prompt-input:focus {
+    border-bottom-color: var(--text-accent);
+    box-shadow: none;
+    outline: none;
+}
+.suggestion-item {
+    padding: var(--spacing-m) var(--spacing-l);
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.suggestion-item:hover,
+.suggestion-item.is-selected {
+    background-color: var(--text-accent);
+    color: var(--text-on-accent);
+}
+.suggestion-item:hover .suggestion-hotkey,
+.suggestion-item.is-selected .suggestion-hotkey {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-on-accent);
+}
+.suggestion-hotkey {
+    color: var(--text-muted);
+    background-color: var(--background-modifier-hover);
+    padding: 4px 8px;
+    border-radius: var(--radius-s);
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* --- Tabs --- */
+/* Fix for tab list being covered by right sidebar toggle */
+.workspace-tab-header-tab-list {
+    padding-right: 32px;
+}
+
+.workspace-tab-header {
+    padding: var(--spacing-s) var(--spacing-m);
+    border-bottom: 2px solid transparent; /* For active state */
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+.workspace-tab-header.is-active {
+    color: var(--text-accent);
+    border-bottom-color: var(--text-accent);
+}
+.workspace-tab-header:hover {
+    color: var(--text-accent-hover);
+}
+.workspace-tab-header-inner-title {
+    color: var(--text-normal); /* Ensure title itself is styled */
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--text-accent); /* Active tab title color */
+}
+
+/* --- Property Tags / Pills & Content Tags (Making them Red) --- */
+body .workspace .metadata-property-value .multi-select-pill, /* For new properties view tags */
+body .workspace .metadata-property[data-key="tags"] .multi-select-pill, /* More specific for 'tags' property */
+body .workspace .metadata-container .multi-select-pill, /* For older metadata display if still relevant */
+body .workspace .tag /* General class for tags, often used in preview */ {
+    background-color: rgba(
+        var(--text-accent-rgb),
+        0.15
+    ); /* Light red background */
+    color: var(--text-accent); /* Red text */
+    border: 1px solid rgba(var(--text-accent-rgb), 0.4); /* Slightly more visible red border */
+    padding: 3px 8px;
+    border-radius: var(--radius-m);
+    font-size: 0.9em;
+    margin: 2px 4px 2px 0;
+    line-height: 1.4;
+    display: inline-flex; /* Use flex for better alignment of content within pill */
+    align-items: center;
+    font-weight: 500; /* Slightly bolder text for tags */
+}
+
+/* Reset and redefine tag styling for editor mode */
+body .workspace .cm-s-obsidian .cm-hashtag-begin,
+body .workspace .cm-s-obsidian .cm-hashtag-end {
+    /* Remove all default styling */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    border-radius: 0;
+    color: var(--text-accent);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Create a visual container for the tag */
+body .workspace .cm-s-obsidian .cm-hashtag-begin {
+    padding-left: 8px;
+    padding-right: 0;
+    border-top-left-radius: var(--radius-m);
+    border-bottom-left-radius: var(--radius-m);
+    background-color: rgba(var(--text-accent-rgb), 0.15);
+    border-top: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    border-bottom: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    border-left: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    margin-right: 0;
+}
+
+body .workspace .cm-s-obsidian .cm-hashtag-end {
+    padding-left: 0;
+    padding-right: 8px;
+    border-top-right-radius: var(--radius-m);
+    border-bottom-right-radius: var(--radius-m);
+    background-color: rgba(var(--text-accent-rgb), 0.15);
+    border-top: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    border-bottom: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    border-right: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    margin-left: 0;
+}
+
+/* Critical: Hover effects for both elements */
+/* When hashtag-begin is hovered, style both begin and the adjacent end */
+body .workspace .cm-s-obsidian .cm-hashtag-begin:hover,
+body .workspace .cm-s-obsidian .cm-hashtag-begin:hover + .cm-hashtag-end,
+body .workspace .cm-s-obsidian .cm-hashtag-end:hover,
+body .workspace .cm-s-obsidian .cm-hashtag-end:hover ~ .cm-hashtag-begin,
+body .workspace .cm-s-obsidian span[class*="cm-hashtag"]:hover {
+    color: var(--text-accent-hover);
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+}
+
+/* Additional selectors to catch all possible DOM structures */
+body .workspace .cm-s-obsidian .cm-line:has(.cm-hashtag-begin:hover) .cm-hashtag-end,
+body .workspace .cm-s-obsidian .cm-line:has(.cm-hashtag-end:hover) .cm-hashtag-begin {
+    color: var(--text-accent-hover);
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+}
+
+body .workspace .metadata-property-value .multi-select-pill:hover,
+body .workspace .metadata-property[data-key="tags"] .multi-select-pill:hover,
+body .workspace .metadata-container .multi-select-pill:hover,
+body .workspace .tag:hover {
+    background-color: rgba(var(--text-accent-rgb), 0.25); /* Darker on hover */
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+    color: var(--text-accent-hover); /* Use hover color for text too */
+}
+
+/* JavaScript-like approach for editor mode */
+body .workspace .cm-s-obsidian .cm-line {
+    --tag-hovered: 0;
+}
+
+body .workspace .cm-s-obsidian .cm-line:has(.cm-hashtag-begin:hover),
+body .workspace .cm-s-obsidian .cm-line:has(.cm-hashtag-end:hover) {
+    --tag-hovered: 1;
+}
+
+body .workspace .cm-s-obsidian .cm-line[style*="--tag-hovered: 1"] .cm-hashtag-begin,
+body .workspace .cm-s-obsidian .cm-line[style*="--tag-hovered: 1"] .cm-hashtag-end {
+    color: var(--text-accent-hover);
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+}
+
+/* Fix for preview mode tags */
+body .workspace .markdown-preview-view a.tag {
+    display: inline-block;
+    background-color: rgba(var(--text-accent-rgb), 0.15);
+    color: var(--text-accent);
+    border: 1px solid rgba(var(--text-accent-rgb), 0.4);
+    padding: 3px 8px;
+    border-radius: var(--radius-m);
+    font-size: 0.9em;
+    margin: 2px 4px 2px 0;
+    line-height: 1.4;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+body .workspace .markdown-preview-view a.tag:hover {
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+    color: var(--text-accent-hover);
+    text-decoration: none;
+}
+
+/* Additional fallback approach using attribute selectors */
+body .workspace .cm-s-obsidian [class*="cm-hashtag"]:hover,
+body .workspace .cm-s-obsidian .cm-line:has([class*="cm-hashtag"]:hover) [class*="cm-hashtag"] {
+    color: var(--text-accent-hover);
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+}
+
+/* Increase specificity for tag hover states without using !important */
+body.theme-dark .workspace .cm-s-obsidian .cm-hashtag-begin:hover,
+body.theme-dark .workspace .cm-s-obsidian .cm-hashtag-begin:hover + .cm-hashtag-end,
+body.theme-dark .workspace .cm-s-obsidian .cm-hashtag-end:hover,
+body.theme-dark .workspace .cm-s-obsidian .cm-hashtag-end:hover ~ .cm-hashtag-begin,
+body.theme-light .workspace .cm-s-obsidian .cm-hashtag-begin:hover,
+body.theme-light .workspace .cm-s-obsidian .cm-hashtag-begin:hover + .cm-hashtag-end,
+body.theme-light .workspace .cm-s-obsidian .cm-hashtag-end:hover,
+body.theme-light .workspace .cm-s-obsidian .cm-hashtag-end:hover ~ .cm-hashtag-begin {
+    color: var(--text-accent-hover);
+    background-color: rgba(var(--text-accent-rgb), 0.25);
+    border-color: rgba(var(--text-accent-rgb), 0.6);
+}
+
+/* Ensure the 'x' button inside the multi-select pill also aligns with the theme */
+body .workspace .multi-select-pill .multi-select-pill-remove-button svg {
+    stroke: var(--text-accent);
+    fill: var(--text-accent); /* Sometimes fill is used */
+    opacity: 0.7;
+}
+body .workspace .multi-select-pill:hover .multi-select-pill-remove-button svg {
+    stroke: var(--text-accent-hover);
+    fill: var(--text-accent-hover);
+    opacity: 1;
+}
+
+/* If some tags are just text (not pills) and are purple, ensure their color is red */
+/* This might be redundant if they are already covered by general link styling, but added for safety */
+body .workspace .markdown-preview-view a.tag[href^="#"],
+body .workspace .cm-s-obsidian span.cm-tag {
+    /* Another possible class for tags in editor */
+    color: var(--text-accent);
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-weight: normal; /* Reset font-weight if not a pill */
+}
+body .workspace .markdown-preview-view a.tag[href^="#"]:hover,
+body .workspace .cm-s-obsidian span.cm-tag:hover {
+    color: var(--text-accent-hover);
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------------------- */
+/*                         STYLE SETTINGS PLUGIN SUPPORT                      */
+/* -------------------------------------------------------------------------- */
+/*
+  If you plan to use the Style Settings plugin, you'll want to ensure
+  your variables are easily configurable. The plugin primarily works by
+  allowing users to override the CSS variables you've defined in :root.
+
+  Example: (No extra CSS needed here, just make sure variables are well-named)
+  --theme-accent-color: var(--text-accent);
+  --theme-font-ui: var(--font-family-sans);
+*/
+
+/* -------------------------------------------------------------------------- */
+/*                                  PLACEHOLDERS                              */
+/* -------------------------------------------------------------------------- */
+
+/* --- Settings Menu --- */
+/* .settings-modal { ... } */
+/* .settings-tab-bar { ... } */
+/* .settings-tab { ... } */
+
+/* --- Plugin Specific Styling --- */
+/* .my-plugin-class { ... } */
+
+/* --- Active Line Highlighting in Editor --- */
+.cm-activeLine {
+    background-color: var(--background-modifier-hover);
+}
+
+/* --- Search Panel --- */
+.search-result-file-title {
+    color: var(--text-accent);
+    font-weight: 600;
+}
+.search-result-file-match {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-s);
+    padding: var(--spacing-xs) var(--spacing-s);
+    margin: var(--spacing-xs) 0;
+}
+.search-result-file-match:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+/* --- Settings Modal --- */
+.modal.mod-settings {
+    max-width: 900px;
+    width: 90vw;
+}
+.setting-item {
+    padding: var(--spacing-m) 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+.setting-item:last-child {
+    border-bottom: none;
+}
+.setting-item-name {
+    font-weight: 600;
+    color: var(--text-normal);
+    margin-bottom: var(--spacing-xs);
+}
+.setting-item-description {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+/* --- Settings Modal Accent Colors --- */
+/* Active tab in settings sidebar */
+body .modal.mod-settings .vertical-tab-nav-item.is-active {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+body .modal.mod-settings .vertical-tab-nav-item.is-active:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Call-to-action buttons in settings */
+body .modal.mod-settings .setting-item-control button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+body .modal.mod-settings .setting-item-control button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+    border-color: var(--interactive-accent-hover);
+}
+
+/* Styling for the accent color picker itself in settings */
+/* This targets the color swatch next to "Accent color" */
+body .modal.mod-settings .setting-item-control input[type="color"] {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    width: 28px; /* Adjust size as needed */
+    height: 28px;
+    padding: 0; /* Remove default padding */
+    cursor: pointer;
+}
+/* Attempt to make the color picker's visible color reflect the theme's accent */
+/* Note: Direct styling of the color picker's internal display is limited by browsers.
+   Obsidian might use a custom component. If this doesn't work, more specific selectors
+   or JavaScript might be needed, which is beyond pure CSS theming for this part.
+   However, we can ensure its border and focus states are themed. */
+body
+    .modal.mod-settings
+    .setting-item-control
+    input[type="color"]:focus-visible {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 1px;
+}
+
+/* Toggles/Switches in settings */
+.modal.mod-settings .checkbox-container {
+    /* This is often used for toggles */
+    --checkbox-color: var(
+        --interactive-accent
+    ); /* Use accent for the toggle background when on */
+    --checkbox-color-hover: var(--interactive-accent-hover);
+    --checkbox-border-color: var(--input-border-color);
+    --checkbox-border-color-hover: var(--text-accent);
+}
+body
+    .modal.mod-settings
+    .checkbox-container
+    input[type="checkbox"]:checked
+    + .checkbox-bg {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+body
+    .modal.mod-settings
+    .checkbox-container:hover
+    input[type="checkbox"]:checked
+    + .checkbox-bg {
+    background-color: var(--interactive-accent-hover);
+    border-color: var(--interactive-accent-hover);
+}
+body
+    .modal.mod-settings
+    .checkbox-container
+    input[type="checkbox"]
+    + .checkbox-bg {
+    /* Unchecked state */
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border-color);
+}
+body
+    .modal.mod-settings
+    .checkbox-container:hover
+    input[type="checkbox"]
+    + .checkbox-bg {
+    border-color: var(--text-accent);
+}
+
+/* --- Improved Focus States --- */
+button:focus-visible,
+.clickable-icon:focus-visible,
+.nav-action-button:focus-visible {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+}
+
+/* --- Better Hover Transitions --- */
+.nav-file-title,
+.nav-folder-title,
+.workspace-tab-header,
+.suggestion-item {
+    transition: all 0.15s ease;
+}
+
+/* --- Workspace Header Toggle Buttons --- */
+.workspace .side-dock-actions {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Fix vertical alignment of sidebar toggle buttons */
+.workspace .side-bar-toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 var(--spacing-s);
+    margin: 0;
+    position: relative;
+    top: 0; /* Reset any top positioning */
+    transform: translateY(0); /* Ensure no vertical transform is applied */
+}
+
+/* Ensure the icon inside the button is centered */
+.workspace .side-bar-toggle-button svg {
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* --- Checkboxes --- */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border-color);
+    width: 18px;
+    height: 18px;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    position: relative;
+    margin-right: var(--spacing-xs);
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+input[type="checkbox"]:checked::before {
+    content: "✔"; /* Basic checkmark, consider SVG for better quality */
+    color: var(--text-on-accent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    line-height: 1;
+}
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 2px rgba(var(--text-accent-rgb), 0.3); /* Use RGB for accent */
+}
+
+/* --- Task lists in markdown --- */
+.markdown-preview-view .task-list-item-checkbox,
+ul.contains-task-list .task-list-item-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border-color);
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    position: relative;
+    margin-right: var(--spacing-xs);
+    vertical-align: middle; /* Align with text */
+    top: -2px; /* Minor adjustment */
+}
+.markdown-preview-view .task-list-item-checkbox:checked,
+ul.contains-task-list .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+.markdown-preview-view .task-list-item-checkbox:checked::before,
+ul.contains-task-list .task-list-item-checkbox:checked::before {
+    content: "✔";
+    color: var(--text-on-accent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px; /* Smaller for inline tasks */
+    line-height: 1;
+}
+/* Strikethrough completed tasks */
+.markdown-preview-view .task-list-item.is-checked,
+ul.contains-task-list > li.is-checked {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}

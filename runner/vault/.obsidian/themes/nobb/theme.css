@@ -1,0 +1,241 @@
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+	--nobb-color: rgb(250, 81, 81);
+	--title-border-bottom: 2px solid var(--nobb-color);
+	--fluro-red-rgb: 255, 0, 0
+	--fluro-yellow-rgb: 255, 255, 0;
+	--fluro-pink-rgb: 255, 0, 255;
+	--fluro-purple-rgb: 200, 0, 255;
+	--fluro-coral-rgb: 240, 128, 128;
+	--fluro-blue-rgb: 0, 255, 255;
+	--fluro-green-rgb: 0, 255, 0;
+	--text-highlight-rgb: var(--fluro-yellow-rgb);
+	--blockquote-border-color: var(--nobb-color);
+	--blockquote-border-thickness: 0.15em;
+	--h3-weight: 500;
+	--code-background: #000000;
+	--text-normal: #bbbbbb;
+	--h2-color: #fff;
+	--h3-color: #fff;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+kbd {
+	display: inline-block;
+	background-color: #333338;
+	color: #E3E3EC;
+	border: 1px solid #E3E3EC;
+	border-radius: 3px;
+	padding: 0 .5rem;
+	font-weight: bold;
+	box-shadow: 0 4px 0 0 #E3E3EC;
+}
+/* ---高亮---- */
+mark.yellow {
+	--text-highlight-rgb: var(--fluro-yellow-rgb);
+  }
+  mark.purple {
+	--text-highlight-rgb: var(--fluro-purple-rgb);
+  }
+  mark.blue {
+	--text-highlight-rgb: var(--fluro-blue-rgb);
+  }
+  mark.green {
+	--text-highlight-rgb: var(--fluro-green-rgb);
+  }
+  mark.coral {
+	--text-highlight-rgb: var(--fluro-coral-rgb);
+  }
+  mark.pink {
+	--text-highlight-rgb: var(--fluro-pink-rgb);
+  }
+  
+  mark,
+  .markdown-preview-view mark,
+  .cm-s-obsidian span.cm-highlight {
+	color: inherit;
+	margin: 0 -0.4em;
+	padding: 0.1em 0.4em;
+	border-radius: 0.8em 0.3em;
+	background: transparent;
+	background-image: linear-gradient(
+	  105deg,
+	  transparent 0,
+	  transparent 0.3em,
+	  rgba(var(--text-highlight-rgb), 0.7) 0.5em,
+	  rgba(var(--text-highlight-rgb), 0.4) 1.6em,
+	  rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
+	  rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
+	  transparent calc(100% - 0.3em),
+	  transparent 100%
+	);
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	text-shadow: 0 0 0.75em var(--background-primary-alt);
+  }
+  
+  .cm-s-obsidian span.cm-formatting-highlight {
+	background-image: none;
+  }
+  .cm-s-obsidian .cm-highlight + span.cm-formatting-highlight {
+	background-image: none;
+  }
+/* ---高亮---- */
+
+
+/* ---H2下划线样式---- */
+div:has(> h2 > span) {
+	display: block;
+	text-align: center;
+	margin: 4rem auto 2rem;
+}
+
+h2 {
+	display: inline-block;
+	padding: 0px 0.5em;
+	border-bottom: var(--title-border-bottom);
+	
+}
+h2, .markdown-rendered h2, .HyperMD-header-2 {
+	letter-spacing: 0.015em;
+}
+
+.HyperMD-header-2 {
+	text-align: center;
+}
+
+span.cm-header-2 {
+	/* padding: 0px 1em; */
+	border-bottom: var(--title-border-bottom);
+}
+
+
+/* ---H3样式---- */
+h3, .markdown-rendered h3, .HyperMD-header-3 {
+	letter-spacing: 0.015em;
+}
+
+h3 {
+	display: inline-block;
+	line-height: 1px;
+	/* border-bottom: 1px solid var(--nobb-color); */
+}
+
+/* 编辑模式下调整标题后内容的上间距 */
+.cm-s-obsidian .cm-line.HyperMD-header-2 {
+	padding-top: 4rem;
+    padding-bottom: 2rem; /* 使用 !important 确保样式覆盖 */
+  }
+/* ---H2下划线样式---- */
+
+
+/* 编辑模式下的行间距和段间距 */
+.cm-s-obsidian .cm-line {
+    line-height: 1.7; /* 行间距调整为1.7 */
+    padding-top: 0.75em; /* 段首间距调整为0.75em */
+    padding-bottom: 0.75em; /* 段尾间距调整为0.75em */
+}
+
+/* 编辑模式下非段落元素（如列表）的行间距 */
+.cm-s-obsidian .CodeMirror-line:not(.CodeMirror-line-wrapping) {
+    padding-bottom: 0.75em; /* 如果您希望这里有间距的话 */
+}
+
+/* 调整编辑模式下列表的间距，使其与预览模式类似 */
+.cm-s-obsidian .CodeMirror-line.CodeMirror-line-wrapping {
+    padding-top: 0.3em; /* 列表项之间的间距，根据需求调整 */
+    padding-bottom: 0.3em; /* 列表项之间的间距，根据需求调整 */
+}
+
+/* 预览模式下的段落行间距和段间距 */
+.markdown-preview-view p {
+    line-height: 1.7; /* 行间距保持一致 */
+    margin-top: 1.5em; /* 段首间距保持一致 */
+    margin-bottom: 1.5em; /* 段尾间距保持一致 */
+}
+
+/* 预览模式下列表项的行间距和段间距 */
+.markdown-preview-view ul li, 
+.markdown-preview-view ol li {
+    line-height: 1.7; /* 行间距保持一致 */
+    margin-top: 0.2em; /* 列表项之间的间距保持一致 */
+    margin-bottom: 0.2em; /* 列表项之间的间距保持一致 */
+}
+
+/* 预览模式下一级列表的整体边距 */
+.markdown-preview-view > ul, 
+.markdown-preview-view > ol {
+    margin-top: 0.75em; /* 一级列表与文本之间的间距保持一致 */
+    margin-bottom: 0.75em; /* 一级列表与文本之间的间距保持一致 */
+}
+
+/* 预览模式下嵌套列表的间距调整 */
+.markdown-preview-view ul ul, 
+.markdown-preview-view ul ol, 
+.markdown-preview-view ol ul, 
+.markdown-preview-view ol ol {
+    margin-top: 0.2em; /* 嵌套列表与上级列表项之间的间距保持一致 */
+    margin-bottom: 0.2em; /* 嵌套列表与上级列表项之间的间距保持一致 */
+}
+
+
+strong, .cm-strong {
+	color: rgb(255,41, 41);
+	font-weight: 900;
+}
+
+p, .cm-line {
+    letter-spacing: 0.055em;
+}
+
+
+u{
+	text-decoration: underline rgb(69 135 17) wavy;
+	text-underline-position: under;
+	text-decoration-thickness: 0.15em;
+}
+
+p code,.cm-inline-code {
+	color:white !important; 
+	font-weight: 600;
+}
+
+.cm-inline-code, .markdown-rendered code{
+	padding: 0.1em 0.45sem;
+	border-radius: 0.4em;
+}
+
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+	padding: 0.1em 0.45em;
+	border-radius: 0.4em;
+}

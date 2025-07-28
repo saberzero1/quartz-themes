@@ -1,0 +1,353 @@
+body {
+	/* Colors */
+	--base-h: 212; /* Base hue */
+	--base-s: 15%; /* Base saturation */
+	--base-d: 13%; /* Base lightness Dark Mode  - 0 is black */
+	--base-l: 97%; /* Base lightness Light Mode  - 100 is white */
+	--accent-h: 215; /* Accent hue */
+	--accent-s: 75%; /* Accent saturation */
+	--accent-d: 70%; /* Accent lightness Dark Mode */
+	--accent-l: 60%; /* Accent lightness Light Mode */
+
+	--h1-color: var(--text-normal);
+	--h2-color: var(--text-normal);
+	--h3-color: var(--blue);
+	--h4-color: var(--yellow);
+	--h5-color: var(--red);
+	--h6-color: var(--text-muted);
+
+	--strong-color: var(--pink);
+	--em-color: var(--pink);
+	--quote-color: var(--green);
+
+	--blue: #2e80f2;
+	--pink: #ff82b2;
+	--green: #3eb4bf;
+	--yellow: #e5b567;
+	--orange: #e87d3e;
+	--red: #e83e3e;
+	--purple: #9e86c8;
+
+	/* Font families */
+	--font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Inter, Ubuntu, sans-serif;
+	--font-editor-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Inter, Ubuntu, sans-serif;
+	--font-monospace-theme: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
+		Consolas, "Roboto Mono", monospace;
+	--font-interface-theme: -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Inter, Ubuntu, sans-serif;
+	--font-editor: var(--font-editor-override), var(--font-text-override),
+		var(--font-editor-theme);
+
+	--h1-size: 1.7rem;
+	--h2-size: 1.5rem;
+	--h3-size: 1.2rem;
+	--h4-size: 1.1rem;
+	--h5-size: 1rem;
+	--h6-size: 0.9rem;
+
+	/* Misc */
+	--checkbox-radius: 20%;
+	--tag-radius: 5px;
+
+	/* Link */
+	--link-external-decoration: underline;
+	--link-decoration: underline;
+	--link-decoration-thickness: 1px;
+
+	/* -------- */
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 10px;
+	--radius-xl: 16px;
+
+	--line-width: 40rem;
+	--line-height: 1.5;
+	--max-width: 90%;
+	--max-col-width: 18em;
+	--icon-muted: 0.5;
+	--nested-padding: 1.1em;
+	--folding-offset: 10px;
+}
+
+.theme-light,
+body.theme-light.is-mobile {
+	color-scheme: light;
+	--highlight-mix-blend-mode: darken;
+	--mono-rgb-0: 255, 255, 255;
+	--mono-rgb-100: 0, 0, 0;
+	--color-red-rgb: 228, 55, 75;
+	--color-red: #e4374b;
+	--color-green-rgb: 12, 181, 79;
+	--color-green: #0cb54f;
+	--color-orange: #d96c00;
+	--color-yellow: #bd8e37;
+	--color-cyan: #2db7b5;
+	--color-blue: #086ddd;
+	--color-purple: #876be0;
+	--color-pink: #c32b74;
+	--color-base-00: #ffffff;
+	--color-base-05: #fcfcfc;
+	--color-base-10: #f6f7f8; /* code blocks */
+	--color-base-20: #f6f7f8;
+	--color-base-25: #f0f0f0;
+	--color-base-30: #ebedf0; /* soften dividing lines */
+	--color-base-35: #d4d4d4;
+	--color-base-40: #bdbdbd;
+	--color-base-50: #ababab;
+	--color-base-60: #707070;
+	--color-base-70: #5a5a5a;
+	--color-base-100: #222222;
+	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--color-accent-1: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-l) + 2.5%)
+	);
+	--color-accent-2: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-l) + 5%)
+	);
+
+	--background-primary: rgb(255, 255, 255);
+	--background-secondary: rgb(233, 234, 236);
+	--background-modifier-hover: var(--background-primary);
+	--titlebar-background-focused: var(--background-secondary);
+	--background-modifier-hover: var(--background-primary);
+	--titlebar-background-focused: var(--background-secondary);
+	--divider-color: var(--background-secondary);
+
+	--background-secondary-alt: var(--color-base-05);
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+	--background-modifier-cover: rgba(220, 220, 220, 0.4);
+	--text-highlight-bg-l: rgba(255, 208, 0, 0.4);
+	--text-highlight-bg: var(--text-highlight-bg-l);
+	--text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+	--input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+		0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+		0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+	--input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+		0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+		0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
+	--shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
+		0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+	--shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+		0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+
+	--tag-background-color-l: rgb(28, 39, 51);
+	--tag-font-color-l: rgb(62, 129, 206);
+	--tag-background-color-d: rgb(28, 39, 51);
+	--tag-font-color-d: rgb(62, 129, 206);
+
+	/* --text-normal: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 80%)); */
+	--text-muted: hsl(
+		var(--base-h),
+		calc(var(--base-s) - 5%),
+		calc(var(--base-l) - 60%)
+	);
+	--text-faint: hsl(
+		var(--base-h),
+		calc(var(--base-s) - 5%),
+		calc(var(--base-l) - 30%)
+	);
+	--text-formatted: hsl(
+		var(--base-h),
+		calc(var(--base-s) - 5%),
+		calc(var(--base-l) - 35%)
+	);
+	--text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--text-accent-hover: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-l) - 10%)
+	);
+
+	--atom-gray-1: #383a42;
+	--atom-gray-2: #383a42;
+	--atom-red: #e75545;
+	--atom-green: #4ea24c;
+	--atom-blue: #3d74f6;
+	--atom-purple: #a625a4;
+	--atom-aqua: #0084bc;
+	--atom-yellow: #e35649;
+	--atom-orange: #986800;
+
+	--hover-rgb: 255, 124, 0;
+	--icon-color-hover: rgb(var(--hover-rgb));
+	--icon-color-active: rgb(230, 153, 71);
+	--background-modifier-active-hover: rgba(var(--hover-rgb), 0.1);
+	--nav-item-color-hover: rgb(var(--hover-rgb));
+
+	.nav-folder.alx-folder-with-note
+		> .nav-folder-title
+		> .nav-folder-title-content:hover {
+		text-decoration-color: rgba(var(--hover-rgb), 1);
+	}
+}
+
+.theme-dark,
+body.theme-dark.is-mobile {
+	color-scheme: dark;
+	--highlight-mix-blend-mode: lighten;
+	--mono-rgb-0: 0, 0, 0;
+	--mono-rgb-100: 255, 255, 255;
+	--color-red-rgb: 251, 70, 76;
+	--color-red: #fb464c;
+	--color-green-rgb: 68, 207, 110;
+	--color-green: #44cf6e;
+	--color-orange: #e9973f;
+	--color-yellow: #e0de71;
+	--color-cyan: #53dfdd;
+	--color-blue: #027aff;
+	--color-purple: #a882ff;
+	--color-pink: #fa99cd;
+	--color-base-00: #1c2127; /* main editor window */
+	--color-base-10: #282c34; /* code blocks */
+	--color-base-20: #181c20; /* top unselected unfocused nav */
+	--color-base-25: #2c313c;
+	--color-base-30: #35393e;
+	--color-base-35: #3f3f3f;
+	--color-base-40: #555;
+	--color-base-50: #666; /* unfocused text */
+	--color-base-60: #999;
+	--color-base-70: #bababa;
+	--color-base-100: #dadada;
+	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--color-accent-1: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-l) - 3.8%)
+	);
+	--color-accent-2: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-l) + 3.8%)
+	);
+	--background-primary: rgb(18, 22, 28);
+	--background-secondary: rgb(2, 4, 9);
+	--background-modifier-hover: var(--background-primary);
+	--titlebar-background-focused: var(--background-secondary);
+	--background-modifier-hover: var(--background-primary);
+	--titlebar-background-focused: var(--background-secondary);
+	--divider-color: var(--background-secondary);
+	--background-modifier-form-field: var(--color-base-25);
+	--background-secondary-alt: var(--color-base-30);
+	--interactive-normal: var(--color-base-30);
+	--interactive-hover: var(--color-base-35);
+	--text-highlight-bg-d: rgba(255, 208, 0, 0.4);
+	--text-highlight-bg: var(--text-highlight-bg-d);
+	--text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+	--text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+	--input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+		0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+		0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+	--input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+		0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+		0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+	--shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+		0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+	--shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+		0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+
+	--tag-background-color-l: rgb(28, 39, 51);
+	--tag-font-color-l: rgb(114, 158, 207);
+	--tag-background-color-d: rgb(28, 39, 51);
+	--tag-font-color-d: rgb(114, 158, 207);
+
+	--text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
+	--text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
+	--text-formatted: hsl(
+		var(--base-h),
+		var(--base-s),
+		calc(var(--base-d) + 50%)
+	);
+
+	--text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
+	--text-accent-hover: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		calc(var(--accent-d) + 12%)
+	);
+
+	--atom-gray-1: #5c6370;
+	--atom-gray-2: #abb2bf;
+	--atom-red: #e06c75;
+	--atom-orange: #d19a66;
+	--atom-green: #98c379;
+	--atom-aqua: #56b6c2;
+	--atom-purple: #c678dd;
+	--atom-blue: #61afef;
+	--atom-yellow: #e5c07b;
+
+	/* color: #f78166 */
+	--hover-rgb: 236, 166, 99;
+	--icon-color-hover: rgb(var(--hover-rgb));
+	--icon-color-active: rgb(var(--hover-rgb));
+	--background-modifier-active-hover: rgba(var(--hover-rgb), 0.1);
+	--nav-item-color-hover: rgb(var(--hover-rgb));
+
+	.nav-folder.alx-folder-with-note
+		> .nav-folder-title
+		> .nav-folder-title-content:hover {
+		text-decoration-color: rgba(var(--hover-rgb), 0.75);
+	}
+}
+
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link:hover {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+}
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+a.tag {
+	color: var(--tag-color);
+	font-size: var(--tag-size);
+	font-weight: var(--tag-weight);
+	text-decoration: var(--tag-decoration);
+	padding: var(--tag-padding-y) var(--tag-padding-x);
+	line-height: 1;
+}
+
+a {
+	text-underline-offset: 2px;
+}
+
+.nav-folder.alx-folder-with-note
+	> .nav-folder-title
+	> .nav-folder-title-content {
+	text-decoration-line: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+}

@@ -1,0 +1,1023 @@
+.theme-dark, .print.theme-dark {
+  --background-primary: #222222;
+  --background-secondary: #333333;
+  --background-third: #444444;
+  --background-fourth: #2C2C2C;
+  /*
+  --background-primary-alt: #000000;
+  --background-secondary-alt: #000000;
+  */
+
+  --accent-color-text: #FFFF00;
+  --accent-color-borders: #FFFFFF;
+  --accent-color-text-inverted: #000000;
+  --color-icon: #FFFFFF;
+  --gray-color: #585858;
+
+  --text-normal: #FFFFFF;
+  --text-bold: #FF0000;
+  --text-italics: #00FFFF;
+  --text-link: #00FF00;
+  --text-highlight: #FFFF00;
+  --text-strikethrough: #FF00FF;
+
+  --text-title-h1: #FF0000;
+  --text-title-h2: #00FF00;
+  --text-title-h3: #FFFF00;
+  --text-title-h4: #00FFFF;
+  --text-title-h5: #FFA500;
+  --text-title-h6: #FF00AA;
+
+  --pdf-title-h1: #810000;
+  --pdf-title-h2: #008100;
+  --pdf-title-h3: #1d00c0;
+  --pdf-title-h4: #008181;
+  --pdf-title-h5: #915e00;
+  --pdf-title-h6: #6c00be;
+}
+
+/* That weird dot fix */
+
+
+.workspace-tab-container .workspace-leaf.mod-active hr.workspace-leaf-resize-handle, .workspace-tab-container .workspace-leaf .workspace-leaf-resize-handle {
+  display: none;
+}
+
+/* Normal Text Color */
+
+.markdown-source-view.mod-cm6 .cm-line, .markdown-rendered tbody tr > td:last-child, .markdown-rendered tbody tr > td:first-child {
+  color: var(--text-normal);
+}
+
+/* Italics */
+
+em, .cm-s-obsidian .cm-em {
+  color: var(--text-italics) !important;
+}
+
+/* Highlight */
+
+span.cm-highlight, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .markdown-rendered mark  {
+  background-color: transparent;
+  color: var(--text-highlight) !important;
+}
+
+/* Bold */
+
+.cm-strong, strong, strong, .cm-s-obsidian .cm-strong {
+  color: var(--text-bold) !important;
+}
+
+.cm-strikethrough, del {
+  text-decoration: none;
+  color: var(--text-strikethrough) !important;
+}
+
+/* Links */
+
+.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .markdown-rendered .internal-link, span.cm-underline, .cm-s-obsidian span.cm-hmd-internal-link, .markdown-source-view.mod-cm6 .is-unresolved, .external-link,  .markdown-source-view.mod-cm6 .cm-url .cm-underline, .markdown-source-view.mod-cm6 .cm-underline {
+  color: var(--text-link) !important;
+  text-decoration: none !important;
+}
+
+.cm-s-obsidian span.cm-link:hover, .cm-s-obsidian span.cm-hmd-internal-link:hover, .markdown-rendered .internal-link:hover, span.cm-underline:hover, .cm-s-obsidian span.cm-hmd-internal-link:hover, .markdown-source-view.mod-cm6 .is-unresolved:hover, .external-link:hover,  .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+  color: var(--text-link);
+  text-decoration: underline !important; 
+}
+
+/* Blockquote Text Color */
+
+.markdown-preview-view blockquote, .cm-s-obsidian span.cm-quote {
+  color: var(--text-normal);
+}
+
+/* Code Block Colors */
+
+.cm-s-obsidian span.cm-inline-code, .markdown-rendered code, .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock, .markdown-rendered pre {
+  color: var(--text-normal);
+  font-weight: bolder;
+  font-size: 100%;
+  background-color: var(--background-third) !important;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+  padding: 5px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+/* Table Colors */
+
+.markdown-rendered th {
+  color: var(--accent-color-text);
+  border: 3px solid var(--gray-color) !important;
+  background-color: var(--background-primary);
+}
+
+.markdown-rendered tbody tr:nth-child(odd), .markdown-rendered tbody tr:nth-child(even) {
+  border: 3px solid var(--background-third);
+}
+
+/* Bullet Text Color */
+
+.cm-s-obsidian .HyperMD-list-line-1 {
+  color: var(--text-normal);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before, .markdown-rendered.show-indentation-guide li > ul::before {
+  color: var(--accent-color-text);
+  width: 0px;
+  border-right: 2px solid var(--accent-color-text);
+}
+
+
+ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
+  color: var(--accent-color-text);
+}
+
+/* Quote */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote  {
+  background-color: var(--background-third);
+  border-radius: 5px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  margin-left: 1px;
+}
+
+/* Reading Mode Justify */
+
+.markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Edit Mode Justify 
+
+.markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify;
+  text-justify: inter-word;
+}
+*/
+
+/* File Margins */
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+  padding-top: 0% !important;
+}
+
+/* Embedded Link Preview Title */
+
+.markdown-embed-title {
+  font-size: 150%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, #ffd900 30%, #ff00b0 70%, #ff00b0 100%) !important;
+  background-size: 100%;
+  width: fit-content;
+}
+
+/* Active Line Highlight */
+
+.cm-active.cm-line {
+  background-color: var(--background-fourth);
+  border-radius: 5px;
+  transition: background-color 0.6s ease, border-radius 0.6s ease;
+}
+
+/* Highlight the active line with a line number */
+.cm-active.cm-line {
+  position: relative; /* Ensure we can position the line number */
+  padding-left: 2em; /* Add space for the line number */
+}
+
+
+
+/* Checkbox Colors */
+
+input[type=checkbox] {
+  background-color: var(--text-bold);
+  border-radius: 3px;
+  border: 0px solid !important;
+  transition: 0.3s;
+}
+
+input[type=checkbox]:checked {
+  border-color: transparent;
+  background-color: var(--text-link);
+}
+
+input[type=checkbox]:checked::after {
+  padding: 1px;
+
+}
+
+input[type=checkbox]:checked:hover {
+  border-color: transparent;
+  background-color: var(--text-link);
+}
+
+/* Checkbox Buttons */
+
+.checkbox-container {
+    background-color: var(--text-bold);
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--text-link);
+}
+
+/* Tabs */
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--accent-color-text) !important;
+}
+
+.workspace-tab-header-inner-title {
+  color: var(--text-normal) !important;
+}
+
+.workspace .mod-root .workspace-tab-header-inner::after {
+  margin-right: 2px;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.workspace-tab-header-container-inner {
+  padding-left: 3px !important;
+}
+
+.workspace-tab-header-container {
+  background-color: var(--background-primary);
+  border-bottom: 2px solid var(--background-primary);
+}
+
+.workspace-tab-header {
+  margin-left: 10px;
+  margin-top: 2px;
+  box-shadow: 0 0 0 2px var(--text-normal);
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: 0 0 0 2px var(--accent-color-text);
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after {
+    box-shadow: inset 0 0 0 2px var(--accent-color-text), 0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-active);
+}
+
+/* Some Buttons */
+
+.empty-state-action {
+  color: #00ff00;
+}
+
+.clickable-icon {
+  color: var(--color-icon) !important;
+  opacity: 1;
+}
+
+.clickable-icon[aria-disabled='true'] {
+  opacity: 0;
+}
+
+.mod-linux .titlebar-button, .mod-windows .titlebar-button {
+  color: var(--color-icon) !important;
+  background-color: var(--background-primary);
+}
+
+/* Menu */
+
+.menu {
+  background-color: var(--background-primary);
+  border: 1px solid var(--accent-color-borders);
+}
+
+.menu-item {
+  color: var(--text-normal);
+}
+
+svg.svg-icon, rect, svg {
+  color: var(--color-icon);
+  opacity: 1;
+  stroke: var(--color-icon);
+  stroke-width: 3px;
+}
+
+.node-labels, .branchLabel, .commit-label, .nodes, .mermaid rect, tspan {
+    stroke-width: 0.0px !important;
+}
+
+tspan {
+  fill: var(--accent-color-text-inverted);
+}
+
+.prompt {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+/* Left Panel */
+
+.search-result-container {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-horizontal > * {
+  color: var(--background-primary);
+}
+
+.nav-header {
+  background-color: var(--background-primary);
+  border-top: 2px solid var(--background-primary);
+}
+
+.search-input-container input {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+.suggestion {
+  background-color: var(--background-primary) !important;
+  border: 2px solid var(--accent-color-borders);
+}
+
+.search-suggest-info-text {
+  color: var(--text-normal);
+}
+
+.workspace-ribbon {
+  background-color: var(--background-primary);
+  border-right: 2px solid var(--background-primary);
+}
+
+.workspace-ribbon .sidebar-toggle-button {
+  background-color: var(--background-primary);
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+  border-right: 2px solid var(--background-primary);
+}
+
+.workspace-ribbon.mod-left:before {
+  border-bottom: 0px solid var(--background-primary);
+}
+
+hr.workspace-leaf-resize-handle {
+  background-color: var(--accent-color-borders);
+  border: 2px solid var(--accent-color-borders);
+}
+
+.nav-files-container {
+  background-color: var(--background-primary);
+}
+
+.nav-file-title-content, .nav-folder-title-content {
+  color: var(--text-normal);
+}
+
+.nav-folder.mod-root .nav-folder > .nav-folder-children {
+  border-left: 2px solid var(--accent-color-text);
+}
+
+.collapse-icon svg.svg-icon {
+  color: var(--accent-color-text) !important;
+}
+
+.workspace-tab-header-inner {
+  background-color: var(--background-primary);
+}
+
+.workspace-ribbon.mod-left:before {
+  background-color: var(--background-primary);
+}
+
+/* Right Panel */
+
+.workspace-tabs .workspace-leaf .view-content {
+  background-color: var(--background-primary);
+}
+
+.search-empty-state {
+  color: var(--accent-color-text);
+}
+
+.tree-item-inner {
+  color: var(--text-normal);
+}
+
+.tree-item-flair {
+  color: var(--accent-color-text);
+}
+
+.workspace-leaf-content {
+    background-color: var(--background-primary);
+}
+
+.search-result-file-matches {
+    color: var(--accent-color-borders);
+    background-color: var(--background-primary);
+    border: 2px solid var(--accent-color-borders);
+}
+
+/* Settings */
+
+.vertical-tab-header-group-title {
+  color: var(--accent-color-borders);
+  font-size: larger;
+}
+
+input[type='text'], input[type='text']:focus, input[type='search']:focus {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+input[type='text']:hover, input[type='search']:hover, input[type='text']:focus, input[type='search']:focus {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text) !important;
+}
+
+.dropdown {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+.dropdown:focus, .dropdown:hover {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text) !important;
+}
+
+button, button.mod-cta {
+  background-color: var(--background-primary) !important;
+  border: 2px solid var(--accent-color-borders);
+  color: var(--accent-color-borders);
+}
+
+textarea {
+  background-color: var(--background-primary) !important;
+  border: 2px solid var(--accent-color-borders);
+}
+
+button:focus, button:hover, textarea:hover, textarea:focus, button.mod-cta:hover , .dropdown:hover {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text) !important;
+  color: var(--accent-color-text) !important;
+}
+
+.horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active, .vertical-tab-nav-item.is-active:hover {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text);
+  color: var(--accent-color-text);
+}
+
+.vertical-tab-nav-item:hover {
+  transition: 0.3s;
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text);
+}
+
+.vertical-tab-nav-item {
+  transition: 0.3s;
+  border: 2px solid var(--background-primary)
+}
+
+.modal.mod-settings .vertical-tab-header {
+  background-color: var(--background-primary);
+  border-right: 2px solid var(--accent-color-borders);
+}
+
+.modal {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+.community-modal-sidebar, .modal-sidebar {
+  background-color: var(--background-primary);
+}
+
+.community-item {
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-borders);
+}
+
+.community-item.is-selected, body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-item.is-selected:hover, .community-item.is-selected:hover, .community-item:hover {
+  color: var(--accent-color-borders);
+  background-color: var(--background-primary);
+  border: 2px solid var(--accent-color-text);
+}
+
+.community-item-name {
+  color: var(--accent-color-text);
+}
+
+.community-item.is-selected .flair, .community-item.is-selected:hover .flair, .community-item .flair {
+  color: var(--background-primary);
+  background-color: var(--accent-color-text);
+}
+
+.community-item.is-selected .community-item-author, .community-item.is-selected:hover .community-item-author,
+.community-item.is-selected .community-item-repo, .community-item-downloads-text, 
+.community-item.is-selected .community-item-downloads, .community-item.is-selected:hover .community-item-downloads,
+.community-item.is-selected .community-item-updated, .community-item.is-selected:hover .community-item-updated,
+.community-item-updated, .community-item-desc,
+.community-item-author, body:not(.is-phone) .community-item.is-selected .community-item-author {
+  color: var(--accent-color-borders);
+  opacity: 1;
+}
+
+/* Top Bar */
+
+.view-header-title {
+  color: var(--accent-color-text) !important;
+}
+
+.view-header-title-parent .view-header-breadcrumb-separator {
+  color: var(--text-normal);
+}
+
+.view-header-title-parent .view-header-breadcrumb {
+  color: var(--text-normal);
+}
+
+/* Bottom Bar */
+
+.status-bar-item {
+  color: var(--text-normal);
+}
+
+.status-bar {
+  background-color: var(--background-primary);
+  border: 1px solid var(--accent-color-borders);
+}
+
+/* Line Numbers */
+
+.markdown-source-view.mod-cm6 .cm-gutters  {
+  color: var(--accent-color-borders) !important;
+}
+
+/* Bullet Points */
+
+.list-bullet::after {
+  background-color: var(--accent-color-text);
+}
+
+/* Inline Title */
+
+.inline-title {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, #ffd900 30%, #ff00b0 70%, #ff00b0 100%) !important;
+  background-size: 100%;
+  width: fit-content;
+}
+
+/* Callouts */
+
+.callout {
+  border: 2px solid var(--accent-color-borders);
+}
+
+/* Canvas Plugin */
+
+.canvas-node-label {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+}
+
+.canvas-node-resizer[data-resize='left'], .canvas-node-resizer[data-resize='right'], .canvas-node-resizer[data-resize='top'], .canvas-node-resizer[data-resize='bottom'] {
+  color: var(--accent-color-text);
+  opacity: 1;
+  stroke-width: 3px;
+  stroke: #00ddff;
+}
+
+.theme-dark .workspace-leaf-content[data-type='canvas'] .view-content {
+  --theme: 255, 255, 255;
+}
+
+.canvas-node {
+  border: 2px solid var(--accent-color-borders);
+}
+
+/* Meta Data and Properties */
+
+.metadata-properties {
+  border: 2px solid var(--background-secondary);
+  border-radius: 0.2cm;
+
+}
+
+.metadata-properties:hover {
+  border: 2px solid var(--accent-color-borders);
+  border-radius: 0.2cm;
+}
+
+.metadata-property:hover {
+  border: 2px solid var(--accent-color-borders);
+  border-radius: 0.2cm;
+}
+
+.metadata-property:focus-within {
+  border: 2px solid var(--accent-color-text);
+  border-radius: 0.2cm;
+}
+
+.metadata-property {
+  border: 2px solid var(--background-primary);
+  padding-top: 2px;
+}
+
+/* Headings */
+
+.cm-header-1, .markdown-preview-view h1, .markdown-rendered h1
+{
+  color: var(--text-title-h1);
+}
+
+.cm-header-2, .markdown-preview-view h2, .markdown-rendered h2
+{
+  color: var(--text-title-h2);
+}
+
+.cm-header-3, .markdown-preview-view h3, .markdown-rendered h3
+{
+  color: var(--text-title-h3);
+}
+
+.cm-header-4, .markdown-preview-view h4, .markdown-rendered h4
+{
+  color: var(--text-title-h4);
+}
+
+.cm-header-5, .markdown-preview-view h5, .markdown-rendered h5
+{
+  color: var(--text-title-h5);
+}
+
+.cm-header-6, .markdown-preview-view h6, .markdown-rendered h6
+{
+  color: var(--text-title-h6);
+}
+
+.callout {
+  background-color: var(--background-secondary);
+}
+
+.callout:is([data-callout="note"]) {
+  border-color: #4187ff;
+}
+.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) {
+  border-color: #9de1ff;
+}
+.callout:is([data-callout="info"], [data-callout="todo"]) {
+  border-color: #00ddff;
+}
+.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) {
+  border-color: #00ffe5;
+}
+.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) {
+  border-color: #00ff62;
+}
+.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) {
+  border-color: #62ff00;
+}
+.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) {
+  border-color: #ff9500;
+}
+.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) {
+  border-color: #ff0000;
+}
+.callout:is([data-callout="danger"], [data-callout="error"]) {
+  border-color: #ff0033;
+}
+.callout[data-callout="bug"] {
+  border-color: #ff005d;
+}
+.callout[data-callout="example"] {
+  border-color: #9e77ff;
+}
+.callout:is([data-callout="quote"], [data-callout="cite"]) {
+  border-color: var(--text-normal);
+}
+
+.callout:is([data-callout="note"]) > .callout-title {
+  color: #4187ff;
+}
+.callout:is([data-callout="note"]) > .callout-title .callout-icon .svg-icon {
+  stroke: #4187ff;
+}
+
+.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) > .callout-title {
+  color: #9de1ff;
+}
+.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #9de1ff;
+}
+
+.callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title {
+  color: #00ddff;
+}
+.callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #00ddff;
+}
+
+.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) > .callout-title {
+  color: #00ffe5;
+}
+.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #00ffe5;
+}
+
+.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) > .callout-title {
+  color: #00ff62;
+}
+.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #00ff62;
+}
+
+.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) > .callout-title {
+  color: #62ff00;
+}
+.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #62ff00;
+}
+
+.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) > .callout-title {
+  color: #ff9500;
+}
+.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #ff9500;
+}
+
+.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) > .callout-title {
+  color: #ff0000;
+}
+.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #ff0000;
+}
+
+.callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title {
+  color: #ff0033;
+}
+.callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title .callout-icon .svg-icon * {
+  stroke: #ff0033;
+}
+
+.callout[data-callout="bug"] > .callout-title {
+  color: #ff005d;
+}
+.callout[data-callout="bug"] > .callout-title .callout-icon .svg-icon * {
+  stroke: #ff005d;
+}
+
+.callout[data-callout="example"] > .callout-title {
+  color: #9e77ff;
+}
+.callout[data-callout="example"] > .callout-title .callout-icon .svg-icon * {
+  stroke: #9e77ff;
+}
+
+.callout:is([data-callout="quote"], [data-callout="cite"]) > .callout-title {
+  color: var(--text-normal);
+}
+
+.cm-s-obsidian span.cm-quote {
+  color: var(--text-normal);
+}
+
+.cm-s-obsidian span.cm-formatting-quote {
+  color: var(--accent-color-text);
+}
+
+.callout-content {
+  color: var(--text-normal);
+}
+
+/* Smooth Live Headers by Luke242#8485 */
+
+@keyframes indent {
+	from {
+		transform: translateX(calc(-1 * var(--header-offset)));
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes outdent {
+	from {
+		transform: translateX(var(--header-offset));
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes opac {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.is-live-preview .cm-widgetBuffer + .cm-header {
+	display: inline-block;
+	animation: outdent 1500ms ease-out;
+}
+
+.is-live-preview .cm-widgetBuffer + .cm-header.cm-formatting {
+	animation: opac 400ms ease-in;
+}
+
+.is-live-preview .cm-active .cm-header + .cm-header {
+	display: inline-block;
+	animation: indent 300ms ease-out;
+}
+
+.cm-header-1 {
+	--header-offset: 1rem;
+}
+
+.cm-header-2 {
+	--header-offset: 1rem;
+}
+
+.cm-header-3 {
+	--header-offset: 1rem;
+}
+
+.cm-header-4 {
+	--header-offset: 2rem;
+}
+
+.cm-header-5 {
+	--header-offset: 3rem;
+}
+
+.cm-header-6 {
+	--header-offset: 4rem;
+}
+
+/* Print (PDF) Section */
+
+@media print {
+
+  :root {
+    --pdf-background: #FFFFFF;
+    --pdf-text: #000000;
+    --pdf-normal: #FFFFFF;
+    --pdf-bold: #810000;
+    --pdf-italics: #008181;
+    --pdf-link: #008100;
+    --pdf-highlight: #818100;
+    --pdf-strikethrough: #660066;
+  }
+
+  em, .cm-s-obsidian .cm-em {
+    color: var(--pdf-italics) !important;
+    text-decoration: underline;
+  }
+
+  .cm-strong, strong, strong, .cm-s-obsidian .cm-strong {
+    color: var(--pdf-bold) !important;
+    text-decoration: underline;
+  }
+  
+  .cm-strikethrough, del {
+    text-decoration: none;
+    color: var(--pdf-strikethrough) !important;
+    text-decoration: underline;
+  }
+
+  .cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .markdown-rendered .internal-link, span.cm-underline, .cm-s-obsidian span.cm-hmd-internal-link, .markdown-source-view.mod-cm6 .is-unresolved, .external-link {
+    color: var(--pdf-link);
+    text-decoration: underline !important;
+  }
+
+  ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
+    color: var(--pdf-text);
+  }
+
+  .markdown-rendered th {
+    color: var(--pdf-highlight);
+    border: 2px solid var(--pdf-text) !important;
+    background-color: var(--pdf-background);
+    text-decoration: underline;
+  }
+  
+  .markdown-rendered tbody tr > td:nth-child(2n+2), .markdown-rendered thead tr > th:nth-child(2n+2) {
+    background-color: var(--pdf-background);
+  }
+
+  span.cm-highlight, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .markdown-rendered mark  {
+    background-color: transparent;
+    color: var(--pdf-highlight) !important;
+    text-decoration: underline;
+  }
+  
+  .callout, .callout-title, .callout-icon {
+    color: var(--pdf-text);
+    border-color: var(--pdf-text);
+    background-color: var(--pdf-background);
+    page-break-before: auto;
+    page-break-after: avoid;
+  }
+
+  .callout:is([data-callout="note"], [data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"], [data-callout="info"], [data-callout="todo"], [data-callout="tip"], [data-callout="hint"], [data-callout="important"], [data-callout="success"], [data-callout="check"], [data-callout="done"], [data-callout="question"], [data-callout="help"], [data-callout="faq"], [data-callout="warning"], [data-callout="caution"], [data-callout="attention"], [data-callout="failure"], [data-callout="fail"], [data-callout="missing"], [data-callout="danger"], [data-callout="error"], [data-callout="bug"], [data-callout="example"], [data-callout="quote"], [data-callout="cite"]) {
+    border: 2px solid var(--pdf-text) !important;
+  }
+
+  .callout:is([data-callout="note"]) > .callout-title .callout-icon .svg-icon, .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title .callout-icon .svg-icon *,   .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) > .callout-title .callout-icon .svg-icon *, .callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title .callout-icon .svg-icon *, .callout[data-callout="bug"] > .callout-title .callout-icon .svg-icon *, .callout[data-callout="example"] > .callout-title .callout-icon .svg-icon * {
+    stroke: var(--pdf-text);
+  }
+
+  .callout:is([data-callout="quote"], [data-callout="cite"],[data-callout="note"]) > .callout-title, .callout[data-callout="example"] > .callout-title, .callout[data-callout="bug"] > .callout-title, .callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title, .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) > .callout-title, .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) > .callout-title, .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) > .callout-title, .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) > .callout-title, .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) > .callout-title, .callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title, .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) > .callout-title, callout:is([data-callout="note"]) > .callout-title {
+    color: var(--pdf-text);
+  }
+
+  .cm-header-1, .markdown-preview-view h1, .markdown-rendered h1
+  {
+    color: var(--pdf-title-h1);
+    text-decoration: underline;
+  }
+
+  .cm-header-2, .markdown-preview-view h2, .markdown-rendered h2
+  {
+    color: var(--pdf-title-h2);
+    text-decoration: underline;
+  }
+
+  .cm-header-3, .markdown-preview-view h3, .markdown-rendered h3
+  {
+    color: var(--pdf-title-h3);
+    text-decoration: underline;
+  }
+
+  .cm-header-4, .markdown-preview-view h4, .markdown-rendered h4
+  {
+    color: var(--pdf-title-h4);
+    text-decoration: underline;
+  }
+
+  .cm-header-5, .markdown-preview-view h5, .markdown-rendered h5
+  {
+    color: var(--pdf-title-h5);
+    text-decoration: underline;
+  }
+
+  .cm-header-6, .markdown-preview-view h6, .markdown-rendered h6
+  {
+    color: var(--pdf-title-h6);
+    text-decoration: underline;
+  }
+
+  .callout-content {
+    color: var(--pdf-text);
+  }
+
+  .markdown-embed-title  {
+    font-size: 150%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(120deg, var(--pdf-text) 30%, var(--pdf-text) 70%, var(--pdf-text) 100%) !important;
+    background-size: 100%;
+    width: fit-content;
+    color: var(--pdf-text) !important;
+    text-decoration: underline;
+  }
+}
+
+/* editor and reading view footnote reference in text */
+a.footnote-link,
+.cm-s-obsidian span.cm-footref.cm-hmd-barelink,
+.cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting {
+    color: salmon;
+}
+
+/* live preview footnote '[^1]:' color */
+.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote .cm-underline {
+    color: salmon;
+}
+
+/* editor and reading view footnote text */
+.footnotes,
+.cm-s-obsidian .cm-line.HyperMD-footnote {
+    color: salmon;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* reading view footnote list marker */
+.footnotes ol > li::marker {
+    color: salmon;
+    font-weight: bold;
+    font-size: 1em;
+}

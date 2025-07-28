@@ -1,0 +1,54 @@
+/*
+Vesper Theme for Obsidian
+MIT License
+Copyright (c) 2025 Omar Rashad
+https://github.com/omarrashad
+
+Originally inspired by the Vesper VS Code theme by Rauno Freiberg:
+https://github.com/raunofreiberg/vesper
+*/
+
+.theme-dark {
+  --background-primary: #101010;
+  --background-secondary: #101010;
+  --titlebar-background: #101010;
+  --titlebar-background-focused: #101010;
+
+  --text-normal: #FFFFFF;
+  --text-muted: #A0A0A0;
+  --text-faint: #707070;
+  --text-on-accent: #000000;
+
+  --interactive-accent: #FFC799;
+  --text-accent: #FFC799;
+  --color-accent: #FFC799;
+  --text-selection: #FFC79950;
+  --interactive-accent-hover: #e6a974;
+
+  --background-modifier-error: #FF8080;
+  --checklist-done-color: #99FFE4;
+  --checkbox-color: #99FFE4;
+  --link-external-color-hover: #99FFE4;
+}
+
+.theme-light {
+  --background-primary: #FFFFFF;
+  --background-secondary: #FAFAFA;
+  --titlebar-background: #FFFFFF;
+  --titlebar-background-focused: #FFFFFF;
+
+  --text-normal: #1A1A1A;
+  --text-muted: #777777;
+  --text-faint: #AAAAAA;
+
+  --interactive-accent: #FFB066;
+  --text-accent: #FFB066;
+  --color-accent: #FFB066;
+  --text-selection: #FFB06650;
+  --interactive-accent-hover: #E0A568;
+
+  --background-modifier-error: #FF0000;
+  --checklist-done-color: #00D2B0;
+  --checkbox-color: #00D2B0;
+  --link-external-color-hover: #00D2B0;
+}

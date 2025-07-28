@@ -1,0 +1,5500 @@
+/*Golden Topaz for Obsidian  v0.12.4，is a modified version of the Blue Topaz. This modified theme was modified by Mouth On Cloud. Welcome to join our tencent QQ App's obsidian group chat: #774176839 */
+/*金色托帕石是基于蓝色托帕石制作的魔改主题, 由嘴上云制作，欢迎到obsidian的qq群一起愉快折腾。群号：774176839  */
+/*version: 1.0.4  */
+/*版本：1.0.4  */
+/*date: 2021-06-07  */
+/*日期：2021-06-07  */
+/*The following codes are from the Blue Topaz.    */
+/*下面的是蓝色托帕石的原版部分。  */
+/*蓝色托帕石，适合Obsidian v0.12.2。[20210506] flying fly flies制作，欢迎使用及分享，借鉴（copy）了许多主题，在此一一感谢。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
+/*Blue Topaz for Obsidian v0.12.2, [20210506] created by flying fly flies. Feel free to use, share and modify. Thanks for all shared css themes which inspire me a lot. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
+
+
+/* 
+===========================    TIPS   ===============================
+====================================================================
+===========主题中的一些特别样式 Special parts in this theme===========
+=====================================================================
+
+
+==========================
+=====标签 Special tags=====
+==========================
+#dailynote
+#weeklynote
+#important
+#重要
+#inprogress
+#进行中
+#complete
+#完成
+#questions
+#ideas
+
+==========================
+========图片 images========
+==========================
+用法
+
+在图片末尾加上 “|left” 或 “|right” 可以让图片左或右对齐
+xxx.jpg|left
+
+-------------------
+可用变体：
+left/Left/LEFT/L
+right/Right/RIGHT/R
+
+如：xxx.png|L
+-------------------
+
+
+如果同时调整图片大小，需要把调整大小的数值放在最后
+xxx.png|right|200
+
+使用 “|inlineL” 或 “|inlineR” 可以将图片嵌入在文字中,L左，R右
+xxx.png|inlineL
+
+-------------------
+可用变体：
+inlineL/InlineL/INLINEL/inlL
+inlineR/InlineR/INLINER/inlR
+
+如：xxx.png|inlR
+-------------------
+
+Usage
+
+Typing "|left" or "|right" at the end of the image file can make the image shown on left or right.
+For example,
+xxx.jpg|left
+
+---------------------------
+The variants you can use：
+left/Left/LEFT/L
+right/Right/RIGHT/R
+
+e.g. xxx.png|L
+---------------------------
+
+You can also change the image size with the position. You should put the "|number" at the end.
+For example,
+xxx.png|right|200 
+
+
+Use "inlineL" or "inlineR" to embed the image on the left or right.
+xxx.png|inlineL
+
+-----------------------------
+The variants you can use：
+inlineL/InlineL/INLINEL/inlL
+inlineR/InlineR/INLINER/inlR
+
+e.g. xxx.png|inlL
+-----------------------------
+
+===========================
+=====笔记框 Note blocks=====
+===========================
+
+----------------------------------------------------------------------
+---------------不同颜色背景 Colourful note backgrounds-----------------
+----------------------------------------------------------------------
+语法：```note-xxx-bg 或```note-xxx-background
+---------------------------------------------
+
+```note-orange-bg
+正文text
+```
+
+```note-yellow-bg
+正文text
+```
+
+```note-green-bg
+正文text
+```
+
+```note-blue-bg
+正文text
+```
+
+```note-purple-bg
+正文text
+```
+
+```note-pink-bg
+正文text
+```
+
+```note-red-bg
+正文text
+```
+
+```note-gray-bg
+正文text
+```
+
+```note-brown-bg
+正文text
+```
+-----------------------------------------------------
+----------不同笔记颜色 Colourful note texts------------
+-----------------------------------------------------
+
+```note-orange
+正文text
+```
+
+```note-yellow
+正文text
+```
+
+```note-green
+正文text
+```
+
+```note-blue
+正文text
+```
+
+```note-purple
+正文text
+```
+
+```note-pink
+正文text
+```
+
+```note-red
+正文text
+```
+
+```note-gray
+正文text
+```
+
+```note-brown
+正文text
+```
+
+-----------------------------------------------------------
+------------记忆笔记框 Recall/cloze note blocks-------------
+-----------------------------------------------------------
+可鼠标点击显示笔记内容 To show text by clicking
+-----------------------------------------------------------
+
+```note-cloze
+正文text
+```
+
+
+--------------------------------------------------------
+------------重要笔记框 important note blocks-------------
+--------------------------------------------------------
+有笔记外框 Different block style
+--------------------------------------------------------
+
+```note-imp
+正文text
+```
+
+=========================
+=======列表 list=========
+=========================
+Just show vertical line instead of border
+显示竖线，不显示框线
+
+Use the following code to create a css snippet and activate in Obsidian
+使用以下代码创建css snippet，在软件中启用
+
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  position: relative;
+}
+
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before {
+  content: '';
+  border-left: 2px solid var(--background-modifier-border);
+  position: absolute;
+}
+
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before {
+  left: -13px;
+  top: 0;
+  bottom: 0;
+} 
+
+li > p:not(.task-list-item) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  
+ul > li:not(.task-list-item) {
+  padding-left: 0px;
+  margin-bottom: 8px;
+  padding-right: 0px;
+  margin-block-start: 0.3em;
+  border-left: none !important;
+}
+  
+ol {
+  padding-inline-start: 2.1em;
+  margin-left: 0px;
+  margin-bottom: -9px;
+}
+  
+ol > li {
+  margin-left: 2px;
+  padding-left: 0px;
+  border-left: none !important;
+} 
+
+
+=========================================
+================stickies=================
+=========================================
+thanks to death_au, Gabroel and Lithou from Obsidian Members Group on Discord 
+
+用法
+Usage
+
+用以下格式，可以得到不同的样式
+<p class="stickies"\> 你自己的文字 </p>
+<p class="stickies2"\> 你自己的文字 </p>
+<p class="to-recall"\> 你自己的文字 </p>
+
+Use the following formats, you can obtain some special styles.
+<p class="stickies"\> Your words </p>
+<p class="stickies2"\> Your words </p>
+<p class="to-recall"\> Your words </p>
+
+
+
+=============================
+==== <aside> </aside> =======
+=============================
+thanks to dcoales from obsidian member group on discord  
+https://discord.com/channels/686053708261228577/702656734631821413/794236352857374764
+
+Use 
+<aside><h1> Your words </h1></aside>
+<aside><h2> Your words </h2></aside>
+
+to get a right-side note block
+
+
+*/
+
+:root{
+  --font-size-obsidian-titlebar:             0.75em;
+  --font-size-vault-name:                    0.875em;/*左侧库名字体大小*/
+  --font-size-file-header-title:             0.9375em;/*文件抬头标题，只在非Andy mode plugin时生效*/
+  --font-size-file-header-title-andy-plugin: 1em;/*文件抬头标题for Andy mode plugin*/
+  --font-size-embed-title-size:              1.125em;
+  --font-size-embed-file:                    1.25em;
+  --font-size-folder-and-file:               0.8125em;/*左侧边栏文件字体大小*/
+  --font-size-edit-normal:                   1em;/*编辑正文字体大小*/
+  --font-size-preview-normal:                1em;/*预览正文字体大小*/
+  --font-size-h1:                            1.5625em;
+  --font-size-h2:                            1.4375em;
+  --font-size-h3:                            1.3125em;
+  --font-size-h4:                            1.1875em;
+  --font-size-h5:                            1.0625em;
+  --font-size-h6:                            0.9375em;
+  --font-size-tag:                           1em;
+  --font-size-list:                          1em;
+  --font-size-preview-blockquote:            1em;
+  --font-size-edit-blockquote:               1em;
+  --font-size-code:                          0.9375em;
+  --font-size-edit-code:                     1em;
+  --font-size-latex:                         1.25em;
+  --text-size-cloze:                         0.9375em;
+
+  /*font family*/
+  --font-family-list:                                                    ;/*列表字体*/
+  --font-family-major:                                                   ;/*主体（包括列表）字体，除代码框等少数部分*/
+  --font-family-h1:                                                      ;
+  --font-family-h2:                                                      ;
+  --font-family-h3:                                                      ;
+  --font-family-h4:                                                      ;
+  --font-family-h5:                                                      ;
+  --font-family-h6:                                                      ;
+  --font-family-title:                                                   ;/*文件抬头标题*/
+  --font-family-folder-file-title:                                       ;/*左侧边栏文件、文件夹字体*/
+  --font-family-preview-edit-code:        "Consolas", "Monaco", monospace;
+  --text-family-inline-code:              "Consolas", "Monaco", monospace;
+  --font-family-tag:                                                     ;
+  --font-family-vault:                                                   ;/*左侧库名字体*/
+  --font-family-special-tag:       "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-family-YAML:              "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
+} 
+
+.theme-dark {
+  --background-primary: #242424; 
+  --background-primary-alt: #444444;
+  --background-secondary: #333333;
+  --background-secondary-alt: #000000; 
+  --background-accent: #000;
+  --background-modifier-border: #565656;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #539126;
+  --background-modifier-error: #9b4343;
+  --background-modifier-error-rgb: 155,67,67;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #53aaf5;
+  --text-accent-hover: #3e8de7; 
+  --text-normal: #d1d1d1; 
+  --text-muted: #8a8a8a;  
+  --text-faint: rgb(121, 121, 121);
+  --accent-strong: #ffffff;
+  /*--text-em-color: #ff9b9b;*/
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: #e481007c;
+  --text-selection: #47a5914d;
+  --text-on-accent: #dcddde;
+  --interactive-normal: #20242b;
+  --interactive-hover: #353b47;
+  --interactive-accent: #3187d3; 
+  --interactive-accent-rgb: 45, 135, 211;     
+  --interactive-accent-hover: #3e8de7;
+  --panel-border-color: #18191e;
+  --search-text: #e0e0e0;
+  --folder-title: #ffffff;
+  --mark-highlight: #e481007c;
+  --background-search-result: #444444;
+
+  --gray-1: #5C6370;
+  --gray-2: #abb2bf;
+  --red: #e06c75;
+  --red-1: #d05a63;
+  --orange: #d19a66;
+  --green: #b6e296;
+  --darkgreen: #399a58;
+  --aqua: #56b6c2;
+  --purple: #c678dd;
+  --blue: #9dcffc;
+  --darkblue: #4889df;
+  --yellow: #e4ba6c;
+  --light-yellow: #dfda91;
+  
+  --embed-color: #5c67996c;   
+  --search-result-file-title-color: #96b7e4; 
+  --theme-color: #3187d3;
+  --theme-color-translucent: #3187d388;
+  --theme-color-translucent-1: #1982dd2c;
+  --color-specification: #3ce252;
+
+  --allow-1: #d18828;
+  --background-blockquote-dark: #d3d3d31c;
+
+  /*list*/
+  --list-ul-block-color: #e19742a9;
+  --list-ul-disc-color: #db6019;
+  --list-ul-hover: #e28915de;
+  --list-ol-block-color: #2685bbb4;
+  --list-ol-number-color: #95afc4;
+  --list-ol-hover: #2c7bd6;
+
+  /*tags*/
+  --stag1: #cf0000;
+  --stag2: #cf7c00;
+  --stag3: #00a71c;
+  --tag1: #f37575bb;
+  --tag2: #d39461bb;
+  --tag3: #c7cc37bb;
+  --tag4: #8fd389bb;
+  --tag5: #5ccbcfbb;
+  --tag6: #5b94d6bb;
+  --tag7: #9859e0bb;
+  --tag8: #cd64d6bb;
+  --tag9: #b3b3b3bb;
+
+  /*titles*/
+  --h1-color: #92c237;
+  --h2-color: #37bd32;
+  --h3-color: #2dc1c1;
+  --h4-color: #4495ff;
+  --h5-color: #ad9fff;
+  --h6-color: #ca8bee;
+
+  /*old*/
+  /*
+  --h1-color: #4ea0e2;
+  --h2-color: #35d13dd3;
+  --h3-color: #dfd111e1;
+  --h4-color: #f1a634d0;
+  --h5-color: #f15959d0;
+  --h6-color: #d06af0d0;
+  */
+
+  /*graph*/
+  --graph-text-color: #B5B5B5; 
+  /*--graphtag: #d1d43eb2;
+  --graph-attach: #4ad43eb2;
+  --graph-circle: #99b4d8b2;
+  --graph-line: #646464;
+  --graph-unresolved: #db4e4eb2;*/
+  --graphtag: #88d842bb;
+  --graph-attach: #b2cfe0bb;
+  --graph-circle: #55a2d6bb;
+  --graph-line: #646464;
+  --graph-unresolved: #f08080de;
+  --graph-arrow: #c23917;
+
+  /*mermaid*/
+  --mermaid-active-task-color: #187ef1;
+  --mermaid-seq-dia-color: #1371be;
+
+  /*table*/
+  --table-background-color: #8a8a8a3b;
+  --table-background-color-odd: transparent;
+  --table-border-color: #c0c0c0;
+  --table-thead-background-color: #74aef07a;
+  --table-hover-raw-color: #3187d33d;
+  --table-hover-color: #3187d388;
+  --table-hover-thead-color: #6fa084;
+
+  /*calendar*/
+  --calendar-week-color: #a2df94;
+  --calendar-week-hover: #61815c;
+  --calendar-week-background-color: #4a5842;
+
+  /*day planner*/
+  --day-planner-pie: #f19c1c;
+  --day-planner-timeline: #000000;
+  --day-planner-line: #dfcf77;
+  --day-planner-dot: #dfcf77;
+  --day-planner-item-hover: #053c85;
+  --event-item-color1: #283493bb;
+  --event-item-color2: #1565c0bb;
+  --event-item-color3: #00838fbb;
+  --event-item-color4: #2e7d32bb;
+  --event-item-color5: #9e9d24bb;
+  --event-item-color6: #ff8f00bb;
+  --event-item-color7: #d84315bb;
+  --event-item-color8: #c62828bb;
+  --event-item-color9: #ad1457bb;
+  --event-item-color10:#6a1b9abb;
+
+/*colourful notes*/
+  --text-gray: #acacac;
+  --text-brown: #be9684;
+  --text-orange: #ffa344;
+  --text-yellow: #ffdc51;
+  --text-green: #52c7b2;
+  --text-blue: #8ca1ff;
+  --text-purple: #b386f1;
+  --text-pink: #ff6bba;
+  --text-red: #ff4f4f;
+
+  --background-gray: #535353;
+  --background-brown: #493a3a;
+  --background-orange: #53422f;
+  --background-yellow: #585536;
+  --background-green: #32503e;
+  --background-blue: #2f5264;
+  --background-purple: #443f57;
+  --background-pink: #533b4a;
+  --background-red: #683c3c;
+
+  --note-important: #d64545;
+  --note-cloze: #ffffff;
+	
+  /* stickies */
+  --stickies-color-1: #84c584;
+  --stickies-color-2: #c7a3cf;
+  --tape-color: #99999967;
+
+  /*Sliding panes*/
+  --header-color: #f1a634d0;
+}
+
+.theme-light {
+  --background-primary: #ffffff;
+  --background-primary-alt: #f5f5f5;
+  --background-secondary: #f0f0f0;
+  --background-secondary-alt: #dddddd;
+  --background-accent: #fff;
+  --background-modifier-border: #e1dfdf;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #A4E7C3;
+  --background-modifier-error: #e68787;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #FF9494;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #007de4;
+  --text-accent-hover: #4ba8ff;
+  --text-normal: #000000;
+  --text-muted: #7f7f7f;
+  --text-faint: #7f7f7f;
+  --accent-strong: #000000;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: #ffc16fd8;
+  --text-selection: #66bbaa59;
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #eaeaeb;
+  --interactive-hover: #dbdbdc;
+  --interactive-accent-rgb: 70, 142, 235;
+  --interactive-accent: #2f92e4;
+  --interactive-accent-hover: #4ba8ff;
+  --panel-border-color: #dbdbdc;
+  --search-text: #000000;
+  --folder-title: #000000;
+  --mark-highlight: #ffd298d8;  
+  --background-search-result: #fdfdfd;
+
+  --gray-1: #383a42;
+  --gray-2: #383a42;
+  --red: #f13d64;
+  --red-1: #f16464f5;
+  --green: #4ae125;
+  --darkgreen: #acb5b2;
+  --blue: #2f90eb;
+  --darkblue: #3b84e4;
+  --purple: #a625a4;
+  --aqua: #0084bc;
+  --yellow: #e48100;
+  --light-yellow: #ab9a02;
+  --orange: #db9600;
+  --light-purple: #b74ff3;
+  --blue-green: #3bd4da;
+  
+
+  --embed-color: #468eeb27;
+  --search-result-file-title-color: #2f92e4;
+  --theme-color: #2f92e4;
+  --theme-color-translucent: #2f92e4a2;
+  --theme-color-translucent-1: #2f93e426;
+  --color-specification: #0084ff;
+  --allow-1: #ec9a3c;
+
+  /*list*/
+  --list-ul-block-color: #b9751b;
+  --list-ul-disc-color: #ff7300;
+  --list-ul-hover: #dd922f;
+  --list-ol-block-color: #3573a5;
+  --list-ol-number-color: #a3bee0;
+  --list-ol-hover: #5c95e0;
+ 
+  /*tags*/
+  --stag1: #ff0000;
+  --stag2: #ff9900;
+  --stag3: #00a030;
+  --tag1: #e77e7e;
+  --tag2: #dbb671;
+  --tag3: #cacc41;
+  --tag4: #5dcf53;
+  --tag5: #49c9ce;
+  --tag6: #6da1dd;
+  --tag7: #9270db;
+  --tag8: #e277d9;
+  --tag9: #6b6b6b;
+
+  /*Titles*/
+  --h1-color: #08367c;
+  --h2-color: #004faa;
+  --h3-color: #0e64bb;
+  --h4-color: #3481c5;
+  --h5-color: #59a0e2;
+  --h6-color: #88b8e6;
+
+  /*graph*/
+  --graph-text-color: #696969;
+  --graphtag: #77d425cc;
+  --graph-attach: #afcfe0cc;
+  --graph-circle: #1f78b4cc;
+  --graph-line: #dadada;
+  --graph-unresolved: #db4e4ecc; 
+  --graph-arrow: #e25300; 
+
+  /*mermaid*/
+  --mermaid-active-task-color: #44bbff;
+  --mermaid-seq-dia-color: #76c8ff;
+
+  /*table*/
+  --table-background-color: #ebebeb;
+  --table-background-color-odd: #ffffff;
+  --table-border-color: #555555;
+  --table-thead-background-color: #bfddf5;
+  --table-hover-raw-color: #2f93e42f;
+  --table-hover-color: #2f93e47c;
+  --table-hover-thead-color: #cde8ff;
+
+  /*calendar*/
+  --calendar-week-color: #48b432;
+  --calendar-week-hover: #e9ffe3;
+  --calendar-week-background-color: #d6e6bf;
+
+  /*day planner*/
+  --day-planner-pie: #eca95c;
+  --day-planner-timeline: #d62f2f;
+  --day-planner-line: #ffd900;
+  --day-planner-dot: #ffd900;
+  --day-planner-item-hover: #8fccff;
+  --event-item-color1: #65ace6;
+  --event-item-color2: #52a4e7;
+  --event-item-color3: #2e96eb;
+  --event-item-color4: #2786da;
+  --event-item-color5: #1275cc;
+  --event-item-color6: #2664c0;
+  --event-item-color7: #1652ac;
+  --event-item-color8: #0c469c;
+  --event-item-color9: #0a3c86;
+  --event-item-color10:#072f6b;
+
+  /*colourful notes*/
+  --text-gray: #37352f99;
+  --text-brown: #855a46;
+  --text-orange: #d9730d;
+  --text-yellow: #d4a300;
+  --text-green: #00927f;
+  --text-blue: #0083bb;
+  --text-purple: #5d1fb9;
+  --text-pink: #c40075;
+  --text-red: #ff4343;
+
+  --background-gray: #ebeced;
+  --background-brown: #e9e5e3;
+  --background-orange: #faebdd;
+  --background-yellow: #fbf3db;
+  --background-green: #ddedea;
+  --background-blue: #ddebf1;
+  --background-purple: #eae4f2;
+  --background-pink: #f4dfeb;
+  --background-red: #ffe3e3;
+
+  --note-important: #fd4141;
+  --note-cloze: #000000;
+	
+  /* stickies */
+  --stickies-color-1: #b3e2b3;
+  --stickies-color-2: #e9c6f1;
+  --tape-color: #acacac65;
+
+  /*Sliding panes*/
+  --header-color: #0e64bb;
+}
+
+/*=========================*/
+/*==========tags===========*/
+/*=========================*/
+/*special tags*/
+.tag[href^="#important"] {
+  background-color: var(--stag1) !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-important:not(.cm-formatting-hashtag) {
+  color: var(--stag1);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#重要"] {
+  background-color: var(--stag1) !important;
+  font-weight: 600;
+  font-family: Webdings, Microsoft YaHei;
+}
+.tag[href^="#complete"] {
+  background-color: var(--stag3) !important;
+  font-weight: 600;
+  font-family:  var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-complete:not(.cm-formatting-hashtag) {
+  color: var(--stag3);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#完成"] {
+  background-color: var(--stag3) !important;
+  font-family: Origin, Microsoft YaHei;
+  font-weight: 600;
+}
+.tag[href^="#inprogress"] {
+  background-color: var(--stag2) !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
+  color:var(--stag2);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#进行中"] {
+  background-color: var(--stag2) !important;
+  font-weight: 600;
+  font-family: Wingdings, Microsoft YaHei;
+}
+.tag[href^="#dailynote"] {
+  background-color: #277cdd !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#dailynote"]::after {
+  content:' 🐈';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
+  color: #277cdd;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#weeklynote"] {
+  background-color: #419aff !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#weeklynote"]::after {
+  content:' 🥑';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
+  color: #419aff;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#questions"] {
+  background-color: #8555df !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#questions"]::after {
+  content:' ❓';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-questions:not(.cm-formatting-hashtag) {
+  color: #8555df;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#ideas"] {
+  background-color: #28ac00 !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#ideas"]::after {
+  content:' 💡';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
+  color: #28ac00;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+
+/*colorful tags*/
+.tag:not(.token).tag:nth-child(9n+1) {
+  background-color: var(--tag1);/*1*/
+} 
+.tag:not(.token).tag:nth-child(9n+2) {
+  background-color: var(--tag6);/*6*/
+} 
+.tag:not(.token).tag:nth-child(9n+3) {
+  background-color: var(--tag2);/*2*/
+} 
+.tag:not(.token).tag:nth-child(9n+4) {
+  background-color: var(--tag7);/*7*/
+} 
+.tag:not(.token).tag:nth-child(9n+5) {
+  background-color: var(--tag3);/*3*/
+} 
+.tag:not(.token).tag:nth-child(9n+6) {
+  background-color: var(--tag8);/*8*/
+} 
+.tag:not(.token).tag:nth-child(9n+7) {
+  background-color: var(--tag4);/*4*/
+} 
+.tag:not(.token).tag:nth-child(9n+8) {
+  background-color: var(--tag9);/*9*/
+} 
+.tag:not(.token).tag:nth-child(9n) {
+  background-color: var(--tag5);/*5*/
+}   
+
+/* ====== Tag Pills ======== */
+.tag:not(.token) {
+	border: none;
+	color: #f1f1f1;
+	padding: 1px 8px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.tag:not(.token):hover {
+	color: white;
+	background-color: var(--theme-color) !important;
+}
+
+/*tag pane*//*
+.pane-list-item-ending-flair{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 12px;
+  background-color: var(--background-secondary-alt);
+  line-height: 12px;
+  border-radius: 3px;
+  padding: 2px 4px;
+}*/
+
+/* Tag pills in edit mode 
+.CodeMirror-line span.cm-hashtag-begin {
+  background-color: var(--text-accent);
+  color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-left: 8px;
+  border-right: none;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.CodeMirror-line span.cm-hashtag-end {
+  background-color: var(--text-accent);
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-right: 8px;
+  border-left: none;
+  display: inline-block;
+  text-decoration: none !important;
+}
+*/
+
+/*=========================*/
+
+/*thanks to Klaas from Obsidian Members Group on discord*/
+/* Selection highlight */
+.suggestion-item.is-selected {
+  background-color: var(--theme-color-translucent-1);
+}
+
+.markdown-preview-view {
+  padding: 4px 20px 10px 28px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  color: var(--text-normal);
+  user-select: text;
+}
+
+/*edit mode font size*/
+pre.CodeMirror-line {
+  font-size: var(--font-size-edit-normal) !important;
+}
+
+/*preview mode font size*/
+p {
+  font-size: var(--font-size-preview-normal);
+}
+
+/*tag font size and font family*/
+a.tag {
+  font-size: var(--font-size-tag);
+  font-family: var(--font-family-tag);
+}
+
+/*edit mode blockquote font size*/
+.cm-s-obsidian span.cm-quote {
+  font-size: var(--font-size-edit-blockquote);
+}
+
+/*code font size*/
+code {
+  font-size: var(--font-size-code) !important;
+}
+
+
+/* mark highlighting */
+mark { 
+  background-color: var(--mark-highlight)!important;
+  padding: 1px 3px; 
+  border-radius: 3px;
+}
+
+/* outliner for the outline */
+/*thanks to wonton from forum*/
+.nav-folder-children .nav-folder-children {
+  margin-left: 12px;
+  padding-left: 0;
+  border-left: 2px solid var(--background-modifier-border);
+  border-radius: 0px;
+  transition: all 400ms ease-in;
+}
+
+.nav-folder-children .nav-folder-children:hover {
+  border-left-color: var(--theme-color);
+}
+
+/*标题后阴影*/
+.view-header-title-container:after {
+display: none;
+}
+/*标题前阴影*/
+.view-header-title-container::before {
+  display: none;
+}
+
+.workspace-leaf.mod-active .view-header-title::selection {
+  background-color: var(--theme-color-translucent);
+  color: var(--text-normal);
+}
+
+.view-action > svg.link {
+  color: var(--red);
+}
+
+/* view action buttons */
+.view-actions {
+  padding: 5px 0;
+}
+
+.workspace-leaf.mod-active .view-header-icon {
+  color: var(--interactive-accent);
+  cursor: grab;
+  position: relative;
+}
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  -webkit-app-region: drag;
+  display: flex;
+  flex-grow: 1;
+  color: var(--text-normal);
+}
+
+.titlebar-left {
+  width: 30px;
+}
+
+/*change color when hover*/
+.titlebar-button.mod-back:hover,
+.titlebar-button.mod-forward:hover {
+  color: var(--theme-color);
+  transform: scale(1.2);
+}
+
+.titlebar-button.mod-maximize:hover, 
+.titlebar-button.mod-minimize:hover,
+.workspace-ribbon-collapse-btn:hover,
+.workspace-tab-header.is-active:hover{
+  color: var(--theme-color);
+}
+
+.workspace-tab-header:hover {
+  color: var(--theme-color);
+  text-align: center;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.workspace-tab-header.is-active {
+  color: var(--theme-color);
+}
+
+.titlebar-button {
+  -webkit-app-region: no-drag;
+  padding: 0 9px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.titlebar-button:hover {
+  opacity: 1;
+}
+
+/*reduce space of header buttons*/
+div.nav-header {
+  padding: 0px 5px 5px 5px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  line-height: 0;
+}
+div.nav-buttons-container {
+  margin: 0px 0px 0px 0px;
+}
+input.search-input {
+  margin: -2px 0px -3px 0px;
+}
+.nav-action-button {
+  margin: 0px 2px 0px 2px !important;
+}
+.workspace-leaf-content[data-type='search'] .nav-action-button,
+.workspace-leaf-content[data-type='backlink'] .nav-action-button{
+  padding: 3px 3px 3px 3px;
+}
+
+/*后退前进符号*/
+/*
+.titlebar-button.mod-back svg {
+  display:none;
+}
+.titlebar-button.mod-back:before {
+  content:"<<prev";
+  font-size: 11px; 
+  top:-2px;
+  position:relative;
+}
+.titlebar-button.mod-forward svg {
+  display:none;
+}
+.titlebar-button.mod-forward:before {
+  content:"next>>";
+  font-size: 11px; 
+  top:-2px;
+  position:relative;
+}
+*/
+
+/*tag page button*/
+.nav-buttons-container > .nav-action-button,
+.nav-buttons-container > .nav-action-button.is-active {
+  padding: 5px;
+}
+
+.titlebar-text {
+  flex-grow: 1;
+  margin-right: 20px;
+  font-size: var( --font-size-obsidian-titlebar);
+  text-align: center;
+  letter-spacing: 0.05em;
+  opacity: 1;
+  color: var(--text-accent);
+  margin-top: -1px;
+}
+
+/*添加其他文字*/
+/*
+.titlebar-text:after {
+  content: " ";
+  font-size: 10px;
+  text-align: center;
+  right:-1px;
+  color: var(--text-accent2);
+  position: relative;
+}
+.titlebar-text:before{
+  content: " ";
+  font-size: 11px;
+  text-align: center;
+  right:1px;
+  color: var(--text-accent);
+  position: relative;
+}
+
+.titlebar-button-container {
+  position: absolute;
+  height: 26px;
+  top: 0px;
+}
+*/
+.side-dock-ribbon-action{
+  padding: 7px 0 2px 0;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover {
+  color: var(--theme-color);
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+  padding-left: 0px;
+  font-size: var(--font-size-vault-name);
+  font-family: var(--font-family-vault);
+  font-weight: bolder;
+  top: 0px; 
+  cursor: default;
+  position: sticky;
+  z-index: 900;
+  background-color: var(--background-secondary-alt);
+}
+
+.nav-folder.mod-root > .nav-folder-title:hover {
+  background-color: var(--theme-color);
+  color: white;
+  opacity: 1;
+}
+
+/*==== separators =====*/
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+  padding-right: 0px;
+}
+.workspace-leaf-resize-handle {
+  background-color: var(--background-secondary-alt);
+}
+
+body {
+  -webkit-font-smoothing: auto;
+}
+
+/*==========================*/
+/*=======search panel=======*/
+/*==========================*/
+.search-result-file-title {
+  color: var(--search-result-file-title-color);
+}
+
+/*reduce search result margin*/
+.search-result-file-match {
+  padding: 0 3px;
+  width: 101%;
+  left: -9px;
+  background: var(--background-search-result);
+  color: var(--text-normal);
+  border-radius: 6px;
+}
+
+.backlink-pane .search-result-container {
+  margin-left: 3px;
+}
+
+.search-result-file-matches {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.search-result-file-matched-text {
+  color: var(--text-muted); 
+}
+
+.tree-item-self.is-clickable:hover {
+  background-color: transparent;
+  color: var(--search-result-file-title-color);
+}
+
+.tag-container .tree-item-self.tag-pane-tag.is-clickable:hover {
+  background-color: var(--theme-color-translucent-1);
+  color: var(--text-normal);
+}
+
+.outline .tree-item-self.is-clickable:hover {
+  background-color: var(--theme-color-translucent-1);
+  color: var(--text-normal);
+}
+
+.backlink-pane > .tree-item-self.is-clickable:hover {
+  background-color: var(--background-secondary-alt);
+  color: var(--text-normal);
+}
+
+.search-result-file-match:hover {
+  background-color: var(--background-secondary-alt);
+  color: var(--text-normal);
+}
+
+span.search-result-file-matched-text {
+  color: var(--search-text);
+  background-color: var(--text-highlight-bg);
+  opacity: 0.8;
+  }
+
+/* background of search result */
+.search-result {
+  border-radius: 5px;
+  margin: 0 4px 0 1px;
+}
+
+.tree-item.search-result .tree-item-self.search-result-file-title.is-clickable {
+  padding-left: 15px;
+}
+
+.search-result-file-match:after {
+  display: none;
+}
+
+.search-input {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: calc(100% - 20px);
+}
+
+.nav-action-button > svg {
+  width: 17px;
+  height: 17px;
+}
+
+/*code box unfold icon*/
+.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
+  color: var(--text-accent);
+}
+
+/*checkbox*/
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-normal);
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-bottom: 1px;
+  filter: hue-rotate(var(--theme-color));
+  transition: all 500ms;
+  cursor: pointer;
+}
+.markdown-preview-view .task-list-item-checkbox:checked {
+  border: none;
+  background-color: var(--interactive-accent);
+}
+.markdown-preview-view .task-list-item-checkbox:hover {
+  background-color: var(--theme-color-translucent);
+}
+
+/* the SVG check mark */
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: ' ';
+  position: absolute;
+  background-color: white;
+  left: 3px;
+  top: 3px;
+  right: 2px;
+  bottom: 2px;
+  transform: scale(1.1);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E");
+}
+
+.markdown-preview-view .task-list-item:has(.task-list-item-checkbox:checked) {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/*checkbox in edit mode*/
+/*thanks to Piotr and ishgunacar from forum*/
+span.cm-formatting-task {
+  display: inline !important; 
+  font-family: "Andale Mono";
+}
+
+span.cm-formatting-task.cm-property {
+  color: var(--text-accent);
+} 
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-meta,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property {
+  color: transparent;
+  position: relative;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-meta:after,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property:after {
+  content: "☐";
+  position: absolute;
+  top: 2px;
+  left: -1px;
+  color: var(--text-normal);
+  font-size: 23px;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task.cm-property:after {
+  content: "☑";
+  color: var(--text-accent) !important;
+}
+
+/*aligning checkbox icons*/
+.cm-formatting.cm-formatting-task.cm-meta {
+  padding-left: 3px;
+}
+
+.markdown-preview-view h1 {
+  font-size: var(--font-size-h1); 
+  font-weight:600;
+  line-height: 1.3;
+  padding-bottom:1px;
+  border-bottom: 2px solid var(--h1-color);
+  font-family: var(--font-family-h1);
+}
+
+.markdown-preview-view h2 {
+  font-size: var(--font-size-h2); 
+  font-weight:600;
+  line-height: 1.3;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--h2-color);
+  font-family: var(--font-family-h2);
+}
+
+.markdown-preview-view h3 {
+  font-size: var(--font-size-h3); 
+  font-weight:600; 
+  font-family: var(--font-family-h3);
+}
+.markdown-preview-view h4 {
+  font-size: var(--font-size-h4); 
+  font-weight:600; 
+  font-family: var(--font-family-h4);
+}
+.markdown-preview-view h5 {
+  font-size: var(--font-size-h5); 
+  font-weight:600; 
+  font-family: var(--font-family-h5);
+}
+.markdown-preview-view h6 {
+  font-size: var(--font-size-h6); 
+  font-weight:600; 
+  font-family: var(--font-family-h6);
+}
+
+.markdown-preview-view h1 {
+  color: var(--h1-color);
+}
+.markdown-preview-view h2 {
+  color: var(--h2-color);
+}
+.markdown-preview-view h3 {
+  color: var(--h3-color);
+}
+.markdown-preview-view h4 {
+  color: var(--h4-color);
+}
+.markdown-preview-view h5 {
+  color: var(--h5-color);
+}
+.markdown-preview-view h6 {
+  color: var(--h6-color);
+}
+	
+.cm-header-1 {
+  font-size: var(--font-size-h1); 
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h1);
+}
+.cm-header-2 {
+  font-size: var(--font-size-h2); 
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h2);
+}
+.cm-header-3 {
+  font-size: var(--font-size-h3); 
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h3);
+}
+.cm-header-4 {
+  font-size: var(--font-size-h4); 
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h4);
+}
+.cm-header-5 {
+  font-size: var(--font-size-h5); 
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h5);
+}
+.cm-header-6 {
+  font-size: var(--font-size-h6);
+  font-weight:600; 
+  position: relative; 
+  font-family: var(--font-family-h6);
+}
+
+.cm-s-obsidian .cm-header,
+.cm-s-obsidian .cm-strong {
+  font-weight:600;
+}
+
+.cm-header-1 {
+  color: var(--h1-color);
+}
+.cm-header-2 {
+  color: var(--h2-color);
+}
+.cm-header-3 {
+  color: var(--h3-color);
+}
+.cm-header-4 {
+  color: var(--h4-color);
+}
+.cm-header-5 {
+  color: var(--h5-color);
+}
+.cm-header-6 {
+  color: var(--h6-color);
+}
+
+.nav-files-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-left: 0px;  /* reduce to 0 for more space */
+  padding-bottom: 15px;
+  overflow-x: hidden;
+}
+
+.markdown-preview-view blockquote {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 8px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  border-right-width:0; 
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 7px;
+  border-color: var(--theme-color);
+  background-color: var(--background-primary-alt);
+  border-radius: 0%;
+}
+.theme-dark .markdown-preview-view blockquote {
+  background-color: var(--background-blockquote-dark) !important;
+}
+
+
+.markdown-preview-view blockquote p {
+  margin-left: 1px;
+  margin-right: 0px;
+  font-size: var(--font-size-preview-blockquote);
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-section,
+.markdown-source-view.is-readable-line-width .CodeMirror,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  line-height: 1.7;
+  font-family: var(--font-family-major);
+  text-align: justify;
+}
+
+pre.HyperMD-list-line.HyperMD-list-line {
+  text-align: start;
+}
+
+/*list*/
+li {
+  line-height: 28px;
+  font-family: var(--font-family-list);
+}
+
+/*
+blockquote {
+  margin: 20px 0;
+}*/
+
+mjx-container[jax='CHTML'] {
+  text-align: left;
+  outline: none;
+  font-size: var(--font-size-latex);
+}
+
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock,
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.theme-dark .markdown-preview-view code {
+  color: #e48900;
+  font-size: var(--font-size-edit-code) !important;
+  font-family: var(--font-family-preview-edit-code);
+  text-align: start;
+}
+
+.theme-light .cm-s-obsidian pre.HyperMD-codeblock,
+.theme-light .cm-s-obsidian span.cm-inline-code,
+.theme-light .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.theme-light .markdown-preview-view code {
+  color: #ee5f00;
+  font-size: var(--font-size-edit-code) !important;
+  font-family: var(--font-family-preview-edit-code);
+  text-align: start;
+}
+
+/*bold code text except code language*/
+code:not([class*='language-']) {
+  font-weight: 600;
+  font-family: var(--font-family-preview-edit-code) !important;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+  font-weight: 600;
+  font-family: var(--text-family-inline-code) !important;
+}
+
+/*====================================*/
+/*Add vertical lines of embedded lists*/
+/*thanks to loikein and death_au from forum and icr1001 from GitHub*/
+
+/*.cm-hmd-list-indent .cm-tab,
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  position: relative;
+}*/
+
+.cm-hmd-list-indent .cm-tab::before/*,
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before*/ {
+  content: '';
+  border-left: 2px solid var(--background-modifier-border);
+  position: absolute;
+  height: 100%;
+  margin-left: 3px;
+}
+
+/*
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before {
+  left: -13px;
+  top: 0;
+  bottom: 0;
+} */
+
+
+/*
+pre.HyperMD-list-line::before {
+  content: '';
+  border-left: 2px solid var(--background-modifier-border);
+  left: 7.5px;
+  top: 30px;
+  height: 50%;
+}
+*/
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
+  color: var(--text-accent);
+}
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul {
+  color: #da8507;
+}
+
+/* inspired by Gabroel from Obsidian discord group */
+/* https://discord.com/channels/686053708261228577/702656734631821413/784922140465692712 */
+li > p:not(.task-list-item) {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul,
+ol ul,
+ol ol ul,
+ol ol ol ul {
+  list-style: disc;
+}
+
+ul ul,
+ol ul ul,
+ul ol ul,
+ol ol ul ul {
+  list-style: circle;
+}
+
+ul ul ul,
+ol ul ul ul,
+ul ol ul ul,
+ul ul ol ul {
+  list-style: square;
+}
+
+ul ul ul ul,
+ol ul ul ul ul,
+ul ol ul ul ul,
+ul ul ol ul ul,
+ul ul ul ol ul {
+  list-style: circle;
+}
+
+ul > li:not(.task-list-item) {
+  margin-left: -5px;
+  padding-left: 6px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  padding-right: 6px;
+  word-wrap: break-word;
+  word-break: break-word;
+  transition: all 300ms ease-in-out;
+}
+
+.theme-dark ul > li:not(.task-list-item) {
+  border-left: 2px solid var(--list-ul-block-color);
+}
+
+.theme-light ul > li:not(.task-list-item) {
+  border-left: 2px solid var(--list-ul-block-color);
+}
+
+ul > li:not(.task-list-item):hover {
+  border-color: var(--list-ul-hover);
+}
+
+ol {
+  padding-inline-start: 1em;
+  margin-left: 25px;
+  list-style: decimal;
+}
+
+ol ol {
+  list-style: lower-latin;
+}
+
+ol ol ol,
+ol ul ol {
+  list-style: lower-roman;
+}
+
+ol ol ol ol,
+ol ol ul ol,
+ol ul ol ol {
+  list-style: decimal;
+}
+
+ol > li {
+  margin-left: -5px;
+  padding-left: 6px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  padding-right: 6px;
+  transition: all 300ms ease-in-out;
+} 
+
+.theme-dark ol > li {
+  border-left: 2px solid var(--list-ol-block-color);
+} 
+
+.theme-light ol > li {
+  border-left: 2px solid var(--list-ol-block-color);
+} 
+
+ol > li:hover {
+  border-color: var(--list-ol-hover);
+}
+
+ol > li::marker {
+  font-weight: bold;
+  color: var(--list-ol-number-color);
+  white-space: pre;
+}
+
+ul li, ol li {
+  font-size: var(--font-size-list);
+}
+
+/*====================================*/
+
+
+.markdown-preview-view code {
+  vertical-align: auto;
+}
+
+.markdown-preview-section:not(:first-child) h1,
+.markdown-preview-section:not(:first-child) h2,
+.markdown-preview-section:not(:first-child) h3,
+.markdown-preview-section:not(:first-child) h4,
+.markdown-preview-section:not(:first-child) h5 {
+  margin-top: 13px !important;
+}
+
+.markdown-preview-section:not(:first-child) h6 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+strong, 
+b, 
+.view-header-title {
+  font-weight: 600;
+}
+
+span.cm-strong, strong {
+  color: var(--accent-strong);
+}
+
+.theme-dark strong > em, 
+.theme-dark .cm-strong.cm-em.cm-overlay {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #f55454;
+  background-image: linear-gradient(120deg, #11a0ff 0%, #f0d040 100%) !important;
+  /* adapted from Obsidianite*/
+  
+  /*background-color: var(--background-secondary-alt);
+  border-radius: 3px;
+  padding: 0 3px;*/
+}
+
+.theme-light strong > em, 
+.theme-light .cm-strong.cm-em.cm-overlay {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #f55454;
+  background-image: linear-gradient(270deg, #40b3ff 0%, #0065b8 80%) !important;
+}
+
+span.cm-formatting.cm-formatting-strong.cm-strong {
+  opacity: 0.2;
+}
+
+span.cm-formatting.cm-formatting-em.cm-em {
+  opacity: 0.2;
+}
+
+span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
+  opacity: 0.2;
+}
+
+.theme-dark div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong {
+  opacity: 1;
+  color:  var(--text-accent);
+}
+
+.theme-dark div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
+  opacity: 1;
+  color:  var(--text-orange);
+}
+
+.theme-dark div.CodeMirror-activeline .CodeMirror-line  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
+  opacity: 1;
+  color:  var(--green);
+}
+
+.theme-light div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong {
+  opacity: 1;
+  color:  var(--orange);
+}
+
+.theme-light div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em {
+  opacity: 1;
+  color:  var(--orange);
+}
+
+.theme-light div.CodeMirror-activeline .CodeMirror-line  span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
+  opacity: 1;
+  color:  var(--orange);
+}
+
+.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {  
+  border: none;
+} 
+
+/*smaller header title*/
+.view-header-title {
+  font-size: var(--font-size-file-header-title);
+  font-weight: 600;
+  overflow: auto;
+  padding: 0px 6px 0px 0px; /*"6px" for Andy mode plugin v3.0.1*/
+  white-space: nowrap;
+  top: 2px;
+  border-top: 3px transparent;
+  border-bottom: 3px transparent;
+  color: var(--text-muted);
+  background-color: transparent;
+  position: relative;
+}
+
+/*============bigger link popup preview  ================*/
+.popover.hover-popover {
+  position: absolute;
+  transform: scale(1); /* makes the content smaller */
+  min-height: 50px;
+  width: 500px; /* was 400 */
+  overflow: overlay;      
+  padding: 0;
+  box-shadow: 0 0 6px 6px var(--theme-color-translucent-1);
+}
+
+.popover.hover-popover .markdown-embed  {
+  height: 400px;
+}
+
+
+/*table from https://snippets.cacher.io/snippet/018387c872dc39277996 by eluotao*/
+tbody>tr:nth-child(odd) {
+  background-color: var(--table-background-color-odd);
+}
+ 
+tbody > tr {
+  background-color: var(--table-background-color);
+}
+ 
+.markdown-preview-view th,
+.markdown-preview-view td{
+  padding: 4px 20px;
+  border: 1px solid var(--table-border-color);
+}
+
+.markdown-preview-view thead {
+  background-color: var(--table-thead-background-color);
+}
+
+/*table hover*/
+.markdown-preview-view td:hover{
+  background-color: var(--table-hover-color);
+}
+
+/*table raw hover*/
+.markdown-preview-view tr:hover{
+  background-color: var(--table-hover-raw-color);
+}
+
+.markdown-preview-view th:hover{
+  background-color: var(--table-hover-thead-color);
+}
+
+/*
+.popover {
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-accent);
+  box-shadow: 1px 1px 1px 1px var(--text-accent);
+  border-radius: 0px;
+  padding: 15px 20px 10px 20px;
+  position: relative;
+  font-weight: 400;
+  text-align: justify; 
+  -webkit-text-stroke: 0.0px;
+  /*-webkit-font-smoothing: none;*
+  color:var(--text-normal);
+  overflow-y: scroll;
+}*/
+
+.popover mark {
+  background-color: var(--text-highlight-bg);     
+  color: var(--text-normal);     
+}
+
+.workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary);
+  border-bottom: 3px solid var(--theme-color); 
+}
+
+.status-bar, .side-dock.mod-right, .side-dock.mod-left {
+  border-color: var(--panel-border-color);
+  border-width: 1px;
+}
+
+.status-bar {
+  --bar-vertical-padding: 4px;
+  --bar-height: calc(22px + (var(--bar-vertical-padding)));
+  line-height: 1;
+  padding: 0 20px;
+  height: var(--bar-height);
+  max-height: var(--bar-height);
+  min-height: var(--bar-height);
+  overflow: hidden;
+  color: var(--text-muted);
+}
+
+.status-bar-item {
+  margin: auto 0;
+}
+
+.status-bar-item > * {
+  padding-top: var(--bar-vertical-padding) !important;
+  padding-bottom: var(--bar-vertical-padding) !important;
+}
+
+.nav-file-title.is-active {
+  --background-secondary-alt: var(--interactive-accent);
+  --text-normal: #ffffff;
+}
+
+.nav-file:not(.is-active):hover .nav-file-title,
+.nav-folder:hover .nav-folder-content {
+  background-color: var(--theme-color-translucent);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.side-dock-plugin-panel-inner {
+  padding-left: 6px;
+}
+
+a,
+.markdown-preview-view .internal-link {
+  text-decoration: none;
+}
+
+a:hover,
+.markdown-preview-view .internal-link:hover {
+  text-decoration: underline;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+  opacity: 0.7;
+  text-decoration: underline;
+  color: var(--graph-unresolved);
+}
+
+.markdown-preview-view a:hover {
+  color: var(--text-accent);
+  background: var(--theme-color-translucent-1);
+  border-radius: 3px;
+  text-decoration: none !important;
+  transition: all 0.3s;
+}
+
+a.external-link {
+  text-decoration: underline;
+}
+
+.cm-url:hover {
+  transition: all 600ms;
+}
+
+.markdown-preview-view .internal-link.is-unresolved:hover {
+  opacity: 1;
+}
+
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
+  background: var(--background-secondary);
+  border-radius: 7px;
+}
+
+.theme-light :not(pre) > code[class*='language-'],
+.theme-light pre[class*='language-'] {
+  background: var(--background-primary-alt);
+  border-radius: 7px;
+}
+
+.theme-light code[class*="language-"], 
+.theme-light pre[class*="language-"]{
+  text-shadow: none;
+}
+
+.theme-light code[class*="language-"], 
+.theme-light pre[class*="language-"] {
+  color: #000000;
+}
+
+.theme-dark code[class*="language-"], 
+.theme-dark pre[class*="language-"] {
+  color: #e7e7e7;
+}
+
+/*绑定页面
+body.is-hovering-clickable, body.is-hovering-clickable{
+cursor: pointer !important;
+}
+*/
+
+.markdown-preview-view .markdown-embed {
+  background-color: var(--embed-color); 
+  border: 1px solid var(--embed-color);  
+  border-radius: 4px;
+  padding: 0px 8px 0px 8px;
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+
+.markdown-preview-view .file-embed {
+  border: 2px solid var(--embed-color);  
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+}
+
+.markdown-preview-view .file-embed:hover {
+  border: 2px solid var(--theme-color-translucent);  
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+}
+
+
+.markdown-embed {
+  display: block;
+  top: 0px;
+}
+
+.markdown-preview-view .markdown-embed-content {
+  padding-right: 0px;
+  display: inline;
+  max-height: 100%;
+  max-width: 100%;
+  /*margin: 0px 0px -15px -10px;
+  padding: 20px 0px 0px 0px;*/
+  overflow: hidden; 
+}
+
+.file-embed-icon {
+  color: var(--theme-color);
+  vertical-align: middle;  
+}
+
+.markdown-embed-title {
+  font-weight: 600; 
+  text-align: left; 
+  font-size: var(--font-size-embed-title-size);  
+  height: 35px; 
+  margin: 10px 0;
+}
+
+.file-embed-title {
+  font-weight: 600; 
+  text-align: left; 
+  font-size: var(--font-size-embed-file);  
+  margin: 5px 0;
+  padding: 0 10px;
+}
+
+.theme-light .token.operator,
+.theme-light .token.entity,
+.theme-light .token.url,
+.theme-light .language-css .token.string,
+.theme-light .style .token.string {
+  background: transparent;
+}
+
+/* Source: https://github.com/AGMStudio/prism-theme-one-dark */
+code[class*='language-'],
+pre[class*='language-'] {
+  text-align: left !important;
+  word-spacing: normal !important;
+  word-break: normal !important;
+  word-wrap: pre-wrap !important;
+  line-height: 1.5 !important;
+  -moz-tab-size: 4 !important;
+  -o-tab-size: 4 !important;
+  tab-size: 4 !important;
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  -ms-hyphens: none !important;
+  hyphens: none !important;
+  padding-right: 30px !important;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: .1em !important;
+  border-radius: .3em !important;
+  white-space: normal !important;
+}
+
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--gray-1) !important;
+}
+
+
+.token.comment {
+  color: var(--darkgreen) !important;
+}
+
+.token.punctuation {
+  color: var(--gray-2) !important;
+}
+
+.token.selector,
+.token.tag {
+  color: var(--yellow) !important;
+}
+
+.token.property,
+.token.boolean,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+  color: var(--blue) !important;
+}
+
+.token.number {
+  color: var(--green) !important;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+  color: var(--green) !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--aqua) !important;
+}
+
+.token.atrule,
+.token.keyword {
+  color: var(--purple) !important;
+}
+
+.theme-dark .token.function {
+  color: var(--light-yellow) !important;
+}
+
+.theme-light .token.function {
+  color: var(--red) !important;
+}
+
+.token.macro.property {
+  color: var(--blue) !important;
+}
+
+.token.class-name {
+  color: var(--yellow) !important;
+}
+
+.theme-dark .token.regex,
+.theme-dark .token.variable {
+  color: var(--red) !important;
+}
+
+.theme-light .token.regex,
+.theme-light .token.variable {
+  color: var(--light-purple) !important;
+}
+
+.theme-dark .token.important {
+  color: var(--darkblue) !important;
+}
+
+.theme-light .token.important {
+  color: var(--blue-green) !important;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold !important;
+}
+
+.token.italic {
+  font-style: italic !important;
+}
+
+.token.entity {
+  cursor: help !important;
+}
+
+pre.line-numbers {
+  position: relative !important;
+  padding-left: 3.8em !important;
+  counter-reset: linenumber !important;
+}
+
+pre.line-numbers > code {
+  position: relative !important;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute !important;
+  pointer-events: none !important;
+  top: 0 !important;
+  font-size: 100% !important;
+  left: -3.8em !important;
+  width: 3em !important; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px !important;
+  border-right: 0 !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none !important;
+  display: block !important;
+  counter-increment: linenumber !important;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber) !important;
+  color: var(--syntax-gray-1) !important;
+  display: block !important;
+  padding-right: 0.8em !important;
+  text-align: right !important;
+}
+
+/*unfold code*/
+pre> code>span {
+  word-wrap:break-word;
+  word-break:break-all;
+  white-space: pre-wrap;
+}
+
+code.language-yaml.is-loaded{
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+code.language-md.is-loaded{
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: break-spaces !important;
+}
+
+/*show language type in preview mode*/ 
+/*Thanks to elutao from https://snippets.cacher.io/snippet/018387c872dc39277996 */
+/* pre通用相对css */
+pre:before{
+  font-family: var(--default-font);
+  color: #6b7f94;
+  opacity: 0.7;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  right: 30px;
+  top: 0.2em;
+}
+ 
+/* 显示当前代码块的语言类别 */
+pre {
+  position: relative;
+}
+ 
+pre[class~='language-c']:before {
+  content: "C";
+}
+ 
+pre[class~='language-python']:before {
+  content: "PYTHON";
+}
+ 
+pre[class~='language-nginx']:before {
+  content: "NGINX";
+}
+ 
+pre[class~='language-css']:before {
+  content: "CSS";
+}
+ 
+pre[class~='language-javascript']:before {
+  content: "JS";
+}
+ 
+pre[class~='language-js']:before {
+  content: "JS";
+}
+ 
+pre[class~='language-php']:before {
+  content: "PHP";
+}
+ 
+pre[class~='language-shell']:before {
+  content: "SHELL";
+}
+ 
+pre[class~='language-flow']:before {
+  content: "FLOW";
+}
+ 
+pre[class~='language-sequence']:before {
+  content: "SEQUENCE";
+}
+ 
+pre[class~='language-sql']:before {
+  content: "SQL";
+}
+ 
+pre[class~='language-yaml']:before {
+  content: "YAML";
+}
+ 
+pre[class~='language-ini']:before {
+  content: "INI";
+}
+ 
+pre[class~='language-xml']:before {
+  content: "XML";
+}
+ 
+pre[class~='language-git']:before {
+  content: "GIT";
+}
+ 
+pre[class~='language-cs']:before {
+  content: "C#";
+}
+ 
+pre[class~='language-cpp']:before {
+  content: "C++";
+}
+ 
+pre[class~='language-java']:before {
+  content: "JAVA";
+}
+ 
+pre[class~='language-html']:before {
+  content: "HTML";
+}
+ 
+pre[class~='language-txt']:before {
+  content: "TXT";
+}
+
+/* ==== fold icons ==== */
+.CodeMirror-guttermarker-subtle {
+  color: var(--text-normal);
+}
+
+/*-- wider folding zone--*//*
+.CodeMirror-foldgutter {
+  width: 1em;
+}*/
+
+
+/*=============== DIRTY WYSIWYM HEADERS by _ph =====================*/
+/*=============== replace H1-H6 markup in edit mode ================*/
+
+/* Header folder icon *//*
+.CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded {
+  padding-left: -10px;
+}
+
+.CodeMirror-sizer {
+  margin-left: 35px !important;
+}
+*/
+
+/*-- reduce left padding --*/
+.CodeMirror {
+  height: 100%;
+  direction: ltr;
+  padding: 0 5px;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-header {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-header {
+  font-size: 12px;
+  opacity: 1;
+}
+
+/*-- hide # markup--*//*
+.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+  font-size: 0px;
+}
+
+/*-- display H1-h6 in gutter--
+.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1:before {
+  content: "H1";
+  font-size: 14px;
+  color: var(--h1-color);
+  left: -27px;
+  top: -13px;
+  position: absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2:before {
+  content: "H2";
+  font-size: 13px;
+  color: var(--h2-color);
+  left: -27px;
+  top: -11px;
+  position: absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3:before {
+  content: "H3";
+  font-size: 12px;
+  color: var(--h3-color);
+  left: -26px;
+  top: -10px;
+  position: absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4:before {
+  content: "H4";
+  font-size: 11px;
+  color: var(--h4-color);
+  left:-25px;
+  top: -9px;
+  position: absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5:before {
+  content: "H5";
+  font-size: 10px;
+  color: var(--h5-color);
+  left: -24px;
+  top: -7px;
+  position: absolute;
+}
+.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6:before {
+  content: "H6";
+  font-size: 9px;
+  color: var(--h6-color);
+  left: -23px;
+  top: -6px;
+  position: absolute;
+}
+
+/*-- is active line, hide H[1-6] in gutter --
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5:before,
+.CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6:before {
+  font-size: 0px;
+}
+
+/*-- is active line, display # markup --
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1 {
+  font-size: var(--font-size-h1);
+  display: inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2 {
+  font-size: var(--font-size-h2);
+  display: inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3 {
+  font-size: var(--font-size-h3);
+  display: inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4 {
+  font-size: var(--font-size-h4);
+  display: inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5 {
+  font-size: var(--font-size-h5);
+  display: inline;
+}
+.CodeMirror-activeline > pre > span .cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+  font-size: var(--font-size-h6);
+  display: inline;
+}*/
+
+/* show H1-H6 prefix in preview*/
+/*
+.theme-light h1::before {
+  content: 'H1 ';
+  font-size: 14px;
+  padding: 0 1px 0 0;
+}
+
+.theme-light h2::before {
+  content: 'H2 ';
+  font-size: 13px;
+  padding: 0 2px 0 0;
+}
+
+.theme-light h3::before {
+  content: 'H3 ';
+  font-size: 12px;
+  padding: 0 3px 0 0;
+}
+
+.theme-light h4::before {
+  content: 'H4 ';
+  font-size: 11px;
+  padding: 0 4px 0 0;
+}
+
+.theme-light h5::before {
+  content: 'H5 ';
+  font-size: 10px;
+  padding: 0 5px 0 0;
+}
+
+.theme-light h6::before {
+  content: 'H6 ';
+  font-size: 9px;
+  padding: 0 6px 0 0;
+}
+*/
+
+/*=============== FOCUS MODE by death_au + transparency mod ================*/
+/*
+.cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-link,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-internal-link,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-url,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-escape-backslash,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-inline-code,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > pre.CodeMirror-line.HyperMD-codeblock,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-builtin,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-footref,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line pre.HyperMD-footnote span.cm-hmd-footnote,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-highlight,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-highlight,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-list,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-quote,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-math,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.hmd-fold-math-placeholder {
+  opacity:0.8;
+  filter: saturate(0.8);
+}
+*/
+
+/*focus模式，高亮取消*/
+/*
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-highlight,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-highlight {
+  background-color: transparent;
+}
+.CodeMirror-activeline {
+  opacity:1;
+} 
+*/
+
+/* inline formatting, link targets and [[ ]] disappears if not active line
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link:not(.cm-hmd-footnote):not(.cm-footref) { 
+  display: none; 
+}
+
+/* hide all html tags -- IT IS COMMENTED OUT BY DEFAULT 
+/* div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag { 
+  display: none; 
+} */
+
+
+/* except list markers span.cm-formatting-list,
+/*code block backticks  span.cm-formatting-code-block.cm-hmd-codeblock,
+/* optionally header hashes  span.cm-formatting-header { 
+  display: inline !important; 
+}
+
+/* and task checkboxes 
+span.cm-formatting-task { 
+  display: inline !important; 
+  font-family: monospace; 
+}
+*/
+
+/* images : reduce displayed size of embedded files, zoom on hover */
+.markdown-preview-view img, 
+.markdown-preview-view video {
+  max-width: min(100%,800px);
+  margin-left: auto;
+  margin-right: auto;
+  outline: 0px solid var(--text-accent);
+}
+
+/*
+.markdown-preview-view img:hover, 
+.markdown-preview-view video:hover {
+  width: 100%;
+  height: 100%;
+  max-width: min(100%, 80vw);
+  max-height: min(100%, 80vh);
+  cursor: zoom-in;
+}
+*/
+
+/* Image zoom  */
+.view-content img:not([class="emoji"]) {
+  cursor: zoom-in;
+  display: block;
+}
+
+.view-content img:not([class="emoji"]):active {
+  cursor: zoom-out;    
+  position: fixed;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  top: 50%;  
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+  z-index: 200;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=")
+}
+
+/*file explorer columns view : slightly buggy ----*/
+/*.nav-folder-children {
+  column-width:150px;
+  column-rule: 1px solid var(--text-accent);
+}
+*/
+
+/* file explorer :Wrap long nav text and some paddings */
+.nav-file-title,
+.nav-folder-title {
+  white-space: normal;
+  width: auto;
+}
+
+/* file explorer : Indent wrapped nav text */
+.nav-file-title-content {
+  margin-left: 0px;
+  text-indent: 0px;
+  word-break: break-word;
+}
+.nav-file-title-content.is-being-renamed {
+  margin-left: 0px;
+  text-indent: 0px;
+}
+
+/* Cursor color in normal vim mode and opacity */
+.cm-fat-cursor .CodeMirror-cursor, 
+.cm-animate-fat-cursor {
+  width: 0.6em;
+  background: #db9a1f;
+  opacity: 0.6 !important;
+}
+
+/*an active line highlight in vim normal mode */
+.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground {
+  background-color: #468eeb33 !important;
+}
+
+/*if you want the highlight to present in both normal and insert mode of vim*/
+.theme-light .CodeMirror-activeline .CodeMirror-linebackground {
+  background-color: #9d99700d !important;
+}
+
+.theme-dark .CodeMirror-activeline .CodeMirror-linebackground {
+  background-color: #00767291 !important;
+}
+
+/*----file explorer smaller fonts & line height----*/
+.nav-file-title,
+.nav-folder-title {
+  font-size: var(--font-size-folder-and-file);
+  font-family: var(--font-family-folder-file-title);
+  line-height: 1.2;
+  cursor: pointer;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 0px;
+  padding: 1px 5px 0px 16px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.nav-file-title {
+  padding: 1px 5px 0px 4px;
+}
+
+.nav-folder-title {
+  font-weight: 600;
+  color: var(--text-normal);
+  opacity: 0.8;
+}
+
+/*rename*/
+.nav-file-title-content.is-being-renamed,
+.nav-folder-title-content.is-being-renamed {
+  cursor: text;
+  border-color: transparent;
+  background-color: white;
+  color: black;
+}
+
+/*---- nav arrows adjust location ----*/
+.nav-folder-collapse-indicator {
+  position: absolute;
+  left: 21px;
+  top: 3px;
+  transition: transform 20ms linear 0s;
+}
+
+.nav-folder-collapse-indicator::after {
+  position: absolute;
+  content : "↓";
+  left: -3px;
+  top: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.nav-folder-collapse-indicator svg {
+  display: none;
+  color: var(--accent-strong);
+  height: 7px;
+  width: 7px;
+}
+
+.nav-folder.is-collapsed .nav-folder-collapse-indicator {
+  transform: translateX(-11px) translateY(6px) rotate(-90deg);
+  opacity: 0.4;
+}
+
+/*search icon 1*/
+.backlink-pane .search-result-container .collapse-icon {
+  left: 0px;
+  top: 7px;
+  margin-top: 0px;
+  transition: transform 20ms linear 0s;
+}
+
+.backlink-pane .search-result-container .collapse-icon::before {
+  content : "↓";
+  font-size: 14px;
+  margin-left: -2px;
+  font-weight: bold;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.backlink-pane .search-result-container .collapse-icon svg {
+  display: none;
+  color:var(--accent-strong);
+  height:7px;
+  width:7px;
+}
+
+.backlink-pane .search-result-container .tree-item.search-result.is-collapsed .collapse-icon {
+  transform: translateX(1px) translateY(1px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/* search panel icons */
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon {
+  left: 0px;
+  top: 7px;
+  margin-top: 0px;
+  transition: transform 20ms linear 0s;
+}
+
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon::before {
+  content : "↓";
+  font-size: 14px;
+  margin-left: -2px;
+  font-weight: bold;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.workspace-leaf .search-result-container.mod-global-search .tree-item-self.search-result-file-title.is-clickable .collapse-icon svg {
+  display: none;
+  color:var(--accent-strong);
+  height:7px;
+  width:7px;
+}
+
+.workspace-leaf .search-result-container.mod-global-search .tree-item.search-result.is-collapsed .collapse-icon {
+  transform: translateX(1px) translateY(1px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/* headering collaspe indicators */
+div.heading-collapse-indicator.collapse-indicator {
+  position: absolute;
+  padding-left: 14px;
+  transition: transform 20ms linear 0s;
+}
+
+h1 div.heading-collapse-indicator.collapse-indicator,
+h2 div.heading-collapse-indicator.collapse-indicator {
+  position: absolute;
+  padding-left: 14px;
+  margin-top: 13px;
+  transition: transform 20ms linear 0s;
+}
+
+h1 div.heading-collapse-indicator.collapse-indicator::before,
+h2 div.heading-collapse-indicator.collapse-indicator::before {
+  content : "↓";
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: -4px;
+  margin-top: -6px;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon svg {
+  display: none;
+}
+
+div.heading-collapse-indicator.collapse-indicator::before {
+  content : "↓";
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: -4px;
+  margin-top: 1px;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+div.is-collapsed h1 div.heading-collapse-indicator.collapse-indicator,
+div.is-collapsed h2 div.heading-collapse-indicator.collapse-indicator {
+  transform: translateX(1px) translateY(10px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+div.is-collapsed div.heading-collapse-indicator.collapse-indicator {
+  transform: translateX(-8px) translateY(22px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/* headering collaspe indicators in edit */
+div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle {
+  left: 5px;
+  position: absolute;
+  transition: transform 20ms linear 0s;
+}
+
+div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
+  content : "↓";
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: -4px;
+  top: -1px;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle { 
+  position: absolute;
+  transition: transform 20ms linear 0s;
+}
+
+div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle::after {
+  content : "→";
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 1px;
+  top: -1px;
+  color: var(--text-accent);
+  opacity: 0.5;
+  transition: transform 10ms linear 0s;
+}
+
+/*search icon 2*/
+span.collapse-icon {
+  margin-top: 0px;
+  transition: transform 20ms linear 0s;
+}
+
+span.collapse-icon::before {
+  content : "↓";
+  margin-left: -3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--allow-1);
+  transition: transform 10ms linear 0s;
+}
+
+span.collapse-icon svg {
+  display: none;
+  color: var(--accent-strong);
+  height: 7px;
+  width: 7px;
+}
+
+div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
+  transform: translateX(0px) translateY(0px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/* outline page*/
+.outline .tree-item-self.is-clickable {
+  padding-left: 27px !important;
+}
+
+.outline .tree-item .collapse-icon {
+  padding: 0 9px;
+  transition: transform 20ms linear 0s;
+}
+
+.outline .tree-item .collapse-icon::before {
+  content : "↓";
+  margin-left: -7px;
+  margin-top: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.outline .tree-item .collapse-icon svg {
+  display: none;
+  color: var(--accent-strong);
+  height: 7px;
+  width: 7px;
+}
+
+.outline .tree-item.is-collapsed .collapse-icon {
+  transform: translateX(1px) translateY(0px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/*vertical lines in outline page*/
+.outline .tree-item-children {
+  margin-left: 16px;
+  border-left: 2px solid rgba(148, 148, 148, 0.2);
+  border-radius: 0px;
+  transition:all 300ms ease-in-out;
+}
+.outline .tree-item-children:hover {
+  border-left-color: rgba(45, 135, 211, 0.5);
+}
+
+/* list collaspe icon */
+.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon {
+  margin-top: 0px;
+  transition: transform 20ms linear 0s;
+}
+
+.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  content : "↓";
+  font-size: 14px;
+  margin-left: -11px;
+  font-weight: bold;
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon svg {
+  display: none;
+  color: var(--accent-strong);
+  height: 7px;
+  width: 7px;
+}
+
+.markdown-preview-view li.is-collapsed div.list-collapse-indicator.collapse-indicator.collapse-icon {
+  transform: translateX(0px) translateY(-4px) rotate(-90deg);
+  opacity: 0.5;
+}
+
+/*setting buttons*/
+.modal button:not(.mod-cta):not(.mod-warning):hover{
+  background-color: var(--interactive-accent-hover);
+  color: #fdfdfd;
+}
+
+/* ======= graph view ==============*/
+.graph-view.color-fill {
+  color: var(--graph-circle);
+}
+
+.graph-view.color-circle {
+  color: transparent;
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.graph-view.color-text {
+  color: var(--graph-text-color); 
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  color: rgb(var(--interactive-accent-rgb));
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graphtag) !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-attach) !important;
+}
+.graph-view.color-fill-unresolved {
+  color: var(--graph-unresolved);
+  opacity: 1;
+}
+
+.graph-view.color-arrow {
+  color: var(--graph-arrow);
+  opacity: 1;
+}
+
+/*
+/*horizontal line in preview mode
+.markdown-preview-view hr{
+  border-top: 2px solid var(--theme-color);
+}
+*/
+
+/*Horizontal line in edit mode. Changes --- to full-width line*/
+/*thanks to Piotr from obsidian forum*/
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
+  color: transparent;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: var(--text-muted);
+  left: 0;
+  top: 50%;
+}
+
+/*Quote (> lorem ipsum ...) in edit mode with left border rendered instead of >*/
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-quote {
+  color: transparent !important;
+}
+
+.CodeMirror-line span.cm-formatting-quote {
+  color: var(--red) !important;
+}
+
+div:not(.CodeMirror-activeline) > .HyperMD-quote,
+div.CodeMirror-activeline > .HyperMD-quote {
+  border-left: 7px solid var(--theme-color);
+}
+
+/* thanks to Klaas from Discord *//*
+div:not(.CodeMirror-activeline) > .HyperMD-quote {
+  background-color: var(--background-primary-alt);
+}
+
+div > .HyperMD-quote:active {
+  background-color: transparent;
+}*/
+
+.cm-quote:not([class*="link"]):not([class*="string"]) {
+  color: var(--text-normal);
+}
+
+/***************************************/
+/* Hide right side bar */
+/***************************************/
+/*
+.workspace-ribbon.mod-right:not(:hover) {
+  width: 9px;
+  transition: all 300ms ease-in-out;
+}
+  
+.workspace-split.mod-right-split {
+  margin-right: 9px;
+}
+*/
+
+/*change collapse icon position in left side*/
+.workspace-ribbon.mod-left .workspace-ribbon-collapse-btn{
+  margin-top: 0px;
+  padding: 7px 6px 2px 6px;
+}
+
+.workspace-ribbon.is-collapsed .workspace-ribbon-collapse-btn:not(:hover){
+  margin-left: 15px;
+}
+
+
+/* colourful notes */
+/* from Notation by death_au  https://github.com/deathau/Notation-for-Obsidian */
+/* Original idea from: https://gist.github.com/mklepaczewski/54e451f09994b9d450de81c8baaf8aa4 */
+/* but also with simpler classes so you can use `<span class='colour'>` as well */
+.app-container .markdown-preview-view pre[class*="language-note-"] code[class*="language-note-"] {
+  white-space: pre-wrap !important;
+}
+
+.app-container .markdown-preview-view pre.language-note-notice,
+.app-container .markdown-preview-view pre.language-note-gray-background,
+.app-container .markdown-preview-view pre.language-note-gray-bg,
+.gray-background,
+.gray-bg {
+  background-color: var(--background-gray);
+}
+
+.app-container .markdown-preview-view pre.language-note-brown-background,
+.app-container .markdown-preview-view pre.language-note-brown-bg,
+.brown-background,
+.brown-bg {
+  background-color: var(--background-brown);
+}
+
+.app-container .markdown-preview-view pre.language-note-orange-background,
+.app-container .markdown-preview-view pre.language-note-orange-bg,
+.orange-background,
+.orange-bg {
+  background-color: var(--background-orange);
+}
+
+.app-container .markdown-preview-view pre.language-note-yellow-background,
+.app-container .markdown-preview-view pre.language-note-yellow-bg,
+.yellow-background,
+.yellow-bg {
+  background-color: var(--background-yellow)
+}
+
+.app-container .markdown-preview-view pre.language-note-green-background,
+.app-container .markdown-preview-view pre.language-note-green-bg,
+.green-background,
+.green-bg {
+  background-color: var(--background-green);
+}
+
+.app-container .markdown-preview-view pre.language-note-blue-background,
+.app-container .markdown-preview-view pre.language-note-blue-bg,
+.blue-background,
+.blue-bg {
+  background-color: var(--background-blue);
+}
+
+.app-container .markdown-preview-view pre.language-note-purple-background,
+.app-container .markdown-preview-view pre.language-note-purple-bg,
+.purple-background,
+.purple-bg {
+  background-color: var(--background-purple);
+}
+
+.app-container .markdown-preview-view pre.language-note-pink-background,
+.app-container .markdown-preview-view pre.language-note-pink-bg,
+.pink-background,
+.pink-bg {
+  background-color: var(--background-pink);
+}
+
+.app-container .markdown-preview-view pre.language-note-red-background,
+.app-container .markdown-preview-view pre.language-note-red-bg,
+.red-background,
+.red-bg {
+  background-color: var(--background-red);
+}
+
+.app-container .markdown-preview-view pre.language-note-important,
+.app-container .markdown-preview-view pre.language-note-imp {
+  border: 4px dashed var(--note-important);
+}
+
+pre.language-note-important:before, pre.language-note-imp::before{
+  content: "Important";
+  color: var(--note-important);
+  font-weight: 800;
+  top: -1px;
+}
+
+/*colourful text*/
+.app-container .markdown-preview-view pre.language-note-gray,
+.app-container .markdown-preview-view pre.language-note-brown,
+.app-container .markdown-preview-view pre.language-note-orange,
+.app-container .markdown-preview-view pre.language-note-yellow,
+.app-container .markdown-preview-view pre.language-note-green,
+.app-container .markdown-preview-view pre.language-note-blue,
+.app-container .markdown-preview-view pre.language-note-purple,
+.app-container .markdown-preview-view pre.language-note-pink,
+.app-container .markdown-preview-view pre.language-note-red {
+  background-color: transparent;
+}
+
+.app-container .markdown-preview-view pre.language-note-gray code.language-note-gray,
+.gray {
+  color: var(--text-gray);
+}
+
+.app-container .markdown-preview-view pre.language-note-brown code.language-note-brown,
+.brown {
+  color: var(--text-brown);
+}
+
+.app-container .markdown-preview-view pre.language-note-orange code.language-note-orange,
+.orange {
+  color: var(--text-orange);
+}
+
+.app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
+.yellow {
+  color: var(--text-yellow)
+}
+
+.app-container .markdown-preview-view pre.language-note-green code.language-note-green,
+.green {
+  color: var(--text-green);
+}
+
+.app-container .markdown-preview-view pre.language-note-blue code.language-note-blue,
+.blue {
+  color: var(--text-blue);
+}
+
+.app-container .markdown-preview-view pre.language-note-purple code.language-note-purple,
+.purple {
+  color: var(--text-purple);
+}
+
+.app-container .markdown-preview-view pre.language-note-pink code.language-note-pink,
+.pink {
+  color: var(--text-pink);
+}
+
+.app-container .markdown-preview-view pre.language-note-red code.language-note-red,
+.red {
+  color: var(--text-red);
+}
+
+/* cloze */
+.app-container .markdown-preview-view pre.language-note-cloze code.language-note-cloze,
+.cloze {
+  color: var(--text-normal);
+  background-color: var(--text-normal);
+  display: block;
+  padding: 0px !important;
+  text-shadow: none;
+  margin: 5px;
+  font-size: var(--text-size-cloze) !important;
+}
+
+.app-container .markdown-preview-view pre.language-note-cloze {
+  background-color: transparent;
+}
+
+code.language-note-cloze.is-loaded:hover{
+  cursor: pointer;
+}
+
+code.language-note-cloze.is-loaded:active{
+  background-color: transparent !important;
+}
+
+pre.language-note-cloze::before {
+  content: "TO RECALL";
+  color: var(--note-cloze);
+  font-weight: 800;
+  left: 22px;
+  top: 0px;
+}
+
+
+
+
+/*===============================================*/
+/*                                    .__    .___*/
+/*  _____   ___________  _____ _____  |__| __| _/*/
+/* /     \_/ __ \_  __ \/     \\__  \ |  |/ __ | */
+/*|  Y Y  \  ___/|  | \/  Y Y  \/ __ \|  / /_/ | */
+/*|__|_|  /\___  >__|  |__|_|  (____  /__\____ | */
+/*      \/     \/            \/     \/        \/ */
+/*======== optionnal mermaid style below ========*/
+
+.label {
+  font-family: Segoe UI, "trebuchet ms", verdana, arial, Fira Code, consolas,
+    monospace !important;
+  color: var(--text-normal) !important;
+}
+
+.label text {
+  fill: var(--background-primary-alt) !important;
+}
+
+.node rect:not([style*="fill"]):not([style*="stroke"]),
+.node circle:not([style*="fill"]):not([style*="stroke"]),
+.node ellipse:not([style*="fill"]):not([style*="stroke"]),
+.node polygon:not([style*="fill"]):not([style*="stroke"]),
+.node path:not([style*="fill"]):not([style*="stroke"]) {
+  fill: var(--background-modifier-border) !important;
+  /*stroke: var(--text-normal) !important;
+  stroke-width: 0.5px !important; */
+}
+
+.node .label {
+  text-align: center !important;
+}
+
+.node.clickable {
+  cursor: pointer !important;
+}
+
+.arrowheadPath {
+  fill: var(--text-faint) !important;
+}
+
+.edgePath .path {
+  stroke: var(--text-faint) !important;
+  stroke-width: 1.5px !important;
+}
+
+.flowchart-link {
+  stroke: var(--text-faint) !important;
+  fill: none !important;
+}
+
+.edgeLabel {
+  background-color: var(--background-primary) !important;
+  text-align: center !important;
+}
+
+.edgeLabel rect {
+  opacity: 0 !important;
+}
+
+.cluster rect {
+  fill: var(--background-primary-alt) !important;
+  stroke: var(--text-faint) !important;
+  stroke-width: 1px !important;
+}
+
+.cluster text {
+  fill: var(--background-primary) !important;
+}
+
+div.mermaidTooltip {
+  text-align: center !important;
+  max-width: 200px !important;
+  padding: 2px !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+  font-size: 10px !important;
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--text-faint) !important;
+  border-radius: 2px !important;
+  pointer-events: none !important;
+  z-index: 100 !important;
+}
+
+/* Sequence Diagram variables */
+
+.actor {
+  stroke: var(--text-accent) !important;
+  fill: var(--background-secondary-alt) !important;
+}
+
+text.actor > tspan {
+  fill: var(--text-normal) !important;
+  stroke: none !important;
+}
+
+.actor-line {
+  stroke: var(--text-muted) !important;
+}
+
+.messageLine0 {
+  stroke-width: 1.5 !important;
+  stroke-dasharray: none !important;
+  stroke: var(--text-muted) !important;
+}
+
+.messageLine1 {
+  stroke-width: 1.5 !important;
+  stroke-dasharray: 2, 2 !important;
+  stroke: var(--text-muted) !important;
+}
+
+#arrowhead path {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.sequenceNumber {
+  fill: var(--background-primary) !important;
+}
+
+#sequencenumber {
+  fill: var(--text-muted) !important;
+}
+
+#crosshead path {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.messageText {
+  fill: var(--text-normal) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.labelBox {
+  stroke: var(--text-accent) !important;
+  fill: var(--background-secondary-alt) !important;
+}
+
+.labelText,
+.labelText > tspan {
+  fill: var(--text-muted) !important;
+  stroke: none !important;
+}
+
+.loopText,
+.loopText > tspan {
+  fill: var(--text-muted) !important;
+  stroke: none !important;
+}
+
+.loopLine {
+  stroke-width: 2px !important;
+  stroke-dasharray: 2, 2 !important;
+  stroke: var(--text-accent) !important;
+  fill: var(--text-accent) !important;
+}
+
+.note {
+  stroke: var(--text-normal) !important;
+  fill: var(--mermaid-seq-dia-color) !important;
+}
+
+.noteText,
+.noteText > tspan {
+  fill: var(--text-normal) !important;
+  stroke: none !important;
+}
+
+/* Gantt chart variables */
+
+.activation0 {
+  fill: var(--background-secondary) !important;
+  stroke: var(--text-accent) !important;
+}
+
+.activation1 {
+  fill: var(--background-secondary) !important;
+  stroke: var(--text-accent) !important;
+}
+
+.activation2 {
+  fill: var(--background-secondary) !important;
+  stroke: var(--text-accent) !important;
+}
+
+/** Section styling */
+
+.mermaid-main-font {
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+.section {
+  stroke: none !important;
+  opacity: 0.2 !important;
+}
+
+.section0 {
+  fill: var(--text-faint) !important;
+}
+
+.section2 {
+  fill: var(--text-accent) !important;
+}
+
+.section1,
+.section3 {
+  fill: var(--text-normal) !important;
+  opacity: 0.2 !important;
+}
+
+.sectionTitle0 {
+  fill: var(--text-normal) !important;
+}
+
+.sectionTitle1 {
+  fill: var(--text-normal) !important;
+}
+
+.sectionTitle2 {
+  fill: var(--text-normal) !important;
+}
+
+.sectionTitle3 {
+  fill: var(--text-normal) !important;
+}
+
+.sectionTitle {
+  text-anchor: start !important;
+  font-size: 15px !important;
+  font-weight: bold;
+  line-height: 14px !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+/* Grid and axis */
+
+.grid .tick {
+  stroke: var(--text-muted) !important;
+  opacity: 1 !important;
+  shape-rendering: crispEdges !important;
+}
+
+.grid .tick text {
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+  font-size: 13px;
+}
+
+.grid path {
+  stroke-width: 0 !important;
+}
+
+/* Today line */
+
+.today {
+  fill: none !important;
+  stroke: var(--background-modifier-error) !important;
+  stroke-width: 2px !important;
+}
+
+/* Task styling */
+
+/* Default task */
+
+.task {
+  stroke-width: 0.5px !important;
+}
+
+/*.taskText {
+  text-anchor: middle !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}*/
+
+.taskText:not([font-size]) {
+  font-size: 9px !important;
+}
+
+.taskTextOutsideRight {
+  fill: var(--text-normal) !important;
+  text-anchor: start !important;
+  font-size: 9px !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+.taskTextOutsideLeft {
+  fill: var(--text-normal) !important;
+  text-anchor: end !important;
+  font-size: 9px !important;
+}
+
+/* Special case clickable */
+
+.task.clickable {
+  cursor: pointer !important;
+}
+
+.taskText.clickable {
+  cursor: pointer !important;
+  fill: var(--interactive-accent_hover) !important;
+  font-weight: bold !important;
+}
+
+.taskTextOutsideLeft.clickable {
+  cursor: pointer !important;
+  fill: var(--interactive-accent_hover) !important;
+  font-weight: bold !important;
+}
+
+.taskTextOutsideRight.clickable {
+  cursor: pointer !important;
+  fill: var(--interactive-accent_hover) !important;
+  font-weight: bold !important;
+}
+
+/* Specific task settings for the sections*/
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+  fill: var(--text-normal) !important;
+  font-size: 13px;
+}
+
+.task0,
+.task1,
+.task2,
+.task3 {
+  fill: var(--theme-color-translucent) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.taskTextOutside0,
+.taskTextOutside2 {
+  fill: var(--text-muted) !important;
+}
+
+.taskTextOutside1,
+.taskTextOutside3 {
+  fill: var(--text-muted) !important;
+}
+
+/* Active task */
+.active0,
+.active1,
+.active2,
+.active3 {
+  fill: var(--mermaid-active-task-color) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+  fill: var(--text-normal) !important;
+}
+
+/* Completed task */
+.done0,
+.done1,
+.done2,
+.done3 {
+  stroke: var(--text-muted) !important;
+  fill: var(--background-secondary) !important;
+  stroke-width: 1 !important;
+}
+
+.doneText0,
+.doneText1,
+.doneText2,
+.doneText3 {
+  fill: var(--text-normal) !important;
+}
+
+/* Tasks on the critical line */
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+  stroke: var(--red-1) !important;
+  fill: var(--red-1) !important;
+  stroke-width: 1 !important;
+}
+
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+  stroke: var(--accent-strong) !important;
+  fill: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+  stroke: var(--accent-strong) !important;
+  fill: var(--text-muted) !important;
+  stroke-width: 0.5 !important;
+  cursor: pointer !important;
+  shape-rendering: crispEdges !important;
+}
+
+.milestone {
+  transform: rotate(45deg) scale(0.8, 0.8) !important;
+}
+
+.milestoneText {
+  font-style: italic !important;
+}
+
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+  fill: var(--text-normal) !important;
+}
+
+.activeCritText0,
+.activeCritText1,
+.activeCritText2,
+.activeCritText3 {
+  fill: var(--text-normal) !important;
+}
+
+.titleText {
+  text-anchor: middle !important;
+  font-size: 20px !important;
+  fill: var(--text-normal) !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+g.classGroup text {
+  fill: var(--text-normal) !important;
+  stroke: none !important;
+  font-size: 8px !important;
+}
+
+g.classGroup text .title {
+  font-weight: bolder !important;
+}
+
+g.clickable {
+  cursor: pointer !important;
+}
+
+g.classGroup rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: var(--theme-color) !important;
+}
+
+g.classGroup line {
+  stroke: var(--theme-color) !important;
+  stroke-width: 1 !important;
+}
+
+.classLabel .box {
+  stroke: none !important;
+  stroke-width: 0 !important;
+  fill: var(--background-secondary-alt) !important;
+  opacity: 0.2 !important;
+}
+
+.classLabel .label {
+  fill: var(--text-accent) !important;
+  font-size: 10px !important;
+}
+
+.relation {
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+  fill: none !important;
+}
+
+.dashed-line {
+  stroke-dasharray: 3 !important;
+}
+
+#compositionStart {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#compositionEnd {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#aggregationStart {
+  fill: var(--background-secondary-alt) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#aggregationEnd {
+  fill: var(--background-secondary-alt) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#dependencyStart {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#dependencyEnd {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#extensionStart {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+#extensionEnd {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+.commit-id,
+.commit-msg,
+.branch-label {
+  fill: var(--text-muted) !important;
+  color: var(--text-muted) !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+.pieTitleText {
+  text-anchor: middle !important;
+  font-size: 18px !important;
+  fill: var(--text-normal) !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+.slice {
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+g.stateGroup text {
+  fill: var(--text-accent) !important;
+  stroke: none !important;
+  font-size: 10px !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+g.stateGroup text {
+  fill: var(--text-accent) !important;
+  stroke: none !important;
+  font-size: 10px !important;
+}
+
+g.stateGroup .state-title {
+  font-weight: bolder !important;
+  fill: var(--background-secondary-alt) !important;
+}
+
+g.stateGroup rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: var(--text-accent) !important;
+}
+
+g.stateGroup line {
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+}
+
+.transition {
+  stroke: var(--text-accent) !important;
+  stroke-width: 1 !important;
+  fill: none !important;
+}
+
+.stateGroup .composit {
+  fill: var(--text-normal) !important;
+  border-bottom: 1px !important;
+}
+
+.stateGroup .alt-composit {
+  fill: #e0e0e0 !important;
+  border-bottom: 1px !important;
+}
+
+.state-note {
+  stroke: var(--text-faint) !important;
+  fill: var(--text-accent) !important;
+}
+
+.state-note text {
+  fill: black !important;
+  stroke: none !important;
+  font-size: 10px !important;
+}
+
+.stateLabel .box {
+  stroke: none !important;
+  stroke-width: 0 !important;
+  fill: var(--background-secondary-alt) !important;
+  opacity: 0.5 !important;
+}
+
+.stateLabel text {
+  fill: black !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
+}
+
+.node circle.state-start {
+  fill: black !important;
+  stroke: black !important;
+}
+
+.node circle.state-end {
+  fill: black !important;
+  stroke: var(--text-normal) !important;
+  stroke-width: 1.5 !important;
+}
+
+#statediagram-barbEnd {
+  fill: var(--text-accent) !important;
+}
+
+.statediagram-cluster rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: var(--text-accent) !important;
+  stroke-width: 1px !important;
+}
+
+.statediagram-cluster rect.outer {
+  rx: 5px !important;
+  ry: 5px !important;
+}
+
+.statediagram-state .divider {
+  stroke: var(--text-accent) !important;
+}
+
+.statediagram-state .title-state {
+  rx: 5px !important;
+  ry: 5px !important;
+}
+
+.statediagram-cluster.statediagram-cluster .inner {
+  fill: var(--text-normal) !important;
+}
+
+.statediagram-cluster.statediagram-cluster-alt .inner {
+  fill: #e0e0e0 !important;
+}
+
+.statediagram-cluster .inner {
+  rx: 0 !important;
+  ry: 0 !important;
+}
+
+.statediagram-state rect.basic {
+  rx: 5px !important;
+  ry: 5px !important;
+}
+
+.statediagram-state rect.divider {
+  stroke-dasharray: 10, 10 !important;
+  fill: #efefef !important;
+}
+
+.note-edge {
+  stroke-dasharray: 5 !important;
+}
+
+.statediagram-note rect {
+  fill: var(--text-accent) !important;
+  stroke: var(--text-muted) !important;
+  stroke-width: 1px !important;
+  rx: 0 !important;
+  ry: 0 !important;
+}
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
+
+/* Classes common for multiple diagrams */
+
+.error-icon {
+  fill: var(--text-error) !important;
+}
+
+.error-text {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
+
+.edge-thickness-normal {
+  stroke-width: 1px !important;
+}
+
+.edge-thickness-thick {
+  stroke-width: 3px !important;
+}
+
+.edge-pattern-solid {
+  stroke-dasharray: 0 !important;
+}
+
+.edge-pattern-dashed {
+  stroke-dasharray: 3 !important;
+}
+
+.edge-pattern-dotted {
+  stroke-dasharray: 2 !important;
+}
+
+.marker {
+  fill: var(--text-muted) !important;
+}
+
+.marker.cross {
+  stroke: var(--text-muted) !important;
+}
+
+/*rect.task {
+  fill: var(--text-accent-hover);
+  fill-opacity: 1;
+  stroke: var(--text-normal);
+}
+
+g rect{
+  fill: var(--text-highlight-bg);
+}*/
+
+g text{
+  fill:var(--text-muted) !important;
+}
+
+#arrowhead,  #sequencenumber,  .cluster text,  .label text,  text,  text.actor {
+  fill:var(--text-muted) !important;
+}
+
+/*emoji🙂*/
+g > g > circle, g > g > path {
+  stroke: #000000 !important;
+}
+
+line.task-line{
+  stroke: #6e6e6e !important;
+}
+
+g > circle{
+  stroke: #000000 !important;
+}
+
+/*===========*/
+/*for plugins*/
+/*===========*/
+
+/*======================================*/
+/*better appearance for Andy mode plugin*/
+/*======================================*/
+/* scrollbar*/
+::-webkit-scrollbar:vertical {
+  background-color: transparent;
+  width: 8px;
+}
+
+.workspace-split::-webkit-scrollbar:vertical {
+  display: none;
+}
+  
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: var(--theme-color-translucent);
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+body.plugin-sliding-panes .workspace-split.mod-vertical > .workspace-leaf {
+  box-shadow: none !important;
+}
+
+body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary);
+  border-right: 3px solid var(--interactive-accent) !important;
+}
+
+body.plugin-sliding-panes .view-header-title {
+  font-size: var(--font-size-file-header-title-andy-plugin);
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+body.plugin-sliding-panes .view-header-icon {
+  margin-left: -1px!important;
+}
+
+body.plugin-sliding-panes .mod-root .workspace-leaf.mod-active .view-header-title{
+  color: var(--header-color);
+  font-family: var(--font-family-title);
+  padding-top: 4px;
+}
+
+body.plugin-sliding-panes .view-actions {
+  margin-left: 0px;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
+  border-right: 1px solid var(--background-secondary-alt) !important;
+  border-left: 1px solid var(--background-secondary-alt) !important;
+}
+
+
+/*==========================*/
+/* obsidian-calendar-plugin */
+/*==========================*/
+#calendar-container {
+--color-background-heading: transparent;
+--color-background-weeknum: transparent;
+--color-background-day: transparent;
+--color-background-weekend: transparent;
+
+  
+--color-dot: var(--text-accent);
+--color-arrow: currentColor;
+--color-button: var(--text-muted);
+ --color-text-weeknum: var(--calendar-week-color);
+  
+--color-text-title: var(--text-normal);
+--color-text-heading: var(--text-normal);
+--color-text-day: var(--text-normal);
+--color-text-today: var(--text-accent);
+  
+/*===*/
+padding: 0px 5px 0px 8px;
+margin: -21px -8px 0px -8px;
+line-height: 0.6;
+}
+  
+/*表格调整*/
+/*星期*/
+#calendar-container th {
+  padding: 6px 0;
+  border-radius: 0px !important;
+  background-color: var(--table-thead-background-color) !important;
+}
+
+#calendar-container .week-num, #calendar-container .day {
+  border-radius: 0px !important;
+}
+
+/*天*/
+#calendar-container td {
+  width: 12.5%;
+  border-right: 2px solid var(--background-secondary-alt);
+  padding: 0px 0px 0px 0px !important;
+  line-height: 22px;
+  border-radius: 0px !important;
+}
+
+#calendar-container tr {
+  border: 2px solid var(--background-secondary-alt);
+}
+
+#calendar-container .day:not(:empty):hover{
+  background-color: var(--table-hover-color);
+}
+
+#calendar-container .calendar{
+  margin: -8px 0;
+}
+
+/*“Today”*/
+#calendar-container .reset-button {
+  font-size: 14px !important;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  cursor: pointer;
+  line-height: 1.2;
+  text-align: center;
+}
+  
+/*悬停Today*/
+#calendar-container .reset-button:hover {
+  color: var(--header-color);
+  background-color: var(--table-hover-raw-color);
+}
+  
+/*悬停arrow*/
+#calendar-container .arrow:hover {
+  color: var(--theme-color);
+}
+  
+/*今日笔记时红点去除 today's dot*/
+#calendar-container .dot {
+  stroke: transparent;
+}
+  
+/*点调整 dot*/
+#calendar-container .dot-container {
+  margin-top: -2px;
+  margin-bottom: -1px;
+}
+  
+/*月份调整 month*/
+#calendar-container .month {
+  font-size: 20px;
+  line-height: 1;
+}
+  
+/*年份调整 year*/
+#calendar-container .year {
+  font-size: 20px;
+  line-height: 1;
+}
+  
+/*星期数 week*/
+#calendar-container .week-num {
+  /*border-right: 2px solid var(--green) !important;*/
+  background-color: var(--calendar-week-background-color);
+  font-weight: 600;
+}
+
+/*星期数悬停 week hover*/
+#calendar-container .week-num:hover {
+  background-color: var(--calendar-week-hover) !important;
+}
+
+/*星期数表头*//*不完善，等插件更新*//*
+#calendar-container th:not(.svelte-1lgyrog):first-child {
+  background-color: var(--green) !important;
+}
+*/
+
+/*隐藏scrollbar*/
+/*div.view-content::-webkit-scrollbar {
+  display: none !important;
+}*/
+
+/*===========================*/
+/*copy button for code blocks*/
+/*===========================*/
+.copy-code-button {
+  color: var(--background-primary) !important;
+  background-color: var(--text-faint);
+  border-radius: 0px 5px 5px 0px !important;
+  font-weight: 900 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0px 1px !important;
+  font-size: 0.5em !important;
+  position: absolute;
+  top: 0 !important;
+  bottom: 0px !important;
+}
+
+.copy-code-button:hover {
+  background-color: var(--table-hover-color) !important;
+  color: var(--accent-strong) !important;
+}
+
+/*=====================================*/
+/*frontmatter specification 同义词等声明*/
+/*=====================================*/
+pre.frontmatter.language-yaml:before {
+  content: "Specification";
+  font-family: var(--font-family-YAML);
+  top: 1px;
+  right: 32px;
+  color: var(--color-specification);
+}
+
+.frontmatter-container {
+  margin: 0;
+}
+
+/*适配copy code插件*/
+.markdown-preview-view pre {
+  padding: 6px 22px;
+}
+
+/*====================*/
+/*day planner plugin*/
+/*====================*/
+.day-planner-status-bar-text {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+.status-bar-item > * {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.progress-pie.day-planner {
+  background-color: var(--day-planner-pie);
+  float: left;
+  height: 20px;
+  margin: 0.3px 10px 0.3px 0;
+  width: 20px;
+  display: none;
+}
+
+.aside__line {
+  background: var(--day-planner-dot) !important;
+  left: 35px !important;
+}
+
+.ei_Dot {
+  background-color: var(--day-planner-line) !important;
+  left: 28px !important;
+}
+
+.ei_Title {
+  font-size: 15px !important;
+  margin-left: -10px !important;
+}
+
+.ei_Copy {
+  font-size: 15px !important;
+  margin-left: 5px !important;
+}
+
+.event_item {
+  overflow: hidden !important;
+}
+
+#now-line, .timeline-time {
+  background-color: var(--day-planner-timeline) !important;
+}
+
+.event_item:hover {
+  background-color: var(--day-planner-item-hover) !important;
+  box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+}
+
+.event_item_color1 {
+  background-color: var(--event-item-color1) !important;
+}
+
+.event_item_color2 {
+  background-color: var(--event-item-color2) !important;
+}
+
+.event_item_color3 {
+  background-color: var(--event-item-color3) !important;
+}
+
+.event_item_color4 {
+  background-color: var(--event-item-color4) !important;
+}
+
+.event_item_color5 {
+  background-color: var(--event-item-color5) !important;
+}
+
+.event_item_color6 {
+  background-color: var(--event-item-color6) !important;
+}
+
+.event_item_color7 {
+  background-color: var(--event-item-color7) !important;
+}
+
+.event_item_color8 {
+  background-color: var(--event-item-color8) !important;
+}
+
+.event_item_color9 {
+  background-color: var(--event-item-color9) !important;
+}
+
+.event_item_color10 {
+  background-color: var(--event-item-color10)!important;
+}
+
+/* =========================================*/
+/* =========tapes pins and stickies=========*/
+/* =========================================*/
+/* thanks to death_au, Gabroel and Lithou from Obsidian Members Group on Discord */
+
+/*not word now*/
+/*
+img[src$="#tape"]::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  margin: auto;
+  background-color: var(--tape-color); /*here you can chosse the scotch tape background
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+  z-index: 10;
+  clip-path: polygon(50% 0%, 100% 0%, 
+  98% 10%, 100% 20%, 98% 30%, 100% 40%, 98% 50%, 100% 60%, 98% 70%, 100% 80%, 98% 90%,100% 100%,
+  0% 100%, 2% 90%, 0% 80%, 2% 70%, 0% 60%, 2% 50%, 0% 40%, 2% 30%, 0% 20%, 2% 10%, 0% 0%);
+}
+
+img[src$="#tape"] {
+  float: right; /*here you can choose if image will float to the right or left
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(2deg);
+  width: 400px; /*you can change the image max width here
+}
+
+img[src$="#tape"]:active {
+  transform: scale(2);
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+  z-index: 100;
+  padding: 30px;
+}
+
+/* Push Pin 
+div[src$="#pin"] {
+  position: relative;
+  float: right;
+  width: 400px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  margin: auto;
+  z-index: 100;
+}
+
+div[src$="#pin"]::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #49aa66;
+  top: -3%;
+  left: 50%;
+  border: solid #0e5a3696 8px;
+  border-radius: 50%;
+  box-shadow: #265c2d -3px 3px 1px;
+}
+
+div[src$="#pin"]:active {
+  transform: scale(2);
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+  z-index: 100;
+  padding: 20px;
+}
+
+
+div[alt="-sbq"] {
+  position: relative;
+  right: -5px;
+  float: right;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  background: #edec92;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(2deg);
+  transition: all 1s ease;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div[alt="-sbq"]::after {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  z-index: 1;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px;
+  box-shadow: inset -10px -10px 10px #f0b7a4, inset 3px 3px 5px;
+}
+
+
+div[alt="-sbq"]:hover {
+  border-bottom-left-radius: 225px 15px;
+  border-bottom-right-radius: 15px 255px;
+  border-top-left-radius: 15px 225px;
+  border-top-right-radius: 255px 15px;
+  box-shadow: 5px 5px rgba(0,0,0,.25);
+  }
+
+div[alt="-sbq"]:active {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+div[alt="-sbq"] div.markdown-embed-link {
+  visibility: hidden;
+}
+
+div[alt="-sbq"] div.markdown-embed {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+div[alt="-sbq"] .markdown-preview-view {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+div[alt="-sbq"] .markdown-preview-view p {
+  letter-spacing: -1px;
+  word-wrap: break-word;
+  font-size: 18px;
+  font-family: Input Sans;
+  text-align: left;
+  line-height: 1;
+  color: black;
+}
+
+*/
+
+.stickies {
+  text-align: center;
+  transition: width 2s;
+  padding: 5px;
+  margin: 18px;
+  position: relative;
+  float: right;
+  right: -10px;
+  width: 30%;
+  background-color: var(--stickies-color-1);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(2deg);
+  transition: all 2s ease;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px;
+  color: black;
+}
+
+.stickies::after {
+  content: "";
+  left: -5%;
+  top: -10px;
+  height: 40px;
+  width: 15px;
+  border-radius: 10px;
+  border: 3px solid #979797;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(-11deg);
+  z-index: 11;
+}
+
+.stickies::before {
+  width: 11px;
+  height: 20px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -3.5%;
+  top: -2px;
+  border-radius: 10px;
+  border: 3px solid #979797;
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 10;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(-11deg);
+}
+
+.stickies2 {
+  position: relative;
+  float: left;
+  box-shadow: 0 10px 10px 2px #9191912d;
+  width: 30%;
+  background-color: var(--stickies-color-2);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(-2deg);
+  transition: all 2s ease;
+  z-index: 1;
+  padding: 20px;
+  margin: 10px;
+  color: black;
+}
+
+.stickies2::after {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  z-index: 1;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px;
+  box-shadow: inset -10px -10px 10px #f0b7a4, inset 3px 3px 5px;
+}
+
+.to-recall {
+  position: relative;
+  float: left;
+  width: 30%;
+  background-color: var(--text-normal);
+  border-radius: 2%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 1;
+  padding: 10px 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  font-family: Cooper;
+  color: var(--text-normal);
+}
+
+.to-recall:hover {
+  cursor: pointer;
+} 
+
+.to-recall:active {
+  position: relative;
+  max-width: 30%;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: all 300ms ease;
+  color: var(--text-normal);
+}
+
+.to-recall::after {
+  content: "Click";
+  position: absolute;
+  font-size: 12px;
+  top: 1px;
+  right: 5px;
+  font-weight: 600;
+  font-family: Arial;
+  color: var(--background-primary);
+}
+
+.to-recall::before {
+  content: " To Recall";
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: OCR A;
+  color: #858585;
+  white-space: pre;
+}
+
+
+/* Image Flags Snippet by Lithou
+http://github.com/lithou/sandbox */
+
+/*not work now*/
+/*
+div {
+  --coremarg: 1%; 
+  --extramarg: 1%; /* This margin is used for any added margin between items 
+  --defaultwidth: 60%; /*This is the default width for core flags such as the "side" and "tape" 
+}
+
+  
+
+/* Core Flags 
+  /*side 
+      div[alt*="+side"]{
+          position: relative;
+          width: var(--defaultwidth);
+          float: right;
+          margin: 0px;
+          margin-left: var(--coremarg);
+      }
+      
+  /*tape 
+      div[alt*="+tape"] {
+          position: relative;
+          float: right;
+          width: var(--defaultwidth);
+          margin-left: var(--coremarg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(2deg);
+      }
+
+      div[alt*="+tape"]::before {
+          content: "";
+          display: block;
+          position: relative;
+          margin: auto;
+          width: 100px;
+          height: 30px;
+          top: 12px;
+          background: rgba(255, 234, 118, 0.377); /*here you can chosse the scotch tape background
+          -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+          -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+          box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+          z-index: 10;
+          clip-path: polygon(50% 0%, 100% 0%, 
+          98% 10%, 100% 20%, 98% 30%, 100% 40%, 98% 50%, 100% 60%, 98% 70%, 100% 80%, 98% 90%,100% 100%,
+          0% 100%, 2% 90%, 0% 80%, 2% 70%, 0% 60%, 2% 50%, 0% 40%, 2% 30%, 0% 20%, 2% 10%, 0% 0%);  
+      }
+      div[alt*="-lg"]::before{
+          width: 100px;
+          height: 30px;
+      }
+
+      div[alt*="-med"]::before{
+          width: 70px;
+          height: 25px;
+      }
+
+      div[alt*="-sm"]::before{
+          width: 45px;
+          height: 15px;
+          top: 8px;
+      }
+      div[alt*="-thumb"]::before{
+          width: 25px;
+          height: 5px;
+          top: 2px;
+      }
+  /* Push Pin 
+      div[alt*="+pin"] {
+          position: relative;
+          float: right;
+          width: var(--defaultwidth);
+          margin: auto;
+          margin-left: var(--coremarg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(2deg);}
+      div[alt*="+pin"]::before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: #4588cc;
+          top: -3%;
+          left: 50%;
+          border: solid #336699 8px;
+          border-radius: 50%;
+          box-shadow: #274d74 -5px 3px 1px;}
+  /* Portrait and Landscape 
+      div[alt*="+portrait"]{
+          position: relative;
+          width: calc(var(--defaultwidth)/2);
+          float: right;
+          /* background-color:blue; This setting will create a border effect of set color 
+          clip-path: ellipse(36% 46% at 50% 50%);}
+      div[alt*="+portrait"]>img{
+          vertical-align: middle;
+          clip-path: ellipse(35% 45% at 50% 50%);}
+      div[alt*="+landscape"]{
+          position: relative;
+          width: var(--defaultwidth);
+          float: right;
+          /* background-color:blue; This setting will create a border effect of set color 
+          clip-path: ellipse(46% 36% at 50% 50%);}
+      div[alt*="+landscape"]>img{
+          vertical-align: middle;
+          clip-path: ellipse(45% 35% at 50% 50%);}
+
+  /* Banner and HR 
+      div[alt*="+banner"]{
+          height: 100px;
+          overflow: hidden;
+
+      }
+
+      div[alt*="+banner"]>img{
+          margin-top: -130px;
+          }
+
+      div[alt*="+hr"]{
+          height: 10px;
+          overflow: hidden;
+          border-radius: 20px;
+
+      }
+
+      div[alt*="+hr"]>img{
+          margin-top: -200px;
+          }
+      
+
+  /*Custom Core Flags 
+  div[alt*="+custom1"]{
+      position: relative;
+      width: var(--defaultwidth);
+      float: right;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  div[alt*="+custom2"]{
+      position: relative;
+      width: var(--defaultwidth);
+      float: right;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+
+
+
+
+/* Modifier Flags 
+  /* Orientation and position 
+      div[alt*="-left"]{
+          float: left;
+          margin: 0px;
+          margin-right: var(--extramarg);}
+      div[alt*="-right"]{
+          float: right;
+          margin: 0px;
+          margin-left: var(--extramarg);}
+      div[alt*="-fix"]{position: fixed;}
+      div[alt*="-abs"]{position: absolute;}
+
+  /* Size 
+      div[alt*="-thumb"]{width: 11.50%;}
+      div[alt*="-sm"]{width: 24%;}
+      div[alt*="-med"]{width: 32.3333%;}
+      div[alt*="-lg"]{width: 49%;}
+      div[alt*="-huge"]{width: 67%;}
+      div[alt*="-cwidth"]{float: none;margin-left: -10%;width: 120%;}
+
+/* Borders 
+div[alt*="-border1"]>img{border: solid black 3px;}
+div[alt*="-border2"]>img{border: solid white 3px;}
+div[alt*="-bradius1"]>img{border-radius: 5px;}
+div[alt*="-bradius2"]>img{border-radius: 20px;}
+div[alt*="-bradiustl"]>img{border-top-left-radius: 20px;}
+div[alt*="-bradiusbr"]>img{border-bottom-right-radius: 20px;}
+div[alt*="-bradiustr"]>img{border-top-right-radius: 20px;}
+div[alt*="-bradiusbl"]>img{border-bottom-left-radius: 20px;}
+div[alt*="-bthick"]>img{border-width: 5px;}
+div[alt*="-bthin"]>img{border-width: 1px;}
+
+/* Div Borders 
+div[alt*="-divborder1"]{border: solid #336699 2px;}
+div[alt*="-divborder2"]{border: solid black 2px;}
+div[alt*="-divbradius1"]{border-radius: 5px;}
+div[alt*="-divbradius2"]{border-radius: 20px;}
+div[alt*="-cdivbradius1"]{border-radius: 50px;}
+
+
+div[alt*="-shadow1"] > img{
+  box-shadow: darkgrey -2px 2px 2px;
+}
+
+
+div[alt*="-glow"] > img{
+  box-shadow: darkgrey 0px 0px 20px;
+}
+
+div[alt*="-nofloat"] {
+  float:none
+}
+*/
+
+
+/* thanks to dcoales from obsidian member group on discord */
+/* https://discord.com/channels/686053708261228577/702656734631821413/794236352857374764 */
+aside {
+  float: right;
+  position: relative;
+  color: brown;
+  left: 5px;
+}
+
+aside > h1, 
+aside > h2 {
+  font-weight:normal !important;
+  font-size:16px !important;
+  border: 1px solid;
+  border-bottom: 1px solid !important;
+  border-radius: 3%;
+  background-color: transparent;
+  padding: 0px 5px 0px 5px;
+  width: 130px;
+  color: #467cf0 !important;
+  position: absolute;
+  left: -5px;
+  margin-left: 20%;
+}
+
+aside > h2 {
+  left: 130px;
+  color: #dd9207 !important;
+}
+
+.is-readable-line-width.sidecomments .markdown-preview-sizer {
+  margin-left: 20px !important;
+}
+
+/* for pdf */
+.theme-dark .print .markdown-preview-view strong {
+  -webkit-print-color-adjust: exact;
+  color: black;
+}
+
+/* ================================== */
+/* =======markdown assitance ======== */
+/* ================================== */
+.command-list-view-row-selected {
+  background-color: gray !important;
+}
+
+/* image position*/
+img[alt$="left"],
+img[alt$="Left"],
+img[alt$="LEFT"],
+img[alt$="L"] {
+  margin-left: 0;
+}
+
+img[alt$="right"],
+img[alt$="Right"],
+img[alt$="RIGHT"],
+img[alt$="R"] {
+  margin-right: 0;
+}
+
+img[alt$="inlineL"],
+img[alt$="InlineL"],
+img[alt$="INLINEL"],
+img[alt$="inlL"] {
+  float: left;
+  padding: 8px 8px 8px 0px;
+}
+
+img[alt$="inlineR"],
+img[alt$="InlineR"],
+img[alt$="INLINER"],
+img[alt$="inlR"] {
+  float: right;
+  padding: 8px 0px 8px 8px;
+}
+
+
+
+/*===================================================*/
+/*===================================================*/
+/*==================   MOBILE   =====================*/
+/*===================================================*/
+/*===================================================*/
+
+.is-mobile .markdown-preview-view ol > li {
+  margin-left: -5px;
+  padding-left: 6px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  padding-right: 6px;
+} 
+
+.is-mobile .markdown-preview-view ul > li:not(.task-list-item) {
+  margin-left: -5px;
+  padding-left: 6px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  padding-right: 6px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+/*The following codes belong to the Gold Topaz, which includes all the modifications. This modified theme was modified by Mouth On Cloud. Welcome to join our tencent QQ App's obsidian group chat: #774176839   */
+/*下面的是金色托帕石的魔改部分，也是和原版蓝色托帕石的全部不同部分。[20210518] 嘴上云制作，欢迎到obsidian的qq群找俺一起折腾。群号：774176839  */
+.theme-light {
+    --background-primary: #dddbc7;
+    --background-primary-alt: #fbf0d221;
+    --background-secondary: #dddbc7;
+    --background-secondary-alt: rgba(0, 0, 0, 0.1);
+    --background-accent: #e6eff4;
+    --background-modifier-border: rgba(0, 0, 0, 0.1);
+    --background-modifier-form-field: #fbf0d2;
+    --background-modifier-form-field-highlighted: #e6eff4;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: #fbf0d2;
+    --background-modifier-error: #4c5064;
+    --background-modifier-error-rgb: 230, 135, 135;
+    --background-modifier-error-hover: #4c5064;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: #4c5064;
+    --text-accent-hover: #4c5064;
+    --text-normal: #000000;
+    --text-muted: #4c5064;
+    --text-faint: #4c5064;
+    --accent-strong: #5667a4;
+    --text-error: #4c5064;
+    --text-error-hover: #4c5064;
+    --text-highlight-bg: #FBF0D0;
+    --text-selection: #fbf0d2;
+    --text-on-accent: #FBF0D0;
+    --interactive-normal: #dddbc7;
+    --interactive-hover: #e6eff4;
+    --interactive-accent-rgb: 70, 142, 235;
+    --interactive-accent: #4c5064;
+    --interactive-accent-hover: #e6eff4;
+    --panel-border-color: #dddbc7;
+    --search-text: #4c5064;
+    --folder-title: #4c5064;
+    --mark-highlight: #e6eff4;
+    --background-search-result: rgba(0, 0, 0, 0.1);
+    --gray-1: #a6a7a8;
+    --gray-2: #808080;
+    --red: #db4437;
+    --red-1: #a63b58;
+    --green: #0f9d58;
+    --darkgreen: #1a8b8d;
+    --blue: #4285f4;
+    --darkblue: #5667a4;
+    --purple: #a23ef7;
+    --aqua: #63e2fd;
+    --yellow: #f4b400;
+    --light-yellow: #ffe168;
+    --orange: #ff7622;
+    --light-purple: #b77dca;
+    --blue-green: #00b0b5;
+    --embed-color: #fbf0d221;
+    --search-result-file-title-color: #4c5064;
+    --theme-color: #4c5064;
+    --theme-color-translucent: #4c5064;
+    --theme-color-translucent-1: #fbf0d2;
+    --color-specification: #e6eff4;
+    --allow-1: #4c5064;
+    --list-ul-block-color: #4c5064;
+    --list-ul-disc-color: #4c5064;
+    --list-ul-hover: #fbf0d2;
+    --list-ol-block-color: #4c5064;
+    --list-ol-number-color: #4c5064;
+    --list-ol-hover: #fbf0d2;
+    --tag1: #5667a4;
+    --tag2: #007672;
+    --tag3: #3f73b8;
+    --tag4: #608ec1;
+    --tag5: #786b54;
+    --tag6: #6da1dd;
+    --tag7: #a29c90;
+    --tag8: #1a8b8d;
+    --tag9: #a6a7a8;
+    --h1-color: #000000;
+    --h2-color: #000000;
+    --h3-color: #000000;
+    --h4-color: #000000;
+    --h5-color: #000000;
+    --h6-color: #000000;
+    --graph-text-color: #000000;
+    --graphtag: #4c5064;
+    --graph-attach: #4c5064;
+    --graph-circle: #5667a4;
+    --graph-line: #5667a4;
+    --graph-unresolved: #4c5064;
+    --graph-arrow: #5667a4;
+    --mermaid-active-task-color: #e6eff4;
+    --mermaid-seq-dia-color: #59a0e2;
+    --table-background-color: #dddbc7;
+    --table-background-color-odd: #dddbc7;
+    --table-border-color: #4c5064;
+    --table-thead-background-color: #dddbc7;
+    --table-hover-raw-color: #dddbc7;
+    --table-hover-color: #fbf0d28a;
+    --table-hover-thead-color: #fbf0d28a;
+    --calendar-week-color: #4c5064;
+    --calendar-week-hover: #4c5064;
+    --calendar-week-background-color: #e6eff4;
+    --day-planner-pie: #4c5064;
+    --day-planner-timeline: #7db9ff;
+    --day-planner-line: #7db9ff;
+    --day-planner-dot: #e6eff4;
+    --day-planner-item-hover: #4c5064;
+    --event-item-color1: #77aff1;
+    --event-item-color2: #6da1dd;
+    --event-item-color3: #6292cb;
+    --event-item-color4: #5883b4;
+    --event-item-color5: #4e749f;
+    --event-item-color6: #44658b;
+    --event-item-color7: #4e749f;
+    --event-item-color8: #5883b4;
+    --event-item-color9: #6292cb;
+    --event-item-color10: #6da1dd;
+         /* I am too noob to touch this part
+    --text-gray: #4c5064;
+    --text-brown: #4c5064;
+    --text-orange: #4c5064;
+    --text-yellow: #4c5064;
+    --text-green: #4c5064;
+    --text-blue: #4c5064;
+    --text-purple: #4c5064;
+    --text-pink: #4c5064;
+    --text-red: #4c5064;
+    --background-gray: #e6eff4;
+    --background-brown: #e6eff4;
+    --background-orange: #e6eff4;
+    --background-yellow: #e6eff4;
+    --background-green: #e6eff4;
+    --background-blue: #ddebf1;
+    --background-purple: #e6eff4;
+    --background-pink: #e6eff4;
+    --background-red: #e6eff4;
+    */
+    --note-important: #4c5064;
+    --note-cloze: #000000;
+    --stickies-color-1: #5667a4;
+    --stickies-color-2: #007672;
+    --tape-color: #786b54;
+    --header-color: #E1B87F;
+}
+    .theme-light .cm-s-obsidian pre.HyperMD-codeblock, .theme-light .cm-s-obsidian span.cm-inline-code, .theme-light .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end), .theme-light .markdown-preview-view code{
+    color: #db4e4ecc;
+    font-size: var(--font-size-edit-code) !important;
+    font-family: var(--font-family-preview-edit-code);
+    text-align: start;
+}
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul {
+    color: #db4e4ecc;
+}
+.theme-dark {
+    --background-primary: #353231;
+    --background-primary-alt: #00767224;
+    --background-secondary: #383433;
+    --background-secondary-alt: #353231;
+    --background-accent: #786b54;
+    --background-modifier-border: rgba(0, 0, 0, 0.1);
+    --background-modifier-form-field: #007672;
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #E1B87F;
+    --background-modifier-error: #007672;
+    --background-modifier-error-rgb: 155,67,67;
+    --background-modifier-error-hover: #D1CCBD;
+    --background-modifier-cover: rgba(0, 0, 0, 0.6);
+    --text-accent: #E1B87F;
+    --text-accent-hover: #786b54;
+    --text-normal: #a29c90;
+    --text-muted: #a29c90;
+    --text-faint: rgb(121, 121, 121);
+    --accent-strong: #786b54;
+    --text-em-color: #E1B87F;
+    --text-error: #007672;
+    --text-error-hover: #E1B87F;
+    --text-highlight-bg: #D1CCBD;
+    --text-selection: #EFDBB2;
+    --text-on-accent: #E1B87F;
+    --interactive-normal: #007672;
+    --interactive-hover: #E1B87F;
+    --interactive-accent: #007672;
+    --interactive-accent-rgb: 45, 135, 211;
+    --interactive-accent-hover: #E1B87F;
+    --panel-border-color: #353231;
+    --search-text: #007672;
+    --folder-title: #007672;
+    --mark-highlight: #007672;
+    --background-search-result: #786b54;
+    --gray-1: #353231;
+    --gray-2: #786b54;
+    --red: #f97065;
+    --red-1: #ff4a4a;
+    --orange: #f9944c;
+    --green: #0f9d58;
+    --darkgreen: #007672;
+    --aqua: #61C8B9;
+    --purple: #ab7fe6;
+    --blue: #198cff;
+    --darkblue: #007aff;
+    --yellow: #f7dc01;
+    --light-yellow: #E1B87F;
+    --embed-color: #786b540d;
+    --search-result-file-title-color: #007672;
+    --theme-color: #E1B87F;
+    --theme-color-translucent: #007672;
+    --theme-color-translucent-1: #007672;
+    --color-specification: #E1B87F;
+    --allow-1: #E1B87F;
+    --background-blockquote-dark: #786b540d;
+    --list-ul-block-color: #007672;
+    --list-ul-disc-color: #E1B87F;
+    --list-ul-hover: #EFDBB2;
+    --list-ol-block-color: #a29c90;
+    --list-ol-number-color: #a29c90;
+    --list-ol-hover: #007672;
+    --tag1: #007672;
+    --tag2: #786b54;
+    --tag3: #aa7f39cc;
+    --tag4: #3C4855;
+    --tag5: #674712;
+    --tag6: #60616f;
+    --tag7: #7f7272;
+    --tag8: #2F3546;
+    --tag9: #393c44;
+    --h1-color: #D1CCBD;
+    --h2-color: #D1CCBD;
+    --h3-color: #D1CCBD;
+    --h4-color: #D1CCBD;
+    --h5-color: #D1CCBD;
+    --h6-color: #D1CCBD;
+    --graph-text-color: #a29c90;
+    --graphtag: #007672;
+    --graph-attach: #E1B87F;
+    --graph-circle: #EFDBB2;
+    --graph-line: #E1B87F;
+    --graph-unresolved: #E1B87F;
+    --graph-arrow: #EFDBB2;
+    --mermaid-active-task-color: #007672;
+    --mermaid-seq-dia-color: #E1B87F;
+    --table-background-color: #353231;
+    --table-background-color-odd: #353231;
+    --table-border-color: #c0c0c0;
+    --table-thead-background-color: #786b54;
+    --table-hover-raw-color: #353231;
+    --table-hover-color: #efdbb217;
+    --table-hover-thead-color: #efdbb2e3;
+    --calendar-week-color: #E1B87F;
+    --calendar-week-hover: #786b54;
+    --calendar-week-background-color: #007672;
+    --day-planner-pie: #007672;
+    --day-planner-timeline: #269894;
+    --day-planner-line: #786b54;
+    --day-planner-dot: #786b54;
+    --day-planner-item-hover: #EFDBB2;
+    --event-item-color1: #007672;
+    --event-item-color2: #136664;
+    --event-item-color3: #105553;
+    --event-item-color4: #0D4a48;
+    --event-item-color5: #0b3f3d;
+    --event-item-color6: #093634;
+    --event-item-color7: #0b3f3d;
+    --event-item-color8: #0D4a48;
+    --event-item-color9: #105553;
+    --event-item-color10: #136664;
+      /* I am too noob to touch this part    
+    --text-gray: #E1B87F;
+    --text-brown: #E1B87F;
+    --text-orange: #E1B87F;
+    --text-yellow: #E1B87F;
+    --text-green: #E1B87F;
+    --text-blue: #E1B87F;
+    --text-purple: #E1B87F;
+    --text-pink: #E1B87F;
+    --text-red: #E1B87F;
+    --background-gray: #007672;
+    --background-brown: #007672;
+    --background-orange: #007672;
+    --background-yellow: #007672;
+    --background-green: #007672;
+    --background-blue: #007672;
+    --background-purple: #007672;
+    --background-pink: #007672;
+    --background-red: #007672;
+    */
+    --note-important: #007672;
+    --note-cloze: #E1B87F;
+    --stickies-color-1: #007672;
+    --stickies-color-2: #E1B87F;
+    --tape-color: #007672;
+    --header-color: #f1a634d0;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock, .theme-dark .cm-s-obsidian span.cm-inline-code, .theme-dark .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end), .theme-dark .markdown-preview-view code{
+    color: #786b54;
+    font-size: var(--font-size-edit-code) !important;
+    font-family: var(--font-family-preview-edit-code);
+    text-align: start;
+}
+.outline .tree-item-children:hover {
+  border-left-color: #E1B87F;
+}
+.cm-s-obsidian,
+.markdown-preview-view {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/*
+text-align 属性
+规定元素中的文本的水平对齐方式。
+该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。
+
+Syntax: start | end | left | right | center | justify | match-parent
+语法： 开始|结束|左对齐|右对齐|居中对齐|两端对齐|匹配-父级
+
+
+hyphens 属性
+定义是否允许在一行文本中使用连字符实现更多的自动换行机会。 
+
+Syntax: none | manual | auto
+语法：不打断单词|仅当换行符时换行|按建议换行
+
+
+以上内容参考自 https://developer.mozilla.org/zh-CN/docs/Web/CSS
+整理：蚕子 QQ：312815311
+*/
+.markdown-preview-view img, .markdown-preview-view video {
+    max-width: min(100%,800px) !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    outline: 0px solid var(--text-accent);
+  }
+  .markdown-preview-view table {
+	border-collapse: collapse;
+	margin:auto;
+	margin-bottom: 20px;
+}
+.graph-view.color-line-highlight {
+  color: #136664;
+}
+/* 显示当前代码块的语言类别 */
+pre {
+    position: relative;
+    line-height: 20px !important;
+}
+
+/* 每个语言单独写 C语言 要写在前面 否则出现覆盖C# C++的问题 */
+pre[class*='language-c']:before {
+    content: "C";
+}
+
+pre[class*='language-py']:before {
+    content: "Python";
+}
+
+pre[class*='language-python']:before {
+    content: "Python";
+}
+
+pre[class*='language-nginx']:before {
+    content: "Nginx";
+}
+
+pre[class*='language-css']:before {
+    content: "Css";
+}
+
+pre[class*='language-javascript']:before {
+    content: "Js";
+}
+
+pre[class*='language-js']:before {
+    content: "Js";
+}
+
+
+pre[class*='language-php']:before {
+    content: "Php";
+}
+
+pre[class*='language-shell']:before {
+    content: "Shell";
+}
+
+pre[class*='language-flow']:before {
+    content: "Flow";
+}
+
+pre[class*='language-sequence']:before {
+    content: "Sequence";
+}
+
+pre[class*='language-sql']:before {
+    content: "Sql";
+}
+
+pre[class*='language-yaml']:before {
+    content: "Yaml";
+}
+
+pre[class*='language-ini']:before {
+    content: "ini";
+}
+
+pre[class*='language-xml']:before {
+    content: "Xml";
+}
+
+pre[class*='language-git']:before {
+    content: "Git";
+}
+
+pre[class*='language-cs']:before {
+    content: "C#";
+}
+
+pre[class*='language-cpp']:before {
+    content: "C++";
+}
+
+pre[class*='language-java']:before {
+    content: "Java";
+}
+
+pre[class*='language-html']:before {
+    content: "Html";
+}
+
+pre[class*='language-txt']:before {
+    content: "txt";
+}
+
+/* Code */
+.theme-light :not(pre) > code[class*="language-"],
+.theme-light pre[class*="language-"] {
+    background-color: var(--background-primary-alt);
+    /* 代码块 圆角 阴影 */
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgb(0 0 0/15%) 0px 2px 10px;
+}
+
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
+    color: #4c5064 !important;
+    text-shadow: none;
+    font-family: var(--mono-font), var(--cjk-font);
+}
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
+    color: #D1CCBD !important;
+    text-shadow: none;
+    font-family: var(--mono-font), var(--cjk-font);
+}
+
+.theme-dark .token.keyword, .theme-light .token.keyword {
+    color: #3b78e7 !important;
+    font-weight: 600;
+}
+
+.theme-dark .function, .theme-light .function {
+    color: #9c27b0 !important;
+}
+
+.theme-dark .number, .theme-light .number {
+    color: #d81b60 !important;
+}
+
+.theme-dark .builtin, .theme-light .builtin {
+    color: #e36209 !important;
+    font-weight: bold;
+}
+
+.theme-light .operator, .theme-light .punctuation {
+    color: #708090 !important;
+}
+
+.theme-dark .operator, .theme-dark .punctuation {
+    color: rgb(228, 220, 220) !important;
+}
+
+.theme-dark .comment, .theme-light .comment {
+    font-size: 0.9em !important;
+    font-weight: 450;
+}

@@ -1,0 +1,504 @@
+/* @settings
+
+name: Vauxhall
+id: vauxhall
+settings:
+  -
+    id: main-color
+    title: Main Color
+    description: "The main color influencing the interface colors."
+    type: class-select
+    default: vauxhall-indigo
+    options:
+      -
+        label: Teal
+        value: vauxhall-teal
+      -
+        label: Blue
+        value: vauxhall-blue
+      -
+        label: Indigo
+        value: vauxhall-indigo
+      - 
+        label: Purple
+        value: vauxhall-purple
+      - 
+        label: Magenta
+        value: vauxhall-magenta
+      - 
+        label: Red
+        value: vauxhall-red
+      - 
+        label: White
+        value: vauxhall-white
+  - 
+    id: color-intensity
+    title: Color Intensity
+    description: "How intense the main color appears across the interface. (Dark Theme only)"
+    type: class-select
+    default: intensity-standard
+    options:
+      -
+        label: Void
+        value: intensity-void
+      -
+        label: Standard
+        value: intensity-standard
+      - 
+        label: Nebula
+        value: intensity-nebula
+  -
+    id: header-color-type
+    title: Header Color Style
+    description: "How intense the main color appears across the interface."
+    type: class-select
+    default: headers-gradient-cyan-to-purple
+    options:
+      -
+        label: Mono
+        value: headers-mono
+      -
+        label: Mono Gradient
+        value: headers-mono-gradient
+      -
+        label: Rainbow
+        value: headers-colorful
+      -
+        label: Gradient (Mint/Blue)
+        value: headers-gradient-mint-to-blue
+      -
+        label: Gradient (Cyan/Purple)
+        value: headers-gradient-cyan-to-purple
+      -
+        label: Gradient (Blue/Red)
+        value: headers-gradient-blue-to-red
+  -
+    id: h1-accent
+    title: Accent Color Main Header
+    description: "Apply the user's accent color to H1 headers."
+    type: class-toggle
+*/
+
+/* Default Base Color */
+.theme-dark,
+.theme-light,
+.vauxhall-indigo {
+  --hue-bg: 238;
+  --hue-fg: 255;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-teal {
+  --hue-bg: 200;
+  --hue-fg: 180;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 30%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-blue {
+  --hue-bg: 228;
+  --hue-fg: 220;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-purple {
+  --hue-bg: 265;
+  --hue-fg: 265;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-magenta {
+  --hue-bg: 290;
+  --hue-fg: 280;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-red {
+  --hue-bg: 340;
+  --hue-fg: 320;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  &.theme-light {
+    --lum-fg: 50%;
+    --lum-bg: 95%;
+  }
+}
+
+.vauxhall-white {
+  --hue-bg: 228;
+  --hue-fg: 220;
+  --sat-bg: 20%;
+  --sat-fg: 20%;
+
+  &.theme-light {
+    --sat-bg: 30%;
+    --sat-fg: 0%;
+    --lum-bg: 90%;
+    --lum-fg: 0%;
+
+    &.intensity-void {
+      --lum-bg: 100%;
+    }
+
+    &.intensity-nebula {
+      --lum-bg: 80%;
+    }
+  }
+}
+
+/* Default Intensity */
+.theme-dark,
+.theme-light,
+.intensity-standard {
+  --lum: 11%;
+}
+
+.intensity-nebula {
+  --lum: 22%;
+  --background-secondary: var(--color-base-00) !important;
+  --titlebar-background-focused: var(--color-base-05) !important;
+  --background-modifier-form-field: var(--color-base-05) !important;
+}
+
+.intensity-void {
+  --lum: 0%;
+  --background-modifier-border: var(--color-base-40);
+}
+
+/* Default Header Colors */
+.theme-dark,
+.theme-light,
+.headers-gradient-cyan-to-purple {
+  --h1-color: var(--cool-cyan);
+  --h2-color: var(--light-blue);
+  --h3-color: var(--blue);
+  --h4-color: var(--blue-violet);
+  --h5-color: var(--violet);
+  --h6-color: var(--purple);
+}
+
+.headers-mono {
+  --h1-color: var(--vauxhall-fg);
+  --h2-color: var(--vauxhall-fg);
+  --h3-color: var(--vauxhall-fg);
+  --h4-color: var(--vauxhall-fg);
+  --h5-color: var(--vauxhall-fg);
+  --h6-color: var(--vauxhall-fg);
+}
+
+.headers-mono-gradient {
+  --h1-color: hsl(var(--hue-fg), var(--sat-fg), 65%);
+  --h2-color: hsl(var(--hue-fg), var(--sat-fg), 75%);
+  --h3-color: hsl(var(--hue-fg), var(--sat-fg), 80%);
+  --h4-color: hsl(var(--hue-fg), var(--sat-fg), 80%);
+  --h5-color: hsl(var(--hue-fg), var(--sat-fg), 90%);
+  --h6-color: hsl(var(--hue-fg), var(--sat-fg), 95%);
+}
+
+.headers-colorful {
+  --h1-color: var(--mint);
+  --h2-color: var(--cool-cyan);
+  --h3-color: var(--blue);
+  --h4-color: var(--violet);
+  --h5-color: var(--magenta);
+  --h6-color: var(--hot-red);
+}
+
+.headers-gradient-mint-to-blue {
+  --h1-color: var(--mint);
+  --h2-color: color-mix(in srgb, var(--mint) 50%, var(--cool-cyan));
+  --h3-color: var(--cool-cyan);
+  --h4-color: color-mix(in srgb, var(--cool-cyan) 60%, var(--blue));
+  --h5-color: color-mix(in srgb, var(--cool-cyan) 40%, var(--blue));
+  --h6-color: var(--blue);
+}
+
+.headers-gradient-blue-to-red {
+  --h1-color: var(--light-blue);
+  --h2-color: var(--blue);
+  --h3-color: var(--violet);
+  --h4-color: var(--purple);
+  --h5-color: var(--magenta);
+  --h6-color: var(--hot-red);
+}
+
+.h1-accent {
+  --h1-color: var(--color-accent) !important;
+}
+
+.theme-dark {
+  --black: #000;
+  --white: #fff;
+
+  --mint: #52eea3;
+  --cyan: #51e1e9;
+  --cool-cyan: #43cfea;
+  --light-blue: #54b6f8;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --violet: #9446f8;
+  --purple: #c952ed;
+  --magenta: #e54f9b;
+  --hot-red: #e3365e;
+  --cool-gray: #515768;
+
+  --vauxhall-bg: hsl(var(--hue-bg), var(--sat-bg), var(--lum));
+  --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), 80%);
+
+  --color-red: var(--hot-red);
+  --color-orange: #fa9f50;
+  --color-yellow: #ffd85e;
+  --color-green: var(--mint);
+  --color-cyan: var(--cool-cyan);
+  --color-blue: var(--blue);
+  --color-purple: var(--violet);
+  --color-pink: var(--magenta);
+
+  --background-primary: var(--color-base-00);
+  --background-secondary: var(--color-base-05);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-10);
+
+  --color-base-00: color-mix(in srgb, var(--vauxhall-bg) 25%, var(--black));
+  --color-base-05: color-mix(in srgb, var(--vauxhall-bg) 40%, var(--black));
+  --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--black));
+  --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
+  --color-base-30: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 90%,
+    var(--vauxhall-fg)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 95%,
+    var(--vauxhall-fg)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 80%,
+    var(--vauxhall-fg)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 30%,
+    var(--vauxhall-fg)
+  );
+  --color-base-100: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 0%,
+    var(--vauxhall-fg)
+  );
+
+  --text-normal: color-mix(in srgb, var(--vauxhall-fg) 30%, var(--white));
+  --background-modifier-form-field: var(--color-base-20);
+  --background-modifier-hover: var(--color-base-35);
+
+  /* File Navigation Guides */
+  --nav-indentation-guide-color: var(--color-base-30);
+
+  /* Indentation Guides for Lists */
+  --indentation-guide-color: var(--color-base-30);
+  --indentation-guide-color-active: var(--color-base-35);
+
+  --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
+  --text-highlight-bg-active: color-mix(
+    in srgb,
+    var(--h1-color) 25%,
+    transparent
+  );
+  --code-background: var(--color-base-25);
+}
+
+.theme-light {
+  --black: #000;
+  --white: #fff;
+
+  --mint: #47cc91;
+  --cyan: #47c1cd;
+  --cool-cyan: #3bb2ce;
+  --light-blue: #54b6f8;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --violet: #9446f8;
+  --purple: #c952ed;
+  --magenta: #e54f9b;
+  --hot-red: #e3365e;
+  --cool-gray: #515768;
+
+  --vauxhall-bg: hsl(var(--hue-bg), var(--sat-bg), var(--lum-bg));
+  --vauxhall-fg: hsl(var(--hue-fg), var(--sat-fg), var(--lum-fg));
+
+  --color-red: var(--hot-red);
+  --color-orange: #fa9f50;
+  --color-yellow: #ffd85e;
+  --color-green: var(--mint);
+  --color-cyan: var(--cool-cyan);
+  --color-blue: var(--blue);
+  --color-purple: var(--violet);
+  --color-pink: var(--magenta);
+
+  --background-primary: var(--color-base-05);
+  --background-secondary: var(--color-base-05);
+  --titlebar-background: var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-10);
+
+  --color-base-00: color-mix(in srgb, var(--vauxhall-bg) 25%, var(--white));
+  --color-base-05: color-mix(in srgb, var(--vauxhall-bg) 40%, var(--white));
+  --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--white));
+  --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
+  --color-base-30: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 90%,
+    var(--vauxhall-fg)
+  );
+  --color-base-35: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 95%,
+    var(--vauxhall-fg)
+  );
+  --color-base-40: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 80%,
+    var(--vauxhall-fg)
+  );
+  --color-base-50: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-60: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 60%,
+    var(--vauxhall-fg)
+  );
+  --color-base-70: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 30%,
+    var(--vauxhall-fg)
+  );
+  --color-base-100: color-mix(
+    in srgb,
+    var(--vauxhall-bg) 0%,
+    var(--vauxhall-fg)
+  );
+
+  --text-normal: color-mix(in srgb, var(--vauxhall-fg) 50%, var(--black));
+  --background-modifier-form-field: var(--color-base-20);
+  --background-modifier-hover: var(--color-base-35);
+
+  /* File Navigation Guides */
+  --nav-indentation-guide-color: var(--color-base-30);
+
+  /* Indentation Guides for Lists */
+  --indentation-guide-color: var(--color-base-30);
+  --indentation-guide-color-active: var(--color-base-35);
+
+  --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
+  --text-highlight-bg-active: color-mix(
+    in srgb,
+    var(--h1-color) 25%,
+    transparent
+  );
+  --code-background: var(--color-base-30);
+}
+
+h1 {
+  margin-top: 20px !important;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.markdown-preview-view img {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.callout {
+  border-radius: 12px;
+  border-width: 2px;
+}
+
+.task-list-item-checkbox {
+  border-width: 2px;
+}
+
+.markdown-preview-view {
+  border-radius: 6px;
+}
+
+.document-search-container {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-color: var(--color-base-30);
+  border-width: 1px;
+  border-top-width: 0px;
+  border-style: solid;
+  /* box-shadow: var(--input-shadow); */
+}
+
+.document-search-button {
+  color: var(--color-base-100);
+}
+
+.cg-note-toolbar-container {
+  box-shadow: none;
+}
+
+.callout[data-callout="note-toolbar"] {
+  box-shadow: none;
+  border-radius: 6px;
+}
+
+/* input {
+	color: var(--lavender) !important;
+} */
+
+/* table {
+	border-radius: 6px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--color-base-30);
+} */

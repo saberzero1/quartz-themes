@@ -1,0 +1,453 @@
+/*
+████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗      ██████╗ ██╗  ██╗
+╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║      ╚════██╗██║ ██╔╝
+   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║       █████╔╝█████╔╝ 
+   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║      ██╔═══╝ ██╔═██╗ 
+   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗ ███████╗██║  ██╗
+   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝ ╚══════╝╚═╝  ╚═╝
+   */
+
+:root {
+    --black: #000000; /*original*/
+    --black: #111111;
+    --black-mid:  #0c0c0c;  /*original*/
+    --black-mid:  #1b1b1b; 
+    --black-mid:  #141715; 
+    
+    --black-light: #131313; /*original*/
+    --black-light: #131a16; /* greenly shaded */
+    --black-light-light: #1f1f1f;
+    --grey-dark: #7f7f7f;
+    /* original */
+    /* --green-bright-bright: #2FFF00;
+    --green-bright: #29e000;
+    --green-bright-dark: #20af00;
+    --green-forest: #1C9A00; 
+    --green-dark: #0E4C00;
+    --green-darker: #072900;
+    --green-light: #E8FFE4;
+    --green-mid: #D1FFC9;
+    --green-mid-mid: #a1cc99;
+    */
+    
+    /* HUE modded */
+    --green-bright-bright: #00ff80;
+    --green-bright: #00e077;
+    --green-bright-dark: #00af6c;
+    --green-forest: #009a5a; /*original*/
+    --green-forest: #00ad65; 
+    --green-dark: #004c29;
+    --green-darker: #002922;
+    --green-light: #e4fff6;
+    --green-mid: #c9ffe6;
+    --green-mid-mid: #99cca7;
+    
+    --white: #FFFFFF;
+    --grey-light: #FAFAFA;
+    --grey-mid: #F5F5F5;
+    --grey: #EBEBEB;
+
+    --line-width: 800px;
+    --code-text-size: 0.9rem;
+    --code-text-size-header: 0.9em;
+    --code-size: 0.95rem;
+    --hr-height: 0.15em;
+}
+
+.theme-dark {
+    --hr-thickness: var(--hr-height);
+    --checklist-done-decoration: none;
+    
+    --blockquote-border-thickness: 5px;
+    --file-line-width: var(--line-width);
+    
+    --background-primary: var(--black);
+    --background-secondary: var(--black-mid);
+    --background-primary-alt: var(--black-mid);
+    --background-secondary-alt: var(--black-mid);
+    --divider-color: var(--green-darker);
+    --tab-divider-color: var(--green-darker);
+    --tab-outline-color: var(--green-darker);
+    
+    --interactive-accent: var(--green-bright);
+    --text-accent: var(--green-bright);
+    --color-accent: var(--green-bright-bright);
+
+    --bar-color: var(--green-darker);
+
+    /* Text */
+    --h1-color: var(--green-forest);
+    --h2-color: var(--green-forest);
+    --h3-color: var(--green-forest);
+    --h4-color: var(--green-forest);
+    --h5-color: var(--green-forest);
+    --h6-color: var(--green-forest);
+
+    --text-normal: var(--white);
+
+    --bold-color: var(--green-forest);
+    
+    --underline-line-color: var(--green-bright);
+    --highlight-color: var(--green-forest);
+
+    --links-color: var(--green-bright);
+
+    /* Checkboxes */
+    --checklist-done-color: var(--grey-dark);
+
+    /* Code block*/
+    /* --inline-code-background: var(--black-light-light); */
+    --inline-code-background: #131A16;
+    --inline-code-color: var(--green-bright);
+    --codeblock-background: var(--black-light);
+    --codeblock-color: var(--grey-mid);
+    
+    --code-variable-color: var(--white);
+    --code-function-color: var(--green-forest);
+    --code-builtin-color: var(--green-bright);
+    --code-string-color: var(--green-forest);
+    --code-operator-color: var(--green-bright);
+    --code-comment-color: var(--green-dark);
+    
+    /* Quotes, hashtags, links */
+    --quote-background: var(--black-light);
+    --hashtag-color: var(--green-bright);
+    --hashtag-background: var(--green-darker);
+    --link-color: var(--green-bright);
+    
+    /* Explorer */
+    --folder-title-color: var(--grey);
+    --file-title-color: var(--grey);
+    --folder-filter: invert(52%) sepia(95%) saturate(856%) hue-rotate(67deg) brightness(118%) contrast(117%);
+}
+
+.theme-light {
+    --hr-thickness: var(--hr-height);
+    --checklist-done-decoration: none;
+    
+    --blockquote-border-thickness: 5px;
+    --file-line-width: var(--line-width);
+
+    --background-primary: var(--grey-light);
+    --background-secondary: var(--grey-mid);
+    --background-primary-alt: var(--grey-mid);
+    --background-secondary-alt: var(--grey-mid);
+    --divider-color: var(--green-mid-mid);
+    --tab-divider-color: var(--green-mid-mid);
+    --tab-outline-color: var(--green-mid-mid);
+
+    --text-accent: var(--green-bright);
+    --interactive-accent: var(--green-bright);
+    --color-accent: var(--green-bright);
+
+    --bar-color: var(--green-mid-mid);
+
+    /* Text */
+    --h1-color: var(--green-forest);
+    --h2-color: var(--green-forest);
+    --h3-color: var(--green-forest);
+    --h4-color: var(--green-forest);
+    --h5-color: var(--green-forest);
+    --h6-color: var(--green-forest);
+
+    --text-normal: var(--black-light-light);
+
+    --bold-color: var(--green-forest);
+    
+    --underline-line-color: var(--green-bright);
+    --highlight-color: var(--green-mid);
+
+    --links-color: var(--green-forest);
+
+    /* Checkboxes */
+    --checklist-done-color: var(--grey-dark);
+    
+    /* Code block*/
+    --inline-code-background: var(--grey);
+    --inline-code-color: var(--green-forest);
+    --codeblock-background: var(--grey);
+    --codeblock-color: var(--black-light);
+    
+    --code-variable-color: var(--black-light-light);
+    --code-function-color: var(--green-forest);
+    --code-builtin-color: var(--green-forest);
+    --code-string-color: var(--grey-dark);
+    --code-operator-color: var(--green-forest);
+    --code-comment-color: var(--grey-dark);
+    
+    /* Quotes, hashtags, links */
+    --quote-background: var(--grey);
+    --hashtag-color: var(--green-forest);
+    --hashtag-background: var(--grey);
+    --link-color: var(--green-forest);
+    
+    /* Explorer */
+    --folder-title-color: var(--black-light-light);
+    --file-title-color: var(--black-light-light);
+    --folder-filter: invert(52%) sepia(95%) saturate(856%) hue-rotate(67deg) brightness(118%) contrast(117%);
+}
+
+/* ----------- Text ----------- */
+
+.markdown-source-view.mod-cm6 .cm-line {    
+    padding-top: 0em;
+}
+
+/* ----------- Titles ----------- */
+
+.HyperMD-header-1, .HyperMD-header.HyperMD-header-1.cm-line, h1 {
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
+  }
+  
+.HyperMD-header-2, .HyperMD-header.HyperMD-header-2.cm-line, h2 {
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
+}
+
+.HyperMD-header-3, .HyperMD-header.HyperMD-header-3.cm-line, h3 {
+    padding-top: 0.3em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.3em!important;
+}
+
+.cm-header.cm-header-1.cm-inline-code,
+.cm-header.cm-header-2.cm-inline-code,
+.cm-header.cm-header-3.cm-inline-code,
+.cm-header.cm-header-4.cm-inline-code,
+.cm-header.cm-header-5.cm-inline-code,
+.cm-header.cm-header-6.cm-inline-code
+{
+    font-size: var(--code-text-size-header)!important;   
+}
+
+
+/* ----------- Bar ----------- */
+
+.cm-line hr,
+.markdown-preview-view hr {
+    border-color: var(--bar-color) !important;
+}
+
+/* ----------- Tags ----------- */
+.cm-hashtag, .tag {
+    color: var(--hashtag-color) !important;
+    background-color: var(--hashtag-background) !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    font-weight: bold!important;
+}
+
+/* ----------- Underline ----------- */
+u {
+    text-decoration-color: var(--underline-line-color) !important;
+    text-decoration-thickness: 0.15rem !important;
+}
+
+/* ----------- Text Formatting ----------- */
+.cm-strong {
+    color: var(--bold-color) !important;
+    font-weight: bold !;
+    }
+
+/* ----------- Quotes ----------- */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, .markdown-rendered blockquote {
+    font-size: 0.95em;
+    background-color: var(--quote-background);
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+}
+
+/* ----------- Links ----------- */
+
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-rendered .internal-link.is-unresolved
+{
+    color:var(--text-normal)!important;
+    /* text-decoration-color: var(--text-normal); */
+    /* text-decoration-thickness: 0.15rem; */
+    text-decoration: none!important;
+    border-bottom: 0.1rem solid var(--text-normal);
+    padding-bottom: 0.05rem;
+}
+
+.external-link,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline
+{
+    /* color: var(--links-color) !important; */
+    /* border-bottom: 0.1rem solid var(--links-color); */
+    color: var(--text-normal);
+    text-decoration: none!important;
+    border-bottom: 0.1rem solid var(--text-normal);
+    /* text-decoration-thickness: 0.2rem; */
+    padding-bottom: 0.05rem;
+}
+
+a.internal-link,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline
+{
+    color: var(--links-color);
+    /* text-decoration-color: var(--text-normal); */
+    /* text-decoration-thickness: 0.15rem; */
+    text-decoration: none!important;
+    border-bottom: 0.1rem solid var(--links-color);
+    padding-bottom: 0.05rem;
+}
+
+u {
+    text-decoration:none!important;
+    border-bottom: 0.1rem solid var(--underline-line-color);
+    padding-bottom: 0.01rem;
+}
+
+/* ----------- Highlight ----------- */
+
+.cm-s-obsidian span.cm-formatting-highlight, 
+.cm-s-obsidian span.cm-highlight, .markdown-rendered mark {
+    background-color: var(--highlight-color);
+    border-radius: 0.3rem;
+    padding: 0 0.1rem 0 0.1rem !important;
+}
+
+/* ----------- Tables ----------- */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------- Checkboxes ----------- */
+
+input[type=checkbox]çchecked:hover {
+    background-color: var(--checklist-done-color);
+    border-color: var(--checklist-done-color);
+}
+
+/* ----------- Images ----------- */
+
+img {display:block;
+    margin-left:auto;
+    margin-right:auto;}
+    
+.markdown-preview-view img {
+    display: block;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  /* experiment with values */
+    transition:transform 0.25s ease;
+}
+
+.markdown-preview-view img:hover {
+    -webkit-transform:scale(1); /* experiment with values */
+    transform:scale(1.4);
+}
+  
+/* ----------- Inline Code ----------- */
+
+.cm-s-obsidian span.cm-inline-code, .markdown-rendered code   {
+    color: var(--inline-code-color) !important;
+    background-color: var(--inline-code-background) !important;
+    /* background-color: none!important; */
+    padding: 0.05rem 0.2rem 0.05rem 0.2rem !important;
+    border-radius: 0.3em!important;
+}
+
+/* ----------- Code - Code Block ----------- */
+
+pre code { 
+    background-color: var(--codeblock-background) !important;
+    border: var(--codeblock-background) !important;
+    color: var(--codeblock-color)!important;
+}
+
+.markdown-rendered pre {
+    background-color: var(--codeblock-background);
+}
+
+pre[class*="language-"], 
+code[class*="language-"]
+{
+    font-size: var(--code-text-size)!important;
+    background: var(--codeblock-background)!important;
+    color: var(--codeblock-color)!important;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg, 
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    background-color: var(--codeblock-background);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    left: 0;
+    right: 0;
+    background-color: var(--codeblock-background);
+}
+
+.markdown-rendered code {
+    background-color: var(--codeblock-background)!important;
+    color: var(--inline-code-color);
+    font-size: var(--code-text-size)!important;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+/* code styling */
+
+.cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
+.cm-def.cm-hmd-codeblock, .token.function, .token.class-name{
+  color: var(--code-function-color)!important;
+  text-emphasis: italic;
+} /* function name in declaration */
+.cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, 
+.token.keyword, .token.builtin, .token.property, .token.boolean,
+.token.parameter.variable, .token.variable
+{color: var(--code-builtin-color)!important;} /* built-in functions, methods */
+.cm-hmd-codeblock.cm-string, .token.string {color: var(--code-string-color)!important;} /* strings */
+.cm-hmd-codeblock.cm-number, .token.number {color: var(--code-operator-color)!important} /* numbers */
+.cm-operator, .token.operator {color: var(--code-operator-color)!important;} /* operators */
+.cm-hmd-codeblock {color: var(--codeblock-color);} /* codeblock */
+.cm-comment, .token.comment {color: var(--code-comment-color)!important;} /* comment */
+
+/* ----------- File Explorer ----------- */
+
+.nav-folder-children .nav-file-title-content:first-child::before 
+{ 
+    content: '📄 ';  
+}
+
+.nav-folder-children .nav-folder-title-content::before 
+{ 
+    font-size: 0.9em;
+    content: '📗 '; /*FCD53F*/
+    margin-right: 0px !important;
+}
+
+.nav-folder-title-content
+{
+    font-size: 0.95em;
+    color: var(--folder-title-color);
+}
+
+.nav-file-title-content
+{
+    font-size: 0.9em;
+    color: var(--file-title-color);
+}
+
+.nav-folder-title-content::before {
+    font-size: 1.3em;
+    content: '📚 ';
+
+    margin-right: 7px !important;
+}

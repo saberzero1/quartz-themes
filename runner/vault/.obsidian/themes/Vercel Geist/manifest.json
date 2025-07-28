@@ -1,0 +1,8 @@
+{
+  "name": "Vercel Geist",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.1",
+  "description": "A clean, modern Obsidian theme inspired by Vercel's design system with dark and light modes",
+  "author": "en3sis",
+  "authorUrl": "https://github.com/en3sis"
+}

@@ -1,0 +1,197 @@
+/* @settings
+
+name: Fusion
+id: fusion
+settings:
+  -
+    id: colors
+    title: Colors
+    type: heading
+    level: 1
+  -
+    id: theme-variant
+    title: Color scheme
+    type: class-select
+    allowEmpty: false
+    default: fusion-default
+    options:
+      -
+        label: Blue (default)
+        value: fusion-default
+      -
+        label: Black/White
+        value: fusion-black
+  -
+    id: high-contrast-text
+    title: Increase text contrast
+    description: Use a brighter text color.
+    type: class-toggle
+  -
+    id: hidden-elements
+    title: Hidden elements
+    type: heading
+    level: 1
+  -
+    id: no-note-padding
+    title: Disable note padding
+    description: Removes the bottom padding from notes. (Hides scrollbar in short notes)
+    type: class-toggle
+  -
+    id: show-view-header-title
+    title: Show view header title
+    description: Show view header title (while hovering).
+    type: class-toggle
+*/
+
+body.no-note-padding :is(.cm-content, .markdown-preview-sizer) {
+  padding-bottom: 0 !important;
+}
+
+.setting-item {
+  border-top: none;
+}
+
+.frontmatter-container.is-collapsed {
+  padding: var(--size-4-2) 0; }
+.frontmatter-container .frontmatter-container-header {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+:root .theme-dark {
+  --color-base-00: #0b0e14;
+  --color-base-10: #1c2028;
+  --color-base-20: #2d323c;
+  --color-base-25: #363b46;
+  --color-base-30: #3f4450;
+  --color-base-35: #474d5a;
+  --color-base-40: #505664;
+  --color-base-50: #626879;
+  --color-base-60: #737a8d;
+  --color-base-70: #848ca1;
+  --color-base-100: #b9c3de;
+
+  --text-on-accent: black;
+  --background-modifier-form-field: var(--background-primary-alt);
+}
+
+.theme-light {
+  --color-base-00: #b9c3de;
+  --color-base-05: #b0b9d3;
+  --color-base-10: #a7b0c9;
+  --color-base-20: #969eb5;
+  --color-base-25: #8d95ab;
+  --color-base-30: #848ca1;
+  --color-base-35: #7c8397;
+  --color-base-40: #737a8d;
+  --color-base-50: #626879;
+  --color-base-60: #505664;
+  --color-base-70: #3f4450;
+  --color-base-100: #0b0e14;
+  --accent-l: 60%;
+
+  --color-yellow-rgb: 190, 146, 0;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+}
+
+:root:root body.high-contrast-text {
+  --color-base-100: rgb(var(--mono-rgb-100));
+}
+
+:root body.fusion-black {
+  --accent-s: 60%;
+  --accent-l: 60%;
+  --color-base-00: rgb(var(--mono-rgb-0));
+}
+
+button:not(.clickable-icon, .mod-cta, .mod-warning), .dropdown {
+  border: 1px solid var(--background-modifier-border);
+}
+
+:root:root body {
+  --interactive-normal: var(--background-primary);
+}
+
+body {
+  --background-primary-alt: var(--background-primary);
+  --background-secondary: var(--background-primary);
+  --background-modifier-active-hover: var(--background-primary);
+  
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+  
+  --divider-color: var(--background-primary);
+  --tab-divider-color: var(--background-primary);
+  
+  --icon-color: var(--text-faint);
+
+  --accent-h: 228;
+
+  --hr-color: var(--text-accent);
+}
+
+.checkbox-container {
+  background: var(--color-base-10);
+}
+
+.titlebar-button:not(:hover) { color: var(--text-faint); }
+
+.workspace-tab-header:not(.is-active, :hover) .workspace-tab-header-inner-title {
+  color: var(--tab-text-color);
+}
+
+.workspace-tab-header-inner-title { text-align: center; }
+
+:root hr { border-width: 1px; }
+
+:root:root:root .view-header {
+  background: transparent;
+}
+.view-header {
+  position: absolute;
+  width: calc(100% - var(--size-4-6));
+}
+
+:root .view-header .clickable-icon {
+  background-color: var(--background-primary);
+  opacity: .8;
+}
+
+body:not(.show-view-header-title) .view-header-title-container > *,
+.view-header-title-container::after {
+  display: none;
+}
+
+@media (hover: hover) {
+  :root:root .workspace-tab-header:not(:hover) .workspace-tab-header-inner-close-button,
+  .workspace-tab-header-container:not(:hover) + * .view-header:not(:hover) .clickable-icon {
+    opacity: 0;
+  }
+
+  body.show-view-header-title .view-header-title-container:not(:hover) > *:not(:focus) {
+    opacity: 0 !important;
+  }
+}
+
+@media (hover: none) {
+  .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button { opacity: 0; }
+
+  .view-header { pointer-events: none; }
+  .view-header .clickable-icon { pointer-events: auto; }
+}
+
+body.show-view-header-title .view-header-title-container > * {
+  background: var(--background-primary);
+  opacity: .8;
+  box-shadow: 0 2px 4px #0004;
+  transition: opacity 0.15s ease-in-out;
+}
+.view-header-title {
+  padding: var(--size-2-1) var(--size-4-1);
+}
+
+.workspace-leaf-resize-handle:hover {
+  transition: background-color 50ms ease-out,
+              border-color 50ms ease-out,
+              opacity 50ms ease-out;
+}
