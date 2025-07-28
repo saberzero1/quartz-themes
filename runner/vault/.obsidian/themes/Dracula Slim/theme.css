@@ -1,0 +1,60 @@
+.theme-dark {
+  --background-primary: #282a36;
+  --background-primary-alt: #44475a;
+  --background-secondary: #282a36;
+  --background-secondary-alt: #1a1e24;
+  --text-normal: #f8f8f2;
+  --text-title-h1: #bd93f9;
+  --text-title-h2: #bd93f8;
+  --text-title-h3: #bd93f7;
+  --text-title-h4: #bd93f6;
+  --text-title-h5: #bd93f5;
+  --text-title-h6: #bd93f4;
+  --text-link: #8be9fd;
+  --markup-code: #ffb86c;
+  --text-tag: #50fa7b;
+  --text-a: #ff79c6;
+  --text-a-hover: #ff79c0;
+  --text-mark: #f1fa8c;
+  --interactive-accent: #b294bb;
+  --blockquote-border: #b294bb;
+  --interactive-accent-rgb: #f1fa8c;
+  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: Avenir, Avenir Next, sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  border-radius: 50px;
+}
+
+.is-selected {
+  background-color: var(--blockquote-border) !important;
+}
+
+.notice {
+  color: var(--text-normal) !important;
+  background-color: var(--blockquote-border) !important;
+}
+
+.markdown-preview-view code {
+  background-color: var(--background-secondary-alt);
+  font-size: 0.9em;
+}
+
+.cm-url {
+  color: var(--text-link) !important;
+}
+
+.external-link {
+  color: var(--text-link) !important;
+}
+
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+.markdown-preview-view th, .markdown-preview-view td {
+	border: 1px solid var(--interactive-accent);
+}

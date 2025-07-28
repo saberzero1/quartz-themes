@@ -1,0 +1,170 @@
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+
+
+
+.body {
+	font-family:'yu gothic',myriad apple text,sans-serif !important;
+}
+
+
+body {
+  --divider-color: transparent;
+  --hr-thickness: 1px;
+  --hr-color: #f1f1f1;
+}
+
+.markdown-rendered blockquote {
+    
+	padding-left:15px;
+	font-style:normal;border-left:1px dashed #A48783;background:transparent;
+}
+
+
+.workspace-tab-header-inner-title {
+  font-family: 'Georgia', serif;
+  }
+
+
+  .nav-file-title,
+  .nav-folder-title {
+      font-size: 1em;
+      font-family: 'georgia',serif;
+  }
+
+
+  body {
+    --inline-title-color: #A48783;
+    --inline-title-font: 'georgia', serif;
+    --inline-title-size: 2em;
+    --inline-title-margin-bottom: 0.5em;
+    }
+
+
+a.tag, .cm-hashtag {
+  font-family: 'georgia',serif;
+}
+
+
+.callout > .callout-content p:last-child {
+  margin-bottom: 0;}
+
+
+.callout {
+    border-width: 2px;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 0px;
+    }
+
+    .callout-title {
+      color: #A48783;
+      font-weight: bold;
+      font-family: georgia;
+      }
+
+
+
+.theme-dark,
+.theme-light
+{
+
+
+ 
+  
+	--hr-thickness:1px;
+
+	--color-base-00: #FCFEF3;
+    --color-base-05: #A48783;     /* header */
+    --color-base-10: #a48783; /* interactive hover */
+    --color-base-20: #4B2139; /* background secondary */
+    --color-base-25: #A48783;     
+    --color-base-30: #A48783; /* panel borders and interactable buttons */
+    --color-base-35: #202430;
+    --color-base-40: #202430; /* border color when input field is active */
+    --color-base-50: #A48783; /*sidebar symbols*/
+    --color-base-60: #A48783;
+    --color-base-70: #c1aeac; /*tab font*/
+    --color-base-100: #666666; /*main font*/
+
+    --interactive-normal: #E5DFD3;
+    --slider-track-background: #E5DFD3;
+    --icon-color: #C8BCAC;
+    --icon-color-hover: #41250C;
+    --icon-color-focused: #fff;
+
+    --code-background: #4B2139;
+
+    --nav-item-color: #fff;
+    --nav-item-color-active: #7F6C5E;
+    --nav-item-color-hover: #41250C;
+
+    --nav-item-background-active: none;
+    --nav-item-background-hover: #A48783;
+
+    --tag-background: transparent;
+    --tag-background-hover: transparent;
+    --tag-color: #A48783;
+    --tag-color-hover: #E5DFD3;
+
+
+    --text-accent: #527a98;
+
+    --tab-divider-color: #fff;
+    
+
+}
+
+
+.markdown-preview-section > div h1,
+.markdown-preview-section > div h2,
+.markdown-preview-section > div h3,
+.markdown-preview-section > div h4,
+.markdown-preview-section > div h5,
+.markdown-preview-section > div h6 {
+	font-family:'Georgia', serif;
+  margin-top: 40px;
+  font-weight:normal;
+  color:#A48783 !important;
+}
+
+
+
+
+
+::-webkit-scrollbar-track{width:8px;background:transparent !important;}
+::-webkit-scrollbar{width:8px !important;background:transparent !important;}
+::-webkit-scrollbar-thumb{width:8px !important;border-radius:0px !important;background:#A48783 !important;}

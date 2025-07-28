@@ -1,0 +1,1740 @@
+
+/* 
+@settings
+name: Dark Clarity Theme 
+id: obsidian-theme-dark-clarity
+settings:
+  - 
+      id: my-info-text
+      title: Dark Clarity Theme
+      description: "> 一款 obsidian 的主题 \n\n 
+      > 主要以 **高辨识度**、且 h1~h6 标题 **有主题色** 为主 \n\n
+      > 参考 Dark Moss Theme 部分作为基底，并且进行了多处优化： \n\n
+      > - 多款配色选择 \n
+      > - 浅色模式时的配色 \n
+      > - 优化辨识度（粗体明显、图片边框、引用块去斜体）\n 
+      > - 更多可选的优化功能（左边栏横向滚动、左边栏文件夹配色）
+      "
+      type: info-text
+      markdown: true
+  - 
+      id: h1
+      title: 主题配色选择
+      type: heading
+      level: 1
+      collapsed: false
+  - 
+    id: main-theme
+    title: 主题配色（标题、高亮等）
+    description: 
+    type: class-select
+    allowEmpty: true
+    default: theme-genshin-sangonomiya-kokomi1
+    options:
+      -
+        label: 原神-心海1
+        value: theme-genshin-sangonomiya-kokomi1
+      -
+        label: 原神-心海2
+        value: theme-genshin-sangonomiya-kokomi2
+      -
+        label: 原神-妮露
+        value: theme-genshin-nilou
+      -
+        label: 原神-甘雨
+        value: theme-genshin-甘雨
+      -
+        label: 原神-神里绫华
+        value: theme-genshin-神里绫华
+      -
+        label: 原神-可莉
+        value: theme-genshin-可莉
+      -
+        label: 原神-希格雯
+        value: theme-genshin-希格雯
+      -
+        label: 原神-砂糖
+        value: theme-genshin-砂糖
+      -
+        label: 新海诚-铃芽之旅
+        value: theme-suzume-no-tojimari
+      -
+        label: 周杰伦-叶惠美
+        value: theme-jay
+      -
+        label: Nord-Aurora
+        value: theme-Nord-Aurora
+      -
+        label: 荧光彩虹
+        value: theme-rainbow
+      -
+        label: 制作中...
+        value: theme-testing
+  - 
+    id: secondary-theme
+    title: 副配色（超链、tag 等）
+    description: 
+    type: class-select
+    allowEmpty: true
+    default: secondary-theme-green-blue
+    options:
+      -
+        label: DarkMoss（蓝+墨绿）
+        value: secondary-theme-green-blue
+      -
+        label: Nord 配套（霜冻蓝）
+        value: secondary-theme-Nord
+      -
+        label: 制作中...
+        value: secondary-theme-testing
+  - 
+    id: code-theme
+    title: 代码配色（代码高亮方案）
+    description: 
+    type: class-select
+    allowEmpty: true
+    default: code-theme-jetbrains
+    options:
+      -
+        label: jetbrains 同款配色
+        value: code-theme-jetbrains
+      -
+        label: from BlueTopaz-default
+        value: code-theme-BlueTopaz-default
+      -
+        label: from BlueTopaz-material-palenight
+        value: code-theme-BlueTopaz-material-palenight
+      -
+        label: from BlueTopaz-solarized
+        value: code-theme-BlueTopaz-solarized
+      -
+        label: from BlueTopaz-Gruvbox-dark
+        value: code-theme-BlueTopaz-Gruvbox-dark
+      -
+        label: from BlueTopaz-dracula
+        value: code-theme-BlueTopaz-dracula
+      -
+        label: from BlueTopaz-monokai
+        value: code-theme-BlueTopaz-monokai
+      -
+        label: from BlueTopaz-sublime
+        value: code-theme-BlueTopaz-sublime
+      -
+        label: 制作中...
+        value: code-theme-testing
+  - 
+      id: h2
+      title: 可选项
+      type: heading
+      level: 1
+      collapsed: false
+  - 
+    id: left-highlight
+    title: 左边栏-高亮
+    description: 是否开启左边栏(文件列表)的选中文件引导线高亮功能
+    default: false
+    type: class-toggle
+  - 
+    id: left-roll
+    title: 左边栏-横向滚动
+    description: 是否开启左边栏(文件列表)的横向滚动条功能，使长文本完全显示
+    default: true
+    type: class-toggle
+  - 
+      id: left-roll-min-width
+      title: 左边栏-横向滚动-最小宽度
+      description: 横向滚动子元素的最小宽度
+      type: variable-number-slider
+      default: 250
+      min: 0
+      max: 1000
+      step: 1
+      format: px
+  - 
+    id: folder-color11
+    title: 左边栏-文件夹配色
+    description: 是否开启左边栏（文件列表）的文件夹配色
+    type: class-select
+    allowEmpty: false
+    default: folder-off
+    options:
+      - folder-off
+      - folder-simple
+      - folder-theme-follow
+      - folder-theme-sailkites-rainbow
+      - folder-theme-coloured-folders
+  - 
+      id: folder-alpha
+      title: 左边栏-文件夹配色-透明度
+      description: 用于配置文件夹配色的透明度
+      type: variable-number-slider
+      default: 0.2
+      min: 0.01
+      max: 1
+      step: 0.01
+*/
+
+
+body .modal {
+  border-radius: 18px;
+}
+
+.theme-dark {
+  --background-primary: #161b22;
+  --background-primary-alt: #13161b;
+  --background-secondary: #11161d;
+  --background-secondary-alt: #0d1117;
+  --background-accent: #000;
+  --background-modifier-border: #424958;
+  --background-modifier-active-hover: hsl(224deg 23% 45% / 15%);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #15df6b;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #ff0f44;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+  --text-normal: #dedede;
+  --text-muted: #bbb;
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #20242b;
+  --interactive-hover: #353b47;
+  --interactive-accent: #4c78cc;
+  --interactive-accent-rgb: 76, 120, 204;
+  --interactive-accent-hover: #5082df;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --panel-border-color: #18191e;
+}
+  
+
+/* .theme-dark,.theme-light {} */
+
+* {
+  --gray-1: #5C6370;
+  --gray-2: #abb2bf;
+  --red: #ff0f44;
+  --peach: #ff5555;
+  --aqua: #078480;
+  --purple: #8c44aa;
+  --blue: #61afef;
+  --green: #15df6b;
+  --orange: #ffc83f;
+  --magenta: #ff2857;
+  --altblue: #0087ff;
+  --cyan: #0fb3ff;
+  --yellow: #fccd11;
+  --light-orange: #ff693f;
+  --lime: #b2f711;
+  --aquadark: #0b4c5e;
+  --lila: #c90481;
+  --green-light: #42accd;
+ 
+  --font-weight-title: 600;
+  --line-height-headers: 1;
+  --file-line-width: 1000px;
+
+  --search-match-color: #ffff00;
+  --search-other-match-color: #ff9632;
+
+  /* 默认字体 */
+  /* font-family: '煮豆黑体', '微软雅黑', "Segoe UI", sans-serif; */
+  /* font-family:'煮豆黑体', '微软雅黑', "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif; */
+  font-family: 'Zhudou Sans Normal SS02', '微软雅黑', "Segoe UI", "OpenSans-Medium", sans-serif;
+
+  /* 代码字体 */
+  --font-monospace: 'JetBrains Mono NL', 'JetBrains Mono',Consolas, Monaco,"等距更纱黑体 SC", monospace ;
+
+  /* --left-roll-min-width: 250px; */
+  /* 文件夹配色 */
+  --folder-color0: hsl( 214 21% 31% / var(--folder-alpha));
+}
+
+
+
+/* ---------------------------------------------  主配色  ---------------------------------------------   */
+
+
+/* 原神心海配色1 */
+body.theme-genshin-sangonomiya-kokomi1.theme-dark{
+  --theme-color: hsl(245 75% 63%);
+  --text-highlight-bg: hsl(245,75%,63%,0.5);
+  --text-title-h1: hsl(246 87% 69%);
+  --text-title-h2: hsl(245 75% 70%);
+  --text-title-h3: hsl(240 35% 73%);
+  --text-title-h4: hsl(13 84% 89%);
+  --text-title-h5: hsl(17 51% 66%);
+  --text-title-h6: hsl(11 59% 54%);
+  --folder-color1: hsl( 246 87% 69% / var(--folder-alpha));
+  --folder-color2: hsl( 245 75% 70% / var(--folder-alpha));
+  --folder-color3: hsl( 240 35% 73% / var(--folder-alpha));
+  --folder-color4: hsl( 13 84% 89%  / var(--folder-alpha));
+  --folder-color5: hsl( 17 51% 66%  / var(--folder-alpha));
+  --folder-color6: hsl( 11 59% 54%  / var(--folder-alpha));
+}
+body.theme-genshin-sangonomiya-kokomi1.theme-light{
+  --theme-color: hsl(245 75% 63%);
+  --text-highlight-bg: hsl(245,100%,78%,0.52);
+  --text-title-h1: hsl(246 87% 69%);
+  --text-title-h2: hsl(245 89% 75%);
+  --text-title-h3: hsl(240 99% 84%);
+  --text-title-h4: hsl(14  99% 83%);
+  --text-title-h5: hsl(17  91% 77%);
+  --text-title-h6: hsl(11  89% 63%);
+  --folder-color1: hsl( 246 87% 69%  / var(--folder-alpha));
+  --folder-color2: hsl( 245 89% 75%  / var(--folder-alpha));
+  --folder-color3: hsl( 240 99% 84%  / var(--folder-alpha));
+  --folder-color4: hsl( 14  99% 83%  / var(--folder-alpha));
+  --folder-color5: hsl( 17  91% 77%  / var(--folder-alpha));
+  --folder-color6: hsl( 11  89% 63%  / var(--folder-alpha));
+}
+
+
+/* 原神心海配色2 */
+body.theme-genshin-sangonomiya-kokomi2.theme-dark,
+body.theme-genshin-sangonomiya-kokomi2.theme-light{
+  --theme-color: hsl(245 75% 63%);
+  --text-highlight-bg: hsl(245,75%,63%,0.5);
+  --text-title-h1: hsl(246 99% 63%);
+  --text-title-h2: hsl(245 75% 63%);
+  --text-title-h3: hsl(240 44% 65%);
+  --text-title-h4: hsl(14  91% 79%);
+  --text-title-h5: hsl(17  55% 60%);
+  --text-title-h6: hsl(11  59% 54%);
+  --folder-color1: hsl( 246 99% 63%  / var(--folder-alpha));
+  --folder-color2: hsl( 245 75% 63%  / var(--folder-alpha));
+  --folder-color3: hsl( 240 44% 65%  / var(--folder-alpha));
+  --folder-color4: hsl( 14  91% 79%  / var(--folder-alpha));
+  --folder-color5: hsl( 17  55% 60%  / var(--folder-alpha));
+  --folder-color6: hsl( 11  59% 54%  / var(--folder-alpha));
+}
+
+/* 原神妮露配色 */
+body.theme-genshin-nilou.theme-dark{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(9 66% 53%);
+  --text-title-h1: hsl(213 62% 50%);
+  --text-title-h2: hsl(201 47% 60%);
+  --text-title-h3: hsl(199 42% 82%);
+  --text-title-h4: hsl(30 46%  95%);
+  --text-title-h5: hsl(9  51%  65%);
+  --text-title-h6: hsl(9  66%  53%);
+  --folder-color1: hsl( 213 62% 50%  / var(--folder-alpha));
+  --folder-color2: hsl( 201 47% 60%  / var(--folder-alpha));
+  --folder-color3: hsl( 199 42% 82%  / var(--folder-alpha));
+  --folder-color4: hsl( 30 46%  95%  / var(--folder-alpha));
+  --folder-color5: hsl( 9  51%  65%  / var(--folder-alpha));
+  --folder-color6: hsl( 9  66%  53%  / var(--folder-alpha));
+}
+body.theme-genshin-nilou.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsla(9,91%,64%,0.686);
+  --text-title-h1: hsl(213 74%  55%);
+  --text-title-h2: hsl(201 100% 69%);
+  --text-title-h3: hsl(199 100% 82%);
+  --text-title-h4: hsl(30  100% 85%);
+  --text-title-h5: hsl(14  100% 76%);
+  --text-title-h6: hsl(9   90%  61%);
+  --folder-color1: hsl( 213 74%  55%  / var(--folder-alpha));
+  --folder-color2: hsl( 201 100% 69%  / var(--folder-alpha));
+  --folder-color3: hsl( 199 100% 82%  / var(--folder-alpha));
+  --folder-color4: hsl( 30  100% 85%  / var(--folder-alpha));
+  --folder-color5: hsl( 14  100% 76%  / var(--folder-alpha));
+  --folder-color6: hsl( 9   90%  61%  / var(--folder-alpha));
+}
+
+body.theme-genshin-甘雨.theme-dark,
+body.theme-genshin-甘雨.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(245, 75%, 63%, 0.5);
+  --text-title-h1: hsl(231 30%  52%);
+  --text-title-h2: hsl(220 32%  54%);
+  --text-title-h3: hsl(214 64%  86%);
+  --text-title-h4: hsl(19  20%  82%);
+  --text-title-h5: hsl(357 34%  54%);
+  --text-title-h6: hsl(358 20%  48%);
+  --folder-color1: hsl( 231 30%  52%  / var(--folder-alpha));
+  --folder-color2: hsl( 220 32%  54%  / var(--folder-alpha));
+  --folder-color3: hsl( 214 64%  86%  / var(--folder-alpha));
+  --folder-color4: hsl( 19  20%  82%  / var(--folder-alpha));
+  --folder-color5: hsl( 357 34%  54%  / var(--folder-alpha));
+  --folder-color6: hsl( 358 20%  48%  / var(--folder-alpha));
+}
+
+body.theme-genshin-神里绫华.theme-dark,
+body.theme-genshin-神里绫华.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsla(245, 75%, 63%, 0.5);
+  --text-title-h1: hsl(228 43% 55%);
+  --text-title-h2: hsl(221 36% 57%);
+  --text-title-h3: hsl(217 37% 81%);
+  --text-title-h4: hsl(36  5%  82%);
+  --text-title-h5: hsl(340 29% 55%);
+  --text-title-h6: hsl(340 49% 34%);
+  --folder-color1: hsl( 228 43% 55%  / var(--folder-alpha));
+  --folder-color2: hsl( 221 36% 57%  / var(--folder-alpha));
+  --folder-color3: hsl( 217 37% 81%  / var(--folder-alpha));
+  --folder-color4: hsl( 36  5%  82%  / var(--folder-alpha));
+  --folder-color5: hsl( 340 29% 55%  / var(--folder-alpha));
+  --folder-color6: hsl( 340 49% 34%  / var(--folder-alpha));
+}
+
+body.theme-genshin-可莉.theme-dark,
+body.theme-genshin-可莉.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(9, 64%, 50%);
+  --text-title-h1: hsl(9  64% 50%);
+  --text-title-h2: hsl(9  54% 48%);
+  --text-title-h3: hsl(8  38% 49%);
+  --text-title-h4: hsl(16 50% 69%);
+  --text-title-h5: hsl(34 42% 79%);
+  --text-title-h6: hsl(14 35% 83%);
+  --folder-color1: hsl( 9  64% 50%  / var(--folder-alpha));
+  --folder-color2: hsl( 9  54% 48%  / var(--folder-alpha));
+  --folder-color3: hsl( 8  38% 49%  / var(--folder-alpha));
+  --folder-color4: hsl( 16 50% 69%  / var(--folder-alpha));
+  --folder-color5: hsl( 34 42% 79%  / var(--folder-alpha));
+  --folder-color6: hsl( 14 35% 83%  / var(--folder-alpha));
+}
+
+body.theme-genshin-希格雯.theme-dark{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(229, 70%, 59%);
+  --text-title-h1: hsl(208 66% 69%);
+  --text-title-h2: hsl(208 85% 82%);
+  --text-title-h3: hsl(217 44% 96%);
+  --text-title-h4: hsl(347 71% 80%);
+  --text-title-h5: hsl(342 80% 76%);
+  --text-title-h6: hsl(344 61% 58%);
+  --folder-color1: hsl(  208 66% 69% / var(--folder-alpha));
+  --folder-color2: hsl(  208 85% 82% / var(--folder-alpha));
+  --folder-color3: hsl(  217 44% 96% / var(--folder-alpha));
+  --folder-color4: hsl(  347 71% 80% / var(--folder-alpha));
+  --folder-color5: hsl(  342 80% 76% / var(--folder-alpha));
+  --folder-color6: hsl(  344 61% 58% / var(--folder-alpha));
+}
+body.theme-genshin-希格雯.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(229, 70%, 59%);
+  --text-title-h1: hsl(208 89% 75%);
+  --text-title-h2: hsl(208 85% 82%);
+  --text-title-h3: hsl(217 99% 89%);
+  --text-title-h4: hsl(347 71% 80%);
+  --text-title-h5: hsl(342 80% 76%);
+  --text-title-h6: hsl(344 83% 68%);
+  --folder-color1: hsl( 208 89% 75% / var(--folder-alpha));
+  --folder-color2: hsl( 208 85% 82% / var(--folder-alpha));
+  --folder-color3: hsl( 217 99% 89% / var(--folder-alpha));
+  --folder-color4: hsl( 347 71% 80% / var(--folder-alpha));
+  --folder-color5: hsl( 342 80% 76% / var(--folder-alpha));
+  --folder-color6: hsl( 344 83% 68% / var(--folder-alpha));
+}
+
+body.theme-genshin-砂糖.theme-dark,
+body.theme-genshin-砂糖.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:hsl(229, 70%, 59%);
+  --text-title-h1: hsl(229 70% 59%);
+  --text-title-h2: hsl(219 63% 74%);
+  --text-title-h3: hsl(0   0%  99%);
+  --text-title-h4: hsl(91  48% 87%);
+  --text-title-h5: hsl(146 17% 56%);
+  --text-title-h6: hsl(161 27% 39%);
+  --folder-color1: hsl( 229 70% 59% / var(--folder-alpha));
+  --folder-color2: hsl( 219 63% 74% / var(--folder-alpha));
+  --folder-color3: hsl( 0   0%  99% / var(--folder-alpha));
+  --folder-color4: hsl( 91  48% 87% / var(--folder-alpha));
+  --folder-color5: hsl( 146 17% 56% / var(--folder-alpha));
+  --folder-color6: hsl( 161 27% 39% / var(--folder-alpha));
+}
+body.theme-genshin-砂糖.theme-light{
+  --theme-color: hsl(245, 78%, 65%);
+  --text-highlight-bg:hsla(229, 87%, 69%, 0.549);
+  --text-title-h1: hsl(229 100% 74%);
+  --text-title-h2: hsl(219 100% 81%);
+  --text-title-h3: hsl(91  76%  84%);
+  --text-title-h4: hsl(91  69%  81%);
+  --text-title-h5: hsl(146 47%  76%);
+  --text-title-h6: hsl(161 38%  58%);
+  --folder-color1: hsl( 229 100% 74% / var(--folder-alpha));
+  --folder-color2: hsl( 219 100% 81% / var(--folder-alpha));
+  --folder-color3: hsl( 91  76%  84% / var(--folder-alpha));
+  --folder-color4: hsl( 91  69%  81% / var(--folder-alpha));
+  --folder-color5: hsl( 146 47%  76% / var(--folder-alpha));
+  --folder-color6: hsl( 161 38%  58% / var(--folder-alpha));
+}
+
+
+
+/* 铃芽之旅 */
+body.theme-suzume-no-tojimari.theme-dark,
+body.theme-suzume-no-tojimari.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg: hsl(214, 86%, 57%);
+  --text-title-h1: hsl(214 86% 57%);
+  --text-title-h2: hsl(220 67% 63%);
+  --text-title-h3: hsl(250 43% 71%);
+  --text-title-h4: hsl(309 39% 71%);
+  --text-title-h5: hsl(24  87% 71%);
+  --text-title-h6: hsl(46  96% 72%);
+  --folder-color1: hsl( 214 86% 57% / var(--folder-alpha));
+  --folder-color2: hsl( 220 67% 63% / var(--folder-alpha));
+  --folder-color3: hsl( 250 43% 71% / var(--folder-alpha));
+  --folder-color4: hsl( 309 39% 71% / var(--folder-alpha));
+  --folder-color5: hsl( 24  87% 71% / var(--folder-alpha));
+  --folder-color6: hsl( 46  96% 72% / var(--folder-alpha));
+}
+
+
+/* Jay */
+body.theme-jay.theme-dark,
+body.theme-jay.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg: hsl(23, 54%, 45%);
+  --text-title-h1: hsl(180 42% 40%);
+  --text-title-h2: hsl(151 36% 43%);
+  --text-title-h3: hsl(39  94% 82%);
+  --text-title-h4: hsl(35  74% 65%);
+  --text-title-h5: hsl(23  56% 49%);
+  --text-title-h6: hsl(23  54% 45%);
+  --folder-color1: hsl( 180 42% 40% / var(--folder-alpha));
+  --folder-color2: hsl( 151 36% 43% / var(--folder-alpha));
+  --folder-color3: hsl( 39  94% 82% / var(--folder-alpha));
+  --folder-color4: hsl( 35  74% 65% / var(--folder-alpha));
+  --folder-color5: hsl( 23  56% 49% / var(--folder-alpha));
+  --folder-color6: hsl( 23  54% 45% / var(--folder-alpha));
+}
+body.theme-jay.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg:#6a83f58c;
+}
+
+
+
+/* 七彩虹配色*/
+body.theme-rainbow.theme-dark,
+body.theme-rainbow.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg: hsla(258, 100%, 51%, 0.781);
+  --text-title-h1: hsl(0   100% 50%);
+  --text-title-h2: hsl(40  100% 50%);
+  --text-title-h3: hsl(80  100% 50%);
+  --text-title-h4: hsl(120 100% 50%);
+  --text-title-h5: hsl(170 100% 50%);
+  --text-title-h6: hsl(200 100% 50%);
+  --text-title-h7: hsl(240 100% 50%);
+  --folder-color1: hsl( 0   100% 50% / var(--folder-alpha));
+  --folder-color2: hsl( 40  100% 50% / var(--folder-alpha));
+  --folder-color3: hsl( 80  100% 50% / var(--folder-alpha));
+  --folder-color4: hsl( 120 100% 50% / var(--folder-alpha));
+  --folder-color5: hsl( 170 100% 50% / var(--folder-alpha));
+  --folder-color6: hsl( 200 100% 50% / var(--folder-alpha));
+}
+
+
+/* Nord-Aurora  */
+body.theme-Nord-Aurora.theme-dark,
+body.theme-Nord-Aurora.theme-light{
+  --theme-color: hsl(245, 75%, 63%);
+  --text-highlight-bg: hsla(210, 40%, 59%, 0.816);
+  --text-title-h1: hsl(354 42% 56%);
+  --text-title-h2: hsl(14  51% 63%);
+  --text-title-h3: hsl(40  71% 73%);
+  --text-title-h4: hsl(92  28% 65%);
+  --text-title-h5: hsl(311 20% 63%);
+  --text-title-h6: hsl(222 10% 75%);
+  --folder-color1: hsl( 354 42% 56% / var(--folder-alpha));
+  --folder-color2: hsl( 14  51% 63% / var(--folder-alpha));
+  --folder-color3: hsl( 40  71% 73% / var(--folder-alpha));
+  --folder-color4: hsl( 92  28% 65% / var(--folder-alpha));
+  --folder-color5: hsl( 311 20% 63% / var(--folder-alpha));
+  --folder-color6: hsl( 222 10% 75% / var(--folder-alpha));
+}
+body.theme-Nord-Aurora.theme-light{
+  --text-title-h6: #989ba1;
+}
+
+
+/* 测试用 */
+body.theme-testing.theme-dark,
+body.theme-testing.theme-light{
+
+}
+
+
+
+
+/* ---------------------------------------------  副配色 --------------------------------------------- */
+
+
+
+/* 默认副配色 */
+body.secondary-theme-green-blue.theme-dark,
+body.secondary-theme-green-blue.theme-light{
+
+  /* 超链颜色，包含元标签，如果不设置默认为主题色 */
+  --text-accent: #51b385;
+  --text-accent1: #61d29d;
+  --text-accent2: #00ddff;
+  --text-accent-hover: hsl(152, 69%, 61%);
+
+  /* tag 颜色 */
+  --tag-color:#58a6ff ;
+  --tag-color-hover:#449bff ;
+
+  /* 引用颜色 */
+  --quote-color:  rgb(61, 154, 216);
+}
+
+
+
+/* Nord */
+body.secondary-theme-Nord.theme-dark,
+body.secondary-theme-Nord.theme-light{
+
+  /* 超链颜色，包含元标签，如果不设置默认为主题色 */
+  --text-accent: #81A1C1;
+  --text-accent1: #81A1C1;
+  --text-accent2: #88C0D0;
+  --text-accent-hover: #81A1C1;
+
+  /* tag 颜色 */
+  --tag-color:#88C0D0;
+  --tag-color-hover:#88C0D0;
+
+  /* 引用颜色 */
+  --quote-color:  #5E81AC;
+
+}
+
+
+/* 测试用 */
+body.secondary-theme-testing.theme-dark,
+body.secondary-theme-testing.theme-light{
+
+
+}
+
+
+/* --------------------------------------------- 代码配色 */
+
+/* -----------------------  代码原生 */
+/* .theme-dark { 
+  --code-function: var(--color-yellow); 
+  --code-punctuation: var(--text-muted); 
+  --code-keyword: var(--color-pink); 
+  --code-property: var(--color-cyan); 
+  --code-string: var(--color-green); 
+  --code-tag: var(--color-red); 
+  --code-value: var(--color-purple); 
+  
+  --code-white-space: pre-wrap;
+  --code-radius: var(--radius-s);
+  --code-size: var(--font-smaller);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-important: var(--color-orange);
+  --code-operator: var(--color-red); 
+}
+*/
+
+.cm-s-obsidian .HyperMD-codeblock{
+  line-height: 1.4;
+}  
+/* 内联代码颜色 */
+.cm-s-obsidian span.cm-inline-code{
+  color: var(--cyan)
+}
+.markdown-rendered code {
+  color: var(--cyan)
+}
+
+/* 防止颜色侵入到代码块里 */
+code[class*="language-"] {
+  color:var(--code-normal);
+  display: block;
+  padding: 0em;
+  overflow: auto;
+}
+/* pre[class*="language-"] {
+  overflow: hidden;
+  color:var(--code-normal);
+} */
+
+
+
+
+/* -----------------------  idea 默认 dark 风格 */
+
+body.code-theme-jetbrains.theme-dark {
+  --code-function: #BCBEC4;
+  --code-punctuation: var(--text-muted);
+  --code-keyword: #CF8E6D;
+  --code-property: #BCBEC4;
+  --code-string: #72b67b;
+  --code-tag: #c5bf6a;
+  --code-value: #4a88cf;
+}
+body.code-theme-jetbrains.theme-light {
+  --code-function: #000000;
+  --code-punctuation: var(--text-muted);
+  --code-keyword: #0033b3;
+  --code-property: #871094;
+  --code-string: #067d17;
+  --code-tag: #0033b3;
+  --code-value: #1750eb;
+  --code-normal: #080808;
+}
+
+/* -----------------------  BlueTopaz 主题代码风格 */
+
+body[class*="code-theme-BlueTopaz-"] {
+  /* material: palenight theme */
+  --code-keyword: #c792ea;
+  --code-atom: #f78c6c;
+  --code-number: #ff5370;
+  --code-type: #decb6b;
+  --code-def: #82aaff;
+  --code-property: #c792ea;
+  --code-variable: #f07178;
+  --code-variable-2: #53ada3;
+  --code-variable-3: #e7852fe7;
+  --code-definition: #82aaff;
+  --code-callee: #89ddff;
+  --code-qualifier: #decb6b;
+  --code-operator: #89ddff;
+  --code-hr: #98e342;
+  --code-link: #696d70;
+  --code-error-bg: #ff5370;
+  --code-header: #da7dae;
+  --code-builtin: #ffcb6b;
+  --code-meta: #ffcb6b;
+  --code-matching-bracket: #ffffff;
+  --code-tag: #ff5370;
+  --code-tag-in-comment: #ff5370;
+  --code-string-2: #f07178;
+  --code-bracket: #ff5370;
+  --code-comment: #676e95;
+  --code-string: #c3e88d;
+  --code-attribute: #c792ea;
+  --code-attribute-in-comment: #c792ea;
+  --background-code: #292d3e;
+  --code-normal: #d4d4d4;
+  
+  --code-selection-background: #66bbaa59;
+  --code-selection-color: #000000;
+  --code-type: #bf616a;
+  --code-qualifier: #88c0d0;
+  --code-property: #5e81ac;
+  --code-value: #a3be8c;
+  --code-tag: #c74df7;
+  --code-operator: #5e81ac;
+  --code-hr: #7f7f7f;
+  --code-string-2: #08b94e;
+  --code-language: #7f7f7f;
+  --code-attribute: #bf616a;
+  --code-atom: #cc7523;
+  --code-comment: #068a5e;
+}
+
+body[class*="code-theme-BlueTopaz-"].token.class,.token.class-name {
+  color: var(--code-string-2) ;
+}
+body[class*="code-theme-BlueTopaz-"].token.atrule,.token.attr-value,.cm-property,.cm-attribute {
+  color: var(--code-attribute);}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian span.cm-variable {
+  color: var(--code-variable);}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian span.cm-variable-2 {
+  color: var(--code-variable-2);}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian span.cm-variable-3 {
+  color: var(---code-variable-3);}
+body[class*="code-theme-BlueTopaz-"] .token.class,.token.class-name {
+  color: var(--code-string-2) ;}
+body[class*="code-theme-BlueTopaz-"] span.cm-variable + .cm-hmd-codeblock + span.cm-variable {
+  color: var(--code-variable-2);}
+body[class*="code-theme-BlueTopaz-"] span.cm-variable + .cm-hmd-codeblock + span.cm-variable + .cm-hmd-codeblock + span.cm-variable {
+  color: var(--code-variable-3);}
+body[class*="code-theme-BlueTopaz-"] span.cm-type {
+  color: var(--code-keyword);}
+body[class*="code-theme-BlueTopaz-"] span.cm-def {
+  color:var(--code-function);}
+body[class*="code-theme-BlueTopaz-"] .cm-type {
+  color: var(--code-type);}
+body[class*="code-theme-BlueTopaz-"] .token.atrule,.token.attr-value,.cm-property,.cm-attribute {
+  color: var(--code-attribute);}
+body[class*="code-theme-BlueTopaz-"] .cm-qualifier {
+  color: var(--code-qualifier);}
+body[class*="code-theme-BlueTopaz-"] .cm-operator {
+  color:var(--code-operator);}
+body[class*="code-theme-BlueTopaz-"] .cm-hr {
+  color: var(--code-hr);}
+body[class*="code-theme-BlueTopaz-"] .cm-string-2 {
+  color: var(--code-string-2);}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian .cm-hmd-frontmatter.cm-atom,
+.cm-s-obsidian .cm-templater-command.cm-atom,
+.cm-s-obsidian .cm-math.cm-atom,
+.cm-s-obsidian .HyperMD-codeblock .cm-atom,
+.markdown-preview-view pre.cm-s-obsidian .cm-atom {
+  color: var(--code-atom);
+}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian .cm-hmd-frontmatter.cm-meta,
+.cm-s-obsidian .cm-templater-command.cm-meta,
+.cm-s-obsidian .cm-math.cm-meta,
+.cm-s-obsidian .HyperMD-codeblock .cm-meta,
+.markdown-preview-view pre.cm-s-obsidian .cm-meta {
+  color: var(--code-meta);
+}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian .cm-hmd-frontmatter.cm-builtin,
+.cm-s-obsidian .cm-templater-command.cm-builtin,
+.cm-s-obsidian .cm-math.cm-builtin,
+.cm-s-obsidian .HyperMD-codeblock .cm-builtin,
+.markdown-preview-view pre.cm-s-obsidian .cm-builtin,
+.markdown-preview-view pre code span.builtin  {
+  color: var(--code-builtin);
+}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.class {
+  color: var(--code-qualifier);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.function {
+  color: var(--code-function);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.punctuation {
+  color: var(--code-punctuation);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.operator {
+  color: var(--code-operator);
+  background: transparent;}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.entity {
+  color: var(--code-attribute);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.parameter {
+  color: var(--code-property);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.property {
+  color: var(--code-property);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.important {
+  color: var(--code-important);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.attr-name {
+  color: var(--code-tag);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.attr-value {
+  color: var(--code-string);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.builtin {
+  color: var(--code-builtin);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view pre code span.unit {
+  color: var(--code-value);}
+body[class*="code-theme-BlueTopaz-"] .markdown-preview-view  span.token.macro-name {
+  color: var(--code-important);}
+body[class*="code-theme-BlueTopaz-"] span.token.directive-hash {
+  color: var(--code-tag);}
+body[class*="code-theme-BlueTopaz-"] .cm-s-obsidian span.cm-comment {
+  color: var(--code-comment);}
+
+
+
+body.code-theme-BlueTopaz-default.theme-dark {
+  --background-code: #1111118c;
+  --code-variable: #db7c84;
+  --code-normal: #ebdbb2;
+  --code-comment: #568060;
+  --code-function: #cac685;
+  --code-important: #478fee;
+  --code-keyword: #478fee;
+  --code-operator: #a89984;
+  --code-property: #a0c7e9;
+  --code-punctuation: #abb2bf;
+  --code-string: #abd58e;
+  --code-tag: #db7c84;
+  --code-value: #abd58e;
+  --code-string-2: #d6b87f;
+  --code-active-line-background-color: #111111eb;
+  --background-code-2: #4c4c4cb0;
+  --text-color-code: #d58000;
+}
+body.code-theme-BlueTopaz-default.theme-light {
+  --code-keyword: #3bd4da;
+  --code-tag: #c74df7;
+  --code-function: #bf616a;
+  --code-important: #3bd4da;
+  --code-active-line-background-color: hsla(17, 44%, 32%,0.05);
+  --code-string-2: #cc7523;
+  --code-variable-2: #b74ff3;
+  --code-meta: #7f7f7f;
+  --background-code: #ebebeb71;
+  --background-code-2: #cccccc62;
+  --text-color-code: #e95d00;
+}
+
+body.code-theme-BlueTopaz-material-palenight.theme-dark,
+body.code-theme-BlueTopaz-material-palenight.theme-light {
+  /* material: palenight theme */
+  --code-keyword: #c792ea;
+  --code-atom: #f78c6c;
+  --code-number: #ff5370;
+  --code-type: #decb6b;
+  --code-def: #82aaff;
+  --code-property: #c792ea;
+  --code-variable: #f07178;
+  --code-variable-2: #eeffff;
+  --code-variable-3: #f07178;
+  --code-definition: #82aaff;
+  --code-callee: #89ddff;
+  --code-qualifier: #decb6b;
+  --code-operator: #89ddff;
+  --code-hr: #98e342;
+  --code-link: #696d70;
+  --code-error-bg: #ff5370;
+  --code-header: #da7dae;
+  --code-builtin: #ffcb6b;
+  --code-meta: #ffcb6b;
+  --code-matching-bracket: #ffffff;
+  --code-tag: #ff5370;
+  --code-tag-in-comment: #ff5370;
+  --code-string-2: #f07178;
+  --code-bracket: #ff5370;
+  --code-comment: #676e95;
+  --code-string: #c3e88d;
+  --code-attribute: #c792ea;
+  --code-attribute-in-comment: #c792ea;
+  --background-code: #292d3eba;
+  --code-active-line-background-color: #353a50;
+  --code-normal: #d4d4d4;
+}
+
+body.code-theme-BlueTopaz-solarized.theme-dark,
+body.code-theme-BlueTopaz-solarized.theme-light {
+  /* solarized */
+  --code-keyword: #cb4b16;
+  --code-atom: #d33682;
+  --code-number: #d33682;
+  --code-type: #6c71c4;
+  --code-def: #2aa198;
+  --code-property: #2aa198;
+  --code-variable: #839496;
+  --code-variable-2: #b58900;
+  --code-variable-3: #6c71c4;
+  --code-function: #82aaff;
+  --code-definition: #82aaff;
+  --code-callee: #89ddff;
+  --code-qualifier: #b58900;
+  --code-operator: #6c71c4;
+  --code-hr: #98e342;
+  --code-link: #93a1a1;
+  --code-error-bg: #ff5370;
+  --code-header: #586e75;
+  --code-builtin: #d33682;
+  --code-meta: #859900;
+  --code-matching-bracket: #859900;
+  --code-tag: #93a1a1;
+  --code-tag-in-comment: #ff5370;
+  --code-string-2: #b58900;
+  --code-bracket: #cb4b16;
+  --code-comment: #586e75;
+  --code-string: #859900;
+  --code-attribute: #2aa198;
+  --code-attribute-in-comment: #c792ea;
+  --background-code: #fdf6e3e1;
+  --code-active-line-background-color: #fffcf4;
+  --code-normal: #657b83;
+}
+
+body.code-theme-BlueTopaz-Gruvbox-dark.theme-dark,
+body.code-theme-BlueTopaz-Gruvbox-dark.theme-light {
+  --code-selection-color: #fbf1c7;
+  --code-selection-background: #7c6f6456;
+  --code-active-line-background-color: #533c3cee;
+  --background-code: #1d2021c6;
+  --code-variable: #a0c7e9;
+  --code-normal: #ebdbb2;
+  --code-comment: #a89984;
+  --code-function: #fabd2f;
+  --code-important: #fb4934;
+  --code-keyword: #fb4934;
+  --code-operator: #a89984;
+  --code-property: #fb4934;
+  --code-punctuation: #a89984;
+  --code-string: #b8bb26;
+  --code-tag: #fabd2f;
+  --code-value: #d3869b;
+  --code-meta: #568060;
+}
+
+
+body.code-theme-BlueTopaz-dracula.theme-dark {
+  --background-code: #282a36c0;
+  --code-normal: #f8f8f2;
+  --code-comment: #6272a4;
+  --code-string: #f1fa8c;
+  --code-string-2: #ffb86c;
+  --code-number: #bd93f9;
+  --code-variable: #50fa7b;
+  --code-variable-2: #ffffff;
+  --code-def: #50fa7b;
+  --code-operator: #8be9fd;
+  --code-keyword: #ff79c6;
+  --code-atom: #bd93f9;
+  --code-meta: #f8f8f2;
+  --code-tag: #ff79c6;
+  --code-attribute: #50fa7b;
+  --code-qualifier: #50fa7b;
+  --code-property: #66d9ef;
+  --code-builtin: #50fa7b;
+  --code-variable-3: #dc8e3b;
+  --code-type: #ffb86c;
+  --code-active-line-background-color: #414458;
+  --code-matchingbracket: #ffffff;
+}
+body.code-theme-BlueTopaz-dracula.theme-light {
+  --background-code: #e6e6e671;
+  --code-normal: var(--tex-normal);
+  --code-string: #d1945b;
+  --code-string-2: #da904b;
+  --code-variable: #3bd4da;
+  --code-variable-2: #b74ff3;
+  --code-meta: #797979;
+  --code-active-line-background-color: #dee1b9a5;
+  --code-comment: #6272a4;
+  --code-number: #bd93f9;
+  --code-def: #50fa7b;
+  --code-operator: #8be9fd;
+  --code-keyword: #ff79c6;
+  --code-atom: #bd93f9;
+  --code-tag: #ff79c6;
+  --code-attribute: #50fa7b;
+  --code-qualifier: #50fa7b;
+  --code-property: #66d9ef;
+  --code-builtin: #50fa7b;
+  --code-variable-3: #dc8e3b;
+  --code-type: #ffb86c;
+  --code-matchingbracket: #ffffff;
+}
+
+
+body.code-theme-BlueTopaz-monokai.theme-dark{
+  --background-code: #272822d9;
+  --code-normal: #F8F8F2;
+  --code-keyword:#F92772;
+  --code-value: #AE81FF;
+  --code-string-2:#E6DB74;
+  --code-comment: #75715E;
+  --code-active-line-background-color: #17013f9f;
+}
+body.code-theme-BlueTopaz-monokai.theme-light{
+  --background-code: #F8F8F2;
+  --code-normal: #272822d9;
+  --code-keyword:#F92772;
+  --code-value: #AE81FF;
+  --code-string-2:#E6DB74;
+  --code-comment: #aca47a;
+  --code-active-line-background-color: #17013f9f;
+}
+
+
+body.code-theme-BlueTopaz-sublime.theme-dark,
+body.code-theme-BlueTopaz-sublime.theme-light {
+  --code-operator: #9a6e3a;
+  --code-variable: #5180de;
+  --code-keyword: #EA5E66;
+  --code-string: #40bf31;
+  --code-function: #F9AE58;
+  --code-string-2: #F9AE58;
+  --code-type: #F9AE58;
+  --code-def: #F9AE58;
+}
+
+
+body.code-theme-testing.theme-dark,
+body.code-theme-testing.theme-light{
+}
+
+
+
+/* ---------------------------------------------  可选项  ---------------------------------------------  */
+
+
+/* --------------------------------------------- 左边栏横向滚动 */
+body.left-roll .nav-files-container {
+  display: flex;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+body.left-roll .nav-files-container > * {
+  min-width: var(--left-roll-min-width); 
+}
+
+/* --------------------------------------------- 文件夹配色 */
+
+/* 图标颜色 */
+/* 
+.workspace-leaf-content .collapse-icon svg.svg-icon {
+  color: var(--theme-color);
+} 
+*/
+:root {
+  --folder-alpha: 0.2;
+}
+.nav-files-container {
+  /* padding: var(--size-4-1) var(--size-4-3) var(--size-4-6) var(--size-4-3); */
+  padding: var(--size-4-1) var(--size-4-2) var(--size-4-2) var(--size-4-2);
+}
+
+
+/* ------------------------ 文件夹配色-简单 */
+body.folder-simple .nav-folder-title{
+  background-color: var(--folder-color0);
+}
+
+/* ------------------------ 文件夹配色-跟随主题 */
+body.folder-theme-follow .nav-folder-title {
+  background-color: var(--folder-color0);}
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title {
+  border-radius: 5px;}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+2) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+2) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+2) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+2) .nav-folder-title {
+  background-color: var(--folder-color1);}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+3) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+3) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+3) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+3) .nav-folder-title {
+  background-color: var(--folder-color2);}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+4) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+4) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+4) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+4) .nav-folder-title {
+  background-color: var(--folder-color3);}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+5) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+5) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+5) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+5) .nav-folder-title {
+  background-color: var(--folder-color4);}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+6) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+6) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+6) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+6) .nav-folder-title {
+  background-color: var(--folder-color5);}
+body.folder-theme-follow .nav-folder-children .nav-folder:nth-child(6n+7) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder:nth-child(6n+7) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+7) .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(6n+7) .nav-folder-title {
+  background-color: var(--folder-color6);
+}
+
+
+
+/* ------------------------ 文件夹配色- from Sailkites Rainbow */
+body.folder-theme-sailkites-rainbow {
+  --folder-theme-color1:  hsl( 0   65% 51% / var(--folder-alpha)) ;
+  --folder-theme-color2:  hsl( 26  90% 45% / var(--folder-alpha)) ;
+  --folder-theme-color3:  hsl( 39  75% 45% / var(--folder-alpha)) ;
+  --folder-theme-color4:  hsl( 51  74% 47% / var(--folder-alpha)) ;
+  --folder-theme-color5:  hsl( 112 92% 29% / var(--folder-alpha)) ;
+  --folder-theme-color6:  hsl( 175 71% 41% / var(--folder-alpha)) ;
+  --folder-theme-color7:  hsl( 199 68% 53% / var(--folder-alpha)) ;
+  --folder-theme-color8:  hsl( 213 69% 54% / var(--folder-alpha)) ;
+  --folder-theme-color9:  hsl( 237 72% 72% / var(--folder-alpha)) ;
+  --folder-theme-color10: hsl( 262 90% 69% / var(--folder-alpha)) ;
+  --folder-theme-color11: hsl( 267 84% 81% / var(--folder-alpha)) ;
+  --folder-theme-color12: hsl( 166 52% 54% / var(--folder-alpha)) ;
+  --folder-theme-color13: hsl( 80  64% 54% / var(--folder-alpha)) ;
+  --folder-theme-color14: hsl( 80  40% 44% / var(--folder-alpha)) ;
+  --folder-theme-colorxx: rgb(24, 140, 6);
+  
+}
+
+body.folder-theme-sailkites-rainbow .nav-folder-title {
+  background-color: var(--folder-color0);}
+
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title {
+  border-radius: 5px;}
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+2) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+2) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+2) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+2) .nav-folder-title {
+  background-color: var(--folder-theme-color1);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+3) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+3) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+3) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+3) .nav-folder-title {
+  background-color: var(--folder-theme-color2);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+4) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+4) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+4) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+4) .nav-folder-title {
+  background-color: var(--folder-theme-color3);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+5) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+5) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+5) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+5) .nav-folder-title {
+  background-color: var(--folder-theme-color4);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+6) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+6) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+6) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+6) .nav-folder-title {
+  background-color: var(--folder-theme-color5);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+7) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+7) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+7) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+7) .nav-folder-title {
+  background-color: var(--folder-theme-color6);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+8) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+8) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+8) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+8) .nav-folder-title {
+  background-color: var(--folder-theme-color7);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+9) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+9) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+9) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+9) .nav-folder-title {
+  background-color: var(--folder-theme-color8);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+10) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+10) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+10) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+10) .nav-folder-title {
+  background-color: var(--folder-theme-color9);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+11) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+11) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+11) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+11) .nav-folder-title {
+  background-color: var(--folder-theme-color10);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+12) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+12) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+12) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+12) .nav-folder-title {
+  background-color: var(--folder-theme-color11);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+13) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+13) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+13) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+13) .nav-folder-title {
+  background-color: var(--folder-theme-color12);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+14) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+14) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+14) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+14) .nav-folder-title {
+  background-color: var(--folder-theme-color13);       }
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder:nth-child(14n+15) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder .nav-folder:nth-child(14n+15) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+15) .nav-folder-title,
+body.folder-theme-sailkites-rainbow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(14n+15) .nav-folder-title {
+  background-color: var(--folder-theme-color14);       }
+    
+
+/* ------------------------ 文件夹配色- from Coloured Folders */
+
+body.folder-theme-coloured-folders {
+  --folder-theme-color1:  hsl( 0   65%  51% / var(--folder-alpha)) ;
+  --folder-theme-color2:  hsl( 336 78%  43% / var(--folder-alpha)) ;
+  --folder-theme-color3:  hsl( 282 68%  38% / var(--folder-alpha)) ;
+  --folder-theme-color4:  hsl( 258 58%  42% / var(--folder-alpha)) ;
+  --folder-theme-color5:  hsl( 232 54%  41% / var(--folder-alpha)) ;
+  --folder-theme-color6:  hsl( 210 79%  46% / var(--folder-alpha)) ;
+  --folder-theme-color7:  hsl( 201 98%  41% / var(--folder-alpha)) ;
+  --folder-theme-color8:  hsl( 186 100% 33% / var(--folder-alpha)) ;
+  --folder-theme-color9:  hsl( 173 100% 24% / var(--folder-alpha)) ;
+  --folder-theme-color10: hsl( 123 43%  39% / var(--folder-alpha)) ;
+  --folder-theme-color11: hsl( 92  48%  42% / var(--folder-alpha)) ;
+  --folder-theme-color12: hsl( 62  61%  44% / var(--folder-alpha)) ;
+  --folder-theme-color13: hsl( 38  95%  56% / var(--folder-alpha)) ;
+  --folder-theme-color14: hsl( 34  100% 50% / var(--folder-alpha)) ;
+  --folder-theme-color15: hsl( 27  100% 47% / var(--folder-alpha)) ;
+  --folder-theme-color16: hsl( 14  82%  46% / var(--folder-alpha)) ;
+}
+
+body.folder-theme-coloured-folders .nav-folder-title {
+  background-color: var(--folder-color0);}
+
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title,
+body.folder-theme-follow .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder .nav-folder-title {
+  border-radius: 5px;}
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+2) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+2) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+2) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+2) .nav-folder-title {
+  background-color: var(--folder-theme-color1);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+3) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+3) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+3) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+3) .nav-folder-title {
+  background-color: var(--folder-theme-color2);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+4) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+4) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+4) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+4) .nav-folder-title {
+  background-color: var(--folder-theme-color3);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+5) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+5) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+5) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+5) .nav-folder-title {
+  background-color: var(--folder-theme-color4);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+6) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+6) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+6) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+6) .nav-folder-title {
+  background-color: var(--folder-theme-color5);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+7) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+7) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+7) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+7) .nav-folder-title {
+  background-color: var(--folder-theme-color6);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+8) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+8) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+8) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+8) .nav-folder-title {
+  background-color: var(--folder-theme-color7);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+9) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+9) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+9) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+9) .nav-folder-title {
+  background-color: var(--folder-theme-color8);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+10) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+10) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+10) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+10) .nav-folder-title {
+  background-color: var(--folder-theme-color9);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+11) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+11) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+11) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+11) .nav-folder-title {
+  background-color: var(--folder-theme-color10);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+12) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+12) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+12) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+12) .nav-folder-title {
+  background-color: var(--folder-theme-color11);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+13) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+13) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+13) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+13) .nav-folder-title {
+  background-color: var(--folder-theme-color12);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+14) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+14) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+14) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+14) .nav-folder-title {
+  background-color: var(--folder-theme-color13);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+15) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+15) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+15) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+15) .nav-folder-title {
+  background-color: var(--folder-theme-color14);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+16) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+16) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+16) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+16) .nav-folder-title {
+  background-color: var(--folder-theme-color15);       }
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder:nth-child(16n+17) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder .nav-folder:nth-child(16n+17) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+17) .nav-folder-title,
+body.folder-theme-coloured-folders .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder .nav-folder:nth-child(16n+17) .nav-folder-title {
+  background-color: var(--folder-theme-color16);       }
+  
+
+
+/* 优化项  -----------------------------------------------------------------  */
+
+
+/* 图片边框：黑色边框、添加圆角边框、添加阴影效果、修改边框颜色为白色 */
+img {
+  border: 1px solid black;
+  /* border: 1px dashed black;     */
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
+  border-color: rgba(128, 128, 128, 0.8);
+}
+
+/* 预览粗体 优化 */
+.theme-light span.cm-strong,strong {
+  font-weight: 600 !important;
+  color: #000;
+}
+.theme-dark span.cm-strong,strong {
+  font-weight: 800 !important;
+  color: #fff;
+}
+
+/* 打印 pdf 白底优化 */
+.theme-light strong {
+  font-weight: 600 !important;
+  color: #000;
+}
+.theme-light {
+  --font-weight-title: 700;
+  --line-height-headers: 2;
+}
+
+/* 隐藏附件文件夹 */
+div[data-path$='_assets'], 
+div[data-path$='_assets'] + div.nav-folder-children 
+{
+	display: none;
+}
+
+/* 左边栏 */
+.nav-file-title, .nav-folder-title {
+  /* font-size: 15px; */
+  color: #757e8a;
+}
+
+
+
+/* 文件大纲引导线突出显示 */
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) .tree-item-inner,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) .tree-item-inner {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self.is-active .tree-item-inner {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active)+.tree-item-children,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active)+.tree-item-children {
+  border-left: 1px solid;
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) :is(.tree-item-icon, .file-tree-item-icon) svg,
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item.is-collapsed > .tree-item-self.mod-collapsible.is-active) :is(.tree-item-icon, .file-tree-item-icon) svg {
+  color: var(--theme-color);
+}
+/* 添加的文件图标的颜色 */
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self:has(+ .tree-item-children > .tree-item > .tree-item-self:not(.mod-collapsible).is-active) :is(.tree-item-icon, .file-tree-item-icon) {
+  color: var(--theme-color);
+}
+body.left-highlight .tree-item:not(.graph-control-section) .tree-item-self.is-active::before {
+  color: var(--theme-color);
+}
+
+
+
+
+/* 新增样式  -----------------------------------------------------------------  */
+
+
+/* 
+标注：文件夹结构
+A callout for a folder structure
+from : https://forum.obsidian.md/t/a-callout-for-a-folder-structure/61366
+ */
+ .callout[data-callout=folder i] {
+  --list-indent: 0em;
+  --indentation-guide-color: transparent;
+  overflow: scroll;
+}
+.callout[data-callout=folder i] .list-bullet {
+  display: none;
+}
+.callout[data-callout=folder i] ul {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.callout[data-callout=folder i] li {
+  --list-indent: 1.5em;
+  list-style-type: none;
+  font-family: var(--font-monospace);
+  white-space: nowrap;
+}
+.callout[data-callout=folder i] li li {
+  position: relative;
+  box-sizing: border-box;
+}
+.callout[data-callout=folder i] li li::before,
+.callout[data-callout=folder i] li li::after {
+  content: "";
+  position: absolute;
+  left: -1em;
+  background: var(--list-marker-color);
+}
+.callout[data-callout=folder i] li li::before {
+  top: 0.85em;
+  width: 10px;
+  height: 1.5px;
+  margin: auto;
+}
+.callout[data-callout=folder i] li li::after {
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  height: 100%;
+}
+.callout[data-callout=folder i] li li:last-child::after {
+  height: 0.85em;
+}
+.callout[data-callout=folder i] li .list-collapse-indicator {
+  position: absolute;
+  left: -2em;
+  margin: 0;
+}
+.callout[data-callout=folder i] li em {
+  opacity: 0.5;
+  font-family: var(--font-text);
+}
+.callout[data-callout=folder i] li code {
+  font-size: 1em;
+  font-family: var(--font-monospace);
+  font-style: normal !important;
+  background: none;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+}
+.callout[data-callout=folder i] li mark {
+  font-style: italic;
+  color: #d3a3e5;
+}
+.callout[data-callout=folder i] .callout-content {
+  overflow-x: visible;
+}
+
+
+
+
+
+
+/* ---------------------------------------------  结束  ---------------------------------------------  */
+
+
+
+/* search */
+
+/* 搜索文本高亮黄色 */
+/* .search-result-file-matched-text {
+  color: var(--background-secondary-alt);
+  background-color: var(--search-match-color);
+} */
+
+/* 编辑-搜索文本高亮黄色 */
+/* .cm-s-obsidian span.obsidian-search-match-highlight {
+  color: var(--background-secondary-alt) ;
+  background-color: var(--search-match-color) ;
+} */
+
+/* .markdown-rendered .search-highlight>div {
+  position: absolute;
+  pointer-events: none;
+  background-color: var(--background-primary);
+  mix-blend-mode: lighten;
+  border-bottom: 0.20em solid var(--search-other-match-color);   
+}*/
+
+/* .markdown-rendered .search-highlight>div.is-active {
+  background-color:var(--background-primary);
+  border-bottom: 0.20em solid var(--search-match-color);
+}
+
+.search-result-file-title {
+  color: var(--blue);
+} */
+
+
+/* 主题色应用 */
+
+/* headings preview-view */
+
+.markdown-preview-view h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-family-preview);
+  font-weight: var(--font-weight-title);
+  line-height: var(--line-height-headers);
+}
+.markdown-preview-view h1 {
+  color: var(--text-title-h1);
+  margin-top: 0px;
+}
+.markdown-preview-view h2 {
+  color: var(--text-title-h2);
+}
+.markdown-preview-view h3 {
+  color: var(--text-title-h3);
+}
+.markdown-preview-view h4 {
+  color: var(--text-title-h4);
+}
+.markdown-preview-view h5 {
+  color: var(--text-title-h5);
+}
+.markdown-preview-view h6 {
+  color: var(--text-title-h6);
+}
+
+/* headings-editor */
+
+.cm-header-1,.cm-header-2,.cm-header-3,.cm-header-4,.cm-header-5,.cm-header-6 {
+  font-family: var(--font-family-editor);
+  font-weight: var(--font-weight-title) !important;
+  line-height: var(--line-height-headers);
+
+}
+.cm-header-1 {
+  color: var(--text-title-h1);
+}
+.cm-header-2 {
+  color: var(--text-title-h2);
+}
+.cm-header-3 {
+  color: var(--text-title-h3);
+}
+.cm-header-4 {
+  color: var(--text-title-h4);
+}
+.cm-header-5 {
+  color: var(--text-title-h5);
+}
+.cm-header-6 {
+  color: var(--text-title-h6);
+}
+
+
+/* a links */
+a,
+.markdown-preview-view .internal-link {
+  text-decoration: none;
+}
+
+a:hover,
+.markdown-preview-view .internal-link:hover {
+  text-decoration: underline;
+}
+
+
+/* status bar */
+
+.status-bar,
+.side-dock.mod-right,
+.side-dock.mod-left {
+  border-color: var(--panel-border-color);
+  border-width: 1px;
+}
+
+.status-bar {
+  --bar-vertical-padding: 4px;
+  --bar-height: calc(22px + (var(--bar-vertical-padding) * 2));
+  line-height: 20px;
+  padding: 0 20px;
+  height: var(--bar-height);
+  max-height: var(--bar-height);
+  min-height: var(--bar-height);
+  overflow: hidden;
+}
+
+.status-bar-item {
+  margin: auto 0;
+}
+
+.status-bar-item>* {
+  padding-top: var(--bar-vertical-padding) !important;
+  padding-bottom: var(--bar-vertical-padding) !important;
+}
+
+
+/* #tag */
+a.tag {
+  color: var(--tag-color);
+}
+
+.cm-s-obsidian span.cm-hashtag {
+  color: var(--tag-color);
+  text-decoration: underline;
+}
+
+
+/* Blockquotes */
+
+.markdown-preview-view blockquote {
+  border: solid var(--quote-color);
+  border-width: 0px 0px 0px 3px;
+  color: var(--quote-color);
+  /* font-style: italic; */
+}
+
+.cm-s-obsidian span.cm-quote {
+  color: var(--quote-color);
+  /* font-style: italic; */
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border: solid var(--quote-color);
+  border-width: 0px 0px 0px 3px;
+  background-color: var(--background-primary);
+}
+
+
+pre[class*="language-"] {
+  overflow: hidden;
+}
+
+code[class*="language-"] {
+  display: block;
+  padding: 0em;
+  overflow: auto;
+}
+
+.markdown-preview-view pre {
+  padding: 12px 12px;
+}
+
+/*
+.theme-dark :not(pre) > code[class*="language-"], .theme-dark pre[class*="language-"] {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+}
+*/
+
+
+/* width of content editor */
+.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-contentContainer {
+  max-width: 1000px;
+  /*  margin-right: auto; */
+}
+.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-content {
+  max-width: 1000px;
+}
+.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-line:not(.HyperMD-table-row) {
+  max-width: 1000px;
+}
+/* width of content preview-view */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 1000px;
+}
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 1000px;
+}
+
+
+/* little change */
+
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--cyan);
+}
+
+.cm-line {
+  line-height: 1.5em;
+}
+
+
+ 
+.footnotes p {
+  margin: 0;
+}
+
+.frontmatter-container .tag,
+.frontmatter-container .frontmatter-alias {
+  margin: 0;
+}
+
+
+/* FONT : Zhudou Sans Normal SS02 */
+
+@font-face { 
+  font-family: "Zhudou Sans Normal SS02";
+  src: url(data:application/octet-stream;base64,d09GMgABAAAAADEwABEAAAAAghgAADDKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGlwbnE4ckRwGYACKIhEICoGEdOFnC4QGAAE2AiQDiAAEIAWWcAeXOhckGIdCG1xtB9g2jYJ3Oxijvv+fyJlBwXkIkjLuB5X9/39PUGMMH9JDFLPaLoANFEIxUplehEI5Vy5qLVQZY2xGoExFUu6aw9nal2Y/dbcZHZVbuAetckII77hPy9disejQGQ8CA0584Q4agAtgp9nO7/orPERP6dwzvse+7WfDY8vi/qGTEZLM+hBd+m9mZ497iLy5wJcN4Csv/U3r0JcvMFUqfjgoHFXw8tD/2uudeUsn2aQApABRGEC0rayrReMrXJ0j/kP8Nv9UdIrzqzP//NYUdUYSKigpIgg8oqUEjEQsUMGY05Uuysg/t9aliwpduOhGHNxA7OJnjaSk/gfwXzhsm2dfsQLayAARLvKStIXnF5htQBPj921xqlWiWLIsJc49fbT7BAzgh8HgjtkNc/DVg5wxJyzkpuZ/BFyP0/xdSU5mdvXspISQK8IDQ0j23eVaB/ox8WlmRm7ZKgM8+MCgulnGMSP3jtzp9rgO/P0mtaWtXAp78FGECAqx7RbnjJKRp3ZE6gBgh/Qc4ft+x0fTKdm4e3ZfFwiC0KGY4ecPH7Ufqi8vlwJu2RKoPx3fDUv753IJl+AKgI5R+QpPbIGlq1PVVfj3utJ2n1Y3sxdWgHgnRcXUpcqkS5Xy75NOK+lLXrYtyT4D7RpPPseRzXtn2D0T0x4ZkEJUAVdxF8SmTeUUXSZll+m5qPv4/y772VyyOSeB7j6yPUcXaofSjcIo9k3+1LxfM9CNwfHVFMrsUqrrQiMRBlWtR0FUnp7c4lMmGDDKfLVANcSamNOeTKMstWUKOajCd99dslZtg8/+6mZmsk5AiBBDCDFECBDxLe5x3Of9CQMgABz9bVEAHMveuRKAkzN+iAAEgEUpSkNJidExouw5oGLEYiwsmAYNmB12YAYNYkaNYnbbjWEACiDobTQehRm/J99SCvFKeUstot20elRcP7Ucn98ot7Wgn6vn/gSwp1IcE/5Q1lgRpsPjJmLiscJCrKH0V8b6FHalvMkG9+vVHS0QH822I/BRo14SnpgeYXAv4ynoOfMWKl46DCXiFxQNCICrrzQBzdPkBc2nzebmEygV0ipg+JC4KqtEbrSESdxuPOkxT6RncfW0/ZQfNURoRThWKSfOOK4i3EV4ivAWIYowifAXESgiuEqECkNEZGsqnFKImCzOlDqpWo0aNPS/CxGLRCwR0StOn5h+cQbEbKhR3WQzzjZD1WF7MAcc7L8CEdfmJ6g4KhFqUZqsHRSuMC4Q4SrKLWtaKA9kfQvlhax1oXyQdS+UL7IBkvmW+JnhMBUgwBiHqSBBJjlMhQgxDBS+MFYvolTU5AFmnlEYrDBvQ8S7onqyqQq1GNlgUBg8DB4eBoMvvMsQcUXU1Wy8QIPD6VqAozBMWTyD18ZS3moi4osJfwIIDEGnLxGs14AwRYgM0sY9olUI6T/CNZlo9lABquJ1CkrrzdPLT+8VmDZTkaY/3UxCRIm1lePjcOLFo5osGSdFSn+qFydNTLo4GWIyxckSky1OjphccfLE5ItTIKZQnCIxxeKU9FTVRZXUv4VEDYsaEW9U1K4qb7c9qL0i9om3X8QB8Q6KOirOMTHHxTkh5qQ4p8RcryfdoO9f/z/mKUBgun68s30OnnmIARZYYIEFFlhggQUWWI7jGIZjOIY44hhggQUWWAhBKm3A6fGIZCW0CuKFNz5BfN5Bvo46Jdx1t0QLSDwbNXjb/L6EPRUNF248ePHhy0+AICGs3tZjscuuIlQY68EAalr39XxX7jx5E5n4CxTsXE62KDXZlDZZ28F3W19tB/vbXG0fvN0OOw0acsU1FUYNFM8XROgzYINhI0btMmNqnRfI/TbOzCJJ4qVIkyFLjjwFipTYa79jTjhlsC4d02SiJm69j0GcZKnSZcqWK1+hYkcdd9IoXWyjPFimUuJhI3bZ5wBRzWU9Xmc3DH73DQgIDCEgICAgICAgIOAS+szUK9yNPWcCBASEJfWiF3nJ7SPcXvCo5fU8z/M8z/OoZdub53kutiy63p/Zq/ji71r2avaXt3fL4ziO4ziO49xMP5l7yOTj4Dj8W09/6DiOM2w4bHk9z/M8z/M8QmxZ12WRbVnP87y4i/n+z/PKa4EzSX4bPjDO1GHyuGEBUVJRExjO4kilDBuf3qmNL1Fdu4SftlXTmjYqou4ykv7v6pV8B+P5yuY2VJxvq7Sh7kJTfS1aLj1TXwXblceFn7/RWtmEV1e+fSdy/If3O6UofI4t0fj2W00fhZ/pYQW/Df/v2aKtWA8glFD0aNACiASJouJP1wEoRoUjHzkUSwisVtv44wMGomCSRJkKjVdmtjptnvWqd30qY8mzflzReGhMKKJ/DJ6Yji2ZHh56GsZkW7Q1/jemCBPzwZ7/KUqkc9El510w2oP377Yn3/fAQ490zS18s5blmPnkzS674uq58EFPWhuORhnNvPmoWELTHg0lWo63sX/GI8W20bC3jWZSmDOVfAUKFSEkZSl6JMFddo0SyzIJ0udRYz902Rixom2R+R066uq1g6KyX3fDLTcRklw86lmJlF6bcnfAUVKyFySAcldel26jJIkSHHZIJEmuPNlyVF2XTFnSZYgT76RTjjshj7jndr0IMZKlMDtiryjRZMQqVmKrVGmOOuZxgAQiSTbYb4soZjH2asUR6agzFa5XouH2jQtXbtx58OTFmw+RLxM//gIEChIs5HgRwk0L6xmRVjaV65z8tlvW+3osstgSK6y25hwp7w1TNLezCqatWOKkzAZKiTbQ0NoNj70WI4JJ8c5AB5I8x9m4N5jTLuHd9ogOZeZI4axzTjsjCcMv+ciTb7vjrnuYUhPEtIBEz/HKhLPiTVE67xqV+x4xogIZ7R0REtHaRSy078K0gNPOYS5zn3fbPUJmKHs9sDrQJGi9XjW8bedY9jGzaJNd5og96nslEwn0LMtZsGQWM7V53ZfaUMEENEZlLTaSxBD1PclYvAGLN7DDB9nhg4z67hroNZuEqjXpFg3P0MH3l2blUijAN5bvZxmAEuxZDxwdesyf01eBG+KRCbAHIPthdQd6iYMB1ybPKueqWZEJhgBA5+RhgIgDKMCDWAdLp1OXzQP3GgGAzcQhSSdwNC8di1OAUCJGQxSh2+9zfcUgMVUsMv1oxkpUGid5SD5St/Tzj9tpssoTMsDGuYmBUHDdZAlSJ02UvC5tfJyQj+28fNJelVgBOHpHNx3uGt435LjFxZGL/YWXMJ5/DPGwJvFk/z2uKkwnKSjRXkwANlNWwF9XQNcAMehECk+QKAkAJEtxE+he0M2Y2XLcj+h6TADOpHCLMcYaZ7wJJrb4spM81er/HEw1zXQzzDTLbOUKlU1DSydHrjz5ChQqUqxEKb0yBuUqVKpSzcikRq06Zhb1GoAgMAQKgyOQKDQGi8MTiCQyhUqjM5gsNofL41OSbnPMNc98C/RYaBFgsSWWWgZYboWVVhEAIC8AAOADEBFwaRHA0rqBS/vdwaeLE+SJEyhgKkwDFcyEWaCBxbAYBHUJ8HywBbaADvbDQYc+bHoNLtilmze5bwZgD5JYAnBU0ME4cMGwPAPgC7NgDoTAe3gP4eof/zKIgCdjUUXZTLASVkEirIU9kAz74YB7McgEkGeABWbBbFgMx+A4LIWTcCa2HLl9gtxPAliNfNLJBsBaaIZWx2+Bz7OxAdUA/qQHvASgnphfKHoSeBVNAKhJgV5Sop9MsIMsYDtZj51kY/+T3dtG9miI7NMgQEUK9JESA2SCUbKAkdSOXUTGDDN7YPdAAGka12MiCYA6SBIX/p1i5pxQ8DhQtBqtSo27xatDBjKo/ssFrQDyAexPAu7PAZw/HKU5iYzBUzIAfWhcPqGLPRlaDFI/FIChj+Ssz1z2HERfAv9BaxpYGM8WmD8Oa/oYXMKkPswasDHR1ikQDlIU7hfV8VvUZPI8YNjHrJpuUoY2N+Fc2wTreeyX+5jxayfivFNFmL144QLJ4DrbNgtiLl6bUr7B+21j5vZZ9jRsC26OMLDXN6+SYKX5RyUU0711n1qj3nTMyUD4VUkzvghTwb7zpDKpmrkmahBfBeMLV2FUL4xM6MfQaVdrTe1irYQopRy1SqW19ue21kV72XBTPX1abP2QpmmSOCKN7oh2iPOclG8aHoKNc+cky1qQLopdvMS7fzk6681NiKpPko6YwCO7R3/joEg92kOAChVaRUTnKbUl/6RQAoFoQIREmzvJiWnkjaRwiF9/ZWAg8OkKBpZwCkRj+WTSTvptJPLxvPxo/x6Y+ug31F5in7Bnilax5pPOEPL3+2Ux069ZPoKj+d0vQwHJqHD01H2vYZW579QeQW07lSZJB1CoVqKYmeRxW9I6knkq1ckhoDxZ7hE+ZWfqfvmEj18H0Lqb0WkZ8OaAuCUFrdkfL/bnhEvc2X+4JJzjL7ZnL6QogE/PV2NeaOb1yU65gUcFPn/51XDcl4PPi8zrDWq2VKvJjTpJpIjKtDUQQAllKXKF84RjxjYckVyJCnikdc0N7w1rz3YK8qEUQzjHa1yomMNlog7rJnLMVPSyOfa592RoKWWQXFE6lsyxtWqZrpgxOV7pKBkp2dWHqUQebqaSaW1ibaQ0REMMbR4m8OQg9oi0077c4PNauxilzzO7Ktk8b0ZACu/11/3XyleKlweL971VI/hSubH/x/7dL4vvEOKkenptYXfcjAXDQIixKlw9GpHvNlBSjtaSvYbeSMzOXRIM/14Cor2UDfPQTMxRuEyBT4/E/1+q0YlrQPUDz/IrnMUXPMuad35JOdDakyp9vlleYLLD9CUvYO4IKWb/CLY0NXWCrsqT8qo+WdXMia2ieBXI3mtPYyfDxyvmWQem25DYi6xJHhFWcSpmqEFeBQHcujlSuRYrUD3m73QzGhoBoVVhFNlyY99ocp34gswQ8pEsjwRykZFbm/V2vEanYgspjQyTJFcqWMdaAZmA+lI337bAL5TKeam5y5zs0uUYyMCvrTKZEcyXjwI1JlUwDJ3054JTjbbWcK2QNZqQTJaZJtf/fN75zyr6Ff3+XEkh3po78fRYp70siznqHD6dHdaO8jSiOEURcySUfZyXV7HmUEH9G2enzrVF5enClbVl4+xM39x9jBwznChI0Sg0X31Vk9LGCpISBGQDjY43MSkRx68XSmad5jDFLicMBCtF3Df0+E4zHxOIc70sD2gJSGVonSNqb3iWTp0FoD1qmVA0QiMu66ZYg1Wl1rHxIz4nqtOV1NsYzMsjfWPfcyeTdR98hm+LbMZmtL1OKDi5o0nk73He329U+c3jAkxnUzWoAqbN1BzMYqfdSQbzIr+Ovtwkr1pKXg80UkauYQMJju8H3KzVjXlWr1jl3KNmWm+J5qN72J3UsIYMcPSVFSij1lv4z4mLM28+1Dc85CpanpNmwpdkwwLSCDVHEuZSe9XZOSQUkVXDHImYhyhOowxNRaMAmagqr4GDkyKFzbR4+QpaKY003KYL0M/g7jOFVfqGVtGZdAc874IeBZGl4SDUEs0vzX5ol5SH54pyiXbN6YVM2BS6ZnA3K5ZKRdmg5kwYJSzULLSEvLxuxSnnsgphDShRwOwcVb+npsxW84RTwUzxknJMo0TraW2XaNJvcrscVzNNbrS4voKa9SxeSSovjxRaZUkBe4Cze6u5V6HV4oZQ6R0BLN8poBf9LrhYOgjS9LoRSnZMLVIadXfRX3AFg93i5pthPtYQrJokDXNDixab667LhPczSgX22PqQpnYhlBgH7PaC1FmLpPYqStH3RlGMxRtqt3c7mygYKLlav2LDSZEalJiONiUezFHI2OwWGxU0CkFx33AWYr0VmlijSBRMDh7sP8T1AvDlFYPjslFGfJbC/n/wKBoErE11F5IfO93wLi0jQdW7qkMKFjNtXrSjwudHUvipkBQfm/gNG3P8hC2lxRk925CGAyhHedsFHYhNmNOMstb6EDX/CLHkBF0Uzo0cGcfKF9/3BAUWFzdid4NPGpkbYCc05hiSr23K0TuJtzxh1FBCmh622aQf4LuMNk5cYU9SjI35tmhD1PSa7G71Q6B1UYbrDdJyxWAbfIbrqz3NZCoI1VdZm+FxZ0OwXEBv4LH/kNq5gkotBW9/DigkOEDxxZH79lBeErLLDCQrYt4LGeShR+1vpHO19jPM9zrSeVr7qVd20R1b+/hRNgmEPu4l1cUS4K1ozaGQAqoYsBEy9sPqURjJYo4mWcmiCELDQkb0wllzNcQtQFrpOjURbTZahg0x7vOwAB1kEISgnePRJll+AlGXwCpRG8gndLG+eZKcbGZl2LXVJSlDNQUrsvanm5BzTNL0acFGQ/H5EUDoj8MPqnh9d2g/DnRT8M7+O50mA1859oPt1VMoZHLVtaivjkYphhp4qyBibXdZDWlfeJqjcTIj7evf8RYZ3FBLDE0q24OdIjJ7n6OcP6ZO/1rKwdUABkZuFiVqkJeKPC1CayWFYDKnUsyeHEth/NptKpRcu0NMNwMVeI8yYq74BXUxzUjZU1sS1INBUsFQXv5S0TXFWmx/Qf6V5mv761L4tbL2MMb7tgUKpx9ipWgN5MHBROnVxdoi8vogx2X2lhCL6/rrpLFTh3oZiVv+XyjCe7YGftOPx6m2f6kZ7t0G6Y1prUNYRnD3Vsj2lIODSf9fOkXea3giOkiogWq2pAFpYfZNzZFLc5Tr0U04uKpWX59uJP/cDcUPYitavRFf3A9sOPdEdgzBpCCWRCtum0trgRB82//LvYGAcS6ffeihy8DTg32QL+P9OcHAmqMbbAWM0trCqZjuOBwZvGakHwvh65ux6WTFitwUU/NhGSwgAcgS9eRtv6fcFmkq4jvHgNApArYSGd7akqIQ+r4ryijwwtqbsWvWH+leVx667kBjWwSmCigvkVA44FopiOvXS4Htb4CxOy3yXuvXbiLi2qDMzo9LgZnfI4Vp5xSqUjDzcm9Nqcq5wo0bAD9gicQ1xVppX8MQ3LRhYag1ROBp0jihensrXLM90mPWOL22v66Ijysx3r9WGXjoawHG5z4ZrAWUMFxTrotcIVQRxQ2O6RA0uPnMa7WxZ1O3ODFsu4XTwzb9ORpbjCgmPu/X/bL4Pe1Yh8Yz7XvnTKoMVlHDPHTEJ6YSzwra0Z0GNy8Ofo44aeaQUTxNbsdfnyLn+fvDTSyg/HeGS9VchvaNWXMSK/Zy7vmVOhVOzsukS7X2fcyfnlW5zMB3QGud/fjN6I94BiQvTT/YjTzR1NTJer7WkDqVOjcnyao+Qc1Vm0YJoy5MtF2e5nASxJ8pES08ZZQRq5LzmIZ6BxiV7y81gg6G5Wm0bZf7+t22nWK6/hSeyMgLyr01CiOLCVWIdvdPad1fPn7L0yX7UaU+Sn8YXDtNHm5BSvNhSBgfy3+KfJrP2aTUFv4jFDfzfJHV6SGSkK6klpd+xBDSv6gclFNTBCtq2IVyK8QUll6y/rsioGPtKcmpqFPiU6BK+iP7Bw7gLBUWsFfaQmoByWWyHFIOwJHdD3X+i8fhk/F0Mol7HQSZw52JK1/bmQ3TR11/0TxSivLTrqMs4M4Fd6xKB/gPZh31PRgtFow8o4SwpWRMNAGNo6ek6bUKP6COzdeVaWRxwcy/5/4YV4IHU7cv/TlqZdklHitEvHLtp0ROrT608N21TxfFH4y+fNkiv/QI++gVu4GqQzJ9A8h2wyhRthGAtFrAM0FrNqlT9FL9DPAEUycS4lPZk1cnFX8QIeyMCO8SdoVHgOQjrOeXvMJ86AlgBSSES4hlyArXYyh9BMECSlFh45mJhFeMTCDl4Y8x9GMwlv9lSxoltHjpqS9DoC4imKJBMCR11yYbXkYHkkfjDrzGWSv20YQFDxebDhi5NLAJxB0JLH5R1C2IKr7T3CK5zyBOWM+oewh8/E/DiGDsfYAHLyTJ1s+5OrNvuNSapL6aIjS/Ab5K0LjPdBUk1wUKVl5t6affcUn/BjQJhsRho/zRsJhQHp8HvLaywobT+IvjQrDxGxK/zZ5GeC72swDamcTngyX0LRx6BUhGgsXmwTHyPSNfFvRlKu6w7tQDbhNPdPtb9kyYJPVtgGlC7Ly+ire2GVsfD1oqLOUxUXjuTO18EYljFtdfwLJn49XPuHWLCt0RN7fclxAZE5iDYUNSn2TtU0NYIHnsfUDSA5+k4K7ZCpXIfDDAGNoZBMe2dA2Hdmhd9O5uxvFOR4eT3zFA7BZmcLGBfDU3DxpK8iUSiL5JQ5BNoSY4+6JX6N0KYWFe6legfZ1BqoaZwr5014LFD5cbD3Ax8nIQczg1lMIXNiR1T9a+NESD5NG5A5z640p5Fe/Sc6+QHxguQxkisPZjxBEhg9OYyRoygNQw4WFbCAe5YzPp4PtGcFQopdMSu2DxvuuGQOZo8CgB4LKZz/Fdhh0kXXCZKnCd+i5IgrpYMAUR/mJBag9ifyd2ReRrEk4diXqNT7UQ2xu8vyd1ddQL4i3LSMQLTNjI8hU1AkZgM63oAUx5mMEKNPrrxCyOXq6yFWGF2dYShDeJHiC2/dURpIPYkEGlsy/BJm+d46iJOcL0TKZ9zEHFJByjuoEvCJ8E13TeTHRMJqeh6vPPbI6lyghZ2EmKfXsVsr37YisyoYbqvXQW18WpP065f8/Ldc9+8HJsWVNpDkeglcYj4nlodoFUJtCIWSS+Cop8cDuJ7G2AghYxhMuXFmSrm+sxfGqTRPT+Mj2MzEwlS5jUrnQEnhYXvSoe9SU2bDoF3LjgMpWvDg0c1UZ372Z0Hnd06DzJANMWhWxjTkjHTnt4l5fsS08oEirQFBIg42TR0aRPvYIdaS0G19XVR+oD/08BC18QPWNIyP/BgFvaZVYNDRePLbaaYb60+eAwb2g3b2h4DWeVUgWtAqeexFo3MOA5OMb1GtKlfgd0G7rfAdxGECduBzGQDDfKdArESFPKM5bkiSwFdaVKkaxdp9263WY5DZyLbRRG0DXxFYU5QmjpQ4gCKYt5dDyXTCvIpuTkQnMNpjwxU6SmO9lmwRVKTsESM4AQe5tIdV5c91pq7V6zVZyLDMaFTbSBhztM84zFpq7ZrfX0CIYgvlJVKpesP8smTpnrVzSDRnD/xnQCt8POK7FzKEU4u8kiO2zOnLxaS6lpRpvB2L7DroIl0ai4vCwOlK9Iig9SCmhAgSCf3EKzwxKugE+xppaS7AXDadRgZlaasD5bl2dRi0k8KT1IhFBqMjVzDeV4npJNwQrYPP90TgBXQCDKWJI56b50WhIOwtPIXGIylkUFH3og9+aEKhbXFMMiM9JGsJMcRXZY3dw8o7nU1NxWZmpTYz2kGiWPK+Nw8+TJwe4Z04m06VUSKD8RDXBgW4d3Az+in8qt3plDvvnr968/CobgfaS+Lu4Z3JgR12r24H9uQHKgmhZaLWDj4k5m2kbpyrjSQmVRw+x8KdUbfl7tl0vH4IyKzq2blu0ev7tnzebtKw2VUfiCCPOhiesHr/yEudXXx9E/5pfVOozYLdgQDfEKQS/CjeyRMeWjB09jhddYWTIcVTDnGBeiL3iKcL29dJ4kl8rMok2GbfTtL15U1gCnnBqgazOKB5A9VTkiSjpVlVLU7gLSNrZ2b+3oWbB5rlLtT+UFVG/afm3/tuO3tpgkEf4UcTiIbyw4Nnb6xHnXJztOH+fvScXOaqlkAReE63FaFVxNU8dU0UIQ9Qrmg4jYHUcu79959dY+c0G0X1p2VOHiNds6Bro39CrpXj9P0Lyqq8PBeYQrxFvHg1yh6nXVIA6R2OE4pwOe2JzYBZ/T5ZgIrsYpyNOYjBDOwp3/QWHVxWZwR7wG7WV1v40qLCdtvzKwVcxBg383oqe0NFBdnr5qqy4YrKvKFXJD2LbYuO4nOR2wVVROBpsQrpLRbphtTcYEw1W6vRdmZ2ZcAaiF2t07bgxv2nZ9b3ktTWxat+Na5Z6+WRuntIz0D7RsaJ0zeyN4gnA9HfBAv6S5NzdZXl9pYGXxcpnFZZkANahdXnO2ImDrgfJlm2wJtptGb+zZtfP6xvU7rlVlAK2OVtfsOY5Tr79zC+fkGQYGE66plYcZw5kz5x9cwc1OKzRiwbM1eUvKLK3sIJY2vFKqo5FTuZSSkIJgjVYin5OvL1eGe1Oyp0uZEgqOwCZpgwxhuXJwBnHmO5VE/b4NxL1729zTvbC9o6v1B/SzoaS0qLC0TPdn3PGSXcdd+Ye8/oNcGc7p/oIDnoLmnQHuI5zcXPnNf7yz4TRnmRdv4Q/u0t8etClah/R/dTN/850SXKH+IF+tqMeD3hMG9iPsln8wSk8SThGEH5627ZTdUN1WgbOICLvHZVcWX1sshN2TwAMEbuu8/2kw7Ja2AzRwVNDXZCZcFHZ1mfYJLEqKx9ZfLsd8fp1+vMP/dwbSFxS9IL0AfjMQ0SJqpiNartKp4cAQmatR5bVhnWQwiiSOwc8W8DZ72+fAQlh4EpEpizRrYhtQxTYaPD7hEUaQrQQiDCCT3f2j7W3NqkRqmaV7yYLGgfLGRJWdsyCJwt4Sq+IajHbVULlSKKqteAXCYy3zuxYv6+it51D8vEgEH7xKU1NeIq+RM+n+1D94Glth6Vy8tKm/vC5FYwsjBL9iUQgOUhhWV0lU8krK/jFyqpQCSX35C/C3b6ldVBPfDRpzDEq1JJQqQOQ1Leptb5uzppLIkGZPkqSLMnVgJWLS4cRDk9N3XMwkuvkpSJRvBclP055OAudja/EKGJyHl32nuRDBEEebhRI53y8Ea4vKaTXU9y6Y3zBkJgvEdRXlomqeil9U6F/JKwWc/8IzbPs1aNL4tXpWTWe7SlhUksimsMEPBObq5CMDjkke9qcEzI8D//29ZfBw9vMFgJXAfkAjeZJpJBoj5ahjkseC7OJc2xnn0e/8fP+uBl8/8AtBgZYGwtqtjyjuXVc9/fadK78UWJK3S+C1r0/edw6e6AdO5A/OxR4cb2Y1LLasPsbKO1QvYOcVENiZeEeRbZsMiZsVkmc7qEGDKbFjE4qVLixJOnvdEeAy241aNPgD5rf9X29cMNQ2v33AUtu24ujUB1mW3VmWslJpnUIOrKUyS1dYY5+hMVljC2MGvGdxCQ4qGK6wiiznF1uVOht5VQq+uPGewARWRGFYtpi82Xpz15KFjYPlFpwWBpfgueytOKXMpXf9P4AVCqHIYngF7iMwo5OPzHNMeuJggO2DUlOJCA/qtnhmVqPm8c7JGHDUyDWJiksZwRnKKHmHJowUJ/BTB/HJlIxySKMWhWzkBrMJ1Iiw8OeyAEWgkAoqYy8eYa9JXP2P8zJi57O0ZwQGlpKO7CduAqOxY1cbodquNpWoqCSZnUmYLLHp1yHBCcRdBr+lzJfuQrE5ZpK0lPHvMoBNwAoGV8KbqnQgwdxk4Xolv0jpn1cEE/mZJDxokCEp0XkynIkwFyjFoAVvEJcjTvtLB573P5ec8r8SIV33Zf0XgIkO/05I9Ik5nj5N/IzBm6mYXtpj4073gyxKgfUaf4FUAPwQSPoECj8fmz7GTAU4SKjO40JDSZeIBOKlpCEoj6smvBtGr9AXusEK3fQr0JfegTHBEGkI0BjWyP6kYNrCg/T2E+4hCz3uQPCiA5P/mDeGhg7AvNhXU3I3G/zyIKb5pKg1NZXP9mWw/dP2ZloXpZbcmeoyt2JZ/j9yPIj5pBGEbeSH0OZ2995NuWsxsCJGaNNI5VNn1RelFK3UlZcC4KbtQKxjggHSANEmrinYgegYTh7WDGMXPxngj7WOt/KeDizFNmTjFdEBghCpeghHxWkykJoivIaXqilAaWhYDRUHpeo5BH0FUc/Wh9rF2JGxymi4gRoND4UjsLjtMcFgiu9b8nA9qcw10mHSofXkw+Qz6s8+Oyr67m307a4NqmGf0LVrK6evd/Nfu6YKpWTOUphdWjfrQbCXcpvkTnyEXKZtiAAOhE5hLcGs0YHrT9a6CesUmz4H3Qd163Ki+Zu5tnHncgnxKQQrJOYsSUHxO948Op+y/PLljTOQ/39yWhvFxwc0Ps+d8yCfQpdzzLU9okiXiDlodGE2/KO3WCxfp1BBiVczBkMTcWmkGTXRWbGFP+LSk7efikmhEl2xuFyVWpfTVzycR/qxI3G9KcXF5YVBsjbSZBNW+8zCt2qS02hJslFsfqBs7Ma4xYpimfjh+CftKn4jrow+YjkSPeSYqE9M0gN/sujw7BZihWwZ8nXkQ7nHsqoIQUx82amlFqeNu6hZrobLF3tXOBuTTUrOu18TZoGzWx8tOBDfp6smkImZmzQUd9pC53lHPT2PfroxMjhcPVxcFRKzvnoiSGYPRR0anlghIERlN0tIsd/VBr5HbR9sr+7J2On+fcE9ULU4zcnAj6zD+s1teuFJwfL5We5mLSV/VU2pQCFotFcgRQGkovoFgta2anWtXqsU1C/qTfAO9k5QNMR9WpV5Vlp3Mz+Lj/WkvGia64etizTwL9VP2uiU1+YBL57oz97a1FwkBhpRa2Hofvs8Y4qQXWEnihRFUqWUOWkl9CY5IIcS8sriwnujZDp0AVI4ByksQOtmqWPDsrTOPm3BnlBQmjBkhTyD23yctRsv413KLpc/KJgzNhLrDEP9cemaOOTf83Fs0D6iadKF7ummJlRMNKtHLbeLMNnzRZf5IpN9hNyuRx3NikE1TTddGGiaFDFo/3HEvwd4akRZHa2kJOPWRVG7vuEwx4uithqTSK0d7xajD4xPQEvRjxElyNZLf0DyYgjte6yTI9fV58IHlWilJZ1tXWSy9Z728BypYVyR6FU4rUKrFgZpASnCP9Gcd/WTeqXJUpV1KoP0J0ZwVz3+KU4jSHyOgeyzREPnY7J83rSh99y9gbxxdw+67Y1PFiYfvTYWHVu39IIZFYsyX+gOzspytvNCTQnhO6C+xTXcWzlvUky8FFPJjDSpvqEcrExTUF52zlnXbC+p1oR846dn0mKoHOPul9G83lK18+UPxjXpyUyJsbfdEcBvQFW2Inad9mr//pyBCuPEDx6SdvioGhdIEMYEOz+7BCMRIk20Q3poMP6IHPuff79GrpLrk1eJauAHBFI2fShxhV4P5FUYVwwlPLhhpoqvmtmAP8DwXS/mvQjfj16CPnX9eIk8CiXUYlBBq9wNIS2Vct7QcIb6omE3F3y6gNhVcY+pJQ2FF7mUXRdqSWLQ7zukN6Ae04gNW+5cyQ+UUsIvYXU8+WBywPHZf4m4E7547viLI3yKVnRel1vepXaJ8+jM5sBTyqSJmaBN+1kDXdoVcJLK6xkEHdko8cuekePuWnUS8GWWp4OSVl/MIwC/ls1u8E34BSapSAYYiTzNtZ+YNe3gQvqJdveQgn4gLvjAIvqxdu/b2NBBLLeUGgm0vp55XOgtfhWAU38OG5hDsWPbqQszrz4vHbYO0vOaIj+0YRW8UWDadxUkW0Hcg7CWq98PHrhk+HuPm5Jwjb9bfG2GEO6GA3czduXpIPqGJn+Y+A84bz1xQeY/efrbxpnWtRoyNNC+Wk0V2HNn+WAQvSPnjfe+/SYIu1M+h8vOhzExDrpv8ubchfS5v8V+rr8FXZVmgdEPpHkIvq+7Sd1cVpyNfMx54/WP11rizRUHXddLDo8//x8JgMK9f6s+SkPqN3std+62bj/hHqyUawegQjnugG34L2a3h3cO1DW0pSCKJ/t/wQcAchQgFUC+4iVGb5mAIgu2kC3/mMuw04xeCQEmJ5e1Q6qG/1BVAkgsw+SoLFMLAALQBj8RiZPCMLZPB8IIgynGqhCHXMBUv8s76MQ8eQLYplwjE7jYrcdT6IJxPQtTjCT1MpzT0YsCrIAV6tUHNk7HPKar06MWNP7w0ItJ6qYLT7mDMChPCK6b29LLh5uywEcI8vEzzslONYIrilaLshHvAlUeVZiqnnU24xMjy2mCUWzFStjhf2yUk3pgEvzUGTuQbcyJ4aRiDF8/VV1ORWGDh+iTx0Sm0uQ8KyN1IkYQXxPWumB2uEps+DdZV2Vc9UiXAHlyUg2mlzuA74IbuhplcIP76dxws0wE8hFWKoDKye6dvrC5yxGkNzrutX/5gnW0hSdGUJhtMjrI20Qbet5xe6x0sD9uYa7y3yTj8O1iGHBA5yeG2XnMJnuMJcZ/LX/yrydFLh/z6hTMxEysxuqZZIkpqmf2RwRI4lMC3MqRJ8j08yMy8gGI+2XWECJcIoUoZVQSJyZGiXHJBOL55Cek4JyHScWheJKasmSSlnt5GYIZJJ3Paj3pedT7yEjbCGRH0QQedgDF5qMIuHb2Pw/ou1pwSMVAOLexhCh9ayHGv51OKpr2dVJTtR/DaL49bEdo5x5FAH07dIhA1WUcrQawCogwh5YofViJUxONxJhTSbz0HEcK4bmSVALzFqnpi0RasaUQgvmOdGEqF0gvvu4mI+f6FtkRGlc4RGIjrkIAqT12PoFnV0Q783HNH5wd1wxxdpHmGCAwCrZj7NmO8WQ7JpDtmFVsx4SpvRwmle2ZUrZnqpw917zP2Uearz0wpnWjfuoS4H2ml+3NODn/5Reey69erTo2osXMRZPWLZooW5dqHVrUKycKZpBtT1g7JYsU6aA+/zpdKphVatW8kwM8MUQ40TNMumjiPu1Mij2tWhVq5GvVIlseK+WaVZtBpoqUq5TctejJDDd+VRbfIwH/p/koLfXlYvAP45+ttt5W11XxorYZnhZyO3Tx7jF4Vx3+exeVpsomWdXaFWRGPo2KrMq16CyK3qrDmeWaaNRaLio2qilay1s6vz8dv9WqKLZLr9UlrFWuA76ZPh+2DrHZoRZiF1DGieifNpSN7MIuqsVI2M4yNKAXYf8zxlSRuYg2qujZrS6LTGK3mj5M9IYbUQZJ9fTqhovCHHOFv0Yi1FRwDYrvUEhMqi744gKK/N2bHfq8+DcJocJl7CiSqXZV9E6uzx7BEMIRyzhGFILpBBJ404dt6rVfyY4OnsLNe4Vpv9Ox7PhI3fqX/vBCeYFFa1C72j+0hzaBtR6mmckX12uKWpl8HiAyv1ydNUyUi2L6wrIVWqb8niCAJxYBvdjZ0qYYew1bvNDkDTcMcqwXICHSUKlcZIqK6K6Pomljkr0uOXQi1JVpDh0JWYOdY8mZxHdueuNFJkeCNN4IGxXszWzALbp5tyD+7FvEuww0d/tt47zcfCdKQsqM70JHrLt+iXsFMxL5kvDH8nS4/uExZb5s3GEZP2K9RFf4lwYfIfvZBgpo0eLicm/o8Q06Gc1JRcv5xEFWyYKUso+QxgFov/Vh/s/DXayLyLnza/mO5aPFrJGKkuZ3Z7c+lw5MOfD0S2N1s3TirweR9ttmW+Widz38inUuP33v2Ag/0+rT30x5yrY/w49CC9x+PhJCTksCm9bRimnO7UJM0fj2fNlKNl3KhTap4q+/oJCc4hJxfFdLpa3rxe2LwTtH3l6ywIt3t+XtWmYtEkkiWNUp15YLuicstImkpV8ZQqRK/BnYeW/kMCb5R9HmT74kbxz2LxsNWGOt3/xunV9979cDkAJCBg4IGDwIBFAwyKGAiDChjAuptAHrPD8IozhJs7woq7ppu34Yp3lZt/04r/t5v59IIlPSqOm0DDojk8liQxwujy8QisQSqSxLrlCq1NkarS4nNy+/oLCouKRUX2Yor6isqjaaamrrzJb6BhCCERTDCZKiGZbjBVGSFVXTDdOyHdfzgzCKkzTLi7Kqm7brh3Gal3Xbj/O6n/f7/WWgqJpumJbtuJ4PESaUcRGEUZykWV6UVd20XT+M07ys236ccMEND7zwwe/VF/6v9/ju8+2+3yMaC7PpC753SYw8EBEGxoW0HZUuJmyY1GJcSEelO2TcZvnWpcjDQAyTWixeMJjUYlxI21HpMmEghjVtrxMDMUxqMS6k7ah0FWEghkktxoW0HZVuySYiIiIiIiIiAAAAAAAAZmZmZmZmZmYRERERERGRjkztWTwFlnS0XV+pZgWc2UyHLWerGsOqU8tACVhmwQo7QvOR0mTR+/0n4seVog2FDDSS3OB2ZdX7Ip2hv0eMXMcY/L1e9kaZhTfghlq9J2w+sKeSuzqGzG2JKGki27ATSnKiLq1Opo55iEsiiSQymKTcTKl+MmSeBqrxJU/vb/O+bZrmfzm2Vy+ulHuvl4pYDphIeccHLk7vacS9UgcSmTDtdUjtviDRnaqKpm/Fm+8MtGIf4Ysz/p3W54na0Hrdw8+3e+2CX83BBzvA4S5443QhhRx80MPwOt6uDrR1nssL6NzFzjmnOi12ke5p2qGHTTv2vR4SyXoOAtM6kEW7kL0ToRvp2MJ0zvI2Ba1TaRMdswVkLPWZJxto+66f8D21A9PyKLaZ/QBZU/SDAGEUM7pUdEpfV4XpKaNWVuZfz2X0LPNAwpz/ANajDnqJzu/jbZIyEKKWOeORJtlkNF6lbMDOqauzBg3zQbD3ybrBPYDVgMHBgUFBfcyLl7cQrHheng1najJRC5qcMIfY0jIWeR7Jq+EFz/kxUrx1l4rWpTo574xfY8tUyPkfFS16Fpvnh6HP7OoVW7qcEhDKiTSNN5ZyIpmpqxOTBiAQfGf1c9DhSkx4Hi+MBRPjraCBq9F6OjeJ9sOzdroexYBZlAO5B0bjFv6W41Ug4wf3Qkq0UVWdYQpYwzH0tJ0xytAYH2ZcFXs8GM2D0mwb/0AWICCb4ZfPwiB6sZQ94mZpQTTYGH3AAuONBwAAAA==);
+}
+
+
+
+

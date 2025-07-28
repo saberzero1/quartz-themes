@@ -1,0 +1,597 @@
+/* ==
+@name             Minimal Dracula
+@namespace        github.com/druxorey/minimal-dracula-for-obsidian
+@version          1.6.1
+@description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
+@author           Druxorey
+@license          GNU General Public License v3.0
+== */
+
+/* ============================ COLORSCHEME ========================== */
+
+:root {
+	--drx-color-comment: #6270A4;
+
+	--drx-color-red-1:#FF6E6E;
+	--drx-color-red-2: #FF5555;
+	--drx-color-red-3: #E63C3C;
+	--drx-color-orange-1: #FFD185;
+	--drx-color-orange-2: #FFB86C;
+	--drx-color-orange-3: #E69F53;
+	--drx-color-yellow-1: #FFFFA5;
+	--drx-color-yellow-2: #F1FA8C;
+	--drx-color-yellow-3: #D8E173;
+	--drx-color-green-1: #69FF94;
+	--drx-color-green-2: #50FA7B;
+	--drx-color-green-3: #37EB62; 
+	--drx-color-cyan-1: #A4FFFF;
+	--drx-color-cyan-2: #8BE9FD;
+	--drx-color-cyan-3: #72D0E4;
+	--drx-color-blue-1: #6DCCFF;
+	--drx-color-blue-2: #54B3FF;
+	--drx-color-blue-3: #3B9AE6;
+	--drx-color-purple-1: #D6ACFF;
+	--drx-color-purple-2: #BD93F9;
+	--drx-color-purple-3: #A47AE0;
+	--drx-color-pink-1: #FF92DF;
+	--drx-color-pink-2: #FF79C6;
+	--drx-color-pink-3: #E660AD;
+
+	--drx-border-radius: 10px;
+	--drx-border-width: 2px;
+	--drx-shadow-radius: 8px;
+}
+
+/* ========================== OBSIDIAN VALUES ======================== */
+
+body {
+	--drx-color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--drx-color-highlight: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+
+	--h1-weight: 600;
+	--h2-weight: 600;
+	--h3-weight: 600;
+	--h4-weight: 500;
+	--h5-weight: 500;
+	--h6-weight: 500;
+
+	--h1-size: 1.50em;
+	--h2-size: 1.35em;
+	--h3-size: 1.20em;
+	--h4-size: 1.15em;
+	--h5-size: 1.10em;
+	--h6-size: 1.05em;
+
+	--h1-line-height: 1.00em;
+	--h2-line-height: 1.00em;
+	--h3-line-height: 1.00em;
+	--h4-line-height: 1.00em;
+	--h5-line-height: 1.00em;
+	--h6-line-height: 1.00em;
+
+	--code-comment: var(--drx-color-comment);
+	--code-function: var(--drx-color-green-2);
+	--code-important: var(--drx-color-red-2);
+	--code-keyword: var(--drx-color-pink-2);
+	--code-operator: var(--drx-color-red-2);
+	--code-property: var(--drx-color-orange-2);
+	--code-string: var(--drx-color-yellow-2);
+	--code-tag: var(--drx-color-red-2);
+	--code-value: var(--drx-color-purple-2);
+
+	--tag-color: var(--drx-color-accent);
+
+	--link-color: var(--drx-color-accent);
+	--link-color-hover: var(--drx-color-highlight);
+	--link-external-color: var(--drx-color-accent);
+	--link-external-color-hover: var(--drx-color-highlight);
+	--link-unresolved-color: var(--drx-color-green-2);
+	--link-unresolved-decoration-color: var(--drx-color-red-2);
+	--checklist-done-decoration: none;
+
+	--link-unresolved-opacity: 0.5;
+	--table-width: 88cqw;
+
+	--drx-color-callout-comment: 98, 114, 164;
+	--drx-color-callout-red: 255, 85, 85;
+	--drx-color-callout-orange: 255, 184, 108;
+	--drx-color-callout-yellow: 241, 250, 140;
+	--drx-color-callout-green: 55, 235, 98;
+	--drx-color-callout-cyan: 114, 208, 228;
+	--drx-color-callout-purple: 189, 147, 249;
+	--drx-color-callout-pink: 255, 121, 198;
+
+	--callout-default: var(--drx-color-callout-comment);
+	--callout-info: var(--drx-color-callout-comment);
+	--callout-summary: var(--drx-color-callout-cyan);
+	--callout-tip: var(--drx-color-callout-cyan);
+	--callout-todo: var(--drx-color-callout-comment);
+	--callout-bug: var(--drx-color-callout-red);
+	--callout-error: var(--drx-color-callout-red);
+	--callout-fail: var(--drx-color-callout-red);
+	--callout-example: var(--drx-color-callout-pink);
+	--callout-important: var(--drx-color-callout-purple);
+	--callout-success: var(--drx-color-callout-green);
+	--callout-question: var(--drx-color-callout-orange);
+	--callout-warning: var(--drx-color-callout-orange);
+	--callout-quote: var(--drx-color-callout-purple);
+}
+
+/* ============================ DARK THEME =========================== */
+
+body.theme-dark {
+	--drx-color-background-1: #525568;
+	--drx-color-background-2: #44475A;
+	--drx-color-background-3: #363948;
+	--drx-color-background-4: #282A36;
+	--drx-color-background-5: #1E1F29;
+
+	--drx-color-foreground-1: #F8F8F2;
+	--drx-color-foreground-2: #ADAFBC;;
+	--drx-color-foreground-3: #5A5D6D;
+
+	--drx-color-shadow-1: #2F313F;
+	--drx-color-shadow-2: #1E1F29;
+	--drx-color-shadow-3: #1A1B23;
+
+	--drx-color-border: var(--drx-color-background-3);
+
+	color: var(--drx-color-foreground-1);
+	
+	--bold-color: var(--drx-color-accent);
+	--text-selection: var(--drx-color-highlight);
+
+	--color-base-00: var(--drx-color-background-5);
+	--color-base-10: var(--drx-color-background-5);
+	--color-base-20: var(--drx-color-background-5);
+	--color-base-25: var(--drx-color-background-5);
+	--color-base-30: var(--drx-color-background-5);
+	--color-base-35: var(--drx-color-background-2);
+	--color-base-40: var(--drx-color-background-2);
+	--color-base-50: var(--drx-color-background-1);
+	--color-base-60: blue;
+	--color-base-70: var(--drx-color-foreground-2);
+	--color-base-100: var(--drx-color-foreground-1);
+
+	--code-normal: var(--drx-color-foreground-2);
+	--hr-color: var(--drx-color-background-3);
+	--nav-item-background-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-background-4);
+	--status-bar-background: var(--drx-color-background-4);
+	--table-header-background: var(--drx-color-background-3);
+	--titlebar-background: var(--drx-color-background-5);
+}
+
+body.theme-dark.is-mobile {
+	--color-base-00: var(--drx-color-background-5);
+	--color-base-10: var(--drx-color-background-4);
+	--color-base-20: var(--drx-color-background-3);
+}
+
+/* General application background */
+body.theme-dark {
+	background-color: var(--drx-color-background-5);
+}
+
+/* Borders for general UI elements like tabs, modals, and prompts */
+.theme-dark .workspace-tab-container, .theme-dark .modal-container.mod-dim .modal, .theme-dark .prompt {
+	border-color: var(--drx-color-border);
+}
+
+/* Borders for inline code and code blocks */
+.theme-dark .cm-s-obsidian span.cm-inline-code, .theme-dark code {
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Vault selection panel */
+.theme-dark .workspace-sidedock-vault-profile {
+	background-color: var(--drx-color-background-4) !important;
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Workspace panels */
+.theme-dark .workspace-leaf-content {
+	background-color: var(--drx-color-background-4);
+}
+
+/* Styling for the status bar */
+.theme-dark .status-bar {
+	background-color: var(--drx-color-background-4);
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Navigation headers */
+.theme-dark .nav-header {
+	background-color: var(--drx-color-background-5);
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Main text editing panel */
+.theme-dark .workspace-split.mod-root .view-content {
+	background-color: var(--drx-color-background-4);
+}
+
+/* Markdown table headers */
+.theme-dark .markdown-rendered thead tr {
+	background: var(--drx-color-background-3);
+}
+
+/* Fixes the title bar color issue in dark mode */
+.theme-dark .titlebar-button {
+	background-color: var(--drx-color-background-5);
+}
+
+/* Sets markdown links to cyan color */
+.theme-dark .markdown-source-view .cm-string.cm-url {
+	color: var(--drx-color-cyan-2);
+}
+
+/* Adds custom styling for input fields */
+.theme-dark textarea,
+.theme-dark input.metadata-input-text,
+.theme-dark input[type='date'],
+.theme-dark input[type='datetime-local'],
+.theme-dark input[type='text'],
+.theme-dark input[type='search'],
+.theme-dark input[type='email'],
+.theme-dark input[type='password'],
+.theme-dark input[type='number'] {
+	background-color: var(--drx-color-background-5);
+}
+
+/* ============================ LIGHT THEME ========================== */
+
+body.theme-light {
+	--drx-color-background-1: #F4F4F6;
+	--drx-color-background-2: #E9E9ED;
+	--drx-color-background-3: #DDDDE3;
+	--drx-color-background-4: #C7C8D1;
+	--drx-color-background-5: #A5A7B6;
+
+	--drx-color-foreground-1: #44475A;
+	--drx-color-foreground-2: #7E808E;
+	--drx-color-foreground-3: #B9BAC2;
+
+	--drx-color-shadow-3: #DDDDE3;
+	--drx-color-shadow-2: #A5A7B6;
+	--drx-color-shadow-1: #8F91A3;
+
+	--drx-color-border: var(--drx-color-background-4);
+
+	color: var(--drx-color-foreground-1);
+	
+	--bold-color: var(--drx-color-accent);
+	--text-selection: var(--drx-color-highlight);
+
+	--color-base-00: var(--drx-color-background-3);
+	--color-base-10: var(--drx-color-background-3);
+	--color-base-20: var(--drx-color-background-3);
+	--color-base-25: blue;
+	--color-base-30: var(--drx-color-background-3);
+	--color-base-35: var(--drx-color-background-5);
+	--color-base-40: var(--drx-color-background-5);
+	--color-base-50: var(--drx-color-foreground-2);
+	--color-base-60: green;
+	--color-base-70: var(--drx-color-foreground-2);
+	--color-base-80: blue;
+	--color-base-90: blue;
+	--color-base-100: var(--drx-color-foreground-1);
+
+	--code-normal: var(--drx-color-foreground-2);
+	--hr-color: var(--drx-color-background-3);
+	--nav-item-background-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-background-2);
+	--status-bar-background: var(--drx-color-background-3);
+	--table-header-background: var(--drx-color-background-3);
+	--titlebar-background: var(--drx-color-background-3);
+}
+
+body.theme-light.is-mobile {
+	--color-base-00: var(--drx-color-background-5);
+	--color-base-10: var(--drx-color-background-4);
+	--color-base-20: var(--drx-color-background-3);
+}
+
+/* General application background */
+body.theme-light {
+	background-color: var(--drx-color-background-3);
+}
+
+/* Borders for general UI elements like tabs, modals, and prompts */
+.theme-light .workspace-tab-container, .theme-light .modal-container.mod-dim .modal, .theme-light .prompt {
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Borders for inline code and code blocks */
+.theme-light .cm-s-obsidian span.cm-inline-code, .theme-dark code {
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Vault selection panel */
+.theme-light .workspace-sidedock-vault-profile {
+	background-color: var(--drx-color-background-1) !important;
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Workspace panels */
+.theme-light .workspace-leaf-content {
+	background-color: var(--drx-color-background-1);
+}
+
+/* Styling for the status bar */
+.theme-light .status-bar {
+	background-color: var(--drx-color-background-1);
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Navigation headers */
+.theme-light .nav-header {
+	background-color: var(--drx-color-background-3);
+	border-color: var(--drx-color-border) !important;
+}
+
+/* Background color for the panel where text is written */
+.theme-light .workspace-split.mod-root .view-content {
+	background-color: var(--drx-color-background-1);
+}
+
+/* Background color for markdown table headers */
+.theme-light .markdown-rendered thead tr {
+	background: var(--drx-color-background-3);
+}
+
+/* Fixes the title bar color issue in light mode */
+.theme-light .workspace-tab-header-container, .titlebar-button {
+	background-color: var(--drx-color-background-3);
+}
+
+/* Sets markdown links to blue color */
+.theme-light .markdown-source-view .cm-string.cm-url {
+	color: var(--drx-color-blue-2);
+	background-color: var(--drx-color-background-1);
+}
+
+/* Adds custom styling for input fields */
+.theme-light textarea,
+.theme-light input.metadata-input-text,
+.theme-light input[type='date'],
+.theme-light input[type='datetime-local'],
+.theme-light input[type='text'],
+.theme-light input[type='search'],
+.theme-light input[type='email'],
+.theme-light input[type='password'],
+.theme-light input[type='number'] {
+	background-color: var(--drx-color-background-2);
+}
+
+/* ========================== GENERAL STYLING ======================== */
+
+a {
+	color: var(--drx-color-accent) !important;
+}
+
+/* Rounds the corners of all panels */
+.workspace-tab-container, .prompt {
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
+	border: var(--drx-border-width) solid;
+	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+}
+
+/* Styles inline code blocks in markdown (text between ``) */
+.cm-s-obsidian span.cm-inline-code  {
+	color: var(--drx-color-foreground-2);
+}
+
+/* Styles the vault selection area at the bottom-right */
+.workspace-sidedock-vault-profile {
+	width: 94% !important;
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
+	border: var(--drx-border-width) solid !important;
+	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+}
+
+/* Styles the status bar at the bottom-right */
+.status-bar {
+	border-radius: var(--drx-border-radius) 0px 0px 0px;
+	border: var(--drx-border-width) solid;
+	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+}
+
+/* Prevents layout issues when the writing panel is too small */
+.workspace-split.mod-root .view-content {
+	overflow-y: scroll;
+}
+
+/* Adds rounded corners to navigation headers */
+.nav-header {
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
+	border: var(--drx-border-width) solid;
+}
+
+/* Styles the settings modal */
+.modal-container.mod-dim .modal {
+	border-radius: var(--drx-border-radius);
+	border: var(--drx-border-width) solid;
+	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+}
+
+/* Background color for the settings modal */
+.modal-bg {
+	background-color: var(--drx-color-highlight);
+}
+
+/* Justifies text in reading mode */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* Adds a border to the entire application */
+body:not(.is-mobile) .workspace {
+	position: relative;
+	overflow: visible;
+	padding: 8px;
+}
+
+body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+	width: 100% !important;
+}
+
+.markdown-source-view,
+.markdown-reading-view {
+	container-type: inline-size;
+}
+
+.table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
+.table-width-customized .markdown-rendered .markdown-preview-sizer>div:has(>table) {
+	overflow: auto;
+	width: 200rem !important;
+	margin-left: calc(200rem - 100%) / -2) !important;
+}
+
+@media (max-width: 900px) {
+
+	/* Adjusts the status bar background for dark mode */
+	body.theme-dark {
+		--status-bar-background: var(--drx-color-background-3);
+	}
+
+	/* Adjusts the status bar background for light mode */
+	body.theme-light {
+		--status-bar-background: var(--drx-color-background-3);
+	}
+
+	/* Removes border radius and adjusts margins for small screens */
+	.workspace-split.mod-root .view-content {
+		border-radius: 0px;
+		margin: 0vh 0vw;
+		width: calc(100%);
+	}
+
+	/* Removes padding for the horizontal main container on non-mobile devices */
+	body:not(.is-mobile) .horizontal-main-container {
+		padding-bottom: 0px;
+	}
+
+	/* Removes margins for the workspace on non-mobile devices */
+	body:not(.is-mobile) .workspace {
+		margin: 0px;
+	}
+}
+
+/* ============================ CALL OUTS ============================ */
+
+.theme-light .cm-callout {
+	border-radius: var(--drx-border-radius);
+	border: var(--drx-border-width) solid !important;
+	border-color: var(--drx-color-border) !important;
+	box-shadow: 0 0 calc(var(--drx-shadow-radius) * 2) var(--drx-color-shadow-3);
+}
+
+.theme-light .callout-title {
+    gap: 10px;
+	padding: 1rem;
+}
+
+.theme-light .callout {
+	padding: 0px
+}
+
+.theme-light .callout-content {
+	background: var(--drx-color-background-2) !important;
+	padding: 1rem;
+}
+
+.theme-light .cm-callout:hover {
+	border-radius: var(--drx-border-radius) !important;
+	border-color: var(--drx-color-background-5) !important;
+}
+
+.theme-light .callout {
+	background: #6272A43F !important;
+}
+
+.theme-light .callout[data-callout="example"] {
+	background: #FF79C63F !important;
+}
+
+.theme-light .callout[data-callout="summary"] {
+	background: #8BE9FD3F !important;
+}
+
+.theme-light .callout[data-callout="tip"] {
+	background: #8BE9FD3F !important;
+}
+
+.theme-light .callout[data-callout="bug"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="error"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="fail"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="important"] {
+	background: #BD93F93F !important;
+}
+
+.theme-light .callout[data-callout="quote"] {
+	background: #BD93F93F !important;
+}
+
+.theme-light .callout[data-callout="success"] {
+	background: #50FA7B3F !important;
+}
+
+.theme-light .callout[data-callout="question"] {
+	background: #FFB86C3F !important;
+}
+
+.theme-light .callout[data-callout="warning"] {
+	background: #FFB86C3F !important;
+}
+
+/* ============================ PRINTING ============================= */
+
+@media print {
+
+	.internal-embed{
+		margin-left:-30px;
+	}
+
+	body.theme-light {
+		--color-base-10: #E9E9ED;
+		--color-base-20: #F4F4F6;
+	}
+
+	h2, h3, h4, h5, h6 {
+		page-break-after: avoid;
+	}
+
+	pre, blockquote {
+		page-break-inside: avoid;
+	}
+
+	.callout {
+		page-break-inside: avoid;
+	}
+
+	.theme-light .cm-callout {
+		border-radius: 10px !important;
+		border: 2px solid !important;
+		border-color: #C7C8D1 !important;
+		box-shadow: 0 0 8px #DDDDE3 !important;
+	}
+
+	.theme-light .callout-content {
+		background: #F4F4F6 !important;
+	}
+}

@@ -1,0 +1,2572 @@
+/*
+ * Pipe Likes Nord
+*/
+
+/* @settings
+name: PLN by PipeItToDevNull
+id: pln
+settings:
+    -
+        id: pln-head-colours
+        title: Colours
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: color-red
+        title: Red
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-red-rgb
+                format: rgb
+        default: '#bf616a'
+    -
+        id: color-orange
+        title: Orange
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-orange-rgb
+                format: rgb
+        default: '#d08770'
+    -
+        id: color-yellow-light
+        title: Yellow-Light
+        description: Used on the dark theme
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-yellow-light-rgb
+                format: rgb
+        default: '#ebcb8b'
+    -
+        id: color-yellow-dark
+        title: Yellow-Dark
+        description: Used on the light theme
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-yellow-dark-rgb
+                format: rgb
+        default: '#e4b860'
+    -
+        id: color-green
+        title: Green
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-green-rgb
+                format: rgb
+        default: '#a3be8c'
+    -
+        id: color-purple
+        title: Purple
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-purple-rgb
+                format: rgb
+        default: '#b48ead'
+    -
+        id: color-sea-green
+        title: Sea-Green
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-sea-green-rgb
+                format: rgb
+        default: '#8fbcbb'
+    -
+        id: color-cyan
+        title: Cyan
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-cyan-rgb
+                format: rgb
+        default: '#88c0d0'
+    -
+        id: color-frost
+        title: Frost
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-frost-rgb
+                format: rgb
+        default: '#81a1c1'
+    -
+        id: color-blue
+        title: Blue
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-blue-rgb
+                format: rgb
+        default: '#5e81ac'
+    -
+        id: color-salmon
+        title: Salmon
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: color-salmon-rgb
+                format: rgb
+        default: '#FC6E68'
+    -
+        id: accent-light-hsl
+        title: Accent Light
+        type: variable-color
+        opacity: false
+        format: hsl-split
+        default: '#5E81AC'
+    -
+        id: accent-dark-hsl
+        title: Accent Dark
+        type: variable-color
+        opacity: false
+        format: hsl-split
+        default: '#81a1c1'
+    -
+        id: b0
+        title: B0
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: b0-rgb
+                format: rgb
+        default: '#2E3440'
+    -
+        id: b1
+        title: B1
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: b1-rgb
+                format: rgb
+        default: '#3B4252'
+    -
+        id: b2
+        title: B2
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: b2-rgb
+                format: rgb
+        default: '#434C5E'
+    -
+        id: b3
+        title: B3
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: b3-rgb
+                format: rgb
+        default: '#4C566A'
+    -
+        id: w0
+        title: W0
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: w0-rgb
+                format: rgb
+        default: '#D8DEE9'
+    -
+        id: w1
+        title: W1
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: w1-rgb
+                format: rgb
+        default: '#E5E9F0'
+    -
+        id: w2
+        title: W2
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: w2-rgb
+                format: rgb
+        default: '#ECEFF4'
+    -
+        id: w3
+        title: W3
+        type: variable-color
+        opacity: false
+        format: hex
+        alt-format:
+            - 
+                id: w3-rgb
+                format: rgb
+        default: '#f5f7f9'
+    -
+        id: text-highlight-bg
+        title: Text Highlight Background
+        type: variable-color
+        opacity: true
+        format: rgb
+        default: '180, 142, 173, 0.4'
+    -
+        id: text-highlight-bg-active
+        title: Text Highlight Background - Active
+        type: variable-color
+        opacity: true
+        format: rgb
+        default: '180, 142, 173, 0.4'
+    -
+        id: pln-head-fonts
+        title: Font modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: font-ui-smaller
+        title: Font-UI-Smaller
+        description: Used for settings panel category headers and other things
+        type: variable-number-slider
+        default: 10
+        min: 10
+        max: 30
+        step: 1
+        format: px
+    -
+        id: font-ui-small
+        title: Font-UI-Small
+        description: Used for folder names and other things
+        type: variable-number-slider
+        default: 10
+        min: 10
+        max: 30
+        step: 1
+        format: px
+    -
+        id: font-ui-medium
+        title: Font-UI-Medium
+        description: Used for settings panel body, calendar
+        type: variable-number-slider
+        default: 12
+        min: 10
+        max: 30
+        step: 1
+        format: px
+    -
+        id: font-ui-large
+        title: Font-UI-Large
+        description: Used for things
+        type: variable-number-slider
+        default: 14
+        min: 10
+        max: 30
+        step: 1
+        format: px
+    -
+        id: pln-italics
+        title: More italic italics
+        description: Make italics more pronounced
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-gen
+        title: General modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-link-mods
+        title: Link modifications
+        description: Underline only external links and remove the distinction from unresolved links
+        type: class-toggle
+        default: true
+    -
+        id: pln-hilite-mods
+        title: Highlight (mark) modifications
+        description: Change ==highlight== (mark) styling from the default. This may interfere with some plugins, disable this if you see issues.
+        type: class-toggle
+        default: true
+    -
+        id: pln-hi-line
+        title: Highlight active line
+        description: Highlight the active line
+        type: class-toggle
+        default: false
+    -
+        id: pln-hi-line-hover
+        title: Highlight cursor line
+        description: Highlight the line your mouse cursor is on
+        type: class-toggle
+        default: false
+    -
+        id: pln-hi-tr
+        title: Highlight table rows when hovering
+        description: Highlight the row in a table that your cursor is hovering over
+        type: class-toggle
+        default: false
+    -
+        id: pln-hide-files
+        title: Enable hidden directories and files
+        description: Hide any file/folder starting with _ (underscore)
+        type: class-toggle
+        default: false
+    -
+        id: pln-folder-icons
+        title: Use folder icons in the file tree
+        description: Replace the chevrons in the file tree with open/closed folder icons
+        type: class-toggle
+        default: false
+    -
+        id: pln-dv-mods
+        title: Dataview modifications
+        description: Globally toggle my various DV modifications
+        type: class-toggle
+        default: true
+    -
+        id: pln-dv-count
+        title: Dataview list count
+        description: Toggle the list count on a DV result
+        type: class-toggle
+        default: true
+    -
+        id: pln-view-invert
+        title: Invert view icons
+        description: Invert the Reading and Edit view icons in the top right of notes
+        type: class-toggle
+        default: false
+    -
+        id: pln-boxed-tags
+        title: Box tags
+        description: Make tags more boxy with a solid border
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-tabs
+        title: Tab modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-tab-rows
+        title: Multiple tab rows
+        description: When hovering, the tabs area will be expanded into multiple rows to make viewing tab titles easier.
+        type: class-toggle
+        default: false
+    -
+        id: pln-pretty-pinned
+        title: Prettier pinned tabs
+        description: Shrink down pinned tabs to only the note icon. I recommend making custom note icons as well if you do this.
+        type: class-toggle
+        default: false
+    -
+        id: pln-pin-protect
+        title: Protect the Pin icon
+        description: Blocks the click event on the Pin icon so it cannot be removed accidently
+        type: class-toggle
+        default: false
+    -
+        id: pln-stacked-100
+        title: Stacked tabs 100% width
+        description: Make stacked tabs take up 100% of the window width instead of an annoying amount of unknown space
+        type: class-toggle
+        default: false
+    -
+        id: pln-head-attachments
+        title: Attachment modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-attachments
+        title: Hide attachments
+        description: Hide all attachments in the file explorer
+        type: class-toggle
+        default: false
+    -
+        id: pln-attachments-canvas
+        title: Unhide canvas files
+        type: class-toggle
+        default: false
+    -
+        id: pln-attachments-pdf
+        title: Unhide pdf files
+        type: class-toggle
+        default: false
+    -
+        id: pln-attachments-docx
+        title: Unhide docx files
+        type: class-toggle
+        default: false
+    -
+        id: pln-attachments-xlsx
+        title: Unhide xlsx files
+        type: class-toggle
+        default: false
+    -
+        id: pln-attachments-images
+        title: Unhide image files
+        type: class-toggle
+        default: false
+    -
+        id: pln-head-heads
+        title: Header colors
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-hdcl
+        title: Header color toggle
+        description: You must open each color and "save" it to render properly
+        type: class-toggle
+        default: false
+    -
+        id: pln-hdcl-1
+        title: H1 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#BF616A'
+    -
+        id: pln-hdcl-2
+        title: H2 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#D08770'
+    -
+        id: pln-hdcl-3
+        title: H3 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#EBCB8B'
+    -
+        id: pln-hdcl-4
+        title: H4 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#A3BE8C'
+    -
+        id: pln-hdcl-5
+        title: H5 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#8FBCBB'
+    -
+        id: pln-hdcl-6
+        title: H5 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#88C0D0'
+    -
+        id: pln-head-props
+        title: Properties modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: hide-properties
+        title: Hide properties in reading mode
+        description: Hide the metadata properties box when in reading mode. Add 'hide-properties' as a class to any file to selectively apply this.
+        type: class-toggle
+        default: true
+    -
+        id: pln-props-heading
+        title: Hide properties heading
+        description: We know it is a properties box, you don't need to label it.
+        type: class-toggle
+        default: true
+    -
+        id: pln-props-emptyval
+        title: Hide placeholder text
+        description: Hide the "Empty" text that is a placeholder for empty keys
+        type: class-toggle
+        default: true
+    -
+        id: pln-props-list
+        title: List 'list' properties
+        description: Put every property on its own line instead of a long single line list.
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-embd
+        title: Embed modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-embd-mods
+        title: Embed modifications
+        description: Globally toggle my various embed modifications
+        type: class-toggle
+        default: true
+    -
+        id: pln-embd-link
+        title: Embeded note link icon
+        description: Hide the link icon for an embedded note
+        type: class-toggle
+        default: true
+    -
+        id: pln-embd-title
+        title: Embeded note titles
+        description: Hide the title of an embeded note
+        type: class-toggle
+        default: true
+    -
+        id: pln-embd-first
+        title: Hide the first header in embeds
+        description: Do not display the first header in an embed
+        type: class-toggle
+        default: true
+    -
+        id: pln-embd-h1
+        title: Hide H1 in embeds
+        description: Do not display h1 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-embd-h2
+        title: Hide H2 in embeds
+        description: Do not display h2 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-embd-h3
+        title: Hide H3 in embeds
+        description: Do not display h3 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-embd-h4
+        title: Hide H4 in embeds
+        description: Do not display h4 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-embd-h5
+        title: Hide H5 in embeds
+        description: Do not display h5 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-embd-h6
+        title: Hide H6 in embeds
+        description: Do not display h6 in embeds
+        type: class-toggle
+        default: false
+    -
+        id: pln-head-rm
+        title: Removals
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-rm-mods
+        title: Removals toggle
+        description: Globally toggle my various removals
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-folder-nav
+        title: Remove folder nav
+        description: Remove the folder navigation icons
+        type: class-toggle
+        default: false
+    -
+        id: pln-rm-settings
+        title: Remove settings pane
+        description: Remove the settings pane at the bottom of the left sidebar added in 1.6
+        type: class-toggle
+        default: false
+    -
+        id: pln-rm-rside
+        title: Remove sidebar indicators
+        description: Remove the sidebar indicators. They can still be opened with hotkeys
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-win-lside-tl
+        title: Remove mod top left
+        description: Remove the top tab container in the left sidebar in Windows in hidden frameless
+        type: class-toggle
+        default: false
+    -
+        id: pln-rm-status
+        title: Remove statusbar
+        description: Removes the bottom statusbar
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-tablist
+        title: Remove tablist icon
+        description: Removes the header tab list icon
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-nt
+        title: Remove new tab icon
+        description: Removes the new tab header icon
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-clstab
+        title: Remove close icon
+        description: Remove the close X from tabs
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-nav
+        title: Remove nav icons
+        description: Remove the back and forward icons
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-act
+        title: Remove view actions
+        description: Remove the view action icons from the top of notes
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-noteic
+        title: Remove note icon
+        description: Remove the note icon from stacked tabs (we all know is a note...)
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-scroll
+        title: Remove scroll bars
+        description: Hide scroll bars, hover to view them
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-mac-tside
+        title: Hide top bar in MacOS
+        description: Hide the top bar on MacOS when in stacked tabs. (Works best in Frameless/hidden title bars)
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-srchSug
+        title: Hide search help
+        description: Hide the pop up that appears when clicking the search field
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-check
+        title: Checkbox modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-checkboxes
+        title: Custom Checkboxes
+        description: Globally toggle custom checkbox types and changes made in PLN
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-co
+        title: Callout modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-rm-co-meta
+        title: Hide Meta callout in reading mode
+        description: Remove the custom "meta" callout in reading mode
+        type: class-toggle
+        default: false
+    -
+        id: pln-pdf-rm-co-meta
+        title: Hide Meta callout in PDF exports
+        description: Remove the custom "meta" callout in PDF exports only
+        type: class-toggle
+        default: true
+    -
+        id: pln-rm-co-links
+        title: Hide Links callout in reading mode
+        description: Remove the custom "links" callout in reading mode
+        type: class-toggle
+        default: false
+    -
+        id: pln-pdf-rm-co-links
+        title: Hide Links callout in PDF exports
+        description: Remove the custom "links" callout in PDF exports only
+        type: class-toggle
+        default: true
+    -
+        id: pln-head-cards
+        title: Kepano Cards modificationss
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-cards-sort
+        title: Hide Remove sort icon
+        description: Remove the sort icon from above a collection of cards
+        type: class-toggle
+        default: true
+    -
+        id: pln-cards-borders
+        title: Card border edits
+        description: Change the border of cards to match callouts. You are required to have Kepano's snippet, this just changes it's style
+        type: class-toggle
+        default: true
+    -
+        id: pln-cards-color-rgb
+        title: Card border color
+        type: variable-themed-color
+        format: rgb-values
+        opacity: false
+        default-light: 'rgb(216, 222, 233)'
+        default-dark: 'rgb(76, 86, 106)'
+    -
+        id: cards
+        title: Add cards class to all files, and allow export.
+        description: This will add the cards class to all files, a primary function for this will be cards rendering when you PDF export a file
+        type: class-toggle
+        default: false
+    -
+        id: pln-head-vi
+        title: High contrast modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: pln-vision
+        title: High contrast toggle
+        descriptioon: Change main text to a vision impaired yellow. You should change your accent colour to something that compliments #cccc00. Don't use this with light mode...
+        type: class-toggle
+        default: false
+    -
+        id: pln-vision-high
+        title: Primary color
+        description: This is the primary color to be used in vision impaired mode
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#cccc00'
+    -
+        id: pln-vision-low
+        title: Secondary color
+        description: This is used for code blocks and buttons mostly
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#4C4E52'
+    -
+*/
+
+.theme-light,
+.theme-dark {
+    --color-red: #bf616a;
+    --color-orange: #d08770;
+    --color-yellow-light: #ebcb8b;
+    --color-yellow-dark: #e4b860;
+    --color-green: #a3be8c;
+    --color-purple: #b48ead;
+    --color-sea-green: #8fbcbb;
+    --color-cyan: #88c0d0;
+    --color-frost: #81a1c1;
+    --color-blue: #5e81ac;
+    --color-salmon: #FC6E68;
+
+    --accent-light-hsl-h: 213;
+    --accent-light-hsl-s: 32%;
+    --accent-light-hsl-l: 53%;
+
+    --accent-dark-hsl-h: 210;
+    --accent-dark-hsl-s: 34%;
+    --accent-dark-hsl-l: 63%;
+
+    --color-red-rgb: 191, 97, 106;
+    --color-orange-rgb: 208, 135, 112;
+    --color-yellow-light-rgb: 235, 203, 139;
+    --color-yellow-dark-rgb: 228, 184, 96;
+    --color-green-rgb: 163, 190, 140;
+    --color-purple-rgb: 180, 142, 173;
+    --color-sea-green-rgb: 143, 188, 187;
+    --color-cyan-rgb: 136, 192, 208;
+    --color-frost-rgb: 129, 161, 193;
+    --color-blue-rgb: 94, 129, 172;
+    --color-salmon-rgb: 252, 110, 104;
+
+    --b0: #2E3440;
+    --b1: #3B4252;
+    --b2: #434C5E;
+    --b3: #4C566A;
+
+    --w0: #D8DEE9;
+    --w1: #E5E9F0;
+    --w2: #ECEFF4;
+    --w3: #f5f7f9;
+
+    --w0-rgb: 216, 222, 233;
+    --b3-rgb: 76, 86, 106;
+
+    --text-error: var(--color-salmon);
+    --text-accent: var(--color-accent);
+    --text-highlight-bg: rgba(180, 142, 173, 0.4);
+    --text-highlight-bg-active: rgba(180, 142, 173, 0.4);
+
+    --bold-weight: var(--font-bold);
+}
+
+.theme-light {
+    --color-yellow: var(--color-yellow-dark);
+    --color-yellow-rgb: var(--color-yellow-dark-rgb);
+
+    --accent-h: var(--accent-light-hsl-h);
+    --accent-s: var(--accent-light-hsl-s);
+    --accent-l: var(--accent-light-hsl-l);
+
+    /* the note background */
+    --background-primary: var(--w3) ;
+    /* used for code blocks */
+    --background-primary-alt: var(--w2) ;
+    /* outside ui background */
+    /* background titlebar unfocused */
+    --background-secondary: var(--w2);
+    /* titlebar focused */
+    --background-secondary-alt: var(--w1);
+    /* lines between objects */
+    /* slider background */
+    --background-modifier-border: var(--w0);
+
+    /* main font */
+    --color-base-100: var(--b0);
+    --color-base-70: var(--b0);
+    --color-base-60: var(--b0);
+    /* bullets */
+    --color-base-50: var(--b1);
+    /* window outline (like settings) */
+    --color-base-40: var(--w2);
+    /* toggle background */
+    /* small line in tabs */
+    --color-base-35: var(--w0);
+    /* the lines in the ui */
+    --color-base-30: var(--w0);
+    --color-base-25: var(--b3);
+    --color-base-20: var(--w0);
+    --color-base-10: var(--w1);
+    --color-base-05: var(--w2);
+    --color-base-00: var(--w2);
+}
+
+.theme-dark {
+    --color-yellow: var(--color-yellow-light);
+    --color-yellow-rgb: var(--color-yellow-light-rgb);
+
+    --accent-h: var(--accent-dark-hsl-h);
+    --accent-s: var(--accent-dark-hsl-s);
+    --accent-l: var(--accent-dark-hsl-l);
+
+    /* the note background */
+    --background-primary: var(--b1) ;
+    /* used for code blocks */
+    --background-primary-alt: var(--b0) ;
+    /* outside ui background */
+    /* background titlebar unfocused */
+    --background-secondary: var(--b0);
+    /* titlebar focused */
+    --background-secondary-alt: var(--b0);
+    /* lines between objects */
+    /* slider background */
+    --background-modifier-border: var(--b3);
+
+    --color-base-00: var(--b0);
+    --color-base-10: var(--b0);
+    --color-base-20: var(--b0);
+    --color-base-25: var(--b0);
+    /* lines in the ui */
+    --color-base-30: var(--b1);
+    /* toggle backgroundse */
+    /* small line in tabs */
+    --color-base-35: var(--b3);
+    /* window outlines */
+    --color-base-40: var(--b0);
+    /* bullets */
+    --color-base-50: var(--w0);
+    --color-base-60: var(--w1);
+    --color-base-70: var(--w2);
+    /* main font */
+    --color-base-100: var(--w3);
+}
+
+/* any vision accomodations would be here */
+.pln-vision {
+    --pln-vision-high: #cccc00;
+    --pln-vision-low: #4C4E52;
+
+    --text-normal: var(--pln-vision-high);
+    --text-faint: var(--pln-vision-high);
+    --text-muted: var(--pln-vision-high);
+    --background-primary: black;
+    --background-primary-alt: var(--pln-vision-low);
+    --background-secondary: black;
+    --background-secondary-alt: black;
+    --background-modifier-border: var(--pln-vision-high);
+    --text-on-accent: black;
+
+    --color-base-30: var(--pln-vision-low);
+    --color-base-35: var(--pln-vision-high);
+
+    --color-red: var(--pln-vision-high);
+    --color-orange: var(--pln-vision-high);
+    --color-yellow-light: var(--pln-vision-high);
+    --color-yellow-dark: var(--pln-vision-high);
+    --color-green: var(--pln-vision-high);
+    --color-purple: var(--pln-vision-high);
+    --color-sea-green: var(--pln-vision-high);
+    --color-cyan: var(--pln-vision-high);
+    --color-frost: var(--pln-vision-high);
+    --color-blue: var(--pln-vision-high);
+    --color-salmon: var(--pln-vision-high);
+}
+
+/* pdf fixes */
+@media print {
+    .theme-dark {
+        --highlight-mix-blend-mode: darken;
+        --list-marker-color: var(--b0);
+        --code-background: var(--w2);
+        --code-normal: var(--b0);
+        --table-header-color: var(--b0);
+        --text-muted: var(--b0);
+    }
+    .pln-pdf-rm-co-links .callout[data-callout="links"],
+    .pln-pdf-rm-co-meta .callout[data-callout="meta"] {
+            display: none;
+    }
+    /* hacky method to make cards exportable */
+    .cards.pln-cards-borders.theme-dark,
+    .pln-cards-borders.theme-dark { 
+        --pln-cards-color-rgb: var(--w0-rgb) !important;
+    } 
+    .pln-embd-mods.pln-embd-first .markdown-embed :is(h1,h2,h3,h4,h5,h6):first-child {
+        display: none;
+    }
+}
+
+/*
+ * Main
+*/
+body {
+    --font-ui-smaller: 10px;
+    --font-ui-small: 10px;
+    --font-ui-medium: 12px;
+    --font-ui-large: 14px;
+    --header-height: 30px;
+    --file-folding-offset: 10px;
+    /* 1.1 fixes */
+    --checkbox-size: 1.1em;
+    --list-bullet-size: .5em;
+    /* Fix font sizes in 1.3.7 */
+    --h1-size: 2em;
+    --h2-size: 1.6em;
+    --h3-size: 1.37em;
+    --h4-size: 1.25em;
+    --h5-size: 1.12em;
+    --h6-size: 1.12em;
+    /*this is spacing before a header, it is stupid*/
+    --heading-spacing: 0;
+    --p-spacing: .5rem;
+}
+/* this brings back header spacing in reading mode */
+/* default is 2.5 p-spacing and p-spacing default is 1rem */
+.markdown-rendered {
+    --heading-spacing: calc(var(--p-spacing)*2);
+}
+
+/* changed in 1.4*/
+hr {
+    margin: 1.5em;
+}
+
+/* change margins, default is 32 */
+body {
+    & {
+        --file-margins: 20px;
+    }
+    & .mod-stacked {
+        --file-margins: 10px;
+    }
+    & .mod-stacked:has(.cm-gutter) {
+        --file-margins: 2px
+    }
+}
+
+/* header colors */
+.pln-hdcl {
+    --pln-hdcl-1: #BF616A;
+    --pln-hdcl-2: #D08770;
+    --pln-hdcl-3: #EBCB8B;
+    --pln-hdcl-4: #A3BE8C;
+    --pln-hdcl-5: #8FBCBB;
+    --pln-hdcl-6: #88C0D0;
+    --h1-color: var(--pln-hdcl-1);
+    --h2-color: var(--pln-hdcl-2);
+    --h3-color: var(--pln-hdcl-3);
+    --h4-color: var(--pln-hdcl-4);
+    --h5-color: var(--pln-hdcl-5);
+    --h6-color: var(--pln-hdcl-6);
+}
+
+/* folding indicator */
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+    padding-right: 0px;
+}
+
+/* properties container*/
+body {
+    & {
+        --metadata-border-color: rgb(var(--pln-cards-color-rgb));
+        --metadata-border-radius: 5px;
+        --metadata-background: rgba(var(--pln-cards-color-rgb),0.4);
+        --metadata-property-radius: 5px;
+    }
+    & .metadata-container {
+        border-top: 4px solid rgb(var(--pln-cards-color-rgb));
+        border-left: 2px solid rgb(var(--pln-cards-color-rgb));
+        /* 1.3.7 adding --p-spacing but I remove it, this fixes the header being to oclose to the box*/
+        margin-bottom: 10px;
+    }
+    & .metadata-property-key {
+        border-right: 2px solid rgb(var(--pln-cards-color-rgb));
+    }
+    /* hide the placeholder values in metadata*/
+    &.pln-props-emptyval .metadata-input-longtext:empty:before,
+    &.pln-props-emptyval .multi-select-input:before {
+        display: none;
+    }
+    &.pln-props-heading .metadata-properties-heading {
+        display: none;
+    }
+    &.pln-props-list .metadata-property:not([data-property-key="tags"]) .metadata-property-value .multi-select-container {
+        display: block;
+    }
+    /* improve meta data container in sidebar */
+    & .workspace > .workspace-split:not(.mod-root) .metadata-container {
+        margin-left: 5px;
+        padding-left: 2px;
+    }
+}
+.hide-properties {
+    --metadata-display-reading: none;
+}
+
+/* unknown */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+    padding-top: 0;
+}
+
+/* macos fixes for hidden title */
+.mod-macos {
+    --frame-left-space: 65px;
+}
+
+/* shrinking headers */
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+/* logo */
+.titlebar-button.mod-logo {
+    color: var(--color-purple);
+}
+
+/* red pin icon */
+.mod-root .mod-pinned {
+    color: var(--color-salmon);
+}
+/* stop the pin from being clickable */
+.pln-pin-protect .mod-pinned {
+    pointer-events: none;
+}
+
+/* pretty pinned tabs */
+.pln-pretty-pinned:not(:has(.mod-stacked)) { 
+    & .workspace-tab-header:has(.mod-pinned) {
+        --tab-max-width: 30px;
+        & .workspace-tab-header-inner-title {
+            display: none;
+        }
+        & .workspace-tab-header-inner-icon {
+            display: flex;
+        }
+        & .mod-pinned {
+            display: none;
+        }
+    }
+    &.pln-tab-rows .mod-root .workspace-tabs .workspace-tab-header-container:hover .workspace-tab-header:has(.mod-pinned) {
+        --tab-max-width: unset;
+        & .workspace-tab-header-inner-title {
+            display: contents;
+        }
+        & .workspace-tab-header-inner-icon {
+            display: none;
+        }
+        & .mod-pinned {
+            display: contents;
+        }
+    }
+}
+
+/* flip and thin stacked titles */
+body {
+    & {
+        --tab-stacked-text-transform: rotate(180deg);
+        --tab-stacked-text-align: right;
+        --tab-stacked-header-width: 20px;
+    }
+    & .mod-stacked .workspace-tab-header-inner-title {
+        letter-spacing: 1px;
+    }
+    &.pln-stacked-100 {
+        --tab-stacked-pane-width: 100%
+    }
+    /* hide the top bar when stacked on macos */
+    & .mod-macos.pln-rm-mac-tside.is-hidden-frameless .mod-vertical .mod-stacked .workspace-tab-header-container {
+        display: none;
+    }
+}
+
+/* invert reading icons to make more sense visually */
+.pln-view-invert {
+    & .workspace-leaf-content:has(.is-live-preview) .clickable-icon.view-action[aria-label^="Current view: editing"] {
+        -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20h9'%3E%3C/path%3E%3Cpath d='M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z'%3E%3C/path%3E%3C/svg%3E");
+        background-color: var(--icon-color);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+    }
+    & .clickable-icon.view-action[aria-label^="Current view: reading"] {
+        -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'%3E%3C/path%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'%3E%3C/path%3E%3C/svg%3E");
+        background-color: var(--icon-color);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+    }
+    /* add an icon specifc for source view */
+    & .workspace-leaf-content:not(:has(.is-live-preview)) .clickable-icon.view-action[aria-label^="Current view: editing"] {
+        -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-pencil-line'%3E%3Cpath d='M12 20h9'/%3E%3Cpath d='M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z'/%3E%3Cpath d='m15 5 3 3'/%3E%3C/svg%3E");
+        background-color: var(--icon-color);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+    }
+}
+
+/* table stuff */
+/* fix table font size */
+body {
+    --table-text-size: var(--font-text-size);
+}
+/* space out tables from text  a bitin reading mode */
+.markdown-rendered table {
+    margin-top: var(--heading-spacing);
+}
+/* highlight the hovered row in a table */
+.pln-hi-tr .mod-root tr:hover {
+    background-color: var(--background-secondary) !important;
+}
+
+/* highlight active line */
+.pln-hi-line:not(.pln-vision) .cm-active.cm-line,
+.pln-hi-line-hover:not(.pln-vision) .cm-line:hover {
+    background-color: var(--background-modifier-border);
+}
+.pln-hi-line:not(.pln-vision) .cm-gutterElement.cm-active {
+    color:  var(--color-yellow);
+    font-weight: bold;
+    background-color: var(--background-modifier-border);
+}
+.cm-lineNumbers {
+    border-right: 2px solid var(--background-modifier-border);
+    color: var(--text-faint);
+}
+
+/* REMOVE THINGS */
+.pln-rm-mods {
+    /* hide attachments */
+    &.pln-attachments .nav-file:has(.nav-file-tag),
+    /* folder navigation buttons */
+    &.pln-rm-folder-nav .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container,
+    /* settings pane */
+    &:not(.is-mobile).pln-rm-settings .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+    /* sidebars */
+    &.pln-rm-rside .sidebar-toggle-button.mod-right,
+    &.pln-rm-rside .sidebar-toggle-button,
+    /* statusbar */
+    &.pln-rm-status .status-bar,
+    /* tab chevron */
+    &.pln-rm-tablist .workspace-tab-header-tab-list .clickable-icon,
+    /* new tab */
+    &.pln-rm-nt .mod-root .workspace-tab-header-new-tab,
+    /* tab close button */
+    &.pln-rm-clstab .workspace-tab-header-inner-close-button,
+    /* nav buttons */
+    &.pln-rm-nav .view-header-nav-buttons,
+    /* action bottons, top right of note */
+    &.pln-rm-act .view-actions,
+    /* suggestion pop up box */
+    &.pln-rm-srchSug .suggestion-container.mod-search-suggestion,
+    /* note icon for stacked tabs */
+    &.pln-rm-noteic .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon,
+    /* remove top left sidebar container in hidden*/
+    &.mod-windows.pln-rm-win-lside-tl.is-hidden-frameless .mod-left-split .mod-top-left-space .workspace-tab-header-container {
+        display: none;
+    }
+}
+
+/* selectively show certain attachments */
+.pln-attachments {
+    &.pln-attachments-canvas .nav-file:has([data-path$=".canvas"]),
+    &.pln-attachments-pdf .nav-file:has([data-path$=".pdf"]),
+    &.pln-attachments-docx .nav-file:has([data-path$=".docx"]),
+    &.pln-attachments-xlsx .nav-file:has([data-path$=".xlsx"]),
+    &.pln-attachments-images .nav-file:has([data-path$=".jpg"]),
+    &.pln-attachments-images .nav-file:has([data-path$=".jpeg"]),
+    &.pln-attachments-images .nav-file:has([data-path$=".png"]) {
+        display: contents !important;
+    }
+}
+
+/* Hide files and dirs starting with _ */
+.pln-hide-files {
+    & div[data-path^="_"],
+    & div[data-path*="/_"] {
+        display: none;
+    }
+}
+
+/* bullet fix */
+/* thanks sails */
+.cm-formatting-list-ul > .list-bullet {
+    padding-right: 5px;
+}
+.cm-formatting-list-ul:not(:has(> .list-bullet)) {
+    margin-right: 5px;
+}
+
+/* reading bullet fixes */
+ul > li.task-list-item .task-list-item-checkbox {
+    margin-inline-start: -17px;
+}
+.markdown-source-view.mod-cm6 .task-list-label {
+    margin-inline-start: -6px;
+}
+
+/* suggestion box */
+.suggestion-item {
+    font-size: var(--font-ui-small);
+}
+.suggestion-container {
+    opacity: 90%;
+}
+
+/* fix list spacing in reading mode */
+body {
+    --list-spacing: 1px;
+}
+/* fix spacing in edit mode for the top of lists*/
+.cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(>br:only-child)) {
+    padding-top: var(--p-spacing);
+}
+
+/* scrollbars */
+.pln-rm-scroll {
+    & ::-webkit-scrollbar {
+        visibility: hidden;
+        background-color: transparent;
+        width: 10px;
+    }
+    & ::-webkit-scrollbar-thumb {
+        visibility: hidden;
+    }
+    & ::-webkit-scrollbar:hover {
+        visibility: initial;
+    }
+    & ::-webkit-scrollbar-thumb:hover {
+        visibility: initial;
+    }
+}
+
+/* more italic */
+.pln-italics {
+        em, .cm-em {
+            display: inline-block;
+            transform: skew(-10deg);
+        }
+}
+
+/* this unifies spacing in LP and reading (DV in LP is viewed as if it was reading) */
+.markdown-rendered {
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        margin: 0 0 0 0;
+    }
+}
+
+/*
+ * Card edits
+*/
+.cards.pln-cards-sort table.dataview thead,
+.pln-cards-sort .cards table.dataview thead {
+    display: none !important;
+}
+.cards.pln-cards-borders.theme-light,
+.pln-cards-borders.theme-light { 
+    --pln-cards-color-rgb: var(--w0-rgb);
+} 
+.cards.pln-cards-borders.theme-dark,
+.pln-cards-borders.theme-dark { 
+    --pln-cards-color-rgb: var(--b3-rgb);
+}
+.cards.pln-cards-borders table.dataview > tbody > tr,
+.pln-cards-borders .cards table.dataview > tbody > tr {
+    background-color: rgba(var(--pln-cards-color-rgb), 0.4) !important;
+    border-top: 4px solid rgb(var(--pln-cards-color-rgb)) !important;
+    border-left: 2px solid rgb(var(--pln-cards-color-rgb)) !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+/* add bullets */
+.dataview-result-list-li::marker {
+    content: '•';
+}
+.cards table.dataview {
+    font-size: unset;
+}
+/* 1.6 fix for bullets being moved away from left side */
+.cards {
+    --list-indent: 0;
+}
+
+/*
+ * Embeds
+*/
+.pln-embd-mods {
+    & {
+        --embed-background: inherit;
+        --embed-border-left: none;
+        --embed-border-right: none;
+        --embed-border-top: none;
+        --embed-border-bottom: none;
+        --embed-padding: 0 0 0 0;
+        --embed-font-style: inherit;
+    }
+    /* hide headers */
+    &.pln-embd-h1 .markdown-embed h1,
+    &.pln-embd-h2 .markdown-embed h2,
+    &.pln-embd-h3 .markdown-embed h3,
+    &.pln-embd-h4 .markdown-embed h4,
+    &.pln-embd-h5 .markdown-embed h5,
+    &.pln-embd-h6 .markdown-embed h6 {
+        display: none;
+    }
+    /* a better way to hide the first header only */
+    &.pln-embd-first .markdown-embed .mod-header + div > :is(h1,h2,h3,h4,h5,h6) {
+        display: none;
+    }
+
+    /* hide titles in emebds */
+    &.pln-embd-title .embed-title {
+        display: none;
+    }
+
+    /* hide the link icon for embeds */
+    &.pln-embd-link .markdown-embed-link {
+        display: none;
+    }
+
+    /* hide the new 1.6 left border */
+    /* also moves them over from 0.85em */
+    & .markdown-embed {
+        border-inline-start: none;
+        --checkbox-margin-inline-start: 0.4em;
+    }
+
+    /* this is to move embededlists over in 1.1 */
+    & .cm-embed-block .contains-task-list,
+    & .inline-embed .contains-task-list { 
+        padding: 0 0 0 0px;
+    }
+
+    /* 1.6 fix to move lists back over in embeds
+    2024-08-08 - this is seen breacking a basic embeded list in DFS migration which used:
+        class="internal-embed markdown-embed inline-embed is-loaded"
+    & .is-live-preview .markdown-embed {
+        --list-indent: 0;
+    }
+    */
+    /* this includes an OR to make basic list items also move over */
+    & .is-live-preview .task-list-item .task-list-item, .task-list-basic-item {
+        --list-indent: 2.25em;
+    }
+}
+
+
+
+/*
+ * Checkbox fixes in callouts for 1.6
+*/
+.is-live-preview .callout .task-list-item {
+    margin-inline-start: 0;
+}
+
+/* blank callout over-ride for 1.6 */
+.markdown-reading-view [data-callout="blank"] .callout-content :is(li),
+.markdown-reading-view [data-callout="blank-titled"] .callout-content :is(li) {
+    margin-inline-start: var(--list-indent);
+}
+
+/*
+ * Links
+*/
+body.pln-link-mods {
+    & {
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-decoration: underline;
+    --link-external-decoration-hover: underline !important;
+    --link-unresolved-opacity: 100;
+    }
+    /* remove the icon from external links */
+    & .external-link {
+        background-image: none;
+        padding-right: 0px;
+    }
+}
+
+
+
+/*
+ * Multi-row tabs
+ * https://discord.com/channels/686053708261228577/702656734631821413/1355022160397078599
+*/
+.pln-tab-rows:not(:has(.mod-stacked)) {
+    /* Primary wrapping functions */
+    & .mod-root .workspace-tab-header-container:hover {
+        --tab-width: unset; /* Kapirklaa */
+        flex-wrap: wrap;
+        min-height: var(--header-height);
+        height: unset;
+
+        /* primary bubble creation */
+        /* here be dragons */
+        & .workspace-tab-header {
+            width: unset; /* Kapirklaa */
+            container-type: normal; /* Kapirklaa */
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis:auto;
+            margin-bottom: 4px;
+            border-radius: 5px;
+        }
+
+        /* Remove the shoulders on tabs so the bubbles work */
+        & .workspace-tab-header::before, .workspace-tab-header::after {
+            display: none;
+        }
+    }
+
+    /* Remove drag, this is required for hover to work. It does not break the ability to drag tabs */
+    & .workspace-tab-header-container-inner {
+        flex-wrap: wrap;
+        -webkit-app-region: no-drag;
+    } 
+
+    /* Prevent hovering over tabs from making them larger and twitching the display */
+    & .mod-root .workspace-tabs {
+        & .workspace-tab-header {
+            & .workspace-tab-header-inner-close-button svg {
+                height: calc(var(--icon-size) /2);
+                width: calc(var(--icon-size) /2);
+            }
+            /* Make all close buttons light up */
+            & .workspace-tab-header-inner-close-button:hover {
+                background-color: var(--background-modifier-hover);
+            }
+        }
+        /* make the close icons work better by always taking up space and only showing the x on hover
+           also does not overlap the words (absolute positioning causes overlap) */
+        & .workspace-tab-header-container:hover .workspace-tab-header .workspace-tab-header-inner-close-button {
+            display: flex;
+            width: 12px;
+        }
+        & .workspace-tab-header:not(:hover) .workspace-tab-header-inner-close-button svg {
+            display: none;
+        }
+    }
+
+    /* Corrects spacing below tabs */
+    &  .workspace-tab-header-tab-list {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    /* Move the tabs over with padding to make room for new tab icon */
+    & .mod-root .workspace-tab-header-container-inner {
+        padding-right: 53px;
+    }
+    /* Move new tab icon */
+    &.mod-macos .mod-root .workspace-tab-header-new-tab {
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+    &.mod-windows {
+        & .workspace-tab-header-new-tab {
+            position: absolute;
+            right: 138px;
+            top: -5px;
+        }
+        & .is-right-sidedock-open .workspace-tab-header-new-tab {
+            right: 0;
+        }
+    }
+
+    /* Move sidebar toggle */
+    & .sidebar-toggle-button {
+        display: none;
+        /* position: absolute;
+        right: 60px;
+        top: 30px; */
+    }
+
+    /* shorten the separator between tabs */
+    & .workspace .mod-root .workspace-tab-header-inner::after {
+        height: 10px;
+    }
+
+    /* Original code */
+    & .is-hidden-frameless:not(.is-fullscreen):not(.mod-macos) .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
+        height: 40px;
+    }
+    & .workspace-tab-header-spacer {
+        display: none;
+    }
+}
+
+/*
+ * Dataview
+*/
+.pln-dv-mods {
+    & .markdown-source-view.mod-cm6 .edit-block-button {
+        display: none;
+    }
+    /* move dataview results over 2px to align with embeds in reading mode */
+    & .markdown-reading-view .dataview.result-group {
+        padding-left: 2px;
+    }
+    /* do not move dataview results over in live preview mode */
+    & .is-live-preview .dataview.result-group {
+        padding-left: 0px;
+    }
+    /* if you offset embeds, this can be 0 otherwise 2px */
+    & .cm-preview-code-block.cm-embed-block.markdown-rendered {
+        padding-left: 0;
+    }
+    /* move the checkbox container over pixels in reading mode */
+    /* this was an issue on my daily notes when embedding all PTIs */
+    & .markdown-reading-view .dataview-container .contains-task-list {
+        padding-left: 20px;
+    }
+    /* hides the item count on a list */
+    &.pln-dv-count .dataview.small-text {
+        display: none;
+    }
+    /* 1.6 fix to move lists back over in embeds */
+    & .dataview-container {
+        --list-indent: 0;
+    }
+    /* 1.6 fix to move list items over in DV queries in LP unless it is in an embed */
+    /* This is not exact but it is a better fix than margin-left: -6px */
+    & .is-live-preview:not(:has(.markdown-embed-content)) .dataview.task-list-item {
+        margin-inline-start: var(--list-indent);
+    }
+
+    /* commented out to fix daily note in 1.6.1
+    /* 1.6 for child items in LP 
+    & .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-item-checkbox {
+        --checkbox-margin-inline-start: 3em;
+    }
+    /* 1.6 for bullet items in LP 
+    & .is-live-preview .dataview-container .contains-task-list .contains-task-list .task-list-basic-item {
+        margin-inline-start: 3em;
+    }
+    */
+
+    /* 1.6 fix non-checkbox list under a dataview task in LP */
+    & .is-live-preview .dataview.result-group .contains-task-list .task-list-item ul:not(:has(.task-list-item-checkbox)) {
+        padding-inline-start: 2em;
+    }
+    /* 1.6 fix non-checkbox list under a dataview task in Reading */
+    & .markdown-reading-view .dataview.result-group .task-list-item ul {
+        padding-inline-start: 2em;
+    }
+}
+
+/*
+ * Checkboxes
+*/
+body.pln-checkboxes {
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
+    ul > li.task-list-item[data-task="x"],
+    ul > li.task-list-item[data-task="X"] {
+        text-decoration: none;
+    }
+
+    /* > */
+    input[type=checkbox][data-task=">"],
+    input[type=checkbox][data-task=">"]:hover,
+    ul > li.task-list-item[data-task=">"] > .task-list-item-checkbox {
+        background-color: var(--color-orange);
+        border-color: var(--color-orange);
+    }
+    input[type=checkbox][data-task=">"]:checked:after,
+    ul > li.task-list-item[data-task=">"] > .task-list-item-checkbox:checked:after {
+        -webkit-mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI1cHgiIGhlaWdodD0iMjVweCIgdmlld0JveD0iLTUgMCAyNSAyNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICANCiAgICA8dGl0bGU+cmlnaHQ8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY29ucyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+DQogICAgICAgIDxnIGlkPSJ1aS1nYW1ibGluZy13ZWJzaXRlLWxpbmVkLWljbm9zLWNhc2lub3NodW50ZXIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzgzLjAwMDAwMCwgLTE1OC4wMDAwMDApIiBmaWxsPSIjMUMxQzFGIiBmaWxsLXJ1bGU9Im5vbnplcm8iPg0KICAgICAgICAgICAgPGcgaWQ9IjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNTAuMDAwMDAwLCAxMjAuMDAwMDAwKSI+DQogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQzNi40NTM1MTcsMzguNTY5MjQ5IEw0NDcuMzAyNDU5LDQ4Ljk5MzgxNTggTDQ0Ny4zOTI2MSw0OS4wNzQ4ODAyIEM0NDcuNzU1MzQsNDkuNDIzNDU0IDQ0Ny45NjgxNTksNDkuODg3MDQ2MSA0NDgsNTAuNDM4MjIyNyBMNDQ3Ljk5ODEzNSw1MC42MjI4MjI5IEM0NDcuOTY4MTU5LDUxLjExMjk1MzkgNDQ3Ljc1NTM0LDUxLjU3NjU0NiA0NDcuMzMzNjc1LDUxLjk3NzQ0NjkgTDQ0Ny4zMzkwOTUsNTEuOTY4OTgzMiBMNDM2LjQ1MzUxNyw2Mi40MzA3NTEgQzQzNS42NjM2OTQsNjMuMTg5NzQ5NyA0MzQuMzk5MDAxLDYzLjE4OTc0OTcgNDMzLjYwOTE3OCw2Mi40MzA3NTEgQzQzMi43OTY5NDEsNjEuNjUwMjEzIDQzMi43OTY5NDEsNjAuMzY3NTkyNCA0MzMuNjA5NDMyLDU5LjU4NjgxMDYgTDQ0My4wMTIzMjQsNTAuNTU3MjQ3MSBMNDMzLjYwOTE3OCw0MS40MTI5NDU2IEM0MzIuNzk2OTQxLDQwLjYzMjQwNzYgNDMyLjc5Njk0MSwzOS4zNDk3ODcgNDMzLjYwOTE3OCwzOC41NjkyNDkgQzQzNC4zOTkwMDEsMzcuODEwMjUwMyA0MzUuNjYzNjk0LDM3LjgxMDI1MDMgNDM2LjQ1MzUxNywzOC41NjkyNDkgWiIgaWQ9InJpZ2h0Ij48L3BhdGg+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=");
+    }
+
+    /* ? */
+    input[type=checkbox][data-task="?"],
+    input[type=checkbox][data-task="?"]:hover,
+    ul > li.task-list-item[data-task="?"] > .task-list-item-checkbox {
+        background-color: var(--color-yellow);
+        border-color: var(--color-yellow);
+    }
+    input[type=checkbox][data-task="?"]:checked:after,
+    ul > li.task-list-item[data-task="?"] > .task-list-item-checkbox:checked:after {
+            -webkit-mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9Ijk3My4xcHgiIGhlaWdodD0iOTczLjFweCIgdmlld0JveD0iMCAwIDk3My4xIDk3My4xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5NzMuMSA5NzMuMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQoJPg0KPGc+DQoJPHBhdGggZD0iTTUwMi4yOSw3ODguMTk5aC00N2MtMzMuMSwwLTYwLDI2LjktNjAsNjB2NjQuOWMwLDMzLjEsMjYuOSw2MCw2MCw2MGg0N2MzMy4xMDEsMCw2MC0yNi45LDYwLTYwdi02NC45DQoJCUM1NjIuMjksODE1LDUzNS4zOTEsNzg4LjE5OSw1MDIuMjksNzg4LjE5OXoiLz4NCgk8cGF0aCBkPSJNMTcwLjg5LDI4NS44bDg2LjcsMTAuOGMyNy41LDMuNCw1My42LTEyLjQsNjMuNS0zOC4zYzEyLjUtMzIuNywyOS45LTU4LjUsNTIuMi03Ny4zYzMxLjYwMS0yNi42LDcwLjktNDAsMTE3LjktNDANCgkJYzQ4LjcsMCw4Ny41LDEyLjgsMTE2LjMsMzguM2MyOC44LDI1LjYsNDMuMSw1Ni4yLDQzLjEsOTIuMWMwLDI1LjgtOC4xLDQ5LjQtMjQuMyw3MC44Yy0xMC41LDEzLjYtNDIuOCw0Mi4yLTk2LjcsODUuOQ0KCQljLTU0LDQzLjctODkuODk5LDgzLjA5OS0xMDcuODk5LDExOC4wOTljLTE4LjQsMzUuODAxLTI0LjgsNzUuNS0yNi40LDExNS4zMDFjLTEuMzk5LDM0LjEsMjUuOCw2Mi41LDYwLDYyLjVoNDkNCgkJYzMxLjIsMCw1Ny0yMy45LDU5LjgtNTQuOWMyLTIyLjI5OSw1LjctMzkuMTk5LDExLjMwMS01MC42OTljOS4zOTktMTkuNzAxLDMzLjY5OS00NS43MDEsNzIuNjk5LTc4LjENCgkJQzcyMy41OSw0NzcuOCw3NzIuNzksNDI4LjQsNzk1Ljg5MSwzOTJjMjMtMzYuMywzNC42LTc0LjgsMzQuNi0xMTUuNWMwLTczLjUtMzEuMy0xMzgtOTQtMTkzLjRjLTYyLjYtNTUuNC0xNDctODMuMS0yNTMtODMuMQ0KCQljLTEwMC44LDAtMTgyLjEsMjcuMy0yNDQuMSw4MmMtNTIuOCw0Ni42LTg0LjksMTAxLjgtOTYuMiwxNjUuNUMxMzkuNjksMjY2LjEsMTUyLjM5LDI4My41LDE3MC44OSwyODUuOHoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
+    }
+
+    /* - */
+    input[type=checkbox][data-task="-"],
+    input[type=checkbox][data-task="-"]:hover,
+    ul > li.task-list-item[data-task="-"] > .task-list-item-checkbox {
+        background-color: var(--color-purple);
+        border-color: var(--color-purple);
+    }
+    input[type=checkbox][data-task="-"]:checked:after,
+    ul > li.task-list-item[data-task="-"] > .task-list-item-checkbox:checked:after {
+        -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTIgOGExIDEgMCAwMTEtMWgxMGExIDEgMCAxMTAgMkgzYTEgMSAwIDAxLTEtMXoiIGZpbGw9IiMwMDAiLz4KPC9zdmc+Cg==");
+    }
+    /* mark out the canceled item */
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
+    ul > li.task-list-item[data-task="-"] {
+        text-decoration: var(--checklist-done-decoration);
+    }
+
+    /* ! */
+    input[type=checkbox][data-task="!"],
+    input[type=checkbox][data-task="!"]:hover,
+    ul > li.task-list-item[data-task="!"] > .task-list-item-checkbox {
+        background-color: var(--color-red);
+        border-color: var(--color-red);
+    }
+    input[type=checkbox][data-task="!"]:checked:after,
+    ul > li.task-list-item[data-task="!"] > .task-list-item-checkbox:checked:after {
+        -webkit-mask-image:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiBjbGFzcz0iaWNvbmlmeSBpY29uaWZ5LS1meGVtb2ppIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij48cGF0aCBmaWxsPSIjMkIzQjQ3IiBkPSJNMzA1LjQ4NiA0MDUuMjExYzAgMjcuMTkxLTIxLjc1MiA0OS40ODYtNDkuNDg2IDQ5LjQ4NmMtMjcuNzM0IDAtNDkuNDg2LTIyLjI5NS00OS40ODYtNDkuNDg2YzAtMjcuMTkgMjEuNzUyLTQ5LjQ4NSA0OS40ODYtNDkuNDg1YzI3LjczNCAwIDQ5LjQ4NiAyMi4yOTYgNDkuNDg2IDQ5LjQ4NXptLTI2LjgwOC05OC45NzFoLTQ1Ljg3M2MtNi44IDAtMTIuMzk4LTUuMzQ3LTEyLjcwOC0xMi4xNGwtOS43MTEtMjEyLjE5N2MtLjMzMi03LjI0NyA1LjQ1NC0xMy4zMDMgMTIuNzA4LTEzLjMwM2g2NS43ODFjNy4yNjYgMCAxMy4wNTYgNi4wNzUgMTIuNzA3IDEzLjMzMmwtMTAuMTk3IDIxMi4xOTdjLS4zMjUgNi43ODEtNS45MTggMTIuMTExLTEyLjcwNyAxMi4xMTF6Ij48L3BhdGg+PC9zdmc+");
+    }
+
+    /* i */
+    input[type=checkbox][data-task="i"],
+    input[type=checkbox][data-task="i"]:hover,
+    ul > li.task-list-item[data-task="i"] > .task-list-item-checkbox {
+        background-color: var(--color-green);
+        border-color: var(--color-green);
+    }
+    input[type=checkbox][data-task="i"]:checked:after,
+    ul > li.task-list-item[data-task="i"] > .task-list-item-checkbox:checked:after {
+        -webkit-mask-image:url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='iso-8859-1'%3f%3e %3c!-- Generator: Adobe Illustrator 19.0.0%2c SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e %3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 488.9 488.9' style='enable-background:new 0 0 488.9 488.9%3b' xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath d='M239.15%2c0c31.9%2c0%2c57.7%2c25.8%2c57.7%2c57.7s-25.8%2c57.7-57.7%2c57.7s-57.7-25.8-57.7-57.7S207.25%2c0%2c239.15%2c0z M291.65%2c151.6h-1.5 h-92.8h-3.4c-19%2c0-34.3%2c15.4-34.3%2c34.3l0%2c0c0%2c19%2c15.4%2c34.3%2c34.3%2c34.3h3.4v200h-37.7v68.7h169.6v-68.7h-37.5V151.6H291.65z'/%3e%3c/g%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e");
+    }
+
+    /* / */
+    input[type=checkbox][data-task="/"],
+    input[type=checkbox][data-task="/"]:hover,
+    ul > li.task-list-item[data-task="/"] > .task-list-item-checkbox {
+        background-color: var(--color-sea-green);
+        border-color: var(--color-sea-green);
+    }
+    input[type=checkbox][data-task="/"]:checked:after,
+    ul > li.task-list-item[data-task="/"] > .task-list-item-checkbox:checked:after {
+        -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3C/svg%3E");
+    }
+}
+
+/*
+ * Code
+*/
+.cm-s-obsidian span.cm-inline-code,
+.markdown-preview-view code {
+    color: inherit;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* 
+ * Tags
+*/
+.pln-boxed-tags {
+    & {
+        --tag-radius: 5px;
+        --tag-border-width: 2px;
+    }
+    & .cm-hashtag-begin {
+        display: none;
+    }
+    & a.tag,
+    & .cm-hashtag.cm-hashtag-end {
+        border-right: var(--tag-border-width) solid var(--tag-border-color);
+        border-left: var(--tag-border-width) solid var(--tag-border-color);
+        border-radius: var(--tag-radius);
+        padding-left: var(--tag-padding-x);
+        padding-right: var(--tag-padding-x);
+    }
+}
+
+/*
+ * Callouts
+*/
+body {
+    --callout-padding: 0;
+    --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    --callout-content-padding: 0 var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    --callout-radius: 5px;
+}
+
+/* remove leading and trailing padding of callout content paragraphs */
+.callout-content > p:first-child {
+    margin-top: 0px;
+}
+.callout-content > p:last-child {
+    margin-bottom: 0px;
+}
+
+.callout {
+    border-top: 4px solid rgba(var(--callout-color), 1.0);
+    border-left: 2px solid rgba(var(--callout-color), 1.0);
+}
+
+/* make quotes look like callouts too */
+body {
+    --blockquote-border-thickness: 2px;
+}
+/* correct quote padding */
+.markdown-rendered blockquote {
+    padding: 0 0 0 var(--size-4-3);
+}
+
+/* make unique callout icons */
+.callout[data-callout="danger"] {
+    --callout-icon: lucide-alert-octagon;
+    --callout-color: var(--color-salmon-rgb);
+}
+.callout[data-callout="idea"] {
+    --callout-icon: lucide-lightbulb;
+}
+.callout[data-callout="links"] {
+    --callout-icon: lucide-link;
+}
+.callout[data-callout="meta"] {
+    --callout-icon: lucide-database;
+}
+
+/* callouts to make special tables */
+div[data-callout^="table-"].callout {
+    border: 0; padding: 0;
+    background: unset; box-shadow: unset;
+    & > .callout-content {
+        display: contents
+    }
+    & > .callout-title {
+        display: none 
+    }
+}
+/* make the first row vertical and bold */
+div[data-callout*="vertical_row"] {
+    & thead tr th:first-child {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        height: auto;
+        min-width: 0 !important;
+    }
+    & tbody tr td:first-child {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        height: auto;
+        min-width: 0 !important;
+        letter-spacing: 1px;
+        font-weight: var(--table-header-weight);
+    }
+}
+/* bold the first row of a table */
+div[data-callout*="bold_row"] {
+    & tbody tr td:first-child {
+        font-weight: var(--table-header-weight);
+    }
+}
+/* make the top row standard text unless bold_row is also specified */
+div[data-callout*="plain_columns"] {
+    & thead tr th {
+        font-weight: normal;
+    }
+    &[data-callout*="bold_row"] thead tr th:first-child {
+        font-weight: var(--table-header-weight);
+    }
+}
+
+/* remove meta callouts in reading mode and when embeded*/
+.pln-rm-co-links .markdown-reading-view .callout[data-callout="links"],
+.pln-rm-co-meta .markdown-reading-view .callout[data-callout="meta"],
+.markdown-embed .callout[data-callout="links"],
+.markdown-embed .callout[data-callout="meta"] {
+    display: none;
+}
+
+/* colours */
+.callout[data-callout="note"] {
+    --callout-color: var(--color-blue-rgb);
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="quote"],
+.callout[data-callout="tldr"] {
+    --callout-color: var(--color-frost-rgb);
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"],
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+    --callout-color: var(--color-cyan-rgb);
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+    --callout-color: var(--color-green-rgb);
+}
+
+.theme-light .callout[data-callout="idea"],
+.theme-light .callout[data-callout="attention"],
+.theme-light .callout[data-callout="caution"],
+.theme-light .callout[data-callout="warning"] {
+    --callout-color: var(--color-yellow-dark-rgb);
+}
+
+.theme-dark .callout[data-callout="idea"],
+.theme-dark .callout[data-callout="attention"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="warning"] {
+    --callout-color: var(--color-yellow-light-rgb);
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+    --callout-color: var(--color-orange-rgb);
+}
+
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+    --callout-color: var(--color-red-rgb);
+}
+
+.callout[data-callout="example"] {
+    --callout-color: var(--color-purple-rgb);
+}
+
+.theme-dark .callout[data-callout="cite"],
+.theme-dark .callout[data-callout="links"],
+.theme-dark .callout[data-callout="meta"] {
+    --callout-color: var(--w0-rgb);
+}
+.theme-light .callout[data-callout="cite"],
+.theme-light .callout[data-callout="links"],
+.theme-light .callout[data-callout="meta"] {
+    --callout-color: var(--b3-rgb);
+}
+
+
+/*
+ * Highlighters
+ * Original by soggymuse, modified by Pipe
+*/
+/* removes the default css */
+.pln-hilite-mods {
+    & mark,
+    & .markdown-rendered mark,
+    & .cm-s-obsidian span.cm-highlight {
+        color: inherit;
+        background: rgba(var(--color-yellow-rgb),0.2);
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--color-yellow);
+    }
+
+    /*Add highlighter's label before highlighted text*/
+    & mark::before,
+    & .cm-s-obsidian span.cm-highlight::before {
+        padding: 0 5px;
+        text-transform: lowercase;
+        font-style: italic;
+        font-family: Palatino;
+    }
+
+    /*Red highlighter (edit)*/
+    & mark.edit { 
+        border-color: var(--color-red);
+        background: rgba(var(--color-red-rgb),0.2);
+    }
+    & mark.edit::before {
+        color: var(--color-red);
+        content: "Edit:";
+    }
+
+    /*Orange highlighter (unfinished)*/
+    & mark.unfinished { 
+        border-color: var(--color-orange);
+        background: rgba(var(--color-orange-rgb),0.2);
+    }
+    & mark.unfinished::before {
+        color: var(--color-orange);
+        content: "Unfinished:";
+    }
+
+    /*Pink highlighter (verify)*/
+    & mark.verify { 
+        border-color: var(--color-purple);
+        background: rgba(var(--color-purple-rgb),0.2);
+    }
+    & mark.verify::before {
+        color: var(--color-purple);
+        content: "Verify:";
+    }
+
+    /* Green highlighter (important)*/
+    & mark.important { 
+        border-color: var(--color-green);
+        background: rgba(var(--color-green-rgb),0.2);
+    }
+    & mark.important::before {
+        color: var(--color-green);
+        content: "Important:";
+    }
+
+    /*
+    * Text colours using mark
+    */
+    & mark.red {
+        color: var(--color-red);
+        background: none;
+        border: 0px;
+    }
+    & mark.orange {
+        color: var(--color-orange);
+        background: none;
+        border: 0px;
+    }
+    & mark.yellow {
+        color: var(--color-yellow);
+        background: none;
+        border: 0px;
+    }
+    & mark.green {
+        color: var(--color-green);
+        background: none;
+        border: 0px;
+    }
+    & mark.purple {
+        color: var(--color-purple);
+        background: none;
+        border: 0px;
+    }
+    & mark.sea-green {
+        color: var(--color-sea-green);
+        background: none;
+        border: 0px;
+    }
+    & mark.cyan {
+        color: var(--color-cyan);
+        background: none;
+        border: 0px;
+    }
+    & mark.frost {
+        color: var(--color-frost);
+        background: none;
+        border: 0px;
+    }
+    & mark.blue {
+        color: var(--color-blue);
+        background: none;
+        border: 0px;
+    }
+    & mark.salmon {
+        color: var(--color-salmon);
+        background: none;
+        border: 0px;
+    }
+    /*underlined text*/
+    & mark.underline {
+        text-decoration: underline;
+        background: none;
+        border: 0px;
+    }
+    /* paths */
+    & mark.path {
+        font-family: var(--font-monospace);
+        color: var(--text-faint);
+        background: none;
+        border: 0px;
+    }
+    /* borders */
+    & mark.borders {
+        border: 1px solid;
+        border-radius: 0px;
+        padding-left: 2px;
+        padding-right: 2px;
+        background: none;
+    }
+    /* spoiler */
+    & mark.spoiler {
+        border: 0px;
+        background-color: var(--text-normal);
+    }
+    & mark.spoiler:hover {
+        background-color: inherit;
+    }
+}
+
+/*
+ * Calendar plugin
+ *
+ * obsidian-calendar-plugin
+ * https://github.com/liamcain/obsidian-calendar-plugin
+/*
+
+/* colors */
+#calendar-container {
+    & {
+        --color-dot: var(--color-accent);
+        --color-arrow: var(--color-salmon);
+        --color-background-weekend: var(--background-primary);
+        --color-text-weeknum: var(--color-yellow);
+    }
+    & .year {
+        color: var(--color-cyan);
+    }
+    & .active {
+        --color-dot: var(--text-on-accent);
+    }
+    &,
+    & .day,
+    & .week-num {
+        padding: 0;
+    }
+    & .nav {
+        margin: .2em 0 .6em;
+    }
+}
+/* padding fixes for calendar */
+.workspace-leaf-content .view-content {
+    padding: var(--size-2-2);
+}
+
+/*
+ * Folders
+/*
+/* https://forum.obsidian.md/t/iterative-rainbow-folder-colors-css/21066 */
+/* thanks to Evelf */
+/* updated for v1.6.0 */
+
+.tree-item-children {
+    --nav-indentation-guide-width: 3px;
+    border-bottom-left-radius: 5px;
+}
+
+.pln-folder-icons {
+    /* optionally make the collapse icons folders instead */
+    & .nav-files-container .collapse-icon.is-collapsed svg.svg-icon {
+        transform: none;
+    }
+
+    /* Make all folder chevrons into icons, and make them all white */
+    & .nav-files-container > div > .nav-folder .collapse-icon svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+        color: var(--icon-color);
+        background-color: var(--icon-color);
+    }
+    /* Change top level to grey */
+    & .nav-files-container > div > .nav-folder > .nav-folder-title > .collapse-icon svg {
+        color: var(--b0);
+        background-color: var(--b0);
+    }
+
+    /* Make all folder chevrons into icons, and make them all white */
+    & .nav-files-container > div > .nav-folder .collapse-icon.is-collapsed  svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+        color: var(--icon-color);
+        background-color: var(--icon-color);
+    }
+    /* Change top level to grey */
+    & .nav-files-container > div > .nav-folder > .nav-folder-title > .collapse-icon.is-collapsed svg {
+        color: var(--b0);
+        background-color: var(--b0);
+    }
+}
+
+.nav-files-container {
+    /* changes the top level folders to darker text so they can be read on the coloured folder background*/
+    & > div > .nav-folder > .nav-folder-title,
+    & > div > .nav-folder > .nav-folder-title:hover,
+    & > div > .nav-folder > .nav-folder-title > .collapse-icon svg.svg-icon {
+        --nav-item-color: var(--b0);
+        --nav-item-color-hover: var(--b0);
+        --nav-collapse-icon-color: var(--b0);
+    }
+
+    /* Make items focused via arrow keys highlighted */
+    & .tree-item-self.has-focus {
+        background-color: var(--background-modifier-hover);
+    }
+
+    /* Coloursssssss */
+    & > div > .nav-folder:nth-child(9n+2) > .tree-item-self {
+        background-color: var(--color-red);
+    }
+    & > div > .nav-folder:nth-child(9n+2) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-red);
+    }
+
+    & > div > .nav-folder:nth-child(9n+3) > .tree-item-self {
+        background-color: var(--color-orange);
+    }
+    & > div > .nav-folder:nth-child(9n+3) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-orange);
+    }
+
+    & > div > .nav-folder:nth-child(9n+4) > .tree-item-self {
+        background-color: var(--color-yellow-light);
+    }
+    & > div > .nav-folder:nth-child(9n+4) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-yellow-light);
+    }
+
+    & > div > .nav-folder:nth-child(9n+5) > .tree-item-self {
+        background-color: var(--color-green);
+    }
+    & > div > .nav-folder:nth-child(9n+5) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-green);
+    }
+
+    & > div > .nav-folder:nth-child(9n+6) > .tree-item-self {
+        background-color: var(--color-sea-green);
+    }
+    & > div > .nav-folder:nth-child(9n+6) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-sea-green);
+    }
+
+    & > div > .nav-folder:nth-child(9n+7) > .tree-item-self {
+        background-color: var(--color-cyan);
+    }
+    & > div > .nav-folder:nth-child(9n+7) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-cyan);
+    }
+
+    & > div > .nav-folder:nth-child(9n+8) > .tree-item-self {
+        background-color: var(--color-frost);
+    }
+    & > div > .nav-folder:nth-child(9n+8) .tree-item-children {
+        border-left: 3px solid var(--color-frost);
+    }
+
+    & > div > .nav-folder:nth-child(9n+9) > .tree-item-self {
+        background-color: var(--color-blue);
+    }
+    & > div > .nav-folder:nth-child(9n+9) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-blue);
+    }
+
+    & > div > .nav-folder:nth-child(9n+10) > .tree-item-self {
+        background-color: var(--color-purple);
+    }
+    & > div > .nav-folder:nth-child(9n+10) .tree-item-children {
+        --nav-indentation-guide-color: var(--color-purple);
+    }
+}
+
+/* lock functionality */
+.lock {
+    & * {
+        -webkit-user-modify: read-only !important;
+    }
+    & .metadata-content {
+        pointer-events: none;
+    }
+}
+.workspace-leaf:has(.lock) .clickable-icon.view-action[aria-label^="Current view:"] {
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-lock'%3E%3Crect width='18' height='11' x='3' y='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'/%3E%3C/svg%3E");
+    background-color: var(--icon-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events:none
+}
+
+/*
+ * Supplementals
+*/
+
+/* MIT License | Copyright (c) Stephan Ango (@kepano) 
+
+Cards snippet for Obsidian
+
+author: @kepano
+version: 3.0.0
+
+Support my work:
+https://github.com/sponsors/kepano
+
+*/
+body {
+    --cards-min-width: 180px;
+    --cards-max-width: 1fr;
+    --cards-mobile-width: 120px;
+    --cards-image-height: 400px;
+    --cards-padding: 1.2em;
+    --cards-image-fit: contain;
+    --cards-background: transparent;
+    --cards-border-width: 1px;
+    --cards-aspect-ratio: auto;
+    --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width))); }
+  
+  @media (max-width: 400pt) {
+    body {
+      --cards-min-width:var(--cards-mobile-width); } }
+  .cards.table-100 table.dataview tbody,
+  .table-100 .cards table.dataview tbody {
+    padding: 0.25rem 0.75rem; }
+  
+  .cards table.dataview {
+    --table-width: 100%;
+    --table-edge-cell-padding-first: calc(var(--cards-padding)/2);
+    --table-edge-cell-padding-last: calc(var(--cards-padding)/2);
+    --table-cell-padding: calc(var(--cards-padding)/3) calc(var(--cards-padding)/2);
+    line-height: 1.3; }
+    .cards table.dataview tbody {
+      clear: both;
+      padding: 0.5rem 0;
+      display: grid;
+      grid-template-columns: var(--cards-columns);
+      grid-column-gap: 0.75rem;
+      grid-row-gap: 0.75rem; }
+    .cards table.dataview > tbody > tr {
+      background-color: var(--cards-background);
+      border: var(--cards-border-width) solid var(--background-modifier-border);
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 calc(var(--cards-padding)/3) 0;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: box-shadow 0.15s linear;
+      max-width: var(--cards-max-width);
+      height: auto; }
+    .cards table.dataview > tbody > tr:hover {
+      border: var(--cards-border-width) solid var(--background-modifier-border-hover);
+      box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.05), 0 1px 3px 1px rgba(0, 0, 0, 0.025);
+      transition: box-shadow 0.15s linear; }
+    .cards table.dataview tbody > tr > td {
+      /* Paragraphs */
+      /* Links */
+      /* Buttons */
+      /* Lists */
+      /* Images */ }
+      .cards table.dataview tbody > tr > td:first-child {
+        font-weight: var(--bold-weight);
+        border: none; }
+      .cards table.dataview tbody > tr > td:first-child a {
+        display: block; }
+      .cards table.dataview tbody > tr > td:last-child {
+        border: none; }
+      .cards table.dataview tbody > tr > td:not(:first-child) {
+        font-size: calc(var(--table-text-size) * .9);
+        color: var(--text-muted); }
+      .cards table.dataview tbody > tr > td > * {
+        padding: calc(var(--cards-padding)/3) 0; }
+      .cards table.dataview tbody > tr > td:not(:last-child):not(:first-child) {
+        padding: 4px 0;
+        border-bottom: 1px solid var(--background-modifier-border);
+        width: calc(100% - var(--cards-padding));
+        margin: 0 calc(var(--cards-padding)/2); }
+      .cards table.dataview tbody > tr > td a {
+        text-decoration: none; }
+      .cards table.dataview tbody > tr > td > button {
+        width: 100%;
+        margin: calc(var(--cards-padding)/2) 0; }
+      .cards table.dataview tbody > tr > td:last-child > button {
+        margin-bottom: calc(var(--cards-padding)/6); }
+      .cards table.dataview tbody > tr > td > ul {
+        width: 100%;
+        padding: 0.25em 0 !important;
+        margin: 0 auto !important; }
+      .cards table.dataview tbody > tr > td:has(img) {
+        padding: 0 !important;
+        background-color: var(--background-secondary);
+        display: block;
+        margin: 0;
+        width: 100%; }
+      .cards table.dataview tbody > tr > td img {
+        aspect-ratio: var(--cards-aspect-ratio);
+        width: 100%;
+        object-fit: var(--cards-image-fit);
+        max-height: var(--cards-image-height);
+        background-color: var(--background-secondary);
+        vertical-align: bottom; }
+  
+  .markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+  .trim-cols .cards table.dataview tbody > tr > td {
+    white-space: normal; }
+  
+  /*
+  .cards,
+  .markdown-source-view.mod-cm6.cards {
+  .dataview.table-view-table > tbody > tr > td,
+  table.dataview tbody > tr > td {
+      border-bottom: none;
+      padding: 0!important;
+      line-height: 1.2;
+      width: calc(100% - var(--cards-padding));
+      margin: 0 auto;
+      overflow: visible !important;
+      max-width: 100%;
+      display: flex;
+  }
+  }*/
+  .links-int-on .cards table {
+    --link-decoration: none; }
+  
+  /* Block button */
+  .markdown-source-view.mod-cm6.cards .edit-block-button {
+    top: 0px; }
+  
+  /* ------------------- */
+  /* Sorting menu */
+  .cards.table-100 table.dataview thead > tr,
+  .table-100 .cards table.dataview thead > tr {
+    right: 0.75rem; }
+  
+  .table-100 .cards table.dataview thead:before,
+  .cards.table-100 table.dataview thead:before {
+    margin-right: 0.75rem; }
+  
+  .theme-light .cards table.dataview thead:before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>'); }
+  
+  .cards table.dataview thead {
+    user-select: none;
+    width: 180px;
+    display: block;
+    float: right;
+    position: relative;
+    text-align: right;
+    height: 24px;
+    padding-bottom: 0px; }
+  .cards table.dataview thead:hover:before {
+    opacity: 0.5;
+    background-color: var(--background-modifier-hover); }
+  .cards table.dataview thead:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: var(--cursor);
+    text-align: right;
+    padding: var(--size-4-1) var(--size-4-2);
+    margin-bottom: 2px;
+    border-radius: var(--radius-s);
+    font-weight: 500;
+    font-size: var(--font-adaptive-small);
+    opacity: 0.25;
+    background-position: center center;
+    background-size: 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>'); }
+  .cards table.dataview thead > tr {
+    top: -1px;
+    position: absolute;
+    display: none;
+    z-index: 9;
+    border: 1px solid var(--background-modifier-border-hover);
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow-s);
+    padding: 6px;
+    border-radius: var(--radius-m);
+    flex-direction: column;
+    margin: 24px 0 0 0;
+    width: 100%; }
+  .cards table.dataview thead:hover > tr {
+    display: flex; }
+  .cards table.dataview thead > tr > th {
+    display: block;
+    padding: 3px 30px 3px 6px !important;
+    border-radius: var(--radius-s);
+    width: 100%;
+    font-weight: 400;
+    color: var(--text-normal);
+    cursor: var(--cursor);
+    border: none;
+    font-size: var(--font-ui-small); }
+  .cards table.dataview thead > tr > th[sortable-style="sortable-asc"],
+  .cards table.dataview thead > tr > th[sortable-style="sortable-desc"] {
+    color: var(--text-normal); }
+  .cards table.dataview thead > tr > th:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover); }
+  
+  /* ------------------- */
+  /* Card lists */
+  .list-cards.markdown-preview-view .list-bullet,
+  .list-cards.markdown-preview-view .list-collapse-indicator, .list-cards.markdown-preview-view.markdown-rendered.show-indentation-guide li > ul::before {
+    display: none; }
+  .list-cards.markdown-preview-view div > ul {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: var(--cards-columns);
+    padding: 0;
+    line-height: var(--line-height-tight); }
+    .list-cards.markdown-preview-view div > ul > li {
+      background-color: var(--cards-background);
+      padding: calc(var(--cards-padding)/2);
+      border-radius: var(--radius-s);
+      border: var(--cards-border-width) solid var(--background-modifier-border);
+      overflow: hidden; }
+    .list-cards.markdown-preview-view div > ul .image-embed {
+      padding: 0;
+      display: block;
+      background-color: var(--background-secondary);
+      border-radius: var(--image-radius); }
+      .list-cards.markdown-preview-view div > ul .image-embed img {
+        aspect-ratio: var(--cards-aspect-ratio);
+        object-fit: var(--cards-image-fit);
+        max-height: var(--cards-image-height);
+        background-color: var(--background-secondary);
+        vertical-align: bottom; }
+  .list-cards.markdown-preview-view div > ul > li > a {
+    --link-decoration: none;
+    --link-external-decoration: none;
+    font-weight: var(--bold-weight); }
+  .list-cards.markdown-preview-view div ul > li:hover {
+    border-color: var(--background-modifier-border-hover); }
+  .list-cards.markdown-preview-view div ul ul {
+    display: block;
+    width: 100%;
+    color: var(--text-muted);
+    font-size: var(--font-smallest);
+    margin: calc(var(--cards-padding)/-4) 0;
+    padding: calc(var(--cards-padding)/2) 0; }
+    .list-cards.markdown-preview-view div ul ul ul {
+      padding-bottom: calc(var(--cards-padding)/4); }
+    .list-cards.markdown-preview-view div ul ul > li {
+      display: block; }
+  
+  /* ------------------- */
+  /* Helper classes */
+  .cards.cards-16-9,
+  .list-cards.cards-16-9 {
+    --cards-aspect-ratio: 16/9; }
+  .cards.cards-1-1,
+  .list-cards.cards-1-1 {
+    --cards-aspect-ratio: 1/1; }
+  .cards.cards-2-1,
+  .list-cards.cards-2-1 {
+    --cards-aspect-ratio: 2/1; }
+  .cards.cards-2-3,
+  .list-cards.cards-2-3 {
+    --cards-aspect-ratio: 2/3; }
+  .cards.cards-cols-1,
+  .list-cards.cards-cols-1 {
+    --cards-columns: repeat(1, minmax(0, 1fr)); }
+  .cards.cards-cols-2,
+  .list-cards.cards-cols-2 {
+    --cards-columns: repeat(2, minmax(0, 1fr)); }
+  .cards.cards-cover,
+  .list-cards.cards-cover {
+    --cards-image-fit: cover; }
+  .cards.cards-align-bottom table.dataview tbody > tr > td:last-child,
+  .list-cards.cards-align-bottom table.dataview tbody > tr > td:last-child {
+    margin-top: auto; }
+  
+  @media (max-width: 400pt) {
+    .cards table.dataview tbody > tr > td:not(:first-child) {
+      font-size: 80%; } }
+  @media (min-width: 400pt) {
+    .cards-cols-3 {
+      --cards-columns: repeat(3, minmax(0, 1fr)); }
+  
+    .cards-cols-4 {
+      --cards-columns: repeat(4, minmax(0, 1fr)); }
+  
+    .cards-cols-5 {
+      --cards-columns: repeat(5, minmax(0, 1fr)); }
+  
+    .cards-cols-6 {
+      --cards-columns: repeat(6, minmax(0, 1fr)); }
+  
+    .cards-cols-7 {
+      --cards-columns: repeat(7, minmax(0, 1fr)); }
+  
+    .cards-cols-8 {
+      --cards-columns: repeat(8, minmax(0, 1fr)); } }

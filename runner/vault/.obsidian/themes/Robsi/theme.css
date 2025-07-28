@@ -1,0 +1,5894 @@
+/*
+Robsi Theme - A modern theme for Obsidian.
+By Riffaells - 2024
+Built: 2025-07-22T01:16:59.265858
+Files included: 24
+*/
+
+/* variables.css */
+/* ========================================================================== */
+/*                                VARIABLES                                   */
+/* ========================================================================== */
+
+/* Root fonts and basic variables */
+:root {
+    --font-family-theme: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family-monospace: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    --font-size-theme: 16px;
+    --line-height-theme: 1.6;
+}
+
+/* Common variables for both themes */
+.theme-dark,
+.theme-light {
+    /* ======================================================================== */
+    /*                               TYPOGRAPHY                                */
+    /* ======================================================================== */
+
+    --font-text-size: var(--font-size-theme);
+    --line-height-normal: var(--line-height-theme);
+
+    /* ======================================================================== */
+    /*                                BORDERS                                  */
+    /* ======================================================================== */
+
+    --border-width: 1px;
+    --border-radius: 8px;
+    --radius-s: 6px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+    --radius-xl: 16px;
+
+    /* ======================================================================== */
+    /*                                SPACING                                  */
+    /* ======================================================================== */
+
+    --size-2-1: 2px;
+    --size-2-2: 4px;
+    --size-2-3: 6px;
+    --size-4-1: 8px;
+    --size-4-2: 12px;
+    --size-4-3: 16px;
+    --size-4-4: 20px;
+    --size-4-5: 24px;
+    --size-4-6: 28px;
+
+    /* ======================================================================== */
+    /*                              TRANSITIONS                                */
+    /* ======================================================================== */
+
+    --motion-duration-fast: 0.15s;
+    --motion-duration-medium: 0.25s;
+    --motion-duration-slow: 0.35s;
+    --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --motion-easing-decelerate: cubic-bezier(0.0, 0, 0.2, 1);
+    --motion-easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+
+    /* ======================================================================== */
+    /*                               SHADOWS                                   */
+    /* ======================================================================== */
+
+    --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    --shadow-xl: 0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05);
+
+    /* ======================================================================== */
+    /*                               CALLOUTS                                  */
+    /* ======================================================================== */
+
+    --callout-radius: var(--radius-m);
+    --callout-padding: 8px;
+    --callout-title-padding: 0;
+    --callout-content-padding: 0;
+
+    /* ======================================================================== */
+    /*                                 LISTS                                   */
+    /* ======================================================================== */
+
+    --list-marker-color: var(--purple);
+    --list-marker-color-hover: var(--purple-light);
+    --list-marker-color-collapsed: var(--text-muted);
+    --list-number-color: var(--magenta);
+    --list-number-color-hover: var(--magenta-light);
+    --list-indent: 1.5em;
+    --list-spacing: 0;
+
+    /* ======================================================================== */
+    /*                              CHECKBOXES                                 */
+    /* ======================================================================== */
+
+    --checkbox-radius: var(--radius-s);
+    --checkbox-size: 16px;
+
+    /* ======================================================================== */
+    /*                               TABLES                                    */
+    /* ======================================================================== */
+
+    --table-border-width: 1px;
+    --table-border-color: var(--border-color);
+    --table-header-background: var(--background-secondary);
+    --table-header-background-hover: var(--background-secondary-alt);
+
+    /* ======================================================================== */
+    /*                              WORKSPACE                                  */
+    /* ======================================================================== */
+
+    --tab-radius: var(--radius-m);
+    --tab-outline-width: 2px;
+    --titlebar-height: 40px;
+    --tab-width: 120px;
+    --tab-min-width: 80px;
+    --tab-max-width: 200px;
+    --tab-text-color-focused-active: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+    --tab-text-color-focused-active-current: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
+    /* Tab background variables */
+    --tab-container-background-focused: var(--background-primary);
+    --tab-container-background: var(--background-primary);
+    --tab-background: var(--bg_dark2);
+    --tab-background-active: var(--bg_highlight_dark);
+    --tab-background-hover: var(--bg_highlight_dark);
+    --workspace-background-translucent: var(--background-primary);
+    --titlebar-background-focused: var(--background-primary);
+    --frame-right-space: 80px;
+    /* ======================================================================== */
+    /*                              FILE MARGINS                               */
+    /* ======================================================================== */
+
+    --file-margins: clamp(5px, 4vw, 20px);
+
+    /* ======================================================================== */
+    /*                              COLOR PALETTE                               */
+    /* ======================================================================== */
+
+    /* Standard Colors */
+    --color-red: var(--red);
+    --color-purple: var(--magenta);
+    --color-green: var(--green);
+    --color-cyan: var(--cyan);
+    --color-blue: var(--blue);
+    --color-yellow: var(--yellow);
+    --color-orange: var(--orange);
+    --color-pink: var(--magenta);
+
+    /* RGB Versions for rgba() */
+    --color-red-rgb: var(--red_x);
+    --color-purple-rgb: var(--magenta_x);
+    --color-green-rgb: var(--green_x);
+    --color-cyan-rgb: var(--cyan_x);
+    --color-blue-rgb: var(--blue_x);
+    --color-yellow-rgb: var(--yellow_x);
+    --color-orange-rgb: var(--orange_x);
+    --color-pink-rgb: var(--magenta_x);
+
+    /* ======================================================================== */
+    /*                           BACKGROUND & TEXT                            */
+    /* ======================================================================== */
+
+    --background-primary: var(--bg);
+    --background-primary-alt: var(--bg);
+    --background-secondary: var(--bg_dark);
+    --background-secondary-alt: var(--bg_dark);
+
+    --background-modifier-border: var(--bg_highlight);
+    --background-modifier-border-focus: var(--bg_highlight);
+    --background-modifier-border-hover: var(--bg_highlight);
+    --background-modifier-form-field: var(--bg_dark);
+    --background-modifier-form-field-highlighted: var(--bg_dark);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: var(--green);
+    --background-modifier-error: var(--red1);
+    --background-modifier-error-hover: var(--red);
+    --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
+    --background-modifier-hover: var(--bg_highlight);
+    --background-modifier-message: rgba(var(--bg_highlight_x), 0.9);
+    --background-modifier-active-hover: var(--bg_highlight);
+
+    --text-normal: var(--fg);
+    --text-faint: var(--fg_dark);
+    --text-muted: var(--fg_dark);
+    --text-muted-rgb: var(--fg_dark_x);
+    --text-error: var(--red);
+    --text-accent: var(--magenta);
+    --text-accent-hover: var(--cyan);
+    --text-error: var(--red1);
+    --text-error-hover: var(--red);
+    --text-on-accent: var(--bg);
+    --text-highlight-bg: rgba(var(--orange_x), 0.25);
+    --bold-color: var(--cyan);
+    --italic-color: var(--blue);
+
+    /* RGB versions for rgba() usage */
+    --magenta-rgb: var(--magenta_x);
+    --magenta-light-rgb: var(--magenta-light_x);
+
+    /* Background RGB variables for blur effects */
+    --background-primary-rgb: var(--bg_x);
+    --background-secondary-rgb: var(--bg_dark_x);
+    --background-modifier-hover-rgb: var(--bg_highlight_x);
+    --menu-background-rgb: var(--bg_dark_x);
+
+    --interactive-normal: var(--bg_dark);
+    --interactive-hover: var(--bg);
+    --interactive-success: var(--green);
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: var(--blue);
+    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
+    --scrollbar-bg: var(--bg_dark2);
+    --scrollbar-thumb-bg: var(--comment);
+    --scrollbar-active-thumb-bg: var(--bg_dark);
+    --scrollbar-width: 0px;
+
+    --h1-color: var(--red);
+    --h2-color: var(--purple);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--yellow);
+
+    --tag-color: var(--magenta);
+    --tag-background: rgba(var(--magenta_x), 0.15);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.15);
+
+    --link-color: var(--purple);
+    --link-color-hover: var(--cyan);
+    --internal-link-color: var(--green);
+    --internal-link-color-hover: var(--blue);
+    --link-external-color: var(--purple);
+    --link-external-color-hover: var(--cyan);
+    --link-external-color-rgb: var(--purple_x);
+    --link-external-color-hover-rgb: var(--cyan_x);
+
+    --checkbox-border-color: var(--comment);
+    --checkbox-border-color-hover: var(--comment);
+
+    --table-header-background: var(--bg_dark2);
+    --table-header-background-hover: var(--bg_dark2);
+
+    --flashing-background: rgba(var(--blue0_x), 0.3);
+
+
+    --mermaid-note: var(--blue0);
+    --mermaid-actor: var(--fg_dark);
+    --mermaid-loopline: var(--blue);
+
+    --blockquote-background-color: var(--bg_dark);
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    --icon-color-hover: var(--blue);
+    --icon-color-focused: var(--purple);
+    --icon-color-active: var(--purple);
+
+
+    --nav-item-parent-padding: 4px 16px 4px 8px;
+    --nav-item-color: rgba(255, 255, 255, 0.9);
+    --nav-item-color-hover: var(--fg);
+    --nav-item-background-hover: var(--bg_highlight);
+    --nav-item-color-active: var(--red);
+    --nav-item-background-active: var(--bg_highlight);
+    --nav-file-tag: rgba(var(--yellow_x), 0.9);
+    --nav-indentation-guide-color: var(--bg_highlight);
+
+
+    --indentation-guide-color: var(--comment);
+    --indentation-guide-color-active: var(--comment);
+
+    --graph-line: var(--comment);
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+
+    --modal-border-color: var(--bg_highlight);
+    --prompt-border-color: var(--bg_highlight);
+    --slider-track-background: var(--bg_highlight);
+
+    --embed-background: var(--bg_dark);
+    --embed-padding: 1.5rem 1.5rem 0.5rem;
+
+    --canvas-color: var(--bg_highlight_x);
+
+    --toggle-thumb-color: var(--bg);
+
+    --image-radius: 0px;
+
+    --date-color: var(--blue);
+    --date-background-color: var(--bg_highlight);
+
+    /* Blockquote colors */
+    --blockquote-color: var(--fg_dark);
+    --blockquote-bg: rgba(var(--cyan_x), 0.08);
+    --blockquote-border: var(--cyan);
+}
+
+
+/* ================================================= */
+
+/* base.css */
+body {
+    /* Typography */
+    --line-height-normal: 1.6;
+    --line-height-theme: 1.6;
+
+    /* Links */
+    --link-decoration: underline;
+    --link-unresolved-decoration-style: dotted;
+    --link-unresolved-decoration-color: var(----link-unresolved-color);
+
+
+    /* Blockquotes */
+    --blockquote-border-color: var(--purple);
+    --blockquote-color: var(--purple);
+
+
+    /* Workspace & Modal Backgrounds */
+
+    --modal-background: var(--background-primary);
+
+    /* Dividers */
+    --divider-color: transparent !important;
+}
+
+
+/* ================================================= */
+
+/* components\animation-overrides.css */
+/* Remove hover transforms from interactive elements */
+.mod-cta:hover,
+button:hover,
+.clickable-icon:hover,
+.nav-action-button:hover,
+.tree-item-self:hover,
+.workspace-tab-header:hover,
+.suggestion-item:hover,
+.menu-item:hover {
+    transform: none;
+}
+
+/* Enhanced button hover effects */
+.mod-cta:hover {
+    box-shadow: 0 4px 16px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+}
+
+.mod-cta:active {
+    transform: none;
+    box-shadow: 0 2px 8px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+}
+
+/* Mobile performance overrides */
+@media (max-width: 768px) {
+
+    .mod-cta::before,
+    button::before {
+        display: none;
+    }
+
+    .mod-cta:hover,
+    .workspace-leaf:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-item:hover,
+    .suggestion-item:hover,
+    .clickable-icon:hover {
+        transition: none;
+    }
+}
+
+
+/* ================================================= */
+
+/* components\checkboxes-toggles.css */
+/* ===== CHECKBOXES & TOGGLES - SIMPLIFIED ===== */
+
+/* Setting items with toggle functionality */
+.setting-item.mod-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Setting item info section */
+.setting-item-info {
+    padding-right: 12px;
+    min-width: 0;
+}
+
+.setting-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-normal);
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.setting-item-description {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+.setting-item-description > div {
+    margin-bottom: 1px;
+}
+
+.setting-item-description > div:last-child {
+    margin-bottom: 0;
+}
+
+/* Setting item control section */
+.setting-item-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+/* Extra setting buttons */
+.extra-setting-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: none;
+}
+
+.extra-setting-button:hover {
+    opacity: 1;
+}
+
+.extra-setting-button .svg-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Checkbox container - simplified */
+.checkbox-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* Checkbox input styling - simplified */
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 44px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--background-modifier-border);
+    cursor: pointer;
+    transition: none;
+    position: relative;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
+}
+
+/* Checkbox slider - simplified */
+.checkbox-container input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--background-primary);
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Enabled state - simplified */
+.checkbox-container.is-enabled input[type="checkbox"],
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: var(--interactive-accent);
+}
+
+.checkbox-container.is-enabled input[type="checkbox"]::before,
+.checkbox-container input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+    background-color: var(--text-on-accent);
+}
+
+/* Disabled state */
+.checkbox-container input[type="checkbox"]:disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+}
+
+.checkbox-container input[type="checkbox"]:disabled::before {
+    cursor: not-allowed;
+}
+
+/* Installed plugins */
+.installed-plugins-container .setting-item.mod-toggle {
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 4px;
+}
+
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY IMPROVEMENTS                        */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .checkbox-container input[type="checkbox"] {
+        border: 2px solid var(--text-muted);
+    }
+
+    .checkbox-container input[type="checkbox"]:checked {
+        border: 2px solid var(--interactive-accent);
+    }
+
+    .checkbox-container input[type="checkbox"]::before {
+        border: 1px solid var(--text-muted);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .checkbox-container input[type="checkbox"],
+    .checkbox-container input[type="checkbox"]::before,
+    .setting-item.mod-toggle,
+    .extra-setting-button {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ========================================================================== */
+/*                        PERFORMANCE OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+    .checkbox-container input[type="checkbox"],
+    .checkbox-container input[type="checkbox"]::before {
+        transition-duration: 0s;
+    }
+
+    .setting-item.mod-toggle::before,
+    .extra-setting-button::before {
+        transition-duration: 0s;
+    }
+}
+
+/* Remove complex animations on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+    .setting-item.mod-toggle::before,
+    .extra-setting-button::before {
+        display: none;
+    }
+
+    .checkbox-container input[type="checkbox"],
+    .checkbox-container input[type="checkbox"]::before {
+        transition: none;
+    }
+}
+
+/* ========================================================================== */
+/*                           LEGACY SIZE CLASSES                             */
+/* ========================================================================== */
+
+/* Small size toggles */
+.checkbox-container.size-small {
+    min-width: 40px;
+    height: 20px;
+}
+
+.checkbox-container.size-small input[type="checkbox"] {
+    width: 36px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.checkbox-container.size-small input[type="checkbox"]::before {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+}
+
+.checkbox-container.size-small input[type="checkbox"]:checked::before {
+    transform: translateX(16px);
+}
+
+/* Medium size (default) */
+.checkbox-container.size-medium {
+    min-width: 48px;
+    height: 24px;
+}
+
+.checkbox-container.size-medium input[type="checkbox"] {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.checkbox-container.size-medium input[type="checkbox"]::before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+}
+
+.checkbox-container.size-medium input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+/* Large size toggles */
+.checkbox-container.size-large {
+    min-width: 54px;
+    height: 28px;
+}
+
+.checkbox-container.size-large input[type="checkbox"] {
+    width: 50px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.checkbox-container.size-large input[type="checkbox"]::before {
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    left: 2px;
+}
+
+.checkbox-container.size-large input[type="checkbox"]:checked::before {
+    transform: translateX(22px);
+}
+
+/* ========================================================================== */
+/*                           ENHANCED TYPOGRAPHY                             */
+/* ========================================================================== */
+
+/* Material Design 3 typography improvements */
+.setting-item-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    font-weight: 500;
+}
+
+.setting-item-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    font-weight: 400;
+}
+
+
+/* ================================================= */
+
+/* components\editor.css */
+body:not(.heading-indicator-off) .markdown-rendered>:is(h1, h2, h3, h4, h5, h6),
+body:not(.heading-indicator-off) .markdown-preview-sizer>div>:is(h1, h2, h3, h4, h5, h6) {
+    position: relative;
+}
+
+body.h1-divider-on :is(.markdown-preview-sizer>div>h1, .markdown-rendered>h1, .HyperMD-header-1)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h1-color) 30%, transparent 70%);
+}
+
+body.h2-divider-on :is(.markdown-preview-sizer>div>h2, .markdown-rendered>h2, .HyperMD-header-2)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h2-color) 30%, transparent 70%);
+}
+
+body.h3-divider-on :is(.markdown-preview-sizer>div>h3, .markdown-rendered>h3, .HyperMD-header-3)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h3-color) 30%, transparent 70%);
+}
+
+body.h4-divider-on :is(.markdown-preview-sizer>div>h4, .markdown-rendered>h4, .HyperMD-header-4)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h4-color) 30%, transparent 70%);
+}
+
+body.h5-divider-on :is(.markdown-preview-sizer>div>h5, .markdown-rendered>h5, .HyperMD-header-5)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h5-color) 30%, transparent 70%);
+}
+
+body.h6-divider-on :is(.markdown-preview-sizer>div>h6, .markdown-rendered>h6, .HyperMD-header-6)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h6-color) 30%, transparent 70%);
+}
+
+/* links */
+
+/* External link styles moved to tooltips-links.css to avoid duplication */
+
+/* Images  */
+
+.image-embed {
+    border-radius: var(--image-radius);
+}
+
+body {
+    --table-width: 88cqw;
+}
+
+.theme-dark,
+.theme-light .markdown-rendered thead tr {
+    background: var(--table-header-background);
+}
+
+body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+    width: 100% !important;
+}
+
+.table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
+.table-width-customized .markdown-rendered table {
+    overflow: auto;
+    width: var(--table-width) !important;
+    margin-left: calc((var(--table-width) - 100%) / -2) !important;
+}
+
+/* callouts */
+.callout[data-callout="quote"] {
+    background-color: var(--blockquote-bg);
+}
+
+.callout[data-callout="cite"] {
+    --callout-color: var(--pink_x);
+    background-color: rgba(var(--pink_x), 0.1);
+}
+
+.callout-style-1.theme-light {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.5;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-m);
+    --callout-title-color: inherit;
+    --callout-title-padding: 12px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px 12px;
+    --callout-content-background: rgba(255, 255, 255, 0.7);
+    --callout-content-radius: 0px;
+}
+
+.callout-style-1.theme-dark {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.025;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 0px;
+}
+
+.callout-style-2.theme-light {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.5;
+    --callout-padding: 0 8px 8px;
+    --callout-radius: var(--radius-m);
+    --callout-title-color: inherit;
+    --callout-title-padding: 12px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: rgba(255, 255, 255, 0.7);
+    --callout-content-radius: var(--radius-s);
+}
+
+.callout-style-2.theme-dark {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: 0 6px 6px;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 4px;
+}
+
+.callout-style-3:is(.theme-light, .theme-dark) {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+    --callout-radius: var(--radius-m);
+    --callout-title-color: inherit;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --callout-content-background: transparent;
+    --callout-content-radius: 0px;
+}
+
+.callout-style-4.theme-light {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-m);
+    --callout-title-color: inherit;
+    --callout-title-padding: 12px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px 12px;
+    --callout-content-background: rgba(255, 255, 255, 0.7);
+    --callout-content-radius: 0px;
+}
+
+.callout-style-4.theme-dark {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 0px;
+}
+
+.ͼ2 .cm-panels-bottom {
+    border-top: var(--border-width) solid var(--bg_highlight);
+}
+
+.cm-vim-message {
+    color: var(--red);
+}
+
+mjx-math {
+    font-size: 110% !important;
+}
+
+.cm-atom {
+    color: var(--blue);
+}
+
+span.cm-hmd-frontmatter.cm-meta {
+    color: rgba(var(--blue0_x), 0.9);
+}
+
+.cm-hmd-frontmatter {
+    font-size: var(--font-smaller);
+    color: var(--text-faint);
+}
+
+
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Header Spacing Between Header and Paragraph       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+/* Согласование отступов заголовков между режимом редактирования и просмотра */
+.HyperMD-header-1,
+.HyperMD-header-2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.125em;
+}
+
+.HyperMD-header-3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.HyperMD-header-4,
+.HyperMD-header-5,
+.HyperMD-header-6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.075em;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Show Header Hashtags                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* ───────────────────────────────────────────────
+   Minimal Image Captions
+─────────────────────────────────────────────── */
+.minimal-image-captions .image-captions-figure {
+    background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+    background-color: transparent !important;
+    text-align: left !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │    Show Header Levels Instead of Collapse Indicators    │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.show-header-levels-always .HyperMD-header .cm-fold-indicator .collapse-indicator {
+    opacity: 1 !important;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator svg {
+    display: none;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator::before {
+    font-size: calc(var(--font-text-size) * 0.75);
+    font-weight: 600 !important;
+    color: var(--text-faint);
+    width: max-content;
+}
+
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    padding: 16px;
+}
+
+/* Mobile: fixed padding to prevent layout shifts that cause auto-scroll */
+@media (max-width: 768px) {
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 12px 16px !important;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   Tags styling (multi-select-pill)
+─────────────────────────────────────────────── */
+.multi-select-pill {
+    line-height: normal;
+}
+
+/* ========================================================================== */
+/*                           CODE BLOCK STYLING                              */
+/* ========================================================================== */
+
+/* Syntax highlighting for code blocks */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: var(--code-comment);
+}
+
+.token.punctuation {
+    color: var(--text-muted);
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: var(--code-property);
+}
+
+.token.boolean,
+.token.number {
+    color: var(--code-number);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: var(--code-string);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: var(--code-operator);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+    color: var(--code-function);
+}
+
+.token.keyword {
+    color: var(--code-keyword);
+}
+
+.token.regex,
+.token.important {
+    color: var(--code-number);
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+/* Mobile optimizations for code blocks */
+@media (max-width: 768px) {
+    .cm-line {
+        padding: 0 2px;
+    }
+
+
+    .cm-inline-code {
+        font-size: 0.85em;
+    }
+}
+
+
+/* ================================================= */
+
+/* components\form-elements.css */
+/* ========================================================================== */
+/*                              FORM ELEMENTS                                */
+/* ========================================================================== */
+
+/* Material Design 3 Buttons */
+.mod-cta {
+  border-radius: 16px;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  transition: none;
+}
+
+.mod-cta:hover {
+  box-shadow: 0 4px 16px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+}
+
+.mod-cta:active {
+  box-shadow: 0 2px 8px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+}
+
+/* Enhanced Input Fields */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border-radius: 12px;
+  border: 2px solid rgba(var(--text-muted-rgb), 0.2);
+  transition: none;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  background: var(--background-secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
+/* Enhanced Dropdowns */
+.dropdown {
+  border-radius: 8px;
+  border: 1px solid rgba(var(--text-muted-rgb), 0.3);
+  padding: 8px 12px;
+  transition: none;
+  min-height: 36px;
+  font-size: 14px;
+  color: var(--text-normal);
+}
+
+.dropdown:focus {
+  border-color: var(--accent-color);
+  background: var(--background-secondary);
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.dropdown:hover {
+  border-color: rgba(var(--text-muted-rgb), 0.5);
+}
+
+/* ========================================================================== */
+/*                          MOBILE OPTIMIZATIONS                             */
+/* ========================================================================== */
+
+/* Mobile form elements - touch-friendly */
+@media (max-width: 768px) {
+  .mod-cta {
+    min-height: 44px;
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .dropdown {
+    min-height: 44px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  /* Remove expensive effects on mobile */
+  .mod-cta:hover {
+    box-shadow: none;
+  }
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY IMPROVEMENTS                        */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .mod-cta {
+    border: 2px solid var(--text-normal);
+    background: var(--background-primary);
+    color: var(--text-normal);
+  }
+
+  .mod-cta:hover,
+  .mod-cta:focus {
+    background: var(--accent-color);
+    color: var(--text-on-accent);
+    border-color: var(--accent-color);
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  .dropdown {
+    border: 1px solid var(--text-muted);
+    background: var(--background-primary);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mod-cta,
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  .dropdown {
+    transition: none !important;
+  }
+}
+
+/* ========================================================================== */
+/*                           FORM VALIDATION                                 */
+/* ========================================================================== */
+
+/* Error states */
+input[type="text"].error,
+input[type="search"].error,
+input[type="email"].error,
+input[type="password"].error,
+textarea.error,
+.dropdown.error {
+  border-color: var(--text-error);
+  background: rgba(var(--text-error-rgb), 0.05);
+}
+
+input[type="text"].error:focus,
+input[type="search"].error:focus,
+input[type="email"].error:focus,
+input[type="password"].error:focus,
+textarea.error:focus,
+.dropdown.error:focus {
+  box-shadow: 0 0 0 3px rgba(var(--text-error-rgb), 0.2);
+}
+
+/* Success states */
+input[type="text"].success,
+input[type="search"].success,
+input[type="email"].success,
+input[type="password"].success,
+textarea.success,
+.dropdown.success {
+  border-color: var(--text-success);
+  background: rgba(var(--text-success-rgb), 0.05);
+}
+
+/* ========================================================================== */
+/*                            FORM LAYOUT                                    */
+/* ========================================================================== */
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--text-normal);
+  font-size: 14px;
+}
+
+/* Form buttons */
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-buttons .mod-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* ================================================= */
+
+/* components\headers.css */
+/* ========================================================================== */
+/*                               HEADERS                                     */
+/* ========================================================================== */
+
+/* Header Indicators - optimized with shared styles */
+
+/* Base indicator style */
+.markdown-preview-view h1::before,
+.markdown-preview-view h2::before,
+.markdown-preview-view h3::before,
+.markdown-preview-view h4::before,
+.markdown-preview-view h5::before,
+.markdown-preview-view h6::before,
+.HyperMD-header::before {
+    content: "▍";
+    opacity: 0.8;
+}
+
+.HyperMD-header {
+    font-weight: normal;
+}
+
+/* Individual header colors */
+.markdown-preview-view h1::before,
+.cm-formatting-header.cm-header-1::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-1:not(.cm-active)::before {
+    color: var(--h1-color);
+}
+
+.markdown-preview-view h2::before,
+.cm-formatting-header.cm-header-2::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-2:not(.cm-active)::before {
+    color: var(--h2-color);
+}
+
+.markdown-preview-view h3::before,
+.cm-formatting-header.cm-header-3::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-3:not(.cm-active)::before {
+    color: var(--h3-color);
+}
+
+.markdown-preview-view h4::before,
+.cm-formatting-header.cm-header-4::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-4:not(.cm-active)::before {
+    color: var(--h4-color);
+}
+
+.markdown-preview-view h5::before,
+.cm-formatting-header.cm-header-5::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-5:not(.cm-active)::before {
+    color: var(--h5-color);
+}
+
+.markdown-preview-view h6::before,
+.cm-formatting-header.cm-header-6::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-6:not(.cm-active)::before {
+    color: var(--h6-color);
+}
+
+/* Remove indicators from bold/italic formatting inside headers */
+.cm-formatting-strong.cm-header::before,
+.cm-formatting-em.cm-header::before,
+.HyperMD-header-1 .cm-formatting-strong::before,
+.HyperMD-header-2 .cm-formatting-strong::before,
+.HyperMD-header-3 .cm-formatting-strong::before,
+.HyperMD-header-4 .cm-formatting-strong::before,
+.HyperMD-header-5 .cm-formatting-strong::before,
+.HyperMD-header-6 .cm-formatting-strong::before,
+.HyperMD-header-1 .cm-formatting-em::before,
+.HyperMD-header-2 .cm-formatting-em::before,
+.HyperMD-header-3 .cm-formatting-em::before,
+.HyperMD-header-4 .cm-formatting-em::before,
+.HyperMD-header-5 .cm-formatting-em::before,
+.HyperMD-header-6 .cm-formatting-em::before {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* Enhanced Header Styling with left margins */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    position: relative;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 8px;
+    /* Small left margin for beauty */
+    line-height: 1.3;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+}
+
+/* underlines for headers */
+.markdown-preview-view h1::after,
+.HyperMD-header-1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--h1-color), transparent);
+    margin-top: 8px;
+}
+
+.markdown-preview-view h2::after,
+.HyperMD-header-2::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, var(--h2-color), transparent);
+    margin-top: 6px;
+    opacity: 0.8;
+}
+
+.markdown-preview-view h3::after,
+.HyperMD-header-3::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background: linear-gradient(to right, var(--h3-color), transparent);
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+/* Outline Enhancement */
+.outline .tree-item-self {
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.outline .tree-item-self::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 60%;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.outline .tree-item-self:hover::before {
+    opacity: 1;
+    width: 4px;
+}
+
+.outline .tree-item-self.is-active::before {
+    opacity: 1;
+    width: 4px;
+}
+
+/* Navigation Breadcrumbs */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: "▶";
+    margin: 0 8px;
+    color: var(--text-faint);
+    font-size: 0.7em;
+}
+
+
+.markdown-preview-view .toc li::before {
+    content: "→";
+    color: var(--accent-color);
+    margin-right: 8px;
+}
+
+/* Header Folding Indicators */
+.cm-fold-indicator .collapse-indicator {
+    color: var(--text-muted) !important;
+    transition: none;
+}
+
+.cm-fold-indicator:hover .collapse-indicator {
+    color: var(--accent-color) !important;
+}
+
+/* ========================================================================== */
+/*                            TEXT FORMATTING                                */
+/* ========================================================================== */
+
+/* Bold text (strong) */
+.cm-strong,
+strong,
+b {
+    color: var(--cyan) !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 1px rgba(var(--cyan_x), 0.3);
+}
+
+/* Italic text (emphasis) */
+.cm-em,
+em,
+i {
+    color: var(--blue) !important;
+    font-style: italic;
+    text-shadow: 0 0 1px rgba(var(--blue_x), 0.2);
+}
+
+/* Combined bold and italic */
+.cm-strong.cm-em,
+strong em,
+em strong,
+b i,
+i b {
+    color: var(--orange) !important;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 0 0 2px rgba(var(--orange_x), 0.4);
+}
+
+/* Header colors - optimized */
+.markdown-preview-view h1,
+.markdown-preview-view h1 *,
+.HyperMD-header-1,
+.HyperMD-header-1 *,
+.cm-header-1,
+.cm-header-1 * {
+    color: var(--h1-color) !important;
+}
+
+.markdown-preview-view h2,
+.markdown-preview-view h2 *,
+.HyperMD-header-2,
+.HyperMD-header-2 *,
+.cm-header-2,
+.cm-header-2 * {
+    color: var(--h2-color) !important;
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h3 *,
+.HyperMD-header-3,
+.HyperMD-header-3 *,
+.cm-header-3,
+.cm-header-3 * {
+    color: var(--h3-color) !important;
+}
+
+.markdown-preview-view h4,
+.markdown-preview-view h4 *,
+.HyperMD-header-4,
+.HyperMD-header-4 *,
+.cm-header-4,
+.cm-header-4 * {
+    color: var(--h4-color) !important;
+}
+
+.markdown-preview-view h5,
+.markdown-preview-view h5 *,
+.HyperMD-header-5,
+.HyperMD-header-5 *,
+.cm-header-5,
+.cm-header-5 * {
+    color: var(--h5-color) !important;
+}
+
+.markdown-preview-view h6,
+.markdown-preview-view h6 *,
+.HyperMD-header-6,
+.HyperMD-header-6 *,
+.cm-header-6,
+.cm-header-6 * {
+    color: var(--h6-color) !important;
+}
+
+/* Strikethrough text */
+.cm-strikethrough,
+s,
+del {
+    color: var(--red) !important;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+/* Highlighted text (mark) - Simple and clean */
+mark,
+.cm-highlight {
+    background: var(--text-highlight-bg);
+    color: var(--text-normal) !important;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+    transition: none;
+}
+
+mark:hover,
+.cm-highlight:hover {
+    background: rgba(var(--orange_x), 0.35);
+}
+
+/* Highlighted text inside callouts - adapt to callout color */
+.callout mark,
+.callout .cm-highlight {
+    background: rgba(var(--text-normal-rgb), 0.15);
+    border-radius: 3px;
+}
+
+.callout mark:hover,
+.callout .cm-highlight:hover {
+    background: rgba(var(--text-normal-rgb), 0.25);
+}
+
+/* ======================================================================== */
+/*                        LIGHT THEME ADJUSTMENTS                          */
+/* ======================================================================== */
+
+/* Light theme specific text formatting adjustments */
+.theme-light .cm-strong,
+.theme-light strong,
+.theme-light b {
+    text-shadow: none;
+}
+
+.theme-light .cm-em,
+.theme-light em,
+.theme-light i {
+    text-shadow: none;
+}
+
+.theme-light .cm-strong.cm-em,
+.theme-light strong em,
+.theme-light em strong,
+.theme-light b i,
+.theme-light i b {
+    text-shadow: none;
+}
+
+/* Light theme highlighted text */
+.theme-light mark,
+.theme-light .cm-highlight {
+    background: var(--text-highlight-bg);
+}
+
+.theme-light mark:hover,
+.theme-light .cm-highlight:hover {
+    background: rgba(var(--orange_x), 0.25);
+}
+
+/* Light theme callout highlights */
+.theme-light .callout mark,
+.theme-light .callout .cm-highlight {
+    background: rgba(var(--fg_x), 0.1);
+    color: var(--text-normal) !important;
+}
+
+.theme-light .callout mark:hover,
+.theme-light .callout .cm-highlight:hover {
+    background: rgba(var(--fg_x), 0.15);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+
+    mark,
+    .cm-highlight {
+        padding: 1px 3px;
+        border-radius: 2px;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    mark,
+    .cm-highlight {
+        background: rgba(var(--orange_x), 0.4) !important;
+        color: #1e252e !important;
+        font-weight: 600;
+    }
+
+    .callout mark,
+    .callout .cm-highlight {
+        background: rgba(var(--text-normal-rgb), 0.3) !important;
+    }
+
+    .theme-light mark,
+    .theme-light .cm-highlight {
+        background: rgba(var(--orange_x), 0.4) !important;
+        color: var(--text-normal) !important;
+        font-weight: 600;
+    }
+}
+
+/* ========================================================================== */
+/*                               BLOCKQUOTES                                 */
+/* ========================================================================== */
+
+/* Style formatting elements in live preview */
+.cm-formatting.cm-formatting-quote,
+.cm-formatting.cm-formatting-quote-1 {
+    color: var(--blockquote-accent) !important;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/* Beautiful blockquote styling for both reading and live preview */
+blockquote {
+    border: none;
+    border-left: 2px solid var(--blockquote-border);
+    background: var(--blockquote-bg);
+    padding: 200px 204px;
+    margin: 20px 0;
+    border-radius: 6px;
+    color: var(--blockquote-color);
+    font-style: normal;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(var(--cyan_x), 0.1);
+    overflow: none;
+    width: auto;
+    max-width: none;
+}
+
+/* Beautiful quote mark */
+blockquote::before {
+    content: "𒀭";
+    color: var(--blockquote-quote-mark);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    line-height: 1;
+    font-family: 'Georgia', serif;
+    z-index: 1;
+}
+
+/* Content styling */
+blockquote p {
+    padding-left: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ================================================= */
+
+/* components\interface-fixes.css */
+/* ========================================================================== */
+/*                             INTERFACE FIXES                               */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/*                           NAVIGATION ARROWS                               */
+/* ========================================================================== */
+
+/* Navigation buttons container */
+.view-header-nav-buttons {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+
+
+.view-action:hover {
+    background: var(--background-modifier-hover);
+}
+
+/* Hide only when disabled/unavailable */
+.view-header-nav-buttons .clickable-icon[aria-disabled="true"] {
+    display: none;
+}
+/* ========================================================================== */
+/*                             OVERFLOW FIXES                                */
+/* ========================================================================== */
+
+/* Clean overflow fixes - only where actually needed */
+.nav-files-container {
+    overflow: auto;
+}
+
+/* Essential overflow settings for content areas */
+.workspace-leaf-content .view-content,
+.nav-files-container {
+    overflow: auto;
+}
+
+.markdown-rendered p {
+    margin-block-end: 0;
+}
+
+
+/* ================================================= */
+
+/* components\menus-navigation.css */
+/* ========================================================================== */
+/*                           MENUS & NAVIGATION                              */
+/* ========================================================================== */
+
+/* Menu styling - optimized for performance */
+.suggestion-container,
+.menu {
+    background: var(--background-secondary);
+    border-radius: 8px;
+}
+
+
+
+.menu-item {
+    border-radius: 6px;
+    color: var(--text-normal);
+    padding: 2px 8px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    transition: none;
+}
+
+.menu-item:hover {
+    transform: none !important;
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+}
+
+.menu-item.is-selected,
+.menu-item.is-focused {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Callout Styling */
+.callout {
+    --callout-padding: 16px;
+    padding: var(--callout-padding);
+    border-radius: 12px;
+    border-width: 1px;
+}
+
+
+
+
+.workspace-tab-header:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.workspace-tab-header.is-active {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+    box-shadow: none;
+}
+
+/* Enhanced Card Design */
+.workspace-leaf-content,
+.markdown-preview-view,
+.markdown-source-view {
+    border-radius: 12px;
+}
+
+/* ========================================================================== */
+/*                         TOUCH-FRIENDLY IMPROVEMENTS                       */
+/* ========================================================================== */
+
+/* Ensure minimum touch target size */
+@media (max-width: 768px) {
+
+
+    /* Touch-friendly suggestion items */
+    .suggestion-item {
+        min-height: 12px;
+        padding: 8px 8px;
+        margin: 4px 0;
+    }
+
+    .suggestion-item:first-child {
+        margin-top: 0;
+    }
+
+    .suggestion-item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Touch-friendly menu separators */
+    .menu-separator {
+        height: 1px;
+        margin: 8px 0;
+        background: rgba(var(--text-muted-rgb), 0.2);
+    }
+
+
+
+    /* Touch-friendly toggle buttons */
+    .setting-item.mod-toggle {
+        min-height: 60px;
+        padding: 12px 16px;
+    }
+
+    .setting-item-control {
+        min-height: 44px;
+    }
+
+    /* Touch-friendly status bar */
+    .status-bar-item {
+        min-height: 32px;
+        padding: 8px 12px;
+        margin: 2px;
+        border-radius: 8px;
+    }
+
+    /* Touch-friendly breadcrumbs */
+    .breadcrumb-item {
+        min-height: 32px;
+        padding: 6px 8px;
+    }
+}
+
+/* ========================================================================== */
+/*                          ACCESSIBILITY IMPROVEMENTS                       */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title {
+        border: 1px solid var(--text-muted);
+    }
+
+    .menu-item:hover,
+    .suggestion-item:hover,
+    .workspace-tab-header:hover,
+    .nav-file-title:hover,
+    .nav-folder-title:hover {
+        border-color: var(--accent-color);
+    }
+
+    .menu-item.is-selected,
+    .suggestion-item.is-selected,
+    .workspace-tab-header.is-active {
+        border-color: var(--accent-color);
+        border-width: 1px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title,
+    .callout {
+        transition: none !important;
+    }
+}
+
+/* Focus indicators */
+.menu-item:focus,
+.suggestion-item:focus,
+.workspace-tab-header:focus,
+.nav-file-title:focus,
+.nav-folder-title:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* ========================================================================== */
+/*                        PERFORMANCE OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title {
+        transition-duration: 0s;
+    }
+
+    /* Disable complex effects on all mobile devices for better performance */
+    .suggestion-container,
+    .menu,
+    .workspace-leaf-content,
+    .markdown-preview-view,
+    .markdown-source-view {
+        backdrop-filter: none;
+    }
+}
+
+/* Optimize for touch scrolling - DISABLED smooth scroll to prevent auto-scroll */
+@media (max-width: 768px) {
+
+    .suggestion-container,
+    .menu,
+    .workspace-tabs {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========================================================================== */
+/*                           LANDSCAPE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Landscape mobile adjustments */
+@media (max-width: 1024px) and (orientation: landscape) {
+
+
+    .menu-item {
+        padding: 6px 12px;
+        min-height: 32px;
+    }
+
+    .nav-file-title,
+    .nav-folder-title {
+        min-height: 32px;
+    }
+
+    /* Compact modals in landscape */
+    .modal {
+        max-height: 70vh;
+        margin: 16px;
+    }
+
+    /* Compact callouts in landscape */
+    .callout {
+        --callout-padding: 12px;
+        margin: 6px 0;
+    }
+}
+
+/* ========================================================================== */
+/*                            FUTURE-PROOFING                               */
+/* ========================================================================== */
+
+/* Container query support */
+@supports (container-type: inline-size) {
+    .workspace-leaf {
+        container-type: inline-size;
+    }
+
+    @container (max-width: 400px) {
+        .workspace-tab-header {
+            height: 36px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+/* ================================================= */
+
+/* components\modals.css */
+/* Styles for modals and popovers */
+:not(.mod-windows) .prompt,
+:not(.mod-windows) .popover,
+:not(.mod-windows) .suggestion,
+:not(.mod-windows) .graph-controls,
+:not(.mod-windows) .lt-predictions-container,
+:not(.mod-windows) .vertical-tab-content {
+    background-color: var(--modal-background) !important;
+}
+
+/* Add blur to modals - disabled for mobile performance */
+.modal {
+    background-color: var(--modal-background);
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================================= */
+
+/* components\navigation.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Sidebars & Dock Areas                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher.has-active-menu {
+    opacity: 1;
+}
+
+/* Hide vault action buttons (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+    display: none !important;
+}
+
+/* Hide tag, backlinks, outgoing links, and outline headers unless hovered */
+.workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outline"] .nav-header {
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    transition: none;
+}
+
+.workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split:hover .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split:hover .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split:hover .workspace-leaf-content[data-type="outline"] .nav-header {
+    opacity: 1;
+    height: 1.75em;
+}
+
+
+
+/* Add softer blur to sidebars */
+.workspace-drawer.mod-left::before,
+.workspace-drawer.mod-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--bg_x), 0.9);
+    z-index: -1;
+}
+
+.workspace-drawer.mod-left,
+.workspace-drawer.mod-right {
+    background-color: transparent;
+    border: none;
+}
+
+/* Navigation Item Colors */
+.nav-file-title,
+.nav-folder-title {
+    color: var(--nav-item-color);
+}
+
+/* Remove default ellipsis from navigation titles */
+.nav-file-title-content:not([contenteditable="true"]),
+.nav-folder-title-content:not([contenteditable="true"]) {
+    text-overflow: unset !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    line-height: 1.3;
+}
+
+/* Ensure single line display without wrapping */
+.nav-file-title,
+.nav-folder-title {
+    white-space: nowrap;
+    overflow: visible;
+    min-height: auto;
+}
+
+/* ========================================================================== */
+/*                            NAVIGATION STRUCTURE                           */
+/* ========================================================================== */
+
+/* File explorer container */
+.nav-files-container {
+    padding: 2px 4px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Active file highlighting - minimal */
+.nav-file.is-active {
+    background-color: transparent;
+    color: var(--text-accent);
+}
+
+.nav-file.is-active .nav-file-title-content {
+    color: var(--text-accent);
+    font-weight: 500;
+}
+
+/* ========================================================================== */
+/*                             FOLDER STYLES                                 */
+/* ========================================================================== */
+
+/* Folder collapse/expand */
+.nav-folder.mod-root>.nav-folder-title {
+    font-weight: 600;
+    color: var(--text-normal);
+    font-size: 13px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+}
+
+.nav-folder-title {
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: none;
+}
+
+.nav-folder-title:hover {
+    background-color: transparent;
+}
+
+/* Folder icons */
+.nav-folder-collapse-indicator {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+}
+
+.nav-folder-collapse-indicator:hover {
+    opacity: 1;
+}
+
+
+/* Folder children */
+.nav-folder-children {
+    padding-left: 12px;
+    margin-left: 4px;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+/* ========================================================================== */
+/*                              FILE STYLES                                  */
+/* ========================================================================== */
+
+/* File items */
+.nav-file-title {
+    cursor: pointer;
+    padding: 2px 2px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: none;
+    min-height: 22px;
+}
+
+.nav-file-title:hover {
+    background-color: transparent;
+}
+
+/* File content */
+.nav-file-title-content {
+    flex: 1;
+    font-size: 13px;
+    color: var(--text-normal);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* File extensions */
+.nav-file-title-content::after {
+    content: "";
+    display: none;
+}
+
+/* Hide file extension by default */
+.nav-file-title-content[data-path$=".md"]::after {
+    display: none;
+}
+
+/* ========================================================================== */
+/*                           MOBILE OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+/* Mobile touch targets */
+@media (max-width: 768px) {
+
+    .nav-file-title,
+    .nav-folder-title {
+        font-size: 14px;
+    }
+
+    .nav-file-title-content,
+    .nav-folder-title-content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .nav-files-container {
+        padding: 4px 8px;
+    }
+
+    .nav-folder-children {
+        padding-left: 16px;
+        margin-left: 8px;
+    }
+
+    .nav-folder-collapse-indicator {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Larger touch targets for mobile */
+    .nav-file,
+    .nav-folder {
+        margin-bottom: 1px;
+        border-radius: 4px;
+    }
+
+    /* No background highlighting on mobile */
+    .nav-file:active,
+    .nav-folder:active {
+        background-color: transparent;
+        transition: none;
+    }
+
+
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .nav-files-container {
+        padding: 6px 10px;
+    }
+
+    .nav-folder-children {
+        padding-left: 18px;
+        margin-left: 10px;
+    }
+}
+
+/* ========================================================================== */
+/*                           DRAG AND DROP SUPPORT                           */
+/* ========================================================================== */
+
+/* Drag hover states - neutral styling */
+.nav-file.is-being-dragged,
+.nav-folder.is-being-dragged {
+    opacity: 0.5;
+}
+
+.nav-file.is-being-dragged-over,
+.nav-folder.is-being-dragged-over {
+    background: rgba(var(--text-muted-rgb), 0.15);
+    border: 2px dashed rgba(var(--text-muted-rgb), 0.4);
+    border-radius: 4px;
+}
+
+.nav-file.is-being-dragged-over .nav-file-title-content,
+.nav-folder.is-being-dragged-over .nav-folder-title-content {
+    font-weight: 500;
+}
+
+/* ========================================================================== */
+/*                            SEARCH HIGHLIGHTING                            */
+/* ========================================================================== */
+
+/* Search results in navigation */
+.nav-file-title-content mark,
+.nav-folder-title-content mark {
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+/* Search match highlighting */
+.nav-file.is-search-match,
+.nav-folder.is-search-match {
+    background-color: var(--background-modifier-success);
+    border-left: 3px solid var(--text-accent);
+}
+
+/* ========================================================================== */
+/*                           ACCESSIBILITY SUPPORT                           */
+/* ========================================================================== */
+
+/* Focus indicators */
+.nav-file-title:focus,
+.nav-folder-title:focus {
+    outline: 2px solid var(--interactive-accent);
+    outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .nav-file-title,
+    .nav-folder-title {
+        border: 1px solid var(--background-modifier-border);
+    }
+
+    .nav-file.is-active {
+        border: 2px solid var(--interactive-accent);
+    }
+
+    .nav-file-title-content,
+    .nav-folder-title-content {
+        color: var(--text-normal);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title,
+    .nav-folder-collapse-indicator {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ========================================================================== */
+/*                         PERFORMANCE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title {
+        transition-duration: 0s;
+    }
+
+    .nav-folder-collapse-indicator {
+        transition-duration: 0s;
+    }
+}
+
+/* Remove complex effects on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title,
+    .nav-folder-collapse-indicator {
+        transition: none;
+    }
+
+    .nav-file.is-being-dragged,
+    .nav-folder.is-being-dragged {
+        transform: none;
+    }
+}
+
+/* GPU acceleration for smooth scrolling */
+.nav-files-container {
+    transform: none;
+}
+
+/* ========================================================================== */
+/*                            CUSTOM ENHANCEMENTS                            */
+/* ========================================================================== */
+
+/* Recent files highlighting */
+.nav-file.is-recent {
+    position: relative;
+}
+
+.nav-file.is-recent::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: none;
+    width: 3px;
+    height: 12px;
+    background-color: var(--interactive-accent);
+    border-radius: 2px;
+}
+
+/* Pinned files */
+.nav-file.is-pinned .nav-file-title-content::before {
+    content: "📌";
+    margin-right: 6px;
+    font-size: 10px;
+}
+
+/* ========================================================================== */
+/*                           COMPACT MODE SUPPORT                            */
+/* ========================================================================== */
+
+/* Compact navigation mode */
+.nav-files-container.is-compact {
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+.nav-files-container.is-compact .nav-file-title,
+.nav-files-container.is-compact .nav-folder-title {
+    min-height: 20px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.nav-files-container.is-compact .nav-folder-children {
+    padding-left: 12px;
+    margin-left: 6px;
+}
+
+.nav-files-container.is-compact .nav-folder-collapse-indicator {
+    width: 12px;
+    height: 12px;
+}
+
+/* ========================================================================== */
+/*                           THEME INTEGRATION                               */
+/* ========================================================================== */
+
+
+.theme-light .nav-file.is-active {
+    background-color: var(--background-modifier-active-hover);
+}
+
+/* ========================================================================== */
+/*                           FOLDER NOTES STYLING                            */
+/* ========================================================================== */
+
+.folder-note-cursive .has-folder-note .nav-folder-title-content,
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb {
+    color: var(--folder-note-color);
+    font-style: italic;
+    font-weight: 450;
+}
+
+.folder-note-cursive .has-folder-note .nav-folder-title-content,
+.view-header .view-header-breadcrumb.has-folder-note {
+    border-bottom: 1px solid rgba(var(--folder-note-color_x), 0.3);
+}
+
+.view-header .view-header-breadcrumb.has-folder-note {
+    color: var(--folder-note-color);
+    font-style: italic;
+    font-weight: 450;
+    text-decoration: none;
+}
+
+.folder-note-cursive .has-folder-note .nav-folder-title:hover .nav-folder-title-content {
+    color: var(--magenta-light);
+    border-bottom-color: rgba(var(--folder-note-color_x), 0.8);
+}
+
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb {
+    background: rgba(var(--folder-note-color_x), 0.08);
+    border-bottom: 1px solid rgba(var(--folder-note-color_x), 0.2);
+}
+
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb:hover {
+    background: rgba(var(--folder-note-color_x), 0.15);
+    border-bottom-color: rgba(var(--folder-note-color_x), 0.5);
+}
+
+.tree-item-self.mod-collapsible {
+    padding: 2px 8px 2px 28px;
+}
+
+
+/* ================================================= */
+
+/* components\scrollbars.css */
+/* Hide all scrollbars by default */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+
+/* ========================================================================== */
+/*                           CONTENT AREAS ONLY                              */
+/* ========================================================================== */
+
+/* Show scrollbars only on main content areas */
+.workspace-leaf-content::-webkit-scrollbar,
+.markdown-source-view::-webkit-scrollbar,
+.markdown-preview-view::-webkit-scrollbar,
+.cm-scroller::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: block;
+}
+
+.workspace-leaf-content::-webkit-scrollbar-track,
+.markdown-source-view::-webkit-scrollbar-track,
+.markdown-preview-view::-webkit-scrollbar-track,
+.cm-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.workspace-leaf-content::-webkit-scrollbar-thumb,
+.markdown-source-view::-webkit-scrollbar-thumb,
+.markdown-preview-view::-webkit-scrollbar-thumb,
+.cm-scroller::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+  transition: none;
+}
+
+/* Show scrollbars only on hover */
+.workspace-leaf-content:hover::-webkit-scrollbar-thumb,
+.markdown-source-view:hover::-webkit-scrollbar-thumb,
+.markdown-preview-view:hover::-webkit-scrollbar-thumb,
+.cm-scroller:hover::-webkit-scrollbar-thumb {
+  background: rgba(var(--text-muted-rgb), 0.2);
+}
+
+.workspace-leaf-content:hover::-webkit-scrollbar-thumb:hover,
+.markdown-source-view:hover::-webkit-scrollbar-thumb:hover,
+.markdown-preview-view:hover::-webkit-scrollbar-thumb:hover,
+.cm-scroller:hover::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--text-muted-rgb), 0.4);
+}
+
+/* Show scrollbars when content is focused */
+.workspace-leaf-content:focus-within::-webkit-scrollbar-thumb,
+.markdown-source-view:focus-within::-webkit-scrollbar-thumb,
+.markdown-preview-view:focus-within::-webkit-scrollbar-thumb,
+.cm-scroller:focus-within::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+}
+
+/* ========================================================================== */
+/*                          MOBILE - COMPLETELY HIDDEN                       */
+/* ========================================================================== */
+
+/* Mobile - hide all scrollbars completely */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar,
+  .workspace-leaf-content::-webkit-scrollbar,
+  .markdown-source-view::-webkit-scrollbar,
+  .markdown-preview-view::-webkit-scrollbar,
+  .cm-scroller::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+  }
+
+  /* Ensure smooth scrolling on mobile - DISABLED to prevent auto-scroll */
+  .workspace-leaf-content,
+  .markdown-preview-view,
+  .markdown-source-view,
+  .cm-scroller {
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+
+  /* Hide all scrollbar elements */
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    display: none !important;
+  }
+}
+
+/* ========================================================================== */
+/*                          DESKTOP - HOVER ONLY                             */
+/* ========================================================================== */
+
+/* Desktop - subtle scrollbars on hover */
+@media (min-width: 769px) {
+  /* Main content scrollbars */
+.workspace-leaf-content::-webkit-scrollbar,
+.markdown-source-view::-webkit-scrollbar,
+  .markdown-preview-view::-webkit-scrollbar,
+  .cm-scroller::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Default state - invisible */
+  .workspace-leaf-content::-webkit-scrollbar-thumb,
+  .markdown-source-view::-webkit-scrollbar-thumb,
+  .markdown-preview-view::-webkit-scrollbar-thumb,
+  .cm-scroller::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Hover state - barely visible */
+  .workspace-leaf-content:hover::-webkit-scrollbar-thumb,
+  .markdown-source-view:hover::-webkit-scrollbar-thumb,
+  .markdown-preview-view:hover::-webkit-scrollbar-thumb,
+  .cm-scroller:hover::-webkit-scrollbar-thumb {
+    background: rgba(var(--text-muted-rgb), 0.15);
+  }
+
+  /* Scrollbar thumb hover - more visible */
+  .workspace-leaf-content:hover::-webkit-scrollbar-thumb:hover,
+  .markdown-source-view:hover::-webkit-scrollbar-thumb:hover,
+  .markdown-preview-view:hover::-webkit-scrollbar-thumb:hover,
+  .cm-scroller:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--text-muted-rgb), 0.35);
+  }
+}
+
+/* ========================================================================== */
+/*                         EXCLUDE SMALL ELEMENTS                            */
+/* ========================================================================== */
+
+/* Never show scrollbars on small elements */
+.clickable-icon::-webkit-scrollbar,
+.nav-action-button::-webkit-scrollbar,
+.tree-item::-webkit-scrollbar,
+.nav-file::-webkit-scrollbar,
+.nav-folder::-webkit-scrollbar,
+.workspace-tab-header::-webkit-scrollbar,
+.titlebar::-webkit-scrollbar,
+.status-bar::-webkit-scrollbar,
+.status-bar-item::-webkit-scrollbar,
+.sidebar-toggle-button::-webkit-scrollbar,
+.view-action::-webkit-scrollbar,
+.setting-item::-webkit-scrollbar,
+.checkbox-container::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+/* ========================================================================== */
+/*                          SPECIAL CONTEXTS                                 */
+/* ========================================================================== */
+
+/* Modals and popups - minimal scrollbars */
+.modal::-webkit-scrollbar,
+.popover::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb,
+.popover::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.modal:hover::-webkit-scrollbar-thumb,
+.popover:hover::-webkit-scrollbar-thumb {
+  background: rgba(var(--text-muted-rgb), 0.3);
+}
+
+/* Suggestion containers - no scrollbars */
+.suggestion-container::-webkit-scrollbar,
+.menu::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+/* Code blocks - minimal horizontal scrollbar */
+pre::-webkit-scrollbar {
+  width: 0px;
+  height: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 2px;
+}
+
+pre:hover::-webkit-scrollbar-thumb {
+  background: rgba(var(--text-muted-rgb), 0.3);
+}
+
+/* Tables - horizontal scrollbar only */
+.table-wrapper::-webkit-scrollbar {
+  width: 0px;
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.table-wrapper:hover::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY SUPPORT                             */
+/* ========================================================================== */
+
+/* High contrast mode - always visible scrollbars */
+@media (prefers-contrast: high) {
+  .workspace-leaf-content::-webkit-scrollbar-thumb,
+  .markdown-source-view::-webkit-scrollbar-thumb,
+  .markdown-preview-view::-webkit-scrollbar-thumb,
+  .cm-scroller::-webkit-scrollbar-thumb {
+    background: rgba(var(--text-normal-rgb), 0.3) !important;
+    border: 1px solid var(--background-primary);
+  }
+
+  .workspace-leaf-content::-webkit-scrollbar-track,
+  .markdown-source-view::-webkit-scrollbar-track,
+  .markdown-preview-view::-webkit-scrollbar-track,
+  .cm-scroller::-webkit-scrollbar-track {
+    background: var(--background-secondary);
+    border: 1px solid var(--text-muted);
+  }
+}
+
+/* Reduced motion - no hover transitions */
+@media (prefers-reduced-motion: reduce) {
+  .workspace-leaf-content::-webkit-scrollbar-thumb,
+  .markdown-source-view::-webkit-scrollbar-thumb,
+  .markdown-preview-view::-webkit-scrollbar-thumb,
+  .cm-scroller::-webkit-scrollbar-thumb {
+    transition: none !important;
+  }
+}
+
+/* ========================================================================== */
+/*                         FIREFOX SUPPORT                                   */
+/* ========================================================================== */
+
+/* Firefox - hide scrollbars by default */
+* {
+  scrollbar-width: none;
+}
+
+.workspace-leaf-content,
+.markdown-source-view,
+.markdown-preview-view,
+.cm-scroller {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Show Firefox scrollbars on hover (limited support) */
+@media (min-width: 769px) {
+  .workspace-leaf-content:hover,
+  .markdown-source-view:hover,
+  .markdown-preview-view:hover,
+  .cm-scroller:hover {
+    scrollbar-color: rgba(var(--text-muted-rgb), 0.2) transparent;
+  }
+}
+
+/* Mobile Firefox - completely hidden */
+@media (max-width: 768px) {
+  .workspace-leaf-content,
+  .markdown-source-view,
+  .markdown-preview-view,
+  .cm-scroller {
+    scrollbar-width: none !important;
+  }
+}
+
+/* ========================================================================== */
+/*                         PERFORMANCE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Disable scrollbars on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+  ::-webkit-scrollbar,
+  .workspace-leaf-content::-webkit-scrollbar,
+  .markdown-source-view::-webkit-scrollbar,
+  .markdown-preview-view::-webkit-scrollbar,
+  .cm-scroller::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  * {
+    scrollbar-width: none !important;
+  }
+}
+
+/* GPU acceleration for scrollbar animations */
+@media (min-width: 769px) {
+  .workspace-leaf-content::-webkit-scrollbar-thumb,
+  .markdown-source-view::-webkit-scrollbar-thumb,
+  .markdown-preview-view::-webkit-scrollbar-thumb,
+  .cm-scroller::-webkit-scrollbar-thumb {
+    will-change: auto;
+  }
+
+  .workspace-leaf-content:not(:hover)::-webkit-scrollbar-thumb,
+  .markdown-source-view:not(:hover)::-webkit-scrollbar-thumb,
+  .markdown-preview-view:not(:hover)::-webkit-scrollbar-thumb,
+  .cm-scroller:not(:hover)::-webkit-scrollbar-thumb {
+    will-change: auto;
+  }
+}
+
+
+/* ================================================= */
+
+/* components\status-progress.css */
+/* ========================================================================== */
+/*                          STATUS BAR & PROGRESS                            */
+/* ========================================================================== */
+
+/* Simple Status Bar */
+.status-bar {
+  background: transparent !important;
+  border: none !important;
+  transition: none;
+}
+
+.status-bar-item {
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: none;
+  cursor: pointer;
+
+  opacity: 0.4;
+  background: rgba(var(--bg-secondary-rgb), 0.3);
+  color: var(--text-muted);
+}
+
+.status-bar-item:hover {
+  opacity: 1;
+  color: var(--text-normal);
+  background: rgba(var(--bg-secondary-rgb), 0.8);
+}
+
+/* Status bar deemphasize - make elements even more transparent */
+.deemphasize-status-bar .status-bar-item {
+  opacity: 0.2;
+}
+
+.deemphasize-status-bar .status-bar-item:hover {
+  opacity: 0.8;
+}
+
+/* Mobile status bar */
+@media (max-width: 768px) {
+  .status-bar-item {
+    padding: 4px 6px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+
+/* ================================================= */
+
+/* components\style-settings.css */
+/* ========================================================================== */
+/*                              STYLE SETTINGS                               */
+/* ========================================================================== */
+
+/* Style Settings Container */
+.style-settings-container .themed-color-wrapper {
+  display: flex;
+  gap: var(--size-4-2);
+}
+
+.style-settings-container .themed-color-wrapper>div+div {
+  margin-top: 0;
+}
+
+.style-settings-container {
+  margin-left: var(--size-4-1);
+  padding-left: var(--size-4-8);
+  border-left: 1px solid var(--divider-color);
+}
+
+
+/* ================================================= */
+
+/* components\titlebar.css */
+/* ========================================================================== */
+/*                                TITLEBAR                                   */
+/* ========================================================================== */
+
+/* Titlebar Button Container */
+.titlebar-button-container.mod-right {
+  gap: 2px;
+}
+
+.titlebar-button-container.mod-right .titlebar-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  background: rgba(var(--text-normal-rgb), 0.15);
+  border: 1px solid rgba(var(--text-normal-rgb), 0.1);
+  padding: 0px !important;
+}
+
+.titlebar-button-container.mod-right .titlebar-button:hover {
+  background: rgba(var(--text-normal-rgb), 0.6);
+  border-color: rgba(var(--text-normal-rgb), 0.2);
+}
+
+/* Close button - make it clearly red and visible */
+.titlebar-button-container.mod-right .titlebar-button:last-child {
+  background: rgba(255, 59, 48, 0.2);
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.titlebar-button-container.mod-right .titlebar-button:last-child:hover {
+  background: rgba(255, 59, 48, 0.4);
+  border-color: rgba(255, 59, 48, 0.5);
+}
+
+.titlebar-button-container.mod-right .titlebar-button:last-child svg {
+  color: #ff3b30 !important;
+  filter: brightness(1.2);
+}
+
+.titlebar-button-container.mod-right .titlebar-button svg {
+  width: 14px;
+  height: 14px;
+  opacity: 1 !important;
+  color: var(--text-normal);
+  filter: contrast(1.2);
+}
+
+/* Fix general titlebar button padding */
+.titlebar-button {
+  -webkit-app-region: no-drag;
+  display: inline-flex;
+  align-items: center;
+}
+
+.mod-linux .titlebar-button,
+.mod-windows .titlebar-button {
+  display: flex;
+  align-items: center;
+  height: auto !important;
+  min-height: 24px;
+}
+
+
+/* ================================================= */
+
+/* components\tooltips-links.css */
+/* ========================================================================== */
+/*                           TOOLTIPS & LINKS                                */
+/* ========================================================================== */
+
+/* Tooltips */
+.tooltip {
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: var(--text-normal);
+  background: rgba(var(--background-primary-rgb), 0.8);
+}
+
+
+/* External Links */
+.external-link,
+.cm-link:not(.internal-link),
+.cm-url {
+  color: var(--link-external-color) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(var(--link-external-color-rgb), 0.5);
+  padding-inline-end: 0;
+  background: none;
+}
+
+.external-link:hover,
+.cm-link:not(.internal-link):hover,
+.cm-url:hover {
+  color: var(--link-external-color-hover) !important;
+  border-bottom-color: rgba(var(--link-external-color-hover-rgb), 0.7);
+  text-decoration: none !important;
+}
+
+/* Force disable filter on external links */
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url,
+.external-link {
+  filter: none !important;
+}
+
+/* Remove underline from child 'a' tags */
+.cm-link:not(.internal-link) a.cm-underline,
+.cm-url a.cm-underline {
+    text-decoration: none !important;
+}
+
+/* Internal Links - NO underline anywhere */
+a.internal-link,
+.cm-hmd-internal-link,
+.cm-hmd-internal-link a,
+.HyperMD-header .cm-hmd-internal-link a,
+.cm-link,
+.cm-link .cm-hmd-internal-link,
+.markdown-preview-view .internal-link,
+.markdown-source-view .internal-link,
+.internal-link {
+  color: var(--internal-link-color);
+  text-decoration: none !important;
+  transition: none;
+}
+
+a.internal-link:hover,
+.cm-hmd-internal-link:hover,
+.cm-hmd-internal-link a:hover,
+.internal-link:hover {
+  color: var(--internal-link-color-hover);
+  text-decoration: none !important;
+}
+
+a.external-link::after {
+  content: ' ';
+  width: 12px;
+  height: 12px;
+  background-image: linear-gradient(transparent, transparent), url(public/images/6155340132a851f6089e.svg);
+  background-size: contain;
+  display: inline-block;
+  vertical-align: text-top;
+  opacity: 0.7;
+  transition: none;
+  border-bottom: none !important;
+}
+
+a.external-link:hover::after {
+  opacity: 1;
+}
+
+/* Notices */
+.notice {
+  border-radius: var(--radius-l);
+  backdrop-filter: blur(16px);
+  background: rgba(var(--background-secondary-rgb), 0.9);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: var(--text-normal);
+}
+
+/* Additional notice style */
+.notice {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Tree Item Flair */
+.tree-item-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+/* Prompt Instructions */
+.prompt-instructions {
+  display: none;
+}
+
+/* Suggestion Items */
+.suggestion-item.is-selected {
+  background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  border-radius: var(--radius-m);
+}
+
+/* Buttons */
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  transition: none;
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
+
+/* ================================================= */
+
+/* components\workspace.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │            Workspace Tabs (Tab Bar, Headers)            │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Always hide tab bar */
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+    display: none;
+}
+
+
+
+/* Show navigation buttons in view header */
+.view-header-nav-buttons {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* Simple navigation button styling */
+.view-header-nav-buttons .clickable-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+}
+
+.view-header-nav-buttons .clickable-icon:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.view-header-nav-buttons .clickable-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.view-header-nav-buttons .clickable-icon:hover svg {
+    opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Titlebar Draggability Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.view-header-title-container {
+    -webkit-app-region: drag;
+    border-radius: 8px;
+    transition: none;
+}
+
+
+.view-header-title-container div {
+    -webkit-app-region: no-drag;
+}
+
+
+/* ========================================================================== */
+/*                               SIDEBARS                                     */
+/* ========================================================================== */
+
+/* Tab container background */
+.workspace-tabs {
+    border-radius: 8px;
+}
+
+.workspace-tab-header-container {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+}
+
+/* Individual tab styling */
+.workspace-tab-header {
+    background: var(--tab-background);
+    border-radius: 8px 8px 0 0;
+    transition: none;
+    border: none;
+    margin: 2px;
+}
+
+.workspace-tab-header:hover:not(.is-active) {
+    background: var(--tab-background-hover);
+}
+
+.workspace-tab-header.is-active {
+    background: var(--tab-background-active);
+}
+
+/* Titlebar styling */
+.titlebar {
+    background: var(--titlebar-background);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.3);
+}
+
+
+
+
+
+/* Workspace split and additional elements */
+.workspace-tabs .workspace-leaf {
+    background: var(--workspace-background-translucent);
+}
+
+.workspace-leaf-resize-handle {
+    background: var(--workspace-background-translucent);
+}
+
+.workspace-ribbon {
+    background: none !important;
+}
+
+
+/* Sidebar Toggle Buttons - Always show by default */
+.sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-left {
+    display: flex;
+    opacity: 0.7;
+    transition: none;
+}
+
+.sidebar-toggle-button.mod-right:hover,
+.sidebar-toggle-button.mod-left:hover {
+    opacity: 1;
+}
+
+/* Vault Actions - Always show by default */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+    display: flex !important;
+    opacity: 0.7;
+    transition: none;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-actions {
+    opacity: 1;
+}
+
+/* Navigation Headers - Always show by default */
+.workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outline"] .nav-header {
+    padding: var(--size-4-1) 0;
+    opacity: 1;
+    height: auto;
+    transition: none;
+}
+
+
+/* ========================================================================== */
+/*                           MATERIAL DESIGN 3                               */
+/* ========================================================================== */
+
+/* Enhanced workspace styling with Material Design 3 principles */
+.workspace-leaf {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.workspace .mod-root .workspace-tab-header {
+    /* Простая гибкая система */
+    min-width: var(--tab-min-width);
+    /* Минимум 80px */
+    max-width: var(--tab-max-width);
+    /* Максимум 200px */
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================================================================== */
+/*                            TITLE CONTAINER                                */
+/* ========================================================================== */
+
+/* Draggable title container */
+.view-header-title-container {
+    -webkit-app-region: drag;
+    border-radius: 8px;
+    transition: none;
+}
+
+
+.view-header-title-container div {
+    -webkit-app-region: no-drag;
+}
+
+/* ========================================================================== */
+/*                          MOBILE OPTIMIZATIONS                             */
+/* ========================================================================== */
+
+/* Mobile workspace adjustments */
+@media (max-width: 768px) {
+    .workspace-leaf {
+        border-radius: 8px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Mobile sidebar optimizations - improved touch targets */
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left {
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        opacity: 1;
+    }
+
+    /* Faster transitions on mobile */
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left {
+        transition-duration: 0s;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .workspace-leaf {
+        border-radius: 10px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 7px 7px 0 0;
+    }
+
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY SUPPORT                             */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .workspace-tab-header,
+    .workspace-leaf {
+        border: 1px solid var(--background-modifier-border);
+    }
+
+    .view-header-nav-buttons .clickable-icon {
+        border: 1px solid var(--background-modifier-border);
+    }
+
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left {
+        border: 1px solid var(--background-modifier-border);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left,
+    .workspace-sidedock-vault-profile .workspace-drawer-vault-actions,
+    .view-header-nav-buttons .clickable-icon {
+        transition: none !important;
+    }
+
+}
+
+/* ========================================================================== */
+/*                        PERFORMANCE OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Remove complex effects on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+
+
+    .workspace-leaf {
+        border-radius: 6px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 4px 4px 0 0;
+    }
+
+    /* Disable transitions on low-end devices */
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left,
+    .view-header-nav-buttons .clickable-icon {
+        transition: none;
+    }
+}
+
+/* ========================================================================== */
+/*                           LAYOUT OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+/* Optimize complex selectors */
+.workspace-split .workspace-leaf-content[data-type] .nav-header {
+    padding: var(--size-4-1) 0;
+    opacity: 1;
+    height: auto;
+    transition: none;
+}
+
+
+/* Workspace leaf content */
+.workspace-leaf-content {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.workspace-leaf:hover .workspace-leaf-content {
+    border-color: var(--border-color-hover);
+}
+
+/* Sidebar drawers */
+.workspace-drawer {
+    border: 1px solid var(--border-color);
+}
+
+.workspace-drawer:hover {
+    border-color: var(--border-color-hover);
+}
+
+/* Status bar */
+.status-bar {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Title bar */
+.titlebar {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+/* ========================================================================== */
+/*                            NAVIGATION STYLING                             */
+/* ========================================================================== */
+
+/* Navigation hover effects */
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--background-modifier-hover);
+    border-left: 2px solid var(--border-color-active);
+}
+
+.nav-file.is-active .nav-file-title {
+    background-color: var(--background-modifier-active-hover);
+    border-left: 3px solid var(--interactive-accent);
+}
+
+/* ========================================================================== */
+/*                             MODAL STYLING                                 */
+/* ========================================================================== */
+
+.modal {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+}
+
+/* ========================================================================== */
+/*                             MENU STYLING                                  */
+/* ========================================================================== */
+
+.menu {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+}
+
+/* .menu-item:hover,
+  .suggestion-item:hover {
+    background-color: rgba(var(--background-modifier-hover-rgb), 0.95);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  } */
+
+.suggestion-container {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    background: none !important;
+    border: none;
+}
+
+
+/* ================================================= */
+
+/* utilities\animations.css */
+/* A simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.anim-fade-in {
+  animation: none;
+}
+
+/* A slide-in animation */
+@keyframes slideInUp {
+  from {
+    transform: none;
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.anim-slide-in-up {
+  animation: slideInUp 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ========================================================================== */
+/*                              ANIMATIONS                                    */
+/* ========================================================================== */
+
+
+/* Blur animations for modals and sidebars */
+.modal,
+.popover,
+.workspace-drawer.mod-left,
+.workspace-drawer.mod-right {
+  animation: blurIn 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes blurIn {
+  from {
+    backdrop-filter: blur(0px);
+    opacity: 0;
+    transform: none;
+  }
+  to {
+    backdrop-filter: blur(16px);
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+/* Fade in/out animations */
+.workspace-leaf-content,
+.markdown-preview-view,
+.markdown-source-view {
+  animation: none;
+}
+
+/* Ripple effect for buttons */
+.mod-cta,
+.button {
+  position: relative;
+  overflow: hidden;
+}
+
+.mod-cta::before,
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: none;
+  transition: none;
+}
+
+.mod-cta:active::before,
+.button:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* ========================================================================== */
+/*                           MOBILE OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+/* Mobile Small (0-480px) - Minimal animations for performance */
+@media (max-width: 480px) {
+  /* Disable complex animations */
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    animation: none;
+    backdrop-filter: none;
+    background: var(--background-secondary);
+  }
+
+  /* Simplified fade-in */
+  .anim-fade-in {
+    animation: fadeIn 0.15s ease-out;
+  }
+
+  /* Remove slide animations */
+  .anim-slide-in-up {
+    animation: fadeIn 0.15s ease-out;
+  }
+
+  /* Ultra-fast transitions */
+  .clickable-icon,
+  .nav-file-title,
+  .nav-folder-title,
+  .tree-item-inner,
+  .menu-item,
+  .suggestion-item,
+  .workspace-tab-header {
+    transition: none;
+  }
+
+  /* Disable ripple effect on mobile */
+  .mod-cta::before,
+  .button::before {
+    display: none;
+  }
+  /* Disable transform animations */
+  .workspace-leaf-content,
+  .markdown-preview-view,
+  .markdown-source-view {
+    opacity: 1;
+  }
+
+  /* Remove hover transforms */
+  .clickable-icon:hover,
+  .nav-file-title:hover,
+  .nav-folder-title:hover {
+    transform: none;
+  }
+
+
+  .tree-item-inner {
+    transition: none;
+  }
+
+  /* Full ripple effect */
+  .mod-cta:active::before,
+  .button:active::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Mobile Large (481-768px) - Balanced performance */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Simplified animations */
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    animation: fadeIn 0.2s ease-out;
+    backdrop-filter: blur(8px);
+  }
+
+  /* Fast transitions */
+  .clickable-icon,
+  .nav-file-title,
+  .nav-folder-title,
+  .tree-item-inner,
+  .menu-item,
+  .suggestion-item,
+  .workspace-tab-header {
+    transition: none;
+  }
+
+  /* Simplified slide animation */
+  .anim-slide-in-up {
+    animation: none;
+  }
+
+  /* Reduced ripple effect */
+  .mod-cta:active::before,
+  .button:active::before {
+    width: 200px;
+    height: 200px;
+  }
+
+
+}
+
+/* Tablet (769-1024px) - Enhanced animations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Standard animations */
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    animation: none;
+  }
+
+  /* Smooth transitions */
+  .clickable-icon,
+  .nav-file-title,
+  .nav-folder-title,
+  .tree-item-inner {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Enhanced hover effects - disabled for mobile performance */
+
+
+
+  /* Full ripple effect */
+  .mod-cta:active::before,
+  .button:active::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Desktop (1025px+) - Full animations */
+@media (min-width: 1025px) {
+  /* Full animation suite */
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    animation: none;
+  }
+
+
+
+  /* Advanced animations */
+  .workspace-leaf:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Full ripple effect */
+  .mod-cta:active::before,
+  .button:active::before {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* ========================================================================== */
+/*                         PERFORMANCE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+
+/* Optimize will-change for animations - DISABLED on mobile to prevent auto-scroll */
+@media (min-width: 1025px) {
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    will-change: auto;
+  }
+
+  .clickable-icon:hover,
+  .nav-file-title:hover,
+  .nav-folder-title:hover {
+    will-change: auto;
+  }
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY IMPROVEMENTS                        */
+/* ========================================================================== */
+
+/* High contrast mode - remove decorative animations */
+@media (prefers-contrast: high) {
+  .modal,
+  .popover,
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    backdrop-filter: none;
+    background: var(--background-secondary);
+    border: 2px solid var(--text-muted);
+  }
+
+  .mod-cta::before,
+  .button::before {
+    display: none;
+  }
+}
+
+/* ========================================================================== */
+/*                            BATTERY OPTIMIZATION                           */
+/* ========================================================================== */
+
+/* Reduce animations on low battery */
+@media (max-width: 768px) {
+  /* Disable animations on low-resolution displays (often indicates low-end devices) */
+  @media (max-resolution: 150dpi) {
+
+    .modal,
+    .popover,
+    .workspace-drawer.mod-left,
+    .workspace-drawer.mod-right {
+      backdrop-filter: none;
+    }
+
+    .mod-cta::before,
+    .button::before {
+      display: none;
+    }
+  }
+}
+
+/* ========================================================================== */
+/*                            CUSTOM ANIMATIONS                              */
+/* ========================================================================== */
+
+/* Smooth zoom-in for important elements */
+@keyframes zoomIn {
+  from {
+    transform: none;
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.anim-zoom-in {
+  animation: none;
+}
+
+/* Gentle bounce for notifications */
+@keyframes gentleBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  60% {
+    transform: none;
+  }
+}
+
+.anim-bounce {
+  animation: none;
+}
+
+/* Pulse animation for loading states */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-pulse {
+  animation: none;
+}
+
+/* Mobile-specific animations */
+@media (max-width: 768px) {
+  /* Simplified zoom-in */
+  .anim-zoom-in {
+    animation: none;
+  }
+
+  /* Disable bounce on mobile */
+  .anim-bounce {
+    animation: none;
+  }
+
+  /* Faster pulse */
+  .anim-pulse {
+    animation: none;
+  }
+}
+
+/* ========================================================================== */
+/*                           INTERACTION FEEDBACK                            */
+/* ========================================================================== */
+
+/* Touch feedback for mobile */
+@media (max-width: 768px) {
+  .clickable-icon:active,
+  .nav-file-title:active,
+  .nav-folder-title:active,
+  .menu-item:active,
+  .suggestion-item:active,
+  .workspace-tab-header:active {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    transition: none;
+  }
+
+  /* Visual feedback for buttons */
+  .mod-cta:active {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
+    transition: none;
+  }
+}
+
+/* Desktop hover feedback */
+@media (min-width: 1025px) {
+  /* Smooth button hover */
+  .mod-cta:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1.1);
+    box-shadow: 0 4px 12px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+  }
+}
+
+
+/* ========================================================================== */
+/*                           LOADING STATES                                  */
+/* ========================================================================== */
+
+/* Skeleton loading animation */
+@keyframes skeletonLoading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton-loading {
+  background: linear-gradient(
+    90deg,
+    var(--background-secondary) 25%,
+    rgba(var(--text-muted-rgb), 0.1) 50%,
+    var(--background-secondary) 75%
+  );
+  background-size: 200px 100%;
+  animation: none;
+}
+
+/* Mobile skeleton optimization */
+@media (max-width: 768px) {
+  .skeleton-loading {
+    animation: none;
+    background-size: 150px 100%;
+  }
+}
+
+
+/* ================================================= */
+
+/* utilities\images.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Image align                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-center .image-embed {
+  display: flex !important;
+  justify-content: center;
+}
+
+.image-left .image-embed {
+  display: flex !important;
+  justify-content: start;
+}
+
+.image-right .image-embed {
+  display: flex !important;
+  justify-content: end;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image filters                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-invert img,
+.image-grayscale img,
+.image-sepia img,
+.image-blur-sm img,
+.image-blur-md img,
+.image-blur-lg img,
+.image-blur-xl img {
+  transition: none;
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(var(--blur, 0));
+}
+
+.image-invert img:hover,
+.image-grayscale img:hover,
+.image-sepia img:hover,
+.image-blur-sm img:hover,
+.image-blur-md img:hover,
+.image-blur-lg img:hover,
+.image-blur-xl img:hover {
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(0);
+}
+
+.image-invert img {
+  --invert: 1;
+}
+
+.image-grayscale img {
+  --grayscale: 1;
+}
+
+.image-sepia img {
+  --sepia: 1;
+}
+
+.image-blur-sm img {
+  --blur: 8px;
+}
+
+.image-blur-md img {
+  --blur: 16px;
+}
+
+.image-blur-lg img {
+  --blur: 24px;
+}
+
+.image-blur-xl img {
+  --blur: 32px;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Make images square (remove rounded corners)       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-square img {
+  border-radius: 0;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Scale images on hover                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
+  transition: none;
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xs
+  .image-embed:hover {
+  transform: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-sm
+  .image-embed:hover {
+  transform: none;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-md
+  .image-embed:hover {
+  transform: none;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.18);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-lg
+  .image-embed:hover {
+  transform: none;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}
+
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .image-hover-scale-xl
+  .image-embed:hover {
+  transform: none;
+  box-shadow: 0 24px 96px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================================================== */
+/*                          MOBILE OPTIMIZATIONS                             */
+/* ========================================================================== */
+
+/* Disable scale animations on mobile for better performance */
+@media (max-width: 768px) {
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed:hover,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed:hover,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed:hover,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed:hover,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Simplify image transitions on mobile */
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
+  .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
+  .workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
+    transition: none;
+  }
+
+  /* Disable filter animations on mobile */
+  .image-invert img,
+  .image-grayscale img,
+  .image-sepia img,
+  .image-blur-sm img,
+  .image-blur-md img,
+  .image-blur-lg img,
+  .image-blur-xl img {
+    transition: none;
+  }
+}
+
+/* ========================================================================== */
+/*                              IMAGE CAPTIONS                               */
+/* ========================================================================== */
+
+/* Image captions styling */
+.minimal-image-captions .image-captions-figure {
+  background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.85em !important;
+  text-align: left !important;
+  color: var(--text-muted);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+
+/* ================================================= */
+
+/* utilities\responsive.css */
+/* ========================================================================== */
+/*                                RESPONSIVE                                  */
+/* ========================================================================== */
+
+/* Breakpoints:
+ * Mobile (Small): 0-480px
+ * Mobile (Large): 481-768px
+ * Tablet: 769-1024px
+ * Desktop: 1025px+
+ */
+
+/* ========================================================================== */
+/*                          MOBILE SMALL (0-480px)                           */
+/* ========================================================================== */
+
+@media (max-width: 480px) {
+
+    /* Ultra-compact UI for small phones */
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 16px 20px;
+    }
+
+    /* Compact tabs */
+    .workspace-tab-header {
+        height: 32px;
+        min-height: 32px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    /* Compact buttons */
+    .mod-cta {
+        height: 40px;
+        font-size: 13px;
+        padding: 0 12px;
+        border-radius: 12px;
+    }
+
+
+    /* Compact navigation */
+    .nav-file-title,
+    .nav-folder-title {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    /* Compact sidebars */
+    .workspace-drawer.mod-left,
+    .workspace-drawer.mod-right {
+        width: 85vw !important;
+        max-width: 300px;
+    }
+
+    /* Compact modal */
+    .modal {
+        margin: 16px;
+        max-width: calc(100vw - 32px);
+        max-height: calc(100vh - 32px);
+    }
+
+    /* Compact status bar */
+    .status-bar-item {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+
+    /* Compact checkboxes */
+    .checkbox-container input[type="checkbox"] {
+        width: 24px;
+        height: 16px;
+    }
+
+    .checkbox-container input[type="checkbox"]::before {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Compact suggestions */
+    .suggestion-item {
+        font-size: 13px;
+    }
+
+    /* Compact tooltips */
+    .tooltip {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+
+/* ========================================================================== */
+/*                          MOBILE LARGE (481-768px)                         */
+/* ========================================================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Medium mobile adjustments */
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 12px 16px;
+    }
+
+    /* Medium tabs */
+    .workspace-tab-header {
+        height: 36px;
+        min-height: 36px;
+        font-size: 13px;
+        padding: 0 12px;
+    }
+
+    /* Medium buttons */
+    .mod-cta {
+        height: 42px;
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    /* Medium sidebars */
+    .workspace-drawer.mod-left,
+    .workspace-drawer.mod-right {
+        width: 70vw !important;
+        max-width: 350px;
+    }
+
+    /* Medium modal */
+    .modal {
+        margin: 20px;
+        max-width: calc(100vw - 40px);
+        max-height: calc(100vh - 40px);
+    }
+
+
+
+}
+
+/* ========================================================================== */
+/*                             TABLET (769-1024px)                           */
+/* ========================================================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Tablet adjustments */
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 8px 10px;
+    }
+
+    /* Tablet tabs */
+    .workspace-tab-header {
+        height: 38px;
+        min-height: 38px;
+    }
+
+    /* Tablet sidebars */
+    .workspace-drawer.mod-left,
+    .workspace-drawer.mod-right {
+        width: 300px !important;
+    }
+
+    /* Tablet modal */
+    .modal {
+        margin: 24px;
+        max-width: calc(100vw - 48px);
+        max-height: calc(100vh - 48px);
+    }
+
+
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(var(--text-muted-rgb), 0.2);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(var(--text-muted-rgb), 0.4);
+    }
+}
+
+/* ========================================================================== */
+/*                             DESKTOP (1025px+)                             */
+/* ========================================================================== */
+
+@media (min-width: 1025px) {
+
+    /* Desktop optimizations */
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 24px;
+    }
+
+    /* Enhanced hover effects for desktop */
+    .workspace-leaf:hover {
+        transform: none;
+        /* Remove annoying hover lifts */
+    }
+
+    /* Desktop scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    .workspace-leaf-content::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Desktop-specific animations */
+    .workspace-leaf {
+        transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Desktop navigation */
+    .nav-file-title:hover,
+    .nav-folder-title:hover {
+        transform: none;
+    }
+}
+
+/* ========================================================================== */
+/*                          ORIENTATION SPECIFIC                             */
+/* ========================================================================== */
+
+/* Portrait mobile optimizations */
+@media (max-width: 768px) and (orientation: portrait) {
+
+    /* Full-width content */
+    .workspace-leaf-content {
+        border-radius: 0;
+    }
+
+    /* Compact navigation */
+    .workspace-tabs {
+        border-radius: 0;
+    }
+
+    /* Edge-to-edge modals - fixed positioning removed */
+    .modal {
+        border-radius: 16px;
+        margin: 10px;
+    }
+
+    /* Compact status bar */
+    .status-bar {
+        padding: 4px 8px;
+    }
+
+
+    /* Hide sidebar toggles in portrait */
+    .sidebar-toggle-button {
+        display: none;
+    }
+}
+
+/* Landscape mobile optimizations */
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    /* Compact height elements */
+    .workspace-tab-header {
+        height: 32px;
+        min-height: 32px;
+    }
+
+    /* Compact vertical padding */
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    /* Compact modals */
+    .modal {
+        max-height: 80vh;
+    }
+
+    /* Compact headers */
+    .view-header {
+        height: 36px;
+        min-height: 36px;
+    }
+}
+
+
+/* ========================================================================== */
+/*                                PRINT STYLES                               */
+/* ========================================================================== */
+
+@media print {
+
+    /* Clean print layout */
+    .theme-light {
+        --background-primary: #ffffff;
+        --background-secondary: #ffffff;
+        --text-normal: #000000;
+        --text-muted: #666666;
+    }
+
+
+    /* Print-friendly content */
+    .workspace-leaf-content {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Readable typography */
+    .markdown-preview-view,
+    .markdown-source-view {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000000;
+    }
+
+    /* Page breaks */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    /* Print-friendly links */
+    a {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    /* Print-friendly images */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Print-friendly tables */
+    table {
+        border-collapse: collapse;
+        border: 1px solid #000000;
+    }
+
+    th,
+    td {
+        border: 1px solid #000000;
+        padding: 6px;
+    }
+}
+
+/* ========================================================================== */
+/*                             LEGACY SUPPORT                                */
+/* ========================================================================== */
+
+/* Mobile-specific classes for manual control */
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+
+
+/* ================================================= */
+
+/* utilities\typography.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                     Monospace font                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-monospace,
+.font-monospace * {
+    font-family: var(--font-family-monospace) !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Font weights                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.font-thin {
+    font-weight: 100;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text cases                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-normal-case {
+    text-transform: none;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text align                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-left {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text color                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-error {
+    color: var(--text-error);
+}
+
+.text-success {
+    color: var(--text-success);
+}
+
+.text-warning {
+    color: var(--text-warning);
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text size                          │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+/* .text-xs {
+  font-size: 0.75em;
+}
+
+.text-sm {
+  font-size: 0.875em;
+}
+
+.text-base {
+  font-size: 1em;
+}
+
+.text-lg {
+  font-size: 1.125em;
+}
+
+.text-xl {
+  font-size: 1.25em;
+}
+
+.text-2xl {
+  font-size: 1.5em;
+} */
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Line height                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.leading-tight {
+    line-height: 1.25;
+}
+
+.leading-normal {
+    line-height: 1.5;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.leading-loose {
+    line-height: 2;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Letter spacing                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.tracking-normal {
+    letter-spacing: 0;
+}
+
+.tracking-wide {
+    letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text decoration                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.no-underline {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Typography improvements                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+p {
+    line-height: var(--line-height-theme);
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Code typography                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+code,
+.cm-inline-code {
+    font-family: var(--font-family-monospace);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Link improvements                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+a {
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+/* ========================================================================== */
+/*                    MOBILE FONT SIZE CONSISTENCY FIX                       */
+/* ========================================================================== */
+
+
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY IMPROVEMENTS                        */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+    }
+
+    p,
+    li {
+        font-weight: 500;
+    }
+
+    code {
+        font-weight: 600;
+        border: 1px solid var(--text-muted);
+    }
+}
+
+/* Reduced motion - disable text animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        text-decoration-style: solid !important;
+        text-decoration-skip-ink: none !important;
+    }
+}
+
+/* ========================================================================== */
+/*                            READING OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Optimize text for reading */
+.markdown-preview-view,
+.markdown-source-view {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better text selection */
+::selection {
+    background: var(--text-selection);
+    color: var(--text-normal);
+}
+
+/* Additional selection styles for different contexts */
+.theme-dark .markdown-preview-view ::selection,
+.theme-dark .markdown-source-view ::selection,
+.theme-dark .cm-editor ::selection {
+    background: rgba(var(--magenta_x), 0.5);
+    color: var(--text-normal);
+}
+
+/* Light theme selection styles */
+.theme-light .markdown-preview-view ::selection,
+.theme-light .markdown-source-view ::selection,
+.theme-light .cm-editor ::selection {
+    background: var(--text-selection);
+    color: var(--text-normal);
+}
+
+/* Prevent text overflow */
+.markdown-preview-view p,
+.markdown-preview-view li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+/* ========================================================================== */
+/*                            PRINT OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+@media print {
+
+    /* Optimize typography for print */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000000;
+    }
+
+    h1 {
+        font-size: 18pt;
+        page-break-after: avoid;
+    }
+
+    h2 {
+        font-size: 16pt;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-size: 14pt;
+        page-break-after: avoid;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-size: 12pt;
+        page-break-after: avoid;
+    }
+
+    p {
+        font-size: 12pt;
+        line-height: 1.4;
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Ensure code is readable in print */
+    code {
+        font-size: 10pt;
+        background: #f5f5f5;
+        padding: 2px 4px;
+        border: 1px solid #ddd;
+    }
+
+    pre code {
+        font-size: 9pt;
+        line-height: 1.3;
+    }
+
+    /* Print-friendly quotes */
+    blockquote {
+        font-size: 11pt;
+        font-style: italic;
+        border-left: 3px solid #000;
+        padding-left: 12pt;
+        margin: 12pt 0;
+    }
+}
+
+
+/* ================================================= */
+
+/* themes\dark.css */
+.theme-dark {
+    color-scheme: dark;
+
+    /* ======================================================================== */
+    /*                           THEME ACCENT COLORS                           */
+    /* ======================================================================== */
+    --accent-h: 202;
+    --accent-s: 100%;
+    --accent-l: 75%;
+
+    /* ======================================================================== */
+    /*                           BACKGROUND COLORS                             */
+    /* ======================================================================== */
+    --bg_dark2_x: 2, 2, 2;
+    --bg_dark2: rgb(var(--bg_dark2_x));
+    --bg_dark_x: 8, 8, 8;
+    --bg_dark: rgb(var(--bg_dark_x));
+    --bg_x: 15, 15, 15;
+    --bg: rgb(var(--bg_x));
+    --bg_highlight_x: 25, 25, 25;
+    --bg_highlight: rgb(var(--bg_highlight_x));
+    --bg_highlight_dark_x: 18, 18, 18;
+    --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+
+    /* Standard background variables */
+    --background-primary: #020202;
+    --background-secondary: #0a0a0a;
+    --bg-primary-rgb: 2, 2, 2;
+    --bg-primary: #020202;
+    --bg-secondary-rgb: 8, 8, 8;
+
+    /* ======================================================================== */
+    /*                              TEXT COLORS                                */
+    /* ======================================================================== */
+    --fg_x: 220, 220, 220;
+    --fg: rgb(var(--fg_x));
+    --fg_dark_x: 180, 180, 180;
+    --fg_dark: rgb(var(--fg_dark_x));
+    --comment_x: 120, 120, 120;
+    --comment: rgb(var(--comment_x));
+    --code-comment_x: 115, 125, 165;
+    --code-comment: rgb(var(--code-comment_x));
+
+    /* Standard text variables */
+    --text-normal: #d0d0d0;
+    --text-muted: #888;
+    --text-faint: var(--fg_dark);
+    --text-on-accent: #ffffff;
+    --text-error: var(--red);
+    --text-error-hover: var(--red1);
+
+    /* ======================================================================== */
+    /*                             COLOR PALETTE                               */
+    /* ======================================================================== */
+    /* Blues */
+    --blue0_x: 61, 89, 161;
+    --blue0: rgb(var(--blue0_x));
+    --blue_x: 122, 162, 247;
+    --blue: rgb(var(--blue_x));
+
+    /* Cyans */
+    --cyan_hsl: 202 100% 75%;
+    --cyan_x: 125, 207, 255;
+    --cyan: rgb(var(--cyan_x));
+
+    /* Purples */
+    --purple_x: 187, 154, 247;
+    --purple: rgb(var(--purple_x));
+    --purple-light_x: 210, 180, 255;
+    --purple-light: rgb(var(--purple-light_x));
+
+    /* Magentas */
+    --magent_hsl: 261 85% 79%;
+    --magenta_x: 187, 154, 247;
+    --magenta: rgb(var(--magenta_x));
+    --magenta-light_x: 210, 190, 255;
+    --magenta-light: rgb(var(--magenta-light_x));
+
+    /* Pinks */
+    --pink_hsl: 331 100% 43%;
+    --pink_x: 217, 0, 105;
+    --pink: rgb(var(--pink_x));
+
+    /* Warm colors */
+    --orange_x: 255, 158, 100;
+    --orange: rgb(var(--orange_x));
+    --yellow_x: 224, 175, 104;
+    --yellow: rgb(var(--yellow_x));
+
+    /* Greens */
+    --green_x: 158, 206, 106;
+    --green: rgb(var(--green_x));
+    --teal_x: 26, 188, 156;
+    --teal: rgb(var(--teal_x));
+
+    /* Reds */
+    --red_x: 255, 117, 127;
+    --red: rgb(var(--red_x));
+    --red1_x: 219, 75, 75;
+    --red1: rgb(var(--red1_x));
+
+    /* Special colors */
+    --terminal_black_x: 65, 72, 104;
+    --terminal_black: rgb(var(--terminal_black_x));
+    --unknown: #ffffff;
+
+    /* Folder notes */
+    --folder-note-color_x: 220, 200, 250;
+    --folder-note-color: rgb(var(--folder-note-color_x));
+
+    /* ======================================================================== */
+    /*                                LINKS                                    */
+    /* ======================================================================== */
+
+    --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%) contrast(85%);
+
+    /* ======================================================================== */
+    /*                            UI COMPONENTS                                */
+    /* ======================================================================== */
+    /* Tabs */
+    --tab-background: rgba(2, 2, 2, 0.9);
+    --tab-background-active: rgba(25, 25, 25, 0.95);
+    --tab-background-hover: rgba(18, 18, 18, 0.8);
+    --tab-background-unfocused: rgba(8, 8, 8, 0.7);
+    --tab-divider-color: rgba(40, 40, 40, 0.3);
+    --tab-outline-color: rgba(60, 60, 60, 0.5);
+    --tab-outline-color-active: rgba(80, 80, 80, 0.8);
+    --tab-text-color-focused-active: rgba(var(--fg_x), 0.9);
+    --tab-text-color-focused-active-current: var(--text-normal);
+
+    /* Workspace */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --workspace-background-translucent: rgba(2, 2, 2, 0.9);
+
+    /* Titlebar */
+    --titlebar-background: var(--background-primary);
+    --titlebar-text-color: #e8e8e8;
+    --titlebar-text-color-focused: #ffffff;
+    --titlebar-text-color-inactive: #666;
+
+    /* ======================================================================== */
+    /*                           INTERACTIVE ELEMENTS                          */
+    /* ======================================================================== */
+    --interactive-normal: var(--bg_dark);
+    --interactive-hover: var(--bg_highlight);
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
+    /* Background modifiers */
+    --background-modifier-hover: rgba(var(--cyan_x), 0.08);
+    --background-modifier-active-hover: rgba(var(--cyan_x), 0.12);
+    --background-modifier-border: var(--bg_highlight);
+    --background-modifier-border-hover: var(--bg_highlight_dark);
+    --background-modifier-border-focus: var(--interactive-accent);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+    --background-modifier-cover: rgba(2, 2, 2, 0.8);
+
+    /* ======================================================================== */
+    /*                           CONTENT ELEMENTS                              */
+    /* ======================================================================== */
+    /* Selection and highlighting */
+    --text-selection: rgba(var(--purple_x), 0.25);
+    --text-highlight-bg: rgba(var(--orange_x), 0.25);
+    --flashing-background: rgba(var(--cyan_x), 0.2);
+
+    /* Code blocks */
+    --code-background: rgb(var(--purple_x), 0.05);
+    --code-normal: var(--fg_dark);
+    --text-on-code: var(--fg);
+    --code-selection-bg: rgba(var(--cyan_x), 0.2);
+
+    /* Code syntax highlighting */
+    /* --code-keyword: var(--purple);
+    --code-function: var(--yellow);
+    --code-string: var(--green);
+    --code-number: var(--orange);
+    --code-comment: var(--comment);
+    --code-property: var(--red);
+    --code-tag: var(--red);
+    --code-operator: var(--cyan);
+    --code-class: var(--yellow);
+    --code-variable: var(--cyan); */
+
+    /* Blockquotes */
+    --blockquote-color: var(--fg_dark);
+    --blockquote-bg: rgba(var(--cyan_x), 0.08);
+    --blockquote-border: var(--cyan);
+    --blockquote-accent: var(--magenta);
+    --blockquote-quote-mark: rgba(var(--purple_x), 0.7);
+
+    /* Headers */
+    --h1-color: var(--red);
+    --h2-color: var(--magenta);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--orange);
+
+    /* Tags */
+    --tag-color: var(--magenta);
+    --tag-background: rgba(var(--magenta_x), 0.15);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.15);
+
+    /* Tables */
+    --table-border-color: var(--bg_highlight);
+    --table-header-background: var(--bg_highlight);
+    --table-header-background-hover: var(--bg_highlight_dark);
+
+    /* Scrollbars */
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.4);
+
+    /* Date elements */
+    --date-color: var(--blue);
+    --date-background-color: rgba(var(--blue_x), 0.15);
+
+    /* ======================================================================== */
+    /*                             NAVIGATION                                  */
+    /* ======================================================================== */
+    --nav-item-color: rgba(255, 255, 255, 0.9);
+    --nav-item-color-hover: var(--fg);
+    --nav-item-background-hover: var(--bg_highlight);
+    --nav-item-color-active: var(--cyan);
+    --nav-item-background-active: var(--bg_highlight);
+    --nav-file-tag: rgba(var(--yellow_x), 0.9);
+
+    /* ======================================================================== */
+    /*                           FORM ELEMENTS                                 */
+    /* ======================================================================== */
+    /* Checkboxes */
+    --checkbox-color: var(--green);
+    --checkbox-color-hover: var(--blue);
+    --checkbox-border-color: var(--comment);
+    --checkbox-border-color-hover: var(--green);
+
+    /* Modals */
+    --modal-border-color: var(--bg_highlight);
+    --prompt-border-color: var(--bg_highlight);
+
+    /* ======================================================================== */
+    /*                              CALLOUTS                                   */
+    /* ======================================================================== */
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    /* ======================================================================== */
+    /*                               GRAPHS                                    */
+    /* ======================================================================== */
+    --graph-line: var(--comment);
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+}
+
+
+:not(.mod-windows).theme-dark {
+    --background-primary: transparent;
+}
+
+/* ======================================================================== */
+/*                           CODE BLOCK STYLING                            */
+/* ======================================================================== */
+
+
+/* ================================================= */
+
+/* themes\light.css */
+.theme-light {
+    /* ======================================================================== */
+    /*                           THEME ACCENT COLORS                           */
+    /* ======================================================================== */
+    --accent-h: 265;
+    --accent-s: 60%;
+    --accent-l: 55%;
+
+    /* ======================================================================== */
+    /*                           BACKGROUND COLORS                             */
+    /* ======================================================================== */
+    --bg_dark2_x: 230, 232, 236;
+    --bg_dark2: rgb(var(--bg_dark2_x));
+    --bg_dark_x: 240, 242, 246;
+    --bg_dark: rgb(var(--bg_dark_x));
+    --bg_x: 248, 250, 252;
+    --bg: rgb(var(--bg_x));
+    --bg_highlight_x: 255, 255, 255;
+    --bg_highlight: rgb(var(--bg_highlight_x));
+    --bg_highlight_dark_x: 235, 238, 242;
+    --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+
+    /* Standard background variables */
+    --background-primary: #f8fafc;
+    --background-secondary: #ffffff;
+
+    /* ======================================================================== */
+    /*                              TEXT COLORS                                */
+    /* ======================================================================== */
+    --fg_x: 30, 35, 42;
+    --fg: rgb(var(--fg_x));
+    --fg_dark_x: 75, 85, 95;
+    --fg_dark: rgb(var(--fg_dark_x));
+    --comment_x: 120, 125, 135;
+    --comment: rgb(var(--comment_x));
+    --code-comment_x: 110, 115, 125;
+    --code-comment: rgb(var(--code-comment_x));
+
+    /* Standard text variables */
+    --text-normal: #1e252e;
+    --text-muted: #64748b;
+    --text-faint: #94a3b8;
+    --text-accent: var(--purple);
+    --text-accent-hover: var(--cyan);
+    --text-error: var(--red);
+    --text-error-hover: var(--red1);
+    --text-on-accent: #ffffff;
+
+    /* ======================================================================== */
+    /*                             COLOR PALETTE                               */
+    /* ======================================================================== */
+    /* Blues */
+    --blue0_x: 25, 55, 100;
+    --blue0: rgb(var(--blue0_x));
+    --blue_x: 30, 70, 160;
+    --blue: rgb(var(--blue_x));
+
+    /* Cyans */
+    --cyan_x: 0, 120, 180;
+    --cyan: rgb(var(--cyan_x));
+
+    /* Purples */
+    --purple_x: 102, 63, 191;
+    --purple: rgb(var(--purple_x));
+    --purple-light_x: 140, 100, 220;
+    --purple-light: rgb(var(--purple-light_x));
+
+    /* Magentas */
+    --magent_hsl: 261 65% 50%;
+    --magenta_x: 160, 30, 140;
+    --magenta: rgb(var(--magenta_x));
+    --magenta-light_x: 180, 60, 200;
+    --magenta-light: rgb(var(--magenta-light_x));
+
+    /* Pinks */
+    --pink_hsl: 320 65% 50%;
+    --pink_x: 200, 30, 140;
+    --pink: rgb(var(--pink_x));
+
+    /* Warm colors */
+    --orange_x: 220, 100, 20;
+    --orange: rgb(var(--orange_x));
+    --yellow_x: 180, 120, 0;
+    --yellow: rgb(var(--yellow_x));
+
+    /* Greens */
+    --green_x: 20, 140, 80;
+    --green: rgb(var(--green_x));
+    --teal_x: 0, 140, 160;
+    --teal: rgb(var(--teal_x));
+
+    /* Reds */
+    --red_x: 200, 50, 70;
+    --red: rgb(var(--red_x));
+    --red1_x: 180, 30, 50;
+    --red1: rgb(var(--red1_x));
+
+    /* Special colors */
+    --terminal_black_x: 15, 15, 20;
+    --terminal_black: rgb(var(--terminal_black_x));
+    --unknown: #000000;
+
+    /* Folder notes */
+    --folder-note-color_x: 120, 85, 200;
+    --folder-note-color: rgb(var(--folder-note-color_x));
+
+    /* ======================================================================== */
+    /*                                LINKS                                    */
+    /* ======================================================================== */
+
+    --link-external-filter: invert(45%) sepia(85%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(95%);
+
+    /* ======================================================================== */
+    /*                            UI COMPONENTS                                */
+    /* ======================================================================== */
+    /* Tabs */
+    --tab-background: rgba(240, 242, 246, 0.9);
+    --tab-background-active: rgba(255, 255, 255, 0.95);
+    --tab-background-hover: rgba(248, 250, 252, 0.8);
+    --tab-background-unfocused: rgba(235, 238, 242, 0.7);
+    --tab-divider-color: rgba(200, 205, 210, 0.4);
+    --tab-outline-color: rgba(180, 185, 190, 0.6);
+    --tab-outline-color-active: rgba(120, 125, 135, 0.8);
+    --tab-text-color-focused-active: rgba(var(--fg_x), 0.7);
+    --tab-text-color-focused-active-current: var(--text-normal);
+
+    /* Titlebar */
+    --titlebar-background: var(--background-primary);
+    --titlebar-text-color: #475569;
+    --titlebar-text-color-focused: #1e252e;
+    --titlebar-text-color-inactive: #94a3b8;
+
+    /* ======================================================================== */
+    /*                           INTERACTIVE ELEMENTS                          */
+    /* ======================================================================== */
+    --interactive-normal: #e2e8f0;
+    --interactive-hover: #cbd5e1;
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
+    /* Background modifiers */
+    --background-modifier-hover: rgba(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%), 0.08);
+    --background-modifier-active-hover: rgba(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%), 0.12);
+    --background-modifier-border: #e2e8f0;
+    --background-modifier-border-hover: #cbd5e1;
+    --background-modifier-border-focus: var(--interactive-accent);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-cover: rgba(248, 250, 252, 0.8);
+
+    /* ======================================================================== */
+    /*                           CONTENT ELEMENTS                              */
+    /* ======================================================================== */
+    /* Selection and highlighting */
+    --text-selection: rgba(var(--purple_x), 0.15);
+    --text-highlight-bg: rgba(220, 100, 20, 0.15);
+    --flashing-background: rgba(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+
+    /* Code blocks */
+    --code-background: rgb(var(--purple_x), 0.05);
+    --code-normal: var(--text-muted);
+    --text-on-code: var(--text-normal);
+    --code-selection-bg: rgba(var(--purple_x), 0.15);
+
+    /* Code syntax highlighting */
+    /* --code-keyword: var(--purple);
+    --code-function: var(--orange);
+    --code-string: var(--green);
+    --code-number: var(--red);
+    --code-comment: var(--comment);
+    --code-property: var(--cyan);
+    --code-tag: var(--red);
+    --code-operator: var(--magenta);
+    --code-class: var(--blue);
+    --code-variable: var(--teal); */
+
+    /* Blockquotes */
+    --blockquote-color: var(--text-muted);
+    --blockquote-bg: rgba(var(--cyan_x), 0.05);
+    --blockquote-border: var(--cyan);
+    --blockquote-accent: var(--purple);
+    --blockquote-quote-mark: rgba(var(--purple_x), 0.7);
+
+    /* Headers */
+    --h1-color: var(--red);
+    --h2-color: var(--purple);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--orange);
+
+    /* Tags */
+    --tag-color: var(--purple);
+    --tag-background: rgba(var(--purple_x), 0.1);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.1);
+
+    /* Tables */
+    --table-header-background: #f8fafc;
+    --table-header-background-hover: #f1f5f9;
+    --table-border-color: #e2e8f0;
+
+    /* Scrollbars */
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
+
+    /* Date elements */
+    --date-color: var(--blue);
+    --date-background-color: rgba(30, 70, 160, 0.1);
+
+    /* ======================================================================== */
+    /*                             NAVIGATION                                  */
+    /* ======================================================================== */
+    --nav-item-color: #2d3748;
+    --nav-item-color-hover: #1a202c;
+    --nav-item-background-hover: rgba(0, 120, 180, 0.08);
+    --nav-item-color-active: #ffffff;
+    --nav-item-background-active: var(--cyan);
+    --nav-file-tag: rgba(180, 120, 0, 0.9);
+
+    /* ======================================================================== */
+    /*                           FORM ELEMENTS                                 */
+    /* ======================================================================== */
+    /* Checkboxes */
+    --checkbox-color: var(--green);
+    --checkbox-color-hover: var(--blue);
+    --checkbox-border-color: #cbd5e1;
+    --checkbox-border-color-hover: var(--green);
+
+    /* Modals */
+    --modal-border-color: #e2e8f0;
+    --prompt-border-color: #e2e8f0;
+
+    /* ======================================================================== */
+    /*                              CALLOUTS                                   */
+    /* ======================================================================== */
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    /* ======================================================================== */
+    /*                               GRAPHS                                    */
+    /* ======================================================================== */
+    --graph-line: #cbd5e1;
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+}
+
+
+
+/* ======================================================================== */
+/*                      LIGHT THEME COMPONENT STYLING                        */
+/* ======================================================================== */
+
+/* Menu and dropdown styling */
+.theme-light .menu,
+.theme-light .dropdown {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .menu-item:hover {
+    background: rgba(0, 120, 180, 0.08);
+    color: #1a202c;
+}
+
+/* Status bar */
+.theme-light .status-bar {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+}
+
+/* Workspace tabs */
+.theme-light .workspace-tab-header {
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Settings and configuration panels */
+/*
+.theme-light .vertical-tab-header {
+    background: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+}
+
+.theme-light .vertical-tab-header-group-title {
+    color: #475569;
+}
+
+.theme-light .vertical-tab-nav-item {
+    color: #64748b;
+}
+
+.theme-light .vertical-tab-nav-item:hover {
+    background: rgba(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+    color: #1a202c;
+}
+
+.theme-light .vertical-tab-nav-item.is-active {
+    background: rgba(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    color: var(--interactive-accent);
+    border-right: 2px solid var(--interactive-accent);
+} */
+
+
+/* ================================================= */
+
+/* settings.css */
+/* @settings
+
+name: Robsi Appearance
+id: Appearance
+settings:
+  -
+    id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: accent
+    title: Accent Color
+    type: variable-themed-color
+    format: hsl-split
+    opacity: false
+    default-light: '#0078B4'
+    default-dark: '#80D0FF'
+  -
+    id: Extended-colors
+    title: Extended Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: red
+    title: Red
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(180, 30, 50)'
+    default-dark: 'rgb(219, 75, 75)'
+  -
+    id: red1
+    title: Red1
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(200, 50, 70)'
+    default-dark: 'rgb(255, 117, 127)'
+  -
+    id: green
+    title: Green
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(20, 140, 80)'
+    default-dark: 'rgb(158, 206, 106)'
+  -
+    id: cyan
+    title: Cyan
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(0, 120, 180)'
+    default-dark: 'rgb(125, 207, 255)'
+  -
+    id: blue
+    title: Blue
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(30, 70, 160)'
+    default-dark: 'rgb(122, 162, 247)'
+  -
+    id: yellow
+    title: Yellow
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(180, 120, 0)'
+    default-dark: 'rgb(224, 175, 104)'
+  -
+    id: orange
+    title: Orange
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(220, 100, 20)'
+    default-dark: 'rgb(255, 158, 100)'
+  -
+    id: magenta
+    title: Magenta
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(160, 30, 140)'
+    default-dark: 'rgb(187, 154, 247)'
+  -
+    id: pink
+    title: Pink
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(200, 30, 140)'
+    default-dark: 'rgb(217, 0, 105)'
+  -
+    id: lists-heading
+    title: Lists
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: list-indent
+    title: List Indent
+    description: Indentation for nested list items
+    type: variable-text
+    default: 1.5em
+  -
+    id: list-spacing
+    title: List Spacing
+    description: Vertical spacing between list items
+    type: variable-text
+    default: 0.125em
+  -
+    id: unordered-lists-heading
+    title: Unordered Lists (Bullets)
+    type: heading
+    level: 3
+    collapsed: true
+  -
+		id: list-marker-color
+		title: Bullet Color
+		description: Color for list bullet markers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(160, 30, 140)'
+		default-dark: 'rgb(187, 154, 247)'
+  -
+		id: list-marker-color-hover
+		title: Bullet Hover Color
+		description: Color when hovering over list bullets
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(0, 120, 180)'
+		default-dark: 'rgb(125, 207, 255)'
+  -
+		id: list-marker-color-collapsed
+		title: Bullet Collapsed Color
+		description: Color for collapsed list bullets
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(120, 125, 135)'
+		default-dark: 'rgb(86, 95, 137)'
+  -
+    id: ordered-lists-heading
+    title: Ordered Lists (Numbers)
+    type: heading
+    level: 3
+    collapsed: true
+  -
+		id: list-number-color
+		title: Number Color
+		description: Color for ordered list numbers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(160, 30, 140)'
+		default-dark: 'rgb(187, 154, 247)'
+  -
+		id: list-number-color-hover
+		title: Number Hover Color
+		description: Color when hovering over list numbers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(0, 120, 180)'
+		default-dark: 'rgb(125, 207, 255)'
+
+*/
+
+/* @settings
+
+name: Meridian
+id: mvahaste-meridian
+settings:
+
+  -
+    id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: show-header-levels
+    title: Show Header Levels
+    description: Show header levels instead of collapse indicators in the editor (preview mode).
+    type: class-select
+    allowEmpty: false
+    default: show-header-levels-hover
+    options:
+      -
+        label: Always
+        value: show-header-levels-always
+      -
+        label: Hover
+        value: show-header-levels-hover
+
+  -
+    id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: false
+
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-tab-bar-dynamic
+      -
+        label: Always
+        value: hide-tab-bar-always
+      -
+        label: Never
+        value: hide-tab-bar-never
+
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+*/
+

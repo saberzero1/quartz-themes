@@ -1,0 +1,1111 @@
+body {
+	/* Checkboxes */
+	--checkbox-radius: 50%;
+	--checkbox-border-color: var(--checkbox-color);
+	--checkbox-border-color-hover: var(--checkbox-color-hover);
+	--checklist-done-decoration: none;
+	--checklist-done-color: var(--text-normal);
+
+	/* Collapse icons */
+	--collapse-icon-color: var(--color-accent);
+	--collapse-icon-color-collapsed: var(--interactive-accent-hover);
+
+	/* Dividers */
+	--divider-vertical-height: 100%;
+
+	/* Blocks */
+	--embed-block-shadow-hover: none;
+
+	/* Horizontal rules */
+	--hr-color: hsla(var(--color-accent-hsl), 0.45);
+
+	/* Icons */
+	--icon-color: var(--text-normal);
+	--icon-color-hover: var(--icon-color);
+	--icon-color-active: var(--icon-color);
+	--icon-opacity: 1;
+
+	/* Indentation guide */
+	--indentation-guide-color: hsla(var(--color-accent-hsl), 0.45);
+	--indentation-guide-color-active: hsla(var(--color-accent-hsl), 0.65);
+
+	/* Lists */
+	--list-marker-color: var(--color-accent);
+	--list-marker-color-hover: var(--interactive-accent-hover);
+
+	/* File navigator */
+	--nav-item-color: var(--text-normal);
+	--nav-item-background-selected: var(--i-4);
+	--nav-indentation-guide-color: var(--i-4);
+
+	/* Modals */
+	--modal-border-color: var(--background-modifier-border);
+
+	/* Prompts */
+	--prompt-border-color: var(--background-modifier-border);
+
+	/* Search */
+	--search-icon-color: var(--icon-color);
+
+	/* Status bar */
+	--status-bar-background: var(--titlebar-background);
+	--status-bar-text-color: var(--text-normal);
+
+	/* Tags */
+	--tag-color: var(--text-normal);
+	--tag-color-hover: var(--tag-color);
+	--tag-background: hsla(var(--color-accent-hsl), 0.2);
+	--tag-background-hover: var(--tag-background);
+	--tag-padding-x: 0.5em;
+	--tag-radius: var(--radius-s);
+
+	/* Window frame */
+	--titlebar-background: var(--i-2);
+	--titlebar-background-focused: var(--titlebar-background);
+
+	/* Backgrounds */
+	--background-secondary: var(--i-1);
+	--background-modifier-hover: var(--i-3);
+	--background-modifier-active-hover: var(--i-4);
+	--background-modifier-border: var(--i-5);
+	--background-modifier-border-hover: var(--i-9);
+	--background-modifier-border-focus: var(--background-modifier-border-hover);
+}
+.theme-light {
+	--i-light-s: 25%;
+	--i-light-l: 1;
+
+	--i-0: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 2%));
+	--i-1: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 3%));
+	--i-2: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 6%));
+	--i-3: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 10%));
+	--i-4: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 12%));
+	--i-5: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 14%));
+	--i-6: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 16%));
+	--i-7: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 18%));
+	--i-8: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 20%));
+	--i-9: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 22%));
+
+	--color-base-05: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 99%));
+	--color-base-10: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 98%));
+	--color-base-20: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 96%));
+	--color-base-25: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 89%));
+	--color-base-30: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 88%));
+	--color-base-35: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 83%));
+	--color-base-40: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 74%));
+	--color-base-50: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 67%));
+	--color-base-60: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 44%));
+	--color-base-70: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 36%));
+	--color-base-100: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 13%));
+
+	--color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.075));
+	--color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.15));
+
+	/* Text */
+	--text-normal: #222222;
+	--text-muted: #5c5c5c;
+	--text-faint: #ababab;
+	--text-accent: hsl(var(--accent-h), var(--accent-s), 30%);
+	--text-accent-hover: hsl(var(--accent-h), var(--accent-s), 20%);
+	--interactive-hover: var(--i-2);
+	--interactive-accent: var(--color-accent);
+	--interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
+}
+.theme-dark {
+	--i-dark-s: 12%;
+	--i-dark-bg-l: 12%;
+	--i-dark-l: 1;
+
+	--i-0: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 1%));
+	--i-1: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 2%));
+	--i-2: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 4%));
+	--i-3: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 8%));
+	--i-4: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 10%));
+	--i-5: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 12%));
+	--i-6: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 14%));
+	--i-7: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 16%));
+	--i-8: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 18%));
+	--i-9: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 20%));
+
+	--color-base-00: hsl(var(--accent-h), var(--i-dark-s), var(--i-dark-bg-l));
+	--color-base-05: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 1%));
+	--color-base-10: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 2%));
+	--color-base-20: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 3%));
+	--color-base-25: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 4%));
+	--color-base-30: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 9%));
+	--color-base-35: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 13%));
+	--color-base-40: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 21%));
+	--color-base-50: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 28%));
+	--color-base-60: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 48%));
+	--color-base-70: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 58%));
+	--color-base-100: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 73%));
+
+	--color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.15));
+	--color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.29));
+
+	/* Backgrounds */
+	--background-primary: hsl(var(--accent-h), var(--i-dark-s), var(--i-dark-bg-l));
+
+	/* Inputs */
+	--background-modifier-form-field: var(--background-primary);
+
+	/* Text */
+	--text-normal: hsl(0, 0%, calc(var(--i-dark-bg-l) + 73%));
+	--text-muted: hsl(0, 0%, calc(var(--i-dark-bg-l) + 58%));
+	--text-faint: hsl(0, 0%, calc(var(--i-dark-bg-l) + 28%));
+	--text-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7));
+	--text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7 + 10%));
+	--interactive-normal: var(--i-2);
+	--interactive-hover: var(--i-3);
+	--interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+}
+
+body:not(.is-mobile) .workspace {
+	transition: none;
+}
+
+/* Blockquotes */
+body {
+	--blockquote-background-color: hsla(var(--color-accent-hsl), 0.1);
+}
+.markdown-rendered blockquote {
+	padding-inline-start: 1em;
+	margin: var(--p-spacing) 0;
+}
+
+/* Callouts */
+body {
+	--callout-border-width: 1px;
+	--callout-border-opacity: 0.45;
+	--callout-padding: 0;
+	--callout-radius: 7px;
+	--callout-title-padding: 0.5em 1em;
+	--callout-content-padding: 1em;
+}
+.mod-rtl,
+.is-rtl,
+.rtl {
+	--callout-padding: 0;
+}
+.callout {
+	background-color: transparent;
+	margin: var(--p-spacing) 0;
+}
+.callout-title {
+	gap: 0.6em;
+	align-items: center;
+	background-color: rgba(var(--callout-color), 0.1);
+	line-height: 1.5;
+}
+.markdown-source-view.mod-cm6 .callout-content .callout {
+	margin: var(--p-spacing) 0;
+}
+.callout-content {
+	border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
+}
+.callout-content > :first-child {
+	margin-top: 0 !important;
+}
+.callout-content > :last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Canvas */
+.internal-embed.canvas-embed {
+	border: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-radius: 7px;
+}
+.internal-embed.canvas-embed .canvas-minimap {
+	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+}
+
+/* Code */
+body {
+	--code-border-width: 1px;
+	--code-border-color: hsla(var(--color-accent-hsl), 0.45);
+	--code-radius: 7px;
+	--code-background: transparent;
+}
+.theme-light .cm-s-obsidian span.cm-inline-code,
+.theme-light .markdown-rendered code {
+	--code-background: hsla(var(--accent-h), var(--i-light-s), var(--accent-l), 0.15);
+}
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark .markdown-rendered code {
+	--code-background: hsla(var(--accent-h), var(--i-dark-s), var(--accent-l), 0.2);
+}
+.cm-s-obsidian span.cm-inline-code,
+.markdown-rendered code {
+	--code-border-width: 0;
+	--code-radius: var(--radius-s);
+}
+.markdown-rendered pre {
+	margin: var(--p-spacing) 0;
+}
+.markdown-source-view.mod-cm6 .code-block-flair {
+	border-radius: var(--radius-s);
+}
+
+/* Embeds */
+body {
+	--embed-border-start: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	--embed-border-end: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	--embed-border-top: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	--embed-border-bottom: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	--embed-padding: 0;
+}
+.mod-rtl,
+.is-rtl,
+.rtl {
+	--embed-padding: 0;
+}
+.internal-embed .embed-title {
+	gap: 0.6em;
+	padding: 0.5em 1em;
+	background-color: hsla(var(--color-accent-hsl), 0.1);
+	border-radius: 7px 7px 0 0;
+}
+.internal-embed.markdown-embed {
+	border-radius: 7px;
+}
+.internal-embed.markdown-embed .markdown-embed-content {
+	padding: 1em;
+	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+}
+
+/* Graphs */
+body {
+	--graph-node-focused: var(--color-accent);
+}
+.theme-light {
+	--graph-line: hsl(var(--accent-h), var(--accent-s), 83%);
+	--graph-node: hsl(var(--accent-h), var(--accent-s), 36%);
+	--graph-node-unresolved: hsl(var(--accent-h), var(--accent-s), 67%);
+}
+.theme-dark {
+	--graph-line: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 13%));
+	--graph-node: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 58%));
+	--graph-node-unresolved: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 28%));
+}
+
+/* Links */
+.theme-light {
+	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), 30%, 0.3);
+}
+.theme-dark {
+	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7), 0.3);
+}
+a:hover {
+	background-color: hsla(var(--color-accent-hsl), 0.1);
+	border-radius: var(--radius-s);
+}
+.markdown-source-view.mod-cm6 .is-unresolved:hover .cm-underline {
+	color: var(--link-color-hover);
+	text-decoration-color: var(--link-color-hover);
+}
+
+/* Metadata */
+body {
+	--metadata-gap: 0;
+	--metadata-property-radius: 0;
+	--metadata-property-radius-hover: var(--metadata-property-radius);
+	--metadata-property-radius-focus: var(--metadata-property-radius);
+	--metadata-label-background: hsla(var(--color-accent-hsl), 0.1);
+	--metadata-label-background-hover: var(--metadata-label-background);
+	--metadata-label-background-active: var(--metadata-label-background);
+	--metadata-label-text-color: var(--text-normal);
+	--metadata-input-background-active: var(--metadata-input-background);
+}
+.markdown-source-view .metadata-container,
+.markdown-preview-view .metadata-container {
+	transform: none;
+}
+.metadata-property:hover,
+.metadata-property:focus-within {
+	box-shadow: none;
+}
+.is-phone,
+.workspace-drawer,
+.workspace > .workspace-split:not(.mod-root) .metadata-container {
+	--metadata-divider-width: 0;
+}
+.metadata-container .metadata-show-source-button,
+.metadata-container .metadata-add-button {
+	margin-top: 3px;
+}
+.metadata-properties-heading {
+	padding: var(--size-4-1) 0 var(--size-2-3) 0;
+	margin-bottom: 0;
+}
+.metadata-container.is-collapsed {
+	margin-bottom: calc(1rem + var(--size-2-3));
+}
+.metadata-property {
+	border-left: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-right: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-bottom: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+}
+.metadata-property:first-child {
+	border-top: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.metadata-property:last-child {
+	border-bottom: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.metadata-property-icon {
+	--icon-size: 16px;
+}
+.metadata-property-key {
+	align-items: center;
+	min-height: 2em;
+}
+.metadata-property-value {
+	min-height: 2em;
+}
+.metadata-property-icon:before {
+	width: var(--size-4-2);
+}
+
+/* PDF view */
+.internal-embed.pdf-embed:not(.image-embed) {
+	--background-modifier-border: hsla(var(--color-accent-hsl), 0.45);
+	border-radius: 7px;
+}
+
+/* Tabs */
+body {
+	--tab-text-color: var(--text-normal);
+	--tab-text-color-active: var(--tab-text-color);
+	--tab-text-color-focused: var(--tab-text-color);
+	--tab-text-color-focused-active: var(--tab-text-color);
+	--tab-container-background: var(--titlebar-background);
+}
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+	--background-modifier-hover: var(--i-5);
+}
+.workspace-tab-header-container {
+	--background-modifier-hover: var(--i-4);
+}
+
+/* Tables */
+body {
+	--table-border-color: hsla(var(--color-accent-hsl), 0.45);
+	--table-header-background: hsla(var(--color-accent-hsl), 0.1);
+	--table-header-background-hover: var(--table-header-background);
+	--table-column-min-width: 4ch;
+	--table-selection-border-radius: 0;
+	--table-drag-handle-color: var(--color-accent);
+	--table-add-button-border-color: var(--table-border-color);
+}
+
+/* Embedded search results */
+.internal-query {
+	border: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border-radius: 7px;
+	--background-modifier-border: hsla(var(--color-accent-hsl), 0.45);
+}
+.internal-query .internal-query-header {
+	padding: 0.5em 1em;
+	gap: 0.6em;
+	border-radius: 7px 7px 0 0;
+	background-color: hsla(var(--color-accent-hsl), 0.1);
+	line-height: 1.5;
+}
+.internal-query .search-result-container {
+	border: 0;
+	border-radius: 0 0 7px 7px;
+	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+	background-color: transparent;
+}
+.internal-query .internal-query-header-icon {
+	color: var(--search-icon-color);
+	margin: 0;
+}
+.el-pre .internal-query {
+	margin: var(--p-spacing) 0;
+}
+
+/* Audio */
+audio::-webkit-media-controls-enclosure {
+	border-radius: 7px;
+	border: 0;
+	background-color: hsla(var(--color-accent-hsl), 0.1);
+}
+
+/* Style settings */
+/* Colored headings */
+.i-colored-headings,
+.i-colored-accent-headings {
+	--inline-title-color: inherit;
+}
+
+/* Colored */
+.theme-light.i-colored-headings {
+	--h1-color: hsl(0, 100%, 46%);
+	--h2-color: hsl(60, 100%, 24%);
+	--h3-color: hsl(120, 100%, 27%);
+	--h4-color: hsl(180, 100%, 25%);
+	--h5-color: hsl(240, 100%, 69%);
+	--h6-color: hsl(300, 100%, 41%);
+}
+.theme-dark.i-colored-headings {
+	--h1-color: hsl(0, 100%, 80%);
+	--h2-color: hsl(60, 100%, 80%);
+	--h3-color: hsl(120, 100%, 80%);
+	--h4-color: hsl(180, 100%, 80%);
+	--h5-color: hsl(240, 100%, 83%);
+	--h6-color: hsl(300, 100%, 80%);
+}
+
+/* Colored: From accent color */
+.theme-light.i-colored-accent-headings {
+	--h1-color: hsl(var(--accent-h), 100%, 33%);
+	--h2-color: hsl(calc(var(--accent-h) + 60), 100%, 33%);
+	--h3-color: hsl(calc(var(--accent-h) + 120), 100%, 33%);
+	--h4-color: hsl(calc(var(--accent-h) + 180), 100%, 33%);
+	--h5-color: hsl(calc(var(--accent-h) + 240), 100%, 33%);
+	--h6-color: hsl(calc(var(--accent-h) + 300), 100%, 33%);
+}
+.theme-dark.i-colored-accent-headings {
+	--h1-color: hsl(var(--accent-h), 100%, 80%);
+	--h2-color: hsl(calc(var(--accent-h) + 60), 100%, 80%);
+	--h3-color: hsl(calc(var(--accent-h) + 120), 100%, 80%);
+	--h4-color: hsl(calc(var(--accent-h) + 180), 100%, 80%);
+	--h5-color: hsl(calc(var(--accent-h) + 240), 100%, 80%);
+	--h6-color: hsl(calc(var(--accent-h) + 300), 100%, 80%);
+}
+
+/* Highlighted headings */
+.i-highlighted-inline-title .inline-title:not([data-level]),
+:is(.i-highlighted-headings, .i-highlighted-accent-headings) :is(
+	.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+	.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+	border-radius: var(--radius-s);
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	width: fit-content;
+}
+
+/* Highlighted */
+.theme-light.i-highlighted-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(0, 100%, 72%, 0.3);}
+.theme-light.i-highlighted-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(60, 100%, 50%, 0.3);}
+.theme-light.i-highlighted-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(120, 100%, 67%, 0.3);}
+.theme-light.i-highlighted-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(180, 100%, 62%, 0.3);}
+.theme-light.i-highlighted-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(240, 100%, 77%, 0.3);}
+.theme-light.i-highlighted-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(300, 100%, 70%, 0.3);}
+
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(0, 100%, 72%, 0.25);}
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(60, 100%, 50%, 0.25);}
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(120, 100%, 67%, 0.25);}
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(180, 100%, 62%, 0.25);}
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(240, 100%, 77%, 0.25);}
+.theme-dark.i-highlighted-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(300, 100%, 70%, 0.25);}
+
+/* Highlighted: From accent color */
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(var(--accent-h), 100%, 65%, 0.28);}
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(calc(var(--accent-h) + 60), 100%, 65%, 0.28);}
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(calc(var(--accent-h) + 120), 100%, 65%, 0.28);}
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(calc(var(--accent-h) + 180), 100%, 65%, 0.28);}
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(calc(var(--accent-h) + 240), 100%, 65%, 0.28);}
+.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(calc(var(--accent-h) + 300), 100%, 65%, 0.28);}
+
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(var(--accent-h), 100%, 65%, 0.25);}
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(calc(var(--accent-h) + 60), 100%, 65%, 0.25);}
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(calc(var(--accent-h) + 120), 100%, 65%, 0.25);}
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(calc(var(--accent-h) + 180), 100%, 65%, 0.25);}
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(calc(var(--accent-h) + 240), 100%, 65%, 0.25);}
+.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(calc(var(--accent-h) + 300), 100%, 65%, 0.25);}
+
+/* Colored inline title */
+.theme-light.i-colored-inline-title .inline-title:not([data-level]) {
+	color: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+.theme-dark.i-colored-inline-title .inline-title:not([data-level]) {
+	color: hsl(var(--accent-h), var(--accent-s), 80%);
+}
+
+/* Highlighted inline title */
+.theme-light.i-highlighted-inline-title .inline-title:not([data-level]) {
+	background-color: hsla(var(--color-accent-hsl), 0.28);
+}
+.theme-dark.i-highlighted-inline-title .inline-title:not([data-level]) {
+	background-color: hsla(var(--color-accent-hsl), 0.25);
+}
+
+/* Improved headings and spacing */
+.i-headings-and-spacing {
+	--i-heading-sizes: 0.5em;
+	--i-spacing-below-headings: 0.3rem;
+}
+.i-headings-and-spacing .app-container {
+	--heading-spacing: var(--p-spacing);
+	--h1-line-height: var(--line-height-normal);
+	--h2-line-height: var(--line-height-normal);
+	--h3-line-height: var(--line-height-normal);
+	--h4-line-height: var(--line-height-normal);
+	--h1-size: calc(1em + var(--i-heading-sizes));
+	--h2-size: calc(1em + var(--i-heading-sizes) * 0.8);
+	--h3-size: calc(1em + var(--i-heading-sizes) * 0.6);
+	--h4-size: calc(1em + var(--i-heading-sizes) * 0.4);
+	--h5-size: calc(1em + var(--i-heading-sizes) * 0.2);
+	--h1-weight: 600;
+	--inline-title-line-height: var(--h1-line-height);
+	--inline-title-size: var(--h1-size);
+	--inline-title-weight: var(--h1-weight);
+	--metadata-padding: 0;
+	--p-spacing: 1.5rem;
+}
+.i-headings-and-spacing .app-container :is(
+.HyperMD-header-1, .inline-title h1, .HyperMD-list-line .cm-header-1, h1, .markdown-rendered h1,
+.HyperMD-header-2, .inline-title h2, .HyperMD-list-line .cm-header-2, h2, .markdown-rendered h2,
+.HyperMD-header-3, .inline-title h3, .HyperMD-list-line .cm-header-3, h3, .markdown-rendered h3,
+.HyperMD-header-4, .inline-title h4, .HyperMD-list-line .cm-header-4, h4, .markdown-rendered h4,
+.HyperMD-header-5, .inline-title h5, .HyperMD-list-line .cm-header-5, h5, .markdown-rendered h5,
+.HyperMD-header-6, .inline-title h6, .HyperMD-list-line .cm-header-6, h6, .markdown-rendered h6) {
+	letter-spacing: 0;
+}
+.i-headings-and-spacing .app-container .cm-content .cm-line:first-of-type,
+.i-headings-and-spacing .app-container .cm-content > div[contenteditable=false] + .cm-line {
+	padding-top: 0;
+}
+.i-headings-and-spacing .app-container .cm-s-obsidian .cm-line.HyperMD-header {
+	padding-top: 0;
+	padding-bottom: var(--i-spacing-below-headings);
+}
+.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > :not(h1,h2,h3,h4,h5,h6) {
+	margin-top: var(--i-spacing-below-headings);
+}
+.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > table {
+	margin-top: calc(var(--size-4-4) + var(--i-spacing-below-headings));
+}
+.i-headings-and-spacing .app-container .markdown-rendered :is(h1,h2,h3,h4,h5,h6) {
+	margin-top: 0;
+	margin-bottom: var(--i-spacing-below-headings);
+}
+.i-headings-and-spacing .app-container .markdown-rendered hr {
+	margin: calc(var(--p-spacing) * 1.5 - 1px) 0;
+}
+.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > hr {
+	margin-top: calc((var(--p-spacing) / 2 - 1px) + var(--i-spacing-below-headings));
+}
+.i-headings-and-spacing .app-container .inline-title:not([data-level]) {
+	margin-bottom: var(--i-spacing-below-headings);
+}
+.i-headings-and-spacing .app-container .inline-title:not([data-level]) + .metadata-container,
+.i-headings-and-spacing .app-container .callout-content .callout {
+	margin-top: var(--p-spacing);
+}
+.i-headings-and-spacing .app-container .markdown-source-view.mod-cm6 .inline-title:not([data-level]) + .metadata-container {
+	margin-top: calc(var(--p-spacing) - var(--i-spacing-below-headings));
+}
+.i-headings-and-spacing .app-container .el-table {
+	margin: var(--p-spacing) 0;
+}
+.i-headings-and-spacing .app-container .el-table table {
+	margin: var(--size-4-4) 0;
+}
+.i-headings-and-spacing .app-container .markdown-rendered pre {
+	padding: calc(var(--code-size) * var(--line-height-normal)) var(--size-4-4);
+	line-height: calc(var(--code-size) * var(--line-height-normal));
+}
+
+/* Card layout */
+.i-card-layout:not(.is-mobile) {
+	--ribbon-background: var(--i-4);
+	--ribbon-background-collapsed: var(--ribbon-background);
+	--ribbon-width: 35px;
+	--ribbon-padding: 10px 0 10px;
+	--titlebar-background: var(--i-0);
+}
+.i-card-layout:not(.is-mobile) .workspace {
+	padding: 5px;
+}
+.i-card-layout:not(.is-mobile).theme-light {
+	--background-modifier-hover: var(--i-2);
+	--background-modifier-border: var(--i-8);
+}
+.i-card-layout:not(.is-mobile).theme-dark {
+	--background-modifier-border: var(--i-7);
+}
+.i-card-layout:not(.is-mobile) .workspace-ribbon {
+	--background-modifier-hover: var(--i-2);
+}
+.i-card-layout:not(.is-mobile) .workspace,
+.i-card-layout:not(.is-mobile) .workspace-split.mod-left-split,
+.i-card-layout:not(.is-mobile) .workspace-split.mod-right-split,
+.i-card-layout:not(.is-mobile) .workspace-split.mod-vertical > *,
+.i-card-layout:not(.is-mobile).is-grabbing .workspace-split,
+.i-card-layout:not(.is-mobile):not(.is-hidden-frameless) .titlebar {
+	background-color: var(--i-4);
+}
+.i-card-layout:not(.is-mobile) .workspace-tabs .workspace-leaf {
+	background-color: var(--background-primary);
+}
+.i-card-layout:not(.is-mobile) .workspace-tab-header-container {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px 8px 0 0;
+	margin: 3px 3px 0;
+	--background-modifier-hover: var(--i-3);
+}
+.i-card-layout:not(.is-mobile) .mod-left-split .workspace-tab-header.has-active-menu,
+.i-card-layout:not(.is-mobile) .mod-right-split .workspace-tab-header.has-active-menu,
+.i-card-layout:not(.is-mobile) .mod-left-split .workspace-tab-header.is-active,
+.i-card-layout:not(.is-mobile) .mod-right-split .workspace-tab-header.is-active {
+	--background-modifier-hover: var(--i-4);
+}
+.i-card-layout:not(.is-mobile) .workspace-tab-container {
+	border: 1px solid var(--background-modifier-border);
+	border-top: 0;
+	border-radius: 0 0 8px 8px;
+	margin: 0 3px 3px;
+}
+.i-card-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-tab-header-container,
+.i-card-layout:not(.is-mobile) .workspace-split.mod-right-split .workspace-tab-header-container {
+	border-bottom-style: dashed;
+}
+.i-card-layout:not(.is-mobile) .workspace-leaf-resize-handle {
+	border-color: transparent;
+}
+.i-card-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 0 0 8px 8px;
+	border-top-style: dashed;
+	margin: 0 3px 3px;
+	width: auto;
+	background-color: var(--background-primary);
+}
+.i-card-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
+	margin-bottom: 0;
+	border-radius: 0;
+	border-bottom: 0;
+}
+.i-card-layout:not(.is-mobile) .workspace-ribbon {
+	border: 0;
+}
+.i-card-layout:not(.is-mobile,.show-ribbon) {
+	--ribbon-width: 0px;
+}
+.i-card-layout:not(.is-mobile) .workspace-ribbon.mod-left:before {
+	display: none;
+}
+.i-card-layout:not(.is-mobile) .workspace-ribbon.mod-left {
+	margin-top: 0;
+}
+.i-card-layout:not(.is-mobile) .sidebar-toggle-button {
+	height: auto;
+	padding: 7px 0;
+}
+.i-card-layout:is(.mod-macos:not(.is-hidden-frameless),.mod-windows,.mod-linux) .workspace-ribbon .sidebar-toggle-button {
+	position: relative;
+	height: auto;
+	padding: 0 0 2px 0;
+	width: auto;
+}
+
+/* MacOS */
+.i-card-layout.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+	padding-left: calc(var(--frame-left-space) - 1px);
+}
+.i-card-layout.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-ribbon.mod-left {
+	margin-top: 40px;
+}
+.i-card-layout.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+	position: relative;
+	padding-right: 0;
+}
+.i-card-layout.mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+	padding-right: 8px;
+}
+
+/* Windows and Linux */
+.i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless {
+	--frame-right-space: 120px;
+}
+.i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right {
+	right: 9px;
+	top: 9px;
+	height: 38px;
+	border-top-right-radius: 8px;
+}
+.i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button:last-child {
+	border-top-right-radius: 7px;
+}
+.i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button {
+	padding: 0 14px;
+}
+.i-card-layout:is(.mod-windows,.mod-linux):not(.is-hidden-frameless) .titlebar-button.mod-logo {
+	--ribbon-width: 44px;
+}
+.i-card-layout:is(.mod-windows,.mod-linux):not(.is-hidden-frameless,.show-ribbon) .titlebar-button.mod-logo {
+	--ribbon-width: 0;
+}
+
+/* Iridium window control buttons */
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless {
+	--frame-right-space: 81px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right {
+	height: 26px;
+	right: 7px;
+	top: 7px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 5px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.is-focused .titlebar-button-container.mod-right {
+	background-color: var(--background-primary);
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button {
+	padding: 0 6px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button:last-child {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
+	height: 26px;
+	right: 7px;
+	top: 7px;
+	width: 74px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.i-card-layout .titlebar-button-container.mod-right {
+	height: 25px;
+	right: 16px;
+	top: 16px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.i-card-layout .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
+	height: 25px;
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.is-focused.i-card-layout .titlebar-button-container.mod-right {
+	background-color: var(--i-3);
+}
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.i-card-layout .titlebar-button:not(.mod-close):hover {
+	background-color: var(--background-primary);
+}
+
+/* Iridium tab titlebar */
+.i-tab-titlebar:not(.is-mobile) .view-header {
+	border: 0;
+	min-height: 40px;
+	height: auto;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-left,
+.i-tab-titlebar:not(.is-mobile) .view-actions {
+	height: 40px;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title-container {
+	flex-direction: column-reverse;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title {
+	flex-basis: auto;
+	padding: 13.5px 0 2px;
+	line-height: 1;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title-parent {
+	font-size: 12.5px;
+	color: var(--text-accent);
+	align-items: center;
+	height: 0;
+	transition: 100ms ease-in-out 300ms;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator {
+	font-size: 12px;
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator:last-child {
+	display: none;
+}
+.i-tab-titlebar:not(.is-mobile).is-focused .workspace-leaf.mod-active .view-header-title {
+	font-weight: var(--font-medium);
+}
+.i-tab-titlebar:not(.is-mobile) .view-header-title-container:hover .view-header-title-parent {
+	height: 28px;
+}
+
+/* File path only */
+.i-tab-titlebar-path:not(.is-mobile) .view-header {
+	border: 0;
+	min-height: 40px;
+}
+.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent {
+	font-size: 12.5px;
+	color: var(--text-accent);
+	align-items: center;
+}
+.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator {
+	font-size: 12px;
+}
+.i-tab-titlebar-path:not(.is-mobile) .view-header-title,
+.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator:last-child {
+	display: none;
+}
+
+/* Smaller tab text */
+.i-smaller-tab-text:not(.is-mobile) {
+	--tab-font-size: 12.5px;
+}
+
+/* Hide vault profile */
+.i-hide-vault-profile:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	display: none;
+}
+.i-hide-vault-profile:not(.is-mobile).i-card-layout .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
+	margin-bottom: 3px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	border-radius: 0 0 8px 8px;
+}
+
+/* Hide status bar */
+.i-hide-status-bar:not(.is-mobile) .status-bar {
+	display: none;
+}
+
+/* Autohide status bar */
+.i-autohide-status-bar:not(.is-mobile) .status-bar {
+	opacity: 0;
+	transition: 100ms ease-in-out;
+}
+.i-autohide-status-bar:not(.is-mobile) .status-bar:hover {
+	opacity: 1;
+}
+
+/* Hide tab titlebar buttons */
+.i-hide-tab-titlebar-buttons:not(.is-mobile) .view-header-left,
+.i-hide-tab-titlebar-buttons:not(.is-mobile) .view-actions {
+	display: none;
+}
+
+/* Autohide tab titlebar buttons */
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-header-left,
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-actions {
+	opacity: 0;
+	transition: 100ms ease-in-out;
+}
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-header-left:hover,
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-actions:hover {
+	opacity: 1;
+}
+
+/* Smaller table text */
+.i-smaller-table-text {
+	--table-text-size: var(--font-small);
+}
+
+/* @settings
+name: Iridium
+id: iridium
+settings:
+	-
+		id: i-desktop
+		title: Desktop
+		type: heading
+		level: 1
+	-
+		id: i-card-layout
+		title: Card layout
+		type: class-toggle
+		default: true
+	-
+		id: i-tab-title-bar
+		title: Iridium tab titlebar
+		description: Shows only the tab title when unhovered and reveals the file path when hovered.
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Default
+				value: i-tab-titlebar
+			-
+				label: File path only
+				value: i-tab-titlebar-path
+	-
+		id: i-smaller-tab-text
+		title: Smaller tab text
+		type: class-toggle
+	-
+		id: i-hide-autohide-ui-elements
+		title: Hide/autohide UI elements
+		type: heading
+		level: 2
+	-
+		id: i-tab-titlebar-buttons
+		title: Tab titlebar buttons
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Hide tab titlebar buttons
+				value: i-hide-tab-titlebar-buttons
+			-
+				label: Autohide tab titlebar buttons
+				value: i-autohide-tab-titlebar-buttons
+	-
+		id: i-status-bar
+		title: Status bar
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Hide status bar
+				value: i-hide-status-bar
+			-
+				label: Autohide status bar
+				value: i-autohide-status-bar
+	-
+		id: i-hide-vault-profile
+		title: Hide vault profile
+		type: class-toggle
+	-
+		id: i-windows-and-linux
+		title: Windows and Linux
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-window-control-buttons
+		title: Iridium window control buttons
+		type: class-toggle
+		default: true
+	-
+		id: i-other
+		title: Other
+		type: heading
+		level: 1
+	-
+		id: i-smaller-table-text
+		title: Smaller table text
+		type: class-toggle
+*/
+
+/* @settings
+name: 'Iridium: Headings'
+id: i-headings
+settings:
+	-
+		id: i-rainbow-headings
+		title: Rainbow headings
+		type: class-select
+		allowEmpty: true
+		default: i-colored-accent-headings
+		options:
+			-
+				label: Colored
+				value: i-colored-headings
+			-
+				label: 'Colored: from accent color'
+				value: i-colored-accent-headings
+			-
+				label: Highlighted
+				value: i-highlighted-headings
+			-
+				label: 'Highlighted: from accent color'
+				value: i-highlighted-accent-headings
+	-
+		id: i-colorful-inline-title
+		title: Colorful inline title
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Colored inline title
+				value: i-colored-inline-title
+			-
+				label: Highlighted inline title
+				value: i-highlighted-inline-title
+	-
+		id: i-improved-headings-and-spacing
+		title: Improved headings and spacing
+		type: heading
+		level: 1
+	-
+		id: i-headings-and-spacing
+		title: Improved headings and spacing
+		description: Makes heading and paragraph spacing more consistent between Live Preview and Reading View. Enable to adjust heading sizes and spacing below headings.
+		type: class-toggle
+		default: true
+	-
+		id: i-heading-sizes
+		title: Heading sizes
+		type: variable-number-slider
+		default: 0.5
+		min: 0
+		max: 0.8
+		step: 0.05
+		format: em
+	-
+		id: i-spacing-below-headings
+		title: Spacing below headings (rem)
+		type: variable-number-slider
+		default: 0.3
+		min: 0
+		max: 1.5
+		step: 0.1
+		format: rem
+*/
+
+/* @settings
+name: 'Iridium: Light mode'
+id: i-light-mode
+settings:
+	-
+		id: i-light-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 25
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-light-l
+		title: Lightness
+		type: variable-number-slider
+		default: 1
+		min: 0.5
+		max: 1.5
+		step: 0.05
+*/
+
+/* @settings
+name: 'Iridium: Dark mode'
+id: i-dark-mode
+settings:
+	-
+		id: i-dark-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 12
+		min: 0
+		max: 25
+		step: 1
+		format: '%'
+	-
+		id: i-dark-bg-l
+		title: Background lightness (%)
+		type: variable-number-slider
+		default: 12
+		min: 0
+		max: 25
+		step: 1
+		format: '%'
+	-
+		id: i-dark-l
+		title: Lightness
+		type: variable-number-slider
+		default: 1
+		min: 0.5
+		max: 1.5
+		step: 0.05
+*/

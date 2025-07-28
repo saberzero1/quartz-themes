@@ -1,0 +1,953 @@
+/*
+ * MUSHIN - A Zen-Inspired Obsidian Theme
+ * Embodying the Japanese concept of 無心 (mushin) - "no-mind"
+ * A state of calm awareness and effortless flow
+ * 
+ * Created for deep focus and mental tranquility
+ */
+
+/* @settings
+name: Mushin Theme
+id: mushin-theme
+settings:
+  - title: Hide status bar
+    id: hide-status-bar
+    type: class-toggle
+    default: false
+    description: Completely hide the status bar
+*/
+
+/* ========================= */
+/* ROOT VARIABLES - ZEN PALETTE */
+/* ========================= */
+
+.theme-light, .theme-dark {
+  /* Primary Colors - Natural & Calming */
+  --background-primary: #fafafa;
+  --background-primary-alt: #f5f5f5;
+  --background-secondary: #f0f0f0;
+  --background-secondary-alt: #ebebeb;
+  --background-modifier-border: #e5e5e5;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #f8f8f8;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.05);
+  --background-modifier-success: #e8f5e8;
+  --background-modifier-error: #ffeaea;
+  --background-modifier-error-rgb: 255, 234, 234;
+  --background-modifier-error-hover: #ffe0e0;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  
+  /* Text Colors - Warm & Readable */
+  --text-normal: #2c2c2c;
+  --text-muted: #6b6b6b;
+  --text-faint: #999999;
+  --text-accent: #6b7d6b;
+  --text-accent-hover: #5a6d5a;
+  --text-on-accent: #ffffff;
+  --text-error: #c55555;
+  --text-warning: #d4a574;
+  --text-success: #6b7d6b;
+  
+  /* Interactive Elements */
+  --interactive-normal: #f5f5f5;
+  --interactive-hover: #ebebeb;
+  --interactive-accent: #6b7d6b;
+  --interactive-accent-hover: #5a6d5a;
+  --interactive-success: #6b7d6b;
+  
+  /* Zen Accent Colors */
+  --mushin-green: #6b7d6b;
+  --mushin-beige: #c9b896;
+  --mushin-stone: #a8a8a8;
+  --mushin-paper: #fafafa;
+  --mushin-ink: #2c2c2c;
+  --mushin-shadow: rgba(0, 0, 0, 0.08);
+  
+  /* Typography */
+  --font-text: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-interface: "Inter", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-monospace: "JetBrains Mono", "SF Mono", "Monaco", "Inconsolata", monospace;
+  
+  /* Spacing - Generous & Breathable */
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 8px;
+  --size-4-2: 12px;
+  --size-4-3: 16px;
+  --size-4-4: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-12: 48px;
+  
+  /* Border Radius - Soft & Natural */
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+}
+
+/* Dark Theme Variant - Night Zen */
+.theme-dark {
+  --background-primary: #1a1a1a;
+  --background-primary-alt: #222222;
+  --background-secondary: #2a2a2a;
+  --background-secondary-alt: #333333;
+  --background-modifier-border: #3a3a3a;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-highlighted: #333333;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  
+  --text-normal: #e8e8e8;
+  --text-muted: #a8a8a8;
+  --text-faint: #666666;
+  --text-accent: #8fa68f;
+  --text-accent-hover: #a0b7a0;
+  
+  --interactive-normal: #333333;
+  --interactive-hover: #404040;
+  --interactive-accent: #8fa68f;
+  --interactive-accent-hover: #a0b7a0;
+  
+  --mushin-green: #8fa68f;
+  --mushin-beige: #d4c096;
+  --mushin-paper: #1a1a1a;
+  --mushin-ink: #e8e8e8;
+  --mushin-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= */
+/* GLOBAL FOUNDATION */
+/* ========================= */
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-text);
+  line-height: 1.6;
+  font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth Zen Transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, 
+              box-shadow 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* ========================= */
+/* WORKSPACE LAYOUT - FLOWING SPACES */
+/* ========================= */
+
+/* Main Tab Header - Centered Elegance (multiple selectors) */
+.workspace-tabs,
+.workspace-leaf-content .workspace-tab-header,
+.mod-horizontal .workspace-tab-header,
+.workspace-tab-header-container,
+div[data-type] .workspace-tab-header {
+  display: flex;
+  justify-content: center;
+}
+
+.workspace-tab-header-container-inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* For main workspace tabs specifically */
+.workspace > .workspace-split > .workspace-leaf > .workspace-leaf-content > .workspace-tab-header {
+  display: flex;
+  justify-content: center;
+}
+
+.workspace > .workspace-split > .workspace-leaf > .workspace-leaf-content > .workspace-tab-header > .workspace-tab-header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Universal tab centering - last resort */
+.workspace-tab-header:not(.workspace-sidebar .workspace-tab-header) {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.workspace-tab-header-container:not(.workspace-sidebar .workspace-tab-header-container) {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+/* Main Workspace */
+.workspace {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-vertical {
+  gap: 1px;
+}
+
+.workspace-split.mod-horizontal {
+  gap: 1px;
+}
+
+/* Workspace Leaves */
+.workspace-leaf {
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--mushin-shadow);
+}
+
+.workspace-leaf-content {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+/* ========================= */
+/* SIDEBAR - ZEN NAVIGATION */
+/* ========================= */
+
+/* Sidebar Container */
+.workspace-sidebar {
+  background-color: var(--background-primary-alt);
+  border-right: 1px solid var(--background-modifier-border);
+  box-shadow: 2px 0 8px var(--mushin-shadow);
+}
+
+.workspace-sidebar.mod-right {
+  border-left: 1px solid var(--background-modifier-border);
+  border-right: none;
+  box-shadow: -2px 0 8px var(--mushin-shadow);
+}
+
+/* Sidebar Tabs - Mushin Zen Style */
+.workspace-tab-header {
+  background: var(--background-primary);
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding: 16px 20px 0;
+  position: relative;
+}
+
+.workspace .mod-root .workspace-tab-header {
+  max-width: 200px;
+  padding: 7px 3px 4px;
+  margin: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.workspace-tab-header-container {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  padding: 0;
+  justify-content: center;
+}
+
+.workspace-tab-header-tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  max-width: 220px;
+  height: 52px;
+  padding: 0 28px;
+  margin: 0 2px;
+  background: var(--background-primary-alt);
+  border: 2px solid var(--background-modifier-border);
+  border-bottom: none;
+  border-radius: 18px 18px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.workspace-tab-header-tab.is-active {
+  background: var(--background-primary);
+  color: var(--mushin-green);
+  border-color: var(--mushin-green);
+  border-bottom: 4px solid var(--mushin-green);
+  font-weight: 600;
+}
+
+/* Natural text styling */
+.workspace-tab-header-tab .workspace-tab-header-tab-title,
+.workspace-tab-header-tab .workspace-tab-header-inner-title {
+  text-align: center;
+  width: 100%;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-text), 'Noto Sans JP', sans-serif;
+}
+
+/* Remove previous centering overrides */
+.workspace-tab-header-tab, 
+.workspace-tab-header-tab *,
+.workspace-tab-header-inner-title,
+.workspace-leaf .workspace-tab-header-inner-title,
+.workspace-leaf-content .workspace-tab-header-tab,
+[data-type] .workspace-tab-header-tab,
+[data-type] .workspace-tab-header-tab *,
+div.workspace-tab-header-tab,
+.workspace-tab-header-tab-title,
+.workspace-tab-header-tab span,
+.workspace-tab-header-tab div {
+  text-align: unset !important;
+  text-align-last: unset !important;
+}
+
+/* Remove default Obsidian tab box-shadow */
+.workspace-split.mod-root .workspace-tab-header.is-active::before, 
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: none !important;
+}
+
+/* ========================= */
+/* FILE EXPLORER - NATURAL HIERARCHY */
+/* ========================= */
+
+.nav-files-container {
+  padding: var(--size-4-2);
+}
+
+/* File Items */
+.nav-file, .nav-folder {
+  margin: var(--size-2-1) 0;
+}
+
+.nav-file-title, .nav-folder-title {
+  padding: var(--size-4-1) var(--size-4-2);
+  border-radius: var(--radius-s);
+  color: var(--text-normal);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+  background-color: var(--interactive-hover);
+}
+
+.nav-file-title.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.nav-folder-title {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Folder Icons */
+.nav-folder-collapse-indicator {
+  color: var(--text-faint);
+}
+
+/* ========================= */
+/* EDITOR - PURE FOCUS */
+/* ========================= */
+
+/* Editor Container */
+.markdown-source-view, .markdown-preview-view {
+  padding: var(--size-4-8) var(--size-4-6);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.markdown-source-view .cm-editor {
+  background-color: transparent;
+}
+
+.cm-editor .cm-scroller {
+  font-family: var(--font-text);
+}
+
+/* Editor Content */
+.cm-line {
+  padding-left: var(--size-4-2);
+  padding-right: var(--size-4-2);
+}
+
+/* Cursor */
+.cm-cursor {
+  border-left: 2px solid var(--text-accent);
+}
+
+.cm-focused .cm-cursor {
+  border-left-color: var(--text-accent);
+}
+
+/* Selection */
+.cm-selectionBackground {
+  background-color: rgba(107, 125, 107, 0.15) !important;
+}
+
+/* ========================= */
+/* TYPOGRAPHY - HARMONIOUS HIERARCHY */
+/* ========================= */
+
+/* Bold Text - Subtle Zen Enhancement */
+.cm-strong, .markdown-preview-view strong,
+.cm-strong .cm-em, .markdown-preview-view strong {
+  color: var(--mushin-green);
+  font-weight: 600;
+  text-shadow: 0 0 1px rgba(107, 125, 107, 0.1);
+}
+
+/* Highlighted Text - Zen Green */
+.cm-highlight, .markdown-preview-view mark {
+  background-color: rgba(107, 125, 107, 0.15);
+  color: var(--mushin-ink);
+  padding: var(--size-2-1) var(--size-2-2);
+  border-radius: var(--radius-s);
+  border: 1px solid rgba(107, 125, 107, 0.2);
+  box-shadow: 0 1px 3px rgba(107, 125, 107, 0.1);
+}
+
+/* Headings */
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6,
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+  color: var(--mushin-green) !important;
+}
+
+/* Links */
+.cm-link, .markdown-preview-view a {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.cm-link:hover, .markdown-preview-view a:hover {
+  border-bottom-color: var(--text-accent-hover);
+}
+
+/* Internal Links */
+.internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+.internal-link:hover {
+  color: var(--text-accent-hover);
+}
+
+/* Code */
+.cm-inline-code, .markdown-preview-view code {
+  background-color: var(--background-modifier-form-field);
+  color: var(--mushin-ink);
+  padding: var(--size-2-1) var(--size-2-3);
+  border-radius: var(--radius-s);
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Code Blocks */
+.cm-editor .HyperMD-codeblock, .markdown-preview-view pre {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-4);
+  margin: var(--size-4-3) 0;
+  font-family: var(--font-monospace);
+  overflow-x: auto;
+}
+
+/* CSS Code Blocks - Darker Background */
+.cm-editor .HyperMD-codeblock.language-css, 
+.markdown-preview-view pre code.language-css,
+.markdown-preview-view pre[class*="language-css"] {
+  background-color: rgba(44, 44, 44, 0.05);
+  border: 1px solid rgba(107, 125, 107, 0.2);
+}
+
+.theme-dark .cm-editor .HyperMD-codeblock.language-css,
+.theme-dark .markdown-preview-view pre code.language-css,
+.theme-dark .markdown-preview-view pre[class*="language-css"] {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(143, 166, 143, 0.2);
+}
+
+/* Lists */
+.cm-formatting-list, .markdown-preview-view ul, .markdown-preview-view ol {
+  margin: var(--size-4-2) 0;
+}
+
+.markdown-preview-view li {
+  margin: var(--size-2-2) 0;
+  line-height: 1.6;
+}
+
+/* Blockquotes - Ultra Simple Edit Mode */
+.cm-quote {
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-style: normal;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  position: static;
+  box-shadow: none;
+}
+
+.cm-quote::before,
+.cm-quote::after {
+  display: none !important;
+}
+
+.cm-quote:hover {
+  transform: none;
+  transition: none;
+}
+
+/* Blockquotes - Zen Effects Only in Reading Mode */
+.markdown-preview-view blockquote {
+  border: none;
+  background: transparent;
+  margin: var(--size-4-8) var(--size-4-6);
+  padding: var(--size-4-6) var(--size-4-8);
+  position: relative;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.markdown-preview-view blockquote::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--mushin-green) 20%, var(--mushin-green) 80%, transparent 100%);
+  opacity: 0.6;
+}
+
+.markdown-preview-view blockquote::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--mushin-green) 20%, var(--mushin-green) 80%, transparent 100%);
+  opacity: 0.6;
+}
+
+.markdown-preview-view blockquote:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
+
+.markdown-preview-view blockquote:hover::before,
+.markdown-preview-view blockquote:hover::after {
+  width: 80px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* TAGS - SUBTLE ANNOTATIONS */
+/* ========================= */
+
+.tag {
+  background-color: var(--mushin-beige);
+  color: var(--mushin-ink);
+  padding: var(--size-2-1) var(--size-4-1);
+  border-radius: var(--radius-l);
+  font-size: 0.85em;
+  font-weight: 500;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: var(--size-2-1);
+}
+
+.tag:hover {
+  background-color: var(--text-accent);
+  color: var(--text-on-accent);
+}
+
+/* ========================= */
+/* SEARCH - CLEAR DISCOVERY */
+/* ========================= */
+
+.search-input-container {
+  margin-bottom: var(--size-4-3);
+}
+
+.search-input {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-2) var(--size-4-3);
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  border-color: var(--text-accent);
+  box-shadow: 0 0 0 2px rgba(107, 125, 107, 0.2);
+  outline: none;
+}
+
+.search-result {
+  padding: var(--size-4-2);
+  border-radius: var(--radius-s);
+  margin-bottom: var(--size-2-2);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.search-result:hover {
+  background-color: var(--interactive-hover);
+}
+
+/* ========================= */
+/* BUTTONS & CONTROLS - MINDFUL INTERACTION */
+/* ========================= */
+
+.clickable-icon, .button {
+  padding: var(--size-4-1);
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.clickable-icon:hover, .button:hover {
+  background-color: var(--interactive-hover);
+  color: var(--text-normal);
+}
+
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-2) var(--size-4-4);
+  font-weight: 600;
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* ========================= */
+/* STATUS BAR - HIDDEN ZEN WITH HOVER REVEAL */
+/* ========================= */
+
+/* Always visible status bar, no hover effects */
+.status-bar {
+  opacity: 1 !important;
+  pointer-events: all !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Hide status bar if option is enabled in settings (add .mushin-hide-status-bar on body) */
+body.mushin-hide-status-bar .status-bar {
+  display: none !important;
+}
+
+/* Remove any trigger element if present */
+.status-bar-trigger {
+  display: none !important;
+}
+
+/* Hide the status bar if the option is enabled in Style Settings */
+.hide-status-bar .status-bar {
+  display: none !important;
+}
+
+/* ========================= */
+/* MODALS & DIALOGS - FOCUSED CLARITY */
+/* ========================= */
+
+.modal {
+  background-color: var(--background-primary);
+  border-radius: var(--radius-l);
+  box-shadow: 0 8px 32px var(--mushin-shadow);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.modal-header {
+  padding: var(--size-4-6) var(--size-4-6) var(--size-4-3);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.modal-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--mushin-ink);
+}
+
+.modal-content {
+  padding: var(--size-4-6);
+}
+
+/* ========================= */
+/* SCROLLBARS - GENTLE GUIDANCE */
+/* ========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mushin-stone);
+  border-radius: var(--radius-l);
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+  opacity: 0.8;
+}
+
+/* ========================= */
+/* SPECIAL ENHANCEMENTS - ZEN TOUCHES */
+/* ========================= */
+
+/* Focus states for better accessibility */
+*:focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: 2px;
+}
+
+/* Gentle entrance animations */
+.workspace-leaf {
+  animation: mushin-fade-in 0.3s ease-out;
+}
+
+@keyframes mushin-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zen-inspired dividers */
+.workspace-split.mod-vertical > .workspace-split-child + .workspace-split-child:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, 
+    transparent 0%, 
+    var(--background-modifier-border) 20%, 
+    var(--background-modifier-border) 80%, 
+    transparent 100%);
+}
+
+/* Enhanced readability for long text - Wide view by default */
+.markdown-preview-view, .markdown-source-view {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Subtle paper texture effect - Light mode only */
+.theme-light .workspace-leaf-content {
+  position: relative;
+}
+
+.theme-light .workspace-leaf-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0,0,0,0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.theme-light .markdown-source-view, 
+.theme-light .markdown-preview-view {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================= */
+/* CALLOUTS & ADMONITIONS - ZEN WISDOM */
+/* ========================= */
+
+/* Base Callout Styling */
+.callout {
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-3);
+  margin: var(--size-4-4) 0;
+  box-shadow: 0 2px 8px var(--mushin-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.callout::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--mushin-green);
+}
+
+.callout-title {
+  font-weight: 600;
+  color: var(--mushin-green);
+  margin-bottom: var(--size-4-2);
+  display: flex;
+  align-items: center;
+  gap: var(--size-4-1);
+}
+
+.callout-content {
+  color: var(--text-normal);
+  line-height: 1.6;
+}
+
+/* Specific Callout Types */
+.callout[data-callout="note"], .callout[data-callout="info"] {
+  background: linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, var(--background-modifier-form-field) 100%);
+  border-color: rgba(107, 125, 107, 0.3);
+}
+
+.callout[data-callout="note"]::before, .callout[data-callout="info"]::before {
+  background: var(--mushin-green);
+}
+
+.callout[data-callout="tip"], .callout[data-callout="hint"] {
+  background: linear-gradient(135deg, rgba(201, 184, 150, 0.08) 0%, var(--background-modifier-form-field) 100%);
+  border-color: rgba(201, 184, 150, 0.3);
+}
+
+.callout[data-callout="tip"]::before, .callout[data-callout="hint"]::before {
+  background: var(--mushin-beige);
+}
+
+.callout[data-callout="tip"] .callout-title, .callout[data-callout="hint"] .callout-title {
+  color: #a68b5b;
+}
+
+.callout[data-callout="warning"], .callout[data-callout="caution"] {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, var(--background-modifier-form-field) 100%);
+  border-color: rgba(212, 165, 116, 0.3);
+}
+
+.callout[data-callout="warning"]::before, .callout[data-callout="caution"]::before {
+  background: #d4a574;
+}
+
+.callout[data-callout="warning"] .callout-title, .callout[data-callout="caution"] .callout-title {
+  color: #d4a574;
+}
+
+.callout[data-callout="quote"], .callout[data-callout="cite"] {
+  background: linear-gradient(135deg, rgba(107, 125, 107, 0.05) 0%, var(--background-modifier-form-field) 100%);
+  border-color: rgba(107, 125, 107, 0.2);
+  font-style: italic;
+  border-radius: var(--radius-l);
+}
+
+.callout[data-callout="quote"]::before, .callout[data-callout="cite"]::before {
+  background: linear-gradient(to bottom, var(--mushin-green), var(--mushin-beige));
+}
+
+.callout[data-callout="quote"] .callout-title, .callout[data-callout="cite"] .callout-title {
+  font-style: normal;
+  color: var(--mushin-green);
+}
+
+/* Dark Theme Adjustments */
+.theme-dark .callout {
+  background: rgba(42, 42, 42, 0.7);
+  border-color: rgba(58, 58, 58, 0.8);
+}
+
+.theme-dark .callout[data-callout="note"], .theme-dark .callout[data-callout="info"] {
+  background: linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+}
+
+.theme-dark .callout[data-callout="tip"], .theme-dark .callout[data-callout="hint"] {
+  background: linear-gradient(135deg, rgba(212, 192, 150, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+}
+
+.theme-dark .callout[data-callout="warning"], .theme-dark .callout[data-callout="caution"] {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+}
+
+/* ========================= */
+/* MUSHIN SIGNATURE - THE ESSENCE */
+/* ========================= */
+
+/* A subtle mark of the zen philosophy */
+.app-container::before {
+  content: '無心 MUSHIN - Think nothing. Do everything.';
+  position: fixed;
+  left: 70px;
+  top: 12px;
+  font-size: 12px;
+  color: var(--text-faint);
+  opacity: 0.5;
+  font-family: serif;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Hide any duplicate instances */
+.titlebar::after,
+.titlebar-inner::after,
+.titlebar .titlebar-button-container.mod-left::after {
+  display: none;
+}
+
+/* Breathing space for mental clarity */
+body {
+  --breathing-space: var(--size-4-2);
+  padding: var(--breathing-space);
+}
+
+/* The way of no-way - effortless interface */
+.mushin-flow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header marker styling */
+.cm-header .cm-header-marker {
+  color: var(--mushin-green) !important;
+  opacity: 1 !important;
+}
+
+/* End of Mushin Theme - May your mind be clear and your thoughts flow like water */ 

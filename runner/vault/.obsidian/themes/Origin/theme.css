@@ -1,0 +1,626 @@
+/* ==== Obsidian Origin ===== */
+/* by Ha'ani Whitlock */
+/* based on Obsidian 0.15.9 */
+
+
+/* basic variables --- the first certain design choices */
+body {
+    --font-default: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", 'Yu Gothic', "Microsoft YaHei Light", sans-serif;
+    --text-on-accent: white !important;
+    --modal-border-color: var(--background-modifier-border) !important;
+    --collapse-icon-color-collapsed: var(--text-muted) !important;
+    --nav-collapse-icon-color: var(--text-muted);
+    --radius-s: 3px;
+    --radius-m: 5px;
+    --radius-l: 6px;
+}
+body:not(.is-mobile) {
+    --header-height: 30px;
+    --ribbon-width: 30px;
+    --titlebar-height: 25px;
+}
+
+/* eliminate the hover effect for some elements */
+.workspace-ribbon,
+.workspace-tab-header-container {
+  --background-modifier-hover: transparent !important;
+}
+
+/* ------- ** padding ** ----------- */
+body {
+    --size-2-1: 6px;
+    --size-2-2: 10px;
+    --size-2-3: 10px;
+    --size-4-1: 4px;
+    --size-4-2: 8px;
+    --ribbon-padding: 0px;
+
+}
+
+/* ----- ** changed icons ** -------- */
+svg.svg-icon.right-triangle,
+svg.svg-icon.sidebar-left,
+svg.svg-icon.lucide-git-fork,
+svg.svg-icon.lucide-folder-plus,
+svg.svg-icon.lucide-folder-closed,
+svg.svg-icon.lucide-folder-open,
+svg.svg-icon.lucide-file,
+[aria-label="New note"] svg.svg-icon.lucide-edit,
+svg.svg-icon.lucide-sort-asc,
+svg.svg-icon.lucide-edit-3,
+svg.svg-icon.lucide-book-open {
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+}
+
+/* collapse/uncollapse */
+svg.svg-icon.right-triangle {
+  transition: none;
+  width: 8px;
+  height: 8px;
+ -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 20 20"%3E%3Cg transform="rotate(180 10 10)"%3E%3Cg fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"%3E%3Cpath d="M9.134 4.501a1 1 0 0 1 1.732 0l5.769 10A1 1 0 0 1 15.769 16H4.23a1 1 0 0 1-.866-1.5l5.769-9.999Z"%2F%3E%3Cpath d="M16.635 14.5a1 1 0 0 1-.866 1.5H4.23a1 1 0 0 1-.866-1.5l5.769-9.999a1 1 0 0 1 1.732 0l5.769 10ZM10 9.003L7.694 13h4.612L10 9.003Z"%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+/* toggle sidebar */ 
+svg.svg-icon.sidebar-left {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 24 24"%3E%3Cg transform="rotate(-90 14 14)"%3E%3Cpath fill="currentColor" d="M23.78 18.53a.75.75 0 0 1-1.06 0L14 9.81l-8.72 8.72a.75.75 0 0 1-1.06-1.06l9.25-9.25a.75.75 0 0 1 1.06 0l9.25 9.25a.75.75 0 0 1 0 1.06Z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+/* graph view button */
+svg.svg-icon.lucide-git-fork {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 228 228"%3E%3Cg transform="rotate(90 128 128)"%3E%3Cpath fill="currentColor" d="M200 154a29.87 29.87 0 0 0-19.5 7.23l-25.62-19.93A29.83 29.83 0 0 0 158 128a30.52 30.52 0 0 0-.22-3.6L174 119a30 30 0 1 0-4-15a30.52 30.52 0 0 0 .22 3.6L154 113a29.91 29.91 0 0 0-32.42-14.31l-8.14-18.3a30 30 0 1 0-11 4.88l8.14 18.3a29.92 29.92 0 0 0-8.52 39.43L74 168a30.08 30.08 0 1 0 8 9l28-25a29.91 29.91 0 0 0 37.47-1.23l25.62 19.93A30 30 0 1 0 200 154Zm0-68a18 18 0 1 1-18 18a18 18 0 0 1 18-18ZM78 56a18 18 0 1 1 18 18a18 18 0 0 1-18-18ZM56 210a18 18 0 1 1 18-18a18 18 0 0 1-18 18Zm72-64a18 18 0 1 1 18-18a18 18 0 0 1-18 18Zm72 56a18 18 0 1 1 18-18a18 18 0 0 1-18 18Z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+/* folder icon */
+svg.svg-icon.lucide-folder-plus,
+svg.svg-icon.lucide-folder-closed,
+svg.svg-icon.lucide-folder-open {
+  width: 19px;
+  height: 19px;
+  -webkit-mask-image:url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 16 16"%3E%3Cpath fill="currentColor" d="M14 6V4H7L6 2H2L1 4H0v11h14l2-9h-2zm.9 1l-1.6 7l-11.9-.1L3.7 7h11.2zM1 5h.6l1-2h2.6l1.2 2H13v1H3l-2 5.9V5z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* note/new note icon */
+svg.svg-icon.lucide-file,
+[aria-label="New note"] svg.svg-icon.lucide-edit {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"  viewBox="0 0 2048 2048"%3E%3Cpath fill="currentColor" d="M1792 549v1499H128V0h1115l549 549zm-512-37h293l-293-293v293zm384 1408V640h-512V128H256v1792h1408z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* sort icon */
+svg.svg-icon.lucide-sort-asc {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 2048 2048"%3E%3Cpath fill="currentColor" d="m1069 499l-90 90l-338-337l-1 1796H512l1-1799l-340 340l-90-90L576 6l493 493zm807 960l91 90l-493 493l-494-493l91-90l338 338l-1-1797h128l1 1798l339-339z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* edit icon */
+svg.svg-icon.lucide-edit-3 {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 64 64"%3E%3Cpath fill="currentColor" d="m59.466 6.317l-1.783-1.784a8.654 8.654 0 0 0-12.234 0L9.419 40.565L2.278 59.237c-.838 2.21.281 3.323 2.484 2.481l18.675-7.134l36.029-36.033c3.381-3.376 3.377-8.853 0-12.234m-22.629 9.486l2.508 2.507l-24.764 24.766l-2.508-2.509l24.764-24.764m3.834 3.834l3.695 3.696l-24.763 24.765l-3.695-3.695l24.763-24.766M11.026 57.32l-4.342-4.346l4.201-10.941L21.964 53.11l-10.938 4.21m12.411-5.387l-2.506-2.509l24.762-24.765l2.508 2.509l-24.764 24.765m26.209-26.21L38.281 14.36l2.827-2.828l11.365 11.363l-2.827 2.828"%2F%3E%3C%2Fsvg%3E');
+}
+
+svg.svg-icon.lucide-book-open {
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 512 512"%3E%3Ccircle cx="256" cy="256" r="64" fill="currentColor"%2F%3E%3Cpath fill="currentColor" d="M490.84 238.6c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.66 96c-42.52 0-84.33 12.15-124.27 36.11c-40.73 24.43-77.63 60.12-109.68 106.07a31.92 31.92 0 0 0-.64 35.54c26.41 41.33 60.4 76.14 98.28 100.65C162 402 207.9 416 255.66 416c46.71 0 93.81-14.43 136.2-41.72c38.46-24.77 72.72-59.66 99.08-100.92a32.2 32.2 0 0 0-.1-34.76ZM256 352a96 96 0 1 1 96-96a96.11 96.11 0 0 1-96 96Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+/* --------- ****** Light and Dark themes ****** ---------- */
+
+/* ---- ***** Light Theme ***** ---- */
+.theme-light, .is-mobile.theme-light {
+    --color-base-00: #ffffff;
+    --color-base-10: #f5f6f8;
+    --color-base-20: #f2f3f5;
+    --color-base-05: #e3e5e8;
+    --color-base-30: #ddd;
+    --color-base-25: rgb(242, 242, 242);
+    --color-base-35: rgb(250, 250, 250);
+    --color-base-50: #999999;
+    --color-base-60: #919191;
+    --color-base-70: #888888;
+    --color-base-100: #2e3338;
+    --color-accent: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 25%), calc(var(--accent-l) - 4%));
+    --color-accent-1: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 27%), calc(var(--accent-l) - 6%));
+    --color-accent-2: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%));
+
+  }
+  .theme-dark, .is-mobile.theme-dark {
+    --color-base-00: #202020;
+    --color-base-05: #1a1a1a;
+    --color-base-10: #000000;
+    --color-base-20: #161616;
+    --interactive-normal: #0c0c0c;
+    --input-shadow: var(--background-modifier-border) 0 0 0px 1px;
+    --background-secondary-alt: var(--color-base-10);
+    --color-accent-1: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 27%));
+    --color-accent-2: hsl(calc(var(--accent-h) - 8), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 8%));
+    --color-accent: hsl(calc(var(--accent-h) - 8), calc(var(--accent-s) + 5%), calc(var(--accent-l) + 4%));
+  }
+
+  .theme-light, .theme-dark {
+    --color-blue-rgb: 68, 138, 255;
+    --color-blue: rgb(68, 138, 255);
+    --color-light-blue-rgb: 0, 176, 255;
+    --color-light-blue: rgb(0, 176, 255);
+    --color-cyan-rgb: 0, 184, 212;
+    --color-cyan: rgb(0, 184, 212);
+    --color-teal-rgb: 0, 191, 165;
+    --color-teal: rgb(0, 191, 165);
+    --color-dark-green-rgb: 0, 191, 165;
+    --color-dark-green: rgb(0, 191, 165);
+    --color-green-rgb: 100, 221, 23;
+    --color-green: rgb(100, 221, 23);
+    --color-orange-rgb: 255, 145, 0;
+    --color-orange: rgb(255, 145, 0);
+    --color-orange-red-rgb: 255, 82, 82;
+    --color-orange-red: rgb(255, 82, 82);
+    --color-red-rgb: 255, 23, 68;
+    --color-red: rgb(255, 23, 68);
+    --color-pink-rgb: 245, 0, 87;
+    --color-pink: rgb(245, 0, 87);
+    --color-purple-rgb: 124, 77, 255;
+    --color-purple: rgb(124, 77, 255);
+
+  }
+
+ 
+/* ------------ ****** Sidebar ****** ----------*/  
+
+  /* --------***** Ribbon *****--------- */
+body {
+    --ribbon-background: var(--background-secondary-alt);
+    --ribbon-background-collapsed: var(--background-secondary-alt);
+}
+
+.workspace-ribbon.mod-left:before {
+    background-color: var(--ribbon-background);
+    border-bottom: var(--tab-outline-width) solid var(--background-secondary-alt);
+    border-right: var(--tab-outline-width) solid var(--ribbon-background);
+    width: var(--ribbon-width);
+  }
+  .workspace-ribbon.mod-left .sidebar-toggle-button {
+    width: calc(vaR(--ribbon-width) - 10px);
+    padding: 0px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 30px;
+  }
+
+
+/* toggle animation for the 'expand ribbon' button */
+  .workspace-ribbon.is-collapsed .sidebar-toggle-button {
+    transform: rotateY(180deg);
+  }
+  
+  .workspace-ribbon {
+    border-left: none;
+    border-right: none;
+  }
+  /* position the settings a short distance above the bottom of the ribbon */
+  /* in the old version, it didn't touch the bottom completely */
+  .side-dock-settings {
+    margin-bottom: 2.75em; 
+  }
+
+  /* increase top margin for the side dock actions */
+  .side-dock-actions {
+    margin-top: 40px;
+  }
+  .side-dock-ribbon {
+    flex: 0 0 var(--ribbon-width);
+  }
+
+  .workspace-ribbon .clickable-icon {
+    padding-left: 6px;
+  }
+
+/* --------- ***** Files and Folders ***** --------- */
+
+/* -- increase padding -- */
+.nav-files-container {
+  padding:  0.4em 0.5em;
+}
+
+
+/*--- **** Folders **** -------- */
+body {
+--nav-indentation-guide-width: 0px;
+}
+
+
+/* --- **** Vault Name **** --- */
+
+.nav-folder.mod-root > .nav-folder-title {
+  padding-left: 15px;
+  font-size: 1.03em;
+  font-weight: 400 !important;
+  font-family: var(--font-interface-override), 'Avenir Next';
+}
+
+/* ----- ***** Files ***** ----- */
+
+body {
+  --nav-item-background-active: var(--background-secondary-alt);
+  --nav-item-background-hover: var(--background-secondary-alt);
+  --background-modifier-hover: var(--background-secondary);
+  --nav-item-background-selected: transparent;
+}
+.nav-file-title, .nav-folder-title {
+  border-radius: 2px;
+}
+.nav-file-title.is-selected, .nav-folder-title.is-selected {
+  border: 1px solid hsla(var(--color-accent-hsl), 0.45);
+}
+
+
+
+/* ------------------------------------------------------------- */
+
+/* ----------------- ****** Tabs ****** --------------- */
+body {
+    --titlebar-background-focused: var(--background-secondary-alt);
+    --titlebar-background: var(--background-secondary-alt);
+    --tab-curve: 0;
+    --tab-radius: 3px;
+    --tab-radius-active: 3px;
+    --tab-background-active: var(--background-primary-alt);
+    --tab-divider-color: transparent;
+    --tab-outline-color: transparent;
+}
+
+/* ----- ***** Tab Appearance ***** ----- */
+.workspace-tab-header {
+margin-bottom: 4px;
+}
+.workspace-tab-header-container-inner {
+  margin-top: 3px;
+}
+
+
+/* remove background */
+
+/* ---> make the tabs above the notes "disappear", while leaving the file explorer tabs <----- */
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
+margin: 0;
+height: 5px;
+}
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) >* {
+ opacity: 0;
+  }
+
+/* transitions */
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+  transition: 0.15s;
+}
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):not(:hover) {
+  transition-delay: 0.15s;
+}
+.workspace-tab-header-container:not(:has([data-type="file-explorer"])):hover >*  {
+  transition: 0.3s;
+}
+
+/* ----- **** Tab Classes (Style Settings **** ---- */
+
+/* --- *** Hide Tabs *** --- */
+.hide-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+  display: none;
+ }
+
+/* --- *** Show Tabs *** --- */
+.show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) {
+  height: var(--header-height);
+ }
+ .show-tabs .workspace-tab-header-container:not(:has([data-type="file-explorer"])) >* {
+  opacity: 1;
+ }
+
+
+/* --> attempt to make the file explorer tabs look like real TAB-tabs */
+
+/* remove spacing between the file explorer and the tabs */
+.mod-left-split .workspace-tab-header-container-inner {
+    padding-bottom: 0px;
+    margin-top: 3px;
+}
+.workspace-tab-header-container {
+background-color: var(--background-secondary-alt) !important;
+}
+/* make the background lighter, like a tab.
+But only when the file explorer is not active, because
+the colorful border interferes with the tab look. */
+.mod-left-split .workspace-tab-header.is-active {
+	background-color: var(--background-secondary) !important;
+  border-radius: 4px 4px 0 0;
+}
+
+
+.mod-left-split .workspace-tab-header {
+  /* make these tabs wider */
+  width: 45px;
+}
+
+
+/* remove bottom border for tabs */
+.workspace-tab-header-container {
+    border-bottom: none;
+}
+
+/* ------------ ****** Titlebar ****** ---------- */
+.titlebar {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* ----------- ****** View Header ****** ----------- */
+body {
+  --file-header-justify: left;
+}
+
+/* show the note icon in the view header. */
+/* This button can be used to drag the note into another pane. */
+body:not(.is-mobile) .view-header .view-header-icon {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+body:not(.is-mobile) .view-header {
+    height: var(--header-height) !important;
+    background-color: var(--background-primary);
+  border-bottom: var(--border-width) solid var(--background-modifier-border);
+}
+.view-header-title {
+  color: var(--text-normal);
+  font-weight: 600;
+  padding-left: 0;
+}
+
+
+/* remove breadcrumbs */
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator {
+  display: none;
+}
+
+/* hide navigation arrows */
+.hide-arrows .view-header-nav-buttons .clickable-icon[aria-label="Navigate back"],
+.hide-arrows view-header-nav-buttons .clickable-icon[aria-label="Navigate forward"]  {
+display: none !important;
+}
+
+/* ------------ ******* Note Content and Markdown ****** ------------ */
+
+/* --------- ***** Active note border **** ------------ */
+
+/* give the panes a pre-existing invisible border to make the transition smoother */
+.workspace-leaf {
+  border: 1px solid transparent;
+}
+
+/* now active panes have a colorful border just like in the older version! */
+body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="markdown"]),
+body:not(.is-mobile) .workspace-leaf.mod-active:has([data-type="empty"])  {
+  border-color: hsla(var(--color-accent-hsl), 0.45) !important;
+}
+
+/* ------ ****** Blockquotes ****** ------ */
+body {
+  --blockquote-border-thickness: 4px;
+  --blockquote-border-color: var(--background-modifier-border);
+}
+blockquote {
+  border-top: 1px solid var(--blockquote-border-color);
+  border-bottom: 1px solid var(--blockquote-border-color);
+  border-right: 1px solid var(--blockquote-border-color);
+  padding: 0.8em 1.25em !important;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0 !important;
+}
+
+/* ----- ***** Frontmatter/Metadata ***** ----- */
+
+/* -- Old Codeblock Metadata Look -- */
+.frontmatter.language-yaml {
+  display:block !important; /* show metadata code block */
+ }
+ .frontmatter-container {
+  display: none !important; /* hide the new frontmatter container */
+ }
+
+/* common "hide frontmatter" classes built in, just in case someone has any of these snippets */
+.hide-m .frontmatter.language-yaml,
+.no-m .frontmatter.language-yaml,
+.hide-frontmatter .frontmatter.language-yaml,
+.no-frontmatter .frontmatter.language-yaml,
+.hide-meta .frontmatter.language-yaml,
+.no-meta .frontmatter.language-yaml,
+.hide-metadata .frontmatter.language-yaml,
+.no-metadata .frontmatter.language-yaml,
+.frontmatter-properties .frontmatter.language-yaml /* when properties are turned on */ {
+  display: none !important;
+}
+
+body:not(.frontmatter-properties) .metadata-container {
+  display: none !important;
+}
+
+
+/* ----- ***** Callouts ***** ----- */
+body {
+  --callout-title-color: var(--text-normal);
+  --callout-title-padding: 0.7em 0.5em 0.7em 0.7em;
+  --callout-title-size: var(--h6-size);
+  --callout-padding: 0;
+  --callout-content-padding: 0.25em 1.2em;
+  --callout-content-background: var(--background-secondary);
+  --callout-blend-mode: normal;
+
+  --callout-bug: var(--color-pink-rgb);
+  --callout-fail: var(--color-orange-red-rgb);
+  --callout-important: var(--color-teal-rgb);
+  --callout-info: var(--color-cyan-rgb);
+  --callout-question: var(--color-green-rgb);
+  --callout-success: var(--color-dark-green-rgb);
+  --callout-summary: var(--color-light-blue-rgb);
+  --callout-tip: var(--color-teal-rgb);
+  --callout-todo: var(--color-cyan-rgb);
+}
+.callout {
+  border: none;
+  background-color: var(--background-secondary);
+  border-left: 4px solid rgb(var(--callout-color));
+}
+.callout-title-inner {
+  font-weight: bold;
+  margin-left: 0.4em;
+}
+.callout-title {
+  background-color: rgba(var(--callout-color), 0.14);
+}
+
+
+/* ----- ***** Code and Code Blocks ***** ----- */
+body {
+--code-background: var(--background-secondary);
+--code-normal: var(--text-normal);
+--code-comment: var(--text-faint);
+--code-function: var(--color-yellow);
+--code-important: var(--color-orange);
+--code-keyword: var(--color-pink);
+--code-operator: var(--color-red);
+--code-property: var(--color-dark-green);
+--code-punctuation: var(--text-muted);
+--code-string: var(--color-teal);
+--code-tag: var(--color-orange-red);
+--code-value: var(--color-purple);
+}
+
+code[class*="language"], pre[class*="language"] {
+  text-shadow: 0 1px var(--background-primary); /* metallic "inset" look */
+  color: var(--text-normal) !important;
+}
+.markdown-rendered code {
+  color: rgb(202, 57, 86);
+  padding: 2px 4px;
+}
+
+/* ------ ***** Tables ***** ----- */
+body {
+  --table-header-weight: bold;
+}
+
+/*  ---------------- ****** Modals and Settings ****** --------------- */
+
+/* ----- ***** Settings ***** ------ */
+body {
+  --modal-width: 80vw;
+  --modal-max-width: 80vw;
+  --modal-height: 650px;
+  --modal-border-width: 0px;
+  --background-modifier-cover: rgba(0, 0, 0, 0.78) !important;
+}
+
+/* --- *** settings sidebar *** --- */
+
+/* settings sidebar headers */
+.vertical-tab-header-group-title {
+font-size: var(--font-ui-small);
+text-transform: uppercase;
+padding: 1em 0em 0.9em 1.5em;
+}
+
+/* change background color and  essentially remove padding */
+.vertical-tab-header {
+  background-color: var(--background-secondary-alt);
+  padding: 0 0 0 1px; /* keep a bit of padding on the left so that the left border of the selected nav item shows */
+}
+
+/* increase padding */
+.vertical-tab-nav-item {
+  padding: 0.8em 0 0.8em 2em; 
+  border-radius: 0;
+  margin: 2px 0 0 2px;
+}
+
+/* add hover and select effects */
+.vertical-tab-nav-item:hover {
+  background-color: var(--background-secondary) !important;
+}
+.vertical-tab-nav-item.is-active {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  border-left: 2.5px var(--interactive-accent) solid;
+}
+
+.modal.mod-settings .vertical-tab-header {
+  border-right: none; /* remove sidebar border */
+}
+
+/* ---- **** main settings section **** ---- */
+.horizontal-tab-content, .vertical-tab-content {
+  background-color: var(--background-secondary);
+}
+
+/* setting items */
+.setting-item {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.setting-item.setting-item-heading {
+  padding-bottom: 0;
+}
+select.dropdown {
+  height: 2.6em;
+  font-size: var(--font-ui-medium);
+}
+
+/* buttons and inputs */
+body {
+  --button-radius: 3px;
+
+}
+button {
+  padding: 0 1.3em;
+  font-size: 14px;
+}
+
+/* make modal overlay darker */
+.modal-bg {
+  opacity: 1;
+}
+
+/* --------- ****** Scrollbars ****** --------- */
+
+::-webkit-scrollbar {
+    width:10px !important;
+  }
+
+/* @settings
+name: Origin
+id: origin-theme
+settings:
+    -
+        id: tab-options
+        title: Tab Display
+        type: class-select
+        allowEmpty: false
+        default: tabs-default
+        options:
+          -
+            label: Hide Tabs Completely
+            value: hide-tabs
+          -
+            label: Show Tabs on Hover
+            value: tabs-default
+          -
+            label: Show Tabs Completely
+            value: show-tabs
+    -
+      id: frontmatter-style
+      title: Frontmatter/Properties Style
+      type: class-select
+      allowEmpty: false
+      default: frontmatter-classic
+      options:
+        -
+          label: Classic Frontmatter
+          value: frontmatter-classic
+        - 
+          label: Properties
+          value: frontmatter-properties
+
+
+*/

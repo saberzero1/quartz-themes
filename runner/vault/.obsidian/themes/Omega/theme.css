@@ -1,0 +1,577 @@
+/**
+ * Omega Theme for Obsidian
+ * Author: OmegaC
+ * Version: 1.0.0
+ */
+
+:root {
+    --deep-space-blue-1: rgb(11 12 64);
+    --deep-space-blue-2: rgb(16 0 43);
+    --solar-flare-orange: rgb(255 111 60);
+    --nebula-pink: rgb(248 87 166);
+    --starfire-yellow: rgb(255 210 63);
+    --void-purple: rgb(63 14 64);
+    --lava-orange: rgb(255 107 53);
+    --plasma-pink: rgb(247 108 94);
+    --infrared-red: rgb(214 40 40);
+    --solar-gold: rgb(215 184 1);
+    --cyber-orange: rgb(255 179 71);
+    --electric-purple: rgb(157 78 221);
+    --white-nova: rgb(248 247 255);
+    --blackhole: rgb(17 17 17);
+    --cornflower: rgb(100 149 237);
+    --azure: rgb(0 127 255);
+}
+
+.theme-dark {
+    --color-base-20: var(--deep-space-blue-2);
+    --color-base-30: var(--deep-space-blue-1);
+    --color-base-40: var(--infrared-red);
+    --color-base-50: var(--solar-gold);
+    --color-base-70: var(--white-nova);
+    --color-base-100: var(--white-nova);
+    --color-accent: var(--starfire-yellow);
+    --interactive-accent-hover: var(--solar-gold);
+    --text-accent: var(--solar-gold);
+    --text-on-accent: var(--blackhole);
+    --text-accent-hover: var(--cyber-orange);
+    --text-selection: #ff6f3c80;
+    --background-modifier-border-focus: transparent;
+    --background-modifier-border: transparent;
+}
+.theme-light {
+    --highlight-mix-blend-mode: lighten;
+    --color-base-00: #1e1e1e;
+    --color-base-05: #212121;
+    --color-base-10: #242424;
+    --color-base-20: var(--deep-space-blue-2);
+    --color-base-25: #2a2a2a;
+    --color-base-30: var(--deep-space-blue-1);
+    --color-base-35: #3f3f3f;
+    --color-base-40: var(--infrared-red);
+    --color-base-50: var(--solar-gold);
+    --color-base-60: #999999;
+    --color-base-70: var(--white-nova);
+    --color-base-100: var(--white-nova);
+    --color-accent-hsl: var(--accent-h),
+                var(--accent-s),
+                var(--accent-l);
+    --color-accent: var(--starfire-yellow);
+    --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+    --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
+    --background-modifier-form-field: var(--color-base-25);
+    --interactive-hover: var(--color-base-35);
+    --text-accent: var(--color-accent-1);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--solar-gold);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-cover: rgba(10, 10, 10, 0.4);
+    --text-selection: #ff6f3c80;
+    --background-modifier-border-focus: transparent;
+    --background-modifier-border: transparent;
+    --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+            0 2px 4px 0 rgba(0,0,0,.15),
+            0 1px 1.5px 0 rgba(0,0,0,.1),
+            0 1px 2px 0 rgba(0,0,0,.2),
+            0 0 0 0 transparent;
+    --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+            0 2px 3px 0 rgba(0,0,0,.3),
+            0 1px 1.5px 0 rgba(0,0,0,.2),
+            0 1px 2px 0 rgba(0,0,0,.4),
+            0 0 0 0 transparent;
+    --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+            0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+            0px 15px 30px rgba(0, 0, 0, 0.3);
+    --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+            0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+            0px 30px 90px rgba(0, 0, 0, 0.2);
+    --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+    --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+}
+
+body {
+    /* Text */
+    --bold-color: var(--cornflower);
+    --italic-color: var(--plasma-pink);
+    --h1-color: var(--white-nova);
+    --h2-color: var(--starfire-yellow);
+    --h3-color: var(--solar-gold);
+    --h4-color: var(--lava-orange);
+    --h5-color: var(--plasma-pink);
+    --h6-color: var(--nebula-pink);
+
+    /* Links */
+    --link-color: var(--starfire-yellow);
+    --link-color-hover: var(--electric-purple);
+    --link-unresolved-opacity: 0.6;
+    --link-unresolved-color: var(--solar-flare-orange);
+    --link-unresolved-decoration-color: var(--solar-gold);
+    --link-external-color: var(--starfire-yellow);
+    --link-external-color-hover: var(--electric-purple);
+
+    /* Border */
+    --border-width: 3px;
+    --prompt-border-color: var(--starfire-yellow);
+    --input-radius: 2px;
+    --caret-color: var(--white-nova);
+
+    /* Callout */
+    --callout-border-width: 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: var(--size-4-3) var(--size-4-6) var(--size-2-2) var(--size-4-6);
+    --callout-radius: var(--radius-l);
+    --callout-title-color: var(--cyber-orange);
+    --callout-title-size: 22px;
+    --callout-title-padding: var(--size-4-3) 0 0 0;
+
+    /* Checkboxes */
+    --checkbox-radius: var(--radius-l);
+    --checkbox-marker-color: var(--deep-space-blue-2);
+    --checkbox-border-color: var(--solar-gold);
+    --checkbox-border-color-hover: var(--infrared-red);
+    --checklist-done-color: var(--infrared-red);
+
+    /* Code */
+    --code-border-width: 2px;
+    --code-border-color: var(--white-nova);
+    --code-radius: 0;
+    --code-size: var(--font-small);
+    --code-background: var(--blackhole);
+    --code-normal: var(--white-nova);
+    --code-comment: #ffffff;
+    --code-function: #007fff;
+    --code-keyword: #ed2939;
+    --code-string: #00ff40;
+    --code-property: #7fffd4;
+    --code-value: #ff7900;
+
+    /* Dividers Between Panes */
+    --divider-width: 0;
+    --divider-width-hover: 2px;
+
+    /* Dropdowns */
+    --dropdown-background: var(--deep-space-blue-1);
+    --dropdown-background-hover: var(--electric-purple);
+
+    /* Embeds */
+    --embed-border-start: 2px solid var(--electric-purple);
+    --embed-max-height: 800px;
+
+    /* File layout */
+    --file-line-width: 1000px;
+
+    /* Graphs */
+    --graph-line: var(--infrared-red, var(--background-modifier-border-focus));
+
+    /* Icons */
+    --icon-color: var(--blackhole);
+    --icon-color-hover: var(--infrared-red);
+    --icon-opacity: 1;
+
+    /* Indent */
+    --indentation-guide-width: 0;
+
+    /* Metadata */
+    --metadata-background: var(--deep-space-blue-2);
+    --metadata-padding: var(--size-4-2) var(--size-4-6);
+    --metadata-border-color: var(--blackhole);
+    --metadata-border-radius: var(--radius-l);
+    --metadata-border-width: 4px;
+    --metadata-divider-width: 2px;
+    --metadata-gap: 12px;
+    --metadata-property-radius: var(--radius-m);
+    --metadata-property-radius-hover: var(--radius-m);
+    --metadata-property-radius-focus: var(--radius-m);
+    --metadata-property-padding: 0 var(--size-4-2);
+    --metadata-property-background: var(--deep-space-blue-1);
+    --metadata-input-height: calc(var(--font-text-size) * 2.0);
+
+    /* File Navigator */
+    --nav-item-color: var(--white-nova);
+    --nav-item-color-hover: var(--white-nova);
+    --nav-item-color-active: var(--blackhole);
+    --nav-item-background-hover: color-mix(in srgb, var(--electric-purple) 50%, transparent);
+    --nav-item-background-active: color-mix(in srgb, var(--starfire-yellow) 80%, transparent);
+    --nav-item-weight-active: bold;
+    --nav-item-weight-hover: bold;
+
+    /* Blockquotes */
+    --blockquote-border-color: var(--starfire-yellow);
+    --blockquote-background-color: color-mix(in srgb, var(--electric-purple) 10%, transparent);
+
+    /* Scrollbars */
+    --scrollbar-thumb-bg: var(--lava-orange);
+    --scrollbar-active-thumb-bg: var(--cyber-orange);
+
+    /* Modals */
+    --modal-border-color: var(--starfire-yellow);
+
+    /* Sliders */
+    
+    /* Status Bar */
+    --status-bar-background: var(--deep-space-blue-2);
+    --status-bar-border-color: var(--starfire-yellow);
+    --status-bar-border-width: 2px 0 0 2px;
+
+    /* Tabs */
+    --tab-divider-color: transparent;
+
+    /* Stacked Tabs */
+
+    /* Tables */
+    --table-background: var(--deep-space-blue-2);
+    --table-header-background-hover: var(--deep-space-blue-2);
+    --table-border-width: 2px;
+    --table-border-color: var(--starfire-yellow);
+    --table-add-button-background: var(--electric-purple);
+    --table-add-button-border-width: 0;
+    --table-drag-handle-background: var(--electric-purple);
+
+    /* Window Frame */
+    --titlebar-background: var(--deep-space-blue-1);
+    --titlebar-background-focused: var(--deep-space-blue-1);
+
+    /* Vault Profile */
+    --vault-profile-color: var(--plasma-pink);
+}
+
+/* General */
+hr {
+    border-color: var(--solar-gold);
+}
+.view-content .cm-strong.cm-em, .markdown-source-view.mod-cm6 .HyperMD-quote .cm-strong.cm-em {
+    color: var(--azure);
+}
+
+.metadata-property-icon {
+    color: var(--solar-gold);
+}
+.inline-title:not([data-level]) {
+    text-align: center;
+    background: linear-gradient(to right, var(--starfire-yellow) 40%, var(--lava-orange) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mod-fade:not(.mod-at-end):after {
+    background: none;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-quote .cm-strong {
+    color: var(--cornflower);
+}
+.markdown-source-view.mod-cm6 .HyperMD-quote .cm-em {
+    color: var(--plasma-pink);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+    border-inline-start: 3px solid var(--starfire-yellow);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+    background: linear-gradient(to right, color-mix(in srgb, var(--electric-purple) 30%, transparent) 0%, color-mix(in srgb, var(--electric-purple) 10%, transparent) 50%);
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+    text-decoration-color: var(--electric-purple);
+    transition: color 0.1s ease-out;
+}
+.cm-s-obsidian span.cm-hmd-internal-link:hover .cm-underline:hover {
+    text-decoration-color: var(--starfire-yellow);
+    font-weight: bold;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link .is-unresolved .cm-underline {
+    text-decoration-color: var(--lava-orange);
+}
+
+.mermaid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Clickable Icons */
+.clickable-icon {
+    background-color: var(--cyber-orange);
+    transition: background-color 0.4s cubic-bezier(0,1,1,1), transform 0.3s ease, margin 0.3s ease;
+}
+.clickable-icon:hover {
+    background-color: var(--starfire-yellow);
+    color: var(--blackhole);
+}
+.nav-buttons-container .clickable-icon:hover {
+    transform: scale(1.3);
+    margin: 0 4px;
+}
+.side-dock-actions .clickable-icon:hover {
+    transform: scale(1.2);
+    margin: 2px auto;
+}
+.workspace-tab-header-tab-list .clickable-icon:hover {
+    transform: scale(1.1);
+}
+.workspace-tab-header-tab-list .clickable-icon.has-active-menu {
+    background-color: var(--starfire-yellow);
+}
+
+.view-actions, .workspace-drawer-vault-actions, .nav-buttons-container {
+    gap: var(--size-4-1);
+}
+
+.workspace-tab-header-new-tab, .workspace-tab-header-tab-list {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Workspace Tab Header Left */
+.mod-left-split .workspace-tab-header-container {
+    justify-content: center;
+    background-color: var(--deep-space-blue-2);
+}
+.mod-left-split .workspace-tab-header-container-inner {
+    overflow: visible;
+    gap: 4px;
+}
+.mod-left-split .workspace-tab-header-spacer {
+    flex: 0;
+}
+
+.mod-left-split .workspace-tab-header {
+    background-color: var(--lava-orange);
+    transition: background-color 0.4s cubic-bezier(0,1,1,1), transform 0.3s ease, margin 0.3s ease;
+}
+.mod-left-split .workspace-tab-header:hover {
+    background-color: var(--starfire-yellow);
+    transform: scale(1.3);
+    margin: 0 4px;
+}
+.mod-left-split .workspace-tab-header:hover .workspace-tab-header-inner .workspace-tab-header-inner-icon {
+    color: var(--blackhole);
+}
+
+.mod-left-split .workspace-tab-header.is-active {
+    background-color: var(--lava-orange);
+}
+.mod-left-split .workspace-tab-header.is-active:hover {
+    background-color: var(--starfire-yellow);
+}
+
+/* Workspace Tab Header Main */
+.workspace-tab-header-container {
+    border: none;
+}
+.mod-root .workspace-tab-header-container-inner {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0;
+    gap: 4px;
+}
+.workspace .mod-root .workspace-tab-header {
+    padding: 4px;
+    color: var(--white-nova);
+    border-radius: var(--radius-m);
+    background-color: color-mix(in srgb, var(--electric-purple) 40%, transparent);
+    transition: background-color 0.4s cubic-bezier(0,1,1,1);
+}
+.workspace .mod-root .workspace-tab-header:hover {
+    background-color: var(--electric-purple);
+}
+.workspace .mod-root .workspace-tab-header.is-active {
+    background-color: color-mix(in srgb, var(--electric-purple) 70%, transparent);
+    color: var(--white-nova);
+    text-decoration: var(--white-nova) underline;
+    font-weight: bold;
+}
+
+.workspace .mod-root .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
+    background-color: var(--infrared-red);
+}
+
+.workspace-tab-header .workspace-tab-header-inner:hover, .workspace-tab-header:hover .workspace-tab-header-inner {
+    background-color: transparent !important;
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after {
+    box-shadow: none;
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+    background-color: var(--deep-space-blue-1);
+}
+
+/* Sidebar Left */
+.workspace-split.mod-left-split {
+    border-right: 2px solid var(--starfire-yellow);
+}
+
+.nav-files-container.node-insert-event {
+    background: linear-gradient(to top, color-mix(in srgb, var(--void-purple) 40%, transparent) 0%, var(--deep-space-blue-2) 50%);
+    padding: 4px 4px 4px 8px;
+}
+
+.tree-item.nav-folder .nav-folder-title {
+    background-color: color-mix(in srgb, var(--electric-purple) 30%, transparent);
+    font-weight: bold;
+}
+.tree-item.nav-folder.is-collapsed .nav-folder-title {
+    background-color: color-mix(in srgb, var(--electric-purple) 10%, transparent);
+    font-weight: normal;
+}
+.nav-file-title.is-active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.workspace-leaf-content[data-type=bookmarks] .view-content {
+    background: linear-gradient(to top, color-mix(in srgb, var(--void-purple) 40%, transparent) 0%, var(--deep-space-blue-2) 50%);
+}
+
+.search-result-container.mod-global-search {
+    background: linear-gradient(to top, color-mix(in srgb, var(--void-purple) 40%, transparent) 0%, var(--deep-space-blue-2) 50%);
+}
+
+
+/* Sidebar Right */
+.mod-right-split .workspace-leaf {
+    border-left: 2px solid var(--starfire-yellow);
+}
+
+.mod-right-split .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon {
+    color: var(--white-nova);
+}
+
+.workspace-leaf-content[data-type='outline'] .view-content, .workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content, .outgoing-link-pane, .tag-container {
+    background: linear-gradient(to top, color-mix(in srgb, var(--void-purple) 40%, transparent) 0%, var(--deep-space-blue-2) 50%);
+}
+.workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content .advanced-tables-buttons .nav-header {
+    background: var(--deep-space-blue-1);
+}
+
+.nav-buttons-container .clickable-icon[aria-disabled='true'] {
+    background-color: var(--cyber-orange);
+    opacity: 1;
+    color: var(--blackhole);
+    transition: background-color 0.4s cubic-bezier(0,1,1,1), transform 0.3s ease, margin 0.3s ease;
+}
+.nav-buttons-container .clickable-icon[aria-disabled='true']:hover {
+    background-color: var(--starfire-yellow);
+}
+
+/* Workspace Ribbon & Sidebar Toggle Button */
+.workspace-ribbon, .workspace-ribbon.mod-left.is-collapsed {
+    background: linear-gradient(to bottom, var(--deep-space-blue-1), var(--void-purple));
+    border-right: 2px solid var(--starfire-yellow);
+}
+.workspace-ribbon.mod-left:before {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.workspace-ribbon .sidebar-toggle-button {
+    background-color: var(--deep-space-blue-1);
+    border-right: 2px solid var(--starfire-yellow);
+    height: 40px;
+}
+
+.sidebar-toggle-button.mod-right .clickable-icon, .workspace-ribbon .sidebar-toggle-button .clickable-icon {
+    background-color: var(--lava-orange);
+    padding: 0 6px;
+    transition: background-color 0.4s cubic-bezier(0,1,1,1), transform 0.3s ease;
+}
+.sidebar-toggle-button.mod-right .clickable-icon:hover, .workspace-ribbon .sidebar-toggle-button .clickable-icon:hover {
+    background-color: var(--starfire-yellow);
+    color: var(--deep-space-blue-2);
+    transform: scale(1.1);
+}
+
+.sidebar-toggle-button.mod-right, .workspace-ribbon .sidebar-toggle-button {
+    padding: 6.5px 0;
+}
+
+/* Search */
+.global-search-input-container.search-input-container input {
+    background-color: color-mix(in srgb, var(--electric-purple) 40%, transparent);
+}
+.global-search-input-container.search-input-container input::placeholder {
+    color: var(--white-nova);
+}
+
+.global-search-input-container.search-input-container input ~ .input-right-decorator {
+    background-color: transparent;
+    color: var(--white-nova);
+}
+
+/* View Header */
+.is-focused .workspace-leaf .view-header, .workspace-leaf .view-header {
+    border: none;
+    padding-top: 2px;
+    background: linear-gradient(to bottom, var(--starfire-yellow) 0%, var(--background-primary) 10%);
+}
+
+/* Nav Header */
+.nav-header {
+    background: linear-gradient(to top, var(--starfire-yellow) 0%, var(--deep-space-blue-2) 10%);
+}
+
+.view-content {
+    background:
+    linear-gradient(to top, color-mix(in srgb, var(--void-purple) 50%, transparent) 0%, var(--blackhole) 10%),
+    linear-gradient(to top, color-mix(in srgb, var(--electric-purple) 20%, transparent) 0%, transparent 2%);
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+    margin: auto !important;
+}
+
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--blackhole);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Setting */
+.setting-item {
+    border-top: 1px solid var(--starfire-yellow);
+}
+
+button.mod-cta {
+    background-color: var(--deep-space-blue-1);
+    color: var(--white-nova);
+}
+button:not(.clickable-icon):hover {
+    background-color: var(--electric-purple);
+    text-decoration: underline;
+}
+
+/* Titlebar Buttons */
+.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+    padding-right: calc(var(--size-4-4) + var(--frame-right-space));
+}
+.titlebar-button.mod-minimize {
+    padding-left: 18px;
+    background: linear-gradient(to right, var(--deep-space-blue-1) 0%, transparent 20%);
+}
+.mod-windows .titlebar-button {
+    background-color: color-mix(in srgb, var(--electric-purple) 20%, transparent);
+    margin-bottom: -1px;
+}
+.mod-windows .titlebar-button:hover {
+    background-color: color-mix(in srgb, var(--electric-purple) 50%, transparent);
+}
+
+input.prompt-input:focus, input.prompt-input:focus-visible {
+    border-bottom: 2px solid var(--starfire-yellow);
+}
+.prompt-instructions {
+    border-top: 2px solid var(--starfire-yellow);
+}
+
+.community-item.is-selected .community-item-name {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.metadata-property:hover {
+    background: linear-gradient(to right, var(--electric-purple) 0%, var(--deep-space-blue-1) 100%);
+}

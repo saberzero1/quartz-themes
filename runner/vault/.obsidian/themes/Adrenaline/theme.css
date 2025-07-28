@@ -1,0 +1,1629 @@
+/*Adrenaline V3*/
+
+/*===================================== INFORMATION =================================================
+This theme uses content created by other theme creators.
+Wherever such content is used, their author is attributed.
+If you have any questions or concerns, please contact me on GitHub: https://github.com/Spekulucius */
+
+/*========== STYLE SETTINGS ================*/
+/* @settings
+
+name: Theme Settings
+id: Adrenaline
+description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
+settings:
+    - 
+        id: Info-Text
+        title: Information
+        description: "Thank you for using my theme! If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
+        type: info-text
+        markdown: true
+    -
+    - 
+        id: Theme variants
+        title: Theme variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Adrenaline
+                value: default
+            - 
+                label: Variant 1
+                value: tv1
+    -
+        id: Text and Spacing
+        title: Text and Spacing
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: custom-font-weight
+        title: Adjust Font Weight
+        description: 
+        type: variable-number-slider
+        default: 300
+        min: 100
+        max: 900
+        step: 100
+    -
+        id: custom-letter-spacing
+        title: Adjust Letter Spacing
+        description:
+        type: variable-number-slider
+        format: px
+        default: 0.1
+        min: -.5
+        max: 1.5
+        step: .1
+    -
+        id: custom-line-height
+        title: Adjust Line Spacing
+        description:
+        type: variable-number-slider
+        format:
+        default: 1.5
+        min: 1
+        max: 2.5
+        step: .1
+    -
+        id: dynamic-heading-spacing
+        title: Adjust Dynamic Heading Spacing
+        description:
+        type: variable-number-slider
+        format: em
+        default: 3
+        min: 0
+        max: 10
+        step: .1
+    -
+        id: Colors
+        title: Colors
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: Background Tint
+        title: Background Tint
+        type: heading
+        collapsed: ture
+        level: 3
+    -
+        id: bgt_s
+        title: Adjust Background Saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 100
+        step: 1
+    - 
+        id: bgt_l
+        title: Adjust Background Brightness
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+    - 
+        id: Individual Heading Colors
+        title: Individual Heading Colors
+        type: heading
+        collapsed: ture
+        level: 3
+    -
+        id: general-heading-color
+        title: General Heading Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h1-color
+        title: Custom H1 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h2-color
+        title: Custom H2 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h3-color
+        title: Custom H3 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h4-color
+        title: Custom H4 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h5-color
+        title: Custom H5 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: custom-h6-color
+        title: Custom H6 color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: Individual Bold Color
+        title: Individual Bold Color
+        type: heading
+        collapsed: ture
+        level: 3
+    - 
+        id: custom-accent-bold
+        title: Set Bold Color to Accent Color
+        type: class-toggle
+    -
+        id: custom-bold
+        title: Custom Bold Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
+        id: Individual Italic Color
+        title: Individual Italic Color
+        type: heading
+        collapsed: ture
+        level: 3
+    - 
+        id: custom-accent-italic
+        title: Set Italic Color to Accent Color
+        type: class-toggle
+    -
+        id: custom-italic
+        title: Custom Italic Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'    
+    -
+        id: heading-highlighting
+        title: Highlight Headings
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: heading-highlighting
+        title: Highlight Headings
+        type: class-toggle
+    -
+        id: Experimental Settings
+        title: Experimental Settings
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: status-bar-hover
+        title: Hide Status Bar
+        description: Only show the status bar when hovering over it
+        type: class-toggle
+    - 
+        id: enhanced-buttons-disable
+        title: Disable Enhanced Buttons
+        description: Hide the highlighting on buttons, giving them a more "boxy" look
+        type: class-toggle
+    -
+        id: disable-line-indicator
+        title: Disable Line Indicator
+        type: class-toggle
+    - 
+        id: enhanced-cursor
+        title: Enable Block Caret-Cursor
+        description: Enables a blocky caret, similar to that in a command prompt - NINJA CURSOR PLUGIN REQUIRED - please not that this fix, and the plugin itself is kind of buggy, so please don't expect wonders from it
+        type: class-toggle
+    - 
+        id: blend-images
+        title: Blend embedded Image Background
+        type: class-toggle
+    - 
+        id: cbr
+        title: Custom Workspace Border Radius
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 50
+        step: 1
+        format: px
+*/
+
+/*////////////////////////////////////////////////////////////////// COLORS ///////////////////////////////////////////////////////////////////////////////*/
+.theme-light, .theme-dark {
+    --colored-accent-i1: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 49%)*-100));
+    --colored-accent-i2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 20%)*-100));
+    --colored-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --colored-accent-2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --shadow-1: hsla(var(--accent-h), var(--accent-s), 5%, .5);
+    --custom-accent-bold: var(--colored-accent-1);
+    
+    --background-secondary: var(--background-2);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-3);
+}
+
+.theme-light {
+    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .2) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 2%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-1: hsl(var(--accent-h), calc(var(--accent-s) - 20%), 90%, 100%);
+    --background-1_2: rgb(234, 234, 234);
+    --background-1-h: #bdbdbd;
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 10%;
+    --background-2_l: 96%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .1) + calc(1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) + 0%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: hsl(var(--accent-h), calc(var(--accent-s) - 40%), 95%, 100%);
+    --background-4: white;
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
+    --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
+    
+    --highlight-1: rgba(0, 0, 0, 0.056);
+    --highlight-2: rgba(214, 214, 214, 0.308);
+
+    --shadow-2: rgba(0, 0, 0, 0.257);
+    --shadow-3: rgba(0, 0, 0, 0.227);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .5);
+
+    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .9), calc(var(--accent-l) * 1.2), 1);
+
+    --divider-color: rgba(200, 200, 200, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-normal: var(--interactive-accent);
+    --interactive-accent: var(--colored-accent-1);
+    --icon-color: var(--colored-accent-1);
+    --text-color-inverted: black;
+    --tc: rgb(25, 25, 25);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-1_2);
+}
+
+.theme-dark {
+    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .01) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * .1% - 5%)));
+
+    --background-1: #171717;
+    --background-1-h: var(--colored-accent-1);
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 0%;
+    --background-2_l: 15%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .01) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: hsl(var(--accent-h), calc(var(--accent-s) - 95%), 10%, 100%);
+    --background-4: rgb(12, 12, 12);
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
+    --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
+
+    --highlight-1: rgba(255, 255, 255, 0.075);
+    --highlight-2: rgba(255, 255, 255, 0.075);
+
+    --shadow-2: hsla(var(--accent-h), calc(var(--accent-s) * 0), calc(var(--accent-l) * .1), .4);
+    --shadow-3: rgba(0, 0, 0, 0.47);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .5);
+
+    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .4), calc(var(--accent-l) * .6), 1);
+
+    --divider-color: rgba(105, 105, 105, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-normal: var(--interactive-accent);
+    --interactive-accent: var(--colored-accent-1);
+    --text-color-inverted: white;
+    --tc: rgb(209, 209, 209);
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - GENERAL CONFIG //////////////////////////////////////////////////////////////////////////////*/
+/*============================= ADJUST SPACING OF MAIN BODY ===================================*/
+body:not(.is-mobile)
+.workspace {
+    background-color: transparent;
+    right: 20px !important;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex: 1 0 0;
+    width: calc(100% - 20px) !important;
+    margin-left: 20px;
+}
+body:not(.is-mobile)
+.horizontal-main-container {
+    padding-bottom: 20px;
+    display: flex;
+    overflow: visible;
+    flex: 1 0 0;
+    background: transparent;
+}
+body:not(.is-mobile):not(.show-ribbon)
+.horizontal-main-container {
+    padding-left: 20px;
+}
+body:not(.is-mobile):not(.show-ribbon) .workspace {
+    margin-left: 20px;
+}
+body:not(.is-mobile):not(.show-ribbon) .workspace:before {
+    width: 100%;
+}
+
+/*==================== REMOVE BORDERS ===============================*/
+.workspace-tab-header-container, .workspace-ribbon.side-dock-ribbon.mod-left {
+    border: none !important;
+}
+.workspace-tab-header-container {
+    background: transparent;
+}
+
+/*============== ADD NEW BORDERS =====================*/
+.workspace:not(.is-mobile)::before {
+    content: " ";
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: transparent;
+    border-radius: var(--cbr, 7px);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 0px 1px var(--divider-color), 0 0 5px 1px var(--shadow-4);
+}
+/*adjust borders to align with ribbon animation*/
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+    width: calc(100% - 44px);
+    transition-duration: .1s;
+}
+
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
+    width: calc(100% - 20px);
+    transition: all .5s ease;
+}
+
+/*================ ADJUST WORKSPACE BACKGROUND ========================*/
+.titlebar-button-container.mod-right,
+.workspace-split {
+    background: transparent !important;
+}
+.view-header,
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+.empty-state,
+.markdown-rendered,
+.community-modal-details,
+.workspace-tab-container,
+.cm-scroller {
+    background-color: var(--background-2) !important;
+}
+.workspace-tabs:not(.mod-top) {
+    background: var(--background-2);
+}
+
+
+
+/*==================== ADJUST RESIZE HANDLES ====================*/
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle { 
+    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+    bottom: 0px !important;
+}
+
+
+/*=================== workspace rounded corners ===================*/
+body:has(.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed)
+.mod-root {
+    border-bottom-left-radius: var(--cbr, 7px) !important;
+    overflow: hidden;
+}
+.workspace:not(.is-right-sidedock-open)
+.mod-root {
+    border-bottom-right-radius: var(--cbr, 7px) !important;
+    overflow: hidden;
+}
+.workspace:not(.is-right-sidedock-open)
+.workspace-split:last-of-type .mod-top-right-space .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 7px);
+}
+
+.mod-top-left-space .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 7px) !important;
+}
+.workspace:not(.is-right-sidedock-open)
+.workspace-tabs.mod-top-right-space:last-of-type .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 7px);
+}
+.mod-sidedock.mod-right-split{
+    border-bottom-right-radius: var(--cbr, 7px);
+    overflow: hidden !important;
+}
+.workspace-sidedock-vault-profile {
+    border-bottom-left-radius: var(--cbr, 7px);
+    background: var(--background-3) !important;
+    border-bottom-right-radius: 0px !important;
+}
+.mod-sidedock.mod-right-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 7px);
+}
+.mod-sidedock.mod-left-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 7px);
+}
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - TAB BAR //////////////////////////////////////////////////////////////////////////////*/
+/*================ Left Sidebar Button =====================*/
+body:has(.workspace-ribbon.side-dock-ribbon):not(.mod-macos) .workspace-ribbon.side-dock-ribbon.mod-left .sidebar-toggle-button.mod-left {
+    width: 20px;
+    transition: .5s;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+body:has(.workspace-ribbon.side-dock-ribbon):not(.mod-macos) .workspace-ribbon.side-dock-ribbon.mod-left:hover
+.sidebar-toggle-button.mod-left {
+    width: 44px !important;
+    color: var(--background-1);
+        transition: .1s;
+}
+body:not(.mod-macos) .sidebar-toggle-button.mod-left>.clickable-icon {
+    color: transparent;
+    width: 0px;
+    padding: 3px;
+        transition: color .01s, width .5s, background .2s linear normal;
+}
+body:not(.show-ribbon):not(.mod-macos) .sidebar-toggle-button.mod-left>.clickable-icon {
+    color: unset;
+    background: var(--background-6);
+    width: unset;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 8px;
+    margin-top: .5px;
+}
+body:not(.show-ribbon):not(.mod-macos) .sidebar-toggle-button.mod-left>.clickable-icon:hover {
+    color: var(--color-base-70);
+}
+body:not(.mod-macos)
+.workspace-ribbon.side-dock-ribbon.mod-left:hover
+.sidebar-toggle-button.mod-left>.clickable-icon {
+    color: var(--nav-item-color);
+    width: 33.333px;
+    background: var(--background-6);
+        transition: background .2s,  color .1s, width .1s ease normal;
+}
+body:not(.mod-macos)
+.sidebar-toggle-button {
+    padding-bottom: 6px !important;
+    padding-top: 5px !important;
+    color: var(--icon-color);
+}
+
+body:is(.mod-macos)
+.sidebar-toggle-button {
+    padding-bottom: 5px !important;
+    padding-top: 6px !important;
+    color: var(--icon-color);
+}
+
+
+/*========= Left tab header ====================*/
+.mod-left-split
+.workspace-tab-header-container-inner {
+    flex-grow: 100 !important;
+    justify-content: center;
+    margin-bottom: .1px;
+    margin-top: 0px;
+    padding-top: 8px;
+}
+.workspace-tabs.mod-top.mod-top-right-space
+.workspace-tab-header-container-inner {
+    margin-top: 0px;
+    padding-top: 8px;
+}
+/* Tab Header Button Styling*/
+/*not active*/
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner {
+    background-color: var(--background-6) !important;
+    border-bottom: 2px solid var(--shadow-2);
+    border-radius: 5px;
+    transition: all .5s !important;
+    &:hover {
+        background-color: var(--colored-accent-1) !important;
+        color: var(--colored-accent-i1) !important;
+        border-bottom: 2px solid var(--shadow-1);
+    }
+}
+/*active*/
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header.tappable.is-active .workspace-tab-header-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-inner {
+    background-color: var(--colored-accent-2) !important;
+    border-bottom: 2px solid var(--shadow-1);
+    border-radius: 5px;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-1) !important;
+    }
+}
+
+/*========================= TABS ===========================*/
+.mod-vertical .workspace-tab-header-container {
+    padding-left: 0px !important;
+    padding-bottom: 3px;
+}
+.workspace-split.mod-vertical .workspace-tab-header-container-inner { 
+    margin-top: 5px !important;
+    padding-top: 1.5px !important;
+}
+.workspace .mod-root .workspace-tab-header {
+    box-shadow: none;
+    padding-bottom: 5.5px;
+    background: transparent;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*tabs AND buttons height adjustment*/
+.workspace-tab-header.tappable {
+    margin-top: -2px;
+    margin-bottom: -1px;
+}
+/*Tabs text color */
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title {
+    color: var(--colored-accent-i2) !important;
+}
+.mod-vertical .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner-title {
+    color: var(--text-color-inverted) !important;
+}
+/*Tab headers*/
+.mod-vertical .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner {
+    position: relative;
+    background-color: var(--background-6) !important;
+    border-bottom: 2px solid var(--shadow-2);
+    border-radius: 5px;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-1) !important;
+        color: var(--colored-accent-i1) !important;
+        border-bottom: 2px solid var(--shadow-1);
+        }
+}
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+    position: relative;
+    color: var(--colored-accent-i1) !important;
+    background-color: var(--colored-accent-2) !important;
+    border-bottom: 2px solid var(--shadow-1);
+    border-radius: 5px;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-1) !important;
+        color: var(--colored-accent-i1) !important;
+    }
+}
+.workspace-tab-header-inner-close-button {
+    color: var(--colored-accent-i1) !important;
+    background-color: rgba(255, 255, 255, 0.355) !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.634);
+    margin-top: 1px;
+    transition: all .2s !important;
+            &:hover {
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        color: var(--colored-accent-i1) !important;
+    }
+}
+
+/* right sidebar button */
+.sidebar-toggle-button.mod-right {
+    padding-top: 5.5px !important;
+    padding-bottom: 5.5px !important;
+}
+body.mod-windows .sidebar-toggle-button.mod-right {
+    margin-right: 5px;
+}
+
+/*win-app-symbols*/
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-minimize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-maximize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-close {
+    border-radius: 10px;
+    padding: 0px 9px 0px 9px;
+    margin: 0px 5px 0px 5px;
+}
+body > div.titlebar > div > div.titlebar-button-container.mod-right {
+    padding: 5px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// LEFT WORKSPACE / RIBBON //////////////////////////////////////////////////////////////////////////////*/
+
+
+/*============== Ribbon Animation ===========================*/
+.workspace-ribbon.side-dock-ribbon.mod-left {
+    flex-basis: 20px;
+    transition: .5s;
+    background: transparent !important;
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left:hover {
+    flex-basis: 44px;
+    transition: .1s;
+    background: transparent !important;
+}
+
+
+.workspace-ribbon.side-dock-ribbon.mod-left:before {
+    background: transparent !important;
+}
+
+
+
+/*======================= Ribbon Icons ============================*/
+.side-dock-ribbon-action {
+    width: 0px;
+    height: 27.3px;
+    padding: 3px;
+        transition: color .01s, width .5s, background .2s linear normal;
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left:hover
+.side-dock-ribbon-action {
+    width: 33.333px;
+        transition: background .2s,  color .1s, width .1s ease normal;
+    
+}
+
+/* collapsed ribbon icon color/background */
+.workspace-ribbon.side-dock-ribbon.mod-left .clickable-icon {
+    background-color: var(--background-5);
+}
+/* extended ribbon icon color/background */
+.workspace-ribbon.side-dock-ribbon.mod-left:hover .clickable-icon {
+    --text-color: var(--colored-accent-i1) !important;
+    background-color: var(--background-6);
+    border-bottom: 2px solid var(--shadow-2);
+    border-radius: 5px;
+}
+/*========================== NAV HEADER ============================*/
+div.nav-header
+.clickable-icon:hover {
+    transition: all .2s;
+    color: var(--colored-accent-i2) !important;
+}
+div.nav-header
+div.nav-buttons-container {
+    column-gap: 4px !important;
+}
+div.nav-header:hover
+div.nav-buttons-container {
+    column-gap: 2px !important;
+    border-radius: 5px;
+    transition: .1s all;
+}
+div.nav-header
+div.nav-buttons-container
+.clickable-icon {
+    width: 0px;
+    height: 3px;
+    padding: 3px;
+    flex-grow: 0;
+    background: var(--colored-accent-1);
+    color: transparent;
+    border-radius: 50px;
+    transition: flex-grow .5s, color .3s, height .6s, border-radius 3s, background 1s linear normal;
+}
+div.nav-header:hover
+div.nav-buttons-container
+.clickable-icon {
+    height: 40px;
+    flex-grow: 1;
+    color: var(--nav-item-color);
+    background: var(--background-1);
+    border-radius: 5px;
+    transition: background .1s, flex-grow 1s, color .01s, height .2s ease normal;
+}
+
+
+
+/*=========================================== Nav File Icons ===================================================*/
+/*Credit goes to @Akifyss on github: https://github.com/Akifyss, https://github.com/Akifyss/obsidian-border */
+
+.tree-item-self .tree-item-icon {height: var(--size-4-4);--icon-color:  var(--colored-accent-1);}
+.tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {--icon-size: var(--icon-s);--icon-stroke: var(--icon-s-stroke-width);}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon svg.svg-icon,
+body:not(.file-icon-remove) .workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon svg.svg-icon {color: transparent;}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon,
+body:not(.file-icon-remove) .workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon {background-color: currentColor;opacity:  var(--colored-accent-1);}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon)):before,
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] :is(.nav-file-title, .nav-folder.mod-root>.nav-folder-title)::before {content: " ";position: absolute;margin-left: calc(-1 * var(--size-4-5));width: var(--size-4-4);height: var(--size-4-4);display: flex;align-items: center;justify-content: center;opacity: var(--icon-opacity);background-color: currentColor;flex: 0 0 auto;}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root>.nav-folder-title::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M14 12.8V3.2c0-.884-.264-1.2-1-1.2H3c-.736 0-1 .316-1 1.2v9.6c0 .884.264 1.2 1 1.2h10c.736 0 1-.316 1-1.2Z'/%3e%3cpath d='M9.978 7.04a2 2 0 1 1-3.956.587 2 2 0 0 1 3.956-.587ZM8 9.333v2m6-6.666h1m-1 6h1'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .tree-item-icon.collapse-icon,
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="bookmarks"] .tree-item-icon.collapse-icon {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M4 9.333 4.967 7.4a1.333 1.333 0 0 1 1.193-.733h7.173m0 0a1.333 1.333 0 0 1 1.294 1.666l-1.034 4a1.333 1.333 0 0 1-1.293 1H2.667A1.333 1.333 0 0 1 1.333 12V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6H12a1.333 1.333 0 0 1 1.333 1.333v1.334Z'/%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .is-collapsed .tree-item-icon.collapse-icon,
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="bookmarks"] .is-collapsed .tree-item-icon.collapse-icon {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M2.667 13.333h10.666A1.333 1.333 0 0 0 14.667 12V5.333A1.333 1.333 0 0 0 13.333 4H8.047a1.333 1.333 0 0 1-1.107-.6l-.547-.8A1.333 1.333 0 0 0 5.287 2h-2.62a1.333 1.333 0 0 0-1.334 1.333V12c0 .733.6 1.333 1.334 1.333Z'/%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".canvas"]::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M6 2H2.667A.667.667 0 0 0 2 2.667v4.666c0 .369.298.667.667.667H6a.667.667 0 0 0 .667-.667V2.667A.667.667 0 0 0 6 2Zm7.333 0H10a.667.667 0 0 0-.667.667v2c0 .368.299.666.667.666h3.333A.667.667 0 0 0 14 4.667v-2A.667.667 0 0 0 13.333 2Zm0 6H10a.667.667 0 0 0-.667.667v4.666c0 .368.299.667.667.667h3.333a.667.667 0 0 0 .667-.667V8.667A.667.667 0 0 0 13.333 8ZM6 10.667H2.667a.667.667 0 0 0-.667.666v2c0 .368.298.667.667.667H6a.667.667 0 0 0 .667-.667v-2A.667.667 0 0 0 6 10.667Z'/%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M6.667 6.867c.133-.267.333-.534.6-.667A1.4 1.4 0 0 1 9 6.467c.2.266.333.533.333.866C9.333 8.2 8 8.667 8 8.667m0 2.666h.007'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title:is([data-path$=".zip"], [data-path$=".7z"])::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667v-12c0-.334.133-.667.4-.934.266-.266.6-.4.933-.4h5.667L13.333 5v8.333c0 .334-.133.667-.4.934-.266.266-.6.4-.933.4h-1.333'/%3e%3cpath d='M9.333 1.333v4h4m-6.666 9.334a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Zm0-10V4m0 4v-.667m0 4.667v-1.333'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".webm"]::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667H12a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v2'/%3e%3cpath d='M9.333 1.333v4h4M4.667 6.667 2.667 8H1.333v2.667h1.334l2 1.333V6.667Zm2.666.666c.427.534.667 1.247.667 2 0 .754-.24 1.467-.667 2'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M12.667 2H3.333C2.597 2 2 2.597 2 3.333v9.334C2 13.403 2.597 14 3.333 14h9.334c.736 0 1.333-.597 1.333-1.333V3.333C14 2.597 13.403 2 12.667 2Z'/%3e%3cpath d='M6 7.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666ZM14 10l-2.057-2.057a1.333 1.333 0 0 0-1.886 0L4 14'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".pdf"]::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4m-2.666 3.334H5.333m5.334 2.666H5.333M6.667 6H5.333'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".excalidraw.md"]::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' clip-path='url(%23a)'%3e%3cpath d='M8 12.667 12.667 8l2 2L10 14.667l-2-2Z'/%3e%3cpath d='m12 8.667-1-5-9.667-2.334L3.667 11l5 1L12 8.667ZM1.333 1.333l5.058 5.058'/%3e%3cpath d='M7.333 8.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M6 3.333H1.333V8l4.194 4.193a1.617 1.617 0 0 0 2.28 0l2.386-2.386a1.617 1.617 0 0 0 0-2.28L6 3.333ZM4 6.007V6'/%3e%3cpath d='m10 3.333 4.2 4.2a1.6 1.6 0 0 1 0 2.267l-2.867 2.867'/%3e%3c/g%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon))::before {-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M8 1.333H1.333V8l6.194 6.193a1.617 1.617 0 0 0 2.28 0l4.386-4.386a1.617 1.617 0 0 0 0-2.28L8 1.333ZM4.667 4.667h.006'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");}
+body:not(.file-icon-remove) .workspace-leaf-content[data-type="bookmarks"] svg.lucide-folder {background-color: currentColor;-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M1.333 6V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6h5.286a1.333 1.333 0 0 1 1.334 1.333V12a1.333 1.333 0 0 1-1.334 1.333h-12'/%3e%3cpath d='m5.333 10.667 2-2-2-2'/%3e%3cpath d='M1.333 10.667V10a1.333 1.333 0 0 1 1.334-1.333h4'/%3e%3c/g%3e%3c/svg%3e");}
+
+
+/*selected file styling */
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active {
+    position: relative !important;
+    color: var(--colored-accent-i2) !important;
+    background-color: var(--colored-accent-3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.251);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color .2s;
+        &:hover {
+        background-color: var(--colored-accent-1) !important;
+        border-bottom: 2px solid var(--shadow-1);
+    }
+}
+/*=============== HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used ==================*/
+div[data-path$='000_attachments_000'], 
+div[data-path$='000_attachments_000'] + div.nav-folder-children 
+{
+    display: none;
+}
+
+/* vault icons - removal of added styling */
+.workspace-drawer-vault-actions .clickable-icon {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// SETTINGS & BUTTONS //////////////////////////////////////////////////////////////////////////////*/
+/*=========================================== buttons general styling ===================================================*/
+.clickable-icon:not(.input-right-decorator.clickable-icon) {
+    position: relative;
+    --text-color: var(--colored-accent-i1) !important;
+    background-color: var(--background-6);
+    border-bottom: 2px solid var(--shadow-2);
+    border-radius: 5px;
+    transition: all .5s;
+    &:hover {
+        background-color: var(--colored-accent-1) !important;
+        color: var(--colored-accent-i1) !important;
+        border-bottom: 2px solid var(--shadow-1);
+    }
+}
+.mod-cta:before,
+.setting-item-control > button:before,
+.clickable-icon:not(.workspace-drawer-vault-actions > .clickable-icon):before,
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active:after,
+.mod-vertical .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner:before,
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner:before {
+    content: "";
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    background-color: transparent;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 2px;
+    left: 1.5px;
+    box-shadow: 0px 0px 0px 1px var(--highlight-1);
+} 
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner:before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner:before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tabs.mod-top.mod-top-left-space  .workspace-tab-header.tappable.is-active .workspace-tab-header-inner:before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-inner:before {
+    content: "";
+    width: calc(100% - 2px);
+    height: calc(100% - 4px);
+    background-color: transparent;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 3px;
+    left: 1px;
+    box-shadow: 0px 0px 0px 1px var(--highlight-2);
+}
+
+/*=========================================== Settings general styling ===================================================*/
+.setting-item-control > button, .dropdown {
+    position: relative;
+    --text-color: var(--colored-accent-i1) !important;
+    background-color: var(--colored-accent-2) !important;
+    border-bottom: 2px solid var(--shadow-1);
+    border-radius: 5px;
+    transition: all .2s;
+    &:hover {
+        background-color: var(--colored-accent-1) !important;
+        border-bottom: 2px solid var(--shadow-1);
+    }
+}
+/*Settings tabs styling*/
+.vertical-tab-nav-item.is-active {
+    background-color: var(--colored-accent-1) !important;
+    border-bottom: 2px solid var(--shadow-1);
+    border-radius: 5px;
+        &:hover {
+        background-color: var(--colored-accent-1) !important;
+    }
+}
+/* settings switches background */
+.checkbox-container.is-enabled {
+    background-color: var(--colored-accent-2);
+}
+/* settings switches auto coloring */
+.checkbox-container.is-enabled::after {
+    background-color: var(--colored-accent-i2);
+    transition: .2s;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////// EDITOR //////////////////////////////////////////////////////////////////////////////*/
+
+/*=========================================== Active Line Highlight ===================================================*/
+/*Credit goes to @Akifyss on github: https://github.com/Akifyss, https://github.com/Akifyss/obsidian-border */
+body:not(.disable-line-indicator) .markdown-source-view .cm-content>.cm-active:not(:has(.mk-note-footer)):has(.cm-hmd-list-indent)::after,
+body:not(.disable-line-indicator) .markdown-source-view .cm-content>.cm-active:not(.image-embed, .mk-header, .HyperMD-header, :has(.mk-note-footer, .collapse-indicator))::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 3px;
+    width: 3px;
+    height: calc(100% - 6px);
+    border-radius: 10px;
+    background: var(--hover-indicator-color);
+    --hover-indicator-color: var(--color-accent) !important;
+    opacity: 1;
+}
+
+body:not(.disable-line-indicator) .cm-contentContainer .cm-active.HyperMD-list-line:not(.HyperMD-list-line-1)::after,
+body:not(.disable-line-indicator) .cm-contentContainer .cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):after {
+    opacity: 1 !important;
+    --hover-indicator-color: var(--color-accent) !important;
+}
+
+/*======================================================== TEXT ================================================================*/
+/*==================== HIGHLIGHTING ====================*/
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    1px;
+    padding-bottom: 1px;
+    pointer-events: none;
+    background-color: var(--colored-accent-1);
+    color: var(--colored-accent-i1);
+        -moz-border-bottom-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+
+.cm-formatting.cm-formatting-highlight.cm-highlight {
+    background: none;
+    color: var(--colored-accent-1);
+}
+/*======== SEARCHED TEXT HIGHLIGHTING =================*/
+.search-result-file-matched-text {
+    background:var(--colored-accent-1);
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+
+.is-flashing {
+    background:var(--colored-accent-1) !important;
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+
+
+
+/*================== adjust font weight ===============*/
+.markdown-preview-view, .view-content>.cm-s-obsidian, .view-content>.markdown-source-view.mod-cm6.is-live-preview>.cm-scroller, body {
+    font-weight: var(--custom-font-weight, 350);
+    color: var(--tc);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.cm-html-embed th, .markdown-rendered th {
+    font-weight: var(--custom-font-weight, 350);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+table {
+    font-weight: var(--custom-font-weight, 350);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.view-content {
+    border: 0px;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+
+body {
+    --bold-modifier: 300;
+    --line-height-normal: var(--custom-line-height, 1.5);
+}
+
+
+
+/*========================================== HEADINGS =========================================*/
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-1 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h1-color, var(--general-heading-color, unset));
+    font-size: 1.4em;
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-2 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h2-color, var(--general-heading-color, unset));
+    font-size: 1.3em;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-3 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h3-color, var(--general-heading-color, unset));
+    font-size: 1.2em;
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-4 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h4-color, var(--general-heading-color, unset));
+    font-size: 1.1em;
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-5 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h5-color, var(--general-heading-color, unset));
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-6 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h6-color, var(--general-heading-color, unset));
+}
+
+
+.markdown-rendered h1 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h1-color, var(--general-heading-color, unset));
+    font-size: 1.4em;
+    display: inline;
+}
+
+.markdown-rendered h2 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h2-color, var(--general-heading-color, unset));
+    font-size: 1.3em;
+    display: inline;
+}
+.markdown-rendered h3 {
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h3-color, var(--general-heading-color, unset));
+    font-size: 1.2em;
+    display: inline;
+}
+.markdown-rendered h4 {
+    margin-bottom: 0px !important;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h4-color, var(--general-heading-color, unset));
+    font-size: 1.1em;
+    display: inline;
+}
+.markdown-rendered h5 {
+    margin-bottom: 0px !important;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h5-color, var(--general-heading-color, unset));
+    display: inline;
+}
+.markdown-rendered h6 {
+    margin-bottom: 0px !important;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+    color: var(--custom-h6-color, var(--general-heading-color, unset));
+    display: inline;
+}
+
+
+/*heading indicator*/
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-1:before,
+.markdown-rendered h1:before {
+    position: absolute;
+    content: "";
+    margin-top: 3px;
+    height: 1em;
+    border-left: 3px solid var(--custom-h1-color, var(--general-heading-color, var(--colored-accent-1)));
+    padding-left: 20px !important;
+    margin-left: -24px !important;
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-2:before,
+.markdown-rendered h2:before {
+    position: absolute;
+    content: "";
+    margin-top: 3px;
+    height: 1em;
+    border-left: 3px dashed var(--custom-h2-color, var(--general-heading-color, var(--colored-accent-1)));
+    padding-left: 20px !important;
+    margin-left: -24px !important;
+}
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-header-3:before,
+.markdown-rendered h3:before {
+    position: absolute;
+    content: "";
+    margin-top: 3px;
+    height: 1em;
+    border-left: 3px dotted var(--custom-h3-color, var(--general-heading-color, var(--colored-accent-1)));
+    padding-left: 20px !important;
+    margin-left: -24px !important;
+}
+
+
+/*heading mark*/
+body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4),
+body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5),
+body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6),
+body.heading-highlighting .markdown-rendered h1,
+body.heading-highlighting .markdown-rendered h2,
+body.heading-highlighting .markdown-rendered h3,
+body.heading-highlighting .markdown-rendered h4,
+body.heading-highlighting .markdown-rendered h5,
+body.heading-highlighting .markdown-rendered h6 {
+    color: var(--colored-accent-i1);
+    border-bottom: 2px solid var(--shadow-1);
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+        -moz-border-bottom-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+/* heading mark link color correction */
+body.heading-highlighting h1 > a, 
+body.heading-highlighting h2 > a, 
+body.heading-highlighting h3 > a, 
+body.heading-highlighting h4 > a, 
+body.heading-highlighting h5 > a, 
+body.heading-highlighting h6 > a {
+    color: var(--text-color-inverted) !important;
+}
+
+/*heading mark colors*/
+body.heading-highlighting .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.heading-highlighting .markdown-rendered h1 {
+    background-color: var(--custom-h1-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+body.heading-highlighting .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.heading-highlighting .markdown-rendered h2 {
+    background-color: var(--custom-h2-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+body.heading-highlighting .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.heading-highlighting .markdown-rendered h3 {
+    background-color: var(--custom-h3-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+body.heading-highlighting .cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4),
+body.heading-highlighting .markdown-rendered h4 {
+    background-color: var(--custom-h4-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+body.heading-highlighting .cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5),
+body.heading-highlighting .markdown-rendered h5 {
+    background-color: var(--custom-h5-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+body.heading-highlighting .cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6),
+body.heading-highlighting .markdown-rendered h6 {
+    background-color: var(--custom-h6-color, var(--general-heading-color, var(--colored-accent-1)));
+}
+
+/*DYNAMIC HEADING SPACING ADJUST*/
+div.el-h1 {
+    margin-top: var(--dynamic-heading-spacing, 4em);
+}
+
+div.el-h2 {
+    margin-top: var(--dynamic-heading-spacing, 4em) !important;
+}
+
+div.el-h3 {
+    margin-top: var(--dynamic-heading-spacing, 4em) !important;
+}
+
+div.el-h4 {
+    margin-top: var(--dynamic-heading-spacing, 4em) !important;
+}
+
+div.el-h5 {
+    margin-top: var(--dynamic-heading-spacing, 4em) !important;
+}
+
+div.el-h6 {
+    margin-top: var(--dynamic-heading-spacing, 4em) !important;
+}
+
+div.el-h1 + div.el-h1 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h2, div.el-h2 + div.el-h2 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h3, div.el-h2 + div.el-h3, div.el-h3 + div.el-h3 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h4, div.el-h2 + div.el-h4, div.el-h3 + div.el-h4, div.el-h4 + div.el-h4  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h5, div.el-h2 + div.el-h5, div.el-h3 + div.el-h5, div.el-h4 + div.el-h5, div.el-h5 + div.el-h5  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 + div.el-h6, div.el-h5 + div.el-h6, div.el-h6 + div.el-h6  {
+    margin-top: 0em !important;
+}
+
+/*======================================= Text Spacing =======================================*/
+.el-p + .el-p {
+    margin-top: 2em !important;
+}
+
+p + p {
+    margin-top: 2em !important;
+}
+
+p {
+    margin-top: 0px !important;
+    margin-bottom: .1em !important;
+}
+
+p + ul {
+    margin-top: 0px !important;
+}
+
+ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+p:has(+ ul.has-list-bullet) {
+    margin-bottom: 0px;
+}
+
+.el-p:has(+ .el-ul) {
+    margin-block-end: -em !important;
+}
+
+/*======================================= LISTS =======================================*/
+.markdown-rendered ul.has-list-bullet {
+    margin: 0px;
+}
+
+.el-ul + .el-p {
+    margin-top: 1.5em !important;
+}
+
+li {
+    margin-left: 1.6em !important;
+}
+
+/*======================================== BLOCKQUOTES ================================*/
+/*preview mode */
+body:not(.tv1) .markdown-rendered blockquote,
+body:not(.tv1) .blockquote,
+body:not(.tv1) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+    border-radius: 5px;
+    background-color: var(--background-2);
+    border-left: 10px solid var(--colored-accent-1);
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .cm-line {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/*BLOCKQUOTE PREVIEW VIEW SHADOW*/
+body:not(.tv1) .is-live-preview
+.HyperMD-quote:before {
+    content: '';
+    box-shadow: .5px .5px 8px 1px var(--shadow-3);
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 8px) !important;
+    left: -9px !important;
+    border: 0px solid transparent !important;
+    border-radius: 5px;
+}
+
+/*blockquote padding*/
+.markdown-preview-view blockquote {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+/*reading mode*/
+.markdown-preview-view blockquote {
+    border-inline-width: 10px;
+    border-radius: 5px;
+}
+
+/*BLOCKQUOTE COLORS AND SHADOWS*/
+body:not(.tv1) blockquote {
+    filter: drop-shadow(0 0 2px var(--shadow-3))
+}
+
+/*BLOCKQUOTE PREVIEW VIEW BORDER FIX*/
+.HyperMD-quote + .HyperMD-quote {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+.HyperMD-quote:has(+.HyperMD-quote) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+ul.has-list-bullet * blockquote {
+    margin-top: 0;
+}
+.HyperMD-quote + .HyperMD-quote {
+    &:before {
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important
+    }
+}
+.HyperMD-quote:has(+ .HyperMD-quote) {
+    &:before {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }    
+}
+
+
+/*=========================== CALLOUTS ============================*/
+body:not(.tv1) .callout {
+    color: inherit;
+    border-radius: 5px;
+    --callout-padding: 0;
+    --callout-title-color: inherit;
+    --callout-title-padding: 6px 10px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 5px 10px 5px 10px;
+    --callout-content-radius: 0px;
+    --callout-blend-mode: normal;
+    box-shadow: .5px .5px 3px 1px var(--shadow-3) !important;
+    background: var(--background-2) !important;
+    margin-bottom: 5px;
+}
+body:not(.tv1) .cm-embed-block.cm-callout {
+    border-radius: 5px;
+    box-shadow: .5px .5px 3px 1px var(--shadow-3) !important;
+}
+body:not(.tv1) .cm-embed-block.cm-callout:hover {
+    border-radius: 5px !important;
+}
+body:not(.tv1) .callout-title {
+    position: relative;
+    color: var(--colored-accent-i1);
+    background: var(--colored-accent-1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.251);
+    border-radius: 5px;
+}
+body:not(.tv1) .callout-title:before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");   
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:hover {
+    border-radius: 5px;
+        box-shadow: 0px 0px 0px 1px var(--divider-color) !important;
+}
+.callout-content blockquote {
+    margin-bottom: .2em !important;
+    margin-top: .2em !important;
+}
+.callout-content ol {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.callout-title:before {
+    content: "";
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    background-color: transparent;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 2px;
+    left: 1.5px;
+    box-shadow: 0px 0px 0px 1px var(--highlight-1);
+} 
+
+/*No Callout Icon*/
+.callout-icon:not(.el-div .callout[data-callout="c"] .callout-icon) {
+    display: none;
+}
+
+
+/*================ EMBEDS =================*/
+img {
+    border-radius: 10px;
+}
+
+.theme-light.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+    mix-blend-mode: multiply;
+}
+
+.theme-dark.blend-images .internal-embed.media-embed.image-embed.is-loaded {
+    mix-blend-mode: color-dodge;
+}
+
+.theme-light.blend-images img {
+    filter: invert(0) saturate(0);
+}
+.theme-dark.blend-images img {
+    filter: invert(1) saturate(0);
+}
+
+
+/*================= ROUNDED TABLES =================*/
+/*Credit goes to "FireIsGood": https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+/* TABLES: Fix the borders and add a radius variable */
+:root table {
+    --table-border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+/* Add the radius */
+th:first-child {border-top-left-radius: var(--table-border-radius)}
+th:last-child {border-top-right-radius: var(--table-border-radius)}
+tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
+tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
+      
+/* Redo the borders */
+:root :is(td, th) {
+    border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+    border-color: var(--accent-color-light10) !important;
+}
+      
+.cm-html-embed table, .markdown-rendered table {
+    margin-top: 15px;
+}
+
+
+/*//////////////////////////////////////////////////////////// FIXES ///////////////////////////////////////////////////////////*/
+/*remove fade in tab bar*/
+.mod-fade:not(.mod-at-end):after {
+    content: none;
+}
+
+/*Fix modifier symbols top right*/
+.mod-windows, .mod-linux {
+--frame-right-space: 100px;
+}
+
+/*disable some elements*/
+.workspace-ribbon.side-dock-ribbon.mod-left::before,
+.workspace-tab-header.tappable:before,
+.workspace-tab-header.tappable:after,
+.workspace-tab-header-inner:after,
+.workspace-tab-header-container:before {
+    display: none !important;
+}
+
+/*virtual link styling*/
+.virtual-link-default {
+    filter: brightness(1);
+}
+
+/*increase popup size*/
+.theme-light, .theme-dark {
+    --popover-width: 1050px;
+    --popover-height: 1250px;
+}
+
+/*disable scrollbars / only show on hover*/
+.workspace-leaf-content {
+    --scrollbar-thumb-bg: transparent;
+    &:hover {
+        --scrollbar-thumb-bg: #d3d3d350 !important;
+    }
+}
+
+.view-header-left .clickable-icon {
+    margin-right: 5px;
+}
+
+
+.modal.mod-publish .mod-cta:before {
+    display: none;
+}
+/*================= MACOS ==================*/
+body.mod-macos .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
+    padding-left: calc(var(--size-4-2) + var(--frame-left-space) + 10px) !important;
+}
+
+body:not(.show-ribbon).mod-macos .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
+    padding-left: calc(var(--size-4-2) + var(--frame-left-space) - 34px) !important;
+}
+
+body.mod-macos .sidebar-toggle-button.mod-right {
+    background: transparent !important;
+}
+
+
+/*////////////////////////////////////////////////////////////////// ADDITIONS (style settings) //////////////////////////////////////////////////////////////////*/
+
+body.custom-accent-bold {
+  --bold-color: var(--colored-accent-1);
+}
+
+body {
+    --bold-color: var(--custom-bold);
+}
+
+body.custom-accent-italic {
+  --italic-color: var(--colored-accent-1);
+}
+
+body {
+    --italic-color: var(--custom-italic);
+}
+
+/*======== Ninja Cursor Enhancement ===========*/
+/*credit goes to the people in this thread: https://forum.obsidian.md/t/options-to-modify-cursor-style/1091/41?page=2 */
+body.enhanced-cursor.is-focused
+.x-cursor {
+    position:flex;
+    opacity: 1;
+    background: transparent;
+    backdrop-filter: invert(100%);
+    filter: grayscale(100%);
+    width: calc(var(--cursor-height) * .55);
+    left: calc(var(--cursor-height) * -0);
+    height: calc(2px + var(--cursor-height));
+    max-height: 2rem;
+    max-width: 17px;
+    top: calc(0px - var(--header-height));
+    transition: all .07s;
+}
+.enhanced-cursor .x-cursor::after {
+    display: none;
+}
+.enhanced-cursor .cursorWrapper .x-cursor0,
+.enhanced-cursor .cursorWrapper .x-cursor1 {
+    animation: blink1 1s 0s both infinite;
+}
+body.enhanced-cursor:has(.x-cursor) .cm-editor * {
+caret-color: transparent;
+}
+
+/*status bar hider*/
+body.status-bar-hover .status-bar{
+    opacity: 0;
+    transition: all .5s;
+    &:hover {        
+        opacity: 1;
+    }
+}
+/*disable enhanced buttons*/
+body.enhanced-buttons-disable {
+    --highlight-1: transparent !important;
+    --highlight-2: transparent !important;
+}
+
+
+/*==================== Theme Variants ==================*/
+body.tv1 .callout {
+    color: inherit;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+    --callout-padding: 0;
+    --callout-title-color: inherit;
+    --callout-title-padding: 6px 10px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 5px 10px 5px 10px;
+    --callout-content-radius: 0px;
+    --callout-blend-mode: normal;
+    background: var(--background-1-tv1) !important;
+    margin-bottom: 5px;
+}
+body.tv1 .cm-embed-block.cm-callout {
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+}
+body.tv1 .cm-embed-block.cm-callout:hover {
+    border-radius: 10px !important;
+}
+body.tv1 .callout-title {
+    position: relative;
+    color: var(--colored-accent-text-color-inverted);
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+body.tv1 .callout-title:before {
+    display: none;
+}
+body.tv1 .markdown-rendered blockquote,
+body.tv1 .blockquote,
+body.tv1 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+    border-radius: 10px;
+    background-color: var(--background-1-tv1);
+    border-left: none;
+}
+body.tv1 .markdown-rendered blockquote {
+    padding-top: .4em !important;
+    padding-bottom: .4em !important;
+}
+body.tv1 .is-live-preview .HyperMD-quote:before {
+    content: '';
+    box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+    z-index: -1 !important;
+    position: absolute;
+    width: calc(100%) !important;
+    border: 0px solid transparent !important;
+    border-radius: 10px;
+}
+body.tv1 blockquote {
+    box-shadow: 0px 0px 0px 1px var(--c-tv1), 0px 0px 3px 1px var(--s-tv1);
+    border-radius: 10px;
+}
+body.tv1 blockquote:has(blockquote) {
+    padding-bottom: 5px !important;
+}
+body.tv1 .workspace-leaf-content {
+    --scrollbar-thumb-bg: transparent;
+    &:hover {
+        --scrollbar-thumb-bg: transparent !important;
+    }
+}
+body.tv1 {
+    --cbr: 20px !important;
+}
+.theme-dark.tv1 {
+    --c-tv1: rgb(58, 58, 58);
+    --s-tv1: rgba(0, 0, 0, 0.47);
+    --background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) *.1) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * .1% - 3%)));
+
+}
+.theme-light.tv1 {
+    --c-tv1: rgb(209, 209, 209);
+    --s-tv1: rgba(0, 0, 0, 0.089);
+    --background-1-tv1: hsl(var(--background-2_h), calc(calc(var(--accent-s) * 1) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 2%) + calc(var(--bgt_l, 0) * 1%)));
+
+}

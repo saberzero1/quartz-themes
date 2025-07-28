@@ -1,0 +1,10 @@
+{
+	"name": "Pxld",
+	"version": "1.0.3",
+	"minAppVersion": "1.0.0",
+	"author": "Lina674",
+	"authorUrl": "https://github.com/Lina674",
+    "description": "This theme is inspired by pixelated games.",
+	"theme": true,
+	"files": ["theme.css"]
+}

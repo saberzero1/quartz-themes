@@ -1,0 +1,269 @@
+/* Light mode */
+body.theme-light {
+	--color-bg-primary: #ffffff;
+	--color-bg-secondary: #f8f9fa;
+	--color-text-primary: #1a202c;
+	--color-text-secondary: #718096;
+	--color-border: #e2e8f0;
+	--color-code-bg: #f1f5f9;
+	--color-link: #1a202c;  
+	
+	background-color: var(--color-bg-primary);
+	color: var(--color-text-primary);
+  }
+  
+  body.theme-light .markdown-preview-view,
+  body.theme-light .workspace-leaf-content {
+	background-color: var(--color-bg-secondary);
+	border: 1px solid var(--color-border);
+  }
+  
+  /* Dark mode */
+  body.theme-dark {
+	--color-bg-primary: #1a202c;
+	--color-bg-secondary: #2d3748;
+	--color-text-primary: #edf2f7;
+	--color-text-secondary: #a0aec0;
+	--color-border: #4a5568;
+	--color-code-bg: #1e2937
+	--color-link: #edf2f7;
+	
+	background-color: var(--color-bg-primary);
+	color: var(--color-text-primary);
+  }
+  
+  body.theme-dark .markdown-preview-view,
+  body.theme-dark .workspace-leaf-content {
+	background-color: var(--color-bg-secondary);
+	border: none;
+  }
+  
+  /* Shared styles */
+  body {
+	--radius-sm: 4px;
+	--radius-md: 8px;
+	--radius-lg: 12px;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	
+	font-family: var(--font-sans);
+	line-height: 1.6;
+  }
+  
+  /* Links - Updated to use Obsidian's accent color */
+  a:link,
+  a:visited {
+	color: var(--color-link) !important;
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	transition: all 0.2s ease;
+  }
+  
+  a:hover {
+	color: var(--accent) !important;
+	text-decoration-thickness: 2px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: var(--spacing-lg);
+	margin-bottom: var(--spacing-md);
+	line-height: 1.3;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.65rem; }
+  h3 { font-size: 1.35rem; }
+  h4 { font-size: 1.15rem; }
+  
+  /* Code blocks - Enhanced for better readability */
+  pre,
+  code {
+	font-family: var(--font-mono);
+	font-size: 0.9em;
+	background-color: var(--color-code-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+  }
+  
+  code {
+	padding: 0.2em 0.4em;
+  }
+  
+  pre {
+	padding: var(--spacing-md);
+	overflow-x: auto;
+	line-height: 1.7;
+  }
+  
+  pre code {
+	background: none;
+	border: none;
+	padding: 0;
+  }
+  
+  /* Images - Added rounded corners and proper scaling */
+  img {
+	border-radius: var(--radius-md);
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: var(--spacing-md) 0;
+  }
+  
+  /* Editor and preview image consistency */
+  .markdown-source-view img,
+  .markdown-preview-view img {
+	border-radius: var(--radius-md);
+	max-width: 100%;
+	height: auto;
+  }
+  
+  /* Tables - Enhanced for better readability */
+  table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	margin: var(--spacing-md) 0;
+	border-radius: var(--radius-md);
+	overflow: hidden;
+  }
+  
+  table th,
+  table td {
+	padding: var(--spacing-sm) var(--spacing-md);
+	border: 1px solid var(--color-border);
+  }
+  
+  table th {
+	background-color: var(--color-bg-secondary);
+	font-weight: 600;
+	text-align: left;
+  }
+  
+  /* Task lists - More polished checkboxes */
+  .task-list-item {
+	margin: var(--spacing-sm) 0;
+	list-style-type: none;
+  }
+  
+  .task-list-item-checkbox {
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: var(--radius-sm);
+	border: 2px solid var(--color-border);
+	margin-right: var(--spacing-sm);
+	background-color: var(--color-bg-primary);
+	transition: all 0.2s ease;
+  }
+  
+  .task-list-item-checkbox:checked {
+	background-color: var(--accent);
+	border-color: var(--accent);
+  }
+  
+  /* Graph view colors */
+  .graph-view .node {
+	fill: var(--accent);
+  }
+  
+  .graph-view .edge {
+	stroke: var(--color-border);
+	opacity: 0.6;
+  }
+  
+  /* Blockquotes - Added styling */
+  blockquote {
+	border-left: 4px solid var(--accent);
+	margin: var(--spacing-md) 0;
+	padding: var(--spacing-sm) var(--spacing-md);
+	background-color: var(--color-bg-secondary);
+	border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+
+  /* File Explorer / Navigation styling */
+.nav-folder {
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-file,
+  .nav-folder-title {
+	padding: 4px 12px 4px 8px;
+	border-radius: var(--radius-sm);
+	margin: 1px 0;
+	transition: background-color 0.1s ease;
+  }
+  
+  /* Indent nested items */
+  .nav-folder .nav-folder,
+  .nav-folder .nav-file {
+	margin-left: 12px;
+  }
+  
+  /* File/folder titles */
+  .nav-file-title,
+  .nav-folder-title {
+	font-size: 13px;
+	line-height: 24px;
+	color: var(--color-text-primary);
+	display: flex;
+	align-items: center;
+	padding: 0;
+  }
+  
+  /* Count badges */
+  .nav-file-tag,
+  .nav-folder-children .nav-file-tag {
+	background: none;
+	color: var(--color-text-secondary);
+	font-size: 13px;
+	padding: 0;
+	margin-left: auto;
+	font-weight: normal;
+  }
+  
+  /* Hover states */
+  .nav-file-title:hover,
+  .nav-folder-title:hover {
+	background-color: var(--color-bg-secondary);
+  }
+  
+  /* Selected/active states */
+  .nav-file-title.is-active {
+	background-color: var(--accent);
+	background-color: var(--color-bg-secondary);
+	color: var(--color-text-primary);
+	font-weight: 700;
+  }
+  
+  .nav-file-title.is-active .nav-file-tag {
+	color: var(--color-text-primary);
+  }
+  
+  /* Collapse/expand arrows */
+  .nav-folder-collapse-indicator {
+	padding: 0 4px;
+	color: var(--color-text-secondary);
+  }
+  
+  /* File explorer container */
+  .nav-files-container {
+	padding: 8px 0;
+  }
+  
+  /* Ensure left sidebar has proper background */
+  .workspace-leaf.mod-left-split {
+	background-color: var(--color-bg-primary);
+  }
+  
+  /* Add subtle separator between main content and sidebar */
+  .workspace-split.mod-left-split {
+	border-right: 1px solid var(--color-border);
+  }

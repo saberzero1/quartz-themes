@@ -1,0 +1,218 @@
+/* @settings
+
+name: 🍵 Comfort Light Theme
+id: comfort-light-theme
+settings:
+    - 
+        id: background-primary
+        title: Background-primary Color
+        title.zh: 一级背景色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#fcfef3'
+        default-dark: '#000000'
+    - 
+        id: background-secondary
+        title: Background-secondary Color
+        title.zh: 二级背景色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f8f6ea'
+        default-dark: '#000000'
+    - 
+        id: background-secondary-alt
+        title: background-secondary-alt Color
+        title.zh: 顶部导航色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a3d5aa'
+        default-dark: '#000000'
+    - 
+        id: tab-container-background
+        title: tab-container-background Color
+        title.zh: 导航色
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a3d5aa'
+        default-dark: '#000000'
+    - 
+        id: ribbon-background
+        title: ribbon-background Color
+        title.zh: 最左边状态栏
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#a3d5aa'
+    - 
+        id: font-family
+        title: font-family
+        description: Font used for the user interface
+        type: variable-text
+        default: 宋体, SimSun, -apple-system, sans-serif
+
+*/
+
+.theme-light {
+    --color-red-rgb:
+    197,
+    65,
+    40;
+    --background-primary: #fcfef3;
+    --background-secondary: #f8f6ea;
+    --background-secondary-alt: #a3d5aa;
+    --background-modifier-hover: #a3d5aa;
+    --nav-item-color-active:#edf4f0;
+    --nav-item-color-hover:#edf4f0;
+    --tab-container-background:#a3d5aa;
+    --input-shadow: none;
+    --interactive-normal: #eff1df;
+    --interactive-hover: #e5e8c2;
+    --input-shadow-hover:none;
+    --text-normal:#6f6e6a;
+    --text-muted:#8d9c8d;
+    --background-modifier-cover:#f9fcef;
+    --background-modifier-cover:#f6f9ec;
+    --background-modifier-error-hover:#e5bec5;
+    --background-modifier-error:#f1d4d9;
+    --panel-border-color: rgba(0,0,0,0);
+    --gray-1: #b0c0aa;
+    --gray-2: #a0a5b8;
+    --red: #cd8f88;
+    --green: #afe4ae;
+    --blue: #3d74f6;
+    --purple: #ce82cd;
+    --aqua: #89bace;
+    --yellow: #e1d5ac;
+    --orange: #c1a58c;
+    --slider-track-background:#eff1e1;
+    --toggle-radius:4px;
+    
+}
+.checkbox-container{
+    border-radius: 14px;
+}
+.theme-dark, .theme-light {
+    --tag-padding-x: 4px;
+    --tag-padding-y: 2px;
+    --tag-radius: 4px;
+    --embed-padding: 0 0 0 var(--size-4-4);
+}
+.theme-light pre {
+    background: var(--background-primary);
+    box-shadow: inset 0 0 0 1px var(--background-primary-alt);
+    border-radius: 4px;
+}
+
+.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::after,
+.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::before,
+.workspace .mod-root  .workspace-tab-header:first-child .workspace-tab-header-inner::after,
+.workspace .mod-root  .workspace-tab-header.is-active + .workspace-tab-header .workspace-tab-header-inner::after {
+  opacity: 0;
+}
+
+/* Editor and output */
+.markdown-rendered blockquote {
+    padding: var(--embed-padding);
+}
+
+.markdown-preview-section > div h1,
+.markdown-preview-section > div h2,
+.markdown-preview-section > div h3,
+.markdown-preview-section > div h4,
+.markdown-preview-section > div h5,
+.markdown-preview-section > div h6 {
+  margin-top: 40px;
+}
+
+body {
+    font-family: 宋体, SimSun, -apple-system, sans-serif;
+    font-family: var(--font-family);
+    --radius-s: 4px;
+    --radius-m: 6px;
+    --radius-l: 8px;
+    --input-radius: 4px;
+    --tab-radius-active: 4px;
+    --checkbox-radius: 4px;
+    --tab-container-background:#a3d5aa;
+    --tab-text-color:#e6f1e9;
+    --tab-text-color-focused:#e6f1e9;
+    --tab-outline-width:0;
+    --tab-outline-color:#f8f6ea;
+    --icon-color:#ffffff;
+    --icon-color-hover:#e6f1e9;
+    --icon-color-active:#ffffff;
+    --ribbon-background:#a3d5aa;
+    --ribbon-background:var(--ribbon-background);
+    --titlebar-background: #a3d5aa;
+    --divider-color:rgba(0,0,0,0);
+    --icon-color-focused:#edf4f0;
+    --icon-color-active:#edf4f0;
+    --tab-text-color-focused-active-current:#66876b;
+    --tab-divider-color:#b4d8b4;
+    --nav-indentation-guide-color:rgba(0,0,0,0);
+    --vault-name-color:#636867;
+    --nav-item-color:#626666;
+    --tag-color:#fcfdfe;
+    --tag-background:#d4e4f1;
+    --link-external-color:#5273a5;
+    --link-external-color-hover:#1a4078;
+    --background-modifier-border:rgba(0,0,0,0);
+    --input-shadow: none;
+    --font-text: "宋体",SimSun;
+    --input-shadow-hover:none;
+    --background-modifier-border-focus:#add4ad;
+    --modal-border-color: rgba(0,0,0,0);
+    --background-modifier-error: #c9627a;
+    --text-muted:#455445;
+    --tab-curve:6px;
+    --toggle-radius:4px;
+}
+
+
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: #f5f0dd;
+    background-color: #eef1e0;
+}
+button:hover{
+    box-shadow: none;
+}
+
+.fc-theme-standard td, .fc-theme-standard th{
+    border: 1px solid #f5f7ee;
+}
+.fc .fc-button-primary:not(:disabled):active:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus{
+    box-shadow: 0 0 0 0.1rem #92c292;
+}
+.fc-daygrid-dot-event:hover, .fc-daygrid-dot-event.fc-event-mirror{
+    background: rgba(255,255,255,0.9);
+}
+
+.markdown-rendered pre{
+    background-color: #f3f7e4;
+}
+
+body:not(.is-grabbing) .nav-folder-title:hover{
+    color: inherit; 
+}
+
+.collapse-icon svg.svg-icon {
+    color: #819881 !important;
+}
+
+.workspace-ribbon.mod-left{
+    margin-top: calc( var(--header-height) - 1px );
+}
+.workspace-ribbon .sidebar-toggle-button {
+    background: #a3d5aa !important;
+}
+.workspace-ribbon{
+    border-width: 0 !important;
+}
+.clickable-icon{
+    background-color: #a3d5aa;
+}
+

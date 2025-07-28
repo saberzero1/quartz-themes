@@ -1,0 +1,51 @@
+.theme-dark {
+	--background-primary: black;
+	--background-secondary: black;
+	--accent-h: 0;
+	--text-normal: rgb(255, 0, 0);
+	--text-muted: rgb(204, 0, 0);
+	--text-faint: rgb(153, 0, 0);
+	--text-on-accent: rgb(255, 0, 0);
+	--text-on-accent-inverted: rgb(255, 0, 0);
+	--text-success: rgb(255, 0, 0);
+	--text-warning: rgb(255, 0, 0);
+	--text-error: rgb(179, 0, 0);
+	--text-accent: rgb(255, 0, 0);
+	--text-accent-hover: rgb(255, 0, 0);
+
+	--color-base-00: rgb(0, 0, 0);
+	--color-base-05: rgb(23, 0, 0);
+	--color-base-10: rgb(26, 0, 0);
+	--color-base-20: rgb(34, 0, 0);
+	--color-base-25: rgb(41, 0, 0);
+	--color-base-30: rgb(0, 0, 0);
+	--color-base-35: rgb(58, 0, 0);
+	--color-base-40: rgb(68, 0, 0);
+	--color-base-50: rgb(85, 0, 0);
+	--color-base-60: rgb(102, 0, 0);
+	--color-base-70: rgb(0, 0, 0);
+	--color-base-100: rgb(0, 0, 0);
+
+	--input-hover-border-color: red;
+	--color-accent: rgb(255, 3, 3);
+	--interactive-accent: rgb(30, 0, 0);
+	--text-accent: red;
+	--input-shadow: 0 0 0 1px rgba(255, 0, 0, 0.5);
+
+	--background-modifier-border: rgb(130, 0, 0);
+	--background-modifier-hover: rgba(255, 0, 0, 0.2);
+
+	--interactive-accent-hover: rgb(80, 0, 0);
+	--input-shadow-hover: 0 0 0 1px rgba(255, 0, 0, 0.5);
+
+	--caret-color: rgb(255, 0, 0);
+}
+
+.theme-dark img {
+	filter: grayscale(1) brightness(0.2) sepia(1) hue-rotate(-50deg)
+		saturate(10) contrast(1);
+}
+
+.theme-dark body {
+	border: 1px solid rgb(130, 0, 0);
+}
