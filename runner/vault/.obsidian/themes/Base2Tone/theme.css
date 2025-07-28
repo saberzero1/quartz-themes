@@ -1,0 +1,275 @@
+/* 
+ * based off Duotone Dark Sky by Simurai:
+ * http://simurai.com/duotone-dark-sky-syntax/
+ * And Base2Tone by Bram de Haan:
+ * https://base2t.one/
+ */
+
+:root {
+  /* change these hues for an entirely new look */
+  --uno: 260;
+  --duo: 28;
+  /* this is a hack workaround for now */
+  /* go to https://convertacolor.com/ to convert the --baseD0 hsl to rgb */
+  /* i.e. hsl(--duo, 58%, 55%) */
+  --D0-rgb: 207,136,74;
+
+  /* then fiddle with the saturation and lightness values */
+  --baseA0: hsl(var(--uno), 18%, 17%);
+  --baseA1: hsl(var(--uno), 17%, 22%);
+  --baseA2: hsl(var(--uno), 16%, 35%);
+  --baseA3: hsl(var(--uno), 15%, 40%);
+  --baseA4: hsl(var(--uno), 14%, 45%);
+  --baseA5: hsl(var(--uno), 13%, 53%);
+  --baseA6: hsl(var(--uno), 12%, 61%);
+  --baseA7: hsl(var(--uno), 11%, 69%);
+
+  --baseB0: hsl(var(--uno), 75%, 61%);
+  --baseB1: hsl(var(--uno), 80%, 66%);
+  --baseB2: hsl(var(--uno), 87%, 71%);
+  --baseB3: hsl(var(--uno), 97%, 76%);
+  --baseB4: hsl(var(--uno), 97%, 81%);
+  --baseB5: hsl(var(--uno), 97%, 86%);
+  --baseB6: hsl(var(--uno), 97%, 91%);
+  --baseB7: hsl(var(--uno), 100%, 96%);
+
+  --baseC0: hsl(var(--duo), 4%, 46%);
+  --baseC1: hsl(var(--duo), 5%, 53%);
+  --baseC2: hsl(var(--duo), 6%, 60%);
+  --baseC3: hsl(var(--duo), 6%, 67%);
+  --baseC4: hsl(var(--duo), 8%, 74%);
+  --baseC5: hsl(var(--duo), 13%, 82%);
+  --baseC6: hsl(var(--duo), 18%, 90%);
+  --baseC7: hsl(var(--duo), 23%, 98%);
+
+  --baseD0: hsl(var(--duo), 58%, 55%);
+  --baseD1: hsl(var(--duo), 63%, 60%);
+  --baseD2: hsl(var(--duo), 80%, 65%);
+  --baseD3: hsl(var(--duo), 85%, 68%);
+  --baseD4: hsl(var(--duo), 90%, 71%);
+  --baseD5: hsl(var(--duo), 95%, 75%);
+  --baseD6: hsl(var(--duo), 100%, 80%);
+  --baseD7: hsl(var(--duo), 100%, 85%);
+}
+
+/* dark theme colours */
+.theme-dark {
+  --background-primary: var(--baseA0);
+  --background-primary-alt: var(--baseA1);
+  --background-secondary: var(--baseA2);
+  --background-secondary-alt: var(--baseA1);
+  --background-accent: var(--baseA4);
+  --background-modifier-border: var(--baseA2);
+  --text-accent: var(--baseB0);
+  --text-accent-hover: var(--baseB1);
+  --text-normal: var(--baseB7);
+  --text-muted: var(--baseB6);
+  --text-faint: var(--baseB5);
+  --text-highlight-bg: var(--baseD0);
+  --text-selection: hsla(var(--uno), 75%, 61%, 0.25);
+  --text-on-accent: var(--baseC7);
+  --interactive-normal: var(--baseA0);
+  --interactive-hover: var(--baseD0);
+  --interactive-accent: var(--baseD0);
+  --interactive-accent-rgb: var(--D0-rgb); /* 🤔 */
+  --interactive-accent-hover: var(--baseD1);
+
+  --operators: var(--baseA3);
+  --link-external: var(--baseD0);
+  --link-internal: var(--baseD4);
+  --inline-code: var(--baseD0);
+  --bullet: var(--baseD0);
+}
+
+/* now, the fun stuff */
+/* headers */
+.cm-s-obsidian .cm-header, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  overflow:visible;
+}
+.cm-s-obsidian .cm-formatting-header {
+  font-weight: 300;
+}
+
+.markdown-preview-view h1, .cm-s-obsidian span.cm-header-1 {
+  color: var(--baseB0);
+}
+.markdown-preview-view h2, .cm-s-obsidian span.cm-header-2 {
+  color: var(--baseB1);
+}
+.markdown-preview-view h3, .cm-s-obsidian span.cm-header-3 {
+  color: var(--baseB2);
+}
+.markdown-preview-view h4, .cm-s-obsidian span.cm-header-4 {
+  color: var(--baseB3);
+}
+.markdown-preview-view h5, .cm-s-obsidian span.cm-header-5 {
+  color: var(--baseB4);
+}
+.markdown-preview-view h6, .cm-s-obsidian span.cm-header-6 {
+  color: var(--baseB5);
+}
+
+/* formatting operators */
+.cm-s-obsidian .cm-formatting,
+.cm-s-obsidian span.cm-formatting-image,
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-formatting-link-string.cm-url,
+.cm-s-obsidian span.cm-inline-code.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-quote,
+.cm-s-obsidian span.cm-formatting-header,
+.cm-s-obsidian span.cm-hr,
+.cm-s-obsidian span.cm-tag,
+.cm-s-obsidian span.cm-attribute,
+.cm-s-obsidian span.cm-string {
+  color: var(--operators);
+}
+
+/* external links */
+.cm-s-obsidian .cm-formatting-link + .cm-formatting-link-string + .cm-url,
+.cm-s-obsidian span.cm-url,
+a.external-link {
+  color: var(--link-external);
+  font-style: italic;
+}
+a.external-link {
+  background: none;
+  padding-right: inherit;
+}
+a.external-link:after {
+  content: "↗";
+  text-decoration: none;
+  display: inline-block;
+  opacity: 0.5;
+  font-size: .75em;
+  vertical-align: top;
+}
+
+/* internal links */
+.cm-s-obsidian span.cm-link:not(.cm-formatting),
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hmd-internal-link,
+a.internal-link,
+a.tag {
+  color: var(--link-internal);
+}
+
+/* code */
+.cm-s-obsidian span.cm-inline-code,
+.markdown-preview-view code,
+code {
+  color: var(--inline-code);
+}
+pre code, .cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--text-normal);
+}
+
+/* blockquote */
+.CodeMirror-wrap pre.CodeMirror-line.HyperMD-quote {
+  border-color: var(--background-secondary);
+  border-width: 1px;
+  border-left-width: 5px;
+  border-style: solid;
+}
+.CodeMirror-wrap pre.CodeMirror-line:not(.HyperMD-quote) + .HyperMD-quote {
+  border-bottom: none;
+}
+.CodeMirror-wrap pre.CodeMirror-line.HyperMD-quote + pre.CodeMirror-line.HyperMD-quote {
+  border-bottom: none;
+  border-top: none;
+}
+.CodeMirror-wrap pre.CodeMirror-line.HyperMD-quote + pre.CodeMirror-line:not(.HyperMD-quote) {
+  border-top: 1px solid var(--background-secondary);
+}
+
+/* escape characters */
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+  color: var(--background-modifier-border);
+}
+.cm-s-obsidian span.cm-hmd-escape-char {
+  color: var(--text-normal);
+}
+
+/* stikethrough */
+.cm-strikethrough, s {
+  text-decoration-color: var(--operators);
+}
+.cm-strikethrough:not(.cm-formatting), s {
+  color: var(--operators);
+}
+
+/* fixes for highlight */
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark,
+.search-result-file-matched-text {
+  color: var(--background-primary);
+}
+.cm-s-obsidian span.cm-formatting-highlight {
+  color: var(--operators);
+}
+
+/* fixes for selection */
+::selection {
+  background-color: var(--text-selection);
+}
+
+/* bullet lists */
+
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--bullet);
+}
+.cm-s-obsidian span.cm-formatting-list-ul {
+  font-weight: bold;
+}
+ul { list-style: none; }
+
+li > p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul li:not(.task-list-item)::before {
+  content: "•"; /* 🤔 need to think of some better bullet chars */
+  color: var(--bullet);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding:0;
+  font-weight: bold;
+}
+ul ul li:not(.task-list-item)::before {
+  content: "◦"
+}
+ul ul ul li:not(.task-list-item)::before {
+  content: "▪"
+}
+
+/* numbered lists */
+ol {list-style: none; counter-reset: li}
+ol > li {
+  counter-increment: li;
+}
+ol > li:not(.task-list-item)::before,
+ul ol > li:not(.task-list-item)::before,
+ul ul ol > li:not(.task-list-item)::before,
+ul ul ul ol > li:not(.task-list-item)::before {
+  content: "." counter(li);
+  color: var(--bullet);
+  font-weight:normal;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  word-wrap: none;
+  overflow: visible;
+  word-break: keep-all;
+}
+
+/* task lists */
+.cm-s-obsidian span.cm-formatting-task {
+  color: var(--bullet);
+}

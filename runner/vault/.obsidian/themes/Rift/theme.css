@@ -1,0 +1,252 @@
+/* @settings
+name: Theme - Rift
+id: obsidian-theme-rift
+settings:
+    -   id: obsidian-theme-rift-hsl
+        title: Accent colour
+        type: heading
+        level: 2
+    -   id: accent-h
+        title: "Hue"
+        type: variable-number-slider
+        default: 160
+        min: 0
+        max: 255
+        step: 1
+    -   id: accent-s
+        title: "Saturation"
+        type: variable-text
+        default: 20%
+    -   id: accent-l
+        title: "Lightness"
+        type: variable-text
+        default: 45%
+
+    -   id: obsidian-theme-rift-typography
+        title: Typography
+        type: heading
+        level: 2
+    -   id: text-accent
+        title: 'Text accent'
+        description: 'Define the colour used for accented text.'
+        type: variable-select
+        default: var(--color-green)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+    -   id: text-accent-hover
+        title: 'Text accent - Hover'
+        description: 'Define the colour used for accented text when they are hovered.'
+        type: variable-select
+        default: var(--color-green-hover)
+        options:
+            - label: Red
+              value: var(--color-red-hover)
+            - label: Orange
+              value: var(--color-orange-hover)
+            - label: Yellow
+              value: var(--color-yellow-hover)
+            - label: Green
+              value: var(--color-green-hover)
+            - label: Cyan
+              value: var(--color-cyan-hover)
+            - label: Blue
+              value: var(--color-blue-hover)
+            - label: Purple
+              value: var(--color-purple-hover)
+            - label: Pink
+              value: var(--color-pink-hover)
+    -   id: bold-color
+        title: 'Bold colour'
+        description: 'Define the colour used for bold text.'
+        type: variable-select
+        default: var(--color-yellow)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+    -   id: italic-color
+        title: 'Italic colour'
+        description: 'Define the colour used for italic text.'
+        type: variable-select
+        default: var(--color-orange)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+
+*/
+
+:root {
+    --settings-related-modal-width: 80%;
+}
+
+.theme-dark {
+    /**************/
+    /* Background */
+    /**************/
+    --background-primary: #2B2F3A;
+    --background-primary-alt: #2B2F3A;
+    --background-secondary: #3A3F4C;
+    --background-secondary-alt: #3A3F4C;
+    /********/
+    /* Text */
+    /********/
+    --text-normal: #E5E7EB;
+    --text-muted: #9CA3AF;
+    --text-faint: #6B7280;
+    --text-accent: var(--color-green);
+    --text-accent-hover: var(--color-green-hover);
+    --bold-color: var(--color-yellow);
+    --italic-color: var(--color-orange);
+    /**********/
+    /* Accent */
+    /**********/
+    --accent-h: 160;
+    --accent-s: 20%;
+    --accent-l: 45%;
+    /***********/
+    /* Colours */
+    /***********/
+    --color-red: #B75C5C;
+    --color-red-hover: #C97A7A;
+    --color-red-rgb: 183, 92, 92;
+    --color-red-hover-rgb: 201, 122, 122;
+    --color-orange: #C48A6A;
+    --color-orange-hover: #D39D80;
+    --color-orange-rgb: 196, 138, 106;
+    --color-orange-hover-rgb: 211, 157, 128;
+    --color-yellow: #D1B97F;
+    --color-yellow-hover: #DDCCA0;
+    --color-yellow-rgb: 209, 185, 127;
+    --color-yellow-hover-rgb: 221, 204, 160;
+    --color-green: #5c8a7a;
+    --color-green-hover: #74A194;
+    --color-green-rgb: 92, 138, 122;
+    --color-green-hover-rgb: 116, 161, 148;
+    --color-cyan: #5C9E9E;
+    --color-cyan-hover: #73B3B3;
+    --color-cyan-rgb: 92, 158, 158;
+    --color-cyan-hover-rgb: 115, 179, 179;
+    --color-blue: #5A78A0;
+    --color-blue-hover: #7590B5;
+    --color-blue-rgb: 90, 120, 160;
+    --color-blue-hover-rgb: 117, 144, 181;
+    --color-purple: #7D6C9C;
+    --color-purple-hover: #9585B2;
+    --color-purple-rgb: 125, 108, 156;
+    --color-purple-hover-rgb: 149, 133, 178;
+    --color-pink: #A37D9C;
+    --color-pink-hover: #B892AE;
+    --color-pink-rgb: 163, 125, 156;
+    --color-pink-hover-rgb: 184, 146, 174;
+    /**********/
+    /* Titles */
+    /**********/
+    --h1-color: #A3B6B4;
+    --h2-color: #5E8290;
+    --h3-color: #8DA89C;
+    --h4-color: #5F8F78;
+    --h5-color: #798782;
+    --h6-color: #4B6C5C;
+}
+
+.theme-light {
+
+}
+
+.workspace {
+    > .workspace-ribbon {
+        display: none;
+    }
+
+    > .mod-left-split {
+        min-width: 375px;
+        max-width: 375px;
+    }
+
+    > .mod-right-split {
+        min-width: 375px;
+        max-width: 375px;
+    }
+
+    > .mod-left-split, .mod-right-split {
+        .view-content {
+            padding: 16px;
+        }
+    }
+}
+
+/* Add a width constraint to settings modal. */
+.mod-settings {
+    min-width: var(--settings-related-modal-width);
+}
+
+/* Add a width constraint to community modals (plugins & themes). */
+.mod-community-modal {
+    min-width: var(--settings-related-modal-width);
+}
+
+/* Useful for bypassing "Show inline title" setting sync when using a custom sync service. */
+.inline-title {
+    display: none !important;
+}
+
+/* Useful for bypassing "Properties in document" setting sync when using a custom sync service. */
+.workspace-leaf-content[data-mode="preview"] .mod-header > .metadata-container,
+.workspace-leaf-content[data-mode="source"] .cm-sizer > .metadata-container {
+    display: none !important;
+}
+
+/* Add vertical alignement to Calendar plugin's reset button. */
+#calendar-container .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Applied to make a note span the full width available. */
+.wide-page, .page-large {
+    --file-line-width: 100%;
+}

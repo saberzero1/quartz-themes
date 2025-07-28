@@ -1,0 +1,3136 @@
+/*
+--------------------------- --------------------------- --------------------------- 
+--------------------------- --------------------------- --------------------------- 
+	Mado Miniflow - Obsidian Theme by hydescarf
+	https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow
+--------------------------- --------------------------- --------------------------- 
+--------------------------- --------------------------- --------------------------- 
+*/
+
+body{
+	/* --accent-h: 210; */
+	/* --accent-s: 93%; */
+	/* --accent-l: 62%; */
+	--accent-h: 254;
+	--accent-s: 80%;
+	--accent-l: 68%;
+	
+	--bgcolor-h:204;
+	--bgcolor-s:45%;
+	--bgcolor-l:97%;
+	
+	--titlebar-background:var(--background-secondary);
+	--titlebar-background-focused:var(--background-secondary);
+	
+	--background-modifier-hover:var(--color-base-hover);
+	
+	--bold-weight:var(--font-bold);
+	--italic-color:var(--text-muted);
+	--code-normal:var(--text-muted);
+	--blockquote-color:var(--color-muted);
+	
+	--background-primary:var(--color-base-00);
+	--background-secondary:var(--color-base-20);
+	--checklist-done-color:var(--color-base-50);
+	
+	--icon-m:20px;
+	--icon-l:20px;	
+	--divider-width:4px;
+	--callout-padding:0px;
+	--callout-title-padding:11px;
+	--callout-content-padding:0 11px 0 27px;
+	
+	--embed-padding:13px 23px;
+	--list-indent:37px;
+	
+	--header-height:43px;
+	--tab-stacked-header-width:53px;
+	
+	
+	/* custom */
+	--border:1px solid var(--tab-outline-color);
+	--button-radius:4px;
+	--panel-radius:8px;
+	--window-radius:23px;
+	--button-padding-icon:7px;
+	--button-padding-long:7px 15px;
+	
+	--background-fourth:var(--color-base-00-0);
+	--background-fifth:var(--color-base-20-0);
+	--panel-shadow:0 1px 3px var(--color-base-shadow);
+	--panel-shadow-hover:0 3px 5px var(--color-base-shadow-hover);
+	--window-shadow:0 0 9px var(--color-base-shadow-hover);
+	--window-shadow-left:-4px 0 5px var(--color-base-shadow-hover);
+	--window-shadow-right:4px 0 5px var(--color-base-shadow-hover);
+	
+	--sidebar-size-left:270px;
+	--sidebar-size-right:270px;
+	
+	
+	--color-strikethrough:var(--text-faint);
+	--italic-color:var(--color-italic);
+	--inline-code-color:var(--color-red);
+	
+	
+}
+body.is-translucent{
+	--background-primary:var(--color-base-00-trans);
+	--background-secondary:var(--color-base-20-trans);
+	--background-fourth:var(--color-base-00-0-trans);
+}
+body.toggle-tab-height{
+	--header-height:35px;
+}
+
+
+.theme-light,
+.is-mobile.theme-light,
+.is-tablet.theme-light{
+	--color-base-00:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 1);
+	--color-base-10:hsla(calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 6%), calc(var(--bgcolor-l) - 4%), 1);
+	
+	--color-base-05:hsla(calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 28%), calc(var(--bgcolor-l) - 7%), 1);
+	--color-base-20:hsla(calc(var(--bgcolor-h) + 9), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 2%), 1);
+	
+	--color-base-00-trans:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 0.5); /*for transparency background*/
+	--color-base-20-trans:hsla(calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 8%), calc(var(--bgcolor-l) - 2%), 0.5);
+	--color-base-00-0:hsla(calc(var(--bgcolor-h) - 27), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 1); /* very white */
+	--color-base-20-0:hsla(calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 27%), calc(var(--bgcolor-l) - 7%), 0.1); /* hovered version for above */
+	--color-base-00-0-trans:hsla(calc(var(--bgcolor-h) - 20), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 0.5);
+	--color-base-shadow:hsla(212, 17%, 80%, 0.2); /* shadow */
+	--color-base-shadow-hover:hsla(212, 17%, 80%, 0.3); /* shadow hover*/
+	--color-base-hover:var(--color-base-shadow-hover); /* hover*/
+	
+	--color-base-35:hsla(210, 15%, 73%, 1);
+	--color-base-50:hsla(217, 15%, 73%, 1);
+	--color-base-70:hsla(218, 19%, 39%, 1);	
+	--color-base-100:hsla(0, 0%, 13%, 1); /* text-normal color */
+  
+	--color-accent-1: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%));
+	--color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%));
+
+	--color-red:hsla(365, 85%, 55%, 1);
+	--color-muted:var(--color-base-70);
+	--color-italic:hsla(215, 43%, 63%, 1);
+	
+	--color-highlight:var(--text-normal); /* for highlight text color */
+}
+.theme-dark,
+.is-mobile.theme-dark,
+.is-tablet.theme-dark{
+	--bgcolor-h:215;
+	--bgcolor-s:17%;
+	--bgcolor-l:19%;
+	
+	--color-base-00:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 1);
+	--color-base-10:hsla(calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1);
+	
+	--color-base-05:hsla(calc(var(--bgcolor-h) - 8), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 9%), 0.5);
+	--color-base-20:hsla(calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1);
+	
+	--color-base-00-trans:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 0.5); /*for transparency background*/
+	--color-base-20-trans:hsla(calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 0.5);
+	--color-base-00-0:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.9); /* very white */
+	--color-base-20-0:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 7%), calc(var(--bgcolor-l) - 9%), 0.1); /* hovered version for above */
+	--color-base-00-0-trans:hsla(calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.5);
+	--color-base-shadow:hsla(207, 10%, 10%, 0.1); /* shadow */
+	--color-base-shadow-hover:hsla(212, 17%, 0%, 0.3); /* shadow hover*/
+	--color-base-hover:var(--color-base-05); /* hover*/
+	
+	--color-base-30:hsla(215, 22%, 13%, 1);
+	--color-base-35:hsla(210, 15%, 33%, 1);
+	--color-base-50:hsla(217, 18%, 50%, 0.7);
+	--color-base-70:hsl(218, 17%, 58%);	/* text-muted */
+	--color-base-100:hsla(0, 0%, 73%, 1); /* text-normal color */
+  
+	--color-accent: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 13%), calc(var(--accent-l) + 3%));
+	--color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) - 13%), calc(var(--accent-l) - 3%));
+	--color-accent-2: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%));
+
+	--color-red:hsla(365, 90%, 65%, 1);
+	--color-muted:hsl(218, 17%, 62%);
+	--color-italic:hsla(215, 33%, 60%, 1);
+	
+	--color-highlight:hsla(45, 63%, 63%, 1); /* for highlight text color */
+	--text-highlight-bg:hsla(45, 53%, 53%, 1); /* for highlight text underline color */
+}
+.theme-dark:is(.THT-background,.THT-underline-light){
+	--color-highlight:hsla(45, 53%, 13%, 1);
+}
+.theme-light:is(.THT-underline,.THT-underline-light){
+	--color-highlight:var(--color-yellow);
+	--text-highlight-bg:hsla(45, 53%, 73%, 1);
+}
+
+body.theme-daisy-blue{
+	--accent-h: 210;
+	--accent-s: 93%;
+	--accent-l: 62%;
+}
+body.theme-red-sky{
+	--accent-h: 0;
+	--accent-s: 88%;
+	--accent-l: 57%;
+}
+body.theme-red-sky.theme-dark{
+	--accent-h: 0;
+	--accent-s: 73%;
+	--accent-l: 57%;
+}
+body.theme-violette{
+	--accent-h: 254;
+	--accent-s: 80%;
+	--accent-l: 68%;
+}
+body.theme-violette.theme-dark{
+	--accent-h: 255;
+	--accent-s: 73%;
+	--accent-l: 68%;
+}
+body.theme-greenery{
+	--accent-h: 125;
+	--accent-s: 83%;
+	--accent-l: 43%;
+}
+body.theme-greenery.theme-dark{
+	--accent-h: 125;
+	--accent-s: 81%;
+	--accent-l: 38%;
+}
+body.theme-yellowish{
+	--accent-h: 43;
+	--accent-s: 76%;
+	--accent-l: 50%;
+}
+body.theme-yellowish.theme-dark{
+	--accent-h: 47;
+	--accent-s: 85%;
+	--accent-l: 50%;
+}
+body.theme-orange-jist{
+	--accent-h: 23;
+	--accent-s: 100%;
+	--accent-l: 61%;
+}
+body.theme-deep-blue{
+	--accent-h: 229;
+	--accent-s: 83%;
+	--accent-l: 53%;
+}
+body.theme-deep-blue.theme-dark{
+	--accent-h: 229;
+	--accent-s: 78%;
+	--accent-l: 63%;
+}
+body.theme-tea-teal{
+	--accent-h: 195;
+	--accent-s: 63%;
+	--accent-l: 52%;
+}
+body.theme-magenta-pink{
+	--accent-h: 302;
+	--accent-s: 70%;
+	--accent-l: 60%;
+}
+body.theme-grayscale{
+	--accent-h: 234;
+	--accent-s: 15%;
+	--accent-l: 45%;
+}
+body.theme-grayscale.theme-dark{
+	--accent-h: 224;
+	--accent-s: 12%;
+	--accent-l: 63%;
+}
+
+body.toggle-tab-height-stacked{
+	--tab-stacked-header-width:33px;
+}
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Mado Layout Basic Styling
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+
+body, body.is-translucent{
+	background-color:var(--background-secondary);
+}
+
+/* Background Wave design */
+body:not(.toggle-wave-background):before{
+	content:"";
+	position:absolute;
+    width:100%;
+    height:100%;
+	
+	-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" xml:space="preserve"><path opacity=".1" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"/><path opacity=".2" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"/><path opacity=".4" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
+	-webkit-mask-size:300% 300px;
+	-webkit-mask-position:88.5% -73px;
+	-webkit-mask-repeat:no-repeat;
+    background-color:var(--color-accent-2);
+	transform:rotateZ(180deg);
+	opacity:0.5;
+}
+
+/* remove padding-top when fullscreen in obsidian-ver titlebar */
+body.is-frameless:not(.is-hidden-frameless).is-fullscreen{
+	padding-top:0;
+}
+
+/* hidden scrollbar */
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-scrollbar) ::-webkit-scrollbar-thumb{
+	visibility:hidden;
+}
+body ::-webkit-scrollbar-thumb:hover:hover{
+	visibility:initial;
+}
+
+/* Switching overflow:auto to overlay */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-scrollbar-overlay) :is(.callout-content,.markdown-rendered pre,.markdown-source-view.mod-cm6 .math-block > mjx-container){
+	overflow-x:overlay;
+}
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-scrollbar-overlay) :is(.cm-scroller,.workspace-leaf-content .view-content,.backlink-pane, .outgoing-link-pane,.item-list,.search-result-container.mod-global-search,.open-vault-options,.recent-vaults-list,.workspace-leaf-content .view-content:not(:has(.canvas-wrapper)) .markdown-preview-view,,.community-modal-info,.prompt-results,.suggestion,.vertical-tab-content,.pdf-scroll-container,.nav-files-container){
+	overflow-y:overlay;
+}
+/* Switching overflow:scroll to overlay */
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-scrollbar-overlay) .CodeMirror-hscrollbar{
+	overflow-x:overlay;
+}
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-scrollbar-overlay) .CodeMirror-vscrollbar{
+	overflow-y:overlay;
+}
+
+
+/* remove backgrounds for wave design background */
+.workspace,
+.workspace-tabs .workspace-leaf,
+.workspace-ribbon,
+.workspace-split,
+.workspace-split .view-content,
+.workspace-split.mod-root,
+body.is-hidden-frameless:not(.is-fullscreen):is(.is-focused,) .titlebar-button-container:is(.mod-right,.mod-left),
+.workspace-tab-header-container{ /* remove background as parent will be the one to have it instead */
+	background-color:initial;
+	background:none;
+}
+
+
+/* remove background to adapt translucent mode */
+.is-translucent:not(.is-fullscreen) .titlebar,
+.is-translucent.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right{
+	background:none;
+}
+
+
+/* remove distinguishing-borders on sidebars and headers */
+.workspace-ribbon,
+.workspace-tab-header-container{
+	border:none;
+}
+
+/* hide handle visibility when not hovered */
+.workspace-leaf-resize-handle{
+	border-color:transparent;
+}
+
+
+/* Toggle visibility on Sidebar Tab Icons */
+/* and on Left Sidebar (File Explorer) */
+/* and on Toggle Sidebar (3 rows) */
+/* and on Ribbon Icons  */
+/* and on Main Note Tabs */
+/* and on Note Title Header Bar */
+/* and on Titlebar (Window Frame) */
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-sidebar-buttons) .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container-inner,
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-explorer-buttons) .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container,
+body:not(.is-mobile):not(.css-settings-manager) .sidebar-toggle-button:is(.mod-left, .mod-right),
+body:not(.is-mobile).toggle-sidebar-toggle-left .sidebar-toggle-button.mod-left,
+body:not(.is-mobile).toggle-sidebar-toggle-right .sidebar-toggle-button.mod-right,
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-side-ribbons) :is(.side-dock-actions, .side-dock-settings),
+body:not(.is-mobile).toggle-tab-section .workspace-split.mod-vertical.mod-root :is(.workspace-tabs:not(.mod-stacked) .workspace-tab-header, .workspace-tab-header-new-tab, .workspace-tab-header-tab-list),
+body.toggle-note-header .workspace-split.mod-vertical.mod-root .view-header,
+body:not(.is-mobile):is(:not(.css-settings-manager),.toggle-titlebar-buttons) .titlebar{
+	opacity:0;
+	transition:opacity 0.15s;
+}
+body .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container:hover .workspace-tab-header-container-inner,
+body .workspace-leaf-content[data-type="file-explorer"] .nav-header:hover .nav-buttons-container,
+body .workspace-ribbon.side-dock-ribbon.mod-left:hover :is(.sidebar-toggle-button.mod-left, .side-dock-actions,.side-dock-settings),
+body .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:hover:hover:hover:hover div,
+body .sidebar-toggle-button:is(.mod-left, .mod-right):hover:hover,
+body .titlebar:hover:hover,
+body .workspace-split.mod-vertical.mod-root .view-header:hover,
+body.toggle-note-header .workspace-split.mod-vertical.mod-root .view-header:focus-within,
+body.is-grabbing.is-grabbing .app-container:not(.no-transition) .workspace-split .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner,
+body.is-grabbing.is-grabbing.is-grabbing.is-grabbing.is-grabbing .app-container:not(.no-transition) .workspace-split .workspace-tabs .workspace-tab-header-container{
+	opacity:1;
+}
+
+
+
+
+/* remove border-bottom below left-sidebar-toggle button */
+.workspace-ribbon.mod-left:before{
+	border:none;
+}
+
+/* Make spacing to match collapsed left-ribbon-dock */
+body:not(.is-mobile) .workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical.mod-root{
+	padding-right:var(--ribbon-width);
+}
+/* Make spacing for left side to match the right spacing during pop-out window mode */
+body:not(.is-mobile).is-popout-window .workspace-split.mod-vertical.mod-root{
+	padding-left:var(--ribbon-width);
+}
+.is-mobilebody, .is-mobile .app-container,
+.is-mobile .horizontal-main-container,
+.workspace-ribbon.mod-left.is-collapsed{
+	background:none;
+}
+
+
+/* Fixed width for left and right sidebar */
+:is(.mod-left-split, .mod-right-split) .workspace-leaf-content{
+	display:flex;
+	flex-direction:column;
+	align-self:end;
+}
+.mod-right-split .workspace-leaf-content{
+	align-self:start;
+}
+body:is(:not(.css-settings-manager),.toggle-sidebar-fixed-left) .mod-left-split .workspace-leaf-content{
+	max-width:var(--sidebar-size-left);
+}
+body:is(:not(.css-settings-manager),.toggle-sidebar-fixed-right) .mod-right-split .workspace-leaf-content{
+	max-width:var(--sidebar-size-right);
+}
+body:is(.toggle-sidebar-fixed-left-auto) .mod-left-split .workspace-leaf-content{
+	min-width:var(--sidebar-size-left);
+	max-width:fit-content;
+}
+body:is(.toggle-sidebar-fixed-right-auto) .mod-right-split .workspace-leaf-content{
+	min-width:var(--sidebar-size-right);
+	max-width:fit-content;
+}
+
+
+body:is(:not(.css-settings-manager),.toggle-sidebar-right-top) .workspace-split.mod-horizontal.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-container,
+body.toggle-sidebar-left-top .workspace-split.mod-horizontal.mod-left-split .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-container{
+	margin-top:37px;
+}
+
+.workspace-split.mod-horizontal.mod-left-split{
+	padding-right:23px;
+}
+
+.workspace-split.mod-horizontal.mod-right-split{
+	padding-left:23px;
+}
+
+
+
+/* Hide Vault Title */
+body:is(:not(.css-settings-manager),.toggle-vault-title) .nav-folder-title[data-path="/"]{
+	display:none;
+}
+.nav-folder-title[data-path="/"]{
+	margin-bottom:23px;
+}
+
+
+/* Vault hidden by default, and show up when hovered at the very bottom part of the sidebar */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+	margin-bottom:-40px!important;
+	opacity:0;
+	transition:margin 0.2s, opacity 0.1s;
+	padding:5px;
+	width: calc(100% + 23px)!important;
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile:hover{
+	margin-bottom:0!important;
+	opacity:1;
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-drawer-vault-switcher{
+	padding:0;
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-drawer-vault-switcher-icon{
+	padding:7px 3px 7px 7px;
+}
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Main Note Pane Desgin
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+.workspace-tab-header-container{
+	padding:0;
+}
+/* Extend margin beneath it */
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container{
+	margin:0 0 11px 0;
+}
+body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tab-header-container{
+	margin:0 0 5px 0;
+}
+
+/* Remove top-margin and increase gap in between tabs */
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner{
+	margin:0 -5px;
+	gap:0;
+	padding-top:0;
+}
+
+/* Remove tab siblings border-radius design */
+.workspace-split.mod-vertical.mod-root .workspace-tab-header:before,
+.workspace-split.mod-vertical.mod-root .workspace-tab-header:after,
+.workspace .mod-root .workspace-tab-header-inner::after{ /* Remove border-right on tabs that are not active */
+	display:none;
+}
+body.is-translucent .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf{
+	background:var(--background-primary)!important;
+}
+
+
+
+
+
+/* Tab design */
+.workspace-split.mod-vertical.mod-root .workspace-tab-header{
+	padding:0;
+	box-shadow:none;
+	margin-top:0;
+	background:none;
+	padding:5px 3px;
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner{
+	padding:29px 11px 20px;
+	border-radius:6px;
+	border:1px solid transparent;
+	box-shadow:none;
+	margin-top:-13px;
+	/* background:var(--background-secondary); */
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner{
+	background:var(--background-primary);
+	border:var(--border);
+	box-shadow:var(--panel-shadow);
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner{
+	background:var(--background-modifier-hover);
+}
+
+
+/* Remove small space on the tab header, as its 100% is based on parent's width+padding-right when right sidebar is collapsed */
+body:not(.is-mobile):not(.is-fullscreen) .workspace:not(.is-right-sidedock-open) .mod-top-right-space .workspace-tab-header-container{
+	padding-right:calc(var(--frame-right-space) - var(--ribbon-width));
+}
+body:not(.is-mobile):not(.is-fullscreen) .workspace:not(.is-right-sidedock-open) .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after{
+	width:calc(var(--frame-right-space) - var(--ribbon-width));
+}
+body:not(.is-mobile).is-fullscreen .workspace:not(.is-right-sidedock-open) .mod-top-right-space .workspace-tab-header-container{
+	margin-right:calc(1px - var(--ribbon-width) + 4px);
+}
+
+/* remove margin-top of tab headers that block the possibilities to implement pseudo-clickable area */
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner{
+	margin-top:0;
+	padding:0;
+	gap:0;
+}
+
+
+/* Prevent sticking-to-top design during obsidian window frame mode */
+/* 2nd rows are for independent tabs that are not stick to the top */
+/* 3rd row pseudo-clickable area during different tab design */
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
+body.toggle-tab-design .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container{
+	height:auto;
+	margin-bottom:5px;
+}
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header,
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header,
+body.toggle-tab-design .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header{
+	padding-block:5px;
+}
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-inner,
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-inner,
+body.toggle-tab-design .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-inner{
+	padding:4px 11px;
+	margin-top:2px;
+}
+
+
+
+
+/* when header tabs are switched to compact size */
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen).toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-inner,
+body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-inner,
+body.toggle-tab-design.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-inner{
+	padding:1px 11px;
+}
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen).toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-inner,
+body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-inner,
+body.toggle-tab-design.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-inner{
+	padding:1px 11px;
+}
+body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-inner{
+	padding:23px 11px 17px;
+}
+body.toggle-tab-height .workspace-split svg.svg-icon{
+	--icon-size:var(--icon-s);
+}
+body.toggle-tab-height .workspace-split.mod-vertical.mod-root .workspace-tab-header svg.svg-icon{
+	--icon-size:var(--icon-xs);
+}
+body.toggle-tab-height .workspace-split.workspace-horizontal:is(.mod-left-split,.mod-right-split) .sidebar-toggle-button,
+body.toggle-tab-height .workspace-ribbon .sidebar-toggle-button{
+	height:var(--header-height);
+	--icon-size:var(--icon-s);
+}
+
+
+/* match vertical align for alternative tab design and compact mode */
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen) .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button) .clickable-icon,
+body.toggle-tab-design .workspace-split.mod-vertical.mod-root .workspace-tab-header-container :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button) .clickable-icon,
+body:not(.toggle-tab-design) .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button) .clickable-icon{
+	margin-top:4px;
+}
+body.toggle-tab-design:not(.toggle-tag-height) .workspace-split.mod-vertical.mod-root .workspace-tab-header-container :is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list, .sidebar-toggle-button) .clickable-icon:before{
+	height:calc(var(--ribbon-width) + 6px);
+	margin-top:-6px;
+}
+
+
+
+
+
+
+/* Main Note Headers spacing */
+.workspace-split.mod-vertical.mod-root .view-header{
+	margin-block:7px;
+	background:none;
+}
+/* remove title fading element */
+.view-header-title-container:not(.mod-at-end):after{
+	display:none;
+}
+/* increase Main Note Headers icon size */
+.workspace-split.mod-vertical.mod-root .view-header svg{
+	--icon-size:var(--icon-l);
+}
+/* increase Main Note Headers breadcrumb button size */
+.view-header-title-parent .view-header-breadcrumb{
+	padding:3px 7px;
+}
+
+
+/* Stacked Mode styling */
+
+body .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header-container>.workspace-tab-header-new-tab{
+	order:1;
+	margin-right:var(--size-4-1);
+}
+body .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header-container>.workspace-tab-header-tab-list{
+	order:2;
+}
+body .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header-container>.sidebar-toggle-button.mod-right{
+	order:3;
+}
+
+
+/* overflow for visible shadow, though not working nicely */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container{
+	/* overflow: visible; */
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header{
+	margin:0;
+	padding-top:7px;
+	border-top-left-radius:var(--window-radius);
+	/* border-bottom-left-radius:var(--window-radius); */
+	box-shadow:none;
+	border-top:1px solid var(--color-accent-1);
+	border-left:1px solid var(--color-accent-1);
+	border-right:none;
+	border-bottom:none;
+	/* box-shadow:var(--window-shadow-left); */
+}
+body.toggle-note-radius .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header{
+	border-bottom-left-radius:var(--window-radius);
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header+.workspace-leaf{
+	border-top-left-radius:0;
+	/* border-bottom-right-radius:var(--window-radius); */
+	border-top:var(--border);
+	border-image:linear-gradient(90deg, var(--color-accent-1) 0, var(--tab-outline-color) 60%, transparent 90%) 1;
+	/* box-shadow:var(--window-shadow-right); */
+	box-shadow:none;
+	border-bottom-left-radius:0;
+}
+/* Disable transparency on main note during translucent mode due to unreadable issue */
+body.is-translucent .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked :is(.workspace-leaf, .workspace-tab-header){
+	transition:background 0.2s;
+	background:var(--background-primary)!important;
+}
+body.is-translucent .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked :is(.workspace-tab-header.is-active+.workspace-leaf, .workspace-tab-header.is-active){
+	background:var(--color-base-00)!important;
+}
+
+
+
+/* Border radius on Pane design, however, not adjusted for multiple panes */
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-leaf{
+	border-radius:var(--window-radius);
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+	box-shadow:var(--window-shadow);
+}
+body:not(.is-mobile).toggle-note-radius .workspace-split.mod-vertical.mod-root{
+	padding-bottom:23px;
+}
+body:not(.is-mobile).toggle-note-radius .workspace-split.mod-vertical.mod-root .workspace-leaf{
+	border-radius:var(--window-radius);
+}
+
+
+/* Overflow to allow shadow flowing out */
+body:not(.is-mobile) .workspace-tabs,
+body:not(.is-mobile) .workspace-tabs .workspace-tab-container{
+    overflow:visible;
+}
+
+/* Minimum padding to push down cut-off scrollbars when show-tab-title-bar is disabled */
+body:not(.show-view-header) .workspace-split.mod-vertical.mod-root .workspace-leaf{
+	padding-top:23px;
+	background-color:var(--background-primary);
+}
+body.is-mobile .workspace-split.mod-vertical.mod-root .workspace-leaf{
+	padding-top:0;
+}
+
+/* Adjust mobile header position */
+body.is-phone .view-header, .show-view-header .view-header{
+	align-items:center;
+}
+.is-mobile .view-actions{
+	margin-right:-3px;
+}
+
+/* Gap inbetween panes */
+.workspace-split.mod-vertical.mod-root,
+.workspace-split.mod-vertical.mod-root .workspace-split:not(.mod-horizontal){
+	gap:23px;
+}
+
+/* Main Note padding space, only in middle pane, not sidebars*/
+.workspace-split.mod-vertical.mod-root .markdown-preview-view{
+	padding-inline:53px;
+}
+.workspace-split.mod-vertical.mod-root .markdown-source-view .cm-content{
+	padding-inline:13px;
+}
+
+
+
+
+
+/* Context menu styling */
+.menu{
+	padding:0;
+}
+.menu-item{
+	padding:var(--button-padding-long);
+}
+body.is-translucent .menu{
+	background:var(--color-base-00);
+}
+
+
+
+/* Hide status bar */
+body:is(:not(.css-settings-manager),.toggle-status-bar) .status-bar{
+	bottom:-50px;
+}
+/* Show Sync Button Only */
+body.toggle-sync-button.toggle-status-bar .status-bar-item.plugin-sync{
+	bottom:54px;
+	right:5px;
+	position:absolute;
+	padding:var(--button-padding-icon);
+}
+body.toggle-sync-button.toggle-status-bar .status-bar-item.plugin-sync:hover{
+	filter:brightness(0.8);
+}
+body.toggle-sync-button.toggle-status-bar .status-bar-item .svg-icon{
+	--icon-size:var(--icon-l);
+}
+
+
+/* Adjust button spacing on search result items */
+.search-result-hover-button{
+	padding-block:0;
+}
+.search-result-hover-button.mod-top {
+	top:0;
+}
+.search-result-hover-button.mod-bottom {
+	bottom:0;
+}
+
+
+
+
+
+/* Setting Modal */
+.vertical-tab-header{
+	padding-inline:0;
+}
+.vertical-tab-header-group-title{
+	color:var(--color-accent-2);
+}
+.vertical-tab-header-group{
+	padding-inline:var(--size-4-3);
+}
+.vertical-tab-header-group:not(:last-child){
+	border-bottom:var(--border);
+	margin-bottom:23px;
+}
+body.is-translucent .modal{
+	background:var(--color-base-00);
+}
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Animation
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+
+
+.modal{
+	border-radius:var(--window-radius);
+	animation:0.2s popup forwards;
+}
+@keyframes popup{
+	0% { transform:scale(70%); opacity:0; }
+	15% { transform:scale(80%); opacity:0.1; }
+	35% { transform:scale(102%);  }
+	45% { opacity:0.3; }
+	65% { opacity:0.7; }
+	100% { transform:scale(100%); opacity:1; }
+}
+
+body:is(:not(.css-settings-manager), .toggle-note-animation) .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not([data-type="pdf"]) .view-content{
+	animation:0.2s slide-up forwards;
+}
+@keyframes slide-up{
+	0% { transform:translateY(0%); opacity:0; }
+	15% { transform:translateY(5px); opacity:0; }
+	25% { transform:translateY(10px); }
+	45% { opacity:0.5; }
+	65% { opacity:0.7; }
+	100% { transform:translateY(0%); opacity:1; }
+}
+
+:is(.nav-folder, .nav-file) :is(.nav-folder-title, .nav-file-title).is-active svg{
+	animation:0.3s bounceback;
+}
+@keyframes bounceback{
+	0% { transform:translateY(0%); }
+	60% { transform:translateY(10%); }
+	100% { transform:translateY(0%); }
+}
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Icon Button Style
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+
+/* tab close button */
+.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button{
+	padding:var(--button-padding-icon);
+	right:unset;
+	margin-right:-4px;
+}
+/* remove margin during stacked mode */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner-close-button{
+	margin-right:0;
+}
+
+/* easier hover adaption color */
+:is(.workspace-tab-header-status-icon, .workspace-tab-header-inner-close-button, .clickable-icon):hover{
+	background-color:var(--background-modifier-hover);
+	filter:brightness(0.8);
+}
+
+:is(*, .workspace-tab-header-tab-list, .workspace-tab-header-new-tab) .clickable-icon, /*all clickable icon button */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon, /* icon in stacked tab mode*/
+.workspace-tab-header-inner-icon{ /* Sidebar header icons, though the original padding overrides a bit */
+	padding:var(--button-padding-icon);
+}
+
+/* Adjust icon size during stacked */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon{
+	--icon-size:var(--icon-s);
+}
+
+ /* Setting close button */
+body:not(.native-scrollbars) .modal-close-button{
+	right:7px;
+	top:7px;
+	height:32px;
+	width:34px;
+}
+.modal-close-button:before{
+	position:absolute;
+	top:5px;
+	left:9px;
+}
+
+
+/* undo original style to adapt consistency on header position */
+.sidebar-toggle-button{
+	height:unset;
+	justify-content:unset;
+	padding:unset;
+	--icon-size:unset;
+	--icon-stroke:unset;
+	align-items:center;
+	padding-block:4.5px;
+}
+.workspace-tab-header-new-tab,
+.workspace-tab-header-tab-list{
+	padding-block:4.5px;
+}
+
+
+
+
+
+/* background space to be hovered/clicked, a.k.a. "fake" empty space / pseudo-clickable area */
+/* maintains the position of hovered whitespace design while still being able to click a little outside of the proposed size. */
+:is(.workspace-tab-header-status-icon, .clickable-icon):before{
+	position:absolute;
+	content:"";
+	height:var(--ribbon-width);
+	width:var(--ribbon-width);
+}
+/* fix the above design since v16/17 */
+.clickable-icon:before{
+	height:41px;
+	width:41px;
+}
+
+
+/* extend setting clickable area to the bottom */
+.side-dock-settings .clickable-icon.side-dock-ribbon-action:last-child:before{
+	height:calc(var(--ribbon-width) + 8px);
+	margin-bottom:-5px;
+}
+
+/* remove side padding and add pseudo space on header-parent, then remove parent's is-active background and re-enable child's background */
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header-inner{
+	padding:0;
+}
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header{
+	padding:5px 3px;
+}
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header:first-child{
+	padding-left:5px;
+}
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header:last-child,
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .sidebar-toggle-button.mod-left,
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .sidebar-toggle-button.mod-right{
+	padding-right:5px;
+}
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header.is-active{
+	background:transparent;
+}
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner{
+	background-color:var(--background-modifier-hover);
+}
+
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Long Button Style
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+/* Append some spaces so that when on-focused, the border does not get cut */
+.nav-files-container{
+	padding-top:2px;
+}
+
+
+:is(.nav-folder, .nav-file) :is(.nav-folder-title, .nav-file-title),
+.vertical-tab-nav-item,
+.tree-item-self,
+button{
+	padding:var(--button-padding-long);
+	transition:0.05s ease-in;
+	transition-property:background, color;
+	position:relative;
+}
+
+/* Left-border style on long button, just for file-explorer */
+.nav-file-title:before{
+	content:"";
+	position:absolute;
+	left:0;
+	top:50%;
+	width:3px;
+	height:0;
+	border-radius:var(--button-radius);
+	background:var(--color-accent);
+	transform:translateY(0%);
+	transition:0.25s cubic-bezier(1,0.33,0.76,1.22);
+	transition-property:height, transform;
+}
+.nav-file-title.is-active::before{
+	height:70%;
+	transform:translateY(-50%);
+}
+
+/* Folder styling, just for file-explorer */
+.nav-folder-title{
+	color:var(--color-accent-2);
+	font-size:0.95em;
+	font-weight:500;
+}
+body:is(:not(.css-settings-manager),.toggle-explorer-collapse) .nav-folder-title .collapse-icon{
+	display:none;
+}
+body:not(.is-grabbing) .tree-item-self.is-clickable.nav-folder-title:hover{
+	color:var(--color-accent-2);
+	font-weight:500;
+}
+/* Additional padding inside folder, also remove border-left as indentation-guide */
+.nav-folder > .nav-folder-children{
+	padding-block:7px;
+	padding-left:13px;
+	margin-left:20px;
+}
+body:is(:not(.css-settings-manager),.toggle-explorer-indent) .nav-folder > .nav-folder-children{
+	border-inline-start:none;
+	padding-left:33px;
+	margin-left:0;
+}
+
+:is(.nav-folder-title, .nav-file-title):hover{
+	filter:brightness(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Markdown Stying
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+
+
+a, .external-link{
+	text-decoration:none;
+}
+a, .external-link:hover{
+	text-decoration:underline;
+}
+.cm-hashtag{
+	vertical-align:unset;
+}
+
+code{
+	--code-normal:var(--blockquote-color);
+	margin-inline:3px;
+}
+
+/* Inline code */
+.markdown-rendered :not(pre)>code,
+.cm-s-obsidian span.cm-inline-code{
+	color:var(--inline-code-color);
+}
+/* inline code background */
+.cm-hmd-indented-code,
+.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code{
+	background:var(--code-background);
+}
+
+.markdown-rendered pre{
+	overflow-x: auto;
+}
+
+
+:is(mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .search-result-file-matched-text){
+	color:var(--color-highlight);
+}
+body.theme-dark:not(.css-settings-manager) :is(mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .search-result-file-matched-text),
+body.THT-underline :is(mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .search-result-file-matched-text),
+body.THT-underline-dark.theme-dark :is(mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .search-result-file-matched-text),
+body.THT-underline-light.theme-light :is(mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .search-result-file-matched-text){
+	border-bottom:2px solid var(--text-highlight-bg);
+	color:var(--color-highlight);
+	background:none;
+}
+
+sup,sub{
+	font-size:0.85em;
+}
+.footnote-ref{
+	vertical-align:super;
+}
+
+img{
+	max-width:100%;
+	border-radius:var(--panel-radius);
+}
+
+/* Markdown Headings */
+body:is(:not(.css-settings-manager),.toggle-h1-margin-top) :is(h1, .markdown-rendered h1){
+	margin-top:73px;
+}
+:is(h1,h2,h3,h4,h5,h6), .markdown-rendered :is(h1,h2,h3,h4,h5,h6){
+	margin-top:33px;
+}
+.markdown-embed .markdown-preview-pusher+div>h1,
+.markdown-preview-section div.is-collapsed+div>h1{
+	margin-top:33px;
+}
+
+
+/* Markdown Checkbox */
+
+/* Give some space on top of parent div */
+.markdown-source-view.mod-cm6 .HyperMD-task-line{
+	padding-top:3px;
+}
+
+/* Adjust checkbox position and styling */
+.markdown-source-view.mod-cm6 .task-list-item-checkbox{
+	padding:11px;
+	top:-2px;
+	left:-6px;
+}
+.markdown-preview-view .task-list-item-checkbox{
+	padding:11px;
+	top:5px;
+}
+input[type=checkbox]:checked:after{
+	-webkit-mask-size:73%;
+	-webkit-mask-position:73% 60%;
+	width:100%;
+	height:100%;
+}
+.contains-task-list.has-list-bullet li{
+	margin-block:1px;
+}
+/* Adjust line position to fit below checkbox */
+.markdown-rendered.show-indentation-guide li.task-list-item > :is(ul,ol)::before{
+	left:-10px;
+}
+/* Collapse indicator position adjustment on lists & tasks */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line.HyperMD-task-line .cm-fold-indicator .collapse-indicator{
+	padding-inline-end:5px;
+}
+.markdown-rendered .task-list-item .list-collapse-indicator{
+	margin-top:5px;
+	margin-left:-47px;
+}
+
+
+
+/* Markdown Listings */
+ul, ol{
+	padding:7px 0 13px;
+}
+
+/* Only append indent if it's from a list */
+.cm-hmd-list-indent .cm-indent{ 
+	padding-inline:0px 11px;
+}
+/* Build spaces at the end of each listing to distinguish from each other (source) */
+.HyperMD-list-line-1+.HyperMD-list-line:not(.HyperMD-list-line-1):not(.HyperMD-list-line-2),
+.HyperMD-list-line-2+.HyperMD-list-line:not(.HyperMD-list-line-2):not(.HyperMD-list-line-3),
+.HyperMD-list-line-3+.HyperMD-list-line:not(.HyperMD-list-line-3):not(.HyperMD-list-line-4),
+.HyperMD-list-line-4+.HyperMD-list-line:not(.HyperMD-list-line-4):not(.HyperMD-list-line-5),
+.HyperMD-list-line-5+.HyperMD-list-line:not(.HyperMD-list-line-5):not(.HyperMD-list-line-6),
+.HyperMD-list-line-6+.HyperMD-list-line:not(.HyperMD-list-line-6):not(.HyperMD-list-line-7){
+	padding-top:11px!important;
+}
+
+
+ol > li::marker,
+ul > li::marker,
+.cm-s-obsidian .cm-formatting-list{
+	margin-right:3px;
+}
+
+/* indent size adjustment */
+.cm-hmd-list-indent .cm-indent{
+	padding-inline:0;
+}
+.markdown-preview-sizer>div>:is(ul, ol){
+	padding-inline:7px;
+}
+
+/* reduce padding of ul/ol inside callout/blockquote */
+.callout-content>:is(ul,ol){
+	padding-block:0;
+}
+blockquote>:is(ul,ol){
+	padding-block:7px;
+}
+
+/* force break word for links */
+.markdown-preview-sizer>div ul li a:not(.tag), div.callout ul li a:not(.tag){
+	word-break:break-all;
+}
+
+
+
+/* Markdown Table */
+/* Adds margin for easier identification */
+table{
+	margin:11px 7px;
+}
+
+/* Adds color to the header */
+thead {
+	border-top:2px solid var(--color-accent);
+}
+
+/* Adds padding spaces to the border */
+.markdown-rendered :is(td, th){
+	padding:4px 13px;
+}
+
+
+
+/* Markdown Strikethrough */
+/* adjust color for strikethrough + on embed */
+ul > li.task-list-item.is-checked{
+	text-decoration-color:var(--color-strikethrough);
+}
+del, .cm-strikethrough,
+ul > li.task-list-item.is-checked *,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]) span {
+	color:var(--color-strikethrough);
+}
+
+/* Markdown Embed */
+/* adjust embed padding, visual border */
+.markdown-embed{
+	border:var(--border);
+    border-radius:var(--button-radius);
+    padding:var(--embed-padding);
+}
+/* revert "p" margin-top back from 0 */
+.markdown-embed-content p:first-child{
+	margin-top:1em;
+}
+
+
+
+
+
+/* Markdown Quote */
+.markdown-preview-view blockquote{
+	margin:13px 0px;
+	padding:17px 27px 17px 37px;
+	border-radius:var(--button-radius);
+	background:var(--background-secondary);
+	border:var(--border);
+	color:var(--blockquote-color);
+	position:relative;
+}
+.markdown-preview-view blockquote:before{
+	content:"";
+	position:absolute;
+	left:5px;
+	top:7px;
+	width:3px;
+	height:calc(100% - 14px);
+	background:var(--color-accent-1);
+	border-radius:var(--button-radius);
+}
+.markdown-source-view.mod-cm6 .HyperMD-quote.cm-line{
+	padding-right:17px;
+	padding-block:3px;
+}
+.markdown-source-view.mod-cm6 .HyperMD-quote.cm-line+.HyperMD-quote.cm-line{
+	padding-top:0;
+}
+
+
+
+
+/* Markdown Callout */
+
+.callout{
+	border:1px solid rgba(var(--callout-color), 0.3);
+    background-color: rgba(var(--callout-color), 0.07);
+}
+.callout-title{
+	gap:var(--size-4-3);
+    align-items:center;
+    background-color:rgba(var(--callout-color), 0.07);
+	border-bottom:1px solid transparent;
+	transition:border 0.3s;
+}
+.callout-icon,
+.callout-fold{
+	margin:0;
+	align-self:center;
+}
+
+/* only apply border if callout is not collapsed */
+.callout:not(.is-collapsed)>.callout-title:has(+.callout-content){
+	border-bottom:1px solid rgba(var(--callout-color), 0.3);
+}
+
+.markdown-source-view.mod-cm6 .callout .callout{
+	margin:1em 0;
+}
+
+
+
+
+
+
+
+
+/* canvas text blurry fix */
+.is-focused .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
+	transform: unset;
+}
+.canvas-node-content.markdown-embed{
+	border-radius:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Mado Theme Special Classes
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+/* Mado Heading */
+
+.mado-heading .markdown-preview-section>div>*{
+	position:relative;
+	padding:13px 53px;
+	margin:0;
+	border:var(--border);
+	border-radius:var(--button-radius);
+	transition:background 0.1s;
+}
+.mado-heading .markdown-preview-section>div.mod-header>*{
+	padding:23px 23px 0;
+	border:none;
+}
+.mado-heading .markdown-preview-section>div:not(.is-collapsed)>h1{
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	border-bottom:none;
+}
+.mado-heading .markdown-preview-section>div:not(.is-collapsed)>h1:before{
+    border-radius:4px 0 0 0;
+}
+.mado-heading .markdown-preview-section>div:has(+div>*:not(h1))>*:not(h1){
+	border-radius:0;
+	border-bottom:none;
+}
+.mado-heading .markdown-preview-section>div:has(+div>h1)>*:not(h1),
+.mado-heading .markdown-preview-section>div:has(+div.mod-footer)>*:not(h1){
+	border-radius:0;
+	border-bottom-left-radius:var(--button-radius);
+	border-bottom-right-radius:var(--button-radius);
+	border-bottom:var(--border);
+}
+.mado-heading :is(h1,h2,h3,h4,h5,h6){
+	background:var(--background-fourth);
+}
+.mado-heading :is(h1,h2,h3,h4,h5,h6):hover{
+	background:var(--background-fifth);
+}
+.mado-heading{
+	--h1-size: 1.6em;
+	--h2-size: 1.5em;
+	--h3-size: 1.37em;
+	--h4-size: 1.25em;
+	--h5-size: 1.12em;
+	--h6-size: 1.12em;
+}
+
+.mado-heading .markdown-preview-section>div:has(+div>p)>p{
+	padding-bottom:0;
+}
+.mado-heading .markdown-preview-section>div:has(>p)+div>p{
+	border-top:none;
+}
+
+
+.mado-heading .markdown-preview-section h1{
+	padding-block:19px;
+	margin-top:73px;
+}
+.mado-heading .markdown-preview-section h2{
+	padding-block:17px;
+}
+.mado-heading .markdown-preview-section h3{
+	padding-block:15px;
+}
+.mado-heading .markdown-preview-section h4{
+	padding-block:13px;
+}
+
+/* left border to indicate collapsible action */
+.mado-heading :is(h1,h2,h3,h4,h5,h6):before{
+	content:"";
+	position:absolute;
+	left:5px;
+	top:5px;
+	height:calc(100% - 10px);
+	border-radius:var(--button-radius);
+	border-left:3px solid var(--color-accent-1);
+}
+.mado-heading h1:before{
+	left:0;
+	top:0;
+	height:100%;
+	border-radius:4px 0 0 4px;
+	border-left:3px solid var(--color-accent-2);
+}
+.mado-heading h3:before{
+	top:7px;
+	height:calc(100% - 14px);
+}
+.mado-heading h4:before{
+	top:9px;
+	height:calc(100% - 18px);
+}
+.mado-heading h5:before{
+	top:11px;
+	height:calc(100% - 22px);
+}
+.mado-heading h6:before{
+	top:13px;
+	height:calc(100% - 26px);
+}
+
+/* expand clickable collapsible size to match parent size */
+.mado-heading .heading-collapse-indicator{
+	margin-left:0;
+	width:100%;
+	height:100%;
+	padding:9px 33px;
+	top:0;
+	left:0;
+	position:absolute;
+	opacity:1;
+}
+.mado-heading .heading-collapse-indicator svg{
+	right:27px;
+	width:14px;
+	height:14px;
+	position:absolute;
+}
+
+
+
+.mado-heading .markdown-preview-section>div>p{
+	padding-block:23px;
+	background:var(--background-fourth);
+}
+.mado-heading .markdown-preview-section>div>:is(ul, ol){
+	padding-block:23px;
+	background:var(--background-fourth);
+}
+.mado-heading .markdown-preview-section>div>hr{
+	display:none;
+}
+.mado-heading .markdown-preview-section>div>pre{
+	padding-block:23px;
+}
+.mado-heading .markdown-preview-section>div>blockquote{
+	padding-block:23px;
+}
+.mado-heading .markdown-preview-section>div>.callout{
+	padding:var(--callout-padding);
+	border:1px solid rgba(var(--callout-color), 0.3);
+}
+.mado-heading .markdown-preview-section>div>.callout .callout-title{
+	padding:17px 23px;
+}
+.mado-heading .markdown-preview-section>div>.callout .callout-content{
+	padding:3px 53px;
+}
+.mado-heading .markdown-preview-section>div>blockquote>:is(ul,ol){
+	padding:0;
+}
+.mado-heading .markdown-preview-section>div>table{
+	width:calc(100% + 0px);
+	border-radius:var(--button-radius);
+	border-collapse:separate;
+	padding:0;
+	background:var(--background-secondary);
+}
+.mado-heading .markdown-preview-section>div>table :is(th, td){
+	padding:9px 11px;
+	text-align:center;
+	width:83px;
+}
+.mado-heading .markdown-preview-section>div>table th{
+	background-color:var(--background-secondary);
+	font-weight:600;
+	font-size:1em;
+}
+.mado-heading .markdown-preview-section>div>table td{
+	background:var(--background-fourth);
+	border:none;
+}
+.mado-heading .markdown-preview-section>div>table thead>tr>*:first-child{
+	border-radius:4px 0 0 0;
+}
+.mado-heading .markdown-preview-section>div>table thead>tr>*:last-child{
+	border-radius:0 4px 0 0;
+}
+.mado-heading .markdown-preview-section>div>table tbody>tr:last-child>*:first-child{
+	border-radius:0 0 0 4px;
+}
+.mado-heading .markdown-preview-section>div>table tbody>tr:last-child>*:last-child{
+	border-radius:0 0 4px 0;
+}
+
+
+
+
+
+/* Mado Table */
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table{
+	width:calc(100% - 0px);
+	margin-inline:auto;
+	border-radius:var(--button-radius);
+	border-collapse:separate;
+	border:var(--border);
+	padding:2px;
+	background:var(--background-secondary);
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table :is(th, td){
+	padding:11px 11px;
+	text-align:center;
+	min-width:83px;
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table th{
+	background-color:var(--background-secondary);
+	font-weight:600;
+	font-size:1em;
+}
+[class*="mado-table"]:not(.mado-table-normal).markdown-rendered .markdown-preview-section table td,
+[class*="mado-table"]:not(.mado-table-normal).mado-table-topless .markdown-preview-section table th{
+	background:var(--background-fourth);
+	border:none;
+	font-weight:400;
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table thead>tr>*:first-child{
+	border-radius:4px 0 0 0;
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table thead>tr>*:last-child{
+	border-radius:0 4px 0 0;
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table tbody>tr:last-child>*:first-child{
+	border-radius:0 0 0 4px;
+}
+[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table tbody>tr:last-child>*:last-child{
+	border-radius:0 0 4px 0;
+}
+
+
+
+
+/* Mado Table Options */
+[class*="mado-table"]:not(.mado-table-normal).mado-table-left .markdown-preview-section table tr :is(th:first-child, td:first-child),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-right .markdown-preview-section table tr :is(th:last-child, td:last-child),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-top.markdown-rendered .markdown-preview-section table tr th,
+[class*="mado-table"]:not(.mado-table-normal).mado-table-bottom .markdown-preview-section table tr:last-child td{
+	background-color:var(--background-secondary);
+	font-weight:600;
+	font-size:1em;
+	border:var(--border);
+}
+.mado-table-normal.mado-table-left .markdown-preview-section table tr :is(th:first-child, td:first-child),
+.mado-table-normal.mado-table-right .markdown-preview-section table tr :is(th:last-child, td:last-child),
+.mado-table-normal.mado-table-top.markdown-rendered .markdown-preview-section table tr th,
+.mado-table-normal.mado-table-bottom .markdown-preview-section table tr:last-child td{
+	background-color:var(--background-secondary);
+	font-weight:600;
+	font-size:1em;
+}
+.mado-table-normal.mado-table-left .markdown-preview-section table tr :is(th:first-child, td:first-child){
+	border-right:1px solid var(--color-accent-1);
+}
+.mado-table-normal.mado-table-right .markdown-preview-section table tr :is(th:last-child, td:last-child){
+	border-left:1.5px solid var(--color-accent-1);
+}
+.mado-table-normal.mado-table-bottom .markdown-preview-section table tr:last-child td{
+	border-top:2px solid var(--color-accent-1);
+}
+
+/* Mado Table Stripe/Border styling, also adapting colors for headers */
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered 						.markdown-preview-section table tr:nth-child(2n) td:not(:first-child):not(:last-child),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered:not(.mado-table-left) .markdown-preview-section table tr:nth-child(2n) td:first-child,
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-left 		.markdown-preview-section table tr:nth-child(2n+1) td:first-child,
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered:not(.mado-table-right) .markdown-preview-section table tr:nth-child(2n) td:last-child,
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-right 		.markdown-preview-section table tr:nth-child(2n+1) td:last-child,
+.mado-table-normal.mado-table-stripe.markdown-rendered 	.markdown-preview-section table tr:nth-child(2n+1) :is(td:first-child, td:last-child),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-border.markdown-rendered .markdown-preview-section table :is(tr th:nth-child(2n+2), tr td:nth-child(2n+1)),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-border.markdown-rendered.mado-table-bottom .markdown-preview-section table tr:last-child td:nth-child(2n){
+	background-color:var(--background-primary);
+}
+.mado-table-normal.mado-table-stripe.markdown-rendered .markdown-preview-section table tr:nth-child(2n) td,
+.mado-table-normal.mado-table-border.markdown-rendered .markdown-preview-section table :is(tr th:nth-child(2n+1), tr td:nth-child(2n+1)),
+.mado-table-border.markdown-rendered.mado-table-bottom .markdown-preview-section table tr:last-child td:nth-child(2n+1),
+[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-bottom .markdown-preview-section table tr:last-child :is(td:first-child, td:last-child){
+	background-color:var(--background-secondary);
+}
+
+
+
+
+
+
+/* Mado Table Auto-Expand */
+
+/* Remove master-parent width limit */
+.mado-table-auto.is-readable-line-width>div.markdown-preview-sizer.markdown-preview-section,
+.mado-table-auto.markdown-source-view.mod-cm6.is-readable-line-width :is(.cm-sizer, .cm-content){
+	max-width:100%;
+}
+
+/* attach width limit to all other normal divs except table */
+.mado-table-auto.is-readable-line-width>div.markdown-preview-sizer.markdown-preview-section>div>*,
+.mado-table-auto.markdown-source-view.mod-cm6.is-readable-line-width .cm-editor .cm-contentContainer .cm-content div:not(.cm-table-widget){
+	max-width:var(--file-line-width);
+	margin-inline:auto!important;
+}
+.mado-table-auto.is-readable-line-width>div.markdown-preview-sizer.markdown-preview-section>div>table,
+.mado-table-auto.markdown-source-view.mod-cm6.is-readable-line-width .cm-editor .cm-contentContainer .cm-content table{
+	max-width:100%;
+	width:auto;
+	margin-inline:auto!important;
+}
+
+
+/* Mado Table Check */
+
+.mado-table-check td:has(del){
+	position:relative;
+	/* display:flex; */
+    align-items:center;
+    justify-content:center;
+	z-index:0;
+}
+.mado-table-check td:has(del):before{
+	background:var(--background-primary);
+	z-index:-1;
+	position:absolute;
+	left:0;
+	top:0;
+	content:"";
+	width:100%;
+	height:100%;
+}
+.mado-table-check td:has(del):after{
+	position:absolute;
+	left:50%;
+	top:50%;
+	content:"";
+	width:50px;
+	height:50px;
+	transform:translate(-50%, -50%);
+	opacity:0.3;
+	background-color:MediumSeaGreen;
+    -webkit-mask-size:83%;
+    -webkit-mask-position:53%;
+	-webkit-mask-repeat:no-repeat;
+    -webkit-mask-image:url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+
+
+
+
+
+
+
+/* Mado List2Table */
+
+div.callout[data-callout="mado-list2table"]{
+	background:none;
+	border:none;
+}
+div.callout[data-callout="mado-list2table"] .callout-title,
+div.callout[data-callout="mado-list2table"] .callout-content:before,
+div.callout[data-callout="mado-list2table"] .callout-content>ul :is(.list-bullet,.collapse-indicator),
+div.callout[data-callout="mado-list2table"] .callout-content>ul .contains-task-list:before{
+	display:none;
+}
+div.callout[data-callout="mado-list2table"] .callout-content{
+	padding:0;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul{
+	display:flex;
+	flex-direction:column;
+	min-width:max-content;
+	height:auto;
+	padding:0;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li{
+	display:flex;
+	flex-direction:row;
+	gap:7px;
+	align-items:center;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul{
+	display:flex;
+	flex-direction:row;
+	gap:3px;
+	padding:0;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li{
+	position:relative;
+	height:53px;
+	min-width:53px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:11px;
+	overflow:hidden;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li>*{
+	position:absolute;
+	left:0;
+	top:0;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li .task-list-item-checkbox{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li.is-checked{
+	text-decoration:none;
+	opacity:0.4;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li .task-list-item-checkbox:checked{
+	background:none;
+	z-index:10;
+}
+div.callout[data-callout="mado-list2table"] .callout-content>ul>li>ul>li .task-list-item-checkbox:checked:after{
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	width:40px;
+	height:40px;
+	opacity:0.4;
+	background-color:MediumSeaGreen;
+    -webkit-mask-size:83%;
+    -webkit-mask-position:53%;
+	-webkit-mask-repeat:no-repeat;
+    -webkit-mask-image:url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+
+
+
+
+
+
+
+
+/* Mado Explorer */
+
+/* Hide Inline Title */
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .inline-title{
+	display:none;
+}
+
+/* Reset font size */
+.workspace-split:is(.mod-right-split, .mod-left-split) :is(.markdown-preview-view, .markdown-source-view).mado-explorer{
+	font-size:var(--font-text-size);
+}
+
+/* Adjust margin and padding from the note pane & the elements */
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer.markdown-preview-section{
+	margin:0!important;
+	padding:0!important;
+}
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer{
+	padding:var(--size-4-6) var(--size-4-3)!important;
+}
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer p,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer ul,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer li{
+	margin:0;
+	padding:0;
+}
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer ul{
+	padding-block:7px!important;
+	padding-left:13px!important;
+	margin-left:20px!important;
+}
+body.css-settings-manager:not(.toggle-explorer-indent) .workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer ul{
+	border-left:var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+}
+
+/* Explorer Button design */
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer a,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1{
+	padding:var(--button-padding-long);
+	transition:0.05s ease-in;
+	transition-property:background, color;
+	text-decoration:none;
+	margin:0;
+	position:relative;
+	color:var(--nav-item-color);
+	font-size:var(--nav-item-size);
+	font-weight:var(--nav-item-weight);
+	line-height:var(--line-height-tight);
+	border-radius:var(--button-radius);
+	cursor:var(--cursor);
+	margin-bottom:var(--size-2-1);
+	overflow:hidden;
+    white-space:var(--nav-item-white-space);
+    text-overflow:ellipsis;
+	width:calc(100% - 0px);
+    display:inline-block;
+	vertical-align:middle;
+}
+
+/* expand collapse icon to full size of parent to be clickable */
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1 .heading-collapse-indicator.collapse-indicator.collapse-icon{
+	position:absolute;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	opacity:1;
+}
+
+body.css-settings-manager:not(.toggle-explorer-collapse) .workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1{
+	padding-left:33px;
+}
+body.css-settings-manager:not(.toggle-explorer-collapse) .workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .collapse-indicator svg{
+	position:absolute;
+	left:15px;
+	top:16px;
+}
+
+/* hide frontmatter, collapse icon, heading without value and linebreak */
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .frontmatter,
+body:is(:not(.css-settings-manager),.toggle-explorer-collapse) .workspace-tabs .markdown-preview-view.mado-explorer .collapse-indicator svg,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .list-bullet,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer h1[data-heading=""],
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .markdown-preview-sizer p br{
+	display:none;
+}
+
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer a:hover,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li:hover,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1:hover{
+    background-color:var(--nav-item-background-hover);
+    color:var(--nav-item-color-hover);
+    font-weight:var(--nav-item-weight-hover);
+}
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li>a:hover{
+	background:none;
+}
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1,
+.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1:hover{
+	color:var(--color-accent-2);
+	font-size:0.95em;
+	font-weight:500;
+}
+
+
+
+/* Mado Daily */
+.mado-daily table td{
+	font-size:2rem;
+	position:relative;
+}
+.mado-daily table td:not(:empty):not(:nth-child(3)):not(:nth-child(7)){
+	background:var(--background-primary);
+}
+.mado-daily table thead{
+	display:none;
+}
+/* show checkmark when previous days are filled(no longer empty), */
+/* using "~" instead of "+" decrease the complexity, though it also decrease credibility(?) as checkmark will appear if the previous day is filled */
+.mado-daily table td:first-child:not(:empty)~td:not(:empty)+td:nth-child(3),
+.mado-daily table td:first-child:not(:empty)~td:not(:empty)+td:nth-child(7){
+	background:var(--background-secondary);
+	position:relative;
+	overflow:hidden;
+	z-index:10;
+}
+.mado-daily table td:nth-child(3):before,
+.mado-daily table td:nth-child(7):before{
+	position:absolute;
+	left:50%;
+	top:50%;
+	content:"";
+	width:100%;
+	height:100%;
+	transform:translate(-50%, -50%);
+	z-index:-1;
+	opacity:0.3;
+	background-color:MediumSeaGreen;
+    -webkit-mask-size:83%;
+    -webkit-mask-position:53%;
+	-webkit-mask-repeat:no-repeat;
+    -webkit-mask-image:url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+
+
+
+
+
+
+
+/* Mado Timeline */
+
+.mado-timeline .markdown-preview-sizer>div{
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.mado-timeline .markdown-preview-sizer>div>ul{
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	margin-bottom:0;
+	padding-bottom:13px;
+}
+.mado-timeline .markdown-preview-sizer>div>:is(blockquote,.callout, pre, table){
+	margin-top:23px;
+}
+.mado-timeline .markdown-preview-sizer>div>hr{
+	width:70%;
+	margin-top:53px;
+}
+
+.mado-timeline .markdown-preview-sizer>div>:is(pre,table){
+	text-align:left;
+}
+
+.mado-timeline .markdown-preview-sizer>div>.callout .callout-title{
+	justify-content:center;
+}
+.mado-timeline .markdown-preview-sizer>div>.callout .callout-title .callout-fold{
+	padding-right:0;
+}
+.mado-timeline .markdown-preview-sizer>div>.callout .callout-content{
+	padding:7px 0;
+}
+.mado-timeline .markdown-preview-sizer>div>.callout .callout-content:before{
+	display:none;
+}
+
+.mado-timeline .markdown-preview-sizer>div>h1{\
+	margin-block:100px 11px;
+	color:var(--color-accent);
+	font-size:36px;
+}
+.mado-timeline .markdown-preview-sizer>div>h2{
+	font-size:1.7rem;
+	position:relative;
+	padding-top:13px;
+	margin-block:33px var(--p-spacing);
+}
+.mado-timeline .markdown-preview-sizer>div:has(>h2)+div>*:not(h2){
+	margin-top:-13px;
+}
+.mado-timeline .markdown-preview-sizer>div>h2:before{
+	content:"";
+	width:2px;
+	border-radius:100%;
+	background:var(--text-faint);
+	position:absolute;
+    height: 40px;
+    top: -35px;
+    left: 50%;
+	opacity:0.5;
+}
+.mado-timeline .markdown-preview-sizer>div.is-collapsed>h2{
+	margin-bottom:13px;
+}
+
+
+
+
+
+
+
+
+
+/* Mado Panel */
+
+/* Mado Panel Flexible(default)  &  Mado Panel Callout */
+
+div.callout[data-callout*="mado-panel"]{
+	background-color:initial;
+	mix-blend-mode:normal;
+	padding:0;
+	border:none;
+}
+div.callout[data-callout*="mado-panel"] .callout-content{
+	padding:0;
+	overflow-x:initial;
+}
+
+/* hide original callout design */
+div.callout[data-callout*="mado-panel"] :is(.callout-title, .list-bullet),
+div.callout[data-callout*="mado-panel"] .callout-content:before{
+	display:none;
+}
+
+
+[class*="mado-panel"] .markdown-preview-sizer>div ul.has-list-bullet:before,
+div.callout[data-callout*="mado-panel"] ul.has-list-bullet:before{
+	display:none;
+}
+
+[class*="mado-panel"] .markdown-preview-sizer>div ul,
+div.callout[data-callout*="mado-panel"] ul{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	gap:13px;
+	transition:height 0.2s, opacity 0.2s;
+	padding-inline:23px;
+	padding-block:7px;
+}
+
+[class*="mado-panel"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel"] ul li{
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	padding-block:13px;
+	padding-inline:23px;
+	background:var(--background-fourth);
+	border:var(--border);
+	border-radius:var(--panel-radius);
+	box-shadow:var(--panel-shadow);
+	transition:0.1s background, 0.1s box-shadow, transform 0.1s;
+	text-align:center;
+	width:auto;
+	/* min-width:calc(100% / 4 - 10px); */
+	flex:auto;
+	min-height:70px;
+	overflow:hidden;
+}
+
+[class*="mado-panel"] .markdown-preview-sizer>div ul li .list-bullet{
+	display:none;
+}
+/* Hover-Child-Only doesn't actually look too comfortable, disabling it for the time being */
+/* [class*="mado-panel"] .markdown-preview-sizer>div ul li:hover:not(:has(li:hover)), */
+/* div.callout[data-callout*="mado-panel"] ul li:hover:not(:has(li:hover)){ */
+[class*="mado-panel"] .markdown-preview-sizer>div ul li:hover,
+div.callout[data-callout*="mado-panel"] ul li:hover{
+	background:var(--background-fifth);
+	/* background:var(--background-primary); */
+	transform:translateY(-3px);
+	box-shadow:var(--panel-shadow-hover);
+}
+
+[class*="mado-panel"] .markdown-preview-sizer>div ul a:not(:hover),
+div.callout[data-callout*="mado-panel"] ul a:not(:hover){
+	text-decoration:none;
+}
+/* adapt "a" link to whole panel so to be clickable */
+[class*="mado-panel-link"] .markdown-preview-sizer>div ul a:not(.tag),
+div.callout[data-callout*="mado-panel"][data-callout*="-link"] ul a:not(.tag){
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	height:calc(100% + 26px);
+	width:calc(100% + 46px);
+	padding-block:13px;
+	padding-inline:23px;
+	margin-block:-13px;
+	margin-inline:-23px;
+	text-decoration:none;
+}
+[class*="mado-panel"] .markdown-preview-sizer>div li.task-list-item,
+div.callout[data-callout*="mado-panel"] ul li.task-list-item{
+	position:relative;
+}
+[class*="mado-panel"] .markdown-preview-sizer>div li.task-list-item>input,
+div.callout[data-callout*="mado-panel"] ul li.task-list-item>input{
+	padding:11px;
+	position:absolute;
+	right:0;
+	top:0;
+	left:unset;
+	margin:7px;
+	border:var(--border);
+	border-radius:var(--button-radius);
+}
+[class*="mado-panel"] .markdown-preview-sizer>div li.task-list-item.is-checked,
+div.callout[data-callout*="mado-panel"] ul li.task-list-item.is-checked{
+	background:var(--background-secondary);
+}
+[class*="mado-panel"] .contains-task-list.has-list-bullet li,
+div.callout[data-callout*="mado-panel"] .contains-task-list.has-list-bullet li{
+	margin-block:0;
+}
+
+
+
+
+/* Mado Panel List  &  Mado Panel Callout List*/
+[class*="mado-panel-list"] .markdown-preview-sizer>div ul,
+div.callout[data-callout*="mado-panel-list"] ul{
+	gap:7px;
+}
+[class*="mado-panel-list"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-list"] ul li{
+	display:inline-block;
+	padding-block:8px;
+	min-height:unset;
+	text-align:left;
+	width:100%;
+	overflow:visible;
+	margin-inline-start:0;
+}
+/* fix some panel-link margin issue */
+[class*="mado-panel-list"] .markdown-preview-sizer>div ul li:has(>p){
+	display: inline-block;
+	vertical-align: super;
+	height: calc(100% + 16px);
+	width: calc(100% + 23px);
+	padding-block: 8px;
+	margin-block: -8px;
+	text-align: left;
+}
+[class*="mado-panel-list"][class*="mado-panel-link"] .markdown-preview-sizer>div ul li a:not(.tag),
+div.callout[data-callout*="mado-panel-list"][data-callout*="-link"] ul li a:not(.tag){
+	height:calc(100% + 16px);
+	width:calc(100% + 46px);
+	padding-block:8px;
+	margin-block:-8px;
+	display:inline-block;
+	text-align:left;
+}
+
+[class*="mado-panel-list"] .markdown-preview-sizer>div li.task-list-item,
+div.callout[data-callout*="mado-panel-list"] ul li.task-list-item{
+	padding-inline:43px 23px;
+}
+[class*="mado-panel-list"] .markdown-preview-sizer>div li.task-list-item>input,
+div.callout[data-callout*="mado-panel-list"] ul li.task-list-item>input{
+	padding:12px;
+	left:0;
+}
+[class*="mado-panel-list"] .markdown-preview-sizer>div li:hover>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] ul li:hover>.list-collapse-indicator{
+	opacity:1;
+}
+
+[class*="mado-panel-list-rightbox"] .markdown-preview-sizer>div li.task-list-item,
+div.callout[data-callout*="mado-panel-list-rightbox"] ul li.task-list-item{
+	padding-inline:23px;
+}
+[class*="mado-panel-list-rightbox"] .markdown-preview-sizer>div li.task-list-item>input,
+div.callout[data-callout*="mado-panel-list"][data-callout*="-rightbox"] ul li.task-list-item>input{
+	left:unset;
+}
+
+
+/* the very first list */
+[class*="mado-panel-list"] .markdown-preview-sizer>div>ul>li>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] .callout-content>ul>li>.list-collapse-indicator{
+	margin-left:-53px;
+}
+/* all normal list */
+[class*="mado-panel-list"] .markdown-preview-sizer>div li>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] ul li>.list-collapse-indicator{
+	margin-left:-40px;
+}
+/* all task lisk */
+[class*="mado-panel-list"] .markdown-preview-sizer>div li.task-list-item>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] ul li.task-list-item>.list-collapse-indicator{
+	margin-left:-73px;
+	margin-top:0px;
+}
+/* rightbox task lisk */
+[class*="mado-panel-list-rightbox"] .markdown-preview-sizer>div li.task-list-item>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"][data-callout*="-rightbox"] ul li.task-list-item>.list-collapse-indicator{
+	margin-left:-49px;
+}
+/* normal list inside a task list */
+[class*="mado-panel-list"] .markdown-preview-sizer>div li.task-list-item li:not(.task-list-item)>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] ul li.task-list-item li:not(.task-list-item)>.list-collapse-indicator{
+	margin-left:-53px;
+}
+/* task list inside a normal list */
+[class*="mado-panel-list"] .markdown-preview-sizer>div li:not(.task-list-item)>ul>li.task-list-item>.list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"] ul li:not(.task-list-item)>ul>li.task-list-item>.list-collapse-indicator{
+	margin-left:-60px;
+}
+
+[class*="mado-panel-list"] .markdown-preview-sizer>div li :is(ul,ol),
+div.callout[data-callout*="mado-panel-list"] ul li :is(ul,ol){
+	padding-inline:0;
+}
+[class*="mado-panel-list"] .markdown-preview-sizer>div li.is-collapsed>:is(ul,ol),
+[class*="mado-panel-list"] .markdown-preview-sizer>div li :is(ul,ol):before,
+div.callout[data-callout*="mado-panel-list"] ul li.is-collapsed>:is(ul,ol),
+div.callout[data-callout*="mado-panel-list"] ul li :is(ul,ol):before{
+	display:none;
+}
+
+
+
+
+/* Mado Panel Sizing */
+/* small = short & short */
+/* medium = taller & longer */
+/* large = tallest & longest */
+/* short = short & longer */
+/* long = short & longest */
+[class*="mado-panel-small"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-small"]>.callout-content>ul>li{
+	width:calc(100% / 4 - 10px);
+	max-width:200px;
+	height:70px;
+}
+[class*="mado-panel-medium"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-medium"]>.callout-content>ul>li{
+	width:calc(100% / 3 - 9px);
+	max-width:250px;
+	height:110px;
+}
+[class*="mado-panel-large"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-large"]>.callout-content>ul>li{
+	width:calc(100% / 2 - 7px);
+	max-width:300px;
+	height:130px;
+}
+[class*="mado-panel-short"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-short"]>.callout-content>ul>li{
+	width:calc(100% / 3 - 9px);
+	max-width:250px;
+	height:70px;
+}
+[class*="mado-panel-long"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-long"]>.callout-content>ul>li{
+	width:calc(100% / 2 - 7px);
+	max-width:300px;
+	height:70px;
+}
+[class*="mado-panel-auto"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel"][data-callout*="-auto"]>.callout-content>ul>li{
+	max-width:unset;
+}
+[class*="mado-panel-auto"][class*="mado-panel-small"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-small"][data-callout*="-auto"]>.callout-content>ul>li{
+	min-width:calc(100% / 4 - 10px);
+}
+[class*="mado-panel-auto"][class*="mado-panel-medium"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-medium"][data-callout*="-auto"]>.callout-content>ul>li{
+	min-width:calc(100% / 3 - 9px);
+}
+[class*="mado-panel-auto"][class*="mado-panel-large"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-large"][data-callout*="-auto"]>.callout-content>ul>li{
+	min-width:calc(100% / 2 - 7px);
+}
+[class*="mado-panel-auto"][class*="mado-panel-short"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-short"][data-callout*="-auto"]>.callout-content>ul>li{
+	min-width:calc(100% / 3 - 9px);
+}
+[class*="mado-panel-auto"][class*="mado-panel-long"] .markdown-preview-sizer>div ul li,
+div.callout[data-callout*="mado-panel-long"][data-callout*="-auto"]>.callout-content>ul>li{
+	min-width:calc(100% / 2 - 7px);
+}
+
+
+
+
+
+
+/* Mado Panel Callout Task Feature */
+div.callout[data-callout*="mado-panel-task"]>.callout-content>ul>li{
+	width:calc(100% / 2 - 7px);
+	height:130px;
+	display:none;
+}
+div.callout[data-callout*="mado-panel-task"]>.callout-content>ul>li:nth-child(1),
+div.callout[data-callout*="mado-panel-task"]>.callout-content>ul>li:nth-child(2){
+	display:flex;
+}
+/* When two main tasks above are completed, show the rest of the tasks */
+div.callout[data-callout*="mado-panel-task"]>.callout-content>ul>li.is-checked:nth-child(1)+li.is-checked:nth-child(2)~li{
+	width:calc(100% / 4 - 10px);
+	height:70px;
+	display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+	Plugin Supports
+--------------------------- --------------------------- 
+--------------------------- --------------------------- 
+*/
+
+
+
+/* Banner Plugin */
+img.banner-image{
+	border-radius:0;
+}
+
+
+
+
+/* Kanban Plugin */
+.kanban-plugin{
+	background:var(--background-primary);
+}
+.kanban-plugin .markdown-preview-view{
+	padding-inline:3px;
+}
+
+.kanban-plugin__lane {
+    background: var(--background-fourth);
+    box-shadow: var(--window-shadow);
+}
+.kanban-plugin__lane-items>div {
+    margin-top: 7px;
+}
+.kanban-plugin__lane-items.kanban-plugin__vertical.kanban-plugin__scroll-container{
+    background: var(--background-primary);
+	margin:0;
+	padding:7px 11px;
+}
+.kanban-plugin__item-wrapper{
+    box-shadow: var(--panel-shadow);
+}
+.kanban-plugin__item-title-wrapper {
+    background: var(--background-fourth);
+    padding: 11px 15px;
+}
+.kanban-plugin__item-metadata{
+	padding-top:0;
+}
+/* .markdown-preview-view.kanban-plugin__markdown-preview-view.kanban-plugin__item-markdown>div>ul{ */
+    /* border: var(--border); */
+    /* padding: 23px 33px; */
+    /* background: var(--background-secondary); */
+    /* border-radius: var(--panel-radius); */
+    /* margin-block: 7px; */
+    /* box-shadow: var(--panel-shadow); */
+/* } */
+
+.kanban-plugin__item-markdown code{
+    font-family: var(--font-monospace);
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    font-size: var(--code-size);
+    padding: 0.1em 0.25em;
+}
+.kanban-plugin__item-markdown :not(pre)>code{
+	color:var(--inline-code-color);
+}
+.kanban-plugin__item-markdown pre{
+	position: relative;
+    padding: var(--size-4-3) var(--size-4-4);
+    min-height: 38px;
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    white-space: var(--code-white-space);
+}
+.kanban-plugin__item-markdown pre .copy-code-button{
+	display:none;
+}
+
+/* icon and button styling */
+.kanban-plugin__item :is(button.kanban-plugin__item-prefix-button, button.kanban-plugin__item-postfix-button),
+.kanban-plugin__lane button.kanban-plugin__lane-settings-button{
+	-webkit-app-region: no-drag;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--button-padding-icon);
+	cursor: var(--cursor);
+	border-radius: var(--clickable-icon-radius);
+	color: var(--icon-color);
+	opacity: var(--icon-opacity);
+	transition: opacity 0.15s ease-in-out;
+	height: auto;
+	box-shadow:none;
+}
+.kanban-plugin__item :is(button.kanban-plugin__item-prefix-button, button.kanban-plugin__item-postfix-button):hover,
+.kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover{
+    opacity: var(--icon-opacity-hover);
+    color: var(--icon-color-hover);
+    background-color: var(--background-modifier-hover);
+}
+div.kanban-plugin__lane-title-count{
+	padding: var(--button-padding-icon);
+	width:33px;
+	height:27px;
+	text-align:center;
+}
+
+.kanban-plugin__item-metadata-wrapper:not(:empty){
+	background:var(--background-primary);
+}
+
+/* checkbox completed styling */
+.kanban-plugin__item.is-complete :is(.markdown-preview-view>div *, .kanban-plugin__item-metadata-wrapper:not(:empty) *){
+	text-decoration:line-through;
+	text-decoration-color:var(--color-strikethrough);
+	color:var(--color-strikethrough);
+}
+.kanban-plugin__item.is-complete img{
+	opacity:0.3;
+}
+
+
+
+
+
+
+/* db folder & kanban fix */
+.workspace-split.mod-vertical.mod-root :is([data-type="database-plugin"],.kanban-plugin) .markdown-preview-view{
+	padding-inline:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style Setting Styling */
+.style-settings-container{
+	border:var(--border);
+	border-radius:var(--panel-radius);
+	padding:17px 27px;
+}
+
+/* Remove border-bottom, replace it with border-top */
+.setting-item.setting-item-heading.style-settings-heading{
+	border-bottom:none;
+	border-top:1px solid var(--background-modifier-border);
+}
+/* Remove margin-bottom when collapsed*/
+.setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed){
+	margin-bottom:0;
+}
+/* Remove border-top if header is first-child, and header if previous header is collapsed */
+.setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed)+.style-settings-container+.setting-item.setting-item-heading.style-settings-heading,
+.setting-item.setting-item-heading.style-settings-heading:first-child{
+	border-top:none;
+}
+.style-settings-container{
+	padding-block:13px;
+}
+.style-settings-heading{
+	padding-block:13px 0;
+}
+.style-settings-container{
+	margin-block:13px;
+	box-shadow:var(--panel-shadow);
+}
+.style-settings-heading .setting-item:last-child{
+	padding-bottom:0;
+}
+.style-settings-heading .setting-item+.setting-item-heading{
+	margin-top:0;
+}
+.style-settings-collapse-indicator{
+	color:var(--text-normal);
+}
+.style-settings-heading+.style-settings-container+.style-settings-heading{
+	margin-top:13px;
+}
+
+
+/* remove weird margin top */
+.themed-color-wrapper>div,
+.themed-color-wrapper>div+div{
+	margin-top:0;
+	padding:0 0 0 7px;
+	border:var(--border);
+	background:var(--color-base-00); /* For some reason it's not working originally */
+}
+
+
+.themed-color-wrapper{
+	display:flex;
+    align-items:center;
+	flex-direction:row;
+	gap:7px;
+}
+
+/* Button here has no .clickable-icon, so applying the originals into it */
+.pickr-reset button{
+	-webkit-app-region: no-drag;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--button-padding-icon);
+	cursor: var(--cursor);
+	border-radius: var(--clickable-icon-radius);
+	color: var(--icon-color);
+	opacity: var(--icon-opacity);
+	transition: opacity 0.15s ease-in-out;
+	height: auto;
+	box-shadow:none;
+	background:none;
+}
+.pickr-reset button:hover{
+    opacity: var(--icon-opacity-hover);
+    color: var(--icon-color-hover);
+    background-color: var(--background-modifier-hover);
+}
+/* For some reason it's not working originally, so manually change the hover color */
+.themed-color-wrapper>div.theme-light .pickr-reset button:hover{
+	background-color:var(--color-base-shadow-hover);
+}
+.themed-color-wrapper>div.theme-dark .pickr-reset button:hover{
+	background-color:var(--color-base-05);
+}
+
+/* turn into One row instead of multi rows */
+.view-content .style-settings-container .setting-item:not(.setting-item-heading){
+	flex-direction:row;
+    align-items:center;
+}
+.view-content .style-settings-container .setting-item:not(.setting-item-heading) .setting-item-control{
+	padding-top:0;
+}
+
+/* Custom intro section styling */
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"]{
+	cursor:default;
+}
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"]:not(.is-collapsed){
+	padding-bottom:13px;
+}
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"]:not(.is-collapsed)+.style-settings-container+.style-settings-heading{
+	margin-top:0;
+}
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"]+.style-settings-container{
+	padding:0;
+	border-bottom:0;
+	margin-block:0;
+}
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"] :is(.style-settings-collapse-indicator, .setting-item-control){
+	display:none
+}
+.setting-item.setting-item-heading.style-settings-heading[data-id="intro-section"] .setting-item-description{
+	user-select:text;
+	cursor:text;
+	font-size:14px;
+}
+
+
+
+
+
+
+/* @settings
+
+name: Mado Miniflow
+id: mado-miniflow
+settings:
+	- 
+		id: intro-section
+		title: Introduction
+		description: "The setting here covers only the very basic to avoid complexity fatigue. That being said, feel free to suggest anything by submitting a Github issue on: https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow"
+		type: heading
+		collapsed: true
+		level: 3
+		
+		
+		
+		
+	-
+		id: theme-section
+		title: Theme Section
+		type: heading
+		collapsed: true
+		level: 3
+	- 
+		id: theme-color
+		title: Theme Color
+		type: class-select
+		allowEmpty: false
+		default: theme-violette
+		options:
+			-
+				label: Daisy Blue
+				value: theme-daisy-blue
+			-
+				label: Red Sky
+				value: theme-red-sky
+			-
+				label: Violette
+				value: theme-violette
+			-
+				label: Greenery
+				value: theme-greenery
+			-
+				label: Yellowish
+				value: theme-yellowish
+			-
+				label: Orange Jist
+				value: theme-orange-jist
+			-
+				label: Deep Blue
+				value: theme-deep-blue
+			-
+				label: Tea Teal
+				value: theme-tea-teal
+			-
+				label: Magenta Pink
+				value: theme-magenta-pink
+			-
+				label: Grayscale
+				value: theme-grayscale
+	- 
+		id: accent
+		title: Accent Color
+		type: variable-themed-color
+		opacity: false
+		format: hsl-split
+		default-light: '#'
+		default-dark: '#'
+	- 
+		id: bgcolor
+		title: Background Color
+		description: "*Background color is not dynamically coded. You may see off-colors if you wish to change this setting."
+		type: variable-themed-color
+		opacity: false
+		format: hsl-split
+		default-light: '#'
+		default-dark: '#'
+	- 
+		id: toggle-wave-background
+		title: Hide Background Wave Design
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-tab-design
+		title: Enable Alternative Tab Design
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-note-radius
+		title: Enable All-Rounded Corner Note Pane
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-note-animation
+		title: Enable sliding animation on main pane
+		description: Animation is noticable when you switch to a new tab
+		type: class-toggle
+		default: true
+	- 
+	
+	
+	
+		id: layout-section
+		title: Layout Section
+		type: heading
+		collapsed: true
+		level: 3
+	- 
+	
+	
+		id: toggle-tab-height
+		title: Enable Compact Tab Header
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-tab-height-stacked
+		title: Enable Compact Tab Header (Stacked)
+		description: If you noticed a broken gap after the toggle, just refresh it by clicking on the panes (so that they can readjust themselves).
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-scrollbar-overlay
+		title: Enable Overlay Scrollbar
+		type: class-toggle
+		description: Overlay will provide you wider field of contents, but in return, scrollbar will have to overlap onto it.
+		default: true
+	- 
+	
+	
+		id: hiding-section
+		title: Hiding Elements
+		type: heading
+		description: Hide/Unhide the surrounding elements. Most can be hovered to reveal them.
+		level: 4
+		collapsed: true
+	- 
+		id: toggle-titlebar-buttons
+		title: Hide Window Titlebar Buttons
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-side-ribbons
+		title: Hide Sidedock Ribbons
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sidebar-toggle-left
+		title: Hide Sidebar Toggle Button (Left)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sidebar-toggle-right
+		title: Hide Sidebar Toggle Button (Right)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sidebar-buttons
+		title: Hide Sidebar Tab Buttons
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-explorer-buttons
+		title: Hide File Explorer Buttons
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-vault-title
+		title: Hide File Explorer Vault Title (Unhoverable)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-explorer-indent
+		title: Hide File Explorer Indentation Guide (Unhoverable)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-explorer-collapse
+		title: Hide File Explorer Collapse Indicator (Unhoverable)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-tab-section
+		title: Hide Note Tab Section
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-note-header
+		title: Hide Note Title Bar
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-status-bar
+		title: Hide Status Bar (Unhoverable)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sync-button
+		title: Show Sync Button Independently
+		type: class-toggle
+		description: Available when Status Bar is hidden.
+		default: false
+	- 
+		id: toggle-scrollbar
+		title: Hide Scrollbar
+		type: class-toggle
+		default: true
+	- 
+	
+	
+		id: sidebar-section
+		title: Sidebar Section
+		type: heading
+		description: With a fixed width, the contents of sidebar will pull towards to the middle whenever you resize. This gives you a better focus at the center of a bigger screen.
+		collapsed: true
+		level: 4
+	- 
+		id: toggle-sidebar-fixed-left
+		title: Fixed Width (Left)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sidebar-fixed-right
+		title: Fixed Width (Right)
+		type: class-toggle
+		default: true
+	- 
+		id: toggle-sidebar-fixed-left-auto
+		title: Auto Expand Width (Left)
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-sidebar-fixed-right-auto
+		title: Auto Expand Width (Right)
+		type: class-toggle
+		default: false
+	- 
+		id: sidebar-size-left
+		title: Width size if fixed (Left)
+		type: variable-number-slider
+		default: 270
+		format: px
+        min: 200
+        max: 1000
+        step: 10
+	- 
+		id: sidebar-size-right
+		title: Width size if fixed (Right)
+		type: variable-number-slider
+		default: 270
+		format: px
+        min: 200
+        max: 1000
+        step: 10
+	- 
+		id: toggle-sidebar-left-top
+		title: Additional space on top of left sidebar
+		type: class-toggle
+		default: false
+	- 
+		id: toggle-sidebar-right-top
+		title: Additional space on top of right sidebar
+		type: class-toggle
+		default: true
+	- 
+	
+	
+	
+	
+	
+	
+		id: markdown-section
+		title: Markdown Section
+		type: heading
+		collapsed: true
+		level: 3
+	- 
+		id: file-line-width
+		title: Readable Line Length
+		type: variable-number-slider
+		default: 700
+		format: px
+        min: 400
+        max: 1200
+        step: 10
+	-
+		id: text-normal
+		title: Text Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-muted
+		title: Muted Text Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-faint
+		title: Faint Text Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+	
+	
+		id: typography-section
+		title: Typography Section
+		type: heading
+		collapsed: true
+		level: 4
+	- 
+	
+	
+		id: bold-color
+		title: Bold Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: bold-weight
+		title: Bold Weight
+		type: variable-number-slider
+		default: 700
+        min: 100
+        max: 1000
+        step: 100
+	-
+		id: italic-color
+		title: Italic Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: toggle-highlight-type
+		title: Highlight Type
+		type: class-select
+		allowEmpty: false
+        default: THT-underline-dark
+        options:
+            - 
+                label: Background-filled
+                value: THT-background
+            - 
+                label: Underlined
+                value: THT-underline
+            - 
+                label: Underlined (Light-mode only)
+                value: THT-underline-light
+            - 
+                label: Underlined (Dark-mode only)
+                value: THT-underline-dark
+	- 
+		id: color-highlight
+		title: Highlight Color (Text)
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-highlight-bg
+		title: Highlight Color (Background/Underline)
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: color-strikethrough
+		title: Strikethrough Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: inline-code-color
+		title: Inline Code Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: list-marker-color
+		title: Listing Bullet/Marker Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+	
+	
+		id: heading-section
+		title: Heading Section
+		description: "Not applicable to cssclass: mado-heading."
+		type: heading
+		collapsed: true
+		level: 4
+	- 
+	
+	
+	- 
+		id: toggle-h1-margin-top
+		title: Enable H1 Spacious Separator
+		description: When an H1 is uncollapsed, it will create a big wide space below to distinguish from the next H1. Downside, however, is the first H1 will always have the wide space above it.
+		type: class-toggle
+		default: true
+	-
+		id: h1-size
+		title: H1 Size
+		type: variable-number
+		format: em
+		default: 2
+	-
+		id: h2-size
+		title: H2 Size
+		type: variable-number
+		format: em
+		default: 1.6
+	-
+		id: h3-size
+		title: H3 Size
+		type: variable-number
+		format: em
+		default: 1.37
+	-
+		id: h4-size
+		title: H4 Size
+		type: variable-number
+		format: em
+		default: 1.25
+	-
+		id: h5-size
+		title: H5 Size
+		type: variable-number
+		format: em
+		default: 1.12
+	-
+		id: h6-size
+		title: H6 Size
+		type: variable-number
+		format: em
+		default: 1.12
+	-
+		
+		id: h1-color
+		title: H1 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h2-color
+		title: H2 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h3-color
+		title: H3 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h4-color
+		title: H4 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h5-color
+		title: H5 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h6-color
+		title: H6 Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+*/

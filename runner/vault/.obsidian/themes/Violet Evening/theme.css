@@ -1,0 +1,248 @@
+/* Violet Evening -- Obsidian Dark Theme */
+
+/* ---MAIN VARIABLES--- */
+
+.theme-dark {
+	--background-primary: #2b2751;
+	--background-primary-alt: #1e1d3d;
+	--background-secondary: #201e42;
+	--background-secondary-alt: #2d2355;
+	--background-modifier-border: #121025;
+	--background-modifier-form-field: #2a2458;
+	--background-modifier-form-field-highlighted: #2d285e;
+	--background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+	--background-modifier-success: #79f269;
+	--background-modifier-error: #c80000bf;
+	--background-modifier-error-rgb: 61, 0, 0;
+	--background-modifier-error-hover: #ff0000;
+	--background-modifier-cover: #171532;
+	--text-accent: #bd6af5;
+	--text-accent-hover: #fdc307;
+	--text-normal: #fff;
+	--text-muted: #c5b5ff;
+	--text-muted-rgb: 153, 153, 153;
+	--text-faint: #c5b5ff;
+	--text-error: #ff3737bf;
+	--text-error-hover: #990000;
+	--text-highlight-bg: #662ca5;
+	--text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+	--text-selection: #8f2bd2;
+	--text-on-accent: #202020;
+	--interactive-normal: #2a2a2a;
+	--interactive-hover: #303030;
+	--interactive-accent: #ddaa03;
+	--interactive-accent-rgb: 72, 54, 153;
+	--interactive-accent-hover: #ae3afc;
+	--interactive-success: #79f269;
+	--scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+	--scrollbar-bg: rgba(255, 255, 255, 0.05);
+	--scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+	--highlight-mix-blend-mode: lighten;
+}
+
+/* ---TEXT---  */
+
+.cm-header-1,
+h1 {
+	color: #02fefe;
+}
+
+.cm-header-2,
+h2 {
+	color: #02fefe;
+}
+
+.cm-header-3,
+h3 {
+	color: #02fefe;
+}
+
+.cm-header-4,
+h4 {
+	color: #02fefe;
+}
+
+.cm-header-5,
+h5 {
+	color: #02fefe;
+}
+
+.cm-header-6,
+.markdown-preview-view h6 {
+	color: #02fefe;
+}
+
+/* italic */
+.cm-em,
+.markdown-preview-section em {
+	color: #02fefe;
+	font-style: italic !important;
+}
+
+/* bold*/
+.cm-strong,
+.markdown-preview-section strong {
+	color: #79f269;
+	font-style: normal !important;
+	font-weight: bold !important;
+}
+
+/* ---LINE BREAKS--- */
+.markdown-preview-view hr {
+	border: none;
+	border-top: 1px solid;
+	border-image: linear-gradient(to right, #fa9c2a, #ac36fa);
+	border-image-slice: 1;
+	opacity: 0.6;
+}
+
+/* ---BLOCKQUOTES--- */
+
+/* add quotation mark  */
+blockquote:before {
+	font: 14px/20px italic Times, serif;
+	content: '“';
+	font-size: 3em;
+	line-height: 0.1em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+}
+
+.markdown-preview-view blockquote {
+	border: 1px solid;
+	border-image: linear-gradient(
+		to right,
+		#fa9c2a,
+		#ac36fa,
+		rgba(102, 49, 154, 0.05)
+	);
+	border-image-slice: 1;
+	border-left-width: 1px;
+}
+
+/* ---NAV BAR--- */
+
+/* top buttons */
+
+.titlebar-inner {
+	color: white;
+}
+
+.view-action:hover,
+.view-action.is-active {
+	color: #fdc307;
+}
+
+/* open doc */
+.workspace-leaf.mod-active .view-header-title {
+	color: #fdc307;
+}
+
+/* explorer nav */
+.nav-file-title.is-active {
+	color: #fdc307;
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+	color: #fdc307;
+}
+
+/* explorer nav btns */
+
+.nav-action-button:hover {
+	color: #fdc307;
+}
+
+/* ---CODE BOX--- */
+
+.markdown-rendered button.copy-code-button {
+	background-color: var(--interactive-accent);
+	color: var(--interactive-normal);
+}
+
+.cm-s-obsidian span.cm-inline-code {
+	color: #fa9c2a;
+}
+
+.markdown-rendered code {
+	color: #fa9c2a;
+}
+/* ---CALLOUT---  */
+
+.callout {
+	--callout-color: 254, 197, 9;
+}
+
+.callout.is-collapsible {
+	--callout-color: 102, 44, 165;
+}
+
+/* ---GRAPH---  */
+
+.graph-view.color-line {
+	color: #967404;
+}
+
+/* ---TAGS--- */
+
+.tag {
+	background-color: #6243a8;
+	border: none;
+	color: var(--text-normal);
+	padding: 1px 9px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	border-radius: 14px;
+}
+.tag:hover {
+	color: black;
+	background-color: #fdc307;
+}
+
+/* ---LIST ITEMS---  */
+
+li {
+	margin: 10px 0;
+}
+
+ul ul {
+	position: relative;
+}
+
+ul ul::before {
+	content: '';
+	border-left: 1px solid;
+	border-image: linear-gradient(#fa9c2a, #ac36fa, rgba(102, 49, 154, 0.05));
+	border-image-slice: 1;
+	position: absolute;
+	opacity: 0.7;
+}
+
+ul ul::before {
+	left: -15px;
+	top: 0;
+	bottom: 0;
+}
+
+ol ol {
+	position: relative;
+}
+ol ol::before {
+	content: '';
+	border-left: 1px solid;
+	border-image: linear-gradient(#fa9c2a, #ac36fa, rgba(102, 49, 154, 0.05));
+	border-image-slice: 1;
+	position: absolute;
+	opacity: 0.7;
+}
+ol ol::before {
+	left: -15px;
+	top: 0;
+	bottom: 0;
+}

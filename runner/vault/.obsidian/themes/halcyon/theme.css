@@ -1,0 +1,224 @@
+/*
+The Obsidian Halcyon theme is based on the Halcyon theme as created by Brittany Chiang.
+See the following links for more information.
+  - https://halcyon-theme.netlify.app/
+  - https://brittanychiang.com/
+
+The initial port to Obsidian is done by sailKite.
+See:
+  - https://github.com/sailkitev
+
+Publish support has been added by Sigrunixia.
+See:
+  - https://github.com/sigrunixia
+
+All further work done by me (dbarenholz). A few design decisions were made out of necessity.
+*/
+
+/*MIT License
+
+Copyright (c) 2024 Daniël Barenholz <spam@dbarenholz.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+/* @settings
+
+name: Halcyon Theme
+id: halcyon-style-settings
+settings:
+    -
+        id: halcyon-accent
+        title: Accent Color
+        type: variable-color
+		format: hex
+		default: '#ffcc66'
+    -
+        id: halcyon-colors-base
+        title: Base
+        type: heading
+		level: 5
+    -
+        id: halcyon-base-blue-01
+        title: --halcyon-base-blue-01
+		description: Workbench background color.
+        type: variable-color
+        format: hex
+        default: '#171c28'
+    -
+        id: halcyon-base-blue-02
+        title: --halcyon-base-blue-02
+		description: Editor background color.
+        type: variable-color
+        format: hex
+        default: '#1d2433'
+    -
+        id: halcyon-base-blue-03
+        title: --halcyon-base-blue-03
+		description: Highlights, widgets, and panels.
+        type: variable-color
+        format: hex
+        default: '#2f3b54'
+    -
+        id: halcyon-base-blue-04
+        title: --halcyon-base-blue-04
+		description: Dividers, and subtle UI elements.
+        type: variable-color
+        format: hex
+        default: '#6679a4'
+    -
+        id: halcyon-base-blue-05
+        title: --halcyon-base-blue-05
+		description: Status bar text, buttons, and more.
+        type: variable-color
+        format: hex
+        default: '#8695b7'
+    -
+        id: halcyon-base-grey-dark
+        title: --halcyon-base-grey-dark
+		description: Variables, property names, and tabs.
+        type: variable-color
+        format: hex
+        default: '#a2aabc'
+    -
+        id: halcyon-base-grey-light
+        title: --halcyon-base-grey-light
+		description: Active text. Anything that should be white.
+        type: variable-color
+        format: hex
+        default: '#d7dce2'
+    -
+        id: halcyon-base-grey-tab
+        title: --halcyon-base-grey-tab
+        type: variable-color
+        format: hex
+        default: '#71777f'
+    -
+        id: halcyon-base-grey-token
+        title: --halcyon-base-grey-token
+        type: variable-color
+        format: hex
+        default: '#586582'
+    -
+        id: halcyon-base-grey-scroll
+        title: --halcyon-base-grey-scroll
+        type: variable-color
+        format: hex
+        default: '#3f495e'
+    -
+        id: halcyon-base-grey-scroll-hover
+        title: --halcyon-base-grey-scroll-hover
+        type: variable-color
+        format: hex
+        default: '#5c6782'
+    -
+        id: halcyon-color-palette
+        title: Palette
+        type: heading
+		level: 5
+    -
+        id: halcyon-palette-cyan
+        title: --halcyon-palette-cyan
+		description: Modified highlights.
+        type: variable-color
+        format: hex
+        default: '#5ccfe6'
+    -
+        id: halcyon-palette-lime
+        title: --halcyon-palette-lime
+		description: Addition highlights.
+        type: variable-color
+        format: hex
+        default: '#bae67e'
+    -
+        id: halcyon-palette-orange
+        title: --halcyon-palette-orange
+		description: Constants, operators.
+        type: variable-color
+        format: hex
+        default: '#ffae57'
+    -
+        id: halcyon-palette-yellow
+        title: --halcyon-palette-yellow
+		description: Functions, classes, object literal keys.
+        type: variable-color
+        format: hex
+        default: '#ffd580'
+    -
+        id: halcyon-palette-lilac
+        title: --halcyon-palette-lilac
+		description: Keywords, constants, template literals.
+        type: variable-color
+        format: hex
+        default: '#c3a6ff'
+    -
+        id: halcyon-palette-salmon
+        title: --halcyon-palette-salmon
+		description: Deletion highlights, errors, warnings.
+        type: variable-color
+        format: hex
+        default: '#ef6b73'
+    -
+        id: halcyon-palette-blue
+        title: --halcyon-palette-blue
+		description: Added by dbarenholz.
+        type: variable-color
+        format: hex
+        default: '#7099db'
+    -
+        id: halcyon-palette-pink
+        title: --halcyon-palette-pink
+		description: Added by dbarenholz.
+        type: variable-color
+        format: hex
+        default: '#f9cff2'
+    -
+        id: halcyon-extra
+        title: Extra
+        type: heading
+        level: 2
+    -
+        id: dont-make-blockquotes-small-caps
+        title: "Do not make blockquotes as small-caps"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-file-explorer-hover-yellow
+        title: "Do not make the hover of file explorer items yellow"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-prompt-suggestions-emphasized
+        title: "Do not emphasize prompt suggestions"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-search-results-readable
+        title: "Do not make search results readable (you don't want this, really)"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-tables-take-full-width
+        title: "Do not make tables take full width"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-tabs-square
+        title: "Do not make tabs square"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-task-brackets-purple
+        title: "Do not make task brackets purple"
+        type: class-toggle
+		default: false
+    -
+        id: dont-make-tree-icons-hover-yellow
+        title: "Do not make the hover of icons in the file tree yellow"
+        type: class-toggle
+		default: false
+*/
+body:is(.theme-dark){--halcyon-base-blue-01: #171c28;--halcyon-base-blue-02: #1d2433;--halcyon-base-blue-03: #2f3b54;--halcyon-base-blue-03-rgb: 47, 59, 84;--halcyon-base-blue-04: #6679a4;--halcyon-base-blue-05: #8695b7;--halcyon-base-grey-dark: #a2aabc;--halcyon-base-grey-light: #d7dce2;--halcyon-accent: #ffcc66;--halcyon-accent-h: 40;--halcyon-accent-s: 100%;--halcyon-accent-l: 70%;--halcyon-palette-cyan: #5ccfe6;--halcyon-palette-lime: #bae67e;--halcyon-palette-orange: #ffae57;--halcyon-palette-yellow: #ffd580;--halcyon-palette-lilac: #c3a6ff;--halcyon-palette-salmon: #ef6b73;--halcyon-code-variable: var(--halcyon-base-grey-dark);--halcyon-code-function: var(--halcyon-palette-yellow);--halcyon-code-operator: var(--halcyon-palette-orange);--halcyon-code-error: var(--halcyon-palette-salmon);--halcyon-code-keyword: var(--halcyon-palette-lilac);--halcyon-base-blue-01-02-mix: color-mix( in hsl, var(--halcyon-base-blue-01), var(--halcyon-base-blue-02) );--halcyon-base-blue-02-03-mix: color-mix( in hsl, var(--halcyon-base-blue-02), var(--halcyon-base-blue-03) );--halcyon-base-blue-03-04-mix: color-mix( in hsl, var(--halcyon-base-blue-03), var(--halcyon-base-blue-04) );--halcyon-base-blue-04-05-mix: color-mix( in hsl, var(--halcyon-base-blue-04), var(--halcyon-base-blue-05) );--halcyon-base-grey-mix: color-mix( in hsl, var(--halcyon-base-grey-light), var(--halcyon-base-grey-dark) );--halcyon-text-normal: var(--halcyon-base-grey-light);--halcyon-text-muted: #8695b799;--halcyon-accent-hover: var(--halcyon-palette-yellow);--halcyon-palette-lilac-hover: color-mix( in hsl, var(--halcyon-palette-lilac), var(--halcyon-base-grey-dark) );--halcyon-palette-cyan-hover: color-mix( in hsl, var(--halcyon-palette-cyan), var(--halcyon-base-grey-dark) );--halcyon-palette-blue: #7099db;--halcyon-palette-pink: #f9cff2;--halcyon-base-grey-tab: #71777f;--halcyon-base-grey-token: #586582;--halcyon-base-grey-scroll: #3f495e;--halcyon-base-grey-scroll-hover: #5c6782}body:is(.theme-dark){--color-base-00: var(--halcyon-base-blue-01);--color-base-05: var(--halcyon-base-blue-01-02-mix);--color-base-10: var(--halcyon-base-blue-02);--color-base-20: var(--halcyon-base-blue-02-03-mix);--color-base-25: var(--halcyon-base-blue-03);--color-base-30: var(--halcyon-base-blue-03-04-mix);--color-base-35: var(--halcyon-base-blue-04);--color-base-40: var(--halcyon-base-blue-04-05-mix);--color-base-50: var(--halcyon-base-blue-05);--color-base-60: var(--halcyon-base-grey-dark);--color-base-70: var(--halcyon-base-grey-mix);--color-base-100: var(--halcyon-base-grey-light);--accent-h: var(--halcyon-accent-h);--accent-s: var(--halcyon-accent-s);--accent-l: var(--halcyon-accent-l);--color-red: var(--halcyon-palette-salmon);--color-red-rgb: 239, 107, 115;--color-orange: var(--halcyon-palette-orange);--color-orange-rgb: 255, 174, 87;--color-yellow: var(--halcyon-palette-yellow);--color-yellow-rgb: 255, 204, 102;--color-green: var(--halcyon-palette-lime);--color-green-rgb: 186, 230, 126;--color-cyan: var(--halcyon-palette-cyan);--color-cyan-rgb: 92, 207, 230;--color-blue: var(--halcyon-palette-blue);--color-blue-rgb: 112, 153, 219;--color-purple: var(--halcyon-palette-lilac);--color-purple-rgb: 195, 166, 255;--color-pink: var(--halcyon-palette-pink);--color-pink-rgb: 249, 207, 242;--background-primary: var(--halcyon-base-blue-02);--background-primary-alt: var(--halcyon-base-blue-03);--background-secondary: var(--halcyon-base-blue-01);--background-modifier-hover: var(--halcyon-base-blue-03);--background-modifier-active-hover: var(--halcyon-base-blue-03);--background-modifier-border: var(--halcyon-base-blue-02-03-mix);--background-modifier-border-hover: var(--halcyon-accent);--background-modifier-border-focus: var(--halcyon-base-blue-04);--background-modifier-message: var(--halcyon-base-blue-02-03-mix);--interactive-normal: color-mix( in hsl, var(--background-primary) 75%, transparent );--interactive-hover: var(--background-primary);--interactive-accent: var(--halcyon-accent);--interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);--interactive-accent-hover: color-mix( in hsl, var(--halcyon-accent) 75%, transparent );--text-normal: var(--halcyon-text-normal);--text-muted: color-mix( in hsl, var(--halcyon-text-muted), var(--text-normal) );--text-faint: var(--halcyon-text-muted);--text-on-accent: var(--halcyon-base-blue-03);--text-error: var(--halcyon-palette-salmon);--text-warning: var(--halcyon-palette-salmon);--text-success: var(--halcyon-palette-lime);--text-accent: var(--halcyon-accent);--text-accent-hover: var(--halcyon-accent-hover);--text-selection: color-mix( in hsl, var(--halcyon-base-blue-03-04-mix) 35%, transparent );--text-highlight-bg-rgb: 255, 208, 0;--text-highlight-bg: rgb(var(--halcyon-base-blue-03-rgb))}body:is(.theme-dark){--icon-stroke: 2px;--icon-color-active: var(--interactive-accent);--icon-color-focused: var(--interactive-accent);--clickable-icon-radius: 0}body:is(.theme-dark){--radius-s: 2px;--radius-m: 4px;--radius-l: 6px;--radius-xl: 8px}body:is(.theme-dark){--bold-color: var(--halcyon-palette-salmon);--italic-color: var(--halcyon-palette-salmon)}body:is(.theme-dark){--checkbox-color: var(--halcyon-palette-lilac);--checkbox-color-hover: var(--halcyon-palette-lilac-hover);--checkbox-border-color: var(--halcyon-palette-lilac);--checkbox-border-color-hover: var(--halcyon-palette-lilac-hover)}body:is(.theme-dark){--drag-ghost-background: var(--halcyon-base-blue-03);--drag-ghost-text-color: var(--interactive-accent)}body:is(.theme-dark){--modal-border-color: var(--halcyon-base-blue-02)}body:is(.theme-dark){--nav-item-color-selected: var(--halcyon-palette-orange);--nav-item-background-selected: var(--halcyon-base-blue-03)}body:is(.theme-dark){--prompt-border-color: var(--halcyon-base-blue-02-03-mix)}body:is(.theme-dark){--tab-text-color-active: var(--text-accent);--tab-text-color-focused-active: var(--text-accent);--tab-text-color-focused-active-current: var(--text-accent);--tab-divider-color: var(--titlebar-background);--tab-outline-width: 0px;--tab-curve: 0px;--tab-radius: 0px;--tab-radius-active: 0px}body:is(.theme-dark){--input-radius: 0}body:is(.theme-dark){--toggle-thumb-color: var(--text-on-accent)}body:is(.theme-dark){--blockquote-color: color-mix( in srgb, var(--halcyon-palette-yellow) 75%, var(--halcyon-text-normal) )}body:is(.theme-dark){--callout-padding: var(--size-4-3) var(--size-4-6)}body:is(.theme-dark){--code-background: var(--halcyon-base-blue-01);--code-normal: var(--halcyon-palette-cyan);--code-comment: var(--text-faint);--code-function: var(--halcyon-code-function);--code-important: var(--halcyon-code-error);--code-keyword: var(--halcyon-code-keyword);--code-property: var(--text-muted);--code-operator: var(--halcyon-code-operator);--code-punctuation: var(--halcyon-palette-lilac);--code-string: var(--halcyon-palette-lime);--code-tag: var(--halcyon-base-grey-dark)}body:is(.theme-dark){--file-line-width: 50rem}body:is(.theme-dark){--h1-color: var(--halcyon-palette-lime);--h2-color: var(--halcyon-palette-lime);--h3-color: var(--halcyon-palette-lime);--h4-color: var(--halcyon-palette-lime);--h5-color: var(--halcyon-palette-lime);--h6-color: var(--halcyon-palette-lime);--h1-weight: 700;--h2-weight: 675;--h3-weight: 650;--h4-weight: 625;--h5-weight: 600;--h6-weight: 575}body:is(.theme-dark){--hr-color: color-mix( in hsl, var(--text-faint), var(--background-modifier-border) )}body:is(.theme-dark){--link-color: var(--halcyon-palette-lilac);--link-color-hover: var(--halcyon-palette-lilac-hover);--link-unresolved-color: var(--halcyon-palette-lilac);--link-unresolved-decoration-style: dashed;--link-unresolved-decoration-color: var(--halcyon-palette-lilac);--link-external-color: var(--halcyon-palette-lilac);--link-external-color-hover: var(--halcyon-palette-lilac-hover)}body:is(.theme-dark){--list-marker-color: var(--halcyon-palette-lilac);--list-marker-color-hover: var(--halcyon-palette-lilac-hover);--list-marker-color-collapsed: var(--halcyon-palette-lime)}body:is(.theme-dark){--metadata-label-text-color: var(--halcyon-palette-cyan);--metadata-label-text-color-hover: var(--halcyon-palette-cyan-hover)}body:is(.theme-dark){--table-background: var(--background-primary);--table-header-background-hover: var(--table-background);--table-header-size: larger}body:is(.theme-dark){--tag-size: var(--code-size);--tag-color: var(--halcyon-palette-cyan);--tag-color-hover: var(--halcyon-palette-cyan);--tag-decoration-hover: underline;--tag-background: color-mix(in hsl, var(--tag-color) 25%, transparent);--tag-background-hover: color-mix( in hsl, var(--tag-color-hover) 25%, transparent )}body:is(.theme-dark){--graph-line: var(--halcyon-base-blue-03);--graph-node-unresolved: var(--halcyon-palette-salmon);--graph-node-tag: var(--halcyon-palette-lilac)}body:is(.theme-dark){--search-clear-button-color: var(--halcyon-palette-salmon);--search-icon-color: var(--halcyon-accent)}body:is(.theme-dark){--ribbon-background-collapsed: var(--ribbon-background)}body:is(.theme-dark){--scrollbar-bg: rgba(var(--mono-rgb-100), 0.05)}body:is(.theme-dark){--vault-profile-font-size: 1em;--vault-profile-color-hover: var(--vault-profile-color)}body:is(.theme-dark){--titlebar-background: var(--background-secondary);--titlebar-background-focused: var(--background-secondary);--titlebar-border-color: var(--background-modifier-border);--titlebar-text-color: var(--text-muted);--titlebar-text-color-focused: var(--text-normal)}body:is(.theme-dark){--workspace-background-translucent: unset}body:is(.theme-dark):not(.no-fix-border-radius) .metadata-property:focus,body:is(.theme-dark):not(.no-fix-border-radius) .metadata-property:focus-within,body:is(.theme-dark):not(.no-fix-border-radius) .metadata-properties-heading:focus:before{border-radius:2px}body:is(.theme-dark) .markdown-source-view:is(.is-live-preview) .callout-content>.callout{margin:1em 0;padding:var(--callout-padding)}body:is(.theme-dark) .markdown-source-view:is(.is-live-preview) .callout-content>pre{margin:1em 0}body:is(.theme-dark):not(.no-fix-code-highlighting) .cm-s-obsidian span.cm-inline-code{color:var(--halcyon-palette-orange)}body:is(.theme-dark):not(.no-fix-community-plugin-highlights) .community-item .suggestion-highlight{color:var(--text-accent)}body:is(.theme-dark):not(.no-fix-divider-lines) .workspace-split.mod-left-split>.workspace-leaf-resize-handle{border-right-width:0px}body:is(.theme-dark):not(.no-fix-divider-lines) .workspace-split.mod-right-split>.workspace-leaf-resize-handle{border-left-width:0px}body:is(.theme-dark):not(.no-fix-divider-lines) .workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle{border-bottom-width:0px}body:is(.theme-dark):not(.no-fix-divider-lines) .workspace-ribbon{border-right:unset}body:is(.theme-dark):not(.no-fix-links-in-comments) :is(.cm-comment.cm-hmd-internal-link,.cm-comment.cm-link,.cm-comment.cm-string){color:var(--code-comment)}body:is(.theme-dark):not(.no-fix-links-in-comments) :is(.cm-comment.cm-string,.cm-comment.cm-hmd-internal-link:hover,.cm-comment.cm-link:hover){text-decoration:none}body:is(.theme-dark):not(.no-fix-properties-highlighting) .cm-hmd-frontmatter.cm-atom{color:var(--color-cyan)}body:is(.theme-dark):not(.no-fix-properties-highlighting) .cm-hmd-frontmatter.cm-meta{color:var(--color-orange)}body:is(.theme-dark):not(.no-fix-properties-highlighting) .cm-hmd-frontmatter{color:var(--color-green)}body:is(.theme-dark):not(.no-fix-properties-highlighting) .metadata-property-icon{color:var(--halcyon-palette-cyan)}body:not(.native-scrollbars):not(.no-fix-scrollbar-background) ::-webkit-scrollbar{background-color:var(--scrollbar-bg);width:7px}body:is(.theme-dark):not(.no-fix-text-input-selection) :is(textarea,input:not([type=checkbox]),input.metadata-input-text,select):is(:focus,:active,:focus-visible),body:is(.theme-dark):not(.no-fix-text-input-selection) .metadata-property:is(:focus,:focus-within),body:is(.theme-dark):not(.no-fix-text-input-selection) .text-icon-button:focus,body:is(.theme-dark):not(.no-fix-text-input-selection) .metadata-properties-heading:focus:before{box-shadow:0 0 0 1px var(--interactive-accent)}body:is(.theme-dark):not(.no-fix-text-input-selection) .metadata-input-longtext::selection,body:is(.theme-dark):not(.no-fix-text-input-selection) input::selection,body:is(.theme-dark):not(.no-fix-text-input-selection) textarea::selection{background-color:var(--halcyon-base-blue-03-04-mix)}body:is(.theme-dark):not(.no-fix-toggle-readability) .checkbox-container{background-color:var(--halcyon-palette-salmon)}body:is(.theme-dark):not(.no-fix-toggle-readability) .checkbox-container.is-enabled{background-color:var(--halcyon-palette-lime)}body:is(.theme-dark):not(.no-fix-unresolved-markdown-links-hover) h3[data-heading*="find section #"] a.tag{all:unset}body:is(.theme-dark):not(.no-fix-underline-offset){text-underline-offset:.1em}.is-mobile.theme-dark:not(.no-fix-mobile-tag-background){--tag-background: color-mix(in hsl, var(--tag-color) 25%, transparent)}body:is(.theme-dark):not(.dont-make-blockquotes-small-caps) .markdown-rendered blockquote,body:is(.theme-dark):not(.dont-make-blockquotes-small-caps) .markdown-source-view:is(.is-live-preview) span.cm-quote:not(.cm-inline-code){font-variant:small-caps}body:is(.theme-dark):not(.dont-make-blockquotes-small-caps) .markdown-rendered blockquote :is(pre,code){font-variant:normal}body:is(.theme-dark):not(.dont-make-blockquotes-small-caps) .cm-em.cm-quote{color:var(--italic-color)}body:is(.theme-dark):not(.dont-make-blockquotes-small-caps) .cm-strong.cm-quote{color:var(--bold-color)}body:is(.theme-dark):not(.is-grabbing):not(.dont-make-file-explorer-hover-yellow) :is(.nav-file-title:hover,.nav-folder-title:hover){color:var(--interactive-accent-hover)}body:is(.theme-dark):not(.dont-make-prompt-suggestions-emphasized) .prompt>.prompt-results>.suggestion-item .suggestion-highlight{color:var(--interactive-accent)}body:is(.theme-dark):not(.dont-make-prompt-suggestions-emphasized) .prompt input.prompt-input{color:var(--interactive-accent);font-weight:bold}body:is(.theme-dark):not(.dont-make-search-results-readable) .search-result:not(.is-collapsed) .search-result-file-title{color:var(--text-normal)}body:is(.theme-dark):not(.dont-make-search-results-readable) .search-result:not(.is-collapsed) .search-result-file-matched-text{color:var(--text-accent);font-weight:bold}body:is(.theme-dark):not(.dont-make-search-results-readable) .search-input-container>input{background-color:var(--background-primary)}body:is(.theme-dark):not(.dont-make-tables-take-full-width) table:not(.table-view-table){width:100%}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-split:not(.mod-left-split,.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner{padding-left:0px;margin-top:0px}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-split:not(.mod-left-split,.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-title{padding-left:10px}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-split:not(.mod-left-split,.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-icon{padding-right:0px}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-split:not(.mod-left-split,.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner>.workspace-tab-header{padding:3px 6px 0}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-tabs:not(.mod-stacked) .workspace-tab-header:is(.mod-active,.is-active)>.workspace-tab-header-inner{border-bottom:1px solid var(--interactive-accent)}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-tabs:not(.mod-stacked) .workspace-tab-header>.workspace-tab-header-inner:hover{border-bottom:1px solid var(--interactive-accent)}body:is(.theme-dark):not(.dont-make-tabs-square) .workspace-tabs:not(.mod-stacked) .workspace-tab-header>.workspace-tab-header-inner{border-bottom:1px solid var(--background-secondary)}body:is(.theme-dark):not(.dont-make-tabs-square) :is(.mod-left-split,.mod-right-split) .workspace-tab-header-container-inner{margin-bottom:0;padding-bottom:0;margin-top:0;gap:1px;padding-left:0}body:is(.theme-dark):not(.dont-make-task-brackets-purple) .cm-formatting.cm-formatting-task{color:var(--halcyon-palette-lilac)}body:is(.theme-dark):not(.dont-make-tree-icons-hover-yellow) :is(.backlinks-pane,.outgoing-link-pane) .tree-item-self:hover .tree-item-icon>svg{stroke:var(--halcyon-accent)}body:is(.theme-dark) .table-view-table>:is(thead,tbody)>tr>:is(th,td){border:1px solid var(--table-header-border-color)}body:is(.theme-dark) .modal .cm-gutters{color:var(--halcyon-accent)}body:is(.theme-dark) .modal .cm-line{color:var(--text-normal)}body:is(.theme-dark) .modal .cm-line .ͼi{color:var(--halcyon-palette-cyan)}body:is(.theme-dark) .modal .cm-line .ͼj{color:var(--halcyon-palette-orange)}body:is(.theme-dark) .modal .cm-line .ͼc{color:var(--halcyon-accent)}body:is(.theme-dark) .modal .cm-line .ͼb{color:var(--halcyon-palette-yellow)}body:is(.theme-dark) .modal .cm-line .cm-matchingBracket{color:var(--halcyon-palette-lilac)}body:is(.theme-dark) :is(.hltr-pink,mark.hltr-pink,.markdown-preview-view mark.hltr-pink){background:rgba(var(--color-pink-rgb), 65%)}body:is(.theme-dark) :is(.hltr-red,mark.hltr-red,.markdown-preview-view mark.hltr-red){background:rgba(var(--color-red-rgb), 65%)}body:is(.theme-dark) :is(.hltr-orange,mark.hltr-orange,.markdown-preview-view mark.hltr-orange){background:rgba(var(--color-orange-rgb), 65%)}body:is(.theme-dark) :is(.hltr-yellow,mark.hltr-yellow,.markdown-preview-view mark.hltr-yellow){background:rgba(var(--color-yellow-rgb), 65%)}body:is(.theme-dark) :is(.hltr-green,mark.hltr-green,.markdown-preview-view mark.hltr-green){background:rgba(var(--color-green-rgb), 65%)}body:is(.theme-dark) :is(.hltr-cyan,mark.hltr-cyan,.markdown-preview-view mark.hltr-cyan){background:rgba(var(--color-cyan-rgb), 65%)}body:is(.theme-dark) :is(.hltr-blue,mark.hltr-blue,.markdown-preview-view mark.hltr-blue){background:rgba(var(--color-blue-rgb), 65%)}body:is(.theme-dark) :is(.hltr-purple,mark.hltr-purple,.markdown-preview-view mark.hltr-purple){background:rgba(var(--color-purple-rgb), 65%)}body:is(.theme-dark).highlightr-rounded :is(mark,span.cm-highlight,.markdown-preview-view mark){padding-top:0;padding-bottom:0}body:is(.theme-dark).highlightr-realistic :is(mark,span.cm-highlight,.markdown-preview-view mark){padding-top:0;padding-bottom:0}body:is(.theme-dark).highlightr-lowlight :is(mark,span.cm-highlight,.markdown-preview-view mark){--lowlight-background: var(--background-primary);background-image:linear-gradient(0, var(--lowlight-background) 10%, rgba(var(--mono-rgb-0), 0) 10%, rgba(var(--mono-rgb-0), 0) 25%, var(--lowlight-background) 40%) !important}body:is(.theme-dark).highlightr-floating mark[class*=hltr]:last-of-type:not(mark[class*=hltr]:only-of-type){--floating-background: var(--background-primary);--floating-size: 20%;padding-bottom:.1em;background-image:linear-gradient(0, rgba(var(--mono-rgb-0), 0) var(--floating-size), var(--floating-background) var(--floating-size)) !important}body:is(.theme-dark) .markdown-source-view:is(.is-live-preview) mark{color:var(--text-normal)}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.theme-light {
+  --color-base-00: hsl(0deg 0% 100%);
+  --color-base-05: hsl(0deg 0% 95%);
+  --color-base-10: hsl(0deg 0% 90%);
+  --color-base-15: hsl(0deg 0% 85%);
+  --color-base-20: hsl(0deg 0% 80%);
+  --color-base-25: hsl(0deg 0% 75%);
+  --color-base-30: hsl(0deg 0% 70%);
+  --color-base-35: hsl(0deg 0% 65%);
+  --color-base-40: hsl(0deg 0% 60%);
+  --color-base-45: hsl(0deg 0% 55%);
+  --color-base-50: hsl(0deg 0% 50%);
+  --color-base-55: hsl(0deg 0% 45%);
+  --color-base-60: hsl(0deg 0% 40%);
+  --color-base-65: hsl(0deg 0% 35%);
+  --color-base-70: hsl(0deg 0% 30%);
+  --color-base-75: hsl(0deg 0% 25%);
+  --color-base-80: hsl(0deg 0% 20%);
+  --color-base-85: hsl(0deg 0% 15%);
+  --color-base-90: hsl(0deg 0% 10%);
+  --color-base-95: hsl(0deg 0% 5%);
+  --color-base-100: hsl(0deg 0% 0%);
+  --accent-h: 0deg;
+  --accent-s: 0%;
+  --accent-l: 40%;
+  --color-accent-hsl: var(--accent-h),
+  var(--accent-s),
+  var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: var(--color-base-70);
+  --color-accent-2: var(--color-base-80);
+  /*// Extended colors
+  --color-red
+  --color-orange
+  --color-yellow
+  --color-green
+  --color-cyan
+  --color-blue
+  --color-purple
+  --color-pink
+  --color-red-rgb
+  --color-orange-rgb
+  --color-yellow-rgb
+  --color-green-rgb
+  --color-cyan-rgb
+  --color-blue-rgb
+  --color-purple-rgb
+  --color-pink-rgb*/
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-05);
+  --background-secondary-alt: var(--color-base-10);
+  /*--background-modifier-hover
+  --background-modifier-active-hover
+  --background-modifier-border
+  --background-modifier-border-hover
+  --background-modifier-border-focus
+  --background-modifier-error-rgb
+  --background-modifier-error
+  --background-modifier-error-hover
+  --background-modifier-success-rgb
+  --background-modifier-success
+  --background-modifier-message
+  --background-modifier-form-field
+
+  // Semantic colors > Interactive colors
+  --interactive-normal
+  --interactive-hover
+  --interactive-accent
+  --interactive-accent-hsl
+  --interactive-accent-hover
+
+  // Text colors > Text foreground colors
+  --text-normal
+  --text-muted
+  --text-faint
+  --text-on-accent
+  --text-on-accent-inverted
+  --text-success
+  --text-warning
+  --text-error
+  --text-accent
+  --text-accent-hover
+
+  // Text colors > Text background colors
+  --text-selection*/
+  --text-highlight-bg: hsla(var(--color-accent-hsl), 0.3);
+  --caret-color: var(--color-base-70);
+}
+
+body {
+  --code-comment: var(--text-faint);
+  --code-string: var(--color-base-60);
+  --code-value: var(--color-base-65);
+  --code-normal: var(--text-muted);
+  --code-punctuation: var(--text-muted);
+  --code-function: var(--color-base-75);
+  --code-keyword: var(--color-base-75);
+  --code-important: var(--color-base-80);
+  --code-operator: var(--color-base-90);
+  --code-property: var(--color-base-95);
+  --code-tag: var(--color-base-100);
+  --checkbox-color: var(--text-accent);
+  --checkbox-color-hover: var(--text-accent-hover);
+  --checkbox-border-color: var(--text-accent);
+  --checkbox-border-color-hover: var(--text-accent-hover);
+}
+
+@media (hover: hover) {
+  input[type=checkbox]:checked:hover {
+    background-color: transparent;
+  }
+  input[type=checkbox]:checked:hover:after {
+    background-color: var(--checkbox-color-hover);
+  }
+}
+.ͼo.cm-focused .cm-scroller .cm-cursorLayer .cm-fat-cursor {
+  background: var(--caret-color);
+}
+
+.cm-active {
+  background: var(--background-primary-alt);
+}
+.cm-active.cm-gutterElement {
+  color: var(--text-normal);
+}
+
+/*# sourceMappingURL=theme.css.map */

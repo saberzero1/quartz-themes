@@ -1,0 +1,75 @@
+.theme-light {
+	/* Material You Tokens - Light Mode ✨☀️ */
+	--colorPrimary: hsl(var(--accent-h), 100%, 31%);
+	--colorPrimaryContainer: hsl(var(--accent-h), 100%, 93%);
+	--colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 85%);
+	--colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 91%);
+	--colorOnPrimary: white;
+	--colorBackgroundPrimary: hsl(var(--accent-h), 100%, 97%);
+	--colorBackgroundSecondary: hsla(
+		var(--accent-h),
+		var(--accent-s),
+		var(--accent-l),
+		2%
+	);
+
+	/* Navigation Items - Light Mode ✨☀️ */
+	--nav-item-color: black;
+}
+
+.theme-dark {
+	/* Material You Tokens - Dark Mode ✨🌝  */
+	--colorPrimary: hsl(var(--accent-h), 100%, 80%);
+	--colorPrimaryContainer: hsl(var(--accent-h), 100%, 10%);
+	--colorPrimaryContainerVariant: hsl(var(--accent-h), 100%, 20%);
+	--colorPrimaryContainerVariantHover: hsl(var(--accent-h), 100%, 10%);
+	--colorOnPrimary: var(--colorBackgroundSecondary);
+	--colorBackgroundPrimary: hsl(var(--accent-h), 20%, 7%);
+	--colorBackgroundSecondary: hsl(var(--accent-h), 30%, 12%);
+
+	/* Navigation Items - Dark Mode ✨🌝 */
+	--nav-item-color: white;
+}
+
+body {
+	/* Interactive */
+	--interactive-normal: hsl(var(--accent-h), 100%, 90%);
+	--interactive-accent: var(--colorPrimary);
+	--interactive-accent-hover: var(--colorPrimary);
+
+	/* Background */
+	--background-primary: var(--colorBackgroundPrimary);
+	--background-secondary: var(--colorBackgroundSecondary);
+	--background-modifier-border: transparent;
+	--titlebar-background-focused: var(--colorBackgroundSecondary);
+
+	/* Navigation */
+	--tab-background-active: var(--colorPrimaryContainerVariant);
+	--nav-item-background-hover: var(--colorPrimaryContainerVariantHover);
+	--nav-item-background-active: var(--colorPrimaryContainerVariant);
+	--text-highlight-bg: var(--colorPrimaryContainerVariant);
+
+	/* Code */
+	--code-background: var(--colorPrimaryContainer);
+	--code-normal: var(--colorPrimary);
+
+	/* Link */
+	--link-external-color: var(--colorPrimary);
+	--link-external-color-hover: var(--colorPrimary);
+
+	/* Tags */
+	--tag-color: var(--colorPrimary);
+	--tag-background: var(--colorPrimaryContainerVariant);
+	--tag-background-hover: var(--colorPrimaryContainerVariant);
+
+	/* Radius */
+	--button-radius: 100px;
+	--radius-s: 100px;
+
+	/* Toggle */
+	--toggle-thumb-color: var(--colorOnPrimary);
+
+	/* On accent */
+	--text-on-accent: var(--colorOnPrimary);
+	--text-on-accent-inverted: var(--colorOnPrimary);
+}

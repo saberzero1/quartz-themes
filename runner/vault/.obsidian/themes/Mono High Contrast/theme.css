@@ -1,0 +1,363 @@
+/* Mono High Contrast Theme */
+
+.theme-light {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-1: #666666;
+  --gray-2: #aaaaaa;
+  --primary: var(--white);
+
+  --panel-border-color: var(--primary);
+  --ribbon-background: var(--primary);
+  --background-primary: var(--primary);
+  --background-primary-alt: var(--primary);
+  --background-secondary: var(--primary);
+  --background-secondary-alt: var(--primary);
+  --background-accent: var(--black);
+  --background-modifier-border: var(--black);
+  --background-modifier-form-field: var(--white);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--black);
+  --background-modifier-error: var(--black);
+  --background-modifier-error-rgb: 0, 0, 0;
+  --background-modifier-error-hover: var(--black);
+  --background-modifier-cover: rgba(255, 255, 255, 0.8);
+  --checkbox-border-color: var(--black);
+  --checkbox-marker-color: var(--black);
+  --checklist-done-color: var(--black);
+  --code-background: #eeeeee;
+  --text-accent: var(--black);
+  --text-accent-hover: var(--gray-1);
+  --text-normal: var(--black);
+  --text-muted: var(--gray-1);
+  --text-faint: var(--gray-1);
+  --text-error: var(--black);
+  --text-error-hover: var(--black);
+  --text-highlight-bg: var(--black);
+  --text-highlight: var(--white);
+  --text-selection: var(--black);
+  --text-on-accent: var(--white);
+  --code-normal: var(--black);
+  --button-text-normal: var(--white);
+
+  --h1-color: var(--black);
+  --h2-color: var(--black);
+  --h3-color: var(--black);
+  --h4-color: var(--black);
+  --h5-color: var(--black);
+  --h6-color: var(--black);
+
+  --interactive-normal: var(--white);
+  --interactive-hover: #eeeeee;
+  --interactive-accent: var(--gray-2);
+  --interactive-accent-rgb: 0, 0, 0;
+  --interactive-accent-hover: var(--gray-1);
+  --button-interactive-normal: var(--black);
+  --scrollbar-active-thumb-bg: var(--black);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+  --nav-item-color: var(--black);
+  --nav-folder-item-color: var(--black);
+  --icon-color: var(--black);
+}
+
+/* Mono Dark High Contrast Theme */
+.theme-dark {
+  --white: #000000;
+  --black: #ffffff;
+  --gray-1: #999999;
+  --gray-2: #555555;
+  --primary: var(--white);
+
+  --panel-border-color: var(--primary);
+  --ribbon-background: var(--primary);
+  --background-primary: var(--primary);
+  --background-primary-alt: var(--primary);
+  --background-secondary: var(--primary);
+  --background-secondary-alt: var(--primary);
+  --background-accent: var(--black);
+  --background-modifier-border: var(--black);
+  --background-modifier-form-field: var(--white);
+  --background-modifier-form-field-highlighted: rgba(255, 255, 255, 0.1);
+  --background-modifier-box-shadow: rgba(255, 255, 255, 0.3);
+  --background-modifier-success: var(--black);
+  --background-modifier-error: var(--black);
+  --background-modifier-error-rgb: 255, 255, 255;
+  --background-modifier-error-hover: var(--black);
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --checkbox-border-color: var(--black);
+  --checkbox-marker-color: var(--black);
+  --checklist-done-color: var(--black);
+  --code-background: #111111;
+  --text-accent: var(--black);
+  --text-accent-hover: var(--gray-1);
+  --text-normal: var(--black);
+  --text-muted: var(--gray-1);
+  --text-faint: var(--gray-1);
+  --text-error: var(--black);
+  --text-error-hover: var(--black);
+  --text-highlight-bg: var(--white);
+  --text-highlight: var(--black);
+  --text-selection: var(--black);
+  --text-on-accent: var(--white);
+  --code-normal: var(--black);
+  --button-text-normal: var(--white);
+
+  --h1-color: var(--black);
+  --h2-color: var(--black);
+  --h3-color: var(--black);
+  --h4-color: var(--black);
+  --h5-color: var(--black);
+  --h6-color: var(--black);
+
+  --interactive-normal: var(--white);
+  --interactive-hover: #111111;
+  --interactive-accent: var(--gray-2);
+  --interactive-accent-rgb: 255, 255, 255;
+  --interactive-accent-hover: var(--gray-1);
+  --button-interactive-normal: var(--black);
+  --scrollbar-active-thumb-bg: var(--black);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.2);
+  --nav-item-color: var(--black);
+  --nav-folder-item-color: var(--black);
+  --icon-color: var(--black);
+}
+
+/* Fonts */
+body {
+  --font-interface: "FuraMono Nerd Font", monospace;
+  -webkit-font-smoothing: auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+.view-header-title {
+  font-weight: 600;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  color: var(--text-normal);
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+}
+
+/* Links */
+a,
+.markdown-preview-view .internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+a:hover,
+.markdown-preview-view .internal-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration: underline;
+}
+
+/* Code blocks and inline code */
+.markdown-rendered code,
+.cm-s-obsidian .cm-inline-code {
+  color: var(--code-normal);
+  background-color: var(--code-background);
+  font-family: var(--font-monospace);
+  padding: 0 4px;
+  border-radius: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 0.5px solid var(--background-modifier-border);
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+/* Tables */
+.markdown-rendered table {
+  border: 0.5px solid var(--background-modifier-border);
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 0.5px solid var(--background-modifier-border);
+  padding: 6px 13px;
+  font-size: 0.9em;
+}
+
+/* Checkboxes */
+.task-list-item-checkbox {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0 !important;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: var(--interactive-accent);
+}
+
+/* Graph view */
+.graph-view.color-fill {
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-circle {
+  color: var(--text-normal);
+}
+
+.graph-view.color-line {
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+  color: var(--text-normal);
+}
+
+/* Buttons */
+button {
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+}
+
+button:hover {
+  background-color: var(--interactive-hover);
+}
+
+/* Tooltips */
+.tooltip {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  border: 0.5px solid var(--background-modifier-border);
+}
+
+/* Highlight styles */
+.markdown-preview-view mark,
+.cm-s-obsidian span.cm-highlight,
+.cm-s-obsidian span.cm-formatting-highlight,
+.markdown-rendered mark {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+  padding: 4px;
+  border-radius: 0;
+}
+
+/* Dark mode overrides */
+.theme-dark .markdown-preview-view mark,
+.theme-dark .cm-s-obsidian span.cm-highlight,
+.theme-dark .cm-s-obsidian span.cm-formatting-highlight,
+.theme-dark .markdown-rendered mark {
+  background-color: #ffffff;
+  color: #000000 !important;
+}
+
+/* Text selection colors */
+::selection {
+  background-color: var(--text-highlight-bg) !important;
+  color: var(--text-highlight) !important;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: var(--text-highlight-bg) !important;
+  color: var(--text-highlight) !important;
+}
+
+/* For Code Mirror editor */
+.cm-s-obsidian .CodeMirror-selected,
+.CodeMirror-selected {
+  background-color: var(--text-highlight-bg) !important;
+}
+
+.cm-s-obsidian .CodeMirror-line::selection,
+.cm-s-obsidian .CodeMirror-line > span::selection,
+.cm-s-obsidian .CodeMirror-line > span > span::selection {
+  background-color: var(--text-highlight-bg) !important;
+  color: var(--text-highlight) !important;
+}
+
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+  background-color: var(--text-highlight-bg) !important;
+  color: var(--text-highlight) !important;
+}
+
+/* Dark mode text selection overrides */
+.theme-dark ::selection {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-dark ::-moz-selection {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-dark .cm-s-obsidian .CodeMirror-selected,
+.theme-dark .CodeMirror-selected {
+  background-color: #ffffff !important;
+}
+
+.theme-dark .cm-s-obsidian .CodeMirror-line::selection,
+.theme-dark .cm-s-obsidian .CodeMirror-line > span::selection,
+.theme-dark .cm-s-obsidian .CodeMirror-line > span > span::selection {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-dark .CodeMirror-line::-moz-selection,
+.theme-dark .CodeMirror-line > span::-moz-selection,
+.theme-dark .CodeMirror-line > span > span::-moz-selection {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* File explorer style - make files in folders have opacity 0.8 */
+.nav-folder-children .nav-file-title {
+  opacity: 0.5;
+  transition: opacity ease-in-out;
+}
+
+.nav-folder-children .nav-file-title:hover,
+.nav-folder-children .nav-file-title.is-active {
+  opacity: 1;
+}
+
+/* Side bar (Search Result) Highlight Fix */
+
+.search-result-file-matched-text {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+}
+
+.search-result-file-match.tappable:hover {
+  background-color: rgba(0,0,0,0.07);
+}
+
+/* Theme search result highlight fix */
+
+.suggestion-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+}
+
+/* Flashing text highlight fix*/
+
+.is-flashing {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+  border-radius: 0;
+}

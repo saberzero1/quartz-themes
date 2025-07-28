@@ -1,0 +1,58 @@
+.theme-dark{
+  --background-primary: #181a1b;
+  --background-secondary: #181a1b;
+  --background-secondary-alt: #181a1b;
+
+  --text-normal: #CCBA8D;
+  --text-muted: #CCBA8D;
+  --text-faint: #FF1493;
+  
+  --text-accent: #32CD32;
+  --text-accent-hover: #FF5C8F;
+  --text-selection: #29502e;
+  --text-highlight-bg: #29502e;
+}
+
+.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title ,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title{
+    color: #FF1493;
+
+}
+.markdown-preview-view a {
+    color: #32CD32;
+}
+
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.graph-view.color-fill,
+.markdown-preview-view a:hover  {
+  color: #FFD700;
+}
+
+
+.workspace-tab-header .workspace-tab-header-inner-title,
+.graph-view.color-fill-unresolved,
+.graph-view.color-arrow {
+  color: #CCBA8D;
+}
+
+.graph-view.color-line {
+  opacity: 0.7;
+  color: #2B8B98;
+}
+
+strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
+	color: #9589e1;
+}

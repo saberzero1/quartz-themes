@@ -1,0 +1,118 @@
+:root
+{
+    /* automatic color name from gpick */
+    --almost-black:       #1c1c1c; /* background main              */
+    --dark-grey:          #242424; /* menu background and border   */
+    --charcoal-grey:      #585858; /* graph line                   */
+    --carolina-blue:      #87afff; /* arrow, list, bullet point    */
+    --putty:              #cebd9e; /* text menu                    */
+    --silver:             #cccccc; /* text                         */
+    --peach-pale:         #ebcb8b; /* graph node, tag, code text   */
+    --eggshell:           #ffffd7; /* titles, text menu focus, tag */
+    --light-maroon:       #bf616a; /* graph tag, menu focus        */
+    --clay:               #d08770; /* links                        */
+
+    --peach-pale_30:      #ebcb8b30; /* peach-pale with 30% opacity */
+    --peach-pale_10:      #ebcb8b10; /* peach-pale with 10% opacity */
+}
+
+body
+{
+    /* peach-pale for the accent (button color) */
+    --accent-h: 40;
+    --accent-s: 71%;
+    --accent-l: 73%;
+
+    --link-decoration:                none;
+    --link-decoration-hover:          none;
+    --link-external-decoration:       none;
+    --link-external-decoration-hover: none;
+
+    --tag-decoration:                 none;
+    --tag-decoration-hover:           underline;
+    --tag-padding-x:                  .5em;
+    --tag-padding-y:                  .2em;
+    --tag-radius:                     .5em;
+}
+
+.theme-dark
+{
+    --background-primary:            var(--almost-black);
+    --background-primary-alt:        var(--almost-black);
+    --background-secondary:          var(--dark-grey);
+    --background-secondary-alt:      var(--dark-grey);
+    --background-modifier-border:    var(--dark-grey);
+
+    --cursor-line-background:        var(--charcoal-grey);
+
+    --text-normal:                   var(--silver);
+    --text-faint:                    var(--carolina-blue);
+    --text-muted:                    var(--putty);
+
+    --h1-color:                      var(--eggshell);
+    --h2-color:                      var(--eggshell);
+    --h3-color:                      var(--eggshell);
+    --h4-color:                      var(--eggshell);
+    --h5-color:                      var(--eggshell);
+    --h6-color:                      var(--eggshell);
+
+    --text-highlight-bg:             var(--peach-pale_30);
+    --text-highlight-fg:             var(--eggshell);
+
+    --text-accent:                   var(--clay);
+    --text-accent-hover:             var(--eggshell);
+
+    --tag-color:                     var(--eggshell);
+    --tag-background:                var(--dark-grey);
+    --tag-background-hover:          var(--dark-grey);
+
+    --titlebar-text-color-focused:   var(--light-maroon);
+
+    --inline-title-color:            var(--peach-pale);
+
+    --bold-color:                    var(--peach-pale);
+    --italic-color:                  var(--peach-pale);
+
+    --checkbox-color:                var(--peach-pale);
+    --checkbox-color-hover:          var(--peach-pale);
+    --checkbox-border-color:         var(--peach-pale);
+    --checkbox-border-color-hover:   var(--peach-pale);
+    --checklist-done-color:          var(--silver);
+
+    --table-header-background:       var(--peach-pale_10);
+    --table-header-background-hover: var(--peach-pale_30);
+    --table-row-background:          var(--dark-grey);
+    --table-row-background-hover:    var(--peach-pale_30);
+
+    --text-selection:                var(--peach-pale_30);
+
+    --code-normal:                   var(--peach-pale);
+    --code-background:               var(--dark-grey);
+
+    --icon-color-hover:              var(--light-maroon);
+    --icon-color-focused:            var(--eggshell);
+
+    --nav-item-color-hover:          var(--light-maroon);
+    --nav-item-color-active:         var(--eggshell);
+    --nav-file-tag:                  var(--peach-pale));
+
+    --graph-line:                    var(--charcoal-grey);
+    --graph-node:                    var(--peach-pale);
+    --graph-node-tag:                var(--light-maroon);
+    --graph-node-attachment:         var(--carolina-blue);
+
+    --tab-text-color-focused-active:         var(--eggshell);
+    --tab-text-color-focused-active-current: var(--light-maroon);
+}
+
+
+.search-result-file-matched-text
+{
+    color: var(--text-highlight-fg) !important;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    color: var(--text-accent);
+    text-decoration: underline;
+}

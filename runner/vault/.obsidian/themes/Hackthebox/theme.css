@@ -1,0 +1,788 @@
+body {
+  /* --radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px; */
+  /* font family  */
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+svg * {
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  /* rx: 0;
+	ry: 0; */
+  /* supress warning  */
+}
+
+.menu {
+  padding: var(--size-2-1);
+}
+
+.menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* BEGIN  */
+
+/* The plan is to look as much as possible to https://academy.hackthebox.com/ and to HTB vscode theme  */
+/* i will be skipping some css to do later or that i do not find interesting  */
+/* background color  */
+.theme-dark {
+  color: #a4b1cd;
+
+  /* color of text normal */
+  --htb-text-color: #a4b1cd;
+
+  /* theme bg and secondery bg  */
+  --background-primary: #141d2b;
+  --background-secondary: #1a2331;
+  /* main color to grab attention  */
+  --htb-lime: #9fef00;
+
+  /* heading */
+  --htb-heading: #cad2e2;
+  /* drivider */
+  --htb-divider-color: #1a2332;
+  /* border */
+  --htb-border: #4a5466;
+}
+
+/* same color copy paste from dark because htb has no light theme  */
+.theme-light {
+  color: #a4b1cd;
+
+  --htb-text-color: #a4b1cd;
+  /* theme bg and secondery bg  */
+  --background-primary: #1a2331;
+  --background-secondary: #141d2b;
+  --htb-lime: #9fef00;
+  --htb-heading: #cad2e2;
+  --htb-divider-color: #1a2332;
+  --htb-border: #4a5466;
+}
+
+/* basically the same but swapped the bg primary and secondery */
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================COMPONENTS================================================ */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* button  */
+body {
+  --button-radius: 4px;
+}
+
+/* button {
+  color: white !important;
+} */
+
+/* .theme-light .setting-item button {
+  --text-on-accent: white !important;
+  --interactive-normal: var(--htb-border) !important;
+  color: var(--text-on-accent) !important;
+} */
+
+/* .theme-light {
+  --interactive-hover: var(--background-primary);
+  --interactive-normal: var(--htb-border);
+} */
+
+/* .setting-item button.mod-cta {
+  color: black !important;
+} */
+
+/* checkbox */
+body {
+  --checkbox-radius: 3px;
+}
+
+/* color input(skip) */
+/* Dialog (skip)*/
+/* Dragging*/
+body {
+  --drag-ghost-background: var(--htb-lime);
+  --drag-ghost-text-color: black;
+}
+
+/* when dargging a new small window appears that shows name  */
+
+/* dropdown  */
+body {
+  --dropdown-background: var(--htb-border);
+  --dropdown-background-hover: var(--background-secondary);
+}
+
+.dropdown {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  color: var(--htb-heading);
+  /* color: white; */
+}
+
+/* Indentation skip  */
+/* modal*/
+body {
+  --modal-radius: 10px;
+}
+
+/* Multi-select skip  */
+/* navigation*/
+body {
+  --nav-item-color: var(--htb-text-color);
+  /* --nav-indentation-guide-color:var(--htb-lime); */
+}
+
+/* Popover skip  */
+/* propmt skip  */
+/* slider skip  */
+/* tabs  */
+body {
+  --tab-text-color: var(--htb-heading);
+  --tab-radius-active: 5px 5px 0px 0px;
+  --tab-text-color-focused: var(--htb-border);
+}
+
+/* text input  */
+body {
+  --input-radius: 5px;
+}
+
+/* toggle  */
+body {
+  --toggle-radius: 999px;
+  --toggle-thumb-radius: 999px;
+}
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================EDITOR==================================================== */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+
+/* editor  */
+/* block  (skip) */
+/* --------------------------- golam old css-------------------------- */
+/* blockquote */
+/* body {
+	--blockquote-background-color: var(--background-secondary);
+	--blockquote-border-thickness: 2px;
+	--blockquote-border-color: var(--htb-lime);
+	--blockquote-font-style: normal;
+	--blockquote-color: inherit;
+} */
+
+.mod-empty-attachment {
+  background-color: var(--background-secondary);
+  color: #ff8484 !important;
+}
+
+/* --------------------------- golam old css-------------------------- */
+
+/* --------------------------- 0xdtc new css-------------------------- */
+body {
+  /* Shared blockquote styles */
+  --blockquote-background-color: #0b121f;
+  --blockquote-border-thickness: 4px;
+  --blockquote-border-color: var(--htb-lime);
+  --blockquote-font-style: italic !important;
+  --blockquote-color: inherit;
+  --blockquote-padding: 10px;
+  --blockquote-border-radius: 5px;
+}
+
+/* Blockquote styling for Read Only mode */
+.el-blockquote > blockquote {
+  background-color: var(--blockquote-background-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
+  color: var(--blockquote-color);
+  font-style: var(--blockquote-font-style);
+  border-radius: var(--blockquote-border-radius);
+  padding: var(--blockquote-padding);
+}
+
+/* Blockquote styling for Live Preview mode */
+div.HyperMD-quote {
+  background-color: var(--blockquote-background-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
+  color: var(--blockquote-color);
+  font-style: italic !important;
+  padding: var(--blockquote-padding) !important;
+  border-radius: var(--blockquote-border-radius);
+  text-indent: 0px !important;
+}
+
+/* --------------------------- 0xdtc new css-------------------------- */
+
+/* callout  */
+/* body {
+
+} */
+
+.callout-content {
+  border-radius: 7px;
+}
+
+/* removes the annoying box (square) shadow on hover for rounded callouts */
+.cm-embed-block.cm-callout:hover {
+  box-shadow: none !important;
+}
+
+/* code  */
+body {
+  /* htb vscode theme  */
+  --code-background: var(--background-secondary);
+  /* now look we can't give it the same bg as vscode has because then it wont stand out  */
+  /* so i am using seconder one  */
+  /* if you have better ideas do tell me  */
+  --code-normal: #a4b1cd;
+  --code-comment: #c5d1eb;
+  --code-function: #ffcc5c;
+  --code-important: #ffaf00;
+  --code-keyword: #cf8dfb;
+  --code-operator: #ff8484;
+  --code-property: #a4b1cd;
+  --code-punctuation: #a4b1cd;
+  --code-string: #c5f467;
+  --code-tag: #ffaf00;
+  --code-value: #5cb2ff;
+  --code-attribute: #ff3e3e;
+  --code-func-name: #2e6cff;
+  /* for lack of a better name */
+  --code-white-space: pre;
+  --code-size: var(--code-size);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--code-comment);
+}
+
+.token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  color: var(--code-attribute);
+}
+
+.token.function-name {
+  color: var(--code-func-name);
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  color: var(--code-important);
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: var(--code-function);
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: var(--code-operator);
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: var(--code-string);
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: var(--code-value);
+}
+
+.token.important,
+.token.bold {
+  font-weight: 700;
+}
+
+.token.inserted {
+  color: var(--htb-lime);
+}
+
+.cm-comment {
+  color: var(--code-comment);
+  /* font-style: italic; */
+}
+
+.cm-punctuation,
+.cm-bracket,
+.cm-hr {
+  color: var(--code-punctuation) !important;
+}
+
+.cm-link {
+  color: var(--code-property);
+}
+
+.cm-qualifier,
+.cm-string,
+.cm-variable-2,
+.cm-def {
+  color: var(--code-string);
+}
+
+.cm-tag,
+.cm-attribute {
+  color: var(--code-attribute);
+}
+
+.cm-number,
+.cm-atom {
+  color: var(--code-important);
+}
+
+.cm-keyword,
+.cm-builtin,
+.cm-operator {
+  color: var(--code-operator);
+}
+
+.cm-property,
+.cm-type {
+  color: var(--code-function);
+}
+
+.cm-inline-code,
+.cm-math,
+.cm-variable,
+.cm-variable-3,
+.cm-meta {
+  color: var(--code-normal);
+}
+
+.cm-operator,
+.cm-string-2 {
+  color: var(--code-value);
+}
+
+/* inline code has color lime and non inline code has normal code color for reading mode */
+code {
+  color: var(--htb-lime) !important;
+  background-color: transparent !important;
+  font-size: calc(var(--font-text-size) * 0.875) !important;
+  padding: 0 0 !important;
+}
+
+code[data-line="0"] {
+  color: var(--code-normal) !important;
+  font-size: calc(var(--font-text-size) * 0.875) !important;
+}
+
+/* the inline `code` goes away and a span tag replaces that in editing mode */
+span.cm-inline-code {
+  color: var(--htb-lime) !important;
+  background-color: transparent !important;
+  font-size: calc(var(--font-text-size) * 0.875) !important;
+  padding: 0 0 !important;
+}
+
+.HyperMD-codeblock {
+  font-size: calc(var(--font-text-size) * 0.875) !important;
+}
+
+/* embed  */
+body {
+  --embed-background: var(--background-secondary);
+}
+
+/* file skkip */
+/* footnote skip */
+/* heading  */
+body {
+  /* htb academy headings all same color */
+  --h1-color: var(--htb-heading);
+  --h2-color: var(--htb-heading);
+  --h3-color: var(--htb-heading);
+  --h4-color: var(--htb-heading);
+  --h5-color: var(--htb-heading);
+  --h6-color: var(--htb-heading);
+  /* size */
+  --h1-size: 2em;
+  --h2-size: 1.6em;
+  --h3-size: 1.37em;
+  --h4-size: 1.25em;
+  --h5-size: 1.12em;
+  --h6-size: 1.12em;
+  /* weight  */
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 700;
+  --h6-weight: 700;
+}
+
+/* horizontal rule  */
+
+body {
+  --hr-color: var(--htb-divider-color);
+}
+
+/* inline title  */
+body {
+  --inline-title-color: var(--htb-heading);
+}
+
+/* links  */
+body {
+  /* this is for notes that exist on obsidian as in resolved */
+  /* the method here is obsidian links are lime as in other htb notes */
+  /* links that dont exist are blue because academy colors them blue */
+  /* unresolved links are red (from the code) because they dont exist (like wikipedia) */
+  /* added hover color because it changes othewise and there is no unresolve hover that uses default */
+  /* on hover it sometimes is overwritten hence !important */
+  --link-color: var(--htb-lime);
+  --link-color-hover: var(--htb-lime) !important;
+  --link-decoration: normal;
+  --link-decoration-hover: underline !important;
+  /* non existing note as in unresolved */
+  --link-unresolved-color: #ff8484;
+  /* non obsidian links as in external  */
+  --link-external-color: #007bff !important;
+  --link-external-color-hover: #007bff !important;
+  --link-external-decoration-hover: underline !important;
+  --link-external-decoration: normal;
+}
+
+/* lists  */
+body {
+  /* confused here if i follow academy or just do lime */
+  --list-marker-color: var(--htb-lime);
+  --list-marker-color-collapsed: #cad2e2;
+  --list-bullet-transform: none;
+  --list-numbered-style: decimal;
+  --list-spacing: 2px;
+  --list-bullet-size: 7px;
+}
+
+.cm-formatting-list-ul {
+  margin: 2px;
+}
+
+.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+  margin-left: 10px;
+}
+
+/* weird fix but the ul items were looking bad so i fix with manual css since no docs for it  */
+
+/* metadata as in properties */
+body {
+  --metadata-background: inherit;
+  --metadata-label-text-color: var(--htb-heading);
+  --metadata-input-background-active: var(--background-secondary);
+  --background-modifier-form-field: var(--background-secondary);
+}
+
+.metadata-property-icon {
+  color: var(--htb-lime);
+  /* icons on metadata*/
+}
+
+.metadata-add-button.text-icon-button {
+  color: var(--htb-lime);
+  /* this is add property button  */
+}
+
+/*.metadata-properties-title {
+	color:var(--htb-lime); not sure  if i do lime or not 
+	color: var(--htb-lime);
+	this is the property text  
+	did not combine them 3 for readability 
+} */
+
+/* table  */
+body {
+  --table-border-width: 2px;
+  --table-header-color: var(--htb-heading);
+  --table-text-color: var(--htb-text-color);
+  /* --table-border-color: var(--htb-text-color) !important; */
+  --table-border-color: var(--htb-border) !important;
+
+  /* i mean for real i was expectine padding property but it does not exist	 */
+  --table-row-alt-background: var(--background-secondary);
+  --table-column-alt-background: var(var(--background-secondary));
+}
+
+/* Fix the borders and add a radius variable */
+:root table {
+  --table-border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Add the radius */
+th:first-child {
+  border-top-left-radius: var(--table-border-radius);
+}
+
+th:last-child {
+  border-top-right-radius: var(--table-border-radius);
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: var(--table-border-radius);
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: var(--table-border-radius);
+}
+
+/* Redo the borders */
+:root :is(td, th) {
+  border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+}
+
+/* tags  */
+/* body { */
+/* --tag-color: var(--htb-lime); */
+/* imo looks good enough skip */
+/* } */
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================FOUNDATIONS=============================================== */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+
+/* border  */
+body {
+  --border-width: 2px;
+}
+
+/*colors*/
+body {
+  --accent-h: 80;
+  --accent-s: 100%;
+  --accent-l: 47%;
+  --accent-a: 1;
+  /* this thing resolved to the htb lime color  */
+  --background-primary-alt: var(--background-secondary);
+  --background-modifier-border: var(--htb-border);
+  --background-modifier-border-hover: var(--htb-border);
+  --background-modifier-border-focus: none;
+  --background-modifier-error: var(--code-operator);
+  --background-modifier-success: var(--code-string);
+  --background-modifier-message: var(--background-primary);
+  /* interactive  */
+  --interactive-normal: var(--htb-border) !important;
+  --interactive-hover: var(--background-secondary);
+  /* --interactive-accent: ;no need because of hsl */
+  /* text colors  */
+  --text-normal: #a4b1cd;
+  --text-muted: var(--htb-text-color);
+  --text-faint: var(--htb-heading);
+  --text-on-accent: var(--background-primary);
+  /* search results highlighted for example if u search x then it will highlight x  */
+  --text-highlight-bg: var(--htb-lime) !important;
+  /* when you highlight or select text inside editor then its BG */
+  --text-selection: var(--htb-lime) !important;
+  /* cursor color */
+  --caret-color: var(--htb-lime);
+}
+
+button {
+  --text-normal: var(--htb-heading) !important;
+  /* --text-normal: white; */
+}
+
+.is-flashing {
+  color: black;
+}
+
+/* Highlight or slects text font color meaning inside the highlighted part  */
+::selection {
+  color: var(--text-on-accent);
+}
+
+/* For keeping a part highlighted #Might have issues or break something */
+span.cm-highlight {
+  color: var(--text-on-accent) !important;
+}
+
+/* so this is for text inside the selection i was starting to think why no css class for it  */
+
+span.search-result-file-matched-text {
+  --text-normal: black;
+}
+
+.search-result-file-match:hover {
+  --text-normal: black;
+}
+
+div.search-result-hover-button > svg {
+  fill: black;
+}
+
+/* cursor*/
+/* icons */
+body {
+  --icon-color: var(--htb-text-color);
+  --icon-color-active: red !important;
+  --icon-color-focused: var(--htb-lime);
+  --icon-color-hover: var(--htb-heading);
+}
+
+.mod-left-split .mod-top-left-space .workspace-tab-header.tappable.is-active {
+  background-color: var(--htb-lime);
+}
+
+.mod-top-left-space .workspace-tab-header.tappable.is-active svg {
+  font-weight: 700;
+  stroke: black;
+  stroke-width: 2;
+}
+
+/* layer skip as well  */
+/* radius  */
+body {
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+}
+
+/* spacing skip  */
+/* Typography   skip TODO later */
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================PLUGINS=================================================== */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* canvas    */
+body {
+  --canvas-background: var(--background-secondary);
+}
+
+/* file explorer */
+body {
+  --vault-name-color: var(--htb-lime);
+}
+
+/* graph  */
+body {
+  --graph-line: #4a5466;
+  --graph-node-focused: var(--htb-lime);
+  --graph-text: var(--htb-text-color);
+  --graph-node: var(--htb-heading);
+  --graph-node-unresolved: var(--code-normal);
+}
+
+/* search  */
+body {
+  --search-icon-color: var(--htb-text-color) !important;
+  --search-clear-button-color: var(--htb-text-color);
+  --search-result-background: var(--background-primary);
+}
+
+/* sync skip  */
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================WINDOW==================================================== */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+
+/* divider  */
+body {
+  /* --divider-color: var(--background-secondary); */
+  --divider-color: var(--htb-border);
+  /* will need to come back to this */
+  --divider-color-hover: var(--htb-lime);
+  --divider-width: 1px;
+  --divider-width-hover: 3px;
+}
+
+/* ribbon  skip*/
+/* scrllbar  */
+body {
+  --scrollbar-active-thumb-bg: var(--htb-lime);
+}
+
+/* sidebar  skip*/
+/* status bar  */
+body {
+  --status-bar-background: var(--background-secondary);
+  --status-bar-text-color: var(--htb-text-color);
+}
+
+/* vault profile skip  */
+
+/* window frame  */
+/* Settings → Appearance → Window frame style to Obsidian frame. */
+body {
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --titlebar-text-color: var(--htb-heading);
+  --titlebar-text-color-focused: var(--htb-heading);
+}
+
+/* Workspace skip */
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* =============================================PUBLISH(skip)============================================= */
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+
+/* some manual corrections  */
+body {
+  --color-base-25: var(--background-secondary) !important;
+  --color-base-40: transparent !important;
+
+  --color-base-35: transparent !important;
+  --color-base-50: var(--htb-heading) !important;
+}
+
+.vertical-tab-header-group-title {
+  color: var(--htb-lime);
+}
+
+/* animation  */
+/* todo later */
+/*
+.workspace .tappable.is-active.mod-active svg{
+	fill:var(--htb-text-color);
+}
+div.workspace-tab-header-inner-close-button svg{
+	stroke:var(--htb-text-color) !important;
+}*/

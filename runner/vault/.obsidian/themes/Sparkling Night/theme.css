@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+/** -----------------------------------------------------------------------
+    _____                  _    _ _               _   _ _       _     _   
+    / ____|                | |  | (_)             | \ | (_)     | |   | |  
+   | (___  _ __   __ _ _ __| | _| |_ _ __   __ _  |  \| |_  __ _| |__ | |_ 
+    \___ \| '_ \ / _` | '__| |/ / | | '_ \ / _` | | . ` | |/ _` | '_ \| __|
+    ____) | |_) | (_| | |  |   <| | | | | | (_| | | |\  | | (_| | | | | |_ 
+    |_____/| .__/ \__,_|_|  |_|\_\_|_|_| |_|\__, | |_| \_|_|\__, |_| |_|\__|
+          | |                               __/ |           __/ |          
+          |_|                              |___/           |___/           
+          
+  —— Version 1.0.0
+  —— Made by Isax785
+  Changelog here: 
+------------------------------------------------------------------------- */
+
+/* :root {
+  --default-font: Calibri;
+  --h1-font: Times;
+  --font-monospace: Courier;
+  --code-mono-font:  'OperatorMonoSSmLig-Book';;
+} */
+
+:root {
+    --white: #FCFCFC;
+    /* --raisin-black: #1b1825; */
+    --raisin-black: #16141f;
+    --rich-black: #121019;
+    --dark-purple: #242032;
+    --dark-purple-light: #413a58;
+    --bright-green: #5AFF15;
+    --tropical-indigo: #8B80F9;
+    --tropical-indigo-light: #A69EFA; 
+    --robin-egg-blue: #19D8D5;
+    --cool-gray: #7C809B;
+    --french-gray : #D1D2DC; /*cool gray light*/
+    --white-smoke: #F5F5F5;
+    --ylmn-blue: #375BA9; 
+    --mint: #13C4A3; 
+    --anti-flash-white: #EBEBEB;
+    --folly: #FF3366;
+    --gold: rgb(253, 233, 9);
+    --line-width: 750px;
+  }
+
+.theme-dark, .theme-light {
+    --file-line-width: var(--line-width);
+    /* Line color */
+    --tab-divider-color: var(--dark-purple-light);
+    --tab-outline-color: var(--dark-purple-light);
+    --divider-color: var(--dark-purple-light);
+    /* Background */
+    --background-primary: var(--rich-black);
+    --background-secondary: var(--raisin-black);
+    --background-secondary-alt: var(--raisin-black);
+    --background-code: var(--grey);
+
+    /* Text */
+    --text-normal: var(--white);
+    --text-accent: var(--bright-green);
+    --text-selection: var(--tropical-indigo-light);
+    
+    --text-header: var(--tropical-indigo);
+    
+    --h1-color: var(--tropical-indigo);
+    --h1-gradient-start: transparent;
+    --h1-gradient-mid: var(--tropical-indigo);
+    --h1-gradient-end: transparent;
+    
+    --h2-color: var(--tropical-indigo);
+    --h2-gradient-start: var(--tropical-indigo);
+    --h2-gradient-end: transparent;
+
+    --h3-color: var(--tropical-indigo);
+    --h4-color: var(--tropical-indigo);
+    --h5-color: var(--tropical-indigo);
+    --h6-color: var(--tropical-indigo);
+
+    /* bar */
+    --bar-gradient-start: transparent;
+    --bar-gradient-mid: var(--bright-green);
+    --bar-gradient-end: transparent;
+
+    /* bold, Italic, Underline */
+
+    --strong: var(--robin-egg-blue);
+    /* --italic: var(--robin-egg-blue); */
+    --underline-text-color: var(--white);
+    --underline-line-color: var(--bright-green);
+    --underline-line-thickness: 0.15em;
+
+    /* Code */
+    --codeblock-background: var(--dark-purple);
+    --codeblock-color: var(--white);
+    --inline-code-background: var(--dark-purple);
+    --inline-code-color: var(--bright-green);
+    --code-variable-color: var(--white);
+    --code-function-color: var(--bright-green);
+    --code-builtin-color: var(--tropical-indigo);
+    --code-string-color: var(--robin-egg-blue);
+    --code-operator-color: var(--bright-green);
+    --code-comment-color: var(--cool-gray);
+    --code-text-size: 0.9em;
+
+    /* Tags */
+    --tags-background: var(--dark-purple);
+    --tags-color: var(--robin-egg-blue);
+
+    /* List Markers  */
+    --list-marker-color: var(--white);
+    --list-marker-color-hover: var(--bright-green);
+
+    /* Checkboxes */
+    --checkbox-marker-color: var(--white);
+    --radius-s: 3px;
+    --interactive-accent: var(--tropical-indigo); /*marked color*/
+    --checklist-done-color: var(--cool-gray);
+    --checkbox-border-color: var(--cool-gray);
+    --checkbox-border-color-hover: var(--bright-green);
+    --checkbox-color-hover: var(--bright-green);
+    --checklist-done-decoration: none;
+
+    /* Quotes */
+    --quote-background: var(--dark-purple);
+    /* --quote-style: italic; */
+
+    /* Links */
+    --link-text-shadow: var(--raisin-black);
+    --link-text-color: var(--white);
+    --link-text-color-hover: var(--tropical-indigo);
+    --link-ext-color: var(--tropical-indigo);
+    --link-int-color: var(--robin-egg-blue);
+    --link-url-text-color: var(--tropical-indigo);
+
+    /* Explorer */
+    --folder-title-color: var(--white);
+    --file-title-color: var(--white);
+    --folder-filter: invert(30%) sepia(99%) saturate(1210%) hue-rotate(51deg) brightness(120%) contrast(100%);
+
+    /* Progress Bar Loading */
+    --progress-bar-color: var(--tropical-indigo);
+
+    /* Highlight */
+    --highlight-background-color: var(--bright-green);
+    --highlight-text-color: var(--dark-purple);
+    --highlight-text-shadow: var(--text-normal);    
+
+    /* Search and Find */
+    --search-result-background: var(--tropical-indigo);
+    --find-flashing: var(--bright-green);
+}
+
+
+/* ----------- Font ----------- */
+
+/* working progress */
+
+/* ----------- Text ----------- */
+
+.markdown-source-view.mod-cm6 .cm-line {    
+    padding-top: 0em;
+    padding-bottom: 0.3em;
+}
+
+/* ----------- Titles ----------- */
+
+.HyperMD-header-1, .HyperMD-header.HyperMD-header-1.cm-line, h1 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 0.1em solid transparent;
+    border-image: linear-gradient(0.25turn, 
+                  var(--h1-gradient-start) 5%, 
+                  var(--h1-gradient-mid) 50%,
+                  var(--h1-gradient-end) 96%);
+    border-radius: 3px;
+    border-image-slice: 1;
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
+  }
+  
+  .HyperMD-header-2, .HyperMD-header.HyperMD-header-2.cm-line, h2 {
+    text-align: left;
+    width: 100%;
+    border-bottom: 0.05em solid transparent;
+    border-image: linear-gradient(0.25turn, 
+    var(--h2-gradient-start) 0%,
+    var(--h2-gradient-end) 60%);
+    border-radius: 3px;
+    border-image-slice: 1;
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
+}
+
+.HyperMD-header-3, .HyperMD-header.HyperMD-header-3.cm-line, h3 {
+  padding-top: 0.3em!important;
+  margin-top: 0.3em!important;
+  margin-bottom: 0.3em!important;
+}
+
+.cm-header.cm-header-1.cm-inline-code,
+.cm-header.cm-header-2.cm-inline-code{
+  font-size: var(--code-text-size)!important;
+}
+
+.cm-header.cm-header-3.cm-inline-code,
+.cm-header.cm-header-4.cm-inline-code,
+.cm-header.cm-header-5.cm-inline-code,
+.cm-header.cm-header-6.cm-inline-code{
+  font-size: var(--code-text-size)!important;
+}
+/* ----------- Bar ----------- */
+
+.cm-line hr,
+.markdown-preview-view hr {
+  margin-block-start: 1em;
+  margin-block-end: 1.2em;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 0.1em;
+  border-image-source: linear-gradient(0.25turn, 
+                                       var(--bar-gradient-start) 2%, 
+                                       var(--bar-gradient-mid) 50%,
+                                       var(--bar-gradient-end) 98%);
+}
+
+/* ----------- Lists ----------- */
+
+.mod-cm6 .HyperMD-list-line.cm-line {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ordered */
+ol,
+ol ol,
+ol ol ol,
+ol ol ol ol
+{
+    list-style-type: lower-roman;
+}
+
+/* unordered */
+ul,
+ul ul,
+ul ul ul {
+    list-style-type: square;
+}
+
+/* ----------- Checkboxes ----------- */
+
+:is(.HyperMD-task-line[data-task="/"],
+.HyperMD-task-line[data-task=">"],
+.HyperMD-task-line[data-task="-"],
+.HyperMD-task-line[data-task="<"]) .task-list-item-checkbox::after {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-color: transparent;
+}
+
+.HyperMD-task-line[data-task="/"] .task-list-item-checkbox,
+.HyperMD-task-line[data-task="/"] .task-list-item-checkbox:hover {
+  background-color: var(--folly);
+  border-color: var(--checkbox-border-color);
+  text-decoration: none;
+}
+
+.HyperMD-task-line[data-task=">"] .task-list-item-checkbox,
+.HyperMD-task-line[data-task=">"] .task-list-item-checkbox:hover {
+  background-color: var(--bright-green);
+  border-color: var(--checkbox-border-color);
+}
+
+.HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
+.HyperMD-task-line[data-task="-"] .task-list-item-checkbox:hover {
+  background-color: var(--gold);
+  border-color: var(--checkbox-border-color);
+}
+.HyperMD-task-line[data-task="<"] .task-list-item-checkbox,
+.HyperMD-task-line[data-task="<"] .task-list-item-checkbox:hover {
+  background-color: var(--robin-egg-blue);
+  border-color: var(--checkbox-border-color);
+}
+
+/* ----------- Bold, Italic, Underline ----------- */
+
+.cm-strong, strong {
+    color: var(--strong) !important;
+}
+
+.cm-em, em,
+.cm-em cm-quote cm-quote-1
+ {
+    color: var(--italic);
+}
+
+/* ----------- Code - Code Block ----------- */
+
+pre code { 
+    background-color: var(--codeblock-background) !important;
+    border: var(--codeblock-background) !important;
+    color: var(--codeblock-color)!important;
+}
+
+.markdown-rendered pre {
+  background-color: var(--codeblock-background);
+}
+
+pre[class*="language-"], 
+code[class*="language-"]
+{
+    font-size: var(--code-text-size)!important;
+    background: var(--codeblock-background)!important;
+    color: var(--codeblock-color)!important;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg, 
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    background-color: var(--codeblock-background);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    left: 0;
+    right: 0;
+    background-color: var(--codeblock-background);
+}
+
+.cm-inline-code{
+    background-color: var(--inline-code-background)!important;
+    color: var(--inline-code-color)!important;
+    font-size: var(--code-text-size)!important;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+.markdown-rendered code {
+    background-color: var(--codeblock-background)!important;
+    /* color: var(--white); */
+    color: var(--inline-code-color);
+    font-size: var(--code-text-size)!important;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+/* code styling */
+
+.cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
+.cm-def.cm-hmd-codeblock, .token.function, .token.class-name {
+    color: var(--code-function-color)!important;
+    text-emphasis: italic;
+} /* function name in declaration */
+.cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, .token.keyword, .token.builtin, .token.property {color: var(--code-builtin-color)!important;} /* built-in functions, methods */
+.cm-hmd-codeblock.cm-string, .token.string {color: var(--code-string-color)!important;} /* strings and numbers */
+.cm-hmd-codeblock.cm-number, .token.number {color: var(--code-operator-color)!important}
+.cm-operator, .token.operator {color: var(--code-operator-color)!important;} /* operators */
+.cm-hmd-codeblock {color: var(--codeblock-color);} /* codeblock */
+.cm-comment, .token.comment {color: var(--code-comment-color)!important;} /* comment */
+
+
+/* ----------- Tags ----------- */
+
+.cm-s-obsidian span.cm-hashtag, .tag
+{
+    background-color: var(--tags-background)!important;
+    color: var(--tags-color)!important;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+/* ----------- Quotes ----------- */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, .markdown-rendered blockquote {
+    /* font-style: var(--quote-style); */
+    font-size: 0.9em;
+    background-color: var(--quote-background);
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+}
+
+/* ----------- Underline ----------- */
+
+u {
+    color: var(--underline-text-color);
+    text-decoration-color: var(--underline-line-color);
+    text-decoration-thickness: var(--underline-line-thickness);
+}
+
+/* ----------- Highlight ----------- */
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .markdown-rendered mark {
+  background-color: var(--highlight-background-color);
+  color: var(--highlight-text-color);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  border-radius: 0.2rem;
+  /* text-shadow: -1px -1px 1px var(--highlight-text-shadow), -1px 1px 1px var(--highlight-text-shadow), 1px -1px 1px var(--highlight-text-shadow), 1px 1px 1px var(--highlight-text-shadow); */
+}
+
+
+/* ----------- Search ----------- */
+
+.search-result-file-matched-text {
+  background-color: var(--search-result-background);
+}
+
+
+/* ----------- Explorer ----------- */
+
+.is-flashing {
+  background-color: var(--find-flashing);
+  transition: all 0.7s ease-in !important;
+}
+
+
+/* ----------- Links ----------- */
+
+.external-link, .internal-link,
+ .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+  text-shadow: -1px -1px 2px var(--link-text-shadow), 
+               -1px 1px 2px var(--link-text-shadow),
+                1px -1px 2px var(--link-text-shadow), 
+                1px 1px 2px var(--link-text-shadow);
+  color: var(--link-text-color);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
+  text-decoration: none;
+  padding-right: 0;
+}
+
+.external-link,
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-external-link .cm-underline
+{
+    background-image: linear-gradient(
+      to bottom,
+      var(--link-ext-color) 0%,
+      var(--link-ext-color) 100%
+    );
+  }
+
+.internal-link, 
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline
+  {
+    background-image: linear-gradient(
+      to bottom,
+      var(--link-int-color) 0%,
+      var(--link-int-color) 100%
+      );
+    text-decoration: none!important;
+  }
+
+  /* link hover color */
+a:hover,
+.internal-link:hover,
+.external-link:hover,
+.cm-underline:hover {
+  text-decoration: none !important;
+  color: var(--link-text-color-hover);
+}
+
+.cm-s-obsidian span.cm-url {
+    color: var(--link-url-text-color)!important;
+    background-image: none!important;
+    background-color: transparent!important;
+    /* text-decoration: double!important; */
+}
+
+.markdown-rendered .internal-link{
+  color: var(--text-normal) !important;
+}
+
+/* ----------- Images ----------- */
+
+img {display:block;
+     margin-left:auto;
+     margin-right:auto;}
+
+.markdown-preview-view img {
+    display: block;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  /* experiment with values */
+    transition:transform 0.25s ease;
+  }
+  
+  .markdown-preview-view img:hover {
+      -webkit-transform:scale(1); /* experiment with values */
+      transform:scale(1.4);
+  }
+
+  /* ----------- Tables ----------- */
+  
+  /* preview */
+  .markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .markdown-source-view.mod-cm6 .cm-table-widget {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+/* ----------- File Explorer ----------- */
+
+.nav-folder-children .nav-file-title-content:first-child::before 
+{ 
+    content: '📄 '; 
+}
+
+.nav-folder-children .nav-folder-title-content::before 
+{ 
+    content: '📁 '; 
+    margin-right: 0px !important;
+}
+
+.nav-folder-title-content
+{
+    color: var(--folder-title-color);
+}
+
+.nav-file-title-content
+{
+    color: var(--file-title-color);
+}
+
+.nav-folder-title-content::before {
+    font-size: 13px;
+    /* how to get CSS filter ? 
+    0, open website: https://www.zhangxinxu.com/sp/filter.html
+    1, first: image original color this is :  #000
+    2, second: display color   i want : #D6FFF1
+    3, CSS filter trans btn clik:  the result is :
+      filter: invert(99%) sepia(90%) saturate(382%) hue-rotate(69deg) brightness(106%) contrast(102%);
+    4, pause👇  : OK ✌️;
+    */
+    
+    /* filter to --bright-green: invert(72%) sepia(99%) saturate(1210%) hue-rotate(51deg) brightness(107%) contrast(107%); */
+    /* filter: invert(30%) sepia(99%) saturate(1210%) hue-rotate(51deg) brightness(120%) contrast(100%); */
+    filter: var(--folder-filter);
+  
+    /*
+      /* If you want to change the icon, you only need to modify this code.you can only change d=''
+    */
+  
+    content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 100 100' width='17' height='17'><path  fill='currentColor' stroke='currentColor'  d='M6.1,8c-3.3,0-6,2.7-6,6v73.8c-0.1,0.5-0.1,0.9,0.1,1.4c0.6,2.7,3,4.8,5.9,4.8h78c3,0,5.4-2.2,5.9-5.1 c0-0.1,0.1-0.2,0.1-0.4c0,0,0-0.1,0-0.1l0.1-0.3c0,0,0,0,0-0.1l9.9-53.6l0.1-0.2V34c0-3.3-2.7-6-6-6v-6c0-3.3-2.7-6-6-6H36.1 c0,0,0,0-0.1,0c-0.1,0-0.2-0.2-0.6-0.6c-0.5-0.6-1.1-1.5-1.7-2.5c-0.6-1-1.3-2.1-2.1-3C30.9,9,29.7,8,28.1,8L6.1,8z M6.1,12h22 c-0.1,0,0.1,0,0.6,0.6c0.5,0.6,1.1,1.5,1.7,2.5c0.6,1,1.3,2.1,2.1,3c0.8,0.9,1.9,1.9,3.6,1.9h52c1.1,0,2,0.9,2,2v6h-74 c-3.1,0-5.7,2.5-5.9,5.6h-0.1L10.1,34l-6,32.4V14C4.1,12.9,4.9,12,6.1,12z M16.1,32h78c1.1,0,2,0.9,2,2l-9.8,53.1l-0.1,0.1 c0,0.1,0,0.2-0.1,0.2c0,0.1,0,0.2-0.1,0.2c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.2-0.1,0.3c0,0.1,0,0.1,0,0.2 c0,0.1,0,0.2,0,0.2c-0.3,0.8-1,1.4-1.9,1.4h-78c-1.1,0-2-0.9-2-2L14,34.4l0.1-0.2V34C14.1,32.9,14.9,32,16.1,32L16.1,32z'/></svg>"); 
+
+    margin-right: 7px !important;
+  }
+
+/* ----------- Progress Bar Loading ----------- */
+
+  .progress-bar-subline {
+    position: absolute;
+    background-color: var(--progress-bar-color);
+    height: 5px;
+  }
+  
+  .progress-bar-line {
+    position: absolute;
+    opacity: 0.4;
+    background-color: var(--progress-bar-color);
+    width: 150%;
+    height: 5px;
+  }

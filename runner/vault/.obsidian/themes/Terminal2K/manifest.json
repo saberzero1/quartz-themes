@@ -1,0 +1,10 @@
+{
+   "name": "Terminal2K",
+   "version": "1.0.0",
+   "minAppVersion": "1.0.0",
+   "author": "isax785",
+   "repo": "isax785/Terminal2K",
+   "screenshot": "img/screenshot.png",
+   "authorUrl": "https://github.com/isax785",
+   "modes": ["dark", "light"]
+}

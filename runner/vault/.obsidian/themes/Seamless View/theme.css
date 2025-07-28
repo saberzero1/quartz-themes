@@ -1,0 +1,755 @@
+@charset "UTF-8";
+body {
+  --callout-padding: 8.2px 12px 8px var(--list-indent);
+  --callout-todo: var(--color-orange-rgb);
+  --callout-important: var(--color-yellow-rgb);
+  --callout-question: var(--color-green-alt-rgb);
+  --canvas-space-x: 20px;
+  --canvas-space-y: 16px;
+  --checkbox-vertical-align: -2px;
+  --checkbox-indent: calc(var(--checkbox-size) * 0.5 - 1px);
+  --checkbox-indent-editing: calc(var(--checkbox-size) * 0.25 + 1px);
+  --checkbox-end-margin: calc(var(--checkbox-size) * 0.5);
+  --checkbox-end-margin-editing: calc(var(--checkbox-size) * -0.25 + 0.5px);
+  --embed-padding: 0;
+  --embed-border-start: none;
+  --file-margins: 0 var(--size-4-8) var(--size-4-8);
+  --header-height: 37px;
+  --indentation-guide-reading-indent: calc(-1 * var(--list-indent) / 2);
+  --indentation-guide-editing-indent: calc(var(--list-indent) / 2 - 1px);
+  --inline-title-margin-bottom: 4px;
+  --inline-title-size: var(--h2-size);
+  --inline-title-weight: var(--h2-weight);
+  --inline-title-color: var(--text-muted);
+  --list-spacing: 0;
+  --list-indent: calc(1em + 2px);
+  --list-indent-editing: 0;
+  --metadata-background: var(--background-primary-alt);
+  --metadata-padding: 0;
+  --p-spacing: 0;
+  --ribbon-background-collapsed: var(--background-secondary);
+  --ribbon-width: 41px;
+  --scrollbar-width: 12px;
+  --tag-padding-y: 0.15em;
+  --h1-size: 1.71875em;
+  --h2-size: 1.5625em;
+  --h3-size: 1.375em;
+  --h4-size: 1.25em;
+  --h1-line-height: normal;
+  --h2-line-height: normal;
+  --h3-line-height: normal;
+  --lc-bg-left: 18px;
+  --lc-bg-left-reading: 19px;
+  --lc-bg-top-reading: 1px;
+  --lc-bg-right-reading: 1px;
+  --lc-bg-bottom-reading: 1px;
+  --lc-bg-opacity-dark: 0.1;
+}
+
+.theme-light {
+  --accent-h: 180;
+  --accent-s: 100%;
+  --accent-l: 25%;
+  --color-base-00: hsl(40, 90%, 80%);
+  --color-base-10: hsl(36, 85%, 76%);
+  --color-base-20: hsl(35, 80%, 72%);
+  --color-base-25: hsl(32, 80%, 70%);
+  --color-base-30: hsl(32, 70%, 60%);
+  --color-base-35: hsl(30, 60%, 55%);
+  --color-base-40: hsl(30, 40%, 50%);
+  --color-base-50: hsl(20, 35%, 45%);
+  --color-base-70: hsl(20, 30%, 35%);
+  --color-base-100: hsl(10, 20%, 15%);
+  --color-accent: hsl(180, 100%, 25%);
+  --color-accent-rgb: 0, 128, 128;
+  --color-code-alt: rgb(194, 94, 0);
+  --color-code-alt-rgb: 194, 94, 0;
+  --color-red: hsl(353, 81%, 40%);
+  --color-red-rgb: 185, 19, 39;
+  --color-yellow: hsl(45, 40%, 40%);
+  --color-yellow-rgb: 143, 122, 61;
+  --color-orange: hsl(35, 100%, 40%);
+  --color-orange-rgb: 204, 119, 0;
+  --color-green: hsl(70, 100%, 25%);
+  --color-green-rgb: 106, 128, 0;
+  --color-cyan: hsl(180, 100%, 25%);
+  --color-cyan-rgb: 0, 128, 128;
+  --color-cyan-alt: hsl(185, 70%, 65%);
+  --color-cyan-alt-rgb: 103, 218, 228;
+  --color-blue: hsl(200, 90%, 30%);
+  --color-blue-rgb: 8, 99, 145;
+  --color-blue-alt: hsl(210, 90%, 45%);
+  --color-blue-alt-rgb: 11, 115, 218;
+  --color-purple: hsl(285, 65%, 50%);
+  --color-purple-rgb: 169, 45, 210;
+  --color-pink: hsl(331, 65%, 53%);
+  --color-pink-rgb: 213, 57, 133;
+  --background-primary: var(--color-base-10);
+  --background-secondary: var(--color-base-25);
+  --background-primary-alt: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-20);
+  --titlebar-background: var(--background-secondary-alt);
+  --titlebar-background-focused: var(--background-secondary);
+  --hr-color: var(--color-base-40);
+  --strike-color: var(--text-muted);
+  --bold-color: var(--color-blue);
+  --italic-color: var(--color-red);
+  --table-border-color: var(--color-base-50);
+  --highlight-color: var(--color-cyan-alt-rgb);
+  --canvas-color: var(--color-orange-rgb);
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-green);
+  --h3-color: var(--color-blue);
+  --h4-color: var(--color-purple);
+  --h5-color: var(--color-pink);
+  --h6-color: var(--color-orange);
+  --code-function: var(--color-blue-alt);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--color-cyan);
+  --code-property: var(--color-red);
+  --code-punctuation: var(--color-orange);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-orange);
+  --canvas-color-6: var(--color-accent-rgb);
+  --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📜";
+}
+
+.theme-dark {
+  --accent-h: 85;
+  --accent-s: 45%;
+  --accent-l: 40%;
+  --color-accent: hsl(85, 45%, 40%);
+  --color-accent-rgb: 110, 148, 56;
+  --color-red-alt: hsl(355, 65%, 70%);
+  --color-red-alt-rgb: 228, 129, 137;
+  --color-red-alt2: hsl(0, 80%, 30%);
+  --color-red-alt2-rgb: 138, 15, 15;
+  --color-orange-alt: hsl(29, 54%, 61%);
+  --color-orange-alt-rgb: 209, 154, 102;
+  --color-yellow: hsl(50, 65%, 70%);
+  --color-yellow-rgb: 228, 212, 129;
+  --color-green-alt: hsl(95, 38%, 62%);
+  --color-green-alt-rgb: 152, 195, 121;
+  --color-cyan-alt: hsl(170, 100%, 24%);
+  --color-cyan-alt-rgb: 0, 122, 102;
+  --color-cyan: hsl(187, 47%, 55%);
+  --color-cyan-rgb: 86, 182, 194;
+  --color-blue: hsl(207, 82%, 70%);
+  --color-blue-rgb: 116, 185, 241;
+  --color-pink: hsl(286, 60%, 67%);
+  --color-pink-rgb: 198, 120, 221;
+  --color-code-alt: rgb(160, 160, 160);
+  --color-code-alt-rgb: 160, 160, 160;
+  --background-primary: var(--color-base-25);
+  --background-secondary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-30);
+  --background-secondary-alt: var(--color-base-30);
+  --titlebar-background: var(--background-secondary-alt);
+  --titlebar-background-focused: var(--background-secondary);
+  --hr-color: var(--color-base-40);
+  --strike-color: var(--text-muted);
+  --bold-color: var(--color-red-alt);
+  --italic-color: var(--color-yellow);
+  --table-border-color: var(--color-base-50);
+  --highlight-color: var(--color-red-alt2-rgb);
+  --h1-color: var(--color-red-alt);
+  --h2-color: var(--color-yellow);
+  --h3-color: var(--color-blue);
+  --h4-color: var(--color-orange-alt);
+  --h5-color: var(--color-green-alt);
+  --h6-color: var(--color-purple);
+  --code-function: var(--color-blue);
+  --code-operator: var(--color-cyan);
+  --code-property: var(--color-red-alt);
+  --code-punctuation: var(--color-orange-alt);
+  --code-string: var(--color-green-alt);
+  --code-tag: var(--color-red-alt);
+  --code-value: var(--color-orange-alt);
+  --canvas-color-6: var(--color-accent-rgb);
+  --text-highlight-bg-rgb: var(--highlight-color);
+  --metadata-icon: "📄";
+}
+
+/* live preview text wraps in the same way and occupies the same space than read mode.
+The downside is that spaces at the end of the lines are lost from view */
+.cm-sizer .cm-lineWrapping {
+  white-space: normal;
+}
+
+/* keep text color when is highlighting in both modes */
+.is-flashing, .markdown-rendered mark, .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+  color: inherit;
+}
+
+/* keep internal links text color when is highlighting in both modes  */
+.markdown-rendered mark .internal-link {
+  color: var(--link-color);
+}
+
+/* strikethrough color with new variable in both modes */
+.cm-strikethrough, del {
+  color: var(--strike-color);
+}
+
+/* read mode div's bottom-margin to match empty new lines between elements including paragraphs, codeblocks, lists, callouts, headings and the end of the file.
+*/
+div:has(> p):has(+ div > :is(p)),
+div:has(> pre:not(.frontmatter)):has(+ div > :is(pre, blockquote, .callout)),
+div:has(> :is(ul, ol)):has(+ div > :is(p, blockquote, .callout)),
+div:has(> :is(blockquote, .callout)):has(+ div > :is(p, blockquote, .callout):not(.admonition)),
+div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(+ div > :is(h1, h2, h3, h4, h5, h6)),
+div:has(> :is(p, ul, ol, pre, blockquote, .callout, table, div, h1, h2, h3, h4, h5, h6)):has(+ .mod-footer) {
+  margin-bottom: 1.5em;
+}
+
+/* remove the bottom-margin of the first line in read mode if it's before a heading */
+div:has(> :is(h1, h2, h3, h4, h5, h6)):has(+ .mod-footer):is(.is-collapsed),
+div:has(> :is(.inline-title, .frontmatter)):has(+ div > :is(h1, h2, h3, h4, h5, h6)) {
+  margin-bottom: 0;
+}
+
+/* add new variable scrollbar width to calculate canvas paddings */
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+/* remove extra paddings of editor tab header */
+.mod-root .workspace-tab-header-container-inner {
+  padding: 0 15px 0 0;
+}
+
+/* add border-bottom at the start and end of the note in both modes */
+.inline-title, .markdown-preview-view .mod-footer,
+.view-content > .markdown-source-view .cm-line:last-child {
+  border-bottom: var(--hr-thickness) solid var(--hr-color);
+}
+
+/* Move Vault menu to the top */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--titlebar-background);
+  padding: 5px var(--size-4-2);
+  border-top: none;
+  order: 0;
+}
+
+/* change Vault menu background on focus to match titlebar */
+body.is-focused:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--titlebar-background-focused);
+}
+
+/* keep the same background color of the top left sidebar tabs */
+.mod-left-split .workspace-tabs.mod-top,
+body.is-focused .workspace-tabs.mod-top-left-space {
+  --tab-container-background: var(--background-secondary);
+  border-top: var(--tab-outline-width) solid var(--tab-outline-color);
+}
+
+/* properties background in sidebars */
+.workspace > .workspace-split:not(.mod-root) .metadata-container {
+  background-color: transparent;
+}
+
+/* reduce panels nav header padding */
+.nav-header {
+  padding: var(--size-4-2) var(--size-4-2) 0;
+}
+
+/* reduce file explorer padding */
+.nav-files-container {
+  padding: var(--size-2-1) var(--size-4-3) var(--size-4-6);
+}
+
+/* reduce other panels padding  */
+.backlink-pane, .tag-container,
+.workspace-leaf-content[data-type=outline] .view-content,
+.workspace-leaf-content[data-type=bookmarks] .view-content,
+.workspace-leaf-content[data-type=all-properties] .view-content {
+  padding: var(--size-4-1) var(--size-4-3) var(--size-4-8);
+}
+
+/* align properties container */
+.metadata-container {
+  transform: translateX(0);
+}
+.metadata-container .metadata-add-button {
+  margin-top: 0;
+}
+
+/* expand properties heading clickable area */
+.metadata-properties-heading {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* add document icon to properties title */
+.metadata-properties-title {
+  padding-inline-start: 12px;
+  color: var(--text-muted);
+}
+.metadata-properties-title::before {
+  align-items: center;
+  content: var(--metadata-icon);
+}
+
+/* align metadata collapse indicator */
+.metadata-properties-heading .collapse-indicator {
+  inset-inline-start: -20px;
+}
+
+/* add frontmatter background in source mode */
+div:has(> .frontmatter), div:has(> .cm-hmd-frontmatter),
+.cm-line:has(> .is-collapsed):not(:has(> .cm-header, .cm-list-1)):first-child {
+  background-color: var(--metadata-background);
+}
+
+/* change tag padding y inside properties */
+.metadata-property[data-property-key=tags] {
+  --tag-padding-y: 0.25em;
+}
+
+/* change direction of canvas menu animation to horizontal */
+@media (hover: hover) {
+  .canvas-card-menu .canvas-card-menu-button.mod-draggable:hover svg {
+    transform: translateX(-6px);
+  }
+}
+/* change direction and size of canvas menu to vertical */
+.canvas-wrapper .canvas-card-menu {
+  right: 0;
+  bottom: 28px;
+  left: initial;
+  transform: translateX(0);
+  flex-direction: column-reverse;
+  background-color: var(--interactive-normal);
+}
+.canvas-wrapper .canvas-card-menu .canvas-card-menu-button {
+  padding: var(--size-2-3);
+}
+.canvas-wrapper .canvas-card-menu .canvas-card-menu-button svg {
+  fill: var(--interactive-normal);
+}
+
+/* canvas cards scrollbar space */
+.canvas-node-content.markdown-embed .markdown-preview-view {
+  scrollbar-gutter: stable;
+}
+
+/* match live preview and read mode padding in canvas cards */
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view,
+.markdown-source-view.mod-inside-iframe > .cm-editor > .cm-scroller {
+  padding-right: calc(var(--canvas-space-x) - var(--scrollbar-width));
+  padding-left: var(--canvas-space-x);
+}
+
+/* read mode canvas card blocks height above and bellow content */
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view::before,
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view::after {
+  min-height: min(var(--canvas-node-height) * 0.1 - 3px, var(--canvas-space-y));
+  max-height: var(--canvas-space-y);
+}
+
+/* live preview canvas card blocks height above and bellow content to match read mode */
+.markdown-source-view.mod-inside-iframe > .cm-editor > .cm-scroller::before,
+.markdown-source-view.mod-inside-iframe > .cm-editor > .cm-scroller::after {
+  min-height: min(10vh - 3px, var(--canvas-space-y) - 2px);
+  max-height: var(--canvas-space-y);
+}
+
+/* live preview codeblocks begin and end blocks inside canvas */
+.mod-inside-iframe :is(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+  min-height: calc(1em * var(--line-height-normal));
+}
+
+/* read mode table padding and margin bottom inside canvas */
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child > table:last-child {
+  margin-bottom: var(--size-4-4);
+}
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-sizer > div:last-child:has(> table) {
+  padding-bottom: 1.5em;
+}
+
+/* hr margins in read to match the height in live preview mode */
+hr, .markdown-rendered hr {
+  margin: calc((var(--font-text-size) * var(--line-height-normal) - 0.125em) / 2) 0;
+}
+
+/* align read mode heading collapse indicator */
+.markdown-preview-view .heading-collapse-indicator {
+  margin-inline-start: -20px;
+}
+
+/* move live preview header collapse indicator to match read mode */
+.markdown-source-view.mod-cm6 .HyperMD-header .collapse-indicator {
+  padding-inline-end: 4px;
+}
+
+/* align inline codeblocks inside headings in both modes */
+.cm-s-obsidian .HyperMD-header .cm-inline-code,
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) > code {
+  --code-background: transparent;
+  transform: translateY(3px);
+  display: inline-block;
+  vertical-align: top;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+/* align inline codeblocks formatting inside headings in live preview */
+.cm-s-obsidian .HyperMD-header .cm-inline-code.cm-formatting,
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-header.cm-inline-code {
+  --code-background: var(--background-primary-alt);
+  padding: 0;
+}
+
+/* read mode tag paddings inside headings */
+.heading-collapse-indicator ~ a.tag {
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0;
+}
+
+/* live preview tag paddings and position inside headings to match read mode */
+.HyperMD-header .cm-hashtag {
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0;
+  display: inline-block;
+  font-size: var(--tag-size) !important;
+}
+
+/* match live preview number list with read mode */
+.cm-formatting-list-ol {
+  display: inline-block;
+  text-align: right;
+  width: calc(var(--size-4-8) + var(--list-indent));
+  margin-inline-start: calc(var(--size-4-8) * -1);
+}
+
+/* center bullet point in read mode */
+.markdown-rendered .list-bullet {
+  margin-inline-start: calc(-0.5em - 1px);
+}
+
+/* center bullet point in live preview */
+.markdown-source-view .list-bullet {
+  margin-inline-start: calc(0.3em + 1px);
+  margin-inline-end: calc(0.025em + 1.02px);
+}
+
+/* center checkbox in read mode */
+ul > li.task-list-item .task-list-item-checkbox {
+  vertical-align: middle;
+  top: var(--checkbox-vertical-align);
+  left: var(--checkbox-indent);
+  margin-inline-end: var(--checkbox-end-margin);
+}
+
+/* match live preview checkbox with read mode */
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  top: var(--checkbox-vertical-align);
+  margin-inline-start: var(--checkbox-indent-editing);
+  margin-inline-end: var(--checkbox-end-margin-editing);
+}
+
+/* align read mode list collapse indicator */
+.markdown-rendered .list-collapse-indicator {
+  margin-inline-start: calc(-14px - var(--list-indent));
+}
+
+/* align live preview list collapse indicator */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line .cm-fold-indicator .collapse-indicator {
+  inset-inline-end: 4px;
+}
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator {
+  inset-inline-end: calc(4px - var(--list-bullet-end-padding));
+}
+
+/* live preview blockquote's padding to see the cursor and match with --list-indent */
+.cm-s-obsidian span.cm-formatting-quote:first-child {
+  padding-inline-start: calc(0.04em + 2.03px);
+}
+
+/* read mode blockquote margin and padding to match live preview */
+.markdown-preview-view blockquote {
+  padding-inline-start: calc(var(--list-indent) - 1.6px);
+  margin: 0;
+}
+
+/* callout wrap break words and hide scrollbar to match read mode */
+.callout {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+.callout .callout-content {
+  overflow: hidden;
+}
+
+/* remove callout margins inside callouts in both modes */
+.markdown-preview-view .callout-content .callout,
+.markdown-source-view.mod-cm6 .callout-content .callout {
+  margin: 0;
+}
+
+/* live preview lists inside callouts to match read mode */
+.markdown-source-view .callout ul > li::marker {
+  color: transparent;
+}
+.markdown-source-view .callout ul > li:not(.task-list-item)::before {
+  position: absolute;
+  content: "​";
+  pointer-events: none;
+  color: var(--list-marker-color);
+  border-radius: var(--list-bullet-radius);
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  border: var(--list-bullet-border);
+  transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
+  background-color: var(--list-marker-color);
+  transition: transform 0.15s, box-shadow 0.15s;
+  will-change: transform;
+}
+.markdown-source-view .callout .task-list-item-checkbox {
+  --checkbox-indent-editing: -1.1em;
+  --checkbox-end-margin-editing: calc(0.125em - 0.5px);
+}
+
+/* increase number list indent inside callouts to see numbers with 2 digits */
+.markdown-rendered .callout ol > li {
+  --list-indent: calc(1em + 9px);
+}
+
+/* codeblocks rendered inside callouts */
+.markdown-rendered .callout:has(pre) {
+  padding-bottom: 13px;
+}
+.markdown-rendered .callout pre {
+  padding: 0 0 0 1px;
+}
+
+/* change read mode codeblock sizes to match live preview */
+.markdown-rendered pre {
+  padding: 1.3125em var(--size-4-3) 1.3125em 18px;
+  min-height: fit-content;
+  overflow: hidden;
+  margin: 0;
+}
+.markdown-rendered pre code {
+  display: block;
+}
+
+/* live preview codeblock inline end padding to match read mode */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  padding-inline-start: 18px;
+  padding-inline-end: 12px;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .collapse-indicator {
+  padding-inline-end: 3px;
+}
+
+/* read mode codeblock copy button */
+.markdown-rendered button.copy-code-button {
+  padding: 2.5px 6px;
+  margin: 0 4px;
+}
+
+/* live preview codeblock copy button */
+.markdown-source-view.mod-cm6 .code-block-flair {
+  padding: var(--size-4-1) var(--size-4-1) 0;
+  top: 0;
+  right: 1px;
+}
+
+/* css/scss syntax colors */
+pre.language-css, pre.language-scss {
+  --code-string: var(--color-orange-alt);
+  --code-function: var(--color-cyan);
+  --code-normal: var(--color-red-alt);
+}
+
+/* js/jsx syntax colors */
+pre.language-js, pre.language-jsx {
+  --code-normal: var(--color-yellow);
+}
+
+/* move mathjax to left and remove extra space in both modes */
+.math-block mjx-container[jax=CHTML][display=true] {
+  display: inline-block;
+  line-height: normal;
+  overflow-x: initial;
+  padding: 0;
+  margin: 0;
+}
+
+/* reduce size of mathjax edit button */
+.markdown-source-view.mod-cm6 .math-block .edit-block-button {
+  padding: var(--size-2-1) var(--size-2-2);
+  right: 0;
+  top: 0;
+}
+
+/* hide automatic empty line above tables in live preview */
+.cm-line:has(> br:only-child):has(+ :is(.cm-table-widget)) {
+  display: none;
+}
+
+/* remove live preview bottom border inside tables */
+.table-wrapper > .table-editor .table-cell-wrapper .cm-active {
+  border-bottom: none;
+}
+
+/* read mode empty cells height to match live preview */
+.markdown-rendered :is(th, td) {
+  height: calc(var(--table-text-size) * var(--table-line-height) + 8px);
+}
+
+/* read mode table margins to match live preview except inside callouts */
+.markdown-preview-view :not(.callout-content, span) > table {
+  margin: var(--size-4-4) 0;
+}
+
+/* change first column bold color to match header color in both modes */
+.markdown-rendered td:first-child {
+  --bold-color: inherent;
+}
+
+/* match list bullet points inside tables in both modes */
+.markdown-rendered .table-cell-wrapper .list-bullet {
+  margin-inline-start: 0;
+  padding-right: 0;
+}
+.markdown-rendered .table-cell-wrapper .cm-formatting-list-ul,
+.markdown-rendered .table-cell-wrapper .cm-formatting-list-ol {
+  padding-inline-start: 0;
+}
+
+/* remove live preview embedding scrollbar space */
+.markdown-embed .markdown-preview-view {
+  scrollbar-gutter: unset;
+}
+
+/* change live preview embed title color and remove its padding */
+.embed-title {
+  color: var(--embed-title-color);
+  padding: 0;
+}
+
+/* align live preview bullet point inside embedding */
+.markdown-source-view .markdown-embed .list-bullet {
+  margin-inline-start: -0.85em;
+}
+
+/* center embed images in both modes, needs to be !important for external images in live preview */
+.markdown-source-view.mod-cm6 img[alt*=center],
+.markdown-reading-view img[alt*=center] {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: block;
+}
+
+/* match live preview dataview line height with read mode */
+.is-live-preview .block-language-dataviewjs > p,
+.is-live-preview .block-language-dataviewjs > span {
+  line-height: var(--line-height-normal);
+}
+
+/* change bullet points style */
+.block-language-dataview ul > li::marker, .block-language-dataviewjs ul > li::marker {
+  color: transparent;
+}
+.block-language-dataview ul > li:not(.task-list-item)::before, .block-language-dataviewjs ul > li:not(.task-list-item)::before {
+  position: absolute;
+  content: "​";
+  pointer-events: none;
+  color: var(--list-marker-color);
+  border-radius: var(--list-bullet-radius);
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  border: var(--list-bullet-border);
+  transform: translate(calc(-0.5em - 4px), calc(0.75em - 2.5px));
+  background-color: var(--list-marker-color);
+  transition: transform 0.15s, box-shadow 0.15s;
+  will-change: transform;
+}
+
+/* remove admonition callouts extra margin */
+.is-live-preview .admonition-content:last-child,
+.is-live-preview .admonition-content p {
+  margin: 0;
+}
+
+/* limit the height of admonition icons to match native callouts */
+.admonition-title-icon {
+  max-height: 20.8px;
+}
+
+/* remove admonition button extra margin */
+.admonition-content-copy {
+  margin: 0;
+}
+
+/* remove rounded edges */
+.lc-list-bg::after, .lc-li-wrapper::after {
+  border-radius: 0;
+}
+
+/* change font weight inside list callouts */
+div.lc-list-callout, span.lc-li-wrapper {
+  color: rgb(var(--lc-callout-color));
+  font-weight: var(--font-semibold);
+}
+div.lc-list-callout .cm-hashtag, div.lc-list-callout .tag, div.lc-list-callout .inline-field, span.lc-li-wrapper .cm-hashtag, span.lc-li-wrapper .tag, span.lc-li-wrapper .inline-field {
+  font-weight: var(--font-normal);
+}
+
+/* remove extra padding */
+.kanban-plugin__board > div {
+  padding: 0 0 12px;
+}
+
+/* change margin to inline start for kanban list */
+.kanban-plugin__lane-wrapper {
+  margin-inline-start: 10px;
+  margin-inline-end: 0;
+}
+.kanban-plugin__lane-wrapper:nth-last-child(2) {
+  margin-inline-end: 10px;
+}
+
+/* remove placeholder margin */
+.kanban-plugin__placeholder.kanban-plugin__lane-placeholder {
+  margin-inline-end: 0;
+}
+
+/* lane title orientation when it is collapsed */
+.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper {
+  text-orientation: upright;
+}
+.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-title-text,
+.kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-title-count {
+  transform: none;
+}
+
+/* reduce QuickAdd settings */
+.modal-content > .setting-item {
+  padding: 0.2em 0;
+}
+.modal-content > .setting-item:first-child {
+  padding-top: 0;
+}
+.modal-content > .setting-item:last-child {
+  padding-bottom: 0;
+}
+
+/* change QuickAdd user settings inputs width */
+.userScriptSettingsModal .setting-item-info {
+  width: 40%;
+}
+.userScriptSettingsModal .setting-item-control {
+  width: 60%;
+}
+.userScriptSettingsModal .setting-item-control input {
+  width: 100%;
+}
+
+/*# sourceMappingURL=theme.css.map */

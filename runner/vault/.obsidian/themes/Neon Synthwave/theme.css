@@ -1,0 +1,240 @@
+body {
+	--radius-s: 5px;
+	--radius-m: 5px;
+	--radius-l: 5px;
+	--input-radius: 5px;
+	--tab-radius-active: 5px;
+	--checkbox-radius: 5px;
+	--toggle-radius: 5px;
+	--toggle-thumb-radius: 5px;
+	--slider-thumb-radius: 5px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--background-primary: #262335;
+	--background-secondary: #241B2F;
+	--background-primary-alt: #241734;
+	--background-secondary-alt: #241B2F;
+  
+	--text-accent: #FF1690;
+	--text-accent-hover: #7a6ae6;
+	--text-normal: #d4f5ff;
+	--text-muted: #8be9fd;
+	--text-faint: #bd93f9;
+  
+	--interactive-normal: #bd93f9;
+	--interactive-hover: #FF00FF;
+	--interactive-accent: #5900ff;
+	--interactive-accent-hover: #FF00FF;
+  
+	--background-accent: #000;
+	--background-modifier-border: #fd8bfd;
+  
+	--text-highlight-bg: #ffd319;
+
+	.side-dock-ribbon-tab,
+	.side-dock-ribbon-action {
+	  color: #bd93f9;
+	}
+  
+	.workspace-leaf.mod-active .workspace-leaf-header-title {
+	  color: #FF1690;
+	}
+  
+	.titlebar {
+	  background-color: #241B2F;
+	  
+	}
+	
+	.titlebar-inner {
+	  color: #bd93f9;
+	}
+	
+	.titlebar-button {
+	  opacity: 1;
+	}
+	
+	.titlebar-button:hover {
+	  color: #8be9fd;
+	}
+	
+	.titlebar-button.mod-close:hover {
+	  background-color: #FF0000;
+	  color: #38e8ff;
+	}
+
+	  .cm-s-obsidian .cm-header,
+	  h1, 
+	  h2,
+	  h3,
+	  h4,
+	  h5,
+	  h6 {
+		font-weight: 600;
+		overflow: visible;
+	  }
+	  
+	  .cm-s-obsidian .cm-formatting-header {
+		font-weight: 300;
+	  }
+	  
+	  .cm-header-1:not(.cm-formatting),
+	  h1 {
+		text-shadow: 0 0 0.5em #FF00FF;
+	  }
+	  
+	  .cm-header-2:not(.cm-formatting),
+	  h2 {
+		text-shadow: 0 0 0.5em #38e8ff;
+	  }
+	  
+	  .cm-header-3:not(.cm-formatting),
+	  h3 {
+		text-shadow: 0 0 0.5em #00FF00;
+	  }
+	  
+	  .cm-header-4:not(.cm-formatting),
+	  h4 {
+		text-shadow: 0 0 0.5em #FFFF00;
+	  }
+	  
+	  .cm-header-5:not(.cm-formatting),
+	  h5 {
+		text-shadow: 0 0 0.5em #FF0000;
+	  }
+	  
+	  .cm-header-6:not(.cm-formatting),
+	  h6 {
+		text-shadow: 0 0 0.5em #0000FF;
+	  }
+	
+  }
+  
+  .theme-light {
+	--background-primary: #E1F5FF;
+	--background-secondary: #E1F5FF;
+	--background-primary-alt: #4382f8;
+	--background-secondary-alt: #4382f8;
+  
+	--text-accent: #ff0000;
+	--text-accent-hover: #0000ff;
+	--text-normal: #6496FF;
+	--text-muted: #135ce2;
+	--text-faint: #6496FF;
+  
+	--interactive-normal: #ff0000;
+	--interactive-hover: #5590ff;
+	--interactive-accent: #5590ff;
+	--interactive-accent-hover: #ff0000;
+  
+	--background-accent: #000;
+	--background-modifier-border: #FF0000;
+  
+	--text-highlight-bg: #135ce2;
+
+	--ribbon-background: #4382f8;
+	--ribbon-background-collapsed: #4382f8;
+	--code-normal: #E1F5FF;
+	--code-size: 100%;
+
+	.side-dock-ribbon-tab,
+	.side-dock-ribbon-action {
+	  color: #ff0000;
+	}
+  
+	.workspace-leaf.mod-active .workspace-leaf-header-title {
+	  color: #ff0000;
+	}
+  
+	.titlebar {
+	  background-color: #4382f8;
+	  
+	}
+	
+	.titlebar-inner {
+	  color: #FF0000;
+	}
+	
+	.titlebar-button {
+	  opacity: 1;
+	}
+	
+	.titlebar-button:hover {
+	  color: #0000ff;
+	}
+	
+	.titlebar-button.mod-close:hover {
+	  background-color: #FF0000;
+	  color: #0000ff;
+	}
+	
+	.cm-s-obsidian .cm-header,
+	h1, 
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	  font-weight: 600;
+	  overflow: visible;
+	}
+	
+	.cm-s-obsidian .cm-formatting-header {
+	  font-weight: 300;
+	}
+	
+	.cm-header-1:not(.cm-formatting),
+	h1 {
+/*	  text-shadow: 0 0 0.5em #FF00FF; */
+	}
+	
+	.cm-header-2:not(.cm-formatting),
+	h2 {
+/*	  text-shadow: 0 0 0.5em #38e8ff; */
+	} 
+	
+	.cm-header-3:not(.cm-formatting),
+	h3 {
+/*	  text-shadow: 0 0 0.5em #00FF00; */
+	}
+	
+	.cm-header-4:not(.cm-formatting),
+	h4 {
+/*	  text-shadow: 0 0 0.5em #FFFF00; */
+	}
+	
+	.cm-header-5:not(.cm-formatting),
+	h5 {
+/*	  text-shadow: 0 0 0.5em #FF0000; */
+	}
+	
+	.cm-header-6:not(.cm-formatting),
+	h6 {
+/*	  text-shadow: 0 0 0.5em #0000FF; */
+	}
+
+
+	}

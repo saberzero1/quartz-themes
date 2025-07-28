@@ -1,0 +1,159 @@
+body,
+.theme-dark {
+	/* hex colors variables */
+	--color-red: #ea83a5;
+	--color-orange: #f5a191;
+	--color-yellow: #e6b99d;
+	--color-green: #90b99f;
+	--color-cyan: #85b5ba;
+	--color-blue: #92a2d5;
+	--color-purple: #aca1cf;
+	--color-pink: #e29eca;
+
+	/* rgb colors variables */
+	--color-red-rgb: 234, 131, 165;
+	--color-orange-rgb: 245, 161, 145;
+	--color-yellow-rgb: 230, 185, 157;
+	--color-green-rgb: 144, 185, 159;
+	--color-cyan-rgb: 133, 181, 186;
+	--color-blue-rgb: 146, 162, 213;
+	--color-purple-rgb: 172, 161, 207;
+	--color-pink-rgb: 226, 158, 202;
+
+	/* primary */
+	--primary: #161617;
+	--primary-alt: #27272a;
+	--secondary: #131314;
+	--secondary-alt: #27272a;
+	--modifier-hover: #313134;
+	--modifier-active-hover: #313134;
+	/* --background-modifier-border */
+	/* --background-modifier-border-hover */
+	/* --background-modifier-border-focus */
+	/* --background-modifier-error-rgb */
+	/* --background-modifier-error */
+	/* --background-modifier-error-hover */
+	/* --background-modifier-success-rgb */
+	/* --background-modifier-success */
+	/* --background-modifier-message */
+	/* --background-modifier-form-field */
+
+	/* primary rgb */
+	--primary-rgb: 22, 22, 23;
+	--primary-alt-rgb: 39, 39, 42;
+	--secondary-rgb: 19, 19, 20;
+	--secondary-alt-rgb: 39, 39, 42;
+	--modifier-hover-rgb: 39, 39, 42;
+	--modifier-active-hover-rgb: 39, 39, 42;
+
+	/* surface colors variables */
+	--background-primary: var(--primary);
+	--background-primary-alt: var(--primary-alt);
+	--background-secondary: var(--secondary);
+	--background-secondary-alt: var(--secondary-alt);
+	--background-modifier-hover: var(--modifier-hover);
+	--background-modifier-active-hover: var(--modifier-active-hover);
+
+	/* text colors variables */
+	--text-normal: #c9c7cd;
+	--text-muted: #9f9ca6;
+	--text-faint: #8b8693;
+	--text-success: var(--color-green);
+	--text-warning: var(--color-yellow);
+	--text-error: var(--color-red);
+	/* --text-on-accent */
+	/* --text-on-accent-inverted */
+	/* --text-accent */
+	/* --text-accent-hover */
+	--italic-color: var(--color-pink);
+	--bold-color: var(--color-pink);
+
+	/* nav text */
+	--nav-item-color-hover: var(--color-orange);
+	--nav-item-color-active: var(--color-orange);
+	--nav-item-color-selected: var(--color-orange);
+
+	/* nav icon color */
+	--icon-color-hover: var(--color-blue);
+	--icon-color-active: var(--color-blue);
+	--icon-color-focused: var(--color-blue);
+
+	/* heading colors variables */
+	--h1-color: var(--color-yellow);
+	--h2-color: var(--color-blue);
+	--h3-color: var(--color-pink);
+	--h4-color: var(--color-orange);
+	--h5-color: var(--color-green);
+	--h6-color: var(--color-red);
+
+	/* radius */
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--input-radius: 4px;
+	--tab-radius-active: 4px;
+	--checkbox-radius: 2px;
+	--toggle-radius: 16px;
+	--toggle-thumb-radius: 16px;
+	--slider-thumb-radius: 16px;
+
+	/* accent hsl variables */
+	--accent-h: 10;
+	--accent-s: 83%;
+	--accent-l: 77%;
+
+	/* accent color */
+	--color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--interactive-accent: var(--color-accent);
+
+	/* link colors */
+	--link-accent-h: 226;
+	--link-accent-s: 44%;
+	--link-accent-l: 70%;
+	--link-accent: hsl(var(--link-accent-h), var(--link-accent-s), var(--link-accent-l));
+	--link-color: var(--link-accent);
+
+	/* code */
+	--code-background: rgba(var(--primary-alt-rgb), 0.3);
+	--code-normal: var(--text-normal);
+	--code-comment: var(--text-faint);
+	--code-function: var(--color-yellow);
+	--code-important: var(--color-orange);
+	--code-keyword: var(--color-pink);
+	--code-operator: var(--color-orange);
+	--code-property: var(--color-blue);
+	--code-punctuation: var(--text-muted);
+	--code-string: var(--color-green);
+	--code-tag: var(--color-red);
+	--code-value: var(--color-purple);
+
+	/* table colors	 */
+	--table-background: rgba(var(--primary-alt-rgb), 0.3);
+	--table-header-background: rgba(var(--primary-alt-rgb), 0.8);
+
+	/* extra */
+	--text-highlight-bg: rgba(var(--color-yellow-rgb), 0.5);
+	--caret-color: var(--color-yellow);
+	--hr-thickness: 3px;
+}
+
+/* :horizontal rules */
+hr {
+	border-top: var(--hr-thickness) solid;
+	border-color: var(--hr-color);
+}
+
+/* images */
+img {
+	border-radius: var(--radius-s)
+}
+
+/* maths */
+.MathJax {
+	color: var(--color-orange);
+}
+
+/* table text */
+table th div {
+	color: var(--color-yellow);
+}

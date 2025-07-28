@@ -1,0 +1,222 @@
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--color-yellow: #ffee80;	
+	--color-orange: #ff9d00;
+	--color-comment-blue: #0088ff;
+	--color-light-green: #9eff80;
+	--color-green: #3ad900;
+	--color-cyan: #9effff;
+	--color-pink: #ff628c;
+	--color-medium-blue: #79abff;
+	--color-light-blue: #bed6ff;
+	--color-purple: #D197D9;
+
+
+
+	--color-red: var(--color-pink);
+	--color-blue: var(--color-comment-blue);
+	--color-pink: var(--color-salmon);
+
+	--color-red-rgb: 255, 98, 140;
+	--color-orange-rgb: 255, 157, 0;
+	--color-yellow-rgb: 255, 238, 128;
+	--color-green-rgb: 158, 255, 128;
+	--color-cyan-rgb: 158, 255, 255;
+	--color-blue-rgb: 0, 136, 255;
+	--color-purple-rgb: 209, 151, 217;
+	--color-pink-rgb: 237, 146, 153;
+
+
+	--color-salmon: #ed9299;
+	--color-mint: #2affdf;
+
+
+	--accent-h: 208;
+	--accent-s:	100%;
+	--accent-l: 50%;
+
+	--color-yellow-rgb: 255, 238, 128;
+	--color-light-blue-rgb: 190, 214, 255;
+	--color-comment-blue-rgb: 0, 136, 255;
+
+
+	--color-dark-blue: #011627;
+	--color-deep-blue: #010e1a;
+	--color-selected-blue: #1F4662;
+
+	--background-primary: #002240;
+	--background-secondary: #011627;
+	--background-primary-alt: var(--color-dark-blue);
+	--background-secondary-alt: var(--color-deep-blue);
+	--background-modifier-hover: var(--color-deep-blue);
+	--background-modifier-active-hover: var(--color-dark-blue);
+	--background-modifier-border-hover: var(--color-yellow);
+	--background-modifier-border-focus: var(--color-yellow);
+
+	--interactive-normal: var(--color-deep-blue);
+	--interactive-hover: var(--color-selected-blue);
+	--interactive-accent: var(--color-comment-blue);
+	--interactive-accent-hsl: 208, 100%, 50%;
+	--interactive-accent-hover: var(--color-light-blue);
+
+	--icon-color: #ffffff;
+	--icon-color-hover: var(--color-yellow);
+	--icon-color-active: var(--color-yellow);
+	--icon-color-focused: var(--color-orange);
+	--titlebar-background: var(--color-deep-blue);
+	--titlebar-background-focused: var(--color-deep-blue);
+
+	--divider-color: var(--color-deep-blue);
+	--divider-color-hover: var(--color-comment-blue);
+	--ribbon-background: var(--color-deep-blue);
+	--ribbon-background-collapsed: var(--color-deep-blue);
+
+	--scrollbar-bg:	var(--color-yellow);
+	--scrollbar-thumb-bg:	rgba(var(--color-yellow-rgb), 0.5);
+	--scrollbar-active-thumb-bg: var(--color-yellow);
+	--status-bar-background: var(--color-dark-blue)	;
+	--status-bar-border-color: var(--color-dark-blue);
+	--status-bar-text-color: #FFFFFF;
+
+	--nav-item-color: var(#FFFFFF)	;
+	--nav-item-color-hover:	var(--color-yellow);
+	--nav-item-color-active:var(--color-orange)	;
+	--nav-item-color-selected:var(--color-deep-blue)	;
+	--nav-item-color-highlighted:	var(--color-selected-blue);
+	--nav-item-background-hover:	var(--color-selected-blue);
+	--nav-item-background-active:	var(--color-deep-blue);
+	--nav-item-background-selected:	var(--color-light-green);
+	--nav-indetation-guide-color:	var(--color-pink);
+	--nav-collapse-icon-color:	var(--color-pink);
+	--nav-collapse-icon-color-collapsed: var(--color-pink);
+
+	--prompt-border-color: var(--color-yellow);
+
+	--tab-background-active	: var(--background-primary);
+	--tab-text-color: #FFFFFF;
+	--tab-text-color-active: var(--color-orange);
+	--tab-text-color-focused: var(--color-orange);
+	--tab-text-color-focused-active: var(--color-orange);
+	--tab-text-color-focused-highlighted: var(--color-orange);
+	--tab-text-color-focused-active-current: var(--color-orange);
+	--tab-container-background: var(--color-pink);
+	--tab-divider-color: var(--color-yellow);
+
+	--drag-ghost-background: var(--color-selected-blue);
+
+	--blockquote-color: var(--color-comment-blue);
+
+
+	--code-normal:	#FFFFFF;
+	--code-comment: var(--color-comment-blue);
+	--code-function: var(--color-light-blue);
+	--code-important: ;
+	--code-keyword: var(--color-orange);
+	--code-operator: #FFFFFF;
+	--code-property: var(--color-purple);
+	--code-punctuation:	#FFFFFF;
+	--code-string: var(--color-green);
+	--code-tag: var(--color-cyan);
+	--code-value: var(--color-pink);
+
+
+	--h1-color: var(--color-orange);
+	--h2-color: var(--color-yellow);
+	--h3-color	: var(--color-comment-blue);
+	--h4-color	: var(--color-pink);
+	--h5-color	: var(--color-light-green);
+	--h6-color: var(--color-light-blue);
+	--heading-formatting: var(--color-pink);
+
+	--hr-color: var(--color-comment-blue);
+
+	--link-color: var(--color-green);
+	--link-color-hover: var(--color-light-green);
+	--link-unresolved-color: var(--color-pink);
+	--link-unresolved-opacity: 1;
+	--link-unresolved-filter: blur(0.75px);
+	--table-border-color: #FFFFFF;
+	--table-header-background: var(--color-dark-blue) ;
+	--table-header-background-hover: var(--color-selected-blue) ;
+	--table-header-border-color: #FFFFFF ;
+	--table-header-font: var(--color-white);
+	--table-header-weight: bold;
+	--table-header-color: var(--color-orange);
+	--table-text-color: #FFFFFF;
+	--table-column-alt-background: rgba(var(--color-comment-blue-rgb), 0.05);
+	--table-row-background-hover: var(--color-selected-blue) ;
+	--table-row-alt-background	: rgba(var(--color-comment-blue-rgb), 0.05) ;
+	--table-selection: rgba(var(--color-comment-blue-rgb), 0.25);
+	--table-selection-blend-mode: soft-light ;
+	--table-selection-border-color: var(--color-yellow) ;
+	--table-drag-handle-color: var(--color-orange);
+	--table-drag-handle-background: var(--background-primary) ;
+	--table-drag-handle-background-active:	var(--background-primary);
+
+
+	--tag-color: var(--color-cyan);
+	--tag-color-hover: var(--color-selected-blue);
+	--tag-background: var(--background-secondary); 
+	--tag-background-hover: var(--color-pink); 
+	--tag-border-color: var(--color-dark-blue);
+	--tag-border-color-hover: var(--color-dark-blue);
+	--text-selection: var(--color-comment-blue);
+	--text-highlight-bg: var(--color-selected-blue);
+
+
+	--text-muted: #EEEEEE;
+	--text-on-accent: #FFFFFF;
+
+	--checkbox-marker-color: var(--background-primary);
+	--checkbox-color: var(--color-yellow);	
+	--checkbox-color-hover: var(--color-selected-blue);
+	--checkbox-border-color: #FFFFFF;
+	--checkbox-border-color-hover: var(--color-selected-blue);
+	--checklist-done-decoration: line-through;
+	--checklist-done-color: var(--color-comment-blue);
+	--list-marker-color: var(--color-salmon);
+
+	--indentation-guide-color: #ed9299;
+  }
+  
+  .theme-light {
+	--background-primary: #2240;
+	--background-secondary: #D9C9FF;
+  }
+
+  
+  

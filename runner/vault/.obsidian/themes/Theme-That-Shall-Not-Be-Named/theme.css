@@ -1,0 +1,439 @@
+/***************************************************/
+/*      "Theme-That-Shall-Not-Be-Named" v0.1       */
+/*      by @choptv (twitter: @choptheviking)       */
+/*                    20211128                     */
+/* Inspired by "Slytherin" theme by Matheus Zarkov */
+/***************************************************/
+
+.theme-dark {
+    /* Color palette for Theme-That-Shall-Not-Be-Named */
+    --green-base: #00503B;
+    --green-bright: #227E67;
+    --green-light: #0F6751;
+    --green-dark: #00372A;
+    --green-deep: #090C0D; /* Formerly: #001E17, 000E0B*/
+    --green-compliment: #7B2E00; /* rgb(123, 46, 0) */
+    --brass-base: #575042;
+    --brass-bright: #B7AD97;
+    --brass-light: #8B806C; /* rgb(139, 128, 108) */
+    --brass-dark: #3F3624; /* rgb(63, 54, 36) */
+    --brass-deep: #392D15;
+    --brass-compliment: #4B505D;
+    --silver-base: #909090;
+    --silver-bright: #EEEDED; /* RGB(238, 237, 237) */
+    --silver-light: #BBBBBB;
+    --silver-dark: #616161; /* rgb(97, 97, 97) */
+    --silver-deep: #252525;
+    --silver-compliment: #737373;
+    --purple-base: #3B0050;
+    --purple-bright: #66008B;
+    --purple-light: #51006D;
+    --purple-dark: #22002E;
+    --purple-deep: #0C090D; /* Formerly: #13011A, 0B010E; */
+    --purple-compliment: #707700;
+    --black: #000000;
+
+    /* Background Colors */
+    --background-primary: var(--green-deep); /* Background of Edit/Preview Windows, and Graph. */
+    --background-primary-alt: var(--silver-deep); /* The divider between all windows, the title bar of the active note, background of the graph options, background of code blocks */
+    --background-secondary: var(--purple-deep); /* Background of the Left and Right bars, the bottom bar, the title bar of non-selected notes, and the background of the settings */
+    --background-secondary-alt: var(--black); /* The border around the side bars, highlight of selected file in the file explorer, Left bar of settings, the border around settings, and the background of off toggles */
+
+    /* Text Colors */
+    --text-accent: var(--brass-light); /* Text color for links and tags - includes links in the settings */
+    --text-accent-hover: var(--brass-base); /* Text color when you mouseover/hover links and tags */
+    --text-normal: var(--silver-light); /* The default text color in the editor/preview, and the text color of the selected file in the File Explorer */
+    --text-muted: var(-silver-dark); /* Text color for non-selected files in the File Explorer, text color for right panel, icon color for the top of each side panel, icon color for the stuff at the top of each window in the editor (class="tooltip"?), the default color for nodes in the graph view. */
+    --text-muted-rgb: 153, 153, 153; /* Unknown */
+    --text-faint: #666; /* Text color for items checked off of a todo list */
+    --text-error: #ff3333; /* Error text color, as seen in Settings -> About -> Hardware Acceleration. Do not recommend changing. */
+    --text-error-hover: #990000; /* Unknown */
+    --text-highlight-bg: rgba(139, 128, 108, 0.4); /* Highlighted text background color. "Mark" == */
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4); /* Unknown */
+    --text-selection: rgba(63, 54, 36, 0.99); /* Background color when you select a bunch of text */
+    --text-on-accent: var(--silver-light); /* Text and icon color on the top/title bar. Text color on buttons in settings. */
+    --text-title-h1: var(--brass-deep); /* Custom Color for H1 # Headings */
+    --text-title-h2: var(--brass-dark); /* Custom Color for H2 ## Headings */
+    --text-title-h3: var(--brass-base); /* Custom Color for H3 ### Headings */
+    --text-title-h4: var(--brass-light); /* Custom Color for H4 #### Headings */
+    --text-title-h5: var(--brass-bright); /* Custom Color for H5 ##### Headings */
+
+    /* UI Elements */
+    --background-modifier-border: var(--brass-deep); /* The border around the graph options, decorative divider lines ---, borders of block quotes / tables, the line separating the bottom bar and the main windows, the default for the lines connecting nodes in graph view, the border around drop boxes, and the background color of sliders */
+    --background-modifier-form-field: var(--black); /* The idle background for dropdown menus, the background for text fields */
+    --background-modifier-form-field-highlighted: var(--green-deep); /* Background color on mouseover/hover on dropdown menus and text fields */
+    --background-modifier-box-shadow: var(--silver-deep); /* Drop shadow for context-based tool tips and settings menu. */
+    --background-modifier-success: #197300; /* Unknown */
+    --background-modifier-error: #3d0000; /* The "Clear" button warning color in the File Recovery page of the settings. Do not recommend changing. */
+    --background-modifier-error-rgb: 61, 0, 0; /* Unknown */
+    --background-modifier-error-hover: #470000; /* The mouseover/hover color of the "Clear" button on the File Recovery page of the settings. Do not recommend changing. */
+    --background-modifier-cover: rgba(0, 0, 0, 0.8); /* The alpha mask / dimming of the background when a menu is open. */
+    --interactive-normal: var(--brass-base); /* The background color of the "copy" button in a code block */
+    --interactive-hover: var(--brass-dark); /* Background color when mousing over the "copy" button in a code block */
+    --interactive-accent: var(--green-dark); /* The background color for the notification pop-up when clicking the "copy" button on a code block. Background color for buttons in settings. Border color for selective/active drop down menus and text fields. Background of selected theme when managing themes. Color of bar underlining active window. */
+    --interactive-accent-rgb: 97, 97, 97; /* The color of the divider between windows when you mouse over them to resize them. */
+    --interactive-accent-hover: var(--green-deep); /* Background text when mousing over buttons in settings */
+    --interactive-success: #197300; /* Unknown */
+    --scrollbar-active-thumb-bg: rgba(238, 237, 237, 0.2); /* The color of the scroll bar position slider when you click on it to manipulate ity. */
+    --scrollbar-bg: rgba(238, 237, 237, 0.05); /* Background color of the entire scroll bar. Incredibly faint. */
+    --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1); /* The color of the scroll bar position marker. */
+    --highlight-mix-blend-mode: lighten;
+  }
+
+  /********************/
+  /* Bold and Italics */
+  /********************/
+  /* Weird Behavior: When combining Bold and Italics, the colors combine weirdly */
+  /*     _**Word**_ (Italics then Bold) - green in editor, purple in preview.    */
+  /*     **_Word_** (Bold then Italics) - green in editor, green in preview      */
+  /*    Whichever is applied first is what color it ends up being in preview     */
+
+  /* Bold */
+  /* Preview */
+  strong {
+    color: var(--purple-bright);
+  }
+
+  /* Editor */
+  .cm-strong {
+    color: var(--purple-bright);
+  }
+
+  /* Italics */
+  /* Preview */
+  em {
+    color: var(--green-bright);
+  }
+  /* Editor */
+  .cm-em {
+    color: var(--green-bright);
+  }
+
+  /* Background color of the Suggestion Highlight */
+  .suggestion-item.is-selected {
+    background-color: var(--brass-dark);
+  }
+
+  /**********************/
+  /*     Graph View     */
+  /**********************/
+  .graph-view.color-text {
+      color: var(--silver-base);
+  }
+
+  .theme-dark .graph-view.color-fill-tag {
+    color: var(--green-light);
+  }
+
+  .theme-dark .graph-view.color-fill-attachment {
+    color: var(--green-compliment);
+  }
+
+  .theme-dark .graph-view.color-fill-unresolved {
+    color: var(--purple-base);
+    Opacity:1;
+  }
+
+  /* Unused Known Settings - They default to a good color of the base color scheme. If there comes a need to explicitly name them, they are here.
+
+  .theme-dark .graph-view.color-arrow {
+    color: var(--silver-bright);
+  }
+
+  .graph-view.color-fill {
+      color: var(--brass-base);
+  }
+
+  .graph-view.color-circle {
+      color: var(--silver-light);
+  }
+
+  .graph-view.color-line {
+      color:  var(--brass-deep);
+  }
+
+  .graph-view.color-text {
+      color: var(--silver-base);
+  }
+
+  .graph-view.color-fill-highlight {
+      color: var(--green-base);
+  }
+  .graph-view.color-line-highlight {
+      color: var(--green-base);
+  }
+  */
+
+  /**************************************************/
+  /*                Headings Snippet                */
+  /*      Formatting shamelessly borrowed from      */
+  /*          @nickmilo's Cybertron theme           */
+  /**************************************************/
+
+  /* EDITOR headings */
+
+  .cm-header-1
+  {
+    font-family: var(--font-family-editor);
+    font-weight: 500;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--text-title-h1);
+  }
+
+  .cm-header-2
+  {
+    font-family: var(--font-family-editor);
+    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-title-h2);
+  }
+
+  .cm-header-3
+  {
+    font-family: var(--font-family-editor);
+    font-weight: 500;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--text-title-h3);
+  }
+
+  .cm-header-4
+  {
+    font-family: var(--font-family-editor);
+    font-weight: 500;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--text-title-h4);
+  }
+
+  .cm-header-5
+  {
+    font-family: var(--font-family-editor);
+    font-weight: 500;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--text-title-h5);
+  }
+
+  /* PREVIEW headings */
+
+  .markdown-preview-view h1
+  {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 15px;
+    color: var(--text-title-h1);
+  }
+
+  .markdown-preview-view h2
+  {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 34px;
+    color: var(--text-title-h2);
+  }
+
+  .markdown-preview-view h3
+  {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 32px;
+    color: var(--text-title-h3);
+  }
+
+  .markdown-preview-view h4
+  {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 28px;
+    color: var(--text-title-h4);
+  }
+
+  .markdown-preview-view h5
+  {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 27px;
+    color: var(--text-title-h5);
+  }
+
+  /* Presentation mode */
+  .reveal h1 {
+      color: var(--text-title-h1);
+  }
+
+  .reveal h2 {
+      color: var(--text-title-h2);
+  }
+
+  .reveal h3 {
+      color: var(--text-title-h3);
+  }
+
+  .reveal h4 {
+      color: var(--text-title-h4);
+  }
+
+  .reveal h5 {
+      color: var(--text-title-h5);
+  }
+
+
+  /************************************************************/
+  /*              Checkbox as per Molecule theme              */
+  /*       Thanks to Dmitriy-Shulha's CSS Snippets Repo       */
+  /* https://github.com/Dmitriy-Shulha/obsidian-css-snippets/ */
+  /************************************************************/
+
+  /* Preview Mode */
+  .markdown-preview-view .task-list-item-checkbox {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border: 1px solid var(--text-muted);
+    border-radius: 2px;
+    position: relative;
+    width: 1.3em;
+    height: 1.3em;
+    margin: 12px;
+    filter: none;
+    outline: none;
+    margin-right: 4px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    vertical-align: center;
+  }
+
+  /* Background color of the check box */
+  .markdown-preview-view .task-list-item-checkbox:checked {
+    border: none;
+    background-color: var(--brass-base);
+  }
+
+  /* Color of the check itself */
+  .markdown-preview-view .task-list-item-checkbox:checked::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--silver-bright);
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 14 14\'%3E%3Cpolygon points=\'5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039\'%3E%3C/polygon%3E%3C/svg%3E');
+  }
+
+  /************************************************************************/
+  /*                            Blockquotes                               */
+  /* Remove the top and right borders, style the right and bottom borders */
+  /*     Borrowed from Obsidianite via Dmitriy Shulha's Snippet Repo      */
+  /************************************************************************/
+
+  /* Preview Mode */
+  .markdown-preview-view blockquote {
+    position: relative;
+    padding: 1rem 2rem 1rem 3rem;
+    line-height: 1.4em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-bottom: 2em;
+    border-left: 4px var(--background-modifier-border) solid;
+    border-bottom: 1px var(--background-modifier-border) solid;
+    border-top: transparent;
+    border-right: transparent;
+    display: inline-block;
+    margin-right: 0 !important;
+  }
+
+  /* Doesn't currently seem like any of this is necessary. */
+
+  /*
+  .markdown-preview-view blockquote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 2px;
+    width: 60%;
+    background: linear-gradient(90deg, rgba(31, 178, 129, 0.9), var(--base3));
+  }
+
+  .markdown-preview-view blockquote::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 25%;
+    background: linear-gradient(90deg, rgba(31, 178, 129, 0.9), var(--base3));
+  }
+
+  .markdown-preview-view blockquote p {
+    position: relative;
+  }
+  */
+
+/******************************/
+/*            Tags            */
+/******************************/
+
+  /* Tag pills in Preview mode */
+  .tag:not(.token) {
+    border: none;
+    color: var(--silver-light);
+    font-size: 12px;
+    padding: 3px 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--brass-base)
+  }
+
+  /* These don't currently appear to do anything. */
+
+  /* Tag pills in tag pane
+  .tag-pane-tag-count {
+    background-color: var(--brass-base);
+    border: none;
+    color: var(--silver-light);
+    font-size: 11px;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .tag-pane-tag-text {
+    background-color: var(--brass-base);
+    border: none;
+    color: var(--silver-light);
+    font-size: 11px;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  */

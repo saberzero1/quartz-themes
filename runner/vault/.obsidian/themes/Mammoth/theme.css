@@ -1,0 +1,373 @@
+/* A color palette I like/made
+https://coolors.co/0ad1ed-dd99bb-bfffbc-647d90-544261-f5b700
+"Sky Blue Crayola":"0ad1ed", 10, 209, 237
+"Kobi":"dd99bb", 221, 153, 187
+"Granny Smith Apple":"bfffbc", 191, 255, 188
+"Slate Gray":"647d90", 100, 125, 144
+"English Violet":"544261", 84, 66, 97
+"Orange Yellow":"f5b700"} 245, 183, 0
+Dark palette:
+https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
+*/
+
+/* ------------------------------------ TODOIST ------------------------------------ */
+.contains-task-list {
+  margin-top: 5px;
+}
+
+.todoist-query-title {
+  display: inline !important;
+}
+
+.todoist-refresh-button {
+  display: inline;
+  float: right;
+  margin-left: 8px;
+  padding: 2px 3px;
+  background-color: var(--slate-gray);
+}
+.todoist-refresh-button:hover {
+  background-color: #728fa5;
+}
+
+.todoist-refresh-spin {
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox] {
+  border: 2px solid var(--todoist-red) !important;
+  background-color: var(--todoist-red-background) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox]:hover {
+  background-color: rgba(255, 117, 127, 0.5) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox] {
+  border: 2px solid var(--todoist-orange) !important;
+  background-color: var(--todoist-orange-background) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox]:hover {
+  background-color: rgba(255, 199, 119, 0.5) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox] {
+  border: 2px solid var(--todoist-blue) !important;
+  background-color: var(--todoist-blue-background) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox]:hover {
+  background-color: rgba(101, 188, 255, 0.5) !important;
+  border-radius: 50%;
+}
+.markdown-rendered ul > li.task-list-item .todoist-p4 > input[type=checkbox],
+.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox] {
+  border: 2px solid var(--slate-gray) !important;
+  background-color: rgba(180, 194, 240, 0.25) !important;
+  border-radius: 50%;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox]:hover {
+  background-color: rgba(180, 194, 240, 0.5) !important;
+  border-radius: 50%;
+}
+
+.task-metadata {
+  font-size: small;
+  color: var(--orange-yellow);
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+
+.task-metadata > * {
+  margin-right: 30px;
+  float: none;
+}
+
+.task-date.task-overdue {
+  color: rgba(221, 153, 187, 0.75);
+}
+
+.task-calendar-icon,
+.task-project-icon,
+.task-labels-icon {
+  vertical-align: middle;
+  height: 17px;
+  width: 17px;
+}
+
+.todoist-project .todoist-project {
+  margin-left: 20px;
+}
+
+.todoist-section {
+  margin-left: 20px;
+}
+
+.todoist-project .todoist-project-title {
+  font-weight: 700;
+  margin-block-end: 0px;
+}
+
+.todoist-section .todoist-section-title {
+  font-size: 11pt;
+  color: var(--sky-blue-crayola);
+  font-weight: 700;
+  margin-block-end: 0px;
+}
+
+.todoist-error {
+  border: 1px solid var(--kobi);
+  background-color: rgba(255, 152, 164, 0.05);
+  padding: 1em 1em;
+  margin: 1em 0px;
+}
+.todoist-error p {
+  margin: 0 0 1em 0;
+  font-weight: 600;
+}
+.todoist-error code {
+  background-color: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+/* ------------------------------------ STANDARD CHECKBOXES ------------------------------------ */
+.markdown-preview-view ul > li.task-list-item input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--text-normal) !important;
+  background-color: var(--kobi) !important;
+  border-radius: 10%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  filter: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 6px;
+  line-height: 0;
+  margin-right: 5px;
+  margin-left: -6px;
+}
+.markdown-preview-view ul > li.task-list-item input[type=checkbox]:hover {
+  border: 2px solid var(--text-normal) !important;
+  background-color: var(--orange-yellow) !important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked input[type=checkbox] {
+  border: 2px solid var(--orange-yellow) !important;
+  background-color: var(--granny-smith-apple) !important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: line-through;
+  color: var(--granny-smith-apple);
+}
+
+/* ------------------------------------ DARK THEME ------------------------------------ */
+.theme-dark {
+  /* Start custom colors */
+  --sky-blue-crayola: #0ad1ed;
+  --kobi: #dd99bb;
+  --kobi-dark: #DC3B8C;
+  --granny-smith-apple: #bfffbc;
+  --slate-gray: #647d90;
+  --english-violet: #544261;
+  --orange-yellow: #f5b700;
+  /* End custom colors */
+  /* Start custom TODOIST colors */
+  --todoist-red: #ff7066;
+  --todoist-red-background: rgba(255,112,102,.1);
+  --todoist-blue: #5297ff;
+  --todoist-blue-background: rgba(82,151,255,.1);
+  --todoist-orange: #ff9a14;
+  --todoist-orange-background: rgba(255,154,20,.1);
+  --todoist-green: #25b84c;
+  /* End custom TODOIST colors */
+  --background-primary: #171b1f;
+  --background-primary-alt: #20252a;
+  --background-secondary: #171e24;
+  --background-secondary-alt: #242f38;
+  --background-modifier-border: #333;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--granny-smith-apple);
+  --background-modifier-error: var( --kobi);
+  --background-modifier-error-rgb: 221, 153, 187;
+  --background-modifier-error-hover: #f1a6cc;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #0ad1ed;
+  --text-accent-hover: #48e5fa;
+  --text-normal: #dcddde;
+  --text-muted: #999;
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #666;
+  --text-error: var( --kobi);
+  --text-error-hover: #c55d91;
+  --text-highlight-bg: rgba(245, 184, 0, 0.397);
+  --text-highlight-bg-active: rgba(243, 195, 49, 0.459);
+  --text-selection: rgba(100, 125, 144, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: var(--sky-blue-crayola);
+  --interactive-accent-rgb: 10, 209, 237;
+  --interactive-accent-hover: #64d9e9;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+}
+
+/* ------------------------------------ LIGHT THEME ------------------------------------ */
+.theme-light {
+    /* Start custom colors */
+  --sky-blue-crayola: #0ad1ed;
+  --kobi: #dd99bb;
+  --kobi-dark: #DC3B8C;
+  --granny-smith-apple: #bfffbc;
+  --slate-gray: #647d90;
+  --english-violet: #544261;
+  --orange-yellow: #f5b700;
+  /* End custom colors */
+  /* Start custom TODOIST colors */
+  --todoist-red: #ff7066;
+  --todoist-red-background: rgba(255,112,102,.1);
+  --todoist-blue: #5297ff;
+  --todoist-blue-background: rgba(82,151,255,.1);
+  --todoist-orange: #ff9a14;
+  --todoist-orange-background: rgba(255,154,20,.1);
+  --todoist-green: #25b84c;
+  /* End custom TODOIST colors */
+  --background-primary: #ffffff;
+  --background-primary-alt: #f5f6f8;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --background-accent: #fff;
+  --background-modifier-border: #ddd;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #A4E7C3;
+  --background-modifier-error: #990000;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #bb0000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --text-muted: #888888;
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: #999999;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent: #7b6cd9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #8273e6;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
+}
+
+/* ------------------------------------ Makes checkboxes teal ------------------------------------ */
+.markdown-preview-view .task-list-item-checkbox {
+  filter: hue-rotate(330deg);
+}
+
+/* ------------------------------------ Makes dropdown teal ------------------------------------ */
+.dropdown {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f5b700%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+/* ------------------------------------ Makes quickswitcher selection bright ------------------------------------ */
+.suggestion-item.is-selected {
+  background-color: var(--orange-yellow);
+  color: var(--background-primary);
+  border-radius: 4px;
+  
+}
+
+/* ------------------------------------ Makes background of close button pink on hover ------------------------------------ */
+.titlebar-button.mod-close:hover {
+  background-color: #DC3B8C;
+}
+
+/* ------------------------------------ Changes color of line break ------------------------------------ */
+.markdown-preview-view hr {
+  border-color: var(--slate-gray);
+}
+
+/* ------------------------------------ Blockquote ------------------------------------ */
+.markdown-preview-view blockquote {
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid var(--slate-gray);
+  border-left-width: 3px;
+}
+
+/* ------------------------------------ Headers ------------------------------------ */
+.markdown-preview-view h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
+.markdown-preview-view h2 {
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--granny-smith-apple);
+  margin-left: 10px;
+}
+.markdown-preview-view h3 {
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--orange-yellow);
+  margin-left: 20px;
+}
+.markdown-preview-view h4 {
+  font-size: 20px;
+  color: var(--kobi);
+  margin-left: 30px;
+}
+.markdown-preview-view h5 {
+  font-size: 18px;
+  color: var(--slate-gray);
+  margin-left: 40px;
+}
+.markdown-preview-view h6 {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-left: 50px;
+}
+
+/* ------------------------------------ Highlights ------------------------------------ */
+.markdown-preview-view mark {
+  background-color: var(--kobi);
+  color: var(--background-primary);
+  font-weight: 600;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+}
+.cm-s-obsidian span.cm-highlight.obsidian-search-match-highlight {
+  background-color: var(--text-selection);
+}
