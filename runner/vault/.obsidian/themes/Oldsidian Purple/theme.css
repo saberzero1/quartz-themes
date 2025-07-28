@@ -1,0 +1,197 @@
+/* --- Old purple accent, red code color and old link color --- */
+.theme-dark {
+	--interactive-accent: #6C41D8;
+	--code-normal: #FB463B;
+	--text-accent:#814CFF;
+	--link-unresolved-decoration-style:#814CFF;
+	--background-primary:#262626ff;
+	--background-primary-alt:#161616;
+	--background-modifier-error:#5C0000;
+    --background-modifier-error-hover: #990000;
+	--text-highlight-bg: #6C41D8;
+	--nav-item-background-active: #6C41D8;
+	--tab-min-width: 100px;
+	/*	--text-selection:;*/
+}
+
+/* --- Purple highlighting --- */
+.markdown-preview-view mark {
+    background-color: var(--interactive-accent);
+    color: var(--text-normal);
+    }
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+    background-color: var(--interactive-accent);
+    color: var(--text-normal);
+}
+
+
+/* --- old tag color and padding --- */
+.cm-s-obsidian span.cm-hashtag {
+    color: var(--text-accent);
+    text-decoration: underline;
+	background-color: var(--background-primary);
+	font-size: var(--font-text);
+	padding-top: 0;
+	padding-right: 0;
+    padding-left: 0;
+}
+/* --- replicate old checkboxes kinda --- */
+.task-list-item-checkbox {
+    appearance: none;
+    filter: none;
+    background-color: #3b3b3b;
+    border-radius: 2px;
+    border: solid 1.5px #737373;
+}
+/* checked */
+.HyperMD-task-line > label > input[data-task="x"],.is-checked > .task-list-item-checkbox {
+    background-image: url('data:image/svg+xml; utf8, <svg width="13px" height="13px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #var(--text-accent);
+    border: none;
+	}
+.HyperMD-task-line > label > input[type=checkbox],.is-checked > input.task-list-item-checkbox::after {
+    content: none;
+    height: none;
+	}
+.HyperMD-task-line > label > input[type=checkbox]:checked:after {
+    content: none;
+    height: none;
+	}
+
+.callout-content > contains-task-list > input.dataview.task-list-item-checkbox {
+    background-image: url('data:image/svg+xml; utf8, <svg width="13px" height="13px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #var(--text-accent);
+    border: none;
+	}
+
+
+/* --- Old page separator --- */
+.markdown-rendered hr {
+    border-color: var(--text-faint);
+}
+/* --- Old callouts --- */
+.callout-title > * {
+    align-self: center;
+}
+body {
+    --callout-padding: 0;
+    --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    --callout-content-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    --callout-radius: 5px;
+    --callout-border-opacity:  1;
+	--callout-blend-mode: normal;
+}
+
+.callout {
+    border-left: 4px solid rgba(var(--callout-color), 1);
+}
+
+.callout-title-inner {
+    color: #DCDDDE;
+}
+
+.callout-title {
+    background-color: rgba(var(--callout-color), 0.2);
+}
+
+.callout-content {
+  background-color: var(--background-primary-alt);
+}
+
+/* --- Purple clickable tag button --- */
+.clickable-icon.is-active {
+    opacity: var(--icon-opacity-hover);
+    color: #FFFFF9;
+    background-color: var(--interactive-accent);
+}
+		
+/* --- Old sidebar color --- */
+.workspace-leaf-content {
+    background-color: var(--background-primary-alt);
+}
+.workspace-tab-header-container {
+    background-color: var(--background-primary-alt);
+}
+.titlebar-button {
+    background-color: var(--background-primary-alt);
+}
+
+/* --- Old metadata/yaml text size --- */
+.cm-hmd-frontmatter {
+    font-size: 14px;
+}
+.frontmatter-container {
+    font-size: 14px;
+	color: var(--text-muted);
+    font-family: var(--font-monospace);
+}
+.frontmatter-container .frontmatter-section-label {
+    font-size: 14px;
+	color: var(--text-muted);
+    font-family: var(--font-monospace);
+}
+
+/* --- Fix link underline --- */
+.markdown-rendered .internal-link.is-unresolved, .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+    text-decoration-line: underline;
+    text-decoration-color: var(--link-unresolved-decoration-style);
+}
+
+/* --- Minimum tab size --- */
+.workspace .mod-root .workspace-tab-header {
+    min-width: var(--tab-min-width);
+}
+
+/* --- Align tables  by css classes--- */
+.AlignTopRight .table-view-table > tbody > tr > td {
+    vertical-align: top;
+    text-align: right;
+}
+
+.AlignTopLeft .table-view-table > tbody > tr > td {
+    vertical-align: top;
+    text-align: left;
+}
+
+.AlignTopCenter .table-view-table > tbody > tr > td {
+    vertical-align: top;
+    text-align: center;
+}
+
+.AlignCenterLeft .table-view-table > tbody > tr > td {
+    vertical-align: Center;
+    text-align: left;
+}
+
+.AlignCenterRight .table-view-table > tbody > tr > td {
+    vertical-align: center;
+    text-align: right;
+}
+
+.AlignCenterCenter .table-view-table > tbody > tr > td {
+    vertical-align: center;
+    text-align: center;
+}
+
+.AlignBottomLeft .table-view-table > tbody > tr > td {
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.AlignBottomRight .table-view-table > tbody > tr > td {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.AlignBottomCenter .table-view-table > tbody > tr > td {
+    vertical-align: bottom;
+    text-align: center;
+}
+/* --- Remove header padding--- */
+.cm-s-obsidian .cm-line.HyperMD-header {
+     padding-top:0;
+}

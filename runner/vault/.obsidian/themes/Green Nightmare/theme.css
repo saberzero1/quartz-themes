@@ -1,0 +1,60 @@
+/* Green Nightmare - Obsidian Theme */
+
+.theme-dark {
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+
+  --text-normal: #eeeeee;
+  --text-muted: #cccccc;
+  --text-faint: #cccccc;
+  --text-accent: #39ff14;
+  --text-on-accent: #000000;
+
+  --italic-color: #dddddd;
+  --bold-color: #ffffff;
+  --tag-color: #74c365;
+  --code-normal: #a8c090;
+
+  --link-color: #ace1af;
+  --link-decoration: underline;
+  --link-decoration-thickness: 1px;
+  --link-external-color: #568203;
+
+  --text-selection: #486e02;
+
+  --h1-color: #98fb98;
+  --h2-color: #50c878;
+  --h3-color: #a8e4a0;
+  --h4-color: #a9ba9d;
+  --h5-color: #9dc183;
+  --h6-color: #486e02;
+
+  --inline-title-color: #39ff14;
+  --tab-font-weight: 900;
+  --tab-text-color-focused-active-current: #39ff14;
+  --tab-text-weight-focused-active-current: 900;
+
+  --icon-color-focused: #39ff14;
+  --icon-color-hover: #39ff14;
+
+  --nav-item-color-hover: #39ff14;
+  --nav-item-color-active: #39ff14;
+  --nav-item-size: var(--font-ui-medium);
+  --nav-item-weight: 500;
+  --nav-item-weight-active: 900;
+  --nav-item-background-active: #000000;
+  --nav-file-tag: #f4ec9e;
+  --nav-indentation-guide-color: #5f6148;
+
+  --interactive-accent: #39ff14;
+  --scrollbar-thumb-bg: #39ff14;
+  --indentation-guide-color: #39ff14;
+  --indentation-guide-color-active: #39ff14;
+
+  --table-header-background: #2a2a2a;
+  --table-row-alt-background: #141414;
+}
+
+/* For more css snippets: https://github.com/zamsyt/obsidian-snippets/blob/main/Note%20color%20scheme.css */

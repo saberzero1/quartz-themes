@@ -1,0 +1,1278 @@
+/******************************************************************
+ *                                                                
+ *                        ＶＯＲＴＥＸ  |  V1.0                   
+ *                Crafted with 💫 by @abhimangs                   
+ *                                                                
+ * 📚 Readme: https://github.com/abhimangs/Obsidian-Vortex         
+ * ✉️ Contact: theabhimangs@gmail.com                            
+ *                                                               
+ ******************************************************************/
+
+/* ~~~~~~~~ LIGHT MODE ~~~~~~~ */
+.theme-light {
+  --background-primary: #ffffff;
+  --background-primary-alt: #ffffff;
+  --background-secondary: #eeeeee;
+  --background-secondary-alt: #eeeeee;
+  --alt-color: #111111;
+}
+
+/* ~~~~~~~~ DARK MODE ~~~~~~~ */
+.theme-dark {
+  --background-primary: #111111;
+  --background-primary-alt: #0d0b12;
+  --background-secondary: #1a1a1a;
+  --background-secondary-alt: #0d0b12;
+  --alt-color: #ffffff;
+}
+
+body {
+
+  --theme-color: var(--color-accent);
+  --sub-accent: #f4569d;
+  --sub-accent-60: color-mix(in srgb, var(--sub-accent) 60%, transparent);
+
+  /* FONTS STYLING */
+  --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif;
+
+  /* Heading Color Styling */
+  --text-title-h1: #00e5ff;
+  --text-title-h2: #ffca28;
+  --text-title-h3: #ff5d68;
+  --text-title-h4: #d500f9;
+  --text-title-h5: #2ECC71;
+  --text-title-h6: #db3eb1;
+
+  --accent-opacity-5: color-mix(in srgb, var(--theme-color) 5%, transparent);
+  --accent-opacity-10: color-mix(in srgb, var(--theme-color) 10%, transparent);
+  --accent-opacity-20: color-mix(in srgb, var(--theme-color) 20%, transparent);
+  --accent-opacity-30: color-mix(in srgb, var(--theme-color) 30%, transparent);
+  --accent-opacity-40: color-mix(in srgb, var(--theme-color) 40%, transparent);
+  --accent-opacity-50: color-mix(in srgb, var(--theme-color) 50%, transparent);
+  --accent-opacity-60: color-mix(in srgb, var(--theme-color) 60%, transparent);
+  --accent-opacity-70: color-mix(in srgb, var(--theme-color) 70%, transparent);
+  --accent-opacity-80: color-mix(in srgb, var(--theme-color) 80%, transparent);
+  --accent-opacity-90: color-mix(in srgb, var(--theme-color) 90%, transparent);
+
+  --accent-brighter-10: color-mix(in srgb, var(--theme-color) 90%, #ffffff);
+  --accent-brighter-30: color-mix(in srgb, var(--theme-color) 70%, #ffffff);
+  --accent-brighter-50: color-mix(in srgb, var(--theme-color) 50%, #ffffff);
+  --accent-brighter-70: color-mix(in srgb, var(--theme-color) 30%, #ffffff);
+  --accent-brighter-90: color-mix(in srgb, var(--theme-color) 10%, #ffffff);
+
+  --accent-darker-10: color-mix(in srgb, var(--theme-color) 90%, #111111);
+  --accent-darker-30: color-mix(in srgb, var(--theme-color) 70%, #111111);
+  --accent-darker-50: color-mix(in srgb, var(--theme-color) 50%, #111111); 
+  --accent-darker-70: color-mix(in srgb, var(--theme-color) 30%, #111111); 
+  
+  /* Linear Gradient for the HR */
+  --hr-gradient: linear-gradient( to right,
+    rgba(0, 255, 255, 0) 0%,
+    #9400D3 25%,
+    #1E90FF 50%,
+    #9400D3 75%,
+    rgba(0, 255, 255, 0) 100%
+    );
+
+    --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c);
+    --color-hr: var(--theme-color);
+    --color-italic: var(--theme-color);
+    --list-marker-color: var(--theme-color);
+    --list-bullet-radius: 100%;
+
+    --checkbox-marker-color: var(--background-primary);
+    --checkbox-color: var(--theme-color);
+    --checkbox-color-hover: var(--accent-brighter-30);
+    --checkbox-border-color: var(--accent-brighter-30);
+    --checkbox-border-color-hover: var(--theme-color);
+
+    --table-border-color: var(--theme-color);
+    --table-border-width: 1px;
+
+    --tag-color: var(--theme-color);
+    --tag-color-hover: var(--accent-brighter-30);
+    --tag-background: var(--accent-opacity-10);
+    --tag-background-hover: var(--accent-opacity-30);
+    --tag-radius: 5px;
+
+    --scrollbar-active-thumb-bg: var(--accent-opacity-80);
+    --slider-track-background: var(--accent-opacity-40);
+
+    --background-modifier-border: var(--accent-opacity-5);
+
+    --vault-profile-color-hover: var(--theme-color);
+
+    --blockquote-border-thickness: unset;
+
+    --callout-radius: 4px;
+    --callout-border-width: 0px;
+    --callout-background-opacity: 0.2;
+    --callout-color-green: 50, 200, 100;
+    --callout-color-yellow: 255, 204, 0;
+    --callout-color-red: 255, 80, 80;
+    --callout-color-blue: 50, 150, 255;
+    --callout-color-purple: 150, 100, 250;
+    --callout-color-orange: 255, 150, 50;
+}
+
+/* HEADING - GRADIENT UNDERLINE STYLES */
+.markdown-preview-section,
+.HyperMD-header{
+  --gradient-h1: linear-gradient(to right, #00c8ff, #ff00d0 45%, var(--background-primary) 90%);
+  --gradient-h2: linear-gradient(to right, #f9ff4f, #f35b35 40%, var(--background-primary) 80%);
+  --gradient-h3: linear-gradient(to right, #ff1793, #ca0aff 35%, var(--background-primary) 70%);
+  --gradient-h4: linear-gradient(to right, #9D50BB, #6E48AA 30%, var(--background-primary) 60%);
+  --gradient-h5: linear-gradient(to right, #43E97B, #38F9D7 25%, var(--background-primary) 50%);
+  --gradient-h6: linear-gradient(to right, #fc46c2, #3F5EFB 22%, var(--background-primary) 45%);
+}
+
+/* **************************************************** */
+/* *                                                  * */
+/* *                 HEADINGS SECTION                 * */
+/* *                                                  * */
+/* **************************************************** */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  var(--default-font);
+  font-weight: 600;
+}
+
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6 {
+  border-bottom: 1px solid;
+  border-width: 1px;
+  border-image-slice: 1;
+}
+
+.HyperMD-header.HyperMD-header-1 {
+  border-bottom: 2.5px solid;  /* Slightly thicker border for H1 */
+  border-width: 2.5px;
+  border-image-slice: 1;
+  border-image-source: var(--gradient-h1);
+}
+
+.HyperMD-header.HyperMD-header-2 {
+  border-bottom: 2px solid;  /* Slightly thicker border for H2 */
+  border-width: 2px;
+  border-image-slice: 1;
+  border-image-source: var(--gradient-h2);
+}
+
+.HyperMD-header.HyperMD-header-3 {
+  border-image-source: var(--gradient-h3);
+}
+
+.HyperMD-header.HyperMD-header-4 {
+  border-image-source: var(--gradient-h4);
+}
+
+.HyperMD-header.HyperMD-header-5 {
+  border-image-source: var(--gradient-h5);
+}
+
+.HyperMD-header.HyperMD-header-6 {
+  border-image-source: var(--gradient-h6);
+}
+
+.HyperMD-header {
+  padding: 20px;
+}
+
+.markdown-preview-section h1,
+.cm-header-1 {
+  font-size: 34px;
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-section h2,
+.cm-header-2 {
+  font-size: 26px;
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-section h3,
+.cm-header-3 {
+  font-size: 22px;
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-section h4,
+.cm-header-4 {
+  font-size: 18px;
+  color: var(--text-title-h4);
+}
+
+.markdown-preview-section h5,
+.cm-header-5 {
+  font-size: 18px;
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-section h6,
+.cm-header-6 {
+  font-size: 18px;
+  color: var(--text-title-h6);
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  /* Consistent margin and padding for all headings */
+  margin: 45px 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-width: 35%;
+  border-image-slice: 1;
+}
+
+.markdown-preview-view h1{
+  border-bottom: 2.5px solid;
+  border-image-source: var(--gradient-h1);
+}
+
+.markdown-preview-view h2{
+  border-bottom: 2px solid;
+  border-image-source: var(--gradient-h2);
+}
+
+.markdown-preview-view h3{
+  border-bottom: 1px solid;
+  border-image-source: var(--gradient-h3);
+}
+
+.markdown-preview-view h4{
+  border-bottom: 1px solid;
+  border-image-source: var(--gradient-h4);
+}
+
+.markdown-preview-view h5{
+  border-bottom: 1px solid;
+  border-image-source: var(--gradient-h5);
+}
+
+.markdown-preview-view h6{
+  border-bottom: 1px solid;
+  border-image-source: var(--gradient-h6);
+}
+.view-header-icon {
+  color: var(--theme-color);
+}
+
+/** Adding different # colors **/
+
+.cm-formatting.cm-formatting-header.cm-header {
+  color: var(--theme-color);
+  opacity: 0.45;
+}
+
+/* Heading styling - Glow effect */
+
+.cm-header-1:not(.cm-formatting),
+h1 {
+  text-shadow: 0 0 0.5em var(--text-title-h1);
+}
+
+.cm-header-2:not(.cm-formatting),
+h2 {
+  text-shadow: 0 0 0.5em var(--text-title-h2);
+}
+
+.cm-header-3:not(.cm-formatting),
+h3 {
+  text-shadow: 0 0 0.5em var(--text-title-h3);
+}
+
+.cm-header-4:not(.cm-formatting),
+h4 {
+  text-shadow: 0 0 0.5em var(--text-title-h4);
+}
+
+.cm-header-5:not(.cm-formatting),
+h5 {
+  text-shadow: 0 0 0.5em var(--text-title-h5);
+}
+
+.cm-header-6:not(.cm-formatting),
+h6 {
+  text-shadow: 0 0 0.5em var(--text-title-h6);
+}
+
+.cm-header.cm-hmd-internal-link,
+.internal-link{
+  text-shadow: none;
+  border-bottom: none;
+  border-image-source: none;  
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |           HR STYLING - Horizontal Line          | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.cm-line hr,
+.markdown-preview-view hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: var(--hr-gradient);
+}
+
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: '☀';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.05rem;
+  color: var(--color-hr);
+  text-shadow: 0 0 0.5em var(--color-hr);
+  background-color: var(--background-primary);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                    BOLD TEXT                    | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.cm-strong,
+strong {
+  padding: 0;
+  background-image: var(--gradient-bold);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold !important;
+}
+
+strong .math.math-inline .MathJax {
+  position: inherit !important;
+}
+
+.cm-strong .cm-selection,
+strong::selection {
+  -webkit-text-fill-color: var(--theme-color);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                  ITALIC STYLING                 | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.cm-em,
+em {
+  color: var(--accent-brighter-10);
+  font-family: var(--default-font);
+  font-style: italic;
+}
+
+.cm-em.cm-formatting-em {
+  display: inline-flex;
+  width: 0.45rem;
+  font-size: 0.6rem;
+  vertical-align: text-top;
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                LISTING STYLES                   | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--theme-color);
+}
+
+.cm-indent{
+  color: var(--theme-color);
+  opacity: 0.5;
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-width: 2px;
+  border-color: var(--theme-color);
+  margin-left: -1px;
+}
+
+.markdown-source-view.mod-cm6 .cm-active-indent::before {
+  opacity: 0.8;
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                  HIGHLIGHTING                   | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark, 
+.markdown-preview-view span.highlight {
+  background-image: none !important;
+  background-color: var(--accent-opacity-50);
+  color: var(--alt-color);
+  padding: 0 4px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-block;
+  line-height: 1.2;
+  outline: 2px solid var(--accent-opacity-80);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                 SETTINGS MENU                   | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.vertical-tab-header-group-title{
+  text-align: center;
+  color: var(--alt-color);
+  font-size: var(--font-ui-medium);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.vertical-tab-header-group-title:hover{
+  color: var(--theme-color);
+  text-shadow: 0 0 0.5em var(--theme-color);
+  transition: 200ms;
+}
+
+.vertical-tab-header-group-items{
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.vertical-tab-nav-item:hover{
+  background-color: var(--accent-opacity-30);
+  color: var(--theme-color);
+  text-shadow: 0 0 0.5em var(--theme-color);
+}
+
+.vertical-tab-nav-item.is-active{
+  background-color: var(--accent-opacity-10) !important;
+  color: var(--accent-brighter-30) !important;
+  outline: 2px solid var(--theme-color);
+}
+
+.clickable-icon.extra-setting-button,
+.clickable-icon.setting-add-hotkey-button,
+.setting-item-control .clickable-icon{
+  opacity: 0.6;
+}
+
+.clickable-icon.extra-setting-button:hover,
+.clickable-icon.setting-add-hotkey-button:hover,
+.setting-item-control .clickable-icon:hover{
+  opacity: 1;
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-10);
+}
+
+.dropdown{
+  color: var(--alt-color);
+}
+
+.modal.mod-settings.mod-sidebar-layout .modal-close-button:hover{
+  color: var(--theme-color);
+  background: var(--accent-opacity-10);
+}
+
+button.mod-cta{
+  color: var(--alt-color) !important;
+  background-color: var(--accent-opacity-80) !important;
+}
+
+.mod-cta:hover{
+  outline: 3px solid var(--accent-opacity-80);
+  background-color: var(--accent-opacity-10) !important;
+  color: var(--theme-color) !important;
+  text-shadow: 0 0 0.5em var(--theme-color);
+  transition: 100ms;
+}
+
+.community-modal-readme.markdown-rendered h1,
+.community-modal-readme.markdown-rendered h2,
+.community-modal-readme.markdown-rendered h3,
+.community-modal-readme.markdown-rendered h4,
+.community-modal-readme.markdown-rendered h5,
+.community-modal-readme.markdown-rendered h6 {
+  text-shadow: unset;
+}
+
+.community-modal-readme.markdown-rendered strong:has(a) {
+  padding: 0;
+  background-image: none;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  color: var(--alt-color);
+  -webkit-text-fill-color: unset;
+  font-weight: bold !important;
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |             LEFT SIDE DOCK STYLING              | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.clickable-icon.side-dock-ribbon-action,
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .nav-buttons-container .clickable-icon.nav-action-button,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .nav-buttons-container .clickable-icon.nav-action-button{
+  opacity: 0.8;
+}
+
+.clickable-icon.side-dock-ribbon-action:hover,
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .nav-buttons-container .clickable-icon.nav-action-button:hover,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .nav-buttons-container .clickable-icon.nav-action-button:hover{
+  opacity: 1;
+  color: var(--theme-color);
+  background: var(--accent-opacity-10);
+}
+
+.sidebar-toggle-button.mod-left .clickable-icon:hover{
+  color: var(--theme-color);
+  background: var(--accent-opacity-20);}
+
+.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left .clickable-icon{
+  color: var(--theme-color);
+  background: var(--accent-opacity-10);
+  outline: 3px solid var(--accent-opacity-60);
+}
+
+.tooltip{
+  color: var(--theme-color);
+  text-shadow: 0 0 0.5em var(--accent-opacity-30);
+}
+
+.workspace-drawer-vault-actions .clickable-icon:hover{
+  color: var(--theme-color);
+  background: var(--accent-opacity-20);
+  transition: 100ms;
+}
+
+/* +-----------------------------+ */
+/* |  FOLDER NAVIGATION STYLING  | */
+/* +-----------------------------+ */
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .tree-item.nav-folder .tree-item-icon.collapse-icon svg{
+  color: var(--theme-color);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split .tree-item.nav-folder.is-collapsed .tree-item-icon.collapse-icon svg{
+  color: var(--icon-color);
+}
+
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active{
+  color: var(--accent-brighter-30);
+  outline: 2px solid var(--accent-opacity-60);
+  background-color: var(--accent-opacity-10);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover{
+  color: var(--theme-color) !important;
+  text-shadow: 0 0 0.2em var(--theme-color);
+  background-color: var(--accent-opacity-20) !important;
+}
+
+/* +-------------------------------------------------------------+ */
+/* |                                                             | */
+/* |    LEFT & RIGHT DOCK HEADER STYLING FOR HOVER AND ACTIVE    | */
+/* |                                                             | */
+/* +-------------------------------------------------------------+ */
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split 
+.workspace-tab-header.tappable,
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split 
+.workspace-tab-header.tappable {
+  opacity: 0.8;
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split 
+.workspace-tab-header.tappable.is-active 
+.workspace-tab-header-inner-icon,
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split 
+.workspace-tab-header.tappable.is-active 
+.workspace-tab-header-inner-icon{
+  opacity: 1;
+  color: var(--theme-color);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split 
+.workspace-tab-header.tappable.is-active,
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split 
+.workspace-tab-header.tappable.is-active {
+  opacity: 1;
+  background-color: var(--accent-opacity-20);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split 
+.workspace-tab-header.tappable:hover 
+.workspace-tab-header-inner-icon,
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split 
+.workspace-tab-header.tappable:hover 
+.workspace-tab-header-inner-icon{
+  opacity: 1;
+  color: var(--theme-color);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split 
+.workspace-tab-header.tappable:hover,
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split 
+.workspace-tab-header.tappable:hover {
+  opacity: 1;
+  background-color: var(--accent-opacity-5);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                 TOP BAR STYLING                 | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+/* MD FILE HEADING TABS STYLING
+-------------------------------- */
+.workspace-split.mod-vertical.mod-root 
+.workspace-tab-header.tappable.is-active 
+.workspace-tab-header-inner{
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-20);
+  border: 2px solid var(--theme-color);
+  border-radius: 8px;
+}
+
+.workspace-split.mod-vertical.mod-root 
+.workspace-tab-header.tappable 
+.workspace-tab-header-inner{
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.workspace-split.mod-vertical.mod-root 
+.workspace-tab-header.tappable:hover
+.workspace-tab-header-inner{
+  color: var(--theme-color);
+  text-shadow: 0 0 0.5em var(--theme-color);
+  background-color: var(--accent-opacity-20);
+}
+
+.workspace-split.mod-vertical.mod-root 
+.workspace-tab-header.tappable.is-active:hover 
+.workspace-tab-header-inner{
+  text-shadow: unset;
+}
+
+/* Add new tab and the right side dock button hover */
+.workspace-tab-header-new-tab .clickable-icon:hover,
+.sidebar-toggle-button.mod-right .clickable-icon:hover{
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-20);
+}
+
+.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right .clickable-icon{
+  color: var(--theme-color);
+  background: var(--accent-opacity-10);
+  outline: 3px solid var(--accent-opacity-50);
+}
+
+/* +-------------------------------------------------+ */
+/* |           MINIMIZE, MAXIMIZE & CLOSE            | */
+/* +-------------------------------------------------+ */
+
+.titlebar-button-container.mod-right .titlebar-button.mod-minimize:hover,
+.titlebar-button-container.mod-right .titlebar-button.mod-maximize:hover{
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-10);
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #820000;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.titlebar-button-container.mod-right .titlebar-button.mod-close:hover {
+  animation: pulse 1s ease-in-out infinite;
+  color: var(--alt-color);
+}
+
+.workspace-tab-header-inner-close-button:hover svg{
+  color: var(--theme-color);
+}
+
+
+/* +-------------------------------------------------+ */
+/* |                   TITLE BAR                     | */
+/* +-------------------------------------------------+ */
+
+.view-actions button:hover,
+.view-header-left .view-header-nav-buttons button:hover{
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-10);
+}
+
+.menu-item.tappable{
+  opacity: 0.6;
+}
+.menu-item.tappable:hover,
+.menu-item.tappable:hover .menu-item-icon{
+  opacity: 1;
+  color: var(--theme-color);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                    LINK STYLING                 | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+/* +-------------------------------------------------+ */
+/* |                    ANIMATIONS                   | */
+/* +-------------------------------------------------+ */
+
+/* Hover animation to expand the background highlight */
+@keyframes hoverFill {
+  0% {
+    background-size: 100% 18%;
+    background-position: 0 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: 0 100%;
+  }
+}
+
+/* Unhover animation to shrink the background highlight */
+@keyframes unhoverFill {
+  0% {
+    background-size: 100% 100%;
+    background-position: 0 100%;
+  }
+  100% {
+    background-size: 100% 18%;
+    background-position: 0 100%;
+  }
+}
+
+/* +-------------------------------------------------+ */
+/* |                  LINK STYLING                   | */
+/* +-------------------------------------------------+ */
+
+/** Styling for links in Editor Mode **/
+/* Ensures consistent color, background, and text-fill for internal links in the editor. */
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+  color: var(--theme-color);
+  -webkit-text-fill-color: var(--alt-color);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 2px;
+  text-decoration: none;
+}
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+.internal-link{
+  font-weight: bold;
+}
+/* Adds a subtle gradient to the underline in editor mode. */
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
+  background-image: linear-gradient(
+    to bottom,
+    var(--sub-accent-60) 0%,
+    var(--sub-accent-60) 100%
+  );
+}
+
+/* Dims the color of Markdown formatting characters for links. */
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--theme-color) !important;
+  opacity: 0.25;
+}
+
+/** Styling for links in Preview Mode **/
+/* Ensures preview mode links have consistent padding and background behavior. */
+.external-link {
+  padding: 0;
+}
+
+/* Shared base styling for internal and external links in preview mode, 
+   including animations and transitions. */
+.internal-link,
+.external-link {
+  color: var(--alt-color) !important;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 100% 18%;
+  text-decoration: none;
+  transition: background 350ms ease-in-out;
+  background-image: linear-gradient(
+    to bottom,
+    var(--sub-accent-60) 0%,
+    var(--sub-accent-60) 100%
+  );
+}
+
+/* Applies unhover animation to internal and external links. */
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.external-link {
+  animation: unhoverFill 0.5s forwards;
+  transition: background 350ms ease-in-out;
+}
+
+/* Adds a different gradient for internal links. */
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+.internal-link {
+  background-image: linear-gradient(
+    to bottom,
+    var(--accent-opacity-50) 0%,
+    var(--accent-opacity-50) 100%
+  );
+  animation: unhoverFill 0.5s forwards;
+  transition: background 350ms ease-in-out;
+}
+
+/** Hover Effects **/
+/* Changes background size and color smoothly for internal links on hover. */
+.internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+  -webkit-text-fill-color: var(--alt-color);
+  color: var(--alt-color);
+  animation: hoverFill 0.5s forwards;
+  background-size: 4px 50px;
+  text-decoration: none !important;
+}
+
+/* Changes background size and color smoothly for external links on hover. */
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+.external-link:hover {
+  -webkit-text-fill-color: var(--alt-color);
+  color: var(--alt-color);
+  animation: hoverFill 0.5s forwards;
+  background-size: 4px 50px;
+  text-decoration: none !important;
+}
+
+/* +-------------------------------------------------+ */
+/* |                GENERAL LINK STYLING             | */
+/* +-------------------------------------------------+ */
+
+/* Base styling for all links, ensuring they share consistent colors and z-index behavior. */
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  text-decoration: none !important;
+  color: var(--alt-color);
+  position: relative;
+  z-index: 1;
+}
+
+/* Styling for URL text, reducing opacity for a cleaner appearance. */
+.cm-url {
+  color: var(--theme-color) !important;
+  opacity: 0.4;
+  font-weight: normal;
+}
+
+/* Adjusts opacity for Markdown formatting used in image links. */
+.cm-formatting-image {
+  color: var(--theme-color) !important;
+  opacity: 0.7;
+}
+
+/* Ensures hover links retain their color consistency in all contexts. */
+a:hover,
+.internal-link:hover {
+  text-decoration: none !important;
+  color: var(--theme-color);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                  META DATA STYLING              | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.metadata-properties-heading:hover .collapse-indicator.collapse-icon svg{
+  color: var(--theme-color);
+}
+
+.metadata-property-value .clickable-icon{
+  opacity: 0.6;
+}
+
+.metadata-property-value .clickable-icon:hover{
+  opacity: 1;
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-10);
+  transition: 100ms;
+}
+
+.metadata-add-button.text-icon-button:hover .text-button-icon{
+  color: var(--theme-color);
+}
+
+.metadata-add-button.text-icon-button:hover{
+  color: var(--theme-color);
+  background-color: var(--accent-opacity-10);
+  outline: 2px solid var(--accent-opacity-40);
+}
+
+.metadata-property:hover{
+  outline: 2px solid var(--accent-opacity-40);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |              INLINE CODING STYLING              | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ),
+.markdown-preview-view code {
+  overflow-wrap: break-word;
+  background-color: var(--accent-opacity-10); /* Light background for inline code */
+  word-wrap: break-word;
+  padding: 0 5px;
+  border-radius: 0.3rem; /* Rounded corners */
+  color: var(--theme-color) !important; /* Text color */
+}
+
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
+  background-color: var(--background-secondary);
+}
+
+/* Inline code for light/dark modes */
+:not(pre) > code[class*='language-'] {
+  padding: 4px 7px;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |         PROGRAMMING LANGUAGES STYLING           | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+.cm-s-obsidian span.code-block-flair:not(:empty) {
+  color: var(--theme-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  background: var(--accent-darker-70);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--sub-accent);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: var(--accent-opacity-5);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
+  position: absolute;
+  content: '';
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  margin-top: 1.5em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  background-color: var(--accent-opacity-5);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border: none;
+}
+
+pre {
+  position: relative;
+}
+
+pre[class*='language-']:before {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: #fff;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  padding: 0;
+  color: var(--theme-color) !important;
+  content: '';
+  text-transform: uppercase;
+  background: var(--accent-opacity-5);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  z-index: 10;
+}
+
+pre[class$='javascript']:before,
+pre[class$='js']:before {
+  content: 'JavaScript';
+}
+
+pre[class$='typescript']:before,
+pre[class$='ts']:before {
+  content: 'typescript';
+}
+
+pre[class$='html']:before {
+  content: 'html';
+}
+
+pre[class$='css']:before {
+  content: 'css';
+}
+
+pre[class$='ejs']:before {
+  content: 'ejs';
+}
+
+pre[class$='vue']:before {
+  content: 'vue';
+}
+
+pre[class$='react']:before {
+  content: 'react';
+}
+
+pre[class$='shell']:before {
+  content: 'Shell';
+}
+
+pre[class$='powershell']:before {
+  content: 'PowerShell';
+}
+
+pre[class$='json']:before {
+  content: 'Json';
+}
+
+pre[class$='python']:before {
+  content: 'python';
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                 CALLOUT STYLING                 | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+.callout {
+  overflow: hidden;
+  border-style: solid;
+  border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+  border-width: var(--callout-border-width);
+  border-radius: var(--callout-radius);
+  margin: 1em 0;
+  background-color: rgba(var(--callout-color), var(--callout-background-opacity));
+  padding: var(--callout-padding);
+}
+
+/* ╔═══════════════════════════╗ */
+/* ║      Custom Callout       ║ */
+/* ╚═══════════════════════════╝ */
+.callout[data-callout="success"] {
+  --callout-color: var(--callout-color-green);
+  --callout-icon: lucide-trophy;
+}
+.callout[data-callout="warning"] {
+  --callout-color: var(--callout-color-yellow);
+  --callout-icon: lucide-octagon-alert;
+}
+.callout[data-callout="error"] {
+  --callout-color: var(--callout-color-red);
+  --callout-icon: lucide-triangle-alert;
+}
+.callout[data-callout="info"] {
+  --callout-color: var(--callout-color-blue);
+  --callout-icon: lucide-info;
+}
+.callout[data-callout="quote"] {
+  --callout-color: var(--callout-color-blue);
+  --callout-icon: lucide-quote;
+}
+.callout[data-callout="note"] {
+  --callout-color: var(--callout-color-purple);
+  --callout-icon: lucide-notebook-pen;
+}
+.callout[data-callout="highlight"] {
+  --callout-color: var(--callout-color-yellow);
+  --callout-icon: lucide-highlighter;
+}
+.callout[data-callout="idea"] {
+  --callout-color: var(--callout-color-purple);
+  --callout-icon: lucide-lightbulb;
+}
+.callout[data-callout="task"] {
+  --callout-color: var(--callout-color-green);
+  --callout-icon: lucide-circle-check-big;
+}
+.callout[data-callout="reminder"] {
+  --callout-color: var(--callout-color-green);
+  --callout-icon: lucide-bell-ring;
+}
+.callout[data-callout="analysis"] {
+  --callout-color: var(--callout-color-blue);
+  --callout-icon: lucide-chart-pie;
+}
+.callout[data-callout="inspiration"] {
+  --callout-color: var(--callout-color-yellow);
+  --callout-icon: lucide-sunrise;
+}
+.callout[data-callout="faq"] {
+  --callout-color: var(--callout-color-blue);
+  --callout-icon: lucide-message-circle-question;
+}
+.callout[data-callout="code"] {
+  --callout-color: var(--callout-color-purple);
+  --callout-icon: lucide-code;
+}
+.callout[data-callout="goal"] {
+  --callout-color: var(--callout-color-green);
+  --callout-icon: lucide-target;
+}
+.callout[data-callout="celebration"] {
+  --callout-color: var(--callout-color-orange);
+  --callout-icon: lucide-party-popper;
+}
+.callout[data-callout="bug"] {
+  --callout-color: var(--callout-color-red);
+  --callout-icon: lucide-bug;
+}
+.callout[data-callout="gift"] {
+  --callout-color: var(--callout-color-orange);
+  --callout-icon: lucide-gift;
+}
+.callout[data-callout="puzzle"] {
+  --callout-color: var(--callout-color-purple);
+  --callout-icon: lucide-puzzle;
+}
+.callout[data-callout="bookmark"] {
+  --callout-color: var(--callout-color-orange);
+  --callout-icon: lucide-bookmark;
+}
+.callout[data-callout="calendar"] {
+  --callout-color: var(--callout-color-yellow);
+  --callout-icon: lucide-calendar;
+}
+.callout[data-callout="team"] {
+  --callout-color: var(--callout-color-orange);
+  --callout-icon: lucide-users;
+}
+
+/* ╔═══════════════════════════╗ */
+/* ║         Checkbox          ║ */
+/* ╚═══════════════════════════╝ */
+input[data-task='/']:checked,
+li[data-task='/'] > input:checked,
+li[data-task='/'] > p > input:checked {
+  background-image: none;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+input[data-task='/']:checked:after,
+li[data-task='/'] > input:checked:after,
+li[data-task='/'] > p > input:checked:after {
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-color: var(--theme-color);
+  width: calc(50% - 0.5px);
+  height: 100%;
+  -webkit-mask-image: none;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+  text-decoration: none !important;
+  color: var(--accent-opacity-50);
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+  text-decoration: none !important;
+  color: var(--theme-color);
+}
+
+/* +-------------------------------------------------+ */
+/* |                                                 | */
+/* |                  PLUGIN SUPPORT                 | */
+/* |                                                 | */
+/* +-------------------------------------------------+ */
+
+/* ╔═══════════════════════════╗ */
+/* ║         Calender          ║ */
+/* ╚═══════════════════════════╝ */
+
+
+#calendar-container .nav .title{
+  text-shadow: unset;
+}
+
+#calendar-container .nav .title .year{
+  color: var(--theme-color);
+}
+#calendar-container .nav .title .month{
+  color: var(--alt-color);
+}
+
+#calendar-container .nav .right-nav .arrow:hover svg{
+  color: var(--theme-color);
+}
+
+#calendar-container .nav .right-nav .reset-button:hover{
+  color: var(--theme-color);
+  text-shadow: 0 0 1em var(--theme-color);
+}

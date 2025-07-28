@@ -1,0 +1,210 @@
+.theme-light {
+    --code-font-family: 'Hack';
+    --link-color: #106ba3;
+    --text-color: #202b33;
+    --brackets-color: #a7b6c2;
+    --side-dock-bg: #182026;
+    --side-dock-bg-hover: #202b33;
+    --side-dock-active: #202b33;
+}
+
+html, body, h5, h6 {
+    font-weight: 500 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    text-size-adjust: 100% !important;
+}
+
+h1, h2, h3, h4, strong {
+    font-weight: 600;
+}
+
+/*Insert [[ ]] around links to make it look like roam*/
+.internal-link::before{
+	content: "[[";
+	color: var(--brackets-color);
+}
+
+.internal-link::after{
+	content: "]]";
+	color: var(--brackets-color);
+}
+
+/*Side dock*/
+.side-dock-title {
+	font-size: 20px;
+	color: var(--brackets-color);
+}
+
+.side-dock-plugin-panel.mod-file-explorer, 
+.side-dock-plugin-panel.mod-starred, 
+.side-dock-ribbon-tab.is-after-active, 
+.side-dock-ribbon-before.is-before-active,
+.side-dock-ribbon-after.is-before-active {
+   background-color: var(--side-dock-bg);
+}
+
+/*Make folder title uppercase*/
+.nav-folder-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* hover actions on sidebar*/
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-tab-inner:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover,
+.side-dock-ribbon-tab.is-after-active:hover
+{
+  color: #ffffff;
+  background-color: var(--side-dock-bg-hover);
+}
+
+.nav-file-title, .nav-folder.mod-root > .nav-folder-title, .side-dock-title, .nav-folder-title, .nav-file-title-content.is-being-renamed {
+	color: #5c7080;
+	filter: contrast(0.9);
+}
+
+/*Non hover actions*/
+.nav-file.is-active > .nav-file-title, 
+.nav-file.is-active > .nav-folder-title, 
+.nav-file.is-active > .nav-folder-collapse-indicator, 
+.nav-folder.is-active > .nav-file-title, 
+.nav-folder.is-active > .nav-folder-title, 
+.nav-folder.is-active > .nav-folder-collapse-indicator,
+.side-dock-ribbon-tab.is-active {
+    background-color: var(--side-dock-active);
+    color: #ffffff;
+}
+
+/* color and background of titles hovered over in side bars */
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover,
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator
+{
+	background-color: var(--side-dock-bg-hover);
+    color: #ffffff;
+}
+
+/*side dock end*/
+
+
+/* Backlinks */
+
+/*Make backlink panel white*/
+.side-dock-plugin-panel.mod-backlinks {
+	background-color: #ffffff;
+}
+
+.search-result-file-title {
+	font-size: 16px;
+	color: #337ab7
+}
+
+.search-result-file-title:hover {
+	background-color: #ffffff;
+}
+
+.search-result-file-match, .search-result-file-match:hover{
+	background-color: #f5f8fa;
+}
+
+.obsidian-search-match-highlight {
+    background-color: #c2dbec;
+}
+
+.search-result-file-matched-text {
+	background-color: #dfe9f0;
+}
+
+/*Backlinks end*/
+
+.view-header-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.view-header-title-container {
+    height: 44px;
+}
+
+.markdown-source-view, .markdown-preview-view{
+    color: #202b33
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock  {
+	font-family: var(--code-font-family)
+}
+
+/* Code in markdown preview */
+.markdown-preview-view code, .theme-light code[class*="language-"], .theme-light pre[class*="language-"] {
+    font-size: 1em;
+    font-family: var(--code-font-family);
+}
+
+/*change the color of text for links in editor */
+.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link {
+    color:  #106ba3 !important;
+    text-decoration: none;
+}
+
+/* when you hover over an internal link it gets slightly darker */
+.cm-s-obsidian span.cm-link:hover, .cm-s-obsidian span.cm-hmd-internal-link:hover {
+ color:  #337ab7;
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+.markdown-preview-view .internal-link {
+  text-decoration: none;
+}
+
+.markdown-preview-view .internal-link:hover {
+  text-decoration: underline;
+}
+
+/* Highlight colors */
+.markdown-preview-view mark {
+    background-color: rgba(0, 231, 255, 0.29);
+}
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+    background-color: rgba(0, 231, 255, 0.29);
+}
+
+/* References section */
+.search-result-file-matches {
+	color: #202b33;
+	font-size: 14px;
+}
+
+/*Border on header*/
+.workspace-leaf.mod-active .view-header {
+	border-bottom-style: None
+}
+
+
+ul {
+    list-style-type: disc;
+}
+
+ul li {
+    margin: 0 0 5px 0;
+}
+
+.markdown-preview-view blockquote {
+	margin-inline-start: 0px;
+}
+
+/*Andy's mode*/
+.workspace-split.mod-vertical { overflow-x:auto; }
+.workspace-leaf, .workspace-split > .workspace-split { min-width: 500px; min-height: 500px; }
+.workspace-split.mod-horizontal { overflow-y: auto; }

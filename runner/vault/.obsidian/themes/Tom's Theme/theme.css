@@ -1,0 +1,186 @@
+body {
+  --font-default: Courier, monospace;
+  --font-monospace-default: "Lucida Console", monospace;
+
+  /* default: 700px */
+  --file-line-width: 520px;
+
+  /* GB Studio colors */
+  --color-light: #e0f8cf;
+  --color-green: #86c06c;
+  --color-darkgreen: #306850;
+  --color-nearblack: #071821;
+
+  /* Light mode edit */
+  --color-off-light: #cfe6be;
+}
+
+.theme-dark {
+  --background-primary: black;
+
+  /* Code blocks */
+  --background-primary-alt: var(--color-nearblack);
+  
+  /* Tab color when window unfocused, settings sidebar */
+  --background-secondary: black;
+
+  /* Tab color when window focused */
+  --background-secondary-alt: black;
+
+  /* Horizontal rule/divider and inner window border */
+  --background-modifier-border: var(--color-darkgreen);
+
+  /* Textbox background */
+  --background-modifier-form-field: var(--color-nearblack);
+
+  /* Certain hover popups, like sync errors or hover over close window button */
+  --background-modifier-form-field-highlighted: var(--color-green);
+  --background-modifier-box-shadow: var(--color-green);
+
+  /* Unsure what this is; default value */
+  --background-modifier-success: #A4E7C3;	
+
+  /* Close window button, clear history button */
+  --background-modifier-error: red;	
+  --background-modifier-error-hover: orange;	
+
+  /* Settings outer space */
+  --background-modifier-cover: var(--color-nearblack);	
+
+  /* Links */
+  --text-accent: var(--color-green);
+
+  /* Hover link */
+  --text-accent-hover: var(--color-light);
+
+  /* Body text */
+  --text-normal: var(--color-green);	
+
+  /* Icon colors, property names, graph nodes */
+  --text-muted: var(--color-green);	
+
+  /* Line numbers, tab title when unfocused, non-existing graph nodes */
+  --text-faint: var(--color-darkgreen);	
+
+  /* Warnings */
+  --text-error: red;	
+  --text-error-hover: orange;	
+
+  /* Highlighter mark, selected bullet points and heading symbols */
+  --text-highlight-bg: rgba(48, 104, 80, 0.5);
+
+  --text-highlight-bg-active: blue;
+
+  /* Mouse selection */
+  --text-selection: var(--color-darkgreen);
+
+  /* Text on settings buttons and sidebar tabs */
+  --text-on-accent: var(--color-darkgreen);
+
+  /* Some settings buttons, canvas side buttons */
+  --interactive-normal: var(--color-darkgreen);	
+  --interactive-hover: var(--color-nearblack);
+
+  /* Settings toggle background, graph node hover */
+  --interactive-accent: var(--color-green);	
+
+  /* Checkbox hover */
+  --interactive-accent-hover: var(--color-light);	
+
+  /* Not sure what this does... */
+  --interactive-success: var(--color-green);	
+
+  /* Scrollbar hover */
+  --scrollbar-active-thumb-bg: var(--color-green);	
+
+  /* Doesn't seem to do anything */
+  --scrollbar-bg: rgba(0, 0, 0, 0.05)	
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: var(--color-darkgreen);	
+}
+
+.theme-light {
+  --background-primary: var(--color-light);
+
+  /* Code blocks */
+  --background-primary-alt: var(--color-off-light);
+  
+  /* Tab color when window unfocused, settings sidebar */
+  --background-secondary: var(--color-light);
+
+  /* Tab color when window focused */
+  --background-secondary-alt: var(--color-light);
+
+  /* Horizontal rule/divider and inner window border */
+  --background-modifier-border: var(--color-nearblack);
+
+  /* Textbox background */
+  --background-modifier-form-field: var(--color-light);
+
+  /* Certain hover popups, like sync errors or hover over close window button */
+  --background-modifier-form-field-highlighted: var(--color-green);
+  --background-modifier-box-shadow: var(--color-green);
+
+  /* Unsure what this is; default value */
+  --background-modifier-success: #A4E7C3;	
+
+  /* Close window button, clear history button */
+  --background-modifier-error: red;	
+  --background-modifier-error-hover: orange;	
+
+  /* Settings outer space */
+  --background-modifier-cover: var(--color-light);	
+
+  /* Links */
+  --text-accent: var(--color-green);
+
+  /* Hover link */
+  --text-accent-hover: var(--color-nearblack);
+
+  /* Body text */
+  --text-normal: var(--color-nearblack);	
+
+  /* Icon colors, property names, graph nodes */
+  --text-muted: var(--color-green);	
+
+  /* Line numbers, tab title when unfocused, non-existing graph nodes */
+  --text-faint: var(--color-darkgreen);	
+
+  /* Warnings */
+  --text-error: red;	
+  --text-error-hover: orange;	
+
+  /* Highlighter mark, selected bullet points and heading symbols */
+  --text-highlight-bg: var(--color-green);
+
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+
+  /* Mouse selection */
+  --text-selection: var(--color-green);	
+
+   /* Text on settings buttons and sidebar tabs */
+  --text-on-accent: var(--color-darkgreen);
+
+  /* Some settings buttons, canvas side buttons */
+  --interactive-normal: var(--color-light);	
+  --interactive-hover: var(--color-darkgreen);
+
+  /* Settings toggle background, graph node hover */
+  --interactive-accent: var(--color-green);	
+
+  /* Checkbox hover */
+  --interactive-accent-hover: var(--color-nearblack);	
+
+  /* Not sure what this does... */
+  --interactive-success: #197300;
+
+  /* Scrollbar hover */
+  --scrollbar-active-thumb-bg: var(--color-green);	
+
+  /* Mostly affects light theme */
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);	
+
+  /* Scrollbar */
+  --scrollbar-thumb-bg: var(--color-darkgreen);	
+}

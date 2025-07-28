@@ -1,0 +1,252 @@
+/* 
+Mostly taken from:
+https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/main/theme.css
+with a few modifications to make it work with the Tokyo Night Storm.
+*/
+
+
+/*Fonts*/
+:root {
+  --default-font: "JetBrains Mono", monospace;
+  --default-font: "JetBrains Mono Nerd Font", monospace;
+  --font-monospace: "Anonymouse Pro for Powerline", monospace;
+}
+
+.theme-dark {
+
+  --accent-h: 202;
+  --accent-s: 100%;
+  --accent-l: 75%;
+
+  /* Credit: https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors.lua */
+  --bg_dark2_x: 18, 18, 24; /* ? */
+  --bg_dark2: rgb(var(--bg_dark2_x));
+  --bg_dark_x: 36, 40, 59; /* Top & Sides Background */
+  --bg_dark: rgb(var(--bg_dark_x));
+  --bg_x: 36, 40, 59; /* Page Background */
+  --bg: rgb(var(--bg_x));
+  --bg_highlight_x: 65, 72, 104; /* Border colour between page & top / sides */
+  --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark_x: 35, 35, 55; /* Code highlight colour */
+  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+  --terminal_black_x: 65, 72, 104;
+  --terminal_black: rgb(var(--terminal_black_x));
+  --fg_x: 192, 202, 245;
+  --fg: rgb(var(--fg_x));
+  --fg_dark_x: 169, 177, 214;
+  --fg_dark: rgb(var(--fg_dark_x));
+  --comment_x: 86, 95, 137;
+  --comment: rgb(var(--comment_x));
+  --blue0_x: 61, 89, 161;
+  --blue0: rgb(var(--blue0_x));
+  --blue_x: 122, 162, 247;
+  --blue: rgb(var(--blue_x));
+  --cyan_hsl: 202 100% 75%;
+  --cyan_x: 125, 207, 255;
+  --cyan: rgb(var(--cyan_x));
+  --magent_hsl: 261 85% 79%;
+  --magenta_x: 187, 154, 247;
+  --magenta: rgb(var(--magenta_x));
+  --purple_x: 157, 124, 21;
+  --purple: rgb(var(--purple_x));
+  --orange_x: 255, 158, 100;
+  --orange: rgb(var(--orange_x));
+  --yellow_x: 224, 175, 104;
+  --yellow: rgb(var(--yellow_x));
+  --green_x: 158, 206, 106;
+  --green: rgb(var(--green_x));
+  --teal_x: 26, 188, 156;
+  --teal: rgb(var(--teal_x));
+  --red_x: 255, 117, 127;
+  --red: rgb(var(--red_x));
+  --red1_x: 219, 75, 75;
+  --red1: rgb(var(--red1_x));
+  --unknown: #ffffff;
+
+  --external-link-filter: invert(35%) sepia(28%) saturate(681%)
+    hue-rotate(192deg) brightness(94%) contrast(85%);
+}
+
+
+.theme-dark {
+  --color_red_rgb: var(--red_x);
+  --color-red: var(--red);
+  --color_purple_rgb: var(--purple_x);
+  --color-purple: var(--purple);
+  --color_green_rgb: var(--green_x);
+  --color-green: var(--green);
+  --color_cyan_rgb: var(--cyan_x);
+  --color-cyan: var(--cyan);
+  --color_blue_rgb: var(--blue_x);
+  --color-blue: var(--blue);
+  --color_yellow_rgb: var(--yellow_x);
+  --color-yellow: var(--yellow);
+  --color_orange_rgb: var(--orange_x);
+  --color-orange: var(--orange);
+  --color_pink_rgb: var(--magenta_x);
+  --color-pink: var(--magenta);
+
+  --background-primary: var(--bg);
+  --background-primary-alt: var(--bg);
+  --background-secondary: var(--bg_dark);
+  --background-secondary-alt: var(--bg_dark);
+
+  --background-modifier-border: var(--bg_highlight);
+  --background-modifier-border-focus: var(--bg_highlight);
+  --background-modifier-border-hover: var(--bg_highlight);
+  --background-modifier-form-field: var(--bg_dark);
+  --background-modifier-form-field-highlighted: var(--bg_dark);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--green);
+  --background-modifier-error: rgba(var(--red_x), 0.8);
+  --background-modifier-error-hover: var(--red);
+  --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
+  --background-modifier-hover: var(--bg_highlight);
+  --background-modifier-message: rgba(var(--bg_highlight_x), 0.9);
+
+  --text-normal: var(--fg);
+  --text-faint: var(--comment);
+  --text-muted: var(--fg_dark);
+
+  --h1-color: var(--red);
+  --h2-color: var(--yellow);
+  --h3-color: var(--green);
+  --h4-color: var(--cyan);
+  --h5-color: var(--blue);
+  --h6-color: var(--magenta);
+
+  --tag-color: var(--magenta);
+  --tag-background: rgba(var(--magenta_x), 0.15);
+
+  --titlebar-text-color-focused: var(--magenta);
+
+  --inline-title-color: var(--magenta);
+
+  --text-error: var(--red1);
+  --text-error-hover: var(--red);
+  --text-selection: var(--unknown);
+  --text-on-accent: var(--bg);
+  --interactive-normal: var(--bg_dark);
+  --interactive-hover: var(--bg);
+  --interactive-success: var(--green);
+
+  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --text-highlight-fg: var(--bg);
+
+  --titlebar-text-color-focused: var(--magenta);
+
+  --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --italic-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
+  --checkbox-color: var(--comment);
+  --checkbox-color-hover: var(--comment);
+  --checkbox-border-color: var(--comment);
+  --checkbox-border-color-hover: var(--comment);
+  --checklist-done-color: rgba(var(--green), 0.5);
+
+  --table-header-background: var(--bg);
+  --table-header-background-hover: var(--bg_dark2);
+  --table-row-alt-background: var(--bg_dark);
+  --table-row-background-hover: var(--bg_dark3);
+
+  --text-selection: rgba(var(--blue0_x), 0.6);
+  --flashing-background: rgba(var(--blue0_x), 0.3);
+
+  --code-normal: var(--fg);
+  --code-background: var(--bg_highlight_dark);
+
+  --mermaid-note: var(--blue0);
+  --mermaid-actor: var(--fg_dark);
+  --mermaid-loopline: var(--blue);
+
+  --icon-color-hover: var(--yellow);
+  --icon-color-focused: var(--blue);
+
+  --nav-item-color-hover: var(--fg);
+  --nav-item-background-hover: var(--bg_highlight);
+  --nav-item-color-active: var(--red);
+  --nav-item-background-active: var(--bg_highlight);
+  --nav-file-tag: rgba(var(--yellow_x), 0.9);
+  --nav-indentation-guide-color: var(--bg_highlight);
+
+  --indentation-guide-color: var(--comment);
+  --indentation-guide-color-active: var(--comment);
+
+  --graph-line: var(--comment);
+  --graph-node: var(--fg);
+  --graph-node-tag: var(--orange);
+  --graph-node-attachment: var(--blue);
+
+  --tab-text-color-focused-active: rgba(var(--red_x), 0.8);
+  --tab-text-color-focused-active-current: var(--red);
+
+  --modal-border-color: var(--bg_highlight);
+  --prompt-border-color: var(--bg_highlight);
+  --slider-track-background: var(--bg_highlight);
+
+  --border-width: 2px;
+
+  --blockquote-background-color: var(--bg_dark);
+  --callout-quote: var(--fg_dark);
+
+  --embed-background: var(--bg_dark);
+  --embed-padding: 1.5rem 1.5rem 0.5rem;
+
+  --canvas-color: var(--bg_highlight_x);
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+/* tooltip */
+.tooltip {
+  color: var(--fg);
+}
+
+/* links */
+span.cm-formatting.cm-formatting-link-string.cm-string.cm-url.external-link {
+  filter: var(--external-link-filter);
+}
+
+/* notice */
+.notice {
+  background-color: var(--bg_dark);
+  border: 2px solid var(--bg_highlight);
+}
+
+/* callouts */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  background-color: rgba(var(--bg_highlight_dark_x), 0.5);
+}
+
+/* for vim */
+.ͼ2 .cm-panels-bottom {
+  border-top: var(--border-width) solid var(--bg_highlight);
+}
+
+.cm-vim-message {
+  color: var(--red);
+}
+
+/* various-complement */
+.various-complements__suggestion-item::before {
+  filter: var(--external-link-filter);
+}
+
+.various-complements__footer::before {
+  filter: var(--external-link-filter);
+}
+
+/* metadata */
+.cm-atom {
+  color: var(--blue);
+}
+span.cm-hmd-frontmatter.cm-meta {
+  color: rgba(var(--blue0_x), 0.9);
+}

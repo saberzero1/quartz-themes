@@ -1,0 +1,344 @@
+/** Base color scheme for the theme */
+/** As hex codes */
+/** Color: Bases */
+/** Color: Teal */
+/** Color: Yellow */
+/** Color: Pink */
+/** Color: Orange */
+/** Color: Green */
+/** Color: Purple */
+/** Color: Red */
+/** Color: Blue */
+/** As RGB codes */
+/** Color: Bases */
+/** Color: Teal */
+/** Color: Yellow */
+/** Color: Pink */
+/** Color: Orange */
+/** Color: Green */
+/** Color: Purple */
+/** Color: Red */
+/** Color: Blue */
+/** As HSL codes */
+/** Color: Teal */
+/***** TABLE OF CONTENTS *****/
+/* 1. Font
+/* 2. Colors
+/* 3. General UI
+/*     3.1. Title Bar
+/*         3.1.2. Fix tab header padding
+/*     3.2. Status Bar
+/*         3.2.1. Fix status bar border
+/*         3.2.2. Fix status bar padding
+/*     3.3. Sidebar
+/*         3.3.1. Fix sidebar padding
+/*     3.4. Suggestions
+/*         3.4.1. Fix selected suggestion item background
+/* 4. Markdown (editor / preview)
+/*     4.1. Title
+/*     4.2. Headings
+/*         4.2.1. Fix heading weights
+/*         4.2.2. Fix heading space
+/*     4.3. Task Lists
+/*         4.3.1. Fix checkbox style
+/*         4.3.2. Fix checkbox tick style
+/*     4.4. Blockquotes
+/*         4.4.1. Fix blockquote margin
+/*         4.4.2. Fix blockquote border
+/*         4.4.3. Fix formatting quote >
+/*     4.5. Horizontal rules
+/*         4.5.1. Fix horizontal rule margin
+/*         4.5.2. Fix horizontal rule thickness
+/*     4.6. Tables
+/*         4.6.1. Fix table element padding
+/*     4.7. Code blocks
+/*         4.7.1. Fix code block font size
+/*         4.7.2. Fix code block alignment and background
+/*     4.8. Lists
+/*         4.8.1. Fix list bullet radius
+/***** *****/
+/** 1. Font */
+body {
+  --font-monospace: "Courier New", monospace;
+  --font-text: "Inter", sans-serif;
+  -webkit-font-smoothing: auto;
+}
+/** 2. Colors */
+.theme-dark {
+  --mono-rgb-0: 29, 31, 33;
+  --mono-rgb-100: 226, 224, 226;
+  --color-red_rgb: 182, 94, 103;
+  --color-red: #B65E67;
+  --color-orange_rgb: 188, 135, 98;
+  --color-orange: #BC8762;
+  --color-yellow-rgb: 188, 156, 98;
+  --color-yellow: #BCAB62;
+  --color-green-rgb: 136, 188, 125;
+  --color-green: #88BC7D;
+  --color-teal-rgb: 94, 141, 135;
+  --color-teal: #5E8D87;
+  --color-cyan: var(--color-teal);
+  --color-cyan-rgb: var(--color-teal-rgb);
+  --color-blue_rgb: 196, 202, 214;
+  --color-blue: #C4CAD6;
+  --color-purple-rgb: 156, 151, 183;
+  --color-purple: #9C97B7;
+  --color-pink-rgb: 174, 116, 153;
+  --color-pink: #AE7499;
+  --color-base-00: #1d1f21;
+  --color-base-05: #27292b;
+  --color-base-10: #313234;
+  --color-base-20: #444648;
+  --color-base-25: #4e4f51;
+  --color-base-30: #58595b;
+  --color-base-35: #626365;
+  --color-base-40: #6c6c6e;
+  --color-base-50: #808082;
+  --color-base-60: #939395;
+  --color-base-70: #a7a6a8;
+  --color-base-100: #e2e0d2;
+  --background-secondary-alt: var(--color-base-20);
+  --checkbox-border-color-unchecked: var(--color-base-50);
+  --checkbox-border-color-hover: var(--checkbox-color);
+}
+.theme-light {
+  --mono-rgb-0: 226, 224, 226;
+  --mono-rgb-100: 29, 31, 33;
+  --color-red_rgb: 147, 57, 66;
+  --color-red: #933942;
+  --color-orange_rgb: 152, 98, 59;
+  --color-orange: #98623B;
+  --color-yellow-rgb: 152, 119, 59;
+  --color-yellow: #98863B;
+  --color-green-rgb: 63, 127, 49;
+  --color-green: #3F7F31;
+  --color-teal-rgb: 94, 141, 135;
+  --color-teal: #5E8D87;
+  --color-cyan: var(--color-teal);
+  --color-cyan-rgb: var(--color-teal-rgb);
+  --color-blue_rgb: 104, 121, 149;
+  --color-blue: #687995;
+  --color-purple-rgb: 59, 49, 105;
+  --color-purple: #3B3169;
+  --color-pink-rgb: 117, 46, 92;
+  --color-pink: #752E5C;
+  --color-base-00: #d8d6d8;
+  --color-base-05: #cecdcf;
+  --color-base-10: #c4c3c5;
+  --color-base-20: #b1b0b2;
+  --color-base-25: #a7a6a8;
+  --color-base-30: #9d9c9e;
+  --color-base-35: #939395;
+  --color-base-40: #89898b;
+  --color-base-50: #767678;
+  --color-base-60: #626365;
+  --color-base-70: #4e4f51;
+  --color-base-100: #1d1f21;
+  --background-secondary-alt: var(--color-base-20);
+  --checkbox-border-color-unchecked: var(--color-base-50);
+  --checkbox-border-color-hover: var(--checkbox-color);
+}
+body {
+  --accent-h: 174;
+  --accent-s: 20%;
+  --accent-l: 48%;
+  --inline-title-color: var(--color-base-50);
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-0), 0.5);
+  --text-highlight-bg-rgb: var(--color-yellow-rgb);
+  --background-modifier-border: var(--color-base-20);
+  --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+}
+.canvas-node.is-themed .canvas-node-content {
+  background-color: rgba(var(--canvas-color), 0);
+}
+/** 3. Generic UI */
+/** 3.1. Title Bar */
+/** 3.1.2. Fix tab header padding */
+.workspace .mod-root .workspace-tab-header-inner-title {
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+}
+/* 3.2. Status Bar */
+/* 3.2.1. Fix status bar border */
+body {
+  --status-bar-border-width: 0;
+}
+/* 3.2.2. Fix status bar padding */
+.status-bar {
+  padding-top: var(--size-2-3);
+}
+/* 3.3. Sidebar */
+/* 3.3.1. Fix sidebar padding */
+.nav-file-title-content,
+.nav-folder-title-content,
+.tree-item-inner {
+  padding-top: 2px;
+}
+/* 3.4. Suggestions */
+/* 3.4.1. Fix selected suggestion item background */
+.suggestion-item.is-selected {
+  background-color: var(--text-selection);
+}
+/** 4. Markdown (editor / preview) */
+/** 4.1. Title */
+body {
+  --inline-title-style: italic;
+  --inline-title-weight: 50;
+  --inline-title-size: var(--h3-size);
+}
+/** 4.2. Headings */
+/** 4.2.1. Fix heading weights */
+.theme-dark {
+  --h1-weight: 300;
+  --h2-weight: 300;
+  --h3-weight: 300;
+  --h4-weight: 300;
+  --h5-weight: 300;
+  --h6-weight: 300;
+}
+.theme-light {
+  --h1-weight: 500;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h5-weight: 400;
+  --h6-weight: 400;
+}
+/** 4.2.2 Fix heading space */
+body {
+  --heading-spacing: calc(var(--p-spacing) * 1.5);
+}
+/** 4.2.1. Fix heading margins */
+.markdown-rendered h1 {
+  margin-block-end: 0;
+}
+.markdown-rendered h2 {
+  margin-block-end: 0;
+}
+.markdown-rendered h3 {
+  margin-block-end: 0;
+}
+.markdown-rendered h4 {
+  margin-block-end: 0;
+}
+.markdown-rendered h5 {
+  margin-block-end: 0;
+}
+.markdown-rendered h6 {
+  margin-block-end: 0;
+}
+.markdown-rendered p {
+  margin-block-start: 0.2rem;
+}
+/** 4.3. Task Lists */
+/** 4.3.1. Fix checkbox style */
+body {
+  --checkbox-radius: 10px;
+}
+/** 4.3.2. Fix checkbox tick style */
+input[type=checkbox] {
+  border: 1px solid var(--checkbox-border-color-unchecked);
+}
+input[type=checkbox]:checked {
+  box-shadow: inset 0 0 0 3px var(--background-primary);
+}
+input[type=checkbox]:checked:after {
+  display: none;
+  -webkit-mask-size: 75%;
+}
+/** 4.4. Blockquotes */
+/** 4.4.1. Fix blockquote margin */
+blockquote {
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+/** 4.4.2. Fix blockquote border */
+body {
+  --blockquote-border-thickness: 4px;
+}
+/** 4.4.3. Fix formatting quote > */
+.cm-s-obsidian span.cm-formatting-quote {
+  margin-left: 2px;
+}
+/** 4.5. Horizontal rules /*/
+/** 4.5.1. Fix horizontal rule margin */
+hr {
+  margin: 1.5rem 0;
+}
+/** 4.5.2. Fix horizontal rule thickness */
+body {
+  --hr-thickness: 1px;
+}
+/** 4.6. Tables */
+/** 4.6.1. Fix table element padding */
+.markdown-rendered td,
+.markdown-rendered th {
+  padding: var(--size-4-2);
+}
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+  padding: var(--size-4-2);
+}
+/** 4.7. Code blocks */
+/** 4.7.1. Fix code block font size */
+body {
+  --code-size: --font-normal;
+}
+/** 4.7.2. Fix code block alignment and background */
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  padding-top: 0.04em;
+  padding-bottom: 0.04em;
+  vertical-align: bottom;
+}
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+  padding: 0em;
+  vertical-align: bottom;
+}
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+  padding: 0em;
+  vertical-align: bottom;
+}
+.cm-s-obsidian .cm-inline-code.cm-formatting {
+  padding: 0em;
+  vertical-align: bottom;
+}
+.cm-highlight.cm-inline-code:not(.cm-formatting) {
+  border-radius: 0px;
+}
+.cm-s-obsidian .cm-highlight.cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+  vertical-align: bottom;
+  padding-top: 0.04em;
+  padding-bottom: 0.04em;
+}
+.cm-s-obsidian .cm-highlight.cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+  vertical-align: bottom;
+  border-radius: 0px;
+  padding-top: 0.04em;
+  padding-bottom: 0.04em;
+}
+.cm-s-obsidian .cm-highlight.cm-inline-code.cm-formatting {
+  vertical-align: bottom;
+  padding: 0.04em 0em;
+  border-radius: 0px;
+}
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  border-radius: 0px;
+}
+.markdown-rendered code {
+  vertical-align: bottom;
+}
+/** 4.8. Lists */
+/** 4.8.1. Fix list bullet radius */
+body {
+  --list-bullet-radius: 40%;
+  --list-bullet-size: 0.4em;
+  --indentation-guide-width: 2px;
+}
