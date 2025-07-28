@@ -136,6 +136,8 @@ public
 prof
 tsconfig.tsbuildinfo
 .obsidian
+.obsidian-cache
+!runner/vault/.obsidian
 .quartz-cache
 private/
 .replit
