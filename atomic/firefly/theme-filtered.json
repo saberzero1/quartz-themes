@@ -4,8 +4,13 @@
       "property": "--xfa-unfocused-field-background",
       "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
     },
+    { "property": "--xfa-focus-outline", "value": "2px solid CanvasText" },
     { "property": "--viewer-container-height", "value": "0" },
     { "property": "--loading-icon-delay", "value": "400ms" },
+    { "property": "--pdfViewer-padding-bottom", "value": "9px" },
+    { "property": "--page-margin", "value": "8px auto -1px" },
+    { "property": "--page-border", "value": "1px solid CanvasText" },
+    { "property": "--spreadHorizontalWrapped-margin-LR", "value": "3.5px" },
     {
       "property": "--safe-area-inset-top",
       "value": "env(safe-area-inset-top)"
@@ -41,12 +46,7 @@
     { "property": "--color-lineheight-regular", "value": "1.75em" },
     { "property": "--color-lineheight-large", "value": "2em" },
     { "property": "--color-lineheight-xtra-large", "value": "2.25em" },
-    { "property": "--color-lineheight-max", "value": "2.5em" },
-    { "property": "--xfa-focus-outline", "value": "2px solid CanvasText" },
-    { "property": "--pdfViewer-padding-bottom", "value": "9px" },
-    { "property": "--page-margin", "value": "8px auto -1px" },
-    { "property": "--page-border", "value": "1px solid CanvasText" },
-    { "property": "--spreadHorizontalWrapped-margin-LR", "value": "3.5px" }
+    { "property": "--color-lineheight-max", "value": "2.5em" }
   ],
   "body": [
     { "property": "--anim-duration-none", "value": "0" },
@@ -1188,6 +1188,10 @@
     },
     { "property": "--font-text-override", "value": "" },
     { "property": "--font-text-theme", "value": "" },
+    {
+      "property": "--font-text",
+      "value": "var(--font-text-override), var(--font-text-theme), var(--font-default)"
+    },
     { "property": "--font-print-override", "value": "" },
     {
       "property": "--font-print",
@@ -1201,6 +1205,7 @@
     },
     { "property": "--font-text-size", "value": "16px" },
     { "property": "--font-mermaid", "value": "var(--font-text)" },
+    { "property": "height", "value": "100%" },
     { "property": "margin", "value": "0" },
     { "property": "padding", "value": "0" },
     { "property": "width", "value": "100%" },
@@ -1215,12 +1220,7 @@
     { "property": "--direction", "value": "1" },
     { "property": "--pill-focus-width", "value": "calc(100% + 6px)" },
     { "property": "--pill-focus-left-adjust", "value": "-4px" },
-    { "property": "--canvas-color", "value": "192, 192, 192" },
-    { "property": "contain", "value": "initial" },
-    { "property": "height", "value": "auto" },
-    { "property": "overflow", "value": "auto" },
-    { "property": "padding-top", "value": "0" },
-    { "property": "--font-text", "value": "var(--font-print)" }
+    { "property": "--canvas-color", "value": "192, 192, 192" }
   ],
   ".theme-light": [
     { "property": "color-scheme", "value": "light" },
@@ -1324,6 +1324,7 @@
   ],
   ".theme-dark": [
     { "property": "color-scheme", "value": "dark" },
+    { "property": "--highlight-mix-blend-mode", "value": "lighten" },
     { "property": "--mono-rgb-0", "value": "0, 0, 0" },
     { "property": "--mono-rgb-100", "value": "255, 255, 255" },
     { "property": "--color-red-rgb", "value": "251, 70, 76" },
@@ -1415,63 +1416,7 @@
     {
       "property": "--pdf-thumbnail-shadow",
       "value": "0 0 0 1px var(--background-modifier-border)"
-    },
-    { "property": "--color-primary-100", "value": "#676f9b" },
-    { "property": "--color-primary-200", "value": "#5d648c" },
-    { "property": "--color-primary-300", "value": "#52597c" },
-    { "property": "--color-primary-400", "value": "#484e6d" },
-    { "property": "--color-primary-500", "value": "#3e435d" },
-    { "property": "--color-primary-600", "value": "#34384e" },
-    { "property": "--color-primary-700", "value": "#292c3e" },
-    { "property": "--color-primary-800", "value": "#1f212f" },
-    { "property": "--color-primary-900", "value": "#15161f" },
-    { "property": "--color-primary-1000", "value": "#0a0b0f" },
-    { "property": "--color-primary-1100", "value": "#050608" },
-    { "property": "--color-title-h1", "value": "#ff6fcd" },
-    { "property": "--color-title-h2", "value": "#ff6f91" },
-    { "property": "--color-title-h3", "value": "#ffb86c" },
-    { "property": "--color-title-h4", "value": "#fff06c" },
-    { "property": "--color-title-h5", "value": "#c5e478" },
-    { "property": "--color-title-h6", "value": "#c0cdf3" },
-    { "property": "--color-editor-title-h1", "value": "#ff6fcd" },
-    { "property": "--color-editor-title-h2", "value": "#ff6f91" },
-    { "property": "--color-editor-title-h3", "value": "#ffb86c" },
-    { "property": "--color-editor-title-h4", "value": "#fff06c" },
-    { "property": "--color-editor-title-h5", "value": "#c5e478" },
-    { "property": "--color-editor-title-h6", "value": "#c0cdf3" },
-    { "property": "--color-element-icon", "value": "#adb9db" },
-    { "property": "--color-element-icon-hover", "value": "#ebeff7" },
-    { "property": "--color-element-icon-highlighted", "value": "#00b1f6" },
-    { "property": "--color-element-border", "value": "#0a0b0f" },
-    { "property": "--color-element-border-light", "value": "#484e6d" },
-    {
-      "property": "--color-element-ordered-list-indicator",
-      "value": "#ebeff7"
-    },
-    {
-      "property": "--color-element-unordered-list-indicator",
-      "value": "#ebeff7"
-    },
-    { "property": "--color-element-markup-tags", "value": "#ffc75f" },
-    { "property": "--color-element-codeBlock", "value": "#0a0b0f" },
-    { "property": "--color-element-markup-attribute", "value": "#95ff6f" },
-    {
-      "property": "--color-element-markup-attribute-value",
-      "value": "#ebeff7"
-    },
-    { "property": "--color-text-paragraph", "value": "#c0cdf3" },
-    { "property": "--color-text-strong", "value": "#ebeff7" },
-    { "property": "--color-text-code", "value": "#00c9a7" },
-    { "property": "--color-text-inline-code", "value": "#00c9a7" },
-    { "property": "--color-text-code-background", "value": "#050608" },
-    { "property": "--color-text-quote", "value": "#c0cdf3" },
-    { "property": "--color-text-quote-border", "value": "#ff6f91" },
-    { "property": "--color-text-quotes", "value": "#c0cdf3" },
-    { "property": "--color-text-link", "value": "#6fa1ff" },
-    { "property": "--color-text-linkUrl", "value": "#6fa1ff" },
-    { "property": "--color-text-note-indicator", "value": "#ff6f91" },
-    { "property": "--color-text-hash-tag", "value": "#95ff6f" },
-    { "property": "--highlight-mix-blend-mode", "value": "darken" }
+    }
   ],
   ".view-header-title-parent .view-header-breadcrumb-separator": [
     { "property": "padding", "value": "2px 1px" },
@@ -1515,10 +1460,10 @@
     },
     { "property": "border-radius", "value": "var(--radius-m)" },
     { "property": "box-shadow", "value": "var(--shadow-s)" },
+    { "property": "display", "value": "flex" },
     { "property": "max-height", "value": "var(--popover-max-height)" },
     { "property": "position", "value": "absolute" },
-    { "property": "z-index", "value": "var(--layer-popover)" },
-    { "property": "display", "value": "none" }
+    { "property": "z-index", "value": "var(--layer-popover)" }
   ],
   ".prompt": [
     { "property": "display", "value": "flex" },
@@ -1828,6 +1773,12 @@
     { "property": "top", "value": "0" },
     { "property": "inset-inline-end", "value": "0" }
   ],
+  ".markdown-rendered button.copy-code-button:hover": [
+    {
+      "property": "background-color",
+      "value": "var(--background-modifier-hover)"
+    }
+  ],
   "h1": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
     { "property": "margin-block-start", "value": "var(--p-spacing)" },
@@ -1925,6 +1876,13 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
+  "a:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
+    }
+  ],
   ".external-link": [
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -1939,11 +1897,25 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
+  ".external-link:hover": [
+    { "property": "color", "value": "var(--link-external-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-external-decoration-hover)"
+    }
+  ],
   ".markdown-rendered .internal-link": [
     { "property": "color", "value": "var(--link-color)" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
+  ],
+  ".markdown-rendered .internal-link:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
+    }
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
@@ -1955,6 +1927,15 @@
     {
       "property": "text-decoration-style",
       "value": "var(--link-unresolved-decoration-style)"
+    }
+  ],
+  ".markdown-rendered .internal-link.is-unresolved:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    { "property": "opacity", "value": "1" },
+    { "property": "text-decoration-color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
     }
   ],
   "a.tag": [
@@ -1973,6 +1954,15 @@
       "value": "var(--tag-padding-y) var(--tag-padding-x)"
     },
     { "property": "line-height", "value": "1" }
+  ],
+  "a.tag:hover": [
+    { "property": "background-color", "value": "var(--tag-background-hover)" },
+    {
+      "property": "border",
+      "value": "var(--tag-border-width) solid var(--tag-border-color-hover)"
+    },
+    { "property": "color", "value": "var(--tag-color-hover)" },
+    { "property": "text-decoration", "value": "var(--tag-decoration-hover)" }
   ],
   ".backlink-pane > .tree-item-self": [
     { "property": "color", "value": "var(--nav-heading-color)" },
@@ -1998,49 +1988,22 @@
     { "property": "font-weight", "value": "var(--nav-item-weight-active)" },
     { "property": "background-color", "value": "var(--color-primary-200)" }
   ],
-  ".markdown-rendered button.copy-code-button:hover": [
-    {
-      "property": "background-color",
-      "value": "var(--background-modifier-hover)"
-    }
+  ".graph-view.color-fill": [
+    { "property": "color", "value": "var(--graph-node)" }
   ],
-  "a:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-fill-tag": [
+    { "property": "color", "value": "var(--graph-node-tag)" }
   ],
-  ".external-link:hover": [
-    { "property": "color", "value": "var(--link-external-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-external-decoration-hover)"
-    }
+  ".graph-view.color-line": [
+    { "property": "color", "value": "var(--graph-line)" }
   ],
-  ".markdown-rendered .internal-link:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-text": [
+    { "property": "color", "value": "var(--graph-text)" }
   ],
-  ".markdown-rendered .internal-link.is-unresolved:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    { "property": "opacity", "value": "1" },
-    { "property": "text-decoration-color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-fill-highlight": [
+    { "property": "color", "value": "var(--interactive-accent)" }
   ],
-  "a.tag:hover": [
-    { "property": "background-color", "value": "var(--tag-background-hover)" },
-    {
-      "property": "border",
-      "value": "var(--tag-border-width) solid var(--tag-border-color-hover)"
-    },
-    { "property": "color", "value": "var(--tag-color-hover)" },
-    { "property": "text-decoration", "value": "var(--tag-decoration-hover)" }
+  ".graph-view.color-line-highlight": [
+    { "property": "color", "value": "var(--interactive-accent)" }
   ]
 }

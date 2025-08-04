@@ -2,3 +2,4 @@ node_modules
 templates
 util
 obsidian
+runner/vault

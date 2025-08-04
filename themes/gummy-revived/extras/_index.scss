@@ -1,0 +1,67 @@
+body {
+  figure[data-rehype-pretty-code-figure] pre,
+  pre {
+    box-shadow:
+      -24px 24px 69px -3px #8a5cf533,
+      24px -24px 69px -3px hsla(438, 88%, 66%, 0.13) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    background: linear-gradient(to right, var(--gradient-header));
+    background-image: linear-gradient(to right, var(--gradient-header));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    code {
+      -webkit-text-fill-color: var(--color-accent);
+      -webkit-background-clip: unset;
+    }
+  }
+
+  .article-title {
+    width: fit-content;
+  }
+
+  .page > #quartz-body .sidebar {
+    &.left,
+    &.left:has(div.explorer),
+    &.right {
+      background-color: transparent;
+    }
+  }
+
+  @media all and ($mobile) {
+    .page
+      > #quartz-body
+      .sidebar.left:has(div.explorer)
+      :not(.folder-container, a[data-for]) {
+      &:before,
+      &:after {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+:root,
+html {
+  .callout {
+    background: var(--border)
+      linear-gradient(135deg, var(--border), var(--background-primary));
+  }
+  .callout-title {
+    color: var(--color);
+    background: var(--background-primary);
+  }
+}
