@@ -31,10 +31,7 @@ if (process.env.OBSIDIAN_VERSIONS) {
     console.log(`${app}/${installer}`);
   }
 } else {
-  versions = [
-    ["1.8.10", "1.8.10"],
-    ["1.8.10", "1.8.10"],
-  ];
+  versions = [["1.8.10", "1.8.10"]];
 }
 
 export const config = {
@@ -50,10 +47,13 @@ export const config = {
     browserVersion: appVersion,
     "wdio:obsidianOptions": {
       installerVersion: installerVersion,
-      plugins: ["./obsidian-style-settings"],
+      plugins: [
+        "./runner/vault/.obsidian/plugins/obsidian-style-settings",
+        "./runner/vault/.obsidian/plugins/obsidian-view-mode-by-frontmatter",
+      ],
       // If you need to switch between multiple vaults, you can omit this and use
       // `reloadObsidian` to open vaults during the test.
-      vault: "runner/vault",
+      vault: "./runner/vault",
     },
   })),
 
@@ -65,13 +65,13 @@ export const config = {
 
   mochaOpts: {
     ui: "bdd",
-    timeout: 60000,
+    timeout: 300000,
     // You can set more config here like "retry" to retry flaky tests
     // or "bail" to quit tests after the first failure.
   },
 
-  waitforInterval: 250,
-  waitforTimeout: 5 * 1000,
+  waitforInterval: 5000,
+  waitforTimeout: 60 * 1000,
 
   cacheDir: cacheDir,
 

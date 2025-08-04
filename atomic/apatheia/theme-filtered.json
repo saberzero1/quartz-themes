@@ -4,8 +4,13 @@
       "property": "--xfa-unfocused-field-background",
       "value": "url(\"data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:#0036ff,'/></svg>\")"
     },
+    { "property": "--xfa-focus-outline", "value": "2px solid CanvasText" },
     { "property": "--viewer-container-height", "value": "0" },
     { "property": "--loading-icon-delay", "value": "400ms" },
+    { "property": "--pdfViewer-padding-bottom", "value": "9px" },
+    { "property": "--page-margin", "value": "8px auto -1px" },
+    { "property": "--page-border", "value": "1px solid CanvasText" },
+    { "property": "--spreadHorizontalWrapped-margin-LR", "value": "3.5px" },
     {
       "property": "--safe-area-inset-top",
       "value": "env(safe-area-inset-top)"
@@ -22,158 +27,7 @@
       "property": "--safe-area-inset-right",
       "value": "env(safe-area-inset-right)"
     },
-    { "property": "--keyboard-height", "value": "0px" },
-    { "property": "--ap-radius-s", "value": "4px" },
-    { "property": "--ap-radius-m", "value": "8px" },
-    { "property": "--ap-radius-l", "value": "10px" },
-    { "property": "--ap-radius-xl", "value": "16px" },
-    { "property": "--ap-primary-h", "value": "15" },
-    { "property": "--ap-primary-s", "value": "64%" },
-    { "property": "--ap-primary-l", "value": "88%" },
-    { "property": "--ap-primary-d", "value": "80%" },
-    {
-      "property": "--ap-primary",
-      "value": "hsl(\n    var(--ap-primary-h),\n    var(--ap-primary-s),\n    var(--ap-primary-l)\n  )"
-    },
-    { "property": "--ap-secondary-h", "value": "157" },
-    { "property": "--ap-secondary-s", "value": "32%" },
-    { "property": "--ap-secondary-l", "value": "58%" },
-    { "property": "--ap-secondary-d", "value": "70%" },
-    {
-      "property": "--ap-secondary",
-      "value": "hsl(\n    var(--ap-secondary-h),\n    var(--ap-secondary-s),\n    var(--ap-secondary-l)\n  )"
-    },
-    { "property": "--ap-base1-h", "value": "249" },
-    { "property": "--ap-base1-s", "value": "33%" },
-    { "property": "--ap-base1-l", "value": "8%" },
-    { "property": "--ap-base1-d", "value": "10%" },
-    {
-      "property": "--ap-base0",
-      "value": "hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l))"
-    },
-    { "property": "--ap-base0-h", "value": "250" },
-    { "property": "--ap-base0-s", "value": "23%" },
-    { "property": "--ap-base0-l", "value": "5%" },
-    { "property": "--ap-base0-d", "value": "13%" },
-    {
-      "property": "--ap-base1",
-      "value": "hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l))"
-    },
-    { "property": "--ap-red", "value": "#e97193" },
-    { "property": "--ap-green", "value": "#aac5a0" },
-    { "property": "--ap-blue", "value": "#a8c5e6" },
-    { "property": "--ap-purple", "value": "#dfa7e7" },
-    { "property": "--ap-aqua", "value": "#a8e5e6" },
-    { "property": "--ap-yellow", "value": "#ece0a8" },
-    { "property": "--ap-orange", "value": "#d1a999" },
-    { "property": "--ap-color-strong", "value": "#e97193" },
-    { "property": "--ap-color-quote", "value": "#e97193" },
-    { "property": "--ap-color-italic", "value": "#e97193" },
-    { "property": "--ap-color-tag-background", "value": "#2c2537" },
-    { "property": "--ap-color-tag-text", "value": "#eeeeee" },
-    { "property": "--ap-code-gray-1", "value": "#5b5c5f" },
-    { "property": "--ap-code-gray-2", "value": "#45474c" },
-    { "property": "--ap-code-red", "value": "var(--ap-red)" },
-    { "property": "--ap-code-green", "value": "var(--ap-green)" },
-    { "property": "--ap-code-blue", "value": "var(--ap-blue)" },
-    { "property": "--ap-code-purple", "value": "var(--ap-purple)" },
-    { "property": "--ap-code-aqua", "value": "var(--ap-aqua)" },
-    { "property": "--ap-code-yellow", "value": "var(--ap-yellow)" },
-    { "property": "--ap-code-orange", "value": "var(--ap-orange)" },
-    {
-      "property": "--ap-color-dp0",
-      "value": "hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l))"
-    },
-    {
-      "property": "--ap-color-dp1",
-      "value": "hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l))"
-    },
-    {
-      "property": "--ap-color-dp2",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 5%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp3",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 10%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp4",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 15%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp5",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 40%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp6",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 50%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp7",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 60%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp8",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 70%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp9",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 80%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp10",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 85%)\n  )"
-    },
-    {
-      "property": "--ap-color-dp11",
-      "value": "hsl(\n    var(--ap-base0-h),\n    var(--ap-base0-s),\n    calc(var(--ap-base0-l) + 90%)\n  )"
-    },
-    { "property": "--ap-h1", "value": "var(--ap-red)" },
-    { "property": "--ap-h2", "value": "var(--ap-purple)" },
-    { "property": "--ap-h3", "value": "var(--ap-blue)" },
-    { "property": "--ap-h4", "value": "var(--ap-green)" },
-    { "property": "--ap-h5", "value": "var(--ap-orange)" },
-    { "property": "--ap-h6", "value": "var(--ap-yellow)" },
-    { "property": "--ap-h1-size", "value": "2.5em" },
-    { "property": "--ap-h2-size", "value": "1.9882em" },
-    { "property": "--ap-h3-size", "value": "1.5811em" },
-    { "property": "--ap-h4-size", "value": "1.2574em" },
-    { "property": "--ap-h5-size", "value": "1em" },
-    { "property": "--ap-h6-size", "value": "0.7953em" },
-    { "property": "--ap-size-text", "value": "1em" },
-    { "property": "--ap-size-text-header", "value": "1em" },
-    { "property": "--ap-size-text-item", "value": "1em" },
-    { "property": "--ap-container-padding", "value": "8px" },
-    { "property": "--ap-frame-left", "value": "10px" },
-    {
-      "property": "--ap-font-text",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    {
-      "property": "--ap-font-interface",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    {
-      "property": "--ap-font-monospace",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    {
-      "property": "--ap-font-title",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    {
-      "property": "--ap-font-header",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    {
-      "property": "--ap-font-hashtag",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    },
-    { "property": "--xfa-focus-outline", "value": "2px solid CanvasText" },
-    { "property": "--pdfViewer-padding-bottom", "value": "9px" },
-    { "property": "--page-margin", "value": "8px auto -1px" },
-    { "property": "--page-border", "value": "1px solid CanvasText" },
-    { "property": "--spreadHorizontalWrapped-margin-LR", "value": "3.5px" }
+    { "property": "--keyboard-height", "value": "0px" }
   ],
   "body": [
     { "property": "--anim-duration-none", "value": "0" },
@@ -1315,6 +1169,10 @@
     },
     { "property": "--font-text-override", "value": "" },
     { "property": "--font-text-theme", "value": "" },
+    {
+      "property": "--font-text",
+      "value": "var(--font-text-override), var(--font-text-theme), var(--font-default)"
+    },
     { "property": "--font-print-override", "value": "" },
     {
       "property": "--font-print",
@@ -1328,6 +1186,7 @@
     },
     { "property": "--font-text-size", "value": "16px" },
     { "property": "--font-mermaid", "value": "var(--font-text)" },
+    { "property": "height", "value": "100%" },
     { "property": "margin", "value": "0" },
     { "property": "padding", "value": "0" },
     { "property": "width", "value": "100%" },
@@ -1342,12 +1201,7 @@
     { "property": "--direction", "value": "1" },
     { "property": "--pill-focus-width", "value": "calc(100% + 6px)" },
     { "property": "--pill-focus-left-adjust", "value": "-4px" },
-    { "property": "--canvas-color", "value": "192, 192, 192" },
-    { "property": "contain", "value": "initial" },
-    { "property": "height", "value": "auto" },
-    { "property": "overflow", "value": "auto" },
-    { "property": "padding-top", "value": "0" },
-    { "property": "--font-text", "value": "var(--font-print)" }
+    { "property": "--canvas-color", "value": "192, 192, 192" }
   ],
   ".theme-light": [
     { "property": "--color-orange-rgb", "value": "236, 117, 0" },
@@ -1641,6 +1495,7 @@
     { "property": "--h4-color", "value": "var(--ap-h4)" },
     { "property": "--h5-color", "value": "var(--ap-h5)" },
     { "property": "--h6-color", "value": "var(--ap-h6)" },
+    { "property": "--highlight-mix-blend-mode", "value": "lighten" },
     { "property": "--icon-color-focused", "value": "var(--color-accent)" },
     {
       "property": "--input-shadow",
@@ -1720,8 +1575,7 @@
       "value": "hsla(var(--interactive-accent-hsl), 0.25)"
     },
     { "property": "--yellow", "value": "#e5b567" },
-    { "property": "color-scheme", "value": "dark" },
-    { "property": "--highlight-mix-blend-mode", "value": "darken" }
+    { "property": "color-scheme", "value": "dark" }
   ],
   ".view-header-title-parent .view-header-breadcrumb-separator": [
     { "property": "padding", "value": "2px 1px" },
@@ -1739,7 +1593,7 @@
   ],
   ".workspace-split.mod-root": [
     { "property": "padding", "value": "0" },
-    { "property": "border-radius", "value": "10px" },
+    { "property": "border-radius", "value": "var(--ap-radius-l)" },
     { "property": "background-color", "value": "var(--color-base-20)" }
   ],
   "input[type=\"search\"]": [
@@ -1767,10 +1621,10 @@
     },
     { "property": "border-radius", "value": "var(--radius-m)" },
     { "property": "box-shadow", "value": "var(--shadow-s)" },
+    { "property": "display", "value": "flex" },
     { "property": "max-height", "value": "var(--popover-max-height)" },
     { "property": "position", "value": "absolute" },
-    { "property": "z-index", "value": "var(--layer-popover)" },
-    { "property": "display", "value": "none" }
+    { "property": "z-index", "value": "var(--layer-popover)" }
   ],
   ".prompt": [
     { "property": "display", "value": "flex" },
@@ -2080,6 +1934,12 @@
     { "property": "top", "value": "0" },
     { "property": "inset-inline-end", "value": "0" }
   ],
+  ".markdown-rendered button.copy-code-button:hover": [
+    {
+      "property": "background-color",
+      "value": "var(--background-modifier-hover)"
+    }
+  ],
   "h1": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
     { "property": "margin-block-start", "value": "var(--p-spacing)" },
@@ -2091,10 +1951,7 @@
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "var(--h1-line-height)" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h2": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2113,10 +1970,7 @@
     },
     { "property": "padding-bottom", "value": "2px" },
     { "property": "width", "value": "100%" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h3": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2129,10 +1983,7 @@
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "var(--h3-line-height)" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h4": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2145,10 +1996,7 @@
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "var(--h4-line-height)" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h5": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2161,10 +2009,7 @@
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "var(--h5-line-height)" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h6": [
     { "property": "margin-block-end", "value": "var(--p-spacing)" },
@@ -2177,10 +2022,7 @@
     { "property": "font-weight", "value": "var(--font-weight)" },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "var(--h6-line-height)" },
-    {
-      "property": "font-family",
-      "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Ubuntu,\n    sans-serif"
-    }
+    { "property": "font-family", "value": "var(--ap-font-header)" }
   ],
   "h1 a": [{ "property": "--link-weight", "value": "var(--h1-weight)" }],
   "h2 a": [{ "property": "--link-weight", "value": "var(--h2-weight)" }],
@@ -2201,6 +2043,13 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
+  "a:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
+    }
+  ],
   ".external-link": [
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -2215,11 +2064,25 @@
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
   ],
+  ".external-link:hover": [
+    { "property": "color", "value": "var(--link-external-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-external-decoration-hover)"
+    }
+  ],
   ".markdown-rendered .internal-link": [
     { "property": "color", "value": "var(--link-color)" },
     { "property": "cursor", "value": "var(--cursor-link)" },
     { "property": "text-decoration-line", "value": "var(--link-decoration)" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" }
+  ],
+  ".markdown-rendered .internal-link:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
+    }
   ],
   ".markdown-rendered .internal-link.is-unresolved": [
     { "property": "color", "value": "var(--link-unresolved-color)" },
@@ -2231,6 +2094,15 @@
     {
       "property": "text-decoration-style",
       "value": "var(--link-unresolved-decoration-style)"
+    }
+  ],
+  ".markdown-rendered .internal-link.is-unresolved:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    { "property": "opacity", "value": "1" },
+    { "property": "text-decoration-color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
     }
   ],
   "a.tag": [
@@ -2249,6 +2121,15 @@
       "value": "var(--tag-padding-y) var(--tag-padding-x)"
     },
     { "property": "line-height", "value": "1" }
+  ],
+  "a.tag:hover": [
+    { "property": "background-color", "value": "var(--tag-background-hover)" },
+    {
+      "property": "border",
+      "value": "var(--tag-border-width) solid var(--tag-border-color-hover)"
+    },
+    { "property": "color", "value": "var(--tag-color-hover)" },
+    { "property": "text-decoration", "value": "var(--tag-decoration-hover)" }
   ],
   ".backlink-pane > .tree-item-self": [
     { "property": "color", "value": "var(--nav-heading-color)" },
@@ -2276,49 +2157,22 @@
     { "property": "color", "value": "var(--nav-item-color-active)" },
     { "property": "font-weight", "value": "var(--nav-item-weight-active)" }
   ],
-  ".markdown-rendered button.copy-code-button:hover": [
-    {
-      "property": "background-color",
-      "value": "var(--background-modifier-hover)"
-    }
+  ".graph-view.color-fill": [
+    { "property": "color", "value": "var(--graph-node)" }
   ],
-  "a:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-fill-tag": [
+    { "property": "color", "value": "var(--graph-node-tag)" }
   ],
-  ".external-link:hover": [
-    { "property": "color", "value": "var(--link-external-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-external-decoration-hover)"
-    }
+  ".graph-view.color-line": [
+    { "property": "color", "value": "var(--graph-line)" }
   ],
-  ".markdown-rendered .internal-link:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-text": [
+    { "property": "color", "value": "var(--graph-text)" }
   ],
-  ".markdown-rendered .internal-link.is-unresolved:hover": [
-    { "property": "color", "value": "var(--link-color-hover)" },
-    { "property": "opacity", "value": "1" },
-    { "property": "text-decoration-color", "value": "var(--link-color-hover)" },
-    {
-      "property": "text-decoration-line",
-      "value": "var(--link-decoration-hover)"
-    }
+  ".graph-view.color-fill-highlight": [
+    { "property": "color", "value": "var(--interactive-accent)" }
   ],
-  "a.tag:hover": [
-    { "property": "background-color", "value": "var(--tag-background-hover)" },
-    {
-      "property": "border",
-      "value": "var(--tag-border-width) solid var(--tag-border-color-hover)"
-    },
-    { "property": "color", "value": "var(--tag-color-hover)" },
-    { "property": "text-decoration", "value": "var(--tag-decoration-hover)" }
+  ".graph-view.color-line-highlight": [
+    { "property": "color", "value": "var(--interactive-accent)" }
   ]
 }

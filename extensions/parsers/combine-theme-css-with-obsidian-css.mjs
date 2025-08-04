@@ -5,7 +5,6 @@ import { getTheme } from "../../util/util.mjs";
 import { themes } from "../../config.mjs";
 import { splitCombinedRules } from "../../util/postcss.mjs";
 import postcss from "postcss";
-import postcssCssVariables from "postcss-css-variables";
 import calc from "postcss-calc";
 import postcssNesting from "postcss-nesting";
 import postcssCustomProperties from "postcss-custom-properties";
@@ -34,15 +33,17 @@ export default function combineThemeCssWithObsidianCss(
 
     obsidianCSS = format(
       splitCombinedRules(
-        format(obsidianCSSRaw, "css").replace(/\/\*.*?\*\//gms, ""),
-        /*.replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
+        format(obsidianCSSRaw, "css")
+          .replace(/\/\*.*?\*\//gms, "")
+          .replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
+          .replace(/^\s*?@media\s+?print.*?\{.*?^\}$/gms, "")
           .replace(
             /^\s*?@(?:-moz-|-webkit-)?(?:keyframes|font-face)\s+[\w\-]+\s*?\{.*?^\}$/gms,
             "",
           )
           .replace(/^(\s*?)@[^\{$]+?\s*?[^\{$]*?\s*?\{(.*?)^\1\}$/gms, "$2")
           .replace(/\}\n(?!\n)/gms, "}\n\n")
-          .replace(/(?<!\})\n{2,}/gms, "\n"),*/
+          .replace(/(?<!\})\n{2,}/gms, "\n"),
       ),
       "css",
     );
@@ -81,18 +82,16 @@ export default function combineThemeCssWithObsidianCss(
 
     //const combinedCSS = cleanCSS(obsidianCSS, themeCSS, mode, false);
     let combinedCSS = splitCombinedRules(
-      format(`${obsidianCSS}\n${themeCSS}`, "css").replace(
-        /\/\*.*?\*\//gms,
-        "",
-      ),
-      /*.replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
+      format(`${obsidianCSS}\n${themeCSS}`, "css")
+        .replace(/\/\*.*?\*\//gms, "")
+        .replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
         .replace(
           /^\s*?@(?:-moz-|-webkit-)?(?:keyframes)\s+[\w\-]+\s*?\{.*?^\}$/gms,
           "",
         )
         .replace(/^(\s*?)@[^\{$]+?\s*?[^\{$]*?\s*?\{(.*?)^\1\}$/gms, "$2")
         .replace(/\}\n(?!\n)/gms, "}\n\n")
-        .replace(/(?<!\})\n{2,}/gms, "\n"),*/
+        .replace(/(?<!\})\n{2,}/gms, "\n"),
     );
     let compareString = "";
     let index = 0;
@@ -106,6 +105,8 @@ export default function combineThemeCssWithObsidianCss(
     }
 
     combinedCSS = combinedCSS.replace(/(?<=[^\}])\n\n/gms, "\n");
+
+    combinedCSS = balanceCurlyBraces(combinedCSS);
 
     writeFileSync(
       `./atomic/${theme}/obsidian-plus-theme.css`,
@@ -244,10 +245,38 @@ function singlePass(combinedCSS) {
   }
   tempCSS = combinedCSS;
   try {
-    combinedCSS = format(combinedCSS, "css");
+    combinedCSS = format(combinedCSS, "css", true);
   } catch (error) {
     combinedCSS = tempCSS; // Revert to the original CSS if formatting fails
   }
 
   return combinedCSS;
+}
+
+/**
+ * Balances the curly braces in the CSS string.
+ * Mostly used to remove excess closing curly braces.
+ * @param {string} cssString - The CSS string to balance.
+ * @returns {string} The balanced CSS string.
+ */
+function balanceCurlyBraces(cssString) {
+  // Keep track of the balance of curly braces.
+  let balance = 0;
+  let result = "";
+  for (let i = 0; i < cssString.length; i++) {
+    const char = cssString[i];
+    if (char === "{") {
+      balance++;
+      result += char;
+    } else if (char === "}") {
+      if (balance > 0) {
+        balance--;
+        result += char;
+      }
+    } else {
+      result += char;
+    }
+  }
+
+  return result;
 }

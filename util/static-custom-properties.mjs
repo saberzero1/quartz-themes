@@ -11,8 +11,6 @@ export default function generateStaticCSS(cssString, themeName) {
   //const skipColors = ["Shiba Inu", "Oliviers Theme"]
 
   cssString = cssString.replace(/\/\*.*?\*\//gms, "")
-  return cssString;
-  /*
   let compareString = cssString
 
   cssString = postcss()
@@ -101,7 +99,6 @@ export default function generateStaticCSS(cssString, themeName) {
   }
 
   return cleanRulesAfterRun(cssString)
-  */
 }
 
 /**
