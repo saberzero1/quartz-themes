@@ -32,7 +32,6 @@ const declarationsToFilter = [
 
 export function convert(css, fullMode = false) {
   if (fullMode) {
-    // Preprocess the CSS
     css = preprocessCSS(css);
   }
   // Convert to JSON dictionary format
@@ -105,7 +104,7 @@ export function preprocessCSS(css, index = 0) {
   css = format(css, "css");
 
   // Process CSS with PostCSS plugins
-  //css = createStatic(css);
+  css = createStatic(css);
 
   if (css === current || index >= 25) {
     return css;

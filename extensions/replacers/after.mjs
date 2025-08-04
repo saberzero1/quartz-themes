@@ -187,6 +187,20 @@ const mapping = [
     selector: "body.styled-scrollbars ::-webkit-scrollbar-corner",
     declaration: "",
   },
+
+  { selector: ".graph-view.color-fill", declaration: "color" },
+  { selector: ".graph-view.color-fill-tag", declaration: "color" },
+  { selector: ".graph-view.color-unresolved", declaration: "color" },
+  { selector: ".graph-view.color-fill-highlight", declaration: "color" },
+  { selector: ".graph-view.color-line-highlight", declaration: "color" },
+  { selector: ".graph-view.color-line", declaration: "color" },
+  { selector: ".graph-view.color-text", declaration: "color" },
+
+  { selector: "body", declaration: "--graph-line" },
+  { selector: "body", declaration: "--graph-node" },
+  { selector: "body", declaration: "--graph-node-unresolved" },
+  { selector: "body", declaration: "--background-modifier-border-focus" },
+  { selector: "body", declaration: "--text-faint" },
 ];
 
 const darkMapping = [
@@ -285,10 +299,7 @@ export function replaceAfter(manifestCollection) {
     });
 
     const fileContent = readFileSync(filePath, "utf8");
-    const updatedContent = fileContent.replace(
-      target("/\/\/%%FIXES%%/g"),
-      fixes,
-    );
+    const updatedContent = fileContent.replace(target("FIXES"), fixes);
 
     const cleanedContent = cleanSCSSString(updatedContent);
     const variableMap = JSON.parse(

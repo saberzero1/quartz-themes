@@ -1,0 +1,14 @@
+:root:root:root {
+  --header-font-family: "Audiowide", monospace;
+  --main-text-font-family: "DotGothic16", monospace;
+
+  --h1-font: var(--header-font-family);
+  --h2-font: var(--header-font-family);
+  --h3-font: var(--header-font-family);
+  --h4-font: var(--header-font-family);
+  --h5-font: var(--header-font-family);
+  --h6-font: var(--header-font-family);
+
+  --font-default: var(--main-text-font-family);
+  --font-monospace-default: var(--main-text-font-family);
+}
