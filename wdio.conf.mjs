@@ -65,7 +65,7 @@ export const config = {
 
   mochaOpts: {
     ui: "bdd",
-    timeout: 300000,
+    timeout: 36000000,
     // You can set more config here like "retry" to retry flaky tests
     // or "bail" to quit tests after the first failure.
   },

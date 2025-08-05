@@ -237,12 +237,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "specimen.md",
+                    "file": "general.md",
                     "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "specimen"
+                  "title": "general"
                 }
               }
             ]
@@ -310,7 +310,7 @@
                 "state": {
                   "type": "footnotes",
                   "state": {
-                    "file": "specimen.md"
+                    "file": "general.md"
                   },
                   "icon": "lucide-file-signature",
                   "title": "Footnotes"
@@ -442,7 +442,7 @@
         }
       },
       "active": "6f6562d9ce38fe65",
-      "mtime": "2025-07-30T14:05:37+02:00"
+      "mtime": "2025-08-05T08:33:24+02:00"
     },
     "headings": {
       "main": {
@@ -889,5 +889,5 @@
       "mtime": "2025-07-30T12:34:15+02:00"
     }
   },
-  "active": "headings"
+  "active": "general"
 }
