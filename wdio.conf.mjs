@@ -48,6 +48,7 @@ export const config = {
     "wdio:obsidianOptions": {
       installerVersion: installerVersion,
       plugins: [
+        "./runner/vault/.obsidian/plugins/dataview",
         "./runner/vault/.obsidian/plugins/obsidian-style-settings",
         "./runner/vault/.obsidian/plugins/obsidian-view-mode-by-frontmatter",
       ],
