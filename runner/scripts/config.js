@@ -7,6 +7,26 @@ const sets = {
     "font-weight",
     "line-height",
   ],
+  text: [
+    "background-color",
+    "color",
+    "cursor",
+    "filter",
+    "font-family",
+    "font-size",
+    "font-weight",
+    "line-height",
+    "margin-block-end",
+    "margin-block-start",
+    "outline",
+    "text-decoration",
+    "text-decoration-color",
+    "text-decoration-line",
+    "text-decoration-style",
+    "text-decoration-thickness",
+    "transition",
+    "user-select",
+  ],
   headings: ["color", "font-family", "text-shadow"],
   callouts: {
     container: [
@@ -34,12 +54,64 @@ const body =
 
 export const extractionTargets = {
   general: {
-    file: "specimen.md",
+    file: "general.md",
     selectors: [
       {
         obsidianSelector: null,
         quartzSelector: "div#quartz-root",
         properties: ["background-color", "color", "font-family", "font-size"],
+      },
+      // links
+      {
+        obsidianSelector: `a.external-link`,
+        quartzSelector: "a.external-link",
+        properties: sets.text,
+      },
+      {
+        obsidianSelector: `a.internal-link`,
+        quartzSelector: "a.internal-link",
+        properties: sets.text,
+      },
+      // text
+      { obsidianSelector: `p`, quartzSelector: "p", properties: sets.text },
+      {
+        obsidianSelector: `strong`,
+        quartzSelector: "strong",
+        properties: sets.text,
+      },
+      { obsidianSelector: `b`, quartzSelector: "b", properties: sets.text },
+      { obsidianSelector: `em`, quartzSelector: "em", properties: sets.text },
+      { obsidianSelector: `i`, quartzSelector: "i", properties: sets.text },
+      { obsidianSelector: `u`, quartzSelector: "u", properties: sets.text },
+      { obsidianSelector: `s`, quartzSelector: "s", properties: sets.text },
+      {
+        obsidianSelector: `mark`,
+        quartzSelector: "mark",
+        properties: sets.text,
+      },
+      { obsidianSelector: `del`, quartzSelector: "del", properties: sets.text },
+      {
+        obsidianSelector: `hr`,
+        quartzSelector: "hr",
+        properties: [
+          "border",
+          "border-color",
+          "border-style",
+          "border-top",
+          "box-shadow",
+          "margin",
+        ],
+      },
+      // tag pills
+      {
+        obsidianSelector: `div.multi-select-pill`,
+        quartzSelector: "",
+        properties: [],
+      },
+      {
+        obsidianSelector: `div.multi-select-pill > div.multi-select-pill-content > span`,
+        quartzSelector: "",
+        properties: [],
       },
     ],
   },

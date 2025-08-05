@@ -1,0 +1,421 @@
+{
+  "general": {
+    "div#quartz-root": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "font-size": "16px"
+    }
+  },
+  "headings": {
+    "h1": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    },
+    "h2": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    },
+    "h3": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    },
+    "h4": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    },
+    "h5": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    },
+    "h6": {
+      "color": "rgb(198, 189, 219)",
+      "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "text-shadow": "none"
+    }
+  },
+  "callouts": {
+    ".callout[data-callout=\"abstract\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"abstract\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"abstract\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"bug\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"bug\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"bug\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"danger\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"danger\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"danger\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"example\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"example\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"example\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"failure\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"failure\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"failure\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"info\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"info\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"info\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"question\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"question\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"question\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"quote\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"quote\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"quote\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"quote\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"success\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"success\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"success\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"tip\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"tip\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"tip\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"todo\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"todo\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"todo\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"warning\"]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"warning\"] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout=\"warning\"] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    },
+    ".callout[data-callout]": {
+      "--callout-color": "from hsl(258, 88%, 66%) r g b",
+      "--callout-icon": "unset",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "border-color": "rgb(198, 189, 219)",
+      "border-radius": "0px",
+      "border-style": "none",
+      "border-width": "0px",
+      "mix-blend-mode": "normal",
+      "padding": "32px"
+    },
+    ".callout[data-callout] .callout-title": {
+      "color": "rgb(198, 189, 219)",
+      "font-size": "16px",
+      "gap": "normal",
+      "line-height": "1.5",
+      "padding": "32px"
+    },
+    ".callout[data-callout] .callout-title .callout-icon": {
+      "color": "rgb(198, 189, 219)"
+    },
+    ".callout[data-callout] .callout-title > .callout-title-inner > p": {
+      "color": "rgb(198, 189, 219)",
+      "font-weight": "400"
+    },
+    ".callout[data-callout] > .callout-content": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "padding": "32px"
+    }
+  }
+}
