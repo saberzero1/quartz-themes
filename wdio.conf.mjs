@@ -1,10 +1,14 @@
 import * as path from "path";
+import { readdirSync } from "fs";
 import {
   obsidianBetaAvailable,
   resolveObsidianVersions,
 } from "wdio-obsidian-service";
 
 const cacheDir = path.resolve(".obsidian-cache");
+
+const themeList = readdirSync("./runner/vault/.obsidian/themes");
+const pluginList = readdirSync("./runner/vault/.obsidian/plugins");
 
 let versions; // [appVersion, installerVersion][]
 if (process.env.OBSIDIAN_VERSIONS) {
@@ -47,11 +51,14 @@ export const config = {
     browserVersion: appVersion,
     "wdio:obsidianOptions": {
       installerVersion: installerVersion,
-      plugins: [
-        "./runner/vault/.obsidian/plugins/dataview",
-        "./runner/vault/.obsidian/plugins/obsidian-style-settings",
-        "./runner/vault/.obsidian/plugins/obsidian-view-mode-by-frontmatter",
-      ],
+      /*
+      plugins: pluginList.map(
+        (plugin) => `./runner/vault/.obsidian/plugins/${plugin}`,
+      ),
+      themes: themeList.map(
+        (theme) => `./runner/vault/.obsidian/themes/${theme}`,
+      ),
+      */
       // If you need to switch between multiple vaults, you can omit this and use
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
@@ -66,7 +73,7 @@ export const config = {
 
   mochaOpts: {
     ui: "bdd",
-    timeout: 36000000,
+    timeout: 12 * 60 * 60 * 1000,
     // You can set more config here like "retry" to retry flaky tests
     // or "bail" to quit tests after the first failure.
   },

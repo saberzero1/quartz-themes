@@ -782,9 +782,9 @@
     "font-size": "13px",
     "font-weight": "400",
     "line-height": "16.9px",
-    "margin-inline-start": "-17px",
-    "padding": "4px 8px 4px 41px",
-    "padding-inline-start": "41px"
+    "margin-inline-start": "0px",
+    "padding": "4px 8px 4px 24px",
+    "padding-inline-start": "24px"
   },
   "li.depth-1 + li.depth-2": {
     "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
@@ -795,9 +795,9 @@
     "font-size": "13px",
     "font-weight": "400",
     "line-height": "16.9px",
-    "margin-inline-start": "-34px",
-    "padding": "4px 8px 4px 58px",
-    "padding-inline-start": "58px"
+    "margin-inline-start": "0px",
+    "padding": "4px 8px 4px 24px",
+    "padding-inline-start": "24px"
   },
   "li.depth-2 + li.depth-3": {
     "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
@@ -808,9 +808,9 @@
     "font-size": "13px",
     "font-weight": "400",
     "line-height": "16.9px",
-    "margin-inline-start": "-51px",
-    "padding": "4px 8px 4px 75px",
-    "padding-inline-start": "75px"
+    "margin-inline-start": "0px",
+    "padding": "4px 8px 4px 24px",
+    "padding-inline-start": "24px"
   },
   "li.depth-3 + li.depth-4": {
     "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",

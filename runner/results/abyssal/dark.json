@@ -782,9 +782,9 @@
     "font-size": "13px",
     "font-weight": "400",
     "line-height": "16.9px",
-    "margin-inline-start": "-17px",
-    "padding": "4px 8px 4px 41px",
-    "padding-inline-start": "41px"
+    "margin-inline-start": "0px",
+    "padding": "4px 8px 4px 24px",
+    "padding-inline-start": "24px"
   },
   "li.depth-1 + li.depth-2": {
     "border-inline-start": "1px solid rgba(34, 142, 195, 0.15)",
