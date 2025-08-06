@@ -1,0 +1,888 @@
+{
+  ".callout[data-callout=\"abstract\"]": {
+    "--callout-color": "0, 191, 188",
+    "--callout-icon": "lucide-clipboard-list",
+    "background-color": "rgba(0, 191, 188, 0.17)",
+    "border-color": "rgba(0, 191, 188, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title": {
+    "color": "rgb(0, 191, 188)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 191, 188)"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"abstract\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"bug\"]": {
+    "--callout-color": "213, 57, 132",
+    "--callout-icon": "lucide-bug",
+    "background-color": "rgba(213, 57, 132, 0.17)",
+    "border-color": "rgba(213, 57, 132, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title": {
+    "color": "rgb(213, 57, 132)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
+    "color": "rgb(213, 57, 132)"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"bug\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"danger\"]": {
+    "--callout-color": "244, 87, 87",
+    "--callout-icon": "lucide-zap",
+    "background-color": "rgba(244, 87, 87, 0.17)",
+    "border-color": "rgba(244, 87, 87, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title": {
+    "color": "rgb(244, 87, 87)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
+    "color": "rgb(244, 87, 87)"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"danger\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"example\"]": {
+    "--callout-color": "120, 82, 238",
+    "--callout-icon": "lucide-list",
+    "background-color": "rgba(120, 82, 238, 0.17)",
+    "border-color": "rgba(120, 82, 238, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"example\"] .callout-title": {
+    "color": "rgb(120, 82, 238)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
+    "color": "rgb(120, 82, 238)"
+  },
+  ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"example\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"failure\"]": {
+    "--callout-color": "244, 87, 87",
+    "--callout-icon": "lucide-x",
+    "background-color": "rgba(244, 87, 87, 0.17)",
+    "border-color": "rgba(244, 87, 87, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title": {
+    "color": "rgb(244, 87, 87)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
+    "color": "rgb(244, 87, 87)"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"failure\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"info\"]": {
+    "--callout-color": "8, 109, 221",
+    "--callout-icon": "lucide-info",
+    "background-color": "rgba(8, 109, 221, 0.17)",
+    "border-color": "rgba(8, 109, 221, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"info\"] .callout-title": {
+    "color": "rgb(8, 109, 221)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
+    "color": "rgb(8, 109, 221)"
+  },
+  ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"info\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"question\"]": {
+    "--callout-color": "236, 117, 0",
+    "--callout-icon": "help-circle",
+    "background-color": "rgba(236, 117, 0, 0.17)",
+    "border-color": "rgba(236, 117, 0, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"question\"] .callout-title": {
+    "color": "rgb(236, 117, 0)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
+    "color": "rgb(236, 117, 0)"
+  },
+  ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"question\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"quote\"]": {
+    "--callout-color": "158, 158, 158",
+    "--callout-icon": "lucide-message-circle",
+    "background-color": "rgba(158, 158, 158, 0.17)",
+    "border-color": "rgba(158, 158, 158, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title": {
+    "color": "rgb(158, 158, 158)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title .callout-icon": {
+    "color": "rgb(158, 158, 158)"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"quote\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"success\"]": {
+    "--callout-color": "8, 185, 78",
+    "--callout-icon": "lucide-check",
+    "background-color": "rgba(8, 185, 78, 0.17)",
+    "border-color": "rgba(8, 185, 78, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"success\"] .callout-title": {
+    "color": "rgb(8, 185, 78)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
+    "color": "rgb(8, 185, 78)"
+  },
+  ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"success\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"tip\"]": {
+    "--callout-color": "224, 172, 0",
+    "--callout-icon": "lucide-clipboard-check",
+    "background-color": "rgba(224, 172, 0, 0.17)",
+    "border-color": "rgba(224, 172, 0, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title": {
+    "color": "rgb(224, 172, 0)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
+    "color": "rgb(224, 172, 0)"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"tip\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"todo\"]": {
+    "--callout-color": "8, 109, 221",
+    "--callout-icon": "lucide-check-circle-2",
+    "background-color": "rgba(8, 109, 221, 0.17)",
+    "border-color": "rgba(8, 109, 221, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title": {
+    "color": "rgb(8, 109, 221)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
+    "color": "rgb(8, 109, 221)"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"todo\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout=\"warning\"]": {
+    "--callout-color": "236, 117, 0",
+    "--callout-icon": "lucide-alert-triangle",
+    "background-color": "rgba(236, 117, 0, 0.17)",
+    "border-color": "rgba(236, 117, 0, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title": {
+    "color": "rgb(236, 117, 0)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
+    "color": "rgb(236, 117, 0)"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"warning\"] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".callout[data-callout]": {
+    "--callout-color": "8, 109, 221",
+    "--callout-icon": "lucide-lightbulb",
+    "background-color": "rgba(8, 109, 221, 0.17)",
+    "border-color": "rgba(8, 109, 221, 0.3)",
+    "border-radius": "5px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "0px"
+  },
+  ".callout[data-callout] .callout-title": {
+    "color": "rgb(8, 109, 221)",
+    "font-size": "15.68px",
+    "gap": "15.68px",
+    "line-height": "20.384px",
+    "padding": "5px 10px"
+  },
+  ".callout[data-callout] .callout-title .callout-icon": {
+    "color": "rgb(8, 109, 221)"
+  },
+  ".callout[data-callout] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(51, 51, 51)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout] > .callout-content": {
+    "background-color": "rgb(248, 248, 248)",
+    "padding": "10px"
+  },
+  ".data-footnote-backref": {
+    "color": "rgb(89, 89, 89)",
+    "text-decoration": "none solid rgb(89, 89, 89)"
+  },
+  ".katex > .katex-html": {
+    "font-family": "MJXZERO, MJXTEX"
+  },
+  ".katex-display > .katex": {
+    "display": "block",
+    "font": "16px / 0px \"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-align": "center",
+    "white-space": "normal"
+  },
+  ".katex-display > .katex > .katex-html": {
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".page article li:has(>input[type=checkbox]:checked)": {
+    "color": "rgb(69, 69, 69)",
+    "text-decoration": "line-through solid rgb(69, 69, 69)",
+    "text-decoration-color": "rgb(69, 69, 69)"
+  },
+  ".page article p > b": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > em": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > i": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > s": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > strong": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "600",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > u": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-button": {
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px solid rgb(219, 215, 215)",
+    "border-radius": "5px",
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "13px",
+    "padding": "4px 8px"
+  },
+  ".text-highlight": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(23, 44, 130)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"iA Writer Duo S\"",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(23, 44, 130) none 0px",
+    "text-decoration": "none solid rgb(23, 44, 130)",
+    "text-decoration-color": "rgb(23, 44, 130)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "a": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "a.internal-link": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(108, 132, 229)",
+    "cursor": "pointer",
+    "filter": "none",
+    "font-family": "\"iA Writer Duo S\"",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(108, 132, 229) none 0px",
+    "text-decoration": "underline 0.96px solid rgba(108, 132, 229, 0.3)",
+    "text-decoration-color": "rgba(108, 132, 229, 0.3)",
+    "text-decoration-line": "underline",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "0.96px",
+    "transition": "opacity 0.15s ease-in-out",
+    "user-select": "text"
+  },
+  "a.internal.tag-link": {
+    "align-items": "center",
+    "background-color": "rgba(102, 122, 204, 0.25)",
+    "border-bottom-color": "rgb(31, 49, 122)",
+    "border-bottom-left-radius": "5px",
+    "border-bottom-right-radius": "5px",
+    "border-bottom-style": "none",
+    "border-left-color": "rgb(31, 49, 122)",
+    "border-left-style": "none",
+    "border-right-color": "rgb(31, 49, 122)",
+    "border-right-style": "none",
+    "border-top-color": "rgb(31, 49, 122)",
+    "border-top-left-radius": "5px",
+    "border-top-right-radius": "5px",
+    "border-top-style": "none",
+    "display": "flex",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "11.375px",
+    "font-weight": "400",
+    "line-height": "11.375px",
+    "margin-inline-start": "1px"
+  },
+  "a.internal.tag-link::before": {
+    "color": "rgb(31, 49, 122)"
+  },
+  "blockquote": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-inline-start": "0px none rgb(51, 51, 51)",
+    "font-style": "normal",
+    "margin-inline-end": "0px",
+    "margin-inline-start": "0px",
+    "padding-bottom": "0px",
+    "padding-inline-start": "24px",
+    "padding-top": "0px"
+  },
+  "body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
+    "color": "rgb(69, 69, 69)",
+    "cursor": "default",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px",
+    "text-decoration": "none solid rgb(69, 69, 69)"
+  },
+  "body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
+    "color": "rgb(69, 69, 69)",
+    "cursor": "default",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px",
+    "text-decoration": "none solid rgb(69, 69, 69)"
+  },
+  "body .explorer .explorer-content ul.explorer-ul li a": {
+    "color": "rgb(69, 69, 69)",
+    "cursor": "default",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px",
+    "text-decoration": "none solid rgb(69, 69, 69)"
+  },
+  "body input[type=checkbox]": {
+    "appearance": "none",
+    "border": "1px solid rgb(89, 89, 89)",
+    "border-radius": "10px",
+    "height": "16px",
+    "margin": "0px 8px 0px -24px",
+    "margin-inline-end": "8px",
+    "margin-inline-start": "-24px",
+    "padding": "0px",
+    "position": "relative",
+    "top": "2.66667px",
+    "transition": "box-shadow 0.15s ease-in-out",
+    "width": "16px"
+  },
+  "body input[type=checkbox]:checked:after": {
+    "-webkit-mask-image": "none",
+    "-webkit-mask-position": "0% 0%",
+    "-webkit-mask-repeat": "repeat",
+    "-webkit-mask-size": "auto",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "content": "normal",
+    "display": "block",
+    "height": "888.617px",
+    "inset-inline-start": "0px",
+    "position": "relative",
+    "top": "0px",
+    "width": "903.75px"
+  },
+  "code": {
+    "background-color": "rgb(248, 248, 248)",
+    "border": "0px solid rgb(219, 215, 215)",
+    "border-radius": "5px",
+    "color": "rgb(244, 87, 87)",
+    "font-family": "\"iA Writer Mono S\"",
+    "font-size": "14px",
+    "padding": "0px 4px"
+  },
+  "code.mermaid > svg": {
+    "fill": "rgb(51, 51, 51)",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "stroke": "none"
+  },
+  "del": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "line-through solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "line-through",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "div#quartz-root": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px"
+  },
+  "div.graph": {
+    "--quartz-graph-line": "hsl(0, calc(0% + 5%), 50%, 0.28)",
+    "--quartz-graph-node": "hsl(calc(228 + 10), calc(70% + 10%), calc(66% + 10%))",
+    "--quartz-graph-node-attachment": "#e0ac00",
+    "--quartz-graph-node-focused": "hsl(calc(228 + 0), calc(70% + 15%), calc(66% + 15%))",
+    "--quartz-graph-node-tag": "#08b94e",
+    "--quartz-graph-node-unresolved": "hsl(calc(228 + 20), calc(70% + 10%), calc(66% + 5%))",
+    "--quartz-graph-text": "hsl(0, 0%, calc(15% + 5%))"
+  },
+  "h1": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h2": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h3": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h4": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h5": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h6": {
+    "color": "rgb(51, 51, 51)",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "text-shadow": "none"
+  },
+  "hr": {
+    "border": "unset",
+    "border-color": "rgba(134, 121, 121, 0.28)",
+    "border-style": "solid none none",
+    "border-top": "1px solid rgba(134, 121, 121, 0.28)",
+    "box-shadow": "none",
+    "margin": "16px 0px"
+  },
+  "li.depth-0": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-0 + li.depth-1": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-1": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-1 + li.depth-2": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-2": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-2 + li.depth-3": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-3": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-3 + li.depth-4": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-4": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-4 + li.depth-5": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-5": {
+    "font-size": "13px",
+    "font-weight": "400",
+    "line-height": "16.9px"
+  },
+  "li.depth-5 + li.depth-6": {
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "ol > li": {
+    "color": "rgb(51, 51, 51)",
+    "margin-inline-start": "28.8px",
+    "padding-bottom": "1.2px",
+    "padding-top": "1.2px",
+    "text-align": "start"
+  },
+  "ol > li::marker": {
+    "color": "rgb(51, 51, 51)"
+  },
+  "p": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(51, 51, 51)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "28px",
+    "margin-block-end": "16px",
+    "margin-block-start": "0px",
+    "outline": "rgb(51, 51, 51) none 0px",
+    "text-decoration": "none solid rgb(51, 51, 51)",
+    "text-decoration-color": "rgb(51, 51, 51)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "pre > code": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(51, 51, 51)",
+    "border-radius": "5px",
+    "overflow-x": "auto",
+    "padding": "0px",
+    "white-space": "pre-wrap"
+  },
+  "ul > li": {
+    "color": "rgb(51, 51, 51)",
+    "margin-inline-start": "28.8px",
+    "padding-bottom": "1.2px",
+    "padding-top": "1.2px",
+    "text-align": "start"
+  },
+  "ul > li.task-list-item": {
+    "display": "list-item",
+    "list-style": "outside none none",
+    "text-align": "start"
+  },
+  "ul > li::marker": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(51, 51, 51)",
+    "border-radius": "0px",
+    "color": "rgb(51, 51, 51)",
+    "content": "normal",
+    "pointer-events": "auto",
+    "transform": "none",
+    "transition": "all"
+  }
+}
