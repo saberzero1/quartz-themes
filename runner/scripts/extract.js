@@ -1,8 +1,12 @@
 import { browser } from "@wdio/globals";
 import { extractionTargets } from "./config.js";
-import { writeFile, copyFile, writeFileSync } from "fs";
+import { writeFile, copyFile, writeFileSync, mkdirSync } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
-import { isDarkTheme, isLightTheme } from "../../util/util.mjs";
+import {
+  isDarkTheme,
+  isLightTheme,
+  sanitizeFilenamePreservingEmojis as sanitize,
+} from "../../util/util.mjs";
 import { obsidianPage } from "wdio-obsidian-service";
 
 /*
@@ -13,7 +17,7 @@ import { obsidianPage } from "wdio-obsidian-service";
 To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
-const manifestCollection = getManifestCollection(); //.slice(0, 3); // Limit to first 10 themes for testing
+const manifestCollection = getManifestCollection().slice(0, 10); // Limit to first 10 themes for testing
 
 // test/extract-styles.test.js
 describe("Quartz Theme Style Extraction", () => {
@@ -102,6 +106,8 @@ describe("Quartz Theme Style Extraction", () => {
 
   async function getStylesFromObsidian(manifest, configuration) {
     const theme = manifest.name;
+    const folder = sanitize(manifest.name);
+    mkdirSync(`./runner/results/${folder}`, { recursive: true });
     let lightResult = { general: {}, headings: {}, callouts: {} };
     let darkResult = { general: {}, headings: {}, callouts: {} };
     let lightKey = "general";
@@ -310,7 +316,7 @@ describe("Quartz Theme Style Extraction", () => {
         });
         */
       after(async () => {
-        const darkFileName = `./runner/results/${theme}-dark.json`;
+        const darkFileName = `./runner/results/${folder}/dark.json`;
         // Flatten the result object
         const darkResultObject = {};
         for (const [key, value] of Object.entries(darkResult)) {
@@ -557,7 +563,7 @@ describe("Quartz Theme Style Extraction", () => {
         */
       after(async () => {
         // Save the light result to a file
-        const lightFileName = `./runner/results/${theme}-light.json`;
+        const lightFileName = `./runner/results/${folder}/light.json`;
         // Flatten the result object
         const lightResultObject = {};
         for (const [key, value] of Object.entries(lightResult)) {
