@@ -768,10 +768,7 @@
   "li.depth-0": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "0px",
-    "padding": "4px 8px 4px 24px",
-    "padding-inline-start": "24px"
+    "line-height": "16.9px"
   },
   "li.depth-0 + li.depth-1": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",
@@ -781,10 +778,7 @@
   "li.depth-1": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "0px",
-    "padding": "4px 8px 4px 24px",
-    "padding-inline-start": "24px"
+    "line-height": "16.9px"
   },
   "li.depth-1 + li.depth-2": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",
@@ -794,10 +788,7 @@
   "li.depth-2": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "0px",
-    "padding": "4px 8px 4px 24px",
-    "padding-inline-start": "24px"
+    "line-height": "16.9px"
   },
   "li.depth-2 + li.depth-3": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",
@@ -807,10 +798,7 @@
   "li.depth-3": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "-54px",
-    "padding": "4px 8px 4px 78px",
-    "padding-inline-start": "78px"
+    "line-height": "16.9px"
   },
   "li.depth-3 + li.depth-4": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",
@@ -820,10 +808,7 @@
   "li.depth-4": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "-72px",
-    "padding": "4px 8px 4px 96px",
-    "padding-inline-start": "96px"
+    "line-height": "16.9px"
   },
   "li.depth-4 + li.depth-5": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",
@@ -833,10 +818,7 @@
   "li.depth-5": {
     "font-size": "13px",
     "font-weight": "400",
-    "line-height": "16.9px",
-    "margin-inline-start": "-90px",
-    "padding": "4px 8px 4px 114px",
-    "padding-inline-start": "114px"
+    "line-height": "16.9px"
   },
   "li.depth-5 + li.depth-6": {
     "border-inline-start": "2px solid rgba(40, 40, 40, 0.12)",

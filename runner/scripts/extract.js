@@ -42,7 +42,7 @@ describe("Quartz Theme Style Extraction", () => {
       leaf.openFile(file, { active: true, eState: "tab" });
       app.workspace.setActiveLeaf(leaf, { focus: true });
       */
-      await sleep(3000); // Wait for the file to open and styles to apply
+      await sleep(500); // Wait for the file to open and styles to apply
       //          for (const key in rules) {
       rules.forEach((rule) => {
         const containerSelector =
@@ -171,7 +171,7 @@ describe("Quartz Theme Style Extraction", () => {
         });
         */
 
-        await sleep(1000);
+        //await sleep(1000);
         console.log(`Setting up for theme: ${theme} in dark mode complete`);
       });
       /*
@@ -193,16 +193,7 @@ describe("Quartz Theme Style Extraction", () => {
         await darkPage.resetVault();
         await browser.executeObsidianCommand("theme:use-dark");
         await darkPage.setTheme(theme);
-        await darkPage.loadWorkspaceLayout("general");
-        await darkPage.openFile("general.md");
-        darkResult.general = await getStyles(configuration.general);
-        await darkPage.loadWorkspaceLayout("headings");
-        await darkPage.openFile("headings.md");
-        darkResult.headings = await getStyles(configuration.headings);
-        await darkPage.loadWorkspaceLayout("callouts");
-        await darkPage.openFile("callouts.md");
-        darkResult.callouts = await getStyles(configuration.callouts);
-        await darkPage.loadWorkspaceLayout("integrations");
+        await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidian(({ app }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -211,6 +202,19 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await darkPage.openFile("general.md");
+        await darkPage.openFile("general.md");
+        darkResult.general = await getStyles(configuration.general);
+        //await darkPage.loadWorkspaceLayout("headings");
+        await darkPage.openFile("headings.md");
+        await darkPage.openFile("headings.md");
+        darkResult.headings = await getStyles(configuration.headings);
+        //await darkPage.loadWorkspaceLayout("callouts");
+        await darkPage.openFile("callouts.md");
+        await darkPage.openFile("callouts.md");
+        darkResult.callouts = await getStyles(configuration.callouts);
+        //await darkPage.loadWorkspaceLayout("integrations");
+        await darkPage.openFile("integrations.md");
         await darkPage.openFile("integrations.md");
         darkResult.integrations = await getStyles(configuration.integrations);
       });
@@ -329,7 +333,7 @@ describe("Quartz Theme Style Extraction", () => {
         });
         */
 
-        await sleep(1000);
+        //await sleep(1000);
         console.log(`Setting up for theme: ${theme} in light mode complete`);
       });
       /*
@@ -351,16 +355,7 @@ describe("Quartz Theme Style Extraction", () => {
         await lightPage.resetVault();
         await browser.executeObsidianCommand("theme:use-light");
         await lightPage.setTheme(theme);
-        await lightPage.loadWorkspaceLayout("general");
-        await lightPage.openFile("general.md");
-        lightResult.general = await getStyles(configuration.general);
-        await lightPage.loadWorkspaceLayout("headings");
-        await lightPage.openFile("headings.md");
-        lightResult.headings = await getStyles(configuration.headings);
-        await lightPage.loadWorkspaceLayout("callouts");
-        await lightPage.openFile("callouts.md");
-        lightResult.callouts = await getStyles(configuration.callouts);
-        await lightPage.loadWorkspaceLayout("integrations");
+        await lightPage.loadWorkspaceLayout("default");
         await browser.executeObsidian(({ app }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -369,6 +364,19 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await lightPage.openFile("general.md");
+        await lightPage.openFile("general.md");
+        lightResult.general = await getStyles(configuration.general);
+        //await lightPage.loadWorkspaceLayout("headings");
+        await lightPage.openFile("headings.md");
+        await lightPage.openFile("headings.md");
+        lightResult.headings = await getStyles(configuration.headings);
+        //await lightPage.loadWorkspaceLayout("callouts");
+        await lightPage.openFile("callouts.md");
+        await lightPage.openFile("callouts.md");
+        lightResult.callouts = await getStyles(configuration.callouts);
+        //await lightPage.loadWorkspaceLayout("integrations");
+        await lightPage.openFile("integrations.md");
         await lightPage.openFile("integrations.md");
         lightResult.integrations = await getStyles(configuration.integrations);
       });
