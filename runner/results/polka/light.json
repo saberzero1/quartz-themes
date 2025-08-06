@@ -1,0 +1,888 @@
+{
+  ".callout[data-callout=\"abstract\"]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "lucide-clipboard-list",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"abstract\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"bug\"]": {
+    "--callout-color": "rgb(245, 0, 165)",
+    "--callout-icon": "lucide-bug",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(245, 0, 165)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"bug\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"danger\"]": {
+    "--callout-color": "rgb(235, 0, 0)",
+    "--callout-icon": "lucide-zap",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(235, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"danger\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"example\"]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "lucide-list",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"example\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"example\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"failure\"]": {
+    "--callout-color": "rgb(235, 0, 0)",
+    "--callout-icon": "lucide-x",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(235, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"failure\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"info\"]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "lucide-info",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"info\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"info\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"question\"]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "help-circle",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"question\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"question\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"quote\"]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "quote-glyph",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"quote\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"success\"]": {
+    "--callout-color": "rgb(0, 180, 0)",
+    "--callout-icon": "lucide-check",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 180, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"success\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"success\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"tip\"]": {
+    "--callout-color": "rgb(240, 195, 0)",
+    "--callout-icon": "lucide-lightbulb",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(240, 195, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"tip\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"todo\"]": {
+    "--callout-color": "rgb(0, 130, 235)",
+    "--callout-icon": "lucide-clipboard-check",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 130, 235)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"todo\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"warning\"]": {
+    "--callout-color": "rgb(240, 150, 0)",
+    "--callout-icon": "lucide-alert-triangle",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(240, 150, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"warning\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout]": {
+    "--callout-color": "rgb(0, 0, 0)",
+    "--callout-icon": "lucide-info",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "border-style": "dashed",
+    "border-width": "2px",
+    "mix-blend-mode": "darken",
+    "padding": "12px"
+  },
+  ".callout[data-callout] .callout-title": {
+    "color": "rgb(0, 0, 0)",
+    "font-size": "16px",
+    "gap": "4px",
+    "line-height": "20.8px",
+    "padding": "0px"
+  },
+  ".callout[data-callout] .callout-title .callout-icon": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".callout[data-callout] .callout-title > .callout-title-inner > p": {
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".data-footnote-backref": {
+    "color": "rgb(0, 0, 0)",
+    "text-decoration": "none solid rgb(0, 0, 0)"
+  },
+  ".katex > .katex-html": {
+    "font-family": "MJXZERO, MJXTEX"
+  },
+  ".katex-display > .katex": {
+    "display": "block",
+    "font": "16px / 0px \"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-align": "center",
+    "white-space": "normal"
+  },
+  ".katex-display > .katex > .katex-html": {
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+  },
+  ".page article li:has(>input[type=checkbox]:checked)": {
+    "color": "rgb(0, 0, 0)",
+    "text-decoration": "line-through solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)"
+  },
+  ".page article p > b": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > em": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > i": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > s": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > strong": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "600",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > u": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-button": {
+    "background": "rgba(46, 31, 31, 0.05) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px solid rgba(46, 31, 31, 0.1)",
+    "border-radius": "4px",
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "14px",
+    "padding": "4px 8px"
+  },
+  ".text-highlight": {
+    "background-color": "rgb(240, 102, 102)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "a": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "a.internal-link": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(224, 41, 41)",
+    "cursor": "pointer",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(224, 41, 41) none 0px",
+    "text-decoration": "underline solid rgba(224, 41, 41, 0.3)",
+    "text-decoration-color": "rgba(224, 41, 41, 0.3)",
+    "text-decoration-line": "underline",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "opacity 0.15s ease-in-out",
+    "user-select": "text"
+  },
+  "a.internal.tag-link": {
+    "align-items": "center",
+    "background-color": "rgba(224, 41, 41, 0.1)",
+    "border-bottom-color": "rgba(224, 41, 41, 0.15)",
+    "border-bottom-left-radius": "4px",
+    "border-bottom-right-radius": "4px",
+    "border-bottom-style": "solid",
+    "border-left-color": "rgba(224, 41, 41, 0.15)",
+    "border-left-style": "solid",
+    "border-right-color": "rgba(224, 41, 41, 0.15)",
+    "border-right-style": "solid",
+    "border-top-color": "rgba(224, 41, 41, 0.15)",
+    "border-top-left-radius": "4px",
+    "border-top-right-radius": "4px",
+    "border-top-style": "solid",
+    "display": "flex",
+    "font-family": "\"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif, \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "14px",
+    "margin-inline-start": "0px"
+  },
+  "a.internal.tag-link::before": {
+    "color": "rgb(224, 41, 41)"
+  },
+  "blockquote": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-inline-start": "2px solid rgb(224, 41, 41)",
+    "font-style": "normal",
+    "margin-inline-end": "0px",
+    "margin-inline-start": "0px",
+    "padding-bottom": "0px",
+    "padding-inline-start": "24px",
+    "padding-top": "0px"
+  },
+  "body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
+    "color": "rgb(0, 0, 0)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px",
+    "text-decoration": "none solid rgb(0, 0, 0)"
+  },
+  "body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
+    "color": "rgb(0, 0, 0)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px",
+    "text-decoration": "none solid rgb(0, 0, 0)"
+  },
+  "body .explorer .explorer-content ul.explorer-ul li a": {
+    "color": "rgb(0, 0, 0)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px",
+    "text-decoration": "none solid rgb(0, 0, 0)"
+  },
+  "body input[type=checkbox]": {
+    "appearance": "none",
+    "border": "1px solid rgb(0, 0, 0)",
+    "border-radius": "2px",
+    "height": "16px",
+    "margin": "0px 8px 0px -24px",
+    "margin-inline-end": "8px",
+    "margin-inline-start": "-24px",
+    "padding": "0px",
+    "position": "relative",
+    "top": "2.66667px",
+    "transition": "box-shadow 0.15s ease-in-out",
+    "width": "16px"
+  },
+  "body input[type=checkbox]:checked:after": {
+    "-webkit-mask-image": "none",
+    "-webkit-mask-position": "0% 0%",
+    "-webkit-mask-repeat": "repeat",
+    "-webkit-mask-size": "auto",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "content": "normal",
+    "display": "block",
+    "height": "863.656px",
+    "inset-inline-start": "0px",
+    "position": "relative",
+    "top": "0px",
+    "width": "868px"
+  },
+  "code": {
+    "background-color": "rgb(23, 35, 62)",
+    "border": "0px solid rgba(46, 31, 31, 0.1)",
+    "border-radius": "2px",
+    "color": "rgb(227, 227, 227)",
+    "font-family": "\"??\", \"??\", \"iA Writer Mono S\", \"IBM Plex Mono\", \"Roboto Mono\", Menlo, SFMono-Regular, Consolas, \"Source Code Pro\", monospace",
+    "font-size": "14px",
+    "padding": "2.1px 4.2px"
+  },
+  "code.mermaid > svg": {
+    "fill": "rgb(51, 51, 51)",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "stroke": "none"
+  },
+  "del": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "0px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "line-through solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "line-through",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "div#quartz-root": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px"
+  },
+  "div.graph": {
+    "--quartz-graph-line": "#d4d4d4",
+    "--quartz-graph-node": "rgb(0, 0, 0)",
+    "--quartz-graph-node-attachment": "rgb(230, 205, 90)",
+    "--quartz-graph-node-focused": "hsl(0, 75%, 52%)",
+    "--quartz-graph-node-tag": "rgb(30, 169, 67)",
+    "--quartz-graph-node-unresolved": "rgb(0, 0, 0)",
+    "--quartz-graph-text": "rgb(0, 0, 0)"
+  },
+  "h1": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h2": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h3": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h4": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h5": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "h6": {
+    "color": "rgb(0, 0, 0)",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "text-shadow": "none"
+  },
+  "hr": {
+    "border": "unset",
+    "border-color": "rgba(0, 0, 0, 0.4)",
+    "border-style": "dashed none none",
+    "border-top": "1px dashed rgba(0, 0, 0, 0.4)",
+    "box-shadow": "none",
+    "margin": "32px 0px"
+  },
+  "li.depth-0": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-0 + li.depth-1": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-1": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-1 + li.depth-2": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-2": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-2 + li.depth-3": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-3": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-3 + li.depth-4": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-4": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-4 + li.depth-5": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "li.depth-5": {
+    "font-size": "14px",
+    "font-weight": "400",
+    "line-height": "18.2px"
+  },
+  "li.depth-5 + li.depth-6": {
+    "border-inline-start": "1px solid rgb(224, 41, 41)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
+  },
+  "ol > li": {
+    "color": "rgb(0, 0, 0)",
+    "margin-inline-start": "26.688px",
+    "padding-bottom": "4px",
+    "padding-top": "4px",
+    "text-align": "start"
+  },
+  "ol > li::marker": {
+    "color": "rgb(0, 0, 0)"
+  },
+  "p": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "20px",
+    "margin-block-end": "16px",
+    "margin-block-start": "0px",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  "pre > code": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(227, 227, 227)",
+    "border-radius": "2px",
+    "overflow-x": "auto",
+    "padding": "0px",
+    "white-space": "pre-wrap"
+  },
+  "ul > li": {
+    "color": "rgb(0, 0, 0)",
+    "margin-inline-start": "26.688px",
+    "padding-bottom": "4px",
+    "padding-top": "4px",
+    "text-align": "start"
+  },
+  "ul > li.task-list-item": {
+    "display": "list-item",
+    "list-style": "outside none none",
+    "text-align": "start"
+  },
+  "ul > li::marker": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(0, 0, 0)",
+    "border-radius": "0px",
+    "color": "rgb(0, 0, 0)",
+    "content": "normal",
+    "pointer-events": "auto",
+    "transform": "none",
+    "transition": "all"
+  }
+}
