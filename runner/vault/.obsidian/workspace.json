@@ -48,6 +48,22 @@
             }
           },
           {
+            "id": "e18828f5c1dd2b4e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2bc61b86d36b746c",
+        "type": "tabs",
+        "children": [
+          {
             "id": "1298f15d19bec7c3",
             "type": "leaf",
             "state": {
@@ -62,35 +78,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "e18828f5c1dd2b4e",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "849f528ae52109be",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8e5c5f60cf848c4f",
-            "type": "leaf",
-            "state": {
-              "type": "footnotes",
-              "state": {
-                "file": "general.md"
-              },
-              "icon": "lucide-file-signature",
-              "title": "Footnotes"
             }
           }
         ]
