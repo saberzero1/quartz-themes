@@ -1,0 +1,680 @@
+.theme-dark {
+  --noctis-bg: #052529;
+  --noctis-bg-secondary: #041d20;
+  --noctis-bg-tertiary: #062e32;
+  --noctis-bg-sidebar: #041d20;
+  --noctis-bg-alt: #073940;
+  --noctis-bg-hover: #0b515b;
+  --noctis-bg-active: #0e6671;
+  --noctis-bg-line: #083d44ee;
+
+  --noctis-fg: #b2cacd;
+  --noctis-fg-bright: #ebfdff;
+  --noctis-fg-muted: #87a7ab;
+  --noctis-fg-faint: #5b858b;
+
+  /* Syntax colors */
+  --noctis-red: #e66533;
+  --noctis-red-bright: #e97749;
+  --noctis-orange: #d67e5c;
+  --noctis-yellow: #e4b781;
+  --noctis-yellow-bright: #e69533;
+  --noctis-green: #49e9a6;
+  --noctis-green-bright: #60ebb1;
+  --noctis-cyan: #49d6e9;
+  --noctis-cyan-bright: #60dbeb;
+  --noctis-blue: #49ace9;
+  --noctis-blue-bright: #60b6eb;
+  --noctis-purple: #df769b;
+  --noctis-purple-bright: #e798b3;
+  --noctis-magenta: #7060eb;
+
+  /* UI colors */
+  --noctis-selection: #169fb144;
+  --noctis-cursor: #85efff;
+  --noctis-accent: #40d4e7;
+  --noctis-accent-hover: #169fb1;
+  --noctis-border: #0f1415;
+  --noctis-error: #e34e1c;
+  --noctis-warning: #e69533;
+  --noctis-info: #40d4e7;
+  --noctis-success: #16b673;
+
+  /* Obsidian variables mapped to Noctis */
+  --background-primary: var(--noctis-bg);
+  --background-primary-alt: var(--noctis-bg-secondary);
+  --background-secondary: var(--noctis-bg-sidebar);
+  --background-secondary-alt: var(--noctis-bg-tertiary);
+  --background-modifier-border: var(--noctis-border);
+  --background-modifier-form-field: var(--noctis-bg-alt);
+  --background-modifier-form-field-highlighted: var(--noctis-bg-hover);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--noctis-success);
+  --background-modifier-error: var(--noctis-error);
+  --background-modifier-error-hover: var(--noctis-red-bright);
+  --background-modifier-cover: rgba(5, 37, 41, 0.8);
+  --background-modifier-hover: var(--noctis-bg-hover);
+  --background-modifier-active-hover: var(--noctis-bg-active);
+
+  /* Text colors */
+  --text-normal: var(--noctis-fg);
+  --text-muted: var(--noctis-fg-muted);
+  --text-faint: var(--noctis-fg-faint);
+  --text-accent: var(--noctis-accent);
+  --text-accent-hover: var(--noctis-accent-hover);
+  --text-on-accent: #0f1415;
+  --text-error: var(--noctis-error);
+  --text-error-hover: var(--noctis-red-bright);
+  --text-highlight-bg: rgba(64, 212, 231, 0.3);
+  --text-highlight-bg-active: rgba(64, 212, 231, 0.5);
+  --text-selection: var(--noctis-selection);
+
+  /* Interactive colors */
+  --interactive-normal: var(--noctis-bg-alt);
+  --interactive-hover: var(--noctis-bg-hover);
+  --interactive-accent: #099;
+  --interactive-accent-hover: #0cc;
+  --interactive-accent-rgb: 73, 214, 233;
+  --interactive-before: var(--noctis-fg-muted);
+  --interactive-success: var(--noctis-green);
+
+  /* Scrollbar */
+  --scrollbar-bg: var(--noctis-bg);
+  --scrollbar-thumb-bg: #6a90955b;
+  --scrollbar-active-thumb-bg: #169fb1ad;
+
+  /* Code colors */
+  --code-background: var(--noctis-bg-secondary);
+  --code-normal: var(--noctis-fg);
+  --code-comment: var(--noctis-fg-faint);
+  --code-function: var(--noctis-cyan-bright);
+  --code-important: var(--noctis-red);
+  --code-keyword: var(--noctis-purple);
+  --code-operator: var(--noctis-fg);
+  --code-property: var(--noctis-yellow);
+  --code-punctuation: var(--noctis-fg-muted);
+  --code-string: var(--noctis-green);
+  --code-tag: var(--noctis-red);
+  --code-value: var(--noctis-magenta);
+
+  /* Headers */
+  --h1-color: var(--noctis-accent);
+  --h2-color: var(--noctis-green);
+  --h3-color: var(--noctis-yellow);
+  --h4-color: var(--noctis-blue);
+  --h5-color: var(--noctis-purple);
+  --h6-color: var(--noctis-cyan);
+
+  /* Links */
+  --link-color: var(--noctis-accent);
+  --link-color-hover: var(--noctis-cyan-bright);
+  --link-external-color: var(--noctis-blue);
+  --link-external-color-hover: var(--noctis-blue-bright);
+
+  /* Tags */
+  --tag-color: var(--noctis-purple);
+  --tag-background: rgba(223, 118, 155, 0.15);
+  --tag-background-hover: rgba(223, 118, 155, 0.25);
+
+  /* Graph view */
+  --graph-node: var(--noctis-accent);
+  --graph-node-focused: var(--noctis-green);
+  --graph-node-tag: var(--noctis-purple);
+  --graph-node-attachment: var(--noctis-yellow);
+  --graph-node-unresolved: var(--noctis-error);
+
+  /* Checkbox */
+  --checkbox-color: var(--noctis-accent);
+  --checkbox-color-hover: var(--noctis-cyan-bright);
+  --checkbox-border-color: var(--noctis-accent);
+  --checkbox-border-color-hover: var(--noctis-cyan-bright);
+
+  /* Blockquote */
+  --blockquote-border: #16a3b6;
+  --blockquote-color: var(--text-muted);
+
+  /* Table */
+  --table-header-background: var(--noctis-bg-secondary);
+  --table-header-border: var(--noctis-border);
+  --table-row-background-hover: rgba(14, 102, 113, 0.2);
+
+  /* Folder colors */
+  --nav-item-color-hover: var(--noctis-accent);
+  --nav-item-color-active: var(--noctis-green);
+  --nav-item-background-hover: var(--noctis-bg-hover);
+  --nav-item-background-active: var(--noctis-bg-active);
+
+  /* Status bar */
+  --status-bar-background: var(--noctis-bg-secondary);
+  --status-bar-border-color: var(--noctis-border);
+
+  /* Titlebar */
+  --titlebar-background: var(--noctis-bg-secondary);
+  --titlebar-background-focused: var(--noctis-bg-secondary);
+
+  /* Ribbon */
+  --ribbon-background: var(--noctis-bg);
+  --ribbon-background-collapsed: var(--noctis-bg);
+}
+
+/* Editor styling */
+.cm-s-obsidian {
+  color: var(--text-normal);
+}
+
+/* Active line highlighting */
+.cm-active.cm-line {
+  background-color: var(--noctis-bg-line);
+}
+
+/* Headers */
+.cm-header-1,
+.markdown-preview-view h1 {
+  color: var(--h1-color);
+  font-weight: 600;
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+  color: var(--h2-color);
+  font-weight: 600;
+}
+
+.cm-header-3,
+.markdown-preview-view h3 {
+  color: var(--h3-color);
+  font-weight: 600;
+}
+
+.cm-header-4,
+.markdown-preview-view h4 {
+  color: var(--h4-color);
+  font-weight: 600;
+}
+
+.cm-header-5,
+.markdown-preview-view h5 {
+  color: var(--h5-color);
+  font-weight: 600;
+}
+
+.cm-header-6,
+.markdown-preview-view h6 {
+  color: var(--h6-color);
+  font-weight: 600;
+}
+
+/* Bold and italic */
+.cm-strong,
+strong {
+  color: var(--noctis-yellow);
+  font-weight: 700;
+}
+
+.cm-em,
+em {
+  color: var(--noctis-orange);
+  font-style: italic;
+}
+
+/* Links */
+.cm-link,
+.cm-url {
+  color: var(--link-color);
+}
+
+.cm-link:hover,
+.cm-url:hover {
+  color: var(--link-color-hover);
+}
+
+a.external-link {
+  color: var(--link-external-color);
+}
+
+a.external-link:hover {
+  color: var(--link-external-color-hover);
+}
+
+/* Lists */
+.cm-list-1,
+.cm-list-2,
+.cm-list-3 {
+  color: var(--noctis-purple);
+}
+
+/* Blockquotes */
+.cm-quote,
+blockquote {
+  color: var(--blockquote-color);
+  border-left-color: var(--blockquote-border);
+}
+
+/* Code */
+.cm-inline-code,
+code {
+  color: var(--noctis-green);
+  background-color: var(--code-background);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.cm-code-block,
+pre {
+  background-color: var(--code-background);
+}
+
+/* Syntax highlighting in code blocks */
+.cm-comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.cm-string {
+  color: var(--code-string);
+}
+
+.cm-keyword {
+  color: var(--code-keyword);
+  font-style: italic;
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3 {
+  color: var(--noctis-yellow);
+}
+
+.cm-property {
+  color: var(--noctis-cyan);
+}
+
+.cm-number {
+  color: var(--code-value);
+}
+
+.cm-operator {
+  color: var(--code-operator);
+}
+
+.cm-punctuation,
+.cm-bracket {
+  color: var(--code-punctuation);
+}
+
+.cm-tag {
+  color: var(--code-tag);
+}
+
+.cm-attribute {
+  color: var(--noctis-orange);
+}
+
+.cm-def {
+  color: #16a3b6;
+}
+
+/* Tags */
+.tag,
+.cm-hashtag {
+  color: var(--tag-color);
+  background-color: var(--tag-background);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tag:hover,
+.cm-hashtag:hover {
+  background-color: var(--tag-background-hover);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  border-color: var(--checkbox-border-color);
+}
+
+input[type="checkbox"]:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+
+input[type="checkbox"]:checked:hover {
+  background-color: var(--checkbox-color-hover);
+  border-color: var(--checkbox-color-hover);
+}
+
+/* Tables */
+th {
+  background-color: var(--table-header-background);
+  border-color: var(--table-header-border);
+  color: var(--noctis-accent);
+}
+
+tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+/* File explorer */
+.nav-file-title,
+.nav-folder-title {
+  color: var(--text-muted);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--nav-item-color-hover);
+  background-color: var(--nav-item-background-hover);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: var(--nav-item-color-active);
+  background-color: var(--nav-item-background-active);
+}
+
+/* Search results */
+.search-result-file-match {
+  color: var(--text-normal);
+  background-color: var(--text-highlight-bg);
+}
+
+.search-result-file-match:hover {
+  background-color: var(--text-highlight-bg-active);
+}
+
+/* Graph view */
+.graph-view.color-fill {
+  color: var(--graph-node);
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved);
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--status-bar-background);
+  border-top: 1px solid var(--status-bar-border-color);
+  color: var(--noctis-accent-hover);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-active-thumb-bg);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--text-selection);
+}
+
+/* Workspace */
+.workspace-leaf {
+  background-color: var(--background-primary);
+}
+
+.workspace-tab-header {
+  background-color: var(--noctis-bg-tertiary);
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--background-primary);
+  color: var(--noctis-accent);
+  border-top: 2px solid var(--noctis-accent);
+}
+
+/* Modal */
+.modal {
+  background-color: var(--noctis-bg-alt);
+}
+
+.modal-bg {
+  background-color: var(--background-modifier-cover);
+}
+
+/* Prompts and notices */
+.prompt {
+  background-color: var(--noctis-bg-alt);
+}
+
+.notice {
+  background-color: var(--noctis-bg-alt);
+  color: var(--text-normal);
+}
+
+/* Settings */
+.vertical-tab-header {
+  background-color: var(--noctis-bg-secondary);
+}
+
+.vertical-tab-content {
+  background-color: var(--background-primary);
+}
+
+.setting-item {
+  border-top-color: var(--noctis-border);
+}
+
+.setting-item-control button {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.setting-item-control button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* Additional UI elements */
+.suggestion-container {
+  background-color: var(--noctis-bg-alt);
+  border-color: var(--noctis-border);
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--noctis-bg-active);
+  color: var(--noctis-fg-bright);
+}
+
+/* Kanban plugin support */
+.kanban-plugin__board {
+  background-color: var(--background-primary);
+}
+
+.kanban-plugin__lane {
+  background-color: var(--noctis-bg-secondary);
+  border-color: var(--noctis-border);
+}
+
+.kanban-plugin__item {
+  background-color: var(--noctis-bg-alt);
+  border-color: var(--noctis-border);
+}
+
+/* Calendar plugin support */
+.calendar-view {
+  background-color: var(--background-primary);
+}
+
+.day {
+  background-color: var(--noctis-bg-secondary);
+  border-color: var(--noctis-border);
+}
+
+.day.today {
+  background-color: var(--noctis-bg-active);
+  border-color: var(--noctis-accent);
+}
+
+/* Excalidraw plugin support */
+.excalidraw .App-menu {
+  background-color: var(--noctis-bg-alt);
+}
+
+.excalidraw button {
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+}
+
+.excalidraw button:hover {
+  background-color: var(--interactive-hover);
+}
+
+/* DataView plugin support */
+.dataview.table-view-table th {
+  background-color: var(--table-header-background);
+  color: var(--noctis-accent);
+}
+
+.dataview.table-view-table tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+/* Mind map plugin support */
+.mm-node {
+  background-color: var(--noctis-bg-alt);
+  border-color: var(--noctis-accent);
+  color: var(--text-normal);
+}
+
+.mm-node.mm-active-node {
+  background-color: var(--noctis-bg-active);
+  border-color: var(--noctis-green);
+}
+
+/* Buttons */
+button {
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+  border: 1px solid var(--noctis-border);
+}
+
+button:hover {
+  background-color: var(--interactive-hover);
+  border-color: var(--noctis-accent);
+}
+
+button.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* Sidebar */
+.workspace-ribbon {
+  background-color: var(--noctis-bg);
+  border-right: 1px solid var(--noctis-border);
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+  background-color: var(--noctis-bg);
+}
+
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action {
+  color: var(--noctis-accent-hover);
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover {
+  color: var(--noctis-accent);
+  background-color: rgba(64, 212, 231, 0.1);
+}
+
+.side-dock-ribbon-tab.is-active {
+  color: var(--noctis-accent);
+  background-color: rgba(64, 212, 231, 0.2);
+}
+
+/* Activity bar indicators */
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root>.nav-folder-title {
+  color: #a5b5b5;
+}
+
+/* Editor line numbers */
+.cm-lineNumbers .cm-gutterElement {
+  color: #4e6b6e;
+}
+
+.cm-lineNumbers .cm-gutterElement.cm-active {
+  color: var(--noctis-accent-hover);
+}
+
+/* Cursor */
+.cm-cursor,
+.cm-dropCursor {
+  border-left-color: var(--noctis-cursor);
+}
+
+/* Editor gutter */
+.cm-gutter {
+  background-color: var(--background-primary);
+}
+
+/* Git decorations */
+.is-flashing {
+  background-color: rgba(64, 212, 231, 0.3);
+}
+
+/* Inline title */
+.inline-title {
+  color: var(--h1-color);
+  font-weight: 700;
+}
+
+/* Fold gutter */
+.cm-foldGutter .cm-gutterElement {
+  color: var(--noctis-fg-muted);
+}
+
+.cm-foldGutter .cm-gutterElement:hover {
+  color: var(--noctis-accent);
+}
+
+/* Editor drop cursor */
+.cm-dropCursor {
+  border-color: var(--noctis-accent);
+}
+
+/* Live preview */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  background-color: var(--code-background);
+}
+
+/* Matching brackets */
+.cm-matchingBracket {
+  background-color: rgba(22, 159, 177, 0.2);
+  border: 1px solid var(--noctis-accent-hover);
+}
