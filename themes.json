@@ -276,6 +276,26 @@
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
     },
+    "azure": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "baseline": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["inter"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "base2tone": {
       "compatibility": ["checking"],
       "modes": ["dark"],
@@ -1762,6 +1782,16 @@
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "matrix": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "meridian": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
@@ -2109,6 +2139,16 @@
         "name": "GNU General Public License v3.0",
         "spdx_id": "GPL-3.0"
       }
+    },
+    "noctis": {
+      "compatibility": ["checking"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nordic": {
       "compatibility": ["checking", "collection"],
@@ -2543,6 +2583,16 @@
       "extras": [],
       "fixes": [],
       "fonts": ["arimo", "anonymous-pro"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "powered-by-lancer-retouched": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["arimo"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "primary": {
