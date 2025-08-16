@@ -71,7 +71,7 @@ const sets = {
   callouts: {
     container: [
       "--callout-color",
-      "--callout-icon",
+      //"--callout-icon",
       "background-color",
       "border-style",
       "border-color",
@@ -212,6 +212,7 @@ export const extractionTargets = {
         properties: [
           "background-color",
           "border",
+          "border-color",
           "border-radius",
           "color",
           "content",
@@ -240,6 +241,7 @@ export const extractionTargets = {
         properties: [
           "background-color",
           "border",
+          "border-color",
           "border-radius",
           "color",
           "font-family",
@@ -254,6 +256,7 @@ export const extractionTargets = {
         properties: [
           "background-color",
           "border",
+          "border-color",
           "border-radius",
           "overflow-x",
           "padding",
@@ -263,11 +266,12 @@ export const extractionTargets = {
       // checkboxes
       {
         obsidianSelector: `ul.contains-task-list > li.task-list-item > .task-list-item-checkbox`,
-        quartzSelector: "body input[type=checkbox]",
+        quartzSelector: "input[type=checkbox]",
         pseudoElement: "",
         properties: [
           "appearance",
           "border",
+          "border-color",
           "border-radius",
           "padding",
           "margin",
@@ -287,7 +291,7 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked`,
-        quartzSelector: "body input[type=checkbox]:checked:after",
+        quartzSelector: "input[type=checkbox]:checked:after",
         pseudoElement: "::after",
         properties: [
           "content",
@@ -331,6 +335,7 @@ export const extractionTargets = {
         properties: [
           "background",
           "border",
+          "border-color",
           "border-radius",
           "color",
           "font-family",
@@ -482,6 +487,26 @@ export const extractionTargets = {
   callouts: {
     file: "callouts.md",
     selectors: [
+      // scrollbars
+      {
+        obsidianSelector: `.markdown-preview-sizer`,
+        quartzSelector: "::-webkit-scrollbar",
+        pseudoElement: "::-webkit-scrollbar",
+        properties: ["background-color"],
+      },
+      {
+        obsidianSelector: `.markdown-preview-sizer`,
+        quartzSelector: "::-webkit-scrollbar-thumb",
+        pseudoElement: "::-webkit-scrollbar-thumb",
+        properties: [
+          "background-color",
+          "border-radius",
+          "border-width",
+          "border",
+          "border-color",
+          "box-shadow",
+        ],
+      },
       // note
       {
         obsidianSelector: `.callout[data-callout="note"]`,
@@ -935,7 +960,7 @@ export const extractionTargets = {
       // explorer
       {
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-file-title[data-path="callouts.md"]`,
-        quartzSelector: "body .explorer .explorer-content ul.explorer-ul li a",
+        quartzSelector: ".explorer .explorer-content ul.explorer-ul li a",
         pseudoElement: "",
         properties: [
           "color",
@@ -951,7 +976,7 @@ export const extractionTargets = {
         // closed
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder/collapsed"]`,
         quartzSelector:
-          "body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container",
+          ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container",
         pseudoElement: "",
         properties: [
           "color",
@@ -967,7 +992,7 @@ export const extractionTargets = {
         // open
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder"]`,
         quartzSelector:
-          "body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container",
+          ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container",
         pseudoElement: "",
         properties: [
           "color",
