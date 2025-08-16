@@ -1,7 +1,6 @@
 {
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "34,152,225",
-    "--callout-icon": "loader",
     "background-color": "color(srgb 0.163821 0.294975 0.368777)",
     "border-color": "rgba(34, 152, 225, 0.1)",
     "border-radius": "8px",
@@ -28,7 +27,6 @@
   },
   ".callout[data-callout=\"bug\"]": {
     "--callout-color": "153,93,133",
-    "--callout-icon": "bug",
     "background-color": "color(srgb 0.315488 0.219779 0.251522)",
     "border-color": "rgba(153, 93, 133, 0.1)",
     "border-radius": "8px",
@@ -55,7 +53,6 @@
   },
   ".callout[data-callout=\"danger\"]": {
     "--callout-color": "226,72,86",
-    "--callout-icon": "shield-alert",
     "background-color": "color(srgb 0.408527 0.193015 0.19162)",
     "border-color": "rgba(226, 72, 86, 0.1)",
     "border-radius": "8px",
@@ -82,7 +79,6 @@
   },
   ".callout[data-callout=\"example\"]": {
     "--callout-color": "216,141,130",
-    "--callout-icon": "scroll-text",
     "background-color": "color(srgb 0.395782 0.280956 0.247699)",
     "border-color": "rgba(216, 141, 130, 0.1)",
     "border-radius": "8px",
@@ -109,7 +105,6 @@
   },
   ".callout[data-callout=\"failure\"]": {
     "--callout-color": "226,72,86",
-    "--callout-icon": "circle-slash",
     "background-color": "color(srgb 0.408527 0.193015 0.19162)",
     "border-color": "rgba(226, 72, 86, 0.1)",
     "border-radius": "8px",
@@ -136,7 +131,6 @@
   },
   ".callout[data-callout=\"info\"]": {
     "--callout-color": "71,162,187",
-    "--callout-icon": "badge-info",
     "background-color": "color(srgb 0.210978 0.307721 0.320346)",
     "border-color": "rgba(71, 162, 187, 0.1)",
     "border-radius": "8px",
@@ -163,7 +157,6 @@
   },
   ".callout[data-callout=\"question\"]": {
     "--callout-color": "130,190,235",
-    "--callout-icon": "help-circle",
     "background-color": "color(srgb 0.286174 0.343407 0.381522)",
     "border-color": "rgba(130, 190, 235, 0.1)",
     "border-radius": "8px",
@@ -190,7 +183,6 @@
   },
   ".callout[data-callout=\"quote\"]": {
     "--callout-color": "173,214,171",
-    "--callout-icon": "quote-glyph",
     "background-color": "color(srgb 0.340978 0.373995 0.299954)",
     "border-color": "rgba(173, 214, 171, 0.1)",
     "border-radius": "8px",
@@ -217,7 +209,6 @@
   },
   ".callout[data-callout=\"success\"]": {
     "--callout-color": "87,200,83",
-    "--callout-icon": "check-check",
     "background-color": "color(srgb 0.23137 0.356152 0.187797)",
     "border-color": "rgba(87, 200, 83, 0.1)",
     "border-radius": "8px",
@@ -244,7 +235,6 @@
   },
   ".callout[data-callout=\"tip\"]": {
     "--callout-color": "70,206,185",
-    "--callout-icon": "clover",
     "background-color": "color(srgb 0.209703 0.363799 0.317797)",
     "border-color": "rgba(70, 206, 185, 0.1)",
     "border-radius": "8px",
@@ -271,7 +261,6 @@
   },
   ".callout[data-callout=\"todo\"]": {
     "--callout-color": "58,173,252",
-    "--callout-icon": "list-todo",
     "background-color": "color(srgb 0.194409 0.32174 0.403189)",
     "border-color": "rgba(58, 173, 252, 0.1)",
     "border-radius": "8px",
@@ -298,7 +287,6 @@
   },
   ".callout[data-callout=\"warning\"]": {
     "--callout-color": "255,161,32",
-    "--callout-icon": "lucide-alert-triangle",
     "background-color": "color(srgb 0.445487 0.306446 0.122797)",
     "border-color": "rgba(255, 161, 32, 0.1)",
     "border-radius": "8px",
@@ -325,7 +313,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "200,175,155",
-    "--callout-icon": "sticker",
     "background-color": "color(srgb 0.375389 0.324289 0.279562)",
     "border-color": "rgba(200, 175, 155, 0.1)",
     "border-radius": "8px",
@@ -353,6 +340,27 @@
   ".data-footnote-backref": {
     "color": "rgb(145, 121, 89)",
     "text-decoration": "none solid rgb(145, 121, 89)"
+  },
+  ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
+    "color": "rgb(171, 145, 109)",
+    "cursor": "pointer",
+    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "450",
+    "text-decoration": "none solid rgb(171, 145, 109)"
+  },
+  ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
+    "color": "rgb(171, 145, 109)",
+    "cursor": "pointer",
+    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "450",
+    "text-decoration": "none solid rgb(171, 145, 109)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li a": {
+    "color": "rgb(171, 145, 109)",
+    "cursor": "pointer",
+    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "450",
+    "text-decoration": "none solid rgb(171, 145, 109)"
   },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
@@ -480,6 +488,7 @@
   ".search > .search-button": {
     "background": "rgb(33, 27, 23) none repeat scroll 0% 0% / auto padding-box border-box",
     "border": "1px solid rgb(59, 48, 38)",
+    "border-color": "rgb(59, 48, 38)",
     "border-radius": "8px",
     "color": "rgb(215, 192, 163)",
     "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -502,6 +511,15 @@
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
+  },
+  "::-webkit-scrollbar": { "background-color": "rgba(0, 0, 0, 0)" },
+  "::-webkit-scrollbar-thumb": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(215, 192, 163)",
+    "border-color": "rgb(215, 192, 163)",
+    "border-radius": "0px",
+    "border-width": "0px",
+    "box-shadow": "none"
   },
   "a": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -571,56 +589,10 @@
     "padding-inline-start": "24px",
     "padding-top": "0px"
   },
-  "body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "rgb(171, 145, 109)",
-    "cursor": "pointer",
-    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "450",
-    "text-decoration": "none solid rgb(171, 145, 109)"
-  },
-  "body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "rgb(171, 145, 109)",
-    "cursor": "pointer",
-    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "450",
-    "text-decoration": "none solid rgb(171, 145, 109)"
-  },
-  "body .explorer .explorer-content ul.explorer-ul li a": {
-    "color": "rgb(171, 145, 109)",
-    "cursor": "pointer",
-    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "450",
-    "text-decoration": "none solid rgb(171, 145, 109)"
-  },
-  "body input[type=checkbox]": {
-    "appearance": "none",
-    "border": "1px solid rgb(81, 64, 47)",
-    "border-radius": "4px",
-    "margin": "0px 8px 0px -24px",
-    "margin-inline-end": "8px",
-    "margin-inline-start": "-24px",
-    "padding": "0px",
-    "position": "relative",
-    "top": "2.66667px",
-    "transition": "box-shadow 0.15s ease-in-out",
-    "width": "16px"
-  },
-  "body input[type=checkbox]:checked:after": {
-    "-webkit-mask-image": "none",
-    "-webkit-mask-position": "0% 0%",
-    "-webkit-mask-repeat": "repeat",
-    "-webkit-mask-size": "auto",
-    "background-color": "rgba(0, 0, 0, 0)",
-    "content": "normal",
-    "display": "block",
-    "inset-inline-start": "0px",
-    "position": "relative",
-    "top": "0px",
-    "width": "866px"
-  },
   "code": {
     "background-color": "rgb(33, 27, 23)",
     "border": "0px solid rgb(59, 48, 38)",
+    "border-color": "rgb(59, 48, 38)",
     "border-radius": "4px",
     "color": "rgb(247, 104, 94)",
     "font-family": "\"??\", \"Cascadia Code\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
@@ -703,6 +675,33 @@
     "box-shadow": "none",
     "margin": "32px 0px"
   },
+  "input[type=checkbox]": {
+    "appearance": "none",
+    "border": "1px solid rgb(81, 64, 47)",
+    "border-color": "rgb(81, 64, 47)",
+    "border-radius": "4px",
+    "margin": "0px 8px 0px -24px",
+    "margin-inline-end": "8px",
+    "margin-inline-start": "-24px",
+    "padding": "0px",
+    "position": "relative",
+    "top": "2.66667px",
+    "transition": "box-shadow 0.15s ease-in-out",
+    "width": "16px"
+  },
+  "input[type=checkbox]:checked:after": {
+    "-webkit-mask-image": "none",
+    "-webkit-mask-position": "0% 0%",
+    "-webkit-mask-repeat": "repeat",
+    "-webkit-mask-size": "auto",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "content": "normal",
+    "display": "block",
+    "inset-inline-start": "0px",
+    "position": "relative",
+    "top": "0px",
+    "width": "866px"
+  },
   "li.depth-0": { "font-weight": "450" },
   "li.depth-0 + li.depth-1": {
     "border-inline-start": "1px solid rgb(59, 48, 38)",
@@ -768,6 +767,7 @@
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border": "0px none rgb(215, 192, 163)",
+    "border-color": "rgb(215, 192, 163)",
     "border-radius": "8px",
     "overflow-x": "auto",
     "padding": "0px",
@@ -788,6 +788,7 @@
   "ul > li::marker": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border": "0px none rgb(215, 192, 163)",
+    "border-color": "rgb(215, 192, 163)",
     "border-radius": "0px",
     "color": "rgb(215, 192, 163)",
     "content": "normal",

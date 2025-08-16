@@ -81,7 +81,8 @@ echo "Fetching theme files..."
 
 # clone only the specified theme using sparse checkout to save bandwidth and time
 git clone -b develop -n --depth=1 --filter=tree:0 https://github.com/saberzero1/quartz-themes.git &>/dev/null
-git -C quartz-themes sparse-checkout set --no-cone /themes/${THEME} &>/dev/null
+#git -C quartz-themes sparse-checkout set --no-cone /themes/${THEME} &>/dev/null
+git -C quartz-themes sparse-checkout set --no-cone /runner/results/${THEME} &>/dev/null
 git -C quartz-themes checkout &>/dev/null
 
 echo "Installing theme files..."

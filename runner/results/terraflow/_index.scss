@@ -1,0 +1,1412 @@
+@use "../variables.scss" as *;
+
+:root {
+  color-scheme: light dark;
+  font-size: 16px;
+}
+
+body {
+  .callout[data-callout="abstract"] {
+    --callout-color: #a8c47a;
+    background-color: light-dark(
+      rgba(121, 141, 93, 0.12),
+      rgba(168, 196, 122, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(121, 141, 93),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(168, 196, 122)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="abstract"] .callout-title {
+    color: light-dark(
+      color(srgb 0.332157 0.387059 0.255294),
+      color(srgb 0.771838 0.84527 0.651201)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="abstract"] .callout-title .callout-icon {
+    color: light-dark(rgb(121, 141, 93), color(srgb 0.771838 0.84527 0.651201));
+  }
+
+  .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="abstract"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="bug"] {
+    --callout-color: #e74c3c;
+    background-color: light-dark(
+      rgba(192, 57, 43, 0.12),
+      rgba(231, 76, 60, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(192, 57, 43),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198) rgb(231, 76, 60)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="bug"] .callout-title {
+    color: light-dark(
+      color(srgb 0.527059 0.156471 0.118039),
+      color(srgb 0.930894 0.484588 0.438517)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="bug"] .callout-title .callout-icon {
+    color: light-dark(rgb(192, 57, 43), color(srgb 0.930894 0.484588 0.438517));
+  }
+
+  .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="bug"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="danger"] {
+    --callout-color: #e74c3c;
+    background-color: light-dark(
+      rgba(192, 57, 43, 0.12),
+      rgba(231, 76, 60, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(192, 57, 43),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198) rgb(231, 76, 60)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="danger"] .callout-title {
+    color: light-dark(
+      color(srgb 0.527059 0.156471 0.118039),
+      color(srgb 0.930894 0.484588 0.438517)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="danger"] .callout-title .callout-icon {
+    color: light-dark(rgb(192, 57, 43), color(srgb 0.930894 0.484588 0.438517));
+  }
+
+  .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="danger"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="example"] {
+    --callout-color: #95b3aa;
+    background-color: light-dark(
+      rgba(119, 144, 136, 0.12),
+      rgba(149, 179, 170, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(119, 144, 136),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(149, 179, 170)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="example"] .callout-title {
+    color: light-dark(
+      color(srgb 0.324444 0.397517 0.374134),
+      color(srgb 0.734144 0.809386 0.786813)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="example"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(119, 144, 136),
+      color(srgb 0.734144 0.809386 0.786813)
+    );
+  }
+
+  .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="example"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="failure"] {
+    --callout-color: #e74c3c;
+    background-color: light-dark(
+      rgba(192, 57, 43, 0.12),
+      rgba(231, 76, 60, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(192, 57, 43),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198) rgb(231, 76, 60)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="failure"] .callout-title {
+    color: light-dark(
+      color(srgb 0.527059 0.156471 0.118039),
+      color(srgb 0.930894 0.484588 0.438517)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="failure"] .callout-title .callout-icon {
+    color: light-dark(rgb(192, 57, 43), color(srgb 0.930894 0.484588 0.438517));
+  }
+
+  .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="failure"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="info"] {
+    --callout-color: #8bb5d9;
+    background-color: light-dark(
+      rgba(106, 151, 187, 0.12),
+      rgba(139, 181, 217, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(106, 151, 187),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(139, 181, 217)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="info"] .callout-title {
+    color: light-dark(
+      color(srgb 0.252043 0.418836 0.552271),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="info"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(106, 151, 187),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+  }
+
+  .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="question"] {
+    --callout-color: #f39c12;
+    background-color: light-dark(
+      rgba(230, 126, 34, 0.12),
+      rgba(243, 156, 18, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(230, 126, 34),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198) rgb(243, 156, 18)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="question"] .callout-title {
+    color: light-dark(
+      color(srgb 0.651057 0.344677 0.073649),
+      color(srgb 0.962807 0.693154 0.265429)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="question"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(230, 126, 34),
+      color(srgb 0.962807 0.693154 0.265429)
+    );
+  }
+
+  .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="question"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="quote"] {
+    --callout-color: #95b3aa;
+    background-color: light-dark(
+      rgba(119, 144, 136, 0.12),
+      rgba(149, 179, 170, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(119, 144, 136),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(149, 179, 170)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="quote"] .callout-title {
+    color: light-dark(
+      color(srgb 0.324444 0.397517 0.374134),
+      color(srgb 0.734144 0.809386 0.786813)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="quote"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(119, 144, 136),
+      color(srgb 0.734144 0.809386 0.786813)
+    );
+  }
+
+  .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="quote"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="success"] {
+    --callout-color: #a8c47a;
+    background-color: light-dark(
+      rgba(121, 141, 93, 0.12),
+      rgba(168, 196, 122, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(121, 141, 93),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(168, 196, 122)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="success"] .callout-title {
+    color: light-dark(
+      color(srgb 0.332157 0.387059 0.255294),
+      color(srgb 0.771838 0.84527 0.651201)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="success"] .callout-title .callout-icon {
+    color: light-dark(rgb(121, 141, 93), color(srgb 0.771838 0.84527 0.651201));
+  }
+
+  .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="success"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="tip"] {
+    --callout-color: #8bb5d9;
+    background-color: light-dark(
+      rgba(106, 151, 187, 0.12),
+      rgba(139, 181, 217, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(106, 151, 187),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(139, 181, 217)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="tip"] .callout-title {
+    color: light-dark(
+      color(srgb 0.252043 0.418836 0.552271),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="tip"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(106, 151, 187),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+  }
+
+  .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="tip"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="todo"] {
+    --callout-color: #8bb5d9;
+    background-color: light-dark(
+      rgba(106, 151, 187, 0.12),
+      rgba(139, 181, 217, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(106, 151, 187),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(139, 181, 217)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="todo"] .callout-title {
+    color: light-dark(
+      color(srgb 0.252043 0.418836 0.552271),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="todo"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(106, 151, 187),
+      color(srgb 0.755416 0.843973 0.919878)
+    );
+  }
+
+  .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="todo"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="warning"] {
+    --callout-color: #f39c12;
+    background-color: light-dark(
+      rgba(230, 126, 34, 0.12),
+      rgba(243, 156, 18, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(230, 126, 34),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198) rgb(243, 156, 18)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="warning"] .callout-title {
+    color: light-dark(
+      color(srgb 0.651057 0.344677 0.073649),
+      color(srgb 0.962807 0.693154 0.265429)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="warning"] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(230, 126, 34),
+      color(srgb 0.962807 0.693154 0.265429)
+    );
+  }
+
+  .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout="warning"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout] {
+    --callout-color: #f2a882;
+    background-color: light-dark(
+      rgba(217, 119, 86, 0.12),
+      rgba(242, 168, 130, 0.12)
+    );
+    border-color: light-dark(
+      rgb(61, 46, 26) rgb(61, 46, 26) rgb(61, 46, 26) rgb(217, 119, 86),
+      rgb(232, 220, 198) rgb(232, 220, 198) rgb(232, 220, 198)
+        rgb(242, 168, 130)
+    );
+    border-radius: 16px 6px;
+    border-style: none none none solid;
+    border-width: 0px 0px 0px 3px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout] .callout-title {
+    color: light-dark(
+      color(srgb 0.679074 0.285291 0.152691),
+      color(srgb 0.976505 0.842762 0.774084)
+    );
+    gap: 13.2px;
+    padding: 0px;
+  }
+
+  .callout[data-callout] .callout-title .callout-icon {
+    color: light-dark(
+      rgb(217, 119, 86),
+      color(srgb 0.976505 0.842762 0.774084)
+    );
+  }
+
+  .callout[data-callout] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-weight: 400;
+  }
+
+  .callout[data-callout] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .data-footnote-backref {
+    color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
+    text-decoration: none solid rgb(240, 145, 111);
+  }
+
+  .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    color: light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+    cursor: default;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    text-decoration: none solid rgb(139, 181, 217);
+  }
+
+  .explorer
+    .explorer-content
+    li:has(> .folder-outer:not(.open))
+    > .folder-container {
+    color: light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+    cursor: default;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    text-decoration: none solid rgb(139, 181, 217);
+  }
+
+  .explorer .explorer-content ul.explorer-ul li a {
+    color: light-dark(rgba(61, 46, 26, 0.7), rgba(232, 220, 198, 0.7));
+    cursor: default;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    text-decoration: none solid rgba(232, 220, 198, 0.7);
+  }
+
+  .katex > .katex-html {
+    font-family: MJXZERO, MJXTEX;
+  }
+
+  .katex-display > .katex {
+    display: block;
+    font:
+      16px / 0px ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .katex-display > .katex > .katex-html {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  .page article li:has(> input[type="checkbox"]:checked) {
+    color: light-dark(rgba(61, 46, 26, 0.7), rgba(232, 220, 198, 0.7));
+    text-decoration: line-through solid rgba(232, 220, 198, 0.7);
+    text-decoration-color: rgba(232, 220, 198, 0.7);
+  }
+
+  .page article p > b {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > em {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(174, 78, 54), rgb(242, 168, 130));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(242, 168, 130) none 0px;
+    text-decoration: none solid rgb(242, 168, 130);
+    text-decoration-color: rgb(242, 168, 130);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > i {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > s {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(174, 78, 54), rgb(242, 168, 130));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 700;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(242, 168, 130) none 0px;
+    text-decoration: none solid rgb(242, 168, 130);
+    text-decoration-color: rgb(242, 168, 130);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .search > .search-button {
+    background: rgb(42, 42, 42) none repeat scroll 0% 0% / auto padding-box
+      border-box;
+    border: 1px solid rgb(54, 54, 54);
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-radius: 5px;
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    padding: 4px 8px;
+  }
+
+  .text-highlight {
+    background-color: light-dark(rgb(188, 209, 202), rgb(74, 61, 46));
+    color: light-dark(rgb(61, 46, 26), rgb(242, 168, 130));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(242, 168, 130) none 0px;
+    text-decoration: none solid rgb(242, 168, 130);
+    text-decoration-color: rgb(242, 168, 130);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition:
+      background-color 0.2s,
+      transform 0.2s;
+    user-select: text;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px none rgb(232, 220, 198);
+    border-color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    border-radius: 0px;
+    border-width: 0px;
+    box-shadow: none;
+  }
+
+  a {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  a.internal-link {
+    background-color: light-dark(
+      rgba(217, 119, 86, 0.08),
+      rgba(240, 145, 111, 0.08)
+    );
+    color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
+    cursor: pointer;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(240, 145, 111) none 0px;
+    text-decoration: none solid rgb(240, 145, 111);
+    text-decoration-color: rgb(240, 145, 111);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+    user-select: text;
+  }
+
+  a.internal.tag-link {
+    align-items: center;
+    background-color: rgba(219, 120, 87, 0.1);
+    border-bottom-color: rgba(219, 120, 87, 0.15);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-bottom-style: solid;
+    border-left-color: rgba(219, 120, 87, 0.15);
+    border-left-style: solid;
+    border-right-color: rgba(219, 120, 87, 0.15);
+    border-right-style: solid;
+    border-top-color: rgba(219, 120, 87, 0.15);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-top-style: solid;
+    display: flex;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-inline-start: 0px;
+  }
+
+  a.internal.tag-link::before {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+  }
+
+  blockquote {
+    background-color: light-dark(
+      rgba(230, 228, 218, 0.7),
+      rgba(50, 48, 42, 0.8)
+    );
+    border-inline-start: 4px solid rgb(240, 145, 111);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-style: normal;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding-bottom: 5px;
+    padding-inline-start: 24px;
+    padding-top: 5px;
+  }
+
+  code {
+    background-color: light-dark(rgb(245, 239, 224), rgb(58, 56, 50));
+    border: 0px solid rgb(54, 54, 54);
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-radius: 4px;
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    padding: 2.1px 4.2px;
+  }
+
+  code.mermaid > svg {
+    fill: rgb(51, 51, 51);
+    filter: invert(1) hue-rotate(180deg) saturate(1.25);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    stroke: none;
+  }
+
+  del {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(242, 168, 130));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    outline: rgb(242, 168, 130) none 0px;
+    text-decoration: line-through 2px solid rgb(242, 168, 130);
+    text-decoration-color: rgb(242, 168, 130);
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    transition: all;
+    user-select: text;
+  }
+
+  div#quartz-root {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 16px;
+  }
+
+  div.graph {
+    --quartz-graph-line: #3f3f3f;
+    --quartz-graph-node: rgba(232, 220, 198, 0.7);
+    --quartz-graph-node-attachment: #e0de71;
+    --quartz-graph-node-focused: #e27a5a;
+    --quartz-graph-node-tag: #44cf6e;
+    --quartz-graph-node-unresolved: #666666;
+    --quartz-graph-text: #e8dcc6;
+  }
+
+  h1 {
+    color: light-dark(
+      color(srgb 0.818261 0.349565 0.191739),
+      color(srgb 0.928406 0.52087 0.311594)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  h2 {
+    color: light-dark(
+      color(srgb 0.306052 0.508587 0.670614),
+      color(srgb 0.387359 0.609178 0.799307)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  h3 {
+    color: light-dark(
+      color(srgb 0.461961 0.447549 0.572451),
+      color(srgb 0.582564 0.509231 0.757436)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  h4 {
+    color: light-dark(
+      color(srgb 0.403333 0.47 0.31),
+      color(srgb 0.574063 0.711146 0.348854)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  h5 {
+    color: light-dark(
+      color(srgb 0.711127 0.278873 0.427606),
+      color(srgb 0.833401 0.376599 0.532449)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  h6 {
+    color: light-dark(
+      color(srgb 0.393968 0.482699 0.454305),
+      color(srgb 0.471941 0.621392 0.576557)
+    );
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
+  hr {
+    border: unset;
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-style: solid none none;
+    border-top: 2px solid rgb(54, 54, 54);
+    box-shadow: none;
+    margin: 32px 0px;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid rgb(240, 145, 111);
+    border-color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
+    border-radius: 35%;
+    margin: 0px 8px 0px -24px;
+    margin-inline-end: 8px;
+    margin-inline-start: -24px;
+    padding: 0px;
+    position: relative;
+    top: 2.66667px;
+    transition:
+      background-color 0.2s,
+      border-color 0.2s;
+    width: 20px;
+  }
+
+  input[type="checkbox"]:checked:after {
+    -webkit-mask-image: none;
+    -webkit-mask-position: 0% 0%;
+    -webkit-mask-repeat: repeat;
+    -webkit-mask-size: auto;
+    background-color: rgba(0, 0, 0, 0);
+    content: normal;
+    display: block;
+    inset-inline-start: 0px;
+    position: relative;
+    top: 0px;
+    width: 860px;
+  }
+
+  li.depth-0 {
+    font-weight: 400;
+  }
+
+  li.depth-0 + li.depth-1 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  li.depth-1 {
+    font-weight: 400;
+  }
+
+  li.depth-1 + li.depth-2 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  li.depth-2 {
+    font-weight: 400;
+  }
+
+  li.depth-2 + li.depth-3 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  li.depth-3 {
+    font-weight: 400;
+  }
+
+  li.depth-3 + li.depth-4 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  li.depth-4 {
+    font-weight: 400;
+  }
+
+  li.depth-4 + li.depth-5 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  li.depth-5 {
+    font-weight: 400;
+  }
+
+  li.depth-5 + li.depth-6 {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
+  }
+
+  ol > li {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    margin-inline-start: 30.2344px;
+    padding-bottom: 1.2px;
+    padding-top: 1.2px;
+    text-align: start;
+  }
+
+  ol > li::marker {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+  }
+
+  p {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    margin-block-end: 16px;
+    margin-block-start: 0px;
+    outline: rgb(232, 220, 198) none 0px;
+    text-decoration: none solid rgb(232, 220, 198);
+    text-decoration-color: rgb(232, 220, 198);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  pre > code {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px none rgb(232, 220, 198);
+    border-color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    border-radius: 4px;
+    overflow-x: auto;
+    padding: 0px;
+    white-space: pre-wrap;
+  }
+
+  ul > li {
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    margin-inline-start: 30.2344px;
+    padding-bottom: 1.2px;
+    padding-top: 1.2px;
+    text-align: start;
+  }
+
+  ul > li.task-list-item {
+    display: list-item;
+    list-style: outside none none;
+    text-align: start;
+  }
+
+  ul > li::marker {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px none rgb(232, 220, 198);
+    border-color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    border-radius: 0px;
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+    content: normal;
+    pointer-events: auto;
+    transform: none;
+    transition: all;
+  }
+
+  div.graph {
+    --light: var(--quartz-graph-node) !important;
+    --lightgray: var(--quartz-graph-line) !important;
+    --gray: var(--quartz-graph-node) !important;
+    --darkgray: var(--quartz-graph-node-unresolved) !important;
+    --dark: var(--quartz-graph-text) !important;
+    --secondary: var(--quartz-graph-node-focused) !important;
+    --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+}

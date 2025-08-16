@@ -1,7 +1,6 @@
 {
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "0, 191, 188",
-    "--callout-icon": "lucide-clipboard-list",
     "background-color": "rgba(0, 191, 188, 0.1)",
     "border-color": "rgba(0, 191, 188, 0.25)",
     "border-radius": "12px",
@@ -28,7 +27,6 @@
   },
   ".callout[data-callout=\"bug\"]": {
     "--callout-color": "233, 49, 71",
-    "--callout-icon": "lucide-bug",
     "background-color": "rgba(233, 49, 71, 0.1)",
     "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "12px",
@@ -55,7 +53,6 @@
   },
   ".callout[data-callout=\"danger\"]": {
     "--callout-color": "233, 49, 71",
-    "--callout-icon": "lucide-zap",
     "background-color": "rgba(233, 49, 71, 0.1)",
     "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "12px",
@@ -82,7 +79,6 @@
   },
   ".callout[data-callout=\"example\"]": {
     "--callout-color": "120, 82, 238",
-    "--callout-icon": "lucide-list",
     "background-color": "rgba(120, 82, 238, 0.1)",
     "border-color": "rgba(120, 82, 238, 0.25)",
     "border-radius": "12px",
@@ -109,7 +105,6 @@
   },
   ".callout[data-callout=\"failure\"]": {
     "--callout-color": "233, 49, 71",
-    "--callout-icon": "lucide-x",
     "background-color": "rgba(233, 49, 71, 0.1)",
     "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "12px",
@@ -136,7 +131,6 @@
   },
   ".callout[data-callout=\"info\"]": {
     "--callout-color": "8, 109, 221",
-    "--callout-icon": "lucide-info",
     "background-color": "rgba(8, 109, 221, 0.1)",
     "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "12px",
@@ -163,7 +157,6 @@
   },
   ".callout[data-callout=\"question\"]": {
     "--callout-color": "236, 117, 0",
-    "--callout-icon": "help-circle",
     "background-color": "rgba(236, 117, 0, 0.1)",
     "border-color": "rgba(236, 117, 0, 0.25)",
     "border-radius": "12px",
@@ -190,7 +183,6 @@
   },
   ".callout[data-callout=\"quote\"]": {
     "--callout-color": "158, 158, 158",
-    "--callout-icon": "quote-glyph",
     "background-color": "rgba(158, 158, 158, 0.1)",
     "border-color": "rgba(158, 158, 158, 0.25)",
     "border-radius": "12px",
@@ -217,7 +209,6 @@
   },
   ".callout[data-callout=\"success\"]": {
     "--callout-color": "8, 185, 78",
-    "--callout-icon": "lucide-check",
     "background-color": "rgba(8, 185, 78, 0.1)",
     "border-color": "rgba(8, 185, 78, 0.25)",
     "border-radius": "12px",
@@ -244,7 +235,6 @@
   },
   ".callout[data-callout=\"tip\"]": {
     "--callout-color": "0, 191, 188",
-    "--callout-icon": "lucide-flame",
     "background-color": "rgba(0, 191, 188, 0.1)",
     "border-color": "rgba(0, 191, 188, 0.25)",
     "border-radius": "12px",
@@ -271,7 +261,6 @@
   },
   ".callout[data-callout=\"todo\"]": {
     "--callout-color": "8, 109, 221",
-    "--callout-icon": "lucide-check-circle-2",
     "background-color": "rgba(8, 109, 221, 0.1)",
     "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "12px",
@@ -298,7 +287,6 @@
   },
   ".callout[data-callout=\"warning\"]": {
     "--callout-color": "236, 117, 0",
-    "--callout-icon": "lucide-alert-triangle",
     "background-color": "rgba(236, 117, 0, 0.1)",
     "border-color": "rgba(236, 117, 0, 0.25)",
     "border-radius": "12px",
@@ -325,7 +313,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "8, 109, 221",
-    "--callout-icon": "lucide-pencil",
     "background-color": "rgba(8, 109, 221, 0.1)",
     "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "12px",
@@ -353,6 +340,27 @@
   ".data-footnote-backref": {
     "color": "color(srgb 0.652 0.5532 0.988)",
     "text-decoration": "none solid color(srgb 0.652 0.5532 0.988)"
+  },
+  ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
+    "color": "color(srgb 0.451 0.2766 0.994)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
+  },
+  ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
+    "color": "color(srgb 0.451 0.2766 0.994)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li a": {
+    "color": "color(srgb 0.451 0.2766 0.994)",
+    "cursor": "default",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
   },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
@@ -480,6 +488,7 @@
   ".search > .search-button": {
     "background": "color(srgb 0.936 0.9376 0.984) none repeat scroll 0% 0% / auto padding-box border-box",
     "border": "1px solid color(srgb 0.853 0.8298 0.982)",
+    "border-color": "color(srgb 0.853 0.8298 0.982)",
     "border-radius": "5px",
     "color": "color(srgb 0.125 0 0.5)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -502,6 +511,15 @@
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
+  },
+  "::-webkit-scrollbar": { "background-color": "rgba(0, 0, 0, 0)" },
+  "::-webkit-scrollbar-thumb": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none color(srgb 0.125 0 0.5)",
+    "border-color": "color(srgb 0.125 0 0.5)",
+    "border-radius": "6px",
+    "border-width": "0px",
+    "box-shadow": "none"
   },
   "a": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -571,56 +589,10 @@
     "padding-inline-start": "24px",
     "padding-top": "0px"
   },
-  "body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "color(srgb 0.451 0.2766 0.994)",
-    "cursor": "default",
-    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "400",
-    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
-  },
-  "body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "color(srgb 0.451 0.2766 0.994)",
-    "cursor": "default",
-    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "400",
-    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
-  },
-  "body .explorer .explorer-content ul.explorer-ul li a": {
-    "color": "color(srgb 0.451 0.2766 0.994)",
-    "cursor": "default",
-    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-weight": "400",
-    "text-decoration": "none solid color(srgb 0.451 0.2766 0.994)"
-  },
-  "body input[type=checkbox]": {
-    "appearance": "none",
-    "border": "1px solid color(srgb 0.652 0.5532 0.988)",
-    "border-radius": "4px",
-    "margin": "0px 8px 0px -24px",
-    "margin-inline-end": "8px",
-    "margin-inline-start": "-24px",
-    "padding": "0px",
-    "position": "relative",
-    "top": "2.66667px",
-    "transition": "box-shadow 0.15s ease-in-out",
-    "width": "16px"
-  },
-  "body input[type=checkbox]:checked:after": {
-    "-webkit-mask-image": "none",
-    "-webkit-mask-position": "0% 0%",
-    "-webkit-mask-repeat": "repeat",
-    "-webkit-mask-size": "auto",
-    "background-color": "rgba(0, 0, 0, 0)",
-    "content": "normal",
-    "display": "block",
-    "inset-inline-start": "0px",
-    "position": "relative",
-    "top": "0px",
-    "width": "868px"
-  },
   "code": {
     "background-color": "color(srgb 0.853 0.8298 0.982)",
     "border": "0px solid color(srgb 0.853 0.8298 0.982)",
+    "border-color": "color(srgb 0.853 0.8298 0.982)",
     "border-radius": "4px",
     "color": "color(srgb 0.125 0 0.5)",
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
@@ -703,6 +675,33 @@
     "box-shadow": "none",
     "margin": "10px 0px"
   },
+  "input[type=checkbox]": {
+    "appearance": "none",
+    "border": "1px solid color(srgb 0.652 0.5532 0.988)",
+    "border-color": "color(srgb 0.652 0.5532 0.988)",
+    "border-radius": "4px",
+    "margin": "0px 8px 0px -24px",
+    "margin-inline-end": "8px",
+    "margin-inline-start": "-24px",
+    "padding": "0px",
+    "position": "relative",
+    "top": "2.66667px",
+    "transition": "box-shadow 0.15s ease-in-out",
+    "width": "16px"
+  },
+  "input[type=checkbox]:checked:after": {
+    "-webkit-mask-image": "none",
+    "-webkit-mask-position": "0% 0%",
+    "-webkit-mask-repeat": "repeat",
+    "-webkit-mask-size": "auto",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "content": "normal",
+    "display": "block",
+    "inset-inline-start": "0px",
+    "position": "relative",
+    "top": "0px",
+    "width": "868px"
+  },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
     "border-inline-start": "1px solid color(srgb 0.853 0.8298 0.982)",
@@ -768,6 +767,7 @@
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border": "0px none color(srgb 0.125 0 0.5)",
+    "border-color": "color(srgb 0.125 0 0.5)",
     "border-radius": "4px",
     "overflow-x": "auto",
     "padding": "0px",
@@ -788,6 +788,7 @@
   "ul > li::marker": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border": "0px none color(srgb 0.125 0 0.5)",
+    "border-color": "color(srgb 0.125 0 0.5)",
     "border-radius": "6px",
     "color": "color(srgb 0.125 0 0.5)",
     "content": "normal",
