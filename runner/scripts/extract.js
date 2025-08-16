@@ -42,7 +42,7 @@ describe("Quartz Theme Style Extraction", () => {
       leaf.openFile(file, { active: true, eState: "tab" });
       app.workspace.setActiveLeaf(leaf, { focus: true });
       */
-      await sleep(500); // Wait for the file to open and styles to apply
+      await sleep(1000); // Wait for the file to open and styles to apply
       //          for (const key in rules) {
       rules.forEach((rule) => {
         const containerSelector =
@@ -202,6 +202,7 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await sleep(500);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
         darkResult.general = await getStyles(configuration.general);
@@ -217,6 +218,7 @@ describe("Quartz Theme Style Extraction", () => {
         await darkPage.openFile("integrations.md");
         await darkPage.openFile("integrations.md");
         darkResult.integrations = await getStyles(configuration.integrations);
+        await sleep(500);
       });
       /*
         it(`should extract styles for theme: ${theme} in dark mode - headings`, async () => {
@@ -364,6 +366,7 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await sleep(500);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
         lightResult.general = await getStyles(configuration.general);
@@ -379,6 +382,7 @@ describe("Quartz Theme Style Extraction", () => {
         await lightPage.openFile("integrations.md");
         await lightPage.openFile("integrations.md");
         lightResult.integrations = await getStyles(configuration.integrations);
+        await sleep(500);
       });
       /*
         it(`should extract styles for theme: ${theme} in light mode - general`, async () => {

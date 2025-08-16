@@ -156,6 +156,20 @@
               "icon": "lucide-list",
               "title": "Outline of general"
             }
+          },
+          {
+            "id": "d5b1121ee67d2fe2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
           }
         ],
         "currentTab": 3
