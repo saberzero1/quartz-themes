@@ -1,8 +1,0 @@
-:root:root:root {
-  body {
-    *:is(:not(pre)) > code {
-      color: var(--markup-code, var(--code-normal));
-      background-color: var(--discord-yellow-bg, var(--code-background));
-    }
-  }
-}
