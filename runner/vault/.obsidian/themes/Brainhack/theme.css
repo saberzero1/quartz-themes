@@ -7,7 +7,7 @@ If you have any questions or concerns, please contact me on GitHub: https://gith
 /* @settings
 
 name: Theme Settings
-id: Adrenaline
+id: Brainhack
 description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
 settings:
     -
@@ -634,7 +634,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     z-index: -1;
     width: 100%;
     border-radius: var(--radius-m);
-    box-shadow: 0 0 0 1px var(--background-3-1);
+    box-shadow: 0 0 0 .07em var(--background-3-1);
 }
 .callout-content blockquote {
     margin-bottom: .5em;
@@ -671,6 +671,12 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 
 
+.callout[data-callout="!"] > .callout-title {
+	color: var(--colored-accent-i1);
+	border-bottom: none;
+	border-radius: var(--radius-m);
+	Background: var(--colored-accent-2);
+}
 
 
 
@@ -721,10 +727,6 @@ p + ul {
     margin-top: 0px !important;
 }
 
-ul {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
 
 p:has(+ ul.has-list-bullet) {
     margin-bottom: 0px;
@@ -741,36 +743,28 @@ p:has(+ ul.has-list-bullet) {
 
 /*heading mark*/
 .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
-.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
-.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
-.cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4),
-.cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5),
-.cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6),
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
+.markdown-rendered h1 {
     display: inline-block;
     color: var(--colored-accent-i1);
-    background-color: var(--colored-accent-1) !important;
+    background: var(--colored-accent-2);
     padding: 2px 8px 2px 8px;
-        -moz-border-bottom-left-radius: var(--radius-m);
-        -webkit-border-bottom-left-radius: var(--radius-m);
-        border-bottom-left-radius: var(--radius-m);
-        -moz-border-bottom-right-radius: var(--radius-m);
-        -webkit-border-bottom-right-radius: var(--radius-m);
-        border-bottom-right-radius: var(--radius-m);
-        -moz-border-top-right-radius: var(--radius-m);
-        -webkit-border-top-right-radius: var(--radius-m);
-        border-top-right-radius: var(--radius-m);
-        -moz-border-top-left-radius: var(--radius-m);
-        -webkit-border-top-left-radius: var(--radius-m);
-        border-top-left-radius: var(--radius-m);
+        -moz-border-bottom-left-radius: var(--h1-radius);
+        -webkit-border-bottom-left-radius: var(--h1-radius);
+        border-bottom-left-radius: var(--h1-radius);
+        -moz-border-bottom-right-radius: var(--h1-radius);
+        -webkit-border-bottom-right-radius: var(--h1-radius);
+        border-bottom-right-radius: var(--h1-radius);
+        -moz-border-top-right-radius: var(--h1-radius);
+        -webkit-border-top-right-radius: var(--h1-radius);
+        border-top-right-radius: var(--h1-radius);
+        -moz-border-top-left-radius: var(--h1-radius);
+        -webkit-border-top-left-radius: var(--h1-radius);
+        border-top-left-radius: var(--h1-radius);
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
+
+    --h1-radius: .3em;
 }
 /* heading mark link color correction */
 h1 > a, 
@@ -822,6 +816,7 @@ div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 +
 
 
 /*==================== HIGHLIGHTING ====================*/
+/*
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark {
     padding-left:   2px;
@@ -829,8 +824,7 @@ div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 +
     padding-top:    1px;
     padding-bottom: 1px;
     pointer-events: none;
-    background-color: var(--colored-accent-1);
-    color: var(--colored-accent-i1);
+    background-color: rgba(128, 128, 128, 0.44);
         -moz-border-bottom-left-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -847,6 +841,16 @@ div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 +
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
 }
+*/
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+	background-color: transparent;
+	border-bottom: 2px solid var(--tc);
+	padding-bottom: 1px;
+	color: unset;
+}
+
 
 .cm-formatting.cm-formatting-highlight.cm-highlight {
     background: none;
@@ -958,8 +962,6 @@ tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radi
 }
 
 
-ul:before {
-    border-right: .15em solid var(--colored-accent-1) !important;
-    translate: 1.2em !important;
-
+.cm-s-obsidian .cm-line.HyperMD-header + .HyperMD-quote.HyperMD-quote-1.cm-line {
+    padding-top: .5em !important;
 }

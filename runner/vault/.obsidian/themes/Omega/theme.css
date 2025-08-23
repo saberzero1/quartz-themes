@@ -1,7 +1,40 @@
 /**
- * Omega Theme for Obsidian
- * Author: OmegaC
- * Version: 1.0.0
+Omega Theme for Obsidian
+Author: OmegaC
+Version: 1.0.2
+                                             ▓▓▓▓▓▓▓▓▓▓                                             
+                                       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                       
+                                   ▓▓▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                   
+                                ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                
+                              ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                             
+                            ▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓        ▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                            
+                          ▒▒▒▒▒▒▒▒▒▒▒▒▓▓                    ██▓▓▓▓▓▓▓▓▓▓▓▓                          
+                         ▒▒▒▒▒▒▒▒▒▒▒▓         ▓▒               █▓▓▓▓▓▓▓▓▓▓▓                         
+                       ▒▒▒▒▒▒▒▒▒▒▒▒           ▓▒▒▒               █▓▓▓▓▓▓▓▓▓▓▓                       
+                      ▒▒▒▒▒▒▒▒▒▒▒             ▓▒▒▒▒▒▒▒             █▓▓▓▓▓▓▓▓▓▓                      
+                      ▒▒▒▒▒▒▒▒▒▒              ▓▒▒▒▒▒▒▒              █▓▓▓▓▓▓▓▓▓▓                     
+                     ▒▒░░▒▒▒▒▒▒               ▓▒▒▒▒▒▒▒               ██▓▓▓▓▓▓▓▓                     
+                    ▒▒░░░░░░▒                 ▓▒▒▒▒▓▓▓    ▓▓▓▓▓▓       █▓▓▓▓▓▓▓▓                    
+                   ▒▒░░░░░░░▒                 ▓▓▓▓    ▓▒▒▓▒▒▒▓▓▓       █▓▓▓▓▓▓▓▓▓                   
+                   ▒▒░░░░░░░                     ▒▒▒▒▒▒▒▒▒▒▒▒▒▓         ▓▓▓▓▓▓▓▓▓                   
+                   ▒░░░░░░░░                ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓         █▓▓▓▓▓▓▓▓                   
+                   ▒░░░░░░░░           ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓          █▓▓▓▓▓▓▓▓▓                  
+                   ▒░░░░░░░░      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓            █▓▓▓▓▓▓▓▓▓                  
+                   ▒░░░░░░░░ ░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓                 █▓▓▓▓▓▓▓▓▓                  
+                   ▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓                      ▓▓▓▓▓▓▓▓▓                   
+                   ▒░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒   ▒▒▒▒▒                  ▓▓▓▓▓▓▓▓▓                   
+                   ▒░░░░░░░░░░░░░░░░▒▒▒▒      ▒▒▒▒▒▒▒▒                  ▓▓▓▓▓▓▓▓▓                   
+                    ▒░░░░░░░░░░░▒▒▒           ▒▒▒▒▒▒▒▒                 ▓▓▓▓▓▓▓▓▓                    
+                    ▒▒░░░░░░░░▒               ▒▒▒▒▒▒▒▒                ▓▓▓▓▓▓▓▓▓▓                    
+                     ▒░░░░░░░░░               ▒▒▒▒▒▒▒▒               ▓▓▓▓▓▓▓▓▓▓                     
+                      ▒░░░░░░░░░░             ▒▒▒▒▒▒▒▒             ▓▓▓▓▓▓▓▓▓▓▓                      
+                       ▒▒▒▒▒▒▒▒▒░             ▒▒▒▒▒▒▒▒             ▓▓▓▓▓▓▓▓▓▓                       
+                                              ▒▒▒▒▒▒▒▒                                              
+                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓                
+               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓              
+             ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓             
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            
+           ░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████████▓
  */
 
 :root {
@@ -99,6 +132,7 @@ body {
     --h4-color: var(--lava-orange);
     --h5-color: var(--plasma-pink);
     --h6-color: var(--nebula-pink);
+    --text-highlight-bg-rgb: 255, 210, 63;
 
     /* Links */
     --link-color: var(--starfire-yellow);
@@ -155,7 +189,11 @@ body {
 
     /* Embeds */
     --embed-border-start: 2px solid var(--electric-purple);
+    --embed-border-end: 2px solid var(--electric-purple);
+    --embed-border-top: 2px solid var(--electric-purple);
+    --embed-border-bottom: 2px solid var(--electric-purple);
     --embed-max-height: 800px;
+    --embed-padding: 0;
 
     /* File layout */
     --file-line-width: 1000px;
@@ -174,7 +212,7 @@ body {
     /* Metadata */
     --metadata-background: var(--deep-space-blue-2);
     --metadata-padding: var(--size-4-2) var(--size-4-6);
-    --metadata-border-color: var(--blackhole);
+    --metadata-border-color: var(--cyber-orange);
     --metadata-border-radius: var(--radius-l);
     --metadata-border-width: 4px;
     --metadata-divider-width: 2px;
@@ -221,6 +259,7 @@ body {
     /* Tables */
     --table-background: var(--deep-space-blue-2);
     --table-header-background-hover: var(--deep-space-blue-2);
+    --table-header-weight: var(--font-weight);
     --table-border-width: 2px;
     --table-border-color: var(--starfire-yellow);
     --table-add-button-background: var(--electric-purple);
@@ -230,16 +269,13 @@ body {
     /* Window Frame */
     --titlebar-background: var(--deep-space-blue-1);
     --titlebar-background-focused: var(--deep-space-blue-1);
-
-    /* Vault Profile */
-    --vault-profile-color: var(--plasma-pink);
 }
 
-/* General */
-hr {
+/* Misc */
+hr, .markdown-rendered hr {
     border-color: var(--solar-gold);
 }
-.view-content .cm-strong.cm-em, .markdown-source-view.mod-cm6 .HyperMD-quote .cm-strong.cm-em {
+.cm-strong.cm-em, .markdown-source-view.mod-cm6 .HyperMD-quote .cm-strong.cm-em, strong em {
     color: var(--azure);
 }
 
@@ -247,15 +283,76 @@ hr {
     color: var(--solar-gold);
 }
 .inline-title:not([data-level]) {
+    font-size: 2.5em;
     text-align: center;
-    background: linear-gradient(to right, var(--starfire-yellow) 40%, var(--lava-orange) 60%);
+    background: linear-gradient(to right, var(--starfire-yellow) 30%, var(--lava-orange) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .mod-fade:not(.mod-at-end):after {
     background: none;
 }
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+    padding: 0.1em 0.15em; 
+}
 
+/* Underline */
+.cm-s-obsidian span.cm-highlight.cm-strikethrough {
+    background-color: transparent;
+    text-decoration: solid underline;
+}
+.cm-s-obsidian span.cm-highlight.cm-strikethrough.cm-strong {
+    color: var(--cornflower);
+}
+.cm-s-obsidian span.cm-highlight.cm-strikethrough.cm-em {
+    color: var(--plasma-pink);
+}
+.cm-s-obsidian span.cm-highlight.cm-strikethrough.cm-strong.cm-em {
+    color: var(--azure);
+}
+.markdown-rendered mark > del {
+    text-decoration: solid underline;
+}
+.markdown-rendered mark:has(del) {
+    background-color: transparent;
+}
+.markdown-rendered em > mark:has(del) {
+    color: var(--plasma-pink);
+}
+.markdown-rendered strong > mark:has(del) {
+    color: var(--cornflower);
+}
+.markdown-rendered strong > em > mark:has(del) {
+    color: var(--azure);
+}
+
+/* Image */
+.markdown-source-view.mod-cm6 .cm-content > img[contenteditable=false] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.markdown-source-view.mod-cm6 .cm-content > img[contenteditable=false][alt$="|left"] {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+.markdown-source-view.mod-cm6 .cm-content > img[contenteditable=false][alt$="|right"] {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.markdown-rendered p:has(img) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.markdown-rendered p:has(img[alt$="|left"]) {
+    justify-content: left;
+}
+.markdown-rendered p:has(img[alt$="|right"]) {
+    justify-content: right;
+}
+
+/* Blockquote */
 .markdown-source-view.mod-cm6 .HyperMD-quote .cm-strong {
     color: var(--cornflower);
 }
@@ -271,11 +368,33 @@ hr {
     background: linear-gradient(to right, color-mix(in srgb, var(--electric-purple) 30%, transparent) 0%, color-mix(in srgb, var(--electric-purple) 10%, transparent) 50%);
 }
 
-.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+/* Vault Profile */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    border: none;
+    background: linear-gradient(to bottom, var(--starfire-yellow) 0%, var(--deep-space-blue-1) 10%);
+}
+
+/* Table */
+div.cm-table-widget, div.el-table {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+}
+th:has(mark), td:has(mark) {
+    background-color: var(--lava-orange) !important;
+}
+th:has(mark) mark, td:has(mark) mark {
+    background-color: transparent !important;
+    color: var(--blackhole) !important;
+    font-weight: bold;
+}
+
+/* Link */
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline, a.internal-link {
     text-decoration-color: var(--electric-purple);
     transition: color 0.1s ease-out;
 }
-.cm-s-obsidian span.cm-hmd-internal-link:hover .cm-underline:hover {
+.cm-s-obsidian span.cm-hmd-internal-link:hover .cm-underline:hover, a.internal-link:hover {
     text-decoration-color: var(--starfire-yellow);
     font-weight: bold;
 }
@@ -284,10 +403,44 @@ hr {
     text-decoration-color: var(--lava-orange);
 }
 
+/* Mermaid Diagram */
 .mermaid {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+/* Metadata */
+.metadata-property {
+    background-size: 200% 100% !important;
+    background-position: right center !important;
+    background: linear-gradient(to right, var(--electric-purple) 0%, var(--deep-space-blue-1) 50%);
+    transition: background-position 0.25s cubic-bezier(.6,0,.4,1);
+}
+.metadata-property:hover {
+    background-position: left center !important;
+}
+
+/* Embeded Markdown */
+.internal-embed.markdown-embed.inline-embed {
+    border-radius: var(--radius-l);
+}
+.embed-title.markdown-embed-title {
+    border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+.embed-title.markdown-embed-title {
+    padding: 8px 0 8px 24px;
+    background: linear-gradient(to top, var(--starfire-yellow) 0%, var(--deep-space-blue-2) 10%);
+}
+.inline-embed .markdown-embed-content {
+    padding: 8px 8px 8px 24px;
+}
+
+.markdown-embed-link {
+    color: var(--white-nova);
+}
+.markdown-embed-link:hover {
+    color: var(--starfire-yellow);
 }
 
 /* Clickable Icons */
@@ -437,15 +590,26 @@ hr {
     border-left: 2px solid var(--starfire-yellow);
 }
 
+.mod-right-split .workspace-tab-header-container {
+    background: linear-gradient(to right, var(--deep-space-blue-2) 0%, var(--deep-space-blue-1) 50%);
+    border-left: 2px solid var(--starfire-yellow);
+    border-bottom: none;
+}
 .mod-right-split .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon {
     color: var(--white-nova);
 }
 
-.workspace-leaf-content[data-type='outline'] .view-content, .workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content, .outgoing-link-pane, .tag-container {
+.workspace-leaf-content[data-type='outline'] .view-content, .workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content, .outgoing-link-pane, .tag-container, .workspace-leaf-content[data-type='calendar'] .view-content {
     background: linear-gradient(to top, color-mix(in srgb, var(--void-purple) 40%, transparent) 0%, var(--deep-space-blue-2) 50%);
 }
 .workspace-leaf-content[data-type='advanced-tables-toolbar'] .view-content .advanced-tables-buttons .nav-header {
     background: var(--deep-space-blue-1);
+}
+#calendar-container {
+    padding: 4px;
+    background-color: var(--deep-space-blue-1);
+    border-radius: var(--radius-m);
+    border: 2px solid var(--starfire-yellow);
 }
 
 .nav-buttons-container .clickable-icon[aria-disabled='true'] {
@@ -520,10 +684,6 @@ hr {
     linear-gradient(to top, color-mix(in srgb, var(--electric-purple) 20%, transparent) 0%, transparent 2%);
 }
 
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
-    margin: auto !important;
-}
-
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
     color: var(--blackhole);
     font-weight: bold;
@@ -572,6 +732,39 @@ input.prompt-input:focus, input.prompt-input:focus-visible {
     text-decoration: underline;
 }
 
-.metadata-property:hover {
-    background: linear-gradient(to right, var(--electric-purple) 0%, var(--deep-space-blue-1) 100%);
+/* Dataview */
+.block-language-dataview {
+    border: 2px solid var(--white-nova);
+    border-radius: var(--radius-m);
 }
+div.block-language-dataview table.dataview {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+div.markdown-rendered tr.table-view-tr-header { margin: 0; }
+.table-view-table > thead > tr > th {
+    background-color: var(--azure) !important;
+    color: var(--blackhole);
+    border: 2px solid var(--white-nova);
+    border-top: none;
+}
+.table-view-table > thead > tr > th:last-child { border-right: none; }
+.table-view-table > thead > tr > th:first-child { border-left: none; }
+.dataview.small-text {
+    color: var(--blackhole);
+}
+
+.table-view-table > tbody > tr {
+    margin: 0;
+    border: 2px solid var(--white-nova);
+    border-left: none; border-right: none;
+}
+.table-view-table > tbody > tr:last-child { border-bottom: none; }
+.table-view-table > tbody > tr:first-child { border-top: none; }
+.table-view-table > tbody > tr > td {
+    background-color: var(--deep-space-blue-1) !important;
+    border: 2px solid var(--white-nova);
+    border-top: none; border-bottom: none;
+}
+.table-view-table > tbody > tr > td:last-child { border-right: none; }
+.table-view-table > tbody > tr > td:first-child { border-left: none; }
