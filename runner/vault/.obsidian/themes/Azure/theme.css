@@ -1,5 +1,6 @@
-/* Azure 1.0.0 */
+/* Azure 1.0.1 */
 
+/* Common variables */
 body {
   --font-text-override: "Consolas", monospace;
   --font-text-theme: "Consolas", monospace;
@@ -40,14 +41,18 @@ body {
   --h5-line-height: var(--line-height-normal);
   --h6-line-height: var(--line-height-normal);
 
-  --h1-color: rgb(56,132,255);
-  --h2-color: rgb(81,125,255);
-  --h3-color: rgb(105,117,255);
-  --h4-color: rgb(116,111,248);
-  --h5-color: rgb(126,105,241);
-  --h6-color: rgb(137,99,234);
+  --h1-color: rgb(56, 132, 255);
+  --h2-color: rgb(97, 116, 245);
+  --h3-color: rgb(137, 99, 234);
+  --h4-color: rgb(173, 91, 202);
+  --h5-color: rgb(210, 82, 170);
+  --h6-color: rgb(246, 74, 138);
 
-  --color-accent: var(--blue) !important;
+  --color-accent: var(--blue);
+  --accent-h: 217;
+  --accent-s: 100%;
+  --accent-l: 61%;
+
   --background-modifier-accent: var(--color-accent);
   --background-modifier-success: var(--green);
   --background-modifier-error: var(--pink);
@@ -60,6 +65,7 @@ body {
   --tag-color: var(--color-accent);
   --checkbox-border-color: var(--text-muted);
   --checkbox-border-color-hover: var(--color-accent);
+  --checklist-done-decoration: none;
   --code-comment: var(--purple);
   --p-spacing: 1.5rem;
 
@@ -73,6 +79,12 @@ body {
   --icon-muted: 0.5;
   --border-width: 2px;
   --border-width-alt: 2px;
+
+  --interactive-success: var(--green);
+  --interactive-accent: var(--blue);
+  --interactive-accent-2: var(--light-blue);
+  --interactive-accent-hover: var(--purple);
+  --interactive-accent-rgb: 56, 132, 255;
 
   --indentation-guide-color: var(--background-secondary);
   --indentation-guide-color-active: var(--background-secondary);
@@ -141,6 +153,12 @@ body {
 
   --text-error: var(--red);
   --text-error-hover: var(--red);
+  --background-modifier-border: var(--color-transparent);
+  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: var(--interactive-normal);
+  --text-highlight-bg: var(--color-accent-faint);
+  --text-highlight-bg-active: var(--color-accent-faint);
+  --text-selection: var(--color-accent-faint);
 
   --scrollbar-active-thumb-bg: var(--color-accent);
   --hr-color: var(--color-accent);
@@ -174,6 +192,7 @@ body {
   --embed-padding: 0 0 0 1rem;
 }
 
+/* Light theme */
 .theme-light {
   --background-primary: rgb(238, 238, 238);
   --background-primary-alt: var(--background-secondary);
@@ -181,9 +200,6 @@ body {
   --background-secondary-alt: var(--background-primary);
   --background-translucent: rgba(255, 255, 255, 0.85);
 
-  --background-modifier-border: var(--color-transparent);
-  --background-modifier-border-hover: var(--interactive-hover);
-  --background-modifier-border-focus: var(--interactive-normal);
   --background-modifier-form-field: hsl(0, 0, 96%);
   --background-modifier-form-field-highlighted: hsl(0, 0, 98%);
 
@@ -195,20 +211,11 @@ body {
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: var(--background-secondary);
 
-  --text-highlight-bg: var(--color-accent-faint);
-  --text-highlight-bg-active: var(--color-accent-faint);
-  --text-selection: var(--color-accent-faint);
   --text-on-accent: rgb(242, 242, 242);
   --text-on-light-accent: rgb(38, 38, 38);
 
   --interactive-normal: rgb(247, 248, 250);
   --interactive-hover: hsl(0, 0%, 91%);
-  --interactive-success: var(--green);
-  --interactive-accent: var(--blue);
-  --interactive-accent-2: var(--purple);
-  --interactive-accent-hover: var(--pink);
-  --interactive-accent-rgb: 56, 132, 255;
-
   --highlight-mix-blend-mode: darken;
 
   --gray: rgb(99, 99, 99);
@@ -216,15 +223,12 @@ body {
   --gray-transparent: rgba(99, 99, 99, 0.1);
 }
 
+/* Dark theme */
 .theme-dark {
   --background-primary: rgb(19, 22, 27);
   --background-primary-alt: var(--background-secondary);
   --background-secondary: rgb(28, 32, 39);
   --background-secondary-alt: var(--background-primary);
-  
-  --background-modifier-border: var(--color-transparent);
-  --background-modifier-border-hover: var(--interactive-hover);
-  --background-modifier-border-focus: var(--interactive-normal);
   
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
@@ -239,20 +243,11 @@ body {
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: var(--background-secondary);
 
-  --text-highlight-bg: var(--color-accent-faint);
-  --text-highlight-bg-active: var(--color-accent-faint);
-  --text-selection: var(--color-accent-faint);
   --text-on-accent: rgb(220, 221, 222);
   --text-on-light-accent: rgb(38, 38, 38);
   
   --interactive-normal: rgb(42, 42, 42);
   --interactive-hover: rgb(48, 48, 48);
-  --interactive-success: var(--green);
-  --interactive-accent: var(--blue);
-  --interactive-accent-2: var(--light-blue);
-  --interactive-accent-hover: var(--pink);
-  --interactive-accent-rgb: 56, 132, 255;
-
   --highlight-mix-blend-mode: lighten;
 
   --gray: rgb(158, 158, 158);
@@ -260,6 +255,7 @@ body {
   --gray-transparent: rgba(158, 158, 158, 0.1);
 }
 
+/* Source view */
 .markdown-source-view {
   font-family: var(--font-text-theme);
 
@@ -284,6 +280,7 @@ body {
   --link-decoration-hover: underline;
 }
 
+/* Live preview */
 .markdown-source-view.is-live-preview {
   font-family: var(--font-text-theme);
 
@@ -308,6 +305,7 @@ body {
   --link-decoration-hover: underline;
 }
 
+/* Reading view */
 .markdown-preview-view {
   font-family: var(--font-text-theme);
 
@@ -349,6 +347,7 @@ body {
   --link-color: var(--interactive-accent-hover);
 }
 
+/* CSS styling */
 .inline-title {
   font-weight: var(--h1-weight);
 }
@@ -468,6 +467,10 @@ body:not(.is-grabbing) .markdown-embed-link:hover, .file-embed-link:hover {
   color: var(--background-primary);
 }
 
+.cm-hashtags {
+  color: var(--color-accent);
+}
+
 .kanban-plugin__grow-wrap > textarea {
   background-color: var(--background-primary);
 }
@@ -530,6 +533,7 @@ body:not(.is-grabbing) .markdown-embed-link:hover, .file-embed-link:hover {
   color: var(--text-normal);
 }
 
+/* Color nested indicators */
 .markdown-source-view.mod-cm6.is-live-preview  .HyperMD-list-line-1.cm-line .list-bullet::after {
     background-color: var(--h1-color);
 }
@@ -584,8 +588,4 @@ body:not(.is-grabbing) .markdown-embed-link:hover, .file-embed-link:hover {
 
 .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-children .nav-folder .nav-folder-title .collapse-icon svg.svg-icon {
   color: var(--nav-collapse-icon-color);
-}
-
-.cm-hashtags {
-  color: var(--color-accent);
 }

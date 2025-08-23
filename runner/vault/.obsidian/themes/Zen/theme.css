@@ -281,6 +281,7 @@ body {
 	--bases-table-header-background: var(--table-header-background);
 	--bases-table-row-height: 40px;
 	--italic-color: var(--text-accent);
+	--radius-xxl: 20px;
 }
 
 body.is-mobile {
@@ -307,7 +308,7 @@ body.is-translucent {
 	--nav-item-background-active: rgba(245, 245, 245, 0.1);
 	--nav-item-color-active: var(--text-accent);
 	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
-	--background-modifier-border: rgba(245, 245, 245, 0.09);
+	--background-modifier-border: rgba(245, 245, 245, 0.15);
 	--background-modifier-hover: rgba(245, 245, 245, 0.1);
 	--floating-toc-background-color: transparent;
 	--blockquote-border-color: rgba(245, 245, 245, 0.2);
@@ -334,17 +335,22 @@ body.is-translucent {
 	--win-window-opacity: 0.2;
 	--background-secondary-alt: rgba(18, 18, 18, 0.1);
 	--background-setting-item: rgba(245, 245, 245, 0.08);
-	--background-setting: rgba(28, 28, 28);
+	--background-setting: rgba(18, 18, 18);
 	--text-highlight-bg: var(--blockquote-border-color);
 	--list-marker-color: var(--nav-indentation-guide-color);
-	--glass-bg-color: rgba(0, 0, 0, 0.15);
+	--glass-bg-color: rgba(28, 28, 28, 0.7);
+	--text-shadow-color: white;
+	--divider-color: rgba(255, 255, 255, 0.01);
+	--shadow-color: rgba(245, 245, 245, 0.08);
+	--side-split-bg-color: rgba(28, 28, 28, 0.3);
+
 }
 
 body:not(.mod-macos).theme-dark {
 	--indentation-guide-color: rgba(245, 245, 245, 0.1);
 	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
 	--list-marker-color: rgba(245, 245, 245, 0.25);
-	--nav-collapse-icon-color: rgba(245, 245, 245, 0.25);
+	/* --nav-collapse-icon-color: rgba(241, 12, 12, 0.5); */
 }
 
 .theme-light {
@@ -386,19 +392,26 @@ body:not(.mod-macos).theme-dark {
 	--background-setting: rgba(255, 255, 255);
 	--text-highlight-bg: var(--blockquote-border-color);
 	--table-header-background: rgba(28, 28, 28, 0.1);
-	--glass-bg-color: rgba(255, 255, 255, 0.15);
+	--glass-bg-color: rgba(248, 248, 248, 0.6);
+	--text-shadow-color: black;
+	--shadow-color: rgba(0, 0, 0, 0.06);
+	--side-split-bg-color: rgba(248, 248, 248, 0.3);
 }
 
 .is-mobile.theme-light {
-	--interactive-normal:rgba(248, 248, 248);
 	--card-border-color: rgba(28, 28, 28, 0.05);
 }
 
-.is-mobile.theme-dark {
-	--interactive-normal:rgba(18, 18, 18, 0.6);
-	--indentation-guide-color: rgba(245, 245, 245, 0.1);
-	--card-border-color: rgba(80, 80, 80, 0.05);
+.is-mobile.theme-light .menu{
+	--interactive-normal:rgba(255, 255, 255, 0.5);
 }
+
+.is-mobile.theme-dark {
+	--interactive-normal:rgba(68, 68, 68, 0.6);
+	--indentation-guide-color: rgba(245, 245, 245, 0.1);
+	--card-border-color: rgba(80, 80, 80, 0.1);
+}
+
 
 .mobile-navbar-actions {
 	--icon-size: 22px;
@@ -416,23 +429,89 @@ body:not(.is-mobile) .theme-light {
 .is-translucent:not(.is-fullscreen) .titlebar,
 .is-translucent:not(.is-fullscreen) .app-container {
 	background-color: rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) !important;
+	/* background: linear-gradient(
+		to right, 
+		transparent 0%,
+		rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) 5%, 
+		var(--glass-bg-color) 50%,
+		rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) 95%,
+		transparent 100%
+	); */
 }
 
 /* 当有弹窗弹出时，模糊背景 */
-body:has(.modal-container) .app-container {
-    filter: blur(30px) saturate(1.5);
+body:has(.modal-container):not(.is-mobile) .app-container {
+    filter: blur(3px) saturate(1.5);
 }
 
-.modal-container.mod-dim .modal,
-body:not(.is-mobile) .status-bar,
-body:not(.is-mobile) .workspace-tab-container {
+/* body:not(.is-mobile) .workspace-tab-container, */
+body:not(.is-mobile) .modal-container.mod-dim .modal,
+body:not(.is-mobile) .status-bar {
 	border-radius: var(--radius-xl);
 	background: var(--glass-bg-color);
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
 	border: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.05);
-	margin: 0 10px 10px 5px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+	margin: 0 5px 5px 5px;
+}
+
+.workspace-ribbon.mod-left {
+	/* border-radius: var(--radius-xl);
+	background-color: rgba(0, 0, 0, 0.0) !important;
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: -1px 0 8px rgba(0, 0, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.15);
+	margin: 5px 5px 5px 5px;
+	height: auto; */
+	/* order: 1; */
+}
+
+
+.is-translucent .workspace-split.mod-root {
+	/* background-color: var(--glass-bg-color) !important; */
+	/* background: linear-gradient(
+		to right, 
+		transparent 0%, 
+		var(--glass-bg-color) 50%, 
+		transparent 100%
+	); */
+	/* margin: 5px; */
+	/* height: auto; */
+	/* border-radius: var(--radius-xl); */
+	background-color: var(--glass-bg-color) !important;	
+	backdrop-filter: blur(15px) saturate(180%);
+	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
+	/* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2), inset 0px 1px 1px rgba(255, 255, 255, 0.2); */
+
+	box-shadow: 0 15px 20px var(--shadow-color);
+  border: 0.05px solid var(--divider-color);
+}
+
+.is-translucent:not(.is-fullscreen) .app-container .workspace-split.mod-left-split {
+	/* border-radius: var(--radius-xl);
+	background-color: rgba(0, 0, 0, 0.0) !important;
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+	margin: 5px 5px 5px 5px;
+	height: auto; */
+	/* opacity: 0.9; */
+}
+
+.is-translucent:not(.is-fullscreen) .app-container .workspace-split.mod-right-split {
+	/* border-radius: var(--radius-xl);
+	background-color: rgba(0, 0, 0, 0.0) !important;
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+	margin: 5px 0px 5px 5px;
+	height: auto; */
+	/* opacity: 0.9; */
 }
 
 .tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,
@@ -443,13 +522,13 @@ body:not(.is-mobile) .workspace-tab-container {
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgb(from var(--text-accent) r g b / 0.1));
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
 	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 body:not(.is-mobile) .workspace-tab-header-container {
-	border: none;
-	border-top: none !important;
+	/* border: none; */
+	/* border-top: none !important; */
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -485,40 +564,66 @@ body {
 	filter: brightness(var(--window-brightness));
 }
 
+.app-container {
+	/* background-color: var(--background-primary); */
+}
+
 .workspace-split.mod-root {
 	filter: brightness(var(--editor-brightness));
+}
+.is-mobile .workspace .workspace-drawer {
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(10px) saturate(180%) brightness(1.1);
+	-webkit-backdrop-filter: blur(15px) saturate(180%) brightness(1.2);
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1), inset 1px 1px 4px rgba(255, 255, 255, 0.1);
+}
+
+.is-mobile .workspace .workspace-drawer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	z-index: -1;
 }
 
 .is-mobile .workspace .workspace-drawer.mod-left {
 	box-shadow: 2px 0px 2px var(--card-border-color);
+	border-right: 1px solid var(--background-modifier-border);
 }
 
 .is-mobile .workspace .workspace-drawer.mod-right {
 	box-shadow: -2px 0px 2px var(--card-border-color);
+	border-left: 1px solid var(--background-modifier-border);
 }
 
 .is-mobile .float-search-modal-container.modal-container.mod-dim .modal,
 .is-mobile .menu,
+.is-phone .menu,
 .is-phone .prompt {
 	box-shadow: 0px -4px 5px var(--card-border-color) !important;
-	border-top: solid 0.1px var(--card-border-color) !important;
+	border-top: solid 0.5px var(--background-modifier-border) !important;
+	text-shadow: 0px 0px 0.5px var(--text-shadow-color);
 }
 
 .theme-dark.is-mobile .prompt,
 .theme-dark.is-mobile .prompt input.prompt-input {
-	background-color: var(--background-primary);
+	background-color: transparent;
 }
 
 .is-mobile .workspace-drawer.mod-right {
 	border-left: solid 0.5px var(--background-modifier-border);
-	border-bottom-left-radius: var(--radius-l);
-	border-top-left-radius: var(--radius-l);
+	border-bottom-left-radius: var(--radius-xxl);
+	border-top-left-radius: var(--radius-xxl);
 }
 
 .is-mobile .workspace-drawer.mod-left {
 	border-right: solid 0.5px var(--background-modifier-border);
-	border-bottom-right-radius: var(--radius-l);
-	border-top-right-radius: var(--radius-l);
+	border-bottom-right-radius: var(--radius-xxl);
+	border-top-right-radius: var(--radius-xxl);
 }
 
 .is-mobile .mod-confirmation .modal:not(.mod-lg) {
@@ -528,6 +633,11 @@ body {
 button:not(.clickable-icon) {
 	border: solid 0.1px var(--card-border-color);
 	box-shadow: 1px 1px 2px var(--background-secondary);
+}
+
+.graph-controls.is-close .graph-controls-button.mod-open {
+	border-radius: 16px;
+	padding: 5px 8px;
 }
 
 button.mod-cta {
@@ -540,7 +650,7 @@ button.mod-cta {
 }
 
 hr.workspace-leaf-resize-handle {
-	/* background-color: var(--scrollbar-thumb-color); */
+	/* background-color: var(--divider-color); */
 }
 
 /* 堆叠模式时，隐藏顶部栏 */
@@ -575,7 +685,7 @@ hr.workspace-leaf-resize-handle {
 
 /* 移除左侧功能按钮区右分界线 */
 .workspace-ribbon {
-	border-right: unset;
+	border-right: 0.5px solid var(--background-modifier-border);
 }
 
 /* 移除顶部的下分界线 */
@@ -658,7 +768,7 @@ body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspa
 /* 侧边栏按钮区样式 */
 .side-dock-settings .side-dock-ribbon-action,
 .side-dock-actions .side-dock-ribbon-action {
-	border-radius: 10px;
+	border-radius: 12px;
 	padding: 7px;
 	margin-bottom: 6px;
 }
@@ -1238,6 +1348,8 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 .list-number {
 	text-align: right;
 	width: 100%;
+	color: var(--text-normal);
+	opacity: 0.4;
 }
 
 .list-bullet {
@@ -1245,6 +1357,12 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 	font-family: 'number-font' !important;
 	font-size: 12px;
 }
+
+.list-bullet::after {
+	background-color: var(--text-normal);
+	opacity: 0.4;
+}
+
 
 .markdown-rendered .list-bullet {
 	margin-inline-start: -12px;
@@ -1484,9 +1602,67 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 }
 
 /* 移动端底部tab样式 */
+.is-mobile .view-header,
 .is-mobile .mobile-navbar {
-	border-top: var(--nav-indentation-guide-color) solid 1px;
+	padding: 0;
 	background-color: transparent;
+}
+
+.is-mobile .mobile-navbar .mobile-navbar-actions {
+	position: absolute;
+	width: 96%;
+	bottom: calc(var(--safe-area-inset-bottom) + 5px);
+	left: 2%;
+	border-radius: 36px;
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(5px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 0.1px solid var(--background-modifier-border);
+	box-shadow: 1px 1px 8px rgba(28, 28, 28, 0.1), inset 1px 1px 4px rgba(228, 228, 228, 0.05);
+	padding: 8px 0;
+}
+
+.is-mobile .mobile-navbar .mobile-navbar-actions::before {
+	content: '';
+	z-index: -1;
+	filter: blur(10px) saturate(1) opacity(0.8);
+	background: var(--glass-bg-color);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.is-mobile .workspace > .mod-root {
+	padding-top: 0;
+}
+
+/* .is-mobile .inline-title, */
+.markdown-reading-view,
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
+	padding-top: calc(var(--safe-area-inset-top) + 40px);
+}
+
+.is-mobile .view-header {
+	padding-left: var(--size-4-4) !important;
+	padding-right: var(--size-4-4) !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: calc(var(--safe-area-inset-top) + 40px);
+	padding-top: var(--safe-area-inset-top);
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+}
+
+.is-mobile .float-search-modal-container.modal-container.mod-dim .modal, .is-mobile .menu, .is-phone .prompt {
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .is-mobile .workspace-leaf-resize-handle {
@@ -1501,7 +1677,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 
 /* 顶部导航栏样式 */
 .is-mobile .view-header {
-	height: 40px !important;
+	/* height: 40px !important; */
 	align-items: center !important;
 	justify-content: center !important;
 	border-bottom: var(--nav-indentation-guide-color) solid 1px;
@@ -1620,19 +1796,29 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 /* 优化侧边栏样式，半透明 */
 .is-mobile .workspace-drawer.mod-left,
 .is-mobile .workspace-drawer.mod-right {
-	background-color: var(--background-primary) !important;
-	/* backdrop-filter: blur(10px); */
+	background-color: transparent !important;
 }
 
+.workspace-drawer-active-tab-content .view-content * {
+	background-color: transparent !important;
+}
+
+.is-mobile .node-insert-event {
+	background-color: var(--app-model-bg-color) !important;
+}
+
+.workspace-drawer-active-tab-content .view-content,
 .is-mobile .workspace-drawer-inner,
 .is-mobile .workspace-drawer-tab-container,
+.is-mobile .workspace-drawer-active-tab-content,
+.is-mobile .workspace-leaf-content,
 .is-mobile .workspace-drawer-active-tab-container {
-	background-color: var(--background-primary) !important;
+	background-color: transparent !important;
 }
 
 .is-mobile .workspace-drawer .nav-header {
 	border-top: none;
-	height: 80px;
+	/* height: 80px; */
 }
 
 .is-mobile .workspace-drawer-header-info {
@@ -2027,7 +2213,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 
 .is-phone .menu-scroll,
 .is-phone .menu {
-	background-color:  var(--background-primary) !important;
+	background-color:  transparent !important;
 }
 
 /* 适配半透明背景 */
@@ -2072,19 +2258,25 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 	padding-right: var(--size-4-3);
 }
 
-.workspace-split.mod-root {
-	background-color: transparent;
+.is-phone .modal.mod-settings .modal-header {
+	background-color: var(--background-primary);
 }
 
 .is-mobile .modal-container, 
 .is-mobile .modal-container .modal-bg,
 .is-mobile .suggestion-bg,
 .is-mobile .workspace-drawer-backdrop {
-	background: linear-gradient(to bottom, #00000000, var(--app-model-bg-color) 15%, #00000000 110%);
+	/* background-color: transparent; */
+	/* background: linear-gradient(to bottom, #00000000, var(--app-model-bg-color) 15%, #00000000 110%); */
+	/* filter: blur(15px) saturate(1.8) opacity(1); */
 }
 
 .mobile-tab-switcher {
-	background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary) 10%, var(--background-primary) 100%);
+	background: var(--glass-bg-color);	
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.05);	/* background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary) 10%, var(--background-primary) 100%); */
 }
 
 .mobile-tab-switcher-scroll, .mobile-tab-switcher-menubar
@@ -2111,7 +2303,7 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion,
 body:not(.is-mobile)	.modal.float-search-modal,
 body:not(.is-mobile)	.modal-container.mod-dim .prompt {
 	backdrop-filter: blur(12px);
-	background-color: rgba(255, 255, 255, 0.15);
+	/* background-color: rgba(255, 255, 255, 0.15); */
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.6);
 }
@@ -2122,7 +2314,7 @@ body:not(.is-mobile).theme-dark	.suggestion-container.mod-search-suggestion,
 body:not(.is-mobile).theme-dark	.modal.float-search-modal,
 body:not(.is-mobile).theme-dark	.modal-container.mod-dim .prompt {
 	backdrop-filter: blur(12px);
-	background-color: rgba(0, 0, 0, 0.2);
+	/* background-color: rgba(0, 0, 0, 0.2); */
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
@@ -2135,7 +2327,7 @@ body:not(.is-mobile) input.prompt-input,
 body:not(.is-mobile)	.suggestion-item.is-selected {
 	border: 1px solid rgb(0 0 0 / 10%);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-	background-color: rgba(255, 255, 255, 0.15);
+	/* background-color: rgba(255, 255, 255, 0.15); */
 	border-radius: var(--radius-xl);
 }
 
@@ -2147,7 +2339,7 @@ body:not(.is-mobile).theme-dark input.prompt-input,
 body:not(.is-mobile).theme-dark	.suggestion-item.is-selected {
 	border: 1px solid rgba(255, 255, 255, 0.15);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-	background-color: rgb(255 255 255 / 5%);
+	/* background-color: rgb(255 255 255 / 5%); */
 }
 
 body:not(.is-mobile) input.prompt-input {
@@ -2161,7 +2353,7 @@ body:not(.is-mobile)	.search-input-container input,
 body:not(.is-mobile)	.float-search-modal .float-search-modal-search-ctn .search-row,
 .modal,
 body:not(.is-mobile)	.modal-container.mod-dim .prompt .prompt-input-container {
-	background-color: transparent !important;
+	/* background-color: transparent !important; */
 }
 
 body:not(.is-mobile) .suggestion-item.is-selected {
@@ -2411,7 +2603,7 @@ body:not(.is-mobile) .modal-container.mod-dim .modal:has(.export-image-preview-r
 }
 
 .modal.mod-settings.mod-sidebar-layout .modal-close-button {
-	display: none;
+	z-index: 999;
 }
 
 .modal-sidebar {
@@ -2484,29 +2676,25 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)::before {
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container .horizontal-main-container,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container {
-	backdrop-filter: blur(50px) saturate(180%);
-	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
-	/* backdrop-filter: blur(15px) saturate(180%) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity)); */
-
-	/* backdrop-filter: blur(var(--win-blur)) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity)); */
+	backdrop-filter: blur(var(--win-blur)) saturate(180%) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity));
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root,
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left:before,  */
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left,  */
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tabs .workspace-leaf,  */
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left:before, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tabs .workspace-leaf, 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-leaf .view-content, 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-split.mod-right-split .workspace-tabs, 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-container
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-header-container,  */
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-sidedock-vault-profile,  */
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-split */
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-header-container, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-sidedock-vault-profile, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-split
 {
 	background-color: transparent !important;
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-container {
-	background: rgba(255, 255, 255, 0.1) !important;
+	background: var(--editor-bg-color) !important;
 	/* backdrop-filter: blur(15px) saturate(180%); */
 	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
 }
@@ -2516,7 +2704,7 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-c
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root {
-	/* background: var(--win-editor-bg-color) !important; */
+	background: var(--win-editor-bg-color) !important;
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon.mod-left:before {
@@ -2693,14 +2881,16 @@ body:not(.is-mobile) .vertical-tab-header-group-items {
 
 /* 将底部的设置按钮调整为左侧 */
 
-body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
 	width: var(--ribbon-width) !important;
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 15px;
+	z-index: 999;
+	transform: translate(-44px, -10px);
 	position: absolute;
-	left: -44px;
-	bottom: 1%;
+	left: 0;
+	bottom: 0;
 }
 
 body.theme-light:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
@@ -2711,8 +2901,9 @@ body.theme-light:not(.is-mobile):not(.close-left-vault-profile) .workspace-split
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher{
 	z-index: 99;
-	gap: 10px;
+	gap: 15px;
 	padding: var(--size-4-2) var(--size-4-2);
+	border-radius: var(--radius-l);
 }
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon{
@@ -2722,7 +2913,7 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 16px;
 	z-index: 99;
 }
 
@@ -2731,8 +2922,10 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 }
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
-	gap: 10px;
-}
+	/* gap: 15px; */
+	border-radius: var(--radius-l);
+	padding: 7px;
+} 
 
 
 /* comander 优化 */
@@ -2881,4 +3074,16 @@ body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 
 .n-tree-node.located p {
 	--61117f8c-locatedColor: var(--text-accent);
+}
+
+.workspace-split.is-sidedock-collapsed ~ .workspace-split.mod-root 
+.workspace-tab-header-container 
+.sidebar-toggle-button.mod-left {
+	margin-left: 25px;
+}
+
+
+/* mobile */
+.is-mobile .workspace-drawer-tab-container .workspace-drawer-active-tab-content .workspace-leaf-content .view-content.node-insert-event {
+	background-color: var(--glass-bg-color) !important;
 }

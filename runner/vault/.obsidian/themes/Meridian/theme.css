@@ -254,13 +254,41 @@
 
 /*
  * ╭─────────────────────────────────────────────────────────╮
+ * │              Hide file explorer nav header              │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.hide-file-explorer-nav-header-always
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header {
+  display: none;
+}
+
+.hide-file-explorer-nav-header-dynamic
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header {
+  max-height: 0;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.hide-file-explorer-nav-header-dynamic
+  .workspace-leaf-content[data-type="file-explorer"]:hover
+  .nav-header {
+  max-height: 2.5em;
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
  * │                  Sidebars & Dock Areas                  │
  * ╰─────────────────────────────────────────────────────────╯
 */
 
 /* Hide left/right sidebar toggle buttons */
-.sidebar-toggle-button.mod-right,
-.sidebar-toggle-button.mod-left {
+.hide-sidebar-buttons-always .sidebar-toggle-button.mod-right,
+.hide-sidebar-buttons-always .sidebar-toggle-button.mod-left {
   display: none;
 }
 
@@ -307,11 +335,6 @@
   .nav-header {
   opacity: 1;
   height: 1.75em;
-}
-
-/* Hide file explorer nav header */
-.workspace-leaf-content[data-type="file-explorer"] .nav-header {
-  display: none;
 }
 
 /* Hide local graph tab unless hovered */
@@ -540,6 +563,39 @@ settings:
         value: hide-tab-bar-never
 
   -
+    id: hide-file-explorer-nav-header
+    title: Hide File Explorer Navigation Header
+    description: Hide the file explorer navigation header dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-file-explorer-nav-header-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-file-explorer-nav-header-dynamic
+      -
+        label: Always
+        value: hide-file-explorer-nav-header-always
+      -
+        label: Never
+        value: hide-file-explorer-nav-header-never
+
+  -
+    id: hide-sidebar-buttons
+    title: Hide Sidebar Buttons
+    description: Hide the buttons for toggling left/right sidebars.
+    type: class-select
+    allowEmpty: false
+    default: hide-sidebar-buttons-always
+    options:
+      -
+        label: Always
+        value: hide-sidebar-buttons-always
+      -
+        label: Never
+        value: hide-sidebar-buttons-never
+
+  -
     id: deemphasize-status-bar
     title: De-emphasize Status Bar
     description: De-emphasize the status bar (preview mode).
@@ -698,9 +754,11 @@ img {
   color: var(--text-faint);
 }
 
-/* ───────────────────────────────────────────────
-   Minimal Image Captions
-─────────────────────────────────────────────── */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                 Minimal Image Captions                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .minimal-image-captions .image-captions-figure {
   background-color: transparent !important;
 }
