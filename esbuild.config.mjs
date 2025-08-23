@@ -29,6 +29,7 @@ const context = await esbuild.context({
     "@lezer/highlight",
     "@lezer/lr",
     //...builtins,
+    "./runner/quartz/*",
   ],
   format: "cjs",
   target: "es2018",
