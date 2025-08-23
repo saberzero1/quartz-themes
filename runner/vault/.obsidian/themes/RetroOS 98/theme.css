@@ -1,4 +1,184 @@
 /*RetroOS 98*/
+/* @settings
+name: RetroOS 98 Tweak Box 
+id: ROS98-Support
+collapsed: false
+level: 0
+settings:
+    -
+      id: scrollbar-width
+      title: Background brightness
+      description: Suggestion Increase brightness on Dark mode, decrease brightness on light mode.
+      type: variable-number-slider
+      min: 11
+      max: 18
+      step: 0.5
+      default: 18
+      format: px
+    -
+        id: ROS09-darkScheme
+        description: Change color scheme for the dark theme. "+" means its from the Windows Plus pack 
+        title: Dark Color Scheme
+        type: class-select
+        allowEmpty: false
+        default: ROS98
+        options:
+        -
+          label: RetroOS 98 Dark
+          value: ROS98
+        -
+          label: Ancient Pathways +
+          value: ROS98-Ancient
+        -
+          label: Dangerous Creatures +
+          value: ROS98-DC
+        -
+          label: Jungle +
+          value: ROS98-Jungle
+        -
+          label: Mystery +
+          value: ROS98-mystery
+        -
+          label: Travel +
+          value: ROS98-Travel
+        -
+          label: Snowboarding +
+          value: ROS98-Snow  
+        -
+          label: Space +
+          value: ROS98-Space
+        -
+          label: Steam
+          value: ROS98-steam
+        -
+          label: Under Water +
+          value: ROS98-Water
+    -
+        id: ROS09-lightScheme
+        description: Change color scheme for the light theme. "+" means its from the Windows Plus pack 
+        title: Light Color Scheme
+        type: class-select
+        allowEmpty: false
+        default: ROS98
+        options:
+        -
+          label: RetroOS 98 Light
+          value: ROS98
+        -
+          label: Baseball
+          value: ROS98-baseball
+        -
+          label: Brick
+          value: ROS98-brick
+        -
+          label: Bugs +
+          value: ROS98-Bugs  
+        -
+          label: Desert
+          value: ROS98-desert
+        -
+          label: Eggplant
+          value: ROS98-eggplant
+        -
+          label: Foxtrot +
+          value: ROS98-Foxtrot
+        -
+          label: Horses +
+          value: ROS98-Horses
+        -
+          label: Horror Channel +
+          value: ROS98-Horror
+        -
+          label: Lilac
+          value: ROS98-lilac
+        -
+          label: Maple
+          value: ROS98-maple
+        -
+          label: Marine
+          value: ROS98-marine
+        -
+          label: Messy Room +
+          value: ROS98-Messy
+        -
+          label: More Windows +
+          value: ROS98-MW
+        -
+          label: Nature +
+          value: ROS98-nature
+        -
+          label: Peanuts +
+          value: ROS98-Peanuts  
+        -
+          label: PhotoDisc +
+          value: ROS98-Photo
+        -
+          label: Plum
+          value: ROS98-plum
+        -
+          label: Pumpkin
+          value: ROS98-pumpkin
+        -
+          label: Rainy Day
+          value: ROS98-rainyday
+        -
+          label: RE-man +
+          value: ROS98-reman 
+        -
+          label: Rose
+          value: ROS98-rose
+        -
+          label: Science +
+          value: ROS98-Science
+        -
+          label: Slate
+          value: ROS98-slate
+        -
+          label: Sports +
+          value: ROS98-sports  
+        -
+          label: Spruce
+          value: ROS98-spruce
+        -
+          label: The 60's USA +
+          value: ROS98-USA  
+        -
+          label: The Golden Era +
+          value: ROS98-GoldenEra
+        -
+          label: Tree House +
+          value: ROS98-Tree
+        -
+          label: Tropical Interlude +
+          value: ROS98-Tropical
+        -
+          label: Leonardo Da Vinci +
+          value: ROS98-Vinci
+        -
+          label: Wheat
+          value: ROS98-wheat
+*/
+
+/* @settings
+name: RetroOS 98 Support 
+id: CG-Support
+collapsed: false
+level: 0
+settings:
+-
+    id: ROS09-github
+    title: Have a suggestion or found a problem with the theme
+    description: Submit an issue on [Github](https://github.com/ThePharaohArt/Obsidian-RetroOS98/issues)
+    type: info-text
+    markdown: true
+-
+    id: ROS09-more-themes
+    title: My Other themes
+    description: Check out my other themes:[Cyber Glow](https://github.com/ThePharaohArt/Obsidian-CyberGlow)
+    type: info-text
+    markdown: true
+
+*/
 
 @font-face {
     font-family: "Win95Font";
@@ -13,9 +193,182 @@ body {
     --maximize: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
     --minimize: url("data:image/svg+xml,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
     --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
-
-
+    --scrollbar-width: 18px;
+    --text-selection:hsla(var(--color-accent-hsl), 0.47)!important;
 }
+
+.theme-dark.ROS98-DC{
+  --background-primary: #3c3c3c;
+  --background-secondary: #707070;
+}
+.theme-dark.ROS98-Jungle {
+  --background-primary: #625437;
+  --background-secondary: #958054;
+}
+.theme-dark.ROS98-mystery{
+  --background-primary: #343c34;
+  --background-secondary: #607060;
+}
+.theme-dark.ROS98-Travel {
+  --background-primary: #3f3731;
+  --background-secondary: #726559;
+}
+.theme-dark.ROS98-Snow {
+  --background-primary: #1a1c0e;
+  --background-secondary: #4b4f2a;
+}
+.theme-dark.ROS98-Space {
+  --background-primary: #3b4247;
+  --background-secondary: #66737a;
+}
+.theme-dark.ROS98-steam {
+  --background-primary: #3e4637;
+  --background-secondary: #4c5844;
+}
+.theme-dark.ROS98-Water {
+  --background-primary: #15294e;
+  --background-secondary: #2a509a;
+}
+.theme-dark.ROS98-Ancient {
+  --background-primary: #2b221a;
+  --background-secondary: #7a614a;
+}
+
+
+
+
+.theme-light.ROS98-Tropical {
+  --background-primary: #dacea6;
+  --background-secondary: #8e866c;
+}
+.theme-light.ROS98-Photo {
+  --background-primary: #dac9ad;
+  --background-secondary: #8e8371;
+}
+.theme-light.ROS98-Peanuts {
+  --background-primary: #b9d8ba;
+  --background-secondary: #9d9d9d;
+}
+.theme-light.ROS98-Horror {
+  --background-primary: #dfefa3;
+  --background-secondary: #98a36f;
+}
+.theme-light.ROS98-Foxtrot {
+  --background-primary: #b8c0cd;
+  --background-secondary: #747981;
+}
+.theme-light.ROS98-Tree {
+  --background-primary: #bcbfe7;
+  --background-secondary: #7e809b;
+}
+
+.theme-light.ROS98-reman {
+  --background-primary: #d4d5b5;
+  --background-secondary: #c1a600;
+}
+
+.theme-light.ROS98-Messy {
+  --background-secondary: #8284bc;
+}
+
+.theme-light.ROS98-Horses {
+  --background-primary: #f2d6e0;
+  --background-secondary: #a6939a;
+}
+.theme-light.ROS98-baseball {
+  --background-primary: #ffcc87;
+  --background-secondary: #d1a86f;
+}
+.theme-light.ROS98-Bugs {
+  --background-primary: #bfd2a0;
+  --background-secondary: #7a8666;
+}
+
+
+
+
+
+.theme-light.ROS98-brick {
+  --background-primary: #fffbd8;
+  --background-secondary: #c2bfa5;
+}
+.theme-light.ROS98-desert {
+  --background-primary: #fff4df;
+  --background-secondary: #d5ccbb;
+}
+.theme-light.ROS98-eggplant {
+  --background-primary: #cefcf1;
+  --background-secondary: #90b0a8;
+}
+
+.theme-light.ROS98-GoldenEra {
+    --background-secondary: #b8c8b9;
+    --background-primary: #f8f1da;
+}
+.theme-light.ROS98-lilac{
+  --background-primary: #d6c4ff;
+  --background-secondary: #afa0d0;
+}
+.theme-light.ROS98-maple{
+  --background-primary: #fff3ad;
+  --background-secondary: #e0cc98;
+}
+.theme-light.ROS98-marine {
+  --background-primary: #c8e0d8;
+  --background-secondary: #88c0b8;
+}
+.theme-light.ROS98-MW {
+    --background-secondary: #7c828a;
+    --background-primary: #cad3e1;
+}
+.theme-light.ROS98-nature {
+    --background-secondary: #b09d82;
+    --background-primary: #ebe3d4;
+}
+.theme-light.ROS98-plum {
+  --background-primary: #d8d0c8;
+  --background-secondary: #a89890;
+}
+.theme-light.ROS98-pumpkin {
+  --background-primary: #ffecaa;
+  --background-secondary: #f0d4a0;
+}
+.theme-light.ROS98-rainyday {
+  --background-secondary: #8098b0;
+  --background-primary: #b7dafc;
+}
+.theme-light.ROS98-rose {
+  --background-secondary: #d0b0b8;
+  --background-primary: #ffd7e1;
+}
+.theme-light.ROS98-Science {
+    --background-secondary: #8398b1;
+    --background-primary: #bbd9fd;
+}
+.theme-light.ROS98-slate {
+  --background-secondary: #9db9c8;
+  --background-primary: #c8ebff;
+}
+.theme-light.ROS98-sports {
+    --background-secondary: #afe1a0;
+    --background-primary: #bcffb5;
+}
+.theme-light.ROS98-spruce {
+  --background-primary: #ceffd7;
+  --background-secondary: #a2c8a9;
+}
+.theme-light.ROS98-USA {
+    --background-secondary: #d168d8;
+}
+.theme-light.ROS98-Vinci{
+  --background-primary: #ffdcd5;
+  --background-secondary: #bfa5a0;
+}
+.theme-light.ROS98-wheat {
+  --background-primary: #f5ffb6;
+  --background-secondary: #e0e0a0;
+}
+
 
 .is-mobile{
     --mobile-sidebar-radius: 0px;
@@ -128,7 +481,7 @@ body {
 /*Theme control buttons*/
 .mod-left-split .workspace-tab-header, .mod-right-split .workspace-tab-header,
 /*Theme sidepanel tabs*/
-.community-item, .kanban-plugin__new-item-button:hover, .document-search-close-button, .dropdown, .dropdown:hover, .search-results-info .dropdown, .dropdown:focus,  .is-mobile .workspace-drawer-active-tab-header, .mobile-tab-wrapper {
+.community-item, .kanban-plugin__new-item-button:hover, .document-search-close-button, .dropdown, .dropdown:hover, .search-results-info .dropdown, .dropdown:focus,  .is-mobile .workspace-drawer-active-tab-header, .mobile-tab-wrapper, .setting-item.setting-item-heading.style-settings-heading {
     background-color: var(--background-secondary);
     color: var(--text-normal);
     box-shadow: inset -1px -1px black, inset 1px 1px var(--background-secondary), inset -2px -2px var(--bg-button-shadow), inset 2px 2px var(--bg-button-light);
@@ -257,7 +610,7 @@ button:not(.clickable-icon):active,
 button.mod-cta:active,
 .community-item:active,
 .clickable-icon.is-active,
-.document-search-close-button:active, button.mod-cta.mobile-tap, button:not(.clickable-icon).mobile-tap:active, button.clickable-icon.mobile-tap.view-action:active, .clickable-icon.mobile-tap[aria-disabled='false']:active {
+.document-search-close-button:active, button.mod-cta.mobile-tap, button:not(.clickable-icon).mobile-tap:active, button.clickable-icon.mobile-tap.view-action:active, .clickable-icon.mobile-tap[aria-disabled='false']:active, .setting-item.setting-item-heading.style-settings-heading:active{
     background-color: var(--background-secondary);
     color: var(--text-normal);
     background-position: 0.5px 0.5px;
@@ -509,7 +862,7 @@ body.is-frameless .modal {
 /*Scrollbar*/
 body:not(.native-scrollbars) ::-webkit-scrollbar,
 body:not(.native-scrollbars) .kanban-plugin__lane-items.kanban-plugin__vertical.kanban-plugin__scroll-container::-webkit-scrollbar {
-    width: 18px;
+    width: var(--scrollbar-width);
     height: 17px;
 }
 
@@ -2143,4 +2496,71 @@ color: var(--text-on-accent);
 
 .theme-dark .callout{
     mix-blend-mode: normal;
+}
+
+
+/* Style Settings*/
+.setting-item.setting-item-heading.style-settings-heading[data-id="theme-design-utilities"]{
+display: none;
+}
+.view-content .style-settings-container .setting-item:not(.setting-item-heading){
+    background-color: var(--background-secondary);
+}
+
+.workspace-leaf-content[data-type="style-settings"]{
+    margin: 1px;
+    background-color: var(--background-secondary);
+    box-shadow: inset -1px -1px var(--bg-button-light), inset 1px 1px var(--bg-button-shadow), inset -1px -1px var(--background-secondary), inset 1px 1px black;
+}
+.style-settings-container {
+    padding-bottom: 0px;
+}
+
+
+.el-pre{
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: inset -1px -1px black, inset 0px 0px var(--background-secondary), inset -2px -2px var(--bg-button-shadow), inset 1px 1px var(--bg-button-light);
+}
+.markdown-rendered pre{
+        box-shadow: inset 1px 0 var(--bg-button-shadow), inset -1px 0 var(--bg-button-light), inset 0 1px var(--bg-button-shadow), inset 2px 0 var(--bg-button-light), inset 0 -1px var(--bg-button-light), inset -2px -2px var(--bg-button-shadow), inset 0 2px var(--bg-button-light);
+        border-radius: 0px;
+}
+
+
+
+
+/*Callouts*/
+.callout{
+    background-color: rgba(var(--callout-color), 0.4);
+    box-shadow: inset -1px -1px black, inset 0px 0px var(--background-secondary), inset -2px -2px var(--bg-button-shadow), inset 1px 1px var(--bg-button-light);
+    border-radius: 0px;
+        padding: 0px;
+        border-radius: 0px;
+
+
+}
+.callout .callout-title{
+    padding: 10px;
+}
+
+.callout-content{
+    box-shadow: inset 1px 0 var(--bg-button-shadow), inset -1px 0 var(--bg-button-light), inset 0 1px var(--bg-button-shadow), inset 2px 0 var(--bg-button-light), inset 0 -1px var(--bg-button-light), inset -2px -2px var(--bg-button-shadow), inset 0 2px var(--bg-button-light);
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 5px 5px;
+}
+
+.callout-title{
+    padding: 0px 0px 5px 0px;
+}
+.callout.is-collapsible .callout-title{
+            cursor: var(--cursor-link);
+
+}
+.callout.is-collapsible:active {
+
+    translate: 1px 1px;
+        box-shadow: inset -1px -1px var(--bg-button-light), inset 1px 1px var(--bg-button-shadow), inset -1px -1px var(--background-secondary), inset 1px 1px black;
 }

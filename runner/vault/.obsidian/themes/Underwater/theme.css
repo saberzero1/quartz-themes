@@ -945,7 +945,7 @@ body:not(.is-phone) .prompt-results {
   border-radius: 0px 0px 18px 18px;
 }/*disable titlebar when ffmode is enabled*/
 .focus-mode .titlebar-button-container {
-  display:none;
+  display: none;
 }
 .community-item {
   background-color: var(--text-selection);
@@ -1281,9 +1281,10 @@ body:not(.no-button) button {
 
 /*==========================CSSCLASSES=================================*/
 /*no-title*/
-.no-title .inline-title, .no-title .iconize-inline-title-wrapper {
-  display: none !important;
-}
+.no-title {
+  .inline-title, .iconize-inline-title-wrapper, .iconic-title-wrapper {
+    display: none !important;
+}}
 
 /*notebook*/
 .mod-root .workspace-tabs .workspace-leaf .notebook {
@@ -1828,8 +1829,8 @@ body:not(.no-todoist) {
     font-size: var(--h3-size);
 }}
 
-/*IMPORTANT - ICONIZE v.2.12.1 fix*/
-.iconize-inline-title-wrapper {
+/*IMPORTANT - ICONIZE and ICONIC fix*/
+.iconize-inline-title-wrapper, .iconic-title-wrapper {
   justify-content: center;
 }
 
@@ -2070,9 +2071,10 @@ body:not(.no-cardboard) {
 /*You can also use these as cssclasses*/
 
 /*Focus mode*/
-.focus-mode .workspace-tab-header-container, .focus-mode .view-header, .focus-mode .status-bar, .focus-mode .metadata-properties-heading, .focus-mode ::-webkit-scrollbar {
-  display: none;
-}
+.focus-mode {
+  .workspace-tab-header-container, .view-header, .status-bar, .metadata-properties-heading, ::-webkit-scrollbar {
+    display: none !important;
+}}
 .focus-mode .workspace-tab-container {
   margin-top: 14px;
 }
