@@ -142,3 +142,6 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+runner/quartz/public
+runner/quartz/quartz/.quartz-cache
