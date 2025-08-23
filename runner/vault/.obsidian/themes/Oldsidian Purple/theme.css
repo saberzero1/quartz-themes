@@ -4,13 +4,14 @@
 	--code-normal: #FB463B;
 	--text-accent:#814CFF;
 	--link-unresolved-decoration-style:#814CFF;
-	--background-primary:#262626ff;
+    --background-primary:#262626ff;
 	--background-primary-alt:#161616;
 	--background-modifier-error:#5C0000;
     --background-modifier-error-hover: #990000;
 	--text-highlight-bg: #6C41D8;
 	--nav-item-background-active: #6C41D8;
 	--tab-min-width: 100px;
+	--bases-cards-background:#161616;
 	/*	--text-selection:;*/
 }
 
@@ -134,6 +135,11 @@ body {
 	color: var(--text-muted);
     font-family: var(--font-monospace);
 }
+.cm-s-obsidian .cm-hmd-frontmatter {
+    font-size: 14px;
+	color: var(--text-muted);
+    font-family: var(--font-monospace);
+}
 
 /* --- Fix link underline --- */
 .markdown-rendered .internal-link.is-unresolved, .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
@@ -195,3 +201,59 @@ body {
 .cm-s-obsidian .cm-line.HyperMD-header {
      padding-top:0;
 }
+
+/* obsidian-calendar-plugin */
+/* https://github.com/liamcain/obsidian-calendar-plugin */
+
+#calendar-container {
+  --color-background-weekend: #262626;
+
+--color-dot: #ffffff;
+}
+#calendar-container .active {
+    background-color: #6C41D8;
+}
+
+.table-view-table td:nth-child(1) {
+  min-width: 120px;
+}
+.table-view-table td:nth-child(2) {
+  min-width: 60px;
+}
+
+/* --- Datacards compatibility--- */
+.datacards-preset-portrait .datacards-content {
+	background-color: var(--cards-background)
+	}
+	
+.datacards-properties-container {
+	gap: 0px;
+	}
+	
+.datacards-content {
+	gap: 0px;
+	}
+	
+.datacards-property-value {
+	font-size: var(--font-text);
+	}
+.datacards-property {
+    margin-bottom: 5px;
+	}
+.datacards-file-property {
+    margin-bottom: 5px;
+}
+
+/* --- Bases--- */
+.bases-rendered-value {
+  font-family: var(--font-text);
+} 
+.bases-cards-item {
+  font-family: var(--font-text);
+} 
+
+/* Use the cssclasses field with hidebasefieldnames to hide all the lables in the bases card view */
+
+.hidebasefieldnames .bases-cards-label {
+  display: none;
+} 

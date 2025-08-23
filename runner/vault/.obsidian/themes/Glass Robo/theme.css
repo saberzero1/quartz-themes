@@ -402,6 +402,10 @@ body.theme-light {
   display: none;
 }
 
+.setting-item:is([data-id$=settings]) > .setting-item-info > .setting-item-name {
+  overflow: visible;
+}
+
 .setting-item:is([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::before {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -611,6 +615,22 @@ body.theme-light {
   --caret-color: #ff0000;
   --modal-background: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
   --table-border-color: #4e4f4e42 ;
+}
+
+.theme-light {
+  --text-normal: #222222 !important;
+  --platinum: #777373;
+  --glass-background-color-settings: rgb(246, 246, 246) !important;
+  --level-1: rgb(218, 1, 77);
+  --level-6: rgb(106, 57, 205);
+  --level-2: rgb(180, 218, 0);
+  --level-5: rgb(210, 2, 224);
+  --level-3: rgb(255, 116, 23);
+  --level-4: rgb(100, 93, 117);
+}
+.theme-light .workspace-split.mod-root .workspace-tab-header.is-active::before,
+.theme-light .workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: none !important;
 }
 
 body {
@@ -2656,6 +2676,21 @@ h6 .cm-foldPlaceholder::after,
   box-shadow: 0 0 4px rgb(30, 30, 46);
 }
 
+.theme-light .checkbox-container {
+  background-color: rgb(243, 139, 168);
+  box-shadow: 0 0 2px inset rgb(255, 255, 255);
+}
+.theme-light .checkbox-container.is-enabled {
+  background-color: rgb(166, 227, 161);
+}
+.theme-light .checkbox-container:hover {
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+}
+.theme-light .checkbox-container::after {
+  --toggle-thumb-color: rgb(255 255 255);
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
 button.mod-cta {
   background: rgb(166, 227, 161) !important;
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
@@ -3806,6 +3841,11 @@ input[type=checkbox] {
   border-radius: 5px;
 }
 
+.theme-light .notice,
+.theme-light .tooltip {
+  color: var(--text-normal);
+}
+
 .canvas-wrapper .canvas-background {
   display: none;
 }
@@ -4153,6 +4193,10 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
 }
 .kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title-count {
   transform: rotate(270deg);
+}
+
+#sr-modal {
+  transform: translate(-50%, -50%) !important;
 }
 
 .workspace-leaf-resize-handle {

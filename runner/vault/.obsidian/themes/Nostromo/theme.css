@@ -445,7 +445,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.cm-header {
   font-family: var(--font-interface) !important;
   font-weight: 400 !important;
   color: var(--text-accent);
@@ -463,7 +464,8 @@ h6 {
 .markdown-rendered h3,
 .markdown-rendered h4,
 .markdown-rendered h5,
-.markdown-rendered h6 {
+.markdown-rendered h6,
+.cm-header {
   position: relative;
   font-family: var(--font-interface);
   color: var(--yellow);
@@ -473,7 +475,8 @@ h6 {
 }
 
 /* Subtle accent prefixes for different heading levels */
-.markdown-rendered h1::before {
+.markdown-rendered h1::before,
+.cm-header.cm-header-1:not(.cm-formatting-header)::before {
   content: "▓▒░";
   color: rgba(var(--yellow-rgb), 0.6);
   font-size: 0.6em;
@@ -482,7 +485,8 @@ h6 {
   top: -0.1em;
 }
 
-.markdown-rendered h2::before {
+.markdown-rendered h2::before,
+.cm-header.cm-header-2:not(.cm-formatting-header)::before {
   content: "▒░";
   color: rgba(var(--yellow-rgb), 0.5);
   font-size: 0.7em;
@@ -491,7 +495,8 @@ h6 {
   top: -0.1em;
 }
 
-.markdown-rendered h3::before {
+.markdown-rendered h3::before,
+.cm-header.cm-header-3:not(.cm-formatting-header)::before {
   content: "░";
   color: rgba(var(--yellow-rgb), 0.4);
   font-size: 0.8em;
@@ -500,7 +505,8 @@ h6 {
   top: -0.1em;
 }
 
-.markdown-rendered h4::before {
+.markdown-rendered h4::before,
+.cm-header.cm-header-4:not(.cm-formatting-header)::before {
   content: "▸";
   color: rgba(var(--yellow-rgb), 0.5);
   font-size: 0.9em;
@@ -509,7 +515,8 @@ h6 {
   top: -0.05em;
 }
 
-.markdown-rendered h5::before {
+.markdown-rendered h5::before,
+.cm-header.cm-header-5:not(.cm-formatting-header)::before {
   content: "◦";
   color: rgba(var(--yellow-rgb), 0.4);
   font-size: 1em;
@@ -518,7 +525,8 @@ h6 {
   top: -0.05em;
 }
 
-.markdown-rendered h6::before {
+.markdown-rendered h6::before,
+.cm-header.cm-header-6:not(.cm-formatting-header)::before {
   content: "·";
   color: rgba(var(--yellow-rgb), 0.3);
   font-size: 1.2em;
@@ -528,7 +536,8 @@ h6 {
 }
 
 /* Left border accents */
-h1 {
+h1,
+.cm-header-1 {
   padding-left: 1rem;
   position: relative;
   font-size: calc(var(--font-text-size) * 2);
@@ -536,35 +545,40 @@ h1 {
   font-family: "VT323", "Share Tech Mono", monospace;
 }
 
-h2 {
+h2,
+.cm-header-2 {
   padding-left: 0.8rem;
   position: relative;
   font-size: calc(var(--font-text-size) * 1.6);
   color: var(--yellow);
 }
 
-h3 {
+h3,
+.cm-header-3 {
   border-left: 1px solid rgba(var(--yellow-rgb), 0.3);
   padding-left: 0.5rem;
   font-size: calc(var(--font-text-size) * 1.4);
   color: var(--orange);
 }
 
-h4 {
+h4,
+.cm-header-4 {
   border-left: 1px solid rgba(var(--yellow-rgb), 0.25);
   padding-left: 0.4rem;
   font-size: calc(var(--font-text-size) * 1.2);
   color: var(--blue);
 }
 
-h5 {
+h5,
+.cm-header-5 {
   border-left: 1px solid rgba(var(--yellow-rgb), 0.2);
   padding-left: 0.3rem;
   font-size: calc(var(--font-text-size) * 1.1);
   color: var(--text-muted);
 }
 
-h6 {
+h6,
+.cm-header-6 {
   border-left: 1px solid rgba(var(--yellow-rgb), 0.15);
   padding-left: 0.2rem;
   font-size: calc(var(--font-text-size) * 1.1);
@@ -573,7 +587,9 @@ h6 {
 
 /* Retro underline effect for major headings */
 h1::after,
-h2::after {
+h2::after,
+.cm-header-1::after,
+.cm-header-2::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -590,7 +606,8 @@ h2:hover,
 h3:hover,
 h4:hover,
 h5:hover,
-h6:hover {
+h6:hover,
+.cm-header:hover {
   text-shadow: 0 0 8px rgba(var(--yellow-rgb), 0.8);
   transition: text-shadow 0.3s ease;
 }

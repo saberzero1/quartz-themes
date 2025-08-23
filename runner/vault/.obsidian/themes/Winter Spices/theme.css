@@ -126,7 +126,7 @@ a.tag, .cm-hashtag {
     --icon-color-hover: #41250C;
     --icon-color-focused: #fff;
 
-    --code-background: #4B2139;
+    --code-background: #4b213909;
 
     --nav-item-color: #fff;
     --nav-item-color-active: #7F6C5E;
@@ -142,8 +142,14 @@ a.tag, .cm-hashtag {
 
 
     --text-accent: #527a98;
+    --text-accent-hover: #A48783;
 
-    --tab-divider-color: #fff;
+    --tab-divider-color: transparent;
+
+    --table-border-color: transparent;
+
+    --checkbox-radius: 10px;
+    --checkbox-color: #7F6C5E;
     
 
 }

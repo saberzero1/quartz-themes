@@ -1,11 +1,4 @@
 body {
-	/* Checkboxes */
-	--checkbox-radius: 50%;
-	--checkbox-border-color: var(--checkbox-color);
-	--checkbox-border-color-hover: var(--checkbox-color-hover);
-	--checklist-done-decoration: none;
-	--checklist-done-color: var(--text-normal);
-
 	/* Collapse icons */
 	--collapse-icon-color: var(--color-accent);
 	--collapse-icon-color-collapsed: var(--interactive-accent-hover);
@@ -16,27 +9,19 @@ body {
 	/* Blocks */
 	--embed-block-shadow-hover: none;
 
-	/* Horizontal rules */
-	--hr-color: hsla(var(--color-accent-hsl), 0.45);
-
 	/* Icons */
 	--icon-color: var(--text-normal);
 	--icon-color-hover: var(--icon-color);
-	--icon-color-active: var(--icon-color);
 	--icon-opacity: 1;
 
 	/* Indentation guide */
-	--indentation-guide-color: hsla(var(--color-accent-hsl), 0.45);
-	--indentation-guide-color-active: hsla(var(--color-accent-hsl), 0.65);
+	--indentation-guide-color: var(--i-6);
+	--indentation-guide-color-active: var(--i-9);
 
 	/* Lists */
+	--list-indent: 2.25em;
 	--list-marker-color: var(--color-accent);
 	--list-marker-color-hover: var(--interactive-accent-hover);
-
-	/* File navigator */
-	--nav-item-color: var(--text-normal);
-	--nav-item-background-selected: var(--i-4);
-	--nav-indentation-guide-color: var(--i-4);
 
 	/* Modals */
 	--modal-border-color: var(--background-modifier-border);
@@ -46,18 +31,6 @@ body {
 
 	/* Search */
 	--search-icon-color: var(--icon-color);
-
-	/* Status bar */
-	--status-bar-background: var(--titlebar-background);
-	--status-bar-text-color: var(--text-normal);
-
-	/* Tags */
-	--tag-color: var(--text-normal);
-	--tag-color-hover: var(--tag-color);
-	--tag-background: hsla(var(--color-accent-hsl), 0.2);
-	--tag-background-hover: var(--tag-background);
-	--tag-padding-x: 0.5em;
-	--tag-radius: var(--radius-s);
 
 	/* Window frame */
 	--titlebar-background: var(--i-2);
@@ -72,39 +45,36 @@ body {
 	--background-modifier-border-focus: var(--background-modifier-border-hover);
 }
 .theme-light {
-	--i-light-s: 25%;
-	--i-light-l: 1;
-
-	--i-0: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 2%));
-	--i-1: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 3%));
-	--i-2: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 6%));
-	--i-3: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 10%));
-	--i-4: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 12%));
-	--i-5: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 14%));
-	--i-6: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 16%));
-	--i-7: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 18%));
-	--i-8: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 20%));
-	--i-9: hsl(var(--accent-h), var(--i-light-s), calc(100% - var(--i-light-l) * 22%));
-
-	--color-base-05: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 99%));
-	--color-base-10: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 98%));
-	--color-base-20: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 96%));
-	--color-base-25: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 89%));
-	--color-base-30: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 88%));
-	--color-base-35: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 83%));
-	--color-base-40: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 74%));
-	--color-base-50: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 67%));
-	--color-base-60: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 44%));
-	--color-base-70: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 36%));
-	--color-base-100: hsl(var(--accent-h), var(--i-light-s), calc(var(--i-light-l) * 13%));
-
+	--i-lt-s: 25%;
+	--i-lt-l-multiplier: 1;
+	--i-s: var(--i-lt-s);
+	--i-0: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 2%));
+	--i-1: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 3%));
+	--i-2: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 6%));
+	--i-3: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 10%));
+	--i-4: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 12%));
+	--i-5: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 14%));
+	--i-6: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 16%));
+	--i-7: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 18%));
+	--i-8: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 20%));
+	--i-9: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 22%));
+	--color-base-05: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 1%));
+	--color-base-10: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 2%));
+	--color-base-20: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 4%));
+	--color-base-25: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 11%));
+	--color-base-30: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 12%));
+	--color-base-35: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 17%));
+	--color-base-40: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 26%));
+	--color-base-50: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 33%));
+	--color-base-60: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 56%));
+	--color-base-70: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 64%));
+	--color-base-100: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * 87%));
 	--color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.075));
 	--color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.15));
-
-	/* Text */
 	--text-normal: #222222;
 	--text-muted: #5c5c5c;
 	--text-faint: #ababab;
+	--text-selection: hsla(var(--i-text-selection-hsl), 0.2);
 	--text-accent: hsl(var(--accent-h), var(--accent-s), 30%);
 	--text-accent-hover: hsl(var(--accent-h), var(--accent-s), 20%);
 	--interactive-hover: var(--i-2);
@@ -112,65 +82,177 @@ body {
 	--interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
 }
 .theme-dark {
-	--i-dark-s: 12%;
-	--i-dark-bg-l: 12%;
-	--i-dark-l: 1;
-
-	--i-0: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 1%));
-	--i-1: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 2%));
-	--i-2: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 4%));
-	--i-3: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 8%));
-	--i-4: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 10%));
-	--i-5: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 12%));
-	--i-6: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 14%));
-	--i-7: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 16%));
-	--i-8: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 18%));
-	--i-9: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 20%));
-
-	--color-base-00: hsl(var(--accent-h), var(--i-dark-s), var(--i-dark-bg-l));
-	--color-base-05: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 1%));
-	--color-base-10: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 2%));
-	--color-base-20: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 3%));
-	--color-base-25: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 4%));
-	--color-base-30: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 9%));
-	--color-base-35: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 13%));
-	--color-base-40: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 21%));
-	--color-base-50: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 28%));
-	--color-base-60: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 48%));
-	--color-base-70: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 58%));
-	--color-base-100: hsl(var(--accent-h), var(--i-dark-s), calc(var(--i-dark-bg-l) + var(--i-dark-l) * 73%));
-
+	--i-dk-s: 12%;
+	--i-dk-l: 12%;
+	--i-dk-l-multiplier: 1;
+	--i-dk-text-l-multiplier: 1;
+	--i-s: var(--i-dk-s);
+	--i-0: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 1%));
+	--i-1: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 2%));
+	--i-2: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 4%));
+	--i-3: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 8%));
+	--i-4: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 10%));
+	--i-5: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 12%));
+	--i-6: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 14%));
+	--i-7: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 16%));
+	--i-8: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 18%));
+	--i-9: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 20%));
+	--color-base-00: hsl(var(--accent-h), var(--i-dk-s), var(--i-dk-l));
+	--color-base-05: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 1%));
+	--color-base-10: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 2%));
+	--color-base-20: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 3%));
+	--color-base-25: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 4%));
+	--color-base-30: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 9%));
+	--color-base-35: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 13%));
+	--color-base-40: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 21%));
+	--color-base-50: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 28%));
+	--color-base-60: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 48%));
+	--color-base-70: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 58%));
+	--color-base-100: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 73%));
 	--color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.15));
 	--color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 1.29));
-
-	/* Backgrounds */
-	--background-primary: hsl(var(--accent-h), var(--i-dark-s), var(--i-dark-bg-l));
-
-	/* Inputs */
+	--background-primary: hsl(var(--accent-h), var(--i-dk-s), var(--i-dk-l));
 	--background-modifier-form-field: var(--background-primary);
-
-	/* Text */
-	--text-normal: hsl(0, 0%, calc(var(--i-dark-bg-l) + 73%));
-	--text-muted: hsl(0, 0%, calc(var(--i-dark-bg-l) + 58%));
-	--text-faint: hsl(0, 0%, calc(var(--i-dark-bg-l) + 28%));
-	--text-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7));
-	--text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7 + 10%));
+	--text-normal: hsl(0, 0%, calc(var(--i-dk-l) + 73% * var(--i-dk-text-l-multiplier)));
+	--text-muted: hsl(0, 0%, calc(var(--i-dk-l) + 58% * var(--i-dk-text-l-multiplier)));
+	--text-faint: hsl(0, 0%, calc(var(--i-dk-l) + 28% * var(--i-dk-text-l-multiplier)));
+	--text-selection: hsla(var(--i-text-selection-hsl), 0.33);
+	--text-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + (100% - var(--i-dk-l)) * 0.75));
+	--text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + (100% - var(--i-dk-l)) * 0.75 + 10%));
 	--interactive-normal: var(--i-2);
 	--interactive-hover: var(--i-3);
 	--interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
 }
-
+.is-mobile.theme-dark {
+	--color-base-00: hsl(var(--accent-h), var(--i-dk-s), var(--i-dk-l));
+	--color-base-10: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 2%));
+	--color-base-20: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 3%));
+	--background-modifier-form-field: var(--i-4);
+	--background-modifier-hover: var(--i-4);
+	--background-modifier-message: var(--i-5);
+}
 body:not(.is-mobile) .workspace {
 	transition: none;
 }
 
+/* Active line highlight */
+body {
+	--i-active-line-color: var(--color-accent-hsl);
+}
+.i-active-line-highlight:not(.is-mobile) .workspace-leaf.mod-active .cm-active.cm-line {
+	background-color: hsla(var(--i-active-line-color), 0.1);
+	box-shadow: calc(var(--file-margins) * -4) 0 hsla(var(--i-active-line-color), 0.1),
+		calc(var(--file-margins) * 4) 0 hsla(var(--i-active-line-color), 0.1);
+}
+.i-active-line-highlight:not(.is-mobile,.i-active-line-active-pane-only) .workspace-leaf:not(.mod-active) .cm-active.cm-line {
+	background-color: hsla(var(--i-active-line-color), 0.05);
+	box-shadow: calc(var(--file-margins) * -4) 0 hsla(var(--i-active-line-color), 0.05),
+		calc(var(--file-margins) * 4) 0 hsla(var(--i-active-line-color), 0.05);
+}
+.i-active-line-border:not(.is-mobile) .workspace-leaf.mod-active .cm-active.cm-line::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: calc(var(--file-margins) / -2);
+	bottom: 0;
+	border-left: 2px solid hsl(var(--i-active-line-color));
+	border-radius: 1px;
+}
+.i-active-line-border:not(.is-mobile,.i-active-line-active-pane-only) .workspace-leaf:not(.mod-active) .cm-active.cm-line::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: calc(var(--file-margins) / -2);
+	bottom: 0;
+	border-left: 2px solid hsla(var(--i-active-line-color), 0.45);
+	border-radius: 1px;
+}
+.i-active-line-highlight-border:not(.is-mobile) .workspace-leaf.mod-active .cm-active.cm-line {
+	background-color: hsla(var(--i-active-line-color), 0.1);
+	box-shadow: calc(var(--file-margins) * -2/5 + 2px) 0 hsla(var(--i-active-line-color), 0.1),
+		calc(var(--file-margins) * 2/5 - 2px) 0 hsla(var(--i-active-line-color), 0.1);
+}
+.i-active-line-highlight-border:not(.is-mobile) .workspace-leaf.mod-active .cm-active.cm-line::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: calc(var(--file-margins) * -3/5);
+	bottom: 0;
+	border-left: 2px solid hsl(var(--i-active-line-color));
+	border-radius: 1px;
+}
+.i-active-line-highlight-border:not(.is-mobile,.i-active-line-active-pane-only) .workspace-leaf:not(.mod-active) .cm-active.cm-line {
+	background-color: hsla(var(--i-active-line-color), 0.05);
+	box-shadow: calc(var(--file-margins) * -2/5 + 2px) 0 hsla(var(--i-active-line-color), 0.05),
+		calc(var(--file-margins) * 2/5 - 2px) 0 hsla(var(--i-active-line-color), 0.05);
+}
+.i-active-line-highlight-border:not(.is-mobile,.i-active-line-active-pane-only) .workspace-leaf:not(.mod-active) .cm-active.cm-line::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: calc(var(--file-margins) * -3/5);
+	bottom: 0;
+	border-left: 2px solid hsla(var(--i-active-line-color), 0.45);
+	border-radius: 1px;
+}
+
+/* Audio */
+audio::-webkit-media-controls-enclosure {
+	border-radius: 7px;
+	border: 0;
+	background-color: var(--i-2);
+}
+
+/* Bases */
+body {
+	--bases-table-header-weight: var(--bold-weight);
+	--bases-table-header-color: var(--text-normal);
+}
+.workspace-leaf-content[data-type="markdown"] :is(.block-language-base,.bases-embed) .bases-view {
+	--bases-table-header-background-hover: var(--i-2);
+	--bases-embed-border-color: var(--bases-table-border-color);
+}
+.bases-table-cell .multi-select-container .multi-select-pill-remove-button {
+	margin-inline-end: 0.25em;
+}
+.bases-table-cell .multi-select-container .multi-select-pill {
+	--pill-color-remove-hover: var(--text-muted);
+	--pill-padding-x: 0.5em;
+	--pill-padding-y: 0.15em;
+	--pill-radius: var(--radius-s);
+	--pill-background-hover: var(--pill-background);
+}
+.bases-table-cell .multi-select-container {
+	gap: 0.34em;
+}
+.theme-light .bases-table-cell .multi-select-container .multi-select-pill {
+	--pill-background: hsl(var(--accent-h), var(--accent-s), calc(100% - var(--i-lt-l-multiplier) * 6%));
+}
+.theme-dark .bases-table-cell .multi-select-container .multi-select-pill {
+	--pill-background: var(--i-3);
+}
+.bases-table-header-label {
+	font-size: var(--font-smallest);
+}
+
 /* Blockquotes */
 body {
+	--i-blockquote-indent: 0;
 	--blockquote-background-color: hsla(var(--color-accent-hsl), 0.1);
 }
 .markdown-rendered blockquote {
-	padding-inline-start: 1em;
-	margin: var(--p-spacing) 0;
+	padding-inline-start: 0.8em;
+}
+.i-italic-blockquote-text {
+	--blockquote-font-style: italic;
+	--blockquote-style: italic;
+}
+.markdown-rendered blockquote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+	margin-left: var(--i-blockquote-indent) !important;
+}
+.i-transparent-blockquote-background {
+	--blockquote-background-color: transparent;
 }
 
 /* Callouts */
@@ -189,16 +271,16 @@ body {
 }
 .callout {
 	background-color: transparent;
-	margin: var(--p-spacing) 0;
+	--bases-table-header-background-hover: var(--i-2);
+	--bases-embed-border-color: var(--bases-table-border-color);
+	--bases-table-border-color: var(--table-border-color);
+	--table-border-color: var(--i-6);
 }
 .callout-title {
 	gap: 0.6em;
 	align-items: center;
 	background-color: rgba(var(--callout-color), 0.1);
 	line-height: 1.5;
-}
-.markdown-source-view.mod-cm6 .callout-content .callout {
-	margin: var(--p-spacing) 0;
 }
 .callout-content {
 	border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
@@ -209,49 +291,100 @@ body {
 .callout-content > :last-child {
 	margin-bottom: 0 !important;
 }
+.i-simple-callouts {
+	--callout-content-padding: 0.1em 1em 1em;
+}
+.i-simple-callouts .callout-title {
+	background-color: transparent;
+}
+.i-simple-callouts .callout-content {
+	border: none;
+}
 
 /* Canvas */
 .internal-embed.canvas-embed {
-	border: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	border: 1px solid var(--i-6);
 	border-radius: 7px;
 }
 .internal-embed.canvas-embed .canvas-minimap {
-	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+	border-top: 1px dashed var(--i-6);
+}
+
+/* Checkboxes */
+body {
+	--checkbox-radius: 50%;
+	--checkbox-border-color: var(--checkbox-color);
+	--checkbox-border-color-hover: var(--checkbox-color-hover);
+	--checklist-done-decoration: none;
+	--checklist-done-color: var(--text-normal);
+}
+.i-strike-completed-tasks {
+	--checklist-done-decoration: line-through;
 }
 
 /* Code */
 body {
 	--code-border-width: 1px;
-	--code-border-color: hsla(var(--color-accent-hsl), 0.45);
+	--code-border-color: var(--i-6);
 	--code-radius: 7px;
 	--code-background: transparent;
 }
-.theme-light .cm-s-obsidian span.cm-inline-code,
-.theme-light .markdown-rendered code {
-	--code-background: hsla(var(--accent-h), var(--i-light-s), var(--accent-l), 0.15);
-}
-.theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark .markdown-rendered code {
-	--code-background: hsla(var(--accent-h), var(--i-dark-s), var(--accent-l), 0.2);
+.cm-s-obsidian span.cm-inline-code,
+.markdown-rendered code {
+	--code-background: var(--i-3);
 }
 .cm-s-obsidian span.cm-inline-code,
 .markdown-rendered code {
 	--code-border-width: 0;
 	--code-radius: var(--radius-s);
 }
-.markdown-rendered pre {
-	margin: var(--p-spacing) 0;
-}
 .markdown-source-view.mod-cm6 .code-block-flair {
 	border-radius: var(--radius-s);
 }
 
+/* Editor background pattern */
+body {
+	--i-pattern-line-width: 1px;
+	--i-pattern-width: 10px;
+	--i-pattern-height: 10px;
+	--i-pattern-lt-l: 3%;
+	--i-pattern-dk-l: 3%;
+}
+.theme-light {
+	--i-pattern-color: hsl(var(--accent-h), var(--i-lt-s), calc(100% - var(--i-lt-l-multiplier) * var(--i-pattern-lt-l)));
+}
+.theme-dark {
+	--i-pattern-color: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * var(--i-pattern-dk-l)));
+}
+:is(.i-lined-bg,.i-grid-bg,.i-dotted-bg) .workspace-split.mod-root .view-content {
+	background-size: var(--i-pattern-width) var(--i-pattern-height);
+}
+:is(.i-lined-bg,.i-grid-bg):is(.i-tab-titlebar-border-solid,.i-tab-titlebar-border-dashed) .workspace-split.mod-root .view-content {
+	background-position-y: calc(var(--i-pattern-line-width) * -1);
+}
+.i-dotted-bg:is(.i-tab-titlebar-border-solid,.i-tab-titlebar-border-dashed) .workspace-split.mod-root .view-content {
+	background-position-y: calc(var(--i-pattern-width) / 2 - var(--i-pattern-line-width));
+}
+.i-lined-bg .workspace-split.mod-root .view-content {
+	background-image: linear-gradient(var(--i-pattern-color) var(--i-pattern-line-width), transparent var(--i-pattern-line-width));
+}
+.i-grid-bg .workspace-split.mod-root .view-content {
+	background-position-x: calc(50% - var(--i-pattern-line-width) / 2);
+	background-image:
+		linear-gradient(var(--i-pattern-color) var(--i-pattern-line-width), transparent var(--i-pattern-line-width)),
+		linear-gradient(to right, var(--i-pattern-color) var(--i-pattern-line-width), transparent var(--i-pattern-line-width));
+}
+.i-dotted-bg .workspace-split.mod-root .view-content {
+	background-position-x: center;
+	background-image: radial-gradient(var(--i-pattern-color) var(--i-pattern-line-width), transparent var(--i-pattern-line-width));
+}
+
 /* Embeds */
 body {
-	--embed-border-start: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	--embed-border-end: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	--embed-border-top: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	--embed-border-bottom: 1px solid hsla(var(--color-accent-hsl), 0.45);
+	--embed-border-start: 1px solid var(--i-6);
+	--embed-border-end: 1px solid var(--i-6);
+	--embed-border-top: 1px solid var(--i-6);
+	--embed-border-bottom: 1px solid var(--i-6);
 	--embed-padding: 0;
 }
 .mod-rtl,
@@ -262,7 +395,7 @@ body {
 .internal-embed .embed-title {
 	gap: 0.6em;
 	padding: 0.5em 1em;
-	background-color: hsla(var(--color-accent-hsl), 0.1);
+	background-color: var(--i-2);
 	border-radius: 7px 7px 0 0;
 }
 .internal-embed.markdown-embed {
@@ -270,8 +403,155 @@ body {
 }
 .internal-embed.markdown-embed .markdown-embed-content {
 	padding: 1em;
-	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
+	border-top: 1px dashed var(--i-6);
 }
+.internal-embed .embed-title:empty {
+	display: none;
+}
+.internal-embed .embed-title:empty + .markdown-embed-content {
+	border: 0;
+}
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
+	border-radius: 0;
+}
+
+/* Files */
+body {
+	--nav-item-color: var(--text-normal);
+	--nav-item-background-selected: var(--i-4);
+	--nav-indentation-guide-color: var(--i-4);
+}
+/* Colored folders */
+body {
+	--i-folder-rainbow-1-lt-h: 0;
+	--i-folder-rainbow-2-lt-h: 60;
+	--i-folder-rainbow-3-lt-h: 120;
+	--i-folder-rainbow-4-lt-h: 180;
+	--i-folder-rainbow-5-lt-h: 240;
+	--i-folder-rainbow-6-lt-h: 300;
+	--i-folder-lt-s: 100%;
+	--i-folder-lt-l: 50%;
+	--i-folder-lt-a: 7%;
+	--i-folder-border-lt-s: 25%;
+	--i-folder-border-lt-l: 75%;
+	--i-folder-border-width-lt: 1px;
+	--i-folder-rainbow-1-dk-h: 0;
+	--i-folder-rainbow-2-dk-h: 60;
+	--i-folder-rainbow-3-dk-h: 120;
+	--i-folder-rainbow-4-dk-h: 180;
+	--i-folder-rainbow-5-dk-h: 240;
+	--i-folder-rainbow-6-dk-h: 300;
+	--i-folder-dk-s: 100%;
+	--i-folder-dk-l: 80%;
+	--i-folder-dk-a: 20%;
+	--i-folder-border-dk-s: 20%;
+	--i-folder-border-dk-l: 40%;
+	--i-folder-border-width-dk: 1px;
+}
+.theme-light.i-folder-radius-lt:is(.i-folder-rainbow-lt,.i-folder-accent-lt,.i-folder-custom-lt) .nav-files-container .nav-folder .nav-folder-title,
+.theme-dark.i-folder-radius-dk:is(.i-folder-rainbow-dk,.i-folder-accent-dk,.i-folder-custom-dk) .nav-files-container .nav-folder .nav-folder-title {
+	border-radius: 5px;
+}
+.theme-light.i-folder-margin-lt:is(.i-folder-rainbow-lt,.i-folder-accent-lt,.i-folder-custom-lt) .nav-files-container :is(.nav-file-title,.nav-folder-title),
+.theme-dark.i-folder-margin-dk:is(.i-folder-rainbow-dk,.i-folder-accent-dk,.i-folder-custom-dk) .nav-files-container :is(.nav-file-title,.nav-folder-title) {
+	margin-bottom: 3px;
+}
+.theme-light.i-folder-hide-borders-lt:is(.i-folder-rainbow-lt,.i-folder-accent-lt,.i-folder-custom-lt) {
+	--i-folder-border-width-lt: 0;
+}
+.theme-dark.i-folder-hide-borders-dk:is(.i-folder-rainbow-dk,.i-folder-accent-dk,.i-folder-custom-dk) {
+	--i-folder-border-width-dk: 0;
+}
+:is(.i-folder-rainbow-lt,.i-folder-accent-lt,.i-folder-custom-lt,.i-folder-rainbow-dk,.i-folder-accent-dk,.i-folder-custom-dk) .nav-files-container {
+	--nav-collapse-icon-color: var(--text-normal);
+}
+:is(.i-folder-rainbow-lt,.i-folder-accent-lt,.i-folder-custom-lt,.i-folder-rainbow-dk,.i-folder-accent-dk,.i-folder-custom-dk) .nav-files-container .collapse-icon.is-collapsed {
+	--nav-collapse-icon-color: var(--text-muted);
+}
+.theme-light:is(.i-folder-rainbow-lt,.i-folder-accent-lt) {
+	--i-folder-1-lt: hsla(var(--i-folder-1-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-2-lt: hsla(var(--i-folder-2-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-3-lt: hsla(var(--i-folder-3-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-4-lt: hsla(var(--i-folder-4-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-5-lt: hsla(var(--i-folder-5-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-6-lt: hsla(var(--i-folder-6-lt-h), var(--i-folder-lt-s), var(--i-folder-lt-l), var(--i-folder-lt-a));
+	--i-folder-border-1-lt: hsla(var(--i-folder-1-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+	--i-folder-border-2-lt: hsla(var(--i-folder-2-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+	--i-folder-border-3-lt: hsla(var(--i-folder-3-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+	--i-folder-border-4-lt: hsla(var(--i-folder-4-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+	--i-folder-border-5-lt: hsla(var(--i-folder-5-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+	--i-folder-border-6-lt: hsla(var(--i-folder-6-lt-h), var(--i-folder-border-lt-s), var(--i-folder-border-lt-l));
+}
+.theme-dark:is(.i-folder-rainbow-dk,.i-folder-accent-dk) {
+	--i-folder-1-dk: hsla(var(--i-folder-1-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-2-dk: hsla(var(--i-folder-2-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-3-dk: hsla(var(--i-folder-3-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-4-dk: hsla(var(--i-folder-4-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-5-dk: hsla(var(--i-folder-5-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-6-dk: hsla(var(--i-folder-6-dk-h), var(--i-folder-dk-s), var(--i-folder-dk-l), var(--i-folder-dk-a));
+	--i-folder-border-1-dk: hsla(var(--i-folder-1-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+	--i-folder-border-2-dk: hsla(var(--i-folder-2-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+	--i-folder-border-3-dk: hsla(var(--i-folder-3-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+	--i-folder-border-4-dk: hsla(var(--i-folder-4-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+	--i-folder-border-5-dk: hsla(var(--i-folder-5-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+	--i-folder-border-6-dk: hsla(var(--i-folder-6-dk-h), var(--i-folder-border-dk-s), var(--i-folder-border-dk-l));
+}
+.theme-light.i-folder-rainbow-lt {
+	--i-folder-1-lt-h: var(--i-folder-rainbow-1-lt-h);
+	--i-folder-2-lt-h: var(--i-folder-rainbow-2-lt-h);
+	--i-folder-3-lt-h: var(--i-folder-rainbow-3-lt-h);
+	--i-folder-4-lt-h: var(--i-folder-rainbow-4-lt-h);
+	--i-folder-5-lt-h: var(--i-folder-rainbow-5-lt-h);
+	--i-folder-6-lt-h: var(--i-folder-rainbow-6-lt-h);
+}
+.theme-dark.i-folder-rainbow-dk {
+	--i-folder-1-dk-h: var(--i-folder-rainbow-1-dk-h);
+	--i-folder-2-dk-h: var(--i-folder-rainbow-2-dk-h);
+	--i-folder-3-dk-h: var(--i-folder-rainbow-3-dk-h);
+	--i-folder-4-dk-h: var(--i-folder-rainbow-4-dk-h);
+	--i-folder-5-dk-h: var(--i-folder-rainbow-5-dk-h);
+	--i-folder-6-dk-h: var(--i-folder-rainbow-6-dk-h);
+}
+.theme-light.i-folder-accent-lt {
+	--i-folder-1-lt-h: var(--accent-h);
+	--i-folder-2-lt-h: calc(var(--accent-h) + 60);
+	--i-folder-3-lt-h: calc(var(--accent-h) + 120);
+	--i-folder-4-lt-h: calc(var(--accent-h) + 180);
+	--i-folder-5-lt-h: calc(var(--accent-h) + 240);
+	--i-folder-6-lt-h: calc(var(--accent-h) + 300);
+}
+.theme-dark.i-folder-accent-dk {
+	--i-folder-1-dk-h: var(--accent-h);
+	--i-folder-2-dk-h: calc(var(--accent-h) + 60);
+	--i-folder-3-dk-h: calc(var(--accent-h) + 120);
+	--i-folder-4-dk-h: calc(var(--accent-h) + 180);
+	--i-folder-5-dk-h: calc(var(--accent-h) + 240);
+	--i-folder-6-dk-h: calc(var(--accent-h) + 300);
+}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+2) .nav-folder-title:not(:hover) {background-color: var(--i-folder-1-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+3) .nav-folder-title:not(:hover) {background-color: var(--i-folder-2-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+4) .nav-folder-title:not(:hover) {background-color: var(--i-folder-3-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+5) .nav-folder-title:not(:hover) {background-color: var(--i-folder-4-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+6) .nav-folder-title:not(:hover) {background-color: var(--i-folder-5-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+7) .nav-folder-title:not(:hover) {background-color: var(--i-folder-6-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+2) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-1-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+3) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-2-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+4) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-3-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+5) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-4-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+6) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-5-lt);}
+.theme-light .nav-files-container > div > .nav-folder:nth-child(6n+7) .nav-folder-title {border: var(--i-folder-border-width-lt) solid var(--i-folder-border-6-lt);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+2) .nav-folder-title:not(:hover) {background-color: var(--i-folder-1-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+3) .nav-folder-title:not(:hover) {background-color: var(--i-folder-2-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+4) .nav-folder-title:not(:hover) {background-color: var(--i-folder-3-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+5) .nav-folder-title:not(:hover) {background-color: var(--i-folder-4-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+6) .nav-folder-title:not(:hover) {background-color: var(--i-folder-5-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+7) .nav-folder-title:not(:hover) {background-color: var(--i-folder-6-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+2) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-1-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+3) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-2-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+4) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-3-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+5) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-4-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+6) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-5-dk);}
+.theme-dark .nav-files-container > div > .nav-folder:nth-child(6n+7) .nav-folder-title {border: var(--i-folder-border-width-dk) solid var(--i-folder-border-6-dk);}
 
 /* Graphs */
 body {
@@ -283,285 +563,180 @@ body {
 	--graph-node-unresolved: hsl(var(--accent-h), var(--accent-s), 67%);
 }
 .theme-dark {
-	--graph-line: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 13%));
-	--graph-node: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 58%));
-	--graph-node-unresolved: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + 28%));
+	--graph-line: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + 13%));
+	--graph-node: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + 58%));
+	--graph-node-unresolved: hsl(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + 28%));
 }
 
-/* Links */
-.theme-light {
-	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), 30%, 0.3);
-}
-.theme-dark {
-	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), calc(var(--i-dark-bg-l) + (100% - var(--i-dark-bg-l)) * 0.7), 0.3);
-}
-a:hover {
-	background-color: hsla(var(--color-accent-hsl), 0.1);
-	border-radius: var(--radius-s);
-}
-.markdown-source-view.mod-cm6 .is-unresolved:hover .cm-underline {
-	color: var(--link-color-hover);
-	text-decoration-color: var(--link-color-hover);
-}
-
-/* Metadata */
-body {
-	--metadata-gap: 0;
-	--metadata-property-radius: 0;
-	--metadata-property-radius-hover: var(--metadata-property-radius);
-	--metadata-property-radius-focus: var(--metadata-property-radius);
-	--metadata-label-background: hsla(var(--color-accent-hsl), 0.1);
-	--metadata-label-background-hover: var(--metadata-label-background);
-	--metadata-label-background-active: var(--metadata-label-background);
-	--metadata-label-text-color: var(--text-normal);
-	--metadata-input-background-active: var(--metadata-input-background);
-}
-.markdown-source-view .metadata-container,
-.markdown-preview-view .metadata-container {
-	transform: none;
-}
-.metadata-property:hover,
-.metadata-property:focus-within {
-	box-shadow: none;
-}
-.is-phone,
-.workspace-drawer,
-.workspace > .workspace-split:not(.mod-root) .metadata-container {
-	--metadata-divider-width: 0;
-}
-.metadata-container .metadata-show-source-button,
-.metadata-container .metadata-add-button {
-	margin-top: 3px;
-}
-.metadata-properties-heading {
-	padding: var(--size-4-1) 0 var(--size-2-3) 0;
-	margin-bottom: 0;
-}
-.metadata-container.is-collapsed {
-	margin-bottom: calc(1rem + var(--size-2-3));
-}
-.metadata-property {
-	border-left: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	border-right: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	border-bottom: 1px dashed hsla(var(--color-accent-hsl), 0.45);
-}
-.metadata-property:first-child {
-	border-top: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-}
-.metadata-property:last-child {
-	border-bottom: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-}
-.metadata-property-icon {
-	--icon-size: 16px;
-}
-.metadata-property-key {
-	align-items: center;
-	min-height: 2em;
-}
-.metadata-property-value {
-	min-height: 2em;
-}
-.metadata-property-icon:before {
-	width: var(--size-4-2);
-}
-
-/* PDF view */
-.internal-embed.pdf-embed:not(.image-embed) {
-	--background-modifier-border: hsla(var(--color-accent-hsl), 0.45);
-	border-radius: 7px;
-}
-
-/* Tabs */
-body {
-	--tab-text-color: var(--text-normal);
-	--tab-text-color-active: var(--tab-text-color);
-	--tab-text-color-focused: var(--tab-text-color);
-	--tab-text-color-focused-active: var(--tab-text-color);
-	--tab-container-background: var(--titlebar-background);
-}
-.mod-left-split .workspace-tab-header.has-active-menu,
-.mod-right-split .workspace-tab-header.has-active-menu,
-.mod-left-split .workspace-tab-header.is-active,
-.mod-right-split .workspace-tab-header.is-active {
-	--background-modifier-hover: var(--i-5);
-}
-.workspace-tab-header-container {
-	--background-modifier-hover: var(--i-4);
-}
-
-/* Tables */
-body {
-	--table-border-color: hsla(var(--color-accent-hsl), 0.45);
-	--table-header-background: hsla(var(--color-accent-hsl), 0.1);
-	--table-header-background-hover: var(--table-header-background);
-	--table-column-min-width: 4ch;
-	--table-selection-border-radius: 0;
-	--table-drag-handle-color: var(--color-accent);
-	--table-add-button-border-color: var(--table-border-color);
-}
-
-/* Embedded search results */
-.internal-query {
-	border: 1px solid hsla(var(--color-accent-hsl), 0.45);
-	border-radius: 7px;
-	--background-modifier-border: hsla(var(--color-accent-hsl), 0.45);
-}
-.internal-query .internal-query-header {
-	padding: 0.5em 1em;
-	gap: 0.6em;
-	border-radius: 7px 7px 0 0;
-	background-color: hsla(var(--color-accent-hsl), 0.1);
-	line-height: 1.5;
-}
-.internal-query .search-result-container {
-	border: 0;
-	border-radius: 0 0 7px 7px;
-	border-top: 1px dashed hsla(var(--color-accent-hsl), 0.45);
-	background-color: transparent;
-}
-.internal-query .internal-query-header-icon {
-	color: var(--search-icon-color);
-	margin: 0;
-}
-.el-pre .internal-query {
-	margin: var(--p-spacing) 0;
-}
-
-/* Audio */
-audio::-webkit-media-controls-enclosure {
-	border-radius: 7px;
-	border: 0;
-	background-color: hsla(var(--color-accent-hsl), 0.1);
-}
-
-/* Style settings */
+/* Headings */
 /* Colored headings */
-.i-colored-headings,
-.i-colored-accent-headings {
-	--inline-title-color: inherit;
+body {
+	--i-lt-normal-colored-h1-h: 0;
+	--i-lt-normal-colored-h2-h: calc(var(--i-lt-normal-colored-h1-h) + (var(--i-lt-normal-colored-h6-h) - var(--i-lt-normal-colored-h1-h)) * 0.2);
+	--i-lt-normal-colored-h3-h: calc(var(--i-lt-normal-colored-h1-h) + (var(--i-lt-normal-colored-h6-h) - var(--i-lt-normal-colored-h1-h)) * 0.4);
+	--i-lt-normal-colored-h4-h: calc(var(--i-lt-normal-colored-h1-h) + (var(--i-lt-normal-colored-h6-h) - var(--i-lt-normal-colored-h1-h)) * 0.6);
+	--i-lt-normal-colored-h5-h: calc(var(--i-lt-normal-colored-h1-h) + (var(--i-lt-normal-colored-h6-h) - var(--i-lt-normal-colored-h1-h)) * 0.8);
+	--i-lt-normal-colored-h6-h: 300;
+	--i-lt-colored-s: 80%;
+	--i-lt-colored-l: 30%;
+	--i-dk-normal-colored-h1-h: 0;
+	--i-dk-normal-colored-h2-h: calc(var(--i-dk-normal-colored-h1-h) + (var(--i-dk-normal-colored-h6-h) - var(--i-dk-normal-colored-h1-h)) * 0.2);
+	--i-dk-normal-colored-h3-h: calc(var(--i-dk-normal-colored-h1-h) + (var(--i-dk-normal-colored-h6-h) - var(--i-dk-normal-colored-h1-h)) * 0.4);
+	--i-dk-normal-colored-h4-h: calc(var(--i-dk-normal-colored-h1-h) + (var(--i-dk-normal-colored-h6-h) - var(--i-dk-normal-colored-h1-h)) * 0.6);
+	--i-dk-normal-colored-h5-h: calc(var(--i-dk-normal-colored-h1-h) + (var(--i-dk-normal-colored-h6-h) - var(--i-dk-normal-colored-h1-h)) * 0.8);
+	--i-dk-normal-colored-h6-h: 300;
+	--i-dk-colored-s: 80%;
+	--i-dk-colored-l: 80%;
 }
-
-/* Colored */
-.theme-light.i-colored-headings {
-	--h1-color: hsl(0, 100%, 46%);
-	--h2-color: hsl(60, 100%, 24%);
-	--h3-color: hsl(120, 100%, 27%);
-	--h4-color: hsl(180, 100%, 25%);
-	--h5-color: hsl(240, 100%, 69%);
-	--h6-color: hsl(300, 100%, 41%);
+.theme-light:is(.i-lt-normal-colored-headings,.i-lt-accent-colored-headings) {
+	--h1-color: hsl(var(--i-lt-colored-h1-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
+	--h2-color: hsl(var(--i-lt-colored-h2-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
+	--h3-color: hsl(var(--i-lt-colored-h3-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
+	--h4-color: hsl(var(--i-lt-colored-h4-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
+	--h5-color: hsl(var(--i-lt-colored-h5-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
+	--h6-color: hsl(var(--i-lt-colored-h6-h), var(--i-lt-colored-s), var(--i-lt-colored-l));
 }
-.theme-dark.i-colored-headings {
-	--h1-color: hsl(0, 100%, 80%);
-	--h2-color: hsl(60, 100%, 80%);
-	--h3-color: hsl(120, 100%, 80%);
-	--h4-color: hsl(180, 100%, 80%);
-	--h5-color: hsl(240, 100%, 83%);
-	--h6-color: hsl(300, 100%, 80%);
+.theme-dark:is(.i-dk-normal-colored-headings,.i-dk-accent-colored-headings) {
+	--h1-color: hsl(var(--i-dk-colored-h1-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
+	--h2-color: hsl(var(--i-dk-colored-h2-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
+	--h3-color: hsl(var(--i-dk-colored-h3-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
+	--h4-color: hsl(var(--i-dk-colored-h4-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
+	--h5-color: hsl(var(--i-dk-colored-h5-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
+	--h6-color: hsl(var(--i-dk-colored-h6-h), var(--i-dk-colored-s), var(--i-dk-colored-l));
 }
-
-/* Colored: From accent color */
-.theme-light.i-colored-accent-headings {
-	--h1-color: hsl(var(--accent-h), 100%, 33%);
-	--h2-color: hsl(calc(var(--accent-h) + 60), 100%, 33%);
-	--h3-color: hsl(calc(var(--accent-h) + 120), 100%, 33%);
-	--h4-color: hsl(calc(var(--accent-h) + 180), 100%, 33%);
-	--h5-color: hsl(calc(var(--accent-h) + 240), 100%, 33%);
-	--h6-color: hsl(calc(var(--accent-h) + 300), 100%, 33%);
+.theme-light.i-lt-normal-colored-headings {
+	--i-lt-colored-h1-h: var(--i-lt-normal-colored-h1-h);
+	--i-lt-colored-h2-h: var(--i-lt-normal-colored-h2-h);
+	--i-lt-colored-h3-h: var(--i-lt-normal-colored-h3-h);
+	--i-lt-colored-h4-h: var(--i-lt-normal-colored-h4-h);
+	--i-lt-colored-h5-h: var(--i-lt-normal-colored-h5-h);
+	--i-lt-colored-h6-h: var(--i-lt-normal-colored-h6-h);
 }
-.theme-dark.i-colored-accent-headings {
-	--h1-color: hsl(var(--accent-h), 100%, 80%);
-	--h2-color: hsl(calc(var(--accent-h) + 60), 100%, 80%);
-	--h3-color: hsl(calc(var(--accent-h) + 120), 100%, 80%);
-	--h4-color: hsl(calc(var(--accent-h) + 180), 100%, 80%);
-	--h5-color: hsl(calc(var(--accent-h) + 240), 100%, 80%);
-	--h6-color: hsl(calc(var(--accent-h) + 300), 100%, 80%);
+.theme-dark.i-dk-normal-colored-headings {
+	--i-dk-colored-h1-h: var(--i-dk-normal-colored-h1-h);
+	--i-dk-colored-h2-h: var(--i-dk-normal-colored-h2-h);
+	--i-dk-colored-h3-h: var(--i-dk-normal-colored-h3-h);
+	--i-dk-colored-h4-h: var(--i-dk-normal-colored-h4-h);
+	--i-dk-colored-h5-h: var(--i-dk-normal-colored-h5-h);
+	--i-dk-colored-h6-h: var(--i-dk-normal-colored-h6-h);
+}
+.theme-light.i-lt-accent-colored-headings {
+	--i-lt-colored-h1-h: var(--accent-h);
+	--i-lt-colored-h2-h: calc(var(--accent-h) + 60);
+	--i-lt-colored-h3-h: calc(var(--accent-h) + 120);
+	--i-lt-colored-h4-h: calc(var(--accent-h) + 180);
+	--i-lt-colored-h5-h: calc(var(--accent-h) + 240);
+	--i-lt-colored-h6-h: calc(var(--accent-h) + 300);
+}
+.theme-dark.i-dk-accent-colored-headings {
+	--i-dk-colored-h1-h: var(--accent-h);
+	--i-dk-colored-h2-h: calc(var(--accent-h) + 60);
+	--i-dk-colored-h3-h: calc(var(--accent-h) + 120);
+	--i-dk-colored-h4-h: calc(var(--accent-h) + 180);
+	--i-dk-colored-h5-h: calc(var(--accent-h) + 240);
+	--i-dk-colored-h6-h: calc(var(--accent-h) + 300);
 }
 
 /* Highlighted headings */
-.i-highlighted-inline-title .inline-title:not([data-level]),
-:is(.i-highlighted-headings, .i-highlighted-accent-headings) :is(
-	.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
-	.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+body {
+	--i-lt-normal-highlighted-h1-h: 0;
+	--i-lt-normal-highlighted-h2-h: calc(var(--i-lt-normal-highlighted-h1-h) + (var(--i-lt-normal-highlighted-h6-h) - var(--i-lt-normal-highlighted-h1-h)) * 0.2);
+	--i-lt-normal-highlighted-h3-h: calc(var(--i-lt-normal-highlighted-h1-h) + (var(--i-lt-normal-highlighted-h6-h) - var(--i-lt-normal-highlighted-h1-h)) * 0.4);
+	--i-lt-normal-highlighted-h4-h: calc(var(--i-lt-normal-highlighted-h1-h) + (var(--i-lt-normal-highlighted-h6-h) - var(--i-lt-normal-highlighted-h1-h)) * 0.6);
+	--i-lt-normal-highlighted-h5-h: calc(var(--i-lt-normal-highlighted-h1-h) + (var(--i-lt-normal-highlighted-h6-h) - var(--i-lt-normal-highlighted-h1-h)) * 0.8);
+	--i-lt-normal-highlighted-h6-h: 300;
+	--i-lt-highlighted-s: 80%;
+	--i-lt-highlighted-l: 50%;
+	--i-lt-highlighted-a: 22%;
+	--i-dk-normal-highlighted-h1-h: 0;
+	--i-dk-normal-highlighted-h2-h: calc(var(--i-dk-normal-highlighted-h1-h) + (var(--i-dk-normal-highlighted-h6-h) - var(--i-dk-normal-highlighted-h1-h)) * 0.2);
+	--i-dk-normal-highlighted-h3-h: calc(var(--i-dk-normal-highlighted-h1-h) + (var(--i-dk-normal-highlighted-h6-h) - var(--i-dk-normal-highlighted-h1-h)) * 0.4);
+	--i-dk-normal-highlighted-h4-h: calc(var(--i-dk-normal-highlighted-h1-h) + (var(--i-dk-normal-highlighted-h6-h) - var(--i-dk-normal-highlighted-h1-h)) * 0.6);
+	--i-dk-normal-highlighted-h5-h: calc(var(--i-dk-normal-highlighted-h1-h) + (var(--i-dk-normal-highlighted-h6-h) - var(--i-dk-normal-highlighted-h1-h)) * 0.8);
+	--i-dk-normal-highlighted-h6-h: 300;
+	--i-dk-highlighted-s: 80%;
+	--i-dk-highlighted-l: 70%;
+	--i-dk-highlighted-a: 25%;
+}
+:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings,.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(
+.markdown-rendered h1,.markdown-rendered h2,.markdown-rendered h3,.markdown-rendered h4,.markdown-rendered h5,.markdown-rendered h6,
+.cm-header-1,.cm-header-2,.cm-header-3,.cm-header-4,.cm-header-5,.cm-header-6) {
 	border-radius: var(--radius-s);
 	padding-left: 0.3em;
 	padding-right: 0.3em;
 	width: fit-content;
 }
-
-/* Highlighted */
-.theme-light.i-highlighted-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(0, 100%, 72%, 0.3);}
-.theme-light.i-highlighted-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(60, 100%, 50%, 0.3);}
-.theme-light.i-highlighted-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(120, 100%, 67%, 0.3);}
-.theme-light.i-highlighted-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(180, 100%, 62%, 0.3);}
-.theme-light.i-highlighted-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(240, 100%, 77%, 0.3);}
-.theme-light.i-highlighted-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(300, 100%, 70%, 0.3);}
-
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(0, 100%, 72%, 0.25);}
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(60, 100%, 50%, 0.25);}
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(120, 100%, 67%, 0.25);}
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(180, 100%, 62%, 0.25);}
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(240, 100%, 77%, 0.25);}
-.theme-dark.i-highlighted-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(300, 100%, 70%, 0.25);}
-
-/* Highlighted: From accent color */
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(var(--accent-h), 100%, 65%, 0.28);}
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(calc(var(--accent-h) + 60), 100%, 65%, 0.28);}
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(calc(var(--accent-h) + 120), 100%, 65%, 0.28);}
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(calc(var(--accent-h) + 180), 100%, 65%, 0.28);}
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(calc(var(--accent-h) + 240), 100%, 65%, 0.28);}
-.theme-light.i-highlighted-accent-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(calc(var(--accent-h) + 300), 100%, 65%, 0.28);}
-
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h1, .cm-header-1) {background-color: hsla(var(--accent-h), 100%, 65%, 0.25);}
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h2, .cm-header-2) {background-color: hsla(calc(var(--accent-h) + 60), 100%, 65%, 0.25);}
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h3, .cm-header-3) {background-color: hsla(calc(var(--accent-h) + 120), 100%, 65%, 0.25);}
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h4, .cm-header-4) {background-color: hsla(calc(var(--accent-h) + 180), 100%, 65%, 0.25);}
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h5, .cm-header-5) {background-color: hsla(calc(var(--accent-h) + 240), 100%, 65%, 0.25);}
-.theme-dark.i-highlighted-accent-headings :is(.markdown-rendered h6, .cm-header-6) {background-color: hsla(calc(var(--accent-h) + 300), 100%, 65%, 0.25);}
-
-/* Colored inline title */
-.theme-light.i-colored-inline-title .inline-title:not([data-level]) {
-	color: hsl(var(--accent-h), var(--accent-s), 33%);
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h1,.cm-header-1) {background-color: hsla(var(--i-lt-highlighted-h1-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h2,.cm-header-2) {background-color: hsla(var(--i-lt-highlighted-h2-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h3,.cm-header-3) {background-color: hsla(var(--i-lt-highlighted-h3-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h4,.cm-header-4) {background-color: hsla(var(--i-lt-highlighted-h4-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h5,.cm-header-5) {background-color: hsla(var(--i-lt-highlighted-h5-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-light:is(.i-lt-normal-highlighted-headings,.i-lt-accent-highlighted-headings) :is(.markdown-rendered h6,.cm-header-6) {background-color: hsla(var(--i-lt-highlighted-h6-h), var(--i-lt-highlighted-s), var(--i-lt-highlighted-l), var(--i-lt-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h1,.cm-header-1) {background-color: hsla(var(--i-dk-highlighted-h1-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h2,.cm-header-2) {background-color: hsla(var(--i-dk-highlighted-h2-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h3,.cm-header-3) {background-color: hsla(var(--i-dk-highlighted-h3-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h4,.cm-header-4) {background-color: hsla(var(--i-dk-highlighted-h4-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h5,.cm-header-5) {background-color: hsla(var(--i-dk-highlighted-h5-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-dark:is(.i-dk-normal-highlighted-headings,.i-dk-accent-highlighted-headings) :is(.markdown-rendered h6,.cm-header-6) {background-color: hsla(var(--i-dk-highlighted-h6-h), var(--i-dk-highlighted-s), var(--i-dk-highlighted-l), var(--i-dk-highlighted-a));}
+.theme-light.i-lt-normal-highlighted-headings {
+	--i-lt-highlighted-h1-h: var(--i-lt-normal-highlighted-h1-h);
+	--i-lt-highlighted-h2-h: var(--i-lt-normal-highlighted-h2-h);
+	--i-lt-highlighted-h3-h: var(--i-lt-normal-highlighted-h3-h);
+	--i-lt-highlighted-h4-h: var(--i-lt-normal-highlighted-h4-h);
+	--i-lt-highlighted-h5-h: var(--i-lt-normal-highlighted-h5-h);
+	--i-lt-highlighted-h6-h: var(--i-lt-normal-highlighted-h6-h);
 }
-.theme-dark.i-colored-inline-title .inline-title:not([data-level]) {
-	color: hsl(var(--accent-h), var(--accent-s), 80%);
+.theme-dark.i-dk-normal-highlighted-headings {
+	--i-dk-highlighted-h1-h: var(--i-dk-normal-highlighted-h1-h);
+	--i-dk-highlighted-h2-h: var(--i-dk-normal-highlighted-h2-h);
+	--i-dk-highlighted-h3-h: var(--i-dk-normal-highlighted-h3-h);
+	--i-dk-highlighted-h4-h: var(--i-dk-normal-highlighted-h4-h);
+	--i-dk-highlighted-h5-h: var(--i-dk-normal-highlighted-h5-h);
+	--i-dk-highlighted-h6-h: var(--i-dk-normal-highlighted-h6-h);
 }
-
-/* Highlighted inline title */
-.theme-light.i-highlighted-inline-title .inline-title:not([data-level]) {
-	background-color: hsla(var(--color-accent-hsl), 0.28);
+.theme-light.i-lt-accent-highlighted-headings {
+	--i-lt-highlighted-h1-h: var(--accent-h);
+	--i-lt-highlighted-h2-h: calc(var(--accent-h) + 60);
+	--i-lt-highlighted-h3-h: calc(var(--accent-h) + 120);
+	--i-lt-highlighted-h4-h: calc(var(--accent-h) + 180);
+	--i-lt-highlighted-h5-h: calc(var(--accent-h) + 240);
+	--i-lt-highlighted-h6-h: calc(var(--accent-h) + 300);
 }
-.theme-dark.i-highlighted-inline-title .inline-title:not([data-level]) {
-	background-color: hsla(var(--color-accent-hsl), 0.25);
+.theme-dark.i-dk-accent-highlighted-headings {
+	--i-dk-highlighted-h1-h: var(--accent-h);
+	--i-dk-highlighted-h2-h: calc(var(--accent-h) + 60);
+	--i-dk-highlighted-h3-h: calc(var(--accent-h) + 120);
+	--i-dk-highlighted-h4-h: calc(var(--accent-h) + 180);
+	--i-dk-highlighted-h5-h: calc(var(--accent-h) + 240);
+	--i-dk-highlighted-h6-h: calc(var(--accent-h) + 300);
 }
 
-/* Improved headings and spacing */
-.i-headings-and-spacing {
-	--i-heading-sizes: 0.5em;
-	--i-spacing-below-headings: 0.3rem;
+/* Iridium headings */
+.i-headings {
+	--h1-size: var(--i-h1-size);
+	--h2-size: var(--i-h2-size);
+	--h3-size: var(--i-h3-size);
+	--h4-size: var(--i-h4-size);
+	--h5-size: var(--i-h5-size);
+	--h6-size: var(--i-h6-size);
+	--h1-line-height: var(--i-h1-line-height);
+	--h2-line-height: var(--i-h2-line-height);
+	--h3-line-height: var(--i-h3-line-height);
+	--h4-line-height: var(--i-h4-line-height);
+	--h1-weight: var(--i-h1-weight);
+	--i-h1-size: 1.5em;
+	--i-h2-size: calc(var(--i-h6-size) + (var(--i-h1-size) - var(--i-h6-size)) * 0.8);
+	--i-h3-size: calc(var(--i-h6-size) + (var(--i-h1-size) - var(--i-h6-size)) * 0.6);
+	--i-h4-size: calc(var(--i-h6-size) + (var(--i-h1-size) - var(--i-h6-size)) * 0.4);
+	--i-h5-size: calc(var(--i-h6-size) + (var(--i-h1-size) - var(--i-h6-size)) * 0.2);
+	--i-h6-size: 1em;
+	--i-h1-line-height: var(--line-height-normal);
+	--i-h2-line-height: var(--line-height-normal);
+	--i-h3-line-height: var(--line-height-normal);
+	--i-h4-line-height: var(--line-height-normal);
+	--i-h1-weight: 600;
 }
-.i-headings-and-spacing .app-container {
-	--heading-spacing: var(--p-spacing);
-	--h1-line-height: var(--line-height-normal);
-	--h2-line-height: var(--line-height-normal);
-	--h3-line-height: var(--line-height-normal);
-	--h4-line-height: var(--line-height-normal);
-	--h1-size: calc(1em + var(--i-heading-sizes));
-	--h2-size: calc(1em + var(--i-heading-sizes) * 0.8);
-	--h3-size: calc(1em + var(--i-heading-sizes) * 0.6);
-	--h4-size: calc(1em + var(--i-heading-sizes) * 0.4);
-	--h5-size: calc(1em + var(--i-heading-sizes) * 0.2);
-	--h1-weight: 600;
-	--inline-title-line-height: var(--h1-line-height);
-	--inline-title-size: var(--h1-size);
-	--inline-title-weight: var(--h1-weight);
-	--metadata-padding: 0;
-	--p-spacing: 1.5rem;
-}
-.i-headings-and-spacing .app-container :is(
+.i-headings:not(.modal-container) :is(
 .HyperMD-header-1, .inline-title h1, .HyperMD-list-line .cm-header-1, h1, .markdown-rendered h1,
 .HyperMD-header-2, .inline-title h2, .HyperMD-list-line .cm-header-2, h2, .markdown-rendered h2,
 .HyperMD-header-3, .inline-title h3, .HyperMD-list-line .cm-header-3, h3, .markdown-rendered h3,
@@ -570,52 +745,49 @@ audio::-webkit-media-controls-enclosure {
 .HyperMD-header-6, .inline-title h6, .HyperMD-list-line .cm-header-6, h6, .markdown-rendered h6) {
 	letter-spacing: 0;
 }
-.i-headings-and-spacing .app-container .cm-content .cm-line:first-of-type,
-.i-headings-and-spacing .app-container .cm-content > div[contenteditable=false] + .cm-line {
-	padding-top: 0;
+
+/* Horizontal rules */
+body {
+	--hr-color: var(--i-6);
+	--i-hr-style: solid;
 }
-.i-headings-and-spacing .app-container .cm-s-obsidian .cm-line.HyperMD-header {
-	padding-top: 0;
-	padding-bottom: var(--i-spacing-below-headings);
-}
-.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > :not(h1,h2,h3,h4,h5,h6) {
-	margin-top: var(--i-spacing-below-headings);
-}
-.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > table {
-	margin-top: calc(var(--size-4-4) + var(--i-spacing-below-headings));
-}
-.i-headings-and-spacing .app-container .markdown-rendered :is(h1,h2,h3,h4,h5,h6) {
-	margin-top: 0;
-	margin-bottom: var(--i-spacing-below-headings);
-}
-.i-headings-and-spacing .app-container .markdown-rendered hr {
-	margin: calc(var(--p-spacing) * 1.5 - 1px) 0;
-}
-.i-headings-and-spacing .app-container .markdown-rendered div:is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + div > hr {
-	margin-top: calc((var(--p-spacing) / 2 - 1px) + var(--i-spacing-below-headings));
-}
-.i-headings-and-spacing .app-container .inline-title:not([data-level]) {
-	margin-bottom: var(--i-spacing-below-headings);
-}
-.i-headings-and-spacing .app-container .inline-title:not([data-level]) + .metadata-container,
-.i-headings-and-spacing .app-container .callout-content .callout {
-	margin-top: var(--p-spacing);
-}
-.i-headings-and-spacing .app-container .markdown-source-view.mod-cm6 .inline-title:not([data-level]) + .metadata-container {
-	margin-top: calc(var(--p-spacing) - var(--i-spacing-below-headings));
-}
-.i-headings-and-spacing .app-container .el-table {
-	margin: var(--p-spacing) 0;
-}
-.i-headings-and-spacing .app-container .el-table table {
-	margin: var(--size-4-4) 0;
-}
-.i-headings-and-spacing .app-container .markdown-rendered pre {
-	padding: calc(var(--code-size) * var(--line-height-normal)) var(--size-4-4);
-	line-height: calc(var(--code-size) * var(--line-height-normal));
+.markdown-source-view.mod-cm6 hr,
+.markdown-rendered hr {
+	border-width: var(--hr-thickness) 0 0;
+	border-style: var(--i-hr-style);
 }
 
+/* Inline title */
+body {
+	--inline-title-color: inherit;
+	--inline-title-font: inherit;
+	--inline-title-style: normal;
+	--inline-title-variant: normal;
+}
+.i-highlighted-inline-title .inline-title:not([data-level]) {
+	border-radius: var(--radius-s);
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	width: fit-content;
+}
+.theme-light.i-highlighted-inline-title .inline-title:not([data-level]) {
+	background-color: hsla(var(--color-accent-hsl), 22%);
+}
+.theme-dark.i-highlighted-inline-title .inline-title:not([data-level]) {
+	background-color: hsla(var(--color-accent-hsl), 25%);
+}
+.theme-light.i-colored-inline-title {
+	--inline-title-color: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+.theme-dark.i-colored-inline-title {
+	--inline-title-color: hsl(var(--accent-h), var(--accent-s), 80%);
+}
+
+/* Layouts */
 /* Card layout */
+body {
+	--i-card-radius: 8px;
+}
 .i-card-layout:not(.is-mobile) {
 	--ribbon-background: var(--i-4);
 	--ribbon-background-collapsed: var(--ribbon-background);
@@ -628,6 +800,7 @@ audio::-webkit-media-controls-enclosure {
 }
 .i-card-layout:not(.is-mobile).theme-light {
 	--background-modifier-hover: var(--i-2);
+	--background-modifier-active-hover: var(--i-3);
 	--background-modifier-border: var(--i-8);
 }
 .i-card-layout:not(.is-mobile).theme-dark {
@@ -649,7 +822,7 @@ audio::-webkit-media-controls-enclosure {
 }
 .i-card-layout:not(.is-mobile) .workspace-tab-header-container {
 	border: 1px solid var(--background-modifier-border);
-	border-radius: 8px 8px 0 0;
+	border-radius: var(--i-card-radius) var(--i-card-radius) 0 0;
 	margin: 3px 3px 0;
 	--background-modifier-hover: var(--i-3);
 }
@@ -662,7 +835,7 @@ audio::-webkit-media-controls-enclosure {
 .i-card-layout:not(.is-mobile) .workspace-tab-container {
 	border: 1px solid var(--background-modifier-border);
 	border-top: 0;
-	border-radius: 0 0 8px 8px;
+	border-radius: 0 0 var(--i-card-radius) var(--i-card-radius);
 	margin: 0 3px 3px;
 }
 .i-card-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-tab-header-container,
@@ -674,7 +847,7 @@ audio::-webkit-media-controls-enclosure {
 }
 .i-card-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
 	border: 1px solid var(--background-modifier-border);
-	border-radius: 0 0 8px 8px;
+	border-radius: 0 0 var(--i-card-radius) var(--i-card-radius);
 	border-top-style: dashed;
 	margin: 0 3px 3px;
 	width: auto;
@@ -707,8 +880,6 @@ audio::-webkit-media-controls-enclosure {
 	padding: 0 0 2px 0;
 	width: auto;
 }
-
-/* MacOS */
 .i-card-layout.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
 	padding-left: calc(var(--frame-left-space) - 1px);
 }
@@ -722,8 +893,6 @@ audio::-webkit-media-controls-enclosure {
 .i-card-layout.mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
 	padding-right: 8px;
 }
-
-/* Windows and Linux */
 .i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless {
 	--frame-right-space: 120px;
 }
@@ -731,10 +900,10 @@ audio::-webkit-media-controls-enclosure {
 	right: 9px;
 	top: 9px;
 	height: 38px;
-	border-top-right-radius: 8px;
+	border-top-right-radius: var(--i-card-radius);
 }
 .i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button:last-child {
-	border-top-right-radius: 7px;
+	border-top-right-radius: calc(var(--i-card-radius) - 1px);
 }
 .i-card-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button {
 	padding: 0 14px;
@@ -745,8 +914,600 @@ audio::-webkit-media-controls-enclosure {
 .i-card-layout:is(.mod-windows,.mod-linux):not(.is-hidden-frameless,.show-ribbon) .titlebar-button.mod-logo {
 	--ribbon-width: 0;
 }
+.i-full-width-status-bar.i-card-layout:not(.is-mobile) .workspace {
+	padding-bottom: 3px;
+}
 
-/* Iridium window control buttons */
+/* Border layout */
+.i-border-layout:not(.is-mobile) {
+	--ribbon-background: var(--background-primary);
+	--ribbon-background-collapsed: var(--ribbon-background);
+	--titlebar-background: var(--background-primary);
+	--background-modifier-border: var(--i-4);
+}
+.theme-light.i-border-layout:not(.is-mobile) {
+	--background-modifier-hover: var(--i-2);
+	--background-modifier-active-hover: var(--i-3);
+}
+.i-border-layout:not(.is-mobile) .app-container {
+	padding: 8px;
+	background-color: var(--i-4);
+}
+.i-border-layout:not(.is-mobile) .workspace {
+	border-radius: 8px;
+}
+.theme-light.i-border-layout:not(.is-mobile) .workspace {
+	border: 1px solid var(--i-9);
+}
+.theme-dark.i-border-layout:not(.is-mobile) .workspace {
+	border: 1px solid var(--i-8);
+}
+.i-border-layout:not(.is-mobile):not(.is-hidden-frameless) .titlebar {
+	background-color: var(--i-4);
+}
+.i-border-layout:not(.is-mobile) .workspace-tabs .workspace-leaf {
+	background-color: var(--background-primary);
+}
+.theme-light.i-border-layout:not(.is-mobile) .workspace-tab-header-container {
+	--background-modifier-hover: var(--i-2);
+}
+.theme-dark.i-border-layout:not(.is-mobile) .workspace-tab-header-container {
+	--background-modifier-hover: var(--i-3);
+}
+.theme-light.i-border-layout:not(.is-mobile) :is(.mod-left-split,.mod-right-split) :is(.workspace-tab-header.has-active-menu,.workspace-tab-header.is-active) {
+	--background-modifier-hover: var(--i-3);
+}
+.theme-dark.i-border-layout:not(.is-mobile) :is(.mod-left-split,.mod-right-split) :is(.workspace-tab-header.has-active-menu,.workspace-tab-header.is-active) {
+	--background-modifier-hover: var(--i-4);
+}
+.i-border-layout:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	width: auto;
+	background-color: var(--background-primary);
+}
+.i-border-layout:not(.is-mobile) .sidebar-toggle-button {
+	height: auto;
+	padding: 7px 0;
+}
+.i-border-layout:is(.mod-macos:is(.is-hidden-frameless.is-fullscreen,:not(.is-hidden-frameless)),.mod-windows,.mod-linux) .workspace-ribbon.mod-left:before {
+	display: none;
+}
+.i-border-layout:is(.mod-macos:not(.is-hidden-frameless),.mod-windows,.mod-linux) .workspace-ribbon.mod-left {
+	margin-top: 0;
+	padding-top: 0;
+	gap: 0;
+}
+.i-border-layout:is(.mod-macos:not(.is-hidden-frameless),.mod-windows,.mod-linux) .workspace-ribbon .sidebar-toggle-button {
+	position: relative;
+	width: auto;
+	padding-bottom: 6px;
+}
+.i-border-layout.mod-macos.is-hidden-frameless .workspace-ribbon.mod-left:before {
+	left: 9px;
+	top: 9px;
+	border-top-left-radius: 8px;
+}
+.i-border-layout.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+	padding-left: calc(var(--frame-left-space) - 1px);
+}
+.i-border-layout.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+	position: relative;
+	padding-right: 0;
+}
+.i-border-layout.mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+	padding-right: 8px;
+}
+.i-border-layout.mod-macos.is-hidden-frameless.is-fullscreen .workspace-ribbon.mod-left {
+	margin-top: 0;
+	padding-top: 7px;
+}
+.i-border-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right {
+	right: 9px;
+	top: 9px;
+	height: 39px;
+	border-top-right-radius: 8px;
+}
+.i-border-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button-container.mod-right .titlebar-button:last-child {
+	border-top-right-radius: 7px;
+}
+.i-border-layout:is(.mod-windows,.mod-linux).is-hidden-frameless {
+	--frame-right-space: 120px;
+}
+.i-border-layout:is(.mod-windows,.mod-linux).is-hidden-frameless .titlebar-button {
+	padding: 0 14px;
+}
+.i-border-layout:is(.mod-windows,.mod-linux):not(.is-hidden-frameless) .titlebar-button.mod-logo {
+	position: absolute;
+	left: 8px;
+}
+
+/* Links */
+.theme-light {
+	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), 30%, 0.3);
+}
+.theme-dark {
+	--link-unresolved-decoration-color: hsla(var(--accent-h), var(--accent-s), calc(var(--i-dk-l) + (100% - var(--i-dk-l)) * 0.75), 0.3);
+}
+.metadata-link-inner:hover,
+a:hover,
+.metadata-property-value .internal-link:hover,
+.markdown-rendered .internal-link:hover,
+.metadata-property-value .internal-link.is-unresolved:hover,
+.markdown-rendered .internal-link.is-unresolved:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.markdown-source-view.mod-cm6 .is-unresolved:hover,
+.external-link:hover,
+.cm-s-obsidian span.cm-link:hover,
+.cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+.cm-s-obsidian span.cm-url:hover,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+	background-color: var(--i-2);
+	border-radius: var(--radius-s);
+}
+.markdown-source-view.mod-cm6 .is-unresolved:hover .cm-underline {
+	color: var(--link-color-hover);
+	text-decoration-color: var(--link-color-hover);
+}
+body {
+	--i-link-decoration-style: solid;
+	--i-link-decoration-offset: unset;
+}
+.metadata-property-value.mod-external-link:not(:placeholder-shown),
+.metadata-property-value.mod-external-link:not(:placeholder-shown) .metadata-link-inner:hover,
+.metadata-link-inner,
+.metadata-link-inner:hover,
+a,
+a:hover,
+.metadata-container .internal-link,
+.markdown-rendered .internal-link,
+.metadata-container .internal-link:hover,
+.markdown-rendered .internal-link:hover,
+.metadata-container .internal-link.is-unresolved:hover,
+.markdown-rendered .internal-link.is-unresolved:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline,
+.markdown-source-view.mod-cm6 .cm-underline,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover,
+.external-link,
+.external-link:hover,
+.cm-s-obsidian span.cm-link:hover,
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+.cm-s-obsidian span.cm-url:hover,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover,
+.metadata-container .internal-link.is-unresolved,
+.markdown-rendered .internal-link.is-unresolved {
+	text-decoration-style: var(--i-link-decoration-style);
+	text-underline-offset: var(--i-link-decoration-offset);
+}
+
+/* Metadata */
+.metadata-container {
+	--metadata-gap: 0;
+	--metadata-property-radius: 0;
+	--metadata-property-radius-hover: var(--metadata-property-radius);
+	--metadata-property-radius-focus: var(--metadata-property-radius);
+	--metadata-label-background-hover: var(--metadata-label-background);
+	--metadata-label-background-active: var(--metadata-label-background);
+	--metadata-label-text-color: var(--text-normal);
+	--metadata-input-height: 2em;
+	--metadata-input-background-active: var(--metadata-input-background);
+	--metadata-divider-width: 0;
+	--metadata-property-box-shadow-hover: none;
+	--metadata-property-box-shadow-focus: none;
+}
+.theme-light .metadata-container {
+	--metadata-label-background: hsl(var(--accent-h), var(--accent-s), calc(100% - var(--i-lt-l-multiplier) * 6%));
+}
+.theme-dark .metadata-container {
+	--metadata-label-background: var(--i-2);
+}
+.theme-light .metadata-container .metadata-properties {
+	border: 1px solid hsl(var(--accent-h), var(--accent-s), calc(100% - var(--i-lt-l-multiplier) * 20%));
+}
+.theme-dark .metadata-container .metadata-properties {
+	border: 1px solid var(--i-8);
+}
+.theme-light .metadata-container .metadata-property:not(:last-child) {
+	border-bottom: 1px dashed hsl(var(--accent-h), var(--accent-s), calc(100% - var(--i-lt-l-multiplier) * 20%));
+}
+.theme-dark .metadata-container .metadata-property:not(:last-child) {
+	border-bottom: 1px dashed var(--i-8);
+}
+.theme-light .metadata-container .metadata-property:not([data-property-key="tags"]) .metadata-property-value .multi-select-pill {
+	--pill-background: hsl(var(--accent-h), var(--accent-s), calc(100% - var(--i-lt-l-multiplier) * 6%));
+}
+.theme-dark .metadata-container .metadata-property:not([data-property-key="tags"]) .metadata-property-value .multi-select-pill {
+	--pill-background: var(--i-3);
+}
+.markdown-source-view .metadata-container,
+.markdown-preview-view .metadata-container {
+	transform: none;
+}
+.is-phone .metadata-container,
+.workspace-drawer .metadata-container,
+.workspace > .workspace-split:not(.mod-root) .metadata-container {
+	--metadata-divider-width: 0;
+}
+.metadata-container .metadata-show-source-button,
+.metadata-container .metadata-add-button {
+	margin-top: 0.25em;
+}
+.metadata-container:not(.is-collapsed) .metadata-properties-heading {
+	padding: var(--size-4-1) 0 0.5em;
+	margin-bottom: 0;
+}
+.metadata-container.is-collapsed .metadata-properties-heading {
+	padding: var(--size-4-1) 0;
+}
+.metadata-container .metadata-properties {
+	border-radius: 7px;
+	overflow: hidden;
+}
+.metadata-container .metadata-property-icon {
+	--icon-size: 16px;
+	width: 2.25em;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.metadata-container .metadata-property-key {
+	align-items: center;
+}
+.metadata-container .metadata-property-icon:before {
+	display: none;
+}
+.metadata-container input.metadata-property-key-input {
+	padding-left: 0;
+}
+@container (width < 250px) {
+	.metadata-container .metadata-property .metadata-property-value {
+		margin-top: 0;
+		padding-inline-start: 0;
+	}
+}
+.metadata-container .metadata-property .multi-select-pill-content {
+	line-height: var(--line-height-tight);
+}
+.metadata-container .metadata-property .multi-select-pill-remove-button {
+	margin-inline-end: 0.25em;
+}
+.metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill,
+.metadata-container .metadata-property-value .multi-select-pill {
+	--pill-color-remove: var(--text-faint);
+	--pill-color-remove-hover: var(--text-muted);
+	--pill-padding-x: 0.5em;
+	--pill-padding-y: 0.15em;
+	--pill-radius: var(--radius-s);
+	line-height: var(--line-height-tight);
+}
+.metadata-container .metadata-property:not([data-property-key="tags"]) .metadata-property-value .multi-select-pill {
+	--pill-background-hover: var(--pill-background);
+}
+.metadata-container .metadata-property .multi-select-container {
+	padding: 0.34em var(--size-4-2);
+	gap: 0.34em;
+}
+.i-hide-add-property-button .metadata-container .metadata-add-button,
+.i-hide-property-icons .metadata-container .metadata-property-icon {
+	display: none;
+}
+.i-hide-property-icons .metadata-container input.metadata-property-key-input {
+	padding-left: var(--size-4-2);
+}
+
+/* PDFs */
+.internal-embed.pdf-embed:not(.image-embed) {
+	--background-modifier-border: var(--i-6);
+	border-radius: 7px;
+}
+
+/* Queries */
+.internal-query {
+	border: 1px solid var(--i-6);
+	border-radius: 7px;
+	--background-modifier-border: var(--i-6);
+}
+.internal-query .internal-query-header {
+	padding: 0.5em 1em;
+	gap: 0.6em;
+	border-radius: 7px 7px 0 0;
+	background-color: var(--i-2);
+	line-height: 1.5;
+}
+.internal-query .search-result-container {
+	border: 0;
+	border-radius: 0 0 7px 7px;
+	border-top: 1px dashed var(--i-6);
+	background-color: transparent;
+}
+.internal-query .internal-query-header-icon {
+	color: var(--search-icon-color);
+	margin: 0;
+}
+
+/* Spacing */
+.markdown-rendered :is(blockquote,hr,.callout,.internal-query) + :is(h1,h2,h3,h4,h5,h6),
+.markdown-rendered div:is(.el-blockquote,.el-hr,.el-div) + div > :is(h1,h2,h3,h4,h5,h6) {
+	margin-top: var(--heading-spacing);
+}
+.markdown-rendered .callout table {
+	margin: calc(var(--p-spacing) * 2) 0;
+}
+.markdown-rendered table + :is(h1,h2,h3,h4,h5,h6) {
+	margin-top: calc(var(--heading-spacing) + var(--p-spacing));
+}
+.markdown-rendered .el-pre .internal-query,
+.markdown-rendered .callout .internal-query,
+.markdown-rendered .el-div .callout {
+	margin: var(--p-spacing) 0;
+}
+.markdown-rendered .el-hr hr,
+.markdown-source-view.mod-cm6 .callout hr {
+	margin: 2rem 0;
+}
+
+/* Improved spacing */
+.i-spacing {
+	--i-spacing-below-headings: 0.3rem;
+}
+.i-spacing:not(.modal-container) {
+	--heading-spacing: var(--p-spacing);
+	--metadata-padding: 0;
+	--p-spacing: 1.5rem;
+}
+.i-spacing:not(.modal-container) .cm-s-obsidian .cm-line.HyperMD-header {
+	padding: 0 0 var(--i-spacing-below-headings);
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(h1,h2,h3,h4,h5,h6) {
+	margin-bottom: var(--i-spacing-below-headings);
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6,.el-p,.el-blockquote,.el-ul,.el-ol) > *,
+.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + .el-pre :is(pre,.internal-query),
+.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + .el-div .callout,
+.i-spacing:not(.modal-container) .markdown-rendered :is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,pre,.callout,.internal-query) {
+	margin-top: 0;
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(blockquote,pre,.el-table),
+.markdown-source-view.mod-cm6 .callout-content .callout {
+	margin: var(--p-spacing) 0;
+}
+.i-spacing:not(.modal-container) .markdown-rendered hr {
+	margin: calc(var(--p-spacing) * 1.5 - var(--hr-thickness) / 2) 0;
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + .el-hr hr,
+.i-spacing:not(.modal-container) .markdown-rendered :is(h1,h2,h3,h4,h5,h6) + hr {
+	margin-top: calc(var(--p-spacing) * 1.5 - var(--hr-thickness) / 2 + var(--i-spacing-below-headings));
+}
+.i-spacing:not(.modal-container) .markdown-rendered .el-hr + .el-hr hr,
+.i-spacing:not(.modal-container) .markdown-rendered hr + hr {
+	margin-top: calc(var(--p-spacing) * 2 - var(--hr-thickness));
+}
+.i-spacing:not(.modal-container) .markdown-rendered pre {
+	padding: calc(var(--code-size) * var(--line-height-normal)) var(--size-4-4);
+	line-height: calc(var(--code-size) * var(--line-height-normal));
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + .el-table table {
+	margin-top: calc(var(--size-4-4) + var(--i-spacing-below-headings));
+}
+.i-spacing:not(.modal-container) .markdown-rendered .el-table table {
+	margin: var(--size-4-4) 0;
+}
+.i-spacing:not(.modal-container) .markdown-rendered :is(h1,h2,h3,h4,h5,h6) + table {
+	margin-top: calc(var(--size-4-4) + var(--p-spacing) + var(--i-spacing-below-headings));
+}
+.i-spacing:not(.modal-container) .markdown-rendered table + table {
+	margin-top: calc(var(--p-spacing) + var(--size-4-8));
+}
+.i-spacing.show-inline-title:not(.modal-container) .metadata-container {
+	padding-top: calc(var(--p-spacing) - var(--inline-title-margin-bottom) - var(--size-4-1));
+}
+.i-spacing:not(.modal-container) .metadata-container.is-collapsed .metadata-properties-heading {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* Status bar */
+body {
+	--status-bar-background: var(--titlebar-background);
+	--status-bar-text-color: var(--text-normal);
+}
+.i-hide-status-bar:not(.is-mobile) .status-bar {
+	display: none;
+}
+.i-autohide-status-bar:not(.is-mobile) .status-bar {
+	opacity: 0;
+	transition: 100ms ease-in-out;
+}
+.i-autohide-status-bar:not(.is-mobile) .status-bar:hover {
+	opacity: 1;
+}
+.i-full-width-status-bar:not(.is-mobile) {
+	--status-bar-border-width: 1px 0 0;
+	--status-bar-position: static;
+	--status-bar-radius: 0;
+}
+.i-full-width-status-bar.i-border-layout:not(.is-mobile) .status-bar {
+	border-radius: 0 0 8px 8px;
+	border-width: 0 1px 1px;
+	border-style: solid;
+}
+.theme-light.i-full-width-status-bar.i-border-layout:not(.is-mobile) .status-bar {
+	border-color: var(--i-9);
+}
+.theme-dark.i-full-width-status-bar.i-border-layout:not(.is-mobile) .status-bar {
+	border-color: var(--i-8);
+}
+.i-full-width-status-bar.i-border-layout:not(.is-mobile) .workspace {
+	border-radius: 8px 8px 0 0;
+	border-bottom-color: var(--background-modifier-border) !important;
+}
+
+/* Tables */
+body {
+	--table-border-color: var(--i-6);
+	--table-header-background: var(--i-2);
+	--table-header-background-hover: var(--table-header-background);
+	--table-column-min-width: 4ch;
+	--table-selection-border-radius: 0;
+	--table-drag-handle-color: var(--color-accent);
+	--table-add-button-border-color: var(--table-border-color);
+	--table-header-weight: 600;
+}
+.i-highlight-active-row {
+	--table-row-background-hover: hsla(var(--accent-h), var(--i-s), 50%, 0.05);
+	--table-row-alt-background-hover: var(--table-row-background-hover);
+}
+.i-highlight-active-row.i-striped-rows {
+	--table-row-background-hover: hsla(var(--accent-h), var(--i-s), 50%, 0.1);
+	--table-row-alt-background-hover: var(--table-row-background-hover);
+}
+.i-striped-columns {
+	--table-column-alt-background: hsla(var(--accent-h), var(--i-s), 50%, 0.05);
+}
+.i-striped-rows {
+	--table-row-alt-background: hsla(var(--accent-h), var(--i-s), 50%, 0.05);
+	--table-row-alt-background-hover: var(--table-row-alt-background);
+}
+.i-center-table-header-text .cm-html-embed th,
+.i-center-table-header-text .markdown-rendered th,
+.i-center-table-body-text .cm-html-embed td,
+.i-center-table-body-text .markdown-rendered td {
+	text-align: center;
+}
+
+/* Tabs */
+body {
+	--tab-text-color: var(--text-normal);
+	--tab-text-color-active: var(--tab-text-color);
+	--tab-text-color-focused: var(--tab-text-color);
+	--tab-text-color-focused-active: var(--tab-text-color);
+	--tab-container-background: var(--titlebar-background);
+}
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+	--background-modifier-hover: var(--i-5);
+}
+.workspace-tab-header-container {
+	--background-modifier-hover: var(--i-4);
+}
+
+/* Tab titlebar */
+:is(.i-tab-titlebar,.i-tab-titlebar-autohide.is-mobile,.i-tab-titlebar-path) {
+	--file-header-font-size: 12.5px;
+}
+:is(.i-tab-titlebar,.i-tab-titlebar-autohide,.i-tab-titlebar-path) {
+	--file-header-border: 0;
+}
+:is(.i-tab-titlebar,.i-tab-titlebar-autohide,.i-tab-titlebar-path) .view-header-title-parent {
+	color: var(--text-accent);
+	align-items: center;
+}
+:is(.i-tab-titlebar,.i-tab-titlebar-autohide,.i-tab-titlebar-path) .view-header-title-parent .view-header-breadcrumb-separator {
+	font-size: 12px;
+}
+:is(.i-tab-titlebar.is-focused,.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide.is-focused,.i-tab-titlebar-autohide.is-mobile) .workspace-leaf.mod-active .view-header-title {
+	font-weight: 500;
+}
+.i-tab-titlebar-path .view-header-title,
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide,.i-tab-titlebar-path) .view-header-title-parent .view-header-breadcrumb-separator:last-child {
+	display: none;
+}
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide) .view-header-title-container {
+	flex-direction: column-reverse;
+}
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide.is-mobile) .view-header-title-container {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide.is-mobile) .view-header-title {
+	color: var(--text-normal);
+}
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide.is-mobile,.i-tab-titlebar-path.is-mobile) .view-header-title-parent,
+:is(.i-tab-titlebar.is-mobile,.i-tab-titlebar-autohide.is-mobile) .view-header-title {
+	opacity: 1;
+}
+.i-tab-titlebar-autohide:not(.is-mobile) .view-header {
+	min-height: 40px;
+	height: auto;
+}
+.i-tab-titlebar-autohide:not(.is-mobile) :is(.view-header-left,.view-actions) {
+	height: 40px;
+}
+.i-tab-titlebar-autohide:not(.is-mobile) .view-header-title {
+	flex-basis: auto;
+	padding: 13.5px 0 2px;
+	line-height: 1;
+}
+.i-tab-titlebar-autohide:not(.is-mobile) .view-header-title-parent {
+	height: 0;
+	transition: 100ms ease-in-out 400ms;
+}
+.i-tab-titlebar-autohide:not(.is-mobile) .view-header-title-container:hover .view-header-title-parent {
+	height: 28px;
+}
+.i-hide-tab-titlebar-buttons:not(.is-mobile) :is(.view-header-left,.view-actions) {
+	display: none;
+}
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) :is(.view-header-left,.view-actions) {
+	opacity: 0;
+	transition: 100ms ease-in-out;
+}
+.i-autohide-tab-titlebar-buttons:not(.is-mobile) :is(.view-header-left,.view-actions):hover {
+	opacity: 1;
+}
+.i-tab-titlebar-border-solid {
+	--file-header-border: 1px solid var(--background-modifier-border);
+}
+.i-tab-titlebar-border-dashed {
+	--file-header-border: 1px dashed var(--background-modifier-border);
+}
+
+/* Tags */
+body {
+	--tag-color: var(--text-normal);
+	--tag-color-hover: var(--tag-color);
+	--tag-background-hover: var(--tag-background);
+	--tag-padding-x: 0.5em;
+	--tag-radius: var(--radius-s);
+}
+.theme-light {
+	--tag-background: hsla(var(--color-accent-hsl), 0.2);
+}
+.theme-dark,
+.is-mobile.theme-dark {
+	--tag-background: hsla(var(--color-accent-hsl), 0.25);
+}
+.i-smaller-tags {
+	--tag-padding-y: 0.14em;
+	--tag-padding-x: 0.4em;
+}
+
+/* Text */
+body {
+	--i-bold-italic-color: inherit;
+	--i-text-selection-hsl: var(--color-accent-hsl);
+}
+:is(b,strong,.cm-strong):is(i,em,.cm-em) {
+	color: var(--i-bold-italic-color);
+}
+
+/* Vault profile */
+.i-hide-vault-profile:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	display: none;
+}
+.i-hide-vault-profile:not(.is-mobile).i-card-layout .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
+	margin-bottom: 3px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	border-radius: 0 0 8px 8px;
+}
+
+/* Window control buttons */
 .i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless {
 	--frame-right-space: 81px;
 }
@@ -777,12 +1538,12 @@ audio::-webkit-media-controls-enclosure {
 	top: 7px;
 	width: 74px;
 }
-.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.i-card-layout .titlebar-button-container.mod-right {
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless:is(.i-card-layout,.i-border-layout) .titlebar-button-container.mod-right {
 	height: 25px;
 	right: 16px;
 	top: 16px;
 }
-.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.i-card-layout .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
+.i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless:is(.i-card-layout,.i-border-layout) .workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
 	height: 25px;
 }
 .i-window-control-buttons:is(.mod-windows,.mod-linux).is-hidden-frameless.is-focused.i-card-layout .titlebar-button-container.mod-right {
@@ -792,111 +1553,143 @@ audio::-webkit-media-controls-enclosure {
 	background-color: var(--background-primary);
 }
 
-/* Iridium tab titlebar */
-.i-tab-titlebar:not(.is-mobile) .view-header {
-	border: 0;
-	min-height: 40px;
-	height: auto;
+/* Community plugins */
+.theme-light {
+	--i-accent-background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + (100% - var(--accent-l)) / 2));
+	--i-accent-background-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + (100% - var(--accent-l)) / 2 - 10%));
 }
-.i-tab-titlebar:not(.is-mobile) .view-header-left,
-.i-tab-titlebar:not(.is-mobile) .view-actions {
-	height: 40px;
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title-container {
-	flex-direction: column-reverse;
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title {
-	flex-basis: auto;
-	padding: 13.5px 0 2px;
-	line-height: 1;
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title-parent {
-	font-size: 12.5px;
-	color: var(--text-accent);
-	align-items: center;
-	height: 0;
-	transition: 100ms ease-in-out 300ms;
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator {
-	font-size: 12px;
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator:last-child {
-	display: none;
-}
-.i-tab-titlebar:not(.is-mobile).is-focused .workspace-leaf.mod-active .view-header-title {
-	font-weight: var(--font-medium);
-}
-.i-tab-titlebar:not(.is-mobile) .view-header-title-container:hover .view-header-title-parent {
-	height: 28px;
+.theme-dark {
+	--i-accent-background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - (var(--accent-l) - var(--i-dk-l)) / 2));
+	--i-accent-background-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - (var(--accent-l) - var(--i-dk-l)) / 2 + 10%));
 }
 
-/* File path only */
-.i-tab-titlebar-path:not(.is-mobile) .view-header {
-	border: 0;
-	min-height: 40px;
+/* Calendar */
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container.container {
+	--color-text-today: var(--text-normal);
+	padding: 0;
 }
-.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent {
-	font-size: 12.5px;
-	color: var(--text-accent);
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container.container:not(.i-card-layout) {
+	--interactive-hover: var(--i-3)
+}
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container .calendar {
+	table-layout: fixed;
+}
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container .right-nav {
 	align-items: center;
 }
-.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator {
-	font-size: 12px;
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container .today {
+	background-color: var(--background-modifier-active-hover);
 }
-.i-tab-titlebar-path:not(.is-mobile) .view-header-title,
-.i-tab-titlebar-path:not(.is-mobile) .view-header-title-parent .view-header-breadcrumb-separator:last-child {
-	display: none;
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container :is(.day:active,.active,.active.today) {
+	color: var(--text-normal);
+	background-color: var(--i-accent-background);
 }
-
-/* Smaller tab text */
-.i-smaller-tab-text:not(.is-mobile) {
-	--tab-font-size: 12.5px;
+:is(.i-calendar-desktop:not(.is-mobile),.i-calendar-mobile.is-mobile) #calendar-container .day.active:hover {
+	background-color: var(--i-accent-background-hover);
 }
-
-/* Hide vault profile */
-.i-hide-vault-profile:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-	display: none;
+.i-calendar-mobile.is-mobile #calendar-container .reset-button {
+	display: unset;
 }
-.i-hide-vault-profile:not(.is-mobile).i-card-layout .workspace-split.mod-left-split .workspace-tabs:last-child .workspace-tab-container {
-	margin-bottom: 3px;
-	border-bottom: 1px solid var(--background-modifier-border);
-	border-radius: 0 0 8px 8px;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .title {
+	font-size: 1.1em;
+	line-height: 1.3;
 }
-
-/* Hide status bar */
-.i-hide-status-bar:not(.is-mobile) .status-bar {
-	display: none;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .arrow {
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
-
-/* Autohide status bar */
-.i-autohide-status-bar:not(.is-mobile) .status-bar {
-	opacity: 0;
-	transition: 100ms ease-in-out;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .arrow:hover {
+	background-color: var(--background-modifier-hover);
 }
-.i-autohide-status-bar:not(.is-mobile) .status-bar:hover {
-	opacity: 1;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .arrow svg {
+	height: 12px;
+	width: 12px;
 }
-
-/* Hide tab titlebar buttons */
-.i-hide-tab-titlebar-buttons:not(.is-mobile) .view-header-left,
-.i-hide-tab-titlebar-buttons:not(.is-mobile) .view-actions {
-	display: none;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .reset-button {
+	font-size: 0.6em;
+	letter-spacing: 0;
+	margin: 0;
 }
-
-/* Autohide tab titlebar buttons */
-.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-header-left,
-.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-actions {
-	opacity: 0;
-	transition: 100ms ease-in-out;
+.i-calendar-desktop:not(.is-mobile) #calendar-container .nav {
+	padding: 0 0 0 6px;
 }
-.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-header-left:hover,
-.i-autohide-tab-titlebar-buttons:not(.is-mobile) .view-actions:hover {
-	opacity: 1;
+.i-calendar-desktop:not(.is-mobile) #calendar-container th {
+	letter-spacing: 0;
+	padding: 4px 0;
+}
+.i-calendar-desktop:not(.is-mobile) #calendar-container :is(.day,.week-num) {
+	padding: 4px 0;
 }
 
-/* Smaller table text */
-.i-smaller-table-text {
-	--table-text-size: var(--font-small);
+/* Dataview */
+.i-dataview .dataview.table-view-table > thead > tr > th {
+	font-weight: var(--table-header-weight);
+	font-size: var(--table-header-size);
+	border: var(--table-border-width) solid var(--table-border-color);
+}
+.i-dataview .dataview.table-view-table > tbody > tr > td {
+	border: var(--table-border-width) solid var(--table-border-color);
+}
+.i-dataview .dataview.small-text {
+	font-size: var(--table-header-size);
+	font-weight: var(--font-normal);
+	color: var(--text-normal);
+	margin-left: 0.3em;
+}
+.i-dataview .dataview.table-view-table,
+.i-dataview .markdown-rendered .callout .dataview.table-view-table {
+	margin: 0;
+}
+.i-dataview .el-pre .block-language-dataview,
+.i-dataview .markdown-rendered .callout .block-language-dataview {
+	margin: var(--p-spacing) 0;
+}
+.i-dataview.i-spacing:not(.modal-container) .markdown-rendered :is(.el-h1,.el-h2,.el-h3,.el-h4,.el-h5,.el-h6) + .el-pre .block-language-dataview,
+.i-dataview.i-spacing:not(.modal-container) .markdown-rendered :is(h1,h2,h3,h4,h5,h6) + .block-language-dataview {
+	margin-top: 0;
+}
+
+/* Style Settings */
+.i-style-settings .style-settings-collapse-indicator > svg {
+	color: var(--nav-collapse-icon-color);
+	stroke-width: 4px;
+	width: 10px;
+	height: 10px;
+	transition: transform 100ms ease-in-out;
+}
+.i-style-settings.theme-light .style-settings-heading .setting-item-name {
+	border-radius: var(--radius-s);
+	width: fit-content;
+	padding: 0 var(--size-4-1);
+}
+.i-style-settings.theme-light .style-settings-heading[data-level="1"] .setting-item-name {background-color: hsla(var(--accent-h), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-heading[data-level="2"] .setting-item-name {background-color: hsla(calc(var(--accent-h) + 60), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-heading[data-level="3"] .setting-item-name {background-color: hsla(calc(var(--accent-h) + 120), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-heading[data-level="4"] .setting-item-name {background-color: hsla(calc(var(--accent-h) + 180), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-heading[data-level="5"] .setting-item-name {background-color: hsla(calc(var(--accent-h) + 240), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-heading[data-level="6"] .setting-item-name {background-color: hsla(calc(var(--accent-h) + 300), 80%, 50%, 0.22);}
+.i-style-settings.theme-light .style-settings-filter-result-count:empty {
+	margin: 0;
+}
+.i-style-settings.theme-light .style-settings-filter-result-count:not(:empty) {
+	margin-right: var(--size-4-1);
+}
+.i-style-settings.theme-dark .style-settings-heading[data-level="1"] .setting-item-name {color: hsl(var(--accent-h), 80%, 80%);}
+.i-style-settings.theme-dark .style-settings-heading[data-level="2"] .setting-item-name {color: hsl(calc(var(--accent-h) + 60), 80%, 80%);}
+.i-style-settings.theme-dark .style-settings-heading[data-level="3"] .setting-item-name {color: hsl(calc(var(--accent-h) + 120), 80%, 80%);}
+.i-style-settings.theme-dark .style-settings-heading[data-level="4"] .setting-item-name {color: hsl(calc(var(--accent-h) + 180), 80%, 80%);}
+.i-style-settings.theme-dark .style-settings-heading[data-level="5"] .setting-item-name {color: hsl(calc(var(--accent-h) + 240), 80%, 80%);}
+.i-style-settings.theme-dark .style-settings-heading[data-level="6"] .setting-item-name {color: hsl(calc(var(--accent-h) + 300), 80%, 80%);}
+
+/* Vertical Tabs */
+:not(.is-mobile) .i-vertical-tabs .obsidian-vertical-tabs-container .is-group-slot .tree-item-self {
+	margin-top: var(--size-2-1);
+}
+:not(.is-mobile) .obsidian-vertical-tabs-container .tree-item-icon svg.svg-icon.right-triangle {
+	stroke-width: 4px;
+	color: var(--nav-collapse-icon-color);
 }
 
 /* @settings
@@ -904,116 +1697,1608 @@ name: Iridium
 id: iridium
 settings:
 	-
-		id: i-desktop
-		title: Desktop
+		id: light-mode
+		title: Light mode
 		type: heading
 		level: 1
+		collapsed: true
 	-
-		id: i-card-layout
-		title: Card layout
-		type: class-toggle
-		default: true
+		id: i-lt-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 25
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
 	-
-		id: i-tab-title-bar
-		title: Iridium tab titlebar
-		description: Shows only the tab title when unhovered and reveals the file path when hovered.
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: Default
-				value: i-tab-titlebar
-			-
-				label: File path only
-				value: i-tab-titlebar-path
+		id: i-lt-l-multiplier
+		title: Lightness multiplier
+		type: variable-number-slider
+		default: 1
+		min: 0.5
+		max: 1.5
+		step: 0.05
 	-
-		id: i-smaller-tab-text
-		title: Smaller tab text
-		type: class-toggle
-	-
-		id: i-hide-autohide-ui-elements
-		title: Hide/autohide UI elements
+		id: dark-mode
+		title: Dark mode
 		type: heading
-		level: 2
+		level: 1
+		collapsed: true
 	-
-		id: i-tab-titlebar-buttons
-		title: Tab titlebar buttons
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: Hide tab titlebar buttons
-				value: i-hide-tab-titlebar-buttons
-			-
-				label: Autohide tab titlebar buttons
-				value: i-autohide-tab-titlebar-buttons
+		id: i-dk-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 12
+		min: 0
+		max: 25
+		step: 1
+		format: '%'
 	-
-		id: i-status-bar
-		title: Status bar
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: Hide status bar
-				value: i-hide-status-bar
-			-
-				label: Autohide status bar
-				value: i-autohide-status-bar
+		id: i-dk-l
+		title: Lightness (%)
+		type: variable-number-slider
+		default: 12
+		min: 0
+		max: 25
+		step: 1
+		format: '%'
 	-
-		id: i-hide-vault-profile
-		title: Hide vault profile
-		type: class-toggle
+		id: i-dk-text-l-multiplier
+		title: Text lightness multiplier
+		type: variable-number-slider
+		default: 1
+		min: 0.7
+		max: 1.4
+		step: 0.05
 	-
-		id: i-windows-and-linux
-		title: Windows and Linux
+		id: i-dk-l-multiplier
+		title: Lightness multiplier
+		type: variable-number-slider
+		default: 1
+		min: 0.5
+		max: 1.5
+		step: 0.05
+	-
+		id: editor
+		title: Editor
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: active-line-highlight
+		title: Active line highlight
 		type: heading
 		level: 2
 		collapsed: true
 	-
-		id: i-window-control-buttons
-		title: Iridium window control buttons
-		type: class-toggle
-		default: true
-	-
-		id: i-other
-		title: Other
-		type: heading
-		level: 1
-	-
-		id: i-smaller-table-text
-		title: Smaller table text
-		type: class-toggle
-*/
-
-/* @settings
-name: 'Iridium: Headings'
-id: i-headings
-settings:
-	-
-		id: i-rainbow-headings
-		title: Rainbow headings
+		id: active-line-highlight-style
+		title: Active line highlight style (desktop only)
 		type: class-select
 		allowEmpty: true
-		default: i-colored-accent-headings
+		default: none
+		options:
+			-
+				label: Highlight
+				value: i-active-line-highlight
+			-
+				label: Border
+				value: i-active-line-border
+			-
+				label: Highlight and border
+				value: i-active-line-highlight-border
+	-
+		id: i-active-line-active-pane-only
+		title: Only show in active pane
+		type: class-toggle
+	-
+		id: i-active-line-color
+		title: Active line highlight color
+		type: variable-themed-color
+		format: hsl-values
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: blockquotes
+		title: Blockquotes
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-italic-blockquote-text
+		title: Italic blockquote text
+		type: class-toggle
+	-
+		id: i-blockquote-indent
+		title: Blockquote indent (em)
+		type: variable-number-slider
+		default: 0
+		min: 0
+		max: 3
+		step: 0.05
+		format: em
+	-
+		id: i-transparent-blockquote-background
+		title: Transparent blockquote background
+		type: class-toggle
+	-
+		id: callouts
+		title: Callouts
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-simple-callouts
+		title: Simple callouts
+		type: class-toggle
+	-
+		id: callout-colors
+		title: Callout colors
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: callout-bug
+		title: Bug
+		type: variable-select
+		default: var(--color-red-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-default
+		title: Default
+		type: variable-select
+		default: var(--color-blue-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-error
+		title: Error
+		type: variable-select
+		default: var(--color-red-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-example
+		title: Example
+		type: variable-select
+		default: var(--color-purple-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-fail
+		title: Fail
+		type: variable-select
+		default: var(--color-red-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-important
+		title: Important
+		type: variable-select
+		default: var(--color-cyan-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-info
+		title: Info
+		type: variable-select
+		default: var(--color-blue-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-question
+		title: Question
+		type: variable-select
+		default: var(--color-orange-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-success
+		title: Success
+		type: variable-select
+		default: var(--color-green-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-summary
+		title: Summary
+		type: variable-select
+		default: var(--color-cyan-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-tip
+		title: Tip
+		type: variable-select
+		default: var(--color-cyan-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-todo
+		title: Todo
+		type: variable-select
+		default: var(--color-blue-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-warning
+		title: Warning
+		type: variable-select
+		default: var(--color-orange-rgb)
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: callout-quote
+		title: Quote
+		type: variable-select
+		default: 158, 158, 158
+		options:
+			-
+				label: Red
+				value: var(--color-red-rgb)
+			-
+				label: Orange
+				value: var(--color-orange-rgb)
+			-
+				label: Yellow
+				value: var(--color-yellow-rgb)
+			-
+				label: Green
+				value: var(--color-green-rgb)
+			-
+				label: Cyan
+				value: var(--color-cyan-rgb)
+			-
+				label: Blue
+				value: var(--color-blue-rgb)
+			-
+				label: Purple
+				value: var(--color-purple-rgb)
+			-
+				label: Pink
+				value: var(--color-pink-rgb)
+			-
+				label: Gray
+				value: 158, 158, 158
+	-
+		id: code
+		title: Code
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: code-size
+		title: Code font size
+		type: variable-text
+		default: ''
+	-
+		id: syntax-highlighting
+		title: Syntax highlighting
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: code-normal
+		title: Normal
+		type: variable-themed-color
+		description: 'Default: Normal text color'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-comment
+		title: Comment
+		type: variable-themed-color
+		description: 'Default: Faint text color'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-function
+		title: Function
+		type: variable-themed-color
+		description: 'Default: Yellow'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-important
+		title: Important
+		type: variable-themed-color
+		description: 'Default: Orange'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-keyword
+		title: Keyword
+		type: variable-themed-color
+		description: 'Default: Pink'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-operator
+		title: Operator
+		type: variable-themed-color
+		description: 'Default: Red'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-property
+		title: Property
+		type: variable-themed-color
+		description: 'Default: Cyan'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-punctuation
+		title: Punctuation
+		type: variable-themed-color
+		description: 'Default: Muted text color'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-string
+		title: String
+		type: variable-themed-color
+		description: 'Default: Green'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-tag
+		title: Tag
+		type: variable-themed-color
+		description: 'Default: Red'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: code-value
+		title: Value
+		type: variable-themed-color
+		description: 'Default: Purple'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: editor-background-pattern
+		title: Editor background pattern
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: editor-background-pattern
+		title: Editor background pattern
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Lined
+				value: i-lined-bg
+			-
+				label: Grid
+				value: i-grid-bg
+			-
+				label: Dotted
+				value: i-dotted-bg
+	-
+		id: i-pattern-lt-l
+		title: 'Light mode: Pattern lightness'
+		type: variable-number-slider
+		default: 3
+		min: 1
+		max: 25
+		step: 1
+		format: '%'
+	-
+		id: i-pattern-dk-l
+		title: 'Dark mode: Pattern lightness'
+		type: variable-number-slider
+		default: 3
+		min: 1
+		max: 25
+		step: 1
+		format: '%'
+	-
+		id: i-pattern-color
+		title: Pattern color
+		type: variable-themed-color
+		opacity: true
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: i-pattern-line-width
+		title: Line width / dot size
+		type: variable-text
+		default: 1px
+	-
+		id: i-pattern-width
+		title: Pattern width
+		type: variable-text
+		default: 10px
+	-
+		id: i-pattern-height
+		title: Pattern height
+		type: variable-text
+		default: 10px
+	-
+		id: embeds
+		title: Embeds
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: embed-max-height
+		title: Maximum height of embeds
+		type: variable-text
+		default: 4000px
+	-
+		id: embed-canvas-max-height
+		title: Maximum height of canvas embeds
+		type: variable-text
+		default: 400px
+	-
+		id: extended-colors
+		title: Extended colors
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: color-red
+		title: Red
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-red-rgb
+				format: rgb-values
+		default-light: '#e93147'
+		default-dark: '#fb464c'
+	-
+		id: color-orange
+		title: Orange
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-orange-rgb
+				format: rgb-values
+		default-light: '#ec7500'
+		default-dark: '#e9973f'
+	-
+		id: color-yellow
+		title: Yellow
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-yellow-rgb
+				format: rgb-values
+		default-light: '#e0ac00'
+		default-dark: '#e0de71'
+	-
+		id: color-green
+		title: Green
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-green-rgb
+				format: rgb-values
+		default-light: '#08b94e'
+		default-dark: '#44cf6e'
+	-
+		id: color-cyan
+		title: Cyan
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-cyan-rgb
+				format: rgb-values
+		default-light: '#00bfbc'
+		default-dark: '#53dfdd'
+	-
+		id: color-blue
+		title: Blue
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-blue-rgb
+				format: rgb-values
+		default-light: '#086ddd'
+		default-dark: '#027aff'
+	-
+		id: color-purple
+		title: Purple
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-purple-rgb
+				format: rgb-values
+		default-light: '#7852ee'
+		default-dark: '#a882ff'
+	-
+		id: color-pink
+		title: Pink
+		type: variable-themed-color
+		format: hex
+		alt-format:
+			-
+				id: color-pink-rgb
+				format: rgb-values
+		default-light: '#d53984'
+		default-dark: '#fa99cd'
+	-
+		id: file-layout
+		title: File layout
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: file-line-width
+		title: Readable line length
+		type: variable-text
+		default: 700px
+	-
+		id: headings
+		title: Headings
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: gradient-headings
+		title: Gradient headings
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: gradient-headings-light-mode
+		title: Light mode
+		type: heading
+		level: 4
+		collapsed: true
+	-
+		id: light-mode-gradient-headings
+		title: Gradient headings
+		description: Applies a color gradient across heading levels from custom H1 and H6 colors.
+		type: class-select
+		allowEmpty: true
+		default: i-lt-accent-colored-headings
 		options:
 			-
 				label: Colored
-				value: i-colored-headings
+				value: i-lt-normal-colored-headings
 			-
-				label: 'Colored: from accent color'
-				value: i-colored-accent-headings
+				label: 'Colored: From accent color'
+				value: i-lt-accent-colored-headings
 			-
 				label: Highlighted
-				value: i-highlighted-headings
+				value: i-lt-normal-highlighted-headings
 			-
-				label: 'Highlighted: from accent color'
-				value: i-highlighted-accent-headings
+				label: 'Highlighted: From accent color'
+				value: i-lt-accent-highlighted-headings
 	-
-		id: i-colorful-inline-title
-		title: Colorful inline title
+		id: light-mode-colored-headings
+		title: Colored headings
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: light-mode-colored-hue-range
+		title: 'Colored: Hue range'
+		description: "Affects 'Colored' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-lt-normal-colored-h1
+		title: H1 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff0000'
+	-
+		id: i-lt-normal-colored-h6
+		title: H6 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff00ff'
+	-
+		id: colored-light-mode-sl
+		title: Saturation and lightness
+		description: "Affects 'Colored' and 'Colored: From accent color' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-lt-colored-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 80
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-lt-colored-l
+		title: Lightness (%)
+		type: variable-number-slider
+		default: 30
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: light-mode-highlighted-headings
+		title: Highlighted headings
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: light-mode-highlighted-hue-range
+		title: 'Highlighted: Hue range'
+		description: "Affects 'Highlighted' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-lt-normal-highlighted-h1
+		title: H1 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff0000'
+	-
+		id: i-lt-normal-highlighted-h6
+		title: H6 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff00ff'
+	-
+		id: highlighted-light-mode-sla
+		title: Saturation and lightness
+		description: "Affects 'Highlighted' and 'Highlighted: From accent color' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-lt-highlighted-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 80
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-lt-highlighted-l
+		title: Lightness (%)
+		type: variable-number-slider
+		default: 50
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-lt-highlighted-a
+		title: Opacity (%)
+		type: variable-number-slider
+		default: 22
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: gradient-headings-dark-mode
+		title: Dark mode
+		type: heading
+		level: 4
+		collapsed: true
+	-
+		id: dark-mode-gradient-headings
+		title: Gradient headings
+		description: Applies a color gradient across heading levels from custom H1 and H6 colors.
+		type: class-select
+		allowEmpty: true
+		default: i-dk-accent-colored-headings
+		options:
+			-
+				label: Colored
+				value: i-dk-normal-colored-headings
+			-
+				label: 'Colored: From accent color'
+				value: i-dk-accent-colored-headings
+			-
+				label: Highlighted
+				value: i-dk-normal-highlighted-headings
+			-
+				label: 'Highlighted: From accent color'
+				value: i-dk-accent-highlighted-headings
+	-
+		id: dark-mode-colored-headings
+		title: Colored headings
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: dark-mode-colored-hue-range
+		title: 'Colored: Hue range'
+		description: "Affects 'Colored' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-dk-normal-colored-h1
+		title: H1 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff0000'
+	-
+		id: i-dk-normal-colored-h6
+		title: H6 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff00ff'
+	-
+		id: colored-dark-mode-sl
+		title: Saturation and lightness
+		description: "Affects 'Colored' and 'Colored: From accent color' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-dk-colored-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 80
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-dk-colored-l
+		title: Lightness (%)
+		type: variable-number-slider
+		default: 80
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: dark-mode-highlighted-headings
+		title: Highlighted headings
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: dark-mode-highlighted-hue-range
+		title: 'Highlighted: Hue range'
+		description: "Affects 'Highlighted' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-dk-normal-highlighted-h1
+		title: H1 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff0000'
+	-
+		id: i-dk-normal-highlighted-h6
+		title: H6 hue
+		type: variable-color
+		format: hsl-split
+		default: '#ff00ff'
+	-
+		id: highlighted-dark-mode-sla
+		title: Saturation and lightness
+		description: "Affects 'Highlighted' and 'Highlighted: From accent color' headings."
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-dk-highlighted-s
+		title: Saturation (%)
+		type: variable-number-slider
+		default: 80
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-dk-highlighted-l
+		title: Lightness (%)
+		type: variable-number-slider
+		default: 70
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-dk-highlighted-a
+		title: Opacity (%)
+		type: variable-number-slider
+		default: 25
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: iridium-headings
+		title: Iridium headings
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: i-headings
+		title: Iridium headings
+		description: Applies the same line height, weight and letter spacing to each heading level. Enable to adjust heading sizes below.
+		type: class-toggle
+		default: true
+	-
+		id: i-h1-size
+		title: H1 size (em)
+		type: variable-number-slider
+		default: 1.5
+		min: 1
+		max: 2
+		step: 0.05
+		format: em
+	-
+		id: i-h6-size
+		title: H6 size (em)
+		type: variable-number-slider
+		default: 1
+		min: 1
+		max: 2
+		step: 0.05
+		format: em
+	-
+		id: heading-1
+		title: Heading 1
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h1-color
+		title: H1 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h1-font
+		title: H1 font
+		type: variable-text
+		default: ''
+	-
+		id: h1-line-height
+		title: H1 line height
+		type: variable-text
+		default: ''
+	-
+		id: h1-size
+		title: H1 font size
+		type: variable-text
+		default: ''
+	-
+		id: h1-style
+		title: H1 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h1-variant
+		title: H1 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h1-weight
+		title: H1 font weight
+		type: variable-text
+		default: ''
+	-
+		id: heading-2
+		title: Heading 2
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h2-color
+		title: H2 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h2-font
+		title: H2 font
+		type: variable-text
+		default: ''
+	-
+		id: h2-line-height
+		title: H2 line height
+		type: variable-text
+		default: ''
+	-
+		id: h2-size
+		title: H2 font size
+		type: variable-text
+		default: ''
+	-
+		id: h2-style
+		title: H2 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h2-variant
+		title: H2 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h2-weight
+		title: H2 font weight
+		type: variable-text
+		default: ''
+	-
+		id: heading-3
+		title: Heading 3
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h3-color
+		title: H3 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h3-font
+		title: H3 font
+		type: variable-text
+		default: ''
+	-
+		id: h3-line-height
+		title: H3 line height
+		type: variable-text
+		default: ''
+	-
+		id: h3-size
+		title: H3 font size
+		type: variable-text
+		default: ''
+	-
+		id: h3-style
+		title: H3 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h3-variant
+		title: H3 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h3-weight
+		title: H3 font weight
+		type: variable-text
+		default: ''
+	-
+		id: heading-4
+		title: Heading 4
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h4-color
+		title: H4 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h4-font
+		title: H4 font
+		type: variable-text
+		default: ''
+	-
+		id: h4-line-height
+		title: H4 line height
+		type: variable-text
+		default: ''
+	-
+		id: h4-size
+		title: H4 font size
+		type: variable-text
+		default: ''
+	-
+		id: h4-style
+		title: H4 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h4-variant
+		title: H4 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h4-weight
+		title: H4 font weight
+		type: variable-text
+		default: ''
+	-
+		id: heading-5
+		title: Heading 5
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h5-color
+		title: H5 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h5-font
+		title: H5 font
+		type: variable-text
+		default: ''
+	-
+		id: h5-line-height
+		title: H5 line height
+		type: variable-text
+		default: ''
+	-
+		id: h5-size
+		title: H5 font size
+		type: variable-text
+		default: ''
+	-
+		id: h5-style
+		title: H5 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h5-variant
+		title: H5 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h5-weight
+		title: H5 font weight
+		type: variable-text
+		default: ''
+	-
+		id: heading-6
+		title: Heading 6
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: h6-color
+		title: H6 color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: h6-font
+		title: H6 font
+		type: variable-text
+		default: ''
+	-
+		id: h6-line-height
+		title: H6 line height
+		type: variable-text
+		default: ''
+	-
+		id: h6-size
+		title: H6 font size
+		type: variable-text
+		default: ''
+	-
+		id: h6-style
+		title: H6 font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: h6-variant
+		title: H6 font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: h6-weight
+		title: H6 font weight
+		type: variable-text
+		default: ''
+	-
+		id: horizontal-rules
+		title: Horizontal rules
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: hr-thickness
+		title: Horizontal rule thickness (px)
+		type: variable-number-slider
+		default: 2
+		min: 1
+		max: 5
+		step: 1
+		format: px
+	-
+		id: i-hr-style
+		title: Horizontal rule style
+		type: variable-select
+		default: solid
+		options:
+			-
+				label: Solid
+				value: solid
+			-
+				label: Dashed
+				value: dashed
+			-
+				label: Dotted
+				value: dotted
+	-
+		id: inline-title
+		title: Inline title
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: accent-colored-inline-title
+		title: Accent colored inline title
 		type: class-select
 		allowEmpty: true
 		default: none
@@ -1025,25 +3310,159 @@ settings:
 				label: Highlighted inline title
 				value: i-highlighted-inline-title
 	-
-		id: i-improved-headings-and-spacing
-		title: Improved headings and spacing
+		id: inline-title-color
+		title: Inline title color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: inline-title-font
+		title: Inline title font
+		type: variable-text
+		default: ''
+	-
+		id: inline-title-line-height
+		title: Inline title line height
+		type: variable-text
+		default: ''
+	-
+		id: inline-title-size
+		title: Inline title font size
+		type: variable-text
+		default: ''
+	-
+		id: inline-title-style
+		title: Inline title font style
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Italic
+				value: italic
+	-
+		id: inline-title-variant
+		title: Inline title font variant
+		type: variable-select
+		default: normal
+		options:
+			-
+				label: Normal
+				value: normal
+			-
+				label: Small caps
+				value: small-caps
+			-
+				label: All small caps
+				value: all-small-caps
+	-
+		id: inline-title-weight
+		title: Inline title font weight
+		type: variable-text
+		default: ''
+	-
+		id: inline-title-margin-bottom
+		title: Margin below inline title
+		type: variable-text
+		default: 0.5em
+	-
+		id: links
+		title: Links
 		type: heading
-		level: 1
+		level: 2
+		collapsed: true
 	-
-		id: i-headings-and-spacing
-		title: Improved headings and spacing
-		description: Makes heading and paragraph spacing more consistent between Live Preview and Reading View. Enable to adjust heading sizes and spacing below headings.
-		type: class-toggle
-		default: true
+		id: i-link-decoration-style
+		title: Link decoration style
+		type: variable-select
+		default: solid
+		options:
+			-
+				label: Solid
+				value: solid
+			-
+				label: Dashed
+				value: dashed
+			-
+				label: Dotted
+				value: dotted
 	-
-		id: i-heading-sizes
-		title: Heading sizes
+		id: i-link-decoration-offset
+		title: Link decoration offset
+		type: variable-text
+		default: ''
+	-
+		id: lists-and-checklists
+		title: Lists and checklists
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: list-indent
+		title: Nested list indent (em)
 		type: variable-number-slider
-		default: 0.5
-		min: 0
-		max: 0.8
+		default: 2.25
+		min: 1
+		max: 4
 		step: 0.05
 		format: em
+	-
+		id: checkbox-radius
+		title: Checkbox radius (%)
+		type: variable-number-slider
+		default: 50
+		min: 0
+		max: 50
+		step: 5
+		format: '%'
+	-
+		id: i-strike-completed-tasks
+		title: Strike completed tasks
+		type: class-toggle
+	-
+		id: properties
+		title: Properties
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: metadata-label-font-size
+		title: Properties label font size
+		type: variable-text
+		default: ''
+	-
+		id: metadata-label-width
+		title: Properties label width
+		type: variable-text
+		default: 9em
+	-
+		id: metadata-input-font-size
+		title: Properties input font size
+		type: variable-text
+		default: ''
+	-
+		id: i-hide-add-property-button
+		title: Hide 'Add property' button
+		type: class-toggle
+	-
+		id: i-hide-property-icons
+		title: Hide property icons
+		type: class-toggle
+	-
+		id: spacing
+		title: Spacing
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-spacing
+		title: Improved spacing
+		description: Makes heading and paragraph spacing more consistent between Live Preview and Reading View. Enable to adjust spacing below headings.
+		type: class-toggle
+		default: true
 	-
 		id: i-spacing-below-headings
 		title: Spacing below headings (rem)
@@ -1053,15 +3472,398 @@ settings:
 		max: 1.5
 		step: 0.1
 		format: rem
-*/
-
-/* @settings
-name: 'Iridium: Light mode'
-id: i-light-mode
-settings:
 	-
-		id: i-light-s
-		title: Saturation (%)
+		id: tables
+		title: Tables
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: table-header-size
+		title: Table header font size
+		type: variable-text
+		default: ''
+	-
+		id: table-header-weight
+		title: Table header font weight
+		type: variable-number-slider
+		default: 600
+		min: 100
+		max: 900
+		step: 100
+	-
+		id: table-text-size
+		title: Table body font size
+		type: variable-text
+		default: ''
+	-
+		id: table-column-min-width
+		title: Table column minimum width
+		type: variable-text
+		default: 4ch
+	-
+		id: i-highlight-active-row
+		title: Highlight active row
+		type: class-toggle
+	-
+		id: i-striped-rows
+		title: Striped rows
+		type: class-toggle
+	-
+		id: i-striped-columns
+		title: Striped columns
+		type: class-toggle
+	-
+		id: i-center-table-header-text
+		title: Center table header text
+		type: class-toggle
+	-
+		id: i-center-table-body-text
+		title: Center table body text
+		type: class-toggle
+	-
+		id: tags
+		title: Tags
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-smaller-tags
+		title: Smaller tags
+		type: class-toggle
+	-
+		id: text-colors
+		title: Text colors
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: text-normal
+		title: Normal text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-muted
+		title: Muted text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-faint
+		title: Faint text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: i-text-selection-hsl
+		title: Text selection color
+		type: variable-themed-color
+		format: hsl-values
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: text-highlight-bg-rgb
+		title: Highlight color
+		type: variable-themed-color
+		format: rgb-values
+		default-light: rgb(255, 208, 0)
+		default-dark: rgb(255, 208, 0)
+	-
+		id: bold-color
+		title: Bold text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: italic-color
+		title: Italic text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: i-bold-italic-color
+		title: Bold and italic text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: interface
+		title: Interface
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: layout
+		title: Layout
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: layout-desktop-only
+		title: Layout (desktop only)
+		type: class-select
+		allowEmpty: true
+		default: i-card-layout
+		options:
+			-
+				label: Card layout
+				value: i-card-layout
+			-
+				label: Border layout
+				value: i-border-layout
+	-
+		id: i-card-radius
+		title: 'Card layout: Card radius (px)'
+		type: variable-number-slider
+		default: 8
+		min: 0
+		max: 12
+		step: 1
+		format: px
+	-
+		id: Sidebar
+		title: Sidebar
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: sidebar-markdown-font-size
+		title: Sidebar font size
+		type: variable-text
+		default: ''
+	-
+		id: status-bar
+		title: Status bar
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: status-bar
+		title: Status bar
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Hide
+				value: i-hide-status-bar
+			-
+				label: Autohide
+				value: i-autohide-status-bar
+			-
+				label: Full width
+				value: i-full-width-status-bar
+	-
+		id: status-bar-font-size
+		title: Status bar font size
+		type: variable-text
+		default: ''
+	-
+		id: tab-titlebar
+		title: Tab titlebar
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: iridium-tab-titlebar
+		title: Iridium tab titlebar
+		type: class-select
+		allowEmpty: true
+		default: i-tab-titlebar
+		options:
+			-
+				label: Default
+				value: i-tab-titlebar
+			-
+				label: Autohide file path
+				value: i-tab-titlebar-autohide
+			-
+				label: File path only
+				value: i-tab-titlebar-path
+	-
+		id: tab-titlebar-buttons
+		title: Tab titlebar buttons (desktop only)
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Hide tab titlebar buttons
+				value: i-hide-tab-titlebar-buttons
+			-
+				label: Autohide tab titlebar buttons
+				value: i-autohide-tab-titlebar-buttons
+	-
+		id: bottom-border
+		title: Bottom border
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: Solid
+				value: i-tab-titlebar-border-solid
+			-
+				label: Dashed
+				value: i-tab-titlebar-border-dashed
+	-
+		id: tabs
+		title: Tabs
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: tab-font-size
+		title: Tab font size
+		type: variable-text
+		default: ''
+	-
+		id: stacked-tabs
+		title: Stacked tabs
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: tab-stacked-pane-width
+		title: Stacked tab pane width
+		type: variable-text
+		default: 700px
+	-
+		id: tab-stacked-font-size
+		title: Stacked tab header font size
+		type: variable-text
+		default: ''
+	-
+		id: vault-profile
+		title: Vault profile
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-hide-vault-profile
+		title: Hide vault profile
+		type: class-toggle
+	-
+		id: window-control-buttons
+		title: Window control buttons
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-window-control-buttons
+		title: Iridium window control buttons for Windows and Linux
+		type: class-toggle
+		default: true
+	-
+		id: plugins
+		title: Plugins
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: core-plugins
+		title: Core plugins
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: files
+		title: Files
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: colored-folders-light-mode
+		title: Light mode
+		type: heading
+		level: 4
+		collapsed: true
+	-
+		id: light-mode-colored-folders
+		title: Colored folders
+		type: class-select
+		allowEmpty: true
+		default: i-folder-accent-lt
+		options:
+			-
+				label: Rainbow
+				value: i-folder-rainbow-lt
+			-
+				label: 'Rainbow: From accent color'
+				value: i-folder-accent-lt
+			-
+				label: Custom colors
+				value: i-folder-custom-lt
+	-
+		id: i-folder-radius-lt
+		title: Slightly rounder corners
+		type: class-toggle
+		default: true
+	-
+		id: i-folder-margin-lt
+		title: Wider gap between files/folders
+		type: class-toggle
+		default: true
+	-
+		id: i-folder-hide-borders-lt
+		title: Hide borders
+		type: class-toggle
+	-
+		id: light-mode-folder-sla
+		title: Saturation, lightness, and opacity
+		description: "Affects 'Rainbow' and 'Rainbow: From accent color' folders."
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: light-mode-folder-backgrounds
+		title: Folder backgrounds
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-folder-lt-s
+		title: Background saturation (%)
+		type: variable-number-slider
+		default: 100
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-folder-lt-l
+		title: Background lightness (%)
+		type: variable-number-slider
+		default: 50
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-folder-lt-a
+		title: Background opacity (%)
+		type: variable-number-slider
+		default: 7
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: light-mode-folder-borders
+		title: Folder borders
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-folder-border-lt-s
+		title: Border saturation (%)
 		type: variable-number-slider
 		default: 25
 		min: 0
@@ -1069,43 +3871,345 @@ settings:
 		step: 1
 		format: '%'
 	-
-		id: i-light-l
-		title: Lightness
+		id: i-folder-border-lt-l
+		title: Border lightness (%)
 		type: variable-number-slider
-		default: 1
-		min: 0.5
-		max: 1.5
-		step: 0.05
-*/
-
-/* @settings
-name: 'Iridium: Dark mode'
-id: i-dark-mode
-settings:
-	-
-		id: i-dark-s
-		title: Saturation (%)
-		type: variable-number-slider
-		default: 12
+		default: 75
 		min: 0
-		max: 25
+		max: 100
 		step: 1
 		format: '%'
 	-
-		id: i-dark-bg-l
+		id: light-mode-custom-colors
+		title: Custom colors
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: i-folder-1-lt
+		title: Folder 1 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-1-lt
+		title: Folder 1 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-2-lt
+		title: Folder 2 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-2-lt
+		title: Folder 2 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-3-lt
+		title: Folder 3 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-3-lt
+		title: Folder 3 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-4-lt
+		title: Folder 4 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-4-lt
+		title: Folder 4 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-5-lt
+		title: Folder 5 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-5-lt
+		title: Folder 5 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-6-lt
+		title: Folder 6 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-6-lt
+		title: Folder 6 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: colored-folders-dark-mode
+		title: Dark mode
+		type: heading
+		level: 4
+		collapsed: true
+	-
+		id: dark-mode-colored-folders
+		title: Colored folders
+		type: class-select
+		allowEmpty: true
+		default: i-folder-accent-dk
+		options:
+			-
+				label: Rainbow
+				value: i-folder-rainbow-dk
+			-
+				label: 'Rainbow: From accent color'
+				value: i-folder-accent-dk
+			-
+				label: Custom colors
+				value: i-folder-custom-dk
+	-
+		id: i-folder-radius-dk
+		title: Slightly rounder corners
+		type: class-toggle
+		default: true
+	-
+		id: i-folder-margin-dk
+		title: Wider gap between files/folders
+		type: class-toggle
+		default: true
+	-
+		id: i-folder-hide-borders-dk
+		title: Hide borders
+		type: class-toggle
+	-
+		id: dark-mode-folder-sla
+		title: Saturation, lightness, and opacity
+		description: "Affects 'Rainbow' and 'Rainbow: From accent color' folders."
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: dark-mode-folder-backgrounds
+		title: Folder backgrounds
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-folder-dk-s
+		title: Background saturation (%)
+		type: variable-number-slider
+		default: 100
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-folder-dk-l
 		title: Background lightness (%)
 		type: variable-number-slider
-		default: 12
+		default: 80
 		min: 0
-		max: 25
+		max: 100
 		step: 1
 		format: '%'
 	-
-		id: i-dark-l
-		title: Lightness
+		id: i-folder-dk-a
+		title: Background opacity (%)
 		type: variable-number-slider
-		default: 1
-		min: 0.5
-		max: 1.5
-		step: 0.05
+		default: 20
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: dark-mode-folder-borders
+		title: Folder borders
+		type: heading
+		level: 6
+		collapsed: true
+	-
+		id: i-folder-border-dk-s
+		title: Border saturation (%)
+		type: variable-number-slider
+		default: 20
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: i-folder-border-dk-l
+		title: Border lightness (%)
+		type: variable-number-slider
+		default: 40
+		min: 0
+		max: 100
+		step: 1
+		format: '%'
+	-
+		id: dark-mode-custom-colors
+		title: Custom colors
+		type: heading
+		level: 5
+		collapsed: true
+	-
+		id: i-folder-1-dk
+		title: Folder 1 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-1-dk
+		title: Folder 1 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-2-dk
+		title: Folder 2 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-2-dk
+		title: Folder 2 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-3-dk
+		title: Folder 3 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-3-dk
+		title: Folder 3 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-4-dk
+		title: Folder 4 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-4-dk
+		title: Folder 4 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-5-dk
+		title: Folder 5 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-5-dk
+		title: Folder 5 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-6-dk
+		title: Folder 6 color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: i-folder-border-6-dk
+		title: Folder 6 border color
+		type: variable-color
+		format: hex
+		opacity: true
+		default: '#'
+	-
+		id: graph
+		title: Graph
+		type: heading
+		level: 3
+		collapsed: true
+	-
+		id: graph-node-tag
+		title: Tag node color
+		type: variable-themed-color
+		description: 'Default: Green'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: graph-node-attachment
+		title: Attachment node color
+		type: variable-themed-color
+		description: 'Default: Yellow'
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: community-plugins
+		title: Community plugins
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-calendar-desktop
+		title: 'Calendar: Desktop'
+		type: class-toggle
+		default: true
+	-
+		id: i-calendar-mobile
+		title: 'Calendar: Mobile'
+		type: class-toggle
+		default: true
+	-
+		id: i-dataview
+		title: Dataview
+		type: class-toggle
+		default: true
+	-
+		id: i-style-settings
+		title: Style Settings
+		type: class-toggle
+		default: true
+	-
+		id: i-vertical-tabs
+		title: Vertical Tabs
+		type: class-toggle
+		default: true
 */

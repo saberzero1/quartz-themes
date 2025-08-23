@@ -6462,21 +6462,24 @@ body:not(.is-mobile).mu-transparent-prompts-menus div:is(.modal .vertical-tab-he
 /* Footnotes */
 .cm-footref.cm-footref.cm-formatting.cm-formatting.cm-formatting-link.cm-formatting-link.cm-formatting-link-start.cm-hmd-barelink.cm-link,
 .cm-hmd-footnote.cm-link .cm-underline {
-  color: var(--code-punctuation);
+  color: var(--code-punctuation) !important;
   font-weight: var(--font-semibold);
 }
 
+.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote .cm-underline,
 .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote,
+.HyperMD-footnote .cm-line,
 .cm-footref.cm-footref.cm-hmd-barelink {
   font-weight: var(--font-semibold);
-  color: var(--mu-footnote-color);
+  color: var(--mu-footnote-color) !important;
 }
 
+.HyperMD-footnote .cm-line,
 .cm-inline-footnote.cm-inline-footnote-start,
 .cm-inline-footnote-end,
 .cm-inline-footnote {
   font-weight: var(--font-semibold);
-  color: var(--mu-footnote-color);
+  color: var(--mu-footnote-color) !important;
   font-size: var(--font-smaller);
 }
 
@@ -6500,36 +6503,6 @@ section.footnotes:has(.is-flashing) {
 .mermaid svg {
   width: 100%;
   height: 100%;
-}
-
-.theme-light .mermaid .nodeLabel,
-.theme-light .mermaid svg tspan,
-.theme-light .mermaid svg text {
-  fill: #000 !important;
-}
-
-.theme-dark .mermaid .nodeLabel,
-.theme-dark .mermaid svg tspan,
-.theme-dark .mermaid svg text {
-  fill: white !important;
-  text-shadow: 0 2px 4px #000, 0 2px 4px #000;
-}
-
-.mermaid svg line {
-  stroke: #181818;
-}
-
-.mermaid line.loopLine {
-  stroke: #d300ff;
-}
-
-.mermaid line[id*=actor] {
-  stroke: #0072d348 !important;
-}
-
-.mermaid rect[class*=activation] {
-  stroke: #0072d3 !important;
-  fill: #cfcfcf88 !important;
 }
 
 .theme-light .mermaid {

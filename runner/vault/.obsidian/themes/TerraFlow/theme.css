@@ -1,6 +1,6 @@
 /* @settings
 
-name: Seasonal Color Schemes
+name: TerraFlow
 id: seasonal-themes
 settings:
     -
@@ -10,6 +10,12 @@ settings:
         level: 2
         collapsed: false
     -
+        id: disable-scrollbars
+        title: Disable Scrollbar Styling
+        description: Disable the custom scrollbars
+        type: class-toggle
+        default: false
+    -
         id: disable-status-bar
         title: Disable Status Bar Styling
         description: Disable the status bar style
@@ -17,7 +23,7 @@ settings:
         default: false
     -
         id: seasonal-heading
-        title: 🍂 Seasonal Theme Selector
+        title: 🍂 Seasonal Color Schemes
         type: heading
         level: 2
         collapsed: false
@@ -1301,7 +1307,7 @@ html {
 .markdown-preview-view h6,
 .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     display: inline-flex;
-    padding: .1em .3em;
+    padding: .2em .5em;
     line-height: var(--line-tight);
     border-radius: var(--r2);
     position: relative;
@@ -1514,25 +1520,6 @@ em,
 .markdown-source-view.mod-cm6 .cm-line .cm-hmd-external-link:hover {
     text-decoration: none !important;
     border-bottom: none !important;
-}
-
-/* Tag Styling */
-:is(.tag, a.tag, .cm-hashtag, .token.hashtag, .cm-s-obsidian span.cm-hashtag, .markdown-source-view.mod-cm6 .cm-hashtag, .cm-hashtag-begin, .cm-hashtag-end) {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 0 2px;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-    font-weight: var(--weight-medium);
-}
-
-:is(.tag, a.tag, .cm-hashtag, .token.hashtag, .cm-s-obsidian span.cm-hashtag, .markdown-source-view.mod-cm6 .cm-hashtag, .cm-hashtag-begin, .cm-hashtag-end):hover {
-    color: var(--link-color-hover);
-    filter: brightness(1.2);
 }
 
 /* Multi-select Pill Styling */
@@ -2539,6 +2526,9 @@ input[type="checkbox"]:hover {
 }
 
 /* Workspace Tab Header Styling */
+.workspace-tab-header-container-inner {
+    overflow-y: clip;
+}
 .workspace-tab-header {
     border-radius: var(--r2) var(--r2) 0 0;
     margin-right: 5px;
@@ -2548,9 +2538,12 @@ input[type="checkbox"]:hover {
     border: none;
     position: relative;
     z-index: 1;
-    transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
+.workspace-tab-header,
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
 .workspace-tab-header:hover {
     background-color: rgba(var(--background-secondary-rgb), .9);
     color: var(--text-normal);
@@ -2883,7 +2876,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     border-radius: var(--r3);
 }
 
-* {
+body:not(.disable-scrollbars) * {
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
