@@ -20,5 +20,6 @@
     ],
     "skipLibCheck": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["./runner/quartz/**/*"]
 }
