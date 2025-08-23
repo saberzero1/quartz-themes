@@ -1,0 +1,719 @@
+:root
+{
+    /* DARK THEME */
+    /* Osaka Jade Theme from https://github.com/omarchy/osaka-jade-theme */
+    /* Bg Shades*/
+    --osakaInk0     : #111c18; /* main background */
+    --osakaInk1     : #23372B; /* black normal */
+    --osakaInk2     : #32473B; /* inactive fg */
+    --osakaInk3     : #364538; /* selected bg */
+    --osakaInk4     : #53685B; /* black bright */
+
+    /* Popup and Floats*/
+    --osakaBlue1    : #509475; /* blue normal */
+    --osakaBlue2    : #ACD4CF; /* blue bright */
+
+    /* Diff and Git*/
+    --winterGreen   : #549e6a; /* green normal */
+    --winterYellow  : #459451; /* yellow normal */
+    --winterRed     : #FF5345; /* red normal */
+    --winterBlue    : #509475; /* blue normal */
+    --autumnGreen   : #143614; /* green bright */
+    --autumnRed     : #db9f9c; /* red bright */
+    --autumnYellow  : #E5C736; /* yellow bright */
+
+    /* Diag*/
+    --samuraiRed    : #FF5345; /* red normal */
+    --roninYellow   : #E5C736; /* yellow bright */
+    --waveAqua1     : #2DD5B7; /* cyan normal */
+    --dragonBlue    : #75bbb3; /* magenta bright */
+
+    /* Fg and Comments*/
+    --oldWhite      : #C1C497; /* foreground */
+    --fujiWhite     : #F7E8B2; /* main fg */
+    --fujiGray      : #D6D5BC; /* title */
+    --springViolet1 : #D2689C; /* magenta normal */
+
+    --oniViolet     : #D2689C; /* magenta normal */
+    --crystalBlue   : #75bbb3; /* magenta bright */
+    --springViolet2 : #8CD3CB; /* cyan bright */
+    --springBlue    : #2DD5B7; /* cyan normal */
+    --lightBlue     : #ACD4CF; /* blue bright */
+    --waveAqua2     : #8CD3CB; /* cyan bright */
+
+    --springGreen   : #549e6a; /* green normal */
+    --boatYellow1   : #DEB266; /* selected fg */
+    --boatYellow2   : #E5C736; /* yellow bright */
+    --carpYellow    : #D7C995; /* cursor */
+
+    --sakuraPink    : #D2689C; /* magenta normal */
+    --waveRed       : #FF5345; /* red normal */
+    --peachRed      : #db9f9c; /* red bright */
+    --surimiOrange  : #E67D64; /* hi fg */
+    --katanaGray    : #81B8A8; /* box outlines */
+
+    /* Gruvbox from https://github.com/insanum/obsidian_gruvbox */
+    --dark0-hard:     #1d2021;
+    --dark0:          #282828;
+    --dark0-soft:     #32302f;
+    --dark1:          #3c3836;
+    --dark2:          #504945;
+    --dark3:          #665c54;
+    --dark4:          #7c6f64;
+
+    --gray:           #928374;
+
+    --light0-hard:    #f9f5d7;
+    --light0:         #fbf1c7;
+    --light0-soft:    #f2e5bc;
+    --light1:         #ebdbb2;
+    --light2:         #d5c4a1;
+    --light3:         #bdae93;
+    --light4:         #a89984;
+
+    --bright-red:     #fb4934;
+    --bright-green:   #b8bb26;
+    --bright-yellow:  #fabd2f;
+    --bright-blue:    #83a598;
+    --bright-purple:  #d3869b;
+    --bright-aqua:    #8ec07c;
+    --bright-orange:  #fe8019;
+
+    --neutral-red:    #cc241d;
+    --neutral-green:  #98971a;
+    --neutral-yellow: #d79921;
+    --neutral-blue:   #458588;
+    --neutral-purple: #b16286;
+    --neutral-aqua:   #689d6a;
+    --neutral-orange: #d65d0e;
+
+    --faded-red:      #9d0006;
+    --faded-green:    #79740e;
+    --faded-yellow:   #b57614;
+    --faded-blue:     #076678;
+    --faded-purple:   #8f3f71;
+    --faded-aqua:     #427b58;
+    --faded-orange:   #af3a03;
+
+
+    /* LIGHT THEME */
+    /* Osaka Jade Light - Inverted/Adjusted Colors */
+    --lotusInk1: #2F4A37; /* darker text for light theme */
+    --lotusInk2: #1A2E20; /* even darker text */
+    --lotusGray: #E8E6D4; /* light gray */
+    --lotusGray2: #C7C5B3; /* medium gray */
+    --lotusGray3: #B5B3A1; /* darker gray */
+    --lotusWhite0: #F9F7E5; /* very light background */
+    --lotusWhite1: #F6F4E2; /* light background */
+    --lotusWhite2: #F3F1DF; /* light background alt */
+    --lotusWhite3: #F0EEDC; /* light background secondary */
+    --lotusWhite4: #EDEBD9; /* light background secondary alt */
+    --lotusWhite5: #EAE8D6; /* light variant */
+    --lotusViolet1: #E2A4C6; /* light magenta */
+    --lotusViolet2: #D68BB4; /* medium magenta */
+    --lotusViolet3: #F2E4E8; /* very light magenta */
+    --lotusViolet4: #B85080; /* darker magenta */
+    --lotusBlue1: #D7EFEB; /* light blue/cyan */
+    --lotusBlue2: #BEEBE6; /* medium light blue */
+    --lotusBlue3: #A5E7E1; /* light cyan */
+    --lotusBlue4: #407A6F; /* darker blue/teal */
+    --lotusBlue5: #3E6B62; /* dark teal */
+    --lotusGreen: #76B88C; /* light green */
+    --lotusGreen2: #6AAB82; /* medium green */
+    --lotusGreen3: #C4E4B0; /* very light green */
+    --lotusPink: #E2A4C6; /* light pink/magenta */
+    --lotusOrange: #F5A588; /* light orange */
+    --lotusOrange2: #F2B195; /* lighter orange */
+    --lotusYellow: #74824D; /* darker yellow/olive */
+    --lotusYellow2: #8B9159; /* medium yellow */
+    --lotusYellow3: #F0DC5A; /* bright yellow */
+    --lotusYellow4: #EBD8B9; /* light yellow */
+    --lotusRed: #FF7668; /* light red */
+    --lotusRed2: #FF8A7C; /* lighter red */
+    --lotusRed3: #FF5345; /* bright red */
+    --lotusRed4: #E6BEBC; /* very light red */
+    --lotusAqua: #7AB5A6; /* light aqua */
+    --lotusAqua2: #85BFB1; /* lighter aqua */
+    --lotusTeal1: #6EACBE; /* light teal */
+    --lotusTeal2: #8BC2D4; /* lighter teal */
+    --lotusTeal3: #7AA5B7; /* medium teal */
+    --lotusCyan: #E8F3EA; /* very light cyan */
+
+    --soft-white: #F8F8F8; /*This is very close to white but slightly softer, reducing eye strain.*/
+    --warm-off-white: #F5F5F0; /*This has a slight warm tint that many find comfortable for long reading/writing sessions.*/
+    --cool-off-white: #F0F5F5; /*A very subtle cool tint that some find soothing.*/
+    --paper-like: #F2EFE9; /*This mimics the color of high-quality paper, which many find natural and easy on the eyes.*/
+
+}
+
+.theme-dark
+{
+    --background-primary:         var(--osakaInk0);
+    --background-primary-alt:     var(--osakaInk1);
+    --background-secondary:       var(--osakaInk2);
+    --background-secondary-alt:   var(--osakaInk3);
+    --text-normal:                var(--fujiWhite);
+    --text-faint:                 var(--fujiGray);
+    --text-title-h1:              var(--waveRed);
+    --text-title-h2:              var(--surimiOrange);
+    --text-title-h3:              var(--boatYellow2);
+    --text-title-h4:              var(--springGreen);
+    --text-title-h5:              var(--waveAqua1);
+    --text-title-h6:              var(--osakaBlue1);
+    --text-link:                  var(--springBlue);
+    --text-a:                     var(--dragonBlue);
+    --text-a-hover:               var(--peachRed);
+    --text-a-url:                 var(--katanaGray); /*hover internal link, graph view link and standalone links*. External Links no*/
+    --text-mark:                  rgba(80, 148, 117, 0.4); /* osakaBlue1 */
+    --pre-code:                   var(--osakaInk1);
+    --text-highlight-bg:          var(--osakaInk3);
+    --interactive-accent:         var(--katanaGray); /* vim cursor background AND highilight on right*/
+    --interactive-before:         var(--osakaInk4);
+    --background-modifier-border: var(--katanaGray);
+    --text-accent:                var(--springGreen);
+    --interactive-accent-rgb:     var(--springGreen);
+    --inline-code:                var(--springGreen);
+    --code-block:                 var(--fujiGray);
+    --vim-cursor-backgroung:      var(--carpYellow);
+    --vim-cursor-color:           var(--osakaInk0);
+    --text-selection:             rgba(80, 148, 117, 0.5); /* osakaBlue1 */
+    --text-tag:                   var(--sakuraPink);
+    --task-checkbox:              var(--osakaInk4);
+    --table-header:               var(--osakaInk2);
+    --table-row-even:             var(--osakaInk1);
+    --table-row-odd:              var(--osakaInk0);
+    --table-hover:                var(--osakaInk3);
+    --bold-color:                 var(--oldWhite);
+}
+
+.theme-light {
+    /* original lotus */
+    /* --background-primary:         var(--lotusWhite3); */
+    /* --background-primary-alt:     var(--lotusWhite4); */
+    /* --background-secondary:       var(--lotusWhite1); */
+    /* --background-secondary-alt:   var(--lotusWhite2); */
+
+    /* new preferred light colors */
+    --background-primary:         var(--paper-like);
+    --background-primary-alt:     var(--lotusWhite4);
+    --background-secondary:       var(--soft-white);
+    --background-secondary-alt:   var(--lotusWhite3);
+
+    --text-normal:                var(--lotusInk1);
+    --text-faint:                 var(--lotusGray3);
+    --text-title-h1:              var(--lotusRed);
+    --text-title-h2:              var(--lotusOrange);
+    --text-title-h3:              var(--lotusYellow);
+    --text-title-h4:              var(--lotusGreen);
+    --text-title-h5:              var(--lotusAqua);
+    --text-title-h6:              var(--lotusBlue4);
+    --text-link:                  var(--lotusBlue5);
+    --text-a:                     var(--lotusTeal1);
+    --text-a-hover:               var(--lotusRed);
+    --text-a-url:                 var(--lotusTeal2); /*hover internal link, graph view link and standalone links*. External Links no*/
+    --text-mark:                  rgba(183, 208, 174, 0.4); /* lotusGreen3 */
+    --pre-code:                   var(--lotusGray);
+    --text-highlight-bg:          var(--lotusBlue2);
+    --interactive-accent:         var(--lotusBlue3); /* vim cursor background AND highilight on right*/
+    --interactive-before:         var(--lotusGray2);
+    --background-modifier-border: var(--lotusBlue3);
+    --text-accent:                var(--lotusGreen);
+    --interactive-accent-rgb:     var(--lotusGreen);
+    --inline-code:                var(--lotusGreen);
+    --code-block:                 var(--lotusGray3);
+    --vim-cursor-backgroung:      var(--lotusGray);
+    --vim-cursor-color:           var(--lotusInk1);
+    --text-selection:             rgba(183, 208, 174, 0.5); /* lotusGreen3 */
+    --text-tag:                   var(--lotusAqua);
+    --task-checkbox:              var(--lotusGray2);
+    --table-header:               hsl(42, 33%, 91%);
+    --table-row-even:             hsl(42, 35%, 94%);
+    --table-row-odd:              hsl(42, 37%, 97%);
+    --table-hover:                var(--lotusWhite1);
+    --bold-color:                 var(--lotusInk1);
+}
+
+body {
+    --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-monospace-theme: 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+body.theme-dark {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+body.theme-light {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+}
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb) !important;
+}
+.graph-view.color-text
+{
+    color: var(--text-a-url) !important;
+}
+/*
+.graph-view.color-fill
+{
+    color: var(--background-secondary);
+}
+.graph-view.color-line
+{
+  color: var(--background-modifier-border);
+}
+*/
+
+html,
+body
+{
+    /* font-size: 16px !important; */
+}
+
+strong
+{
+    font-weight: 600 !important;
+}
+
+a,
+.cm-hmd-internal-link
+{
+    color: var(--text-a) !important;
+    text-decoration: none !important;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-url) !important;
+    text-decoration: none !important;
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag) !important;
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+a.tag:hover {
+    text-decoration: underline !important;
+}
+
+mark
+{
+    background-color: var(--text-mark);
+}
+
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.view-actions a
+{
+    color: var(--text-normal) !important;
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a) !important;
+}
+
+.HyperMD-codeblock-bg
+{
+    background-color: var(--pre-code) !important;
+}
+
+.HyperMD-codeblock
+{
+    line-height: 1.4em !important;
+    color: var(--code-block) !important;
+}
+
+.HyperMD-codeblock-begin
+{
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock-end
+{
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+table {
+    border: 1px solid var(--background-secondary) !important;
+    border-collapse: collapse;
+}
+  
+th {
+    font-weight: 600 !important;
+    border: 0px !important;
+    text-align: left;
+    background-color: var(--table-header);
+    color: var(--neutral-green);
+}
+
+td {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid var(--background-secondary) !important;
+}
+
+tr:nth-child(even){ background-color: var(--table-row-even) }
+tr:nth-child(odd){ background-color: var(--table-row-odd) }
+tr:hover { background-color: var(--table-hover); }
+  
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+
+.HyperMD-table-row
+{
+    line-height: normal !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    /* background-color: var(--pre-code) !important; */
+}
+
+.HyperMD-table-row-0
+{
+    /* padding-top: 4px !important; */
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--text-a) !important;
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a) !important;
+    background-color: var(--background-primary-alt) !important;
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.HyperMD-list-line
+{
+    padding-top: 0 !important;
+}
+
+.cm-hashtag-begin
+{
+    color: var(--text-tag) !important;
+    background-color: var(--background-secondary-alt);
+    padding: 2px 0 2px 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-decoration: none !important;
+}
+
+.cm-hashtag-end
+{
+    color: var(--text-tag) !important;
+    background-color: var(--background-secondary-alt);
+    padding: 2px 4px 2px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-decoration: none !important;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    text-decoration: underline !important;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em !important;
+    background-color: var(--pre-code) !important;
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px !important;
+    line-height: 1.4em !important;
+    display: block !important;
+    color: var(--code-block) !important;
+}
+
+.markdown-preview-section code
+{
+    color: var(--inline-code) !important;
+}
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto !important;
+}
+
+.cm-inline-code
+{
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    padding: 1px !important;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600 !important;
+}
+
+.side-dock-title
+{
+    padding-top: 15px !important;
+    font-size: 20px !important;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0 !important;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+    padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+    font-weight: 600 !important;
+}
+
+.markdown-embed
+{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.cm-header-1.cm-link,
+h1 a
+{
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2.cm-link,
+h2 a
+{
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3.cm-link,
+h3 a
+{
+    color: var(--text-title-h3) !important;
+}
+.cm-header-4.cm-link,
+h4 a
+{
+    color: var(--text-title-h4) !important;
+}
+.cm-header-5.cm-link,
+h5 a
+{
+    color: var(--text-title-h5) !important;
+}
+.cm-header-6.cm-link,
+h6 a
+{
+    color: var(--text-title-h6) !important;
+}
+
+.cm-header {
+    font-weight: 500 !important;
+}
+
+.HyperMD-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 2.2em !important;
+    color: var(--text-title-h1) !important;
+}
+
+.HyperMD-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 2.0em !important;
+    color: var(--text-title-h2) !important;
+    /* text-transform: uppercase; */
+
+}
+
+.HyperMD-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 1.8em !important;
+    color: var(--text-title-h3) !important;
+}
+
+.HyperMD-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 1.6em !important;
+    color: var(--text-title-h4) !important;
+}
+
+.HyperMD-header-5,
+.markdown-preview-section h5
+{
+    font-weight: 500 !important;
+    font-size: 1.4em !important;
+    color: var(--text-title-h5) !important;
+}
+
+.HyperMD-header-6,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 1.2em !important;
+    color: var(--text-title-h6) !important;
+}
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
+.checkbox-container
+{
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after
+{
+    background-color: var(--background-secondary-alt);
+}
+
+.mod-cta
+{
+    color: var(--background-secondary-alt) !important;
+    font-weight: 600 !important;
+}
+
+.mod-cta a
+{
+    color: var(--background-secondary-alt) !important;
+    font-weight: 600 !important;
+}
+
+.mod-cta:hover
+{
+    background-color: var(--interactive-before) !important;
+    font-weight: 600 !important;
+}
+
+.CodeMirror-cursor
+{
+    background-color: var(--vim-cursor-background) !important;
+    color: var(--vim-cursor-color) !important;
+    opacity: 60% !important;
+}
+
+input.task-list-item-checkbox {
+    border: 1px solid var(--task-checkbox);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked
+{
+    background-color: var(--task-checkbox);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+::selection
+{
+    background-color: var(--text-selection) !important;
+}
+
+.mermaid .note
+{
+    fill: var(--dark3) !important;
+}
+.cm-line .cm-strong
+{
+    color: var(--bold-color) !important;
+}
+
