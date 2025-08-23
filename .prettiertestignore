@@ -3,3 +3,4 @@ templates
 util
 obsidian
 runner/vault
+runner/quartz

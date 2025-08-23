@@ -17,7 +17,7 @@ import { obsidianPage } from "wdio-obsidian-service";
 To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
-const manifestCollection = getManifestCollection(); //.slice(0, 10); // Limit to first 10 themes for testing
+const manifestCollection = getManifestCollection().slice(0, 10); // Limit to first 10 themes for testing
 
 // test/extract-styles.test.js
 describe("Quartz Theme Style Extraction", () => {
