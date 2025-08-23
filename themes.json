@@ -2409,6 +2409,16 @@
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
+    "osaka-jade": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "overcast": {
       "compatibility": ["checking"],
       "modes": ["dark"],
