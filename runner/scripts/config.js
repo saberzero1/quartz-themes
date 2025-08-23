@@ -100,6 +100,7 @@ export const extractionTargets = {
     selectors: [
       {
         obsidianSelector: null,
+        publishSelector: null,
         quartzSelector: "div#quartz-root",
         pseudoElement: "",
         properties: ["background-color", "color", "font-family", "font-size"],
@@ -107,12 +108,14 @@ export const extractionTargets = {
       // links
       {
         obsidianSelector: `a.external-link`,
+        publishSelector: null,
         quartzSelector: "a",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `a.internal-link`,
+        publishSelector: null,
         quartzSelector: "a.internal-link",
         pseudoElement: "",
         properties: sets.text,
@@ -120,60 +123,70 @@ export const extractionTargets = {
       // text
       {
         obsidianSelector: `p`,
+        publishSelector: null,
         quartzSelector: "p",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `strong`,
+        publishSelector: null,
         quartzSelector: ".page article p > strong",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `b`,
+        publishSelector: null,
         quartzSelector: ".page article p > b",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `em`,
+        publishSelector: null,
         quartzSelector: ".page article p > em",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `i`,
+        publishSelector: null,
         quartzSelector: ".page article p > i",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `u`,
+        publishSelector: null,
         quartzSelector: ".page article p > u",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `s`,
+        publishSelector: null,
         quartzSelector: ".page article p > s",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `mark`,
+        publishSelector: null,
         quartzSelector: ".text-highlight",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `del`,
+        publishSelector: null,
         quartzSelector: "del",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `hr`,
+        publishSelector: null,
         quartzSelector: "hr",
         pseudoElement: "",
         properties: [
@@ -188,12 +201,14 @@ export const extractionTargets = {
       // tag pills
       {
         obsidianSelector: `div.multi-select-pill`,
+        publishSelector: null,
         quartzSelector: "a.internal.tag-link",
         pseudoElement: "",
         properties: sets.pill,
       },
       {
         obsidianSelector: `div.multi-select-pill > div.multi-select-pill-content`,
+        publishSelector: null,
         quartzSelector: "a.internal.tag-link::before",
         pseudoElement: "",
         properties: ["color"],
@@ -201,12 +216,14 @@ export const extractionTargets = {
       // list items
       {
         obsidianSelector: `ul.has-list-bullet > li`,
+        publishSelector: null,
         quartzSelector: "ul > li",
         pseudoElement: "",
         properties: sets.list,
       },
       {
         obsidianSelector: `ul.has-list-bullet > li > .list-bullet`,
+        publishSelector: null,
         quartzSelector: "ul > li::marker",
         pseudoElement: "::after",
         properties: [
@@ -223,12 +240,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `ol > li`,
+        publishSelector: null,
         quartzSelector: "ol > li",
         pseudoElement: "",
         properties: sets.list,
       },
       {
         obsidianSelector: `ol > li`,
+        publishSelector: null,
         quartzSelector: "ol > li::marker",
         pseudoElement: "::marker",
         properties: ["color"],
@@ -236,6 +255,7 @@ export const extractionTargets = {
       // code blocks
       {
         obsidianSelector: `p > code`,
+        publishSelector: null,
         quartzSelector: "code",
         pseudoElement: "",
         properties: [
@@ -251,6 +271,7 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `pre > code`,
+        publishSelector: null,
         quartzSelector: "pre > code",
         pseudoElement: "",
         properties: [
@@ -266,6 +287,7 @@ export const extractionTargets = {
       // checkboxes
       {
         obsidianSelector: `ul.contains-task-list > li.task-list-item > .task-list-item-checkbox`,
+        publishSelector: null,
         quartzSelector: "input[type=checkbox]",
         pseudoElement: "",
         properties: [
@@ -285,12 +307,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `ul.contains-task-list > li.task-list-item`,
+        publishSelector: null,
         quartzSelector: "ul > li.task-list-item",
         pseudoElement: "",
         properties: ["list-style", "text-align", "display"],
       },
       {
         obsidianSelector: `ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked`,
+        publishSelector: null,
         quartzSelector: "input[type=checkbox]:checked:after",
         pseudoElement: "::after",
         properties: [
@@ -309,6 +333,7 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `ul > li.task-list-item[data-task="x"]`,
+        publishSelector: null,
         quartzSelector: ".page article li:has(>input[type=checkbox]:checked)",
         pseudoElement: "",
         properties: ["color", "text-decoration", "text-decoration-color"],
@@ -316,6 +341,7 @@ export const extractionTargets = {
       // blockquote
       {
         obsidianSelector: `blockquote`,
+        publishSelector: null,
         quartzSelector: "blockquote",
         pseudoElement: "",
         properties: sets.blockquote,
@@ -323,6 +349,7 @@ export const extractionTargets = {
       // footnotes
       {
         obsidianSelector: `.footnote-backref`,
+        publishSelector: null,
         quartzSelector: ".data-footnote-backref",
         pseudoElement: "",
         properties: ["color", "text-decoration"],
@@ -330,6 +357,7 @@ export const extractionTargets = {
       // search
       {
         obsidianSelector: `.block-language-dataviewjs input[type="search"]`,
+        publishSelector: null,
         quartzSelector: ".search > .search-button",
         pseudoElement: "",
         properties: [
@@ -350,36 +378,42 @@ export const extractionTargets = {
     selectors: [
       {
         obsidianSelector: `h1`,
+        publishSelector: null,
         quartzSelector: "h1",
         pseudoElement: "",
         properties: sets.headings,
       },
       {
         obsidianSelector: `h2`,
+        publishSelector: null,
         quartzSelector: "h2",
         pseudoElement: "",
         properties: sets.headings,
       },
       {
         obsidianSelector: `h3`,
+        publishSelector: null,
         quartzSelector: "h3",
         pseudoElement: "",
         properties: sets.headings,
       },
       {
         obsidianSelector: `h4`,
+        publishSelector: null,
         quartzSelector: "h4",
         pseudoElement: "",
         properties: sets.headings,
       },
       {
         obsidianSelector: `h5`,
+        publishSelector: null,
         quartzSelector: "h5",
         pseudoElement: "",
         properties: sets.headings,
       },
       {
         obsidianSelector: `h6`,
+        publishSelector: null,
         quartzSelector: "h6",
         pseudoElement: "",
         properties: sets.headings,
@@ -387,12 +421,14 @@ export const extractionTargets = {
       // outline
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-0",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-0 + li.depth-1",
         pseudoElement: "",
         properties: [
@@ -403,12 +439,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-1",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-1 + li.depth-2",
         pseudoElement: "",
         properties: [
@@ -419,12 +457,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-2",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-2 + li.depth-3",
         pseudoElement: "",
         properties: [
@@ -435,12 +475,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-3",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-3 + li.depth-4",
         pseudoElement: "",
         properties: [
@@ -451,12 +493,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-4",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-4 + li.depth-5",
         pseudoElement: "",
         properties: [
@@ -467,12 +511,14 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
+        publishSelector: null,
         quartzSelector: "li.depth-5",
         pseudoElement: "",
         properties: [/*"font-size", "line-height", */ "font-weight"],
       },
       {
         obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
+        publishSelector: null,
         quartzSelector: "li.depth-5 + li.depth-6",
         pseudoElement: "",
         properties: [
@@ -490,12 +536,14 @@ export const extractionTargets = {
       // scrollbars
       {
         obsidianSelector: `.markdown-preview-sizer`,
+        publishSelector: null,
         quartzSelector: "::-webkit-scrollbar",
         pseudoElement: "::-webkit-scrollbar",
         properties: ["background-color"],
       },
       {
         obsidianSelector: `.markdown-preview-sizer`,
+        publishSelector: null,
         quartzSelector: "::-webkit-scrollbar-thumb",
         pseudoElement: "::-webkit-scrollbar-thumb",
         properties: [
@@ -510,24 +558,28 @@ export const extractionTargets = {
       // note
       {
         obsidianSelector: `.callout[data-callout="note"]`,
+        publishSelector: null,
         quartzSelector: ".callout[data-callout]",
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="note"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: ".callout[data-callout] .callout-title",
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: ".callout[data-callout] .callout-title .callout-icon",
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="note"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector:
           ".callout[data-callout] .callout-title > .callout-title-inner > p",
         pseudoElement: "",
@@ -535,6 +587,7 @@ export const extractionTargets = {
       },
       {
         obsidianSelector: `.callout[data-callout="note"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: ".callout[data-callout] > .callout-content",
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -542,30 +595,35 @@ export const extractionTargets = {
       // abstract
       {
         obsidianSelector: `.callout[data-callout="abstract"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="abstract"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="abstract"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="abstract"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="abstract"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="abstract"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="abstract"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="abstract"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="abstract"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="abstract"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -573,30 +631,35 @@ export const extractionTargets = {
       // info
       {
         obsidianSelector: `.callout[data-callout="info"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="info"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="info"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="info"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="info"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="info"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="info"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="info"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="info"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="info"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -604,30 +667,35 @@ export const extractionTargets = {
       // todo
       {
         obsidianSelector: `.callout[data-callout="todo"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="todo"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="todo"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="todo"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="todo"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="todo"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="todo"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="todo"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="todo"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="todo"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -635,30 +703,35 @@ export const extractionTargets = {
       // tip
       {
         obsidianSelector: `.callout[data-callout="tip"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="tip"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="tip"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="tip"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="tip"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="tip"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="tip"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="tip"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="tip"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="tip"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -666,30 +739,35 @@ export const extractionTargets = {
       // success
       {
         obsidianSelector: `.callout[data-callout="success"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="success"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="success"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="success"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="success"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="success"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="success"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="success"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="success"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="success"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -697,30 +775,35 @@ export const extractionTargets = {
       // question
       {
         obsidianSelector: `.callout[data-callout="question"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="question"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="question"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="question"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="question"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="question"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="question"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="question"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="question"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="question"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -728,30 +811,35 @@ export const extractionTargets = {
       // warning
       {
         obsidianSelector: `.callout[data-callout="warning"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="warning"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="warning"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="warning"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="warning"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="warning"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="warning"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="warning"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="warning"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="warning"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -759,30 +847,35 @@ export const extractionTargets = {
       // danger
       {
         obsidianSelector: `.callout[data-callout="danger"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="danger"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="danger"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="danger"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="danger"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="danger"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="danger"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="danger"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="danger"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="danger"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -790,30 +883,35 @@ export const extractionTargets = {
       // failure
       {
         obsidianSelector: `.callout[data-callout="failure"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="failure"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="failure"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="failure"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="failure"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="failure"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="failure"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="failure"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="failure"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="failure"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -821,30 +919,35 @@ export const extractionTargets = {
       // bug
       {
         obsidianSelector: `.callout[data-callout="bug"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="bug"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="bug"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="bug"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="bug"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="bug"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="bug"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="bug"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="bug"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="bug"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -852,30 +955,35 @@ export const extractionTargets = {
       // example
       {
         obsidianSelector: `.callout[data-callout="example"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="example"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="example"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="example"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="example"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="example"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="example"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="example"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="example"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="example"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -883,30 +991,35 @@ export const extractionTargets = {
       // quote
       {
         obsidianSelector: `.callout[data-callout="quote"]`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="quote"]`,
         pseudoElement: "",
         properties: sets.callouts.container,
       },
       {
         obsidianSelector: `.callout[data-callout="quote"] > .callout-title`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="quote"] .callout-title`,
         pseudoElement: "",
         properties: sets.callouts.title,
       },
       {
         obsidianSelector: `.callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="quote"] .callout-title .callout-icon`,
         pseudoElement: "",
         properties: sets.callouts.icon,
       },
       {
         obsidianSelector: `.callout[data-callout="quote"] > .callout-title > .callout-inner`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="quote"] .callout-title > .callout-title-inner > p`,
         pseudoElement: "",
         properties: sets.callouts.titleInner,
       },
       {
         obsidianSelector: `.callout[data-callout="quote"] > .callout-content`,
+        publishSelector: null,
         quartzSelector: `.callout[data-callout="quote"] > .callout-content`,
         pseudoElement: "",
         properties: sets.callouts.content,
@@ -919,6 +1032,7 @@ export const extractionTargets = {
       // mermaid
       {
         obsidianSelector: `.mermaid > svg`,
+        publishSelector: null,
         quartzSelector: "code.mermaid > svg",
         pseudoElement: "",
         properties: sets.mermaid,
@@ -926,18 +1040,21 @@ export const extractionTargets = {
       // mathjax
       {
         obsidianSelector: `.math-block > mjx-container.MathJax`,
+        publishSelector: null,
         quartzSelector: ".katex-display > .katex",
         pseudoElement: "",
         properties: sets.math,
       },
       {
         obsidianSelector: `.math-block > mjx-container.MathJax`,
+        publishSelector: null,
         quartzSelector: ".katex-display > .katex > .katex-html",
         pseudoElement: "",
         properties: ["font-family"],
       },
       {
         obsidianSelector: `.math-inline > mjx-container.MathJax > mjx-math`,
+        publishSelector: null,
         quartzSelector: ".katex > .katex-html",
         pseudoElement: "",
         properties: ["font-family"],
@@ -945,6 +1062,7 @@ export const extractionTargets = {
       // graph
       {
         obsidianSelector: `span.quartz-graph-target`,
+        publishSelector: null,
         quartzSelector: "div.graph",
         pseudoElement: "",
         properties: [
@@ -960,6 +1078,7 @@ export const extractionTargets = {
       // explorer
       {
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-file-title[data-path="callouts.md"]`,
+        publishSelector: null,
         quartzSelector: ".explorer .explorer-content ul.explorer-ul li a",
         pseudoElement: "",
         properties: [
@@ -975,6 +1094,7 @@ export const extractionTargets = {
       {
         // closed
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder/collapsed"]`,
+        publishSelector: null,
         quartzSelector:
           ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container",
         pseudoElement: "",
@@ -991,6 +1111,7 @@ export const extractionTargets = {
       {
         // open
         obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder"]`,
+        publishSelector: null,
         quartzSelector:
           ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container",
         pseudoElement: "",
