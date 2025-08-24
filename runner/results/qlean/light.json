@@ -1,4 +1,8 @@
 {
+  "&[data-slug]": {
+    "background-color": "rgb(250, 250, 250)",
+    "color": "rgb(64, 64, 64)"
+  },
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "0, 191, 188",
     "background-color": "rgba(0, 0, 0, 0)",
@@ -313,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "8, 109, 221",
-    "background-color": "color(srgb 0.894118 0.933333 0.992157 / 0.8)",
     "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "2px",
     "border-style": "solid",
@@ -362,6 +365,7 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(64, 64, 64)"
   },
+  ".graph .graph-outer": { "border-color": "rgb(212, 212, 212)" },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
@@ -371,6 +375,16 @@
   },
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+  },
+  ".left.sidebar": {
+    "background-color": "rgb(245, 245, 245)",
+    "border-color": "rgb(212, 212, 212)",
+    "border-right-width": "1px"
+  },
+  ".page > #quartz-body div.center": {
+    "min-width": "unset",
+    "padding-left": "10px",
+    "padding-right": "10px"
   },
   ".page article li:has(>input[type=checkbox]:checked)": {
     "color": "rgb(115, 115, 115)",
@@ -384,8 +398,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -402,8 +414,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none 1px solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -420,8 +430,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -438,8 +446,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -456,8 +462,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "900",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(23, 23, 23) none 0px",
     "text-decoration": "none 1px solid rgb(23, 23, 23)",
     "text-decoration-color": "rgb(23, 23, 23)",
@@ -474,8 +478,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -485,14 +487,22 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".popover .popover-inner": {
+    "background-color": "rgb(250, 250, 250)",
+    "border-color": "rgb(212, 212, 212)"
+  },
+  ".right.sidebar": {
+    "background-color": "rgb(245, 245, 245)",
+    "border-color": "rgb(212, 212, 212)",
+    "border-left-width": "1px"
+  },
   ".search > .search-button": {
-    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(224, 224, 224)",
     "border-color": "rgb(224, 224, 224)",
     "border-radius": "1.625px",
     "color": "rgb(64, 64, 64)",
-    "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
-    "padding": "4px 8px"
+    "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
   },
   ".text-highlight": {
     "background-color": "rgb(26, 26, 26)",
@@ -501,8 +511,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "2px",
-    "margin-block-start": "2px",
     "outline": "rgb(250, 250, 250) none 0px",
     "text-decoration": "none 2px solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -521,15 +529,13 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
-  "a": {
+  "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(64, 64, 64)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -539,15 +545,13 @@
     "transition": "all",
     "user-select": "text"
   },
-  "a.internal-link": {
+  "a.internal": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgba(26, 26, 26, 0.9)",
     "cursor": "pointer",
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgba(26, 26, 26, 0.9) none 0px",
     "text-decoration": "underline 1px dashed rgba(26, 26, 26, 0.9)",
     "text-decoration-color": "rgba(26, 26, 26, 0.9)",
@@ -611,8 +615,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(115, 115, 115) none 0px",
     "text-decoration": "line-through 2px solid rgb(115, 115, 115)",
     "text-decoration-color": "rgb(115, 115, 115)",
@@ -738,13 +740,7 @@
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
-  "ol > li": {
-    "color": "rgb(64, 64, 64)",
-    "margin-inline-start": "31.536px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ol > li": { "color": "rgb(64, 64, 64)", "text-align": "start" },
   "ol > li::marker": { "color": "rgb(64, 64, 64)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -753,8 +749,6 @@
     "filter": "none",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "margin-block-end": "32px",
-    "margin-block-start": "0px",
     "outline": "rgb(64, 64, 64) none 0px",
     "text-decoration": "none solid rgb(64, 64, 64)",
     "text-decoration-color": "rgb(64, 64, 64)",
@@ -773,13 +767,7 @@
     "padding": "0px",
     "white-space": "pre-wrap"
   },
-  "ul > li": {
-    "color": "rgb(64, 64, 64)",
-    "margin-inline-start": "31.536px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ul > li": { "color": "rgb(64, 64, 64)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",

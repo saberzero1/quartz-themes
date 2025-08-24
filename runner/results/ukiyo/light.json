@@ -1,4 +1,8 @@
 {
+  "&[data-slug]": {
+    "background-color": "rgb(225, 196, 166)",
+    "color": "rgb(95, 79, 73)"
+  },
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "0, 158, 155",
     "background-color": "rgba(0, 158, 155, 0.1)",
@@ -313,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 95, 200",
-    "background-color": "rgba(2, 95, 200, 0.1)",
     "border-color": "rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgb(2, 95, 200)",
     "border-radius": "0px 4px 4px 0px",
     "border-style": "solid",
@@ -362,6 +365,7 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(91, 79, 74)"
   },
+  ".graph .graph-outer": { "border-color": "rgb(198, 165, 127)" },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
@@ -371,6 +375,16 @@
   },
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\""
+  },
+  ".left.sidebar": {
+    "background-color": "rgb(218, 187, 154)",
+    "border-color": "rgb(198, 165, 127)",
+    "border-right-width": "1px"
+  },
+  ".page > #quartz-body div.center": {
+    "min-width": "unset",
+    "padding-left": "10px",
+    "padding-right": "10px"
   },
   ".page article li:has(>input[type=checkbox]:checked)": {
     "color": "rgb(91, 79, 74)",
@@ -384,8 +398,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -402,8 +414,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(174, 97, 43) none 0px",
     "text-decoration": "none solid rgb(174, 97, 43)",
     "text-decoration-color": "rgb(174, 97, 43)",
@@ -420,8 +430,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -438,8 +446,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -456,8 +462,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "600",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(189, 87, 87) none 0px",
     "text-decoration": "none solid rgb(189, 87, 87)",
     "text-decoration-color": "rgb(189, 87, 87)",
@@ -474,8 +478,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -485,14 +487,22 @@
     "transition": "background-color 0.1s ease-in-out",
     "user-select": "text"
   },
+  ".popover .popover-inner": {
+    "background-color": "rgb(225, 196, 166)",
+    "border-color": "rgb(198, 165, 127)"
+  },
+  ".right.sidebar": {
+    "background-color": "rgb(218, 187, 154)",
+    "border-color": "rgb(198, 165, 127)",
+    "border-left-width": "1px"
+  },
   ".search > .search-button": {
-    "background": "rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box",
+    "background-color": "rgb(225, 196, 166)",
     "border": "1px solid rgb(198, 165, 127)",
     "border-color": "rgb(198, 165, 127)",
     "border-radius": "5px",
     "color": "rgb(95, 79, 73)",
-    "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
-    "padding": "4px 8px"
+    "font-family": "\"??\", \"??\", \"CMU Typewriter Text\""
   },
   ".text-highlight": {
     "background-color": "rgb(234, 195, 87)",
@@ -501,8 +511,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -521,15 +529,13 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
-  "a": {
+  "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(95, 79, 73)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -539,15 +545,13 @@
     "transition": "background-color 0.1s ease-in-out",
     "user-select": "text"
   },
-  "a.internal-link": {
+  "a.internal": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(128, 0, 0)",
     "cursor": "pointer",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(128, 0, 0) none 0px",
     "text-decoration": "underline solid rgba(138, 92, 245, 0.3)",
     "text-decoration-color": "rgba(138, 92, 245, 0.3)",
@@ -611,8 +615,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "line-through solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -738,13 +740,7 @@
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
-  "ol > li": {
-    "color": "rgb(95, 79, 73)",
-    "margin-inline-start": "25.1953px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ol > li": { "color": "rgb(95, 79, 73)", "text-align": "start" },
   "ol > li::marker": { "color": "rgb(95, 79, 73)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -753,8 +749,6 @@
     "filter": "none",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
     "font-weight": "400",
-    "margin-block-end": "16px",
-    "margin-block-start": "0px",
     "outline": "rgb(95, 79, 73) none 0px",
     "text-decoration": "none solid rgb(95, 79, 73)",
     "text-decoration-color": "rgb(95, 79, 73)",
@@ -773,13 +767,7 @@
     "padding": "0px",
     "white-space": "pre-wrap"
   },
-  "ul > li": {
-    "color": "rgb(95, 79, 73)",
-    "margin-inline-start": "25.1953px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ul > li": { "color": "rgb(95, 79, 73)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",

@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 120, 120, 120;
     background-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
@@ -380,7 +385,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 8, 132, 255;
-    background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
     border-color: rgba(8, 132, 255, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -477,6 +481,10 @@ body {
     text-decoration: none solid rgb(149, 149, 149);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -516,6 +524,18 @@ body {
       sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
+    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(184, 178, 177);
     text-decoration: line-through solid rgb(184, 178, 177);
@@ -541,8 +561,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -572,8 +590,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -603,8 +619,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -634,8 +648,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -665,8 +677,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -696,8 +706,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -708,9 +716,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
+    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
     border: 1px solid rgb(30, 30, 30);
     border-color: light-dark(rgb(216, 210, 210), rgb(30, 30, 30));
     border-radius: 5px;
@@ -728,7 +746,6 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -750,8 +767,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -775,7 +790,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
     cursor: auto;
@@ -794,8 +809,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -806,7 +819,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(234, 90, 71);
     cursor: pointer;
@@ -825,8 +838,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(234, 90, 71) none 0px;
     text-decoration: underline solid rgb(234, 90, 71);
     text-decoration-color: rgb(234, 90, 71);
@@ -947,8 +958,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: line-through solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -1152,9 +1161,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1181,8 +1187,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 8px;
-    margin-block-start: 0px;
     outline: rgb(228, 228, 228) none 0px;
     text-decoration: none solid rgb(228, 228, 228);
     text-decoration-color: rgb(228, 228, 228);
@@ -1205,9 +1209,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

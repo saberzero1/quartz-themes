@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(20, 20, 20);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 0, 142, 123;
     background-color: rgba(0, 142, 123, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 55, 0, 255;
-    background-color: rgba(55, 0, 255, 0.1);
     border-color: rgb(55, 0, 255);
     border-radius: 20px;
     border-style: solid;
@@ -476,6 +480,10 @@ body {
     text-decoration: none solid rgb(92, 92, 92);
   }
 
+  .graph .graph-outer {
+    border-color: rgba(20, 19, 19, 0.173);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -513,6 +521,18 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+  }
+
+  .left.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(20, 19, 19, 0.173);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -695,9 +715,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(20, 19, 19, 0.173);
+  }
+
+  .right.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(20, 19, 19, 0.173);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgba(247, 247, 247, 0.19) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background-color: rgba(247, 247, 247, 0.19);
     border: 1px solid rgba(20, 19, 19, 0.173);
     border-color: rgba(20, 19, 19, 0.173);
     border-radius: 0px;
@@ -759,7 +789,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(20, 20, 20);
     cursor: auto;
@@ -788,7 +818,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(55, 0, 255);
     cursor: pointer;
@@ -1104,9 +1134,6 @@ body {
 
   ol > li {
     color: rgb(20, 20, 20);
-    margin-inline-start: 24px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     text-align: start;
   }
 
@@ -1155,9 +1182,6 @@ body {
 
   ul > li {
     color: rgb(20, 20, 20);
-    margin-inline-start: 24px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     text-align: start;
   }
 

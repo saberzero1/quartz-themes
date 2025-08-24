@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(253, 246, 227), rgb(0, 43, 54));
+    color: light-dark(rgb(101, 123, 131), rgb(131, 148, 150));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 42, 161, 152;
     background-color: rgba(42, 161, 152, 0.1);
@@ -380,7 +385,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 38, 139, 210;
-    background-color: rgba(38, 139, 210, 0.1);
     border-color: rgba(38, 139, 210, 0.25);
     border-radius: 4px;
     border-style: solid;
@@ -471,6 +475,10 @@ body {
     text-decoration: none solid rgb(101, 123, 131);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(238, 232, 213), rgb(7, 54, 66));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -506,6 +514,18 @@ body {
       sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(253, 246, 227), rgb(0, 43, 54));
+    border-color: light-dark(rgb(238, 232, 213), rgb(7, 54, 66));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(131, 148, 150), rgb(101, 123, 131));
     text-decoration: line-through solid rgb(101, 123, 131);
@@ -529,8 +549,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -558,8 +576,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -587,8 +603,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -616,8 +630,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -645,8 +657,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -674,8 +684,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -686,9 +694,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(253, 246, 227), rgb(0, 43, 54));
+    border-color: light-dark(rgb(238, 232, 213), rgb(7, 54, 66));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(253, 246, 227), rgb(0, 43, 54));
+    border-color: light-dark(rgb(238, 232, 213), rgb(7, 54, 66));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(238, 232, 213), rgb(0, 43, 54));
     border: 1px solid rgb(7, 54, 66);
     border-color: light-dark(rgb(238, 232, 213), rgb(7, 54, 66));
     border-radius: 5px;
@@ -704,7 +722,6 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -724,8 +741,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(0, 43, 54) none 0px;
     text-decoration: none solid rgb(0, 43, 54);
     text-decoration-color: rgb(0, 43, 54);
@@ -749,7 +764,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(101, 123, 131), rgb(131, 148, 150));
     cursor: auto;
@@ -766,8 +781,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -778,7 +791,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(220, 50, 47);
     cursor: pointer;
@@ -795,8 +808,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(220, 50, 47) none 0px;
     text-decoration: none solid rgb(220, 50, 47);
     text-decoration-color: rgb(220, 50, 47);
@@ -914,8 +925,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: line-through solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -1153,9 +1162,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(101, 123, 131), rgb(131, 148, 150));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1180,8 +1186,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(131, 148, 150) none 0px;
     text-decoration: none solid rgb(131, 148, 150);
     text-decoration-color: rgb(131, 148, 150);
@@ -1204,9 +1208,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(101, 123, 131), rgb(131, 148, 150));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

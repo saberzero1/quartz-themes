@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 112, 161, 255;
     background-color: rgba(112, 161, 255, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 83, 82, 237;
-    background-color: rgba(83, 82, 237, 0.1);
     border-color: rgba(83, 82, 237, 0.25);
     border-radius: 8px;
     border-style: solid;
@@ -446,6 +450,10 @@ body {
     text-decoration: none solid rgb(160, 160, 160);
   }
 
+  .graph .graph-outer {
+    border-color: rgb(64, 64, 64);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -469,6 +477,18 @@ body {
       monospace;
   }
 
+  .left.sidebar {
+    background-color: rgb(48, 48, 48);
+    border-color: rgb(64, 64, 64);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(160, 160, 160);
     text-decoration: line-through solid rgb(160, 160, 160);
@@ -484,8 +504,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -505,8 +523,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -526,8 +542,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -547,8 +561,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -568,8 +580,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -589,8 +599,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -601,9 +609,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(64, 64, 64);
+  }
+
+  .right.sidebar {
+    background-color: rgb(48, 48, 48);
+    border-color: rgb(64, 64, 64);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(56, 56, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: rgb(56, 56, 56);
     border: 0px none rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -611,7 +629,6 @@ body {
     font-family:
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -623,8 +640,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -648,7 +663,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     cursor: auto;
@@ -657,8 +672,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -669,7 +682,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(250, 206, 62);
     cursor: pointer;
@@ -678,8 +691,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline solid rgba(251, 211, 81, 0.3);
     text-decoration-color: rgba(251, 211, 81, 0.3);
@@ -761,8 +772,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: line-through solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -940,9 +949,6 @@ body {
 
   ol > li {
     color: rgb(255, 255, 255);
-    margin-inline-start: 28.8984px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -959,8 +965,6 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -983,9 +987,6 @@ body {
 
   ul > li {
     color: rgb(255, 255, 255);
-    margin-inline-start: 28.8984px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

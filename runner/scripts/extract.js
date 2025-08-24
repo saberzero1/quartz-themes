@@ -17,16 +17,22 @@ import { obsidianPage } from "wdio-obsidian-service";
 To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
-const manifestCollection = getManifestCollection().slice(0, 10); // Limit to first 10 themes for testing
+let testingMode = false;
+//testingMode = true;
+
+const manifestCollection = testingMode
+  ? getManifestCollection().slice(0, 10)
+  : getManifestCollection(); // Limit to first 10 themes for testing
 
 // test/extract-styles.test.js
 describe("Quartz Theme Style Extraction", () => {
-  async function getStyles(configuration) {
-    const result = await browser.executeObsidian(async ({ app }, targets) => {
-      computedStyles = {};
-      //app.customCss.setTheme(theme);
-      const rules = targets.selectors;
-      /*
+  async function getStyles(configuration, getGeneric = false) {
+    const result = await browser.executeObsidian(
+      async ({ app }, targets, getGeneric) => {
+        computedStyles = {};
+        //app.customCss.setTheme(theme);
+        const rules = targets.selectors;
+        /*
       const file = app.vault.getAbstractFileByPath(value.file);
       if (!file) {
         throw new Error(
@@ -42,27 +48,28 @@ describe("Quartz Theme Style Extraction", () => {
       leaf.openFile(file, { active: true, eState: "tab" });
       app.workspace.setActiveLeaf(leaf, { focus: true });
       */
-      await sleep(1000); // Wait for the file to open and styles to apply
-      //          for (const key in rules) {
-      rules.forEach((rule) => {
-        const containerSelector =
-          "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content > div.markdown-reading-view > div.markdown-preview-view";
-        const containerElement =
-          //app.dom.appContainerEl.querySelector(containerSelector);
-          //app.workspace.activeLeaf.containerEl;
-          app.workspace.activeLeaf.containerEl.querySelector(
-            ".workspace-leaf-content > .view-content > .markdown-reading-view > .markdown-preview-view",
-          );
-        if (containerElement === null || containerElement === undefined) return;
+        await sleep(1000); // Wait for the file to open and styles to apply
+        //          for (const key in rules) {
+        rules.forEach((rule) => {
+          const containerSelector =
+            "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content > div.markdown-reading-view > div.markdown-preview-view";
+          const containerElement =
+            //app.dom.appContainerEl.querySelector(containerSelector);
+            //app.workspace.activeLeaf.containerEl;
+            app.workspace.activeLeaf.containerEl.querySelector(
+              ".workspace-leaf-content > .view-content > .markdown-reading-view > .markdown-preview-view",
+            );
+          if (containerElement === null || containerElement === undefined)
+            return;
 
-        //const style = app.dom.appContainerEl.getComputedStyle(element);
-        const selectorKey =
-          rule.pseudoElement === ""
-            ? rule.obsidianSelector
-            : `${rule.obsidianSelector}${rule.pseudoElement}`;
-        const element =
-          containerElement.querySelector(selectorKey) ?? containerElement;
-        /*
+          //const style = app.dom.appContainerEl.getComputedStyle(element);
+          const selectorKey =
+            rule.pseudoElement === ""
+              ? rule.obsidianSelector
+              : `${rule.obsidianSelector}${rule.pseudoElement}`;
+          const element =
+            containerElement.querySelector(selectorKey) ?? containerElement;
+          /*
         const style = element.computedStyleMap();
         computedStyles[rule.quartzSelector] = {};
         for (const prop of rule.properties) {
@@ -72,19 +79,19 @@ describe("Quartz Theme Style Extraction", () => {
             : "unset";
         }
         */
-        const style = getComputedStyle(element);
-        computedStyles[rule.quartzSelector] = {};
-        for (const prop of rule.properties) {
-          // Skip properties that are not set
-          computedStyles[rule.quartzSelector][prop] = style.getPropertyValue(
-            prop,
-          )
-            ? style.getPropertyValue(prop).toString().trim()
-            : "unset";
-        }
+          const style = getComputedStyle(element);
+          computedStyles[rule.quartzSelector] = {};
+          for (const prop of rule.properties) {
+            // Skip properties that are not set
+            computedStyles[rule.quartzSelector][prop] = style.getPropertyValue(
+              prop,
+            )
+              ? style.getPropertyValue(prop).toString().trim()
+              : "unset";
+          }
 
-        // BONUS: Handle pseudo-elements like ::before and ::after
-        /*
+          // BONUS: Handle pseudo-elements like ::before and ::after
+          /*
           const beforeStyle = app.dom.appContainerEl.getComputedStyle(
             element,
             "::before",
@@ -94,9 +101,124 @@ describe("Quartz Theme Style Extraction", () => {
             };
           }
           */
-      });
-      return computedStyles;
-    }, configuration);
+        });
+
+        // Extra styles outside the main container
+        const centerElement =
+          app.workspace.activeLeaf.containerEl.querySelector(
+            ".workspace-leaf-content > .view-content",
+          );
+        if (centerElement) {
+          const centerStyle = getComputedStyle(centerElement);
+          computedStyles[`&[data-slug]`] = {
+            "background-color": centerStyle.getPropertyValue("background-color")
+              ? centerStyle
+                  .getPropertyValue("background-color")
+                  .toString()
+                  .trim()
+              : "unset",
+            color: centerStyle.getPropertyValue("color")
+              ? centerStyle.getPropertyValue("color").toString().trim()
+              : "unset",
+          };
+        }
+
+        if (!getGeneric) return computedStyles;
+        const borderElement = document
+          .getRootNode()
+          .querySelector("hr.workspace-leaf-resize-handle");
+        if (borderElement) {
+          const borderStyle = getComputedStyle(borderElement);
+          const centerStyle = getComputedStyle(centerElement);
+          computedStyles[`.popover .popover-inner`] = {
+            "border-color": borderStyle.getPropertyValue("border-color")
+              ? borderStyle
+                  .getPropertyValue("border-left-color")
+                  .toString()
+                  .trim()
+              : "unset",
+            "background-color": centerStyle.getPropertyValue("background-color")
+              ? centerStyle
+                  .getPropertyValue("background-color")
+                  .toString()
+                  .trim()
+              : "unset",
+          };
+          computedStyles[`.graph .graph-outer`] = {
+            "border-color": borderStyle.getPropertyValue("border-color")
+              ? borderStyle
+                  .getPropertyValue("border-left-color")
+                  .toString()
+                  .trim()
+              : "unset",
+          };
+        }
+
+        const leftSidebar = document
+          .getRootNode()
+          .querySelector(
+            ".workspace-split.mod-horizontal.mod-sidedock.mod-left-split",
+          );
+        if (leftSidebar) {
+          const leftSidebarStyle = getComputedStyle(leftSidebar);
+          const borderStyle = getComputedStyle(borderElement);
+          computedStyles[`.left.sidebar`] = {
+            "background-color": leftSidebarStyle.getPropertyValue(
+              "background-color",
+            )
+              ? leftSidebarStyle
+                  .getPropertyValue("background-color")
+                  .toString()
+                  .trim()
+              : "unset",
+            "border-color": borderStyle.getPropertyValue("border-right-color")
+              ? borderStyle
+                  .getPropertyValue("border-right-color")
+                  .toString()
+                  .trim()
+              : "inherit",
+            "border-right-width": "1px",
+          };
+        }
+        const rightSidebar = document
+          .getRootNode()
+          .querySelector(
+            ".workspace-split.mod-horizontal.mod-sidedock.mod-right-split",
+          );
+        if (rightSidebar) {
+          const rightSidebarStyle = getComputedStyle(rightSidebar);
+          const borderStyle = getComputedStyle(borderElement);
+          computedStyles[`.right.sidebar`] = {
+            "background-color": rightSidebarStyle.getPropertyValue(
+              "background-color",
+            )
+              ? rightSidebarStyle
+                  .getPropertyValue("background-color")
+                  .toString()
+                  .trim()
+              : "unset",
+            "border-color": borderStyle.getPropertyValue("border-left-color")
+              ? borderStyle
+                  .getPropertyValue("border-right-color")
+                  .toString()
+                  .trim()
+              : "inherit",
+            "border-left-width": "1px",
+          };
+        }
+
+        // Generic
+        computedStyles[`.page > #quartz-body div.center`] = {
+          "min-width": "unset",
+          "padding-left": "10px",
+          "padding-right": "10px",
+        };
+
+        return computedStyles;
+      },
+      configuration,
+      getGeneric,
+    );
     return result;
   }
 
@@ -205,7 +327,7 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
-        darkResult.general = await getStyles(configuration.general);
+        darkResult.general = await getStyles(configuration.general, true);
         //await darkPage.loadWorkspaceLayout("headings");
         await darkPage.openFile("headings.md");
         await darkPage.openFile("headings.md");
@@ -369,7 +491,7 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
-        lightResult.general = await getStyles(configuration.general);
+        lightResult.general = await getStyles(configuration.general, true);
         //await lightPage.loadWorkspaceLayout("headings");
         await lightPage.openFile("headings.md");
         await lightPage.openFile("headings.md");

@@ -29,9 +29,9 @@ const sets = {
   ],
   list: [
     "color",
-    "padding-top",
-    "padding-bottom",
-    "margin-inline-start",
+    //"padding-top",
+    //"padding-bottom",
+    //"margin-inline-start",
     "text-align",
   ],
   pill: [
@@ -109,14 +109,14 @@ export const extractionTargets = {
       {
         obsidianSelector: `a.external-link`,
         publishSelector: null,
-        quartzSelector: "a",
+        quartzSelector: "a.external",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `a.internal-link`,
         publishSelector: null,
-        quartzSelector: "a.internal-link",
+        quartzSelector: "a.internal",
         pseudoElement: "",
         properties: sets.text,
       },
@@ -361,7 +361,7 @@ export const extractionTargets = {
         quartzSelector: ".search > .search-button",
         pseudoElement: "",
         properties: [
-          "background",
+          "background-color",
           "border",
           "border-color",
           "border-radius",
@@ -561,7 +561,17 @@ export const extractionTargets = {
         publishSelector: null,
         quartzSelector: ".callout[data-callout]",
         pseudoElement: "",
-        properties: sets.callouts.container,
+        properties: [
+          "--callout-color",
+          //"--callout-icon",
+          //"background-color",
+          "border-style",
+          "border-color",
+          "border-width",
+          "border-radius",
+          "mix-blend-mode",
+          "padding",
+        ],
       },
       {
         obsidianSelector: `.callout[data-callout="note"] > .callout-title`,
