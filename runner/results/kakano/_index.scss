@@ -6,6 +6,17 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(
+      rgb(255, 255, 255),
+      color(srgb 0.007425 0.0199875 0.037575)
+    );
+    color: light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -452,10 +463,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -543,6 +550,13 @@ body {
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -580,6 +594,21 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
+  .left.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(
       color(srgb 0.01485 0.039975 0.07515 / 0.7),
@@ -603,8 +632,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -629,8 +656,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -655,8 +680,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -681,8 +704,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -707,8 +728,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -733,8 +752,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -745,9 +762,31 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(
+      rgb(255, 255, 255),
+      color(srgb 0.007425 0.0199875 0.037575)
+    );
+    border-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+  }
+
+  .right.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: color(srgb 0 0 0 / 0.06) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background-color: light-dark(
+      color(srgb 0.1485 0.39975 0.7515 / 0.12),
+      color(srgb 0 0 0 / 0.06)
+    );
     border: 0px none color(srgb 0.6594 0.7599 0.9006);
     border-color: light-dark(
       color(srgb 0.01485 0.039975 0.07515),
@@ -763,7 +802,6 @@ body {
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -780,8 +818,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -808,7 +844,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(
       color(srgb 0.01485 0.039975 0.07515),
@@ -822,8 +858,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -834,7 +868,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
@@ -845,8 +879,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(166, 138, 249) none 0px;
     text-decoration: underline 1px dashed rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -949,8 +981,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: line-through solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -1185,9 +1215,6 @@ body {
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
     );
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1212,8 +1239,6 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
     text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
@@ -1242,9 +1267,6 @@ body {
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
     );
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

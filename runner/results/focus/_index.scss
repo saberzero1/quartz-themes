@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgb(26, 26, 26);
+    color: rgb(144, 144, 144);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 139, 240, 219;
     background-color: rgba(139, 240, 219, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 151, 192, 243;
-    background-color: rgba(151, 192, 243, 0.1);
     border-color: rgb(151, 192, 243);
     border-radius: 0px;
     border-style: solid;
@@ -446,6 +450,10 @@ body {
     text-decoration: none solid rgb(112, 112, 112);
   }
 
+  .graph .graph-outer {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -470,6 +478,18 @@ body {
       "Source Code Pro", monospace;
   }
 
+  .left.sidebar {
+    background-color: rgb(18, 18, 18);
+    border-color: rgba(0, 0, 0, 0);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(112, 112, 112);
     text-decoration: line-through solid rgb(112, 112, 112);
@@ -485,8 +505,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -506,8 +524,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: none solid rgb(234, 169, 255);
     text-decoration-color: rgb(234, 169, 255);
@@ -527,8 +543,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -548,8 +562,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -569,8 +581,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(165, 230, 147) none 0px;
     text-decoration: none solid rgb(165, 230, 147);
     text-decoration-color: rgb(165, 230, 147);
@@ -590,8 +600,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -602,9 +610,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgb(26, 26, 26);
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .right.sidebar {
+    background-color: rgb(18, 18, 18);
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: rgb(34, 34, 34);
     border: 0px solid rgb(34, 34, 34);
     border-color: rgb(34, 34, 34);
     border-radius: 0px;
@@ -612,7 +630,6 @@ body {
     font-family:
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -624,8 +641,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -649,7 +664,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(144, 144, 144);
     cursor: auto;
@@ -658,8 +673,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -670,7 +683,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(234, 169, 255);
     cursor: pointer;
@@ -679,8 +692,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: underline solid rgba(165, 230, 147, 0.3);
     text-decoration-color: rgba(165, 230, 147, 0.3);
@@ -763,8 +774,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(80, 80, 80) none 0px;
     text-decoration: line-through solid rgb(80, 80, 80);
     text-decoration-color: rgb(80, 80, 80);
@@ -946,9 +955,6 @@ body {
 
   ol > li {
     color: rgb(144, 144, 144);
-    margin-inline-start: 28.8px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -965,8 +971,6 @@ body {
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: none solid rgb(144, 144, 144);
     text-decoration-color: rgb(144, 144, 144);
@@ -989,9 +993,6 @@ body {
 
   ul > li {
     color: rgb(144, 144, 144);
-    margin-inline-start: 28.8px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

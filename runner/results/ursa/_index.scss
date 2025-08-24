@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -480,6 +481,10 @@ body {
     text-decoration: none solid rgb(178, 178, 178);
   }
 
+  .graph .graph-outer {
+    border-color: rgba(146, 161, 161, 0.48);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -497,6 +502,18 @@ body {
     font-family: Avenir, "Avenir Next";
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     text-decoration: line-through solid rgb(179, 179, 179);
@@ -510,8 +527,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -529,8 +544,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -548,8 +561,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -567,8 +578,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -586,8 +595,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 900;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -605,8 +612,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -617,15 +622,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(42, 42, 42) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
     border: 1px solid rgba(146, 161, 161, 0.48);
     border-color: rgba(146, 161, 161, 0.48);
     border-radius: 5px;
     color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     font-family: Avenir, "Avenir Next";
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -635,8 +649,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -660,15 +672,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -679,15 +689,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(219, 77, 82), rgb(107, 202, 251));
     cursor: pointer;
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(107, 202, 251) none 0px;
     text-decoration: none solid rgb(107, 202, 251);
     text-decoration-color: rgb(107, 202, 251);
@@ -782,8 +790,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: line-through solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -951,9 +957,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
-    margin-inline-start: 25.02px;
-    padding-bottom: 1.125px;
-    padding-top: 1.125px;
     text-align: start;
   }
 
@@ -968,8 +971,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(221, 221, 221) none 0px;
     text-decoration: none solid rgb(221, 221, 221);
     text-decoration-color: rgb(221, 221, 221);
@@ -992,9 +993,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
-    margin-inline-start: 25.02px;
-    padding-bottom: 1.125px;
-    padding-top: 1.125px;
     text-align: start;
   }
 

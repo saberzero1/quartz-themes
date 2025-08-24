@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
+    color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 0, 194, 97;
     background-color: rgba(0, 194, 97, 0.1);
@@ -380,7 +385,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 0, 105, 224;
-    background-color: rgba(0, 105, 224, 0.1);
     border-color: rgba(0, 105, 224, 0.3);
     border-radius: 0px;
     border-style: solid;
@@ -441,6 +445,10 @@ body {
     text-decoration: none solid rgb(208, 212, 217);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -459,6 +467,18 @@ body {
     font-family: Arial, Archivo, sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(246, 246, 246), rgb(39, 40, 43));
+    border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(90, 90, 90), rgb(208, 212, 217));
     text-decoration: line-through solid rgb(208, 212, 217);
@@ -472,8 +492,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -491,8 +509,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -510,8 +526,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -529,8 +543,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -548,8 +560,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -567,8 +577,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -579,15 +587,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
+    border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(246, 246, 246), rgb(39, 40, 43));
+    border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(47, 49, 53) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 49, 53));
     border: 1px solid rgba(218, 225, 234, 0.192);
     border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
     border-radius: 0px;
     color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
     font-family: Arial, Archivo, sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -597,8 +614,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -622,15 +637,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
     cursor: auto;
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -641,15 +654,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(25, 105, 217), rgb(95, 166, 236));
     cursor: pointer;
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(95, 166, 236) none 0px;
     text-decoration: none solid rgba(27, 111, 228, 0.3);
     text-decoration-color: rgba(27, 111, 228, 0.3);
@@ -724,8 +735,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: line-through solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -889,9 +898,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
-    margin-inline-start: 26.6953px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -906,8 +912,6 @@ body {
     filter: none;
     font-family: Arial, Archivo, sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(216, 220, 227) none 0px;
     text-decoration: none solid rgb(216, 220, 227);
     text-decoration-color: rgb(216, 220, 227);
@@ -930,9 +934,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
-    margin-inline-start: 26.6953px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

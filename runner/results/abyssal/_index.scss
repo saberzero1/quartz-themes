@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(246, 249, 251), rgb(14, 22, 27));
+    color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 129, 213, 208;
     background-color: light-dark(
@@ -440,10 +445,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 4, 165, 255;
-    background-color: light-dark(
-      rgba(4, 119, 255, 0.15),
-      rgba(4, 165, 255, 0.1)
-    );
     border-color: light-dark(rgba(4, 119, 255, 0.25), rgba(4, 165, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -534,6 +535,10 @@ body {
     text-decoration: none solid rgb(122, 163, 184);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(207, 218, 226), rgb(20, 31, 37));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -567,6 +572,18 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+  }
+
+  .left.sidebar {
+    background-color: light-dark(rgb(239, 243, 246), rgb(7, 11, 13));
+    border-color: light-dark(rgb(207, 218, 226), rgb(20, 31, 37));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -737,9 +754,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(246, 249, 251), rgb(14, 22, 27));
+    border-color: light-dark(rgb(207, 218, 226), rgb(20, 31, 37));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(239, 243, 246), rgb(7, 11, 13));
+    border-color: light-dark(rgb(207, 218, 226), rgb(20, 31, 37));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(18, 28, 33) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(246, 249, 251), rgb(18, 28, 33));
     border: 1px solid rgb(20, 31, 37);
     border-color: light-dark(rgb(207, 218, 226), rgb(20, 31, 37));
     border-radius: 5px;
@@ -797,7 +824,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
     cursor: auto;
@@ -824,7 +851,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(82, 105, 122), rgb(60, 167, 221));
     cursor: pointer;
@@ -1188,9 +1215,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 8px;
-    padding-top: 8px;
     text-align: start;
   }
 
@@ -1237,9 +1261,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
-    margin-inline-start: 30.2344px;
-    padding-bottom: 8px;
-    padding-top: 8px;
     text-align: start;
   }
 

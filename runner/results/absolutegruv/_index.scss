@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgb(40, 40, 40);
+    color: rgb(235, 219, 178);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: rgba(83, 223, 221, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
     border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
@@ -470,6 +474,10 @@ body {
     text-decoration: none solid rgb(179, 179, 179);
   }
 
+  .graph .graph-outer {
+    border-color: rgb(146, 131, 116);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -503,6 +511,18 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+  }
+
+  .left.sidebar {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(146, 131, 116);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -673,9 +693,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(146, 131, 116);
+  }
+
+  .right.sidebar {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(146, 131, 116);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(42, 42, 42) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: rgb(42, 42, 42);
     border: 1px solid rgb(146, 131, 116);
     border-color: rgb(146, 131, 116);
     border-radius: 5px;
@@ -733,7 +763,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(235, 219, 178);
     cursor: auto;
@@ -760,7 +790,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(104, 157, 106);
     cursor: pointer;
@@ -1121,9 +1151,6 @@ body {
 
   ol > li {
     color: rgb(235, 219, 178);
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1170,9 +1197,6 @@ body {
 
   ul > li {
     color: rgb(235, 219, 178);
-    margin-inline-start: 30.2344px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

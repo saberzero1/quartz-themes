@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(32, 32, 32));
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -469,10 +474,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(
       rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25)
         rgba(8, 109, 221, 0.15),
@@ -589,6 +590,10 @@ body {
     text-decoration: none solid rgb(138, 138, 138);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(227, 227, 227), rgb(0, 0, 0));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -638,6 +643,18 @@ body {
       sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    border-color: light-dark(rgb(227, 227, 227), rgb(0, 0, 0));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(127, 127, 127), rgb(138, 138, 138));
     text-decoration: none solid rgb(138, 138, 138);
@@ -668,8 +685,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -704,8 +719,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(164, 202, 142) none 0px;
     text-decoration: none solid rgb(164, 202, 142);
     text-decoration-color: rgb(164, 202, 142);
@@ -740,8 +753,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -776,8 +787,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -814,8 +823,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 700;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(231, 231, 231) none 0px;
     text-decoration: none solid rgb(231, 231, 231);
     text-decoration-color: rgb(231, 231, 231);
@@ -850,8 +857,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -862,9 +867,22 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(32, 32, 32));
+    border-color: light-dark(rgb(227, 227, 227), rgb(0, 0, 0));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(243, 243, 243), rgb(0, 0, 0));
+    border-color: light-dark(rgb(227, 227, 227), rgb(0, 0, 0));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgba(46, 46, 46, 0.616) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background-color: light-dark(
+      rgba(255, 255, 255, 0.824),
+      rgba(46, 46, 46, 0.616)
+    );
     border: 1px solid rgb(52, 52, 52);
     border-color: light-dark(rgb(221, 221, 221), rgb(52, 52, 52));
     border-radius: 5px;
@@ -887,7 +905,6 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -917,8 +934,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -942,7 +957,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     cursor: auto;
@@ -966,8 +981,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -978,7 +991,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgba(219, 78, 78, 0.8), rgba(240, 128, 128, 0.87));
     cursor: pointer;
@@ -1004,8 +1017,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgba(240, 128, 128, 0.87) none 0px;
     text-decoration: underline solid rgba(240, 128, 128, 0.87);
     text-decoration-color: rgba(240, 128, 128, 0.87);
@@ -1151,8 +1162,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: line-through solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -1479,9 +1488,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
-    margin-inline-start: 30px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1513,8 +1519,6 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(198, 198, 198) none 0px;
     text-decoration: none solid rgb(198, 198, 198);
     text-decoration-color: rgb(198, 198, 198);
@@ -1537,9 +1541,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
-    margin-inline-start: 30px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

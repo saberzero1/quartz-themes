@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgb(54, 69, 73);
+    color: rgb(251, 241, 199);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: rgba(83, 223, 221, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
     border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
@@ -440,6 +444,10 @@ body {
     text-decoration: none solid rgb(213, 196, 161);
   }
 
+  .graph .graph-outer {
+    border-color: rgb(242, 229, 188);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -458,6 +466,18 @@ body {
     font-family: Avenir, "Avenir Next", sans-serif;
   }
 
+  .left.sidebar {
+    background-color: rgb(65, 83, 88);
+    border-color: rgb(242, 229, 188);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(213, 196, 161);
     text-decoration: line-through solid rgb(213, 196, 161);
@@ -471,8 +491,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -490,8 +508,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(213, 196, 161) none 0px;
     text-decoration: none solid rgb(213, 196, 161);
     text-decoration-color: rgb(213, 196, 161);
@@ -509,8 +525,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -528,8 +542,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -547,8 +559,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -566,8 +576,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -578,15 +586,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgb(54, 69, 73);
+    border-color: rgb(242, 229, 188);
+  }
+
+  .right.sidebar {
+    background-color: rgb(65, 83, 88);
+    border-color: rgb(242, 229, 188);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(242, 229, 188);
     border-color: rgb(242, 229, 188);
     border-radius: 5px;
     color: rgb(251, 241, 199);
     font-family: Avenir, "Avenir Next", sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -596,8 +613,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -621,15 +636,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(251, 241, 199);
     cursor: auto;
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -640,15 +653,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(254, 128, 25);
     cursor: pointer;
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(254, 128, 25) none 0px;
     text-decoration: none solid rgb(254, 128, 25);
     text-decoration-color: rgb(254, 128, 25);
@@ -743,8 +754,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: line-through solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -908,9 +917,6 @@ body {
 
   ol > li {
     color: rgb(251, 241, 199);
-    margin-inline-start: 25.02px;
-    padding-bottom: 1.125px;
-    padding-top: 1.125px;
     text-align: start;
   }
 
@@ -925,8 +931,6 @@ body {
     filter: none;
     font-family: Avenir, "Avenir Next", sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(251, 241, 199) none 0px;
     text-decoration: none solid rgb(251, 241, 199);
     text-decoration-color: rgb(251, 241, 199);
@@ -949,9 +953,6 @@ body {
 
   ul > li {
     color: rgb(251, 241, 199);
-    margin-inline-start: 25.02px;
-    padding-bottom: 1.125px;
-    padding-top: 1.125px;
     text-align: start;
   }
 

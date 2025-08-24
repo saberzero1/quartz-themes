@@ -1,4 +1,8 @@
 {
+  "&[data-slug]": {
+    "background-color": "oklch(1 0 0)",
+    "color": "oklch(0 0 0)"
+  },
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "91, 197, 219",
     "background-color": "rgba(91, 197, 219, 0.125)",
@@ -6,7 +10,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
@@ -32,7 +36,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
@@ -58,7 +62,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
@@ -84,7 +88,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
@@ -110,7 +114,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
@@ -136,7 +140,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
@@ -162,7 +166,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
@@ -188,7 +192,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
@@ -214,7 +218,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
@@ -240,7 +244,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
@@ -266,7 +270,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
@@ -292,7 +296,7 @@
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
@@ -313,12 +317,11 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "0, 191, 111",
-    "background-color": "rgba(0, 191, 111, 0.125)",
     "border-color": "oklch(0.706959 0.173724 155.295) oklch(0.706959 0.173724 155.295) oklch(0.706959 0.173724 155.295) rgb(0, 191, 111)",
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "normal",
     "padding": "0px"
   },
   ".callout[data-callout] .callout-title": {
@@ -362,6 +365,7 @@
     "font-weight": "400",
     "text-decoration": "none solid oklch(0.3 0 0)"
   },
+  ".graph .graph-outer": { "border-color": "oklch(0.8 0 0)" },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
@@ -371,6 +375,16 @@
   },
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
+  },
+  ".left.sidebar": {
+    "background-color": "oklch(0.95 0 0)",
+    "border-color": "oklch(0.8 0 0)",
+    "border-right-width": "1px"
+  },
+  ".page > #quartz-body div.center": {
+    "min-width": "unset",
+    "padding-left": "10px",
+    "padding-right": "10px"
   },
   ".page article li:has(>input[type=checkbox]:checked)": {
     "color": "oklch(0.3 0 0)",
@@ -384,8 +398,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -402,8 +414,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -420,8 +430,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -438,8 +446,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -456,8 +462,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "600",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -474,8 +478,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -485,14 +487,22 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".popover .popover-inner": {
+    "background-color": "oklch(1 0 0)",
+    "border-color": "oklch(0.8 0 0)"
+  },
+  ".right.sidebar": {
+    "background-color": "oklch(0.95 0 0)",
+    "border-color": "oklch(0.8 0 0)",
+    "border-left-width": "1px"
+  },
   ".search > .search-button": {
-    "background": "oklch(0.99 0 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "background-color": "oklch(0.99 0 0)",
     "border": "0px solid oklch(0.8 0 0)",
     "border-color": "oklch(0.8 0 0)",
     "border-radius": "3px",
     "color": "oklch(0 0 0)",
-    "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
-    "padding": "4px 8px"
+    "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
   },
   ".text-highlight": {
     "background-color": "rgb(255, 195, 0)",
@@ -501,8 +511,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "rgb(0, 0, 0) none 0px",
     "text-decoration": "none solid rgb(0, 0, 0)",
     "text-decoration-color": "rgb(0, 0, 0)",
@@ -521,15 +529,13 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
-  "a": {
+  "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0 0 0)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -539,15 +545,13 @@
     "transition": "all",
     "user-select": "text"
   },
-  "a.internal-link": {
+  "a.internal": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.4014 0.0638 202.51)",
     "cursor": "pointer",
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0.4014 0.0638 202.51) none 0px",
     "text-decoration": "underline solid oklch(0.707 0.1737 155.3 / 0.3)",
     "text-decoration-color": "oklch(0.707 0.1737 155.3 / 0.3)",
@@ -611,8 +615,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "0px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "line-through solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -738,13 +740,7 @@
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
-  "ol > li": {
-    "color": "oklch(0 0 0)",
-    "margin-inline-start": "30.1875px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ol > li": { "color": "oklch(0 0 0)", "text-align": "start" },
   "ol > li::marker": { "color": "oklch(0 0 0)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -753,8 +749,6 @@
     "filter": "none",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
     "font-weight": "400",
-    "margin-block-end": "12px",
-    "margin-block-start": "0px",
     "outline": "oklch(0 0 0) none 0px",
     "text-decoration": "none solid oklch(0 0 0)",
     "text-decoration-color": "oklch(0 0 0)",
@@ -773,13 +767,7 @@
     "padding": "0px",
     "white-space": "pre-wrap"
   },
-  "ul > li": {
-    "color": "oklch(0 0 0)",
-    "margin-inline-start": "30.1875px",
-    "padding-bottom": "1.2px",
-    "padding-top": "1.2px",
-    "text-align": "start"
-  },
+  "ul > li": { "color": "oklch(0 0 0)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",
