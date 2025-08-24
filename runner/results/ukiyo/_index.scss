@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -463,7 +468,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(rgba(2, 95, 200, 0.1), rgba(2, 122, 255, 0.1));
     border-color: light-dark(
       rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25)
         rgb(2, 95, 200),
@@ -529,6 +533,10 @@ body {
     text-decoration: none solid rgb(178, 166, 153);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -544,6 +552,18 @@ body {
     font-family: "CMU Typewriter Text";
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
     text-decoration: line-through solid rgb(178, 166, 153);
@@ -557,8 +577,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -576,8 +594,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(231, 122, 89) none 0px;
     text-decoration: none solid rgb(231, 122, 89);
     text-decoration-color: rgb(231, 122, 89);
@@ -595,8 +611,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -614,8 +628,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -633,8 +645,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(186, 148, 95) none 0px;
     text-decoration: none solid rgb(186, 148, 95);
     text-decoration-color: rgb(186, 148, 95);
@@ -652,8 +662,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -664,15 +672,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(43, 39, 35) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(225, 196, 166), rgb(43, 39, 35));
     border: 1px solid rgb(80, 68, 49);
     border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
     border-radius: 5px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-family: "CMU Typewriter Text";
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -682,8 +699,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -707,15 +722,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     cursor: auto;
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -726,15 +739,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
     cursor: pointer;
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(186, 148, 95) none 0px;
     text-decoration: underline solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -806,8 +817,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: line-through solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -971,9 +980,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
-    margin-inline-start: 25.1953px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -988,8 +994,6 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(204, 194, 183) none 0px;
     text-decoration: none solid rgb(204, 194, 183);
     text-decoration-color: rgb(204, 194, 183);
@@ -1012,9 +1016,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
-    margin-inline-start: 25.1953px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

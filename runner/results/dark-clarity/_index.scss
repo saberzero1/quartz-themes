@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
+    color: light-dark(rgb(34, 34, 34), rgb(222, 222, 222));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -486,6 +487,10 @@ body {
     text-decoration: none solid rgb(117, 126, 138);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -506,6 +511,18 @@ body {
     font-family:
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
+  }
+
+  .left.sidebar {
+    background-color: light-dark(rgb(246, 246, 246), rgb(17, 22, 29));
+    border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -531,8 +548,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -552,8 +567,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -581,8 +594,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -610,8 +621,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -631,8 +640,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 800;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -660,8 +667,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -672,9 +677,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
+    border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(246, 246, 246), rgb(17, 22, 29));
+    border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.3));
     border: 1px solid rgb(66, 73, 88);
     border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
     border-radius: 5px;
@@ -682,7 +697,6 @@ body {
     font-family:
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -697,8 +711,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -722,7 +734,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(222, 222, 222));
     cursor: auto;
@@ -739,8 +751,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -751,7 +761,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(81, 179, 133);
     cursor: pointer;
@@ -760,8 +770,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: none solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -851,8 +859,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: line-through solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -1038,9 +1044,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(34, 34, 34), rgb(222, 222, 222));
-    margin-inline-start: 48px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1057,8 +1060,6 @@ body {
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(222, 222, 222) none 0px;
     text-decoration: none solid rgb(222, 222, 222);
     text-decoration-color: rgb(222, 222, 222);
@@ -1081,9 +1082,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(34, 34, 34), rgb(222, 222, 222));
-    margin-inline-start: 48px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
