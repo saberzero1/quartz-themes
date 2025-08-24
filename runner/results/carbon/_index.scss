@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(22, 22, 22));
+    color: light-dark(rgb(38, 38, 38), rgb(244, 244, 244));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 0px;
     border-style: solid;
@@ -522,6 +523,10 @@ body {
     text-decoration: none solid rgb(179, 179, 179);
   }
 
+  .graph .graph-outer {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -565,6 +570,18 @@ body {
       sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(244, 244, 244), rgb(38, 38, 38));
+    border-color: rgba(0, 0, 0, 0);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     text-decoration: line-through solid rgb(179, 179, 179);
@@ -592,8 +609,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -625,8 +640,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -658,8 +671,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -691,8 +702,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -724,8 +733,6 @@ body {
       arial,
       sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -757,8 +764,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -769,9 +774,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(22, 22, 22));
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(244, 244, 244), rgb(38, 38, 38));
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(42, 42, 42) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
     border: unset;
     border-color: light-dark(
       rgb(38, 38, 38) rgb(38, 38, 38) rgb(141, 141, 141),
@@ -794,7 +809,6 @@ body {
       noto,
       arial,
       sans-serif;
-    padding: 8px;
   }
 
   .text-highlight {
@@ -818,8 +832,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -843,7 +855,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(38, 38, 38), rgb(244, 244, 244));
     cursor: auto;
@@ -864,8 +876,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -876,7 +886,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(15, 98, 254), rgb(56, 136, 255));
     cursor: pointer;
@@ -897,8 +907,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(56, 136, 255) none 0px;
     text-decoration: underline solid rgba(16, 100, 254, 0.3);
     text-decoration-color: rgba(16, 100, 254, 0.3);
@@ -1028,8 +1036,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: line-through solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -1295,9 +1301,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(38, 38, 38), rgb(244, 244, 244));
-    margin-inline-start: 28.8px;
-    padding-bottom: 0.8px;
-    padding-top: 0.8px;
     text-align: start;
   }
 
@@ -1326,8 +1329,6 @@ body {
       arial,
       sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(244, 244, 244) none 0px;
     text-decoration: none solid rgb(244, 244, 244);
     text-decoration-color: rgb(244, 244, 244);
@@ -1350,9 +1351,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(38, 38, 38), rgb(244, 244, 244));
-    margin-inline-start: 28.8px;
-    padding-bottom: 0.8px;
-    padding-top: 0.8px;
     text-align: start;
   }
 

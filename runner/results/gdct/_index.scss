@@ -5,6 +5,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgb(254, 254, 254);
+    color: rgb(39, 56, 75);
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 0, 191, 188;
     background-color: rgba(0, 191, 188, 0.1);
@@ -379,7 +384,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 8, 109, 221;
-    background-color: rgba(8, 109, 221, 0.1);
     border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
@@ -446,6 +450,10 @@ body {
     text-decoration: none solid rgb(130, 130, 130);
   }
 
+  .graph .graph-outer {
+    border-color: rgb(130, 130, 130);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -468,6 +476,18 @@ body {
       "Times New Roman";
   }
 
+  .left.sidebar {
+    background-color: rgb(254, 254, 254);
+    border-color: rgb(130, 130, 130);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(130, 130, 130);
     text-decoration: line-through solid rgb(130, 130, 130);
@@ -483,8 +503,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -504,8 +522,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -525,8 +541,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -546,8 +560,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -567,8 +579,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -588,8 +598,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -600,9 +608,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgb(254, 254, 254);
+    border-color: rgb(130, 130, 130);
+  }
+
+  .right.sidebar {
+    background-color: rgb(254, 254, 254);
+    border-color: rgb(130, 130, 130);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(254, 254, 254) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: rgb(254, 254, 254);
     border: 1px solid rgb(130, 130, 130);
     border-color: rgb(130, 130, 130);
     border-radius: 5px;
@@ -610,7 +628,6 @@ body {
     font-family:
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -622,8 +639,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -647,7 +662,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgb(254, 254, 254);
     color: rgb(39, 56, 75);
     cursor: auto;
@@ -656,8 +671,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -668,7 +681,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(193, 94, 80);
     cursor: pointer;
@@ -677,8 +690,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(193, 94, 80) none 0px;
     text-decoration: none solid rgb(193, 94, 80);
     text-decoration-color: rgb(193, 94, 80);
@@ -777,8 +788,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: line-through solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -956,9 +965,6 @@ body {
 
   ol > li {
     color: rgb(39, 56, 75);
-    margin-inline-start: 43.3477px;
-    padding-bottom: 1.8px;
-    padding-top: 1.8px;
     text-align: start;
   }
 
@@ -975,8 +981,6 @@ body {
       "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(39, 56, 75) none 0px;
     text-decoration: none solid rgb(39, 56, 75);
     text-decoration-color: rgb(39, 56, 75);
@@ -999,9 +1003,6 @@ body {
 
   ul > li {
     color: rgb(39, 56, 75);
-    margin-inline-start: 43.3477px;
-    padding-bottom: 1.8px;
-    padding-top: 1.8px;
     text-align: start;
   }
 

@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 42, 39));
+    color: light-dark(rgb(45, 44, 44), rgb(255, 255, 255));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -480,6 +481,10 @@ body {
     text-decoration: none solid rgb(240, 234, 226);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -499,6 +504,18 @@ body {
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 42, 39));
+    border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(148, 148, 148), rgb(240, 234, 226));
     text-decoration: line-through solid rgb(240, 234, 226);
@@ -512,8 +529,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -531,8 +546,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -550,8 +563,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -569,8 +580,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -588,8 +597,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -607,8 +614,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -619,15 +624,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 42, 39));
+    border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 42, 39));
+    border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(47, 42, 39) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 42, 39));
     border: 1px solid rgb(56, 49, 46);
     border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
     border-radius: 5px;
     color: light-dark(rgb(45, 44, 44), rgb(255, 255, 255));
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -637,8 +651,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -662,15 +674,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(45, 44, 44), rgb(255, 255, 255));
     cursor: auto;
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -681,15 +691,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(148, 148, 148), rgb(240, 234, 226));
     cursor: pointer;
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(240, 234, 226) none 0px;
     text-decoration: underline solid rgb(240, 234, 226);
     text-decoration-color: rgb(240, 234, 226);
@@ -771,8 +779,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: line-through solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -938,9 +944,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(45, 44, 44), rgb(255, 255, 255));
-    margin-inline-start: 27.84px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -955,8 +958,6 @@ body {
     filter: none;
     font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
     font-weight: 400;
-    margin-block-end: 20px;
-    margin-block-start: 0px;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: rgb(255, 255, 255);
@@ -979,9 +980,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(45, 44, 44), rgb(255, 255, 255));
-    margin-inline-start: 27.84px;
-    padding-bottom: 5px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

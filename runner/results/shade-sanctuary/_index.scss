@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -413,10 +418,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.3), rgba(2, 122, 255, 0.3));
     border-radius: 6px;
     border-style: solid;
@@ -477,6 +478,10 @@ body {
     text-decoration: none solid color(srgb 0.566367 0.4332 0.7528);
   }
 
+  .graph .graph-outer {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -495,6 +500,18 @@ body {
     font-family: "Computer Modern", Inter, sans-serif;
   }
 
+  .left.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(92, 92, 92), color(srgb 0.566367 0.4332 0.7528));
     text-decoration: line-through solid color(srgb 0.566367 0.4332 0.7528);
@@ -508,8 +525,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -527,8 +542,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -546,8 +559,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -565,8 +576,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -584,8 +593,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 900;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -603,8 +610,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -615,9 +620,22 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .right.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: color(srgb 0.0792 0.0352 0.1408) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background-color: light-dark(
+      rgb(255, 255, 255),
+      color(srgb 0.0792 0.0352 0.1408)
+    );
     border: 1px solid color(srgb 0.165767 0.0996 0.2584);
     border-color: light-dark(
       rgb(224, 224, 224),
@@ -626,7 +644,6 @@ body {
     border-radius: 5px;
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
     font-family: "Computer Modern", Inter, sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -639,8 +656,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -664,15 +679,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
     cursor: auto;
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -683,15 +696,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(166, 138, 249) none 0px;
     text-decoration: underline solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -785,8 +796,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: line-through solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -972,9 +981,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
-    margin-inline-start: 24px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -989,8 +995,6 @@ body {
     filter: none;
     font-family: "Computer Modern", Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 10px;
-    margin-block-start: 0px;
     outline: rgb(250, 244, 237) none 0px;
     text-decoration: none solid rgb(250, 244, 237);
     text-decoration-color: rgb(250, 244, 237);
@@ -1013,9 +1017,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
-    margin-inline-start: 24px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

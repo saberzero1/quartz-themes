@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(252, 245, 228), rgb(38, 38, 38));
+    color: light-dark(rgb(38, 38, 38), rgb(197, 184, 161));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 2px;
     border-style: solid;
@@ -480,6 +481,10 @@ body {
     text-decoration: none solid rgb(153, 153, 153);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(230, 230, 230), rgb(51, 51, 51));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -495,6 +500,18 @@ body {
     font-family: "iA Writer Quattro S";
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(228, 220, 200), rgb(58, 52, 46));
+    border-color: light-dark(rgb(230, 230, 230), rgb(51, 51, 51));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(89, 89, 89), rgb(153, 153, 153));
     text-decoration: line-through solid rgb(153, 153, 153);
@@ -508,8 +525,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -527,8 +542,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -546,8 +559,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -565,8 +576,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -584,8 +593,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -603,8 +610,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -615,15 +620,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(252, 245, 228), rgb(38, 38, 38));
+    border-color: light-dark(rgb(230, 230, 230), rgb(51, 51, 51));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(228, 220, 200), rgb(58, 52, 46));
+    border-color: light-dark(rgb(230, 230, 230), rgb(51, 51, 51));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.3));
     border: 1px solid rgb(51, 51, 51);
     border-color: light-dark(rgb(230, 230, 230), rgb(51, 51, 51));
     border-radius: 5px;
     color: light-dark(rgb(38, 38, 38), rgb(197, 184, 161));
     font-family: "iA Writer Quattro S";
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -636,8 +650,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -661,15 +673,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(38, 38, 38), rgb(197, 184, 161));
     cursor: auto;
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -680,15 +690,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(81, 157, 92), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(166, 138, 249) none 0px;
     text-decoration: none solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -782,8 +790,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: line-through solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -951,9 +957,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(38, 38, 38), rgb(197, 184, 161));
-    margin-inline-start: 28.8px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -968,8 +971,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro S";
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(197, 184, 161) none 0px;
     text-decoration: none solid rgb(197, 184, 161);
     text-decoration-color: rgb(197, 184, 161);
@@ -992,9 +993,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(38, 38, 38), rgb(197, 184, 161));
-    margin-inline-start: 28.8px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

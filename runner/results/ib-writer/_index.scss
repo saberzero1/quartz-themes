@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(247, 247, 247), rgb(27, 26, 27));
+    color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
     background-color: light-dark(
@@ -416,10 +421,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -480,6 +481,10 @@ body {
     text-decoration: none solid rgb(179, 179, 179);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -495,6 +500,18 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "iA Writer Quattro V", sans-serif;
+  }
+
+  .left.sidebar {
+    background-color: light-dark(rgb(253, 253, 253), rgb(20, 20, 20));
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -521,8 +538,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -540,8 +555,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -570,8 +583,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -600,8 +611,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -619,8 +628,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -649,8 +656,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -661,15 +666,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(247, 247, 247), rgb(27, 26, 27));
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(253, 253, 253), rgb(20, 20, 20));
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(42, 42, 42) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(247, 247, 247), rgb(42, 42, 42));
     border: 1px solid rgb(54, 54, 54);
     border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-radius: 5px;
     color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     font-family: "iA Writer Quattro V", sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -679,8 +693,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -704,7 +716,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     cursor: auto;
@@ -722,8 +734,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -734,15 +744,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(255, 255, 255, 0);
     color: light-dark(rgb(26, 26, 26), rgb(22, 81, 97));
     cursor: pointer;
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(22, 81, 97) none 0px;
     text-decoration: underline solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -839,8 +847,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: line-through solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -1019,9 +1025,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
-    margin-inline-start: 32.4px;
-    padding-bottom: 1.35px;
-    padding-top: 1.35px;
     text-align: start;
   }
 
@@ -1036,8 +1039,6 @@ body {
     filter: none;
     font-family: "iA Writer Quattro V", sans-serif;
     font-weight: 400;
-    margin-block-end: 40px;
-    margin-block-start: 40px;
     outline: rgb(204, 204, 204) none 0px;
     text-decoration: none solid rgb(204, 204, 204);
     text-decoration-color: rgb(204, 204, 204);
@@ -1060,9 +1061,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
-    margin-inline-start: 32.4px;
-    padding-bottom: 1.35px;
-    padding-top: 1.35px;
     text-align: start;
   }
 

@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(rgb(216, 214, 216), rgb(29, 31, 33));
+    color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 94, 141, 135;
     background-color: rgba(94, 141, 135, 0.1);
@@ -413,10 +418,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
     border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
@@ -477,6 +478,10 @@ body {
     text-decoration: none solid rgb(167, 166, 168);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(rgb(177, 176, 178), rgb(68, 70, 72));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -494,6 +499,18 @@ body {
     font-family: Inter, sans-serif;
   }
 
+  .left.sidebar {
+    background-color: light-dark(rgb(196, 195, 197), rgb(49, 50, 52));
+    border-color: light-dark(rgb(177, 176, 178), rgb(68, 70, 72));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(78, 79, 81), rgb(167, 166, 168));
     text-decoration: line-through solid rgb(167, 166, 168);
@@ -507,8 +524,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -526,8 +541,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -545,8 +558,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -564,8 +575,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -583,8 +592,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -602,8 +609,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -614,15 +619,24 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(rgb(216, 214, 216), rgb(29, 31, 33));
+    border-color: light-dark(rgb(177, 176, 178), rgb(68, 70, 72));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(rgb(196, 195, 197), rgb(49, 50, 52));
+    border-color: light-dark(rgb(177, 176, 178), rgb(68, 70, 72));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: rgb(78, 79, 81) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(rgb(216, 214, 216), rgb(78, 79, 81));
     border: 1px solid rgb(68, 70, 72);
     border-color: light-dark(rgb(177, 176, 178), rgb(68, 70, 72));
     border-radius: 5px;
     color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
     font-family: Inter, sans-serif;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -635,8 +649,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -660,15 +672,13 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
     cursor: auto;
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -679,15 +689,13 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(98, 147, 142), rgb(117, 164, 157));
     cursor: pointer;
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(117, 164, 157) none 0px;
     text-decoration: underline solid rgba(98, 147, 142, 0.3);
     text-decoration-color: rgba(98, 147, 142, 0.3);
@@ -769,8 +777,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: line-through solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -938,9 +944,6 @@ body {
 
   ol > li {
     color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
-    margin-inline-start: 30px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -955,8 +958,6 @@ body {
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    margin-block-end: 16px;
-    margin-block-start: 0px;
     outline: rgb(226, 224, 210) none 0px;
     text-decoration: none solid rgb(226, 224, 210);
     text-decoration-color: rgb(226, 224, 210);
@@ -979,9 +980,6 @@ body {
 
   ul > li {
     color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
-    margin-inline-start: 30px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 

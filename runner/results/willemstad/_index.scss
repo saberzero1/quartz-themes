@@ -6,6 +6,11 @@
 }
 
 body {
+  &[data-slug] {
+    background-color: light-dark(oklch(1 0 0), oklch(0.13 0 0));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
+  }
+
   .callout[data-callout="abstract"] {
     --callout-color: 91, 197, 219;
     background-color: rgba(91, 197, 219, 0.125);
@@ -15,7 +20,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -48,7 +53,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -81,7 +86,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -114,7 +119,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -147,7 +152,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -180,7 +185,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -213,7 +218,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -246,7 +251,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -279,7 +284,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -312,7 +317,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -345,7 +350,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -378,7 +383,7 @@ body {
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -404,14 +409,13 @@ body {
 
   .callout[data-callout] {
     --callout-color: 0, 191, 111;
-    background-color: rgba(0, 191, 111, 0.125);
     border-color: oklch(0.706959 0.173724 155.295)
       oklch(0.706959 0.173724 155.295) oklch(0.706959 0.173724 155.295)
       rgb(0, 191, 111);
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 0px;
   }
 
@@ -476,6 +480,10 @@ body {
     text-decoration: none solid oklch(0.68 0 0);
   }
 
+  .graph .graph-outer {
+    border-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -509,6 +517,18 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
   }
 
+  .left.sidebar {
+    background-color: light-dark(oklch(0.95 0 0), oklch(0.19 0 0));
+    border-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+    border-right-width: 1px;
+  }
+
+  .page > #quartz-body div.center {
+    min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(oklch(0.3 0 0), oklch(0.68 0 0));
     text-decoration: line-through solid oklch(0.68 0 0);
@@ -525,8 +545,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -547,8 +565,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -569,8 +585,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -591,8 +605,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -613,8 +625,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -635,8 +645,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -647,9 +655,19 @@ body {
     user-select: text;
   }
 
+  .popover .popover-inner {
+    background-color: light-dark(oklch(1 0 0), oklch(0.13 0 0));
+    border-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+  }
+
+  .right.sidebar {
+    background-color: light-dark(oklch(0.95 0 0), oklch(0.19 0 0));
+    border-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+    border-left-width: 1px;
+  }
+
   .search > .search-button {
-    background: oklch(0.15 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background-color: light-dark(oklch(0.99 0 0), oklch(0.15 0 0));
     border: 0px solid oklch(0.3 0 0);
     border-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
     border-radius: 3px;
@@ -658,7 +676,6 @@ body {
       "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
-    padding: 4px 8px;
   }
 
   .text-highlight {
@@ -671,8 +688,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: none solid rgb(0, 0, 0);
     text-decoration-color: rgb(0, 0, 0);
@@ -696,7 +711,7 @@ body {
     box-shadow: none;
   }
 
-  a {
+  a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     cursor: auto;
@@ -706,8 +721,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -718,7 +731,7 @@ body {
     user-select: text;
   }
 
-  a.internal-link {
+  a.internal {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0.4014 0.0638 202.51), oklch(0.707 0.1737 155.3));
     cursor: pointer;
@@ -728,8 +741,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.707 0.1737 155.3) none 0px;
     text-decoration: underline solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
@@ -812,8 +823,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: line-through solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -980,9 +989,6 @@ body {
 
   ol > li {
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
-    margin-inline-start: 30.1875px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
@@ -1000,8 +1006,6 @@ body {
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
-    margin-block-end: 12px;
-    margin-block-start: 0px;
     outline: oklch(0.98 0 0) none 0px;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: oklch(0.98 0 0);
@@ -1024,9 +1028,6 @@ body {
 
   ul > li {
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
-    margin-inline-start: 30.1875px;
-    padding-bottom: 1.2px;
-    padding-top: 1.2px;
     text-align: start;
   }
 
