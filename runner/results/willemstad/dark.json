@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "0, 191, 111",
-    "border-color": "oklch(0.706959 0.173724 155.295) oklch(0.706959 0.173724 155.295) oklch(0.706959 0.173724 155.295) rgb(0, 191, 111)",
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "oklch(0.48 0 0)",
     "text-decoration": "none solid oklch(0.48 0 0)"
   },
+  ".explorer .explorer-content": { "background-color": "oklch(0.19 0 0)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "oklch(0.68 0 0)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "oklch(0.19 0 0)",
     "border-color": "oklch(0.3 0 0)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "oklch(0.19 0 0)",
+    "border-color": "oklch(0.3 0 0)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "oklch(0.19 0 0)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "oklch(0.13 0 0)",
     "border-color": "oklch(0.3 0 0)"
   },
-  ".right.sidebar": {
-    "background-color": "oklch(0.19 0 0)",
-    "border-color": "oklch(0.3 0 0)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "oklch(0.15 0 0)",
     "border": "0px solid oklch(0.3 0 0)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"DM Mono\", \"DM Mono\"",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"Inter 4.1\", \"DM Sans\", Manrope",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.98 0 0)",

@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 95, 200",
-    "border-color": "rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgb(2, 95, 200)",
     "border-radius": "0px 4px 4px 0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
@@ -344,6 +343,7 @@
     "color": "rgb(122, 109, 104)",
     "text-decoration": "none solid rgb(122, 109, 104)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(218, 187, 154)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(91, 79, 74)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\""
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(218, 187, 154)",
     "border-color": "rgb(198, 165, 127)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(218, 187, 154)",
+    "border-color": "rgb(198, 165, 127)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(218, 187, 154)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(225, 196, 166)",
     "border-color": "rgb(198, 165, 127)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(218, 187, 154)",
-    "border-color": "rgb(198, 165, 127)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(225, 196, 166)",
     "border": "1px solid rgb(198, 165, 127)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", \"JetBrains Mono\"",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "none",
-    "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(95, 79, 73)",

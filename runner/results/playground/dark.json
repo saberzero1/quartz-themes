@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "oklch(48.5% 0.173 260.58)",
-    "border-color": "color(srgb 0.108101 0.34436 0.747299 / 0.6)",
     "border-radius": "8px",
     "border-style": "solid",
     "border-width": "1px",
@@ -343,6 +342,9 @@
   ".data-footnote-backref": {
     "color": "oklch(0.745 0.018 279.29)",
     "text-decoration": "none solid oklch(0.745 0.018 279.29)"
+  },
+  ".explorer .explorer-content": {
+    "background-color": "oklch(0.18 0.014 279.29)"
   },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "oklch(0.845 0.01 279.29)",
@@ -376,13 +378,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "oklch(0.18 0.014 279.29)",
     "border-color": "oklch(0.255 0.021 279.29)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "oklch(0.18 0.014 279.29)",
+    "border-color": "oklch(0.255 0.021 279.29)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "oklch(0.18 0.014 279.29)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +502,6 @@
     "background-color": "oklch(0.135 0.01 279.29)",
     "border-color": "oklch(0.255 0.021 279.29)"
   },
-  ".right.sidebar": {
-    "background-color": "oklch(0.18 0.014 279.29)",
-    "border-color": "oklch(0.255 0.021 279.29)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "oklch(0.12 0.009 279.29)",
     "border": "1px solid oklch(0.255 0.021 279.29)",
@@ -602,12 +608,7 @@
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",

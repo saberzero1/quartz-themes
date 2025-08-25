@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "151,\n    192,\n    243",
-    "border-color": "rgb(151, 192, 243)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
@@ -344,6 +343,7 @@
     "color": "rgb(80, 80, 80)",
     "text-decoration": "none solid rgb(80, 80, 80)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(18, 18, 18)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(112, 112, 112)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(18, 18, 18)",
     "border-color": "rgba(0, 0, 0, 0)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(18, 18, 18)",
+    "border-color": "rgba(0, 0, 0, 0)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(18, 18, 18)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(26, 26, 26)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(18, 18, 18)",
-    "border-color": "rgba(0, 0, 0, 0)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(34, 34, 34)",
     "border": "0px solid rgb(34, 34, 34)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(80, 80, 80)",

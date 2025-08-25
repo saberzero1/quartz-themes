@@ -12,7 +12,7 @@
     "quartz:theme": "cp -f ./runner/results/abyssal/_index.scss ./runner/quartz/quartz/styles/themes/_index.scss",
     "quartz:install": "cd ./runner/quartz && npm i -D",
     "quartz:serve": "cd ./runner/quartz && npx quartz build -d docs --serve",
-    "quartz:full": "npm run web:full && npm run quartz:theme && npm run quartz:install && npm run quartz:serve",
+    "quartz:full": "npm run web:full && npm run quartz:install && npm run quartz:serve",
     "build": "just build",
     "compile": "just compile",
     "compile-all": "just compile-all",

@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "90, 143, 205",
-    "border-color": "rgba(90, 143, 205, 0.25)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgba(111, 118, 133, 0.6)",
     "text-decoration": "none solid rgba(111, 118, 133, 0.6)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(20, 22, 28)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "color(srgb 0.684468 0.713571 0.708941 / 0.8)",
     "cursor": "default",
@@ -378,13 +378,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(20, 22, 28)",
     "border-color": "color(srgb 0.118646 0.130793 0.165667)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(20, 22, 28)",
+    "border-color": "color(srgb 0.118646 0.130793 0.165667)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(20, 22, 28)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -493,11 +502,6 @@
     "background-color": "rgb(25, 29, 40)",
     "border-color": "color(srgb 0.118646 0.130793 0.165667)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(20, 22, 28)",
-    "border-color": "color(srgb 0.118646 0.130793 0.165667)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(36, 38, 44)",
     "border": "1px solid color(srgb 0.118646 0.130793 0.165667)",
@@ -604,12 +608,7 @@
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(211, 213, 211)",

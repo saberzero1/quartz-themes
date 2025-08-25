@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "83,\n    82,\n    237",
-    "border-color": "rgba(83, 82, 237, 0.25)",
     "border-radius": "8px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(112, 112, 112)",
     "text-decoration": "none solid rgb(112, 112, 112)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(48, 48, 48)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(160, 160, 160)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"??\", \"??\", \"??\", \"??\", \"??\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(48, 48, 48)",
     "border-color": "rgb(64, 64, 64)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(48, 48, 48)",
+    "border-color": "rgb(64, 64, 64)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(48, 48, 48)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(32, 32, 32)",
     "border-color": "rgb(64, 64, 64)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(48, 48, 48)",
-    "border-color": "rgb(64, 64, 64)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(56, 56, 56)",
     "border": "0px none rgb(255, 255, 255)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", \"??\", \"??\", \"??\", \"??\", \"??\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(255, 255, 255)",

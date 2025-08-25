@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: rgba(0, 0, 0, 0);
@@ -418,7 +433,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    border-color: light-dark(rgba(8, 109, 221, 0.3), rgba(2, 122, 255, 0.3));
     border-radius: 6px;
     border-style: solid;
     border-width: 2px;
@@ -449,6 +463,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(171, 171, 171), color(srgb 0.366067 0.2664 0.5056));
     text-decoration: none solid color(srgb 0.366067 0.2664 0.5056);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -500,14 +518,25 @@ body {
     font-family: "Computer Modern", Inter, sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -623,12 +652,6 @@ body {
   .popover .popover-inner {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  .right.sidebar {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -784,8 +807,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family: "Computer Modern", Inter, sans-serif;
     stroke: none;
   }
 
@@ -1046,5 +1067,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

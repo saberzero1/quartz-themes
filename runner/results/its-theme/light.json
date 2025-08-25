@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "8, 109, 221",
-    "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(78, 91, 111)",
     "text-decoration": "none solid rgb(78, 91, 111)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(238, 243, 253)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(48, 53, 58)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Microsoft YaHei Light\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(238, 243, 253)",
     "border-color": "rgb(238, 243, 253)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(238, 243, 253)",
+    "border-color": "rgb(238, 243, 253)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(238, 243, 253)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(248, 251, 255)",
     "border-color": "rgb(238, 243, 253)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(238, 243, 253)",
-    "border-color": "rgb(238, 243, 253)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgba(208, 221, 239, 0.384)",
     "border": "1px solid rgb(181, 194, 216)",
@@ -602,12 +606,7 @@
     "font-family": "\"Fira Code\", \"Fira Code Medium\", \"Source Code Pro\", monospace",
     "padding": "2.16px 4.32px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "none",
-    "font-family": "\"??\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Microsoft YaHei Light\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(48, 53, 58)",

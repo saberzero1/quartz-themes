@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(219, 197, 175), rgb(33, 33, 33));
@@ -424,7 +439,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -455,6 +469,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(83, 79, 78), rgb(98, 94, 94));
     text-decoration: none solid rgb(98, 94, 94);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(208, 186, 166), rgb(25, 23, 23));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -512,14 +530,25 @@ body {
       -apple-system, "system-ui", "SF Pro Text", "Liberation Sans", Inter;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(208, 186, 166), rgb(25, 23, 23));
     border-color: rgb(83, 79, 78);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(208, 186, 166), rgb(25, 23, 23));
+    border-color: rgb(83, 79, 78);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(208, 186, 166), rgb(25, 23, 23));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -641,12 +670,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(219, 197, 175), rgb(33, 33, 33));
     border-color: rgb(83, 79, 78);
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(208, 186, 166), rgb(25, 23, 23));
-    border-color: rgb(83, 79, 78);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -794,18 +817,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1053,5 +1064,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

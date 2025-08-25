@@ -1,7 +1,15 @@
 @use "../variables.scss" as *;
 
 :root {
+  color-scheme: dark;
   font-size: 16px;
+}
+
+html {
+  color-scheme: only dark;
+  .callout[data-callout] {
+    mix-blend-mode: lighten;
+  }
 }
 
 body {
@@ -384,7 +392,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 90, 143, 205;
-    border-color: rgba(90, 143, 205, 0.25);
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -415,6 +422,10 @@ body {
   .data-footnote-backref {
     color: rgba(111, 118, 133, 0.6);
     text-decoration: none solid rgba(111, 118, 133, 0.6);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgb(20, 22, 28);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -513,14 +524,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgb(20, 22, 28);
     border-color: color(srgb 0.118646 0.130793 0.165667);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgb(20, 22, 28);
+    border-color: color(srgb 0.118646 0.130793 0.165667);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgb(20, 22, 28);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -697,12 +719,6 @@ body {
   .popover .popover-inner {
     background-color: rgb(25, 29, 40);
     border-color: color(srgb 0.118646 0.130793 0.165667);
-  }
-
-  .right.sidebar {
-    background-color: rgb(20, 22, 28);
-    border-color: color(srgb 0.118646 0.130793 0.165667);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -890,11 +906,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
     stroke: none;
   }
 
@@ -1227,5 +1238,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

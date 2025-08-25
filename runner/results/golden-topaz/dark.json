@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 122, 255",
-    "border-color": "rgba(2, 122, 255, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(121, 121, 121)",
     "text-decoration": "none solid rgb(121, 121, 121)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(56, 52, 51)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(162, 156, 144)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(56, 52, 51)",
     "border-color": "rgba(0, 0, 0, 0.1)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(56, 52, 51)",
+    "border-color": "rgba(0, 0, 0, 0.1)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(56, 52, 51)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(53, 50, 49)",
     "border-color": "rgba(0, 0, 0, 0.1)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(56, 52, 51)",
-    "border-color": "rgba(0, 0, 0, 0.1)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(0, 118, 114)",
     "border": "1px solid rgba(0, 0, 0, 0.1)",
@@ -602,12 +606,7 @@
     "font-family": "Consolas, Monaco, monospace",
     "padding": "2.4px 4.8px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(162, 156, 144)",

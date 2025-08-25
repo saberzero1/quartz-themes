@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 122, 255",
-    "border-color": "rgba(2, 122, 255, 0.25)",
     "border-radius": "3px",
     "border-style": "solid",
     "border-width": "1px",
@@ -344,6 +343,7 @@
     "color": "rgb(106, 111, 124)",
     "text-decoration": "none solid rgb(106, 111, 124)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(33, 35, 39)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(186, 189, 196)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"New York\", Georgia, ui-serif, serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(33, 35, 39)",
     "border-color": "rgb(54, 57, 63)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(33, 35, 39)",
+    "border-color": "rgb(54, 57, 63)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(33, 35, 39)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(40, 42, 47)",
     "border-color": "rgb(54, 57, 63)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(33, 35, 39)",
-    "border-color": "rgb(54, 57, 63)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(63, 67, 74)",
     "border": "1px solid rgb(82, 87, 96)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", \"SF Mono\", ui-monospace, \"Cascadia Code\", \"Source Code Pro\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
     "padding": "1.92px 3.84px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", \"New York\", Georgia, ui-serif, serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(186, 189, 196)",

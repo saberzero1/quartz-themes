@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 122, 255",
-    "border-color": "rgba(2, 122, 255, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(148, 148, 148)",
     "text-decoration": "none solid rgb(148, 148, 148)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(47, 42, 39)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(240, 234, 226)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"DM Sans\", \"Avenir Next\", Avenir, sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(47, 42, 39)",
     "border-color": "rgb(56, 49, 46)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(47, 42, 39)",
+    "border-color": "rgb(56, 49, 46)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(47, 42, 39)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(47, 42, 39)",
     "border-color": "rgb(56, 49, 46)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(47, 42, 39)",
-    "border-color": "rgb(56, 49, 46)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(47, 42, 39)",
     "border": "1px solid rgb(56, 49, 46)",
@@ -602,12 +606,7 @@
     "font-family": "MonoLisa, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"DM Sans\", \"Avenir Next\", Avenir, sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(255, 255, 255)",

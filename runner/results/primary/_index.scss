@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(248, 245, 241), rgb(46, 38, 31));
@@ -466,10 +481,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 200, 175, 155;
-    border-color: light-dark(
-      rgba(200, 175, 155, 0.2),
-      rgba(200, 175, 155, 0.1)
-    );
     border-radius: 8px;
     border-style: solid;
     border-width: 0px;
@@ -503,6 +514,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(183, 157, 123), rgb(145, 121, 89));
     text-decoration: none solid rgb(145, 121, 89);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(238, 231, 221), rgb(38, 33, 28));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -595,14 +610,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(238, 231, 221), rgb(38, 33, 28));
     border-color: rgba(0, 0, 0, 0);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(238, 231, 221), rgb(38, 33, 28));
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(238, 231, 221), rgb(38, 33, 28));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -784,12 +810,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(248, 245, 241), rgb(46, 38, 31));
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(238, 231, 221), rgb(38, 33, 28));
-    border-color: rgba(0, 0, 0, 0);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -984,19 +1004,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      Inter,
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1334,5 +1341,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }
