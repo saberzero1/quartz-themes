@@ -87,12 +87,12 @@ git -C quartz-themes checkout &>/dev/null
 
 echo "Installing theme files..."
 
-mv quartz-themes/themes/${THEME}/* ${FINAL_THEME_DIR}
+mv quartz-themes/runner/results/${THEME}/* ${FINAL_THEME_DIR}
 rm -rf quartz-themes
 
 echo "Applying patches..."
 
-if grep -q -e "quartz themes dark-only" -e "quartz themes light-only" "$FINAL_THEME_DIR/_index.scss"; then
+if grep -q -e "color-scheme: only dark;" -e "color-scheme: only light;" "$FINAL_THEME_DIR/_index.scss"; then
   echo_warn "Single mode theme detected, applying patch..."
   sed -i "/Component\.Darkmode\(\)/d" "quartz.layout.ts"
 fi
