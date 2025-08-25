@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
@@ -439,10 +454,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 129, 161, 193;
-    border-color: light-dark(
-      rgba(8, 109, 221, 0.25),
-      rgba(129, 161, 193, 0.25)
-    );
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -473,6 +484,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(171, 171, 171), rgb(128, 123, 123));
     text-decoration: none solid rgb(128, 123, 123);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -571,14 +586,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
     border-color: light-dark(rgb(214, 214, 214), rgb(74, 69, 70));
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
+    border-color: light-dark(rgb(214, 214, 214), rgb(74, 69, 70));
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -754,12 +780,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
     border-color: light-dark(rgb(214, 214, 214), rgb(74, 69, 70));
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(242, 242, 242), rgb(50, 47, 48));
-    border-color: light-dark(rgb(214, 214, 214), rgb(74, 69, 70));
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -947,18 +967,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1287,5 +1295,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

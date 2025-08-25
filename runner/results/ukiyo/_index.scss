@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
@@ -468,12 +483,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    border-color: light-dark(
-      rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25) rgba(2, 95, 200, 0.25)
-        rgb(2, 95, 200),
-      rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25)
-        rgb(2, 122, 255)
-    );
     border-radius: 0px 4px 4px 0px;
     border-style: solid;
     border-width: 0px 0px 0px 3px;
@@ -504,6 +513,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
     text-decoration: none solid rgb(134, 128, 116);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -552,14 +565,25 @@ body {
     font-family: "CMU Typewriter Text";
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
     border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -675,12 +699,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
     border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
-    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -805,8 +823,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family: "CMU Typewriter Text";
     stroke: none;
   }
 
@@ -1045,5 +1061,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

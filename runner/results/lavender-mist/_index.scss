@@ -1,7 +1,15 @@
 @use "../variables.scss" as *;
 
 :root {
+  color-scheme: light;
   font-size: 16px;
+}
+
+html {
+  color-scheme: only light;
+  .callout[data-callout] {
+    mix-blend-mode: darken;
+  }
 }
 
 body {
@@ -384,7 +392,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 8, 109, 221;
-    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 8px;
     border-style: solid;
     border-width: 0px;
@@ -415,6 +422,10 @@ body {
   .data-footnote-backref {
     color: rgb(171, 171, 171);
     text-decoration: none solid rgb(171, 171, 171);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgb(246, 246, 246);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -523,14 +534,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgb(246, 246, 246);
     border-color: rgb(224, 224, 224);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgb(246, 246, 246);
+    border-color: rgb(224, 224, 224);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgb(246, 246, 246);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -718,12 +740,6 @@ body {
   .popover .popover-inner {
     background-color: rgb(231, 233, 243);
     border-color: rgb(224, 224, 224);
-  }
-
-  .right.sidebar {
-    background-color: rgb(246, 246, 246);
-    border-color: rgb(224, 224, 224);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -921,20 +937,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: none;
-    font-family:
-      "Noto Serif KR",
-      serif,
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1281,5 +1283,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

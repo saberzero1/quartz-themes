@@ -82,8 +82,43 @@ manifestCollection.forEach((manifest) => {
 @use "../variables.scss" as *;
 
 :root {
-  ${lightData && darkData ? "color-scheme: light dark;" : ""}
+  ${lightData && darkData ? "color-scheme: light dark;" : lightData ? "color-scheme: light;" : darkData ? "color-scheme: dark;" : ""}
   font-size: 16px;
+}
+
+html {
+${
+  lightData && darkData
+    ? `
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+`
+    : lightData
+      ? `
+  color-scheme: only light;
+  .callout[data-callout] {
+    mix-blend-mode: darken;
+  }
+`
+      : darkData
+        ? `
+  color-scheme: only dark;
+  .callout[data-callout] {
+    mix-blend-mode: lighten;
+  }
+`
+        : ""
+}
 }
 
 body {
@@ -107,6 +142,12 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }
 `;

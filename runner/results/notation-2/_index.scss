@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
@@ -385,7 +400,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 54, 73, 84;
-    border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -416,6 +430,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgba(55, 53, 47, 0.55), rgba(255, 255, 255, 0.55));
     text-decoration: none solid rgba(255, 255, 255, 0.55);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -481,14 +499,25 @@ body {
       Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
     border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
+    border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -616,12 +645,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
-    border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -758,10 +781,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji",
-      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     stroke: none;
   }
 
@@ -1018,5 +1037,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

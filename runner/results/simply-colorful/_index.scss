@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(247, 247, 247), rgb(25, 25, 25));
@@ -433,11 +448,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 36, 113, 212;
-    border-color: light-dark(
-      rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(36, 113, 212, 0.25),
-      rgb(218, 218, 218) rgb(218, 218, 218) rgb(218, 218, 218)
-        rgba(36, 113, 212, 0.25)
-    );
     border-radius: 0px 8px 8px 0px;
     border-style: none none none solid;
     border-width: 0px 0px 0px 2px;
@@ -468,6 +478,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(170, 170, 170), rgb(102, 102, 102));
     text-decoration: none solid rgb(102, 102, 102);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(240, 240, 240), rgb(30, 30, 30));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -566,14 +580,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(240, 240, 240), rgb(30, 30, 30));
     border-color: light-dark(rgb(218, 218, 218), rgb(54, 54, 54));
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(240, 240, 240), rgb(30, 30, 30));
+    border-color: light-dark(rgb(218, 218, 218), rgb(54, 54, 54));
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(240, 240, 240), rgb(30, 30, 30));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -749,12 +774,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(247, 247, 247), rgb(25, 25, 25));
     border-color: light-dark(rgb(218, 218, 218), rgb(54, 54, 54));
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(240, 240, 240), rgb(30, 30, 30));
-    border-color: light-dark(rgb(218, 218, 218), rgb(54, 54, 54));
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -945,18 +964,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1285,5 +1292,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

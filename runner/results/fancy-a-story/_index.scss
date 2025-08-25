@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(231, 231, 231), rgb(31, 31, 31));
@@ -451,10 +466,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 106, 146, 219;
-    border-color: light-dark(
-      rgba(59, 59, 146, 0.25),
-      rgba(106, 146, 219, 0.25)
-    );
     border-radius: 0px;
     border-style: solid;
     border-width: 1px;
@@ -488,6 +499,10 @@ body {
       lab(49.2223 0.0105575 -0.000625849)
     );
     text-decoration: none solid lab(49.2223 0.0105575 -0.000625849);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -594,14 +609,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -786,12 +812,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(231, 231, 231), rgb(31, 31, 31));
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  .right.sidebar {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -997,19 +1017,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      "Noto Serif",
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -1354,5 +1361,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }
