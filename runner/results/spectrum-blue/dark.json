@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "2, 122, 255",
-    "border-color": "rgba(2, 122, 255, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(102, 102, 102)",
     "text-decoration": "none solid rgb(102, 102, 102)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(27, 27, 27)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(179, 179, 179)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(27, 27, 27)",
     "border-color": "rgb(60, 60, 60)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(27, 27, 27)",
+    "border-color": "rgb(60, 60, 60)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(27, 27, 27)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(34, 34, 34)",
     "border-color": "rgb(60, 60, 60)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(27, 27, 27)",
-    "border-color": "rgb(60, 60, 60)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(42, 42, 42)",
     "border": "1px solid rgb(54, 54, 54)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(237, 237, 237)",

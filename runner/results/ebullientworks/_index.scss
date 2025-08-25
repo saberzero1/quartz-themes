@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(248, 248, 248), rgb(30, 30, 30));
@@ -403,7 +418,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 148, 189, 223;
-    border-color: light-dark(rgba(33, 75, 109, 0.4), rgba(148, 189, 223, 0.4));
     border-radius: 8px;
     border-style: solid;
     border-width: 0px 0.5px 0px 1.5px;
@@ -434,6 +448,10 @@ body {
   .data-footnote-backref {
     color: rgb(160, 160, 160);
     text-decoration: none solid rgb(160, 160, 160);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(227, 227, 227), rgb(47, 47, 47));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -542,14 +560,25 @@ body {
       sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(227, 227, 227), rgb(47, 47, 47));
     border-color: light-dark(rgb(184, 184, 184), rgb(7, 7, 7));
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(227, 227, 227), rgb(47, 47, 47));
+    border-color: light-dark(rgb(184, 184, 184), rgb(7, 7, 7));
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(227, 227, 227), rgb(47, 47, 47));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -737,12 +766,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(248, 248, 248), rgb(30, 30, 30));
     border-color: light-dark(rgb(184, 184, 184), rgb(7, 7, 7));
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(227, 227, 227), rgb(47, 47, 47));
-    border-color: light-dark(rgb(184, 184, 184), rgb(7, 7, 7));
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -942,8 +965,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family: "Fira Code", "Source Code Pro", "Jetbrains Mono";
     stroke: none;
   }
 
@@ -1221,5 +1242,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

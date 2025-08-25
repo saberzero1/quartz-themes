@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "33, 75, 109",
-    "border-color": "rgba(33, 75, 109, 0.4)",
     "border-radius": "8px",
     "border-style": "solid",
     "border-width": "0px 0.5px 0px 1.5px",
@@ -344,6 +343,7 @@
     "color": "rgb(160, 160, 160)",
     "text-decoration": "none solid rgb(160, 160, 160)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(227, 227, 227)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(93, 93, 93)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"IBM Plex Sans\", \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(227, 227, 227)",
     "border-color": "rgb(184, 184, 184)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(227, 227, 227)",
+    "border-color": "rgb(184, 184, 184)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(227, 227, 227)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(248, 248, 248)",
     "border-color": "rgb(184, 184, 184)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(227, 227, 227)",
-    "border-color": "rgb(184, 184, 184)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(248, 248, 248)",
     "border": "1px solid rgb(205, 205, 205)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"Fira Code\", \"Source Code Pro\", \"Jetbrains Mono\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "none",
-    "font-family": "\"Fira Code\", \"Source Code Pro\", \"Jetbrains Mono\"",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(72, 72, 72)",

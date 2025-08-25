@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "200,175,155",
-    "border-color": "rgba(200, 175, 155, 0.2)",
     "border-radius": "8px",
     "border-style": "solid",
     "border-width": "0px",
@@ -344,6 +343,7 @@
     "color": "rgb(183, 157, 123)",
     "text-decoration": "none solid rgb(183, 157, 123)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(238, 231, 221)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(123, 98, 66)",
     "cursor": "pointer",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(238, 231, 221)",
     "border-color": "rgba(0, 0, 0, 0)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(238, 231, 221)",
+    "border-color": "rgba(0, 0, 0, 0)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(238, 231, 221)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(248, 245, 241)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(238, 231, 221)",
-    "border-color": "rgba(0, 0, 0, 0)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(242, 236, 227)",
     "border": "1px solid rgb(228, 215, 195)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"Cascadia Code\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "none",
-    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(183, 157, 123)",

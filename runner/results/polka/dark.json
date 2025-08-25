@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "rgb(250, 247, 245)",
-    "border-color": "rgb(250, 247, 245)",
     "border-radius": "2px",
     "border-style": "dashed",
     "border-width": "2px",
@@ -344,6 +343,7 @@
     "color": "rgb(250, 247, 245)",
     "text-decoration": "none solid rgb(250, 247, 245)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(33, 42, 61)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(250, 247, 245)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(33, 42, 61)",
     "border-color": "rgba(0, 0, 0, 0)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(33, 42, 61)",
+    "border-color": "rgba(0, 0, 0, 0)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(33, 42, 61)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(22, 29, 44)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(33, 42, 61)",
-    "border-color": "rgba(0, 0, 0, 0)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(10, 18, 30)",
     "border": "1px solid rgba(210, 214, 223, 0.1)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", \"iA Writer Mono S\", \"IBM Plex Mono\", \"Roboto Mono\", Menlo, SFMono-Regular, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "invert(1) hue-rotate(180deg) saturate(1.25)",
-    "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(250, 247, 245)",

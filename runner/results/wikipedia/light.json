@@ -317,7 +317,6 @@
   },
   ".callout[data-callout]": {
     "--callout-color": "0, 105, 224",
-    "border-color": "rgba(0, 105, 224, 0.3)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "1px",
@@ -344,6 +343,7 @@
     "color": "rgb(152, 152, 152)",
     "text-decoration": "none solid rgb(152, 152, 152)"
   },
+  ".explorer .explorer-content": { "background-color": "rgb(246, 246, 246)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(90, 90, 90)",
     "cursor": "default",
@@ -376,13 +376,22 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", Arial, Archivo, sans-serif"
   },
-  ".left.sidebar": {
+  ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(246, 246, 246)",
     "border-color": "rgb(162, 169, 177)",
     "border-right-width": "1px"
   },
+  ".page > #quartz-body .right.sidebar": {
+    "background-color": "rgb(246, 246, 246)",
+    "border-color": "rgb(162, 169, 177)",
+    "border-left-width": "1px"
+  },
+  ".page > #quartz-body .sidebar.left:has(.explorer)": {
+    "background-color": "rgb(246, 246, 246)"
+  },
   ".page > #quartz-body div.center": {
-    "min-width": "unset",
+    "max-width": "calc(100% - 40px)",
+    "min-width": "calc(100% - 40px)",
     "padding-left": "10px",
     "padding-right": "10px"
   },
@@ -491,11 +500,6 @@
     "background-color": "rgb(255, 255, 255)",
     "border-color": "rgb(162, 169, 177)"
   },
-  ".right.sidebar": {
-    "background-color": "rgb(246, 246, 246)",
-    "border-color": "rgb(162, 169, 177)",
-    "border-left-width": "1px"
-  },
   ".search > .search-button": {
     "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(162, 169, 177)",
@@ -602,12 +606,7 @@
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "1px 4px"
   },
-  "code.mermaid > svg": {
-    "fill": "rgb(51, 51, 51)",
-    "filter": "none",
-    "font-family": "\"??\", \"??\", Arial, Archivo, sans-serif",
-    "stroke": "none"
-  },
+  "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(34, 34, 34)",
