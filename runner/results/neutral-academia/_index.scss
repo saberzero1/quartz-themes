@@ -5,6 +5,21 @@
   font-size: 16px;
 }
 
+html {
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(245, 244, 244), rgb(15, 10, 11));
@@ -385,7 +400,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    border-color: rgba(102, 108, 104, 0.314);
     border-radius: 0px;
     border-style: dotted;
     border-width: 1px;
@@ -416,6 +430,10 @@ body {
   .data-footnote-backref {
     color: light-dark(rgb(78, 77, 73), rgb(200, 188, 172));
     text-decoration: none solid rgb(200, 188, 172);
+  }
+
+  .explorer .explorer-content {
+    background-color: light-dark(rgb(239, 239, 241), rgb(17, 11, 12));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -466,14 +484,25 @@ body {
     font-family: manrope, sans-serif;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: light-dark(rgb(239, 239, 241), rgb(17, 11, 12));
     border-color: rgba(0, 0, 0, 0);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: light-dark(rgb(239, 239, 241), rgb(17, 11, 12));
+    border-color: rgba(0, 0, 0, 0);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: light-dark(rgb(239, 239, 241), rgb(17, 11, 12));
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -589,12 +618,6 @@ body {
   .popover .popover-inner {
     background-color: light-dark(rgb(245, 244, 244), rgb(15, 10, 11));
     border-color: rgba(0, 0, 0, 0);
-  }
-
-  .right.sidebar {
-    background-color: light-dark(rgb(239, 239, 241), rgb(17, 11, 12));
-    border-color: rgba(0, 0, 0, 0);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -732,8 +755,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family: manrope, sans-serif;
     stroke: none;
   }
 
@@ -972,5 +993,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

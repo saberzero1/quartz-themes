@@ -1,7 +1,15 @@
 @use "../variables.scss" as *;
 
 :root {
+  color-scheme: dark;
   font-size: 16px;
+}
+
+html {
+  color-scheme: only dark;
+  .callout[data-callout] {
+    mix-blend-mode: lighten;
+  }
 }
 
 body {
@@ -384,7 +392,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 83, 82, 237;
-    border-color: rgba(83, 82, 237, 0.25);
     border-radius: 8px;
     border-style: solid;
     border-width: 0px;
@@ -415,6 +422,10 @@ body {
   .data-footnote-backref {
     color: rgb(112, 112, 112);
     text-decoration: none solid rgb(112, 112, 112);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgb(48, 48, 48);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -477,14 +488,25 @@ body {
       monospace;
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgb(48, 48, 48);
     border-color: rgb(64, 64, 64);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgb(48, 48, 48);
+    border-color: rgb(64, 64, 64);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgb(48, 48, 48);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -612,12 +634,6 @@ body {
   .popover .popover-inner {
     background-color: rgb(32, 32, 32);
     border-color: rgb(64, 64, 64);
-  }
-
-  .right.sidebar {
-    background-color: rgb(48, 48, 48);
-    border-color: rgb(64, 64, 64);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -756,10 +772,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
     stroke: none;
   }
 
@@ -1016,5 +1028,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }

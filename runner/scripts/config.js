@@ -86,7 +86,7 @@ const sets = {
     titleInner: ["color", "font-weight"],
   },
   background: ["background-color"],
-  mermaid: ["stroke", "fill", "filter", "font-family" /*, "font-size"*/],
+  mermaid: ["stroke", "fill" /*"filter", "font-family", "font-size"*/],
   math: ["display", "text-align", "white-space", "font"],
   // ... other property groups
 };
@@ -566,7 +566,7 @@ export const extractionTargets = {
           //"--callout-icon",
           //"background-color",
           "border-style",
-          "border-color",
+          //"border-color",
           "border-width",
           "border-radius",
           "mix-blend-mode",

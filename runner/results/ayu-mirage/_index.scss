@@ -1,7 +1,15 @@
 @use "../variables.scss" as *;
 
 :root {
+  color-scheme: dark;
   font-size: 16px;
+}
+
+html {
+  color-scheme: only dark;
+  .callout[data-callout] {
+    mix-blend-mode: lighten;
+  }
 }
 
 body {
@@ -384,7 +392,6 @@ body {
 
   .callout[data-callout] {
     --callout-color: 2, 122, 255;
-    border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -415,6 +422,10 @@ body {
   .data-footnote-backref {
     color: rgb(254, 193, 84);
     text-decoration: none solid rgb(254, 193, 84);
+  }
+
+  .explorer .explorer-content {
+    background-color: rgb(19, 21, 30);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -477,14 +488,25 @@ body {
       "Times New Roman";
   }
 
-  .left.sidebar {
+  .page > #quartz-body .left.sidebar {
     background-color: rgb(19, 21, 30);
     border-color: rgb(104, 110, 128);
     border-right-width: 1px;
   }
 
+  .page > #quartz-body .right.sidebar {
+    background-color: rgb(19, 21, 30);
+    border-color: rgb(104, 110, 128);
+    border-left-width: 1px;
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    background-color: rgb(19, 21, 30);
+  }
+
   .page > #quartz-body div.center {
-    min-width: unset;
+    max-width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -612,12 +634,6 @@ body {
   .popover .popover-inner {
     background-color: rgb(23, 26, 35);
     border-color: rgb(104, 110, 128);
-  }
-
-  .right.sidebar {
-    background-color: rgb(19, 21, 30);
-    border-color: rgb(104, 110, 128);
-    border-left-width: 1px;
   }
 
   .search > .search-button {
@@ -765,18 +781,6 @@ body {
 
   code.mermaid > svg {
     fill: rgb(51, 51, 51);
-    filter: invert(1) hue-rotate(180deg) saturate(1.25);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
     stroke: none;
   }
 
@@ -872,7 +876,7 @@ body {
     border-style: solid;
     border-top: 0.5px solid rgb(99, 99, 99);
     box-shadow: none;
-    margin: 48px 210.492px;
+    margin: 48px 206.742px;
   }
 
   input[type="checkbox"] {
@@ -1033,5 +1037,11 @@ body {
     --dark: var(--quartz-graph-text) !important;
     --secondary: var(--quartz-graph-node-focused) !important;
     --tertiary: var(--quartz-graph-node-tag) !important;
+  }
+
+  @media all and not ($desktop) {
+    .page > #quartz-body div.sidebar.right {
+      background-color: transparent;
+    }
   }
 }
