@@ -1,8 +1,6 @@
 name: Regenerate Themes on demand
 
 on:
-  push:
-    branches: [master, develop]
   workflow_dispatch:
 
 jobs:
