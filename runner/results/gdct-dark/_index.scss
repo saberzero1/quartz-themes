@@ -5,6 +5,9 @@
   font-size: 16px;
 }
 
+:root:root {
+}
+
 html {
   color-scheme: only dark;
   .callout[data-callout] {
@@ -12,10 +15,84 @@ html {
   }
 }
 
+@font-face {
+  font-family: "iA Writer Quattro S";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("iA Writer Quattro S"),
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "iA Writer Quattro S";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("iA Writer Quattro S"),
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "iA Writer Quattro S";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("iA Writer Quattro S"),
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "iA Writer Quattro S";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("iA Writer Quattro S"),
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Monaco"),
+    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+}
+
 body {
   &[data-slug] {
     background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
+  }
+
+  .callout {
+    --callout-color: 2, 122, 255;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout .callout-title .callout-icon {
+    color: rgb(2, 122, 255);
+  }
+
+  .callout .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
   }
 
   .callout[data-callout="abstract"] {
@@ -37,10 +114,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -68,10 +146,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -99,10 +178,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -130,10 +210,11 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     color: rgb(168, 130, 255);
+    background-color: rgb(168, 130, 255);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(168, 130, 255);
     font-weight: 400;
   }
 
@@ -161,10 +242,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -192,14 +274,47 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
   .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
+    background-color: rgba(2, 122, 255, 0.1);
+    border-color: rgba(2, 122, 255, 0.25);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="note"] .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] .callout-title .callout-icon {
+    color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
+  }
+
+  .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout[data-callout="note"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -223,10 +338,11 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
@@ -254,10 +370,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     color: rgb(158, 158, 158);
+    background-color: rgb(158, 158, 158);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(158, 158, 158);
     font-weight: 400;
   }
 
@@ -285,10 +402,11 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     color: rgb(68, 207, 110);
+    background-color: rgb(68, 207, 110);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(68, 207, 110);
     font-weight: 400;
   }
 
@@ -316,10 +434,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -347,10 +466,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -378,43 +498,15 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-  }
-
-  .callout[data-callout] {
-    --callout-color: 2, 122, 255;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px;
-    mix-blend-mode: lighten;
-    padding: 12px 12px 12px 24px;
-  }
-
-  .callout[data-callout] .callout-title {
-    color: rgb(2, 122, 255);
-    gap: 4px;
-    padding: 0px;
-  }
-
-  .callout[data-callout] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-  }
-
-  .callout[data-callout] .callout-title > .callout-title-inner > p {
-    color: rgb(255, 253, 249);
-    font-weight: 400;
-  }
-
-  .callout[data-callout] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -462,6 +554,16 @@ body {
   }
 
   .graph .graph-outer {
+    border-color: rgb(111, 111, 111);
+  }
+
+  .graph > .global-graph-outer {
+    -webkit-backdrop-filter: blur(4px) brightness(0.4);
+    backdrop-filter: blur(4px) brightness(0.4);
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: transparent;
     border-color: rgb(111, 111, 111);
   }
 
@@ -517,7 +619,8 @@ body {
     text-decoration-color: rgb(111, 111, 111);
   }
 
-  .page article p > b {
+  .page article p > b,
+  b {
     background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -536,7 +639,8 @@ body {
     user-select: text;
   }
 
-  .page article p > em {
+  .page article p > em,
+  em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -555,7 +659,8 @@ body {
     user-select: text;
   }
 
-  .page article p > i {
+  .page article p > i,
+  i {
     background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -574,7 +679,8 @@ body {
     user-select: text;
   }
 
-  .page article p > s {
+  .page article p > s,
+  s {
     background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -593,7 +699,8 @@ body {
     user-select: text;
   }
 
-  .page article p > strong {
+  .page article p > strong > em,
+  strong > em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -612,7 +719,28 @@ body {
     user-select: text;
   }
 
-  .page article p > u {
+  .page article p > strong,
+  strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 253, 249);
+    cursor: auto;
+    filter: none;
+    font-family:
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
+      "Times New Roman";
+    font-weight: 600;
+    outline: rgb(255, 253, 249) none 0px;
+    text-decoration: none solid rgb(255, 253, 249);
+    text-decoration-color: rgb(255, 253, 249);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u,
+  u {
     background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
     cursor: auto;
@@ -1006,6 +1134,16 @@ body {
     white-space: pre-wrap;
   }
 
+  pre:has(> code) {
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 0px solid rgb(111, 111, 111);
+    border-color: rgb(111, 111, 111);
+    border-radius: 4px;
+    overflow-x: hidden;
+    padding: 0px;
+    white-space: pre-wrap;
+  }
+
   ul > li {
     color: rgb(255, 253, 249);
     text-align: start;
@@ -1029,19 +1167,78 @@ body {
     transition: all;
   }
 
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
-
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
+    }
+  }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 }
