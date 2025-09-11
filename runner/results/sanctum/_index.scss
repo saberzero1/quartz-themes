@@ -5,6 +5,27 @@
   font-size: 16px;
 }
 
+:root:root {
+  --lightgray: rgb(226, 224, 220) !important;
+  --gray: rgb(84, 81, 81) !important;
+  --light: rgb(84, 81, 81) !important;
+  --highlight: hsl(40.2, 87.2%, 63.1%) !important;
+  --secondary: rgb(246, 141, 69) !important;
+  --tertiary: hsl(9.6, 66.2%, 46.5%) !important;
+  --darkgray: rgb(169, 168, 165) !important;
+  --dark: rgb(22, 22, 22) !important;
+}
+:root:root[saved-theme="dark"] {
+  --lightgray: rgb(58, 56, 56) !important;
+  --gray: rgb(199, 197, 194) !important;
+  --light: rgb(199, 197, 194) !important;
+  --highlight: hsl(40.2, 87.2%, 63.1%) !important;
+  --secondary: rgb(102, 153, 97) !important;
+  --tertiary: hsl(9.6, 66.2%, 46.5%) !important;
+  --darkgray: rgb(112, 110, 109) !important;
+  --dark: rgb(244, 244, 240) !important;
+}
+
 html {
   &[saved-theme="light"] {
     color-scheme: light;
@@ -20,10 +41,142 @@ html {
   }
 }
 
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 600;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: italic;
+  font-weight: 900;
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
+      format("woff");
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(244, 244, 240), rgb(22, 22, 22));
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+  }
+
+  .callout {
+    --callout-color: 104, 145, 181;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 16px 12px;
+  }
+
+  .callout .callout-title {
+    color: rgb(104, 145, 181);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout .callout-title .callout-icon {
+    color: rgb(104, 145, 181);
+  }
+
+  .callout .callout-title > .callout-title-inner > p {
+    color: rgb(104, 145, 181);
+    font-weight: 400;
+  }
+
+  .callout > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 12px 0px 24px;
   }
 
   .callout[data-callout="abstract"] {
@@ -45,10 +198,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     color: rgb(104, 145, 181);
+    background-color: rgb(104, 145, 181);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(104, 145, 181);
     font-weight: 400;
   }
 
@@ -76,10 +230,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     color: rgb(236, 90, 118);
+    background-color: rgb(236, 90, 118);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(236, 90, 118);
     font-weight: 400;
   }
 
@@ -107,10 +262,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     color: rgb(243, 90, 55);
+    background-color: rgb(243, 90, 55);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(243, 90, 55);
     font-weight: 400;
   }
 
@@ -138,10 +294,11 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     color: rgb(165, 119, 218);
+    background-color: rgb(165, 119, 218);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(165, 119, 218);
     font-weight: 400;
   }
 
@@ -169,10 +326,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     color: rgb(226, 105, 52);
+    background-color: rgb(226, 105, 52);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(226, 105, 52);
     font-weight: 400;
   }
 
@@ -200,14 +358,47 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     color: rgb(99, 149, 156);
+    background-color: rgb(99, 149, 156);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(99, 149, 156);
     font-weight: 400;
   }
 
   .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 12px 0px 24px;
+  }
+
+  .callout[data-callout="note"] {
+    --callout-color: 104, 145, 181;
+    background-color: rgba(104, 145, 181, 0.2);
+    border-color: rgba(104, 145, 181, 0.3);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 16px 12px;
+  }
+
+  .callout[data-callout="note"] .callout-title {
+    color: rgb(104, 145, 181);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] .callout-title .callout-icon {
+    color: rgb(104, 145, 181);
+    background-color: rgb(104, 145, 181);
+  }
+
+  .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+    color: rgb(104, 145, 181);
+    font-weight: 400;
+  }
+
+  .callout[data-callout="note"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px 12px 0px 24px;
   }
@@ -231,10 +422,11 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     color: rgb(141, 147, 25);
+    background-color: rgb(141, 147, 25);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(141, 147, 25);
     font-weight: 400;
   }
 
@@ -262,10 +454,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     color: rgb(142, 140, 139);
+    background-color: rgb(142, 140, 139);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(142, 140, 139);
     font-weight: 400;
   }
 
@@ -293,10 +486,11 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     color: rgb(102, 153, 97);
+    background-color: rgb(102, 153, 97);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(102, 153, 97);
     font-weight: 400;
   }
 
@@ -324,10 +518,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     color: rgb(92, 153, 124);
+    background-color: rgb(92, 153, 124);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(92, 153, 124);
     font-weight: 400;
   }
 
@@ -355,10 +550,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     color: rgb(99, 149, 156);
+    background-color: rgb(99, 149, 156);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(99, 149, 156);
     font-weight: 400;
   }
 
@@ -386,43 +582,15 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     color: rgb(184, 131, 0);
+    background-color: rgb(184, 131, 0);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    color: rgb(184, 131, 0);
     font-weight: 400;
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px 12px 0px 24px;
-  }
-
-  .callout[data-callout] {
-    --callout-color: 104, 145, 181;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px;
-    mix-blend-mode: lighten;
-    padding: 16px 12px;
-  }
-
-  .callout[data-callout] .callout-title {
-    color: rgb(104, 145, 181);
-    gap: 4px;
-    padding: 0px;
-  }
-
-  .callout[data-callout] .callout-title .callout-icon {
-    color: rgb(104, 145, 181);
-  }
-
-  .callout[data-callout] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
-    font-weight: 400;
-  }
-
-  .callout[data-callout] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px 12px 0px 24px;
   }
@@ -503,6 +671,16 @@ body {
     border-color: light-dark(rgb(226, 224, 220), rgb(58, 56, 56));
   }
 
+  .graph > .global-graph-outer {
+    -webkit-backdrop-filter: blur(4px) brightness(0.4);
+    backdrop-filter: blur(4px) brightness(0.4);
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: transparent;
+    border-color: light-dark(rgb(226, 224, 220), rgb(58, 56, 56));
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -559,7 +737,8 @@ body {
     text-decoration-color: rgb(112, 110, 109);
   }
 
-  .page article p > b {
+  .page article p > b,
+  b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -588,7 +767,8 @@ body {
     user-select: text;
   }
 
-  .page article p > em {
+  .page article p > em,
+  em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -617,7 +797,8 @@ body {
     user-select: text;
   }
 
-  .page article p > i {
+  .page article p > i,
+  i {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -646,7 +827,8 @@ body {
     user-select: text;
   }
 
-  .page article p > s {
+  .page article p > s,
+  s {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -675,7 +857,8 @@ body {
     user-select: text;
   }
 
-  .page article p > strong {
+  .page article p > strong > em,
+  strong > em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -704,7 +887,38 @@ body {
     user-select: text;
   }
 
-  .page article p > u {
+  .page article p > strong,
+  strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
+    cursor: auto;
+    filter: none;
+    font-family:
+      Inter,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 600;
+    outline: rgb(244, 244, 240) none 0px;
+    text-decoration: none solid rgb(244, 244, 240);
+    text-decoration-color: rgb(244, 244, 240);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u,
+  u {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     cursor: auto;
@@ -996,13 +1210,6 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: rgb(58, 56, 56);
-    --quartz-graph-node: rgb(199, 197, 194);
-    --quartz-graph-node-attachment: hsl(40.2, 87.2%, 63.1%);
-    --quartz-graph-node-focused: rgb(102, 153, 97);
-    --quartz-graph-node-tag: hsl(9.6, 66.2%, 46.5%);
-    --quartz-graph-node-unresolved: rgb(112, 110, 109);
-    --quartz-graph-text: rgb(244, 244, 240);
   }
 
   h1 {
@@ -1259,6 +1466,16 @@ body {
     white-space: pre-wrap;
   }
 
+  pre:has(> code) {
+    background-color: light-dark(rgba(226, 224, 220, 0.5), rgb(38, 38, 37));
+    border: 0px solid rgb(58, 56, 56);
+    border-color: light-dark(rgb(226, 224, 220), rgb(58, 56, 56));
+    border-radius: 4px;
+    overflow-x: hidden;
+    padding: 12px 16px;
+    white-space: pre-wrap;
+  }
+
   ul > li {
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
     text-align: start;
@@ -1282,19 +1499,78 @@ body {
     transition: all;
   }
 
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
-
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
+    }
+  }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import {
   isDarkTheme,
   isLightTheme,
   sanitizeFilenamePreservingEmojis as sanitize,
+  getFonts,
 } from "../../util/util.mjs";
 
 /*
@@ -30,6 +31,16 @@ manifestCollection.forEach((manifest) => {
     : null;
 
   const colorTargets = ["color", "background-color", "border-color"];
+  let graphColors = { dark: {}, light: {} };
+  const graphMapping = {
+    "--quartz-graph-line": "--lightgray",
+    "--quartz-graph-node": ["--gray", "--light"],
+    "--quartz-graph-node-unresolved": "--darkgray",
+    "--quartz-graph-text": "--dark",
+    "--quartz-graph-node-focused": "--secondary",
+    "--quartz-graph-node-tag": "--tertiary",
+    "--quartz-graph-node-attachment": "--highlight",
+  };
   //console.log(data);
   //const scssFile = "./templates/_index.scss";
   //const scssData = readFileSync(scssFile, "utf8");
@@ -50,6 +61,22 @@ manifestCollection.forEach((manifest) => {
           } else {
             data[key][target] =
               `light-dark(${lightData[key][target]}, ${darkData[key][target]})`;
+          }
+        } else if (target.startsWith("--quartz-graph")) {
+          // Special handling for graph colors to ensure visibility in both themes
+          if (Array.isArray(graphMapping[target])) {
+            graphMapping[target].forEach((mapped) => {
+              graphColors["dark"][mapped] = darkData[key][target];
+              graphColors["light"][mapped] = lightData[key][target];
+            });
+          } else if (!graphMapping[target]) {
+            console.warn(
+              `Warning: Unmapped graph color target "${target}" in theme "${theme}". Please update the graphMapping object in compile.js.`,
+            );
+          } else {
+            // Map the graph color to a more descriptive variable name
+            graphColors["dark"][graphMapping[target]] = darkData[key][target];
+            graphColors["light"][graphMapping[target]] = lightData[key][target];
           }
         } else {
           data[key][target] = darkData[key][target]; // Use darkData value for non-color targets
@@ -78,12 +105,54 @@ manifestCollection.forEach((manifest) => {
     );
     process.exit(1);
   }
+  const fonts = getFonts(manifest.name);
+  let fontString = "";
+  fonts.forEach((font) => {
+    fontString += readFileSync(`./extras/fonts/${font}.scss`);
+  });
+  let graphStringDark = "";
+  let graphStringLight = "";
+  if (Object.keys(graphColors["dark"]).length > 0) {
+    for (const [key, value] of Object.entries(graphColors["dark"])) {
+      graphStringDark += `    ${key}: ${value} !important;\n`;
+    }
+  }
+  if (Object.keys(graphColors["light"]).length > 0) {
+    for (const [key, value] of Object.entries(graphColors["light"])) {
+      graphStringLight += `    ${key}: ${value} !important;\n`;
+    }
+  }
   let resultScss = `
 @use "../variables.scss" as *;
 
 :root {
   ${lightData && darkData ? "color-scheme: light dark;" : lightData ? "color-scheme: light;" : darkData ? "color-scheme: dark;" : ""}
   font-size: 16px;
+}
+
+${
+  lightData && darkData
+    ? `
+:root:root {
+  ${graphStringLight}
+}
+:root:root[saved-theme="dark"] {
+  ${graphStringDark}
+}
+`
+    : lightData
+      ? `
+:root:root {
+  ${graphStringLight}
+}
+`
+      : darkData
+        ? `
+:root:root {
+  ${graphStringDark}
+}
+`
+        : ""
 }
 
 html {
@@ -121,6 +190,8 @@ ${
 }
 }
 
+${fontString}
+
 body {
 `;
   for (const [key, value] of Object.entries(data)) {
@@ -134,23 +205,87 @@ body {
 `;
   }
   resultScss += `
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
 
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
     }
   }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  }
 }
 `;
+
+  // Remove --lightningcss-light and --lightningcss-dark from variables
+  resultScss = resultScss.replaceAll("--lightningcss-light, ", "");
+  resultScss = resultScss.replaceAll("--lightningcss-dark, ", "");
   // Write the result to the target file
   writeFileSync(targetFile, resultScss, "utf8");
   console.log(`Generated SCSS for theme: ${theme}`);

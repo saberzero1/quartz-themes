@@ -310,7 +310,6 @@ You can use three or more stars `***`, hyphens `---`, or underscore `___` on
 
 ```md
 ---
-
 ---
 
 ---
@@ -424,14 +423,14 @@ Vertical bars in tables
 If you want to use [aliases](https://help.obsidian.md/Linking+notes+and+files/Aliases), or to [resize an image](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20images) in your table, you need to add a `\` before the vertical bar.
 
 ```md
-| First column                                                           | Second column                                                                           |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]] | ![Engelbart|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg) |
+| First column                                                           | Second column |
+| ---------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------- |
+| [[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]] | ![Engelbart   | 75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg) |
 ```
 
-| First column                                                           | Second column                                                                           |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]] | ![Engelbart|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg) |
+| First column                                                           | Second column |
+| ---------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------- |
+| [[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]] | ![Engelbart   | 75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg) |
 
 You can align text to the left, right, or center of a column by adding colons (`:`) to the header row.
 

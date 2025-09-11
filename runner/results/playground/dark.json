@@ -3,6 +3,30 @@
     "background-color": "oklch(0.135 0.01 279.29)",
     "color": "oklch(0.92 0.004 279.29)"
   },
+  ".callout": {
+    "--callout-color": "oklch(48.5% 0.173 260.58)",
+    "border-radius": "8px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "12px"
+  },
+  ".callout .callout-title": {
+    "color": "oklch(0.615 0.176 260.58)",
+    "gap": "6px",
+    "padding": "0px"
+  },
+  ".callout .callout-title .callout-icon": {
+    "color": "oklch(0.615 0.176 260.58)"
+  },
+  ".callout .callout-title > .callout-title-inner > p": {
+    "color": "oklch(0.615 0.176 260.58)",
+    "font-weight": "400"
+  },
+  ".callout > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "oklch(48.5% 0.039 279.29)",
     "background-color": "color(srgb 0.352875 0.364769 0.459782 / 0.2)",
@@ -19,10 +43,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.018 279.29)"
+    "color": "oklch(0.745 0.018 279.29)",
+    "background-color": "oklch(0.745 0.018 279.29)"
   },
   ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.018 279.29)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"abstract\"] > .callout-content": {
@@ -45,10 +70,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.245 13.65)"
+    "color": "oklch(0.615 0.245 13.65)",
+    "background-color": "oklch(0.615 0.245 13.65)"
   },
   ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.615 0.245 13.65)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"bug\"] > .callout-content": {
@@ -71,10 +97,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.245 13.65)"
+    "color": "oklch(0.615 0.245 13.65)",
+    "background-color": "oklch(0.615 0.245 13.65)"
   },
   ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.615 0.245 13.65)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"danger\"] > .callout-content": {
@@ -97,10 +124,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.126 97.11)"
+    "color": "oklch(0.615 0.126 97.11)",
+    "background-color": "oklch(0.615 0.126 97.11)"
   },
   ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.615 0.126 97.11)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"example\"] > .callout-content": {
@@ -123,10 +151,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.245 13.65)"
+    "color": "oklch(0.615 0.245 13.65)",
+    "background-color": "oklch(0.615 0.245 13.65)"
   },
   ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.615 0.245 13.65)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"failure\"] > .callout-content": {
@@ -149,13 +178,41 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
-    "color": "oklch(0.98 0.001 279.29)"
+    "color": "oklch(0.98 0.001 279.29)",
+    "background-color": "oklch(0.98 0.001 279.29)"
   },
   ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.98 0.001 279.29)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"info\"] > .callout-content": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"note\"]": {
+    "--callout-color": "oklch(48.5% 0.173 260.58)",
+    "background-color": "color(srgb 0.108101 0.34436 0.747299 / 0.2)",
+    "border-color": "color(srgb 0.108101 0.34436 0.747299 / 0.6)",
+    "border-radius": "8px",
+    "border-style": "solid",
+    "border-width": "1px",
+    "mix-blend-mode": "normal",
+    "padding": "12px"
+  },
+  ".callout[data-callout=\"note\"] .callout-title": {
+    "color": "oklch(0.615 0.176 260.58)",
+    "gap": "6px",
+    "padding": "0px"
+  },
+  ".callout[data-callout=\"note\"] .callout-title .callout-icon": {
+    "color": "oklch(0.615 0.176 260.58)",
+    "background-color": "oklch(0.615 0.176 260.58)"
+  },
+  ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p": {
+    "color": "oklch(0.615 0.176 260.58)",
+    "font-weight": "400"
+  },
+  ".callout[data-callout=\"note\"] > .callout-content": {
     "background-color": "rgba(0, 0, 0, 0)",
     "padding": "0px"
   },
@@ -175,10 +232,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.17 46.85)"
+    "color": "oklch(0.615 0.17 46.85)",
+    "background-color": "oklch(0.615 0.17 46.85)"
   },
   ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.615 0.17 46.85)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"question\"] > .callout-content": {
@@ -201,10 +259,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"quote\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.018 279.29)"
+    "color": "oklch(0.745 0.018 279.29)",
+    "background-color": "oklch(0.745 0.018 279.29)"
   },
   ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.018 279.29)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"quote\"] > .callout-content": {
@@ -227,10 +286,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.222 140.09)"
+    "color": "oklch(0.745 0.222 140.09)",
+    "background-color": "oklch(0.745 0.222 140.09)"
   },
   ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.222 140.09)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"success\"] > .callout-content": {
@@ -253,10 +313,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.164 161.65)"
+    "color": "oklch(0.745 0.164 161.65)",
+    "background-color": "oklch(0.745 0.164 161.65)"
   },
   ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.164 161.65)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"tip\"] > .callout-content": {
@@ -279,10 +340,11 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.111 260.58)"
+    "color": "oklch(0.745 0.111 260.58)",
+    "background-color": "oklch(0.745 0.111 260.58)"
   },
   ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.111 260.58)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"todo\"] > .callout-content": {
@@ -305,37 +367,14 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
-    "color": "oklch(0.745 0.166 46.85)"
+    "color": "oklch(0.745 0.166 46.85)",
+    "background-color": "oklch(0.745 0.166 46.85)"
   },
   ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
+    "color": "oklch(0.745 0.166 46.85)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"warning\"] > .callout-content": {
-    "background-color": "rgba(0, 0, 0, 0)",
-    "padding": "0px"
-  },
-  ".callout[data-callout]": {
-    "--callout-color": "oklch(48.5% 0.173 260.58)",
-    "border-radius": "8px",
-    "border-style": "solid",
-    "border-width": "1px",
-    "mix-blend-mode": "normal",
-    "padding": "12px"
-  },
-  ".callout[data-callout] .callout-title": {
-    "color": "oklch(0.615 0.176 260.58)",
-    "gap": "6px",
-    "padding": "0px"
-  },
-  ".callout[data-callout] .callout-title .callout-icon": {
-    "color": "oklch(0.615 0.176 260.58)"
-  },
-  ".callout[data-callout] .callout-title > .callout-title-inner > p": {
-    "color": "oklch(0.92 0.004 279.29)",
-    "font-weight": "400"
-  },
-  ".callout[data-callout] > .callout-content": {
     "background-color": "rgba(0, 0, 0, 0)",
     "padding": "0px"
   },
@@ -368,6 +407,14 @@
     "text-decoration": "none solid oklch(0.845 0.01 279.29)"
   },
   ".graph .graph-outer": { "border-color": "oklch(0.255 0.021 279.29)" },
+  ".graph>.global-graph-outer": {
+    "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
+    "backdrop-filter": "blur(4px) brightness(0.4)"
+  },
+  ".graph>.global-graph-outer>.global-graph-container": {
+    "background-color": "transparent",
+    "border-color": "oklch(0.255 0.021 279.29)"
+  },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
@@ -402,7 +449,7 @@
     "text-decoration": "line-through solid oklch(0.485 0.039 279.29)",
     "text-decoration-color": "oklch(0.485 0.039 279.29)"
   },
-  ".page article p > b": {
+  ".page article p > b, b": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -418,7 +465,7 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".page article p > em": {
+  ".page article p > em, em": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -434,7 +481,7 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".page article p > i": {
+  ".page article p > i, i": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -450,7 +497,7 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".page article p > s": {
+  ".page article p > s, s": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -466,7 +513,7 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".page article p > strong": {
+  ".page article p > strong > em, strong > em": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -482,7 +529,23 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".page article p > u": {
+  ".page article p > strong, strong": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.92 0.004 279.29)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "700",
+    "outline": "oklch(0.92 0.004 279.29) none 0px",
+    "text-decoration": "none solid oklch(0.92 0.004 279.29)",
+    "text-decoration-color": "oklch(0.92 0.004 279.29)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".page article p > u, u": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",
     "cursor": "auto",
@@ -766,6 +829,15 @@
     "border-radius": "8px",
     "overflow-x": "auto",
     "padding": "0px",
+    "white-space": "pre-wrap"
+  },
+  "pre:has(> code)": {
+    "background-color": "oklch(0.255 0.021 279.29)",
+    "border": "0px solid oklch(0.255 0.021 279.29)",
+    "border-color": "oklch(0.255 0.021 279.29)",
+    "border-radius": "8px",
+    "overflow-x": "hidden",
+    "padding": "12px 16px",
     "white-space": "pre-wrap"
   },
   "ul > li": { "color": "oklch(0.92 0.004 279.29)", "text-align": "start" },
