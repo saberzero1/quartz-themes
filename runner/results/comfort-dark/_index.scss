@@ -5,6 +5,9 @@
   font-size: 16px;
 }
 
+:root:root {
+}
+
 html {
   color-scheme: only dark;
   .callout[data-callout] {
@@ -12,10 +15,1022 @@ html {
   }
 }
 
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-thin.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-thin.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedthin.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedthin.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-thinoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-thinoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-thinoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-thinoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedthinoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedthinoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedthinoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedthinoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-thinitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-thinitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedthinitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedthinitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extralight.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extralight.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextralight.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextralight.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extralightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extralightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extralightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extralightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextralightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextralightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextralightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextralightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extralightitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extralightitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextralightitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextralightitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-light.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedlight.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedlight.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-lightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-lightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-lightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-lightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedlightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedlightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedlightoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedlightoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-lightitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-lightitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedlightitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedlightitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-regular.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extended.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extended.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-oblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-oblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-oblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-oblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-italic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-italic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendeditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendeditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-medium.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-medium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedmedium.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedmedium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-mediumoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-mediumoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-mediumoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-mediumoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedmediumoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedmediumoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedmediumoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedmediumoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-mediumitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-mediumitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedmediumitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedmediumitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-semibold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-semibold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedsemibold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedsemibold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-semiboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-semiboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-semiboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-semiboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedsemiboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedsemiboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedsemiboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedsemiboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-semibolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-semibolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedsemibolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedsemibolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-bold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedbold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedbold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-boldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-boldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-boldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-boldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-bolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-bolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedbolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedbolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extrabold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extrabold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextrabold.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextrabold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extraboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extraboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extraboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extraboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextraboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextraboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextraboldoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextraboldoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extrabolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extrabolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedextrabolditalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedextrabolditalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-heavy.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-heavy.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedheavy.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedheavy.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-heavyoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-heavyoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-heavyoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-heavyoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: oblique;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedheavyoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedheavyoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web Oblique";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedheavyoblique.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedheavyoblique.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-heavyitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-heavyitalic.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-display: swap;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/woff2/iosevka-extendedheavyitalic.woff2")
+      format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/ttf/iosevka-extendedheavyitalic.ttf")
+      format("truetype");
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTN1OVk6OThhvAWV8.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVk6OThhvAWV8.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOVOVk6OThhvAWV8.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNVOVk6OThhvAWV8.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNFOVk6OThhvAWV8.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOVk6OThhvA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   &[data-slug] {
     background-color: rgb(34, 34, 34);
     color: rgb(187, 192, 197);
+  }
+
+  .callout {
+    --callout-color: 2, 122, 255;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout .callout-title .callout-icon {
+    color: rgb(2, 122, 255);
+  }
+
+  .callout .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
   }
 
   .callout[data-callout="abstract"] {
@@ -37,10 +1052,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -68,10 +1084,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -99,10 +1116,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -130,10 +1148,11 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     color: rgb(168, 130, 255);
+    background-color: rgb(168, 130, 255);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(168, 130, 255);
     font-weight: 400;
   }
 
@@ -161,10 +1180,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -192,14 +1212,47 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
   .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
+    background-color: rgba(2, 122, 255, 0.1);
+    border-color: rgba(2, 122, 255, 0.25);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="note"] .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] .callout-title .callout-icon {
+    color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
+  }
+
+  .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout[data-callout="note"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -223,10 +1276,11 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
@@ -254,10 +1308,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     color: rgb(158, 158, 158);
+    background-color: rgb(158, 158, 158);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(158, 158, 158);
     font-weight: 400;
   }
 
@@ -285,10 +1340,11 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     color: rgb(68, 207, 110);
+    background-color: rgb(68, 207, 110);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(68, 207, 110);
     font-weight: 400;
   }
 
@@ -316,10 +1372,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -347,10 +1404,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -378,43 +1436,15 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-  }
-
-  .callout[data-callout] {
-    --callout-color: 2, 122, 255;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px;
-    mix-blend-mode: lighten;
-    padding: 12px 12px 12px 24px;
-  }
-
-  .callout[data-callout] .callout-title {
-    color: rgb(2, 122, 255);
-    gap: 4px;
-    padding: 0px;
-  }
-
-  .callout[data-callout] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-  }
-
-  .callout[data-callout] .callout-title > .callout-title-inner > p {
-    color: rgb(187, 192, 197);
-    font-weight: 400;
-  }
-
-  .callout[data-callout] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -513,6 +1543,16 @@ body {
     border-color: rgb(38, 38, 38);
   }
 
+  .graph > .global-graph-outer {
+    -webkit-backdrop-filter: blur(4px) brightness(0.4);
+    backdrop-filter: blur(4px) brightness(0.4);
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: transparent;
+    border-color: rgb(38, 38, 38);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -593,7 +1633,8 @@ body {
     text-decoration-color: rgb(160, 155, 128);
   }
 
-  .page article p > b {
+  .page article p > b,
+  b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(187, 192, 197);
     cursor: auto;
@@ -628,7 +1669,8 @@ body {
     user-select: text;
   }
 
-  .page article p > em {
+  .page article p > em,
+  em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(219, 113, 26);
     cursor: auto;
@@ -663,7 +1705,8 @@ body {
     user-select: text;
   }
 
-  .page article p > i {
+  .page article p > i,
+  i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(187, 192, 197);
     cursor: auto;
@@ -698,7 +1741,8 @@ body {
     user-select: text;
   }
 
-  .page article p > s {
+  .page article p > s,
+  s {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(187, 192, 197);
     cursor: auto;
@@ -733,7 +1777,8 @@ body {
     user-select: text;
   }
 
-  .page article p > strong {
+  .page article p > strong > em,
+  strong > em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(219, 113, 26);
     cursor: auto;
@@ -768,7 +1813,44 @@ body {
     user-select: text;
   }
 
-  .page article p > u {
+  .page article p > strong,
+  strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(219, 113, 26);
+    cursor: auto;
+    filter: none;
+    font-family:
+      Iosevka,
+      "Segoe UI",
+      -apple-system,
+      "system-ui",
+      Roboto,
+      Inter,
+      Ubuntu,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 600;
+    outline: rgb(219, 113, 26) none 0px;
+    text-decoration: none solid rgb(219, 113, 26);
+    text-decoration-color: rgb(219, 113, 26);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u,
+  u {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(187, 192, 197);
     cursor: auto;
@@ -1411,6 +2493,16 @@ body {
     white-space: pre;
   }
 
+  pre:has(> code) {
+    background-color: rgb(56, 56, 56);
+    border: 0px solid rgb(54, 54, 54);
+    border-color: rgb(54, 54, 54);
+    border-radius: 4px;
+    overflow-x: hidden;
+    padding: 12px 16px;
+    white-space: pre-wrap;
+  }
+
   ul > li {
     color: rgb(187, 192, 197);
     text-align: start;
@@ -1434,19 +2526,78 @@ body {
     transition: all;
   }
 
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
-
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
+    }
+  }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 }
