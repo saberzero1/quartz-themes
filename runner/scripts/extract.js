@@ -128,6 +128,20 @@ describe("Quartz Theme Style Extraction", () => {
                   .trim()
               : "unset",
           };
+          computedStyles[`.graph>.global-graph-outer>.global-graph-container`] =
+            {
+              "border-color": borderStyle.getPropertyValue("border-color")
+                ? borderStyle
+                    .getPropertyValue("border-left-color")
+                    .toString()
+                    .trim()
+                : "unset",
+              "background-color": "transparent",
+            };
+          computedStyles[`.graph>.global-graph-outer`] = {
+            "backdrop-filter": "blur(4px) brightness(0.4)",
+            "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
+          };
         }
 
         const leftSidebar = document
@@ -220,6 +234,36 @@ describe("Quartz Theme Style Extraction", () => {
     return result;
   }
 
+  function fixCalloutIconColor(results) {
+    // Set the callout icon color to background color as Quartz uses background-color while Obsidian uses color
+    const calloutTypes = [
+      "note",
+      "abstract",
+      "info",
+      "todo",
+      "tip",
+      "success",
+      "question",
+      "warning",
+      "danger",
+      "failure",
+      "bug",
+      "example",
+      "quote",
+    ];
+
+    calloutTypes.forEach((type) => {
+      results[
+        `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
+      ]["background-color"] =
+        results[
+          `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
+        ]["color"];
+    });
+
+    return results;
+  }
+
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
@@ -282,10 +326,14 @@ describe("Quartz Theme Style Extraction", () => {
         for (const key of sortedKeys) {
           sortedDarkResultObject[key] = darkResultObject[key];
         }
+        // Fix callout icon colors
+        const fixedDarkResultObject = fixCalloutIconColor(
+          sortedDarkResultObject,
+        );
         await new Promise((resolve, reject) => {
           writeFile(
             darkFileName,
-            JSON.stringify(sortedDarkResultObject, null, 2),
+            JSON.stringify(fixedDarkResultObject, null, 2),
             (err) => {
               if (err) reject(err);
               else resolve();
@@ -344,10 +392,14 @@ describe("Quartz Theme Style Extraction", () => {
         for (const key of sortedKeys) {
           sortedLightResultObject[key] = lightResultObject[key];
         }
+        // Fix callout icon colors
+        const fixedLightResultObject = fixCalloutIconColor(
+          sortedLightResultObject,
+        );
         await new Promise((resolve, reject) => {
           writeFile(
             lightFileName,
-            JSON.stringify(sortedLightResultObject, null, 2),
+            JSON.stringify(fixedLightResultObject, null, 2),
             (err) => {
               if (err) reject(err);
               else resolve();

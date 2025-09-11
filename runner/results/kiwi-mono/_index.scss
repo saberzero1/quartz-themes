@@ -5,6 +5,31 @@
   font-size: 16px;
 }
 
+:root:root {
+  --lightgray: #d4d4d4 !important;
+  --gray: #888 !important;
+  --light: #888 !important;
+  --highlight: #e0ac00 !important;
+  --secondary: hsl(258, 88%, 66%) !important;
+  --tertiary: #08b94e !important;
+  --darkgray: #bbb !important;
+  --dark: #444 !important;
+}
+:root:root[saved-theme="dark"] {
+  --lightgray: #3f3f3f !important;
+  --gray: #777 !important;
+  --light: #777 !important;
+  --highlight: #e0de71 !important;
+  --secondary: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --tertiary: #44cf6e !important;
+  --darkgray: #555 !important;
+  --dark: #aaa !important;
+}
+
 html {
   &[saved-theme="light"] {
     color-scheme: light;
@@ -20,10 +45,52 @@ html {
   }
 }
 
+/* cascadia-mono-latin-ext-400-normal*/
+@font-face {
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
+}
+
 body {
   &[data-slug] {
     background-color: light-dark(rgb(255, 255, 255), rgb(17, 17, 17));
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
+  }
+
+  .callout {
+    --callout-color: 2, 122, 255;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+    mix-blend-mode: lighten;
+    padding: 0px 0px 0px 16.5344px;
+  }
+
+  .callout .callout-title {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    gap: 9.99508px;
+    padding: 0px;
+  }
+
+  .callout .callout-title .callout-icon {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  }
+
+  .callout .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    font-weight: 600;
+  }
+
+  .callout > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
   }
 
   .callout[data-callout="abstract"] {
@@ -45,11 +112,12 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    font-weight: 600;
   }
 
   .callout[data-callout="abstract"] > .callout-content {
@@ -76,11 +144,12 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    font-weight: 600;
   }
 
   .callout[data-callout="bug"] > .callout-content {
@@ -107,11 +176,12 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    font-weight: 600;
   }
 
   .callout[data-callout="danger"] > .callout-content {
@@ -138,11 +208,12 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    background-color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    font-weight: 600;
   }
 
   .callout[data-callout="example"] > .callout-content {
@@ -169,11 +240,12 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    font-weight: 600;
   }
 
   .callout[data-callout="failure"] > .callout-content {
@@ -200,14 +272,47 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    font-weight: 600;
   }
 
   .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+    mix-blend-mode: lighten;
+    padding: 0px 0px 0px 16.5344px;
+  }
+
+  .callout[data-callout="note"] .callout-title {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    gap: 9.99508px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] .callout-title .callout-icon {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  }
+
+  .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    font-weight: 600;
+  }
+
+  .callout[data-callout="note"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -231,11 +336,12 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    font-weight: 600;
   }
 
   .callout[data-callout="question"] > .callout-content {
@@ -262,11 +368,12 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     color: rgb(158, 158, 158);
+    background-color: rgb(158, 158, 158);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: rgb(158, 158, 158);
+    font-weight: 600;
   }
 
   .callout[data-callout="quote"] > .callout-content {
@@ -293,11 +400,12 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    background-color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    font-weight: 600;
   }
 
   .callout[data-callout="success"] > .callout-content {
@@ -324,11 +432,12 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    font-weight: 600;
   }
 
   .callout[data-callout="tip"] > .callout-content {
@@ -355,11 +464,12 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    font-weight: 600;
   }
 
   .callout[data-callout="todo"] > .callout-content {
@@ -386,43 +496,15 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    font-weight: 600;
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-  }
-
-  .callout[data-callout] {
-    --callout-color: 2, 122, 255;
-    border-radius: 0px;
-    border-style: solid;
-    border-width: 0px 0px 0px 2px;
-    mix-blend-mode: lighten;
-    padding: 0px 0px 0px 16.5344px;
-  }
-
-  .callout[data-callout] .callout-title {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
-    gap: 9.99508px;
-    padding: 0px;
-  }
-
-  .callout[data-callout] .callout-title .callout-icon {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
-  }
-
-  .callout[data-callout] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
-    font-weight: 400;
-  }
-
-  .callout[data-callout] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -497,6 +579,16 @@ body {
     border-color: rgba(0, 0, 0, 0);
   }
 
+  .graph > .global-graph-outer {
+    -webkit-backdrop-filter: blur(4px) brightness(0.4);
+    backdrop-filter: blur(4px) brightness(0.4);
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
   .katex > .katex-html {
     font-family: MJXZERO, MJXTEX;
   }
@@ -561,7 +653,8 @@ body {
     text-decoration-color: rgb(119, 119, 119);
   }
 
-  .page article p > b {
+  .page article p > b,
+  b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -588,7 +681,8 @@ body {
     user-select: text;
   }
 
-  .page article p > em {
+  .page article p > em,
+  em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -615,7 +709,8 @@ body {
     user-select: text;
   }
 
-  .page article p > i {
+  .page article p > i,
+  i {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -642,7 +737,8 @@ body {
     user-select: text;
   }
 
-  .page article p > s {
+  .page article p > s,
+  s {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -669,7 +765,8 @@ body {
     user-select: text;
   }
 
-  .page article p > strong {
+  .page article p > strong > em,
+  strong > em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -696,7 +793,36 @@ body {
     user-select: text;
   }
 
-  .page article p > u {
+  .page article p > strong,
+  strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
+    cursor: auto;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 700;
+    outline: rgb(170, 170, 170) none 0px;
+    text-decoration: none solid rgb(170, 170, 170);
+    text-decoration-color: rgb(170, 170, 170);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u,
+  u {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     cursor: auto;
@@ -961,17 +1087,6 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: #3f3f3f;
-    --quartz-graph-node: #777;
-    --quartz-graph-node-attachment: #e0de71;
-    --quartz-graph-node-focused: hsl(
-      calc(258 - 3),
-      calc(88% * 1.02),
-      calc(66% * 1.15)
-    );
-    --quartz-graph-node-tag: #44cf6e;
-    --quartz-graph-node-unresolved: #555;
-    --quartz-graph-text: #aaa;
   }
 
   h1 {
@@ -1214,6 +1329,16 @@ body {
     white-space: pre-wrap;
   }
 
+  pre:has(> code) {
+    background-color: light-dark(rgb(248, 248, 248), rgb(36, 41, 54));
+    border: 0px solid rgb(54, 54, 54);
+    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 13.9087px;
+    white-space: pre-wrap;
+  }
+
   ul > li {
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     text-align: start;
@@ -1237,19 +1362,78 @@ body {
     transition: all;
   }
 
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
-
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
+    }
+  }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 }

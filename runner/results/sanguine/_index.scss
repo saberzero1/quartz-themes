@@ -5,6 +5,9 @@
   font-size: 16px;
 }
 
+:root:root {
+}
+
 html {
   color-scheme: only dark;
   .callout[data-callout] {
@@ -12,10 +15,292 @@ html {
   }
 }
 
+@font-face {
+  font-family: "Slasher Film";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm-ALyOA.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film 3D";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film 3D"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3D-qZLd5.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film 3D Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film 3D Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DItalic-VGAjB.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film 3D Semi-Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film 3D Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DSemiItalic-JRx6M.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Condensed"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensed-GOxjg.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Condensed Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Condensed Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedItalic-jE2M0.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Condensed Semi-It";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Condensed Semi-It"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedSemiIt-z8EW4.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Expanded";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Expanded"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpanded-51VdV.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Expanded Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Expanded Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedItalic-7BGLB.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Expanded Semi-It";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Expanded Semi-It"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedSemiIt-mL7v2.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmItalic-d9B1x.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Leftalic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmLeftalic-PKxjZ.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough-L3xjE.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough 3D";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough 3D"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3D-X3zjZ.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough 3D Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough 3D Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DItalic-gxr8p.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough 3D SemItal";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough 3D SemItal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DSemital-owd7o.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Cond SemiIt";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Cond SemiIt"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondSemiit-eZ8Rn.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Conden Ital";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Conden Ital"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondenItal-0WV9G.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Condensed"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondensed-4BVmW.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Exp SemItal";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Exp SemItal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpSemital-Eaxj8.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Expand Ital";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Expand Ital"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpandItal-axnjg.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Expanded";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Expanded"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpanded-WyGjO.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughItalic-OVxjp.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Leftalic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughLeftalic-ZVxjz.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Semi-Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiItalic-x3W0q.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Rough Semi-Leftal";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Rough Semi-Leftal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiLeftal-3zV78.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Semi-Italic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiItalic-DOxjR.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Slasher Film Semi-Leftalic";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Slasher Film Semi-Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff")
+      format("woff");
+}
+
 body {
   &[data-slug] {
     background-color: rgb(3, 3, 8);
     color: rgb(131, 136, 140);
+  }
+
+  .callout {
+    --callout-color: 2, 122, 255;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout .callout-title .callout-icon {
+    color: rgb(255, 73, 73);
+  }
+
+  .callout .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
   }
 
   .callout[data-callout="abstract"] {
@@ -37,10 +322,11 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -68,10 +354,11 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -99,10 +386,11 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -130,10 +418,11 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(168, 130, 255);
     font-weight: 400;
   }
 
@@ -161,10 +450,11 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -192,14 +482,47 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
   .callout[data-callout="info"] > .callout-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
+    background-color: rgb(35, 34, 33);
+    border-color: rgba(2, 122, 255, 0.25);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    mix-blend-mode: lighten;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="note"] .callout-title {
+    color: rgb(2, 122, 255);
+    gap: 4px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="note"] .callout-title .callout-icon {
+    color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
+  }
+
+  .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
+    color: rgb(2, 122, 255);
+    font-weight: 400;
+  }
+
+  .callout[data-callout="note"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -223,10 +546,11 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
@@ -254,10 +578,11 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(158, 158, 158);
     font-weight: 400;
   }
 
@@ -285,10 +610,11 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(68, 207, 110);
     font-weight: 400;
   }
 
@@ -316,10 +642,11 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -347,10 +674,11 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -378,43 +706,15 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     color: rgb(255, 73, 73);
+    background-color: rgb(255, 73, 73);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
-  }
-
-  .callout[data-callout] {
-    --callout-color: 2, 122, 255;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px;
-    mix-blend-mode: lighten;
-    padding: 12px 12px 12px 24px;
-  }
-
-  .callout[data-callout] .callout-title {
-    color: rgb(2, 122, 255);
-    gap: 4px;
-    padding: 0px;
-  }
-
-  .callout[data-callout] .callout-title .callout-icon {
-    color: rgb(255, 73, 73);
-  }
-
-  .callout[data-callout] .callout-title > .callout-title-inner > p {
-    color: rgb(131, 136, 140);
-    font-weight: 400;
-  }
-
-  .callout[data-callout] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
@@ -456,6 +756,16 @@ body {
   }
 
   .graph .graph-outer {
+    border-color: rgb(35, 34, 33);
+  }
+
+  .graph > .global-graph-outer {
+    -webkit-backdrop-filter: blur(4px) brightness(0.4);
+    backdrop-filter: blur(4px) brightness(0.4);
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: transparent;
     border-color: rgb(35, 34, 33);
   }
 
@@ -503,7 +813,8 @@ body {
     text-decoration-color: rgb(131, 136, 140);
   }
 
-  .page article p > b {
+  .page article p > b,
+  b {
     background-color: rgb(3, 3, 8);
     color: rgb(131, 136, 140);
     cursor: auto;
@@ -520,7 +831,8 @@ body {
     user-select: text;
   }
 
-  .page article p > em {
+  .page article p > em,
+  em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(217, 41, 38);
     cursor: auto;
@@ -537,7 +849,8 @@ body {
     user-select: text;
   }
 
-  .page article p > i {
+  .page article p > i,
+  i {
     background-color: rgb(3, 3, 8);
     color: rgb(131, 136, 140);
     cursor: auto;
@@ -554,7 +867,8 @@ body {
     user-select: text;
   }
 
-  .page article p > s {
+  .page article p > s,
+  s {
     background-color: rgb(3, 3, 8);
     color: rgb(131, 136, 140);
     cursor: auto;
@@ -571,7 +885,8 @@ body {
     user-select: text;
   }
 
-  .page article p > strong {
+  .page article p > strong > em,
+  strong > em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(217, 41, 38);
     cursor: auto;
@@ -588,7 +903,26 @@ body {
     user-select: text;
   }
 
-  .page article p > u {
+  .page article p > strong,
+  strong {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(217, 41, 38);
+    cursor: auto;
+    filter: none;
+    font-family: "Slasher Regular";
+    font-weight: 600;
+    outline: rgb(217, 41, 38) none 0px;
+    text-decoration: none solid rgb(217, 41, 38);
+    text-decoration-color: rgb(217, 41, 38);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .page article p > u,
+  u {
     background-color: rgb(3, 3, 8);
     color: rgb(131, 136, 140);
     cursor: auto;
@@ -942,6 +1276,16 @@ body {
     white-space: pre-wrap;
   }
 
+  pre:has(> code) {
+    background-color: rgb(35, 34, 33);
+    border: 0px solid rgb(35, 34, 33);
+    border-color: rgb(35, 34, 33);
+    border-radius: 4px;
+    overflow-x: hidden;
+    padding: 12px 16px;
+    white-space: pre-wrap;
+  }
+
   ul > li {
     color: rgb(228, 229, 224);
     text-align: start;
@@ -965,19 +1309,78 @@ body {
     transition: all;
   }
 
-  div.graph {
-    --light: var(--quartz-graph-node) !important;
-    --lightgray: var(--quartz-graph-line) !important;
-    --gray: var(--quartz-graph-node) !important;
-    --darkgray: var(--quartz-graph-node-unresolved) !important;
-    --dark: var(--quartz-graph-text) !important;
-    --secondary: var(--quartz-graph-node-focused) !important;
-    --tertiary: var(--quartz-graph-node-tag) !important;
-  }
-
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
       background-color: transparent;
+    }
+  }
+
+  @media all and ($desktop) {
+    .page > #quartz-body {
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($tablet) {
+    .page > #quartz-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left {
+        padding-left: 2rem;
+      }
+
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  @media all and ($mobile) {
+    .page > #quartz-body {
+      padding: 0;
+
+      div.center {
+        min-width: calc(100% - 3rem);
+        max-width: calc(100% - 3rem);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      div.sidebar.right,
+      footer {
+        padding: 0 1.5rem;
+      }
+
+      .explorer .explorer-content {
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 }
