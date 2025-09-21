@@ -835,7 +835,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -878,8 +878,8 @@ body {
 
   code {
     background-color: light-dark(rgb(248, 249, 250), rgb(36, 38, 41));
-    border: 1px solid rgba(255, 255, 255, 0.075);
-    border-color: light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
+    border: 1px solid rgba(255, 255, 255, 0.067);
+    border-color: light-dark(rgba(0, 0, 0, 0.067), rgba(255, 255, 255, 0.067));
     border-radius: 2px;
     color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
     font-family:
@@ -1086,7 +1086,7 @@ body {
     border: 0px none rgb(216, 220, 227);
     border-color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
     border-radius: 2px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1096,7 +1096,7 @@ body {
     border: 0px solid rgba(218, 225, 234, 0.192);
     border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
     border-radius: 0px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

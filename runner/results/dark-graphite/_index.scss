@@ -841,7 +841,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -865,6 +865,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1004,7 +1005,7 @@ body {
     border-style: solid;
     border-top: 0.5px solid rgb(99, 99, 99);
     box-shadow: none;
-    margin: 48px 207.492px;
+    margin: 48px 210.492px;
   }
 
   input[type="checkbox"] {
@@ -1129,7 +1130,7 @@ body {
     border: 0px none rgb(148, 149, 148);
     border-color: rgb(148, 149, 148);
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 22px;
     white-space: pre-wrap;
   }
@@ -1139,7 +1140,7 @@ body {
     border: 0px solid rgb(148, 149, 148);
     border-color: rgb(148, 149, 148);
     border-radius: 4px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 0px;
     white-space: pre-wrap;
   }

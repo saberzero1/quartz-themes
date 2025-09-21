@@ -988,7 +988,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1236,7 +1236,7 @@ body {
     border: 0px none rgb(112, 112, 112);
     border-color: light-dark(rgb(85, 85, 85), rgb(112, 112, 112));
     border-radius: 0px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1246,7 +1246,7 @@ body {
     border: 0px solid rgb(157, 157, 157);
     border-color: light-dark(rgb(64, 64, 64), rgb(157, 157, 157));
     border-radius: 0px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

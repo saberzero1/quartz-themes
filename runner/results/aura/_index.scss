@@ -926,7 +926,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1174,7 +1174,7 @@ body {
     border: 0px none rgb(240, 240, 240);
     border-color: light-dark(rgb(74, 52, 28), rgb(240, 240, 240));
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1184,7 +1184,7 @@ body {
     border: 0px solid rgb(50, 50, 50);
     border-color: light-dark(rgb(233, 223, 209), rgb(50, 50, 50));
     border-radius: 4px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

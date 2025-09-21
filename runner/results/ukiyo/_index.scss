@@ -1420,7 +1420,7 @@ body {
     border: 0px none rgb(204, 194, 183);
     border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1430,7 +1430,7 @@ body {
     border: 0px solid rgb(80, 68, 49);
     border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
     border-radius: 4px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 4px 7px;
     white-space: pre-wrap;
   }
