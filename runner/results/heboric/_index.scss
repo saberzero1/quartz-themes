@@ -987,7 +987,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1151,9 +1151,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-1 {
@@ -1161,9 +1161,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-2 {
@@ -1171,9 +1171,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-3 {
@@ -1181,9 +1181,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-4 {
@@ -1191,9 +1191,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-5 {
@@ -1201,9 +1201,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(186, 189, 196);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   ol > li {
@@ -1237,7 +1237,7 @@ body {
     border: 0px none rgb(214, 216, 220);
     border-color: light-dark(rgb(68, 68, 68), rgb(214, 216, 220));
     border-radius: 3px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1247,7 +1247,7 @@ body {
     border: 0px solid rgb(82, 87, 96);
     border-color: light-dark(rgb(224, 224, 224), rgb(82, 87, 96));
     border-radius: 3px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

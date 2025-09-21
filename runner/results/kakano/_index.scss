@@ -1256,7 +1256,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: dashed;
     text-decoration-thickness: 1px;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1599,7 +1599,7 @@ body {
       color(srgb 0.6594 0.7599 0.9006)
     );
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1615,7 +1615,7 @@ body {
       color(srgb 0.111375 0.299813 0.563625)
     );
     border-radius: 4px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

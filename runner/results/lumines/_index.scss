@@ -202,7 +202,7 @@ html {
 body {
   &[data-slug] {
     background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
   }
 
   .callout {
@@ -749,7 +749,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -785,7 +785,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -803,7 +803,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -857,7 +857,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -882,13 +882,13 @@ body {
     border: 1px solid rgb(40, 40, 40);
     border-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
     border-radius: 5px;
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     font-family: "JetBrains Mono", monospace;
   }
 
   .text-highlight {
     background-color: rgba(255, 208, 0, 0.4);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -910,7 +910,7 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(237, 237, 237);
-    border-color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    border-color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
@@ -918,7 +918,7 @@ body {
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -946,7 +946,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -992,7 +992,7 @@ body {
     border: 1px solid rgb(40, 40, 40);
     border-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
     border-radius: 8px;
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1007,7 +1007,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -1024,7 +1024,7 @@ body {
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     font-family: "JetBrains Mono", monospace;
     font-size: 16px;
   }
@@ -1167,17 +1167,17 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     cursor: auto;
     filter: none;
     font-family: "JetBrains Mono", monospace;
@@ -1195,9 +1195,9 @@ body {
   pre > code {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(237, 237, 237);
-    border-color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    border-color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     border-radius: 8px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1207,13 +1207,13 @@ body {
     border: 1px solid rgb(40, 40, 40);
     border-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
     border-radius: 8px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }
 
   ul > li {
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     text-align: start;
   }
 
@@ -1226,9 +1226,9 @@ body {
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(237, 237, 237);
-    border-color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    border-color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     border-radius: 0px;
-    color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));
+    color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));
     content: normal;
     pointer-events: auto;
     transform: none;
