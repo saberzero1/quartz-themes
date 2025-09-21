@@ -35,7 +35,7 @@ if (process.env.OBSIDIAN_VERSIONS) {
     console.log(`${app}/${installer}`);
   }
 } else {
-  versions = [["1.8.10", "1.8.10"]];
+  versions = [["1.9.12", "1.9.12"]];
 }
 
 export const config = {
