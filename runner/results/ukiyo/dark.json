@@ -823,7 +823,7 @@
     "border": "0px none rgb(204, 194, 183)",
     "border-color": "rgb(204, 194, 183)",
     "border-radius": "4px",
-    "overflow-x": "auto",
+    "overflow-x": "visible",
     "padding": "0px",
     "white-space": "pre-wrap"
   },
@@ -832,7 +832,7 @@
     "border": "0px solid rgb(80, 68, 49)",
     "border-color": "rgb(80, 68, 49)",
     "border-radius": "4px",
-    "overflow-x": "hidden",
+    "overflow-x": "auto",
     "padding": "4px 7px",
     "white-space": "pre-wrap"
   },

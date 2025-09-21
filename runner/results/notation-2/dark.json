@@ -625,7 +625,7 @@
     "text-decoration-line": "underline",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "1px",
-    "transition": "opacity 0.15s ease-in-out",
+    "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
   "a.internal.tag-link": {
@@ -825,7 +825,7 @@
     "border": "0px none rgba(255, 255, 255, 0.9)",
     "border-color": "rgba(255, 255, 255, 0.9)",
     "border-radius": "3px",
-    "overflow-x": "auto",
+    "overflow-x": "visible",
     "padding": "24px 6px 24px 10px",
     "white-space": "pre-wrap"
   },
@@ -834,7 +834,7 @@
     "border": "0px solid rgba(255, 255, 255, 0.14)",
     "border-color": "rgba(255, 255, 255, 0.14)",
     "border-radius": "3px",
-    "overflow-x": "hidden",
+    "overflow-x": "auto",
     "padding": "12px 16px",
     "white-space": "pre-wrap"
   },

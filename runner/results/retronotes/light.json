@@ -384,21 +384,21 @@
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(218, 200, 151)",
     "cursor": "default",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(218, 200, 151)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
     "color": "rgb(218, 200, 151)",
     "cursor": "default",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(218, 200, 151)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
     "color": "rgb(218, 200, 151)",
     "cursor": "default",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(218, 200, 151)"
   },
@@ -414,12 +414,12 @@
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
-    "font": "16px / 0px \"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font": "16px / 0px \"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-align": "center",
     "white-space": "normal"
   },
   ".katex-display > .katex > .katex-html": {
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(99, 35, 53)",
@@ -450,7 +450,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -466,7 +466,7 @@
     "color": "rgb(156, 26, 33)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(156, 26, 33) none 0px",
     "text-decoration": "none solid rgb(156, 26, 33)",
@@ -482,7 +482,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -498,7 +498,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -514,7 +514,7 @@
     "color": "rgb(156, 26, 33)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "600",
     "outline": "rgb(156, 26, 33) none 0px",
     "text-decoration": "none solid rgb(156, 26, 33)",
@@ -530,7 +530,7 @@
     "color": "rgb(0, 77, 32)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "600",
     "outline": "rgb(0, 77, 32) none 0px",
     "text-decoration": "none solid rgb(0, 77, 32)",
@@ -546,7 +546,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -567,14 +567,14 @@
     "border-color": "rgb(186, 153, 66)",
     "border-radius": "5px",
     "color": "rgb(22, 50, 89)",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
   ".text-highlight": {
     "background-color": "rgb(218, 200, 151)",
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -599,7 +599,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -615,7 +615,7 @@
     "color": "rgba(156, 26, 33, 0.85)",
     "cursor": "pointer",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgba(156, 26, 33, 0.85) none 0px",
     "text-decoration": "none solid rgba(186, 153, 66, 0.3)",
@@ -623,7 +623,7 @@
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
-    "transition": "opacity 0.15s ease-in-out",
+    "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
   "a.internal.tag-link": {
@@ -642,7 +642,7 @@
     "border-top-right-radius": "8px",
     "border-top-style": "solid",
     "display": "flex",
-    "font-family": "\"??\", \"IBM Plex Mono\", Consolas, monospace, \"??\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", \"IBM Plex Mono\", Consolas, monospace, \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "margin-inline-start": "0px"
   },
@@ -650,7 +650,7 @@
   "blockquote": {
     "background-color": "rgb(239, 231, 209)",
     "border-inline-start": "2px solid rgb(186, 153, 66)",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-style": "normal",
     "margin-inline-end": "0px",
     "margin-inline-start": "0px",
@@ -673,7 +673,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "line-through solid rgb(22, 50, 89)",
@@ -687,7 +687,7 @@
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(22, 50, 89)",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-size": "16px"
   },
   "div.graph": {
@@ -807,7 +807,7 @@
     "color": "rgb(22, 50, 89)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(22, 50, 89) none 0px",
     "text-decoration": "none solid rgb(22, 50, 89)",
@@ -823,7 +823,7 @@
     "border": "0px none rgb(22, 50, 89)",
     "border-color": "rgb(22, 50, 89)",
     "border-radius": "4px",
-    "overflow-x": "auto",
+    "overflow-x": "visible",
     "padding": "0px",
     "white-space": "pre-wrap"
   },
@@ -832,7 +832,7 @@
     "border": "0px solid rgb(186, 153, 66)",
     "border-color": "rgb(186, 153, 66)",
     "border-radius": "4px",
-    "overflow-x": "hidden",
+    "overflow-x": "auto",
     "padding": "12px 16px",
     "white-space": "pre-wrap"
   },

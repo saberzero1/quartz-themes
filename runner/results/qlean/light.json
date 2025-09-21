@@ -623,7 +623,7 @@
     "text-decoration-line": "underline",
     "text-decoration-style": "dashed",
     "text-decoration-thickness": "1px",
-    "transition": "opacity 0.15s ease-in-out",
+    "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
   "a.internal.tag-link": {
@@ -823,7 +823,7 @@
     "border": "0px none rgb(64, 64, 64)",
     "border-color": "rgb(64, 64, 64)",
     "border-radius": "1.75px",
-    "overflow-x": "auto",
+    "overflow-x": "visible",
     "padding": "0px",
     "white-space": "pre-wrap"
   },

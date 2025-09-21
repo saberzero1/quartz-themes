@@ -1041,7 +1041,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1390,7 +1390,7 @@ body {
     border: 0px none rgb(227, 227, 227);
     border-color: rgb(227, 227, 227);
     border-radius: 2px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1400,7 +1400,7 @@ body {
     border: 0px solid rgba(210, 214, 223, 0.1);
     border-color: light-dark(rgba(46, 31, 31, 0.1), rgba(210, 214, 223, 0.1));
     border-radius: 2px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

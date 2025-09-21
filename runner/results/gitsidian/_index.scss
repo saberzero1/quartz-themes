@@ -1025,7 +1025,7 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1049,6 +1049,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,

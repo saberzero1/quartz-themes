@@ -987,7 +987,7 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1011,6 +1011,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1247,7 +1248,7 @@ body {
     border: 0px none rgb(201, 84, 84);
     border-color: rgb(201, 84, 84);
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1257,7 +1258,7 @@ body {
     border: 2px solid rgb(56, 49, 46);
     border-color: light-dark(rgb(240, 234, 226), rgb(56, 49, 46));
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }

@@ -704,6 +704,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -727,6 +728,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -747,6 +749,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -790,6 +793,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -840,6 +844,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -870,6 +875,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -900,6 +906,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -930,6 +937,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -960,6 +968,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -990,6 +999,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1020,6 +1030,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1055,6 +1066,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1078,6 +1090,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1120,6 +1133,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1149,6 +1163,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1192,6 +1207,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1216,6 +1232,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1257,6 +1274,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1284,6 +1302,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1311,6 +1330,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1329,6 +1349,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1347,6 +1368,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1365,6 +1387,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1383,6 +1406,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1511,6 +1535,7 @@ body {
       ui-sans-serif,
       -apple-system,
       "system-ui",
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
@@ -1534,7 +1559,7 @@ body {
     border: 0px none rgb(247, 69, 69);
     border-color: light-dark(rgb(244, 59, 42), rgb(247, 69, 69));
     border-radius: 8px;
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
@@ -1547,7 +1572,7 @@ body {
     border: 1px solid rgb(247, 69, 69);
     border-color: light-dark(rgb(244, 59, 42), rgb(247, 69, 69));
     border-radius: 12px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space: pre-wrap;
   }
