@@ -162,6 +162,14 @@ body {
   .theme-light
   {
   
+--checkbox-color: #8d6a50;
+--checkbox-color-hover:#8e746d;
+--checkbox-border-color: #8d6a50;
+--checkbox-border-color-hover: #8e746d;
+
+
+--callout-blend-mode: normal;
+
 	
 	--text-highlight-bg: transparent;
 	
@@ -266,5 +274,6 @@ body {
   
   
 ::-webkit-scrollbar-track{background:#090909 !important;}
-::-webkit-scrollbar{width:11px;background:#090909 !important;}
+::-webkit-scrollbar{width:11px !important;background:#090909 !important;}
 ::-webkit-scrollbar-thumb{background:#54453a !important;width:1px !important;border:5px solid #090909 !important; border-radius:20px !important;}
+

@@ -65,6 +65,9 @@ settings:
     --r2: 10px;
     --r3: 12px;
     --r4: 16px;
+    --squircle-btn: 40%;
+    --squircle-main: 60%;
+    --squircle-soft: 80%;
     --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
     --shadow-2: 0 1px 3px rgba(0, 0, 0, .08);
     --shadow-3: 0 2px 6px rgba(0, 0, 0, .1);
@@ -102,6 +105,8 @@ settings:
     --theme-folder-opacity: .12;
     --outline-item-spacing: .5em;
     --layer-status-bar: 1000;
+    --checklist-done-color: var(--emphasis-color);
+    --checklist-done-decoration: line-through;
 }
 
 /* Iceberg Theme Variables */
@@ -1168,6 +1173,7 @@ html {
 .vertical-tab-container {
     background-color: var(--background-primary);
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
     overflow: hidden;
     box-shadow: var(--shadow-2);
 }
@@ -1190,6 +1196,7 @@ html {
     background: rgba(var(--primary-color-rgb), .12);
     color: var(--text-normal);
     border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-btn);
     transform: translateX(2px);
     box-shadow: var(--shadow-1);
     border-left-color: rgba(var(--primary-color-rgb), .5);
@@ -1199,6 +1206,7 @@ html {
     background: var(--primary-color) !important;
     color: white !important;
     border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-btn);
     border-left: 4px solid var(--primary-color-dark) !important;
     font-weight: var(--weight-semibold);
     transform: translateX(4px);
@@ -1232,6 +1240,7 @@ html {
 .setting-item:hover {
     background-color: rgba(var(--primary-color-rgb), .05);
     border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-btn);
     padding-left: var(--s2);
     padding-right: var(--s2);
     border-bottom-color: rgba(var(--primary-color-rgb), .2);
@@ -1254,6 +1263,7 @@ html {
     outline: 2px solid var(--primary-color);
     outline-offset: -2px;
     border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-btn);
 }
 
 .vertical-tab-nav-item:focus:not(:focus-visible) {
@@ -1271,6 +1281,7 @@ html {
 
 .vertical-tab-header {
     border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-btn);
     box-shadow: var(--shadow-2);
     background: rgba(var(--primary-color-rgb), .05);
     padding: 8px 12px;
@@ -1283,6 +1294,7 @@ html {
 
 .vertical-tab-content .setting-item {
     border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-btn);
     padding: 10px 12px;
     transition: all 0.2s ease;
     margin-bottom: 2px;
@@ -1310,6 +1322,7 @@ html {
     padding: .2em .5em;
     line-height: var(--line-tight);
     border-radius: var(--r2);
+    electron-corner-smoothing: var(--squircle-main);
     position: relative;
     font-weight: var(--weight-semibold);
     letter-spacing: -.01em;
@@ -1444,6 +1457,7 @@ em,
     color: var(--link-color);
     background: rgba(var(--primary-color-rgb), .08);
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     padding: 0 4px;
     border-bottom: none !important;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -1525,6 +1539,7 @@ em,
 /* Multi-select Pill Styling */
 :is(.multi-select-pill-content span, .multi-select-pill-content) {
     border-radius: var(--r1);
+    -electron-corner-smoothing: var(--squircle-btn);
     background-color: rgba(var(--primary-color-rgb), .15);
     color: var(--text-normal);
     padding: 2px 8px;
@@ -1556,6 +1571,7 @@ em,
     --nav-item-color-hover: var(--folder-text-color);
     --nav-collapse-icon-color: var(--folder-text-color);
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     margin-bottom: var(--s1);
     position: relative;
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -1642,7 +1658,7 @@ em,
 
 .nav-folder-children {
     transition: opacity 0.2s ease;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .nav-folder.is-collapsed>.nav-folder-children {
@@ -1733,6 +1749,7 @@ em,
     width: auto;
     padding: var(--s1) var(--s3);
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     border: none;
     font-weight: var(--weight-semibold);
     box-shadow: var(--shadow-2);
@@ -1747,6 +1764,7 @@ em,
     height: 70%;
     width: 3px;
     border-radius: 0 var(--r1) var(--r1) 0;
+    electron-corner-smoothing: var(--squircle-main);
     opacity: .8;
     z-index: 2;
 }
@@ -1803,6 +1821,7 @@ em,
     position: relative;
     background-color: rgba(var(--primary-color-rgb), .15) !important;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
 }
 
 .nav-file-title.is-selected .nav-file-title-content {
@@ -1819,6 +1838,7 @@ em,
     height: 60%;
     width: 2px;
     border-radius: 0 var(--r1) var(--r1) 0;
+    electron-corner-smoothing: var(--squircle-main);
     background-color: var(--primary-color);
     opacity: .7;
 }
@@ -1833,6 +1853,7 @@ em,
             rgba(var(--callout-color-rgb), .01) 0%, 
             rgba(var(--callout-color-rgb), .03) 100%);
     border-radius: var(--r4) var(--r1) var(--r4) var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     border: none;
     border-left: 3px solid var(--callout-color);
     box-shadow: var(--shadow-2);
@@ -1879,6 +1900,7 @@ em,
     justify-content: center;
     padding: .5em;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     flex-shrink: 0;
     color: var(--callout-color);
 }
@@ -1975,6 +1997,7 @@ em,
     background: rgba(var(--callout-color-rgb), .08) !important;
     text-decoration: none;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     padding-inline: 3px;
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
@@ -1992,6 +2015,7 @@ em,
     background: rgba(var(--callout-color-rgb), .08) !important;
     text-decoration: none;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     padding-inline: 3px;
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
@@ -2003,6 +2027,7 @@ em,
     background: rgba(var(--callout-color-rgb), .08) !important;
     text-decoration: none;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     padding-inline: 3px;
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
@@ -2020,6 +2045,7 @@ em,
     background: rgba(var(--callout-color-rgb), .08) !important;
     text-decoration: none;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     padding-inline: 3px;
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
@@ -2072,6 +2098,7 @@ em,
 :is(.callout .callout-content, .cm-callout .callout-content, .markdown-source-view.mod-cm6 .cm-callout .cm-content) :is(mark, span.cm-highlight, .cm-highlight) {
     padding: 3px 4px;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     display: inline;
     background-color: rgba(var(--callout-color-rgb), .2);
     color: var(--callout-color);
@@ -2103,6 +2130,7 @@ em,
     background-image: none;
     padding: .1em .3em;
     border-radius: var(--r2);
+    electron-corner-smoothing: var(--squircle-main);
     font-weight: var(--weight-semibold);
     letter-spacing: -.01em;
     margin: .5em 0;
@@ -2154,6 +2182,7 @@ em,
 :is(.theme-light, .theme-dark) :is(.markdown-rendered mark, span.cm-highlight, .markdown-preview-view mark, .cm-s-obsidian span.cm-highlight) {
     padding: 3px 4px;
     border-radius: var(--r1);
+    electron-corner-smoothing: var(--squircle-main);
     display: inline;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -2198,6 +2227,7 @@ em,
 /* Blockquote Styling */
 :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
     border: none;
     overflow: hidden;
     padding-top: 5px;
@@ -2222,6 +2252,7 @@ em,
     box-shadow: var(--shadow-3);
     transform: translateY(-2px);
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
     border-bottom: 1px solid rgba(var(--primary-color-rgb), .2);
 }
 
@@ -2256,6 +2287,7 @@ em,
 .markdown-rendered img,
 .markdown-source-view.mod-cm6 .cm-content img {
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
     max-width: 100%;
     box-shadow: var(--shadow-2);
     transform: scale(.99);
@@ -2273,6 +2305,7 @@ em,
 .markdown-rendered table,
 .markdown-preview-view table {
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -2385,73 +2418,138 @@ em,
     transform: translateY(-2px);
 }
 
-/* Checkbox Styling */
+/* Checkbox styling */
 input[type="checkbox"] {
-    appearance: none;
-    border: 2px solid var(--checkbox-color);
-    width: 20px;
-    height: 20px;
-    margin: 0 8px 0 0;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-    background-color: transparent;
-    border-radius: 35% / 35%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--emphasis-color);
+  border-radius: 6px;
+  background: transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color);
-    border-color: var(--checkbox-color);
-}
-
-input[type="checkbox"]:checked::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 14px;
-    height: 14px;
-    background-color: #fff;
-}
-
+/* Hover state */
 input[type="checkbox"]:hover {
-    border-color: var(--interactive-accent);
+  transform: scale(1.05);
+  border-color: var(--emphasis-color);
 }
 
-.markdown-source-view.mod-cm6 .task-list-item-checkbox {
-    appearance: none;
-    border: 2px solid var(--checkbox-color);
-    width: 20px;
-    height: 20px;
-    margin: 0 8px 0 0;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-    background-color: transparent;
-    border-radius: 40% / 40%;
+/* Focus state */
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 3px var(--emphasis-color);
+  border-color: var(--emphasis-color);
+  outline: none;
 }
 
-.markdown-source-view.mod-cm6 .task-list-item-checkbox:checked {
-    background-color: var(--checkbox-color);
-    border-color: var(--checkbox-color);
+/* Active/pressed state */
+input[type="checkbox"]:active {
+  transform: scale(0.95);
+  border-color: var(--emphasis-color);
 }
 
-.markdown-source-view.mod-cm6 .task-list-item-checkbox:checked::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
+/* Checked state */
+input[type="checkbox"]:checked {
+  background: var(--emphasis-color);
+  border-color: var(--emphasis-color);
+  animation: checkboxPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.markdown-source-view.mod-cm6 .task-list-item-checkbox:hover {
-    border-color: var(--interactive-accent);
+/* Checkmark */
+input[type="checkbox"]:checked::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  animation: checkmarkAppear 0.2s 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Task list item checkboxes */
+.task-list-item-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--emphasis-color);
+  border-radius: 6px;
+  background: transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task-list-item-checkbox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px var(--emphasis-color);
+  border-color: var(--emphasis-color);
+}
+
+.task-list-item-checkbox:focus {
+  box-shadow: 0 0 0 3px var(--emphasis-color);
+  border-color: var(--emphasis-color);
+  outline: none;
+}
+
+.task-list-item-checkbox:active {
+  transform: scale(0.95);
+  border-color: var(--emphasis-color);
+}
+
+.task-list-item-checkbox:checked {
+  background: var(--emphasis-color) !important;
+  border-color: var(--emphasis-color) !important;
+  animation: checkboxPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.task-list-item-checkbox:checked::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  animation: checkmarkAppear 0.2s 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Animations */
+@keyframes checkboxPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmarkAppear {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  input[type="checkbox"],
+  .task-list-item-checkbox {
+    background: transparent !important;
+  }
+}
+
+/* Custom colored strikethrough for completed tasks */
+:is(
+  .markdown-rendered li.task-list-item[data-task="x"],
+  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"]
+) {
+  text-decoration: line-through;
+  text-decoration-color: var(--emphasis-color);
+  text-decoration-thickness: 2px;
 }
 
 /* Flashing Effect */
@@ -2459,6 +2557,7 @@ input[type="checkbox"]:hover {
     background-color: rgba(var(--primary-color-rgb), .15) !important;
     color: inherit !important;
     border-radius: 3px;
+    -electron-corner-smoothing: var(--squircle-btn);
     box-shadow: 0 0 0 1px rgba(var(--primary-color-rgb), .2);
     outline: none !important;
     padding: 0 1px !important;
@@ -2475,6 +2574,7 @@ input[type="checkbox"]:hover {
 .metadata-container {
     background-color: rgba(var(--primary-color-rgb), .03);
     border-radius: var(--r4);
+    electron-corner-smoothing: var(--squircle-main);
     padding: var(--s4);
     margin-bottom: var(--s4);
     border: 2px solid rgba(var(--primary-color-rgb), .1);
@@ -2531,6 +2631,7 @@ input[type="checkbox"]:hover {
 }
 .workspace-tab-header {
     border-radius: var(--r2) var(--r2) 0 0;
+    electron-corner-smoothing: var(--squircle-main);
     margin-right: 5px;
     margin-bottom: 0;
     background-color: var(--tab-bg-inactive);
@@ -2643,6 +2744,7 @@ input[type="checkbox"]:hover {
 .workspace-split.mod-right-split {
     background-color: rgba(var(--background-primary-rgb), .8);
     border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-soft);
     border: 1px solid rgba(var(--primary-color-rgb), .1);
     box-shadow: var(--shadow-2);
     position: relative;
@@ -2696,6 +2798,7 @@ body:not(.disable-status-bar) .status-bar {
     min-height: 28px;
     padding: var(--s1) var(--s3);
     border-radius: var(--r4);
+    -electron-corner-smoothing: var(--squircle-btn);
     background-color: var(--background-secondary);
     border: 1px solid var(--divider-color);
     box-shadow: var(--shadow-1);
@@ -2744,6 +2847,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item .clickable-icon
 body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     background-color: rgba(var(--primary-color-rgb), .1);
     border-radius: var(--r1);
+    -electron-corner-smoothing: var(--squircle-btn);
     color: var(--text-normal);
 }
 
@@ -2772,6 +2876,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
 .workspace-leaf-content[data-type="outline"] .tree-item-self {
     position: relative;
     border-radius: var(--r1);
+    -electron-corner-smoothing: var(--squircle-soft);
     min-height: 24px;
     height: auto !important;
     padding: var(--s1) var(--s2);
@@ -2860,11 +2965,13 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     height: 8px;
     background-color: transparent;
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-thumb);
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -2874,6 +2981,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
 ::-webkit-scrollbar-track {
     background-color: var(--scrollbar-track);
     border-radius: var(--r3);
+    electron-corner-smoothing: var(--squircle-main);
 }
 
 body:not(.disable-scrollbars) * {

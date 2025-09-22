@@ -30,18 +30,21 @@
   --accent-l: 44.1176470588%;
 }
 
+/* Settings for the Style Settings plugin. Leave in _colors.scss because
+it relies on the $tones and $colors maps. */
 /*! @settings
 name: Solarized Theme Settings
 id: solarized-theme-settings
 settings:
-  - id: colors
-    title: Colors
-    type: heading
-    level: 2
+  - id: disable-active-line-highlight
+    title: Disable active line highlight
+    description: "By default Solarized highlights the active line. This setting lets you disable that behavior."
+    type: class-toggle
+    default: false
   - id: tones
     title: Base Tones
     type: heading
-    level: 3
+    level: 2
     collapsed: true
   - id: base03
     title: base03
@@ -87,7 +90,7 @@ settings:
     description: "NB This does not override Obsidian's built-in accent color (see Appearance > Accent color)"
     title: Accent Colors
     type: heading
-    level: 3
+    level: 2
     collapsed: true
   - id: color-yellow
     title: yellow
@@ -362,10 +365,10 @@ settings:
 }
 
 /* Highlight current line */
-.cm-active {
+body:not(.disable-active-line-highlight) .cm-active {
   background: var(--active-bg);
 }
-.cm-active.cm-gutterElement {
+body:not(.disable-active-line-highlight) .cm-active.cm-gutterElement {
   color: var(--color-accent);
 }
 
