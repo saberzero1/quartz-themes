@@ -603,7 +603,9 @@
     "border-color": "rgb(76, 79, 105)"
   },
   ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus": {
-    "background-color": "rgb(114, 135, 253)"
+    "background-color": "rgb(114, 135, 253)",
+    "color": "rgb(230, 233, 239)",
+    "font-weight": "400"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
     "border-color": "rgb(188, 192, 204)"

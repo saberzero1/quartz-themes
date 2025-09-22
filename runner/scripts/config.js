@@ -473,7 +473,7 @@ export const extractionTargets = {
         quartzSelector:
           ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus",
         pseudoElement: "",
-        properties: ["background-color"],
+        properties: ["color", "font-weight", "background-color"],
       },
     ],
   },

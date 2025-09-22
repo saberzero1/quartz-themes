@@ -361,6 +361,8 @@ body {
         & > input {
           margin-bottom: 0;
           border-bottom: none;
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
           font-size: 1.1rem;
         }
         & > * {
