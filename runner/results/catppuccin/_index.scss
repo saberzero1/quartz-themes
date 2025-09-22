@@ -1240,14 +1240,14 @@ body {
     > .search-space
     > .search-layout
     > .results-container
-    > .result-card.focus
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-title,
   .search
     > .search-container
     > .search-space
     > .search-layout
     > .results-container
-    > .result-card.focus
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
     color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
   }
@@ -1269,7 +1269,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container
-    > .result-card.focus {
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
     color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
     font-weight: 400;
@@ -1286,6 +1286,23 @@ body {
     border-bottom: 0px none rgb(205, 214, 244);
     border-radius: 0px;
     box-shadow: none;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
+    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+    border-radius: 4px;
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
   }
 
   .search

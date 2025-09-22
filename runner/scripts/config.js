@@ -200,16 +200,14 @@ export const extractionTargets = {
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
-      /*
       {
         obsidianSelector: `div.suggestion-item`,
         publishSelector: null,
         quartzSelector:
-          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus, ~ .result-card:focus, ~ .result-card:hover)",
+          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)",
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
-      */
       {
         obsidianSelector: `del`,
         publishSelector: null,
@@ -480,7 +478,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt .prompt-results .suggestion-item.is-selected`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus",
+          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
         pseudoElement: "",
         properties: ["color", "font-weight", "background-color"],
       },
@@ -488,7 +486,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt div.prompt-results .suggestion-item.is-selected`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description",
+          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description",
         pseudoElement: "",
         properties: ["color"],
       },
