@@ -604,7 +604,7 @@
     "color": "rgb(230, 233, 239)",
     "font-weight": "400"
   },
-  ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > ul > li > p": {
+  ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description": {
     "color": "rgb(76, 79, 105)"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
