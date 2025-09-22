@@ -603,6 +603,9 @@
     "border-color": "rgb(76, 79, 105)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description": {
+    "color": "rgb(230, 233, 239)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus": {
     "background-color": "rgb(114, 135, 253)",
     "color": "rgb(230, 233, 239)",
     "font-weight": "400"

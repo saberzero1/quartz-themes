@@ -1249,6 +1249,27 @@ body {
     > .results-container
     > .result-card.focus
     .card-description {
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus {
     background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
     color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
     font-weight: 400;

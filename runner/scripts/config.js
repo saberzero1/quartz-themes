@@ -478,9 +478,17 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt .prompt-results .suggestion-item.is-selected`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description",
+          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus",
         pseudoElement: "",
         properties: ["color", "font-weight", "background-color"],
+      },
+      {
+        obsidianSelector: `div.prompt div.prompt-results .suggestion-item.is-selected`,
+        publishSelector: null,
+        quartzSelector:
+          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description",
+        pseudoElement: "",
+        properties: ["color"],
       },
     ],
   },
