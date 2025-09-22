@@ -291,6 +291,15 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* mobile (unended) */
 
+/* tab manager on mobile/ */
+.mobile-tab-preview-empty {
+    box-shadow: none;
+}
+.mobile-tab-preview:before {
+    box-shadow: 0 0px 30px 15px rgba(0, 0, 0, 0.2);
+}
+/* */
+
 
 .is-phone, .workspace-drawer {
   background-color: #000000;

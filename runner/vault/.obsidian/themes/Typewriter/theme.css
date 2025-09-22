@@ -301,7 +301,7 @@ body {
   --font-smaller: 0.688em;
   --font-smallest: 0.625em;
 
-  --code-size: var(--font-small);
+  --code-size: var(--font-normal-size);
   --code-normal: var(--blue);
 
   --h1: 1.8em;
