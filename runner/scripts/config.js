@@ -200,6 +200,7 @@ export const extractionTargets = {
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
+      /*
       {
         obsidianSelector: `div.suggestion-item`,
         publishSelector: null,
@@ -208,6 +209,7 @@ export const extractionTargets = {
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
+      */
       {
         obsidianSelector: `del`,
         publishSelector: null,
