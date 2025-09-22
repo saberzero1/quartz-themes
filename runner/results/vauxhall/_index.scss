@@ -6,60 +6,24 @@
 }
 
 :root:root {
-  --lightgray: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
-  ) !important;
-  --gray: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  ) !important;
-  --light: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
-  ) !important;
+  --light: #e2dffa !important;
+  --gray: #7347fd !important;
+  --darkgray: #7347fd !important;
   --highlight: #ffd85e !important;
-  --secondary: hsl(258, 88%, 66%) !important;
+  --secondary: #8a5cf5 !important;
   --tertiary: #47cc91 !important;
-  --darkgray: color-mix(
-    in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
-  ) !important;
-  --dark: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
+  --lightgray: #a68dfc !important;
+  --dark: #200080 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
-  ) !important;
-  --gray: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  ) !important;
-  --light: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
-  ) !important;
+  --light: #141337 !important;
+  --gray: #806fc0 !important;
+  --darkgray: #806fc0 !important;
   --highlight: #ffd85e !important;
-  --secondary: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --secondary: #a68af9 !important;
   --tertiary: #52eea3 !important;
-  --darkgray: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
-  ) !important;
-  --dark: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
+  --lightgray: #4e4581 !important;
+  --dark: #e8e0ff !important;
 }
 
 html {

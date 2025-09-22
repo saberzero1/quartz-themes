@@ -7,14 +7,28 @@ import {
   getFonts,
 } from "../../util/util.mjs";
 import postcss from "postcss";
-import postcssRgbaHex from "postcss-rgba-hex";
+import calc from "postcss-calc";
+import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
+import postcssColorConverter from "postcss-color-converter";
+
+// https://stackoverflow.com/a/64090995
+// input: h as an angle in [0,360] and s,l in [0,1] - output: r,g,b in [0,1]
+function hsl2rgb(h, s, l) {
+  let a = s * Math.min(l, 1 - l);
+  let f = (n, k = (n + h / 30) % 12) =>
+    l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+  return [f(0), f(8), f(4)];
+}
 
 String.prototype.toHexColors = function () {
   let result = "";
 
   try {
     result = postcss()
-      .use(postcssRgbaHex({ silent: true }))
+      .use(postcssColorMixFunction())
+      .use(calc({ preserve: false }))
+      .use(postcssColorMixFunction())
+      .use(postcssColorConverter({ outputColorFormat: "hex" }))
       .process(this).css;
   } catch (e) {
     // Likely opacity is not a float between 0 and 1. Let's fix that.
@@ -26,16 +40,105 @@ String.prototype.toHexColors = function () {
     });
     try {
       result = postcss()
-        .use(postcssRgbaHex({ silent: true }))
+        .use(postcssColorMixFunction())
+        .use(calc({ preserve: false }))
+        .use(postcssColorMixFunction())
+        .use(postcssColorConverter({ outputColorFormat: "hex" }))
         .process(result).css;
     } catch (e) {
-      console.error("Error processing CSS to hex colors:", e);
-      result = this; // Fallback to original string on error
+      try {
+        // Probably self-referencing color, like hsl(from hsl(215, 67%, 45%) 57 s l)
+        const fromRegex = /from\s+hsl\(([^\)]+)\)/g;
+        // Apply the conversion to the inner color first
+        result = result.replace(fromRegex, (match) => {
+          const innerColor = match.replace(/from\s+/, "");
+          try {
+            return `from ${hsl2rgb(
+              innerColor.split(",")[0],
+              innerColor.split(",")[1] / 100,
+              innerColor.split(",")[2] / 100,
+            )
+              .map((x) => Math.round(x * 255))
+              .join(", ")}`;
+          } catch (e) {
+            console.error(
+              "Error processing inner color to hex colors:",
+              innerColor,
+              e,
+            );
+            return innerColor; // Fallback to original inner color on error
+          }
+        });
+        // Then apply the conversion to the whole string
+        result = postcss()
+          .use(postcssColorMixFunction())
+          .use(calc({ preserve: false }))
+          .use(postcssColorMixFunction())
+          .use(postcssColorConverter({ outputColorFormat: "hex" }))
+          .process(result).css;
+      } catch (e) {
+        console.error("Error processing CSS to hex colors:", e);
+        result = this; // Fallback to original string on error
+      }
     }
+  }
+
+  const fallbackResult = result;
+
+  try {
+    // keep applying until no more changes
+    const maxIterations = 10; // Prevent infinite loops
+    let iteration = 0;
+    let temp;
+    do {
+      temp = result;
+      result = postcss()
+        .use(postcssColorMixFunction())
+        .use(calc({ preserve: false }))
+        .use(postcssColorMixFunction())
+        .use(postcssColorConverter({ outputColorFormat: "hex" }))
+        .process(result).css;
+      iteration++;
+    } while (temp !== result && iteration < maxIterations);
+  } catch (e) {
+    console.error("Error processing CSS to hex colors:", e);
+    result = fallbackResult; // Fallback to original string on error
   }
 
   return result;
 };
+
+function sortQuartzColorVariables(a, b) {
+  const order = [
+    "--light",
+    "--lightgray",
+    "--gray",
+    "--darkgray",
+    "--dark",
+    "--primary",
+    "--secondary",
+    "--tertiary",
+    "--highlight",
+  ];
+
+  // Check if both a and b contain any of the ordered variables
+  const aIndex = order.findIndex((color) => a.includes(color));
+  const bIndex = order.findIndex((color) => b.includes(color));
+
+  if (aIndex !== -1 && bIndex !== -1) {
+    // Both a and b contain ordered variables, sort by their index in the order array
+    return aIndex - bIndex;
+  } else if (aIndex !== -1) {
+    // Only a contains an ordered variable, it should come first
+    return -1;
+  } else if (bIndex !== -1) {
+    // Only b contains an ordered variable, it should come first
+    return 1;
+  }
+
+  // If neither a nor b contain any ordered variables, sort alphabetically
+  return a.localeCompare(b, undefined, { numeric: true });
+}
 
 /*
 
@@ -63,9 +166,18 @@ manifestCollection.forEach((manifest) => {
   const colorTargets = ["color", "background-color", "border-color"];
   let graphColors = { dark: {}, light: {} };
   const graphMapping = {
+    /*
     "--quartz-graph-line": "--lightgray",
     "--quartz-graph-node": ["--gray", "--light"],
     "--quartz-graph-node-unresolved": "--darkgray",
+    "--quartz-graph-text": "--dark",
+    "--quartz-graph-node-focused": "--secondary",
+    "--quartz-graph-node-tag": "--tertiary",
+    "--quartz-graph-node-attachment": "--highlight",
+    */
+    "--quartz-graph-line": "--light", // might be --lightgray
+    "--quartz-graph-node": ["--gray", "--darkgray"],
+    "--quartz-graph-node-unresolved": "--lightgray", // might be --light
     "--quartz-graph-text": "--dark",
     "--quartz-graph-node-focused": "--secondary",
     "--quartz-graph-node-tag": "--tertiary",

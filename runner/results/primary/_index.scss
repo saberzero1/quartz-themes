@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --lightgray: hsla(37, 38%, 83%, 1) !important;
-  --gray: hsla(202, 66%, 48%, 1) !important;
-  --light: hsla(202, 66%, 48%, 1) !important;
-  --highlight: hsla(148, 30%, 65%, 1) !important;
-  --secondary: hsla(31, 45%, 24%, 1) !important;
-  --tertiary: hsla(4, 72%, 55%, 1) !important;
-  --darkgray: hsla(43, 83%, 57%, 1) !important;
-  --dark: hsla(34, 29%, 60%, 1) !important;
+  --light: #e4d8c3 !important;
+  --gray: #2a90cb !important;
+  --darkgray: #2a90cb !important;
+  --highlight: #8bc1a4 !important;
+  --secondary: #593e22 !important;
+  --tertiary: #df453a !important;
+  --lightgray: #ecb936 !important;
+  --dark: #b79d7b !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: hsla(28, 22%, 19%, 1) !important;
-  --gray: hsla(197, 48%, 49%, 1) !important;
-  --light: hsla(197, 48%, 49%, 1) !important;
-  --highlight: hsla(155, 78%, 29%, 1) !important;
-  --secondary: hsla(34, 39%, 74%, 1) !important;
-  --tertiary: hsla(4, 88%, 61%, 1) !important;
-  --darkgray: hsla(42, 79%, 51%, 1) !important;
-  --dark: hsla(34, 24%, 46%, 1) !important;
+  --light: #3b3026 !important;
+  --gray: #4197b9 !important;
+  --darkgray: #4197b9 !important;
+  --highlight: #108454 !important;
+  --secondary: #d7c0a3 !important;
+  --tertiary: #f35044 !important;
+  --lightgray: #e5aa1f !important;
+  --dark: #917959 !important;
 }
 
 html {
