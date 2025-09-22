@@ -6,6 +6,36 @@ import {
   sanitizeFilenamePreservingEmojis as sanitize,
   getFonts,
 } from "../../util/util.mjs";
+import postcss from "postcss";
+import postcssRgbaHex from "postcss-rgba-hex";
+
+String.prototype.toHexColors = function () {
+  let result = "";
+
+  try {
+    result = postcss()
+      .use(postcssRgbaHex({ silent: true }))
+      .process(this).css;
+  } catch (e) {
+    // Likely opacity is not a float between 0 and 1. Let's fix that.
+    const rgbaRegex =
+      /rgba\((\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})\)/g;
+    result = this.replace(rgbaRegex, (match, r, g, b, a) => {
+      const alpha = Math.min(Math.max(parseInt(a, 10), 0), 100) / 100;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    });
+    try {
+      result = postcss()
+        .use(postcssRgbaHex({ silent: true }))
+        .process(result).css;
+    } catch (e) {
+      console.error("Error processing CSS to hex colors:", e);
+      result = this; // Fallback to original string on error
+    }
+  }
+
+  return result;
+};
 
 /*
 
@@ -139,19 +169,19 @@ ${
 :root:root[saved-theme="dark"] {
   ${graphStringDark}
 }
-`
+`.toHexColors()
     : lightData
       ? `
 :root:root {
   ${graphStringLight}
 }
-`
+`.toHexColors()
       : darkData
         ? `
 :root:root {
   ${graphStringDark}
 }
-`
+`.toHexColors()
         : ""
 }
 

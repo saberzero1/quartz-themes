@@ -9,13 +9,13 @@
   --lightgray: #d4d4d4 !important;
   --gray: hsl(232, 9%, 36%) !important;
   --light: hsl(232, 9%, 36%) !important;
-  --highlight: rgb(192, 156, 12) !important;
+  --highlight: #c09c0c !important;
   --secondary: hsl(
     calc(232 - 1),
     calc(96% * 1.01),
     calc(60% * 1.075)
   ) !important;
-  --tertiary: rgb(29, 165, 29) !important;
+  --tertiary: #1da51d !important;
   --darkgray: hsl(232, 12%, 64%) !important;
   --dark: hsl(232, 6%, 12%) !important;
 }
@@ -23,13 +23,13 @@
   --lightgray: #3f3f3f !important;
   --gray: hsl(232, 12%, 75%) !important;
   --light: hsl(232, 12%, 75%) !important;
-  --highlight: rgb(255, 232, 139) !important;
+  --highlight: #ffe88b !important;
   --secondary: hsl(
     calc(232 - 3),
     calc(40% * 1.02),
     calc(60% * 1.15)
   ) !important;
-  --tertiary: rgb(124, 211, 124) !important;
+  --tertiary: #7cd37c !important;
   --darkgray: hsl(232, 9%, 50%) !important;
   --dark: hsl(232, 15%, 85%) !important;
 }
