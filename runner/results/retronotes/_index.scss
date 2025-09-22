@@ -7,8 +7,8 @@
 
 :root:root {
   --lightgray: #d5c089 !important;
-  --gray: rgba(22, 50, 89, 0.85) !important;
-  --light: rgba(22, 50, 89, 0.85) !important;
+  --gray: #163259 !important;
+  --light: #163259 !important;
   --highlight: #f18700 !important;
   --secondary: #802d44 !important;
   --tertiary: #004d20 !important;
@@ -17,8 +17,8 @@
 }
 :root:root[saved-theme="dark"] {
   --lightgray: #515151 !important;
-  --gray: rgba(255, 254, 251, 0.85) !important;
-  --light: rgba(255, 254, 251, 0.85) !important;
+  --gray: #fffefb !important;
+  --light: #fffefb !important;
   --highlight: #ffb557 !important;
   --secondary: hsl(calc(0 - 3), calc(0% * 1.02), calc(78.8% * 1.15)) !important;
   --tertiary: #14b858 !important;

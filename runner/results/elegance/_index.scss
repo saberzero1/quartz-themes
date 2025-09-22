@@ -7,22 +7,22 @@
 
 :root:root {
   --lightgray: #d4d4d4 !important;
-  --gray: rgb(0, 0, 0) !important;
-  --light: rgb(0, 0, 0) !important;
+  --gray: #000000 !important;
+  --light: #000000 !important;
   --highlight: #e0ac00 !important;
-  --secondary: rgb(235, 118, 0) !important;
+  --secondary: #eb7600 !important;
   --tertiary: #08b94e !important;
-  --darkgray: rgb(227, 0, 106) !important;
-  --dark: rgb(6, 6, 6) !important;
+  --darkgray: #e3006a !important;
+  --dark: #060606 !important;
 }
 :root:root[saved-theme="dark"] {
   --lightgray: #3f3f3f !important;
-  --gray: rgb(255, 255, 255) !important;
-  --light: rgb(255, 255, 255) !important;
+  --gray: #ffffff !important;
+  --light: #ffffff !important;
   --highlight: #e0de71 !important;
-  --secondary: rgb(248, 173, 93) !important;
+  --secondary: #f8ad5d !important;
   --tertiary: #44cf6e !important;
-  --darkgray: rgb(255, 62, 151) !important;
+  --darkgray: #ff3e97 !important;
   --dark: white !important;
 }
 
