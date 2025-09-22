@@ -347,6 +347,59 @@ body {
 `;
   }
   resultScss += `
+  .search {
+    & > .search-button {
+      font-size: 1rem;
+      svg {
+        color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+        stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+      }
+    }
+    & > .search-container {
+      & > .search-space {
+          margin: 12vh auto;
+        & > input {
+          margin-bottom: 0;
+          border-bottom: none;
+          font-size: 1.1rem;
+        }
+        & > * {
+          background: transparent;
+          margin-bottom: 0;
+          box-shadow: none;
+        }
+        & > .search-layout {
+          &.display-results {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+          & .highlight {
+            background-color: var(--quartz-text-highlight)
+          }
+          & > .results-container {
+            & .result-card {
+              @media all and not ($mobile) {
+                display: flex;
+                &.no-match {
+                  display: block;
+                }
+              }
+              &:has(~ .result-card:hover),
+              &:has(~ .result-card:focus),
+              &:has(~ .result-card.focus) {
+                background-color: unset;
+              }
+              & > ul > li > p {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 
   @media all and not ($desktop) {
     .page > #quartz-body div.sidebar.right {
