@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --lightgray: rgb(172, 176, 190) !important;
-  --gray: rgb(124, 127, 147) !important;
-  --light: rgb(124, 127, 147) !important;
-  --highlight: rgb(228, 147, 32) !important;
-  --secondary: rgb(222, 149, 132) !important;
-  --tertiary: rgb(64, 160, 43) !important;
-  --darkgray: rgb(108, 111, 133) !important;
-  --dark: rgb(76, 79, 105) !important;
+  --lightgray: #acb0be !important;
+  --gray: #7c7f93 !important;
+  --light: #7c7f93 !important;
+  --highlight: #e49320 !important;
+  --secondary: #de9584 !important;
+  --tertiary: #40a02b !important;
+  --darkgray: #6c6f85 !important;
+  --dark: #4c4f69 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: rgb(86, 89, 112) !important;
-  --gray: rgb(142, 149, 179) !important;
-  --light: rgb(142, 149, 179) !important;
-  --highlight: rgb(249, 226, 175) !important;
-  --secondary: rgb(245, 224, 220) !important;
-  --tertiary: rgb(166, 227, 161) !important;
-  --darkgray: rgb(161, 168, 201) !important;
-  --dark: rgb(198, 208, 245) !important;
+  --lightgray: #565970 !important;
+  --gray: #8e95b3 !important;
+  --light: #8e95b3 !important;
+  --highlight: #f9e2af !important;
+  --secondary: #f5e0dc !important;
+  --tertiary: #a6e3a1 !important;
+  --darkgray: #a1a8c9 !important;
+  --dark: #c6d0f5 !important;
 }
 
 html {
