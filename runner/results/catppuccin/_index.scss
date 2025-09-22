@@ -1194,9 +1194,8 @@ body {
     > .search-container
     > .search-space
     > .search-layout
-    > .results-container
-    .result-card {
-    border-color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+    > .results-container {
+    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
   }
 
   .search
@@ -1204,22 +1203,8 @@ body {
     > .search-space
     > .search-layout
     > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus {
-    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
-    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
-    font-weight: 400;
+    .result-card {
+    border-color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
   }
 
   .search
@@ -1294,7 +1279,9 @@ body {
     > .results-container
     > .result-card.focus
     .card-description {
-    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+    font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
