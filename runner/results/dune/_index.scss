@@ -6,7 +6,7 @@
 }
 
 :root:root {
-  --lightgray: rgba(128, 128, 128) !important;
+  --lightgray: #808080 !important;
   --gray: #5c5c5c !important;
   --light: #5c5c5c !important;
   --highlight: #e0ac00 !important;
@@ -16,7 +16,7 @@
   --dark: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: rgba(128, 128, 128) !important;
+  --lightgray: #808080 !important;
   --gray: #b3b3b3 !important;
   --light: #b3b3b3 !important;
   --highlight: #e0de71 !important;
