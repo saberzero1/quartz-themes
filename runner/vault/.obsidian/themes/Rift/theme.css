@@ -2,6 +2,15 @@
 name: Theme - Rift
 id: obsidian-theme-rift
 settings:
+    -   id: obsidian-theme-rift-core-config
+        title: Core settings
+        type: heading
+        level: 2
+    -   id: workspace-ribbon-hide
+        title: Hidden ribbon
+        description: If set to true, the ribbon at the left will be hidden, else if set to false, the ribbon at the left will be displayed.
+        type: class-toggle
+
     -   id: obsidian-theme-rift-hsl
         title: Accent colour
         type: heading
@@ -114,7 +123,6 @@ settings:
               value: var(--color-purple)
             - label: Pink
               value: var(--color-pink)
-
 */
 
 :root {
@@ -192,13 +200,91 @@ settings:
 }
 
 .theme-light {
+    /**************/
+    /* Background */
+    /**************/
+    --background-primary: #D1D9E0;       /* gris-bleu clair, plus reposant */
+    --background-primary-alt: #C4CED6;   /* légèrement plus foncé */
+    --background-secondary: #B7C2CB;     /* gris bleuté moyen */
+    --background-secondary-alt: #AAB7C0; /* gris bleuté doux, pas agressif */
 
+    /********/
+    /* Text */
+    /********/
+    --text-normal: #2B2F3A;              /* texte sombre mais doux */
+    --text-muted: #4B5563;               /* gris foncé atténué */
+    --text-faint: #6B7280;               /* gris froid */
+    --text-accent: var(--color-green);   /* accent naturel */
+    --text-accent-hover: var(--color-green-hover);
+    --bold-color: var(--color-yellow);   /* accent chaleureux rappelant la lumière */
+    --italic-color: var(--color-orange); /* léger accent automnal */
+
+    /**********/
+    /* Accent */
+    /**********/
+    --accent-h: 160;
+    --accent-s: 20%;
+    --accent-l: 35%;                      /* plus clair pour ressortir sur fond clair */
+
+    /***********/
+    /* Colours */
+    /***********/
+    --color-red: #D68C8C;
+    --color-red-hover: #E3A1A1;
+    --color-red-rgb: 214, 140, 140;
+    --color-red-hover-rgb: 227, 161, 161;
+
+    --color-orange: #D9A77F;
+    --color-orange-hover: #E5B891;
+    --color-orange-rgb: 217, 167, 127;
+    --color-orange-hover-rgb: 229, 184, 145;
+
+    --color-yellow: #E0CA9A;
+    --color-yellow-hover: #EADFB7;
+    --color-yellow-rgb: 224, 202, 154;
+    --color-yellow-hover-rgb: 234, 223, 183;
+
+    --color-green: #6E9B8A;
+    --color-green-hover: #88B3A2;
+    --color-green-rgb: 110, 155, 138;
+    --color-green-hover-rgb: 136, 179, 162;
+
+    --color-cyan: #70B0B0;
+    --color-cyan-hover: #8AC7C7;
+    --color-cyan-rgb: 112, 176, 176;
+    --color-cyan-hover-rgb: 138, 199, 199;
+
+    --color-blue: #6A88B0;
+    --color-blue-hover: #879CCF;
+    --color-blue-rgb: 106, 136, 176;
+    --color-blue-hover-rgb: 135, 156, 207;
+
+    --color-purple: #8A7AB0;
+    --color-purple-hover: #A394C7;
+    --color-purple-rgb: 138, 122, 176;
+    --color-purple-hover-rgb: 163, 148, 199;
+
+    --color-pink: #B193B0;
+    --color-pink-hover: #C2A4C0;
+    --color-pink-rgb: 177, 147, 176;
+    --color-pink-hover-rgb: 194, 164, 192;
+
+    /**********/
+    /* Titles */
+    /**********/
+    --h1-color: #4B6C5C;   /* vert profond pour les titres */
+    --h2-color: #5E8290;   /* bleu-gris nordique */
+    --h3-color: #798782;   /* vert-gris doux */
+    --h4-color: #8DA89C;   /* vert pastel clair */
+    --h5-color: #A3B6B4;   /* vert-gris neigeux */
+    --h6-color: #5F8F78;   /* vert forêt adouci */
+}
+
+.workspace-ribbon-hide .workspace-ribbon {
+    display: none;
 }
 
 .workspace {
-    > .workspace-ribbon {
-        display: none;
-    }
 
     > .mod-left-split {
         min-width: 375px;

@@ -249,6 +249,9 @@ input, textarea {
 .tree-item-self {
     padding: 2px 0px 2px 20px !important;
 }
+.tree-item-self.mod-collapsible {
+    padding: 0px 0px 0px 20px !important;
+}
 
 /* "Folder Notes" plugin applies more CSS to File Explorer, so we change it too */
 .fn-whitespace-stop-collapsing .nav-folder-title-content {

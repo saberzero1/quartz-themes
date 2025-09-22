@@ -16,19 +16,33 @@ settings:
     -
         id: theme-variant
         title: Dark Theme variant
-        description: Variations of dark theme
+        description: Variations of dark theme colors
         type: class-select
         allowEmpty: false
-        default: default
+        default: dark-theme-default
         options:
-            - default
-            - darker
+            -
+                label: Dark
+                value: dark-theme-default
+            -
+                label: Midnight
+                value: dark-theme-midnight
     -
-        id: accent-headings-off
-        title: White Headings
-        description: Use white for headings instead of accent color
-        type: class-toggle
-        default: false
+        id: heading-color
+        title: Headings Color
+        type: class-select
+        allowEmpty: false
+        default: headings-color-accent
+        options:
+            -
+                label: Accent
+                value: headings-color-accent
+            -
+                label: White
+                value: headings-color-white
+            -
+                label: Colorful
+                value: headings-color-colorful
     -
         id: accent-affect-bg
         title: Accent affect Background
@@ -142,15 +156,60 @@ settings:
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
+
+  --hr-color: hsla(var(--accent-h), 50%, 75%, 0.1);
 }
 
-body:not(.accent-headings-off) {
+/* Heading Colors */
+body {
   --h1-color: hsl(var(--accent-h), 52%, 72%);
   --h2-color: hsl(var(--accent-h), 52%, 68%);
   --h3-color: hsl(var(--accent-h), 52%, 64%);
   --h4-color: hsl(var(--accent-h), 50%, 60%);
   --h5-color: hsl(var(--accent-h), 40%, 52%);
   --h6-color: hsl(var(--accent-h), 38%, 46%);
+}
+
+body.headings-color-white {
+  --h1-color: initial;
+  --h2-color: initial;
+  --h3-color: initial;
+  --h4-color: initial;
+  --h5-color: initial;
+  --h6-color: initial;
+}
+
+body.headings-color-colorful {
+  --h1-color: hsl(
+    mod(var(--accent-h, 0), 360),
+    min(var(--accent-s), 72%),
+    min(var(--accent-l), 72%)
+  );
+  --h2-color: hsl(
+    mod(calc(var(--accent-h, 0) - 30), 360),
+    min(var(--accent-s), 66%),
+    min(var(--accent-l), 64%)
+  );
+  --h3-color: hsl(
+    mod(calc(var(--accent-h, 0) - 60), 360),
+    min(var(--accent-s), 52%),
+    min(var(--accent-l), 62%)
+  );
+  --h4-color: hsl(
+    mod(calc(var(--accent-h, 0) - 90), 360),
+    min(var(--accent-s), 50%),
+    min(var(--accent-l), 60%)
+  );
+  --h5-color: hsl(
+    mod(calc(var(--accent-h, 0) - 120), 360),
+    min(var(--accent-s), 50%),
+    min(var(--accent-l), 64%)
+  );
+  --h6-color: hsl(
+    mod(calc(var(--accent-h, 0) - 150), 360),
+    min(var(--accent-s), 48%),
+    min(var(--accent-l), 62%)
+  );
 }
 
 .neutral-bg {
@@ -179,7 +238,7 @@ body:not(.accent-headings-off) {
   --color-white: rgb(230 230 230);
   --color-muted: rgb(139 148 158);
   --color-cyan: rgb(82 183 213);
-  --color-blue: rgb(122 162 247);
+  --color-blue: rgb(122 176 247);
   --color-pink: rgb(255 151 207);
   --color-teal: rgb(62 180 191);
   --color-green: rgb(34 208 162);
@@ -223,7 +282,7 @@ body:not(.accent-headings-off) {
   --interactive-hover: var(--base-40);
 }
 
-.theme-dark.darker {
+.theme-dark.dark-theme-midnight {
   --base-05: hsl(var(--base-hue), var(--base-sat, 16%), 90%);
   --base-10: hsl(var(--base-hue), var(--base-sat, 14%), 79%);
   --base-15: hsl(var(--base-hue), var(--base-sat, 12%), 70%);
@@ -306,6 +365,11 @@ body:not(.accent-headings-off) {
   --interactive-hover: var(--base-50);
 }
 
+/* Document title */
+.inline-title:not([data-level]) {
+  width: 100%;
+}
+
 /* * Layout */
 body {
   /* Animations */
@@ -373,7 +437,6 @@ body .titlebar-button-container {
 
 /* windows buttons */
 .titlebar-button-container .titlebar-button:hover {
-  --background-modifier-error: rgb(212, 32, 38);
   color: var(--base-05);
 }
 
@@ -706,14 +769,6 @@ body:not(.is-mobile)
   overflow-y: overlay !important;
 }
 
-/* turned off because it does overlap with kanban scrollbars */
-/* body:not(.is-mobile)
-  .mod-root
-  .workspace-tabs.mod-stacked
-  .workspace-tab-container {
-  overflow-x: overlay !important;
-} */
-
 /* * Editor */
 /* typography */
 body {
@@ -722,27 +777,27 @@ body {
   /* Font families */
   --font-text-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-editor-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-monospace-theme: "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas,
-    "Roboto Mono", monospace;
+  --font-monospace-theme:
+    "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --font-interface-theme: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-editor: var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
 
   --line-height-normal: 1.6;
   --line-height-tight: 1.3;
 
-  --h1-size: 1.802rem;
-  --h2-size: 1.602rem;
-  --h3-size: 1.424rem;
-  --h4-size: 1.266rem;
+  --h1-size: 1.8rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.45rem;
+  --h4-size: 1.25rem;
   --h5-size: 1.125rem;
   --h6-size: 1rem;
 
   --h1-weight: 700;
-  --h2-weight: 675;
-  --h3-weight: 650;
-  --h4-weight: 650;
-  --h5-weight: 625;
-  --h6-weight: 625;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
 
   --inline-title-size: 2rem;
 
@@ -750,6 +805,20 @@ body {
   --link-decoration-hover: none;
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
+}
+
+.is-mobile {
+  --h1-size: 1.6rem;
+  --h2-size: 1.4rem;
+  --h3-size: 1.35rem;
+  --h4-size: 1.2rem;
+  --h5-size: 1.125rem;
+  --h6-size: 1rem;
+}
+
+/* Metadata indicator */
+.metadata-properties-heading .collapse-indicator {
+  padding: 2px 6px; /* Adjust vertival position */
 }
 
 /* Heading level Indicator */
@@ -796,21 +865,6 @@ body:not(.is-mobile):not(.heading-indicator-off)
   > .cm-editor
   > .cm-scroller {
   padding-left: 56px;
-}
-
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-1.cm-line,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-2.cm-line,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-3.cm-line,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-4.cm-line,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-5.cm-line,
-.cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-6.cm-line,
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
-  padding-bottom: 4px;
 }
 
 /* Highlight selected line  */

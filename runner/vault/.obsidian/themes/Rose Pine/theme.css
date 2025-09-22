@@ -1052,6 +1052,7 @@ body {
   --rp-h4: var(--rp-gold);
   --rp-h5: var(--rp-foam);
   --rp-h6: var(--rp-pine);
+  --rp-accent: var(--rp-iris);
   --inline-code: var(--rp-iris);
   --code-block: var(--rp-foam);
   --pre-code: var(--rp-highlightLow);

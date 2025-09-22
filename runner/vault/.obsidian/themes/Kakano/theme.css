@@ -468,7 +468,7 @@ settings:
     type: info-text
     markdown: true
   -
-    id: theme-setting-enableImageAadjustmentWithAltText
+    id: theme-setting-enableImageAdjustmentWithAltText
     title: 'Enable image adjustment with alt text'
     description: "With this setting enabled, Kakano recognises keywords in alt text to position images left/right/center and round corners. None of these are crucial functionality, so if you need to use alt text for its real purpose of accessibility, you can disable this setting."
     type: class-toggle
@@ -581,6 +581,8 @@ body {
   --embed-padding: 1em;
   --file-line-width: calc(1ch * var(--theme-setting-lineWidth));
   --file-margins: 0 2em;
+  --flair-background: var(--theme-color-base);
+  --flair-color: var(--text-on-accent);
   --font-ui-smaller: 0.8rem;
   --header-height: calc(var(--icon-size) + 1rem);
   --heading-spacing: 0.67em;
@@ -606,10 +608,10 @@ body {
   );
   --modal-width: 65rem;
   --nav-item-background-hover: var(--theme-color-baseTransparent75);
-  --nav-item-children-margin-left: calc(
-    1em - var(--nav-indentation-guide-width) / 2
+  --nav-item-children-margin-start: calc(
+    var(--size-4-4) / 2 - var(--nav-indentation-guide-width) / 2
   );
-  --nav-item-children-padding-left: calc(
+  --nav-item-children-padding-start: calc(
     1em - var(--nav-indentation-guide-width) / 2
   );
   --nav-item-color-highlighted: var(--nav-item-hover);
@@ -641,6 +643,7 @@ body {
   --tab-switcher-preview-background-shadow: var(--shadow-l);
   --tab-switcher-preview-shadow: none;
   --tab-switcher-preview-shadow-active: none;
+  --tab-text-color-focused-highlighted: var(--theme-color-base);
   --text-on-accent: var(--theme-color-baseLightened95);
   --text-muted: color-mix(in srgb, var(--text-normal), transparent 30%);
   --titlebar-background-focused: transparent;
@@ -1021,7 +1024,6 @@ body {
   --tab-text-color-active: var(--theme-color-baseTransparent50);
   --tab-text-color-focused: var(--theme-color-baseDarkened25);
   --tab-text-color-focused-active: var(--theme-color-baseDarkened25);
-  --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-text-color-focused-active-current: var(--text-normal);
   --tag-color: hsl(
     var(--accent-h),
@@ -1064,7 +1066,6 @@ body {
   --theme-color-contentItemBg: var(--theme-color-lightenTransparent50);
   --theme-color-contentItemBgActive: var(--theme-color-base);
   --theme-color-contentItemBgHover: var(--theme-color-lightenTransparent25);
-  --theme-color-controlActive: var(--theme-color-control);
   --theme-color-controlBg: var(--theme-color-baseLightened95);
   --theme-color-controlBgHover: var(--theme-color-base);
   --theme-color-controlBgLowWeight: var(--theme-color-lightenTransparent50);
@@ -1145,11 +1146,7 @@ body {
   --theme-color-gradientCardsetGeneratedBottom: var(
     --theme-color-baseTransparent12
   );
-  --theme-color-shadow: hsl(
-    var(--base-h),
-    calc(var(--base-s) * 1.5),
-    calc(var(--base-l) * 0.25)
-  );
+  --theme-color-shadow: var(--theme-color-baseDarkened25);
 
   --theme-shadow-control: 0 1px 2px
     hsl(
@@ -1283,7 +1280,6 @@ body.theme-light.theme-setting-customGradient {
   --tab-text-color-active: var(--theme-color-baseTransparent50);
   --tab-text-color-focused: var(--theme-color-baseLightened25);
   --tab-text-color-focused-active: var(--theme-color-baseLightened25);
-  --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-text-color-focused-active-current: var(--text-normal);
   --text-normal: var(--theme-color-baseLightened60);
   --text-faint: var(--theme-color-baseLightened25);
@@ -1319,7 +1315,6 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-contentItemBg: rgb(0, 0, 0, 0.2);
   --theme-color-contentItemBgActive: var(--theme-color-base);
   --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1);
-  --theme-color-controlActive: var(--theme-color-control);
   --theme-color-controlBg: var(--theme-color-baseDarkened25);
   --theme-color-controlBgHover: var(--theme-color-base);
   --theme-color-controlBgLowWeight: var(--theme-color-darkenTransparent25);
@@ -1401,11 +1396,8 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-gradientCardsetGeneratedBottom: var(
     --theme-color-baseTransparent25
   );
-  --theme-color-shadow: hsl(
-    var(--base-h),
-    calc(var(--base-s) * 0.75),
-    calc(var(--base-l) * 0.01)
-  );
+  --theme-color-shadow: var(--theme-color-baseDarkened90);
+
   --theme-shadow-control: 0px 1px 2px
     hsl(
       var(--base-h),
@@ -1490,10 +1482,8 @@ body {
     var(--theme-color-baseDarkened70),
     var(--theme-color-baseLightened60)
   );
-  --theme-color-controlBgActive: light-dark(
-    var(--theme-color-baseLightened40),
-    var(--theme-color-baseDarkened40)
-  );
+  --theme-color-controlActive: var(--theme-color-base);
+
   --theme-color-jiraIssueInfoBg: light-dark(
     var(--theme-color-blueLightened),
     var(--theme-color-blueDarkened)
@@ -1520,6 +1510,7 @@ body {
   );
   --theme-color-lineNumbers: light-dark(var(--theme-color-baseLightened60), var(--theme-color-baseDarkened60));
   --theme-color-navigationButtonBgHover: var(--theme-color-base);
+  --theme-color-queryComponentBg: var(--theme-color-baseTransparent12);
   --theme-color-tabNavBg: light-dark(var(--theme-color-baseLightened60), var(--theme-color-baseDarkened60));
   --theme-color-tabNavActiveBg: light-dark(var(--theme-color-baseLightened70), var(--theme-color-baseDarkened70));
 }
@@ -1547,18 +1538,20 @@ body.theme-dark,
     0 0.3rem 0.5rem
       color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
     0 0.5rem 1rem color-mix(in srgb, var(--theme-color-shadow) 10%, transparent);
-  --theme-shadow-indent: 0 0 0.2rem
+  --theme-shadow-indent: 0 0 0.1rem
       color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
     0 0 0.4rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
     0 0 1.2rem color-mix(in srgb, var(--theme-color-shadow) 12%, transparent),
     0 0 2rem color-mix(in srgb, var(--theme-color-shadow) 16%, transparent),
     0 0 4rem color-mix(in srgb, var(--theme-color-shadow) 20%, transparent);
-}
+  --theme-shadow-indent-small: 0 0 0.05rem
+      color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
+    0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
+    0 0 0.6rem color-mix(in srgb, var(--theme-color-shadow) 12%, transparent),
+    0 0 1rem color-mix(in srgb, var(--theme-color-shadow) 16%, transparent),
+    0 0 2rem color-mix(in srgb, var(--theme-color-shadow) 20%, transparent);}
 /* #endregion */
 /* #endregion */
-
-
-
 
 /* #region Keyframe animations */
 @keyframes fadein {
@@ -1620,6 +1613,10 @@ body {
 
   /* Hanging punctuation isn't supported in Electron yet (Dec 2023), but here for when it is. */
   hanging-punctuation: first allow-end last;
+
+  ::spelling-error {
+    text-decoration: wavy var(--color-red) underline from-font;
+  }
 }
 
 .theme-setting-headingScaleFactor1point067 {
@@ -1856,8 +1853,11 @@ li.is-collapsed .list-bullet:after,
 @media (hover: hover) {
   .collapse-indicator:hover,
   .cm-fold-indicator:hover .collapse-indicator,
-  .list-collapse-indicator:hover {
-    color: var(--theme-color-control);
+  .list-collapse-indicator:hover,
+  .view-content .cm-fold-indicator:hover svg.svg-icon,
+  .view-content .list-collapse-indicator:hover svg.svg-icon,
+  .view-content .collapse-indicator:hover svg.svg-icon {
+    color: var(--theme-color-controlTextHover);
     background-color: var(--theme-color-navigationButtonBgHover);
   }
 }
@@ -2073,8 +2073,7 @@ li.is-collapsed .list-bullet:after,
 /* #endregion */
 /* #region     Embeds */
 /* Default appearance for embeds */
-/* I'm treating images as a special case, because they don't have any controls and a colored surround would often be distracting. */
-.internal-embed:not(.image-embed),
+.internal-embed,
 .internal-query {
   background-color: var(--embed-background);
   border-bottom: var(--embed-border-bottom);
@@ -2084,6 +2083,14 @@ li.is-collapsed .list-bullet:after,
   border-top: var(--embed-border-top);
   margin: 0;
 }
+/* I'm treating images as a special case, because they don't have any controls and a colored surround would often be distracting. */
+.internal-embed.image-embed {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
 .markdown-embed .embed-title {
   font-size: var(--font-ui-small);
   font-weight: var(--nav-item-weight-hover);
@@ -2139,42 +2146,69 @@ li.is-collapsed .list-bullet:after,
   right: 0;
 }
 /* #region       Image positioning and styling */
-.theme-setting-enableImageAadjustmentWithAltText {
+.theme-setting-enableImageAdjustmentWithAltText {
   /* Center images */
-  .markdown-source-view.mod-cm6 .image-embed[alt~=center],
-  .theme-setting-centerImages .markdown-source-view.mod-cm6 .image-embed {
-    text-align: center;
-  }
-  .markdown-reading-view .image-embed[alt~=center],
-  .theme-setting-centerImages .markdown-reading-view .image-embed {
+  .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
+  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
+  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=center] {
     display: block;
-    text-align: center;
+    margin: 0 auto !important;
+  }
+  .markdown-preview-view img[alt~=center] {
+    display: block;
+    margin: 0 auto;
   }
   /* Float images left/right */
   /* Unfortunately, floats make live preview mode confused about how to assign line numbers. Left/right floating only applies to reading view */
-  /* .markdown-source-view.mod-cm6 .image-embed[alt~=right], */
-  .markdown-reading-view .image-embed[alt~=right] {
+  .markdown-preview-view img[alt~=right] {
     margin: 0 0 1em 1em !important;
     float: right;
   }
-  /* .markdown-source-view.mod-cm6 .image-embed[alt~=left], */
-  .markdown-reading-view .image-embed[alt~=left] {
+  .markdown-preview-view img[alt~=left] {
     margin: 0 1em 1em 0 !important;
     float: left;
   }
 
   /* Round corners of images */
-  .markdown-source-view.mod-cm6 .image-embed[alt~=round] img,
-  .markdown-reading-view .image-embed[alt~=round] img {
+  .markdown-source-view.mod-cm6 .cm-content > img[alt~=round],
+  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=round] img,
+  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=round],
+  .markdown-preview-view img[alt~=round],
+  .markdown-preview-view .image-embed[alt~=round] img {
     border-radius: 0.5em;
   }
-  .markdown-source-view.mod-cm6 .image-embed[alt~=circle] img,
-  .markdown-reading-view .image-embed[alt~=circle] img {
+  .markdown-source-view.mod-cm6 .cm-content > img[alt~=circle],
+  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=circle] img,
+  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=circle],
+  .markdown-preview-view img[alt~=circle],
+  .markdown-preview-view .image-embed[alt~=circle] img {
     border-radius: var(--theme-length-fullBorderRadius);
+  }
+}
+.theme-setting-centerImages {
+  .markdown-source-view.mod-cm6 .cm-content > img,
+  .markdown-source-view.mod-cm6 .cm-content .image-embed img,
+  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
+    display: block;
+    margin: 0 auto !important;
+  }
+  .markdown-preview-view img {
+    display: block;
+    margin: 0 auto;
   }
 }
 /* #endregion */
 /* Audio embed */
+/* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
+.video-container > audio {
+  background-color: var(--embed-background);
+  border-bottom: var(--embed-border-bottom);
+  border-left: var(--embed-border-left);
+  border-radius: var(--radius-m);
+  border-right: var(--embed-border-right);
+  border-top: var(--embed-border-top);
+  margin: 0;
+}
 .markdown-source-view.mod-cm6 .cm-content > .media-embed:has(> audio) {
   display: flex;
 }
@@ -2191,6 +2225,19 @@ audio::-webkit-media-controls-panel {
   border: none;
   padding: 0.25rem;
   border-radius: var(--radius-m);
+}
+
+/* Video embed */
+/* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
+.cm-html-embed > video,
+.markdown-reading-view video {
+  background-color: var(--embed-background);
+  border-bottom: var(--embed-border-bottom);
+  border-left: var(--embed-border-left);
+  border-radius: var(--radius-m);
+  border-right: var(--embed-border-right);
+  border-top: var(--embed-border-top);
+  margin: 0;
 }
 
 /* Markdown embed e.g. embedded note */
@@ -3657,7 +3704,15 @@ body.mod-windows {
     border-radius: var(--tab-radius-active) var(--tab-radius-active) 0 0;
     container-name: root-tab;
     container-type: size;
-    padding: 0.5rem;
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+  }
+  .workspace-tab-header.is-active .workspace-tab-header-inner {
+    padding-inline-start: 0.25rem;
+  }
+  @media (hover: hover) {
+    .workspace-tab-header:hover .workspace-tab-header-inner {
+      padding-inline-start: 0.25rem;
+    }
   }
   /* Show icons for markdown tabs, unless they get too narrow. */
   .workspace-tab-header[data-type="markdown"] .workspace-tab-header-inner-icon,
@@ -4145,7 +4200,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
 .slides-close-btn,
 .clickable-icon.kanban-plugin__search-cancel-button,
 .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"],
-.mobile-tab .close-button {
+.mobile-tab .close-button,
+.bases-toolbar-menu-container-header .close-icon {
   background-color: transparent;
   border-radius: 100%;
   border: none;
@@ -4154,10 +4210,13 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   z-index: 2;
   width: var(--theme-length-closeButtonWidth);
   height: var(--theme-length-closeButtonWidth);
+  min-width: var(--theme-length-closeButtonWidth);
+  min-height: var(--theme-length-closeButtonWidth);
   display: flex;
   flex-shrink: 0;
   align-content: center;
   justify-content: center;
+  padding: 0.125em;
 
   .svg-icon {
     stroke: var(--theme-color-control);
@@ -4177,7 +4236,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   .clickable-icon.kanban-plugin__search-cancel-button:hover,
   .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"]:hover,
   .multi-select-pill-remove-button:hover,
-  .mobile-tab .close-button:hover {
+  .mobile-tab .close-button:hover,
+  .bases-toolbar-menu-container-header .close-icon:hover {
     color: var(--theme-color-controlHover);
     background-color: var(--theme-color-navigationButtonBgHover);
 
@@ -4379,11 +4439,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
 
 .tree-item-self,
 .tree-item-self.mod-collapsible {
-  gap: 0.5em;
-  justify-content: flex-start;
-  /* Setting padding-left to zero here, as it's sometimes overridden e.g. in file list */
-  padding: 0.25em 0.5em 0.25em 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .tree-item-self .tree-item-icon {
   /* Icons that represent an object have the same colour as the related text */
@@ -4409,6 +4466,10 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   list-style: none;
   padding: 0.5rem;
   margin: 0;
+
+  .search-input-container {
+    margin-bottom: 0.5em;
+  }
 }
 .suggestion,
 .suggestion-container.mod-search-suggestion .suggestion {
@@ -4440,6 +4501,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   .kanban-plugin__autocomplete-item:hover,
   .kanban-plugin__autocomplete-item-active:hover {
     background: var(--nav-item-background-hover);
+    color: var(--nav-item-color-hover);
+
   }
 }
 .suggestion-item.mod-group,
@@ -4467,7 +4530,7 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   color: inherit;
 }
 .suggestion-item.is-selected {
-  background-color: var(--nav-item-background-hover);
+  background-color: var(--background-modifier-hover);
   color: var(--nav-item-color-hover);
 
   .suggestion-flair {
@@ -4482,7 +4545,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
 /* #region   Hotkeys */
 
 .suggestion-hotkey,
-.setting-hotkey {
+.setting-hotkey,
+.prompt-instruction-command {
   background: transparent;
   border: solid 1px var(--theme-color-hotkey);
   color: var(--theme-color-hotkey);
@@ -4528,7 +4592,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   .map-view-main
   .leaflet-control-container
   .leaflet-top.leaflet-right
-  a {
+  a,
+  .bases-toolbar-menu-item .clickable-icon {
   align-items: center;
   background-color: transparent;
   border-radius: var(--clickable-icon-radius);
@@ -4562,7 +4627,8 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   .file-embed-link:hover,
   .markdown-source-view.mod-cm6 .edit-block-button:hover,
   .tasks-edit:hover,
-  .map-view-main .mv-icon-button:hover {
+  .map-view-main .mv-icon-button:hover,
+  .bases-toolbar-menu-item .clickable-icon:hover{
     color: var(--theme-color-controlHover);
     background-color: var(--background-modifier-hover);
   }
@@ -4591,7 +4657,8 @@ button:not(.clickable-icon).mod-cta,
 .style-settings-copy,
 .style-settings-download,
 .style-settings-import,
-.style-settings-export {
+.style-settings-export,
+.popover.hover-popover > .file-embed.mod-empty {
   background-color: var(--theme-color-controlBg);
   border: none;
   border-radius: var(--button-radius);
@@ -4613,7 +4680,8 @@ button:not(.clickable-icon).mod-cta,
   .style-settings-copy:hover,
   .style-settings-download:hover,
   .style-settings-import:hover,
-  .style-settings-export:hover {
+  .style-settings-export:hover,
+.popover.hover-popover > .file-embed.mod-empty:hover {
     border: none;
     background: var(--theme-color-controlBgHover);
     color: var(--theme-color-controlTextHover);
@@ -4630,7 +4698,8 @@ button:not(.clickable-icon).mod-cta:focus,
 .style-settings-copy:focus,
 .style-settings-download:focus,
 .style-settings-import:focus,
-.style-settings-export:focus {
+.style-settings-export:focus,
+.popover.hover-popover > .file-embed.mod-empty:focus {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
 }
 
@@ -4659,19 +4728,17 @@ button.search-result-file-match-replace-button {
   outline: none;
 }
 .text-icon-button.is-active {
-  background-color: var(--theme-color-controlBgActive);
-  color: var(--theme-color-controlText);
+  color: var(--theme-color-controlActive);
 
   .text-button-icon {
-    color: var(--theme-color-controlText);
+    color: var(--theme-color-controlActive);
   }
 }
 .text-icon-button.has-active-menu {
-  background-color: var(--theme-color-controlBgActive);
-  color: var(--theme-color-controlText);
+  color: var(--theme-color-controlActive);
 
   .text-button-icon {
-    color: var(--theme-color-control);
+    color: var(--theme-color-controlActive);
   }
 }
 @media (hover: hover) {
@@ -4737,6 +4804,14 @@ button.search-result-file-match-replace-button {
 }
 /* #endregion */
 /* #region   Text fields */
+
+/* This box shadow goes around the disclosure control, we want it to go just around the text. */
+.tree-item-self.is-being-renamed,
+body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed,
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus:focus-within {
+  box-shadow: none;
+}
+
 .search-input-container input[type="search"],
 input.document-search-input,
 input[type="email"],
@@ -4745,8 +4820,9 @@ input[type="password"],
 input[type="search"],
 input[type="text"],
 textarea,
-.tree-item-self.is-active.is-being-renamed {
+.tree-item-self.is-being-renamed > .tree-item-inner {
   box-shadow: 0 0 0 var(--input-border-width) var(--theme-color-base);
+  border-radius: var(--radius-s);
   border: none;
   background: var(--background-input);
   color: var(--text-normal);
@@ -4776,8 +4852,9 @@ input[type="text"]:focus,
 textarea:active,
 textarea:focus-visible,
 textarea:focus,
-body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed {
+body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed > .tree-item-inner {
   background: var(--background-input);
+  border-radius: var(--radius-s);
   box-shadow: 0 0 0 var(--input-border-width)
     var(--background-modifier-border-focus);
   color: var(--text-normal);
@@ -4791,8 +4868,9 @@ body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed {
   input[type="search"]:hover,
   input[type="text"]:hover,
   textarea:hover,
-  body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed:hover {
+  body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed:hover > .tree-item-inner {
     background: var(--background-input);
+    border-radius: var(--radius-s);
     box-shadow: 0 0 0 var(--input-border-width)
       var(--background-modifier-border-focus);
     color: var(--text-normal);
@@ -4868,6 +4946,20 @@ select:focus,
 .search-results-info .dropdown:focus {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
   outline: none;
+}
+/* #endregion */
+/* #region.  Flair */
+.flair {
+    background-color: var(--flair-background);
+    border-radius: var(--radius-s);
+    color: var(--flair-color);
+    font-size: var(--font-ui-smaller);
+    letter-spacing: 0.05em;
+    margin-inline-start: 0;
+    line-height: 1;
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+
 }
 /* #endregion */
 /* #region   Multi-select pill */
@@ -4947,10 +5039,48 @@ select:focus,
   margin: 0;
 }
 /* #endregion */
-/* #region   Query Toolbars */
-/* THe only one of these I know is for Bases, but presumably they're intended to be standard */
+/* #region   Query Builders */
 .query-toolbar-menu .query-toolbar-section:not(:last-child) {
   border-bottom: none;
+}
+.bases-query-container .filter-row.mod-group,
+.bases-query-container .filter-group .filter-group {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 1em;
+}
+
+.base-toolbar-sort-item,
+.bases-query-container .filter-row {
+  background-color: var(--theme-color-queryComponentBg);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: var(--radius-s);
+
+  .combobox-button,
+  .combobox-button.bases-sort-direction {
+    background: transparent;
+    border: none;
+    border-radius: var(--button-radius);
+    padding: 0 1em;
+  }
+
+  .filter-operator {
+    border: none;
+  }
+
+  @media(hover: hover) {
+    .combobox-button:hover {
+      background-color: var(--theme-color-controlBgHover);
+      color: var(--theme-color-controlHover);
+
+      .combobox-button-icon {
+        color: var(--theme-color-controlHover);
+      }
+    }
+  }
 }
 /* #endregion */
 /* #region   Collapsible controls */
@@ -4965,7 +5095,6 @@ body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .
   color: var(--text-faint);
   font-size: var(--nav-item-size);
   font-weight: var(--font-medium);
-  gap: 0.5em;
   margin: 0;
   padding: 0.25em 0.5em 0.25em 0;
   line-height: var(--theme-lineHeight-tight);
@@ -4985,9 +5114,6 @@ body.theme-setting-overrideMapView .map-view-graph-controls .graph-control-div .
     background-color: var(--nav-item-background-hover);
     font-weight: var(--font-medium);
   }
-}
-.mod-collapsible > .tree-item-inner {
-  padding-inline-start: 0;
 }
 .metadata-properties-heading:before {
   /* Override absolute positioning from app, so we're consistent with other collapsibles */
@@ -5122,6 +5248,7 @@ input[type="radio"]:focus {
 }
 /*   #endregion */
 /* #region   Item lists */
+
 @media (hover: hover) {
   body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
   .horizontal-tab-nav-item:hover,
@@ -5137,6 +5264,10 @@ input[type="radio"]:focus {
 .nav-folder-title.is-active {
   background-color: var(--interactive-accent);
   color: var(--nav-item-color-active);
+
+  &.is-being-renamed {
+    background: transparent;
+  }
 }
 .nav-folder.is-being-dragged-over {
   animation: 0.5s 1 alternate fadein;
@@ -5164,8 +5295,8 @@ input[type="radio"]:focus {
 .tree-item-inner {
   padding: var(--nav-item-padding);
 }
-.nav-file-title:before {
-  content: none;
+.nav-file {
+  padding-left: var(--size-4-4);
 }
 /* #endregion */
 /* #region   Pills (including tags) */
@@ -5283,6 +5414,7 @@ body .metadata-property[data-property-key="tags"] .multi-select-pill,
 .is-phone .prompt-input-container {
   border-bottom: none;
   background: var(--background-secondary);
+  box-shadow: var(--theme-shadow-indent-small);
 }
 .prompt {
   background-color: var(--background-prompt);
@@ -5307,6 +5439,7 @@ input[type="text"].prompt-input::placeholder {
 .prompt-instructions {
   background: var(--background-secondary);
   border-top: 0;
+  box-shadow: var(--theme-shadow-indent-small);
 }
 
 /* Default modal */
@@ -5488,9 +5621,9 @@ body:not(.is-phone) .modal.mod-sync-history {
 .community-item-name {
   font-weight: var(--font-semibold)
 }
-.community-item-name .flair {
-  background-color: var(--theme-color-base);
-  color: var(--text-on-accent);
+.community-item .flair {
+  --flair-background: inherit;
+  --flair-color: inherit;
 }
 .community-item-author,
 .community-item-repo,
@@ -5602,6 +5735,7 @@ body:not(.is-phone) .modal.mod-sync-history {
 /* #endregion */
 /* #region   Content area */
 
+/* Allow metadata properties to go full width */
 .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
   padding: 0;
 }
@@ -5612,6 +5746,7 @@ body:not(.is-phone) .modal.mod-sync-history {
   max-width: none;
   width: 100%;
 }
+
 .markdown-source-view .cm-contentContainer {
   padding: 1rem 2rem;
 }
@@ -5732,6 +5867,9 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
   justify-content: space-between;
   padding: 0.5em;
 }
+.view-header.is-highlighted:after {
+  background-color: var(--theme-color-baseTransparent50);
+}
 
 /* Inline title (i.e. filename) */
 .inline-title {
@@ -5807,6 +5945,7 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
     gap: 0.5em;
   }
 }
+
 .metadata-property:focus-within {
   background: var(--metadata-property-background-hover);
   border-color: var(--metadata-property-background-hover);
@@ -6095,6 +6234,7 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
   --bases-view-padding-bottom: 0;
   --bases-cards-container-background: transparent;
   --bases-cards-group-padding: 0.5em 0.5em;
+  --bases-embed-border-width: 0;
 
   .bases-header {
     --bases-header-padding-start: 0.5em;
@@ -6105,6 +6245,24 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
 body {
   --bases-header-padding-start: 0.5em;
   --bases-header-padding-end: 0.5em;
+}
+
+.bases-view[data-view-type="table"] {
+--bases-embed-border-width: 0;
+}
+
+.bases-view {
+  scrollbar-gutter: auto;
+}
+
+.block-language-base {
+  background-color: var(--embed-background);
+  border-bottom: var(--embed-border-bottom);
+  border-left: var(--embed-border-left);
+  border-radius: var(--radius-m);
+  border-right: var(--embed-border-right);
+  border-top: var(--embed-border-top);
+  margin: 0;
 }
 
 .workspace-leaf-content[data-type="bases"] {
@@ -6159,8 +6317,16 @@ body {
 }
 
 .bases-toolbar-menu-container .search-input-container {
+  --search-icon-color: var(--theme-color-base);
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.bases-toolbar-menu-container-header .close-icon {
+  align-self: center;
+}
+.mod-macos .bases-toolbar-menu-container-header .close-icon {
+  order: -1;
 }
 .bases-query-container {
   .filter-group {
@@ -6184,6 +6350,38 @@ body {
       background-color: var(--metadata-property-background-hover);
       box-shadow: var(--metadata-property-box-shadow-hover);
       border-radius: var(--metadata-property-radius-hover);
+    }
+  }
+}
+
+.bases-sort-container .bases-sort-items {
+  gap: 0.5em;
+}
+
+@media (hover: hover) {
+  .bases-sort-property-container:hover {
+    background: transparent;
+  }
+}
+.query-toolbar-menu.mod-filters {
+  .menu-scroll {
+    display: flex;
+    gap: 0.5em;
+  }
+  .query-toolbar-section-header {
+    --flair-background: inherit;
+    --flair-color: inherit;
+  }
+  @media(hover: hover) {
+    .query-toolbar-section-header:hover {
+      color: var(--nav-item-color-hover);
+      background-color: var(--nav-item-background-hover);
+      border-radius: var(--radius-s);
+      font-weight: var(--nav-item-weight-hover);
+
+      .collapse-icon svg {
+        color: var(--nav-item-color-hover);
+      }
     }
   }
 }
@@ -6284,10 +6482,7 @@ body {
 /* #region   Core Plugin: Files */
 
 .workspace-leaf-content[data-type="file-explorer"] {
-  .nav-folder .nav-folder .nav-file-title-content,
-  .nav-folder .nav-folder .nav-folder-title-content {
-    padding-left: 0;
-  }
+
   .nav-folder-title-content {
     font-weight: var(--font-bold);
   }
@@ -6526,18 +6721,25 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.outgoing-link-item:hover {
   box-shadow: var(--shadow-l);
   padding: 0.5rem;
 }
-.popover.hover-popover {
+.popover.hover-popover{
   padding: 0.5rem;
 }
 .popover.hover-popover > .markdown-embed {
   background-color: var(--background-primary);
   padding: 0;
 
+  .markdown-embed-content {
+    height: 100%;
+  }
+
   .markdown-embed-link {
     top: 4px;
     right: auto;
     left: auto;
   }
+}
+.popover.hover-popover > .file-embed.mod-empty {
+  width: auto;
 }
 /* #endregion */
 /* #region   Core Plugin: Publish */
