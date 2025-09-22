@@ -404,6 +404,11 @@
     "font-weight": "400",
     "text-decoration": "none solid color(srgb 0.5032 0.43452 0.7528)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "color(srgb 0.0768 0.07598 0.2172)",
+    "color": "color(srgb 0.91 0.88 1)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": {
     "border-color": "color(srgb 0.1096 0.10356 0.2584)"
   },
@@ -573,6 +578,62 @@
     "color": "color(srgb 0.91 0.88 1)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "color(srgb 0.011 0.0121 0.044)",
+    "border": "1px solid color(srgb 0.1752 0.15872 0.3408)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.91 0.88 1)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "color(srgb 0.91 0.88 1) none 0px",
+    "text-decoration": "none solid color(srgb 0.91 0.88 1)",
+    "text-decoration-color": "color(srgb 0.91 0.88 1)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "color(srgb 0.91 0.88 1)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "color(srgb 0.91 0.88 1)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "color(srgb 0.91 0.88 1)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.0768 0.07598 0.2172)",
+    "color": "color(srgb 0.91 0.88 1)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "color(srgb 0.1752 0.15872 0.3408)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "color(srgb 0.011 0.0121 0.044)",
+    "border": "unset",
+    "border-bottom": "1px solid color(srgb 0.0176 0.01936 0.0704)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "color(srgb 0.0768 0.07598 0.2172)",
+    "border-radius": "4px",
+    "color": "color(srgb 0.91 0.88 1)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.0768 0.07598 0.2172)",
+    "border-radius": "4px",
+    "color": "color(srgb 0.91 0.88 1)"
+  },
   ".text-highlight": {
     "background-color": "color(srgb 0.262745 0.811765 0.917647 / 0.25)",
     "color": "color(srgb 0.91 0.88 1)",
@@ -630,7 +691,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -687,6 +748,9 @@
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
+  },
+  "div#quartz-body": {
+    "--quartz-icon-color": "color-mix(\n    in srgb,\n    hsl(238, 60%, 11%) 30%,\n    hsl(255, 100%, 80%)\n  )"
   },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",

@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid color(srgb 0.0297 0.07995 0.1503)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgb(38, 102, 192)",
+    "color": "color(srgb 0.8297 0.87995 0.9503)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": {
     "border-color": "color(srgb 0.361375 0.549813 0.813625)"
   },
@@ -567,9 +572,65 @@
     "background-color": "color(srgb 0.1485 0.39975 0.7515 / 0.12)",
     "border": "0px none color(srgb 0.01485 0.039975 0.07515)",
     "border-color": "color(srgb 0.01485 0.039975 0.07515)",
-    "border-radius": "5px",
+    "border-radius": "4px",
     "color": "color(srgb 0.01485 0.039975 0.07515)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  },
+  ".search > .search-container > .search-space": {
+    "background-color": "color(srgb 0.957425 0.969988 0.987575)",
+    "border": "0px solid rgba(0, 0, 0, 0)",
+    "border-radius": "12px",
+    "box-shadow": "color(srgb 0.111375 0.299813 0.563625 / 0.02) 0px 0px 3.2px 0px, color(srgb 0.111375 0.299813 0.563625 / 0.04) 0px 3.2px 6.4px 0px, color(srgb 0.111375 0.299813 0.563625 / 0.06) 0px 6.4px 19.2px 0px, color(srgb 0.111375 0.299813 0.563625 / 0.08) 0px 19.2px 32px 0px, color(srgb 0.111375 0.299813 0.563625 / 0.1) 0px 32px 64px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.01485 0.039975 0.07515)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "font-weight": "400",
+    "outline": "color(srgb 0.01485 0.039975 0.07515) none 0px",
+    "text-decoration": "none solid color(srgb 0.01485 0.039975 0.07515)",
+    "text-decoration-color": "color(srgb 0.01485 0.039975 0.07515)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "color(srgb 0.01485 0.039975 0.07515)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "color(srgb 0.01485 0.039975 0.07515)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(255, 255, 255)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgb(38, 102, 192)",
+    "color": "rgb(255, 255, 255)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgba(0, 0, 0, 0)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "color(srgb 0.6594 0.7599 0.9006)",
+    "border": "0px none color(srgb 0.01485 0.039975 0.07515)",
+    "border-bottom": "0px none color(srgb 0.01485 0.039975 0.07515)",
+    "border-radius": "4px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgb(38, 102, 192)",
+    "border-radius": "8px",
+    "color": "rgb(255, 255, 255)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgb(38, 102, 192)",
+    "border-radius": "8px",
+    "color": "rgb(255, 255, 255)"
   },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
@@ -628,7 +689,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(134, 82, 255, 0.15)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -686,6 +747,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "hsl(215, 67%, 45%)" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "color(srgb 0.01485 0.039975 0.07515)",
@@ -769,38 +831,38 @@
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "li.depth-1": { "font-weight": "500" },
   "li.depth-1 + li.depth-2": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "li.depth-2": { "font-weight": "500" },
   "li.depth-2 + li.depth-3": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "li.depth-3": { "font-weight": "500" },
   "li.depth-3 + li.depth-4": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "li.depth-4": { "font-weight": "500" },
   "li.depth-4 + li.depth-5": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
     "border-inline-start": "1px solid color(srgb 0.1485 0.39975 0.7515 / 0.25)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "margin-inline-start": "7.5px",
+    "padding-inline-start": "12.3px"
   },
   "ol > li": {
     "color": "color(srgb 0.01485 0.039975 0.07515)",

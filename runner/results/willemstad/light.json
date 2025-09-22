@@ -404,6 +404,11 @@
     "font-weight": "400",
     "text-decoration": "none solid oklch(0.3 0 0)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "oklch(0 0 0)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "oklch(0.8 0 0)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -571,6 +576,62 @@
     "color": "oklch(0 0 0)",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "oklch(1 0 0)",
+    "border": "0px solid oklch(0.7 0 0)",
+    "border-radius": "9px",
+    "box-shadow": "none"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0 0 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope",
+    "font-weight": "400",
+    "outline": "oklch(0 0 0) none 0px",
+    "text-decoration": "none solid oklch(0 0 0)",
+    "text-decoration-color": "oklch(0 0 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "oklch(0 0 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "oklch(0 0 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "oklch(0 0 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "oklch(0 0 0)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "oklch(0.7 0 0)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "oklch(1 0 0)",
+    "border": "unset",
+    "border-bottom": "1px solid oklch(0.95 0 0)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "3px",
+    "color": "oklch(0 0 0)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "3px",
+    "color": "oklch(0 0 0)"
+  },
   ".text-highlight": {
     "background-color": "rgb(255, 195, 0)",
     "color": "rgb(0, 0, 0)",
@@ -628,7 +689,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "oklch(0.707 0.1737 155.3 / 0.1)",
     "border-bottom-color": "oklch(0.707 0.1737 155.3 / 0.15)",
@@ -686,6 +747,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "oklch(0.3 0 0)" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0 0 0)",

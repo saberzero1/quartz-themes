@@ -4,7 +4,7 @@
     "color": "rgb(217, 217, 217)"
   },
   ".callout": {
-    "--callout-color": "106, 146, 219",
+    "--callout-color": "105.73, 145.75, 218.83",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "1px",
@@ -26,7 +26,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "123, 213, 213",
+    "--callout-color": "123.13, 212.74, 212.74",
     "background-color": "rgba(123, 213, 213, 0.1)",
     "border-color": "rgba(123, 213, 213, 0.25)",
     "border-radius": "0px",
@@ -53,7 +53,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "225, 104, 104",
+    "--callout-color": "224.92, 103.99, 103.99",
     "background-color": "rgba(225, 104, 104, 0.1)",
     "border-color": "rgba(225, 104, 104, 0.25)",
     "border-radius": "0px",
@@ -80,7 +80,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "225, 104, 104",
+    "--callout-color": "224.92, 103.99, 103.99",
     "background-color": "rgba(225, 104, 104, 0.1)",
     "border-color": "rgba(225, 104, 104, 0.25)",
     "border-radius": "0px",
@@ -107,7 +107,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "187, 137, 228",
+    "--callout-color": "186.64, 137.05, 227.53",
     "background-color": "rgba(187, 137, 228, 0.1)",
     "border-color": "rgba(187, 137, 228, 0.25)",
     "border-radius": "0px",
@@ -134,7 +134,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "225, 104, 104",
+    "--callout-color": "224.92, 103.99, 103.99",
     "background-color": "rgba(225, 104, 104, 0.1)",
     "border-color": "rgba(225, 104, 104, 0.25)",
     "border-radius": "0px",
@@ -161,7 +161,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"info\"]": {
-    "--callout-color": "106, 146, 219",
+    "--callout-color": "105.73, 145.75, 218.83",
     "background-color": "rgba(106, 146, 219, 0.1)",
     "border-color": "rgba(106, 146, 219, 0.25)",
     "border-radius": "0px",
@@ -188,7 +188,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"note\"]": {
-    "--callout-color": "106, 146, 219",
+    "--callout-color": "105.73, 145.75, 218.83",
     "background-color": "rgba(106, 146, 219, 0.1)",
     "border-color": "rgba(106, 146, 219, 0.25)",
     "border-radius": "0px",
@@ -215,7 +215,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "223, 159, 75",
+    "--callout-color": "223.18, 158.8, 75.28",
     "background-color": "rgba(223, 159, 75, 0.1)",
     "border-color": "rgba(223, 159, 75, 0.25)",
     "border-radius": "0px",
@@ -242,7 +242,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"quote\"]": {
-    "--callout-color": "181, 181, 181",
+    "--callout-color": "180.55, 180.55, 180.55",
     "background-color": "rgba(181, 181, 181, 0.1)",
     "border-color": "rgba(181, 181, 181, 0.25)",
     "border-radius": "0px",
@@ -269,7 +269,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "100, 207, 100",
+    "--callout-color": "99.64, 206.65, 99.64",
     "background-color": "rgba(100, 207, 100, 0.1)",
     "border-color": "rgba(100, 207, 100, 0.25)",
     "border-radius": "0px",
@@ -296,7 +296,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "123, 213, 213",
+    "--callout-color": "123.13, 212.74, 212.74",
     "background-color": "rgba(123, 213, 213, 0.1)",
     "border-color": "rgba(123, 213, 213, 0.25)",
     "border-radius": "0px",
@@ -323,7 +323,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"todo\"]": {
-    "--callout-color": "106, 146, 219",
+    "--callout-color": "105.73, 145.75, 218.83",
     "background-color": "rgba(106, 146, 219, 0.1)",
     "border-color": "rgba(106, 146, 219, 0.25)",
     "border-radius": "0px",
@@ -350,7 +350,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "223, 159, 75",
+    "--callout-color": "223.18, 158.8, 75.28",
     "background-color": "rgba(223, 159, 75, 0.1)",
     "border-color": "rgba(223, 159, 75, 0.25)",
     "border-radius": "0px",
@@ -401,6 +401,11 @@
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "300",
     "text-decoration": "none solid lab(64.2084 0.0129864 -0.000771284)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(217, 217, 217)",
+    "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
@@ -569,6 +574,62 @@
     "color": "rgb(217, 217, 217)",
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(31, 31, 31)",
+    "border": "1px solid lab(41.7292 0.00934303 -0.000553131)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(217, 217, 217)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "300",
+    "outline": "rgb(217, 217, 217) none 0px",
+    "text-decoration": "none solid rgb(217, 217, 217)",
+    "text-decoration-color": "rgb(217, 217, 217)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(217, 217, 217)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(217, 217, 217)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(217, 217, 217)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(217, 217, 217)",
+    "font-weight": "300"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "lab(41.7292 0.00934303 -0.000553131)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(31, 31, 31)",
+    "border": "unset",
+    "border-bottom": "1px solid lab(22.9966 0.00630692 -0.000371337)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(217, 217, 217)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(217, 217, 217)"
+  },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
     "color": "rgb(217, 217, 217)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -684,6 +745,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": {
+    "--quartz-icon-color": "color-mix(in lab, #1f1f1f, #d9d9d9 70%)"
+  },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(217, 217, 217)",
@@ -693,9 +757,9 @@
   "div.graph": {
     "--quartz-graph-line": "color-mix(in lab, #1f1f1f, #d9d9d9 35%)",
     "--quartz-graph-node": "color-mix(in lab, #1f1f1f, #d9d9d9 70%)",
-    "--quartz-graph-node-attachment": "#eeee10",
+    "--quartz-graph-node-attachment": "rgb(237.97, 237.97, 16.12)",
     "--quartz-graph-node-focused": "hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))",
-    "--quartz-graph-node-tag": "#64cf64",
+    "--quartz-graph-node-tag": "rgb(99.64, 206.65, 99.64)",
     "--quartz-graph-node-unresolved": "color-mix(in lab, #1f1f1f, #d9d9d9 50%)",
     "--quartz-graph-text": "#d9d9d9"
   },

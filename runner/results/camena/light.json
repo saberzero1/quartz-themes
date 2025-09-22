@@ -386,23 +386,28 @@
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "rgb(141, 123, 183)",
     "cursor": "default",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(141, 123, 183)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
     "color": "rgb(141, 123, 183)",
     "cursor": "default",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(141, 123, 183)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
     "color": "rgb(141, 123, 183)",
     "cursor": "default",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(141, 123, 183)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
+    "color": "rgb(90, 72, 132)",
+    "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgb(184, 173, 210)" },
   ".graph>.global-graph-outer": {
@@ -416,12 +421,12 @@
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
     "display": "block",
-    "font": "16px / 0px \"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font": "16px / 0px \"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-align": "center",
     "white-space": "normal"
   },
   ".katex-display > .katex > .katex-html": {
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(241, 239, 246)",
@@ -452,7 +457,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -468,7 +473,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -484,7 +489,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -500,7 +505,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -516,7 +521,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "600",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -532,7 +537,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "600",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -548,7 +553,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -569,14 +574,70 @@
     "border-color": "rgb(184, 173, 210)",
     "border-radius": "5px",
     "color": "rgb(45, 36, 66)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(249, 248, 251)",
+    "border": "1px solid rgb(155, 140, 192)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(45, 36, 66)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(45, 36, 66) none 0px",
+    "text-decoration": "none solid rgb(45, 36, 66)",
+    "text-decoration-color": "rgb(45, 36, 66)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(45, 36, 66)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(45, 36, 66)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(45, 36, 66)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
+    "color": "rgb(45, 36, 66)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(155, 140, 192)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(249, 248, 251)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(241, 239, 246)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
+    "border-radius": "4px",
+    "color": "rgb(45, 36, 66)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
+    "border-radius": "4px",
+    "color": "rgb(45, 36, 66)"
   },
   ".text-highlight": {
     "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.25)",
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -601,7 +662,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
@@ -617,18 +678,18 @@
     "color": "rgb(138, 92, 245)",
     "cursor": "pointer",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(138, 92, 245) none 0px",
-    "text-decoration": "none solid color(srgb 0.54032 0.3608 0.9592 / 0.3)",
-    "text-decoration-color": "color(srgb 0.54032 0.3608 0.9592 / 0.3)",
+    "text-decoration": "none solid color(srgb 0.54032 0.3608 0.9592 / 0.2)",
+    "text-decoration-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -644,7 +705,7 @@
     "border-top-right-radius": "28px",
     "border-top-style": "solid",
     "display": "flex",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "margin-inline-start": "0px"
   },
@@ -652,7 +713,7 @@
   "blockquote": {
     "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.1)",
     "border-inline-start": "8px solid color(srgb 0.54032 0.3608 0.9592)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-style": "normal",
     "margin-inline-end": "0px",
     "margin-inline-start": "0px",
@@ -675,7 +736,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "line-through solid rgb(45, 36, 66)",
@@ -686,10 +747,11 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "hsl(258, calc(88% / 3), 60%)" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(45, 36, 66)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-size": "16px"
   },
   "div.graph": {
@@ -703,32 +765,32 @@
   },
   "h1": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
+    "font-family": "Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
     "text-shadow": "none"
   },
   "h2": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
+    "font-family": "Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
     "text-shadow": "none"
   },
   "h3": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
+    "font-family": "Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
     "text-shadow": "none"
   },
   "h4": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   "h5": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   "h6": {
     "color": "rgb(138, 92, 245)",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   "hr": {
@@ -809,7 +871,7 @@
     "color": "rgb(45, 36, 66)",
     "cursor": "auto",
     "filter": "none",
-    "font-family": "\"??\", Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "outline": "rgb(45, 36, 66) none 0px",
     "text-decoration": "none solid rgb(45, 36, 66)",
