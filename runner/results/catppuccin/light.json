@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(108, 111, 133)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgb(136, 57, 239)",
+    "color": "rgb(230, 233, 239)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "rgb(204, 208, 218)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -569,6 +574,57 @@
     "color": "rgb(76, 79, 105)",
     "font-family": "\"??\", Vollkorn, -apple-system, blinkmacsystemfont, \"Segoe UI\", \"Microsoft YaHei Light\", roboto, inter, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(239, 241, 245)",
+    "border": "1px solid rgb(188, 192, 204)",
+    "border-radius": "10px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgb(230, 233, 239)",
+    "color": "rgb(76, 79, 105)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", Vollkorn, -apple-system, blinkmacsystemfont, \"Segoe UI\", \"Microsoft YaHei Light\", roboto, inter, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(76, 79, 105) none 0px",
+    "text-decoration": "none solid rgb(76, 79, 105)",
+    "text-decoration-color": "rgb(76, 79, 105)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .preview-container, .search > .search-container > .search-space > .search-layout > .preview-container > ul > li > p": {
+    "color": "rgb(76, 79, 105)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .preview-container.result-card": {
+    "border-color": "rgb(76, 79, 105)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus": {
+    "background-color": "rgb(114, 135, 253)"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(188, 192, 204)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(239, 241, 245)",
+    "border": "0px none rgb(76, 79, 105)",
+    "border-bottom": "0px none rgb(76, 79, 105)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:hover), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:focus), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus)": {
+    "background-color": "rgb(114, 135, 253)",
+    "border-radius": "4px",
+    "color": "rgb(230, 233, 239)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus": {
+    "background-color": "rgb(114, 135, 253)",
+    "border-radius": "4px",
+    "color": "rgb(230, 233, 239)"
+  },
   ".text-highlight": {
     "background-color": "rgb(220, 138, 120)",
     "color": "rgb(230, 233, 239)",
@@ -626,7 +682,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .preview-container.result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(0, 0, 0, 0)",
     "border-bottom-color": "rgba(139, 108, 239, 0.1)",

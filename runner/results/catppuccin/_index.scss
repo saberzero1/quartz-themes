@@ -747,6 +747,12 @@ body {
     text-decoration: none solid rgb(166, 173, 200);
   }
 
+  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+    cursor: default;
+  }
+
   .graph .graph-outer {
     border-color: light-dark(rgb(204, 208, 218), rgb(49, 50, 68));
   }
@@ -1138,6 +1144,153 @@ body {
       sans-serif;
   }
 
+  .search > .search-container > .search-space {
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+    border: 1px solid rgb(69, 71, 90);
+    border-radius: 10px;
+    box-shadow:
+      rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+      rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+      rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+  }
+
+  .search > .search-container > .search-space > * {
+    background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+    cursor: auto;
+    filter: none;
+    font-family:
+      Vollkorn,
+      -apple-system,
+      blinkmacsystemfont,
+      "Segoe UI",
+      "Microsoft YaHei Light",
+      roboto,
+      inter,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    outline: rgb(205, 214, 244) none 0px;
+    text-decoration: none solid rgb(205, 214, 244);
+    text-decoration-color: rgb(205, 214, 244);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container
+    > ul
+    > li
+    > p {
+    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container.result-card {
+    border-color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container.result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container.result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container.result-card.focus {
+    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+  }
+
+  .search > .search-container > .search-space > .search-layout,
+  .search > .search-container > .search-space > .search-layout.display-results {
+    border-color: light-dark(rgb(188, 192, 204), rgb(69, 71, 90));
+  }
+
+  .search > .search-container > .search-space > input {
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+    border: 0px none rgb(205, 214, 244);
+    border-bottom: 0px none rgb(205, 214, 244);
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(~ .result-card:hover),
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(~ .result-card:focus),
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(~ .result-card.focus) {
+    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+    border-radius: 4px;
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus {
+    background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+    border-radius: 4px;
+    color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  }
+
   .text-highlight {
     background-color: light-dark(rgb(220, 138, 120), rgb(245, 224, 220));
     color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
@@ -1259,7 +1412,15 @@ body {
     user-select: text;
   }
 
-  a.internal.tag-link {
+  a.internal.tag-link,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container.result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(139, 108, 239, 0.1);
@@ -1751,6 +1912,58 @@ body {
     pointer-events: auto;
     transform: none;
     transition: all;
+  }
+
+  .search {
+    & > .search-button {
+      font-size: 1rem;
+      svg {
+        color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+        stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+      }
+    }
+    & > .search-container {
+      & > .search-space {
+        margin: 12vh auto;
+        & > input {
+          margin-bottom: 0;
+          border-bottom: none;
+          font-size: 1.1rem;
+        }
+        & > * {
+          background: transparent;
+          margin-bottom: 0;
+          box-shadow: none;
+        }
+        & > .search-layout {
+          &.display-results {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+          & .highlight {
+            background-color: var(--quartz-text-highlight);
+          }
+          & > .results-container {
+            & .result-card {
+              @media all and not ($mobile) {
+                display: flex;
+                &.no-match {
+                  display: block;
+                }
+              }
+              &:has(~ .result-card:hover),
+              &:has(~ .result-card:focus),
+              &:has(~ .result-card.focus) {
+                background-color: unset;
+              }
+              & > ul > li > p {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   @media all and not ($desktop) {

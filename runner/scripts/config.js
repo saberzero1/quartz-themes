@@ -184,6 +184,23 @@ export const extractionTargets = {
         pseudoElement: "",
         properties: sets.text,
       },
+      // Selected state for search
+      {
+        obsidianSelector: `.suggestion-item.is-selected`,
+        publishSelector: null,
+        quartzSelector:
+          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus",
+        pseudoElement: "",
+        properties: ["background-color", "border-radius", "color"],
+      },
+      {
+        obsidianSelector: `.suggestion-item.is-selected`,
+        publishSelector: null,
+        quartzSelector:
+          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:hover), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:focus), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus)",
+        pseudoElement: "",
+        properties: ["background-color", "border-radius", "color"],
+      },
       {
         obsidianSelector: `del`,
         publishSelector: null,
@@ -209,7 +226,8 @@ export const extractionTargets = {
       {
         obsidianSelector: `div.multi-select-pill`,
         publishSelector: null,
-        quartzSelector: "a.internal.tag-link",
+        quartzSelector:
+          "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .preview-container.result-card > ul > li > .match-tag",
         pseudoElement: "",
         properties: sets.pill,
       },
@@ -392,6 +410,70 @@ export const extractionTargets = {
           //"font-size",
           //"padding",
         ],
+      },
+      {
+        obsidianSelector: `.prompt`,
+        publishSelector: null,
+        quartzSelector: ".search > .search-container > .search-space",
+        pseudoElement: "",
+        properties: [
+          "background-color",
+          "border",
+          "border-radius",
+          "box-shadow",
+        ],
+      },
+      {
+        obsidianSelector: `.prompt > .prompt-input-container > input`,
+        publishSelector: null,
+        quartzSelector: ".search > .search-container > .search-space > input",
+        pseudoElement: "",
+        properties: [
+          "background-color",
+          "border",
+          "border-bottom",
+          "border-radius",
+          "box-shadow",
+        ],
+      },
+      {
+        obsidianSelector: `.prompt > .prompt-results`,
+        publishSelector: null,
+        quartzSelector: ".search > .search-container > .search-space > *",
+        pseudoElement: "",
+        properties: sets.text,
+      },
+      {
+        obsidianSelector: `div.prompt`,
+        publishSelector: null,
+        quartzSelector:
+          ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results",
+        pseudoElement: "",
+        properties: ["border-color"],
+      },
+      {
+        obsidianSelector: `div.prompt .prompt-results .suggestion-item`,
+        publishSelector: null,
+        quartzSelector:
+          ".search > .search-container > .search-space > .search-layout > .preview-container, .search > .search-container > .search-space > .search-layout > .preview-container > ul > li > p",
+        pseudoElement: "",
+        properties: ["color"],
+      },
+      {
+        obsidianSelector: `div.prompt div.prompt-results .suggestion-item`,
+        publishSelector: null,
+        quartzSelector:
+          ".search > .search-container > .search-space > .search-layout > .preview-container.result-card",
+        pseudoElement: "",
+        properties: ["border-color"],
+      },
+      {
+        obsidianSelector: `div.prompt .prompt-results .suggestion-item.is-selected`,
+        publishSelector: null,
+        quartzSelector:
+          ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus",
+        pseudoElement: "",
+        properties: ["background-color"],
       },
     ],
   },
@@ -1163,6 +1245,15 @@ export const extractionTargets = {
           //"line-height",
           "text-decoration",
         ],
+      },
+      {
+        // active
+        obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-file-title[data-path="integrations.md"]`,
+        publishSelector: null,
+        quartzSelector:
+          ".explorer .explorer-content ul.explorer-ul li:has(> .active)",
+        pseudoElement: "",
+        properties: ["background-color", "color", "cursor"],
       },
       {
         // closed
