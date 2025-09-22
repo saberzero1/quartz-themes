@@ -6,27 +6,23 @@
 }
 
 :root:root {
-  --lightgray: color-mix(in srgb-linear, #e7e7e7, #000000 35%) !important;
-  --gray: color-mix(in srgb-linear, #e7e7e7, #000000 70%) !important;
-  --light: color-mix(in srgb-linear, #e7e7e7, #000000 70%) !important;
+  --light: #bfbfbf !important;
+  --gray: #868686 !important;
+  --darkgray: #868686 !important;
   --highlight: #bfa720 !important;
-  --secondary: hsl(258, 88%, 66%) !important;
+  --secondary: #8a5cf5 !important;
   --tertiary: #1a631a !important;
-  --darkgray: color-mix(in srgb-linear, #e7e7e7, #000000 50%) !important;
+  --lightgray: #aaaaaa !important;
   --dark: #000000 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: color-mix(in lab, #1f1f1f, #d9d9d9 35%) !important;
-  --gray: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
-  --light: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
+  --light: #595959 !important;
+  --gray: #9c9c9c !important;
+  --darkgray: #9c9c9c !important;
   --highlight: #eeee10 !important;
-  --secondary: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --secondary: #a68af9 !important;
   --tertiary: #64cf64 !important;
-  --darkgray: color-mix(in lab, #1f1f1f, #d9d9d9 50%) !important;
+  --lightgray: #757575 !important;
   --dark: #d9d9d9 !important;
 }
 

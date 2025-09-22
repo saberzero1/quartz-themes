@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --lightgray: #d4d4d4 !important;
-  --gray: hsl(258, 15%, 33%) !important;
-  --light: hsl(258, 15%, 33%) !important;
+  --light: #d4d4d4 !important;
+  --gray: #4f4861 !important;
+  --darkgray: #4f4861 !important;
   --highlight: #e0ac00 !important;
-  --secondary: hsl(calc(258 - 60), 88%, min(66%, 35%)) !important;
+  --secondary: hsl(198, 88%, min(66%, 35%)) !important;
   --tertiary: #08b94e !important;
-  --darkgray: hsl(258, 20%, 47%) !important;
-  --dark: hsl(0, 0%, 13%) !important;
+  --lightgray: #6e6090 !important;
+  --dark: #212121 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: #3f3f3f !important;
-  --gray: hsl(258, 15%, 68%) !important;
-  --light: hsl(258, 15%, 68%) !important;
+  --light: #3f3f3f !important;
+  --gray: #a9a1ba !important;
+  --darkgray: #a9a1ba !important;
   --highlight: #e0de71 !important;
-  --secondary: hsl(calc(258 - 60), 88%, max(66%, 50%)) !important;
+  --secondary: hsl(198, 88%, max(66%, 50%)) !important;
   --tertiary: #44cf6e !important;
-  --darkgray: hsl(258, 20%, 51%) !important;
-  --dark: hsl(0, 0%, 85%) !important;
+  --lightgray: #78699b !important;
+  --dark: #d9d9d9 !important;
 }
 
 html {
