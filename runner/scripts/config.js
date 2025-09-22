@@ -196,7 +196,7 @@ export const extractionTargets = {
         obsidianSelector: `.suggestion-item.is-selected`,
         publishSelector: null,
         quartzSelector:
-          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus",
+          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
@@ -204,7 +204,7 @@ export const extractionTargets = {
         obsidianSelector: `div.suggestion-item`,
         publishSelector: null,
         quartzSelector:
-          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:hover), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:focus), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus)",
+          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus, ~ .result-card:focus, ~ .result-card:hover)",
         pseudoElement: "",
         properties: ["background-color", "border-radius", "color"],
       },
