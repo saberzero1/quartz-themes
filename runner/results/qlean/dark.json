@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(212, 212, 212)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(245, 245, 245)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "rgb(64, 64, 64)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -569,6 +574,62 @@
     "color": "rgb(212, 212, 212)",
     "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgba(127, 127, 127, 0.01)",
+    "border": "1px solid rgba(230, 230, 230, 0.6)",
+    "border-radius": "2px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(212, 212, 212)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Helvetica Neue\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(212, 212, 212) none 0px",
+    "text-decoration": "none solid rgb(212, 212, 212)",
+    "text-decoration-color": "rgb(212, 212, 212)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(212, 212, 212)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(212, 212, 212)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(212, 212, 212)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(212, 212, 212)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgba(230, 230, 230, 0.6)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(10, 10, 10)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(115, 115, 115)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "1.875px",
+    "color": "rgb(212, 212, 212)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "1.875px",
+    "color": "rgb(212, 212, 212)"
+  },
   ".text-highlight": {
     "background-color": "rgb(230, 230, 230)",
     "color": "rgb(10, 10, 10)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(0, 0, 0, 0)",
     "border-bottom-color": "rgba(230, 230, 230, 0.5)",
@@ -684,6 +745,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "#737373" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(212, 212, 212)",

@@ -27,7 +27,7 @@
   },
   ".callout[data-callout=\"abstract\"]": {
     "--callout-color": "0, 191, 188",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -54,7 +54,7 @@
   },
   ".callout[data-callout=\"bug\"]": {
     "--callout-color": "233, 49, 71",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -81,7 +81,7 @@
   },
   ".callout[data-callout=\"danger\"]": {
     "--callout-color": "233, 49, 71",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -108,7 +108,7 @@
   },
   ".callout[data-callout=\"example\"]": {
     "--callout-color": "120, 82, 238",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -135,7 +135,7 @@
   },
   ".callout[data-callout=\"failure\"]": {
     "--callout-color": "233, 49, 71",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -162,7 +162,7 @@
   },
   ".callout[data-callout=\"info\"]": {
     "--callout-color": "8, 109, 221",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -189,7 +189,7 @@
   },
   ".callout[data-callout=\"note\"]": {
     "--callout-color": "8, 109, 221",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -216,7 +216,7 @@
   },
   ".callout[data-callout=\"question\"]": {
     "--callout-color": "236, 117, 0",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -243,7 +243,7 @@
   },
   ".callout[data-callout=\"quote\"]": {
     "--callout-color": "158, 158, 158",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -270,7 +270,7 @@
   },
   ".callout[data-callout=\"success\"]": {
     "--callout-color": "8, 185, 78",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -297,7 +297,7 @@
   },
   ".callout[data-callout=\"tip\"]": {
     "--callout-color": "0, 191, 188",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -324,7 +324,7 @@
   },
   ".callout[data-callout=\"todo\"]": {
     "--callout-color": "8, 109, 221",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -351,7 +351,7 @@
   },
   ".callout[data-callout=\"warning\"]": {
     "--callout-color": "236, 117, 0",
-    "background-color": "rgba(0, 0, 0, 0)",
+    "background-color": "rgb(243, 242, 242)",
     "border-color": "rgba(102, 108, 104, 0.314)",
     "border-radius": "0px",
     "border-style": "dotted",
@@ -401,6 +401,11 @@
     "font-family": "inter, sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(32, 36, 48)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(127, 108, 94)",
+    "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
@@ -569,6 +574,62 @@
     "color": "rgb(32, 36, 48)",
     "font-family": "manrope, sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(245, 244, 244)",
+    "border": "1px solid rgb(32, 36, 48)",
+    "border-radius": "0px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(32, 36, 48)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "manrope, sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(32, 36, 48) none 0px",
+    "text-decoration": "none solid rgb(32, 36, 48)",
+    "text-decoration-color": "rgb(32, 36, 48)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(32, 36, 48)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(32, 36, 48)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(32, 36, 48)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "rgb(32, 36, 48)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(32, 36, 48)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(245, 244, 244)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(239, 239, 241)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(32, 36, 48)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(32, 36, 48)"
+  },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
     "color": "rgb(32, 36, 48)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(0, 0, 0, 0)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -684,6 +745,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "#322831" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(32, 36, 48)",
@@ -739,8 +801,8 @@
   },
   "input[type=checkbox]": {
     "appearance": "none",
-    "border": "1px solid rgb(78, 77, 73)",
-    "border-color": "rgb(78, 77, 73)",
+    "border": "1px solid rgb(102, 108, 104)",
+    "border-color": "rgb(102, 108, 104)",
     "border-radius": "0px",
     "margin": "0px 8px 0px -21px",
     "margin-inline-end": "8px",

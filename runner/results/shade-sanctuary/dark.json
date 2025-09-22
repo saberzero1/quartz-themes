@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid color(srgb 0.566367 0.4332 0.7528)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "color(srgb 0.232533 0.1552 0.3408)",
+    "color": "rgb(250, 244, 237)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -569,6 +574,62 @@
     "color": "rgb(250, 244, 237)",
     "font-family": "\"Computer Modern\", Inter, sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "color(srgb 0.02475 0.011 0.044)",
+    "border": "1px solid color(srgb 0.232533 0.1552 0.3408)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(250, 244, 237)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"Computer Modern\", Inter, sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(250, 244, 237) none 0px",
+    "text-decoration": "none solid rgb(250, 244, 237)",
+    "text-decoration-color": "rgb(250, 244, 237)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(250, 244, 237)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(250, 244, 237)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(250, 244, 237)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.232533 0.1552 0.3408)",
+    "color": "rgb(250, 244, 237)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "color(srgb 0.232533 0.1552 0.3408)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "color(srgb 0.02475 0.011 0.044)",
+    "border": "unset",
+    "border-bottom": "1px solid color(srgb 0.0495 0.022 0.088)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "color(srgb 0.232533 0.1552 0.3408)",
+    "border-radius": "4px",
+    "color": "rgb(250, 244, 237)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "color(srgb 0.232533 0.1552 0.3408)",
+    "border-radius": "4px",
+    "color": "rgb(250, 244, 237)"
+  },
   ".text-highlight": {
     "background-color": "color(srgb 0.591667 0.3 1 / 0.25)",
     "color": "rgb(250, 244, 237)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -683,6 +744,9 @@
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
+  },
+  "div#quartz-body": {
+    "--quartz-icon-color": "color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%))"
   },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",

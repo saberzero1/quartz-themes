@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(181, 179, 177)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "rgb(26, 26, 26)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -569,6 +574,62 @@
     "color": "rgb(26, 26, 26)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(252, 252, 252)",
+    "border": "1px solid rgb(189, 189, 189)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(26, 26, 26)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(26, 26, 26) none 0px",
+    "text-decoration": "none solid rgb(26, 26, 26)",
+    "text-decoration-color": "rgb(26, 26, 26)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(26, 26, 26)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(26, 26, 26)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(26, 26, 26)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "rgb(26, 26, 26)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(189, 189, 189)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(247, 247, 247)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(252, 252, 252)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "4px",
+    "color": "rgb(26, 26, 26)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "4px",
+    "color": "rgb(26, 26, 26)"
+  },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
     "color": "rgb(26, 26, 26)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -684,6 +745,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "#b5b3b1" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(26, 26, 26)",

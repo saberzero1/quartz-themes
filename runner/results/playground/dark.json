@@ -406,6 +406,11 @@
     "font-weight": "400",
     "text-decoration": "none solid oklch(0.845 0.01 279.29)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "oklch(0.255 0.021 279.29)",
+    "color": "oklch(0.92 0.004 279.29)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "oklch(0.255 0.021 279.29)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -573,6 +578,62 @@
     "color": "oklch(0.92 0.004 279.29)",
     "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "oklch(0.135 0.01 279.29)",
+    "border": "1px solid rgb(85, 85, 85)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.92 0.004 279.29)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "oklch(0.92 0.004 279.29) none 0px",
+    "text-decoration": "none solid oklch(0.92 0.004 279.29)",
+    "text-decoration-color": "oklch(0.92 0.004 279.29)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "oklch(0.92 0.004 279.29)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "oklch(0.92 0.004 279.29)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "oklch(0.92 0.004 279.29)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "oklch(0.92 0.004 279.29)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(85, 85, 85)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "oklch(0.135 0.01 279.29)",
+    "border": "unset",
+    "border-bottom": "1px solid oklch(0.18 0.014 279.29)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "4px",
+    "color": "oklch(0.92 0.004 279.29)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "4px",
+    "color": "oklch(0.92 0.004 279.29)"
+  },
   ".text-highlight": {
     "background-color": "oklch(0.845 0.174 97.11)",
     "color": "oklch(0.12 0.009 279.29)",
@@ -630,7 +691,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "oklch(0.255 0.021 279.29)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -688,6 +749,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "oklch(61.5% 0.028 279.29)" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "oklch(0.92 0.004 279.29)",

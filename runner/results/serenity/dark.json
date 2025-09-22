@@ -402,6 +402,11 @@
     "font-weight": "400",
     "text-decoration": "none solid rgb(166, 166, 166)"
   },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(186, 186, 186)",
+    "cursor": "default"
+  },
   ".graph .graph-outer": { "border-color": "rgb(61, 61, 61)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
@@ -569,6 +574,62 @@
     "color": "rgb(186, 186, 186)",
     "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(13, 13, 13)",
+    "border": "1px solid rgb(59, 59, 59)",
+    "border-radius": "18px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(186, 186, 186)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"iA Writer Quattro S\", \"Nanum Gothic Coding\", \"MS PGothic\", \"PingFang SC\", 蘋方, \"蘋方 SC\", \"Microsoft YaHei Light\", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(186, 186, 186) none 0px",
+    "text-decoration": "none solid rgb(186, 186, 186)",
+    "text-decoration-color": "rgb(186, 186, 186)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(186, 186, 186)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(186, 186, 186)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(186, 186, 186)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(186, 186, 186)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(59, 59, 59)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(13, 13, 13)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(3, 3, 3)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "5px",
+    "color": "rgb(186, 186, 186)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "5px",
+    "color": "rgb(186, 186, 186)"
+  },
   ".text-highlight": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(204, 206, 255)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(102, 105, 204, 0.25)",
     "border-bottom-color": "rgb(184, 185, 224)",
@@ -683,6 +744,9 @@
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
+  },
+  "div#quartz-body": {
+    "--quartz-icon-color": "hsl(0, 0%, calc(calc(15% - 10%) + 60%))"
   },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",

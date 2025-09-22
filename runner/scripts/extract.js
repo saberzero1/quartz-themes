@@ -18,7 +18,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-testingMode = true;
+// testingMode = true;
 const testingTheme = "Catppuccin";
 
 const manifestCollection = testingMode

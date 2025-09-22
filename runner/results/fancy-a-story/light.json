@@ -4,7 +4,7 @@
     "color": "rgb(0, 0, 0)"
   },
   ".callout": {
-    "--callout-color": "59, 59, 146",
+    "--callout-color": "58.515, 58.515, 145.515",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "1px",
@@ -26,7 +26,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "58, 141, 141",
+    "--callout-color": "57.645, 141.165, 141.165",
     "background-color": "rgba(58, 141, 141, 0.1)",
     "border-color": "rgba(58, 141, 141, 0.25)",
     "border-radius": "0px",
@@ -53,7 +53,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "169, 57, 57",
+    "--callout-color": "169.005, 56.775, 56.775",
     "background-color": "rgba(169, 57, 57, 0.1)",
     "border-color": "rgba(169, 57, 57, 0.25)",
     "border-radius": "0px",
@@ -80,7 +80,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "169, 57, 57",
+    "--callout-color": "169.005, 56.775, 56.775",
     "background-color": "rgba(169, 57, 57, 0.1)",
     "border-color": "rgba(169, 57, 57, 0.25)",
     "border-radius": "0px",
@@ -107,7 +107,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "102, 39, 121",
+    "--callout-color": "102.015, 39.375, 121.155",
     "background-color": "rgba(102, 39, 121, 0.1)",
     "border-color": "rgba(102, 39, 121, 0.25)",
     "border-radius": "0px",
@@ -134,7 +134,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "169, 57, 57",
+    "--callout-color": "169.005, 56.775, 56.775",
     "background-color": "rgba(169, 57, 57, 0.1)",
     "border-color": "rgba(169, 57, 57, 0.25)",
     "border-radius": "0px",
@@ -161,7 +161,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"info\"]": {
-    "--callout-color": "59, 59, 146",
+    "--callout-color": "58.515, 58.515, 145.515",
     "background-color": "rgba(59, 59, 146, 0.1)",
     "border-color": "rgba(59, 59, 146, 0.25)",
     "border-radius": "0px",
@@ -188,7 +188,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"note\"]": {
-    "--callout-color": "59, 59, 146",
+    "--callout-color": "58.515, 58.515, 145.515",
     "background-color": "rgba(59, 59, 146, 0.1)",
     "border-color": "rgba(59, 59, 146, 0.25)",
     "border-radius": "0px",
@@ -215,7 +215,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "180, 106, 15",
+    "--callout-color": "180.315, 106.365, 15.015",
     "background-color": "rgba(180, 106, 15, 0.1)",
     "border-color": "rgba(180, 106, 15, 0.25)",
     "border-radius": "0px",
@@ -242,7 +242,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"quote\"]": {
-    "--callout-color": "82, 82, 82",
+    "--callout-color": "82.005, 82.005, 82.005",
     "background-color": "rgba(82, 82, 82, 0.1)",
     "border-color": "rgba(82, 82, 82, 0.25)",
     "border-radius": "0px",
@@ -269,7 +269,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "26, 99, 26",
+    "--callout-color": "26.325, 99.405, 26.325",
     "background-color": "rgba(26, 99, 26, 0.1)",
     "border-color": "rgba(26, 99, 26, 0.25)",
     "border-radius": "0px",
@@ -296,7 +296,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "58, 141, 141",
+    "--callout-color": "57.645, 141.165, 141.165",
     "background-color": "rgba(58, 141, 141, 0.1)",
     "border-color": "rgba(58, 141, 141, 0.25)",
     "border-radius": "0px",
@@ -323,7 +323,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"todo\"]": {
-    "--callout-color": "59, 59, 146",
+    "--callout-color": "58.515, 58.515, 145.515",
     "background-color": "rgba(59, 59, 146, 0.1)",
     "border-color": "rgba(59, 59, 146, 0.25)",
     "border-radius": "0px",
@@ -350,7 +350,7 @@
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "180, 106, 15",
+    "--callout-color": "180.315, 106.365, 15.015",
     "background-color": "rgba(180, 106, 15, 0.1)",
     "border-color": "rgba(180, 106, 15, 0.25)",
     "border-radius": "0px",
@@ -382,18 +382,18 @@
   },
   ".explorer .explorer-content": { "background-color": "rgba(0, 0, 0, 0)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "rgb(157, 83, 51)",
+    "color": "rgb(157, 82, 51)",
     "cursor": "default",
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "300",
-    "text-decoration": "none solid rgb(157, 83, 51)"
+    "text-decoration": "none solid rgb(157, 82, 51)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "rgb(157, 83, 51)",
+    "color": "rgb(157, 82, 51)",
     "cursor": "default",
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "300",
-    "text-decoration": "none solid rgb(157, 83, 51)"
+    "text-decoration": "none solid rgb(157, 82, 51)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
     "color": "color(srgb-linear 0.239671 0.239671 0.239671)",
@@ -401,6 +401,11 @@
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "300",
     "text-decoration": "none solid color(srgb-linear 0.239671 0.239671 0.239671)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
@@ -569,6 +574,62 @@
     "color": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(231, 231, 231)",
+    "border": "1px solid color(srgb-linear 0.479342 0.479343 0.479343)",
+    "border-radius": "12px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"??\", \"Noto Serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-weight": "300",
+    "outline": "rgb(0, 0, 0) none 0px",
+    "text-decoration": "none solid rgb(0, 0, 0)",
+    "text-decoration-color": "rgb(0, 0, 0)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(0, 0, 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(0, 0, 0)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "color": "rgb(0, 0, 0)",
+    "font-weight": "300"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "color(srgb-linear 0.479342 0.479343 0.479343)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(231, 231, 231)",
+    "border": "unset",
+    "border-bottom": "1px solid color(srgb-linear 0.679069 0.679069 0.679069)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(0, 0, 0)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(0, 0, 0, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(0, 0, 0)"
+  },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
     "color": "rgb(0, 0, 0)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(138, 92, 245, 0.1)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -684,6 +745,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": {
+    "--quartz-icon-color": "color-mix(in srgb-linear, #e7e7e7, #000000 70%)"
+  },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(0, 0, 0)",
@@ -693,9 +757,9 @@
   "div.graph": {
     "--quartz-graph-line": "color-mix(in srgb-linear, #e7e7e7, #000000 35%)",
     "--quartz-graph-node": "color-mix(in srgb-linear, #e7e7e7, #000000 70%)",
-    "--quartz-graph-node-attachment": "#bfa720",
+    "--quartz-graph-node-attachment": "rgb(199.455, 175.095, 33.285)",
     "--quartz-graph-node-focused": "hsl(258, 88%, 66%)",
-    "--quartz-graph-node-tag": "#1a631a",
+    "--quartz-graph-node-tag": "rgb(26.325, 99.405, 26.325)",
     "--quartz-graph-node-unresolved": "color-mix(in srgb-linear, #e7e7e7, #000000 50%)",
     "--quartz-graph-text": "#000000"
   },

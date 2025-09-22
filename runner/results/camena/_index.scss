@@ -16,7 +16,7 @@
   --dark: #2d2442 !important;
 }
 :root:root[saved-theme="dark"] {
-  --light: #443663 !important;
+  --light: #5a4884 !important;
   --gray: #f5695c !important;
   --darkgray: #f5695c !important;
   --highlight: #5ca8f5 !important;
@@ -61,7 +61,7 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(249, 248, 251), rgb(5, 4, 7));
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
@@ -550,18 +550,19 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
-    text-decoration: none solid rgb(56, 45, 82);
+    color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    text-decoration: none solid rgb(79, 63, 115);
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(241, 239, 246), rgb(11, 9, 16));
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(141, 123, 183), rgb(90, 72, 132));
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     cursor: default;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -580,16 +581,17 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(90, 72, 132);
+    text-decoration: none solid rgb(113, 90, 165);
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(141, 123, 183), rgb(90, 72, 132));
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     cursor: default;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -608,13 +610,14 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(90, 72, 132);
+    text-decoration: none solid rgb(113, 90, 165);
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(141, 123, 183), rgb(90, 72, 132));
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     cursor: default;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -633,11 +636,17 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(90, 72, 132);
+    text-decoration: none solid rgb(113, 90, 165);
+  }
+
+  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
+    color: light-dark(rgb(90, 72, 132), rgb(141, 123, 183));
+    cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
   }
 
   .graph > .global-graph-outer {
@@ -647,7 +656,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
   }
 
   .katex > .katex-html {
@@ -657,7 +666,8 @@ body {
   .katex-display > .katex {
     display: block;
     font:
-      16px / 0px Avenir,
+      16px / 0px Cantarell,
+      Avenir,
       Montserrat,
       Corbel,
       "URW Gothic",
@@ -680,6 +690,7 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -700,19 +711,19 @@ body {
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(241, 239, 246), rgb(11, 9, 16));
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(241, 239, 246), rgb(11, 9, 16));
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(241, 239, 246), rgb(11, 9, 16));
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
   }
 
   .page > #quartz-body div.center {
@@ -723,9 +734,9 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(141, 123, 183), rgb(90, 72, 132));
-    text-decoration: line-through solid rgb(90, 72, 132);
-    text-decoration-color: rgb(90, 72, 132);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    text-decoration: line-through solid rgb(113, 90, 165);
+    text-decoration-color: rgb(113, 90, 165);
   }
 
   .page article p > b,
@@ -735,6 +746,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -770,6 +782,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -805,6 +818,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -840,6 +854,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -875,6 +890,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -910,6 +926,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -945,6 +962,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -974,17 +992,18 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(249, 248, 251), rgb(5, 4, 7));
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
-    border: 1px solid rgb(56, 45, 82);
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(rgb(249, 248, 251), rgb(45, 36, 66));
+    border: 1px solid rgb(79, 63, 115);
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-radius: 5px;
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1004,12 +1023,196 @@ body {
       sans-serif;
   }
 
+  .search > .search-container > .search-space {
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
+    border: 1px solid rgb(101, 81, 148);
+    border-radius: 12px;
+    box-shadow:
+      rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+      rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+      rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+  }
+
+  .search > .search-container > .search-space > * {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    cursor: auto;
+    filter: none;
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: none solid rgb(198, 189, 219);
+    text-decoration-color: rgb(198, 189, 219);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition: all;
+    user-select: text;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card {
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    font-weight: 400;
+  }
+
+  .search > .search-container > .search-space > .search-layout,
+  .search > .search-container > .search-space > .search-layout.display-results {
+    border-color: light-dark(rgb(155, 140, 192), rgb(101, 81, 148));
+  }
+
+  .search > .search-container > .search-space > input {
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
+    border: unset;
+    border-bottom: 1px solid rgb(34, 27, 49);
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
+    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
+    border-radius: 4px;
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
+    border-radius: 4px;
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
   .text-highlight {
     background-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1057,6 +1260,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1091,6 +1295,7 @@ body {
     cursor: pointer;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1119,7 +1324,16 @@ body {
     user-select: text;
   }
 
-  a.internal.tag-link {
+  a.internal.tag-link,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: center;
     background-color: rgba(138, 92, 245, 0.1);
     border-bottom-color: rgba(138, 92, 245, 0.15);
@@ -1136,6 +1350,7 @@ body {
     border-top-style: solid;
     display: flex;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1168,6 +1383,7 @@ body {
     );
     border-inline-start: 8px solid color(srgb 0.54032 0.3608 0.9592);
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1194,9 +1410,12 @@ body {
   }
 
   code {
-    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-    border: 0px solid rgb(56, 45, 82);
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(
+      color(srgb 0.54032 0.3608 0.9592 / 0.1),
+      color(srgb 0.54032 0.3608 0.9592 / 0.15)
+    );
+    border: 0px solid rgb(79, 63, 115);
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-radius: 4px;
     color: rgb(138, 92, 245);
     font-family:
@@ -1218,6 +1437,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1246,10 +1466,15 @@ body {
     user-select: text;
   }
 
+  div#quartz-body {
+    --quartz-icon-color: hsl(258, calc(88% / 3), 50%);
+  }
+
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1276,27 +1501,31 @@ body {
   h1 {
     color: rgb(138, 92, 245);
     font-family:
-      Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+      Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+      sans-serif;
     text-shadow: none;
   }
 
   h2 {
     color: rgb(138, 92, 245);
     font-family:
-      Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+      Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+      sans-serif;
     text-shadow: none;
   }
 
   h3 {
     color: rgb(138, 92, 245);
     font-family:
-      Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+      Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+      sans-serif;
     text-shadow: none;
   }
 
   h4 {
     color: rgb(138, 92, 245);
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1320,6 +1549,7 @@ body {
   h5 {
     color: rgb(138, 92, 245);
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1343,6 +1573,7 @@ body {
   h6 {
     color: rgb(138, 92, 245);
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1374,8 +1605,8 @@ body {
 
   input[type="checkbox"] {
     appearance: none;
-    border: 1.5px solid rgb(56, 45, 82);
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    border: 1.5px solid rgb(79, 63, 115);
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-radius: 4px;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
@@ -1476,6 +1707,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
+      Cantarell,
       Avenir,
       Montserrat,
       Corbel,
@@ -1515,9 +1747,12 @@ body {
   }
 
   pre:has(> code) {
-    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-    border: 0px solid rgb(56, 45, 82);
-    border-color: light-dark(rgb(184, 173, 210), rgb(56, 45, 82));
+    background-color: light-dark(
+      color(srgb 0.54032 0.3608 0.9592 / 0.1),
+      color(srgb 0.54032 0.3608 0.9592 / 0.15)
+    );
+    border: 0px solid rgb(79, 63, 115);
+    border-color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1545,6 +1780,223 @@ body {
     pointer-events: auto;
     transform: none;
     transition: all;
+  }
+
+  .search {
+    & > .search-button {
+      font-size: 1rem;
+      svg {
+        color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+        stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+      }
+    }
+    & > .search-container {
+      & > .search-space {
+        margin: 12vh auto;
+        & > input {
+          margin-bottom: 0;
+          border-bottom: none;
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+          font-size: 1.1rem;
+          &:has(+ :not(.display-results)) {
+            border-radius: inherit;
+          }
+        }
+        & > * {
+          background: transparent;
+          margin-bottom: 0;
+          box-shadow: none;
+        }
+        & > .search-layout {
+          &.display-results {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+          & .highlight {
+            background-color: var(--quartz-text-highlight);
+          }
+          & > .results-container {
+            & .result-card {
+              @media all and not ($mobile) {
+                display: flex;
+                &.no-match {
+                  display: block;
+                }
+              }
+              &:has(~ .result-card:hover),
+              &:has(~ .result-card:focus),
+              &:has(~ .result-card.focus) {
+                background-color: unset;
+              }
+              & > ul > li > p {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .explorer {
+    @media all and ($mobile) {
+      &:not(.collapsed) > .explorer-content {
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+      }
+    }
+    .explorer-content {
+      @media all and ($mobile) {
+        left: -1rem;
+      }
+
+      .folder-container {
+        --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
+        --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+
+        text-overflow: ellipsis;
+        position: relative;
+
+        @media all and ($mobile) {
+          padding-inline-start: 0.5rem;
+          padding-inline-end: 0rem;
+          border-radius: 0.25rem;
+        }
+        & > svg {
+          opacity: 0.001;
+          position: absolute;
+        }
+        &:before {
+          width: 1rem;
+          height: 1rem;
+          min-width: 1rem;
+          min-height: 1rem;
+          display: flex;
+          align-self: center;
+          background: var(--quartz-icon-color);
+          content: "";
+        }
+        & > div {
+          width: 100%;
+        }
+        &:hover {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          background-color: var(--nav-item-background-hover);
+          border-radius: 0.25rem;
+        }
+      }
+      li:has(> .folder-outer:not(.open)) > .folder-container:before {
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
+        mask-image: var(--folder-closed-icon);
+        -webkit-mask-image: var(--folder-closed-icon);
+      }
+      li:has(> .folder-outer.open) > .folder-container:before {
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
+        mask-image: var(--folder-open-icon);
+        -webkit-mask-image: var(--folder-open-icon);
+      }
+      ul.explorer-ul li {
+        text-overflow: ellipsis;
+        position: relative;
+
+        a {
+          display: flex;
+          color: inherit;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: inherit;
+
+          &.active,
+          &:not(.folder-title):hover {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
+            border-radius: 0.25rem;
+          }
+          &[data-for$="/index"] {
+            padding-inline-start: 0.5rem;
+            padding-inline-end: 0;
+          }
+          padding-inline-start: 0;
+
+          @media all and ($mobile) {
+            padding-inline-start: 0.5rem;
+            padding-inline-end: 0.5rem;
+            &[data-for$="/index"] {
+              padding-inline-end: 0.5rem;
+            }
+          }
+        }
+        > a:before {
+          --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+          width: 1rem;
+          height: 1rem;
+          min-width: 1rem;
+          min-height: 1rem;
+          content: "";
+          display: flex;
+          align-self: center;
+          background: var(--quartz-icon-color);
+          mask-image: var(--file-icon);
+          -webkit-mask-image: var(--file-icon);
+          margin-inline-end: 0.5rem;
+        }
+      }
+    }
+  }
+
+  /* ICONS */
+  button.readermode {
+    & > svg {
+      display: none;
+    }
+    /* lucide book-open icon */
+    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
+    background: var(--quartz-icon-color) !important;
+    mask-image: var(--readermode-icon);
+    -webkit-mask-image: var(--readermode-icon);
+    width: 24px;
+    height: 24px;
+  }
+
+  button.global-graph-icon {
+    & > svg {
+      display: none;
+    }
+    /* lucide git-fork icon */
+    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
+    background: var(--quartz-icon-color) !important;
+    mask-image: var(--graph-icon);
+    -webkit-mask-image: var(--graph-icon);
+    width: 24px;
+    height: 24px;
+  }
+
+  button.darkmode {
+    & > svg {
+      display: none !important;
+    }
+    /* lucide moon icon */
+    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
+    /* lucide sun icon */
+    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
+    background: var(--quartz-icon-color) !important;
+    width: 24px;
+    height: 24px;
+  }
+
+  .explorer svg,
+  button.toc-header .fold,
+  .global-graph-icon,
+  .readermode,
+  .darkmode {
+    color: var(--quartz-icon-color);
+    stroke: var(--quartz-icon-color);
   }
 
   @media all and not ($desktop) {
@@ -1620,5 +2072,19 @@ body {
         padding-right: 1.5rem;
       }
     }
+  }
+}
+
+:root[saved-theme="light"] {
+  button.darkmode {
+    mask-image: var(--sun-icon);
+    -webkit-mask-image: var(--sun-icon);
+  }
+}
+
+:root[saved-theme="dark"] {
+  button.darkmode {
+    mask-image: var(--moon-icon);
+    -webkit-mask-image: var(--moon-icon);
   }
 }

@@ -8,7 +8,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout .callout-title": {
@@ -32,7 +32,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
@@ -59,7 +59,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
@@ -86,7 +86,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
@@ -113,7 +113,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
@@ -140,7 +140,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
@@ -167,7 +167,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
@@ -194,7 +194,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
@@ -221,7 +221,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
@@ -248,7 +248,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
@@ -275,7 +275,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
@@ -302,7 +302,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
@@ -329,7 +329,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
@@ -356,7 +356,7 @@
     "border-radius": "0px",
     "border-style": "solid solid solid dashed",
     "border-width": "0px 0px 0px 1px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "normal",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
@@ -401,6 +401,11 @@
     "font-family": "\"yu gothic ui\", sans-serif",
     "font-weight": "400",
     "text-decoration": "none solid rgb(100, 95, 90)"
+  },
+  ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(142, 116, 109)",
+    "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
   ".graph>.global-graph-outer": {
@@ -569,6 +574,62 @@
     "color": "rgb(173, 173, 173)",
     "font-family": "\"yu gothic ui\", sans-serif"
   },
+  ".search > .search-container > .search-space": {
+    "background-color": "rgb(9, 9, 9)",
+    "border": "1px solid rgb(141, 106, 80)",
+    "border-radius": "0px",
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
+  },
+  ".search > .search-container > .search-space > *": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "color": "rgb(173, 173, 173)",
+    "cursor": "auto",
+    "filter": "none",
+    "font-family": "\"yu gothic ui\", sans-serif",
+    "font-weight": "400",
+    "outline": "rgb(173, 173, 173) none 0px",
+    "text-decoration": "none solid rgb(173, 173, 173)",
+    "text-decoration-color": "rgb(173, 173, 173)",
+    "text-decoration-line": "none",
+    "text-decoration-style": "solid",
+    "text-decoration-thickness": "auto",
+    "transition": "all",
+    "user-select": "text"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container": {
+    "color": "rgb(173, 173, 173)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
+    "border-color": "rgb(173, 173, 173)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
+    "color": "rgb(173, 173, 173)"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(173, 173, 173)",
+    "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
+    "border-color": "rgb(141, 106, 80)"
+  },
+  ".search > .search-container > .search-space > input": {
+    "background-color": "rgb(9, 9, 9)",
+    "border": "unset",
+    "border-bottom": "1px solid rgb(9, 9, 9)",
+    "border-radius": "0px",
+    "box-shadow": "none"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(173, 173, 173)"
+  },
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "border-radius": "0px",
+    "color": "rgb(173, 173, 173)"
+  },
   ".text-highlight": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(173, 173, 173)",
@@ -626,7 +687,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(0, 0, 0, 0)",
     "border-bottom-color": "rgba(138, 92, 245, 0.15)",
@@ -684,6 +745,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "#54453a" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(173, 173, 173)",
@@ -739,8 +801,8 @@
   },
   "input[type=checkbox]": {
     "appearance": "none",
-    "border": "1px solid rgb(84, 69, 58)",
-    "border-color": "rgb(84, 69, 58)",
+    "border": "1px solid rgb(141, 106, 80)",
+    "border-color": "rgb(141, 106, 80)",
     "border-radius": "0px",
     "margin": "0px 8px 0px -18.75px",
     "margin-inline-end": "8px",
