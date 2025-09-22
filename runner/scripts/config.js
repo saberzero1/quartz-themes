@@ -227,7 +227,7 @@ export const extractionTargets = {
         obsidianSelector: `div.multi-select-pill`,
         publishSelector: null,
         quartzSelector:
-          "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .preview-container.result-card > ul > li > .match-tag",
+          "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
         pseudoElement: "",
         properties: sets.pill,
       },
@@ -455,7 +455,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt .prompt-results .suggestion-item`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .preview-container, .search > .search-container > .search-space > .search-layout > .preview-container > ul > li > p",
+          ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > ul > li > p",
         pseudoElement: "",
         properties: ["color"],
       },
@@ -463,7 +463,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt div.prompt-results .suggestion-item`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .preview-container.result-card",
+          ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
         pseudoElement: "",
         properties: ["border-color"],
       },
@@ -471,7 +471,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt .prompt-results .suggestion-item.is-selected`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus",
+          ".search > .search-container > .search-space > .search-layout > .results-container .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus",
         pseudoElement: "",
         properties: ["color", "font-weight", "background-color"],
       },

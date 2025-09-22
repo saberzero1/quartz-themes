@@ -596,16 +596,16 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".search > .search-container > .search-space > .search-layout > .preview-container, .search > .search-container > .search-space > .search-layout > .preview-container > ul > li > p": {
-    "color": "rgb(76, 79, 105)"
-  },
-  ".search > .search-container > .search-space > .search-layout > .preview-container.result-card": {
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
     "border-color": "rgb(76, 79, 105)"
   },
-  ".search > .search-container > .search-space > .search-layout > .preview-container.result-card:hover, .search > .search-container > .search-space > .search-layout > .preview-container.result-card:focus, .search > .search-container > .search-space > .search-layout > .preview-container.result-card.focus": {
+  ".search > .search-container > .search-space > .search-layout > .results-container .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus": {
     "background-color": "rgb(114, 135, 253)",
     "color": "rgb(230, 233, 239)",
     "font-weight": "400"
+  },
+  ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > ul > li > p": {
+    "color": "rgb(76, 79, 105)"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
     "border-color": "rgb(188, 192, 204)"
@@ -684,7 +684,7 @@
     "transition": "opacity 0.14s ease-in-out",
     "user-select": "text"
   },
-  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .preview-container.result-card > ul > li > .match-tag": {
+  "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag": {
     "align-items": "center",
     "background-color": "rgba(0, 0, 0, 0)",
     "border-bottom-color": "rgba(139, 108, 239, 0.1)",
