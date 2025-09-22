@@ -467,10 +467,11 @@ body {
         position: relative;
 
         a {
+          display: flex;
           color: inherit;
           font-size: 1rem;
           line-height: 1.5rem;
-          padding: 6px 8px 6px 24px;
+          padding: inherit;
 
           &.active,
           &:not(.folder-title):hover {
@@ -633,6 +634,20 @@ body {
         padding-right: 1.5rem;
       }
     }
+  }
+}
+
+:root[saved-theme="light"] {
+  button.darkmode {
+    mask-image: var(--sun-icon);
+    -webkit-mask-image: var(--sun-icon);
+  }
+}
+
+:root[saved-theme="dark"] {
+  button.darkmode {
+    mask-image: var(--moon-icon);
+    -webkit-mask-image: var(--moon-icon);
   }
 }
 `;
