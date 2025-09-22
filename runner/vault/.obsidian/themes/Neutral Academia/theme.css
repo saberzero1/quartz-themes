@@ -37,19 +37,31 @@ svg * {
 
 
 
-/* .nav-file-title,
-.nav-folder-title {
-  font-family: 'cormorant semibold', serif;
-} */
+
 
 
 .callout>.callout-content p:last-child {
   margin-bottom: 0;
 }
 
+.theme-dark {
+
 .callout {
   border: 1px dotted #666c6850;
-  background-color: transparent;
+  background-color: #110b0c;
+
+}
+
+}
+
+
+.theme-light {
+
+  .callout {
+  border: 1px dotted #666c6850;
+  background-color: #f3f2f2;
+
+}
 
 }
 
@@ -84,6 +96,9 @@ div.view-header-title {
 
 .theme-dark {
 
+--checkbox-color: #7F6C5E;
+  --checkbox-border-color: #7F6C5E;
+  
    --color-base-00: #0f0a0b; 
     --color-base-05: #262020;    
     --color-base-10: #110b0c; 
@@ -133,6 +148,10 @@ div.view-header-title {
 
 .theme-light {
 
+--checkbox-color: #666C68;
+  --checkbox-border-color: #666C68;
+
+  
     --color-base-00: #f5f4f4;
     --color-base-05: #d2c9bd;    
     --color-base-10: #efeff1; 

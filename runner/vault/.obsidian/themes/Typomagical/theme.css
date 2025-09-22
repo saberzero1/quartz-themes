@@ -1872,7 +1872,6 @@ body.obsidian-high-contrast .side-dock-ribbon-action:hover {
 body.obsidian-high-contrast.theme-light {
   --background-secondary: #fff;
   --background-secondary-alt: #fff;
-  --link-color: hsl(250, 65%, 50%);
   --link-external-color: hsl(193.2, 100%, 31.2%);
   --link-external-color-hover: rgb(72, 191, 224);
 }

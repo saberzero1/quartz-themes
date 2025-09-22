@@ -1,7 +1,7 @@
 /*---------------------------
-Pomme Notes - Apple-inspired Obsidian Theme
-Version: 1.4.10
-@paralloid, 2025-06-17
+Pomme Notes - Buttery Smooth Obsidian Theme
+Version: 1.5
+@paralloid, 2025-09-06
  --------------------------*/
 
 /* @settings
@@ -25,16 +25,9 @@ settings:
         title: Use Fully Black Background on Desktop
         type: class-toggle
         default: false
-    -
-        id: old-navbar
-        title: Switch to the pre-1.9 Mobile navigation bar
-        type: class-toggle
-        default: false
 */
 
 body {
-    --font-family-system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-size-base: 16px;
     --line-height-base: 1.5;
     --accent-color: var(--color-accent);
     --text-accent-hover: var(--color-accent-2);
@@ -63,7 +56,6 @@ body {
     --header-height: 45px;
 }
 
-
 /* DARK MODE */
 .theme-dark {
     --background-primary: #1C1C1E;
@@ -79,21 +71,12 @@ body {
     --text-extreme: #FFF;
 }
 
-body.is-phone.theme-dark.phone-full-black {
-        --background-primary: #000000 !important;
-        --background-secondary: #000000 !important;
+body.theme-dark.phone-full-black.is-phone,
+body.theme-dark.tablet-full-black.is-tablet,
+body.theme-dark.desktop-full-black:not(.is-mobile) {
+    --background-primary: #000 !important;
+    --background-secondary: #000 !important;
 }
-
-body.is-tablet.theme-dark.tablet-full-black {
-        --background-primary: #000000 !important;
-        --background-secondary: #000000 !important;
-}
-
-body:not(.is-mobile).theme-dark.desktop-full-black {
-        --background-primary: #000000 !important;
-        --background-secondary: #000000 !important;
-}
-
 
 /* 🌙 Dark Mode - Make bold text white */
 .theme-dark strong, 
@@ -146,7 +129,11 @@ body:not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-h
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-inner-icon { order: 1; }
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-status-container { order: -1; }
 
-.workspace-split.mod-vertical.mod-root .workspace-tab-header-inner-title { margin-left: 20px; padding-left: 3px;}
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-inner-title {
+    margin-left: 20px;
+    padding-left: 3px;
+}
+
 .workspace-split.mod-vertical.mod-root .workspace-tab-header-inner { 
     transition: background-color 0.2s linear;
     }
@@ -158,7 +145,6 @@ body:not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-h
 body:not(.is-mobile) .workspace-tab-header-inner-close-button {
     display: none;
 }
-
 
 .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
@@ -189,13 +175,14 @@ body:not(.is-mobile) .workspace-tab-header-inner-close-button {
 }
 
 .mod-root .workspace-tab-header {
-    max-width: 100% !important;
+    max-width: 100%;
     border-radius: 6px;
     padding: 0 !important;
-    box-shadow: none !important;
+    box-shadow: none;
     transition: background-color 200ms ease-in-out;
     background: var(--tab-background);
-    transition: flex-grow 0.2s ease-in-out !important;
+    transition: flex-grow 0.15s linear !important;
+    transition-delay: 0.01s;
 }
 
 .mod-root .workspace-tab-header-inner,
@@ -205,7 +192,7 @@ body:not(.is-mobile) .workspace-tab-header-inner-close-button {
 
 .mod-root .workspace-tab-header.is-active.mod-active {
   background-color: var(--tab-background-active);
-  flex-grow: 2 !important;
+  flex-grow: 2;
 }
 
 .workspace-tab-header-container {
@@ -225,6 +212,7 @@ body.is-tablet .sidebar-toggle-button.mod-right {
 
 body.is-tablet .workspace-tab-header-inner:hover,
 body.is-tablet .workspace-tab-header-inner,
+body.is-tablet .mod-root .workspace-tab-header:hover,
 body.is-tablet .mod-root .workspace-tab-header {
   border-radius: 10px;
 }
@@ -264,16 +252,20 @@ body {
     --nav-item-background-hover: transparent;
 }
 
+.nav-files-container:has(.iconic-icon) {
+    margin-left: 15px;
+}
+
 .nav-folder-children {
     animation: fade-in 0.4s ease-out;
     border-left: none;
 }
 
 .nav-folder-title, .nav-file-title {
-    font-size: 0.9em;
+    font-size: 0.93em;
 }
 
-.nav-files-container .tree-item-self .tree-item-icon {
+.nav-files-container .tree-item-self .tree-item-icon:not(.iconic-icon) {
     position: absolute;
     right: 0;
     display: flex;
@@ -472,12 +464,11 @@ body:not(.is-mobile) .view-content .image-embed:active img {
     border: none;
     box-shadow: none;
 }
-
+/*
 .workspace-leaf,
-.modal-container,
 .suggestion-container {
-    animation: fade-in 0.2s ease-out;
-}
+    animation: fade-in 0.5s ease-out forwards;
+}*/
 
 body:not(.is-mobile) .modal-container {
     background-color: transparent;
@@ -533,6 +524,16 @@ body.is-tablet .menu {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
+body:not(.is-mobile) .prompt {
+    animation: fade-in 0.2s ease;
+}
+
+body:not(.is-mobile) .prompt-input-container {
+    opacity: 0;
+    animation: fade-in 0.3s ease forwards !important;
+    animation-delay: 0.1s !important;
+}
+
 body.is-phone .prompt {
     animation: slide-in 0.5s ease;
     transform-origin: bottom;
@@ -543,7 +544,7 @@ body.is-phone .prompt {
 }
 
 body.is-tablet .prompt {
-    animation: slide-in 0.5s ease;
+    animation: slide-in 0.3s ease;
     transform-origin: bottom;
     max-width: 70vw;
     max-height: 65vw;
@@ -553,7 +554,7 @@ body.is-tablet .prompt {
 
 body.is-mobile .prompt-input-container {
     opacity: 0;
-    animation: fade-in 0.5s ease forwards !important;
+    animation: fade-in 0.3s ease forwards !important;
     animation-delay: 0.3s !important;
 }
 
@@ -673,7 +674,7 @@ h6, .markdown-preview-view h6,
 .markdown-preview-view h5:hover,
 .markdown-preview-view h6:hover {
     color: var(--accent-color);
-    transition: color 0.2s ease;
+    transition: color 0.3s linear;
 }
 
 .collapse-indicator {
@@ -800,14 +801,12 @@ div.dataview-error-box {
 
 .dataview.task-list-item:hover,
 .dataview.task-list-basic-item:hover {
-    background-color: var(--background-primary) !important;
-    box-shadow: -40px 0 0 var(--background-primary) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-extreme);
+    transition: color 0.2s linear !important;
+    cursor: default;
 }
-.dataview.task-list-item:hover,
-.dataview.task-list-basic-item:hover {
-    background-color: var(--background-secondary);
-    box-shadow: -40px 0 0 var(--background-secondary);
-    }
 
 .table-view-th {
     font-size: 1em !important;
@@ -1032,37 +1031,6 @@ body.is-phone .mobile-navbar::before {
    content: "";
 }
 
-body.is-mobile .workspace-leaf-content .nav-header {
-    order: -1;
-}
-
-body.is-mobile .workspace-drawer.mod-left .workspace-drawer-header {
-    order: 2;
-    padding-bottom: 10px;
-}
-
-body.old-navbar .mobile-navbar-action-forward {
-    display: flex;
-}
-
-body.old-navbar .mobile-navbar-action-new {
-    display: none;
-}
-
-.mobile-navbar-action-new .clickable-icon svg {
-  color: var(--accent-color) !important;
-  background-color: currentColor;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'/%3E%3Cpath d='M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z'/%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'/%3E%3Cpath d='M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z'/%3E%3C/svg%3E");
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-  mask-size: 110% 110%;
-  -webkit-mask-size: 110% 110%;
-  display: inline-block;
-}
-
 .mobile-navbar-action.has-longpress-menu .navbar-action-flair {
     display: none;
 }
@@ -1114,6 +1082,10 @@ body.old-navbar .mobile-navbar-action-new {
     opacity: 0; 
     animation: fade-in 0.3s ease forwards;
     animation-delay: 0.2s;
+}
+
+.dataview {
+    animation: fade-in 0.3s ease;
 }
 
 @media print {
@@ -1426,6 +1398,44 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 
 /* PLUGINS */
 
+/* ICONIC ADJUSTMENTS */
+
+body:not(.is-mobile) .iconic-icon {
+  transform: scale(1.1);
+}
+
+body.is-mobile .iconic-icon {
+  transform: scale(1.2);
+}
+
+.iconic-item > .tree-item-self > .tree-item-inner {
+  margin-inline-start: 5px !important;
+}
+
+.iconic-icon svg {
+    stroke-width: 1.3 !important;
+}
+
+.iconic-icon {
+    animation: fade-in 0.1s;
+}
+
+.workspace-drawer-vault-actions .iconic-icon,
+.sidebar-toggle-button .iconic-icon,
+.workspace-tab-header-inner-icon,
+.workspace-drawer-header .iconic-icon,
+.side-dock-actions .iconic-icon,
+.mobile-navbar .iconic-icon,
+.mobile-navbar-action .iconic-icon {
+    transform: none !important;
+}
+
+.iconic-prompt > .prompt-input-container > .prompt-input {
+    padding-inline-start: 18px;
+}
+
+/* ICONIZE ADJUSTMENTS */
+
 .iconize-icon svg {
     color: var(--color-accent);
     margin: 0px 6px 0px 0px !important;
@@ -1447,6 +1457,8 @@ body.is-phone .iconize-icon svg {
   height: calc(1em + 8px) !important;
 }
 
+/* DAILY NOTE CALENDAR */
+
 .dnc table {
     table-layout: fixed;
     border-radius: 6px;
@@ -1463,13 +1475,13 @@ body.is-phone .iconize-icon svg {
 
 .dnc .header h1 {
 font-weight: 700;
-font-size: 1.4em;
+font-size: 1.3em;
 color: var(--accent-color);
 margin-left: 9px;
 margin-right: -7px;
 margin-bottom: 0px !important;
 padding-top: 0px !important;
-padding-bottom: 0px !important;
+padding-bottom: 5px !important;
 padding-right: 3px;
 }
 
@@ -1478,7 +1490,8 @@ padding-right: 3px;
 }
 
 .dnc #today {
-    border-radius: 2px;
+    border-radius: 4px;
+    border: 1px solid;
     font-weight: 600;
 }
 .dnc .has-note:after {
@@ -1511,6 +1524,7 @@ padding-bottom: 4px;
 
 .dnc .selected-day {
     background-color: rgba(180, 180, 180, 0.25);
+    border-radius: 4px;
 }
 
 .calendar.svelte-pcimu8,
@@ -1534,6 +1548,8 @@ body.zenmode-active:not(.is-mobile) .inline-title {
 body.is-phone .ddc_ink_resize-container {
     max-width: 330px !important;
 }
+
+/* ZENMODE */
 
 .zenmode-button {
     bottom: 20px;

@@ -600,7 +600,6 @@ body.theme-light {
   --color-accent: var(--s-green-primary-color);
   --text-normal: var(--platinum);
   --text-faint: var(--platinum-faint);
-  --text-highlight-bg: #5b5721;
   --interactive-accent: var(--s-green-primary-color);
   --text-accent: var(--s-green-secondary-color);
   --text-accent-hover: var(--s-green-primary-color);
@@ -618,7 +617,17 @@ body.theme-light {
 }
 
 .theme-light {
+  --s-green-primary-color: rgb(218, 1, 77);
+  --background-primary: var(--s-bg-transparent);
+  --s-bg-primary-color: rgb(246, 246, 246) !important;
+  --color-accent: var(--s-green-primary-color);
+  --interactive-accent: var(--s-green-primary-color);
+  --text-on-accent: var(--s-bg-primary-color);
+  --interactive-accent-hover: var(--yellow-faint);
+  --caret-color: #ff0000;
   --text-normal: #222222 !important;
+  --text-muted: var(--text-normal);
+  --background-modifier-border: var(--s-bg-transparent);
   --platinum: #777373;
   --glass-background-color-settings: rgb(246, 246, 246) !important;
   --level-1: rgb(218, 1, 77);
@@ -4066,6 +4075,10 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
   color: var(--s-bg-primary-color);
 }
 
+.theme-light div[aria-label="Create new cluster"] svg {
+  fill: var(--text-muted) !important;
+}
+
 .kanban-plugin .kanban-plugin__lane-wrapper {
   --k-primary: 155, 180, 196;
   --k-primary-background: rgba(var(--k-primary), 1);
@@ -4197,6 +4210,15 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
 
 #sr-modal {
   transform: translate(-50%, -50%) !important;
+}
+
+.suggestion-container:has(.callout.calloutmanager-preview) {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
+  border: var(--menu-border-width) solid var(--menu-border-color);
+  width: 40vw;
+}
+.suggestion-container .suggestion-item .callout.calloutmanager-preview {
+  height: 75px;
 }
 
 .workspace-leaf-resize-handle {
@@ -4477,6 +4499,10 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 .is-mobile .workspace-drawer-active-tab-header {
   background-color: var(--s-hover-bg-color-green);
 }
+.is-mobile.theme-light .workspace-drawer.mod-left,
+.is-mobile.theme-light .workspace-drawer.mod-right {
+  backdrop-filter: blur(20px);
+}
 .is-mobile .mobile-tab-switcher {
   backdrop-filter: blur(5px);
 }
@@ -4576,6 +4602,20 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .modal.mod-settings.mod-sidebar-layout .modal-content.vertical-tabs-container .vertical-tab-header-group .vertical-tab-header-group-items > div:nth-child(12) {
   color: var(--level-1);
+}
+.is-mobile.theme-light .modal.mod-settings.mod-sidebar-layout {
+  background: transparent;
+}
+.is-mobile.theme-light .modal.mod-settings.mod-sidebar-layout .modal-header {
+  border-bottom: var(--border-width) solid var(--s-hover-bg-color-green);
+}
+.is-mobile.theme-light .modal.mod-settings.mod-sidebar-layout .modal-content.vertical-tabs-container .vertical-tab-header-group {
+  margin: 20px 10px;
+  border: 1px solid var(--text-normal);
+  border-radius: 10px;
+}
+.is-mobile.theme-light .modal.mod-settings.mod-sidebar-layout .modal-content.vertical-tabs-container .vertical-tab-header-group .vertical-tab-header-group-items .vertical-tab-nav-item {
+  color: var(--text-normal);
 }
 .is-mobile .community-item {
   grid-auto-flow: unset !important;

@@ -179,8 +179,8 @@
 
   --scrollbar-bg: var(--bg_dark2);
   --scrollbar-thumb-bg: var(--comment);
-  --scrollbar-active-thumb-bg: var(--bg_dark);
-  --scrollbar-width: 0px;
+  --scrollbar-active-thumb-bg: var(--comment);
+  --scrollbar-width: 7px;
 
   --h1-color: var(--red);
   --h2-color: var(--yellow);
@@ -357,10 +357,22 @@ body.h6-divider-on :is(.markdown-preview-sizer>div>h6, .markdown-rendered>h6, .H
 /* scrollbars */
 ::-webkit-scrollbar {
   width: var(--scrollbar-width);
+  background-color: transparent !important;
 }
 
+:hover::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg) !important;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-active-thumb-bg) !important;
+}
+
+
 ::-webkit-scrollbar:horizontal {
-  height: var(--scrollbar-width);
+  height: 0;
+  background-color: transparent !important;
 }
 
 /* tooltip */
@@ -2075,4 +2087,43 @@ settings:
     type: variable-text 
     default: ''
   -
+    id: scrollbar-heading 
+    title: Scrollbar 
+    type: heading
+    level: 2
+    collapsed: true
+  - 
+    id: scrollbar-bg 
+    title: Scrollbar Background
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: scrollbar-thumb-bg 
+    title: Scrollbar Thumb Background
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: scrollbar-active-thumb-bg
+    title: Scrollbar Active Thumb Background
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: scrollbar-width
+    title: Scrollbar Width
+    type: variable-number-slider
+    default: 7
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - 
 */

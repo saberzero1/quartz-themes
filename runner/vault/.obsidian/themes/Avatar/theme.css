@@ -1,4 +1,5 @@
 
+
 /*
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                           AVATAR THEME - DEEP OCEAN                          ║
@@ -587,14 +588,15 @@ blockquote {
 .callout[data-callout="tip"],
 .callout[data-callout="hint"],
 .callout[data-callout="important"] {
-  border-color: var(--avatar-aqua) !important;
-  background-color: rgba(125, 211, 192, 0.08) !important;
+  border-color: #e13ff3 !important;
+  background-color: #0b70c87a   !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="tip"] .callout-title,
 .callout[data-callout="hint"] .callout-title,
 .callout[data-callout="important"] .callout-title {
-  color: var(--avatar-aqua) !important;
+  color: #e45af4 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -608,21 +610,22 @@ blockquote {
 .callout[data-callout="success"],
 .callout[data-callout="check"],
 .callout[data-callout="done"] {
-  border-color: var(--avatar-aqua) !important;
+  border-color: #08faa9  !important;
   background-color: rgba(125, 211, 192, 0.08) !important;
+   border-left-width: 4px !important;
 }
 
 .callout[data-callout="success"] .callout-title,
 .callout[data-callout="check"] .callout-title,
 .callout[data-callout="done"] .callout-title {
-  color: var(--avatar-aqua) !important;
+  color: #06dd96 !important;
   /* NO background-color = no inner highlight */
 }
 
 .callout[data-callout="success"] .callout-icon,
 .callout[data-callout="check"] .callout-icon,
 .callout[data-callout="done"] .callout-icon {
-  color: var(--avatar-aqua) !important;
+  color: #93eed6 !important;
 }
 
 /* Question, Help, FAQ */
@@ -630,7 +633,8 @@ blockquote {
 .callout[data-callout="help"],
 .callout[data-callout="faq"] {
   border-color: var(--avatar-gold) !important;
-  background-color: rgba(251, 191, 36, 0.08) !important;
+  background-color: rgba(133, 36, 251, 0.08) !important;
+   border-left-width: 4px !important;
 }
 
 .callout[data-callout="question"] .callout-title,
@@ -650,14 +654,15 @@ blockquote {
 .callout[data-callout="failure"],
 .callout[data-callout="fail"],
 .callout[data-callout="missing"] {
-  border-color: var(--avatar-pink) !important;
-  background-color: rgba(239, 68, 192, 0.08) !important;
+  border-color: #d62f23 !important;
+  background-color: #e0eb498b !important;
+   border-left-width: 4px !important;
 }
 
 .callout[data-callout="failure"] .callout-title,
 .callout[data-callout="fail"] .callout-title,
 .callout[data-callout="missing"] .callout-title {
-  color: var(--avatar-pink) !important;
+  color: #d62f23 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -670,11 +675,13 @@ blockquote {
 /* Example */
 .callout[data-callout="example"] {
   border-color: var(--avatar-purple) !important;
-  background-color: rgba(99, 102, 241, 0.08) !important;
+  background-color: rgba(99, 102, 241, 0.08) !important;  
+  border-left-width: 4px !important;
+
 }
 
 .callout[data-callout="example"] .callout-title {
-  color: var(--avatar-purple) !important;
+  color: #9698e7 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -700,13 +707,14 @@ blockquote {
 /* Info, Todo - NEEDS WORK */
 .callout[data-callout="info"],
 .callout[data-callout="todo"] {
-  border-color: var(--avatar-aqua) !important;
-  background-color: rgba(125, 211, 192, 0.08) !important;
+  border-color: #F8BF28 !important;
+  background-color: #4438ca8b !important;
+   border-left-width: 4px !important;
 }
 
 .callout[data-callout="info"] .callout-title,
 .callout[data-callout="todo"] .callout-title {
-  color: var(--avatar-aqua) !important;
+  color: #F8BF28 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -720,6 +728,7 @@ blockquote {
 .callout[data-callout="caution"] {
   border-color: var(--avatar-gold) !important;
   background-color: rgba(251, 191, 36, 0.08) !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="warning"] .callout-title,
@@ -737,18 +746,19 @@ blockquote {
 .callout[data-callout="error"],
 .callout[data-callout="danger"],
 .callout[data-callout="bug"] {
-  border-color: var(--avatar-pink) !important;
-  background-color: rgba(239, 68, 192, 0.08) !important;
+  border-color: #ed315d9c !important;
+  background-color: #eb3d6684 !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="error"] .callout-title,
 .callout[data-callout="danger"] .callout-title,
-.callout[data-callout="bug"] .callout-title {
-  color: var(--avatar-pink) !important;
+.callout[data-callout="bug"] .callout-title { 
+  color: #f6f5f8fd!important;
   /* NO background-color = no inner highlight */
 }
 
-.callout[data-callout="error"] .callout-icon,
+.callout[data-callout="error"] .callout-icon, 
 .callout[data-callout="danger"] .callout-icon,
 .callout[data-callout="bug"] .callout-icon {
   color: var(--avatar-pink) !important;
@@ -758,14 +768,18 @@ blockquote {
 .callout[data-callout="note"],
 .callout[data-callout="abstract"],
 .callout[data-callout="summary"] {
+
   border-color: var(--avatar-purple) !important;
   background-color: rgba(99, 102, 241, 0.08) !important;
+  border-left-width: 4px !important;
+
+
 }
 
 .callout[data-callout="note"] .callout-title,
 .callout[data-callout="abstract"] .callout-title,
 .callout[data-callout="summary"] .callout-title {
-  color: var(--avatar-purple) !important;
+  color: #05cbd1 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -1372,3 +1386,4 @@ body.is-unfocused .theme-dark .workspace-tabs {
 ║  This theme is completely standalone and doesn't require any dependencies   ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 */
+

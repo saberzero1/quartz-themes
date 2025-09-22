@@ -90,6 +90,14 @@ body {
 
 .theme-dark {
 
+  --table-border-color: transparent;
+
+--checkbox-color: #71799d !important;
+--checkbox-color-hover: #71799d92;
+--checkbox-border-color: #d295d1;
+--checkbox-border-color-hover: #d295d180;
+--checkbox-radius: 10px;
+
   --text-highlight-bg: transparent;
   --text-accent: #95bae8;
 
@@ -141,6 +149,16 @@ body {
 }
 
 .theme-light {
+
+  --table-border-color: transparent;
+
+--checkbox-color: #71799d !important;
+--checkbox-color-hover: #71799d92;
+--checkbox-border-color: #d295d1;
+--checkbox-border-color-hover: #d295d180;
+--checkbox-radius: 10px;
+
+
   --text-highlight-bg: transparent;
 
   --text-accent: #95bae8;

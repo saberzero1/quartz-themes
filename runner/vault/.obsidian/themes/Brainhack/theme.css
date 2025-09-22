@@ -42,7 +42,7 @@ settings:
         type: variable-number-slider
         format:
         default: 1.5
-        min: 1
+        min: 1.5
         max: 2.5
         step: .1
     -
@@ -82,12 +82,19 @@ settings:
         max: 50
         step: 1
         format: px
+    -
+        id: status-bar-hover
+        title: Hide Status Bar
+        description: Only show the status bar when hovering over it
+        type: class-toggle
 */
 
 /*////////////////////////////////////////////////////////////////// COLORS ///////////////////////////////////////////////////////////////////////////////*/
 body {
 	--file-line-width:1000px;
     --canvas-dot-pattern: var(--background-3-1);
+    --colored-accent-4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    --radius-m: .6em;
 }
 
 .theme-light, .theme-dark {
@@ -95,13 +102,14 @@ body {
     --colored-accent-i2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 20%)*-100));
     --colored-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     --colored-accent-2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --colored-accent-3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+    --colored-accent-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
     --shadow-1: hsla(var(--accent-h), var(--accent-s), 5%, .5);
     --custom-accent-bold: var(--colored-accent-1);
     
     --background-secondary: var(--background-2);
     --canvas-background: var(--background-2);
     --code-background: var(--background-3);
-    --bold-color: var(--colored-accent-1);
 
 }
 
@@ -129,10 +137,9 @@ body {
     --highlight-2: rgba(214, 214, 214, 0.308);
 
     --shadow-2: rgba(0, 0, 0, 0.257);
-    --shadow-3: rgba(0, 0, 0, 0.227);
+    --shadow-3: rgba(0, 0, 0, 0.089);
     --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .2);
 
-    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .9), calc(var(--accent-l) * 1.2), 1);
 
     --divider-color: rgba(200, 200, 200, 0.441);
 
@@ -168,10 +175,8 @@ body {
     --highlight-2: rgba(255, 255, 255, 0.075);
 
     --shadow-2: hsla(var(--accent-h), calc(var(--accent-s) * 0), calc(var(--accent-l) * .1), .4);
-    --shadow-3: rgba(0, 0, 0, 0.47);
+    --shadow-3: rgba(0, 0, 0, 0.26);
     --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .5);
-
-    --colored-accent-3: hsla(var(--accent-h), calc(var(--accent-s) * .4), calc(var(--accent-l) * .6), 1);
 
     --divider-color: rgba(105, 105, 105, 0.441);
 
@@ -250,10 +255,14 @@ body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon) 
 }
 
 /*================ ADJUST WORKSPACE BACKGROUND ========================*/
-.titlebar-button-container.mod-right,
-.workspace-split {
+.titlebar-button-container.mod-right:not(.is-mobile),
+.workspace-split:not(.is-mobile) {
     background: transparent !important;
 }
+
+/*===== mobile fix */ body.is-mobile .titlebar-button-container.mod-right, body.is-mobile .workspace-split {background: var(--background-4) !important;}
+
+
 .view-header,
 .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
 .empty-state,
@@ -336,6 +345,7 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-s
 .workspace-split.mod-vertical .workspace-tab-header-container-inner { 
     margin-top: 5px !important;
     padding-top: 1.5px !important;
+    gap: 2px;
 }
 .workspace .mod-root .workspace-tab-header {
     box-shadow: none;
@@ -351,13 +361,14 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-s
 }
 /*Tabs text color */
 .mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title {
-    color: var(--colored-accent-i2) !important;
+    color: var(--text-color-inverted) !important;
 }
 .mod-vertical .workspace-tab-header.tappable .workspace-tab-header-inner-title {
-    color: var(--text-color-inverted) !important;
+    color: var(--tc) !important;
 }
 /*Tab headers*/
 .mod-vertical .workspace-tabs:not(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
+    border-radius: 7px;
     position: relative;
     background-color: var(--background-6);
     transition: all .5s !important;
@@ -381,16 +392,20 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-s
 
 .mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
     position: relative;
-    color: var(--colored-accent-i1) !important;
-    background-color: var(--colored-accent-2) !important;
+    background-color: var(--colored-accent-3) !important;
+    border: .05em dashed var(--colored-accent-1);
+    font-weight: 600;
     transition: all .5s !important;
+    transform: scale(1);
         &:hover {
         background-color: var(--colored-accent-2) !important;
         color: var(--colored-accent-i2) !important;
     }
 }
+
 .workspace-tab-header-inner-close-button {
     color: var(--colored-accent-i1) !important;
+    border-radius: 5px;
     transition: all .2s !important;
             &:hover {
         background-color: rgba(255, 255, 255, 0.7) !important;
@@ -574,18 +589,12 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 
 
-
-
-
-
-
-
 /*================================= EDITOR =================================*/
 .callout {
     color: inherit;
     margin-bottom: .5em !important;
     margin-top: .5em !important;
-    border-radius: 10px;
+    border-radius: var(--radius-m);
     --callout-padding: 0;
     --callout-title-color: inherit;
     --callout-title-padding: 4px 10px;
@@ -593,7 +602,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     --callout-content-radius: 0px;
     --callout-blend-mode: normal !important;
     background: var(--background-3);
-    box-shadow: inset 0 0 0 1px var(--background-3-1) !important;
+    box-shadow: inset 0 0 0 1px var(--background-3-1), 0 0 .5em var(--shadow-3) !important;
     overflow: hidden !important;
 }
 .callout-content {
@@ -613,38 +622,64 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     overflow: hidden !important;
 }
 .callout-title {
-    position: relative;
     color: var(--colored-accent-text-color-inverted);
-    font-size: 1.2em;
-    border-bottom: dotted 2px var(--background-3-1);
-    background: var(--background-3-2);
+    font-size: 1.5em;
+    border-bottom: dashed .1em var(--background-3-1);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
+
+.callout-title-inner {
+    font-weight: 700;
+}
+
+
 .markdown-rendered blockquote,
 .blockquote,
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
     border-radius: var(--radius-m);
     background-color: var(--background-3);
     border-left: none;
+    padding-left: .5em;
     padding-top: .5em;
-    padding-bottom: .5em;
+    padding-bottom: .5em !important;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 .markdown-rendered blockquote:before,
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
-.el-blockquote, blockquote {
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
     z-index: -1;
     width: 100%;
     border-radius: var(--radius-m);
-    box-shadow: 0 0 0 .07em var(--background-3-1);
+    box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .5em var(--shadow-3);
 }
-.callout-content blockquote {
-    margin-bottom: .5em;
-    margin-top: .5em !important;
-    padding-left: .5em;
+
+
+.el-blockquote, blockquote {
+    width: 100%;
+    border-radius: var(--radius-m);
+    box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .5em var(--shadow-3);
 }
+
 .callout-content ol {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+    margin-top: 0em;
+    margin-bottom: .5em;
 }
+
+
+blockquote > ol>:last-child {
+    padding-bottom: 0em !important;
+    margin-bottom: 0em !important;
+}
+blockquote > ol>:first-child {
+    padding-top: 0em !important;
+    margin-top: 0em !important;
+}
+
+
 .callout-icon {
     display: none;
 }
@@ -671,11 +706,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 
 
-.callout[data-callout="!"] > .callout-title {
-	color: var(--colored-accent-i1);
-	border-bottom: none;
-	border-radius: var(--radius-m);
-	Background: var(--colored-accent-2);
+.callout[data-callout="!"] {
+    box-shadow: 0 0 0em .1em var(--colored-accent-1) !important;
 }
 
 
@@ -719,8 +751,13 @@ ul.has-list-bullet * blockquote {
     margin-top: 2em !important;
 }
 
+p:not(:first-child) {
+    margin-top: .5em !important;
+    margin-bottom: .5em !important;
+}
+
 p + p {
-    margin-top: 2em !important;
+    margin-top: 1em !important;
 }
 
 p + ul {
@@ -733,11 +770,28 @@ p:has(+ ul.has-list-bullet) {
 }
 
 
+
+
+li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+li > blockquote {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+
+li > .callout {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+
 .heading-collapse-indicator.collapse-indicator.collapse-icon:before {
     margin-left: -5px;
 }
 .HyperMD-header.HyperMD-header.cm-line {
-    padding-bottom: 20px;
+    padding-bottom: .5em;
 }
 
 
@@ -747,7 +801,7 @@ p:has(+ ul.has-list-bullet) {
     display: inline-block;
     color: var(--colored-accent-i1);
     background: var(--colored-accent-2);
-    padding: 2px 8px 2px 8px;
+    padding: .1rem .3rem .1rem .3rem;
         -moz-border-bottom-left-radius: var(--h1-radius);
         -webkit-border-bottom-left-radius: var(--h1-radius);
         border-bottom-left-radius: var(--h1-radius);
@@ -763,8 +817,8 @@ p:has(+ ul.has-list-bullet) {
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
-
     --h1-radius: .3em;
+    box-shadow: 0px 0px 5em var(--colored-accent-4), 0 0 0em .05em var(--colored-accent-1);
 }
 /* heading mark link color correction */
 h1 > a, 
@@ -774,6 +828,63 @@ h4 > a,
 h5 > a, 
 h6 > a {
     color: var(--text-color-inverted) !important;
+}
+
+.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+.markdown-rendered h2 {
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .1rem .3rem;
+    margin-bottom: 0px;
+    border: 2px dashed;
+    font-weight: 600;
+    border-color: var(--colored-accent-3);
+    background-color: var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-4);
+    --mark-radius: .4em;
+}
+
+.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+.markdown-rendered h3 {
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .1rem .3rem;
+    margin-bottom: 0px;
+    border: 2px dashed;
+    border-color: var(--colored-accent-4);
+    background-color: var(--colored-accent-5);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-4);
+    --mark-radius: .4em;
 }
 
 /*DYNAMIC HEADING SPACING ADJUST*/
@@ -816,39 +927,95 @@ div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 +
 
 
 /*==================== HIGHLIGHTING ====================*/
-/*
-.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+span.cm-highlight,
 .markdown-rendered mark {
-    padding-left:   2px;
-    padding-right:  2px;
-    padding-top:    1px;
-    padding-bottom: 1px;
-    pointer-events: none;
-    background-color: rgba(128, 128, 128, 0.44);
-        -moz-border-bottom-left-radius: 5px;
-        -webkit-border-bottom-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        -moz-border-bottom-right-radius: 5px;
-        -webkit-border-bottom-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        -moz-border-top-right-radius: 5px;
-        -webkit-border-top-right-radius: 5px;
-        border-top-right-radius: 5px;
-        -moz-border-top-left-radius: 5px;
-        -webkit-border-top-left-radius: 5px;
-        border-top-left-radius: 5px;
+    background: transparent;
+}
+
+
+span.cm-highlight:not(.cm-strong),
+.markdown-rendered mark:not(:has(strong), strong mark) {
+    font-size: .9em;
+    padding: 0rem .2rem 0rem .2rem;
+    margin: .1rem .1rem .1rem .1rem;
+    border: .1rem dashed;
+    font-weight: 600;
+    border-color: var(--colored-accent-2);
+    background-color: var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-3);
+    --mark-radius: .4em;
+    font-weight: 600;
 }
-*/
 
-.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
-.markdown-rendered mark {
-	background-color: transparent;
-	border-bottom: 2px solid var(--tc);
-	padding-bottom: 1px;
-	color: unset;
+
+span.cm-strong:not(.cm-highlight),
+strong:not(:has(mark), mark strong)  {
+    padding: 0rem .2rem 0rem .2rem;
+    font-size: .9em;
+    margin: .1rem .1rem .1rem .1rem;
+    background: var(--colored-accent-4) !important;
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 0em .08rem var(--colored-accent-2), 0px 0px 3em var(--colored-accent-3);
+    --mark-radius: .4em;
+    color: var(--colored-accent-1);
+    font-weight: 900;
+}
+
+
+strong:has(mark)>*, mark:has(strong)>*, span.cm-strong.cm-highlight {
+    font-size: 1.3rem !important;
+    font-variant: small-caps;
+    background: var(--colored-accent-4) !important;
+    padding-left: .2em !important;
+    padding-right: .2em !important;
+    border-radius: .3em;
+    font-weight: 700 !important;
+    box-shadow: 0px 0px .1em var(--colored-accent-1), 0px 0px 1em var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --mark-radius: .4em;
 }
 
 
@@ -956,12 +1123,23 @@ tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radi
 
 .markdown-preview-view hr,
 .markdown-source-view hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px dashed grey !important;
+    border: .1em dashed rgba(128, 128, 128, 0.432) !important;
+    box-shadow: 0px 0px 5em var(--colored-accent-4);
 }
 
 
 .cm-s-obsidian .cm-line.HyperMD-header + .HyperMD-quote.HyperMD-quote-1.cm-line {
     padding-top: .5em !important;
+}
+
+
+
+
+/*status bar hider*/
+body.status-bar-hover .status-bar{
+    opacity: 0;
+    transition: all .5s;
+    &:hover {        
+        opacity: 1;
+    }
 }
