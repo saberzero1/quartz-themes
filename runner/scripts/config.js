@@ -462,7 +462,7 @@ export const extractionTargets = {
         obsidianSelector: `div.prompt .prompt-results .suggestion-item`,
         publishSelector: null,
         quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > ul > li > p",
+          ".search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus .card-description",
         pseudoElement: "",
         properties: ["color"],
       },
