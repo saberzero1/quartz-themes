@@ -201,7 +201,7 @@ export const extractionTargets = {
         properties: ["background-color", "border-radius", "color"],
       },
       {
-        obsidianSelector: `.suggestion-item.is-selected`,
+        obsidianSelector: `div.suggestion-item`,
         publishSelector: null,
         quartzSelector:
           ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:hover), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:focus), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus)",
