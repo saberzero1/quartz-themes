@@ -742,6 +742,7 @@
     "transition": "all",
     "user-select": "text"
   },
+  "div#quartz-body": { "--quartz-icon-color": "rgb(108, 111, 133)" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(76, 79, 105)",
