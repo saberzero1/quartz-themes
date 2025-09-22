@@ -1194,23 +1194,8 @@ body {
     > .search-container
     > .search-space
     > .search-layout
-    > .preview-container,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .preview-container
-    > ul
-    > li
-    > p {
-    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
-  }
-
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .preview-container.result-card {
+    > .results-container
+    .result-card {
     border-color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
   }
 
@@ -1218,20 +1203,39 @@ body {
     > .search-container
     > .search-space
     > .search-layout
-    > .preview-container.result-card:hover,
+    > .results-container
+    .result-card:hover,
   .search
     > .search-container
     > .search-space
     > .search-layout
-    > .preview-container.result-card:focus,
+    > .results-container
+    .result-card:focus,
   .search
     > .search-container
     > .search-space
     > .search-layout
-    > .preview-container.result-card.focus {
+    > .results-container
+    .result-card.focus {
     background-color: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
     color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
     font-weight: 400;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > ul
+    > li
+    > p {
+    color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
   }
 
   .search > .search-container > .search-space > .search-layout,
@@ -1419,7 +1423,8 @@ body {
     > .search-container
     > .search-space
     > .search-layout
-    > .preview-container.result-card
+    > .results-container
+    .result-card
     > ul
     > li
     > .match-tag {
