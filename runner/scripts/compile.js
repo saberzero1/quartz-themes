@@ -364,7 +364,7 @@ body {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
           font-size: 1.1rem;
-          &has(~ not(.display-results)) {
+          &:has(+ :not(.display-results)) {
             border-radius: inherit;
           }
         }
