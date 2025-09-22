@@ -6,60 +6,24 @@
 }
 
 :root:root {
-  --lightgray: #d4d4d4 !important;
-  --gray: color-mix(
-    in srgb,
-    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
-    transparent 30%
-  ) !important;
-  --light: color-mix(
-    in srgb,
-    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
-    transparent 30%
-  ) !important;
-  --highlight: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --secondary: hsl(258, 88%, 66%) !important;
-  --tertiary: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --darkgray: color-mix(
-    in srgb,
-    hsl(215, 67%, 45%),
-    black calc(100% * 0.7)
-  ) !important;
-  --dark: color-mix(
-    in srgb,
-    hsl(215, 67%, 45%),
-    black calc(100% * 0.9)
-  ) !important;
+  --light: #d4d4d4 !important;
+  --gray: #040a13b3 !important;
+  --darkgray: #040a13b3 !important;
+  --highlight: hsl(from NaN, NaN, NaN 57 s l) !important;
+  --secondary: #8a5cf5 !important;
+  --tertiary: hsl(from NaN, NaN, NaN 124 s l) !important;
+  --lightgray: #0b1f39 !important;
+  --dark: #040a13 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: #3f3f3f !important;
-  --gray: color-mix(
-    in srgb,
-    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
-    transparent 30%
-  ) !important;
-  --light: color-mix(
-    in srgb,
-    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
-    transparent 30%
-  ) !important;
-  --highlight: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --secondary: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --tertiary: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
-  --darkgray: color-mix(
-    in srgb,
-    hsl(215, 67%, 45%),
-    white calc(100% * 0.25)
-  ) !important;
-  --dark: color-mix(
-    in srgb,
-    hsl(215, 67%, 45%),
-    white calc(100% * 0.6)
-  ) !important;
+  --light: #3f3f3f !important;
+  --gray: #a8c2e6b3 !important;
+  --darkgray: #a8c2e6b3 !important;
+  --highlight: hsl(from NaN, NaN, NaN 57 s l) !important;
+  --secondary: #a68af9 !important;
+  --tertiary: hsl(from NaN, NaN, NaN 124 s l) !important;
+  --lightgray: #5c8ccf !important;
+  --dark: #a8c2e6 !important;
 }
 
 html {

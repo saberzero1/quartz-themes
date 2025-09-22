@@ -6,28 +6,24 @@
 }
 
 :root:root {
-  --lightgray: hsl(258, calc(88% / 3), 70%) !important;
-  --gray: hsl(5, 88%, 66%) !important;
-  --light: hsl(5, 88%, 66%) !important;
-  --highlight: hsl(210, 88%, 66%) !important;
-  --secondary: hsl(258, 88%, 66%) !important;
-  --tertiary: hsl(50, 88%, 66%) !important;
-  --darkgray: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
-  --dark: hsl(258, calc(88% / 3), 20%) !important;
+  --light: #aa9cc9 !important;
+  --gray: #f5695c !important;
+  --darkgray: #f5695c !important;
+  --highlight: #5ca8f5 !important;
+  --secondary: #8a5cf5 !important;
+  --tertiary: #f5db5c !important;
+  --lightgray: rgba(from NaN, NaN, NaN r g b / 0.8) !important;
+  --dark: #2d2442 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: hsl(258, calc(88% / 3), 30%) !important;
-  --gray: hsl(5, 88%, 66%) !important;
-  --light: hsl(5, 88%, 66%) !important;
-  --highlight: hsl(210, 88%, 66%) !important;
-  --secondary: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --tertiary: hsl(50, 88%, 66%) !important;
-  --darkgray: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
-  --dark: hsl(258, calc(88% / 3), 80%) !important;
+  --light: #443663 !important;
+  --gray: #f5695c !important;
+  --darkgray: #f5695c !important;
+  --highlight: #5ca8f5 !important;
+  --secondary: #a68af9 !important;
+  --tertiary: #f5db5c !important;
+  --lightgray: rgba(from NaN, NaN, NaN r g b / 0.8) !important;
+  --dark: #c6bddb !important;
 }
 
 html {

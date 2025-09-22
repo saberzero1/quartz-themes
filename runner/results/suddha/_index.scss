@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --lightgray: #d4d4d4 !important;
-  --gray: hsl(0, 0%, calc(95% - 55%)) !important;
-  --light: hsl(0, 0%, calc(95% - 55%)) !important;
+  --light: #d4d4d4 !important;
+  --gray: #666666 !important;
+  --darkgray: #666666 !important;
   --highlight: #e0ac00 !important;
-  --secondary: hsl(258, 88%, 66%) !important;
+  --secondary: #8a5cf5 !important;
   --tertiary: #08b94e !important;
-  --darkgray: hsl(0, 0%, calc(95% - 3s5%)) !important;
-  --dark: hsl(0, 0%, calc(95% - 100%)) !important;
+  --lightgray: hsl(0, 0%, calc(95% - 3s5%)) !important;
+  --dark: hsl(0, 0%, -5%) !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: #3f3f3f !important;
-  --gray: hsl(0, 0%, calc(10% + 45%)) !important;
-  --light: hsl(0, 0%, calc(10% + 45%)) !important;
+  --light: #3f3f3f !important;
+  --gray: #8c8c8c !important;
+  --darkgray: #8c8c8c !important;
   --highlight: #e0de71 !important;
-  --secondary: hsl(258, 88%, 85%) !important;
+  --secondary: #cbb7fa !important;
   --tertiary: #44cf6e !important;
-  --darkgray: hsl(0, 0%, calc(10% + 20%)) !important;
-  --dark: hsl(0, 0%, calc(10% + 70%)) !important;
+  --lightgray: #4d4d4d !important;
+  --dark: #cccccc !important;
 }
 
 html {

@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --lightgray: #d4d4d4 !important;
-  --gray: hsl(230, 10%, 19%) !important;
-  --light: hsl(230, 10%, 19%) !important;
+  --light: #d4d4d4 !important;
+  --gray: #2c2d35 !important;
+  --darkgray: #2c2d35 !important;
   --highlight: #e5c700 !important;
-  --secondary: hsl(250, 85%, 65%) !important;
+  --secondary: #735af2 !important;
   --tertiary: #0ec043 !important;
-  --darkgray: hsl(230, 10%, 62%) !important;
-  --dark: hsl(230, 11%, 15%) !important;
+  --lightgray: #9498a8 !important;
+  --dark: #22232a !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: #3f3f3f !important;
-  --gray: hsl(230, 5%, 65%) !important;
-  --light: hsl(230, 5%, 65%) !important;
-  --highlight: rgb(230 232 118) !important;
-  --secondary: hsl(250, 85%, 75%) !important;
-  --tertiary: rgb(34 208 162) !important;
-  --darkgray: hsl(230, 7%, 35%) !important;
-  --dark: hsl(230, 4%, 75%) !important;
+  --light: #3f3f3f !important;
+  --gray: #a1a3aa !important;
+  --darkgray: #a1a3aa !important;
+  --highlight: #e6e876 !important;
+  --secondary: #9b89f5 !important;
+  --tertiary: #22d0a2 !important;
+  --lightgray: #53555f !important;
+  --dark: #bdbec2 !important;
 }
 
 html {
