@@ -6,23 +6,23 @@
 }
 
 :root:root {
-  --lightgray: #007fff !important;
+  --light: #007fff !important;
   --gray: #d372ff !important;
-  --light: #d372ff !important;
+  --darkgray: #d372ff !important;
   --highlight: #007fff !important;
   --secondary: #0048a3 !important;
   --tertiary: #20cf20 !important;
-  --darkgray: #a3a3a3 !important;
+  --lightgray: #a3a3a3 !important;
   --dark: #000 !important;
 }
 :root:root[saved-theme="dark"] {
-  --lightgray: #007fff !important;
+  --light: #007fff !important;
   --gray: #d372ff !important;
-  --light: #d372ff !important;
+  --darkgray: #d372ff !important;
   --highlight: #007fff !important;
   --secondary: #00cfff !important;
   --tertiary: #20f120 !important;
-  --darkgray: #a3a3a3 !important;
+  --lightgray: #a3a3a3 !important;
   --dark: #f1f1f1 !important;
 }
 
