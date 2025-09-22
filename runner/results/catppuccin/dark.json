@@ -620,12 +620,12 @@
     "border-radius": "0px",
     "box-shadow": "none"
   },
-  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:hover), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card:focus), .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus)": {
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus, ~ .result-card:focus, ~ .result-card:hover)": {
     "background-color": "rgb(180, 190, 254)",
     "border-radius": "4px",
     "color": "rgb(24, 24, 37)"
   },
-  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus": {
+  ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
     "background-color": "rgb(180, 190, 254)",
     "border-radius": "4px",
     "color": "rgb(24, 24, 37)"
