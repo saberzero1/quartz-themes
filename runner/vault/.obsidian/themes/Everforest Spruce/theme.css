@@ -1,0 +1,144 @@
+:root {
+    /* Everforest colors */
+    --everforest-bg_dim: #232A2E;
+    --everforest-bg0: #2D353B;
+    --everforest-bg1: #343F44;
+    --everforest-bg2: #3D484D;
+    --everforest-bg3: #475258;
+    --everforest-bg4: #4F585E;
+    --everforest-bg5: #56635f;
+    --everforest-bg_visual: #543A48;
+    --everforest-fg: #D3C6AA;
+    --everforest-red: #E67E80;
+    --everforest-orange: #E69875;
+    --everforest-yellow: #DBBC7F;
+    --everforest-green: #A7C080;
+    --everforest-aqua: #83C092;
+    --everforest-blue: #7FBBB3;
+    --everforest-purple: #D699B6;
+    --everforest-grey0: #7A8478;
+    --everforest-grey1: #859289;
+    --everforest-grey2: #9DA9A0;
+
+    /* Utils */
+    --darken-ratio: 25%;
+}
+
+.theme-dark {
+    /* ---------------------------------------------------------------------- */
+    /* FOUNDATIONS */
+    /* ---------------------------------------------------------------------- */
+
+    /* Base colors */
+    --color-base-00: var(--everforest-bg_dim);
+    --color-base-05: var(--everforest-bg_dim);
+    --color-base-10: var(--everforest-bg0);
+    --color-base-20: var(--everforest-bg0);
+    --color-base-25: var(--everforest-bg1);
+    --color-base-30: var(--everforest-bg1);
+    --color-base-35: var(--everforest-bg2);
+    --color-base-40: var(--everforest-bg3);
+    --color-base-50: var(--everforest-grey0);
+    --color-base-60: var(--everforest-grey0);
+    --color-base-70: var(--everforest-grey1);
+    --color-base-100: var(--everforest-grey2);
+
+    /* Accent color: green */
+    --accent-h: 83;
+    --accent-s: 34%;
+    --accent-l: 63%;
+
+    /* Extended colors */
+    --color-red: var(--everforest-red);
+    --color-orange: var(--everforest-orange);
+    --color-yellow: var(--everforest-yellow);
+    --color-green: var(--everforest-green);
+    --color-cyan: var(--everforest-blue);
+    --color-blue: var(--everforest-blue);
+    --color-purple: var(--everforest-purple);
+    --color-pink: var(--everforest-purple);
+
+    /* Semantic colors */
+    --background-secondary: var(--everforest-bg_dim);
+    --background-secondary-alt: var(--everforest-bg_dim);
+
+    /* Typography */
+    --text-normal: var(--everforest-fg);
+    --text-muted: var(--everforest-grey2);
+    --text-on-accent: var(--everforest-bg_dim);
+    --text-selection: var(--everforest-bg_visual);
+    --text-highlight-bg: var(--everforest-bg_visual);
+    --italic-color: var(--everforest-yellow);
+    --bold-color: var(--everforest-orange);
+    --bold-modifier: 0;
+
+    /* Icons */
+    --icon-color-focused: var(--icon-color);
+
+    /* ---------------------------------------------------------------------- */
+    /* EDITOR */
+    /* ---------------------------------------------------------------------- */
+
+    /* Blockquote */
+    --blockquote-border-color: var(--everforest-aqua);
+    --blockquote-color: var(--everforest-aqua);
+
+    /* Link */
+    --link-color: var(--everforest-blue);
+    --link-external-color: var(--everforest-blue);
+    --link-color-hover: color-mix(
+        in srgb, var(--link-color), var(--darken-ratio) black
+        );
+    --link-external-color-hover: color-mix(
+        in srgb, var(--link-external-color), var(--darken-ratio) black
+        );
+    --link-unresolved-color: var(--everforest-grey1);
+    --link-unresolved-opacity: 1;
+
+    /* Checkbox */
+    --checkbox-color: var(--everforest-red);
+    --checkbox-color-hover: color-mix(
+        in srgb, var(--checkbox-color), var(--darken-ratio) black
+        );
+
+    /* Code */
+    --code-normal: var(--everforest-fg);
+    --code-comment: var(--everforest-grey1);
+    --code-function: var(--everforest-green);
+    --code-important: var(--everforest-red);
+    --code-keyword: var(--everforest-red);
+    --code-operator: var(--everforest-orange);
+    --code-property: var(--everforest-fg);
+    --code-punctuation: var(--everforest-grey1);
+    --code-string: var(--everforest-green);
+    --code-tag: var(--everforest-aqua);
+    --code-value: var(--everforest-purple);
+
+    /* Simplified table */
+    --table-column-first-border-width: 0px;
+    --table-column-last-border-width: 0px;
+    --table-row-last-border-width: 0px;
+    --table-header-border-width: 0px;
+    --table-header-background: var(--everforest-bg0);
+    --table-header-background-hover: var(--table-header-background);
+
+    /* List */
+    --list-marker-color: var(--everforest-purple);
+
+    /* ---------------------------------------------------------------------- */
+    /* Components */
+    /* ---------------------------------------------------------------------- */
+
+    /* Green text color accents */
+    --nav-item-color-active: var(--everforest-green);
+    --tab-text-color-focused-active-current: var(--everforest-green);
+}
+
+blockquote strong {
+    color: var(--blockquote-color);
+    font-weight: 500;
+}
+
+blockquote em {
+    color: var(--blockquote-color);
+}
