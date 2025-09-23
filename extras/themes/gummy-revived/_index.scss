@@ -10,6 +10,36 @@ body {
       24px -24px 69px -3px hsla(438, 88%, 66%, 0.13) !important;
   }
 
+  h1 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h1-gradient-accent);
+  }
+
+  h2 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h2-gradient-accent);
+  }
+
+  h3 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h3-gradient-accent);
+  }
+
+  h4 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h4-gradient-accent);
+  }
+
+  h5 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h5-gradient-accent);
+  }
+
+  h6 {
+    --gradient-header:
+      var(--chalk-grey), var(--chalk-grey-accent), var(--h6-gradient-accent);
+  }
+
   h1,
   h2,
   h3,
@@ -94,6 +124,7 @@ html {
       rgba(var(--callout-color), 0.05),
       var(--background-primary)
     );
+    background-color: rgba(var(--callout-color), 0.1);
   }
 }
 
