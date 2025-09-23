@@ -15,7 +15,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -25,7 +25,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["noto-sans"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -45,7 +45,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -87,7 +87,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": ["heading-colors"],
       "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -97,7 +97,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -107,7 +107,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["nunito-sans", "courier-prime", "bitter"],
       "license": {
@@ -130,7 +130,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["bricolage-grotesque", "roboto", "montserrat"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -153,7 +153,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -173,7 +173,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -193,7 +193,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -203,7 +203,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -241,7 +241,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -271,7 +271,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -301,7 +301,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -311,7 +311,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -342,7 +342,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -352,7 +352,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -372,7 +372,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -422,7 +422,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -442,7 +442,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["archivo"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -508,7 +508,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["bookerly", "hatolie", "merienda"],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -518,7 +518,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -554,7 +554,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -564,7 +564,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -574,7 +574,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["palatino"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -594,7 +594,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -604,7 +604,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["iosevka-web", "jetbrains-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -614,7 +614,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -624,7 +624,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -644,7 +644,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["inconsolata"],
       "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
@@ -654,7 +654,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -664,7 +664,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["sf-mono"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -704,7 +704,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -714,7 +714,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -724,7 +724,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -754,7 +754,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -764,7 +764,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -784,7 +784,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -797,7 +797,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -817,7 +817,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["crimson-pro", "figtree"],
       "license": {
@@ -830,7 +830,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -840,7 +840,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono"],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -860,7 +860,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -870,7 +870,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["catamaran"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -880,7 +880,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -890,7 +890,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -900,7 +900,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["monaco", "sf-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -910,7 +910,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -920,7 +920,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono", "monaco"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -930,7 +930,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -976,7 +976,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["icons/material-icons", "fira-code"],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -1009,7 +1009,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1072,7 +1072,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1085,7 +1085,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1125,7 +1125,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1135,7 +1135,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["hack"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1145,7 +1145,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1201,7 +1201,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1214,7 +1214,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1244,7 +1244,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono"],
       "license": {
@@ -1290,7 +1290,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -1300,7 +1300,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -1320,7 +1320,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["fira-code", "noto-sans"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1340,7 +1340,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["figtree", "jetbrains-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1360,7 +1360,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1380,7 +1380,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["open-sans"],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -1390,7 +1390,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["courier-prime", "kalam"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1400,7 +1400,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1423,7 +1423,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1433,7 +1433,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1446,7 +1446,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -1476,7 +1476,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1496,7 +1496,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1509,7 +1509,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -1582,7 +1582,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["atkinson-hyperlegible", "jetbrains-mono"],
       "license": {
@@ -1618,7 +1618,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["noto-serif-kr"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1628,7 +1628,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1671,7 +1671,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1691,7 +1691,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["dm-mono", "dm-sans", "fira-code"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1731,7 +1731,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1764,7 +1764,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["material"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto"],
       "license": {
@@ -1777,7 +1777,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["material"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto", "roboto-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1787,7 +1787,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["material"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1797,7 +1797,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle", "material"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1827,7 +1827,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1837,7 +1837,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["finlandica"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1847,7 +1847,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -1857,7 +1857,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle", "minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -1867,7 +1867,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -1880,7 +1880,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1890,7 +1890,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle", "minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": ["geist"],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -1900,7 +1900,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle", "minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -1910,7 +1910,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["minimal"],
+      "extras": [],
       "fixes": [],
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1930,7 +1930,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -1973,7 +1973,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2026,7 +2026,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -2049,7 +2049,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["montserrat"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2069,7 +2069,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -2092,7 +2092,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
@@ -2122,7 +2122,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2142,7 +2142,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["inconsolata", "noto-sans"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2152,7 +2152,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -2165,7 +2165,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
@@ -2195,7 +2195,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["deadhead-script", "gentium-book-basic", "norwester"],
       "license": {
@@ -2208,7 +2208,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["finlandica"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2238,7 +2238,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2261,7 +2261,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2271,7 +2271,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2311,7 +2311,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2321,7 +2321,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["rubik", "space-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2361,7 +2361,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2371,7 +2371,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2381,7 +2381,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2474,7 +2474,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2494,7 +2494,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2504,7 +2504,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2524,7 +2524,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2564,7 +2564,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["monaco"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -2587,7 +2587,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["bricolage-grotesque"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2610,7 +2610,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2706,7 +2706,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "BSD 3-Clause License", "spdx_id": "BSD 3-Clause" }
@@ -2716,7 +2716,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "BSD 3-Clause License", "spdx_id": "BSD 3-Clause" }
@@ -2746,7 +2746,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2756,7 +2756,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["monaspace-argon"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2809,7 +2809,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["fira-code", "montserrat"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2892,7 +2892,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2912,7 +2912,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "Joke License", "spdx_id": "Joke License" }
@@ -2922,7 +2922,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["fira-code"],
       "license": {
@@ -2935,7 +2935,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -2965,7 +2965,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["hack"],
       "license": {
@@ -2998,7 +2998,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3058,7 +3058,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["slasher-film"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3068,7 +3068,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["euclid-circular-a", "hack"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3078,7 +3078,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3180,7 +3180,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -3220,7 +3220,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3253,7 +3253,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["fira-code"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3283,7 +3283,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["bai-jamjuree", "orbitron", "unbounded"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3293,7 +3293,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3323,7 +3323,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3333,7 +3333,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["jetbrains-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3376,7 +3376,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": {
@@ -3419,7 +3419,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3429,7 +3429,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3439,7 +3439,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["fira-code"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3469,7 +3469,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3509,7 +3509,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["anonymous-pro", "jetbrains-mono"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -3529,7 +3529,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3539,7 +3539,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3559,7 +3559,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3569,7 +3569,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3668,7 +3668,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "ISC License", "spdx_id": "ISC" }
@@ -3678,7 +3678,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "ISC License", "spdx_id": "ISC" }
@@ -3721,7 +3721,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["finlandica"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3731,7 +3731,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -3771,7 +3771,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3791,7 +3791,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3821,7 +3821,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3851,7 +3851,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["lato", "fira-code"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -3880,7 +3880,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["myriad-apple"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3890,7 +3890,7 @@
       "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["karla", "open-sans"],
       "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
@@ -3900,7 +3900,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
@@ -3963,7 +3963,7 @@
       "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": ["hide-toggle"],
+      "extras": [],
       "fixes": [],
       "fonts": ["inconsolata"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }

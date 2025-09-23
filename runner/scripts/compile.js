@@ -5,6 +5,7 @@ import {
   isLightTheme,
   sanitizeFilenamePreservingEmojis as sanitize,
   getFonts,
+  getExtras,
 } from "../../util/util.mjs";
 import postcss from "postcss";
 import calc from "postcss-calc";
@@ -18,6 +19,25 @@ function hsl2rgb(h, s, l) {
   let f = (n, k = (n + h / 30) % 12) =>
     l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
   return [f(0), f(8), f(4)];
+}
+
+function insertExtras(manifest) {
+  const theme = sanitize(manifest.name);
+  const basePath = `./extras/themes/${theme}`;
+  const files = ["_index.scss", ...(getExtras(theme) || [])];
+
+  let result = "";
+
+  // append file contents
+  files.forEach((file) => {
+    if (!existsSync(`${basePath}/${file}`));
+    const contents = readFileSync(`${basePath}/${file}`);
+    if (contents && contents.length > 0) {
+      result += contents + "\n";
+    }
+  });
+
+  return result.toHexColors();
 }
 
 String.prototype.toHexColors = function () {
@@ -107,38 +127,6 @@ String.prototype.toHexColors = function () {
 
   return result;
 };
-
-function sortQuartzColorVariables(a, b) {
-  const order = [
-    "--light",
-    "--lightgray",
-    "--gray",
-    "--darkgray",
-    "--dark",
-    "--primary",
-    "--secondary",
-    "--tertiary",
-    "--highlight",
-  ];
-
-  // Check if both a and b contain any of the ordered variables
-  const aIndex = order.findIndex((color) => a.includes(color));
-  const bIndex = order.findIndex((color) => b.includes(color));
-
-  if (aIndex !== -1 && bIndex !== -1) {
-    // Both a and b contain ordered variables, sort by their index in the order array
-    return aIndex - bIndex;
-  } else if (aIndex !== -1) {
-    // Only a contains an ordered variable, it should come first
-    return -1;
-  } else if (bIndex !== -1) {
-    // Only b contains an ordered variable, it should come first
-    return 1;
-  }
-
-  // If neither a nor b contain any ordered variables, sort alphabetically
-  return a.localeCompare(b, undefined, { numeric: true });
-}
 
 /*
 
@@ -295,6 +283,16 @@ ${
 }
 `.toHexColors()
         : ""
+}
+
+${
+  lightData && darkData
+    ? ""
+    : `
+.darkmode {
+  display: none;
+}
+`
 }
 
 html {
@@ -646,6 +644,8 @@ body {
     -webkit-mask-image: var(--moon-icon);
   }
 }
+
+${insertExtras(manifest)}
 `;
 
   // Remove --lightningcss-light and --lightningcss-dark from variables
