@@ -7,7 +7,7 @@
   "scripts": {
     "web:build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "web:run": "npm run web:build && wdio run ./wdio.conf.mjs",
-    "web:compile": "node ./runner/scripts/compile.js",
+    "web:compile": "node ./runner/scripts/compile.js && node ./convert.js && just format",
     "web:full": "npm run web:run && npm run web:compile && npm run format",
     "quartz:theme": "cp -f ./runner/results/abyssal/_index.scss ./runner/quartz/quartz/styles/themes/_index.scss",
     "quartz:install": "cd ./runner/quartz && npm i -D",

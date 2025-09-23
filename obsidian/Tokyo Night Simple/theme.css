@@ -1,0 +1,40 @@
+.theme-dark {
+  /* Backgrounds */
+  --background-primary: #1a1b26;
+  --background-secondary: #16161e;
+  --background-secondary-alt: #0c0e14;
+  --background-modifier-border: #292e42;
+  --background-modifier-hover: #292e42;
+  --background-modifier-active-hover: #292e42;
+
+  /* Text */
+  --text-normal: #c0caf5;
+  --text-faint: #565f89;
+  --text-muted: #a9b1d6;
+  --text-accent: #7aa2f7;
+  --text-accent-hover: #7dcfff;
+  --text-highlight-bg: #292e42;
+  --text-selection: #364a82;
+
+  /* Links */
+  --text-link: #7aa2f7;
+  --text-link-hover: #7dcfff;
+
+  /* Code */
+  --code-background: #16161e;
+  --code-normal: #7aa2f7;
+  --code-comment: #565f89;
+  --code-keyword: #bb9af7;
+  --code-string: #9ece6a;
+  --code-number: #e0af68;
+  --code-function: #7dcfff;
+  --code-operator: #f7768e;
+
+  /* UI */
+  --interactive-accent: #7aa2f7;
+  --interactive-accent-hover: #7dcfff;
+  --interactive-success: #9ece6a;
+  --interactive-warning: #e0af68;
+  --interactive-danger: #f7768e;
+  --scrollbar-thumb-bg: #292e42;
+}

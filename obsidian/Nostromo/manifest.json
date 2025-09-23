@@ -1,0 +1,9 @@
+{
+  "name": "Nostromo",
+  "version": "1.0.3",
+  "minAppVersion": "1.6.0",
+  "author": "gvorbeck",
+  "authorUrl": "https://github.com/gvorbeck",
+  "description": "An 80's retro-futuristic theme with comfortable, muted colors. Perfect for space-age note-taking without the eye strain.",
+  "modes": ["dark"]
+}
