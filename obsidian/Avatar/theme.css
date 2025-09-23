@@ -1,0 +1,1389 @@
+
+
+/*
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           AVATAR THEME - DEEP OCEAN                          ║
+║                 A vibrant standalone dark theme for Obsidian                 ║
+║                                                                              ║
+║  Colors: Aqua #7DD3C0, Purple #6366F1, Gold #FBBF24, Pink #EF44C0            ║
+║  Background: Deep Ocean #1a2332 | Bold: Bioluminescent #5EEAD4               ║
+║                                                                              ║
+║  Author: cxj05h                                                              ║                                                           
+║  Inspired by: Minimal Theme by @kepano                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+*/
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎨 AVATAR THEME - CORE COLOR SYSTEM
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.theme-dark {
+  /* Avatar Brand Colors */
+  --avatar-aqua: #7DD3C0;
+  --avatar-aqua-light: #5EEAD4;
+  --avatar-purple: #6366F1;
+  --avatar-purple-light: #A78BFA;
+  --avatar-gold: #FBBF24;
+  --avatar-gold-light: #FDE68A;
+  --avatar-pink: #EF44C0;
+  --avatar-bold: #34D399;  /* Bioluminescent Aqua for bold text */
+  
+  /* Background Colors - Deep Ocean Theme */
+  --background-primary: #1a2332;  /* Deep Ocean background */
+  --background-primary-alt: #2d3748;
+  --background-secondary: #374151;
+  --background-modifier-border: #4a5568;
+  --background-modifier-form-field: #374151;
+  --background-modifier-form-field-highlighted: #4a5568;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #059669;
+  --background-modifier-error: #dc2626;
+  --background-modifier-error-rgb: 220, 38, 38;
+  --background-modifier-error-hover: #b91c1c;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  
+  /* Text Colors */
+  --text-normal: #e2e8f0;
+  --text-muted: #a0aec0;
+  --text-faint: #718096;
+  --text-accent: #7dd3c0;
+  --text-accent-hover: #5eead4;
+  --text-on-accent: #1a202c;
+  
+  /* Interactive Elements */
+  --interactive-normal: #374151;
+  --interactive-hover: #4a5568;
+  --interactive-accent: #7dd3c0;
+  --interactive-accent-hover: #5eead4;
+  --interactive-success: #059669;
+  
+  /* Headings */
+  --h1-color: #EF44C0;
+  --h2-color: #a78bfa;
+  --h3-color: #fbbf24;
+  --h4-color: #5EEAD4;  /* Using bioluminescent aqua instead of orange */
+  --h5-color: #7dd3c0;
+  --h6-color: #6366f1;
+  --h1-size: 2.5em;
+  --h2-size: 2.0em;
+  --h3-size: 1.6em;
+  --h4-size: 1.3em;
+  --h5-size: 1.1em;
+  --h6-size: 1.0em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  
+  /* Links */
+  --link-color: #7dd3c0;
+  --link-color-hover: #5eead4;
+  --link-external-color: #fbbf24;
+  --link-unresolved-color: #6cf58e;
+  
+  /* Tags */
+  --tag-color: #fbbf24;
+  --tag-background: rgba(251, 191, 36, 0.2);
+  --tag-background-hover: rgba(251, 191, 36, 0.3);
+  
+  /* Code */
+  --code-background: #374151;
+  --code-normal: #e2e8f0;
+  
+  /* Highlights */
+  --text-highlight-bg: rgba(251, 191, 36, 0.4);
+  --text-highlight-bg-active: rgba(251, 191, 36, 0.6);
+  
+  /* UI Elements */
+  --titlebar-text-color-focused: #FBBF24;
+  --titlebar-text-color-unfocused: #a0aec0;
+  --tab-text-color-focused-active: #FBBF24;
+  --tab-text-color-unfocused-active: #7dd3c0;
+  --icon-color: #7dd3c0;
+  --icon-color-hover: #fde68a;
+  --icon-color-active: #f561ab;
+  --icon-color-focused: #fbbf24;
+  
+  /* Dividers */
+  --hr-color: #fbbf24;
+  
+  /* Blockquotes */
+  --blockquote-border-color: #fbbf24;
+  --blockquote-border-thickness: 2px;
+  --blockquote-font-style: italic;
+  --blockquote-color: #E1DCF2;
+  --blockquote-bg: #303E59;
+  
+  /* Checkboxes */
+  --checkbox-color: #7dd3c0;
+  --checkbox-color-hover: #5eead4;
+  
+  /* Tables */
+  --table-border-color: rgba(125, 211, 192, 0.3);
+  --table-header-background: linear-gradient(135deg, rgba(125, 211, 192, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+  --table-row-even-background: rgba(125, 211, 192, 0.03);
+  --table-row-hover-background: rgba(251, 191, 36, 0.05);
+  
+  /* Indentation guides */
+  --indentation-guide-color: #59FFD5;
+  --indentation-guide-color-active: rgba(89, 255, 213, 0.66);
+  
+  /* Typography */
+  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-text-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', 'Source Code Pro', monospace;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🌟 FOCUS COLOR SYSTEM
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --avatar-focus-color: #343e4f;
+  --avatar-focus-border: rgba(125, 211, 192, 0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🌊 BASE STYLES & TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+body {
+  --font-interface: var(--font-interface-theme);
+  --font-text: var(--font-text-theme);
+  --font-monospace: var(--font-monospace-theme);
+}
+
+/* Smooth rounded corners for main workspace */
+.workspace {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.workspace-split.mod-root {
+  border-radius: 12px;
+}
+
+/* Sidebar panel styling */
+.workspace-split.mod-horizontal > * > .workspace-leaf,
+.workspace-split.mod-vertical > * > .workspace-leaf {
+  border-radius: 12px;
+}
+
+.workspace-drawer {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.workspace-drawer.mod-left .workspace-drawer-inner,
+.workspace-drawer.mod-right .workspace-drawer-inner {
+  border-radius: 12px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🪐 TAB BAR
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.workspace-tabs {
+  background: var(--avatar-focus-color) !important;
+  border-bottom: 1px solid var(--avatar-focus-border);
+  box-shadow: none;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.workspace-tab-container {
+  background: var(--avatar-focus-color) !important;
+  border-radius: 8px 8px 0 0;
+}
+
+.workspace-tab-header {
+  background: rgba(55, 65, 81, 0.5) !important;
+  border: none;
+  border-radius: 12px 12px 0 0;
+  margin: 4px 2px 0 2px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.workspace-tab-header + .workspace-tab-header {
+  margin-left: 4px;
+}
+
+.workspace-tab-header:hover {
+  background: rgba(125, 211, 192, 0.15) !important;
+  box-shadow: 0 -2px 8px rgba(125, 211, 192, 0.1);
+}
+
+.workspace-tab-header.is-active {
+  background: rgba(125, 211, 192, 0.12) !important;
+  border-bottom: 1px solid var(--avatar-aqua);
+  box-shadow: 0 -2px 12px rgba(125, 211, 192, 0.15);
+}
+
+.workspace-tab-header-inner,
+.workspace-tab-container-inner,
+.workspace-tab-header-inner-title {
+  color: var(--avatar-gold) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--avatar-aqua) !important;
+  font-weight: 600;
+}
+
+.workspace-tab-header:hover .workspace-tab-header-inner {
+  color: var(--avatar-gold-light) !important;
+}
+
+.workspace-tab-header-inner-close-button {
+  color: rgba(251, 191, 36, 0.6) !important;
+  transition: color 0.2s ease;
+}
+
+.workspace-tab-header-inner-close-button:hover {
+  color: var(--avatar-pink) !important;
+  background: rgba(239, 68, 192, 0.1);
+  border-radius: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📜 SCROLLBARS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(45, 55, 72, 0.5);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, 
+    var(--avatar-aqua) 0%, 
+    var(--avatar-gold) 50%, 
+    var(--avatar-purple) 100%);
+  border-radius: 12px;
+  border: 2px solid rgba(45, 55, 72, 0.5);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, 
+    var(--avatar-gold) 0%, 
+    var(--avatar-pink) 50%, 
+    var(--avatar-aqua) 100%);
+  box-shadow: 0 0 10px rgba(125, 211, 192, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎭 WORKSPACE & PANELS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background: var(--background-primary);
+  border-right: 1px solid rgba(125, 211, 192, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.workspace-split.mod-right-split {
+  border-left: 1px solid rgba(125, 211, 192, 0.1);
+  border-right: none;
+}
+
+.workspace-leaf {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.workspace-leaf-content {
+  border-radius: 12px;
+}
+
+.workspace-leaf-resize-handle {
+  background: var(--avatar-focus-border);
+}
+
+.workspace-leaf-resize-handle:hover {
+  background: rgba(125, 211, 192, 0.4);
+  box-shadow: 0 0 8px rgba(125, 211, 192, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📊 STATUS BAR
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.status-bar {
+  background: var(--avatar-focus-color) !important;
+  border-top: 1px solid var(--avatar-focus-border);
+  color: var(--text-muted);
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+
+.status-bar-item {
+  color: var(--avatar-gold);
+  transition: color 0.2s ease;
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin: 0 2px;
+}
+
+.status-bar-item:hover {
+  color: var(--avatar-aqua);
+  background: rgba(125, 211, 192, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🗂️ SIDEBAR & RIBBON
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.side-dock-ribbon,
+.workspace-ribbon {
+  background: var(--avatar-focus-color) !important;
+  border-right: 1px solid var(--avatar-focus-border);
+  border-radius:  0;
+  overflow: hidden;
+}
+
+.side-dock-ribbon-action {
+  color: var(--avatar-gold);
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.side-dock-ribbon-action:hover {
+  color: var(--avatar-aqua);
+  background: rgba(125, 211, 192, 0.15);
+}
+
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🔧 VIEW HEADERS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.view-header,
+.workspace-leaf-content[data-type] .view-header {
+  background: #1a2332 !important;
+  border-bottom: 1px solid var(--avatar-focus-border);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.view-header-title {
+  color: var(--avatar-gold);
+  font-weight: 600;
+}
+
+.workspace-leaf.mod-active .view-header {
+  background: var(--avatar-focus-color) !important;
+  box-shadow: 0 2px 8px rgba(125, 211, 192, 0.1);
+}
+
+.view-action,
+.clickable-icon {
+  border-radius: 6px;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+/* ──────────────────────────────────────────────── */
+/*  Breadcrumb bar matches note background (#1a2332) */
+/* ──────────────────────────────────────────────── */
+.theme-dark .workspace-leaf-content[data-type] .view-header,
+.theme-dark .workspace-leaf.mod-active .view-header {
+  background: #1a2332 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📝 TYPOGRAPHY & HEADERS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+h1 { 
+  color: var(--h1-color); 
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+}
+
+h2 { 
+  color: var(--h2-color); 
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}
+
+h3 { 
+  color: var(--h3-color); 
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+}
+
+h4 { 
+  color: var(--h4-color); 
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+}
+
+h5 { 
+  color: var(--h5-color); 
+  font-size: var(--h5-size);
+  font-weight: var(--h5-weight);
+}
+
+h6 { 
+  color: var(--h6-color); 
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+}
+
+/* Header Dividers */
+.markdown-preview-view h1,
+.markdown-rendered h1,
+.cm-line.HyperMD-header-1 {
+  border-bottom: 2px solid var(--avatar-aqua) !important;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.markdown-preview-view h2,
+.markdown-rendered h2,
+.cm-line.HyperMD-header-2 {
+  border-bottom: 1px solid rgba(125, 211, 192, 0.4) !important;
+  padding-bottom: 6px;
+}
+
+.markdown-preview-view h3,
+.markdown-rendered h3,
+.cm-line.HyperMD-header-3 {
+  border-bottom: 1px solid rgba(251, 191, 36, 0.3) !important;
+  padding-bottom: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🔗 LINKS & TEXT FORMATTING
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+.external-link {
+  color: var(--link-external-color);
+}
+
+strong {
+  color: var(--avatar-bold);  /* Bioluminescent Aqua */
+  font-weight: 700;
+}
+
+em {
+  color: #818cf8;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ✨ HIGHLIGHTS & SELECTIONS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+mark,
+.markdown-rendered mark,
+.cm-highlight {
+  background-color: rgba(251, 191, 36, 0.6) !important;
+  color: #1a1a1a !important;
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+.highlight-aqua {
+  background-color: rgba(125, 211, 192, 0.3) !important;
+  color: inherit !important;
+}
+
+.highlight-purple {
+  background-color: rgba(99, 102, 241, 0.3) !important;
+  color: inherit !important;
+}
+
+.highlight-pink {
+  background-color: rgba(239, 68, 192, 0.3) !important;
+  color: inherit !important;
+}
+
+.highlight-gold {
+  background-color: rgba(251, 191, 36, 0.3) !important;
+  color: inherit !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🏷️ TAGS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 0.85em;
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+}
+
+.tag-pane-tag:hover {
+  background: rgba(251, 191, 36, 0.15) !important;
+  color: var(--avatar-gold) !important;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Tag pane container */
+.tag-container {
+  border-radius: 8px;
+  padding: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   💬 BLOCKQUOTES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+blockquote {
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  background-color: var(--blockquote-bg);
+  color: var(--blockquote-color);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📢 CALLOUTS  
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Base callout styling with rounded corners */
+.callout {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+/* ✅ CALLOUTS THAT ARE OK - Clean, no inner highlights */
+
+/* Tip, Hint, Important */
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  border-color: #e13ff3 !important;
+  background-color: #0b70c87a   !important;
+  border-left-width: 4px !important;
+}
+
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  color: #e45af4 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="tip"] .callout-icon,
+.callout[data-callout="hint"] .callout-icon,
+.callout[data-callout="important"] .callout-icon {
+  color: var(--avatar-aqua) !important;
+}
+
+/* Success, Check, Done */
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  border-color: #08faa9  !important;
+  background-color: rgba(125, 211, 192, 0.08) !important;
+   border-left-width: 4px !important;
+}
+
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  color: #06dd96 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="success"] .callout-icon,
+.callout[data-callout="check"] .callout-icon,
+.callout[data-callout="done"] .callout-icon {
+  color: #93eed6 !important;
+}
+
+/* Question, Help, FAQ */
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  border-color: var(--avatar-gold) !important;
+  background-color: rgba(133, 36, 251, 0.08) !important;
+   border-left-width: 4px !important;
+}
+
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="help"] .callout-title,
+.callout[data-callout="faq"] .callout-title {
+  color: var(--avatar-gold) !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="question"] .callout-icon,
+.callout[data-callout="help"] .callout-icon,
+.callout[data-callout="faq"] .callout-icon {
+  color: var(--avatar-gold) !important;
+}
+
+/* Failure, Fail, Missing */
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  border-color: #d62f23 !important;
+  background-color: #e0eb498b !important;
+   border-left-width: 4px !important;
+}
+
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="missing"] .callout-title {
+  color: #d62f23 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="failure"] .callout-icon,
+.callout[data-callout="fail"] .callout-icon,
+.callout[data-callout="missing"] .callout-icon {
+  color: var(--avatar-pink) !important;
+}
+
+/* Example */
+.callout[data-callout="example"] {
+  border-color: var(--avatar-purple) !important;
+  background-color: rgba(99, 102, 241, 0.08) !important;  
+  border-left-width: 4px !important;
+
+}
+
+.callout[data-callout="example"] .callout-title {
+  color: #9698e7 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="example"] .callout-icon {
+  color: var(--avatar-purple) !important;
+}
+
+/* Quote - Already clean */
+.callout[data-callout="quote"] {
+  border-color: var(--avatar-gold) !important;
+  background-color: rgba(251, 191, 36, 0.05) !important;
+  border-left-width: 4px !important;
+}
+
+.callout[data-callout="quote"] .callout-title {
+  color: var(--avatar-gold) !important;
+  font-style: italic;
+  /* NO background-color = no inner highlight */
+}
+
+/* 🔧 CALLOUTS THAT NEED WORK - Still have inner highlights for now */
+
+/* Info, Todo - NEEDS WORK */
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  border-color: #F8BF28 !important;
+  background-color: #4438ca8b !important;
+   border-left-width: 4px !important;
+}
+
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  color: #F8BF28 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="info"] .callout-icon,
+.callout[data-callout="todo"] .callout-icon {
+  color: var(--avatar-aqua) !important;
+}
+
+/* Warning, Caution - NEEDS WORK */
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  border-color: var(--avatar-gold) !important;
+  background-color: rgba(251, 191, 36, 0.08) !important;
+  border-left-width: 4px !important;
+}
+
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="caution"] .callout-title {
+  color: var(--avatar-gold) !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="warning"] .callout-icon,
+.callout[data-callout="caution"] .callout-icon {
+  color: var(--avatar-gold) !important;
+}
+
+/* Error, Danger, Bug - NEEDS WORK */
+.callout[data-callout="error"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"] {
+  border-color: #ed315d9c !important;
+  background-color: #eb3d6684 !important;
+  border-left-width: 4px !important;
+}
+
+.callout[data-callout="error"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="bug"] .callout-title { 
+  color: #f6f5f8fd!important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="error"] .callout-icon, 
+.callout[data-callout="danger"] .callout-icon,
+.callout[data-callout="bug"] .callout-icon {
+  color: var(--avatar-pink) !important;
+}
+
+/* Note, Abstract, Summary - NEEDS WORK */
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"] {
+
+  border-color: var(--avatar-purple) !important;
+  background-color: rgba(99, 102, 241, 0.08) !important;
+  border-left-width: 4px !important;
+
+
+}
+
+.callout[data-callout="note"] .callout-title,
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title {
+  color: #05cbd1 !important;
+  /* NO background-color = no inner highlight */
+}
+
+.callout[data-callout="note"] .callout-icon,
+.callout[data-callout="abstract"] .callout-icon,
+.callout[data-callout="summary"] .callout-icon {
+  color: var(--avatar-purple) !important;
+}
+
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📊 TABLES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.markdown-rendered table {
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(125, 211, 192, 0.1);
+  margin: 16px 0;
+  border: 1px solid var(--table-border-color) !important;
+}
+
+.markdown-rendered table thead {
+  background: var(--table-header-background) !important;
+}
+
+.markdown-rendered table th {
+  color: var(--avatar-aqua) !important;
+  font-weight: 600 !important;
+  padding: 12px 16px !important;
+  border-bottom: 2px solid var(--avatar-aqua) !important;
+  text-align: left;
+}
+
+.markdown-rendered table td {
+  padding: 10px 16px !important;
+  border-bottom: 1px solid rgba(125, 211, 192, 0.2) !important;
+}
+
+.markdown-rendered table tbody tr:hover {
+  background-color: var(--table-row-hover-background) !important;
+  transition: background-color 0.2s ease;
+}
+
+.markdown-rendered table tbody tr:nth-child(even) {
+  background-color: var(--table-row-even-background) !important;
+}
+
+.markdown-rendered table td,
+.markdown-rendered table th {
+  border-left: 1px solid rgba(125, 211, 192, 0.15) !important;
+  border-right: 1px solid rgba(125, 211, 192, 0.15) !important;
+}
+
+.markdown-rendered table td:first-child,
+.markdown-rendered table th:first-child {
+  border-left: none !important;
+}
+
+.markdown-rendered table td:last-child,
+.markdown-rendered table th:last-child {
+  border-right: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🗂️ FILE EXPLORER & NAVIGATION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.nav-files-container {
+  padding: 8px;
+  background: rgba(45, 55, 72, 0.3);
+  border-radius: 12px;
+  margin: 8px;
+}
+
+.nav-folder-title,
+.nav-file-title {
+  border-radius: 8px;
+  padding: 6px 8px !important;
+  margin: 1px 0 !important;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-folder-title:hover {
+  background: rgba(125, 211, 192, 0.15) !important;
+  color: var(--avatar-aqua) !important;
+  box-shadow: 0 0 8px rgba(125, 211, 192, 0.1);
+}
+
+.nav-file-title:hover {
+  background: rgba(251, 191, 36, 0.12) !important;
+  color: var(--avatar-gold) !important;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.1);
+}
+
+.nav-folder-collapse-indicator {
+  color: rgba(125, 211, 192, 0.6) !important;
+  transition: color 0.2s ease;
+}
+
+.nav-folder-collapse-indicator:hover {
+  color: var(--avatar-aqua) !important;
+}
+
+.nav-folder-collapse-indicator::before,
+.nav-folder-collapse-indicator::after,
+.nav-folder-title::before,
+.nav-folder-title::after {
+  display: none !important;
+}
+
+.nav-file-title.is-active {
+  background: rgba(125, 211, 192, 0.15) !important;
+  color: var(--avatar-aqua) !important;
+  border: 1px solid rgba(125, 211, 192, 0.3) !important;
+  font-weight: 600 !important;
+  box-shadow: 0 0 10px rgba(125, 211, 192, 0.2);
+  border-radius: 8px !important;
+}
+
+.nav-folder-children {
+  border-left: 1px solid rgba(125, 211, 192, 0.2);
+  margin-left: 8px !important;
+  padding-left: 12px !important;
+  position: relative;
+}
+
+.nav-folder-children .nav-folder-children {
+  margin-left: 8px !important;
+  padding-left: 12px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   💾 CODE BLOCKS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: var(--code-background);
+  padding: 16px;
+  border-radius: 12px;
+  display: block;
+  overflow-x: auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎯 MISCELLANEOUS ELEMENTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+hr {
+  border: none !important;
+  border-top: 3px solid var(--hr-color) !important;
+  margin: 2em 0;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--checkbox-color);
+  border-radius: 4px;
+}
+
+.cm-indent::before {
+  border-left: 1px solid var(--indentation-guide-color);
+}
+
+.cm-indent.cm-indent-active::before {
+  border-left: 1px solid var(--indentation-guide-color-active);
+}
+
+/* Modal styling */
+.modal {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.modal-content {
+  border-radius: 16px !important;
+}
+
+/* Modal headers */
+.modal-title {
+  background: var(--avatar-focus-color);
+  padding: 16px;
+  border-bottom: 1px solid var(--avatar-focus-border);
+  border-radius: 16px 16px 0 0;
+}
+
+/* Settings window sidebar */
+.vertical-tab-nav {
+  background: var(--avatar-focus-color);
+  border-radius: 12px 0 0 12px;
+}
+
+.vertical-tab-nav-item {
+  border-radius: 8px;
+  margin: 4px 8px;
+}
+
+/* Prompt/suggestion containers */
+.prompt, .suggestion-container {
+  background: var(--avatar-focus-color);
+  border: 1px solid var(--avatar-focus-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Search bars and inputs */
+input[type="text"],
+input[type="search"],
+input[type="number"],
+textarea,
+.search-input-container {
+  border-radius: 8px !important;
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Buttons */
+button {
+  border-radius: 8px !important;
+}
+
+/* Dropdown menus */
+.dropdown,
+.menu {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.menu-item {
+  border-radius: 8px;
+  margin: 2px 4px;
+}
+
+/* Tooltips */
+.tooltip {
+  border-radius: 8px !important;
+}
+
+/* Notices and notifications */
+.notice {
+  border-radius: 12px !important;
+}
+
+/* Community theme/plugin browser cards */
+.community-theme,
+.community-plugin {
+  border-radius: 12px !important;
+}
+
+/* Quick switcher */
+.quick-switcher-modal,
+.prompt {
+  border-radius: 16px !important;
+}
+
+/* Command palette */
+.command-palette {
+  border-radius: 16px !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎯 == Highlighting Text with == !!!!!!!!!!!!!!!!!
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Ensure this is loaded *after* core preview styles */
+.theme-dark .markdown-preview-view mark,
+.theme-dark .markdown-reading-view mark {
+  background-color: rgba(72, 43, 177, 0.479) !important;
+  color: #40c7cc !important;
+}
+/* If core uses variables, redefine both */
+.theme-dark {
+  --text-highlight-bg: rgba(125, 211, 192, 0.3);
+  --text-highlight-color: var(--avatar-pink);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🌊 AVATAR BREADCRUMB NAVIGATION - Papyrus-inspired styling
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Import Papyrus-like fonts (Avatar movie uses Papyrus) */
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap'); */
+
+/* Alternative font options that capture Avatar's organic feel:
+   - Kalam (handwritten, organic)
+   - Caveat (flowing, natural)
+   - Amatic SC (tall, artistic)
+*/
+
+/* Breadcrumb Navigation Styling */
+.view-header-breadcrumb {
+  /* use your main text/interface font */
+  font-family: var(--font-text) !important;
+  /* force ALL CAPS */
+  text-transform: uppercase !important;
+  /* you can keep or tweak size/spacing */
+  font-size: 1.1em !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.5px !important;
+}
+
+
+
+
+/* Breadcrumb text color - Avatar blue by default, gold when note is focused */
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator {
+  color: var(--avatar-aqua) !important;  /* #7DD3C0 */
+}
+
+/* When the note editor is focused/active, breadcrumbs turn gold */
+.workspace-leaf.mod-active .view-header-breadcrumb,
+.workspace-leaf.mod-active .view-header-breadcrumb-separator {
+  color: var(--avatar-gold) !important;  /* #FBBF24 */
+}
+
+/* Breadcrumb separators */
+.view-header-breadcrumb-separator {
+  margin: 0 4px !important;
+}
+
+/* Hover effect on breadcrumb items */
+.view-header-breadcrumb:hover {
+  color: var(--avatar-gold-light) !important;  /* #FDE68A */
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+  transition: all 0.2s ease;
+}
+
+/* Active/current breadcrumb item - stays gold when note is active */
+.workspace-leaf.mod-active .view-header-breadcrumb:last-child {
+  color: var(--avatar-gold-light) !important;  /* Lighter gold for current location */
+  font-weight: 700 !important;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────── */
+/*  Override all breadcrumb segments to use your main font, ALL CAPS, and    */
+/*  the same color—especially the final “current note” segment               */
+/* ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .view-header-breadcrumb,
+.theme-dark .view-header-breadcrumb * {
+  font-family: var(--font-text)    !important;  /* main theme font */
+  text-transform: uppercase        !important;  /* force ALL CAPS  */
+  color: var(--text-normal)        !important;  /* uniform color    */
+}
+
+/* If you’d like the separators (“/”) a bit subtler, you can tweak them: */
+.theme-dark .view-header-breadcrumb span {
+  opacity: 0.6 !important;
+}
+
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🌟 ENHANCED AVATAR GLOW EFFECT (Optional)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Add a subtle bioluminescent glow to the breadcrumbs */
+.view-header-breadcrumb-container {
+  filter: drop-shadow(0 0 3px rgba(125, 211, 192, 0.3));
+}
+
+/* Pulse animation on hover (like bioluminescence) */
+@keyframes avatarPulse {
+  0% { text-shadow: 0 0 4px rgba(125, 211, 192, 0.5); }
+  50% { text-shadow: 0 0 12px rgba(125, 211, 192, 0.8); }
+  100% { text-shadow: 0 0 4px rgba(125, 211, 192, 0.5); }
+}
+
+.view-header-breadcrumb:hover {
+  animation: avatarPulse 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎮 BREADCRUMB NAVIGATION ICONS - Match theme icon behavior
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Default state - aqua */
+.view-header-icon,
+.view-header-breadcrumb-icon {
+  color: var(--avatar-aqua) !important;
+  transition: color 0.2s ease;
+}
+
+/* Hover state - gold */
+.view-header-icon:hover,
+.view-header-breadcrumb-icon:hover {
+  color: var(--avatar-gold) !important;
+}
+
+/* Active/focused state - permanent gold */
+.workspace-leaf.mod-active .view-header-icon,
+.workspace-leaf.mod-active .view-header-breadcrumb-icon {
+  color: var(--avatar-gold) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   📝 BREADCRUMB FIXES - Selected note name
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Fix the current note name in breadcrumb */
+.view-header-title,
+.view-header-breadcrumb-container .view-header-title {
+  color: var(--avatar-gold) !important;
+  font-family: 'Kalam', cursive !important;
+}
+
+/* When note is not active */
+.workspace-leaf:not(.mod-active) .view-header-title {
+  color: var(--avatar-aqua) !important;
+}
+
+/* The actual breadcrumb path items */
+.workspace-leaf.mod-active .view-header-breadcrumb-container {
+  color: var(--avatar-gold) !important;
+}
+
+/* Override any conflicting styles */
+.workspace-leaf .view-header .view-header-title-container .view-header-title {
+  color: inherit !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   🎮 ALL VIEW HEADER COMMAND ICONS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Default state - aqua (covers ALL command icons) */
+
+/* .view-header-icon,
+.view-header-breadcrumb-icon,
+.clickable-icon,
+.view-action {
+  color: var(--avatar-aqua) !important;
+  transition: color 0.2s ease;
+} */
+
+/* Hover state - gold */
+.view-header-icon:hover,
+.view-header-breadcrumb-icon:hover,
+.clickable-icon:hover,
+.view-action:hover {
+  color: var(--avatar-gold) !important;
+}
+
+/* Active/focused state - permanent gold */
+.workspace-leaf.mod-active .view-header-icon,
+.workspace-leaf.mod-active .view-header-breadcrumb-icon,
+.workspace-leaf.mod-active .clickable-icon,
+.workspace-leaf.mod-active .view-action {
+  color: var(--avatar-gold) !important;
+}
+
+/* Extra specificity for stubborn command icons */
+.view-header .clickable-icon,
+.view-header .view-action {
+  color: var(--avatar-aqua) !important;
+}
+
+.view-header .clickable-icon:hover,
+.view-header .view-action:hover {
+  color: var(--avatar-gold) !important;
+}
+
+
+body.is-unfocused .theme-dark .workspace-tabs {
+  background: var(--avatar-focus-color) !important;
+  border-bottom: 1px solid var(--avatar-focus-border) !important;
+}
+
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Force Avatar Theme tab-bar border & background when UNFOCUSED         */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .workspace-tabs.mod-unfocused {
+  /* keep your custom turquoise background */
+  background-color: var(--avatar-focus-color) !important;
+
+  /* force the bottom border to your turquoise accent */
+  border-bottom: 1px solid var(--avatar-focus-border) !important;
+
+  /* (optional) make tab text use your normal text color */
+  color: var(--text-normal) !important;
+}
+
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  1) Fully-round the left-sidebar collapse/expand toggle button        */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .sidebar-toggle-button-left {
+  /* uniform rounding on every corner */
+  border-radius: 8px !important;
+  /* ensure its own background so you can see the curve */
+  background: var(--background-secondary) !important;
+  overflow: hidden !important;
+}
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  2) Fully-round the vault-profile button area in the right side dock   */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .workspace-sidedock-vault-profile,
+.theme-dark .workspace-sidedock-vault-profile button {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Squared corners on the left-sidebar ribbon container                */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .workspace-ribbon,
+.theme-dark .side-dock-ribbon {
+  border-radius: 0 !important;
+}
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Squared corners on the vault-profile button area                     */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .workspace-sidedock-vault-profile,
+.theme-dark .workspace-sidedock-vault-profile button {
+  border-radius: 0 !important;
+}
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Square off the corners the pink arrows are pointing at              */
+/*─────────────────────────────────────────────────────────────────────────*/
+
+/* 1) Top‐left of the whole left pane (folder/sidebar) */
+.theme-dark .workspace-split.mod-left-split {
+  border-top-left-radius: 0 !important;
+}
+
+/* 2) Bottom‐left of the ribbon container */
+.theme-dark .workspace-ribbon,
+.theme-dark .side-dock-ribbon {
+  border-bottom-left-radius: 0 !important;
+}
+
+/* 3) Bottom‐left of the vault-profile button area */
+.theme-dark .workspace-sidedock-vault-profile {
+  border-bottom-left-radius: 0 !important;
+}
+
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  □ Square off every left-side corner in Avatar Theme (Dark mode)       */
+/*─────────────────────────────────────────────────────────────────────────*/
+
+/* 1) The outer left-split container (removes its 12px curves)           */
+.theme-dark .workspace-split.mod-left-split {
+  border-top-left-radius:    0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* 2) Any leaf panels inside that split (e.g. file explorer, etc.)       */
+.theme-dark .workspace-split.mod-left-split .workspace-leaf,
+.theme-dark .workspace-split.mod-left-split .workspace-leaf-content {
+  border-top-left-radius:    0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* 3) The file-explorer’s own container (nav-files-container has 12px)   */
+.theme-dark .nav-files-container {
+  border-radius: 0 !important;
+}
+
+/* 4) The vault-profile area at the bottom of the side dock              */
+.theme-dark .workspace-sidedock-vault-profile {
+  border-top-left-radius:    0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Preview-mode ordered-list marker color (1., 2., 3., …)               */
+/*─────────────────────────────────────────────────────────────────────────*/
+.theme-dark .markdown-preview-view li::marker {
+  color: var(--avatar-gold) !important;
+}
+
+/*─────────────────────────────────────────────────────────────────────────*/
+/*  Live-preview/editor ordered-list marker color                       */
+/*─────────────────────────────────────────────────────────────────────────*/
+/* Matches the “1.” that Obsidian inserts in the editor when you type lists */
+.theme-dark .cm-editor .cm-formatting.cm-formatting-list,
+.theme-dark .cm-editor .cm-formatting.cm-formatting-list-match {
+  color: var(--avatar-gold) !important;
+}
+
+
+
+/*
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       END AVATAR THEME - DEEP OCEAN                         ║
+║                                                                              ║
+║  Version 1.2.0 - Deep Ocean Background with Bioluminescent Bold Text        ║
+║  This theme is completely standalone and doesn't require any dependencies   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+*/
+

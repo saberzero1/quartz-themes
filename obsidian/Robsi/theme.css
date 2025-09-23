@@ -1,0 +1,3782 @@
+/*
+Robsi Theme - A modern theme for Obsidian.
+By Riffaells - 2025
+Built: 2025-09-03T15:01:28.355034
+Files included: 19
+*/
+
+/* variables.css */
+/* ========================================================================== */
+/*                                VARIABLES                                   */
+/* ========================================================================== */
+
+/* Root fonts and basic variables */
+:root {
+    --font-family-theme: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family-monospace: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    --font-size-theme: 16px;
+    --line-height-theme: 1.6;
+}
+
+/* Common variables for both themes */
+.theme-dark,
+.theme-light {
+    /* ======================================================================== */
+    /*                               TYPOGRAPHY                                */
+    /* ======================================================================== */
+
+    --font-text-size: var(--font-size-theme);
+    --line-height-normal: var(--line-height-theme);
+
+    /* ======================================================================== */
+    /*                                BORDERS                                  */
+    /* ======================================================================== */
+
+    --border-width: 1px;
+    --border-radius: 8px;
+    --radius-s: 6px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+    --radius-xl: 16px;
+
+    /* ======================================================================== */
+    /*                                SPACING                                  */
+    /* ======================================================================== */
+
+    --size-2-1: 2px;
+    --size-2-2: 4px;
+    --size-2-3: 5px;
+    --size-4-1: 6px;
+    --size-4-2: 8px;
+    --size-4-3: 12px;
+    --size-4-4: 14px;
+    --size-4-5: 16px;
+    --size-4-6: 18px;
+
+    /* ======================================================================== */
+    /*                              TRANSITIONS                                */
+    /* ======================================================================== */
+
+    --motion-duration-fast: 0.15s;
+    --motion-duration-medium: 0.25s;
+    --motion-duration-slow: 0.35s;
+    --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --motion-easing-decelerate: cubic-bezier(0.0, 0, 0.2, 1);
+    --motion-easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+
+    /* ======================================================================== */
+    /*                               SHADOWS                                   */
+    /* ======================================================================== */
+
+    --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    --shadow-xl: 0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05);
+
+    /* ======================================================================== */
+    /*                               CALLOUTS                                  */
+    /* ======================================================================== */
+
+    --callout-radius: var(--radius-m);
+    --callout-padding: 14px;
+    --callout-title-padding: 0;
+    --callout-content-padding: 0;
+
+    /* ======================================================================== */
+    /*                                 LISTS                                   */
+    /* ======================================================================== */
+
+    --list-marker-color: var(--purple);
+    --list-marker-color-hover: var(--purple-light);
+    --list-marker-color-collapsed: var(--text-muted);
+    --list-number-color: var(--magenta);
+    --list-number-color-hover: var(--magenta-light);
+    --list-indent: 1.5em;
+    --list-spacing: 0;
+
+    /* ======================================================================== */
+    /*                              CHECKBOXES                                 */
+    /* ======================================================================== */
+
+    --checkbox-radius: var(--radius-s);
+    --checkbox-size: 16px;
+
+    /* ======================================================================== */
+    /*                               TABLES                                    */
+    /* ======================================================================== */
+
+    --table-border-width: 1px;
+    --table-border-color: var(--border-color);
+    --table-header-background: var(--background-secondary);
+    --table-header-background-hover: var(--background-secondary-alt);
+
+    /* ======================================================================== */
+    /*                              WORKSPACE                                  */
+    /* ======================================================================== */
+
+    --tab-radius: var(--radius-m);
+    --tab-outline-width: 2px;
+    --titlebar-height: 40px;
+    --tab-width: 120px;
+    --tab-min-width: 40px;
+    --tab-max-width: 200px;
+    --tab-text-color-focused-active: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+    --tab-text-color-focused-active-current: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --tab-text-color-active: var(--accent-color);
+    /* Tab background variables */
+    --tab-container-background-focused: var(--background-primary);
+    --tab-container-background: var(--background-primary);
+    --tab-background: var(--bg_dark2);
+    --tab-background-active: var(--bg_highlight_dark);
+    --tab-background-hover: var(--bg_highlight_dark);
+    --workspace-background-translucent: var(--background-primary);
+    --titlebar-background-focused: var(--background-primary);
+    --frame-right-space: 80px;
+
+    --popover-width: 500px;
+    --popover-height: 500px;
+
+
+    /* ======================================================================== */
+    /*                              FILE MARGINS                               */
+    /* ======================================================================== */
+
+    --file-margins: clamp(5px, 4vw, 20px);
+
+    /* ======================================================================== */
+    /*                              COLOR PALETTE                               */
+    /* ======================================================================== */
+
+    /* Standard Colors */
+    --color-red: var(--red);
+    --color-purple: var(--magenta);
+    --color-green: var(--green);
+    --color-cyan: var(--cyan);
+    --color-blue: var(--blue);
+    --color-yellow: var(--yellow);
+    --color-orange: var(--orange);
+    --color-pink: var(--magenta);
+
+    /* RGB Versions for rgba() */
+    --color-red-rgb: var(--red_x);
+    --color-purple-rgb: var(--magenta_x);
+    --color-green-rgb: var(--green_x);
+    --color-cyan-rgb: var(--cyan_x);
+    --color-blue-rgb: var(--blue_x);
+    --color-yellow-rgb: var(--yellow_x);
+    --color-orange-rgb: var(--orange_x);
+    --color-pink-rgb: var(--magenta_x);
+
+    /* ======================================================================== */
+    /*                           BACKGROUND & TEXT                            */
+    /* ======================================================================== */
+
+    --background-primary: var(--bg);
+    --background-primary-alt: var(--bg);
+    --background-secondary: var(--bg_dark);
+    --background-secondary-alt: var(--bg_dark);
+
+    --background-modifier-border: var(--bg_highlight);
+    --background-modifier-border-focus: var(--bg_highlight);
+    --background-modifier-border-hover: var(--bg_highlight);
+    --background-modifier-form-field: var(--bg_dark);
+    --background-modifier-form-field-highlighted: var(--bg_dark);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: var(--green);
+    --background-modifier-error: var(--red1);
+    --background-modifier-error-hover: var(--red);
+    --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
+    --background-modifier: rgba(var(--bg_highlight_x), 0.5);
+    --background-modifier-hover: rgba(var(--bg_highlight_x), 0.7);
+    --background-modifier-message: rgba(var(--bg_highlight_x), 0.9);
+    --background-modifier-active-hover: var(--bg_highlight);
+
+    --text-normal: var(--fg);
+    --text-faint: var(--fg_dark);
+    --text-muted: var(--fg_dark);
+    --text-muted-rgb: var(--fg_dark_x);
+    --text-error: var(--red);
+    --text-accent: var(--magenta);
+    --text-accent-hover: var(--cyan);
+    --text-error: var(--red1);
+    --text-error-hover: var(--red);
+    --text-on-accent: var(--bg);
+    --text-highlight-bg: rgba(var(--orange_x), 0.25);
+    --bold-color: var(--cyan);
+    --italic-color: var(--blue);
+    --insertion-color: var(--orange);
+
+    /* RGB versions for rgba() usage */
+    --magenta-rgb: var(--magenta_x);
+    --magenta-light-rgb: var(--magenta-light_x);
+
+    /* Background RGB variables for blur effects */
+    --background-primary-rgb: var(--bg_x);
+    --background-secondary-rgb: var(--bg_dark_x);
+    --background-modifier-hover-rgb: var(--bg_highlight_x);
+    --menu-background-rgb: var(--bg_dark_x);
+
+    --dropdown-background: rgba(var(--bg_dark_x), 0.3);
+
+
+    --interactive-normal: var(--bg_dark);
+    --interactive-hover: var(--bg);
+    --interactive-success: var(--green);
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: var(--blue);
+    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(var(--text-muted-rgb), 0.15);
+    --scrollbar-active-thumb-bg: rgba(var(--text-muted-rgb), 0.3);
+    --scrollbar-width: 3px;
+
+    --h1-color: var(--red);
+    --h2-color: var(--purple);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--yellow);
+
+    --tag-color: var(--magenta);
+    --tag-background: rgba(var(--magenta_x), 0.15);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.15);
+
+    --link-color: var(--purple);
+    --link-color-hover: var(--cyan);
+    --internal-link-color: var(--green);
+    --internal-link-color-hover: var(--blue);
+    --link-external-color: var(--purple);
+    --link-external-color-hover: var(--cyan);
+    --link-external-color-rgb: var(--purple_x);
+    --link-external-color-hover-rgb: var(--cyan_x);
+
+    --checkbox-border-color: var(--comment);
+    --checkbox-border-color-hover: var(--comment);
+
+    --table-header-background: var(--bg_dark2);
+    --table-header-background-hover: var(--bg_dark2);
+
+    --flashing-background: rgba(var(--blue0_x), 0.3);
+
+
+    --mermaid-note: var(--blue0);
+    --mermaid-actor: var(--fg_dark);
+    --mermaid-loopline: var(--blue);
+
+    --blockquote-background-color: var(--bg_dark);
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    --icon-color-hover: var(--purple);
+    --icon-color-focused: var(--purple);
+    --icon-color-active: var(--purple);
+
+
+    --nav-item-parent-padding: 4px 16px 4px 8px;
+    --nav-item-color: rgba(255, 255, 255, 0.9);
+    --nav-item-color-hover: var(--fg);
+    --nav-item-background-hover: var(--bg_highlight);
+    --nav-item-background-active: var(--bg_highlight);
+    --nav-file-tag: rgba(var(--yellow_x), 0.9);
+    --nav-indentation-guide-color: var(--bg_highlight);
+
+
+    --indentation-guide-color: var(--comment);
+    --indentation-guide-color-active: var(--comment);
+
+    --graph-line: var(--comment);
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+
+    --modal-border-color: var(--bg_highlight);
+    --prompt-border-color: var(--bg_highlight);
+    --slider-track-background: var(--bg_highlight);
+
+    --embed-background: var(--bg_dark);
+    --embed-padding: 1.5rem 1.5rem 0.5rem;
+
+    --canvas-color: var(--bg_highlight_x);
+
+    --toggle-thumb-color: var(--background-primary);
+
+    --image-radius: 0px;
+
+    --date-color: var(--blue);
+    --date-background-color: var(--bg_highlight);
+
+    /* Blockquote colors */
+    --blockquote-color: var(--fg_dark);
+    --blockquote-bg: rgba(var(--cyan_x), 0.08);
+    --blockquote-border: var(--cyan);
+}
+
+
+/* ================================================= */
+
+/* components/checkboxes-toggles.css */
+/* ===== CHECKBOXES & TOGGLES - SIMPLIFIED ===== */
+
+/* Setting items with toggle functionality */
+.setting-item.mod-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Setting item info section */
+.setting-item-info {
+    padding-right: 12px;
+    min-width: 0;
+}
+
+.setting-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-normal);
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.setting-item-description {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+.setting-item-description > div {
+    margin-bottom: 1px;
+}
+
+.setting-item-description > div:last-child {
+    margin-bottom: 0;
+}
+
+/* Setting item control section */
+.setting-item-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+/* Extra setting buttons */
+.extra-setting-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.extra-setting-button:hover {
+    opacity: 1;
+}
+
+/* Checkbox container - simplified */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.checkbox-container:after {
+    margin: 0;
+}
+
+/* Enabled state - simplified */
+.checkbox-container.is-enabled input[type="checkbox"],
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: var(--interactive-accent);
+}
+
+.checkbox-container.is-enabled input[type="checkbox"]::before,
+.checkbox-container input[type="checkbox"]:checked::before {
+    background-color: var(--text-on-accent);
+}
+
+/* Disabled state */
+.checkbox-container input[type="checkbox"]:disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+}
+
+.checkbox-container input[type="checkbox"]:disabled::before {
+    cursor: not-allowed;
+}
+
+/* Installed plugins */
+.installed-plugins-container .setting-item.mod-toggle {
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 4px;
+}
+
+/* ========================================================================== */
+/*                           ENHANCED TYPOGRAPHY                             */
+/* ========================================================================== */
+
+.setting-item-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    font-weight: 500;
+}
+
+.setting-item-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    font-weight: 400;
+}
+
+
+/* ================================================= */
+
+/* components/editor/editor.css */
+body:not(.heading-indicator-off) .markdown-rendered>:is(h1, h2, h3, h4, h5, h6),
+body:not(.heading-indicator-off) .markdown-preview-sizer>div>:is(h1, h2, h3, h4, h5, h6) {
+    position: relative;
+}
+
+body.h1-divider-on :is(.markdown-preview-sizer>div>h1, .markdown-rendered>h1, .HyperMD-header-1)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h1-color) 30%, transparent 70%);
+}
+
+body.h2-divider-on :is(.markdown-preview-sizer>div>h2, .markdown-rendered>h2, .HyperMD-header-2)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h2-color) 30%, transparent 70%);
+}
+
+body.h3-divider-on :is(.markdown-preview-sizer>div>h3, .markdown-rendered>h3, .HyperMD-header-3)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h3-color) 30%, transparent 70%);
+}
+
+body.h4-divider-on :is(.markdown-preview-sizer>div>h4, .markdown-rendered>h4, .HyperMD-header-4)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h4-color) 30%, transparent 70%);
+}
+
+body.h5-divider-on :is(.markdown-preview-sizer>div>h5, .markdown-rendered>h5, .HyperMD-header-5)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h5-color) 30%, transparent 70%);
+}
+
+body.h6-divider-on :is(.markdown-preview-sizer>div>h6, .markdown-rendered>h6, .HyperMD-header-6)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0px;
+    opacity: 0.5;
+    bottom: 0;
+    background: linear-gradient(to left, var(--h6-color) 30%, transparent 70%);
+}
+
+/* Images  */
+
+.image-embed {
+    border-radius: var(--image-radius);
+}
+
+body {
+    --table-width: 88cqw;
+}
+
+.theme-dark,
+.theme-light .markdown-rendered thead tr {
+    background: var(--table-header-background);
+}
+
+body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+    width: 100% !important;
+}
+
+.table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
+.table-width-customized .markdown-rendered table {
+    overflow: auto;
+    width: var(--table-width) !important;
+    margin-left: calc((var(--table-width) - 100%) / -2) !important;
+}
+
+/* callouts */
+.callout[data-callout="quote"] {
+    background-color: var(--blockquote-bg);
+}
+
+.callout[data-callout="cite"] {
+    background-color: rgba(var(--pink_x), 0.1);
+}
+
+.ͼ2 .cm-panels-bottom {
+    border-top: var(--border-width) solid var(--bg_highlight);
+}
+
+.cm-vim-message {
+    color: var(--red);
+}
+
+mjx-math {
+    font-size: 110% !important;
+}
+
+.cm-atom {
+    color: var(--blue);
+}
+
+span.cm-hmd-frontmatter.cm-meta {
+    color: rgba(var(--blue0_x), 0.9);
+}
+
+.cm-hmd-frontmatter {
+    font-size: var(--font-smaller);
+    color: var(--text-faint);
+}
+
+
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Header Spacing Between Header and Paragraph       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+/* Согласование отступов заголовков между режимом редактирования и просмотра */
+.HyperMD-header-1,
+.HyperMD-header-2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.125em;
+}
+
+.HyperMD-header-3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.HyperMD-header-4,
+.HyperMD-header-5,
+.HyperMD-header-6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.075em;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Show Header Hashtags                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* ───────────────────────────────────────────────
+   Minimal Image Captions
+─────────────────────────────────────────────── */
+.minimal-image-captions .image-captions-figure {
+    background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+    background-color: transparent !important;
+    text-align: left !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │    Show Header Levels Instead of Collapse Indicators    │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.show-header-levels-always .HyperMD-header .cm-fold-indicator .collapse-indicator {
+    opacity: 1 !important;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator svg {
+    display: none;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator::before {
+    font-size: calc(var(--font-text-size) * 0.75);
+    font-weight: 600 !important;
+    color: var(--text-faint);
+    width: max-content;
+}
+
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    padding: 16px;
+}
+
+/* Mobile: fixed padding to prevent layout shifts that cause auto-scroll */
+@media (max-width: 768px) {
+    .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+        padding: 12px 16px !important;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   Tags styling (multi-select-pill)
+─────────────────────────────────────────────── */
+.multi-select-pill {
+    line-height: normal;
+}
+
+/* ========================================================================== */
+/*                           CODE BLOCK STYLING                              */
+/* ========================================================================== */
+
+/* Syntax highlighting for code blocks */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: var(--code-comment);
+}
+
+.token.punctuation {
+    color: var(--text-muted);
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: var(--code-property);
+}
+
+.token.boolean,
+.token.number {
+    color: var(--code-number);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: var(--code-string);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: var(--code-operator);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+    color: var(--code-function);
+}
+
+.token.keyword {
+    color: var(--code-keyword);
+}
+
+.token.regex,
+.token.important {
+    color: var(--code-number);
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+
+/* ================================================= */
+
+/* components/editor/headers.css */
+/* ========================================================================== */
+/*                               HEADERS                                     */
+/* ========================================================================== */
+
+/* Header Indicators - optimized with shared styles */
+
+/* Base indicator style - only for markdown content */
+.markdown-preview-view h1::before,
+.markdown-preview-view h2::before,
+.markdown-preview-view h3::before,
+.markdown-preview-view h4::before,
+.markdown-preview-view h5::before,
+.markdown-preview-view h6::before,
+.HyperMD-header::before {
+    content: "▍";
+    opacity: 0.8;
+}
+
+.HyperMD-header {
+    font-weight: normal;
+}
+
+/* Individual header colors */
+.markdown-preview-view h1::before,
+.cm-formatting-header.cm-header-1::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-1:not(.cm-active)::before {
+    color: var(--h1-color);
+}
+
+.markdown-preview-view h2::before,
+.cm-formatting-header.cm-header-2::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-2:not(.cm-active)::before {
+    color: var(--h2-color);
+}
+
+.markdown-preview-view h3::before,
+.cm-formatting-header.cm-header-3::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-3:not(.cm-active)::before {
+    color: var(--h3-color);
+}
+
+.markdown-preview-view h4::before,
+.cm-formatting-header.cm-header-4::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-4:not(.cm-active)::before {
+    color: var(--h4-color);
+}
+
+.markdown-preview-view h5::before,
+.cm-formatting-header.cm-header-5::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-5:not(.cm-active)::before {
+    color: var(--h5-color);
+}
+
+.markdown-preview-view h6::before,
+.cm-formatting-header.cm-header-6::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-6:not(.cm-active)::before {
+    color: var(--h6-color);
+}
+
+
+/* Enhanced Header Styling with left margins */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header-1,
+.HyperMD-header-2,
+.HyperMD-header-3,
+.HyperMD-header-4,
+.HyperMD-header-5,
+.HyperMD-header-6 {
+    position: relative;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 4px;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    pointer-events: auto;
+    cursor: text;
+    z-index: 1;
+}
+
+
+/* underlines for headers */
+.markdown-preview-view h1::after,
+.HyperMD-header-1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--h1-color), transparent);
+    margin-top: 8px;
+}
+
+.markdown-preview-view h2::after,
+.HyperMD-header-2::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, var(--h2-color), transparent);
+    margin-top: 6px;
+    opacity: 0.8;
+}
+
+.markdown-preview-view h3::after,
+.HyperMD-header-3::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background: linear-gradient(to right, var(--h3-color), transparent);
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+/* Outline Enhancement */
+.outline .tree-item-self {
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.tree-item-self.has-active-menu {
+    box-shadow: none;
+}
+
+.outline .tree-item-self::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 60%;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.outline .tree-item-self:hover::before {
+    opacity: 1;
+    width: 4px;
+}
+
+.outline .tree-item-self.is-active::before {
+    opacity: 1;
+    width: 4px;
+}
+
+/* Navigation Breadcrumbs */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: "▶";
+    margin: 0 8px;
+    color: var(--text-faint);
+    font-size: 0.7em;
+}
+
+
+.markdown-preview-view .toc li::before {
+    content: "→";
+    color: var(--accent-color);
+    margin-right: 8px;
+}
+
+/* Header Folding Indicators */
+.cm-fold-indicator .collapse-indicator {
+    color: var(--text-muted) !important;
+}
+
+.cm-fold-indicator:hover .collapse-indicator {
+    color: var(--accent-color) !important;
+}
+
+/* ========================================================================== */
+/*                            TEXT FORMATTING                                */
+/* ========================================================================== */
+
+/* Bold text (strong) */
+.cm-strong,
+strong,
+b {
+    color: var(--cyan) !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 1px rgba(var(--cyan_x), 0.3);
+}
+
+/* Italic text (emphasis) */
+.cm-em,
+em,
+i {
+    color: var(--blue) !important;
+    font-style: italic;
+    text-shadow: 0 0 1px rgba(var(--blue_x), 0.2);
+}
+
+/* Combined bold and italic */
+.cm-strong.cm-em,
+strong em,
+em strong,
+b i,
+i b {
+    color: var(--orange) !important;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 0 0 2px rgba(var(--orange_x), 0.4);
+}
+
+/* insertion */
+ins,
+.cm-ins {
+    text-decoration: none;
+    border-bottom: 2px solid var(--insertion-color);
+}
+
+
+
+
+
+/* Header colors - optimized */
+.markdown-preview-view h1,
+.markdown-preview-view h1 *,
+.HyperMD-header-1,
+.HyperMD-header-1 *,
+.cm-header-1,
+.cm-header-1 * {
+    color: var(--h1-color) !important;
+}
+
+.markdown-preview-view h2,
+.markdown-preview-view h2 *,
+.HyperMD-header-2,
+.HyperMD-header-2 *,
+.cm-header-2,
+.cm-header-2 * {
+    color: var(--h2-color) !important;
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h3 *,
+.HyperMD-header-3,
+.HyperMD-header-3 *,
+.cm-header-3,
+.cm-header-3 * {
+    color: var(--h3-color) !important;
+}
+
+.markdown-preview-view h4,
+.markdown-preview-view h4 *,
+.HyperMD-header-4,
+.HyperMD-header-4 *,
+.cm-header-4,
+.cm-header-4 * {
+    color: var(--h4-color) !important;
+}
+
+.markdown-preview-view h5,
+.markdown-preview-view h5 *,
+.HyperMD-header-5,
+.HyperMD-header-5 *,
+.cm-header-5,
+.cm-header-5 * {
+    color: var(--h5-color) !important;
+}
+
+.markdown-preview-view h6,
+.markdown-preview-view h6 *,
+.HyperMD-header-6,
+.HyperMD-header-6 *,
+.cm-header-6,
+.cm-header-6 * {
+    color: var(--h6-color) !important;
+}
+
+/* Strikethrough text */
+.cm-strikethrough,
+s,
+del {
+    color: var(--red) !important;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+/* Highlighted text (mark) - Simple and clean */
+mark,
+.cm-highlight {
+    background: var(--text-highlight-bg);
+    color: var(--text-normal);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+    transition: none;
+}
+
+mark:hover,
+.cm-highlight:hover {
+    background: rgba(var(--orange_x), 0.35);
+}
+
+/* Highlighted text inside callouts - adapt to callout color */
+.callout mark,
+.HyperMD-callout .cm-highlight {
+    background-color: rgba(var(--text-normal-rgb), 0.15);
+    border-radius: 3px;
+    color: inherit !important;
+    font-weight: 600;
+    border-bottom: 1px dotted rgba(var(--callout-color), 0.3);
+}
+
+/* ========================================================================== */
+/*                               BLOCKQUOTES                                 */
+/* ========================================================================== */
+
+/* Style formatting elements in live preview */
+.cm-formatting.cm-formatting-quote,
+.cm-formatting.cm-formatting-quote-1 {
+    color: var(--blockquote-accent) !important;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/* Beautiful blockquote styling for both reading and live preview */
+blockquote {
+    border: none;
+    border-left: 2px solid var(--blockquote-border);
+    background: var(--blockquote-bg);
+    padding: 12px 16px;
+    margin: 20px 0;
+    border-radius: 6px;
+    color: var(--blockquote-color);
+    font-style: normal;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(var(--cyan_x), 0.1);
+}
+
+/* Beautiful quote mark - positioned to not interfere with text selection */
+blockquote::before {
+    content: "𒀭";
+    color: var(--blockquote-quote-mark);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    line-height: 1;
+    font-family: 'Georgia', serif;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Content styling - ensure text is selectable */
+blockquote p {
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+
+/* ================================================= */
+
+/* components/editor/spoiler.css */
+/* ========================================================================== */
+/*                               SPOILERS                                    */
+/* ========================================================================== */
+
+.spoiler{
+    position: relative;
+    background-color: var(--background-modifier) !important;
+    color: transparent !important;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+}
+
+.spoiler::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0.9;
+    background-image:
+        radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
+    background-repeat: repeat;
+    animation: snowfall 1.5s linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 40px;
+    }
+}
+
+.spoiler:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+.spoiler.spoiler-revealed {
+    background-color: var(--background-modifier-hover) !important;
+    color: var(--text-normal) !important;
+}
+
+.cm-spoiler {
+    position: relative;
+    background-color: var(--background-modifier-hover) !important;
+    color: var(--text-normal) !important;
+    border-radius: 4px;
+    padding: 2px 6px;
+    overflow: hidden;
+}
+
+.cm-spoiler::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    background-image:
+        radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
+    background-repeat: repeat;
+    background-size: 100px 40px;
+    animation: snowfall 1.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .spoiler::before,
+    .cm-spoiler::before {
+        animation: none !important;
+    }
+}
+
+
+/* ================================================= */
+
+/* components/form-elements.css */
+/* ========================================================================== */
+/*                              FORM ELEMENTS                                */
+/* ========================================================================== */
+
+/* Material Design 3 Buttons */
+.mod-cta {
+  border-radius: 10px;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+
+.mod-cta:hover {
+  box-shadow: 0 4px 16px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+}
+
+.mod-cta:active {
+  box-shadow: 0 2px 8px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+}
+
+/* Enhanced Input Fields */
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border-radius: 12px;
+  border: 1px solid rgba(var(--text-muted-rgb), 0.2);
+}
+
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  background: rgba(var(--background-secondary), 0.3);
+}
+
+input.prompt-input {
+  background: rgba(var(--bg-primary-rgb), 0.5);
+}
+
+/* Enhanced Dropdowns */
+.dropdown {
+  padding: 8px 12px;
+  transition: none;
+  min-height: 36px;
+  font-size: 14px;
+  outline: none;
+  color: var(--text-normal);
+}
+
+.dropdown:focus {
+  border-color: var(--accent-color);
+  background: var(--background-secondary);
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.dropdown:hover {
+  border-color: rgba(var(--text-muted-rgb), 0.5);
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY IMPROVEMENTS                        */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .mod-cta {
+    border: 2px solid var(--text-normal);
+    background: var(--background-primary);
+    color: var(--text-normal);
+  }
+
+  .mod-cta:hover,
+  .mod-cta:focus {
+    background: var(--accent-color);
+    color: var(--text-on-accent);
+    border-color: var(--accent-color);
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  .dropdown {
+    border: 1px solid var(--text-muted);
+    background: var(--background-primary);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mod-cta,
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  .dropdown {
+    transition: none !important;
+  }
+}
+
+/* ========================================================================== */
+/*                           FORM VALIDATION                                 */
+/* ========================================================================== */
+
+/* Error states */
+input[type="text"].error,
+input[type="search"].error,
+input[type="email"].error,
+input[type="password"].error,
+textarea.error,
+.dropdown.error {
+  border-color: var(--text-error);
+  background: rgba(var(--text-error-rgb), 0.05);
+}
+
+/* Success states */
+input[type="text"].success,
+input[type="search"].success,
+input[type="email"].success,
+input[type="password"].success,
+textarea.success,
+.dropdown.success {
+  border-color: var(--text-success);
+  background: rgba(var(--text-success-rgb), 0.05);
+}
+
+/* ========================================================================== */
+/*                            FORM LAYOUT                                    */
+/* ========================================================================== */
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--text-normal);
+  font-size: 14px;
+}
+
+/* Form buttons */
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+
+/* ================================================= */
+
+/* components/interface-fixes.css */
+/* ========================================================================== */
+/*                             INTERFACE FIXES                               */
+/* ========================================================================== */
+
+
+
+.view-action:hover {
+    background: var(--background-modifier-hover);
+}
+
+
+/* ========================================================================== */
+/*                             OVERFLOW FIXES                                */
+/* ========================================================================== */
+
+/* Clean overflow fixes - only where actually needed */
+.nav-files-container {
+    overflow: auto;
+}
+
+/* Essential overflow settings for content areas */
+.workspace-leaf-content .view-content,
+.nav-files-container {
+    overflow: auto;
+}
+
+.markdown-rendered p {
+    margin-block-end: 0;
+}
+
+
+/* ================================================= */
+
+/* components/menus-navigation.css */
+/* ========================================================================== */
+/*                           MENUS & NAVIGATION                              */
+/* ========================================================================== */
+
+/* Menu styling with blur effects */
+.suggestion-container,
+.menu {
+    background: rgba(var(--bg-secondary-rgb), 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(var(--text-normal), 0.3);
+}
+
+
+
+.menu-item {
+    border-radius: 6px;
+    color: var(--text-normal);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.is-selected,
+.menu-item.is-focused {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Callout Styling */
+.callout {
+    padding: var(--callout-padding);
+    border-radius: 12px;
+    border-width: 1px;
+    margin: 0.5em 0;
+}
+
+.markdown-source-view.mod-cm6 .callout {
+    margin: 0.3em 0;
+}
+
+
+
+
+
+
+.workspace-tab-header:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+
+/* Enhanced Card Design */
+.workspace-leaf-content,
+.markdown-preview-view,
+.markdown-source-view {
+    border-radius: 12px;
+}
+
+
+/* ========================================================================== */
+/*                          ACCESSIBILITY IMPROVEMENTS                       */
+/* ========================================================================== */
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title {
+        border: 1px solid var(--text-muted);
+    }
+
+    .menu-item:hover,
+    .suggestion-item:hover,
+    .workspace-tab-header:hover,
+    .nav-file-title:hover,
+    .nav-folder-title:hover {
+        border-color: var(--accent-color);
+    }
+
+    .menu-item.is-selected,
+    .suggestion-item.is-selected {
+        border-color: var(--accent-color);
+        border-width: 1px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title,
+    .callout {
+        transition: none !important;
+    }
+}
+
+/* Focus indicators */
+.menu-item:focus,
+.suggestion-item:focus,
+.workspace-tab-header:focus,
+.nav-file-title:focus,
+.nav-folder-title:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* ========================================================================== */
+/*                        PERFORMANCE OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+
+    .menu-item,
+    .suggestion-item,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title {
+        transition-duration: 0s;
+    }
+
+    /* Keep blur effects on mobile for better visual appeal */
+}
+
+/* Optimize for touch scrolling - DISABLED smooth scroll to prevent auto-scroll */
+@media (max-width: 768px) {
+
+    .suggestion-container,
+    .menu,
+    .workspace-tabs {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========================================================================== */
+/*                           LANDSCAPE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Landscape mobile adjustments */
+@media (max-width: 1024px) and (orientation: landscape) {
+
+
+    .menu-item {
+        padding: 6px 12px;
+        min-height: 32px;
+    }
+
+    .nav-file-title,
+    .nav-folder-title {
+        min-height: 32px;
+    }
+
+    /* Compact modals in landscape */
+    .modal {
+        max-height: 70vh;
+        margin: 16px;
+    }
+}
+
+/* ========================================================================== */
+/*                            FUTURE-PROOFING                               */
+/* ========================================================================== */
+
+/* Container query support */
+@supports (container-type: inline-size) {
+    .workspace-leaf {
+        container-type: inline-size;
+    }
+
+    @container (max-width: 400px) {
+        .workspace-tab-header {
+            height: 36px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+/* ================================================= */
+
+/* components/modals.css */
+/* ======================================================================== */
+/*                              MODAL STYLES                               */
+/* ======================================================================== */
+
+/* Modal backdrop with blur effect */
+.modal-bg {
+    background: rgba(var(--background-modifier-cover), 0.6);
+    backdrop-filter: blur(8px);
+    opacity: 1 !important;
+}
+
+
+.horizontal-tab-content, .vertical-tab-content, .vertical-tab-header {
+    background: rgba(var(--bg_dark_x), 0.6);
+}
+
+.prompt,
+.modal {
+    background-color: rgba(var(--background-primary-rgb), 0.5) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--prompt-border-color);
+    border-radius: var(--radius-l);
+}
+
+/* Modal content areas */
+.modal-content,
+.modal-sidebar {
+    background: transparent;
+}
+.community-item {
+    background-color: rgba(var(--background-primary-rgb), 0.4);
+
+}
+
+/* Modal header */
+.modal-header {
+    border-bottom: 1px solid var(--background-modifier-border);
+    background: transparent;
+}
+
+
+
+/* Community plugins and other modals */
+.community-modal-info,
+.modal-form {
+    background: transparent;
+}
+
+/* Hotkey settings modal */
+.hotkey-settings-container {
+    background: transparent;
+}
+
+
+/* ================================================= */
+
+/* components/navigation.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Sidebars & Dock Areas                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher.has-active-menu {
+    opacity: 1;
+}
+
+/* Hide vault action buttons (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+    display: none !important;
+}
+
+
+/* Add beautiful blur to sidebars */
+.workspace-drawer.mod-left,
+.workspace-drawer.mod-right {
+    background-color: rgba(var(--bg_x), 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(var(--background-modifier-border-rgb), 0.3);
+}
+
+/* Navigation Item Colors */
+.nav-file-title,
+.nav-folder-title {
+    color: var(--nav-item-color);
+}
+
+/* Remove default ellipsis from navigation titles */
+.nav-file-title-content:not([contenteditable="true"]),
+.nav-folder-title-content:not([contenteditable="true"]) {
+    text-overflow: unset !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    line-height: 1.3;
+}
+
+/* Ensure single line display without wrapping */
+.nav-file-title,
+.nav-folder-title {
+    white-space: nowrap;
+    overflow: visible;
+    min-height: auto;
+}
+
+/* ========================================================================== */
+/*                            NAVIGATION STRUCTURE                           */
+/* ========================================================================== */
+
+/* File explorer container */
+.nav-files-container {
+    padding: 2px 4px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Active file highlighting - minimal */
+.nav-file.is-active {
+    background-color: transparent;
+    color: var(--text-accent);
+}
+
+.nav-file.is-active .nav-file-title-content {
+    color: var(--text-accent);
+    font-weight: 500;
+}
+
+/* ========================================================================== */
+/*                             FOLDER STYLES                                 */
+/* ========================================================================== */
+
+/* Folder collapse/expand */
+.nav-folder.mod-root>.nav-folder-title {
+    font-weight: 600;
+    color: var(--text-normal);
+    font-size: 13px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+}
+
+.nav-folder-title {
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 0.15s ease;
+}
+
+.nav-folder-title:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+/* Folder icons */
+.nav-folder-collapse-indicator {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease;
+}
+
+/* Folder children */
+.nav-folder-children {
+    padding-left: 12px;
+    margin-left: 4px;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+/* ========================================================================== */
+/*                              FILE STYLES                                  */
+/* ========================================================================== */
+
+/* File items */
+.nav-file-title {
+    cursor: pointer;
+    padding: 2px 2px 2px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 0.15s ease;
+    min-height: 22px;
+}
+
+.nav-file-title:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+/* File content */
+.nav-file-title-content {
+    flex: 1;
+    font-size: 13px;
+    color: var(--text-normal);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* File extensions */
+.nav-file-title-content::after {
+    content: "";
+    display: none;
+}
+
+/* Hide file extension by default */
+.nav-file-title-content[data-path$=".md"]::after {
+    display: none;
+}
+
+/* ========================================================================== */
+/*                           MOBILE OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+/* Mobile touch targets */
+@media (max-width: 768px) {
+
+    .nav-file-title,
+    .nav-folder-title {
+        font-size: 14px;
+    }
+
+    .nav-file-title-content,
+    .nav-folder-title-content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .nav-files-container {
+        padding: 4px 8px;
+    }
+
+    .nav-folder-children {
+        padding-left: 16px;
+        margin-left: 8px;
+    }
+
+    .nav-folder-collapse-indicator {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Larger touch targets for mobile */
+    .nav-file,
+    .nav-folder {
+        margin-bottom: 1px;
+        border-radius: 4px;
+    }
+
+    /* No background highlighting on mobile */
+    .nav-file:active,
+    .nav-folder:active {
+        background-color: transparent;
+        transition: none;
+    }
+
+
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .nav-files-container {
+        padding: 6px 10px;
+    }
+
+    .nav-folder-children {
+        padding-left: 18px;
+        margin-left: 10px;
+    }
+}
+
+/* ========================================================================== */
+/*                           DRAG AND DROP SUPPORT                           */
+/* ========================================================================== */
+
+/* Drag hover states - neutral styling */
+.nav-file.is-being-dragged,
+.nav-folder.is-being-dragged {
+    opacity: 0.5;
+}
+
+.nav-file.is-being-dragged-over,
+.nav-folder.is-being-dragged-over {
+    background: rgba(var(--text-muted-rgb), 0.15);
+    border: 2px dashed rgba(var(--text-muted-rgb), 0.4);
+    border-radius: 4px;
+}
+
+.nav-file.is-being-dragged-over .nav-file-title-content,
+.nav-folder.is-being-dragged-over .nav-folder-title-content {
+    font-weight: 500;
+}
+
+/* ========================================================================== */
+/*                            SEARCH HIGHLIGHTING                            */
+/* ========================================================================== */
+
+/* Search results in navigation */
+.nav-file-title-content mark,
+.nav-folder-title-content mark {
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+/* Search match highlighting */
+.nav-file.is-search-match,
+.nav-folder.is-search-match {
+    background-color: var(--background-modifier-success);
+    border-left: 3px solid var(--text-accent);
+}
+
+/* ========================================================================== */
+/*                           ACCESSIBILITY SUPPORT                           */
+/* ========================================================================== */
+
+/* Focus indicators */
+.nav-file-title:focus,
+.nav-folder-title:focus {
+    outline: 2px solid var(--interactive-accent);
+    outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .nav-file-title,
+    .nav-folder-title {
+        border: 1px solid var(--background-modifier-border);
+    }
+
+    .nav-file.is-active {
+        border: 2px solid var(--interactive-accent);
+    }
+
+    .nav-file-title-content,
+    .nav-folder-title-content {
+        color: var(--text-normal);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title,
+    .nav-folder-collapse-indicator {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ========================================================================== */
+/*                         PERFORMANCE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title {
+        transition-duration: 0s;
+    }
+
+    .nav-folder-collapse-indicator {
+        transition-duration: 0s;
+    }
+}
+
+/* Remove complex effects on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+
+    .nav-file,
+    .nav-folder,
+    .nav-file-title,
+    .nav-folder-title,
+    .nav-folder-collapse-indicator {
+        transition: none;
+    }
+
+    .nav-file.is-being-dragged,
+    .nav-folder.is-being-dragged {
+        transform: none;
+    }
+}
+
+/* GPU acceleration for smooth scrolling */
+.nav-files-container {
+    transform: none;
+}
+
+/* ========================================================================== */
+/*                            CUSTOM ENHANCEMENTS                            */
+/* ========================================================================== */
+
+/* Recent files highlighting */
+.nav-file.is-recent {
+    position: relative;
+}
+
+.nav-file.is-recent::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: none;
+    width: 3px;
+    height: 12px;
+    background-color: var(--interactive-accent);
+    border-radius: 2px;
+}
+
+/* Pinned files */
+.nav-file.is-pinned .nav-file-title-content::before {
+    content: "📌";
+    margin-right: 6px;
+    font-size: 10px;
+}
+
+/* ========================================================================== */
+/*                           COMPACT MODE SUPPORT                            */
+/* ========================================================================== */
+
+/* Compact navigation mode */
+.nav-files-container.is-compact {
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+.nav-files-container.is-compact .nav-file-title,
+.nav-files-container.is-compact .nav-folder-title {
+    min-height: 20px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.nav-files-container.is-compact .nav-folder-children {
+    padding-left: 12px;
+    margin-left: 6px;
+}
+
+.nav-files-container.is-compact .nav-folder-collapse-indicator {
+    width: 12px;
+    height: 12px;
+}
+
+/* ========================================================================== */
+/*                           THEME INTEGRATION                               */
+/* ========================================================================== */
+
+
+
+
+/* ========================================================================== */
+/*                           FOLDER NOTES STYLING                            */
+/* ========================================================================== */
+
+.folder-note-cursive .has-folder-note .nav-folder-title-content,
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb {
+    color: var(--folder-note-color);
+    font-style: italic;
+    font-weight: 450;
+}
+
+.folder-note-cursive .has-folder-note .nav-folder-title-content,
+.view-header .view-header-breadcrumb.has-folder-note {
+    border-bottom: 1px solid rgba(var(--folder-note-color_x), 0.3);
+}
+
+.view-header .view-header-breadcrumb.has-folder-note {
+    color: var(--folder-note-color);
+    font-style: italic;
+    font-weight: 450;
+    text-decoration: none;
+}
+
+.folder-note-cursive .has-folder-note .nav-folder-title:hover .nav-folder-title-content {
+    color: var(--magenta-light);
+    border-bottom-color: rgba(var(--folder-note-color_x), 0.8);
+}
+
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb {
+    background: rgba(var(--folder-note-color_x), 0.08);
+    border-bottom: 1px solid rgba(var(--folder-note-color_x), 0.2);
+}
+
+.folder-note-cursive-path .has-folder-note.view-header-breadcrumb:hover {
+    background: rgba(var(--folder-note-color_x), 0.15);
+    border-bottom-color: rgba(var(--folder-note-color_x), 0.5);
+}
+
+.tree-item-self.mod-collapsible {
+    padding: 2px 8px 2px 28px;
+}
+
+
+/* ================================================= */
+
+/* components/scrollbars.css */
+/* Hide all scrollbars by default */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+/* ========================================================================== */
+/*                           CONTENT AREAS ONLY                              */
+/* ========================================================================== */
+
+/* Show scrollbars only on main content areas */
+.workspace-leaf-content::-webkit-scrollbar,
+.markdown-source-view::-webkit-scrollbar,
+.markdown-preview-view::-webkit-scrollbar,
+.cm-scroller::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.workspace-leaf-content::-webkit-scrollbar-track,
+.markdown-source-view::-webkit-scrollbar-track,
+.markdown-preview-view::-webkit-scrollbar-track,
+.cm-scroller::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+.workspace-leaf-content::-webkit-scrollbar-thumb,
+.markdown-source-view::-webkit-scrollbar-thumb,
+.markdown-preview-view::-webkit-scrollbar-thumb,
+.cm-scroller::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+/* Show scrollbars only on hover */
+.workspace-leaf-content:hover::-webkit-scrollbar-thumb,
+.markdown-source-view:hover::-webkit-scrollbar-thumb,
+.markdown-preview-view:hover::-webkit-scrollbar-thumb,
+.cm-scroller:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+}
+
+.workspace-leaf-content:hover::-webkit-scrollbar-thumb:hover,
+.markdown-source-view:hover::-webkit-scrollbar-thumb:hover,
+.markdown-preview-view:hover::-webkit-scrollbar-thumb:hover,
+.cm-scroller:hover::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-active-thumb-bg);
+}
+
+/* Show scrollbars when content is focused - keep subtle */
+.workspace-leaf-content:focus-within::-webkit-scrollbar-thumb,
+.markdown-source-view:focus-within::-webkit-scrollbar-thumb,
+.markdown-preview-view:focus-within::-webkit-scrollbar-thumb,
+.cm-scroller:focus-within::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+}
+
+/* ========================================================================== */
+/*                          MOBILE - COMPLETELY HIDDEN                       */
+/* ========================================================================== */
+
+/* Mobile - hide all scrollbars completely */
+@media (max-width: 768px) {
+
+    ::-webkit-scrollbar,
+    .workspace-leaf-content::-webkit-scrollbar,
+    .markdown-source-view::-webkit-scrollbar,
+    .markdown-preview-view::-webkit-scrollbar,
+    .cm-scroller::-webkit-scrollbar {
+        width: 0px !important;
+        height: 0px !important;
+        display: none !important;
+    }
+
+    /* Ensure smooth scrolling on mobile - DISABLED to prevent auto-scroll */
+    .workspace-leaf-content,
+    .markdown-preview-view,
+    .markdown-source-view,
+    .cm-scroller {
+        scroll-behavior: auto;
+        scrollbar-width: none;
+    }
+
+    /* Hide all scrollbar elements */
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-thumb {
+        display: none !important;
+    }
+}
+
+/* ========================================================================== */
+/*                          DESKTOP - HOVER ONLY                             */
+/* ========================================================================== */
+
+/* Desktop - subtle scrollbars on hover */
+@media (min-width: 769px) {
+
+    /* Main content scrollbars */
+    .workspace-leaf-content::-webkit-scrollbar,
+    .markdown-source-view::-webkit-scrollbar,
+    .markdown-preview-view::-webkit-scrollbar,
+    .cm-scroller::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    /* Default state - invisible */
+    .workspace-leaf-content::-webkit-scrollbar-thumb,
+    .markdown-source-view::-webkit-scrollbar-thumb,
+    .markdown-preview-view::-webkit-scrollbar-thumb,
+    .cm-scroller::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    /* Hover state - barely visible */
+    .workspace-leaf-content:hover::-webkit-scrollbar-thumb,
+    .markdown-source-view:hover::-webkit-scrollbar-thumb,
+    .markdown-preview-view:hover::-webkit-scrollbar-thumb,
+    .cm-scroller:hover::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb-bg);
+    }
+
+    /* Scrollbar thumb hover - more visible */
+    .workspace-leaf-content:hover::-webkit-scrollbar-thumb:hover,
+    .markdown-source-view:hover::-webkit-scrollbar-thumb:hover,
+    .markdown-preview-view:hover::-webkit-scrollbar-thumb:hover,
+    .cm-scroller:hover::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollbar-active-thumb-bg);
+    }
+}
+
+/* ========================================================================== */
+/*                         EXCLUDE SMALL ELEMENTS                            */
+/* ========================================================================== */
+
+/* Never show scrollbars on small elements */
+.clickable-icon::-webkit-scrollbar,
+.nav-action-button::-webkit-scrollbar,
+.tree-item::-webkit-scrollbar,
+.nav-file::-webkit-scrollbar,
+.nav-folder::-webkit-scrollbar,
+.workspace-tab-header::-webkit-scrollbar,
+.titlebar::-webkit-scrollbar,
+.status-bar::-webkit-scrollbar,
+.status-bar-item::-webkit-scrollbar,
+.sidebar-toggle-button::-webkit-scrollbar,
+.view-action::-webkit-scrollbar,
+.setting-item::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+}
+
+/* ========================================================================== */
+/*                          SPECIAL CONTEXTS                                 */
+/* ========================================================================== */
+
+/* Modals and popups - minimal scrollbars */
+.modal::-webkit-scrollbar,
+.popover::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.modal::-webkit-scrollbar-thumb,
+.popover::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+.modal:hover::-webkit-scrollbar-thumb,
+.popover:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+}
+
+/* Suggestion containers - no scrollbars */
+.suggestion-container::-webkit-scrollbar,
+.menu::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+}
+
+/* Code blocks - minimal horizontal scrollbar */
+pre::-webkit-scrollbar {
+    width: 0px;
+    height: 3px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+pre:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+}
+
+/* Tables - horizontal scrollbar only */
+.table-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 3px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+.table-wrapper:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-active-thumb-bg);
+}
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY SUPPORT                             */
+/* ========================================================================== */
+
+/* High contrast mode - always visible scrollbars */
+@media (prefers-contrast: high) {
+
+    .workspace-leaf-content::-webkit-scrollbar-thumb,
+    .markdown-source-view::-webkit-scrollbar-thumb,
+    .markdown-preview-view::-webkit-scrollbar-thumb,
+    .cm-scroller::-webkit-scrollbar-thumb {
+        background: rgba(var(--text-normal-rgb), 0.3) !important;
+        border: 1px solid var(--background-primary);
+    }
+
+    .workspace-leaf-content::-webkit-scrollbar-track,
+    .markdown-source-view::-webkit-scrollbar-track,
+    .markdown-preview-view::-webkit-scrollbar-track,
+    .cm-scroller::-webkit-scrollbar-track {
+        background: var(--background-secondary);
+        border: 1px solid var(--text-muted);
+    }
+}
+
+/* Reduced motion - no hover transitions */
+@media (prefers-reduced-motion: reduce) {
+
+    .workspace-leaf-content::-webkit-scrollbar-thumb,
+    .markdown-source-view::-webkit-scrollbar-thumb,
+    .markdown-preview-view::-webkit-scrollbar-thumb,
+    .cm-scroller::-webkit-scrollbar-thumb {
+        transition: none !important;
+    }
+}
+
+
+
+
+/* ========================================================================== */
+/*                           FIREFOX SCROLLBARS                              */
+/* ========================================================================== */
+
+/* Firefox - hide scrollbars by default */
+* {
+    scrollbar-width: none;
+}
+
+/* Firefox - show thin scrollbars on main content */
+.workspace-leaf-content,
+.markdown-source-view,
+.markdown-preview-view,
+.cm-scroller {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+/* Firefox - show scrollbars on hover */
+.workspace-leaf-content:hover,
+.markdown-source-view:hover,
+.markdown-preview-view:hover,
+.cm-scroller:hover {
+    scrollbar-color: var(--scrollbar-thumb-bg) transparent;
+}
+
+/* ========================================================================== */
+/*                         PERFORMANCE OPTIMIZATIONS                         */
+/* ========================================================================== */
+
+/* Disable scrollbars on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+
+    ::-webkit-scrollbar,
+    .workspace-leaf-content::-webkit-scrollbar,
+    .markdown-source-view::-webkit-scrollbar,
+    .markdown-preview-view::-webkit-scrollbar,
+    .cm-scroller::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    * {
+        scrollbar-width: none !important;
+    }
+}
+
+
+/* ================================================= */
+
+/* components/status-progress.css */
+/* ========================================================================== */
+/*                          STATUS BAR & PROGRESS                            */
+/* ========================================================================== */
+
+/* Simple Status Bar */
+.status-bar {
+  background: transparent !important;
+  border: none !important;
+  transition: none;
+}
+
+.status-bar-item {
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: none;
+  cursor: pointer;
+
+  opacity: 0.4;
+  background: rgba(var(--bg-secondary-rgb), 0.3);
+  color: var(--text-muted);
+}
+
+.status-bar-item:hover {
+  opacity: 1;
+  color: var(--text-normal);
+  background: rgba(var(--bg-secondary-rgb), 0.8);
+}
+
+/* Status bar deemphasize - make elements even more transparent */
+.deemphasize-status-bar .status-bar-item {
+  opacity: 0.2;
+}
+
+.deemphasize-status-bar .status-bar-item:hover {
+  opacity: 0.8;
+}
+
+/* Mobile status bar */
+@media (max-width: 768px) {
+  .status-bar-item {
+    padding: 4px 6px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+
+/* ================================================= */
+
+/* components/style-settings.css */
+/* ========================================================================== */
+/*                              STYLE SETTINGS                               */
+/* ========================================================================== */
+
+/* Style Settings Container */
+.style-settings-container .themed-color-wrapper {
+  display: flex;
+  gap: var(--size-4-2);
+}
+
+.style-settings-container .themed-color-wrapper>div+div {
+  margin-top: 0;
+}
+
+.style-settings-container {
+  margin-left: var(--size-4-1);
+  padding-left: var(--size-4-8);
+  border-left: 1px solid var(--divider-color);
+}
+
+
+/* ================================================= */
+
+/* components/titlebar.css */
+/* ========================================================================== */
+/*                                TITLEBAR                                   */
+/* ========================================================================== */
+
+/* Titlebar Button Container */
+.titlebar-button-container.mod-right {
+  gap: 2px;
+}
+
+.titlebar-button-container.mod-right .titlebar-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  background: rgba(var(--text-normal-rgb), 0.15);
+  border: 1px solid rgba(var(--text-normal-rgb), 0.1);
+  padding: 0px !important;
+}
+
+.titlebar-button-container.mod-right .titlebar-button:hover {
+  background: rgba(var(--text-normal-rgb), 0.6);
+  border-color: rgba(var(--text-normal-rgb), 0.2);
+}
+
+/* Close button - make it clearly red and visible */
+.titlebar-button-container.mod-right .titlebar-button:last-child {
+  background: rgba(255, 59, 48, 0.2);
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.titlebar-button-container.mod-right .titlebar-button:last-child:hover {
+  background: rgba(255, 59, 48, 0.4);
+  border-color: rgba(255, 59, 48, 0.5);
+}
+
+.titlebar-button-container.mod-right .titlebar-button:last-child svg {
+  color: #ff3b30 !important;
+  filter: brightness(1.2);
+}
+
+.titlebar-button-container.mod-right .titlebar-button svg {
+  width: 14px;
+  height: 14px;
+  opacity: 1 !important;
+  color: var(--text-normal);
+  filter: contrast(1.2);
+}
+
+/* Fix general titlebar button padding */
+.titlebar-button {
+  -webkit-app-region: no-drag;
+  display: inline-flex;
+  align-items: center;
+}
+
+.mod-linux .titlebar-button,
+.mod-windows .titlebar-button {
+  display: flex;
+  align-items: center;
+  height: auto !important;
+  min-height: 24px;
+}
+
+
+/* ================================================= */
+
+/* components/tooltips-links.css */
+/* ========================================================================== */
+/*                           TOOLTIPS & LINKS                                */
+/* ========================================================================== */
+
+/* Tooltips */
+.tooltip {
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: var(--text-normal);
+  background: rgba(var(--background-primary-rgb), 0.8);
+}
+
+
+/* External Links */
+.external-link,
+.cm-link:not(.internal-link),
+.cm-url {
+  color: var(--link-external-color) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(var(--link-external-color-rgb), 0.5);
+  padding-inline-end: 0;
+  background: none;
+}
+
+.external-link:hover,
+.cm-link:not(.internal-link):hover,
+.cm-url:hover {
+  color: var(--link-external-color-hover) !important;
+  border-bottom-color: rgba(var(--link-external-color-hover-rgb), 0.7);
+  text-decoration: none !important;
+}
+
+/* Force disable filter on external links */
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url,
+.external-link {
+  filter: none !important;
+}
+
+/* Remove underline from child 'a' tags */
+.cm-link:not(.internal-link) a.cm-underline,
+.cm-url a.cm-underline {
+    text-decoration: none !important;
+}
+
+/* Internal Links - NO underline anywhere */
+a.internal-link,
+.cm-hmd-internal-link,
+.cm-hmd-internal-link a,
+.HyperMD-header .cm-hmd-internal-link a,
+.cm-link,
+.cm-link .cm-hmd-internal-link,
+.markdown-preview-view .internal-link,
+.markdown-source-view .internal-link,
+.internal-link {
+  color: var(--internal-link-color) !important;
+  text-decoration: none !important;
+  transition: none;
+}
+
+a.internal-link:hover,
+.cm-hmd-internal-link:hover,
+.cm-hmd-internal-link a:hover,
+.internal-link:hover {
+  color: var(--internal-link-color-hover) !important;
+  text-decoration: none !important;
+}
+
+a.external-link::after {
+  content: ' ';
+  width: 12px;
+  height: 12px;
+  background-image: linear-gradient(transparent, transparent), url(public/images/6155340132a851f6089e.svg);
+  background-size: contain;
+  display: inline-block;
+  vertical-align: text-top;
+  opacity: 0.7;
+  transition: none;
+  border-bottom: none !important;
+}
+
+a.external-link:hover::after {
+  opacity: 1;
+}
+
+/* Notices */
+.notice {
+  border-radius: var(--radius-l);
+  backdrop-filter: blur(16px);
+  background: rgba(var(--background-secondary-rgb), 0.9);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: var(--text-normal);
+}
+
+/* Additional notice style */
+.notice {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Tree Item Flair */
+.tree-item-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+/* Prompt Instructions */
+.prompt-instructions {
+  display: none;
+}
+
+/* Suggestion Items */
+.suggestion-item.is-selected {
+  background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  border-radius: var(--radius-m);
+}
+
+/* Buttons */
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  transition: none;
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
+
+/* ================================================= */
+
+/* components/workspace.css */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │            Workspace Tabs (Tab Bar, Headers)            │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Always hide tab bar */
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+    display: none;
+}
+
+
+
+/* Show navigation buttons in view header */
+.view-header-nav-buttons {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* Hide only when disabled/unavailable */
+.view-header-nav-buttons .clickable-icon[aria-disabled="true"] {
+    display: none;
+}
+
+/* Simple navigation button styling */
+.view-header-nav-buttons .clickable-icon {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.view-header-nav-buttons .clickable-icon:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.view-header-nav-buttons .clickable-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.view-header-nav-buttons .clickable-icon:hover svg {
+    opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Titlebar Draggability Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.view-header-title-container {
+    -webkit-app-region: drag;
+    border-radius: 8px;
+    transition: none;
+}
+
+
+.view-header-title-container div {
+    -webkit-app-region: no-drag;
+}
+
+
+/* ========================================================================== */
+/*                               SIDEBARS                                     */
+/* ========================================================================== */
+
+/* Tab container background */
+.workspace-tabs {
+    border-radius: 8px;
+}
+
+.workspace-tab-header-container {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+}
+
+/* Individual tab styling */
+.workspace-tab-header {
+    background: var(--tab-background);
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.15s ease;
+    border: none;
+    margin: 2px;
+}
+
+.workspace-tab-header:hover:not(.is-active) {
+    background: var(--tab-background-hover);
+}
+
+/* Titlebar styling */
+.titlebar {
+    background: var(--titlebar-background);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.3);
+}
+
+
+
+
+
+/* Workspace split and additional elements */
+.workspace-tabs .workspace-leaf {
+    background: var(--workspace-background-translucent);
+}
+
+.workspace-leaf-resize-handle {
+    background: var(--workspace-background-translucent);
+}
+
+
+/* Sidebar Toggle Buttons - Always show by default */
+.sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-left {
+    display: flex;
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+}
+
+.sidebar-toggle-button.mod-right:hover,
+.sidebar-toggle-button.mod-left:hover {
+    opacity: 1;
+}
+
+/* Vault Actions - Always show by default */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+    display: flex !important;
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-actions {
+    opacity: 1;
+}
+
+
+
+
+/* ========================================================================== */
+/*                           MATERIAL DESIGN 3                               */
+/* ========================================================================== */
+
+/* Enhanced workspace styling with Material Design 3 principles */
+.workspace-leaf {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.workspace .mod-root .workspace-tab-header {
+    min-width: var(--tab-min-width);
+    max-width: var(--tab-max-width);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================================================================== */
+/*                          MOBILE OPTIMIZATIONS                             */
+/* ========================================================================== */
+
+/* Mobile workspace adjustments */
+@media (max-width: 768px) {
+    .workspace-leaf {
+        border-radius: 8px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Mobile sidebar optimizations - improved touch targets */
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left {
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        opacity: 1;
+    }
+
+    /* Faster transitions on mobile */
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left {
+        transition-duration: 0.1s;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .workspace-leaf {
+        border-radius: 10px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 7px 7px 0 0;
+    }
+
+}
+
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left,
+    .workspace-sidedock-vault-profile .workspace-drawer-vault-actions,
+    .view-header-nav-buttons .clickable-icon {
+        transition: none !important;
+    }
+
+}
+
+/* ========================================================================== */
+/*                        PERFORMANCE OPTIMIZATIONS                          */
+/* ========================================================================== */
+
+/* Remove complex effects on low-end devices */
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+
+
+    .workspace-leaf {
+        border-radius: 6px;
+    }
+
+    .workspace-tab-header {
+        border-radius: 4px 4px 0 0;
+    }
+
+    /* Disable transitions on low-end devices */
+    .workspace-tab-header-container,
+    .view-header-title-container,
+    .sidebar-toggle-button.mod-right,
+    .sidebar-toggle-button.mod-left,
+    .view-header-nav-buttons .clickable-icon {
+        transition: none;
+    }
+}
+
+/* ========================================================================== */
+/*                           LAYOUT OPTIMIZATIONS                            */
+/* ========================================================================== */
+
+/* Optimize complex selectors */
+.workspace-split .workspace-leaf-content[data-type] .nav-header {
+    padding: var(--size-4-1) 0;
+    opacity: 1;
+    height: auto;
+    transition: none;
+}
+
+
+/* Workspace leaf content */
+.workspace-leaf-content {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.workspace-leaf:hover .workspace-leaf-content {
+    border-color: var(--border-color-hover);
+}
+
+/* Sidebar drawers */
+.workspace-drawer {
+    border: 1px solid var(--border-color);
+}
+
+.workspace-drawer:hover {
+    border-color: var(--border-color-hover);
+}
+
+/* Status bar */
+.status-bar {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Title bar */
+.titlebar {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+/* ========================================================================== */
+/*                            NAVIGATION STYLING                             */
+/* ========================================================================== */
+
+/* Navigation hover effects */
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--background-modifier-hover);
+    border-left: 2px solid var(--border-color-active);
+}
+
+.nav-file.is-active .nav-file-title {
+    background-color: var(--background-modifier-active-hover);
+    border-left: 3px solid var(--interactive-accent);
+}
+.popover.hover-popover {
+    transform: scale(0.8); /* makes the content smaller */
+    max-height: 500px;    /* was 300 */
+    min-height: 100px;
+    width: 500px;     /* was 400 */
+}
+.popover, .suggestion-container {
+    background-color: transparent;
+}
+
+.markdown-embed {
+    background-color: rgba(var(--background-primary-rgb), 0.5);
+    backdrop-filter: blur(18px);
+}
+body:not(.is-ios):not(.is-android) input[type='date'], body:not(.is-ios):not(.is-android) input[type='datetime-local'] {
+    padding-inline-start: 24px;
+}
+
+
+/* ================================================= */
+
+/* themes/dark.css */
+.theme-dark {
+    color-scheme: dark;
+
+    /* ======================================================================== */
+    /*                           THEME ACCENT COLORS                           */
+    /* ======================================================================== */
+    --accent-h: 202;
+    --accent-s: 100%;
+    --accent-l: 75%;
+
+    /* ======================================================================== */
+    /*                           BACKGROUND COLORS                             */
+    /* ======================================================================== */
+    --bg_dark2_x: 2, 2, 2;
+    --bg_dark2: rgb(var(--bg_dark2_x));
+    --bg_dark_x: 8, 8, 8;
+    --bg_dark: rgb(var(--bg_dark_x));
+    --bg_x: 15, 15, 15;
+    --bg: rgb(var(--bg_x));
+    --bg_highlight_x: 25, 25, 25;
+    --bg_highlight: rgb(var(--bg_highlight_x));
+    --bg_highlight_dark_x: 18, 18, 18;
+    --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+
+    /* Standard background variables */
+    --background-primary: #020202;
+    --background-secondary: #020202;
+    --bg-primary-rgb: 2, 2, 2;
+    --bg-primary: #020202;
+    --bg-secondary-rgb: 8, 8, 8;
+
+    /* ======================================================================== */
+    /*                              TEXT COLORS                                */
+    /* ======================================================================== */
+    --fg_x: 220, 220, 220;
+    --fg: rgb(var(--fg_x));
+    --fg_dark_x: 180, 180, 180;
+    --fg_dark: rgb(var(--fg_dark_x));
+    --comment_x: 120, 120, 120;
+    --comment: rgb(var(--comment_x));
+    --code-comment_x: 115, 125, 165;
+    --code-comment: rgb(var(--code-comment_x));
+
+    /* Standard text variables */
+    --text-normal: #d0d0d0;
+    --text-muted: #888;
+    --text-faint: var(--fg_dark);
+    --text-on-accent: #ffffff;
+    --text-error: var(--red);
+    --text-error-hover: var(--red1);
+
+    /* ======================================================================== */
+    /*                             COLOR PALETTE                               */
+    /* ======================================================================== */
+    /* Blues */
+    --blue0_x: 61, 89, 161;
+    --blue0: rgb(var(--blue0_x));
+    --blue_x: 122, 162, 247;
+    --blue: rgb(var(--blue_x));
+
+    /* Cyans */
+    --cyan_hsl: 202 100% 75%;
+    --cyan_x: 125, 207, 255;
+    --cyan: rgb(var(--cyan_x));
+
+    /* Purples */
+    --purple_x: 187, 154, 247;
+    --purple: rgb(var(--purple_x));
+    --purple-light_x: 210, 180, 255;
+    --purple-light: rgb(var(--purple-light_x));
+
+    /* Magentas */
+    --magent_hsl: 261 85% 79%;
+    --magenta_x: 187, 154, 247;
+    --magenta: rgb(var(--magenta_x));
+    --magenta-light_x: 210, 190, 255;
+    --magenta-light: rgb(var(--magenta-light_x));
+
+    /* Pinks */
+    --pink_hsl: 331 100% 43%;
+    --pink_x: 217, 0, 105;
+    --pink: rgb(var(--pink_x));
+
+    /* Warm colors */
+    --orange_x: 255, 158, 100;
+    --orange: rgb(var(--orange_x));
+    --yellow_x: 224, 175, 104;
+    --yellow: rgb(var(--yellow_x));
+
+    /* Greens */
+    --green_x: 158, 206, 106;
+    --green: rgb(var(--green_x));
+    --teal_x: 26, 188, 156;
+    --teal: rgb(var(--teal_x));
+
+    /* Reds */
+    --red_x: 255, 117, 127;
+    --red: rgb(var(--red_x));
+    --red1_x: 219, 75, 75;
+    --red1: rgb(var(--red1_x));
+
+    /* Special colors */
+    --terminal_black_x: 65, 72, 104;
+    --terminal_black: rgb(var(--terminal_black_x));
+    --unknown: #ffffff;
+
+    /* Folder notes */
+    --folder-note-color_x: 220, 200, 250;
+    --folder-note-color: rgb(var(--folder-note-color_x));
+
+    /* ======================================================================== */
+    /*                                LINKS                                    */
+    /* ======================================================================== */
+
+    --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%) contrast(85%);
+
+    /* ======================================================================== */
+    /*                            UI COMPONENTS                                */
+    /* ======================================================================== */
+    /* Tabs */
+    --tab-background: rgba(2, 2, 2, 0.9);
+    --tab-background-active: rgba(25, 25, 25, 0.95);
+    --tab-background-hover: rgba(18, 18, 18, 0.8);
+    --tab-background-unfocused: rgba(8, 8, 8, 0.7);
+    --tab-divider-color: rgba(40, 40, 40, 0.3);
+    --tab-outline-color: rgba(60, 60, 60, 0.5);
+    --tab-outline-color-active: rgba(80, 80, 80, 0.8);
+
+    /* Workspace */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --workspace-background-translucent: rgba(2, 2, 2, 0.9);
+
+    /* Titlebar */
+    --titlebar-background: var(--background-primary);
+    --titlebar-text-color: #e8e8e8;
+    --titlebar-text-color-focused: #ffffff;
+    --titlebar-text-color-inactive: #666;
+
+    /* ======================================================================== */
+    /*                           INTERACTIVE ELEMENTS                          */
+    /* ======================================================================== */
+    --interactive-normal: var(--bg_dark);
+    --interactive-hover: var(--bg_highlight);
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
+    /* Background modifiers */
+    --background-modifier-active-hover: rgba(var(--cyan_x), 0.12);
+    --background-modifier-border: var(--bg_highlight);
+    --background-modifier-border-hover: var(--bg_highlight_dark);
+    --background-modifier-border-focus: var(--interactive-accent);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+    --background-modifier-cover: rgba(2, 2, 2, 0.8);
+
+    /* ======================================================================== */
+    /*                           CONTENT ELEMENTS                              */
+    /* ======================================================================== */
+    /* Selection and highlighting */
+    --text-selection: rgba(var(--purple_x), 0.15);
+    --text-highlight-bg: rgba(var(--orange_x), 0.25);
+    --flashing-background: rgba(var(--cyan_x), 0.2);
+
+    /* Code blocks */
+    --code-background: rgb(var(--purple_x), 0.05);
+    --code-normal: var(--fg_dark);
+    --text-on-code: var(--fg);
+    --code-selection-bg: rgba(var(--cyan_x), 0.2);
+
+    /* Code syntax highlighting */
+    /* --code-keyword: var(--purple);
+    --code-function: var(--yellow);
+    --code-string: var(--green);
+    --code-number: var(--orange);
+    --code-comment: var(--comment);
+    --code-property: var(--red);
+    --code-tag: var(--red);
+    --code-operator: var(--cyan);
+    --code-class: var(--yellow);
+    --code-variable: var(--cyan); */
+
+    /* Blockquotes */
+    --blockquote-color: var(--fg_dark);
+    --blockquote-bg: rgba(var(--cyan_x), 0.08);
+    --blockquote-border: var(--cyan);
+    --blockquote-accent: var(--magenta);
+    --blockquote-quote-mark: rgba(var(--purple_x), 0.7);
+
+    /* Headers */
+    --h1-color: var(--red);
+    --h2-color: var(--magenta);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--orange);
+
+    /* Tags */
+    --tag-color: var(--magenta);
+    --tag-background: rgba(var(--magenta_x), 0.15);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.15);
+
+    /* Tables */
+    --table-border-color: var(--bg_highlight);
+    --table-header-background: var(--bg_highlight);
+    --table-header-background-hover: var(--bg_highlight_dark);
+
+    /* Scrollbars */
+    --scrollbar-bg: rgba(255, 255, 255, 0.03);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15);
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.3);
+
+    /* Date elements */
+    --date-color: var(--blue);
+    --date-background-color: rgba(var(--blue_x), 0.15);
+
+    /* ======================================================================== */
+    /*                             NAVIGATION                                  */
+    /* ======================================================================== */
+    --nav-item-color: rgba(255, 255, 255, 0.9);
+    --nav-item-color-hover: var(--fg);
+    --nav-item-background-hover: var(--bg_highlight);
+    --nav-item-color-active: var(--purple);
+    --nav-item-background-active: var(--bg_highlight);
+    --nav-file-tag: rgba(var(--yellow_x), 0.9);
+
+    /* ======================================================================== */
+    /*                           FORM ELEMENTS                                 */
+    /* ======================================================================== */
+    /* Checkboxes */
+    --checkbox-color: var(--green);
+    --checkbox-color-hover: var(--blue);
+    --checkbox-border-color: var(--comment);
+    --checkbox-border-color-hover: var(--green);
+
+    /* Modals */
+    --modal-border-color: var(--background-modifier-border);
+    --prompt-border-color: var(--background-modifier-border);
+
+    /* ======================================================================== */
+    /*                              CALLOUTS                                   */
+    /* ======================================================================== */
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    /* ======================================================================== */
+    /*                               GRAPHS                                    */
+    /* ======================================================================== */
+    --graph-line: var(--comment);
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+
+
+}
+
+
+:not(.mod-windows).theme-dark {
+    --background-primary: transparent;
+}
+
+/* ======================================================================== */
+/*                           CODE BLOCK STYLING                            */
+/* ======================================================================== */
+
+
+/* ================================================= */
+
+/* themes/light.css */
+.theme-light {
+    /* ======================================================================== */
+    /*                           THEME ACCENT COLORS                           */
+    /* ======================================================================== */
+    --accent-h: 265;
+    --accent-s: 60%;
+    --accent-l: 55%;
+
+    /* ======================================================================== */
+    /*                           BACKGROUND COLORS                             */
+    /* ======================================================================== */
+    --bg_dark2_x: 230, 232, 236;
+    --bg_dark2: rgb(var(--bg_dark2_x));
+    --bg_dark_x: 240, 242, 246;
+    --bg_dark: rgb(var(--bg_dark_x));
+    --bg_x: 248, 250, 252;
+    --bg: rgb(var(--bg_x));
+    --bg_highlight_x: 255, 255, 255;
+    --bg_highlight: rgb(var(--bg_highlight_x));
+    --bg_highlight_dark_x: 235, 238, 242;
+    --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+
+    /* Standard background variables */
+    --background-primary: #f8fafc;
+    --background-secondary: #f8fafc;
+
+    /* ======================================================================== */
+    /*                              TEXT COLORS                                */
+    /* ======================================================================== */
+    --fg_x: 30, 35, 42;
+    --fg: rgb(var(--fg_x));
+    --fg_dark_x: 75, 85, 95;
+    --fg_dark: rgb(var(--fg_dark_x));
+    --comment_x: 120, 125, 135;
+    --comment: rgb(var(--comment_x));
+    --code-comment_x: 110, 115, 125;
+    --code-comment: rgb(var(--code-comment_x));
+
+    /* Standard text variables */
+    --text-normal: #1e252e;
+    --text-muted: #64748b;
+    --text-faint: #94a3b8;
+    --text-accent: var(--purple);
+    --text-accent-hover: var(--cyan);
+    --text-error: var(--red);
+    --text-error-hover: var(--red1);
+    --text-on-accent: #ffffff;
+
+    /* ======================================================================== */
+    /*                             COLOR PALETTE                               */
+    /* ======================================================================== */
+    /* Blues */
+    --blue0_x: 25, 55, 100;
+    --blue0: rgb(var(--blue0_x));
+    --blue_x: 30, 70, 160;
+    --blue: rgb(var(--blue_x));
+
+    /* Cyans */
+    --cyan_x: 0, 120, 180;
+    --cyan: rgb(var(--cyan_x));
+
+    /* Purples */
+    --purple_x: 102, 63, 191;
+    --purple: rgb(var(--purple_x));
+    --purple-light_x: 140, 100, 220;
+    --purple-light: rgb(var(--purple-light_x));
+
+    /* Magentas */
+    --magent_hsl: 261 65% 50%;
+    --magenta_x: 160, 30, 140;
+    --magenta: rgb(var(--magenta_x));
+    --magenta-light_x: 180, 60, 200;
+    --magenta-light: rgb(var(--magenta-light_x));
+
+    /* Pinks */
+    --pink_hsl: 320 65% 50%;
+    --pink_x: 200, 30, 140;
+    --pink: rgb(var(--pink_x));
+
+    /* Warm colors */
+    --orange_x: 220, 100, 20;
+    --orange: rgb(var(--orange_x));
+    --yellow_x: 180, 120, 0;
+    --yellow: rgb(var(--yellow_x));
+
+    /* Greens */
+    --green_x: 20, 140, 80;
+    --green: rgb(var(--green_x));
+    --teal_x: 0, 140, 160;
+    --teal: rgb(var(--teal_x));
+
+    /* Reds */
+    --red_x: 200, 50, 70;
+    --red: rgb(var(--red_x));
+    --red1_x: 180, 30, 50;
+    --red1: rgb(var(--red1_x));
+
+    /* Special colors */
+    --terminal_black_x: 15, 15, 20;
+    --terminal_black: rgb(var(--terminal_black_x));
+    --unknown: #000000;
+
+    /* Folder notes */
+    --folder-note-color_x: 120, 85, 200;
+    --folder-note-color: rgb(var(--folder-note-color_x));
+
+    /* ======================================================================== */
+    /*                                LINKS                                    */
+    /* ======================================================================== */
+
+    --link-external-filter: invert(45%) sepia(85%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(95%);
+
+    /* ======================================================================== */
+    /*                            UI COMPONENTS                                */
+    /* ======================================================================== */
+    /* Tabs */
+    --tab-background: rgba(240, 242, 246, 0.9);
+    --tab-background-active: rgba(255, 255, 255, 0.95);
+    --tab-background-hover: rgba(248, 250, 252, 0.8);
+    --tab-background-unfocused: rgba(235, 238, 242, 0.7);
+    --tab-divider-color: rgba(200, 205, 210, 0.4);
+    --tab-outline-color: rgba(180, 185, 190, 0.6);
+    --tab-outline-color-active: rgba(120, 125, 135, 0.8);
+
+    /* Titlebar */
+    --titlebar-background: var(--background-primary);
+    --titlebar-text-color: #475569;
+    --titlebar-text-color-focused: #1e252e;
+    --titlebar-text-color-inactive: #94a3b8;
+
+    /* ======================================================================== */
+    /*                           INTERACTIVE ELEMENTS                          */
+    /* ======================================================================== */
+    --interactive-normal: #e2e8f0;
+    --interactive-hover: #cbd5e1;
+    --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
+    /* Background modifiers */
+    --background-modifier-active-hover: rgba(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%), 0.12);
+    --background-modifier-border: #e2e8f0;
+    --background-modifier-border-hover: #cbd5e1;
+    --background-modifier-border-focus: var(--interactive-accent);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-cover: rgba(248, 250, 252, 0.8);
+
+    /* ======================================================================== */
+    /*                           CONTENT ELEMENTS                              */
+    /* ======================================================================== */
+    /* Selection and highlighting */
+    --text-selection: rgba(var(--purple_x), 0.15);
+    --text-highlight-bg: rgba(220, 100, 20, 0.15);
+    --flashing-background: rgba(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+
+    /* Code blocks */
+    --code-background: rgb(var(--purple_x), 0.05);
+    --code-normal: var(--text-muted);
+    --text-on-code: var(--text-normal);
+    --code-selection-bg: rgba(var(--purple_x), 0.15);
+
+    /* Code syntax highlighting */
+    /* --code-keyword: var(--purple);
+    --code-function: var(--orange);
+    --code-string: var(--green);
+    --code-number: var(--red);
+    --code-comment: var(--comment);
+    --code-property: var(--cyan);
+    --code-tag: var(--red);
+    --code-operator: var(--magenta);
+    --code-class: var(--blue);
+    --code-variable: var(--teal); */
+
+    /* Blockquotes */
+    --blockquote-color: var(--text-muted);
+    --blockquote-bg: rgba(var(--cyan_x), 0.05);
+    --blockquote-border: var(--cyan);
+    --blockquote-accent: var(--purple);
+    --blockquote-quote-mark: rgba(var(--purple_x), 0.7);
+
+    /* Headers */
+    --h1-color: var(--red);
+    --h2-color: var(--purple);
+    --h3-color: var(--green);
+    --h4-color: var(--cyan);
+    --h5-color: var(--blue);
+    --h6-color: var(--orange);
+
+    /* Tags */
+    --tag-color: var(--purple);
+    --tag-background: rgba(var(--purple_x), 0.1);
+    --tag-color-hover: var(--cyan);
+    --tag-background-hover: rgba(var(--cyan_x), 0.1);
+
+    /* Tables */
+    --table-header-background: #f8fafc;
+    --table-header-background-hover: #f1f5f9;
+    --table-border-color: #e2e8f0;
+
+    /* Scrollbars */
+    --scrollbar-bg: rgba(0, 0, 0, 0.03);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.15);
+    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.3);
+
+    /* Date elements */
+    --date-color: var(--blue);
+    --date-background-color: rgba(30, 70, 160, 0.1);
+
+    /* ======================================================================== */
+    /*                             NAVIGATION                                  */
+    /* ======================================================================== */
+    --nav-item-color: #2d3748;
+    --nav-item-color-hover: #1a202c;
+    --nav-item-background-hover: rgba(0, 120, 180, 0.08);
+    --nav-item-color-active: var(--purple);
+    --nav-item-background-active: var(--cyan);
+    --nav-file-tag: rgba(180, 120, 0, 0.9);
+
+    /* ======================================================================== */
+    /*                           FORM ELEMENTS                                 */
+    /* ======================================================================== */
+    /* Checkboxes */
+    --checkbox-color: var(--green);
+    --checkbox-color-hover: var(--blue);
+    --checkbox-border-color: #cbd5e1;
+    --checkbox-border-color-hover: var(--green);
+
+    /* Modals */
+    --modal-border-color: var(--background-modifier-border);
+    --prompt-border-color: var(--background-modifier-border);
+
+    /* ======================================================================== */
+    /*                              CALLOUTS                                   */
+    /* ======================================================================== */
+    --callout-default: var(--blue_x);
+    --callout-info: var(--blue_x);
+    --callout-summary: var(--cyan_x);
+    --callout-tip: var(--cyan_x);
+    --callout-todo: var(--cyan_x);
+    --callout-bug: var(--red_x);
+    --callout-error: var(--red1_x);
+    --callout-fail: var(--red1_x);
+    --callout-example: var(--magenta_x);
+    --callout-important: var(--green_x);
+    --callout-success: var(--teal_x);
+    --callout-question: var(--yellow_x);
+    --callout-warning: var(--orange_x);
+    --callout-quote: var(--fg_dark_x);
+
+    /* ======================================================================== */
+    /*                               GRAPHS                                     */
+    /* ======================================================================== */
+    --graph-line: #cbd5e1;
+    --graph-node: var(--fg);
+    --graph-node-tag: var(--orange);
+    --graph-node-attachment: var(--blue);
+
+
+}
+
+
+
+/* ======================================================================== */
+/*                      LIGHT THEME COMPONENT STYLING                        */
+/* ======================================================================== */
+
+
+/* Status bar */
+.theme-light .status-bar {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+}
+
+/* Workspace tabs */
+.theme-light .workspace-tab-header {
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* ======================================================================== */
+/*                      TEXT FORMATTING ADJUSTMENTS                        */
+/* ======================================================================== */
+
+/* Light theme specific text formatting adjustments */
+.theme-light .cm-strong,
+.theme-light strong,
+.theme-light b {
+    text-shadow: none;
+}
+
+.theme-light .cm-em,
+.theme-light em,
+.theme-light i {
+    text-shadow: none;
+}
+
+.theme-light .cm-strong.cm-em,
+.theme-light strong em,
+.theme-light em strong,
+.theme-light b i,
+.theme-light i b {
+    text-shadow: none;
+}
+
+
+/* ================================================= */
+
+/* settings.css */
+/* @settings
+
+name: Robsi Appearance
+id: Appearance
+settings:
+  -
+    id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: accent
+    title: Accent Color
+    type: variable-themed-color
+    format: hsl-split
+    opacity: false
+    default-light: '#0078B4'
+    default-dark: '#80D0FF'
+  -
+    id: Extended-colors
+    title: Extended Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: red
+    title: Red
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(180, 30, 50)'
+    default-dark: 'rgb(219, 75, 75)'
+  -
+    id: red1
+    title: Red1
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(200, 50, 70)'
+    default-dark: 'rgb(255, 117, 127)'
+  -
+    id: green
+    title: Green
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(20, 140, 80)'
+    default-dark: 'rgb(158, 206, 106)'
+  -
+    id: cyan
+    title: Cyan
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(0, 120, 180)'
+    default-dark: 'rgb(125, 207, 255)'
+  -
+    id: blue
+    title: Blue
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(30, 70, 160)'
+    default-dark: 'rgb(122, 162, 247)'
+  -
+    id: yellow
+    title: Yellow
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(180, 120, 0)'
+    default-dark: 'rgb(224, 175, 104)'
+  -
+    id: orange
+    title: Orange
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(220, 100, 20)'
+    default-dark: 'rgb(255, 158, 100)'
+  -
+    id: magenta
+    title: Magenta
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(160, 30, 140)'
+    default-dark: 'rgb(187, 154, 247)'
+  -
+    id: pink
+    title: Pink
+    type: variable-themed-color
+    format: rgb
+    opacity: false
+    default-light: 'rgb(200, 30, 140)'
+    default-dark: 'rgb(217, 0, 105)'
+  -
+    id: lists-heading
+    title: Lists
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: list-indent
+    title: List Indent
+    description: Indentation for nested list items
+    type: variable-text
+    default: 1.5em
+  -
+    id: list-spacing
+    title: List Spacing
+    description: Vertical spacing between list items
+    type: variable-text
+    default: 0.125em
+  -
+    id: unordered-lists-heading
+    title: Unordered Lists (Bullets)
+    type: heading
+    level: 3
+    collapsed: true
+  -
+		id: list-marker-color
+		title: Bullet Color
+		description: Color for list bullet markers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(160, 30, 140)'
+		default-dark: 'rgb(187, 154, 247)'
+  -
+		id: list-marker-color-hover
+		title: Bullet Hover Color
+		description: Color when hovering over list bullets
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(0, 120, 180)'
+		default-dark: 'rgb(125, 207, 255)'
+  -
+		id: list-marker-color-collapsed
+		title: Bullet Collapsed Color
+		description: Color for collapsed list bullets
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(120, 125, 135)'
+		default-dark: 'rgb(86, 95, 137)'
+  -
+    id: ordered-lists-heading
+    title: Ordered Lists (Numbers)
+    type: heading
+    level: 3
+    collapsed: true
+  -
+		id: list-number-color
+		title: Number Color
+		description: Color for ordered list numbers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(160, 30, 140)'
+		default-dark: 'rgb(187, 154, 247)'
+  -
+		id: list-number-color-hover
+		title: Number Hover Color
+		description: Color when hovering over list numbers
+		type: variable-themed-color
+		format: rgb
+		opacity: false
+		default-light: 'rgb(0, 120, 180)'
+		default-dark: 'rgb(125, 207, 255)'
+
+*/
+
