@@ -139,6 +139,7 @@ body {
   }
 
   .callout .callout-title {
+    border-radius: 0px;
     color: rgb(150, 82, 218);
     gap: 4px;
     padding: 0px;
@@ -170,6 +171,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
+    border-radius: 0px;
     color: rgb(0, 153, 184);
     gap: 4px;
     padding: 0px;
@@ -202,6 +204,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
+    border-radius: 0px;
     color: rgb(228, 18, 88);
     gap: 4px;
     padding: 0px;
@@ -234,6 +237,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
+    border-radius: 0px;
     color: rgb(228, 18, 88);
     gap: 4px;
     padding: 0px;
@@ -266,6 +270,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
+    border-radius: 0px;
     color: rgb(94, 51, 204);
     gap: 4px;
     padding: 0px;
@@ -298,6 +303,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
+    border-radius: 0px;
     color: rgb(228, 18, 88);
     gap: 4px;
     padding: 0px;
@@ -330,6 +336,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
+    border-radius: 0px;
     color: rgb(236, 109, 19);
     gap: 4px;
     padding: 0px;
@@ -362,6 +369,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
+    border-radius: 0px;
     color: rgb(150, 82, 218);
     gap: 4px;
     padding: 0px;
@@ -394,6 +402,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
+    border-radius: 0px;
     color: rgb(0, 184, 122);
     gap: 4px;
     padding: 0px;
@@ -426,6 +435,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
+    border-radius: 0px;
     color: rgb(128, 117, 138);
     gap: 4px;
     padding: 0px;
@@ -458,6 +468,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
+    border-radius: 0px;
     color: rgb(51, 138, 7);
     gap: 4px;
     padding: 0px;
@@ -490,6 +501,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
+    border-radius: 0px;
     color: rgb(223, 18, 120);
     gap: 4px;
     padding: 0px;
@@ -522,6 +534,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
+    border-radius: 0px;
     color: rgb(236, 109, 19);
     gap: 4px;
     padding: 0px;
@@ -554,6 +567,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
+    border-radius: 0px;
     color: rgb(255, 157, 0);
     gap: 4px;
     padding: 0px;
@@ -1470,7 +1484,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 868px;
+    width: 1156px;
   }
 
   li.depth-0 {

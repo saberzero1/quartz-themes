@@ -215,6 +215,7 @@ body {
   }
 
   .callout .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.679074 0.285291 0.152691),
       color(srgb 0.976505 0.842762 0.774084)
@@ -262,6 +263,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.332157 0.387059 0.255294),
       color(srgb 0.771838 0.84527 0.651201)
@@ -309,6 +311,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.527059 0.156471 0.118039),
       color(srgb 0.930894 0.484588 0.438517)
@@ -356,6 +359,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.527059 0.156471 0.118039),
       color(srgb 0.930894 0.484588 0.438517)
@@ -404,6 +408,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.324444 0.397517 0.374134),
       color(srgb 0.734144 0.809386 0.786813)
@@ -454,6 +459,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.527059 0.156471 0.118039),
       color(srgb 0.930894 0.484588 0.438517)
@@ -502,6 +508,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.252043 0.418836 0.552271),
       color(srgb 0.755416 0.843973 0.919878)
@@ -553,6 +560,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.679074 0.285291 0.152691),
       color(srgb 0.976505 0.842762 0.774084)
@@ -603,6 +611,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.651057 0.344677 0.073649),
       color(srgb 0.962806 0.693154 0.265429)
@@ -654,6 +663,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.324444 0.397517 0.374134),
       color(srgb 0.734144 0.809386 0.786813)
@@ -705,6 +715,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.332157 0.387059 0.255294),
       color(srgb 0.771838 0.84527 0.651201)
@@ -753,6 +764,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.252043 0.418836 0.552271),
       color(srgb 0.755416 0.843973 0.919878)
@@ -804,6 +816,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.252043 0.418836 0.552271),
       color(srgb 0.755416 0.843973 0.919878)
@@ -854,6 +867,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
+    border-radius: 0px;
     color: light-dark(
       color(srgb 0.651057 0.344677 0.073649),
       color(srgb 0.962806 0.693154 0.265429)
@@ -1867,7 +1881,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 860px;
+    width: 1148px;
   }
 
   li.depth-0 {

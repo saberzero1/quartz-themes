@@ -102,6 +102,7 @@ body {
   }
 
   .callout .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 16px;
@@ -133,6 +134,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 16px;
@@ -165,6 +167,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 16px;
@@ -197,6 +200,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 16px;
@@ -229,6 +233,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
     gap: 4px;
     padding: 16px;
@@ -261,6 +266,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 16px;
@@ -293,6 +299,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 16px;
@@ -325,6 +332,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 16px;
@@ -357,6 +365,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 16px;
@@ -378,35 +387,36 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: unset;
+    --callout-color: 158, 158, 158;
     background-color: rgba(0, 0, 0, 0);
-    border-color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
-    border-radius: 0px;
-    border-style: none;
-    border-width: 0px;
+    border-color: rgba(158, 158, 158, 0.1);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
     mix-blend-mode: normal;
-    padding: 32px;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="quote"] .callout-title {
-    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
-    gap: normal;
-    padding: 32px;
+    border-radius: 8px;
+    color: rgb(158, 158, 158);
+    gap: 4px;
+    padding: 16px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
-    background-color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
+    color: rgb(158, 158, 158);
+    background-color: rgb(158, 158, 158);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
+    color: rgb(158, 158, 158);
     font-weight: 400;
   }
 
   .callout[data-callout="quote"] > .callout-content {
     background-color: rgba(0, 0, 0, 0);
-    padding: 32px;
+    padding: 0px;
   }
 
   .callout[data-callout="success"] {
@@ -421,6 +431,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
     gap: 4px;
     padding: 16px;
@@ -453,6 +464,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 16px;
@@ -485,6 +497,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 16px;
@@ -517,6 +530,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
+    border-radius: 8px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 16px;
@@ -1451,7 +1465,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 868px;
+    width: 1156px;
   }
 
   li.depth-0 {

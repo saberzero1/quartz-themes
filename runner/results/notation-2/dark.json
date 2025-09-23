@@ -12,6 +12,7 @@
     "padding": "16px"
   },
   ".callout .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -38,6 +39,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -65,6 +67,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -92,6 +95,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -119,6 +123,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -146,6 +151,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -173,6 +179,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -200,6 +207,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -227,6 +235,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -254,6 +263,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -281,6 +291,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -308,6 +319,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -335,6 +347,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -362,6 +375,7 @@
     "padding": "16px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgba(255, 255, 255, 0.9)",
     "gap": "4px",
     "padding": "0px"
@@ -826,7 +840,7 @@
     "inset-inline-start": "0px",
     "position": "relative",
     "top": "0px",
-    "width": "868px"
+    "width": "1156px"
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
