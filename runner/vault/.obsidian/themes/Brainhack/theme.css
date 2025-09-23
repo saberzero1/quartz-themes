@@ -939,7 +939,6 @@ span.cm-highlight:not(.cm-strong),
     padding: 0rem .2rem 0rem .2rem;
     margin: .1rem .1rem .1rem .1rem;
     border: .1rem dashed;
-    font-weight: 600;
     border-color: var(--colored-accent-2);
     background-color: var(--colored-accent-4);
         -moz-border-bottom-left-radius: var(--mark-radius);
@@ -959,7 +958,7 @@ span.cm-highlight:not(.cm-strong),
         box-decoration-break: clone;
         box-shadow: 0px 0px 1em var(--colored-accent-3);
     --mark-radius: .4em;
-    font-weight: 600;
+    color: var(--tc);
 }
 
 
