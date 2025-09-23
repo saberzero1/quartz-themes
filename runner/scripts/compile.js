@@ -151,6 +151,13 @@ if only one is present, use that one
 const manifestCollection = getManifestCollection();
 manifestCollection.forEach((manifest) => {
   const theme = sanitize(manifest.name);
+  if (!existsSync(`./runner/results/${theme}`)) {
+    mkdirSync(`./runner/results/${theme}`);
+  }
+  if (!existsSync(`./extras/themes/${theme}/_index.scss`)) {
+    mkdirSync(`./extras/themes/${theme}`);
+    writeFileSync(`./extras/themes/${theme}/_index.scss`, "", "utf8");
+  }
 
   const darkFile = `./runner/results/${theme}/dark.json`;
   const lightFile = `./runner/results/${theme}/light.json`;

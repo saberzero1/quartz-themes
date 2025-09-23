@@ -1,0 +1,741 @@
+/* Coffee Obsidian Themes by @regawaras */
+
+/* Coffee Color Variables */
+:root {
+/* Darker */
+  --americano: #0F0A00; 
+  --burnt-roast: #0F0B00;
+  --dark-beans: #1F1500;
+  --expresso: #502000;
+  --dark-roast: #603020;
+  --light-beans: #504010;
+  --moccacino: #553F00; 
+/* Yellowish*/
+  --golden-brew: #906000;
+  --cappucino: #885500;
+  --caramel: #AA7500;
+  --hazelnut: #B0A050;
+  --crema: #DDAA00;
+/* Balanced */
+  --cafe-au-lait: #CCAA55;
+  --red-robusta-beans: #FF3000;
+  --dark-green-beans: #005500 ;
+  --green-beans: #00FF55;
+  --latte: #E0D080;
+  --milk-foam: #ECDFAA;
+  --white-luwak: #F3F3C3;
+/* Lighter */
+}
+
+body {
+  --accent-h: 35;
+  --accent-s: 50%;
+  --accent-l: 25%;
+  
+  --font-default: "Times New Roman";
+  --font-monospace-default: "Cascadia Mono";
+  --font-text-theme: ;
+  --font-size-default: 20px; 
+
+  --link-external-color: #005555;
+  --link-external-color-hover: #00FFFF;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --tab-radius-active: 0px;
+  --checkbox-radius: 0px;
+  --toggle-radius: 0px;
+  --toggle-thumb-radius: 0px;
+  --slider-thumb-radius: 0px;
+}
+
+.theme-dark {
+/* Will Shown when Focussed on Active Obsidian Window  */
+  --titlebar-background-focused: var(--dark-beans);
+/* Will Shown when Focussed on Other Window   */
+  --titlebar-background: var(--americano);
+/* The Upper Right Tabs (Exit, Resize, ) */
+  --titlebar-text-color-focused:var(--milk-foam);
+  --titlebar-text-color: var(--crema);
+  --titlebar-icon-color: var(--milk-foam);
+  
+  --background-primary: var(--americano);
+  --background-primary-alt: var(--burnt-roast);
+  --background-secondary: var(--dark-beans);
+  --background-secondary-alt: var(--dark-beans);
+  --background-modifier-border: var(--light-beans);
+  --background-modifier-form-field: var(--americano);
+  --background-modifier-form-field-highlighted: var(--light-beans);
+  --background-modifier-box-shadow: var(--light-beans);
+  --background-modifier-success: var(--green-beans);
+  --background-modifier-error: var(--red-robusta-beans);	
+  --background-modifier-error-hover: var(--red-robusta-beans);	
+  --background-modifier-cover: #00000088; /* You will know when you check Command Bar */
+
+  /* Text */
+  --text-accent: var(--hazelnut);
+  --text-accent-hover: var(--crema);
+  --text-normal: var(--milk-foam);	
+  --text-muted: var(--latte);	
+  --text-faint: var(--hazelnut) ;	
+  --text-error: var(--red-robusta-beans);	
+  --text-error-hover: var(--red-robusta-beans);
+  --text-highlight-bg: var(--moccacino);
+  --text-highlight-bg-active: var(--golden-brew);
+  --text-selection:var(--moccacino);
+
+  --h1-color: var(--hazelnut);
+  --h2-color: var(--crema);
+  --h3-color: var(--caramel);
+  --h4-color: var(--caramel);
+  --h5-color: var(--caramel);
+  --h6-color: var(--caramel);
+  
+  /* Buttons | on todo settings, canvas side buttons */
+  --text-on-accent: var(--americano);
+  --text-on-accent-hover: var(--latte);
+  --interactive-normal: var(--golden-brew);	
+  --interactive-hover: var(--golden-brew);
+  --interactive-accent: var(--caramel); /* Calendar Plugins text & date, Vim Cursor */
+  --interactive-accent-hover: var(--moccacino);
+  --interactive-success: var(--green-beans);
+
+  --link-color: var(--hazelnut);
+  --link-color-hover: var(--crema);
+  --link-unresolved-color: var(--hazelnut);
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity:50%;
+  --link-decoration: none ;
+  --link-decoration-hover: none;
+
+  --tag-color: var(--hazelnut);
+  --tag-color-hover: var(--caramel);
+  --tag-background:   var(--americano);
+  --tag-background-hover: var(--americano);
+  --tag-border-color:var(--americano) ;
+  --tag-border-color-hover: var(--americano);
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: var(--caramel);	
+  --scrollbar-bg: var(--hazelnut);
+  --scrollbar-thumb-bg: var(--light-beans);
+
+  --table-border-color: var(--light-beans);
+  --table-header-background: var(--moccacino);
+  --table-header-background-hover: var(--dark-beans);
+  --table-header-border-color: var(--hazelnut);
+  --table-header-font: var(--white-luwak);
+  --table-header-weight: bold;
+  --table-header-color: var(--hazelnut);
+  --table-text-color: var(--text-normal);
+  --table-row-background: var(--dark-beans);
+  --table-row-background-hover: var(--light-beans);
+  --table-row-alt-background: var(--burnt-roast); /* Provided a consistent value */
+  --table-selection: var(--moccacino);
+  --table-selection-blend-mode: soft-light ;
+  --table-selection-border-color: var(--crema);
+  --table-drag-handle-color: var(--americano);
+  --table-drag-handle-background: var(--crema) ;
+  --table-drag-handle-background-active: #00000000;
+  
+  --code-normal: var(--green-beans);
+  --code-background:var(--dark-beans) ;
+  
+  --icon-opacity: 100%;
+  --icon-color:  var(--hazelnut);
+  --icon-color-hover: var(--milk-foam);
+
+  --nav-item-color: var(--hazelnut);
+  --nav-item-color-hover: var(--milk-foam);
+  --nav-item-color-active: var(--caramel);
+  --nav-item-color-selected:var(--caramel);
+  --nav-item-color-highlighted: var(--red-robusta-beans);
+  --nav-item-background-hover: var(--light-beans);
+  --nav-item-background-active:	var(--dark-beans);
+
+  --nav-item-background-selected: var(--red-robusta-beans);
+  --nav-indetation-guide-color:	var(--crema);
+  --nav-collapse-icon-color: var(--golden-brew);
+  --nav-collapse-icon-color-collapsed: var(--crema);
+  
+  --prompt-border-color: var(--caramel);
+
+  --tab-background-active: var(--americano);
+  --tab-text-color: var(--hazelnut);
+  --tab-text-color-active: var(--hazelnut);
+  --tab-text-color-focused: var(--hazelnut);
+  --tab-text-color-focused-active: var(--caramel);
+  --tab-text-color-focused-highlighted: var(--milk-foam);
+  --tab-text-color-focused-active-current: var(--caramel);
+  --tab-container-background: var(--americano);
+  --tab-divider-color: var(--americano);
+  
+  --drag-ghost-background: var(--caramel);
+  --blockquote-color: var(--crema);
+
+/* for line separator */
+  --hr-line-offset: ;
+  --hr-color: var(--golden-brew);
+  --hr-text-color: var(--crema);
+  --hr-text-offset: 0ch;
+  --hr-thickness: 7px;
+  --line-active: var(--milk-foam);
+}
+
+.theme-light {  
+/* Will Shown when Focussed on Active Obsidian Window  */
+  --titlebar-background-focused: var(--milk-foam);
+/* Will Shown when Focussed on Other Window   */
+  --titlebar-background: var(--background-primary);
+/* Obsidian Window Frame  The Upper Right Tabs (Exit, Resize, ) */
+  --titlebar-text-color-focused:var(--americano);
+  --titlebar-text-color: var(--americano);  
+
+  --background-primary: var(--white-luwak); 
+  --background-primary-alt: var(--latte);
+  --background-secondary: var(--milk-foam); 
+  --background-secondary-alt: var(--hazelnut);
+  --background-modifier-border: var(--latte);
+  --background-modifier-form-field: var(--latte);
+  --background-modifier-form-field-highlighted: var(--expresso);
+  --background-modifier-box-shadow: var(--expresso);
+  --background-modifier-success: var(--green-beans);
+  --background-modifier-error: var(--red-robusta-beans);
+  --background-modifier-error-hover: var(--red-robusta-beans);
+  --background-modifier-cover: rgba(224, 208, 128, 0.0); 
+  
+  /* Text */
+  --text-accent: var(--cappucino);
+  --text-accent-hover: var(--caramel);
+  --text-normal: var(--americano);	
+  --text-muted: var(--moccacino);    
+  --text-faint: var(--moccacino);	
+  --text-error: var(--red-robusta-beans);	
+  --text-error-hover: var(--red-robusta-beans);
+  --text-highlight-bg: var(--milk-foam);
+  --text-highlight-bg-active: var(--hazelnut);
+  --text-selection:var(--hazelnut);
+  
+  --h1-color: var(--moccacino);
+  --h2-color: var(--caramel);
+  --h3-color: var(--crema);
+  --h4-color: var(--crema);
+  --h5-color: var(--crema);
+  --h6-color: var(--crema);
+
+  --code-normal: var(--dark-green-beans);
+  --code-background:var(--latte) ; 
+  --code-background-hver: var(--americano);
+
+  --nav-header-color: var(--americano);
+  --nav-item-color: var(--americano);
+  --nav-item-color-hover: var(--white-luwak);
+  --nav-item-color-selected: var(--cappucino); 
+  --nav-item-color-highlighted: var(--red-robusta-beans);
+  
+  --nav-item-background-hover: var(--hazelnut);
+  --nav-item-background-selected: var(--hazelnut);
+
+  --nav-item-color-active: var(--light-beans);
+  --nav-item-background-active:	var(--hazelnut);
+
+  --nav-indetation-guide-color:	var(--dark-beans);
+  --nav-collapse-icon-color: var(--crema);
+  --nav-collapse-icon-color-collapsed: var(--moccacino);
+
+  --link-color:var(--moccacino);
+  --link-color-hover: var(--crema);
+  --link-unresolved-color: var(--moccacino);
+  --link-unresolved-opacity:80%;
+  --link-decoration: none;
+  --link-decoration-hover:line-through;
+  --link-unresolved-filter: none;
+  --link-decoration-hover: none;
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: var(--caramel);	
+  --scrollbar-bg: var(--crema);
+  --scrollbar-thumb-bg: var(--hazelnut);
+  
+    /* BUTTONS | on todo settings, canvas side buttons */
+  --text-on-accent: var(--americano);
+  --text-on-accent-hover: var(--americano);
+  --interactive-normal: var(--milk-foam);	
+  --interactive-hover: var(--hazelnut);  /* calendar cursor */
+  --interactive-accent: var(--caramel); /* Vim Cursor */
+  --interactive-accent-hover: var(--hazelnut);
+  --interactive-success: var(--red-robusta-beans);
+
+  --tag-color: var(--moccacino);
+  --tag-color-hover: var(--crema);
+  --tag-background:;  var(--americano);
+  --tag-background-hover: var(--americano);
+  --tag-border-color:var(--americano) ;
+  --tag-border-color-hover: var(--americano);
+  
+  --table-border-color: var(--background-secondary-alt);
+  --table-header-background: var(--background-secondary-alt);
+  --table-header-background-hover: var(--background-secondary);
+  --table-header-border-color: var(--background-secondary-alt);
+  --table-header-font:  var(--milk-foam);
+  --table-header-weight: bold;
+  --table-header-color: var(--text-accent);
+  --table-text-color: var(--text-normal);
+  --table-column-alt-background:;
+  --table-row-background-hover: var(--background-secondary-alt) ;
+  --table-row-alt-background var(--background-secondary-alt);
+  --table-selection: var(--cappucino);
+  --table-selection-blend-mode: soft-light ;
+  --table-selection-border-color: var(--cappucino);
+  --table-drag-handle-color: var(--accent);
+  --table-drag-handle-color-active: var(--text-normal);
+  --table-drag-handle-background: var(--text-accent);
+  --table-drag-handle-background-active: var(--accent);
+}
+
+.inline-title {
+  text-align: center;
+  font-size: 12px; 
+  margin: 30px;
+}
+
+/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
+body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
+    background: var(--background-secondary);
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 3px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
+    border-bottom: 3px solid; 
+}
+/* ### Hover Line Highlight on Main Tabs ### */
+.markdown-source-view.mod-cm6 .cm-line:hover {
+    background: var(--background-secondary);
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--background-modifier-border), transparent);
+    border-bottom: 1px solid;
+    opacity: 1; 
+}
+/* Primary Tab Line Highlight ======= Primary Tab Line Hightlight ======== Primary Tab Line Highlight */
+
+/** =================* File Explorer Upper border ================= **/
+/* Custom Font for File Explorer */
+.nav-file-title,
+.nav-folder-title,
+.nav-header {
+  font-family: "Arial Black", sans-serif;
+  font-size: 12px; 
+  font-weight: bold;
+  color: var(--text-accent);
+}
+.nav-header {
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
+    border-bottom: 1px solid; 
+}
+/** ### Nav Line Highlight File Active Stying ### **/
+.nav-file-title.is-active {
+    background: var(--background-primary);
+    color: var(--text-normal);
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 0px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
+    border-bottom: 0px solid; 
+}
+/** ### Nav Line Highlight File Active Stying ### **/
+
+/*============ File Explorer Navigation =================*/
+.nav-file-title.is-dragging {
+    color: var(--background-secondary-alt); }
+/* inspired from : Cyber Glow Obsidian Themes | https://github.com/ArtexJay/Obsidian-CyberGlow */
+
+/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
+.nav-folder-title .nav-folder-title-content::before { 
+    content: '📂 '; }
+.nav-file-title .nav-file-title-content::before { 
+    content: '📝 '; }
+/* File Explorer Icon ==================== File Explorer Icon ==================== File Explorer Icon */
+
+
+/*Styles Hover for Search Items */
+.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
+    background: var(--background-seconds-alt);
+    color: var(--light-beans);
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--crema), transparent);
+    border-bottom: 1px solid; 
+}
+
+/* Highlight ====================================== Highlight ====================================== Highlight */
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+    background-color: var(--crema);
+    color: var(--americano);
+    padding: 1px 3px;
+}
+/* Highlight ====================================== Highlight ====================================== Highlight */
+
+
+/* Fonts ====================================== Fonts ====================================== Fonts */
+
+/* Prompt ====================================== prompt ====================================== propmt */
+/* Prompt ====================================== prompt ====================================== propmt */
+/*Prompt Style*/
+.prompt {
+    background: var(--background-settings);
+    backdrop-filter: blur(9px) saturate(120%);
+    border-image-slice: 0;
+    border-image-source: linear-gradient(to top, transparent, var(--light-beans) , transparent);
+    border-right: 1px solid;
+    border-left: 1x solid;
+}
+/*Prompt Item Style*/
+.suggestion-item {
+    background: var(--background-primary);
+    color: var(--text-accent);
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+.suggestion-item.is-selected {
+    /* Gaya untuk item yang dipilih via keyboard (Up/Down) */
+    background: var(--background-secondary); /* Warna yang lebih menonjol */
+    color: var(--text-normal); /* Warna teks yang kontras */
+    border-top: 1px solid var(--background-modifier-border); /* Contoh border highlight */
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+/*Prompt Tag Color Fixed*/
+.suggestion-item.mod-complex .suggestion-hotkey {
+    background-color: var(--moccacino) ;
+    color: var(--hazelnut); 
+}
+/*Prompt Input*/
+input.prompt-input {
+    border-radius: 5px;
+    margin: 5px;
+    background: var(--background-settings-2);x
+    padding: 15px; 
+}
+/* Prompt ====================================== prompt ====================================== propmt */
+/* Prompt ====================================== prompt ====================================== propmt */
+
+/* =============== Side Dock Toggle Obsidian Logo ================*/
+/*Custom Styled L-Sidebar Toggle */
+.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
+body:not(.is-tablet) .is-mobile .view-header-nav-buttons,
+.is-mobile .mod-left-split-toggle,
+body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 15px;
+    background-color: var(--hazelnut);
+    background-blend-mode: luminosity;
+    padding: 8px 1px 9px 9px;
+    background-image: var(--New-Obsidiantoggle); 
+}
+/*Custom Styled L-Sidebar Toggle*/
+/*Hover Highlight for Custom Toggle*/
+body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover {
+    background: var(--crema);
+    border-radius: 10px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+    border-left: 0px solid;
+    border-right: 0px solid; }
+/*Hover Highlight for Custom Toggle*/
+/*Centers and adds Styles for Tab Headers*/
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+    width: 100%;
+    justify-content: center;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--golden-brew), transparent);
+    border-bottom: 0px solid; 
+}
+/*Corrects Position of Custom Sidebar toggle*/
+.workspace-ribbon .sidebar-toggle-button {
+    margin: 0px 0px 0px 0px; }
+/*Displays Full Custom Toggle*/
+.sidebar-toggle-button {
+    align-items: center;
+    padding: 0 0 0 0; 
+}
+/* =============== Side Dock Toggle Obsidian Logo ================*/
+
+/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
+body {
+    --New-Obsidiantoggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='30' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");}
+/* Upper Left Obsidian Logo Side Dock Toggle  ======================================================= */
+
+/* This is a fork from 2 Obsidian Themes i found on, that have the similar design, so i make it a completely easy to use for everyone else  */
+
+/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
+body{
+--newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+--outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
+--CG-line-width: 50rem;
+--file-line-width: var(--CG-line-width);
+/*max min icons*/
+--win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
+--win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");}
+/* Obsidian Separator Line  ================================================= Obsidian Separator Line */
+
+
+/* Lists ======================================== Lists ======================================== List */
+/*Sets uncollapsed bullet point with animations*/
+li:not(.is-collapsed) .list-bullet:after, .cm-formatting-list .list-bullet:after {
+    content: '▻';
+    color: var(--text-accent);
+    background: transparent;
+    font-weight: bold;
+    transform: translate(7px, 5px) rotate(90deg);
+    text-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--list-marker-color), 0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
+/*Realigns Custom bullet point*/
+.list-bullet {
+    align-items: baseline;
+    margin-right: 0px;
+    opacity: 1; }
+/*Sets collapsed bullet point with animations*/
+li.is-collapsed .list-bullet:after, .is-collapsed~.cm-formatting-list .list-bullet:after {
+    content: '▻';
+    color: var(--text-accent);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--text-accent), 0 0 5px var(--text-accent), 0 0 20px var(--text-accent), 0 0 35px var(--text-accent);
+    background-color: transparent;
+    box-shadow: none;
+    transform: translate(-10px, 0px) rotate(360deg);
+    margin-left: -0.4em; 
+    opacity: 1; 
+}
+/*Removes hover dot */
+.cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after,
+.cm-fold-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after {
+    background-color: transparent;
+    box-shadow: none; 
+}
+/* Lists ======================================== Lists ======================================== List */
+
+/* Number list =============================== Number list ============================== Number list */
+/*Styles Default Number List*/
+ol>li::marker, ul>li::marker, .cm-s-obsidian .cm-formatting-list {
+    color: var(text-accent);
+    font-weight: bold;
+    border-image-source: linear-gradient(to right, var(--text-accent), transparent);
+    text-shadow: 0 0 5px var(--text-accent), 0 0 0px var(--text-accent),
+        0 0 0px var(--text-accent), 0 0 0px var(--text-accent); 
+}
+/*Adds style to the Identation guide */
+.markdown-rendered.show-indentation-guide li>ul::before, .markdown-rendered.show-indentation-guide li>ol::before,
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    background:  var(--text-accent);
+    box-shadow: 0 0 0px var(--text-accent), 0 0 0px var(--text-accent),
+        0 0 0px var(--text-accent), 0 0 0px var(--text-accent);
+    width: 0px; 
+}
+/*Aligns Number List with identation guide*/
+.markdown-rendered ol {
+    margin-left: 10px; 
+}
+/* Number list =============================== Number list ============================== Number list */
+
+/*============ Graph ================= */
+.graph-view.color-text {
+    color: var(--text-normal); }
+.graph-view.color-arrow {
+    color: var(--text-accent); }
+.graph-view.color-line {
+    color: var(--caramel); }
+.graph-view.color-fill {
+    color: #BB8000; }
+.graph-view.color-fill-tag {
+    color: #00FF00; }
+.graph-view.color-fill-focused {
+    color: #DDAA00; }
+.graph-view.color-fill-unresolved {
+    color: --var(--crema); }
+.graph-view.color-fill-attachment {
+    color: #FFCC80; }
+
+/* The Horizontal Line Customization  */
+body{
+--newoutlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='18' height='18' fill='none' stroke='currentColor' stroke-width='32' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+--outlined-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 -3 69 106'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z' stroke='%23000000' stroke-width='4' fill='none'/%3E%3C/svg%3E");
+--CG-line-width: 50rem;
+--file-line-width: var(--CG-line-width);
+/*max min icons*/
+--win-maximize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.5 3c-.82843 0-1.5.67157-1.5 1.5v7c0 .8284.67157 1.5 1.5 1.5h7c.8284 0 1.5-.6716 1.5-1.5v-7c0-.82843-.6716-1.5-1.5-1.5zm0 1h7c.2761 0 .5.22386.5.5v7c0 .2761-.2239.5-.5.5h-7c-.27614 0-.5-.2239-.5-.5v-7c0-.27614.22386-.5.5-.5z' fill='%23212121'/%3E%3C/svg%3E");
+--win-minimize: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23212121'%3E%3Cpath d='m5.08496 4c.20592-.5826.76154-1 1.41465-1h3.5c1.65689 0 2.99999 1.34315 2.99999 3v3.5c0 .6531-.4174 1.2087-1 1.4146v-4.9146c0-1.10457-.8954-2-1.99999-2z'/%3E%3Cpath d='m4.5 5h5c.8284 0 1.5.67157 1.5 1.5v5c0 .8284-.6716 1.5-1.5 1.5h-5c-.82843 0-1.5-.6716-1.5-1.5v-5c0-.82843.67157-1.5 1.5-1.5zm0 1c-.27614 0-.5.22386-.5.5v5c0 .2761.22386.5.5.5h5c.27614 0 .5-.2239.5-.5v-5c0-.27614-.22386-.5-.5-.5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* The Horizontal Line Customization ============================================================================================= */
+.hr.cm-line hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border-top: 2.25px solid;
+  border-bottom: 2.25px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  text-align: -webkit-center;
+  border-image: linear-gradient(to right, transparent, var(--text-accent) 40%, transparent 40%, transparent 55%, var(--text-accent) 5%, transparent) 3; 
+
+}
+/* Logo for Heading Line*/
+.markdown-preview-view hr::after {
+  content: ' ';
+  -webkit-mask-image: var(--newoutlined-logo);
+  -webkit-mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  display: inline-block;
+  background-color: var(--text-accent);
+  position: absolute;
+  transform: translate(-40%, -40%);
+  padding: 1rem; 
+}
+/* The Logo Icon Source on Editing Mode  */
+.hr.cm-line hr::after {
+  content: ' ';
+  -webkit-mask-image: var(--newoutlined-logo);
+  -webkit-mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  display: inline-block;
+  background-color: var(--text-accent);
+  position: absolute;
+  transform: translate(-80%, -30%);
+  padding: 1rem; 
+  margin-block: 0em; 
+}
+/* make it center and works on Reading View Mode */
+.markdown-preview-view hr {
+  border: solid 0px transparent;
+  height: 0;
+  border-bottom: 2.25px solid;
+  border-image-slice: 1;
+  border-image: linear-gradient(to left, transparent, var(--text-accent) 45%, transparent 45%, transparent 55%, var(--text-accent) 5%, transparent) 3;
+  text-align: -webkit-center;
+  margin-block: 0em; 
+}
+/* The Horizontal Line Customization ====================================================================================================================== */
+
+/* cursor caret ====================================================== */
+/* Inspired from: https://github.com/Jopp-gh/Obsidian-Dune84 */
+.markdown-source-view.mod-cm6 .cm-content {
+  caret-color: var(--red-robusta-beans);
+}
+/* cursor caret ====================================================== */
+
+ /* CALLOUT ================================================================================= */
+.callout {
+  border-width: 1px;
+  border-color: var(--crema);
+  background-color: var(--background-secondary);
+  border-radius: 15px;
+  border-style: dotted;
+}
+.callout-title {
+  color: var(--text-faint);
+  font-size: 12.9px;
+}
+.callout > .callout-content p:last-child {
+   margin-bottom: 0;
+}
+ /* CALLOUT ================================================================================= */
+
+
+/* Fonts ====================================== Fonts ====================================== Fonts 
+.markdown-source-view {
+  font-family: monospace;}  
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: Helvetica;} 
+.markdown-preview-view,
+.cm-scroller {
+  font-family: Helvetica;} /* For reading view */
+.markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+text-align: justify;
+text-justify: inter-word;
+}
+.markdown-preview-view {
+  font-family: "Times New Roman", Times, serif;}
+/* For edit view (legacy editor and live preview) */
+.markdown-source-view,
+.cm-content {
+  font-family: "Times New Roman", Times, serif;}
+.markdown-preview-view ul li,
+.markdown-preview-view ol li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* ================================*/
+
+/* PDF Print JS  =========================== PDF Print JS =========================== PDF Print JS  */
+@import "pdf-print.js"; 
+@media print {
+  @page {
+    margin-top: 1.1in;
+    margin-bottom: 1.3in;
+    margin-left: 0.9in;
+    margin-right: 0.5in;
+    @bottom-center {
+      content: counter(page);
+  }
+  ul li,
+  ol li {
+    text-align: justify;
+    text-justify: inter-word;
+   /* margin: 15px 0px; /* Margin kiri-kanan yang sama dengan paragraf */;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    margin-right: 0.3in;
+    padding-bottom: 0.5em; /* Adjust the value as needed */
+    margin-bottom: 0.5em; /* Adjust the value as needed */  }
+  }
+  code {
+    tab-size: 4;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 2;
+    margin: 0px 55px;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2em;
+    line-height: 1.5;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  :is(h2, h3, h4, h5, h6) {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--moccacino); 
+    text-align: left;
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    page-break-before: always;
+  }
+}
+/* PDF Print JS  ============================ PDF Print JS ============================ PDF Print JS  */
