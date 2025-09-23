@@ -1,4 +1,6 @@
 body {
+  background-color: var(--background-primary);
+
   figure[data-rehype-pretty-code-figure] pre,
   pre {
     box-shadow:
@@ -23,6 +25,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
+
     code {
       -webkit-text-fill-color: var(--color-accent);
       -webkit-background-clip: unset;
@@ -60,8 +63,40 @@ html {
     background: var(--border)
       linear-gradient(135deg, var(--border), var(--background-primary));
   }
+
   .callout-title {
     color: var(--color);
     background: var(--background-primary);
   }
+}
+
+:root:root {
+  --background-primary: #f3f3f3 --chalk-grey: #686868;
+  --chalk-grey-accent: #636363;
+  --h1-gradient-accent: #bec4ff;
+  --h2-gradient-accent: #9ac0ff;
+  --h3-gradient-accent: #b999e8;
+  --h4-gradient-accent: #f088ca;
+  --h5-gradient-accent: #8e91eb;
+  --h6-gradient-accent: #e990eb;
+
+  .callout {
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color), 0.05),
+      var(--background-primary)
+    );
+  }
+}
+
+:root:root[saved-theme="dark"] {
+  --background-primary: #000;
+  --chalk-grey: #ddd;
+  --chalk-grey-accent: #cbcbcb;
+  --h1-gradient-accent: #5968fb;
+  --h2-gradient-accent: #3372ca;
+  --h3-gradient-accent: #6f33ca;
+  --h4-gradient-accent: #ca3393;
+  --h5-gradient-accent: #262cda;
+  --h6-gradient-accent: #f21bf6;
 }
