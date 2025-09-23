@@ -1,5 +1,7 @@
 body {
-  background-color: var(--background-primary);
+  &[data-slug] {
+    background-color: var(--background-primary);
+  }
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
@@ -62,6 +64,11 @@ html {
   .callout {
     background: var(--border)
       linear-gradient(135deg, var(--border), var(--background-primary));
+    background-color: rgba(var(--callout-color), 0.1);
+
+    &.is-collapsed .callout-content > :first-child {
+      margin-top: -2rem;
+    }
   }
 
   .callout-title {
@@ -71,7 +78,8 @@ html {
 }
 
 :root:root {
-  --background-primary: #f3f3f3 --chalk-grey: #686868;
+  --background-primary: #f3f3f3;
+  --chalk-grey: #686868;
   --chalk-grey-accent: #636363;
   --h1-gradient-accent: #bec4ff;
   --h2-gradient-accent: #9ac0ff;
@@ -83,7 +91,7 @@ html {
   .callout {
     background: linear-gradient(
       135deg,
-      rgba(var(--color), 0.05),
+      rgba(var(--callout-color), 0.05),
       var(--background-primary)
     );
   }
