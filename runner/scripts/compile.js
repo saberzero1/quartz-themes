@@ -1,4 +1,10 @@
-import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
+import {
+  readFileSync,
+  writeFileSync,
+  readdirSync,
+  existsSync,
+  mkdirSync,
+} from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import {
   isDarkTheme,
@@ -30,7 +36,12 @@ function insertExtras(manifest) {
 
   // append file contents
   files.forEach((file) => {
-    if (!existsSync(`${basePath}/${file}`));
+    if (!existsSync(basePath)) {
+      mkdirSync(basePath, "", "utf8");
+    }
+    if (!existsSync(`${basePath}/${file}`)) {
+      writeFileSync(`${basePath}/${file}`, "", "utf8");
+    }
     const contents = readFileSync(`${basePath}/${file}`);
     if (contents && contents.length > 0) {
       result += contents + "\n";
