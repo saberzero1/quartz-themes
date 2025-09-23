@@ -82,7 +82,12 @@ const sets = {
     ],
     content: ["background-color", "padding"],
     icon: ["color"],
-    title: ["color", /*"font-size", */ "gap" /*, "line-height"*/, "padding"],
+    title: [
+      "color",
+      /*"font-size", */ "gap" /*, "line-height"*/,
+      "padding",
+      "border-radius",
+    ],
     titleInner: ["color", "font-weight"],
   },
   background: ["background-color"],
