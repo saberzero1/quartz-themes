@@ -8,6 +8,10 @@
 :root:root {
 }
 
+.darkmode {
+  display: none;
+}
+
 html {
   color-scheme: only dark;
   .callout[data-callout] {
