@@ -12,6 +12,7 @@
     "padding": "0px"
   },
   ".callout .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(240, 240, 255)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -36,6 +37,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(180, 255, 0)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -63,6 +65,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(255, 0, 153)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -90,6 +93,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(255, 70, 0)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -117,6 +121,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(220, 160, 255)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -144,6 +149,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(251, 70, 76)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -171,6 +177,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(128, 255, 212)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -198,6 +205,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(240, 240, 255)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -225,6 +233,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(0, 255, 255)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -242,31 +251,32 @@
     "padding": "12.7969px"
   },
   ".callout[data-callout=\"quote\"]": {
-    "--callout-color": "unset",
+    "--callout-color": "255, 204, 153",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgb(218, 218, 218)",
-    "border-radius": "0px",
-    "border-style": "none",
+    "border-color": "rgba(255, 204, 153, 0.25)",
+    "border-radius": "3px",
+    "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "normal",
-    "padding": "32px"
+    "mix-blend-mode": "lighten",
+    "padding": "0px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
-    "color": "rgb(218, 218, 218)",
-    "gap": "normal",
-    "padding": "32px"
+    "border-radius": "0px",
+    "color": "rgb(255, 204, 153)",
+    "gap": "4px",
+    "padding": "12.7969px"
   },
   ".callout[data-callout=\"quote\"] .callout-title .callout-icon": {
-    "color": "rgb(218, 218, 218)",
-    "background-color": "rgb(218, 218, 218)"
+    "color": "rgb(255, 204, 153)",
+    "background-color": "rgb(255, 204, 153)"
   },
   ".callout[data-callout=\"quote\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(218, 218, 218)",
+    "color": "rgb(255, 204, 153)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"quote\"] > .callout-content": {
-    "background-color": "rgba(0, 0, 0, 0)",
-    "padding": "32px"
+    "background-color": "rgba(255, 204, 153, 0.25)",
+    "padding": "12.7969px"
   },
   ".callout[data-callout=\"success\"]": {
     "--callout-color": "0, 255, 128",
@@ -279,6 +289,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(0, 255, 128)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -306,6 +317,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(255, 255, 0)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -333,6 +345,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(200, 255, 255)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -360,6 +373,7 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
+    "border-radius": "0px",
     "color": "rgb(255, 128, 0)",
     "gap": "4px",
     "padding": "12.7969px"
@@ -824,7 +838,7 @@
     "inset-inline-start": "0px",
     "position": "relative",
     "top": "0px",
-    "width": "852px"
+    "width": "1140px"
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
