@@ -108,6 +108,7 @@ body {
   }
 
   .callout .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -142,6 +143,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
@@ -177,6 +179,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -212,6 +215,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -250,6 +254,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
     gap: 4px;
     padding: 0px;
@@ -285,6 +290,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -320,6 +326,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -355,6 +362,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -390,6 +398,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
@@ -422,6 +431,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
+    border-radius: 0px;
     color: rgb(158, 158, 158);
     gap: 4px;
     padding: 0px;
@@ -457,6 +467,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
     gap: 4px;
     padding: 0px;
@@ -492,6 +503,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
@@ -527,6 +539,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -562,6 +575,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
@@ -1237,7 +1251,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 864px;
+    width: 1152px;
   }
 
   li.depth-0 {
@@ -1245,9 +1259,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-1 {
@@ -1255,9 +1269,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-2 {
@@ -1265,9 +1279,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-3 {
@@ -1275,9 +1289,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-4 {
@@ -1285,9 +1299,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-5 {
@@ -1295,9 +1309,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(203, 204, 204);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   ol > li {
