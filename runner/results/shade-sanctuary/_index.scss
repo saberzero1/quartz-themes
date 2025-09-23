@@ -165,6 +165,7 @@ body {
   }
 
   .callout .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -199,6 +200,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
@@ -234,6 +236,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -269,6 +272,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -304,6 +308,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
     gap: 4px;
     padding: 0px;
@@ -339,6 +344,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
@@ -374,6 +380,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -409,6 +416,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -444,6 +452,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
@@ -476,6 +485,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
+    border-radius: 0px;
     color: rgb(158, 158, 158);
     gap: 4px;
     padding: 0px;
@@ -511,6 +521,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
     gap: 4px;
     padding: 0px;
@@ -546,6 +557,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
@@ -581,6 +593,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
@@ -616,6 +629,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
+    border-radius: 0px;
     color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
@@ -1334,7 +1348,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 842px;
+    width: 1130px;
   }
 
   li.depth-0 {
