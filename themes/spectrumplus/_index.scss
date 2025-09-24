@@ -87,7 +87,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(36, 36, 36);
     color: rgb(201, 201, 201);
   }
 
@@ -619,6 +618,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "JetBrains Mono";
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(36, 36, 36);
   }
 
   .page > #quartz-body .left.sidebar {

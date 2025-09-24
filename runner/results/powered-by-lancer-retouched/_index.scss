@@ -128,7 +128,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(231, 231, 231), rgb(24, 24, 24));
     color: light-dark(rgb(0, 0, 0), rgb(231, 231, 231));
   }
 
@@ -701,6 +700,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: Arimo, sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(231, 231, 231), rgb(24, 24, 24));
   }
 
   .page > #quartz-body .left.sidebar {

@@ -30,7 +30,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(26, 27, 36);
     color: rgb(187, 192, 197);
   }
 
@@ -562,6 +561,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: inter;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(26, 27, 36);
   }
 
   .page > #quartz-body .left.sidebar {

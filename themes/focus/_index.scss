@@ -87,7 +87,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(26, 26, 26);
     color: rgb(144, 144, 144);
   }
 
@@ -634,6 +633,10 @@ body {
     font-family:
       "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(26, 26, 26);
   }
 
   .page > #quartz-body .left.sidebar {

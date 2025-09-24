@@ -179,7 +179,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(9, 9, 9);
     color: rgb(173, 173, 173);
   }
 
@@ -726,6 +725,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "yu gothic ui", sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(9, 9, 9);
   }
 
   .page > #quartz-body .left.sidebar {

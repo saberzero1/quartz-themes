@@ -92,7 +92,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
   }
 
@@ -721,6 +720,10 @@ body {
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol";
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(0, 0, 0);
   }
 
   .page > #quartz-body .left.sidebar {

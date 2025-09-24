@@ -180,7 +180,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(234, 228, 221), rgb(37, 41, 51));
     color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
   }
 
@@ -809,6 +808,10 @@ body {
       "Open Sans",
       "Helvetica Neue",
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(234, 228, 221), rgb(37, 41, 51));
   }
 
   .page > #quartz-body .left.sidebar {

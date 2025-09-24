@@ -202,7 +202,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
     color: light-dark(rgb(34, 34, 34), rgb(222, 222, 222));
   }
 
@@ -789,6 +788,10 @@ body {
     font-family:
       "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
   }
 
   .page > #quartz-body .left.sidebar {
