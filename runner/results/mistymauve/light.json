@@ -1,5 +1,9 @@
 {
-  "&[data-slug]": { "color": "rgb(34, 34, 34)" },
+  "&[data-slug]": {
+    "background": "linear-gradient(to right, rgb(237, 237, 237) 0%, rgb(237, 237, 237) 20%,  50%, rgb(237, 237, 237) 50%, rgb(237, 237, 237) 100%)",
+    "background-color": "rgb(216, 217, 207)",
+    "color": "rgb(34, 34, 34)"
+  },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "20px",

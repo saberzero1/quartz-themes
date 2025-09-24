@@ -1,5 +1,9 @@
 {
-  "&[data-slug]": { "color": "oklch(0 0 0)" },
+  "&[data-slug]": {
+    "background": "linear-gradient(to right, oklch(0.95 0 0) 0%, oklch(0.95 0 0) 20%,  50%, oklch(0.95 0 0) 50%, oklch(0.95 0 0) 100%)",
+    "background-color": "oklch(1 0 0)",
+    "color": "oklch(0 0 0)"
+  },
   ".callout": {
     "--callout-color": "0, 191, 111",
     "border-radius": "3px",

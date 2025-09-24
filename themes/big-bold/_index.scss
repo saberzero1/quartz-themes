@@ -750,6 +750,15 @@ body {
 
 body {
   &[data-slug] {
+    background: linear-gradient(
+      to right,
+      rgb(38, 38, 38) 0%,
+      rgb(38, 38, 38) 20%,
+      50%,
+      rgb(38, 38, 38) 50%,
+      rgb(38, 38, 38) 100%
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 

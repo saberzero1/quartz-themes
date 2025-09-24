@@ -130,6 +130,15 @@ html {
 
 body {
   &[data-slug] {
+    background: linear-gradient(
+      to right,
+      rgb(3, 3, 3) 0%,
+      rgb(3, 3, 3) 20%,
+      50%,
+      rgb(3, 3, 3) 50%,
+      rgb(3, 3, 3) 100%
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(13, 13, 13));
     color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
   }
 
