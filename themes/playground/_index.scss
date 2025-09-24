@@ -61,14 +61,7 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      oklch(0.18 0.014 279.29) 0%,
-      oklch(0.18 0.014 279.29) 20%,
-      50%,
-      oklch(0.18 0.014 279.29) 50%,
-      oklch(0.18 0.014 279.29) 100%
-    );
+    background: oklch(0.18 0.014 279.29);
     background-color: oklch(0.135 0.01 279.29);
     color: oklch(0.92 0.004 279.29);
   }
