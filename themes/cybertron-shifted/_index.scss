@@ -1916,6 +1916,10 @@ body {
       }
     }
   }
+
+  .callout.is-collapsed .callout-content > :first-child {
+    margin-top: -4rem;
+  }
 }
 
 :root[saved-theme="light"] {

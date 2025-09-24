@@ -18,6 +18,8 @@ import calc from "postcss-calc";
 import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
 import postcssColorConverter from "postcss-color-converter";
 
+// TODO: background-color on body is spilling over if the screen is too wide.
+
 // https://stackoverflow.com/a/64090995
 // input: h as an angle in [0,360] and s,l in [0,1] - output: r,g,b in [0,1]
 function hsl2rgb(h, s, l) {
@@ -646,6 +648,10 @@ body {
         padding-right: 1rem;
       }
     }
+  }
+
+  .callout.is-collapsed .callout-content>:first-child {
+    margin-top: -4rem;
   }
 }
 
