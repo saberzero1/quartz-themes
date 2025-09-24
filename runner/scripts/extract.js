@@ -79,6 +79,7 @@ describe("Quartz Theme Style Extraction", () => {
           */
         });
 
+        if (!getGeneric) return computedStyles;
         // Extra styles outside the main container
         const centerElement =
           app.workspace.activeLeaf.containerEl.querySelector(
@@ -86,12 +87,6 @@ describe("Quartz Theme Style Extraction", () => {
           );
         if (centerElement) {
           const centerStyle = getComputedStyle(centerElement);
-          computedStyles[`&[data-slug]`] = {
-            //"background-color": "#0000",
-            color: centerStyle.getPropertyValue("color")
-              ? centerStyle.getPropertyValue("color").toString().trim()
-              : "unset",
-          };
           computedStyles[`.page > #quartz-body`] = {
             "background-color": centerStyle.getPropertyValue("background-color")
               ? centerStyle
@@ -102,7 +97,6 @@ describe("Quartz Theme Style Extraction", () => {
           };
         }
 
-        if (!getGeneric) return computedStyles;
         const borderElement = document
           .getRootNode()
           .querySelector("hr.workspace-leaf-resize-handle");
@@ -222,9 +216,10 @@ describe("Quartz Theme Style Extraction", () => {
         }
 
         let backgroundGradient = "";
-        if (rightSidebar && leftSidebar) {
+        if (rightSidebar && leftSidebar && centerElement) {
           const leftSidebarStyle = getComputedStyle(leftSidebar);
           const rightSidebarStyle = getComputedStyle(rightSidebar);
+          const centerStyle = getComputedStyle(centerElement);
           const leftSidebarColor = leftSidebarStyle
             .getPropertyValue("background-color")
             .toString()
@@ -235,7 +230,14 @@ describe("Quartz Theme Style Extraction", () => {
             .trim();
           backgroundGradient = `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
           computedStyles[`&[data-slug]`] = {
-            "background-color": backgroundGradient,
+            "background-color": centerStyle
+              .getPropertyValue("background-color")
+              .toString()
+              .trim(),
+            color: centerStyle.getPropertyValue("color")
+              ? centerStyle.getPropertyValue("color").toString().trim()
+              : "unset",
+            background: backgroundGradient,
           };
         }
 
