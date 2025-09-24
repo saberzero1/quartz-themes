@@ -2096,6 +2096,9 @@ body {
       footer {
         padding: 0 1.5rem;
       }
+      footer {
+        min-width: auto;
+      }
 
       .explorer .explorer-content {
         width: 100vw;
