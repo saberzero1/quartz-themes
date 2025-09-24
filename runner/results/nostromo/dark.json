@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(29, 32, 33)",
-    "color": "rgb(235, 219, 178)"
-  },
+  "&[data-slug]": { "color": "rgb(235, 219, 178)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "0px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(29, 32, 33)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(40, 40, 40)",
     "border-color": "rgba(168, 168, 168, 0.2)",

@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "oklch(0.13 0 0)",
-    "color": "oklch(0.98 0 0)"
-  },
+  "&[data-slug]": { "color": "oklch(0.98 0 0)" },
   ".callout": {
     "--callout-color": "0, 191, 111",
     "border-radius": "3px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
   },
+  ".page > #quartz-body": { "background-color": "oklch(0.13 0 0)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "oklch(0.19 0 0)",
     "border-color": "oklch(0.3 0 0)",

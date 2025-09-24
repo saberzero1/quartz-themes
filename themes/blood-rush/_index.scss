@@ -201,7 +201,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgba(0, 0, 0, 0);
     color: rgb(170, 170, 170);
   }
 
@@ -735,6 +734,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "segoe ui", sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .page > #quartz-body .left.sidebar {

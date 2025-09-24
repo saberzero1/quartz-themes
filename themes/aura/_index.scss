@@ -138,7 +138,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(247, 243, 238), rgb(25, 25, 25));
     color: light-dark(rgb(74, 52, 28), rgb(240, 240, 240));
   }
 
@@ -715,6 +714,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "iA Writer Quattro S";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(247, 243, 238), rgb(25, 25, 25));
   }
 
   .page > #quartz-body .left.sidebar {

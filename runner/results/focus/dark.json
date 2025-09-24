@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(26, 26, 26)",
-    "color": "rgb(144, 144, 144)"
-  },
+  "&[data-slug]": { "color": "rgb(144, 144, 144)" },
   ".callout": {
     "--callout-color": "151,\n    192,\n    243",
     "border-radius": "0px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
   },
+  ".page > #quartz-body": { "background-color": "rgb(26, 26, 26)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(18, 18, 18)",
     "border-color": "rgba(0, 0, 0, 0)",

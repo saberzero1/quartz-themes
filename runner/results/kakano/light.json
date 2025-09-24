@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(255, 255, 255)",
-    "color": "color(srgb 0.01485 0.039975 0.07515)"
-  },
+  "&[data-slug]": { "color": "color(srgb 0.01485 0.039975 0.07515)" },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "4px",
@@ -442,6 +439,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
   },
+  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border-color": "color(srgb 0.361375 0.549813 0.813625)",

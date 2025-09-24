@@ -68,7 +68,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(255, 252, 244), rgb(40, 40, 40));
     color: light-dark(rgb(0, 0, 0), rgb(255, 252, 244));
   }
 
@@ -638,6 +637,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "TT2020 Base", "??";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(255, 252, 244), rgb(40, 40, 40));
   }
 
   .page > #quartz-body .left.sidebar {

@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(40, 40, 40)",
-    "color": "rgb(255, 252, 244)"
-  },
+  "&[data-slug]": { "color": "rgb(255, 252, 244)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "0px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"TT2020 Base\", \"??\""
   },
+  ".page > #quartz-body": { "background-color": "rgb(40, 40, 40)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(40, 40, 40)",
     "border-color": "rgb(54, 54, 54)",

@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(55, 45, 41)",
-    "color": "rgb(204, 194, 183)"
-  },
+  "&[data-slug]": { "color": "rgb(204, 194, 183)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "0px 4px 4px 0px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\""
   },
+  ".page > #quartz-body": { "background-color": "rgb(55, 45, 41)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(65, 54, 50)",
     "border-color": "rgb(80, 68, 49)",

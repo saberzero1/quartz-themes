@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(249, 246, 238)",
-    "color": "rgb(22, 50, 89)"
-  },
+  "&[data-slug]": { "color": "rgb(22, 50, 89)" },
   ".callout": {
     "--callout-color": "22, 50, 89",
     "border-radius": "4px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(249, 246, 238)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(99, 35, 53)",
     "border-color": "rgb(186, 153, 66)",

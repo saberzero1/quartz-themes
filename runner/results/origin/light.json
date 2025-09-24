@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(255, 255, 255)",
-    "color": "rgb(46, 51, 56)"
-  },
+  "&[data-slug]": { "color": "rgb(46, 51, 56)" },
   ".callout": {
     "--callout-color": "68, 138, 255",
     "border-radius": "3px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", Inter, \"Noto Color Emoji\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Sans JP\", \"Yu Gothic\", \"Microsoft YaHei Light\", sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(242, 243, 245)",
     "border-color": "rgb(221, 221, 221)",

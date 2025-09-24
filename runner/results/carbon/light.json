@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(255, 255, 255)",
-    "color": "rgb(38, 38, 38)"
-  },
+  "&[data-slug]": { "color": "rgb(38, 38, 38)" },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "0px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"IBM Plex Sans\", -apple-system, \"system-ui\", \"avenir next\", avenir, \"segoe ui\", \"helvetica neue\", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(244, 244, 244)",
     "border-color": "rgba(0, 0, 0, 0)",

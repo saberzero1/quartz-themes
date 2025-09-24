@@ -9344,7 +9344,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(oklch(1 0 0), oklch(0.13 0 0));
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
   }
 
@@ -9971,6 +9970,10 @@ body {
       "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(oklch(1 0 0), oklch(0.13 0 0));
   }
 
   .page > #quartz-body .left.sidebar {

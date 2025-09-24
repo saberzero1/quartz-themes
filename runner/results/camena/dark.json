@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(23, 18, 33)",
-    "color": "rgb(198, 189, 219)"
-  },
+  "&[data-slug]": { "color": "rgb(198, 189, 219)" },
   ".callout": {
     "--callout-color": "from hsl(210, 88%, 66%) r g b",
     "border-radius": "4px",
@@ -442,6 +439,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(23, 18, 33)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(34, 27, 49)",
     "border-color": "rgb(79, 63, 115)",

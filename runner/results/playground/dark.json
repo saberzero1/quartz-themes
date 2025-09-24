@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "oklch(0.135 0.01 279.29)",
-    "color": "oklch(0.92 0.004 279.29)"
-  },
+  "&[data-slug]": { "color": "oklch(0.92 0.004 279.29)" },
   ".callout": {
     "--callout-color": "oklch(48.5% 0.173 260.58)",
     "border-radius": "8px",
@@ -444,6 +441,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", Inter, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "oklch(0.135 0.01 279.29)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "oklch(0.18 0.014 279.29)",
     "border-color": "oklch(0.255 0.021 279.29)",
