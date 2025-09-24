@@ -341,7 +341,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
@@ -964,6 +963,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "CMU Typewriter Text";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
   }
 
   .page > #quartz-body .left.sidebar {

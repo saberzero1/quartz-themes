@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(47, 49, 54)",
-    "color": "rgb(187, 192, 197)"
-  },
+  "&[data-slug]": { "color": "rgb(187, 192, 197)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "4px",
@@ -438,6 +435,7 @@
     "white-space": "normal"
   },
   ".katex-display > .katex > .katex-html": { "font-family": "Avenir" },
+  ".page > #quartz-body": { "background-color": "rgb(47, 49, 54)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(32, 34, 37)",
     "border-color": "rgba(146, 161, 161, 0.48)",

@@ -2352,7 +2352,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
     color: light-dark(rgb(32, 84, 44), rgb(153, 229, 181));
   }
 
@@ -2887,6 +2886,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: "ModeSeven Regular";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
   }
 
   .page > #quartz-body .left.sidebar {

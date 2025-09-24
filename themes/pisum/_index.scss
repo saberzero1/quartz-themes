@@ -30,7 +30,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(54, 69, 73);
     color: rgb(251, 241, 199);
   }
 
@@ -565,6 +564,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: Avenir, "Avenir Next", sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(54, 69, 73);
   }
 
   .page > #quartz-body .left.sidebar {

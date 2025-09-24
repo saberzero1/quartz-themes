@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(22, 24, 33)",
-    "color": "rgb(198, 200, 209)"
-  },
+  "&[data-slug]": { "color": "rgb(198, 200, 209)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "4px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"Helvetica Neue\", Arial, \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(22, 24, 33)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(30, 33, 50)",
     "border-color": "rgb(54, 54, 54)",

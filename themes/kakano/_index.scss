@@ -282,10 +282,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(
-      rgb(255, 255, 255),
-      color(srgb 0.007425 0.0199875 0.037575)
-    );
     color: light-dark(
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
@@ -914,6 +910,13 @@ body {
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(
+      rgb(255, 255, 255),
+      color(srgb 0.007425 0.0199875 0.037575)
+    );
   }
 
   .page > #quartz-body .left.sidebar {

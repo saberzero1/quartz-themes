@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(38, 38, 38)",
-    "color": "rgb(218, 218, 218)"
-  },
+  "&[data-slug]": { "color": "rgb(218, 218, 218)" },
   ".callout": {
     "--callout-color": "2, 122, 255",
     "border-radius": "4px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(38, 38, 38)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(28, 28, 28)",
     "border-color": "rgba(0, 0, 0, 0.2)",

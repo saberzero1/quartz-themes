@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(252, 245, 228)",
-    "color": "rgb(38, 38, 38)"
-  },
+  "&[data-slug]": { "color": "rgb(38, 38, 38)" },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "2px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"iA Writer Quattro S\""
   },
+  ".page > #quartz-body": { "background-color": "rgb(252, 245, 228)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(228, 220, 200)",
     "border-color": "rgb(230, 230, 230)",

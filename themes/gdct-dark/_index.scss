@@ -66,7 +66,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(49, 48, 48);
     color: rgb(255, 253, 249);
   }
 
@@ -612,6 +611,10 @@ body {
     font-family:
       "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(49, 48, 48);
   }
 
   .page > #quartz-body .left.sidebar {
@@ -1246,9 +1249,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-1 {
@@ -1256,9 +1259,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-2 {
@@ -1266,9 +1269,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-3 {
@@ -1276,9 +1279,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-4 {
@@ -1286,9 +1289,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-5 {
@@ -1296,9 +1299,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(255, 253, 249);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   ol > li {

@@ -146,7 +146,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(244, 244, 240), rgb(22, 22, 22));
     color: light-dark(rgb(22, 22, 22), rgb(244, 244, 240));
   }
 
@@ -733,6 +732,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(244, 244, 240), rgb(22, 22, 22));
   }
 
   .page > #quartz-body .left.sidebar {

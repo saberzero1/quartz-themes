@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(254, 254, 254)",
-    "color": "rgb(85, 85, 85)"
-  },
+  "&[data-slug]": { "color": "rgb(85, 85, 85)" },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "3px",
@@ -440,6 +437,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"New York\", Georgia, ui-serif, serif"
   },
+  ".page > #quartz-body": { "background-color": "rgb(254, 254, 254)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(253, 249, 247)",
     "border-color": "rgb(224, 224, 224)",

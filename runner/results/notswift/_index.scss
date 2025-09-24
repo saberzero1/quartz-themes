@@ -363,7 +363,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
     color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
   }
 
@@ -955,6 +954,10 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
   }
 
   .page > #quartz-body .left.sidebar {

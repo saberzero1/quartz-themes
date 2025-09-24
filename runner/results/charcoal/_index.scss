@@ -140,7 +140,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(34, 37, 39);
     color: rgb(149, 149, 149);
   }
 
@@ -686,6 +685,10 @@ body {
     font-family:
       "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(34, 37, 39);
   }
 
   .page > #quartz-body .left.sidebar {

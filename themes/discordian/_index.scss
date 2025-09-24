@@ -55,7 +55,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(46, 48, 53);
     color: rgb(208, 209, 210);
   }
 
@@ -591,6 +590,10 @@ body {
   .katex-display > .katex > .katex-html {
     font-family:
       "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(46, 48, 53);
   }
 
   .page > #quartz-body .left.sidebar {

@@ -201,7 +201,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(238, 238, 238), rgb(19, 22, 27));
     color: light-dark(rgb(38, 38, 38), rgb(238, 238, 238));
   }
 
@@ -780,6 +779,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: Consolas, monospace;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(238, 238, 238), rgb(19, 22, 27));
   }
 
   .page > #quartz-body .left.sidebar {

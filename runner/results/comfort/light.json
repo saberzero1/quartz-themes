@@ -1,8 +1,5 @@
 {
-  "&[data-slug]": {
-    "background-color": "rgb(252, 254, 243)",
-    "color": "rgb(111, 110, 106)"
-  },
+  "&[data-slug]": { "color": "rgb(111, 110, 106)" },
   ".callout": {
     "--callout-color": "8, 109, 221",
     "border-radius": "4px",
@@ -438,6 +435,7 @@
     "white-space": "normal"
   },
   ".katex-display > .katex > .katex-html": { "font-family": "宋体, SimSun" },
+  ".page > #quartz-body": { "background-color": "rgb(252, 254, 243)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgb(163, 213, 170)",
     "border-color": "rgba(0, 0, 0, 0)",
