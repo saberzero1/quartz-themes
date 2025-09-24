@@ -109,6 +109,15 @@ html {
 
 body {
   &[data-slug] {
+    background: linear-gradient(
+      to right,
+      rgb(30, 30, 30) 0%,
+      rgb(30, 30, 30) 20%,
+      50%,
+      rgb(30, 30, 30) 50%,
+      rgb(30, 30, 30) 100%
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
     color: light-dark(rgb(32, 33, 36), rgb(224, 224, 224));
   }
 
