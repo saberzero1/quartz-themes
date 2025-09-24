@@ -1,6 +1,6 @@
 {
   "&[data-slug]": {
-    "background": "linear-gradient(to right, oklch(0.8 0.0756825 293.56) 0%, oklch(0.8 0.0756825 293.56) 20%,  50%, oklch(0.8 0.0756825 293.56) 50%, oklch(0.8 0.0756825 293.56) 100%)",
+    "background": "oklch(0.8 0.0756825 293.56)",
     "background-color": "oklch(0.93 0.0756825 263.56)",
     "color": "rgb(34, 34, 34)"
   },

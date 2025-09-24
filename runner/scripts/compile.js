@@ -171,7 +171,12 @@ manifestCollection.forEach((manifest) => {
     ? JSON.parse(readFileSync(lightFile, "utf8"))
     : null;
 
-  const colorTargets = ["color", "background-color", "border-color"];
+  const colorTargets = [
+    "color",
+    "background-color",
+    "border-color",
+    "background",
+  ];
   let graphColors = { dark: {}, light: {} };
   const graphMapping = {
     /*

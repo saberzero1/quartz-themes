@@ -201,14 +201,7 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      rgb(40, 42, 58) 0%,
-      rgb(40, 42, 58) 20%,
-      50%,
-      rgb(40, 42, 58) 50%,
-      rgb(40, 42, 58) 100%
-    );
+    background: light-dark(rgb(253, 249, 243), rgb(40, 42, 58));
     background-color: light-dark(rgb(253, 249, 243), rgb(30, 31, 43));
     color: light-dark(rgb(44, 41, 45), rgb(255, 255, 255));
   }

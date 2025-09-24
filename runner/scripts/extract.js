@@ -228,7 +228,10 @@ describe("Quartz Theme Style Extraction", () => {
             .getPropertyValue("background-color")
             .toString()
             .trim();
-          backgroundGradient = `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
+          backgroundGradient =
+            leftSidebarColor === rightSidebarColor
+              ? leftSidebarColor
+              : `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
           computedStyles[`&[data-slug]`] = {
             "background-color": centerStyle
               .getPropertyValue("background-color")
