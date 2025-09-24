@@ -115,7 +115,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
   }
 
@@ -706,6 +705,10 @@ body {
     font-family:
       -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji",
       Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   }
 
   .page > #quartz-body .left.sidebar {

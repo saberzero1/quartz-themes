@@ -112,10 +112,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(
-      rgba(92, 192, 235, 0.1),
-      rgba(76, 173, 214, 0.1)
-    );
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
@@ -708,6 +704,13 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(
+      rgba(92, 192, 235, 0.1),
+      rgba(76, 173, 214, 0.1)
+    );
   }
 
   .page > #quartz-body .left.sidebar {

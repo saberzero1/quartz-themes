@@ -72,7 +72,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(29, 32, 33);
     color: rgb(235, 219, 178);
   }
 
@@ -609,6 +608,10 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family: -apple-system, "system-ui", "Segoe UI", Roboto, sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(29, 32, 33);
   }
 
   .page > #quartz-body .left.sidebar {

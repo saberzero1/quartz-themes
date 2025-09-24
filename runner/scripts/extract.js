@@ -87,14 +87,17 @@ describe("Quartz Theme Style Extraction", () => {
         if (centerElement) {
           const centerStyle = getComputedStyle(centerElement);
           computedStyles[`&[data-slug]`] = {
+            //"background-color": "#0000",
+            color: centerStyle.getPropertyValue("color")
+              ? centerStyle.getPropertyValue("color").toString().trim()
+              : "unset",
+          };
+          computedStyles[`.page > #quartz-body`] = {
             "background-color": centerStyle.getPropertyValue("background-color")
               ? centerStyle
                   .getPropertyValue("background-color")
                   .toString()
                   .trim()
-              : "unset",
-            color: centerStyle.getPropertyValue("color")
-              ? centerStyle.getPropertyValue("color").toString().trim()
               : "unset",
           };
         }
@@ -215,6 +218,24 @@ describe("Quartz Theme Style Extraction", () => {
                   .trim()
               : "inherit",
             "border-left-width": "1px",
+          };
+        }
+
+        let backgroundGradient = "";
+        if (rightSidebar && leftSidebar) {
+          const leftSidebarStyle = getComputedStyle(leftSidebar);
+          const rightSidebarStyle = getComputedStyle(rightSidebar);
+          const leftSidebarColor = leftSidebarStyle
+            .getPropertyValue("background-color")
+            .toString()
+            .trim();
+          const rightSidebarColor = rightSidebarStyle
+            .getPropertyValue("background-color")
+            .toString()
+            .trim();
+          backgroundGradient = `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
+          computedStyles[`&[data-slug]`] = {
+            "background-color": backgroundGradient,
           };
         }
 

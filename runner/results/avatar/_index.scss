@@ -122,7 +122,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: rgb(26, 35, 50);
     color: rgb(226, 232, 240);
   }
 
@@ -684,6 +683,10 @@ body {
       "Segoe UI",
       Roboto,
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: rgb(26, 35, 50);
   }
 
   .page > #quartz-body .left.sidebar {

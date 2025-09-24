@@ -170,7 +170,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(254, 253, 253), rgb(22, 29, 44));
     color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
   }
 
@@ -745,6 +744,10 @@ body {
       "system-ui",
       "Segoe UI",
       sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(254, 253, 253), rgb(22, 29, 44));
   }
 
   .page > #quartz-body .left.sidebar {

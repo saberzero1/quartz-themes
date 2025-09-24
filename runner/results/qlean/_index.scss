@@ -2365,7 +2365,6 @@ html {
 
 body {
   &[data-slug] {
-    background-color: light-dark(rgb(250, 250, 250), rgb(10, 10, 10));
     color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   }
 
@@ -2946,6 +2945,10 @@ body {
     font-family:
       "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  }
+
+  .page > #quartz-body {
+    background-color: light-dark(rgb(250, 250, 250), rgb(10, 10, 10));
   }
 
   .page > #quartz-body .left.sidebar {
