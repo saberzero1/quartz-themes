@@ -201,6 +201,15 @@ html {
 
 body {
   &[data-slug] {
+    background: linear-gradient(
+      to right,
+      rgb(0, 43, 54) 0%,
+      rgb(0, 43, 54) 20%,
+      50%,
+      rgb(0, 43, 54) 50%,
+      rgb(0, 43, 54) 100%
+    );
+    background-color: light-dark(rgb(253, 246, 227), rgb(0, 43, 54));
     color: light-dark(rgb(101, 123, 131), rgb(131, 148, 150));
   }
 
@@ -1622,9 +1631,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-1 {
@@ -1632,9 +1641,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-2 {
@@ -1642,9 +1651,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-3 {
@@ -1652,9 +1661,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-4 {
@@ -1662,9 +1671,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-5 {
@@ -1672,9 +1681,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 0px none rgb(131, 148, 150);
-    margin-inline-start: 0px;
-    padding-inline-start: 32px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   ol > li {
