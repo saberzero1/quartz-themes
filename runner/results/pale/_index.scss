@@ -201,13 +201,23 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      rgb(50, 50, 50) 0%,
-      rgb(50, 50, 50) 20%,
-      50%,
-      rgb(38, 38, 38) 50%,
-      rgb(38, 38, 38) 100%
+    background: light-dark(
+      linear-gradient(
+        to right,
+        rgb(239, 220, 188) 0%,
+        rgb(239, 220, 188) 20%,
+        50%,
+        rgba(255, 255, 255, 0.063) 50%,
+        rgba(255, 255, 255, 0.063) 100%
+      ),
+      linear-gradient(
+        to right,
+        rgb(50, 50, 50) 0%,
+        rgb(50, 50, 50) 20%,
+        50%,
+        rgb(38, 38, 38) 50%,
+        rgb(38, 38, 38) 100%
+      )
     );
     background-color: light-dark(rgb(239, 220, 188), rgb(50, 50, 50));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));

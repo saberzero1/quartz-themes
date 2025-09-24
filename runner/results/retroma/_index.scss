@@ -201,13 +201,9 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      oklch(0.24 0.0651598 292.488) 0%,
-      oklch(0.24 0.0651598 292.488) 20%,
-      50%,
-      oklch(0.24 0.0651598 292.488) 50%,
-      oklch(0.24 0.0651598 292.488) 100%
+    background: light-dark(
+      oklch(0.8 0.0756825 293.56),
+      oklch(0.24 0.0651598 292.488)
     );
     background-color: light-dark(
       oklch(0.93 0.0756825 263.56),

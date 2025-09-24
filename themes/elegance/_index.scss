@@ -52,14 +52,7 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      rgb(39, 38, 47) 0%,
-      rgb(39, 38, 47) 20%,
-      50%,
-      rgb(39, 38, 47) 50%,
-      rgb(39, 38, 47) 100%
-    );
+    background: light-dark(rgb(247, 245, 244), rgb(39, 38, 47));
     background-color: light-dark(rgb(255, 255, 255), rgb(53, 56, 67));
     color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
   }
