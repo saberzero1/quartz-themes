@@ -179,14 +179,7 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      rgb(245, 237, 227) 0%,
-      rgb(245, 237, 227) 20%,
-      50%,
-      rgb(245, 237, 227) 50%,
-      rgb(245, 237, 227) 100%
-    );
+    background: rgb(245, 237, 227);
     background-color: rgb(245, 237, 227);
     color: rgb(55, 38, 34);
   }

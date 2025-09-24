@@ -5369,13 +5369,16 @@ html {
 
 body {
   &[data-slug] {
-    background: linear-gradient(
-      to right,
-      rgb(0, 0, 0) 0%,
-      rgb(0, 0, 0) 20%,
-      50%,
-      rgb(0, 0, 0) 50%,
-      rgb(0, 0, 0) 100%
+    background: light-dark(
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 20%,
+        50%,
+        rgb(243, 243, 243) 50%,
+        rgb(243, 243, 243) 100%
+      ),
+      rgb(0, 0, 0)
     );
     background-color: light-dark(rgb(255, 255, 255), rgb(32, 32, 32));
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));

@@ -1,6 +1,6 @@
 {
   "&[data-slug]": {
-    "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%,  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)",
+    "background": "rgba(0, 0, 0, 0)",
     "background-color": "rgb(41, 45, 62)",
     "color": "rgb(228, 104, 114)"
   },
@@ -844,39 +844,39 @@
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "li.depth-1": { "font-weight": "400" },
   "li.depth-1 + li.depth-2": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "li.depth-2": { "font-weight": "400" },
   "li.depth-2 + li.depth-3": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "li.depth-3": { "font-weight": "400" },
   "li.depth-3 + li.depth-4": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "li.depth-4": { "font-weight": "400" },
   "li.depth-4 + li.depth-5": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
-    "border-inline-start": "0px none rgb(228, 104, 114)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   "ol > li": { "color": "rgb(228, 104, 114)", "text-align": "start" },
   "ol > li::marker": { "color": "rgb(228, 104, 114)" },

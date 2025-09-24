@@ -1,6 +1,6 @@
 {
   "&[data-slug]": {
-    "background": "linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%,  50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%)",
+    "background": "rgb(255, 255, 255)",
     "background-color": "rgb(255, 255, 255)",
     "color": "rgb(77, 77, 77)"
   },
