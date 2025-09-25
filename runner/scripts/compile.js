@@ -765,6 +765,7 @@ body {
       opacity: 1 !important;
       & > * {
         opacity: 0 !important;
+        transition: opacity .2s;
       }
       &:hover > * {
         opacity: 1 !important;
