@@ -1247,6 +1247,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: #171c28;
+    --code-comment: #8695b799;
+    --code-function: #ffd580;
+    --code-important: #ef6b73;
+    --code-keyword: #c3a6ff;
+    --code-normal: #5ccfe6;
+    --code-operator: #ffae57;
+    --code-property: color-mix(in hsl, #8695b799, #d7dce2);
+    --code-punctuation: #c3a6ff;
+    --code-string: #bae67e;
+    --code-tag: #a2aabc;
+    --code-value: #c3a6ff;
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(215, 220, 226);

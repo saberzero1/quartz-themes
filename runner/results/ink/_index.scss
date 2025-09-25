@@ -1246,6 +1246,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: hsl(0deg 0% 95%);
+    --code-comment: hsl(0deg 0% 50%);
+    --code-function: hsl(0deg 0% 25%);
+    --code-important: hsl(0deg 0% 20%);
+    --code-keyword: hsl(0deg 0% 25%);
+    --code-normal: hsl(0deg 0% 30%);
+    --code-operator: hsl(0deg 0% 10%);
+    --code-property: hsl(0deg 0% 5%);
+    --code-punctuation: hsl(0deg 0% 30%);
+    --code-string: hsl(0deg 0% 40%);
+    --code-tag: hsl(0deg 0% 0%);
+    --code-value: hsl(0deg 0% 35%);
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 0, 0);
