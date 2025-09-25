@@ -10,11 +10,22 @@
   --gray: #5c5c5c !important;
   --darkgray: #5c5c5c !important;
   --highlight: oklch(from #ffeb3b 50% 30% h) !important;
-  --secondary: #8a5cf5 !important;
+  --secondary: hsl(258, 88%, 66%) !important;
   --tertiary: oklch(from #4caf50 50% 30% h) !important;
   --lightgray: #ababab !important;
   --dark: #222222 !important;
 
+  --code-background: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          80% calc(c * 0.4) h
+      )
+      85% c h / 50%
+  ) !important;
   --code-comment: #ababab !important;
   --code-function: oklch(from #ffeb3b 50% 30% h) !important;
   --code-important: oklch(from #ff9800 50% 30% h) !important;
@@ -32,11 +43,19 @@
   --gray: #b3b3b3 !important;
   --darkgray: #b3b3b3 !important;
   --highlight: oklch(from #ffeb3b 70% 20% h) !important;
-  --secondary: #a68af9 !important;
+  --secondary: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --tertiary: oklch(from #4caf50 70% 20% h) !important;
   --lightgray: #666666 !important;
   --dark: #dadada !important;
 
+  --code-background: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
+      10% c h / 50%
+  ) !important;
   --code-comment: #666666 !important;
   --code-function: oklch(from #ffeb3b 70% 20% h) !important;
   --code-important: oklch(from #ff9800 70% 20% h) !important;
@@ -2229,7 +2248,7 @@ body {
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    /*background-color: var(--code-background);*/
+    background-color: var(--code-background);
     white-space: pre;
 
     & > code {
