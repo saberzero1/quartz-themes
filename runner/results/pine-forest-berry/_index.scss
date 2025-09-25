@@ -83,7 +83,7 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(242, 242, 242), rgb(59, 66, 82));
+    background: light-dark(rgb(242, 242, 242), rgb(59, 66, 82)) !important;
     color: light-dark(rgb(21, 24, 30), rgb(248, 248, 242));
   }
 

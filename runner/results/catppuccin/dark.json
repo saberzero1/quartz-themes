@@ -1,5 +1,5 @@
 {
-  "&[data-slug]&[data-slug]": {
+  "&[data-slug]": {
     "background": "rgb(24, 24, 37)",
     "color": "rgb(205, 214, 244)"
   },
