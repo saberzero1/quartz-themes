@@ -1002,6 +1002,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: rgba(0, 0, 0, 0.08);
+    --code-comment: #949594;
+    --code-function: #e0de71;
+    --code-important: #e9973f;
+    --code-keyword: #fa99cd;
+    --code-normal: #d5d5d5;
+    --code-operator: #fb464c;
+    --code-property: #53dfdd;
+    --code-punctuation: #949594;
+    --code-string: #44cf6e;
+    --code-tag: #fb464c;
+    --code-value: #a882ff;
+  }
+
   a.external {
     background-color: rgb(22, 23, 25);
     color: rgb(213, 213, 213);
@@ -1250,9 +1265,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-1 {
@@ -1260,9 +1275,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-2 {
@@ -1270,9 +1285,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-3 {
@@ -1280,9 +1295,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-4 {
@@ -1290,9 +1305,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   li.depth-5 {
@@ -1300,9 +1315,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(213, 213, 213);
+    margin-inline-start: 0px;
+    padding-inline-start: 23.1172px;
   }
 
   ol > li {

@@ -1246,6 +1246,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: rgb(33, 34, 36);
+    --code-comment: rgb(97, 96, 96);
+    --code-function: rgb(235, 203, 139);
+    --code-important: rgb(208, 135, 112);
+    --code-keyword: #fa99cd;
+    --code-normal: rgb(97, 96, 96);
+    --code-operator: rgb(97, 96, 96);
+    --code-property: rgb(97, 96, 96);
+    --code-punctuation: rgb(97, 96, 96);
+    --code-string: rgb(163, 190, 140);
+    --code-tag: rgb(97, 96, 96);
+    --code-value: rgb(180, 142, 173);
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(97, 96, 96);

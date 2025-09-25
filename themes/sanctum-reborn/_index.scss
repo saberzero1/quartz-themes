@@ -14,6 +14,19 @@
   --tertiary: hsl(9.6deg, 66.2%, 46.5%) !important;
   --lightgray: #a9a8a5 !important;
   --dark: #161616 !important;
+
+  --code-background: #e2e0dc80 !important;
+  --code-comment: #a9a8a5 !important;
+  --code-function: hsl(24.4deg, 90.8%, 61.8%) !important;
+  --code-important: hsl(268deg, 57%, 66%) !important;
+  --code-keyword: hsl(348.5deg, 79.3%, 63.9%) !important;
+  --code-normal: #545151 !important;
+  --code-operator: #e93147 !important;
+  --code-property: hsl(187.4deg, 22.4%, 50%) !important;
+  --code-punctuation: #545151 !important;
+  --code-string: hsl(114.6deg, 22.4%, 49%) !important;
+  --code-tag: hsl(9.6deg, 66.2%, 46.5%) !important;
+  --code-value: hsl(268deg, 57%, 66%) !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3a3838 !important;
@@ -24,6 +37,19 @@
   --tertiary: hsl(9.6deg, 66.2%, 46.5%) !important;
   --lightgray: #706e6d !important;
   --dark: #f4f4f0 !important;
+
+  --code-background: #262625 !important;
+  --code-comment: #706e6d !important;
+  --code-function: hsl(30.2deg, 98.6%, 72%) !important;
+  --code-important: hsl(268deg, 57%, 66%) !important;
+  --code-keyword: hsl(348.5deg, 79.3%, 63.9%) !important;
+  --code-normal: #c7c5c2 !important;
+  --code-operator: #fb464c !important;
+  --code-property: hsl(187.4deg, 22.4%, 50%) !important;
+  --code-punctuation: #c7c5c2 !important;
+  --code-string: hsl(96.9deg, 31.8%, 56.9%) !important;
+  --code-tag: hsl(11.2deg, 88.7%, 58.4%) !important;
+  --code-value: hsl(268deg, 57%, 66%) !important;
 }
 
 html {
@@ -1243,6 +1269,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {
