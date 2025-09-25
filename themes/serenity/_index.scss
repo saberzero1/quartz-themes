@@ -130,7 +130,7 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(250, 250, 250), rgb(3, 3, 3));
+    background: light-dark(rgb(250, 250, 250), rgb(3, 3, 3)) !important;
     color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
   }
 

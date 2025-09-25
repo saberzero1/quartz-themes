@@ -214,6 +214,9 @@ manifestCollection.forEach((manifest) => {
         if (colorTargets.includes(target)) {
           if (darkData[key][target] === lightData[key][target]) {
             data[key][target] = darkData[key][target];
+          } else if (key === "&[data-slug]" && target === "background") {
+            data[key][target] =
+              `light-dark(${lightData[key][target]}, ${darkData[key][target]}) !important`;
           } else {
             data[key][target] =
               `light-dark(${lightData[key][target]}, ${darkData[key][target]})`;
