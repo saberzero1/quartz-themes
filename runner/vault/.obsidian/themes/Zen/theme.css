@@ -1335,7 +1335,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 
-.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(:has(.cm-hashtag.cm-meta)) .cm-indent::before {
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(:has(.cm-hashtag.cm-meta)):not(:has(.image-embed)) .cm-indent::before {
 	margin-inline-start: 13px !important;
 }
 
@@ -3145,4 +3145,19 @@ body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 main.git-view .tree-item-inner.nav-folder-title-content,
 main.git-view .tree-item-inner.nav-file-title-content {
     font-size: calc(var(--window-font-size) * 1px) !important;
+}
+
+.bases-cards-property {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 20px !important;
+	margin: 0px 0;
+	position: inherit;
+	padding: 0 2px;
+}
+
+.bases-cards-cover {
+	position: fixed;
+
 }

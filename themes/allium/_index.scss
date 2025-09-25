@@ -1965,7 +1965,7 @@ body {
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    background-color: var(--code-background);
+    /*background-color: var(--code-background);*/
     white-space: pre;
 
     & > code {

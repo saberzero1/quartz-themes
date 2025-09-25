@@ -2,561 +2,571 @@
 name: Composer Theme
 id: obsidian-composer-theme
 settings:
-    -
-        id: learn-about-components-plugin
-        title: About Components
-        title.zh: 关于 Components
-        description: "[https://cp.cc1234.cc/](https://cp.cc1234.cc/)"
-        type: info-text
-        markdown: true
-    - id: theme-variant-light
-      title: Color Scheme
-      title.zh: 亮色主题配色方案
-      description: Choose a color scheme for the theme
-      description.zh: 为亮色主题选择一个预设的配色方案
-      type: class-select
-      allowEmpty: false
-      default: composer--XiaScheme-light
-      options:
-          - label: Sù 素
-            value: composer--SuScheme-light
-          - label: Ní 霓
-            value: composer--NiScheme-light
-          - label: Xiá 霞
-            value: composer--XiaScheme-light
-          - label: Qīng 青
-            value: composer--QingScheme-light
-    - id: theme-variant-dark
-      title: Color Scheme
-      title.zh: 暗色主题配色方案
-      description: Choose a color scheme for the theme
-      description.zh: 为暗色主题选择一个预设的配色方案
-      type: class-select
-      allowEmpty: false
-      default: composer--XiaScheme-dark
-      options:
-          - label: Sù 素
-            value: composer--SuScheme-dark
-          - label: Ní 霓
-            value: composer--NiScheme-dark
-          - label: Xiá 霞
-            value: composer--XiaScheme-dark
-          - label: Qīng 青
-            value: composer--QingScheme-dark
-    - id: typograph-settings
-      title: Typograph Settings
-      title.zh: 排版设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: file-line-width
-      title: Content Area width
-      title.zh: 内容区域宽度
-      description: The maximum line width
-      description.zh: 最大行宽
-      type: variable-number-slider
-      default: 700
-      min: 420
-      max: 1200
-      format: px
-      step: 1
-    - id: callout-setting
-      title: Callout
-      title.zh: Callout
-      type: heading
-      level: 3
-      collapsed: true
-    - id: callout-style
-      title: Callout Style
-      title.zh: Callout 样式
-      description: Choose prefered Callout style
-      description.zh: 选择喜欢的 Callout 风格
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultCalloutStyle
-      options:
-          - label: Default 默认
-            value: composer--DefaultCalloutStyle
-          - label: Subtle Grid 渐隐网格
-            value: composer--SubtleGridCallout
-          - label: Clean Line 简洁线条
-            value: composer--CleanLineCallout
-          - label: Github Style
-            value: composer--GithubCallout
-          - label: Window Panel 窗格
-            value: composer--WindowPanelCallout
-    - id: table-setting
-      title: Table
-      title.zh: 表格
-      type: heading
-      level: 3
-      collapsed: true
-    - id: table-style
-      title: Table Style
-      title.zh: 表格样式
-      description: Choose prefered table style
-      description.zh: 选择表格的样式
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultTableStyle
-      options:
-          - label: Default 默认
-            value: composer--DefaultTableStyle
-          - label: Obsidian
-            value: composer--ObsidianTableStyle
-          - label: Borderless 无边框
-            value: composer--BorderlessTableStyle
-          - label: Three Line(Academic) 三线表(学术)
-            value: composer--AcademicTableStyle
-    - id: composer--HideStripedTableBackground
-      title: Hide Striped Background
-      title.zh: 关闭斑马纹背景
-      type: class-toggle
-    - id: typograph-paragraph
-      title: Paragraph
-      title.zh: 段落
-      type: heading
-      level: 3
-      collapsed: true    
-    - id: composer--ParagraphIndent
-      title: Paragraph Indent
-      title.zh: 段落首行缩进
-      description: indent the first line of a paragraph
-      description.zh: 段落首行自动缩进 2 个字符
-      type: class-toggle
-    - id: paragraph-line-height
-      title: Paragraph Line Height
-      title.zh: 段落行高
-      description: Set the line height of the paragraph
-      description.zh: 设置段落的行高
-      type: variable-number
-      default: 1.7
-      min: 1.2
-      max: 2.5
-    - id: paragraph-letter-spacing
-      title: Paragraph Letter Spacing
-      title.zh: 段落字间距
-      description: Set the letter spacing of the paragraph, you should specify the unit em or px
-      description.zh: 设置段落的字间距，需要指定单位 em 或 px
-      type: variable-text
-      default: 0.035em
-    - id: paragraph-word-spacing
-      title: Paragraph Word Spacing
-      title.zh: 段落词间距
-      description: Set the word spacing of the paragraph, you should specify the unit em or px
-      description.zh: 设置段落的词间距，需要指定单位 em 或 px
-      type: variable-text
-      default: 0.035em
-    - id: bold-style-setting
-      title: Bold
-      title.zh: 加粗
-      type: heading
-      level: 3
-      collapsed: true
-    - id: bold-color
-      title: Bold Color
-      title.zh: 加粗颜色
-      type: variable-themed-color
-      format: hex
-      default-light: "#2d3748"
-      default-dark: "#f0f4f8"
-    - id: bold-modifier
-      title: Bold Weight
-      title.zh: 加粗粗细
-      type: variable-number
-      default: 200
+- id: learn-about-components-plugin
+  title: About Components
+  title.zh: 关于 Components
+  description: "[https://cp.cc1234.cc/](https://cp.cc1234.cc/)"
+  type: info-text
+  markdown: true
+- id: theme-variant-light
+  title: Color Scheme
+  title.zh: 亮色主题配色方案
+  description: Choose a color scheme for the theme
+  description.zh: 为亮色主题选择一个预设的配色方案
+  type: class-select
+  allowEmpty: false
+  default: composer--XiaScheme-light
+  options:
+  - label: Sù 素
+    value: composer--SuScheme-light
+  - label: Ní 霓
+    value: composer--NiScheme-light
+  - label: Xiá 霞
+    value: composer--XiaScheme-light
+  - label: Qīng 青
+    value: composer--QingScheme-light
+- id: theme-variant-dark
+  title: Color Scheme
+  title.zh: 暗色主题配色方案
+  description: Choose a color scheme for the theme
+  description.zh: 为暗色主题选择一个预设的配色方案
+  type: class-select
+  allowEmpty: false
+  default: composer--XiaScheme-dark
+  options:
+  - label: Sù 素
+    value: composer--SuScheme-dark
+  - label: Ní 霓
+    value: composer--NiScheme-dark
+  - label: Xiá 霞
+    value: composer--XiaScheme-dark
+  - label: Qīng 青
+    value: composer--QingScheme-dark
+- id: typograph-settings
+  title: Typograph Settings
+  title.zh: 排版设置
+  type: heading
+  level: 2
+  collapsed: true
+- id: file-line-width
+  title: Content Area width
+  title.zh: 内容区域宽度
+  description: The maximum line width
+  description.zh: 最大行宽
+  type: variable-number-slider
+  default: 700
+  min: 420
+  max: 1200
+  format: px
+  step: 1
+- id: callout-setting
+  title: Callout
+  title.zh: Callout
+  type: heading
+  level: 3
+  collapsed: true
+- id: callout-style
+  title: Callout Style
+  title.zh: Callout 样式
+  description: Choose prefered Callout style
+  description.zh: 选择喜欢的 Callout 风格
+  type: class-select
+  allowEmpty: false
+  default: composer--DefaultCalloutStyle
+  options:
+  - label: Default 默认
+    value: composer--DefaultCalloutStyle
+  - label: Subtle Grid 渐隐网格
+    value: composer--SubtleGridCallout
+  - label: Clean Line 简洁线条
+    value: composer--CleanLineCallout
+  - label: Github Style
+    value: composer--GithubCallout
+  - label: Window Panel 窗格
+    value: composer--WindowPanelCallout
+- id: table-setting
+  title: Table
+  title.zh: 表格
+  type: heading
+  level: 3
+  collapsed: true
+- id: table-style
+  title: Table Style
+  title.zh: 表格样式
+  description: Choose prefered table style
+  description.zh: 选择表格的样式
+  type: class-select
+  allowEmpty: false
+  default: composer--DefaultTableStyle
+  options:
+  - label: Default 默认
+    value: composer--DefaultTableStyle
+  - label: Obsidian
+    value: composer--ObsidianTableStyle
+  - label: Borderless 无边框
+    value: composer--BorderlessTableStyle
+  - label: Three Line(Academic) 三线表(学术)
+    value: composer--AcademicTableStyle
+- id: composer--HideStripedTableBackground
+  title: Hide Striped Background
+  title.zh: 关闭斑马纹背景
+  type: class-toggle
+- id: typograph-paragraph
+  title: Paragraph
+  title.zh: 段落
+  type: heading
+  level: 3
+  collapsed: true
+- id: composer--ParagraphIndent
+  title: Paragraph Indent
+  title.zh: 段落首行缩进
+  description: indent the first line of a paragraph
+  description.zh: 段落首行自动缩进 2 个字符
+  type: class-toggle
+- id: paragraph-line-height
+  title: Paragraph Line Height
+  title.zh: 段落行高
+  description: Set the line height of the paragraph
+  description.zh: 设置段落的行高
+  type: variable-number
+  default: 1.7
+  min: 1.2
+  max: 2.5
+- id: paragraph-letter-spacing
+  title: Paragraph Letter Spacing
+  title.zh: 段落字间距
+  description: Set the letter spacing of the paragraph, you should specify the unit em or px
+  description.zh: 设置段落的字间距，需要指定单位 em 或 px
+  type: variable-text
+  default: 0.035em
+- id: paragraph-word-spacing
+  title: Paragraph Word Spacing
+  title.zh: 段落词间距
+  description: Set the word spacing of the paragraph, you should specify the unit em or px
+  description.zh: 设置段落的词间距，需要指定单位 em 或 px
+  type: variable-text
+  default: 0.035em
+- id: bold-style-setting
+  title: Bold
+  title.zh: 加粗
+  type: heading
+  level: 3
+  collapsed: true
+- id: bold-color
+  title: Bold Color
+  title.zh: 加粗颜色
+  type: variable-themed-color
+  format: hex
+  default-light: "#2d3748"
+  default-dark: "#f0f4f8"
+- id: bold-modifier
+  title: Bold Weight
+  title.zh: 加粗粗细
+  type: variable-number
+  default: 200
+- id: italic-style-setting
+  title: Italic
+  title.zh: 斜体
+  type: heading
+  level: 3
+  collapsed: true
+- id: italic-color
+  title: Italic Color
+  title.zh: 斜体颜色
+  type: variable-themed-color
+  format: hex
+  default-light: "#2d3748"
+  default-dark: "#f0f4f8"
+- id: task-setting
+  title: Task Settings
+  title.zh: 任务
+  type: heading
+  level: 3
+  collapsed: true
+- id: composer--RemoveTaskCompletedDecoration
+  title: Remove Task Completed Decoration
+  title.zh: 移除任务完成装饰
+  description: Remove the strikethrough for completed tasks
+  description.zh: 移除完成任务的划线
+  type: class-toggle
 
-    - id: task-setting
-      title: Task Settings
-      title.zh: 任务
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--RemoveTaskCompletedDecoration
-      title: Remove Task Completed Decoration
-      title.zh: 移除任务完成装饰
-      description: Remove the strikethrough for completed tasks
-      description.zh: 移除完成任务的划线
-      type: class-toggle
+- id: inline-code-style-setting
+  title: Inline Code Style
+  title.zh: 内联代码
+  type: heading
+  level: 3
+  collapsed: true
+- id: inline-code-normal
+  title: Inline Code Text Color
+  title.zh: 内联代码文本色
+  type: variable-themed-color
+  format: hex
+  default-light: "#eb5757"
+  default-dark: "#ff7b72"
+- id: inline-code-background
+  title: Inline Code Background Color
+  title.zh: 内联代码背景色
+  type: variable-themed-color
+  format: hsl
+  default-light: "hsla(31, 41%, 90%, 0.6)"
+  default-dark: "hsla(204, 15%, 25%, 0.4)"
 
-    - id: inline-code-style-setting
-      title: Inline Code Style
-      title.zh: 内联代码
-      type: heading
-      level: 3
-      collapsed: true
-    - id: inline-code-normal
-      title: Inline Code Text Color
-      title.zh: 内联代码文本色
-      type: variable-themed-color
-      format: hex
-      default-light: "#eb5757"
-      default-dark: "#ff7b72"
-    - id: inline-code-background
-      title: Inline Code Background Color
-      title.zh: 内联代码背景色
-      type: variable-themed-color
-      format: hsl
-      default-light: "hsla(31, 41%, 90%, 0.6)"
-      default-dark: "hsla(204, 15%, 25%, 0.4)"
+- id: typograph-heading-decoration-setting
+  title: Heading Decoration
+  title.zh: 标题装饰
+  type: heading
+  level: 3
+  collapsed: true
 
+- id: composer--DisableHeadingLineEditingHighlight
+  title: Disable Heading Line Editing Highlight
+  title.zh: 禁用标题行编辑时高亮
+  description: Disable line highlight when editing heading
+  description.zh: 编辑标题时是否高亮所在行
+  type: class-toggle
+  default: false
 
-    - id: typograph-heading-decoration-setting
-      title: Heading Decoration
-      title.zh: 标题装饰
-      type: heading
-      level: 3
-      collapsed: true
+- id: composer--DisableHeadingDecoration-ReadingView
+  title: Disable Heading Decoration (Reading View)
+  title.zh: 禁用标题装饰（阅读模式）
+  description: Disable decoration before heading (reading view)
+  description.zh: 禁用标题前方的竖杠装饰（阅读模式）
+  type: class-toggle
+  default: false
+- id: composer--DisableHeadingDecoration-LivePreview
+  title: Disable Heading Decoration (Live Preview View)
+  title.zh: 禁用标题装饰（实时编辑模式）
+  description: Disable decoration before heading (live preview view)
+  description.zh: 禁用标题前方的竖杠装饰（实时编辑模式）
+  type: class-toggle
+  default: false
 
-    - id: composer--DisableHeadingLineEditingHighlight
-      title: Disable Heading Line Editing Highlight
-      title.zh: 禁用标题行编辑时高亮
-      description: Disable line highlight when editing heading
-      description.zh: 编辑标题时是否高亮所在行
-      type: class-toggle
-      default: false
+- id: typograph-heading-size
+  title: Heading Font Size (H1-H6)
+  title.zh: 标题字体大小（H1-H6）
+  type: heading
+  level: 3
+  collapsed: true
+- id: h1-size
+  title: H1 Size
+  title.zh: 一级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1.69em
+- id: h2-size
+  title: H2 Size
+  title.zh: 二级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1.51em
+- id: h3-size
+  title: H3 Size
+  title.zh: 三级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1.35em
+- id: h4-size
+  title: H4 Size
+  title.zh: 四级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1.21em
+- id: h6-size
+  title: H6 Size
+  title.zh: 五级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1.1em
+- id: h6-size
+  title: H6 Size
+  title.zh: 六级标题大小
+  description: you should specify the unit em or px
+  description.zh: 需要指定单位 em 或 px
+  type: variable-text
+  default: 1em
 
-    - id: composer--DisableHeadingDecoration-ReadingView
-      title: Disable Heading Decoration (Reading View)
-      title.zh: 禁用标题装饰（阅读模式）
-      description: Disable decoration before heading (reading view)
-      description.zh: 禁用标题前方的竖杠装饰（阅读模式）
-      type: class-toggle
-      default: false
-    - id: composer--DisableHeadingDecoration-LivePreview
-      title: Disable Heading Decoration (Live Preview View)
-      title.zh: 禁用标题装饰（实时编辑模式）
-      description: Disable decoration before heading (live preview view)
-      description.zh: 禁用标题前方的竖杠装饰（实时编辑模式）
-      type: class-toggle
-      default: false
+- id: typograph-heading-color-setting
+  title: Heading Font Color (H1-H6)
+  title.zh: 标题字体颜色（H1-H6）
+  type: heading
+  level: 3
+  collapsed: true
+- id: h1-color
+  title: H1
+  type: variable-themed-color
+  format: hex
+  default-light: "#2d3748"
+  default-dark: "#e2e6eb"
+- id: h2-color
+  title: H2
+  type: variable-themed-color
+  format: hex
+  default-light: "#4a556b"
+  default-dark: "#c5cad4"
+- id: h3-color
+  title: H3
+  type: variable-themed-color
+  format: hex
+  default-light: "#66788d"
+  default-dark: "#a8aeb9"
+- id: h4-color
+  title: H4
+  type: variable-themed-color
+  format: hex
+  default-light: "#7f8a9b"
+  default-dark: "#8f96a1"
+- id: h5-color
+  title: H5
+  type: variable-themed-color
+  format: hex
+  default-light: "#9aa5b5"
+  default-dark: "#787f8a"
+- id: h6-color
+  title: H6
+  type: variable-themed-color
+  format: hex
+  default-light: "#808080"
+  default-dark: "#666d78"
 
-    - id: typograph-heading-size
-      title: Heading Font Size (H1-H6)
-      title.zh: 标题字体大小（H1-H6）
-      type: heading
-      level: 3
-      collapsed: true
-    - id: h1-size
-      title: H1 Size
-      title.zh: 一级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.69em
-    - id: h2-size
-      title: H2 Size
-      title.zh: 二级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.51em
-    - id: h3-size
-      title: H3 Size
-      title.zh: 三级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.35em
-    - id: h4-size
-      title: H4 Size
-      title.zh: 四级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.21em
-    - id: h6-size
-      title: H6 Size
-      title.zh: 五级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1.1em
-    - id: h6-size
-      title: H6 Size
-      title.zh: 六级标题大小
-      description: you should specify the unit em or px
-      description.zh: 需要指定单位 em 或 px
-      type: variable-text
-      default: 1em
-    
-    - id: typograph-heading-color-setting
-      title: Heading Font Color (H1-H6)
-      title.zh: 标题字体颜色（H1-H6）
-      type: heading
-      level: 3
-      collapsed: true
-    - id: h1-color
-      title: H1
-      type: variable-themed-color
-      format: hex
-      default-light: "#2d3748"
-      default-dark: "#e2e6eb"
-    - id: h2-color
-      title: H2
-      type: variable-themed-color
-      format: hex
-      default-light: "#4a556b"
-      default-dark: "#c5cad4"
-    - id: h3-color
-      title: H3
-      type: variable-themed-color
-      format: hex
-      default-light: "#66788d"
-      default-dark: "#a8aeb9"
-    - id: h4-color
-      title: H4
-      type: variable-themed-color
-      format: hex
-      default-light: "#7f8a9b"
-      default-dark: "#8f96a1"
-    - id: h5-color
-      title: H5
-      type: variable-themed-color
-      format: hex
-      default-light: "#9aa5b5"
-      default-dark: "#787f8a"
-    - id: h6-color
-      title: H6
-      type: variable-themed-color
-      format: hex
-      default-light: "#808080"
-      default-dark: "#666d78"
+- id: layout-settings
+  title: Layout Settings
+  title.zh: 布局设置
+  type: heading
+  level: 2
+  collapsed: true
+- id: composer--DisableNavHeaderAutoHide
+  title: Disable Nav Header Auto Hide
+  title.zh: 关闭自动隐藏导航栏
+  description: Enable this option to disable the auto-hide of the nav header
+  description.zh: 启用以后，相关视图的导航栏将会常驻（比如文件列表、标签、目录栏的导航栏菜单），不会在失去焦点时自动隐藏
+  type: class-toggle
+- id: composer--DisableFileFolderIcon
+  title: Disable File Folder Icon
+  title.zh: 禁用目录列表文件夹图标
+  type: class-toggle
+- id: composer--EnableIndentationGuidLine
+  title: Enable Indentation Guide Line
+  title.zh: 启用缩进指导线
+  description: show indentation guide line for file tree, ordered list, unordered list, and task list
+  description.zh: 显示文件树、有序列表、无序列表和任务列表的缩进指导线
+  type: class-toggle
+- id: modal-bg-blur
+  title: Modal Backdrop Blur Intensity
+  title.zh: 模态框背景模糊强度
+  type: variable-number-slider
+  default: 3
+  min: 0
+  max: 10
+  step: 1
+  format: px
+- id: nav-file-settings
+  title: Nav File Settings
+  title.zh: 导航文件
+  type: heading
+  level: 3
+  collapsed: true
+- id: composer--EnableFilenameLineFeed
+  title: Enable Filename Line Feed
+  title.zh: 启用文件名换行
+  description: enable line feed for filename
+  description.zh: 文件名换行显示
+  type: class-toggle
+- id: composer--EnableHiddenFileTag
+  title: Enable Hidden File Tag
+  title.zh: 启用隐藏文件标签
+  description: enable hidden file tag
+  description.zh: 隐藏文件后缀标签
+  type: class-toggle
+- id: composer--EnableHiddenFileTagHover
+  title: Enable Hidden File Tag Hover
+  title.zh: 文件标签悬停显示
+  description: enable hidden file tag hover
+  description.zh: 文件后缀标签鼠标悬停显示
+  type: class-toggle
+- id: outline-settings
+  title: Outline Settings
+  title.zh: 大纲
+  type: heading
+  level: 3
+  collapsed: true
+- id: outline-style
+  title: Outline Style
+  title.zh: 大纲样式
+  description: Choose prefered outline style
+  description.zh: 选择大纲的样式
+  type: class-select
+  allowEmpty: false
+  default: composer--DefaultOutlineStyle
+  options:
+  - label: Default 默认
+    value: composer--DefaultOutlineStyle
+  - label: Node 节点
+    value: composer--NodeOutlineStyle
+- id: outline-collapsed-icon-opacity
+  title: Outline Collapsed Icon Opacity
+  title.zh: 大纲折叠图标透明度
+  description: Set the opacity of the collapsed icon
+  description.zh: 设置折叠图标的透明度
+  type: variable-number-slider
+  default: 1
+  min: 0
+  max: 1
+  step: 0.1
+- id: color-settings
+  title: Color Settings
+  title.zh: 色彩设置
+  type: heading
+  level: 2
+  collapsed: true
+- id: light-primary-hue
+  title: Light Primary Hue (Only for Ní Scheme)
+  title.zh: 亮色主题主色调（仅适用于 Ní 方案）
+  type: variable-number-slider
+  default: 2
+  min: 0
+  max: 360
+  step: 1
+- id: light-secondary-hue
+  title: Light Secondary Hue (Only for Ní Scheme)
+  title.zh: 亮色主题副色调（仅适用于 Ní 方案）
+  type: variable-number-slider
+  default: 330
+  min: 0
+  max: 360
+  step: 1
 
-
-    - id: layout-settings
-      title: Layout Settings
-      title.zh: 布局设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: composer--DisableNavHeaderAutoHide
-      title: Disable Nav Header Auto Hide
-      title.zh: 关闭自动隐藏导航栏
-      description: Enable this option to disable the auto-hide of the nav header
-      description.zh: 启用以后，相关视图的导航栏将会常驻（比如文件列表、标签、目录栏的导航栏菜单），不会在失去焦点时自动隐藏
-      type: class-toggle
-    - id: composer--DisableFileFolderIcon
-      title: Disable File Folder Icon
-      title.zh: 禁用目录列表文件夹图标
-      type: class-toggle
-    - id: composer--EnableIndentationGuidLine
-      title: Enable Indentation Guide Line
-      title.zh: 启用缩进指导线
-      description: show indentation guide line for file tree, ordered list, unordered list, and task list
-      description.zh: 显示文件树、有序列表、无序列表和任务列表的缩进指导线
-      type: class-toggle
-    - id: modal-bg-blur
-      title: Modal Backdrop Blur Intensity
-      title.zh: 模态框背景模糊强度
-      type: variable-number-slider
-      default: 3
-      min: 0
-      max: 10
-      step: 1
-      format: px
-    - id: nav-file-settings
-      title: Nav File Settings
-      title.zh: 导航文件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--EnableFilenameLineFeed
-      title: Enable Filename Line Feed
-      title.zh: 启用文件名换行
-      description: enable line feed for filename
-      description.zh: 文件名换行显示
-      type: class-toggle
-    - id: composer--EnableHiddenFileTag
-      title: Enable Hidden File Tag
-      title.zh: 启用隐藏文件标签
-      description: enable hidden file tag
-      description.zh: 隐藏文件后缀标签
-      type: class-toggle
-    - id: composer--EnableHiddenFileTagHover
-      title: Enable Hidden File Tag Hover
-      title.zh: 文件标签悬停显示
-      description: enable hidden file tag hover
-      description.zh: 文件后缀标签鼠标悬停显示
-      type: class-toggle
-    - id: outline-settings
-      title: Outline Settings
-      title.zh: 大纲
-      type: heading
-      level: 3
-      collapsed: true
-    - id: outline-style
-      title: Outline Style
-      title.zh: 大纲样式
-      description: Choose prefered outline style
-      description.zh: 选择大纲的样式
-      type: class-select
-      allowEmpty: false
-      default: composer--DefaultOutlineStyle
-      options:
-          - label: Default 默认
-            value: composer--DefaultOutlineStyle
-          - label: Node 节点
-            value: composer--NodeOutlineStyle
-    - id: outline-collapsed-icon-opacity
-      title: Outline Collapsed Icon Opacity
-      title.zh: 大纲折叠图标透明度
-      description: Set the opacity of the collapsed icon
-      description.zh: 设置折叠图标的透明度
-      type: variable-number-slider
-      default: 1
-      min: 0
-      max: 1
-      step: 0.1
-    - id: color-settings
-      title: Color Settings
-      title.zh: 色彩设置
-      type: heading
-      level: 2
-      collapsed: true
-    - id: light-primary-hue
-      title: Light Primary Hue (Only for Ní Scheme)
-      title.zh: 亮色主题主色调（仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 2
-      min: 0
-      max: 360
-      step: 1
-    - id: light-secondary-hue
-      title: Light Secondary Hue (Only for Ní Scheme)
-      title.zh: 亮色主题副色调（仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 330
-      min: 0
-      max: 360
-      step: 1
-    - id: dark-primary-hue
-      title: Dark Primary Hue (Only for Ní Scheme)
-      title.zh: 暗色主题主色调 （仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 282
-      min: 0
-      max: 360
-      step: 1
-    - id: dark-secondary-hue
-      title: Dark Secondary Hue (Only for Ní Scheme)
-      title.zh: 暗色主题副色调 （仅适用于 Ní 方案）
-      type: variable-number-slider
-      default: 330
-      min: 0
-      max: 360
-      step: 1
-    - id: background-primary
-      title: Background Primary
-      title.zh: 主要背景色
-      type: variable-themed-color
-      format: hex
-      default-light: "#fafafa"
-      default-dark: "#1a1e24"
-    - id: background-primary-alt
-      title: Background Primary Alt
-      title.zh: 主要背景色（备用）
-      type: variable-themed-color
-      format: hex
-      default-light: "#e8eaee"
-      default-dark: "#252a32"
-    - id: background-secondary
-      title: Background Secondary
-      title.zh: 次要背景色
-      type: variable-themed-color
-      format: hex
-      default-light: "#f1f0ee"
-      default-dark: "#2d333b"
-    - id: background-secondary-alt
-      title: Background Secondary Alt
-      title.zh: 次要背景色（备用）
-      type: variable-themed-color
-      format: hex
-      default-light: "#dddfe3"
-      default-dark: "#373e48"
-    - id: plugin-components
-      title: Components Plugin
-      title.zh: Components 插件
-      type: heading
-      level: 2
-      collapsed: true
-    - id: dynamic-dataview-component
-      title: Dynamic Dataview
-      title.zh: 数据视图
-      type: heading
-      level: 3
-      collapsed: true
-    - id: composer--ComponentsSimpleTag
-      title: Simple Tag Style
-      title.zh: 简单标签样式
-      description: switch to simple tag style to select / multi-select / group-name...
-      description.zh: 改变数据视图中单选、多选项的样式
-      type: class-toggle
-    - id: composer--ComponentsFilledGallaryCover
-      title: Notion Style Gallary Cover
-      title.zh: Notion 风格的封面
-      description: remove Gallary dynamic data view's cover padding
-      description.zh: 移除动态数据视图中的封面内边距
-      type: class-toggle
-    - id: count-component
-      title: Count Component
-      title.zh: 统计数字组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components--count-component-value-font-size
-      title: Value Font Size
-      title.zh: 数值字体大小
-      type: variable-number
-      default: 1.6
-      format: rem
-    - id:  quote-component
-      title: Quote Component
-      title.zh: 摘录组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components-quote-title-font-size
-      title: Title Font Size
-      title.zh: 标题字体大小
-      description: "rem"
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components-quote-content-font-size
-      title: Content Font Size
-      title.zh: 内容字体大小
-      description: "rem"
-      type: variable-number
-      default: 0.875
-      format: rem
-    - id:  card-component
-      title: Card Component
-      title.zh: 卡片组件
-      type: heading
-      level: 3
-      collapsed: true
-    - id: components--card-component-title-icon-size
-      title: Title Icon Size
-      title.zh: 标题图标大小
-      description: "rem"
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components--card-component-title-font-size
-      title: Title Font Size
-      title.zh: 标题字体大小
-      description: "rem"
-      type: variable-number
-      default: 1
-      format: rem
-    - id: components--card-component-description-font-size
-      title: Content Font Size
-      title.zh: 描述字体大小
-      description: "rem"
-      type: variable-number
-      default: 0.8125
-      format: rem
+- id: dark-primary-hue
+  title: Dark Primary Hue (Only for Ní Scheme)
+  title.zh: 暗色主题主色调 （仅适用于 Ní 方案）
+  type: variable-number-slider
+  default: 282
+  min: 0
+  max: 360
+  step: 1
+- id: dark-secondary-hue
+  title: Dark Secondary Hue (Only for Ní Scheme)
+  title.zh: 暗色主题副色调 （仅适用于 Ní 方案）
+  type: variable-number-slider
+  default: 330
+  min: 0
+  max: 360
+  step: 1
+- id: background-primary
+  title: Background Primary
+  title.zh: 主要背景色
+  type: variable-themed-color
+  format: hex
+  default-light: "#fafafa"
+  default-dark: "#1a1e24"
+- id: background-primary-alt
+  title: Background Primary Alt
+  title.zh: 主要背景色（备用）
+  type: variable-themed-color
+  format: hex
+  default-light: "#e8eaee"
+  default-dark: "#252a32"
+- id: background-secondary
+  title: Background Secondary
+  title.zh: 次要背景色
+  type: variable-themed-color
+  format: hex
+  default-light: "#f1f0ee"
+  default-dark: "#2d333b"
+- id: background-secondary-alt
+  title: Background Secondary Alt
+  title.zh: 次要背景色（备用）
+  type: variable-themed-color
+  format: hex
+  default-light: "#dddfe3"
+  default-dark: "#373e48"
+- id: plugin-components
+  title: Components Plugin
+  title.zh: Components 插件
+  type: heading
+  level: 2
+  collapsed: true
+- id: dynamic-dataview-component
+  title: Dynamic Dataview
+  title.zh: 数据视图
+  type: heading
+  level: 3
+  collapsed: true
+- id: composer--ComponentsSimpleTag
+  title: Simple Tag Style
+  title.zh: 简单标签样式
+  description: switch to simple tag style to select / multi-select / group-name...
+  description.zh: 改变数据视图中单选、多选项的样式
+  type: class-toggle
+- id: composer--ComponentsFilledGallaryCover
+  title: Notion Style Gallary Cover
+  title.zh: Notion 风格的封面
+  description: remove Gallary dynamic data view's cover padding
+  description.zh: 移除动态数据视图中的封面内边距
+  type: class-toggle
+- id: count-component
+  title: Count Component
+  title.zh: 统计数字组件
+  type: heading
+  level: 3
+  collapsed: true
+- id: components--count-component-value-font-size
+  title: Value Font Size
+  title.zh: 数值字体大小
+  type: variable-number
+  default: 1.6
+  format: rem
+- id: quote-component
+  title: Quote Component
+  title.zh: 摘录组件
+  type: heading
+  level: 3
+  collapsed: true
+- id: components-quote-title-font-size
+  title: Title Font Size
+  title.zh: 标题字体大小
+  description: "rem"
+  type: variable-number
+  default: 1
+  format: rem
+- id: components-quote-content-font-size
+  title: Content Font Size
+  title.zh: 内容字体大小
+  description: "rem"
+  type: variable-number
+  default: 0.875
+  format: rem
+- id: card-component
+  title: Card Component
+  title.zh: 卡片组件
+  type: heading
+  level: 3
+  collapsed: true
+- id: components--card-component-title-icon-size
+  title: Title Icon Size
+  title.zh: 标题图标大小
+  description: "rem"
+  type: variable-number
+  default: 1
+  format: rem
+- id: components--card-component-title-font-size
+  title: Title Font Size
+  title.zh: 标题字体大小
+  description: "rem"
+  type: variable-number
+  default: 1
+  format: rem
+- id: components--card-component-description-font-size
+  title: Content Font Size
+  title.zh: 描述字体大小
+  description: "rem"
+  type: variable-number
+  default: 0.8125
+  format: rem
 */
 
 ::-webkit-scrollbar {
@@ -1072,350 +1082,381 @@ body {
 /* ---- Ní ---- */
 .composer--NiScheme-light,
 .composer--NiScheme-dark {
-  --lightness-1000: 1;
-  --lightness-950: 0.95;
-  --lightness-900: 0.9;
-  --lightness-850: 0.85;
-  --lightness-800: 0.8;
-  --lightness-750: 0.75;
-  --lightness-700: 0.7;
-  --lightness-650: 0.65;
-  --lightness-600: 0.6;
-  --lightness-550: 0.55;
-  --lightness-500: 0.5;
-  --lightness-450: 0.45;
-  --lightness-400: 0.4;
-  --lightness-350: 0.35;
-  --lightness-300: 0.3;
-  --lightness-250: 0.25;
-  --lightness-200: 0.2;
-  --lightness-150: 0.15;
-  --lightness-100: 0.1;
-  --lightness-90: 0.09;
-  --lightness-80: 0.08;
-  --lightness-70: 0.07;
-  --lightness-60: 0.06;
-  --lightness-50: 0.05;
-  --lightness-40: 0.04;
-  --lightness-30: 0.03;
-  --lightness-20: 0.02;
-  --lightness-10: 0.01;
-  --lightness-0: 0;
+	--lightness-1000: 1;
+	--lightness-950: 0.95;
+	--lightness-900: 0.9;
+	--lightness-850: 0.85;
+	--lightness-800: 0.8;
+	--lightness-750: 0.75;
+	--lightness-700: 0.7;
+	--lightness-650: 0.65;
+	--lightness-600: 0.6;
+	--lightness-550: 0.55;
+	--lightness-500: 0.5;
+	--lightness-450: 0.45;
+	--lightness-400: 0.4;
+	--lightness-350: 0.35;
+	--lightness-300: 0.3;
+	--lightness-250: 0.25;
+	--lightness-200: 0.2;
+	--lightness-150: 0.15;
+	--lightness-100: 0.1;
+	--lightness-90: 0.09;
+	--lightness-80: 0.08;
+	--lightness-70: 0.07;
+	--lightness-60: 0.06;
+	--lightness-50: 0.05;
+	--lightness-40: 0.04;
+	--lightness-30: 0.03;
+	--lightness-20: 0.02;
+	--lightness-10: 0.01;
+	--lightness-0: 0;
 
-  --h1-color: oklch(var(--lightness-350) var(--chroma-high) var(--primary-hue));
-  --h2-color: oklch(var(--lightness-450) var(--chroma-high) var(--primary-hue));
-  --h3-color: oklch(var(--lightness-550) var(--chroma-high) var(--primary-hue));
-  --h4-color: oklch(var(--lightness-650) var(--chroma-high) var(--primary-hue));
-  --h5-color: oklch(var(--lightness-750) var(--chroma-high) var(--primary-hue));
-  --h6-color: oklch(var(--lightness-800) var(--chroma-high) var(--primary-hue));
+	--h1-color: oklch(
+		var(--lightness-350) var(--chroma-high) var(--primary-hue)
+	);
+	--h2-color: oklch(
+		var(--lightness-450) var(--chroma-high) var(--primary-hue)
+	);
+	--h3-color: oklch(
+		var(--lightness-550) var(--chroma-high) var(--primary-hue)
+	);
+	--h4-color: oklch(
+		var(--lightness-650) var(--chroma-high) var(--primary-hue)
+	);
+	--h5-color: oklch(
+		var(--lightness-750) var(--chroma-high) var(--primary-hue)
+	);
+	--h6-color: oklch(
+		var(--lightness-800) var(--chroma-high) var(--primary-hue)
+	);
 
-  --chroma-accent: 0.16;
-  --chroma-high: 0.12;
-  --chroma-medium: 0.08;
-  --chroma-low: 0.04;
-  --chroma-neutral: 0.02;
-  --chroma-subtle: 0.01;
+	--chroma-subtle: 0.01;
+	--chroma-neutral: calc(var(--chroma-subtle) * 2);
+	--chroma-low: calc(var(--chroma-subtle) * 4);
+	--chroma-medium: calc(var(--chroma-subtle) * 8);
+	--chroma-high: calc(var(--chroma-subtle) * 12);
+	--chroma-accent: calc(var(--chroma-subtle) * 16);
 }
 
 .composer--NiScheme-light.theme-light {
-  --primary-hue: var(--light-primary-hue, 2);
-  --secondary-hue: var(--light-secondary-hue, 330);
+	--primary-hue: var(--light-primary-hue, 2);
+	--secondary-hue: var(--light-secondary-hue, 330);
 
-  --accent-h: 340;
-  --accent-s: 60%;
-  --accent-l: 65%;
+	--accent-h: 340;
+	--accent-s: 60%;
+	--accent-l: 65%;
 
-  --color-red-rgb: 214, 74, 122;
-  --color-blue-rgb: 101, 176, 199;
-  --color-purple-rgb: 161, 140, 193;
-  --color-cyan-rgb: 107, 197, 187;
-  --color-orange-rgb: 232, 129, 94;
-  --color-green-rgb: 107, 178, 148;
-  --color-yellow-rgb: 233, 196, 118;
-  --color-pink-rgb: 230, 170, 185;
+	--color-red-rgb: 214, 74, 122;
+	--color-blue-rgb: 101, 176, 199;
+	--color-purple-rgb: 161, 140, 193;
+	--color-cyan-rgb: 107, 197, 187;
+	--color-orange-rgb: 232, 129, 94;
+	--color-green-rgb: 107, 178, 148;
+	--color-yellow-rgb: 233, 196, 118;
+	--color-pink-rgb: 230, 170, 185;
 
-  --background-primary: oklch(
-    calc(var(--lightness-950) + 0.015) var(--chroma-neutral) var(--primary-hue)
-  );
-  --background-primary-alt: oklch(
-    calc(var(--lightness-950) - 0.015) var(--chroma-neutral) var(--primary-hue)
-  );
-  --background-secondary: oklch(
-    var(--lightness-950) var(--chroma-low) var(--primary-hue)
-  );
-  --background-secondary-alt: oklch(
-    calc(var(--lightness-950) - 0.015) var(--chroma-low) var(--primary-hue)
-  );
+	--background-primary: oklch(
+		calc(var(--lightness-950) + 0.015) var(--chroma-neutral)
+			var(--primary-hue)
+	);
+	--background-primary-alt: oklch(
+		calc(var(--lightness-950) - 0.015) var(--chroma-neutral)
+			var(--primary-hue)
+	);
+	--background-secondary: oklch(
+		var(--lightness-950) var(--chroma-low) var(--primary-hue)
+	);
+	--background-secondary-alt: oklch(
+		calc(var(--lightness-950) - 0.015) var(--chroma-low) var(--primary-hue)
+	);
 
-  --background-gradient: linear-gradient(
-    165deg,
-    oklch(var(--lightness-950) var(--chroma-low) var(--primary-hue) / 0.82) 0%,
-    oklch(var(--lightness-950) var(--chroma-neutral) var(--primary-hue)) 70%,
-    oklch(var(--lightness-950) var(--chroma-neutral) var(--secondary-hue)) 100%
-  );
+	--background-gradient: linear-gradient(
+		165deg,
+		oklch(var(--lightness-950) var(--chroma-low) var(--primary-hue) / 0.82)
+			0%,
+		oklch(var(--lightness-950) var(--chroma-neutral) var(--primary-hue)) 70%,
+		oklch(var(--lightness-950) var(--chroma-neutral) var(--secondary-hue))
+			100%
+	);
 
-  --background-modifier-border: oklch(
-    var(--lightness-900) var(--chroma-low) var(--primary-hue)
-  );
+	--background-modifier-border: oklch(
+		var(--lightness-900) var(--chroma-low) var(--primary-hue)
+	);
 
-  --color-base-00: oklch(
-    var(--lightness-1000) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-05: oklch(
-    var(--lightness-950) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-10: oklch(
-    var(--lightness-900) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-20: oklch(
-    var(--lightness-850) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-25: oklch(
-    var(--lightness-800) var(--chroma-low) var(--primary-hue)
-  );
-  --color-base-30: oklch(
-    var(--lightness-750) var(--chroma-low) var(--primary-hue)
-  );
-  --color-base-35: oklch(
-    var(--lightness-700) var(--chroma-low) var(--primary-hue)
-  );
-  --color-base-40: oklch(
-    var(--lightness-650) var(--chroma-low) var(--primary-hue)
-  );
-  --color-base-50: oklch(
-    var(--lightness-600) var(--chroma-medium) var(--primary-hue)
-  );
-  --color-base-60: oklch(
-    var(--lightness-500) var(--chroma-medium) var(--primary-hue)
-  );
-  --color-base-70: oklch(
-    var(--lightness-400) var(--chroma-high) var(--primary-hue)
-  );
-  --color-base-100: oklch(
-    var(--lightness-100) var(--chroma-high) var(--primary-hue)
-  );
+	--color-base-00: oklch(
+		var(--lightness-1000) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-05: oklch(
+		var(--lightness-950) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-10: oklch(
+		var(--lightness-900) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-20: oklch(
+		var(--lightness-850) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-25: oklch(
+		var(--lightness-800) var(--chroma-low) var(--primary-hue)
+	);
+	--color-base-30: oklch(
+		var(--lightness-750) var(--chroma-low) var(--primary-hue)
+	);
+	--color-base-35: oklch(
+		var(--lightness-700) var(--chroma-low) var(--primary-hue)
+	);
+	--color-base-40: oklch(
+		var(--lightness-650) var(--chroma-low) var(--primary-hue)
+	);
+	--color-base-50: oklch(
+		var(--lightness-600) var(--chroma-medium) var(--primary-hue)
+	);
+	--color-base-60: oklch(
+		var(--lightness-500) var(--chroma-medium) var(--primary-hue)
+	);
+	--color-base-70: oklch(
+		var(--lightness-400) var(--chroma-high) var(--primary-hue)
+	);
+	--color-base-100: oklch(
+		var(--lightness-100) var(--chroma-high) var(--primary-hue)
+	);
 
-  --bold-color: oklch(
-    var(--lightness-500) var(--chroma-accent) var(--primary-hue)
-  );
-  --bold-modifier: 500;
+	--bold-color: oklch(
+		var(--lightness-500) var(--chroma-accent) var(--primary-hue)
+	);
+	--bold-modifier: 500;
 
-  --code-normal: oklch(
-    var(--lightness-650) var(--chroma-high) var(--primary-hue)
-  );
-  --code-border-color: transparent;
+	--code-normal: oklch(
+		var(--lightness-650) var(--chroma-high) var(--primary-hue)
+	);
+	--code-border-color: transparent;
 
-  --inline-code-normal: oklch(
-    var(--lightness-400) var(--chroma-accent) var(--primary-hue)
-  );
-  --inline-code-background: oklch(
-    var(--lightness-950) var(--chroma-low) calc(var(--primary-hue) + 10)
-  );
+	--inline-code-normal: oklch(
+		var(--lightness-400) var(--chroma-accent) var(--primary-hue)
+	);
+	--inline-code-background: oklch(
+		var(--lightness-950) var(--chroma-low) calc(var(--primary-hue) + 10)
+	);
 
-  --blockquote-border-color: oklch(
-    var(--lightness-650) var(--chroma-high) var(--primary-hue)
-  );
-  --blockquote-background-color: oklch(
-    calc(var(--lightness-900) + 0.02) var(--chroma-low) var(--primary-hue) /
-      0.62
-  );
-  --blockquote-color: oklch(
-    var(--lightness-450) var(--chroma-high) var(--primary-hue)
-  );
+	--blockquote-border-color: oklch(
+		var(--lightness-650) var(--chroma-high) var(--primary-hue)
+	);
+	--blockquote-background-color: oklch(
+		calc(var(--lightness-900) + 0.02) var(--chroma-low) var(--primary-hue) /
+			0.62
+	);
+	--blockquote-color: oklch(
+		var(--lightness-450) var(--chroma-high) var(--primary-hue)
+	);
 
-  --codeblock-background: oklch(
-    calc(var(--lightness-900) + 0.02) var(--chroma-neutral) var(--primary-hue) /
-      0.62
-  );
-  --codeblock-caret-color: oklch(
-    var(--lightness-100) var(--chroma-high) var(--primary-hue)
-  );
-  --codeblock-border-radius: 10px;
+	--codeblock-background: oklch(
+		calc(var(--lightness-900) + 0.02) var(--chroma-neutral)
+			var(--primary-hue) / 0.62
+	);
+	--codeblock-caret-color: oklch(
+		var(--lightness-100) var(--chroma-high) var(--primary-hue)
+	);
+	--codeblock-border-radius: 10px;
 
-  --text-highlight-background: oklch(
-    var(--lightness-900) var(--chroma-medium) var(--primary-hue) / 0.12
-  );
-  --text-highlight-border-color: oklch(
-    var(--lightness-600) var(--chroma-high) var(--primary-hue)
-  );
-  --text-highlight-color: oklch(
-    var(--lightness-450) var(--chroma-accent) var(--primary-hue)
-  );
-  --text-highlight-border-radius: 5px;
+	--text-highlight-background: oklch(
+		var(--lightness-900) var(--chroma-medium) var(--primary-hue) / 0.12
+	);
+	--text-highlight-border-color: oklch(
+		var(--lightness-600) var(--chroma-high) var(--primary-hue)
+	);
+	--text-highlight-color: oklch(
+		var(--lightness-450) var(--chroma-accent) var(--primary-hue)
+	);
+	--text-highlight-border-radius: 5px;
 
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: 161, 140, 193;
-  --callout-error: 214, 74, 122;
-  --callout-example: 107, 197, 187;
-  --callout-fail: 214, 74, 122;
-  --callout-important: 232, 129, 94;
-  --callout-info: 101, 176, 199;
-  --callout-question: 233, 196, 118;
-  --callout-success: 107, 178, 148;
-  --callout-summary: 161, 140, 193;
-  --callout-tip: 107, 197, 187;
-  --callout-todo: 230, 170, 185;
-  --callout-warning: 233, 196, 118;
-  --callout-quote: 180, 180, 180;
+	--callout-bug: var(--color-red-rgb);
+	--callout-default: 161, 140, 193;
+	--callout-error: 214, 74, 122;
+	--callout-example: 107, 197, 187;
+	--callout-fail: 214, 74, 122;
+	--callout-important: 232, 129, 94;
+	--callout-info: 101, 176, 199;
+	--callout-question: 233, 196, 118;
+	--callout-success: 107, 178, 148;
+	--callout-summary: 161, 140, 193;
+	--callout-tip: 107, 197, 187;
+	--callout-todo: 230, 170, 185;
+	--callout-warning: 233, 196, 118;
+	--callout-quote: 180, 180, 180;
 
-  /* 自定义元素 */
-  --nav-button-container-bg: oklch(
-    var(--lightness-950) var(--chroma-medium) var(--primary-hue) / 0.32
-  );
-  --header-active-bg: rgba(230, 170, 185, 0.15);
+	/* 自定义元素 */
+	--nav-button-container-bg: oklch(
+		var(--lightness-950) var(--chroma-medium) var(--primary-hue) / 0.32
+	);
+	--header-active-bg: rgba(230, 170, 185, 0.15);
 }
 
 .composer--NiScheme-dark.theme-dark {
-  --primary-hue: var(--dark-primary-hue, 282);
-  --secondary-hue: var(--dark-secondary-hue, 2.65);
+	--primary-hue: var(--dark-primary-hue, 282);
+	--secondary-hue: var(--dark-secondary-hue, 2.65);
 
-  --accent-h: 272;
-  --accent-s: 40%;
-  --accent-l: 73%;
+	--accent-h: 272;
+	--accent-s: 40%;
+	--accent-l: 73%;
 
-  --color-red-rgb: 184, 64, 102;
-  --color-blue-rgb: 91, 156, 179;
-  --color-purple-rgb: 141, 120, 173;
-  --color-cyan-rgb: 87, 177, 167;
-  --color-orange-rgb: 202, 109, 74;
-  --color-green-rgb: 87, 158, 128;
-  --color-yellow-rgb: 203, 166, 88;
-  --color-pink-rgb: 200, 140, 155;
+	--color-red-rgb: 184, 64, 102;
+	--color-blue-rgb: 91, 156, 179;
+	--color-purple-rgb: 141, 120, 173;
+	--color-cyan-rgb: 87, 177, 167;
+	--color-orange-rgb: 202, 109, 74;
+	--color-green-rgb: 87, 158, 128;
+	--color-yellow-rgb: 203, 166, 88;
+	--color-pink-rgb: 200, 140, 155;
 
-  --background-primary: oklch(
-    calc(var(--lightness-400) + 0.025) var(--chroma-medium) var(--primary-hue)
-  );
-  --background-primary-alt: oklch(
-    calc(var(--lightness-350) - 0.025) var(--chroma-medium) var(--primary-hue)
-  );
-  --background-secondary: oklch(
-    var(--lightness-450) var(--chroma-medium) var(--primary-hue)
-  );
-  --background-secondary-alt: oklch(
-    calc(var(--lightness-450) - 0.025) var(--chroma-medium) var(--primary-hue)
-  );
+	--background-primary: oklch(
+		calc(var(--lightness-400) + 0.025) var(--chroma-medium)
+			var(--primary-hue)
+	);
+	--background-primary-alt: oklch(
+		calc(var(--lightness-350) - 0.025) var(--chroma-medium)
+			var(--primary-hue)
+	);
+	--background-secondary: oklch(
+		var(--lightness-450) var(--chroma-medium) var(--primary-hue)
+	);
+	--background-secondary-alt: oklch(
+		calc(var(--lightness-450) - 0.025) var(--chroma-medium)
+			var(--primary-hue)
+	);
 
-  --background-gradient: linear-gradient(
-    165deg,
-    oklch(var(--lightness-300) var(--chroma-medium) var(--primary-hue)) 0%,
-    oklch(var(--lightness-400) var(--chroma-medium) var(--primary-hue)) 68%,
-    oklch(var(--lightness-500) var(--chroma-low) var(--secondary-hue)) 100%
-  );
-  --background-modifier-border: oklch(
-    calc(var(--lightness-550) + 0.015) var(--chroma-medium) var(--primary-hue)
-  );
+	--background-gradient: linear-gradient(
+		165deg,
+		oklch(var(--lightness-300) var(--chroma-medium) var(--primary-hue)) 0%,
+		oklch(var(--lightness-400) var(--chroma-medium) var(--primary-hue)) 68%,
+		oklch(var(--lightness-500) var(--chroma-low) var(--secondary-hue)) 100%
+	);
+	--background-modifier-border: oklch(
+		calc(var(--lightness-550) + 0.015) var(--chroma-medium)
+			var(--primary-hue)
+	);
 
-  --color-base-00: oklch(
-    var(--lightness-0) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-05: oklch(
-    var(--lightness-50) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-10: oklch(
-    var(--lightness-100) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-20: oklch(
-    var(--lightness-200) var(--chroma-neutral) var(--primary-hue) / 0.32
-  );
-  --color-base-25: oklch(
-    var(--lightness-250) var(--chroma-low) var(--primary-hue) / 0.64
-  );
-  --color-base-30: oklch(
-    var(--lightness-300) var(--chroma-low) var(--primary-hue) / 0.64
-  );
-  --color-base-35: oklch(
-    var(--lightness-350) var(--chroma-low) var(--primary-hue) / 0.64
-  );
-  --color-base-40: oklch(
-    var(--lightness-400) var(--chroma-low) var(--primary-hue) / 0.64
-  );
-  --color-base-50: oklch(
-    var(--lightness-550) var(--chroma-medium) var(--primary-hue)
-  );
-  --color-base-60: oklch(
-    var(--lightness-650) var(--chroma-medium) var(--primary-hue)
-  );
-  --color-base-70: oklch(
-    var(--lightness-700) var(--chroma-medium) var(--primary-hue)
-  );
-  --color-base-100: oklch(
-    var(--lightness-1000) var(--chroma-high) var(--primary-hue)
-  );
+	--color-base-00: oklch(
+		var(--lightness-0) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-05: oklch(
+		var(--lightness-50) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-10: oklch(
+		var(--lightness-100) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-20: oklch(
+		var(--lightness-200) var(--chroma-neutral) var(--primary-hue) / 0.32
+	);
+	--color-base-25: oklch(
+		var(--lightness-250) var(--chroma-low) var(--primary-hue) / 0.64
+	);
+	--color-base-30: oklch(
+		var(--lightness-300) var(--chroma-low) var(--primary-hue) / 0.64
+	);
+	--color-base-35: oklch(
+		var(--lightness-350) var(--chroma-low) var(--primary-hue) / 0.64
+	);
+	--color-base-40: oklch(
+		var(--lightness-400) var(--chroma-low) var(--primary-hue) / 0.64
+	);
+	--color-base-50: oklch(
+		var(--lightness-550) var(--chroma-medium) var(--primary-hue)
+	);
+	--color-base-60: oklch(
+		var(--lightness-650) var(--chroma-medium) var(--primary-hue)
+	);
+	--color-base-70: oklch(
+		var(--lightness-700) var(--chroma-medium) var(--primary-hue)
+	);
+	--color-base-100: oklch(
+		var(--lightness-1000) var(--chroma-high) var(--primary-hue)
+	);
 
-  --h1-color: oklch(var(--lightness-800) var(--chroma-high) var(--primary-hue));
-  --h2-color: oklch(var(--lightness-750) var(--chroma-high) var(--primary-hue));
-  --h3-color: oklch(var(--lightness-700) var(--chroma-high) var(--primary-hue));
-  --h4-color: oklch(var(--lightness-650) var(--chroma-high) var(--primary-hue));
-  --h5-color: oklch(var(--lightness-600) var(--chroma-high) var(--primary-hue));
-  --h6-color: oklch(var(--lightness-550) var(--chroma-high) var(--primary-hue));
+	--h1-color: oklch(
+		var(--lightness-800) var(--chroma-high) var(--primary-hue)
+	);
+	--h2-color: oklch(
+		var(--lightness-750) var(--chroma-high) var(--primary-hue)
+	);
+	--h3-color: oklch(
+		var(--lightness-700) var(--chroma-high) var(--primary-hue)
+	);
+	--h4-color: oklch(
+		var(--lightness-650) var(--chroma-high) var(--primary-hue)
+	);
+	--h5-color: oklch(
+		var(--lightness-600) var(--chroma-high) var(--primary-hue)
+	);
+	--h6-color: oklch(
+		var(--lightness-550) var(--chroma-high) var(--primary-hue)
+	);
 
-  --bold-color: oklch(
-    var(--lightness-750) var(--chroma-accent) var(--primary-hue)
-  );
-  --bold-modifier: 500;
+	--bold-color: oklch(
+		var(--lightness-750) var(--chroma-accent) var(--primary-hue)
+	);
+	--bold-modifier: 500;
 
-  --code-normal: oklch(
-    var(--lightness-650) var(--chroma-high) var(--primary-hue)
-  );
-  --code-border-color: transparent;
+	--code-normal: oklch(
+		var(--lightness-650) var(--chroma-high) var(--primary-hue)
+	);
+	--code-border-color: transparent;
 
-  --inline-code-normal: oklch(
-    var(--lightness-350) var(--chroma-accent) var(--primary-hue)
-  );
-  --inline-code-background: oklch(
-    var(--lightness-850) var(--chroma-low) calc(var(--primary-hue) + 10)
-  );
+	--inline-code-normal: oklch(
+		var(--lightness-350) var(--chroma-accent) var(--primary-hue)
+	);
+	--inline-code-background: oklch(
+		var(--lightness-850) var(--chroma-low) calc(var(--primary-hue) + 10)
+	);
 
-  --blockquote-border-color: oklch(
-    var(--lightness-350) var(--chroma-low) var(--primary-hue)
-  );
-  --blockquote-background-color: oklch(
-    var(--lightness-10) var(--chroma-accent) var(--primary-hue) / 0.38
-  );
-  --blockquote-color: oklch(
-    var(--lightness-750) var(--chroma-high) var(--primary-hue)
-  );
+	--blockquote-border-color: oklch(
+		var(--lightness-350) var(--chroma-low) var(--primary-hue)
+	);
+	--blockquote-background-color: oklch(
+		var(--lightness-10) var(--chroma-accent) var(--primary-hue) / 0.38
+	);
+	--blockquote-color: oklch(
+		var(--lightness-750) var(--chroma-high) var(--primary-hue)
+	);
 
-  --codeblock-background: oklch(
-    var(--lightness-10) var(--chroma-accent) var(--primary-hue) / 0.38
-  );
-  --codeblock-caret-color: oklch(
-    var(--lightness-450) var(--chroma-high) var(--primary-hue)
-  );
-  --codeblock-border-radius: 10px;
+	--codeblock-background: oklch(
+		var(--lightness-10) var(--chroma-accent) var(--primary-hue) / 0.38
+	);
+	--codeblock-caret-color: oklch(
+		var(--lightness-450) var(--chroma-high) var(--primary-hue)
+	);
+	--codeblock-border-radius: 10px;
 
-  --text-highlight-background: oklch(
-    var(--lightness-500) var(--chroma-medium) var(--primary-hue) / 0.62
-  );
-  --text-highlight-border-color: oklch(
-    var(--lightness-950) var(--chroma-high) var(--primary-hue)
-  );
-  --text-highlight-color: oklch(
-    var(--lightness-950) var(--chroma-accent) var(--primary-hue)
-  );
-  --text-highlight-border-radius: 5px;
+	--text-highlight-background: oklch(
+		var(--lightness-500) var(--chroma-medium) var(--primary-hue) / 0.62
+	);
+	--text-highlight-border-color: oklch(
+		var(--lightness-950) var(--chroma-high) var(--primary-hue)
+	);
+	--text-highlight-color: oklch(
+		var(--lightness-950) var(--chroma-accent) var(--primary-hue)
+	);
+	--text-highlight-border-radius: 5px;
 
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: 141, 120, 173;
-  --callout-error: 184, 64, 102;
-  --callout-example: 87, 177, 167;
-  --callout-fail: 184, 64, 102;
-  --callout-important: 202, 109, 74;
-  --callout-info: 91, 156, 179;
-  --callout-question: 203, 166, 88;
-  --callout-success: 87, 158, 128;
-  --callout-summary: 141, 120, 173;
-  --callout-tip: 87, 177, 167;
-  --callout-todo: 200, 140, 155;
-  --callout-warning: 203, 166, 88;
-  --callout-quote: 150, 150, 150;
+	--callout-bug: var(--color-red-rgb);
+	--callout-default: 141, 120, 173;
+	--callout-error: 184, 64, 102;
+	--callout-example: 87, 177, 167;
+	--callout-fail: 184, 64, 102;
+	--callout-important: 202, 109, 74;
+	--callout-info: 91, 156, 179;
+	--callout-question: 203, 166, 88;
+	--callout-success: 87, 158, 128;
+	--callout-summary: 141, 120, 173;
+	--callout-tip: 87, 177, 167;
+	--callout-todo: 200, 140, 155;
+	--callout-warning: 203, 166, 88;
+	--callout-quote: 150, 150, 150;
 
-  --nav-button-container-bg: oklch(
-    var(--lightness-700) var(--chroma-medium) var(--primary-hue) / 0.25
-  );
-  --header-active-bg: rgba(200, 140, 155, 0.2);
+	--nav-button-container-bg: oklch(
+		var(--lightness-700) var(--chroma-medium) var(--primary-hue) / 0.25
+	);
+	--header-active-bg: rgba(200, 140, 155, 0.2);
 }
-
 
 .notice,
 .tooltip {
@@ -1555,25 +1596,8 @@ body:not(.composer--DisableHeadingDecoration-LivePreview) {
 }
 
 .markdown-source-view.mod-cm6 .HyperMD-header {
-	padding-top: var(--heading-spacing);
-	padding-bottom: 1rem;
-}
-
-.markdown-source-view.mod-cm6 .HyperMD-header-1 {
-	padding-top: calc(var(--heading-spacing));
-	padding-bottom: 1rem;
-}
-
-.markdown-source-view.mod-cm6 .HyperMD-header-2 {
-	padding-top: calc(var(--heading-spacing) * 0.9);
-	padding-bottom: 0.9rem;
-}
-
-/* 较小标题保持现有间距 */
-.markdown-source-view.mod-cm6 .HyperMD-header-5,
-.markdown-source-view.mod-cm6 .HyperMD-header-6 {
-	padding-top: calc(var(--heading-spacing) * 0.8);
-	padding-bottom: 0.8rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 /* heading line highlight */
@@ -2517,18 +2541,15 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 /* inline title */
 .inline-title:not([data-level]) {
 	color: var(--inline-title-color);
-	border-bottom: 1px solid var(--background-modifier-border);
-	padding-bottom: 16px;
 }
 
 /* property */
 .metadata-container {
-	margin-block-end: 0rem;
+	margin-block-end: 0.5rem;
 }
 
-.metadata-container + .cm-contentContainer > div > .cm-line:first-child {
-	padding-top: 8px;
-	margin-top: 8px;
+.metadata-properties-heading {
+	display: none;
 }
 
 .metadata-properties-title {
@@ -2539,11 +2560,6 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 	--metadata-gap: 4px;
 	--metadata-property-radius-hover: 0px;
 	--metadata-property-radius-focus: 0px;
-}
-
-.metadata-properties {
-	padding-bottom: 16px;
-	border-bottom: 1px solid var(--metadata-divider-color);
 }
 
 .is-mobile .metadata-properties {
@@ -2591,13 +2607,15 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 
 .metadata-container .metadata-show-source-button,
 .metadata-container .metadata-add-button {
-	margin-top: 0.3em;
-	opacity: 0;
+	margin-top: 0.5em;
+	color: var(--text-faint);
+    cursor: pointer;
+
 }
 
 .metadata-content:hover .metadata-add-button {
-	opacity: 1;
-	transition: opacity 0.5s;
+	transition: color 0.5s;
+    color: var(--text-normal)
 }
 
 /* file list */

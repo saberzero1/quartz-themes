@@ -1,7 +1,7 @@
 /*
 
       Theme: Retroma
-    Version: v1.1.1
+    Version: v1.1.2
      Author: emarpiee
 Description: A tribute to the past with an eye toward the future.
 
@@ -168,7 +168,7 @@ body {
 
   /* Layout & Sizing */
   --header-height: 48px;
-  --file-margins: var(--size-4-6);
+  --file-margins: var(--size-4-5) !important;
 
   /* Borders & Dividers */
   --hr-color: oklch(from var(--text-normal) l c h / 25%);
@@ -283,6 +283,11 @@ body {
   /* --checkbox-color-hover: oklch(from var(--base-accent) 50% c h); */
   --checkbox-radius: var(--window-border-radius);
   --checkbox-marker-color: var(--background-paper);
+
+  --mobile-nav-button-safe-area: calc(
+    var(--safe-area-inset-bottom) - var(--keyboard-height) -
+      var(--keyboard-height)
+  );
 }
 
 .theme-variant-1 {
@@ -541,6 +546,11 @@ body {
 }
 
 /* --- Content Areas Inside a Leaf --- */
+
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+  padding: var(--file-margins) !important;
+}
+
 .markdown-source-view,
 .markdown-preview-view,
 .view-content.webviewer-content,
@@ -549,7 +559,6 @@ body {
 .backlink-pane,
 .outgoing-link-pane,
 .workspace-leaf-content[data-type="bases"] .view-content {
-  margin-top: var(--size-4-2);
   border-radius: var(--window-border-radius);
   border: var(--border-ridge);
   background-color: var(--background-paper);
@@ -632,6 +641,7 @@ body:not(.is-mobile)
 
 .nav-header,
 .view-header {
+  margin-bottom: var(--size-4-2);
   align-content: center;
   background-color: var(--background-secondary);
   border: var(--border-groove) !important;
@@ -762,6 +772,9 @@ body:not(.is-mobile)
 }
 
 button:not(.excalidraw button),
+.canvas-control-item,
+.is-phone .menu .suggestion-group .suggestion-item,
+.is-phone .menu-item,
 .text-icon-button,
 .clickable-icon,
 .metadata-add-button,
@@ -775,6 +788,9 @@ button:not(.excalidraw button),
 }
 
 button:not(.excalidraw button),
+.canvas-control-item,
+.is-phone .menu .suggestion-group .suggestion-item,
+.is-phone .menu-item,
 .vertical-tab-nav-item:not(.settings-search-input),
 .text-icon-button,
 .clickable-icon,
@@ -789,6 +805,9 @@ button:not(.excalidraw button),
 }
 
 button:hover,
+.canvas-control-item:hover,
+.is-phone .menu .suggestion-group .suggestion-item:hover,
+.is-phone .menu-item:hover,
 .text-icon-button:hover,
 .clickable-icon:hover,
 .metadata-add-button:hover,
@@ -800,6 +819,9 @@ button:hover,
 
 button:active,
 button:not(.clickable-icon):active,
+.canvas-control-item:active,
+.is-phone .menu .suggestion-group .suggestion-item:active,
+.is-phone .menu-item:active,
 .text-icon-button:active,
 .clickable-icon.is-active,
 .clickable-icon:active,
@@ -870,8 +892,12 @@ textarea {
   background-color: oklch(
     from var(--background-secondary) l c h / 30%
   ) !important;
-  box-shadow: -2px 2px 0px var(--background-tertiary);
+  box-shadow: -1px 1px 0px var(--background-tertiary);
   border: 2px solid oklch(from var(--accent-2) 55% c h / 50%);
+}
+
+.nav-files-container::-webkit-scrollbar {
+  display: none !important;
 }
 
 .nav-files-container > div > .nav-folder:not(.is-collapsed) {
@@ -883,6 +909,10 @@ textarea {
 
 .nav-folder-title {
   color: var(--text-normal) !important;
+}
+
+.is-mobile .workspace-drawer-active-tab-content {
+  padding-bottom: var(--mobile-nav-button-safe-area);
 }
 
 .nav-file-title:hover .nav-file-title-content,
@@ -984,8 +1014,10 @@ textarea {
 .workspace
   > .workspace-split:not(.mod-root)
   .metadata-container
-  .metadata-properties {
-  --metadata-gap: 12px;
+  .metadata-properties,
+.is-phone .metadata-properties,
+.workspace-drawer .metadata-properties {
+  --metadata-gap: var(--size-4-2);
   --metadata-divider-width: 0;
 }
 
@@ -1138,10 +1170,6 @@ blockquote {
   border-radius: var(--window-border-radius);
 }
 
-.empty-state-action {
-  color: var(--text-faint);
-}
-
 /*** Code  ***/
 
 code {
@@ -1168,15 +1196,6 @@ code:not(pre code),
 .cm-s-obsidian .templater-command-bg {
   border: 1px solid oklch(from var(--text-normal) l c h / 10%);
 }
-
-/* --- Callouts --- */
-
-/* TODO */
-
-/* The relationship between the chroma variable and the grayscale value is an inverse linear one, meaning that as the chroma value increases, the grayscale value decreases. */
-/* .callout { */
-/* filter: grayscale(calc(1 - (var(--chroma) / 0.2))); */
-/* } */
 
 /*--- Headings  ---*/
 .heading-divider {
@@ -1294,19 +1313,66 @@ tr:last-child td:last-child {
   ) !important;
 }
 
-/* TODO: Mermaid */
+/* PDF */
 
-/* .node polygon, .node rect, .mermaid .actor, .mermaid .actor-line, .mermaid .edgeLabel p { */
-/* background-color: red !important; */
-/* stroke: red !important; */
-/* fill: red !important; */
-/* } */
+.pdf-toolbar {
+  border-bottom: unset;
+  border-radius: var(--window-border-radius);
+  margin-bottom: var(--size-4-2);
+}
 
-/* .mermaid tspan, .mermaid .edgeLabel p, .mermaid .nodeLabel p { */
-/* fill: white !important; */
-/* font-weight: var(--font-bold); */
-/* color: white !important; */
-/* } */
+.pdf-toolbar input[type="number"] {
+  height: unset;
+  border-radius: var(--window-border-radius) !important;
+}
+
+.pdf-container {
+  border-radius: var(--window-border-radius);
+  border: var(--border-ridge);
+  background-color: var(--background-paper);
+  box-shadow: inset 0 0 4px oklch(from black l c h / 50%);
+  min-width: unset;
+}
+
+.pdf-embed {
+  padding: var(--size-4-1);
+  background-color: var(--background-primary);
+  border-radius: var(--window-border-radius) !important;
+  box-shadow: 0 0 4px oklch(from black l c h / 50%);
+  border: 1px solid var(--text-faint) !important;
+}
+
+.pdf-sidebar-container {
+  background-color: var(--background-paper);
+  box-shadow: 0 0 12px oklch(from black l c h / 50%);
+}
+
+/*=============================================
+=                   CANVAS                    =
+=============================================*/
+
+.canvas-control-group,
+.canvas-menu {
+  border: 1px solid var(--text-muted);
+  border-radius: var(--button-border-radius);
+  padding: 2px;
+  gap: var(--size-2-1);
+}
+
+.canvas-card-menu {
+  background-color: var(--background-secondary) !important;
+  border: var(--border-groove);
+  border-radius: var(--window-border-radius);
+}
+
+.canvas .markdown-preview-view {
+  margin: unset !important;
+}
+
+.canvas-node-container,
+.canvas-node-content-blocker {
+  border-radius: var(--window-border-radius) !important;
+}
 
 /*=============================================
 =      MODALS, PROMPTS, POPOVERS, MENUS       =
@@ -1314,14 +1380,48 @@ tr:last-child td:last-child {
 
 .suggestion-container,
 .prompt,
+.popover,
 .modal,
 .menu,
 .is-mobile .prompt .is-phome .menu,
 .suggestion-container .mod-search-suggestion {
   border: var(--border-ridge) !important;
   border-radius: var(--window-border-radius) !important;
-  /* box-shadow: var(--shadow-l) !important; */
   box-shadow: 0 0 12px 2px oklch(from black l c h / 40%);
+}
+
+.menu-item-desc {
+  color: var(--text-muted);
+}
+
+.is-phone .menu-grabber {
+  background: var(--background-primary-alt) !important;
+}
+
+.is-phone .menu {
+  margin-bottom: var(--mobile-nav-button-safe-area);
+}
+
+.is-phone .menu-item {
+  margin-bottom: var(--size-4-1);
+}
+
+.menu-item.is-label {
+  box-shadow: unset !important;
+  border: unset !important;
+  background-color: unset !important;
+  color: var(--text-normal) !important;
+  font-weight: 700;
+}
+
+.menu-item.is-label:hover {
+  background-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.menu-item.is-label:active {
+  background-color: unset !important;
+  box-shadow: unset !important;
 }
 
 .modal-bg {
@@ -1331,10 +1431,6 @@ tr:last-child td:last-child {
 .menu .menu-scroll {
   /* background-color: oklch(from var(--background-secondary)); */
   border-radius: var(--window-border-radius);
-}
-
-.menu .menu-separator {
-  border-bottom: var(--divider-width) solid var(--background-paper);
 }
 
 .menu-item:hover {
@@ -1349,10 +1445,6 @@ tr:last-child td:last-child {
   box-shadow: inset 0px 0 4px 0px black;
 }
 
-.popover {
-  box-shadow: var(--shadow-l);
-}
-
 .popover.hover-popover.is-editing {
   border-radius: var(--window-border-radius);
   border: var(--border-solid);
@@ -1360,6 +1452,12 @@ tr:last-child td:last-child {
 
 .prompt-input-container input:not(input[type="checkbox"], input[type="range"]) {
   background-color: var(--background-paper) !important;
+}
+
+.notice {
+  background-color: var(--background-tertiary) !important;
+  border: var(--border-ridge) !important;
+  box-shadow: 0 0 12px 2px oklch(from black l c h / 40%) !important;
 }
 
 /*=============================================
@@ -1477,8 +1575,22 @@ tr:last-child td:last-child {
 =============================================*/
 
 /* --- Settings Page --- */
-.setting-item {
-  border-top: 1px solid var(--interactive-active);
+
+.is-phone .mod-settings.mod-sidebar-layout,
+.is-phone .modal.mod-lg,
+.is-phone .modal.mod-sidebar-layout {
+  padding-inline: 6px;
+  padding-bottom: var(--mobile-nav-button-safe-area) !important;
+  border: unset !important;
+  background-color: var(--background-secondary);
+}
+
+.is-phone .modal.mod-sidebar-layout .modal-content > * {
+  padding: 6px !important;
+  border-radius: var(--window-border-radius);
+  box-shadow: inset 0 0 4px oklch(from black l c h / 50%);
+  border: var(--border-ridge);
+  background-color: var(--background-primary) !important;
 }
 
 .vertical-tab-content .setting-item button,
@@ -1488,6 +1600,11 @@ tr:last-child td:last-child {
 
 .modal-close-button {
   padding: unset;
+}
+
+.is-phone .modal.mod-settings .vertical-tab-header,
+.is-phone .mod-settings.mod-sidebar-layout {
+  border-radius: var(--window-border-radius);
 }
 
 .vertical-tab-nav-item:not(.settings-search-input) {
@@ -1505,6 +1622,25 @@ tr:last-child td:last-child {
 
 .theme-light .checkbox-container.is-enabled {
   background: oklch(from var(--base-accent) 20% c h / 75%);
+}
+
+.community-item {
+  border-radius: var(--window-border-radius);
+  border: var(--border-ridge);
+}
+
+.community-item.is-selected {
+  background-color: var(--titlebar-background) !important;
+  border-color: var(--titlebar-background) !important;
+}
+
+.community-item:hover {
+  border-color: var(--titlebar-background);
+}
+
+.community-item-screenshot {
+  border-radius: var(--window-border-radius);
+  border: 1px solid var(--text-muted);
 }
 
 /*--- Style Settings  ---*/
