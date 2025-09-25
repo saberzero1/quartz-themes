@@ -1,7 +1,6 @@
 {
   "&[data-slug]": {
     "background": "rgba(0, 0, 0, 0)",
-    "background-color": "oklch(0.24 0.00375 275)",
     "color": "oklch(0.875 0.00375 275)"
   },
   ".callout": {

@@ -1,7 +1,6 @@
 {
-  "&[data-slug]": {
+  "&[data-slug]&[data-slug]": {
     "background": "rgb(24, 24, 37)",
-    "background-color": "rgb(30, 30, 46)",
     "color": "rgb(205, 214, 244)"
   },
   ".callout": {
@@ -670,6 +669,20 @@
     "border-radius": "0px",
     "border-width": "0px",
     "box-shadow": "none"
+  },
+  ":root": {
+    "--code-background": "rgb(24, 24, 37)",
+    "--code-comment": "rgb(69, 71, 90)",
+    "--code-function": "rgb(249, 226, 175)",
+    "--code-important": "rgb(250, 179, 135)",
+    "--code-keyword": "rgb(245, 194, 231)",
+    "--code-normal": "rgb(166, 173, 200)",
+    "--code-operator": "rgb(243, 139, 168)",
+    "--code-property": "rgb(137, 220, 235)",
+    "--code-punctuation": "rgb(166, 173, 200)",
+    "--code-string": "rgb(166, 227, 161)",
+    "--code-tag": "rgb(243, 139, 168)",
+    "--code-value": "rgb(180, 190, 254)"
   },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
