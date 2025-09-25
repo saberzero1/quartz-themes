@@ -178,6 +178,7 @@ manifestCollection.forEach((manifest) => {
     "background",
   ];
   let graphColors = { dark: {}, light: {} };
+  let codeColors = { dark: {}, light: {} };
   const graphMapping = {
     /*
     "--quartz-graph-line": "--lightgray",
@@ -233,6 +234,9 @@ manifestCollection.forEach((manifest) => {
             graphColors["dark"][graphMapping[target]] = darkData[key][target];
             graphColors["light"][graphMapping[target]] = lightData[key][target];
           }
+        } else if (target.startsWith("--code-")) {
+          codeColors["dark"][target] = darkData[key][target];
+          codeColors["light"][target] = lightData[key][target];
         } else {
           data[key][target] = darkData[key][target]; // Use darkData value for non-color targets
         }
@@ -277,6 +281,18 @@ manifestCollection.forEach((manifest) => {
       graphStringLight += `    ${key}: ${value} !important;\n`;
     }
   }
+  let codeStringDark = "";
+  let codeStringLight = "";
+  if (Object.keys(codeColors["dark"]).length > 0) {
+    for (const [key, value] of Object.entries(codeColors["dark"])) {
+      codeStringDark += `    ${key}: ${value} !important;\n`;
+    }
+  }
+  if (Object.keys(codeColors["light"]).length > 0) {
+    for (const [key, value] of Object.entries(codeColors["light"])) {
+      codeStringLight += `    ${key}: ${value} !important;\n`;
+    }
+  }
   let resultScss = `
 @use "../variables.scss" as *;
 
@@ -290,9 +306,11 @@ ${
     ? `
 :root:root {
   ${graphStringLight}
+  ${codeStringLight}
 }
 :root:root[saved-theme="dark"] {
   ${graphStringDark}
+  ${codeStringDark}
 }
 `.toHexColors()
     : lightData
@@ -660,6 +678,66 @@ body {
 
   .callout.is-collapsed .callout-content>:first-child {
     margin-top: -4rem;
+  }
+
+  figure[data-rehype-pretty-code-figure] pre,
+  pre {
+    background-color: var(--code-background);
+    white-space: pre;
+
+    & > code {
+      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+        color: var(--code-value) !important;
+        //color: var(--color-purple) !important;
+      }
+      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+        color: var(--code-function) !important;
+        //color: var(--color-blue) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+        color: var(--code-string) !important;
+        //color: var(--color-cyan) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+        color: var(--code-property) !important;
+        //color: var(--code-yellow) !important;
+      }
+      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+        color: var(--code-normal) !important;
+        //color: var(--code-normal) !important;
+      }
+      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+        color: var(--code-punctuation) !important;
+        //color: var(--text-muted) !important;
+      }
+      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--text-faint) !important;
+      }
+      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--code-comment) !important;
+      }
+      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+        color: var(--code-tag) !important;
+        //color: var(--color-green) !important;
+      }
+      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+        color: var(--code-important) !important;
+        //color: var(--color-orange) !important;
+      }
+      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+        color: var(--text-operator) !important;
+        //color: var(--color-pink) !important;
+      }
+      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+        color: var(--code-keyword) !important;
+        //color: var(--color-red) !important;
+      }
+
+      background-color: transparent; 
+      color: var(--code-normal);
+    }
   }
 }
 
