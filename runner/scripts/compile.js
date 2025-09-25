@@ -62,6 +62,9 @@ String.prototype.toHexColors = function () {
       .use(calc({ preserve: false }))
       .use(postcssColorMixFunction())
       .use(postcssColorConverter({ outputColorFormat: "hex" }))
+      .use(calc({ preserve: false }))
+      .use(postcssColorMixFunction())
+      .use(postcssColorConverter({ outputColorFormat: "hex" }))
       .process(this).css;
   } catch (e) {
     // Likely opacity is not a float between 0 and 1. Let's fix that.
@@ -77,8 +80,12 @@ String.prototype.toHexColors = function () {
         .use(calc({ preserve: false }))
         .use(postcssColorMixFunction())
         .use(postcssColorConverter({ outputColorFormat: "hex" }))
+        .use(calc({ preserve: false }))
+        .use(postcssColorMixFunction())
+        .use(postcssColorConverter({ outputColorFormat: "hex" }))
         .process(result).css;
     } catch (e) {
+      /*
       try {
         // Probably self-referencing color, like hsl(from hsl(215, 67%, 45%) 57 s l)
         const fromRegex = /from\s+hsl\(([^\)]+)\)/g;
@@ -112,7 +119,7 @@ String.prototype.toHexColors = function () {
       } catch (e) {
         console.error("Error processing CSS to hex colors:", e);
         result = this; // Fallback to original string on error
-      }
+      } */
     }
   }
 
@@ -685,7 +692,7 @@ body {
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    /*background-color: var(--code-background);*/
+    background-color: var(--code-background);
     white-space: pre;
 
     & > code {

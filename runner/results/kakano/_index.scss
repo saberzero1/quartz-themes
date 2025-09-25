@@ -7,61 +7,113 @@
 
 :root:root {
   --light: #d4d4d4 !important;
-  --gray: #040a13b3 !important;
-  --darkgray: #040a13b3 !important;
-  --highlight: hsl(from NaN, NaN, NaN 57 s l) !important;
-  --secondary: #8a5cf5 !important;
-  --tertiary: hsl(from NaN, NaN, NaN 124 s l) !important;
-  --lightgray: #0b1f39 !important;
-  --dark: #040a13 !important;
+  --gray: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+    transparent 30%
+  ) !important;
+  --darkgray: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+    transparent 30%
+  ) !important;
+  --highlight: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --secondary: hsl(258, 88%, 66%) !important;
+  --tertiary: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --lightgray: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.7)
+  ) !important;
+  --dark: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.9)
+  ) !important;
 
   --code-background: light-dark(
-    hsl(from #000000 h s l / 0.06),
-    hsl(from #ffffff h s l / 0.06)
+    hsl(from black h s l / 0.06),
+    hsl(from white h s l / 0.06)
   ) !important;
   --code-comment: light-dark(
-    hsl(from #000000 h s l / 0.5),
-    hsl(from #ffffff h s l / 0.5)
+    hsl(from black h s l / 0.5),
+    hsl(from white h s l / 0.5)
   ) !important;
-  --code-function: hsl(from NaN, NaN, NaN 57 s l) !important;
-  --code-important: hsl(from NaN, NaN, NaN 27 s l) !important;
-  --code-keyword: hsl(from NaN, NaN, NaN 331 s l) !important;
-  --code-normal: #040a13 !important;
-  --code-operator: hsl(from NaN, NaN, NaN 356 s l) !important;
-  --code-property: hsl(from NaN, NaN, NaN 179 s l) !important;
-  --code-punctuation: #040a13b3 !important;
-  --code-string: hsl(from NaN, NaN, NaN 124 s l) !important;
-  --code-tag: hsl(from NaN, NaN, NaN 356 s l) !important;
-  --code-value: hsl(from NaN, NaN, NaN 253 s l) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.9)
+  ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+    transparent 30%
+  ) !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
-  --gray: #a8c2e6b3 !important;
-  --darkgray: #a8c2e6b3 !important;
-  --highlight: hsl(from NaN, NaN, NaN 57 s l) !important;
-  --secondary: #a68af9 !important;
-  --tertiary: hsl(from NaN, NaN, NaN 124 s l) !important;
-  --lightgray: #5c8ccf !important;
-  --dark: #a8c2e6 !important;
+  --gray: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
+    transparent 30%
+  ) !important;
+  --darkgray: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
+    transparent 30%
+  ) !important;
+  --highlight: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --secondary: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --tertiary: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --lightgray: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.25)
+  ) !important;
+  --dark: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.6)
+  ) !important;
 
   --code-background: light-dark(
-    hsl(from #000000 h s l / 0.06),
-    hsl(from #ffffff h s l / 0.06)
+    hsl(from black h s l / 0.06),
+    hsl(from white h s l / 0.06)
   ) !important;
   --code-comment: light-dark(
-    hsl(from #000000 h s l / 0.5),
-    hsl(from #ffffff h s l / 0.5)
+    hsl(from black h s l / 0.5),
+    hsl(from white h s l / 0.5)
   ) !important;
-  --code-function: hsl(from NaN, NaN, NaN 57 s l) !important;
-  --code-important: hsl(from NaN, NaN, NaN 27 s l) !important;
-  --code-keyword: hsl(from NaN, NaN, NaN 331 s l) !important;
-  --code-normal: #a8c2e6 !important;
-  --code-operator: hsl(from NaN, NaN, NaN 356 s l) !important;
-  --code-property: hsl(from NaN, NaN, NaN 179 s l) !important;
-  --code-punctuation: #a8c2e6b3 !important;
-  --code-string: hsl(from NaN, NaN, NaN 124 s l) !important;
-  --code-tag: hsl(from NaN, NaN, NaN 356 s l) !important;
-  --code-value: hsl(from NaN, NaN, NaN 253 s l) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.6)
+  ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
+    transparent 30%
+  ) !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
 }
 
 html {
@@ -2180,7 +2232,7 @@ body {
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    /*background-color: var(--code-background);*/
+    background-color: var(--code-background);
     white-space: pre;
 
     & > code {
