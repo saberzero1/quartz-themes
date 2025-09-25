@@ -677,7 +677,6 @@
     "box-shadow": "oklch(0 0 0 / 0.5) 0px 0px 4px 0px inset"
   },
   ":root": {
-    "--code-background": "oklch(from oklch(\n    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h\n  ) 10% c h / 50%)",
     "--code-comment": "#666666",
     "--code-function": "oklch(\n    from #ffeb3b 70% 20% h\n  )",
     "--code-important": "oklch(\n    from #ff9800 70% 20% h\n  )",

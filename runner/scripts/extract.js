@@ -18,8 +18,8 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-//testingMode = true;
-const testingTheme = "Catppuccin";
+testingMode = true;
+const testingTheme = "Retroma";
 
 const manifestCollection = testingMode
   ? getManifestCollection().filter(
@@ -252,7 +252,7 @@ describe("Quartz Theme Style Extraction", () => {
         if (bodyVariablesElement) {
           const bodyStyle = getComputedStyle(bodyVariablesElement);
           const variablesToExtract = [
-            "--code-background",
+            //"--code-background",
             "--code-normal",
             "--code-value",
             "--code-function",
