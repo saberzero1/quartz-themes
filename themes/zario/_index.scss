@@ -14,6 +14,19 @@
   --tertiary: #0cb54f !important;
   --lightgray: #a2aab3 !important;
   --dark: #222222 !important;
+
+  --code-background: #f6f7f8 !important;
+  --code-comment: #a2aab3 !important;
+  --code-function: #bd8e37 !important;
+  --code-important: #d96c00 !important;
+  --code-keyword: #c32b74 !important;
+  --code-normal: #222222 !important;
+  --code-operator: #e4374b !important;
+  --code-property: #2db7b5 !important;
+  --code-punctuation: #555e68 !important;
+  --code-string: #0cb54f !important;
+  --code-tag: #e4374b !important;
+  --code-value: #876be0 !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
@@ -24,6 +37,19 @@
   --tertiary: #44cf6e !important;
   --lightgray: #5d6d7e !important;
   --dark: #dadada !important;
+
+  --code-background: #282c34 !important;
+  --code-comment: #5d6d7e !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #dadada !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #bec6cf !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
 }
 
 html {
@@ -1454,6 +1480,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {

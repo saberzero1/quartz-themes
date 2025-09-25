@@ -1243,6 +1243,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: #161b22;
+    --code-comment: #6e7681;
+    --code-function: #ffa657;
+    --code-important: #ffa657;
+    --code-keyword: #f47067;
+    --code-normal: #8b949e;
+    --code-operator: #f47067;
+    --code-property: #00ffff;
+    --code-punctuation: #8b949e;
+    --code-string: #a5d6ff;
+    --code-tag: #f47067;
+    --code-value: #d2a8ff;
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);

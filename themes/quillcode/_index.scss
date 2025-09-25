@@ -14,6 +14,19 @@
   --tertiary: #08b94e !important;
   --lightgray: #ababab !important;
   --dark: #2e2e2e !important;
+
+  --code-background: #2e2e3e !important;
+  --code-comment: #a8a8b8 !important;
+  --code-function: #7fd4d4 !important;
+  --code-important: #0077cc !important;
+  --code-keyword: #d4a8ff !important;
+  --code-normal: #f0e8d8 !important;
+  --code-operator: #d4a8ff !important;
+  --code-property: #7fd4a8 !important;
+  --code-punctuation: #a8b4ff !important;
+  --code-string: #7fd4a8 !important;
+  --code-tag: #7fd4ff !important;
+  --code-value: #c8e8a8 !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
@@ -24,6 +37,19 @@
   --tertiary: #44cf6e !important;
   --lightgray: #666666 !important;
   --dark: #e8e4da !important;
+
+  --code-background: #2e2e3e !important;
+  --code-comment: #a8a8b8 !important;
+  --code-function: #7fd4d4 !important;
+  --code-important: #7fd4ff !important;
+  --code-keyword: #d4a8ff !important;
+  --code-normal: #f0e8d8 !important;
+  --code-operator: #d4a8ff !important;
+  --code-property: #7fd4a8 !important;
+  --code-punctuation: #a8b4ff !important;
+  --code-string: #7fd4a8 !important;
+  --code-tag: #7fd4ff !important;
+  --code-value: #c8e8a8 !important;
 }
 
 html {
@@ -1347,6 +1373,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {

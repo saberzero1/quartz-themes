@@ -674,6 +674,20 @@
     "border-width": "4px",
     "box-shadow": "oklch(0 0 0 / 0.5) 0px 0px 4px 0px inset"
   },
+  ":root": {
+    "--code-background": "oklch(from oklch(\n    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h\n  ) 85% c h / 50%)",
+    "--code-comment": "#ababab",
+    "--code-function": "oklch(\n    from #ffeb3b 50% 30% h\n  )",
+    "--code-important": "oklch(\n    from #ff9800 50% 30% h\n  )",
+    "--code-keyword": "#d53984",
+    "--code-normal": "#222222",
+    "--code-operator": "oklch(\n    from #d32f2f 50% 30% h\n  )",
+    "--code-property": "oklch(\n    from #00bcd4 50% 30% h\n  )",
+    "--code-punctuation": "#5c5c5c",
+    "--code-string": "oklch(\n    from #4caf50 50% 30% h\n  )",
+    "--code-tag": "oklch(\n    from #d32f2f 50% 30% h\n  )",
+    "--code-value": "oklch(\n    from #673ab7 50% 30% h\n  )"
+  },
   "a.external": {
     "background-color": "oklch(0.98 0.0756825 263.56)",
     "color": "rgb(34, 34, 34)",
