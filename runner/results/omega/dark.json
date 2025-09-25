@@ -672,6 +672,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "color-mix(in srgb, rgb(0, 53, 107) 30%, transparent)",
+    "--code-comment": "rgb(219, 215, 210)",
+    "--code-function": "rgb(0, 127, 255)",
+    "--code-important": "rgb(228, 77, 46)",
+    "--code-keyword": "rgb(237, 41, 57)",
+    "--code-normal": "rgb(245, 245, 245)",
+    "--code-operator": "rgb(255, 239, 0)",
+    "--code-property": "#53dfdd",
+    "--code-punctuation": "rgb(237, 41, 57)",
+    "--code-string": "rgb(11, 218, 81)",
+    "--code-tag": "#fb464c",
+    "--code-value": "rgb(128, 0, 255)"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(245, 245, 245)",

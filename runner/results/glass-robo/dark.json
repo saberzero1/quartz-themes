@@ -670,6 +670,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+    "--code-comment": "#4f4e4e",
+    "--code-function": "#8cd30c",
+    "--code-important": "#b62b2b",
+    "--code-keyword": "#b62b2b",
+    "--code-normal": "#b3b3b3",
+    "--code-operator": "#7d00b6",
+    "--code-property": "#2bb668",
+    "--code-punctuation": "#b62b2b",
+    "--code-string": "#a7b2b",
+    "--code-tag": "#fb464c",
+    "--code-value": "#957425"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(199, 199, 199)",

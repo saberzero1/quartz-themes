@@ -1024,6 +1024,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: #1a1a1a;
+    --code-comment: #505050;
+    --code-function: #f0e395;
+    --code-important: #ffc8a3;
+    --code-keyword: #eaa9ff;
+    --code-normal: #909090;
+    --code-operator: #f5988f;
+    --code-property: #8bf0db;
+    --code-punctuation: #707070;
+    --code-string: #a5e693;
+    --code-tag: #f5988f;
+    --code-value: #ac9df2;
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(144, 144, 144);

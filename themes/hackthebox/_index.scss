@@ -1236,6 +1236,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: #1a2331;
+    --code-comment: #c5d1eb;
+    --code-function: #ffcc5c;
+    --code-important: #ffaf00;
+    --code-keyword: #cf8dfb;
+    --code-normal: #a4b1cd;
+    --code-operator: #ff8484;
+    --code-property: #a4b1cd;
+    --code-punctuation: #a4b1cd;
+    --code-string: #c5f467;
+    --code-tag: #ffaf00;
+    --code-value: #5cb2ff;
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(164, 177, 205);

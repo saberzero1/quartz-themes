@@ -1246,6 +1246,21 @@ body {
     box-shadow: none;
   }
 
+  :root {
+    --code-background: hsl(260, 17%, 22%);
+    --code-comment: hsl(260, 97%, 86%);
+    --code-function: #e0de71;
+    --code-important: #e9973f;
+    --code-keyword: #fa99cd;
+    --code-normal: hsl(260, 100%, 96%);
+    --code-operator: #fb464c;
+    --code-property: #53dfdd;
+    --code-punctuation: hsl(260, 97%, 91%);
+    --code-string: #44cf6e;
+    --code-tag: #fb464c;
+    --code-value: #a882ff;
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(241, 235, 255);

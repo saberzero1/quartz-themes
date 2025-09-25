@@ -674,6 +674,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "light-dark(\n    hsl(from black h s l / 0.06),\n    hsl(from white h s l / 0.06)\n  )",
+    "--code-comment": "light-dark(\n    hsl(from black h s l / 0.5),\n    hsl(from white h s l / 0.5)\n  )",
+    "--code-function": "hsl(from hsl(215, 67%, 45%) 57 s l)",
+    "--code-important": "hsl(from hsl(215, 67%, 45%) 27 s l)",
+    "--code-keyword": "hsl(from hsl(215, 67%, 45%) 331 s l)",
+    "--code-normal": "color-mix(\n    in srgb,\n    hsl(215, 67%, 45%),\n    white calc(100% * 0.6)\n  )",
+    "--code-operator": "hsl(from hsl(215, 67%, 45%) 356 s l)",
+    "--code-property": "hsl(from hsl(215, 67%, 45%) 179 s l)",
+    "--code-punctuation": "color-mix(in srgb, color-mix(\n    in srgb,\n    hsl(215, 67%, 45%),\n    white calc(100% * 0.6)\n  ), transparent 30%)",
+    "--code-string": "hsl(from hsl(215, 67%, 45%) 124 s l)",
+    "--code-tag": "hsl(from hsl(215, 67%, 45%) 356 s l)",
+    "--code-value": "hsl(from hsl(215, 67%, 45%) 253 s l)"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "color(srgb 0.6594 0.7599 0.9006)",

@@ -670,6 +670,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "#171818",
+    "--code-comment": "#B8B2B1",
+    "--code-function": "#e0de71",
+    "--code-important": "#f99e15",
+    "--code-keyword": "#fa99cd",
+    "--code-normal": "rgb(228, 228, 228)",
+    "--code-operator": "#ec3643",
+    "--code-property": "#53dfdd",
+    "--code-punctuation": "#959595",
+    "--code-string": "#65c756",
+    "--code-tag": "#ec3643",
+    "--code-value": "#c161fd"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(228, 228, 228)",

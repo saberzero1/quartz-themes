@@ -14,6 +14,19 @@
   --tertiary: 108, 40%, 42% !important;
   --lightgray: #514851 !important;
   --dark: #262226 !important;
+
+  --code-background: #e7ddda !important;
+  --code-comment: #514851 !important;
+  --code-function: 45, 50%, 44% !important;
+  --code-important: 22, 50%, 40% !important;
+  --code-keyword: 316, 50%, 68% !important;
+  --code-normal: #262226 !important;
+  --code-operator: 346, 50%, 32% !important;
+  --code-property: 189, 40%, 42% !important;
+  --code-punctuation: #3b353b !important;
+  --code-string: 108, 40%, 42% !important;
+  --code-tag: 346, 50%, 32% !important;
+  --code-value: 270, 40%, 38% !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
@@ -24,6 +37,19 @@
   --tertiary: 108, 40%, 42% !important;
   --lightgray: #4fc4ad !important;
   --dark: #309171 !important;
+
+  --code-background: #312b31 !important;
+  --code-comment: #4fc4ad !important;
+  --code-function: 45, 50%, 44% !important;
+  --code-important: 21, 50%, 52% !important;
+  --code-keyword: 316, 50%, 80% !important;
+  --code-normal: #309171 !important;
+  --code-operator: 346, 50%, 36% !important;
+  --code-property: 189, 40%, 50% !important;
+  --code-punctuation: #3bb089 !important;
+  --code-string: 108, 40%, 42% !important;
+  --code-tag: 346, 50%, 36% !important;
+  --code-value: 270, 40%, 42% !important;
 }
 
 html {
@@ -1239,6 +1265,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {

@@ -14,6 +14,19 @@
   --tertiary: #1da51d !important;
   --lightgray: #989bae !important;
   --dark: #1d1d20 !important;
+
+  --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
+  --code-comment: #989bae !important;
+  --code-function: #c09c0c !important;
+  --code-important: #de7417 !important;
+  --code-keyword: #dd1399 !important;
+  --code-normal: #545664 !important;
+  --code-operator: #dd2c38 !important;
+  --code-property: #16a6ab !important;
+  --code-punctuation: #545664 !important;
+  --code-string: #1da51d !important;
+  --code-tag: #dd2c38 !important;
+  --code-value: #8f47e1 !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
@@ -24,6 +37,19 @@
   --tertiary: #7cd37c !important;
   --lightgray: #74778b !important;
   --dark: #d3d5de !important;
+
+  --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
+  --code-comment: #74778b !important;
+  --code-function: #ffe88b !important;
+  --code-important: #fbbb83 !important;
+  --code-keyword: #f2b6de !important;
+  --code-normal: #b8bac7 !important;
+  --code-operator: #ff7881 !important;
+  --code-property: #86dfe2 !important;
+  --code-punctuation: #b8bac7 !important;
+  --code-string: #7cd37c !important;
+  --code-tag: #ff7881 !important;
+  --code-value: #cb9eff !important;
 }
 
 html {
@@ -1375,6 +1401,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {

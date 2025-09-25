@@ -14,6 +14,19 @@
   --tertiary: #08b94e !important;
   --lightgray: #636363 !important;
   --dark: #262626 !important;
+
+  --code-background: #f5f7f9 !important;
+  --code-comment: #8963ea !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: "Consolas", monospace !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #636363 !important;
+  --code-string: #262626 !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
@@ -24,6 +37,19 @@
   --tertiary: #44cf6e !important;
   --lightgray: #9e9e9e !important;
   --dark: #eeeeee !important;
+
+  --code-background: #1c2027 !important;
+  --code-comment: #8963ea !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: "Consolas", monospace !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #9e9e9e !important;
+  --code-string: #eeeeee !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
 }
 
 html {
@@ -1157,6 +1183,9 @@ body {
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
+  }
+
+  :root {
   }
 
   a.external {

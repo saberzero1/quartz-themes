@@ -670,6 +670,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "hsla(calc(258 + 8), calc(32% / 1.2), calc(100% - (100% - 58%) / 6), 70%)",
+    "--code-comment": "#ababab",
+    "--code-function": "rgba(217, 133, 38, 1)",
+    "--code-important": "rgba(134, 112, 178, 1)",
+    "--code-keyword": "rgba(134, 112, 178, 1)",
+    "--code-normal": "hsl(258,\n      32%,\n      calc(58% - 30%))",
+    "--code-operator": "rgba(189, 81, 81, 1)",
+    "--code-property": "rgba(217, 133, 38, 1)",
+    "--code-punctuation": "rgba(6, 149, 188, 1)",
+    "--code-string": "rgba(85, 170, 24, 1)",
+    "--code-tag": "rgba(189, 81, 81, 1)",
+    "--code-value": "rgba(217, 133, 38, 1)"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(34, 34, 34)",

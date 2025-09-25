@@ -674,6 +674,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "color-mix(\n    in srgb,\n    hsl(238, 60%, 95%) 90%,\n    hsl(255, 100%, 50%)\n  )",
+    "--code-comment": "color-mix(\n    in srgb,\n    hsl(238, 60%, 95%) 60%,\n    hsl(255, 100%, 50%)\n  )",
+    "--code-function": "#ffd85e",
+    "--code-important": "#fa9f50",
+    "--code-keyword": "#e54f9b",
+    "--code-normal": "color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000)",
+    "--code-operator": "#e3365e",
+    "--code-property": "#3bb2ce",
+    "--code-punctuation": "color-mix(\n    in srgb,\n    hsl(238, 60%, 95%) 30%,\n    hsl(255, 100%, 50%)\n  )",
+    "--code-string": "#47cc91",
+    "--code-tag": "#e3365e",
+    "--code-value": "#9446f8"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "color(srgb 0.125 0 0.5)",

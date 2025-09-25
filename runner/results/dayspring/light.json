@@ -670,6 +670,20 @@
     "border-width": "0px",
     "box-shadow": "none"
   },
+  ":root": {
+    "--code-background": "hsla(50, 14%, 67%, 0.2)",
+    "--code-comment": "hsl(50, 13%, 73%)",
+    "--code-function": "hsl(27, 82%, 57%)",
+    "--code-important": "hsl(27, 82%, 57%)",
+    "--code-keyword": "hsl(346, 65%, 44%)",
+    "--code-normal": "hsl(27, 82%, 57%)",
+    "--code-operator": "hsl(346, 65%, 44%)",
+    "--code-property": "hsl(199, 42%, 45%)",
+    "--code-punctuation": "hsl(50, 13%, 45%)",
+    "--code-string": "hsl(80, 45%, 45%)",
+    "--code-tag": "hsl(346, 65%, 44%)",
+    "--code-value": "hsl(307, 39%, 34%)"
+  },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(52, 50, 40)",
