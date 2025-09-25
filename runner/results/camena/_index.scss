@@ -6,50 +6,54 @@
 }
 
 :root:root {
-  --light: #aa9cc9 !important;
-  --gray: #f5695c !important;
-  --darkgray: #f5695c !important;
-  --highlight: #5ca8f5 !important;
-  --secondary: #8a5cf5 !important;
-  --tertiary: #f5db5c !important;
-  --lightgray: rgba(from NaN, NaN, NaN r g b / 0.8) !important;
-  --dark: #2d2442 !important;
+  --light: hsl(258, calc(88% / 3), 70%) !important;
+  --gray: hsl(5, 88%, 66%) !important;
+  --darkgray: hsl(5, 88%, 66%) !important;
+  --highlight: hsl(210, 88%, 66%) !important;
+  --secondary: hsl(258, 88%, 66%) !important;
+  --tertiary: hsl(50, 88%, 66%) !important;
+  --lightgray: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --dark: hsl(258, calc(88% / 3), 20%) !important;
 
-  --code-background: rgba(from NaN, NaN, NaN r g b / 0.1) !important;
-  --code-comment: #9b8cc0 !important;
-  --code-function: #f5db5c !important;
-  --code-important: #f59c5c !important;
-  --code-keyword: #f55cc2 !important;
-  --code-normal: #8a5cf5 !important;
-  --code-operator: #f5695c !important;
-  --code-property: #5ce8f5 !important;
-  --code-punctuation: #8d7bb7 !important;
-  --code-string: #8ff55c !important;
-  --code-tag: #f5695c !important;
-  --code-value: #a85cf5 !important;
+  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
+  --code-comment: hsl(258, calc(88% / 3), 65%) !important;
+  --code-function: hsl(50, 88%, 66%) !important;
+  --code-important: hsl(25, 88%, 66%) !important;
+  --code-keyword: hsl(320, 88%, 66%) !important;
+  --code-normal: hsl(258, 88%, 66%) !important;
+  --code-operator: hsl(5, 88%, 66%) !important;
+  --code-property: hsl(185, 88%, 66%) !important;
+  --code-punctuation: hsl(258, calc(88% / 3), 60%) !important;
+  --code-string: hsl(100, 88%, 66%) !important;
+  --code-tag: hsl(5, 88%, 66%) !important;
+  --code-value: hsl(270, 88%, 66%) !important;
 }
 :root:root[saved-theme="dark"] {
-  --light: #5a4884 !important;
-  --gray: #f5695c !important;
-  --darkgray: #f5695c !important;
-  --highlight: #5ca8f5 !important;
-  --secondary: #a68af9 !important;
-  --tertiary: #f5db5c !important;
-  --lightgray: rgba(from NaN, NaN, NaN r g b / 0.8) !important;
-  --dark: #c6bddb !important;
+  --light: hsl(258, calc(88% / 3), 40%) !important;
+  --gray: hsl(5, 88%, 66%) !important;
+  --darkgray: hsl(5, 88%, 66%) !important;
+  --highlight: hsl(210, 88%, 66%) !important;
+  --secondary: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --tertiary: hsl(50, 88%, 66%) !important;
+  --lightgray: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --dark: hsl(258, calc(88% / 3), 80%) !important;
 
-  --code-background: rgba(from NaN, NaN, NaN r g b / 0.15) !important;
-  --code-comment: #655194 !important;
-  --code-function: #f5db5c !important;
-  --code-important: #f59c5c !important;
-  --code-keyword: #f55cc2 !important;
-  --code-normal: #8a5cf5 !important;
-  --code-operator: #f5695c !important;
-  --code-property: #5ce8f5 !important;
-  --code-punctuation: #715aa5 !important;
-  --code-string: #8ff55c !important;
-  --code-tag: #f5695c !important;
-  --code-value: #a85cf5 !important;
+  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
+  --code-comment: hsl(258, calc(88% / 3), 45%) !important;
+  --code-function: hsl(50, 88%, 66%) !important;
+  --code-important: hsl(25, 88%, 66%) !important;
+  --code-keyword: hsl(320, 88%, 66%) !important;
+  --code-normal: hsl(258, 88%, 66%) !important;
+  --code-operator: hsl(5, 88%, 66%) !important;
+  --code-property: hsl(185, 88%, 66%) !important;
+  --code-punctuation: hsl(258, calc(88% / 3), 50%) !important;
+  --code-string: hsl(100, 88%, 66%) !important;
+  --code-tag: hsl(5, 88%, 66%) !important;
+  --code-value: hsl(270, 88%, 66%) !important;
 }
 
 html {
@@ -2126,7 +2130,7 @@ body {
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    /*background-color: var(--code-background);*/
+    background-color: var(--code-background);
     white-space: pre;
 
     & > code {

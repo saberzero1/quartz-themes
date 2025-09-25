@@ -252,7 +252,7 @@ describe("Quartz Theme Style Extraction", () => {
         if (bodyVariablesElement) {
           const bodyStyle = getComputedStyle(bodyVariablesElement);
           const variablesToExtract = [
-            //"--code-background",
+            "--code-background",
             "--code-normal",
             "--code-value",
             "--code-function",
