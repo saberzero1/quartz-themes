@@ -758,6 +758,21 @@ body {
   }
 }
 
+:root[reader-mode="on"] {
+  body[data-slug] {
+    .sidebar.left,
+    .sidebar.right {
+      opacity: 1 !important;
+      & > * {
+        opacity: 0 !important;
+      }
+      &:hover > * {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
 ${insertExtras(manifest)}
 `;
 
