@@ -14,6 +14,19 @@
   --tertiary: #40a02b !important;
   --lightgray: #bcc0cc !important;
   --dark: #4c4f69 !important;
+
+  --code-background: #e6e9ef !important;
+  --code-comment: #bcc0cc !important;
+  --code-function: #df8e1d !important;
+  --code-important: #fe640b !important;
+  --code-keyword: #ea76cb !important;
+  --code-normal: #6c6f85 !important;
+  --code-operator: #d20f39 !important;
+  --code-property: #04a5e5 !important;
+  --code-punctuation: #6c6f85 !important;
+  --code-string: #40a02b !important;
+  --code-tag: #d20f39 !important;
+  --code-value: #7287fd !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #585b70 !important;
@@ -24,6 +37,19 @@
   --tertiary: #a6e3a1 !important;
   --lightgray: #45475a !important;
   --dark: #cdd6f4 !important;
+
+  --code-background: #181825 !important;
+  --code-comment: #45475a !important;
+  --code-function: #f9e2af !important;
+  --code-important: #fab387 !important;
+  --code-keyword: #f5c2e7 !important;
+  --code-normal: #a6adc8 !important;
+  --code-operator: #f38ba8 !important;
+  --code-property: #89dceb !important;
+  --code-punctuation: #a6adc8 !important;
+  --code-string: #a6e3a1 !important;
+  --code-tag: #f38ba8 !important;
+  --code-value: #b4befe !important;
 }
 
 html {
@@ -168,9 +194,8 @@ html {
 }
 
 body {
-  &[data-slug] {
+  &[data-slug]&[data-slug] {
     background: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
-    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
     color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
   }
 
@@ -1396,6 +1421,9 @@ body {
     box-shadow: none;
   }
 
+  :root {
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
@@ -2268,6 +2296,66 @@ body {
 
   .callout.is-collapsed .callout-content > :first-child {
     margin-top: -4rem;
+  }
+
+  figure[data-rehype-pretty-code-figure] pre,
+  pre {
+    background-color: var(--code-background);
+    white-space: pre;
+
+    & > code {
+      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+        color: var(--code-value) !important;
+        //color: var(--color-purple) !important;
+      }
+      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+        color: var(--code-function) !important;
+        //color: var(--color-blue) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+        color: var(--code-string) !important;
+        //color: var(--color-cyan) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+        color: var(--code-property) !important;
+        //color: var(--code-yellow) !important;
+      }
+      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+        color: var(--code-normal) !important;
+        //color: var(--code-normal) !important;
+      }
+      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+        color: var(--code-punctuation) !important;
+        //color: var(--text-muted) !important;
+      }
+      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--text-faint) !important;
+      }
+      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--code-comment) !important;
+      }
+      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+        color: var(--code-tag) !important;
+        //color: var(--color-green) !important;
+      }
+      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+        color: var(--code-important) !important;
+        //color: var(--color-orange) !important;
+      }
+      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+        color: var(--text-operator) !important;
+        //color: var(--color-pink) !important;
+      }
+      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+        color: var(--code-keyword) !important;
+        //color: var(--color-red) !important;
+      }
+
+      background-color: transparent;
+      color: var(--code-normal);
+    }
   }
 }
 

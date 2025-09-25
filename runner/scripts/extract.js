@@ -18,7 +18,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-// testingMode = true;
+testingMode = true;
 const testingTheme = "Catppuccin";
 
 const manifestCollection = testingMode
@@ -232,7 +232,7 @@ describe("Quartz Theme Style Extraction", () => {
             leftSidebarColor === rightSidebarColor
               ? leftSidebarColor
               : `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
-          computedStyles[`&[data-slug]`] = {
+          computedStyles[`&[data-slug]&[data-slug]`] = {
             /*
             "background-color": centerStyle
               .getPropertyValue("background-color")
@@ -240,10 +240,51 @@ describe("Quartz Theme Style Extraction", () => {
               .trim(),
             */
             color: centerStyle.getPropertyValue("color")
-              ? centerStyle.getPropertyValue("color").toString().trim()
+              ? `${centerStyle.getPropertyValue("color").toString().trim()}`
               : "unset",
-            background: backgroundGradient,
+            background: `${backgroundGradient}`,
           };
+        }
+
+        const bodyVariablesElement = document
+          .getRootNode()
+          .querySelector("body");
+        if (bodyVariablesElement) {
+          const bodyStyle = getComputedStyle(bodyVariablesElement);
+          const variablesToExtract = [
+            "--code-background",
+            "--code-normal",
+            "--code-value",
+            "--code-function",
+            "--code-string",
+            "--code-property",
+            "--code-punctuation",
+            "--code-comment",
+            "--code-tag",
+            "--code-important",
+            "--code-operator",
+            "--code-keyword",
+          ]; /*[
+            "--color-red",
+            "--color-orange",
+            "--color-yellow",
+            "--color-green",
+            "--color-cyan",
+            "--color-blue",
+            "--color-purple",
+            "--color-pink",
+            "--text-muted",
+            "--text-faint",
+            "--text-normal",
+          ];*/
+
+          computedStyles[`:root`] = {};
+          variablesToExtract.forEach((variable) => {
+            computedStyles[`:root`][variable] = bodyStyle
+              .getPropertyValue(variable)
+              .toString()
+              .trim();
+          });
         }
 
         // Generic

@@ -1,7 +1,6 @@
 {
   "&[data-slug]": {
     "background": "rgb(38, 27, 26)",
-    "background-color": "rgb(27, 20, 18)",
     "color": "rgb(240, 234, 226)"
   },
   ".callout": {
