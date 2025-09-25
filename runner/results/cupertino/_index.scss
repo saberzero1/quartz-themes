@@ -128,7 +128,7 @@ body {
     background: light-dark(
       color(srgb 0.990806 0.987216 0.999184),
       color(srgb 0.126101 0.12251 0.134478)
-    );
+    ) !important;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 

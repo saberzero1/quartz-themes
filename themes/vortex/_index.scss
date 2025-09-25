@@ -115,7 +115,7 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(238, 238, 238), rgb(26, 26, 26));
+    background: light-dark(rgb(238, 238, 238), rgb(26, 26, 26)) !important;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 

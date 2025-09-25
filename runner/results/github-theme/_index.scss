@@ -201,7 +201,7 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(246, 248, 250), rgb(22, 27, 34));
+    background: light-dark(rgb(246, 248, 250), rgb(22, 27, 34)) !important;
     color: light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
   }
 
