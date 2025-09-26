@@ -1,0 +1,96 @@
+/* -- Spy Terminal -- */
+
+/* Use CSS variables for better maintainability */
+:root {
+  --font-text-size: 16px;
+  --font-text: 'SFMono-Regular', 'Roboto Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Override general variables under body */
+body {
+  --background-primary: #1a1a1a;
+  --background-secondary: #222222;
+  --background-tertiary: #111111;
+  --text-normal: #00ff00;
+  --text-muted: #008800;
+  --interactive-accent: #00aa00;
+  --interactive-accent-hover: #00cc00;
+  --highlight-text: #00ff00;
+  --text-highlight-bg: rgba(0, 255, 0, 0.2);
+  --link-color: #00ccff;
+  --text-selection: rgba(0, 255, 0, 0.3);
+  --text-error: #ff0000;
+  --font-text: var(--font-text);
+  --font-text-size: var(--font-text-size);
+}
+
+/* Override colors under .theme-dark */
+.theme-dark {
+  --background-primary: #1a1a1a;
+  --background-secondary: #222222;
+  --background-tertiary: #111111;
+  --text-normal: #00ff00;
+  --text-muted: #008800;
+  --interactive-accent: #00aa00;
+  --interactive-accent-hover: #00cc00;
+  --highlight-text: #00ff00;
+  --text-highlight-bg: rgba(0, 255, 0, 0.2);
+  --link-color: #00ccff;
+  --text-selection: rgba(0, 255, 0, 0.3);
+  --text-error: #ff0000;
+}
+
+/* Simple selectors with low specificity */
+.markdown-source-view,
+.markdown-preview-view {
+  font-family: var(--font-text);
+  font-size: var(--font-text-size);
+}
+
+/* Task checkboxes - use CSS variables instead of !important */
+.task-list-item-checkbox {
+  border-color: var(--text-normal);
+  background-color: transparent;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: var(--text-normal);
+  border-color: var(--text-normal);
+}
+
+/* Code blocks - use CSS variables */
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-line:not(.cm-active),
+.markdown-preview-view code {
+  background-color: var(--background-tertiary);
+  color: var(--text-normal);
+}
+
+/* Task code blocks */
+.markdown-preview-view .tasks-code-block {
+  background-color: #0a0a0a;
+  border: 1px solid #005500;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.markdown-preview-view .tasks-code-block .task-list-item {
+  color: var(--text-normal);
+  font-family: var(--font-text);
+}
+
+.markdown-preview-view .tasks-code-block .task-list-item-checkbox {
+  border-color: var(--text-normal);
+  background-color: transparent;
+}
+
+.markdown-preview-view .tasks-code-block .task-list-item-checkbox:checked {
+  background-color: var(--text-normal);
+  border-color: var(--text-normal);
+}
+
+/* Link glow effect */
+.cm-link, 
+.markdown-preview-view a {
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
