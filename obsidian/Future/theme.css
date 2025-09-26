@@ -1,0 +1,1456 @@
+/* ---- ANYTYPE-INSPIRED "FUTURE" THEME -------- */
+/* by Ha'ani Whitlock */
+/* started this theme sometime in February, I think. And of course, year 2023. */
+
+
+body {
+  --inline-title-size: calc(var(--h1-size) + 5px);
+  --inline-title-color: var(--text-normal);
+  --line-height-normal: 24px;
+  --divider-width: 0px;
+  --file-line-width: 820px;
+  --radius-s: 0.5em;
+  --font-interface-theme: 'Inter';
+  --font-text-theme: 'Inter';
+  --link-color: var(--text-normal);
+  --link-color-hover: var(--text-faint);
+  --link-unresolved-color: var(--text-muted);
+  --link-unresolved-decoration-color: var(--text-muted);
+  --titlebar-background-focused: var(--color-accent-2);
+  --titlebar-text-color-focused: var(--text-on-accent);
+}
+
+
+/* fix links with aliases */
+a[aria-label] {
+    text-decoration-style: solid !important;
+    text-decoration-color: var(--link-color) !important;
+}
+
+/* --- minimize button with hidden tabs --- */
+.titlebar-button-container.mod-right {
+   border-bottom-left-radius: var(--radius-l)  !important;
+}
+
+/* ----- pane shapes ----- */
+.workspace-leaf {
+    max-height: 99%;
+    margin: auto;
+}
+
+/*  some styling for panes with gradient background */
+.gradient-bg .workspace,
+.gradient-bg .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
+.gradient-bg .workspace-split.mod-root{
+    background: var(--workspace-background);
+}
+.gradient-bg .workspace-leaf {
+    border-radius: var(--radius-m);
+    margin: auto;
+    background-color: transparent !important;
+    max-width: 92%;
+    max-height: 95%;
+} 
+
+/* optional transparent background */
+body {
+    --page-transparency-custom: 1;
+}
+.theme-light.gradient-bg {
+/* make borders more visible against a transparent background */
+--background-modifier-border: rgba(1,1,1,0.2) !important;
+}
+.theme-light.gradient-bg.custom-transparency .workspace-leaf-content, 
+.theme-light.gradient-bg.custom-transparency .view-content,
+.theme-light.gradient-bg.custom-transparency .view-header {
+background-color: rgba(255, 255, 255,var(--page-transparency-custom)) !important;
+} .gradient-bg.custom-transparency .nav-header, .gradient-bg.custom-transparency .nav-files-container,.gradient-bg.custom-transparency .workspace-leaf  {
+    background-color: transparent !important;
+}
+
+.theme-dark.gradient-bg.custom-transparency {
+/* make borders more visible against a transparent background */
+--background-modifier-border: rgba(255,255,255,0.17) !important;
+}
+.theme-dark.gradient-bg.custom-transparency .workspace-leaf-content,
+.theme-dark.gradient-bg.custom-transparency .view-content,
+.theme-dark.gradient-bg.custom-transparency .view-header {
+background-color: rgba(1, 1, 1,var(--page-transparency-custom)) !important;
+} 
+
+
+.gradient-bg {
+    --icon-color: var(--text-normal);
+}
+
+.gradient-bg .workspace-leaf-content[data-type=markdown] {
+    max-width: var(--file-line-width);
+    margin: auto;
+    border-radius: var(--radius-l);
+}
+
+/* ------ vault profile ----- */
+
+/* transparent with gradient background */
+.gradient-bg .workspace-sidedock-vault-profile {
+    background-color: transparent !important;
+}
+
+/* vault user profile */
+.workspace-drawer-vault-switcher::after {
+    content: var(--user-icon);
+    background-color: var(--background-primary-alt);
+    color: hsl(var(--accent-h), var(--accent-s), 45%);
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: var(--radius-s);
+    padding: 5px;
+    width: fit-content; 
+    min-width: 30px;
+    max-width: 50px;
+    text-align: center;
+    transition: 0.2s transform;
+}
+ .workspace-drawer-vault-switcher::after {
+    background-color: var(--background-modifier-hover);
+ }
+.workspace-drawer-vault-switcher:hover::after {
+    background-color: var(--background-modifier-hover);
+    transform: scale(1.1);
+}
+.workspace-drawer-vault-name {
+    display: block !important;
+    position: absolute;
+    visibility: hidden;
+} 
+/* vault username */
+.workspace-drawer-vault-name::after {
+    content: var(--username);
+    display: block;
+    margin-left: 60px;
+    font-weight: 600;
+    position: relative;
+    visibility: visible;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+/* hide real vault switcher button */
+.workspace-drawer-vault-switcher .workspace-drawer-vault-switcher-icon {
+    visibility: hidden;
+    width: 0;
+    position: absolute;
+} /* remove hover effect on vault switcher */ .workspace-drawer-vault-switcher:hover {
+    background: transparent !important;
+}
+
+/* ----- tabs ----- */
+
+body {
+    --tab-text-color-focused-active-current: var(--color-accent-2);
+    --tab-divider-color: transparent;
+    --tab-curve: 0px;
+    --tab-radius-active: var(--radius-s);
+    --tab-font-size: 0.84em;
+    --tab-width: 240px;
+    --tab-outline-width: var(--border-width);
+    --tab-divider-color: transparent;
+    --tab-text-color: var(--text-normal);
+    --titlebar-background: var(--background-primary);
+} .workspace-tab-header-container {
+    background-color: transparent;
+    border-bottom: none;
+}
+.workspace-tab-header {
+    height: 2em;
+    margin-bottom: 4px;
+} 
+
+.gradient-bg .workspace-tab-header-container {
+    height: 50px;
+    margin-bottom: -10px;
+}
+
+.gradient-bg .workspace-tab-header, .gradient-bg .workspace-tab-header.is-active {
+    height: 2.5em; 
+    padding: 0 0.7em 0 0.7em !important;
+}
+
+
+
+/* --- animations --- */
+
+/*
+.workspace-tab-header-container {
+    height: 3px;
+    opacity: 0;
+}
+
+.workspace-tab-header-container:hover {
+    display: flex;
+    height: var(--header-height);
+    opacity: 1;
+    transition: opacity .2s ease-in-out, height .1s ease-in-out, display .1s ease-in;
+    transition-delay: 0ms;
+}
+
+*/
+
+/* = = =  Safari Tabs (slightly modified) | credit: gavinmn - https://github.com/gavinmn/obsidian-theme/blob/main/safaritabs.css = = = */
+.workspace-split.mod-vertical.mod-root  .workspace-tab-header-container-inner {
+    width: 100%;
+  } 
+  .workspace-tab-header[data-type="markdown"],
+  .workspace-tab-header[data-type="empty"] {
+    max-width: 100% !important;
+    border-radius: 6px;
+    box-shadow: none !important;
+    transition: background-color 200ms ease-in-out;
+    background: var(--tab-background);
+    transition: flex-grow 0.25s ease-in-out !important;
+  }
+  .workspace-tab-header[data-type="markdown"].is-active.mod-active,
+  .workspace-tab-header[data-type="empty"].is-active.mod-active {
+    background-color: var(--tab-background-active);
+    flex-grow: 2 !important;
+  }
+  .workspace-split.mod-vertical.mod-root  .workspace-tab-header-inner::after {
+    display: none;
+  }
+  .workspace-split.mod-vertical.mod-root .workspace-tab-header::after,
+  .workspace-split.mod-vertical.mod-root .workspace-tab-header::before {
+    display: none;
+  }
+  .workspace-split.mod-vertical.mod-root  .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
+    display: none;
+  }
+  .workspace-split.mod-vertical.mod-root  .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
+    display: flex;
+  }
+  .workspace-split.mod-vertical.mod-root  .workspace-tab-header-tab-list {
+    display: none !important;
+  }
+
+  /* = = = make tab bar match width of note pane with gradient background enabled = = = */
+  .workspace-tab-header-container {
+    align-items: center;
+    margin: auto;
+  }
+
+/* ----- side dock ----- */
+body {
+    --ribbon-background-collapsed: transparent;
+    --ribbon-background: transparent;
+    --nav-item-color: var(--text-normal);
+}
+.gradient-bg .workspace-ribbon.side-dock.mod-left::before, .gradient-bg .workspace-ribbon {
+    background-color: transparent;
+}
+
+/* --- recreate sidebar affect in the app --- */
+.nav-files-container {
+    background-color: var(--background-primary);
+    border-radius: 0 0 var(--radius-m) var(--radius-m);
+    margin-right: 12px;
+    margin-left: 12px;
+    border-top: 1px solid var(--background-modifier-border);
+} 
+
+/* fix spacing with the left ribbon button when sidebar is collapsed */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed .sidebar-toggle-button.mod-left {
+    width: 50px;
+}
+
+/* connect nav header to files container */
+.nav-header {
+    background-color: var(--background-primary);
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: var(--radius-m) var(--radius-m) 0 0;
+} /* buttons */ .nav-buttons-container {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px;
+} .nav-action-button {
+    padding: 8px 0 8px 0;
+    flex-grow: 1;
+}
+
+.tree-item-self.nav-folder-title, .tree-item-self.nav-file.title {
+    padding: 8px;
+}  .tree-item-inner.nav-folder-title-content, .tree-item:has(.iconize-icon) .tree-item-inner.nav-file-title-content {
+    padding-left: 10px;
+}
+
+
+/* folder icons */
+body {
+--note-icon: '📝';
+--folder-icon: '📁';
+}
+
+/* iconize plugin support */
+.iconize-icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--background-secondary);
+  padding: 14px;
+  border-radius: var(--radius-s);
+  display: block;
+  transform: scale(1.05);
+  transform: translateY(10px);
+} .tree-item-self.nav-folder-title:not(:has(.iconize-icon))::before{
+    content: var(--folder-icon);
+    font-size: 20px;
+    background-color: var(--background-secondary);
+  padding: 10px;
+  transform: translateY(10px);
+  border-radius: var(--radius-s);
+  display: block;
+}
+.tree-item-self.nav-file-title:not(:has(.iconize-icon))::before {
+    content: var(--note-icon);
+    font-size: 20px;
+    background-color: var(--background-secondary);
+  padding: 10px;
+  transform: translateY(10px);
+  border-radius: var(--radius-s);
+  display: block;
+  margin-right: 20px;
+} 
+/* fix inside subfolders */
+.tree-item-children .tree-item-self.nav-file-title:not(:has(.iconize-icon))::before{
+    margin-right: 10px;
+} .tree-item.nav-folder .tree-item-self.nav-folder-title:not(:has(.iconize-icon))::before {
+    margin-right: 6px;
+}
+
+/* folder and file descriptions */
+.tree-item-self.nav-file-title, .tree-item-self.nav-folder-title { /* fix spacing for it descriptions */
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+/* -- add type descriptions -- */
+body {
+    --note-description: 'Note';
+    --folder-description: 'Collection';
+}
+
+/* for notes */
+.tree-item-self.nav-file-title:not(:has(.nav-file-tag))::after { 
+    content: var(--note-description);
+    margin-top: 40px;
+    margin-left: 68px;
+    color: var(--text-faint);
+    width: 100%;
+    display: block;
+    position: absolute;
+    font-size: calc(var(--nav-item-size) - 1px);
+} 
+
+.tree-item-self.nav-folder-title::after { 
+    content: var(--folder-description);
+    margin-top: 40px;
+    margin-left: 63px;
+    color: var(--text-faint);
+    width: 100%;
+    display: block;
+    position: absolute;
+    font-size: calc(var(--nav-item-size) - 1px);
+} .tree-item-self.nav-file-title .nav-file-tag {
+    position: absolute;
+    display: block;
+    margin-top: 40px;
+    margin-left: 63px;
+    background-color: transparent;
+    color: var(--text-faint);
+}
+
+/* hide folder collapse button */ .tree-item-icon.collapse-icon {
+    visibility: hidden;
+} /* hide indent subfolder line thing */ .tree-item-icon.c
+
+/* sidebar with gradient background */
+.gradient-bg .workspace-split.mod-horizontal {
+    left: 0;
+    height: 94%;
+    margin: auto;
+    border-radius: var(--radius-m);
+    background-color: var(--background-primary);
+} 
+
+body:not(.gradient-bg) .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed):before {
+    background-color: var(--background-secondary);
+}
+
+/* so, let's replace that left sidebar icon */
+svg.svg-icon.sidebar-left {
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    -webkit-mask-image :url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cpath fill='%23000' d='M10.25 7A6.25 6.25 0 0 0 4 13.25v21.5A6.25 6.25 0 0 0 10.25 41h27.5A6.25 6.25 0 0 0 44 34.75v-21.5A6.25 6.25 0 0 0 37.75 7zM6.5 13.25a3.75 3.75 0 0 1 3.75-3.75h5.5v29h-5.5a3.75 3.75 0 0 1-3.75-3.75zM18.25 38.5v-29h19.5a3.75 3.75 0 0 1 3.75 3.75v21.5a3.75 3.75 0 0 1-3.75 3.75z'/%3E%3C/svg%3E");
+}
+.sidebar-toggle-button.mod-left:hover svg.svg-icon.sidebar-left {
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cpath fill='%23000' d='M4 13.25A6.25 6.25 0 0 1 10.25 7h27.5A6.25 6.25 0 0 1 44 13.25v21.5A6.25 6.25 0 0 1 37.75 41h-27.5A6.25 6.25 0 0 1 4 34.75zM37.75 38.5a3.75 3.75 0 0 0 3.75-3.75v-21.5a3.75 3.75 0 0 0-3.75-3.75h-19.5v29z'/%3E%3C/svg%3E");
+}
+
+/* remove vault name */
+.workspace-drawer-vault-name {
+    display: none;
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+    width: fit-content;
+    flex-grow: unset; 
+}
+
+/* now let's turn that vault switcher bar into a nice Anytype-esque Menu */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    border: none;
+
+}
+
+/* --- hide ribbon when sidebar is closed --- */
+
+.workspace-ribbon.mod-left.is-collapsed {
+    max-width: 1px;
+}
+.workspace-ribbon.mod-left {
+    transition: .25s !important;
+}
+
+.workspace-ribbon.is-collapsed {
+    background-color: var(--background-secondary);
+    border-bottom: none;
+}
+.workspace-ribbon.mod-left::before {
+    background-color: var(--background-primary);
+    border-bottom: none;
+}
+.gradient-bg .workspace-ribbon.mod-left::before {
+    background-color: transparent
+}
+
+
+/* -- designing the  ribbon -- */
+body {
+    --ribbon-width: 74px;
+    --ribbon-background: var(--background-primary-alt);
+}
+.workspace-ribbon.side-dock-ribbon.mod-left {
+    border-top-right-radius: var(--radius-s);
+} .side-dock-actions {
+    gap: 20px 0px;
+    margin-top: 12px;
+} .workspace-ribbon.side-dock-ribbon:not(.is-collapsed) .side-dock-ribbon-action {
+    width: 37px;
+    height: 37px;
+    color: var(--text-normal);
+    background-color: var(--color-base-40);
+    border-radius: 4px;
+}
+.workspace-ribbon.side-dock-ribbon:not(.is-collapsed) .side-dock-ribbon-action {
+    background-color: transparent;
+}
+/* fix background behind ribbon when sidebar is open */
+.workspace.is-left-sidedock-open {
+    background-color: var(--background-secondary);
+}
+
+/* ------ hide status bar ------- */
+.status-bar {
+    bottom: 2vw;
+    right: 2vw;
+    transition: padding 0.2s;
+    background-color: var(--background-primary);
+}
+.status-bar:not(:hover) {
+width: 35px;
+height:35px;
+visibility: hidden;
+} .status-bar:not(:hover)::after {
+    content: "?";
+    visibility: visible;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    align-self: center;
+    font-size: 18px;
+    z-index: 100;
+    height: 20px;
+    width: fit-content;
+    border-radius: 100%;
+}
+.status-bar:hover, .status-bar:active, .status-bar:has(:focus), .status-bar:focus {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    padding: 12px;
+} .status-bar-item, .status-bar-item path {
+    color: var(--text-normal);
+} .status-bar-item {
+    border-radius: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.status-bar-item:nth-of-type(3n + 3) {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* --- basic color mappings --- */
+body {
+    --bold-color: var(--color-blue);
+    --italic-color: var(--color-green);
+}
+
+.theme-light, .theme-dark {
+    --color-red: #DC5328;
+    --color-red-rgb: 255, 85, 64;
+    --color-green-rgb: 93, 212, 0;
+    --color-green: #5DD400;
+    --color-orange-rgb: 255, 152, 0;
+    --color-orange: #FFB522;
+    --color-yellow-rgb: 236, 217, 27;
+    --color-yellow: #ECD91B;
+    --color-cyan-rgb: 15, 200, 186;
+    --color-cyan: #0FC8BA;
+    --color-blue-rgb: 42, 167, 238;
+    --color-blue: #2AA7EE;
+    --color-purple-rgb: 62, 88, 235;
+    --color-purple: #3E58EB;
+    --color-pink-rgb: 187, 114, 214;
+    --color-pink:  #BB72D6;
+}
+
+/* accent colors */
+body {
+    --gradient-1-light: hsl(var(--accent-h), 90%, 80%);
+    --gradient-2-light: hsl(calc(var(--accent-h) - 50), 100%, 90%);
+
+    --gradient-1-dark: hsl(var(--accent-h), 20%, 35%);
+    --gradient-2-dark: hsl(calc(var(--accent-h) - 50), 30%, 25%);
+}
+.accent-purple{
+    --accent-h: 226 !important;
+    --accent-s: 78% !important;
+    --accent-l: 57% !important;
+
+    --gradient-1-light: rgb(70, 106, 251);
+    --gradient-2-light:  rgb(137, 226, 255);
+
+    --gradient-1-dark:  rgb(23, 26, 48);
+    --gradient-2-dark:rgb(63, 76, 160);
+} .accent-purple, body {
+    --h1-bg: var(--color-purple-rgb);
+    --h2-bg: var(--color-pink-rgb);
+    --h3-bg: var(--color-red-rgb);
+    --h4-bg: var(--color-orange-rgb);
+    --h5-bg: var(--color-yellow-rgb);
+    --h6-bg: var(--color-green-rgb);
+
+
+}  .headings-colored, .accent-purple.headings-colored{
+    --h3-color: var(--color-red);
+    --h4-color: var(--color-orange);
+    --h5-color: var(--color-yellow);
+    --h6-color: var(--color-green);
+    --h1-color: var(--color-purple);
+    --h2-color: var(--color-pink);
+
+}
+.accent-red {
+    --accent-h: 10 !important;
+    --accent-s: 80% !important;
+    --accent-l: 58% !important;
+
+    --h1-bg: var(--color-red-rgb);
+    --h2-bg: var(--color-orange-rgb);
+    --h3-bg: var(--color-yellow-rgb);
+    --h4-bg: var(--color-green-rgb);
+    --h5-bg: var(--color-cyan-rgb);
+    --h6-bg: var(--color-blue-rgb);
+    --gradient-1-light: rgb(255, 173, 173);
+    --gradient-2-light:  rgb(255, 212, 144);
+
+    --gradient-1-dark:  rgb(110, 90, 49);
+    --gradient-2-dark:rgb(86, 54, 54);
+} .accent-red.headings-colored {
+    --h1-color: var(--color-red);
+    --h2-color: var(--color-orange);
+    --h3-color: var(--color-yellow);
+    --h4-color: var(--color-green);
+    --h5-color: var(--color-cyan);
+    --h6-color: var(--color-blue);
+
+}
+.accent-green {
+    --accent-h: 86 !important;
+    --accent-s: 63% !important;
+    --accent-l: 50% !important;
+
+    --h1-bg: var(--color-green-rgb);
+    --h2-bg: var(--color-cyan-rgb);
+    --h3-bg: var(--color-blue-rgb);
+    --h4-bg: var(--color-purple-rgb);
+    --h5-bg: var(--color-pink-rgb);
+    --h6-bg: var(--color-red-rgb);
+
+    --gradient-2-light: rgb(224, 255, 84);
+    --gradient-1-light:  rgb(100, 176, 129);
+
+    --gradient-1-dark:  rgb(97, 110, 49);
+    --gradient-2-dark:rgb(54, 86, 70);
+} .accent-green.headings-colored {
+    --h1-color: var(--color-green);
+    --h2-color: var(--color-cyan);
+    --h3-color: var(--color-blue);
+    --h4-color: var(--color-purple);
+    --h5-color: var(--color-pink);
+    --h6-color: var(--color-red);
+
+}
+.accent-orange {
+    --accent-h: 32 !important;
+    --accent-s: 100% !important;
+    --accent-l: 58% !important;
+
+    --h1-bg: var(--color-orange-rgb);
+    --h2-bg: var(--color-yellow-rgb);
+    --h3-bg: var(--color-green-rgb);
+    --h4-bg: var(--color-cyan-rgb);
+    --h5-bg: var(--color-blue-rgb);
+    --h6-bg: var(--color-purple-rgb);
+
+    --gradient-1-light: rgb(255, 241, 137);
+    --gradient-2-light:  rgb(255, 185, 119);
+
+    --gradient-1-dark:  rgb(74, 54, 36);
+    --gradient-2-dark:rgb(178, 137, 35);
+}  .accent-orange.headings-colored {
+    --h1-color: var(--color-orange);
+    --h2-color: var(--color-yellow);
+    --h3-color: var(--color-green);
+    --h4-color: var(--color-cyan);
+    --h5-color: var(--color-blue);
+    --h6-color: var(--color-purple);
+
+}
+.accent-yellow {
+    --accent-h: 45 !important;
+    --accent-s: 100% !important;
+    --accent-l: 50% !important;
+    --text-on-accent: black;
+
+    --h1-bg: var(--color-yellow-rgb);
+    --h2-bg: var(--color-green-rgb);
+    --h3-bg: var(--color-cyan-rgb);
+    --h4-bg: var(--color-blue-rgb);
+    --h5-bg: var(--color-purple-rgb);
+    --h6-bg: var(--color-pink-rgb);
+
+    --gradient-1-light: rgb(255, 248, 153);
+    --gradient-2-light:  rgb(255, 202, 202);
+
+    --gradient-1-dark:  rgb(55, 41, 15);
+    --gradient-2-dark:rgb(149, 116, 59);
+
+}  .accent-yellow.headings-colored {
+    --h5-color: var(--color-purple);
+    --h6-color: var(--color-pink);
+    --h1-color: var(--color-yellow);
+    --h2-color: var(--color-green);
+    --h3-color: var(--color-cyan);
+    --h4-color: var(--color-blue);
+
+}
+.accent-cyan {
+    --accent-h: 171 !important;
+    --accent-s: 46% !important;
+    --accent-l: 60% !important;
+
+    --h1-bg: var(--color-cyan-rgb);
+    --h2-bg: var(--color-green-rgb);
+    --h3-bg: var(--color-yellow-rgb);
+    --h4-bg: var(--color-orange-rgb);
+    --h5-bg: var(--color-red-rgb);
+    --h6-bg: var(--color-pink-rgb);
+
+    --gradient-1-light: rgb(152, 218, 228);
+    --gradient-2-light:  rgb(200, 255, 230);
+
+    --gradient-1-dark:  rgb(49, 94, 110);
+    --gradient-2-dark:rgb(54, 86, 74);
+}  .accent-cyan.headings-colored {
+    --h5-color: var(--color-red);
+    --h4-color: var(--color-orange);
+    --h3-color: var(--color-yellow);
+    --h2-color: var(--color-green);
+    --h1-color: var(--color-cyan);
+    --h6-color: var(--color-pink);
+
+}
+.accent-blue {
+    --accent-h: 206 !important;
+    --accent-s: 80% !important;
+    --accent-l: 62% !important;
+
+    --h1-bg: var(--color-blue-rgb);
+    --h2-bg: var(--color-cyan-rgb);
+    --h3-bg: var(--color-green-rgb);
+    --h4-bg: var(--color-yellow-rgb);
+    --h5-bg: var(--color-orange-rgb);
+
+    --gradient-1-light: rgb(147, 201, 244);
+    --gradient-2-light:  rgb(237, 251, 255);
+
+    --gradient-1-dark:  rgb(8, 32, 57);
+    --gradient-2-dark:rgb(46, 82, 121);
+
+    --h6-bg: var(--color-red-rgb);
+}  .accent-blue.headings-colored {
+    --h6-color: var(--color-red);
+    --h5-color: var(--color-orange);
+    --h4-color: var(--color-yellow);
+    --h3-color: var(--color-green);
+    --h2-color: var(--color-cyan);
+    --h1-color: var(--color-blue);
+
+}
+
+.accent-pink {
+    --accent-h: 274 !important;
+    --accent-s: 60% !important;
+    --accent-l: 62% !important;
+
+    --h1-bg: var(--color-pink-rgb);
+    --h2-bg: var(--color-purple-rgb);
+    --h3-bg: var(--color-blue-rgb);
+    --h4-bg: var(--color-cyan-rgb);
+    --h5-bg: var(--color-green-rgb);
+    --h6-bg: var(--color-yellow-rgb);
+
+    --gradient-1-light: rgb(255, 208, 120);
+    --gradient-2-light:  rgb(246, 211, 255);
+
+    --gradient-1-dark:  rgb(53, 49, 110);
+    --gradient-2-dark:rgb(86, 54, 80);
+}  .accent-pink.headings-colored {
+    --h2-color: var(--color-purple);
+    --h1-color: var(--color-pink);
+    --h6-color: var(--color-yellow);
+    --h5-color: var(--color-green);
+    --h4-color: var(--color-cyan);
+    --h3-color: var(--color-blue);
+
+}
+
+
+.headings-blander {
+    --h1-bg: inherit;
+    --h2-bg: inherit;
+    --h3-bg: inherit;
+    --h4-bg: inherit;
+    --h5-bg: inherit;
+    --h6-bg: inherit;
+    --h6-color: inherit;
+    --h5-color: inherit;
+    --h4-color: inherit;
+    --h3-color: inherit;
+    --h2-color: inherit;
+    --h1-color: inherit;
+}
+
+
+.theme-light {
+    --workspace-background: linear-gradient(0deg,var(--gradient-1-light), var(--gradient-2-light));
+    --color-base-00: #ffffff;
+    --color-base-05: #f8f8f8;
+    --color-base-20: #f8f8f8;
+    --color-base-10: #eeeeee;
+    --color-base-25:  #f2f2f2;
+    --color-base-30: rgb(230, 230, 230);
+    --color-base-35: #d4d4d4;
+    --color-base-40: hsla(0, 0%, 79%);
+    --color-base-50: #a2a0a0;
+    --color-base-60: #7b7b7b;
+    --color-base-70: #999999;
+    --color-base-100: #2f2f2f;
+    --text-faint: #949494;
+}
+.theme-dark {
+    --workspace-background: linear-gradient(0deg,var(--gradient-1-dark), var(--gradient-2-dark));
+    --color-base-00: #171717;
+    --color-base-10: #32312f;
+    --color-base-20: #232323;
+    --color-base-25: #21201e;
+    --color-base-30: #2e2c29;
+    --color-base-35: #484643;
+    --color-base-40: #605d5a;
+    --color-base-50: #7b7974;
+    --color-base-60: #9c9994;
+    --color-base-70: #aeaba6;
+    --color-base-100: #ffffff;
+} .theme-dark.oled-style {
+    --color-base-00: rgb(0, 0, 0);
+}
+
+/* = = = checkboxes = = = */
+
+/* Recycled from Chime Theme */
+body {
+    --checklist-done-decoration: none;
+    --checkbox-color: transparent;
+    --checkbox-color-hover: transparent;
+}
+input[type=checkbox]:checked:after {
+    background-color: var(--color-blue);
+    top: 0px;
+    bottom: 0px;
+    -webkit-mask-size: 100%;
+    -webkit-mask-image: url(<?xml version="1.0" ?><svg data-name="Capa 1" id="Capa_1" viewBox="0 0 20 19.84" xmlns="http://www.w3.org/2000/svg"><path d="M15.39,5.66a.37.37,0,0,0-.52,0L8,13.39,5.09,11.06a.38.38,0,1,0-.47.59L7.85,14.2a.38.38,0,0,0,.52,0l7.06-8A.38.38,0,0,0,15.39,5.66Z"/></svg>);
+}
+ input[type=checkbox]:checked {
+    border-color: transparent !important;
+}
+input[type=checkbox] {
+    border-radius: 1em;
+}
+
+/* modern style to mimic modern Anytype checkboxes */
+.checkbox-modern {
+    --checkbox-color: var(--color-blue);
+    --checkbox-color-hover: var(--color-blue);
+    --checkbox-size: calc(var(--font-text-size) + 0.1em)
+} .checkbox-modern input[type=checkbox]:checked:after {
+background-color: white;
+transform: scale(0.8);
+-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 36'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.5' d='m6.5 17l6 6l13-13'/%3E%3C/svg%3E");
+}
+
+/* = = = Headings = = = */
+body {
+    --heading-opacity: 0.2;
+    --heading-radius: 4px;
+}
+
+[data-heading], .HyperMD-header {
+    padding: 5px 10px 5px 10px !important;
+    border-radius: var(--heading-radius);
+}
+
+
+ h1,  .HyperMD-header-1, a.heading-level-1 {
+    background-color: rgba(var(--h1-bg), var(--heading-opacity));
+}
+ h2,  .HyperMD-header-2, a.heading-level-2 {
+    background-color: rgba(var(--h2-bg), var(--heading-opacity));
+}
+ h3,  .HyperMD-header-3, a.heading-level-3 {
+    background-color: rgba(var(--h3-bg), var(--heading-opacity));
+}
+ h4,  .HyperMD-header-4, a.heading-level-4 {
+    background-color: rgba(var(--h4-bg), var(--heading-opacity));
+}
+ h5,  .HyperMD-header-5, a.heading-level-5 {
+    background-color: rgba(var(--h5-bg), var(--heading-opacity));
+}
+ h6,  .HyperMD-header-6, a.heading-level-6 {
+    background-color: rgba(var(--h6-bg), var(--heading-opacity));
+}
+li.hovered[data-heading-line] a, li.highlight[data-heading-line] a {
+  --heading-opacity: 0.3;
+}
+
+.cm-header {
+  color: inherit;
+}
+
+/* colored heading text only Style setting (bland headings / colorless headings) */
+.headings-bland h1,  .headings-bland .HyperMD-header-1 {
+    color: rgba(var(--h1-bg), 100%);
+    background-color: transparent;
+}
+.headings-bland h2, .headings-bland .HyperMD-header-2 {
+    color: rgba(var(--h2-bg), 100%);
+    background-color: transparent;
+}
+.headings-bland h3, .headings-bland  .HyperMD-header-3 {
+    color: rgba(var(--h3-bg), 100%);
+    background-color: transparent;
+}
+.headings-bland h4, .headings-bland .HyperMD-header-4 {
+    background-color: transparent;
+    color: rgba(var(--h4-bg), 100%);
+}
+.headings-bland h5, .headings-bland .HyperMD-header-5 {
+    background-color: transparent;
+    color: rgba(var(--h5-bg), 100%);
+}
+.headings-bland h6, .headings-bland .HyperMD-header-6 {
+    background-color: transparent;
+    color: rgba(var(--h6-bg), 100%);
+}
+
+/* adjust */
+
+[data-heading-line] * {
+  border-radius: 3px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+} li[data-heading-line] {
+  padding: 0;
+  width: fit-content;
+  margin: 0 !important;
+} li.hovered[data-heading-line], li.highlight[data-heading-line] {
+  background: transparent !important;
+}
+
+
+li.hovered[data-heading-line] a, li.highlight[data-heading-line] a {
+  --heading-opacity: 0.3;
+}
+
+.cm-header {
+  color: inherit;
+}
+
+
+/* = = = Callouts = = = */
+body {
+    --callout-opacity: 0.22;
+    --callout-default: var(--color-orange-rgb);
+    --callout-todo: var(--color-purple-rgb);
+    --callout-important: var(--color-orange-rgb);
+    --callout-title-color: var(--text-normal);
+}  .callout {
+    background-color: rgba(var(--callout-color), var(--callout-opacity));
+    padding: 16px;
+} .callout:not[data-callout="quote"] p { margin-left: 38px; } .callout-title {
+    color: var(--callout-title-color);
+
+}
+
+.callout-title::before {
+    padding-right: 0.5em;
+    content: var(--callout-icon);
+}
+.callout {
+    --callout-icon: '💡';
+    --callout-color: var(--color-yellow-rgb);
+}
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+ --callout-icon: '📖';
+}
+.callout[data-callout="info"] {
+    --callout-icon: 'ℹ️';
+  }
+  .callout[data-callout="todo"] {
+    --callout-icon: '✔️';
+  }
+  .callout[data-callout="important"] {
+    --callout-color: var(--color-red-rgb);
+    --callout-title-color: rgb(var(--color-red-rgb));
+    --callout-icon: '❗';
+
+  }
+  .callout[data-callout="tip"],
+  .callout[data-callout="hint"] {
+    --callout-color: var(--color-yellow-rgb);
+    --callout-icon: '🔥';
+  }
+  .callout[data-callout="success"],
+  .callout[data-callout="check"],
+  .callout[data-callout="done"] {
+    --callout-icon: '✅';
+  }
+  .callout[data-callout="question"],
+  .callout[data-callout="help"],
+  .callout[data-callout="faq"] {
+    --callout-icon: '❓';
+  }
+  .callout[data-callout="warning"],
+  .callout[data-callout="caution"],
+  .callout[data-callout="attention"] {
+    --callout-color: var(--color-red-rgb);
+    --callout-icon: '🚩';
+  }
+  .callout[data-callout="failure"],
+  .callout[data-callout="fail"],
+  .callout[data-callout="missing"] {
+    --callout-icon: '❌';
+  }
+  .callout[data-callout="danger"],
+  .callout[data-callout="error"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: '⚡';
+  }
+  .callout[data-callout="bug"] {
+    --callout-color: var(--color-pink-rgb);
+    --callout-icon: '🪰';
+  }
+  .callout[data-callout="example"] {
+    --callout-icon: '✍️';
+    --callout-color: var(--color-yellow-rgb)
+  }
+    .callout[data-callout="quote"] {
+    --callout-icon: '🗨️';
+    --callout-color: var(--color-blue-rgb)
+  }
+/* -------- make the settings look Antype-ish ------ */
+body {
+    --modal-width: calc(100% - 32px);
+    --modal-height: 650px;
+    --modal-max-height: calc(100% - 48px);
+    --dropdown-padding: 0px 0px 0px 12px;
+}
+.vertical-tab-header-group-title {
+font-weight: normal;
+padding: 0px 8px;
+margin-bottom: 5px;
+}
+.vertical-tab-header-group-items{
+    padding: 0px 20px;
+    
+}
+.vertical-tab-nav-item.is-active {
+    background-color: rgba(var(--mono-rgb-100), 0.075) !important;
+    color: var(--text-normal) !important;
+}
+/* adding the settings icons */
+body {
+    --settings-options: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IiMwRkM4QkEiLz4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNSA3LjVDNSA3Ljc3NjE0IDUuMjIzODYgOCA1LjUgOEgxOC41QzE4Ljc3NjEgOCAxOSA3Ljc3NjE0IDE5IDcuNUMxOSA3LjIyMzg2IDE4Ljc3NjEgNyAxOC41IDdINS41QzUuMjIzODYgNyA1IDcuMjIzODYgNSA3LjVaTTUuNSAxMi41QzUuMjIzODYgMTIuNSA1IDEyLjI3NjEgNSAxMkM1IDExLjcyMzkgNS4yMjM4NiAxMS41IDUuNSAxMS41SDE4LjVDMTguNzc2MSAxMS41IDE5IDExLjcyMzkgMTkgMTJDMTkgMTIuMjc2MSAxOC43NzYxIDEyLjUgMTguNSAxMi41SDUuNVpNNS41IDE3QzUuMjIzODYgMTcgNSAxNi43NzYxIDUgMTYuNUM1IDE2LjIyMzkgNS4yMjM4NiAxNiA1LjUgMTZIMTguNUMxOC43NzYxIDE2IDE5IDE2LjIyMzkgMTkgMTYuNUMxOSAxNi43NzYxIDE4Ljc3NjEgMTcgMTguNSAxN0g1LjVaIiBmaWxsPSJ3aGl0ZSIvPg0KPHJlY3QgeD0iMTIuNSIgeT0iMTguMjUiIHdpZHRoPSIzLjUiIGhlaWdodD0iMy41IiByeD0iMS43NSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDEyLjUgMTguMjUpIiBmaWxsPSIjMEZDOEJBIiBzdHJva2U9IndoaXRlIi8+DQo8cmVjdCB4PSI4IiB5PSIxMy43NSIgd2lkdGg9IjMuNSIgaGVpZ2h0PSIzLjUiIHJ4PSIxLjc1IiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgOCAxMy43NSkiIGZpbGw9IiMwRkM4QkEiIHN0cm9rZT0id2hpdGUiLz4NCjxyZWN0IHg9IjEyLjUiIHk9IjkuMjUiIHdpZHRoPSIzLjUiIGhlaWdodD0iMy41IiByeD0iMS43NSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDEyLjUgOS4yNSkiIGZpbGw9IiMwRkM4QkEiIHN0cm9rZT0id2hpdGUiLz4NCjwvc3ZnPg0K');
+    --settings-core-plugins: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IiMzRTU4RUIiLz4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS41IDguNUM1LjUgNy4xMTkyOSA2LjYxOTI5IDYgOCA2SDE2QzE3LjM4MDcgNiAxOC41IDcuMTE5MjkgMTguNSA4LjVDMTguNSA5Ljg4MDcxIDE3LjM4MDcgMTEgMTYgMTFIOEM2LjYxOTI5IDExIDUuNSA5Ljg4MDcxIDUuNSA4LjVaTTkuNSA4LjVDOS41IDkuMDUyMjggOS4wNTIyOCA5LjUgOC41IDkuNUM3Ljk0NzcyIDkuNSA3LjUgOS4wNTIyOCA3LjUgOC41QzcuNSA3Ljk0NzcyIDcuOTQ3NzIgNy41IDguNSA3LjVDOS4wNTIyOCA3LjUgOS41IDcuOTQ3NzIgOS41IDguNVpNNS41IDE1LjVDNS41IDE0LjExOTMgNi42MTkyOSAxMyA4IDEzSDE2QzE3LjM4MDcgMTMgMTguNSAxNC4xMTkzIDE4LjUgMTUuNUMxOC41IDE2Ljg4MDcgMTcuMzgwNyAxOCAxNiAxOEg4QzYuNjE5MjkgMTggNS41IDE2Ljg4MDcgNS41IDE1LjVaTTkuNSAxNS41QzkuNSAxNi4wNTIzIDkuMDUyMjggMTYuNSA4LjUgMTYuNUM3Ljk0NzcyIDE2LjUgNy41IDE2LjA1MjMgNy41IDE1LjVDNy41IDE0Ljk0NzcgNy45NDc3MiAxNC41IDguNSAxNC41QzkuMDUyMjggMTQuNSA5LjUgMTQuOTQ3NyA5LjUgMTUuNVoiIGZpbGw9IndoaXRlIi8+DQo8L3N2Zz4NCg==');
+    --settings-plugins: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IiMyQUE3RUUiLz4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAxMi4yMDkyQzE0Ljk2NTkgMTEuNjE1OSAxNiAxMC4xNzg3IDE2IDguNUMxNiA2LjI5MDg2IDE0LjIwOTEgNC41IDEyIDQuNUM5Ljc5MDg2IDQuNSA4IDYuMjkwODYgOCA4LjVDOCAxMC4xNzg3IDkuMDM0MDggMTEuNjE1OSAxMC41IDEyLjIwOTJWMTcuOTgwNUwxMiAxOS41TDEzLjUgMTcuOTgwNVYxNy4yMzI1TDEyLjM3NSAxNi4xMTA0TDEzLjUgMTQuOTg4M0wxMi4zNzUgMTMuODY2MkwxMy41IDEyLjc0NDJWMTIuMjA5MlpNMTMuMjUgNy43NUMxMy4yNSA4LjQ0MDM2IDEyLjY5MDQgOSAxMiA5QzExLjMwOTYgOSAxMC43NSA4LjQ0MDM2IDEwLjc1IDcuNzVDMTAuNzUgNy4wNTk2NCAxMS4zMDk2IDYuNSAxMiA2LjVDMTIuNjkwNCA2LjUgMTMuMjUgNy4wNTk2NCAxMy4yNSA3Ljc1WiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg0K');
+}
+body:not(.is-phone) .modal.mod-settings .vertical-tab-header-group .vertical-tab-header-group-title::before {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -7px;
+} 
+body:not(.is-phone) .modal.mod-settings .vertical-tab-header-group:nth-child(1) .vertical-tab-header-group-title::before {
+ content: var(--settings-options);
+}
+body:not(.is-phone) .modal.mod-settings .vertical-tab-header-group:nth-child(2) .vertical-tab-header-group-title::before {
+    content: var(--settings-core-plugins);
+}
+body:not(.is-phone) .modal.mod-settings .vertical-tab-header-group:nth-child(3) .vertical-tab-header-group-title::before {
+    content: var(--settings-plugins);
+}
+
+/* text colors and sizes */
+.setting-item.setting-item-heading .setting-item-info .setting-item-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.4em 0 0 0;
+
+    /* border effect on settings items */
+} .setting-item {
+    border-right: 1px solid vaR(--background-modifier-border);
+    border-left: 1px solid vaR(--background-modifier-border);
+    border-top: none;
+    border-bottom: 1px solid vaR(--background-modifier-border);
+    padding: 16px 20px;
+}
+
+.setting-item:first-child, .setting-item.setting-item-heading + .setting-item {
+    border-radius: var(--radius-s) var(--radius-s) 0 0;
+    border-top:  1px solid vaR(--background-modifier-border);
+    padding: 16px 20px;
+} 
+.setting-item:last-child, .setting-item:has(+ .setting-item.setting-item-heading) {
+border-radius: 0 0 var(--radius-s) var(--radius-s);
+}
+.vertical-tab-content .setting-item:first-child:has(.search-input-container),
+.vertical-tab-content .setting-item:last-child:has(.search-input-container){
+    border-radius: var(--radius-s);
+}
+
+.setting-item.setting-item-heading {
+    border: none;
+}
+.setting-item-description {
+    padding-top: 10px;
+    transition: opacity 0.8s !important;   
+    transition-delay: all 0.25s !important;
+} .hide-settings-descriptions .setting-item-description {
+    opacity: 0;
+}
+.hide-settings-descriptions .setting-item:hover .setting-item-description {
+    opacity: 1;
+}
+.hide-settings-descriptions .setting-item:not(:hover) .setting-item-description {
+   position: absolute;
+   width: 0px;
+   height: 0px;
+   overflow: hidden;
+}
+
+/* hide some style settings conditionally */
+.style-settings-container:not(:has([data-id="gradient-bg"] .checkbox-container.is-enabled )) [data-id="custom-transparency"] {
+    display: none;
+}
+.style-settings-container:not(:has([data-id="gradient-bg"] .checkbox-container.is-enabled )) [data-id="page-transparency-custom"],
+.style-settings-container:not(:has([data-id="custom-transparency"] .checkbox-container.is-enabled )) [data-id="page-transparency-custom"] {
+    display: none;
+}
+
+/* dropdowns */
+select.dropdown:focus {
+    box-shadow: none;
+    border: 1px solid var(--background-modifier-border); }
+select.dropdown {
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: none;
+    overflow-wrap: break-word;
+    width: fit-content;
+    min-width: 100px;
+    border: 1px solid var(--background-modifier-border);
+} select.dropdown:hover {
+    box-shadow: none;
+    background-color: var(--background-modifier-hover);
+}
+
+/* toggles */
+body {
+    --toggle-thumb-height: 8px;
+    --toggle-thumb-width: 8px;
+}
+
+
+/* change overall modal spacing */
+.modal.mod-settings .vertical-tab-header {
+    padding: 16px 0px 16px 8px;
+    width: 30%;
+    max-width: unset;
+    min-width: unset;
+    border: none;
+}
+
+body {
+    --username: 'Guest';
+    --user-icon: '👤';
+}
+
+/* user profile look in settings */
+.vertical-tab-header::before {
+    content: var(--username);
+    display: block;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    font-weight: 600;
+}
+ .vertical-tab-header-group:first-of-type::before {
+    content:var(--user-icon);
+    color: hsl(var(--accent-h), var(--accent-s), 45%);
+    font-weight: 600;
+    font-size: 20px;
+    transform: translateY(-40px);
+    display: block;
+    background-color: var(--background-primary-alt);
+    border-radius: var(--radius-s);
+    padding: 5px;
+    margin-left: 15px;
+    width: fit-content; 
+    min-width: 30px;
+    max-width: 50px;
+    text-align: center;
+ } 
+
+ /* remove close */
+ .modal.mod-settings .modal-close-button {
+    display: none;
+ }
+
+ /* scrollbars */
+ body:not(.native-scrollbars) ::-webkit-scrollbar {
+    width: 10px;
+    margin: 0;
+    padding: 0; 
+} 
+/* hide in vertical tab header */
+.vertical-tabs-container .vertical-tab-header::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+} 
+
+/* ---- lists ---- */
+body {
+    --list-bullet-size: 0.35em;
+    --list-marker-color: var(--text-normal);
+    --list-spacing: 0.2em;
+    --list-indent: 1.5em;
+
+} .list-bullet {
+    margin-right: 20px;
+}
+
+
+/* ================== tags ==================== */
+/* recycled from Serenity theme */
+
+body {
+    --tag-radius:5px;
+    --tag-padding-x: 4px;
+    --tag-padding-y: 0px;
+    --tag-opacity: 0.25;
+    --tag-opacity-hover: 0.2;
+}
+
+a.tag, .cm-hashtag, [data-property-key=tags i] .multi-select-pill {
+    background-color: var(--tag-rb) !important;
+}
+a.tag:hover, [data-property-key=tags i] .multi-select-pill:hover {
+    background-color: var(--tag-rb-hover) !important;
+}
+
+.theme-light a.tag, .theme-light .cm-hashtag, .theme-light [data-property-key=tags i] .multi-select-pill, .theme-light .suggestion .suggestion-item {
+    color: var(--tag-rb-text-light) !important;
+    --pill-color-remove: var(--tag-rb-text-light) !important;
+}
+.theme-dark a.tag, .theme-dark .cm-hashtag, .theme-dark [data-property-key=tags i] .multi-select-pill, .theme-dark .suggestion .suggestion-item {
+    color: var(--tag-rb-text-dark) !important;
+    --pill-color-remove: var(--tag-rb-text-dark) !important;
+}
+
+ a.tag:nth-child(7n+1), /*reading mode*/
+:is(.cm-hashtag:nth-child(14n+1), /*live preview*/
+.cm-hashtag:nth-child(14n+2)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+1), /* properties */
+.suggestion .suggestion-item:nth-child(7n+1) {
+    --tag-rb-text-light: var(--color-pink);
+    --tag-rb-text-dark: var(--color-pink);
+    --tag-rb: rgba(var(--color-pink-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-pink-rgb), var(--tag-opacity-hover));
+}
+
+a.tag:nth-child(7n+2),
+:is(.cm-hashtag:nth-child(14n+3),
+.cm-hashtag:nth-child(14n+4)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+2),
+.suggestion .suggestion-item:nth-child(7n+2) {
+    --tag-rb-text-light: var(--color-orange);
+    --tag-rb-text-dark: var(--color-orange);
+    --tag-rb: rgba(var(--color-orange-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-orange-rgb), var(--tag-opacity-hover));
+}
+
+ a.tag:nth-child(7n+3),
+  :is(.cm-hashtag:nth-child(14n+5),
+.cm-hashtag:nth-child(14n+6)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+3),
+.suggestion .suggestion-item:nth-child(7n+3) {
+    --tag-rb-text-light: var(--color-yellow);
+    --tag-rb-text-dark: var(--color-yellow);
+    --tag-rb: rgba(var(--color-yellow-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-yellow-rgb), var(--tag-opacity-hover));
+}
+
+a.tag:nth-child(7n+4),
+  :is(.cm-hashtag:nth-child(14n+7),
+.cm-hashtag:nth-child(14n+8)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+4),
+.suggestion .suggestion-item:nth-child(7n+4) {
+    --tag-rb-text-light: var(--color-green);
+    --tag-rb-text-dark: var(--color-green);
+    --tag-rb: rgba(var(--color-green-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-green-rgb), var(--tag-opacity-hover));
+}
+
+a.tag:nth-child(7n+5),
+  :is(.cm-hashtag:nth-child(14n+9),
+.cm-hashtag:nth-child(14n+10)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+5),
+.suggestion .suggestion-item:nth-child(7n+5) {
+    --tag-rb-text-light: var(--color-cyan);
+    --tag-rb-text-dark: var(--color-cyan);
+    --tag-rb: rgba(var(--color-cyan-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-cyan-rgb), var(--tag-opacity-hover));
+}
+
+a.tag:nth-child(7n+6),
+  :is(.cm-hashtag:nth-child(14n+11),
+.cm-hashtag:nth-child(14n+12)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+6),
+.suggestion .suggestion-item:nth-child(7n+6) {
+    --tag-rb-text-light: var(--color-blue);
+    --tag-rb-text-dark: var(--color-blue);
+    --tag-rb: rgba(var(--color-blue-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-blue-rgb), var(--tag-opacity-hover));
+}
+
+a.tag:nth-child(7n+7),
+  :is(.cm-hashtag:nth-child(14n+13),
+.cm-hashtag:nth-child(14n+14)),
+[data-property-key=tags i] .multi-select-pill:nth-child(7n+7),
+.suggestion .suggestion-item:nth-child(7n+7) {
+    --tag-rb-text-light: var(--color-purple);
+    --tag-rb-text-dark: var(--color-purple);
+    --tag-rb: rgba(var(--color-purple-rgb), var(--tag-opacity));
+    --tag-rb-hover: rgba(var(--color-purple-rgb), var(--tag-opacity-hover));
+}
+
+/* remove borders on property tags */
+[data-property-key=tags i] .multi-select-pill {
+    bordeR: none !important;
+}
+
+/* ======= property selection tags ("tags") ======= */
+.suggestion .suggestion-item {
+    background-color: var(--tag-rb);
+    border-radius: var(--tag-radius);
+    width: fit-content;
+    margin-bottom: 0.4em;
+    padding: var(--tag-padding-y) var(--tag-padding-x);
+    transition: 0.25s border;
+} .suggestion .suggestion-item.is-selected {
+    background-color: var(--tag-rb-hover);
+}
+.theme-light .suggestion .suggestion-item.is-selected {
+border: 2px solid var(--tag-rb-text-dark);
+} .theme-dark .suggestion .suggestion-item.is-selected {
+    border: 2px solid var(--tag-rb-text-light);
+}
+
+
+
+/* @settings
+
+name: Future Theme
+id: future-theme
+settings:
+    -
+        id: oled-style
+        title: OLED Dark Mode
+        type: class-toggle
+        default: false
+    -
+        id: accent-color-options
+        title: Accent
+        type: class-select
+        allowEmpty: false
+        default: accent-yellow
+        options:
+            -
+                label: Obsidian
+                value: accent-obsidian
+            -
+                label: Red
+                value: accent-red
+            -   
+                label: Citrus
+                value: accent-orange
+            -
+                label: Gold
+                value: accent-yellow
+            -
+                label: Lime
+                value: accent-green
+            -
+                label: Aqua
+                value: accent-cyan
+            -
+                label: Sky Blue
+                value: accent-blue
+            -
+                label: Cobalt
+                value: accent-purple
+            -
+                label: Violet
+                value: accent-pink
+    -
+        id: gradient-bg
+        title: Gradient Background
+        description: Make the note appear to be floating over an Anytype-style gradient background.
+        type: class-toggle
+        default: false
+    -
+        id: custom-transparency
+        title: custom pane transparency
+        description: customize the note pane transparency in gradient background mode.
+        type: class-toggle
+        default: false
+    -
+        id: page-transparency-custom
+        title: Pane Transparency
+        description: control the transparency of note panes when gradient background is enabled.
+        type: variable-number-slider
+        min: 0
+        max: 1
+        step: 0.01
+        default: 1
+
+    -
+        id: heading-style
+        title: Heading Style
+        type: class-select
+        allowEmpty: false
+        default: headings-default
+        options:
+            - 
+                label: Colorful
+                value: headings-default
+            -
+                label: Extra Colorful
+                value: headings-colored
+            -
+                label: Less Colorful
+                value: headings-bland
+            -
+                label: Colorless
+                value: headings-blander
+    -
+        id: more-styles-heading
+        title: More Styles
+        description: Style specific markdown elements.
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: checkbox-style
+        title: Checkboxes
+        type: class-select
+        default: checkbox-alpha
+        options:
+            -
+                label: Alpha
+                value: checkbox-alpha
+            -
+                label: Modern
+                value: checkbox-modern
+    -
+        id: hide-settings-descriptions
+        title: Hide item details in settings
+        description: show setting descriptions only on hover.
+        type: class-toggle
+        default: false
+    -
+        id: user-heading
+        title: User Profile
+        description: Customize your 'User Profile' (as seen from settings)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: user-icon
+        title: User Icon
+        type: variable-text
+        default: '👤'
+    -
+        id: username 
+        title: Username
+        type: variable-text
+        default: 'Guest'
+*/
+
+            

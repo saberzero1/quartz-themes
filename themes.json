@@ -178,6 +178,16 @@
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "arzaba": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["open-sans"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "atom": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
@@ -1301,6 +1311,16 @@
       "fixes": [],
       "fonts": [],
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
+    },
+    "future": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["light", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "garden-gnome-adwaita-gtk": {
       "compatibility": ["checking", "collection"],
@@ -2686,6 +2706,16 @@
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "poimandres-extended": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["jetbrains-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "polka": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
@@ -3472,6 +3502,16 @@
       "fonts": ["apercu-pro"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "spy-terminal": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono", "roboto-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "sqdthone": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
@@ -3747,6 +3787,17 @@
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "tyrone-neon": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+
     "ukiyo": {
       "compatibility": ["removed", "collection"],
       "modes": ["dark", "light"],

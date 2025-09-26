@@ -1,0 +1,12 @@
+{
+	"name": "Arzaba",
+	"version": "1.0.0",
+	"minAppVersion": "1.4.0",
+	"author": "Dario Arzaba",
+	"authorUrl": "https://github.com/DarioArzaba",
+	"repo": "DarioArzaba/Obsidian-Theme-Arzaba",
+	"modes": [
+		"dark",
+		"light"
+	]
+}
