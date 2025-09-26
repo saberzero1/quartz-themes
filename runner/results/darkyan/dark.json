@@ -857,39 +857,39 @@
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "li.depth-1": { "font-weight": "400" },
   "li.depth-1 + li.depth-2": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "li.depth-2": { "font-weight": "400" },
   "li.depth-2 + li.depth-3": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "li.depth-3": { "font-weight": "400" },
   "li.depth-3 + li.depth-4": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "li.depth-4": { "font-weight": "400" },
   "li.depth-4 + li.depth-5": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(209, 213, 219)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   "ol > li": { "color": "rgb(209, 213, 219)", "text-align": "start" },
   "ol > li::marker": { "color": "rgb(209, 213, 219)" },
