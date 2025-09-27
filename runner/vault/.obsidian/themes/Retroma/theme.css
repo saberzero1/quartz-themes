@@ -1,7 +1,7 @@
 /*
 
       Theme: Retroma
-    Version: v1.1.2
+    Version: v1.1.3
      Author: emarpiee
 Description: A tribute to the past with an eye toward the future.
 
@@ -773,6 +773,7 @@ body:not(.is-mobile)
 
 button:not(.excalidraw button),
 .canvas-control-item,
+.markdown-source-view.mod-cm6 .edit-block-button,
 .is-phone .menu .suggestion-group .suggestion-item,
 .is-phone .menu-item,
 .text-icon-button,
@@ -789,6 +790,7 @@ button:not(.excalidraw button),
 
 button:not(.excalidraw button),
 .canvas-control-item,
+.markdown-source-view.mod-cm6 .edit-block-button,
 .is-phone .menu .suggestion-group .suggestion-item,
 .is-phone .menu-item,
 .vertical-tab-nav-item:not(.settings-search-input),
@@ -806,6 +808,7 @@ button:not(.excalidraw button),
 
 button:hover,
 .canvas-control-item:hover,
+.markdown-source-view.mod-cm6 .edit-block-button,
 .is-phone .menu .suggestion-group .suggestion-item:hover,
 .is-phone .menu-item:hover,
 .text-icon-button:hover,
@@ -1197,8 +1200,19 @@ code:not(pre code),
   border: 1px solid oklch(from var(--text-normal) l c h / 10%);
 }
 
+.markdown-source-view.mod-cm6 .edit-block-button {
+  opacity: unset;
+}
+
+@media (hover: hover) {
+  .markdown-source-view.mod-cm6
+    .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+    box-shadow: unset;
+  }
+}
+
 /*--- Headings  ---*/
-.heading-divider {
+.heading-divider-show {
   .markdown-preview-view h1,
   .markdown-preview-view h2,
   .markdown-preview-view h3,
@@ -1209,6 +1223,20 @@ code:not(pre code),
     border-bottom: 2px solid;
     padding-bottom: 2px;
     padding-top: 4px;
+  }
+}
+
+.heading-divider-hide {
+  .markdown-preview-view h1,
+  .markdown-preview-view h2,
+  .markdown-preview-view h3,
+  .markdown-preview-view h4,
+  .markdown-preview-view h5,
+  .markdown-preview-view h6,
+  .cm-s-obsidian .cm-line.HyperMD-header {
+    border-bottom: unset;
+    padding-bottom: unset;
+    padding-top: unset;
   }
 }
 
@@ -2277,14 +2305,14 @@ settings:
         title: Heading Divider
         type: class-select
         allowEmpty: false
-        default: "Hide"
+        default: heading-divider-hide
         options:
             -
               label: Hide (Default)
-              value: Hide
+              value: heading-divider-hide
             -
               label: Show
-              value: heading-divider
+              value: heading-divider-show
     -
         id: footnote-divider
         title: Footnote Divider

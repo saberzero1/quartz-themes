@@ -1360,7 +1360,10 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    color: light-dark(
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
+    );
   }
 
   .search
@@ -1382,7 +1385,10 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgb(38, 102, 192);
-    color: light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    color: light-dark(
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
+    );
     font-weight: 400;
   }
 
@@ -1416,7 +1422,10 @@ body {
     ) {
     background-color: rgb(38, 102, 192);
     border-radius: 8px;
-    color: light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    color: light-dark(
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
+    );
   }
 
   .search
@@ -1439,7 +1448,10 @@ body {
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgb(38, 102, 192);
     border-radius: 8px;
-    color: light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    color: light-dark(
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
+    );
   }
 
   .text-highlight {
@@ -1541,7 +1553,10 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: rgba(134, 82, 255, 0.15);
+    background-color: light-dark(
+      rgba(134, 82, 255, 0.15),
+      rgba(25, 0, 84, 0.5)
+    );
     border-bottom-color: rgba(138, 92, 245, 0.15);
     border-bottom-left-radius: 22.4px;
     border-bottom-right-radius: 22.4px;
