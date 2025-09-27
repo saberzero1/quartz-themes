@@ -1186,6 +1186,18 @@ body {
   }
 
   :root {
+    --code-background: rgb(245, 247, 249);
+    --code-comment: #8963ea;
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: "Consolas", monospace;
+    --code-operator: #e93147;
+    --code-property: #00bfbc;
+    --code-punctuation: rgb(99, 99, 99);
+    --code-string: rgb(38, 38, 38);
+    --code-tag: #e93147;
+    --code-value: #7852ee;
   }
 
   a.external {
@@ -1318,6 +1330,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: rgb(99, 99, 99);
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(217, 100%, 61%);
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: rgb(99, 99, 99);
+    --quartz-graph-text: rgb(38, 38, 38);
   }
 
   h1 {

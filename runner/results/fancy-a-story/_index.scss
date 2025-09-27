@@ -1462,6 +1462,18 @@ body {
   }
 
   :root {
+    --code-background: color-mix(in srgb-linear, #e7e7e7, #000000 10%);
+    --code-comment: color-mix(in srgb-linear, #e7e7e7, #000000 50%);
+    --code-function: rgb(199.455, 175.095, 33.285);
+    --code-important: rgb(180.315, 106.365, 15.015);
+    --code-keyword: rgb(213.375, 68.955, 176.835);
+    --code-normal: #000000;
+    --code-operator: rgb(169.005, 56.775, 56.775);
+    --code-property: rgb(57.645, 141.165, 141.165);
+    --code-punctuation: color-mix(in srgb-linear, #e7e7e7, #000000 70%);
+    --code-string: rgb(26.325, 99.405, 26.325);
+    --code-tag: rgb(169.005, 56.775, 56.775);
+    --code-value: rgb(102.015, 39.375, 121.155);
   }
 
   a.external {
@@ -1669,6 +1681,17 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: color-mix(in srgb-linear, #e7e7e7, #000000 35%);
+    --quartz-graph-node: color-mix(in srgb-linear, #e7e7e7, #000000 70%);
+    --quartz-graph-node-attachment: rgb(199.455, 175.095, 33.285);
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: rgb(26.325, 99.405, 26.325);
+    --quartz-graph-node-unresolved: color-mix(
+      in srgb-linear,
+      #e7e7e7,
+      #000000 50%
+    );
+    --quartz-graph-text: #000000;
   }
 
   h1 {

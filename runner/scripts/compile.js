@@ -17,6 +17,7 @@ import postcss from "postcss";
 import calc from "postcss-calc";
 import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
 import postcssColorConverter from "postcss-color-converter";
+import { compileString } from "sass";
 
 // TODO: background-color on body is spilling over if the screen is too wide.
 
@@ -163,19 +164,33 @@ manifestCollection.forEach((manifest) => {
   if (!existsSync(`./runner/results/${theme}`)) {
     mkdirSync(`./runner/results/${theme}`);
   }
-  if (!existsSync(`./extras/themes/${theme}/_index.scss`)) {
+  if (!existsSync(`./extras/themes/${theme}`)) {
     mkdirSync(`./extras/themes/${theme}`);
+  }
+  if (!existsSync(`./extras/themes/${theme}/_index.scss`)) {
     writeFileSync(`./extras/themes/${theme}/_index.scss`, "", "utf8");
+  }
+  if (!existsSync(`./extras/themes/${theme}/publish.css`)) {
+    writeFileSync(`./extras/themes/${theme}/publish.css`, "", "utf8");
   }
 
   const darkFile = `./runner/results/${theme}/dark.json`;
   const lightFile = `./runner/results/${theme}/light.json`;
+  const darkPublishFile = `./runner/results/${theme}/publish-dark.json`;
+  const lightPublishFile = `./runner/results/${theme}/publish-light.json`;
   const targetFile = `./runner/results/${theme}/_index.scss`;
+  const targetPublishFile = `./runner/results/${theme}/publish.css`;
   const darkData = existsSync(darkFile)
     ? JSON.parse(readFileSync(darkFile, "utf8"))
     : null;
+  const darkPublishData = existsSync(darkPublishFile)
+    ? JSON.parse(readFileSync(darkPublishFile, "utf8"))
+    : null;
   const lightData = existsSync(lightFile)
     ? JSON.parse(readFileSync(lightFile, "utf8"))
+    : null;
+  const lightPublishData = existsSync(lightPublishFile)
+    ? JSON.parse(readFileSync(lightPublishFile, "utf8"))
     : null;
 
   const colorTargets = [
@@ -209,6 +224,7 @@ manifestCollection.forEach((manifest) => {
   //const scssData = readFileSync(scssFile, "utf8");
   //console.log(scssData);
   const data = {};
+  const dataPublish = {};
   // Combine the two objects
   if (darkData && lightData) {
     for (const key of Object.keys(darkData)) {
@@ -252,6 +268,36 @@ manifestCollection.forEach((manifest) => {
         }
       }
     }
+    // Add keys that are only in lightData
+    for (const key of Object.keys(lightData)) {
+      data[key] = data[key] || {};
+      for (const [target, value] of Object.entries(lightData[key])) {
+        if (data[key][target]) continue; // Already processed
+        data[key][target] = lightData[key][target];
+      }
+    }
+    for (const key of Object.keys(darkPublishData)) {
+      dataPublish[key] = {};
+      for (const [target, value] of Object.entries(darkPublishData[key])) {
+        if (colorTargets.includes(target)) {
+          if (darkPublishData[key][target] === lightPublishData[key][target]) {
+            dataPublish[key][target] = darkPublishData[key][target];
+          } else {
+            dataPublish[key][target] =
+              `light-dark(${lightPublishData[key][target]}, ${darkPublishData[key][target]})`;
+          }
+        } else {
+          dataPublish[key][target] = darkPublishData[key][target]; // Use darkData value for non-color targets
+        }
+      }
+    }
+    for (const key of Object.keys(lightPublishData)) {
+      dataPublish[key] = dataPublish[key] || {};
+      for (const [target, value] of Object.entries(lightPublishData[key])) {
+        if (dataPublish[key][target]) continue; // Already processed
+        dataPublish[key][target] = lightPublishData[key][target];
+      }
+    }
   } else if (darkData) {
     // If only darkData is present, use it directly
     for (const key of Object.keys(darkData)) {
@@ -260,12 +306,24 @@ manifestCollection.forEach((manifest) => {
         data[key][target] = value; // Use darkData value
       }
     }
+    for (const key of Object.keys(darkPublishData)) {
+      dataPublish[key] = {};
+      for (const [target, value] of Object.entries(darkPublishData[key])) {
+        dataPublish[key][target] = value; // Use darkPublishData value
+      }
+    }
   } else if (lightData) {
     // If only lightData is present, use it directly
     for (const key of Object.keys(lightData)) {
       data[key] = {};
       for (const [target, value] of Object.entries(lightData[key])) {
         data[key][target] = value; // Use lightData value
+      }
+    }
+    for (const key of Object.keys(lightPublishData)) {
+      dataPublish[key] = {};
+      for (const [target, value] of Object.entries(lightPublishData[key])) {
+        dataPublish[key][target] = value; // Use lightPublishData value
       }
     }
   } else {
@@ -784,10 +842,43 @@ body {
 ${insertExtras(manifest)}
 `;
 
+  let resultPublishScss = `
+
+${fontString}
+
+body {
+${
+  lightPublishData && darkPublishData
+    ? ""
+    : `
+  .site-body-left-column-site-theme-toggle {
+    display: none;
+  }
+`
+}`;
+
+  for (const [key, value] of Object.entries(dataPublish)) {
+    const values = Object.entries(value)
+      .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
+      .join("\n  ");
+    resultPublishScss += `
+  ${key} {
+    ${values}
+  }
+`;
+  }
+
+  resultPublishScss += `
+}
+`;
+
   // Remove --lightningcss-light and --lightningcss-dark from variables
   resultScss = resultScss.replaceAll("--lightningcss-light, ", "");
   resultScss = resultScss.replaceAll("--lightningcss-dark, ", "");
+  // Compile Publish to CSS
+  resultPublishScss = compileString(resultPublishScss).css;
   // Write the result to the target file
   writeFileSync(targetFile, resultScss, "utf8");
-  console.log(`Generated SCSS for theme: ${theme}`);
+  writeFileSync(targetPublishFile, resultPublishScss, "utf8");
+  console.log(`Generated Styles for theme: ${theme}`);
 });

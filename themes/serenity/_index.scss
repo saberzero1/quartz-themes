@@ -1393,6 +1393,18 @@ body {
   }
 
   :root {
+    --code-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%));
+    --code-comment: hsl(0, 0%, calc(15% + 20%));
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: hsl(0, 0%, calc(15% + 5%));
+    --code-operator: #f45757;
+    --code-property: #00bfbc;
+    --code-punctuation: hsl(0, 0%, calc(15% + 12%));
+    --code-string: #08b94e;
+    --code-tag: #f45757;
+    --code-value: #7852ee;
   }
 
   a.external {
@@ -1622,6 +1634,21 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: hsl(0, calc(0% + 5%), 50%, 0.28);
+    --quartz-graph-node: hsl(calc(228 + 10), calc(70% + 10%), calc(66% + 10%));
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(
+      calc(228 + 0),
+      calc(70% + 15%),
+      calc(66% + 15%)
+    );
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: hsl(
+      calc(228 + 20),
+      calc(70% + 10%),
+      calc(66% + 5%)
+    );
+    --quartz-graph-text: hsl(0, 0%, calc(15% + 5%));
   }
 
   h1 {

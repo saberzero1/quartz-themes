@@ -1367,6 +1367,18 @@ body {
   }
 
   :root {
+    --code-background: #fdfcfc;
+    --code-comment: #80797499;
+    --code-function: #d28450;
+    --code-important: #d28450;
+    --code-keyword: #bd71a4;
+    --code-normal: #333231;
+    --code-operator: #ad514c;
+    --code-property: #807974;
+    --code-punctuation: #807974;
+    --code-string: #538a8a;
+    --code-tag: #ad514c;
+    --code-value: #804c6e;
   }
 
   a.external {
@@ -1562,6 +1574,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #807974;
+    --quartz-graph-node-attachment: #d28450;
+    --quartz-graph-node-focused: #ad514c;
+    --quartz-graph-node-tag: #538a8a;
+    --quartz-graph-node-unresolved: #80797499;
+    --quartz-graph-text: #333231;
   }
 
   h1 {

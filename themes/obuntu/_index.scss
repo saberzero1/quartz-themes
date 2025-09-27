@@ -1337,6 +1337,18 @@ body {
   }
 
   :root {
+    --code-background: #dedede;
+    --code-comment: #ababab;
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: #03050b;
+    --code-operator: #e93147;
+    --code-property: #00bfbc;
+    --code-punctuation: #555;
+    --code-string: #08b94e;
+    --code-tag: #e93147;
+    --code-value: #7852ee;
   }
 
   a.external {
@@ -1529,6 +1541,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #555;
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: #df4a16;
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: #ababab;
+    --quartz-graph-text: #03050b;
   }
 
   h1 {
@@ -1676,9 +1695,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-1 {
@@ -1686,9 +1705,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-2 {
@@ -1696,9 +1715,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-3 {
@@ -1706,9 +1725,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-4 {
@@ -1716,9 +1735,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   li.depth-5 {
@@ -1726,9 +1745,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 0px none rgb(220, 221, 222);
-    margin-inline-start: 0px;
-    padding-inline-start: 45px;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    margin-inline-start: 12px;
+    padding-inline-start: 4px;
   }
 
   ol > li {

@@ -155,4 +155,10 @@ manifestCollection.forEach((manifest) => {
     `./themes/${getTheme(manifest)}/_index.scss`,
   );
 });
+manifestCollection.forEach((manifest) => {
+  fs.copyFileSync(
+    `./runner/results/${getTheme(manifest)}/publish.css`,
+    `./themes/${getTheme(manifest)}/publish.css`,
+  );
+});
 updateMiscFiles(manifestCollection);
