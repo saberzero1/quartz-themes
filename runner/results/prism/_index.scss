@@ -1335,6 +1335,18 @@ body {
   }
 
   :root {
+    --code-background: hsl(0, 0%, 100%);
+    --code-comment: hsl(0, 0%, 47%);
+    --code-function: hsl(38, 62%, 37%);
+    --code-important: hsl(31, 100%, 36%);
+    --code-keyword: hsl(320, 60%, 50%);
+    --code-normal: hsl(0, 0%, 15%);
+    --code-operator: hsl(3, 68%, 52%);
+    --code-property: hsl(184, 100%, 28%);
+    --code-punctuation: hsl(0, 0%, 20%);
+    --code-string: hsl(93, 100%, 27%);
+    --code-tag: hsl(3, 68%, 52%);
+    --code-value: hsl(258, 75%, 63%);
   }
 
   a.external {
@@ -1539,6 +1551,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: hsl(0, 0%, 69%);
+    --quartz-graph-node: hsl(0, 0%, 73%);
+    --quartz-graph-node-attachment: hsl(44, 67%, 58%);
+    --quartz-graph-node-focused: hsl(252, 84%, 83%);
+    --quartz-graph-node-tag: hsl(219, 73%, 78%);
+    --quartz-graph-node-unresolved: hsl(7, 82%, 78%);
+    --quartz-graph-text: hsl(0, 0%, 15%);
   }
 
   h1 {

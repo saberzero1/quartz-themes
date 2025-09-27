@@ -1495,6 +1495,32 @@ body {
   }
 
   :root {
+    --code-background: light-dark(
+      hsl(from black h s l / 0.06),
+      hsl(from white h s l / 0.06)
+    );
+    --code-comment: light-dark(
+      hsl(from black h s l / 0.5),
+      hsl(from white h s l / 0.5)
+    );
+    --code-function: hsl(from hsl(215, 67%, 45%) 57 s l);
+    --code-important: hsl(from hsl(215, 67%, 45%) 27 s l);
+    --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l);
+    --code-normal: color-mix(
+      in srgb,
+      hsl(215, 67%, 45%),
+      black calc(100% * 0.9)
+    );
+    --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l);
+    --code-property: hsl(from hsl(215, 67%, 45%) 179 s l);
+    --code-punctuation: color-mix(
+      in srgb,
+      color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+      transparent 30%
+    );
+    --code-string: hsl(from hsl(215, 67%, 45%) 124 s l);
+    --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l);
+    --code-value: hsl(from hsl(215, 67%, 45%) 253 s l);
   }
 
   a.external {
@@ -1669,6 +1695,25 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: color-mix(
+      in srgb,
+      color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+      transparent 30%
+    );
+    --quartz-graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l);
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l);
+    --quartz-graph-node-unresolved: color-mix(
+      in srgb,
+      hsl(215, 67%, 45%),
+      black calc(100% * 0.7)
+    );
+    --quartz-graph-text: color-mix(
+      in srgb,
+      hsl(215, 67%, 45%),
+      black calc(100% * 0.9)
+    );
   }
 
   h1 {

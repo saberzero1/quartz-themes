@@ -31,10 +31,11 @@ console.log(manifestCollection);
 
 // test/extract-styles.test.js
 describe("Quartz Theme Style Extraction", () => {
-  async function getStyles(configuration, getGeneric = false) {
+  async function getStyles(configuration, getGeneric = false, isDark = false) {
     const result = await browser.executeObsidian(
-      async ({ app }, targets, getGeneric) => {
-        computedStyles = {};
+      async ({ app }, targets, getGeneric, isDark) => {
+        computedStyles = {}; // Quartz specific styles
+        computedPublishStyles = {}; // Obsidian Publish specific styles
         //app.customCss.setTheme(theme);
         const rules = targets.selectors;
 
@@ -57,13 +58,21 @@ describe("Quartz Theme Style Extraction", () => {
             containerElement.querySelector(selectorKey) ?? containerElement;
           const style = getComputedStyle(element);
           computedStyles[rule.quartzSelector] = {};
+          computedPublishStyles[rule.publishSelector] = {};
           for (const prop of rule.properties) {
             // Skip properties that are not set
-            computedStyles[rule.quartzSelector][prop] = style.getPropertyValue(
-              prop,
-            )
-              ? style.getPropertyValue(prop).toString().trim()
-              : "unset";
+            if (rule.quartzSelector) {
+              computedStyles[rule.quartzSelector][prop] =
+                style.getPropertyValue(prop)
+                  ? style.getPropertyValue(prop).toString().trim()
+                  : "unset";
+            }
+            if (rule.publishSelector) {
+              computedPublishStyles[rule.publishSelector][prop] =
+                style.getPropertyValue(prop)
+                  ? style.getPropertyValue(prop).toString().trim()
+                  : "unset";
+            }
           }
 
           // BONUS: Handle pseudo-elements like ::before and ::after
@@ -79,7 +88,7 @@ describe("Quartz Theme Style Extraction", () => {
           */
         });
 
-        if (!getGeneric) return computedStyles;
+        if (!getGeneric) return [computedStyles, computedPublishStyles];
         // Extra styles outside the main container
         const centerElement =
           app.workspace.activeLeaf.containerEl.querySelector(
@@ -285,6 +294,30 @@ describe("Quartz Theme Style Extraction", () => {
               .toString()
               .trim();
           });
+          // TODO: fix this to actually extract '--variables'. It currently does not do that at all
+          computedPublishStyles[
+            `${isDark ? "&.theme-dark" : "&.theme-light"}`
+          ] = {};
+          bodyVariablesElement.computedStyleMap().forEach((value, property) => {
+            if (property && property.startsWith("--")) {
+              computedPublishStyles[
+                `${isDark ? "&.theme-dark" : "&.theme-light"}`
+              ][property] = value.toString().trim();
+            }
+          });
+          /*
+          for (let i = 1; i <= bodyStyle.length; i++) {
+            const propertyName = bodyStyle[i];
+            if (propertyName && propertyName.startsWith("--")) {
+              computedPublishStyles[
+                `${isDark ? "&.theme-dark" : "&.theme-light"}`
+              ][propertyName] = bodyStyle
+                .getPropertyValue(propertyName)
+                .toString()
+                .trim();
+            }
+          }
+          */
         }
 
         // Generic
@@ -295,10 +328,11 @@ describe("Quartz Theme Style Extraction", () => {
           "padding-right": "10px",
         };
 
-        return computedStyles;
+        return [computedStyles, computedPublishStyles];
       },
       configuration,
       getGeneric,
+      isDark,
     );
     return result;
   }
@@ -341,8 +375,30 @@ describe("Quartz Theme Style Extraction", () => {
     const theme = manifest.name;
     const folder = sanitize(manifest.name);
     mkdirSync(`./runner/results/${folder}`, { recursive: true });
-    let lightResult = { general: {}, headings: {}, callouts: {} };
-    let darkResult = { general: {}, headings: {}, callouts: {} };
+    let lightResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
+    let darkResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
+    let lightPublishResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
+    let darkPublishResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
     let lightKey = "general";
     let darkKey = "general";
     console.log(`Extracting styles for theme: ${theme}`);
@@ -366,22 +422,42 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
-        darkResult.general = await getStyles(configuration.general, true);
+        [darkResult.general, darkPublishResult.general] = await getStyles(
+          configuration.general,
+          true,
+          true,
+        );
         await darkPage.openFile("headings.md");
         await darkPage.openFile("headings.md");
-        darkResult.headings = await getStyles(configuration.headings);
+        [darkResult.headings, darkPublishResult.headings] = await getStyles(
+          configuration.headings,
+          false,
+          true,
+        );
         await darkPage.openFile("callouts.md");
         await darkPage.openFile("callouts.md");
-        darkResult.callouts = await getStyles(configuration.callouts);
+        [darkResult.callouts, darkPublishResult.callouts] = await getStyles(
+          configuration.callouts,
+          false,
+          true,
+        );
         await darkPage.openFile("integrations.md");
         await darkPage.openFile("integrations.md");
-        darkResult.integrations = await getStyles(configuration.integrations);
+        [darkResult.integrations, darkPublishResult.integrations] =
+          await getStyles(
+            configuration.integrations,
+
+            false,
+            true,
+          );
         await sleep(500);
       });
       after(async () => {
         const darkFileName = `./runner/results/${folder}/dark.json`;
+        const darkPublishFileName = `./runner/results/${folder}/publish-dark.json`;
         // Flatten the result object
         const darkResultObject = {};
+        const darkPublishResultObject = {};
         for (const [key, value] of Object.entries(darkResult)) {
           if (typeof value === "object") {
             for (const [subKey, subValue] of Object.entries(value)) {
@@ -389,20 +465,43 @@ describe("Quartz Theme Style Extraction", () => {
             }
           }
         }
+        for (const [key, value] of Object.entries(darkPublishResult)) {
+          if (typeof value === "object") {
+            for (const [subKey, subValue] of Object.entries(value)) {
+              darkPublishResultObject[`${subKey}`] = subValue;
+            }
+          }
+        }
         // Sort the keys alphabetically
         const sortedKeys = Object.keys(darkResultObject).sort();
+        const sortedPublishKeys = Object.keys(darkPublishResultObject).sort();
         const sortedDarkResultObject = {};
+        const sortedDarkPublishResultObject = {};
         for (const key of sortedKeys) {
           sortedDarkResultObject[key] = darkResultObject[key];
+        }
+        for (const key of sortedPublishKeys) {
+          sortedDarkPublishResultObject[key] = darkPublishResultObject[key];
         }
         // Fix callout icon colors
         const fixedDarkResultObject = fixCalloutIconColor(
           sortedDarkResultObject,
         );
+        const fixedDarkPublishResultObject = sortedDarkPublishResultObject;
         await new Promise((resolve, reject) => {
           writeFile(
             darkFileName,
             JSON.stringify(fixedDarkResultObject, null, 2),
+            (err) => {
+              if (err) reject(err);
+              else resolve();
+            },
+          );
+        });
+        await new Promise((resolve, reject) => {
+          writeFile(
+            darkPublishFileName,
+            JSON.stringify(fixedDarkPublishResultObject, null, 2),
             (err) => {
               if (err) reject(err);
               else resolve();
@@ -431,23 +530,38 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
-        lightResult.general = await getStyles(configuration.general, true);
+        [lightResult.general, lightPublishResult.general] = await getStyles(
+          configuration.general,
+          true,
+          false,
+        );
         await lightPage.openFile("headings.md");
         await lightPage.openFile("headings.md");
-        lightResult.headings = await getStyles(configuration.headings);
+        [lightResult.headings, lightPublishResult.headings] = await getStyles(
+          configuration.headings,
+          false,
+          false,
+        );
         await lightPage.openFile("callouts.md");
         await lightPage.openFile("callouts.md");
-        lightResult.callouts = await getStyles(configuration.callouts);
+        [lightResult.callouts, lightPublishResult.callouts] = await getStyles(
+          configuration.callouts,
+          false,
+          false,
+        );
         await lightPage.openFile("integrations.md");
         await lightPage.openFile("integrations.md");
-        lightResult.integrations = await getStyles(configuration.integrations);
+        [lightResult.integrations, lightPublishResult.integrations] =
+          await getStyles(configuration.integrations, false, false);
         await sleep(500);
       });
       after(async () => {
         // Save the light result to a file
         const lightFileName = `./runner/results/${folder}/light.json`;
+        const lightPublishFileName = `./runner/results/${folder}/publish-light.json`;
         // Flatten the result object
         const lightResultObject = {};
+        const lightPublishResultObject = {};
         for (const [key, value] of Object.entries(lightResult)) {
           if (typeof value === "object") {
             for (const [subKey, subValue] of Object.entries(value)) {
@@ -455,20 +569,43 @@ describe("Quartz Theme Style Extraction", () => {
             }
           }
         }
+        for (const [key, value] of Object.entries(lightPublishResult)) {
+          if (typeof value === "object") {
+            for (const [subKey, subValue] of Object.entries(value)) {
+              lightPublishResultObject[`${subKey}`] = subValue;
+            }
+          }
+        }
         // Sort the keys alphabetically
         const sortedKeys = Object.keys(lightResultObject).sort();
+        const sortedPublishKeys = Object.keys(lightPublishResultObject).sort();
         const sortedLightResultObject = {};
+        const sortedLightPublishResultObject = {};
         for (const key of sortedKeys) {
           sortedLightResultObject[key] = lightResultObject[key];
+        }
+        for (const key of sortedPublishKeys) {
+          sortedLightPublishResultObject[key] = lightPublishResultObject[key];
         }
         // Fix callout icon colors
         const fixedLightResultObject = fixCalloutIconColor(
           sortedLightResultObject,
         );
+        const fixedLightPublishResultObject = sortedLightPublishResultObject;
         await new Promise((resolve, reject) => {
           writeFile(
             lightFileName,
             JSON.stringify(fixedLightResultObject, null, 2),
+            (err) => {
+              if (err) reject(err);
+              else resolve();
+            },
+          );
+        });
+        await new Promise((resolve, reject) => {
+          writeFile(
+            lightPublishFileName,
+            JSON.stringify(fixedLightPublishResultObject, null, 2),
             (err) => {
               if (err) reject(err);
               else resolve();

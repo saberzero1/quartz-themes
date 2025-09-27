@@ -1487,6 +1487,18 @@ body {
   }
 
   :root {
+    --code-background: rgb(243, 236, 243);
+    --code-comment: rgb(108, 111, 133);
+    --code-function: rgb(228, 147, 32);
+    --code-important: rgb(249, 102, 50);
+    --code-keyword: rgb(215, 125, 146);
+    --code-normal: rgb(76, 79, 105);
+    --code-operator: rgb(240, 68, 114);
+    --code-property: rgb(23, 146, 153);
+    --code-punctuation: rgb(76, 79, 105);
+    --code-string: rgb(64, 155, 40);
+    --code-tag: rgb(240, 68, 114);
+    --code-value: rgb(176, 110, 201);
   }
 
   a.external {
@@ -1740,6 +1752,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: rgb(76, 79, 105);
+    --quartz-graph-node: rgb(76, 79, 105);
+    --quartz-graph-node-attachment: rgb(228, 147, 32);
+    --quartz-graph-node-focused: rgb(222, 149, 132);
+    --quartz-graph-node-tag: rgb(64, 155, 40);
+    --quartz-graph-node-unresolved: rgb(108, 111, 133);
+    --quartz-graph-text: rgb(76, 79, 105);
   }
 
   h1 {

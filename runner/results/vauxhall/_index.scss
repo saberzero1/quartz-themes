@@ -1415,6 +1415,30 @@ body {
   }
 
   :root {
+    --code-background: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 90%,
+      hsl(255, 100%, 50%)
+    );
+    --code-comment: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 60%,
+      hsl(255, 100%, 50%)
+    );
+    --code-function: #ffd85e;
+    --code-important: #fa9f50;
+    --code-keyword: #e54f9b;
+    --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
+    --code-operator: #e3365e;
+    --code-property: #3bb2ce;
+    --code-punctuation: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 30%,
+      hsl(255, 100%, 50%)
+    );
+    --code-string: #47cc91;
+    --code-tag: #e3365e;
+    --code-value: #9446f8;
   }
 
   a.external {
@@ -1620,6 +1644,25 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 95%,
+      hsl(255, 100%, 50%)
+    );
+    --quartz-graph-node: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 30%,
+      hsl(255, 100%, 50%)
+    );
+    --quartz-graph-node-attachment: #ffd85e;
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: #47cc91;
+    --quartz-graph-node-unresolved: color-mix(
+      in srgb,
+      hsl(238, 60%, 95%) 60%,
+      hsl(255, 100%, 50%)
+    );
+    --quartz-graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000);
   }
 
   h1 {
