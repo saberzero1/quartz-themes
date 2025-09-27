@@ -1360,6 +1360,18 @@ body {
   }
 
   :root {
+    --code-background: hsla(calc(204 + 6), calc(45% - 6%), calc(97% - 4%), 1);
+    --code-comment: hsla(217, 15%, 73%, 1);
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: hsla(218, 19%, 39%, 1);
+    --code-operator: hsla(365, 85%, 55%, 1);
+    --code-property: #00bfbc;
+    --code-punctuation: hsla(218, 19%, 39%, 1);
+    --code-string: #08b94e;
+    --code-tag: hsla(365, 85%, 55%, 1);
+    --code-value: #7852ee;
   }
 
   a.external {
@@ -1555,6 +1567,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: hsla(210, 15%, 73%, 1);
+    --quartz-graph-node: hsla(218, 19%, 39%, 1);
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(210, 93%, 62%);
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: hsla(217, 15%, 73%, 1);
+    --quartz-graph-text: hsla(0, 0%, 13%, 1);
   }
 
   h1 {

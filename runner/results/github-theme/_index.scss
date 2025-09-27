@@ -1369,6 +1369,18 @@ body {
   }
 
   :root {
+    --code-background: #f6f8fa;
+    --code-comment: #6e7781;
+    --code-function: #d96c00;
+    --code-important: #d96c00;
+    --code-keyword: #cf222e;
+    --code-normal: #57606a;
+    --code-operator: #cf222e;
+    --code-property: #086ddd;
+    --code-punctuation: #57606a;
+    --code-string: #2db7b5;
+    --code-tag: #cf222e;
+    --code-value: #876be0;
   }
 
   a.external {
@@ -1570,6 +1582,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #57606a;
+    --quartz-graph-node-attachment: #bd8e37;
+    --quartz-graph-node-focused: hsl(212, 92%, 45%);
+    --quartz-graph-node-tag: #0cb54f;
+    --quartz-graph-node-unresolved: #6e7781;
+    --quartz-graph-text: #24292f;
   }
 
   h1 {
@@ -1717,9 +1736,9 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-1 {
@@ -1727,9 +1746,9 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-2 {
@@ -1737,9 +1756,9 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-3 {
@@ -1747,9 +1766,9 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-4 {
@@ -1757,9 +1776,9 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   li.depth-5 {
@@ -1767,9 +1786,9 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-    margin-inline-start: 12px;
-    padding-inline-start: 4px;
+    border-inline-start: 0px none rgb(201, 209, 217);
+    margin-inline-start: 0px;
+    padding-inline-start: 32px;
   }
 
   ol > li {

@@ -1435,6 +1435,28 @@ body {
   }
 
   :root {
+    --code-background: oklch(
+      from
+        oklch(
+          from
+            oklch(
+              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+            )
+            80% calc(c * 0.4) h
+        )
+        85% c h / 50%
+    );
+    --code-comment: #ababab;
+    --code-function: oklch(from #ffeb3b 50% 30% h);
+    --code-important: oklch(from #ff9800 50% 30% h);
+    --code-keyword: #d53984;
+    --code-normal: #222222;
+    --code-operator: oklch(from #d32f2f 50% 30% h);
+    --code-property: oklch(from #00bcd4 50% 30% h);
+    --code-punctuation: #5c5c5c;
+    --code-string: oklch(from #4caf50 50% 30% h);
+    --code-tag: oklch(from #d32f2f 50% 30% h);
+    --code-value: oklch(from #673ab7 50% 30% h);
   }
 
   a.external {
@@ -1651,6 +1673,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #5c5c5c;
+    --quartz-graph-node-attachment: oklch(from #ffeb3b 50% 30% h);
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: oklch(from #4caf50 50% 30% h);
+    --quartz-graph-node-unresolved: #ababab;
+    --quartz-graph-text: #222222;
   }
 
   h1 {

@@ -1404,6 +1404,18 @@ body {
   }
 
   :root {
+    --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    --code-comment: hsl(232, 12%, 64%);
+    --code-function: rgb(192, 156, 12);
+    --code-important: rgb(222, 116, 23);
+    --code-keyword: rgb(221, 19, 153);
+    --code-normal: hsl(232, 9%, 36%);
+    --code-operator: rgb(221, 44, 56);
+    --code-property: rgb(22, 166, 171);
+    --code-punctuation: hsl(232, 9%, 36%);
+    --code-string: rgb(29, 165, 29);
+    --code-tag: rgb(221, 44, 56);
+    --code-value: rgb(143, 71, 225);
   }
 
   a.external {
@@ -1605,6 +1617,17 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: hsl(232, 9%, 36%);
+    --quartz-graph-node-attachment: rgb(192, 156, 12);
+    --quartz-graph-node-focused: hsl(
+      calc(232 - 1),
+      calc(96% * 1.01),
+      calc(60% * 1.075)
+    );
+    --quartz-graph-node-tag: rgb(29, 165, 29);
+    --quartz-graph-node-unresolved: hsl(232, 12%, 64%);
+    --quartz-graph-text: hsl(232, 6%, 12%);
   }
 
   h1 {
