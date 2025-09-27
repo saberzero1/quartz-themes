@@ -3921,6 +3921,16 @@
       "fonts": ["geist", "geist-mono"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "vermilion": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "vesnea-vibe": {
       "compatibility": ["checking"],
       "modes": ["dark", "light"],
