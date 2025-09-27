@@ -620,11 +620,11 @@
     "border-color": "color(srgb 0.01485 0.039975 0.07515)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
-    "color": "rgb(255, 255, 255)"
+    "color": "color(srgb 0.957425 0.969988 0.987575)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
     "background-color": "rgb(38, 102, 192)",
-    "color": "rgb(255, 255, 255)",
+    "color": "color(srgb 0.957425 0.969988 0.987575)",
     "font-weight": "400"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
@@ -640,12 +640,12 @@
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
     "background-color": "rgb(38, 102, 192)",
     "border-radius": "8px",
-    "color": "rgb(255, 255, 255)"
+    "color": "color(srgb 0.957425 0.969988 0.987575)"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
     "background-color": "rgb(38, 102, 192)",
     "border-radius": "8px",
-    "color": "rgb(255, 255, 255)"
+    "color": "color(srgb 0.957425 0.969988 0.987575)"
   },
   ".text-highlight": {
     "background-color": "rgba(255, 208, 0, 0.4)",
