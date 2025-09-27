@@ -1474,6 +1474,18 @@ body {
   }
 
   :root {
+    --code-background: oklch(62.5% 0 0 / 0.03);
+    --code-comment: oklch(71.5% 0.0105 281);
+    --code-function: rgb(233, 188, 0);
+    --code-important: rgb(255, 143, 0);
+    --code-keyword: rgb(225, 70, 147);
+    --code-normal: oklch(28.25% 0.0005 281);
+    --code-operator: rgb(240, 42, 28);
+    --code-property: rgb(4, 176, 167);
+    --code-punctuation: oklch(45% 0.0105 281);
+    --code-string: rgb(9, 180, 29);
+    --code-tag: rgb(240, 42, 28);
+    --code-value: rgb(178, 74, 236);
   }
 
   a.external {
@@ -1750,6 +1762,13 @@ body {
   }
 
   div.graph {
+    --quartz-graph-line: oklch(78.75% 0.0025 281);
+    --quartz-graph-node: oklch(45% 0.0105 281);
+    --quartz-graph-node-attachment: rgb(233, 188, 0);
+    --quartz-graph-node-focused: transparent;
+    --quartz-graph-node-tag: rgb(9, 180, 29);
+    --quartz-graph-node-unresolved: oklch(71.5% 0.0105 281);
+    --quartz-graph-text: oklch(28.25% 0.0005 281);
   }
 
   h1 {
