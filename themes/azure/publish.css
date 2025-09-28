@@ -414,7 +414,7 @@ body.theme-dark {
   --font-medium: 500;
   --font-mermaid: "Consolas", monospace;
   --font-monospace:
-    "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "??", "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -424,7 +424,7 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "Consolas", monospace;
   --font-normal: 400;
-  --font-print: "Consolas", monospace, "Consolas", monospace, "Arial";
+  --font-print: "??", "Consolas", monospace, "Consolas", monospace, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 16px;
@@ -514,7 +514,7 @@ body.theme-dark {
   --icon-color-active: hsl(calc(217 - 3), calc(100% * 1.02), calc(61% * 1.15));
   --icon-color-focused: hsl(217, 100%, 61%);
   --icon-color-hover: rgb(158, 158, 158);
-  --icon-hex: 0;
+  --icon-hex: 000;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -2191,7 +2191,7 @@ body.theme-light {
   --font-medium: 500;
   --font-mermaid: "Consolas", monospace;
   --font-monospace:
-    "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "??", "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2201,7 +2201,7 @@ body.theme-light {
   --font-monospace-override: "??";
   --font-monospace-theme: "Consolas", monospace;
   --font-normal: 400;
-  --font-print: "Consolas", monospace, "Consolas", monospace, "Arial";
+  --font-print: "??", "Consolas", monospace, "Consolas", monospace, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 16px;
@@ -2291,7 +2291,7 @@ body.theme-light {
   --icon-color-active: hsl(217, 100%, 61%);
   --icon-color-focused: hsl(217, 100%, 61%);
   --icon-color-hover: rgb(99, 99, 99);
-  --icon-hex: 0;
+  --icon-hex: 000;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;

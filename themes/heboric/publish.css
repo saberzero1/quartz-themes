@@ -367,7 +367,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "SF Pro", ui-sans-serif, sans-serif;
+  --file-header-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -385,15 +385,15 @@ body.theme-dark {
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "SF Pro", ui-sans-serif, sans-serif;
+  --font-interface: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "New York", "Georgia", ui-serif, serif;
+  --font-mermaid: "??", "??", "New York", "Georgia", ui-serif, serif;
   --font-monospace:
-    "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
-    Consolas, "DejaVu Sans Mono", monospace;
+    "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+    Menlo, Consolas, "DejaVu Sans Mono", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -401,13 +401,13 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "New York", "Georgia", ui-serif, serif;
+  --font-text: "??", "??", "New York", "Georgia", ui-serif, serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -612,7 +612,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font: "SF Pro", ui-sans-serif, sans-serif;
+  --metadata-input-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -620,7 +620,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
-  --metadata-label-font: "SF Pro", ui-sans-serif, sans-serif;
+  --metadata-label-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(221, 8%, 75%);
   --metadata-label-text-color-hover: hsl(221, 8%, 75%);
@@ -2066,7 +2066,7 @@ body.theme-light {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "SF Pro", ui-sans-serif, sans-serif;
+  --file-header-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2084,15 +2084,15 @@ body.theme-light {
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "SF Pro", ui-sans-serif, sans-serif;
+  --font-interface: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "New York", "Georgia", ui-serif, serif;
+  --font-mermaid: "??", "??", "New York", "Georgia", ui-serif, serif;
   --font-monospace:
-    "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
-    Consolas, "DejaVu Sans Mono", monospace;
+    "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+    Menlo, Consolas, "DejaVu Sans Mono", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -2100,13 +2100,13 @@ body.theme-light {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "New York", "Georgia", ui-serif, serif;
+  --font-text: "??", "??", "New York", "Georgia", ui-serif, serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2311,7 +2311,7 @@ body.theme-light {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font: "SF Pro", ui-sans-serif, sans-serif;
+  --metadata-input-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -2319,7 +2319,7 @@ body.theme-light {
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067);
   --metadata-label-background-hover: transparent;
-  --metadata-label-font: "SF Pro", ui-sans-serif, sans-serif;
+  --metadata-label-font: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #555555;
   --metadata-label-text-color-hover: #555555;

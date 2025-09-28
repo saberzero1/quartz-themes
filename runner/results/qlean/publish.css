@@ -2355,7 +2355,7 @@ body.theme-dark {
   --background-primary: #0a0a0a;
   --background-primary-alt: #262626;
   --background-secondary: #171717;
-  --background-secondary-alt: #404040;
+  --background-secondary-alt: #363636;
   --bases-cards-background: #0a0a0a;
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
@@ -2534,7 +2534,7 @@ body.theme-dark {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(0, 0%, 90%);
   --color-accent: hsl(0, 0%, 90%);
-  --color-accent-1: hsl(0, 0%, 90%);
+  --color-accent-1: hsl(calc(0 - 3), calc(0% * 1.02), calc(90% * 1.15));
   --color-accent-2: hsl(calc(0 - 5), calc(0% * 1.05), calc(90% * 1.29));
   --color-accent-h1: hsl(0, 0%, 90%);
   --color-accent-h2: hsl(0, 0%, 90%);
@@ -2641,7 +2641,7 @@ body.theme-dark {
   --drag-ghost-text-color: #fff;
   --dropdown-background: #363636;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(163 163 163 / 0.2);
+  --dropdown-background-hover: #3f3f3f;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -2656,8 +2656,8 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2721,8 +2721,8 @@ body.theme-dark {
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
   --font-interface:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-interface-override: "";
   --font-interface-theme: "??";
   --font-latex-size: 1em;
@@ -2739,7 +2739,7 @@ body.theme-dark {
   --font-monospace-theme: "??";
   --font-monospace-weight: 400;
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -2916,10 +2916,14 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(0, 0%, calc(90% - 10%));
-  --interactive-accent-hover: hsl(0, 0%, calc(90% - 5%));
+  --interactive-accent: hsl(0, 0%, 90%);
+  --interactive-accent-hover: hsl(
+    calc(0 - 3),
+    calc(0% * 1.02),
+    calc(90% * 1.15)
+  );
   --interactive-accent-hsl: 0, 0%, 90%;
-  --interactive-hover: rgb(163 163 163 / 0.2);
+  --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --keyboard-height: 0px;
   --layer-cover: 5;
@@ -2997,8 +3001,8 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -3007,8 +3011,8 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #737373;
   --metadata-label-text-color-hover: #737373;
@@ -3262,7 +3266,7 @@ body.theme-dark {
   --tag-padding-y: 0.25em;
   --tag-radius: 0em;
   --tag-size: 0.875em;
-  --text-accent: hsl(0, 0%, 90%);
+  --text-accent: hsl(calc(0 - 3), calc(0% * 1.02), calc(90% * 1.15));
   --text-accent-hover: #f5f5f5;
   --text-error: #fb464c;
   --text-faint: #666666;
@@ -3273,7 +3277,7 @@ body.theme-dark {
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-reversed: #0a0a0a;
-  --text-selection: rgb(163 163 163 / 0.2);
+  --text-selection: hsla(0, 0%, 90%, 0.33);
   --text-strong: #f5f5f5;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
@@ -4370,7 +4374,7 @@ body.theme-light {
   --background-primary: #fafafa;
   --background-primary-alt: #e5e5e5;
   --background-secondary: #f5f5f5;
-  --background-secondary-alt: #d4d4d4;
+  --background-secondary-alt: #fcfcfc;
   --bases-cards-background: #fafafa;
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
@@ -4549,7 +4553,7 @@ body.theme-light {
   --collapse-icon-color: #ababab;
   --collapse-icon-color-collapsed: hsl(0, 0%, 10%);
   --color-accent: hsl(0, 0%, 10%);
-  --color-accent-1: hsl(0, 0%, 10%);
+  --color-accent-1: hsl(calc(0 - 1), calc(0% * 1.01), calc(10% * 1.075));
   --color-accent-2: hsl(calc(0 - 3), calc(0% * 1.02), calc(10% * 1.15));
   --color-accent-h1: hsl(0, 0%, 10%);
   --color-accent-h2: hsl(0, 0%, 10%);
@@ -4671,8 +4675,8 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -4736,8 +4740,8 @@ body.theme-light {
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
   --font-interface:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-interface-override: "";
   --font-interface-theme: "??";
   --font-latex-size: 1em;
@@ -4754,7 +4758,7 @@ body.theme-light {
   --font-monospace-theme: "??";
   --font-monospace-weight: 400;
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -5012,8 +5016,8 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -5022,8 +5026,8 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
-    "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
+    "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #737373;
   --metadata-label-text-color-hover: #737373;

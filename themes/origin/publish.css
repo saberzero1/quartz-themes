@@ -173,7 +173,7 @@ body.theme-dark {
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(0, 0, 0, 0.78);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-error: rgb(255, 23, 68);
   --background-modifier-error-hover: rgb(255, 23, 68);
   --background-modifier-error-rgb: 255, 23, 68;
@@ -378,9 +378,9 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: left;
@@ -399,19 +399,19 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -421,16 +421,16 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -631,9 +631,9 @@ body.theme-dark {
   --metadata-input-background-active: #161616;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -642,9 +642,9 @@ body.theme-dark {
   --metadata-label-background-active: #161616;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #b3b3b3;
   --metadata-label-text-color-hover: #b3b3b3;
@@ -2023,7 +2023,7 @@ body.theme-light {
   --background-modifier-border-focus: #bdbdbd;
   --background-modifier-border-hover: rgb(250, 250, 250);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.78);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-modifier-error: rgb(255, 23, 68);
   --background-modifier-error-hover: rgb(255, 23, 68);
   --background-modifier-error-rgb: 255, 23, 68;
@@ -2228,9 +2228,9 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: left;
@@ -2249,19 +2249,19 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2271,16 +2271,16 @@ body.theme-light {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2476,9 +2476,9 @@ body.theme-light {
   --metadata-input-background-active: #f2f3f5;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -2487,9 +2487,9 @@ body.theme-light {
   --metadata-label-background-active: #f2f3f5;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
-    sans-serif;
+    "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic",
+    "Microsoft YaHei Light", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #888888;
   --metadata-label-text-color-hover: #888888;

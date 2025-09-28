@@ -88,7 +88,7 @@ body.theme-dark {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-accent: hsl(203, 8%, 0%);
   --background-modifier-active-hover: hsla(210, 77%, 51%, 0.1);
-  --background-modifier-border: rgba(255, 255, 255, 0.14);
+  --background-modifier-border: #323130;
   --background-modifier-border-focus: #535353;
   --background-modifier-border-hover: #363636;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -105,7 +105,7 @@ body.theme-dark {
   --background-primary: hsl(203, 8%, 20%);
   --background-primary-alt: hsl(203, 8%, 26%);
   --background-secondary: hsl(203, 8%, 23%);
-  --background-secondary-alt: hsl(203, 8%, 26%);
+  --background-secondary-alt: #21201e;
   --banner-size: 220px;
   --bases-cards-background: hsl(203, 8%, 20%);
   --bases-cards-border-width: 1px;
@@ -241,26 +241,26 @@ body.theme-dark {
   --color-base-50: #707070;
   --color-base-60: #5d5d5d;
   --color-base-70: #a0a0a0;
-  --color-blue: rgb(82, 156, 202);
-  --color-blue-rgb: 54, 73, 84;
-  --color-brown: rgb(147, 114, 100);
-  --color-brown-rgb: 67, 64, 64;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 29, 40, 46;
+  --color-brown: rgb(186, 133, 111);
+  --color-brown-rgb: 47, 39, 35;
   --color-cyan: rgb(51, 126, 169);
   --color-cyan-rgb: 29, 40, 46;
-  --color-gray: rgba(255, 255, 255, 0.6);
-  --color-gray-rgb: 69, 75, 78;
-  --color-green: rgb(77, 171, 154);
-  --color-green-rgb: 53, 76, 75;
-  --color-orange: rgb(255, 163, 68);
-  --color-orange-rgb: 89, 74, 58;
-  --color-pink: rgb(226, 85, 161);
-  --color-pink-rgb: 83, 59, 76;
-  --color-purple: rgb(154, 109, 215);
-  --color-purple-rgb: 68, 63, 87;
-  --color-red: rgb(255, 115, 105);
-  --color-red-rgb: 89, 65, 65;
-  --color-yellow: rgb(255, 220, 73);
-  --color-yellow-rgb: 89, 86, 59;
+  --color-gray: rgb(155, 155, 155);
+  --color-gray-rgb: 37, 37, 37;
+  --color-green: rgb(82, 158, 144);
+  --color-green-rgb: 34, 43, 38;
+  --color-orange: rgb(199, 125, 72);
+  --color-orange-rgb: 56, 40, 30;
+  --color-pink: rgb(209, 87, 150);
+  --color-pink-rgb: 48, 34, 40;
+  --color-purple: rgb(157, 104, 211);
+  --color-purple-rgb: 43, 36, 49;
+  --color-red: rgb(223, 84, 82);
+  --color-red-rgb: 54, 36, 34;
+  --color-yellow: rgb(202, 152, 73);
+  --color-yellow-rgb: 57, 46, 30;
   --cursor: default;
   --cursor-link: pointer;
   --custom-line-height: 1.5em;
@@ -275,9 +275,9 @@ body.theme-dark {
   --divider-width-hover: 3px;
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
-  --dropdown-background: #2a2a2a;
+  --dropdown-background: #21201e;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #303030;
+  --dropdown-background-hover: #363636;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -294,7 +294,7 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --file-header-font-size: 0.95em;
   --file-header-font-weight: 400;
@@ -313,7 +313,7 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface-override: "??";
   --font-interface-theme: "??";
@@ -322,13 +322,14 @@ body.theme-dark {
   --font-mermaid:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace: "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
+  --font-monospace:
+    "??", "??", "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-monospace-default:
     "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -472,12 +473,16 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: rgb(46, 170, 220);
-  --interactive-accent-hover: rgba(46, 170, 220, 0.8);
+  --interactive-accent: hsl(210, 77%, 51%);
+  --interactive-accent-hover: hsl(
+    calc(210 - 3),
+    calc(77% * 1.02),
+    calc(51% * 1.15)
+  );
   --interactive-accent-hsl: 210, 77%, 51%;
   --interactive-accent-rgb: 46, 170, 220;
-  --interactive-hover: #303030;
-  --interactive-normal: #2a2a2a;
+  --interactive-hover: #363636;
+  --interactive-normal: #21201e;
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -547,7 +552,7 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.04);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
@@ -557,7 +562,7 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.04);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgba(255, 255, 255, 0.7);
@@ -620,10 +625,10 @@ body.theme-dark {
   --page-margin: 1px auto -8px;
   --pdf-background: hsl(203, 8%, 20%);
   --pdf-page-background: hsl(203, 8%, 20%);
-  --pdf-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
+  --pdf-shadow: 0 0 0 1px #323130;
   --pdf-sidebar-background: hsl(203, 8%, 20%);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
+  --pdf-thumbnail-shadow: 0 0 0 1px #323130;
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
   --pill-background-hover: transparent;
@@ -822,11 +827,11 @@ body.theme-dark {
   --tag-padding-y: 0.25em;
   --tag-radius: 3px;
   --tag-size: 0.875em;
-  --text-accent: rgba(255, 255, 255, 0.45);
+  --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --text-accent-hover: rgba(255, 255, 255, 0.45);
   --text-error: rgb(255, 115, 105);
   --text-faint: rgba(255, 255, 255, 0.55);
-  --text-highlight-bg: rgb(89, 86, 59);
+  --text-highlight-bg: rgb(137, 99, 42);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='21' y1='6' x2='3' y2='6'%3E%3C/line%3E%3Cline x1='15' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='17' y1='18' x2='3' y2='18'%3E%3C/line%3E%3C/svg%3E");
   --text-muted: rgba(255, 255, 255, 0.7);
@@ -834,7 +839,7 @@ body.theme-dark {
   --text-on-accent: rgba(255, 255, 255, 0.9);
   --text-on-accent-inverted: black;
   --text-rgb: 255, 255, 255;
-  --text-selection: hsla(211, 100%, 50%, 0.2);
+  --text-selection: hsla(210, 77%, 51%, 0.33);
   --text-success: rgb(77, 171, 154);
   --text-warning: rgb(255, 163, 68);
   --titlebar-background: hsl(203, 8%, 23%);
@@ -1883,7 +1888,7 @@ body.theme-light {
   --background-primary: hsl(203, 8%, 100%);
   --background-primary-alt: hsl(203, 8%, 90%);
   --background-secondary: hsl(203, 8%, 96%);
-  --background-secondary-alt: hsl(203, 8%, 90%);
+  --background-secondary-alt: #fbfbfa;
   --banner-size: 220px;
   --bases-cards-background: hsl(203, 8%, 100%);
   --bases-cards-border-width: 1px;
@@ -2019,25 +2024,25 @@ body.theme-light {
   --color-base-50: #a3a29e;
   --color-base-60: #7b7b7b;
   --color-base-70: #737272;
-  --color-blue: rgb(11, 110, 153);
-  --color-blue-rgb: 221, 235, 241;
-  --color-brown: rgb(100, 71, 58);
-  --color-brown-rgb: 233, 229, 227;
+  --color-blue: rgb(51, 126, 169);
+  --color-blue-rgb: 231, 243, 248;
+  --color-brown: rgb(159, 107, 83);
+  --color-brown-rgb: 244, 238, 238;
   --color-cyan: rgb(51, 126, 169);
   --color-cyan-rgb: 231, 243, 248;
-  --color-gray: rgba(55, 53, 47, 0.6);
-  --color-gray-rgb: 235, 236, 237;
-  --color-green: rgb(15, 123, 108);
-  --color-green-rgb: 221, 237, 234;
+  --color-gray: rgb(120, 119, 116);
+  --color-gray-rgb: 241, 241, 239;
+  --color-green: rgb(68, 131, 97);
+  --color-green-rgb: 237, 243, 236;
   --color-orange: rgb(217, 115, 13);
-  --color-orange-rgb: 250, 235, 221;
-  --color-pink: rgb(173, 26, 114);
-  --color-pink-rgb: 244, 223, 235;
-  --color-purple: rgb(105, 64, 165);
-  --color-purple-rgb: 234, 228, 242;
-  --color-red: rgb(224, 62, 62);
-  --color-red-rgb: 251, 228, 228;
-  --color-yellow: rgb(223, 171, 1);
+  --color-orange-rgb: 251, 236, 221;
+  --color-pink: rgb(193, 76, 138);
+  --color-pink-rgb: 249, 238, 243, 0.8;
+  --color-purple: rgb(144, 101, 176);
+  --color-purple-rgb: 244, 240, 247, 0.8;
+  --color-red: rgb(212, 76, 71);
+  --color-red-rgb: 253, 235, 236;
+  --color-yellow: rgb(203, 145, 47);
   --color-yellow-rgb: 251, 243, 219;
   --cursor: default;
   --cursor-link: pointer;
@@ -2071,7 +2076,7 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --file-header-font-size: 0.95em;
   --file-header-font-weight: 400;
@@ -2090,7 +2095,7 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-interface-override: "??";
   --font-interface-theme: "??";
@@ -2099,13 +2104,14 @@ body.theme-light {
   --font-mermaid:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace: "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
+  --font-monospace:
+    "??", "??", "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-monospace-default:
     "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
@@ -2324,7 +2330,7 @@ body.theme-light {
   --metadata-input-background-active: hsl(60, 3%, 0%, 4%);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
@@ -2334,7 +2340,7 @@ body.theme-light {
   --metadata-label-background-active: hsl(60, 3%, 0%, 4%);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgba(55, 53, 47, 0.7);
@@ -2604,7 +2610,7 @@ body.theme-light {
   --text-accent-hover: rgba(55, 53, 47, 0.45);
   --text-error: rgb(224, 62, 62);
   --text-faint: rgba(55, 53, 47, 0.55);
-  --text-highlight-bg: rgb(251, 243, 219);
+  --text-highlight-bg: rgb(253, 236, 200);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='21' y1='6' x2='3' y2='6'%3E%3C/line%3E%3Cline x1='15' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='17' y1='18' x2='3' y2='18'%3E%3C/line%3E%3C/svg%3E");
   --text-muted: rgba(55, 53, 47, 0.7);

@@ -171,7 +171,7 @@ body.theme-dark {
   --background-modifier-error: #ff8484;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #1a2331;
+  --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: #1a2331;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-message: #141d2b;
@@ -318,11 +318,11 @@ body.theme-dark {
   --color-base-10: #242424;
   --color-base-100: #dadada;
   --color-base-20: #262626;
-  --color-base-25: #1a2331;
+  --color-base-25: #2a2a2a;
   --color-base-30: #363636;
-  --color-base-35: transparent;
-  --color-base-40: transparent;
-  --color-base-50: #cad2e2;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
   --color-blue: #027aff;
@@ -354,9 +354,9 @@ body.theme-dark {
   --divider-width-hover: 3px;
   --drag-ghost-background: #9fef00;
   --drag-ghost-text-color: black;
-  --dropdown-background: #4a5466;
+  --dropdown-background: #363636;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: transparent;
+  --dropdown-background-hover: #3f3f3f;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -372,9 +372,9 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 2px solid transparent;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -393,19 +393,19 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -415,16 +415,16 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -563,8 +563,8 @@ body.theme-dark {
     calc(47% * 1.15)
   );
   --interactive-accent-hsl: 80, 100%, 47%;
-  --interactive-hover: transparent;
-  --interactive-normal: #4a5466;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -631,9 +631,9 @@ body.theme-dark {
   --metadata-input-background-active: #1a2331;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -642,9 +642,9 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #cad2e2;
   --metadata-label-text-color-hover: #a4b1cd;
@@ -916,7 +916,7 @@ body.theme-dark {
   --text-normal: #a4b1cd;
   --text-on-accent: #141d2b;
   --text-on-accent-inverted: black;
-  --text-selection: #9fef00;
+  --text-selection: hsla(80, 100%, 47%, 0.33);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #1a2331;
@@ -1574,9 +1574,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1599,9 +1599,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1622,9 +1622,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1643,9 +1643,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1662,17 +1662,17 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(164, 177, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
