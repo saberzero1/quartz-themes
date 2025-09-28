@@ -19,7 +19,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 
 let testingMode = false;
 //testingMode = true;
-const testingTheme = "Apatheia";
+const testingTheme = "Catppuccin";
 
 const manifestCollection = testingMode
   ? getManifestCollection().filter(
@@ -39,7 +39,9 @@ describe("Quartz Theme Style Extraction", () => {
         //app.customCss.setTheme(theme);
         const rules = targets.selectors;
 
-        await sleep(1000); // Wait for the file to open and styles to apply
+        await sleep(300); // Wait for the file to open and styles to apply
+        app.workspace.trigger("parse-style-settings");
+        await sleep(700);
         rules.forEach((rule) => {
           const containerSelector =
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content > div.markdown-reading-view > div.markdown-preview-view";
@@ -63,14 +65,14 @@ describe("Quartz Theme Style Extraction", () => {
             // Skip properties that are not set
             if (rule.quartzSelector) {
               computedStyles[rule.quartzSelector][prop] =
-                style.getPropertyValue(prop)
-                  ? style.getPropertyValue(prop).toString().trim()
+                element.getCssPropertyValue(prop)
+                  ? element.getCssPropertyValue(prop)
                   : "unset";
             }
             if (rule.publishSelector) {
               computedPublishStyles[rule.publishSelector][prop] =
-                style.getPropertyValue(prop)
-                  ? style.getPropertyValue(prop).toString().trim()
+                element.getCssPropertyValue(prop)
+                  ? element.getCssPropertyValue(prop)
                   : "unset";
             }
           }
@@ -97,11 +99,10 @@ describe("Quartz Theme Style Extraction", () => {
         if (centerElement) {
           const centerStyle = getComputedStyle(centerElement);
           computedStyles[`.page > #quartz-body`] = {
-            "background-color": centerStyle.getPropertyValue("background-color")
-              ? centerStyle
-                  .getPropertyValue("background-color")
-                  .toString()
-                  .trim()
+            "background-color": centerElement.getCssPropertyValue(
+              "background-color",
+            )
+              ? centerElement.getCssPropertyValue("background-color")
               : "unset",
           };
         }
@@ -113,34 +114,24 @@ describe("Quartz Theme Style Extraction", () => {
           const borderStyle = getComputedStyle(borderElement);
           const centerStyle = getComputedStyle(centerElement);
           computedStyles[`.popover .popover-inner`] = {
-            "border-color": borderStyle.getPropertyValue("border-color")
-              ? borderStyle
-                  .getPropertyValue("border-left-color")
-                  .toString()
-                  .trim()
+            "border-color": borderElement.getCssPropertyValue("border-color")
+              ? borderElement.getCssPropertyValue("border-left-color")
               : "unset",
-            "background-color": centerStyle.getPropertyValue("background-color")
-              ? centerStyle
-                  .getPropertyValue("background-color")
-                  .toString()
-                  .trim()
+            "background-color": centerElement.getCssPropertyValue(
+              "background-color",
+            )
+              ? centerElement.getCssPropertyValue("background-color")
               : "unset",
           };
           computedStyles[`.graph .graph-outer`] = {
-            "border-color": borderStyle.getPropertyValue("border-color")
-              ? borderStyle
-                  .getPropertyValue("border-left-color")
-                  .toString()
-                  .trim()
+            "border-color": borderElement.getCssPropertyValue("border-color")
+              ? borderElement.getCssPropertyValue("border-left-color")
               : "unset",
           };
           computedStyles[`.graph>.global-graph-outer>.global-graph-container`] =
             {
-              "border-color": borderStyle.getPropertyValue("border-color")
-                ? borderStyle
-                    .getPropertyValue("border-left-color")
-                    .toString()
-                    .trim()
+              "border-color": borderElement.getCssPropertyValue("border-color")
+                ? borderElement.getCssPropertyValue("border-left-color")
                 : "unset",
               "background-color": "transparent",
             };
@@ -159,41 +150,31 @@ describe("Quartz Theme Style Extraction", () => {
           const leftSidebarStyle = getComputedStyle(leftSidebar);
           const borderStyle = getComputedStyle(borderElement);
           computedStyles[`.page > #quartz-body .left.sidebar`] = {
-            "background-color": leftSidebarStyle.getPropertyValue(
+            "background-color": leftSidebar.getCssPropertyValue(
               "background-color",
             )
-              ? leftSidebarStyle
-                  .getPropertyValue("background-color")
-                  .toString()
-                  .trim()
+              ? leftSidebar.getCssPropertyValue("background-color")
               : "unset",
-            "border-color": borderStyle.getPropertyValue("border-right-color")
-              ? borderStyle
-                  .getPropertyValue("border-right-color")
-                  .toString()
-                  .trim()
+            "border-color": borderElement.getCssPropertyValue(
+              "border-right-color",
+            )
+              ? borderElement.getCssPropertyValue("border-right-color")
               : "inherit",
             "border-right-width": "1px",
           };
           computedStyles[`.page > #quartz-body .sidebar.left:has(.explorer)`] =
             {
-              "background-color": leftSidebarStyle.getPropertyValue(
+              "background-color": leftSidebar.getCssPropertyValue(
                 "background-color",
               )
-                ? leftSidebarStyle
-                    .getPropertyValue("background-color")
-                    .toString()
-                    .trim()
+                ? leftSidebar.getCssPropertyValue("background-color")
                 : "unset",
             };
           computedStyles[`.explorer .explorer-content`] = {
-            "background-color": leftSidebarStyle.getPropertyValue(
+            "background-color": leftSidebar.getCssPropertyValue(
               "background-color",
             )
-              ? leftSidebarStyle
-                  .getPropertyValue("background-color")
-                  .toString()
-                  .trim()
+              ? leftSidebar.getCssPropertyValue("background-color")
               : "unset",
           };
         }
@@ -206,19 +187,15 @@ describe("Quartz Theme Style Extraction", () => {
           const rightSidebarStyle = getComputedStyle(rightSidebar);
           const borderStyle = getComputedStyle(borderElement);
           computedStyles[`.page > #quartz-body .right.sidebar`] = {
-            "background-color": rightSidebarStyle.getPropertyValue(
+            "background-color": rightSidebar.getCssPropertyValue(
               "background-color",
             )
-              ? rightSidebarStyle
-                  .getPropertyValue("background-color")
-                  .toString()
-                  .trim()
+              ? rightSidebar.getCssPropertyValue("background-color")
               : "unset",
-            "border-color": borderStyle.getPropertyValue("border-left-color")
-              ? borderStyle
-                  .getPropertyValue("border-right-color")
-                  .toString()
-                  .trim()
+            "border-color": borderElement.getCssPropertyValue(
+              "border-left-color",
+            )
+              ? borderElement.getCssPropertyValue("border-right-color")
               : "inherit",
             "border-left-width": "1px",
           };
@@ -229,14 +206,10 @@ describe("Quartz Theme Style Extraction", () => {
           const leftSidebarStyle = getComputedStyle(leftSidebar);
           const rightSidebarStyle = getComputedStyle(rightSidebar);
           const centerStyle = getComputedStyle(centerElement);
-          const leftSidebarColor = leftSidebarStyle
-            .getPropertyValue("background-color")
-            .toString()
-            .trim();
-          const rightSidebarColor = rightSidebarStyle
-            .getPropertyValue("background-color")
-            .toString()
-            .trim();
+          const leftSidebarColor =
+            leftSidebar.getCssPropertyValue("background-color");
+          const rightSidebarColor =
+            rightSidebar.getCssPropertyValue("background-color");
           backgroundGradient =
             leftSidebarColor === rightSidebarColor
               ? leftSidebarColor
@@ -248,8 +221,8 @@ describe("Quartz Theme Style Extraction", () => {
               .toString()
               .trim(),
             */
-            color: centerStyle.getPropertyValue("color")
-              ? `${centerStyle.getPropertyValue("color").toString().trim()}`
+            color: centerElement.getCssPropertyValue("color")
+              ? `${centerElement.getCssPropertyValue("color")}`
               : "unset",
             background: `${backgroundGradient}`,
           };
@@ -258,6 +231,13 @@ describe("Quartz Theme Style Extraction", () => {
         const bodyVariablesElement = document
           .getRootNode()
           .querySelector("body");
+        const styleSettingsElement = isDark
+          ? document
+              .getRootNode()
+              .querySelector(".theme-dark.style-settings-ref")
+          : document
+              .getRootNode()
+              .querySelector(".theme-light.style-settings-ref");
         if (bodyVariablesElement) {
           const bodyStyle = getComputedStyle(bodyVariablesElement);
           const variablesToExtract = [
@@ -289,10 +269,8 @@ describe("Quartz Theme Style Extraction", () => {
 
           computedStyles[`:root`] = {};
           variablesToExtract.forEach((variable) => {
-            computedStyles[`:root`][variable] = bodyStyle
-              .getPropertyValue(variable)
-              .toString()
-              .trim();
+            computedStyles[`:root`][variable] =
+              bodyVariablesElement.getCssPropertyValue(variable);
           });
           // TODO: fix this to actually extract '--variables'. It currently does not do that at all
           computedPublishStyles[
@@ -302,9 +280,19 @@ describe("Quartz Theme Style Extraction", () => {
             if (property && property.startsWith("--")) {
               computedPublishStyles[
                 `${isDark ? "&.theme-dark" : "&.theme-light"}`
-              ][property] = value[0][0].toString().trim();
+              ][property] = bodyVariablesElement.getCssPropertyValue(property);
             }
           });
+          styleSettingsElement
+            ?.computedStyleMap()
+            .forEach((value, property) => {
+              if (property && property.startsWith("--")) {
+                computedPublishStyles[
+                  `${isDark ? "&.theme-dark" : "&.theme-light"}`
+                ][property] =
+                  styleSettingsElement.getCssPropertyValue(property);
+              }
+            });
           /*
           for (let i = 1; i <= bodyStyle.length; i++) {
             const propertyName = bodyStyle[i];
@@ -408,9 +396,9 @@ describe("Quartz Theme Style Extraction", () => {
       it(`should extract styles for theme: ${theme} in dark mode`, async () => {
         const darkPage = browser.getObsidianPage();
         await darkPage.resetVault();
+        await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-dark");
         await darkPage.setTheme(theme);
-        await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidian(({ app }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -419,9 +407,13 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await darkPage.enablePlugin("obsidian-style-settings");
+        await darkPage.enablePlugin("obsidian-view-mode-by-frontmatter");
+        await darkPage.enablePlugin("dataview");
         await sleep(500);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
+        await sleep(100);
         [darkResult.general, darkPublishResult.general] = await getStyles(
           configuration.general,
           true,
@@ -429,6 +421,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await darkPage.openFile("headings.md");
         await darkPage.openFile("headings.md");
+        await sleep(100);
         [darkResult.headings, darkPublishResult.headings] = await getStyles(
           configuration.headings,
           false,
@@ -436,6 +429,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await darkPage.openFile("callouts.md");
         await darkPage.openFile("callouts.md");
+        await sleep(100);
         [darkResult.callouts, darkPublishResult.callouts] = await getStyles(
           configuration.callouts,
           false,
@@ -443,6 +437,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await darkPage.openFile("integrations.md");
         await darkPage.openFile("integrations.md");
+        await sleep(100);
         [darkResult.integrations, darkPublishResult.integrations] =
           await getStyles(
             configuration.integrations,
@@ -516,9 +511,9 @@ describe("Quartz Theme Style Extraction", () => {
       it(`should extract styles for theme: ${theme} in light mode`, async () => {
         const lightPage = browser.getObsidianPage();
         await lightPage.resetVault();
+        await lightPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-light");
         await lightPage.setTheme(theme);
-        await lightPage.loadWorkspaceLayout("default");
         await browser.executeObsidian(({ app }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -527,9 +522,13 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
+        await lightPage.enablePlugin("obsidian-style-settings");
+        await lightPage.enablePlugin("obsidian-view-mode-by-frontmatter");
+        await lightPage.enablePlugin("dataview");
         await sleep(500);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
+        await sleep(100);
         [lightResult.general, lightPublishResult.general] = await getStyles(
           configuration.general,
           true,
@@ -537,6 +536,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await lightPage.openFile("headings.md");
         await lightPage.openFile("headings.md");
+        await sleep(100);
         [lightResult.headings, lightPublishResult.headings] = await getStyles(
           configuration.headings,
           false,
@@ -544,6 +544,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await lightPage.openFile("callouts.md");
         await lightPage.openFile("callouts.md");
+        await sleep(100);
         [lightResult.callouts, lightPublishResult.callouts] = await getStyles(
           configuration.callouts,
           false,
@@ -551,6 +552,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
         await lightPage.openFile("integrations.md");
         await lightPage.openFile("integrations.md");
+        await sleep(100);
         [lightResult.integrations, lightPublishResult.integrations] =
           await getStyles(configuration.integrations, false, false);
         await sleep(500);
