@@ -60,6 +60,14 @@ And add the following lines to your `deploy.yml` before the `build` step:
 >   THEME_NAME: tokyo-night
 > ```
 
+> [!TIP]
+> To use an older iteration of Quartz Themes, please use the `action_v*.sh` script instead. For example, to use version 1, use:
+>
+> ```yaml
+> - name: Fetch Quartz Theme
+>   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action_v1.sh | bash -s -- $THEME_NAME
+> ```
+
 The full script would look like this:
 
 ```yaml
