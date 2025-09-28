@@ -7276,7 +7276,7 @@ body.theme-dark {
   --cloze-decoration-color: red;
   --cloze-decoration-color-2: hsl(208, 64%, 49%);
   --cloze-decoration-color-3: hsl(208, 64%, 49%);
-  --code-active-line-background-color: #111111eb;
+  --code-active-line-background-color: hsla(208, 64%, 49%, 0.05);
   --code-atom: #da904b;
   --code-attribute: #cac685;
   --code-attribute-in-comment: #c792ea;
@@ -7300,7 +7300,7 @@ body.theme-dark {
   --code-link: #696d70;
   --code-matching-bracket: #ffffff;
   --code-meta: #ffcb6b;
-  --code-normal: #ebdbb2;
+  --code-normal: #d0d0d0;
   --code-number: #ff5370;
   --code-operator: #a89984;
   --code-property: #a0c7e9;
@@ -7422,9 +7422,9 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -7449,16 +7449,16 @@ body.theme-dark {
     "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
     "Segoe UI Emoji", sans-serif;
   --font-family-inline-code:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
+    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
+    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
+    "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-list: ;
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", "??", "??", "??",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
   --font-family-tag:
     Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
@@ -7466,9 +7466,9 @@ body.theme-dark {
   --font-family-title: ;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
@@ -7478,16 +7478,16 @@ body.theme-dark {
     "Source Code Pro", monospace;
   --font-medium: 500;
   --font-mermaid:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-monospace:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
-    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-    "Consolas", "Source Code Pro", monospace;
+    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
+    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
+    "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
+    SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -7499,7 +7499,7 @@ body.theme-dark {
     "Source Code Pro", monospace;
   --font-normal: 400;
   --font-print:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
@@ -7531,7 +7531,7 @@ body.theme-dark {
   --font-smallest: 0.8em;
   --font-style-em: italic;
   --font-text:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -7595,7 +7595,7 @@ body.theme-dark {
   --h1-bg-color: color-mix(in srgb, hsl(78, 62%, 47%) 15%, transparent);
   --h1-color: hsl(78, 62%, 47%);
   --h1-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -7610,7 +7610,7 @@ body.theme-dark {
   --h2-bg-color: color-mix(in srgb, hsl(118, 42%, 49%) 15%, transparent);
   --h2-color: hsl(118, 42%, 49%);
   --h2-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -7625,7 +7625,7 @@ body.theme-dark {
   --h3-bg-color: color-mix(in srgb, hsl(180, 53%, 48%) 15%, transparent);
   --h3-color: hsl(180, 53%, 48%);
   --h3-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -7640,7 +7640,7 @@ body.theme-dark {
   --h4-bg-color: color-mix(in srgb, hsl(216, 69%, 68%) 15%, transparent);
   --h4-color: hsl(216, 69%, 68%);
   --h4-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -7733,7 +7733,7 @@ body.theme-dark {
   );
   --inline-title-color: hsl(78, 62%, 47%);
   --inline-title-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -7857,7 +7857,7 @@ body.theme-dark {
   --loading-icon-delay: 400ms;
   --loading-page-custom-gif-caption: " ";
   --loading-page-custom-gif-caption-alt: " ";
-  --loading-page-custom-gif-url: url(https\:\/\/);
+  --loading-page-custom-gif-url: url(https://);
   --loading-text-after: "✿❀";
   --loading-text-before: "❀✿";
   --mark-highlight-strong-em: #fff7603a;
@@ -7894,9 +7894,9 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -7905,9 +7905,9 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #8a8a8a;
   --metadata-label-text-color-hover: #8a8a8a;
@@ -10346,9 +10346,9 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -10373,16 +10373,16 @@ body.theme-light {
     "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
     "Segoe UI Emoji", sans-serif;
   --font-family-inline-code:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
+    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
+    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
+    "Microsoft YaHei", "Source Code Pro", monospace;
   --font-family-list: ;
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", "??", "??", "??",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
   --font-family-tag:
     Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
@@ -10390,9 +10390,9 @@ body.theme-light {
   --font-family-title: ;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
@@ -10402,16 +10402,16 @@ body.theme-light {
     "Source Code Pro", monospace;
   --font-medium: 500;
   --font-mermaid:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-monospace:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
-    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-    "Consolas", "Source Code Pro", monospace;
+    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
+    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
+    "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
+    SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -10423,7 +10423,7 @@ body.theme-light {
     "Source Code Pro", monospace;
   --font-normal: 400;
   --font-print:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
@@ -10455,7 +10455,7 @@ body.theme-light {
   --font-smallest: 0.8em;
   --font-style-em: italic;
   --font-text:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -10523,7 +10523,7 @@ body.theme-light {
   --h1-bg-color: color-mix(in srgb, hsl(216, 88%, 26%) 15%, transparent);
   --h1-color: hsl(216, 88%, 26%);
   --h1-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -10538,7 +10538,7 @@ body.theme-light {
   --h2-bg-color: color-mix(in srgb, hsl(212, 100%, 33%) 15%, transparent);
   --h2-color: hsl(212, 100%, 33%);
   --h2-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -10553,7 +10553,7 @@ body.theme-light {
   --h3-bg-color: color-mix(in srgb, hsl(210, 86%, 39%) 15%, transparent);
   --h3-color: hsl(210, 86%, 39%);
   --h3-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -10568,7 +10568,7 @@ body.theme-light {
   --h4-bg-color: color-mix(in srgb, hsl(208, 58%, 49%) 15%, transparent);
   --h4-color: hsl(208, 58%, 49%);
   --h4-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -10685,7 +10685,7 @@ body.theme-light {
   );
   --inline-title-color: hsl(216, 88%, 26%);
   --inline-title-font:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
@@ -10807,7 +10807,7 @@ body.theme-light {
   --loading-icon-delay: 400ms;
   --loading-page-custom-gif-caption: " ";
   --loading-page-custom-gif-caption-alt: " ";
-  --loading-page-custom-gif-url: url(https\:\/\/);
+  --loading-page-custom-gif-url: url(https://);
   --loading-text-after: "✿❀";
   --loading-text-before: "❀✿";
   --mark-highlight-strong-em: #ff880049;
@@ -10844,9 +10844,9 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -10855,9 +10855,9 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #7f7f7f;
   --metadata-label-text-color-hover: #7f7f7f;

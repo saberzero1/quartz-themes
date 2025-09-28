@@ -160,7 +160,7 @@ body.theme-dark {
   --background-modifier-error: hsl(4, 74%, 74%);
   --background-modifier-error-hover: hsl(4, 74%, 74%);
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: hsl(0, 0%, 8%);
+  --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: hsl(0, 0%, 8%);
   --background-modifier-hover: hsla(271, 48%, 21%, 90%);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
@@ -172,7 +172,7 @@ body.theme-dark {
   --background-primary-blur: hsl(0, 0%, 18%, 80%);
   --background-primary-hsl: 0, 0%, 18%;
   --background-secondary: hsl(0, 0%, 12%);
-  --background-secondary-alt: hsl(0, 0%, 8%);
+  --background-secondary-alt: #363636;
   --background-secondary-alt-blur: hsla(0, 0%, 8%, 80%);
   --background-secondary-alt-hsl: 0, 0%, 8%;
   --background-secondary-blur: hsla(0, 0%, 13%, 80%);
@@ -302,12 +302,12 @@ body.theme-dark {
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(0, 0%, 81%);
   --collapse-icon-color-collapsed: hsl(0, 0%, 91%);
-  --color-accent: hsl(267, 52%, 75%);
-  --color-accent-1: hsl(271, 43%, 51%);
-  --color-accent-2: hsl(271, 48%, 21%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --color-accent-base-dt: 2, 55%, 19%;
   --color-accent-base-lt: 2, 55%, 19%;
-  --color-accent-hsl: 267, 52%, 75%;
+  --color-accent-hsl: 258, 88%, 66%;
   --color-accent-text-dt: 4, 74%, 74%;
   --color-accent-text-lt: 4, 74%, 74%;
   --color-accent-tint-dt: 3, 49%, 46%;
@@ -324,7 +324,7 @@ body.theme-dark {
   --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
-  --color-blue: hsl(225, 61%, 75%);
+  --color-blue: #027aff;
   --color-blue-base: hsl(225, 50%, 20%);
   --color-blue-base-hsl: 225, 50%, 20%;
   --color-blue-rgb: 2, 122, 255;
@@ -332,7 +332,7 @@ body.theme-dark {
   --color-blue-text-hsl: 225, 61%, 75%;
   --color-blue-tint: hsl(224, 44%, 49%);
   --color-blue-tint-hsl: 224, 44%, 49%;
-  --color-cyan: hsl(195, 69%, 58%);
+  --color-cyan: #53dfdd;
   --color-cyan-base: hsl(195, 65%, 13%);
   --color-cyan-base-hsl: 195, 65%, 13%;
   --color-cyan-rgb: 83, 223, 221;
@@ -340,7 +340,7 @@ body.theme-dark {
   --color-cyan-text-hsl: 195, 69%, 58%;
   --color-cyan-tint: hsl(195, 52%, 34%);
   --color-cyan-tint-hsl: 195, 52%, 34%;
-  --color-green: hsl(124, 48%, 54%);
+  --color-green: #44cf6e;
   --color-green-base: hsl(124, 54%, 12%);
   --color-green-base-hsl: 124, 54%, 12%;
   --color-green-rgb: 68, 207, 110;
@@ -360,7 +360,7 @@ body.theme-dark {
   --color-mint-text-hsl: 166, 67%, 45%;
   --color-mint-tint: hsl(166, 73%, 26%);
   --color-mint-tint-hsl: 166, 73%, 26%;
-  --color-orange: hsl(26, 85%, 63%);
+  --color-orange: #e9973f;
   --color-orange-base: hsl(26, 65%, 15%);
   --color-orange-base-hsl: 26, 65%, 15%;
   --color-orange-rgb: 233, 151, 63;
@@ -368,7 +368,7 @@ body.theme-dark {
   --color-orange-text-hsl: 26, 85%, 63%;
   --color-orange-tint: hsl(27, 53%, 37%);
   --color-orange-tint-hsl: 27, 53%, 37%;
-  --color-pink: hsl(330, 64%, 74%);
+  --color-pink: #fa99cd;
   --color-pink-base: hsl(325, 55%, 18%);
   --color-pink-base-hsl: 325, 55%, 18%;
   --color-pink-rgb: 250, 153, 205;
@@ -376,7 +376,7 @@ body.theme-dark {
   --color-pink-text-hsl: 330, 64%, 74%;
   --color-pink-tint: hsl(325, 47%, 45%);
   --color-pink-tint-hsl: 325, 47%, 45%;
-  --color-purple: hsl(267, 52%, 75%);
+  --color-purple: #a882ff;
   --color-purple-base: hsl(271, 48%, 21%);
   --color-purple-base-hsl: 271, 48%, 21%;
   --color-purple-rgb: 168, 130, 255;
@@ -384,7 +384,7 @@ body.theme-dark {
   --color-purple-text-hsl: 267, 52%, 75%;
   --color-purple-tint: hsl(271, 43%, 51%);
   --color-purple-tint-hsl: 271, 43%, 51%;
-  --color-red: hsl(4, 74%, 74%);
+  --color-red: #fb464c;
   --color-red-base: hsl(2, 55%, 19%);
   --color-red-base-hsl: 2, 55%, 19%;
   --color-red-rgb: 251, 70, 76;
@@ -392,7 +392,7 @@ body.theme-dark {
   --color-red-text-hsl: 4, 74%, 74%;
   --color-red-tint: hsl(3, 49%, 46%);
   --color-red-tint-hsl: 3, 49%, 46%;
-  --color-yellow: hsl(44, 60%, 53%);
+  --color-yellow: #e0de71;
   --color-yellow-base: hsl(43, 73%, 12%);
   --color-yellow-base-hsl: 43, 73%, 12%;
   --color-yellow-rgb: 224, 222, 113;
@@ -414,9 +414,9 @@ body.theme-dark {
   --divider-width-hover: 3px;
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: hsl(0, 0%, 91%);
-  --dropdown-background: hsl(0, 0%, 12%);
+  --dropdown-background: #363636;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: hsl(0, 0%, 18%);
+  --dropdown-background-hover: #3f3f3f;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -433,9 +433,9 @@ body.theme-dark {
   --file-folding-offset: 20px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 15px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -454,19 +454,19 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "Source Sans 3";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -476,14 +476,14 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "JetBrains Mono";
   --font-normal: 400;
-  --font-print: "Source Sans 3", "Arial";
+  --font-print: "??", "??", "Source Sans 3", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
@@ -616,17 +616,29 @@ body.theme-dark {
   --input-padding: 4px 8px;
   --input-placeholder-color: hsl(0, 0%, 81%);
   --input-radius: 4px;
-  --interactive-accent: hsl(271, 43%, 51%);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(258, 88%, 66%);
   --interactive-accent-base: hsl(271, 48%, 21%);
   --interactive-accent-base-hsl: 271, 48%, 21%;
-  --interactive-accent-hover: hsl(271, 43%, 51%);
+  --interactive-accent-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  );
   --interactive-accent-hsl: 267, 52%, 75%;
   --interactive-accent-text: hsl(267, 52%, 75%);
   --interactive-accent-text-hsl: 267, 52%, 75%;
   --interactive-accent-tint: hsl(271, 43%, 51%);
   --interactive-accent-tint-hsl: 271, 43%, 51%;
-  --interactive-hover: hsl(0, 0%, 18%);
-  --interactive-normal: hsl(0, 0%, 12%);
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
   --italic-color: hsl(0, 0%, 91%);
   --keyboard-height: 0px;
   --layer-cover: 5;
@@ -696,9 +708,9 @@ body.theme-dark {
   --metadata-input-background-active: hsl(0, 0%, 12%);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -707,9 +719,9 @@ body.theme-dark {
   --metadata-label-background-active: hsl(0, 0%, 12%);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(0, 0%, 86%);
   --metadata-label-text-color-hover: hsl(0, 0%, 86%);
@@ -962,7 +974,7 @@ body.theme-dark {
   --tag-padding-y: 0;
   --tag-radius: 4px;
   --tag-size: 0.8em;
-  --text-accent: hsl(271, 43%, 51%);
+  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-accent-hover: hsl(271, 43%, 51%);
   --text-bold-color-dt: hsl(0, 0%, 91%);
   --text-error: hsl(4, 74%, 74%);
@@ -978,7 +990,7 @@ body.theme-dark {
   --text-normal-hsl: 0, 0%, 91%;
   --text-on-accent: hsl(267, 52%, 75%);
   --text-on-accent-inverted: hsl(0, 0%, 91%);
-  --text-selection: hsla(271, 43%, 51%, 55%);
+  --text-selection: hsla(267, 52%, 75%, 0.33);
   --text-success: hsl(124, 48%, 54%);
   --text-warning: hsl(26, 85%, 63%);
   --titlebar-background: hsl(0, 0%, 12%);
@@ -2287,7 +2299,7 @@ body.theme-light {
   --background-primary-blur: hsl(0, 0%, 100%, 80%);
   --background-primary-hsl: 0, 0%, 100%;
   --background-secondary: hsl(0, 0%, 93%);
-  --background-secondary-alt: hsl(0, 0%, 69%);
+  --background-secondary-alt: #fcfcfc;
   --background-secondary-alt-blur: hsla(0, 0%, 69%, 80%);
   --background-secondary-alt-hsl: 0, 0%, 69%;
   --background-secondary-blur: hsla(0, 0%, 92%, 80%);
@@ -2416,12 +2428,12 @@ body.theme-light {
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(0, 0%, 35%);
   --collapse-icon-color-collapsed: hsl(0, 0%, 15%);
-  --color-accent: hsl(258, 75%, 63%);
-  --color-accent-1: hsl(252, 84%, 83%);
-  --color-accent-2: hsl(251, 87%, 94%);
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075));
+  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent-base-dt: 7, 90%, 92%;
   --color-accent-base-lt: 7, 90%, 92%;
-  --color-accent-hsl: 258, 75%, 63%;
+  --color-accent-hsl: 258, 88%, 66%;
   --color-accent-text-dt: 3, 68%, 52%;
   --color-accent-text-lt: 3, 68%, 52%;
   --color-accent-tint-dt: 7, 82%, 78%;
@@ -2438,7 +2450,7 @@ body.theme-light {
   --color-base-50: #ababab;
   --color-base-60: #707070;
   --color-base-70: #5c5c5c;
-  --color-blue: hsl(221, 67%, 56%);
+  --color-blue: #086ddd;
   --color-blue-base: hsl(217, 76%, 92%);
   --color-blue-base-hsl: 217, 76%, 92%;
   --color-blue-rgb: 8, 109, 221;
@@ -2446,7 +2458,7 @@ body.theme-light {
   --color-blue-text-hsl: 221, 67%, 56%;
   --color-blue-tint: hsl(219, 73%, 78%);
   --color-blue-tint-hsl: 219, 73%, 78%;
-  --color-cyan: hsl(184, 100%, 28%);
+  --color-cyan: #00bfbc;
   --color-cyan-base: hsl(184, 60%, 85%);
   --color-cyan-base-hsl: 184, 60%, 85%;
   --color-cyan-rgb: 0, 191, 188;
@@ -2454,7 +2466,7 @@ body.theme-light {
   --color-cyan-text-hsl: 184, 100%, 28%;
   --color-cyan-tint: hsl(184, 61%, 56%);
   --color-cyan-tint-hsl: 184, 61%, 56%;
-  --color-green: hsl(93, 100%, 27%);
+  --color-green: #08b94e;
   --color-green-base: hsl(101, 49%, 85%);
   --color-green-base-hsl: 101, 49%, 85%;
   --color-green-rgb: 8, 185, 78;
@@ -2474,7 +2486,7 @@ body.theme-light {
   --color-mint-text-hsl: 161, 100%, 26%;
   --color-mint-tint: hsl(158, 59%, 55%);
   --color-mint-tint-hsl: 158, 59%, 55%;
-  --color-orange: hsl(31, 100%, 36%);
+  --color-orange: #ec7500;
   --color-orange-base: hsl(26, 85%, 89%);
   --color-orange-base-hsl: 26, 85%, 89%;
   --color-orange-rgb: 236, 117, 0;
@@ -2482,7 +2494,7 @@ body.theme-light {
   --color-orange-text-hsl: 31, 100%, 36%;
   --color-orange-tint: hsl(27, 80%, 69%);
   --color-orange-tint-hsl: 27, 80%, 69%;
-  --color-pink: hsl(320, 60%, 50%);
+  --color-pink: #d53984;
   --color-pink-base: hsl(328, 79%, 93%);
   --color-pink-base-hsl: 328, 79%, 93%;
   --color-pink-rgb: 213, 57, 132;
@@ -2490,7 +2502,7 @@ body.theme-light {
   --color-pink-text-hsl: 320, 60%, 50%;
   --color-pink-tint: hsl(327, 72%, 79%);
   --color-pink-tint-hsl: 327, 72%, 79%;
-  --color-purple: hsl(258, 75%, 63%);
+  --color-purple: #7852ee;
   --color-purple-base: hsl(251, 87%, 94%);
   --color-purple-base-hsl: 251, 87%, 94%;
   --color-purple-rgb: 120, 82, 238;
@@ -2498,7 +2510,7 @@ body.theme-light {
   --color-purple-text-hsl: 258, 75%, 63%;
   --color-purple-tint: hsl(252, 84%, 83%);
   --color-purple-tint-hsl: 252, 84%, 83%;
-  --color-red: hsl(3, 68%, 52%);
+  --color-red: #e93147;
   --color-red-base: hsl(7, 90%, 92%);
   --color-red-base-hsl: 7, 90%, 92%;
   --color-red-rgb: 233, 49, 71;
@@ -2506,7 +2518,7 @@ body.theme-light {
   --color-red-text-hsl: 3, 68%, 52%;
   --color-red-tint: hsl(7, 82%, 78%);
   --color-red-tint-hsl: 7, 82%, 78%;
-  --color-yellow: hsl(38, 62%, 37%);
+  --color-yellow: #e0ac00;
   --color-yellow-base: hsl(42, 88%, 83%);
   --color-yellow-base-hsl: 42, 88%, 83%;
   --color-yellow-rgb: 224, 172, 0;
@@ -2547,9 +2559,9 @@ body.theme-light {
   --file-folding-offset: 20px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 15px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2568,19 +2580,19 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "Source Sans 3";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2590,14 +2602,14 @@ body.theme-light {
   --font-monospace-override: "??";
   --font-monospace-theme: "JetBrains Mono";
   --font-normal: 400;
-  --font-print: "Source Sans 3", "Arial";
+  --font-print: "??", "??", "Source Sans 3", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
@@ -2730,6 +2742,14 @@ body.theme-light {
   --input-padding: 4px 8px;
   --input-placeholder-color: hsl(0, 0%, 35%);
   --input-radius: 4px;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --interactive-accent: hsl(252, 84%, 83%);
   --interactive-accent-base: hsl(251, 87%, 94%);
   --interactive-accent-base-hsl: 251, 87%, 94%;
@@ -2810,9 +2830,9 @@ body.theme-light {
   --metadata-input-background-active: hsl(0, 0%, 93%);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -2821,9 +2841,9 @@ body.theme-light {
   --metadata-label-background-active: hsl(0, 0%, 93%);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "??", "Source Sans 3", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(0, 0%, 20%);
   --metadata-label-text-color-hover: hsl(0, 0%, 20%);

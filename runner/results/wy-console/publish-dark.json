@@ -334,26 +334,26 @@
     "--font-extrabold": "800",
     "--font-extralight": "200",
     "--font-interface": "\"ModeSeven Regular\"",
-    "--font-interface-override": "\"??\"",
-    "--font-interface-theme": "\"??\"",
+    "--font-interface-override": "'??'",
+    "--font-interface-theme": "'??'",
     "--font-light": "300",
     "--font-medium": "500",
-    "--font-mermaid": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "--font-monospace": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\", \"Source Code Pro\", monospace",
+    "--font-mermaid": "'??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--font-monospace": "'??', '??', ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\", \"Source Code Pro\", monospace",
     "--font-monospace-default": "ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, \"Consolas\", \"Source Code Pro\", monospace",
-    "--font-monospace-override": "\"??\"",
-    "--font-monospace-theme": "\"??\"",
+    "--font-monospace-override": "'??'",
+    "--font-monospace-theme": "'??'",
     "--font-normal": "400",
-    "--font-print": "\"??\", \"??\", \"??\", \"Arial\"",
-    "--font-print-override": "\"??\"",
+    "--font-print": "'??', '??', '??', 'Arial'",
+    "--font-print-override": "'??'",
     "--font-semibold": "600",
     "--font-small": "0.933em",
     "--font-smaller": "0.875em",
     "--font-smallest": "0.8em",
-    "--font-text": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "--font-text-override": "\"??\"",
+    "--font-text": "'??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--font-text-override": "'??'",
     "--font-text-size": "16px",
-    "--font-text-theme": "\"??\"",
+    "--font-text-theme": "'??'",
     "--font-thin": "100",
     "--font-ui-large": "20px",
     "--font-ui-medium": "15px",
@@ -1322,49 +1322,49 @@
     "cursor": "default"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(153, 229, 181)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"

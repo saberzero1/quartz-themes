@@ -180,7 +180,7 @@ body.theme-dark {
   --background-modifier-error: rgba(192, 58, 71, calc(0.55 + 0.25));
   --background-modifier-error-hover: #c03a47;
   --background-modifier-error-rgb: 192, 58, 71;
-  --background-modifier-form-field: #24262c;
+  --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: #24262c;
   --background-modifier-hover: #24262c;
   --background-modifier-message: color-mix(in hsl, #191d28, #24262c);
@@ -189,7 +189,7 @@ body.theme-dark {
   --background-primary: #191d28;
   --background-primary-alt: #24262c;
   --background-secondary: #14161c;
-  --background-secondary-alt: #191d28;
+  --background-secondary-alt: #363636;
   --bases-border-r: 16px;
   --bases-cards-background: #191d28;
   --bases-cards-border-width: 1px;
@@ -332,26 +332,25 @@ body.theme-dark {
     calc(77.5% * 1.02),
     calc(59.5% * 1.15)
   );
-  --color-accent-2: hsla(
-    calc(105.5 - 20),
-    calc(77.5% * 0.85),
-    calc(59.5% * 1.1),
-    0.875
+  --color-accent-2: hsl(
+    calc(105.5 - 5),
+    calc(77.5% * 1.05),
+    calc(59.5% * 1.29)
   );
   --color-accent-hsl: 105.5, 77.5%, 59.5%;
-  --color-base-00: #14161c;
-  --color-base-05: color-mix(in hsl, #14161c, #191d28);
-  --color-base-10: #191d28;
-  --color-base-100: #d3d5d3;
-  --color-base-20: color-mix(in hsl, #191d28, #24262c);
-  --color-base-25: #24262c;
-  --color-base-30: color-mix(in hsl, #24262c, #4d566b);
-  --color-base-35: #4d566b;
-  --color-base-40: color-mix(in hsl, #4d566b, #6f7685);
-  --color-base-50: #6f7685;
-  --color-base-60: #898c93;
-  --color-base-70: color-mix(in hsl, #d3d5d3, #898c93);
-  --color-blue: #5a8fcd;
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
   --color-blue-pink-mix: color-mix(in hsl, #5a8fcd, #d458a3);
   --color-blue-pink-mix-bg: color-mix(
     in hsl,
@@ -364,8 +363,8 @@ body.theme-dark {
     color-mix(in hsl, #5a8fcd, #a461c8) 20%,
     transparent
   );
-  --color-blue-rgb: 90, 143, 205;
-  --color-cyan: #3cb9c2;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
   --color-cyan-blue-mix: color-mix(in hsl, #3cb9c2, #5a8fcd);
   --color-cyan-blue-mix-bg: color-mix(
     in hsl,
@@ -384,8 +383,8 @@ body.theme-dark {
     color-mix(in hsl, #3cb9c2, #a461c8) 20%,
     transparent
   );
-  --color-cyan-rgb: 60, 185, 194;
-  --color-green: #a1c05c;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
   --color-green-blue-mix: color-mix(in hsl, #a1c05c, #5a8fcd);
   --color-green-blue-mix-bg: color-mix(
     in hsl,
@@ -410,8 +409,8 @@ body.theme-dark {
     color-mix(in hsl, #a1c05c, #a461c8) 20%,
     transparent
   );
-  --color-green-rgb: 161, 192, 92;
-  --color-orange: #cc8449;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
   --color-orange-blue-mix: color-mix(in hsl, #cc8449, #5a8fcd);
   --color-orange-blue-mix-bg: color-mix(
     in hsl,
@@ -442,24 +441,24 @@ body.theme-dark {
     color-mix(in hsl, #cc8449, #a461c8) 20%,
     transparent
   );
-  --color-orange-rgb: 204, 132, 73;
+  --color-orange-rgb: 233, 151, 63;
   --color-orange-yellow-mix: color-mix(in hsl, #cc8449, #c29e42);
   --color-orange-yellow-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #cc8449, #c29e42) 20%,
     transparent
   );
-  --color-pink: #d458a3;
-  --color-pink-rgb: 212, 88, 163;
-  --color-purple: #a461c8;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
   --color-purple-pink-mix: color-mix(in hsl, #a461c8, #d458a3);
   --color-purple-pink-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #a461c8, #d458a3) 20%,
     transparent
   );
-  --color-purple-rgb: 164, 97, 200;
-  --color-red: #c03a47;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
   --color-red-blue-mix: color-mix(in hsl, #c03a47, #5a8fcd);
   --color-red-blue-mix-bg: color-mix(
     in hsl,
@@ -496,14 +495,14 @@ body.theme-dark {
     color-mix(in hsl, #c03a47, #a461c8) 20%,
     transparent
   );
-  --color-red-rgb: 192, 58, 71;
+  --color-red-rgb: 251, 70, 76;
   --color-red-yellow-mix: color-mix(in hsl, #c03a47, #c29e42);
   --color-red-yellow-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #c03a47, #c29e42) 20%,
     transparent
   );
-  --color-yellow: #c29e42;
+  --color-yellow: #e0de71;
   --color-yellow-blue-mix: color-mix(in hsl, #c29e42, #5a8fcd);
   --color-yellow-blue-mix-bg: color-mix(
     in hsl,
@@ -534,7 +533,7 @@ body.theme-dark {
     color-mix(in hsl, #c29e42, #a461c8) 20%,
     transparent
   );
-  --color-yellow-rgb: 194, 158, 66;
+  --color-yellow-rgb: 224, 222, 113;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -557,9 +556,9 @@ body.theme-dark {
     calc(77.5% * 1.02),
     calc(59.5% * 1.15)
   );
-  --dropdown-background: color-mix(in hsl, #14161c, #191d28);
+  --dropdown-background: #363636;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #191d28;
+  --dropdown-background-hover: #3f3f3f;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -578,9 +577,9 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 14.56227px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -771,19 +770,19 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -793,16 +792,16 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -945,19 +944,15 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(
+  --interactive-accent: hsl(105.5, 77.5%, 59.5%);
+  --interactive-accent-hover: hsl(
     calc(105.5 - 3),
     calc(77.5% * 1.02),
     calc(59.5% * 1.15)
   );
-  --interactive-accent-hover: color-mix(
-    in hsl shorter hue,
-    #92a871 75%,
-    transparent
-  );
   --interactive-accent-hsl: 105.5, 77.5%, 59.5%;
-  --interactive-hover: #191d28;
-  --interactive-normal: color-mix(in hsl, #14161c, #191d28);
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
   --italic-color: #92a871;
   --keyboard-height: 0px;
   --layer-cover: 5;
@@ -1027,9 +1022,9 @@ body.theme-dark {
   --metadata-input-background-active: #24262c;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -1038,9 +1033,9 @@ body.theme-dark {
   --metadata-label-background-active: #24262c;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #a461c8;
   --metadata-label-text-color-hover: color-mix(

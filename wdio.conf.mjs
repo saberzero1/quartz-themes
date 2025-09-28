@@ -7,8 +7,13 @@ import {
 
 const cacheDir = path.resolve(".obsidian-cache");
 
-const themeList = readdirSync("./runner/vault/.obsidian/themes");
-const pluginList = readdirSync("./runner/vault/.obsidian/plugins");
+const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(
+  (file) => file.endsWith(".css") || file.endsWith(".json"),
+);
+const pluginList = readdirSync("./runner/vault/.obsidian/plugins").filter(
+  (file) =>
+    file.endsWith(".js") || file.endsWith(".json") || file.endsWith(".css"),
+);
 
 let versions; // [appVersion, installerVersion][]
 if (process.env.OBSIDIAN_VERSIONS) {
@@ -51,14 +56,12 @@ export const config = {
     browserVersion: appVersion,
     "wdio:obsidianOptions": {
       installerVersion: installerVersion,
-      /*
       plugins: pluginList.map(
         (plugin) => `./runner/vault/.obsidian/plugins/${plugin}`,
       ),
       themes: themeList.map(
         (theme) => `./runner/vault/.obsidian/themes/${theme}`,
       ),
-      */
       // If you need to switch between multiple vaults, you can omit this and use
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
