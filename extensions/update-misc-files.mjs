@@ -28,6 +28,8 @@ export default function updateMiscFiles(manifestCollection) {
   // Build compatibility table
   const compatibilityTableLines = [];
   const themeList = [];
+  const themeListDark = [];
+  const themeListLight = [];
   manifestCollection.forEach((manifest) => {
     themeList.push({ theme: getTheme(manifest, "name"), name: manifest.name });
   });
@@ -46,6 +48,14 @@ export default function updateMiscFiles(manifestCollection) {
         ? "dark"
         : "light";
     const compatibilityArray = themes[themeName.theme]["compatibility"];
+    if (mode === "both") {
+      themeListDark.push(themeName.theme);
+      themeListLight.push(themeName.theme);
+    } else if (mode === "dark") {
+      themeListDark.push(themeName.theme);
+    } else if (mode === "light") {
+      themeListLight.push(themeName.theme);
+    }
     const license = themes[themeName.theme]["license"]["spdx_id"];
     const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
     let compatibilityString = "";
@@ -54,6 +64,14 @@ export default function updateMiscFiles(manifestCollection) {
     });
     compatibilityTableLines.push(
       `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName.theme}/syntax) | ${licenseString} |`,
+    );
+
+    // Publish README.md for each theme to the publish folder
+    copyFileSync("PUBLISH-TEMPLATE.md", `./publish/${themeName.theme}.md`);
+    replaceInFile(
+      `./publish/${themeName.theme}.md`,
+      "//QUARTZ_THEMES_LINK",
+      `[Install instructions for ${themeName.theme} theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme})`,
     );
   });
 
@@ -107,6 +125,8 @@ export default function updateMiscFiles(manifestCollection) {
 
   // Write the theme list to theme-list
   writePrettier(`./theme-list`, themeListFileList.join("\n"), "utf8");
+  writePrettier(`./theme-list-dark`, themeListDark.join("\n"), "utf8");
+  writePrettier(`./theme-list-light`, themeListLight.join("\n"), "utf8");
 
   console.log("Finished updating Quartz Syncer file list");
 }

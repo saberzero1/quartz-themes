@@ -1,0 +1,23 @@
+.hide-title {
+  /* Hides page headers in Publish, use H1 if needed */
+  /* Use cssclasses: hide-title */
+}
+.hide-title .page-header {
+  display: none;
+}
+.hide-title.markdown-preview-view div:nth-child(4) h1 {
+  margin-top: 0.25em;
+  font-variant: var(--page-title-variant);
+  letter-spacing: -0.015em;
+  line-height: var(--page-title-line-height);
+  font-size: var(--page-title-size);
+  color: var(--page-title-color);
+  font-weight: var(--page-title-weight);
+  font-style: var(--page-title-style);
+  font-family: var(--page-title-font);
+  border: none;
+}
+
+.nav-view .tree-item:has(> div[data-path="index.md"]) {
+  display: none;
+}

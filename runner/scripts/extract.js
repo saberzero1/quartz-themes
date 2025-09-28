@@ -302,7 +302,7 @@ describe("Quartz Theme Style Extraction", () => {
             if (property && property.startsWith("--")) {
               computedPublishStyles[
                 `${isDark ? "&.theme-dark" : "&.theme-light"}`
-              ][property] = value.toString().trim();
+              ][property] = value[0][0].toString().trim();
             }
           });
           /*
