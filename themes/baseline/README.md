@@ -6,9 +6,11 @@
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/baseline/)
+[Open live preview (Quartz)](https://quartz-themes.github.io/baseline/)
 
-## Usage
+[Open live preview (Publish)](https://publish.saberzero.one/baseline)
+
+## Usage (Quartz)
 
 ### GitHub Actions
 
@@ -47,3 +49,9 @@ Then, add the following to your `quartz/styles/custom.scss` file after the `@use
 
 > [!IMPORTANT]
 > This setup method is not yet available. It is currently being tested and will be released in the future.
+
+## Usage (Publish)
+
+Download the [publish.css](./publish.css) file and copy it into your Obsidian Publish vault.
+
+Then, in Obsidian Publish, open the Publish modal and select the `publish.css` file and click the "Publish" button at the bottom.
