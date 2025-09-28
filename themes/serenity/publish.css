@@ -336,7 +336,7 @@ body.theme-dark {
   --drag-ghost-text-color: #fff;
   --dropdown-background: hsl(0, 0%, calc(calc(15% - 10%) + 3%));
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: hsla(238, 100%, 70%, 0.1);
+  --dropdown-background-hover: hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -357,11 +357,11 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -381,11 +381,11 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme:
     "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
@@ -393,11 +393,11 @@ body.theme-dark {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace: "iA Writer Mono S";
   --font-monospace-custom: "iA Writer Mono S";
   --font-monospace-default:
@@ -409,9 +409,9 @@ body.theme-dark {
   --font-normal: 400;
   --font-preview-view: "iA Writer Duo S";
   --font-print:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    "Arial";
+    "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "Arial";
   --font-print-override: "??";
   --font-secondary: "iA Writer Duo S";
   --font-secondary-custom: "iA Writer Duo S";
@@ -420,11 +420,11 @@ body.theme-dark {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -558,8 +558,14 @@ body.theme-dark {
   --input-padding: 4px 8px;
   --input-placeholder-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --input-radius: 5px;
-  --input-shadow: hsl(0, 0%, calc(calc(15% - 10%) + 19%)) 0 0 0 0.8px;
-  --input-shadow-hover: hsla(238, 100%, 70%, 0.6) 0 0 0px 1px;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: hsl(238, 100%, 70%);
   --interactive-accent-hover: hsl(
     calc(238 + 4),
@@ -567,7 +573,7 @@ body.theme-dark {
     calc(70% + 6%)
   );
   --interactive-accent-hsl: 238, 100%, 70%;
-  --interactive-hover: hsla(238, 100%, 70%, 0.1);
+  --interactive-hover: hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --interactive-normal: hsl(0, 0%, calc(calc(15% - 10%) + 3%));
   --keyboard-height: 0px;
   --layer-cover: 5;
@@ -648,11 +654,11 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -661,11 +667,11 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --metadata-label-text-color-hover: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
@@ -2719,11 +2725,11 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2743,11 +2749,11 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme:
     "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
@@ -2755,11 +2761,11 @@ body.theme-light {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace: "iA Writer Mono S";
   --font-monospace-custom: "iA Writer Mono S";
   --font-monospace-default:
@@ -2771,9 +2777,9 @@ body.theme-light {
   --font-normal: 400;
   --font-preview-view: "iA Writer Duo S";
   --font-print:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    "Arial";
+    "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "Arial";
   --font-print-override: "??";
   --font-secondary: "iA Writer Duo S";
   --font-secondary-custom: "iA Writer Duo S";
@@ -2782,11 +2788,11 @@ body.theme-light {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -2920,8 +2926,14 @@ body.theme-light {
   --input-padding: 4px 8px;
   --input-placeholder-color: hsl(0, 0%, calc(15% + 20%));
   --input-radius: 5px;
-  --input-shadow: hsl(0, calc(0% + 5%), 85%) 0 0 0 0.8px;
-  --input-shadow-hover: hsla(228, 70%, 66%, 0.6) 0 0 0px 1px;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --interactive-accent: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075));
   --interactive-accent-hover: hsl(
     calc(228 - 4),
@@ -3010,11 +3022,11 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.05);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -3023,11 +3035,11 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.05);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif,
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
+    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(0, 0%, calc(15% + 12%));
   --metadata-label-text-color-hover: hsl(0, 0%, calc(15% + 12%));

@@ -447,7 +447,7 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
@@ -468,7 +468,7 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
@@ -477,7 +477,7 @@ body.theme-dark {
   --font-medium: 500;
   --font-mermaid: "Fira Code", "Source Code Pro", Jetbrains Mono;
   --font-monospace:
-    "Fira Code", "Source Code Pro", Jetbrains Mono, ui-monospace,
+    "??", "Fira Code", "Source Code Pro", Jetbrains Mono, ui-monospace,
     SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -487,14 +487,14 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "Fira Code", "Source Code Pro", Jetbrains Mono;
   --font-normal: 400;
-  --font-print: "IBM Plex Sans", Helvetica Neue, "Arial";
+  --font-print: "??", "??", "IBM Plex Sans", Helvetica Neue, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
@@ -749,7 +749,7 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.075);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
@@ -760,7 +760,7 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.075);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
@@ -1796,9 +1796,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1821,9 +1821,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1844,9 +1844,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1865,9 +1865,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body
   .outline-view-outer
@@ -1884,17 +1884,17 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  border-inline-start: 0px none rgb(205, 205, 205);
+  margin-inline-start: 0px;
+  padding-inline-start: 32px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
@@ -2647,7 +2647,7 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
@@ -2668,7 +2668,7 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
@@ -2677,7 +2677,7 @@ body.theme-light {
   --font-medium: 500;
   --font-mermaid: "Fira Code", "Source Code Pro", Jetbrains Mono;
   --font-monospace:
-    "Fira Code", "Source Code Pro", Jetbrains Mono, ui-monospace,
+    "??", "Fira Code", "Source Code Pro", Jetbrains Mono, ui-monospace,
     SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2687,14 +2687,14 @@ body.theme-light {
   --font-monospace-override: "??";
   --font-monospace-theme: "Fira Code", "Source Code Pro", Jetbrains Mono;
   --font-normal: 400;
-  --font-print: "IBM Plex Sans", Helvetica Neue, "Arial";
+  --font-print: "??", "??", "IBM Plex Sans", Helvetica Neue, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
@@ -2947,7 +2947,7 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.075);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
@@ -2958,7 +2958,7 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.075);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
+    "??", "IBM Plex Sans", Helvetica Neue, "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;

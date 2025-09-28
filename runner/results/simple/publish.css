@@ -375,7 +375,8 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --file-header-font:
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --file-header-font-size: 12px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -396,14 +397,16 @@ body.theme-dark {
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-interface:
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid:
+    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -414,13 +417,14 @@ body.theme-dark {
   --font-monospace-theme: "??";
   --font-normal: 400;
   --font-paragraph: 0.87rem;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.7rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text:
+    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -629,7 +633,7 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --metadata-input-font-size: 0.75rem;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -638,7 +642,7 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --metadata-label-font-size: 0.75rem;
   --metadata-label-text-color: #b3b3b3;
   --metadata-label-text-color-hover: #b3b3b3;
@@ -2116,7 +2120,8 @@ body.theme-light {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --file-header-font:
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --file-header-font-size: 12px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2137,14 +2142,16 @@ body.theme-light {
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-serif: Times, Georgia, "Times New Roman", serif;
-  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-interface:
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mermaid:
+    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2155,13 +2162,14 @@ body.theme-light {
   --font-monospace-theme: "??";
   --font-normal: 400;
   --font-paragraph: 0.87rem;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.7rem;
-  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text:
+    "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2362,7 +2370,7 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --metadata-input-font-size: 0.75rem;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -2371,7 +2379,7 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    "??", "??", "??", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --metadata-label-font-size: 0.75rem;
   --metadata-label-text-color: #5c5c5c;
   --metadata-label-text-color-hover: #5c5c5c;

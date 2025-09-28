@@ -361,8 +361,8 @@ body.theme-dark {
   --font-monospace-theme: "JetBrains Mono", "Source Code Pro", monospace;
   --font-normal: 400;
   --font-print:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif,
-    "Arial";
+    "??", "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;

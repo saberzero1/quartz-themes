@@ -352,19 +352,19 @@ body.theme-dark {
   --color-base-70: #b3b3b3;
   --color-blue: #027aff;
   --color-blue-rgb: 2, 122, 255;
-  --color-cyan: rgb(0, 202, 235);
+  --color-cyan: #53dfdd;
   --color-cyan-rgb: 83, 223, 221;
-  --color-green: rgb(30, 169, 67);
+  --color-green: #44cf6e;
   --color-green-rgb: 68, 207, 110;
-  --color-orange: rgb(220, 95, 0);
+  --color-orange: #e9973f;
   --color-orange-rgb: 233, 151, 63;
-  --color-pink: rgb(220, 100, 210);
+  --color-pink: #fa99cd;
   --color-pink-rgb: 250, 153, 205;
-  --color-purple: rgb(140, 110, 240);
+  --color-purple: #a882ff;
   --color-purple-rgb: 168, 130, 255;
-  --color-red: rgb(220, 65, 65);
+  --color-red: #fb464c;
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: rgb(230, 205, 90);
+  --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --cursor: default;
   --cursor-link: pointer;
@@ -409,8 +409,8 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --file-header-font-size: 14px;
@@ -430,8 +430,8 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-interface-override: "??";
@@ -441,26 +441,26 @@ body.theme-dark {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-monospace:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+    "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
+    SFMono-Regular, Consolas, "Source Code Pro", monospace;
   --font-monospace-default:
     "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
     Consolas, "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -678,8 +678,8 @@ body.theme-dark {
   );
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --metadata-input-font-size: 0.875em;
@@ -695,8 +695,8 @@ body.theme-dark {
   );
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --metadata-label-font-size: 0.875em;
@@ -968,8 +968,8 @@ body.theme-dark {
   --table-add-button-border-width: 1px;
   --table-background: transparent;
   --table-body-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-body-font-size: 1em;
   --table-border-color: rgb(250, 247, 245);
   --table-border-width: 1px;
@@ -989,8 +989,8 @@ body.theme-dark {
   --table-header-border-width: 1px;
   --table-header-color: rgb(250, 247, 245);
   --table-header-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-header-size: 16px;
   --table-header-weight: calc(400 + 200);
   --table-line-height: 1.3;
@@ -2474,19 +2474,19 @@ body.theme-light {
   --color-base-70: #5c5c5c;
   --color-blue: #086ddd;
   --color-blue-rgb: 8, 109, 221;
-  --color-cyan: rgb(0, 202, 235);
+  --color-cyan: #00bfbc;
   --color-cyan-rgb: 0, 191, 188;
-  --color-green: rgb(30, 169, 67);
+  --color-green: #08b94e;
   --color-green-rgb: 8, 185, 78;
-  --color-orange: rgb(220, 95, 0);
+  --color-orange: #ec7500;
   --color-orange-rgb: 236, 117, 0;
-  --color-pink: rgb(220, 100, 210);
+  --color-pink: #d53984;
   --color-pink-rgb: 213, 57, 132;
-  --color-purple: rgb(140, 110, 240);
+  --color-purple: #7852ee;
   --color-purple-rgb: 120, 82, 238;
-  --color-red: rgb(220, 65, 65);
+  --color-red: #e93147;
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: rgb(230, 205, 90);
+  --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --cursor: default;
   --cursor-link: pointer;
@@ -2532,8 +2532,8 @@ body.theme-light {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --file-header-font-size: 14px;
@@ -2553,8 +2553,8 @@ body.theme-light {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-interface-override: "??";
@@ -2564,26 +2564,26 @@ body.theme-light {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-monospace:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+    "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
+    SFMono-Regular, Consolas, "Source Code Pro", monospace;
   --font-monospace-default:
     "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
     Consolas, "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??", "??", "??", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2801,8 +2801,8 @@ body.theme-light {
   );
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --metadata-input-font-size: 0.875em;
@@ -2818,8 +2818,8 @@ body.theme-light {
   );
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif,
+    "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??",
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --metadata-label-font-size: 0.875em;
@@ -3080,8 +3080,8 @@ body.theme-light {
   --table-add-button-border-width: 1px;
   --table-background: transparent;
   --table-body-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-body-font-size: 1em;
   --table-border-color: rgb(0, 0, 0);
   --table-border-width: 1px;
@@ -3101,8 +3101,8 @@ body.theme-light {
   --table-header-border-width: 1px;
   --table-header-color: rgb(0, 0, 0);
   --table-header-font:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-header-size: 16px;
   --table-header-weight: calc(400 + 200);
   --table-line-height: 1.3;
