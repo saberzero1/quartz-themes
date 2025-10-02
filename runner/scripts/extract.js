@@ -115,7 +115,7 @@ describe("Quartz Theme Style Extraction", () => {
               : "unset",
           };
           computedPublishStyles[
-            `.markdown-preview-sizer.markdown-preview-section`
+            `&.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section`
           ] = {
             "background-color": centerElement.getCssPropertyValue(
               "background-color",
