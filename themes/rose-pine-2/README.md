@@ -1,6 +1,6 @@
-# rose-pine-2
+# Rose Pine 2
 
-- Theme: rose-pine-2
+- Theme: Rose Pine 2
 - Author: <a href="https://github.com/JTrenerry" target="_blank" rel="noopener noreferrer">rose-pine</a>
 
 ## Preview

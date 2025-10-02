@@ -1,6 +1,6 @@
-# zenburn
+# Zenburn
 
-- Theme: zenburn
+- Theme: Zenburn
 - Author: <a href="https://github.com/danyim" target="_blank" rel="noopener noreferrer">@danyim</a>
 
 ## Preview

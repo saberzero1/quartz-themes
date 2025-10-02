@@ -1,6 +1,6 @@
-# coffee
+# Coffee
 
-- Theme: coffee
+- Theme: Coffee
 - Author: <a href="https://github.com/regawaras" target="_blank" rel="noopener noreferrer">@regawaras</a>
 
 ## Preview

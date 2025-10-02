@@ -1,6 +1,6 @@
-# aurora-twilight
+# Aurora-Twilight
 
-- Theme: aurora-twilight
+- Theme: Aurora-Twilight
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# dekurai
+# Dekurai
 
-- Theme: dekurai
+- Theme: Dekurai
 - Author: <a href="https://github.com/sergey900553" target="_blank" rel="noopener noreferrer">sergey</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# minimal-dark-coder
+# Minimal-Dark-Coder
 
-- Theme: minimal-dark-coder
+- Theme: Minimal-Dark-Coder
 - Author: Krishna Sen
 
 ## Preview

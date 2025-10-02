@@ -1,6 +1,6 @@
-# kakano
+# Kakano
 
-- Theme: kakano
+- Theme: Kakano
 - Author: <a href="https://isaac.freeman.org.nz" target="_blank" rel="noopener noreferrer">Isaac Freeman</a>
 
 ## Preview

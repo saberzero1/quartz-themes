@@ -1,6 +1,6 @@
-# rmaki
+# Rmaki
 
-- Theme: rmaki
+- Theme: Rmaki
 - Author: Luke Ruokaismaki
 
 ## Preview

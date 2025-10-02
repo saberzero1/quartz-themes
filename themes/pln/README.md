@@ -1,6 +1,6 @@
-# pln
+# PLN
 
-- Theme: pln
+- Theme: PLN
 - Author: <a href="https://docs.dev0.sh" target="_blank" rel="noopener noreferrer">PipeItToDevNull</a>
 
 ## Preview

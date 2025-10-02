@@ -1,6 +1,6 @@
-# amoled-serenity
+# AMOLED Serenity
 
-- Theme: amoled-serenity
+- Theme: AMOLED Serenity
 - Author: <a href="https://darthdemono.rf.gd/" target="_blank" rel="noopener noreferrer">Darth Demono</a>
 
 ## Preview

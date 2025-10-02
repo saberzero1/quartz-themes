@@ -1,6 +1,6 @@
-# gummy-revived
+# Gummy-Revived
 
-- Theme: gummy-revived
+- Theme: Gummy-Revived
 - Author: kneecaps & WinnerWind
 
 ## Preview

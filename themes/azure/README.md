@@ -1,6 +1,6 @@
-# azure
+# Azure
 
-- Theme: azure
+- Theme: Azure
 - Author: <a href="https://github.com/annagracedev/" target="_blank" rel="noopener noreferrer">Anna Grace</a>
 
 ## Preview

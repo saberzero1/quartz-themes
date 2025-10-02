@@ -1,6 +1,6 @@
-# prussian-blue
+# Prussian Blue
 
-- Theme: prussian-blue
+- Theme: Prussian Blue
 - Author: <a href="ed.toomwn.xyz" target="_blank" rel="noopener noreferrer">EddieTheEd</a>
 
 ## Preview

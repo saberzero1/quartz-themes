@@ -1,6 +1,6 @@
-# micro-mike
+# Micro Mike
 
-- Theme: micro-mike
+- Theme: Micro Mike
 - Author: <a href="https://github.com/ThisTheThe" target="_blank" rel="noopener noreferrer">ThisTheThe</a>
 
 ## Preview

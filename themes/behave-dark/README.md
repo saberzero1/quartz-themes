@@ -1,6 +1,6 @@
-# behave-dark
+# Behave dark
 
-- Theme: behave-dark
+- Theme: Behave dark
 - Author: <a href="https://gitlab.com/chrismettal" target="_blank" rel="noopener noreferrer">Chrismettal</a>
 
 ## Preview

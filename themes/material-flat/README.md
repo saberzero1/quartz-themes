@@ -1,6 +1,6 @@
-# material-flat
+# Material Flat
 
-- Theme: material-flat
+- Theme: Material Flat
 - Author: <a href="https://github.com/Threethan/" target="_blank" rel="noopener noreferrer">Threethan, Joschua</a>
 
 ## Preview

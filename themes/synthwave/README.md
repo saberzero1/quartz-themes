@@ -1,6 +1,6 @@
-# synthwave
+# SynthWave
 
-- Theme: synthwave
+- Theme: SynthWave
 - Author: Marco Luzi
 
 ## Preview

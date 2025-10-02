@@ -1,6 +1,6 @@
-# adrenaline
+# Adrenaline
 
-- Theme: adrenaline
+- Theme: Adrenaline
 - Author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
 
 ## Preview

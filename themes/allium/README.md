@@ -1,6 +1,6 @@
-# allium
+# Allium
 
-- Theme: allium
+- Theme: Allium
 - Author: Xainapse
 
 ## Preview

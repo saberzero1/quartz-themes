@@ -1,6 +1,6 @@
-# celestial-night
+# Celestial Night
 
-- Theme: celestial-night
+- Theme: Celestial Night
 - Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview

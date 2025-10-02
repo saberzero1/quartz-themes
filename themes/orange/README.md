@@ -1,6 +1,6 @@
-# orange
+# Orange
 
-- Theme: orange
+- Theme: Orange
 - Author: Alex Frangiamore
 
 ## Preview

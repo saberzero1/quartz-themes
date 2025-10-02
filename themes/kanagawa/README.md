@@ -1,6 +1,6 @@
-# kanagawa
+# Kanagawa
 
-- Theme: kanagawa
+- Theme: Kanagawa
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

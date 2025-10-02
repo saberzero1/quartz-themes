@@ -1,6 +1,6 @@
-# midnight-fjord
+# Midnight-Fjord
 
-- Theme: midnight-fjord
+- Theme: Midnight-Fjord
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

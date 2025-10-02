@@ -1,6 +1,6 @@
-# fusion
+# Fusion
 
-- Theme: fusion
+- Theme: Fusion
 - Author: <a href="https://github.com/zamsyt" target="_blank" rel="noopener noreferrer">zamsyt</a>
 
 ## Preview

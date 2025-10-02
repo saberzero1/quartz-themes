@@ -1,6 +1,6 @@
-# refined-default
+# Refined Default
 
-- Theme: refined-default
+- Theme: Refined Default
 - Author: <a href="https://github.com/faisaltamanojr" target="_blank" rel="noopener noreferrer">Faisal Tamano Jr.</a>
 
 ## Preview

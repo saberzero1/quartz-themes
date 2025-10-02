@@ -1,6 +1,6 @@
-# black
+# Black
 
-- Theme: black
+- Theme: Black
 - Author: <a href="https://github.com/b3h3m0th" target="_blank" rel="noopener noreferrer">Simon Ostini</a>
 
 ## Preview

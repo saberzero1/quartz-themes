@@ -1,6 +1,6 @@
-# creature
+# Creature
 
-- Theme: creature
+- Theme: Creature
 - Author: Marcus Olsson
 
 ## Preview

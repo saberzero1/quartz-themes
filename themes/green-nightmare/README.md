@@ -1,6 +1,6 @@
-# green-nightmare
+# Green Nightmare
 
-- Theme: green-nightmare
+- Theme: Green Nightmare
 - Author: <a href="https://github.com/prradox" target="_blank" rel="noopener noreferrer">prradox</a>
 
 ## Preview

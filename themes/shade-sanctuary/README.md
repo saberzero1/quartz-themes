@@ -1,6 +1,6 @@
-# shade-sanctuary
+# Shade Sanctuary
 
-- Theme: shade-sanctuary
+- Theme: Shade Sanctuary
 - Author: <a href="https//github.com/Elevict" target="_blank" rel="noopener noreferrer">Elevict</a>
 
 ## Preview

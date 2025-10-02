@@ -1,6 +1,6 @@
-# tomorrow-night-bright
+# Tomorrow Night Bright
 
-- Theme: tomorrow-night-bright
+- Theme: Tomorrow Night Bright
 - Author: Gerard Braad
 
 ## Preview

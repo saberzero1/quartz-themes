@@ -1,6 +1,6 @@
-# ink
+# Ink
 
-- Theme: ink
+- Theme: Ink
 - Author: <a href="https://github.com/harmtemolder" target="_blank" rel="noopener noreferrer">harmtemolder</a>
 
 ## Preview

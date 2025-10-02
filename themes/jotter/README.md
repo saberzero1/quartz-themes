@@ -1,6 +1,6 @@
-# jotter
+# Jotter
 
-- Theme: jotter
+- Theme: Jotter
 - Author: <a href="https://github.com/lnbgc" target="_blank" rel="noopener noreferrer">lnbgc</a>
 
 ## Preview

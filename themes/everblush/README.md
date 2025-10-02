@@ -1,6 +1,6 @@
-# everblush
+# Everblush
 
-- Theme: everblush
+- Theme: Everblush
 - Author: Mangeshrex
 
 ## Preview

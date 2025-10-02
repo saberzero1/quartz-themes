@@ -1,6 +1,6 @@
-# terraflow
+# TerraFlow
 
-- Theme: terraflow
+- Theme: TerraFlow
 - Author: fabdub
 
 ## Preview

@@ -1,6 +1,6 @@
-# composer
+# Composer
 
-- Theme: composer
+- Theme: Composer
 - Author: <a href="https://github.com/vran-dev" target="_blank" rel="noopener noreferrer">vran</a>
 
 ## Preview

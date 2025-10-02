@@ -1,6 +1,6 @@
-# wiselight
+# WiseLight
 
-- Theme: wiselight
+- Theme: WiseLight
 - Author: Learnerfvs
 
 ## Preview

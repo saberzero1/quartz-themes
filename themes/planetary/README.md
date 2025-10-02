@@ -1,6 +1,6 @@
-# planetary
+# Planetary
 
-- Theme: planetary
+- Theme: Planetary
 - Author: <a href="https://andoerfer.io" target="_blank" rel="noopener noreferrer">ninetyfive666</a>
 
 ## Preview

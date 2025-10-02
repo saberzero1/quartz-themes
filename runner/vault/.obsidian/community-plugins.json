@@ -1,5 +1,6 @@
 [
   "obsidian-style-settings",
   "obsidian-view-mode-by-frontmatter",
-  "dataview"
+  "dataview",
+  "plugin-reloader"
 ]

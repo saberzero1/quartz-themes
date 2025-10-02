@@ -1,6 +1,6 @@
-# typomagical
+# Typomagical
 
-- Theme: typomagical
+- Theme: Typomagical
 - Author: <a href="https://github.com/hungsu/" target="_blank" rel="noopener noreferrer">Hung-Su</a>
 
 ## Preview

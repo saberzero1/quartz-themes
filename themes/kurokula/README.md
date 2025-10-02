@@ -1,6 +1,6 @@
-# kurokula
+# Kurokula
 
-- Theme: kurokula
+- Theme: Kurokula
 - Author: <a href="https://github.com/Indyandie" target="_blank" rel="noopener noreferrer">indyandie</a>
 
 ## Preview

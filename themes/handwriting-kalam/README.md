@@ -1,6 +1,6 @@
-# handwriting-kalam
+# Handwriting (Kalam)
 
-- Theme: handwriting-kalam
+- Theme: Handwriting (Kalam)
 - Author: Kumar Anurag
 
 ## Preview

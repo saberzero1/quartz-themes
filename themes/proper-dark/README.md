@@ -1,6 +1,6 @@
-# proper-dark
+# Proper Dark
 
-- Theme: proper-dark
+- Theme: Proper Dark
 - Author: <a href="https://lukasbach.com" target="_blank" rel="noopener noreferrer">Lukas Bach</a>
 - Support the author: <a href="https://github.com/lukasbach/.github/blob/main/funding.md" target="_blank" rel="noopener noreferrer">Donate</a>
 

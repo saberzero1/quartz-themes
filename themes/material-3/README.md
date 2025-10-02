@@ -1,6 +1,6 @@
-# material-3
+# Material 3
 
-- Theme: material-3
+- Theme: Material 3
 - Author: <a href="https://github.com/HarmfulBreeze" target="_blank" rel="noopener noreferrer">HarmfulBreeze</a>
 
 ## Preview

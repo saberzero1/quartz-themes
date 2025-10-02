@@ -1,6 +1,6 @@
-# rezin
+# Rezin
 
-- Theme: rezin
+- Theme: Rezin
 - Author: <a href="https://github.com/NicolasGHS" target="_blank" rel="noopener noreferrer">NicolasGHS</a>
 
 ## Preview

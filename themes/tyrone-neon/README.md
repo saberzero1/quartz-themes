@@ -1,6 +1,6 @@
-# tyrone-neon
+# Tyrone Neon
 
-- Theme: tyrone-neon
+- Theme: Tyrone Neon
 - Author: <a href="https://github.com/tyronejosee" target="_blank" rel="noopener noreferrer">Tyrone Jose</a>
 
 ## Preview

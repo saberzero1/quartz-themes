@@ -1,6 +1,6 @@
-# magicuser
+# MagicUser
 
-- Theme: magicuser
+- Theme: MagicUser
 - Author: <a href="https://www.github.com/drbap" target="_blank" rel="noopener noreferrer">Bernardo Pires</a>
 
 ## Preview
