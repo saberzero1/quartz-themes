@@ -114,6 +114,15 @@ describe("Quartz Theme Style Extraction", () => {
               ? centerElement.getCssPropertyValue("background-color")
               : "unset",
           };
+          computedPublishStyles[
+            `.markdown-preview-sizer.markdown-preview-section`
+          ] = {
+            "background-color": centerElement.getCssPropertyValue(
+              "background-color",
+            )
+              ? centerElement.getCssPropertyValue("background-color")
+              : "unset",
+          };
         }
 
         const borderElement = document
@@ -123,6 +132,16 @@ describe("Quartz Theme Style Extraction", () => {
           const borderStyle = getComputedStyle(borderElement);
           const centerStyle = getComputedStyle(centerElement);
           computedStyles[`.popover .popover-inner`] = {
+            "border-color": borderElement.getCssPropertyValue("border-color")
+              ? borderElement.getCssPropertyValue("border-left-color")
+              : "unset",
+            "background-color": centerElement.getCssPropertyValue(
+              "background-color",
+            )
+              ? centerElement.getCssPropertyValue("background-color")
+              : "unset",
+          };
+          computedPublishStyles[`.popover.hover-popover`] = {
             "border-color": borderElement.getCssPropertyValue("border-color")
               ? borderElement.getCssPropertyValue("border-left-color")
               : "unset",
@@ -171,6 +190,19 @@ describe("Quartz Theme Style Extraction", () => {
               : "inherit",
             "border-right-width": "1px",
           };
+          computedPublishStyles[`.side-body-left-column`] = {
+            "background-color": leftSidebar.getCssPropertyValue(
+              "background-color",
+            )
+              ? leftSidebar.getCssPropertyValue("background-color")
+              : "unset",
+            "border-color": borderElement.getCssPropertyValue(
+              "border-right-color",
+            )
+              ? borderElement.getCssPropertyValue("border-right-color")
+              : "inherit",
+            "border-right-width": "1px",
+          };
           computedStyles[`.page > #quartz-body .sidebar.left:has(.explorer)`] =
             {
               "background-color": leftSidebar.getCssPropertyValue(
@@ -196,6 +228,19 @@ describe("Quartz Theme Style Extraction", () => {
           const rightSidebarStyle = getComputedStyle(rightSidebar);
           const borderStyle = getComputedStyle(borderElement);
           computedStyles[`.page > #quartz-body .right.sidebar`] = {
+            "background-color": rightSidebar.getCssPropertyValue(
+              "background-color",
+            )
+              ? rightSidebar.getCssPropertyValue("background-color")
+              : "unset",
+            "border-color": borderElement.getCssPropertyValue(
+              "border-left-color",
+            )
+              ? borderElement.getCssPropertyValue("border-right-color")
+              : "inherit",
+            "border-left-width": "1px",
+          };
+          computedPublishStyles[`.site-body-right-column`] = {
             "background-color": rightSidebar.getCssPropertyValue(
               "background-color",
             )
