@@ -115,7 +115,7 @@ describe("Quartz Theme Style Extraction", () => {
               : "unset",
           };
           computedPublishStyles[
-            `&.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section`
+            `.site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section`
           ] = {
             "background-color": centerElement.getCssPropertyValue(
               "background-color",
@@ -190,7 +190,7 @@ describe("Quartz Theme Style Extraction", () => {
               : "inherit",
             "border-right-width": "1px",
           };
-          computedPublishStyles[`.side-body-left-column`] = {
+          computedPublishStyles[`div.side-body-left-column`] = {
             "background-color": leftSidebar.getCssPropertyValue(
               "background-color",
             )
