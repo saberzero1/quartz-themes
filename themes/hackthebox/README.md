@@ -1,6 +1,6 @@
-# Hackthebox
+# hackthebox
 
-- Theme: Hackthebox
+- Theme: hackthebox
 - Author: <a href="https://github.com/golam71" target="_blank" rel="noopener noreferrer">golam71</a>
 
 ## Preview

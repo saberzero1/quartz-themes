@@ -1,6 +1,6 @@
-# Powered by Lancer
+# powered-by-lancer
 
-- Theme: Powered by Lancer
+- Theme: powered-by-lancer
 - Author: Dion McMillan
 
 ## Preview

@@ -1,6 +1,6 @@
-# RetroOS 98
+# retroos-98
 
-- Theme: RetroOS 98
+- Theme: retroos-98
 - Author: <a href="https://github.com/ThePharaohArt/" target="_blank" rel="noopener noreferrer">ThePharaohArt</a>
 
 ## Preview

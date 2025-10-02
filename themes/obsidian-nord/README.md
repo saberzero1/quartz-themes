@@ -1,6 +1,6 @@
-# Obsidian Nord
+# obsidian-nord
 
-- Theme: Obsidian Nord
+- Theme: obsidian-nord
 - Author: <a href="https://insanum.com" target="_blank" rel="noopener noreferrer">insanum</a>
 
 ## Preview

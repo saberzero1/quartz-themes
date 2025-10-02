@@ -1,6 +1,6 @@
-# Velocity
+# velocity
 
-- Theme: Velocity
+- Theme: velocity
 - Author: Floodlight
 
 ## Preview

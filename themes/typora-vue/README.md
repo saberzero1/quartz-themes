@@ -1,6 +1,6 @@
-# Typora-Vue
+# typora-vue
 
-- Theme: Typora-Vue
+- Theme: typora-vue
 - Author: <a href="https://github.com/ZekunC" target="_blank" rel="noopener noreferrer">ZekunC</a>
 
 ## Preview

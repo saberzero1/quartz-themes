@@ -1,6 +1,6 @@
-# RetroNotes
+# retronotes
 
-- Theme: RetroNotes
+- Theme: retronotes
 - Author: <a href="https://rubencampelo.com" target="_blank" rel="noopener noreferrer">Sr.Campelo</a>
 
 ## Preview

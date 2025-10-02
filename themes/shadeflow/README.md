@@ -1,6 +1,6 @@
-# Shadeflow
+# shadeflow
 
-- Theme: Shadeflow
+- Theme: shadeflow
 - Author: <a href="https://artorias305.github.io/" target="_blank" rel="noopener noreferrer">Artorias</a>
 
 ## Preview

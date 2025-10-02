@@ -1,6 +1,6 @@
-# Terminal
+# terminal
 
-- Theme: Terminal
+- Theme: terminal
 - Author: <a href="https://github.com/zcysxy" target="_blank" rel="noopener noreferrer">@Atlas</a>
 
 ## Preview

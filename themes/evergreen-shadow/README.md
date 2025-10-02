@@ -1,6 +1,6 @@
-# Evergreen-Shadow
+# evergreen-shadow
 
-- Theme: Evergreen-Shadow
+- Theme: evergreen-shadow
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

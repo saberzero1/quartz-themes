@@ -1,6 +1,6 @@
-# LessWrong
+# lesswrong
 
-- Theme: LessWrong
+- Theme: lesswrong
 - Author: <a href="https://x.com/arithmoquine" target="_blank" rel="noopener noreferrer">henry</a>
 
 ## Preview

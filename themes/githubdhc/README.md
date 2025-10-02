@@ -1,6 +1,6 @@
-# GitHubDHC
+# githubdhc
 
-- Theme: GitHubDHC
+- Theme: githubdhc
 - Author: <a href="https://github.com/ScottKirvan" target="_blank" rel="noopener noreferrer">Scott Kirvan</a>
 
 ## Preview

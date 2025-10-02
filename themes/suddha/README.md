@@ -1,6 +1,6 @@
-# Suddha
+# suddha
 
-- Theme: Suddha
+- Theme: suddha
 - Author: dxcore35
 
 ## Preview

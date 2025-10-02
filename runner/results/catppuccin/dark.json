@@ -739,7 +739,7 @@
   "a.internal.tag-link::before": { "color": "rgb(180, 190, 254)" },
   "blockquote": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-inline-start": "2px solid rgb(180, 190, 254)",
+    "border-inline-start": "2px solid rgb(245, 224, 220)",
     "font-family": "\"??\", Vollkorn, -apple-system, blinkmacsystemfont, \"Segoe UI\", \"Microsoft YaHei Light\", roboto, inter, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-style": "normal",
     "margin-inline-end": "0px",

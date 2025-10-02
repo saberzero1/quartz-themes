@@ -1,6 +1,6 @@
-# Border
+# border
 
-- Theme: Border
+- Theme: border
 - Author: <a href="https://github.com/Akifyss" target="_blank" rel="noopener noreferrer">Akifyss</a>
 
 ## Preview

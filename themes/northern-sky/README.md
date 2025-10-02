@@ -1,6 +1,6 @@
-# Northern-Sky
+# northern-sky
 
-- Theme: Northern-Sky
+- Theme: northern-sky
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

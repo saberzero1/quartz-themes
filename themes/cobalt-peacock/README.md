@@ -1,6 +1,6 @@
-# Cobalt Peacock
+# cobalt-peacock
 
-- Theme: Cobalt Peacock
+- Theme: cobalt-peacock
 - Author: dpavaoman
 
 ## Preview

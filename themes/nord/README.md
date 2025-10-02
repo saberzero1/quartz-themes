@@ -1,6 +1,6 @@
-# Nord
+# nord
 
-- Theme: Nord
+- Theme: nord
 - Author: <a href="https://github.com/Lucas-Haux" target="_blank" rel="noopener noreferrer">Lucas-Haux</a>
 
 ## Preview

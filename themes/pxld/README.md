@@ -1,6 +1,6 @@
-# Pxld
+# pxld
 
-- Theme: Pxld
+- Theme: pxld
 - Author: <a href="https://github.com/Lina674" target="_blank" rel="noopener noreferrer">Lina674</a>
 
 ## Preview

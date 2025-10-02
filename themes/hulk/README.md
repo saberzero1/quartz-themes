@@ -1,6 +1,6 @@
-# Hulk
+# hulk
 
-- Theme: Hulk
+- Theme: hulk
 - Author: Reggie
 
 ## Preview

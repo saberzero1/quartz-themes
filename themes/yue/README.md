@@ -1,6 +1,6 @@
-# Yue
+# yue
 
-- Theme: Yue
+- Theme: yue
 - Author: <a href="https://twitter.com/notgixo" target="_blank" rel="noopener noreferrer">Gixo</a>
 
 ## Preview

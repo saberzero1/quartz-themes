@@ -1,6 +1,6 @@
-# Trace Labs
+# trace-labs
 
-- Theme: Trace Labs
+- Theme: trace-labs
 - Author: <a href="https://github.com/tracelabs" target="_blank" rel="noopener noreferrer">Trace Labs</a>
 
 ## Preview

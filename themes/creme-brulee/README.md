@@ -1,6 +1,6 @@
-# Creme brulee
+# creme-brulee
 
-- Theme: Creme brulee
+- Theme: creme-brulee
 - Author: <a href="https://github.com/anareaty" target="_blank" rel="noopener noreferrer">anareaty</a>
 
 ## Preview

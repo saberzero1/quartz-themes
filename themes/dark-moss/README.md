@@ -1,6 +1,6 @@
-# Dark Moss
+# dark-moss
 
-- Theme: Dark Moss
+- Theme: dark-moss
 - Author: <a href="https://github.com/sergey900553" target="_blank" rel="noopener noreferrer">sergey</a>
 
 ## Preview

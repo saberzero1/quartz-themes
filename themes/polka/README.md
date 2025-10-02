@@ -1,6 +1,6 @@
-# Polka
+# polka
 
-- Theme: Polka
+- Theme: polka
 - Author: callumhackett
 
 ## Preview

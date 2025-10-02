@@ -1,6 +1,6 @@
-# Sad Machine Druid
+# sad-machine-druid
 
-- Theme: Sad Machine Druid
+- Theme: sad-machine-druid
 - Author: Halftroll
 
 ## Preview

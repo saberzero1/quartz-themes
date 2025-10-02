@@ -1,6 +1,6 @@
-# Adwaita
+# adwaita
 
-- Theme: Adwaita
+- Theme: adwaita
 - Author: <a href="https://github.com/birneee" target="_blank" rel="noopener noreferrer">@birneee</a>
 
 ## Preview

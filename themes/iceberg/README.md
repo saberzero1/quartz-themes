@@ -1,6 +1,6 @@
-# Iceberg
+# iceberg
 
-- Theme: Iceberg
+- Theme: iceberg
 - Author: izumin5210
 
 ## Preview

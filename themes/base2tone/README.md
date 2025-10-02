@@ -1,6 +1,6 @@
-# Base2Tone
+# base2tone
 
-- Theme: Base2Tone
+- Theme: base2tone
 - Author: deathau
 
 ## Preview

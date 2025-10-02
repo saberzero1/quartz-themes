@@ -1,6 +1,6 @@
-# Ursa
+# ursa
 
-- Theme: Ursa
+- Theme: ursa
 - Author: ezs
 
 ## Preview

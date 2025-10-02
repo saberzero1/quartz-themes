@@ -1,6 +1,6 @@
-# Osaka Jade
+# osaka-jade
 
-- Theme: Osaka Jade
+- Theme: osaka-jade
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

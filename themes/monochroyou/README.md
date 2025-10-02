@@ -1,6 +1,6 @@
-# monochroYOU
+# monochroyou
 
-- Theme: monochroYOU
+- Theme: monochroyou
 - Author: <a href="https://github.com/GuiMar10" target="_blank" rel="noopener noreferrer">GuiMar10</a>
 
 ## Preview

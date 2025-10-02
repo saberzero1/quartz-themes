@@ -1,6 +1,6 @@
-# GitHub Theme
+# github-theme
 
-- Theme: GitHub Theme
+- Theme: github-theme
 - Author: <a href="https://github.com/krios2146" target="_blank" rel="noopener noreferrer">@krios2146</a>
 
 ## Preview

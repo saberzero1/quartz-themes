@@ -1,6 +1,6 @@
-# Sodalite
+# sodalite
 
-- Theme: Sodalite
+- Theme: sodalite
 - Author: <a href="https://twitter.com/tomzorz_" target="_blank" rel="noopener noreferrer">tomzorz</a>
 
 ## Preview

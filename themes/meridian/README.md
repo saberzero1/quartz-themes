@@ -1,6 +1,6 @@
-# Meridian
+# meridian
 
-- Theme: Meridian
+- Theme: meridian
 - Author: <a href="https://github.com/mvahaste" target="_blank" rel="noopener noreferrer">mvahaste</a>
 
 ## Preview

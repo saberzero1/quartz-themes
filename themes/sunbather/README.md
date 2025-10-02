@@ -1,6 +1,6 @@
-# Sunbather
+# sunbather
 
-- Theme: Sunbather
+- Theme: sunbather
 - Author: <a href="https://github.com/babidisrc" target="_blank" rel="noopener noreferrer">babidisrc</a>
 
 ## Preview

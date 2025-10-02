@@ -1,6 +1,6 @@
-# Colored Candy
+# colored-candy
 
-- Theme: Colored Candy
+- Theme: colored-candy
 - Author: Erika Gozar
 
 ## Preview

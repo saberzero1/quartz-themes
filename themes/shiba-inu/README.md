@@ -1,6 +1,6 @@
-# Shiba Inu
+# shiba-inu
 
-- Theme: Shiba Inu
+- Theme: shiba-inu
 - Author: <a href="https://github.com/faroukx" target="_blank" rel="noopener noreferrer">Farouk</a>
 
 ## Preview

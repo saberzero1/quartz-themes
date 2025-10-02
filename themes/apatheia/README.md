@@ -1,6 +1,6 @@
-# Apatheia
+# apatheia
 
-- Theme: Apatheia
+- Theme: apatheia
 - Author: <a href="https://github.com/AmadeusWM" target="_blank" rel="noopener noreferrer">@AmadeusWM, @Zenneh</a>
 
 ## Preview

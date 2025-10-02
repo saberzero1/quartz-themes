@@ -1,6 +1,6 @@
-# Underwater
+# underwater
 
-- Theme: Underwater
+- Theme: underwater
 - Author: <a href="https://github.com/Seniblue" target="_blank" rel="noopener noreferrer">Seniblue</a>
 
 ## Preview

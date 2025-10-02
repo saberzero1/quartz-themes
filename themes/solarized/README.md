@@ -1,6 +1,6 @@
-# Solarized
+# solarized
 
-- Theme: Solarized
+- Theme: solarized
 - Author: <a href="https://github.com/harmtemolder" target="_blank" rel="noopener noreferrer">harmtemolder</a>
 
 ## Preview

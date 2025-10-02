@@ -1,6 +1,6 @@
-# Phoenix
+# phoenix
 
-- Theme: Phoenix
+- Theme: phoenix
 - Author: <a href="https://github.com/RyzenFromFire" target="_blank" rel="noopener noreferrer">RyzenFromFire</a>
 
 ## Preview

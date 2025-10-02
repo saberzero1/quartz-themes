@@ -1,6 +1,6 @@
-# Cybertron Shifted
+# cybertron-shifted
 
-- Theme: Cybertron Shifted
+- Theme: cybertron-shifted
 - Author: <a href="https://github.com/JorgEdmundo" target="_blank" rel="noopener noreferrer">JorgEdmundo</a>
 
 ## Preview
