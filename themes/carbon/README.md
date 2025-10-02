@@ -1,6 +1,6 @@
-# carbon
+# Carbon
 
-- Theme: carbon
+- Theme: Carbon
 - Author: <a href="https://vhbelvadi.com" target="_blank" rel="noopener noreferrer">V.H. Belvadi</a>
 - Support the author: <a href="https://buymeacoffee.com/vhbelvadi" target="_blank" rel="noopener noreferrer">Donate</a>
 

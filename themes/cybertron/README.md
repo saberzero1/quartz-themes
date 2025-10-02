@@ -1,6 +1,6 @@
-# cybertron
+# Cybertron
 
-- Theme: cybertron
+- Theme: Cybertron
 - Author: nickmilo
 
 ## Preview

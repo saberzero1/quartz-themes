@@ -1,6 +1,6 @@
-# perso
+# Perso
 
-- Theme: perso
+- Theme: Perso
 - Author: <a href="https://blog.behrouze.com" target="_blank" rel="noopener noreferrer">Behrouze</a>
 
 ## Preview

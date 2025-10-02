@@ -1,6 +1,6 @@
-# obsidian-boom
+# Obsidian Boom
 
-- Theme: obsidian-boom
+- Theme: Obsidian Boom
 - Author: Sainadh
 
 ## Preview

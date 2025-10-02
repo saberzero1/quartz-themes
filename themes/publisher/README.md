@@ -1,6 +1,6 @@
-# publisher
+# Publisher
 
-- Theme: publisher
+- Theme: Publisher
 - Author: <a href="https://github.com/aidanastridge" target="_blank" rel="noopener noreferrer">aidanastridge</a>
 
 ## Preview

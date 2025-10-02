@@ -1,6 +1,6 @@
-# ultra-lobster
+# Ultra Lobster
 
-- Theme: ultra-lobster
+- Theme: Ultra Lobster
 - Author: kneecaps
 
 ## Preview

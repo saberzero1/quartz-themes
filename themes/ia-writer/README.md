@@ -1,6 +1,6 @@
-# ia-writer
+# iA Writer
 
-- Theme: ia-writer
+- Theme: iA Writer
 - Author: <a href="http://github.com/mrowa44" target="_blank" rel="noopener noreferrer">mrowa44</a>
 - Support the author: <a href="https://www.buymeacoffee.com/mrowa44" target="_blank" rel="noopener noreferrer">Donate</a>
 

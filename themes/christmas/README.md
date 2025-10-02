@@ -1,6 +1,6 @@
-# christmas
+# Christmas
 
-- Theme: christmas
+- Theme: Christmas
 - Author: deathau
 
 ## Preview

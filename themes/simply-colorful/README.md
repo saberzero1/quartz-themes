@@ -1,6 +1,6 @@
-# simply-colorful
+# Simply Colorful
 
-- Theme: simply-colorful
+- Theme: Simply Colorful
 - Author: <a href="https://github.com/LorenzoPegorari" target="_blank" rel="noopener noreferrer">Lorenzo Pegorari</a>
 
 ## Preview

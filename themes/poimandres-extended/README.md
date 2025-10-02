@@ -1,6 +1,6 @@
-# poimandres-extended
+# Poimandres Extended
 
-- Theme: poimandres-extended
+- Theme: Poimandres Extended
 - Author: <a href="https://github.com/bastiangx" target="_blank" rel="noopener noreferrer">bastiangx</a>
 
 ## Preview

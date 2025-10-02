@@ -1,6 +1,6 @@
-# atomus
+# Atomus
 
-- Theme: atomus
+- Theme: Atomus
 - Author: <a href="https://github.com/PedroHenrique17" target="_blank" rel="noopener noreferrer">PedroHenrique17</a>
 
 ## Preview

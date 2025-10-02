@@ -1,6 +1,6 @@
-# flexoki-warm
+# Flexoki Warm
 
-- Theme: flexoki-warm
+- Theme: Flexoki Warm
 - Author: @ofalvai
 
 ## Preview

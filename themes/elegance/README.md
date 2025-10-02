@@ -1,6 +1,6 @@
-# elegance
+# Elegance
 
-- Theme: elegance
+- Theme: Elegance
 - Author: <a href="https://github.com/Victologo/elegance-theme" target="_blank" rel="noopener noreferrer">Victologo</a>
 
 ## Preview

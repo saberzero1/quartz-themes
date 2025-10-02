@@ -1,6 +1,6 @@
-# w95
+# W95
 
-- Theme: w95
+- Theme: W95
 - Author: <a href="https://github.com/phchang" target="_blank" rel="noopener noreferrer">@phchang</a>
 - Support the author: <a href="https://buymeacoffee.com/phchang" target="_blank" rel="noopener noreferrer">Donate</a>
 

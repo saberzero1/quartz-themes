@@ -1,6 +1,6 @@
-# mistymauve
+# MistyMauve
 
-- Theme: mistymauve
+- Theme: MistyMauve
 - Author: <a href="https://github.com/RaveSplash" target="_blank" rel="noopener noreferrer">RaveSplash</a>
 
 ## Preview

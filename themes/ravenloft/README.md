@@ -1,6 +1,6 @@
-# ravenloft
+# Ravenloft
 
-- Theme: ravenloft
+- Theme: Ravenloft
 - Author: Ivan Devyatko
 
 ## Preview

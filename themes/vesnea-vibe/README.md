@@ -1,6 +1,6 @@
-# vesnea-vibe
+# Vesnea Vibe
 
-- Theme: vesnea-vibe
+- Theme: Vesnea Vibe
 - Author: <a href="https://seavalanche.github.io/projectseaweb/" target="_blank" rel="noopener noreferrer">Seavalanche</a>
 - Support the author: <a href="https://ko-fi.com/seavalanche" target="_blank" rel="noopener noreferrer">Donate</a>
 

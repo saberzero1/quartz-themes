@@ -1,6 +1,6 @@
-# oldsidian-purple
+# Oldsidian Purple
 
-- Theme: oldsidian-purple
+- Theme: Oldsidian Purple
 - Author: <a href="https://github.com/ltctceplrm" target="_blank" rel="noopener noreferrer">@ltctceplrm</a>
 
 ## Preview

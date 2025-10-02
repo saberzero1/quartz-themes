@@ -1,6 +1,6 @@
-# abyssal
+# Abyssal
 
-- Theme: abyssal
+- Theme: Abyssal
 - Author: tazpellegrini
 
 ## Preview

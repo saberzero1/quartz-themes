@@ -1,6 +1,6 @@
-# minimal
+# Minimal
 
-- Theme: minimal
+- Theme: Minimal
 - Author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
 - Support the author: <a href="https://www.buymeacoffee.com/kepano" target="_blank" rel="noopener noreferrer">Donate</a>
 

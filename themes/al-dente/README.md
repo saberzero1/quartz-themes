@@ -1,6 +1,6 @@
-# al-dente
+# Al Dente
 
-- Theme: al-dente
+- Theme: Al Dente
 - Author: chad-bennett
 
 ## Preview

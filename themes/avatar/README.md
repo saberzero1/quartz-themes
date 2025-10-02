@@ -1,6 +1,6 @@
-# avatar
+# Avatar
 
-- Theme: avatar
+- Theme: Avatar
 - Author: cxj05h
 
 ## Preview

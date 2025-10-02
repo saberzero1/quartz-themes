@@ -1,6 +1,6 @@
-# velvet-moon
+# Velvet-Moon
 
-- Theme: velvet-moon
+- Theme: Velvet-Moon
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

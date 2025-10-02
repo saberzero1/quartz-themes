@@ -1,6 +1,6 @@
-# sanguine
+# Sanguine
 
-- Theme: sanguine
+- Theme: Sanguine
 - Author: <a href="https://www.buymeacoffee.com/Satchelmouth" target="_blank" rel="noopener noreferrer">Satchelmouth</a>
 
 ## Preview

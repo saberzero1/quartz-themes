@@ -1,6 +1,6 @@
-# emerald-echo
+# Emerald Echo
 
-- Theme: emerald-echo
+- Theme: Emerald Echo
 - Author: <a href="https://codeberg.org/MalcolmMielle" target="_blank" rel="noopener noreferrer">Malcolm Mielle</a>
 
 ## Preview

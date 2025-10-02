@@ -1,6 +1,6 @@
-# onenice
+# OneNice
 
-- Theme: onenice
+- Theme: OneNice
 - Author: S.Sunhaloo - P.Roy
 
 ## Preview

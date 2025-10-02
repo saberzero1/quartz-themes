@@ -1,6 +1,6 @@
-# vesper
+# Vesper
 
-- Theme: vesper
+- Theme: Vesper
 - Author: <a href="https://github.com/omarrashad" target="_blank" rel="noopener noreferrer">@omarrashad</a>
 
 ## Preview

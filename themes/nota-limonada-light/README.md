@@ -1,6 +1,6 @@
-# nota-limonada-light
+# Nota Limonada Light
 
-- Theme: nota-limonada-light
+- Theme: Nota Limonada Light
 - Author: <a href="https://github.com/crishood" target="_blank" rel="noopener noreferrer">CrisHood</a>
 
 ## Preview

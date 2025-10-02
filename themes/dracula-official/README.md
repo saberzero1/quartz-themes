@@ -1,6 +1,6 @@
-# dracula-official
+# Dracula Official
 
-- Theme: dracula-official
+- Theme: Dracula Official
 - Author: <a href="https://gitlab.com/chrismettal" target="_blank" rel="noopener noreferrer">Dracula</a>
 
 ## Preview

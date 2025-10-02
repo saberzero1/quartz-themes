@@ -1,6 +1,6 @@
-# poimandres
+# Poimandres
 
-- Theme: poimandres
+- Theme: Poimandres
 - Author: <a href="https://github.com/yoGhastly" target="_blank" rel="noopener noreferrer">Diego Espinosa</a>
 
 ## Preview

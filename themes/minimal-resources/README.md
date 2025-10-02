@@ -1,6 +1,6 @@
-# minimal-resources
+# Minimal-Resources
 
-- Theme: minimal-resources
+- Theme: Minimal-Resources
 - Author: <a href="https://github.com/jonsnow231" target="_blank" rel="noopener noreferrer">jonsnow231</a>
 
 ## Preview

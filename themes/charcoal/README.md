@@ -1,6 +1,6 @@
-# charcoal
+# Charcoal
 
-- Theme: charcoal
+- Theme: Charcoal
 - Author: bernardo_v
 
 ## Preview

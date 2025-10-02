@@ -1,6 +1,6 @@
-# penumbra
+# Penumbra
 
-- Theme: penumbra
+- Theme: Penumbra
 - Author: <a href="https://jbisits.github.io/" target="_blank" rel="noopener noreferrer">Josef Bisits</a>
 
 ## Preview

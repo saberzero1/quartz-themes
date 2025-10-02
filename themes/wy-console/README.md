@@ -1,6 +1,6 @@
-# wy-console
+# WY Console
 
-- Theme: wy-console
+- Theme: WY Console
 - Author: <a href="https://www.buymeacoffee.com/Satchelmouth" target="_blank" rel="noopener noreferrer">Satchelmouth</a>
 
 ## Preview

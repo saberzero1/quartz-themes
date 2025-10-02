@@ -1,6 +1,6 @@
-# discordian
+# Discordian
 
-- Theme: discordian
+- Theme: Discordian
 - Author: radekkozak
 
 ## Preview

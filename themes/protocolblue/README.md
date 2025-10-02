@@ -1,6 +1,6 @@
-# protocolblue
+# ProtocolBlue
 
-- Theme: protocolblue
+- Theme: ProtocolBlue
 - Author: <a href="https://cosmodiumcs.com" target="_blank" rel="noopener noreferrer">bluecosmo</a>
 
 ## Preview

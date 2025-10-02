@@ -1,6 +1,6 @@
-# blackbird
+# Blackbird
 
-- Theme: blackbird
+- Theme: Blackbird
 - Author: Ivan Chernov
 
 ## Preview

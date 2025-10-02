@@ -1,6 +1,6 @@
-# eldritch
+# Eldritch
 
-- Theme: eldritch
+- Theme: Eldritch
 - Author: <a href="https://github.com/eldritch-theme" target="_blank" rel="noopener noreferrer">Eldritch</a>
 
 ## Preview
