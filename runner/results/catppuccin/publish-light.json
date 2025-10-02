@@ -1,7 +1,4 @@
 {
-  "&.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
-    "background-color": "rgb(239, 241, 245)"
-  },
   "&.theme-light": {
     "--accent-h": "254",
     "--accent-l": "68%",
@@ -1342,10 +1339,8 @@
     "transition": "all",
     "user-select": "text"
   },
-  ".side-body-left-column": {
-    "background-color": "rgb(230, 233, 239)",
-    "border-color": "rgb(204, 208, 218)",
-    "border-right-width": "1px"
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(239, 241, 245)"
   },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgba(220, 224, 232, 0.3)",
@@ -1436,6 +1431,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(76, 79, 105)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(230, 233, 239)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(230, 233, 239)",
+    "border-color": "rgb(204, 208, 218)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(114, 135, 253)",
