@@ -381,6 +381,7 @@ describe("Quartz Theme Style Extraction", () => {
     const [theme, variation] = manifest.name.split(".");
     console.log(`Theme: ${theme}, Variation: ${variation}`);
     const preset = JSON.stringify(manifest.style_settings ?? {});
+    console.log(`Preset: ${preset}`);
     // TODO: style settings functions should be used to apply settings
     // e.g. const ss = this.app.plugins.getPlugin("obsidian-style-settings").settingsManager
     // https://github.com/mgmeyers/obsidian-style-settings/blob/dfa9f7c81f9345b9bca47c128339e0e00ecd2aee/src/ImportModal.ts#L48
@@ -418,28 +419,24 @@ describe("Quartz Theme Style Extraction", () => {
       before(async () => {
         const darkPage = browser.getObsidianPage();
         await darkPage.resetVault();
-        await darkPage.enablePlugin("plugin-reloader");
-        await darkPage.enablePlugin("obsidian-style-settings");
-        await darkPage.enablePlugin("obsidian-view-mode-by-frontmatter");
-        await darkPage.enablePlugin("dataview");
       });
       it(`should extract styles for theme: ${theme} in dark mode`, async () => {
         const darkPage = browser.getObsidianPage();
-        await darkPage.write(
-          "./.obsidian/plugins/obsidian-style-settings/data.json",
-          preset,
-        );
         await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-dark");
         await darkPage.setTheme(theme);
-        await browser.executeObsidian(({ app }) => {
+        console.log(`Applying preset: ${preset}`);
+        await browser.executeObsidian(async ({ app }, preset) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
           );
           if (clickableFolder) {
             clickableFolder.click();
           }
-        });
+          await app.plugins
+            .getPlugin("obsidian-style-settings")
+            .settingsManager.setSettings(JSON.parse(JSON.stringify(preset)));
+        }, preset);
         await sleep(500);
         await browser.executeObsidianCommand(
           "plugin-reloader:obsidian-style-settings",
@@ -551,20 +548,21 @@ describe("Quartz Theme Style Extraction", () => {
       });
       it(`should extract styles for theme: ${theme} in light mode`, async () => {
         const lightPage = browser.getObsidianPage();
+        await lightPage.loadWorkspaceLayout("default");
+        await browser.executeObsidianCommand("theme:use-light");
+        await lightPage.setTheme(theme);
         await lightPage.write(
           "./.obsidian/plugins/obsidian-style-settings/data.json",
           preset,
         );
-        await lightPage.loadWorkspaceLayout("default");
-        await browser.executeObsidianCommand("theme:use-light");
-        await lightPage.setTheme(theme);
-        await browser.executeObsidian(({ app }) => {
+        await browser.executeObsidian(async ({ app }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
           );
           if (clickableFolder) {
             clickableFolder.click();
           }
+          await app.plugins.getPlugin("obsidian-style-settings").loadData();
         });
         await sleep(500);
         await browser.executeObsidianCommand(
