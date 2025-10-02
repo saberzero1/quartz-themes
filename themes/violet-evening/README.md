@@ -1,6 +1,6 @@
-# Violet Evening
+# violet-evening
 
-- Theme: Violet Evening
+- Theme: violet-evening
 - Author: aitaDev
 
 ## Preview

@@ -1,6 +1,6 @@
-# SALEM
+# salem
 
-- Theme: SALEM
+- Theme: salem
 - Author: <a href="https://salemelatar.vercel.app" target="_blank" rel="noopener noreferrer">Salem mohsen</a>
 
 ## Preview

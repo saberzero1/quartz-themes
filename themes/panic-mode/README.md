@@ -1,6 +1,6 @@
-# Panic Mode
+# panic-mode
 
-- Theme: Panic Mode
+- Theme: panic-mode
 - Author: bernardo_v
 
 ## Preview

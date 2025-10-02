@@ -1,6 +1,6 @@
-# Pine Forest Berry
+# pine-forest-berry
 
-- Theme: Pine Forest Berry
+- Theme: pine-forest-berry
 - Author: Nilahn
 
 ## Preview

@@ -1,6 +1,6 @@
-# Arcane
+# arcane
 
-- Theme: Arcane
+- Theme: arcane
 - Author: <a href="https://github.com/xRyul" target="_blank" rel="noopener noreferrer">xRyul</a>
 
 ## Preview

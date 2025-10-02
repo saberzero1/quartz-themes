@@ -1,6 +1,6 @@
-# Purple Owl
+# purple-owl
 
-- Theme: Purple Owl
+- Theme: purple-owl
 - Author: <a href="https://zacharyc.com" target="_blank" rel="noopener noreferrer">zacharyc</a>
 
 ## Preview

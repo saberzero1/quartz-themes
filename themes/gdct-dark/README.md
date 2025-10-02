@@ -1,6 +1,6 @@
-# GDCT Dark
+# gdct-dark
 
-- Theme: GDCT Dark
+- Theme: gdct-dark
 - Author: bernardo_v
 
 ## Preview

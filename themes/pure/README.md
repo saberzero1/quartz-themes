@@ -1,6 +1,6 @@
-# Pure
+# pure
 
-- Theme: Pure
+- Theme: pure
 - Author: Lychi
 
 ## Preview

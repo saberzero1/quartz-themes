@@ -1,6 +1,6 @@
-# Vortex
+# vortex
 
-- Theme: Vortex
+- Theme: vortex
 - Author: <a href="https://github.com/abhimangs" target="_blank" rel="noopener noreferrer">Abhiman G S</a>
 
 ## Preview

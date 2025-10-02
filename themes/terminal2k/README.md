@@ -1,6 +1,6 @@
-# Terminal2K
+# terminal2k
 
-- Theme: Terminal2K
+- Theme: terminal2k
 - Author: <a href="https://github.com/isax785" target="_blank" rel="noopener noreferrer">isax785</a>
 
 ## Preview

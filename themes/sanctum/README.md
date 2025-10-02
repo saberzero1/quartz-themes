@@ -1,6 +1,6 @@
-# Sanctum
+# sanctum
 
-- Theme: Sanctum
+- Theme: sanctum
 - Author: <a href="https://github.com/jdanielmourao/" target="_blank" rel="noopener noreferrer">@jdanielmourao</a>
 
 ## Preview

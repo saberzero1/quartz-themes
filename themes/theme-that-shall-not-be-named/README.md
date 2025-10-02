@@ -1,6 +1,6 @@
-# Theme-That-Shall-Not-Be-Named
+# theme-that-shall-not-be-named
 
-- Theme: Theme-That-Shall-Not-Be-Named
+- Theme: theme-that-shall-not-be-named
 - Author: Chop the Viking
 
 ## Preview

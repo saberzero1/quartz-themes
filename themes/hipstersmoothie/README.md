@@ -1,6 +1,6 @@
-# Hipstersmoothie
+# hipstersmoothie
 
-- Theme: Hipstersmoothie
+- Theme: hipstersmoothie
 - Author: Andrew Lisowski
 
 ## Preview

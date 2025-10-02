@@ -1,6 +1,6 @@
-# Vanilla Palettes
+# vanilla-palettes
 
-- Theme: Vanilla Palettes
+- Theme: vanilla-palettes
 - Author: <a href="https://github.com/GnRlLeclerc" target="_blank" rel="noopener noreferrer">Thibaut de Saivre</a>
 
 ## Preview

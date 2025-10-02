@@ -1,6 +1,6 @@
-# Purple Aurora
+# purple-aurora
 
-- Theme: Purple Aurora
+- Theme: purple-aurora
 - Author: <Serice
 
 ## Preview

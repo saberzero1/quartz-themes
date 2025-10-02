@@ -1,6 +1,6 @@
-# Nebula
+# nebula
 
-- Theme: Nebula
+- Theme: nebula
 - Author: <a href="https://github.com/dlccyes" target="_blank" rel="noopener noreferrer">dlccyes</a>
 
 ## Preview

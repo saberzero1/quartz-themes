@@ -50,6 +50,7 @@ import {
   writePrettier,
 } from "./util/writer.mjs";
 import getManifestCollection from "./extensions/manifest.mjs";
+import getThemeCollection from "./extensions/themelist.mjs";
 import generateStatic from "./util/static-custom-properties.mjs";
 import * as fs from "fs";
 import * as path from "path";
@@ -90,36 +91,36 @@ if (args.includes("--copy")) {
 }
 
 const manifestCollection = getManifestCollection();
+const themeCollection = getThemeCollection();
 
 // STEP 3
 clearDirectoryContents(`./themes`);
 
-manifestCollection.forEach((manifest) => {
-  if (!fs.existsSync(`./themes/${getTheme(manifest)}`)) {
-    fs.mkdirSync(`./themes/${getTheme(manifest)}`);
+themeCollection.forEach((manifest) => {
+  if (!fs.existsSync(`./themes/${manifest.name}`)) {
+    fs.mkdirSync(`./themes/${manifest.name}`);
   }
 });
 
 // README.md
-manifestCollection.forEach((manifest) => {
-  copyFileToDirectory(
-    `./templates/README.md`,
-    `./themes/${getTheme(manifest)}`,
-  );
+themeCollection.forEach((manifest) => {
+  copyFileToDirectory(`./templates/README.md`, `./themes/${manifest.name}`);
 });
 
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((manifest) => {
+  const nameValue = manifest.name.split(".")[0];
+  const fullName = manifestCollection.find((m) => m.name === nameValue)?.name;
   replaceInFile(
-    `./themes/${getTheme(manifest)}/README.md`,
+    `./themes/${manifest.name}/README.md`,
     "%OBSIDIAN_THEME_NAME%",
-    getValueFromDictionary(manifest, "name"),
+    fullName ? fullName : nameValue,
   );
 });
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((manifest) => {
   replaceInFile(
-    `./themes/${getTheme(manifest)}/README.md`,
+    `./themes/${manifest.name}/README.md`,
     "%OBSIDIAN_THEME_NAME_SANITIZED%",
-    getTheme(manifest),
+    manifest.name,
   );
 });
 manifestCollection.forEach((manifest) => {
@@ -149,16 +150,16 @@ manifestCollection.forEach((manifest) => {
     result,
   );
 });
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((manifest) => {
   fs.copyFileSync(
-    `./runner/results/${getTheme(manifest)}/_index.scss`,
-    `./themes/${getTheme(manifest)}/_index.scss`,
+    `./runner/results/${manifest.name}/_index.scss`,
+    `./themes/${manifest.name}/_index.scss`,
   );
 });
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((manifest) => {
   fs.copyFileSync(
-    `./runner/results/${getTheme(manifest)}/publish.css`,
-    `./themes/${getTheme(manifest)}/publish.css`,
+    `./runner/results/${manifest.name}/publish.css`,
+    `./themes/${manifest.name}/publish.css`,
   );
 });
-updateMiscFiles(manifestCollection);
+updateMiscFiles(manifestCollection, themeCollection);

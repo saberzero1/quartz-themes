@@ -1,6 +1,6 @@
-# Prime
+# prime
 
-- Theme: Prime
+- Theme: prime
 - Author: <a href="https://rivea0.github.io" target="_blank" rel="noopener noreferrer">Eda</a>
 
 ## Preview

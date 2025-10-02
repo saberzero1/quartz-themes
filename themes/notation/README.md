@@ -1,6 +1,6 @@
-# Notation
+# notation
 
-- Theme: Notation
+- Theme: notation
 - Author: deathau
 
 ## Preview

@@ -1,6 +1,6 @@
-# Vermilion
+# vermilion
 
-- Theme: Vermilion
+- Theme: vermilion
 - Author: <a href="https://github.com/vigor-13" target="_blank" rel="noopener noreferrer">vigor-13</a>
 
 ## Preview

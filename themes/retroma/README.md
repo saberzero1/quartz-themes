@@ -1,6 +1,6 @@
-# Retroma
+# retroma
 
-- Theme: Retroma
+- Theme: retroma
 - Author: <a href="https://github.com/emarpiee" target="_blank" rel="noopener noreferrer">emarpiee</a>
 
 ## Preview

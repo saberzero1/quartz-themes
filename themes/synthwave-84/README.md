@@ -1,6 +1,6 @@
-# Synthwave '84
+# synthwave-84
 
-- Theme: Synthwave '84
+- Theme: synthwave-84
 - Author: George Jose
 
 ## Preview

@@ -1,6 +1,6 @@
-# Typewriter
+# typewriter
 
-- Theme: Typewriter
+- Theme: typewriter
 - Author: <a href="https://github.com/crashmoney" target="_blank" rel="noopener noreferrer">crashmoney</a>
 
 ## Preview

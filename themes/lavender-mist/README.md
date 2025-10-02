@@ -1,6 +1,6 @@
-# Lavender-Mist
+# lavender-mist
 
-- Theme: Lavender-Mist
+- Theme: lavender-mist
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

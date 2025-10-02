@@ -1,6 +1,6 @@
-# Dracula for Obsidian
+# dracula-for-obsidian
 
-- Theme: Dracula for Obsidian
+- Theme: dracula-for-obsidian
 - Author: jarodise
 
 ## Preview

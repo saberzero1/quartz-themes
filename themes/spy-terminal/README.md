@@ -1,6 +1,6 @@
-# Spy Terminal
+# spy-terminal
 
-- Theme: Spy Terminal
+- Theme: spy-terminal
 - Author: <a href="buymeacoffee.com/saeli" target="_blank" rel="noopener noreferrer">IchiroFukuda</a>
 
 ## Preview

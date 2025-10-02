@@ -1,6 +1,6 @@
-# Lumines
+# lumines
 
-- Theme: Lumines
+- Theme: lumines
 - Author: <a href="https://github.com/Avesend" target="_blank" rel="noopener noreferrer">Avesend</a>
 
 ## Preview

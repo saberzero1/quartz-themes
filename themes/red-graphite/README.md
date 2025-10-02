@@ -1,6 +1,6 @@
-# Red Graphite
+# red-graphite
 
-- Theme: Red Graphite
+- Theme: red-graphite
 - Author: <a href="https://github.com/seanwcom/Red-Graphite-for-Obsidian" target="_blank" rel="noopener noreferrer">Sean Williams</a>
 
 ## Preview

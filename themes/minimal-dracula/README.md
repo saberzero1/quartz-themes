@@ -1,6 +1,6 @@
-# Minimal Dracula
+# minimal-dracula
 
-- Theme: Minimal Dracula
+- Theme: minimal-dracula
 - Author: <a href="https://github.com/druxorey" target="_blank" rel="noopener noreferrer">Druxorey</a>
 
 ## Preview

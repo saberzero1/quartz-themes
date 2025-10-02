@@ -1,6 +1,6 @@
-# Dunite
+# dunite
 
-- Theme: Dunite
+- Theme: dunite
 - Author: <a href="https://ch0live.github.io/home" target="_blank" rel="noopener noreferrer">ch0live</a>
 
 ## Preview

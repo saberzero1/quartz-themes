@@ -1,6 +1,6 @@
-# Omega
+# omega
 
-- Theme: Omega
+- Theme: omega
 - Author: <a href="https://github.com/OmegaCentauri68" target="_blank" rel="noopener noreferrer">OmegaC</a>
 - Support the author: <a href="https://ko-fi.com/omegac" target="_blank" rel="noopener noreferrer">Donate</a>
 

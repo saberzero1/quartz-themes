@@ -1,6 +1,6 @@
-# Pisum
+# pisum
 
-- Theme: Pisum
+- Theme: pisum
 - Author: MooddooM
 
 ## Preview

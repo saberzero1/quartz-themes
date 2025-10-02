@@ -1,6 +1,6 @@
-# Neutral Academia
+# neutral-academia
 
-- Theme: Neutral Academia
+- Theme: neutral-academia
 - Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview

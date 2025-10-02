@@ -1,6 +1,6 @@
-# Nightfox
+# nightfox
 
-- Theme: Nightfox
+- Theme: nightfox
 - Author: <a href="https://github.com/mbromell" target="_blank" rel="noopener noreferrer">mbromell</a>
 
 ## Preview

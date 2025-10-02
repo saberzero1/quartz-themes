@@ -1,6 +1,6 @@
-# Matrix
+# matrix
 
-- Theme: Matrix
+- Theme: matrix
 - Author: fabdub
 
 ## Preview

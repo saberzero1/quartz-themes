@@ -1,6 +1,6 @@
-# Willemstad
+# willemstad
 
-- Theme: Willemstad
+- Theme: willemstad
 - Author: <a href="https://notes.tingmelvin.com/ER-Resources/ER2PUB/ER2PUB-01-AboutMe" target="_blank" rel="noopener noreferrer">tingmelvin</a>
 
 ## Preview

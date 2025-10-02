@@ -1,6 +1,6 @@
-# Old World
+# old-world
 
-- Theme: Old World
+- Theme: old-world
 - Author: <a href="https://github.com/double-tilde" target="_blank" rel="noopener noreferrer">Double Tilde</a>
 
 ## Preview

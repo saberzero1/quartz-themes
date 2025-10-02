@@ -1,6 +1,6 @@
-# Things
+# things
 
-- Theme: Things
+- Theme: things
 - Author: <a href="https://twitter.com/colineckert" target="_blank" rel="noopener noreferrer">@colineckert</a>
 
 ## Preview

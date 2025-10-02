@@ -1,6 +1,6 @@
-# Obsidianite
+# obsidianite
 
-- Theme: Obsidianite
+- Theme: obsidianite
 - Author: <a href="https://github.com/bennyxguo" target="_blank" rel="noopener noreferrer">@bennyxguo</a>
 
 ## Preview
