@@ -1,6 +1,6 @@
-# prism
+# Prism
 
-- Theme: prism
+- Theme: Prism
 - Author: <a href="https://github.com/damiankorcz" target="_blank" rel="noopener noreferrer">Damian Korcz</a>
 - Support the author: <a href="https://www.buymeacoffee.com/DamianKorcz" target="_blank" rel="noopener noreferrer">Donate</a>
 

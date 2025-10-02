@@ -1,6 +1,6 @@
-# baseline
+# Baseline
 
-- Theme: baseline
+- Theme: Baseline
 - Author: <a href="https://github.com/aaaaalexis" target="_blank" rel="noopener noreferrer">Alexis C</a>
 - Support the author: <a href="https://www.buymeacoffee.com/sevenaxis" target="_blank" rel="noopener noreferrer">Donate</a>
 

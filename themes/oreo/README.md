@@ -1,6 +1,6 @@
-# oreo
+# Oreo
 
-- Theme: oreo
+- Theme: Oreo
 - Author: <a href="https://github.com/carols12352" target="_blank" rel="noopener noreferrer">carols12352</a>
 
 ## Preview

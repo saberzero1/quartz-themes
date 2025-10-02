@@ -1,6 +1,6 @@
-# subtlegold
+# Subtlegold
 
-- Theme: subtlegold
+- Theme: Subtlegold
 - Author: karz
 
 ## Preview

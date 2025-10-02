@@ -1,6 +1,6 @@
-# mint-breeze
+# Mint-Breeze
 
-- Theme: mint-breeze
+- Theme: Mint-Breeze
 - Author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 
 ## Preview

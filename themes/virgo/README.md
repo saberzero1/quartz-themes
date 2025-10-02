@@ -1,6 +1,6 @@
-# virgo
+# Virgo
 
-- Theme: virgo
+- Theme: Virgo
 - Author: <a href="https://aituyaa.com" target="_blank" rel="noopener noreferrer">Jack Liu</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# venom
+# Venom
 
-- Theme: venom
+- Theme: Venom
 - Author: Fatiger
 
 ## Preview

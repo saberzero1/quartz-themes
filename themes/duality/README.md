@@ -1,6 +1,6 @@
-# duality
+# Duality
 
-- Theme: duality
+- Theme: Duality
 - Author: <a href="https://github.com/CascadeThemes" target="_blank" rel="noopener noreferrer">CascadeThemes</a>
 
 ## Preview

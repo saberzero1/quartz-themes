@@ -1,6 +1,6 @@
-# neumorphism
+# Neumorphism
 
-- Theme: neumorphism
+- Theme: Neumorphism
 - Author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
 
 ## Preview

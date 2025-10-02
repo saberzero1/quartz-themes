@@ -1,6 +1,6 @@
-# everforest-spruce
+# Everforest Spruce
 
-- Theme: everforest-spruce
+- Theme: Everforest Spruce
 - Author: <a href="https://github.com/vupdivup" target="_blank" rel="noopener noreferrer">vupdivup</a>
 
 ## Preview

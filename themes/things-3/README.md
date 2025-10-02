@@ -1,6 +1,6 @@
-# things-3
+# Things 3
 
-- Theme: things-3
+- Theme: Things 3
 - Author: <a href="https://medium.com/@paralloid" target="_blank" rel="noopener noreferrer">Denis Volkov</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# pomme-notes
+# Pomme Notes
 
-- Theme: pomme-notes
+- Theme: Pomme Notes
 - Author: <a href="https://medium.com/@paralloid" target="_blank" rel="noopener noreferrer">Denis Volkov</a>
 
 ## Preview

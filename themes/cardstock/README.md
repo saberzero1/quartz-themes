@@ -1,6 +1,6 @@
-# cardstock
+# Cardstock
 
-- Theme: cardstock
+- Theme: Cardstock
 - Author: <a href="https://github.com/cassidoo" target="_blank" rel="noopener noreferrer">cassidoo</a>
 
 ## Preview

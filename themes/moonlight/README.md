@@ -1,6 +1,6 @@
-# moonlight
+# Moonlight
 
-- Theme: moonlight
+- Theme: Moonlight
 - Author: karz
 
 ## Preview

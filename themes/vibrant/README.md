@@ -1,6 +1,6 @@
-# vibrant
+# Vibrant
 
-- Theme: vibrant
+- Theme: Vibrant
 - Author: <a href="https://github.com/JamesLemony" target="_blank" rel="noopener noreferrer">James Lemony</a>
 
 ## Preview

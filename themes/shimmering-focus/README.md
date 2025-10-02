@@ -1,6 +1,6 @@
-# shimmering-focus
+# Shimmering Focus
 
-- Theme: shimmering-focus
+- Theme: Shimmering Focus
 - Author: <a href="https://github.com/chrisgrieser/shimmering-focus" target="_blank" rel="noopener noreferrer">pseudometa aka Chris Grieser</a>
 - Support the author: <a href="https://ko-fi.com/pseudometa" target="_blank" rel="noopener noreferrer">Ko-Fi</a> | <a href="https://www.paypal.me/ChrisGrieser" target="_blank" rel="noopener noreferrer">PayPal</a>
 

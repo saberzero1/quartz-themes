@@ -1,6 +1,6 @@
-# absolutegruv
+# AbsoluteGruv
 
-- Theme: absolutegruv
+- Theme: AbsoluteGruv
 - Author: kkY
 
 ## Preview

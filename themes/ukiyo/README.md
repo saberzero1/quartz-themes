@@ -1,6 +1,6 @@
-# ukiyo
+# Ukiyo
 
-- Theme: ukiyo
+- Theme: Ukiyo
 - Author: kinmury
 
 ## Preview

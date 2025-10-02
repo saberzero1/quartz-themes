@@ -1,6 +1,6 @@
-# dark-clarity
+# Dark Clarity
 
-- Theme: dark-clarity
+- Theme: Dark Clarity
 - Author: <a href="https://github.com/chenbihao" target="_blank" rel="noopener noreferrer">chenbihao</a>
 
 ## Preview

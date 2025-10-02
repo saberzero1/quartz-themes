@@ -1,6 +1,6 @@
-# everforest
+# Everforest
 
-- Theme: everforest
+- Theme: Everforest
 - Author: MrGlitchByte
 
 ## Preview

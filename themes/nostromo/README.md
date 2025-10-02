@@ -1,6 +1,6 @@
-# nostromo
+# Nostromo
 
-- Theme: nostromo
+- Theme: Nostromo
 - Author: <a href="https://github.com/gvorbeck" target="_blank" rel="noopener noreferrer">gvorbeck</a>
 
 ## Preview

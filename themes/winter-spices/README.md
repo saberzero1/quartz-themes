@@ -1,6 +1,6 @@
-# winter-spices
+# Winter Spices
 
-- Theme: winter-spices
+- Theme: Winter Spices
 - Author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 
 ## Preview

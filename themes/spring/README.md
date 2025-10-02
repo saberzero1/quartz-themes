@@ -1,6 +1,6 @@
-# spring
+# Spring
 
-- Theme: spring
+- Theme: Spring
 - Author: <a href="https://github.com/MateusHenriquegringo" target="_blank" rel="noopener noreferrer">Mateus Derossi</a>
 
 ## Preview

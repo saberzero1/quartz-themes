@@ -1,6 +1,6 @@
-# feather
+# Feather
 
-- Theme: feather
+- Theme: Feather
 - Author: MFdev
 
 ## Preview

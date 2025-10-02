@@ -1,6 +1,6 @@
-# strict
+# Strict
 
-- Theme: strict
+- Theme: Strict
 - Author: <a href="https://github.com/Nikolai2038" target="_blank" rel="noopener noreferrer">Nikolai2038</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# mammoth
+# Mammoth
 
-- Theme: mammoth
+- Theme: Mammoth
 - Author: <a href="https://github.com/wittionary" target="_blank" rel="noopener noreferrer">Witt Allen</a>
 
 ## Preview

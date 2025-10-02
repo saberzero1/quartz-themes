@@ -1,6 +1,6 @@
-# ayu-light-mirage
+# Ayu Light & Mirage
 
-- Theme: ayu-light-mirage
+- Theme: Ayu Light & Mirage
 - Author: <a href="https://taronull.substack.com" target="_blank" rel="noopener noreferrer">Taro</a>
 - Support the author: <a href="https://buymeacoffee.com/taronull" target="_blank" rel="noopener noreferrer">Donate</a>
 

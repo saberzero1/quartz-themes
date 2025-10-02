@@ -1,6 +1,6 @@
-# dark-castle
+# Dark Castle
 
-- Theme: dark-castle
+- Theme: Dark Castle
 - Author: <a href="https://github.com/scottgriv" target="_blank" rel="noopener noreferrer">scottgriv</a>
 - Support the author: <a href="https://buymeacoffee.com/scottgriv" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/sponsors/scottgriv" target="_blank" rel="noopener noreferrer">GitHub Sponsor</a>
 

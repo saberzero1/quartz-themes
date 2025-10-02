@@ -1,6 +1,6 @@
-# nier
+# Nier
 
-- Theme: nier
+- Theme: Nier
 - Author: exloseur3d
 
 ## Preview

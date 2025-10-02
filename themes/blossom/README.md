@@ -1,6 +1,6 @@
-# blossom
+# Blossom
 
-- Theme: blossom
+- Theme: Blossom
 - Author: <a href="https://blossomtheme.github.io" target="_blank" rel="noopener noreferrer">BlossomTheme</a>
 
 ## Preview

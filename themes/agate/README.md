@@ -1,6 +1,6 @@
-# agate
+# Agate
 
-- Theme: agate
+- Theme: Agate
 - Author: solmi
 
 ## Preview

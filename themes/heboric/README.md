@@ -1,6 +1,6 @@
-# heboric
+# Heboric
 
-- Theme: heboric
+- Theme: Heboric
 - Author: <a href="https://github.com/nhrrs" target="_blank" rel="noopener noreferrer">nhrrs</a>
 - Support the author: <a href="https://buymeacoffee.com/nhrrs" target="_blank" rel="noopener noreferrer">Donate</a>
 

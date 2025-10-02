@@ -1,6 +1,6 @@
-# arzaba
+# Arzaba
 
-- Theme: arzaba
+- Theme: Arzaba
 - Author: <a href="https://github.com/DarioArzaba" target="_blank" rel="noopener noreferrer">Dario Arzaba</a>
 
 ## Preview

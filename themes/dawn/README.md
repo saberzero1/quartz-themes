@@ -1,6 +1,6 @@
-# dawn
+# Dawn
 
-- Theme: dawn
+- Theme: Dawn
 - Author: min
 
 ## Preview

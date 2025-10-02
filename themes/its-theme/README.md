@@ -1,6 +1,6 @@
-# its-theme
+# ITS Theme
 
-- Theme: its-theme
+- Theme: ITS Theme
 - Author: <a href="https://github.com/SlRvb" target="_blank" rel="noopener noreferrer">SlRvb</a>
 
 ## Preview

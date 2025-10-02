@@ -1,6 +1,6 @@
-# wyrd
+# Wyrd
 
-- Theme: wyrd
+- Theme: Wyrd
 - Author: <a href="https://github.com/curio-heart" target="_blank" rel="noopener noreferrer">Curio Heart</a>
 
 ## Preview

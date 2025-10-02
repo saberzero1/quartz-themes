@@ -1,6 +1,6 @@
-# borealis
+# Borealis
 
-- Theme: borealis
+- Theme: Borealis
 - Author: <a href="https://github.com/juanchiparra" target="_blank" rel="noopener noreferrer">@juanchiparra</a>
 
 ## Preview

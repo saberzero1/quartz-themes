@@ -1,6 +1,6 @@
-# spectrum-blue
+# Spectrum Blue
 
-- Theme: spectrum-blue
+- Theme: Spectrum Blue
 - Author: <a href="https://github.com/ryanjrman" target="_blank" rel="noopener noreferrer">ryanjrman</a>
 
 ## Preview

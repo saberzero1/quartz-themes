@@ -1,6 +1,6 @@
-# lyt-mode
+# LYT Mode
 
-- Theme: lyt-mode
+- Theme: LYT Mode
 - Author: Nick Milo
 
 ## Preview

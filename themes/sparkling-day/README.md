@@ -1,6 +1,6 @@
-# sparkling-day
+# Sparkling Day
 
-- Theme: sparkling-day
+- Theme: Sparkling Day
 - Author: <a href="https://github.com/isax785" target="_blank" rel="noopener noreferrer">isax785</a>
 
 ## Preview

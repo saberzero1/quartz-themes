@@ -1,6 +1,6 @@
-# gitsidian
+# Gitsidian
 
-- Theme: gitsidian
+- Theme: Gitsidian
 - Author: Ish Gunacar
 
 ## Preview

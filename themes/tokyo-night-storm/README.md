@@ -1,6 +1,6 @@
-# tokyo-night-storm
+# Tokyo Night Storm
 
-- Theme: tokyo-night-storm
+- Theme: Tokyo Night Storm
 - Author: <a href="https://github.com/arozx" target="_blank" rel="noopener noreferrer">arozx</a>
 
 ## Preview

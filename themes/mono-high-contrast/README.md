@@ -1,6 +1,6 @@
-# mono-high-contrast
+# Mono High Contrast
 
-- Theme: mono-high-contrast
+- Theme: Mono High Contrast
 - Author: <a href="https://github.com/manuelcoca" target="_blank" rel="noopener noreferrer">Manuel Coca</a>
 
 ## Preview
