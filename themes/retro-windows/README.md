@@ -1,6 +1,6 @@
-# Retro Windows
+# retro-windows
 
-- Theme: Retro Windows
+- Theme: retro-windows
 - Author: <a href="https://github.com/codeisconfusing" target="_blank" rel="noopener noreferrer">codeisconfusing</a>
 
 ## Preview

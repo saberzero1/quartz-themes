@@ -1,6 +1,6 @@
-# Dayspring
+# dayspring
 
-- Theme: Dayspring
+- Theme: dayspring
 - Author: <a href="https://github.com/erykwalder" target="_blank" rel="noopener noreferrer">Eric Rykwalder</a>
 
 ## Preview

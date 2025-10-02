@@ -1,6 +1,6 @@
-# Dracula Slim
+# dracula-slim
 
-- Theme: Dracula Slim
+- Theme: dracula-slim
 - Author: bLaCkwEw
 
 ## Preview

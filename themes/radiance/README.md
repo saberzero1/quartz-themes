@@ -1,6 +1,6 @@
-# Radiance
+# radiance
 
-- Theme: Radiance
+- Theme: radiance
 - Author: <a href="https://buymeacoffee.com/jabarid" target="_blank" rel="noopener noreferrer">@jabarid</a>
 
 ## Preview

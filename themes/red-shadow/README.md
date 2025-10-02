@@ -1,6 +1,6 @@
-# Red-Shadow
+# red-shadow
 
-- Theme: Red-Shadow
+- Theme: red-shadow
 - Author: <a href="https://github.com/DKLiberty" target="_blank" rel="noopener noreferrer">@dkliberty</a>
 - Support the author: <a href="https://www.buymeacoffee.com/dkliberty" target="_blank" rel="noopener noreferrer">Donate</a>
 

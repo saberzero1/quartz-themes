@@ -1,6 +1,6 @@
-# Atom
+# atom
 
-- Theme: Atom
+- Theme: atom
 - Author: kognise
 
 ## Preview

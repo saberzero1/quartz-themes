@@ -1,6 +1,6 @@
-# Spectrum
+# spectrum
 
-- Theme: Spectrum
+- Theme: spectrum
 - Author: Wiktoria Mielcarek
 
 ## Preview

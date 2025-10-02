@@ -1,6 +1,6 @@
-# Dracula Plus
+# dracula-plus
 
-- Theme: Dracula Plus
+- Theme: dracula-plus
 - Author: saket
 
 ## Preview

@@ -1,6 +1,6 @@
-# Vauxhall
+# vauxhall
 
-- Theme: Vauxhall
+- Theme: vauxhall
 - Author: <a href="https//github.com/CyanVoxel" target="_blank" rel="noopener noreferrer">CyanVoxel</a>
 
 ## Preview

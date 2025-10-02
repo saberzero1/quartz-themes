@@ -1,6 +1,6 @@
-# Comfort Dark
+# comfort-dark
 
-- Theme: Comfort Dark
+- Theme: comfort-dark
 - Author: Ooopz
 
 ## Preview

@@ -1,6 +1,6 @@
-# Robsi
+# robsi
 
-- Theme: Robsi
+- Theme: robsi
 - Author: <a href="https://github.com/Riffaells" target="_blank" rel="noopener noreferrer">Riffaells</a>
 
 ## Preview

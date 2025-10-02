@@ -1,6 +1,6 @@
-# iB Writer
+# ib-writer
 
-- Theme: iB Writer
+- Theme: ib-writer
 - Author: <a href="https://toablind.horse" target="_blank" rel="noopener noreferrer">whereiswhere</a>
 
 ## Preview

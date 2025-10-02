@@ -1,6 +1,6 @@
-# Noctis
+# noctis
 
-- Theme: Noctis
+- Theme: noctis
 - Author: <a href="https://github.com/konnta0" target="_blank" rel="noopener noreferrer">konnta0</a>
 
 ## Preview

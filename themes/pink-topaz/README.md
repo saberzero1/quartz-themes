@@ -1,6 +1,6 @@
-# Pink Topaz
+# pink-topaz
 
-- Theme: Pink Topaz
+- Theme: pink-topaz
 - Author: Mouth on Cloud
 
 ## Preview

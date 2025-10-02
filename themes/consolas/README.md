@@ -1,6 +1,6 @@
-# Consolas
+# consolas
 
-- Theme: Consolas
+- Theme: consolas
 - Author: <a href="https://github.com/pinei" target="_blank" rel="noopener noreferrer">Pinei</a>
 
 ## Preview

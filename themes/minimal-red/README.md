@@ -1,6 +1,6 @@
-# Minimal Red
+# minimal-red
 
-- Theme: Minimal Red
+- Theme: minimal-red
 - Author: <a href="https://github.com/AfonsoMiranda02" target="_blank" rel="noopener noreferrer">AfonsoMiranda02</a>
 
 ## Preview

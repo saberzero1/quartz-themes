@@ -1,6 +1,6 @@
-# Sparkling Wisdom
+# sparkling-wisdom
 
-- Theme: Sparkling Wisdom
+- Theme: sparkling-wisdom
 - Author: Learner fvs
 
 ## Preview

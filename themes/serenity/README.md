@@ -1,6 +1,6 @@
-# Serenity
+# serenity
 
-- Theme: Serenity
+- Theme: serenity
 - Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview

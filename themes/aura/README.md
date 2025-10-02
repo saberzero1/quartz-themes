@@ -1,6 +1,6 @@
-# Aura
+# aura
 
-- Theme: Aura
+- Theme: aura
 - Author: <a href="https://github.com/ashwinjadhav818/" target="_blank" rel="noopener noreferrer">Ashwin Jadhav</a>
 
 ## Preview

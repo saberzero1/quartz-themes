@@ -1,6 +1,6 @@
-# Soli Deo Gloria
+# soli-deo-gloria
 
-- Theme: Soli Deo Gloria
+- Theme: soli-deo-gloria
 - Author: <a href="https://github.com/GodlyMan-bit" target="_blank" rel="noopener noreferrer">agodlyman</a>
 
 ## Preview

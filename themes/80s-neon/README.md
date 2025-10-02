@@ -1,6 +1,6 @@
-# 80s Neon
+# 80s-neon
 
-- Theme: 80s Neon
+- Theme: 80s-neon
 - Author: deathau
 
 ## Preview

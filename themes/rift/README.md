@@ -1,6 +1,6 @@
-# Rift
+# rift
 
-- Theme: Rift
+- Theme: rift
 - Author: <a href="https://github.com/NoahBoos" target="_blank" rel="noopener noreferrer">Noah Boos</a>
 
 ## Preview

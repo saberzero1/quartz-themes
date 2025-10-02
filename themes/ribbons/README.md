@@ -1,6 +1,6 @@
-# Ribbons
+# ribbons
 
-- Theme: Ribbons
+- Theme: ribbons
 - Author: <a href="https://github.com/ddspog" target="_blank" rel="noopener noreferrer">ddspog</a>
 
 ## Preview

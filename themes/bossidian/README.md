@@ -1,6 +1,6 @@
-# Bossidian
+# bossidian
 
-- Theme: Bossidian
+- Theme: bossidian
 - Author: <a href="https://BossELijah.github.io" target="_blank" rel="noopener noreferrer">BossElijah</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Mushin
+# mushin
 
-- Theme: Mushin
+- Theme: mushin
 - Author: <a href="https://github.com/Vlad3Design" target="_blank" rel="noopener noreferrer">Vlad 3Design</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Dracula Gemini
+# dracula-gemini
 
-- Theme: Dracula Gemini
+- Theme: dracula-gemini
 - Author: <a href="https://github.com/clbn" target="_blank" rel="noopener noreferrer">Alex Olshansky</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Lagom
+# lagom
 
-- Theme: Lagom
+- Theme: lagom
 - Author: Leslyecream
 
 ## Preview

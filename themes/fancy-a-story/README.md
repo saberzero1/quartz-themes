@@ -1,6 +1,6 @@
-# Fancy-a-Story
+# fancy-a-story
 
-- Theme: Fancy-a-Story
+- Theme: fancy-a-story
 - Author: <a href="https://github.com/ElsaTam" target="_blank" rel="noopener noreferrer">Kapirklaa</a>
 
 ## Preview

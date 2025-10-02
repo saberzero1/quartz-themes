@@ -1,6 +1,6 @@
-# Dust
+# dust
 
-- Theme: Dust
+- Theme: dust
 - Author: <a href="https://github.com/PedroHenrique17" target="_blank" rel="noopener noreferrer">PedroHenrique17</a>
 
 ## Preview

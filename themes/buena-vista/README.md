@@ -1,6 +1,6 @@
-# Buena Vista
+# buena-vista
 
-- Theme: Buena Vista
+- Theme: buena-vista
 - Author: <a href="https://github.com/oqipodev/" target="_blank" rel="noopener noreferrer">oqipo</a>
 
 ## Preview

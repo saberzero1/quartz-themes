@@ -1,4 +1,5 @@
 import {
+  cpSync,
   unlinkSync,
   copyFileSync,
   existsSync,
@@ -17,7 +18,7 @@ import {
 import { themes } from "../config.mjs";
 import { format } from "./formatter.mjs";
 
-export default function updateMiscFiles(manifestCollection) {
+export default function updateMiscFiles(manifestCollection, themeCollection) {
   // Rebuild README.md
   console.log("Updating compatibility table...");
 
@@ -30,8 +31,14 @@ export default function updateMiscFiles(manifestCollection) {
   const themeList = [];
   const themeListDark = [];
   const themeListLight = [];
-  manifestCollection.forEach((manifest) => {
-    themeList.push({ theme: getTheme(manifest, "name"), name: manifest.name });
+  themeCollection.forEach((manifest) => {
+    const nameValue = manifest.name.split(".")[0];
+    const fullName = manifestCollection.find((m) => m.name === nameValue)?.name;
+    themeList.push({
+      theme: fullName ? fullName : manifest.name,
+      name: manifest.name,
+      mode: manifest.modes.length === 2 ? "both" : manifest.modes[0],
+    });
   });
   themeList.sort((a, b) => {
     const aTheme = a.theme.toUpperCase();
@@ -42,11 +49,7 @@ export default function updateMiscFiles(manifestCollection) {
     return 0;
   });
   themeList.forEach((themeName) => {
-    const mode = isFullTheme(themeName.theme)
-      ? "both"
-      : isDarkTheme(themeName.theme)
-        ? "dark"
-        : "light";
+    const mode = themeName.mode;
     const compatibilityArray = themes[themeName.theme]["compatibility"];
     if (mode === "both") {
       themeListDark.push(themeName.theme);
@@ -101,27 +104,18 @@ export default function updateMiscFiles(manifestCollection) {
 
   // Build Quartz Syncer file list as json
   const quartzSyncerFileList = {};
-  const themeListFileList = [];
+  const themeListFileList = [...new Set([...themeListDark, ...themeListLight])];
 
   const themeFolders = listFoldersInDirectory(`./themes`);
 
-  // Get a list of all files under each theme directory
-  themeFolders.forEach((folder) => {
-    const files = getFilesUnderDirectoryToStringArray(
-      `./themes/${folder}`,
-      folder,
-    );
-    const themeName = folder.replace(/^\.\//, "");
-    quartzSyncerFileList[themeName] = files;
-    themeListFileList.push(themeName);
-  });
-
   // Write the file list to quartz-syncer-file-list.json
+  /*
   writePrettier(
     `./quartz-syncer-file-list.json`,
     format(JSON.stringify(quartzSyncerFileList, null, 2), "json"),
     "utf8",
   );
+  */
 
   // Write the theme list to theme-list
   writePrettier(`./theme-list`, themeListFileList.join("\n"), "utf8");

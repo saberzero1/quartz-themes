@@ -1,6 +1,6 @@
-# Golden Topaz
+# golden-topaz
 
-- Theme: Golden Topaz
+- Theme: golden-topaz
 - Author: Mouth on Cloud
 
 ## Preview

@@ -1,6 +1,6 @@
-# Improved Potato
+# improved-potato
 
-- Theme: Improved Potato
+- Theme: improved-potato
 - Author: <a href="https://dmeurer.github.io/" target="_blank" rel="noopener noreferrer">Dominik Meurer</a>
 
 ## Preview

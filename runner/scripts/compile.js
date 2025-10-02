@@ -6,6 +6,7 @@ import {
   mkdirSync,
 } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
+import getThemeCollection from "../../extensions/themelist.mjs";
 import {
   isDarkTheme,
   isLightTheme,
@@ -31,9 +32,10 @@ function hsl2rgb(h, s, l) {
 }
 
 function insertExtras(manifest) {
-  const theme = sanitize(manifest.name);
+  const [themeName, variation] = manifest.name.split(".");
+  const theme = `${sanitize(themeName)}${variation ? `.${sanitize(variation)}` : ""}`;
   const basePath = `./extras/themes/${theme}`;
-  const files = ["_index.scss", ...(getExtras(theme) || [])];
+  const files = ["_index.scss", ...(manifest.extras || [])];
 
   let result = "";
 
@@ -158,9 +160,11 @@ if the values are different, combine them using the light-dark CSS function
 if only one is present, use that one
 
  */
-const manifestCollection = getManifestCollection();
-manifestCollection.forEach((manifest) => {
-  const theme = sanitize(manifest.name);
+//const manifestCollection = getManifestCollection();
+const themeCollection = getThemeCollection();
+themeCollection.forEach((manifest) => {
+  const [themeName, variation] = manifest.name.split(".");
+  const theme = `${sanitize(themeName)}${variation ? `.${sanitize(variation)}` : ""}`;
   if (!existsSync(`./runner/results/${theme}`)) {
     mkdirSync(`./runner/results/${theme}`);
   }
@@ -332,7 +336,11 @@ manifestCollection.forEach((manifest) => {
     );
     process.exit(1);
   }
-  const fonts = getFonts(manifest.name);
+  //const fonts = getFonts(theme);
+  const fonts =
+    manifest.fonts.length > 0
+      ? manifest.fonts
+      : ["avenir", "inter", "source-code-pro"];
   let fontString = "";
   fonts.forEach((font) => {
     fontString += readFileSync(`./extras/fonts/${font}.scss`);

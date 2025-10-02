@@ -1,6 +1,6 @@
-# Zen
+# zen
 
-- Theme: Zen
+- Theme: zen
 - Author: <a href="https://github.com/laughmaker" target="_blank" rel="noopener noreferrer">laughmaker</a>
 
 ## Preview

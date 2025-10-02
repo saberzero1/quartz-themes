@@ -1,6 +1,6 @@
-# Darkyan
+# darkyan
 
-- Theme: Darkyan
+- Theme: darkyan
 - Author: <a href="https://johackim.com" target="_blank" rel="noopener noreferrer">johackim</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Frost
+# frost
 
-- Theme: Frost
+- Theme: frost
 - Author: <a href="https://www.drkpxl.com" target="_blank" rel="noopener noreferrer">Steven Hubert</a>
 
 ## Preview

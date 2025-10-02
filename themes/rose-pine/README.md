@@ -1,6 +1,6 @@
-# Rosé Pine
+# rose-pine
 
-- Theme: Rosé Pine
+- Theme: rose-pine
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

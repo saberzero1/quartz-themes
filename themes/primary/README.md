@@ -1,6 +1,6 @@
-# Primary
+# primary
 
-- Theme: Primary
+- Theme: primary
 - Author: Cecilia May
 - Support the author: <a href="https://ko-fi.com/ceciliamay" target="_blank" rel="noopener noreferrer">Ko-fi</a>
 

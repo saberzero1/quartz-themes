@@ -1,6 +1,6 @@
-# Origami
+# origami
 
-- Theme: Origami
+- Theme: origami
 - Author: kneecaps
 
 ## Preview

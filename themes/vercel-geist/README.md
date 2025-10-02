@@ -1,6 +1,6 @@
-# Vercel Geist
+# vercel-geist
 
-- Theme: Vercel Geist
+- Theme: vercel-geist
 - Author: <a href="https://github.com/en3sis" target="_blank" rel="noopener noreferrer">en3sis</a>
 
 ## Preview

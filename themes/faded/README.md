@@ -1,6 +1,6 @@
-# Faded
+# faded
 
-- Theme: Faded
+- Theme: faded
 - Author: Josh Kasap
 
 ## Preview

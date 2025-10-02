@@ -1,6 +1,6 @@
-# OverCast
+# overcast
 
-- Theme: OverCast
+- Theme: overcast
 - Author: IxBlazarxI
 
 ## Preview

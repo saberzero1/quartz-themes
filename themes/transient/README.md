@@ -1,6 +1,6 @@
-# Transient
+# transient
 
-- Theme: Transient
+- Theme: transient
 - Author: <a href="https://georgeazma.github.io" target="_blank" rel="noopener noreferrer">GeorgeAzma</a>
 
 ## Preview

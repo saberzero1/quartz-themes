@@ -1,6 +1,6 @@
-# Comfort Smooth
+# comfort-smooth
 
-- Theme: Comfort Smooth
+- Theme: comfort-smooth
 - Author: Spark
 
 ## Preview

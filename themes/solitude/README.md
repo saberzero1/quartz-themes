@@ -1,6 +1,6 @@
-# Solitude
+# solitude
 
-- Theme: Solitude
+- Theme: solitude
 - Author: <a href="https://majorenkidu.github.io/" target="_blank" rel="noopener noreferrer">MajorEnkidu</a>
 
 ## Preview

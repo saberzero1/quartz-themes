@@ -1,6 +1,6 @@
-# Obsidianotion
+# obsidianotion
 
-- Theme: Obsidianotion
+- Theme: obsidianotion
 - Author: <a href="https://diegoeis.com" target="_blank" rel="noopener noreferrer">Diego Eis</a>
 
 ## Preview
