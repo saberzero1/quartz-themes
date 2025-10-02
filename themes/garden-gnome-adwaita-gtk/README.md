@@ -1,6 +1,6 @@
-# garden-gnome-adwaita-gtk
+# Garden Gnome (Adwaita, GTK)
 
-- Theme: garden-gnome-adwaita-gtk
+- Theme: Garden Gnome (Adwaita, GTK)
 - Author: <a href="https://github.com/oqipodev/" target="_blank" rel="noopener noreferrer">oqipo</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# sqdthone
+# sQdthOne
 
-- Theme: sqdthone
+- Theme: sQdthOne
 - Author: <a href="KeithLerner.net" target="_blank" rel="noopener noreferrer">Keith 'Sqdth' Lerner</a>
 
 ## Preview

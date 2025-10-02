@@ -1,6 +1,6 @@
-# serif
+# Serif
 
-- Theme: serif
+- Theme: Serif
 - Author: <a href="https://github.com/GodlyMan-bit" target="_blank" rel="noopener noreferrer">agodlyman</a>
 
 ## Preview

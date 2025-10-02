@@ -1,6 +1,6 @@
-# latex
+# LaTeX
 
-- Theme: latex
+- Theme: LaTeX
 - Author: <a href="https://phooey.foo" target="_blank" rel="noopener noreferrer">Ben Finch</a>
 
 ## Preview

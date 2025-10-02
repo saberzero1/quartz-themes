@@ -1,6 +1,6 @@
-# chime
+# Chime
 
-- Theme: chime
+- Theme: Chime
 - Author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 
 ## Preview

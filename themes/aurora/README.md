@@ -1,6 +1,6 @@
-# aurora
+# Aurora
 
-- Theme: aurora
+- Theme: Aurora
 - Author: Benny Guo
 
 ## Preview

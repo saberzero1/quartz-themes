@@ -1,6 +1,6 @@
-# sanctum-reborn
+# Sanctum reborn
 
-- Theme: sanctum-reborn
+- Theme: Sanctum reborn
 - Author: <a href="https://github.com/antoKeinanen/" target="_blank" rel="noopener noreferrer">@antoKeinanen</a>
 
 ## Preview

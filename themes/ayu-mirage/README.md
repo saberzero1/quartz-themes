@@ -1,6 +1,6 @@
-# ayu-mirage
+# Ayu Mirage
 
-- Theme: ayu-mirage
+- Theme: Ayu Mirage
 - Author: bernardo_v
 
 ## Preview

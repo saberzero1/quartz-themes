@@ -1,6 +1,6 @@
-# blue-topaz
+# Blue Topaz
 
-- Theme: blue-topaz
+- Theme: Blue Topaz
 - Author: <a href="https://github.com/whyt-byte" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
 
 ## Preview

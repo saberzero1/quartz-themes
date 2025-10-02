@@ -1,6 +1,6 @@
-# simple
+# Simple
 
-- Theme: simple
+- Theme: Simple
 - Author: <a href="https://diegoeis.com/" target="_blank" rel="noopener noreferrer">Diego Eis</a>
 
 ## Preview

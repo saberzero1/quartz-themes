@@ -1,6 +1,6 @@
-# tomorrow
+# Tomorrow
 
-- Theme: tomorrow
+- Theme: Tomorrow
 - Author: <a href="https://github.com/deudz/" target="_blank" rel="noopener noreferrer">deudz</a>
 
 ## Preview

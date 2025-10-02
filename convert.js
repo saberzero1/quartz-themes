@@ -32,6 +32,7 @@ import {
   cleanRulesAfterRun,
   cleanup,
   getFixes,
+  sanitizeFilenamePreservingEmojis as sanitize,
 } from "./util/util.mjs";
 import {
   extractStyleSettings,
@@ -107,13 +108,14 @@ themeCollection.forEach((manifest) => {
   copyFileToDirectory(`./templates/README.md`, `./themes/${manifest.name}`);
 });
 
-themeCollection.forEach((manifest) => {
-  const nameValue = manifest.name.split(".")[0];
-  const fullName = manifestCollection.find((m) => m.name === nameValue)?.name;
+themeCollection.forEach((theme) => {
+  const manifest = manifestCollection.find(
+    (m) => sanitize(m.name) === theme.name.split(".")[0],
+  );
   replaceInFile(
-    `./themes/${manifest.name}/README.md`,
+    `./themes/${theme.name}/README.md`,
     "%OBSIDIAN_THEME_NAME%",
-    fullName ? fullName : nameValue,
+    manifest.name,
   );
 });
 themeCollection.forEach((manifest) => {
@@ -123,7 +125,10 @@ themeCollection.forEach((manifest) => {
     manifest.name,
   );
 });
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((theme) => {
+  const manifest = manifestCollection.find(
+    (m) => sanitize(m.name) === theme.name.split(".")[0],
+  );
   const authorValue =
     getValueFromDictionary(manifest, "author") !== ""
       ? getValueFromDictionary(manifest, "author")
@@ -137,15 +142,18 @@ manifestCollection.forEach((manifest) => {
       ? `<a href="${authorUrlValue}" target="_blank" rel="noopener noreferrer">${authorValue}</a>`
       : authorValue;
   replaceInFile(
-    `./themes/${getTheme(manifest)}/README.md`,
+    `./themes/${theme.name}/README.md`,
     "%OBSIDIAN_THEME_AUTHOR%",
     authorString,
   );
 });
-manifestCollection.forEach((manifest) => {
+themeCollection.forEach((theme) => {
+  const manifest = manifestCollection.find(
+    (m) => sanitize(m.name) === theme.name.split(".")[0].toLowerCase(),
+  );
   const result = generateFundingLinks(manifest);
   replaceInFile(
-    `./themes/${getTheme(manifest)}/README.md`,
+    `./themes/${theme.name}/README.md`,
     "%OBSIDIAN_THEME_AUTHOR_DONATE_URL%",
     result,
   );

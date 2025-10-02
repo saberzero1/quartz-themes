@@ -1,6 +1,6 @@
-# kanagawa-paper
+# Kanagawa Paper
 
-- Theme: kanagawa-paper
+- Theme: Kanagawa Paper
 - Author: <a href="https://ssp.sh" target="_blank" rel="noopener noreferrer">Simon Späti</a>
 
 ## Preview

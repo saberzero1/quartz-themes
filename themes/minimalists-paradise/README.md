@@ -1,6 +1,6 @@
-# minimalists-paradise
+# Minimalists Paradise
 
-- Theme: minimalists-paradise
+- Theme: Minimalists Paradise
 - Author: Isabelle Basso
 
 ## Preview

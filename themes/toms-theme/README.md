@@ -1,6 +1,6 @@
-# toms-theme
+# Tom's Theme
 
-- Theme: toms-theme
+- Theme: Tom's Theme
 - Author: <a href="https://tomkay.dev" target="_blank" rel="noopener noreferrer">Tom Kay</a>
 
 ## Preview

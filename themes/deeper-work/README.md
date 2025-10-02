@@ -1,6 +1,6 @@
-# deeper-work
+# deeper work
 
-- Theme: deeper-work
+- Theme: deeper work
 - Author: <a href="https://www.lfern.com/" target="_blank" rel="noopener noreferrer">lucas</a>
 
 ## Preview

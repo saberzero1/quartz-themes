@@ -1,6 +1,6 @@
-# autotape
+# Autotape
 
-- Theme: autotape
+- Theme: Autotape
 - Author: <a href="https://rmv.fyi/" target="_blank" rel="noopener noreferrer">Delphi</a>
 
 ## Preview

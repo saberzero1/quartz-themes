@@ -1,6 +1,6 @@
-# wombat
+# Wombat
 
-- Theme: wombat
+- Theme: Wombat
 - Author: hush-hush
 
 ## Preview

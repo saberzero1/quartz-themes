@@ -1,6 +1,6 @@
-# iridium
+# Iridium
 
-- Theme: iridium
+- Theme: Iridium
 - Author: <a href="https://github.com/kyffa" target="_blank" rel="noopener noreferrer">kyffa</a>
 
 ## Preview

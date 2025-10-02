@@ -1,6 +1,6 @@
-# firefly
+# Firefly
 
-- Theme: firefly
+- Theme: Firefly
 - Author: Ali Soueidan
 
 ## Preview

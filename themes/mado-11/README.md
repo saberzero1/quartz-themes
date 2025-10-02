@@ -1,6 +1,6 @@
-# mado-11
+# Mado 11
 
-- Theme: mado-11
+- Theme: Mado 11
 - Author: <a href="https://github.com/hydescarf/Obsidian-Theme-Mado-11" target="_blank" rel="noopener noreferrer">hydescarf</a>
 
 ## Preview

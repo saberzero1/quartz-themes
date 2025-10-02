@@ -1,6 +1,6 @@
-# rose-pine-moon
+# Rosé Pine Moon
 
-- Theme: rose-pine-moon
+- Theme: Rosé Pine Moon
 - Author: mimishahzad
 
 ## Preview

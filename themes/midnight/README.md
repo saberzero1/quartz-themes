@@ -1,6 +1,6 @@
-# midnight
+# Midnight
 
-- Theme: midnight
+- Theme: Midnight
 - Author: <a href="https://github.com/SemiCirkle" target="_blank" rel="noopener noreferrer">SemiCirkle</a>
 
 ## Preview

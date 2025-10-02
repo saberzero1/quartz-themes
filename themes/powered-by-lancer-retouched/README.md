@@ -1,6 +1,6 @@
-# powered-by-lancer-retouched
+# Powered by Lancer - Retouched
 
-- Theme: powered-by-lancer-retouched
+- Theme: Powered by Lancer - Retouched
 - Author: Cloopy
 
 ## Preview

@@ -1,6 +1,6 @@
-# vanilla-amoled-color
+# Vanilla AMOLED Color
 
-- Theme: vanilla-amoled-color
+- Theme: Vanilla AMOLED Color
 - Author: <a href="https://github.Com/Sskki-exe" target="_blank" rel="noopener noreferrer">sskki</a>
 
 ## Preview

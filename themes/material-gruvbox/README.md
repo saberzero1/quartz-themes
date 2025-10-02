@@ -1,6 +1,6 @@
-# material-gruvbox
+# Material Gruvbox
 
-- Theme: material-gruvbox
+- Theme: Material Gruvbox
 - Author: <a href="https://github.com/AllJavi" target="_blank" rel="noopener noreferrer">AllJavi</a>
 
 ## Preview

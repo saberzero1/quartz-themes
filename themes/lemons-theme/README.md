@@ -1,6 +1,6 @@
-# lemons-theme
+# Lemons Theme
 
-- Theme: lemons-theme
+- Theme: Lemons Theme
 - Author: <a href="https://mprojectscode.github.io/" target="_blank" rel="noopener noreferrer">Moritz Jung</a>
 
 ## Preview

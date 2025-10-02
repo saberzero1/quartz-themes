@@ -1,6 +1,6 @@
-# zario
+# Zario
 
-- Theme: zario
+- Theme: Zario
 - Author: <a href="https://gneiss.dev" target="_blank" rel="noopener noreferrer">Ricardo Nazario</a>
 
 ## Preview

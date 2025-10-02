@@ -1,6 +1,6 @@
-# wilcoxone
+# WilcoxOne
 
-- Theme: wilcoxone
+- Theme: WilcoxOne
 - Author: MattWilcox
 
 ## Preview

@@ -1,6 +1,6 @@
-# dark-graphite
+# Dark Graphite
 
-- Theme: dark-graphite
+- Theme: Dark Graphite
 - Author: bernardo_v
 
 ## Preview

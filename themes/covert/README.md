@@ -1,6 +1,6 @@
-# covert
+# Covert
 
-- Theme: covert
+- Theme: Covert
 - Author: <a href="https://github.com/schrunchee" target="_blank" rel="noopener noreferrer">schrunchee</a>
 
 ## Preview

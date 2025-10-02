@@ -1,6 +1,6 @@
-# reshi
+# Reshi
 
-- Theme: reshi
+- Theme: Reshi
 - Author: <a href="https://github.com/contrapasso3" target="_blank" rel="noopener noreferrer">Laney Elizabeth</a>
 
 ## Preview

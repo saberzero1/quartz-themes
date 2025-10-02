@@ -1,6 +1,6 @@
-# royal-velvet
+# Royal Velvet
 
-- Theme: royal-velvet
+- Theme: Royal Velvet
 - Author: <a href="https://github.com/caro401" target="_blank" rel="noopener noreferrer">@caro401</a>
 
 ## Preview

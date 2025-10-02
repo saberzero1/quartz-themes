@@ -1,6 +1,6 @@
-# everforest-enchanted
+# Everforest Enchanted
 
-- Theme: everforest-enchanted
+- Theme: Everforest Enchanted
 - Author: <a href="https://github.com/FireIsGood" target="_blank" rel="noopener noreferrer">FireIsGood</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# neovim
+# Neovim
 
-- Theme: neovim
+- Theme: Neovim
 - Author: <a href="https://slavamak.com" target="_blank" rel="noopener noreferrer">slavamak</a>
 
 ## Preview

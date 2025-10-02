@@ -1,6 +1,6 @@
-# comfort-color-dark
+# Comfort color dark
 
-- Theme: comfort-color-dark
+- Theme: Comfort color dark
 - Author: ezs
 
 ## Preview

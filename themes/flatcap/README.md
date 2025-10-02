@@ -1,6 +1,6 @@
-# flatcap
+# FlatCap
 
-- Theme: flatcap
+- Theme: FlatCap
 - Author: <a href="https://cheycron.com" target="_blank" rel="noopener noreferrer">@cheycron</a>
 - Support the author: <a href="https://buymeacoffee.com/cheycron" target="_blank" rel="noopener noreferrer">Donate</a>
 

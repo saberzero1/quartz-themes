@@ -415,10 +415,20 @@ describe("Quartz Theme Style Extraction", () => {
     console.log(`Extracting styles for theme: ${theme}`);
 
     if (isDarkTheme(theme)) {
-      before(async () => {});
-      it(`should extract styles for theme: ${theme} in dark mode`, async () => {
+      before(async () => {
         const darkPage = browser.getObsidianPage();
         await darkPage.resetVault();
+        await darkPage.enablePlugin("plugin-reloader");
+        await darkPage.enablePlugin("obsidian-style-settings");
+        await darkPage.enablePlugin("obsidian-view-mode-by-frontmatter");
+        await darkPage.enablePlugin("dataview");
+      });
+      it(`should extract styles for theme: ${theme} in dark mode`, async () => {
+        const darkPage = browser.getObsidianPage();
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
         await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-dark");
         await darkPage.setTheme(theme);
@@ -430,16 +440,11 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
-        await darkPage.enablePlugin("obsidian-style-settings");
-        await darkPage.enablePlugin("obsidian-view-mode-by-frontmatter");
-        await darkPage.enablePlugin("dataview");
-        await darkPage.write(
-          "./.obsidian/plugins/obsidian-style-settings/data.json",
-          preset,
+        await sleep(500);
+        await browser.executeObsidianCommand(
+          "plugin-reloader:obsidian-style-settings",
         );
-        await darkPage.disablePlugin("obsidian-style-settings");
-        await darkPage.enablePlugin("obsidian-style-settings");
-        await sleep(2000);
+        await sleep(500);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
         await sleep(100);
@@ -536,10 +541,20 @@ describe("Quartz Theme Style Extraction", () => {
       });
     }
     if (isLightTheme(theme)) {
-      before(async () => {});
-      it(`should extract styles for theme: ${theme} in light mode`, async () => {
+      before(async () => {
         const lightPage = browser.getObsidianPage();
         await lightPage.resetVault();
+        await lightPage.enablePlugin("plugin-reloader");
+        await lightPage.enablePlugin("obsidian-style-settings");
+        await lightPage.enablePlugin("obsidian-view-mode-by-frontmatter");
+        await lightPage.enablePlugin("dataview");
+      });
+      it(`should extract styles for theme: ${theme} in light mode`, async () => {
+        const lightPage = browser.getObsidianPage();
+        await lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
         await lightPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-light");
         await lightPage.setTheme(theme);
@@ -551,16 +566,11 @@ describe("Quartz Theme Style Extraction", () => {
             clickableFolder.click();
           }
         });
-        await lightPage.enablePlugin("obsidian-style-settings");
-        await lightPage.enablePlugin("obsidian-view-mode-by-frontmatter");
-        await lightPage.enablePlugin("dataview");
-        await lightPage.write(
-          "./.obsidian/plugins/obsidian-style-settings/data.json",
-          preset,
+        await sleep(500);
+        await browser.executeObsidianCommand(
+          "plugin-reloader:obsidian-style-settings",
         );
-        await lightPage.disablePlugin("obsidian-style-settings");
-        await lightPage.enablePlugin("obsidian-style-settings");
-        await sleep(2000);
+        await sleep(500);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
         await sleep(100);

@@ -1,6 +1,6 @@
-# tokyo-night-simple
+# Tokyo Night Simple
 
-- Theme: tokyo-night-simple
+- Theme: Tokyo Night Simple
 - Author: <a href="https://github.com/danarnold" target="_blank" rel="noopener noreferrer">Daniel Arnold</a>
 
 ## Preview

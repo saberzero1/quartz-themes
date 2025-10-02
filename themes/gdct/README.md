@@ -1,6 +1,6 @@
-# gdct
+# GDCT
 
-- Theme: gdct
+- Theme: GDCT
 - Author: bernardo_v
 
 ## Preview

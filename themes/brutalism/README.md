@@ -1,6 +1,6 @@
-# brutalism
+# Brutalism
 
-- Theme: brutalism
+- Theme: Brutalism
 - Author: <a href="https://github.com/abrahambahez" target="_blank" rel="noopener noreferrer">@abrahambahez</a>
 
 ## Preview

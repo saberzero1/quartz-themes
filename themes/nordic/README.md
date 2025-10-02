@@ -1,6 +1,6 @@
-# nordic
+# Nordic
 
-- Theme: nordic
+- Theme: Nordic
 - Author: <a href="https://github.com/natowb" target="_blank" rel="noopener noreferrer">Nato</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# playground
+# Playground
 
-- Theme: playground
+- Theme: Playground
 - Author: <a href="https://www.benjaminezequiel.com/" target="_blank" rel="noopener noreferrer">Ezben</a>
 
 ## Preview
