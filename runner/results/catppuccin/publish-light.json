@@ -1,4 +1,7 @@
 {
+  "&.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(239, 241, 245)"
+  },
   "&.theme-light": {
     "--accent-h": "254",
     "--accent-l": "68%",
@@ -1071,9 +1074,6 @@
     "border-radius": "0px",
     "border-width": "0px",
     "box-shadow": "none"
-  },
-  ".markdown-preview-sizer.markdown-preview-section": {
-    "background-color": "rgb(239, 241, 245)"
   },
   ".markdown-rendered a.external-link": {
     "background-color": "rgba(0, 0, 0, 0)",
