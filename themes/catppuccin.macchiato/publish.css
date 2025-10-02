@@ -968,6 +968,11 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --zoom-factor: 1;
 }
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+}
 body .callout[data-callout="abstract"] {
   --callout-color: 116, 199, 236;
   background-color: light-dark(
@@ -1340,9 +1345,6 @@ body .markdown-preview-sizer {
   border-radius: 0px;
   border-width: 0px;
   box-shadow: none;
-}
-body .markdown-preview-sizer.markdown-preview-section {
-  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
 }
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
