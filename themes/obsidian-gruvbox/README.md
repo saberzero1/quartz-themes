@@ -1,6 +1,6 @@
-# Obsidian gruvbox
+# obsidian-gruvbox
 
-- Theme: Obsidian gruvbox
+- Theme: obsidian-gruvbox
 - Author: <a href="https://insanum.com" target="_blank" rel="noopener noreferrer">insanum</a>
 
 ## Preview

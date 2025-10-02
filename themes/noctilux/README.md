@@ -1,6 +1,6 @@
-# Noctilux
+# noctilux
 
-- Theme: Noctilux
+- Theme: noctilux
 - Author: <a href="https://github.com/rastgame" target="_blank" rel="noopener noreferrer">RastGame</a>
 
 ## Preview

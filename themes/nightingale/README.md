@@ -1,6 +1,6 @@
-# Nightingale
+# nightingale
 
-- Theme: Nightingale
+- Theme: nightingale
 - Author: frank0713
 
 ## Preview

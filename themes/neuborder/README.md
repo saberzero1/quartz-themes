@@ -1,6 +1,6 @@
-# NeuBorder
+# neuborder
 
-- Theme: NeuBorder
+- Theme: neuborder
 - Author: <a href="https://github.com/sq1000000" target="_blank" rel="noopener noreferrer">sq1000000</a>
 
 ## Preview

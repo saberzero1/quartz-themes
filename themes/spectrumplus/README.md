@@ -1,6 +1,6 @@
-# SpectrumPlus
+# spectrumplus
 
-- Theme: SpectrumPlus
+- Theme: spectrumplus
 - Author: <a href="https://github.com/anotherlusitano" target="_blank" rel="noopener noreferrer">João Ribeiro</a>
 
 ## Preview

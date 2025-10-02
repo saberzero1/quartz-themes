@@ -1,6 +1,6 @@
-# Kiwi Mono
+# kiwi-mono
 
-- Theme: Kiwi Mono
+- Theme: kiwi-mono
 - Author: <a href="https://www.kiwisflight.com" target="_blank" rel="noopener noreferrer">Sooyoung Cheong</a>
 
 ## Preview

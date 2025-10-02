@@ -1,6 +1,6 @@
-# Encore
+# encore
 
-- Theme: Encore
+- Theme: encore
 - Author: <a href="https://lucaschampagne.dev/" target="_blank" rel="noopener noreferrer">Carbonateb</a>
 
 ## Preview

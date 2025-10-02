@@ -1,6 +1,6 @@
-# Ono Sendai
+# ono-sendai
 
-- Theme: Ono Sendai
+- Theme: ono-sendai
 - Author: \_ph
 
 ## Preview

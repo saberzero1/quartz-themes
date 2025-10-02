@@ -1,6 +1,6 @@
-# OISTNB
+# oistnb
 
-- Theme: OISTNB
+- Theme: oistnb
 - Author: <a href="https://github.com/omsandippatil" target="_blank" rel="noopener noreferrer">omsandeeppatil</a>
 
 ## Preview

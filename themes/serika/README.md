@@ -1,6 +1,6 @@
-# Serika
+# serika
 
-- Theme: Serika
+- Theme: serika
 - Author: <a href="https://github.com/Warrobot10" target="_blank" rel="noopener noreferrer">Warrobot10</a>
 
 ## Preview

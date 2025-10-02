@@ -1,6 +1,6 @@
-# Sei
+# sei
 
-- Theme: Sei
+- Theme: sei
 - Author: <a href="https://github.com/iwa" target="_blank" rel="noopener noreferrer">iwa</a>
 
 ## Preview

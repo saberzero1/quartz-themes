@@ -1,6 +1,6 @@
-# Pale - 淡
+# pale
 
-- Theme: Pale - 淡
+- Theme: pale
 - Author: Elhary
 
 ## Preview

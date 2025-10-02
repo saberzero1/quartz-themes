@@ -1,6 +1,6 @@
-# Abecedarium
+# abecedarium
 
-- Theme: Abecedarium
+- Theme: abecedarium
 - Author: <a href="https://notes.zacklenza.com" target="_blank" rel="noopener noreferrer">zalenza</a>
 
 ## Preview

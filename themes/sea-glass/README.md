@@ -1,6 +1,6 @@
-# Sea Glass
+# sea-glass
 
-- Theme: Sea Glass
+- Theme: sea-glass
 - Author: <a href="https://github.com/KStew1017" target="_blank" rel="noopener noreferrer">Kyle Stewart</a>
 
 ## Preview

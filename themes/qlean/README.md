@@ -1,6 +1,6 @@
-# Qlean
+# qlean
 
-- Theme: Qlean
+- Theme: qlean
 - Author: <a href="https://github.com/Fro-Q" target="_blank" rel="noopener noreferrer">Fro-Q</a>
 
 ## Preview

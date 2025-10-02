@@ -1,6 +1,6 @@
-# Monokai
+# monokai
 
-- Theme: Monokai
+- Theme: monokai
 - Author: <a href="https://github.com/bitSchleuder/obsidian-monokai-theme" target="_blank" rel="noopener noreferrer">bitSchleuder</a>
 
 ## Preview

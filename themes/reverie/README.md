@@ -1,6 +1,6 @@
-# Reverie
+# reverie
 
-- Theme: Reverie
+- Theme: reverie
 - Author: Santi Younger
 
 ## Preview

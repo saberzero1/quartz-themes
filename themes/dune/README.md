@@ -1,6 +1,6 @@
-# Dune
+# dune
 
-- Theme: Dune
+- Theme: dune
 - Author: ValCode
 
 ## Preview

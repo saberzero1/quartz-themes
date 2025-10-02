@@ -2,6 +2,7 @@ import { browser } from "@wdio/globals";
 import { extractionTargets } from "./config.js";
 import { writeFile, copyFileSync, writeFileSync, mkdirSync } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
+import getThemeCollection from "../../extensions/themelist.mjs";
 import {
   isDarkTheme,
   isLightTheme,
@@ -18,16 +19,24 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-//testingMode = true;
+testingMode = true;
 const testingTheme = "Catppuccin";
 
+/*
 const manifestCollection = testingMode
   ? getManifestCollection().filter(
       (m) => m.name.toLowerCase() === testingTheme.toLowerCase(),
     )
   : getManifestCollection(); // Limit to first 10 themes for testing
+  */
+const themeCollection = testingMode
+  ? getThemeCollection().filter((m) =>
+      m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
+    )
+  : getThemeCollection();
 
-console.log(manifestCollection);
+//console.log(manifestCollection);
+console.log(themeCollection);
 
 // test/extract-styles.test.js
 describe("Quartz Theme Style Extraction", () => {
@@ -359,9 +368,23 @@ describe("Quartz Theme Style Extraction", () => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  async function applyStyleSettingsPreset(browser, preset) {
+    await browser.executeObsidian(({ app }, preset) => {
+      const computedPreset = JSON.parse(JSON.stringify(preset));
+      app.plugins
+        .getPlugin("obsidian-style-settings")
+        .settingsManager.setSettings(computedPreset);
+    });
+  }
+
   async function getStylesFromObsidian(manifest, configuration) {
-    const theme = manifest.name;
-    const folder = sanitize(manifest.name);
+    const [theme, variation] = manifest.name.split(".");
+    console.log(`Theme: ${theme}, Variation: ${variation}`);
+    const preset = JSON.stringify(manifest.style_settings ?? {});
+    // TODO: style settings functions should be used to apply settings
+    // e.g. const ss = this.app.plugins.getPlugin("obsidian-style-settings").settingsManager
+    // https://github.com/mgmeyers/obsidian-style-settings/blob/dfa9f7c81f9345b9bca47c128339e0e00ecd2aee/src/ImportModal.ts#L48
+    const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
     mkdirSync(`./runner/results/${folder}`, { recursive: true });
     let lightResult = {
       general: {},
@@ -410,7 +433,13 @@ describe("Quartz Theme Style Extraction", () => {
         await darkPage.enablePlugin("obsidian-style-settings");
         await darkPage.enablePlugin("obsidian-view-mode-by-frontmatter");
         await darkPage.enablePlugin("dataview");
-        await sleep(500);
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
+        await darkPage.disablePlugin("obsidian-style-settings");
+        await darkPage.enablePlugin("obsidian-style-settings");
+        await sleep(2000);
         await darkPage.openFile("general.md");
         await darkPage.openFile("general.md");
         await sleep(100);
@@ -525,7 +554,13 @@ describe("Quartz Theme Style Extraction", () => {
         await lightPage.enablePlugin("obsidian-style-settings");
         await lightPage.enablePlugin("obsidian-view-mode-by-frontmatter");
         await lightPage.enablePlugin("dataview");
-        await sleep(500);
+        await lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
+        await lightPage.disablePlugin("obsidian-style-settings");
+        await lightPage.enablePlugin("obsidian-style-settings");
+        await sleep(2000);
         await lightPage.openFile("general.md");
         await lightPage.openFile("general.md");
         await sleep(100);
@@ -620,16 +655,18 @@ describe("Quartz Theme Style Extraction", () => {
     return { lightResult, darkResult };
   }
 
-  for (const manifest of manifestCollection) {
+  for (const manifest of themeCollection) {
     console.log(`Processing target: ${manifest.name}`);
     console.log(Object.entries(extractionTargets));
     getStylesFromObsidian(manifest, extractionTargets);
   }
 });
 
+/*
 if (testingMode) {
   copyFileSync(
     `./runner/results/${sanitize(testingTheme)}/_index.scss`,
     `./runner/quartz/quartz/styles/themes/_index.scss`,
   );
 }
+*/

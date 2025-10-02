@@ -1,6 +1,6 @@
-# Dark Graphite Pie
+# dark-graphite-pie
 
-- Theme: Dark Graphite Pie
+- Theme: dark-graphite-pie
 - Author: kitchenrunner
 
 ## Preview

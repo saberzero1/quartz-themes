@@ -1,6 +1,6 @@
-# Quillcode
+# quillcode
 
-- Theme: Quillcode
+- Theme: quillcode
 - Author: <a href="https://github.com/theaayushpatel" target="_blank" rel="noopener noreferrer">Aayush Patel</a>
 
 ## Preview

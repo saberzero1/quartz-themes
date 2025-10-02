@@ -1,6 +1,6 @@
-# Obuntu
+# obuntu
 
-- Theme: Obuntu
+- Theme: obuntu
 - Author: Dubinin Dmitry
 
 ## Preview

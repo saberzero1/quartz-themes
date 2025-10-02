@@ -1,6 +1,6 @@
-# Listive
+# listive
 
-- Theme: Listive
+- Theme: listive
 - Author: <a href="https://efemkay.github.io/" target="_blank" rel="noopener noreferrer">efemkay</a>
 
 ## Preview

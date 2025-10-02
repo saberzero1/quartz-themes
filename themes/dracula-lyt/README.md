@@ -1,6 +1,6 @@
-# Dracula + LYT
+# dracula-lyt
 
-- Theme: Dracula + LYT
+- Theme: dracula-lyt
 - Author: xRyul
 
 ## Preview

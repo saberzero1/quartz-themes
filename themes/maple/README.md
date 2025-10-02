@@ -1,6 +1,6 @@
-# Maple
+# maple
 
-- Theme: Maple
+- Theme: maple
 - Author: <a href="https://github.com/subframe7536" target="_blank" rel="noopener noreferrer">subframe7536</a>
 
 ## Preview

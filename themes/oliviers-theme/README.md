@@ -1,6 +1,6 @@
-# Oliviers Theme
+# oliviers-theme
 
-- Theme: Oliviers Theme
+- Theme: oliviers-theme
 - Author: <a href="https://github.com/OlivierPS" target="_blank" rel="noopener noreferrer">Olivier Spinnler</a>
 
 ## Preview

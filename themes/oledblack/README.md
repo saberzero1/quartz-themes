@@ -1,6 +1,6 @@
-# OLED.Black
+# oledblack
 
-- Theme: OLED.Black
+- Theme: oledblack
 - Author: <a href="https://github.com/Inc44" target="_blank" rel="noopener noreferrer">Inc44</a>
 
 ## Preview

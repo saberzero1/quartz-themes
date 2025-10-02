@@ -1,6 +1,6 @@
-# Vanilla AMOLED
+# vanilla-amoled
 
-- Theme: Vanilla AMOLED
+- Theme: vanilla-amoled
 - Author: <a href="https//github.com/SakuraIsayeki" target="_blank" rel="noopener noreferrer">Sakura Akeno Isayeki</a>
 
 ## Preview

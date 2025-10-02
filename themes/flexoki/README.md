@@ -1,6 +1,6 @@
-# Flexoki
+# flexoki
 
-- Theme: Flexoki
+- Theme: flexoki
 - Author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
 
 ## Preview

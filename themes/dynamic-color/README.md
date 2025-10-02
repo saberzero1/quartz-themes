@@ -1,6 +1,6 @@
-# Dynamic Color
+# dynamic-color
 
-- Theme: Dynamic Color
+- Theme: dynamic-color
 - Author: <a href="https://rodydavis.com" target="_blank" rel="noopener noreferrer">Rody Davis</a>
 
 ## Preview

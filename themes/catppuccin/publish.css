@@ -308,10 +308,19 @@ body.theme-dark {
   --color-yellow-rgb: 249, 226, 175;
   --ctp-accent: 180, 190, 254;
   --ctp-base: 30, 30, 46;
+  --ctp-blockquote: 245, 224, 220;
   --ctp-blue: 137, 180, 250;
+  --ctp-bold: 116, 199, 236;
   --ctp-crust: 17, 17, 27;
   --ctp-flamingo: 242, 205, 205;
   --ctp-green: 166, 227, 161;
+  --ctp-h1: 180, 190, 254;
+  --ctp-h2: 180, 190, 254;
+  --ctp-h3: 180, 190, 254;
+  --ctp-h4: 180, 190, 254;
+  --ctp-h5: 180, 190, 254;
+  --ctp-h6: 180, 190, 254;
+  --ctp-italic: 166, 227, 161;
   --ctp-lavender: 180, 190, 254;
   --ctp-mantle: 24, 24, 37;
   --ctp-maroon: 235, 160, 172;
@@ -319,17 +328,20 @@ body.theme-dark {
   --ctp-overlay0: 108, 112, 134;
   --ctp-overlay1: 127, 132, 156;
   --ctp-overlay2: 147, 153, 178;
+  --ctp-page-title: 205, 214, 244;
   --ctp-peach: 250, 179, 135;
   --ctp-pink: 245, 194, 231;
   --ctp-red: 243, 139, 168;
   --ctp-rosewater: 245, 224, 220;
   --ctp-sapphire: 116, 199, 236;
   --ctp-sky: 137, 220, 235;
+  --ctp-strikethrough: 235, 160, 172;
   --ctp-subtext0: 166, 173, 200;
   --ctp-subtext1: 186, 194, 222;
   --ctp-surface0: 49, 50, 68;
   --ctp-surface1: 69, 71, 90;
   --ctp-surface2: 88, 91, 112;
+  --ctp-tag-pill-color: 180, 190, 254;
   --ctp-teal: 148, 226, 213;
   --ctp-text: 205, 214, 244;
   --ctp-yellow: 249, 226, 175;
@@ -1401,7 +1413,7 @@ body .markdown-rendered a.internal-link {
 }
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
-  border-inline-start: 2px solid rgb(180, 190, 254);
+  border-inline-start: 2px solid rgb(245, 224, 220);
   font-family:
     Vollkorn,
     -apple-system,
@@ -2611,10 +2623,19 @@ body.theme-light {
   --color-yellow-rgb: 223, 142, 29;
   --ctp-accent: 114, 135, 253;
   --ctp-base: 239, 241, 245;
+  --ctp-blockquote: 220, 138, 120;
   --ctp-blue: 30, 102, 245;
+  --ctp-bold: 32, 159, 181;
   --ctp-crust: 220, 224, 232;
   --ctp-flamingo: 221, 120, 120;
   --ctp-green: 64, 160, 43;
+  --ctp-h1: 114, 135, 253;
+  --ctp-h2: 114, 135, 253;
+  --ctp-h3: 114, 135, 253;
+  --ctp-h4: 114, 135, 253;
+  --ctp-h5: 114, 135, 253;
+  --ctp-h6: 114, 135, 253;
+  --ctp-italic: 64, 160, 43;
   --ctp-lavender: 114, 135, 253;
   --ctp-mantle: 230, 233, 239;
   --ctp-maroon: 230, 69, 83;
@@ -2622,17 +2643,20 @@ body.theme-light {
   --ctp-overlay0: 156, 160, 176;
   --ctp-overlay1: 140, 143, 161;
   --ctp-overlay2: 124, 127, 147;
+  --ctp-page-title: 76, 79, 105;
   --ctp-peach: 254, 100, 11;
   --ctp-pink: 234, 118, 203;
   --ctp-red: 210, 15, 57;
   --ctp-rosewater: 220, 138, 120;
   --ctp-sapphire: 32, 159, 181;
   --ctp-sky: 4, 165, 229;
+  --ctp-strikethrough: 230, 69, 83;
   --ctp-subtext0: 108, 111, 133;
   --ctp-subtext1: 92, 95, 119;
   --ctp-surface0: 204, 208, 218;
   --ctp-surface1: 188, 192, 204;
   --ctp-surface2: 172, 176, 190;
+  --ctp-tag-pill-color: 114, 135, 253;
   --ctp-teal: 23, 146, 153;
   --ctp-text: 76, 79, 105;
   --ctp-yellow: 223, 142, 29;

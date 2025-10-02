@@ -1,6 +1,6 @@
-# Muted-Blue
+# muted-blue
 
-- Theme: Muted-Blue
+- Theme: muted-blue
 - Author: <a href="https://github.com/HasanTheSyrian" target="_blank" rel="noopener noreferrer">HasanTheSyrian</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Simple Color
+# simple-color
 
-- Theme: Simple Color
+- Theme: simple-color
 - Author: <a href="https://nayasinghania.com" target="_blank" rel="noopener noreferrer">Naya Singhania</a>
 
 ## Preview

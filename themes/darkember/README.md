@@ -1,6 +1,6 @@
-# DarkEmber
+# darkember
 
-- Theme: DarkEmber
+- Theme: darkember
 - Author: <a href="https://github.com/miz-i" target="_blank" rel="noopener noreferrer">miz</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Neon Synthwave
+# neon-synthwave
 
-- Theme: Neon Synthwave
+- Theme: neon-synthwave
 - Author: <a href="https://github.com/grjsmith" target="_blank" rel="noopener noreferrer">Grant Smith</a>
 
 ## Preview

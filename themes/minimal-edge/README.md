@@ -1,6 +1,6 @@
-# Minimal Edge
+# minimal-edge
 
-- Theme: Minimal Edge
+- Theme: minimal-edge
 - Author: Elhary
 
 ## Preview

@@ -1,6 +1,6 @@
-# Novadust
+# novadust
 
-- Theme: Novadust
+- Theme: novadust
 - Author: <a href="https://github.com/mmartamg" target="_blank" rel="noopener noreferrer">marta.stl</a>
 
 ## Preview

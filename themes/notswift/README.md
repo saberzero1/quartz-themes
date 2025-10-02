@@ -1,6 +1,6 @@
-# NotSwift
+# notswift
 
-- Theme: NotSwift
+- Theme: notswift
 - Author: <a href="https://github.com/davidjroos" target="_blank" rel="noopener noreferrer">David Roos</a>
 
 ## Preview

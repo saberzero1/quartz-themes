@@ -1,6 +1,6 @@
-# Ebullientworks
+# ebullientworks
 
-- Theme: Ebullientworks
+- Theme: ebullientworks
 - Author: <a href="https://github.com/ebullient" target="_blank" rel="noopener noreferrer">Ebullientworks</a>
 - Support the author: <a href="https://www.buymeacoffee.com/ebullient" target="_blank" rel="noopener noreferrer">Donate</a>
 

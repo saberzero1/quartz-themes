@@ -1,6 +1,6 @@
-# Tokyo Night
+# tokyo-night
 
-- Theme: Tokyo Night
+- Theme: tokyo-night
 - Author: tcmmichaelb139
 
 ## Preview

@@ -1,6 +1,6 @@
-# Vicious
+# vicious
 
-- Theme: Vicious
+- Theme: vicious
 - Author: <a href="https://zaher.design" target="_blank" rel="noopener noreferrer">Zaher Al Majed</a>
 
 ## Preview

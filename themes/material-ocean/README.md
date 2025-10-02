@@ -1,6 +1,6 @@
-# Material Ocean
+# material-ocean
 
-- Theme: Material Ocean
+- Theme: material-ocean
 - Author: <a href="https://dragonwocky.me" target="_blank" rel="noopener noreferrer">dragonwocky</a>
 
 ## Preview

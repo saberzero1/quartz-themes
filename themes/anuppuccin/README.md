@@ -1,6 +1,6 @@
-# AnuPpuccin
+# anuppuccin
 
-- Theme: AnuPpuccin
+- Theme: anuppuccin
 - Author: <a href="https://github.com/AnubisNekhet" target="_blank" rel="noopener noreferrer">Anubis</a>
 
 ## Preview

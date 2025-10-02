@@ -1,6 +1,6 @@
-# FastPpuccin
+# fastppuccin
 
-- Theme: FastPpuccin
+- Theme: fastppuccin
 - Author: <a href="https://github.com/LostViking09/" target="_blank" rel="noopener noreferrer">LostViking09</a>
 
 ## Preview

@@ -1,6 +1,6 @@
-# Wasp
+# wasp
 
-- Theme: Wasp
+- Theme: wasp
 - Author: Santi Younger
 
 ## Preview
