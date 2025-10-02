@@ -1,4 +1,6 @@
 // src/extraction-config.js
+// TODO: Fix background color mappings
+// Probably needs to target the publish container div directly instead of body
 const sets = {
   typography: [
     "color",
