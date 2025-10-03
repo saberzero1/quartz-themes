@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/eliz-abeth" target="_blank" rel="noopener noreferrer">eliz-abeth</a>
 - Support the author: <a href="http://ko-fi.com/eliz0beth" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/sandover|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sandover">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                         |
 | ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://notes.tingmelvin.com/ER-Resources/ER2PUB/ER2PUB-01-AboutMe" target="_blank" rel="noopener noreferrer">tingmelvin</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/willemstad|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/willemstad">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                                                                     | License                                                                                                                                                   |
 | ------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |

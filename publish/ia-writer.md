@@ -2,7 +2,7 @@
 
 - Theme author: <a href="http://github.com/mrowa44" target="_blank" rel="noopener noreferrer">mrowa44</a>
 - Support the author: <a href="https://www.buymeacoffee.com/mrowa44" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ia-writer|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ia-writer">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
 | ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

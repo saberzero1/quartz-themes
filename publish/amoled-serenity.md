@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://darthdemono.rf.gd/" target="_blank" rel="noopener noreferrer">Darth Demono</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/amoled-serenity|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/amoled-serenity">Install instructions</a>
 
 | Name              | Modes                     | Compatibility                                                                                     | License                                                                                                                                                |
 | ----------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

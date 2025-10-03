@@ -101,7 +101,7 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
       "//QUARTZ_THEMES_LINK",
       `- Theme author: ${authorString}
 ${fundingString}
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme}|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme}">Install instructions</a>
 
 | Name | Modes | Compatibility | License |
 | --- | --- | --- | --- |

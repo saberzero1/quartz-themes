@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://ch0live.github.io/home" target="_blank" rel="noopener noreferrer">ch0live</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/dunite|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dunite">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

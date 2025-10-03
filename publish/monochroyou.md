@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/GuiMar10" target="_blank" rel="noopener noreferrer">GuiMar10</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/monochroyou|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monochroyou">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                                    |
 | ------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

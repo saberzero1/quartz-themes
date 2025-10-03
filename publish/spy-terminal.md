@@ -2,7 +2,7 @@
 
 - Theme author: <a href="buymeacoffee.com/saeli" target="_blank" rel="noopener noreferrer">IchiroFukuda</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/spy-terminal|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/spy-terminal">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
 | -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

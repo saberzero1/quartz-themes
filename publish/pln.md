@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://docs.dev0.sh" target="_blank" rel="noopener noreferrer">PipeItToDevNull</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/pln|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/pln">Install instructions</a>
 
 | Name  | Modes                     | Compatibility                                                                                     | License                                                                                                                                            |
 | ----- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

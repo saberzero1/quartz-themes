@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/omkar-4" target="_blank" rel="noopener noreferrer">Omkar Iyer</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose">Install instructions</a>
 
 | Name                   | Modes                     | Compatibility                                  | License                                                                                                                                                               |
 | ---------------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

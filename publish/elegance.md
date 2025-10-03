@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Victologo/elegance-theme" target="_blank" rel="noopener noreferrer">Victologo</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/elegance|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/elegance">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                  | License                                                                                                                                                                   |
 | ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://www.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Rohit Saluja</a>
 - Support the author: <a href="https://buymecoffee.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ethereon|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ethereon">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                  | License                                                                                                                                                 |
 | ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

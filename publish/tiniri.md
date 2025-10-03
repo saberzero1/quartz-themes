@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://tiniri.vlad.studio" target="_blank" rel="noopener noreferrer">Vlad Gerasimov</a>
 - Support the author: <a href="https://vlad.studio/signup" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

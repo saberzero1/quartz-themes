@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/krios2146" target="_blank" rel="noopener noreferrer">@krios2146</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/github-theme|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/github-theme">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
