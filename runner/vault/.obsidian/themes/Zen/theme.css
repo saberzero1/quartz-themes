@@ -1053,7 +1053,7 @@ hr {
 /* .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false], */
 .markdown-preview-view .markdown-embed:not(.image-embed) {
 	margin-left: 3px !important;
-	padding-left: 14px;
+	/* padding-left: 14px; */
 }
 
 .embed-title {
@@ -3061,12 +3061,15 @@ body:not(.is-translucent) .workspace-sidedock-vault-profile
 	background-color: var(--background-primary) !important;
 }
 
-body:not(.is-translucent) .workspace-tabs.mod-active.mod-top .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-content,
-body:not(.is-translucent) .workspace-tabs.mod-active.mod-top .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-header,
-body:not(.is-translucent) .workspace-tabs.mod-active.mod-top .workspace-tab-header-container,
-body:not(.is-translucent) .workspace-tabs.mod-active.mod-top {
+body:not(.is-translucent) .workspace-split.mod-root.mod-vertical .workspace-tabs.mod-top .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-content,
+body:not(.is-translucent) .workspace-tabs.mod-top .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-header,
+body:not(.is-translucent) .workspace-split.mod-root .workspace-tabs.mod-top .workspace-tab-container .workspace-leaf,
+body:not(.is-translucent)  .workspace-split.mod-root .workspace-tabs.mod-top .workspace-tab-container,
+body:not(.is-translucent) .workspace-split.mod-root .workspace-tabs.mod-top .workspace-tab-header-container,
+body:not(.is-translucent) .workspace-split.mod-root .workspace-tabs.mod-top {
 	background-color: var(--background-secondary) !important;
 }
+
 
 body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 	--tab-max-width: 240px;

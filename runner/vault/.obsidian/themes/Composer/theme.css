@@ -275,8 +275,8 @@ settings:
   description.zh: 需要指定单位 em 或 px
   type: variable-text
   default: 1.21em
-- id: h6-size
-  title: H6 Size
+- id: h5-size
+  title: H5 Size
   title.zh: 五级标题大小
   description: you should specify the unit em or px
   description.zh: 需要指定单位 em 或 px
@@ -2185,6 +2185,7 @@ body:not(.is-phone) .workspace-tab-container {
 
 .mod-root .workspace-tab-header-container-inner {
 	padding: 1px 12px 0px 6px;
+	gap: var(--size-4-1);
 }
 
 .workspace
@@ -2548,18 +2549,26 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 	margin-block-end: 0.5rem;
 }
 
+.metadata-container.is-collapsed {
+	margin-block-end: var(--p-spacing);
+}
+
 .metadata-properties-heading {
-	display: none;
+	position: absolute;
+	top: 4px;
 }
 
 .metadata-properties-title {
 	color: var(--text-muted);
+	display: none;
 }
 
-.metadata-content {
-	--metadata-gap: 4px;
-	--metadata-property-radius-hover: 0px;
-	--metadata-property-radius-focus: 0px;
+.metadata-properties-heading.is-collapsed .metadata-properties-title {
+	display: block;
+}
+
+.metadata-container:hover .collapse-indicator {
+	opacity: 1;
 }
 
 .is-mobile .metadata-properties {
@@ -2609,13 +2618,12 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 .metadata-container .metadata-add-button {
 	margin-top: 0.5em;
 	color: var(--text-faint);
-    cursor: pointer;
-
+	cursor: pointer;
 }
 
 .metadata-content:hover .metadata-add-button {
 	transition: color 0.5s;
-    color: var(--text-normal)
+	color: var(--text-normal);
 }
 
 /* file list */
