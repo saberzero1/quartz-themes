@@ -1160,49 +1160,49 @@
     "cursor": "default"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(36, 41, 46)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"

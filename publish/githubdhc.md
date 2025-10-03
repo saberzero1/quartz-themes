@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for githubdhc theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/githubdhc)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/githubdhc|Install instructions]]
+
+- Name: `githubdhc`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/githubdhc/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

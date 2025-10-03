@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for penumbra theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/penumbra)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/penumbra|Install instructions]]
+
+- Name: `penumbra`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/penumbra/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

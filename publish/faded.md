@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for faded theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/faded)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/faded|Install instructions]]
+
+- Name: `faded`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/faded/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

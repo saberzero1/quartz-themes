@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for rift theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/rift)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/rift|Install instructions]]
+
+- Name: `rift`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rift/LICENSE.md"><img src="media/license/joke license.svg" alt="JOKE LICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

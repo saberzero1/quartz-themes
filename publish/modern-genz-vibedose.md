@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for modern-genz-vibedose theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose|Install instructions]]
+
+- Name: `modern-genz-vibedose`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/modern-genz-vibedose/LICENSE.md"><img src="media/license/agpl-3.0.svg" alt="AGPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

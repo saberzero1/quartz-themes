@@ -61,6 +61,7 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
     }
     const license = themes[themeName.theme]["license"]["spdx_id"];
     const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
+    const licensePublishString = `<a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
     let compatibilityString = "";
     compatibilityArray.forEach((compatibility) => {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
@@ -74,7 +75,12 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
     replaceInFile(
       `./publish/${themeName.theme}.md`,
       "//QUARTZ_THEMES_LINK",
-      `[Install instructions for ${themeName.theme} theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme})`,
+      `[[https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme}|Install instructions]]
+
+* Name: \`${themeName.theme}\`
+* Modes: ![[media/${mode}.svg|${mode.toUpperCase()}]]
+* Compatibility: ${compatibilityString.trim()}
+* License: ${licensePublishString}`,
     );
   });
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for space theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/space)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/space|Install instructions]]
+
+- Name: `space`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/space/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for dayspring theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/dayspring)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/dayspring|Install instructions]]
+
+- Name: `dayspring`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dayspring/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

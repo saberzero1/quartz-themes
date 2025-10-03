@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for minimal-dark-coder theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-dark-coder)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-dark-coder|Install instructions]]
+
+- Name: `minimal-dark-coder`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-dark-coder/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

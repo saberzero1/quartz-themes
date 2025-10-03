@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for abecedarium theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/abecedarium)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/abecedarium|Install instructions]]
+
+- Name: `abecedarium`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/full.svg" alt="FULL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abecedarium/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

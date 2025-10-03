@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for celestial-night theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/celestial-night)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/celestial-night|Install instructions]]
+
+- Name: `celestial-night`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/celestial-night/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

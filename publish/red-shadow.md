@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for red-shadow theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow|Install instructions]]
+
+- Name: `red-shadow`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/red-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

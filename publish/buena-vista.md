@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for buena-vista theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/buena-vista)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/buena-vista|Install instructions]]
+
+- Name: `buena-vista`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/buena-vista/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

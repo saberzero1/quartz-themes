@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for flexoki theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki|Install instructions]]
+
+- Name: `flexoki`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/flexoki/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

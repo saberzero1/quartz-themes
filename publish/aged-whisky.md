@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for aged-whisky theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/aged-whisky)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/aged-whisky|Install instructions]]
+
+- Name: `aged-whisky`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/aged-whisky/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

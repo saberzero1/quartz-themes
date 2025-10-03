@@ -1458,9 +1458,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1483,9 +1483,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1506,9 +1506,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1527,9 +1527,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1546,17 +1546,17 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 0px none rgb(204, 204, 204);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;

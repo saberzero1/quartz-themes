@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for monochroyou theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/monochroyou)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/monochroyou|Install instructions]]
+
+- Name: `monochroyou`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monochroyou/LICENSE.md"><img src="media/license/mpl-2.0.svg" alt="MPL-2.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

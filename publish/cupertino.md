@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for cupertino theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/cupertino)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/cupertino|Install instructions]]
+
+- Name: `cupertino`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cupertino/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

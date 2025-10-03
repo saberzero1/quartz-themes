@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for 80s-neon theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/80s-neon)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/80s-neon|Install instructions]]
+
+- Name: `80s-neon`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/full.svg" alt="FULL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/80s-neon/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

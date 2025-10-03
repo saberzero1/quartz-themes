@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for gdct theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/gdct)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/gdct|Install instructions]]
+
+- Name: `gdct`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/gdct/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

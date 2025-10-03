@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for nobb theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/nobb)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/nobb|Install instructions]]
+
+- Name: `nobb`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/nobb/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

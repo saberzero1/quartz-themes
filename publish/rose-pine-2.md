@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for rose-pine-2 theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2|Install instructions]]
+
+- Name: `rose-pine-2`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rose-pine-2/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 
