@@ -1313,7 +1313,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(63, 249, 110);
+    color: rgb(82, 250, 124);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1337,7 +1337,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(63, 249, 110) none 0px;
+    outline: rgb(82, 250, 124) none 0px;
     text-decoration: underline solid rgba(82, 250, 124, 0.3);
     text-decoration-color: rgba(82, 250, 124, 0.3);
     text-decoration-line: underline;
@@ -1389,7 +1389,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(63, 249, 110);
+    color: rgb(82, 250, 124);
   }
 
   blockquote {
@@ -1512,7 +1512,7 @@ body {
     --quartz-graph-line: #976262;
     --quartz-graph-node: #bababa;
     --quartz-graph-node-attachment: #e0de71;
-    --quartz-graph-node-focused: hsl(135, 94%, calc(65% - 3.8%));
+    --quartz-graph-node-focused: hsl(135, 94%, 65%);
     --quartz-graph-node-tag: #44cf6e;
     --quartz-graph-node-unresolved: #666666;
     --quartz-graph-text: #f8f8f2;
@@ -1679,8 +1679,8 @@ body {
 
   input[type="checkbox"] {
     appearance: none;
-    border: 0px none rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
+    border: 0px none rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     border-radius: 4px;
     margin: 0px 0px 0px -24px;
     margin-inline-end: 0px;

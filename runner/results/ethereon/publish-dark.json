@@ -1173,49 +1173,49 @@
     "cursor": "default"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-children": {
-    "border-inline-start": "2px solid rgba(226, 224, 226, 0.12)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(226, 224, 210)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"

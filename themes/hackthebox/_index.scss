@@ -169,32 +169,32 @@ html {
 
 body {
   &[data-slug] {
-    background: rgb(26, 35, 49);
+    background: rgb(20, 29, 43);
     color: rgb(164, 177, 205);
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 8, 109, 221;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -204,30 +204,30 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
-    background-color: rgba(83, 223, 221, 0.1);
-    border-color: rgba(83, 223, 221, 0.25);
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.1);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: rgb(83, 223, 221);
-    background-color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
+    background-color: rgb(0, 191, 188);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
     font-weight: 400;
   }
 
@@ -237,30 +237,30 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -270,30 +270,30 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -303,30 +303,30 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
-    background-color: rgba(168, 130, 255, 0.1);
-    border-color: rgba(168, 130, 255, 0.25);
+    --callout-color: 120, 82, 238;
+    background-color: rgba(120, 82, 238, 0.1);
+    border-color: rgba(120, 82, 238, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: rgb(168, 130, 255);
+    color: rgb(120, 82, 238);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: rgb(168, 130, 255);
-    background-color: rgb(168, 130, 255);
+    color: rgb(120, 82, 238);
+    background-color: rgb(120, 82, 238);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(168, 130, 255);
+    color: rgb(120, 82, 238);
     font-weight: 400;
   }
 
@@ -336,30 +336,30 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -369,30 +369,30 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -402,30 +402,30 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -435,30 +435,30 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
-    background-color: rgba(233, 151, 63, 0.1);
-    border-color: rgba(233, 151, 63, 0.25);
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.1);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: rgb(233, 151, 63);
-    background-color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
+    background-color: rgb(236, 117, 0);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
     font-weight: 400;
   }
 
@@ -474,7 +474,7 @@ body {
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
@@ -501,30 +501,30 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
-    background-color: rgba(68, 207, 110, 0.1);
-    border-color: rgba(68, 207, 110, 0.25);
+    --callout-color: 8, 185, 78;
+    background-color: rgba(8, 185, 78, 0.1);
+    border-color: rgba(8, 185, 78, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: rgb(68, 207, 110);
+    color: rgb(8, 185, 78);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: rgb(68, 207, 110);
-    background-color: rgb(68, 207, 110);
+    color: rgb(8, 185, 78);
+    background-color: rgb(8, 185, 78);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(68, 207, 110);
+    color: rgb(8, 185, 78);
     font-weight: 400;
   }
 
@@ -534,30 +534,30 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
-    background-color: rgba(83, 223, 221, 0.1);
-    border-color: rgba(83, 223, 221, 0.25);
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.1);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: rgb(83, 223, 221);
-    background-color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
+    background-color: rgb(0, 191, 188);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(83, 223, 221);
+    color: rgb(0, 191, 188);
     font-weight: 400;
   }
 
@@ -567,30 +567,30 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -600,30 +600,30 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
-    background-color: rgba(233, 151, 63, 0.1);
-    border-color: rgba(233, 151, 63, 0.25);
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.1);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: rgb(233, 151, 63);
-    background-color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
+    background-color: rgb(236, 117, 0);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 151, 63);
+    color: rgb(236, 117, 0);
     font-weight: 400;
   }
 
@@ -638,7 +638,7 @@ body {
   }
 
   .explorer .explorer-content {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -702,7 +702,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     color: rgb(164, 177, 205);
     cursor: default;
   }
@@ -759,23 +759,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: rgb(20, 29, 43);
+    background-color: rgb(26, 35, 49);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
     border-color: rgb(74, 84, 102);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
     border-color: rgb(74, 84, 102);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
   }
 
   .page > #quartz-body div.center {
@@ -995,12 +995,12 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: rgb(20, 29, 43);
+    background-color: rgb(26, 35, 49);
     border-color: rgb(74, 84, 102);
   }
 
   .search > .search-button {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
     border: 1px solid rgb(74, 84, 102);
     border-color: rgb(74, 84, 102);
     border-radius: 5px;
@@ -1020,7 +1020,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(20, 29, 43);
+    background-color: rgb(26, 35, 49);
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 12px;
     box-shadow:
@@ -1137,7 +1137,7 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     color: rgb(164, 177, 205);
     font-weight: 400;
   }
@@ -1148,9 +1148,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(20, 29, 43);
+    background-color: rgb(26, 35, 49);
     border: unset;
-    border-bottom: 1px solid rgb(26, 35, 49);
+    border-bottom: 1px solid rgb(20, 29, 43);
     border-radius: 0px;
     box-shadow: none;
   }
@@ -1167,7 +1167,7 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
     color: rgb(164, 177, 205);
   }
@@ -1190,7 +1190,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
     color: rgb(164, 177, 205);
   }
@@ -1237,7 +1237,7 @@ body {
   }
 
   :root {
-    --code-background: #1a2331;
+    --code-background: #141d2b;
     --code-comment: #c5d1eb;
     --code-function: #ffcc5c;
     --code-important: #ffaf00;
@@ -1349,7 +1349,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(189, 255, 21);
+    color: rgb(160, 240, 0);
   }
 
   blockquote {
@@ -1446,9 +1446,9 @@ body {
   div.graph {
     --quartz-graph-line: #4a5466;
     --quartz-graph-node: #cad2e2;
-    --quartz-graph-node-attachment: #e0de71;
+    --quartz-graph-node-attachment: #e0ac00;
     --quartz-graph-node-focused: #9fef00;
-    --quartz-graph-node-tag: #44cf6e;
+    --quartz-graph-node-tag: #08b94e;
     --quartz-graph-node-unresolved: #a4b1cd;
     --quartz-graph-text: #a4b1cd;
   }
@@ -1598,7 +1598,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1608,7 +1608,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1618,7 +1618,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1628,7 +1628,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1638,7 +1638,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1648,7 +1648,7 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1701,7 +1701,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: rgb(26, 35, 49);
+    background-color: rgb(20, 29, 43);
     border: 0px solid rgb(74, 84, 102);
     border-color: rgb(74, 84, 102);
     border-radius: 4px;

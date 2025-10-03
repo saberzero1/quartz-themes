@@ -6,27 +6,27 @@
 }
 
 :root:root {
-  --light: #b6a79d !important;
-  --gray: #554d47 !important;
-  --darkgray: #554d47 !important;
-  --highlight: #e0ac00 !important;
-  --secondary: #b98679 !important;
-  --tertiary: #08b94e !important;
-  --lightgray: #8a7e76 !important;
-  --dark: #3a3330 !important;
+  --light: #404650 !important;
+  --gray: #8d949d !important;
+  --darkgray: #8d949d !important;
+  --highlight: #e0de71 !important;
+  --secondary: #d9bca4 !important;
+  --tertiary: #44cf6e !important;
+  --lightgray: #5a616a !important;
+  --dark: #e3e7eb !important;
 
-  --code-background: #eee6e1 !important;
-  --code-comment: #8a7e76 !important;
-  --code-function: #e0ac00 !important;
-  --code-important: #ec7500 !important;
-  --code-keyword: #d53984 !important;
-  --code-normal: #eb5757 !important;
-  --code-operator: #e93147 !important;
-  --code-property: #00bfbc !important;
-  --code-punctuation: #554d47 !important;
-  --code-string: #08b94e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #7852ee !important;
+  --code-background: #282f39 !important;
+  --code-comment: #5a616a !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #ff7b72 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #8d949d !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #404650 !important;
@@ -228,7 +228,7 @@ html {
 body {
   &[data-slug] {
     background: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   .callout {
@@ -242,17 +242,17 @@ body {
 
   .callout .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     gap: 4px;
     padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     font-weight: 400;
   }
 
@@ -263,14 +263,8 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: 123, 204, 214;
-    background-color: light-dark(
-      rgba(52, 136, 152, 0.1),
-      rgba(123, 204, 214, 0.1)
-    );
-    border-color: light-dark(
-      rgba(52, 136, 152, 0.35),
-      rgba(123, 204, 214, 0.35)
-    );
+    background-color: rgba(123, 204, 214, 0.1);
+    border-color: rgba(123, 204, 214, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -280,18 +274,18 @@ body {
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
-    background-color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
+    background-color: rgb(123, 204, 214);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
     font-weight: 400;
   }
 
@@ -302,14 +296,8 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: 255, 123, 114;
-    background-color: light-dark(
-      rgba(174, 62, 76, 0.1),
-      rgba(255, 123, 114, 0.1)
-    );
-    border-color: light-dark(
-      rgba(174, 62, 76, 0.35),
-      rgba(255, 123, 114, 0.35)
-    );
+    background-color: rgba(255, 123, 114, 0.1);
+    border-color: rgba(255, 123, 114, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -319,18 +307,18 @@ body {
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
-    background-color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
+    background-color: rgb(255, 123, 114);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
     font-weight: 400;
   }
 
@@ -341,11 +329,8 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: 255, 100, 92;
-    background-color: light-dark(
-      rgba(158, 48, 57, 0.1),
-      rgba(255, 100, 92, 0.1)
-    );
-    border-color: light-dark(rgba(158, 48, 57, 0.35), rgba(255, 100, 92, 0.35));
+    background-color: rgba(255, 100, 92, 0.1);
+    border-color: rgba(255, 100, 92, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -355,18 +340,18 @@ body {
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(158, 48, 57), rgb(255, 100, 92));
+    color: rgb(255, 100, 92);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: light-dark(rgb(158, 48, 57), rgb(255, 100, 92));
-    background-color: light-dark(rgb(158, 48, 57), rgb(255, 100, 92));
+    color: rgb(255, 100, 92);
+    background-color: rgb(255, 100, 92);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(158, 48, 57), rgb(255, 100, 92));
+    color: rgb(255, 100, 92);
     font-weight: 400;
   }
 
@@ -377,14 +362,8 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: 182, 155, 255;
-    background-color: light-dark(
-      rgba(94, 72, 146, 0.1),
-      rgba(182, 155, 255, 0.1)
-    );
-    border-color: light-dark(
-      rgba(94, 72, 146, 0.35),
-      rgba(182, 155, 255, 0.35)
-    );
+    background-color: rgba(182, 155, 255, 0.1);
+    border-color: rgba(182, 155, 255, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -394,18 +373,18 @@ body {
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(94, 72, 146), rgb(182, 155, 255));
+    color: rgb(182, 155, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: light-dark(rgb(94, 72, 146), rgb(182, 155, 255));
-    background-color: light-dark(rgb(94, 72, 146), rgb(182, 155, 255));
+    color: rgb(182, 155, 255);
+    background-color: rgb(182, 155, 255);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(94, 72, 146), rgb(182, 155, 255));
+    color: rgb(182, 155, 255);
     font-weight: 400;
   }
 
@@ -416,14 +395,8 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: 255, 123, 114;
-    background-color: light-dark(
-      rgba(174, 62, 76, 0.1),
-      rgba(255, 123, 114, 0.1)
-    );
-    border-color: light-dark(
-      rgba(174, 62, 76, 0.35),
-      rgba(255, 123, 114, 0.35)
-    );
+    background-color: rgba(255, 123, 114, 0.1);
+    border-color: rgba(255, 123, 114, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -433,18 +406,18 @@ body {
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
-    background-color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
+    background-color: rgb(255, 123, 114);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(174, 62, 76), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
     font-weight: 400;
   }
 
@@ -455,14 +428,8 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: 123, 175, 222;
-    background-color: light-dark(
-      rgba(95, 164, 218, 0.1),
-      rgba(123, 175, 222, 0.1)
-    );
-    border-color: light-dark(
-      rgba(95, 164, 218, 0.35),
-      rgba(123, 175, 222, 0.35)
-    );
+    background-color: rgba(123, 175, 222, 0.1);
+    border-color: rgba(123, 175, 222, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -472,18 +439,18 @@ body {
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
-    background-color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
+    background-color: rgb(123, 175, 222);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     font-weight: 400;
   }
 
@@ -494,14 +461,8 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: 123, 175, 222;
-    background-color: light-dark(
-      rgba(95, 164, 218, 0.1),
-      rgba(123, 175, 222, 0.1)
-    );
-    border-color: light-dark(
-      rgba(95, 164, 218, 0.35),
-      rgba(123, 175, 222, 0.35)
-    );
+    background-color: rgba(123, 175, 222, 0.1);
+    border-color: rgba(123, 175, 222, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -511,18 +472,18 @@ body {
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
-    background-color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
+    background-color: rgb(123, 175, 222);
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     font-weight: 400;
   }
 
@@ -533,14 +494,8 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: 255, 182, 104;
-    background-color: light-dark(
-      rgba(184, 110, 51, 0.1),
-      rgba(255, 182, 104, 0.1)
-    );
-    border-color: light-dark(
-      rgba(184, 110, 51, 0.35),
-      rgba(255, 182, 104, 0.35)
-    );
+    background-color: rgba(255, 182, 104, 0.1);
+    border-color: rgba(255, 182, 104, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -550,18 +505,18 @@ body {
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(184, 110, 51), rgb(255, 182, 104));
+    color: rgb(255, 182, 104);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: light-dark(rgb(184, 110, 51), rgb(255, 182, 104));
-    background-color: light-dark(rgb(184, 110, 51), rgb(255, 182, 104));
+    color: rgb(255, 182, 104);
+    background-color: rgb(255, 182, 104);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(184, 110, 51), rgb(255, 182, 104));
+    color: rgb(255, 182, 104);
     font-weight: 400;
   }
 
@@ -605,14 +560,8 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: 123, 204, 148;
-    background-color: light-dark(
-      rgba(62, 132, 98, 0.1),
-      rgba(123, 204, 148, 0.1)
-    );
-    border-color: light-dark(
-      rgba(62, 132, 98, 0.35),
-      rgba(123, 204, 148, 0.35)
-    );
+    background-color: rgba(123, 204, 148, 0.1);
+    border-color: rgba(123, 204, 148, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -622,18 +571,18 @@ body {
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(62, 132, 98), rgb(123, 204, 148));
+    color: rgb(123, 204, 148);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: light-dark(rgb(62, 132, 98), rgb(123, 204, 148));
-    background-color: light-dark(rgb(62, 132, 98), rgb(123, 204, 148));
+    color: rgb(123, 204, 148);
+    background-color: rgb(123, 204, 148);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(62, 132, 98), rgb(123, 204, 148));
+    color: rgb(123, 204, 148);
     font-weight: 400;
   }
 
@@ -644,14 +593,8 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: 123, 204, 214;
-    background-color: light-dark(
-      rgba(52, 136, 152, 0.1),
-      rgba(123, 204, 214, 0.1)
-    );
-    border-color: light-dark(
-      rgba(52, 136, 152, 0.35),
-      rgba(123, 204, 214, 0.35)
-    );
+    background-color: rgba(123, 204, 214, 0.1);
+    border-color: rgba(123, 204, 214, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -661,18 +604,18 @@ body {
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
-    background-color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
+    background-color: rgb(123, 204, 214);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(52, 136, 152), rgb(123, 204, 214));
+    color: rgb(123, 204, 214);
     font-weight: 400;
   }
 
@@ -683,14 +626,8 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: 123, 175, 222;
-    background-color: light-dark(
-      rgba(95, 164, 218, 0.1),
-      rgba(123, 175, 222, 0.1)
-    );
-    border-color: light-dark(
-      rgba(95, 164, 218, 0.35),
-      rgba(123, 175, 222, 0.35)
-    );
+    background-color: rgba(123, 175, 222, 0.1);
+    border-color: rgba(123, 175, 222, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -700,18 +637,18 @@ body {
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
-    background-color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
+    background-color: rgb(123, 175, 222);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(95, 164, 218), rgb(123, 175, 222));
+    color: rgb(123, 175, 222);
     font-weight: 400;
   }
 
@@ -722,14 +659,8 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: 255, 170, 92;
-    background-color: light-dark(
-      rgba(191, 127, 63, 0.1),
-      rgba(255, 170, 92, 0.1)
-    );
-    border-color: light-dark(
-      rgba(191, 127, 63, 0.35),
-      rgba(255, 170, 92, 0.35)
-    );
+    background-color: rgba(255, 170, 92, 0.1);
+    border-color: rgba(255, 170, 92, 0.35);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -739,18 +670,18 @@ body {
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(191, 127, 63), rgb(255, 170, 92));
+    color: rgb(255, 170, 92);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: light-dark(rgb(191, 127, 63), rgb(255, 170, 92));
-    background-color: light-dark(rgb(191, 127, 63), rgb(255, 170, 92));
+    color: rgb(255, 170, 92);
+    background-color: rgb(255, 170, 92);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(191, 127, 63), rgb(255, 170, 92));
+    color: rgb(255, 170, 92);
     font-weight: 400;
   }
 
@@ -760,7 +691,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(138, 126, 118), rgb(90, 97, 106));
+    color: rgb(90, 97, 106);
     text-decoration: none solid rgb(90, 97, 106);
   }
 
@@ -769,7 +700,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(85, 77, 71), rgb(141, 148, 157));
+    color: rgb(141, 148, 157);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -791,7 +722,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(85, 77, 71), rgb(141, 148, 157));
+    color: rgb(141, 148, 157);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -810,7 +741,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(85, 77, 71), rgb(141, 148, 157));
+    color: rgb(141, 148, 157);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -829,16 +760,13 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    background-color: rgba(255, 255, 255, 0.067);
+    color: rgb(227, 231, 235);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
   }
 
   .graph > .global-graph-outer {
@@ -848,7 +776,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
   }
 
   .katex > .katex-html {
@@ -889,18 +817,18 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(243, 237, 233), rgb(30, 37, 47));
+    background-color: rgb(30, 37, 47);
   }
 
   .page > #quartz-body .left.sidebar {
     background-color: rgba(0, 0, 0, 0);
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
     background-color: rgba(0, 0, 0, 0);
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
     border-left-width: 1px;
   }
 
@@ -916,7 +844,7 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(85, 77, 71), rgb(141, 148, 157));
+    color: rgb(141, 148, 157);
     text-decoration: line-through solid rgb(141, 148, 157);
     text-decoration-color: rgb(141, 148, 157);
   }
@@ -924,7 +852,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -953,7 +881,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -982,7 +910,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1011,7 +939,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1040,7 +968,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(45, 55, 72), rgb(240, 244, 248));
+    color: rgb(240, 244, 248);
     cursor: auto;
     filter: none;
     font-family:
@@ -1069,7 +997,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(45, 55, 72), rgb(240, 244, 248));
+    color: rgb(240, 244, 248);
     cursor: auto;
     filter: none;
     font-family:
@@ -1098,7 +1026,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1125,16 +1053,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(243, 237, 233), rgb(30, 37, 47));
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    background-color: rgb(30, 37, 47);
+    border-color: rgb(69, 74, 84);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgba(185, 134, 121, 0.1), rgb(47, 52, 61));
+    background-color: rgb(47, 52, 61);
     border: 1px solid rgb(69, 74, 84);
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
     border-radius: 5px;
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1150,7 +1078,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(243, 237, 233), rgb(30, 37, 47));
+    background-color: rgb(30, 37, 47);
     border: 1px solid rgb(74, 80, 89);
     border-radius: 12px;
     box-shadow:
@@ -1161,7 +1089,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1192,7 +1120,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   .search
@@ -1201,7 +1129,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    border-color: rgb(227, 231, 235);
   }
 
   .search
@@ -1246,7 +1174,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   .search
@@ -1267,21 +1195,18 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    background-color: rgba(255, 255, 255, 0.067);
+    color: rgb(227, 231, 235);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(163, 149, 140), rgb(74, 80, 89));
+    border-color: rgb(74, 80, 89);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(243, 237, 233), rgb(30, 37, 47));
+    background-color: rgb(30, 37, 47);
     border: unset;
     border-bottom: 1px solid rgb(43, 47, 59);
     border-radius: 0px;
@@ -1300,12 +1225,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(255, 255, 255, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   .search
@@ -1326,20 +1248,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(255, 255, 255, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   .text-highlight {
-    background-color: light-dark(
-      rgba(248, 227, 217, 0.9),
-      rgba(169, 146, 106, 0.5)
-    );
-    color: light-dark(rgb(102, 80, 63), rgb(235, 231, 224));
+    background-color: rgba(169, 146, 106, 0.5);
+    color: rgb(235, 231, 224);
     cursor: auto;
     filter: none;
     font-family:
@@ -1372,30 +1288,30 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(227, 231, 235);
-    border-color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    border-color: rgb(227, 231, 235);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
   }
 
   :root {
-    --code-background: rgb(238, 230, 225);
-    --code-comment: #8a7e76;
-    --code-function: #e0ac00;
-    --code-important: #ec7500;
-    --code-keyword: #d53984;
-    --code-normal: #eb5757;
-    --code-operator: #e93147;
-    --code-property: #00bfbc;
-    --code-punctuation: #554d47;
-    --code-string: #08b94e;
-    --code-tag: #e93147;
-    --code-value: #7852ee;
+    --code-background: hsl(215, 18%, 19%);
+    --code-comment: #5a616a;
+    --code-function: #e0de71;
+    --code-important: #e9973f;
+    --code-keyword: #fa99cd;
+    --code-normal: #ff7b72;
+    --code-operator: #fb464c;
+    --code-property: #53dfdd;
+    --code-punctuation: #8d949d;
+    --code-string: #44cf6e;
+    --code-tag: #fb464c;
+    --code-value: #a882ff;
   }
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1423,7 +1339,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(185, 134, 121), rgb(217, 188, 164));
+    color: rgb(217, 188, 164);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1460,10 +1376,7 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: light-dark(
-      rgba(185, 134, 121, 0.1),
-      rgba(201, 166, 130, 0.1)
-    );
+    background-color: rgba(201, 166, 130, 0.1);
     border-bottom-color: rgba(201, 166, 130, 0.15);
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
@@ -1494,14 +1407,11 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(185, 134, 121), rgb(217, 188, 164));
+    color: rgb(217, 188, 164);
   }
 
   blockquote {
-    background-color: light-dark(
-      rgba(237, 228, 222, 0.81),
-      rgba(42, 49, 60, 0.6)
-    );
+    background-color: rgba(42, 49, 60, 0.6);
     border-inline-start: 2px solid rgb(103, 89, 76);
     font-family:
       ui-sans-serif,
@@ -1524,14 +1434,11 @@ body {
   }
 
   code {
-    background-color: light-dark(
-      rgba(240, 230, 219, 0.6),
-      rgba(54, 66, 73, 0.4)
-    );
+    background-color: rgba(54, 66, 73, 0.4);
     border: 0px solid rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     border-radius: 4px;
-    color: light-dark(rgb(235, 87, 87), rgb(255, 123, 114));
+    color: rgb(255, 123, 114);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1546,7 +1453,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1578,7 +1485,7 @@ body {
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1595,17 +1502,21 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: #b6a79d;
-    --quartz-graph-node: #554d47;
-    --quartz-graph-node-attachment: #e0ac00;
-    --quartz-graph-node-focused: hsl(12, 31%, 60%);
-    --quartz-graph-node-tag: #08b94e;
-    --quartz-graph-node-unresolved: #8a7e76;
-    --quartz-graph-text: #3a3330;
+    --quartz-graph-line: #404650;
+    --quartz-graph-node: #8d949d;
+    --quartz-graph-node-attachment: #e0de71;
+    --quartz-graph-node-focused: hsl(
+      calc(30 - 3),
+      calc(40% * 1.02),
+      calc(65% * 1.15)
+    );
+    --quartz-graph-node-tag: #44cf6e;
+    --quartz-graph-node-unresolved: #5a616a;
+    --quartz-graph-text: #e3e7eb;
   }
 
   h1 {
-    color: light-dark(rgb(45, 55, 72), rgb(226, 230, 235));
+    color: rgb(226, 230, 235);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1622,7 +1533,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(74, 85, 107), rgb(197, 202, 212));
+    color: rgb(197, 202, 212);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1639,7 +1550,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(102, 120, 141), rgb(168, 174, 185));
+    color: rgb(168, 174, 185);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1656,7 +1567,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(127, 138, 155), rgb(143, 150, 161));
+    color: rgb(143, 150, 161);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1673,7 +1584,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(154, 165, 181), rgb(120, 127, 138));
+    color: rgb(120, 127, 138);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1690,7 +1601,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(128, 128, 128), rgb(102, 109, 120));
+    color: rgb(102, 109, 120);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1708,7 +1619,7 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(rgba(194, 176, 163, 0.4), rgb(69, 74, 84));
+    border-color: rgb(69, 74, 84);
     border-style: solid none none;
     border-top: 2px solid rgb(69, 74, 84);
     box-shadow: none;
@@ -1718,7 +1629,7 @@ body {
   input[type="checkbox"] {
     appearance: none;
     border: 1px solid rgb(90, 97, 106);
-    border-color: light-dark(rgb(138, 126, 118), rgb(90, 97, 106));
+    border-color: rgb(90, 97, 106);
     border-radius: 4px;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
@@ -1805,17 +1716,17 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     cursor: auto;
     filter: none;
     font-family:
@@ -1844,7 +1755,7 @@ body {
   pre > code {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(255, 123, 114);
-    border-color: light-dark(rgb(235, 87, 87), rgb(255, 123, 114));
+    border-color: rgb(255, 123, 114);
     border-radius: 4px;
     overflow-x: visible;
     padding: 0px;
@@ -1852,10 +1763,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(
-      rgba(234, 223, 215, 0.75),
-      rgba(37, 44, 55, 0.85)
-    );
+    background-color: rgba(37, 44, 55, 0.85);
     border: 0px solid rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     border-radius: 8px;
@@ -1865,7 +1773,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     text-align: start;
   }
 
@@ -1878,9 +1786,9 @@ body {
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(227, 231, 235);
-    border-color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    border-color: rgb(227, 231, 235);
     border-radius: 0px;
-    color: light-dark(rgb(58, 51, 48), rgb(227, 231, 235));
+    color: rgb(227, 231, 235);
     content: normal;
     pointer-events: auto;
     transform: none;

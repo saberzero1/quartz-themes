@@ -29,24 +29,24 @@
   --code-value: #c161fd !important;
 }
 :root:root[saved-theme="dark"] {
-  --light: #282828 !important;
-  --gray: #959595 !important;
-  --darkgray: #959595 !important;
-  --highlight: #e0de71 !important;
-  --secondary: #a68af9 !important;
+  --light: #ebe5e5 !important;
+  --gray: #6e6966 !important;
+  --darkgray: #6e6966 !important;
+  --highlight: #e0ac00 !important;
+  --secondary: #8a5cf5 !important;
   --tertiary: #65c756 !important;
   --lightgray: #b8b2b1 !important;
-  --dark: #e4e4e4 !important;
+  --dark: #4c4949 !important;
 
-  --code-background: #171818 !important;
+  --code-background: #fafafa !important;
   --code-comment: #b8b2b1 !important;
-  --code-function: #e0de71 !important;
+  --code-function: #e0ac00 !important;
   --code-important: #f99e15 !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #e4e4e4 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #4c4949 !important;
   --code-operator: #ec3643 !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #959595 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #6e6966 !important;
   --code-string: #65c756 !important;
   --code-tag: #ec3643 !important;
   --code-value: #c161fd !important;
@@ -389,8 +389,8 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(240, 232, 230), rgb(38, 38, 38)) !important;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    background: rgb(240, 232, 230);
+    color: rgb(76, 73, 73);
   }
 
   .callout {
@@ -425,7 +425,7 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: 120, 120, 120;
-    background-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
+    background-color: rgb(250, 250, 250);
     border-color: rgba(120, 120, 120, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -458,7 +458,7 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: 120, 120, 120;
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(255, 255, 255);
     border-color: rgb(120, 120, 120);
     border-radius: 8px;
     border-style: solid;
@@ -491,7 +491,7 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: 236, 54, 67;
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(255, 255, 255);
     border-color: rgb(236, 54, 67);
     border-radius: 8px;
     border-style: solid;
@@ -524,7 +524,7 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: 193, 97, 253;
-    background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
+    background-color: rgb(249, 239, 254);
     border-color: rgba(193, 97, 253, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -557,7 +557,7 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: 236, 54, 67;
-    background-color: light-dark(rgb(255, 233, 234), rgb(50, 32, 34));
+    background-color: rgb(255, 233, 234);
     border-color: rgba(236, 54, 67, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -590,7 +590,7 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: 8, 132, 255;
-    background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
+    background-color: rgb(224, 240, 255);
     border-color: rgba(8, 132, 255, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -623,7 +623,7 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: 8, 132, 255;
-    background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
+    background-color: rgb(224, 240, 255);
     border-color: rgba(8, 132, 255, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -656,7 +656,7 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: 8, 132, 255;
-    background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
+    background-color: rgb(224, 240, 255);
     border-color: rgba(8, 132, 255, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -689,7 +689,7 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: 120, 120, 120;
-    background-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
+    background-color: rgb(250, 250, 250);
     border-color: rgb(120, 120, 120);
     border-radius: 0px;
     border-style: solid;
@@ -722,7 +722,7 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: 101, 199, 86;
-    background-color: light-dark(rgb(235, 255, 232), rgb(37, 47, 36));
+    background-color: rgb(235, 255, 232);
     border-color: rgba(101, 199, 86, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -755,7 +755,7 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: 193, 97, 253;
-    background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
+    background-color: rgb(249, 239, 254);
     border-color: rgba(193, 97, 253, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -788,7 +788,7 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: 249, 158, 21;
-    background-color: light-dark(rgb(255, 248, 237), rgb(52, 43, 29));
+    background-color: rgb(255, 248, 237);
     border-color: rgba(249, 158, 21, 0.5);
     border-radius: 2px;
     border-style: solid;
@@ -821,7 +821,7 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: 249, 158, 21;
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(255, 255, 255);
     border-color: rgb(249, 158, 21);
     border-radius: 8px;
     border-style: solid;
@@ -858,11 +858,11 @@ body {
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
+    background-color: rgb(240, 232, 230);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(110, 105, 102), rgb(149, 149, 149));
+    color: rgb(110, 105, 102);
     cursor: default;
     font-family:
       SFPro-Regular,
@@ -878,14 +878,14 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(149, 149, 149);
+    text-decoration: none solid rgb(110, 105, 102);
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(110, 105, 102), rgb(149, 149, 149));
+    color: rgb(110, 105, 102);
     cursor: default;
     font-family:
       SFPro-Regular,
@@ -901,11 +901,11 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(149, 149, 149);
+    text-decoration: none solid rgb(110, 105, 102);
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(110, 105, 102), rgb(149, 149, 149));
+    color: rgb(110, 105, 102);
     cursor: default;
     font-family:
       SFPro-Regular,
@@ -921,17 +921,17 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(149, 149, 149);
+    text-decoration: none solid rgb(110, 105, 102);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-color: rgb(216, 210, 210);
   }
 
   .graph > .global-graph-outer {
@@ -941,7 +941,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-color: rgb(216, 210, 210);
   }
 
   .katex > .katex-html {
@@ -984,23 +984,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background-color: rgb(255, 255, 255);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
-    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    background-color: rgb(240, 232, 230);
+    border-color: rgb(216, 210, 210);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
-    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    background-color: rgb(240, 232, 230);
+    border-color: rgb(216, 210, 210);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
+    background-color: rgb(240, 232, 230);
   }
 
   .page > #quartz-body div.center {
@@ -1019,7 +1019,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1036,9 +1036,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1049,7 +1049,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1066,9 +1066,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1079,7 +1079,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1096,9 +1096,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1109,7 +1109,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1126,9 +1126,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1139,7 +1139,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1156,9 +1156,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1169,7 +1169,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1186,9 +1186,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1199,7 +1199,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1216,9 +1216,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1227,16 +1227,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    border-color: light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(216, 210, 210);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    border: 1px solid rgb(30, 30, 30);
-    border-color: light-dark(rgb(216, 210, 210), rgb(30, 30, 30));
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(216, 210, 210);
+    border-color: rgb(216, 210, 210);
     border-radius: 5px;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Regular,
       ui-sans-serif,
@@ -1253,8 +1253,8 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(248, 242, 241), rgb(54, 54, 54));
-    border: 1px solid rgb(96, 88, 82);
+    background-color: rgb(248, 242, 241);
+    border: 1px solid rgb(223, 217, 215);
     border-radius: 4px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
@@ -1264,7 +1264,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1281,9 +1281,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1296,7 +1296,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
   }
 
   .search
@@ -1305,7 +1305,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    border-color: rgb(76, 73, 73);
   }
 
   .search
@@ -1350,7 +1350,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
   }
 
   .search
@@ -1371,20 +1371,20 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    background-color: rgb(223, 215, 215);
+    color: rgb(76, 73, 73);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(223, 217, 215), rgb(96, 88, 82));
+    border-color: rgb(223, 217, 215);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(248, 242, 241), rgb(54, 54, 54));
+    background-color: rgb(248, 242, 241);
     border: unset;
-    border-bottom: 0.5px solid rgb(0, 0, 0);
+    border-bottom: 0.5px solid rgb(216, 210, 210);
     border-radius: 0px;
     box-shadow: none;
   }
@@ -1401,9 +1401,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
+    background-color: rgb(223, 215, 215);
     border-radius: 4px;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
   }
 
   .search
@@ -1424,14 +1424,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
+    background-color: rgb(223, 215, 215);
     border-radius: 4px;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
   }
 
   .text-highlight {
-    background-color: light-dark(rgb(234, 226, 253), rgb(41, 26, 77));
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    background-color: rgb(234, 226, 253);
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1448,9 +1448,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1464,8 +1464,8 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(228, 228, 228);
-    border-color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    border: 0px none rgb(76, 73, 73);
+    border-color: rgb(76, 73, 73);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
@@ -1488,7 +1488,7 @@ body {
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1505,9 +1505,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1586,7 +1586,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: rgb(138, 92, 245);
   }
 
   blockquote {
@@ -1614,11 +1614,11 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(250, 250, 250), rgb(23, 24, 24));
-    border: 0px solid rgb(30, 30, 30);
-    border-color: light-dark(rgb(216, 210, 210), rgb(30, 30, 30));
+    background-color: rgb(250, 250, 250);
+    border: 0px solid rgb(216, 210, 210);
+    border-color: rgb(216, 210, 210);
     border-radius: 2px;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
@@ -1632,7 +1632,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1649,9 +1649,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: line-through solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: line-through solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1660,12 +1660,12 @@ body {
   }
 
   div#quartz-body {
-    --quartz-icon-color: #959595;
+    --quartz-icon-color: #6e6966;
   }
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Regular,
       ui-sans-serif,
@@ -1693,7 +1693,7 @@ body {
   }
 
   h1 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFProText-Ultralight,
       -apple-system,
@@ -1703,7 +1703,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Regular,
       -apple-system,
@@ -1713,7 +1713,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Black,
       -apple-system,
@@ -1723,7 +1723,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Bold,
       -apple-system,
@@ -1733,7 +1733,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Regular,
       -apple-system,
@@ -1743,7 +1743,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     font-family:
       SFPro-Regular,
       -apple-system,
@@ -1754,9 +1754,9 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(rgb(216, 210, 210), rgb(30, 30, 30));
+    border-color: rgb(216, 210, 210);
     border-style: solid none none;
-    border-top: 2px solid rgb(30, 30, 30);
+    border-top: 2px solid rgb(216, 210, 210);
     box-shadow: none;
     margin: 32px 0px;
   }
@@ -1795,7 +1795,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1805,7 +1805,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1815,7 +1815,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1825,7 +1825,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1835,7 +1835,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1845,23 +1845,23 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
 
   ol > li {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     cursor: auto;
     filter: none;
     font-family:
@@ -1878,9 +1878,9 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    outline: rgb(228, 228, 228) none 0px;
-    text-decoration: none solid rgb(228, 228, 228);
-    text-decoration-color: rgb(228, 228, 228);
+    outline: rgb(76, 73, 73) none 0px;
+    text-decoration: none solid rgb(76, 73, 73);
+    text-decoration-color: rgb(76, 73, 73);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1890,8 +1890,8 @@ body {
 
   pre > code {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(228, 228, 228);
-    border-color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    border: 0px none rgb(76, 73, 73);
+    border-color: rgb(76, 73, 73);
     border-radius: 2px;
     overflow-x: visible;
     padding: 0px;
@@ -1899,9 +1899,9 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(23, 24, 24));
-    border: 0.5px solid rgb(47, 47, 47);
-    border-color: light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
+    background-color: rgb(250, 250, 250);
+    border: 0.5px solid rgb(223, 215, 215);
+    border-color: rgb(223, 215, 215);
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1909,7 +1909,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     text-align: start;
   }
 
@@ -1921,10 +1921,10 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(228, 228, 228);
-    border-color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    border: 0px none rgb(76, 73, 73);
+    border-color: rgb(76, 73, 73);
     border-radius: 0px;
-    color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
+    color: rgb(76, 73, 73);
     content: normal;
     pointer-events: auto;
     transform: none;
