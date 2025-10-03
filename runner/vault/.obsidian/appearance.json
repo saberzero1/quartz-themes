@@ -1,7 +1,5 @@
 {
   "theme": "obsidian",
   "cssTheme": "",
-  "enabledCssSnippets": [
-    "no-animations"
-  ]
+  "enabledCssSnippets": []
 }

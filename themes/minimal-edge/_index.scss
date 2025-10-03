@@ -29,26 +29,26 @@
   --code-value: #e3b750 !important;
 }
 :root:root[saved-theme="dark"] {
-  --light: #3f3f3f !important;
-  --gray: #8e8e90 !important;
-  --darkgray: #8e8e90 !important;
-  --highlight: #e0de71 !important;
-  --secondary: #ba7e47 !important;
-  --tertiary: #44cf6e !important;
-  --lightgray: #999999 !important;
-  --dark: #919191 !important;
+  --light: #d4d4d4 !important;
+  --gray: #8a7e69 !important;
+  --darkgray: #8a7e69 !important;
+  --highlight: #e0ac00 !important;
+  --secondary: #985c35 !important;
+  --tertiary: #08b94e !important;
+  --lightgray: #957c57d4 !important;
+  --dark: #333 !important;
 
-  --code-background: #2f3039 !important;
-  --code-comment: #999999 !important;
+  --code-background: #e2dcd5 !important;
+  --code-comment: #957c57d4 !important;
   --code-function: #dcbb59 !important;
-  --code-important: #e9973f !important;
+  --code-important: #ec7500 !important;
   --code-keyword: #de895b !important;
   --code-normal: #a8aeb0 !important;
   --code-operator: #b89cdd !important;
   --code-property: #d29a8c !important;
-  --code-punctuation: #8e8e90 !important;
+  --code-punctuation: #8a7e69 !important;
   --code-string: #05a36e !important;
-  --code-tag: #fb464c !important;
+  --code-tag: #e93147 !important;
   --code-value: #e3b750 !important;
 }
 
@@ -206,32 +206,32 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(228, 221, 211), rgb(32, 36, 43)) !important;
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background: rgb(228, 221, 211);
+    color: rgb(51, 51, 51);
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 8, 109, 221;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -241,33 +241,30 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.1),
-      rgba(83, 223, 221, 0.1)
-    );
-    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.1);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
-    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
+    background-color: rgb(0, 191, 188);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
     font-weight: 400;
   }
 
@@ -277,33 +274,30 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
-    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -313,33 +307,30 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
-    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -349,36 +340,30 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
-    background-color: light-dark(
-      rgba(120, 82, 238, 0.1),
-      rgba(168, 130, 255, 0.1)
-    );
-    border-color: light-dark(
-      rgba(120, 82, 238, 0.25),
-      rgba(168, 130, 255, 0.25)
-    );
+    --callout-color: 120, 82, 238;
+    background-color: rgba(120, 82, 238, 0.1);
+    border-color: rgba(120, 82, 238, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    color: rgb(120, 82, 238);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
-    background-color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    color: rgb(120, 82, 238);
+    background-color: rgb(120, 82, 238);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    color: rgb(120, 82, 238);
     font-weight: 400;
   }
 
@@ -388,33 +373,30 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.1);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
-    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
+    background-color: rgb(233, 49, 71);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    color: rgb(233, 49, 71);
     font-weight: 400;
   }
 
@@ -424,33 +406,30 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
-    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -460,33 +439,30 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
-    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -496,33 +472,30 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.1),
-      rgba(233, 151, 63, 0.1)
-    );
-    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.1);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
-    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
+    background-color: rgb(236, 117, 0);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
     font-weight: 400;
   }
 
@@ -538,7 +511,7 @@ body {
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
@@ -565,33 +538,30 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
-    background-color: light-dark(
-      rgba(8, 185, 78, 0.1),
-      rgba(68, 207, 110, 0.1)
-    );
-    border-color: light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
+    --callout-color: 8, 185, 78;
+    background-color: rgba(8, 185, 78, 0.1);
+    border-color: rgba(8, 185, 78, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    color: rgb(8, 185, 78);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
-    background-color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    color: rgb(8, 185, 78);
+    background-color: rgb(8, 185, 78);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    color: rgb(8, 185, 78);
     font-weight: 400;
   }
 
@@ -601,33 +571,30 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.1),
-      rgba(83, 223, 221, 0.1)
-    );
-    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.1);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
-    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
+    background-color: rgb(0, 191, 188);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    color: rgb(0, 191, 188);
     font-weight: 400;
   }
 
@@ -637,33 +604,30 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.1);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
-    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
+    background-color: rgb(8, 109, 221);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(8, 109, 221);
     font-weight: 400;
   }
 
@@ -673,33 +637,30 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.1),
-      rgba(233, 151, 63, 0.1)
-    );
-    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.1);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
-    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
+    background-color: rgb(236, 117, 0);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    color: rgb(236, 117, 0);
     font-weight: 400;
   }
 
@@ -709,16 +670,16 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgba(149, 124, 87, 0.83), rgb(153, 153, 153));
-    text-decoration: none solid rgb(153, 153, 153);
+    color: rgba(149, 124, 87, 0.83);
+    text-decoration: none solid rgba(149, 124, 87, 0.83);
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
+    background-color: rgb(228, 221, 211);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(138, 126, 105), rgb(142, 142, 144));
+    color: rgb(138, 126, 105);
     cursor: default;
     font-family:
       system-ui,
@@ -733,14 +694,14 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(142, 142, 144);
+    text-decoration: none solid rgb(138, 126, 105);
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(138, 126, 105), rgb(142, 142, 144));
+    color: rgb(138, 126, 105);
     cursor: default;
     font-family:
       system-ui,
@@ -755,11 +716,11 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(142, 142, 144);
+    text-decoration: none solid rgb(138, 126, 105);
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(138, 126, 105), rgb(142, 142, 144));
+    color: rgb(138, 126, 105);
     cursor: default;
     font-family:
       system-ui,
@@ -774,20 +735,17 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(142, 142, 144);
+    text-decoration: none solid rgb(138, 126, 105);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(51, 51, 51);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    border-color: rgb(51, 51, 51);
   }
 
   .graph > .global-graph-outer {
@@ -797,7 +755,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    border-color: rgb(51, 51, 51);
   }
 
   .katex > .katex-html {
@@ -838,23 +796,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(234, 228, 221), rgb(37, 41, 51));
+    background-color: rgb(234, 228, 221);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgb(228, 221, 211);
+    border-color: rgb(51, 51, 51);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgb(228, 221, 211);
+    border-color: rgb(51, 51, 51);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
+    background-color: rgb(228, 221, 211);
   }
 
   .page > #quartz-body div.center {
@@ -865,15 +823,15 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(138, 126, 105), rgb(142, 142, 144));
-    text-decoration: line-through solid rgb(142, 142, 144);
-    text-decoration-color: rgb(142, 142, 144);
+    color: rgb(138, 126, 105);
+    text-decoration: line-through solid rgb(138, 126, 105);
+    text-decoration-color: rgb(138, 126, 105);
   }
 
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -889,9 +847,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -902,7 +860,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -918,9 +876,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -931,7 +889,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -947,9 +905,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -960,7 +918,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -976,9 +934,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -989,7 +947,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1005,9 +963,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 600;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1018,7 +976,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1034,9 +992,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 600;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1047,7 +1005,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1063,9 +1021,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1074,19 +1032,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(234, 228, 221), rgb(37, 41, 51));
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgb(234, 228, 221);
+    border-color: rgb(51, 51, 51);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
-    border: 1px solid rgba(110, 114, 121, 0.427);
-    border-color: light-dark(
-      rgba(121, 110, 110, 0.28),
-      rgba(110, 114, 121, 0.427)
-    );
+    background-color: rgb(228, 221, 211);
+    border: 1px solid rgba(121, 110, 110, 0.28);
+    border-color: rgba(121, 110, 110, 0.28);
     border-radius: 5px;
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1102,8 +1057,8 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
-    border: 1px solid rgba(110, 114, 121, 0.427);
+    background-color: rgb(228, 221, 211);
+    border: 1px solid rgba(121, 110, 110, 0.28);
     border-radius: 12px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
@@ -1113,7 +1068,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1129,9 +1084,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1144,7 +1099,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
   }
 
   .search
@@ -1153,7 +1108,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    border-color: rgb(51, 51, 51);
   }
 
   .search
@@ -1198,7 +1153,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
   }
 
   .search
@@ -1219,26 +1174,20 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(51, 51, 51);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(
-      rgba(121, 110, 110, 0.28),
-      rgba(110, 114, 121, 0.427)
-    );
+    border-color: rgba(121, 110, 110, 0.28);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(228, 221, 211), rgb(32, 36, 43));
-    border: 1px solid rgba(110, 114, 121, 0.427);
-    border-bottom: 1px solid rgba(110, 114, 121, 0.427);
+    background-color: rgb(228, 221, 211);
+    border: 1px solid rgba(121, 110, 110, 0.28);
+    border-bottom: 1px solid rgba(121, 110, 110, 0.28);
     border-radius: 0px;
     box-shadow: none;
   }
@@ -1255,12 +1204,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
   }
 
   .search
@@ -1281,20 +1227,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
   }
 
   .text-highlight {
-    background-color: light-dark(
-      rgba(230, 192, 70, 0.4),
-      rgba(216, 185, 85, 0.2)
-    );
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgba(230, 192, 70, 0.4);
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1310,9 +1250,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1326,8 +1266,8 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(145, 145, 145);
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    border: 0px none rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
@@ -1350,7 +1290,7 @@ body {
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1366,9 +1306,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1378,7 +1318,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(152, 92, 53), rgb(186, 126, 71));
+    color: rgb(152, 92, 53);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1394,7 +1334,7 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(186, 126, 71) none 0px;
+    outline: rgb(152, 92, 53) none 0px;
     text-decoration: underline solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
     text-decoration-line: underline;
@@ -1446,12 +1386,12 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(152, 92, 53), rgb(186, 126, 71));
+    color: rgb(152, 92, 53);
   }
 
   blockquote {
     background-color: rgba(0, 0, 0, 0);
-    border-inline-start: 2px solid rgb(138, 92, 245);
+    border-inline-start: 2px solid rgb(152, 115, 247);
     font-family:
       system-ui,
       -apple-system,
@@ -1473,7 +1413,7 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(226, 220, 213), rgb(47, 48, 57));
+    background-color: rgb(226, 220, 213);
     border: 0px none rgb(168, 174, 176);
     border-color: rgb(168, 174, 176);
     border-radius: 4px;
@@ -1492,7 +1432,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1508,9 +1448,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: line-through solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: line-through solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1519,12 +1459,12 @@ body {
   }
 
   div#quartz-body {
-    --quartz-icon-color: #59607b;
+    --quartz-icon-color: #705757;
   }
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1551,7 +1491,7 @@ body {
   }
 
   h1 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1568,7 +1508,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1585,7 +1525,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1602,7 +1542,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1619,7 +1559,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1636,7 +1576,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     font-family:
       system-ui,
       -apple-system,
@@ -1654,20 +1594,17 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(
-      rgba(121, 110, 110, 0.28),
-      rgba(110, 114, 121, 0.427)
-    );
+    border-color: rgba(121, 110, 110, 0.28);
     border-style: solid none none;
-    border-top: 2px solid rgba(110, 114, 121, 0.427);
+    border-top: 2px solid rgba(121, 110, 110, 0.28);
     box-shadow: none;
     margin: 32px 0px;
   }
 
   input[type="checkbox"] {
     appearance: none;
-    border: 1px solid rgb(153, 153, 153);
-    border-color: light-dark(rgba(149, 124, 87, 0.83), rgb(153, 153, 153));
+    border: 1px solid rgba(149, 124, 87, 0.83);
+    border-color: rgba(149, 124, 87, 0.83);
     border-radius: 4px;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
@@ -1698,7 +1635,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1708,7 +1645,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1718,7 +1655,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1728,7 +1665,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1738,7 +1675,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1748,23 +1685,23 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(89, 96, 123, 0.267);
+    border-inline-start: 1px solid rgba(149, 124, 87, 0.137);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
 
   ol > li {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     cursor: auto;
     filter: none;
     font-family:
@@ -1780,9 +1717,9 @@ body {
       "Helvetica Neue",
       sans-serif;
     font-weight: 400;
-    outline: rgb(145, 145, 145) none 0px;
-    text-decoration: none solid rgb(145, 145, 145);
-    text-decoration-color: rgb(145, 145, 145);
+    outline: rgb(51, 51, 51) none 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-decoration-color: rgb(51, 51, 51);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1801,9 +1738,9 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(226, 220, 213), rgb(47, 48, 57));
-    border: 0px none rgb(145, 145, 145);
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    background-color: rgb(226, 220, 213);
+    border: 0px none rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1811,7 +1748,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     text-align: start;
   }
 
@@ -1823,10 +1760,10 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(145, 145, 145);
-    border-color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    border: 0px none rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
     border-radius: 0px;
-    color: light-dark(rgb(51, 51, 51), rgb(145, 145, 145));
+    color: rgb(51, 51, 51);
     content: normal;
     pointer-events: auto;
     transform: none;

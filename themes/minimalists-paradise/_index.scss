@@ -7,49 +7,49 @@
 
 :root:root {
   --light: #d4d4d4 !important;
-  --gray: #5c5c5c !important;
-  --darkgray: #5c5c5c !important;
+  --gray: #25252586 !important;
+  --darkgray: #25252586 !important;
   --highlight: #e0ac00 !important;
   --secondary: #25252586 !important;
   --tertiary: #8a5cf5 !important;
   --lightgray: #ababab !important;
   --dark: #222222 !important;
 
-  --code-background: #9096a4 !important;
-  --code-comment: #ababab !important;
-  --code-function: #e0ac00 !important;
-  --code-important: #ec7500 !important;
-  --code-keyword: #d53984 !important;
-  --code-normal: #222222 !important;
-  --code-operator: #e93147 !important;
-  --code-property: #00bfbc !important;
-  --code-punctuation: #5c5c5c !important;
-  --code-string: #08b94e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #7852ee !important;
+  --code-background: #f2f2f2 !important;
+  --code-comment: #16486d !important;
+  --code-function: #69eed7 !important;
+  --code-important: #4186b6 !important;
+  --code-keyword: #552b79 !important;
+  --code-normal: #eeeeee !important;
+  --code-operator: #6852b3 !important;
+  --code-property: #4a6bdb !important;
+  --code-punctuation: #558fc7 !important;
+  --code-string: #be4aa0 !important;
+  --code-tag: #2d76e9 !important;
+  --code-value: #9795ee !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #3f3f3f !important;
-  --gray: #b3b3b3 !important;
-  --darkgray: #b3b3b3 !important;
+  --gray: #59595984 !important;
+  --darkgray: #59595984 !important;
   --highlight: #e0de71 !important;
   --secondary: #59595984 !important;
   --tertiary: #8a5cf5 !important;
   --lightgray: #666666 !important;
   --dark: #dadada !important;
 
-  --code-background: #000000 !important;
-  --code-comment: #666666 !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #dadada !important;
-  --code-operator: #fb464c !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #b3b3b3 !important;
-  --code-string: #44cf6e !important;
-  --code-tag: #fb464c !important;
-  --code-value: #a882ff !important;
+  --code-background: #0d0d0d !important;
+  --code-comment: #16486d !important;
+  --code-function: #69eed7 !important;
+  --code-important: #4186b6 !important;
+  --code-keyword: #552b79 !important;
+  --code-normal: #eeeeee !important;
+  --code-operator: #6852b3 !important;
+  --code-property: #4a6bdb !important;
+  --code-punctuation: #558fc7 !important;
+  --code-string: #be4aa0 !important;
+  --code-tag: #2d76e9 !important;
+  --code-value: #9795ee !important;
 }
 
 html {
@@ -705,7 +705,7 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    color: light-dark(rgba(37, 37, 37, 0.525), rgba(89, 89, 89, 0.518));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
   }
 
@@ -1005,7 +1005,7 @@ body {
     background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
     border: 1px solid rgb(54, 54, 54);
     border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-radius: 5px;
+    border-radius: 16px;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
@@ -1023,7 +1023,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: light-dark(rgb(144, 150, 164), rgb(0, 0, 0));
-    border: 1px solid rgb(85, 85, 85);
+    border: 1px solid rgba(89, 89, 89, 0.518);
     border-radius: 12px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
@@ -1149,7 +1149,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+    border-color: light-dark(rgba(37, 37, 37, 0.525), rgba(89, 89, 89, 0.518));
   }
 
   .search > .search-container > .search-space > input {
@@ -1248,18 +1248,18 @@ body {
   }
 
   :root {
-    --code-background: #9096a4;
-    --code-comment: #ababab;
-    --code-function: #e0ac00;
-    --code-important: #ec7500;
-    --code-keyword: #d53984;
-    --code-normal: #222222;
-    --code-operator: #e93147;
-    --code-property: #00bfbc;
-    --code-punctuation: #5c5c5c;
-    --code-string: #08b94e;
-    --code-tag: #e93147;
-    --code-value: #7852ee;
+    --code-background: #f2f2f2;
+    --code-comment: #16486d;
+    --code-function: #69eed7;
+    --code-important: #4186b6;
+    --code-keyword: #552b79;
+    --code-normal: #eeeeee;
+    --code-operator: #6852b3;
+    --code-property: #4a6bdb;
+    --code-punctuation: #558fc7;
+    --code-string: #be4aa0;
+    --code-tag: #2d76e9;
+    --code-value: #9795ee;
   }
 
   a.external {
@@ -1309,8 +1309,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(159, 160, 164) none 0px;
-    text-decoration: none solid rgb(159, 160, 164);
-    text-decoration-color: rgb(159, 160, 164);
+    text-decoration: none solid rgba(138, 92, 245, 0.3);
+    text-decoration-color: rgba(138, 92, 245, 0.3);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1387,12 +1387,15 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(144, 150, 164), rgb(0, 0, 0));
+    background-color: light-dark(rgb(242, 242, 242), rgb(13, 13, 13));
     border: 0px solid rgb(54, 54, 54);
     border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-radius: 4px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family: "Fira Code", "JetBrains Mono", monospace;
+    color: rgb(238, 238, 238);
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
     padding: 2.1px 4.2px;
   }
 
@@ -1453,7 +1456,7 @@ body {
 
   div.graph {
     --quartz-graph-line: #d4d4d4;
-    --quartz-graph-node: #5c5c5c;
+    --quartz-graph-node: #25252586;
     --quartz-graph-node-attachment: #e0ac00;
     --quartz-graph-node-focused: #25252586;
     --quartz-graph-node-tag: hsl(258, 88%, 66%);
@@ -1565,9 +1568,9 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-color: light-dark(rgba(37, 37, 37, 0.525), rgba(89, 89, 89, 0.518));
     border-style: solid none none;
-    border-top: 2px solid rgb(54, 54, 54);
+    border-top: 2px solid rgba(89, 89, 89, 0.518);
     box-shadow: none;
     margin: 32px 0px;
   }
@@ -1576,7 +1579,7 @@ body {
     appearance: none;
     border: 1px solid rgb(102, 102, 102);
     border-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-    border-radius: 4px;
+    border-radius: 16px;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
     margin-inline-start: -24px;
@@ -1699,9 +1702,9 @@ body {
   }
 
   pre > code {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(218, 218, 218);
-    border-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(242, 242, 242), rgb(13, 13, 13));
+    border: 0px none rgb(238, 238, 238);
+    border-color: rgb(238, 238, 238);
     border-radius: 4px;
     overflow-x: visible;
     padding: 0px;
@@ -1709,7 +1712,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(144, 150, 164), rgb(0, 0, 0));
+    background-color: light-dark(rgb(242, 242, 242), rgb(13, 13, 13));
     border: 0px solid rgb(54, 54, 54);
     border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-radius: 4px;

@@ -15,7 +15,7 @@
   --lightgray: #ababab !important;
   --dark: #222222 !important;
 
-  --code-background: #f4f3f1 !important;
+  --code-background: #f4f3f0 !important;
   --code-comment: #ababab !important;
   --code-function: #0584a8 !important;
   --code-important: #726192 !important;
@@ -838,7 +838,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(189, 81, 81), rgba(209, 137, 137, 0.85));
+    color: light-dark(rgb(34, 34, 34), rgba(232, 240, 247, 0.75));
     cursor: auto;
     filter: none;
     font-family:
@@ -854,9 +854,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgba(209, 137, 137, 0.85) none 0px;
-    text-decoration: underline dotted rgba(209, 137, 137, 0.85);
-    text-decoration-color: rgba(209, 137, 137, 0.85);
+    outline: rgba(232, 240, 247, 0.75) none 0px;
+    text-decoration: underline dotted rgba(232, 240, 247, 0.75);
+    text-decoration-color: rgba(232, 240, 247, 0.75);
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: auto;
@@ -925,7 +925,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(189, 81, 81), rgba(209, 137, 137, 0.85));
+    color: light-dark(rgb(34, 34, 34), rgba(232, 240, 247, 0.75));
     cursor: auto;
     filter: none;
     font-family:
@@ -941,9 +941,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgba(209, 137, 137, 0.85) none 0px;
-    text-decoration: underline dotted rgba(209, 137, 137, 0.85);
-    text-decoration-color: rgba(209, 137, 137, 0.85);
+    outline: rgba(232, 240, 247, 0.75) none 0px;
+    text-decoration: underline dotted rgba(232, 240, 247, 0.75);
+    text-decoration-color: rgba(232, 240, 247, 0.75);
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: auto;
@@ -954,7 +954,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(189, 81, 81), rgba(209, 137, 137, 0.85));
+    color: light-dark(rgb(34, 34, 34), rgba(232, 240, 247, 0.75));
     cursor: auto;
     filter: none;
     font-family:
@@ -970,9 +970,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgba(209, 137, 137, 0.85) none 0px;
-    text-decoration: underline dotted rgba(209, 137, 137, 0.85);
-    text-decoration-color: rgba(209, 137, 137, 0.85);
+    outline: rgba(232, 240, 247, 0.75) none 0px;
+    text-decoration: underline dotted rgba(232, 240, 247, 0.75);
+    text-decoration-color: rgba(232, 240, 247, 0.75);
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: auto;
@@ -1267,7 +1267,7 @@ body {
   }
 
   :root {
-    --code-background: hsl(35, 12%, 95%);
+    --code-background: hsl(35, 14%, 95%);
     --code-comment: #ababab;
     --code-function: rgba(5.202, 132.8822, 168.198, 1);
     --code-important: rgba(114.24, 97.92, 146.88, 1);
@@ -1386,7 +1386,7 @@ body {
   }
 
   blockquote {
-    background-color: light-dark(rgb(244, 243, 241), rgb(28, 31, 33));
+    background-color: light-dark(rgb(244, 243, 240), rgb(28, 31, 33));
     border-inline-start: 0px none rgba(232, 240, 247, 0.75);
     font-family:
       ui-sans-serif,
@@ -1403,13 +1403,13 @@ body {
     font-style: normal;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 6px;
     padding-inline-start: 24px;
-    padding-top: 0px;
+    padding-top: 6px;
   }
 
   code {
-    background-color: light-dark(rgb(244, 243, 241), rgb(28, 31, 33));
+    background-color: light-dark(rgb(244, 243, 240), rgb(28, 31, 33));
     border: 0px none rgba(77, 82, 86, 0.75);
     border-color: light-dark(rgba(205, 200, 193, 0.75), rgba(77, 82, 86, 0.75));
     border-radius: 8px;
@@ -1734,7 +1734,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(244, 243, 241), rgb(28, 31, 33));
+    background-color: light-dark(rgb(244, 243, 240), rgb(28, 31, 33));
     border: 1px solid rgba(77, 82, 86, 0.75);
     border-color: light-dark(rgba(205, 200, 193, 0.75), rgba(77, 82, 86, 0.75));
     border-radius: 8px;

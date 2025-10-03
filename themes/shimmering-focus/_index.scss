@@ -29,27 +29,27 @@
   --code-value: #7852ee !important;
 }
 :root:root[saved-theme="dark"] {
-  --light: hsl(230 /**/ 15%25%) !important;
-  --gray: hsl(230 /**/ 15%73%) !important;
-  --darkgray: hsl(230 /**/ 15%73%) !important;
-  --highlight: #e0de71 !important;
-  --secondary: #18c1cd !important;
-  --tertiary: #44cf6e !important;
-  --lightgray: hsl(230 /**/ 15%40%) !important;
-  --dark: hsl(230 /**/ 30%82%) !important;
+  --light: hsl(230 /**/ 25%83%) !important;
+  --gray: hsl(230 /**/ 25%35%) !important;
+  --darkgray: hsl(230 /**/ 25%35%) !important;
+  --highlight: #e0ac00 !important;
+  --secondary: #1396a0 !important;
+  --tertiary: #08b94e !important;
+  --lightgray: hsl(230 /**/ 25%67%) !important;
+  --dark: hsl(230 /**/ 50%24%) !important;
 
-  --code-background: hsl(230 /**/ 15%16%) !important;
-  --code-comment: hsl(230 /**/ 15%40%) !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: hsl(230 /**/ 30%82%) !important;
-  --code-operator: #fb464c !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: hsl(230 /**/ 15%73%) !important;
-  --code-string: #44cf6e !important;
-  --code-tag: #fb464c !important;
-  --code-value: #a882ff !important;
+  --code-background: hsl(230 /**/ 25%95%) !important;
+  --code-comment: hsl(230 /**/ 25%67%) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(230 /**/ 50%24%) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #279b99 !important;
+  --code-punctuation: hsl(230 /**/ 25%35%) !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
 }
 
 html {
@@ -282,32 +282,32 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(239, 240, 245), rgb(35, 37, 47)) !important;
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    background: rgb(239, 240, 245);
+    color: rgb(31, 41, 92);
   }
 
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 8, 109, 221;
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -317,33 +317,30 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 83, 223, 221;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.11),
-      rgba(83, 223, 221, 0.11)
-    );
-    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.11);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -353,33 +350,30 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.11),
-      rgba(251, 70, 76, 0.11)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.11);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -389,33 +383,30 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.11),
-      rgba(251, 70, 76, 0.11)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.11);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -425,36 +416,30 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 168, 130, 255;
-    background-color: light-dark(
-      rgba(120, 82, 238, 0.11),
-      rgba(168, 130, 255, 0.11)
-    );
-    border-color: light-dark(
-      rgba(120, 82, 238, 0.25),
-      rgba(168, 130, 255, 0.25)
-    );
+    --callout-color: 120, 82, 238;
+    background-color: rgba(120, 82, 238, 0.11);
+    border-color: rgba(120, 82, 238, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -464,33 +449,30 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 251, 70, 76;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.11),
-      rgba(251, 70, 76, 0.11)
-    );
-    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    --callout-color: 233, 49, 71;
+    background-color: rgba(233, 49, 71, 0.11);
+    border-color: rgba(233, 49, 71, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -500,33 +482,30 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.11),
-      rgba(2, 122, 255, 0.11)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.11);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -536,33 +515,30 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.11),
-      rgba(2, 122, 255, 0.11)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.11);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -572,33 +548,30 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 233, 151, 63;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.11),
-      rgba(233, 151, 63, 0.11)
-    );
-    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.11);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -614,24 +587,24 @@ body {
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="quote"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -641,33 +614,30 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 68, 207, 110;
-    background-color: light-dark(
-      rgba(8, 185, 78, 0.11),
-      rgba(68, 207, 110, 0.11)
-    );
-    border-color: light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
+    --callout-color: 8, 185, 78;
+    background-color: rgba(8, 185, 78, 0.11);
+    border-color: rgba(8, 185, 78, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -677,33 +647,30 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 83, 223, 221;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.11),
-      rgba(83, 223, 221, 0.11)
-    );
-    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
+    --callout-color: 0, 191, 188;
+    background-color: rgba(0, 191, 188, 0.11);
+    border-color: rgba(0, 191, 188, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -713,33 +680,30 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 2, 122, 255;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.11),
-      rgba(2, 122, 255, 0.11)
-    );
-    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+    --callout-color: 8, 109, 221;
+    background-color: rgba(8, 109, 221, 0.11);
+    border-color: rgba(8, 109, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -749,33 +713,30 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 233, 151, 63;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.11),
-      rgba(233, 151, 63, 0.11)
-    );
-    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
+    --callout-color: 236, 117, 0;
+    background-color: rgba(236, 117, 0, 0.11);
+    border-color: rgba(236, 117, 0, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 1.5px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     gap: 4px;
     padding: 3px 6px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    background-color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
+    background-color: rgb(67, 74, 112);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     font-weight: 400;
   }
 
@@ -785,16 +746,16 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(84, 94, 140), rgb(138, 143, 168));
-    text-decoration: none solid rgb(138, 143, 168);
+    color: rgb(84, 94, 140);
+    text-decoration: none solid rgb(84, 94, 140);
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
+    background-color: rgb(239, 240, 245);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     cursor: default;
     font-family:
       "iA Writer Quattro S",
@@ -810,14 +771,14 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(176, 179, 196);
+    text-decoration: none solid rgb(67, 74, 112);
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     cursor: default;
     font-family:
       "iA Writer Quattro S",
@@ -833,11 +794,11 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(176, 179, 196);
+    text-decoration: none solid rgb(67, 74, 112);
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
+    color: rgb(67, 74, 112);
     cursor: default;
     font-family:
       "iA Writer Quattro S",
@@ -853,20 +814,17 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(176, 179, 196);
+    text-decoration: none solid rgb(67, 74, 112);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(19, 150, 160);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
+    border-color: rgb(230, 231, 240);
   }
 
   .graph > .global-graph-outer {
@@ -876,7 +834,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
+    border-color: rgb(230, 231, 240);
   }
 
   .katex > .katex-html {
@@ -919,23 +877,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(251, 252, 253), rgb(26, 28, 35));
+    background-color: rgb(251, 252, 253);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
-    border-color: light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
+    background-color: rgb(239, 240, 245);
+    border-color: rgb(230, 231, 240);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
-    border-color: light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
+    background-color: rgb(239, 240, 245);
+    border-color: rgb(230, 231, 240);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
+    background-color: rgb(239, 240, 245);
   }
 
   .page > #quartz-body div.center {
@@ -946,15 +904,15 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(150, 157, 192), rgb(87, 92, 117));
-    text-decoration: line-through solid rgb(87, 92, 117);
-    text-decoration-color: rgb(87, 92, 117);
+    color: rgb(150, 157, 192);
+    text-decoration: line-through solid rgb(150, 157, 192);
+    text-decoration-color: rgb(150, 157, 192);
   }
 
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -971,9 +929,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -984,7 +942,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(220, 56, 143), rgb(237, 90, 168));
+    color: rgb(220, 56, 143);
     cursor: auto;
     filter: none;
     font-family:
@@ -1001,9 +959,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(237, 90, 168) none 0px;
-    text-decoration: none solid rgb(237, 90, 168);
-    text-decoration-color: rgb(237, 90, 168);
+    outline: rgb(220, 56, 143) none 0px;
+    text-decoration: none solid rgb(220, 56, 143);
+    text-decoration-color: rgb(220, 56, 143);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1014,7 +972,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1031,9 +989,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1044,7 +1002,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1061,9 +1019,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1074,7 +1032,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(220, 56, 143), rgb(237, 90, 168));
+    color: rgb(220, 56, 143);
     cursor: auto;
     filter: none;
     font-family:
@@ -1091,9 +1049,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(237, 90, 168) none 0px;
-    text-decoration: none solid rgb(237, 90, 168);
-    text-decoration-color: rgb(237, 90, 168);
+    outline: rgb(220, 56, 143) none 0px;
+    text-decoration: none solid rgb(220, 56, 143);
+    text-decoration-color: rgb(220, 56, 143);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1104,7 +1062,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(220, 56, 143), rgb(237, 90, 168));
+    color: rgb(220, 56, 143);
     cursor: auto;
     filter: none;
     font-family:
@@ -1121,9 +1079,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(237, 90, 168) none 0px;
-    text-decoration: none solid rgb(237, 90, 168);
-    text-decoration-color: rgb(237, 90, 168);
+    outline: rgb(220, 56, 143) none 0px;
+    text-decoration: none solid rgb(220, 56, 143);
+    text-decoration-color: rgb(220, 56, 143);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1134,7 +1092,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1151,9 +1109,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1162,16 +1120,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(251, 252, 253), rgb(26, 28, 35));
-    border-color: light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
+    background-color: rgb(251, 252, 253);
+    border-color: rgb(230, 231, 240);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(251, 252, 253), rgb(39, 41, 53));
-    border: 1px solid rgb(48, 50, 65);
-    border-color: light-dark(rgb(217, 219, 232), rgb(48, 50, 65));
+    background-color: rgb(251, 252, 253);
+    border: 1px solid rgb(217, 219, 232);
+    border-color: rgb(217, 219, 232);
     border-radius: 5px;
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     font-family:
       "iA Writer Quattro S",
       ui-sans-serif,
@@ -1188,8 +1146,8 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(251, 252, 253), rgb(26, 28, 35));
-    border: 2px solid rgb(87, 92, 117);
+    background-color: rgb(251, 252, 253);
+    border: 2px solid rgb(150, 157, 192);
     border-radius: 12px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
@@ -1199,7 +1157,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1216,9 +1174,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1231,7 +1189,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
   }
 
   .search
@@ -1240,7 +1198,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    border-color: rgb(31, 41, 92);
   }
 
   .search
@@ -1285,7 +1243,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
+    color: rgb(19, 150, 160);
   }
 
   .search
@@ -1306,29 +1264,26 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(19, 150, 160);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(150, 157, 192), rgb(87, 92, 117));
+    border-color: rgb(150, 157, 192);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(251, 252, 253), rgb(26, 28, 35));
-    border: 1px ridge rgb(48, 50, 65);
-    border-bottom: 1px ridge rgb(48, 50, 65);
+    background-color: rgb(251, 252, 253);
+    border: 1px ridge rgb(217, 219, 232);
+    border-bottom: 1px ridge rgb(217, 219, 232);
     border-radius: 8px;
     box-shadow:
-      rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
-      rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
-      rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
-      rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
       rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   }
 
@@ -1344,12 +1299,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
+    color: rgb(19, 150, 160);
   }
 
   .search
@@ -1370,20 +1322,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
+    color: rgb(19, 150, 160);
   }
 
   .text-highlight {
-    background-color: light-dark(
-      rgba(244, 222, 113, 0.4),
-      rgba(189, 160, 15, 0.4)
-    );
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    background-color: rgba(244, 222, 113, 0.4);
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1400,9 +1346,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1416,8 +1362,8 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(195, 200, 223);
-    border-color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    border: 0px none rgb(31, 41, 92);
+    border-color: rgb(31, 41, 92);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
@@ -1440,7 +1386,7 @@ body {
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1457,9 +1403,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1508,15 +1454,15 @@ body {
     > .match-tag {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(24, 193, 205, 0.15);
+    border-bottom-color: rgba(19, 150, 160, 0.15);
     border-bottom-left-radius: 25.6px;
     border-bottom-right-radius: 25.6px;
     border-bottom-style: solid;
-    border-left-color: rgba(24, 193, 205, 0.15);
+    border-left-color: rgba(19, 150, 160, 0.15);
     border-left-style: solid;
-    border-right-color: rgba(24, 193, 205, 0.15);
+    border-right-color: rgba(19, 150, 160, 0.15);
     border-right-style: solid;
-    border-top-color: rgba(24, 193, 205, 0.15);
+    border-top-color: rgba(19, 150, 160, 0.15);
     border-top-left-radius: 25.6px;
     border-top-right-radius: 25.6px;
     border-top-style: solid;
@@ -1539,12 +1485,12 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(198, 126, 63), rgb(218, 151, 93));
+    color: rgb(198, 126, 63);
   }
 
   blockquote {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
-    border-inline-start: 8px solid rgb(48, 50, 65);
+    background-color: rgb(239, 240, 245);
+    border-inline-start: 8px solid rgb(217, 219, 232);
     font-family:
       "iA Writer Quattro S",
       ui-sans-serif,
@@ -1567,11 +1513,11 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(245, 246, 249), rgb(30, 32, 41));
-    border: 0px solid rgb(48, 50, 65);
-    border-color: light-dark(rgb(217, 219, 232), rgb(48, 50, 65));
+    background-color: rgb(245, 246, 249);
+    border: 0px solid rgb(217, 219, 232);
+    border-color: rgb(217, 219, 232);
     border-radius: 2px;
-    color: light-dark(rgb(198, 126, 63), rgb(218, 151, 93));
+    color: rgb(198, 126, 63);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1586,7 +1532,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1603,9 +1549,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: line-through solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: line-through solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1614,12 +1560,12 @@ body {
   }
 
   div#quartz-body {
-    --quartz-icon-color: hsl(230 /**/ 15%73%);
+    --quartz-icon-color: hsl(230 /**/ 25%35%);
   }
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     font-family:
       "iA Writer Quattro S",
       ui-sans-serif,
@@ -1647,54 +1593,54 @@ body {
   }
 
   h1 {
-    color: light-dark(rgb(84, 96, 171), rgb(140, 150, 217));
+    color: rgb(84, 96, 171);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   h2 {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   h3 {
-    color: light-dark(rgb(84, 96, 171), rgb(140, 150, 217));
+    color: rgb(84, 96, 171);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   h4 {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   h5 {
-    color: light-dark(rgb(84, 96, 171), rgb(140, 150, 217));
+    color: rgb(84, 96, 171);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   h6 {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     font-family: Optima, "Recursive S";
     text-shadow: none;
   }
 
   hr {
     border: unset;
-    border-color: light-dark(rgb(150, 157, 192), rgb(87, 92, 117));
+    border-color: rgb(150, 157, 192);
     border-style: solid none none;
-    border-top: 2px solid rgb(87, 92, 117);
+    border-top: 2px solid rgb(150, 157, 192);
     box-shadow: none;
     margin: 32px 0px;
   }
 
   input[type="checkbox"] {
     appearance: none;
-    border: 1.5px solid rgb(138, 143, 168);
-    border-color: light-dark(rgb(84, 94, 140), rgb(138, 143, 168));
+    border: 1.5px solid rgb(84, 94, 140);
+    border-color: rgb(84, 94, 140);
     border-radius: 8px;
     margin: 0px 8px 0px -25.5px;
     margin-inline-end: 8px;
@@ -1725,7 +1671,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1735,7 +1681,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1745,7 +1691,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1755,7 +1701,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1765,7 +1711,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1775,23 +1721,23 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1.5px solid rgb(87, 92, 117);
+    border-inline-start: 1.5px solid rgb(150, 157, 192);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
 
   ol > li {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     cursor: auto;
     filter: none;
     font-family:
@@ -1808,9 +1754,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(195, 200, 223) none 0px;
-    text-decoration: none solid rgb(195, 200, 223);
-    text-decoration-color: rgb(195, 200, 223);
+    outline: rgb(31, 41, 92) none 0px;
+    text-decoration: none solid rgb(31, 41, 92);
+    text-decoration-color: rgb(31, 41, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1820,8 +1766,8 @@ body {
 
   pre > code {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(195, 200, 223);
-    border-color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    border: 0px none rgb(31, 41, 92);
+    border-color: rgb(31, 41, 92);
     border-radius: 4px;
     overflow-x: visible;
     padding: 0px;
@@ -1829,9 +1775,9 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(239, 240, 245), rgb(35, 37, 47));
-    border: 0px solid rgb(48, 50, 65);
-    border-color: light-dark(rgb(217, 219, 232), rgb(48, 50, 65));
+    background-color: rgb(239, 240, 245);
+    border: 0px solid rgb(217, 219, 232);
+    border-color: rgb(217, 219, 232);
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1839,7 +1785,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     text-align: start;
   }
 
@@ -1851,10 +1797,10 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(195, 200, 223);
-    border-color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    border: 0px none rgb(31, 41, 92);
+    border-color: rgb(31, 41, 92);
     border-radius: 0px;
-    color: light-dark(rgb(31, 41, 92), rgb(195, 200, 223));
+    color: rgb(31, 41, 92);
     content: normal;
     pointer-events: auto;
     transform: none;
