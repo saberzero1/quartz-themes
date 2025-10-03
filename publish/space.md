@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://bhappen.com" target="_blank" rel="noopener noreferrer">BHappen</a>
 - Support the author: <a href="https://buymeacoffee.com/bhappen" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/space|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/space">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                      |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

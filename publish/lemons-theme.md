@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://mprojectscode.github.io/" target="_blank" rel="noopener noreferrer">Moritz Jung</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                                     |
 | -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |

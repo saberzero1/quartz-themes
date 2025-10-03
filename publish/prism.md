@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/damiankorcz" target="_blank" rel="noopener noreferrer">Damian Korcz</a>
 - Support the author: <a href="https://www.buymeacoffee.com/DamianKorcz" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/prism|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prism">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                      |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

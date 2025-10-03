@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/bitSchleuder/obsidian-monokai-theme" target="_blank" rel="noopener noreferrer">bitSchleuder</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                                |
 | --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

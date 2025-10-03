@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/aaaaalexis" target="_blank" rel="noopener noreferrer">Alexis C</a>
 - Support the author: <a href="https://www.buymeacoffee.com/sevenaxis" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/cupertino|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cupertino">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
 | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
