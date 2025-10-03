@@ -2,7 +2,7 @@
 
 - Theme author: Josh Kasap
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/faded|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/faded">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

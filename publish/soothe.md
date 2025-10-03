@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/AwesomeDog" target="_blank" rel="noopener noreferrer">AwesomeDog</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/soothe|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/soothe">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

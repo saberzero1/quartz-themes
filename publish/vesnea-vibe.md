@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://seavalanche.github.io/projectseaweb/" target="_blank" rel="noopener noreferrer">Seavalanche</a>
 - Support the author: <a href="https://ko-fi.com/seavalanche" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/vesnea-vibe|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vesnea-vibe">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
 | ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/AllJavi" target="_blank" rel="noopener noreferrer">AllJavi</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/material-gruvbox|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-gruvbox">Install instructions</a>
 
 | Name               | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
 | ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://toablind.horse" target="_blank" rel="noopener noreferrer">whereiswhere</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ib-writer|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ib-writer">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
 | ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

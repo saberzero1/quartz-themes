@@ -2,7 +2,7 @@
 
 - Theme author: Halftroll
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/sad-machine-druid|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sad-machine-druid">Install instructions</a>
 
 | Name                | Modes                     | Compatibility                                  | License                                                                                                                                                  |
 | ------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |

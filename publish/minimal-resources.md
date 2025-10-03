@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/jonsnow231" target="_blank" rel="noopener noreferrer">jonsnow231</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-resources|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-resources">Install instructions</a>
 
 | Name                | Modes                     | Compatibility                                  | License                                                                                                                                                                            |
 | ------------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Threethan/" target="_blank" rel="noopener noreferrer">Threethan, Joschua</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/material-flat|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-flat">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

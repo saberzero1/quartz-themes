@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/anareaty" target="_blank" rel="noopener noreferrer">anareaty</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/creme-brulee|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/creme-brulee">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
 | -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

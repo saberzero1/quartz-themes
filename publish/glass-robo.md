@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://twitter.com/lorans_othman" target="_blank" rel="noopener noreferrer">Lorens Osman</a>
 - Support the author: <a href="https://www.buymeacoffee.com/lorens" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/glass-robo|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/glass-robo">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                                                                     | License                                                                                                                                           |
 | ------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

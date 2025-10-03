@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/whyt-byte" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/blue-topaz|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/blue-topaz">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                                                                     | License                                                                                                                                           |
 | ------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
