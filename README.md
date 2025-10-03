@@ -6,7 +6,7 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
   <img src="media/quartz-themes-800-wide-rounded-text.png" alt="Quartz Themes logo"/>
 </p>
 
-![Last updated: 2025-26-09](<https://img.shields.io/date/1758923832?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Last updated: 2025-10-03](<https://img.shields.io/date/1759513012?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
 ![Supported Quartz version v4.5.2](<https://img.shields.io/badge/v4.5.2-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
 
 ## Table of Contents

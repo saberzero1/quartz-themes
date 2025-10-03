@@ -7,33 +7,37 @@
 
 :root:root {
   --light: #dddcd6 !important;
-  --gray: #313234cc !important;
-  --darkgray: #313234cc !important;
+  --gray: color-mix(in hsl, #6f768599, #080808) !important;
+  --darkgray: color-mix(in hsl, #6f768599, #080808) !important;
   --highlight: #e8c62a !important;
   --secondary: #5770b9 !important;
   --tertiary: #6f49ae !important;
   --lightgray: #eb5325 !important;
   --dark: #080808 !important;
 
-  --code-background: #f7f4eb !important;
+  --code-background: color-mix(in hsl, #faf7ef 70%, #edebe5 30%) !important;
   --code-comment: #6f768599 !important;
   --code-function: #e8c62a !important;
   --code-important: #eb5325 !important;
-  --code-keyword: #6f49ae !important;
-  --code-normal: #3b9ba1 !important;
-  --code-operator: #ed8126 !important;
-  --code-property: #313234cc !important;
-  --code-punctuation: #6f49ae !important;
+  --code-keyword: #3b9ba1 !important;
+  --code-normal: #080808 !important;
+  --code-operator: #5c9fe4 !important;
+  --code-property: #3b9ba1 !important;
+  --code-punctuation: rgba(rgb(235, 83, 37), 0.55) !important;
   --code-string: #689523 !important;
   --code-tag: #797876 !important;
-  --code-value: #6f49ae !important;
+  --code-value: #e8c62a !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #24262c !important;
-  --gray: #afb6b5cc !important;
-  --darkgray: #afb6b5cc !important;
+  --gray: color-mix(in hsl, #6f768599, #d3d5d3) !important;
+  --darkgray: color-mix(in hsl, #6f768599, #d3d5d3) !important;
   --highlight: #c29e42 !important;
-  --secondary: #94ee6f !important;
+  --secondary: hsl(
+    calc(105.5 - 3),
+    calc(77.5% * 1.02),
+    calc(59.5% * 1.15)
+  ) !important;
   --tertiary: #a461c8 !important;
   --lightgray: #c03a47 !important;
   --dark: #d3d5d3 !important;
@@ -42,14 +46,14 @@
   --code-comment: #6f768599 !important;
   --code-function: #c29e42 !important;
   --code-important: #c03a47 !important;
-  --code-keyword: #a461c8 !important;
-  --code-normal: #3cb9c2 !important;
-  --code-operator: #cc8449 !important;
-  --code-property: #afb6b5cc !important;
-  --code-punctuation: #a461c8 !important;
+  --code-keyword: #3cb9c2 !important;
+  --code-normal: #d3d5d3 !important;
+  --code-operator: #5a8fcd !important;
+  --code-property: #3cb9c2 !important;
+  --code-punctuation: rgba(rgb(192, 58, 71), 0.55) !important;
   --code-string: #a1c05c !important;
   --code-tag: #898c93 !important;
-  --code-value: #a461c8 !important;
+  --code-value: #c29e42 !important;
 }
 
 html {
@@ -227,7 +231,10 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(250, 247, 239), rgb(20, 22, 28)) !important;
+    background: light-dark(
+      color(srgb 0.968337 0.956082 0.922251),
+      rgb(20, 22, 28)
+    ) !important;
     color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
@@ -262,15 +269,9 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 60, 185, 194;
-    background-color: light-dark(
-      rgba(59, 155, 161, 0.1),
-      rgba(60, 185, 194, 0.1)
-    );
-    border-color: light-dark(
-      rgba(59, 155, 161, 0.25),
-      rgba(60, 185, 194, 0.25)
-    );
+    --callout-color: rgb(60, 185, 194);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -280,18 +281,18 @@ body {
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
-    background-color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -301,12 +302,9 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 192, 58, 71;
-    background-color: light-dark(
-      rgba(235, 83, 87, 0.1),
-      rgba(192, 58, 71, 0.1)
-    );
-    border-color: light-dark(rgba(235, 83, 87, 0.25), rgba(192, 58, 71, 0.25));
+    --callout-color: rgb(192, 58, 71);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -316,18 +314,18 @@ body {
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
-    background-color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -337,12 +335,9 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 192, 58, 71;
-    background-color: light-dark(
-      rgba(235, 83, 87, 0.1),
-      rgba(192, 58, 71, 0.1)
-    );
-    border-color: light-dark(rgba(235, 83, 87, 0.25), rgba(192, 58, 71, 0.25));
+    --callout-color: rgb(192, 58, 71);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -352,18 +347,18 @@ body {
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
-    background-color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -373,15 +368,9 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 164, 97, 200;
-    background-color: light-dark(
-      rgba(111, 73, 174, 0.1),
-      rgba(164, 97, 200, 0.1)
-    );
-    border-color: light-dark(
-      rgba(111, 73, 174, 0.25),
-      rgba(164, 97, 200, 0.25)
-    );
+    --callout-color: rgb(164, 97, 200);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -391,18 +380,18 @@ body {
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(111, 73, 174), rgb(164, 97, 200));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: light-dark(rgb(111, 73, 174), rgb(164, 97, 200));
-    background-color: light-dark(rgb(111, 73, 174), rgb(164, 97, 200));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(111, 73, 174), rgb(164, 97, 200));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -412,12 +401,9 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 192, 58, 71;
-    background-color: light-dark(
-      rgba(235, 83, 87, 0.1),
-      rgba(192, 58, 71, 0.1)
-    );
-    border-color: light-dark(rgba(235, 83, 87, 0.25), rgba(192, 58, 71, 0.25));
+    --callout-color: rgb(192, 58, 71);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -427,18 +413,18 @@ body {
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
-    background-color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(235, 83, 87), rgb(192, 58, 71));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -526,15 +512,9 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 204, 132, 73;
-    background-color: light-dark(
-      rgba(237, 129, 38, 0.1),
-      rgba(204, 132, 73, 0.1)
-    );
-    border-color: light-dark(
-      rgba(237, 129, 38, 0.25),
-      rgba(204, 132, 73, 0.25)
-    );
+    --callout-color: rgb(204, 132, 73);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -544,18 +524,18 @@ body {
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
-    background-color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -598,15 +578,9 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 161, 192, 92;
-    background-color: light-dark(
-      rgba(104, 149, 35, 0.1),
-      rgba(161, 192, 92, 0.1)
-    );
-    border-color: light-dark(
-      rgba(104, 149, 35, 0.25),
-      rgba(161, 192, 92, 0.25)
-    );
+    --callout-color: rgb(161, 192, 92);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -616,18 +590,18 @@ body {
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(104, 149, 35), rgb(161, 192, 92));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: light-dark(rgb(104, 149, 35), rgb(161, 192, 92));
-    background-color: light-dark(rgb(104, 149, 35), rgb(161, 192, 92));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(104, 149, 35), rgb(161, 192, 92));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -637,15 +611,9 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 60, 185, 194;
-    background-color: light-dark(
-      rgba(59, 155, 161, 0.1),
-      rgba(60, 185, 194, 0.1)
-    );
-    border-color: light-dark(
-      rgba(59, 155, 161, 0.25),
-      rgba(60, 185, 194, 0.25)
-    );
+    --callout-color: rgb(60, 185, 194);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -655,18 +623,18 @@ body {
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
-    background-color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -715,15 +683,9 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 204, 132, 73;
-    background-color: light-dark(
-      rgba(237, 129, 38, 0.1),
-      rgba(204, 132, 73, 0.1)
-    );
-    border-color: light-dark(
-      rgba(237, 129, 38, 0.25),
-      rgba(204, 132, 73, 0.25)
-    );
+    --callout-color: rgb(204, 132, 73);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     border-style: solid;
     border-width: 0px;
@@ -733,18 +695,18 @@ body {
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
-    background-color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
+    background-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(237, 129, 38), rgb(204, 132, 73));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
 
@@ -759,7 +721,10 @@ body {
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(250, 247, 239), rgb(20, 22, 28));
+    background-color: light-dark(
+      color(srgb 0.968337 0.956082 0.922251),
+      rgb(20, 22, 28)
+    );
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -899,7 +864,10 @@ body {
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(250, 247, 239), rgb(20, 22, 28));
+    background-color: light-dark(
+      color(srgb 0.968337 0.956082 0.922251),
+      rgb(20, 22, 28)
+    );
     border-color: light-dark(
       color(srgb 0.899384 0.893078 0.867283),
       color(srgb 0.118646 0.130793 0.165667)
@@ -908,7 +876,10 @@ body {
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(250, 247, 239), rgb(20, 22, 28));
+    background-color: light-dark(
+      color(srgb 0.968337 0.956082 0.922251),
+      rgb(20, 22, 28)
+    );
     border-color: light-dark(
       color(srgb 0.899384 0.893078 0.867283),
       color(srgb 0.118646 0.130793 0.165667)
@@ -917,7 +888,10 @@ body {
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(250, 247, 239), rgb(20, 22, 28));
+    background-color: light-dark(
+      color(srgb 0.968337 0.956082 0.922251),
+      rgb(20, 22, 28)
+    );
   }
 
   .page > #quartz-body div.center {
@@ -1289,7 +1263,10 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(rgb(250, 247, 239), rgb(36, 38, 44));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0),
+      color(srgb 0.118646 0.130793 0.165667)
+    );
     color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-weight: 400;
   }
@@ -1322,7 +1299,10 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(rgb(250, 247, 239), rgb(36, 38, 44));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0),
+      color(srgb 0.118646 0.130793 0.165667)
+    );
     border-radius: 2px;
     color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
@@ -1345,7 +1325,10 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(rgb(250, 247, 239), rgb(36, 38, 44));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0),
+      color(srgb 0.118646 0.130793 0.165667)
+    );
     border-radius: 2px;
     color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   }
@@ -1399,14 +1382,14 @@ body {
     --code-comment: #6f768599;
     --code-function: #e8c62a;
     --code-important: #eb5325;
-    --code-keyword: #6f49ae;
-    --code-normal: #3b9ba1;
-    --code-operator: #ed8126;
-    --code-property: color-mix(in hsl, #6f768599, #080808);
-    --code-punctuation: #6f49ae;
+    --code-keyword: #3b9ba1;
+    --code-normal: #080808;
+    --code-operator: #5c9fe4;
+    --code-property: #3b9ba1;
+    --code-punctuation: rgba(rgb(235, 83, 37), 0.55);
     --code-string: #689523;
     --code-tag: #797876;
-    --code-value: #6f49ae;
+    --code-value: #e8c62a;
   }
 
   a.external {
@@ -1547,7 +1530,7 @@ body {
       color(srgb 0.118646 0.130793 0.165667)
     );
     border-radius: 2px;
-    color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1859,8 +1842,8 @@ body {
 
   pre > code {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(60, 185, 194);
-    border-color: light-dark(rgb(59, 155, 161), rgb(60, 185, 194));
+    border: 0px none rgb(211, 213, 211);
+    border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
     border-radius: 2px;
     overflow-x: visible;
     padding: 0px;
