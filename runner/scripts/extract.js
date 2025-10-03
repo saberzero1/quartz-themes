@@ -10,6 +10,12 @@ import {
 } from "../../util/util.mjs";
 import { obsidianPage } from "wdio-obsidian-service";
 
+// TODO: some themes have diplucated id on some style settings.
+// This makes it impossible to configure settings that share an ID.
+// Short term solution is to change the themes manually to have unique IDs
+// or to apply the classes they target automatically to the body
+// (style settings would have done this but it doesn't work with duplicate IDs).
+
 /*
  * NOTE: Make sure to set the saved workspace layouts to reading mode!
  */
@@ -514,6 +520,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
       });
       it(`should extract styles for theme: ${theme} in dark mode`, async () => {
+        await browser.reloadSession();
         const darkPage = browser.getObsidianPage();
         await darkPage.resetVault();
         //await browser.reloadObsidian();
@@ -579,6 +586,11 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
       });
       after(async () => {
+        const darkPage = browser.getObsidianPage();
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          "{}",
+        );
         const darkFileName = `./runner/results/${folder}/dark.json`;
         const darkPublishFileName = `./runner/results/${folder}/publish-dark.json`;
         // Flatten the result object
@@ -646,6 +658,7 @@ describe("Quartz Theme Style Extraction", () => {
         );
       });
       it(`should extract styles for theme: ${theme} in light mode`, async () => {
+        await browser.reloadSession();
         const lightPage = browser.getObsidianPage();
         await lightPage.resetVault();
         //await browser.reloadObsidian();
@@ -706,6 +719,11 @@ describe("Quartz Theme Style Extraction", () => {
         await sleep(500);
       });
       after(async () => {
+        const lightPage = browser.getObsidianPage();
+        await lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          "{}",
+        );
         // Save the light result to a file
         const lightFileName = `./runner/results/${folder}/light.json`;
         const lightPublishFileName = `./runner/results/${folder}/publish-light.json`;

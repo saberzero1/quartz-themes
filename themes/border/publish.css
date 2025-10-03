@@ -435,6 +435,7 @@ body.theme-dark {
   --blockquote-border-color: hsl(232, 40%, 60%);
   --blockquote-border-thickness: 3px;
   --blockquote-font-style: normal;
+  --blockquote-padding: 8px;
   --bold-color: rgb(255, 120, 129);
   --bold-modifier: 200;
   --bold-weight: 600;
@@ -1747,9 +1748,9 @@ body .markdown-rendered blockquote {
   font-style: normal;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  padding-bottom: 0px;
-  padding-inline-start: 24px;
-  padding-top: 0px;
+  padding-bottom: 8px;
+  padding-inline-start: 27px;
+  padding-top: 8px;
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
@@ -2851,6 +2852,7 @@ body.theme-light {
   );
   --blockquote-border-thickness: 3px;
   --blockquote-font-style: normal;
+  --blockquote-padding: 8px;
   --bold-color: rgb(221, 44, 56);
   --bold-modifier: 200;
   --bold-weight: 600;

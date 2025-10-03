@@ -1,14 +1,14 @@
 {
   "&[data-slug]": {
     "background": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)"
+    "color": "rgb(228, 104, 114)"
   },
   ".callout": {
-    "--callout-color": "8, 109, 221",
+    "--callout-color": "2, 122, 255",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout .callout-title": {
@@ -17,7 +17,7 @@
     "gap": "4px",
     "padding": "0px"
   },
-  ".callout .callout-title .callout-icon": { "color": "rgb(8, 109, 221)" },
+  ".callout .callout-title .callout-icon": { "color": "rgb(2, 122, 255)" },
   ".callout .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
     "font-weight": "400"
@@ -27,13 +27,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "0, 191, 188",
+    "--callout-color": "83, 223, 221",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(0, 191, 188, 0.25) rgba(0, 191, 188, 0.25) rgba(0, 191, 188, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
@@ -43,8 +43,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
-    "color": "rgb(0, 191, 188)",
-    "background-color": "rgb(0, 191, 188)"
+    "color": "rgb(83, 223, 221)",
+    "background-color": "rgb(83, 223, 221)"
   },
   ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -55,13 +55,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "233, 49, 71",
+    "--callout-color": "251, 70, 76",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
@@ -71,8 +71,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
-    "color": "rgb(233, 49, 71)",
-    "background-color": "rgb(233, 49, 71)"
+    "color": "rgb(251, 70, 76)",
+    "background-color": "rgb(251, 70, 76)"
   },
   ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -83,13 +83,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "233, 49, 71",
+    "--callout-color": "251, 70, 76",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
@@ -99,8 +99,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
-    "color": "rgb(233, 49, 71)",
-    "background-color": "rgb(233, 49, 71)"
+    "color": "rgb(251, 70, 76)",
+    "background-color": "rgb(251, 70, 76)"
   },
   ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -111,13 +111,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "120, 82, 238",
+    "--callout-color": "168, 130, 255",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(120, 82, 238, 0.25) rgba(120, 82, 238, 0.25) rgba(120, 82, 238, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(168, 130, 255, 0.25) rgba(168, 130, 255, 0.25) rgba(168, 130, 255, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
@@ -127,8 +127,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
-    "color": "rgb(120, 82, 238)",
-    "background-color": "rgb(120, 82, 238)"
+    "color": "rgb(168, 130, 255)",
+    "background-color": "rgb(168, 130, 255)"
   },
   ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -139,13 +139,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "233, 49, 71",
+    "--callout-color": "251, 70, 76",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgba(233, 49, 71, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
@@ -155,8 +155,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
-    "color": "rgb(233, 49, 71)",
-    "background-color": "rgb(233, 49, 71)"
+    "color": "rgb(251, 70, 76)",
+    "background-color": "rgb(251, 70, 76)"
   },
   ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -167,13 +167,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"]": {
-    "--callout-color": "8, 109, 221",
+    "--callout-color": "2, 122, 255",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
@@ -183,8 +183,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
-    "color": "rgb(8, 109, 221)",
-    "background-color": "rgb(8, 109, 221)"
+    "color": "rgb(2, 122, 255)",
+    "background-color": "rgb(2, 122, 255)"
   },
   ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -195,13 +195,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"]": {
-    "--callout-color": "8, 109, 221",
+    "--callout-color": "2, 122, 255",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
@@ -211,8 +211,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"] .callout-title .callout-icon": {
-    "color": "rgb(8, 109, 221)",
-    "background-color": "rgb(8, 109, 221)"
+    "color": "rgb(2, 122, 255)",
+    "background-color": "rgb(2, 122, 255)"
   },
   ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -223,13 +223,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "236, 117, 0",
+    "--callout-color": "233, 151, 63",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(236, 117, 0, 0.25) rgba(236, 117, 0, 0.25) rgba(236, 117, 0, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
@@ -239,8 +239,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
-    "color": "rgb(236, 117, 0)",
-    "background-color": "rgb(236, 117, 0)"
+    "color": "rgb(233, 151, 63)",
+    "background-color": "rgb(233, 151, 63)"
   },
   ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -257,7 +257,7 @@
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
@@ -279,13 +279,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "8, 185, 78",
+    "--callout-color": "68, 207, 110",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(8, 185, 78, 0.25) rgba(8, 185, 78, 0.25) rgba(8, 185, 78, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(68, 207, 110, 0.25) rgba(68, 207, 110, 0.25) rgba(68, 207, 110, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
@@ -295,8 +295,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
-    "color": "rgb(8, 185, 78)",
-    "background-color": "rgb(8, 185, 78)"
+    "color": "rgb(68, 207, 110)",
+    "background-color": "rgb(68, 207, 110)"
   },
   ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -307,13 +307,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "0, 191, 188",
+    "--callout-color": "83, 223, 221",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(0, 191, 188, 0.25) rgba(0, 191, 188, 0.25) rgba(0, 191, 188, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
@@ -323,8 +323,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
-    "color": "rgb(0, 191, 188)",
-    "background-color": "rgb(0, 191, 188)"
+    "color": "rgb(83, 223, 221)",
+    "background-color": "rgb(83, 223, 221)"
   },
   ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -335,13 +335,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"]": {
-    "--callout-color": "8, 109, 221",
+    "--callout-color": "2, 122, 255",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgba(8, 109, 221, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
@@ -351,8 +351,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
-    "color": "rgb(8, 109, 221)",
-    "background-color": "rgb(8, 109, 221)"
+    "color": "rgb(2, 122, 255)",
+    "background-color": "rgb(2, 122, 255)"
   },
   ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -363,13 +363,13 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "236, 117, 0",
+    "--callout-color": "233, 151, 63",
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-color": "rgba(236, 117, 0, 0.25) rgba(236, 117, 0, 0.25) rgba(236, 117, 0, 0.25) rgb(228, 104, 114)",
+    "border-color": "rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25) rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 3px",
-    "mix-blend-mode": "darken",
+    "mix-blend-mode": "lighten",
     "padding": "12px 12px 12px 20px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
@@ -379,8 +379,8 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
-    "color": "rgb(236, 117, 0)",
-    "background-color": "rgb(236, 117, 0)"
+    "color": "rgb(233, 151, 63)",
+    "background-color": "rgb(233, 151, 63)"
   },
   ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
     "color": "rgb(112, 200, 214)",
@@ -396,29 +396,29 @@
   },
   ".explorer .explorer-content": { "background-color": "rgba(0, 0, 0, 0)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "rgb(99, 74, 117)",
+    "color": "rgb(149, 186, 232)",
     "cursor": "default",
     "font-family": "\"yu gothic ui\", sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(99, 74, 117)"
+    "text-decoration": "none solid rgb(149, 186, 232)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "rgb(99, 74, 117)",
+    "color": "rgb(149, 186, 232)",
     "cursor": "default",
     "font-family": "\"yu gothic ui\", sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(99, 74, 117)"
+    "text-decoration": "none solid rgb(149, 186, 232)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
-    "color": "rgb(99, 74, 117)",
+    "color": "rgb(149, 186, 232)",
     "cursor": "default",
     "font-family": "\"yu gothic ui\", sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(99, 74, 117)"
+    "text-decoration": "none solid rgb(149, 186, 232)"
   },
   ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(154, 115, 180)",
+    "color": "rgb(194, 180, 217)",
     "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
@@ -440,7 +440,7 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"yu gothic\", yugothic, sans-serif"
   },
-  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
+  ".page > #quartz-body": { "background-color": "rgb(41, 45, 62)" },
   ".page > #quartz-body .left.sidebar": {
     "background-color": "rgba(0, 0, 0, 0)",
     "border-color": "rgba(0, 0, 0, 0)",
@@ -467,14 +467,14 @@
   },
   ".page article p > b, b": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -483,14 +483,14 @@
   },
   ".page article p > em, em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -499,14 +499,14 @@
   },
   ".page article p > i, i": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -515,14 +515,14 @@
   },
   ".page article p > s, s": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -531,14 +531,14 @@
   },
   ".page article p > strong > em, strong > em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "600",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -547,14 +547,14 @@
   },
   ".page article p > strong, strong": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "600",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -563,14 +563,14 @@
   },
   ".page article p > u, u": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -578,7 +578,7 @@
     "user-select": "text"
   },
   ".popover .popover-inner": {
-    "background-color": "rgb(255, 255, 255)",
+    "background-color": "rgb(41, 45, 62)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
   ".search > .search-button": {
@@ -586,25 +586,25 @@
     "border": "1px solid rgb(255, 255, 255)",
     "border-color": "rgb(255, 255, 255)",
     "border-radius": "8px",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "font-family": "\"yu gothic\", yugothic, sans-serif"
   },
   ".search > .search-container > .search-space": {
-    "background-color": "rgb(255, 255, 255)",
+    "background-color": "rgb(41, 45, 62)",
     "border": "1px solid rgb(179, 182, 222)",
     "border-radius": "8px",
     "box-shadow": "none"
   },
   ".search > .search-container > .search-space > *": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -612,49 +612,49 @@
     "user-select": "text"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container": {
-    "color": "rgb(56, 60, 78)"
+    "color": "rgb(228, 104, 114)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
-    "border-color": "rgb(56, 60, 78)"
+    "border-color": "rgb(228, 104, 114)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
-    "color": "rgb(56, 60, 78)"
+    "color": "rgb(228, 104, 114)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgba(0, 0, 0, 0.067)",
-    "color": "rgb(56, 60, 78)",
+    "background-color": "rgba(255, 255, 255, 0.067)",
+    "color": "rgb(228, 104, 114)",
     "font-weight": "400"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
     "border-color": "rgb(179, 182, 222)"
   },
   ".search > .search-container > .search-space > input": {
-    "background-color": "rgb(255, 255, 255)",
+    "background-color": "rgb(41, 45, 62)",
     "border": "unset",
-    "border-bottom": "1px solid rgb(233, 236, 247)",
+    "border-bottom": "1px solid rgb(29, 32, 44)",
     "border-radius": "0px",
     "box-shadow": "none"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
-    "background-color": "rgba(0, 0, 0, 0.067)",
+    "background-color": "rgba(255, 255, 255, 0.067)",
     "border-radius": "8px",
-    "color": "rgb(56, 60, 78)"
+    "color": "rgb(228, 104, 114)"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgba(0, 0, 0, 0.067)",
+    "background-color": "rgba(255, 255, 255, 0.067)",
     "border-radius": "8px",
-    "color": "rgb(56, 60, 78)"
+    "color": "rgb(228, 104, 114)"
   },
   ".text-highlight": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -664,36 +664,36 @@
   "::-webkit-scrollbar": { "background-color": "rgba(0, 0, 0, 0)" },
   "::-webkit-scrollbar-thumb": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(56, 60, 78)",
-    "border-color": "rgb(56, 60, 78)",
+    "border": "0px none rgb(228, 104, 114)",
+    "border-color": "rgb(228, 104, 114)",
     "border-radius": "0px",
     "border-width": "0px",
     "box-shadow": "none"
   },
   ":root": {
-    "--code-background": "#e9ecf7",
+    "--code-background": "#383c4e",
     "--code-comment": "#95bae8",
-    "--code-function": "#e0ac00",
-    "--code-important": "#ec7500",
-    "--code-keyword": "#d53984",
-    "--code-normal": "#383c4e",
-    "--code-operator": "#e93147",
-    "--code-property": "#00bfbc",
+    "--code-function": "#e0de71",
+    "--code-important": "#e9973f",
+    "--code-keyword": "#fa99cd",
+    "--code-normal": "#e46872",
+    "--code-operator": "#fb464c",
+    "--code-property": "#53dfdd",
     "--code-punctuation": "#d295d1",
-    "--code-string": "#08b94e",
-    "--code-tag": "#e93147",
-    "--code-value": "#7852ee"
+    "--code-string": "#44cf6e",
+    "--code-tag": "#fb464c",
+    "--code-value": "#a882ff"
   },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -749,25 +749,25 @@
     "padding-top": "0px"
   },
   "code": {
-    "background-color": "rgb(233, 236, 247)",
+    "background-color": "rgb(56, 60, 78)",
     "border": "0px solid rgb(255, 255, 255)",
     "border-color": "rgb(255, 255, 255)",
     "border-radius": "8px",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "1.8375px 3.675px"
   },
   "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "line-through solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "line-through solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "line-through",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -777,18 +777,18 @@
   "div#quartz-body": { "--quartz-icon-color": "#96bae8" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-size": "14px"
   },
   "div.graph": {
     "--quartz-graph-line": "#b3b6de",
     "--quartz-graph-node": "#d295d1",
-    "--quartz-graph-node-attachment": "#e0ac00",
+    "--quartz-graph-node-attachment": "#e0de71",
     "--quartz-graph-node-focused": "#95bae8",
-    "--quartz-graph-node-tag": "#08b94e",
+    "--quartz-graph-node-tag": "#44cf6e",
     "--quartz-graph-node-unresolved": "#95bae8",
-    "--quartz-graph-text": "#383c4e"
+    "--quartz-graph-text": "#e46872"
   },
   "h1": {
     "color": "rgb(235, 174, 202)",
@@ -857,52 +857,52 @@
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-1": { "font-weight": "400" },
   "li.depth-1 + li.depth-2": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-2": { "font-weight": "400" },
   "li.depth-2 + li.depth-3": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-3": { "font-weight": "400" },
   "li.depth-3 + li.depth-4": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-4": { "font-weight": "400" },
   "li.depth-4 + li.depth-5": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
-    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
+    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
-  "ol > li": { "color": "rgb(56, 60, 78)", "text-align": "start" },
-  "ol > li::marker": { "color": "rgb(56, 60, 78)" },
+  "ol > li": { "color": "rgb(228, 104, 114)", "text-align": "start" },
+  "ol > li::marker": { "color": "rgb(228, 104, 114)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"yu gothic\", yugothic, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(56, 60, 78) none 0px",
-    "text-decoration": "none solid rgb(56, 60, 78)",
-    "text-decoration-color": "rgb(56, 60, 78)",
+    "outline": "rgb(228, 104, 114) none 0px",
+    "text-decoration": "none solid rgb(228, 104, 114)",
+    "text-decoration-color": "rgb(228, 104, 114)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -911,15 +911,15 @@
   },
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(56, 60, 78)",
-    "border-color": "rgb(56, 60, 78)",
+    "border": "0px none rgb(228, 104, 114)",
+    "border-color": "rgb(228, 104, 114)",
     "border-radius": "8px",
     "overflow-x": "visible",
     "padding": "0px",
     "white-space": "pre-wrap"
   },
   "pre:has(> code)": {
-    "background-color": "rgb(233, 236, 247)",
+    "background-color": "rgb(56, 60, 78)",
     "border": "0px solid rgb(255, 255, 255)",
     "border-color": "rgb(255, 255, 255)",
     "border-radius": "8px",
@@ -927,7 +927,7 @@
     "padding": "12px 16px",
     "white-space": "pre-wrap"
   },
-  "ul > li": { "color": "rgb(56, 60, 78)", "text-align": "start" },
+  "ul > li": { "color": "rgb(228, 104, 114)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",
@@ -935,10 +935,10 @@
   },
   "ul > li::marker": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(56, 60, 78)",
-    "border-color": "rgb(56, 60, 78)",
+    "border": "0px none rgb(228, 104, 114)",
+    "border-color": "rgb(228, 104, 114)",
     "border-radius": "0px",
-    "color": "rgb(56, 60, 78)",
+    "color": "rgb(228, 104, 114)",
     "content": "normal",
     "pointer-events": "auto",
     "transform": "none",

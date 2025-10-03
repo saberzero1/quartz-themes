@@ -1,25 +1,25 @@
 {
   "&[data-slug]": {
-    "background": "rgb(43, 45, 49)",
-    "color": "rgb(208, 209, 210)"
+    "background": "rgb(246, 246, 246)",
+    "color": "rgb(34, 34, 34)"
   },
   ".callout": {
-    "--callout-color": "2, 122, 255",
+    "--callout-color": "8, 109, 221",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
-  ".callout .callout-title .callout-icon": { "color": "rgb(2, 122, 255)" },
+  ".callout .callout-title .callout-icon": { "color": "rgb(8, 109, 221)" },
   ".callout .callout-title > .callout-title-inner > p": {
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout > .callout-content": {
@@ -27,27 +27,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "83, 223, 221",
-    "background-color": "rgba(83, 223, 221, 0.1)",
-    "border-color": "rgba(83, 223, 221, 0.25)",
+    "--callout-color": "0, 191, 188",
+    "background-color": "rgba(0, 191, 188, 0.1)",
+    "border-color": "rgba(0, 191, 188, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(83, 223, 221)",
+    "color": "rgb(0, 191, 188)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
-    "color": "rgb(83, 223, 221)",
-    "background-color": "rgb(83, 223, 221)"
+    "color": "rgb(0, 191, 188)",
+    "background-color": "rgb(0, 191, 188)"
   },
   ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(83, 223, 221)",
+    "color": "rgb(0, 191, 188)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"abstract\"] > .callout-content": {
@@ -55,27 +55,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "251, 70, 76",
-    "background-color": "rgba(251, 70, 76, 0.1)",
-    "border-color": "rgba(251, 70, 76, 0.25)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
-    "color": "rgb(251, 70, 76)",
-    "background-color": "rgb(251, 70, 76)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"bug\"] > .callout-content": {
@@ -83,27 +83,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "251, 70, 76",
-    "background-color": "rgba(251, 70, 76, 0.1)",
-    "border-color": "rgba(251, 70, 76, 0.25)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
-    "color": "rgb(251, 70, 76)",
-    "background-color": "rgb(251, 70, 76)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"danger\"] > .callout-content": {
@@ -111,27 +111,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "168, 130, 255",
-    "background-color": "rgba(168, 130, 255, 0.1)",
-    "border-color": "rgba(168, 130, 255, 0.25)",
+    "--callout-color": "120, 82, 238",
+    "background-color": "rgba(120, 82, 238, 0.1)",
+    "border-color": "rgba(120, 82, 238, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(168, 130, 255)",
+    "color": "rgb(120, 82, 238)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
-    "color": "rgb(168, 130, 255)",
-    "background-color": "rgb(168, 130, 255)"
+    "color": "rgb(120, 82, 238)",
+    "background-color": "rgb(120, 82, 238)"
   },
   ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(168, 130, 255)",
+    "color": "rgb(120, 82, 238)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"example\"] > .callout-content": {
@@ -139,27 +139,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "251, 70, 76",
-    "background-color": "rgba(251, 70, 76, 0.1)",
-    "border-color": "rgba(251, 70, 76, 0.25)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgba(233, 49, 71, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
-    "color": "rgb(251, 70, 76)",
-    "background-color": "rgb(251, 70, 76)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(251, 70, 76)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"failure\"] > .callout-content": {
@@ -167,27 +167,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"]": {
-    "--callout-color": "2, 122, 255",
-    "background-color": "rgba(2, 122, 255, 0.1)",
-    "border-color": "rgba(2, 122, 255, 0.25)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
-    "color": "rgb(2, 122, 255)",
-    "background-color": "rgb(2, 122, 255)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"info\"] > .callout-content": {
@@ -195,27 +195,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"]": {
-    "--callout-color": "2, 122, 255",
-    "background-color": "rgba(2, 122, 255, 0.1)",
-    "border-color": "rgba(2, 122, 255, 0.25)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"] .callout-title .callout-icon": {
-    "color": "rgb(2, 122, 255)",
-    "background-color": "rgb(2, 122, 255)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"note\"] > .callout-content": {
@@ -223,27 +223,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "233, 151, 63",
-    "background-color": "rgba(233, 151, 63, 0.1)",
-    "border-color": "rgba(233, 151, 63, 0.25)",
+    "--callout-color": "236, 117, 0",
+    "background-color": "rgba(236, 117, 0, 0.1)",
+    "border-color": "rgba(236, 117, 0, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(233, 151, 63)",
+    "color": "rgb(236, 117, 0)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
-    "color": "rgb(233, 151, 63)",
-    "background-color": "rgb(233, 151, 63)"
+    "color": "rgb(236, 117, 0)",
+    "background-color": "rgb(236, 117, 0)"
   },
   ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(233, 151, 63)",
+    "color": "rgb(236, 117, 0)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"question\"] > .callout-content": {
@@ -257,7 +257,7 @@
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
@@ -279,27 +279,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "68, 207, 110",
-    "background-color": "rgba(68, 207, 110, 0.1)",
-    "border-color": "rgba(68, 207, 110, 0.25)",
+    "--callout-color": "8, 185, 78",
+    "background-color": "rgba(8, 185, 78, 0.1)",
+    "border-color": "rgba(8, 185, 78, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(68, 207, 110)",
+    "color": "rgb(8, 185, 78)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
-    "color": "rgb(68, 207, 110)",
-    "background-color": "rgb(68, 207, 110)"
+    "color": "rgb(8, 185, 78)",
+    "background-color": "rgb(8, 185, 78)"
   },
   ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(68, 207, 110)",
+    "color": "rgb(8, 185, 78)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"success\"] > .callout-content": {
@@ -307,27 +307,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "83, 223, 221",
-    "background-color": "rgba(83, 223, 221, 0.1)",
-    "border-color": "rgba(83, 223, 221, 0.25)",
+    "--callout-color": "0, 191, 188",
+    "background-color": "rgba(0, 191, 188, 0.1)",
+    "border-color": "rgba(0, 191, 188, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(83, 223, 221)",
+    "color": "rgb(0, 191, 188)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
-    "color": "rgb(83, 223, 221)",
-    "background-color": "rgb(83, 223, 221)"
+    "color": "rgb(0, 191, 188)",
+    "background-color": "rgb(0, 191, 188)"
   },
   ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(83, 223, 221)",
+    "color": "rgb(0, 191, 188)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"tip\"] > .callout-content": {
@@ -335,27 +335,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"]": {
-    "--callout-color": "2, 122, 255",
-    "background-color": "rgba(2, 122, 255, 0.1)",
-    "border-color": "rgba(2, 122, 255, 0.25)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgba(8, 109, 221, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
-    "color": "rgb(2, 122, 255)",
-    "background-color": "rgb(2, 122, 255)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(2, 122, 255)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"todo\"] > .callout-content": {
@@ -363,27 +363,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "233, 151, 63",
-    "background-color": "rgba(233, 151, 63, 0.1)",
-    "border-color": "rgba(233, 151, 63, 0.25)",
+    "--callout-color": "236, 117, 0",
+    "background-color": "rgba(236, 117, 0, 0.1)",
+    "border-color": "rgba(236, 117, 0, 0.25)",
     "border-radius": "4px",
     "border-style": "solid",
     "border-width": "0px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(233, 151, 63)",
+    "color": "rgb(236, 117, 0)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
-    "color": "rgb(233, 151, 63)",
-    "background-color": "rgb(233, 151, 63)"
+    "color": "rgb(236, 117, 0)",
+    "background-color": "rgb(236, 117, 0)"
   },
   ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(233, 151, 63)",
+    "color": "rgb(236, 117, 0)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"warning\"] > .callout-content": {
@@ -391,44 +391,44 @@
     "padding": "0px"
   },
   ".data-footnote-backref": {
-    "color": "rgb(228, 129, 192)",
-    "text-decoration": "none solid rgb(228, 129, 192)"
+    "color": "rgb(34, 34, 34)",
+    "text-decoration": "none solid rgb(34, 34, 34)"
   },
-  ".explorer .explorer-content": { "background-color": "rgb(43, 45, 49)" },
+  ".explorer .explorer-content": { "background-color": "rgb(246, 246, 246)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "default",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(208, 209, 210)"
+    "text-decoration": "none solid rgb(34, 34, 34)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "default",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(208, 209, 210)"
+    "text-decoration": "none solid rgb(34, 34, 34)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
-    "color": "rgb(141, 145, 150)",
+    "color": "rgb(92, 92, 92)",
     "cursor": "default",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(141, 145, 150)"
+    "text-decoration": "none solid rgb(92, 92, 92)"
   },
   ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
     "background-color": "rgb(64, 66, 73)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "default"
   },
-  ".graph .graph-outer": { "border-color": "rgb(33, 35, 38)" },
+  ".graph .graph-outer": { "border-color": "rgb(224, 224, 224)" },
   ".graph>.global-graph-outer": {
     "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
     "backdrop-filter": "blur(4px) brightness(0.4)"
   },
   ".graph>.global-graph-outer>.global-graph-container": {
     "background-color": "transparent",
-    "border-color": "rgb(33, 35, 38)"
+    "border-color": "rgb(224, 224, 224)"
   },
   ".katex > .katex-html": { "font-family": "MJXZERO, MJXTEX" },
   ".katex-display > .katex": {
@@ -440,19 +440,19 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
   },
-  ".page > #quartz-body": { "background-color": "rgb(46, 48, 53)" },
+  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
   ".page > #quartz-body .left.sidebar": {
-    "background-color": "rgb(43, 45, 49)",
-    "border-color": "rgb(33, 35, 38)",
+    "background-color": "rgb(246, 246, 246)",
+    "border-color": "rgb(224, 224, 224)",
     "border-right-width": "1px"
   },
   ".page > #quartz-body .right.sidebar": {
-    "background-color": "rgb(43, 45, 49)",
-    "border-color": "rgb(33, 35, 38)",
+    "background-color": "rgb(246, 246, 246)",
+    "border-color": "rgb(224, 224, 224)",
     "border-left-width": "1px"
   },
   ".page > #quartz-body .sidebar.left:has(.explorer)": {
-    "background-color": "rgb(43, 45, 49)"
+    "background-color": "rgb(246, 246, 246)"
   },
   ".page > #quartz-body div.center": {
     "max-width": "calc(100% - 40px)",
@@ -461,20 +461,20 @@
     "padding-right": "10px"
   },
   ".page article li:has(>input[type=checkbox]:checked)": {
-    "color": "rgb(141, 145, 150)",
-    "text-decoration": "line-through solid rgb(141, 145, 150)",
-    "text-decoration-color": "rgb(141, 145, 150)"
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through solid rgb(92, 92, 92)",
+    "text-decoration-color": "rgb(92, 92, 92)"
   },
   ".page article p > b, b": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -483,14 +483,14 @@
   },
   ".page article p > em, em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(184, 186, 125)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(184, 186, 125) none 0px",
-    "text-decoration": "none solid rgb(184, 186, 125)",
-    "text-decoration-color": "rgb(184, 186, 125)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -499,14 +499,14 @@
   },
   ".page article p > i, i": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -515,14 +515,14 @@
   },
   ".page article p > s, s": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -531,14 +531,14 @@
   },
   ".page article p > strong > em, strong > em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(184, 186, 125)",
+    "color": "rgb(222, 175, 99)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "600",
-    "outline": "rgb(184, 186, 125) none 0px",
-    "text-decoration": "none solid rgb(184, 186, 125)",
-    "text-decoration-color": "rgb(184, 186, 125)",
+    "outline": "rgb(222, 175, 99) none 0px",
+    "text-decoration": "none solid rgb(222, 175, 99)",
+    "text-decoration-color": "rgb(222, 175, 99)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -563,14 +563,14 @@
   },
   ".page article p > u, u": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -578,33 +578,33 @@
     "user-select": "text"
   },
   ".popover .popover-inner": {
-    "background-color": "rgb(46, 48, 53)",
-    "border-color": "rgb(33, 35, 38)"
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "rgb(224, 224, 224)"
   },
   ".search > .search-button": {
     "background-color": "rgb(33, 35, 38)",
-    "border": "1px solid rgb(33, 35, 38)",
-    "border-color": "rgb(33, 35, 38)",
+    "border": "1px solid rgb(252, 252, 252)",
+    "border-color": "rgb(252, 252, 252)",
     "border-radius": "4px",
-    "color": "rgb(141, 145, 150)",
+    "color": "rgb(92, 92, 92)",
     "font-family": "Catamaran, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
   },
   ".search > .search-container > .search-space": {
-    "background-color": "rgb(46, 48, 53)",
-    "border": "1px solid rgb(85, 85, 85)",
+    "background-color": "rgb(255, 255, 255)",
+    "border": "1px solid rgb(189, 189, 189)",
     "border-radius": "8px",
     "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
   },
   ".search > .search-container > .search-space > *": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -612,49 +612,49 @@
     "user-select": "text"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container": {
-    "color": "rgb(208, 209, 210)"
+    "color": "rgb(34, 34, 34)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
-    "border-color": "rgb(208, 209, 210)"
+    "border-color": "rgb(34, 34, 34)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
-    "color": "rgb(208, 209, 210)"
+    "color": "rgb(34, 34, 34)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
     "background-color": "rgba(138, 92, 245, 0.8)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "font-weight": "400"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
-    "border-color": "rgb(85, 85, 85)"
+    "border-color": "rgb(189, 189, 189)"
   },
   ".search > .search-container > .search-space > input": {
     "background-color": "rgb(33, 35, 38)",
     "border": "unset",
-    "border-bottom": "1px solid rgb(33, 35, 38)",
+    "border-bottom": "1px solid rgb(252, 252, 252)",
     "border-radius": "4px",
     "box-shadow": "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
     "background-color": "rgba(138, 92, 245, 0.8)",
     "border-radius": "6px",
-    "color": "rgb(208, 209, 210)"
+    "color": "rgb(34, 34, 34)"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
     "background-color": "rgba(138, 92, 245, 0.8)",
     "border-radius": "6px",
-    "color": "rgb(208, 209, 210)"
+    "color": "rgb(34, 34, 34)"
   },
   ".text-highlight": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -664,36 +664,36 @@
   "::-webkit-scrollbar": { "background-color": "rgba(0, 0, 0, 0)" },
   "::-webkit-scrollbar-thumb": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(208, 209, 210)",
-    "border-color": "rgb(208, 209, 210)",
+    "border": "0px none rgb(34, 34, 34)",
+    "border-color": "rgb(34, 34, 34)",
     "border-radius": "0px",
     "border-width": "0px",
     "box-shadow": "none"
   },
   ":root": {
-    "--code-background": "hsla(232, 14%, 31%, 1)",
-    "--code-comment": "hsla(0, 0%, 61%, 1)",
-    "--code-function": "#e0de71",
-    "--code-important": "#e9973f",
-    "--code-keyword": "#fa99cd",
-    "--code-normal": "hsla(213, 3%, 82%, 1)",
-    "--code-operator": "#fb464c",
-    "--code-property": "#53dfdd",
-    "--code-punctuation": "hsla(213, 4%, 57%, 1)",
-    "--code-string": "#44cf6e",
-    "--code-tag": "#fb464c",
-    "--code-value": "#a882ff"
+    "--code-background": "#fafafa",
+    "--code-comment": "#ababab",
+    "--code-function": "#e0ac00",
+    "--code-important": "#ec7500",
+    "--code-keyword": "#d53984",
+    "--code-normal": "#222222",
+    "--code-operator": "#e93147",
+    "--code-property": "#00bfbc",
+    "--code-punctuation": "#5c5c5c",
+    "--code-string": "#08b94e",
+    "--code-tag": "#e93147",
+    "--code-value": "#7852ee"
   },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -736,10 +736,10 @@
     "font-weight": "400",
     "margin-inline-start": "0px"
   },
-  "a.internal.tag-link::before": { "color": "rgb(176, 136, 231)" },
+  "a.internal.tag-link::before": { "color": "rgb(138, 92, 245)" },
   "blockquote": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border-inline-start": "2px solid rgb(138, 92, 245)",
+    "border-inline-start": "2px solid rgb(152, 115, 247)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-style": "normal",
     "margin-inline-end": "0px",
@@ -750,88 +750,88 @@
   },
   "code": {
     "background-color": "rgba(250, 168, 25, 0.1)",
-    "border": "0px solid rgb(33, 35, 38)",
-    "border-color": "rgb(33, 35, 38)",
+    "border": "0px solid rgb(224, 224, 224)",
+    "border-color": "rgb(224, 224, 224)",
     "border-radius": "4px",
-    "color": "rgb(244, 167, 67)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "4px 4.8px 1px"
   },
   "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "line-through solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "line-through solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "line-through",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
   },
-  "div#quartz-body": { "--quartz-icon-color": "hsla(213, 4%, 57%, 1)" },
+  "div#quartz-body": { "--quartz-icon-color": "#5c5c5c" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-size": "16px"
   },
   "div.graph": {
-    "--quartz-graph-line": "hsla(191, 57%, 35%, 1)",
-    "--quartz-graph-node": "hsla(213, 4%, 57%, 1)",
-    "--quartz-graph-node-attachment": "#e0de71",
-    "--quartz-graph-node-focused": "hsla(265, 66%, 72%, 1)",
-    "--quartz-graph-node-tag": "#44cf6e",
-    "--quartz-graph-node-unresolved": "hsla(0, 0%, 61%, 1)",
-    "--quartz-graph-text": "hsla(213, 3%, 82%, 1)"
+    "--quartz-graph-line": "#d4d4d4",
+    "--quartz-graph-node": "#5c5c5c",
+    "--quartz-graph-node-attachment": "#e0ac00",
+    "--quartz-graph-node-focused": "hsl(258, 88%, 66%)",
+    "--quartz-graph-node-tag": "#08b94e",
+    "--quartz-graph-node-unresolved": "#ababab",
+    "--quartz-graph-text": "#222222"
   },
   "h1": {
-    "color": "rgb(138, 135, 197)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "h2": {
-    "color": "rgb(140, 149, 212)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "h3": {
-    "color": "rgb(140, 149, 212)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "h4": {
-    "color": "rgb(140, 149, 212)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "h5": {
-    "color": "rgb(140, 149, 212)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "h6": {
-    "color": "rgb(120, 144, 151)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "text-shadow": "none"
   },
   "hr": {
-    "border": "0px none rgb(208, 209, 210)",
-    "border-color": "rgb(208, 209, 210)",
+    "border": "0px none rgb(34, 34, 34)",
+    "border-color": "rgb(34, 34, 34)",
     "border-style": "none",
-    "border-top": "0px none rgb(208, 209, 210)",
+    "border-top": "0px none rgb(34, 34, 34)",
     "box-shadow": "none",
     "margin": "23px 0px"
   },
   "input[type=checkbox]": {
     "appearance": "none",
-    "border": "1px solid rgb(156, 156, 156)",
-    "border-color": "rgb(156, 156, 156)",
+    "border": "1px solid rgb(171, 171, 171)",
+    "border-color": "rgb(171, 171, 171)",
     "border-radius": "3px",
     "margin": "0px 8px 0px -24px",
     "margin-inline-end": "8px",
@@ -857,52 +857,52 @@
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
   "li.depth-1": { "font-weight": "400" },
   "li.depth-1 + li.depth-2": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
   "li.depth-2": { "font-weight": "400" },
   "li.depth-2 + li.depth-3": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
   "li.depth-3": { "font-weight": "400" },
   "li.depth-3 + li.depth-4": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
   "li.depth-4": { "font-weight": "400" },
   "li.depth-4 + li.depth-5": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "15px",
     "padding-inline-start": "4px"
   },
-  "ol > li": { "color": "rgb(208, 209, 210)", "text-align": "start" },
-  "ol > li::marker": { "color": "rgb(208, 209, 210)" },
+  "ol > li": { "color": "rgb(34, 34, 34)", "text-align": "start" },
+  "ol > li::marker": { "color": "rgb(34, 34, 34)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "font-weight": "400",
-    "outline": "rgb(208, 209, 210) none 0px",
-    "text-decoration": "none solid rgb(208, 209, 210)",
-    "text-decoration-color": "rgb(208, 209, 210)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -911,8 +911,8 @@
   },
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(141, 145, 150)",
-    "border-color": "rgb(141, 145, 150)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
     "border-radius": "4px",
     "overflow-x": "visible",
     "padding": "0px",
@@ -920,14 +920,14 @@
   },
   "pre:has(> code)": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px solid rgb(33, 35, 38)",
-    "border-color": "rgb(33, 35, 38)",
+    "border": "0px solid rgb(224, 224, 224)",
+    "border-color": "rgb(224, 224, 224)",
     "border-radius": "4px",
     "overflow-x": "auto",
     "padding": "0px",
     "white-space": "pre-wrap"
   },
-  "ul > li": { "color": "rgb(208, 209, 210)", "text-align": "start" },
+  "ul > li": { "color": "rgb(34, 34, 34)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",
@@ -935,10 +935,10 @@
   },
   "ul > li::marker": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(208, 209, 210)",
-    "border-color": "rgb(208, 209, 210)",
+    "border": "0px none rgb(34, 34, 34)",
+    "border-color": "rgb(34, 34, 34)",
     "border-radius": "0px",
-    "color": "rgb(208, 209, 210)",
+    "color": "rgb(34, 34, 34)",
     "content": "normal",
     "pointer-events": "auto",
     "transform": "none",

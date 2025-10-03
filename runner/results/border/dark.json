@@ -744,9 +744,9 @@
     "font-style": "normal",
     "margin-inline-end": "0px",
     "margin-inline-start": "0px",
-    "padding-bottom": "0px",
-    "padding-inline-start": "24px",
-    "padding-top": "0px"
+    "padding-bottom": "8px",
+    "padding-inline-start": "27px",
+    "padding-top": "8px"
   },
   "code": {
     "background-color": "rgba(0, 0, 0, 0)",

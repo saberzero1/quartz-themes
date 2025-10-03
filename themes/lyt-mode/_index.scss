@@ -132,21 +132,21 @@ html {
 
 body {
   &[data-slug] {
-    background: rgb(30, 31, 36);
-    color: rgb(185, 195, 223);
+    background: rgb(246, 246, 246);
+    color: rgb(34, 34, 34);
   }
 
   .callout {
     --callout-color: 207, 227, 255;
-    border-radius: 2px;
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(207, 227, 255);
     gap: normal;
     padding: 6px 12px;
@@ -162,23 +162,23 @@ body {
   }
 
   .callout > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: 74, 176, 255;
     background-color: rgba(74, 176, 255, 0.1);
-    border-color: rgba(74, 176, 255, 0.3);
-    border-radius: 2px;
+    border-color: rgba(74, 176, 255, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="abstract"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(74, 176, 255);
     gap: normal;
     padding: 6px 12px;
@@ -195,23 +195,23 @@ body {
   }
 
   .callout[data-callout="abstract"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: 252, 95, 142;
     background-color: rgba(252, 95, 142, 0.1);
-    border-color: rgba(252, 95, 142, 0.3);
-    border-radius: 2px;
+    border-color: rgba(252, 95, 142, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="bug"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(252, 95, 142);
     gap: normal;
     padding: 6px 12px;
@@ -228,23 +228,23 @@ body {
   }
 
   .callout[data-callout="bug"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: 255, 74, 74;
     background-color: rgba(255, 74, 74, 0.1);
-    border-color: rgba(255, 74, 74, 0.3);
-    border-radius: 2px;
+    border-color: rgba(255, 74, 74, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="danger"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(255, 74, 74);
     gap: normal;
     padding: 6px 12px;
@@ -261,23 +261,23 @@ body {
   }
 
   .callout[data-callout="danger"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="example"] {
     --callout-color: 184, 148, 255;
     background-color: rgba(184, 148, 255, 0.1);
-    border-color: rgba(184, 148, 255, 0.3);
-    border-radius: 2px;
+    border-color: rgba(184, 148, 255, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="example"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(184, 148, 255);
     gap: normal;
     padding: 6px 12px;
@@ -294,23 +294,23 @@ body {
   }
 
   .callout[data-callout="example"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: 255, 74, 74;
     background-color: rgba(255, 74, 74, 0.1);
-    border-color: rgba(255, 74, 74, 0.3);
-    border-radius: 2px;
+    border-color: rgba(255, 74, 74, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="failure"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(255, 74, 74);
     gap: normal;
     padding: 6px 12px;
@@ -327,23 +327,23 @@ body {
   }
 
   .callout[data-callout="failure"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="info"] {
     --callout-color: 74, 176, 255;
     background-color: rgba(74, 176, 255, 0.1);
-    border-color: rgba(74, 176, 255, 0.3);
-    border-radius: 2px;
+    border-color: rgba(74, 176, 255, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="info"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(74, 176, 255);
     gap: normal;
     padding: 6px 12px;
@@ -360,23 +360,23 @@ body {
   }
 
   .callout[data-callout="info"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: 207, 227, 255;
     background-color: rgba(207, 227, 255, 0.1);
-    border-color: rgba(207, 227, 255, 0.3);
-    border-radius: 2px;
+    border-color: rgba(207, 227, 255, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="note"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(207, 227, 255);
     gap: normal;
     padding: 6px 12px;
@@ -393,23 +393,23 @@ body {
   }
 
   .callout[data-callout="note"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="question"] {
     --callout-color: 255, 128, 183;
     background-color: rgba(255, 128, 183, 0.1);
-    border-color: rgba(255, 128, 183, 0.3);
-    border-radius: 2px;
+    border-color: rgba(255, 128, 183, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="question"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(255, 128, 183);
     gap: normal;
     padding: 6px 12px;
@@ -426,23 +426,23 @@ body {
   }
 
   .callout[data-callout="question"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: 184, 148, 255;
     background-color: rgba(184, 148, 255, 0.1);
-    border-color: rgba(184, 148, 255, 0.3);
-    border-radius: 2px;
+    border-color: rgba(184, 148, 255, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="quote"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(184, 148, 255);
     gap: normal;
     padding: 6px 12px;
@@ -459,23 +459,23 @@ body {
   }
 
   .callout[data-callout="quote"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="success"] {
     --callout-color: 77, 224, 185;
     background-color: rgba(77, 224, 185, 0.1);
-    border-color: rgba(77, 224, 185, 0.3);
-    border-radius: 2px;
+    border-color: rgba(77, 224, 185, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="success"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(77, 224, 185);
     gap: normal;
     padding: 6px 12px;
@@ -492,23 +492,23 @@ body {
   }
 
   .callout[data-callout="success"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: 244, 138, 74;
     background-color: rgba(244, 138, 74, 0.1);
-    border-color: rgba(244, 138, 74, 0.3);
-    border-radius: 2px;
+    border-color: rgba(244, 138, 74, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="tip"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(244, 138, 74);
     gap: normal;
     padding: 6px 12px;
@@ -525,23 +525,23 @@ body {
   }
 
   .callout[data-callout="tip"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: 170, 230, 89;
     background-color: rgba(170, 230, 89, 0.1);
-    border-color: rgba(170, 230, 89, 0.3);
-    border-radius: 2px;
+    border-color: rgba(170, 230, 89, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="todo"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(170, 230, 89);
     gap: normal;
     padding: 6px 12px;
@@ -558,23 +558,23 @@ body {
   }
 
   .callout[data-callout="todo"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: 244, 138, 74;
     background-color: rgba(244, 138, 74, 0.1);
-    border-color: rgba(244, 138, 74, 0.3);
-    border-radius: 2px;
+    border-color: rgba(244, 138, 74, 0.25);
+    border-radius: 4px;
     border-style: solid;
-    border-width: 1px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    border-width: 0px;
+    mix-blend-mode: darken;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="warning"] .callout-title {
-    border-radius: 2px;
+    border-radius: 8px;
     color: rgb(244, 138, 74);
     gap: normal;
     padding: 6px 12px;
@@ -591,31 +591,23 @@ body {
   }
 
   .callout[data-callout="warning"] > .callout-content {
-    background-color: rgb(35, 36, 42);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px;
   }
 
   .data-footnote-backref {
-    color: rgb(124, 132, 156);
-    text-decoration: none solid rgb(124, 132, 156);
+    color: rgb(171, 171, 171);
+    text-decoration: none solid rgb(171, 171, 171);
   }
 
   .explorer .explorer-content {
-    background-color: rgb(30, 31, 36);
+    background-color: rgb(246, 246, 246);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: rgb(160, 167, 187);
-    cursor: pointer;
+    color: rgb(34, 34, 34);
+    cursor: default;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -628,24 +620,16 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(160, 167, 187);
+    text-decoration: none solid rgb(34, 34, 34);
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: rgb(160, 167, 187);
-    cursor: pointer;
+    color: rgb(34, 34, 34);
+    cursor: default;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -658,21 +642,13 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(160, 167, 187);
+    text-decoration: none solid rgb(34, 34, 34);
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: rgb(160, 167, 187);
-    cursor: pointer;
+    color: rgb(34, 34, 34);
+    cursor: default;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -685,17 +661,17 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(160, 167, 187);
+    text-decoration: none solid rgb(34, 34, 34);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgb(45, 48, 57);
-    color: rgb(136, 196, 211);
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(34, 34, 34);
+    cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: rgb(30, 31, 36);
+    border-color: rgb(224, 224, 224);
   }
 
   .graph > .global-graph-outer {
@@ -705,7 +681,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: rgb(30, 31, 36);
+    border-color: rgb(224, 224, 224);
   }
 
   .katex > .katex-html {
@@ -715,15 +691,7 @@ body {
   .katex-display > .katex {
     display: block;
     font:
-      16px / 0px "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
-      ui-sans-serif,
+      16px / 0px ui-sans-serif,
       -apple-system,
       "system-ui",
       system-ui,
@@ -740,14 +708,6 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -762,23 +722,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(255, 255, 255);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: rgb(30, 31, 36);
-    border-color: rgb(30, 31, 36);
+    background-color: rgb(246, 246, 246);
+    border-color: rgb(224, 224, 224);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: rgb(30, 31, 36);
-    border-color: rgb(30, 31, 36);
+    background-color: rgb(246, 246, 246);
+    border-color: rgb(224, 224, 224);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: rgb(30, 31, 36);
+    background-color: rgb(246, 246, 246);
   }
 
   .page > #quartz-body div.center {
@@ -789,26 +749,18 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(141, 148, 170);
-    text-decoration: none solid rgb(141, 148, 170);
-    text-decoration-color: rgb(141, 148, 170);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through solid rgb(92, 92, 92);
+    text-decoration-color: rgb(92, 92, 92);
   }
 
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -821,9 +773,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -834,18 +786,10 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(201, 184, 255);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -858,9 +802,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(201, 184, 255) none 0px;
-    text-decoration: none solid rgb(201, 184, 255);
-    text-decoration-color: rgb(201, 184, 255);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -871,18 +815,10 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -895,9 +831,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -908,18 +844,10 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -932,9 +860,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -945,18 +873,10 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(219, 222, 230);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -969,9 +889,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(219, 222, 230) none 0px;
-    text-decoration: none solid rgb(219, 222, 230);
-    text-decoration-color: rgb(219, 222, 230);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -982,18 +902,10 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(219, 206, 132);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1006,9 +918,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(219, 206, 132) none 0px;
-    text-decoration: none solid rgb(219, 206, 132);
-    text-decoration-color: rgb(219, 206, 132);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1019,18 +931,10 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1043,9 +947,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1054,45 +958,36 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: rgb(45, 48, 57);
-    border-color: rgb(30, 31, 36);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(224, 224, 224);
   }
 
   .search > .search-button {
-    background-color: rgb(30, 31, 36);
-    border: 1px solid rgb(67, 72, 81);
-    border-color: rgb(67, 72, 81);
+    background-color: rgb(255, 255, 255);
+    border: 0px none rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
     border-radius: 2px;
-    color: rgb(185, 195, 223);
-    font-family:
-      "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu,
-      Helvetica, Arial, sans-serif;
+    color: rgb(34, 34, 34);
+    font-family: "??";
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(45, 48, 57);
-    border: 1px solid rgba(100, 100, 100, 0.25);
+    background-color: rgb(255, 255, 255);
+    border: unset;
     border-radius: 4px 4px 0px 0px;
-    box-shadow:
-      rgba(14, 11, 11, 0.5) 0px 3px 12px -2px,
-      rgba(0, 0, 0, 0.447) 0px 2px 2.3px -52px,
-      rgba(0, 0, 0, 0.6) 0px 5.6px 6.3px -52px,
-      rgba(0, 0, 0, 0.85) 0px 13.6px 15.1px -52px,
-      rgb(0, 0, 0) 0px 45px 50px -52px;
+    box-shadow: none;
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
-    font-family:
-      "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu,
-      Helvetica, Arial, sans-serif;
+    font-family: "??";
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1105,7 +1000,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: rgb(136, 196, 211);
+    color: rgb(34, 34, 34);
   }
 
   .search
@@ -1114,7 +1009,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: rgba(0, 0, 0, 0);
+    border-color: rgb(34, 34, 34);
   }
 
   .search
@@ -1159,7 +1054,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
   }
 
   .search
@@ -1180,22 +1075,22 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgb(52, 58, 75);
-    color: rgb(114, 195, 213);
+    background-color: rgba(0, 0, 0, 0.067);
+    color: rgb(34, 34, 34);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: rgba(100, 100, 100, 0.25);
+    border-color: rgb(189, 189, 189) rgb(189, 189, 189) rgb(224, 224, 224);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(30, 31, 36);
-    border: 1px solid rgb(67, 72, 81);
-    border-bottom: 1px solid rgb(67, 72, 81);
+    background-color: rgb(255, 255, 255);
+    border: 0px none rgb(34, 34, 34);
+    border-bottom: 0px none rgb(34, 34, 34);
     border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 1px;
+    box-shadow: none;
   }
 
   .search
@@ -1210,9 +1105,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 0px;
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
   }
 
   .search
@@ -1233,25 +1128,17 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 0px;
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
   }
 
   .text-highlight {
-    background-color: rgba(255, 252, 59, 0.08);
-    color: rgb(114, 195, 213);
+    background-color: rgba(255, 208, 0, 0.4);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1264,9 +1151,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1280,42 +1167,34 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(114, 195, 213);
-    border-color: rgb(114, 195, 213);
+    border: 0px none rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
   }
 
   :root {
-    --code-background: hsl(231, 9%, 15%);
-    --code-comment: hsl(225, 17%, 84%);
-    --code-function: hsl(334, 37%, 65%);
-    --code-important: hsl(220, 23%, 90%);
-    --code-keyword: hsl(263, 37%, 69%);
-    --code-normal: hsl(224, 37%, 80%);
-    --code-operator: #fb464c;
-    --code-property: hsl(61, 46%, 69%);
-    --code-punctuation: hsl(225, 14%, 40%);
-    --code-string: hsl(124, 54%, 75%);
-    --code-tag: hsl(334, 37%, 65%);
-    --code-value: hsl(183, 29%, 62%);
+    --code-background: #fafafa;
+    --code-comment: #ababab;
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: #222222;
+    --code-operator: #e93147;
+    --code-property: #00bfbc;
+    --code-punctuation: #5c5c5c;
+    --code-string: #08b94e;
+    --code-tag: #e93147;
+    --code-value: #7852ee;
   }
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1328,9 +1207,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1340,18 +1219,10 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 128, 183);
+    color: rgb(138, 92, 245);
     cursor: pointer;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1364,10 +1235,10 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(255, 128, 183) none 0px;
-    text-decoration: none solid rgba(95, 88, 116, 0.5);
-    text-decoration-color: rgba(95, 88, 116, 0.5);
-    text-decoration-line: none;
+    outline: rgb(138, 92, 245) none 0px;
+    text-decoration: underline solid rgba(138, 92, 245, 0.3);
+    text-decoration-color: rgba(138, 92, 245, 0.3);
+    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     transition: opacity 0.14s ease-in-out;
@@ -1385,29 +1256,21 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.15);
-    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(138, 92, 245, 0.1);
+    border-bottom-color: rgba(138, 92, 245, 0.15);
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
     border-bottom-style: solid;
-    border-left-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(138, 92, 245, 0.15);
     border-left-style: solid;
-    border-right-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(138, 92, 245, 0.15);
     border-right-style: solid;
-    border-top-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(138, 92, 245, 0.15);
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-top-style: solid;
     display: flex;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1424,21 +1287,13 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(114, 213, 165);
+    color: rgb(138, 92, 245);
   }
 
   blockquote {
     background-color: rgba(0, 0, 0, 0);
-    border-inline-start: 2px solid rgb(145, 110, 201);
+    border-inline-start: 2px solid rgb(152, 115, 247);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1459,15 +1314,15 @@ body {
   }
 
   code {
-    background-color: rgb(35, 36, 42);
-    border: 0px solid rgba(100, 100, 100, 0.25);
-    border-color: rgba(100, 100, 100, 0.25);
-    border-radius: 0px;
-    color: rgb(185, 195, 223);
+    background-color: rgb(250, 250, 250);
+    border: 0px solid rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
+    border-radius: 4px;
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Mono", "Fira Code", Courier, monospace, ui-monospace, SFMono-Regular,
-      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-      Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
     padding: 2.1px 4.2px;
   }
 
@@ -1478,18 +1333,10 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(124, 132, 156);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1502,9 +1349,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(124, 132, 156) none 0px;
-    text-decoration: line-through solid rgb(124, 132, 156);
-    text-decoration-color: rgb(124, 132, 156);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: line-through solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1513,21 +1360,13 @@ body {
   }
 
   div#quartz-body {
-    --quartz-icon-color: hsl(225, 14%, 55%);
+    --quartz-icon-color: #5c5c5c;
   }
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1543,26 +1382,18 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: hsl(196, 27%, 41%);
-    --quartz-graph-node: hsl(58, 86%, 66%);
-    --quartz-graph-node-attachment: hsl(220, 23%, 90%);
-    --quartz-graph-node-focused: hsl(225, 14%, 55%);
-    --quartz-graph-node-tag: hsl(194, 50%, 47%);
-    --quartz-graph-node-unresolved: hsl(263, 46%, 61%);
-    --quartz-graph-text: hsl(225, 17%, 88%);
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #5c5c5c;
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: #ababab;
+    --quartz-graph-text: #222222;
   }
 
   h1 {
-    color: rgb(217, 214, 23);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1578,16 +1409,8 @@ body {
   }
 
   h2 {
-    color: rgb(184, 148, 255);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1603,16 +1426,8 @@ body {
   }
 
   h3 {
-    color: rgb(13, 200, 242);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1628,16 +1443,8 @@ body {
   }
 
   h4 {
-    color: rgb(114, 213, 165);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1653,16 +1460,8 @@ body {
   }
 
   h5 {
-    color: rgb(185, 195, 223);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1678,16 +1477,8 @@ body {
   }
 
   h6 {
-    color: rgb(159, 167, 188);
+    color: rgb(34, 34, 34);
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1704,17 +1495,17 @@ body {
 
   hr {
     border: unset;
-    border-color: rgb(67, 72, 81);
+    border-color: rgb(224, 224, 224);
     border-style: solid none none;
-    border-top: 1px solid rgb(67, 72, 81);
+    border-top: 2px solid rgb(224, 224, 224);
     box-shadow: none;
     margin: 32px 0px;
   }
 
   input[type="checkbox"] {
     appearance: none;
-    border: 1px solid rgb(67, 72, 81);
-    border-color: rgb(67, 72, 81);
+    border: 0px none rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     border-radius: 2px;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
@@ -1745,7 +1536,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
@@ -1755,7 +1546,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
@@ -1765,7 +1556,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
@@ -1775,7 +1566,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
@@ -1785,7 +1576,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
@@ -1795,34 +1586,26 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 2px;
   }
 
   ol > li {
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     text-align: start;
   }
 
   ol > li::marker {
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
-      "DM Sans",
-      Inter,
-      "-apple-system BlinkMacSystemFont",
-      "Segoe UI",
-      Ubuntu,
-      Helvetica,
-      Arial,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -1835,9 +1618,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(114, 195, 213) none 0px;
-    text-decoration: none solid rgb(114, 195, 213);
-    text-decoration-color: rgb(114, 195, 213);
+    outline: rgb(34, 34, 34) none 0px;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1847,18 +1630,18 @@ body {
 
   pre > code {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(130, 183, 186);
-    border-color: rgb(130, 183, 186);
-    border-radius: 0px;
+    border: 0px none rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
+    border-radius: 4px;
     overflow-x: visible;
     padding: 0px;
     white-space: pre-wrap;
   }
 
   pre:has(> code) {
-    background-color: rgb(35, 36, 42);
-    border: 1px solid rgb(67, 72, 81);
-    border-color: rgb(67, 72, 81);
+    background-color: rgb(250, 250, 250);
+    border: 0px none rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
     border-radius: 2px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1866,7 +1649,7 @@ body {
   }
 
   ul > li {
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     text-align: start;
   }
 
@@ -1878,10 +1661,10 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(114, 195, 213);
-    border-color: rgb(114, 195, 213);
+    border: 0px none rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
     border-radius: 0px;
-    color: rgb(114, 195, 213);
+    color: rgb(34, 34, 34);
     content: normal;
     pointer-events: auto;
     transform: none;

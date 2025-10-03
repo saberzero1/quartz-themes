@@ -71,27 +71,27 @@ body {
   }
 
   .callout {
-    --callout-color: 8, 109, 221;
+    --callout-color: 2, 122, 255;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
     border-radius: 0px;
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -101,30 +101,30 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: 0, 191, 188;
-    background-color: rgba(0, 191, 188, 0.1);
-    border-color: rgba(0, 191, 188, 0.25);
+    --callout-color: 83, 223, 221;
+    background-color: rgba(83, 223, 221, 0.1);
+    border-color: rgba(83, 223, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: rgb(0, 191, 188);
-    background-color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -134,30 +134,30 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: 233, 49, 71;
-    background-color: rgba(233, 49, 71, 0.1);
-    border-color: rgba(233, 49, 71, 0.25);
+    --callout-color: 251, 70, 76;
+    background-color: rgba(251, 70, 76, 0.1);
+    border-color: rgba(251, 70, 76, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: rgb(233, 49, 71);
-    background-color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -167,30 +167,30 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: 233, 49, 71;
-    background-color: rgba(233, 49, 71, 0.1);
-    border-color: rgba(233, 49, 71, 0.25);
+    --callout-color: 251, 70, 76;
+    background-color: rgba(251, 70, 76, 0.1);
+    border-color: rgba(251, 70, 76, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: rgb(233, 49, 71);
-    background-color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -200,30 +200,30 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: 120, 82, 238;
-    background-color: rgba(120, 82, 238, 0.1);
-    border-color: rgba(120, 82, 238, 0.25);
+    --callout-color: 168, 130, 255;
+    background-color: rgba(168, 130, 255, 0.1);
+    border-color: rgba(168, 130, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: rgb(120, 82, 238);
+    color: rgb(168, 130, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: rgb(120, 82, 238);
-    background-color: rgb(120, 82, 238);
+    color: rgb(168, 130, 255);
+    background-color: rgb(168, 130, 255);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(120, 82, 238);
+    color: rgb(168, 130, 255);
     font-weight: 400;
   }
 
@@ -233,30 +233,30 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: 233, 49, 71;
-    background-color: rgba(233, 49, 71, 0.1);
-    border-color: rgba(233, 49, 71, 0.25);
+    --callout-color: 251, 70, 76;
+    background-color: rgba(251, 70, 76, 0.1);
+    border-color: rgba(251, 70, 76, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: rgb(233, 49, 71);
-    background-color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
+    background-color: rgb(251, 70, 76);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 49, 71);
+    color: rgb(251, 70, 76);
     font-weight: 400;
   }
 
@@ -266,30 +266,30 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: 8, 109, 221;
-    background-color: rgba(8, 109, 221, 0.1);
-    border-color: rgba(8, 109, 221, 0.25);
+    --callout-color: 2, 122, 255;
+    background-color: rgba(2, 122, 255, 0.1);
+    border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: rgb(8, 109, 221);
-    background-color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -299,30 +299,30 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: 8, 109, 221;
-    background-color: rgba(8, 109, 221, 0.1);
-    border-color: rgba(8, 109, 221, 0.25);
+    --callout-color: 2, 122, 255;
+    background-color: rgba(2, 122, 255, 0.1);
+    border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: rgb(8, 109, 221);
-    background-color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -332,30 +332,30 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: 236, 117, 0;
-    background-color: rgba(236, 117, 0, 0.1);
-    border-color: rgba(236, 117, 0, 0.25);
+    --callout-color: 233, 151, 63;
+    background-color: rgba(233, 151, 63, 0.1);
+    border-color: rgba(233, 151, 63, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: rgb(236, 117, 0);
-    background-color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
@@ -371,7 +371,7 @@ body {
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
@@ -398,30 +398,30 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: 8, 185, 78;
-    background-color: rgba(8, 185, 78, 0.1);
-    border-color: rgba(8, 185, 78, 0.25);
+    --callout-color: 68, 207, 110;
+    background-color: rgba(68, 207, 110, 0.1);
+    border-color: rgba(68, 207, 110, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: rgb(8, 185, 78);
+    color: rgb(68, 207, 110);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: rgb(8, 185, 78);
-    background-color: rgb(8, 185, 78);
+    color: rgb(68, 207, 110);
+    background-color: rgb(68, 207, 110);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(8, 185, 78);
+    color: rgb(68, 207, 110);
     font-weight: 400;
   }
 
@@ -431,30 +431,30 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: 0, 191, 188;
-    background-color: rgba(0, 191, 188, 0.1);
-    border-color: rgba(0, 191, 188, 0.25);
+    --callout-color: 83, 223, 221;
+    background-color: rgba(83, 223, 221, 0.1);
+    border-color: rgba(83, 223, 221, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: rgb(0, 191, 188);
-    background-color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
+    background-color: rgb(83, 223, 221);
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(0, 191, 188);
+    color: rgb(83, 223, 221);
     font-weight: 400;
   }
 
@@ -464,30 +464,30 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: 8, 109, 221;
-    background-color: rgba(8, 109, 221, 0.1);
-    border-color: rgba(8, 109, 221, 0.25);
+    --callout-color: 2, 122, 255;
+    background-color: rgba(2, 122, 255, 0.1);
+    border-color: rgba(2, 122, 255, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: rgb(8, 109, 221);
-    background-color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
+    background-color: rgb(2, 122, 255);
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(8, 109, 221);
+    color: rgb(2, 122, 255);
     font-weight: 400;
   }
 
@@ -497,30 +497,30 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: 236, 117, 0;
-    background-color: rgba(236, 117, 0, 0.1);
-    border-color: rgba(236, 117, 0, 0.25);
+    --callout-color: 233, 151, 63;
+    background-color: rgba(233, 151, 63, 0.1);
+    border-color: rgba(233, 151, 63, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
     padding: 12px 12px 12px 24px;
   }
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: rgb(236, 117, 0);
-    background-color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
+    background-color: rgb(233, 151, 63);
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(236, 117, 0);
+    color: rgb(233, 151, 63);
     font-weight: 400;
   }
 
@@ -542,7 +542,7 @@ body {
     color: rgb(130, 130, 130);
     cursor: default;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     text-decoration: none solid rgb(130, 130, 130);
@@ -555,7 +555,7 @@ body {
     color: rgb(130, 130, 130);
     cursor: default;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     text-decoration: none solid rgb(130, 130, 130);
@@ -565,14 +565,14 @@ body {
     color: rgb(130, 130, 130);
     cursor: default;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     text-decoration: none solid rgb(130, 130, 130);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 0, 0, 0.067);
+    background-color: rgba(255, 255, 255, 0.067);
     color: rgb(39, 56, 75);
     cursor: default;
   }
@@ -599,8 +599,9 @@ body {
     display: block;
     font:
       24px / 0px "Skolar PE",
-      "iA Writer Quattro S",
-      Menlo,
+      "Gentium Plus",
+      Alegreya,
+      "Source Sans Pro",
       "Avenir Next",
       "Times New Roman";
     text-align: center;
@@ -609,7 +610,7 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
   }
 
@@ -653,7 +654,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -673,7 +674,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -693,7 +694,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -713,7 +714,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -733,7 +734,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 600;
     outline: rgb(39, 56, 75) none 0px;
@@ -753,7 +754,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 600;
     outline: rgb(39, 56, 75) none 0px;
@@ -773,7 +774,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -798,13 +799,13 @@ body {
     border-radius: 5px;
     color: rgb(39, 56, 75);
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
   }
 
   .search > .search-container > .search-space {
     background-color: rgb(254, 254, 254);
-    border: 1px solid rgb(189, 189, 189);
+    border: 1px solid rgb(85, 85, 85);
     border-radius: 12px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
@@ -818,7 +819,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -918,7 +919,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: rgb(189, 189, 189);
+    border-color: rgb(85, 85, 85);
   }
 
   .search > .search-container > .search-space > input {
@@ -975,7 +976,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -1004,16 +1005,16 @@ body {
   :root {
     --code-background: rgba(0, 0, 0, 0.04);
     --code-comment: #828282;
-    --code-function: #e0ac00;
-    --code-important: #ec7500;
-    --code-keyword: #d53984;
+    --code-function: #e0de71;
+    --code-important: #e9973f;
+    --code-keyword: #fa99cd;
     --code-normal: #27384b;
-    --code-operator: #e93147;
-    --code-property: #00bfbc;
+    --code-operator: #fb464c;
+    --code-property: #53dfdd;
     --code-punctuation: #828282;
-    --code-string: #08b94e;
-    --code-tag: #e93147;
-    --code-value: #7852ee;
+    --code-string: #44cf6e;
+    --code-tag: #fb464c;
+    --code-value: #a882ff;
   }
 
   a.external {
@@ -1022,7 +1023,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -1041,7 +1042,7 @@ body {
     cursor: pointer;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(193, 94, 80) none 0px;
@@ -1103,7 +1104,7 @@ body {
     background-color: rgb(254, 254, 254);
     border-inline-start: 5px solid rgb(200, 200, 200);
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-style: normal;
     margin-inline-end: 10px;
@@ -1137,7 +1138,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
@@ -1158,17 +1159,17 @@ body {
     background-color: rgb(254, 254, 254);
     color: rgb(39, 56, 75);
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-size: 24px;
   }
 
   div.graph {
-    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-line: #3f3f3f;
     --quartz-graph-node: #828282;
-    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-attachment: #e0de71;
     --quartz-graph-node-focused: #c15e50;
-    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-tag: #44cf6e;
     --quartz-graph-node-unresolved: #828282;
     --quartz-graph-text: #27384b;
   }
@@ -1227,7 +1228,7 @@ body {
     border-style: solid;
     border-top: 0.5px solid rgb(99, 99, 99);
     box-shadow: none;
-    margin: 48px 265.789px;
+    margin: 48px 280.336px 48px 280.328px;
   }
 
   input[type="checkbox"] {
@@ -1256,7 +1257,7 @@ body {
     inset-inline-start: 0px;
     position: relative;
     top: 0px;
-    width: 1131px;
+    width: 1156px;
   }
 
   li.depth-0 {
@@ -1264,7 +1265,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1274,7 +1275,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1284,7 +1285,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1294,7 +1295,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1304,7 +1305,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1314,7 +1315,7 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1334,7 +1335,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next",
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
       "Times New Roman";
     font-weight: 400;
     outline: rgb(39, 56, 75) none 0px;
