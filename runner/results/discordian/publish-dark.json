@@ -1276,6 +1276,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(46, 48, 53)",
+    "border-color": "rgb(33, 35, 38)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(138, 135, 197)",
     "font-family": "\"Catamaran SSm\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
@@ -1334,6 +1338,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(46, 48, 53)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(33, 35, 38)",
     "border": "1px solid rgb(33, 35, 38)",
@@ -1341,6 +1348,11 @@
     "border-radius": "4px",
     "color": "rgb(141, 145, 150)",
     "font-family": "Catamaran, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(43, 45, 49)",
+    "border-color": "rgb(33, 35, 38)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(138, 92, 245, 0.8)",
@@ -1420,6 +1432,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(208, 209, 210)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(43, 45, 49)",
+    "border-color": "rgb(33, 35, 38)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(138, 92, 245, 0.8)",

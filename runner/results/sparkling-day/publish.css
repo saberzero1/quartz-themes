@@ -1617,9 +1617,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1642,9 +1642,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1665,9 +1665,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1686,9 +1686,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1705,20 +1705,24 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 0px none rgb(18, 16, 25);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
+}
+body .popover.hover-popover {
+  background-color: rgb(252, 252, 252);
+  border-color: rgb(224, 224, 224);
 }
 body .published-container .markdown-rendered h1 {
   color: rgb(55, 91, 169);
@@ -1860,6 +1864,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(252, 252, 252);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(224, 224, 224);
@@ -1878,6 +1888,11 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(224, 224, 224);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0.067);
@@ -2004,6 +2019,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(18, 16, 25);
+}
+body div.side-body-left-column {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(224, 224, 224);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0.067);

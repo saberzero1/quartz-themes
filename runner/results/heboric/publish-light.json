@@ -1226,6 +1226,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(254, 254, 254)",
+    "border-color": "rgb(224, 224, 224)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(0, 0, 0)",
     "font-family": "\"SF Pro\", ui-sans-serif, sans-serif",
@@ -1284,6 +1288,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(254, 254, 254)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(224, 224, 224)",
@@ -1291,6 +1298,11 @@
     "border-radius": "3px",
     "color": "rgb(85, 85, 85)",
     "font-family": "\"??\", \"??\", \"New York\", Georgia, ui-serif, serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(253, 249, 247)",
+    "border-color": "rgb(224, 224, 224)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(0, 0, 0, 0.067)",
@@ -1368,6 +1380,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(85, 85, 85)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(85, 85, 85)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(253, 249, 247)",
+    "border-color": "rgb(224, 224, 224)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(0, 0, 0, 0.067)",

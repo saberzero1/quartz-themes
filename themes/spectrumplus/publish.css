@@ -1530,6 +1530,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: rgb(36, 36, 36);
+  border-color: rgb(54, 54, 54);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
@@ -1593,6 +1597,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(36, 36, 36);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
   border: 1px solid rgb(54, 54, 54);
@@ -1600,6 +1610,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 5px;
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
+}
+body .site-body-right-column {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(54, 54, 54);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(255, 255, 255, 0.067);
@@ -1693,6 +1708,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(201, 201, 201);
+}
+body div.side-body-left-column {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(54, 54, 54);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgba(255, 255, 255, 0.067);

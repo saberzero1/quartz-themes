@@ -1980,6 +1980,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 500;
 }
+body .popover.hover-popover {
+  background-color: rgb(34, 33, 44);
+  border-color: rgb(52, 58, 75);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(255, 184, 107);
   font-family:
@@ -2070,6 +2074,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(34, 33, 44);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(30, 31, 36);
   border: 1px solid rgb(66, 71, 80);
@@ -2090,6 +2100,11 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: rgb(21, 19, 31);
+  border-color: rgb(52, 58, 75);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(255, 255, 255, 0.067);
@@ -2229,6 +2244,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(114, 195, 213);
+}
+body div.side-body-left-column {
+  background-color: rgb(21, 19, 31);
+  border-color: rgb(52, 58, 75);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgba(255, 255, 255, 0.067);

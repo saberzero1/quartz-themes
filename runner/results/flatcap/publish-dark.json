@@ -1271,6 +1271,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(18, 20, 24)",
+    "border-color": "rgb(48, 53, 64)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(203, 206, 213)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -1329,6 +1333,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(18, 20, 24)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(25, 28, 34)",
     "border": "1px solid rgb(48, 53, 64)",
@@ -1336,6 +1343,11 @@
     "border-radius": "5px",
     "color": "rgb(203, 206, 213)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(18, 20, 24)",
+    "border-color": "rgb(48, 53, 64)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.05)",
@@ -1415,6 +1427,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(203, 206, 213)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(18, 20, 24)",
+    "border-color": "rgb(48, 53, 64)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.05)",

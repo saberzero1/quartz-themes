@@ -1420,6 +1420,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "color(srgb 0.007425 0.0199875 0.037575)",
+    "border-color": "color(srgb 0.111375 0.299813 0.563625)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "color(srgb 0.6594 0.7599 0.9006)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
@@ -1480,6 +1484,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "color(srgb 0.007425 0.0199875 0.037575)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "color(srgb 0 0 0 / 0.06)",
     "border": "0px none color(srgb 0.6594 0.7599 0.9006)",
@@ -1487,6 +1494,11 @@
     "border-radius": "4px",
     "color": "color(srgb 0.6594 0.7599 0.9006)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  },
+  ".site-body-right-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "color(srgb 0.111375 0.299813 0.563625)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(38, 102, 192)",
@@ -1566,6 +1578,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "color(srgb 0.01485 0.039975 0.07515)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "color(srgb 0.111375 0.299813 0.563625)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(38, 102, 192)",

@@ -1641,6 +1641,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "oklch(0.13 0 0)",
+    "border-color": "oklch(0.3 0 0)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "oklch(0.975 0.03 202.51)",
     "font-family": "Manrope, \"Inter 4.1\", \"DM Sans\"",
@@ -1699,6 +1703,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "oklch(0.13 0 0)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "oklch(0.15 0 0)",
     "border": "0px solid oklch(0.3 0 0)",
@@ -1706,6 +1713,11 @@
     "border-radius": "3px",
     "color": "oklch(0.98 0 0)",
     "font-family": "\"??\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"??\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope, \"Inter 4.1\", \"DM Sans\", \"Inter 4.1\", Manrope"
+  },
+  ".site-body-right-column": {
+    "background-color": "oklch(0.19 0 0)",
+    "border-color": "oklch(0.3 0 0)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1783,6 +1795,11 @@
   "div.search-results .suggestion-item": { "border-color": "oklch(0.98 0 0)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "oklch(0.98 0 0)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "oklch(0.19 0 0)",
+    "border-color": "oklch(0.3 0 0)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

@@ -1697,6 +1697,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "700"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(26, 30, 36)",
+    "border-color": "rgb(11, 15, 19)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(193, 67, 67)",
     "font-family": "\"Calisto MT\", \"Palatino Black\", \"Book Antiqua\", Georgia, \"Suez One\", serif",
@@ -1755,6 +1759,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(26, 30, 36)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgba(0, 0, 0, 0.3)",
     "border": "1px solid rgb(47, 59, 77)",
@@ -1762,6 +1769,11 @@
     "border-radius": "0px",
     "color": "rgb(188, 202, 216)",
     "font-family": "\"??\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Microsoft YaHei Light\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(11, 15, 19)",
+    "border-color": "rgb(11, 15, 19)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(212, 47, 47, 0.4)",
@@ -1841,6 +1853,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(188, 202, 216)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(11, 15, 19)",
+    "border-color": "rgb(11, 15, 19)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(212, 47, 47, 0.4)",
