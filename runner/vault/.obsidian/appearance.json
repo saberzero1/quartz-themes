@@ -1,4 +1,7 @@
 {
   "theme": "obsidian",
-  "cssTheme": ""
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "no-animations"
+  ]
 }
