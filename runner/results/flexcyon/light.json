@@ -1,6 +1,6 @@
 {
   "&[data-slug]": {
-    "background": "rgb(250, 247, 239)",
+    "background": "color(srgb 0.968337 0.956082 0.922251)",
     "color": "rgb(8, 8, 8)"
   },
   ".callout": {
@@ -27,9 +27,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "59, 155, 161",
-    "background-color": "rgba(59, 155, 161, 0.1)",
-    "border-color": "rgba(59, 155, 161, 0.25)",
+    "--callout-color": "rgb(59,155,161)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -38,16 +38,16 @@
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(59, 155, 161)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
-    "color": "rgb(59, 155, 161)",
-    "background-color": "rgb(59, 155, 161)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(59, 155, 161)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"abstract\"] > .callout-content": {
@@ -55,9 +55,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "235, 83, 87",
-    "background-color": "rgba(235, 83, 87, 0.1)",
-    "border-color": "rgba(235, 83, 87, 0.25)",
+    "--callout-color": "rgb(235,83,37)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -66,16 +66,16 @@
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
-    "color": "rgb(235, 83, 87)",
-    "background-color": "rgb(235, 83, 87)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"bug\"] > .callout-content": {
@@ -83,9 +83,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "235, 83, 87",
-    "background-color": "rgba(235, 83, 87, 0.1)",
-    "border-color": "rgba(235, 83, 87, 0.25)",
+    "--callout-color": "rgb(235,83,37)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -94,16 +94,16 @@
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
-    "color": "rgb(235, 83, 87)",
-    "background-color": "rgb(235, 83, 87)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"danger\"] > .callout-content": {
@@ -111,9 +111,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "111, 73, 174",
-    "background-color": "rgba(111, 73, 174, 0.1)",
-    "border-color": "rgba(111, 73, 174, 0.25)",
+    "--callout-color": "rgb(111,73,174)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -122,16 +122,16 @@
   },
   ".callout[data-callout=\"example\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(111, 73, 174)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
-    "color": "rgb(111, 73, 174)",
-    "background-color": "rgb(111, 73, 174)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(111, 73, 174)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"example\"] > .callout-content": {
@@ -139,9 +139,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "235, 83, 87",
-    "background-color": "rgba(235, 83, 87, 0.1)",
-    "border-color": "rgba(235, 83, 87, 0.25)",
+    "--callout-color": "rgb(235,83,37)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -150,16 +150,16 @@
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
-    "color": "rgb(235, 83, 87)",
-    "background-color": "rgb(235, 83, 87)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(235, 83, 87)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"failure\"] > .callout-content": {
@@ -223,9 +223,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "237, 129, 38",
-    "background-color": "rgba(237, 129, 38, 0.1)",
-    "border-color": "rgba(237, 129, 38, 0.25)",
+    "--callout-color": "rgb(237,129,38)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -234,16 +234,16 @@
   },
   ".callout[data-callout=\"question\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(237, 129, 38)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
-    "color": "rgb(237, 129, 38)",
-    "background-color": "rgb(237, 129, 38)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(237, 129, 38)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"question\"] > .callout-content": {
@@ -279,9 +279,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "104, 149, 35",
-    "background-color": "rgba(104, 149, 35, 0.1)",
-    "border-color": "rgba(104, 149, 35, 0.25)",
+    "--callout-color": "rgb(104,149,35)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -290,16 +290,16 @@
   },
   ".callout[data-callout=\"success\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(104, 149, 35)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
-    "color": "rgb(104, 149, 35)",
-    "background-color": "rgb(104, 149, 35)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(104, 149, 35)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"success\"] > .callout-content": {
@@ -307,9 +307,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "59, 155, 161",
-    "background-color": "rgba(59, 155, 161, 0.1)",
-    "border-color": "rgba(59, 155, 161, 0.25)",
+    "--callout-color": "rgb(59,155,161)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -318,16 +318,16 @@
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(59, 155, 161)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
-    "color": "rgb(59, 155, 161)",
-    "background-color": "rgb(59, 155, 161)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(59, 155, 161)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"tip\"] > .callout-content": {
@@ -363,9 +363,9 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "237, 129, 38",
-    "background-color": "rgba(237, 129, 38, 0.1)",
-    "border-color": "rgba(237, 129, 38, 0.25)",
+    "--callout-color": "rgb(237,129,38)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "border-style": "solid",
     "border-width": "0px",
@@ -374,16 +374,16 @@
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(237, 129, 38)",
+    "color": "rgb(8, 8, 8)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
-    "color": "rgb(237, 129, 38)",
-    "background-color": "rgb(237, 129, 38)"
+    "color": "rgb(8, 8, 8)",
+    "background-color": "rgb(8, 8, 8)"
   },
   ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(237, 129, 38)",
+    "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"warning\"] > .callout-content": {
@@ -394,7 +394,9 @@
     "color": "rgba(111, 118, 133, 0.6)",
     "text-decoration": "none solid rgba(111, 118, 133, 0.6)"
   },
-  ".explorer .explorer-content": { "background-color": "rgb(250, 247, 239)" },
+  ".explorer .explorer-content": {
+    "background-color": "color(srgb 0.968337 0.956082 0.922251)"
+  },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
     "color": "color(srgb 0.19229 0.196573 0.205749 / 0.8)",
     "cursor": "default",
@@ -444,17 +446,17 @@
   },
   ".page > #quartz-body": { "background-color": "rgb(250, 247, 239)" },
   ".page > #quartz-body .left.sidebar": {
-    "background-color": "rgb(250, 247, 239)",
+    "background-color": "color(srgb 0.968337 0.956082 0.922251)",
     "border-color": "color(srgb 0.899384 0.893078 0.867283)",
     "border-right-width": "1px"
   },
   ".page > #quartz-body .right.sidebar": {
-    "background-color": "rgb(250, 247, 239)",
+    "background-color": "color(srgb 0.968337 0.956082 0.922251)",
     "border-color": "color(srgb 0.899384 0.893078 0.867283)",
     "border-left-width": "1px"
   },
   ".page > #quartz-body .sidebar.left:has(.explorer)": {
-    "background-color": "rgb(250, 247, 239)"
+    "background-color": "color(srgb 0.968337 0.956082 0.922251)"
   },
   ".page > #quartz-body div.center": {
     "max-width": "calc(100% - 40px)",
@@ -623,7 +625,7 @@
     "color": "rgb(8, 8, 8)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgb(250, 247, 239)",
+    "background-color": "rgba(0, 0, 0, 0)",
     "color": "rgb(8, 8, 8)",
     "font-weight": "400"
   },
@@ -633,17 +635,17 @@
   ".search > .search-container > .search-space > input": {
     "background-color": "rgb(250, 247, 239)",
     "border": "unset",
-    "border-bottom": "1px solid rgb(250, 247, 239)",
+    "border-bottom": "1px solid color(srgb 0.968337 0.956082 0.922251)",
     "border-radius": "0px",
     "box-shadow": "none"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
-    "background-color": "rgb(250, 247, 239)",
+    "background-color": "rgba(0, 0, 0, 0)",
     "border-radius": "2px",
     "color": "rgb(8, 8, 8)"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgb(250, 247, 239)",
+    "background-color": "rgba(0, 0, 0, 0)",
     "border-radius": "2px",
     "color": "rgb(8, 8, 8)"
   },
@@ -673,18 +675,18 @@
     "box-shadow": "none"
   },
   ":root": {
-    "--code-background": "color-mix(\n    in hsl,\n    #faf7ef 70%,\n    #edebe5 30%\n  )",
-    "--code-comment": "#6f768599",
-    "--code-function": "#e8c62a",
-    "--code-important": "#eb5325",
-    "--code-keyword": "#6f49ae",
-    "--code-normal": "#3b9ba1",
-    "--code-operator": "#ed8126",
-    "--code-property": "color-mix(\n    in hsl,\n    #6f768599,\n    #080808\n  )",
-    "--code-punctuation": "#6f49ae",
+    "--code-background": "color-mix(\n    in hsl,\n    #FAF7EF 70%,\n    #EDEBE5 30%\n  )",
+    "--code-comment": "#6F768599",
+    "--code-function": "#E8C62A",
+    "--code-important": "#EB5325",
+    "--code-keyword": "#3B9BA1",
+    "--code-normal": "#080808",
+    "--code-operator": "#5c9fe4",
+    "--code-property": "#3B9BA1",
+    "--code-punctuation": "rgba(rgb(235,83,37), 0.55)",
     "--code-string": "#689523",
     "--code-tag": "#797876",
-    "--code-value": "#6f49ae"
+    "--code-value": "#E8C62A"
   },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -755,7 +757,7 @@
     "border": "0px solid color(srgb 0.899384 0.893078 0.867283)",
     "border-color": "color(srgb 0.899384 0.893078 0.867283)",
     "border-radius": "2px",
-    "color": "rgb(59, 155, 161)",
+    "color": "rgb(8, 8, 8)",
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
@@ -777,7 +779,7 @@
     "user-select": "text"
   },
   "div#quartz-body": {
-    "--quartz-icon-color": "color-mix(\n    in hsl,\n    #6f768599,\n    #080808\n  )"
+    "--quartz-icon-color": "color-mix(\n    in hsl,\n    #6F768599,\n    #080808\n  )"
   },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
@@ -786,12 +788,12 @@
     "font-size": "16px"
   },
   "div.graph": {
-    "--quartz-graph-line": "#dddcd6",
-    "--quartz-graph-node": "color-mix(\n    in hsl,\n    #6f768599,\n    #080808\n  )",
-    "--quartz-graph-node-attachment": "#e8c62a",
-    "--quartz-graph-node-focused": "#5770b9",
-    "--quartz-graph-node-tag": "#6f49ae",
-    "--quartz-graph-node-unresolved": "#eb5325",
+    "--quartz-graph-line": "#DDDCD6",
+    "--quartz-graph-node": "color-mix(\n    in hsl,\n    #6F768599,\n    #080808\n  )",
+    "--quartz-graph-node-attachment": "#E8C62A",
+    "--quartz-graph-node-focused": "#5770B9",
+    "--quartz-graph-node-tag": "#6F49AE",
+    "--quartz-graph-node-unresolved": "#EB5325",
     "--quartz-graph-text": "#080808"
   },
   "h1": {
@@ -915,8 +917,8 @@
   },
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(59, 155, 161)",
-    "border-color": "rgb(59, 155, 161)",
+    "border": "0px none rgb(8, 8, 8)",
+    "border-color": "rgb(8, 8, 8)",
     "border-radius": "2px",
     "overflow-x": "visible",
     "padding": "0px",

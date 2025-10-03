@@ -2688,7 +2688,8 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   /* Complete states */
   & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
   & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
-  & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"] {
+  & .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"],
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked) {
     text-decoration: var(--checklist-done-decoration);
     color: var(--checklist-done-color);
   }
@@ -2703,7 +2704,8 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   & li[data-task=">"] > p > input:checked,
   & input.task-list-item-checkbox[data-task="-"]:checked,
   & li[data-task="-"] > input:checked,
-  & li[data-task="-"] > p > input:checked {
+  & li[data-task="-"] > p > input:checked,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked) {
     background-image: none;
     border-color: var(--theme-color-controlContentArea);
     position: relative;
@@ -2722,7 +2724,8 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   & li[data-task="-"] > p > input:checked:after,
   & input[data-task=">"]:checked:after,
   & li[data-task=">"] > input:checked:after,
-  & li[data-task=">"] > p > input:checked:after {
+  & li[data-task=">"] > p > input:checked:after,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked):after {
     content: "";
     top: -1px;
     left: -1px;
@@ -2742,7 +2745,8 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   }
   & input[data-task="-"]:checked:after,
   & li[data-task="-"] > input:checked:after,
-  & li[data-task="-"] > p > input:checked:after {
+  & li[data-task="-"] > p > input:checked:after,
+  .bases-tbody input[type=checkbox][data-indeterminate="true"]:not(:checked):after {
     -webkit-mask-position: 50% 50%;
     -webkit-mask-size: 100%;
     -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="%23000000"><polyline points="4,10.5 20,10.5 20,13.5 4,13.5"></polyline></g></g></svg>');
@@ -2776,12 +2780,12 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 
 /* Mobile workspace */
 .is-mobile .workspace > .mod-root {
-  padding: var(--safe-area-inset-top) calc(var(--theme-spacing-mobileHorizontalSpacing) + var(--safe-area-inset-right)) 0.5rem
+  padding: var(--safe-area-inset-top) calc(var(--theme-spacing-mobileHorizontalSpacing) + var(--safe-area-inset-right)) 0
     calc(var(--theme-spacing-mobileHorizontalSpacing) + var(--safe-area-inset-left));
   background: transparent;
 }
 
-.is-mobile .workspace-split.mod-root .workspace-tabs {
+.is-mobile .workspace-split.mod-root .workspace-tabs.mod-top {
   padding: 0;
 }
 .is-mobile .view-actions {
@@ -2843,6 +2847,7 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 }
 .mobile-navbar {
   background-color: transparent;
+  padding-top: 0;
 }
 
 /* #region   Drawers */
@@ -3119,7 +3124,7 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   .modal.mod-sidebar-layout
   .modal-setting-back-button {
   top: 0.5rem;
-  left: 1.5rem;
+  left: 2.5rem;
   padding: 0;
 }
 .is-phone.theme-setting-mobileCardsUI .community-modal-search-summary {
@@ -3230,15 +3235,24 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
 }
 /* #endregion */
 /* #region   Mobile tab switcher */
-.mobile-tab-switcher-scroll {
-  background: var(--theme-gradient-DarkenedTopToBottom);
-}
-.mobile-tab-switcher-menubar {
-  border-top: 0;
-  background: var(--theme-color-settingsBg);
-  box-shadow: var(--theme-shadow-indent);
+.mobile-tab-switcher {
+  .mobile-tab-switcher-scroll {
+    background: var(--theme-gradient-DarkenedTopToBottom);
+  }
+  .mobile-tab-switcher-menubar {
+    border-top: 0;
+    background: var(--theme-color-settingsBg);
+    box-shadow: var(--theme-shadow-indent);
+    padding-top: 0;
 
-  z-index: 1;
+    z-index: 1;
+  }
+
+  .mobile-tab-group-container {
+    column-gap: 1em;
+    row-gap: 0.75em;
+  }
+
 }
 .mobile-tab .mobile-tab-preview {
   position: relative;
@@ -3305,14 +3319,19 @@ body.mod-macos {
   }
 }
 
-/* #region     "Native frame" style (my preferred) */
+/* #region     "Native frame" style */
 body.mod-macos {
   &:not(.is-frameless) {
-    &:not(.is-tablet) {
+    &:not(.is-mobile) {
       .sidebar-toggle-button.mod-left,
       .sidebar-toggle-button.mod-right {
         padding: 0;
         position: absolute;
+      }
+      .mod-sidedock {
+        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
+          margin-inline-end: 2.5em;
+        }
       }
 
       &:not(.is-fullscreen) {
@@ -3365,11 +3384,16 @@ body.mod-macos {
   &.is-frameless:not(.is-hidden-frameless):not(.is-popout-window) {
     --titlebar-height: 40px;
 
-    &:not(.is-tablet) {
+    &:not(.is-mobile) {
       .sidebar-toggle-button.mod-left,
       .sidebar-toggle-button.mod-right {
         padding: 0;
         position: absolute;
+      }
+      .mod-sidedock {
+        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
+          margin-inline-end: 2.5em;
+        }
       }
 
       &:not(.is-fullscreen) {
@@ -3899,7 +3923,7 @@ body.mod-windows {
   }
   .workspace-leaf-content {
     .view-content {
-      padding: 0.5rem 1rem 2rem 1rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
     }
   }
 }
@@ -6288,6 +6312,7 @@ body {
 
 .bases-view {
   scrollbar-gutter: auto;
+  scrollbar-color: var(--theme-color-baseTransparent25) var(--bases-table-header-background);
 }
 
 .block-language-base {
@@ -6300,11 +6325,6 @@ body {
   margin: 0;
 }
 
-.workspace-leaf-content[data-type="bases"] {
-  .view-content {
-    background: var(--bases-table-header-background);
-  }
-}
 .markdown-source-view.mod-cm6 .cm-content > .bases-embed[contenteditable=false] {
   contain: layout !important;
 }
@@ -6316,6 +6336,7 @@ body {
 }
 .bases-thead {
   box-shadow: var(--theme-shadow-indent);
+  border-radius: var(--tab-radius-active) var(--tab-radius-active) 0 0;
 
   .bases-td {
     box-shadow: none;
@@ -6341,7 +6362,8 @@ body {
     border-radius: var(--radius-s);
     border: none;
     background-color: var(--background-input);
-    color: var(--text-normal);  }
+    color: var(--text-normal);
+  }
 }
 
 @media (hover: hover) {
@@ -6354,6 +6376,19 @@ body {
     }
 
     background-color: var(--bases-table-header-background-hover);
+  }
+}
+
+/* Checkboxes styled like markdown */
+.bases-tbody .metadata-input-checkbox {
+  border-radius: 0.33em;
+  border-radius: var(--checkbox-radius);
+  border-color: var(--theme-color-controlContentArea);
+}
+@media (hover: hover) {
+  .bases-tbody .metadata-input-checkbox:hover {
+    border-color: var(--theme-color-controlContentArea);
+    background-color: var(--theme-color-controlContentAreaHover);
   }
 }
 
@@ -6456,7 +6491,6 @@ body {
       }
     }
   }
-
 }
 /* #endregion */
 /* #region     Table View */
@@ -6466,6 +6500,10 @@ body {
 
 /* #endregion */
 /* #region     Card View */
+.bases-cards-container {
+  padding-inline-start: var(--bases-header-padding-start);
+  padding-inline-end: var(--bases-header-padding-end);
+}
 .bases-cards-item {
   color: var(--theme-color-card);
   background-color: var(--theme-color-cardBg);
@@ -6520,8 +6558,6 @@ body {
 /* #endregion */
 /* #region     Bases in a sidebar panel */
 .mod-sidedock .workspace-leaf-content[data-type="bases"] {
-  --bases-table-header-background: transparent;
-
   .bases-view {
     background-color: transparent;
   }
@@ -6534,6 +6570,9 @@ body {
 }
 /* #endregion */
 /* #region     Embedded bases */
+.markdown-source-view.mod-cm6 .cm-content > .bases-embed, .markdown-source-view.mod-cm6 .cm-content > .cm-lang-base {
+  --bases-header-padding-end: inherit;
+}
 .bases-embed {
   padding: 0.5em 0 0.5em 0;
 
@@ -7763,7 +7802,7 @@ body.theme-setting-overrideExcalidraw {
   }
 
   .excalidraw-view {
-    & .excalidraw {
+    .excalidraw {
       .FixedSideContainer_side_top {
         top: var(--theme-length-controlSetSpacing) !important;
         right: var(--theme-length-controlSetSpacing) !important;
@@ -7792,14 +7831,21 @@ body.theme-setting-overrideExcalidraw {
       }
 
       /* Layout structures inside control sets */
-      & .Stack,
-      & .App-toolbar-content {
+      .Stack,
+      .App-toolbar-content {
         gap: 0.5em;
         padding: 0;
       }
-      /* I think these are supposed to be spacers, but I don't think we need them. */
-      & .App-toolbar-content > .ToolIcon__icon:empty {
-        display: none;
+      .App-toolbar-content {
+        /* I think these are supposed to be spacers, but I don't think we need them. */
+        > .ToolIcon__icon:empty {
+          display: none;
+        }
+
+        /* Container div for undeo/redo, which for somer eason has no class */
+        > div:last-child {
+          display: flex;
+        }
       }
 
       /* Menus */
@@ -7831,6 +7877,44 @@ body.theme-setting-overrideExcalidraw {
           font-family: var(--font-interface);
           padding: 2px 6px;
           border-radius: var(--radius-s);
+        }
+      }
+
+      .popover {
+        margin: 0 1rem;
+      }
+      .context-menu {
+        background-color: var(--theme-color-menuBg);
+        border: 0;
+        box-shadow: var(--shadow-l);
+        border-radius: var(--radius-l);
+        padding: 0.5em;
+        margin: 0;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+
+        & button {
+          border: none;
+          border-color: var(--nav-item-color);
+          color: var(--nav-item-color);
+          background-color: var(--nav-item-background);
+          box-shadow: none;
+        }
+
+        @media (hover: hover) {
+          & button:hover {
+            border-color: var(--nav-item-color-hover);
+            color: var(--nav-item-color-hover);
+            background-color: var(--nav-item-background-hover) !important;
+            font-weight: var(--nav-item-weight-hover);
+            --icon-fill-color: var(--nav-item-color-hover);
+          }
+        }
+
+        hr {
+          margin: 0.5em 0;
+          border-top: var(--border-width) solid var(--background-modifier-border);
         }
       }
     }
