@@ -1213,6 +1213,16 @@
     "background-color": "rgb(252, 254, 243)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(252, 254, 243)",
+    "--sidebar-left-background": "rgb(75, 33, 57)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(75, 33, 57)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(252, 254, 243)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(164, 135, 131)",
     "font-family": "Georgia, serif",

@@ -1259,6 +1259,16 @@
     "background-color": "rgb(24, 29, 39)",
     "border-color": "rgb(36, 43, 58)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(24, 29, 39)",
+    "--sidebar-left-background": "rgb(24, 29, 39)",
+    "--sidebar-left-border-color": "rgb(36, 43, 58)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(24, 29, 39)",
+    "--sidebar-right-border-color": "rgb(36, 43, 58)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(24, 29, 39)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(190, 183, 223)",
     "font-family": "\"Bai Jamjuree\"",

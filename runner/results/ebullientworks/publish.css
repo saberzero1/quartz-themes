@@ -1903,6 +1903,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(248, 248, 248), rgb(30, 30, 30));
   border-color: light-dark(rgb(184, 184, 184), rgb(7, 7, 7));
 }
+body .published-container {
+  --background-primary: rgb(30, 30, 30);
+  --sidebar-left-background: rgb(47, 47, 47);
+  --sidebar-left-border-color: rgb(7, 7, 7);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(47, 47, 47);
+  --sidebar-right-border-color: rgb(7, 7, 7);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(248, 248, 248), rgb(30, 30, 30));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(196, 154, 82), rgb(224, 177, 94));
   font-family: "Architects Daughter";

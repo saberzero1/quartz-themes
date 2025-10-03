@@ -1219,6 +1219,16 @@
     "background-color": "rgb(0, 0, 0)",
     "border-color": "rgb(48, 104, 80)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(0, 0, 0)",
+    "--sidebar-left-background": "rgb(0, 0, 0)",
+    "--sidebar-left-border-color": "rgb(48, 104, 80)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(0, 0, 0)",
+    "--sidebar-right-border-color": "rgb(48, 104, 80)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(0, 0, 0)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(68, 207, 110)",
     "font-family": "\"??\", \"??\", Courier, monospace",

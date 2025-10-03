@@ -1256,6 +1256,16 @@
     "background-color": "rgb(255, 255, 255)",
     "border-color": "rgb(250, 250, 250)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(255, 255, 255)",
+    "--sidebar-left-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-color": "rgb(250, 250, 250)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-color": "rgb(250, 250, 250)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(255, 255, 255)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(153, 109, 247)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", monospace",

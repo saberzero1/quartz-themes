@@ -1204,49 +1204,49 @@
     "cursor": "default"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
-    "font-weight": "425"
+    "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
-    "font-weight": "425"
+    "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
-    "font-weight": "425"
+    "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self": {
-    "font-weight": "425"
+    "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self": {
-    "font-weight": "425"
+    "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-children": {
-    "border-inline-start": "1px solid rgb(102, 102, 102)",
-    "margin-inline-start": "12px",
-    "padding-inline-start": "4px"
+    "border-inline-start": "0px none rgb(77, 77, 77)",
+    "margin-inline-start": "0px",
+    "padding-inline-start": "32px"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
@@ -1254,6 +1254,16 @@
   ".popover.hover-popover": {
     "background-color": "rgb(255, 255, 255)",
     "border-color": "rgba(0, 0, 0, 0)"
+  },
+  ".published-container": {
+    "--background-primary": "rgb(255, 255, 255)",
+    "--sidebar-left-background": "rgb(255, 255, 255)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(255, 255, 255)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(255, 255, 255)"
   },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(77, 77, 77)",

@@ -1263,6 +1263,16 @@
     "background-color": "rgb(22, 29, 44)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(22, 29, 44)",
+    "--sidebar-left-background": "rgb(33, 42, 61)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(33, 42, 61)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(22, 29, 44)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(250, 247, 245)",
     "font-family": "\"??\", \"??\", \"Franklin Gothic Book\", Rubik, \"Helvetica Neue\", ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",

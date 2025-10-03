@@ -1514,6 +1514,16 @@ body .popover.hover-popover {
   background-color: rgb(46, 48, 53);
   border-color: rgb(33, 35, 38);
 }
+body .published-container {
+  --background-primary: rgb(46, 48, 53);
+  --sidebar-left-background: rgb(43, 45, 49);
+  --sidebar-left-border-color: rgb(33, 35, 38);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(43, 45, 49);
+  --sidebar-right-border-color: rgb(33, 35, 38);
+  --sidebar-right-border-width: 1px;
+  background-color: rgb(46, 48, 53);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(138, 135, 197);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;

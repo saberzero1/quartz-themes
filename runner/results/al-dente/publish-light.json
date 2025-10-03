@@ -1245,6 +1245,16 @@
     "background-color": "rgb(246, 246, 244)",
     "border-color": "rgb(224, 224, 224)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(246, 246, 244)",
+    "--sidebar-left-background": "rgb(246, 246, 244)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(246, 246, 244)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(246, 246, 244)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(63, 62, 60)",
     "font-family": "moranga, \"matchbook regular\", bitter, prompt, \"nunito sans\", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Microsoft YaHei Light\", sans-serif",

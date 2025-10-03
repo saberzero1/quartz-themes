@@ -1621,9 +1621,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1646,9 +1646,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1669,9 +1669,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1690,9 +1690,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -1709,17 +1709,17 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 0px none rgb(255, 255, 255);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
@@ -1727,6 +1727,16 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
 body .popover.hover-popover {
   background-color: light-dark(rgb(255, 255, 255), rgb(26, 26, 26));
   border-color: light-dark(rgb(207, 207, 207), rgb(68, 68, 68));
+}
+body .published-container {
+  --background-primary: rgb(26, 26, 26);
+  --sidebar-left-background: rgb(68, 68, 68);
+  --sidebar-left-border-color: rgb(68, 68, 68);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(68, 68, 68);
+  --sidebar-right-border-color: rgb(68, 68, 68);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(255, 255, 255), rgb(26, 26, 26));
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(26, 26, 26), rgb(255, 255, 255));

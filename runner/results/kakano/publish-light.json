@@ -1426,6 +1426,16 @@
     "background-color": "rgb(255, 255, 255)",
     "border-color": "color(srgb 0.361375 0.549813 0.813625)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(255, 255, 255)",
+    "--sidebar-left-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-color": "color(srgb 0.361375 0.549813 0.813625)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-color": "color(srgb 0.361375 0.549813 0.813625)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(255, 255, 255)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "color(srgb 0.01485 0.039975 0.07515)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",

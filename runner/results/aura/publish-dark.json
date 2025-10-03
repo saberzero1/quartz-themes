@@ -1255,6 +1255,16 @@
     "background-color": "rgb(25, 25, 25)",
     "border-color": "rgb(50, 50, 50)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(25, 25, 25)",
+    "--sidebar-left-background": "rgb(20, 20, 20)",
+    "--sidebar-left-border-color": "rgb(50, 50, 50)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(20, 20, 20)",
+    "--sidebar-right-border-color": "rgb(50, 50, 50)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(25, 25, 25)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(208, 66, 85)",
     "font-family": "Rubik",

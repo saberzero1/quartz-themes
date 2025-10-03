@@ -1287,6 +1287,16 @@
     "background-color": "rgb(21, 30, 45)",
     "border-color": "rgb(161, 161, 161)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(21, 30, 45)",
+    "--sidebar-left-background": "rgb(21, 30, 45)",
+    "--sidebar-left-border-color": "rgb(161, 161, 161)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(21, 30, 45)",
+    "--sidebar-right-border-color": "rgb(161, 161, 161)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(21, 30, 45)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(246, 168, 42)",
     "font-family": "\"Skolar PE\", \"Gentium Plus\", Alegreya, \"Source Sans Pro\", \"Avenir Next\", \"Times New Roman\"",

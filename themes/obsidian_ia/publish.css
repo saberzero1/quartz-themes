@@ -1465,6 +1465,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(247, 247, 247), rgb(25, 26, 25));
   border-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
 }
+body .published-container {
+  --background-primary: rgb(25, 26, 25);
+  --sidebar-left-background: rgb(20, 21, 20);
+  --sidebar-left-border-color: rgb(54, 54, 54);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(20, 21, 20);
+  --sidebar-right-border-color: rgb(54, 54, 54);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(247, 247, 247), rgb(25, 26, 25));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(25, 25, 25), rgb(203, 204, 204));
   font-family: "iA Writer Quattro V", sans-serif;
