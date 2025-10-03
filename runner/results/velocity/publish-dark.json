@@ -1324,6 +1324,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "600"
   },
+  ".popover.hover-popover": {
+    "background-color": "oklch(0.24 0.00375 275)",
+    "border-color": "oklch(1 0.05 283 / 0.0625)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "oklch(0.9375 0.00375 275)",
     "font-family": "\"??\", \"Inter Variable\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -1382,6 +1386,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "oklch(0.24 0.00375 275)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "oklch(0.3125 0.00625 275)",
     "border": "0px solid oklch(1 0.05 283 / 0.0625)",
@@ -1389,6 +1396,11 @@
     "border-radius": "6px",
     "color": "oklch(0.875 0.00375 275)",
     "font-family": "\"??\", \"Inter Variable\", Inter, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "oklch(1 0.05 283 / 0.0625)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "oklch(1 0.05 283 / 0.05)",
@@ -1468,6 +1480,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "oklch(0.9375 0.00375 275)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "oklch(1 0.05 283 / 0.0625)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "oklch(1 0.05 283 / 0.05)",

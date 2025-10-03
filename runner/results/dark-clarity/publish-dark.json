@@ -1252,6 +1252,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(22, 27, 34)",
+    "border-color": "rgb(66, 73, 88)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(121, 107, 245)",
     "font-family": "\"Zhudou Sans Normal SS02\", 微软雅黑, \"Segoe UI\", OpenSans-Medium, sans-serif",
@@ -1310,6 +1314,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(22, 27, 34)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgba(0, 0, 0, 0.3)",
     "border": "1px solid rgb(66, 73, 88)",
@@ -1317,6 +1324,11 @@
     "border-radius": "5px",
     "color": "rgb(222, 222, 222)",
     "font-family": "\"Zhudou Sans Normal SS02\", 微软雅黑, \"Segoe UI\", OpenSans-Medium, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(17, 22, 29)",
+    "border-color": "rgb(66, 73, 88)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1396,6 +1408,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(222, 222, 222)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(17, 22, 29)",
+    "border-color": "rgb(66, 73, 88)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

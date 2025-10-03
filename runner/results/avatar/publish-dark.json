@@ -1234,6 +1234,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(26, 35, 50)",
+    "border-color": "rgb(226, 232, 240)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(239, 68, 192)",
     "font-family": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif",
@@ -1292,6 +1296,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(26, 35, 50)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(55, 65, 81)",
     "border": "1px solid rgb(74, 85, 104)",
@@ -1299,6 +1306,11 @@
     "border-radius": "8px",
     "color": "rgb(226, 232, 240)",
     "font-family": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(26, 35, 50)",
+    "border-color": "rgb(226, 232, 240)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1378,6 +1390,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(226, 232, 240)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(26, 35, 50)",
+    "border-color": "rgb(226, 232, 240)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

@@ -1611,6 +1611,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(255, 255, 255), rgb(41, 45, 62));
+  border-color: rgba(0, 0, 0, 0);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(235, 174, 202);
   font-family: "yu gothic ui", sans-serif;
@@ -1674,6 +1678,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(255, 255, 255), rgb(41, 45, 62));
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
@@ -1681,6 +1691,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 8px;
   color: light-dark(rgb(56, 60, 78), rgb(228, 104, 114));
   font-family: "yu gothic", yugothic, sans-serif;
+}
+body .site-body-right-column {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -1777,6 +1792,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(56, 60, 78), rgb(228, 104, 114));
+}
+body div.side-body-left-column {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

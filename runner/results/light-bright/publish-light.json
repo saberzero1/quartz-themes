@@ -1228,6 +1228,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "300"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(223, 218, 236)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(61, 57, 70)",
     "font-family": "Lato",
@@ -1286,6 +1290,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgba(0, 0, 0, 0)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(253, 252, 255)",
     "border": "1px solid rgb(223, 218, 236)",
@@ -1293,6 +1300,11 @@
     "border-radius": "5px",
     "color": "rgb(75, 73, 80)",
     "font-family": "\"??\", \"??\", Roboto, Assistant, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(239, 235, 247)",
+    "border-color": "rgb(223, 218, 236)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(0, 0, 0, 0.067)",
@@ -1370,6 +1382,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(75, 73, 80)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(75, 73, 80)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(239, 235, 247)",
+    "border-color": "rgb(223, 218, 236)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(0, 0, 0, 0.067)",

@@ -2129,6 +2129,16 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(
+    color(srgb 0.968 0.9688 0.992),
+    color(srgb 0.011 0.0121 0.044)
+  );
+  border-color: light-dark(
+    color(srgb 0.853 0.8298 0.982),
+    color(srgb 0.1096 0.10356 0.2584)
+  );
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(59, 178, 206), rgb(67, 207, 234));
   font-family:
@@ -2275,6 +2285,15 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(
+    color(srgb 0.968 0.9688 0.992),
+    color(srgb 0.011 0.0121 0.044)
+  );
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
     color(srgb 0.936 0.9376 0.984),
@@ -2299,6 +2318,17 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(
+    color(srgb 0.968 0.9688 0.992),
+    color(srgb 0.0176 0.01936 0.0704)
+  );
+  border-color: light-dark(
+    color(srgb 0.853 0.8298 0.982),
+    color(srgb 0.1096 0.10356 0.2584)
+  );
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -2437,6 +2467,17 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(color(srgb 0.125 0 0.5), color(srgb 0.91 0.88 1));
+}
+body div.side-body-left-column {
+  background-color: light-dark(
+    color(srgb 0.968 0.9688 0.992),
+    color(srgb 0.0176 0.01936 0.0704)
+  );
+  border-color: light-dark(
+    color(srgb 0.853 0.8298 0.982),
+    color(srgb 0.1096 0.10356 0.2584)
+  );
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

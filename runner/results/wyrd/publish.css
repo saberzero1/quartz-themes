@@ -1684,6 +1684,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(198, 192, 203), rgb(38, 34, 42));
+  border-color: rgb(255, 157, 0);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(150, 82, 218);
   font-family: "Architects Daughter", Neucha;
@@ -1762,6 +1766,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(198, 192, 203), rgb(38, 34, 42));
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(210, 206, 215), rgb(51, 46, 56));
   border: 1px solid rgb(255, 157, 0);
@@ -1781,6 +1791,11 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(191, 185, 198), rgb(45, 40, 49));
+  border-color: rgb(255, 157, 0);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -1914,6 +1929,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(89, 82, 96), rgb(191, 185, 198));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(191, 185, 198), rgb(45, 40, 49));
+  border-color: rgb(255, 157, 0);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

@@ -488,7 +488,7 @@
     "--graph-node-tag": "#a461c8",
     "--graph-node-unresolved": "#c03a47",
     "--graph-text": "#d3d5d3",
-    "--h": "tan(atan2(1129px, 1px))",
+    "--h": "tan(atan2(1130px, 1px))",
     "--h1-color": "#5a8fcd",
     "--h1-line-height": "1.61",
     "--h1-size": "1.81803em",
@@ -525,7 +525,7 @@
     "--h6-style": "normal",
     "--h6-variant": "normal",
     "--h6-weight": "575",
-    "--h_raw": "1129px",
+    "--h_raw": "1130px",
     "--header-height": "40px",
     "--heading-formatting": "#6f768599",
     "--heading-spacing": "calc(1rem * 2.5)",
@@ -1441,6 +1441,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(25, 29, 40)",
+    "border-color": "color(srgb 0.118646 0.130793 0.165667)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(90, 143, 205)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -1499,6 +1503,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(25, 29, 40)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(36, 38, 44)",
     "border": "1px solid color(srgb 0.118646 0.130793 0.165667)",
@@ -1506,6 +1513,11 @@
     "border-radius": "0px",
     "color": "rgb(211, 213, 211)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(20, 22, 28)",
+    "border-color": "color(srgb 0.118646 0.130793 0.165667)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(36, 38, 44)",
@@ -1587,6 +1599,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(211, 213, 211)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(20, 22, 28)",
+    "border-color": "color(srgb 0.118646 0.130793 0.165667)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(36, 38, 44)",

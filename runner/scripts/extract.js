@@ -105,6 +105,7 @@ describe("Quartz Theme Style Extraction", () => {
           app.workspace.activeLeaf.containerEl.querySelector(
             ".workspace-leaf-content > .view-content",
           );
+        computedPublishStyles[`.published-container`] = {};
         if (centerElement) {
           const centerStyle = getComputedStyle(centerElement);
           computedStyles[`.page > #quartz-body`] = {
@@ -123,6 +124,15 @@ describe("Quartz Theme Style Extraction", () => {
               ? centerElement.getCssPropertyValue("background-color")
               : "unset",
           };
+          computedPublishStyles[`.published-container`]["background-color"] =
+            centerElement.getCssPropertyValue("background-color")
+              ? centerElement.getCssPropertyValue("background-color")
+              : "unset";
+          computedPublishStyles[`.published-container`][
+            "--background-primary"
+          ] = centerElement.getCssPropertyValue("background-color")
+            ? centerElement.getCssPropertyValue("background-color")
+            : "unset";
         }
 
         const borderElement = document
@@ -203,6 +213,19 @@ describe("Quartz Theme Style Extraction", () => {
               : "inherit",
             "border-right-width": "1px",
           };
+          computedPublishStyles[`.published-container`][
+            "--sidebar-left-background"
+          ] = leftSidebar.getCssPropertyValue("background-color")
+            ? leftSidebar.getCssPropertyValue("background-color")
+            : "unset";
+          computedPublishStyles[`.published-container`][
+            "--sidebar-left-border-color"
+          ] = borderElement.getCssPropertyValue("border-right-color")
+            ? borderElement.getCssPropertyValue("border-right-color")
+            : "inherit";
+          computedPublishStyles[`.published-container`][
+            "--sidebar-left-border-width"
+          ] = "1px";
           computedStyles[`.page > #quartz-body .sidebar.left:has(.explorer)`] =
             {
               "background-color": leftSidebar.getCssPropertyValue(
@@ -253,6 +276,19 @@ describe("Quartz Theme Style Extraction", () => {
               : "inherit",
             "border-left-width": "1px",
           };
+          computedPublishStyles[`.published-container`][
+            "--sidebar-right-background"
+          ] = leftSidebar.getCssPropertyValue("background-color")
+            ? leftSidebar.getCssPropertyValue("background-color")
+            : "unset";
+          computedPublishStyles[`.published-container`][
+            "--sidebar-right-border-color"
+          ] = borderElement.getCssPropertyValue("border-right-color")
+            ? borderElement.getCssPropertyValue("border-right-color")
+            : "inherit";
+          computedPublishStyles[`.published-container`][
+            "--sidebar-right-border-width"
+          ] = "1px";
         }
 
         let backgroundGradient = "";
@@ -422,9 +458,17 @@ describe("Quartz Theme Style Extraction", () => {
     });
   }
 
-  async function getStylesFromObsidian(manifest, configuration) {
+  async function getStylesFromObsidian(
+    manifest,
+    configuration,
+    manifestCollection,
+  ) {
     const [theme, variation] = manifest.name.split(".");
-    console.log(`Theme: ${theme}, Variation: ${variation}`);
+    const fullName =
+      manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
+    console.log(
+      `Theme: ${theme}, Variation: ${variation}, Full Name: ${fullName}`,
+    );
     const preset = JSON.stringify(manifest.style_settings ?? {});
     console.log(`Preset: ${preset}`);
     // TODO: style settings functions should be used to apply settings
@@ -463,14 +507,22 @@ describe("Quartz Theme Style Extraction", () => {
     if (isDarkTheme(theme)) {
       before(async () => {
         const darkPage = browser.getObsidianPage();
-        await darkPage.resetVault();
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          "{}",
+        );
       });
       it(`should extract styles for theme: ${theme} in dark mode`, async () => {
         const darkPage = browser.getObsidianPage();
+        await darkPage.resetVault();
+        //await browser.reloadObsidian();
         await darkPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-dark");
-        await darkPage.setTheme(theme);
-        console.log(`Applying preset: ${preset}`);
+        await darkPage.setTheme(fullName);
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
         await browser.executeObsidian(async ({ app }, preset) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -478,9 +530,11 @@ describe("Quartz Theme Style Extraction", () => {
           if (clickableFolder) {
             clickableFolder.click();
           }
+          /*
           await app.plugins
             .getPlugin("obsidian-style-settings")
             .settingsManager.setSettings(JSON.parse(JSON.stringify(preset)));
+            */
         }, preset);
         await sleep(500);
         await browser.executeObsidianCommand(
@@ -585,30 +639,35 @@ describe("Quartz Theme Style Extraction", () => {
     if (isLightTheme(theme)) {
       before(async () => {
         const lightPage = browser.getObsidianPage();
-        await lightPage.resetVault();
-        await lightPage.enablePlugin("plugin-reloader");
-        await lightPage.enablePlugin("obsidian-style-settings");
-        await lightPage.enablePlugin("obsidian-view-mode-by-frontmatter");
-        await lightPage.enablePlugin("dataview");
+        await lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          "{}",
+        );
       });
       it(`should extract styles for theme: ${theme} in light mode`, async () => {
         const lightPage = browser.getObsidianPage();
+        await lightPage.resetVault();
+        //await browser.reloadObsidian();
         await lightPage.loadWorkspaceLayout("default");
         await browser.executeObsidianCommand("theme:use-light");
-        await lightPage.setTheme(theme);
+        await lightPage.setTheme(fullName);
         await lightPage.write(
           "./.obsidian/plugins/obsidian-style-settings/data.json",
           preset,
         );
-        await browser.executeObsidian(async ({ app }) => {
+        await browser.executeObsidian(async ({ app }, preset) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
           );
           if (clickableFolder) {
             clickableFolder.click();
           }
-          await app.plugins.getPlugin("obsidian-style-settings").loadData();
-        });
+          /*
+          await app.plugins
+            .getPlugin("obsidian-style-settings")
+            .settingsManager.setSettings(JSON.parse(JSON.stringify(preset)));
+            */
+        }, preset);
         await sleep(500);
         await browser.executeObsidianCommand(
           "plugin-reloader:obsidian-style-settings",
@@ -708,10 +767,12 @@ describe("Quartz Theme Style Extraction", () => {
     return { lightResult, darkResult };
   }
 
+  const manifestCollection = getManifestCollection();
+
   for (const manifest of themeCollection) {
     console.log(`Processing target: ${manifest.name}`);
     console.log(Object.entries(extractionTargets));
-    getStylesFromObsidian(manifest, extractionTargets);
+    getStylesFromObsidian(manifest, extractionTargets, manifestCollection);
   }
 });
 

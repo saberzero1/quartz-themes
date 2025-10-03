@@ -1422,6 +1422,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "color(srgb 0.361375 0.549813 0.813625)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "color(srgb 0.01485 0.039975 0.07515)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
@@ -1482,6 +1486,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(255, 255, 255)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "color(srgb 0.1485 0.39975 0.7515 / 0.12)",
     "border": "0px none color(srgb 0.01485 0.039975 0.07515)",
@@ -1489,6 +1496,11 @@
     "border-radius": "4px",
     "color": "color(srgb 0.01485 0.039975 0.07515)",
     "font-family": "\"??\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  },
+  ".site-body-right-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "color(srgb 0.361375 0.549813 0.813625)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(38, 102, 192)",
@@ -1568,6 +1580,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "color(srgb 0.957425 0.969988 0.987575)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "color(srgb 0.361375 0.549813 0.813625)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(38, 102, 192)",

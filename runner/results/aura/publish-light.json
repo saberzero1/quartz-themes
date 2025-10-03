@@ -1251,6 +1251,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(247, 243, 238)",
+    "border-color": "rgb(233, 223, 209)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(240, 100, 119)",
     "font-family": "Rubik",
@@ -1309,6 +1313,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(247, 243, 238)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(241, 230, 214)",
     "border": "1px solid rgb(233, 223, 209)",
@@ -1316,6 +1323,11 @@
     "border-radius": "5px",
     "color": "rgb(74, 52, 28)",
     "font-family": "\"??\", \"??\", \"iA Writer Quattro S\""
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(238, 231, 221)",
+    "border-color": "rgb(233, 223, 209)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(241, 230, 214, 0.7)",
@@ -1393,6 +1405,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(74, 52, 28)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(74, 52, 28)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(238, 231, 221)",
+    "border-color": "rgb(233, 223, 209)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(241, 230, 214, 0.7)",
