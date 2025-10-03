@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for oistnb theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/oistnb)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/oistnb|Install instructions]]
+
+- Name: `oistnb`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/oistnb/LICENSE.md"><img src="media/license/joke license.svg" alt="JOKE LICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

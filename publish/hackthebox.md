@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for hackthebox theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/hackthebox)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/hackthebox|Install instructions]]
+
+- Name: `hackthebox`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/full.svg" alt="FULL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hackthebox/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

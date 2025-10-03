@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for parfait theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/parfait)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/parfait|Install instructions]]
+
+- Name: `parfait`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/parfait/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

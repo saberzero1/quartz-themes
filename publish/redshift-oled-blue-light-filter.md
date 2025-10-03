@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for redshift-oled-blue-light-filter theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/redshift-oled-blue-light-filter)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/redshift-oled-blue-light-filter|Install instructions]]
+
+- Name: `redshift-oled-blue-light-filter`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/redshift-oled-blue-light-filter/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

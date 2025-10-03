@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for latex theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/latex)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/latex|Install instructions]]
+
+- Name: `latex`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/latex/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

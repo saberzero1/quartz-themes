@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for atom theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/atom)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/atom|Install instructions]]
+
+- Name: `atom`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/atom/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

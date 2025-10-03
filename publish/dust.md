@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for dust theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/dust)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/dust|Install instructions]]
+
+- Name: `dust`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dust/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

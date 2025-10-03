@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for notation theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/notation)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/notation|Install instructions]]
+
+- Name: `notation`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/notation/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

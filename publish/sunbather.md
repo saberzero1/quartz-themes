@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for sunbather theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/sunbather)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/sunbather|Install instructions]]
+
+- Name: `sunbather`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/sunbather/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

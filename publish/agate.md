@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for agate theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/agate)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/agate|Install instructions]]
+
+- Name: `agate`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/full.svg" alt="FULL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/agate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

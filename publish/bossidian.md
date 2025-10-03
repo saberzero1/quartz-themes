@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for bossidian theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/bossidian)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/bossidian|Install instructions]]
+
+- Name: `bossidian`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/bossidian/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

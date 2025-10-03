@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for big-bold theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/big-bold)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/big-bold|Install instructions]]
+
+- Name: `big-bold`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/big-bold/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

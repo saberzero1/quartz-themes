@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for tokyo-night-storm theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-storm)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-storm|Install instructions]]
+
+- Name: `tokyo-night-storm`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tokyo-night-storm/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

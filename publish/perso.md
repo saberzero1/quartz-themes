@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for perso theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/perso)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/perso|Install instructions]]
+
+- Name: `perso`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/perso/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

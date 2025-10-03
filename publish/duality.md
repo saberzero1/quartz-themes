@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for duality theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/duality)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/duality|Install instructions]]
+
+- Name: `duality`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/duality/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for trace-labs theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/trace-labs)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/trace-labs|Install instructions]]
+
+- Name: `trace-labs`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/trace-labs/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

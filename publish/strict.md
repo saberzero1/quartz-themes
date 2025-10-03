@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for strict theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/strict)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/strict|Install instructions]]
+
+- Name: `strict`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/strict/LICENSE.md"><img src="media/license/agpl-3.0.svg" alt="AGPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

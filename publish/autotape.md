@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for autotape theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/autotape)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/autotape|Install instructions]]
+
+- Name: `autotape`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/autotape/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for garden-gnome-adwaita-gtk theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/garden-gnome-adwaita-gtk)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/garden-gnome-adwaita-gtk|Install instructions]]
+
+- Name: `garden-gnome-adwaita-gtk`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/garden-gnome-adwaita-gtk/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

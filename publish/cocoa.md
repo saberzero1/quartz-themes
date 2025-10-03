@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for cocoa theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/cocoa)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/cocoa|Install instructions]]
+
+- Name: `cocoa`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cocoa/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

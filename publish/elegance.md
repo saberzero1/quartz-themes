@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for elegance theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/elegance)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/elegance|Install instructions]]
+
+- Name: `elegance`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/elegance/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for monokai theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai|Install instructions]]
+
+- Name: `monokai`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monokai/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

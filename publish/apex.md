@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for apex theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/apex)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/apex|Install instructions]]
+
+- Name: `apex`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/apex/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 
