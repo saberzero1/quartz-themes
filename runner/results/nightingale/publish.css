@@ -1662,6 +1662,16 @@ body .popover.hover-popover {
   background-color: rgb(30, 30, 30);
   border-color: rgba(14, 210, 247, 0.05);
 }
+body .published-container {
+  --background-primary: rgb(30, 30, 30);
+  --sidebar-left-background: rgb(21, 17, 30);
+  --sidebar-left-border-color: rgba(14, 210, 247, 0.05);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(21, 17, 30);
+  --sidebar-right-border-color: rgba(14, 210, 247, 0.05);
+  --sidebar-right-border-width: 1px;
+  background-color: rgb(30, 30, 30);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(183, 183, 183);
   font-family: "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;

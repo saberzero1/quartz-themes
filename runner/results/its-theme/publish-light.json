@@ -1700,6 +1700,16 @@
     "background-color": "rgb(248, 251, 255)",
     "border-color": "rgb(238, 243, 253)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(248, 251, 255)",
+    "--sidebar-left-background": "rgb(238, 243, 253)",
+    "--sidebar-left-border-color": "rgb(238, 243, 253)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(238, 243, 253)",
+    "--sidebar-right-border-color": "rgb(238, 243, 253)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(248, 251, 255)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(193, 67, 67)",
     "font-family": "\"Calisto MT\", \"Palatino Black\", \"Book Antiqua\", Georgia, \"Suez One\", serif",

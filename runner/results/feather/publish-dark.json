@@ -1263,6 +1263,16 @@
     "background-color": "rgb(51, 53, 71)",
     "border-color": "rgb(53, 57, 62)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(51, 53, 71)",
+    "--sidebar-left-background": "rgb(39, 40, 53)",
+    "--sidebar-left-border-color": "rgb(53, 57, 62)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(39, 40, 53)",
+    "--sidebar-right-border-color": "rgb(53, 57, 62)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(51, 53, 71)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(218, 218, 218)",
     "font-family": "\"??\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",

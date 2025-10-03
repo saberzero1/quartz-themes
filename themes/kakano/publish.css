@@ -2901,6 +2901,19 @@ body .popover.hover-popover {
     color(srgb 0.111375 0.299813 0.563625)
   );
 }
+body .published-container {
+  --background-primary: color(srgb 0.007425 0.0199875 0.037575);
+  --sidebar-left-background: rgba(0, 0, 0, 0);
+  --sidebar-left-border-color: color(srgb 0.111375 0.299813 0.563625);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgba(0, 0, 0, 0);
+  --sidebar-right-border-color: color(srgb 0.111375 0.299813 0.563625);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(
+    rgb(255, 255, 255),
+    color(srgb 0.007425 0.0199875 0.037575)
+  );
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),

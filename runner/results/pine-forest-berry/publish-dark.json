@@ -1272,6 +1272,16 @@
     "background-color": "rgb(46, 52, 64)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(46, 52, 64)",
+    "--sidebar-left-background": "rgb(59, 66, 82)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(59, 66, 82)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(46, 52, 64)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(199, 46, 110)",
     "font-family": "Avenir, \"Avenir Next\", sans-serif",

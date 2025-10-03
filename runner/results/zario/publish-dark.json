@@ -1258,6 +1258,16 @@
     "background-color": "rgb(18, 22, 28)",
     "border-color": "rgb(2, 4, 9)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(18, 22, 28)",
+    "--sidebar-left-background": "rgb(2, 4, 9)",
+    "--sidebar-left-border-color": "rgb(2, 4, 9)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(2, 4, 9)",
+    "--sidebar-right-border-color": "rgb(2, 4, 9)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(18, 22, 28)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(218, 218, 218)",
     "font-family": "\"??\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",

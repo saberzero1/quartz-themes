@@ -1288,6 +1288,16 @@
     "background-color": "oklch(0.93 0.0756825 263.56)",
     "border-color": "oklch(0.65 0.0756825 323.56)"
   },
+  ".published-container": {
+    "--background-primary": "oklch(0.93 0.0756825 263.56)",
+    "--sidebar-left-background": "oklch(0.8 0.0756825 293.56)",
+    "--sidebar-left-border-color": "oklch(0.65 0.0756825 323.56)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "oklch(0.8 0.0756825 293.56)",
+    "--sidebar-right-border-color": "oklch(0.65 0.0756825 323.56)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "oklch(0.93 0.0756825 263.56)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "oklch(0.5 0.12 26.4069)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",

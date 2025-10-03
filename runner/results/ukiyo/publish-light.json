@@ -1223,6 +1223,16 @@
     "background-color": "rgb(225, 196, 166)",
     "border-color": "rgb(198, 165, 127)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(225, 196, 166)",
+    "--sidebar-left-background": "rgb(218, 187, 154)",
+    "--sidebar-left-border-color": "rgb(198, 165, 127)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(218, 187, 154)",
+    "--sidebar-right-border-color": "rgb(198, 165, 127)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(225, 196, 166)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(95, 79, 73)",
     "font-family": "\"??\", \"??\", \"CMU Typewriter Text\"",

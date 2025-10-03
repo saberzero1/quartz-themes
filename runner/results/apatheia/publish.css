@@ -1408,6 +1408,16 @@ body .popover.hover-popover {
   background-color: rgb(11, 10, 16);
   border-color: rgb(16, 14, 27);
 }
+body .published-container {
+  --background-primary: rgb(11, 10, 16);
+  --sidebar-left-background: rgb(16, 14, 27);
+  --sidebar-left-border-color: rgb(16, 14, 27);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(16, 14, 27);
+  --sidebar-right-border-color: rgb(16, 14, 27);
+  --sidebar-right-border-width: 1px;
+  background-color: rgb(11, 10, 16);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(233, 113, 147);
   font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;

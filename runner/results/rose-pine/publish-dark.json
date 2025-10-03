@@ -1252,6 +1252,16 @@
     "background-color": "rgb(25, 23, 36)",
     "border-color": "rgb(38, 35, 58)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(25, 23, 36)",
+    "--sidebar-left-background": "rgb(31, 29, 46)",
+    "--sidebar-left-border-color": "rgb(38, 35, 58)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(31, 29, 46)",
+    "--sidebar-right-border-color": "rgb(38, 35, 58)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(25, 23, 36)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(235, 111, 146)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",

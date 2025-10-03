@@ -1216,6 +1216,16 @@
     "background-color": "rgb(25, 18, 63)",
     "border-color": "rgb(54, 54, 54)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(25, 18, 63)",
+    "--sidebar-left-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-color": "rgb(54, 54, 54)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-color": "rgb(54, 54, 54)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(25, 18, 63)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(221, 221, 221)",
     "font-family": "\"Nunito Sans Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
