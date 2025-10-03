@@ -1936,6 +1936,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: rgb(45, 48, 57);
+  border-color: rgb(30, 31, 36);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(217, 214, 23);
   font-family:
@@ -2117,6 +2121,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(45, 48, 57);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(30, 31, 36);
   border: 1px solid rgb(67, 72, 81);
@@ -2126,6 +2136,11 @@ body .site-body-left-column input.search-bar {
   font-family:
     "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu,
     Helvetica, Arial, sans-serif;
+}
+body .site-body-right-column {
+  background-color: rgb(30, 31, 36);
+  border-color: rgb(30, 31, 36);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -2284,6 +2299,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(114, 195, 213);
+}
+body div.side-body-left-column {
+  background-color: rgb(30, 31, 36);
+  border-color: rgb(30, 31, 36);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);

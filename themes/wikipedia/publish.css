@@ -1437,6 +1437,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
+  border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   font-family: "Linux Libertine", Georgia, Times, serif;
@@ -1503,6 +1507,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(47, 49, 53));
   border: 1px solid rgba(218, 225, 234, 0.192);
@@ -1510,6 +1520,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   font-family: Arial, Archivo, sans-serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(246, 246, 246), rgb(39, 40, 43));
+  border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -1595,6 +1610,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(246, 246, 246), rgb(39, 40, 43));
+  border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

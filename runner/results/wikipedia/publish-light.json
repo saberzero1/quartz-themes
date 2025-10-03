@@ -1223,6 +1223,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "rgb(162, 169, 177)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(34, 34, 34)",
     "font-family": "\"Linux Libertine\", Georgia, Times, serif",
@@ -1281,6 +1285,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(255, 255, 255)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(162, 169, 177)",
@@ -1288,6 +1295,11 @@
     "border-radius": "0px",
     "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", Arial, Archivo, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(246, 246, 246)",
+    "border-color": "rgb(162, 169, 177)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(0, 0, 0, 0.067)",
@@ -1365,6 +1377,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(34, 34, 34)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(34, 34, 34)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(246, 246, 246)",
+    "border-color": "rgb(162, 169, 177)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(0, 0, 0, 0.067)",

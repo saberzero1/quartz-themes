@@ -1217,6 +1217,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(32, 32, 32)",
+    "border-color": "rgb(54, 54, 54)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(218, 218, 218)",
     "font-family": "\"??\", \"??\", Inter, \"Noto Color Emoji\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Sans JP\", \"Yu Gothic\", \"Microsoft YaHei Light\", sans-serif",
@@ -1275,6 +1279,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(32, 32, 32)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(42, 42, 42)",
     "border": "1px solid rgb(54, 54, 54)",
@@ -1282,6 +1289,11 @@
     "border-radius": "5px",
     "color": "rgb(218, 218, 218)",
     "font-family": "\"??\", \"??\", Inter, \"Noto Color Emoji\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Sans JP\", \"Yu Gothic\", \"Microsoft YaHei Light\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(22, 22, 22)",
+    "border-color": "rgb(54, 54, 54)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(22, 22, 22)",
@@ -1361,6 +1373,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(218, 218, 218)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(22, 22, 22)",
+    "border-color": "rgb(54, 54, 54)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(22, 22, 22)",

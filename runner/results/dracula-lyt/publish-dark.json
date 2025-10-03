@@ -1400,6 +1400,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "500"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(34, 33, 44)",
+    "border-color": "rgb(52, 58, 75)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(255, 184, 107)",
     "font-family": "\"Abril Text\", Inter, \"-apple-system BlinkMacSystemFont\", \"Segoe UI\", Ubuntu, Helvetica, Arial, sans-serif",
@@ -1458,6 +1462,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(34, 33, 44)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(30, 31, 36)",
     "border": "1px solid rgb(66, 71, 80)",
@@ -1465,6 +1472,11 @@
     "border-radius": "2px",
     "color": "rgb(248, 248, 242)",
     "font-family": "\"SF Pro Text\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Microsoft YaHei Light\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(21, 19, 31)",
+    "border-color": "rgb(52, 58, 75)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1544,6 +1556,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgba(0, 0, 0, 0)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(114, 195, 213)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(21, 19, 31)",
+    "border-color": "rgb(52, 58, 75)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

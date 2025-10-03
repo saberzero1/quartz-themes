@@ -1610,6 +1610,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: rgb(34, 37, 39);
+  border-color: rgb(109, 109, 109);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(156, 156, 157);
   font-family:
@@ -1687,6 +1691,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(34, 37, 39);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(34, 37, 39);
   border: 1px solid rgb(109, 109, 109);
@@ -1696,6 +1706,11 @@ body .site-body-left-column input.search-bar {
   font-family:
     "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
     "Times New Roman";
+}
+body .site-body-right-column {
+  background-color: rgb(28, 30, 33);
+  border-color: rgb(109, 109, 109);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(60, 68, 76, 0.5);
@@ -1795,6 +1810,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(149, 149, 149);
+}
+body div.side-body-left-column {
+  background-color: rgb(28, 30, 33);
+  border-color: rgb(109, 109, 109);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgba(60, 68, 76, 0.5);

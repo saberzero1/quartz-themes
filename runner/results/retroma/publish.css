@@ -2124,6 +2124,16 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(
+    oklch(93% 0.0756825 263.56deg),
+    oklch(28% 0.0651598 262.488deg)
+  );
+  border-color: light-dark(
+    oklch(65% 0.0756825 323.56deg),
+    oklch(18% 0.0651598 322.488deg)
+  );
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(oklch(50% 0.12 26.4069deg), oklch(70% 0.08 26.4069deg));
   font-family:
@@ -2267,6 +2277,15 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(
+    oklch(93% 0.0756825 263.56deg),
+    oklch(28% 0.0651598 262.488deg)
+  );
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
     oklch(98% 0.0756825 263.56deg),
@@ -2291,6 +2310,17 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(
+    oklch(80% 0.0756825 293.56deg),
+    oklch(24% 0.0651598 292.488deg)
+  );
+  border-color: light-dark(
+    oklch(65% 0.0756825 323.56deg),
+    oklch(18% 0.0651598 322.488deg)
+  );
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -2435,6 +2465,17 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body div.side-body-left-column {
+  background-color: light-dark(
+    oklch(80% 0.0756825 293.56deg),
+    oklch(24% 0.0651598 292.488deg)
+  );
+  border-color: light-dark(
+    oklch(65% 0.0756825 323.56deg),
+    oklch(18% 0.0651598 322.488deg)
+  );
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

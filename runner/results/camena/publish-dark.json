@@ -1230,6 +1230,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(23, 18, 33)",
+    "border-color": "rgb(79, 63, 115)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(138, 92, 245)",
     "font-family": "Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
@@ -1288,6 +1292,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(23, 18, 33)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(45, 36, 66)",
     "border": "1px solid rgb(79, 63, 115)",
@@ -1295,6 +1302,11 @@
     "border-radius": "5px",
     "color": "rgb(198, 189, 219)",
     "font-family": "\"??\", Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(34, 27, 49)",
+    "border-color": "rgb(79, 63, 115)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
@@ -1374,6 +1386,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(198, 189, 219)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(34, 27, 49)",
+    "border-color": "rgb(79, 63, 115)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",

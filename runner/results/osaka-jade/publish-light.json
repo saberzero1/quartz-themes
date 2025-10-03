@@ -1349,6 +1349,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(242, 239, 233)",
+    "border-color": "rgb(165, 231, 225)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(255, 118, 104)",
     "font-family": "\"??\", -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
@@ -1407,6 +1411,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(242, 239, 233)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(165, 231, 225)",
@@ -1414,6 +1421,11 @@
     "border-radius": "5px",
     "color": "rgb(47, 74, 55)",
     "font-family": "\"??\", -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(248, 248, 248)",
+    "border-color": "rgb(165, 231, 225)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(248, 248, 248)",
@@ -1491,6 +1503,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(47, 74, 55)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(47, 74, 55)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(248, 248, 248)",
+    "border-color": "rgb(165, 231, 225)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(248, 248, 248)",

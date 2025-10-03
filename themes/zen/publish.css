@@ -1730,6 +1730,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+  border-color: light-dark(rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01));
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(231, 77, 71);
   font-family:
@@ -1867,6 +1871,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+}
 body .site-body-left-column input.search-bar {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(245, 245, 245, 0.15);
@@ -1885,6 +1895,11 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+  border-color: light-dark(rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01));
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(rgba(28, 28, 28, 0.1), rgba(245, 245, 245, 0.1));
@@ -2014,6 +2029,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(8, 8, 8), rgb(240, 240, 240));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+  border-color: light-dark(rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01));
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(rgba(28, 28, 28, 0.1), rgba(245, 245, 245, 0.1));

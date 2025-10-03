@@ -1272,6 +1272,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(30, 30, 30)",
+    "border-color": "rgb(40, 40, 40)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(153, 109, 247)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", monospace",
@@ -1330,6 +1334,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(30, 30, 30)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(35, 35, 35)",
     "border": "1px solid rgb(40, 40, 40)",
@@ -1337,6 +1344,11 @@
     "border-radius": "5px",
     "color": "rgb(237, 237, 237)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", monospace"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(40, 40, 40)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1416,6 +1428,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(237, 237, 237)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-color": "rgb(40, 40, 40)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

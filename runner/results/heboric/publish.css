@@ -1552,6 +1552,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(254, 254, 254), rgb(40, 42, 47));
+  border-color: light-dark(rgb(224, 224, 224), rgb(54, 57, 63));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(0, 0, 0), rgb(241, 242, 243));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
@@ -1618,6 +1622,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(254, 254, 254), rgb(40, 42, 47));
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(63, 67, 74));
   border: 1px solid rgb(82, 87, 96);
@@ -1625,6 +1635,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 3px;
   color: light-dark(rgb(85, 85, 85), rgb(186, 189, 196));
   font-family: "New York", Georgia, ui-serif, serif;
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(253, 249, 247), rgb(33, 35, 39));
+  border-color: light-dark(rgb(224, 224, 224), rgb(54, 57, 63));
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
@@ -1710,6 +1725,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(85, 85, 85), rgb(186, 189, 196));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(253, 249, 247), rgb(33, 35, 39));
+  border-color: light-dark(rgb(224, 224, 224), rgb(54, 57, 63));
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(

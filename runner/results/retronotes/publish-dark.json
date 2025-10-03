@@ -1282,6 +1282,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(12, 12, 12)",
+    "border-color": "rgb(110, 110, 110)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(232, 115, 61)",
     "font-family": "Loew, sans-serif",
@@ -1340,6 +1344,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(12, 12, 12)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(61, 61, 61)",
     "border": "1px solid rgb(110, 110, 110)",
@@ -1347,6 +1354,11 @@
     "border-radius": "5px",
     "color": "rgb(255, 254, 251)",
     "font-family": "\"IBM Plex Mono\", Consolas, monospace, \"IBM Plex Mono\", Consolas, monospace, ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(49, 0, 0)",
+    "border-color": "rgb(110, 110, 110)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(51, 51, 51)",
@@ -1426,6 +1438,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(208, 208, 208)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(49, 0, 0)",
+    "border-color": "rgb(110, 110, 110)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(51, 51, 51)",
