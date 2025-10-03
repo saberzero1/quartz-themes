@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/powered-by-lancer-retouched|Install instructions]]
+- Theme author: Cloopy
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/powered-by-lancer-retouched|Install instructions]]
 
-- Name: `powered-by-lancer-retouched`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/powered-by-lancer-retouched/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name                          | Modes                     | Compatibility                                  | License                                                                                                                                                            |
+| ----------------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `powered-by-lancer-retouched` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/powered-by-lancer-retouched/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

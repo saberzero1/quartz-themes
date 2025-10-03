@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/agate|Install instructions]]
+- Theme author: solmi
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/agate|Install instructions]]
 
-- Name: `agate`
-- Modes: ![[media/light.svg|LIGHT]]
-- Compatibility: <img src="media/full.svg" alt="FULL"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/agate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name    | Modes                       | Compatibility                          | License                                                                                                                                      |
+| ------- | --------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `agate` | ![[media/light.svg\|LIGHT]] | <img src="media/full.svg" alt="FULL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/agate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
