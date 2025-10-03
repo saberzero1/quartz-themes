@@ -1242,6 +1242,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(26, 26, 26)",
+    "border-color": "rgba(0, 0, 0, 0)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(255, 255, 255)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
@@ -1300,6 +1304,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(26, 26, 26)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(34, 34, 34)",
     "border": "0px solid rgb(34, 34, 34)",
@@ -1307,6 +1314,11 @@
     "border-radius": "0px",
     "color": "rgb(144, 144, 144)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(18, 18, 18)",
+    "border-color": "rgba(0, 0, 0, 0)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.075)",
@@ -1386,6 +1398,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(255, 255, 255)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(18, 18, 18)",
+    "border-color": "rgba(0, 0, 0, 0)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.075)",

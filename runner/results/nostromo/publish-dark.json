@@ -1240,6 +1240,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(29, 32, 33)",
+    "border-color": "rgba(168, 168, 168, 0.2)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(232, 216, 163)",
     "font-family": "\"Share Tech Mono\", \"Courier New\", monospace",
@@ -1298,6 +1302,9 @@
     "transition": "1e-05s",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(29, 32, 33)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(60, 56, 54)",
     "border": "1px solid rgba(168, 168, 168, 0.2)",
@@ -1305,6 +1312,11 @@
     "border-radius": "5px",
     "color": "rgb(235, 219, 178)",
     "font-family": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(40, 40, 40)",
+    "border-color": "rgba(168, 168, 168, 0.2)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(232, 216, 163, 0.08)",
@@ -1384,6 +1396,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(235, 219, 178)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(40, 40, 40)",
+    "border-color": "rgba(168, 168, 168, 0.2)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(232, 216, 163, 0.08)",

@@ -1602,6 +1602,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+  border-color: rgba(146, 161, 161, 0.48);
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
   font-family: Avenir, "Avenir Next";
@@ -1665,6 +1669,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
   border: 1px solid rgba(146, 161, 161, 0.48);
@@ -1672,6 +1682,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 5px;
   color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   font-family: Avenir, "Avenir Next";
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+  border-color: rgba(146, 161, 161, 0.48);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
@@ -1765,6 +1780,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+  border-color: rgba(146, 161, 161, 0.48);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));

@@ -2891,6 +2891,16 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: light-dark(
+    rgb(255, 255, 255),
+    color(srgb 0.007425 0.0199875 0.037575)
+  );
+  border-color: light-dark(
+    color(srgb 0.361375 0.549813 0.813625),
+    color(srgb 0.111375 0.299813 0.563625)
+  );
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
@@ -3014,6 +3024,15 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(
+    rgb(255, 255, 255),
+    color(srgb 0.007425 0.0199875 0.037575)
+  );
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
     color(srgb 0.1485 0.39975 0.7515 / 0.12),
@@ -3034,6 +3053,14 @@ body .site-body-left-column input.search-bar {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body .site-body-right-column {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(
+    color(srgb 0.361375 0.549813 0.813625),
+    color(srgb 0.111375 0.299813 0.563625)
+  );
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgb(38, 102, 192);
@@ -3153,6 +3180,14 @@ body div.search-results .suggestion-item.is-selected {
     color(srgb 0.957425 0.969988 0.987575),
     color(srgb 0.01485 0.039975 0.07515)
   );
+}
+body div.side-body-left-column {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(
+    color(srgb 0.361375 0.549813 0.813625),
+    color(srgb 0.111375 0.299813 0.563625)
+  );
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgb(38, 102, 192);

@@ -3741,9 +3741,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -3766,9 +3766,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -3789,9 +3789,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -3810,9 +3810,9 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body
   .outline-view-outer
@@ -3829,20 +3829,24 @@ body
   .tree-item
   .tree-item
   > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 0px none rgb(153, 229, 181);
-  margin-inline-start: 0px;
-  padding-inline-start: 32px;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
+}
+body .popover.hover-popover {
+  background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
+  border-color: light-dark(rgb(201, 211, 203), rgb(2, 7, 4));
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(67, 122, 65), rgb(63, 255, 140));
@@ -3907,6 +3911,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
+}
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(201, 211, 203), rgb(2, 7, 4));
   border: 1px solid rgb(2, 7, 4);
@@ -3914,6 +3924,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 5px;
   color: light-dark(rgb(32, 84, 44), rgb(153, 229, 181));
   font-family: "ModeSeven Regular";
+}
+body .site-body-right-column {
+  background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
+  border-color: light-dark(rgb(201, 211, 203), rgb(2, 7, 4));
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(rgb(134, 198, 108), rgb(22, 63, 38));
@@ -3996,6 +4011,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(32, 84, 44), rgb(153, 229, 181));
+}
+body div.side-body-left-column {
+  background-color: light-dark(rgb(215, 221, 217), rgb(11, 21, 16));
+  border-color: light-dark(rgb(201, 211, 203), rgb(2, 7, 4));
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: light-dark(rgb(134, 198, 108), rgb(22, 63, 38));

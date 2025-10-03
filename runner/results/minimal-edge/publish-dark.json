@@ -1221,6 +1221,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(37, 41, 51)",
+    "border-color": "rgb(145, 145, 145)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(145, 145, 145)",
     "font-family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
@@ -1279,6 +1283,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(37, 41, 51)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(32, 36, 43)",
     "border": "1px solid rgba(110, 114, 121, 0.427)",
@@ -1286,6 +1293,11 @@
     "border-radius": "5px",
     "color": "rgb(145, 145, 145)",
     "font-family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(32, 36, 43)",
+    "border-color": "rgb(145, 145, 145)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(255, 255, 255, 0.067)",
@@ -1365,6 +1377,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(145, 145, 145)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(32, 36, 43)",
+    "border-color": "rgb(145, 145, 145)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(255, 255, 255, 0.067)",

@@ -1283,6 +1283,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(21, 30, 45)",
+    "border-color": "rgb(161, 161, 161)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(246, 168, 42)",
     "font-family": "\"Skolar PE\", \"Gentium Plus\", Alegreya, \"Source Sans Pro\", \"Avenir Next\", \"Times New Roman\"",
@@ -1341,6 +1345,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(21, 30, 45)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(21, 30, 45)",
     "border": "1px solid rgb(161, 161, 161)",
@@ -1348,6 +1355,11 @@
     "border-radius": "5px",
     "color": "rgb(224, 226, 213)",
     "font-family": "\"Skolar PE\", \"Gentium Plus\", Alegreya, \"Source Sans Pro\", \"Avenir Next\", \"Times New Roman\""
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(21, 30, 45)",
+    "border-color": "rgb(161, 161, 161)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgba(80, 102, 130, 0.5)",
@@ -1427,6 +1439,11 @@
   },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(224, 226, 213)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(21, 30, 45)",
+    "border-color": "rgb(161, 161, 161)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgba(80, 102, 130, 0.5)",

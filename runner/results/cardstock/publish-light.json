@@ -1236,6 +1236,10 @@
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
+  ".popover.hover-popover": {
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "rgb(240, 234, 226)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(45, 44, 44)",
     "font-family": "\"Source Serif Pro\", \"Source Serif 4\", \"Source Serif\", Rockwell, \"New York\", serif",
@@ -1294,6 +1298,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(255, 255, 255)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(255, 255, 255)",
     "border": "1px solid rgb(240, 234, 226)",
@@ -1301,6 +1308,11 @@
     "border-radius": "5px",
     "color": "rgb(45, 44, 44)",
     "font-family": "\"DM Sans\", \"Avenir Next\", Avenir, sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "rgb(240, 234, 226)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(240, 234, 226)",
@@ -1378,6 +1390,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(45, 44, 44)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(45, 44, 44)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(255, 255, 255)",
+    "border-color": "rgb(240, 234, 226)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(240, 234, 226)",

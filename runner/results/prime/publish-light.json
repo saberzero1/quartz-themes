@@ -1310,52 +1310,56 @@
     "cursor": "pointer"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self": {
     "font-weight": "400"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-children": {
-    "border-inline-start": "0px none rgb(13, 17, 23)",
-    "margin-inline-start": "0px",
-    "padding-inline-start": "32px"
+    "border-inline-start": "2px solid rgba(0, 0, 0, 0.12)",
+    "margin-inline-start": "12px",
+    "padding-inline-start": "4px"
   },
   ".outline-view-outer .outline-view .tree-item > .tree-item-self": {
     "font-weight": "400"
+  },
+  ".popover.hover-popover": {
+    "background-color": "rgb(249, 250, 252)",
+    "border-color": "rgb(197, 204, 219)"
   },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(140, 144, 249)",
@@ -1415,6 +1419,9 @@
     "transition": "all",
     "user-select": "text"
   },
+  ".site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section": {
+    "background-color": "rgb(249, 250, 252)"
+  },
   ".site-body-left-column input.search-bar": {
     "background-color": "rgb(249, 250, 252)",
     "border": "1px solid rgb(197, 204, 219)",
@@ -1422,6 +1429,11 @@
     "border-radius": "5px",
     "color": "rgb(13, 17, 23)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif"
+  },
+  ".site-body-right-column": {
+    "background-color": "rgb(229, 232, 238)",
+    "border-color": "rgb(197, 204, 219)",
+    "border-left-width": "1px"
   },
   ".suggestion-item.is-selected": {
     "background-color": "rgb(229, 232, 238)",
@@ -1499,6 +1511,11 @@
   "div.search-results .suggestion-item": { "border-color": "rgb(13, 17, 23)" },
   "div.search-results .suggestion-item.is-selected": {
     "color": "rgb(13, 17, 23)"
+  },
+  "div.side-body-left-column": {
+    "background-color": "rgb(229, 232, 238)",
+    "border-color": "rgb(197, 204, 219)",
+    "border-right-width": "1px"
   },
   "div.suggestion-item": {
     "background-color": "rgb(229, 232, 238)",

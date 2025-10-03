@@ -1543,6 +1543,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
+body .popover.hover-popover {
+  background-color: rgb(24, 29, 39);
+  border-color: rgb(36, 43, 58);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(190, 183, 223);
   font-family: "Bai Jamjuree";
@@ -1606,6 +1610,12 @@ body .search-results > * {
   transition: all;
   user-select: text;
 }
+body .site-body,
+body.theme-dark,
+body.theme-light,
+body .markdown-preview-sizer.markdown-preview-section {
+  background-color: rgb(24, 29, 39);
+}
 body .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
   border: 1px solid rgb(36, 43, 58);
@@ -1613,6 +1623,11 @@ body .site-body-left-column input.search-bar {
   border-radius: 5px;
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
+}
+body .site-body-right-column {
+  background-color: rgb(24, 29, 39);
+  border-color: rgb(36, 43, 58);
+  border-left-width: 1px;
 }
 body .suggestion-item.is-selected {
   background-color: rgb(219, 84, 97);
@@ -1706,6 +1721,11 @@ body div.search-results .suggestion-item {
 }
 body div.search-results .suggestion-item.is-selected {
   color: rgb(216, 215, 223);
+}
+body div.side-body-left-column {
+  background-color: rgb(24, 29, 39);
+  border-color: rgb(36, 43, 58);
+  border-right-width: 1px;
 }
 body div.suggestion-item {
   background-color: rgb(219, 84, 97);
