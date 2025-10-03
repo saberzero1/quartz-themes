@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for synthwave-84 theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84|Install instructions]]
+
+- Name: `synthwave-84`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/synthwave-84/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

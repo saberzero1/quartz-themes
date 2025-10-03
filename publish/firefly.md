@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for firefly theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/firefly)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/firefly|Install instructions]]
+
+- Name: `firefly`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/firefly/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

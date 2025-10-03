@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for rose-pine-moon theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-moon)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-moon|Install instructions]]
+
+- Name: `rose-pine-moon`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rose-pine-moon/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

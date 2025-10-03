@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for consolas theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/consolas)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/consolas|Install instructions]]
+
+- Name: `consolas`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/consolas/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

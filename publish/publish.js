@@ -835,6 +835,7 @@ const themeListLight = [
   "fancy-a-story",
   "fastppuccin",
   "feather",
+  "flexcyon",
   "flexoki",
   "flexoki-warm",
   "frost",

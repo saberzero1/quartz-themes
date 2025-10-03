@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for prussian-blue theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue|Install instructions]]
+
+- Name: `prussian-blue`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/prussian-blue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

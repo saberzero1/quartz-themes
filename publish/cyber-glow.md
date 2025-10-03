@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for cyber-glow theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/cyber-glow)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/cyber-glow|Install instructions]]
+
+- Name: `cyber-glow`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cyber-glow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

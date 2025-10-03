@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for material-3 theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/material-3)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/material-3|Install instructions]]
+
+- Name: `material-3`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/material-3/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

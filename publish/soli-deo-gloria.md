@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for soli-deo-gloria theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/soli-deo-gloria)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/soli-deo-gloria|Install instructions]]
+
+- Name: `soli-deo-gloria`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/soli-deo-gloria/LICENSE.md"><img src="media/license/cc by-sa 4.0.svg" alt="CC BY-SA 4.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

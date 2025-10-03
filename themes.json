@@ -1452,7 +1452,7 @@
     },
     "flexcyon": {
       "compatibility": ["checking", "collection"],
-      "modes": ["dark"],
+      "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
       "variations": [],

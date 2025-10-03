@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for glass-robo theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/glass-robo)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/glass-robo|Install instructions]]
+
+- Name: `glass-robo`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/glass-robo/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

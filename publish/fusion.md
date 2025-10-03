@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for fusion theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/fusion)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/fusion|Install instructions]]
+
+- Name: `fusion`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/fusion/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for evangelion theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/evangelion)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/evangelion|Install instructions]]
+
+- Name: `evangelion`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/evangelion/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

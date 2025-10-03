@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for abate theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/abate)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/abate|Install instructions]]
+
+- Name: `abate`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/partial.svg" alt="PARTIAL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

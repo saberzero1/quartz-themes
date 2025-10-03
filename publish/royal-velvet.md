@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for royal-velvet theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet|Install instructions]]
+
+- Name: `royal-velvet`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/royal-velvet/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

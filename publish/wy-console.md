@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for wy-console theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/wy-console)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/wy-console|Install instructions]]
+
+- Name: `wy-console`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/partial.svg" alt="PARTIAL"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/wy-console/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

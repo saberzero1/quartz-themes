@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for moonlight theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/moonlight)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/moonlight|Install instructions]]
+
+- Name: `moonlight`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/moonlight/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 
