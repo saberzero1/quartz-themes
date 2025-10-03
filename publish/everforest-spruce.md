@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/everforest-spruce|Install instructions]]
+- Theme author: <a href="https://github.com/vupdivup" target="_blank" rel="noopener noreferrer">vupdivup</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/everforest-spruce|Install instructions]]
 
-- Name: `everforest-spruce`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/everforest-spruce/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name                | Modes                     | Compatibility                                  | License                                                                                                                                                  |
+| ------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `everforest-spruce` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/everforest-spruce/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

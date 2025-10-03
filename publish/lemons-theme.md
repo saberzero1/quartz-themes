@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme|Install instructions]]
+- Theme author: <a href="https://mprojectscode.github.io/" target="_blank" rel="noopener noreferrer">Moritz Jung</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme|Install instructions]]
 
-- Name: `lemons-theme`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lemons-theme/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
+| Name           | Modes                     | Compatibility                                  | License                                                                                                                                                     |
+| -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `lemons-theme` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lemons-theme/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

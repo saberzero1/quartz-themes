@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri|Install instructions]]
+- Theme author: <a href="https://tiniri.vlad.studio" target="_blank" rel="noopener noreferrer">Vlad Gerasimov</a>
+- Support the author: <a href="https://vlad.studio/signup" target="_blank" rel="noopener noreferrer">Donate</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri|Install instructions]]
 
-- Name: `tiniri`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tiniri/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tiniri` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tiniri/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

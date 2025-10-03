@@ -3,3 +3,4 @@ templates
 util
 runner/vault
 runner/quartz
+.obsidian-cache

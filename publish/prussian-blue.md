@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue|Install instructions]]
+- Theme author: <a href="ed.toomwn.xyz" target="_blank" rel="noopener noreferrer">EddieTheEd</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue|Install instructions]]
 
-- Name: `prussian-blue`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/prussian-blue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a>
+| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                                |
+| --------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `prussian-blue` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/prussian-blue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-red|Install instructions]]
+- Theme author: <a href="https://github.com/AfonsoMiranda02" target="_blank" rel="noopener noreferrer">AfonsoMiranda02</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-red|Install instructions]]
 
-- Name: `minimal-red`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-red/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
+| Name          | Modes                     | Compatibility                                  | License                                                                                                                                                        |
+| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `minimal-red` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-red/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

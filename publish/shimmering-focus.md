@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/shimmering-focus|Install instructions]]
+- Theme author: <a href="https://github.com/chrisgrieser/shimmering-focus" target="_blank" rel="noopener noreferrer">pseudometa aka Chris Grieser</a>
+- Support the author: <a href="https://ko-fi.com/pseudometa" target="_blank" rel="noopener noreferrer">Ko-Fi</a> | <a href="https://www.paypal.me/ChrisGrieser" target="_blank" rel="noopener noreferrer">PayPal</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/shimmering-focus|Install instructions]]
 
-- Name: `shimmering-focus`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/shimmering-focus/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name               | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
+| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shimmering-focus` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/shimmering-focus/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

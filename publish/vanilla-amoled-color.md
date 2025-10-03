@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-amoled-color|Install instructions]]
+- Theme author: <a href="https://github.Com/Sskki-exe" target="_blank" rel="noopener noreferrer">sskki</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-amoled-color|Install instructions]]
 
-- Name: `vanilla-amoled-color`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vanilla-amoled-color/LICENSE.md"><img src="media/license/isc.svg" alt="ISC"/></a>
+| Name                   | Modes                     | Compatibility                                  | License                                                                                                                                                     |
+| ---------------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vanilla-amoled-color` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vanilla-amoled-color/LICENSE.md"><img src="media/license/isc.svg" alt="ISC"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

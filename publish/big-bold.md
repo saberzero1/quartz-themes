@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/big-bold|Install instructions]]
+- Theme author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/big-bold|Install instructions]]
 
-- Name: `big-bold`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/big-bold/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
+| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `big-bold` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/big-bold/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
