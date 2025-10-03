@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/abate|Install instructions]]
+- Theme author: <a href="https://github.com/ricedev10" target="_blank" rel="noopener noreferrer">ricedev10</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/abate|Install instructions]]
 
-- Name: `abate`
-- Modes: ![[media/light.svg|LIGHT]]
-- Compatibility: <img src="media/partial.svg" alt="PARTIAL"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name    | Modes                       | Compatibility                                | License                                                                                                                                      |
+| ------- | --------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `abate` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

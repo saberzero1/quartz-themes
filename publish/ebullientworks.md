@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks|Install instructions]]
+- Theme author: <a href="https://github.com/ebullient" target="_blank" rel="noopener noreferrer">Ebullientworks</a>
+- Support the author: <a href="https://www.buymeacoffee.com/ebullient" target="_blank" rel="noopener noreferrer">Donate</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks|Install instructions]]
 
-- Name: `ebullientworks`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ebullientworks/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
+| Name             | Modes                     | Compatibility                                                                                     | License                                                                                                                                                       |
+| ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ebullientworks` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ebullientworks/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

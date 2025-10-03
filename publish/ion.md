@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/ion|Install instructions]]
+- Theme author: <a href="https://github.com/zamsyt" target="_blank" rel="noopener noreferrer">zamsyt</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ion|Install instructions]]
 
-- Name: `ion`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ion/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
+| Name  | Modes                     | Compatibility                                                                                     | License                                                                                                                                                |
+| ----- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ion` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ion/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

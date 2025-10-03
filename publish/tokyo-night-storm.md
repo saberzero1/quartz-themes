@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-storm|Install instructions]]
+- Theme author: <a href="https://github.com/arozx" target="_blank" rel="noopener noreferrer">arozx</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-storm|Install instructions]]
 
-- Name: `tokyo-night-storm`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tokyo-night-storm/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
+| Name                | Modes                     | Compatibility                                  | License                                                                                                                                                                            |
+| ------------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tokyo-night-storm` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tokyo-night-storm/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
