@@ -1723,6 +1723,16 @@ body .popover.hover-popover {
   background-color: rgb(30, 30, 30);
   border-color: rgba(240, 140, 58, 0.4);
 }
+body .published-container {
+  --background-primary: rgb(30, 30, 30);
+  --sidebar-left-background: rgb(38, 38, 38);
+  --sidebar-left-border-color: rgba(240, 140, 58, 0.4);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(38, 38, 38);
+  --sidebar-right-border-color: rgba(240, 140, 58, 0.4);
+  --sidebar-right-border-width: 1px;
+  background-color: rgb(30, 30, 30);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(133, 150, 121);
   font-family:

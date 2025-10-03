@@ -1230,6 +1230,16 @@
     "background-color": "rgb(5, 6, 6)",
     "border-color": "rgb(59, 59, 62)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(5, 6, 6)",
+    "--sidebar-left-background": "rgb(8, 8, 8)",
+    "--sidebar-left-border-color": "rgb(59, 59, 62)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(8, 8, 8)",
+    "--sidebar-right-border-color": "rgb(59, 59, 62)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(5, 6, 6)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(111, 159, 214)",
     "font-family": "\"Open Sans Light Obsidian\", sans-serif",

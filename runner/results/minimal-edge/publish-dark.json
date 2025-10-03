@@ -1225,6 +1225,16 @@
     "background-color": "rgb(37, 41, 51)",
     "border-color": "rgb(145, 145, 145)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(37, 41, 51)",
+    "--sidebar-left-background": "rgb(32, 36, 43)",
+    "--sidebar-left-border-color": "rgb(145, 145, 145)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(32, 36, 43)",
+    "--sidebar-right-border-color": "rgb(145, 145, 145)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(37, 41, 51)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(145, 145, 145)",
     "font-family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",

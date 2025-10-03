@@ -1226,6 +1226,16 @@
     "background-color": "rgba(0, 0, 0, 0)",
     "border-color": "rgba(20, 19, 19, 0.173)"
   },
+  ".published-container": {
+    "--background-primary": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-color": "rgba(20, 19, 19, 0.173)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-color": "rgba(20, 19, 19, 0.173)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgba(0, 0, 0, 0)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(20, 20, 20)",
     "font-family": "Pretendard-Bold",

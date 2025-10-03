@@ -1226,6 +1226,16 @@
     "background-color": "rgb(251, 251, 251)",
     "border-color": "rgba(146, 161, 161, 0.48)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(251, 251, 251)",
+    "--sidebar-left-background": "rgb(251, 251, 251)",
+    "--sidebar-left-border-color": "rgba(146, 161, 161, 0.48)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(251, 251, 251)",
+    "--sidebar-right-border-color": "rgba(146, 161, 161, 0.48)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(251, 251, 251)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(51, 51, 51)",
     "font-family": "Avenir, \"Avenir Next\"",

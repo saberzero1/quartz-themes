@@ -103,7 +103,8 @@ describe("Quartz Theme Style Extraction", () => {
         // Extra styles outside the main container
         const centerElement =
           app.workspace.activeLeaf.containerEl.querySelector(
-            ".workspace-leaf-content > .view-content",
+            //".workspace-leaf-content > .view-content",
+            ".workspace-split.mod-root .view-content",
           );
         computedPublishStyles[`.published-container`] = {};
         if (centerElement) {

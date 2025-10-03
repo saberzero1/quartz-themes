@@ -14232,6 +14232,16 @@ body .popover.hover-popover {
   background-color: light-dark(oklch(100% 0 0deg), oklch(13% 0 0deg));
   border-color: light-dark(oklch(80% 0 0deg), oklch(30% 0 0deg));
 }
+body .published-container {
+  --background-primary: oklch(0.13 0 0);
+  --sidebar-left-background: oklch(0.19 0 0);
+  --sidebar-left-border-color: oklch(0.3 0 0);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: oklch(0.19 0 0);
+  --sidebar-right-border-color: oklch(0.3 0 0);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(oklch(100% 0 0deg), oklch(13% 0 0deg));
+}
 body .published-container .markdown-rendered h1 {
   color: oklch(97.5% 0.03 202.51deg);
   font-family: Manrope, "Inter 4.1", "DM Sans";

@@ -1234,6 +1234,16 @@
     "background-color": "rgb(249, 248, 251)",
     "border-color": "rgb(184, 173, 210)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(249, 248, 251)",
+    "--sidebar-left-background": "rgb(241, 239, 246)",
+    "--sidebar-left-border-color": "rgb(184, 173, 210)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(241, 239, 246)",
+    "--sidebar-right-border-color": "rgb(184, 173, 210)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(249, 248, 251)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(138, 92, 245)",
     "font-family": "Cantarell, Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",

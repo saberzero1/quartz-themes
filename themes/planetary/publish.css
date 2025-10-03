@@ -1618,6 +1618,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(255, 254, 253), rgb(18, 17, 16));
   border-color: light-dark(rgb(246, 226, 219), rgb(35, 33, 32));
 }
+body .published-container {
+  --background-primary: rgb(18, 17, 16);
+  --sidebar-left-background: rgb(24, 23, 22);
+  --sidebar-left-border-color: rgb(35, 33, 32);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(24, 23, 22);
+  --sidebar-right-border-color: rgb(35, 33, 32);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(255, 254, 253), rgb(18, 17, 16));
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(245, 92, 81);
   font-family:

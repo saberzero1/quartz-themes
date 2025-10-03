@@ -1721,6 +1721,16 @@ body .popover.hover-popover {
   background-color: oklch(13.5% 0.01 279.29deg);
   border-color: oklch(25.5% 0.021 279.29deg);
 }
+body .published-container {
+  --background-primary: oklch(0.135 0.01 279.29);
+  --sidebar-left-background: oklch(0.18 0.014 279.29);
+  --sidebar-left-border-color: oklch(0.255 0.021 279.29);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: oklch(0.18 0.014 279.29);
+  --sidebar-right-border-color: oklch(0.255 0.021 279.29);
+  --sidebar-right-border-width: 1px;
+  background-color: oklch(13.5% 0.01 279.29deg);
+}
 body .published-container .markdown-rendered h1 {
   color: oklch(61.5% 0.17 288deg);
   font-family: "Bricolage Grotesque";

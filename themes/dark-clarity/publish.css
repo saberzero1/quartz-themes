@@ -1624,6 +1624,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
   border-color: light-dark(rgb(224, 224, 224), rgb(66, 73, 88));
 }
+body .published-container {
+  --background-primary: rgb(22, 27, 34);
+  --sidebar-left-background: rgb(17, 22, 29);
+  --sidebar-left-border-color: rgb(66, 73, 88);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(17, 22, 29);
+  --sidebar-right-border-color: rgb(66, 73, 88);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(255, 255, 255), rgb(22, 27, 34));
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(121, 107, 245);
   font-family:

@@ -1275,6 +1275,16 @@
     "background-color": "rgb(238, 238, 238)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(238, 238, 238)",
+    "--sidebar-left-background": "rgb(245, 247, 249)",
+    "--sidebar-left-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(245, 247, 249)",
+    "--sidebar-right-border-color": "rgba(0, 0, 0, 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(238, 238, 238)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(38, 38, 38)",
     "font-family": "Consolas, monospace",
