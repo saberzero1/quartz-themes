@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/al-dente|Install instructions]]
+- Theme author: chad-bennett
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/al-dente|Install instructions]]
 
-- Name: `al-dente`
-- Modes: ![[media/light.svg|LIGHT]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/al-dente/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
+| Name       | Modes                       | Compatibility                                  | License                                                                                                                                                 |
+| ---------- | --------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `al-dente` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/al-dente/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

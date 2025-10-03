@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/ethereon|Install instructions]]
+- Theme author: <a href="https://www.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Rohit Saluja</a>
+- Support the author: <a href="https://buymecoffee.rohit04saluja.com" target="_blank" rel="noopener noreferrer">Donate</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ethereon|Install instructions]]
 
-- Name: `ethereon`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ethereon/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
+| Name       | Modes                     | Compatibility                                  | License                                                                                                                                                 |
+| ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ethereon` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ethereon/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

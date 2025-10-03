@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/blood-rush|Install instructions]]
+- Theme author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/blood-rush|Install instructions]]
 
-- Name: `blood-rush`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/blood-rush/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
+| ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `blood-rush` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/blood-rush/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

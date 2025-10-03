@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/onenice|Install instructions]]
+- Theme author: S.Sunhaloo - P.Roy
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/onenice|Install instructions]]
 
-- Name: `onenice`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/onenice/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
+| Name      | Modes                     | Compatibility                                  | License                                                                                                                                                    |
+| --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `onenice` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/onenice/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

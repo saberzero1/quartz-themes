@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/dynamic-color|Install instructions]]
+- Theme author: <a href="https://rodydavis.com" target="_blank" rel="noopener noreferrer">Rody Davis</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/dynamic-color|Install instructions]]
 
-- Name: `dynamic-color`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dynamic-color/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a>
+| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                            |
+| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `dynamic-color` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dynamic-color/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

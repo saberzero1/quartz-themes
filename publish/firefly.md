@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/firefly|Install instructions]]
+- Theme author: Ali Soueidan
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/firefly|Install instructions]]
 
-- Name: `firefly`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/firefly/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
+| Name      | Modes                     | Compatibility                                  | License                                                                                                                                                |
+| --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `firefly` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/firefly/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

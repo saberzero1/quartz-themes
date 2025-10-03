@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/carbon|Install instructions]]
+- Theme author: <a href="https://vhbelvadi.com" target="_blank" rel="noopener noreferrer">V.H. Belvadi</a>
+- Support the author: <a href="https://buymeacoffee.com/vhbelvadi" target="_blank" rel="noopener noreferrer">Donate</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/carbon|Install instructions]]
 
-- Name: `carbon`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/carbon/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
+| Name     | Modes                     | Compatibility                                  | License                                                                                                                                               |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `carbon` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/carbon/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

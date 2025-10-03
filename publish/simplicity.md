@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/simplicity|Install instructions]]
+- Theme author: <a href="https://github.com/Thiews" target="_blank" rel="noopener noreferrer">Thiews</a>
+- Support the author: <a href="https://www.buymeacoffee.com/thiews" target="_blank" rel="noopener noreferrer">Donate</a>
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/simplicity|Install instructions]]
 
-- Name: `simplicity`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/simplicity/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name         | Modes                     | Compatibility                                                                                     | License                                                                                                                                           |
+| ------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `simplicity` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/simplicity/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/neumorphism|Install instructions]]
+- Theme author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/neumorphism|Install instructions]]
 
-- Name: `neumorphism`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neumorphism/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
+| Name          | Modes                     | Compatibility                                  | License                                                                                                                                                        |
+| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `neumorphism` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neumorphism/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/deeper-work|Install instructions]]
+- Theme author: <a href="https://www.lfern.com/" target="_blank" rel="noopener noreferrer">lucas</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/deeper-work|Install instructions]]
 
-- Name: `deeper-work`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/deeper-work/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
+| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                                        |
+| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `deeper-work` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/deeper-work/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

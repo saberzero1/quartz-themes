@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/adrenaline|Install instructions]]
+- Theme author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/adrenaline|Install instructions]]
 
-- Name: `adrenaline`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/full.svg" alt="FULL"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/adrenaline/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name         | Modes                     | Compatibility                          | License                                                                                                                                           |
+| ------------ | ------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `adrenaline` | ![[media/both.svg\|BOTH]] | <img src="media/full.svg" alt="FULL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/adrenaline/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

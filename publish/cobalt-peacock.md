@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/cobalt-peacock|Install instructions]]
+- Theme author: dpavaoman
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/cobalt-peacock|Install instructions]]
 
-- Name: `cobalt-peacock`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cobalt-peacock/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name             | Modes                     | Compatibility                                  | License                                                                                                                                               |
+| ---------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cobalt-peacock` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cobalt-peacock/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

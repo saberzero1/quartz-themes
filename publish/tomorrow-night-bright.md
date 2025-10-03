@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/tomorrow-night-bright|Install instructions]]
+- Theme author: Gerard Braad
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/tomorrow-night-bright|Install instructions]]
 
-- Name: `tomorrow-night-bright`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tomorrow-night-bright/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name                    | Modes                     | Compatibility                                  | License                                                                                                                                                      |
+| ----------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `tomorrow-night-bright` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tomorrow-night-bright/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

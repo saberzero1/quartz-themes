@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/protocolblue|Install instructions]]
+- Theme author: <a href="https://cosmodiumcs.com" target="_blank" rel="noopener noreferrer">bluecosmo</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/protocolblue|Install instructions]]
 
-- Name: `protocolblue`
-- Modes: ![[media/dark.svg|DARK]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/protocolblue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a>
+| Name           | Modes                     | Compatibility                                  | License                                                                                                                                                               |
+| -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `protocolblue` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/protocolblue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

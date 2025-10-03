@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/adwaita|Install instructions]]
+- Theme author: <a href="https://github.com/birneee" target="_blank" rel="noopener noreferrer">@birneee</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/adwaita|Install instructions]]
 
-- Name: `adwaita`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/adwaita/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
+| Name      | Modes                     | Compatibility                                                                                   | License                                                                                                                                        |
+| --------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `adwaita` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/adwaita/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

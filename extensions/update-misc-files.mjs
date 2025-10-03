@@ -14,6 +14,9 @@ import {
   getTheme,
   getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
+  getValueFromDictionary,
+  generateFundingLinks,
+  sanitizeFilenamePreservingEmojis as sanitize,
 } from "../util/util.mjs";
 import { themes } from "../config.mjs";
 import { format } from "./formatter.mjs";
@@ -50,6 +53,27 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
   });
   themeList.forEach((themeName) => {
     const mode = themeName.mode;
+    const manifest = manifestCollection.find(
+      (m) => sanitize(m.name) === themeName.name.split(".")[0],
+    );
+    const authorValue =
+      getValueFromDictionary(manifest, "author") !== ""
+        ? getValueFromDictionary(manifest, "author")
+        : "No author provided";
+    const authorUrlValue =
+      getValueFromDictionary(manifest, "authorUrl") !== ""
+        ? getValueFromDictionary(manifest, "authorUrl")
+        : "";
+    const authorString =
+      authorUrlValue !== ""
+        ? `<a href="${authorUrlValue}" target="_blank" rel="noopener noreferrer">${authorValue}</a>`
+        : authorValue;
+    const fundingLinks = generateFundingLinks(manifest);
+    const fundingString =
+      fundingLinks !== ""
+        ? fundingLinks
+        : "- Support the author: Author did not provide funding links in `manifest.json`";
+
     const compatibilityArray = themes[themeName.theme]["compatibility"];
     if (mode === "both") {
       themeListDark.push(themeName.theme);
@@ -75,12 +99,14 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
     replaceInFile(
       `./publish/${themeName.theme}.md`,
       "//QUARTZ_THEMES_LINK",
-      `[[https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme}|Install instructions]]
+      `- Theme author: ${authorString}
+${fundingString}
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.theme}|Install instructions]]
 
-* Name: \`${themeName.theme}\`
-* Modes: ![[media/${mode}.svg|${mode.toUpperCase()}]]
-* Compatibility: ${compatibilityString.trim()}
-* License: ${licensePublishString}`,
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
+| \`${themeName.theme}\` | ![[media/${mode}.svg\\|${mode.toUpperCase()}]] | ${compatibilityString.trim()} | ${licensePublishString} |
+`,
     );
   });
 

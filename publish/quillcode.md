@@ -1,11 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-[[https://github.com/saberzero1/quartz-themes/tree/master/themes/quillcode|Install instructions]]
+- Theme author: <a href="https://github.com/theaayushpatel" target="_blank" rel="noopener noreferrer">Aayush Patel</a>
+- Support the author: Author did not provide funding links in `manifest.json`
+- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/quillcode|Install instructions]]
 
-- Name: `quillcode`
-- Modes: ![[media/both.svg|BOTH]]
-- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
-- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/quillcode/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
+| Name        | Modes                     | Compatibility                                  | License                                                                                                                                                  |
+| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `quillcode` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/quillcode/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
