@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for dark-graphite-pie theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite-pie)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite-pie|Install instructions]]
+
+- Name: `dark-graphite-pie`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dark-graphite-pie/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

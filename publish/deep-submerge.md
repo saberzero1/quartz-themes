@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for deep-submerge theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/deep-submerge)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/deep-submerge|Install instructions]]
+
+- Name: `deep-submerge`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/deep-submerge/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

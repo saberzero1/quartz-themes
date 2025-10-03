@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for tomorrow theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/tomorrow)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/tomorrow|Install instructions]]
+
+- Name: `tomorrow`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tomorrow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

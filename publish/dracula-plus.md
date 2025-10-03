@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for dracula-plus theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-plus)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-plus|Install instructions]]
+
+- Name: `dracula-plus`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dracula-plus/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

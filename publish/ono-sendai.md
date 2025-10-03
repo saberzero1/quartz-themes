@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for ono-sendai theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/ono-sendai)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/ono-sendai|Install instructions]]
+
+- Name: `ono-sendai`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ono-sendai/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

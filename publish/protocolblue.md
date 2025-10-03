@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for protocolblue theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/protocolblue)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/protocolblue|Install instructions]]
+
+- Name: `protocolblue`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/protocolblue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

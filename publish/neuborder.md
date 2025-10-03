@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for neuborder theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/neuborder)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/neuborder|Install instructions]]
+
+- Name: `neuborder`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neuborder/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

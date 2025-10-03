@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for muted-blue theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/muted-blue)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/muted-blue|Install instructions]]
+
+- Name: `muted-blue`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/muted-blue/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

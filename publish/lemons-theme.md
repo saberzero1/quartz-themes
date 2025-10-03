@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for lemons-theme theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/lemons-theme|Install instructions]]
+
+- Name: `lemons-theme`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lemons-theme/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

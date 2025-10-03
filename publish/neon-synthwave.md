@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for neon-synthwave theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/neon-synthwave)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/neon-synthwave|Install instructions]]
+
+- Name: `neon-synthwave`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neon-synthwave/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

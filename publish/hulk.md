@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for hulk theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/hulk)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/hulk|Install instructions]]
+
+- Name: `hulk`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hulk/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

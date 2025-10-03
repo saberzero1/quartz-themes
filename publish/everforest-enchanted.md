@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for everforest-enchanted theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/everforest-enchanted)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/everforest-enchanted|Install instructions]]
+
+- Name: `everforest-enchanted`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/everforest-enchanted/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

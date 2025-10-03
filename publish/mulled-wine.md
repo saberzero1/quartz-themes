@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for mulled-wine theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/mulled-wine)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/mulled-wine|Install instructions]]
+
+- Name: `mulled-wine`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/mulled-wine/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

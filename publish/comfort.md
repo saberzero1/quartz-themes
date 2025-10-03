@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for comfort theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort|Install instructions]]
+
+- Name: `comfort`
+- Modes: ![[media/light.svg|LIGHT]]
+- Compatibility: <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

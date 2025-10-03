@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for vanilla-amoled-color theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-amoled-color)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-amoled-color|Install instructions]]
+
+- Name: `vanilla-amoled-color`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vanilla-amoled-color/LICENSE.md"><img src="media/license/isc.svg" alt="ISC"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

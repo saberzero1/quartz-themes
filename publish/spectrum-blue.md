@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for spectrum-blue theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/spectrum-blue)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/spectrum-blue|Install instructions]]
+
+- Name: `spectrum-blue`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/spectrum-blue/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

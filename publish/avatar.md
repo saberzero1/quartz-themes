@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for avatar theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/avatar)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/avatar|Install instructions]]
+
+- Name: `avatar`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/avatar/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

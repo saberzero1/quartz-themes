@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for catppuccin.frappe theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.frappe)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.frappe|Install instructions]]
+
+- Name: `catppuccin.frappe`
+- Modes: ![[media/both.svg|BOTH]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catppuccin.frappe/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a>
 
 # Markdown Formatting Guide for Obsidian
 

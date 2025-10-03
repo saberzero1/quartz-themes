@@ -1,6 +1,11 @@
 > This page is to quickly check how all features are rendered.
 
-[Install instructions for noctilux theme](https://github.com/saberzero1/quartz-themes/tree/master/themes/noctilux)
+[[https://github.com/saberzero1/quartz-themes/tree/master/themes/noctilux|Install instructions]]
+
+- Name: `noctilux`
+- Modes: ![[media/dark.svg|DARK]]
+- Compatibility: <img src="media/checking.svg" alt="CHECKING"/>
+- License: <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/noctilux/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a>
 
 # Markdown Formatting Guide for Obsidian
 
