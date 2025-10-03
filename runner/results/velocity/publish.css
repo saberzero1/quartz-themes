@@ -2047,6 +2047,19 @@ body .popover.hover-popover {
     oklch(100% 0.05 283deg / 0.0625)
   );
 }
+body .published-container {
+  --background-primary: oklch(0.24 0.00375 275);
+  --sidebar-left-background: rgba(0, 0, 0, 0);
+  --sidebar-left-border-color: oklch(1 0.05 283 / 0.0625);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgba(0, 0, 0, 0);
+  --sidebar-right-border-color: oklch(1 0.05 283 / 0.0625);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(
+    oklch(98.8% 0.0015 281deg),
+    oklch(24% 0.00375 275deg)
+  );
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(oklch(22.5% 0.0005 281deg), oklch(93.75% 0.00375 275deg));
   font-family:

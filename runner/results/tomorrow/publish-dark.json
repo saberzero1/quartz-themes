@@ -1211,6 +1211,16 @@
     "background-color": "rgb(29, 31, 33)",
     "border-color": "rgb(24, 26, 30)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(29, 31, 33)",
+    "--sidebar-left-background": "rgb(40, 42, 46)",
+    "--sidebar-left-border-color": "rgb(24, 26, 30)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(40, 42, 46)",
+    "--sidebar-right-border-color": "rgb(24, 26, 30)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(29, 31, 33)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(197, 200, 198)",
     "font-family": "\"??\", \"Fira Code\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",

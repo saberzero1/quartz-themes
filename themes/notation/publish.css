@@ -1628,6 +1628,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
 }
+body .published-container {
+  --background-primary: rgb(47, 52, 55);
+  --sidebar-left-background: rgb(54, 60, 63);
+  --sidebar-left-border-color: rgba(255, 255, 255, 0.14);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(54, 60, 63);
+  --sidebar-right-border-color: rgba(255, 255, 255, 0.14);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
   font-family:

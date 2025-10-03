@@ -1425,6 +1425,16 @@
     "background-color": "rgb(248, 248, 248)",
     "border-color": "rgb(184, 184, 184)"
   },
+  ".published-container": {
+    "--background-primary": "rgb(248, 248, 248)",
+    "--sidebar-left-background": "rgb(227, 227, 227)",
+    "--sidebar-left-border-color": "rgb(184, 184, 184)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "rgb(227, 227, 227)",
+    "--sidebar-right-border-color": "rgb(184, 184, 184)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "rgb(248, 248, 248)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(196, 154, 82)",
     "font-family": "\"Architects Daughter\"",

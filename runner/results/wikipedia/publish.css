@@ -1441,6 +1441,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
   border-color: light-dark(rgb(162, 169, 177), rgba(218, 225, 234, 0.192));
 }
+body .published-container {
+  --background-primary: rgb(30, 31, 33);
+  --sidebar-left-background: rgb(39, 40, 43);
+  --sidebar-left-border-color: rgba(218, 225, 234, 0.192);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(39, 40, 43);
+  --sidebar-right-border-color: rgba(218, 225, 234, 0.192);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(255, 255, 255), rgb(30, 31, 33));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   font-family: "Linux Libertine", Georgia, Times, serif;

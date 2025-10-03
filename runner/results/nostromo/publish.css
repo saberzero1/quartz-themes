@@ -1458,6 +1458,16 @@ body .popover.hover-popover {
   background-color: rgb(29, 32, 33);
   border-color: rgba(168, 168, 168, 0.2);
 }
+body .published-container {
+  --background-primary: rgb(29, 32, 33);
+  --sidebar-left-background: rgb(40, 40, 40);
+  --sidebar-left-border-color: rgba(168, 168, 168, 0.2);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(40, 40, 40);
+  --sidebar-right-border-color: rgba(168, 168, 168, 0.2);
+  --sidebar-right-border-width: 1px;
+  background-color: rgb(29, 32, 33);
+}
 body .published-container .markdown-rendered h1 {
   color: rgb(232, 216, 163);
   font-family: "Share Tech Mono", "Courier New", monospace;

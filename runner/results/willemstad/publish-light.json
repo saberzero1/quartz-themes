@@ -1645,6 +1645,16 @@
     "background-color": "oklch(1 0 0)",
     "border-color": "oklch(0.8 0 0)"
   },
+  ".published-container": {
+    "--background-primary": "oklch(1 0 0)",
+    "--sidebar-left-background": "oklch(0.95 0 0)",
+    "--sidebar-left-border-color": "oklch(0.8 0 0)",
+    "--sidebar-left-border-width": "1px",
+    "--sidebar-right-background": "oklch(0.95 0 0)",
+    "--sidebar-right-border-color": "oklch(0.8 0 0)",
+    "--sidebar-right-border-width": "1px",
+    "background-color": "oklch(1 0 0)"
+  },
   ".published-container .markdown-rendered h1": {
     "color": "oklch(0.975 0.03 202.51)",
     "font-family": "Manrope, \"Inter 4.1\", \"DM Sans\"",

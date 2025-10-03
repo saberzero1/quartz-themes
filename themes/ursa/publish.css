@@ -1606,6 +1606,16 @@ body .popover.hover-popover {
   background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
   border-color: rgba(146, 161, 161, 0.48);
 }
+body .published-container {
+  --background-primary: rgb(30, 32, 34);
+  --sidebar-left-background: rgb(30, 32, 34);
+  --sidebar-left-border-color: rgba(146, 161, 161, 0.48);
+  --sidebar-left-border-width: 1px;
+  --sidebar-right-background: rgb(30, 32, 34);
+  --sidebar-right-border-color: rgba(146, 161, 161, 0.48);
+  --sidebar-right-border-width: 1px;
+  background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+}
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
   font-family: Avenir, "Avenir Next";
