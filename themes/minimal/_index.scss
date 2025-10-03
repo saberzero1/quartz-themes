@@ -6,24 +6,24 @@
 }
 
 :root:root {
-  --light: #d4d4d4 !important;
-  --gray: hsl(0, -20%, 46%) !important;
-  --darkgray: hsl(0, -20%, 46%) !important;
+  --light: #3f3f3f !important;
+  --gray: hsl(0, -20%, 60%) !important;
+  --darkgray: hsl(0, -20%, 60%) !important;
   --highlight: #e5b567 !important;
-  --secondary: #6a8695 !important;
+  --secondary: #889eaa !important;
   --tertiary: #a8c373 !important;
-  --lightgray: hsl(0, -10%, 71%) !important;
-  --dark: #0f0f0f !important;
+  --lightgray: hsl(0, -10%, 35%) !important;
+  --dark: hsl(0, -10%, 82%) !important;
 
-  --code-background: #f5f5f5 !important;
-  --code-comment: hsl(0, -10%, 71%) !important;
+  --code-background: #212121 !important;
+  --code-comment: hsl(0, -10%, 35%) !important;
   --code-function: #e5b567 !important;
   --code-important: #d5763f !important;
   --code-keyword: #b05279 !important;
-  --code-normal: #0f0f0f !important;
+  --code-normal: hsl(0, -10%, 82%) !important;
   --code-operator: #d04255 !important;
   --code-property: #73bbb2 !important;
-  --code-punctuation: hsl(0, -20%, 46%) !important;
+  --code-punctuation: hsl(0, -20%, 60%) !important;
   --code-string: #a8c373 !important;
   --code-tag: #d04255 !important;
   --code-value: #9e86c8 !important;
@@ -206,8 +206,8 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(245, 245, 245), rgb(33, 33, 33)) !important;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    background: rgb(33, 33, 33);
+    color: rgb(209, 209, 209);
   }
 
   .callout {
@@ -670,16 +670,16 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(181, 181, 181), rgb(89, 89, 89));
+    color: rgb(89, 89, 89);
     text-decoration: none solid rgb(89, 89, 89);
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    background-color: rgb(33, 33, 33);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
+    color: rgb(153, 153, 153);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -701,7 +701,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
+    color: rgb(153, 153, 153);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -720,7 +720,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
+    color: rgb(153, 153, 153);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -739,16 +739,13 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(117, 117, 117, 0.12),
-      rgba(140, 140, 140, 0.12)
-    );
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    background-color: rgba(140, 140, 140, 0.12);
+    color: rgb(209, 209, 209);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
   }
 
   .graph > .global-graph-outer {
@@ -758,7 +755,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
   }
 
   .katex > .katex-html {
@@ -799,23 +796,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(38, 38, 38);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    background-color: rgb(33, 33, 33);
+    border-color: rgb(54, 54, 54);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    background-color: rgb(33, 33, 33);
+    border-color: rgb(54, 54, 54);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    background-color: rgb(33, 33, 33);
   }
 
   .page > #quartz-body div.center {
@@ -826,7 +823,7 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     text-decoration: none solid rgb(209, 209, 209);
     text-decoration-color: rgb(209, 209, 209);
   }
@@ -834,7 +831,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -863,7 +860,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -892,7 +889,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -921,7 +918,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -950,7 +947,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -979,7 +976,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1008,7 +1005,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1035,16 +1032,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    background-color: rgb(38, 38, 38);
+    border-color: rgb(54, 54, 54);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(38, 38, 38);
     border: 1px solid rgb(54, 54, 54);
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
     border-radius: 5px;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1060,7 +1057,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(38, 38, 38);
     border: 1px solid rgb(89, 89, 89);
     border-radius: 12px;
     box-shadow:
@@ -1071,7 +1068,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1102,7 +1099,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
   }
 
   .search
@@ -1111,7 +1108,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-color: rgb(209, 209, 209);
   }
 
   .search
@@ -1156,7 +1153,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
   }
 
   .search
@@ -1177,21 +1174,18 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(117, 117, 117, 0.12),
-      rgba(140, 140, 140, 0.12)
-    );
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    background-color: rgba(140, 140, 140, 0.12);
+    color: rgb(209, 209, 209);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(194, 194, 194), rgb(89, 89, 89));
+    border-color: rgb(89, 89, 89);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(255, 255, 255), rgb(38, 38, 38));
+    background-color: rgb(38, 38, 38);
     border: unset;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 0px;
@@ -1210,12 +1204,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(
-      rgba(117, 117, 117, 0.12),
-      rgba(140, 140, 140, 0.12)
-    );
+    background-color: rgba(140, 140, 140, 0.12);
     border-radius: 4px;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
   }
 
   .search
@@ -1236,20 +1227,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(117, 117, 117, 0.12),
-      rgba(140, 140, 140, 0.12)
-    );
+    background-color: rgba(140, 140, 140, 0.12);
     border-radius: 4px;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
   }
 
   .text-highlight {
-    background-color: light-dark(
-      rgba(255, 225, 0, 0.5),
-      rgba(255, 177, 80, 0.3)
-    );
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    background-color: rgba(255, 177, 80, 0.3);
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1282,22 +1267,22 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(209, 209, 209);
-    border-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-color: rgb(209, 209, 209);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
   }
 
   :root {
-    --code-background: hsl(0, 0%, 96%);
-    --code-comment: hsl(0, calc(0% - 10%), calc(96% - 25%));
+    --code-background: hsl(0, 0%, calc(15% - 2%));
+    --code-comment: hsl(0, calc(0% - 10%), calc(15% + 20%));
     --code-function: #e5b567;
     --code-important: #d5763f;
     --code-keyword: #b05279;
-    --code-normal: hsl(0, 0%, calc(96% - 90%));
+    --code-normal: hsl(0, calc(0% - 10%), calc(15% + 67%));
     --code-operator: #d04255;
     --code-property: #73bbb2;
-    --code-punctuation: hsl(0, calc(0% - 20%), calc(96% - 50%));
+    --code-punctuation: hsl(0, calc(0% - 20%), calc(15% + 45%));
     --code-string: #a8c373;
     --code-tag: #d04255;
     --code-value: #9e86c8;
@@ -1305,7 +1290,7 @@ body {
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1333,7 +1318,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(106, 134, 149), rgb(136, 158, 170));
+    color: rgb(136, 158, 170);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1401,7 +1386,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
+    color: rgb(153, 153, 153);
   }
 
   blockquote {
@@ -1428,11 +1413,11 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    background-color: rgb(33, 33, 33);
     border: 0px solid rgb(54, 54, 54);
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
     border-radius: 4px;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1447,7 +1432,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1479,7 +1464,7 @@ body {
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1496,17 +1481,17 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: #d4d4d4;
-    --quartz-graph-node: hsl(0, calc(0% - 20%), calc(96% - 50%));
+    --quartz-graph-line: #3f3f3f;
+    --quartz-graph-node: hsl(0, calc(0% - 20%), calc(15% + 45%));
     --quartz-graph-node-attachment: #e5b567;
-    --quartz-graph-node-focused: hsl(201, 17%, 50%);
+    --quartz-graph-node-focused: hsl(201, 17%, 60%);
     --quartz-graph-node-tag: #a8c373;
-    --quartz-graph-node-unresolved: hsl(0, calc(0% - 10%), calc(96% - 25%));
-    --quartz-graph-text: hsl(0, 0%, calc(96% - 90%));
+    --quartz-graph-node-unresolved: hsl(0, calc(0% - 10%), calc(15% + 20%));
+    --quartz-graph-text: hsl(0, calc(0% - 10%), calc(15% + 67%));
   }
 
   h1 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1523,7 +1508,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1540,7 +1525,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1557,7 +1542,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1574,7 +1559,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1591,7 +1576,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1609,7 +1594,7 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
     border-style: solid none none;
     border-top: 2px solid rgb(54, 54, 54);
     box-shadow: none;
@@ -1619,7 +1604,7 @@ body {
   input[type="checkbox"] {
     appearance: none;
     border: 1px solid rgb(89, 89, 89);
-    border-color: light-dark(rgb(181, 181, 181), rgb(89, 89, 89));
+    border-color: rgb(89, 89, 89);
     border-radius: 50%;
     margin: 0px 8px 0px -24px;
     margin-inline-end: 8px;
@@ -1706,17 +1691,17 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     cursor: auto;
     filter: none;
     font-family:
@@ -1745,7 +1730,7 @@ body {
   pre > code {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(209, 209, 209);
-    border-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-color: rgb(209, 209, 209);
     border-radius: 4px;
     overflow-x: visible;
     padding: 0px;
@@ -1753,9 +1738,9 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    background-color: rgb(33, 33, 33);
     border: 0px solid rgb(54, 54, 54);
-    border-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+    border-color: rgb(54, 54, 54);
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1763,7 +1748,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     text-align: start;
   }
 
@@ -1776,9 +1761,9 @@ body {
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(209, 209, 209);
-    border-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-color: rgb(209, 209, 209);
     border-radius: 0px;
-    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    color: rgb(209, 209, 209);
     content: normal;
     pointer-events: auto;
     transform: none;

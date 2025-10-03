@@ -111,7 +111,7 @@ html {
 
 body {
   &[data-slug] {
-    background: rgb(33, 33, 33);
+    background: rgb(246, 246, 246);
     color: rgb(255, 255, 255);
   }
 
@@ -120,7 +120,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -152,7 +152,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -185,7 +185,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -218,7 +218,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -251,7 +251,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -284,7 +284,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -317,7 +317,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -350,7 +350,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -383,7 +383,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -416,7 +416,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -449,7 +449,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -482,7 +482,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -515,7 +515,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -548,7 +548,7 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: darken;
     padding: 16px;
   }
 
@@ -580,7 +580,7 @@ body {
   }
 
   .explorer .explorer-content {
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(246, 246, 246);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -650,7 +650,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     color: rgb(255, 255, 255);
     cursor: default;
   }
@@ -711,23 +711,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: rgb(20, 21, 21);
+    background-color: rgb(255, 255, 255);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(246, 246, 246);
     border-color: rgb(81, 81, 81);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(246, 246, 246);
     border-color: rgb(81, 81, 81);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(246, 246, 246);
   }
 
   .page > #quartz-body div.center {
@@ -961,14 +961,14 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: rgb(20, 21, 21);
+    background-color: rgb(255, 255, 255);
     border-color: rgb(81, 81, 81);
   }
 
   .search > .search-button {
-    background-color: rgb(42, 42, 42);
-    border: 1px solid rgb(54, 54, 54);
-    border-color: rgb(54, 54, 54);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
     border-radius: 4px;
     color: rgb(255, 255, 255);
     font-family:
@@ -988,7 +988,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(20, 21, 21);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgb(136, 122, 163);
     border-radius: 16px;
     box-shadow:
@@ -1107,7 +1107,7 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     color: rgb(255, 255, 255);
     font-weight: 400;
   }
@@ -1118,9 +1118,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(20, 21, 21);
+    background-color: rgb(255, 255, 255);
     border: unset;
-    border-bottom: 1px solid rgb(33, 33, 33);
+    border-bottom: 1px solid rgb(246, 246, 246);
     border-radius: 0px;
     box-shadow: none;
   }
@@ -1137,7 +1137,7 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
     color: rgb(255, 255, 255);
   }
@@ -1160,7 +1160,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(255, 255, 255, 0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     border-radius: 4px;
     color: rgb(255, 255, 255);
   }
@@ -1255,7 +1255,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(157, 147, 181);
+    color: rgb(136, 122, 163);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1273,7 +1273,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(157, 147, 181) none 0px;
+    outline: rgb(136, 122, 163) none 0px;
     text-decoration: underline solid rgba(136, 122, 163, 0.3);
     text-decoration-color: rgba(136, 122, 163, 0.3);
     text-decoration-line: underline;
@@ -1355,8 +1355,8 @@ body {
 
   code {
     background-color: rgb(81, 81, 81);
-    border: 0px solid rgb(54, 54, 54);
-    border-color: rgb(54, 54, 54);
+    border: 0px solid rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
     border-radius: 12px;
     color: rgb(219, 187, 67);
     font-family:
@@ -1426,15 +1426,11 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: #3f3f3f;
+    --quartz-graph-line: #d4d4d4;
     --quartz-graph-node: rgba(255, 255, 255, 0.8);
-    --quartz-graph-node-attachment: #e0de71;
-    --quartz-graph-node-focused: hsl(
-      calc(260.488 - 3),
-      calc(18.2222% * 1.02),
-      calc(55.8824% * 1.15)
-    );
-    --quartz-graph-node-tag: #44cf6e;
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(260.488, 18.2222%, 55.8824%);
+    --quartz-graph-node-tag: #08b94e;
     --quartz-graph-node-unresolved: rgba(255, 255, 255, 0.6);
     --quartz-graph-text: rgba(255, 255, 255, 1);
   }
@@ -1596,7 +1592,7 @@ body {
   }
 
   li.depth-0 + li.depth-1 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1606,7 +1602,7 @@ body {
   }
 
   li.depth-1 + li.depth-2 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1616,7 +1612,7 @@ body {
   }
 
   li.depth-2 + li.depth-3 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1626,7 +1622,7 @@ body {
   }
 
   li.depth-3 + li.depth-4 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1636,7 +1632,7 @@ body {
   }
 
   li.depth-4 + li.depth-5 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1646,7 +1642,7 @@ body {
   }
 
   li.depth-5 + li.depth-6 {
-    border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+    border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
     margin-inline-start: 12px;
     padding-inline-start: 4px;
   }
@@ -1702,8 +1698,8 @@ body {
 
   pre:has(> code) {
     background-color: rgb(51, 51, 51);
-    border: 0px solid rgb(54, 54, 54);
-    border-color: rgb(54, 54, 54);
+    border: 0px solid rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
     border-radius: 12px;
     overflow-x: auto;
     padding: 12px 16px;

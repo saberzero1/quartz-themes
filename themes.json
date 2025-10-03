@@ -1580,7 +1580,7 @@
         "flexcyon@@flexcyon-editor-bg-width": 15,
         "flexcyon@@flexcyon-editor-dot-size": 2.5,
         "flexcyon@@flexcyon-workspace-cards-tui-ext": true,
-        "flexcyon@@theme-variant": "flexcyon-syntax-catppuccin",
+        "flexcyon@@theme-variant": "flexcyon-tui-callouts",
         "flexcyon@@flexcyon-callout-icon-right-padding": 4,
         "flexcyon@@flexcyon-callout-first-codeblock-margin-top": 1,
         "flexcyon@@flexcyon-callout-vertical-margin": 1,

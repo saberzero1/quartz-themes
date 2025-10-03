@@ -1,25 +1,25 @@
 {
   "&[data-slug]": {
-    "background": "rgb(18, 18, 18)",
-    "color": "rgb(144, 144, 144)"
+    "background": "rgb(246, 246, 246)",
+    "color": "rgb(112, 112, 112)"
   },
   ".callout": {
-    "--callout-color": "151,\n    192,\n    243",
+    "--callout-color": "8, 109, 221",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
-  ".callout .callout-title .callout-icon": { "color": "rgb(151, 192, 243)" },
+  ".callout .callout-title .callout-icon": { "color": "rgb(8, 109, 221)" },
   ".callout .callout-title > .callout-title-inner > p": {
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout > .callout-content": {
@@ -27,27 +27,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"]": {
-    "--callout-color": "139,\n    240,\n    219",
-    "background-color": "rgba(139, 240, 219, 0.1)",
-    "border-color": "rgb(139, 240, 219)",
+    "--callout-color": "0, 191, 188",
+    "background-color": "rgba(0, 191, 188, 0.1)",
+    "border-color": "rgb(0, 191, 188)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(139, 240, 219)",
+    "color": "rgb(0, 191, 188)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"abstract\"] .callout-title .callout-icon": {
-    "color": "rgb(139, 240, 219)",
-    "background-color": "rgb(139, 240, 219)"
+    "color": "rgb(0, 191, 188)",
+    "background-color": "rgb(0, 191, 188)"
   },
   ".callout[data-callout=\"abstract\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(139, 240, 219)",
+    "color": "rgb(0, 191, 188)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"abstract\"] > .callout-content": {
@@ -55,27 +55,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"]": {
-    "--callout-color": "245,\n    152,\n    143",
-    "background-color": "rgba(245, 152, 143, 0.1)",
-    "border-color": "rgb(245, 152, 143)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgb(233, 49, 71)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"bug\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"bug\"] .callout-title .callout-icon": {
-    "color": "rgb(245, 152, 143)",
-    "background-color": "rgb(245, 152, 143)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"bug\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"bug\"] > .callout-content": {
@@ -83,27 +83,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"]": {
-    "--callout-color": "245,\n    152,\n    143",
-    "background-color": "rgba(245, 152, 143, 0.1)",
-    "border-color": "rgb(245, 152, 143)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgb(233, 49, 71)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"danger\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"danger\"] .callout-title .callout-icon": {
-    "color": "rgb(245, 152, 143)",
-    "background-color": "rgb(245, 152, 143)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"danger\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"danger\"] > .callout-content": {
@@ -111,27 +111,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"]": {
-    "--callout-color": "172,\n    157,\n    242",
-    "background-color": "rgba(172, 157, 242, 0.1)",
-    "border-color": "rgb(172, 157, 242)",
+    "--callout-color": "120, 82, 238",
+    "background-color": "rgba(120, 82, 238, 0.1)",
+    "border-color": "rgb(120, 82, 238)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"example\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(172, 157, 242)",
+    "color": "rgb(120, 82, 238)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"example\"] .callout-title .callout-icon": {
-    "color": "rgb(172, 157, 242)",
-    "background-color": "rgb(172, 157, 242)"
+    "color": "rgb(120, 82, 238)",
+    "background-color": "rgb(120, 82, 238)"
   },
   ".callout[data-callout=\"example\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(172, 157, 242)",
+    "color": "rgb(120, 82, 238)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"example\"] > .callout-content": {
@@ -139,27 +139,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"]": {
-    "--callout-color": "245,\n    152,\n    143",
-    "background-color": "rgba(245, 152, 143, 0.1)",
-    "border-color": "rgb(245, 152, 143)",
+    "--callout-color": "233, 49, 71",
+    "background-color": "rgba(233, 49, 71, 0.1)",
+    "border-color": "rgb(233, 49, 71)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"failure\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"failure\"] .callout-title .callout-icon": {
-    "color": "rgb(245, 152, 143)",
-    "background-color": "rgb(245, 152, 143)"
+    "color": "rgb(233, 49, 71)",
+    "background-color": "rgb(233, 49, 71)"
   },
   ".callout[data-callout=\"failure\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(245, 152, 143)",
+    "color": "rgb(233, 49, 71)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"failure\"] > .callout-content": {
@@ -167,27 +167,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"]": {
-    "--callout-color": "151,\n    192,\n    243",
-    "background-color": "rgba(151, 192, 243, 0.1)",
-    "border-color": "rgb(151, 192, 243)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgb(8, 109, 221)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"info\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"info\"] .callout-title .callout-icon": {
-    "color": "rgb(151, 192, 243)",
-    "background-color": "rgb(151, 192, 243)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"info\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"info\"] > .callout-content": {
@@ -195,27 +195,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"]": {
-    "--callout-color": "151,\n    192,\n    243",
-    "background-color": "rgba(151, 192, 243, 0.1)",
-    "border-color": "rgb(151, 192, 243)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgb(8, 109, 221)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"note\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"note\"] .callout-title .callout-icon": {
-    "color": "rgb(151, 192, 243)",
-    "background-color": "rgb(151, 192, 243)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"note\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"note\"] > .callout-content": {
@@ -223,27 +223,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"]": {
-    "--callout-color": "255,\n    200,\n    163",
-    "background-color": "rgba(255, 200, 163, 0.1)",
-    "border-color": "rgb(255, 200, 163)",
+    "--callout-color": "236, 117, 0",
+    "background-color": "rgba(236, 117, 0, 0.1)",
+    "border-color": "rgb(236, 117, 0)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"question\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(255, 200, 163)",
+    "color": "rgb(236, 117, 0)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"question\"] .callout-title .callout-icon": {
-    "color": "rgb(255, 200, 163)",
-    "background-color": "rgb(255, 200, 163)"
+    "color": "rgb(236, 117, 0)",
+    "background-color": "rgb(236, 117, 0)"
   },
   ".callout[data-callout=\"question\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(255, 200, 163)",
+    "color": "rgb(236, 117, 0)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"question\"] > .callout-content": {
@@ -257,7 +257,7 @@
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"quote\"] .callout-title": {
@@ -279,27 +279,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"]": {
-    "--callout-color": "165,\n    230,\n    147",
-    "background-color": "rgba(165, 230, 147, 0.1)",
-    "border-color": "rgb(165, 230, 147)",
+    "--callout-color": "8, 185, 78",
+    "background-color": "rgba(8, 185, 78, 0.1)",
+    "border-color": "rgb(8, 185, 78)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"success\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(165, 230, 147)",
+    "color": "rgb(8, 185, 78)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"success\"] .callout-title .callout-icon": {
-    "color": "rgb(165, 230, 147)",
-    "background-color": "rgb(165, 230, 147)"
+    "color": "rgb(8, 185, 78)",
+    "background-color": "rgb(8, 185, 78)"
   },
   ".callout[data-callout=\"success\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(165, 230, 147)",
+    "color": "rgb(8, 185, 78)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"success\"] > .callout-content": {
@@ -307,27 +307,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"]": {
-    "--callout-color": "139,\n    240,\n    219",
-    "background-color": "rgba(139, 240, 219, 0.1)",
-    "border-color": "rgb(139, 240, 219)",
+    "--callout-color": "0, 191, 188",
+    "background-color": "rgba(0, 191, 188, 0.1)",
+    "border-color": "rgb(0, 191, 188)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"tip\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(139, 240, 219)",
+    "color": "rgb(0, 191, 188)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"tip\"] .callout-title .callout-icon": {
-    "color": "rgb(139, 240, 219)",
-    "background-color": "rgb(139, 240, 219)"
+    "color": "rgb(0, 191, 188)",
+    "background-color": "rgb(0, 191, 188)"
   },
   ".callout[data-callout=\"tip\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(139, 240, 219)",
+    "color": "rgb(0, 191, 188)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"tip\"] > .callout-content": {
@@ -335,27 +335,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"]": {
-    "--callout-color": "151,\n    192,\n    243",
-    "background-color": "rgba(151, 192, 243, 0.1)",
-    "border-color": "rgb(151, 192, 243)",
+    "--callout-color": "8, 109, 221",
+    "background-color": "rgba(8, 109, 221, 0.1)",
+    "border-color": "rgb(8, 109, 221)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"todo\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"todo\"] .callout-title .callout-icon": {
-    "color": "rgb(151, 192, 243)",
-    "background-color": "rgb(151, 192, 243)"
+    "color": "rgb(8, 109, 221)",
+    "background-color": "rgb(8, 109, 221)"
   },
   ".callout[data-callout=\"todo\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(151, 192, 243)",
+    "color": "rgb(8, 109, 221)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"todo\"] > .callout-content": {
@@ -363,27 +363,27 @@
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"]": {
-    "--callout-color": "255,\n    200,\n    163",
-    "background-color": "rgba(255, 200, 163, 0.1)",
-    "border-color": "rgb(255, 200, 163)",
+    "--callout-color": "236, 117, 0",
+    "background-color": "rgba(236, 117, 0, 0.1)",
+    "border-color": "rgb(236, 117, 0)",
     "border-radius": "0px",
     "border-style": "solid",
     "border-width": "0px 0px 0px 4px",
-    "mix-blend-mode": "lighten",
+    "mix-blend-mode": "darken",
     "padding": "12px 12px 12px 24px"
   },
   ".callout[data-callout=\"warning\"] .callout-title": {
     "border-radius": "0px",
-    "color": "rgb(255, 200, 163)",
+    "color": "rgb(236, 117, 0)",
     "gap": "4px",
     "padding": "0px"
   },
   ".callout[data-callout=\"warning\"] .callout-title .callout-icon": {
-    "color": "rgb(255, 200, 163)",
-    "background-color": "rgb(255, 200, 163)"
+    "color": "rgb(236, 117, 0)",
+    "background-color": "rgb(236, 117, 0)"
   },
   ".callout[data-callout=\"warning\"] .callout-title > .callout-title-inner > p": {
-    "color": "rgb(255, 200, 163)",
+    "color": "rgb(236, 117, 0)",
     "font-weight": "400"
   },
   ".callout[data-callout=\"warning\"] > .callout-content": {
@@ -391,34 +391,34 @@
     "padding": "0px"
   },
   ".data-footnote-backref": {
-    "color": "rgb(80, 80, 80)",
-    "text-decoration": "none solid rgb(80, 80, 80)"
+    "color": "rgb(189, 189, 189)",
+    "text-decoration": "none solid rgb(189, 189, 189)"
   },
-  ".explorer .explorer-content": { "background-color": "rgb(18, 18, 18)" },
+  ".explorer .explorer-content": { "background-color": "rgb(246, 246, 246)" },
   ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container": {
-    "color": "rgb(112, 112, 112)",
+    "color": "rgb(171, 171, 171)",
     "cursor": "default",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(112, 112, 112)"
+    "text-decoration": "none solid rgb(171, 171, 171)"
   },
   ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container": {
-    "color": "rgb(112, 112, 112)",
+    "color": "rgb(171, 171, 171)",
     "cursor": "default",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(112, 112, 112)"
+    "text-decoration": "none solid rgb(171, 171, 171)"
   },
   ".explorer .explorer-content ul.explorer-ul li a": {
-    "color": "rgb(112, 112, 112)",
+    "color": "rgb(171, 171, 171)",
     "cursor": "default",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "text-decoration": "none solid rgb(112, 112, 112)"
+    "text-decoration": "none solid rgb(171, 171, 171)"
   },
   ".explorer .explorer-content ul.explorer-ul li:has(> .active)": {
-    "background-color": "rgba(255, 255, 255, 0.075)",
-    "color": "rgb(144, 144, 144)",
+    "background-color": "rgba(0, 0, 0, 0.075)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "default"
   },
   ".graph .graph-outer": { "border-color": "rgba(0, 0, 0, 0)" },
@@ -440,19 +440,19 @@
   ".katex-display > .katex > .katex-html": {
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
   },
-  ".page > #quartz-body": { "background-color": "rgb(26, 26, 26)" },
+  ".page > #quartz-body": { "background-color": "rgb(255, 255, 255)" },
   ".page > #quartz-body .left.sidebar": {
-    "background-color": "rgb(18, 18, 18)",
+    "background-color": "rgb(246, 246, 246)",
     "border-color": "rgba(0, 0, 0, 0)",
     "border-right-width": "1px"
   },
   ".page > #quartz-body .right.sidebar": {
-    "background-color": "rgb(18, 18, 18)",
+    "background-color": "rgb(246, 246, 246)",
     "border-color": "rgba(0, 0, 0, 0)",
     "border-left-width": "1px"
   },
   ".page > #quartz-body .sidebar.left:has(.explorer)": {
-    "background-color": "rgb(18, 18, 18)"
+    "background-color": "rgb(246, 246, 246)"
   },
   ".page > #quartz-body div.center": {
     "max-width": "calc(100% - 40px)",
@@ -461,20 +461,20 @@
     "padding-right": "10px"
   },
   ".page article li:has(>input[type=checkbox]:checked)": {
-    "color": "rgb(112, 112, 112)",
-    "text-decoration": "line-through solid rgb(112, 112, 112)",
-    "text-decoration-color": "rgb(112, 112, 112)"
+    "color": "rgb(171, 171, 171)",
+    "text-decoration": "line-through solid rgb(171, 171, 171)",
+    "text-decoration-color": "rgb(171, 171, 171)"
   },
   ".page article p > b, b": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -483,14 +483,14 @@
   },
   ".page article p > em, em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(234, 169, 255)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(234, 169, 255) none 0px",
-    "text-decoration": "none solid rgb(234, 169, 255)",
-    "text-decoration-color": "rgb(234, 169, 255)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -499,14 +499,14 @@
   },
   ".page article p > i, i": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -515,14 +515,14 @@
   },
   ".page article p > s, s": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -531,14 +531,14 @@
   },
   ".page article p > strong > em, strong > em": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(139, 240, 219)",
+    "color": "rgb(0, 191, 188)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "700",
-    "outline": "rgb(139, 240, 219) none 0px",
-    "text-decoration": "none solid rgb(139, 240, 219)",
-    "text-decoration-color": "rgb(139, 240, 219)",
+    "outline": "rgb(0, 191, 188) none 0px",
+    "text-decoration": "none solid rgb(0, 191, 188)",
+    "text-decoration-color": "rgb(0, 191, 188)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -563,14 +563,14 @@
   },
   ".page article p > u, u": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -578,33 +578,33 @@
     "user-select": "text"
   },
   ".popover .popover-inner": {
-    "background-color": "rgb(26, 26, 26)",
+    "background-color": "rgb(255, 255, 255)",
     "border-color": "rgba(0, 0, 0, 0)"
   },
   ".search > .search-button": {
-    "background-color": "rgb(34, 34, 34)",
-    "border": "0px solid rgb(34, 34, 34)",
-    "border-color": "rgb(34, 34, 34)",
+    "background-color": "rgb(255, 255, 255)",
+    "border": "0px solid rgb(224, 224, 224)",
+    "border-color": "rgb(224, 224, 224)",
     "border-radius": "0px",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace"
   },
   ".search > .search-container > .search-space": {
-    "background-color": "rgb(26, 26, 26)",
-    "border": "0px solid rgb(80, 80, 80)",
+    "background-color": "rgb(255, 255, 255)",
+    "border": "0px solid rgb(189, 189, 189)",
     "border-radius": "0px",
-    "box-shadow": "rgba(0, 0, 0, 0.05) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.1) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.15) 0px 30px 90px 0px"
+    "box-shadow": "rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px"
   },
   ".search > .search-container > .search-space > *": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -612,49 +612,49 @@
     "user-select": "text"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container": {
-    "color": "rgb(144, 144, 144)"
+    "color": "rgb(112, 112, 112)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container .result-card": {
-    "border-color": "rgb(144, 144, 144)"
+    "border-color": "rgb(112, 112, 112)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description": {
-    "color": "rgb(255, 255, 255)"
+    "color": "rgb(34, 34, 34)"
   },
   ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgba(255, 255, 255, 0.075)",
-    "color": "rgb(255, 255, 255)",
+    "background-color": "rgba(0, 0, 0, 0.075)",
+    "color": "rgb(34, 34, 34)",
     "font-weight": "400"
   },
   ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results": {
-    "border-color": "rgb(80, 80, 80)"
+    "border-color": "rgb(189, 189, 189)"
   },
   ".search > .search-container > .search-space > input": {
-    "background-color": "rgb(26, 26, 26)",
-    "border": "0px none rgb(144, 144, 144)",
-    "border-bottom": "0px none rgb(144, 144, 144)",
+    "background-color": "rgb(255, 255, 255)",
+    "border": "0px none rgb(112, 112, 112)",
+    "border-bottom": "0px none rgb(112, 112, 112)",
     "border-radius": "0px",
     "box-shadow": "none"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)": {
-    "background-color": "rgba(255, 255, 255, 0.075)",
+    "background-color": "rgba(0, 0, 0, 0.075)",
     "border-radius": "0px",
-    "color": "rgb(144, 144, 144)"
+    "color": "rgb(112, 112, 112)"
   },
   ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))": {
-    "background-color": "rgba(255, 255, 255, 0.075)",
+    "background-color": "rgba(0, 0, 0, 0.075)",
     "border-radius": "0px",
-    "color": "rgb(144, 144, 144)"
+    "color": "rgb(112, 112, 112)"
   },
   ".text-highlight": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(255, 255, 255) none 0px",
-    "text-decoration": "none solid rgb(255, 255, 255)",
-    "text-decoration-color": "rgb(255, 255, 255)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "text-decoration": "none solid rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -664,36 +664,36 @@
   "::-webkit-scrollbar": { "background-color": "rgba(0, 0, 0, 0)" },
   "::-webkit-scrollbar-thumb": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(144, 144, 144)",
-    "border-color": "rgb(144, 144, 144)",
+    "border": "0px none rgb(112, 112, 112)",
+    "border-color": "rgb(112, 112, 112)",
     "border-radius": "0px",
     "border-width": "0px",
     "box-shadow": "none"
   },
   ":root": {
-    "--code-background": "#1a1a1a",
-    "--code-comment": "#505050",
-    "--code-function": "#f0e395",
-    "--code-important": "#ffc8a3",
-    "--code-keyword": "#eaa9ff",
-    "--code-normal": "#909090",
-    "--code-operator": "#f5988f",
-    "--code-property": "#8bf0db",
-    "--code-punctuation": "#707070",
-    "--code-string": "#a5e693",
-    "--code-tag": "#f5988f",
-    "--code-value": "#ac9df2"
+    "--code-background": "#fafafa",
+    "--code-comment": "#bdbdbd",
+    "--code-function": "#e0ac00",
+    "--code-important": "#ec7500",
+    "--code-keyword": "#d53984",
+    "--code-normal": "#707070",
+    "--code-operator": "#e93147",
+    "--code-property": "#00bfbc",
+    "--code-punctuation": "#ababab",
+    "--code-string": "#08b94e",
+    "--code-tag": "#e93147",
+    "--code-value": "#7852ee"
   },
   "a.external": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -702,12 +702,12 @@
   },
   "a.internal": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(234, 169, 255)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "pointer",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(234, 169, 255) none 0px",
+    "outline": "rgb(112, 112, 112) none 0px",
     "text-decoration": "underline solid rgba(165, 230, 147, 0.3)",
     "text-decoration-color": "rgba(165, 230, 147, 0.3)",
     "text-decoration-line": "underline",
@@ -738,8 +738,8 @@
   },
   "a.internal.tag-link::before": { "color": "rgb(165, 230, 147)" },
   "blockquote": {
-    "background-color": "rgba(234, 169, 255, 0.1)",
-    "border-inline-start": "4px solid rgb(234, 169, 255)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-inline-start": "0px none rgb(112, 112, 112)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-style": "normal",
     "margin-inline-end": "0px",
@@ -749,89 +749,89 @@
     "padding-top": "0px"
   },
   "code": {
-    "background-color": "rgb(26, 26, 26)",
-    "border": "0px solid rgb(34, 34, 34)",
-    "border-color": "rgb(34, 34, 34)",
+    "background-color": "rgb(250, 250, 250)",
+    "border": "0px solid rgb(224, 224, 224)",
+    "border-color": "rgb(224, 224, 224)",
     "border-radius": "0px",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "font-family": "\"??\", \"??\", ui-monospace, SFMono-Regular, \"Cascadia Mono\", \"Roboto Mono\", \"DejaVu Sans Mono\", \"Liberation Mono\", Menlo, Monaco, Consolas, \"Source Code Pro\", monospace",
     "padding": "2.1px 4.2px"
   },
   "code.mermaid > svg": { "fill": "rgb(51, 51, 51)", "stroke": "none" },
   "del": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(80, 80, 80)",
+    "color": "rgb(189, 189, 189)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(80, 80, 80) none 0px",
-    "text-decoration": "line-through solid rgb(80, 80, 80)",
-    "text-decoration-color": "rgb(80, 80, 80)",
+    "outline": "rgb(189, 189, 189) none 0px",
+    "text-decoration": "line-through solid rgb(189, 189, 189)",
+    "text-decoration-color": "rgb(189, 189, 189)",
     "text-decoration-line": "line-through",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
     "transition": "all",
     "user-select": "text"
   },
-  "div#quartz-body": { "--quartz-icon-color": "#707070" },
+  "div#quartz-body": { "--quartz-icon-color": "#ababab" },
   "div#quartz-root": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-size": "16px"
   },
   "div.graph": {
-    "--quartz-graph-line": "#303030",
-    "--quartz-graph-node": "#707070",
-    "--quartz-graph-node-attachment": "#f0e395",
+    "--quartz-graph-line": "#d4d4d4",
+    "--quartz-graph-node": "#ababab",
+    "--quartz-graph-node-attachment": "#e0ac00",
     "--quartz-graph-node-focused": "hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%)",
-    "--quartz-graph-node-tag": "#a5e693",
-    "--quartz-graph-node-unresolved": "#505050",
-    "--quartz-graph-text": "#909090"
+    "--quartz-graph-node-tag": "#08b94e",
+    "--quartz-graph-node-unresolved": "#bdbdbd",
+    "--quartz-graph-text": "#707070"
   },
   "h1": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "h2": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "h3": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "h4": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "h5": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "h6": {
-    "color": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "text-shadow": "none"
   },
   "hr": {
     "border": "unset",
-    "border-color": "rgb(34, 34, 34)",
+    "border-color": "rgb(224, 224, 224)",
     "border-style": "solid none none",
-    "border-top": "2px solid rgb(34, 34, 34)",
+    "border-top": "2px solid rgb(224, 224, 224)",
     "box-shadow": "none",
     "margin": "32px 0px"
   },
   "input[type=checkbox]": {
     "appearance": "none",
-    "border": "1px solid rgb(80, 80, 80)",
-    "border-color": "rgb(80, 80, 80)",
+    "border": "1px solid rgb(189, 189, 189)",
+    "border-color": "rgb(189, 189, 189)",
     "border-radius": "0px",
     "margin": "0px 8px 0px -24px",
     "margin-inline-end": "8px",
@@ -857,52 +857,52 @@
   },
   "li.depth-0": { "font-weight": "400" },
   "li.depth-0 + li.depth-1": {
-    "border-inline-start": "1px solid rgb(255, 255, 255)",
+    "border-inline-start": "1px solid rgb(34, 34, 34)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-1": { "font-weight": "400" },
   "li.depth-1 + li.depth-2": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-2": { "font-weight": "400" },
   "li.depth-2 + li.depth-3": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-3": { "font-weight": "400" },
   "li.depth-3 + li.depth-4": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-4": { "font-weight": "400" },
   "li.depth-4 + li.depth-5": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
   "li.depth-5": { "font-weight": "400" },
   "li.depth-5 + li.depth-6": {
-    "border-inline-start": "1px solid rgba(255, 255, 255, 0.12)",
+    "border-inline-start": "1px solid rgba(0, 0, 0, 0.12)",
     "margin-inline-start": "12px",
     "padding-inline-start": "4px"
   },
-  "ol > li": { "color": "rgb(144, 144, 144)", "text-align": "start" },
-  "ol > li::marker": { "color": "rgb(144, 144, 144)" },
+  "ol > li": { "color": "rgb(112, 112, 112)", "text-align": "start" },
+  "ol > li::marker": { "color": "rgb(112, 112, 112)" },
   "p": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "cursor": "auto",
     "filter": "none",
     "font-family": "\"??\", \"??\", \"JetBrains Mono\", Menlo, SFMono-Regular, Consolas, \"Roboto Mono\", \"Source Code Pro\", monospace",
     "font-weight": "400",
-    "outline": "rgb(144, 144, 144) none 0px",
-    "text-decoration": "none solid rgb(144, 144, 144)",
-    "text-decoration-color": "rgb(144, 144, 144)",
+    "outline": "rgb(112, 112, 112) none 0px",
+    "text-decoration": "none solid rgb(112, 112, 112)",
+    "text-decoration-color": "rgb(112, 112, 112)",
     "text-decoration-line": "none",
     "text-decoration-style": "solid",
     "text-decoration-thickness": "auto",
@@ -911,23 +911,23 @@
   },
   "pre > code": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(144, 144, 144)",
-    "border-color": "rgb(144, 144, 144)",
+    "border": "0px none rgb(112, 112, 112)",
+    "border-color": "rgb(112, 112, 112)",
     "border-radius": "0px",
     "overflow-x": "visible",
     "padding": "0px",
     "white-space": "pre-wrap"
   },
   "pre:has(> code)": {
-    "background-color": "rgb(26, 26, 26)",
-    "border": "0px solid rgb(34, 34, 34)",
-    "border-color": "rgb(34, 34, 34)",
+    "background-color": "rgb(250, 250, 250)",
+    "border": "0px solid rgb(224, 224, 224)",
+    "border-color": "rgb(224, 224, 224)",
     "border-radius": "0px",
     "overflow-x": "auto",
     "padding": "12px 16px",
     "white-space": "pre-wrap"
   },
-  "ul > li": { "color": "rgb(144, 144, 144)", "text-align": "start" },
+  "ul > li": { "color": "rgb(112, 112, 112)", "text-align": "start" },
   "ul > li.task-list-item": {
     "display": "list-item",
     "list-style": "outside none none",
@@ -935,10 +935,10 @@
   },
   "ul > li::marker": {
     "background-color": "rgba(0, 0, 0, 0)",
-    "border": "0px none rgb(144, 144, 144)",
-    "border-color": "rgb(144, 144, 144)",
+    "border": "0px none rgb(112, 112, 112)",
+    "border-color": "rgb(112, 112, 112)",
     "border-radius": "0px",
-    "color": "rgb(144, 144, 144)",
+    "color": "rgb(112, 112, 112)",
     "content": "normal",
     "pointer-events": "auto",
     "transform": "none",

@@ -6,27 +6,27 @@
 }
 
 :root:root {
-  --light: #bdae93 !important;
-  --gray: #928374 !important;
-  --darkgray: #928374 !important;
+  --light: #504945 !important;
+  --gray: #bdae93 !important;
+  --darkgray: #bdae93 !important;
   --highlight: #a9b665 !important;
   --secondary: #e78a4e !important;
-  --tertiary: #c14a4a !important;
-  --lightgray: #b37e5d !important;
-  --dark: #654735 !important;
+  --tertiary: #ea6962 !important;
+  --lightgray: #ebdbb2 !important;
+  --dark: #d4be98 !important;
 
-  --code-background: #ebdbb2 !important;
-  --code-comment: #b37e5d !important;
+  --code-background: #3c3836 !important;
+  --code-comment: #ebdbb2 !important;
   --code-function: #e78a4e !important;
   --code-important: #c35e0a !important;
-  --code-keyword: #945e80 !important;
+  --code-keyword: #d3869b !important;
   --code-normal: #7daea3 !important;
-  --code-operator: #c14a4a !important;
+  --code-operator: #ea6962 !important;
   --code-property: #7daea3 !important;
-  --code-punctuation: #735145 !important;
-  --code-string: #6c782e !important;
-  --code-tag: #c14a4a !important;
-  --code-value: #945e80 !important;
+  --code-punctuation: #d5c4a1 !important;
+  --code-string: #a9b665 !important;
+  --code-tag: #ea6962 !important;
+  --code-value: #d3869b !important;
 }
 :root:root[saved-theme="dark"] {
   --light: #504945 !important;
@@ -227,8 +227,8 @@ html {
 
 body {
   &[data-slug] {
-    background: light-dark(rgb(235, 219, 178), rgb(29, 32, 33)) !important;
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    background: rgb(29, 32, 33);
+    color: rgb(212, 190, 152);
   }
 
   .callout {
@@ -296,11 +296,8 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: 234, 105, 98;
-    background-color: light-dark(
-      rgba(193, 74, 74, 0.1),
-      rgba(234, 105, 98, 0.1)
-    );
-    border-color: light-dark(rgba(193, 74, 74, 0.25), rgba(234, 105, 98, 0.25));
+    background-color: rgba(234, 105, 98, 0.1);
+    border-color: rgba(234, 105, 98, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -310,18 +307,18 @@ body {
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
-    background-color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
+    background-color: rgb(234, 105, 98);
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     font-weight: 400;
   }
 
@@ -332,11 +329,8 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: 234, 105, 98;
-    background-color: light-dark(
-      rgba(193, 74, 74, 0.1),
-      rgba(234, 105, 98, 0.1)
-    );
-    border-color: light-dark(rgba(193, 74, 74, 0.25), rgba(234, 105, 98, 0.25));
+    background-color: rgba(234, 105, 98, 0.1);
+    border-color: rgba(234, 105, 98, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -346,18 +340,18 @@ body {
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
-    background-color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
+    background-color: rgb(234, 105, 98);
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     font-weight: 400;
   }
 
@@ -368,14 +362,8 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: 211, 134, 155;
-    background-color: light-dark(
-      rgba(148, 94, 128, 0.1),
-      rgba(211, 134, 155, 0.1)
-    );
-    border-color: light-dark(
-      rgba(148, 94, 128, 0.25),
-      rgba(211, 134, 155, 0.25)
-    );
+    background-color: rgba(211, 134, 155, 0.1);
+    border-color: rgba(211, 134, 155, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -385,18 +373,18 @@ body {
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(148, 94, 128), rgb(211, 134, 155));
+    color: rgb(211, 134, 155);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: light-dark(rgb(148, 94, 128), rgb(211, 134, 155));
-    background-color: light-dark(rgb(148, 94, 128), rgb(211, 134, 155));
+    color: rgb(211, 134, 155);
+    background-color: rgb(211, 134, 155);
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(148, 94, 128), rgb(211, 134, 155));
+    color: rgb(211, 134, 155);
     font-weight: 400;
   }
 
@@ -407,11 +395,8 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: 234, 105, 98;
-    background-color: light-dark(
-      rgba(193, 74, 74, 0.1),
-      rgba(234, 105, 98, 0.1)
-    );
-    border-color: light-dark(rgba(193, 74, 74, 0.25), rgba(234, 105, 98, 0.25));
+    background-color: rgba(234, 105, 98, 0.1);
+    border-color: rgba(234, 105, 98, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -421,18 +406,18 @@ body {
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
-    background-color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
+    background-color: rgb(234, 105, 98);
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     font-weight: 400;
   }
 
@@ -575,14 +560,8 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: 169, 182, 101;
-    background-color: light-dark(
-      rgba(108, 120, 46, 0.1),
-      rgba(169, 182, 101, 0.1)
-    );
-    border-color: light-dark(
-      rgba(108, 120, 46, 0.25),
-      rgba(169, 182, 101, 0.25)
-    );
+    background-color: rgba(169, 182, 101, 0.1);
+    border-color: rgba(169, 182, 101, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -592,18 +571,18 @@ body {
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: light-dark(rgb(108, 120, 46), rgb(169, 182, 101));
+    color: rgb(169, 182, 101);
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: light-dark(rgb(108, 120, 46), rgb(169, 182, 101));
-    background-color: light-dark(rgb(108, 120, 46), rgb(169, 182, 101));
+    color: rgb(169, 182, 101);
+    background-color: rgb(169, 182, 101);
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(108, 120, 46), rgb(169, 182, 101));
+    color: rgb(169, 182, 101);
     font-weight: 400;
   }
 
@@ -712,16 +691,16 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(179, 126, 93), rgb(235, 219, 178));
+    color: rgb(235, 219, 178);
     text-decoration: none solid rgb(235, 219, 178);
   }
 
   .explorer .explorer-content {
-    background-color: light-dark(rgb(235, 219, 178), rgb(29, 32, 33));
+    background-color: rgb(29, 32, 33);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(115, 81, 69), rgb(213, 196, 161));
+    color: rgb(213, 196, 161);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -743,7 +722,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(115, 81, 69), rgb(213, 196, 161));
+    color: rgb(213, 196, 161);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -762,7 +741,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(115, 81, 69), rgb(213, 196, 161));
+    color: rgb(213, 196, 161);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -781,16 +760,13 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(69, 112, 122), rgb(137, 180, 130));
+    background-color: rgba(255, 255, 255, 0.067);
+    color: rgb(137, 180, 130);
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
   }
 
   .graph > .global-graph-outer {
@@ -800,7 +776,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
   }
 
   .katex > .katex-html {
@@ -841,23 +817,23 @@ body {
   }
 
   .page > #quartz-body {
-    background-color: light-dark(rgb(249, 245, 215), rgb(40, 40, 40));
+    background-color: rgb(40, 40, 40);
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: light-dark(rgb(235, 219, 178), rgb(29, 32, 33));
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    background-color: rgb(29, 32, 33);
+    border-color: rgb(60, 56, 54);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: light-dark(rgb(235, 219, 178), rgb(29, 32, 33));
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    background-color: rgb(29, 32, 33);
+    border-color: rgb(60, 56, 54);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: light-dark(rgb(235, 219, 178), rgb(29, 32, 33));
+    background-color: rgb(29, 32, 33);
   }
 
   .page > #quartz-body div.center {
@@ -868,7 +844,7 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgba(80, 73, 69, 0.4), rgba(213, 196, 161, 0.5));
+    color: rgba(213, 196, 161, 0.5);
     text-decoration: line-through solid rgba(213, 196, 161, 0.5);
     text-decoration-color: rgba(213, 196, 161, 0.5);
   }
@@ -876,7 +852,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -905,7 +881,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(195, 94, 10), rgb(231, 138, 78));
+    color: rgb(231, 138, 78);
     cursor: auto;
     filter: none;
     font-family:
@@ -934,7 +910,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -963,7 +939,7 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -992,7 +968,7 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(195, 94, 10), rgb(231, 138, 78));
+    color: rgb(231, 138, 78);
     cursor: auto;
     filter: none;
     font-family:
@@ -1021,7 +997,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(195, 94, 10), rgb(231, 138, 78));
+    color: rgb(231, 138, 78);
     cursor: auto;
     filter: none;
     font-family:
@@ -1050,7 +1026,7 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -1077,16 +1053,16 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: light-dark(rgb(249, 245, 215), rgb(40, 40, 40));
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(60, 56, 54);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    background-color: rgb(42, 42, 42);
     border: 1px solid rgb(60, 56, 54);
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
     border-radius: 5px;
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1102,7 +1078,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(249, 245, 215), rgb(40, 40, 40));
+    background-color: rgb(40, 40, 40);
     border: 1px solid rgb(85, 85, 85);
     border-radius: 12px;
     box-shadow:
@@ -1113,7 +1089,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -1144,7 +1120,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
   }
 
   .search
@@ -1153,7 +1129,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    border-color: rgb(212, 190, 152);
   }
 
   .search
@@ -1198,7 +1174,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
   }
 
   .search
@@ -1219,21 +1195,18 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    background-color: rgba(255, 255, 255, 0.067);
+    color: rgb(212, 190, 152);
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+    border-color: rgb(85, 85, 85);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(249, 245, 215), rgb(40, 40, 40));
+    background-color: rgb(40, 40, 40);
     border: unset;
     border-bottom: 1px solid rgb(29, 32, 33);
     border-radius: 0px;
@@ -1252,12 +1225,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(255, 255, 255, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
   }
 
   .search
@@ -1278,17 +1248,14 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: rgba(255, 255, 255, 0.067);
     border-radius: 4px;
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
   }
 
   .text-highlight {
-    background-color: light-dark(rgb(195, 94, 10), rgb(231, 138, 78));
-    color: light-dark(rgb(249, 245, 215), rgb(29, 32, 33));
+    background-color: rgb(231, 138, 78);
+    color: rgb(29, 32, 33);
     cursor: auto;
     filter: none;
     font-family:
@@ -1321,30 +1288,30 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(212, 190, 152);
-    border-color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    border-color: rgb(212, 190, 152);
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
   }
 
   :root {
-    --code-background: rgb(235, 219, 178);
-    --code-comment: rgb(179, 126, 93);
+    --code-background: rgb(60, 56, 54);
+    --code-comment: rgb(235, 219, 178);
     --code-function: rgb(231, 138, 78);
     --code-important: rgb(195, 94, 10);
-    --code-keyword: rgb(148, 94, 128);
+    --code-keyword: rgb(211, 134, 155);
     --code-normal: rgb(125, 174, 163);
-    --code-operator: rgb(193, 74, 74);
+    --code-operator: rgb(234, 105, 98);
     --code-property: rgb(125, 174, 163);
-    --code-punctuation: rgb(115, 81, 69);
-    --code-string: rgb(108, 120, 46);
-    --code-tag: rgb(193, 74, 74);
-    --code-value: rgb(148, 94, 128);
+    --code-punctuation: rgb(213, 196, 161);
+    --code-string: rgb(169, 182, 101);
+    --code-tag: rgb(234, 105, 98);
+    --code-value: rgb(211, 134, 155);
   }
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -1409,7 +1376,7 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: light-dark(rgb(235, 219, 178), rgb(80, 73, 69));
+    background-color: rgb(80, 73, 69);
     border-bottom-color: rgba(123, 173, 161, 0.15);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -1440,7 +1407,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(76, 122, 93), rgb(137, 180, 130));
+    color: rgb(137, 180, 130);
   }
 
   blockquote {
@@ -1467,9 +1434,9 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(235, 219, 178), rgb(60, 56, 54));
+    background-color: rgb(60, 56, 54);
     border: 0px solid rgb(60, 56, 54);
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
     border-radius: 4px;
     color: rgb(125, 174, 163);
     font-family:
@@ -1486,7 +1453,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -1518,7 +1485,7 @@ body {
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1535,17 +1502,17 @@ body {
   }
 
   div.graph {
-    --quartz-graph-line: rgb(189, 174, 147);
-    --quartz-graph-node: rgb(146, 131, 116);
+    --quartz-graph-line: rgb(80, 73, 69);
+    --quartz-graph-node: rgb(189, 174, 147);
     --quartz-graph-node-attachment: rgb(169, 182, 101);
     --quartz-graph-node-focused: rgb(231, 138, 78);
-    --quartz-graph-node-tag: rgb(193, 74, 74);
-    --quartz-graph-node-unresolved: rgb(179, 126, 93);
-    --quartz-graph-text: rgb(101, 71, 53);
+    --quartz-graph-node-tag: rgb(234, 105, 98);
+    --quartz-graph-node-unresolved: rgb(235, 219, 178);
+    --quartz-graph-text: rgb(212, 190, 152);
   }
 
   h1 {
-    color: light-dark(rgb(193, 74, 74), rgb(234, 105, 98));
+    color: rgb(234, 105, 98);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1562,7 +1529,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(195, 94, 10), rgb(231, 138, 78));
+    color: rgb(231, 138, 78);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1579,7 +1546,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(108, 120, 46), rgb(169, 182, 101));
+    color: rgb(169, 182, 101);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1596,7 +1563,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(76, 122, 93), rgb(137, 180, 130));
+    color: rgb(137, 180, 130);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1613,7 +1580,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(69, 112, 122), rgb(125, 174, 163));
+    color: rgb(125, 174, 163);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1630,7 +1597,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(148, 94, 128), rgb(211, 134, 155));
+    color: rgb(211, 134, 155);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1648,7 +1615,7 @@ body {
 
   hr {
     border: unset;
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
     border-style: solid none none;
     border-top: 2px solid rgb(60, 56, 54);
     box-shadow: none;
@@ -1745,17 +1712,17 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     cursor: auto;
     filter: none;
     font-family:
@@ -1792,9 +1759,9 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(235, 219, 178), rgb(60, 56, 54));
+    background-color: rgb(60, 56, 54);
     border: 0px solid rgb(60, 56, 54);
-    border-color: light-dark(rgb(213, 196, 161), rgb(60, 56, 54));
+    border-color: rgb(60, 56, 54);
     border-radius: 4px;
     overflow-x: auto;
     padding: 12px 16px;
@@ -1802,7 +1769,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     text-align: start;
   }
 
@@ -1815,9 +1782,9 @@ body {
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
     border: 0px none rgb(212, 190, 152);
-    border-color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    border-color: rgb(212, 190, 152);
     border-radius: 0px;
-    color: light-dark(rgb(101, 71, 53), rgb(212, 190, 152));
+    color: rgb(212, 190, 152);
     content: normal;
     pointer-events: auto;
     transform: none;

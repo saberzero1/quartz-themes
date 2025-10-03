@@ -210,7 +210,6 @@
     "--cyan_x": "14, 191, 255",
     "--date-background-color": "rgb(192, 208, 223)",
     "--date-color": "rgb(14, 191, 255)",
-    "--default-font": "'\"JetBrains Mono\", monospace, \"Inter\", sans-serif'",
     "--dialog-max-height": "85vh",
     "--dialog-max-width": "80vw",
     "--dialog-width": "560px",
@@ -243,7 +242,7 @@
     "--fg_x": "59, 62, 72",
     "--file-folding-offset": "24px",
     "--file-header-border": "2px solid transparent",
-    "--file-header-font": "'??', '??', '\"JetBrains Mono\", monospace, \"Inter\", sans-serif', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--file-header-font": "'??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "--file-header-font-size": "13px",
     "--file-header-font-weight": "400",
     "--file-header-justify": "center",
@@ -259,7 +258,7 @@
     "--font-default": "ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "--font-extrabold": "800",
     "--font-extralight": "200",
-    "--font-interface": "'??', '??', '\"JetBrains Mono\", monospace, \"Inter\", sans-serif', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--font-interface": "'??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "--font-interface-override": "'??'",
     "--font-interface-theme": "'??'",
     "--font-light": "300",
@@ -477,7 +476,7 @@
     "--metadata-input-background": "transparent",
     "--metadata-input-background-active": "rgb(192, 208, 223)",
     "--metadata-input-background-hover": "transparent",
-    "--metadata-input-font": "'??', '??', '\"JetBrains Mono\", monospace, \"Inter\", sans-serif', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--metadata-input-font": "'??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "--metadata-input-font-size": "0.875em",
     "--metadata-input-height": "calc(16px * 1.75)",
     "--metadata-input-longtext-lines": "3",
@@ -485,7 +484,7 @@
     "--metadata-label-background": "transparent",
     "--metadata-label-background-active": "rgb(192, 208, 223)",
     "--metadata-label-background-hover": "transparent",
-    "--metadata-label-font": "'??', '??', '\"JetBrains Mono\", monospace, \"Inter\", sans-serif', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "--metadata-label-font": "'??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "--metadata-label-font-size": "0.875em",
     "--metadata-label-text-color": "rgb(150, 156, 189)",
     "--metadata-label-text-color-hover": "rgb(150, 156, 189)",
@@ -1299,32 +1298,32 @@
   },
   ".published-container .markdown-rendered h1": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".published-container .markdown-rendered h2": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".published-container .markdown-rendered h3": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".published-container .markdown-rendered h4": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".published-container .markdown-rendered h5": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".published-container .markdown-rendered h6": {
     "color": "rgb(138, 186, 205)",
-    "font-family": "Georgia, \"Times New Roman\", serif, \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\"",
+    "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "text-shadow": "none"
   },
   ".search-results": {
@@ -1436,7 +1435,7 @@
     "border-top-right-radius": "4px",
     "border-top-style": "solid",
     "display": "flex",
-    "font-family": "\"??\", \"??\", \"\\\"JetBrains Mono\\\", monospace, \\\"Inter\\\", sans-serif\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "font-family": "\"??\", \"??\", \"??\", ui-sans-serif, -apple-system, \"system-ui\", system-ui, \"Segoe UI\", Roboto, Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-weight": "400",
     "margin-inline-start": "0px"
   },
