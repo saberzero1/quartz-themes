@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/chrisgrieser/shimmering-focus" target="_blank" rel="noopener noreferrer">pseudometa aka Chris Grieser</a>
 - Support the author: <a href="https://ko-fi.com/pseudometa" target="_blank" rel="noopener noreferrer">Ko-Fi</a> | <a href="https://www.paypal.me/ChrisGrieser" target="_blank" rel="noopener noreferrer">PayPal</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/shimmering-focus|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/shimmering-focus">Install instructions</a>
 
 | Name               | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
 | ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

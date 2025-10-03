@@ -698,6 +698,12 @@ async function applyThemeStylesheet() {
   } else {
     injectStyleElement("");
   }
+  extendFooter();
+}
+
+function extendFooter() {
+  const footer = document.querySelector("div.site-footer");
+  footer.innerHTML = `<a href="https://publish.obsidian.md" target="_blank">Powered by Obsidian Publish</a> and <a href="https://github.com/saberzero1/quartz-themes" target="_blank">Quartz Themes</a>.`;
 }
 
 (function (history) {

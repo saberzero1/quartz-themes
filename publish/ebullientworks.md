@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ebullient" target="_blank" rel="noopener noreferrer">Ebullientworks</a>
 - Support the author: <a href="https://www.buymeacoffee.com/ebullient" target="_blank" rel="noopener noreferrer">Donate</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks">Install instructions</a>
 
 | Name             | Modes                     | Compatibility                                                                                     | License                                                                                                                                                       |
 | ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |

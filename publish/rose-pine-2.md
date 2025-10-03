@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/JTrenerry" target="_blank" rel="noopener noreferrer">rose-pine</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                            |
 | ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

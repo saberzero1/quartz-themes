@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer">carrie999</a>
 - Support the author: <a href="https://www.buymeacoffee.com/pangyajingD" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/Carrie999/wechat" target="_blank" rel="noopener noreferrer">wechat pay</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort">Install instructions</a>
 
 | Name      | Modes                       | Compatibility                                                                                   | License                                                                                                                                                    |
 | --------- | --------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

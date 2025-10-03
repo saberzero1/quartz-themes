@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/danarnold" target="_blank" rel="noopener noreferrer">Daniel Arnold</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-simple|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tokyo-night-simple">Install instructions</a>
 
 | Name                 | Modes                     | Compatibility                                  | License                                                                                                                                                   |
 | -------------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |

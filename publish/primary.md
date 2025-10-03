@@ -2,7 +2,7 @@
 
 - Theme author: Cecilia May
 - Support the author: <a href="https://ko-fi.com/ceciliamay" target="_blank" rel="noopener noreferrer">Ko-fi</a>
-- [[https://github.com/saberzero1/quartz-themes/tree/master/themes/primary|Install instructions]]
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/primary">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                                |
 | --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
