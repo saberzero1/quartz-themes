@@ -555,8 +555,15 @@ hr,
 .markdown-rendered hr,
 .markdown-source-view.mod-cm6 hr {
 	margin-inline: auto;
-	margin-block: 3em;
 	max-width: 300px;
+}
+
+hr {
+	margin-block: 3em;
+}
+
+div:has(>.cm-hr) {
+	text-align: center;
 }
 
 /* IMAGES AND FIGURES */

@@ -1094,6 +1094,13 @@ li.task-list-item[data-task="x"] a.internal-link,
   padding-inline-start: 0em !important; /* fixes the above causing issues with callouts */
 }
 
+.markdown-source-view.mod-cm6 .markdown-embed .markdown-rendered .callout-content ul > li > ul,
+.markdown-source-view.mod-cm6 .markdown-embed .markdown-rendered .callout-content ul > li > ol,
+.markdown-source-view.mod-cm6 .markdown-embed .markdown-rendered .callout-content ol > li > ul,
+.markdown-source-view.mod-cm6 .markdown-embed .markdown-rendered .callout-content ol > li > ol {
+  padding-inline-start: 0.5em !important; /* fixes the above causing issues with nested lists in embedded callouts */
+}
+
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
   padding-left: 15px;
 }
