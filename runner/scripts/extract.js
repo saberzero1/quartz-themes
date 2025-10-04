@@ -25,8 +25,8 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-//testingMode = true;
-const testingTheme = "Flexcyon";
+testingMode = true;
+const testingTheme = "Lagom";
 
 /*
 const manifestCollection = testingMode
