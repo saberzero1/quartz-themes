@@ -76,12 +76,12 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
 
     const compatibilityArray = themes[themeName.theme]["compatibility"];
     if (mode === "both") {
-      themeListDark.push(themeName.theme);
-      themeListLight.push(themeName.theme);
+      themeListDark.push(themeName.name);
+      themeListLight.push(themeName.name);
     } else if (mode === "dark") {
-      themeListDark.push(themeName.theme);
+      themeListDark.push(themeName.name);
     } else if (mode === "light") {
-      themeListLight.push(themeName.theme);
+      themeListLight.push(themeName.name);
     }
     const license = themes[themeName.theme]["license"]["spdx_id"];
     const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;

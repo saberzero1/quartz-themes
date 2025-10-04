@@ -111,6 +111,7 @@ feather
 firefly
 flatcap
 flexcyon
+flexcyon.tui
 flexoki
 flexoki-warm
 focus
@@ -159,6 +160,8 @@ mado-miniflow
 magicuser
 mammoth
 maple
+maple.default
+maple.minimal
 marathon
 material-3
 material-flat
