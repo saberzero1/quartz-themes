@@ -25,7 +25,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-testingMode = true;
+//testingMode = true;
 const testingTheme = "its";
 
 /*
@@ -44,18 +44,269 @@ const themeCollection = testingMode
 //console.log(manifestCollection);
 console.log(themeCollection);
 
+async function serializeWithStyles() {
+  const result = await browser.executeObsidian(async ({ app }) => {
+    await sleep(1000); // Wait for the file to open and styles to apply
+    // Mapping between tag names and css default values lookup tables. This allows to exclude default values in the result.
+    let defaultStylesByTagName = {};
+
+    // Styles inherited from style sheets will not be rendered for elements with these tag names
+    let noStyleTags = {
+      BASE: true,
+      HEAD: true,
+      //HTML: true,
+      LINE: true,
+      META: true,
+      NOFRAME: true,
+      NOSCRIPT: true,
+      PARAM: true,
+      PATH: true,
+      POLYLINE: true,
+      RECT: true,
+      SCRIPT: true,
+      STYLE: true,
+      TITLE: true,
+    };
+
+    // This list determines which css default values lookup tables are precomputed at load time
+    // Lookup tables for other tag names will be automatically built at runtime if needed
+    let tagNames = [
+      "A",
+      "ABBR",
+      "ADDRESS",
+      "AREA",
+      "ARTICLE",
+      "ASIDE",
+      "AUDIO",
+      "B",
+      "BASE",
+      "BDI",
+      "BDO",
+      "BLOCKQUOTE",
+      "BODY",
+      "BR",
+      "BUTTON",
+      "CANVAS",
+      "CAPTION",
+      "CENTER",
+      "CITE",
+      "CODE",
+      "COL",
+      "COLGROUP",
+      "COMMAND",
+      "DATALIST",
+      "DD",
+      "DEL",
+      "DETAILS",
+      "DFN",
+      "DIV",
+      "DL",
+      "DT",
+      "EM",
+      "EMBED",
+      "FIELDSET",
+      "FIGCAPTION",
+      "FIGURE",
+      "FONT",
+      "FOOTER",
+      "FORM",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "HEAD",
+      "HEADER",
+      "HGROUP",
+      "HR",
+      "HTML",
+      "I",
+      "IFRAME",
+      "IMG",
+      "INPUT",
+      "INS",
+      "KBD",
+      "KEYGEN",
+      "LABEL",
+      "LEGEND",
+      "LI",
+      "LINK",
+      "MAP",
+      "MARK",
+      "MATH",
+      "MENU",
+      "META",
+      "METER",
+      "NAV",
+      "NOBR",
+      "NOSCRIPT",
+      "OBJECT",
+      "OL",
+      "OPTION",
+      "OPTGROUP",
+      "OUTPUT",
+      "P",
+      "PARAM",
+      "PRE",
+      "PROGRESS",
+      "Q",
+      "RP",
+      "RT",
+      "RUBY",
+      "S",
+      "SAMP",
+      "SCRIPT",
+      "SECTION",
+      "SELECT",
+      "SMALL",
+      "SOURCE",
+      "SPAN",
+      "STRONG",
+      "STYLE",
+      "SUB",
+      "SUMMARY",
+      "SUP",
+      "SVG",
+      "TABLE",
+      "TBODY",
+      "TD",
+      "TEXTAREA",
+      "TFOOT",
+      "TH",
+      "THEAD",
+      "TIME",
+      "TITLE",
+      "TR",
+      "TRACK",
+      "U",
+      "UL",
+      "VAR",
+      "VIDEO",
+      "WBR",
+    ];
+
+    // Precompute the lookup tables.
+    for (let i = 0; i < tagNames.length; i++) {
+      if (!noStyleTags[tagNames[i]]) {
+        defaultStylesByTagName[tagNames[i]] = computeDefaultStyleByTagName(
+          tagNames[i],
+        );
+      }
+    }
+
+    function computeDefaultStyleByTagName(tagName) {
+      let defaultStyle = {};
+      let element = document.body.appendChild(document.createElement(tagName));
+      let computedStyle = getComputedStyle(element);
+      for (let i = 0; i < computedStyle.length; i++) {
+        defaultStyle[computedStyle[i]] = computedStyle[computedStyle[i]];
+      }
+      document.body.removeChild(element);
+      return defaultStyle;
+    }
+
+    function getDefaultStyleByTagName(tagName) {
+      tagName = tagName.toUpperCase();
+      if (!defaultStylesByTagName[tagName]) {
+        defaultStylesByTagName[tagName] = computeDefaultStyleByTagName(tagName);
+      }
+      return defaultStylesByTagName[tagName];
+    }
+
+    function extractStyles() {
+      //const rootElement = document.getRootNode().querySelector("body");
+      /*
+      if (rootElement.nodeType !== Node.ELEMENT_NODE) {
+        throw new TypeError();
+      }
+      */
+      const rootElement = document;
+      let cssTexts = [];
+      let elements = rootElement.querySelectorAll("*");
+      let computedMap = {};
+      for (let i = 0; i < elements.length; i++) {
+        let e = elements[i];
+        if (
+          !noStyleTags[e.tagName] &&
+          !["path", "circle", "rect", "line", "polyline"].includes(
+            e.tagName.toLowerCase(),
+          )
+        ) {
+          //let computedStyle = getComputedStyle(e);
+          let computedStyle = Array.from(e.computedStyleMap());
+          let defaultStyle = getDefaultStyleByTagName(e.tagName);
+          //cssTexts[i] = e.style.cssText;
+          const classes = e.classList
+            ? e.classList
+                .toString()
+                .split(" ")
+                .filter((c) => c.trim() !== "")
+            : [];
+          const attributes = e.attributes
+            ? Array.from(e.attributes)
+                .filter((c) => c !== "class")
+                .map((attr) => `${attr.name}="${attr.value}"`)
+            : [];
+          const selectorKey = ["html", "body"].includes(e.tagName.toLowerCase())
+            ? e.tagName.toLowerCase()
+            : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${attributes.length > 0 ? "[" + attributes.toSorted().join("][") + "]" : ""}`;
+          //for (let ii = 0; ii < computedStyle.length; ii++) {
+          computedStyle.forEach(([prop, value]) => {
+            // let cssPropName = computedStyle[ii];
+            if (
+              computedStyle[prop] !== defaultStyle[prop] ||
+              (prop.startsWith("--") &&
+                ["html", "body"].includes(e.tagName.toLowerCase()))
+            ) {
+              //e.style[cssPropName] = computedStyle[cssPropName];
+              if (computedMap[selectorKey] === undefined) {
+                computedMap[selectorKey] = {};
+              }
+              if (computedMap[selectorKey][prop] === undefined) {
+                computedMap[selectorKey][prop] =
+                  //computedStyle[cssPropName];
+                  value.toString();
+              }
+            }
+          });
+        }
+      }
+      /*
+        let result = this.outerHTML;
+        for ( let i = 0; i < elements.length; i++ ) {
+            elements[i].style.cssText = cssTexts[i];
+        }
+        return result;
+*/
+      return computedMap;
+    }
+
+    const result = extractStyles();
+
+    return result;
+  });
+  // TODO: Fix empty return values
+  // Probably not passing something correctly to the browser context
+  return result;
+}
+
 // test/extract-styles.test.js
 async function getStyles(configuration, getGeneric = false, isDark = false) {
   const result = await browser.executeObsidian(
     async ({ app }, targets, getGeneric, isDark) => {
-      computedStyles = {}; // Quartz specific styles
-      computedPublishStyles = {}; // Obsidian Publish specific styles
       //app.customCss.setTheme(theme);
       const rules = targets.selectors;
 
       await sleep(300); // Wait for the file to open and styles to apply
       app.workspace.trigger("parse-style-settings");
       await sleep(700);
+      const styleMap = serializeWithStyles(
+        document.getRootNode().querySelector("body"),
+      );
+      computedStyles = styleMap; // Quartz specific styles
+      computedPublishStyles = styleMap; // Obsidian Publish specific styles
+      return [computedStyles, computedPublishStyles];
       rules.forEach((rule) => {
         const containerSelector =
           "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content > div.markdown-reading-view > div.markdown-preview-view";
@@ -481,18 +732,6 @@ async function getStylesFromObsidian(
     callouts: {},
     integrations: {},
   };
-  let lightPublishResult = {
-    general: {},
-    headings: {},
-    callouts: {},
-    integrations: {},
-  };
-  let darkPublishResult = {
-    general: {},
-    headings: {},
-    callouts: {},
-    integrations: {},
-  };
   let lightKey = "general";
   let darkKey = "general";
   console.log(`Extracting styles for theme: ${theme}`);
@@ -505,12 +744,14 @@ async function getStylesFromObsidian(
         preset,
       );
     });
-    it(`should extract styles for theme: ${theme} in dark mode`, async () => {
+    it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in dark mode`, async () => {
       const darkPage = browser.getObsidianPage();
       await darkPage.loadWorkspaceLayout("default");
       await darkPage.setTheme(fullName);
       await browser.executeObsidianCommand("theme:use-dark");
+      await sleep(500);
       await browser.reloadObsidian();
+      await sleep(500);
       await browser.executeObsidian(async ({ app, plugins }) => {
         const clickableFolder = document.querySelector(
           "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -528,30 +769,41 @@ async function getStylesFromObsidian(
       await darkPage.openFile("general.md");
       await darkPage.openFile("general.md");
       await sleep(100);
+      darkResult.general = await serializeWithStyles();
+      /*
       [darkResult.general, darkPublishResult.general] = await getStyles(
         configuration.general,
         true,
         true,
       );
+      */
       await darkPage.openFile("headings.md");
       await darkPage.openFile("headings.md");
       await sleep(100);
+      darkResult.headings = await serializeWithStyles();
+      /*
       [darkResult.headings, darkPublishResult.headings] = await getStyles(
         configuration.headings,
         false,
         true,
       );
+      */
       await darkPage.openFile("callouts.md");
       await darkPage.openFile("callouts.md");
       await sleep(100);
+      darkResult.callouts = await serializeWithStyles();
+      /*
       [darkResult.callouts, darkPublishResult.callouts] = await getStyles(
         configuration.callouts,
         false,
         true,
       );
+      */
       await darkPage.openFile("integrations.md");
       await darkPage.openFile("integrations.md");
       await sleep(100);
+      darkResult.integrations = await serializeWithStyles();
+      /*
       [darkResult.integrations, darkPublishResult.integrations] =
         await getStyles(
           configuration.integrations,
@@ -559,19 +811,13 @@ async function getStylesFromObsidian(
           false,
           true,
         );
+        */
       await sleep(500);
     });
     after(async () => {
-      const darkPage = browser.getObsidianPage();
-      await darkPage.write(
-        "./.obsidian/plugins/obsidian-style-settings/data.json",
-        "{}",
-      );
       const darkFileName = `./runner/results/${folder}/dark.json`;
-      const darkPublishFileName = `./runner/results/${folder}/publish-dark.json`;
       // Flatten the result object
       const darkResultObject = {};
-      const darkPublishResultObject = {};
       for (const [key, value] of Object.entries(darkResult)) {
         if (typeof value === "object") {
           for (const [subKey, subValue] of Object.entries(value)) {
@@ -579,41 +825,19 @@ async function getStylesFromObsidian(
           }
         }
       }
-      for (const [key, value] of Object.entries(darkPublishResult)) {
-        if (typeof value === "object") {
-          for (const [subKey, subValue] of Object.entries(value)) {
-            darkPublishResultObject[`${subKey}`] = subValue;
-          }
-        }
-      }
       // Sort the keys alphabetically
       const sortedKeys = Object.keys(darkResultObject).sort();
-      const sortedPublishKeys = Object.keys(darkPublishResultObject).sort();
       const sortedDarkResultObject = {};
-      const sortedDarkPublishResultObject = {};
       for (const key of sortedKeys) {
         sortedDarkResultObject[key] = darkResultObject[key];
       }
-      for (const key of sortedPublishKeys) {
-        sortedDarkPublishResultObject[key] = darkPublishResultObject[key];
-      }
       // Fix callout icon colors
-      const fixedDarkResultObject = fixCalloutIconColor(sortedDarkResultObject);
-      const fixedDarkPublishResultObject = sortedDarkPublishResultObject;
+      // const fixedDarkResultObject = fixCalloutIconColor(sortedDarkResultObject);
+      const fixedDarkResultObject = sortedDarkResultObject;
       await new Promise((resolve, reject) => {
         writeFile(
           darkFileName,
           JSON.stringify(fixedDarkResultObject, null, 2),
-          (err) => {
-            if (err) reject(err);
-            else resolve();
-          },
-        );
-      });
-      await new Promise((resolve, reject) => {
-        writeFile(
-          darkPublishFileName,
-          JSON.stringify(fixedDarkPublishResultObject, null, 2),
           (err) => {
             if (err) reject(err);
             else resolve();
@@ -631,12 +855,14 @@ async function getStylesFromObsidian(
         preset,
       );
     });
-    it(`should extract styles for theme: ${theme} in light mode`, async () => {
+    it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in light mode`, async () => {
       const lightPage = browser.getObsidianPage();
       await lightPage.loadWorkspaceLayout("default");
       await lightPage.setTheme(fullName);
       await browser.executeObsidianCommand("theme:use-light");
+      await sleep(500);
       await browser.reloadObsidian();
+      await sleep(500);
       await browser.executeObsidian(async ({ app, plugins }) => {
         const clickableFolder = document.querySelector(
           "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -654,46 +880,51 @@ async function getStylesFromObsidian(
       await lightPage.openFile("general.md");
       await lightPage.openFile("general.md");
       await sleep(100);
+      lightResult.general = await serializeWithStyles();
+      /*
       [lightResult.general, lightPublishResult.general] = await getStyles(
         configuration.general,
         true,
         false,
       );
+      */
       await lightPage.openFile("headings.md");
       await lightPage.openFile("headings.md");
       await sleep(100);
+      lightResult.headings = await serializeWithStyles();
+      /*
       [lightResult.headings, lightPublishResult.headings] = await getStyles(
         configuration.headings,
         false,
         false,
       );
+      */
       await lightPage.openFile("callouts.md");
       await lightPage.openFile("callouts.md");
       await sleep(100);
+      lightResult.callouts = await serializeWithStyles();
+      /*
       [lightResult.callouts, lightPublishResult.callouts] = await getStyles(
         configuration.callouts,
         false,
         false,
       );
+      */
       await lightPage.openFile("integrations.md");
       await lightPage.openFile("integrations.md");
       await sleep(100);
+      lightResult.integrations = await serializeWithStyles();
+      /*
       [lightResult.integrations, lightPublishResult.integrations] =
         await getStyles(configuration.integrations, false, false);
+        */
       await sleep(500);
     });
     after(async () => {
-      const lightPage = browser.getObsidianPage();
-      await lightPage.write(
-        "./.obsidian/plugins/obsidian-style-settings/data.json",
-        "{}",
-      );
       // Save the light result to a file
       const lightFileName = `./runner/results/${folder}/light.json`;
-      const lightPublishFileName = `./runner/results/${folder}/publish-light.json`;
       // Flatten the result object
       const lightResultObject = {};
-      const lightPublishResultObject = {};
       for (const [key, value] of Object.entries(lightResult)) {
         if (typeof value === "object") {
           for (const [subKey, subValue] of Object.entries(value)) {
@@ -701,43 +932,19 @@ async function getStylesFromObsidian(
           }
         }
       }
-      for (const [key, value] of Object.entries(lightPublishResult)) {
-        if (typeof value === "object") {
-          for (const [subKey, subValue] of Object.entries(value)) {
-            lightPublishResultObject[`${subKey}`] = subValue;
-          }
-        }
-      }
       // Sort the keys alphabetically
       const sortedKeys = Object.keys(lightResultObject).sort();
-      const sortedPublishKeys = Object.keys(lightPublishResultObject).sort();
       const sortedLightResultObject = {};
-      const sortedLightPublishResultObject = {};
       for (const key of sortedKeys) {
         sortedLightResultObject[key] = lightResultObject[key];
       }
-      for (const key of sortedPublishKeys) {
-        sortedLightPublishResultObject[key] = lightPublishResultObject[key];
-      }
       // Fix callout icon colors
-      const fixedLightResultObject = fixCalloutIconColor(
-        sortedLightResultObject,
-      );
-      const fixedLightPublishResultObject = sortedLightPublishResultObject;
+      // const fixedLightResultObject = fixCalloutIconColor(sortedLightResultObject);
+      const fixedLightResultObject = sortedLightResultObject;
       await new Promise((resolve, reject) => {
         writeFile(
           lightFileName,
           JSON.stringify(fixedLightResultObject, null, 2),
-          (err) => {
-            if (err) reject(err);
-            else resolve();
-          },
-        );
-      });
-      await new Promise((resolve, reject) => {
-        writeFile(
-          lightPublishFileName,
-          JSON.stringify(fixedLightPublishResultObject, null, 2),
           (err) => {
             if (err) reject(err);
             else resolve();
@@ -765,6 +972,11 @@ for (const manifest of themeCollection) {
     );
   });
 }
+
+writeFileSync(
+  `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
+  "{}",
+);
 
 /*
 if (testingMode) {

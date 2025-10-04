@@ -3007,7 +3007,7 @@
     },
     "its-theme.its-dark": {
       "compatibility": ["checking", "collection"],
-      "modes": ["dark", "light"],
+      "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": { "ITS@@its-d": true },
       "variations": [],
