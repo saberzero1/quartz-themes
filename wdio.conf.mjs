@@ -65,6 +65,7 @@ export const config = {
       // If you need to switch between multiple vaults, you can omit this and use
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
+      copy: true,
     },
   })),
 
