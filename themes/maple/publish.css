@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* maple-mono-latin-400-normal */
 @font-face {
   font-family: "Maple Mono";
@@ -299,13 +300,13 @@ body.theme-dark {
   --file-header-font-size: 14px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
-  --file-line-width: clamp(600px, 72%, 820px);
+  --file-line-width: clamp(600px, 72%, 850px);
   --file-margins: 32px;
   --flair-background: #363636;
   --flair-color: hsla(207, 50%, 94%, 75%);
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
-  --folder-color: hsl(46, 81%, 45%);
+  --folder-color: hsl(45.81, 80.87%, 45.1%);
   --folder-inactive: 70%;
   --font-black: 900;
   --font-bold: 700;
@@ -400,50 +401,35 @@ body.theme-dark {
   --h1-variant: normal;
   --h1-weight: 750;
   --h2-color: rgba(206.04, 162.52, 140.76, 0.85);
-  --h2-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h2-font: "";
   --h2-line-height: calc(1.8 * calc(16px * 1.5));
   --h2-size: calc(16px * 1.5);
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 700;
   --h3-color: rgba(147.288, 199.512, 155.992, 0.85);
-  --h3-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h3-font: "";
   --h3-line-height: calc(1.8 * calc(16px * 1.4));
   --h3-size: calc(16px * 1.4);
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: rgba(126.48, 183.6, 240.72, 0.85);
-  --h4-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h4-font: "";
   --h4-line-height: calc(1.8 * calc(16px * 1.3));
   --h4-size: calc(16px * 1.3);
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 550;
   --h5-color: rgba(186.2265, 179.265, 238.935, 0.85);
-  --h5-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h5-font: "";
   --h5-line-height: calc(1.8 * calc(16px * 1.2));
   --h5-size: calc(16px * 1.2);
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 550;
   --h6-color: rgba(126.48, 199.92, 197.472, 0.85);
-  --h6-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h6-font: "";
   --h6-line-height: calc(1.8 * calc(16px * 1.1));
   --h6-size: calc(16px * 1.1);
   --h6-style: normal;
@@ -557,10 +543,12 @@ body.theme-dark {
   --link-external-filter: none;
   --link-footnote: rgba(186.2265, 179.265, 238.935, 0.85);
   --link-text-size: 16px;
-  --link-unresolved-color: hsl(
-    calc(207 - 3),
-    calc(24% * 1.02),
-    calc(52% * 1.15 * 0.85)
+  --link-unresolved-color: rgba(126.48, 199.92, 197.472, calc(0.85 * 0.85));
+  --link-unresolved-decoration-color: rgba(
+    126.48,
+    199.92,
+    197.472,
+    calc(0.85 * 0.85)
   );
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -769,7 +757,28 @@ body.theme-dark {
   --search-icon-size: 18px;
   --search-result-background: hsl(207, 5%, 11%);
   --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23DDDDDD' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
+  --setting-accent-h-dark: 207;
+  --setting-calendar-max-width: 500px;
+  --setting-code-ligature: "calt";
+  --setting-color-dirs: hsl(45.81, 80.87%, 45.1%);
+  --setting-file-line-width: clamp(600px, 72%, 850px);
+  --setting-h1-weight: 750;
+  --setting-h2-font: "";
+  --setting-h2-weight: 700;
+  --setting-h3-font: "";
+  --setting-h3-weight: 600;
+  --setting-h4-font: "";
+  --setting-h4-weight: 550;
+  --setting-h5-font: "";
+  --setting-h5-weight: 550;
+  --setting-h6-font: "";
+  --setting-h6-weight: 500;
+  --setting-hr-icon: "⭐";
+  --setting-modal-header-title: "Maple 1.0.0-beta.33";
   --setting-scrollbar-hover: hsla(207, 24%, calc(52% * 0.85), 40%);
+  --setting-text-bold-style: underline dotted;
+  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --setting-text-italic-style: underline dotted;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -932,7 +941,7 @@ body.theme-dark {
   );
   --text-error: rgba(209.304, 137.496, 137.496, 0.85);
   --text-faint: #666666;
-  --text-highlight-bg: rgba(214.2, 181.56, 132.6, 0.3);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
   --text-normal: hsla(207, 50%, 94%, 75%);
@@ -1385,7 +1394,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(167, 147, 118), rgb(99, 136, 160));
+  color: light-dark(rgba(18, 125, 82, 0.85), rgba(126, 200, 197, 0.72));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1401,9 +1410,9 @@ body .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(99, 136, 160) none 0px;
-  text-decoration: underline solid rgb(99, 136, 160);
-  text-decoration-color: rgb(99, 136, 160);
+  outline: rgba(126, 200, 197, 0.72) none 0px;
+  text-decoration: underline solid rgba(126, 200, 197, 0.72);
+  text-decoration-color: rgba(126, 200, 197, 0.72);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: auto;
@@ -1453,10 +1462,7 @@ body .markdown-rendered hr {
   margin: 38.4px 0px;
 }
 body .markdown-rendered mark {
-  background-color: light-dark(
-    rgba(177, 140, 27, 0.3),
-    rgba(214, 182, 133, 0.3)
-  );
+  background-color: rgba(255, 208, 0, 0.4);
   color: light-dark(rgb(34, 34, 34), rgba(232, 240, 247, 0.75));
   cursor: auto;
   filter: none;
@@ -1786,82 +1792,27 @@ body .published-container .markdown-rendered h1 {
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(199, 123, 35), rgba(206, 163, 141, 0.85));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(71, 143, 20), rgba(147, 200, 156, 0.85));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(5, 133, 168), rgba(126, 184, 241, 0.85));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(114, 98, 147), rgba(186, 179, 239, 0.85));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(18, 125, 82), rgba(126, 200, 197, 0.85));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "";
   text-shadow: none;
 }
 body .search-results {
@@ -2549,13 +2500,13 @@ body.theme-light {
   --file-header-font-size: 14px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
-  --file-line-width: clamp(600px, 72%, 820px);
+  --file-line-width: clamp(600px, 72%, 850px);
   --file-margins: 32px;
   --flair-background: #ffffff;
   --flair-color: #222222;
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
-  --folder-color: hsl(46, 81%, 45%);
+  --folder-color: hsl(45.81, 80.87%, 45.1%);
   --folder-inactive: 85%;
   --font-black: 900;
   --font-bold: 700;
@@ -2650,50 +2601,35 @@ body.theme-light {
   --h1-variant: normal;
   --h1-weight: 750;
   --h2-color: rgba(199.41, 122.774, 35.19, 1);
-  --h2-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h2-font: "";
   --h2-line-height: calc(1.8 * calc(16px * 1.5));
   --h2-size: calc(16px * 1.5);
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 700;
   --h3-color: rgba(71.4, 142.8, 20.4, 1);
-  --h3-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h3-font: "";
   --h3-line-height: calc(1.8 * calc(16px * 1.4));
   --h3-size: calc(16px * 1.4);
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: rgba(5.202, 132.8822, 168.198, 1);
-  --h4-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h4-font: "";
   --h4-line-height: calc(1.8 * calc(16px * 1.3));
   --h4-size: calc(16px * 1.3);
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 550;
   --h5-color: rgba(114.24, 97.92, 146.88, 1);
-  --h5-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h5-font: "";
   --h5-line-height: calc(1.8 * calc(16px * 1.2));
   --h5-size: calc(16px * 1.2);
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 550;
   --h6-color: rgba(17.85, 124.95, 82.11, 1);
-  --h6-font:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --h6-font: "";
   --h6-line-height: calc(1.8 * calc(16px * 1.1));
   --h6-size: calc(16px * 1.1);
   --h6-style: normal;
@@ -2799,7 +2735,13 @@ body.theme-light {
   --link-external-filter: none;
   --link-footnote: rgba(114.24, 97.92, 146.88, 1);
   --link-text-size: 16px;
-  --link-unresolved-color: hsl(35, 22%, 56%);
+  --link-unresolved-color: rgba(17.85, 124.95, 82.11, calc(1 * 0.85));
+  --link-unresolved-decoration-color: rgba(
+    17.85,
+    124.95,
+    82.11,
+    calc(1 * 0.85)
+  );
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -2987,7 +2929,28 @@ body.theme-light {
   --search-icon-size: 18px;
   --search-result-background: hsl(35, 12%, 97%);
   --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
+  --setting-accent-h-dark: 207;
+  --setting-calendar-max-width: 500px;
+  --setting-code-ligature: "calt";
+  --setting-color-dirs: hsl(45.81, 80.87%, 45.1%);
+  --setting-file-line-width: clamp(600px, 72%, 850px);
+  --setting-h1-weight: 750;
+  --setting-h2-font: "";
+  --setting-h2-weight: 700;
+  --setting-h3-font: "";
+  --setting-h3-weight: 600;
+  --setting-h4-font: "";
+  --setting-h4-weight: 550;
+  --setting-h5-font: "";
+  --setting-h5-weight: 550;
+  --setting-h6-font: "";
+  --setting-h6-weight: 500;
+  --setting-hr-icon: "⭐";
+  --setting-modal-header-title: "Maple 1.0.0-beta.33";
   --setting-scrollbar-hover: hsla(35, 22%, 56%, 40%);
+  --setting-text-bold-style: underline dotted;
+  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --setting-text-italic-style: underline dotted;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -3125,7 +3088,7 @@ body.theme-light {
   --text-accent-hover: hsl(calc(35 - 3), calc(22% * 1.02), calc(56% * 1.15));
   --text-error: rgba(189.0825, 81.2175, 81.2175, 1);
   --text-faint: #ababab;
-  --text-highlight-bg: rgba(177.48, 139.74, 26.52, 0.3);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #5c5c5c;
   --text-normal: #222222;

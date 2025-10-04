@@ -9,7 +9,7 @@
 /* ::::: LAGOM SETTINGS ::::: */
 body {
 
-  /* --interactive-normal: var(--background-modifier-border) !important; button colors */
+  /* --interactive-normal: var(--background-modifier-border) !important; */ /* button colors */
   --input-shadow: var(--background-modifier-border) 0 0 0 1px !important;
   --input-shadow-hover: hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px !important;
   --interactive-hover: hsla(var(--color-accent-hsl), 0.1) !important;
@@ -58,8 +58,8 @@ body {
   --metadata-input-font-size: var(--default-font-size);
   --metadata-property-radius: var(--radius-s);
   --metadata-divider-color: none;
-  /*--metadata-gap: 23px; */
-  /*--metadata-property-background: #49292; */
+  /* --metadata-gap: 23px; */
+  /* --metadata-property-background: #49292; */
   --metadata-display-editing: none;
   --properties-editor-font-size: var(--default-font-size);
   --theme-dark-opacity: 0.85;
@@ -145,6 +145,8 @@ body.theme-light {
 
  /* ::::: BOTH MODES ::::: */
 .cm-s-obsidian, .markdown-preview-view, .CodeMirror-lines {
+  padding-left: var(--padding-note-content);
+  padding-right: var(--padding-note-content);
   text-align: var(--text-note-align);
   font-size: var(--default-font-size);
   width: auto;
@@ -243,6 +245,7 @@ body.theme-light {
   font-family: unset;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 6px;
   text-align: var(--inline-title-align) !important;
   font-size: var(--inline-title-size);
   font-weight: var(--inline-title-bold);
@@ -251,10 +254,12 @@ body.theme-light {
 
 .inline-title-always-uppercase .inline-title {
   text-transform: uppercase;
+
 }
 
 .block-title-read-mode .workspace-leaf-content[data-mode="preview"] .markdown-preview-view .mod-header .inline-title {
   pointer-events: none;
+
 }
 
 
@@ -560,7 +565,7 @@ p:has(a.tag) {
 }
 
 /* HIDE HASHTAG */
-a.tag {
+a.tag:not(.markdown-preview-view) {
   display: inline;
   font-family: 'Formular', var(--font-text) !important;
   padding: 10px 12px 5px 0px !important;
@@ -937,6 +942,7 @@ hr {
 
 /* ::::: COMMANDER TOOLBAR ::::: */
 .view-header {
+  position: relative !important;
 	margin: 0px 0px 0px 11px !important;
   padding: 0px !important;
 }
@@ -961,6 +967,86 @@ hr {
 
 
 /* :::::  SETTINGS  ::::: */
+
+/* ::::: INTERNAL FRAME - CODE BY @FLOODLIGHT (VELOCITY THEME)::::: */
+
+.mod-settings,
+.mod-narrow,
+.mod-confirmation {
+	--background-modifier-form-field: transparent;
+	--background-modifier-form-field-hover: transparent;
+	& .setting-item:not(.style-settings-heading) {
+		border-inline: 1px solid var(--background-modifier-border);
+		box-shadow: var(--mac-terminal-shadow);
+		clip-path: inset(0px -24px 0px -24px);
+		padding: 12px 20px 12px 22px;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		& .setting-item-info {
+			contain: content;
+			flex: 7;
+			margin-left: -5px ; !important;
+		}
+		&:not(.style-settings-info-text) .setting-item-control {
+			flex: 3;
+			--icon-color: var(--text-muted);
+		}
+	}
+	
+	& .setting-item:last-of-type,
+	.setting-item:has( + .setting-item.setting-item-heading),
+	.setting-item:not(.setting-item-heading):has( + :not(.setting-item)) {
+		box-shadow: 
+		var(--mac-terminal-shadow);
+		border-bottom: 1px solid var(--background-modifier-border);
+		border-radius: 0 0 var(--radius-s) var(--radius-s);
+		clip-path: inset(0px -24px -24px -24px);
+		padding-bottom: 14px;
+	}
+	
+	& .setting-item.setting-item-heading + .setting-item:last-of-type,
+	.setting-item:not(.setting-item-heading):only-of-type,
+	.setting-item:first-child:has( + .setting-item.setting-item-heading),
+	:not(.setting-item) + .setting-item:last-child,
+	:not(.setting-item) + .setting-item:not(.setting-item-heading):has( + *:not(.setting-item)),
+	.setting-item:not(.setting-item-heading):first-child:not(:has( + .setting-item)),
+	.setting-item.setting-item-heading + .setting-item:not(.setting-item-heading):has( + .setting-item.setting-item-heading),
+	div[class*="settings-section"] > .setting-item {
+		border: 1px solid var(--background-modifier-border);
+		border-radius: var(--radius-s) !important; 
+		clip-path: none !important;
+		padding-block: 14px;
+	}
+	& .setting-item:not(.setting-item-heading):first-of-type,
+	.setting-item.setting-item-heading + .setting-item,
+	:not(.setting-item) + .setting-item:has( + .setting-item) {
+		border-top: 1px solid var(--background-modifier-border);
+		border-radius: var(--radius-s) var(--radius-s) 0 0;
+		clip-path: inset(-24px -24px 0px -24px);
+		padding-top: 16px;
+	}
+	& .setting-item.setting-item-heading  {
+		background-color: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+		font-weight: var(--font-semibold);
+	}
+	& .setting-item-description {}
+	& .setting-item-name {
+		overflow: visible;
+	}
+}
+.mobile-option-setting-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 12px 16px;
+}
+.installed-plugins-container {
+    padding-top: 0;
+    border-top: none;
+}
+
+
 .setting-item-description {}
 
 /* GROUP SETTINGS */
@@ -1109,7 +1195,7 @@ body.is-mobile .workspace-drawer-header {
 .is-phone .prompt {
   width: 86%;
   height: 95%;
-  margin-top: 15px;
+  margin-top: 12px;
   border-radius: var(--radius-s);
   box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
 }
@@ -1119,14 +1205,15 @@ body.is-mobile .workspace-drawer-header {
 
 .mobile-navbar {
   display: var(--hide-navbar);
-  position: absolute;
+  position: fixed !important;
   border: 0.5px solid var(--background-modifier-box-shadow);
   box-shadow: var(--mac-terminal-shadow);
   border-radius: var(--radius-s);
   width: 75%;
+  padding-bottom: 7px !important;
   margin-left: 12.5%;
   margin-right: 12.5%;
-  bottom: 8px;
+  bottom: 1.8% !important;
 }
 
 
@@ -1150,13 +1237,15 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 .is-mobile .menu {
   font-size: var(--nav-item-size) !important;
   max-width: 85%;
-  padding: 5px 15px 0px 15px ;
+  padding: 5px 1px 0px 1px
+  border-radius: 0px !important;
 }
 
 
 .is-mobile .menu-item:not(.menu-separator) {
 	border-bottom: 0px dashed var(--background-modifier-border);
 	border-radius: 0px;
+	background: transparent !important;
   padding: 10px 1px 10px 1px !important;
 }
 
@@ -1285,7 +1374,7 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
 
 /* ICON FILE */
 .nav-file-title:before {
-  content: var(--icon-file-indicator);
+  content: var(--icon-file-indicator) !important;
   padding-right: 7px;
   font-size: 1.4em;
   padding-bottom: 7px;
