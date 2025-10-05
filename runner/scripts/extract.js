@@ -1,7 +1,11 @@
 import { browser } from "@wdio/globals";
 import { memoryUsage } from "process";
-import { extractionTargets } from "./config.js";
-import { writeFile, copyFileSync, writeFileSync, mkdirSync } from "fs";
+import { extractionTargets } from "./config.wip.js";
+import {
+  dark as darkDefaultStyles,
+  light as lightDefaultStyles,
+} from "./default-styles.js";
+import { writeFileSync, mkdirSync } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import getThemeCollection from "../../extensions/themelist.mjs";
 import {
@@ -9,13 +13,6 @@ import {
   isLightTheme,
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../../util/util.mjs";
-import { obsidianPage } from "wdio-obsidian-service";
-
-// TODO: some themes have diplucated id on some style settings.
-// This makes it impossible to configure settings that share an ID.
-// Short term solution is to change the themes manually to have unique IDs
-// or to apply the classes they target automatically to the body
-// (style settings would have done this but it doesn't work with duplicate IDs).
 
 /*
  * NOTE: Make sure to set the saved workspace layouts to reading mode!
@@ -26,25 +23,29 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-//testingMode = true;
-const testingTheme = "its";
-const startingIndex = 110;
+testingMode = false;
+const testingTheme = "catppuccin";
+const startingIndex = 0;
+const numberOfThemesToProcess = -1;
+const numberOfThemesInManifest = getThemeCollection().length;
 
-/*
-const manifestCollection = testingMode
-  ? getManifestCollection().filter(
-      (m) => m.name.toLowerCase() === testingTheme.toLowerCase(),
-    )
-  : getManifestCollection(); // Limit to first 10 themes for testing
-  */
 const themeCollection = testingMode
   ? getThemeCollection().filter((m) =>
       m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
     )
   : // Start at startingIndex
-    getThemeCollection().slice(startingIndex);
+    numberOfThemesToProcess > 0
+    ? getThemeCollection().slice(
+        startingIndex,
+        Math.min(
+          startingIndex + numberOfThemesToProcess,
+          numberOfThemesInManifest,
+        ),
+      )
+    : numberOfThemesToProcess === 0
+      ? getThemeCollection().slice(startingIndex, undefined)
+      : getThemeCollection();
 
-//console.log(manifestCollection);
 console.log(themeCollection);
 
 function printMemoryUsage() {
@@ -59,621 +60,149 @@ function printMemoryUsage() {
   }
 }
 
-function deleteObjectProperties(obj) {
-  Object.keys(obj).forEach((key) => {
-    delete obj[key];
-  });
-}
+async function serializeWithStyles(defaultStylesByTagName) {
+  return await browser.executeObsidian(
+    async ({ app }, defaultStylesByTagName) => {
+      await sleep(1000); // Wait for the file to open and styles to apply
 
-async function serializeWithStyles() {
-  const result = await browser.executeObsidian(async ({ app }) => {
-    await sleep(1000); // Wait for the file to open and styles to apply
-    // Mapping between tag names and css default values lookup tables. This allows to exclude default values in the result.
-    let defaultStylesByTagName = {};
+      const computedMap = {};
+      const win = window;
 
-    // Styles inherited from style sheets will not be rendered for elements with these tag names
-    let noStyleTags = {
-      BASE: true,
-      HEAD: true,
-      //HTML: true,
-      LINE: true,
-      META: true,
-      NOFRAME: true,
-      NOSCRIPT: true,
-      PARAM: true,
-      PATH: true,
-      POLYLINE: true,
-      RECT: true,
-      SCRIPT: true,
-      STYLE: true,
-      TITLE: true,
-    };
-
-    // This list determines which css default values lookup tables are precomputed at load time
-    // Lookup tables for other tag names will be automatically built at runtime if needed
-    let tagNames = [
-      "A",
-      "ABBR",
-      "ADDRESS",
-      "AREA",
-      "ARTICLE",
-      "ASIDE",
-      "AUDIO",
-      "B",
-      "BASE",
-      "BDI",
-      "BDO",
-      "BLOCKQUOTE",
-      "BODY",
-      "BR",
-      "BUTTON",
-      "CANVAS",
-      "CAPTION",
-      "CENTER",
-      "CITE",
-      "CODE",
-      "COL",
-      "COLGROUP",
-      "COMMAND",
-      "DATALIST",
-      "DD",
-      "DEL",
-      "DETAILS",
-      "DFN",
-      "DIV",
-      "DL",
-      "DT",
-      "EM",
-      "EMBED",
-      "FIELDSET",
-      "FIGCAPTION",
-      "FIGURE",
-      "FONT",
-      "FOOTER",
-      "FORM",
-      "H1",
-      "H2",
-      "H3",
-      "H4",
-      "H5",
-      "H6",
-      "HEAD",
-      "HEADER",
-      "HGROUP",
-      "HR",
-      "HTML",
-      "I",
-      "IFRAME",
-      "IMG",
-      "INPUT",
-      "INS",
-      "KBD",
-      "KEYGEN",
-      "LABEL",
-      "LEGEND",
-      "LI",
-      "LINK",
-      "MAP",
-      "MARK",
-      "MATH",
-      "MENU",
-      "META",
-      "METER",
-      "NAV",
-      "NOBR",
-      "NOSCRIPT",
-      "OBJECT",
-      "OL",
-      "OPTION",
-      "OPTGROUP",
-      "OUTPUT",
-      "P",
-      "PARAM",
-      "PRE",
-      "PROGRESS",
-      "Q",
-      "RP",
-      "RT",
-      "RUBY",
-      "S",
-      "SAMP",
-      "SCRIPT",
-      "SECTION",
-      "SELECT",
-      "SMALL",
-      "SOURCE",
-      "SPAN",
-      "STRONG",
-      "STYLE",
-      "SUB",
-      "SUMMARY",
-      "SUP",
-      "SVG",
-      "TABLE",
-      "TBODY",
-      "TD",
-      "TEXTAREA",
-      "TFOOT",
-      "TH",
-      "THEAD",
-      "TIME",
-      "TITLE",
-      "TR",
-      "TRACK",
-      "U",
-      "UL",
-      "VAR",
-      "VIDEO",
-      "WBR",
-    ];
-
-    // Precompute the lookup tables.
-    for (let i = 0; i < tagNames.length; i++) {
-      if (!noStyleTags[tagNames[i]]) {
-        defaultStylesByTagName[tagNames[i]] = computeDefaultStyleByTagName(
-          tagNames[i],
-        );
-      }
-    }
-
-    function computeDefaultStyleByTagName(tagName) {
-      let defaultStyle = {};
-      let element = document.body.appendChild(document.createElement(tagName));
-      let computedStyle = getComputedStyle(element);
-      for (let i = 0; i < computedStyle.length; i++) {
-        defaultStyle[computedStyle[i]] = computedStyle[computedStyle[i]];
-      }
-      document.body.removeChild(element);
-      return defaultStyle;
-    }
-
-    function getDefaultStyleByTagName(tagName) {
-      tagName = tagName.toUpperCase();
-      if (!defaultStylesByTagName[tagName]) {
-        defaultStylesByTagName[tagName] = computeDefaultStyleByTagName(tagName);
-      }
-      return defaultStylesByTagName[tagName];
-    }
-
-    function extractStyles() {
-      //const rootElement = document.getRootNode().querySelector("body");
-      /*
-      if (rootElement.nodeType !== Node.ELEMENT_NODE) {
-        throw new TypeError();
-      }
-      */
-      const rootElement = document;
-      let cssTexts = [];
-      let elements = rootElement.querySelectorAll("*");
-      let computedMap = {};
-      for (let i = 0; i < elements.length; i++) {
-        let e = elements[i];
-        if (
-          !noStyleTags[e.tagName] &&
-          !["path", "circle", "rect", "line", "polyline"].includes(
-            e.tagName.toLowerCase(),
-          )
-        ) {
-          //let computedStyle = getComputedStyle(e);
-          let computedStyle = Array.from(e.computedStyleMap());
-          let defaultStyle = getDefaultStyleByTagName(e.tagName);
-          //cssTexts[i] = e.style.cssText;
-          const classes = e.classList
-            ? e.classList
-                .toString()
-                .split(" ")
-                .filter((c) => c.trim() !== "")
-            : [];
-          const attributes = e.attributes
-            ? Array.from(e.attributes)
-                .filter((c) => c !== "class")
-                .map((attr) => `${attr.name}="${attr.value}"`)
-            : [];
-          const selectorKey = ["html", "body"].includes(e.tagName.toLowerCase())
-            ? e.tagName.toLowerCase()
-            : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${attributes.length > 0 ? "[" + attributes.toSorted().join("][") + "]" : ""}`;
-          //for (let ii = 0; ii < computedStyle.length; ii++) {
-          computedStyle.forEach(([prop, value]) => {
-            // let cssPropName = computedStyle[ii];
-            if (
-              computedStyle[prop] !== defaultStyle[prop] ||
-              (prop.startsWith("--") &&
-                ["html", "body"].includes(e.tagName.toLowerCase()))
-            ) {
-              //e.style[cssPropName] = computedStyle[cssPropName];
-              if (computedMap[selectorKey] === undefined) {
-                computedMap[selectorKey] = {};
-              }
-              if (computedMap[selectorKey][prop] === undefined) {
-                computedMap[selectorKey][prop] =
-                  //computedStyle[cssPropName];
-                  value.toString();
-              }
-            }
-          });
-        }
-      }
-      /*
-        let result = this.outerHTML;
-        for ( let i = 0; i < elements.length; i++ ) {
-            elements[i].style.cssText = cssTexts[i];
-        }
-        return result;
-*/
-      return computedMap;
-    }
-
-    const result = extractStyles();
-
-    return result;
-  });
-  // TODO: Fix empty return values
-  // Probably not passing something correctly to the browser context
-  return result;
-}
-
-// test/extract-styles.test.js
-async function getStyles(configuration, getGeneric = false, isDark = false) {
-  const result = await browser.executeObsidian(
-    async ({ app }, targets, getGeneric, isDark) => {
-      //app.customCss.setTheme(theme);
-      const rules = targets.selectors;
-
-      await sleep(300); // Wait for the file to open and styles to apply
-      app.workspace.trigger("parse-style-settings");
-      await sleep(700);
-      const styleMap = serializeWithStyles(
-        document.getRootNode().querySelector("body"),
-      );
-      computedStyles = styleMap; // Quartz specific styles
-      computedPublishStyles = styleMap; // Obsidian Publish specific styles
-      return [computedStyles, computedPublishStyles];
-      rules.forEach((rule) => {
-        const containerSelector =
-          "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content > div.markdown-reading-view > div.markdown-preview-view";
-        const containerElement =
-          app.workspace.activeLeaf.containerEl.querySelector(
-            ".workspace-leaf-content > .view-content > .markdown-reading-view > .markdown-preview-view",
-          );
-        if (containerElement === null || containerElement === undefined) return;
-
-        const selectorKey =
-          rule.pseudoElement === ""
-            ? rule.obsidianSelector
-            : `${rule.obsidianSelector}${rule.pseudoElement}`;
-        const element =
-          containerElement.querySelector(selectorKey) ?? containerElement;
-        const style = getComputedStyle(element);
-        computedStyles[rule.quartzSelector] = {};
-        computedPublishStyles[rule.publishSelector] = {};
-        for (const prop of rule.properties) {
-          // Skip properties that are not set
-          if (rule.quartzSelector) {
-            computedStyles[rule.quartzSelector][prop] =
-              element.getCssPropertyValue(prop)
-                ? element.getCssPropertyValue(prop)
-                : "unset";
-          }
-          if (rule.publishSelector) {
-            computedPublishStyles[rule.publishSelector][prop] =
-              element.getCssPropertyValue(prop)
-                ? element.getCssPropertyValue(prop)
-                : "unset";
-          }
-        }
-
-        // BONUS: Handle pseudo-elements like ::before and ::after
-        /*
-          const beforeStyle = app.dom.appContainerEl.getComputedStyle(
-            element,
-            "::before",
-          );
-          if (beforeStyle.content !== "none") {
-            computedStyles[`${key}::before`] = {
-            };
-          }
-          */
-      });
-
-      if (!getGeneric) return [computedStyles, computedPublishStyles];
-      // Extra styles outside the main container
-      const centerElement = app.workspace.activeLeaf.containerEl.querySelector(
-        //".workspace-leaf-content > .view-content",
-        ".workspace-split.mod-root .view-content",
-      );
-      computedPublishStyles[`.published-container`] = {};
-      if (centerElement) {
-        const centerStyle = getComputedStyle(centerElement);
-        computedStyles[`.page > #quartz-body`] = {
-          "background-color": centerElement.getCssPropertyValue(
-            "background-color",
-          )
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset",
-        };
-        computedPublishStyles[
-          `.site-body, &.theme-dark, &.theme-light, .markdown-preview-sizer.markdown-preview-section`
-        ] = {
-          "background-color": centerElement.getCssPropertyValue(
-            "background-color",
-          )
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset",
-        };
-        computedPublishStyles[`.published-container`]["background-color"] =
-          centerElement.getCssPropertyValue("background-color")
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset";
-        computedPublishStyles[`.published-container`]["--background-primary"] =
-          centerElement.getCssPropertyValue("background-color")
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset";
-      }
-
-      const borderElement = document
-        .getRootNode()
-        .querySelector("hr.workspace-leaf-resize-handle");
-      if (borderElement) {
-        const borderStyle = getComputedStyle(borderElement);
-        const centerStyle = getComputedStyle(centerElement);
-        computedStyles[`.popover .popover-inner`] = {
-          "border-color": borderElement.getCssPropertyValue("border-color")
-            ? borderElement.getCssPropertyValue("border-left-color")
-            : "unset",
-          "background-color": centerElement.getCssPropertyValue(
-            "background-color",
-          )
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset",
-        };
-        computedPublishStyles[`.popover.hover-popover`] = {
-          "border-color": borderElement.getCssPropertyValue("border-color")
-            ? borderElement.getCssPropertyValue("border-left-color")
-            : "unset",
-          "background-color": centerElement.getCssPropertyValue(
-            "background-color",
-          )
-            ? centerElement.getCssPropertyValue("background-color")
-            : "unset",
-        };
-        computedStyles[`.graph .graph-outer`] = {
-          "border-color": borderElement.getCssPropertyValue("border-color")
-            ? borderElement.getCssPropertyValue("border-left-color")
-            : "unset",
-        };
-        computedStyles[`.graph>.global-graph-outer>.global-graph-container`] = {
-          "border-color": borderElement.getCssPropertyValue("border-color")
-            ? borderElement.getCssPropertyValue("border-left-color")
-            : "unset",
-          "background-color": "transparent",
-        };
-        computedStyles[`.graph>.global-graph-outer`] = {
-          "backdrop-filter": "blur(4px) brightness(0.4)",
-          "-webkit-backdrop-filter": "blur(4px) brightness(0.4)",
-        };
-      }
-
-      const leftSidebar = document
-        .getRootNode()
-        .querySelector(
-          ".workspace-split.mod-horizontal.mod-sidedock.mod-left-split",
-        );
-      if (leftSidebar) {
-        const leftSidebarStyle = getComputedStyle(leftSidebar);
-        const borderStyle = getComputedStyle(borderElement);
-        computedStyles[`.page > #quartz-body .left.sidebar`] = {
-          "background-color": leftSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? leftSidebar.getCssPropertyValue("background-color")
-            : "unset",
-          "border-color": borderElement.getCssPropertyValue(
-            "border-right-color",
-          )
-            ? borderElement.getCssPropertyValue("border-right-color")
-            : "inherit",
-          "border-right-width": "1px",
-        };
-        computedPublishStyles[`div.side-body-left-column`] = {
-          "background-color": leftSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? leftSidebar.getCssPropertyValue("background-color")
-            : "unset",
-          "border-color": borderElement.getCssPropertyValue(
-            "border-right-color",
-          )
-            ? borderElement.getCssPropertyValue("border-right-color")
-            : "inherit",
-          "border-right-width": "1px",
-        };
-        computedPublishStyles[`.published-container`][
-          "--sidebar-left-background"
-        ] = leftSidebar.getCssPropertyValue("background-color")
-          ? leftSidebar.getCssPropertyValue("background-color")
-          : "unset";
-        computedPublishStyles[`.published-container`][
-          "--sidebar-left-border-color"
-        ] = borderElement.getCssPropertyValue("border-right-color")
-          ? borderElement.getCssPropertyValue("border-right-color")
-          : "inherit";
-        computedPublishStyles[`.published-container`][
-          "--sidebar-left-border-width"
-        ] = "1px";
-        computedStyles[`.page > #quartz-body .sidebar.left:has(.explorer)`] = {
-          "background-color": leftSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? leftSidebar.getCssPropertyValue("background-color")
-            : "unset",
-        };
-        computedStyles[`.explorer .explorer-content`] = {
-          "background-color": leftSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? leftSidebar.getCssPropertyValue("background-color")
-            : "unset",
-        };
-      }
-      const rightSidebar = document
-        .getRootNode()
-        .querySelector(
-          ".workspace-split.mod-horizontal.mod-sidedock.mod-right-split",
-        );
-      if (rightSidebar) {
-        const rightSidebarStyle = getComputedStyle(rightSidebar);
-        const borderStyle = getComputedStyle(borderElement);
-        computedStyles[`.page > #quartz-body .right.sidebar`] = {
-          "background-color": rightSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? rightSidebar.getCssPropertyValue("background-color")
-            : "unset",
-          "border-color": borderElement.getCssPropertyValue("border-left-color")
-            ? borderElement.getCssPropertyValue("border-right-color")
-            : "inherit",
-          "border-left-width": "1px",
-        };
-        computedPublishStyles[`.site-body-right-column`] = {
-          "background-color": rightSidebar.getCssPropertyValue(
-            "background-color",
-          )
-            ? rightSidebar.getCssPropertyValue("background-color")
-            : "unset",
-          "border-color": borderElement.getCssPropertyValue("border-left-color")
-            ? borderElement.getCssPropertyValue("border-right-color")
-            : "inherit",
-          "border-left-width": "1px",
-        };
-        computedPublishStyles[`.published-container`][
-          "--sidebar-right-background"
-        ] = leftSidebar.getCssPropertyValue("background-color")
-          ? leftSidebar.getCssPropertyValue("background-color")
-          : "unset";
-        computedPublishStyles[`.published-container`][
-          "--sidebar-right-border-color"
-        ] = borderElement.getCssPropertyValue("border-right-color")
-          ? borderElement.getCssPropertyValue("border-right-color")
-          : "inherit";
-        computedPublishStyles[`.published-container`][
-          "--sidebar-right-border-width"
-        ] = "1px";
-      }
-
-      let backgroundGradient = "";
-      if (rightSidebar && leftSidebar && centerElement) {
-        const leftSidebarStyle = getComputedStyle(leftSidebar);
-        const rightSidebarStyle = getComputedStyle(rightSidebar);
-        const centerStyle = getComputedStyle(centerElement);
-        const leftSidebarColor =
-          leftSidebar.getCssPropertyValue("background-color");
-        const rightSidebarColor =
-          rightSidebar.getCssPropertyValue("background-color");
-        backgroundGradient =
-          leftSidebarColor === rightSidebarColor
-            ? leftSidebarColor
-            : `linear-gradient(to right, ${leftSidebarColor} 0%, ${leftSidebarColor} 20%, ${centerElement ? centerElement.style.backgroundColor : "transparent"} 50%, ${rightSidebarColor} 50%, ${rightSidebarColor} 100%)`;
-        computedStyles[`&[data-slug]`] = {
-          /*
-            "background-color": centerStyle
-              .getPropertyValue("background-color")
-              .toString()
-              .trim(),
-            */
-          color: centerElement.getCssPropertyValue("color")
-            ? `${centerElement.getCssPropertyValue("color")}`
-            : "unset",
-          background: `${backgroundGradient}`,
-        };
-      }
-
-      const bodyVariablesElement = document.getRootNode().querySelector("body");
-      const styleSettingsElement = isDark
-        ? document.getRootNode().querySelector(".theme-dark.style-settings-ref")
-        : document
-            .getRootNode()
-            .querySelector(".theme-light.style-settings-ref");
-      if (bodyVariablesElement) {
-        const bodyStyle = getComputedStyle(bodyVariablesElement);
-        const variablesToExtract = [
-          "--code-background",
-          "--code-normal",
-          "--code-value",
-          "--code-function",
-          "--code-string",
-          "--code-property",
-          "--code-punctuation",
-          "--code-comment",
-          "--code-tag",
-          "--code-important",
-          "--code-operator",
-          "--code-keyword",
-        ]; /*[
-            "--color-red",
-            "--color-orange",
-            "--color-yellow",
-            "--color-green",
-            "--color-cyan",
-            "--color-blue",
-            "--color-purple",
-            "--color-pink",
-            "--text-muted",
-            "--text-faint",
-            "--text-normal",
-          ];*/
-
-        computedStyles[`:root`] = {};
-        variablesToExtract.forEach((variable) => {
-          computedStyles[`:root`][variable] =
-            bodyVariablesElement.getCssPropertyValue(variable);
-        });
-        // TODO: fix this to actually extract '--variables'. It currently does not do that at all
-        computedPublishStyles[`${isDark ? "&.theme-dark" : "&.theme-light"}`] =
-          {};
-        bodyVariablesElement.computedStyleMap().forEach((value, property) => {
-          if (property && property.startsWith("--")) {
-            computedPublishStyles[
-              `${isDark ? "&.theme-dark" : "&.theme-light"}`
-            ][property] = bodyVariablesElement.getCssPropertyValue(property);
-          }
-        });
-        styleSettingsElement?.computedStyleMap().forEach((value, property) => {
-          if (property && property.startsWith("--")) {
-            computedPublishStyles[
-              `${isDark ? "&.theme-dark" : "&.theme-light"}`
-            ][property] = styleSettingsElement.getCssPropertyValue(property);
-          }
-        });
-        /*
-          for (let i = 1; i <= bodyStyle.length; i++) {
-            const propertyName = bodyStyle[i];
-            if (propertyName && propertyName.startsWith("--")) {
-              computedPublishStyles[
-                `${isDark ? "&.theme-dark" : "&.theme-light"}`
-              ][propertyName] = bodyStyle
-                .getPropertyValue(propertyName)
-                .toString()
-                .trim();
-            }
-          }
-          */
-      }
-
-      // Generic
-      computedStyles[`.page > #quartz-body div.center`] = {
-        "min-width": "calc(100% - 40px)",
-        "max-width": "calc(100% - 40px)",
-        "padding-left": "10px",
-        "padding-right": "10px",
+      // Styles inherited from style sheets will not be rendered for elements with these tag names
+      const noStyleTags = {
+        BASE: true,
+        HEAD: true,
+        HTML: true,
+        LINE: true,
+        META: true,
+        NOFRAME: true,
+        NOSCRIPT: true,
+        PARAM: true,
+        PATH: true,
+        POLYLINE: true,
+        RECT: true,
+        SCRIPT: true,
+        STYLE: true,
+        TITLE: true,
       };
 
-      return [computedStyles, computedPublishStyles];
+      function toStyleMap(source) {
+        const map = [];
+
+        for (let i = 0; i < source.length; i++) {
+          map.push([source[i], source.getPropertyValue(source[i])]);
+        }
+
+        return map;
+      }
+
+      async function extractStyles() {
+        const elements = document.createNodeIterator(
+          document,
+          NodeFilter.SHOW_ELEMENT,
+        );
+        let e = elements.nextNode();
+        while (e) {
+          if (
+            !noStyleTags[e.tagName] &&
+            !["path", "circle", "rect", "line", "polyline"].includes(
+              e.tagName.toLowerCase(),
+            )
+          ) {
+            const psuedoRegular = [null, "::before", "::after"];
+            const psuedoList = [null, "::before", "::after", "::marker"];
+            const elemList = [];
+            for (const psuedoElement of e.tagName === "LI"
+              ? psuedoList
+              : psuedoRegular) {
+              const computedStyle =
+                e.tagName.toLowerCase() === "body" ||
+                e.tagName.toLowerCase() === "html"
+                  ? e.computedStyleMap()
+                  : toStyleMap(window.getComputedStyle(e, psuedoElement));
+              const defaultStyle =
+                defaultStylesByTagName[e.tagName.toUpperCase()];
+              const classes = e.classList
+                ? e.classList
+                    .toString()
+                    .split(" ")
+                    .filter((c) => c.trim() !== "")
+                : [];
+              const attributes = e.attributes
+                ? Array.from(e.attributes)
+                    .filter(
+                      (attr) =>
+                        (attr.name.startsWith("data") &&
+                          !attr.name.endsWith("-id")) ||
+                        attr.name === "type",
+                    )
+                    .map((attr) => `${attr.name}="${attr.value}"`)
+                : [];
+              const selectorKey = ["html", "body"].includes(
+                e.tagName.toLowerCase(),
+              )
+                ? e.tagName.toLowerCase()
+                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${
+                    attributes.length > 0
+                      ? "[" + attributes.toSorted().join("][") + "]"
+                      : ""
+                  }${psuedoElement ?? ""}`;
+              for (const [prop, val] of computedStyle) {
+                if (
+                  (prop &&
+                    prop.startsWith("--") &&
+                    ["html", "body"].includes(e.tagName.toLowerCase())) ||
+                  (prop &&
+                    !prop.startsWith("--") &&
+                    !prop.startsWith("-webkit-") &&
+                    /*computedStyle.getPropertyValue(prop)*/ val.toString() !==
+                      (defaultStyle ? defaultStyle[prop] : undefined) &&
+                    ![
+                      "-electron-corner-smoothing",
+                      "anchor-scope",
+                      "app-region",
+                      "block-size",
+                      "dynamic-range-limit",
+                      "font-variant-emoji",
+                      "inline-size",
+                      "interactivity",
+                      "perspective-origin",
+                      "print-color-adjust",
+                      "reading-flow",
+                      "reading-order",
+                      "scroll-initial-target",
+                      "scroll-marker-group",
+                      "text-box-edge",
+                      "text-box-trim",
+                      "transform-origin",
+                      "width",
+                    ].includes(prop))
+                ) {
+                  if (!computedMap[selectorKey]) {
+                    computedMap[selectorKey] = {};
+                  }
+                  if (!computedMap[selectorKey][prop]) {
+                    computedMap[selectorKey][prop] =
+                      val.toString(); /*computedStyle
+                      .getPropertyValue(prop)
+                      .toString();*/
+                  }
+                }
+              }
+            }
+          }
+          e = elements.nextNode();
+        }
+
+        return computedMap;
+      }
+
+      return extractStyles();
     },
-    configuration,
-    getGeneric,
-    isDark,
+    defaultStylesByTagName,
   );
-  return result;
+  // TODO: Fix empty return values
+  // Probably not passing something correctly to the browser context
 }
 
 function fixCalloutIconColor(results) {
@@ -710,16 +239,13 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function applyStyleSettingsPreset(browser, preset) {
-  await browser.executeObsidian(({ app }, preset) => {
-    const computedPreset = JSON.parse(JSON.stringify(preset));
-    app.plugins
-      .getPlugin("obsidian-style-settings")
-      .settingsManager.setSettings(computedPreset);
-  });
-}
-
-async function getStylesFromObsidian(manifest, manifestCollection, preset) {
+async function getStylesFromObsidian(
+  manifest,
+  manifestCollection,
+  preset,
+  darkDefaultStyles,
+  lightDefaultStyles,
+) {
   const [theme, variation] = manifest.name.split(".");
   const fullName =
     manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
@@ -731,9 +257,6 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
     `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
     preset,
   );
-  // TODO: style settings functions should be used to apply settings
-  // e.g. const ss = this.app.plugins.getPlugin("obsidian-style-settings").settingsManager
-  // https://github.com/mgmeyers/obsidian-style-settings/blob/dfa9f7c81f9345b9bca47c128339e0e00ecd2aee/src/ImportModal.ts#L48
   const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
   mkdirSync(`./runner/results/${folder}`, { recursive: true });
   let lightResult = {
@@ -748,8 +271,6 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
     callouts: {},
     integrations: {},
   };
-  let lightKey = "general";
-  let darkKey = "general";
   console.log(`Extracting styles for theme: ${theme}`);
 
   if (isDarkTheme(theme)) {
@@ -776,59 +297,31 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
         if (clickableFolder) {
           clickableFolder.click();
         }
-        /*
-          await app.plugins
-            .getPlugin("obsidian-style-settings")
-            .settingsManager.setSettings(JSON.parse(JSON.stringify(preset)));
-            */
       });
       await sleep(500);
       await darkPage.openFile("general.md");
+      await sleep(100);
       await darkPage.openFile("general.md");
-      await sleep(100);
-      darkResult.general = await serializeWithStyles();
-      /*
-      [darkResult.general, darkPublishResult.general] = await getStyles(
-        configuration.general,
-        true,
-        true,
-      );
-      */
-      await darkPage.openFile("headings.md");
+      await sleep(900);
+      darkResult.general = await serializeWithStyles(darkDefaultStyles);
+      await sleep(500);
       await darkPage.openFile("headings.md");
       await sleep(100);
-      darkResult.headings = await serializeWithStyles();
-      /*
-      [darkResult.headings, darkPublishResult.headings] = await getStyles(
-        configuration.headings,
-        false,
-        true,
-      );
-      */
-      await darkPage.openFile("callouts.md");
+      await darkPage.openFile("headings.md");
+      await sleep(900);
+      darkResult.headings = await serializeWithStyles(darkDefaultStyles);
+      await sleep(500);
       await darkPage.openFile("callouts.md");
       await sleep(100);
-      darkResult.callouts = await serializeWithStyles();
-      /*
-      [darkResult.callouts, darkPublishResult.callouts] = await getStyles(
-        configuration.callouts,
-        false,
-        true,
-      );
-      */
-      await darkPage.openFile("integrations.md");
+      await darkPage.openFile("callouts.md");
+      await sleep(900);
+      darkResult.callouts = await serializeWithStyles(darkDefaultStyles);
+      await sleep(500);
       await darkPage.openFile("integrations.md");
       await sleep(100);
-      darkResult.integrations = await serializeWithStyles();
-      /*
-      [darkResult.integrations, darkPublishResult.integrations] =
-        await getStyles(
-          configuration.integrations,
-
-          false,
-          true,
-        );
-        */
+      await darkPage.openFile("integrations.md");
+      await sleep(900);
+      darkResult.integrations = await serializeWithStyles(darkDefaultStyles);
       await sleep(500);
     });
     after(async () => {
@@ -852,11 +345,6 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
       writeFileSync(darkFileName, resultString);
       console.log(`Dark styles saved to ${darkFileName}`);
       // unset variables to allow garbage collection
-      darkResult = null;
-      darkResultObject = null;
-      sortedKeys = null;
-      sortedDarkResultObject = null;
-      resultString = null;
       printMemoryUsage();
       await sleep(500);
     });
@@ -885,54 +373,31 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
         if (clickableFolder) {
           clickableFolder.click();
         }
-        /*
-          await app.plugins
-            .getPlugin("obsidian-style-settings")
-            .settingsManager.setSettings(JSON.parse(JSON.stringify(preset)));
-            */
       });
       await sleep(500);
       await lightPage.openFile("general.md");
+      await sleep(100);
       await lightPage.openFile("general.md");
-      await sleep(100);
-      lightResult.general = await serializeWithStyles();
-      /*
-      [lightResult.general, lightPublishResult.general] = await getStyles(
-        configuration.general,
-        true,
-        false,
-      );
-      */
-      await lightPage.openFile("headings.md");
+      await sleep(900);
+      lightResult.general = await serializeWithStyles(lightDefaultStyles);
+      await sleep(500);
       await lightPage.openFile("headings.md");
       await sleep(100);
-      lightResult.headings = await serializeWithStyles();
-      /*
-      [lightResult.headings, lightPublishResult.headings] = await getStyles(
-        configuration.headings,
-        false,
-        false,
-      );
-      */
-      await lightPage.openFile("callouts.md");
+      await lightPage.openFile("headings.md");
+      await sleep(900);
+      lightResult.headings = await serializeWithStyles(lightDefaultStyles);
+      await sleep(500);
       await lightPage.openFile("callouts.md");
       await sleep(100);
-      lightResult.callouts = await serializeWithStyles();
-      /*
-      [lightResult.callouts, lightPublishResult.callouts] = await getStyles(
-        configuration.callouts,
-        false,
-        false,
-      );
-      */
-      await lightPage.openFile("integrations.md");
+      await lightPage.openFile("callouts.md");
+      await sleep(900);
+      lightResult.callouts = await serializeWithStyles(lightDefaultStyles);
+      await sleep(500);
       await lightPage.openFile("integrations.md");
       await sleep(100);
-      lightResult.integrations = await serializeWithStyles();
-      /*
-      [lightResult.integrations, lightPublishResult.integrations] =
-        await getStyles(configuration.integrations, false, false);
-        */
+      await lightPage.openFile("integrations.md");
+      await sleep(900);
+      lightResult.integrations = await serializeWithStyles(lightDefaultStyles);
       await sleep(500);
     });
     after(async () => {
@@ -957,15 +422,9 @@ async function getStylesFromObsidian(manifest, manifestCollection, preset) {
       writeFileSync(lightFileName, lightResultString);
       console.log(`Light styles saved to ${lightFileName}`);
       // unset variables to allow garbage collection
-      lightResult = null;
-      lightResultObject = null;
-      sortedKeys = null;
-      sortedLightResultObject = null;
-      lightResultString = null;
       printMemoryUsage();
     });
   }
-  //return { lightResult, darkResult };
 }
 
 const manifestCollection = getManifestCollection();
@@ -979,7 +438,13 @@ for (const manifest of themeCollection) {
   console.log(`Processing target: ${manifest.name}`);
   const preset = JSON.stringify(manifest.style_settings ?? {});
   describe("Quartz Theme Style Extraction", async () => {
-    await getStylesFromObsidian(manifest, manifestCollection, preset);
+    await getStylesFromObsidian(
+      manifest,
+      manifestCollection,
+      preset,
+      darkDefaultStyles,
+      lightDefaultStyles,
+    );
   });
 }
 
@@ -987,12 +452,3 @@ writeFileSync(
   `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
   "{}",
 );
-
-/*
-if (testingMode) {
-  copyFileSync(
-    `./runner/results/${sanitize(testingTheme)}/_index.scss`,
-    `./runner/quartz/quartz/styles/themes/_index.scss`,
-  );
-}
-*/
