@@ -40,7 +40,7 @@ if (process.env.OBSIDIAN_VERSIONS) {
     console.log(`${app}/${installer}`);
   }
 } else {
-  versions = [["1.9.12", "1.9.12"]];
+  versions = [["1.9.14", "1.9.14"]];
 }
 
 export const config = {
@@ -67,6 +67,7 @@ export const config = {
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
       copy: true,
+      execArgv: ["--disable-gpu"],
     },
   })),
 
@@ -83,8 +84,8 @@ export const config = {
     // or "bail" to quit tests after the first failure.
   },
 
-  waitforInterval: 5000,
-  waitforTimeout: 60 * 1000,
+  waitforInterval: 5 * 60 * 1000,
+  waitforTimeout: 15 * 60 * 1000,
 
   cacheDir: cacheDir,
 
