@@ -150,3 +150,8 @@ publish/*
 !publish/*.md
 !publish/publish.css
 !publish/publish.js
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
