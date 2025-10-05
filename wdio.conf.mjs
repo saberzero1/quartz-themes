@@ -49,7 +49,8 @@ export const config = {
   specs: ["./runner/scripts/extract.js"],
 
   // How many instances of Obsidian should be launched in parallel during testing.
-  maxInstances: Number(process.env["WDIO_MAX_INSTANCES"] || 4),
+  //maxInstances: Number(process.env["WDIO_MAX_INSTANCES"] || 4),
+  maxInstances: 1,
 
   capabilities: versions.map(([appVersion, installerVersion]) => ({
     browserName: "obsidian",
@@ -88,4 +89,6 @@ export const config = {
   cacheDir: cacheDir,
 
   logLevel: "warn",
+
+  execArgv: ["--expose-gc", "--max-old-space-size=12288"],
 };

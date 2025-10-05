@@ -1,4 +1,5 @@
 import { browser } from "@wdio/globals";
+import { memoryUsage } from "process";
 import { extractionTargets } from "./config.js";
 import { writeFile, copyFileSync, writeFileSync, mkdirSync } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
@@ -27,6 +28,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 let testingMode = false;
 //testingMode = true;
 const testingTheme = "its";
+const startingIndex = 110;
 
 /*
 const manifestCollection = testingMode
@@ -39,10 +41,29 @@ const themeCollection = testingMode
   ? getThemeCollection().filter((m) =>
       m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
     )
-  : getThemeCollection();
+  : // Start at startingIndex
+    getThemeCollection().slice(startingIndex);
 
 //console.log(manifestCollection);
 console.log(themeCollection);
+
+function printMemoryUsage() {
+  const memoryUsageInMB = memoryUsage().heapUsed / 1024 / 1024;
+  console.log(`Current memory usage: ${memoryUsageInMB.toFixed(2)} MB`);
+  // manually trigger garbage collection (only works if Node.js is started with --expose-gc)
+  if (global.gc) {
+    global.gc();
+    console.log("Garbage collection triggered");
+    const memoryUsageAfterGC = memoryUsage().heapUsed / 1024 / 1024;
+    console.log(`New memory usage:     ${memoryUsageAfterGC.toFixed(2)} MB`);
+  }
+}
+
+function deleteObjectProperties(obj) {
+  Object.keys(obj).forEach((key) => {
+    delete obj[key];
+  });
+}
 
 async function serializeWithStyles() {
   const result = await browser.executeObsidian(async ({ app }) => {
@@ -698,12 +719,7 @@ async function applyStyleSettingsPreset(browser, preset) {
   });
 }
 
-async function getStylesFromObsidian(
-  manifest,
-  configuration,
-  manifestCollection,
-  preset,
-) {
+async function getStylesFromObsidian(manifest, manifestCollection, preset) {
   const [theme, variation] = manifest.name.split(".");
   const fullName =
     manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
@@ -743,6 +759,7 @@ async function getStylesFromObsidian(
         "./.obsidian/plugins/obsidian-style-settings/data.json",
         preset,
       );
+      await sleep(500);
     });
     it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in dark mode`, async () => {
       const darkPage = browser.getObsidianPage();
@@ -817,7 +834,7 @@ async function getStylesFromObsidian(
     after(async () => {
       const darkFileName = `./runner/results/${folder}/dark.json`;
       // Flatten the result object
-      const darkResultObject = {};
+      let darkResultObject = {};
       for (const [key, value] of Object.entries(darkResult)) {
         if (typeof value === "object") {
           for (const [subKey, subValue] of Object.entries(value)) {
@@ -826,25 +843,22 @@ async function getStylesFromObsidian(
         }
       }
       // Sort the keys alphabetically
-      const sortedKeys = Object.keys(darkResultObject).sort();
-      const sortedDarkResultObject = {};
+      let sortedKeys = Object.keys(darkResultObject).sort();
+      let sortedDarkResultObject = {};
       for (const key of sortedKeys) {
         sortedDarkResultObject[key] = darkResultObject[key];
       }
-      // Fix callout icon colors
-      // const fixedDarkResultObject = fixCalloutIconColor(sortedDarkResultObject);
-      const fixedDarkResultObject = sortedDarkResultObject;
-      await new Promise((resolve, reject) => {
-        writeFile(
-          darkFileName,
-          JSON.stringify(fixedDarkResultObject, null, 2),
-          (err) => {
-            if (err) reject(err);
-            else resolve();
-          },
-        );
-      });
+      let resultString = JSON.stringify(sortedDarkResultObject, null, 2);
+      writeFileSync(darkFileName, resultString);
       console.log(`Dark styles saved to ${darkFileName}`);
+      // unset variables to allow garbage collection
+      darkResult = null;
+      darkResultObject = null;
+      sortedKeys = null;
+      sortedDarkResultObject = null;
+      resultString = null;
+      printMemoryUsage();
+      await sleep(500);
     });
   }
   if (isLightTheme(theme)) {
@@ -854,6 +868,7 @@ async function getStylesFromObsidian(
         "./.obsidian/plugins/obsidian-style-settings/data.json",
         preset,
       );
+      await sleep(500);
     });
     it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in light mode`, async () => {
       const lightPage = browser.getObsidianPage();
@@ -924,7 +939,7 @@ async function getStylesFromObsidian(
       // Save the light result to a file
       const lightFileName = `./runner/results/${folder}/light.json`;
       // Flatten the result object
-      const lightResultObject = {};
+      let lightResultObject = {};
       for (const [key, value] of Object.entries(lightResult)) {
         if (typeof value === "object") {
           for (const [subKey, subValue] of Object.entries(value)) {
@@ -933,43 +948,38 @@ async function getStylesFromObsidian(
         }
       }
       // Sort the keys alphabetically
-      const sortedKeys = Object.keys(lightResultObject).sort();
-      const sortedLightResultObject = {};
+      let sortedKeys = Object.keys(lightResultObject).sort();
+      let sortedLightResultObject = {};
       for (const key of sortedKeys) {
         sortedLightResultObject[key] = lightResultObject[key];
       }
-      // Fix callout icon colors
-      // const fixedLightResultObject = fixCalloutIconColor(sortedLightResultObject);
-      const fixedLightResultObject = sortedLightResultObject;
-      await new Promise((resolve, reject) => {
-        writeFile(
-          lightFileName,
-          JSON.stringify(fixedLightResultObject, null, 2),
-          (err) => {
-            if (err) reject(err);
-            else resolve();
-          },
-        );
-      });
+      let lightResultString = JSON.stringify(sortedLightResultObject, null, 2);
+      writeFileSync(lightFileName, lightResultString);
       console.log(`Light styles saved to ${lightFileName}`);
+      // unset variables to allow garbage collection
+      lightResult = null;
+      lightResultObject = null;
+      sortedKeys = null;
+      sortedLightResultObject = null;
+      lightResultString = null;
+      printMemoryUsage();
     });
   }
-  return { lightResult, darkResult };
+  //return { lightResult, darkResult };
 }
 
 const manifestCollection = getManifestCollection();
 
+writeFileSync(
+  `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
+  "{}",
+);
+
 for (const manifest of themeCollection) {
   console.log(`Processing target: ${manifest.name}`);
-  console.log(Object.entries(extractionTargets));
   const preset = JSON.stringify(manifest.style_settings ?? {});
-  describe("Quartz Theme Style Extraction", () => {
-    getStylesFromObsidian(
-      manifest,
-      extractionTargets,
-      manifestCollection,
-      preset,
-    );
+  describe("Quartz Theme Style Extraction", async () => {
+    await getStylesFromObsidian(manifest, manifestCollection, preset);
   });
 }
 
