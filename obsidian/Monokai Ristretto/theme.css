@@ -1,0 +1,302 @@
+/*
+Monokai Ristretto - Dark theme for Obsidian
+Ported from monokai-pro-ristretto vim theme
+License: MIT
+*/
+
+.theme-dark {
+    --background-primary: #2c2525;
+    --background-primary-alt: #2c2525;
+    --background-secondary: #2c2525;
+    --background-secondary-alt: #211c1c;
+    --background-modifier-border: #403838;
+    --background-modifier-form-field: #403838;
+    --background-modifier-form-field-highlighted: #403838;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #adda78;
+    --background-modifier-error: #fd6883;
+    --background-modifier-error-hover: #fd6883;
+    --background-modifier-cover: rgba(0, 0, 0, 0.5);
+    --text-accent: #85dacc;
+    --text-accent-hover: #85dacc;
+    --text-normal: #e6d9db;
+    --text-muted: #72696a;
+    --text-faint: #5b5353;
+    --text-error: #fd6883;
+    --text-error-hover: #fd6883;
+    --text-highlight-bg: #f9cc6c;
+    --text-highlight-bg-active: #f38d70;
+    --text-selection: rgba(64, 56, 56, 0.5);
+    --text-on-accent: #2c2525;
+    --interactive-normal: #403838;
+    --interactive-hover: #5b5353;
+    --interactive-accent: #85dacc;
+    --interactive-accent-hover: #85dacc;
+    --interactive-success: #adda78;
+    --scrollbar-active-thumb-bg: rgba(114, 105, 106, 0.5);
+    --scrollbar-bg: rgba(114, 105, 106, 0.2);
+    --scrollbar-thumb-bg: rgba(114, 105, 106, 0.3);
+    --highlight-mix-blend-mode: lighten;
+}
+
+body {
+    --font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-monospace-theme: "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+    color: var(--text-normal);
+}
+
+.markdown-source-view.mod-cm6 .cm-comment {
+    color: #72696a;
+    font-style: italic;
+}
+
+.markdown-source-view.mod-cm6 .cm-keyword,
+.cm-s-obsidian span.cm-keyword {
+    color: #fd6883;
+}
+
+.markdown-source-view.mod-cm6 .cm-string,
+.cm-s-obsidian span.cm-string {
+    color: #f9cc6c;
+}
+
+.markdown-source-view.mod-cm6 .cm-variable-2,
+.markdown-source-view.mod-cm6 .cm-variable-3,
+.cm-s-obsidian span.cm-type {
+    color: #e6d9db;
+}
+
+.markdown-source-view.mod-cm6 .cm-def,
+.markdown-source-view.mod-cm6 .cm-callee,
+.cm-s-obsidian span.cm-def {
+    color: #adda78;
+}
+
+.markdown-source-view.mod-cm6 .cm-number,
+.cm-s-obsidian span.cm-number {
+    color: #a8a9eb;
+}
+
+.markdown-source-view.mod-cm6 .cm-atom,
+.cm-s-obsidian span.cm-atom {
+    color: #a8a9eb;
+}
+
+.markdown-source-view.mod-cm6 .cm-operator,
+.cm-s-obsidian span.cm-operator {
+    color: #fd6883;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header {
+    color: #fd6883;
+    font-weight: bold;
+}
+
+.markdown-preview-view a,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+    color: #85dacc;
+}
+
+.markdown-preview-view code,
+.cm-s-obsidian span.cm-inline-code {
+    color: #adda78;
+    background-color: #403838;
+}
+
+.markdown-preview-view pre code {
+    color: #e6d9db;
+}
+
+.markdown-preview-view blockquote {
+    color: #72696a;
+    border-left-color: #72696a;
+}
+
+.tag,
+.cm-s-obsidian span.cm-tag {
+    color: #fd6883;
+    background-color: transparent;
+}
+
+.token.tag {
+    color: #fd6883;
+}
+
+.workspace-leaf.mod-active .workspace-leaf-content[data-type='file-explorer'] .nav-file.is-active > .nav-file-title,
+.workspace-leaf.mod-active .workspace-leaf-content[data-type='search'] .tree-item.is-selected > .tree-item-self {
+    background-color: #403838;
+}
+
+.nav-file.is-active > .nav-file-title {
+    color: #f9cc6c;
+}
+
+.search-result-file-match:before {
+    background-color: #f9cc6c;
+}
+
+.titlebar {
+    background-color: #2c2525;
+}
+
+.status-bar {
+    background-color: #2c2525;
+    border-top-color: #403838;
+}
+
+.suggestion-item.is-selected {
+    background-color: #403838;
+    color: #2c2525;
+}
+
+.prompt-results .suggestion-item.is-selected {
+    background-color: #f9cc6c;
+    color: #2c2525;
+}
+
+.modal {
+    background-color: #2c2525;
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown {
+    background-color: #403838;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    background-color: #403838;
+    color: #e6d9db;
+    border-color: #5b5353;
+}
+
+button {
+    background-color: #403838;
+    color: #e6d9db;
+}
+
+button:hover {
+    background-color: #5b5353;
+}
+
+.checkbox-container {
+    background-color: #403838;
+}
+
+.checkbox-container:after {
+    border-color: #adda78;
+}
+
+.markdown-preview-view mark,
+.search-result-file-match mark {
+    background-color: #f9cc6c;
+    color: #2c2525;
+}
+
+.cm-s-obsidian span.cm-formatting-task {
+    color: #fd6883;
+}
+
+.HyperMD-task-line[data-task="x"] {
+    color: #72696a;
+}
+
+.nav-folder-title {
+    color: #e6d9db;
+}
+
+.nav-file-title {
+    color: #e6d9db;
+}
+
+.workspace-tabs {
+    background-color: #2c2525;
+}
+
+.workspace-tab-header {
+    background-color: #403838;
+    border-right-color: #5b5353;
+}
+
+.workspace-tab-header.is-active {
+    background-color: #2c2525;
+}
+
+.view-header {
+    background-color: #2c2525;
+}
+
+.side-dock-ribbon {
+    background-color: #2c2525;
+}
+
+.side-dock-ribbon-tab.is-active {
+    color: #f9cc6c;
+}
+
+.graph-view.color-fill {
+    color: #85dacc;
+}
+
+.graph-view.color-line {
+    color: #5b5353;
+}
+
+.graph-view.color-text {
+    color: #e6d9db;
+}
+
+.graph-view.color-fill-tag {
+    color: #fd6883;
+}
+
+.graph-view.color-fill-attachment {
+    color: #f9cc6c;
+}
+
+.graph-view.color-fill-unresolved {
+    color: #fd6883;
+}
+
+.cm-s-obsidian span.cm-builtin {
+    color: #85dacc;
+}
+
+.cm-s-obsidian span.cm-property {
+    color: #adda78;
+}
+
+.markdown-preview-view table {
+    border-color: #403838;
+}
+
+.markdown-preview-view th {
+    background-color: #403838;
+    color: #e6d9db;
+    font-weight: bold;
+}
+
+.markdown-preview-view td {
+    border-color: #403838;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+    background-color: #211c1c;
+}

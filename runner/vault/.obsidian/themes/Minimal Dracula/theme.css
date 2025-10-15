@@ -1,7 +1,7 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.6.1
+@version          1.7.1
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
@@ -10,6 +10,81 @@
 /* ============================ COLORSCHEME ========================== */
 
 :root {
+	--drx-border-radius: 10px;
+	--drx-border-width: 2px;
+	--drx-shadow-radius: 8px;
+}
+
+/* ========================== OBSIDIAN VALUES ======================== */
+
+body {
+	--h1-weight: 600;
+	--h2-weight: 600;
+	--h3-weight: 600;
+	--h4-weight: 500;
+	--h5-weight: 500;
+	--h6-weight: 500;
+
+	--h1-size: 1.50em;
+	--h2-size: 1.35em;
+	--h3-size: 1.20em;
+	--h4-size: 1.15em;
+	--h5-size: 1.10em;
+	--h6-size: 1.05em;
+
+	--h1-line-height: 1.00em;
+	--h2-line-height: 1.00em;
+	--h3-line-height: 1.00em;
+	--h4-line-height: 1.00em;
+	--h5-line-height: 1.00em;
+	--h6-line-height: 1.00em;
+
+	--checklist-done-decoration: none;
+
+	--link-unresolved-opacity: 0.5;
+	--table-width: 88cqw;
+
+	--drx-color-callout-comment: 98, 114, 164;
+	--drx-color-callout-red: 255, 85, 85;
+	--drx-color-callout-orange: 255, 184, 108;
+	--drx-color-callout-yellow: 241, 250, 140;
+	--drx-color-callout-green: 55, 235, 98;
+	--drx-color-callout-blue: 84, 179, 255;
+	--drx-color-callout-cyan: 114, 208, 228;
+	--drx-color-callout-purple: 189, 147, 249;
+	--drx-color-callout-pink: 255, 121, 198;
+
+	--callout-default: var(--drx-color-callout-comment);
+	--callout-info: var(--drx-color-callout-comment);
+	--callout-todo: var(--drx-color-callout-purple);
+	--callout-important: var(--drx-color-callout-purple);
+	--callout-example: var(--drx-color-callout-pink);
+	--callout-summary: var(--drx-color-callout-cyan);
+	--callout-tip: var(--drx-color-callout-cyan);
+	--callout-bug: var(--drx-color-callout-red);
+	--callout-error: var(--drx-color-callout-red);
+	--callout-fail: var(--drx-color-callout-red);
+	--callout-quote: var(--drx-color-callout-blue);
+	--callout-success: var(--drx-color-callout-green);
+	--callout-question: var(--drx-color-callout-orange);
+	--callout-warning: var(--drx-color-callout-orange);
+}
+
+/* ============================ DARK THEME =========================== */
+
+body.theme-dark {
+	--drx-color-base: #1E1F29;
+	--drx-color-surface: #282A36;
+	--drx-color-overlay: #44475A;
+	--drx-color-highlight: #525568;
+
+	--drx-color-text: #F8F8F2;
+	--drx-color-subtext: #BABCC9;
+	--drx-color-deactivate: #707487;
+
+	--drx-color-accent: #BD93F9;
+	--drx-color-important: #D6ACFF;
+
 	--drx-color-comment: #6270A4;
 
 	--drx-color-red-1:#FF6E6E;
@@ -37,38 +112,40 @@
 	--drx-color-pink-2: #FF79C6;
 	--drx-color-pink-3: #E660AD;
 
-	--drx-border-radius: 10px;
-	--drx-border-width: 2px;
-	--drx-shadow-radius: 8px;
-}
+	color: var(--drx-color-text);
+	
+	--bold-color: var(--drx-color-accent);
+	--text-selection: var(--drx-color-overlay);
 
-/* ========================== OBSIDIAN VALUES ======================== */
+	--color-base-00: var(--drx-color-base);
+	--color-base-10: var(--drx-color-base);
+	--color-base-20: var(--drx-color-base);
+	--color-base-25: var(--drx-color-base);
+	--color-base-30: var(--drx-color-base);
+	--color-base-35: var(--drx-color-overlay);
+	--color-base-40: var(--drx-color-overlay);
+	--color-base-50: var(--drx-color-deactivate);
+	--color-base-60: red;
+	--color-base-70: var(--drx-color-subtext);
+	--color-base-100: var(--drx-color-text);
 
-body {
-	--drx-color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-	--drx-color-highlight: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+	--tag-color: var(--drx-color-accent);
 
-	--h1-weight: 600;
-	--h2-weight: 600;
-	--h3-weight: 600;
-	--h4-weight: 500;
-	--h5-weight: 500;
-	--h6-weight: 500;
+	--link-color: var(--drx-color-accent);
+	--link-color-hover: var(--drx-color-important);
+	--link-external-color: var(--drx-color-accent);
+	--link-external-color-hover: var(--drx-color-important);
+	--link-unresolved-color: var(--drx-color-green-2);
+	--link-unresolved-decoration-color: var(--drx-color-red-2);
 
-	--h1-size: 1.50em;
-	--h2-size: 1.35em;
-	--h3-size: 1.20em;
-	--h4-size: 1.15em;
-	--h5-size: 1.10em;
-	--h6-size: 1.05em;
+	--hr-color: var(--drx-color-deactivate);
+	--nav-item-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-surface);
+	--status-bar-background: var(--drx-color-surface);
+	--table-header-background: var(--drx-color-overlay);
+	--titlebar-background: var(--drx-color-base);
 
-	--h1-line-height: 1.00em;
-	--h2-line-height: 1.00em;
-	--h3-line-height: 1.00em;
-	--h4-line-height: 1.00em;
-	--h5-line-height: 1.00em;
-	--h6-line-height: 1.00em;
-
+	--code-normal: var(--drx-color-subtext);
 	--code-comment: var(--drx-color-comment);
 	--code-function: var(--drx-color-green-2);
 	--code-important: var(--drx-color-red-2);
@@ -78,147 +155,46 @@ body {
 	--code-string: var(--drx-color-yellow-2);
 	--code-tag: var(--drx-color-red-2);
 	--code-value: var(--drx-color-purple-2);
-
-	--tag-color: var(--drx-color-accent);
-
-	--link-color: var(--drx-color-accent);
-	--link-color-hover: var(--drx-color-highlight);
-	--link-external-color: var(--drx-color-accent);
-	--link-external-color-hover: var(--drx-color-highlight);
-	--link-unresolved-color: var(--drx-color-green-2);
-	--link-unresolved-decoration-color: var(--drx-color-red-2);
-	--checklist-done-decoration: none;
-
-	--link-unresolved-opacity: 0.5;
-	--table-width: 88cqw;
-
-	--drx-color-callout-comment: 98, 114, 164;
-	--drx-color-callout-red: 255, 85, 85;
-	--drx-color-callout-orange: 255, 184, 108;
-	--drx-color-callout-yellow: 241, 250, 140;
-	--drx-color-callout-green: 55, 235, 98;
-	--drx-color-callout-cyan: 114, 208, 228;
-	--drx-color-callout-purple: 189, 147, 249;
-	--drx-color-callout-pink: 255, 121, 198;
-
-	--callout-default: var(--drx-color-callout-comment);
-	--callout-info: var(--drx-color-callout-comment);
-	--callout-summary: var(--drx-color-callout-cyan);
-	--callout-tip: var(--drx-color-callout-cyan);
-	--callout-todo: var(--drx-color-callout-comment);
-	--callout-bug: var(--drx-color-callout-red);
-	--callout-error: var(--drx-color-callout-red);
-	--callout-fail: var(--drx-color-callout-red);
-	--callout-example: var(--drx-color-callout-pink);
-	--callout-important: var(--drx-color-callout-purple);
-	--callout-success: var(--drx-color-callout-green);
-	--callout-question: var(--drx-color-callout-orange);
-	--callout-warning: var(--drx-color-callout-orange);
-	--callout-quote: var(--drx-color-callout-purple);
-}
-
-/* ============================ DARK THEME =========================== */
-
-body.theme-dark {
-	--drx-color-background-1: #525568;
-	--drx-color-background-2: #44475A;
-	--drx-color-background-3: #363948;
-	--drx-color-background-4: #282A36;
-	--drx-color-background-5: #1E1F29;
-
-	--drx-color-foreground-1: #F8F8F2;
-	--drx-color-foreground-2: #ADAFBC;;
-	--drx-color-foreground-3: #5A5D6D;
-
-	--drx-color-shadow-1: #2F313F;
-	--drx-color-shadow-2: #1E1F29;
-	--drx-color-shadow-3: #1A1B23;
-
-	--drx-color-border: var(--drx-color-background-3);
-
-	color: var(--drx-color-foreground-1);
-	
-	--bold-color: var(--drx-color-accent);
-	--text-selection: var(--drx-color-highlight);
-
-	--color-base-00: var(--drx-color-background-5);
-	--color-base-10: var(--drx-color-background-5);
-	--color-base-20: var(--drx-color-background-5);
-	--color-base-25: var(--drx-color-background-5);
-	--color-base-30: var(--drx-color-background-5);
-	--color-base-35: var(--drx-color-background-2);
-	--color-base-40: var(--drx-color-background-2);
-	--color-base-50: var(--drx-color-background-1);
-	--color-base-60: blue;
-	--color-base-70: var(--drx-color-foreground-2);
-	--color-base-100: var(--drx-color-foreground-1);
-
-	--code-normal: var(--drx-color-foreground-2);
-	--hr-color: var(--drx-color-background-3);
-	--nav-item-background-active: var(--drx-color-highlight);
-	--ribbon-background: var(--drx-color-background-4);
-	--status-bar-background: var(--drx-color-background-4);
-	--table-header-background: var(--drx-color-background-3);
-	--titlebar-background: var(--drx-color-background-5);
-}
-
-body.theme-dark.is-mobile {
-	--color-base-00: var(--drx-color-background-5);
-	--color-base-10: var(--drx-color-background-4);
-	--color-base-20: var(--drx-color-background-3);
 }
 
 /* General application background */
 body.theme-dark {
-	background-color: var(--drx-color-background-5);
-}
-
-/* Borders for general UI elements like tabs, modals, and prompts */
-.theme-dark .workspace-tab-container, .theme-dark .modal-container.mod-dim .modal, .theme-dark .prompt {
-	border-color: var(--drx-color-border);
-}
-
-/* Borders for inline code and code blocks */
-.theme-dark .cm-s-obsidian span.cm-inline-code, .theme-dark code {
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-base);
 }
 
 /* Vault selection panel */
 .theme-dark .workspace-sidedock-vault-profile {
-	background-color: var(--drx-color-background-4) !important;
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-surface) !important;
 }
 
 /* Workspace panels */
 .theme-dark .workspace-leaf-content {
-	background-color: var(--drx-color-background-4);
+	background-color: var(--drx-color-surface);
 }
 
 /* Styling for the status bar */
 .theme-dark .status-bar {
-	background-color: var(--drx-color-background-4);
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-surface);
 }
 
 /* Navigation headers */
 .theme-dark .nav-header {
-	background-color: var(--drx-color-background-5);
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-base);
 }
 
 /* Main text editing panel */
 .theme-dark .workspace-split.mod-root .view-content {
-	background-color: var(--drx-color-background-4);
+	background-color: var(--drx-color-surface);
 }
 
-/* Markdown table headers */
-.theme-dark .markdown-rendered thead tr {
-	background: var(--drx-color-background-3);
+/* Markdown table body */
+.theme-dark .markdown-rendered tbody tr {
+	background: var(--drx-color-base);
 }
 
 /* Fixes the title bar color issue in dark mode */
 .theme-dark .titlebar-button {
-	background-color: var(--drx-color-background-5);
+	background-color: var(--drx-color-base);
 }
 
 /* Sets markdown links to cyan color */
@@ -236,119 +212,140 @@ body.theme-dark {
 .theme-dark input[type='email'],
 .theme-dark input[type='password'],
 .theme-dark input[type='number'] {
-	background-color: var(--drx-color-background-5);
+	background-color: var(--drx-color-base);
 }
 
 /* ============================ LIGHT THEME ========================== */
 
 body.theme-light {
-	--drx-color-background-1: #F4F4F6;
-	--drx-color-background-2: #E9E9ED;
-	--drx-color-background-3: #DDDDE3;
-	--drx-color-background-4: #C7C8D1;
-	--drx-color-background-5: #A5A7B6;
+	--drx-color-base: #dce0e8;
+	--drx-color-surface: #eff1f5;
+	--drx-color-overlay: #ccd0da;
+	--drx-color-highlight: #bcc0cc;
 
-	--drx-color-foreground-1: #44475A;
-	--drx-color-foreground-2: #7E808E;
-	--drx-color-foreground-3: #B9BAC2;
+    --drx-color-text: #4C4F69;
+    --drx-color-subtext: #5C5F77;
+    --drx-color-deactivate: #ACB0BE;
 
-	--drx-color-shadow-3: #DDDDE3;
-	--drx-color-shadow-2: #A5A7B6;
-	--drx-color-shadow-1: #8F91A3;
+	--drx-color-comment: #6270A4;
 
-	--drx-color-border: var(--drx-color-background-4);
+    --drx-color-accent: #EA76CB;
+	--drx-color-important: #EE95D7;
 
-	color: var(--drx-color-foreground-1);
+	--drx-color-red-1: #f2cdcd;
+	--drx-color-red-2: #d20f39;
+	--drx-color-red-3: #a30c2b;
+	--drx-color-orange-1: #f5d3ae;
+	--drx-color-orange-2: #e64553;
+	--drx-color-orange-3: #b33a42;
+	--drx-color-yellow-1: #f9e2af;
+	--drx-color-yellow-2: #df8e1d;
+	--drx-color-yellow-3: #b37417;
+	--drx-color-green-1: #d9e0d0;
+	--drx-color-green-2: #40a02b;
+	--drx-color-green-3: #2e7a20;
+	--drx-color-cyan-1: #cdd6f4;
+	--drx-color-cyan-2: #04a5e5;
+	--drx-color-cyan-3: #0378b3;
+	--drx-color-blue-1: #cddbf9;
+	--drx-color-blue-2: #1e66f5;
+	--drx-color-blue-3: #174db3;
+	--drx-color-purple-1: #e8def8;
+	--drx-color-purple-2: #8839ef;
+	--drx-color-purple-3: #662db3;
+	--drx-color-pink-1: #f5c2e7;
+	--drx-color-pink-2: #ea76cb;
+	--drx-color-pink-3: #b35a9d;
+
+	color: var(--drx-color-text);
 	
 	--bold-color: var(--drx-color-accent);
-	--text-selection: var(--drx-color-highlight);
+	--text-selection: var(--drx-color-overlay);
 
-	--color-base-00: var(--drx-color-background-3);
-	--color-base-10: var(--drx-color-background-3);
-	--color-base-20: var(--drx-color-background-3);
-	--color-base-25: blue;
-	--color-base-30: var(--drx-color-background-3);
-	--color-base-35: var(--drx-color-background-5);
-	--color-base-40: var(--drx-color-background-5);
-	--color-base-50: var(--drx-color-foreground-2);
-	--color-base-60: green;
-	--color-base-70: var(--drx-color-foreground-2);
-	--color-base-80: blue;
-	--color-base-90: blue;
-	--color-base-100: var(--drx-color-foreground-1);
+	--color-base-00: var(--drx-color-base);
+	--color-base-10: var(--drx-color-base);
+	--color-base-20: var(--drx-color-base);
+	--color-base-25: var(--drx-color-base);
+	--color-base-30: var(--drx-color-base);
+	--color-base-35: var(--drx-color-overlay);
+	--color-base-40: var(--drx-color-overlay);
+	--color-base-50: var(--drx-color-deactivate);
+	--color-base-60: red;
+	--color-base-70: var(--drx-color-subtext);
+	--color-base-100: var(--drx-color-text);
 
-	--code-normal: var(--drx-color-foreground-2);
-	--hr-color: var(--drx-color-background-3);
-	--nav-item-background-active: var(--drx-color-highlight);
-	--ribbon-background: var(--drx-color-background-2);
-	--status-bar-background: var(--drx-color-background-3);
-	--table-header-background: var(--drx-color-background-3);
-	--titlebar-background: var(--drx-color-background-3);
-}
+	--tag-color: var(--drx-color-accent);
 
-body.theme-light.is-mobile {
-	--color-base-00: var(--drx-color-background-5);
-	--color-base-10: var(--drx-color-background-4);
-	--color-base-20: var(--drx-color-background-3);
+	--link-color: var(--drx-color-accent);
+	--link-color-hover: var(--drx-color-important);
+	--link-external-color: var(--drx-color-accent);
+	--link-external-color-hover: var(--drx-color-important);
+	--link-unresolved-color: var(--drx-color-green-2);
+	--link-unresolved-decoration-color: var(--drx-color-red-2);
+
+	--hr-color: var(--drx-color-deactivate);
+	--nav-item-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-surface);
+	--status-bar-background: var(--drx-color-surface);
+	--table-header-background: var(--drx-color-overlay);
+	--titlebar-background: var(--drx-color-base);
+
+	--code-normal: var(--drx-color-subtext);
+	--code-comment: var(--drx-color-comment);
+	--code-function: var(--drx-color-green-2);
+	--code-important: var(--drx-color-red-2);
+	--code-keyword: var(--drx-color-pink-2);
+	--code-operator: var(--drx-color-red-2);
+	--code-property: var(--drx-color-orange-2);
+	--code-string: var(--drx-color-yellow-2);
+	--code-tag: var(--drx-color-red-2);
+	--code-value: var(--drx-color-purple-2);
 }
 
 /* General application background */
 body.theme-light {
-	background-color: var(--drx-color-background-3);
-}
-
-/* Borders for general UI elements like tabs, modals, and prompts */
-.theme-light .workspace-tab-container, .theme-light .modal-container.mod-dim .modal, .theme-light .prompt {
-	border-color: var(--drx-color-border) !important;
-}
-
-/* Borders for inline code and code blocks */
-.theme-light .cm-s-obsidian span.cm-inline-code, .theme-dark code {
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-base);
 }
 
 /* Vault selection panel */
 .theme-light .workspace-sidedock-vault-profile {
-	background-color: var(--drx-color-background-1) !important;
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-surface) !important;
 }
 
 /* Workspace panels */
 .theme-light .workspace-leaf-content {
-	background-color: var(--drx-color-background-1);
+	background-color: var(--drx-color-surface);
 }
 
 /* Styling for the status bar */
 .theme-light .status-bar {
-	background-color: var(--drx-color-background-1);
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-surface);
 }
 
 /* Navigation headers */
 .theme-light .nav-header {
-	background-color: var(--drx-color-background-3);
-	border-color: var(--drx-color-border) !important;
+	background-color: var(--drx-color-base);
 }
 
-/* Background color for the panel where text is written */
+/* Main text editing panel */
 .theme-light .workspace-split.mod-root .view-content {
-	background-color: var(--drx-color-background-1);
+	background-color: var(--drx-color-surface);
 }
 
-/* Background color for markdown table headers */
+/* Markdown table body */
 .theme-light .markdown-rendered thead tr {
-	background: var(--drx-color-background-3);
+	background-color: var(--drx-color-surface);
 }
 
 /* Fixes the title bar color issue in light mode */
 .theme-light .workspace-tab-header-container, .titlebar-button {
-	background-color: var(--drx-color-background-3);
+	background-color: var(--drx-color-base);
 }
 
 /* Sets markdown links to blue color */
 .theme-light .markdown-source-view .cm-string.cm-url {
 	color: var(--drx-color-blue-2);
-	background-color: var(--drx-color-background-1);
+	background-color: var(--drx-color-highlight);
 }
 
 /* Adds custom styling for input fields */
@@ -361,7 +358,7 @@ body.theme-light {
 .theme-light input[type='email'],
 .theme-light input[type='password'],
 .theme-light input[type='number'] {
-	background-color: var(--drx-color-background-2);
+	background-color: var(--drx-color-overlay);
 }
 
 /* ========================== GENERAL STYLING ======================== */
@@ -370,17 +367,19 @@ a {
 	color: var(--drx-color-accent) !important;
 }
 
+a:hover {
+	color: var(--drx-color-important) !important;
+}
+
 /* Rounds the corners of all panels */
 .workspace-tab-container, .prompt {
 	margin: 10px;
 	border-radius: var(--drx-border-radius);
-	border: var(--drx-border-width) solid;
-	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
 }
 
 /* Styles inline code blocks in markdown (text between ``) */
 .cm-s-obsidian span.cm-inline-code  {
-	color: var(--drx-color-foreground-2);
+	color: var(--drx-color-subtext);
 }
 
 /* Styles the vault selection area at the bottom-right */
@@ -388,15 +387,13 @@ a {
 	width: 94% !important;
 	margin: 10px;
 	border-radius: var(--drx-border-radius);
-	border: var(--drx-border-width) solid !important;
-	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+	border: none;
 }
 
 /* Styles the status bar at the bottom-right */
 .status-bar {
 	border-radius: var(--drx-border-radius) 0px 0px 0px;
-	border: var(--drx-border-width) solid;
-	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+	border: none;
 }
 
 /* Prevents layout issues when the writing panel is too small */
@@ -408,14 +405,12 @@ a {
 .nav-header {
 	margin: 10px;
 	border-radius: var(--drx-border-radius);
-	border: var(--drx-border-width) solid;
 }
 
 /* Styles the settings modal */
 .modal-container.mod-dim .modal {
 	border-radius: var(--drx-border-radius);
-	border: var(--drx-border-width) solid;
-	box-shadow: 0 0 var(--drx-shadow-radius) var(--drx-color-shadow-3);
+	box-shadow: none;
 }
 
 /* Background color for the settings modal */
@@ -457,12 +452,12 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 
 	/* Adjusts the status bar background for dark mode */
 	body.theme-dark {
-		--status-bar-background: var(--drx-color-background-3);
+		--status-bar-background: red;
 	}
 
 	/* Adjusts the status bar background for light mode */
 	body.theme-light {
-		--status-bar-background: var(--drx-color-background-3);
+		--status-bar-background: red;
 	}
 
 	/* Removes border radius and adjusts margins for small screens */
@@ -487,9 +482,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 
 .theme-light .cm-callout {
 	border-radius: var(--drx-border-radius);
-	border: var(--drx-border-width) solid !important;
-	border-color: var(--drx-color-border) !important;
-	box-shadow: 0 0 calc(var(--drx-shadow-radius) * 2) var(--drx-color-shadow-3);
+	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base);
 }
 
 .theme-light .callout-title {
@@ -502,17 +495,25 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout-content {
-	background: var(--drx-color-background-2) !important;
+	background: var(--drx-color-overlay) !important;
 	padding: 1rem;
 }
 
 .theme-light .cm-callout:hover {
 	border-radius: var(--drx-border-radius) !important;
-	border-color: var(--drx-color-background-5) !important;
+	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
 }
 
 .theme-light .callout {
 	background: #6272A43F !important;
+}
+
+.theme-light .callout[data-callout="todo"] {
+	background: #BD93F93F !important;
+}
+
+.theme-light .callout[data-callout="important"] {
+	background: #BD93F93F !important;
 }
 
 .theme-light .callout[data-callout="example"] {
@@ -539,12 +540,8 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	background: #FF55553F !important;
 }
 
-.theme-light .callout[data-callout="important"] {
-	background: #BD93F93F !important;
-}
-
 .theme-light .callout[data-callout="quote"] {
-	background: #BD93F93F !important;
+	background: #54B3FF3F !important;
 }
 
 .theme-light .callout[data-callout="success"] {
