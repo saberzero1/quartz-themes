@@ -32897,7 +32897,8 @@
   },
   "mark": {
     "animation-duration": "0s",
-    "background-color": "rgba(255, 208, 0, 0.4)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "background-image": "linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255))",
     "border-block-end-color": "rgb(34, 34, 34)",
     "border-block-start-color": "rgb(34, 34, 34)",
     "border-bottom-color": "rgb(34, 34, 34)",
@@ -67801,7 +67802,7 @@
   },
   "span.cm-highlight": {
     "animation-duration": "0s",
-    "background-color": "rgba(255, 208, 0, 0.4)",
+    "background-image": "linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255))",
     "font-family": "\"??\", Spectral, -apple-system, \"system-ui\", \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, \"system-ui\", \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
     "font-size": "16px",
     "font-variant": "none",
