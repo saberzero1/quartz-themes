@@ -4,8 +4,9 @@
 }
 
 body:is(.theme-light, .theme-dark) {
-  --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei",
-    "Helvetica", "Arial", sans-serif;
+  --font-default:
+    "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+    sans-serif;
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace: var(--font-monospace-default);
   --font-text: var(--font-default);
@@ -114,9 +115,9 @@ body:is(.theme-light, .theme-dark) {
   --link-unresolved-color: var(--color-accent-o90);
   --link-unresolved-color-hover: var(--color-accent);
   --link-external-color: var(--color-accent-ln5);
-  --link-external-color-hover: var(--color-accent);
+  --link-external-color-hover: var(--color-accent-ln5);
   --link-color: var(--color-accent-ln5);
-  --link-color-hover: var(--color-accent);
+  --link-color-hover: var(--color-accent-ln5);
   --font-inline-tile-color: var(--text-normal);
   --text-accent-hover: var(--text-strong);
   --link-decoration-line: underline;
@@ -545,7 +546,7 @@ body:is(.theme-light, .theme-dark).colorful-headers.header-color-gradient {
 }
 
 body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-header::before, body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6)::before, body.header-level-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6)::before {
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 0.7em;
   font-weight: 100;
   color: var(--text-muted);
@@ -656,7 +657,7 @@ body.header-hovering-underline-fade .markdown-source-view.is-live-preview .cm-li
 
 .markdown-rendered a:not(.tag), .style-settings-container a:not(.tag),
 .markdown-source-view.is-live-preview a {
-  font-family: var(--font-text);
+  font-family: inherit;
   font-size: inherit;
   font-weight: var(--font-text-weight);
   color: var(--link-color);
@@ -665,8 +666,15 @@ body.header-hovering-underline-fade .markdown-source-view.is-live-preview .cm-li
   text-underline-offset: var(--link-decoration-offset);
 }
 
-.markdown-source-view.is-live-preview span.cm-url.cm-formatting-link-string {
+.markdown-source-view.is-live-preview span:is(.cm-url, .cm-inline-code, .cm-link) {
   text-decoration: none;
+}
+.markdown-source-view.is-live-preview span:is(.cm-url, .cm-inline-code, .cm-link):hover {
+  text-decoration: none;
+}
+
+.markdown-source-view.is-live-preview span.cm-formatting.cm-link:not(.cm-url), .markdown-source-view.is-live-preview span.cm-formatting.cm-link:not(.cm-url):hover, .markdown-source-view.is-live-preview span.cm-formatting-link-string, .markdown-source-view.is-live-preview span.cm-formatting-link-string:hover {
+  color: var(--text-normal);
 }
 
 .markdown-rendered strong, .style-settings-container strong,
@@ -780,6 +788,9 @@ body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperM
 }
 
 body.circle-checkbox .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox, body.circle-checkbox .markdown-rendered .task-list-item .task-list-item-checkbox, body.circle-checkbox .style-settings-container .task-list-item .task-list-item-checkbox {
+  border-radius: 50%;
+}
+body.circle-checkbox .bases-toolbar-menu-container input[type=checkbox] {
   border-radius: 50%;
 }
 
@@ -1853,7 +1864,7 @@ body.enable-alternative-checkboxes.checkbox-uppercase-set-letter .markdown-sourc
 .markdown-rendered .callout,
 .style-settings-container .callout {
   position: relative;
-  padding: 1.25em 2em;
+  padding: 0.5em 1em;
   border-radius: 0.125em;
   mix-blend-mode: normal;
 }
@@ -1862,7 +1873,7 @@ body.enable-alternative-checkboxes.checkbox-uppercase-set-letter .markdown-sourc
 .style-settings-container .callout .callout-title,
 .markdown-rendered .callout .callout-icon svg,
 .style-settings-container .callout .callout-icon svg {
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 1.125em;
   font-weight: 700;
   color: auto;
@@ -2042,6 +2053,12 @@ body.callout-dogs-ear .style-settings-container .callout:hover:after {
 .style-settings-container .callout[data-callout=cite] {
   background-color: color-mix(in srgb, var(--callout-cite-bg-color), transparent 20%);
 }
+.markdown-source-view.is-live-preview .callout :is(p, ul, ol, blockquote, .callout, pre, table),
+.markdown-rendered .callout :is(p, ul, ol, blockquote, .callout, pre, table),
+.style-settings-container .callout :is(p, ul, ol, blockquote, .callout, pre, table) {
+  margin: 0.5em 0;
+  line-height: 1.75;
+}
 
 .markdown-source-view.is-live-preview .HyperMD-quote.cm-line {
   background-color: var(--quote-bg-color);
@@ -2082,7 +2099,6 @@ body.callout-dogs-ear .style-settings-container .callout:hover:after {
 .style-settings-container .mermaid {
   border: 1px solid var(--border-color);
   border-radius: 0.125em;
-  padding: 1em;
   background-color: var(--background-primary);
   overflow-x: auto;
 }
@@ -2109,35 +2125,22 @@ body.callout-dogs-ear .style-settings-container .callout:hover:after {
 .style-settings-container .mermaid::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-normal);
 }
-.markdown-source-view.is-live-preview .mermaid svg::-webkit-scrollbar,
-.markdown-rendered .mermaid svg::-webkit-scrollbar,
-.style-settings-container .mermaid svg::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  -webkit-appearance: none;
-          appearance: none;
-}
-.markdown-source-view.is-live-preview .mermaid svg::-webkit-scrollbar-thumb,
-.markdown-rendered .mermaid svg::-webkit-scrollbar-thumb,
-.style-settings-container .mermaid svg::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-  border-radius: 0;
-  border-bottom: 2px solid var(--text-strong);
-  border-right: none;
-}
-.markdown-source-view.is-live-preview .mermaid svg::-webkit-scrollbar-thumb:hover,
-.markdown-rendered .mermaid svg::-webkit-scrollbar-thumb:hover,
-.style-settings-container .mermaid svg::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-normal);
+.markdown-source-view.is-live-preview .mermaid p,
+.markdown-rendered .mermaid p,
+.style-settings-container .mermaid p {
+  font-family: var(--font-text);
+  font-size: 1em;
+  font-weight: 400;
+  color: inherit;
+  line-height: 1.5;
+  margin: 0.5em;
 }
 
 body.embed-alt .markdown-source-view.is-live-preview .media-embed:after,
 body.embed-alt .markdown-rendered .media-embed:after,
 body.embed-alt .style-settings-container .media-embed:after {
   content: attr(alt);
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 0.8em;
   font-weight: 100;
   color: var(--text-muted);
@@ -2170,7 +2173,7 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
   color: var(--inline-code-text-color);
   background-color: var(--inline-code-bg-color);
   border-radius: 0.125em;
-  padding: 0 0.25em;
+  padding: 0 !important;
 }
 
 .markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair,
@@ -2198,12 +2201,12 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
 
 .markdown-rendered pre, .style-settings-container pre {
   border: 1px solid var(--border-color);
-  border-radius: 0.375em;
+  border-radius: 0.125em;
   background-color: var(--code-bg-color);
   position: relative;
   margin: 2rem auto;
   overflow-x: auto;
-  padding: 0;
+  padding: 1rem 0;
 }
 .markdown-rendered pre::-webkit-scrollbar, .style-settings-container pre::-webkit-scrollbar {
   width: 5px;
@@ -2222,8 +2225,11 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
 .markdown-rendered pre::-webkit-scrollbar-thumb:hover, .style-settings-container pre::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-normal);
 }
+.markdown-rendered pre[class^=language-], .style-settings-container pre[class^=language-] {
+  padding: 1.25em 2em;
+}
 .markdown-rendered pre[class^=language-]:before, .style-settings-container pre[class^=language-]:before {
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 0.875em;
   font-weight: 400;
   color: var(--text-muted);
@@ -2238,8 +2244,6 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
   color: var(--inline-code-text-color);
-  padding: 1.25em 2em;
-  white-space: pre;
 }
 .markdown-rendered pre[class^=language-] code::-webkit-scrollbar, .style-settings-container pre[class^=language-] code::-webkit-scrollbar {
   width: 5px;
@@ -2258,1195 +2262,3964 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
 .markdown-rendered pre[class^=language-] code::-webkit-scrollbar-thumb:hover, .style-settings-container pre[class^=language-] code::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-normal);
 }
-.markdown-rendered pre[class^=language-] code > span, .style-settings-container pre[class^=language-] code > span {
-  white-space: nowrap;
+.markdown-rendered pre.language-markup, .style-settings-container pre.language-markup {
+  position: relative;
 }
 .markdown-rendered pre.language-markup:before, .style-settings-container pre.language-markup:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "markup";
 }
+.markdown-rendered pre.language-html, .style-settings-container pre.language-html {
+  position: relative;
+}
 .markdown-rendered pre.language-html:before, .style-settings-container pre.language-html:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "html";
 }
+.markdown-rendered pre.language-xml, .style-settings-container pre.language-xml {
+  position: relative;
+}
 .markdown-rendered pre.language-xml:before, .style-settings-container pre.language-xml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xml";
 }
+.markdown-rendered pre.language-svg, .style-settings-container pre.language-svg {
+  position: relative;
+}
 .markdown-rendered pre.language-svg:before, .style-settings-container pre.language-svg:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "svg";
 }
+.markdown-rendered pre.language-mathml, .style-settings-container pre.language-mathml {
+  position: relative;
+}
 .markdown-rendered pre.language-mathml:before, .style-settings-container pre.language-mathml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mathml";
 }
+.markdown-rendered pre.language-ssml, .style-settings-container pre.language-ssml {
+  position: relative;
+}
 .markdown-rendered pre.language-ssml:before, .style-settings-container pre.language-ssml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ssml";
 }
+.markdown-rendered pre.language-atom, .style-settings-container pre.language-atom {
+  position: relative;
+}
 .markdown-rendered pre.language-atom:before, .style-settings-container pre.language-atom:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "atom";
 }
+.markdown-rendered pre.language-rss, .style-settings-container pre.language-rss {
+  position: relative;
+}
 .markdown-rendered pre.language-rss:before, .style-settings-container pre.language-rss:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rss";
 }
+.markdown-rendered pre.language-css, .style-settings-container pre.language-css {
+  position: relative;
+}
 .markdown-rendered pre.language-css:before, .style-settings-container pre.language-css:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "css";
 }
+.markdown-rendered pre.language-like, .style-settings-container pre.language-like {
+  position: relative;
+}
 .markdown-rendered pre.language-like:before, .style-settings-container pre.language-like:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "like";
+}
+.markdown-rendered pre.language-javascript, .style-settings-container pre.language-javascript {
+  position: relative;
 }
 .markdown-rendered pre.language-javascript:before, .style-settings-container pre.language-javascript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "javascript";
 }
+.markdown-rendered pre.language-js, .style-settings-container pre.language-js {
+  position: relative;
+}
 .markdown-rendered pre.language-js:before, .style-settings-container pre.language-js:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "js";
 }
+.markdown-rendered pre.language-abap, .style-settings-container pre.language-abap {
+  position: relative;
+}
 .markdown-rendered pre.language-abap:before, .style-settings-container pre.language-abap:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "abap";
 }
+.markdown-rendered pre.language-abnf, .style-settings-container pre.language-abnf {
+  position: relative;
+}
 .markdown-rendered pre.language-abnf:before, .style-settings-container pre.language-abnf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "abnf";
 }
+.markdown-rendered pre.language-actionscript, .style-settings-container pre.language-actionscript {
+  position: relative;
+}
 .markdown-rendered pre.language-actionscript:before, .style-settings-container pre.language-actionscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "actionscript";
 }
+.markdown-rendered pre.language-ada, .style-settings-container pre.language-ada {
+  position: relative;
+}
 .markdown-rendered pre.language-ada:before, .style-settings-container pre.language-ada:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ada";
 }
+.markdown-rendered pre.language-agda, .style-settings-container pre.language-agda {
+  position: relative;
+}
 .markdown-rendered pre.language-agda:before, .style-settings-container pre.language-agda:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "agda";
 }
+.markdown-rendered pre.language-al, .style-settings-container pre.language-al {
+  position: relative;
+}
 .markdown-rendered pre.language-al:before, .style-settings-container pre.language-al:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "al";
 }
+.markdown-rendered pre.language-antlr4, .style-settings-container pre.language-antlr4 {
+  position: relative;
+}
 .markdown-rendered pre.language-antlr4:before, .style-settings-container pre.language-antlr4:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "antlr4";
 }
+.markdown-rendered pre.language-g4, .style-settings-container pre.language-g4 {
+  position: relative;
+}
 .markdown-rendered pre.language-g4:before, .style-settings-container pre.language-g4:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "g4";
 }
+.markdown-rendered pre.language-apacheconf, .style-settings-container pre.language-apacheconf {
+  position: relative;
+}
 .markdown-rendered pre.language-apacheconf:before, .style-settings-container pre.language-apacheconf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "apacheconf";
 }
+.markdown-rendered pre.language-apex, .style-settings-container pre.language-apex {
+  position: relative;
+}
 .markdown-rendered pre.language-apex:before, .style-settings-container pre.language-apex:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "apex";
 }
+.markdown-rendered pre.language-apl, .style-settings-container pre.language-apl {
+  position: relative;
+}
 .markdown-rendered pre.language-apl:before, .style-settings-container pre.language-apl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "apl";
 }
+.markdown-rendered pre.language-applescript, .style-settings-container pre.language-applescript {
+  position: relative;
+}
 .markdown-rendered pre.language-applescript:before, .style-settings-container pre.language-applescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "applescript";
 }
+.markdown-rendered pre.language-aql, .style-settings-container pre.language-aql {
+  position: relative;
+}
 .markdown-rendered pre.language-aql:before, .style-settings-container pre.language-aql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "aql";
 }
+.markdown-rendered pre.language-arduino, .style-settings-container pre.language-arduino {
+  position: relative;
+}
 .markdown-rendered pre.language-arduino:before, .style-settings-container pre.language-arduino:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "arduino";
 }
+.markdown-rendered pre.language-ino, .style-settings-container pre.language-ino {
+  position: relative;
+}
 .markdown-rendered pre.language-ino:before, .style-settings-container pre.language-ino:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ino";
 }
+.markdown-rendered pre.language-arff, .style-settings-container pre.language-arff {
+  position: relative;
+}
 .markdown-rendered pre.language-arff:before, .style-settings-container pre.language-arff:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "arff";
 }
+.markdown-rendered pre.language-armasm, .style-settings-container pre.language-armasm {
+  position: relative;
+}
 .markdown-rendered pre.language-armasm:before, .style-settings-container pre.language-armasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "armasm";
 }
+.markdown-rendered pre.language-arm-asm, .style-settings-container pre.language-arm-asm {
+  position: relative;
+}
 .markdown-rendered pre.language-arm-asm:before, .style-settings-container pre.language-arm-asm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "arm-asm";
 }
+.markdown-rendered pre.language-arturo, .style-settings-container pre.language-arturo {
+  position: relative;
+}
 .markdown-rendered pre.language-arturo:before, .style-settings-container pre.language-arturo:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "arturo";
 }
+.markdown-rendered pre.language-art, .style-settings-container pre.language-art {
+  position: relative;
+}
 .markdown-rendered pre.language-art:before, .style-settings-container pre.language-art:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "art";
 }
+.markdown-rendered pre.language-asciidoc, .style-settings-container pre.language-asciidoc {
+  position: relative;
+}
 .markdown-rendered pre.language-asciidoc:before, .style-settings-container pre.language-asciidoc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "asciidoc";
 }
+.markdown-rendered pre.language-adoc, .style-settings-container pre.language-adoc {
+  position: relative;
+}
 .markdown-rendered pre.language-adoc:before, .style-settings-container pre.language-adoc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "adoc";
 }
+.markdown-rendered pre.language-aspnet, .style-settings-container pre.language-aspnet {
+  position: relative;
+}
 .markdown-rendered pre.language-aspnet:before, .style-settings-container pre.language-aspnet:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "aspnet";
 }
+.markdown-rendered pre.language-asm6502, .style-settings-container pre.language-asm6502 {
+  position: relative;
+}
 .markdown-rendered pre.language-asm6502:before, .style-settings-container pre.language-asm6502:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "asm6502";
 }
+.markdown-rendered pre.language-asmatmel, .style-settings-container pre.language-asmatmel {
+  position: relative;
+}
 .markdown-rendered pre.language-asmatmel:before, .style-settings-container pre.language-asmatmel:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "asmatmel";
 }
+.markdown-rendered pre.language-autohotkey, .style-settings-container pre.language-autohotkey {
+  position: relative;
+}
 .markdown-rendered pre.language-autohotkey:before, .style-settings-container pre.language-autohotkey:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "autohotkey";
 }
+.markdown-rendered pre.language-autoit, .style-settings-container pre.language-autoit {
+  position: relative;
+}
 .markdown-rendered pre.language-autoit:before, .style-settings-container pre.language-autoit:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "autoit";
 }
+.markdown-rendered pre.language-avisynth, .style-settings-container pre.language-avisynth {
+  position: relative;
+}
 .markdown-rendered pre.language-avisynth:before, .style-settings-container pre.language-avisynth:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "avisynth";
 }
+.markdown-rendered pre.language-avs, .style-settings-container pre.language-avs {
+  position: relative;
+}
 .markdown-rendered pre.language-avs:before, .style-settings-container pre.language-avs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "avs";
 }
+.markdown-rendered pre.language-avro-idl, .style-settings-container pre.language-avro-idl {
+  position: relative;
+}
 .markdown-rendered pre.language-avro-idl:before, .style-settings-container pre.language-avro-idl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "avro-idl";
 }
+.markdown-rendered pre.language-avdl, .style-settings-container pre.language-avdl {
+  position: relative;
+}
 .markdown-rendered pre.language-avdl:before, .style-settings-container pre.language-avdl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "avdl";
 }
+.markdown-rendered pre.language-awk, .style-settings-container pre.language-awk {
+  position: relative;
+}
 .markdown-rendered pre.language-awk:before, .style-settings-container pre.language-awk:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "awk";
 }
+.markdown-rendered pre.language-gawk, .style-settings-container pre.language-gawk {
+  position: relative;
+}
 .markdown-rendered pre.language-gawk:before, .style-settings-container pre.language-gawk:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gawk";
 }
+.markdown-rendered pre.language-bash, .style-settings-container pre.language-bash {
+  position: relative;
+}
 .markdown-rendered pre.language-bash:before, .style-settings-container pre.language-bash:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bash";
 }
+.markdown-rendered pre.language-sh, .style-settings-container pre.language-sh {
+  position: relative;
+}
 .markdown-rendered pre.language-sh:before, .style-settings-container pre.language-sh:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sh";
 }
+.markdown-rendered pre.language-shell, .style-settings-container pre.language-shell {
+  position: relative;
+}
 .markdown-rendered pre.language-shell:before, .style-settings-container pre.language-shell:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "shell";
 }
+.markdown-rendered pre.language-basic, .style-settings-container pre.language-basic {
+  position: relative;
+}
 .markdown-rendered pre.language-basic:before, .style-settings-container pre.language-basic:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "basic";
 }
+.markdown-rendered pre.language-batch, .style-settings-container pre.language-batch {
+  position: relative;
+}
 .markdown-rendered pre.language-batch:before, .style-settings-container pre.language-batch:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "batch";
 }
+.markdown-rendered pre.language-bbcode, .style-settings-container pre.language-bbcode {
+  position: relative;
+}
 .markdown-rendered pre.language-bbcode:before, .style-settings-container pre.language-bbcode:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bbcode";
 }
+.markdown-rendered pre.language-shortcode, .style-settings-container pre.language-shortcode {
+  position: relative;
+}
 .markdown-rendered pre.language-shortcode:before, .style-settings-container pre.language-shortcode:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "shortcode";
 }
+.markdown-rendered pre.language-bbj, .style-settings-container pre.language-bbj {
+  position: relative;
+}
 .markdown-rendered pre.language-bbj:before, .style-settings-container pre.language-bbj:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bbj";
 }
+.markdown-rendered pre.language-bicep, .style-settings-container pre.language-bicep {
+  position: relative;
+}
 .markdown-rendered pre.language-bicep:before, .style-settings-container pre.language-bicep:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bicep";
 }
+.markdown-rendered pre.language-birb, .style-settings-container pre.language-birb {
+  position: relative;
+}
 .markdown-rendered pre.language-birb:before, .style-settings-container pre.language-birb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "birb";
 }
+.markdown-rendered pre.language-bison, .style-settings-container pre.language-bison {
+  position: relative;
+}
 .markdown-rendered pre.language-bison:before, .style-settings-container pre.language-bison:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bison";
 }
+.markdown-rendered pre.language-bnf, .style-settings-container pre.language-bnf {
+  position: relative;
+}
 .markdown-rendered pre.language-bnf:before, .style-settings-container pre.language-bnf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bnf";
 }
+.markdown-rendered pre.language-rbnf, .style-settings-container pre.language-rbnf {
+  position: relative;
+}
 .markdown-rendered pre.language-rbnf:before, .style-settings-container pre.language-rbnf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rbnf";
 }
+.markdown-rendered pre.language-bqn, .style-settings-container pre.language-bqn {
+  position: relative;
+}
 .markdown-rendered pre.language-bqn:before, .style-settings-container pre.language-bqn:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bqn";
 }
+.markdown-rendered pre.language-brainfuck, .style-settings-container pre.language-brainfuck {
+  position: relative;
+}
 .markdown-rendered pre.language-brainfuck:before, .style-settings-container pre.language-brainfuck:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "brainfuck";
 }
+.markdown-rendered pre.language-brightscript, .style-settings-container pre.language-brightscript {
+  position: relative;
+}
 .markdown-rendered pre.language-brightscript:before, .style-settings-container pre.language-brightscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "brightscript";
 }
+.markdown-rendered pre.language-bro, .style-settings-container pre.language-bro {
+  position: relative;
+}
 .markdown-rendered pre.language-bro:before, .style-settings-container pre.language-bro:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bro";
 }
+.markdown-rendered pre.language-bsl, .style-settings-container pre.language-bsl {
+  position: relative;
+}
 .markdown-rendered pre.language-bsl:before, .style-settings-container pre.language-bsl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "bsl";
 }
+.markdown-rendered pre.language-oscript, .style-settings-container pre.language-oscript {
+  position: relative;
+}
 .markdown-rendered pre.language-oscript:before, .style-settings-container pre.language-oscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "oscript";
 }
+.markdown-rendered pre.language-c, .style-settings-container pre.language-c {
+  position: relative;
+}
 .markdown-rendered pre.language-c:before, .style-settings-container pre.language-c:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "c";
 }
+.markdown-rendered pre.language-csharp, .style-settings-container pre.language-csharp {
+  position: relative;
+}
 .markdown-rendered pre.language-csharp:before, .style-settings-container pre.language-csharp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "csharp";
 }
+.markdown-rendered pre.language-cs, .style-settings-container pre.language-cs {
+  position: relative;
+}
 .markdown-rendered pre.language-cs:before, .style-settings-container pre.language-cs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cs";
 }
+.markdown-rendered pre.language-dotnet, .style-settings-container pre.language-dotnet {
+  position: relative;
+}
 .markdown-rendered pre.language-dotnet:before, .style-settings-container pre.language-dotnet:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dotnet";
 }
+.markdown-rendered pre.language-cpp, .style-settings-container pre.language-cpp {
+  position: relative;
+}
 .markdown-rendered pre.language-cpp:before, .style-settings-container pre.language-cpp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cpp";
 }
+.markdown-rendered pre.language-cfscript, .style-settings-container pre.language-cfscript {
+  position: relative;
+}
 .markdown-rendered pre.language-cfscript:before, .style-settings-container pre.language-cfscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cfscript";
 }
+.markdown-rendered pre.language-cfc, .style-settings-container pre.language-cfc {
+  position: relative;
+}
 .markdown-rendered pre.language-cfc:before, .style-settings-container pre.language-cfc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cfc";
 }
+.markdown-rendered pre.language-chaiscript, .style-settings-container pre.language-chaiscript {
+  position: relative;
+}
 .markdown-rendered pre.language-chaiscript:before, .style-settings-container pre.language-chaiscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "chaiscript";
 }
+.markdown-rendered pre.language-cil, .style-settings-container pre.language-cil {
+  position: relative;
+}
 .markdown-rendered pre.language-cil:before, .style-settings-container pre.language-cil:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cil";
 }
+.markdown-rendered pre.language-cilkc, .style-settings-container pre.language-cilkc {
+  position: relative;
+}
 .markdown-rendered pre.language-cilkc:before, .style-settings-container pre.language-cilkc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cilkc";
 }
+.markdown-rendered pre.language-cilk-c, .style-settings-container pre.language-cilk-c {
+  position: relative;
+}
 .markdown-rendered pre.language-cilk-c:before, .style-settings-container pre.language-cilk-c:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cilk-c";
 }
+.markdown-rendered pre.language-cilkcpp, .style-settings-container pre.language-cilkcpp {
+  position: relative;
+}
 .markdown-rendered pre.language-cilkcpp:before, .style-settings-container pre.language-cilkcpp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cilkcpp";
 }
+.markdown-rendered pre.language-cilk, .style-settings-container pre.language-cilk {
+  position: relative;
+}
 .markdown-rendered pre.language-cilk:before, .style-settings-container pre.language-cilk:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cilk";
 }
+.markdown-rendered pre.language-clojure, .style-settings-container pre.language-clojure {
+  position: relative;
+}
 .markdown-rendered pre.language-clojure:before, .style-settings-container pre.language-clojure:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "clojure";
 }
+.markdown-rendered pre.language-cmake, .style-settings-container pre.language-cmake {
+  position: relative;
+}
 .markdown-rendered pre.language-cmake:before, .style-settings-container pre.language-cmake:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cmake";
 }
+.markdown-rendered pre.language-cobol, .style-settings-container pre.language-cobol {
+  position: relative;
+}
 .markdown-rendered pre.language-cobol:before, .style-settings-container pre.language-cobol:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cobol";
 }
+.markdown-rendered pre.language-coffeescript, .style-settings-container pre.language-coffeescript {
+  position: relative;
+}
 .markdown-rendered pre.language-coffeescript:before, .style-settings-container pre.language-coffeescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "coffeescript";
 }
+.markdown-rendered pre.language-coffee, .style-settings-container pre.language-coffee {
+  position: relative;
+}
 .markdown-rendered pre.language-coffee:before, .style-settings-container pre.language-coffee:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "coffee";
 }
+.markdown-rendered pre.language-concurnas, .style-settings-container pre.language-concurnas {
+  position: relative;
+}
 .markdown-rendered pre.language-concurnas:before, .style-settings-container pre.language-concurnas:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "concurnas";
 }
+.markdown-rendered pre.language-conc, .style-settings-container pre.language-conc {
+  position: relative;
+}
 .markdown-rendered pre.language-conc:before, .style-settings-container pre.language-conc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "conc";
 }
+.markdown-rendered pre.language-Security, .style-settings-container pre.language-Security {
+  position: relative;
+}
 .markdown-rendered pre.language-Security:before, .style-settings-container pre.language-Security:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "Security";
 }
+.markdown-rendered pre.language-cooklang, .style-settings-container pre.language-cooklang {
+  position: relative;
+}
 .markdown-rendered pre.language-cooklang:before, .style-settings-container pre.language-cooklang:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cooklang";
 }
+.markdown-rendered pre.language-coq, .style-settings-container pre.language-coq {
+  position: relative;
+}
 .markdown-rendered pre.language-coq:before, .style-settings-container pre.language-coq:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "coq";
 }
+.markdown-rendered pre.language-crystal, .style-settings-container pre.language-crystal {
+  position: relative;
+}
 .markdown-rendered pre.language-crystal:before, .style-settings-container pre.language-crystal:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "crystal";
 }
+.markdown-rendered pre.language-css-extras, .style-settings-container pre.language-css-extras {
+  position: relative;
+}
 .markdown-rendered pre.language-css-extras:before, .style-settings-container pre.language-css-extras:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "css-extras";
 }
+.markdown-rendered pre.language-csv, .style-settings-container pre.language-csv {
+  position: relative;
+}
 .markdown-rendered pre.language-csv:before, .style-settings-container pre.language-csv:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "csv";
 }
+.markdown-rendered pre.language-cue, .style-settings-container pre.language-cue {
+  position: relative;
+}
 .markdown-rendered pre.language-cue:before, .style-settings-container pre.language-cue:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cue";
 }
+.markdown-rendered pre.language-cypher, .style-settings-container pre.language-cypher {
+  position: relative;
+}
 .markdown-rendered pre.language-cypher:before, .style-settings-container pre.language-cypher:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cypher";
 }
+.markdown-rendered pre.language-d, .style-settings-container pre.language-d {
+  position: relative;
+}
 .markdown-rendered pre.language-d:before, .style-settings-container pre.language-d:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "d";
 }
+.markdown-rendered pre.language-dart, .style-settings-container pre.language-dart {
+  position: relative;
+}
 .markdown-rendered pre.language-dart:before, .style-settings-container pre.language-dart:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dart";
 }
+.markdown-rendered pre.language-dataweave, .style-settings-container pre.language-dataweave {
+  position: relative;
+}
 .markdown-rendered pre.language-dataweave:before, .style-settings-container pre.language-dataweave:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dataweave";
 }
+.markdown-rendered pre.language-dax, .style-settings-container pre.language-dax {
+  position: relative;
+}
 .markdown-rendered pre.language-dax:before, .style-settings-container pre.language-dax:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dax";
 }
+.markdown-rendered pre.language-dhall, .style-settings-container pre.language-dhall {
+  position: relative;
+}
 .markdown-rendered pre.language-dhall:before, .style-settings-container pre.language-dhall:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dhall";
 }
+.markdown-rendered pre.language-diff, .style-settings-container pre.language-diff {
+  position: relative;
+}
 .markdown-rendered pre.language-diff:before, .style-settings-container pre.language-diff:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "diff";
 }
+.markdown-rendered pre.language-django, .style-settings-container pre.language-django {
+  position: relative;
+}
 .markdown-rendered pre.language-django:before, .style-settings-container pre.language-django:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "django";
 }
+.markdown-rendered pre.language-jinja2, .style-settings-container pre.language-jinja2 {
+  position: relative;
+}
 .markdown-rendered pre.language-jinja2:before, .style-settings-container pre.language-jinja2:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jinja2";
 }
+.markdown-rendered pre.language-dns-zone-file, .style-settings-container pre.language-dns-zone-file {
+  position: relative;
+}
 .markdown-rendered pre.language-dns-zone-file:before, .style-settings-container pre.language-dns-zone-file:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dns-zone-file";
 }
+.markdown-rendered pre.language-dns-zone, .style-settings-container pre.language-dns-zone {
+  position: relative;
+}
 .markdown-rendered pre.language-dns-zone:before, .style-settings-container pre.language-dns-zone:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dns-zone";
 }
+.markdown-rendered pre.language-docker, .style-settings-container pre.language-docker {
+  position: relative;
+}
 .markdown-rendered pre.language-docker:before, .style-settings-container pre.language-docker:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "docker";
 }
+.markdown-rendered pre.language-dockerfile, .style-settings-container pre.language-dockerfile {
+  position: relative;
+}
 .markdown-rendered pre.language-dockerfile:before, .style-settings-container pre.language-dockerfile:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dockerfile";
 }
+.markdown-rendered pre.language-dot, .style-settings-container pre.language-dot {
+  position: relative;
+}
 .markdown-rendered pre.language-dot:before, .style-settings-container pre.language-dot:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "dot";
 }
+.markdown-rendered pre.language-gv, .style-settings-container pre.language-gv {
+  position: relative;
+}
 .markdown-rendered pre.language-gv:before, .style-settings-container pre.language-gv:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gv";
 }
+.markdown-rendered pre.language-ebnf, .style-settings-container pre.language-ebnf {
+  position: relative;
+}
 .markdown-rendered pre.language-ebnf:before, .style-settings-container pre.language-ebnf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ebnf";
 }
+.markdown-rendered pre.language-editorconfig, .style-settings-container pre.language-editorconfig {
+  position: relative;
+}
 .markdown-rendered pre.language-editorconfig:before, .style-settings-container pre.language-editorconfig:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "editorconfig";
 }
+.markdown-rendered pre.language-eiffel, .style-settings-container pre.language-eiffel {
+  position: relative;
+}
 .markdown-rendered pre.language-eiffel:before, .style-settings-container pre.language-eiffel:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "eiffel";
 }
+.markdown-rendered pre.language-ejs, .style-settings-container pre.language-ejs {
+  position: relative;
+}
 .markdown-rendered pre.language-ejs:before, .style-settings-container pre.language-ejs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ejs";
 }
+.markdown-rendered pre.language-eta, .style-settings-container pre.language-eta {
+  position: relative;
+}
 .markdown-rendered pre.language-eta:before, .style-settings-container pre.language-eta:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "eta";
 }
+.markdown-rendered pre.language-elixir, .style-settings-container pre.language-elixir {
+  position: relative;
+}
 .markdown-rendered pre.language-elixir:before, .style-settings-container pre.language-elixir:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "elixir";
 }
+.markdown-rendered pre.language-elm, .style-settings-container pre.language-elm {
+  position: relative;
+}
 .markdown-rendered pre.language-elm:before, .style-settings-container pre.language-elm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "elm";
 }
+.markdown-rendered pre.language-etlua, .style-settings-container pre.language-etlua {
+  position: relative;
+}
 .markdown-rendered pre.language-etlua:before, .style-settings-container pre.language-etlua:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "etlua";
 }
+.markdown-rendered pre.language-erb, .style-settings-container pre.language-erb {
+  position: relative;
+}
 .markdown-rendered pre.language-erb:before, .style-settings-container pre.language-erb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "erb";
 }
+.markdown-rendered pre.language-erlang, .style-settings-container pre.language-erlang {
+  position: relative;
+}
 .markdown-rendered pre.language-erlang:before, .style-settings-container pre.language-erlang:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "erlang";
 }
+.markdown-rendered pre.language-excel-formula, .style-settings-container pre.language-excel-formula {
+  position: relative;
+}
 .markdown-rendered pre.language-excel-formula:before, .style-settings-container pre.language-excel-formula:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "excel-formula";
 }
+.markdown-rendered pre.language-xlsx, .style-settings-container pre.language-xlsx {
+  position: relative;
+}
 .markdown-rendered pre.language-xlsx:before, .style-settings-container pre.language-xlsx:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xlsx";
 }
+.markdown-rendered pre.language-xls, .style-settings-container pre.language-xls {
+  position: relative;
+}
 .markdown-rendered pre.language-xls:before, .style-settings-container pre.language-xls:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xls";
 }
+.markdown-rendered pre.language-fsharp, .style-settings-container pre.language-fsharp {
+  position: relative;
+}
 .markdown-rendered pre.language-fsharp:before, .style-settings-container pre.language-fsharp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "fsharp";
 }
+.markdown-rendered pre.language-factor, .style-settings-container pre.language-factor {
+  position: relative;
+}
 .markdown-rendered pre.language-factor:before, .style-settings-container pre.language-factor:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "factor";
 }
+.markdown-rendered pre.language-false, .style-settings-container pre.language-false {
+  position: relative;
+}
 .markdown-rendered pre.language-false:before, .style-settings-container pre.language-false:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "false";
 }
+.markdown-rendered pre.language-firestore-security-rules, .style-settings-container pre.language-firestore-security-rules {
+  position: relative;
+}
 .markdown-rendered pre.language-firestore-security-rules:before, .style-settings-container pre.language-firestore-security-rules:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "firestore-security-rules";
 }
+.markdown-rendered pre.language-flow, .style-settings-container pre.language-flow {
+  position: relative;
+}
 .markdown-rendered pre.language-flow:before, .style-settings-container pre.language-flow:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "flow";
 }
+.markdown-rendered pre.language-fortran, .style-settings-container pre.language-fortran {
+  position: relative;
+}
 .markdown-rendered pre.language-fortran:before, .style-settings-container pre.language-fortran:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "fortran";
 }
+.markdown-rendered pre.language-ftl, .style-settings-container pre.language-ftl {
+  position: relative;
+}
 .markdown-rendered pre.language-ftl:before, .style-settings-container pre.language-ftl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ftl";
 }
+.markdown-rendered pre.language-gml, .style-settings-container pre.language-gml {
+  position: relative;
+}
 .markdown-rendered pre.language-gml:before, .style-settings-container pre.language-gml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gml";
 }
+.markdown-rendered pre.language-gamemakerlanguage, .style-settings-container pre.language-gamemakerlanguage {
+  position: relative;
+}
 .markdown-rendered pre.language-gamemakerlanguage:before, .style-settings-container pre.language-gamemakerlanguage:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gamemakerlanguage";
 }
+.markdown-rendered pre.language-gap, .style-settings-container pre.language-gap {
+  position: relative;
+}
 .markdown-rendered pre.language-gap:before, .style-settings-container pre.language-gap:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gap";
 }
+.markdown-rendered pre.language-code, .style-settings-container pre.language-code {
+  position: relative;
+}
 .markdown-rendered pre.language-code:before, .style-settings-container pre.language-code:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "code";
 }
+.markdown-rendered pre.language-gdscript, .style-settings-container pre.language-gdscript {
+  position: relative;
+}
 .markdown-rendered pre.language-gdscript:before, .style-settings-container pre.language-gdscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gdscript";
 }
+.markdown-rendered pre.language-gedcom, .style-settings-container pre.language-gedcom {
+  position: relative;
+}
 .markdown-rendered pre.language-gedcom:before, .style-settings-container pre.language-gedcom:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gedcom";
 }
+.markdown-rendered pre.language-gettext, .style-settings-container pre.language-gettext {
+  position: relative;
+}
 .markdown-rendered pre.language-gettext:before, .style-settings-container pre.language-gettext:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gettext";
 }
+.markdown-rendered pre.language-po, .style-settings-container pre.language-po {
+  position: relative;
+}
 .markdown-rendered pre.language-po:before, .style-settings-container pre.language-po:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "po";
 }
+.markdown-rendered pre.language-gherkin, .style-settings-container pre.language-gherkin {
+  position: relative;
+}
 .markdown-rendered pre.language-gherkin:before, .style-settings-container pre.language-gherkin:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gherkin";
 }
+.markdown-rendered pre.language-git, .style-settings-container pre.language-git {
+  position: relative;
+}
 .markdown-rendered pre.language-git:before, .style-settings-container pre.language-git:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "git";
 }
+.markdown-rendered pre.language-glsl, .style-settings-container pre.language-glsl {
+  position: relative;
+}
 .markdown-rendered pre.language-glsl:before, .style-settings-container pre.language-glsl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "glsl";
 }
+.markdown-rendered pre.language-gn, .style-settings-container pre.language-gn {
+  position: relative;
+}
 .markdown-rendered pre.language-gn:before, .style-settings-container pre.language-gn:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gn";
 }
+.markdown-rendered pre.language-gni, .style-settings-container pre.language-gni {
+  position: relative;
+}
 .markdown-rendered pre.language-gni:before, .style-settings-container pre.language-gni:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gni";
 }
+.markdown-rendered pre.language-linker-script, .style-settings-container pre.language-linker-script {
+  position: relative;
+}
 .markdown-rendered pre.language-linker-script:before, .style-settings-container pre.language-linker-script:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "linker-script";
 }
+.markdown-rendered pre.language-ld, .style-settings-container pre.language-ld {
+  position: relative;
+}
 .markdown-rendered pre.language-ld:before, .style-settings-container pre.language-ld:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ld";
 }
+.markdown-rendered pre.language-go, .style-settings-container pre.language-go {
+  position: relative;
+}
 .markdown-rendered pre.language-go:before, .style-settings-container pre.language-go:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "go";
 }
+.markdown-rendered pre.language-go-module, .style-settings-container pre.language-go-module {
+  position: relative;
+}
 .markdown-rendered pre.language-go-module:before, .style-settings-container pre.language-go-module:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "go-module";
 }
+.markdown-rendered pre.language-go-mod, .style-settings-container pre.language-go-mod {
+  position: relative;
+}
 .markdown-rendered pre.language-go-mod:before, .style-settings-container pre.language-go-mod:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "go-mod";
 }
+.markdown-rendered pre.language-gradle, .style-settings-container pre.language-gradle {
+  position: relative;
+}
 .markdown-rendered pre.language-gradle:before, .style-settings-container pre.language-gradle:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gradle";
 }
+.markdown-rendered pre.language-graphql, .style-settings-container pre.language-graphql {
+  position: relative;
+}
 .markdown-rendered pre.language-graphql:before, .style-settings-container pre.language-graphql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "graphql";
 }
+.markdown-rendered pre.language-groovy, .style-settings-container pre.language-groovy {
+  position: relative;
+}
 .markdown-rendered pre.language-groovy:before, .style-settings-container pre.language-groovy:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "groovy";
 }
+.markdown-rendered pre.language-haml, .style-settings-container pre.language-haml {
+  position: relative;
+}
 .markdown-rendered pre.language-haml:before, .style-settings-container pre.language-haml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "haml";
 }
+.markdown-rendered pre.language-handlebars, .style-settings-container pre.language-handlebars {
+  position: relative;
+}
 .markdown-rendered pre.language-handlebars:before, .style-settings-container pre.language-handlebars:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "handlebars";
 }
+.markdown-rendered pre.language-hbs, .style-settings-container pre.language-hbs {
+  position: relative;
+}
 .markdown-rendered pre.language-hbs:before, .style-settings-container pre.language-hbs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hbs";
 }
+.markdown-rendered pre.language-mustache, .style-settings-container pre.language-mustache {
+  position: relative;
+}
 .markdown-rendered pre.language-mustache:before, .style-settings-container pre.language-mustache:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mustache";
 }
+.markdown-rendered pre.language-haskell, .style-settings-container pre.language-haskell {
+  position: relative;
+}
 .markdown-rendered pre.language-haskell:before, .style-settings-container pre.language-haskell:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "haskell";
 }
+.markdown-rendered pre.language-hs, .style-settings-container pre.language-hs {
+  position: relative;
+}
 .markdown-rendered pre.language-hs:before, .style-settings-container pre.language-hs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hs";
 }
+.markdown-rendered pre.language-haxe, .style-settings-container pre.language-haxe {
+  position: relative;
+}
 .markdown-rendered pre.language-haxe:before, .style-settings-container pre.language-haxe:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "haxe";
 }
+.markdown-rendered pre.language-hcl, .style-settings-container pre.language-hcl {
+  position: relative;
+}
 .markdown-rendered pre.language-hcl:before, .style-settings-container pre.language-hcl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hcl";
 }
+.markdown-rendered pre.language-hlsl, .style-settings-container pre.language-hlsl {
+  position: relative;
+}
 .markdown-rendered pre.language-hlsl:before, .style-settings-container pre.language-hlsl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hlsl";
 }
+.markdown-rendered pre.language-hoon, .style-settings-container pre.language-hoon {
+  position: relative;
+}
 .markdown-rendered pre.language-hoon:before, .style-settings-container pre.language-hoon:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hoon";
 }
+.markdown-rendered pre.language-http, .style-settings-container pre.language-http {
+  position: relative;
+}
 .markdown-rendered pre.language-http:before, .style-settings-container pre.language-http:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "http";
 }
+.markdown-rendered pre.language-Key, .style-settings-container pre.language-Key {
+  position: relative;
+}
 .markdown-rendered pre.language-Key:before, .style-settings-container pre.language-Key:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "Key";
 }
+.markdown-rendered pre.language-Transport, .style-settings-container pre.language-Transport {
+  position: relative;
+}
 .markdown-rendered pre.language-Transport:before, .style-settings-container pre.language-Transport:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "Transport";
 }
+.markdown-rendered pre.language-ichigojam, .style-settings-container pre.language-ichigojam {
+  position: relative;
+}
 .markdown-rendered pre.language-ichigojam:before, .style-settings-container pre.language-ichigojam:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ichigojam";
 }
+.markdown-rendered pre.language-icon, .style-settings-container pre.language-icon {
+  position: relative;
+}
 .markdown-rendered pre.language-icon:before, .style-settings-container pre.language-icon:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "icon";
 }
+.markdown-rendered pre.language-icu-message-format, .style-settings-container pre.language-icu-message-format {
+  position: relative;
+}
 .markdown-rendered pre.language-icu-message-format:before, .style-settings-container pre.language-icu-message-format:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "icu-message-format";
 }
+.markdown-rendered pre.language-idris, .style-settings-container pre.language-idris {
+  position: relative;
+}
 .markdown-rendered pre.language-idris:before, .style-settings-container pre.language-idris:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "idris";
 }
+.markdown-rendered pre.language-idr, .style-settings-container pre.language-idr {
+  position: relative;
+}
 .markdown-rendered pre.language-idr:before, .style-settings-container pre.language-idr:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "idr";
 }
+.markdown-rendered pre.language-ignore, .style-settings-container pre.language-ignore {
+  position: relative;
+}
 .markdown-rendered pre.language-ignore:before, .style-settings-container pre.language-ignore:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ignore";
 }
+.markdown-rendered pre.language-gitignore, .style-settings-container pre.language-gitignore {
+  position: relative;
+}
 .markdown-rendered pre.language-gitignore:before, .style-settings-container pre.language-gitignore:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "gitignore";
 }
+.markdown-rendered pre.language-hgignore, .style-settings-container pre.language-hgignore {
+  position: relative;
+}
 .markdown-rendered pre.language-hgignore:before, .style-settings-container pre.language-hgignore:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "hgignore";
 }
+.markdown-rendered pre.language-npmignore, .style-settings-container pre.language-npmignore {
+  position: relative;
+}
 .markdown-rendered pre.language-npmignore:before, .style-settings-container pre.language-npmignore:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "npmignore";
 }
+.markdown-rendered pre.language-inform7, .style-settings-container pre.language-inform7 {
+  position: relative;
+}
 .markdown-rendered pre.language-inform7:before, .style-settings-container pre.language-inform7:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "inform7";
 }
+.markdown-rendered pre.language-ini, .style-settings-container pre.language-ini {
+  position: relative;
+}
 .markdown-rendered pre.language-ini:before, .style-settings-container pre.language-ini:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ini";
 }
+.markdown-rendered pre.language-io, .style-settings-container pre.language-io {
+  position: relative;
+}
 .markdown-rendered pre.language-io:before, .style-settings-container pre.language-io:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "io";
 }
+.markdown-rendered pre.language-j, .style-settings-container pre.language-j {
+  position: relative;
+}
 .markdown-rendered pre.language-j:before, .style-settings-container pre.language-j:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "j";
 }
+.markdown-rendered pre.language-java, .style-settings-container pre.language-java {
+  position: relative;
+}
 .markdown-rendered pre.language-java:before, .style-settings-container pre.language-java:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "java";
 }
+.markdown-rendered pre.language-javadoc, .style-settings-container pre.language-javadoc {
+  position: relative;
+}
 .markdown-rendered pre.language-javadoc:before, .style-settings-container pre.language-javadoc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "javadoc";
 }
+.markdown-rendered pre.language-like, .style-settings-container pre.language-like {
+  position: relative;
+}
 .markdown-rendered pre.language-like:before, .style-settings-container pre.language-like:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "like";
 }
+.markdown-rendered pre.language-javastacktrace, .style-settings-container pre.language-javastacktrace {
+  position: relative;
+}
 .markdown-rendered pre.language-javastacktrace:before, .style-settings-container pre.language-javastacktrace:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "javastacktrace";
 }
+.markdown-rendered pre.language-jexl, .style-settings-container pre.language-jexl {
+  position: relative;
+}
 .markdown-rendered pre.language-jexl:before, .style-settings-container pre.language-jexl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jexl";
 }
+.markdown-rendered pre.language-jolie, .style-settings-container pre.language-jolie {
+  position: relative;
+}
 .markdown-rendered pre.language-jolie:before, .style-settings-container pre.language-jolie:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jolie";
 }
+.markdown-rendered pre.language-jq, .style-settings-container pre.language-jq {
+  position: relative;
+}
 .markdown-rendered pre.language-jq:before, .style-settings-container pre.language-jq:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jq";
 }
+.markdown-rendered pre.language-jsdoc, .style-settings-container pre.language-jsdoc {
+  position: relative;
+}
 .markdown-rendered pre.language-jsdoc:before, .style-settings-container pre.language-jsdoc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jsdoc";
 }
+.markdown-rendered pre.language-js-extras, .style-settings-container pre.language-js-extras {
+  position: relative;
+}
 .markdown-rendered pre.language-js-extras:before, .style-settings-container pre.language-js-extras:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "js-extras";
 }
+.markdown-rendered pre.language-json, .style-settings-container pre.language-json {
+  position: relative;
+}
 .markdown-rendered pre.language-json:before, .style-settings-container pre.language-json:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "json";
 }
+.markdown-rendered pre.language-webmanifest, .style-settings-container pre.language-webmanifest {
+  position: relative;
+}
 .markdown-rendered pre.language-webmanifest:before, .style-settings-container pre.language-webmanifest:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "webmanifest";
 }
+.markdown-rendered pre.language-json5, .style-settings-container pre.language-json5 {
+  position: relative;
+}
 .markdown-rendered pre.language-json5:before, .style-settings-container pre.language-json5:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "json5";
 }
+.markdown-rendered pre.language-jsonp, .style-settings-container pre.language-jsonp {
+  position: relative;
+}
 .markdown-rendered pre.language-jsonp:before, .style-settings-container pre.language-jsonp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jsonp";
 }
+.markdown-rendered pre.language-jsstacktrace, .style-settings-container pre.language-jsstacktrace {
+  position: relative;
+}
 .markdown-rendered pre.language-jsstacktrace:before, .style-settings-container pre.language-jsstacktrace:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jsstacktrace";
 }
+.markdown-rendered pre.language-js-templates, .style-settings-container pre.language-js-templates {
+  position: relative;
+}
 .markdown-rendered pre.language-js-templates:before, .style-settings-container pre.language-js-templates:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "js-templates";
 }
+.markdown-rendered pre.language-julia, .style-settings-container pre.language-julia {
+  position: relative;
+}
 .markdown-rendered pre.language-julia:before, .style-settings-container pre.language-julia:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "julia";
 }
+.markdown-rendered pre.language-keepalived, .style-settings-container pre.language-keepalived {
+  position: relative;
+}
 .markdown-rendered pre.language-keepalived:before, .style-settings-container pre.language-keepalived:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "keepalived";
 }
+.markdown-rendered pre.language-keyman, .style-settings-container pre.language-keyman {
+  position: relative;
+}
 .markdown-rendered pre.language-keyman:before, .style-settings-container pre.language-keyman:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "keyman";
 }
+.markdown-rendered pre.language-kotlin, .style-settings-container pre.language-kotlin {
+  position: relative;
+}
 .markdown-rendered pre.language-kotlin:before, .style-settings-container pre.language-kotlin:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kotlin";
 }
+.markdown-rendered pre.language-kt, .style-settings-container pre.language-kt {
+  position: relative;
+}
 .markdown-rendered pre.language-kt:before, .style-settings-container pre.language-kt:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kt";
 }
+.markdown-rendered pre.language-kts, .style-settings-container pre.language-kts {
+  position: relative;
+}
 .markdown-rendered pre.language-kts:before, .style-settings-container pre.language-kts:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kts";
 }
+.markdown-rendered pre.language-kumir, .style-settings-container pre.language-kumir {
+  position: relative;
+}
 .markdown-rendered pre.language-kumir:before, .style-settings-container pre.language-kumir:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kumir";
 }
+.markdown-rendered pre.language-kum, .style-settings-container pre.language-kum {
+  position: relative;
+}
 .markdown-rendered pre.language-kum:before, .style-settings-container pre.language-kum:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kum";
 }
+.markdown-rendered pre.language-kusto, .style-settings-container pre.language-kusto {
+  position: relative;
+}
 .markdown-rendered pre.language-kusto:before, .style-settings-container pre.language-kusto:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "kusto";
 }
+.markdown-rendered pre.language-latex, .style-settings-container pre.language-latex {
+  position: relative;
+}
 .markdown-rendered pre.language-latex:before, .style-settings-container pre.language-latex:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "latex";
 }
+.markdown-rendered pre.language-tex, .style-settings-container pre.language-tex {
+  position: relative;
+}
 .markdown-rendered pre.language-tex:before, .style-settings-container pre.language-tex:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tex";
 }
+.markdown-rendered pre.language-context, .style-settings-container pre.language-context {
+  position: relative;
+}
 .markdown-rendered pre.language-context:before, .style-settings-container pre.language-context:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "context";
 }
+.markdown-rendered pre.language-latte, .style-settings-container pre.language-latte {
+  position: relative;
+}
 .markdown-rendered pre.language-latte:before, .style-settings-container pre.language-latte:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "latte";
 }
+.markdown-rendered pre.language-less, .style-settings-container pre.language-less {
+  position: relative;
+}
 .markdown-rendered pre.language-less:before, .style-settings-container pre.language-less:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "less";
 }
+.markdown-rendered pre.language-lilypond, .style-settings-container pre.language-lilypond {
+  position: relative;
+}
 .markdown-rendered pre.language-lilypond:before, .style-settings-container pre.language-lilypond:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "lilypond";
 }
+.markdown-rendered pre.language-ly, .style-settings-container pre.language-ly {
+  position: relative;
+}
 .markdown-rendered pre.language-ly:before, .style-settings-container pre.language-ly:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ly";
 }
+.markdown-rendered pre.language-liquid, .style-settings-container pre.language-liquid {
+  position: relative;
+}
 .markdown-rendered pre.language-liquid:before, .style-settings-container pre.language-liquid:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "liquid";
 }
+.markdown-rendered pre.language-lisp, .style-settings-container pre.language-lisp {
+  position: relative;
+}
 .markdown-rendered pre.language-lisp:before, .style-settings-container pre.language-lisp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "lisp";
 }
+.markdown-rendered pre.language-emacs, .style-settings-container pre.language-emacs {
+  position: relative;
+}
 .markdown-rendered pre.language-emacs:before, .style-settings-container pre.language-emacs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "emacs";
 }
+.markdown-rendered pre.language-elisp, .style-settings-container pre.language-elisp {
+  position: relative;
+}
 .markdown-rendered pre.language-elisp:before, .style-settings-container pre.language-elisp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "elisp";
 }
+.markdown-rendered pre.language-emacs-lisp, .style-settings-container pre.language-emacs-lisp {
+  position: relative;
+}
 .markdown-rendered pre.language-emacs-lisp:before, .style-settings-container pre.language-emacs-lisp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "emacs-lisp";
 }
+.markdown-rendered pre.language-livescript, .style-settings-container pre.language-livescript {
+  position: relative;
+}
 .markdown-rendered pre.language-livescript:before, .style-settings-container pre.language-livescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "livescript";
 }
+.markdown-rendered pre.language-llvm, .style-settings-container pre.language-llvm {
+  position: relative;
+}
 .markdown-rendered pre.language-llvm:before, .style-settings-container pre.language-llvm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "llvm";
 }
+.markdown-rendered pre.language-log, .style-settings-container pre.language-log {
+  position: relative;
+}
 .markdown-rendered pre.language-log:before, .style-settings-container pre.language-log:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "log";
 }
+.markdown-rendered pre.language-lolcode, .style-settings-container pre.language-lolcode {
+  position: relative;
+}
 .markdown-rendered pre.language-lolcode:before, .style-settings-container pre.language-lolcode:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "lolcode";
 }
+.markdown-rendered pre.language-lua, .style-settings-container pre.language-lua {
+  position: relative;
+}
 .markdown-rendered pre.language-lua:before, .style-settings-container pre.language-lua:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "lua";
 }
+.markdown-rendered pre.language-magma, .style-settings-container pre.language-magma {
+  position: relative;
+}
 .markdown-rendered pre.language-magma:before, .style-settings-container pre.language-magma:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "magma";
 }
+.markdown-rendered pre.language-makefile, .style-settings-container pre.language-makefile {
+  position: relative;
+}
 .markdown-rendered pre.language-makefile:before, .style-settings-container pre.language-makefile:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "makefile";
 }
+.markdown-rendered pre.language-markdown, .style-settings-container pre.language-markdown {
+  position: relative;
+}
 .markdown-rendered pre.language-markdown:before, .style-settings-container pre.language-markdown:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "markdown";
 }
+.markdown-rendered pre.language-md, .style-settings-container pre.language-md {
+  position: relative;
+}
 .markdown-rendered pre.language-md:before, .style-settings-container pre.language-md:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "md";
 }
+.markdown-rendered pre.language-markup-templating, .style-settings-container pre.language-markup-templating, .markdown-rendered pre mata, .style-settings-container pre mata {
+  position: relative;
+}
 .markdown-rendered pre.language-markup-templating:before, .style-settings-container pre.language-markup-templating:before, .markdown-rendered pre mata:before, .style-settings-container pre mata:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "markup-templating, mata";
 }
+.markdown-rendered pre.language-matlab, .style-settings-container pre.language-matlab {
+  position: relative;
+}
 .markdown-rendered pre.language-matlab:before, .style-settings-container pre.language-matlab:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "matlab";
 }
+.markdown-rendered pre.language-maxscript, .style-settings-container pre.language-maxscript {
+  position: relative;
+}
 .markdown-rendered pre.language-maxscript:before, .style-settings-container pre.language-maxscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "maxscript";
 }
+.markdown-rendered pre.language-mel, .style-settings-container pre.language-mel {
+  position: relative;
+}
 .markdown-rendered pre.language-mel:before, .style-settings-container pre.language-mel:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mel";
 }
+.markdown-rendered pre.language-mermaid, .style-settings-container pre.language-mermaid {
+  position: relative;
+}
 .markdown-rendered pre.language-mermaid:before, .style-settings-container pre.language-mermaid:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mermaid";
 }
+.markdown-rendered pre.language-metafont, .style-settings-container pre.language-metafont {
+  position: relative;
+}
 .markdown-rendered pre.language-metafont:before, .style-settings-container pre.language-metafont:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "metafont";
 }
+.markdown-rendered pre.language-mizar, .style-settings-container pre.language-mizar {
+  position: relative;
+}
 .markdown-rendered pre.language-mizar:before, .style-settings-container pre.language-mizar:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mizar";
 }
+.markdown-rendered pre.language-mongodb, .style-settings-container pre.language-mongodb {
+  position: relative;
+}
 .markdown-rendered pre.language-mongodb:before, .style-settings-container pre.language-mongodb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mongodb";
 }
+.markdown-rendered pre.language-monkey, .style-settings-container pre.language-monkey {
+  position: relative;
+}
 .markdown-rendered pre.language-monkey:before, .style-settings-container pre.language-monkey:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "monkey";
 }
+.markdown-rendered pre.language-moonscript, .style-settings-container pre.language-moonscript {
+  position: relative;
+}
 .markdown-rendered pre.language-moonscript:before, .style-settings-container pre.language-moonscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "moonscript";
 }
+.markdown-rendered pre.language-moon, .style-settings-container pre.language-moon {
+  position: relative;
+}
 .markdown-rendered pre.language-moon:before, .style-settings-container pre.language-moon:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "moon";
 }
+.markdown-rendered pre.language-n1ql, .style-settings-container pre.language-n1ql {
+  position: relative;
+}
 .markdown-rendered pre.language-n1ql:before, .style-settings-container pre.language-n1ql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "n1ql";
 }
+.markdown-rendered pre.language-n4js, .style-settings-container pre.language-n4js {
+  position: relative;
+}
 .markdown-rendered pre.language-n4js:before, .style-settings-container pre.language-n4js:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "n4js";
 }
+.markdown-rendered pre.language-n4jsd, .style-settings-container pre.language-n4jsd {
+  position: relative;
+}
 .markdown-rendered pre.language-n4jsd:before, .style-settings-container pre.language-n4jsd:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "n4jsd";
 }
+.markdown-rendered pre.language-nand2tetris-hdl, .style-settings-container pre.language-nand2tetris-hdl {
+  position: relative;
+}
 .markdown-rendered pre.language-nand2tetris-hdl:before, .style-settings-container pre.language-nand2tetris-hdl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nand2tetris-hdl";
 }
+.markdown-rendered pre.language-naniscript, .style-settings-container pre.language-naniscript {
+  position: relative;
+}
 .markdown-rendered pre.language-naniscript:before, .style-settings-container pre.language-naniscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "naniscript";
 }
+.markdown-rendered pre.language-nani, .style-settings-container pre.language-nani {
+  position: relative;
+}
 .markdown-rendered pre.language-nani:before, .style-settings-container pre.language-nani:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nani";
 }
+.markdown-rendered pre.language-nasm, .style-settings-container pre.language-nasm {
+  position: relative;
+}
 .markdown-rendered pre.language-nasm:before, .style-settings-container pre.language-nasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nasm";
 }
+.markdown-rendered pre.language-neon, .style-settings-container pre.language-neon {
+  position: relative;
+}
 .markdown-rendered pre.language-neon:before, .style-settings-container pre.language-neon:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "neon";
 }
+.markdown-rendered pre.language-nevod, .style-settings-container pre.language-nevod {
+  position: relative;
+}
 .markdown-rendered pre.language-nevod:before, .style-settings-container pre.language-nevod:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nevod";
 }
+.markdown-rendered pre.language-nginx, .style-settings-container pre.language-nginx {
+  position: relative;
+}
 .markdown-rendered pre.language-nginx:before, .style-settings-container pre.language-nginx:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nginx";
 }
+.markdown-rendered pre.language-nim, .style-settings-container pre.language-nim {
+  position: relative;
+}
 .markdown-rendered pre.language-nim:before, .style-settings-container pre.language-nim:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nim";
 }
+.markdown-rendered pre.language-nix, .style-settings-container pre.language-nix {
+  position: relative;
+}
 .markdown-rendered pre.language-nix:before, .style-settings-container pre.language-nix:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nix";
 }
+.markdown-rendered pre.language-nsis, .style-settings-container pre.language-nsis {
+  position: relative;
+}
 .markdown-rendered pre.language-nsis:before, .style-settings-container pre.language-nsis:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nsis";
 }
+.markdown-rendered pre.language-C, .style-settings-container pre.language-C {
+  position: relative;
+}
 .markdown-rendered pre.language-C:before, .style-settings-container pre.language-C:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "C";
 }
+.markdown-rendered pre.language-ocaml, .style-settings-container pre.language-ocaml {
+  position: relative;
+}
 .markdown-rendered pre.language-ocaml:before, .style-settings-container pre.language-ocaml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ocaml";
 }
+.markdown-rendered pre.language-odin, .style-settings-container pre.language-odin {
+  position: relative;
+}
 .markdown-rendered pre.language-odin:before, .style-settings-container pre.language-odin:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "odin";
 }
+.markdown-rendered pre.language-opencl, .style-settings-container pre.language-opencl {
+  position: relative;
+}
 .markdown-rendered pre.language-opencl:before, .style-settings-container pre.language-opencl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "opencl";
 }
+.markdown-rendered pre.language-openqasm, .style-settings-container pre.language-openqasm {
+  position: relative;
+}
 .markdown-rendered pre.language-openqasm:before, .style-settings-container pre.language-openqasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "openqasm";
 }
+.markdown-rendered pre.language-qasm, .style-settings-container pre.language-qasm {
+  position: relative;
+}
 .markdown-rendered pre.language-qasm:before, .style-settings-container pre.language-qasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "qasm";
 }
+.markdown-rendered pre.language-oz, .style-settings-container pre.language-oz {
+  position: relative;
+}
 .markdown-rendered pre.language-oz:before, .style-settings-container pre.language-oz:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "oz";
 }
+.markdown-rendered pre.language-parigp, .style-settings-container pre.language-parigp {
+  position: relative;
+}
 .markdown-rendered pre.language-parigp:before, .style-settings-container pre.language-parigp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "parigp";
 }
+.markdown-rendered pre.language-parser, .style-settings-container pre.language-parser {
+  position: relative;
+}
 .markdown-rendered pre.language-parser:before, .style-settings-container pre.language-parser:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "parser";
 }
+.markdown-rendered pre.language-pascal, .style-settings-container pre.language-pascal {
+  position: relative;
+}
 .markdown-rendered pre.language-pascal:before, .style-settings-container pre.language-pascal:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pascal";
 }
+.markdown-rendered pre.language-objectpascal, .style-settings-container pre.language-objectpascal {
+  position: relative;
+}
 .markdown-rendered pre.language-objectpascal:before, .style-settings-container pre.language-objectpascal:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "objectpascal";
 }
+.markdown-rendered pre.language-pascaligo, .style-settings-container pre.language-pascaligo {
+  position: relative;
+}
 .markdown-rendered pre.language-pascaligo:before, .style-settings-container pre.language-pascaligo:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pascaligo";
 }
+.markdown-rendered pre.language-psl, .style-settings-container pre.language-psl {
+  position: relative;
+}
 .markdown-rendered pre.language-psl:before, .style-settings-container pre.language-psl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "psl";
 }
+.markdown-rendered pre.language-Axis, .style-settings-container pre.language-Axis {
+  position: relative;
+}
 .markdown-rendered pre.language-Axis:before, .style-settings-container pre.language-Axis:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "Axis";
 }
+.markdown-rendered pre.language-peoplecode, .style-settings-container pre.language-peoplecode {
+  position: relative;
+}
 .markdown-rendered pre.language-peoplecode:before, .style-settings-container pre.language-peoplecode:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "peoplecode";
 }
+.markdown-rendered pre.language-pcode, .style-settings-container pre.language-pcode {
+  position: relative;
+}
 .markdown-rendered pre.language-pcode:before, .style-settings-container pre.language-pcode:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pcode";
 }
+.markdown-rendered pre.language-perl, .style-settings-container pre.language-perl {
+  position: relative;
+}
 .markdown-rendered pre.language-perl:before, .style-settings-container pre.language-perl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "perl";
 }
+.markdown-rendered pre.language-php, .style-settings-container pre.language-php {
+  position: relative;
+}
 .markdown-rendered pre.language-php:before, .style-settings-container pre.language-php:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "php";
 }
+.markdown-rendered pre.language-phpdoc, .style-settings-container pre.language-phpdoc {
+  position: relative;
+}
 .markdown-rendered pre.language-phpdoc:before, .style-settings-container pre.language-phpdoc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "phpdoc";
 }
+.markdown-rendered pre.language-php-extras, .style-settings-container pre.language-php-extras {
+  position: relative;
+}
 .markdown-rendered pre.language-php-extras:before, .style-settings-container pre.language-php-extras:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "php-extras";
 }
+.markdown-rendered pre.language-plant-uml, .style-settings-container pre.language-plant-uml {
+  position: relative;
+}
 .markdown-rendered pre.language-plant-uml:before, .style-settings-container pre.language-plant-uml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "plant-uml";
 }
+.markdown-rendered pre.language-plantuml, .style-settings-container pre.language-plantuml {
+  position: relative;
+}
 .markdown-rendered pre.language-plantuml:before, .style-settings-container pre.language-plantuml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "plantuml";
 }
+.markdown-rendered pre.language-plsql, .style-settings-container pre.language-plsql {
+  position: relative;
+}
 .markdown-rendered pre.language-plsql:before, .style-settings-container pre.language-plsql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "plsql";
 }
+.markdown-rendered pre.language-powerquery, .style-settings-container pre.language-powerquery {
+  position: relative;
+}
 .markdown-rendered pre.language-powerquery:before, .style-settings-container pre.language-powerquery:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "powerquery";
 }
+.markdown-rendered pre.language-pq, .style-settings-container pre.language-pq {
+  position: relative;
+}
 .markdown-rendered pre.language-pq:before, .style-settings-container pre.language-pq:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pq";
 }
+.markdown-rendered pre.language-mscript, .style-settings-container pre.language-mscript {
+  position: relative;
+}
 .markdown-rendered pre.language-mscript:before, .style-settings-container pre.language-mscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mscript";
 }
+.markdown-rendered pre.language-powershell, .style-settings-container pre.language-powershell {
+  position: relative;
+}
 .markdown-rendered pre.language-powershell:before, .style-settings-container pre.language-powershell:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "powershell";
 }
+.markdown-rendered pre.language-processing, .style-settings-container pre.language-processing {
+  position: relative;
+}
 .markdown-rendered pre.language-processing:before, .style-settings-container pre.language-processing:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "processing";
 }
+.markdown-rendered pre.language-prolog, .style-settings-container pre.language-prolog {
+  position: relative;
+}
 .markdown-rendered pre.language-prolog:before, .style-settings-container pre.language-prolog:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "prolog";
 }
+.markdown-rendered pre.language-promql, .style-settings-container pre.language-promql {
+  position: relative;
+}
 .markdown-rendered pre.language-promql:before, .style-settings-container pre.language-promql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "promql";
 }
+.markdown-rendered pre.language-properties, .style-settings-container pre.language-properties {
+  position: relative;
+}
 .markdown-rendered pre.language-properties:before, .style-settings-container pre.language-properties:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "properties";
 }
+.markdown-rendered pre.language-protobuf, .style-settings-container pre.language-protobuf {
+  position: relative;
+}
 .markdown-rendered pre.language-protobuf:before, .style-settings-container pre.language-protobuf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "protobuf";
 }
+.markdown-rendered pre.language-pug, .style-settings-container pre.language-pug {
+  position: relative;
+}
 .markdown-rendered pre.language-pug:before, .style-settings-container pre.language-pug:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pug";
 }
+.markdown-rendered pre.language-puppet, .style-settings-container pre.language-puppet {
+  position: relative;
+}
 .markdown-rendered pre.language-puppet:before, .style-settings-container pre.language-puppet:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "puppet";
 }
+.markdown-rendered pre.language-pure, .style-settings-container pre.language-pure {
+  position: relative;
+}
 .markdown-rendered pre.language-pure:before, .style-settings-container pre.language-pure:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pure";
 }
+.markdown-rendered pre.language-purebasic, .style-settings-container pre.language-purebasic {
+  position: relative;
+}
 .markdown-rendered pre.language-purebasic:before, .style-settings-container pre.language-purebasic:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "purebasic";
 }
+.markdown-rendered pre.language-pbfasm, .style-settings-container pre.language-pbfasm {
+  position: relative;
+}
 .markdown-rendered pre.language-pbfasm:before, .style-settings-container pre.language-pbfasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "pbfasm";
 }
+.markdown-rendered pre.language-purescript, .style-settings-container pre.language-purescript {
+  position: relative;
+}
 .markdown-rendered pre.language-purescript:before, .style-settings-container pre.language-purescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "purescript";
 }
+.markdown-rendered pre.language-purs, .style-settings-container pre.language-purs {
+  position: relative;
+}
 .markdown-rendered pre.language-purs:before, .style-settings-container pre.language-purs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "purs";
 }
+.markdown-rendered pre.language-python, .style-settings-container pre.language-python {
+  position: relative;
+}
 .markdown-rendered pre.language-python:before, .style-settings-container pre.language-python:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "python";
 }
+.markdown-rendered pre.language-py, .style-settings-container pre.language-py {
+  position: relative;
+}
 .markdown-rendered pre.language-py:before, .style-settings-container pre.language-py:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "py";
 }
+.markdown-rendered pre.language-qsharp, .style-settings-container pre.language-qsharp {
+  position: relative;
+}
 .markdown-rendered pre.language-qsharp:before, .style-settings-container pre.language-qsharp:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "qsharp";
 }
+.markdown-rendered pre.language-qs, .style-settings-container pre.language-qs {
+  position: relative;
+}
 .markdown-rendered pre.language-qs:before, .style-settings-container pre.language-qs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "qs";
 }
+.markdown-rendered pre.language-q, .style-settings-container pre.language-q {
+  position: relative;
+}
 .markdown-rendered pre.language-q:before, .style-settings-container pre.language-q:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "q";
 }
+.markdown-rendered pre.language-qml, .style-settings-container pre.language-qml {
+  position: relative;
+}
 .markdown-rendered pre.language-qml:before, .style-settings-container pre.language-qml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "qml";
 }
+.markdown-rendered pre.language-qore, .style-settings-container pre.language-qore {
+  position: relative;
+}
 .markdown-rendered pre.language-qore:before, .style-settings-container pre.language-qore:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "qore";
 }
+.markdown-rendered pre.language-r, .style-settings-container pre.language-r {
+  position: relative;
+}
 .markdown-rendered pre.language-r:before, .style-settings-container pre.language-r:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "r";
 }
+.markdown-rendered pre.language-racket, .style-settings-container pre.language-racket {
+  position: relative;
+}
 .markdown-rendered pre.language-racket:before, .style-settings-container pre.language-racket:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "racket";
 }
+.markdown-rendered pre.language-rkt, .style-settings-container pre.language-rkt {
+  position: relative;
+}
 .markdown-rendered pre.language-rkt:before, .style-settings-container pre.language-rkt:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rkt";
 }
+.markdown-rendered pre.language-cshtml, .style-settings-container pre.language-cshtml {
+  position: relative;
+}
 .markdown-rendered pre.language-cshtml:before, .style-settings-container pre.language-cshtml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "cshtml";
 }
+.markdown-rendered pre.language-razor, .style-settings-container pre.language-razor {
+  position: relative;
+}
 .markdown-rendered pre.language-razor:before, .style-settings-container pre.language-razor:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "razor";
 }
+.markdown-rendered pre.language-jsx, .style-settings-container pre.language-jsx {
+  position: relative;
+}
 .markdown-rendered pre.language-jsx:before, .style-settings-container pre.language-jsx:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "jsx";
 }
+.markdown-rendered pre.language-tsx, .style-settings-container pre.language-tsx {
+  position: relative;
+}
 .markdown-rendered pre.language-tsx:before, .style-settings-container pre.language-tsx:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tsx";
 }
+.markdown-rendered pre.language-reason, .style-settings-container pre.language-reason {
+  position: relative;
+}
 .markdown-rendered pre.language-reason:before, .style-settings-container pre.language-reason:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "reason";
 }
+.markdown-rendered pre.language-regex, .style-settings-container pre.language-regex {
+  position: relative;
+}
 .markdown-rendered pre.language-regex:before, .style-settings-container pre.language-regex:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "regex";
 }
+.markdown-rendered pre.language-rego, .style-settings-container pre.language-rego {
+  position: relative;
+}
 .markdown-rendered pre.language-rego:before, .style-settings-container pre.language-rego:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rego";
 }
+.markdown-rendered pre.language-renpy, .style-settings-container pre.language-renpy {
+  position: relative;
+}
 .markdown-rendered pre.language-renpy:before, .style-settings-container pre.language-renpy:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "renpy";
 }
+.markdown-rendered pre.language-rpy, .style-settings-container pre.language-rpy {
+  position: relative;
+}
 .markdown-rendered pre.language-rpy:before, .style-settings-container pre.language-rpy:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rpy";
 }
+.markdown-rendered pre.language-rescript, .style-settings-container pre.language-rescript {
+  position: relative;
+}
 .markdown-rendered pre.language-rescript:before, .style-settings-container pre.language-rescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rescript";
 }
+.markdown-rendered pre.language-res, .style-settings-container pre.language-res {
+  position: relative;
+}
 .markdown-rendered pre.language-res:before, .style-settings-container pre.language-res:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "res";
 }
+.markdown-rendered pre.language-rest, .style-settings-container pre.language-rest {
+  position: relative;
+}
 .markdown-rendered pre.language-rest:before, .style-settings-container pre.language-rest:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rest";
 }
+.markdown-rendered pre.language-rip, .style-settings-container pre.language-rip {
+  position: relative;
+}
 .markdown-rendered pre.language-rip:before, .style-settings-container pre.language-rip:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rip";
 }
+.markdown-rendered pre.language-roboconf, .style-settings-container pre.language-roboconf {
+  position: relative;
+}
 .markdown-rendered pre.language-roboconf:before, .style-settings-container pre.language-roboconf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "roboconf";
 }
+.markdown-rendered pre.language-robotframework, .style-settings-container pre.language-robotframework {
+  position: relative;
+}
 .markdown-rendered pre.language-robotframework:before, .style-settings-container pre.language-robotframework:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "robotframework";
 }
+.markdown-rendered pre.language-robot, .style-settings-container pre.language-robot {
+  position: relative;
+}
 .markdown-rendered pre.language-robot:before, .style-settings-container pre.language-robot:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "robot";
 }
+.markdown-rendered pre.language-ruby, .style-settings-container pre.language-ruby {
+  position: relative;
+}
 .markdown-rendered pre.language-ruby:before, .style-settings-container pre.language-ruby:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ruby";
 }
+.markdown-rendered pre.language-rb, .style-settings-container pre.language-rb {
+  position: relative;
+}
 .markdown-rendered pre.language-rb:before, .style-settings-container pre.language-rb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rb";
 }
+.markdown-rendered pre.language-rust, .style-settings-container pre.language-rust {
+  position: relative;
+}
 .markdown-rendered pre.language-rust:before, .style-settings-container pre.language-rust:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rust";
 }
+.markdown-rendered pre.language-sas, .style-settings-container pre.language-sas {
+  position: relative;
+}
 .markdown-rendered pre.language-sas:before, .style-settings-container pre.language-sas:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sas";
 }
+.markdown-rendered pre.language-sass, .style-settings-container pre.language-sass {
+  position: relative;
+}
 .markdown-rendered pre.language-sass:before, .style-settings-container pre.language-sass:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sass";
 }
+.markdown-rendered pre.language-scss, .style-settings-container pre.language-scss {
+  position: relative;
+}
 .markdown-rendered pre.language-scss:before, .style-settings-container pre.language-scss:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "scss";
 }
+.markdown-rendered pre.language-scala, .style-settings-container pre.language-scala {
+  position: relative;
+}
 .markdown-rendered pre.language-scala:before, .style-settings-container pre.language-scala:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "scala";
 }
+.markdown-rendered pre.language-scheme, .style-settings-container pre.language-scheme {
+  position: relative;
+}
 .markdown-rendered pre.language-scheme:before, .style-settings-container pre.language-scheme:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "scheme";
 }
+.markdown-rendered pre.language-shell-session, .style-settings-container pre.language-shell-session {
+  position: relative;
+}
 .markdown-rendered pre.language-shell-session:before, .style-settings-container pre.language-shell-session:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "shell-session";
 }
+.markdown-rendered pre.language-sh-session, .style-settings-container pre.language-sh-session {
+  position: relative;
+}
 .markdown-rendered pre.language-sh-session:before, .style-settings-container pre.language-sh-session:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sh-session";
 }
+.markdown-rendered pre.language-shellsession, .style-settings-container pre.language-shellsession {
+  position: relative;
+}
 .markdown-rendered pre.language-shellsession:before, .style-settings-container pre.language-shellsession:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "shellsession";
 }
+.markdown-rendered pre.language-smali, .style-settings-container pre.language-smali {
+  position: relative;
+}
 .markdown-rendered pre.language-smali:before, .style-settings-container pre.language-smali:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "smali";
 }
+.markdown-rendered pre.language-smalltalk, .style-settings-container pre.language-smalltalk {
+  position: relative;
+}
 .markdown-rendered pre.language-smalltalk:before, .style-settings-container pre.language-smalltalk:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "smalltalk";
 }
+.markdown-rendered pre.language-smarty, .style-settings-container pre.language-smarty {
+  position: relative;
+}
 .markdown-rendered pre.language-smarty:before, .style-settings-container pre.language-smarty:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "smarty";
 }
+.markdown-rendered pre.language-sml, .style-settings-container pre.language-sml {
+  position: relative;
+}
 .markdown-rendered pre.language-sml:before, .style-settings-container pre.language-sml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sml";
 }
+.markdown-rendered pre.language-smlnj, .style-settings-container pre.language-smlnj {
+  position: relative;
+}
 .markdown-rendered pre.language-smlnj:before, .style-settings-container pre.language-smlnj:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "smlnj";
 }
+.markdown-rendered pre.language-solidity, .style-settings-container pre.language-solidity {
+  position: relative;
+}
 .markdown-rendered pre.language-solidity:before, .style-settings-container pre.language-solidity:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "solidity";
 }
+.markdown-rendered pre.language-sol, .style-settings-container pre.language-sol {
+  position: relative;
+}
 .markdown-rendered pre.language-sol:before, .style-settings-container pre.language-sol:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sol";
 }
+.markdown-rendered pre.language-solution-file, .style-settings-container pre.language-solution-file {
+  position: relative;
+}
 .markdown-rendered pre.language-solution-file:before, .style-settings-container pre.language-solution-file:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "solution-file";
 }
+.markdown-rendered pre.language-soy, .style-settings-container pre.language-soy {
+  position: relative;
+}
 .markdown-rendered pre.language-soy:before, .style-settings-container pre.language-soy:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "soy";
 }
+.markdown-rendered pre.language-sparql, .style-settings-container pre.language-sparql {
+  position: relative;
+}
 .markdown-rendered pre.language-sparql:before, .style-settings-container pre.language-sparql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sparql";
 }
+.markdown-rendered pre.language-rq, .style-settings-container pre.language-rq {
+  position: relative;
+}
 .markdown-rendered pre.language-rq:before, .style-settings-container pre.language-rq:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "rq";
 }
+.markdown-rendered pre.language-splunk-spl, .style-settings-container pre.language-splunk-spl {
+  position: relative;
+}
 .markdown-rendered pre.language-splunk-spl:before, .style-settings-container pre.language-splunk-spl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "splunk-spl";
 }
+.markdown-rendered pre.language-sqf, .style-settings-container pre.language-sqf {
+  position: relative;
+}
 .markdown-rendered pre.language-sqf:before, .style-settings-container pre.language-sqf:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sqf";
 }
+.markdown-rendered pre.language-sql, .style-settings-container pre.language-sql {
+  position: relative;
+}
 .markdown-rendered pre.language-sql:before, .style-settings-container pre.language-sql:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sql";
 }
+.markdown-rendered pre.language-squirrel, .style-settings-container pre.language-squirrel {
+  position: relative;
+}
 .markdown-rendered pre.language-squirrel:before, .style-settings-container pre.language-squirrel:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "squirrel";
 }
+.markdown-rendered pre.language-stan, .style-settings-container pre.language-stan {
+  position: relative;
+}
 .markdown-rendered pre.language-stan:before, .style-settings-container pre.language-stan:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "stan";
 }
+.markdown-rendered pre.language-stata, .style-settings-container pre.language-stata {
+  position: relative;
+}
 .markdown-rendered pre.language-stata:before, .style-settings-container pre.language-stata:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "stata";
 }
+.markdown-rendered pre.language-iecst, .style-settings-container pre.language-iecst {
+  position: relative;
+}
 .markdown-rendered pre.language-iecst:before, .style-settings-container pre.language-iecst:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "iecst";
 }
+.markdown-rendered pre.language-stylus, .style-settings-container pre.language-stylus {
+  position: relative;
+}
 .markdown-rendered pre.language-stylus:before, .style-settings-container pre.language-stylus:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "stylus";
 }
+.markdown-rendered pre.language-supercollider, .style-settings-container pre.language-supercollider {
+  position: relative;
+}
 .markdown-rendered pre.language-supercollider:before, .style-settings-container pre.language-supercollider:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "supercollider";
 }
+.markdown-rendered pre.language-sclang, .style-settings-container pre.language-sclang {
+  position: relative;
+}
 .markdown-rendered pre.language-sclang:before, .style-settings-container pre.language-sclang:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "sclang";
 }
+.markdown-rendered pre.language-swift, .style-settings-container pre.language-swift {
+  position: relative;
+}
 .markdown-rendered pre.language-swift:before, .style-settings-container pre.language-swift:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "swift";
 }
+.markdown-rendered pre.language-systemd, .style-settings-container pre.language-systemd {
+  position: relative;
+}
 .markdown-rendered pre.language-systemd:before, .style-settings-container pre.language-systemd:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "systemd";
 }
+.markdown-rendered pre.language-t4-templating, .style-settings-container pre.language-t4-templating {
+  position: relative;
+}
 .markdown-rendered pre.language-t4-templating:before, .style-settings-container pre.language-t4-templating:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "t4-templating";
 }
+.markdown-rendered pre.language-t4-cs, .style-settings-container pre.language-t4-cs {
+  position: relative;
+}
 .markdown-rendered pre.language-t4-cs:before, .style-settings-container pre.language-t4-cs:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "t4-cs";
 }
+.markdown-rendered pre.language-t4, .style-settings-container pre.language-t4 {
+  position: relative;
+}
 .markdown-rendered pre.language-t4:before, .style-settings-container pre.language-t4:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "t4";
 }
+.markdown-rendered pre.language-t4-vb, .style-settings-container pre.language-t4-vb {
+  position: relative;
+}
 .markdown-rendered pre.language-t4-vb:before, .style-settings-container pre.language-t4-vb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "t4-vb";
 }
+.markdown-rendered pre.language-tap, .style-settings-container pre.language-tap {
+  position: relative;
+}
 .markdown-rendered pre.language-tap:before, .style-settings-container pre.language-tap:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tap";
 }
+.markdown-rendered pre.language-tcl, .style-settings-container pre.language-tcl {
+  position: relative;
+}
 .markdown-rendered pre.language-tcl:before, .style-settings-container pre.language-tcl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tcl";
 }
+.markdown-rendered pre.language-tt2, .style-settings-container pre.language-tt2 {
+  position: relative;
+}
 .markdown-rendered pre.language-tt2:before, .style-settings-container pre.language-tt2:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tt2";
 }
+.markdown-rendered pre.language-textile, .style-settings-container pre.language-textile {
+  position: relative;
+}
 .markdown-rendered pre.language-textile:before, .style-settings-container pre.language-textile:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "textile";
 }
+.markdown-rendered pre.language-toml, .style-settings-container pre.language-toml {
+  position: relative;
+}
 .markdown-rendered pre.language-toml:before, .style-settings-container pre.language-toml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "toml";
 }
+.markdown-rendered pre.language-tremor, .style-settings-container pre.language-tremor {
+  position: relative;
+}
 .markdown-rendered pre.language-tremor:before, .style-settings-container pre.language-tremor:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tremor";
 }
+.markdown-rendered pre.language-trickle, .style-settings-container pre.language-trickle {
+  position: relative;
+}
 .markdown-rendered pre.language-trickle:before, .style-settings-container pre.language-trickle:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "trickle";
 }
+.markdown-rendered pre.language-troy, .style-settings-container pre.language-troy {
+  position: relative;
+}
 .markdown-rendered pre.language-troy:before, .style-settings-container pre.language-troy:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "troy";
 }
+.markdown-rendered pre.language-turtle, .style-settings-container pre.language-turtle {
+  position: relative;
+}
 .markdown-rendered pre.language-turtle:before, .style-settings-container pre.language-turtle:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "turtle";
 }
+.markdown-rendered pre.language-trig, .style-settings-container pre.language-trig {
+  position: relative;
+}
 .markdown-rendered pre.language-trig:before, .style-settings-container pre.language-trig:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "trig";
 }
+.markdown-rendered pre.language-twig, .style-settings-container pre.language-twig {
+  position: relative;
+}
 .markdown-rendered pre.language-twig:before, .style-settings-container pre.language-twig:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "twig";
 }
+.markdown-rendered pre.language-typescript, .style-settings-container pre.language-typescript {
+  position: relative;
+}
 .markdown-rendered pre.language-typescript:before, .style-settings-container pre.language-typescript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "typescript";
 }
+.markdown-rendered pre.language-ts, .style-settings-container pre.language-ts {
+  position: relative;
+}
 .markdown-rendered pre.language-ts:before, .style-settings-container pre.language-ts:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "ts";
 }
+.markdown-rendered pre.language-typoscript, .style-settings-container pre.language-typoscript {
+  position: relative;
+}
 .markdown-rendered pre.language-typoscript:before, .style-settings-container pre.language-typoscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "typoscript";
 }
+.markdown-rendered pre.language-tsconfig, .style-settings-container pre.language-tsconfig {
+  position: relative;
+}
 .markdown-rendered pre.language-tsconfig:before, .style-settings-container pre.language-tsconfig:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "tsconfig";
 }
+.markdown-rendered pre.language-unrealscript, .style-settings-container pre.language-unrealscript {
+  position: relative;
+}
 .markdown-rendered pre.language-unrealscript:before, .style-settings-container pre.language-unrealscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "unrealscript";
 }
+.markdown-rendered pre.language-uscript, .style-settings-container pre.language-uscript {
+  position: relative;
+}
 .markdown-rendered pre.language-uscript:before, .style-settings-container pre.language-uscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "uscript";
 }
+.markdown-rendered pre.language-uc, .style-settings-container pre.language-uc {
+  position: relative;
+}
 .markdown-rendered pre.language-uc:before, .style-settings-container pre.language-uc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "uc";
 }
+.markdown-rendered pre.language-uorazor, .style-settings-container pre.language-uorazor {
+  position: relative;
+}
 .markdown-rendered pre.language-uorazor:before, .style-settings-container pre.language-uorazor:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "uorazor";
 }
+.markdown-rendered pre.language-uri, .style-settings-container pre.language-uri {
+  position: relative;
+}
 .markdown-rendered pre.language-uri:before, .style-settings-container pre.language-uri:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "uri";
 }
+.markdown-rendered pre.language-url, .style-settings-container pre.language-url {
+  position: relative;
+}
 .markdown-rendered pre.language-url:before, .style-settings-container pre.language-url:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "url";
 }
+.markdown-rendered pre.language-v, .style-settings-container pre.language-v {
+  position: relative;
+}
 .markdown-rendered pre.language-v:before, .style-settings-container pre.language-v:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "v";
 }
+.markdown-rendered pre.language-vala, .style-settings-container pre.language-vala {
+  position: relative;
+}
 .markdown-rendered pre.language-vala:before, .style-settings-container pre.language-vala:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vala";
 }
+.markdown-rendered pre.language-vbnet, .style-settings-container pre.language-vbnet {
+  position: relative;
+}
 .markdown-rendered pre.language-vbnet:before, .style-settings-container pre.language-vbnet:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vbnet";
 }
+.markdown-rendered pre.language-velocity, .style-settings-container pre.language-velocity {
+  position: relative;
+}
 .markdown-rendered pre.language-velocity:before, .style-settings-container pre.language-velocity:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "velocity";
 }
+.markdown-rendered pre.language-verilog, .style-settings-container pre.language-verilog {
+  position: relative;
+}
 .markdown-rendered pre.language-verilog:before, .style-settings-container pre.language-verilog:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "verilog";
 }
+.markdown-rendered pre.language-vhdl, .style-settings-container pre.language-vhdl {
+  position: relative;
+}
 .markdown-rendered pre.language-vhdl:before, .style-settings-container pre.language-vhdl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vhdl";
 }
+.markdown-rendered pre.language-vim, .style-settings-container pre.language-vim {
+  position: relative;
+}
 .markdown-rendered pre.language-vim:before, .style-settings-container pre.language-vim:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vim";
 }
+.markdown-rendered pre.language-visual-basic, .style-settings-container pre.language-visual-basic {
+  position: relative;
+}
 .markdown-rendered pre.language-visual-basic:before, .style-settings-container pre.language-visual-basic:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "visual-basic";
 }
+.markdown-rendered pre.language-vba, .style-settings-container pre.language-vba {
+  position: relative;
+}
 .markdown-rendered pre.language-vba:before, .style-settings-container pre.language-vba:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vba";
 }
+.markdown-rendered pre.language-vb, .style-settings-container pre.language-vb {
+  position: relative;
+}
 .markdown-rendered pre.language-vb:before, .style-settings-container pre.language-vb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "vb";
 }
+.markdown-rendered pre.language-warpscript, .style-settings-container pre.language-warpscript {
+  position: relative;
+}
 .markdown-rendered pre.language-warpscript:before, .style-settings-container pre.language-warpscript:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "warpscript";
 }
+.markdown-rendered pre.language-wasm, .style-settings-container pre.language-wasm {
+  position: relative;
+}
 .markdown-rendered pre.language-wasm:before, .style-settings-container pre.language-wasm:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wasm";
 }
+.markdown-rendered pre.language-web-idl, .style-settings-container pre.language-web-idl {
+  position: relative;
+}
 .markdown-rendered pre.language-web-idl:before, .style-settings-container pre.language-web-idl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "web-idl";
 }
+.markdown-rendered pre.language-webidl, .style-settings-container pre.language-webidl {
+  position: relative;
+}
 .markdown-rendered pre.language-webidl:before, .style-settings-container pre.language-webidl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "webidl";
 }
+.markdown-rendered pre.language-wgsl, .style-settings-container pre.language-wgsl {
+  position: relative;
+}
 .markdown-rendered pre.language-wgsl:before, .style-settings-container pre.language-wgsl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wgsl";
 }
+.markdown-rendered pre.language-wiki, .style-settings-container pre.language-wiki {
+  position: relative;
+}
 .markdown-rendered pre.language-wiki:before, .style-settings-container pre.language-wiki:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wiki";
 }
+.markdown-rendered pre.language-wolfram, .style-settings-container pre.language-wolfram {
+  position: relative;
+}
 .markdown-rendered pre.language-wolfram:before, .style-settings-container pre.language-wolfram:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wolfram";
 }
+.markdown-rendered pre.language-mathematica, .style-settings-container pre.language-mathematica {
+  position: relative;
+}
 .markdown-rendered pre.language-mathematica:before, .style-settings-container pre.language-mathematica:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "mathematica";
 }
+.markdown-rendered pre.language-nb, .style-settings-container pre.language-nb {
+  position: relative;
+}
 .markdown-rendered pre.language-nb:before, .style-settings-container pre.language-nb:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "nb";
 }
+.markdown-rendered pre.language-wl, .style-settings-container pre.language-wl {
+  position: relative;
+}
 .markdown-rendered pre.language-wl:before, .style-settings-container pre.language-wl:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wl";
 }
+.markdown-rendered pre.language-wren, .style-settings-container pre.language-wren {
+  position: relative;
+}
 .markdown-rendered pre.language-wren:before, .style-settings-container pre.language-wren:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "wren";
 }
+.markdown-rendered pre.language-xeora, .style-settings-container pre.language-xeora {
+  position: relative;
+}
 .markdown-rendered pre.language-xeora:before, .style-settings-container pre.language-xeora:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xeora";
 }
+.markdown-rendered pre.language-xeoracube, .style-settings-container pre.language-xeoracube {
+  position: relative;
+}
 .markdown-rendered pre.language-xeoracube:before, .style-settings-container pre.language-xeoracube:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xeoracube";
 }
+.markdown-rendered pre.language-xml-doc, .style-settings-container pre.language-xml-doc {
+  position: relative;
+}
 .markdown-rendered pre.language-xml-doc:before, .style-settings-container pre.language-xml-doc:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xml-doc";
 }
+.markdown-rendered pre.language-xojo, .style-settings-container pre.language-xojo {
+  position: relative;
+}
 .markdown-rendered pre.language-xojo:before, .style-settings-container pre.language-xojo:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xojo";
 }
+.markdown-rendered pre.language-xquery, .style-settings-container pre.language-xquery {
+  position: relative;
+}
 .markdown-rendered pre.language-xquery:before, .style-settings-container pre.language-xquery:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "xquery";
 }
+.markdown-rendered pre.language-yaml, .style-settings-container pre.language-yaml {
+  position: relative;
+}
 .markdown-rendered pre.language-yaml:before, .style-settings-container pre.language-yaml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "yaml";
 }
+.markdown-rendered pre.language-yml, .style-settings-container pre.language-yml {
+  position: relative;
+}
 .markdown-rendered pre.language-yml:before, .style-settings-container pre.language-yml:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "yml";
 }
+.markdown-rendered pre.language-yang, .style-settings-container pre.language-yang {
+  position: relative;
+}
 .markdown-rendered pre.language-yang:before, .style-settings-container pre.language-yang:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "yang";
 }
+.markdown-rendered pre.language-zig, .style-settings-container pre.language-zig {
+  position: relative;
+}
 .markdown-rendered pre.language-zig:before, .style-settings-container pre.language-zig:before {
+  font-family: var(--font-text);
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--text-muted);
   content: "zig";
 }
 .markdown-rendered pre button.copy-code-button, .style-settings-container pre button.copy-code-button {
@@ -3496,7 +6269,7 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
 }
 .markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
   border-top: 1px solid var(--border-color);
-  border-radius: 0.375em 0.375em 0 0;
+  border-radius: 0.125em 0.125em 0 0;
 }
 .markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair svg {
   vertical-align: middle;
@@ -3508,10 +6281,7 @@ body.embed-alt.embed-alt-middle .style-settings-container .media-embed:after {
 }
 .markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
   border-bottom: 1px solid var(--border-color);
-  border-radius: 0 0 0.375em 0.375em;
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg:not(.cm-active), .markdown-source-view.is-live-preview .cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg:not(.cm-active) {
-  height: 1.25em;
+  border-radius: 0 0 0.125em 0.125em;
 }
 
 .markdown-source-view.is-live-preview div.math-block, .markdown-source-view.is-live-preview span.math,
@@ -3575,7 +6345,7 @@ body.top-bottom-table-border .style-settings-container div:has(> table) table {
 .markdown-source-view.is-live-preview .cm-table-widget .table-wrapper:has(> table) table th,
 .markdown-rendered div:has(> table) table th,
 .style-settings-container div:has(> table) table th {
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 1em;
   font-weight: 400;
   color: var(--text-strong);
@@ -3684,7 +6454,7 @@ body.center-table-header .style-settings-container div:has(> table) table th {
 .markdown-rendered a.tag, .style-settings-container a.tag,
 .markdown-source-view.is-live-preview .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
-  font-family: var(--font-tag);
+  font-family: var(--font-monospace);
   font-size: var(--font-tag-size);
   font-weight: var(--font-tag-weight);
   color: var(--text-strong);
@@ -3778,7 +6548,55 @@ body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.
 .workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active svg {
   stroke: var(--icon-color-focused);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+  border-bottom: 2px solid var(--text-strong);
+  border-right: none;
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-normal);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header:hover .workspace-tab-header-inner {
+  background-color: var(--background-modifier-hover);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header:hover .workspace-tab-header-inner:hover {
+  background-color: var(--background-modifier-hover);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background-color: var(--tab-active-bg-color);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-icon, .workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title {
+  color: var(--text-strong);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner:hover {
+  background-color: var(--tab-active-bg-color);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header .workspace-tab-header-inner {
+  border-right: 2px solid transparent;
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background-color: var(--tab-active-bg-color);
+  border-right: 2px solid var(--text-muted);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title {
+  color: var(--text-strong);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active:not(.is-active):hover .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-container > .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner {
+  border-right: 2px solid var(--color-accent);
+}
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
   border-width: 0;
   border-radius: 0.125em;
   min-width: 100px;
@@ -3788,31 +6606,31 @@ body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.
   color: var(--text-muted);
   box-shadow: none;
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header .workspace-tab-header-inner:after {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner:after {
   background-color: transparent;
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
   display: flex;
   color: var(--text-normal);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
   color: var(--text-strong);
   background-color: var(--close-button-hover-bg-color);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header .workspace-tab-header-inner {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner {
   border-bottom: 2px solid transparent;
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header.is-active .workspace-tab-header-inner {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active .workspace-tab-header-inner {
   background-color: var(--tab-active-bg-color);
   border-bottom: 2px solid var(--text-muted);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: var(--text-strong);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header.is-active:not(.is-active):hover .workspace-tab-header-inner-title {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active:not(.is-active):hover .workspace-tab-header-inner-title {
   color: var(--text-normal);
 }
-.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner {
+.workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner {
   border-bottom: 2px solid var(--color-accent);
 }
 .workspace .workspace-split.mod-vertical .workspace-tabs .workspace-tab-header-container-inner {
@@ -4068,6 +6886,7 @@ body .status-bar {
   border-radius: 0.125em;
   border-color: var(--text-normal);
   color: var(--text-normal);
+  margin-left: 200px;
 }
 
 :is(.mod-settings, .mod-community-modal, .mod-community-theme, .modal) .vertical-tab-nav-item {
@@ -4122,6 +6941,7 @@ select.dropdown:active,
 select.dropdown:focus,
 button:not(.clickable-icon):active,
 button:not(.clickable-icon):focus {
+  box-shadow: none;
   border-color: var(--text-strong);
 }
 
@@ -4187,8 +7007,8 @@ button[aria-label="Restore default"] {
   background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(60, 100%, 50%) 17%, hsl(120, 100%, 50%) 33%, hsl(180, 100%, 50%) 50%, hsl(240, 100%, 50%) 67%, hsl(300, 100%, 50%) 83%, hsl(0, 100%, 50%) 100%);
 }
 .setting-item .setting-item-info .setting-item-name {
-  font-family: --font-default;
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: 1em;
   font-weight: 600;
   color: var(--text-strong);
 }
@@ -4200,6 +7020,161 @@ button[aria-label="Restore default"] {
 }
 .setting-item:nth-last-child(1) {
   border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.canvas-node .canvas-node-container {
+  border-radius: 0.125em;
+}
+.canvas-node .canvas-node-container .markdown-preview-view::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.canvas-node .canvas-node-container .markdown-preview-view::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+  border-right: 2px solid var(--text-strong);
+  border-bottom: none;
+}
+.canvas-node .canvas-node-container .markdown-preview-view::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-normal);
+}
+.canvas-node:is(.is-selected, .is-focused) .canvas-node-container {
+  box-shadow: none;
+}
+.canvas-node.is-focused.is-dragging .canvas-node-container {
+  box-shadow: none;
+}
+
+.canvas-card-menu,
+.canvas-control-group {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-radius: 0.125em;
+  background-color: var(--background-secondary);
+  box-shadow: none;
+}
+
+.canvas-control-group .canvas-control-item {
+  border-color: var(--background-secondary);
+  background-color: var(--background-secondary);
+  transition: color 0.2s;
+}
+
+.bases-query-container .filter-row.mod-group .filter-group {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--background-modifier-border);
+  border-radius: 0.125em;
+  background-color: transparent;
+  margin-left: 1.5em;
+}
+.bases-query-container .filter-row .filter-statement .filter-expression {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--background-modifier-border);
+  border-radius: 0.125em;
+  transition: border-color 0.2s;
+  background-color: var(--background-modifier-form-field);
+}
+.bases-query-container .filter-row .filter-statement .filter-expression:hover {
+  border-color: var(--text-muted);
+}
+.bases-query-container .filter-row .filter-statement .filter-expression:is(:focus-within, .has-focus) {
+  box-shadow: none;
+  border-color: var(--text-normal);
+}
+.bases-query-container .filter-row .filter-statement .filter-expression .combobox-button {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.bases-query-container .filter-row .filter-statement .filter-expression .combobox-button:is(.has-focus, :hover) {
+  color: var(--text-normal);
+}
+.bases-query-container .filter-row .filter-statement .metadata-input.metadata-input-text, .bases-query-container .filter-row .filter-statement .formula-editor-container, .bases-query-container .filter-row .filter-statement .combobox-button {
+  border: none;
+  background-color: var(--background-secondary);
+}
+
+.bases-sort-container .bases-sort-property-container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--background-modifier-border);
+  border-radius: 0.125em;
+  transition: border-color 0.2s;
+}
+.bases-sort-container .bases-sort-property-container:hover {
+  border-color: var(--text-muted);
+}
+.bases-sort-container .bases-sort-property-container:is(:focus-within, .has-focus) {
+  box-shadow: none;
+  border-color: var(--text-normal);
+}
+.bases-sort-container .bases-sort-property-container .combobox-button {
+  border: none;
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.bases-sort-container .bases-sort-property-container .combobox-button:is(.has-focus, :hover) {
+  color: var(--text-normal);
+}
+
+.bases-toolbar-menu-container .suggestion-item.is-selected input {
+  box-shadow: none;
+}
+.bases-toolbar-menu-container input:is(:hover, :focus) {
+  border-color: var(--text-normal);
+  box-shadow: none;
+}
+.bases-toolbar-menu-container .formula-editor-container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--background-modifier-border);
+  border-radius: 0.125em;
+  background-color: var(--background-modifier-form-field);
+  box-shadow: none;
+}
+.bases-toolbar-menu-container .formula-editor-container .cm-editor {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--background-modifier-border);
+  border-radius: 0.125em;
+}
+.bases-toolbar-menu-container .formula-editor-container .cm-editor:hover {
+  border-color: var(--text-muted);
+}
+.bases-toolbar-menu-container .formula-editor-container .cm-editor.cm-focused {
+  border-color: var(--text-normal);
+}
+
+.suggestion::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.suggestion::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+  border-right: 2px solid var(--text-strong);
+  border-bottom: none;
+}
+.suggestion::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-normal);
+}
+
+.setting-hotkey {
+  font-family: var(--font-text);
+  font-size: 1em;
+  font-weight: normal;
+  color: var(--text-normal);
 }
 
 .community-item {
@@ -4322,6 +7297,13 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   opacity: 1;
 }
 
+.markdown-source-view .cm-hmd-frontmatter {
+  font-family: var(--font-source-view);
+  font-size: var(--font-text-size);
+  font-weight: var(--font-source-view-weight);
+  color: var(--text-muted);
+}
+
 .markdown-source-view:not(.is-live-preview) {
   --color-text: var(--text-normal);
   --color-header: var(--text-strong);
@@ -4344,6 +7326,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   font-size: var(--font-text-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
+  line-height: 1.2;
 }
 .markdown-source-view:not(.is-live-preview) .cm-line.cm-active {
   background-color: var(--background-modifier-hover);
@@ -4356,43 +7339,44 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 }
 .markdown-source-view:not(.is-live-preview) .cm-header {
   color: var(--color-header);
-  line-height: 1.5;
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) {
+.markdown-source-view:not(.is-live-preview) span.cm-formatting-link:not(.cm-inline-code) {
+  color: var(--color-text);
+}
+.markdown-source-view:not(.is-live-preview) span.cm-formatting-link:not(.cm-inline-code):hover {
+  color: var(--color-text);
+}
+.markdown-source-view:not(.is-live-preview) span.cm-link:hover {
+  text-decoration: none;
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):not(.cm-inline-code) {
   font-family: var(--font-source-view);
   font-size: var(--font-text-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-link);
   color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):hover {
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):not(.cm-inline-code):hover {
+  color: var(--color-link);
+}
+.markdown-source-view:not(.is-live-preview) span.cm-url {
+  color: var(--text-normal);
   text-decoration: none;
-  color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) span.cm-url {
-  color: var(--color-link);
+.markdown-source-view:not(.is-live-preview) span.cm-url.cm-string {
+  color: var(--text-normal);
 }
-.markdown-source-view:not(.is-live-preview) .cm-string.cm-url {
+.markdown-source-view:not(.is-live-preview) span.cm-url:is(.cm-string, .cm-link) {
   color: var(--text-muted);
-  -webkit-text-decoration: underline solid 1px;
-          text-decoration: underline solid 1px;
 }
-.markdown-source-view:not(.is-live-preview) .cm-string.cm-url:hover {
+.markdown-source-view:not(.is-live-preview) span.cm-url:is(.cm-string, .cm-link):hover {
   color: var(--color-link);
-  text-decoration-color: var(--color-link);
+  -webkit-text-decoration: underline solid var(--color-link) 2px;
+          text-decoration: underline solid var(--color-link) 2px;
+  text-underline-offset: 1px;
 }
-.markdown-source-view:not(.is-live-preview) .cm-string.cm-url.cm-formatting-link-string:hover {
+.markdown-source-view:not(.is-live-preview) span.cm-url:is(.cm-string, .cm-link).cm-formatting-link-string:hover {
   color: inherit;
-}
-.markdown-source-view:not(.is-live-preview) span.cm-formatting-link {
-  color: var(--color-text);
-}
-.markdown-source-view:not(.is-live-preview) span.cm-formatting-link:hover {
-  color: var(--color-text);
-}
-.markdown-source-view:not(.is-live-preview) span.cm-url {
-  color: var(--color-link);
-  text-underline-offset: 4px;
 }
 .markdown-source-view:not(.is-live-preview) .cm-highlight {
   background-color: var(--text-normal);
@@ -4411,9 +7395,16 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 .markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-header {
   color: var(--text-muted);
 }
-.markdown-source-view:not(.is-live-preview) .cm-inline-code {
+.markdown-source-view:not(.is-live-preview) span.cm-inline-code {
+  font-family: var(--font-monospace);
+  font-size: var(--font-text-size);
+  font-weight: var(--font-monospace-weight);
   color: var(--color-inline-code);
+  display: inline-block;
+  border: none;
+  border-radius: 0;
   white-space: nowrap;
+  padding: 0 !important;
 }
 .markdown-source-view:not(.is-live-preview) .cm-line.HyperMD-table-row {
   white-space: normal;
@@ -4430,6 +7421,12 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 }
 .markdown-source-view:not(.is-live-preview) .cm-formatting-quote {
   color: var(--color-quote-format);
+}
+.markdown-source-view:not(.is-live-preview) span:is(.cm-math, .hmd-fold-math-placeholder) {
+  font-family: var(--font-source-view);
+  font-size: var(--font-text-size);
+  font-weight: var(--font-source-view-weight);
+  color: auto;
 }
 
 body.zen-mode .status-bar {
@@ -4547,15 +7544,24 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
 .prompt,
 .modal,
 .graph-controls:not(.is-close),
-.menu {
-  border: 1px solid var(--color-accent-o60);
+.menu,
+.suggestion-container,
+.popover {
+  outline: none;
+  border: 1px solid var(--color-accent-o60) !important;
   border-radius: 0.125em;
 }
 
+body.glassmorphism-command-palette.theme-dark {
+  --background-color-glass: rgba(0, 0, 0, 0.8);
+}
+body.glassmorphism-command-palette.theme-light {
+  --background-color-glass: rgba(255, 255, 255, 0.8);
+}
 body.glassmorphism-command-palette .prompt, body.glassmorphism-command-palette .graph-controls:not(.is-close), body.glassmorphism-command-palette .menu {
-  background-color: rgba(127, 127, 127, 0.01);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  background-color: var(--background-color-glass) !important;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 body:not(.custom-accent-color) .setting-item:is([data-id^=custom-accent-color-], [data-id^=accent-color-light-], [data-id^=accent-color-dark-]) {

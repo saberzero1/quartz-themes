@@ -124,7 +124,7 @@ settings:
 		description: Adjust the gap of the text paragraph.
 		description.zh: 调整文本段间距。
 		type: variable-number-slider
-		default: 3.2
+		default: 3.4
 		min: 1
 		max: 10
 		step: 0.1
@@ -135,7 +135,7 @@ settings:
 		description: Adjust the height of the text line.
 		description.zh: 调整文本行高。
 		type: variable-number-slider
-		default: 32
+		default: 36
 		min: 20
 		max: 40
 		step: 1
@@ -274,8 +274,8 @@ body {
 	--win-bg-image-url: url('');
 	--input-radius: 14px;
 	--callout-content-padding: 4px;
-	--text-paragraph-gap: 3.2px;
-	--text-line-height: 32px;
+	--text-paragraph-gap: 3.4px;
+	--text-line-height: 36px;
 	--window-brightness: 0.96;
 	--editor-brightness: 1;
 	--bases-table-header-background: var(--table-header-background);
@@ -290,6 +290,13 @@ body.is-mobile {
 	/* --safe-area-inset-bottom: env(safe-area-inset-bottom); */
 	--mobile-sidebar-radius: 34px;
 	--mobile-sidebar-max-width: 90%;
+}
+
+body.is-tablet {
+	--mobile-sidebar-width-pinned: 340px;
+	--mobile-sidebar-min-width: 260px;
+	--mobile-sidebar-max-width: 340px;
+	--ribbon-width: 48px;
 }
 
 body.is-translucent {
@@ -611,7 +618,7 @@ body {
 
 .theme-dark.is-mobile .prompt,
 .theme-dark.is-mobile .prompt input.prompt-input {
-	background-color: transparent;
+	/* background-color: transparent; */
 }
 
 .is-mobile .workspace-drawer.mod-right {
@@ -1054,6 +1061,7 @@ hr {
 .markdown-preview-view .markdown-embed:not(.image-embed) {
 	margin-left: 3px !important;
 	/* padding-left: 14px; */
+	border-left: solid 0.5px var(--blockquote-border-color); 
 }
 
 .embed-title {
@@ -1063,7 +1071,7 @@ hr {
 }
 
 .markdown-source-view.mod-cm6 .internal-embed {
-	border-left: solid 0.5px var(--blockquote-border-color);
+	/* border-left: solid 0.5px var(--blockquote-border-color); */
 }
 
 /* 
@@ -1702,28 +1710,24 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 
 .is-mobile .mobile-toolbar-options-container {
 	box-shadow: none !important;
-	box-shadow: 10px 0 15px -5px rgba(0, 255, 0, 1.0);
+	/* box-shadow: 10px 0 15px -5px rgba(0, 255, 0, 1.0); */
 }
 
 .is-mobile .mobile-toolbar-floating-options {
 	background-color: transparent;
-	backdrop-filter: none;
+	/* backdrop-filter: none; */
 }
 
 .is-mobile .mobile-toolbar-option {
-	background-color: transparent;
-	backdrop-filter: none;
-	filter: none;
+	/* background-color: rgb(229, 230, 234) !important; */
+	/* backdrop-filter: none; */
+	/* filter: none; */
 }
 
-.is-mobile .mobile-toolbar {
-	/* border-top: rgba(0, 0, 0, 0.05) solid 0.8px; */
-	background-color: #E6E8EC !important;
-}
-
+.is-mobile.theme-light .mobile-toolbar-options-list,
 .is-mobile.theme-light .mobile-toolbar-options-container {
 	/* border-top: rgba(0, 0, 0, 0.05) solid 0.8px; */
-	background-color: transparent !important;
+	background-color: #E5E6EA !important;
 }
 
 .is-mobile.theme-dark .mobile-toolbar-options-container {
@@ -2332,10 +2336,10 @@ body:not(.is-mobile).theme-dark	.modal-container.mod-dim .prompt {
 	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-.setting-item-control select,
+body:not(.is-mobile)	.setting-item-control select,
 body:not(.is-mobile)	.global-search-input-container,
 body:not(.is-mobile)	.search-input-container input,
-button:not(.clickable-icon),
+body:not(.is-mobile)	button:not(.clickable-icon),
 body:not(.is-mobile) input.prompt-input,
 body:not(.is-mobile)	.suggestion-item.is-selected {
 	border: 1px solid rgb(0 0 0 / 10%);
@@ -3162,5 +3166,191 @@ main.git-view .tree-item-inner.nav-file-title-content {
 
 .bases-cards-cover {
 	position: fixed;
+
+}
+
+/* tablet */
+.is-tablet {
+	--metadata-input-height: 10px * 2.25;
+	--input-height: 34px;
+}
+
+.is-tablet .workspace .workspace-drawer.is-pinned {
+	border-radius: 0;
+}
+
+.is-tablet.theme-dark {
+	--mobile-sidebar-background: rgb(48, 48, 48);
+	--background-secondary: rgb(40, 40, 40);
+}
+
+.is-tablet.theme-light {
+	--mobile-sidebar-background: rgb(248, 248, 248);
+	--background-secondary: rgb(255, 255, 255);
+}
+
+.is-tablet .workspace-drawer.mod-left, 
+.is-tablet .workspace-drawer.mod-right,
+.is-tablet .node-insert-event,
+.is-tablet .workspace-drawer.mod-right .workspace-leaf-content .view-content,
+.is-tablet .workspace .workspace-drawer .nav-files-container.node-insert-event,
+.is-tablet .workspace-drawer-tab-container .workspace-drawer-active-tab-content .workspace-leaf-content .view-content.node-insert-event,
+.is-tablet .workspace .workspace-drawer .view-content.node-insert-event {
+	background-color: var(--mobile-sidebar-background) !important;
+	overflow-x: hidden !important;
+}
+
+.is-tablet .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+	overflow-x: hidden !important;
+}
+
+.is-tablet .workspace .workspace-drawer .side-dock-settings {
+	display: none;
+}
+
+.is-tablet .workspace .workspace-drawer .clickable-icon.side-dock-ribbon-action .svg-icon, 
+.is-tablet .workspace .workspace-drawer .mod-left-split .workspace-tab-header-inner-icon .svg-icon, 
+.is-tablet .workspace .workspace-drawer .mod-right-split .workspace-tab-header-inner-icon .svg-icon {
+	--icon-size: var(--icon-s);
+}
+
+.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner .workspace-drawer-tab-container {
+	border-left: solid 1px var(--indentation-guide-color);
+	/* box-shadow: 1px 0px 1px var(--card-border-color); */
+}
+
+.is-tablet .workspace .workspace-drawer.mod-left {
+	box-shadow: 1px 0px 1px var(--card-border-color);
+	/* border-right: 0.1px solid var(--background-modifier-border); */
+	border: 0;
+}
+
+.is-tablet .workspace .workspace-drawer.mod-right {
+	box-shadow: -1px 0px 1px var(--card-border-color);
+	/* border-left: 0.1px solid var(--background-modifier-border); */
+	border: 0;
+}
+
+.is-tablet :is(#editingToolbarModalBar, #editingToolbarPopoverBar).editingToolbarCustomAesthetic :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]):not(.editingToolbar-Divider-Line) {
+	height: var(--toolbar-icon-size);
+}
+
+.is-tablet .view-header {
+	padding-top: 0;
+	height: auto;
+}
+
+.is-tablet .workspace-drawer-header-name-text {
+	font-size: var(--font-ui-medium);
+}
+
+.is-tablet .workspace-drawer-header-info {
+	font-size: 8px;
+}
+
+.is-tablet .workspace-drawer-header-icon {
+	--icon-size: var(--icon-s);
+}
+
+.is-tablet .workspace-drawer .nav-buttons-container {
+	--icon-size: var(--icon-s);
+}
+
+.is-tablet .markdown-source-view.mod-cm6 .cm-indent::before {
+	margin-inline-start: 4px !important;
+}
+
+.is-tablet .list-bullet {
+	font-size: 10px;
+	margin-left: 0px;
+	/* padding-right: 1px; */
+	transform: translateY(-2px);
+}
+
+.is-tablet .markdown-source-view.mod-cm6 .cm-formatting-list-ul {
+	margin-right: 6px;
+}
+
+.is-tablet span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
+	font-size: 18px;
+	padding-right: 13px;
+}
+
+.is-tablet .bases-tbody,
+.is-tablet .workspace-split.mod-root .workspace-tabs .view-content .markdown-source-view.mod-cm6 .cm-editor {
+	background-color: var(--background-secondary) !important;
+}
+
+.is-tablet .workspace-drawer-header {
+	padding: 0;
+	padding-left: 10px;
+}
+
+.is-tablet .nav-files-container {
+	padding: 0;
+}
+
+.is-tablet .nav-header {
+	padding-left: 0; 
+	padding-right: 0;
+}
+
+.is-tablet .workspace-tabs.mod-top {
+	padding-top: var(--safe-area-inset-top);
+}
+
+.is-tablet .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	color: var(--text-accent) !important;
+}
+
+.is-tablet .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+	/* border-bottom: 0.1px solid var(--text-accent);
+	border-radius: 0; */
+}
+
+.is-tablet .clickable-icon.workspace-drawer-header-icon.mod-settings {
+	position: fixed;
+	left: 3px;
+	bottom: 25px;
+	padding: 0;
+}
+
+.is-tablet .metadata-property-icon svg.svg-icon {
+	height: var(--icon-s);
+	width: var(--icon-s);
+}
+
+.is-tablet .workspace-drawer-active-tab-header {
+	padding: var(--size-2-1);
+}
+
+.is-tablet .workspace-drawer-active-tab-header .workspace-drawer-active-tab-title {
+	padding-left: 10px;
+}
+
+.is-tablet .horizontal-tab-nav-item, .vertical-tab-nav-item {
+    border-radius: var(--radius-xxl);
+}
+
+.is-tablet .mobile-toolbar {
+	/* background-color: var(--mobile-sidebar-background) !important;  */
+}
+
+ .is-tablet .mobile-toolbar-options-list {
+	padding-bottom: 5px;
+	justify-content: center;
+	background-color: var(--mobile-sidebar-background) !important; 
+	border-top: 0.1px solid var(--background-modifier-border);
+}
+
+.is-tablet .sidebar-toggle-button {
+	--icon-size: var(--icon-s) !important;
+}
+
+.is-mobile ::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+.bases-tbody {
 
 }
