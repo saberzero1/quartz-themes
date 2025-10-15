@@ -5,6 +5,18 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-catppuccin
+		title: "2025 October 13: Catppuccin theme added"
+		description: "A new theme, Catppuccin, has been added. It has three variants: Frappe, Macchiato, and Mocha. You can select it in Typomagical Colour > Theme variant. Setting Obsidian to Light Mode will use the Latte variant."
+		type: info-text
+		markdown: true
+	-
+		id: ann-gradient-highlights
+		title: "2025 October 13: Highlights use gradient by default"
+		description: "Highlights now use a gradient background by default. You can revert to solid background using the Style Setting 'Solid background for highlights'."
+		type: info-text
+		markdown: true
+	-
 		id: ann-font-weight-removal
 		title: "2025 June 6: Font weights removed"
 		description: "Most extra weights for Spectral and Alegreya Sans have been removed, leaving 400 and 700 for Spectral, 400 and 800 for Alegreya Sans. The slider setting remains for advanced users who are able to install the fonts manually."
@@ -1486,6 +1498,253 @@ body.coherence.theme-dark {
   --background-secondary: var(--color-base-05);
 }
 
+/*
+Catppuccin palettes (Latte, Frappé, Macchiato, Mocha)
+Source: https://catppuccin.com/palette/
+
+Catppuccin officially supplies 1 light theme, Latte, and 3 dark themes.
+   Latte is used as light mode for all the dark themes.
+ */
+body.catppuccin-frappe {
+  /* Neutral tokens used by theme variants */
+  --title-gradient-top: var(--cp-accent-1);
+  --title-gradient-bottom: var(--cp-accent-2);
+}
+
+/* ------------------ Latte (light) ------------------ */
+body.catppuccin-frappe.theme-light,
+body.catppuccin-macchiato.theme-light,
+body.catppuccin-mocha.theme-light {
+  /* Accent colors */
+  --cp-rosewater: #dc8a78;
+  --cp-flamingo: #dd7878;
+  --cp-pink: #ea76cb;
+  --cp-mauve: #8839ef;
+  --cp-red: #d20f39;
+  --cp-maroon: #e64553;
+  --cp-peach: #fe640b;
+  --cp-yellow: #df8e1d;
+  --cp-green: #40a02b;
+  --cp-teal: #179299;
+  --cp-sky: #04a5e5;
+  --cp-sapphire: #209fb5;
+  --cp-blue: #1e66f5;
+  --cp-lavender: #7287fd;
+  --cp-bright-pink: hsl(319, 98%, 76%);
+  /* Greys / surfaces */
+  --cp-text: #4c4f69;
+  --cp-subtext1: #5c5f77;
+  --cp-subtext0: #6c6f85;
+  --cp-overlay2: #7c7f93;
+  --cp-overlay1: #8c8fa1;
+  --cp-overlay0: #9ca0b0;
+  --cp-surface2: #acb0be;
+  --cp-surface1: #bcc0cc;
+  --cp-surface0: #ccd0da;
+  --cp-base: #eff1f5;
+  --cp-mantle: #e6e9ef;
+  --cp-crust: hsl(220, 21%, 89%);
+  /* Map to project tokens */
+  --background-primary: var(--cp-base);
+  --background-primary-alt: var(--cp-base);
+  --background-secondary: var(--cp-crust);
+  --background-secondary-alt: var(--cp-surface1);
+  --text-normal: var(--cp-text);
+  --text-faint: var(--cp-subtext0);
+  --text-muted: var(--cp-subtext1);
+  --text-link: var(--cp-blue);
+  --text-highlight-bg: var(--cp-bright-pink);
+  --interactive-accent: var(--cp-yellow);
+  --interactive-accent-hover: var(--cp-orange, var(--cp-peach));
+  --interactive-hover: var(--cp-overlay2);
+  --interactive-before: var(--cp-overlay1);
+  --link-external-color: var(--cp-teal);
+  --code-normal: var(--cp-green);
+  --tag-background: var(--cp-rosewater);
+  --pre-code: var(--cp-surface1);
+  --inline-code: var(--cp-sapphire);
+  --code-block: var(--cp-sapphire);
+  --link-color: var(--cp-mauve);
+  --link-color-hover: var(--cp-lavender);
+  --link-unresolved-color: var(--cp-lavender);
+  --text-selection: var(--cp-overlay0);
+  --title-gradient-top: var(--cp-blue);
+  --title-gradient-bottom: var(--cp-text);
+}
+
+/* ------------------ Frappé (dark) ------------------ */
+body.catppuccin-frappe.theme-dark {
+  --cp-rosewater: #f2d5cf;
+  --cp-flamingo: #eebebe;
+  --cp-pink: #f4b8e4;
+  --cp-mauve: #ca9ee6;
+  --cp-red: #e78284;
+  --cp-maroon: #ea999c;
+  --cp-peach: #ef9f76;
+  --cp-yellow: #e5c890;
+  --cp-green: #a6d189;
+  --cp-teal: #81c8be;
+  --cp-sky: #99d1db;
+  --cp-sapphire: #85c1dc;
+  --cp-blue: #8caaee;
+  --cp-lavender: #babbf1;
+  --cp-text: #c6d0f5;
+  --cp-subtext1: #b5bfe2;
+  --cp-subtext0: #a5adce;
+  --cp-overlay2: #949cbb;
+  --cp-overlay1: #838ba7;
+  --cp-overlay0: #737994;
+  --cp-surface2: #626880;
+  --cp-surface1: #51576d;
+  --cp-surface0: #414559;
+  --cp-base: #303446;
+  --cp-mantle: #292c3c;
+  --cp-crust: #232634;
+  --background-primary: var(--cp-base);
+  --background-primary-alt: var(--cp-base);
+  --background-secondary: var(--cp-surface0);
+  --background-secondary-alt: var(--cp-surface1);
+  --background-modifier-border: var(--cp-surface0);
+  --table-border-color: var(--cp-surface1);
+  --text-normal: var(--cp-text);
+  --text-faint: var(--cp-subtext0);
+  --text-muted: var(--cp-subtext1);
+  --text-link: var(--cp-blue);
+  --text-highlight-bg: var(--cp-overlay0);
+  --interactive-accent: var(--cp-sky);
+  --interactive-accent-hover: var(--cp-sapphire);
+  --interactive-hover: var(--cp-overlay2);
+  --interactive-before: var(--cp-overlay1);
+  --pre-code: var(--cp-surface2);
+  --inline-code: var(--cp-sapphire);
+  --code-block: var(--cp-sapphire);
+  --link-color: var(--cp-mauve);
+  --link-color-hover: var(--cp-lavender);
+  --text-selection: rgba(198,208,245,0.12); /* subtle */
+  --title-gradient-top: var(--cp-blue);
+  --title-gradient-bottom: var(--cp-text);
+}
+
+/* ------------------ Macchiato (dark) ------------------ */
+body.catppuccin-macchiato.theme-dark {
+  --cp-rosewater: #f4dbd6;
+  --cp-flamingo: #f0c6c6;
+  --cp-pink: #f5bde6;
+  --cp-mauve: #c6a0f6;
+  --cp-red: #ed8796;
+  --cp-maroon: #ee99a0;
+  --cp-peach: #f5a97f;
+  --cp-yellow: #eed49f;
+  --cp-green: #a6da95;
+  --cp-teal: #8bd5ca;
+  --cp-sky: #91d7e3;
+  --cp-sapphire: #7dc4e4;
+  --cp-blue: #8aadf4;
+  --cp-lavender: #b7bdf8;
+  --cp-text: #cad3f5;
+  --cp-subtext1: #b8c0e0;
+  --cp-subtext0: #a5adcb;
+  --cp-overlay2: #939ab7;
+  --cp-overlay1: #8087a2;
+  --cp-overlay0: #6e738d;
+  --cp-surface2: #5b6078;
+  --cp-surface1: #494d64;
+  --cp-surface0: #363a4f;
+  --cp-base: #24273a;
+  --cp-mantle: #1e2030;
+  --cp-crust: #181926;
+  --background-primary: var(--cp-base);
+  --background-primary-alt: var(--cp-base);
+  --background-secondary: var(--cp-surface0);
+  --background-secondary-alt: var(--cp-surface1);
+  --text-normal: var(--cp-text);
+  --text-faint: var(--cp-subtext0);
+  --text-muted: var(--cp-subtext1);
+  --text-link: var(--cp-blue);
+  --text-highlight-bg: var(--cp-overlay0);
+  --interactive-accent: var(--cp-peach);
+  --interactive-accent-hover: var(--cp-yellow);
+  --interactive-hover: var(--cp-overlay2);
+  --interactive-before: var(--cp-overlay1);
+  --pre-code: var(--cp-surface1);
+  --inline-code: var(--cp-sapphire);
+  --code-block: var(--cp-sapphire);
+  --link-color: var(--cp-blue);
+  --link-color-hover: var(--cp-lavender);
+  --text-selection: rgba(202,211,245,0.12);
+  --title-gradient-top: var(--cp-blue);
+  --title-gradient-bottom: var(--cp-text);
+}
+
+/* ------------------ Mocha (dark/original) ------------------ */
+body.catppuccin-mocha.theme-dark {
+  --cp-rosewater: #f5e0dc;
+  --cp-flamingo: #f2cdcd;
+  --cp-pink: #f5c2e7;
+  --cp-mauve: #cba6f7;
+  --cp-red: #f38ba8;
+  --cp-maroon: #eba0ac;
+  --cp-peach: #fab387;
+  --cp-yellow: #f9e2af;
+  --cp-green: #a6e3a1;
+  --cp-teal: #94e2d5;
+  --cp-sky: #89dceb;
+  --cp-sapphire: #74c7ec;
+  --cp-blue: #89b4fa;
+  --cp-lavender: #b4befe;
+  --cp-text: #cdd6f4;
+  --cp-subtext1: #bac2de;
+  --cp-subtext0: #a6adc8;
+  --cp-overlay2: #9399b2;
+  --cp-overlay1: #7f849c;
+  --cp-overlay0: #6c7086;
+  --cp-surface2: #585b70;
+  --cp-surface1: #45475a;
+  --cp-surface0: #313244;
+  --cp-base: #1e1e2e;
+  --cp-mantle: #181825;
+  --cp-crust: #11111b;
+  --background-primary: var(--cp-base);
+  --background-primary-alt: var(--cp-base);
+  --background-secondary: var(--cp-surface0);
+  --background-secondary-alt: var(--cp-surface1);
+  --text-normal: var(--cp-text);
+  --text-faint: var(--cp-subtext0);
+  --text-muted: var(--cp-subtext1);
+  --text-link: var(--cp-blue);
+  --text-highlight-bg: var(--cp-overlay0);
+  --interactive-accent: var(--cp-blue);
+  --interactive-accent-hover: var(--cp-sapphire);
+  --interactive-hover: var(--cp-overlay2);
+  --interactive-before: var(--cp-overlay1);
+  --pre-code: var(--cp-surface2);
+  --inline-code: var(--cp-sapphire);
+  --code-block: var(--cp-sapphire);
+  --link-color: var(--cp-blue);
+  --link-color-hover: var(--cp-lavender);
+  --text-selection: rgba(205,214,244,0.12);
+  --title-gradient-top: var(--cp-blue);
+  --title-gradient-bottom: var(--cp-text);
+}
+
+body.catppuccin-frappe.theme-light,
+body.catppuccin-macchiato.theme-light,
+body.catppuccin-mocha.theme-light,
+body.catppuccin-frappe.theme-dark,
+body.catppuccin-macchiato.theme-dark,
+body.catppuccin-mocha.theme-dark {
+  --code-normal: var(--cp-green);
+}
+
+/* Scrollbar tweaks scoped to the theme */
+.catppuccin ::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.catppuccin.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: var(--cp-overlay1);
+}
+
 /* Calendar by liamcain START */
 #calendar-container {
   --color-background-today: var(--link-color);
@@ -1772,6 +2031,11 @@ settings:
 		id: ss-hide-external-link-icon
 		title: Hide external link icons
 		type: class-toggle
+	-
+		id: ss-revert-highlight
+		title: Solid background for highlights
+		description: Revert to Obsidian's solid background for highlights, instead of the gradient
+		type: class-toggle
 	*/
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
@@ -1826,6 +2090,15 @@ settings:
 			-
 				label: Obsidian
 				value: obsidian
+			-
+				label: Catppuccin Frappe
+				value: catppuccin-frappe
+			-
+				label: Catppuccin Macchiato
+				value: catppuccin-macchiato
+			-
+				label: Catppuccin Mocha
+				value: catppuccin-mocha
 			-
 				label: Coherence (dark only)
 				value: coherence
@@ -1953,3 +2226,11 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 .math-inline mjx-math {
   padding: 0;
 }
+
+body:not(.ss-revert-highlight) .cm-s-obsidian span.cm-highlight,
+body:not(.ss-revert-highlight) .markdown-rendered mark,
+body:not(.ss-revert-highlight) .search-result-file-matched-text {
+  background: linear-gradient(to bottom, var(--text-highlight-bg), var(--background-primary));
+}
+
+/*# sourceMappingURL=theme.css.map */
