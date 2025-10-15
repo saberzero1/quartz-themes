@@ -23,8 +23,8 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-testingMode = false;
-const testingTheme = "catppuccin";
+testingMode = true;
+const testingTheme = "shimmering";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
