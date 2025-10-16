@@ -67,7 +67,7 @@ export const config = {
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
       copy: true,
-      execArgv: ["--disable-gpu"],
+      //execArgv: ["--disable-gpu", "--no-sandbox"],
     },
   })),
 
