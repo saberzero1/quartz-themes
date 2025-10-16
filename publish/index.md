@@ -9,6 +9,9 @@ permalink: /
 > [!warning] Work in progress
 > Style Settings is currently partially supported. Not all bindings carry over correctly at the moment. A fix to better address this is being worked on.
 
+> ![[social-preview.png]]
+> Quartz with Quartz Themes
+
 [Quartz Themes](https://github.com/saberzero1/quartz-themes) is a project that aims to port all Obsidian themes styles to [Quartz](https://quartz.jzhao.xyz/), including support for the highly-popular [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
 
 Theme support for Obsidian Publish is rather sparse, with only a handful of themes providing and maintaining a dedicated `publish.css` file. Obsidian Publish doesn't support the Style Settings plugin either. [There is a workaround for this](https://forum.obsidian.md/t/apply-style-settings-to-publish-theme/98440?u=saberzero1), but it leverages `publish.js`, which requires configuring a custom domain for Obsidian Publish.
