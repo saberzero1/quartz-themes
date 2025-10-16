@@ -1,6 +1,7 @@
 node_modules
 templates
 util
+styles.db
 obsidian
 atomic
 runner/vault

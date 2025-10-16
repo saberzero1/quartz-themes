@@ -4,7 +4,7 @@ tags:
   - "#sub/tags"
 ---
 
-Text text [[https://example.com|external link]] text [[callouts|internal link]] text **bold text** text *italic text* text ***bold and italic text*** text ==highlighted text== text ~~strikethrough text~~ text.[^1]
+Text text [[https://example.com|external link]] text [[callouts|internal link]] text [external](https://example.com) text **bold text** text *italic text* text ***bold and italic text*** text ==highlighted text== text ~~strikethrough text~~ text.[^1]
 
 ---
 > blockquote text

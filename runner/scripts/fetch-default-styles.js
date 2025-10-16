@@ -152,9 +152,15 @@ function getDefaultStyles() {
     let element = rootElement.body.appendChild(
       rootElement.createElement(tagName),
     );
-    let computedStyle = getComputedStyle(element);
+    //let computedStyle = getComputedStyle(element);
+    let computedStyle = element.computedStyleMap();
+    /*
     for (let i = 0; i < computedStyle.length; i++) {
       defaultStyle[computedStyle[i]] = computedStyle[computedStyle[i]];
+    }
+    */
+    for (let [key, value] of computedStyle) {
+      defaultStyle[key] = value.toString().trim();
     }
     rootElement.body.removeChild(element);
     return defaultStyle;
