@@ -182,6 +182,90 @@ function getOrCreatePropertyId(propertyName) {
 }
 
 /**
+ * Gets the style value for a specific combination of parameters, inserting if it doesn't exist.
+ * @param {string} themeName
+ * @param {string} optionSetName
+ * @param {boolean} isDarkMode
+ * @param {string} selector
+ * @param {string} property
+ * @returns {string|null} The style value or null if not found.
+ */
+function getOrCreateStyle(
+  themeName,
+  optionSetName,
+  isDarkMode,
+  selector,
+  property,
+) {
+  const themeId = getOrCreateThemeId(themeName);
+  const optionSetId = getOrCreateOptionSetId(themeId, optionSetName);
+  const selectorId = getOrCreateSelectorId(selector);
+  const propertyId = getOrCreatePropertyId(property);
+
+  const result = preparedStatements.getSpecificStyleValue.get(
+    themeId,
+    optionSetId,
+    isDarkMode ? 1 : 0,
+    selectorId,
+    propertyId,
+  );
+  return result ? result.value : null;
+}
+
+/**
+ * Gets the ID for a theme by name.
+ * @param {string} themeName
+ * @returns {number|null} The ID of the theme or null if not found.
+ */
+function getThemeId(themeName) {
+  const row = preparedStatements.getThemeId.get(themeName);
+  if (row) {
+    return row.id;
+  }
+  return null;
+}
+
+/**
+ * Gets the ID for an option set.
+ * @param {number} themeId
+ * @param {string} optionSetName
+ * @returns {number|null} The ID of the option set or null if not found.
+ */
+function getOptionSetId(themeId, optionSetName) {
+  const row = preparedStatements.getOptionSetId.get(themeId, optionSetName);
+  if (row) {
+    return row.id;
+  }
+  return null;
+}
+
+/**
+ * Gets the ID for a selector.
+ * @param {string} selectorText
+ * @returns {number|null} The ID of the selector or null if not found.
+ */
+function getSelectorId(selectorText) {
+  const row = preparedStatements.getSelectorId.get(selectorText);
+  if (row) {
+    return row.id;
+  }
+  return null;
+}
+
+/**
+ * Gets the ID for a property.
+ * @param {string} propertyName
+ * @returns {number|null} The ID of the property or null if not found.
+ */
+function getPropertyId(propertyName) {
+  const row = preparedStatements.getPropertyId.get(propertyName);
+  if (row) {
+    return row.id;
+  }
+  return null;
+}
+
+/**
  * Gets the style value for a specific combination of parameters.
  * @param {string} themeName
  * @param {string} optionSetName
@@ -191,10 +275,19 @@ function getOrCreatePropertyId(propertyName) {
  * @returns {string|null} The style value or null if not found.
  */
 function getStyle(themeName, optionSetName, isDarkMode, selector, property) {
-  const themeId = getOrCreateThemeId(themeName);
-  const optionSetId = getOrCreateOptionSetId(themeId, optionSetName);
-  const selectorId = getOrCreateSelectorId(selector);
-  const propertyId = getOrCreatePropertyId(property);
+  const themeId = getThemeId(themeName);
+  const optionSetId = getOptionSetId(themeId, optionSetName);
+  const selectorId = getSelectorId(selector);
+  const propertyId = getPropertyId(property);
+
+  if (
+    themeId === null ||
+    optionSetId === null ||
+    selectorId === null ||
+    propertyId === null
+  ) {
+    return null;
+  }
 
   const result = preparedStatements.getSpecificStyleValue.get(
     themeId,
