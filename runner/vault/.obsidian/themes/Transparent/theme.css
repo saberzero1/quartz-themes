@@ -131,7 +131,10 @@ button {
   color: #060606;
 }
 
-
+/* right click on top right centered down arrow adjustments */
+.menu-scroll {
+    display: inline;
+}
 
 /* sliders */
 input[type='range'] {
@@ -178,7 +181,14 @@ select,
   box-shadow: none;
 }
 
-
+/* making tables more visible, until now it was fully transparent and now they are visible it is easier to navigate for new obsidian users */ 
+.cm-html-embed td, .markdown-rendered td, .cm-html-embed th, .markdown-rendered th {
+    border: var(--table-border-width) solid #ffffff10;
+}
+.cm-html-embed thead tr > th, .markdown-rendered thead tr > th {
+    border-color: #ffffff10;
+}
+/* tables */
 
 
 
@@ -289,7 +299,11 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--color-accent);
 }
 
-/* mobile (unended) */
+/* mobile */
+/* better settings on mobile  */
+.is-phone .vertical-tab-header-group-title, .is-phone .setting-item-heading .setting-item-name {
+    color: var(--color-accent);
+}
 
 /* tab manager on mobile/ */
 .mobile-tab-preview-empty {
@@ -329,3 +343,18 @@ input[type="range"]::-webkit-slider-thumb {
 .is-phone .mobile-tab-switcher {
   backdrop-filter: blur(var(--set-blur));
 }
+
+
+/* work in progress lol
+/* folders, search bar etc. blur 
+.workspace-drawer.mod-left {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(50px);
+}
+/* blur on the right menu, same as 5 lines above 
+.workspace-drawer.mod-right {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(50px);
+}
+
+*/
