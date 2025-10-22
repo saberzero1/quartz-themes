@@ -1,6 +1,6 @@
 import { browser } from "@wdio/globals";
 import { memoryUsage } from "process";
-import { extractionTargets } from "./config.wip.js";
+// import { extractionTargets } from "./config.wip.js";
 import {
   dark as darkDefaultStyles,
   light as lightDefaultStyles,
@@ -24,7 +24,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 
 let testingMode = false;
 testingMode = true;
-const testingTheme = "shimmering";
+const testingTheme = "true";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
