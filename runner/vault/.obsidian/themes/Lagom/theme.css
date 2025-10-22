@@ -20,6 +20,7 @@ body {
   --default-font-size: 15.4px; /* Notes and editor */
   --line-height-note: 21px;
   --letter-spacing-note: 0.18px;
+  --padding-default-note-style: 35px;
   --text-note-align: justify;
   --focus-active-line-opacity: 0.8;
   --focus-non-active-line-opacity: 0.55;
@@ -143,10 +144,12 @@ body.theme-light {
 }
 
 
+  
+
  /* ::::: BOTH MODES ::::: */
-.cm-s-obsidian, .markdown-preview-view, .CodeMirror-lines {
-  padding-left: var(--padding-note-content);
-  padding-right: var(--padding-note-content);
+ .markdown-preview-view, .cm-s-obsidian {
+  padding-left: var(--padding-default-note-style) !important;
+  padding-right: var(--padding-default-note-style) !important;
   text-align: var(--text-note-align);
   font-size: var(--default-font-size);
   width: auto;
@@ -158,12 +161,16 @@ body.theme-light {
 .theme-light, .cm-s-obsidian::not(.theme-dark) {}
 .mod-cm6 .cm-editor {}
 
+.cm-s-obsidian {
+  padding: 10px !important;
+}
+
 
 /* ::::: CUSTOM BACKGROUNG ::::: */
 .theme-light .cm-s-obsidian {
   content: "";
   background-image: var(--background-image-editor)!important;
-  background-repeat: ;
+ /* background-repeat: ; */
   background-size: var(--background-image-editor-size);
   left: 0;
   top: 0;
@@ -175,6 +182,8 @@ body.theme-light {
 
 /* Style page for editor mode */
 .page-style-editor-mode .cm-s-obsidian {
+  padding-left: calc(var(--padding-note-content) - 5%);
+  padding-right: calc(var(--padding-note-content) - 5%);
   margin: 10px 15px 0px 15px !important;
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
@@ -184,9 +193,10 @@ body.theme-light {
 
 
 /* ::::: READ MODE ::::: */
-.workspace-split.mod-root .view-content {}
+/* .workspace-split.mod-root .view-content {} */
 
 .markdown-preview-view {
+  padding: auto !important;
   letter-spacing: var(--letter-spacing-note); 
   line-height: var(--line-height-note) !important;
 }
@@ -505,9 +515,7 @@ body:not(.no-codeblock-line-numbers)
  /* display: none;*/
 }
 
-.frontmatter-container {
-/*	display: none; */
-}
+.frontmatter-container {}
 
 .cm-hmd-frontmatter {
   background: var(--background-modifier-box-shadow) !important;
@@ -675,6 +683,7 @@ tr:last-child td:last-child {
 .metadata-property-key {
 	width: 40%;
 }
+
 .metadata-property-value {}
 .metadata-content {}
 .metadata-property {}
@@ -841,9 +850,8 @@ body {
 }
 
 /* HIDE EMBED ICON NOTE */
-.markdown-embed-link >.svg-icon.lucide-link {
-  display: var(--hide-icon-link-embed-notes);
-  color: transparent;
+.markdown-embed-link {
+  color: var(--hide-icon-link-embed-notes) !important;
   margin: 3px 3px 3px 3px;
   border-radius: 100%;
   background: var(--background-secondary);
@@ -852,7 +860,7 @@ body {
 
 
 
-/* SHOW TITLE - DEFUALT */
+/* SHOW TITLE - DEFAULT */
 .markdown-preview-view .markdown-embed-title,
 .markdown-preview-view .obsidian-metatable {
   text-align: center;
@@ -875,9 +883,13 @@ body {
 }
 
 
-/* EMBED CONTENT */
+/* ::::: EMBED CONTENT ::::: */
+.markdown-embed-content {}
+
+
+/* EMBED FRAME  */
 .markdown-embed {
-  padding: 15px 21px 15px 21px;
+  padding: 15px 7px 7px 0px !important;
   border-radius: var(--radius-s);
   border: 1px solid var(--background-modifier-border);
   /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important; */
@@ -885,8 +897,8 @@ body {
 
 
 /* Fix top space when title is disabled */
-.hide-embed-title .markdown-embed {
-  padding: 38px 21px 15px 21px;
+.hide-embed-title .markdown-embed-content {
+  padding-top: 20px;
 }
 
  
@@ -940,7 +952,7 @@ hr {
 
 
 
-/* ::::: COMMANDER TOOLBAR ::::: */
+/* ::::: COMMANDER - TAB BAR ::::: */
 .view-header {
   position: relative !important;
 	margin: 0px 0px 0px 11px !important;
@@ -948,16 +960,16 @@ hr {
 }
 
 
-/* ::::: HIDE EXPLORER BUTTONS :::::: */
-.nav-header{
-  display: var(--show-explorer-buttons) !important;
+/* ::::: HIDE EXPLORER TOOLBAR :::::: */
+
+.nav-header {
+  display: var(--show-editor-text-bar) !important;
   border-radius: var(--radius-s);
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin: 5px 20px 5px 20px;
   min-width: 75%;
-  bottom: 2px;
   border: 1px solid var(--background-modifier-border);
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+
 }
 
 /* HIDE EXPLORER FOLDER ICON */
@@ -1167,7 +1179,7 @@ body.is-mobile .workspace-drawer-header {
 }
 
 
-/* ::::: TEXT EDITOR BAR ::::: */
+/* ::::: EDITOR BAR - TOOLBAR ::::: */
 .mobile-toolbar-options-container {
   border: 1px var(--background-modifier-border) solid; 
   margin-left: 34px;
@@ -1233,12 +1245,12 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 }
 
 
-/* :::::::::: MENU :::::::::: */
+/* :::::::::: MENU - RIBBON :::::::::: */
 .is-mobile .menu {
   font-size: var(--nav-item-size) !important;
   max-width: 85%;
-  padding: 5px 1px 0px 1px
-  border-radius: 0px !important;
+  padding: 5px 1px 0px 1px;
+  border-radius: var(--radius-s) !important;
 }
 
 
@@ -1738,7 +1750,13 @@ settings:
       type: variable-number
       default: 24
       format: px
-  - 
+  -
+      id: padding-default-note-style
+      title: Padding note
+      type: variable-number
+      default: 50
+      format: px
+  -
       id: list-indent
       title: List indent  
       type: variable-number
@@ -1846,7 +1864,7 @@ settings:
       title: Side paddings
       type: variable-number
       description: Change this value if the note content is too close to its edges.
-      default: 25
+      default: 35
       format: px
   - 
       id: background-image-editor
@@ -2142,10 +2160,10 @@ settings:
       options:
           - 
               label: Hide
-              value: none
+              value: transparent
           - 
               label: Show
-              value: block
+              value: var(--background-modifier-border)
   - 
       id: images-section
       title: Images

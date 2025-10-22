@@ -1,4 +1,4 @@
-/* Maple Theme v1.0.0-beta.48 For Obsidian */
+/* Maple Theme v1.1.2 For Obsidian */
 /* @settings
 id: maple-basic
 name: Maple Basic
@@ -6,7 +6,7 @@ settings:
     - id: setting-animation-time
       type: variable-number-slider
       title: Animation Duration (ms)
-      title.zh: 动画持续时间（毫秒）
+      title.zh: 动画时长（毫秒）
       default: 250
       min: 0
       max: 1000
@@ -16,13 +16,21 @@ settings:
       type: variable-number-slider
       title: List Item Line Height
       title.zh: 列表行高
-      description: Line height of item in file explorer, outline panel, setting modal
-          sidebar and so on
-      description.zh: 文件管理器、大纲面板、设置框侧边栏等列表的行高
+      description: Adjust the line height for items in file explorer, outline panel,
+          and setting modal sidebar.
+      description.zh: 调整文件管理器、大纲面板和设置面板侧边栏中行高。
       default: 1.5
       min: 1
       max: 2
       step: 0.1
+    - id: setting-divider-color
+      type: variable-themed-color
+      title: Panel Divider Color
+      title.zh: 面板分割线颜色
+      format: hsl
+      opacity: true
+      default-light: "#"
+      default-dark: "#"
     - id: title-colors
       title: Colors
       title.zh: 颜色
@@ -71,18 +79,17 @@ settings:
             value: color-active-custom-light
     - id: setting-color-active-custom-light
       type: variable-color
-      title: Custom Highlight Color for Active State
-      title.zh: 自定义激活状态的高亮色
-      description: This option will also affect the saturation and brightness of the
-          background color.
-      description.zh: 这个选项也会影响背景色的饱和度和亮度
+      title: Custom Highlight Color (Active)
+      title.zh: 自定义高亮色（激活状态）
+      description: Affects saturation and brightness of the background color.
+      description.zh: 影响背景色的饱和度和亮度。
       default: "#"
       format: hsl-split
       opacity: false
     - id: setting-color-inactive-custom-light
       type: variable-color
-      title: Custom Highlight Color for Inactive State
-      title.zh: 自定义非激活状态的高亮色
+      title: Custom Highlight Color (Inactive)
+      title.zh: 自定义高亮色（非激活状态）
       default: "#"
       format: hsl-split
       opacity: false
@@ -115,18 +122,17 @@ settings:
             value: color-active-custom-dark
     - id: setting-color-active-custom-dark
       type: variable-color
-      title: Custom Highlight Color for Active State
-      title.zh: 自定义激活状态的高亮色
-      description: This option will also affect the saturation and brightness of the
-          background color.
-      description.zh: 这个选项也会影响背景色的饱和度和亮度
+      title: Custom Highlight Color (Active)
+      title.zh: 自定义高亮色（激活状态）
+      description: Affects saturation and brightness of the background color.
+      description.zh: 影响背景色的饱和度和亮度。
       default: "#"
       format: hsl-split
       opacity: false
     - id: setting-color-inactive-custom-dark
       type: variable-color
-      title: Custom Highlight Color for Inactive State
-      title.zh: 自定义非激活状态的高亮色
+      title: Custom Highlight Color (Inactive)
+      title.zh: 自定义高亮色（非激活状态）
       default: "#"
       format: hsl-split
       opacity: false
@@ -143,7 +149,7 @@ settings:
       default: true
     - id: app-layout-card-border
       type: class-toggle
-      title: Add Border For Card
+      title: Add Border to Cards
       title.zh: 为卡片添加边框
     - id: setting-app-layout-spacing
       type: variable-number-slider
@@ -158,7 +164,7 @@ settings:
       type: class-select
       title: Background Type
       title.zh: 背景类型
-      description: '"gradient" is not effective when color scheme is "Minimal"'
+      description: '"gradient" is ineffective when the color scheme is "Minimal"'
       description.zh: 当颜色方案为 "Minimal" 时，"gradient" 不会生效
       allow-empty: false
       default: app-layout-card-gradient
@@ -208,18 +214,10 @@ settings:
       type: class-toggle
       title: Enable Background Blur
       title.zh: 启用背景模糊
-      description: Works in menus, modals, popups, graph control panel, etc.; close if
-          it is laggy while scrolling; disabled on mobile phones
-      description.zh: 在菜单、弹出框、图谱控制面板中生效；如果滚动卡顿请关闭此选项；手机端不生效
+      description: Applies to menus, modals, popups, and graph control panels. Disable
+          if scrolling becomes laggy. Not available on mobile devices.
+      description.zh: 在菜单、弹出框和图谱控制面板中生效；若滚动卡顿，请关闭此选项；手机端不支持
       default: true
-    - id: setting-divider-color
-      type: variable-themed-color
-      title: Panel Divider Color
-      title.zh: 面板分割线颜色
-      format: hsl
-      opacity: true
-      default-light: "#"
-      default-dark: "#"
     - id: title-file-explorer
       title: File Explorer
       title.zh: 文件管理器
@@ -234,13 +232,13 @@ settings:
       type: class-toggle
       title: Enable Prefix Icons
       title.zh: 启用前置图标
-      description: Recommended to disable it when using third-party icon plugins to
-          avoid conflicts
-      description.zh: 建议使用第三方图标插件时关闭以避免冲突
+      description: Please turn off this option when using third-party icon plugins to
+          avoid conflicts.
+      description.zh: 使用第三方图标插件时建议关闭以避免冲突。
       default: true
     - id: explorer-folder-bold
       type: class-toggle
-      title: Bolder Folder Title
+      title: Bold Folder Titles
       title.zh: 加粗文件夹标题
     - id: setting-color-dirs
       type: variable-themed-color
@@ -258,9 +256,9 @@ settings:
       collapsed: true
     - id: outline-enable
       type: class-toggle
-      title: Logseq Bullet Thread Style Outline
-      title.zh: Logseq 样式的文档大纲视图
-      description: Please reload Obsidian after enabling this feature. Reference from
+      title: Enable Logseq Bullet Thread Style of outline
+      title.zh: 启用 Logseq 样式的大纲
+      description: Reload Obsidian after enabling this feature. Reference from
           https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
       description.zh: 启用此功能后请重启 Obsidian。参考自
           https://github.com/pengx17/logseq-dev-theme/blob/main/bullet_threading.css
@@ -289,9 +287,9 @@ settings:
       opacity: true
       default-light: "#"
       default-dark: "#"
-    - id: title-search-and-replace
-      title: Search and Replace
-      title.zh: 搜索和替换
+    - id: title-document-search-and-replace
+      title: Document Search and Replace
+      title.zh: 文档搜索和替换
       type: heading
       level: 1
       collapsed: true
@@ -299,8 +297,8 @@ settings:
       type: class-toggle
       title: Enable Floating Style
       title.zh: 启用浮动风格
-      description: Similar to VSCode's document search widget
-      description.zh: 和 VSCode 的文档搜索框类似
+      description: Similar to VSCode document search widget
+      description.zh: 类似于 VSCode 的文档搜索框
       default: true
     - id: search-remove-button
       type: class-toggle
@@ -318,7 +316,7 @@ settings:
       type: variable-themed-color
       title: Normal Node Color
       title.zh: 普通节点颜色
-      format: hex
+      format: hsl
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -326,7 +324,7 @@ settings:
       type: variable-themed-color
       title: Unresolved Node Color
       title.zh: 未连接节点颜色
-      format: hex
+      format: hsl
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -334,7 +332,7 @@ settings:
       type: variable-themed-color
       title: Focused Node Color
       title.zh: 聚焦节点颜色
-      format: hex
+      format: hsl
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -344,12 +342,6 @@ settings:
       type: heading
       level: 1
       collapsed: true
-    - id: modal-blur
-      type: class-toggle
-      title: Enable Blurred Modal Background
-      title.zh: 启用模态框背景模糊
-      description: If scrolling experiences delay, try disabling this option
-      description.zh: 如果滚动时出现卡顿，请尝试关闭此选项
     - id: modal-header
       type: class-toggle
       title: Add Header To Setting Panel
@@ -361,7 +353,7 @@ settings:
       type: variable-text
       title: Setting Panel Header Title
       title.zh: 设置面板标题
-      default: Maple 1.0.0-beta.48
+      default: Maple 1.1.2
       quotes: true
     - id: modal-header-search
       type: class-toggle
@@ -373,15 +365,26 @@ settings:
       title: Add Icons For Left Navigation Group Title
       title.zh: 为左侧导航组标题添加图标
       default: true
+    - id: title-control
+      title: Control
+      title.zh: 控件
+      type: heading
+      level: 2
+      collapsed: true
+    - id: modal-control-gradient
+      type: class-toggle
+      title: Enable Gradient Style on Controls
+      title.zh: 控件启用渐变样式
+      default: true
     - id: modal-slider
       type: class-toggle
       title: Styled Slider
-      title.zh: 美化滑动条
+      title.zh: 启用滑块样式
       default: true
     - id: modal-toggle
       type: class-select
       title: Styled Toggle Button
-      title.zh: 美化开关按钮
+      title.zh: 启用开关按钮样式
       description: '"Thin" and "Floating" will fallback to "Default" on mobile'
       description.zh: “Thin” 和 “Floating” 选项在移动端会回退到 “默认” 风格
       allow-empty: false
@@ -403,8 +406,8 @@ settings:
       collapsed: true
     - id: labeled-nav
       type: class-toggle
-      title: Enable Labeled Navigation Bar
-      title.zh: 启用带文字的导航栏
+      title: Enable Vertical Navigation Bar
+      title.zh: 启用竖向导航栏
       description: Reference from
           https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/labeled-nav.scss
       description.zh: 参考自
@@ -436,8 +439,8 @@ settings:
             value: tab-show-close-part
     - id: tab-title-bar-text
       type: class-select
-      title: File Name On Tab Title Bar
-      title.zh: 标签页标题栏的文件名
+      title: Font Size of File Name On Tab Title Bar
+      title.zh: 标签页标题栏的文件名的字体大小
       allow-empty: false
       default: tab-title-bar-text-default
       options:
@@ -456,7 +459,7 @@ settings:
     - id: status-bar-style-float
       type: class-toggle
       title: Enable Floating Style
-      title.zh: 启用浮动风格
+      title.zh: 启用浮动样式
       default: true
     - id: status-bar-style
       type: class-select
@@ -500,7 +503,7 @@ settings:
     - id: setting-message-bg
       type: variable-themed-color
       title: Background Color
-      title.zh: 背景颜色
+      title.zh: 背景色
       format: hex
       opacity: true
       default-light: "#"
@@ -508,7 +511,7 @@ settings:
     - id: setting-message-fg
       type: variable-themed-color
       title: Foreground Color
-      title.zh: 文字颜色
+      title.zh: 文字色
       format: hex
       opacity: true
       default-light: "#"
@@ -525,8 +528,8 @@ settings:
       title.zh: 始终隐藏滚动条
     - id: scrollbar-enable
       type: class-toggle
-      title: Enable Styled Scrollbar
-      title.zh: 启用美化滚动条
+      title: Enable Scrollbar Style
+      title.zh: 启用滚动条样式
       default: true
     - id: scrollbar-hover
       type: class-select
@@ -575,7 +578,7 @@ settings:
             value: editor-bg-grid-line
     - id: setting-editor-bg-grid-dots
       type: variable-themed-color
-      title: Editor Background Dot Color
+      title: Dot Color for Editor Background
       title.zh: 编辑器背景点颜色
       format: rgb
       opacity: true
@@ -583,7 +586,7 @@ settings:
       default-dark: "#"
     - id: setting-editor-bg-grid-line
       type: variable-themed-color
-      title: Editor Background Grid Line Color
+      title: Grid Line Color for Editor Background
       title.zh: 编辑器背景网格线颜色
       format: rgb
       opacity: true
@@ -591,7 +594,7 @@ settings:
       default-dark: "#"
     - id: setting-editor-bg-grid-spacing
       type: variable-number-slider
-      title: Editor Background Grid Spacing
+      title: Grid Spacing for Editor Background
       title.zh: 编辑器背景网格间距
       format: px
       default: 20
@@ -606,17 +609,21 @@ settings:
       collapsed: true
     - id: setting-editor-p-spacing
       type: variable-number-slider
-      title: Editor Paragraph Spacing (px)
-      title.zh: 编辑器段落间距（px）
+      title: Paragraph Spacing (px)
+      title.zh: 段落间距（px）
       default: 8
       format: px
       min: 0
       max: 20
       step: 1
+    - id: editor-custom-bottom-spacing
+      type: class-toggle
+      title: Custom Page Bottom Spacing
+      title.zh: 自定义页面底部留白
     - id: setting-editor-bottom-spacing
       type: variable-number-slider
-      title: Editor Page Bottom Spacing (vh)
-      title.zh: 编辑器页面底部留白大小（vh）
+      title: Page Bottom Spacing (vh)
+      title.zh: 页面底部留白大小（vh）
       default: 40
       format: vh
       min: 0
@@ -624,20 +631,19 @@ settings:
       step: 5
     - id: setting-editor-p-indent
       type: variable-number-slider
-      title: Editor Paragraph Indent
-      title.zh: 编辑器段落缩进
-      description: If "p-indent" exists in properties.cssclasses, all paragraphs will
-          be indented (n times font size)
-      description.zh: 当文档属性的 cssclasses 中存在 “p-indent” 类时，会为所有段落添加缩进（字体大小的倍数）
+      title: Paragraph Indent
+      title.zh: 段落缩进
+      description: Indent all paragraphs if "p-indent" exists in properties.cssclasses
+      description.zh: 当文档属性的 cssclasses 中存在 “p-indent” 类时，为所有段落添加缩进
       default: 2
       min: 0
       max: 4
       step: 0.2
     - id: setting-line-height
       type: variable-number-slider
-      title: Editor Line Height
-      title.zh: 编辑器行高
-      description: Multiple of the text size
+      title: Line Height
+      title.zh: 行高
+      description: Multiple of text size
       description.zh: 文字大小的倍数
       default: 1.8
       min: 1.2
@@ -645,15 +651,15 @@ settings:
       step: 0.1
     - id: setting-file-line-width
       type: variable-text
-      title: Editor Line Width
-      title.zh: 编辑器行宽
+      title: Line Width
+      title.zh: 行宽
       description: Any CSS "width" value, e.g. clamp(MinWidth, WidthPercent, MaxWidth)
       description.zh: 任何 CSS “width” 值，例如：clamp(最小值, 宽度百分比, 最大值)
       default: clamp(600px, 72%, 850px)
     - id: line-indicator
       type: class-select
-      title: Hover Line Indicator
-      title.zh: 鼠标悬停行指示器
+      title: Hover Line Marker
+      title.zh: 鼠标悬停行标记
       description: Reference from https://github.com/Akifyss/obsidian-border
       description.zh: 参考自 https://github.com/Akifyss/obsidian-border
       allow-empty: false
@@ -718,14 +724,14 @@ settings:
     - id: setting-text-highlight-bg
       type: variable-text
       title: Highlight Text Background Color
-      title.zh: 文本高亮背景颜色
+      title.zh: 文本高亮背景色
       description: Any CSS "background" value, e.g. url("/your/image/url")
       description.zh: 任何 CSS “background” 值，例如：url("图片链接地址")
       default: rgba(255, 208, 0, 0.4)
     - id: setting-text-highlight-color
       type: variable-themed-color
       title: Highlight Text Color
-      title.zh: 文本高亮文字颜色
+      title.zh: 文本高亮文字色
       format: hex
       opacity: true
       default-light: "#"
@@ -735,11 +741,12 @@ settings:
       title: Highlight Background Radius
       title.zh: 高亮背景圆角大小
       description: Value in pixels (px)
-      description.zh: 单位：像素 (px)
+      description.zh: 单位：像素（px）
       default: 4
       min: 0
       max: 8
       step: 1
+      format: px
     - id: text-highlight-all-round
       type: class-toggle
       title: Maintain Radius When Wrapping
@@ -747,10 +754,6 @@ settings:
       description: Except during editing
       description.zh: 编辑时除外
       default: true
-    - id: text-highlight-margin
-      type: class-toggle
-      title: Add Spacing Around Highlight
-      title.zh: 增加高亮周围边距
     - id: title-bold
       title: Bold
       title.zh: 粗体
@@ -765,13 +768,21 @@ settings:
       opacity: true
       default-light: "#"
       default-dark: "#"
+    - id: setting-text-bold-weight
+      type: variable-number-slider
+      title: Bold Font Weight
+      title.zh: 粗体字重
+      default: 600
+      min: 100
+      max: 800
+      step: 50
     - id: setting-text-bold-style
       type: variable-text
       title: Bold Style
       title.zh: 粗体样式
       description: Any CSS "text-decoration" value
       description.zh: 任何 CSS “text-decoration” 值
-      default: underline dotted
+      default: ""
     - id: setting-text-bold-font
       type: variable-text
       title: Bold Font
@@ -799,7 +810,7 @@ settings:
       title.zh: 斜体样式
       description: Any CSS "text-decoration" value
       description.zh: 任何 CSS “text-decoration” 值
-      default: underline dotted
+      default: ""
     - id: setting-text-italic-font
       type: variable-text
       title: Italic Font
@@ -820,12 +831,20 @@ settings:
       description: https://github.com/subframe7536/maple-font
       description.zh: https://github.com/subframe7536/maple-font
       default: true
+    - id: setting-code-ligature
+      type: variable-text
+      title: Monospace Font Features
+      title.zh: 等宽字体特性
+      description: If using "Maple Mono" as monospace font, recommend setting to
+          'calt','cv01','cv02' to bring back normal glyphs
+      description.zh: 如果您使用 “Maple Mono” 作为等宽字体，建议设置为 'calt','cv01','cv02' 以改为正常的字形
+      default: "'calt'"
     - id: font-latex-text
       type: class-toggle
       title: Use Text Font in Non-formula Parts of LaTeX
       title.zh: 在 LaTeX 内非公式部分使用正文字体
       description: No effective on Latin letters and numbers
-      description.zh: 用于修改中文字体
+      description.zh: 仅修改中文字体
     - id: title-link
       title: Link
       title.zh: 链接
@@ -915,8 +934,8 @@ settings:
             value: heading-color-colorful
     - id: heading-indicator
       type: class-select
-      title: Heading Level Indicator
-      title.zh: 标题等级指示器
+      title: Heading Level Marker
+      title.zh: 标题等级标记
       allow-empty: false
       default: heading-indicator-auto
       options:
@@ -968,7 +987,7 @@ settings:
       type: variable-themed-color
       title: H1 Color
       title.zh: H1 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1045,7 +1064,7 @@ settings:
       type: variable-themed-color
       title: H2 Color
       title.zh: H2 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1122,7 +1141,7 @@ settings:
       type: variable-themed-color
       title: H3 Color
       title.zh: H3 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1199,7 +1218,7 @@ settings:
       type: variable-themed-color
       title: H4 Color
       title.zh: H4 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1276,7 +1295,7 @@ settings:
       type: variable-themed-color
       title: H5 Color
       title.zh: H5 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1353,7 +1372,7 @@ settings:
       type: variable-themed-color
       title: H6 Color
       title.zh: H6 颜色
-      format: rgb-split
+      format: rgb-values
       opacity: true
       default-light: "#"
       default-dark: "#"
@@ -1441,7 +1460,7 @@ settings:
     - id: setting-table-header-text
       type: variable-themed-color
       title: Table Header Text Color
-      title.zh: 表头文字颜色
+      title.zh: 表头文字色
       format: hex
       opacity: true
       default-light: "#"
@@ -1449,7 +1468,7 @@ settings:
     - id: setting-table-header-bg
       type: variable-themed-color
       title: Table Header Background Color
-      title.zh: 表头背景颜色
+      title.zh: 表头背景色
       format: hex
       opacity: true
       default-light: "#"
@@ -1457,7 +1476,7 @@ settings:
     - id: setting-table-line-bg
       type: variable-themed-color
       title: Striped Background Color
-      title.zh: 斑马纹背景颜色
+      title.zh: 斑马纹背景色
       format: hex
       opacity: true
       default-light: "#"
@@ -1518,8 +1537,10 @@ settings:
       title.zh: 使用斜体
     - id: quote-mark
       type: class-toggle
-      title: Add Front Blockquote Mark in Reading View
-      title.zh: 阅读视图下引言块添加前置引号
+      title: Enable Quote Mark Style in Reading View
+      title.zh: 阅读视图下添加前置大引号
+      description: Replace front line border with a quotation mark
+      description.zh: 用引号替代前置边框
     - id: quote-outline-style
       type: class-select
       title: Blockquote Style in Reading View
@@ -1642,7 +1663,7 @@ settings:
     - id: setting-code-inline
       type: variable-themed-color
       title: Inline Code Color
-      title.zh: 行内代码文字颜色
+      title.zh: 行内代码文字色
       format: hex
       opacity: true
       default-light: "#"
@@ -1650,7 +1671,7 @@ settings:
     - id: setting-code-bg
       type: variable-themed-color
       title: Code Block Background Color
-      title.zh: 代码块背景颜色
+      title.zh: 代码块背景色
       format: hex
       opacity: true
       default-light: "#"
@@ -1670,17 +1691,11 @@ settings:
       default: true
     - id: code-nowrap
       type: class-toggle
-      title: Don't Wrap Line in Reading View Code Blocks
+      title: Prevent Code Wrapping in Reading View
       title.zh: 阅读视图下代码过长时不换行
+      description: Only effective in editor
+      description.zh: 仅在编辑器内生效
       default: true
-    - id: setting-code-ligature
-      type: variable-text
-      title: Monospace Font Features
-      title.zh: 等宽字体特性
-      description: If using "Maple Mono" as monospace, recommend setting to
-          'calt','cv01','cv02'
-      description.zh: 如果您使用 “Maple Mono” 作为等宽字体，建议设置为 'calt','cv01','cv02'
-      default: "'calt'"
     - id: code-preview-bg
       type: class-toggle
       title: Enable Code Block Background in Reading View
@@ -1696,8 +1711,8 @@ settings:
       type: class-toggle
       title: Add Mac Style Code Block Header in Reading View
       title.zh: 在阅读视图下为代码块添加 Mac 风格标题栏
-      description: No code block border
-      description.zh: 无代码块边框
+      description: No code block border; No effective when exporting PDF
+      description.zh: 无代码块边框；导出 PDF 时不生效
     - id: setting-code-language-color
       type: variable-themed-color
       title: Language Indicator Color
@@ -1745,7 +1760,7 @@ settings:
     - id: setting-tag-bg
       type: variable-themed-color
       title: Tag Background Color
-      title.zh: 标签背景颜色
+      title.zh: 标签背景色
       format: hex
       opacity: true
       default-light: "#"
@@ -1753,7 +1768,7 @@ settings:
     - id: setting-tag-color
       type: variable-themed-color
       title: Tag Text Color
-      title.zh: 标签文字颜色
+      title.zh: 标签文字色
       format: hex
       opacity: true
       default-light: "#"
@@ -1808,7 +1823,7 @@ settings:
     - id: pdf-export-transparent
       type: class-toggle
       title: Set Background to Transparent
-      title.zh: 导出时将页面背景颜色设置为透明
+      title.zh: 导出时将页面背景色设置为透明
     - id: pdf-export-page-break
       type: class-toggle
       title: Better Page Break Strategy
@@ -1843,6 +1858,52 @@ settings:
 id: maple-plugin
 name: Maple Plugin
 settings:
+    - id: info-plugin-intro
+      type: info-text
+      description: >-
+          If you find any plugin not displaying properly, please open an issue
+          at the [GitHub
+          repository](https://github.com/subframe7536/obsidian-theme-maple).
+
+          > [!info]- Adapted plugins
+
+          > - Better Command Palette
+
+          > - Calendar
+
+          > - Obsidian Git
+
+          > - MySnippets
+
+          > - Quite Outline
+
+          > - Recent Files
+
+          > - Settings Search
+
+          > - Shiki Highlighter
+      description.zh: >-
+          如果您发现某个插件显示不正常，请前往 [GitHub
+          仓库](https://github.com/subframe7536/obsidian-theme-maple) 提交 issue。
+
+          > [!info]- 已适配的插件
+
+          > - Better Command Palette
+
+          > - Calendar
+
+          > - Obsidian Git
+
+          > - MySnippets
+
+          > - Quite Outline
+
+          > - Recent Files
+
+          > - Settings Search
+
+          > - Shiki Highlighter
+      markdown: true
     - id: title-calendar
       title: Calendar
       title.zh: 日历
@@ -1874,18 +1935,18 @@ settings:
             value: calendar-end-7-1
     - id: calendar-swap-year-month
       type: class-toggle
-      title: Swap Year and Month
-      title.zh: 交换年份和月份的位置
+      title: Swap Year and Month Display
+      title.zh: 交换年份和月份显示
     - id: setting-calendar-year-suffix
       type: variable-text
-      title: Year Suffix
-      title.zh: 年份后缀
+      title: Year Suffix Text
+      title.zh: 年份后缀文本
       default: 年
       quotes: true
     - id: setting-calendar-max-width
       type: variable-text
-      title: Maximum Width
-      title.zh: 最大宽度
+      title: Calendar Maximum Width
+      title.zh: 日历最大宽度
       description: Any CSS "max-width" value
       description.zh: 任何 CSS “max-width” 值
       default: 500px
@@ -1896,9 +1957,56 @@ name: Maple Mobile
 settings:
     - id: mobile-floating-button
       type: class-toggle
-      title: Floating Mode Switch Button
-      title.zh: 浮动的模式切换按钮
+      title: Enable Floating Mode Switch Button
+      title.zh: 启用浮动的模式切换按钮
       default: true
+    - id: title-font-settings
+      title: Font Settings
+      title.zh: 字体设置
+      description: It is inconvenient to install fonts on mobile devices, so maybe you
+          need this option
+      description.zh: 移动端不方便安装字体，所以有了这个选项
+      type: heading
+      level: 1
+      collapsed: true
+    - id: info-info-font-mobile
+      type: info-text
+      description: >-
+          > [!tip]
+
+          > 1. Reset options in **Appearance > Font** to make this work
+
+          > 2. Type "**maplemono**" if you want to use the theme's built-in
+          monospace font Maple Mono
+
+          > 3. External font can load from CSS Snippets.
+      description.zh: |-
+          > [!tip]
+          > 1. 需要先重置 **外观 > 字体** 中的选项才能生效
+          > 2. 如果想使用主题内置的等宽字体 Maple Mono，请输入 **maplemono**
+          > 3. 外部字体可以通过 CSS 片段加载
+      markdown: true
+    - id: setting-mobile-font-interface
+      type: variable-text
+      title: Interface Font
+      title.zh: 页面字体
+      description: Any CSS "font-family" value
+      description.zh: 任何 CSS “font-family” 值
+      default: ""
+    - id: setting-mobile-font-text
+      type: variable-text
+      title: Text Font
+      title.zh: 正文字体
+      description: Any CSS "font-family" value
+      description.zh: 任何 CSS “font-family” 值
+      default: ""
+    - id: setting-mobile-font-monospace
+      type: variable-text
+      title: Monospace Font
+      title.zh: 等宽字体
+      description: Any CSS "font-family" value
+      description.zh: 任何 CSS “font-family” 值
+      default: maplemono
 */
 
 /* #region global variables */
@@ -1938,6 +2046,7 @@ body {
     60%
   );
   --background-primary: hsl(var(--background-primary-hsl));
+  --background-primary-alt: hsl(var(--background-primary-alt-hsl));
   --background-secondary: hsl(var(--background-secondary-hsl));
   --background-modifier-border-focus: var(--background-modifier-border-hover);
   --background-modifier-error: rgba(var(--color-red-rgb), 1);
@@ -1954,6 +2063,7 @@ body {
     inset 0 -0.125px 1px 0px var(--color-base-40),
     0 0.75px 2px 0.5px var(--color-base-50);
   --animation-dur: var(--setting-animation-time, 250ms);
+  --animation-fast: calc(var(--animation-dur) / 2) var(--anim-motion-smooth);
   --animation: var(--animation-dur) var(--anim-motion-smooth);
   --animation-slow: calc(var(--animation-dur) * 2) var(--anim-motion-smooth);
   --animation-delay: calc(4 * var(--animation-dur));
@@ -2007,7 +2117,7 @@ body {
     calc(85% + var(--theme-accent-active-l) * 0.1)
   );
   --background-primary-hsl: var(--base-accent-h), 12%, 97%;
-  --background-primary-alt: hsl(var(--base-accent-h), 10%, 95%);
+  --background-primary-alt-hsl: var(--base-accent-h), 10%, 95%;
   --background-secondary-hsl: calc(var(--base-accent-h) - 18), 8%, 93%;
   --background-modifier-hover: hsl(
     var(--base-accent-h),
@@ -2018,14 +2128,22 @@ body {
   --text-on-accent: #fafafa !important;
 }
 .theme-light.color-use-minimal {
-  --base-accent-h: 210;
+  --base-accent-h: var(--setting-color-active-custom-light-h, 210);
   --background-primary-hsl: var(--base-accent-h), 6%, 97%;
-  --background-primary-alt: hsl(var(--base-accent-h), 10%, 95.5%);
+  --background-primary-alt-hsl: var(--base-accent-h), 10%, 95.5%;
   --background-secondary-hsl: calc(var(--base-accent-h) - 18), 4%, 93%;
-  --theme-accent-active-s: 6%;
-  --theme-accent-active-l: 36%;
-  --theme-accent-inactive-s: 8%;
-  --theme-accent-inactive-l: 70%;
+  --frame-bg: hsl(
+    var(--base-accent-h),
+    calc(var(--theme-accent-active-s) * 0.2),
+    calc(85% + var(--theme-accent-active-l) * 0.1)
+  );
+  --theme-accent-active-s: var(--setting-color-active-custom-light-s, 6%);
+  --theme-accent-active-l: var(--setting-color-active-custom-light-l, 36%);
+  --theme-accent-inactive-s: var(--setting-color-inactive-custom-light-s, 8%);
+  --theme-accent-inactive-l: var(
+    --setting-color-inactive-custom-light-l,
+    70%
+  );
 }
 .theme-light.color-use-custom {
   --base-accent-h: var(--setting-accent-h-light, 35);
@@ -2087,7 +2205,7 @@ body {
     calc(8% + var(--theme-accent-active-l) * 0.1 * var(--color-opacity))
   );
   --background-primary-hsl: var(--base-accent-h), 5%, 11%;
-  --background-primary-alt: hsl(var(--base-accent-h), 10%, 13%);
+  --background-primary-alt-hsl: var(--base-accent-h), 10%, 13%;
   --background-secondary-hsl: calc(var(--base-accent-h) - 18), 6%, 12%;
   --background-modifier-hover: hsl(
     var(--base-accent-h),
@@ -2100,14 +2218,19 @@ body {
 }
 .theme-dark.color-use-minimal {
   --text-on-accent: #1e1e1f !important;
-  --base-accent-h: 210;
+  --base-accent-h: var(--setting-color-active-custom-dark-h, 210);
   --background-primary-hsl: var(--base-accent-h), 4%, 10%;
-  --background-primary-alt: hsl(var(--base-accent-h), 8%, 12%);
+  --background-primary-alt-hsl: var(--base-accent-h), 8%, 12%;
   --background-secondary-hsl: calc(var(--base-accent-h) - 18), 4%, 12%;
-  --theme-accent-active-s: 4%;
-  --theme-accent-active-l: 72%;
-  --theme-accent-inactive-s: 12%;
-  --theme-accent-inactive-l: 42%;
+  --frame-bg: hsl(
+    var(--base-accent-h),
+    calc(var(--theme-accent-active-s) * 0.1),
+    calc(8% + var(--theme-accent-active-l) * 0.1 * var(--color-opacity))
+  );
+  --theme-accent-active-s: var(--setting-color-active-custom-dark-s, 4%);
+  --theme-accent-active-l: var(--setting-color-active-custom-dark-l, 72%);
+  --theme-accent-inactive-s: var(--setting-color-inactive-custom-dark-s, 12%);
+  --theme-accent-inactive-l: var(--setting-color-inactive-custom-dark-l, 42%);
 }
 .theme-dark.color-use-custom {
   --base-accent-h: var(--setting-accent-h-dark, 207);
@@ -2333,7 +2456,12 @@ body:not(.search-internal-enable) .setting-item:is([data-id=search-internal-expa
 body:not(.outline-enable) .setting-item:is([data-id=setting-outline-width],
 [data-id=setting-outline-line-color],
 [data-id=setting-outline-dot-color]),
-body:not(.color-use-custom) .setting-item:is([data-id=title-light-mode], [data-id=title-dark-mode]),
+body.color-use-default .setting-item:is([data-id=title-light-mode], [data-id=title-dark-mode]),
+body.color-use-minimal .setting-item:is([data-id=setting-accent-h-light],
+[data-id=setting-accent-h-dark],
+[data-id=color-active-light],
+[data-id=color-active-dark]),
+body:not(.editor-custom-bottom-spacing) .setting-item[data-id=setting-editor-bottom-spacing],
 body:not(.list-enable) .setting-item:is([data-id*=setting-list-],
 [data-id=list-checkbox],
 [data-id=list-bullet-thread-style]),
@@ -2342,11 +2470,6 @@ body:not(.code-language) .setting-item[data-id=setting-code-language-color],
 body:not(.code-preview-bg) .setting-item[data-id=setting-code-bg-outer],
 body:not(.modal-header) .setting-item:is([data-id=modal-header-search],
 [data-id=setting-modal-header-title]),
-body:not(.color-use-custom) .setting-item[data-id^=accent-hue],
-body:not(.color-active-custom-light) .setting-item[data-id=setting-color-active-custom-light],
-body:not(.color-active-custom-light) .setting-item[data-id=setting-color-inactive-custom-light],
-body:not(.color-active-custom-dark) .setting-item[data-id=setting-color-active-custom-dark],
-body:not(.color-active-custom-dark) .setting-item[data-id=setting-color-inactive-custom-dark],
 body:not(.message-modify) .setting-item[data-id^=setting-message],
 body:not(.image-zoom) .setting-item[data-id^=image-zoom-out],
 body:not(.heading-level-enable) .setting-item[data-id^=heading-level-fix],
@@ -2363,7 +2486,8 @@ body:not(.heading-h5-full-line) .setting-item[data-id=heading-h5-full-line-direc
 body:not(.heading-h5-block) .setting-item[data-id=heading-h5-block-contrast],
 body:not(.heading-h6-full-line) .setting-item[data-id=heading-h6-full-line-direction],
 body:not(.heading-h6-block) .setting-item[data-id=heading-h6-block-contrast],
-body:not(.table-style-colorful) .setting-item:is([data-id=table-round], [data-id^=setting-table]),
+body:not(.table-style-colorful) .setting-item[data-id^=setting-table],
+body.table-style-minimal .setting-item[data-id=table-round],
 body:not(.hr-enable) .setting-item[data-id^=setting-hr-icon],
 body:not(.tag-outline) .setting-item:is([data-id=setting-tag-border],
 [data-id=setting-tag-color]) {
@@ -2405,7 +2529,12 @@ body:not(.search-internal-enable) .setting-item:is([data-id=search-internal-expa
 body:not(.outline-enable) .setting-item:is([data-id=setting-outline-width],
 [data-id=setting-outline-line-color],
 [data-id=setting-outline-dot-color]) + .style-settings-container,
-body:not(.color-use-custom) .setting-item:is([data-id=title-light-mode], [data-id=title-dark-mode]) + .style-settings-container,
+body.color-use-default .setting-item:is([data-id=title-light-mode], [data-id=title-dark-mode]) + .style-settings-container,
+body.color-use-minimal .setting-item:is([data-id=setting-accent-h-light],
+[data-id=setting-accent-h-dark],
+[data-id=color-active-light],
+[data-id=color-active-dark]) + .style-settings-container,
+body:not(.editor-custom-bottom-spacing) .setting-item[data-id=setting-editor-bottom-spacing] + .style-settings-container,
 body:not(.list-enable) .setting-item:is([data-id*=setting-list-],
 [data-id=list-checkbox],
 [data-id=list-bullet-thread-style]) + .style-settings-container,
@@ -2414,11 +2543,6 @@ body:not(.code-language) .setting-item[data-id=setting-code-language-color] + .s
 body:not(.code-preview-bg) .setting-item[data-id=setting-code-bg-outer] + .style-settings-container,
 body:not(.modal-header) .setting-item:is([data-id=modal-header-search],
 [data-id=setting-modal-header-title]) + .style-settings-container,
-body:not(.color-use-custom) .setting-item[data-id^=accent-hue] + .style-settings-container,
-body:not(.color-active-custom-light) .setting-item[data-id=setting-color-active-custom-light] + .style-settings-container,
-body:not(.color-active-custom-light) .setting-item[data-id=setting-color-inactive-custom-light] + .style-settings-container,
-body:not(.color-active-custom-dark) .setting-item[data-id=setting-color-active-custom-dark] + .style-settings-container,
-body:not(.color-active-custom-dark) .setting-item[data-id=setting-color-inactive-custom-dark] + .style-settings-container,
 body:not(.message-modify) .setting-item[data-id^=setting-message] + .style-settings-container,
 body:not(.image-zoom) .setting-item[data-id^=image-zoom-out] + .style-settings-container,
 body:not(.heading-level-enable) .setting-item[data-id^=heading-level-fix] + .style-settings-container,
@@ -2435,7 +2559,8 @@ body:not(.heading-h5-full-line) .setting-item[data-id=heading-h5-full-line-direc
 body:not(.heading-h5-block) .setting-item[data-id=heading-h5-block-contrast] + .style-settings-container,
 body:not(.heading-h6-full-line) .setting-item[data-id=heading-h6-full-line-direction] + .style-settings-container,
 body:not(.heading-h6-block) .setting-item[data-id=heading-h6-block-contrast] + .style-settings-container,
-body:not(.table-style-colorful) .setting-item:is([data-id=table-round], [data-id^=setting-table]) + .style-settings-container,
+body:not(.table-style-colorful) .setting-item[data-id^=setting-table] + .style-settings-container,
+body.table-style-minimal .setting-item[data-id=table-round] + .style-settings-container,
 body:not(.hr-enable) .setting-item[data-id^=setting-hr-icon] + .style-settings-container,
 body:not(.tag-outline) .setting-item:is([data-id=setting-tag-border],
 [data-id=setting-tag-color]) + .style-settings-container {
@@ -2516,6 +2641,23 @@ body:not(.is-mobile) .workspace-leaf-content[data-type=style-settings] .view-con
   align-items: center;
 }
 
+.style-settings-markdown {
+  --callout-padding: var(--size-4-3);
+  --callout-content-padding: var(--size-4-2) 0 0 0;
+}
+.style-settings-markdown code {
+  color: var(--inline-code);
+  background-color: var(--code-background);
+  border-radius: var(--code-radius);
+  font-size: var(--code-size);
+  padding: 0.15em 0.3em;
+  border: var(--code-border-width) solid var(--code-border-color);
+  -webkit-box-decoration-break: clone;
+}
+.style-settings-markdown :is(ol, ul) {
+  padding-inline-start: var(--size-4-8);
+}
+
 /* #endregion style settings */
 /* #region layout */
 body {
@@ -2531,16 +2673,16 @@ body.app-layout-card:not(.is-mobile) {
   --app-layout-spacing: var(--setting-app-layout-spacing, var(--size-2-3));
 }
 body.app-layout-card:not(.is-mobile).theme-light {
-  --background-primary-alt: hsl(var(--base-accent-h), 18%, 93.5%);
+  --background-primary-alt-hsl: var(--base-accent-h), 18%, 93.5%;
 }
 body.app-layout-card:not(.is-mobile).theme-light.color-use-minimal {
-  --background-primary-alt: hsl(var(--base-accent-h), 2%, 94%);
+  --background-primary-alt-hsl: var(--base-accent-h), 2%, 94%;
 }
 body.app-layout-card:not(.is-mobile).theme-dark {
-  --background-primary-alt: hsl(var(--base-accent-h), 8%, 13.5%);
+  --background-primary-alt-hsl: var(--base-accent-h), 8%, 13.5%;
 }
 body.app-layout-card:not(.is-mobile).theme-dark.color-use-minimal {
-  --background-primary-alt: hsl(var(--base-accent-h), 4%, 13%);
+  --background-primary-alt-hsl: var(--base-accent-h), 4%, 13%;
 }
 body.app-layout-card:not(.is-mobile):is(.app-layout-card-plain, .color-use-minimal) {
   background-color: var(--bg-surface);
@@ -2668,6 +2810,9 @@ body.app-layout-card:not(.is-mobile) .workspace-split.mod-root .workspace-leaf-c
 body.app-layout-card:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: hsla(var(--background-secondary-hsl), calc(var(--bg-opacity) / 4));
 }
+body.app-layout-card:not(.is-mobile).labeled-nav .mod-left-split .mod-top .workspace-tab-header-container .workspace-tab-header-container-inner {
+  padding-top: 0;
+}
 
 /* #endregion layout */
 /* #region animation */
@@ -2676,10 +2821,10 @@ body.app-layout-card:not(.is-mobile) .workspace-split.mod-left-split .workspace-
     opacity: 0;
   }
   20% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.95;
+    opacity: 0.9;
   }
   100% {
     opacity: 1;
@@ -2736,8 +2881,8 @@ body {
   margin-inline-end: var(--indent);
 }
 
-.markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content,
-.markdown-reading-view > div > .markdown-preview-sizer {
+.editor-custom-bottom-spacing :is(.markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content,
+.markdown-reading-view > div > .markdown-preview-sizer) {
   padding-bottom: var(--setting-editor-bottom-spacing, 40vh) !important;
 }
 
@@ -2753,7 +2898,7 @@ mjx-stretchy-h > mjx-ext > mjx-c::before {
 
 /* #endregion fix latex */
 /* #region monospace */
-body:is(:not(.css-settings-manager), .font-maple) {
+body:is(:not(.css-settings-manager), :not(.is-mobile).font-maple) {
   --font-monospace-theme: "maplemono";
 }
 
@@ -2943,14 +3088,9 @@ body {
 
 .markdown-source-view span.cm-highlight,
 .markdown-rendered mark {
-  border-radius: calc(var(--setting-text-highlight-radius, 4) * 1px);
+  border-radius: var(--setting-text-highlight-radius, 4);
   color: var(--setting-text-highlight-color);
   background: var(--text-highlight-bg);
-}
-
-body.text-highlight-margin :is(.markdown-source-view span.cm-highlight, .markdown-rendered mark) {
-  margin: 0 var(--size-2-1);
-  padding: var(--size-2-1) var(--size-4-1);
 }
 
 .markdown-source-view :is(:not(.cm-highlight) + .cm-formatting-highlight,
@@ -2986,28 +3126,32 @@ body :is(.cm-highlight.cm-em, mark > em) {
   color: var(--setting-text-highlight-color, var(--bold-color));
 }
 
+i,
 em,
 .cm-em {
   --blockquote-color: var(--italic-color);
-  text-decoration: var(--setting-text-italic-style, underline dotted);
+  text-decoration: var(--setting-text-italic-style, none);
   font-family: var(--setting-text-italic-font, inherit);
 }
 
+b,
 strong,
 .cm-strong {
   --blockquote-color: var(--bold-color);
-  text-decoration: var(--setting-text-bold-style, underline dotted);
+  text-decoration: var(--setting-text-bold-style, none);
   font-family: var(--setting-text-bold-font, inherit);
+  font-weight: var(--setting-text-bold-weight, 600);
 }
 
-:is(em, .cm-em, strong, .cm-strong, u) {
+.markdown-source-view *,
+.markdown-rendered * {
   text-underline-offset: var(--setting-underline-offset, var(--size-2-1));
 }
 
-a :is(em, strong) {
+a :is(em, i, strong, b) {
   text-decoration: none;
 }
-a :is(em, strong):hover {
+a :is(em, i, strong, b):hover {
   --bold-color: var(--text-on-accent);
   --italic-color: var(--text-on-accent);
 }
@@ -3081,7 +3225,7 @@ body {
 }
 
 .cm-hmd-codeblock.cm-formatting,
-.markdown-rendered :not(pre) code {
+.markdown-rendered code {
   color: var(--inline-code);
 }
 
@@ -3191,7 +3335,6 @@ pre {
 
 body .markdown-rendered pre {
   transition: border-color var(--animation);
-  overflow-x: hidden;
 }
 body .markdown-rendered pre:hover {
   border-color: var(--background-modifier-border-hover);
@@ -3209,7 +3352,7 @@ body .markdown-rendered pre .copy-code-button {
   padding-bottom: 0;
   display: block !important;
   opacity: 0;
-  transition: var(--animation);
+  transition: var(--animation-fast);
   transition-property: opacity, background-color;
   cursor: pointer;
 }
@@ -3220,7 +3363,13 @@ body .markdown-rendered pre .copy-code-button {
 .code-nowrap.scrollbar-gutter-overlay pre code {
   padding-bottom: var(--size-2-3);
 }
-.code-nowrap pre code {
+.code-nowrap .el-pre {
+  position: relative;
+}
+.code-nowrap .el-pre pre {
+  position: unset;
+}
+.code-nowrap .el-pre pre code {
   word-break: normal;
   word-wrap: break-word;
   white-space: pre;
@@ -3695,7 +3844,7 @@ body:is(:not(.css-settings-manager), .code-language) .markdown-rendered pre[clas
   color: var(--code-important);
 }
 .code-theme :is(.markdown-rendered, .markdown-source-view.mod-cm6) .token:is(.selector, .inserted, .char, .attr-value) {
-  color: var(--color-cyan);
+  color: var(--color-green);
 }
 .code-theme :is(.markdown-rendered, .markdown-source-view.mod-cm6) .token:is(.class-name, .maybe-class-name, .color) {
   color: var(--code-class);
@@ -3763,40 +3912,43 @@ body:is(:not(.css-settings-manager), .code-language) .markdown-rendered pre[clas
   --code-mac-style-header-color: #aaa;
 }
 
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview) {
-  border: none;
-  padding-top: calc(var(--code-size) * var(--line-height-normal) * 1.5);
-  padding-bottom: calc(var(--code-size) * var(--line-height-normal) * 0.5) !important;
+@media screen {
+  body.code-mac-style-header .markdown-rendered pre {
+    border: none;
+    padding-top: calc(var(--code-size) * var(--line-height-normal) * 1.5);
+    padding-bottom: calc(var(--code-size) * 0.5);
+  }
+  body.code-mac-style-header .markdown-rendered pre::after {
+    content: "";
+    width: 100%;
+    height: calc(var(--code-size) * var(--line-height-normal) * 1.2);
+    background-color: var(--code-mac-style-header-bg);
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-top-left-radius: var(--code-radius);
+    border-top-right-radius: var(--code-radius);
+  }
+  body.code-mac-style-header .markdown-rendered pre::before {
+    content: "";
+    width: calc(var(--code-size) - var(--size-2-1));
+    height: calc(var(--code-size) - var(--size-2-1));
+    position: absolute;
+    left: 0.6rem;
+    top: calc((var(--code-size) - var(--size-2-1)) * var(--line-height-normal) * 0.6 - var(--code-size) / 4);
+    border-radius: 50%;
+    z-index: 9;
+    background-color: rgba(255, 94, 92, var(--color-opacity));
+    box-shadow: calc(var(--size-4-5) * 0.9) 0 0 0 rgba(255, 187, 78, var(--color-opacity)), calc(var(--size-4-5) * 1.8) 0 0 0 rgba(81, 188, 0, var(--color-opacity));
+  }
+  body.code-mac-style-header .markdown-rendered pre .copy-code-button {
+    z-index: 10;
+    color: var(--code-mac-style-header-color);
+  }
+  body.code-mac-style-header .markdown-rendered pre .copy-code-button::before {
+    color: inherit !important;
+  }
 }
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview)::after {
-  content: "";
-  width: 100%;
-  height: calc(var(--code-size) * var(--line-height-normal) * 1.2);
-  background-color: var(--code-mac-style-header-bg);
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview)::before {
-  content: "";
-  width: calc(var(--code-size) - var(--size-2-1));
-  height: calc(var(--code-size) - var(--size-2-1));
-  position: absolute;
-  left: 0.6rem;
-  top: calc((var(--code-size) - var(--size-2-1)) * var(--line-height-normal) * 0.6 - var(--code-size) / 4);
-  border-radius: 50%;
-  z-index: 9;
-  background-color: rgba(255, 94, 92, var(--color-opacity));
-  box-shadow: calc(var(--size-4-5) * 0.9) 0 0 0 rgba(255, 187, 78, var(--color-opacity)), calc(var(--size-4-5) * 1.8) 0 0 0 rgba(81, 188, 0, var(--color-opacity));
-}
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview) .copy-code-button {
-  z-index: 10;
-  color: var(--code-mac-style-header-color);
-}
-.code-mac-style-header:not(:has(.print)) .markdown-rendered pre:not(.dataview) .copy-code-button::before {
-  color: inherit !important;
-}
-
 .code-line-number .cm-contentContainer {
   counter-reset: code-line;
 }
@@ -3847,22 +3999,24 @@ body {
   --embed-border-end: var(--embed-border-start);
   --embed-border-top: var(--embed-border-start);
   --embed-border-bottom: var(--embed-border-start);
+  --embed-radius: var(--radius-m);
+  --bases-embed-border-radius: var(--embed-radius);
 }
 body .markdown-source-view.mod-cm6 .cm-embed-block {
   margin-block: var(--size-4-1) !important;
-  border-radius: var(--radius-m) !important;
+  border-radius: var(--embed-radius) !important;
   transition: box-shadow var(--animation);
 }
 body .markdown-source-view.mod-cm6 .cm-embed-block .edit-block-button {
   border-radius: var(--radius-s) !important;
-  transition: var(--animation);
+  transition: var(--animation-fast);
   transition-property: background-color, opacity;
   height: fit-content;
 }
 body .internal-embed.is-loaded:not(.image-embed) {
   transition: var(--animation);
   transition-property: border-color, background-color;
-  border-radius: var(--radius-m);
+  border-radius: var(--embed-radius);
   margin-block: var(--size-4-1) !important;
 }
 body .internal-embed.is-loaded:not(.image-embed):hover {
@@ -3887,7 +4041,7 @@ body .cm-lang-query .internal-query-header {
 }
 body.embed-border-hidden {
   --embed-border-start: none;
-  --embed-background: var(--background-primary-alt);
+  --embed-background: hsl(var(--background-primary-alt-hsl), 0.4);
 }
 body.scrollbar-gutter-reserve.embed-title-right-top .internal-embed.is-loaded:not([alt="#"]) .markdown-embed-heading .markdown-preview-section > div:nth-child(2) {
   right: var(--size-4-3);
@@ -3923,7 +4077,6 @@ body.embed-title-right-top .internal-embed.is-loaded:not([alt="#"]) .markdown-em
   line-height: 28px;
   height: 28px;
   padding: 0 var(--size-4-2);
-  border-radius: var(--radius-m);
   transition: var(--animation);
   cursor: pointer;
 }
@@ -4047,7 +4200,6 @@ body:not(.link-hover-expand) :is(a.external-link,
   transition: background-color var(--animation);
   color: rgba(var(--link-external-color-rgb), var(--color-opacity));
   border-radius: var(--radius-s);
-  text-underline-offset: var(--size-2-1);
   text-decoration-color: var(--link-external-color-underline);
   -webkit-box-decoration-break: clone;
 }
@@ -4072,7 +4224,6 @@ body:not(.link-hover-expand) :is(a.internal-link:not(.is-unresolved),
   transition: background-color var(--animation);
   color: rgba(var(--link-color-rgb), var(--color-opacity));
   border-radius: var(--radius-s);
-  text-underline-offset: var(--size-2-1);
   text-decoration-color: var(--link-color-underline);
   -webkit-box-decoration-break: clone;
 }
@@ -4105,7 +4256,7 @@ body.link-hover-expand .cm-hmd-internal-link > .cm-underline {
 body.link-hover-expand :is(a.external-link:not(.is-unresolved),
 :is(.cm-link, .cm-url) > .cm-underline) {
   font-size: var(--link-text-size);
-  box-shadow: inset 0 -0.1em 0 var(--link-external-color-underline);
+  box-shadow: inset 0 calc(-1 * var(--size-2-1)) 0 var(--link-external-color-underline);
   text-decoration: none !important;
   transition: var(--animation);
   transition-property: box-shadow, color;
@@ -4114,7 +4265,7 @@ body.link-hover-expand :is(a.external-link:not(.is-unresolved),
 body.link-hover-expand :is(a.external-link:not(.is-unresolved),
 :is(.cm-link, .cm-url) > .cm-underline):hover, body.link-hover-expand :is(a.external-link:not(.is-unresolved),
 :is(.cm-link, .cm-url) > .cm-underline):focus {
-  box-shadow: inset 0 -1.3em 0 var(--link-external-color-underline);
+  box-shadow: inset 0 calc(-1 * var(--font-text-size) * var(--line-height-normal)) 0 var(--link-external-color-underline);
   --link-color: var(
     --setting-link-internal-color-hover,
     var(--text-on-accent)
@@ -4136,7 +4287,7 @@ body.link-hover-expand :is(a.external-link:not(.is-unresolved),
 body.link-hover-expand :is(a.internal-link:not(.is-unresolved),
 .cm-hmd-internal-link > .cm-underline) {
   font-size: var(--link-text-size);
-  box-shadow: inset 0 -0.1em 0 var(--link-color-underline);
+  box-shadow: inset 0 calc(-1 * var(--size-2-1)) 0 var(--link-color-underline);
   text-decoration: none !important;
   transition: var(--animation);
   transition-property: box-shadow, color;
@@ -4145,7 +4296,7 @@ body.link-hover-expand :is(a.internal-link:not(.is-unresolved),
 body.link-hover-expand :is(a.internal-link:not(.is-unresolved),
 .cm-hmd-internal-link > .cm-underline):hover, body.link-hover-expand :is(a.internal-link:not(.is-unresolved),
 .cm-hmd-internal-link > .cm-underline):focus {
-  box-shadow: inset 0 -1.3em 0 var(--link-color-underline);
+  box-shadow: inset 0 calc(-1 * var(--font-text-size) * var(--line-height-normal)) 0 var(--link-color-underline);
   --link-color: var(
     --setting-link-internal-color-hover,
     var(--text-on-accent)
@@ -4979,10 +5130,9 @@ body .markdown-rendered blockquote :is(p, h1, h2, h3, h4, h5, h6) {
 body .markdown-rendered blockquote::after {
   content: "";
   position: absolute;
-  left: calc(var(--blockquote-radius) * 4 / 5);
-  top: var(--blockquote-radius);
+  left: var(--size-4-2);
+  inset-block: var(--size-4-2);
   border-radius: var(--blockquote-radius);
-  height: calc(100% - var(--blockquote-radius) * 2);
   width: var(--blockquote-border-thickness);
   background-color: var(--accent-active-bg);
 }
@@ -5040,7 +5190,8 @@ body :is(.HyperMD-quote:last-child,
 }
 
 .quote-mark blockquote {
-  padding-left: calc(var(--indent-unit) * var(--indent-size));
+  padding-inline-start: calc(var(--indent-unit) * var(--indent-size));
+  padding-block: calc(var(--indent-unit) * var(--indent-size) / 4) !important;
 }
 .quote-mark blockquote::before {
   content: "“";
@@ -5049,7 +5200,10 @@ body :is(.HyperMD-quote:last-child,
   font-size: calc(var(--font-text-size) * 3);
   line-height: 0.9;
   color: var(--text-muted);
-  left: calc(0.4 * var(--indent-unit));
+  left: calc(var(--indent-unit) * 0.3);
+}
+.quote-mark blockquote::after {
+  content: none !important;
 }
 
 .quote-italic {
@@ -5124,41 +5278,43 @@ body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) tab
   border-collapse: initial;
   border-spacing: 0;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table :is(th, td):not(:first-child) {
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) :is(th, td):not(:first-child) {
   border-left: 0;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table tbody td {
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) tbody td {
   border-top: 0;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table thead tr {
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) thead tr {
   background-color: transparent;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table thead tr th {
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) thead tr th {
   background-color: var(--table-header-background) !important;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table :is(th:first-child:not(:has(:is(.table-col-drag-handle, .table-row-drag-handle):hover)),
-th:first-child .table-cell-wrapper) {
-  border-top-left-radius: var(--radius-m);
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) :is(th:first-child:not(:has(:is(.table-col-drag-handle, .table-row-drag-handle):hover)),
+th:first-child:not(:has(:is(.table-col-drag-handle, .table-row-drag-handle):hover)) .table-cell-wrapper) {
+  border-start-start-radius: var(--radius-m);
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table :is(th:last-child:not(:has(.table-col-drag-handle:hover)),
-th:last-child .table-cell-wrapper) {
-  border-top-right-radius: var(--radius-m);
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) :is(th:last-child:not(:has(.table-col-drag-handle:hover)),
+th:last-child:not(:has(.table-col-drag-handle:hover)) .table-cell-wrapper) {
+  border-start-end-radius: var(--radius-m);
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table tr:last-child :is(td:first-child:not(:has(.table-row-drag-handle:hover)),
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) tr:last-child :is(td:first-child:not(:has(.table-row-drag-handle:hover)),
 td:first-child .table-cell-wrapper) {
-  border-bottom-left-radius: var(--radius-m);
+  border-end-start-radius: var(--radius-m);
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) table tr:last-child :is(td:last-child, td:last-child .table-cell-wrapper) {
-  border-bottom-right-radius: var(--radius-m);
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) tr:last-child :is(td:last-child, td:last-child .table-cell-wrapper) {
+  border-end-end-radius: var(--radius-m);
 }
 body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) .table-wrapper:has(.table-row-btn:hover) tr:last-child td {
   border-radius: 0 !important;
 }
-body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) .table-wrapper:has(.table-col-btn:hover) :is(tr:last-child td:last-child, th:last-child) {
+body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) .table-wrapper:has(.table-col-btn:hover) :is(tr:last-child td:last-child,
+th:last-child,
+th:last-child .table-cell-wrapper) {
   border-radius: 0;
 }
 
-.table-cell-wrapper:is(:active, :focus, :focus-within) {
+.table-cell-wrapper[data-ignore-swipe] {
   background-color: hsl(var(--active-line));
 }
 
@@ -5187,7 +5343,7 @@ body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) .ta
 .table-col-btn,
 .table-row-drag-handle,
 .table-col-drag-handle) {
-  transition: opacity var(--animation);
+  transition: opacity var(--animation-fast);
 }
 .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn {
   border-end-start-radius: var(--radius-s);
@@ -5421,11 +5577,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   line-height: var(--line-height-normal);
 }
 
-:is(h1, .HyperMD-header-1) {
+:is(.HyperMD-header-1, .markdown-rendered h1) {
   --h-indicator-content: "H1";
 }
 
-.link-heading :is(h1, .HyperMD-header-1) {
+.link-heading :is(.HyperMD-header-1, .markdown-rendered h1) {
   --link-color: var(--h1-color);
   --link-color-underline: var(--h1-color);
   --link-external-color: var(--h1-color);
@@ -5433,11 +5589,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   --link-text-size: var(--h1-size);
 }
 
-:is(h2, .HyperMD-header-2) {
+:is(.HyperMD-header-2, .markdown-rendered h2) {
   --h-indicator-content: "H2";
 }
 
-.link-heading :is(h2, .HyperMD-header-2) {
+.link-heading :is(.HyperMD-header-2, .markdown-rendered h2) {
   --link-color: var(--h2-color);
   --link-color-underline: var(--h2-color);
   --link-external-color: var(--h2-color);
@@ -5445,11 +5601,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   --link-text-size: var(--h2-size);
 }
 
-:is(h3, .HyperMD-header-3) {
+:is(.HyperMD-header-3, .markdown-rendered h3) {
   --h-indicator-content: "H3";
 }
 
-.link-heading :is(h3, .HyperMD-header-3) {
+.link-heading :is(.HyperMD-header-3, .markdown-rendered h3) {
   --link-color: var(--h3-color);
   --link-color-underline: var(--h3-color);
   --link-external-color: var(--h3-color);
@@ -5457,11 +5613,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   --link-text-size: var(--h3-size);
 }
 
-:is(h4, .HyperMD-header-4) {
+:is(.HyperMD-header-4, .markdown-rendered h4) {
   --h-indicator-content: "H4";
 }
 
-.link-heading :is(h4, .HyperMD-header-4) {
+.link-heading :is(.HyperMD-header-4, .markdown-rendered h4) {
   --link-color: var(--h4-color);
   --link-color-underline: var(--h4-color);
   --link-external-color: var(--h4-color);
@@ -5469,11 +5625,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   --link-text-size: var(--h4-size);
 }
 
-:is(h5, .HyperMD-header-5) {
+:is(.HyperMD-header-5, .markdown-rendered h5) {
   --h-indicator-content: "H5";
 }
 
-.link-heading :is(h5, .HyperMD-header-5) {
+.link-heading :is(.HyperMD-header-5, .markdown-rendered h5) {
   --link-color: var(--h5-color);
   --link-color-underline: var(--h5-color);
   --link-external-color: var(--h5-color);
@@ -5481,11 +5637,11 @@ body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
   --link-text-size: var(--h5-size);
 }
 
-:is(h6, .HyperMD-header-6) {
+:is(.HyperMD-header-6, .markdown-rendered h6) {
   --h-indicator-content: "H6";
 }
 
-.link-heading :is(h6, .HyperMD-header-6) {
+.link-heading :is(.HyperMD-header-6, .markdown-rendered h6) {
   --link-color: var(--h6-color);
   --link-color-underline: var(--h6-color);
   --link-external-color: var(--h6-color);
@@ -5566,40 +5722,40 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   color: var(--h6-color) !important;
 }
 
-.heading-h1-underline .app-container :is(.HyperMD-header-1 .cm-header:not(.cm-formatting), h1) {
+.heading-h1-underline :is(.HyperMD-header-1 .cm-header:not(.cm-formatting),
+.markdown-rendered h1) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h2-underline .app-container :is(.HyperMD-header-2 .cm-header:not(.cm-formatting), h2) {
+.heading-h2-underline :is(.HyperMD-header-2 .cm-header:not(.cm-formatting),
+.markdown-rendered h2) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h3-underline .app-container :is(.HyperMD-header-3 .cm-header:not(.cm-formatting), h3) {
+.heading-h3-underline :is(.HyperMD-header-3 .cm-header:not(.cm-formatting),
+.markdown-rendered h3) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h4-underline .app-container :is(.HyperMD-header-4 .cm-header:not(.cm-formatting), h4) {
+.heading-h4-underline :is(.HyperMD-header-4 .cm-header:not(.cm-formatting),
+.markdown-rendered h4) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h5-underline .app-container :is(.HyperMD-header-5 .cm-header:not(.cm-formatting), h5) {
+.heading-h5-underline :is(.HyperMD-header-5 .cm-header:not(.cm-formatting),
+.markdown-rendered h5) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h6-underline .app-container :is(.HyperMD-header-6 .cm-header:not(.cm-formatting), h6) {
+.heading-h6-underline :is(.HyperMD-header-6 .cm-header:not(.cm-formatting),
+.markdown-rendered h6) {
   text-decoration: underline var(--size-2-1);
-  text-underline-offset: var(--size-4-2);
 }
 
-.heading-h1-full-line .app-container :is(.HyperMD-header-1, h1) {
+.heading-h1-full-line :is(.HyperMD-header-1, .markdown-rendered h1) {
   position: relative;
 }
-.heading-h1-full-line .app-container :is(.HyperMD-header-1, h1)::after {
+.heading-h1-full-line :is(.HyperMD-header-1, .markdown-rendered h1)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5608,14 +5764,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h1-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h1-full-line .app-container.heading-h1-full-line-left {
+.heading-h1-full-line.heading-h1-full-line-left {
   --heading-h1-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h1-full-line .app-container.heading-h1-full-line-right {
+.heading-h1-full-line.heading-h1-full-line-right {
   --heading-h1-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5623,10 +5779,10 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   );
 }
 
-.heading-h2-full-line .app-container :is(.HyperMD-header-2, h2) {
+.heading-h2-full-line :is(.HyperMD-header-2, .markdown-rendered h2) {
   position: relative;
 }
-.heading-h2-full-line .app-container :is(.HyperMD-header-2, h2)::after {
+.heading-h2-full-line :is(.HyperMD-header-2, .markdown-rendered h2)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5635,14 +5791,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h2-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h2-full-line .app-container.heading-h2-full-line-left {
+.heading-h2-full-line.heading-h2-full-line-left {
   --heading-h2-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h2-full-line .app-container.heading-h2-full-line-right {
+.heading-h2-full-line.heading-h2-full-line-right {
   --heading-h2-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5650,10 +5806,10 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   );
 }
 
-.heading-h3-full-line .app-container :is(.HyperMD-header-3, h3) {
+.heading-h3-full-line :is(.HyperMD-header-3, .markdown-rendered h3) {
   position: relative;
 }
-.heading-h3-full-line .app-container :is(.HyperMD-header-3, h3)::after {
+.heading-h3-full-line :is(.HyperMD-header-3, .markdown-rendered h3)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5662,14 +5818,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h3-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h3-full-line .app-container.heading-h3-full-line-left {
+.heading-h3-full-line.heading-h3-full-line-left {
   --heading-h3-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h3-full-line .app-container.heading-h3-full-line-right {
+.heading-h3-full-line.heading-h3-full-line-right {
   --heading-h3-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5677,10 +5833,10 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   );
 }
 
-.heading-h4-full-line .app-container :is(.HyperMD-header-4, h4) {
+.heading-h4-full-line :is(.HyperMD-header-4, .markdown-rendered h4) {
   position: relative;
 }
-.heading-h4-full-line .app-container :is(.HyperMD-header-4, h4)::after {
+.heading-h4-full-line :is(.HyperMD-header-4, .markdown-rendered h4)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5689,14 +5845,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h4-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h4-full-line .app-container.heading-h4-full-line-left {
+.heading-h4-full-line.heading-h4-full-line-left {
   --heading-h4-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h4-full-line .app-container.heading-h4-full-line-right {
+.heading-h4-full-line.heading-h4-full-line-right {
   --heading-h4-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5704,10 +5860,10 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   );
 }
 
-.heading-h5-full-line .app-container :is(.HyperMD-header-5, h5) {
+.heading-h5-full-line :is(.HyperMD-header-5, .markdown-rendered h5) {
   position: relative;
 }
-.heading-h5-full-line .app-container :is(.HyperMD-header-5, h5)::after {
+.heading-h5-full-line :is(.HyperMD-header-5, .markdown-rendered h5)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5716,14 +5872,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h5-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h5-full-line .app-container.heading-h5-full-line-left {
+.heading-h5-full-line.heading-h5-full-line-left {
   --heading-h5-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h5-full-line .app-container.heading-h5-full-line-right {
+.heading-h5-full-line.heading-h5-full-line-right {
   --heading-h5-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5731,10 +5887,10 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   );
 }
 
-.heading-h6-full-line .app-container :is(.HyperMD-header-6, h6) {
+.heading-h6-full-line :is(.HyperMD-header-6, .markdown-rendered h6) {
   position: relative;
 }
-.heading-h6-full-line .app-container :is(.HyperMD-header-6, h6)::after {
+.heading-h6-full-line :is(.HyperMD-header-6, .markdown-rendered h6)::after {
   content: "";
   position: absolute;
   bottom: var(--size-2-1);
@@ -5743,14 +5899,14 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
   background: var(--heading-h6-full-line-bg, currentColor);
   border-radius: var(--size-2-1);
 }
-.heading-h6-full-line .app-container.heading-h6-full-line-left {
+.heading-h6-full-line.heading-h6-full-line-left {
   --heading-h6-full-line-bg: linear-gradient(
     to right,
     currentColor 10%,
     transparent 90%
   );
 }
-.heading-h6-full-line .app-container.heading-h6-full-line-right {
+.heading-h6-full-line.heading-h6-full-line-right {
   --heading-h6-full-line-bg: linear-gradient(
     to left,
     currentColor 10%,
@@ -5775,29 +5931,29 @@ body.line-active-left .cm-active.HyperMD-header-6::before {
 .heading-h1-block.heading-h1-block-contrast {
   --h1-color-bg: rgba(var(--h1-color-rgb));
 }
-.heading-h1-block.heading-h1-block-contrast .app-container :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header),
-h1) {
+.heading-h1-block.heading-h1-block-contrast :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h1) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h1-block .app-container :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header), h1) {
+.heading-h1-block :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h1) {
   background-color: var(--h1-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h1-block .app-container :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header), h1)::selection {
+.heading-h1-block :is(.HyperMD-header-1 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h1)::selection {
   color: var(--h1-color);
   background-color: var(--background-secondary);
 }
-.heading-h1-block .app-container h1 {
+.heading-h1-block .markdown-rendered h1 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h1-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h1-size));
 }
-.heading-h1-block:not(.heading-indicator-disable) h1::before {
+.heading-h1-block:not(.heading-indicator-disable) .markdown-rendered h1::before {
   top: -0.3rem;
   line-height: var(--h1-line-height);
 }
@@ -5819,29 +5975,29 @@ h1) {
 .heading-h2-block.heading-h2-block-contrast {
   --h2-color-bg: rgba(var(--h2-color-rgb));
 }
-.heading-h2-block.heading-h2-block-contrast .app-container :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header),
-h2) {
+.heading-h2-block.heading-h2-block-contrast :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h2) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h2-block .app-container :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header), h2) {
+.heading-h2-block :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h2) {
   background-color: var(--h2-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h2-block .app-container :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header), h2)::selection {
+.heading-h2-block :is(.HyperMD-header-2 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h2)::selection {
   color: var(--h2-color);
   background-color: var(--background-secondary);
 }
-.heading-h2-block .app-container h2 {
+.heading-h2-block .markdown-rendered h2 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h2-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h2-size));
 }
-.heading-h2-block:not(.heading-indicator-disable) h2::before {
+.heading-h2-block:not(.heading-indicator-disable) .markdown-rendered h2::before {
   top: -0.3rem;
   line-height: var(--h2-line-height);
 }
@@ -5863,29 +6019,29 @@ h2) {
 .heading-h3-block.heading-h3-block-contrast {
   --h3-color-bg: rgba(var(--h3-color-rgb));
 }
-.heading-h3-block.heading-h3-block-contrast .app-container :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header),
-h3) {
+.heading-h3-block.heading-h3-block-contrast :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h3) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h3-block .app-container :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header), h3) {
+.heading-h3-block :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h3) {
   background-color: var(--h3-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h3-block .app-container :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header), h3)::selection {
+.heading-h3-block :is(.HyperMD-header-3 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h3)::selection {
   color: var(--h3-color);
   background-color: var(--background-secondary);
 }
-.heading-h3-block .app-container h3 {
+.heading-h3-block .markdown-rendered h3 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h3-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h3-size));
 }
-.heading-h3-block:not(.heading-indicator-disable) h3::before {
+.heading-h3-block:not(.heading-indicator-disable) .markdown-rendered h3::before {
   top: -0.3rem;
   line-height: var(--h3-line-height);
 }
@@ -5907,29 +6063,29 @@ h3) {
 .heading-h4-block.heading-h4-block-contrast {
   --h4-color-bg: rgba(var(--h4-color-rgb));
 }
-.heading-h4-block.heading-h4-block-contrast .app-container :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header),
-h4) {
+.heading-h4-block.heading-h4-block-contrast :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h4) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h4-block .app-container :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header), h4) {
+.heading-h4-block :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h4) {
   background-color: var(--h4-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h4-block .app-container :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header), h4)::selection {
+.heading-h4-block :is(.HyperMD-header-4 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h4)::selection {
   color: var(--h4-color);
   background-color: var(--background-secondary);
 }
-.heading-h4-block .app-container h4 {
+.heading-h4-block .markdown-rendered h4 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h4-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h4-size));
 }
-.heading-h4-block:not(.heading-indicator-disable) h4::before {
+.heading-h4-block:not(.heading-indicator-disable) .markdown-rendered h4::before {
   top: -0.3rem;
   line-height: var(--h4-line-height);
 }
@@ -5951,29 +6107,29 @@ h4) {
 .heading-h5-block.heading-h5-block-contrast {
   --h5-color-bg: rgba(var(--h5-color-rgb));
 }
-.heading-h5-block.heading-h5-block-contrast .app-container :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header),
-h5) {
+.heading-h5-block.heading-h5-block-contrast :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h5) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h5-block .app-container :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header), h5) {
+.heading-h5-block :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h5) {
   background-color: var(--h5-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h5-block .app-container :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header), h5)::selection {
+.heading-h5-block :is(.HyperMD-header-5 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h5)::selection {
   color: var(--h5-color);
   background-color: var(--background-secondary);
 }
-.heading-h5-block .app-container h5 {
+.heading-h5-block .markdown-rendered h5 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h5-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h5-size));
 }
-.heading-h5-block:not(.heading-indicator-disable) h5::before {
+.heading-h5-block:not(.heading-indicator-disable) .markdown-rendered h5::before {
   top: -0.3rem;
   line-height: var(--h5-line-height);
 }
@@ -5995,29 +6151,29 @@ h5) {
 .heading-h6-block.heading-h6-block-contrast {
   --h6-color-bg: rgba(var(--h6-color-rgb));
 }
-.heading-h6-block.heading-h6-block-contrast .app-container :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header),
-h6) {
+.heading-h6-block.heading-h6-block-contrast :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h6) {
   color: var(--text-on-accent);
   caret-color: currentColor;
 }
-.heading-h6-block .app-container :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header), h6) {
+.heading-h6-block :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h6) {
   background-color: var(--h6-color-bg);
   padding: var(--size-4-1) 0.6rem;
   border-radius: var(--size-2-3);
   -webkit-box-decoration-break: clone;
 }
-.heading-h6-block .app-container :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header), h6)::selection {
+.heading-h6-block :is(.HyperMD-header-6 .cm-header:not(.cm-formatting-header),
+.markdown-rendered h6)::selection {
   color: var(--h6-color);
   background-color: var(--background-secondary);
 }
-.heading-h6-block .app-container h6 {
+.heading-h6-block .markdown-rendered h6 {
   width: fit-content;
   line-height: 1.2;
-  --heading-spacing: calc(
-    var(--h2-line-height) - 1.2 * var(--h6-size)
-  );
+  --heading-spacing: calc(var(--h2-line-height) - 1.2 * var(--h6-size));
 }
-.heading-h6-block:not(.heading-indicator-disable) h6::before {
+.heading-h6-block:not(.heading-indicator-disable) .markdown-rendered h6::before {
   top: -0.3rem;
   line-height: var(--h6-line-height);
 }
@@ -6033,8 +6189,11 @@ body.theme-dark.image-dark-hover img:hover {
 }
 
 img {
-  border-radius: var(--radius-m);
   cursor: pointer;
+}
+
+:is(div, span) > img {
+  border-radius: var(--radius-m);
 }
 
 /* hint text, reference from https://github.com/chrisgrieser/shimmering-focus */
@@ -6229,6 +6388,8 @@ body.canvas-center .canvas-node-content.markdown-embed > .markdown-embed-content
   --metadata-property-background-hover: var(--background-primary-alt);
   --metadata-label-background-active: var(--background-primary);
   --metadata-input-background-active: var(--background-primary);
+  --pill-radius: var(--size-4-1);
+  --pill-focus-width: calc(100% + var(--size-4-2));
 }
 .prop-outline .metadata-container {
   transform: none;
@@ -6308,10 +6469,6 @@ body.canvas-center .canvas-node-content.markdown-embed > .markdown-embed-content
 }
 .metadata-container :is([data-property-key=published], [data-property-key*=date]) .lucide-text path {
   display: none;
-}
-
-.metadata-properties-heading .collapse-indicator {
-  left: calc(var(--size-4-8) * -1);
 }
 
 .metadata-property-icon,
@@ -6636,7 +6793,7 @@ body #calendar-container .day {
 
 /* #endregion recent-files */
 /* #region shiki */
-.code-mac-style-header .cm-preview-code-block[class*=cm-lang]:not(.cm-lang-query) .edit-block-button {
+.code-mac-style-header .cm-preview-code-block[class*=cm-lang]:not(.cm-lang-query):not(.cm-lang-base) .edit-block-button {
   color: #ddd;
 }
 
@@ -6656,6 +6813,21 @@ body:not(.is-mobile).modal-header.modal-header-search .settings-search-container
 }
 
 /* #endregion settings-search */
+/* #region quiet-outline */
+.quiet-outline .n-tree.n-tree--block-line .n-tree-node:not(.n-tree-node--disabled) {
+  border-radius: var(--radius-s);
+}
+.quiet-outline .n-tree.n-tree--block-line .n-tree-node:not(.n-tree-node--disabled):hover {
+  background-color: var(--nav-item-background-hover);
+}
+.quiet-outline .n-tree.n-tree--block-line .n-tree-node.located p {
+  color: var(--accent-active);
+}
+.quiet-outline .n-input {
+  --input-border-width-focus: 0;
+}
+
+/* #endregion quiet-outline */
 /* #endregion [plugins] */
 /* #region [workspace] */
 /* #region document-search */
@@ -6670,29 +6842,30 @@ body:not(.is-mobile).modal-header.modal-header-search .settings-search-container
   padding-inline-start: var(--size-4-2);
 }
 
+.mod-active .document-search-container {
+  background-color: transparent;
+}
+
 body.search-internal-enable .document-search-container {
-  background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary);
   position: absolute;
   top: var(--size-4-10);
   right: var(--size-4-4);
   border-radius: var(--radius-m);
   height: fit-content;
-  border: 1px solid var(--color-base-25) !important;
+  border: 1px solid var(--background-modifier-border);
   box-shadow: var(--shadow-s);
-  padding: var(--size-4-2);
+  padding: var(--size-4-2) 0;
   margin: 0;
 }
 body.search-internal-enable .document-search-container :is(.document-replace, .document-search) {
   gap: var(--size-4-1);
 }
-body.search-internal-enable .document-search-container .search-input-container input {
-  padding-inline: var(--size-4-8) var(--size-4-1);
-}
 body.search-internal-enable .document-search-container .search-input-container input:hover + .document-search-count {
   opacity: 0;
   pointer-events: none;
   cursor: none;
-  transition: opacity var(--animation);
+  transition: opacity var(--animation-fast);
 }
 body.search-internal-enable .document-search-container .search-input-container .document-search-count {
   letter-spacing: -0.5px;
@@ -6703,7 +6876,7 @@ body.search-internal-enable .document-search-container .search-input-container .
   right: var(--size-4-1);
   border-radius: var(--radius-s);
   opacity: 1;
-  transition: var(--animation);
+  transition: var(--animation-fast);
   transition-delay: 0.5s;
 }
 body.search-internal-enable .document-search-container .document-search-buttons .document-search-button {
@@ -6751,37 +6924,35 @@ body:not(.is-phone) :is(.horizontal-tab-nav-item, .vertical-tab-nav-item).is-act
 }
 
 .clickable-icon {
-  transition: var(--animation);
+  transition: var(--animation-fast);
   transition-property: opacity, background-color;
 }
 
-button.mod-cta {
+body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-cta {
   transition: box-shadow var(--animation);
   background: linear-gradient(to bottom, transparent -240%, var(--color-accent) 100%);
 }
-button.mod-cta:hover {
+body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-cta:hover {
   background: linear-gradient(to bottom, transparent -240%, var(--color-accent-1) 100%);
 }
-
-button.mod-warning {
+body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-warning {
   transition: box-shadow var(--animation);
   background: linear-gradient(to bottom, transparent -240%, var(--background-modifier-error) 100%);
 }
-button.mod-warning:hover {
+body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-warning:hover {
   background: linear-gradient(to bottom, transparent -240%, var(--background-modifier-error-hover) 100%);
 }
+body:is(:not(.css-settings-manager), .modal-control-gradient) .checkbox-container.is-enabled {
+  background: linear-gradient(to bottom, transparent -200%, var(--accent-active) 100%);
+}
 
-body:not(.is-phone).modal-header .modal-close-button {
-  transition: background-color var(--animation);
-  z-index: calc(var(--layer-modal) + 1);
-  top: var(--size-4-3);
+.search-input-container input {
+  padding-inline: var(--size-4-8) var(--size-4-1);
 }
 
 .checkbox-container {
   background-color: var(--color-base-25);
-}
-.checkbox-container.is-enabled {
-  background: linear-gradient(to bottom, transparent -200%, var(--accent-active) 100%);
+  --interactive-accent: var(--accent-active);
 }
 .theme-light .checkbox-container {
   --toggle-thumb-color: #fafafa;
@@ -6819,10 +6990,14 @@ body:not(.is-mobile).modal-slider input[type=range]::-webkit-slider-thumb:is(:ho
   --slider-thumb-ring-factor: 5.2;
 }
 body:not(.is-mobile):is(.modal-toggle-floating, .modal-toggle-thin) .checkbox-container {
+  --toggle-target-width: var(--toggle-width);
   --toggle-radius: var(--radius-m);
   height: var(--size-4-4);
   transition: var(--animation);
   border: var(--toggle-border-width) solid var(--text-faint);
+}
+body:not(.is-mobile):is(.modal-toggle-floating, .modal-toggle-thin) .checkbox-container.mod-small {
+  --toggle-target-width: var(--toggle-s-width);
 }
 body:not(.is-mobile):is(.modal-toggle-floating, .modal-toggle-thin) .checkbox-container:focus-within {
   outline: none;
@@ -6833,10 +7008,10 @@ body:not(.is-mobile):is(.modal-toggle-floating, .modal-toggle-thin) .checkbox-co
 }
 body:not(.is-mobile).modal-toggle-floating .checkbox-container::after {
   left: 0;
-  height: calc(var(--toggle-width) / 3);
-  width: calc(var(--toggle-width) / 3);
+  height: calc(var(--toggle-target-width) / 3);
+  width: calc(var(--toggle-target-width) / 3);
   bottom: 30%;
-  border-radius: calc(var(--toggle-width) / 2);
+  border-radius: calc(var(--toggle-target-width) / 2);
   border: var(--toggle-border-width) solid var(--text-faint);
   margin: 0;
   transition: var(--animation);
@@ -6851,20 +7026,20 @@ body:not(.is-mobile).modal-toggle-floating .checkbox-container.is-enabled {
 body:not(.is-mobile).modal-toggle-floating .checkbox-container.is-enabled::after {
   border-color: var(--accent-active);
   transform: none;
-  left: calc(100% - var(--toggle-width) / 3 - 3 * var(--toggle-border-width));
+  left: calc(100% - var(--toggle-target-width) / 3 - 3 * var(--toggle-border-width));
 }
 body:not(.is-mobile).modal-toggle-thin .checkbox-container::after {
   left: var(--toggle-border-width);
-  height: var(--size-4-3);
+  height: calc(var(--toggle-target-width) / 4 + var(--toggle-border-width));
   bottom: 50%;
-  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  border-radius: calc(var(--toggle-target-width) / 8 + var(--toggle-border-width)) calc(var(--toggle-target-width) / 8 + var(--toggle-border-width)) 0 0;
   border: var(--toggle-border-width) solid var(--text-faint);
-  width: 20%;
+  width: calc(var(--toggle-target-width) / 8 + var(--toggle-border-width));
   margin: 0;
   transition: var(--animation);
 }
 :is(body:not(.is-mobile).modal-toggle-thin .checkbox-container:hover, body:not(.is-mobile).modal-toggle-thin .checkbox-container:focus-within)::after {
-  height: var(--size-4-2);
+  height: calc(var(--toggle-target-width) / 6 + var(--toggle-border-width));
 }
 body:not(.is-mobile).modal-toggle-thin .checkbox-container:active::after {
   width: calc(100% - var(--toggle-border-width) * 6);
@@ -6885,60 +7060,62 @@ body:not(.is-mobile).modal-toggle-thin .checkbox-container.is-enabled:active::af
   left: calc(2 * var(--toggle-border-width));
 }
 
-body {
-  --logo-color-default: var(--text-accent);
+body.modal-header:not(.is-mobile) .modal-close-button {
+  transition: background-color var(--animation);
+  z-index: calc(var(--layer-modal) + 1);
+  top: var(--size-4-3);
+  inset-inline-end: var(--size-4-3);
 }
-
-.modal-header:not(.is-mobile) .modal-container {
+body.modal-header:not(.is-mobile) .modal-container {
   --modal-header-height: var(--size-4-12);
   --top-search-right: var(--size-4-12);
 }
-.modal-header:not(.is-mobile) .modal-container .mod-settings {
+body.modal-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
-.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.0.0-beta.48");
+body.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
+  content: var(--setting-modal-header-title, "Maple 1.1.2");
   position: absolute;
   left: 50%;
   top: var(--size-4-6);
   transform: translate(-50%, -50%);
   font-size: calc(1.4 * var(--size-4-4));
   font-weight: 550;
-  color: var(--setting-color-logo, var(--logo-color-default));
+  color: var(--setting-color-logo, var(--text-accent));
 }
 @container (max-width:750px) {
-  .modal-header:not(.is-mobile) .modal-container .mod-settings::before {
+  body.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
     opacity: 0;
   }
 }
-.modal-header:not(.is-mobile) .mod-settings .modal-content {
+body.modal-header:not(.is-mobile) .mod-settings .modal-content {
   background-color: var(--titlebar-background);
 }
-.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-header {
+body.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-header {
   background-color: hsl(var(--background-secondary-hsl));
   border-top: 1px solid var(--divider-color);
   margin-top: var(--modal-header-height);
   padding-top: 0;
 }
-.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container {
+body.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container {
   padding-top: var(--modal-header-height);
   position: relative;
 }
-.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container .vertical-tab-content {
+body.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container .vertical-tab-content {
   position: unset !important;
   background-color: var(--background-primary);
   border-top: 1px solid var(--divider-color);
   padding-top: var(--size-4-6);
   padding-right: var(--size-4-8);
 }
-.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container .vertical-tab-content h2 {
+body.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container .vertical-tab-content h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
 }
-.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .plugin-list-plugins .setting-item-heading {
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .plugin-list-plugins .setting-item-heading {
   margin: 0;
 }
-.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
 [class="search-input-container mod-hotkey"])) {
   position: absolute;
   padding: 0;
@@ -6946,14 +7123,14 @@ body {
   right: var(--top-search-right);
   border: none;
 }
-.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
 [class="search-input-container mod-hotkey"])) .setting-item-info {
   visibility: hidden;
 }
-.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-filter-container {
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-filter-container {
   margin-bottom: var(--size-4-1);
 }
-.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-filter-container .hotkey-filter {
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-filter-container .hotkey-filter {
   margin-bottom: var(--size-4-3);
 }
 
@@ -7032,7 +7209,7 @@ body:not(.is-phone) .modal-container .community-modal-controls .search-input-con
   right: calc(var(--size-4-6) + var(--size-2-1));
 }
 body:not(.is-phone) .modal-container .community-modal-controls .search-input-container input {
-  padding-inline-end: var(--size-4-12);
+  padding-inline-end: var(--size-4-8);
   transition: var(--animation);
   transition-property: border-color, background-color, box-shadow;
 }
@@ -7083,8 +7260,8 @@ body:not(.is-phone) .modal-bg {
   background-color: hsla(var(--background-secondary-hsl), 0.6) !important;
 }
 body:not(.is-phone).enable-blur :is(.menu, .suggestion-container, .graph-control-section) {
-  background-color: hsla(var(--background-secondary-hsl), 0.5) !important;
-  backdrop-filter: blur(24px);
+  background-color: hsla(var(--background-secondary-hsl), 0.7) !important;
+  backdrop-filter: blur(20px);
   will-change: backdrop-filter;
 }
 body:not(.is-phone).enable-blur .modal-bg {
@@ -7166,18 +7343,19 @@ body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(.ver
 body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .workspace-leaf-content .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .markdown-source-view .cm-scroller, .markdown-preview-view, .pdf-thumbnail-view, .pdf-viewer-container, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, .markdown-embed-content .markdown-rendered, pre code):hover {
   --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
 }
-body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable textarea {
+body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre) {
   color: transparent;
-  transition: color var(--animation);
+  transition: var(--animation);
+  transition-property: color, border-color;
   -webkit-text-fill-color: var(--text-normal);
 }
-body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable textarea:hover {
+body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre):hover {
   color: hsla(var(--color-accent-hsl), 24%);
 }
-body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable textarea * {
+body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre) * {
   -webkit-text-fill-color: initial;
 }
-body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable textarea::-webkit-scrollbar-thumb {
+body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre)::-webkit-scrollbar-thumb {
   box-shadow: 0 0 0 10px inset;
   border-width: 3.2px;
   background-clip: content-box;
@@ -7300,7 +7478,7 @@ body.tab-title-bar-text-hidden .workspace-leaf-content .view-header-title-contai
 }
 
 /* tab switch animation, reference from https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow */
-body.tab-slide-up:not(.is-mobile) .workspace-split:not(.is-sidedock-collapsed) .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not([data-type=undefined]):not([data-type=empty]) :is(.view-content, .nav-files-container) {
+body.tab-slide-up:not(.is-mobile) .workspace-split:not(.is-sidedock-collapsed) .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not([data-type=undefined]):not([data-type=empty]) :is(.view-content, .nav-files-container, .tag-container) {
   animation: op var(--animation-slow), slide-up var(--animation-slow);
 }
 
@@ -7352,8 +7530,6 @@ body .workspace-tab-header-new-tab {
 }
 
 /* #endregion titlebar */
-/* #region print */
-/* #endregion print */
 /* #region statusbar */
 body {
   --status-bar-background: var(--background-secondary);
@@ -7420,6 +7596,9 @@ body.message-modify :is(.tooltip, .notice) {
 body.message-modify .notice-cta {
   color: var(--text-on-accent);
   text-decoration: underline;
+}
+body.message-modify .notice.is-loading::before {
+  background-color: var(--accent-inactive);
 }
 
 /* #endregion message */
@@ -7556,17 +7735,12 @@ body.message-modify .notice-cta {
 
 /* #endregion labeled-navigator */
 /* #region [[panel]] */
-/* #region panel-base*/
-.nav-buttons-container {
-  justify-content: flex-start;
-  padding-left: var(--size-4-1);
+/* #region base*/
+.query-toolbar-item .text-icon-button {
+  transition: background-color var(--animation-fast);
 }
 
-body {
-  --nav-item-children-padding-left: var(--size-4-2);
-}
-
-/* #endregion panel-base */
+/* #endregion base */
 /* #region tag */
 .workspace-leaf-content[data-type=tag] .tree-item-self::before {
   line-height: var(--line-height-tight);
@@ -7739,6 +7913,15 @@ body.outline-enable .workspace-leaf-content[data-type=outline] :is(.tree-item-ch
 
 /* #endregion outline */
 /* #region file-explorer */
+.nav-buttons-container {
+  justify-content: flex-start;
+  padding-left: var(--size-4-1);
+}
+
+body {
+  --nav-item-children-padding-left: var(--size-4-2);
+}
+
 svg.lucide-layout-dashboard rect {
   rx: 2;
 }
@@ -7764,7 +7947,7 @@ body {
   color: var(--text-normal);
 }
 :is(.nav-file-title, .nav-folder-title).is-being-renamed {
-  background-color: var(--nav-item-background-selected);
+  background-color: var(--nav-item-background-selected) !important;
   --nav-item-color-active: var(--text-normal) !important;
 }
 
@@ -7832,6 +8015,9 @@ body:is(:not(.css-settings-manager), .explorer-icon) .nav-folder-title {
 body:is(:not(.css-settings-manager), .explorer-icon) .nav-folder-title-content {
   padding-left: var(--size-4-1);
 }
+body:is(:not(.css-settings-manager), .explorer-icon) .nav-folder .nav-folder-children {
+  transition: border-color var(--animation-fast);
+}
 body:is(:not(.css-settings-manager), .explorer-icon) .nav-folder .nav-folder-children:hover {
   border-color: var(--accent-inactive);
 }
@@ -7896,7 +8082,7 @@ body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title.is-unsuppor
   --file-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 17h.01M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z'/><path d='M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3'/></g></svg>");
 }
 body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title:is([data-path$=canvas])::before {
-  --file-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><rect width='7' height='9' x='3' y='3' rx='1'/><rect width='7' height='5' x='14' y='3' rx='1'/><rect width='7' height='9' x='14' y='12' rx='1'/><rect width='7' height='5' x='3' y='16' rx='1'/></g></svg>");
+  --file-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 22a1 1 0 0 1 0-20a10 9 0 0 1 10 9a5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z'/><circle cx='13.5' cy='6.5' r='.5' fill='currentColor'/><circle cx='17.5' cy='10.5' r='.5' fill='currentColor'/><circle cx='6.5' cy='12.5' r='.5' fill='currentColor'/><circle cx='8.5' cy='7.5' r='.5' fill='currentColor'/></g></svg>");
 }
 body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title.is-unsupported::before {
   --file-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 17h.01M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z'/><path d='M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3'/></g></svg>");
@@ -8003,12 +8189,20 @@ body.explorer-folder-bold .nav-folder-title {
   --system-access-override-text-width: 115%;
   --scrollbar-thumb-bg: var(--interactive-hover);
   --scrollbar-active-thumb-bg: var(--interactive-accent);
+  --toggle-s-width: 42px;
+  --font-interface-theme: var(--setting-mobile-font-interface, "");
+  --font-text-theme: var(--setting-mobile-font-text, "");
+  --font-monospace-theme: var(--setting-mobile-font-monospace, maplemono);
 }
 .is-mobile .modal-close-button::before {
   transform: translate(20%, 20%);
 }
 .is-mobile .mobile-tap.tree-item-self.is-clickable.is-active {
   background-color: var(--nav-item-background-active);
+}
+
+body.is-tablet .modal-container .modal-sidebar:not(:has(+ .community-modal-details)) .community-modal-controls {
+  padding-inline-end: var(--size-4-10);
 }
 
 /* #endregion basic */
