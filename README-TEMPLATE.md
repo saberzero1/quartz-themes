@@ -9,7 +9,7 @@ A collection of [Obsidian](https://obsidian.md/) themes adapted for [Quartz](htt
 _<sub>left to right: `vauxhaul`, `tokyo-night`, `its-theme`, `absolutegruv`, `sandstorm`, `obsidian-nord`</sub>_
 -->
 
-![Last updated: 2025-10-15](<https://img.shields.io/date/1760562562?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
+![Last updated: 2025-10-22](<https://img.shields.io/date/1761150049?style=for-the-badge&label=Last Obsidian themes list fetch&labelColor=hsl(258%2C%2088%25%2C%2066%25)&color=444>)
 ![Supported Quartz version v4.5.2](<https://img.shields.io/badge/v4.5.2-Quartz?style=for-the-badge&label=Quartz%20version&labelColor=hsl(204%2C%2022%25%2C%2057%25)&color=444>)
 
 <!--
