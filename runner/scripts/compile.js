@@ -359,18 +359,23 @@ function generateAndWriteCSS(
   });
 
   // Build variable strings from body CSS variables for Quartz
+  // Only include --code-* and --graph-* variables for Quartz
   let bodyVarsStringDark = "";
   let bodyVarsStringLight = "";
   
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
-      bodyVarsStringDark += `  ${key}: ${value} !important;\n`;
+      if (key.startsWith("--code-") || key.startsWith("--graph-")) {
+        bodyVarsStringDark += `  ${key}: ${value} !important;\n`;
+      }
     }
   }
   
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
-      bodyVarsStringLight += `  ${key}: ${value} !important;\n`;
+      if (key.startsWith("--code-") || key.startsWith("--graph-")) {
+        bodyVarsStringLight += `  ${key}: ${value} !important;\n`;
+      }
     }
   }
 
