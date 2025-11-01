@@ -1,12 +1,12 @@
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/SlRvb" target="_blank" rel="noopener noreferrer">SlRvb</a>
+- Theme author: Vinit Kumar
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/its-theme.its-dark">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oscura">Install instructions</a>
 
-| Name                 | Modes                     | Compatibility                                                                                     | License                                                                                                                                                           |
-| -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `its-theme.its-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/its-theme.its-dark/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
+| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `oscura` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/oscura/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -3987,6 +3987,17 @@
       "fonts": ["roboto"],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "minimalist-studio": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
     "minimalists-paradise": {
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
@@ -3996,17 +4007,6 @@
       "extras": [],
       "fixes": [],
       "fonts": ["fira-code"],
-      "license": { "name": "MIT License", "spdx_id": "MIT" }
-    },
-    "minimalists-studio": {
-      "compatibility": ["checking", "collection"],
-      "modes": ["dark", "light"],
-      "use_extended_syntax": false,
-      "style_settings": {},
-      "variations": [],
-      "extras": [],
-      "fixes": [],
-      "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "mint-breeze": {
