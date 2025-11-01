@@ -8,32 +8,6 @@
 
 
 :root:root {
-  --code-background: #fdf6e3 !important;
-  --code-border-color: #e0e0e0 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #28282814 !important;
-  --code-comment: #ababab !important;
-  --code-function: #fabd2f !important;
-  --code-important: #ed6002 !important;
-  --code-keyword: #d53984 !important;
-  --code-normal: #222222 !important;
-  --code-operator: #b81e19 !important;
-  --code-property: #00bfbc !important;
-  --code-punctuation: #5c5c5c !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #05903d !important;
-  --code-tag: #b81e19 !important;
-  --code-value: #6645cc !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #d4d4d4 !important;
-  --graph-node: #5c5c5c !important;
-  --graph-node-attachment: #fabd2f !important;
-  --graph-node-focused: #8a5cf5 !important;
-  --graph-node-tag: #05903d !important;
-  --graph-node-unresolved: #ababab !important;
-  --graph-text: #222222 !important;
 }
 
 
@@ -223,7 +197,7 @@ body {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -325,7 +299,7 @@ body {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -376,12 +350,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -455,29 +429,29 @@ body {
   }
 
   code {
-    background-color: rgb(253, 246, 227);
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(224, 224, 224);
-  border-right-color: rgb(224, 224, 224);
-  border-top-color: rgb(224, 224, 224);
-  border-bottom-color: rgb(224, 224, 224);
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(34, 34, 34);
+  border-right-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+  border-bottom-color: rgb(34, 34, 34);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: rgb(34, 34, 34);
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -603,9 +577,9 @@ body {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 24px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

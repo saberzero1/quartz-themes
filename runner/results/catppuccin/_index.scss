@@ -8,60 +8,8 @@
 
 
 :root:root {
-  --code-background: #e6e9ef !important;
-  --code-border-color: #ccd0da !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #4c4f6913 !important;
-  --code-comment: #bcc0cc !important;
-  --code-function: #df8e1d !important;
-  --code-important: #fe640b !important;
-  --code-keyword: #ea76cb !important;
-  --code-normal: #6c6f85 !important;
-  --code-operator: #d20f39 !important;
-  --code-property: #04a5e5 !important;
-  --code-punctuation: #6c6f85 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #40a02b !important;
-  --code-tag: #d20f39 !important;
-  --code-value: #7287fd !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #acb0be !important;
-  --graph-node: #6c6f85 !important;
-  --graph-node-attachment: #df8e1d !important;
-  --graph-node-focused: #7287fd !important;
-  --graph-node-tag: #40a02b !important;
-  --graph-node-unresolved: #bcc0cc !important;
-  --graph-text: #4c4f69 !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: #181825 !important;
-  --code-border-color: #313244 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #cdd6f413 !important;
-  --code-comment: #45475a !important;
-  --code-function: #f9e2af !important;
-  --code-important: #fab387 !important;
-  --code-keyword: #f5c2e7 !important;
-  --code-normal: #a6adc8 !important;
-  --code-operator: #f38ba8 !important;
-  --code-property: #89dceb !important;
-  --code-punctuation: #a6adc8 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #a6e3a1 !important;
-  --code-tag: #f38ba8 !important;
-  --code-value: #b4befe !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #585b70 !important;
-  --graph-node: #a6adc8 !important;
-  --graph-node-attachment: #f9e2af !important;
-  --graph-node-focused: #b4befe !important;
-  --graph-node-tag: #a6e3a1 !important;
-  --graph-node-unresolved: #45475a !important;
-  --graph-text: #cdd6f4 !important;
 }
 
 
@@ -275,19 +223,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(76, 79, 105), rgb(205, 214, 244));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(205, 214, 244);
-  text-decoration-color: rgb(205, 214, 244);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -377,19 +325,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(235, 160, 172);
-  text-decoration-color: rgb(235, 160, 172);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -427,10 +375,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(137, 180, 250);
-  border-right-color: rgb(137, 180, 250);
-  border-top-color: rgb(137, 180, 250);
-  border-bottom-color: rgb(137, 180, 250);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -440,12 +388,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -519,29 +467,29 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(49, 50, 68);
-  border-right-color: rgb(49, 50, 68);
-  border-top-color: rgb(49, 50, 68);
-  border-bottom-color: rgb(49, 50, 68);
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  color: light-dark(rgb(108, 111, 133), rgb(166, 173, 200));
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -663,13 +611,13 @@ body {
   blockquote {
     background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: Vollkorn, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 24px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

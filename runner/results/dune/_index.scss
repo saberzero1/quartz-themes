@@ -8,74 +8,8 @@
 
 
 :root:root {
-  --code-background: #ffffff !important;
-  --code-border-color: #bdbdbd !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #00000011 !important;
-  --code-comment: #5c5c5c !important;
-  --code-function: #154371 !important;
-  --code-important: #cb6500 !important;
-  --code-keyword: #cb6500 !important;
-  --code-normal: #5c5c5c !important;
-  --code-operator: #e93147 !important;
-  --code-property: #60090A !important;
-  --code-punctuation: #5c5c5c !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #17294e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #2f74ba !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #808080 !important;
-  --graph-node: #5c5c5c !important;
-  --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: #8a5cf5 !important;
-  --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: #ababab !important;
-  --graph-text: #222222 !important;
-  --graph-arrow: #5c5c5c !important;
-  --graph-circle-fill-highlight: #9873f7 !important;
-  --graph-circle-fill: #db3434 !important;
-  --graph-circle-fill-unresolved: #808080 !important;
-  --graph-fill-tag: #ff8c00 !important;
-  --graph-line-highlight: #9873f7 !important;
-  --code-color: #5c5c5c !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: #1e1e1e !important;
-  --code-border-color: #555555 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #ffffff11 !important;
-  --code-comment: #b3b3b3 !important;
-  --code-function: #7ccccf !important;
-  --code-important: #ffa500 !important;
-  --code-keyword: #ffa500 !important;
-  --code-normal: #b3b3b3 !important;
-  --code-operator: #fb464c !important;
-  --code-property: #af8657 !important;
-  --code-punctuation: #b3b3b3 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #d8c07f !important;
-  --code-tag: #fb464c !important;
-  --code-value: #d86f42 !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #808080 !important;
-  --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: #8a5cf5 !important;
-  --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
-  --graph-arrow: #b3b3b3 !important;
-  --graph-circle-fill-highlight: #8a5cf5 !important;
-  --graph-circle-fill: #ff8080 !important;
-  --graph-circle-fill-unresolved: #808080 !important;
-  --graph-fill-tag: #ff8c00 !important;
-  --graph-line-highlight: #8a5cf5 !important;
-  --code-color: #b3b3b3 !important;
 }
 
 
@@ -333,7 +267,7 @@ body {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -435,7 +369,7 @@ body {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -473,10 +407,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(128, 128, 128);
-  border-right-color: rgb(128, 128, 128);
-  border-top-color: rgb(128, 128, 128);
-  border-bottom-color: rgb(128, 128, 128);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -486,12 +420,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -565,29 +499,29 @@ body {
   }
 
   code {
-    background-color: light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.5));
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(128, 128, 128);
-  border-right-color: rgb(128, 128, 128);
-  border-top-color: rgb(128, 128, 128);
-  border-bottom-color: rgb(128, 128, 128);
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -714,8 +648,8 @@ body {
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

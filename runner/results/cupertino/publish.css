@@ -52,64 +52,6 @@
   font-weight: 900;
   src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff") format("woff");
 }
-body.theme-light {
-  --code-background: #fafafa !important;
-  --code-border-color: rgba(31, 34, 37, 0.09) !important;
-  --code-border-width: 1px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.05) !important;
-  --code-comment: #b6b9c5 !important;
-  --code-function: #b76b02 !important;
-  --code-important: #b76b02 !important;
-  --code-keyword: #e45749 !important;
-  --code-normal: #383a42 !important;
-  --code-operator: #ff3b30 !important;
-  --code-property: #62afef !important;
-  --code-punctuation: #383a42 !important;
-  --code-radius: 8px !important;
-  --code-size: 0.875em !important;
-  --code-string: #0d97b3 !important;
-  --code-tag: #e45749 !important;
-  --code-value: #a626a4 !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #d4d4d4 !important;
-  --graph-node: #5c5c5c !important;
-  --graph-node-attachment: #ffcc00 !important;
-  --graph-node-focused: hsl(258, 88%, 66%) !important;
-  --graph-node-tag: #28cd41 !important;
-  --graph-node-unresolved: #ababab !important;
-  --graph-text: #222222 !important;
-}
-
-body.theme-dark {
-  --code-background: #242424 !important;
-  --code-border-color: rgba(244, 244, 244, 0.12) !important;
-  --code-border-width: 1px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.05) !important;
-  --code-comment: #5c6370 !important;
-  --code-function: #d19a66 !important;
-  --code-important: #d19a66 !important;
-  --code-keyword: #e16d76 !important;
-  --code-normal: #abb2bf !important;
-  --code-operator: #ff453a !important;
-  --code-property: #62afef !important;
-  --code-punctuation: #abb2bf !important;
-  --code-radius: 8px !important;
-  --code-size: 0.875em !important;
-  --code-string: #58b6c2 !important;
-  --code-tag: #e16d76 !important;
-  --code-value: #c678de !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #3f3f3f !important;
-  --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: #ffd60a !important;
-  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
-  --graph-node-tag: #32d74b !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
-}
-
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -176,19 +118,19 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: -apple-system, "system-ui", "SF Pro Text", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 700;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(255, 255, 255);
-  text-decoration-color: rgb(255, 255, 255);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
@@ -208,19 +150,19 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: -apple-system, "system-ui", "SF Pro Text", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(255, 255, 255);
-  text-decoration-color: rgb(255, 255, 255);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
@@ -256,19 +198,19 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(73, 73, 73), rgb(192, 192, 192));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: -apple-system, "system-ui", "SF Pro Text", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(192, 192, 192);
-  text-decoration-color: rgb(192, 192, 192);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -326,28 +268,28 @@ body .markdown-rendered hr {
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: center;
-  background-color: rgba(138, 92, 245, 0.1);
-  display: flex;
-  font-family: -apple-system, "system-ui", "SF Pro Text", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  align-items: normal;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgba(138, 92, 245, 0.15);
-  border-right-color: rgba(138, 92, 245, 0.15);
-  border-top-color: rgba(138, 92, 245, 0.15);
-  border-bottom-color: rgba(138, 92, 245, 0.15);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  border-bottom-left-radius: 28px;
-  border-bottom-right-radius: 28px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));

@@ -8,48 +8,6 @@
 
 
 :root:root {
-  --code-background: #04070c !important;
-  --code-border-color: #380b13 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #d42f2f66 !important;
-  --code-comment: #4e5b6f !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #803232 !important;
-  --code-operator: #fb464c !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #803232 !important;
-  --code-radius: 0 !important;
-  --code-size: 0.9em !important;
-  --code-string: #44cf6e !important;
-  --code-tag: #fb464c !important;
-  --code-value: #a882ff !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #571a1a !important;
-  --graph-node: #475569 !important;
-  --graph-node-attachment: #475569 !important;
-  --graph-node-focused: #c5575b !important;
-  --graph-node-tag: #04070c !important;
-  --graph-node-unresolved: #1b262f !important;
-  --graph-text: #475569 !important;
-  --graph-arrow: #803232 !important;
-  --graph-tag: #04070c !important;
-  --graph-bg: #0d141d82 !important;
-  --code-bg: #04070c !important;
-  --code-shadow: 0 2px 0 #000000 !important;
-  --code-text: #803232 !important;
-  --graph-404: #1b262f !important;
-  --graph-background: #0d141d82 !important;
-  --graph-controls-section-header-padding: 4px 8px !important;
-  --graph-fill: #c94d4d !important;
-  --graph-focused: #c5575b !important;
-  --graph-img: #475569 !important;
-  --graph-line-hover: #803232 !important;
-  --graph-lines: #571a1a !important;
-  --graph-node-hover-fill: #c94d4d !important;
-  --graph-node-hover-outline: #e5ebee !important;
 }
 
 
@@ -142,19 +100,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(71, 85, 105);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(71, 85, 105);
-  text-decoration-color: rgb(71, 85, 105);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -244,19 +202,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(71, 85, 105);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through 1px solid rgb(71, 85, 105);
-  text-decoration-color: rgb(71, 85, 105);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -294,10 +252,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -307,12 +265,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -386,15 +344,15 @@ body {
   }
 
   code {
-    background-color: rgb(4, 7, 12);
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(56, 11, 19);
-  border-right-color: rgb(56, 11, 19);
-  border-top-color: rgb(56, 11, 19);
-  border-bottom-color: rgb(56, 11, 19);
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -403,12 +361,12 @@ body {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: rgb(128, 50, 50);
-  font-family: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
-  padding-top: 2.16px;
-  padding-bottom: 2.16px;
-  padding-left: 4.32px;
-  padding-right: 4.32px;
+  color: rgb(218, 218, 218);
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -528,15 +486,15 @@ body {
   }
 
   blockquote {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  padding-inline-start: 24px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

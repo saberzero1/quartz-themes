@@ -155,7 +155,9 @@ function toHexColors(str) {
         .use(postcssColorConverter({ outputColorFormat: "hex" }))
         .process(result).css;
     } catch (e) {
-      // Ignore errors
+      // If still failing, return original string
+      console.warn("Warning: Could not process CSS colors, using original:", e.message);
+      return str;
     }
   }
 
@@ -168,14 +170,25 @@ function toHexColors(str) {
     let temp;
     do {
       temp = result;
-      result = postcss()
-        .use(postcssColorMixFunction())
-        .use(calc({ preserve: false }))
-        .use(postcssColorMixFunction())
-        .use(postcssColorConverter({ outputColorFormat: "hex" }))
-        .process(result).css;
+      try {
+        result = postcss()
+          .use(postcssColorMixFunction())
+          .use(calc({ preserve: false }))
+          .use(postcssColorMixFunction())
+          .use(postcssColorConverter({ outputColorFormat: "hex" }))
+          .process(result).css;
+      } catch (e) {
+        // If iteration fails, stop and use previous result
+        console.warn(`Warning: Color conversion iteration ${iteration} failed, stopping iterations:`, e.message);
+        result = temp;
+        break;
+      }
       iteration++;
     } while (temp !== result && iteration < maxIterations);
+    
+    if (iteration >= maxIterations) {
+      console.warn(`Warning: Color conversion reached max iterations (${maxIterations}) without converging`);
+    }
   } catch (e) {
     console.error("Error processing CSS to hex colors:", e);
     result = fallbackResult; // Fallback to original string on error

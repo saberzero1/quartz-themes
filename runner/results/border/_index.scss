@@ -8,70 +8,8 @@
 
 
 :root:root {
-  --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border-color: #8089c633 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #9e9fa926 !important;
-  --code-comment: #989bae !important;
-  --code-function: #c09c0c !important;
-  --code-important: #de7417 !important;
-  --code-keyword: #dd1399 !important;
-  --code-normal: #545664 !important;
-  --code-operator: #dd2c38 !important;
-  --code-property: #16a6ab !important;
-  --code-punctuation: #545664 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #1da51d !important;
-  --code-tag: #dd2c38 !important;
-  --code-value: #8f47e1 !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #d4d4d4 !important;
-  --graph-node: #545664 !important;
-  --graph-node-attachment: #c09c0c !important;
-  --graph-node-focused: #6279fd !important;
-  --graph-node-tag: #1da51d !important;
-  --graph-node-unresolved: #989bae !important;
-  --graph-text: #1d1d20 !important;
-  --code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border: 1px dashed #8089c633 !important;
-  --code-border-dark: 1px dashed #8089c633 !important;
-  --code-border-light: 1px dashed #8089c633 !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border-color: #777c9c33 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #5a5d7240 !important;
-  --code-comment: #74778b !important;
-  --code-function: #ffe88b !important;
-  --code-important: #fbbb83 !important;
-  --code-keyword: #f2b6de !important;
-  --code-normal: #b8bac7 !important;
-  --code-operator: #ff7881 !important;
-  --code-property: #86dfe2 !important;
-  --code-punctuation: #b8bac7 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #7cd37c !important;
-  --code-tag: #ff7881 !important;
-  --code-value: #cb9eff !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #3F3F3F !important;
-  --graph-node: #b8bac7 !important;
-  --graph-node-attachment: #ffe88b !important;
-  --graph-node-focused: #909cd0 !important;
-  --graph-node-tag: #7cd37c !important;
-  --graph-node-unresolved: #74778b !important;
-  --graph-text: #d3d5de !important;
-  --code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border: 1px dashed #777c9c33 !important;
-  --code-border-dark: 1px dashed #777c9c33 !important;
-  --code-border-light: 1px dashed #777c9c33 !important;
 }
 
 
@@ -317,19 +255,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(29, 29, 32), rgb(211, 213, 222));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(211, 213, 222);
-  text-decoration-color: rgb(211, 213, 222);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -419,19 +357,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(29, 29, 32), rgb(211, 213, 222));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(211, 213, 222);
-  text-decoration-color: rgb(211, 213, 222);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -469,10 +407,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgba(119, 124, 156, 0.2);
-  border-right-color: rgba(119, 124, 156, 0.2);
-  border-top-color: rgba(119, 124, 156, 0.2);
-  border-bottom-color: rgba(119, 124, 156, 0.2);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -482,12 +420,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -562,28 +500,28 @@ body {
 
   code {
     background-color: rgba(0, 0, 0, 0);
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgba(119, 124, 156, 0.2);
-  border-right-color: rgba(119, 124, 156, 0.2);
-  border-top-color: rgba(119, 124, 156, 0.2);
-  border-bottom-color: rgba(119, 124, 156, 0.2);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  color: light-dark(rgb(221, 19, 153), rgb(242, 182, 222));
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -707,11 +645,11 @@ body {
   border-inline-start: inherit;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-inline-start: 27px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

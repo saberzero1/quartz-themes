@@ -8,42 +8,6 @@
 
 
 :root:root {
-  --code-background: #23212d !important;
-  --code-border-color: #343a4b !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: #ffffff11 !important;
-  --code-comment: #6c6498 !important;
-  --code-function: #f3ee5e !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #f8f8f2 !important;
-  --code-operator: #fb464c !important;
-  --code-property: #88c4d3 !important;
-  --code-punctuation: #6e6b7e !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #65e6a8 !important;
-  --code-tag: #fb464c !important;
-  --code-value: #c9b8ff !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #3f3f3f !important;
-  --graph-node: #6e6b7e !important;
-  --graph-node-attachment: #f3ee5e !important;
-  --graph-node-focused: #bd93f9 !important;
-  --graph-node-tag: #65e6a8 !important;
-  --graph-node-unresolved: #6c6498 !important;
-  --graph-text: #f8f8f2 !important;
-  --graph-color-arrow: #4c7685 !important;
-  --graph-color-line: #4c7685 !important;
-  --graph-color-line-hover: #a0a7bb !important;
-  --graph-color-node-attachment: #b9c3df !important;
-  --graph-color-node-border-hover: #eff1f5 !important;
-  --graph-color-node-focused: #dd6ebe !important;
-  --graph-color-node-resolved: #f3ee5e !important;
-  --graph-color-node-tag: #3c98b4 !important;
-  --graph-color-node-unresolved: #916ec9 !important;
-  --graph-color-text: #e0e4eb !important;
 }
 
 
@@ -238,19 +202,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(114, 195, 213);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(114, 195, 213);
-  text-decoration-color: rgb(114, 195, 213);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -340,19 +304,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(108, 100, 152);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(108, 100, 152);
-  text-decoration-color: rgb(108, 100, 152);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -390,10 +354,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(52, 58, 75);
-  border-right-color: rgb(52, 58, 75);
-  border-top-color: rgb(52, 58, 75);
-  border-bottom-color: rgb(52, 58, 75);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -403,12 +367,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -482,29 +446,29 @@ body {
   }
 
   code {
-    background-color: rgb(47, 47, 45);
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(52, 58, 75);
-  border-right-color: rgb(52, 58, 75);
-  border-top-color: rgb(52, 58, 75);
-  border-bottom-color: rgb(52, 58, 75);
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  color: rgb(255, 85, 85);
-  font-family: Monaco, Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: rgb(218, 218, 218);
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -624,15 +588,15 @@ body {
   }
 
   blockquote {
-    background-color: rgb(21, 19, 31);
+    background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 24px;
-  margin-inline-start: 8px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {

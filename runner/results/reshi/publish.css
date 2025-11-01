@@ -118,64 +118,6 @@
   src: url(https://fonts.gstatic.com/s/notosans/v39/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9a6VLYyWtZ3rI.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-body.theme-light {
-  --code-background: #e1e1e1 !important;
-  --code-border-color: #404040 !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
-  --code-comment: #6a6a6a !important;
-  --code-function: #2b8b87 !important;
-  --code-important: #316793 !important;
-  --code-keyword: #452c6c !important;
-  --code-normal: #555555 !important;
-  --code-operator: #452c6c !important;
-  --code-property: #316793 !important;
-  --code-punctuation: #c62f46 !important;
-  --code-radius: 0px !important;
-  --code-size: 0.8em !important;
-  --code-string: #596d3a !important;
-  --code-tag: #2b8b87 !important;
-  --code-value: #c62f46 !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #c4c4c4 !important;
-  --graph-node: #596d3a !important;
-  --graph-node-attachment: #6a6a6a !important;
-  --graph-node-focused: #596d3a !important;
-  --graph-node-tag: #707070 !important;
-  --graph-node-unresolved: #151515 !important;
-  --graph-text: #555555 !important;
-}
-
-body.theme-dark {
-  --code-background: #1d1d1d !important;
-  --code-border-color: #9d9d9d !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
-  --code-comment: #6a6a6a !important;
-  --code-function: #7fbbb8 !important;
-  --code-important: #7babd4 !important;
-  --code-keyword: #9b7ad1 !important;
-  --code-normal: #707070 !important;
-  --code-operator: #9b7ad1 !important;
-  --code-property: #7babd4 !important;
-  --code-punctuation: #b96b88 !important;
-  --code-radius: 0px !important;
-  --code-size: 0.8em !important;
-  --code-string: #91a86e !important;
-  --code-tag: #7fbbb8 !important;
-  --code-value: #b96b88 !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #333333 !important;
-  --graph-node: #778e55 !important;
-  --graph-node-attachment: #707070 !important;
-  --graph-node-focused: #778e55 !important;
-  --graph-node-tag: #404040 !important;
-  --graph-node-unresolved: #c4c4c4 !important;
-  --graph-text: #555555 !important;
-}
-
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -242,19 +184,19 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(89, 109, 58), rgb(119, 142, 85));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(119, 142, 85);
-  text-decoration-color: rgb(119, 142, 85);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
@@ -274,19 +216,19 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(106, 106, 106), rgb(236, 217, 147));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-  font-weight: 600;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(236, 217, 147);
-  text-decoration-color: rgb(236, 217, 147);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
@@ -322,19 +264,19 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(64, 64, 64), rgb(157, 157, 157));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(157, 157, 157);
-  text-decoration-color: rgb(157, 157, 157);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -392,28 +334,28 @@ body .markdown-rendered hr {
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: center;
-  background-color: light-dark(rgb(89, 109, 58), rgb(119, 142, 85));
-  display: flex;
-  font-family: "Noto Sans", sans-serif;
+  align-items: normal;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(119, 142, 85);
-  border-right-color: rgb(119, 142, 85);
-  border-top-color: rgb(119, 142, 85);
-  border-bottom-color: rgb(119, 142, 85);
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));

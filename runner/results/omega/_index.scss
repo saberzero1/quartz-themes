@@ -8,32 +8,6 @@
 
 
 :root:root {
-  --code-background: #00356b4d !important;
-  --code-border-color: #f5f5f5 !important;
-  --code-border-width: 2px !important;
-  --code-bracket-background: #ffffff11 !important;
-  --code-comment: #dbd7d2 !important;
-  --code-function: #007fff !important;
-  --code-important: #e44d2e !important;
-  --code-keyword: #ed2939 !important;
-  --code-normal: #f5f5f5 !important;
-  --code-operator: #ffef00 !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #ed2939 !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #0bda51 !important;
-  --code-tag: #fb464c !important;
-  --code-value: #8000ff !important;
-  --code-white-space: pre-wrap !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: #3f3f3f !important;
-  --graph-node: #f5f5f5 !important;
-  --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: #a68af9 !important;
-  --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #f5f5f5 !important;
-  --graph-text: #f5f5f5 !important;
 }
 
 
@@ -275,19 +249,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(245, 245, 245);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(245, 245, 245);
-  text-decoration-color: rgb(245, 245, 245);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .page article p > strong, strong {
@@ -377,19 +351,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(245, 245, 245);
+  color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(245, 245, 245);
-  text-decoration-color: rgb(245, 245, 245);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: text;
+  user-select: none;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -427,25 +401,25 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(219, 215, 210);
-  border-right-color: rgb(219, 215, 210);
-  border-top-color: rgb(219, 215, 210);
-  border-bottom-color: rgb(219, 215, 210);
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -519,29 +493,29 @@ body {
   }
 
   code {
-    background-color: rgb(0, 0, 0);
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgb(245, 245, 245);
-  border-right-color: rgb(245, 245, 245);
-  border-top-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(245, 245, 245);
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  color: rgb(245, 245, 245);
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-top: 2.1px;
-  padding-bottom: 2.1px;
-  padding-left: 4.2px;
-  padding-right: 4.2px;
+    background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: rgb(218, 218, 218);
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
 
   pre > code {
@@ -667,9 +641,9 @@ body {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 12px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
   }
 
   .data-footnote-backref {
