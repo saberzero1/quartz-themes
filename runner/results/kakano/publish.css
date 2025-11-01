@@ -4,10 +4,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
@@ -15,8 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -25,8 +22,7 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -35,10 +31,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* math */
 @font-face {
@@ -46,21 +40,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 /* symbols */
 @font-face {
@@ -68,32 +49,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 /* vietnamese */
 @font-face {
@@ -101,12 +58,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -114,12 +67,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
@@ -127,132 +76,1949 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 400;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 300;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 300;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 500;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 500;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 600;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 600;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 700;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 700;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 900;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 900;
-  src:
-    local("SF Mono"),
-    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
-      format("woff");
+  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
 }
+body.theme-light {
+  --accent-h: 258 !important;
+  --accent-l: 66% !important;
+  --accent-s: 88% !important;
+  --anim-duration-fast: 140ms !important;
+  --anim-duration-moderate: 300ms !important;
+  --anim-duration-none: 0 !important;
+  --anim-duration-slow: 560ms !important;
+  --anim-duration-superfast: 70ms !important;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
+  --background-modifier-active-hover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --background-modifier-border: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --background-modifier-border-focus: hsl(215, 67%, 45%) !important;
+  --background-modifier-border-hover: #d4d4d4 !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
+  --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
+  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --background-modifier-error-rgb: 233, 49, 71 !important;
+  --background-modifier-form-field: #ffffff !important;
+  --background-modifier-form-field-hover: #ffffff !important;
+  --background-modifier-hover: hsl(215, 67%, 45%) !important;
+  --background-modifier-message: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --background-modifier-success-rgb: 8, 185, 78 !important;
+  --background-primary: white !important;
+  --background-primary-alt: #fafafa !important;
+  --background-secondary: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --background-secondary-alt: #fcfcfc !important;
+  --bases-cards-background: white !important;
+  --bases-cards-border-width: 1px !important;
+  --bases-cards-container-background: transparent !important;
+  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06)) !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-line-height: 24px !important;
+  --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --bases-cards-shadow-hover: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-embed-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --bases-embed-border-radius: 0.25rem !important;
+  --bases-embed-border-width: 0px !important;
+  --bases-filter-menu-width: 520px !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-height: 40px !important;
+  --bases-header-padding-end: 0.5em !important;
+  --bases-header-padding-start: 0.5em !important;
+  --bases-table-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --bases-table-cell-background-active: white !important;
+  --bases-table-cell-background-disabled: #fafafa !important;
+  --bases-table-cell-radius-active: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(215, 67%, 45%) !important;
+  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-max-width: 300 !important;
+  --bases-table-column-min-width: 40 !important;
+  --bases-table-container-border-radius: 0.25rem !important;
+  --bases-table-container-border-width: 1px !important;
+  --bases-table-header-background: white !important;
+  --bases-table-header-background-hover: hsl(215, 67%, 45%) !important;
+  --bases-table-header-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --bases-table-header-icon-display: flex !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-weight: 400 !important;
+  --bases-table-row-background-hover: transparent !important;
+  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-height: 30px !important;
+  --bases-table-text-size: 0.875em !important;
+  --bases-toolbar-badge-display: none !important;
+  --bases-toolbar-label-display: block !important;
+  --blockquote-background-color: transparent !important;
+  --blockquote-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --blockquote-border-thickness: 0.25em !important;
+  --blockquote-font-style: normal !important;
+  --bold-modifier: 200 !important;
+  --bold-weight: calc(400 + 200) !important;
+  --border-width: 1px !important;
+  --button-radius: 5px !important;
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 233, 49, 71 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 8, 109, 221 !important;
+  --callout-error: 233, 49, 71 !important;
+  --callout-example: 120, 82, 238 !important;
+  --callout-fail: 233, 49, 71 !important;
+  --callout-important: 0, 191, 188 !important;
+  --callout-info: 8, 109, 221 !important;
+  --callout-padding: 0.75em 1.5em !important;
+  --callout-question: 236, 117, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 0.25rem !important;
+  --callout-success: 8, 185, 78 !important;
+  --callout-summary: 0, 191, 188 !important;
+  --callout-tip: 0, 191, 188 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: calc(400 + 200) !important;
+  --callout-todo: 8, 109, 221 !important;
+  --callout-warning: 236, 117, 0 !important;
+  --canvas-background: white !important;
+  --canvas-card-label-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --canvas-color: 192, 192, 192 !important;
+  --canvas-color-1: 233, 49, 71 !important;
+  --canvas-color-2: 236, 117, 0 !important;
+  --canvas-color-3: 224, 172, 0 !important;
+  --canvas-color-4: 8, 185, 78 !important;
+  --canvas-color-5: 0, 191, 188 !important;
+  --canvas-color-6: 120, 82, 238 !important;
+  --canvas-dot-pattern: #e0e0e0 !important;
+  --caret-color: hsl(258, 150%, 50%) !important;
+  --checkbox-border-color: hsl(215, 67%, 45%) !important;
+  --checkbox-border-color-hover: hsl(215, 67%, 45%) !important;
+  --checkbox-color: hsl(215, 67%, 45%) !important;
+  --checkbox-color-hover: hsl(215, 67%, 45%) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: white !important;
+  --checkbox-radius: 0.25rem !important;
+  --checkbox-size: 16px !important;
+  --checklist-done-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --checklist-done-decoration: line-through !important;
+  --clickable-icon-radius: 0.25rem !important;
+  --code-background: light-dark( hsl(from black h s l / 0.06), hsl(from white h s l / 0.06) ) !important;
+  --code-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  --code-comment: light-dark( hsl(from black h s l / 0.5), hsl(from white h s l / 0.5) ) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --code-radius: 0.25rem !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --code-white-space: pre-wrap !important;
+  --collapse-icon-color: hsl(215, 67%, 45%) !important;
+  --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --color-accent-hsl: 258, 88%, 66% !important;
+  --color-base-00: #ffffff !important;
+  --color-base-05: #fcfcfc !important;
+  --color-base-10: #fafafa !important;
+  --color-base-100: #222222 !important;
+  --color-base-20: #f6f6f6 !important;
+  --color-base-25: #e3e3e3 !important;
+  --color-base-30: #e0e0e0 !important;
+  --color-base-35: #d4d4d4 !important;
+  --color-base-40: #bdbdbd !important;
+  --color-base-50: #ababab !important;
+  --color-base-60: #707070 !important;
+  --color-base-70: #5c5c5c !important;
+  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
+  --color-blue-rgb: 8, 109, 221 !important;
+  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --color-cyan-rgb: 0, 191, 188 !important;
+  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --color-green-rgb: 8, 185, 78 !important;
+  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --color-orange-rgb: 236, 117, 0 !important;
+  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --color-pink-rgb: 213, 57, 132 !important;
+  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --color-purple-rgb: 120, 82, 238 !important;
+  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --color-red-rgb: 233, 49, 71 !important;
+  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --color-yellow-rgb: 224, 172, 0 !important;
+  --cursor: default !important;
+  --cursor-link: pointer !important;
+  --dialog-max-height: 85vh !important;
+  --dialog-max-width: 80vw !important;
+  --dialog-width: 560px !important;
+  --direction: 1 !important;
+  --divider-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --divider-color-hover: hsl(215, 67%, 45%) !important;
+  --divider-vertical-height: 100% !important;
+  --divider-width: 0 !important;
+  --divider-width-hover: 3px !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-text-color: #fff !important;
+  --dropdown-background: #ffffff !important;
+  --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: #fafafa !important;
+  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
+  --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --embed-block-shadow-hover: 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ), inset 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --embed-border-bottom: none !important;
+  --embed-border-end: none !important;
+  --embed-border-start: none !important;
+  --embed-border-top: none !important;
+  --embed-canvas-max-height: 400px !important;
+  --embed-max-height: 4000px !important;
+  --embed-padding: 1em !important;
+  --file-folding-offset: 24px !important;
+  --file-header-border: 1px solid transparent !important;
+  --file-header-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --file-header-font-size: 0.8rem !important;
+  --file-header-font-weight: 400 !important;
+  --file-header-justify: center !important;
+  --file-line-width: calc(1ch * 60) !important;
+  --file-margins: 0 2em !important;
+  --flair-background: hsl(215, 67%, 45%) !important;
+  --flair-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --focus-ring-color: #0df !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-black: 900 !important;
+  --font-bold: 700 !important;
+  --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-extrabold: 800 !important;
+  --font-extralight: 200 !important;
+  --font-interface: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-interface-override: "??" !important;
+  --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-light: 300 !important;
+  --font-medium: 500 !important;
+  --font-mermaid: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-monospace: "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-override: "??" !important;
+  --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-normal: 400 !important;
+  --font-print: "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial" !important;
+  --font-print-override: "??" !important;
+  --font-semibold: 600 !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
+  --font-text: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-text-override: "??" !important;
+  --font-text-size: 16px !important;
+  --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-thin: 100 !important;
+  --font-ui-large: 1.125rem !important;
+  --font-ui-medium: 1rem !important;
+  --font-ui-small: 0.8rem !important;
+  --font-ui-smaller: 0.7rem !important;
+  --font-weight: 400 !important;
+  --footnote-divider-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --footnote-divider-color-active: transparent !important;
+  --footnote-divider-width: 1px !important;
+  --footnote-gap: 4px !important;
+  --footnote-id-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --footnote-id-color-no-occurrences: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --footnote-id-delimiter: "." !important;
+  --footnote-input-background: transparent !important;
+  --footnote-input-background-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --footnote-line-height: 1.5 !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
+  --footnote-radius: 0.25rem !important;
+  --footnote-size: 0.875em !important;
+  --frame-left-space: calc(80px - 3em) !important;
+  --frame-right-space: 0px !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --graph-node-unresolved: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --graph-text: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --h1-line-height: 1.5 !important;
+  --h1-size: calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * 16px))))) !important;
+  --h1-style: normal !important;
+  --h1-variant: normal !important;
+  --h1-weight: 100 !important;
+  --h2-line-height: 1.5 !important;
+  --h2-size: calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * 16px)))) !important;
+  --h2-style: normal !important;
+  --h2-variant: normal !important;
+  --h2-weight: 200 !important;
+  --h3-line-height: 1.5 !important;
+  --h3-size: calc(1.2 * calc(1.2 * calc(1.2 * 16px))) !important;
+  --h3-style: normal !important;
+  --h3-variant: normal !important;
+  --h3-weight: 300 !important;
+  --h4-line-height: 1.5 !important;
+  --h4-size: calc(1.2 * calc(1.2 * 16px)) !important;
+  --h4-style: normal !important;
+  --h4-variant: normal !important;
+  --h4-weight: 400 !important;
+  --h5-line-height: 1.5 !important;
+  --h5-size: calc(1.2 * 16px) !important;
+  --h5-style: normal !important;
+  --h5-variant: normal !important;
+  --h5-weight: 500 !important;
+  --h6-line-height: 1.5 !important;
+  --h6-size: 16px !important;
+  --h6-style: normal !important;
+  --h6-variant: normal !important;
+  --h6-weight: 500 !important;
+  --header-height: calc(18px + 1rem) !important;
+  --heading-formatting: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --heading-spacing: 0.67em !important;
+  --highlight-mix-blend-mode: darken !important;
+  --hr-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --hr-thickness: 2px !important;
+  --icon-color: hsl(215, 67%, 45%) !important;
+  --icon-color-active: light-dark(white, black) !important;
+  --icon-color-focused: white !important;
+  --icon-color-hover: white !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --indent-size: 4 !important;
+  --indent-unit: 0.5625em !important;
+  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
+  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
+  --indentation-guide-editing-indent: 0.85em !important;
+  --indentation-guide-reading-indent: -0.85em !important;
+  --indentation-guide-source-indent: 0.25em !important;
+  --indentation-guide-width: 1px !important;
+  --indentation-guide-width-active: 1px !important;
+  --inline-title-line-height: 1.5 !important;
+  --inline-title-margin-bottom: 0.5em !important;
+  --inline-title-size: calc(1.2 * calc(1.2 * calc(1.2 * 16px))) !important;
+  --inline-title-style: normal !important;
+  --inline-title-variant: normal !important;
+  --inline-title-weight: 400 !important;
+  --input-border-width: 2px !important;
+  --input-border-width-focus: 2px !important;
+  --input-date-separator: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --input-font-weight: 400 !important;
+  --input-height: 30px !important;
+  --input-padding: 4px 8px !important;
+  --input-placeholder-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --input-radius: 5px !important;
+  --input-shadow: 0 1px 2px hsl( 215, calc(67% * 1.5), calc(45% * 0.25), 0.5 ) !important;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --interactive-accent: hsl(215, 67%, 45%) !important;
+  --interactive-accent-hover: hsl(215, 67%, 45%) !important;
+  --interactive-accent-hsl: 258, 88%, 66% !important;
+  --interactive-hover: #fafafa !important;
+  --interactive-normal: #ffffff !important;
+  --keyboard-height: 0px !important;
+  --layer-cover: 5 !important;
+  --layer-dragged-item: 80 !important;
+  --layer-menu: 65 !important;
+  --layer-modal: 50 !important;
+  --layer-notice: 60 !important;
+  --layer-popover: 30 !important;
+  --layer-sidedock: 10 !important;
+  --layer-slides: 45 !important;
+  --layer-status-bar: 15 !important;
+  --layer-tooltip: 70 !important;
+  --line-height-normal: 1.5 !important;
+  --line-height-tight: 1.3 !important;
+  --link-color: hsl(258, 88%, 66%) !important;
+  --link-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --link-decoration: underline !important;
+  --link-decoration-hover: underline !important;
+  --link-decoration-thickness: 1px !important;
+  --link-external-color: hsl(258, 88%, 66%) !important;
+  --link-external-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --link-external-decoration: underline !important;
+  --link-external-decoration-hover: underline !important;
+  --link-external-filter: none !important;
+  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --link-unresolved-decoration-style: dashed !important;
+  --link-unresolved-filter: none !important;
+  --link-unresolved-opacity: 0.7 !important;
+  --link-weight: 400 !important;
+  --list-bullet-border: none !important;
+  --list-bullet-end-padding: 1.3rem !important;
+  --list-bullet-radius: 50% !important;
+  --list-bullet-size: 0.25em !important;
+  --list-bullet-transform: none !important;
+  --list-indent: 1.5em !important;
+  --list-indent-editing: 0.75em !important;
+  --list-indent-source: 0 !important;
+  --list-marker-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --list-marker-color-collapsed: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --list-marker-color-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --list-numbered-style: decimal !important;
+  --list-spacing: 0.075em !important;
+  --loading-icon-delay: 400ms !important;
+  --menu-backdrop-filter: none !important;
+  --menu-background: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --menu-border-color: #d4d4d4 !important;
+  --menu-border-width: 1px !important;
+  --menu-padding: 6px !important;
+  --menu-radius: 0.5rem !important;
+  --menu-shadow: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --metadata-background: transparent !important;
+  --metadata-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --metadata-border-radius: 0 !important;
+  --metadata-border-width: 0 !important;
+  --metadata-display-editing: block !important;
+  --metadata-display-reading: block !important;
+  --metadata-divider-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --metadata-divider-color-focus: transparent !important;
+  --metadata-divider-color-hover: transparent !important;
+  --metadata-divider-width: 0 !important;
+  --metadata-gap: 0.5em !important;
+  --metadata-input-background: transparent !important;
+  --metadata-input-background-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --metadata-input-background-hover: transparent !important;
+  --metadata-input-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --metadata-input-font-size: 0.875em !important;
+  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-text-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --metadata-label-background: transparent !important;
+  --metadata-label-background-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --metadata-label-background-hover: transparent !important;
+  --metadata-label-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --metadata-label-font-size: 0.875em !important;
+  --metadata-label-text-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --metadata-label-text-color-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --metadata-label-width: 9em !important;
+  --metadata-max-width: none !important;
+  --metadata-padding: 8px 0 !important;
+  --metadata-property-background: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --metadata-property-background-active: hsl(215, 67%, 45%) !important;
+  --metadata-property-background-hover: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%) !important;
+  --metadata-property-box-shadow-hover: none !important;
+  --metadata-property-padding: 0 !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
+  --metadata-sidebar-input-font-size: 0.8rem !important;
+  --metadata-sidebar-label-font-size: 0.8rem !important;
+  --modal-background: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --modal-border-color: black !important;
+  --modal-border-width: 0 !important;
+  --modal-community-sidebar-width: 280px !important;
+  --modal-height: 85vh !important;
+  --modal-max-height: calc( 100vh - 0px - 0px - 2em ) !important;
+  --modal-max-width: calc( 100vw - 0px - 0px - 2em ) !important;
+  --modal-max-width-narrow: 800px !important;
+  --modal-radius: 0.75rem !important;
+  --modal-width: 65rem !important;
+  --mono-rgb-0: 255, 255, 255 !important;
+  --mono-rgb-100: 0, 0, 0 !important;
+  --nav-collapse-icon-color: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-collapse-icon-color-collapsed: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-heading-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --nav-heading-color-collapsed: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --nav-heading-color-hover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --nav-heading-weight: 500 !important;
+  --nav-heading-weight-hover: 500 !important;
+  --nav-indentation-guide-color: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --nav-indentation-guide-width: 1px !important;
+  --nav-item-background-active: hsl(215, 67%, 45%) !important;
+  --nav-item-background-hover: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-item-background-selected: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --nav-item-children-margin-start: calc( 16px / 2 - 1px / 2 ) !important;
+  --nav-item-children-padding-start: calc( 1em - 1px / 2 ) !important;
+  --nav-item-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --nav-item-color-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --nav-item-color-hover: white !important;
+  --nav-item-color-selected: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
+  --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
+  --nav-item-size: 0.8rem !important;
+  --nav-item-white-space: pre !important;
+  --p-spacing: 1em !important;
+  --p-spacing-empty: 0rem !important;
+  --page-border: 9px solid transparent !important;
+  --page-margin: 1px auto -8px !important;
+  --pdf-background: white !important;
+  --pdf-page-background: white !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: white !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdfViewer-padding-bottom: 0 !important;
+  --pill-background: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --pill-background-hover: hsl(215, 67%, 45%) !important;
+  --pill-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --pill-border-color-hover: #d4d4d4 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: white !important;
+  --pill-color-hover: white !important;
+  --pill-color-remove: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --pill-color-remove-hover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --pill-decoration: none !important;
+  --pill-decoration-hover: none !important;
+  --pill-focus-left-adjust: 0 !important;
+  --pill-focus-width: 100% !important;
+  --pill-padding-x: 0.65em !important;
+  --pill-padding-y: 0.25em !important;
+  --pill-radius: 2em !important;
+  --popover-font-size: 16px !important;
+  --popover-height: 400px !important;
+  --popover-max-height: 95vh !important;
+  --popover-pdf-height: 400px !important;
+  --popover-pdf-width: 450px !important;
+  --popover-width: 450px !important;
+  --prompt-border-color: transparent !important;
+  --prompt-border-width: 0 !important;
+  --prompt-input-height: 40px !important;
+  --prompt-max-height: 70vh !important;
+  --prompt-max-width: 80vw !important;
+  --prompt-width: 700px !important;
+  --radius-l: 0.75rem !important;
+  --radius-m: 0.5rem !important;
+  --radius-s: 0.25rem !important;
+  --radius-xl: 1rem !important;
+  --ribbon-background: transparent !important;
+  --ribbon-background-collapsed: transparent !important;
+  --ribbon-padding: 8px 4px 12px !important;
+  --ribbon-width: 3em !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2) !important;
+  --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
+  --scrollbar-border-width: 3px 3px 3px 2px !important;
+  --scrollbar-height: 12px !important;
+  --scrollbar-radius: 0.75rem !important;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
+  --scrollbar-width: 12px !important;
+  --search-clear-button-color: hsl(215, 67%, 45%) !important;
+  --search-clear-button-size: 13px !important;
+  --search-icon-color: hsl(215, 67%, 45%) !important;
+  --search-icon-size: 18px !important;
+  --search-result-background: white !important;
+  --shadow-l: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.2rem 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.4rem 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 1.2rem 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 2rem 4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --shadow-s: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --sidebar-markdown-font-size: calc( 16px * 0.8 ) !important;
+  --sidebar-tab-text-display: none !important;
+  --size-2-1: 2px !important;
+  --size-2-2: 4px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 4px !important;
+  --size-4-10: 40px !important;
+  --size-4-12: 48px !important;
+  --size-4-16: 64px !important;
+  --size-4-18: 72px !important;
+  --size-4-2: 8px !important;
+  --size-4-3: 12px !important;
+  --size-4-4: 16px !important;
+  --size-4-5: 20px !important;
+  --size-4-6: 24px !important;
+  --size-4-8: 32px !important;
+  --size-4-9: 36px !important;
+  --slider-s-thumb-position: -5px !important;
+  --slider-s-thumb-size: 15px !important;
+  --slider-thumb-border-color: #d4d4d4 !important;
+  --slider-thumb-border-width: 1px !important;
+  --slider-thumb-height: 18px !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-thumb-width: 18px !important;
+  --slider-thumb-y: -6px !important;
+  --slider-track-background: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --slider-track-height: 3px !important;
+  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 + 0.5 * 0.2)) ) !important;
+  --status-bar-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --status-bar-border-width: 1px 0 0 1px !important;
+  --status-bar-font-size: 0.7rem !important;
+  --status-bar-position: fixed !important;
+  --status-bar-radius: 0.5rem 0 0 0 !important;
+  --status-bar-text-color: black !important;
+  --swatch-height: 22px !important;
+  --swatch-radius: 14px !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
+  --swatch-width: 22px !important;
+  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
+  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: white !important;
+  --tab-container-background: transparent !important;
+  --tab-curve: calc(0.25em * 0.5) !important;
+  --tab-divider-color: #d4d4d4 !important;
+  --tab-font-size: 0.8rem !important;
+  --tab-max-width: 320px !important;
+  --tab-outline-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --tab-outline-width: 0 !important;
+  --tab-radius: 0.25em !important;
+  --tab-radius-active: 0.25em !important;
+  --tab-stacked-font-size: 0.8rem !important;
+  --tab-stacked-font-weight: 400 !important;
+  --tab-stacked-header-width: calc(18px + 1rem) !important;
+  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
+  --tab-stacked-text-align: start !important;
+  --tab-stacked-text-transform: rotate(0deg) !important;
+  --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --tab-switcher-preview-background-shadow: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 2%, transparent), 0 0.2rem 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0.4rem 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 1.2rem 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 2rem 4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 10%, transparent) !important;
+  --tab-switcher-preview-radius: 1rem !important;
+  --tab-switcher-preview-shadow: none !important;
+  --tab-switcher-preview-shadow-active: none !important;
+  --tab-text-color: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --tab-text-color-active: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --tab-text-color-focused: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --tab-text-color-focused-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --tab-text-color-focused-active-current: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%) !important;
+  --tab-width: 200px !important;
+  --table-add-button-background: transparent !important;
+  --table-add-button-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --table-add-button-border-width: 1px !important;
+  --table-background: transparent !important;
+  --table-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --table-border-width: 1px !important;
+  --table-cell-vertical-alignment: top !important;
+  --table-column-alt-background: transparent !important;
+  --table-column-first-border-width: 1px !important;
+  --table-column-last-border-width: 1px !important;
+  --table-column-max-width: none !important;
+  --table-column-min-width: 6ch !important;
+  --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: hsl(215, 67%, 45%) !important;
+  --table-drag-handle-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --table-drag-handle-color-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --table-drop-indicator-half-width: 2px !important;
+  --table-header-background: transparent !important;
+  --table-header-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --table-header-border-width: 1px !important;
+  --table-header-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --table-header-size: 16px !important;
+  --table-header-weight: calc(400 + 200) !important;
+  --table-line-height: 1.3 !important;
+  --table-row-alt-background: transparent !important;
+  --table-row-alt-background-hover: transparent !important;
+  --table-row-background-hover: transparent !important;
+  --table-row-last-border-width: 1px !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-blend-mode: darken !important;
+  --table-selection-border-color: hsl(215, 67%, 45%) !important;
+  --table-selection-border-radius: 4px !important;
+  --table-selection-border-width: 2px !important;
+  --table-text-size: 16px !important;
+  --table-white-space: break-spaces !important;
+  --tag-background: hsl( 258, 88%, 66%, 0.15 ) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-width: 0px !important;
+  --tag-color: hsl( 258, calc(88%), calc(66% * 0.9) ) !important;
+  --tag-color-hover: hsl(258, 88%, 66%) !important;
+  --tag-decoration: none !important;
+  --tag-decoration-hover: none !important;
+  --tag-padding-x: 0.65em !important;
+  --tag-padding-y: 0.25em !important;
+  --tag-radius: 2em !important;
+  --tag-size: 0.875em !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --text-faint: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --text-normal: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --text-on-accent: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --text-on-accent-inverted: black !important;
+  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
+  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --titlebar-border-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --titlebar-border-width: 0px !important;
+  --titlebar-height: 30px !important;
+  --titlebar-text-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), transparent 30%) !important;
+  --titlebar-text-color-focused: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --titlebar-text-weight: 700 !important;
+  --toggle-border-width: 2px !important;
+  --toggle-radius: 18px !important;
+  --toggle-s-border-width: 2px !important;
+  --toggle-s-thumb-height: 15px !important;
+  --toggle-s-thumb-width: 15px !important;
+  --toggle-s-width: 34px !important;
+  --toggle-thumb-color: white !important;
+  --toggle-thumb-height: 18px !important;
+  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-width: 18px !important;
+  --toggle-width: 40px !important;
+  --vault-profile-actions-display: flex !important;
+  --vault-profile-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --vault-profile-color-hover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --vault-profile-display: flex !important;
+  --vault-profile-font-size: 0.8rem !important;
+  --vault-profile-font-weight: 500 !important;
+  --viewer-container-height: 0 !important;
+  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
+  --xfa-focus-outline: auto !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --zoom-factor: 1 !important;
+  --base-h: 215 !important;
+  --base-l: 45% !important;
+  --base-s: 67% !important;
+  --embed-border-left: none !important;
+  --embed-border-right: none !important;
+  --embed-background: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --tag-weight: 400 !important;
+  --r-heading-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --r-heading-margin: 0.67em 0 0 0 !important;
+  --r-heading-text-transform: none !important;
+  --r-main-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --r-main-font-size: 42px !important;
+  --r-heading-font-weight: 100 !important;
+  --background-input: light-dark(hsl( from hsl(215, 67%, 45%) h s l / 0.12 ), hsl(from black h s l / 0.06)) !important;
+  --background-modifier-active-hover-alt: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --background-prompt: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --empty-pane-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --obsidian-columns-def-span: 1 !important;
+  --obsidian-columns-gap: 1em !important;
+  --obsidian-columns-min-width: 10em !important;
+  --obsidian-columns-padding: 0 0 !important;
+  --pill-background-remove-hover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --r-background-color: white !important;
+  --r-block-margin: 20px !important;
+  --r-code-font: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --r-heading-letter-spacing: normal !important;
+  --r-heading-line-height: 1.2 !important;
+  --r-heading-text-shadow: none !important;
+  --r-heading1-size: 2.5em !important;
+  --r-heading1-text-shadow: none !important;
+  --r-heading2-size: 1.6em !important;
+  --r-heading3-size: 1.3em !important;
+  --r-heading4-size: 1em !important;
+  --r-link-color: hsl(258, 88%, 66%) !important;
+  --r-link-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --r-main-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --tab-background-inactive: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-cardAspectRatio: auto !important;
+  --theme-cardImageFit: contain !important;
+  --theme-color-activeLineHighlight: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-audioRecordingActive: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-base: hsl(215, 67%, 45%) !important;
+  --theme-color-baseDarkened12: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.125) ) !important;
+  --theme-color-baseDarkened25: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-baseDarkened40: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) ) !important;
+  --theme-color-baseDarkened60: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) ) !important;
+  --theme-color-baseDarkened70: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-baseDarkened80: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-baseDarkened85: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.85) ) !important;
+  --theme-color-baseDarkened90: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --theme-color-baseLightened12: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.125) ) !important;
+  --theme-color-baseLightened25: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-baseLightened40: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ) !important;
+  --theme-color-baseLightened60: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-baseLightened70: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.7) ) !important;
+  --theme-color-baseLightened80: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-baseLightened85: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.85) ) !important;
+  --theme-color-baseLightened95: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-baseTransparent06: hsl( from hsl(215, 67%, 45%) h s l / 0.06 ) !important;
+  --theme-color-baseTransparent12: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-baseTransparent25: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --theme-color-baseTransparent35: hsl( from hsl(215, 67%, 45%) h s l / 0.35 ) !important;
+  --theme-color-baseTransparent50: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --theme-color-baseTransparent75: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --theme-color-blueDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-blueLightened: hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-calendarBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.85) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) )) !important;
+  --theme-color-calendarDayBg: hsl(from white h s l / 0.75) !important;
+  --theme-color-card: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-cardBg: white !important;
+  --theme-color-cardBgHover: hsl(215, 67%, 45%) !important;
+  --theme-color-cardHover: white !important;
+  --theme-color-communityItemBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-communityItemBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-communityItemBgHover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-communityItemBgSelected: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.125) ) !important;
+  --theme-color-contentItemBg: hsl(from white h s l / 0.5) !important;
+  --theme-color-contentItemBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-contentItemBgHover: hsl(from white h s l / 0.25) !important;
+  --theme-color-control: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ), color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) ) !important;
+  --theme-color-controlActive: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ),color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --theme-color-controlBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-controlBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-controlBgHover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) )) !important;
+  --theme-color-controlBgLowWeight: hsl(from white h s l / 0.5) !important;
+  --theme-color-controlContentArea: hsl(215, 67%, 45%) !important;
+  --theme-color-controlContentAreaHover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-controlHasActiveMenu: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) )) !important;
+  --theme-color-controlHover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --theme-color-controlLightweightActive: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-controlSetBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-controlText: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-controlTextHover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-controlUIHover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-controlUISelected: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-cyanDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-cyanLightened: hsl( from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06) !important;
+  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12) !important;
+  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25) !important;
+  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5) !important;
+  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75) !important;
+  --theme-color-dataviewEmpty: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) ) ) !important;
+  --theme-color-dragTarget: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --theme-color-dragTargetBg: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --theme-color-emptyStateBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-gradientBottom: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 0.5 * 0.2)) ) !important;
+  --theme-color-gradientCardsetBottom: hsl( from hsl(215, 67%, 45%) h s l / 0.06 ) !important;
+  --theme-color-gradientCardsetGeneratedBottom: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-gradientCardsetGeneratedTop: hsl( from hsl(215, 67%, 45%) h s l / 0.35 ) !important;
+  --theme-color-gradientCardsetTop: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-gradientTop: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 + 0.5 * 0.2)) ) !important;
+  --theme-color-graphLine: black !important;
+  --theme-color-graphViewBg: transparent !important;
+  --theme-color-greenDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-greenLightened: hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25) !important;
+  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75) !important;
+  --theme-color-hotkey: hsl(215, 67%, 45%) !important;
+  --theme-color-inputBorder: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-inputPlaceholder: hsl(215, 67%, 45%) !important;
+  --theme-color-interactiveActive: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-jiraIssueDanger: white !important;
+  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
+  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --theme-color-jiraIssueInfoBg: light-dark( hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-jiraIssueStatus: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-jiraIssueStatusBg: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) ) !important;
+  --theme-color-jiraIssueSuccessBg: light-dark( hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-jiraIssueTableStripe: light-dark( hsl(from white h s l / 0.5), hsl(from black h s l / 0.5) ) !important;
+  --theme-color-jiraIssueWarningBg: light-dark(control hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-kanbanLaneBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06) !important;
+  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12) !important;
+  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25) !important;
+  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5) !important;
+  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75) !important;
+  --theme-color-lineNumbers: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) )) !important;
+  --theme-color-log: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-logBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-menuBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-mobileToolbarBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-modalContentBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-navFileTag: hsl(215, 67%, 45%) !important;
+  --theme-color-navFileTagActive: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-navFileTagActiveBorder: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-navFileTagBorder: hsl(215, 67%, 45%) !important;
+  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%) !important;
+  --theme-color-notice: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-noticeBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-orangeDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-orangeLightened: hsl( from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25) !important;
+  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75) !important;
+  --theme-color-pinkDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-pinkLightened: hsl( from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-promptInstructions: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) ) !important;
+  --theme-color-purpleDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-purpleLightened: hsl( from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-queryComponentBg: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-redDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-redLightened: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
+  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75) !important;
+  --theme-color-settingsBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-settingsBgStripe: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-settingsGroupBg: hsl(from white h s l / 0.5) !important;
+  --theme-color-shadow: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-suggestionBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.85) ) !important;
+  --theme-color-switcherBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-tabBgInactiveHover: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --theme-color-tabNavActiveBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.7) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) )) !important;
+  --theme-color-tabNavBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) )) !important;
+  --theme-color-tableHeaderBg: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-tagBgHover: hsl( 258, calc(88% * 1.02), calc(66% * 1.035), 0.1 ) !important;
+  --theme-color-tagBgSidebar: hsl( 258, calc(88% * 1.2), calc(66% * 1), 0.15 ) !important;
+  --theme-color-tagBgSidebarHover: hsl( 258, calc(88% * 1.22), calc(66% * 1.15), 0.15 ) !important;
+  --theme-color-tagHover: hsl( 258, calc(88% * 1.02), calc(66% * 1.035) ) !important;
+  --theme-color-tagSidebar: hsl( 258, calc(88% * 1), calc(66% * 0.4) ) !important;
+  --theme-color-tagSidebarHover: hsl( 258, calc(88% * 1.02), calc(66% * 0.46) ) !important;
+  --theme-color-textMeta: hsl(215, 67%, 45%) !important;
+  --theme-color-textSelected: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-warningBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-yellowDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-yellowLightened: hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25) !important;
+  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75) !important;
+  --theme-gradient-bottomToTop: linear-gradient( 0deg, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 0.5 * 0.2)) ) 0%, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 + 0.5 * 0.2)) ) 100% ) !important;
+  --theme-gradient-topToBottom: linear-gradient( 0deg, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 + 0.5 * 0.2)) ) 0%, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 0.5 * 0.2)) ) 100% ) !important;
+  --theme-grid-cardSet: repeat( auto-fit, minmax(8em, 1fr) ) !important;
+  --theme-length-cardImageHeight: 25em !important;
+  --theme-length-cardMaxWidth: 1fr !important;
+  --theme-length-cardMinWidth: 8em !important;
+  --theme-length-checkboxBorderWidth: 1px !important;
+  --theme-length-closeButtonWidth: 1.5rem !important;
+  --theme-length-collapseIndicatorSize: 1.5rem !important;
+  --theme-length-controlSetSpacing: 0.5rem !important;
+  --theme-length-fullBorderRadius: 9999px !important;
+  --theme-length-radiusXS: 0.125rem !important;
+  --theme-length-statusBarHeight: 2rem !important;
+  --theme-padding-block: 0.75em 1.5em !important;
+  --theme-padding-blockHorizontal: 1.5em !important;
+  --theme-padding-blockVertical: 0.75em !important;
+  --theme-setting-lineWidth: 60 !important;
+  --theme-shadow-control: 0 1px 2px hsl( 215, calc(67% * 1.5), calc(45% * 0.25), 0.5 ) !important;
+  --theme-shadow-indent: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 3%, transparent), 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 6%, transparent), 0 0 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 9%, transparent), 0 0 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 12%, transparent), 0 0 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 15%, transparent) !important;
+  --theme-shadow-indent-small: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 4%, transparent), 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 8%, transparent), 0 0 0.6rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 12%, transparent), 0 0 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 16%, transparent), 0 0 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) 20%, transparent) !important;
+  --theme-shadow-input: 0 1px 2px hsl( 215, calc(67% * 1.5), calc(45% * 0.25), 0.2 ), 0 3.4px 6.7px hsl( 215, calc(67% * 1), calc(45% * 0.25), 0.15 ), 0 15px 30px hsl( 215, calc(67% * 0.75), calc(45% * 0.25), 0.05 ) !important;
+  --theme-value-gradientContrast: 0.2 !important;
+  --theme-value-headingScaleFactor: 1.2 !important;
+  --theme-value-sidebarFontScalingFactor: 0.8 !important;
+  --theme-color-gradientDarkenedBottom: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 1.25 * 0.2)) ) !important;
+  --theme-color-gradientDarkenedTop: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 0.25 * 0.2)) ) !important;
+  --theme-gradient-DarkenedTopToBottom: linear-gradient( 0deg, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 0.25 * 0.2)) ) 0%, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * (0.5 - 1.25 * 0.2)) ) 100% ) !important;
+}
+
+body.theme-dark {
+  --accent-h: 258 !important;
+  --accent-l: 66% !important;
+  --accent-s: 88% !important;
+  --anim-duration-fast: 140ms !important;
+  --anim-duration-moderate: 300ms !important;
+  --anim-duration-none: 0 !important;
+  --anim-duration-slow: 560ms !important;
+  --anim-duration-superfast: 70ms !important;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
+  --background-modifier-active-hover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --background-modifier-border: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --background-modifier-border-focus: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --background-modifier-border-hover: #3f3f3f !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
+  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
+  --background-modifier-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --background-modifier-error-hover: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --background-modifier-error-rgb: 251, 70, 76 !important;
+  --background-modifier-form-field: #2a2a2a !important;
+  --background-modifier-form-field-hover: #2a2a2a !important;
+  --background-modifier-hover: hsl(215, 67%, 45%) !important;
+  --background-modifier-message: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --background-modifier-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --background-modifier-success-rgb: 68, 207, 110 !important;
+  --background-primary: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --background-primary-alt: #242424 !important;
+  --background-secondary: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --background-secondary-alt: #363636 !important;
+  --bases-cards-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --bases-cards-border-width: 1px !important;
+  --bases-cards-container-background: transparent !important;
+  --bases-cards-cover-background: light-dark(hsl(from black h s l / 0.06), hsl(from white h s l / 0.06)) !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-line-height: 24px !important;
+  --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --bases-cards-shadow-hover: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-embed-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --bases-embed-border-radius: 0.25rem !important;
+  --bases-embed-border-width: 0px !important;
+  --bases-filter-menu-width: 520px !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-height: 40px !important;
+  --bases-header-padding-end: 0.5em !important;
+  --bases-header-padding-start: 0.5em !important;
+  --bases-table-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --bases-table-cell-background-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-cell-radius-active: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(215, 67%, 45%) !important;
+  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-max-width: 300 !important;
+  --bases-table-column-min-width: 40 !important;
+  --bases-table-container-border-radius: 0.25rem !important;
+  --bases-table-container-border-width: 1px !important;
+  --bases-table-header-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --bases-table-header-background-hover: hsl(215, 67%, 45%) !important;
+  --bases-table-header-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --bases-table-header-icon-display: flex !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-weight: 400 !important;
+  --bases-table-row-background-hover: transparent !important;
+  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-height: 30px !important;
+  --bases-table-text-size: 0.875em !important;
+  --bases-toolbar-badge-display: none !important;
+  --bases-toolbar-label-display: block !important;
+  --blockquote-background-color: transparent !important;
+  --blockquote-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --blockquote-border-thickness: 0.25em !important;
+  --blockquote-font-style: normal !important;
+  --bold-modifier: 200 !important;
+  --bold-weight: calc(400 + 200) !important;
+  --border-width: 1px !important;
+  --button-radius: 5px !important;
+  --callout-blend-mode: lighten !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 251, 70, 76 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 2, 122, 255 !important;
+  --callout-error: 251, 70, 76 !important;
+  --callout-example: 168, 130, 255 !important;
+  --callout-fail: 251, 70, 76 !important;
+  --callout-important: 83, 223, 221 !important;
+  --callout-info: 2, 122, 255 !important;
+  --callout-padding: 0.75em 1.5em !important;
+  --callout-question: 233, 151, 63 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 0.25rem !important;
+  --callout-success: 68, 207, 110 !important;
+  --callout-summary: 83, 223, 221 !important;
+  --callout-tip: 83, 223, 221 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: calc(400 + 200) !important;
+  --callout-todo: 2, 122, 255 !important;
+  --callout-warning: 233, 151, 63 !important;
+  --canvas-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --canvas-card-label-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --canvas-color: 126, 126, 126 !important;
+  --canvas-color-1: 251, 70, 76 !important;
+  --canvas-color-2: 233, 151, 63 !important;
+  --canvas-color-3: 224, 222, 113 !important;
+  --canvas-color-4: 68, 207, 110 !important;
+  --canvas-color-5: 83, 223, 221 !important;
+  --canvas-color-6: 168, 130, 255 !important;
+  --canvas-dot-pattern: #363636 !important;
+  --caret-color: hsl(258, 150%, 80%) !important;
+  --checkbox-border-color: hsl(215, 67%, 45%) !important;
+  --checkbox-border-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --checkbox-color: hsl(215, 67%, 45%) !important;
+  --checkbox-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --checkbox-radius: 0.25rem !important;
+  --checkbox-size: 16px !important;
+  --checklist-done-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --checklist-done-decoration: line-through !important;
+  --clickable-icon-radius: 0.25rem !important;
+  --code-background: light-dark( hsl(from black h s l / 0.06), hsl(from white h s l / 0.06) ) !important;
+  --code-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  --code-comment: light-dark( hsl(from black h s l / 0.5), hsl(from white h s l / 0.5) ) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --code-radius: 0.25rem !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --code-white-space: pre-wrap !important;
+  --collapse-icon-color: hsl(215, 67%, 45%) !important;
+  --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --color-accent-hsl: 258, 88%, 66% !important;
+  --color-base-00: #1e1e1e !important;
+  --color-base-05: #212121 !important;
+  --color-base-10: #242424 !important;
+  --color-base-100: #dadada !important;
+  --color-base-20: #262626 !important;
+  --color-base-25: #2a2a2a !important;
+  --color-base-30: #363636 !important;
+  --color-base-35: #3f3f3f !important;
+  --color-base-40: #555555 !important;
+  --color-base-50: #666666 !important;
+  --color-base-60: #999999 !important;
+  --color-base-70: #b3b3b3 !important;
+  --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
+  --color-blue-rgb: 2, 122, 255 !important;
+  --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --color-cyan-rgb: 83, 223, 221 !important;
+  --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --color-green-rgb: 68, 207, 110 !important;
+  --color-orange: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --color-orange-rgb: 233, 151, 63 !important;
+  --color-pink: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --color-pink-rgb: 250, 153, 205 !important;
+  --color-purple: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --color-purple-rgb: 168, 130, 255 !important;
+  --color-red: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --color-red-rgb: 251, 70, 76 !important;
+  --color-yellow: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --color-yellow-rgb: 224, 222, 113 !important;
+  --cursor: default !important;
+  --cursor-link: pointer !important;
+  --dialog-max-height: 85vh !important;
+  --dialog-max-width: 80vw !important;
+  --dialog-width: 560px !important;
+  --direction: 1 !important;
+  --divider-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --divider-color-hover: hsl(215, 67%, 45%) !important;
+  --divider-vertical-height: 100% !important;
+  --divider-width: 0 !important;
+  --divider-width-hover: 3px !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-text-color: #fff !important;
+  --dropdown-background: #363636 !important;
+  --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: #3f3f3f !important;
+  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
+  --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --embed-block-shadow-hover: 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ), inset 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --embed-border-bottom: none !important;
+  --embed-border-end: none !important;
+  --embed-border-start: none !important;
+  --embed-border-top: none !important;
+  --embed-canvas-max-height: 400px !important;
+  --embed-max-height: 4000px !important;
+  --embed-padding: 1em !important;
+  --file-folding-offset: 24px !important;
+  --file-header-border: 1px solid transparent !important;
+  --file-header-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --file-header-font-size: 0.8rem !important;
+  --file-header-font-weight: 400 !important;
+  --file-header-justify: center !important;
+  --file-line-width: calc(1ch * 60) !important;
+  --file-margins: 0 2em !important;
+  --flair-background: hsl(215, 67%, 45%) !important;
+  --flair-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --focus-ring-color: #0df !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-black: 900 !important;
+  --font-bold: 700 !important;
+  --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-extrabold: 800 !important;
+  --font-extralight: 200 !important;
+  --font-interface: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-interface-override: "??" !important;
+  --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-light: 300 !important;
+  --font-medium: 500 !important;
+  --font-mermaid: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-monospace: "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-override: "??" !important;
+  --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-normal: 400 !important;
+  --font-print: "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial" !important;
+  --font-print-override: "??" !important;
+  --font-semibold: 600 !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
+  --font-text: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-text-override: "??" !important;
+  --font-text-size: 16px !important;
+  --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --font-thin: 100 !important;
+  --font-ui-large: 1.125rem !important;
+  --font-ui-medium: 1rem !important;
+  --font-ui-small: 0.8rem !important;
+  --font-ui-smaller: 0.7rem !important;
+  --font-weight: 400 !important;
+  --footnote-divider-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --footnote-divider-color-active: transparent !important;
+  --footnote-divider-width: 1px !important;
+  --footnote-gap: 4px !important;
+  --footnote-id-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --footnote-id-color-no-occurrences: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --footnote-id-delimiter: "." !important;
+  --footnote-input-background: transparent !important;
+  --footnote-input-background-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --footnote-line-height: 1.5 !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
+  --footnote-radius: 0.25rem !important;
+  --footnote-size: 0.875em !important;
+  --frame-left-space: calc(80px - 3em) !important;
+  --frame-right-space: 0px !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --graph-node-unresolved: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --graph-text: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --h1-line-height: 1.5 !important;
+  --h1-size: calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * 16px))))) !important;
+  --h1-style: normal !important;
+  --h1-variant: normal !important;
+  --h1-weight: 100 !important;
+  --h2-line-height: 1.5 !important;
+  --h2-size: calc(1.2 * calc(1.2 * calc(1.2 * calc(1.2 * 16px)))) !important;
+  --h2-style: normal !important;
+  --h2-variant: normal !important;
+  --h2-weight: 200 !important;
+  --h3-line-height: 1.5 !important;
+  --h3-size: calc(1.2 * calc(1.2 * calc(1.2 * 16px))) !important;
+  --h3-style: normal !important;
+  --h3-variant: normal !important;
+  --h3-weight: 300 !important;
+  --h4-line-height: 1.5 !important;
+  --h4-size: calc(1.2 * calc(1.2 * 16px)) !important;
+  --h4-style: normal !important;
+  --h4-variant: normal !important;
+  --h4-weight: 400 !important;
+  --h5-line-height: 1.5 !important;
+  --h5-size: calc(1.2 * 16px) !important;
+  --h5-style: normal !important;
+  --h5-variant: normal !important;
+  --h5-weight: 500 !important;
+  --h6-line-height: 1.5 !important;
+  --h6-size: 16px !important;
+  --h6-style: normal !important;
+  --h6-variant: normal !important;
+  --h6-weight: 500 !important;
+  --header-height: calc(18px + 1rem) !important;
+  --heading-formatting: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --heading-spacing: 0.67em !important;
+  --highlight-mix-blend-mode: lighten !important;
+  --hr-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --hr-thickness: 2px !important;
+  --icon-color: hsl(215, 67%, 45%) !important;
+  --icon-color-active: light-dark(white, black) !important;
+  --icon-color-focused: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --icon-color-hover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --indent-size: 4 !important;
+  --indent-unit: 0.5625em !important;
+  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
+  --indentation-guide-editing-indent: 0.85em !important;
+  --indentation-guide-reading-indent: -0.85em !important;
+  --indentation-guide-source-indent: 0.25em !important;
+  --indentation-guide-width: 1px !important;
+  --indentation-guide-width-active: 1px !important;
+  --inline-title-line-height: 1.5 !important;
+  --inline-title-margin-bottom: 0.5em !important;
+  --inline-title-size: calc(1.2 * calc(1.2 * calc(1.2 * 16px))) !important;
+  --inline-title-style: normal !important;
+  --inline-title-variant: normal !important;
+  --inline-title-weight: 400 !important;
+  --input-border-width: 2px !important;
+  --input-border-width-focus: 2px !important;
+  --input-date-separator: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --input-font-weight: 400 !important;
+  --input-height: 30px !important;
+  --input-padding: 4px 8px !important;
+  --input-placeholder-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --input-radius: 5px !important;
+  --input-shadow: 0px 1px 2px hsl( 215, calc(67% * 0.1), calc(45% * 0.1), 0.1 ) !important;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --interactive-accent: hsl(215, 67%, 45%) !important;
+  --interactive-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --interactive-accent-hsl: 258, 88%, 66% !important;
+  --interactive-hover: #3f3f3f !important;
+  --interactive-normal: #363636 !important;
+  --keyboard-height: 0px !important;
+  --layer-cover: 5 !important;
+  --layer-dragged-item: 80 !important;
+  --layer-menu: 65 !important;
+  --layer-modal: 50 !important;
+  --layer-notice: 60 !important;
+  --layer-popover: 30 !important;
+  --layer-sidedock: 10 !important;
+  --layer-slides: 45 !important;
+  --layer-status-bar: 15 !important;
+  --layer-tooltip: 70 !important;
+  --line-height-normal: 1.5 !important;
+  --line-height-tight: 1.3 !important;
+  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --link-decoration: underline !important;
+  --link-decoration-hover: underline !important;
+  --link-decoration-thickness: 1px !important;
+  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --link-external-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --link-external-decoration: underline !important;
+  --link-external-decoration-hover: underline !important;
+  --link-external-filter: none !important;
+  --link-unresolved-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --link-unresolved-decoration-style: dashed !important;
+  --link-unresolved-filter: none !important;
+  --link-unresolved-opacity: 0.7 !important;
+  --link-weight: 400 !important;
+  --list-bullet-border: none !important;
+  --list-bullet-end-padding: 1.3rem !important;
+  --list-bullet-radius: 50% !important;
+  --list-bullet-size: 0.25em !important;
+  --list-bullet-transform: none !important;
+  --list-indent: 1.5em !important;
+  --list-indent-editing: 0.75em !important;
+  --list-indent-source: 0 !important;
+  --list-marker-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --list-marker-color-collapsed: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --list-marker-color-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --list-numbered-style: decimal !important;
+  --list-spacing: 0.075em !important;
+  --loading-icon-delay: 400ms !important;
+  --menu-backdrop-filter: none !important;
+  --menu-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --menu-border-color: #3f3f3f !important;
+  --menu-border-width: 1px !important;
+  --menu-padding: 6px !important;
+  --menu-radius: 0.5rem !important;
+  --menu-shadow: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --metadata-background: transparent !important;
+  --metadata-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --metadata-border-radius: 0 !important;
+  --metadata-border-width: 0 !important;
+  --metadata-display-editing: block !important;
+  --metadata-display-reading: block !important;
+  --metadata-divider-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --metadata-divider-color-focus: transparent !important;
+  --metadata-divider-color-hover: transparent !important;
+  --metadata-divider-width: 0 !important;
+  --metadata-gap: 0.5em !important;
+  --metadata-input-background: transparent !important;
+  --metadata-input-background-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --metadata-input-background-hover: transparent !important;
+  --metadata-input-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --metadata-input-font-size: 0.875em !important;
+  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-text-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --metadata-label-background: transparent !important;
+  --metadata-label-background-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --metadata-label-background-hover: transparent !important;
+  --metadata-label-font: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --metadata-label-font-size: 0.875em !important;
+  --metadata-label-text-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --metadata-label-text-color-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --metadata-label-width: 9em !important;
+  --metadata-max-width: none !important;
+  --metadata-padding: 8px 0 !important;
+  --metadata-property-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --metadata-property-background-active: hsl(215, 67%, 45%) !important;
+  --metadata-property-background-hover: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --metadata-property-box-shadow-hover: none !important;
+  --metadata-property-padding: 0 !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
+  --metadata-sidebar-input-font-size: 0.8rem !important;
+  --metadata-sidebar-label-font-size: 0.8rem !important;
+  --modal-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --modal-border-color: black !important;
+  --modal-border-width: 0 !important;
+  --modal-community-sidebar-width: 280px !important;
+  --modal-height: 85vh !important;
+  --modal-max-height: calc( 100vh - 0px - 0px - 2em ) !important;
+  --modal-max-width: calc( 100vw - 0px - 0px - 2em ) !important;
+  --modal-max-width-narrow: 800px !important;
+  --modal-radius: 0.75rem !important;
+  --modal-width: 65rem !important;
+  --mono-rgb-0: 0, 0, 0 !important;
+  --mono-rgb-100: 255, 255, 255 !important;
+  --nav-collapse-icon-color: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-collapse-icon-color-collapsed: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-heading-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --nav-heading-color-collapsed: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --nav-heading-color-hover: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --nav-heading-weight: 500 !important;
+  --nav-heading-weight-hover: 500 !important;
+  --nav-indentation-guide-color: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --nav-indentation-guide-width: 1px !important;
+  --nav-item-background-active: hsl(215, 67%, 45%) !important;
+  --nav-item-background-hover: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --nav-item-background-selected: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --nav-item-children-margin-start: calc( 16px / 2 - 1px / 2 ) !important;
+  --nav-item-children-padding-start: calc( 1em - 1px / 2 ) !important;
+  --nav-item-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --nav-item-color-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --nav-item-color-hover: black !important;
+  --nav-item-color-selected: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
+  --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
+  --nav-item-size: 0.8rem !important;
+  --nav-item-white-space: pre !important;
+  --p-spacing: 1em !important;
+  --p-spacing-empty: 0rem !important;
+  --page-border: 9px solid transparent !important;
+  --page-margin: 1px auto -8px !important;
+  --pdf-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --pdf-page-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --pdf-shadow: 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --pdf-sidebar-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --pdfViewer-padding-bottom: 0 !important;
+  --pill-background: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --pill-background-hover: hsl(215, 67%, 45%) !important;
+  --pill-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --pill-border-color-hover: #3f3f3f !important;
+  --pill-border-width: 1px !important;
+  --pill-color: black !important;
+  --pill-color-hover: black !important;
+  --pill-color-remove: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --pill-color-remove-hover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --pill-decoration: none !important;
+  --pill-decoration-hover: none !important;
+  --pill-focus-left-adjust: 0 !important;
+  --pill-focus-width: 100% !important;
+  --pill-padding-x: 0.65em !important;
+  --pill-padding-y: 0.25em !important;
+  --pill-radius: 2em !important;
+  --popover-font-size: 16px !important;
+  --popover-height: 400px !important;
+  --popover-max-height: 95vh !important;
+  --popover-pdf-height: 400px !important;
+  --popover-pdf-width: 450px !important;
+  --popover-width: 450px !important;
+  --prompt-border-color: transparent !important;
+  --prompt-border-width: 0 !important;
+  --prompt-input-height: 40px !important;
+  --prompt-max-height: 70vh !important;
+  --prompt-max-width: 80vw !important;
+  --prompt-width: 700px !important;
+  --radius-l: 0.75rem !important;
+  --radius-m: 0.5rem !important;
+  --radius-s: 0.25rem !important;
+  --radius-xl: 1rem !important;
+  --ribbon-background: transparent !important;
+  --ribbon-background-collapsed: transparent !important;
+  --ribbon-padding: 8px 4px 12px !important;
+  --ribbon-width: 3em !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2) !important;
+  --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
+  --scrollbar-border-width: 3px 3px 3px 2px !important;
+  --scrollbar-height: 12px !important;
+  --scrollbar-radius: 0.75rem !important;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
+  --scrollbar-width: 12px !important;
+  --search-clear-button-color: hsl(215, 67%, 45%) !important;
+  --search-clear-button-size: 13px !important;
+  --search-icon-color: hsl(215, 67%, 45%) !important;
+  --search-icon-size: 18px !important;
+  --search-result-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --shadow-l: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.2rem 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.4rem 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 1.2rem 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 2rem 4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --shadow-s: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.05rem 0.1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.1rem 0.3rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 0.3rem 0.5rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 0.5rem 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --sidebar-markdown-font-size: calc( 16px * 0.8 ) !important;
+  --sidebar-tab-text-display: none !important;
+  --size-2-1: 2px !important;
+  --size-2-2: 4px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 4px !important;
+  --size-4-10: 40px !important;
+  --size-4-12: 48px !important;
+  --size-4-16: 64px !important;
+  --size-4-18: 72px !important;
+  --size-4-2: 8px !important;
+  --size-4-3: 12px !important;
+  --size-4-4: 16px !important;
+  --size-4-5: 20px !important;
+  --size-4-6: 24px !important;
+  --size-4-8: 32px !important;
+  --size-4-9: 36px !important;
+  --slider-s-thumb-position: -5px !important;
+  --slider-s-thumb-size: 15px !important;
+  --slider-thumb-border-color: #3f3f3f !important;
+  --slider-thumb-border-width: 1px !important;
+  --slider-thumb-height: 18px !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-thumb-width: 18px !important;
+  --slider-thumb-y: -6px !important;
+  --slider-track-background: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --slider-track-height: 3px !important;
+  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 - 0.5 * 0.2)) ) !important;
+  --status-bar-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --status-bar-border-width: 1px 0 0 1px !important;
+  --status-bar-font-size: 0.7rem !important;
+  --status-bar-position: fixed !important;
+  --status-bar-radius: 0.5rem 0 0 0 !important;
+  --status-bar-text-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --swatch-height: 22px !important;
+  --swatch-radius: 14px !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  --swatch-width: 22px !important;
+  --sync-avatar-color-1: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --sync-avatar-color-2: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --sync-avatar-color-3: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --sync-avatar-color-4: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --sync-avatar-color-5: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --sync-avatar-color-6: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
+  --sync-avatar-color-7: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --sync-avatar-color-8: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --tab-container-background: transparent !important;
+  --tab-curve: calc(0.25em * 0.5) !important;
+  --tab-divider-color: #3f3f3f !important;
+  --tab-font-size: 0.8rem !important;
+  --tab-max-width: 320px !important;
+  --tab-outline-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --tab-outline-width: 0 !important;
+  --tab-radius: 0.25em !important;
+  --tab-radius-active: 0.25em !important;
+  --tab-stacked-font-size: 0.8rem !important;
+  --tab-stacked-font-weight: 400 !important;
+  --tab-stacked-header-width: calc(18px + 1rem) !important;
+  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
+  --tab-stacked-text-align: start !important;
+  --tab-stacked-text-transform: rotate(0deg) !important;
+  --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --tab-switcher-preview-background-shadow: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 2%, transparent), 0 0.2rem 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0.4rem 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 1.2rem 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 2rem 4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 10%, transparent) !important;
+  --tab-switcher-preview-radius: 1rem !important;
+  --tab-switcher-preview-shadow: none !important;
+  --tab-switcher-preview-shadow-active: none !important;
+  --tab-text-color: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --tab-text-color-active: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --tab-text-color-focused: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --tab-text-color-focused-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --tab-text-color-focused-active-current: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --tab-text-color-focused-highlighted: hsl(215, 67%, 45%) !important;
+  --tab-width: 200px !important;
+  --table-add-button-background: transparent !important;
+  --table-add-button-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --table-add-button-border-width: 1px !important;
+  --table-background: transparent !important;
+  --table-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --table-border-width: 1px !important;
+  --table-cell-vertical-alignment: top !important;
+  --table-column-alt-background: transparent !important;
+  --table-column-first-border-width: 1px !important;
+  --table-column-last-border-width: 1px !important;
+  --table-column-max-width: none !important;
+  --table-column-min-width: 6ch !important;
+  --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: hsl(215, 67%, 45%) !important;
+  --table-drag-handle-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --table-drag-handle-color-active: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --table-drop-indicator-half-width: 2px !important;
+  --table-header-background: transparent !important;
+  --table-header-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --table-header-border-width: 1px !important;
+  --table-header-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --table-header-size: 16px !important;
+  --table-header-weight: calc(400 + 200) !important;
+  --table-line-height: 1.3 !important;
+  --table-row-alt-background: transparent !important;
+  --table-row-alt-background-hover: transparent !important;
+  --table-row-background-hover: transparent !important;
+  --table-row-last-border-width: 1px !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-blend-mode: lighten !important;
+  --table-selection-border-color: hsl(215, 67%, 45%) !important;
+  --table-selection-border-radius: 4px !important;
+  --table-selection-border-width: 2px !important;
+  --table-text-size: 16px !important;
+  --table-white-space: break-spaces !important;
+  --tag-background: hsl(258, 88%, 66%, 0.2) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-width: 0px !important;
+  --tag-color: hsl( 258, calc(88% * 1.2), calc(66%) ) !important;
+  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --tag-decoration: none !important;
+  --tag-decoration-hover: none !important;
+  --tag-padding-x: 0.65em !important;
+  --tag-padding-y: 0.25em !important;
+  --tag-radius: 2em !important;
+  --tag-size: 0.875em !important;
+  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --text-faint: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --text-normal: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --text-on-accent: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --text-on-accent-inverted: black !important;
+  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
+  --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --titlebar-border-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --titlebar-border-width: 0px !important;
+  --titlebar-height: 30px !important;
+  --titlebar-text-color: color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), transparent 30%) !important;
+  --titlebar-text-color-focused: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --titlebar-text-weight: 700 !important;
+  --toggle-border-width: 2px !important;
+  --toggle-radius: 18px !important;
+  --toggle-s-border-width: 2px !important;
+  --toggle-s-thumb-height: 15px !important;
+  --toggle-s-thumb-width: 15px !important;
+  --toggle-s-width: 34px !important;
+  --toggle-thumb-color: white !important;
+  --toggle-thumb-height: 18px !important;
+  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-width: 18px !important;
+  --toggle-width: 40px !important;
+  --vault-profile-actions-display: flex !important;
+  --vault-profile-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --vault-profile-color-hover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --vault-profile-display: flex !important;
+  --vault-profile-font-size: 0.8rem !important;
+  --vault-profile-font-weight: 500 !important;
+  --viewer-container-height: 0 !important;
+  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
+  --xfa-focus-outline: auto !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --zoom-factor: 1 !important;
+  --base-h: 215 !important;
+  --base-l: 45% !important;
+  --base-s: 67% !important;
+  --embed-border-left: none !important;
+  --embed-border-right: none !important;
+  --embed-background: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --tag-weight: 400 !important;
+  --r-heading-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --r-heading-margin: 0.67em 0 0 0 !important;
+  --r-heading-text-transform: none !important;
+  --r-main-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  --r-main-font-size: 42px !important;
+  --r-heading-font-weight: 100 !important;
+  --background-input: light-dark(hsl( from hsl(215, 67%, 45%) h s l / 0.12 ), hsl(from black h s l / 0.06)) !important;
+  --background-modifier-active-hover-alt: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --background-prompt: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --empty-pane-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --obsidian-columns-def-span: 1 !important;
+  --obsidian-columns-gap: 1em !important;
+  --obsidian-columns-min-width: 10em !important;
+  --obsidian-columns-padding: 0 0 !important;
+  --pill-background-remove-hover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --r-background-color: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --r-block-margin: 20px !important;
+  --r-code-font: ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --r-heading-letter-spacing: normal !important;
+  --r-heading-line-height: 1.2 !important;
+  --r-heading-text-shadow: none !important;
+  --r-heading1-size: 2.5em !important;
+  --r-heading1-text-shadow: none !important;
+  --r-heading2-size: 1.6em !important;
+  --r-heading3-size: 1.3em !important;
+  --r-heading4-size: 1em !important;
+  --r-link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --r-link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --r-main-color: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --tab-background-inactive: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.85) ) !important;
+  --theme-cardAspectRatio: auto !important;
+  --theme-cardImageFit: contain !important;
+  --theme-color-activeLineHighlight: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-audioRecordingActive: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-base: hsl(215, 67%, 45%) !important;
+  --theme-color-baseDarkened12: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.125) ) !important;
+  --theme-color-baseDarkened25: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-baseDarkened40: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) ) !important;
+  --theme-color-baseDarkened60: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) ) !important;
+  --theme-color-baseDarkened70: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-baseDarkened80: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-baseDarkened85: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.85) ) !important;
+  --theme-color-baseDarkened90: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --theme-color-baseLightened12: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.125) ) !important;
+  --theme-color-baseLightened25: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-baseLightened40: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ) !important;
+  --theme-color-baseLightened60: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-baseLightened70: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.7) ) !important;
+  --theme-color-baseLightened80: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-baseLightened85: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.85) ) !important;
+  --theme-color-baseLightened95: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-baseTransparent06: hsl( from hsl(215, 67%, 45%) h s l / 0.06 ) !important;
+  --theme-color-baseTransparent12: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-baseTransparent25: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --theme-color-baseTransparent35: hsl( from hsl(215, 67%, 45%) h s l / 0.35 ) !important;
+  --theme-color-baseTransparent50: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --theme-color-baseTransparent75: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --theme-color-blockId: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-blueDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-blueLightened: hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-calendarBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.85) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) )) !important;
+  --theme-color-calendarDayBg: hsl(from black h s l / 0.5) !important;
+  --theme-color-card: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-cardBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.95) ) !important;
+  --theme-color-cardBgHover: hsl(215, 67%, 45%) !important;
+  --theme-color-cardHover: black !important;
+  --theme-color-communityItemBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-communityItemBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-communityItemBgHover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-communityItemBgSelected: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.125) ) !important;
+  --theme-color-contentItemBg: rgb(0, 0, 0, 0.2) !important;
+  --theme-color-contentItemBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1) !important;
+  --theme-color-control: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ), color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) ) !important;
+  --theme-color-controlActive: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ),color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --theme-color-controlBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-controlBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-controlBgHover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) )) !important;
+  --theme-color-controlBgLowWeight: hsl(from black h s l / 0.25) !important;
+  --theme-color-controlContentArea: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-controlContentAreaHover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-controlHasActiveMenu: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) )) !important;
+  --theme-color-controlHover: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) )) !important;
+  --theme-color-controlLightweightActive: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-controlSetBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-controlText: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ) !important;
+  --theme-color-controlTextHover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-controlUIHover: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-controlUISelected: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-cyanDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-cyanLightened: hsl( from hsl(from hsl(215, 67%, 45%) 179 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-darkenTransparent06: hsl(from black h s l / 0.06) !important;
+  --theme-color-darkenTransparent12: hsl(from black h s l / 0.12) !important;
+  --theme-color-darkenTransparent25: hsl(from black h s l / 0.25) !important;
+  --theme-color-darkenTransparent50: hsl(from black h s l / 0.5) !important;
+  --theme-color-darkenTransparent75: hsl(from black h s l / 0.75) !important;
+  --theme-color-dataviewEmpty: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.4) ) ) !important;
+  --theme-color-dragTarget: hsl( from hsl(215, 67%, 45%) h s l / 0.5 ) !important;
+  --theme-color-dragTargetBg: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --theme-color-emptyStateBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-gradientBottom: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 + 0.5 * 0.2)) ) !important;
+  --theme-color-gradientCardsetBottom: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-gradientCardsetGeneratedBottom: hsl( from hsl(215, 67%, 45%) h s l / 0.25 ) !important;
+  --theme-color-gradientCardsetGeneratedTop: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-gradientCardsetTop: hsl( from hsl(215, 67%, 45%) h s l / 0.06 ) !important;
+  --theme-color-gradientTop: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 - 0.5 * 0.2)) ) !important;
+  --theme-color-graphLine: white !important;
+  --theme-color-graphViewBg: transparent !important;
+  --theme-color-greenDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-greenLightened: hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-greenTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.25) !important;
+  --theme-color-greenTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 124 s l) h s l / 0.75) !important;
+  --theme-color-hotkey: hsl(215, 67%, 45%) !important;
+  --theme-color-inputBorder: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.25) ) !important;
+  --theme-color-inputPlaceholder: hsl(215, 67%, 45%) !important;
+  --theme-color-interactiveActive: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-jiraIssueDanger: white !important;
+  --theme-color-jiraIssueDangerBg: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
+  --theme-color-jiraIssueDeleteBg: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --theme-color-jiraIssueInfoBg: light-dark( hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 219 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-jiraIssueStatus: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-jiraIssueStatusBg: light-dark( color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) ) !important;
+  --theme-color-jiraIssueSuccessBg: light-dark( hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 124 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-jiraIssueTableStripe: light-dark( hsl(from white h s l / 0.5), hsl(from black h s l / 0.5) ) !important;
+  --theme-color-jiraIssueWarningBg: light-dark(control hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5) ), hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5) ) ) !important;
+  --theme-color-kanbanLaneBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-lightenTransparent06: hsl(from white h s l / 0.06) !important;
+  --theme-color-lightenTransparent12: hsl(from white h s l / 0.12) !important;
+  --theme-color-lightenTransparent25: hsl(from white h s l / 0.25) !important;
+  --theme-color-lightenTransparent50: hsl(from white h s l / 0.5) !important;
+  --theme-color-lightenTransparent75: hsl(from white h s l / 0.75) !important;
+  --theme-color-lineNumbers: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) )) !important;
+  --theme-color-log: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.8) ) !important;
+  --theme-color-logBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-menuBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-mobileToolbarBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-modalContentBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) ) !important;
+  --theme-color-navFileTag: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-navFileTagActive: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-navFileTagActiveBorder: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-navFileTagBorder: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.25) ) !important;
+  --theme-color-navigationButtonBgHover: hsl(215, 67%, 45%) !important;
+  --theme-color-notice: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --theme-color-noticeBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-orangeDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-orangeLightened: hsl( from hsl(from hsl(215, 67%, 45%) 27 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-orangeTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.25) !important;
+  --theme-color-orangeTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 27 s l) h s l / 0.75) !important;
+  --theme-color-pinkDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-pinkLightened: hsl( from hsl(from hsl(215, 67%, 45%) 331 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-promptInstructions: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.4) ) !important;
+  --theme-color-purpleDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-purpleLightened: hsl( from hsl(from hsl(215, 67%, 45%) 253 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-queryComponentBg: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-redDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-redLightened: hsl( from hsl(from hsl(215, 67%, 45%) 356 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-redTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.25) !important;
+  --theme-color-redTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 356 s l) h s l / 0.75) !important;
+  --theme-color-settingsBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-settingsBgStripe: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --theme-color-settingsGroupBg: hsl(from black h s l / 0.5) !important;
+  --theme-color-shadow: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) !important;
+  --theme-color-suggestionBg: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.85) ) !important;
+  --theme-color-switcherBgActive: hsl(215, 67%, 45%) !important;
+  --theme-color-tabBgInactiveHover: hsl( from hsl(215, 67%, 45%) h s l / 0.75 ) !important;
+  --theme-color-tabNavActiveBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.7) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.7) )) !important;
+  --theme-color-tabNavBg: light-dark(color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6) ), color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.6) )) !important;
+  --theme-color-tableHeaderBg: hsl( from hsl(215, 67%, 45%) h s l / 0.12 ) !important;
+  --theme-color-tagBgHover: hsl( 258, calc(88% * 1.05), calc(66% * 1.161), 0.1 ) !important;
+  --theme-color-tagBgSidebar: hsl( 258, calc(88% * 1.2), calc(66% * 0.25), 0.5 ) !important;
+  --theme-color-tagBgSidebarHover: hsl( 258, calc(88% * 1.02), calc(66% * 0.5), 0.5 ) !important;
+  --theme-color-tagHover: hsl( 258, calc(88% * 1.05), calc(66% * 1.29) ) !important;
+  --theme-color-tagSidebar: hsl( 258, calc(88% * 1.2), calc(66% * 1) ) !important;
+  --theme-color-tagSidebarHover: hsl( 258, calc(88% * 1.224), calc(66% * 1.15) ) !important;
+  --theme-color-textMeta: hsl(215, 67%, 45%) !important;
+  --theme-color-textSelected: color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.8) ) !important;
+  --theme-color-warningBg: color-mix( in srgb, hsl(215, 67%, 45%), white calc(100% * 0.95) ) !important;
+  --theme-color-yellowDarkened: hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 0.5) ) !important;
+  --theme-color-yellowLightened: hsl( from hsl(from hsl(215, 67%, 45%) 57 s l) h calc(s * 1.5) calc(l * 1.5) ) !important;
+  --theme-color-yellowTransparent25: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.25) !important;
+  --theme-color-yellowTransparent75: hsl(from hsl(from hsl(215, 67%, 45%) 57 s l) h s l / 0.75) !important;
+  --theme-gradient-bottomToTop: linear-gradient( 0deg, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 + 0.5 * 0.2)) ) 0%, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 - 0.5 * 0.2)) ) 100% ) !important;
+  --theme-gradient-topToBottom: linear-gradient( 0deg, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 - 0.5 * 0.2)) ) 0%, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * (0.7 + 0.5 * 0.2)) ) 100% ) !important;
+  --theme-grid-cardSet: repeat( auto-fit, minmax(8em, 1fr) ) !important;
+  --theme-length-cardImageHeight: 25em !important;
+  --theme-length-cardMaxWidth: 1fr !important;
+  --theme-length-cardMinWidth: 8em !important;
+  --theme-length-checkboxBorderWidth: 1px !important;
+  --theme-length-closeButtonWidth: 1.5rem !important;
+  --theme-length-collapseIndicatorSize: 1.5rem !important;
+  --theme-length-controlSetSpacing: 0.5rem !important;
+  --theme-length-fullBorderRadius: 9999px !important;
+  --theme-length-radiusXS: 0.125rem !important;
+  --theme-length-statusBarHeight: 2rem !important;
+  --theme-padding-block: 0.75em 1.5em !important;
+  --theme-padding-blockHorizontal: 1.5em !important;
+  --theme-padding-blockVertical: 0.75em !important;
+  --theme-setting-lineWidth: 60 !important;
+  --theme-shadow-control: 0px 1px 2px hsl( 215, calc(67% * 0.1), calc(45% * 0.1), 0.1 ) !important;
+  --theme-shadow-indent: 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 3%, transparent), 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 6%, transparent), 0 0 0.4rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 9%, transparent), 0 0 1.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 12%, transparent), 0 0 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 15%, transparent) !important;
+  --theme-shadow-indent-small: 0 0 0.05rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 4%, transparent), 0 0 0.2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 8%, transparent), 0 0 0.6rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 12%, transparent), 0 0 1rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 16%, transparent), 0 0 2rem color-mix(in srgb, color-mix( in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9) ) 20%, transparent) !important;
+  --theme-shadow-input: 0px 1px 2px hsl( 215, calc(67% * 0.5), calc(45% * 0.1), 0.5 ), 0px 3.4px 6.7px hsl( 215, calc(67% * 1), calc(45% * 0.1), 0.25 ), 0px 15px 30px hsl( 215, calc(67% * 0.75), calc(45% * 0.1), 0.15 ) !important;
+  --theme-value-gradientContrast: 0.2 !important;
+  --theme-value-headingScaleFactor: 1.2 !important;
+  --theme-value-sidebarFontScalingFactor: 0.8 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -268,18 +2034,7 @@ body .markdown-rendered a.internal-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -295,18 +2050,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -322,18 +2066,7 @@ body .markdown-rendered p {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -346,17 +2079,10 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
+  color: light-dark(color(srgb 0.01485 0.039975 0.07515), color(srgb 0.6594 0.7599 0.9006));
   cursor: auto;
   filter: none;
-  font-family:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
@@ -372,18 +2098,7 @@ body b {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -396,17 +2111,10 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
+  color: light-dark(color(srgb 0.01485 0.039975 0.07515), color(srgb 0.6594 0.7599 0.9006));
   cursor: auto;
   filter: none;
-  font-family:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
@@ -422,18 +2130,7 @@ body i {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -449,18 +2146,7 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -473,17 +2159,10 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
+  color: light-dark(color(srgb 0.01485 0.039975 0.07515), color(srgb 0.6594 0.7599 0.9006));
   cursor: auto;
   filter: none;
-  font-family:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid color(srgb 0.6594 0.7599 0.9006);
@@ -553,11 +2232,7 @@ body div.multi-select-pill {
   align-items: center;
   background-color: light-dark(rgba(134, 82, 255, 0.15), rgba(25, 0, 84, 0.5));
   display: flex;
-  font-family:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   margin-inline-start: 0px;
   border-left-style: solid;
@@ -666,8 +2341,7 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
   border-left-style: none;
   border-bottom-style: none;
@@ -733,10 +2407,7 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
+body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -749,7 +2420,7 @@ body
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task="x"] {
+body ul > li.task-list-item[data-task=x] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -757,18 +2428,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -826,18 +2486,7 @@ body .search-results > * {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -897,98 +2546,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -1019,7 +2602,7 @@ body .markdown-preview-sizer {
   border-bottom-right-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout="note"] {
+body .callout[data-callout=note] {
   --callout-color: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -1044,7 +2627,7 @@ body .callout[data-callout="note"] {
   padding-right: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body .callout[data-callout=note] > .callout-title {
   gap: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -1067,11 +2650,7 @@ body .callout[data-callout="note"] > .callout-title {
   padding-left: 0px;
   padding-right: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1086,7 +2665,7 @@ body .callout > .callout-content {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1107,15 +2686,11 @@ body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1136,15 +2711,11 @@ body .callout[data-callout="info"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1165,15 +2736,11 @@ body .callout[data-callout="todo"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="tip"] {
+body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1194,15 +2761,11 @@ body .callout[data-callout="tip"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="success"] {
+body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1223,15 +2786,11 @@ body .callout[data-callout="success"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="question"] {
+body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1252,15 +2811,11 @@ body .callout[data-callout="question"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="warning"] {
+body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1281,15 +2836,11 @@ body .callout[data-callout="warning"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="danger"] {
+body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1310,15 +2861,11 @@ body .callout[data-callout="danger"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="failure"] {
+body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1339,15 +2886,11 @@ body .callout[data-callout="failure"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1368,15 +2911,11 @@ body .callout[data-callout="bug"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1397,15 +2936,11 @@ body .callout[data-callout="example"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="quote"] {
+body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1426,11 +2961,7 @@ body .callout[data-callout="quote"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1439,62 +2970,18 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -1503,51 +2990,17 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

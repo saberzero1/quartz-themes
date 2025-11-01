@@ -3,6 +3,7 @@ import {
   closeDb,
   preparedStatements,
   getStyle,
+  getAllVariables,
 } from "./database/driver.js";
 import { config } from "./config.js";
 import {
@@ -63,6 +64,7 @@ themeCollection.forEach((manifest) => {
   // Build mappings for each mode
   const quartzMappings = {};
   const publishMappings = {};
+  const bodyVariables = { dark: {}, light: {} };
 
   manifest.modes.forEach((m) => {
     mode = m;
@@ -70,6 +72,15 @@ themeCollection.forEach((manifest) => {
 
     if (!quartzMappings[mode]) quartzMappings[mode] = {};
     if (!publishMappings[mode]) publishMappings[mode] = {};
+
+    // Get all CSS variables from body selector
+    const isDarkMode = mode === "dark";
+    const vars = getAllVariables(themeName, optionSetName, isDarkMode, "body");
+    if (isDarkMode) {
+      bodyVariables.dark = vars;
+    } else {
+      bodyVariables.light = vars;
+    }
 
     config.forEach((mapping) => {
       if (mapping.quartzSelector) {
@@ -104,7 +115,7 @@ themeCollection.forEach((manifest) => {
   });
 
   // Generate CSS from mappings
-  generateAndWriteCSS(manifest, themeName, quartzMappings, publishMappings);
+  generateAndWriteCSS(manifest, themeName, quartzMappings, publishMappings, bodyVariables);
 });
 
 closeDb();
@@ -201,6 +212,7 @@ function generateAndWriteCSS(
   themeName,
   quartzMappings,
   publishMappings,
+  bodyVariables,
 ) {
   const darkData = quartzMappings.dark || null;
   const lightData = quartzMappings.light || null;
@@ -346,31 +358,19 @@ function generateAndWriteCSS(
     }
   });
 
-  // Build graph color strings
-  let graphStringDark = "";
-  let graphStringLight = "";
-  if (Object.keys(graphColors["dark"]).length > 0) {
-    for (const [key, value] of Object.entries(graphColors["dark"])) {
-      graphStringDark += `    ${key}: ${value} !important;\n`;
+  // Build variable strings from body CSS variables for Quartz
+  let bodyVarsStringDark = "";
+  let bodyVarsStringLight = "";
+  
+  if (Object.keys(bodyVariables.dark).length > 0) {
+    for (const [key, value] of Object.entries(bodyVariables.dark)) {
+      bodyVarsStringDark += `  ${key}: ${value} !important;\n`;
     }
   }
-  if (Object.keys(graphColors["light"]).length > 0) {
-    for (const [key, value] of Object.entries(graphColors["light"])) {
-      graphStringLight += `    ${key}: ${value} !important;\n`;
-    }
-  }
-
-  // Build code color strings
-  let codeStringDark = "";
-  let codeStringLight = "";
-  if (Object.keys(codeColors["dark"]).length > 0) {
-    for (const [key, value] of Object.entries(codeColors["dark"])) {
-      codeStringDark += `    ${key}: ${value} !important;\n`;
-    }
-  }
-  if (Object.keys(codeColors["light"]).length > 0) {
-    for (const [key, value] of Object.entries(codeColors["light"])) {
-      codeStringLight += `    ${key}: ${value} !important;\n`;
+  
+  if (Object.keys(bodyVariables.light).length > 0) {
+    for (const [key, value] of Object.entries(bodyVariables.light)) {
+      bodyVarsStringLight += `  ${key}: ${value} !important;\n`;
     }
   }
 
@@ -379,25 +379,19 @@ function generateAndWriteCSS(
     lightData && darkData
       ? `
 :root:root {
-  ${graphStringLight}
-  ${codeStringLight}
-}
+${bodyVarsStringLight}}
 :root:root[saved-theme="dark"] {
-  ${graphStringDark}
-  ${codeStringDark}
-}
+${bodyVarsStringDark}}
 `
       : lightData
         ? `
 :root:root {
-  ${graphStringLight}
-}
+${bodyVarsStringLight}}
 `
         : darkData
           ? `
 :root:root {
-  ${graphStringDark}
-}
+${bodyVarsStringDark}}
 `
           : "";
 
@@ -857,7 +851,33 @@ ${insertExtras(manifest, themeName)}
   let resultPublishScss = `
 
 ${fontString}
+`;
 
+  // Add body.theme-dark and body.theme-light sections with CSS variables
+  if (darkPublishData && lightPublishData) {
+    // Both dark and light modes
+    resultPublishScss += `
+body.theme-light {
+${bodyVarsStringLight}}
+
+body.theme-dark {
+${bodyVarsStringDark}}
+`;
+  } else if (lightPublishData) {
+    // Light mode only
+    resultPublishScss += `
+body.theme-light {
+${bodyVarsStringLight}}
+`;
+  } else if (darkPublishData) {
+    // Dark mode only
+    resultPublishScss += `
+body.theme-dark {
+${bodyVarsStringDark}}
+`;
+  }
+
+  resultPublishScss += `
 body {
 ${
   lightPublishData && darkPublishData

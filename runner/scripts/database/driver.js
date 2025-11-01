@@ -299,10 +299,50 @@ function getStyle(themeName, optionSetName, isDarkMode, selector, property) {
   return result ? result.value : null;
 }
 
+/**
+ * Gets all CSS variables (properties starting with --) for a specific selector
+ * @param {string} themeName
+ * @param {string} optionSetName
+ * @param {boolean} isDarkMode
+ * @param {string} selector
+ * @returns {Object} Object with variable names as keys and values
+ */
+function getAllVariables(themeName, optionSetName, isDarkMode, selector) {
+  const themeId = getThemeId(themeName);
+  const optionSetId = getOptionSetId(themeId, optionSetName);
+  const selectorId = getSelectorId(selector);
+
+  if (themeId === null || optionSetId === null || selectorId === null) {
+    return {};
+  }
+
+  const query = `
+    SELECT p.property_name, sv.value
+    FROM style_values sv
+    JOIN properties p ON sv.property_id = p.id
+    WHERE sv.theme_id = ? 
+      AND sv.option_set_id = ? 
+      AND sv.is_dark_mode = ?
+      AND sv.selector_id = ?
+      AND p.property_name LIKE '--%'
+  `;
+
+  const stmt = db.prepare(query);
+  const results = stmt.all(themeId, optionSetId, isDarkMode ? 1 : 0, selectorId);
+  
+  const variables = {};
+  for (const row of results) {
+    variables[row.property_name] = row.value;
+  }
+  
+  return variables;
+}
+
 export {
   initializeDb,
   closeDb,
   // Expose the bulk insert transaction function
   preparedStatements,
   getStyle,
+  getAllVariables,
 };
