@@ -42,10 +42,13 @@ const themeCollection = getThemeCollection();
 themeCollection.forEach((manifest) => {
   const [name, variation] = manifest.name.split(".");
   themeName = `${sanitize(name)}${variation ? `.${sanitize(variation)}` : ""}`;
-  
+
   // Create necessary directories
   if (!existsSync(`./runner/results/${themeName}`)) {
     mkdirSync(`./runner/results/${themeName}`);
+  }
+  if (!existsSync(`./themes/${themeName}`)) {
+    mkdirSync(`./themes/${themeName}`);
   }
   if (!existsSync(`./extras/themes/${themeName}`)) {
     mkdirSync(`./extras/themes/${themeName}`);
@@ -60,7 +63,7 @@ themeCollection.forEach((manifest) => {
   // Build mappings for each mode
   const quartzMappings = {};
   const publishMappings = {};
-  
+
   manifest.modes.forEach((m) => {
     mode = m;
     console.log(`Processing theme: ${themeName} (${mode})`);
@@ -193,7 +196,12 @@ function insertExtras(manifest, themeName) {
   return toHexColors(result);
 }
 
-function generateAndWriteCSS(manifest, themeName, quartzMappings, publishMappings) {
+function generateAndWriteCSS(
+  manifest,
+  themeName,
+  quartzMappings,
+  publishMappings,
+) {
   const darkData = quartzMappings.dark || null;
   const lightData = quartzMappings.light || null;
   const darkPublishData = publishMappings.dark || null;
@@ -367,8 +375,9 @@ function generateAndWriteCSS(manifest, themeName, quartzMappings, publishMapping
   }
 
   // Generate Quartz SCSS
-  const colorSchemeSection = lightData && darkData
-    ? `
+  const colorSchemeSection =
+    lightData && darkData
+      ? `
 :root:root {
   ${graphStringLight}
   ${codeStringLight}
@@ -378,19 +387,19 @@ function generateAndWriteCSS(manifest, themeName, quartzMappings, publishMapping
   ${codeStringDark}
 }
 `
-    : lightData
-      ? `
+      : lightData
+        ? `
 :root:root {
   ${graphStringLight}
 }
 `
-      : darkData
-        ? `
+        : darkData
+          ? `
 :root:root {
   ${graphStringDark}
 }
 `
-        : "";
+          : "";
 
   let resultScss = `
 @use "../variables.scss" as *;

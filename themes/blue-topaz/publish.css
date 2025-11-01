@@ -6992,1780 +6992,118 @@
   content: "\ef0b";
 }
 
-body.theme-dark {
-  --Fold0: #fc5c65;
-  --Fold1: #fd9644;
-  --Fold2: #fed330;
-  --Fold3: #26de81;
-  --Fold4: #2bcbba;
-  --Fold5: #45aaf2;
-  --Fold6: #4b7bec;
-  --Fold7: #a55eea;
-  --Fold8: #d1d8e0;
-  --Fold9: #778ca3;
-  --FoldA: #eb3b5a;
-  --FoldB: #fa8231;
-  --FoldC: #f7b731;
-  --FoldD: #20bf6b;
-  --FoldE: #0fb9b1;
-  --FoldF: #2d98da;
-  --FoldG: #3867d6;
-  --FoldH: #8854d0;
-  --FoldI: #a5b1c2;
-  --FoldJ: #4b6584;
-  --FoldK: #fc5c65;
-  --FoldL: #fd9644;
-  --FoldM: #fed330;
-  --FoldN: #26de81;
-  --FoldO: #2bcbba;
-  --FoldP: #45aaf2;
-  --FoldQ: #4b7bec;
-  --FoldR: #a55eea;
-  --FoldS: #d1d8e0;
-  --FoldT: #778ca3;
-  --FoldU: #eb3b5a;
-  --FoldV: #fa8231;
-  --FoldW: #f7b731;
-  --FoldX: #20bf6b;
-  --FoldY: #0fb9b1;
-  --FoldZ: #2d98da;
-  --accent-em: #a4ca8e;
-  --accent-h: 208;
-  --accent-l: 49%;
-  --accent-l-alt: calc(49% * 1.05);
-  --accent-s: 64%;
-  --accent-strong: #e7e7e7;
-  --activeline-background: hsla(208, 64%, 49%, 0.05);
-  --admonition-bg-color: #11111100;
-  --anim-duration-fast: 140ms;
-  --anim-duration-moderate: 300ms;
-  --anim-duration-none: 0;
-  --anim-duration-slow: 560ms;
-  --anim-duration-superfast: 70ms;
-  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --aqua: #35bed0;
-  --background-4-sliding-pane: #252525ed;
-  --background-asymm-split-left: #000000;
-  --background-black-or-white-1: #353535;
-  --background-blockquote: #9191911c;
-  --background-blue: #2f5264;
-  --background-brown: #493a3a;
-  --background-code: #1111118c;
-  --background-code-2: #4c4c4cb0;
-  --background-command-palette-theme-dark-custom: url("https://");
-  --background-command-palette-theme-light-custom: url("https://");
-  --background-gray: #535353;
-  --background-green: #32503e;
-  --background-markdown-page-theme-dark-custom: url("https://");
-  --background-markdown-page-theme-light-custom: url("https://");
-  --background-mobile-drawer-1: #1b1b1b;
-  --background-mobile-drawer-2: #1b1b1b69;
-  --background-modifier-active-hover: hsla(208, 64%, 49%, 0.1);
-  --background-modifier-border: #343434;
-  --background-modifier-border-1: #000000;
-  --background-modifier-border-asymm: #343434;
-  --background-modifier-border-checkbox: #7b7b7b;
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-border-hr: #3f3f3f;
-  --background-modifier-box-shadow: rgba(228, 228, 228, 0.08);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-error: #9b4343;
-  --background-modifier-error-hover: #fb464c;
-  --background-modifier-error-rgb: 155, 67, 67;
-  --background-modifier-form-field: #2a2a2a;
-  --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: #539126;
-  --background-modifier-success-rgb: 83, 145, 38;
-  --background-nonoverlapping-note: #000000;
-  --background-orange: #53422f;
-  --background-panel-page-theme-dark-custom: url("https://");
-  --background-panel-page-theme-light-custom: url("https://");
-  --background-pink: #533b4a;
-  --background-popover: #242424;
-  --background-primary: #202020;
-  --background-primary-alt: #444444;
-  --background-purple: #443f57;
-  --background-red: #683c3c;
-  --background-secondary: #151515;
-  --background-secondary-alt: #000000;
-  --background-secondary-translucent: #2c2c2c26;
-  --background-secondary-translucent-1: #2c2c2c26;
-  --background-settings-workplace-theme-dark-custom: url("https://");
-  --background-settings-workplace-theme-light-custom: url("https://");
-  --background-titlebar-inner: hsla(208, 64%, 49%, 10%);
-  --background-transparent-black-or-white-1: #1b1b1b9a;
-  --background-transparent-black-or-white-2: #1e1e1ebd;
-  --background-transparent-black-or-white-3: #2f2f2f6c;
-  --background-transparent-black-or-white-3-1: #00000064;
-  --background-transparent-black-or-white-4: #7e7e7e1d;
-  --background-transparent-black-or-white-5: #0f0f0f6c;
-  --background-transparent-blue: #003e759a;
-  --background-waves-color: #4a75db8c;
-  --background-yellow: #585536;
-  --bases-cards-background: #202020;
-  --bases-cards-border-width: 1px;
-  --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: #444444;
-  --bases-cards-group-padding: 12px;
-  --bases-cards-line-height: 24px;
-  --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px #343434;
-  --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f;
-  --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: #343434;
-  --bases-embed-border-radius: 5px;
-  --bases-embed-border-width: 0px;
-  --bases-filter-menu-width: 520px;
-  --bases-header-border-width: 0 0 1px 0;
-  --bases-header-height: 40px;
-  --bases-header-padding-end: 2px;
-  --bases-header-padding-start: 2px;
-  --bases-table-border-color: #4a4a4a;
-  --bases-table-cell-background-active: #202020;
-  --bases-table-cell-background-disabled: #444444;
-  --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(208, 64%, 49%);
-  --bases-table-column-border-width: 1px;
-  --bases-table-column-max-width: 300;
-  --bases-table-column-min-width: 40;
-  --bases-table-container-border-radius: 5px;
-  --bases-table-container-border-width: 1px;
-  --bases-table-header-background: #202020;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
-  --bases-table-header-color: #8a8a8a;
-  --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
-  --bases-table-header-weight: 400;
-  --bases-table-row-background-hover: transparent;
-  --bases-table-row-border-width: 1px;
-  --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875em;
-  --bases-toolbar-badge-display: none;
-  --bases-toolbar-label-display: block;
-  --bg-color-highlight-1: #c865656f;
-  --bg-color-highlight-2: #54b9476f;
-  --bg-color-highlight-3: #1e83d086;
-  --bg-color-notebook: #ffffff00;
-  --bg-color-settings-0: #07070747;
-  --bg-color-settings-0-1: #ffffff00;
-  --bg-color-settings-1: #7c7c7c6d;
-  --bg-color-settings-2: #1f1f1f52;
-  --bg-color-settings-3: #141414be;
-  --bg-color-settings-4: #2e2e2e9d;
-  --bg-color-settings-5: #424242aa;
-  --bg-color-settings-6: #191919c7;
-  --bg-panel-page-opacity-cp: 0.25;
-  --bg-sliding-pane-header: #00000043;
-  --bg-sliding-pane-leaf: #0f0f0f36;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(208, 64%, 49%);
-  --blockquote-border-thickness: 2px;
-  --blockquote-font-style: normal;
-  --blue: #a0c7e9;
-  --blur-codebox-frosted-glass: 2;
-  --blur-depth: 10px;
-  --blur-depth-cp: 10px;
-  --blur-p-kanban-frosted-glass: 5;
-  --bold-modifier: 200;
-  --bold-weight: calc(400 + 200);
-  --border-width: 1px;
-  --bottom-padding-value: 0em;
-  --brightness-4-bg: 0.9;
-  --brightness-4-bg-cp: 0.9;
-  --bt-bubble-background-color: transparent;
-  --bt-bubble-border-color: #343434;
-  --bt-bubble-layout-padding: 8px;
-  --bt-colorful-indentation-width: 1px;
-  --bt-connected-indent-line-color: #926a6a;
-  --bt-indentation-gradient-color-1: hsl(208, 64%, 49%);
-  --bt-indentation-gradient-color-2: transparent;
-  --bt-indentation-line-image: url("");
-  --bt-indentation-width-hover: 3px;
-  --button-radius: 5px;
-  --c-1: #da2400;
-  --c-2: #ffb623;
-  --c-3: #8c6e22;
-  --calendar-active-color: hsla(208, 64%, 49%, 0.4);
-  --calendar-hover-color: hsla(208, 64%, 49%, 0.2);
-  --calendar-today-background-color: #8c4545;
-  --calendar-week-background-color: #4a5842;
-  --calendar-week-color: #a2df94;
-  --calendar-week-hover: #61815c;
-  --callout-blend-mode: lighten;
-  --callout-border-opacity: 0.25;
-  --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
-  --callout-content-background: transparent;
-  --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-quote: 158, 158, 158;
-  --callout-radius: 5px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
-  --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #202020;
-  --canvas-card-label-color: #797979;
-  --canvas-card-opacity: 0.1;
-  --canvas-color: 126, 126, 126;
-  --canvas-color-1: 251, 70, 76;
-  --canvas-color-2: 233, 151, 63;
-  --canvas-color-3: 224, 222, 113;
-  --canvas-color-4: 68, 207, 110;
-  --canvas-color-5: 83, 223, 221;
-  --canvas-color-6: 168, 130, 255;
-  --canvas-dot-pattern: #363636;
-  --cards-width: 138px;
-  --caret-color: #c6c6c6;
-  --checkbox-border-color: #797979;
-  --checkbox-border-color-hover: #8a8a8a;
-  --checkbox-color: hsl(208, 64%, 49%);
-  --checkbox-color-0: #3187d3;
-  --checkbox-color-1: #a9a608;
-  --checkbox-color-2: #1dac10;
-  --checkbox-color-3: #ffd1d1;
-  --checkbox-color-4: #625d4c;
-  --checkbox-color-5: #9a67ae;
-  --checkbox-color-6: #5f5f5f;
-  --checkbox-color-hover: hsl(
-    calc(208 - 5),
-    calc(64% * 1.05),
-    calc(49% * 1.29)
-  );
-  --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: #202020;
-  --checkbox-radius: 5px;
-  --checkbox-size: 0.9rem;
-  --checklist-bg: #1d1d1d96;
-  --checklist-bg-hover: #08080896;
-  --checklist-color-1: #005aa486;
-  --checklist-color-2: #00798986;
-  --checklist-color-3: #12781586;
-  --checklist-color-4: #897b0086;
-  --checklist-color-5: #a4620086;
-  --checklist-color-6: #ab100586;
-  --checklist-color-7: #7f1f9086;
-  --checklist-done-color: #8a8a8a;
-  --checklist-done-decoration: line-through;
-  --clickable-icon-radius: 5px;
-  --cloze-bg-color: #e7e7e7;
-  --cloze-bg-color-3: transparent;
-  --cloze-decoration: none;
-  --cloze-decoration-2: dashed;
-  --cloze-decoration-3: dashed;
-  --cloze-decoration-color: red;
-  --cloze-decoration-color-2: hsl(208, 64%, 49%);
-  --cloze-decoration-color-3: hsl(208, 64%, 49%);
-  --code-active-line-background-color: hsla(208, 64%, 49%, 0.05);
-  --code-atom: #da904b;
-  --code-attribute: #cac685;
-  --code-attribute-in-comment: #c792ea;
-  --code-background: #1111118c;
-  --code-border-color: #343434;
-  --code-border-width: 0px;
-  --code-bracket: #ff5370;
-  --code-bracket-background: rgba(255, 255, 255, 0.067);
-  --code-builtin: #ffcb6b;
-  --code-callee: #89ddff;
-  --code-comment: #568060;
-  --code-def: #82aaff;
-  --code-definition: #82aaff;
-  --code-error-bg: #ff5370;
-  --code-function: #cac685;
-  --code-header: #da7dae;
-  --code-hr: #abb2bf;
-  --code-important: #478fee;
-  --code-keyword: #478fee;
-  --code-language: #8a8a8a;
-  --code-link: #696d70;
-  --code-matching-bracket: #ffffff;
-  --code-meta: #ffcb6b;
-  --code-normal: #d0d0d0;
-  --code-number: #ff5370;
-  --code-operator: #a89984;
-  --code-property: #a0c7e9;
-  --code-punctuation: #abb2bf;
-  --code-qualifier: #35bed0;
-  --code-radius: 5px;
-  --code-selection-background: #3b767160;
-  --code-selection-color: #ebdbb2;
-  --code-size: 0.875em;
-  --code-string: #abd58e;
-  --code-string-2: #d6b87f;
-  --code-tag: #db7c84;
-  --code-tag-in-comment: #ff5370;
-  --code-type: #cac685;
-  --code-value: #abd58e;
-  --code-variable: #db7c84;
-  --code-variable-2: #53ada3;
-  --code-variable-3: #e7852fe7;
-  --code-white-space: pre-wrap;
-  --collapse-icon-color: #797979;
-  --collapse-icon-color-collapsed: hsl(208, 64%, 49%);
-  --color-accent: hsl(208, 64%, 49%);
-  --color-accent-1: hsl(calc(208 - 3), calc(64% * 1.02), calc(49% * 1.15));
-  --color-accent-2: hsl(calc(208 - 5), calc(64% * 1.05), calc(49% * 1.29));
-  --color-accent-hsl: 208, 64%, 49%;
-  --color-base-00: #1e1e1e;
-  --color-base-05: #212121;
-  --color-base-10: #242424;
-  --color-base-100: #dadada;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-blue: #027aff;
-  --color-blue-rgb: 2, 122, 255;
-  --color-cyan: #53dfdd;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
-  --color-highlight-1: #c6c6c6;
-  --color-highlight-2: #c6c6c6;
-  --color-highlight-3: #c6c6c6;
-  --color-orange: #e9973f;
-  --color-orange-rgb: 233, 151, 63;
-  --color-pink: #fa99cd;
-  --color-pink-rgb: 250, 153, 205;
-  --color-purple: #a882ff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
-  --color-view-header-gradient-1: #060813de;
-  --color-view-header-gradient-2: #00285dc0;
-  --color-yellow: #e0de71;
-  --color-yellow-rgb: 224, 222, 113;
-  --colorA: rgba(152, 0, 240, 0.13);
-  --colorB: rgba(0, 72, 240, 0.13);
-  --colorC: rgba(0, 240, 44, 0.13);
-  --cursor: default;
-  --cursor-blue: #8ac7ff;
-  --cursor-green: #7dff7d;
-  --cursor-link: pointer;
-  --cursor-red: #ff3939;
-  --cursor-violet: #bf76ff;
-  --cursor-yellow: #fff955;
-  --custom-titlebar-bg: #000000;
-  --darkblue: #478fee;
-  --darkgreen: #568060;
-  --day-planner-dot: #dfcf77;
-  --day-planner-item-hover: #053c85;
-  --day-planner-line: #dfcf77;
-  --day-planner-pie: #f19c1c;
-  --day-planner-timeline: #000000;
-  --dialog-max-height: 85vh;
-  --dialog-max-width: 80vw;
-  --dialog-width: 560px;
-  --direction: 1;
-  --divider-color: #000000;
-  --divider-color-hover: hsl(208, 64%, 49%);
-  --divider-vertical-height: 100%;
-  --divider-width: 1px;
-  --divider-width-hover: 3px;
-  --dotted-notebook-dot-color: #c7c7c71f;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
-  --drag-ghost-text-color: #fff;
-  --dropdown-background: #2b2b2b;
-  --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #373737;
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover: 0 0 0 1px #343434, inset 0 0 0 1px #343434;
-  --embed-border-bottom: none;
-  --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(208, 64%, 49%);
-  --embed-border-top: none;
-  --embed-canvas-max-height: 400px;
-  --embed-color: hsla(calc(208 * 1), calc(64% * 1.2), calc(49% * 2), 0.055);
-  --embed-content-height: 600px;
-  --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 24px;
-  --event-item-color1: #283493bb;
-  --event-item-color10: #6a1b9abb;
-  --event-item-color2: #1565c0bb;
-  --event-item-color3: #00838fbb;
-  --event-item-color4: #2e7d32bb;
-  --event-item-color5: #9e9d24bb;
-  --event-item-color6: #ff8f00bb;
-  --event-item-color7: #d84315bb;
-  --event-item-color8: #c62828bb;
-  --event-item-color9: #ad1457bb;
-  --external-link-color: hsl(208, 64%, 49%);
-  --fancy-cursor-width: 2px;
-  --fancy-hr-icon: "😀";
-  --fancy-hr-rotate: 0deg;
-  --file-folding-offset: 24px;
-  --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --file-header-font-size: 13px;
-  --file-header-font-weight: 400;
-  --file-header-justify: center;
-  --file-line-width: 45rem;
-  --file-margins: 32px;
-  --flair-background: #2b2b2b;
-  --flair-color: #c6c6c6;
-  --focus-ring-color: #0df;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
-  --folder-title: #ffffff;
-  --font-black: 900;
-  --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --font-extrabold: 800;
-  --font-extralight: 200;
-  --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
-  --font-family-em: ;
-  --font-family-folder-file-title:
-    "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
-    "Segoe UI Emoji", sans-serif;
-  --font-family-inline-code:
-    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
-    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
-    "Microsoft YaHei", "Source Code Pro", monospace;
-  --font-family-list: ;
-  --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-family-strong:
-    Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", "??", "??", "??",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --font-family-tag:
-    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
-    "Segoe UI Emoji", Serif;
-  --font-family-title: ;
-  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
-  --font-light: 300;
-  --font-loading-text:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
-  --font-medium: 500;
-  --font-mermaid:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-monospace:
-    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
-    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
-    "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
-    SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
-  --font-normal: 400;
-  --font-print:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
-  --font-print-override: "??";
-  --font-semibold: 600;
-  --font-size-better-footnote: 1.3em;
-  --font-size-checklist: 0.85em;
-  --font-size-cloze: 0.9375em;
-  --font-size-code: 0.825em;
-  --font-size-edit-blockquote: 1em;
-  --font-size-edit-normal: 1em;
-  --font-size-embed-file: 1.25em;
-  --font-size-embed-title-size: 1.3em;
-  --font-size-emoji-after-tag: 1.5625em;
-  --font-size-file-header-title: 0.9em;
-  --font-size-file-header-title-andy-plugin: 1em;
-  --font-size-folder-and-file: 0.9em;
-  --font-size-latex: 1em;
-  --font-size-list: 1em;
-  --font-size-loading-add: 1.5em;
-  --font-size-loading-diy-text: 3em;
-  --font-size-obsidian-titlebar: 13px;
-  --font-size-outline: 13px;
-  --font-size-preview-blockquote: 1em;
-  --font-size-preview-normal: 1em;
-  --font-size-split: 0.85em;
-  --font-size-tag: 0.85em;
-  --font-size-vault-name: 1em;
-  --font-small: 0.933em;
-  --font-smaller: 0.875em;
-  --font-smallest: 0.8em;
-  --font-style-em: italic;
-  --font-text:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-text-override: "??";
-  --font-text-size: 16px;
-  --font-text-theme:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei";
-  --font-thin: 100;
-  --font-ui-large: 20px;
-  --font-ui-medium: 15px;
-  --font-ui-small: 13px;
-  --font-ui-smaller: 12px;
-  --font-weight: 400;
-  --font-weight-highlight-1: normal;
-  --font-weight-highlight-2: normal;
-  --font-weight-highlight-3: normal;
-  --font-weight-inline-code: bold;
-  --font-weight-strong: bold;
-  --footnote-divider-color: #343434;
-  --footnote-divider-color-active: transparent;
-  --footnote-divider-width: 1px;
-  --footnote-gap: 4px;
-  --footnote-id-color: #8a8a8a;
-  --footnote-id-color-no-occurrences: #797979;
-  --footnote-id-delimiter: ".";
-  --footnote-input-background: transparent;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.067);
-  --footnote-line-height: 1.5;
-  --footnote-padding-block: 6px;
-  --footnote-padding-inline: 6px;
-  --footnote-radius: 5px;
-  --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
-  --frame-right-space: 0px;
-  --graph-arrow: #c23917;
-  --graph-attach: #b2cfe0bb;
-  --graph-canvas-bg: #202020;
-  --graph-circle: #55a2d6bb;
-  --graph-circle-fill-highlight: hsl(208, 64%, 49%);
-  --graph-circle-outline: transparent;
-  --graph-control-bg: #00000080;
-  --graph-controls-width: 240px;
-  --graph-line: #8c8c8c;
-  --graph-line-fill-highlight: rgb(45, 130, 204);
-  --graph-node: #8a8a8a;
-  --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(208, 64%, 49%);
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #797979;
-  --graph-tag: #88d842bb;
-  --graph-text: #c6c6c6;
-  --graph-text-color: #b5b5b5;
-  --graph-unresolved: #f08080de;
-  --gray-1: #5c6370;
-  --gray-2: #abb2bf;
-  --green: #abd58e;
-  --green-1: #79c142;
-  --grid-notebook-line-color-1: #c7c7c71f;
-  --grid-notebook-line-color-2: #74747440;
-  --h1-bg-color: color-mix(in srgb, hsl(78, 62%, 47%) 15%, transparent);
-  --h1-color: hsl(78, 62%, 47%);
-  --h1-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h1-line-height: 1.2;
-  --h1-size: 1.5625em;
-  --h1-style: normal;
-  --h1-variant: normal;
-  --h1-weight: 700;
-  --h2-bg-color: color-mix(in srgb, hsl(118, 42%, 49%) 15%, transparent);
-  --h2-color: hsl(118, 42%, 49%);
-  --h2-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h2-line-height: 1.2;
-  --h2-size: 1.4375em;
-  --h2-style: normal;
-  --h2-variant: normal;
-  --h2-weight: 600;
-  --h3-bg-color: color-mix(in srgb, hsl(180, 53%, 48%) 15%, transparent);
-  --h3-color: hsl(180, 53%, 48%);
-  --h3-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h3-line-height: 1.3;
-  --h3-size: 1.3125em;
-  --h3-style: normal;
-  --h3-variant: normal;
-  --h3-weight: 600;
-  --h4-bg-color: color-mix(in srgb, hsl(216, 69%, 68%) 15%, transparent);
-  --h4-color: hsl(216, 69%, 68%);
-  --h4-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h4-line-height: 1.4;
-  --h4-size: 1.1875em;
-  --h4-style: normal;
-  --h4-variant: normal;
-  --h4-weight: 600;
-  --h5-bg-color: color-mix(in srgb, hsl(258, 79%, 77%) 15%, transparent);
-  --h5-color: hsl(258, 79%, 77%);
-  --h5-line-height: 1.5;
-  --h5-size: 1.0625em;
-  --h5-style: normal;
-  --h5-variant: normal;
-  --h5-weight: 600;
-  --h6-bg-color: color-mix(in srgb, hsl(290, 85%, 81%) 15%, transparent);
-  --h6-color: hsl(290, 85%, 81%);
-  --h6-line-height: 1.5;
-  --h6-size: 1em;
-  --h6-style: normal;
-  --h6-variant: normal;
-  --h6-weight: 600;
-  --he-title-bar-active-action: hsl(208, 64%, 49%);
-  --he-title-bar-active-bg: hsla(208, 64%, 49%, 0.05);
-  --he-title-bar-active-fg: #c6c6c6;
-  --he-title-bar-active-pinned-bg: hsla(208, 64%, 49%, 0.05);
-  --he-title-bar-inactive-action: #c6c6c6;
-  --he-title-bar-inactive-bg: hsla(208, 64%, 49%, 0.01);
-  --he-title-bar-inactive-fg: #8a8a8a;
-  --he-title-bar-inactive-pinned-bg: hsla(208, 64%, 49%, 0.01);
-  --header-height: 40px;
-  --heading-formatting: #797979;
-  --heading-spacing: calc(1rem * 2.5);
-  --hibox: 24px;
-  --highlight-mix-blend-mode: lighten;
-  --hr-color: #242424;
-  --hr-color-1: hsl(208, 64%, 49%);
-  --hr-color-2: hsl(208, 64%, 49%);
-  --hr-color-3: hsl(208, 64%, 49%);
-  --hr-color-4: hsl(208, 64%, 49%);
-  --hr-color-icon-1: hsl(208, 64%, 49%);
-  --hr-color-icon-2: hsl(208, 64%, 49%);
-  --hr-color-icon-3: hsl(208, 64%, 49%);
-  --hr-color-icon-4: hsl(208, 64%, 49%);
-  --hr-color-numbers-bg-color: hsla(208, 64%, 49%, 0.15);
-  --hr-color-numbers-color: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-1: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-2: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-3: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-4: hsl(208, 64%, 49%);
-  --hr-numbers-text-fill: transparent;
-  --hr-numbers-text-stroke: #c6c6c6;
-  --hr-thickness: 2px;
-  --icon-color: #8a8a8a;
-  --icon-color-active: hsl(208, 64%, 49%);
-  --icon-color-focused: #c6c6c6;
-  --icon-color-hover: #8a8a8a;
-  --icon-l: 18px;
-  --icon-l-stroke-width: 1.75px;
-  --icon-m: 18px;
-  --icon-m-stroke-width: 1.75px;
-  --icon-opacity: 0.85;
-  --icon-opacity-active: 1;
-  --icon-opacity-hover: 1;
-  --icon-s: 16px;
-  --icon-s-stroke-width: 2px;
-  --icon-size: 18px;
-  --icon-stroke: 1.75px;
-  --icon-xl: 32px;
-  --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
-  --icon-xs-stroke-width: 2px;
-  --image-max-width: 100%;
-  --indent-size: 4;
-  --indent-unit: 0.5625em;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
-  --indentation-guide-editing-indent: 0.85em;
-  --indentation-guide-reading-indent: -0.85em;
-  --indentation-guide-source-indent: 0.25em;
-  --indentation-guide-width: 1px;
-  --indentation-guide-width-active: 1px;
-  --inline-title-bg-color: color-mix(
-    in srgb,
-    hsl(78, 62%, 47%) 15%,
-    transparent
-  );
-  --inline-title-color: hsl(78, 62%, 47%);
-  --inline-title-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --inline-title-line-height: 1.2;
-  --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5625em;
-  --inline-title-style: normal;
-  --inline-title-variant: normal;
-  --inline-title-weight: 700;
-  --input-border-width: 1px;
-  --input-border-width-focus: 2px;
-  --input-date-separator: #797979;
-  --input-font-weight: 400;
-  --input-height: 30px;
-  --input-padding: 4px 8px;
-  --input-placeholder-color: #797979;
-  --input-radius: 5px;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(208, 64%, 49%);
-  --interactive-accent-hover: hsl(
-    calc(208 - 5),
-    calc(64% * 1.05),
-    calc(49% * 1.29)
-  );
-  --interactive-accent-hsl: 208, 64%, 49%;
-  --interactive-accent-rgb: 45, 130, 204;
-  --interactive-hover: #373737;
-  --interactive-normal: #2b2b2b;
-  --internal-link-color: hsl(208, 64%, 49%);
-  --kanban-color-1: #0065d852;
-  --kanban-color-2: #30e4e441;
-  --kanban-color-3: #1cb54f44;
-  --kanban-color-4: #97b82b49;
-  --kanban-color-5: #bb722d41;
-  --kanban-color-6: #d12e2e42;
-  --kanban-color-7: #8f36cb3f;
-  --keyboard-height: 0px;
-  --layer-cover: 5;
-  --layer-dragged-item: 80;
-  --layer-menu: 65;
-  --layer-modal: 50;
-  --layer-notice: 60;
-  --layer-popover: 30;
-  --layer-sidedock: 10;
-  --layer-slides: 45;
-  --layer-status-bar: 15;
-  --layer-tooltip: 70;
-  --letter-space-code: 0;
-  --letter-space-main: 0;
-  --light-yellow: #cac685;
-  --line-height-list: 2;
-  --line-height-main: 1.5;
-  --line-height-normal: 1.5;
-  --line-height-split: 1.3;
-  --line-height-tight: 1.3;
-  --link-color: hsl(208, 64%, 49%);
-  --link-color-hover: hsl(calc(208 - 5), calc(64% * 1.05), calc(49% * 1.29));
-  --link-decoration: underline;
-  --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-external-color: hsl(208, 64%, 49%);
-  --link-external-color-hover: hsl(
-    calc(208 - 5),
-    calc(64% * 1.05),
-    calc(49% * 1.29)
-  );
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-external-filter: none;
-  --link-unresolved-color: hsl(208, 64%, 49%);
-  --link-unresolved-decoration-color: #f08080de;
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-filter: none;
-  --link-unresolved-opacity: 0.7;
-  --link-weight: 400;
-  --list-bullet-border: none;
-  --list-bullet-end-padding: 1.3rem;
-  --list-bullet-radius: 50%;
-  --list-bullet-size: 0.3em;
-  --list-bullet-transform: none;
-  --list-colorful-marker: #ff8686;
-  --list-indent: calc(0.5625em * 4);
-  --list-indent-editing: 0.75em;
-  --list-indent-source: 0;
-  --list-marker-color: #797979;
-  --list-marker-color-collapsed: hsl(208, 64%, 49%);
-  --list-marker-color-hover: #8a8a8a;
-  --list-numbered-style: decimal;
-  --list-ol-block-color: #2685bbb4;
-  --list-ol-hover: #2c7bd6;
-  --list-ol-marker-1: decimal;
-  --list-ol-marker-2: lower-latin;
-  --list-ol-marker-3: lower-roman;
-  --list-ol-marker-4: decimal;
-  --list-ol-number-color: #797979;
-  --list-spacing: 0.075em;
-  --list-spacing-bt: 1;
-  --list-ul-block-color: #e19742a9;
-  --list-ul-colorful-marker-content: "•";
-  --list-ul-disc-color: #eb9563;
-  --list-ul-hover: #e28915de;
-  --list-ul-marker-1: "•";
-  --list-ul-marker-2: "◦";
-  --list-ul-marker-3: "▪";
-  --list-ul-marker-4: "◦";
-  --list-ul-marker-color: #797979;
-  --loading-add-text-color: #d47e86;
-  --loading-add-text-color-alt: #a4e39c;
-  --loading-diy-text: "快乐摸鱼又一天，人生还剩多少天？";
-  --loading-diy-text-color: #c6c6c6;
-  --loading-icon-delay: 400ms;
-  --loading-page-custom-gif-caption: " ";
-  --loading-page-custom-gif-caption-alt: " ";
-  --loading-page-custom-gif-url: url(https://);
-  --loading-text-after: "✿❀";
-  --loading-text-before: "❀✿";
-  --mark-highlight-strong-em: #fff7603a;
-  --matrix-1: #2ec4c452;
-  --matrix-2: #38ce2a52;
-  --matrix-4: #eb973752;
-  --matrix-5: #f3424252;
-  --menu-backdrop-filter: none;
-  --menu-background: #151515;
-  --menu-border-color: #3f3f3f;
-  --menu-border-width: 1px;
-  --menu-padding: 6px;
-  --menu-radius: 7px;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --mermaid-active-task-color: #187ef1;
-  --mermaid-font-family:
-    Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
-    Arial, cursive;
-  --mermaid-seq-dia-color: #1371be;
-  --metadata-background: transparent;
-  --metadata-border-color: #343434;
-  --metadata-border-radius: 0;
-  --metadata-border-width: 0;
-  --metadata-display-editing: block;
-  --metadata-display-reading: block;
-  --metadata-divider-color: #343434;
-  --metadata-divider-color-focus: transparent;
-  --metadata-divider-color-hover: transparent;
-  --metadata-divider-width: 0;
-  --metadata-gap: 3px;
-  --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
-  --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: #c6c6c6;
-  --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --metadata-label-font-size: 0.875em;
-  --metadata-label-text-color: #8a8a8a;
-  --metadata-label-text-color-hover: #8a8a8a;
-  --metadata-label-width: 9em;
-  --metadata-max-width: none;
-  --metadata-padding: 8px 0;
-  --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #555555;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
-  --metadata-property-padding: 0;
-  --metadata-property-radius: 6px;
-  --metadata-property-radius-focus: 6px;
-  --metadata-property-radius-hover: 6px;
-  --metadata-sidebar-input-font-size: 13px;
-  --metadata-sidebar-label-font-size: 13px;
-  --mjx-inline-math-color: #c6c6c6;
-  --mjx-math-color: #c6c6c6;
-  --modal-background: #202020;
-  --modal-border-color: #555555;
-  --modal-border-width: 1px;
-  --modal-community-sidebar-width: 280px;
-  --modal-height: 85vh;
-  --modal-max-height: 1000px;
-  --modal-max-width: 1100px;
-  --modal-max-width-narrow: 800px;
-  --modal-radius: 15px;
-  --modal-width: 90vw;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --nav-collapse-icon-color: #797979;
-  --nav-collapse-icon-color-collapsed: #797979;
-  --nav-heading-color: #c6c6c6;
-  --nav-heading-color-collapsed: #797979;
-  --nav-heading-color-collapsed-hover: #8a8a8a;
-  --nav-heading-color-hover: #c6c6c6;
-  --nav-heading-weight: 500;
-  --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgba(255, 255, 255, 0.067);
-  --nav-item-background-hover: rgba(255, 255, 255, 0.067);
-  --nav-item-background-selected: hsla(208, 64%, 49%, 0.15);
-  --nav-item-children-margin-start: 12px;
-  --nav-item-children-padding-start: 4px;
-  --nav-item-color: #8a8a8a;
-  --nav-item-color-active: #c6c6c6;
-  --nav-item-color-highlighted: hsl(208, 64%, 49%);
-  --nav-item-color-hover: #c6c6c6;
-  --nav-item-color-selected: #c6c6c6;
-  --nav-item-padding: 4px 8px 4px 24px;
-  --nav-item-parent-padding: 4px 8px 4px 24px;
-  --nav-item-size: 13px;
-  --nav-item-white-space: pre;
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord1-1: #3b425251;
-  --nord10: #5e81ac;
-  --nord11: #bf616a;
-  --nord11-1: #bf616a4b;
-  --nord12: #d08770;
-  --nord13: #ebcb8b;
-  --nord13-0: #e2b65e;
-  --nord13-1: #ebca894b;
-  --nord14: #a3be8c;
-  --nord14-0: #95b677;
-  --nord15: #b48ead;
-  --nord2: #434c5e;
-  --nord3: #4c566a;
-  --nord3-1: #717a91;
-  --nord4: #d8dee9;
-  --nord4-1: #d8dee95c;
-  --nord5: #e5e9f0;
-  --nord5-1: #e5e9f053;
-  --nord6: #eceff4;
-  --nord6-1: #eceff46c;
-  --nord6-2: #eceff43c;
-  --nord7: #8fbcbb;
-  --nord7-transparent: #8fbcbb2f;
-  --nord8: #88c0d0;
-  --nord8-0: #65afc4;
-  --nord9: #81a1c1;
-  --nord9-1: #81a1c16c;
-  --nord9-2: #81a1c13c;
-  --note-cloze: #ffffff;
-  --note-important: #d64545;
-  --opacity-cp: 0.25;
-  --orange: #d1945b;
-  --orange-1: #da904b;
-  --p-kanban-bg-color: #6c6c6c42;
-  --p-kanban-border-color: transparent;
-  --p-kanban-card-color-1: #0000003f;
-  --p-kanban-card-color-2: #41414136;
-  --p-kanban-color-1: #3496e652;
-  --p-kanban-color-2: #2ec4c452;
-  --p-kanban-color-3: #38ce2a52;
-  --p-kanban-color-4: #d2dd3852;
-  --p-kanban-color-5: #eb973752;
-  --p-kanban-color-6: #f3424252;
-  --p-kanban-color-7: #e45bdd52;
-  --p-kanban-color-8: #b962ff52;
-  --p-kanban-color-shadow: #0000004d;
-  --p-kanban-color-simple: #8e8e8e41;
-  --p-spacing: 1rem;
-  --p-spacing-empty: 0rem;
-  --page-border: 9px solid transparent;
-  --page-border-bottom: #000000;
-  --page-margin: 1px auto -8px;
-  --panel-border-color: #18191e;
-  --paragraph-spacing: 1;
-  --pdf-background: #202020;
-  --pdf-page-background: #202020;
-  --pdf-shadow: 0 0 0 1px #343434;
-  --pdf-sidebar-background: #202020;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px #343434;
-  --pdfViewer-padding-bottom: 0;
-  --pill-background: transparent;
-  --pill-background-hover: transparent;
-  --pill-border-color: #343434;
-  --pill-border-color-hover: #3f3f3f;
-  --pill-border-width: 1px;
-  --pill-color: #8a8a8a;
-  --pill-color-hover: #c6c6c6;
-  --pill-color-remove: #797979;
-  --pill-color-remove-hover: hsl(208, 64%, 49%);
-  --pill-decoration: none;
-  --pill-decoration-hover: none;
-  --pill-focus-left-adjust: -4px;
-  --pill-focus-width: calc(100% + 6px);
-  --pill-padding-x: 0.65em;
-  --pill-padding-y: 0.25em;
-  --pill-radius: 2em;
-  --pixel: 20px;
-  --popover-font-size: 16px;
-  --popover-height: 400px;
-  --popover-height-factor: 1;
-  --popover-max-height: 95vh;
-  --popover-pdf-height: 400px;
-  --popover-pdf-width: 450px;
-  --popover-width: 450px;
-  --popover-width-factor: 1;
-  --print-em-color: #a4ca8e;
-  --print-strong-color: ;
-  --prompt-border-color: #555555;
-  --prompt-border-width: 1px;
-  --prompt-box-shadow: #555555;
-  --prompt-input-height: 40px;
-  --prompt-max-height: 70vh;
-  --prompt-max-width: 80vw;
-  --prompt-width: 700px;
-  --purple: #c594d4;
-  --radius-l: 15px;
-  --radius-m: 7px;
-  --radius-s: 5px;
-  --radius-xl: 16px;
-  --radius-xs: 3px;
-  --red: #db7c84;
-  --red-1: #d05a63;
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #000000;
-  --ribbon-padding: 8px 4px 12px;
-  --ribbon-width: 44px;
-  --safe-area-inset-bottom: 0px;
-  --safe-area-inset-left: 0px;
-  --safe-area-inset-right: 0px;
-  --safe-area-inset-top: 0px;
-  --saturate-4-bg: 1;
-  --saturate-4-bg-cp: 1;
-  --scrollbar-active-thumb-bg: #4d4d4d88;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-border-width: 3px 3px 3px 2px;
-  --scrollbar-height: 12px;
-  --scrollbar-radius: 15px;
-  --scrollbar-thumb-bg: #3f3f3f7e;
-  --scrollbar-width: 12px;
-  --search-clear-button-color: #8a8a8a;
-  --search-clear-button-size: 13px;
-  --search-icon-color: #8a8a8a;
-  --search-icon-size: 18px;
-  --search-result-file-matched-bg: #023774;
-  --search-result-file-title-color: #c6c6c6;
-  --search-text: #e0e0e0;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --share-card-background-opacity-cp: 0.6;
-  --share-thino-background-dark-custom: url("https://");
-  --share-thino-background-light-custom: url("https://");
-  --sidebar-markdown-font-size: calc(16px * 0.9);
-  --sidebar-tab-text-display: none;
-  --simple-black-1: hsla(0, 0%, 13%, 1);
-  --simple-black-2: hsla(220, 20%, 35%, 1);
-  --simple-blue-1: hsla(209, 95%, 62%, 1);
-  --simple-blue-2: hsla(209, 85%, 72%, 0.5);
-  --simple-blue-3: hsla(245, 60%, 67%, 1);
-  --simple-blue-4: hsla(209, 20%, 66%, 0.62);
-  --simple-gray-1: hsla(0, 0%, 33%, 1);
-  --simple-gray-2: hsla(210, 15%, 70%, 0.2);
-  --simple-gray-3: hsla(210, 15%, 20%, 0.2);
-  --simple-gray-4: hsla(210, 6%, 38%, 0.5);
-  --simple-gray-5: hsla(207, 17%, 90%, 1);
-  --simple-gray-6: hsla(217, 15%, 83%, 1);
-  --simple-gray-7: hsla(217, 15%, 83%, 0.7);
-  --simple-orange: hsla(25, 75%, 65%, 1);
-  --simple-red-1: hsla(365, 90%, 62%, 1);
-  --simple-red-2: hsl(365, 95%, 85%, 1);
-  --simple-red-3: hsl(365, 85%, 45%, 1);
-  --simple-tran: hsla(204, 45%, 97%, 0);
-  --simple-white-1: hsla(204, 45%, 97%, 1);
-  --simple-white-2: hsla(210, 45%, 95%, 1);
-  --simple-white-3: hsla(212, 17%, 80%, 0.2);
-  --simple-white-4: hsla(180, 33%, 99%, 1);
-  --simple-white-5: hsla(207, 10%, 90%, 0.1);
-  --simple-white-6: hsla(212, 17%, 80%, 0.3);
-  --simple-yellow: hsla(60, 100%, 50%, 0.4);
-  --size-2-1: 2px;
-  --size-2-2: 4px;
-  --size-2-3: 6px;
-  --size-4-1: 4px;
-  --size-4-10: 40px;
-  --size-4-12: 48px;
-  --size-4-16: 64px;
-  --size-4-18: 72px;
-  --size-4-2: 8px;
-  --size-4-3: 12px;
-  --size-4-4: 16px;
-  --size-4-5: 20px;
-  --size-4-6: 24px;
-  --size-4-8: 32px;
-  --size-4-9: 36px;
-  --slider-s-thumb-position: -5px;
-  --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: #3f3f3f;
-  --slider-thumb-border-width: 1px;
-  --slider-thumb-height: 18px;
-  --slider-thumb-radius: 50%;
-  --slider-thumb-width: 18px;
-  --slider-thumb-y: -6px;
-  --slider-track-background: #343434;
-  --slider-track-height: 3px;
-  --sliding-panes-header-color: #f1a634d0;
-  --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --stack-tabs-background-blur-depth: 40px;
-  --stag1: #f08383;
-  --stag1-bg: #bd1919;
-  --stag2: #e7b263;
-  --stag2-bg: #ac6700;
-  --stag3: #77df89;
-  --stag3-bg: #058c1c;
-  --status-bar-background: #151515;
-  --status-bar-bg: #000000;
-  --status-bar-border-color: #000000;
-  --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: 12px;
-  --status-bar-position: fixed;
-  --status-bar-radius: 7px 0 0 0;
-  --status-bar-text-color: #8a8a8a;
-  --stickies-color-1: #84c584;
-  --stickies-color-2: #c7a3cf;
-  --stripe-notebook-stripe-color: #162419;
-  --strong-em-color-1: #43d3ff;
-  --strong-em-color-2: #baaaff;
-  --strong-em-highlight-color: #a7b4ff;
-  --swatch-height: 22px;
-  --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  --swatch-width: 22px;
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
-  --sync-avatar-color-current-user: transparent;
-  --tab-background-active: #202020;
-  --tab-container-background: #151515;
-  --tab-curve: 6px;
-  --tab-divider-color: #3f3f3f;
-  --tab-font-size: 13px;
-  --tab-max-width: 320px;
-  --tab-outline-color: #151515;
-  --tab-outline-width: 1px;
-  --tab-radius: 5px;
-  --tab-radius-active: 6px 6px 0 0;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-font-weight: 400;
-  --tab-stacked-header-width: 40px;
-  --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: #0e0e0e;
-  --tab-stacked-text-align: start;
-  --tab-stacked-text-transform: rotate(0deg);
-  --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: #151515;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(208, 64%, 49%);
-  --tab-text-color: #797979;
-  --tab-text-color-active: #8a8a8a;
-  --tab-text-color-focused: #8a8a8a;
-  --tab-text-color-focused-active: #8a8a8a;
-  --tab-text-color-focused-active-current: #c6c6c6;
-  --tab-text-color-focused-highlighted: hsl(208, 64%, 49%);
-  --tab-width: 200px;
-  --table-add-button-background: transparent;
-  --table-add-button-border-color: #343434;
-  --table-add-button-border-width: 1px;
-  --table-background: transparent;
-  --table-background-color: #2f2f2f32;
-  --table-background-color-odd: #00000033;
-  --table-border-color: #4a4a4a;
-  --table-border-width: 1px;
-  --table-cell-vertical-alignment: top;
-  --table-color-calendar-2: rgb(0, 91, 144);
-  --table-color-rgb: 0, 91, 144;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-column-max-width: none;
-  --table-column-min-width: 6ch;
-  --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(208, 64%, 49%);
-  --table-drag-handle-color: #797979;
-  --table-drag-handle-color-active: #e4e4e4;
-  --table-drop-indicator-half-width: 2px;
-  --table-header-background: transparent;
-  --table-header-border-color: #4a4a4a;
-  --table-header-border-width: 1px;
-  --table-header-color: #c6c6c6;
-  --table-header-weight: calc(400 + 200);
-  --table-hover-color: #1f65a221;
-  --table-hover-raw-color: #08569a21;
-  --table-hover-thead-color: #21395bc7;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(208, 64%, 49%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(208, 64%, 49%);
-  --table-selection-border-radius: 4px;
-  --table-selection-border-width: 2px;
-  --table-text-size: calc(16px * 0.9375);
-  --table-thead-background-color: hsla(208, 64%, 49%, 0.1);
-  --table-white-space: break-spaces;
-  --tag-background: hsla(208, 64%, 49%, 0.1);
-  --tag-background-hover: hsla(208, 64%, 49%, 0.2);
-  --tag-border-color: hsla(208, 64%, 49%, 0.15);
-  --tag-border-color-hover: hsla(208, 64%, 49%, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: hsl(208, 64%, 49%);
-  --tag-color-hover: hsl(208, 64%, 49%);
-  --tag-dailynote: #98c8ff;
-  --tag-dailynote-bg: #0f60bd;
-  --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-ideas: #fcfcc0;
-  --tag-ideas-bg: #565656d8;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-questions: #d4bdff;
-  --tag-questions-bg: #6640ae;
-  --tag-radius: 2em;
-  --tag-size: 0.875em;
-  --tag-text: #e4e4e4;
-  --tag-weeklynote: #d1e6ff;
-  --tag-weeklynote-bg: #3971b1;
-  --tag1: #3674bb;
-  --tag2: #3685ad;
-  --tag3: #2a8f91;
-  --tag4: #43804f;
-  --tag5: #5f932e;
-  --tape-color: #99999967;
-  --text-accent: hsl(208, 64%, 49%);
-  --text-accent-hover: hsl(calc(208 - 5), calc(64% * 1.05), calc(49% * 1.29));
-  --text-blue: #7c94ff;
-  --text-brown: #be9684;
-  --text-checked-checkbox: #8e8e8e;
-  --text-color-code: #d58000;
-  --text-error: #e16d76;
-  --text-error-hover: #c9626a;
-  --text-faint: #797979;
-  --text-folder-file: #b3b3b3;
-  --text-folder-file-icon: hsl(208, 64%, 49%);
-  --text-gray: #acacac;
-  --text-green: #52c7b2;
-  --text-highlight: #c6c6c6;
-  --text-highlight-bg: hsla(57, 40%, 38%, 0.541);
-  --text-highlight-bg-a-dark: 0.541;
-  --text-highlight-bg-a-light: 0.847;
-  --text-highlight-bg-h-dark: 57;
-  --text-highlight-bg-h-light: 34;
-  --text-highlight-bg-l-dark: 38%;
-  --text-highlight-bg-l-light: 80%;
-  --text-highlight-bg-rgb: 255, 208, 0;
-  --text-highlight-bg-s-dark: 40%;
-  --text-highlight-bg-s-light: 100%;
-  --text-muted: #8a8a8a;
-  --text-muted-rgb: 138, 138, 138;
-  --text-normal: #c6c6c6;
-  --text-on-accent: #e4e4e4;
-  --text-on-accent-inverted: black;
-  --text-orange: #ffa344;
-  --text-pink: #ff6bba;
-  --text-purple: #b386f1;
-  --text-red: #ff4f4f;
-  --text-search-highlight-bg: #bb4361;
-  --text-selection: #3b767160;
-  --text-success: #44cf6e;
-  --text-warning: #e9973f;
-  --text-yellow: #ffdc51;
-  --text-yellow-2: #cca217;
-  --theme-color: hsl(208, 64%, 49%);
-  --theme-color-translucent-001: hsla(208, 64%, 49%, 0.01);
-  --theme-color-translucent-005: hsla(208, 64%, 49%, 0.05);
-  --theme-color-translucent-01: hsla(208, 64%, 49%, 0.1);
-  --theme-color-translucent-015: hsla(208, 64%, 49%, 0.15);
-  --theme-color-translucent-02: hsla(208, 64%, 49%, 0.2);
-  --theme-color-translucent-04: hsla(208, 64%, 49%, 0.4);
-  --theme-color-translucent-06: hsla(208, 64%, 49%, 0.6);
-  --thino-background-dark-custom: url("https://");
-  --thino-background-light-custom: url("https://");
-  --titlebar-background: #151515;
-  --titlebar-background-focused: #000000;
-  --titlebar-blur-depth: 8px;
-  --titlebar-border-color: #343434;
-  --titlebar-border-width: 0px;
-  --titlebar-brightness: 1;
-  --titlebar-height: 30px;
-  --titlebar-text-color: #8a8a8a;
-  --titlebar-text-color-focused: #c6c6c6;
-  --titlebar-text-weight: 700;
-  --toggle-border-width: 2px;
-  --toggle-radius: 18px;
-  --toggle-s-border-width: 2px;
-  --toggle-s-thumb-height: 15px;
-  --toggle-s-thumb-width: 15px;
-  --toggle-s-width: 34px;
-  --toggle-thumb-color: white;
-  --toggle-thumb-height: 18px;
-  --toggle-thumb-radius: 18px;
-  --toggle-thumb-width: 18px;
-  --toggle-width: 40px;
-  --unresolved-link: #f08080de;
-  --variable-2: #0072d0;
-  --variable-3: #5a96f7;
-  --vault-profile-actions-display: flex;
-  --vault-profile-color: #c6c6c6;
-  --vault-profile-color-hover: #c6c6c6;
-  --vault-profile-display: flex;
-  --vault-profile-font-size: 13px;
-  --vault-profile-font-weight: 500;
-  --viewer-container-height: 0;
-  --white: #ffffff;
-  --window-radius: 8px;
-  --window-shadow: 0 1px 3px hsla(207, 10%, 10%, 0.1);
-  --window-shadow2: 0 0 9px hsla(212, 17%, 0%, 0.3);
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
-  --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow: #d6b87f;
-  --zoom-factor: 1;
-}
-body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
-  background-color: rgba(83, 223, 221, 0.1);
-  border-color: rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25)
-    rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="abstract"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="abstract"] > .callout-title {
-  color: rgb(83, 223, 221);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(83, 223, 221);
-}
-body .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
-  border-color: rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25)
-    rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="bug"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="bug"] > .callout-title {
-  color: rgb(251, 70, 76);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(251, 70, 76);
-}
-body .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
-  border-color: rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25)
-    rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="danger"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="danger"] > .callout-title {
-  color: rgb(251, 70, 76);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(251, 70, 76);
-}
-body .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
-  background-color: rgba(168, 130, 255, 0.1);
-  border-color: rgba(168, 130, 255, 0.25) rgba(168, 130, 255, 0.25)
-    rgba(168, 130, 255, 0.25) rgba(168, 130, 255, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="example"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="example"] > .callout-title {
-  color: rgb(168, 130, 255);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(168, 130, 255);
-}
-body .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
-  background-color: rgba(251, 70, 76, 0.1);
-  border-color: rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.25)
-    rgba(251, 70, 76, 0.25) rgba(251, 70, 76, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="failure"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="failure"] > .callout-title {
-  color: rgb(251, 70, 76);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(251, 70, 76);
-}
-body .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
-  background-color: rgba(2, 122, 255, 0.1);
-  border-color: rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25)
-    rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="info"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="info"] > .callout-title {
-  color: rgb(2, 122, 255);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(2, 122, 255);
-}
-body .callout[data-callout="note"] {
-  --callout-color: 2, 122, 255;
-  background-color: rgba(2, 122, 255, 0.1);
-  border-color: rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25)
-    rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="note"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="note"] > .callout-title {
-  color: rgb(2, 122, 255);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(2, 122, 255);
-}
-body .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
-  background-color: rgba(233, 151, 63, 0.1);
-  border-color: rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25)
-    rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="question"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="question"] > .callout-title {
-  color: rgb(233, 151, 63);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(233, 151, 63);
-}
-body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
-  background-color: rgba(158, 158, 158, 0.1);
-  border-color: rgba(158, 158, 158, 0.25) rgba(158, 158, 158, 0.25)
-    rgba(158, 158, 158, 0.25) rgba(158, 158, 158, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="quote"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="quote"] > .callout-title {
-  color: rgb(158, 158, 158);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(158, 158, 158);
-}
-body .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
-  background-color: rgba(68, 207, 110, 0.1);
-  border-color: rgba(68, 207, 110, 0.25) rgba(68, 207, 110, 0.25)
-    rgba(68, 207, 110, 0.25) rgba(68, 207, 110, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="success"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="success"] > .callout-title {
-  color: rgb(68, 207, 110);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(68, 207, 110);
-}
-body .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
-  background-color: rgba(83, 223, 221, 0.1);
-  border-color: rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.25)
-    rgba(83, 223, 221, 0.25) rgba(83, 223, 221, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="tip"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="tip"] > .callout-title {
-  color: rgb(83, 223, 221);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(83, 223, 221);
-}
-body .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
-  background-color: rgba(2, 122, 255, 0.1);
-  border-color: rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.25)
-    rgba(2, 122, 255, 0.25) rgba(2, 122, 255, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="todo"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="todo"] > .callout-title {
-  color: rgb(2, 122, 255);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(2, 122, 255);
-}
-body .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
-  background-color: rgba(233, 151, 63, 0.1);
-  border-color: rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.25)
-    rgba(233, 151, 63, 0.25) rgba(233, 151, 63, 0.15);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0px;
-  mix-blend-mode: lighten;
-  padding: 0px;
-}
-body .callout[data-callout="warning"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-}
-body .callout[data-callout="warning"] > .callout-title {
-  color: rgb(233, 151, 63);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(233, 151, 63);
-}
-body .footnote-backref {
-  color: rgb(121, 121, 121);
-  text-decoration: none solid rgb(121, 121, 121);
-}
-body .markdown-preview-sizer {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(198, 198, 198);
-  border-color: rgb(198, 198, 198);
-  border-radius: 0px;
-  border-width: 0px;
-  box-shadow: none;
-}
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  cursor: pointer;
   filter: none;
   font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
     ui-sans-serif,
     -apple-system,
     "system-ui",
+    system-ui,
     "Segoe UI",
     Roboto,
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgba(240, 128, 128, 0.87);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  cursor: pointer;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body strong {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(0, 0, 0), rgb(231, 231, 231));
+  cursor: auto;
   filter: none;
   font-family:
     Bookerly,
@@ -8787,684 +7125,46 @@ body .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-weight: 400;
-  outline: rgba(240, 128, 128, 0.87) none 0px;
-  text-decoration: underline solid rgba(240, 128, 128, 0.87);
-  text-decoration-color: rgba(240, 128, 128, 0.87);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: opacity 0.14s ease-in-out;
-  user-select: text;
-}
-body .markdown-rendered blockquote {
-  background-color: rgba(145, 145, 145, 0.11);
-  border-inline-start: 5px solid rgb(45, 130, 205);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-style: normal;
-  margin-inline-end: 18px;
-  margin-inline-start: 18px;
-  padding-bottom: 8px;
-  padding-inline-start: 9.6px;
-  padding-top: 8px;
-}
-body .markdown-rendered code {
-  background-color: rgba(76, 76, 76, 0.69);
-  border: 0px solid rgb(52, 52, 52);
-  border-color: rgb(52, 52, 52);
-  border-radius: 5px;
-  color: rgb(213, 128, 0);
-  font-family:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
-  padding: 2px 2px 1px;
-}
-body .markdown-rendered hr {
-  border: unset;
-  border-color: rgb(63, 63, 63);
-  border-style: solid none none;
-  border-top: 2px solid rgb(63, 63, 63);
-  box-shadow: none;
-  margin: 32px 0px;
-}
-body .markdown-rendered mark {
-  background-color: rgba(136, 132, 58, 0.54);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
+  font-weight: 700;
+  outline: inherit;
+  text-decoration: none solid rgb(231, 231, 231);
+  text-decoration-color: rgb(231, 231, 231);
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
+  text-decoration-thickness: inherit;
+  transition: inherit;
   user-select: text;
-}
-body .markdown-rendered ol > li {
-  color: rgb(198, 198, 198);
-  text-align: start;
-}
-body .markdown-rendered ol > li::marker {
-  color: rgb(198, 198, 198);
-}
-body .markdown-rendered p {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(235, 219, 178);
-  border-color: rgb(235, 219, 178);
-  border-radius: 5px;
-  overflow-x: visible;
-  padding: 13.2px 6.6px;
-  white-space: pre-wrap;
-}
-body .markdown-rendered ul > li {
-  color: rgb(198, 198, 198);
-  text-align: start;
-}
-body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(198, 198, 198);
-  border-color: rgb(198, 198, 198);
-  border-radius: 0px;
-  color: rgb(198, 198, 198);
-  content: normal;
-  pointer-events: auto;
-  transform: none;
-  transition: all;
-}
-body .math-block > mjx-container.MathJax {
-  display: block;
-  font:
-    16px/0px Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-align: center;
-  white-space: normal;
-}
-body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: MJXZERO, MJXTEX;
-}
-body .mermaid > svg {
-  fill: rgb(51, 51, 51);
-  stroke: none;
-}
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
-  color: rgb(138, 138, 138);
-  cursor: default;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(138, 138, 138);
-}
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
-  color: rgb(138, 138, 138);
-  cursor: default;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(138, 138, 138);
-}
-body .nav-view-outer .tree-item-self a {
-  color: rgb(138, 138, 138);
-  cursor: default;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(138, 138, 138);
-}
-body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: default;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
-  font-weight: 400;
-}
-body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body .outline-view-outer .outline-view .tree-item > .tree-item-self {
-  font-weight: 400;
-}
-body .popover.hover-popover {
-  background-color: rgb(32, 32, 32);
-  border-color: rgb(0, 0, 0);
-}
-body .published-container {
-  --background-primary: rgb(32, 32, 32);
-  --sidebar-left-background: rgb(0, 0, 0);
-  --sidebar-left-border-color: rgb(0, 0, 0);
-  --sidebar-left-border-width: 1px;
-  --sidebar-right-background: rgb(0, 0, 0);
-  --sidebar-right-border-color: rgb(0, 0, 0);
-  --sidebar-right-border-width: 1px;
-  background-color: rgb(32, 32, 32);
-}
-body .published-container .markdown-rendered h1 {
-  color: rgb(150, 194, 46);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h2 {
-  color: rgb(76, 177, 72);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h3 {
-  color: rgb(58, 187, 187);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h4 {
-  color: rgb(117, 162, 230);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h5 {
-  color: rgb(178, 150, 243);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h6 {
-  color: rgb(234, 165, 248);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  text-shadow: none;
-}
-body .search-results {
-  background-color: rgb(30, 30, 30);
-  border: 0px none rgb(198, 198, 198);
-  border-radius: 15px;
-  box-shadow: rgb(85, 85, 85) 0px 0px 10px 1px;
-}
-body .search-results .suggestion-item {
-  color: rgb(198, 198, 198);
-}
-body .search-results .suggestion-item.is-selected {
-  background-color: rgba(45, 130, 205, 0.15);
-  color: rgb(198, 198, 198);
-  font-weight: 400;
-}
-body .search-results > * {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .site-body,
-body.theme-dark,
-body.theme-light,
-body .markdown-preview-sizer.markdown-preview-section {
-  background-color: rgb(32, 32, 32);
-}
-body .site-body-left-column input.search-bar {
-  background-color: rgba(46, 46, 46, 0.616);
-  border: 1px solid rgb(52, 52, 52);
-  border-color: rgb(52, 52, 52);
-  border-radius: 5px;
-  color: rgb(198, 198, 198);
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-}
-body .site-body-right-column {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
-  border-left-width: 1px;
-}
-body .suggestion-item.is-selected {
-  background-color: rgba(45, 130, 205, 0.15);
-  border-radius: 5px;
-  color: rgb(198, 198, 198);
-}
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  background-color: rgba(17, 17, 17, 0.55);
-  border: 0px solid rgb(52, 52, 52);
-  border-color: rgb(52, 52, 52);
-  border-radius: 7px;
-  overflow-x: auto;
-  padding: 16px 24px;
-  white-space: pre-wrap;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body em {
+  background-color: rgb(245, 84, 84);
+  color: light-dark(rgb(9, 157, 78), rgb(164, 202, 142));
   cursor: auto;
   filter: none;
   font-family:
@@ -9485,19 +7185,73 @@ body b {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
+  font-weight: 700;
+  outline: inherit;
+  text-decoration: none solid rgb(164, 202, 142);
+  text-decoration-color: rgb(164, 202, 142);
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
+  text-decoration-thickness: inherit;
+  transition: inherit;
   user-select: text;
+}
+body i {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered mark {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
+  color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
   cursor: auto;
   filter: none;
   font-family:
@@ -9519,50 +7273,76 @@ body del {
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
+  outline: inherit;
   text-decoration: line-through solid rgb(198, 198, 198);
   text-decoration-color: rgb(198, 198, 198);
   text-decoration-line: line-through;
   text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
+  text-decoration-thickness: inherit;
+  transition: inherit;
   user-select: text;
 }
-body div.math-block > mjx-container.MathJax {
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
+body .suggestion-item.is-selected {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body div.suggestion-item {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .markdown-rendered hr {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: solid;
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 2px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: rgba(45, 130, 205, 0.1);
-  border-bottom-color: rgba(45, 130, 205, 0.15);
-  border-bottom-left-radius: 28px;
-  border-bottom-right-radius: 28px;
-  border-bottom-style: solid;
-  border-left-color: rgba(45, 130, 205, 0.15);
-  border-left-style: solid;
-  border-right-color: rgba(45, 130, 205, 0.15);
-  border-right-style: solid;
-  border-top-color: rgba(45, 130, 205, 0.15);
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  border-top-style: solid;
+  background-color: light-dark(
+    rgba(47, 147, 228, 0.1),
+    rgba(45, 130, 205, 0.1)
+  );
   display: flex;
   font-family:
     ui-sans-serif,
@@ -9578,1659 +7358,994 @@ body div.multi-select-pill {
     sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(45, 130, 205, 0.15);
+  border-right-color: rgba(45, 130, 205, 0.15);
+  border-top-color: rgba(45, 130, 205, 0.15);
+  border-bottom-color: rgba(45, 130, 205, 0.15);
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: rgb(45, 130, 205);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
-body div.search-results {
-  border-color: rgb(198, 198, 198);
+body .markdown-rendered ul > li {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-align: left;
 }
-body div.search-results .suggestion-item {
-  border-color: rgb(198, 198, 198);
-}
-body div.search-results .suggestion-item.is-selected {
-  color: rgb(198, 198, 198);
-}
-body div.side-body-left-column {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
-  border-right-width: 1px;
-}
-body div.suggestion-item {
-  background-color: rgba(45, 130, 205, 0.15);
-  border-radius: 5px;
-  color: rgb(198, 198, 198);
-}
-body em {
+body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(164, 202, 142);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(164, 202, 142) none 0px;
-  text-decoration: none solid rgb(164, 202, 142);
-  text-decoration-color: rgb(164, 202, 142);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  content: normal;
+  pointer-events: auto;
+  transform: none;
+  transition: inherit;
 }
-body i {
+body .markdown-rendered ol > li {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-align: left;
+}
+body .markdown-rendered ol > li::marker {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-body s {
+body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow-x: visible;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
 }
-body strong {
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(231, 231, 231);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 700;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration: none solid rgb(231, 231, 231);
-  text-decoration-color: rgb(231, 231, 231);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body strong > em {
-  background-color: rgb(245, 84, 84);
-  color: rgb(231, 231, 231);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "LXGW WenKai Screen",
-    "LXGW WenKai Screen R",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Segoe UI Emoji",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 700;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration: none solid rgb(231, 231, 231);
-  text-decoration-color: rgb(231, 231, 231);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body u {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 198, 198);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Bookerly,
-    Inter,
-    "Segoe UI",
-    "霞鹜文楷 GB",
-    "LXGW WenKai",
-    "Microsoft YaHei",
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Microsoft YaHei Light",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 198, 198) none 0px;
-  text-decoration: none solid rgb(198, 198, 198);
-  text-decoration-color: rgb(198, 198, 198);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body ul > li.task-list-item[data-task="x"] {
-  color: rgb(138, 138, 138);
-  text-decoration: none solid rgb(138, 138, 138);
-  text-decoration-color: rgb(138, 138, 138);
-}
-body ul.contains-task-list > li.task-list-item {
-  display: list-item;
-  list-style: outside none none;
-  text-align: start;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow-x: visible;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
-  appearance: none;
-  border: 1px solid rgb(123, 123, 123);
-  border-color: rgb(123, 123, 123);
-  border-radius: 3px;
-  margin: 0px 8px 2px -21.6px;
-  margin-inline-end: 8px;
-  margin-inline-start: -21.6px;
-  padding: 0px;
-  position: relative;
-  top: 3.33333px;
-  transition: box-shadow 0.15s ease-in-out;
-  width: 14.3984px;
+  appearance: auto;
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: rgb(133, 133, 133);
+  border-right-color: rgb(133, 133, 133);
+  border-top-color: rgb(133, 133, 133);
+  border-bottom-color: rgb(133, 133, 133);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  transition: inherit;
+  position: static;
+  top: auto;
+}
+body ul.contains-task-list > li.task-list-item {
+  list-style: inherit;
+  text-align: left;
+  display: list-item;
 }
 body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  -webkit-mask-image: none;
-  -webkit-mask-position: 0% 0%;
-  -webkit-mask-repeat: repeat;
-  -webkit-mask-size: auto;
-  background-color: rgba(0, 0, 0, 0);
   content: normal;
-  display: block;
-  inset-inline-start: 0px;
-  position: relative;
-  top: 0px;
-  width: 1156px;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-mask-position: inherit;
+  -webkit-mask-size: inherit;
+  -webkit-mask-repeat: inherit;
+  -webkit-mask-image: inherit;
 }
-body.theme-light {
-  --Fold0: #fc5c65;
-  --Fold1: #fd9644;
-  --Fold2: #fed330;
-  --Fold3: #26de81;
-  --Fold4: #2bcbba;
-  --Fold5: #45aaf2;
-  --Fold6: #4b7bec;
-  --Fold7: #a55eea;
-  --Fold8: #d1d8e0;
-  --Fold9: #778ca3;
-  --FoldA: #eb3b5a;
-  --FoldB: #fa8231;
-  --FoldC: #f7b731;
-  --FoldD: #20bf6b;
-  --FoldE: #0fb9b1;
-  --FoldF: #2d98da;
-  --FoldG: #3867d6;
-  --FoldH: #8854d0;
-  --FoldI: #a5b1c2;
-  --FoldJ: #4b6584;
-  --FoldK: #fc5c65;
-  --FoldL: #fd9644;
-  --FoldM: #fed330;
-  --FoldN: #26de81;
-  --FoldO: #2bcbba;
-  --FoldP: #45aaf2;
-  --FoldQ: #4b7bec;
-  --FoldR: #a55eea;
-  --FoldS: #d1d8e0;
-  --FoldT: #778ca3;
-  --FoldU: #eb3b5a;
-  --FoldV: #fa8231;
-  --FoldW: #f7b731;
-  --FoldX: #20bf6b;
-  --FoldY: #0fb9b1;
-  --FoldZ: #2d98da;
-  --accent-em: #099d4e;
-  --accent-h: 207;
-  --accent-l: 54%;
-  --accent-l-alt: calc(54% * 0.9);
-  --accent-s: 77%;
-  --accent-strong: #000000;
-  --activeline-background: hsla(208, 64%, 49%, 0.05);
-  --admonition-bg-color: #ffffff00;
-  --anim-duration-fast: 140ms;
-  --anim-duration-moderate: 300ms;
-  --anim-duration-none: 0;
-  --anim-duration-slow: 560ms;
-  --anim-duration-superfast: 70ms;
-  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --aqua: #88c0d0;
-  --background-4-sliding-pane: #ffffffef;
-  --background-asymm-split-left: #f3f3f3;
-  --background-black-or-white-1: #e4e4e4;
-  --background-blockquote: #d5d5d52c;
-  --background-blue: #ddebf1;
-  --background-brown: #e9e5e3;
-  --background-code: #e6e6e671;
-  --background-code-2: #cccccc62;
-  --background-command-palette-theme-dark-custom: url("https://");
-  --background-command-palette-theme-light-custom: url("https://");
-  --background-gray: #ebeced;
-  --background-green: #ddedea;
-  --background-markdown-page-theme-dark-custom: url("https://");
-  --background-markdown-page-theme-light-custom: url("https://");
-  --background-mobile-drawer-1: #ffffff;
-  --background-mobile-drawer-2: #ffffffa1;
-  --background-modifier-active-hover: hsla(208, 64%, 49%, 0.1);
-  --background-modifier-border: #dddddd;
-  --background-modifier-border-1: #e1dfdf;
-  --background-modifier-border-asymm: #d8d8d8;
-  --background-modifier-border-checkbox: #9c9c9c;
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-border-hr: #bfbfbf;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-modifier-error: #e68787;
-  --background-modifier-error-hover: #ff9494;
-  --background-modifier-error-rgb: 230, 135, 135;
-  --background-modifier-form-field: #fff;
-  --background-modifier-form-field-highlighted: #fff;
-  --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: #a4e7c3;
-  --background-modifier-success-rgb: 83, 145, 38;
-  --background-nonoverlapping-note: #ffffff;
-  --background-orange: #faebdd;
-  --background-panel-page-theme-dark-custom: url("https://");
-  --background-panel-page-theme-light-custom: url("https://");
-  --background-pink: #f4dfeb;
-  --background-popover: #fafafa;
-  --background-primary: #ffffff;
-  --background-primary-alt: #e9e9e9;
-  --background-purple: #eae4f2;
-  --background-red: #ffe3e3;
-  --background-secondary: #fcfcfc;
-  --background-secondary-alt: #f3f3f3;
-  --background-secondary-alt-bg-4-bt-publish: #f6f6f6;
-  --background-secondary-translucent: #ffffff3d;
-  --background-secondary-translucent-1: #ffffff5d;
-  --background-settings-workplace-theme-dark-custom: url("https://");
-  --background-settings-workplace-theme-light-custom: url("https://");
-  --background-titlebar-inner: hsla(207, 77%, 54%, 10%);
-  --background-transparent-black-or-white-1: #ffffffb0;
-  --background-transparent-black-or-white-2: #ffffffca;
-  --background-transparent-black-or-white-3: #eeeeee91;
-  --background-transparent-black-or-white-3-1: #fafafac3;
-  --background-transparent-black-or-white-4: #a7a7a765;
-  --background-transparent-black-or-white-5: #f0f0f091;
-  --background-transparent-blue: #c6e5ffde;
-  --background-waves-color: #4a75db8c;
-  --background-yellow: #fbf3db;
-  --bases-cards-background: #202020;
-  --bases-cards-border-width: 1px;
-  --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: #444444;
-  --bases-cards-group-padding: 12px;
-  --bases-cards-line-height: 24px;
-  --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px #343434;
-  --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f;
-  --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: #343434;
-  --bases-embed-border-radius: 5px;
-  --bases-embed-border-width: 0px;
-  --bases-filter-menu-width: 520px;
-  --bases-header-border-width: 0 0 1px 0;
-  --bases-header-height: 40px;
-  --bases-header-padding-end: 2px;
-  --bases-header-padding-start: 2px;
-  --bases-table-border-color: #4a4a4a;
-  --bases-table-cell-background-active: #202020;
-  --bases-table-cell-background-disabled: #444444;
-  --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(208, 64%, 49%);
-  --bases-table-column-border-width: 1px;
-  --bases-table-column-max-width: 300;
-  --bases-table-column-min-width: 40;
-  --bases-table-container-border-radius: 5px;
-  --bases-table-container-border-width: 1px;
-  --bases-table-header-background: #202020;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
-  --bases-table-header-color: #8a8a8a;
-  --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
-  --bases-table-header-weight: 400;
-  --bases-table-row-background-hover: transparent;
-  --bases-table-row-border-width: 1px;
-  --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875em;
-  --bases-toolbar-badge-display: none;
-  --bases-toolbar-label-display: block;
-  --bg-color-highlight-1: #ff000034;
-  --bg-color-highlight-2: #0fc41835;
-  --bg-color-highlight-3: #4ca6ff51;
-  --bg-color-notebook: #ffffff00;
-  --bg-color-settings-0: #7d7d7d6b;
-  --bg-color-settings-0-1: #ffffff77;
-  --bg-color-settings-1: #ffffff17;
-  --bg-color-settings-2: #ffffff5a;
-  --bg-color-settings-3: #ffffffda;
-  --bg-color-settings-4: #ffffffd2;
-  --bg-color-settings-5: #d4d4d464;
-  --bg-color-settings-6: #ffffff85;
-  --bg-panel-page-opacity-cp: 0.25;
-  --bg-sliding-pane-header: #ffffff97;
-  --bg-sliding-pane-leaf: #ffffff88;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(208, 64%, 49%);
-  --blockquote-border-thickness: 2px;
-  --blockquote-font-style: normal;
-  --blue: #5e81ac;
-  --blue-green: #3bd4da;
-  --blur-codebox-frosted-glass: 2;
-  --blur-depth: 10px;
-  --blur-depth-cp: 10px;
-  --blur-p-kanban-frosted-glass: 5;
-  --bold-modifier: 200;
-  --bold-weight: calc(400 + 200);
-  --border-width: 1px;
-  --bottom-padding-value: 0em;
-  --brightness-4-bg: 0.9;
-  --brightness-4-bg-cp: 0.9;
-  --bt-bubble-background-color: transparent;
-  --bt-bubble-border-color: #343434;
-  --bt-bubble-layout-padding: 8px;
-  --bt-colorful-indentation-width: 1px;
-  --bt-connected-indent-line-color: #ffa8a8;
-  --bt-indentation-gradient-color-1: hsl(208, 64%, 49%);
-  --bt-indentation-gradient-color-2: transparent;
-  --bt-indentation-line-image: url("");
-  --bt-indentation-width-hover: 3px;
-  --button-radius: 5px;
-  --c-1: #da2400;
-  --c-2: #ffb623;
-  --c-3: #8c6e22;
-  --calendar-active-color: hsla(208, 64%, 49%, 0.2);
-  --calendar-hover-color: hsla(208, 64%, 49%, 0.1);
-  --calendar-today-background-color: #aaeec6;
-  --calendar-week-background-color: #d6e6bf;
-  --calendar-week-color: #48b432;
-  --calendar-week-hover: #e9ffe3;
-  --callout-blend-mode: lighten;
-  --callout-border-opacity: 0.25;
-  --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
-  --callout-content-background: transparent;
-  --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-quote: 158, 158, 158;
-  --callout-radius: 5px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
-  --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #202020;
-  --canvas-card-label-color: #797979;
-  --canvas-card-opacity: 0.1;
-  --canvas-color: 126, 126, 126;
-  --canvas-color-1: 251, 70, 76;
-  --canvas-color-2: 233, 151, 63;
-  --canvas-color-3: 224, 222, 113;
-  --canvas-color-4: 68, 207, 110;
-  --canvas-color-5: 83, 223, 221;
-  --canvas-color-6: 168, 130, 255;
-  --canvas-dot-pattern: #363636;
-  --cards-width: 138px;
-  --caret-color: #c6c6c6;
-  --checkbox-border-color: #797979;
-  --checkbox-border-color-hover: #8a8a8a;
-  --checkbox-color: hsl(208, 64%, 49%);
-  --checkbox-color-0: #2f92e4;
-  --checkbox-color-1: #c4c116;
-  --checkbox-color-2: #4bbf40;
-  --checkbox-color-3: #ffe9e9;
-  --checkbox-color-4: #fff8b7;
-  --checkbox-color-5: #ad7fbf;
-  --checkbox-color-6: #5f5f5f;
-  --checkbox-color-hover: hsl(
-    calc(208 - 5),
-    calc(64% * 1.05),
-    calc(49% * 1.29)
-  );
-  --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: #202020;
-  --checkbox-radius: 5px;
-  --checkbox-size: 0.9rem;
-  --checklist-bg: #dfdfdf8e;
-  --checklist-bg-hover: #ffffffcc;
-  --checklist-color-1: #bbdefbab;
-  --checklist-color-2: #b2ebf2ab;
-  --checklist-color-3: #c8e6c9ab;
-  --checklist-color-4: #f8ef99ab;
-  --checklist-color-5: #ffe0b2ab;
-  --checklist-color-6: #ffcdd2ab;
-  --checklist-color-7: #e1bee7ab;
-  --checklist-done-color: #8a8a8a;
-  --checklist-done-decoration: line-through;
-  --clickable-icon-radius: 5px;
-  --cloze-bg-color: #e7e7e7;
-  --cloze-bg-color-3: transparent;
-  --cloze-decoration: none;
-  --cloze-decoration-2: dashed;
-  --cloze-decoration-3: dashed;
-  --cloze-decoration-color: red;
-  --cloze-decoration-color-2: hsl(208, 64%, 49%);
-  --cloze-decoration-color-3: hsl(208, 64%, 49%);
-  --code-active-line-background-color: hsla(208, 64%, 49%, 0.05);
-  --code-atom: #da904b;
-  --code-attribute: #cac685;
-  --code-attribute-in-comment: #c792ea;
-  --code-background: #1111118c;
-  --code-border-color: #343434;
-  --code-border-width: 0px;
-  --code-bracket: #ff5370;
-  --code-bracket-background: rgba(255, 255, 255, 0.067);
-  --code-builtin: #ffcb6b;
-  --code-callee: #89ddff;
-  --code-comment: #568060;
-  --code-def: #82aaff;
-  --code-definition: #82aaff;
-  --code-error-bg: #ff5370;
-  --code-function: #cac685;
-  --code-header: #da7dae;
-  --code-hr: #abb2bf;
-  --code-important: #478fee;
-  --code-keyword: #478fee;
-  --code-language: #8a8a8a;
-  --code-link: #696d70;
-  --code-matching-bracket: #ffffff;
-  --code-meta: #ffcb6b;
-  --code-normal: #000000;
-  --code-number: #ff5370;
-  --code-operator: #a89984;
-  --code-property: #a0c7e9;
-  --code-punctuation: #abb2bf;
-  --code-qualifier: #35bed0;
-  --code-radius: 5px;
-  --code-selection-background: #3b767160;
-  --code-selection-color: #ebdbb2;
-  --code-size: 0.875em;
-  --code-string: #abd58e;
-  --code-string-2: #d6b87f;
-  --code-tag: #db7c84;
-  --code-tag-in-comment: #ff5370;
-  --code-type: #cac685;
-  --code-value: #abd58e;
-  --code-variable: #db7c84;
-  --code-variable-2: #53ada3;
-  --code-variable-3: #e7852fe7;
-  --code-white-space: pre-wrap;
-  --collapse-icon-color: #797979;
-  --collapse-icon-color-collapsed: hsl(208, 64%, 49%);
-  --color-accent: hsl(207, 77%, 54%);
-  --color-accent-1: hsl(calc(207 - 1), calc(77% * 1.01), calc(54% * 1.075));
-  --color-accent-2: hsl(calc(207 - 3), calc(77% * 1.02), calc(54% * 1.15));
-  --color-accent-hsl: 207, 77%, 54%;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-blue: #086ddd;
-  --color-blue-rgb: 8, 109, 221;
-  --color-cyan: #00bfbc;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-green: #08b94e;
-  --color-green-rgb: 8, 185, 78;
-  --color-highlight-1: #0e0e0e;
-  --color-highlight-2: #0e0e0e;
-  --color-highlight-3: #0e0e0e;
-  --color-orange: #ec7500;
-  --color-orange-rgb: 236, 117, 0;
-  --color-pink: #d53984;
-  --color-pink-rgb: 213, 57, 132;
-  --color-purple: #7852ee;
-  --color-purple-rgb: 120, 82, 238;
-  --color-red: #e93147;
-  --color-red-rgb: 233, 49, 71;
-  --color-view-header-gradient-1: #ffffffce;
-  --color-view-header-gradient-2: #ffffffce;
-  --color-yellow: #e0ac00;
-  --color-yellow-rgb: 224, 172, 0;
-  --colorA: rgba(152, 0, 240, 0.13);
-  --colorB: rgba(0, 72, 240, 0.13);
-  --colorC: rgba(0, 240, 44, 0.13);
-  --cursor: default;
-  --cursor-blue: #1791e2;
-  --cursor-green: #008000;
-  --cursor-link: pointer;
-  --cursor-red: #ff0000;
-  --cursor-violet: #ee82ee;
-  --cursor-yellow: #d5ca00;
-  --custom-titlebar-bg: #000000;
-  --darkblue: #3b84e4;
-  --darkgreen: #068a5e;
-  --day-planner-dot: #ffd900;
-  --day-planner-item-hover: #8fccff;
-  --day-planner-line: #ffd900;
-  --day-planner-pie: #eca95c;
-  --day-planner-timeline: #d62f2f;
-  --dialog-max-height: 85vh;
-  --dialog-max-width: 80vw;
-  --dialog-width: 560px;
-  --direction: 1;
-  --divider-color: #e3e3e3;
-  --divider-color-hover: hsl(208, 64%, 49%);
-  --divider-vertical-height: 100%;
-  --divider-width: 1px;
-  --divider-width-hover: 3px;
-  --dotted-notebook-dot-color: #c7c7c780;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
-  --drag-ghost-text-color: #fff;
-  --dropdown-background: #efefef;
-  --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #e6e6e6;
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover: 0 0 0 1px #343434, inset 0 0 0 1px #343434;
-  --embed-border-bottom: none;
-  --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(208, 64%, 49%);
-  --embed-border-top: none;
-  --embed-canvas-max-height: 400px;
-  --embed-color: hsla(calc(207 * 1), calc(77% * 0.8), calc(54% * 1), 0.035);
-  --embed-content-height: 600px;
-  --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 24px;
-  --event-item-color1: #65ace6;
-  --event-item-color10: #072f6b;
-  --event-item-color2: #52a4e7;
-  --event-item-color3: #2e96eb;
-  --event-item-color4: #2786da;
-  --event-item-color5: #1275cc;
-  --event-item-color6: #2664c0;
-  --event-item-color7: #1652ac;
-  --event-item-color8: #0c469c;
-  --event-item-color9: #0a3c86;
-  --external-link-color: hsl(207, 77%, 54%);
-  --fancy-cursor-width: 2px;
-  --fancy-hr-icon: "😀";
-  --fancy-hr-rotate: 0deg;
-  --file-folding-offset: 24px;
-  --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --file-header-font-size: 13px;
-  --file-header-font-weight: 400;
-  --file-header-justify: center;
-  --file-line-width: 45rem;
-  --file-margins: 32px;
-  --flair-background: #2b2b2b;
-  --flair-color: #c6c6c6;
-  --focus-ring-color: #0df;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
-  --folder-title: #000000;
-  --font-black: 900;
-  --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --font-extrabold: 800;
-  --font-extralight: 200;
-  --font-family-better-footnote: Arlrdbd, "Source Han Sans", "Segoe UI Emoji";
-  --font-family-em: ;
-  --font-family-folder-file-title:
-    "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
-    "Segoe UI Emoji", sans-serif;
-  --font-family-inline-code:
-    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
-    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
-    "Microsoft YaHei", "Source Code Pro", monospace;
-  --font-family-list: ;
-  --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-family-strong:
-    Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
-    "霞鹜文楷 GB", "LXGW WenKai", "Segoe UI Emoji", "??", "??", "??",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --font-family-tag:
-    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
-    "Segoe UI Emoji", Serif;
-  --font-family-title: ;
-  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-interface-override: "??";
-  --font-interface-theme: "??";
-  --font-light: 300;
-  --font-loading-text:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
-  --font-medium: 500;
-  --font-mermaid:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-monospace:
-    "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
-    "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
-    "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
-    SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme:
-    "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
-    "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
-    "Source Code Pro", monospace;
-  --font-normal: 400;
-  --font-print:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
-  --font-print-override: "??";
-  --font-semibold: 600;
-  --font-size-better-footnote: 1.3em;
-  --font-size-checklist: 0.85em;
-  --font-size-cloze: 0.9375em;
-  --font-size-code: 0.825em;
-  --font-size-edit-blockquote: 1em;
-  --font-size-edit-normal: 1em;
-  --font-size-embed-file: 1.25em;
-  --font-size-embed-title-size: 1.3em;
-  --font-size-emoji-after-tag: 1.5625em;
-  --font-size-file-header-title: 0.9em;
-  --font-size-file-header-title-andy-plugin: 1em;
-  --font-size-folder-and-file: 0.9em;
-  --font-size-latex: 1em;
-  --font-size-list: 1em;
-  --font-size-loading-add: 1.5em;
-  --font-size-loading-diy-text: 3em;
-  --font-size-obsidian-titlebar: 13px;
-  --font-size-outline: 13px;
-  --font-size-preview-blockquote: 1em;
-  --font-size-preview-normal: 1em;
-  --font-size-split: 0.85em;
-  --font-size-tag: 0.85em;
-  --font-size-vault-name: 1em;
-  --font-small: 0.933em;
-  --font-smaller: 0.875em;
-  --font-smallest: 0.8em;
-  --font-style-em: italic;
-  --font-text:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --font-text-override: "??";
-  --font-text-size: 16px;
-  --font-text-theme:
-    Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei";
-  --font-thin: 100;
-  --font-ui-large: 20px;
-  --font-ui-medium: 15px;
-  --font-ui-small: 13px;
-  --font-ui-smaller: 12px;
-  --font-weight: 400;
-  --font-weight-highlight-1: normal;
-  --font-weight-highlight-2: normal;
-  --font-weight-highlight-3: normal;
-  --font-weight-inline-code: bold;
-  --font-weight-strong: bold;
-  --footnote-divider-color: #343434;
-  --footnote-divider-color-active: transparent;
-  --footnote-divider-width: 1px;
-  --footnote-gap: 4px;
-  --footnote-id-color: #8a8a8a;
-  --footnote-id-color-no-occurrences: #797979;
-  --footnote-id-delimiter: ".";
-  --footnote-input-background: transparent;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.067);
-  --footnote-line-height: 1.5;
-  --footnote-padding-block: 6px;
-  --footnote-padding-inline: 6px;
-  --footnote-radius: 5px;
-  --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
-  --frame-right-space: 0px;
-  --graph-arrow: #e25300;
-  --graph-attach: #afcfe0cc;
-  --graph-canvas-bg: #ffffff;
-  --graph-circle: #1f78b4cc;
-  --graph-circle-fill-highlight: hsl(208, 64%, 49%);
-  --graph-circle-outline: transparent;
-  --graph-control-bg: #ffffff9a;
-  --graph-controls-width: 240px;
-  --graph-line: #b1b1b1;
-  --graph-line-fill-highlight: rgb(70, 142, 235);
-  --graph-node: #8a8a8a;
-  --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(208, 64%, 49%);
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #797979;
-  --graph-tag: #77d425cc;
-  --graph-text: #c6c6c6;
-  --graph-text-color: #696969;
-  --graph-unresolved: #db4e4ecc;
-  --gray-1: #383a42;
-  --gray-2: #383a42;
-  --green: #a3be8c;
-  --green-1: #3dc730;
-  --grid-notebook-line-color-1: #c7c7c740;
-  --grid-notebook-line-color-2: #afafaf40;
-  --h1-bg-color: color-mix(in srgb, hsl(78, 62%, 47%) 15%, transparent);
-  --h1-color: hsl(216, 88%, 26%);
-  --h1-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h1-line-height: 1.2;
-  --h1-size: 1.5625em;
-  --h1-style: normal;
-  --h1-variant: normal;
-  --h1-weight: 700;
-  --h2-bg-color: color-mix(in srgb, hsl(118, 42%, 49%) 15%, transparent);
-  --h2-color: hsl(212, 100%, 33%);
-  --h2-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h2-line-height: 1.2;
-  --h2-size: 1.4375em;
-  --h2-style: normal;
-  --h2-variant: normal;
-  --h2-weight: 600;
-  --h3-bg-color: color-mix(in srgb, hsl(180, 53%, 48%) 15%, transparent);
-  --h3-color: hsl(210, 86%, 39%);
-  --h3-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h3-line-height: 1.3;
-  --h3-size: 1.3125em;
-  --h3-style: normal;
-  --h3-variant: normal;
-  --h3-weight: 600;
-  --h4-bg-color: color-mix(in srgb, hsl(216, 69%, 68%) 15%, transparent);
-  --h4-color: hsl(208, 58%, 49%);
-  --h4-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --h4-line-height: 1.4;
-  --h4-size: 1.1875em;
-  --h4-style: normal;
-  --h4-variant: normal;
-  --h4-weight: 600;
-  --h5-bg-color: color-mix(in srgb, hsl(258, 79%, 77%) 15%, transparent);
-  --h5-color: hsl(209, 70%, 62%);
-  --h5-line-height: 1.5;
-  --h5-size: 1.0625em;
-  --h5-style: normal;
-  --h5-variant: normal;
-  --h5-weight: 600;
-  --h6-bg-color: color-mix(in srgb, hsl(290, 85%, 81%) 15%, transparent);
-  --h6-color: hsl(209, 65%, 72%);
-  --h6-line-height: 1.5;
-  --h6-size: 1em;
-  --h6-style: normal;
-  --h6-variant: normal;
-  --h6-weight: 600;
-  --he-title-bar-active-action: hsl(208, 64%, 49%);
-  --he-title-bar-active-bg: hsla(208, 64%, 49%, 0.05);
-  --he-title-bar-active-fg: #c6c6c6;
-  --he-title-bar-active-pinned-bg: hsla(208, 64%, 49%, 0.05);
-  --he-title-bar-inactive-action: #c6c6c6;
-  --he-title-bar-inactive-bg: hsla(208, 64%, 49%, 0.01);
-  --he-title-bar-inactive-fg: #8a8a8a;
-  --he-title-bar-inactive-pinned-bg: hsla(208, 64%, 49%, 0.01);
-  --header-height: 40px;
-  --heading-formatting: #797979;
-  --heading-spacing: calc(1rem * 2.5);
-  --hibox: 24px;
-  --highlight-mix-blend-mode: darken;
-  --hr-color: #242424;
-  --hr-color-1: hsl(208, 64%, 49%);
-  --hr-color-2: hsl(208, 64%, 49%);
-  --hr-color-3: hsl(208, 64%, 49%);
-  --hr-color-4: hsl(208, 64%, 49%);
-  --hr-color-icon-1: hsl(208, 64%, 49%);
-  --hr-color-icon-2: hsl(208, 64%, 49%);
-  --hr-color-icon-3: hsl(208, 64%, 49%);
-  --hr-color-icon-4: hsl(208, 64%, 49%);
-  --hr-color-numbers-bg-color: hsla(208, 64%, 49%, 0.15);
-  --hr-color-numbers-color: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-1: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-2: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-3: hsl(208, 64%, 49%);
-  --hr-color-numbers-line-4: hsl(208, 64%, 49%);
-  --hr-numbers-text-fill: transparent;
-  --hr-numbers-text-stroke: #c6c6c6;
-  --hr-thickness: 2px;
-  --icon-color: #8a8a8a;
-  --icon-color-active: hsl(208, 64%, 49%);
-  --icon-color-focused: #c6c6c6;
-  --icon-color-hover: #8a8a8a;
-  --icon-l: 18px;
-  --icon-l-stroke-width: 1.75px;
-  --icon-m: 18px;
-  --icon-m-stroke-width: 1.75px;
-  --icon-opacity: 0.85;
-  --icon-opacity-active: 1;
-  --icon-opacity-hover: 1;
-  --icon-s: 16px;
-  --icon-s-stroke-width: 2px;
-  --icon-size: 18px;
-  --icon-stroke: 1.75px;
-  --icon-xl: 32px;
-  --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
-  --icon-xs-stroke-width: 2px;
-  --image-max-width: 100%;
-  --indent-size: 4;
-  --indent-unit: 0.5625em;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
-  --indentation-guide-editing-indent: 0.85em;
-  --indentation-guide-reading-indent: -0.85em;
-  --indentation-guide-source-indent: 0.25em;
-  --indentation-guide-width: 1px;
-  --indentation-guide-width-active: 1px;
-  --inline-title-bg-color: color-mix(
-    in srgb,
-    hsl(78, 62%, 47%) 15%,
-    transparent
-  );
-  --inline-title-color: hsl(78, 62%, 47%);
-  --inline-title-font:
-    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
-  --inline-title-line-height: 1.2;
-  --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5625em;
-  --inline-title-style: normal;
-  --inline-title-variant: normal;
-  --inline-title-weight: 700;
-  --input-border-width: 1px;
-  --input-border-width-focus: 2px;
-  --input-date-separator: #797979;
-  --input-font-weight: 400;
-  --input-height: 30px;
-  --input-padding: 4px 8px;
-  --input-placeholder-color: #797979;
-  --input-radius: 5px;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --interactive-accent: hsl(208, 64%, 49%);
-  --interactive-accent-hover: hsl(
-    calc(207 - 3),
-    calc(77% * 1.02),
-    calc(54% * 1.15)
-  );
-  --interactive-accent-hsl: 208, 64%, 49%;
-  --interactive-accent-rgb: 70, 142, 235;
-  --interactive-hover: #e6e6e6;
-  --interactive-normal: #efefef;
-  --internal-link-color: hsl(207, 77%, 54%);
-  --kanban-color-1: #0065d852;
-  --kanban-color-2: #30e4e441;
-  --kanban-color-3: #1cb54f44;
-  --kanban-color-4: #97b82b49;
-  --kanban-color-5: #bb722d41;
-  --kanban-color-6: #d12e2e42;
-  --kanban-color-7: #8f36cb3f;
-  --keyboard-height: 0px;
-  --layer-cover: 5;
-  --layer-dragged-item: 80;
-  --layer-menu: 65;
-  --layer-modal: 50;
-  --layer-notice: 60;
-  --layer-popover: 30;
-  --layer-sidedock: 10;
-  --layer-slides: 45;
-  --layer-status-bar: 15;
-  --layer-tooltip: 70;
-  --letter-space-code: 0;
-  --letter-space-main: 0;
-  --light-purple: #b74ff3;
-  --light-yellow: #ab9a02;
-  --line-height-list: 2;
-  --line-height-main: 1.5;
-  --line-height-normal: 1.5;
-  --line-height-split: 1.3;
-  --line-height-tight: 1.3;
-  --link-color: hsl(208, 64%, 49%);
-  --link-color-hover: hsl(calc(208 - 5), calc(64% * 1.05), calc(49% * 1.29));
-  --link-decoration: underline;
-  --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-external-color: hsl(208, 64%, 49%);
-  --link-external-color-hover: hsl(
-    calc(208 - 5),
-    calc(64% * 1.05),
-    calc(49% * 1.29)
-  );
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-external-filter: none;
-  --link-unresolved-color: hsl(208, 64%, 49%);
-  --link-unresolved-decoration-color: #db4e4ecc;
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-filter: none;
-  --link-unresolved-opacity: 0.7;
-  --link-weight: 400;
-  --list-bullet-border: none;
-  --list-bullet-end-padding: 1.3rem;
-  --list-bullet-radius: 50%;
-  --list-bullet-size: 0.3em;
-  --list-bullet-transform: none;
-  --list-colorful-marker: #fd4949;
-  --list-indent: calc(0.5625em * 4);
-  --list-indent-editing: 0.75em;
-  --list-indent-source: 0;
-  --list-marker-color: #797979;
-  --list-marker-color-collapsed: hsl(208, 64%, 49%);
-  --list-marker-color-hover: #8a8a8a;
-  --list-numbered-style: decimal;
-  --list-ol-block-color: #3573a5;
-  --list-ol-hover: #2c7bd6;
-  --list-ol-marker-1: decimal;
-  --list-ol-marker-2: lower-latin;
-  --list-ol-marker-3: lower-roman;
-  --list-ol-marker-4: decimal;
-  --list-ol-number-color: #797979;
-  --list-spacing: 0.075em;
-  --list-spacing-bt: 1;
-  --list-ul-block-color: #b9751b;
-  --list-ul-colorful-marker-content: "•";
-  --list-ul-disc-color: #f39c55;
-  --list-ul-hover: #dd922f;
-  --list-ul-marker-1: "•";
-  --list-ul-marker-2: "◦";
-  --list-ul-marker-3: "▪";
-  --list-ul-marker-4: "◦";
-  --list-ul-marker-color: #797979;
-  --loading-add-text-color: #d47e86;
-  --loading-add-text-color-alt: #a4e39c;
-  --loading-diy-text: "快乐摸鱼又一天，人生还剩多少天？";
-  --loading-diy-text-color: #c6c6c6;
-  --loading-icon-delay: 400ms;
-  --loading-page-custom-gif-caption: " ";
-  --loading-page-custom-gif-caption-alt: " ";
-  --loading-page-custom-gif-url: url(https://);
-  --loading-text-after: "✿❀";
-  --loading-text-before: "❀✿";
-  --mark-highlight-strong-em: #ff880049;
-  --matrix-1: #7cdddd65;
-  --matrix-2: #8ce38465;
-  --matrix-4: #eeb36f65;
-  --matrix-5: #f18e8e65;
-  --menu-backdrop-filter: none;
-  --menu-background: #151515;
-  --menu-border-color: #3f3f3f;
-  --menu-border-width: 1px;
-  --menu-padding: 6px;
-  --menu-radius: 7px;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --mermaid-active-task-color: #44bbff;
-  --mermaid-font-family:
-    Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
-    Arial, cursive;
-  --mermaid-seq-dia-color: #76c8ff;
-  --metadata-background: transparent;
-  --metadata-border-color: #343434;
-  --metadata-border-radius: 0;
-  --metadata-border-width: 0;
-  --metadata-display-editing: block;
-  --metadata-display-reading: block;
-  --metadata-divider-color: #343434;
-  --metadata-divider-color-focus: transparent;
-  --metadata-divider-color-hover: transparent;
-  --metadata-divider-width: 0;
-  --metadata-gap: 3px;
-  --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
-  --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: #c6c6c6;
-  --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --metadata-label-font-size: 0.875em;
-  --metadata-label-text-color: #8a8a8a;
-  --metadata-label-text-color-hover: #8a8a8a;
-  --metadata-label-width: 9em;
-  --metadata-max-width: none;
-  --metadata-padding: 8px 0;
-  --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #555555;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
-  --metadata-property-padding: 0;
-  --metadata-property-radius: 6px;
-  --metadata-property-radius-focus: 6px;
-  --metadata-property-radius-hover: 6px;
-  --metadata-sidebar-input-font-size: 13px;
-  --metadata-sidebar-label-font-size: 13px;
-  --mjx-inline-math-color: #0e0e0e;
-  --mjx-math-color: #0e0e0e;
-  --modal-background: #202020;
-  --modal-border-color: #555555;
-  --modal-border-width: 1px;
-  --modal-community-sidebar-width: 280px;
-  --modal-height: 85vh;
-  --modal-max-height: 1000px;
-  --modal-max-width: 1100px;
-  --modal-max-width-narrow: 800px;
-  --modal-radius: 15px;
-  --modal-width: 90vw;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --nav-collapse-icon-color: #797979;
-  --nav-collapse-icon-color-collapsed: #797979;
-  --nav-heading-color: #c6c6c6;
-  --nav-heading-color-collapsed: #797979;
-  --nav-heading-color-collapsed-hover: #8a8a8a;
-  --nav-heading-color-hover: #c6c6c6;
-  --nav-heading-weight: 500;
-  --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgba(255, 255, 255, 0.067);
-  --nav-item-background-hover: rgba(255, 255, 255, 0.067);
-  --nav-item-background-selected: hsla(208, 64%, 49%, 0.15);
-  --nav-item-children-margin-start: 12px;
-  --nav-item-children-padding-start: 4px;
-  --nav-item-color: #8a8a8a;
-  --nav-item-color-active: #c6c6c6;
-  --nav-item-color-highlighted: hsl(208, 64%, 49%);
-  --nav-item-color-hover: #c6c6c6;
-  --nav-item-color-selected: #c6c6c6;
-  --nav-item-padding: 4px 8px 4px 24px;
-  --nav-item-parent-padding: 4px 8px 4px 24px;
-  --nav-item-size: 13px;
-  --nav-item-white-space: pre;
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord1-1: #3b425251;
-  --nord10: #5e81ac;
-  --nord11: #bf616a;
-  --nord11-1: #bf616a4b;
-  --nord12: #d08770;
-  --nord13: #ebcb8b;
-  --nord13-0: #e2b65e;
-  --nord13-1: #ebca894b;
-  --nord14: #a3be8c;
-  --nord14-0: #95b677;
-  --nord15: #b48ead;
-  --nord2: #434c5e;
-  --nord3: #4c566a;
-  --nord3-1: #717a91;
-  --nord4: #d8dee9;
-  --nord4-1: #d8dee95c;
-  --nord5: #e5e9f0;
-  --nord5-1: #e5e9f053;
-  --nord6: #eceff4;
-  --nord6-1: #eceff46c;
-  --nord6-2: #eceff43c;
-  --nord7: #8fbcbb;
-  --nord7-transparent: #8fbcbb2f;
-  --nord8: #88c0d0;
-  --nord8-0: #65afc4;
-  --nord9: #81a1c1;
-  --nord9-1: #81a1c16c;
-  --nord9-2: #81a1c13c;
-  --note-cloze: #000000;
-  --note-important: #fd4141;
-  --opacity-cp: 0.25;
-  --orange: #db9600;
-  --orange-1: #cc7523;
-  --p-kanban-bg-color: #d3d3d32d;
-  --p-kanban-border-color: #a0a0a060;
-  --p-kanban-card-color-1: #ffffff80;
-  --p-kanban-card-color-2: #ffffff;
-  --p-kanban-color-1: #52aaf365;
-  --p-kanban-color-2: #7cdddd65;
-  --p-kanban-color-3: #8ce38465;
-  --p-kanban-color-4: #d1d77f65;
-  --p-kanban-color-5: #eeb36f65;
-  --p-kanban-color-6: #f18e8e65;
-  --p-kanban-color-7: #e677e065;
-  --p-kanban-color-8: #ba8be165;
-  --p-kanban-color-shadow: #cfcfcf4d;
-  --p-kanban-color-simple: #cdcdcd2c;
-  --p-spacing: 1rem;
-  --p-spacing-empty: 0rem;
-  --page-border: 9px solid transparent;
-  --page-border-bottom: #f3f3f3;
-  --page-margin: 1px auto -8px;
-  --panel-border-color: #dbdbdc;
-  --paragraph-spacing: 1;
-  --pdf-background: #202020;
-  --pdf-page-background: #202020;
-  --pdf-shadow: 0 0 0 1px #343434;
-  --pdf-sidebar-background: #202020;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px #343434;
-  --pdfViewer-padding-bottom: 0;
-  --pill-background: transparent;
-  --pill-background-hover: transparent;
-  --pill-border-color: #343434;
-  --pill-border-color-hover: #3f3f3f;
-  --pill-border-width: 1px;
-  --pill-color: #8a8a8a;
-  --pill-color-hover: #c6c6c6;
-  --pill-color-remove: #797979;
-  --pill-color-remove-hover: hsl(208, 64%, 49%);
-  --pill-decoration: none;
-  --pill-decoration-hover: none;
-  --pill-focus-left-adjust: -4px;
-  --pill-focus-width: calc(100% + 6px);
-  --pill-padding-x: 0.65em;
-  --pill-padding-y: 0.25em;
-  --pill-radius: 2em;
-  --pixel: 20px;
-  --popover-font-size: 16px;
-  --popover-height: 400px;
-  --popover-height-factor: 1;
-  --popover-max-height: 95vh;
-  --popover-pdf-height: 400px;
-  --popover-pdf-width: 450px;
-  --popover-width: 450px;
-  --popover-width-factor: 1;
-  --print-em-color: #a4ca8e;
-  --print-strong-color: ;
-  --prompt-border-color: #555555;
-  --prompt-border-width: 1px;
-  --prompt-box-shadow: #bebebe;
-  --prompt-input-height: 40px;
-  --prompt-max-height: 70vh;
-  --prompt-max-width: 80vw;
-  --prompt-width: 700px;
-  --purple: #c74df7;
-  --radius-l: 15px;
-  --radius-m: 7px;
-  --radius-s: 5px;
-  --radius-xl: 16px;
-  --radius-xs: 3px;
-  --red: #bf616a;
-  --red-1: #f16464f5;
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #000000;
-  --ribbon-padding: 8px 4px 12px;
-  --ribbon-width: 44px;
-  --safe-area-inset-bottom: 0px;
-  --safe-area-inset-left: 0px;
-  --safe-area-inset-right: 0px;
-  --safe-area-inset-top: 0px;
-  --saturate-4-bg: 1;
-  --saturate-4-bg-cp: 1;
-  --scrollbar-active-thumb-bg: #ddddddd9;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-border-width: 3px 3px 3px 2px;
-  --scrollbar-height: 12px;
-  --scrollbar-radius: 15px;
-  --scrollbar-thumb-bg: #dcdcdcbe;
-  --scrollbar-width: 12px;
-  --search-clear-button-color: #8a8a8a;
-  --search-clear-button-size: 13px;
-  --search-icon-color: #8a8a8a;
-  --search-icon-size: 18px;
-  --search-result-file-matched-bg: #ffd9d9e5;
-  --search-result-file-title-color: #0e0e0e;
-  --search-text: #000000;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --share-card-background-opacity-cp: 0.6;
-  --share-thino-background-dark-custom: url("https://");
-  --share-thino-background-light-custom: url("https://");
-  --sidebar-markdown-font-size: calc(16px * 0.9);
-  --sidebar-tab-text-display: none;
-  --simple-black-1: hsla(0, 0%, 13%, 1);
-  --simple-black-2: hsla(220, 20%, 35%, 1);
-  --simple-blue-1: hsla(209, 95%, 62%, 1);
-  --simple-blue-2: hsla(209, 85%, 72%, 0.5);
-  --simple-blue-3: hsla(245, 60%, 67%, 1);
-  --simple-blue-4: hsla(209, 20%, 66%, 0.62);
-  --simple-gray-1: hsla(0, 0%, 33%, 1);
-  --simple-gray-2: hsla(210, 15%, 70%, 0.2);
-  --simple-gray-3: hsla(210, 15%, 20%, 0.2);
-  --simple-gray-4: hsla(210, 6%, 38%, 0.5);
-  --simple-gray-5: hsla(207, 17%, 90%, 1);
-  --simple-gray-6: hsla(217, 15%, 83%, 1);
-  --simple-gray-7: hsla(217, 15%, 83%, 0.7);
-  --simple-orange: hsla(25, 75%, 65%, 1);
-  --simple-red-1: hsla(365, 90%, 62%, 1);
-  --simple-red-2: hsl(365, 95%, 85%, 1);
-  --simple-red-3: hsl(365, 85%, 45%, 1);
-  --simple-tran: hsla(204, 45%, 97%, 0);
-  --simple-white-1: hsla(204, 45%, 97%, 1);
-  --simple-white-2: hsla(210, 45%, 95%, 1);
-  --simple-white-3: hsla(212, 17%, 80%, 0.2);
-  --simple-white-4: hsla(180, 33%, 99%, 1);
-  --simple-white-5: hsla(207, 10%, 90%, 0.1);
-  --simple-white-6: hsla(212, 17%, 80%, 0.3);
-  --simple-yellow: hsla(60, 100%, 50%, 0.4);
-  --size-2-1: 2px;
-  --size-2-2: 4px;
-  --size-2-3: 6px;
-  --size-4-1: 4px;
-  --size-4-10: 40px;
-  --size-4-12: 48px;
-  --size-4-16: 64px;
-  --size-4-18: 72px;
-  --size-4-2: 8px;
-  --size-4-3: 12px;
-  --size-4-4: 16px;
-  --size-4-5: 20px;
-  --size-4-6: 24px;
-  --size-4-8: 32px;
-  --size-4-9: 36px;
-  --slider-s-thumb-position: -5px;
-  --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: #3f3f3f;
-  --slider-thumb-border-width: 1px;
-  --slider-thumb-height: 18px;
-  --slider-thumb-radius: 50%;
-  --slider-thumb-width: 18px;
-  --slider-thumb-y: -6px;
-  --slider-track-background: #343434;
-  --slider-track-height: 3px;
-  --sliding-panes-header-color: #0e64bb;
-  --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --stack-tabs-background-blur-depth: 40px;
-  --stag1: #fa8787;
-  --stag1-bg: #eb2727;
-  --stag2: #fdbd5c;
-  --stag2-bg: #ee9002;
-  --stag3: #50ce3a;
-  --stag3-bg: #22ac09;
-  --status-bar-background: #151515;
-  --status-bar-bg: #000000;
-  --status-bar-border-color: #000000;
-  --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: 12px;
-  --status-bar-position: fixed;
-  --status-bar-radius: 7px 0 0 0;
-  --status-bar-text-color: #8a8a8a;
-  --stickies-color-1: #b3e2b3;
-  --stickies-color-2: #e9c6f1;
-  --stripe-notebook-stripe-color: #f5f2e6;
-  --strong-em-color-1: #1048ff;
-  --strong-em-color-2: #14c8ff;
-  --strong-em-highlight-color: #237add;
-  --swatch-height: 22px;
-  --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  --swatch-width: 22px;
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
-  --sync-avatar-color-current-user: transparent;
-  --tab-background-active: #202020;
-  --tab-container-background: #151515;
-  --tab-curve: 6px;
-  --tab-divider-color: #3f3f3f;
-  --tab-font-size: 13px;
-  --tab-max-width: 320px;
-  --tab-outline-color: #e3e3e3;
-  --tab-outline-width: 1px;
-  --tab-radius: 5px;
-  --tab-radius-active: 6px 6px 0 0;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-font-weight: 400;
-  --tab-stacked-header-width: 40px;
-  --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: #d6d6d6;
-  --tab-stacked-text-align: start;
-  --tab-stacked-text-transform: rotate(0deg);
-  --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: #151515;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(208, 64%, 49%);
-  --tab-text-color: #797979;
-  --tab-text-color-active: #8a8a8a;
-  --tab-text-color-focused: #8a8a8a;
-  --tab-text-color-focused-active: #8a8a8a;
-  --tab-text-color-focused-active-current: #c6c6c6;
-  --tab-text-color-focused-highlighted: hsl(208, 64%, 49%);
-  --tab-width: 200px;
-  --table-add-button-background: transparent;
-  --table-add-button-border-color: #343434;
-  --table-add-button-border-width: 1px;
-  --table-background: transparent;
-  --table-background-color: #f1f1f176;
-  --table-background-color-odd: #ffffff70;
-  --table-border-color: #7d7d7d;
-  --table-border-width: 1px;
-  --table-cell-vertical-alignment: top;
-  --table-color-calendar-2: rgb(167, 223, 251);
-  --table-color-rgb: 167, 223, 251;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-column-max-width: none;
-  --table-column-min-width: 6ch;
-  --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(208, 64%, 49%);
-  --table-drag-handle-color: #797979;
-  --table-drag-handle-color-active: #e4e4e4;
-  --table-drop-indicator-half-width: 2px;
-  --table-header-background: transparent;
-  --table-header-border-color: #4a4a4a;
-  --table-header-border-width: 1px;
-  --table-header-color: #0e0e0e;
-  --table-header-weight: calc(400 + 200);
-  --table-hover-color: #5dacec34;
-  --table-hover-raw-color: #85bfee2f;
-  --table-hover-thead-color: #ddefff;
-  --table-line-height: 1.3;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(208, 64%, 49%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(208, 64%, 49%);
-  --table-selection-border-radius: 4px;
-  --table-selection-border-width: 2px;
-  --table-text-size: calc(16px * 0.9375);
-  --table-thead-background-color: hsla(208, 64%, 49%, 0.1);
-  --table-white-space: break-spaces;
-  --tag-background: hsla(208, 64%, 49%, 0.1);
-  --tag-background-hover: hsla(208, 64%, 49%, 0.2);
-  --tag-border-color: hsla(208, 64%, 49%, 0.15);
-  --tag-border-color-hover: hsla(208, 64%, 49%, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: hsl(208, 64%, 49%);
-  --tag-color-hover: hsl(208, 64%, 49%);
-  --tag-dailynote: #0077ff;
-  --tag-dailynote-bg: #277cdd;
-  --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-ideas: #ceb900;
-  --tag-ideas-bg: #444444d8;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-questions: #b68fff;
-  --tag-questions-bg: #b085ff;
-  --tag-radius: 2em;
-  --tag-size: 0.875em;
-  --tag-text: #f8f8f8;
-  --tag-weeklynote: #4b9fff;
-  --tag-weeklynote-bg: #6aafff;
-  --tag1: #2573f0;
-  --tag2: #2193f0;
-  --tag3: #17a5e7;
-  --tag4: #14acc7;
-  --tag5: #10bdbd;
-  --tape-color: #acacac65;
-  --text-accent: hsl(207, 77%, 54%);
-  --text-accent-hover: hsl(calc(207 - 3), calc(77% * 1.02), calc(54% * 1.15));
-  --text-blue: #0083bb;
-  --text-brown: #855a46;
-  --text-checked-checkbox: #9b9b9b;
-  --text-color-code: #e95d00;
-  --text-error: #e75545;
-  --text-error-hover: #f86959;
-  --text-faint: #7f7f7f;
-  --text-folder-file: #272727;
-  --text-folder-file-icon: hsl(208, 64%, 49%);
-  --text-gray: #37352f99;
-  --text-green: #00927f;
-  --text-highlight: #0e0e0e;
-  --text-highlight-bg: hsla(34, 100%, 80%, 0.847);
-  --text-highlight-bg-a-dark: 0.541;
-  --text-highlight-bg-a-light: 0.847;
-  --text-highlight-bg-h-dark: 57;
-  --text-highlight-bg-h-light: 34;
-  --text-highlight-bg-l-dark: 38%;
-  --text-highlight-bg-l-light: 80%;
-  --text-highlight-bg-rgb: 255, 208, 0;
-  --text-highlight-bg-s-dark: 40%;
-  --text-highlight-bg-s-light: 100%;
-  --text-muted: #7f7f7f;
-  --text-muted-rgb: 138, 138, 138;
-  --text-normal: #0e0e0e;
-  --text-on-accent: #ffffff;
-  --text-on-accent-inverted: black;
-  --text-orange: #d9730d;
-  --text-pink: #c40075;
-  --text-purple: #5d1fb9;
-  --text-red: #ff4343;
-  --text-search-highlight-bg: #ffd1dd;
-  --text-selection: #a9d1c859;
-  --text-success: #44cf6e;
-  --text-warning: #e9973f;
-  --text-yellow: #d4a300;
-  --text-yellow-2: #a78000;
-  --theme-color: hsl(208, 64%, 49%);
-  --theme-color-translucent-001: hsla(208, 64%, 49%, 0.01);
-  --theme-color-translucent-005: hsla(208, 64%, 49%, 0.05);
-  --theme-color-translucent-01: hsla(208, 64%, 49%, 0.1);
-  --theme-color-translucent-015: hsla(208, 64%, 49%, 0.15);
-  --theme-color-translucent-02: hsla(208, 64%, 49%, 0.2);
-  --theme-color-translucent-04: hsla(208, 64%, 49%, 0.4);
-  --theme-color-translucent-06: hsla(208, 64%, 49%, 0.6);
-  --thino-background-dark-custom: url("https://");
-  --thino-background-light-custom: url("https://");
-  --titlebar-background: #151515;
-  --titlebar-background-focused: #000000;
-  --titlebar-blur-depth: 8px;
-  --titlebar-border-color: #343434;
-  --titlebar-border-width: 0px;
-  --titlebar-brightness: 1;
-  --titlebar-height: 30px;
-  --titlebar-text-color: #8a8a8a;
-  --titlebar-text-color-focused: #c6c6c6;
-  --titlebar-text-weight: 700;
-  --toggle-border-width: 2px;
-  --toggle-radius: 18px;
-  --toggle-s-border-width: 2px;
-  --toggle-s-thumb-height: 15px;
-  --toggle-s-thumb-width: 15px;
-  --toggle-s-width: 34px;
-  --toggle-thumb-color: white;
-  --toggle-thumb-height: 18px;
-  --toggle-thumb-radius: 18px;
-  --toggle-thumb-width: 18px;
-  --toggle-width: 40px;
-  --unresolved-link: #db4e4ecc;
-  --variable-2: #0072d0;
-  --variable-3: #5a96f7;
-  --vault-profile-actions-display: flex;
-  --vault-profile-color: #c6c6c6;
-  --vault-profile-color-hover: #c6c6c6;
-  --vault-profile-display: flex;
-  --vault-profile-font-size: 13px;
-  --vault-profile-font-weight: 500;
-  --viewer-container-height: 0;
-  --white: #ffffff;
-  --window-radius: 8px;
-  --window-shadow: 0 1px 3px hsla(212, 17%, 80%, 0.2);
-  --window-shadow2: 0 0 9px hsla(217, 15%, 83%, 0.7);
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
-  --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --yellow: #e48100;
-  --zoom-factor: 1;
+body ul > li.task-list-item[data-task="x"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+}
+body .markdown-rendered blockquote {
+  background-color: rgba(0, 0, 0, 0);
+  border-inline-start: inherit;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-style: normal;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+body .footnote-backref {
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline solid rgb(166, 138, 249);
+}
+body .site-body-left-column input.search-bar {
+  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: rgb(133, 133, 133);
+  border-right-color: rgb(133, 133, 133);
+  border-top-color: rgb(133, 133, 133);
+  border-bottom-color: rgb(133, 133, 133);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  font-family: Arial;
+}
+body .search-results {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+}
+body .search-results > * {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body div.search-results {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .search-results .suggestion-item {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body div.search-results .suggestion-item {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .search-results .suggestion-item.is-selected {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0);
+}
+body div.search-results .suggestion-item.is-selected {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .published-container .markdown-rendered h1 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h2 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h3 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h4 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h5 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h6 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .outline-view-outer .outline-view .tree-item > .tree-item-self {
+  font-weight: 400;
+}
+body .outline-view-outer .outline-view .tree-item > .tree-item-children {
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+  border-inline-start: inherit;
+}
+body .markdown-preview-sizer {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+}
+body .callout[data-callout="note"] {
+  --callout-color: inherit;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  mix-blend-mode: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+body .callout[data-callout="note"] > .callout-title {
+  gap: inherit;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout > .callout-title > .callout-title-inner {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-weight: 400;
+}
+body .callout > .callout-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body .callout[data-callout="abstract"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="info"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="todo"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="tip"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="success"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="question"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="warning"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="danger"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="failure"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="bug"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="example"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="quote"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .math-block > mjx-container.MathJax {
+  display: inline;
+  text-align: start;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body div.math-block > mjx-container.MathJax {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .math-inline > mjx-container.MathJax > mjx-math {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .nav-view-outer .tree-item-self a {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
+}
+body .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+}
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
+}
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
 }

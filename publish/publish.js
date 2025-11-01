@@ -671,8 +671,8 @@ function injectStyleElement(css) {
 
 function ensureModeMatchesTheme(theme) {
   const isDark = document
-    .querySelector("body")
-    .classList.value.includes("theme-dark");
+    .querySelector("div.site-body-left-column-site-theme-toggle")
+    .classList.value.includes("is-dark");
   const themeSupportsDark = themeListDark.includes(theme);
   const themeSupportsLight = themeListLight.includes(theme);
 
