@@ -79,6 +79,64 @@
   src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #e7e7e7 !important;
+  --code-border-color: #dadada !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsla(258, 88%, 66%, 0.08) !important;
+  --code-comment: #aaaaaa !important;
+  --code-function: #b6b11c !important;
+  --code-important: #d57929 !important;
+  --code-keyword: #e0308d !important;
+  --code-normal: #222222 !important;
+  --code-operator: #e03035 !important;
+  --code-property: #18ada8 !important;
+  --code-punctuation: #4f4f4f !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #0fa50a !important;
+  --code-tag: #e03035 !important;
+  --code-value: #8330e0 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #c7c7c7 !important;
+  --graph-node: #4f4f4f !important;
+  --graph-node-attachment: #b6b11c !important;
+  --graph-node-focused: #7e55dd !important;
+  --graph-node-tag: #0fa50a !important;
+  --graph-node-unresolved: #aaaaaa !important;
+  --graph-text: #222222 !important;
+}
+
+body.theme-dark {
+  --code-background: #222222 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsla(258, 88%, 66%, 0.08) !important;
+  --code-comment: #666666 !important;
+  --code-function: #cec92a !important;
+  --code-important: #e08330 !important;
+  --code-keyword: #e0308d !important;
+  --code-normal: #dadada !important;
+  --code-operator: #e03035 !important;
+  --code-property: #2dcec9 !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #32ce2d !important;
+  --code-tag: #e03035 !important;
+  --code-value: #9149e4 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #4c4c4c !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #cec92a !important;
+  --graph-node-focused: #8a5cf5 !important;
+  --graph-node-tag: #32ce2d !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #dadada !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -145,19 +203,19 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(24, 173, 168), rgb(45, 206, 201));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(45, 206, 201);
+  text-decoration-color: rgb(45, 206, 201);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
@@ -177,19 +235,19 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(15, 165, 10), rgb(50, 206, 45));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(50, 206, 45);
+  text-decoration-color: rgb(50, 206, 45);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
@@ -237,7 +295,7 @@ body del {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -295,28 +353,28 @@ body .markdown-rendered hr {
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: normal;
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
+  align-items: center;
+  background-color: light-dark(rgba(138, 92, 245, 0.125), rgba(138, 92, 245, 0.075));
+  display: flex;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(138, 92, 245, 0.15);
+  border-right-color: rgba(138, 92, 245, 0.15);
+  border-top-color: rgba(138, 92, 245, 0.15);
+  border-bottom-color: rgba(138, 92, 245, 0.15);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));

@@ -8,8 +8,60 @@
 
 
 :root:root {
+  --code-background: #cecdcf !important;
+  --code-border-color: #b1b0b2 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(226, 224, 226, 0.5) !important;
+  --code-comment: #767678 !important;
+  --code-function: #98863B !important;
+  --code-important: #98623B !important;
+  --code-keyword: #752E5C !important;
+  --code-normal: #1d1f21 !important;
+  --code-operator: #933942 !important;
+  --code-property: #5E8D87 !important;
+  --code-punctuation: #4e4f51 !important;
+  --code-radius: 4px !important;
+  --code-size: --font-normal !important;
+  --code-string: #3F7F31 !important;
+  --code-tag: #933942 !important;
+  --code-value: #3B3169 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #939395 !important;
+  --graph-node: #4e4f51 !important;
+  --graph-node-attachment: #98863B !important;
+  --graph-node-focused: hsl(174, 20%, 48%) !important;
+  --graph-node-tag: #3F7F31 !important;
+  --graph-node-unresolved: #767678 !important;
+  --graph-text: #1d1f21 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #27292b !important;
+  --code-border-color: #444648 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(29, 31, 33, 0.5) !important;
+  --code-comment: #808082 !important;
+  --code-function: #BCAB62 !important;
+  --code-important: #BC8762 !important;
+  --code-keyword: #AE7499 !important;
+  --code-normal: #e2e0d2 !important;
+  --code-operator: #B65E67 !important;
+  --code-property: #5E8D87 !important;
+  --code-punctuation: #a7a6a8 !important;
+  --code-radius: 4px !important;
+  --code-size: --font-normal !important;
+  --code-string: #88BC7D !important;
+  --code-tag: #B65E67 !important;
+  --code-value: #9C97B7 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #626365 !important;
+  --graph-node: #a7a6a8 !important;
+  --graph-node-attachment: #BCAB62 !important;
+  --graph-node-focused: hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15)) !important;
+  --graph-node-tag: #88BC7D !important;
+  --graph-node-unresolved: #808082 !important;
+  --graph-text: #e2e0d2 !important;
 }
 
 
@@ -255,19 +307,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(226, 224, 210);
+  text-decoration-color: rgb(226, 224, 210);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -357,19 +409,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through solid rgb(226, 224, 210);
+  text-decoration-color: rgb(226, 224, 210);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -407,25 +459,25 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: rgb(68, 70, 72);
+  border-right-color: rgb(68, 70, 72);
+  border-top-color: rgb(68, 70, 72);
+  border-bottom-color: rgb(68, 70, 72);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -499,29 +551,29 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: light-dark(rgb(206, 205, 207), rgb(39, 41, 43));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgb(68, 70, 72);
+  border-right-color: rgb(68, 70, 72);
+  border-top-color: rgb(68, 70, 72);
+  border-bottom-color: rgb(68, 70, 72);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
+  font-family: "Courier New", monospace;
+  padding-top: 2.4px;
+  padding-bottom: 2.4px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
   }
 
   pre > code {
@@ -643,13 +695,13 @@ body {
   blockquote {
     background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

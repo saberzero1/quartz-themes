@@ -8,8 +8,92 @@
 
 
 :root:root {
+  --code-background: #f3e6d2 !important;
+  --code-border-color: #fbb4577e !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(182, 28, 28, 0.5) !important;
+  --code-comment: #4e5b6f !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #681010 !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #697580 !important;
+  --code-radius: 0 !important;
+  --code-size: 0.9em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #c20a0a35 !important;
+  --graph-node: #412f2f !important;
+  --graph-node-attachment: #000000 !important;
+  --graph-node-focused: #df6262 !important;
+  --graph-node-tag: #cd645e !important;
+  --graph-node-unresolved: #e2b7a3 !important;
+  --graph-text: #412f2f !important;
+  --graph-arrow: #697580 !important;
+  --graph-tag: #cd645e !important;
+  --graph-bg: #fff9f0 !important;
+  --code-bg: #f3e6d2 !important;
+  --code-shadow: 0 2px 0 #fbb4577e !important;
+  --code-text: #681010 !important;
+  --graph-404: #e2b7a3 !important;
+  --graph-background: #fff9f0 !important;
+  --graph-controls-section-header-padding: 4px 8px !important;
+  --graph-fill: #a35158 !important;
+  --graph-focused: #df6262 !important;
+  --graph-img: #000000 !important;
+  --graph-line-hover: #c75959 !important;
+  --graph-lines: #c20a0a35 !important;
+  --graph-node-hover-fill: #a35158 !important;
+  --graph-node-hover-outline: #e5ebee !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #232831 !important;
+  --code-border-color: #283345 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(212, 47, 47, 0.4) !important;
+  --code-comment: #4e5b6f !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #fa4545 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #97a1b9 !important;
+  --code-radius: 0 !important;
+  --code-size: 0.9em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #7a141466 !important;
+  --graph-node: #bccad8 !important;
+  --graph-node-attachment: #42536e !important;
+  --graph-node-focused: #61afef !important;
+  --graph-node-tag: #652121 !important;
+  --graph-node-unresolved: #586477 !important;
+  --graph-text: #bccad8 !important;
+  --graph-arrow: #97a1b9 !important;
+  --graph-tag: #652121 !important;
+  --graph-bg: #1a1e24 !important;
+  --code-bg: #232831 !important;
+  --code-shadow: 0 2px 0 #0000008c !important;
+  --code-text: #fa4545 !important;
+  --graph-404: #586477 !important;
+  --graph-background: #1a1e24 !important;
+  --graph-controls-section-header-padding: 4px 8px !important;
+  --graph-fill: #c94d4d !important;
+  --graph-focused: #61afef !important;
+  --graph-img: #42536e !important;
+  --graph-line-hover: #863737 !important;
+  --graph-lines: #7a141466 !important;
+  --graph-node-hover-fill: #c94d4d !important;
+  --graph-node-hover-outline: #e5ebee !important;
 }
 
 
@@ -106,19 +190,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(65, 47, 47), rgb(188, 202, 216));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: its-Bookerly, Bookerly, Inter;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(188, 202, 216);
+  text-decoration-color: rgb(188, 202, 216);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -208,19 +292,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(65, 47, 47), rgb(188, 202, 216));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: its-Bookerly, Bookerly, Inter;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through 1px solid rgb(188, 202, 216);
+  text-decoration-color: rgb(188, 202, 216);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -258,25 +342,25 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top-width: 2px;
+  border-top-width: 0px;
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -350,15 +434,15 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: light-dark(rgb(243, 230, 210), rgb(35, 40, 49));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgb(40, 51, 69);
+  border-right-color: rgb(40, 51, 69);
+  border-top-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(40, 51, 69);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -367,12 +451,12 @@ body {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  color: light-dark(rgb(104, 16, 16), rgb(250, 69, 69));
+  font-family: "its-Fira Code", "Fira Code", Inter;
+  padding-top: 2.16px;
+  padding-bottom: 2.16px;
+  padding-left: 4.32px;
+  padding-right: 4.32px;
   }
 
   pre > code {
@@ -492,15 +576,15 @@ body {
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(250, 242, 233), rgb(13, 16, 20));
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: its-Bookerly, Bookerly, Inter;
   font-style: normal;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

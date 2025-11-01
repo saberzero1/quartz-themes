@@ -393,6 +393,9 @@ function generateAndWriteCSS(
   }
 
   // Generate Quartz SCSS
+  // Note: We skip toHexColors() on the colorSchemeSection because some themes have malformed
+  // CSS values (e.g., "hsl(23025%95%)" instead of "hsl(230, 25%, 95%)") that cause postcss
+  // to hang indefinitely. Since these are CSS variables being injected as-is, conversion isn't necessary.
   const colorSchemeSection =
     lightData && darkData
       ? `
@@ -421,7 +424,7 @@ ${bodyVarsStringDark}}
   font-size: 16px;
 }
 
-${toHexColors(colorSchemeSection)}
+${colorSchemeSection}
 
 ${
   lightData && darkData

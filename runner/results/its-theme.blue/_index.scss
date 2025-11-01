@@ -8,8 +8,92 @@
 
 
 :root:root {
+  --code-background: #f1f5ff !important;
+  --code-border-color: #ccd6eb !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(60, 102, 168, 0.4) !important;
+  --code-comment: #4e5b6f !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #4296ea !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #4e99d0 !important;
+  --code-radius: 0 !important;
+  --code-size: 0.9em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgba(46, 124, 214, 0.2) !important;
+  --graph-node: #283a67 !important;
+  --graph-node-attachment: #4c78cc !important;
+  --graph-node-focused: #5599d0 !important;
+  --graph-node-tag: #517cbf !important;
+  --graph-node-unresolved: #a6bbde !important;
+  --graph-text: #283a67 !important;
+  --graph-arrow: #4e99d0 !important;
+  --graph-tag: #517cbf !important;
+  --graph-bg: #f8fbff !important;
+  --code-bg: #f1f5ff !important;
+  --code-shadow: 0 2px 0 #dde4ef !important;
+  --code-text: #4296ea !important;
+  --graph-404: #a6bbde !important;
+  --graph-background: #f8fbff !important;
+  --graph-controls-section-header-padding: 4px 8px !important;
+  --graph-fill: #5174a3 !important;
+  --graph-focused: #5599d0 !important;
+  --graph-img: #4c78cc !important;
+  --graph-line-hover: #64a0db !important;
+  --graph-lines: rgba(46, 124, 214, 0.2) !important;
+  --graph-node-hover-fill: #5174a3 !important;
+  --graph-node-hover-outline: #e5ebee !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #232831 !important;
+  --code-border-color: #283345 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(60, 102, 168, 0.4) !important;
+  --code-comment: #4e5b6f !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: slategray !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #6d7a9b !important;
+  --code-radius: 0 !important;
+  --code-size: 0.9em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgba(46, 124, 214, 0.3) !important;
+  --graph-node: #AAB3CA !important;
+  --graph-node-attachment: #4c78cc !important;
+  --graph-node-focused: #4c87cc !important;
+  --graph-node-tag: #293e64 !important;
+  --graph-node-unresolved: #586477 !important;
+  --graph-text: #AAB3CA !important;
+  --graph-arrow: #6d7a9b !important;
+  --graph-tag: #293e64 !important;
+  --graph-bg: #1a1e24 !important;
+  --code-bg: #232831 !important;
+  --code-shadow: 0 2px 0 #0e0f15 !important;
+  --code-text: slategray !important;
+  --graph-404: #586477 !important;
+  --graph-background: #1a1e24 !important;
+  --graph-controls-section-header-padding: 4px 8px !important;
+  --graph-fill: #6ca6e0 !important;
+  --graph-focused: #4c87cc !important;
+  --graph-img: #4c78cc !important;
+  --graph-line-hover: #394d64 !important;
+  --graph-lines: rgba(46, 124, 214, 0.3) !important;
+  --graph-node-hover-fill: #6ca6e0 !important;
+  --graph-node-hover-outline: #e5ebee !important;
 }
 
 
@@ -106,19 +190,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(40, 58, 103), rgb(170, 179, 202));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(170, 179, 202);
+  text-decoration-color: rgb(170, 179, 202);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -208,19 +292,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(40, 58, 103), rgb(170, 179, 202));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through 1px solid rgb(170, 179, 202);
+  text-decoration-color: rgb(170, 179, 202);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -258,10 +342,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -271,12 +355,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -350,15 +434,15 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: light-dark(rgb(241, 245, 255), rgb(35, 40, 49));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgb(40, 51, 69);
+  border-right-color: rgb(40, 51, 69);
+  border-top-color: rgb(40, 51, 69);
+  border-bottom-color: rgb(40, 51, 69);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -367,12 +451,12 @@ body {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  color: light-dark(rgb(66, 150, 234), rgb(112, 128, 144));
+  font-family: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+  padding-top: 2.16px;
+  padding-bottom: 2.16px;
+  padding-left: 4.32px;
+  padding-right: 4.32px;
   }
 
   pre > code {
@@ -492,15 +576,15 @@ body {
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(241, 245, 255), rgb(16, 22, 29));
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-style: normal;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

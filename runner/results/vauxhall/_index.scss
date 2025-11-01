@@ -8,8 +8,60 @@
 
 
 :root:root {
+  --code-background: color-mix( in srgb, hsl(238, 60%, 95%) 90%, hsl(255, 100%, 50%) ) !important;
+  --code-border-color: color-mix( in srgb, hsl(238, 60%, 95%) 90%, hsl(255, 100%, 50%) ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: color-mix( in srgb, hsl(238, 60%, 95%) 95%, hsl(255, 100%, 50%) ) !important;
+  --code-comment: color-mix( in srgb, hsl(238, 60%, 95%) 60%, hsl(255, 100%, 50%) ) !important;
+  --code-function: #ffd85e !important;
+  --code-important: #fa9f50 !important;
+  --code-keyword: #e54f9b !important;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
+  --code-operator: #e3365e !important;
+  --code-property: #3bb2ce !important;
+  --code-punctuation: color-mix( in srgb, hsl(238, 60%, 95%) 30%, hsl(255, 100%, 50%) ) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #47cc91 !important;
+  --code-tag: #e3365e !important;
+  --code-value: #9446f8 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix( in srgb, hsl(238, 60%, 95%) 95%, hsl(255, 100%, 50%) ) !important;
+  --graph-node: color-mix( in srgb, hsl(238, 60%, 95%) 30%, hsl(255, 100%, 50%) ) !important;
+  --graph-node-attachment: #ffd85e !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: #47cc91 !important;
+  --graph-node-unresolved: color-mix( in srgb, hsl(238, 60%, 95%) 60%, hsl(255, 100%, 50%) ) !important;
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: color-mix(in srgb, hsl(238, 60%, 11%) 80%, #000) !important;
+  --code-border-color: color-mix( in srgb, hsl(238, 60%, 11%) 90%, hsl(255, 100%, 80%) ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: color-mix( in srgb, hsl(238, 60%, 11%) 95%, hsl(255, 100%, 80%) ) !important;
+  --code-comment: color-mix( in srgb, hsl(238, 60%, 11%) 60%, hsl(255, 100%, 80%) ) !important;
+  --code-function: #ffd85e !important;
+  --code-important: #fa9f50 !important;
+  --code-keyword: #e54f9b !important;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
+  --code-operator: #e3365e !important;
+  --code-property: #43cfea !important;
+  --code-punctuation: color-mix( in srgb, hsl(238, 60%, 11%) 30%, hsl(255, 100%, 80%) ) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #52eea3 !important;
+  --code-tag: #e3365e !important;
+  --code-value: #9446f8 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix( in srgb, hsl(238, 60%, 11%) 95%, hsl(255, 100%, 80%) ) !important;
+  --graph-node: color-mix( in srgb, hsl(238, 60%, 11%) 30%, hsl(255, 100%, 80%) ) !important;
+  --graph-node-attachment: #ffd85e !important;
+  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --graph-node-tag: #52eea3 !important;
+  --graph-node-unresolved: color-mix( in srgb, hsl(238, 60%, 11%) 60%, hsl(255, 100%, 80%) ) !important;
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
 }
 
 
@@ -255,19 +307,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(color(srgb 0.125 0 0.5), color(srgb 0.91 0.88 1));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid color(srgb 0.91 0.88 1);
+  text-decoration-color: color(srgb 0.91 0.88 1);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -357,19 +409,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(color(srgb 0.125 0 0.5), color(srgb 0.91 0.88 1));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through solid color(srgb 0.91 0.88 1);
+  text-decoration-color: color(srgb 0.91 0.88 1);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -407,10 +459,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: color(srgb 0.1096 0.10356 0.2584);
+  border-right-color: color(srgb 0.1096 0.10356 0.2584);
+  border-top-color: color(srgb 0.1096 0.10356 0.2584);
+  border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -420,12 +472,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -499,29 +551,29 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: light-dark(color(srgb 0.853 0.8298 0.982), color(srgb 0.0352 0.03872 0.1408));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: color(srgb 0.1096 0.10356 0.2584);
+  border-right-color: color(srgb 0.1096 0.10356 0.2584);
+  border-top-color: color(srgb 0.1096 0.10356 0.2584);
+  border-bottom-color: color(srgb 0.1096 0.10356 0.2584);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: light-dark(color(srgb 0.125 0 0.5), color(srgb 0.91 0.88 1));
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+  padding-top: 2.1px;
+  padding-bottom: 2.1px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
   }
 
   pre > code {
@@ -647,9 +699,9 @@ body {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

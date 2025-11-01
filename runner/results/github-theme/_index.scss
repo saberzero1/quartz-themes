@@ -8,8 +8,60 @@
 
 
 :root:root {
+  --code-background: #f6f8fa !important;
+  --code-border-color: #d0d7de !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(208, 215, 222, 0.32) !important;
+  --code-comment: #6e7781 !important;
+  --code-function: #d96c00 !important;
+  --code-important: #d96c00 !important;
+  --code-keyword: #cf222e !important;
+  --code-normal: #57606a !important;
+  --code-operator: #cf222e !important;
+  --code-property: #086DDD !important;
+  --code-punctuation: #57606a !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #2db7b5 !important;
+  --code-tag: #cf222e !important;
+  --code-value: #876be0 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #57606a !important;
+  --graph-node-attachment: #BD8E37 !important;
+  --graph-node-focused: hsl(212, 92%, 45%) !important;
+  --graph-node-tag: #0cb54f !important;
+  --graph-node-unresolved: #6e7781 !important;
+  --graph-text: #24292f !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #161b22 !important;
+  --code-border-color: #30363d !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(177, 186, 196, 0.12) !important;
+  --code-comment: #6e7681 !important;
+  --code-function: #FFA657 !important;
+  --code-important: #FFA657 !important;
+  --code-keyword: #F47067 !important;
+  --code-normal: #8b949e !important;
+  --code-operator: #F47067 !important;
+  --code-property: #6CB6FF !important;
+  --code-punctuation: #8b949e !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #A5D6FF !important;
+  --code-tag: #F47067 !important;
+  --code-value: #D2A8FF !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #21262d !important;
+  --graph-node: #8b949e !important;
+  --graph-node-attachment: #d29922 !important;
+  --graph-node-focused: hsl(212, 100%, calc(67% - 3.8%)) !important;
+  --graph-node-tag: #7ee787 !important;
+  --graph-node-unresolved: #6e7681 !important;
+  --graph-text: #c9d1d9 !important;
 }
 
 
@@ -255,19 +307,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(201, 209, 217);
+  text-decoration-color: rgb(201, 209, 217);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -357,19 +409,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through solid rgb(201, 209, 217);
+  text-decoration-color: rgb(201, 209, 217);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -407,10 +459,10 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: rgb(48, 54, 61);
+  border-right-color: rgb(48, 54, 61);
+  border-top-color: rgb(48, 54, 61);
+  border-bottom-color: rgb(48, 54, 61);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -420,12 +472,12 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -499,29 +551,29 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: light-dark(rgba(174, 184, 193, 0.2), rgba(110, 118, 129, 0.4));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgb(48, 54, 61);
+  border-right-color: rgb(48, 54, 61);
+  border-top-color: rgb(48, 54, 61);
+  border-bottom-color: rgb(48, 54, 61);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+  padding-top: 2.8px;
+  padding-bottom: 2.8px;
+  padding-left: 5.6px;
+  padding-right: 5.6px;
   }
 
   pre > code {
@@ -647,9 +699,9 @@ body {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

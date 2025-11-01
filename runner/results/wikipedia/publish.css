@@ -28,6 +28,64 @@
   font-weight: 400;
   src: local("Linux Libertine C"), url("https://fonts.cdnfonts.com/s/282/LinLibertineC_Re-4.0_.1_.woff") format("woff");
 }
+body.theme-light {
+  --code-background: #f8f9fa !important;
+  --code-border-color: #a2a9b1 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #989898 !important;
+  --code-function: rgb(163, 163, 0) !important;
+  --code-important: rgb(230, 111, 0) !important;
+  --code-keyword: rgb(194, 0, 81) !important;
+  --code-normal: #222222 !important;
+  --code-operator: rgb(232, 41, 41) !important;
+  --code-property: rgb(0, 163, 81) !important;
+  --code-punctuation: #5a5a5a !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(82, 163, 0) !important;
+  --code-tag: rgb(232, 41, 41) !important;
+  --code-value: rgb(140, 63, 247) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #5a5a5a !important;
+  --graph-node-attachment: rgb(163, 163, 0) !important;
+  --graph-node-focused: hsl(215, 79%, 50%) !important;
+  --graph-node-tag: rgb(82, 163, 0) !important;
+  --graph-node-unresolved: #989898 !important;
+  --graph-text: #222222 !important;
+}
+
+body.theme-dark {
+  --code-background: #242629 !important;
+  --code-border-color: #dae1ea31 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: rgb(142, 148, 157) !important;
+  --code-function: rgb(163, 163, 0) !important;
+  --code-important: rgb(230, 111, 0) !important;
+  --code-keyword: rgb(194, 0, 81) !important;
+  --code-normal: #d8dce3 !important;
+  --code-operator: rgb(232, 41, 41) !important;
+  --code-property: rgb(0, 163, 81) !important;
+  --code-punctuation: #d0d4d9 !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(82, 163, 0) !important;
+  --code-tag: rgb(232, 41, 41) !important;
+  --code-value: rgb(140, 63, 247) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #313539 !important;
+  --graph-node: #d0d4d9 !important;
+  --graph-node-attachment: rgb(163, 163, 0) !important;
+  --graph-node-focused: hsl(215, 79%, calc(50% + 3.5%)) !important;
+  --graph-node-tag: rgb(82, 163, 0) !important;
+  --graph-node-unresolved: rgb(142, 148, 157) !important;
+  --graph-text: #d8dce3 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -94,19 +152,19 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Arial, Archivo, sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(216, 220, 227);
+  text-decoration-color: rgb(216, 220, 227);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
@@ -126,19 +184,19 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
+  font-family: Arial, Archivo, sans-serif;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(216, 220, 227);
+  text-decoration-color: rgb(216, 220, 227);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
@@ -174,19 +232,19 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(34, 34, 34), rgb(216, 220, 227));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Arial, Archivo, sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through solid rgb(216, 220, 227);
+  text-decoration-color: rgb(216, 220, 227);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -244,20 +302,20 @@ body .markdown-rendered hr {
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: normal;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0);
-  display: block;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  display: flex;
+  font-family: Arial, Archivo, sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(27, 111, 228, 0.15);
+  border-right-color: rgba(27, 111, 228, 0.15);
+  border-top-color: rgba(27, 111, 228, 0.15);
+  border-bottom-color: rgba(27, 111, 228, 0.15);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;

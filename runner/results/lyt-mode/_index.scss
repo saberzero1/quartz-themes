@@ -8,6 +8,36 @@
 
 
 :root:root {
+  --code-background: hsl(231, 9%, 15%) !important;
+  --code-border-color: rgba(100, 100, 100, 0.25) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: transparent !important;
+  --code-comment: hsl(225, 17%, 84%) !important;
+  --code-function: hsl(334, 37%, 65%) !important;
+  --code-important: hsl(220, 23%, 90%) !important;
+  --code-keyword: hsl(263, 37%, 69%) !important;
+  --code-normal: hsl(224, 37%, 80%) !important;
+  --code-operator: #fb464c !important;
+  --code-property: hsl(61, 46%, 69%) !important;
+  --code-punctuation: hsl(225, 14%, 40%) !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(124, 54%, 75%) !important;
+  --code-tag: hsl(334, 37%, 65%) !important;
+  --code-value: hsl(183, 29%, 62%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(196, 27%, 41%) !important;
+  --graph-node: hsl(58, 86%, 66%) !important;
+  --graph-node-attachment: hsl(220, 23%, 90%) !important;
+  --graph-node-focused: hsl(225, 14%, 55%) !important;
+  --graph-node-tag: hsl(194, 50%, 47%) !important;
+  --graph-node-unresolved: hsl(263, 46%, 61%) !important;
+  --graph-text: hsl(225, 17%, 88%) !important;
+  --graph-color-line: hsl(196, 27%, 41%) !important;
+  --graph-color-line-hover: hsl(224, 17%, 68%) !important;
+  --graph-color-node-border-hover: hsl(220, 23%, 95%) !important;
+  --graph-color-node-hover: hsl(317, 62%, 65%) !important;
 }
 
 
@@ -202,19 +232,19 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(114, 195, 213);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(114, 195, 213);
+  text-decoration-color: rgb(114, 195, 213);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .page article p > strong, strong {
@@ -304,19 +334,19 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(124, 132, 156);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: line-through solid rgb(124, 132, 156);
+  text-decoration-color: rgb(124, 132, 156);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
@@ -354,25 +384,25 @@ body {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: rgb(67, 72, 81);
+  border-right-color: rgb(67, 72, 81);
+  border-top-color: rgb(67, 72, 81);
+  border-bottom-color: rgb(67, 72, 81);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   }
@@ -446,15 +476,15 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+    background-color: rgb(35, 36, 42);
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(100, 100, 100, 0.25);
+  border-right-color: rgba(100, 100, 100, 0.25);
+  border-top-color: rgba(100, 100, 100, 0.25);
+  border-bottom-color: rgba(100, 100, 100, 0.25);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -463,12 +493,12 @@ body {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: rgb(218, 218, 218);
-  font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  color: rgb(185, 195, 223);
+  font-family: "DM Mono", "Fira Code", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+  padding-top: 2.1px;
+  padding-bottom: 2.1px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
   }
 
   pre > code {
@@ -590,13 +620,13 @@ body {
   blockquote {
     background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   }
 
   .data-footnote-backref {

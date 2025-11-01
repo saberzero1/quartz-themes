@@ -54,6 +54,64 @@
   src: url(https://fonts.gstatic.com/s/spacemono/v15/i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: hsl(270, 10%, 75%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
+  --code-comment: hsl(270, 10%, 17.5%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 8%, 35%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 20%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 20%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 10%, 17.5%) !important;
+  --graph-text: hsl(270, 8%, 35%) !important;
+}
+
+body.theme-dark {
+  --code-background: hsl(270, 10%, 17.5%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: hsl(270, 13%, 65%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 10%, 75%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 72.5%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 72.5%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 13%, 65%) !important;
+  --graph-text: hsl(270, 10%, 75%) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -120,19 +178,19 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(89, 82, 96), rgb(191, 185, 198));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Neucha, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(191, 185, 198);
+  text-decoration-color: rgb(191, 185, 198);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
@@ -152,19 +210,19 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(216, 75, 108);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
+  font-family: Neucha, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(216, 75, 108);
+  text-decoration-color: rgb(216, 75, 108);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
@@ -200,19 +258,19 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(166, 154, 177), rgb(89, 82, 96));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Neucha, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
-  text-decoration-line: line-through;
+  text-decoration: none solid rgb(89, 82, 96);
+  text-decoration-color: rgb(89, 82, 96);
+  text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0);
@@ -270,28 +328,28 @@ body .markdown-rendered hr {
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: normal;
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  align-items: center;
+  background-color: rgba(150, 82, 218, 0.1);
+  display: flex;
+  font-family: Neucha, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(150, 82, 218, 0.15);
+  border-right-color: rgba(150, 82, 218, 0.15);
+  border-top-color: rgba(150, 82, 218, 0.15);
+  border-bottom-color: rgba(150, 82, 218, 0.15);
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
