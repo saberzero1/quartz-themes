@@ -123,6 +123,859 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --accent-h: 254 !important;
+  --accent-l: 68% !important;
+  --accent-s: 80% !important;
+  --anim-duration-fast: 140ms !important;
+  --anim-duration-moderate: 300ms !important;
+  --anim-duration-none: 0 !important;
+  --anim-duration-slow: 560ms !important;
+  --anim-duration-superfast: 70ms !important;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
+  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%) !important;
+  --background-modifier-border: rgb(204, 208, 218) !important;
+  --background-modifier-border-focus: rgb(156, 160, 176) !important;
+  --background-modifier-border-hover: rgb(172, 176, 190) !important;
+  --background-modifier-box-shadow: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-cover: rgb(220, 224, 232, 90%) !important;
+  --background-modifier-error: rgb(210, 15, 57, 90%) !important;
+  --background-modifier-error-hover: rgb(210, 15, 57, 100%) !important;
+  --background-modifier-error-rgb: 210, 15, 57 !important;
+  --background-modifier-form-field: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-form-field-hover: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-hover: rgb(76, 79, 105, 7.5%) !important;
+  --background-modifier-message: rgb(0, 0, 0, 90%) !important;
+  --background-modifier-success: rgb(64, 160, 43, 90%) !important;
+  --background-modifier-success-rgb: 64, 160, 43 !important;
+  --background-primary: rgb(239, 241, 245) !important;
+  --background-primary-alt: rgb(230, 233, 239) !important;
+  --background-secondary: rgb(230, 233, 239) !important;
+  --background-secondary-alt: rgb(220, 224, 232) !important;
+  --bases-cards-background: rgb(239, 241, 245) !important;
+  --bases-cards-border-width: 1px !important;
+  --bases-cards-container-background: transparent !important;
+  --bases-cards-cover-background: rgb(230, 233, 239) !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-line-height: 24px !important;
+  --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(204, 208, 218) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-embed-border-color: rgb(204, 208, 218) !important;
+  --bases-embed-border-radius: 4px !important;
+  --bases-embed-border-width: 0px !important;
+  --bases-filter-menu-width: 520px !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-height: 40px !important;
+  --bases-header-padding-end: 2px !important;
+  --bases-header-padding-start: 2px !important;
+  --bases-table-border-color: rgb(204, 208, 218) !important;
+  --bases-table-cell-background-active: rgb(239, 241, 245) !important;
+  --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
+  --bases-table-cell-radius-active: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(114, 135, 253) !important;
+  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-max-width: 300 !important;
+  --bases-table-column-min-width: 40 !important;
+  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-width: 1px !important;
+  --bases-table-header-background: rgb(239, 241, 245) !important;
+  --bases-table-header-background-hover: rgb(76, 79, 105, 7.5%) !important;
+  --bases-table-header-color: rgb(108, 111, 133) !important;
+  --bases-table-header-icon-display: flex !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
+  --bases-table-header-weight: 400 !important;
+  --bases-table-row-background-hover: transparent !important;
+  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-height: 30px !important;
+  --bases-table-text-size: 0.875em !important;
+  --bases-toolbar-badge-display: none !important;
+  --bases-toolbar-label-display: block !important;
+  --blockquote-background-color: transparent !important;
+  --blockquote-border-color: rgb(114, 135, 253) !important;
+  --blockquote-border-thickness: 2px !important;
+  --blockquote-font-style: normal !important;
+  --bold-modifier: 200 !important;
+  --bold-weight: 600 !important;
+  --border-width: 1px !important;
+  --button-radius: 5px !important;
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.2 !important;
+  --callout-border-width: 0.25px !important;
+  --callout-bug: 210, 15, 57 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 30, 102, 245 !important;
+  --callout-error: 210, 15, 57 !important;
+  --callout-example: 136, 57, 239 !important;
+  --callout-fail: 210, 15, 57 !important;
+  --callout-important: 32, 159, 181 !important;
+  --callout-info: 30, 102, 245 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 223, 142, 29 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 64, 160, 43 !important;
+  --callout-summary: 32, 159, 181 !important;
+  --callout-tip: 32, 159, 181 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: calc(400 + 200) !important;
+  --callout-todo: 30, 102, 245 !important;
+  --callout-warning: 254, 100, 11 !important;
+  --canvas-background: rgb(239, 241, 245) !important;
+  --canvas-card-label-color: rgb(188, 192, 204) !important;
+  --canvas-color: 192, 192, 192 !important;
+  --canvas-color-1: 210, 15, 57 !important;
+  --canvas-color-2: 254, 100, 11 !important;
+  --canvas-color-3: 223, 142, 29 !important;
+  --canvas-color-4: 64, 160, 43 !important;
+  --canvas-color-5: 32, 159, 181 !important;
+  --canvas-color-6: 136, 57, 239 !important;
+  --canvas-dot-pattern: rgb(188, 192, 204) !important;
+  --caret-color: rgb(76, 79, 105) !important;
+  --checkbox-border-color: rgb(188, 192, 204) !important;
+  --checkbox-border-color-hover: rgb(108, 111, 133) !important;
+  --checkbox-color: rgb(114, 135, 253) !important;
+  --checkbox-color-hover: rgb(114, 135, 253) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(239, 241, 245) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
+  --checklist-done-color: rgb(64, 160, 43) !important;
+  --checklist-done-decoration: line-through !important;
+  --clickable-icon-radius: 4px !important;
+  --code-background: rgb(230, 233, 239) !important;
+  --code-border-color: rgb(204, 208, 218) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgb(76, 79, 105, 7.5%) !important;
+  --code-comment: rgb(188, 192, 204) !important;
+  --code-function: rgb(223, 142, 29) !important;
+  --code-important: rgb(254, 100, 11) !important;
+  --code-keyword: rgb(234, 118, 203) !important;
+  --code-normal: rgb(108, 111, 133) !important;
+  --code-operator: rgb(210, 15, 57) !important;
+  --code-property: rgb(4, 165, 229) !important;
+  --code-punctuation: rgb(108, 111, 133) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(64, 160, 43) !important;
+  --code-tag: rgb(210, 15, 57) !important;
+  --code-value: rgb(114, 135, 253) !important;
+  --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(188, 192, 204) !important;
+  --collapse-icon-color-collapsed: rgb(108, 111, 133) !important;
+  --color-accent: rgb(114, 135, 253) !important;
+  --color-accent-1: rgb(114, 135, 253) !important;
+  --color-accent-2: rgb(114, 135, 253, 90%) !important;
+  --color-accent-hsl: 254, 80%, 68% !important;
+  --color-base-00: rgb(220, 224, 232) !important;
+  --color-base-05: #fcfcfc !important;
+  --color-base-10: rgb(230, 233, 239) !important;
+  --color-base-100: rgb(76, 79, 105) !important;
+  --color-base-20: rgb(239, 241, 245) !important;
+  --color-base-25: rgb(204, 208, 218) !important;
+  --color-base-30: rgb(188, 192, 204) !important;
+  --color-base-35: rgb(172, 176, 190) !important;
+  --color-base-40: rgb(156, 160, 176) !important;
+  --color-base-50: rgb(140, 143, 161) !important;
+  --color-base-60: rgb(124, 127, 147) !important;
+  --color-base-70: rgb(108, 111, 133) !important;
+  --color-blue: rgb(30, 102, 245) !important;
+  --color-blue-rgb: 30, 102, 245 !important;
+  --color-cyan: rgb(4, 165, 229) !important;
+  --color-cyan-rgb: 32, 159, 181 !important;
+  --color-green: rgb(64, 160, 43) !important;
+  --color-green-rgb: 64, 160, 43 !important;
+  --color-orange: rgb(254, 100, 11) !important;
+  --color-orange-rgb: 254, 100, 11 !important;
+  --color-pink: rgb(234, 118, 203) !important;
+  --color-pink-rgb: 234, 118, 203 !important;
+  --color-purple: rgb(114, 135, 253) !important;
+  --color-purple-rgb: 136, 57, 239 !important;
+  --color-red: rgb(210, 15, 57) !important;
+  --color-red-rgb: 210, 15, 57 !important;
+  --color-yellow: rgb(223, 142, 29) !important;
+  --color-yellow-rgb: 223, 142, 29 !important;
+  --cursor: default !important;
+  --cursor-link: pointer !important;
+  --dialog-max-height: 85vh !important;
+  --dialog-max-width: 80vw !important;
+  --dialog-width: 560px !important;
+  --direction: 1 !important;
+  --divider-color: rgb(204, 208, 218) !important;
+  --divider-color-hover: rgb(30, 102, 245) !important;
+  --divider-vertical-height: 100% !important;
+  --divider-width: 1px !important;
+  --divider-width-hover: 2px !important;
+  --drag-ghost-background: rgb(0, 0, 0, 85%) !important;
+  --drag-ghost-text-color: rgb(76, 79, 105) !important;
+  --dropdown-background: rgb(204, 208, 218) !important;
+  --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: rgb(188, 192, 204) !important;
+  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
+  --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px rgb(204, 208, 218), inset 0 0 0 1px rgb(204, 208, 218) !important;
+  --embed-border-bottom: none !important;
+  --embed-border-end: none !important;
+  --embed-border-start: 2px solid rgb(114, 135, 253) !important;
+  --embed-border-top: none !important;
+  --embed-canvas-max-height: 400px !important;
+  --embed-max-height: 4000px !important;
+  --embed-padding: 0 0 0 24px !important;
+  --file-folding-offset: 24px !important;
+  --file-header-border: 1px solid transparent !important;
+  --file-header-font:
+    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: 13px !important;
+  --file-header-font-weight: 400 !important;
+  --file-header-justify: center !important;
+  --file-line-width: 700px !important;
+  --file-margins: 32px !important;
+  --flair-background: rgb(204, 208, 218) !important;
+  --flair-color: rgb(76, 79, 105) !important;
+  --focus-ring-color: #0df !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-black: 900 !important;
+  --font-bold: 700 !important;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
+  --font-extrabold: 800 !important;
+  --font-extralight: 200 !important;
+  --font-interface:
+    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface-override: "??" !important;
+  --font-interface-theme:
+    "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif !important;
+  --font-light: 300 !important;
+  --font-medium: 500 !important;
+  --font-mermaid:
+    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace-override: "??" !important;
+  --font-monospace-theme: "??" !important;
+  --font-normal: 400 !important;
+  --font-print:
+    "??", "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial" !important;
+  --font-print-override: "??" !important;
+  --font-semibold: 600 !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
+  --font-text:
+    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text-override: "??" !important;
+  --font-text-size: 16px !important;
+  --font-text-theme:
+    "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif !important;
+  --font-thin: 100 !important;
+  --font-ui-large: 20px !important;
+  --font-ui-medium: 16px !important;
+  --font-ui-small: 13px !important;
+  --font-ui-smaller: 12px !important;
+  --font-weight: 400 !important;
+  --footnote-divider-color: rgb(204, 208, 218) !important;
+  --footnote-divider-color-active: transparent !important;
+  --footnote-divider-width: 1px !important;
+  --footnote-gap: 4px !important;
+  --footnote-id-color: rgb(108, 111, 133) !important;
+  --footnote-id-color-no-occurrences: rgb(188, 192, 204) !important;
+  --footnote-id-delimiter: "." !important;
+  --footnote-input-background: transparent !important;
+  --footnote-input-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --footnote-line-height: 1.5 !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
+  --footnote-radius: 4px !important;
+  --footnote-size: 0.875em !important;
+  --frame-left-space: calc(80px - 44px) !important;
+  --frame-right-space: 0px !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(172, 176, 190) !important;
+  --graph-node: rgb(108, 111, 133) !important;
+  --graph-node-attachment: rgb(223, 142, 29) !important;
+  --graph-node-focused: rgb(114, 135, 253) !important;
+  --graph-node-tag: rgb(64, 160, 43) !important;
+  --graph-node-unresolved: rgb(188, 192, 204) !important;
+  --graph-text: rgb(76, 79, 105) !important;
+  --h1-line-height: 1.5 !important;
+  --h1-size: 2em !important;
+  --h1-style: normal !important;
+  --h1-variant: normal !important;
+  --h1-weight: 700 !important;
+  --h2-line-height: 1.5 !important;
+  --h2-size: 1.6em !important;
+  --h2-style: normal !important;
+  --h2-variant: normal !important;
+  --h2-weight: 600 !important;
+  --h3-line-height: 1.5 !important;
+  --h3-size: 1.37em !important;
+  --h3-style: normal !important;
+  --h3-variant: normal !important;
+  --h3-weight: 600 !important;
+  --h4-line-height: 1.5 !important;
+  --h4-size: 1.25em !important;
+  --h4-style: normal !important;
+  --h4-variant: normal !important;
+  --h4-weight: 600 !important;
+  --h5-line-height: 1.5 !important;
+  --h5-size: 1.12em !important;
+  --h5-style: normal !important;
+  --h5-variant: normal !important;
+  --h5-weight: 600 !important;
+  --h6-line-height: 1.5 !important;
+  --h6-size: 1.12em !important;
+  --h6-style: normal !important;
+  --h6-variant: normal !important;
+  --h6-weight: 600 !important;
+  --header-height: 40px !important;
+  --heading-formatting: rgb(188, 192, 204) !important;
+  --heading-spacing: calc(1rem * 2.5) !important;
+  --highlight-mix-blend-mode: darken !important;
+  --hr-color: rgb(30, 102, 245) !important;
+  --hr-thickness: 2px !important;
+  --icon-color: rgb(108, 111, 133) !important;
+  --icon-color-active: rgb(114, 135, 253) !important;
+  --icon-color-focused: rgb(76, 79, 105) !important;
+  --icon-color-hover: rgb(230, 233, 239) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 1 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --indent-size: 4 !important;
+  --indent-unit: 0.5625em !important;
+  --indentation-guide-color: rgb(188, 192, 204) !important;
+  --indentation-guide-color-active: rgb(32, 159, 181, 70%) !important;
+  --indentation-guide-editing-indent: 0.85em !important;
+  --indentation-guide-reading-indent: -0.85em !important;
+  --indentation-guide-source-indent: 0.25em !important;
+  --indentation-guide-width: 2px !important;
+  --indentation-guide-width-active: 1px !important;
+  --inline-title-line-height: 1.5 !important;
+  --inline-title-margin-bottom: 0.5em !important;
+  --inline-title-size: 2em !important;
+  --inline-title-style: normal !important;
+  --inline-title-variant: normal !important;
+  --inline-title-weight: 700 !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-date-separator: rgb(188, 192, 204) !important;
+  --input-font-weight: 400 !important;
+  --input-height: 30px !important;
+  --input-padding: 4px 8px !important;
+  --input-placeholder-color: rgb(188, 192, 204) !important;
+  --input-radius: 5px !important;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --interactive-accent: rgb(114, 135, 253) !important;
+  --interactive-accent-hover: rgb(114, 135, 253) !important;
+  --interactive-accent-hsl: 254, 80%, 68% !important;
+  --interactive-accent-rgb: 114, 135, 253 !important;
+  --interactive-hover: rgb(188, 192, 204) !important;
+  --interactive-normal: rgb(204, 208, 218) !important;
+  --keyboard-height: 0px !important;
+  --layer-cover: 5 !important;
+  --layer-dragged-item: 80 !important;
+  --layer-menu: 65 !important;
+  --layer-modal: 50 !important;
+  --layer-notice: 60 !important;
+  --layer-popover: 30 !important;
+  --layer-sidedock: 10 !important;
+  --layer-slides: 45 !important;
+  --layer-status-bar: 15 !important;
+  --layer-tooltip: 70 !important;
+  --line-height-normal: 1.5 !important;
+  --line-height-tight: 1.25 !important;
+  --link-color: rgb(30, 102, 245) !important;
+  --link-color-hover: rgb(30, 102, 245) !important;
+  --link-decoration: none !important;
+  --link-decoration-hover: underline !important;
+  --link-decoration-thickness: 2px !important;
+  --link-external-color: rgb(23, 146, 153) !important;
+  --link-external-color-hover: rgb(23, 146, 153) !important;
+  --link-external-decoration: none !important;
+  --link-external-decoration-hover: underline !important;
+  --link-external-filter: none !important;
+  --link-unresolved-color: rgb(230, 69, 83) !important;
+  --link-unresolved-decoration-color: rgb(210, 15, 57) !important;
+  --link-unresolved-decoration-style: solid !important;
+  --link-unresolved-filter: none !important;
+  --link-unresolved-opacity: 1 !important;
+  --link-weight: 400 !important;
+  --list-bullet-border: none !important;
+  --list-bullet-end-padding: 1.3rem !important;
+  --list-bullet-radius: 50% !important;
+  --list-bullet-size: 0.3em !important;
+  --list-bullet-transform: none !important;
+  --list-indent: 2em !important;
+  --list-indent-editing: 0.75em !important;
+  --list-indent-source: 0 !important;
+  --list-marker-color: rgb(32, 159, 181) !important;
+  --list-marker-color-collapsed: rgb(114, 135, 253) !important;
+  --list-marker-color-hover: rgb(108, 111, 133) !important;
+  --list-numbered-style: decimal !important;
+  --list-spacing: 0.1em !important;
+  --loading-icon-delay: 400ms !important;
+  --menu-backdrop-filter: none !important;
+  --menu-background: rgb(230, 233, 239) !important;
+  --menu-border-color: rgb(172, 176, 190) !important;
+  --menu-border-width: 1px !important;
+  --menu-padding: 6px !important;
+  --menu-radius: 8px !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --metadata-background: transparent !important;
+  --metadata-border-color: rgb(204, 208, 218) !important;
+  --metadata-border-radius: 0 !important;
+  --metadata-border-width: 0 !important;
+  --metadata-display-editing: block !important;
+  --metadata-display-reading: block !important;
+  --metadata-divider-color: rgb(204, 208, 218) !important;
+  --metadata-divider-color-focus: transparent !important;
+  --metadata-divider-color-hover: transparent !important;
+  --metadata-divider-width: 0 !important;
+  --metadata-gap: 3px !important;
+  --metadata-input-background: transparent !important;
+  --metadata-input-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --metadata-input-background-hover: transparent !important;
+  --metadata-input-font:
+    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: 0.875em !important;
+  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-text-color: rgb(76, 79, 105) !important;
+  --metadata-label-background: transparent !important;
+  --metadata-label-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --metadata-label-background-hover: transparent !important;
+  --metadata-label-font:
+    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: 0.875em !important;
+  --metadata-label-text-color: rgb(108, 111, 133) !important;
+  --metadata-label-text-color-hover: rgb(108, 111, 133) !important;
+  --metadata-label-width: 9em !important;
+  --metadata-max-width: none !important;
+  --metadata-padding: 8px 0 !important;
+  --metadata-property-background: transparent !important;
+  --metadata-property-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --metadata-property-background-hover: transparent !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
+  --metadata-property-padding: 0 !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
+  --metadata-sidebar-input-font-size: 13px !important;
+  --metadata-sidebar-label-font-size: 13px !important;
+  --modal-background: rgb(239, 241, 245) !important;
+  --modal-border-color: rgb(156, 160, 176) !important;
+  --modal-border-width: 1px !important;
+  --modal-community-sidebar-width: 280px !important;
+  --modal-height: 85vh !important;
+  --modal-max-height: 1000px !important;
+  --modal-max-width: 1100px !important;
+  --modal-max-width-narrow: 800px !important;
+  --modal-radius: 10px !important;
+  --modal-width: 90vw !important;
+  --mono-rgb-0: 220, 224, 232 !important;
+  --mono-rgb-100: 76, 79, 105 !important;
+  --nav-collapse-icon-color: rgb(188, 192, 204) !important;
+  --nav-collapse-icon-color-collapsed: rgb(188, 192, 204) !important;
+  --nav-heading-color: rgb(76, 79, 105) !important;
+  --nav-heading-color-collapsed: rgb(188, 192, 204) !important;
+  --nav-heading-color-collapsed-hover: rgb(108, 111, 133) !important;
+  --nav-heading-color-hover: rgb(76, 79, 105) !important;
+  --nav-heading-weight: 500 !important;
+  --nav-heading-weight-hover: 500 !important;
+  --nav-indentation-guide-color: rgb(188, 192, 204) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --nav-item-background-hover: rgb(76, 79, 105, 7.5%) !important;
+  --nav-item-background-selected: hsl(254, 80%, 68%, 20%) !important;
+  --nav-item-children-margin-start: 12px !important;
+  --nav-item-children-padding-start: 4px !important;
+  --nav-item-color: rgb(108, 111, 133) !important;
+  --nav-item-color-active: rgb(230, 233, 239) !important;
+  --nav-item-color-highlighted: rgb(114, 135, 253) !important;
+  --nav-item-color-hover: rgb(230, 233, 239) !important;
+  --nav-item-color-selected: rgb(230, 233, 239) !important;
+  --nav-item-padding: 4px 8px 4px 24px !important;
+  --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-size: 13px !important;
+  --nav-item-white-space: nowrap !important;
+  --p-spacing: 1rem !important;
+  --p-spacing-empty: 0rem !important;
+  --page-border: 9px solid transparent !important;
+  --page-margin: 1px auto -8px !important;
+  --pdf-background: rgb(239, 241, 245) !important;
+  --pdf-page-background: rgb(239, 241, 245) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 5%), 0 2px 8px rgba(0, 0, 0, 10%) !important;
+  --pdf-sidebar-background: rgb(239, 241, 245) !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 5%) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 15%), 0 2px 8px rgba(0, 0, 0, 20%) !important;
+  --pdfViewer-padding-bottom: 0 !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: rgb(204, 208, 218) !important;
+  --pill-border-color-hover: rgb(172, 176, 190) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: rgb(108, 111, 133) !important;
+  --pill-color-hover: rgb(76, 79, 105) !important;
+  --pill-color-remove: rgb(188, 192, 204) !important;
+  --pill-color-remove-hover: rgb(114, 135, 253) !important;
+  --pill-decoration: none !important;
+  --pill-decoration-hover: none !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --pill-padding-x: 0.65em !important;
+  --pill-padding-y: 0.25em !important;
+  --pill-radius: 2em !important;
+  --popover-font-size: 16px !important;
+  --popover-height: 400px !important;
+  --popover-max-height: 70vh !important;
+  --popover-pdf-height: 800px !important;
+  --popover-pdf-width: 600px !important;
+  --popover-width: 450px !important;
+  --prompt-border-color: rgb(156, 160, 176) !important;
+  --prompt-border-width: 1px !important;
+  --prompt-input-height: 40px !important;
+  --prompt-max-height: 70vh !important;
+  --prompt-max-width: 80vw !important;
+  --prompt-width: 700px !important;
+  --radius-l: 10px !important;
+  --radius-m: 8px !important;
+  --radius-s: 4px !important;
+  --radius-xl: 16px !important;
+  --ribbon-background: rgb(230, 233, 239) !important;
+  --ribbon-background-collapsed: rgb(239, 241, 245) !important;
+  --ribbon-padding: 8px 4px 12px !important;
+  --ribbon-width: 44px !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
+  --scrollbar-active-thumb-bg: rgb(76, 79, 105, 20%) !important;
+  --scrollbar-bg: rgb(76, 79, 105, 5%) !important;
+  --scrollbar-border-width: 3px 3px 3px 2px !important;
+  --scrollbar-height: 12px !important;
+  --scrollbar-radius: 10px !important;
+  --scrollbar-thumb-bg: rgb(76, 79, 105, 10%) !important;
+  --scrollbar-width: 12px !important;
+  --search-clear-button-color: rgb(108, 111, 133) !important;
+  --search-clear-button-size: 13px !important;
+  --search-icon-color: rgb(108, 111, 133) !important;
+  --search-icon-size: 18px !important;
+  --search-result-background: rgb(239, 241, 245) !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
+  --sidebar-tab-text-display: none !important;
+  --size-2-1: 2px !important;
+  --size-2-2: 4px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 4px !important;
+  --size-4-10: 40px !important;
+  --size-4-12: 48px !important;
+  --size-4-16: 64px !important;
+  --size-4-18: 72px !important;
+  --size-4-2: 8px !important;
+  --size-4-3: 12px !important;
+  --size-4-4: 16px !important;
+  --size-4-5: 20px !important;
+  --size-4-6: 24px !important;
+  --size-4-8: 32px !important;
+  --size-4-9: 36px !important;
+  --slider-s-thumb-position: -5px !important;
+  --slider-s-thumb-size: 15px !important;
+  --slider-thumb-border-color: rgb(172, 176, 190) !important;
+  --slider-thumb-border-width: 1px !important;
+  --slider-thumb-height: 18px !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-thumb-width: 18px !important;
+  --slider-thumb-y: -6px !important;
+  --slider-track-background: rgb(204, 208, 218) !important;
+  --slider-track-height: 3px !important;
+  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: rgb(230, 233, 239) !important;
+  --status-bar-border-color: rgb(204, 208, 218) !important;
+  --status-bar-border-width: 1px 0 0 1px !important;
+  --status-bar-font-size: 12px !important;
+  --status-bar-position: fixed !important;
+  --status-bar-radius: 8px 0 0 0 !important;
+  --status-bar-text-color: rgb(108, 111, 133) !important;
+  --swatch-height: 24px !important;
+  --swatch-radius: 14px !important;
+  --swatch-shadow: inset 0 0 0 1px rgb(76, 79, 105, 15%) !important;
+  --swatch-width: 24px !important;
+  --sync-avatar-color-1: rgb(210, 15, 57) !important;
+  --sync-avatar-color-2: rgb(254, 100, 11) !important;
+  --sync-avatar-color-3: rgb(223, 142, 29) !important;
+  --sync-avatar-color-4: rgb(64, 160, 43) !important;
+  --sync-avatar-color-5: rgb(4, 165, 229) !important;
+  --sync-avatar-color-6: rgb(30, 102, 245) !important;
+  --sync-avatar-color-7: rgb(114, 135, 253) !important;
+  --sync-avatar-color-8: rgb(234, 118, 203) !important;
+  --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: rgb(239, 241, 245) !important;
+  --tab-container-background: rgb(230, 233, 239) !important;
+  --tab-curve: 6px !important;
+  --tab-divider-color: rgb(172, 176, 190) !important;
+  --tab-font-size: 13px !important;
+  --tab-max-width: 320px !important;
+  --tab-outline-color: rgb(204, 208, 218) !important;
+  --tab-outline-width: 1px !important;
+  --tab-radius: 4px !important;
+  --tab-radius-active: 6px 6px 0 0 !important;
+  --tab-stacked-font-size: 13px !important;
+  --tab-stacked-font-weight: 400 !important;
+  --tab-stacked-header-width: 40px !important;
+  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%) !important;
+  --tab-stacked-text-align: left !important;
+  --tab-stacked-text-transform: rotate(0deg) !important;
+  --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: rgb(230, 233, 239) !important;
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
+  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(114, 135, 253) !important;
+  --tab-text-color: rgb(188, 192, 204) !important;
+  --tab-text-color-active: rgb(108, 111, 133) !important;
+  --tab-text-color-focused: rgb(108, 111, 133) !important;
+  --tab-text-color-focused-active: rgb(76, 79, 105) !important;
+  --tab-text-color-focused-active-current: rgb(76, 79, 105) !important;
+  --tab-text-color-focused-highlighted: rgb(114, 135, 253) !important;
+  --tab-width: 200px !important;
+  --table-add-button-background: transparent !important;
+  --table-add-button-border-color: rgb(204, 208, 218) !important;
+  --table-add-button-border-width: 1px !important;
+  --table-background: transparent !important;
+  --table-border-color: rgb(204, 208, 218) !important;
+  --table-border-width: 1px !important;
+  --table-cell-vertical-alignment: top !important;
+  --table-column-alt-background: transparent !important;
+  --table-column-first-border-width: 1px !important;
+  --table-column-last-border-width: 1px !important;
+  --table-column-max-width: none !important;
+  --table-column-min-width: 6ch !important;
+  --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: rgb(114, 135, 253) !important;
+  --table-drag-handle-color: rgb(188, 192, 204) !important;
+  --table-drag-handle-color-active: rgb(230, 233, 239) !important;
+  --table-drop-indicator-half-width: 2px !important;
+  --table-header-background: transparent !important;
+  --table-header-border-color: rgb(204, 208, 218) !important;
+  --table-header-border-width: 1px !important;
+  --table-header-color: rgb(108, 111, 133) !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: 400 !important;
+  --table-line-height: 1.25 !important;
+  --table-row-alt-background: transparent !important;
+  --table-row-alt-background-hover: transparent !important;
+  --table-row-background-hover: transparent !important;
+  --table-row-last-border-width: 1px !important;
+  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
+  --table-selection-blend-mode: darken !important;
+  --table-selection-border-color: rgb(114, 135, 253) !important;
+  --table-selection-border-radius: 4px !important;
+  --table-selection-border-width: 2px !important;
+  --table-white-space: normal !important;
+  --tag-background: transparent !important;
+  --tag-background-hover: 0 !important;
+  --tag-border-color: hsl(254, 80%, 68%, 10%) !important;
+  --tag-border-color-hover: hsl(254, 80%, 68%, 15%) !important;
+  --tag-border-width: 0 !important;
+  --tag-color: rgb(114, 135, 253) !important;
+  --tag-color-hover: rgb(114, 135, 253) !important;
+  --tag-decoration: none !important;
+  --tag-decoration-hover: underline !important;
+  --tag-padding-x: 0 !important;
+  --tag-padding-y: 0 !important;
+  --tag-radius: 0.8em !important;
+  --tag-size: max(16px, 0.933em) !important;
+  --text-accent: rgb(114, 135, 253) !important;
+  --text-accent-hover: rgb(114, 135, 253) !important;
+  --text-error: rgb(210, 15, 57) !important;
+  --text-faint: rgb(188, 192, 204) !important;
+  --text-highlight-bg: rgb(220, 138, 120, 100%) !important;
+  --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: rgb(108, 111, 133) !important;
+  --text-normal: rgb(76, 79, 105) !important;
+  --text-on-accent: rgb(230, 233, 239) !important;
+  --text-on-accent-inverted: rgb(230, 233, 239) !important;
+  --text-selection: rgb(124, 127, 147, 30%) !important;
+  --text-success: rgb(64, 160, 43) !important;
+  --text-warning: rgb(254, 100, 11) !important;
+  --titlebar-background: rgb(230, 233, 239) !important;
+  --titlebar-background-focused: rgb(220, 224, 232) !important;
+  --titlebar-border-color: rgb(204, 208, 218) !important;
+  --titlebar-border-width: 0 !important;
+  --titlebar-height: 30px !important;
+  --titlebar-text-color: rgb(108, 111, 133) !important;
+  --titlebar-text-color-focused: rgb(76, 79, 105) !important;
+  --titlebar-text-weight: 700 !important;
+  --toggle-border-width: 2px !important;
+  --toggle-radius: 18px !important;
+  --toggle-s-border-width: 2px !important;
+  --toggle-s-thumb-height: 15px !important;
+  --toggle-s-thumb-width: 15px !important;
+  --toggle-s-width: 34px !important;
+  --toggle-thumb-color: rgb(76, 79, 105) !important;
+  --toggle-thumb-height: 18px !important;
+  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-width: 18px !important;
+  --toggle-width: 40px !important;
+  --vault-profile-actions-display: flex !important;
+  --vault-profile-color: rgb(76, 79, 105) !important;
+  --vault-profile-color-hover: rgb(76, 79, 105) !important;
+  --vault-profile-display: flex !important;
+  --vault-profile-font-size: 13px !important;
+  --vault-profile-font-weight: 500 !important;
+  --viewer-container-height: 0 !important;
+  --workspace-background-translucent: rgb(220, 224, 232, 60%) !important;
+  --xfa-focus-outline: auto !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --zoom-factor: 1 !important;
+  --text-error-hover: rgb(210, 15, 57, 80%) !important;
+  --background-modifier-form-field-highlighted: rgb(
+    220,
+    224,
+    232,
+    22%
+  ) !important;
+  --vault-name-color: rgb(76, 79, 105) !important;
+  --ctp-accent: 114, 135, 253 !important;
+  --ctp-base: 239, 241, 245 !important;
+  --ctp-blue: 30, 102, 245 !important;
+  --ctp-crust: 220, 224, 232 !important;
+  --ctp-flamingo: 221, 120, 120 !important;
+  --ctp-green: 64, 160, 43 !important;
+  --ctp-lavender: 114, 135, 253 !important;
+  --ctp-mantle: 230, 233, 239 !important;
+  --ctp-maroon: 230, 69, 83 !important;
+  --ctp-mauve: 136, 57, 239 !important;
+  --ctp-overlay0: 156, 160, 176 !important;
+  --ctp-overlay1: 140, 143, 161 !important;
+  --ctp-overlay2: 124, 127, 147 !important;
+  --ctp-peach: 254, 100, 11 !important;
+  --ctp-pink: 234, 118, 203 !important;
+  --ctp-red: 210, 15, 57 !important;
+  --ctp-rosewater: 220, 138, 120 !important;
+  --ctp-sapphire: 32, 159, 181 !important;
+  --ctp-sky: 4, 165, 229 !important;
+  --ctp-subtext0: 108, 111, 133 !important;
+  --ctp-subtext1: 92, 95, 119 !important;
+  --ctp-surface0: 204, 208, 218 !important;
+  --ctp-surface1: 188, 192, 204 !important;
+  --ctp-surface2: 172, 176, 190 !important;
+  --ctp-teal: 23, 146, 153 !important;
+  --ctp-text: 76, 79, 105 !important;
+  --ctp-yellow: 223, 142, 29 !important;
+  --interactive-success: rgb(64, 160, 43) !important;
+  --text-highlight-bg-active: rgb(220, 138, 120, 100%) !important;
+  --text-muted-rgb: 108, 111, 133 !important;
+  --embed-border-left: 2px solid rgb(114, 135, 253) !important;
+  --embed-border-right: none !important;
+  --nav-item-children-margin-left: 12px !important;
+  --nav-item-children-padding-left: 4px !important;
+  --status-bar-scroll-padding: calc(12px + 18px) !important;
+  --vault-name-font-size: 13px !important;
+  --vault-name-font-weight: 500 !important;
+  --background-primary-rgb: 239, 241, 245 !important;
+  --ctp-blockquote: 220, 138, 120 !important;
+  --ctp-bold: 32, 159, 181 !important;
+  --ctp-h1: 114, 135, 253 !important;
+  --ctp-h2: 114, 135, 253 !important;
+  --ctp-h3: 114, 135, 253 !important;
+  --ctp-h4: 114, 135, 253 !important;
+  --ctp-h5: 114, 135, 253 !important;
+  --ctp-h6: 114, 135, 253 !important;
+  --ctp-italic: 64, 160, 43 !important;
+  --ctp-page-title: 76, 79, 105 !important;
+  --ctp-strikethrough: 230, 69, 83 !important;
+  --ctp-tag-pill-color: 114, 135, 253 !important;
+  --hex-blue: #1e66f5 !important;
+  --hex-green: #40a02b !important;
+  --hex-lavender: #7287fd !important;
+  --hex-mauve: #8839ef !important;
+  --hex-peach: #fe640b !important;
+  --hex-pink: #ea76cb !important;
+  --hex-red: #d20f39 !important;
+  --hex-sapphire: #209fb5 !important;
+  --hex-sky: #04a5e5 !important;
+  --hex-teal: #179299 !important;
+  --hex-yellow: #df8e1d !important;
+  --titlebar-text-color-highlighted: rgb(114, 135, 253) !important;
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-text-decoration-color: text-decoration-color 0.3s
+    cubic-bezier(0.44, 0.21, 0, 1) !important;
+}
+
 body.theme-dark {
   --accent-h: 254;
   --accent-l: 68%;
@@ -137,26 +990,24 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsl(254, 80%, 68%, 15%);
-  --background-modifier-border: rgb(49, 50, 68);
+  --background-modifier-border: rgb(65, 69, 89);
   --background-modifier-border-focus: rgb(115, 121, 148);
   --background-modifier-border-hover: rgb(98, 104, 128);
-  --background-modifier-box-shadow: rgb(17, 17, 27, 30%);
-  --background-modifier-cover: rgb(17, 17, 27, 90%);
-  --background-modifier-error: rgb(243, 139, 168, 90%);
-  --background-modifier-error-hover: rgb(243, 139, 168, 100%);
-  --background-modifier-error-rgb: 243, 139, 168;
-  --background-modifier-form-field: rgb(17, 17, 27, 30%);
-  --background-modifier-form-field-highlighted: rgb(17, 17, 27, 22%);
+  --background-modifier-box-shadow: rgb(35, 38, 52, 30%);
+  --background-modifier-cover: rgb(35, 38, 52, 90%);
+  --background-modifier-error: rgb(231, 130, 132, 90%);
+  --background-modifier-error-hover: rgb(231, 130, 132, 100%);
+  --background-modifier-error-rgb: 231, 130, 132;
+  --background-modifier-form-field: rgb(35, 38, 52, 30%);
   --background-modifier-form-field-hover: rgb(35, 38, 52, 30%);
   --background-modifier-hover: rgb(198, 208, 245, 7.5%);
   --background-modifier-message: rgb(0, 0, 0, 90%);
-  --background-modifier-success: rgb(166, 227, 161, 90%);
-  --background-modifier-success-rgb: 166, 227, 161;
-  --background-primary: rgb(30, 30, 46);
-  --background-primary-alt: rgb(24, 24, 37);
-  --background-primary-rgb: 30, 30, 46;
-  --background-secondary: rgb(24, 24, 37);
-  --background-secondary-alt: rgb(17, 17, 27);
+  --background-modifier-success: rgb(166, 209, 137, 90%);
+  --background-modifier-success-rgb: 166, 209, 137;
+  --background-primary: rgb(48, 52, 70);
+  --background-primary-alt: rgb(41, 44, 60);
+  --background-secondary: rgb(41, 44, 60);
+  --background-secondary-alt: rgb(35, 38, 52);
   --bases-cards-background: rgb(48, 52, 70);
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
@@ -202,7 +1053,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: rgb(180, 190, 254);
+  --blockquote-border-color: rgb(186, 187, 241);
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -251,7 +1102,7 @@ body.theme-dark {
   --checkbox-marker-color: rgb(48, 52, 70);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: rgb(166, 227, 161);
+  --checklist-done-color: rgb(166, 209, 137);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: rgb(41, 44, 60);
@@ -274,77 +1125,38 @@ body.theme-dark {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(81, 87, 109);
   --collapse-icon-color-collapsed: rgb(165, 173, 206);
-  --color-accent: rgb(180, 190, 254);
-  --color-accent-1: rgb(180, 190, 254);
-  --color-accent-2: rgb(180, 190, 254, 90%);
+  --color-accent: rgb(186, 187, 241);
+  --color-accent-1: rgb(186, 187, 241);
+  --color-accent-2: rgb(186, 187, 241, 90%);
   --color-accent-hsl: 254, 80%, 68%;
-  --color-base-00: rgb(17, 17, 27);
+  --color-base-00: rgb(35, 38, 52);
   --color-base-05: #212121;
-  --color-base-10: rgb(24, 24, 37);
-  --color-base-100: rgb(205, 214, 244);
-  --color-base-20: rgb(30, 30, 46);
-  --color-base-25: rgb(49, 50, 68);
-  --color-base-30: rgb(69, 71, 90);
-  --color-base-35: rgb(88, 91, 112);
-  --color-base-40: rgb(108, 112, 134);
-  --color-base-50: rgb(127, 132, 156);
-  --color-base-60: rgb(147, 153, 178);
-  --color-base-70: rgb(166, 173, 200);
-  --color-blue: rgb(137, 180, 250);
-  --color-blue-rgb: 137, 180, 250;
-  --color-cyan: rgb(137, 220, 235);
-  --color-cyan-rgb: 116, 199, 236;
-  --color-green: rgb(166, 227, 161);
-  --color-green-rgb: 166, 227, 161;
-  --color-orange: rgb(250, 179, 135);
-  --color-orange-rgb: 250, 179, 135;
-  --color-pink: rgb(245, 194, 231);
-  --color-pink-rgb: 245, 194, 231;
-  --color-purple: rgb(180, 190, 254);
-  --color-purple-rgb: 203, 166, 247;
-  --color-red: rgb(243, 139, 168);
-  --color-red-rgb: 243, 139, 168;
-  --color-yellow: rgb(249, 226, 175);
-  --color-yellow-rgb: 249, 226, 175;
-  --ctp-accent: 180, 190, 254;
-  --ctp-base: 30, 30, 46;
-  --ctp-blockquote: 242, 213, 207;
-  --ctp-blue: 137, 180, 250;
-  --ctp-bold: 133, 193, 220;
-  --ctp-crust: 17, 17, 27;
-  --ctp-flamingo: 242, 205, 205;
-  --ctp-green: 166, 227, 161;
-  --ctp-h1: 186, 187, 241;
-  --ctp-h2: 186, 187, 241;
-  --ctp-h3: 186, 187, 241;
-  --ctp-h4: 186, 187, 241;
-  --ctp-h5: 186, 187, 241;
-  --ctp-h6: 186, 187, 241;
-  --ctp-italic: 166, 209, 137;
-  --ctp-lavender: 180, 190, 254;
-  --ctp-mantle: 24, 24, 37;
-  --ctp-maroon: 235, 160, 172;
-  --ctp-mauve: 203, 166, 247;
-  --ctp-overlay0: 108, 112, 134;
-  --ctp-overlay1: 127, 132, 156;
-  --ctp-overlay2: 147, 153, 178;
-  --ctp-page-title: 198, 208, 245;
-  --ctp-peach: 250, 179, 135;
-  --ctp-pink: 245, 194, 231;
-  --ctp-red: 243, 139, 168;
-  --ctp-rosewater: 245, 224, 220;
-  --ctp-sapphire: 116, 199, 236;
-  --ctp-sky: 137, 220, 235;
-  --ctp-strikethrough: 234, 153, 156;
-  --ctp-subtext0: 166, 173, 200;
-  --ctp-subtext1: 186, 194, 222;
-  --ctp-surface0: 49, 50, 68;
-  --ctp-surface1: 69, 71, 90;
-  --ctp-surface2: 88, 91, 112;
-  --ctp-tag-pill-color: 186, 187, 241;
-  --ctp-teal: 148, 226, 213;
-  --ctp-text: 205, 214, 244;
-  --ctp-yellow: 249, 226, 175;
+  --color-base-10: rgb(41, 44, 60);
+  --color-base-100: rgb(198, 208, 245);
+  --color-base-20: rgb(48, 52, 70);
+  --color-base-25: rgb(65, 69, 89);
+  --color-base-30: rgb(81, 87, 109);
+  --color-base-35: rgb(98, 104, 128);
+  --color-base-40: rgb(115, 121, 148);
+  --color-base-50: rgb(131, 139, 167);
+  --color-base-60: rgb(148, 156, 187);
+  --color-base-70: rgb(165, 173, 206);
+  --color-blue: rgb(140, 170, 238);
+  --color-blue-rgb: 140, 170, 238;
+  --color-cyan: rgb(153, 209, 219);
+  --color-cyan-rgb: 133, 193, 220;
+  --color-green: rgb(166, 209, 137);
+  --color-green-rgb: 166, 209, 137;
+  --color-orange: rgb(239, 159, 118);
+  --color-orange-rgb: 239, 159, 118;
+  --color-pink: rgb(244, 184, 228);
+  --color-pink-rgb: 244, 184, 228;
+  --color-purple: rgb(186, 187, 241);
+  --color-purple-rgb: 202, 158, 230;
+  --color-red: rgb(231, 130, 132);
+  --color-red-rgb: 231, 130, 132;
+  --color-yellow: rgb(229, 200, 144);
+  --color-yellow-rgb: 229, 200, 144;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -352,15 +1164,15 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: rgb(65, 69, 89);
-  --divider-color-hover: rgb(137, 180, 250);
+  --divider-color-hover: rgb(140, 170, 238);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --drag-ghost-background: rgb(0, 0, 0, 85%);
   --drag-ghost-text-color: rgb(198, 208, 245);
-  --dropdown-background: rgb(49, 50, 68);
+  --dropdown-background: rgb(65, 69, 89);
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(69, 71, 90);
+  --dropdown-background-hover: rgb(81, 87, 109);
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -368,8 +1180,6 @@ body.theme-dark {
     0 0 0 1px rgb(65, 69, 89), inset 0 0 0 1px rgb(65, 69, 89);
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-left: 2px solid rgb(186, 187, 241);
-  --embed-border-right: none;
   --embed-border-start: 2px solid rgb(186, 187, 241);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
@@ -507,19 +1317,8 @@ body.theme-dark {
   --header-height: 40px;
   --heading-formatting: rgb(81, 87, 109);
   --heading-spacing: calc(1rem * 2.5);
-  --hex-blue: #89b4fa;
-  --hex-green: #a6e3a1;
-  --hex-lavender: #b4befe;
-  --hex-mauve: #cba6f7;
-  --hex-peach: #fab387;
-  --hex-pink: #f5c2e7;
-  --hex-red: #f38ba8;
-  --hex-sapphire: #74c7ec;
-  --hex-sky: #89dceb;
-  --hex-teal: #94e2d5;
-  --hex-yellow: #f9e2af;
   --highlight-mix-blend-mode: lighten;
-  --hr-color: rgb(137, 180, 250);
+  --hr-color: rgb(140, 170, 238);
   --hr-thickness: 2px;
   --icon-color: rgb(165, 173, 206);
   --icon-color-active: rgb(186, 187, 241);
@@ -542,8 +1341,8 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: rgb(69, 71, 90);
-  --indentation-guide-color-active: rgb(116, 199, 236, 70%);
+  --indentation-guide-color: rgb(81, 87, 109);
+  --indentation-guide-color-active: rgb(133, 193, 220, 70%);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -571,13 +1370,12 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: rgb(180, 190, 254);
-  --interactive-accent-hover: rgb(180, 190, 254);
+  --interactive-accent: rgb(186, 187, 241);
+  --interactive-accent-hover: rgb(186, 187, 241);
   --interactive-accent-hsl: 254, 80%, 68%;
-  --interactive-accent-rgb: 180, 190, 254;
-  --interactive-hover: rgb(69, 71, 90);
-  --interactive-normal: rgb(49, 50, 68);
-  --interactive-success: rgb(166, 227, 161);
+  --interactive-accent-rgb: 186, 187, 241;
+  --interactive-hover: rgb(81, 87, 109);
+  --interactive-normal: rgb(65, 69, 89);
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -615,7 +1413,7 @@ body.theme-dark {
   --list-indent: 2em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: rgb(116, 199, 236);
+  --list-marker-color: rgb(133, 193, 220);
   --list-marker-color-collapsed: rgb(186, 187, 241);
   --list-marker-color-hover: rgb(165, 173, 206);
   --list-numbered-style: decimal;
@@ -688,8 +1486,8 @@ body.theme-dark {
   --modal-max-width-narrow: 800px;
   --modal-radius: 10px;
   --modal-width: 90vw;
-  --mono-rgb-0: 17, 17, 27;
-  --mono-rgb-100: 205, 214, 244;
+  --mono-rgb-0: 35, 38, 52;
+  --mono-rgb-100: 198, 208, 245;
   --nav-collapse-icon-color: rgb(81, 87, 109);
   --nav-collapse-icon-color-collapsed: rgb(81, 87, 109);
   --nav-heading-color: rgb(198, 208, 245);
@@ -703,2318 +1501,7 @@ body.theme-dark {
   --nav-item-background-active: rgb(198, 208, 245, 7.5%);
   --nav-item-background-hover: rgb(198, 208, 245, 7.5%);
   --nav-item-background-selected: hsl(254, 80%, 68%, 20%);
-  --nav-item-children-margin-left: 12px;
   --nav-item-children-margin-start: 12px;
-  --nav-item-children-padding-left: 4px;
-  --nav-item-children-padding-start: 4px;
-  --nav-item-color: rgb(165, 173, 206);
-  --nav-item-color-active: rgb(41, 44, 60);
-  --nav-item-color-highlighted: rgb(186, 187, 241);
-  --nav-item-color-hover: rgb(41, 44, 60);
-  --nav-item-color-selected: rgb(41, 44, 60);
-  --nav-item-padding: 4px 8px 4px 24px;
-  --nav-item-parent-padding: 4px 8px 4px 24px;
-  --nav-item-size: 13px;
-  --nav-item-white-space: nowrap;
-  --p-spacing: 1rem;
-  --p-spacing-empty: 0rem;
-  --page-border: 9px solid transparent;
-  --page-margin: 1px auto -8px;
-  --pdf-background: rgb(48, 52, 70);
-  --pdf-page-background: rgb(48, 52, 70);
-  --pdf-shadow: 0 0 0 1px rgb(49, 50, 68);
-  --pdf-sidebar-background: rgb(48, 52, 70);
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 5%);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(49, 50, 68);
-  --pdfViewer-padding-bottom: 0;
-  --pill-background: transparent;
-  --pill-background-hover: transparent;
-  --pill-border-color: rgb(65, 69, 89);
-  --pill-border-color-hover: rgb(98, 104, 128);
-  --pill-border-width: 1px;
-  --pill-color: rgb(165, 173, 206);
-  --pill-color-hover: rgb(198, 208, 245);
-  --pill-color-remove: rgb(81, 87, 109);
-  --pill-color-remove-hover: rgb(186, 187, 241);
-  --pill-decoration: none;
-  --pill-decoration-hover: none;
-  --pill-focus-left-adjust: -4px;
-  --pill-focus-width: calc(100% + 6px);
-  --pill-padding-x: 0.65em;
-  --pill-padding-y: 0.25em;
-  --pill-radius: 2em;
-  --popover-font-size: 16px;
-  --popover-height: 400px;
-  --popover-max-height: 70vh;
-  --popover-pdf-height: 800px;
-  --popover-pdf-width: 600px;
-  --popover-width: 450px;
-  --prompt-border-color: rgb(115, 121, 148);
-  --prompt-border-width: 1px;
-  --prompt-input-height: 40px;
-  --prompt-max-height: 70vh;
-  --prompt-max-width: 80vw;
-  --prompt-width: 700px;
-  --radius-l: 10px;
-  --radius-m: 8px;
-  --radius-s: 4px;
-  --radius-xl: 16px;
-  --ribbon-background: rgb(41, 44, 60);
-  --ribbon-background-collapsed: rgb(48, 52, 70);
-  --ribbon-padding: 8px 4px 12px;
-  --ribbon-width: 44px;
-  --safe-area-inset-bottom: 0px;
-  --safe-area-inset-left: 0px;
-  --safe-area-inset-right: 0px;
-  --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: rgb(205, 214, 244, 20%);
-  --scrollbar-bg: rgb(205, 214, 244, 5%);
-  --scrollbar-border-width: 3px 3px 3px 2px;
-  --scrollbar-height: 12px;
-  --scrollbar-radius: 10px;
-  --scrollbar-thumb-bg: rgb(205, 214, 244, 10%);
-  --scrollbar-width: 12px;
-  --search-clear-button-color: rgb(165, 173, 206);
-  --search-clear-button-size: 13px;
-  --search-icon-color: rgb(165, 173, 206);
-  --search-icon-size: 18px;
-  --search-result-background: rgb(48, 52, 70);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
-  --sidebar-tab-text-display: none;
-  --size-2-1: 2px;
-  --size-2-2: 4px;
-  --size-2-3: 6px;
-  --size-4-1: 4px;
-  --size-4-10: 40px;
-  --size-4-12: 48px;
-  --size-4-16: 64px;
-  --size-4-18: 72px;
-  --size-4-2: 8px;
-  --size-4-3: 12px;
-  --size-4-4: 16px;
-  --size-4-5: 20px;
-  --size-4-6: 24px;
-  --size-4-8: 32px;
-  --size-4-9: 36px;
-  --slider-s-thumb-position: -5px;
-  --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: rgb(98, 104, 128);
-  --slider-thumb-border-width: 1px;
-  --slider-thumb-height: 18px;
-  --slider-thumb-radius: 50%;
-  --slider-thumb-width: 18px;
-  --slider-thumb-y: -6px;
-  --slider-track-background: rgb(65, 69, 89);
-  --slider-track-height: 3px;
-  --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --status-bar-background: rgb(41, 44, 60);
-  --status-bar-border-color: rgb(65, 69, 89);
-  --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: 12px;
-  --status-bar-position: fixed;
-  --status-bar-radius: 8px 0 0 0;
-  --status-bar-scroll-padding: calc(12px + 18px);
-  --status-bar-text-color: rgb(165, 173, 206);
-  --swatch-height: 24px;
-  --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgb(198, 208, 245, 15%);
-  --swatch-width: 24px;
-  --sync-avatar-color-1: rgb(231, 130, 132);
-  --sync-avatar-color-2: rgb(239, 159, 118);
-  --sync-avatar-color-3: rgb(229, 200, 144);
-  --sync-avatar-color-4: rgb(166, 209, 137);
-  --sync-avatar-color-5: rgb(153, 209, 219);
-  --sync-avatar-color-6: rgb(140, 170, 238);
-  --sync-avatar-color-7: rgb(186, 187, 241);
-  --sync-avatar-color-8: rgb(244, 184, 228);
-  --sync-avatar-color-current-user: transparent;
-  --tab-background-active: rgb(48, 52, 70);
-  --tab-container-background: rgb(41, 44, 60);
-  --tab-curve: 6px;
-  --tab-divider-color: rgb(98, 104, 128);
-  --tab-font-size: 13px;
-  --tab-max-width: 320px;
-  --tab-outline-color: rgb(65, 69, 89);
-  --tab-outline-width: 1px;
-  --tab-radius: 4px;
-  --tab-radius-active: 6px 6px 0 0;
-  --tab-stacked-font-size: 13px;
-  --tab-stacked-font-weight: 400;
-  --tab-stacked-header-width: 40px;
-  --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
-  --tab-stacked-text-align: left;
-  --tab-stacked-text-transform: rotate(0deg);
-  --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: rgb(41, 44, 60);
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
-  --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(198, 208, 245, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(186, 187, 241);
-  --tab-text-color: rgb(81, 87, 109);
-  --tab-text-color-active: rgb(165, 173, 206);
-  --tab-text-color-focused: rgb(165, 173, 206);
-  --tab-text-color-focused-active: rgb(198, 208, 245);
-  --tab-text-color-focused-active-current: rgb(198, 208, 245);
-  --tab-text-color-focused-highlighted: rgb(186, 187, 241);
-  --tab-width: 200px;
-  --table-add-button-background: transparent;
-  --table-add-button-border-color: rgb(65, 69, 89);
-  --table-add-button-border-width: 1px;
-  --table-background: transparent;
-  --table-border-color: rgb(65, 69, 89);
-  --table-border-width: 1px;
-  --table-cell-vertical-alignment: top;
-  --table-column-alt-background: transparent;
-  --table-column-first-border-width: 1px;
-  --table-column-last-border-width: 1px;
-  --table-column-max-width: none;
-  --table-column-min-width: 6ch;
-  --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: rgb(186, 187, 241);
-  --table-drag-handle-color: rgb(81, 87, 109);
-  --table-drag-handle-color-active: rgb(41, 44, 60);
-  --table-drop-indicator-half-width: 2px;
-  --table-header-background: transparent;
-  --table-header-border-color: rgb(65, 69, 89);
-  --table-header-border-width: 1px;
-  --table-header-color: rgb(165, 173, 206);
-  --table-header-size: 0.875em;
-  --table-header-weight: 400;
-  --table-line-height: 1.25;
-  --table-row-alt-background: transparent;
-  --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
-  --table-row-last-border-width: 1px;
-  --table-selection: hsla(254, 80%, 68%, 0.1);
-  --table-selection-blend-mode: lighten;
-  --table-selection-border-color: rgb(186, 187, 241);
-  --table-selection-border-radius: 4px;
-  --table-selection-border-width: 2px;
-  --table-white-space: normal;
-  --tag-background: transparent;
-  --tag-background-hover: 0;
-  --tag-border-color: hsl(254, 80%, 68%, 10%);
-  --tag-border-color-hover: hsl(254, 80%, 68%, 15%);
-  --tag-border-width: 0;
-  --tag-color: rgb(186, 187, 241);
-  --tag-color-hover: rgb(186, 187, 241);
-  --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0;
-  --tag-padding-y: 0;
-  --tag-radius: 0.8em;
-  --tag-size: max(16px, 0.933em);
-  --text-accent: rgb(180, 190, 254);
-  --text-accent-hover: rgb(180, 190, 254);
-  --text-error: rgb(243, 139, 168);
-  --text-error-hover: rgb(243, 139, 168, 80%);
-  --text-faint: rgb(69, 71, 90);
-  --text-highlight-bg: rgb(245, 224, 220, 100%);
-  --text-highlight-bg-active: rgb(245, 224, 220, 100%);
-  --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: rgb(166, 173, 200);
-  --text-muted-rgb: 166, 173, 200;
-  --text-normal: rgb(205, 214, 244);
-  --text-on-accent: rgb(24, 24, 37);
-  --text-on-accent-inverted: rgb(24, 24, 37);
-  --text-selection: rgb(147, 153, 178, 30%);
-  --text-success: rgb(166, 209, 137);
-  --text-warning: rgb(239, 159, 118);
-  --titlebar-background: rgb(41, 44, 60);
-  --titlebar-background-focused: rgb(35, 38, 52);
-  --titlebar-border-color: rgb(65, 69, 89);
-  --titlebar-border-width: 0;
-  --titlebar-height: 30px;
-  --titlebar-text-color: rgb(165, 173, 206);
-  --titlebar-text-color-focused: rgb(198, 208, 245);
-  --titlebar-text-color-highlighted: rgb(186, 187, 241);
-  --titlebar-text-weight: 700;
-  --toggle-border-width: 2px;
-  --toggle-radius: 18px;
-  --toggle-s-border-width: 2px;
-  --toggle-s-thumb-height: 15px;
-  --toggle-s-thumb-width: 15px;
-  --toggle-s-width: 34px;
-  --toggle-thumb-color: rgb(198, 208, 245);
-  --toggle-thumb-height: 18px;
-  --toggle-thumb-radius: 18px;
-  --toggle-thumb-width: 18px;
-  --toggle-width: 40px;
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-text-decoration-color: text-decoration-color 0.3s
-    cubic-bezier(0.44, 0.21, 0, 1);
-  --vault-name-color: rgb(198, 208, 245);
-  --vault-name-font-size: 13px;
-  --vault-name-font-weight: 500;
-  --vault-profile-actions-display: flex;
-  --vault-profile-color: rgb(198, 208, 245);
-  --vault-profile-color-hover: rgb(198, 208, 245);
-  --vault-profile-display: flex;
-  --vault-profile-font-size: 13px;
-  --vault-profile-font-weight: 500;
-  --viewer-container-height: 0;
-  --workspace-background-translucent: rgb(35, 38, 52, 60%);
-  --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
-  --zoom-factor: 1;
-}
-body .callout[data-callout="abstract"] {
-  --callout-color: 133, 193, 220;
-  background-color: rgba(133, 193, 220, 0.1);
-  border-color: rgba(133, 193, 220, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="abstract"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="abstract"] > .callout-title {
-  color: rgb(133, 193, 220);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(133, 193, 220);
-}
-body .callout[data-callout="bug"] {
-  --callout-color: 231, 130, 132;
-  background-color: rgba(231, 130, 132, 0.1);
-  border-color: rgba(231, 130, 132, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="bug"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="bug"] > .callout-title {
-  color: rgb(231, 130, 132);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(231, 130, 132);
-}
-body .callout[data-callout="danger"] {
-  --callout-color: 231, 130, 132;
-  background-color: rgba(231, 130, 132, 0.1);
-  border-color: rgba(231, 130, 132, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="danger"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="danger"] > .callout-title {
-  color: rgb(231, 130, 132);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(231, 130, 132);
-}
-body .callout[data-callout="example"] {
-  --callout-color: 202, 158, 230;
-  background-color: rgba(202, 158, 230, 0.1);
-  border-color: rgba(202, 158, 230, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="example"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="example"] > .callout-title {
-  color: rgb(202, 158, 230);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(202, 158, 230);
-}
-body .callout[data-callout="failure"] {
-  --callout-color: 231, 130, 132;
-  background-color: rgba(231, 130, 132, 0.1);
-  border-color: rgba(231, 130, 132, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="failure"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="failure"] > .callout-title {
-  color: rgb(231, 130, 132);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(231, 130, 132);
-}
-body .callout[data-callout="info"] {
-  --callout-color: 140, 170, 238;
-  background-color: rgba(140, 170, 238, 0.1);
-  border-color: rgba(140, 170, 238, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="info"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="info"] > .callout-title {
-  color: rgb(140, 170, 238);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(140, 170, 238);
-}
-body .callout[data-callout="note"] {
-  --callout-color: 140, 170, 238;
-  background-color: rgba(140, 170, 238, 0.1);
-  border-color: rgba(140, 170, 238, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="note"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="note"] > .callout-title {
-  color: rgb(140, 170, 238);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(140, 170, 238);
-}
-body .callout[data-callout="question"] {
-  --callout-color: 229, 200, 144;
-  background-color: rgba(229, 200, 144, 0.1);
-  border-color: rgba(229, 200, 144, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="question"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="question"] > .callout-title {
-  color: rgb(229, 200, 144);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(229, 200, 144);
-}
-body .callout[data-callout="quote"] {
-  --callout-color: 158, 158, 158;
-  background-color: rgba(158, 158, 158, 0.1);
-  border-color: rgba(158, 158, 158, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="quote"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="quote"] > .callout-title {
-  color: rgb(158, 158, 158);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(158, 158, 158);
-}
-body .callout[data-callout="success"] {
-  --callout-color: 166, 209, 137;
-  background-color: rgba(166, 209, 137, 0.1);
-  border-color: rgba(166, 209, 137, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="success"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="success"] > .callout-title {
-  color: rgb(166, 209, 137);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(166, 209, 137);
-}
-body .callout[data-callout="tip"] {
-  --callout-color: 133, 193, 220;
-  background-color: rgba(133, 193, 220, 0.1);
-  border-color: rgba(133, 193, 220, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="tip"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="tip"] > .callout-title {
-  color: rgb(133, 193, 220);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(133, 193, 220);
-}
-body .callout[data-callout="todo"] {
-  --callout-color: 140, 170, 238;
-  background-color: rgba(140, 170, 238, 0.1);
-  border-color: rgba(140, 170, 238, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="todo"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="todo"] > .callout-title {
-  color: rgb(140, 170, 238);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(140, 170, 238);
-}
-body .callout[data-callout="warning"] {
-  --callout-color: 239, 159, 118;
-  background-color: rgba(239, 159, 118, 0.1);
-  border-color: rgba(239, 159, 118, 0.6);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0.5px;
-  mix-blend-mode: lighten;
-  padding: 12px 12px 12px 24px;
-}
-body .callout[data-callout="warning"] > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
-}
-body .callout[data-callout="warning"] > .callout-title {
-  color: rgb(239, 159, 118);
-  font-weight: 400;
-}
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  color: rgb(239, 159, 118);
-}
-body .footnote-backref {
-  color: rgb(81, 87, 109);
-  text-decoration: none solid rgb(81, 87, 109);
-}
-body .markdown-preview-sizer {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(198, 208, 245);
-  border-color: rgb(198, 208, 245);
-  border-radius: 0px;
-  border-width: 0px;
-  box-shadow: none;
-}
-body .markdown-rendered a.external-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .markdown-rendered a.internal-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(234, 153, 156);
-  cursor: pointer;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(234, 153, 156) none 0px;
-  text-decoration: none 2px solid rgb(231, 130, 132);
-  text-decoration-color: rgb(231, 130, 132);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
-  transition: opacity 0.14s ease-in-out;
-  user-select: text;
-}
-body .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
-  border-inline-start: 2px solid rgb(242, 213, 207);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-style: normal;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding-bottom: 0px;
-  padding-inline-start: 24px;
-  padding-top: 0px;
-}
-body .markdown-rendered code {
-  background-color: rgb(41, 44, 60);
-  border: 0px solid rgb(65, 69, 89);
-  border-color: rgb(65, 69, 89);
-  border-radius: 4px;
-  color: rgb(165, 173, 206);
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
-  padding: 2.1px 4.2px;
-}
-body .markdown-rendered hr {
-  border: unset;
-  border-color: rgb(140, 170, 238);
-  border-style: solid none none;
-  border-top: 2px solid rgb(140, 170, 238);
-  box-shadow: none;
-  margin: 32px 0px;
-}
-body .markdown-rendered mark {
-  background-color: rgb(242, 213, 207);
-  color: rgb(41, 44, 60);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(41, 44, 60) none 0px;
-  text-decoration: none solid rgb(41, 44, 60);
-  text-decoration-color: rgb(41, 44, 60);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .markdown-rendered ol > li {
-  color: rgb(198, 208, 245);
-  text-align: start;
-}
-body .markdown-rendered ol > li::marker {
-  color: rgb(198, 208, 245);
-}
-body .markdown-rendered p {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(165, 173, 206);
-  border-color: rgb(165, 173, 206);
-  border-radius: 4px;
-  overflow-x: visible;
-  padding: 0px;
-  white-space: pre-wrap;
-}
-body .markdown-rendered ul > li {
-  color: rgb(198, 208, 245);
-  text-align: start;
-}
-body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px none rgb(198, 208, 245);
-  border-color: rgb(198, 208, 245);
-  border-radius: 0px;
-  color: rgb(198, 208, 245);
-  content: normal;
-  pointer-events: auto;
-  transform: none;
-  transition: all;
-}
-body .math-block > mjx-container.MathJax {
-  display: block;
-  font:
-    16px/0px Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-align: center;
-  white-space: normal;
-}
-body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: MJXZERO, MJXTEX;
-}
-body .mermaid > svg {
-  fill: rgb(51, 51, 51);
-  stroke: none;
-}
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
-  color: rgb(165, 173, 206);
-  cursor: default;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(165, 173, 206);
-}
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
-  color: rgb(165, 173, 206);
-  cursor: default;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(165, 173, 206);
-}
-body .nav-view-outer .tree-item-self a {
-  color: rgb(165, 173, 206);
-  cursor: default;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  text-decoration: none solid rgb(165, 173, 206);
-}
-body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgb(202, 158, 230);
-  color: rgb(41, 44, 60);
-  cursor: default;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  .tree-item
-  > .tree-item-self {
-  font-weight: 400;
-}
-body
-  .outline-view-outer
-  .outline-view
-  .tree-item
-  .tree-item
-  > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body .outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self {
-  font-weight: 400;
-}
-body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  border-inline-start: 2px solid rgb(81, 87, 109);
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
-}
-body .outline-view-outer .outline-view .tree-item > .tree-item-self {
-  font-weight: 400;
-}
-body .popover.hover-popover {
-  background-color: rgb(48, 52, 70);
-  border-color: rgb(65, 69, 89);
-}
-body .published-container {
-  --background-primary: rgb(48, 52, 70);
-  --sidebar-left-background: rgb(41, 44, 60);
-  --sidebar-left-border-color: rgb(65, 69, 89);
-  --sidebar-left-border-width: 1px;
-  --sidebar-right-background: rgb(41, 44, 60);
-  --sidebar-right-border-color: rgb(65, 69, 89);
-  --sidebar-right-border-width: 1px;
-  background-color: rgb(48, 52, 70);
-}
-body .published-container .markdown-rendered h1 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h2 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h3 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h4 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h5 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .published-container .markdown-rendered h6 {
-  color: rgb(186, 187, 241);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  text-shadow: none;
-}
-body .search-results {
-  background-color: rgb(48, 52, 70);
-  border: 1px solid rgb(81, 87, 109);
-  border-radius: 10px;
-  box-shadow:
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
-}
-body .search-results .suggestion-item {
-  color: rgb(198, 208, 245);
-}
-body .search-results .suggestion-item.is-selected {
-  background-color: rgb(186, 187, 241);
-  color: rgb(41, 44, 60);
-  font-weight: 400;
-}
-body .search-results > * {
-  background-color: rgb(41, 44, 60);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body .site-body,
-body.theme-dark,
-body.theme-light,
-body .markdown-preview-sizer.markdown-preview-section {
-  background-color: rgb(48, 52, 70);
-}
-body .site-body-left-column input.search-bar {
-  background-color: rgba(35, 38, 52, 0.3);
-  border: 1px solid rgb(65, 69, 89);
-  border-color: rgb(65, 69, 89);
-  border-radius: 5px;
-  color: rgb(198, 208, 245);
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body .site-body-right-column {
-  background-color: rgb(41, 44, 60);
-  border-color: rgb(65, 69, 89);
-  border-left-width: 1px;
-}
-body .suggestion-item.is-selected {
-  background-color: rgb(186, 187, 241);
-  border-radius: 4px;
-  color: rgb(41, 44, 60);
-}
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  background-color: rgb(41, 44, 60);
-  border: 0px solid rgb(65, 69, 89);
-  border-color: rgb(65, 69, 89);
-  border-radius: 4px;
-  overflow-x: auto;
-  padding: 12px 16px;
-  white-space: pre-wrap;
-}
-body b {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body del {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(234, 153, 156);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(234, 153, 156) none 0px;
-  text-decoration: line-through solid rgb(234, 153, 156);
-  text-decoration-color: rgb(234, 153, 156);
-  text-decoration-line: line-through;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body div.math-block > mjx-container.MathJax {
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body div.multi-select-pill {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgba(139, 108, 239, 0.1);
-  border-bottom-left-radius: 11.2px;
-  border-bottom-right-radius: 11.2px;
-  border-bottom-style: solid;
-  border-left-color: rgba(139, 108, 239, 0.1);
-  border-left-style: solid;
-  border-right-color: rgba(139, 108, 239, 0.1);
-  border-right-style: solid;
-  border-top-color: rgba(139, 108, 239, 0.1);
-  border-top-left-radius: 11.2px;
-  border-top-right-radius: 11.2px;
-  border-top-style: solid;
-  display: flex;
-  font-family:
-    "Nunito Sans",
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  margin-inline-start: 0px;
-}
-body div.multi-select-pill > div.multi-select-pill-content {
-  color: rgb(186, 187, 241);
-}
-body div.search-results {
-  border-color: rgb(81, 87, 109);
-}
-body div.search-results .suggestion-item {
-  border-color: rgb(198, 208, 245);
-}
-body div.search-results .suggestion-item.is-selected {
-  color: rgb(41, 44, 60);
-}
-body div.side-body-left-column {
-  background-color: rgb(41, 44, 60);
-  border-color: rgb(65, 69, 89);
-  border-right-width: 1px;
-}
-body div.suggestion-item {
-  background-color: rgb(186, 187, 241);
-  border-radius: 4px;
-  color: rgb(41, 44, 60);
-}
-body em {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 209, 137);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(166, 209, 137) none 0px;
-  text-decoration: none solid rgb(166, 209, 137);
-  text-decoration-color: rgb(166, 209, 137);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body i {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body s {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body strong {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(133, 193, 220);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 600;
-  outline: rgb(133, 193, 220) none 0px;
-  text-decoration: none solid rgb(133, 193, 220);
-  text-decoration-color: rgb(133, 193, 220);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body strong > em {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(129, 200, 190);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 600;
-  outline: rgb(129, 200, 190) none 0px;
-  text-decoration: none solid rgb(129, 200, 190);
-  text-decoration-color: rgb(129, 200, 190);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body u {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(198, 208, 245);
-  cursor: auto;
-  filter: none;
-  font-family:
-    Vollkorn,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    "Microsoft YaHei Light",
-    roboto,
-    inter,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: rgb(198, 208, 245) none 0px;
-  text-decoration: none solid rgb(198, 208, 245);
-  text-decoration-color: rgb(198, 208, 245);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  transition: all;
-  user-select: text;
-}
-body ul > li.task-list-item[data-task="x"] {
-  color: rgb(166, 209, 137);
-  text-decoration: line-through solid rgb(166, 209, 137);
-  text-decoration-color: rgb(166, 209, 137);
-}
-body ul.contains-task-list > li.task-list-item {
-  display: list-item;
-  list-style: outside none none;
-  text-align: start;
-}
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
-  appearance: none;
-  border: 1px solid rgb(234, 153, 156);
-  border-color: rgb(234, 153, 156);
-  border-radius: 4px;
-  margin: 0px 8px 0px -24px;
-  margin-inline-end: 8px;
-  margin-inline-start: -24px;
-  padding: 0px;
-  position: relative;
-  top: 2.66667px;
-  transition: box-shadow 0.15s ease-in-out;
-  width: 16px;
-}
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
-  -webkit-mask-image: none;
-  -webkit-mask-position: 0% 0%;
-  -webkit-mask-repeat: repeat;
-  -webkit-mask-size: auto;
-  background-color: rgba(0, 0, 0, 0);
-  content: normal;
-  display: block;
-  inset-inline-start: 0px;
-  position: relative;
-  top: 0px;
-  width: 1156px;
-}
-body.theme-light {
-  --accent-h: 254;
-  --accent-l: 68%;
-  --accent-s: 80%;
-  --anim-duration-fast: 140ms;
-  --anim-duration-moderate: 300ms;
-  --anim-duration-none: 0;
-  --anim-duration-slow: 560ms;
-  --anim-duration-superfast: 70ms;
-  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
-  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%);
-  --background-modifier-border: rgb(204, 208, 218);
-  --background-modifier-border-focus: rgb(115, 121, 148);
-  --background-modifier-border-hover: rgb(98, 104, 128);
-  --background-modifier-box-shadow: rgb(220, 224, 232, 30%);
-  --background-modifier-cover: rgb(220, 224, 232, 90%);
-  --background-modifier-error: rgb(210, 15, 57, 90%);
-  --background-modifier-error-hover: rgb(210, 15, 57, 100%);
-  --background-modifier-error-rgb: 210, 15, 57;
-  --background-modifier-form-field: rgb(220, 224, 232, 30%);
-  --background-modifier-form-field-highlighted: rgb(220, 224, 232, 22%);
-  --background-modifier-form-field-hover: rgb(35, 38, 52, 30%);
-  --background-modifier-hover: rgb(198, 208, 245, 7.5%);
-  --background-modifier-message: rgb(0, 0, 0, 90%);
-  --background-modifier-success: rgb(64, 160, 43, 90%);
-  --background-modifier-success-rgb: 64, 160, 43;
-  --background-primary: rgb(239, 241, 245);
-  --background-primary-alt: rgb(230, 233, 239);
-  --background-primary-rgb: 239, 241, 245;
-  --background-secondary: rgb(230, 233, 239);
-  --background-secondary-alt: rgb(220, 224, 232);
-  --bases-cards-background: rgb(48, 52, 70);
-  --bases-cards-border-width: 1px;
-  --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: rgb(41, 44, 60);
-  --bases-cards-group-padding: 12px;
-  --bases-cards-line-height: 24px;
-  --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px rgb(65, 69, 89);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(98, 104, 128);
-  --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: rgb(65, 69, 89);
-  --bases-embed-border-radius: 4px;
-  --bases-embed-border-width: 0px;
-  --bases-filter-menu-width: 520px;
-  --bases-header-border-width: 0 0 1px 0;
-  --bases-header-height: 40px;
-  --bases-header-padding-end: 2px;
-  --bases-header-padding-start: 2px;
-  --bases-table-border-color: rgb(65, 69, 89);
-  --bases-table-cell-background-active: rgb(48, 52, 70);
-  --bases-table-cell-background-disabled: rgb(41, 44, 60);
-  --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(186, 187, 241);
-  --bases-table-column-border-width: 1px;
-  --bases-table-column-max-width: 300;
-  --bases-table-column-min-width: 40;
-  --bases-table-container-border-radius: 4px;
-  --bases-table-container-border-width: 1px;
-  --bases-table-header-background: rgb(48, 52, 70);
-  --bases-table-header-background-hover: rgb(198, 208, 245, 7.5%);
-  --bases-table-header-color: rgb(165, 173, 206);
-  --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
-  --bases-table-header-weight: 400;
-  --bases-table-row-background-hover: transparent;
-  --bases-table-row-border-width: 1px;
-  --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875em;
-  --bases-toolbar-badge-display: none;
-  --bases-toolbar-label-display: block;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: rgb(114, 135, 253);
-  --blockquote-border-thickness: 2px;
-  --blockquote-font-style: normal;
-  --bold-modifier: 200;
-  --bold-weight: 600;
-  --border-width: 1px;
-  --button-radius: 5px;
-  --callout-blend-mode: lighten;
-  --callout-border-opacity: 0.2;
-  --callout-border-width: 0.25px;
-  --callout-bug: 231, 130, 132;
-  --callout-content-background: transparent;
-  --callout-content-padding: 0;
-  --callout-default: 140, 170, 238;
-  --callout-error: 231, 130, 132;
-  --callout-example: 202, 158, 230;
-  --callout-fail: 231, 130, 132;
-  --callout-important: 133, 193, 220;
-  --callout-info: 140, 170, 238;
-  --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 229, 200, 144;
-  --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 166, 209, 137;
-  --callout-summary: 133, 193, 220;
-  --callout-tip: 133, 193, 220;
-  --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
-  --callout-todo: 140, 170, 238;
-  --callout-warning: 239, 159, 118;
-  --canvas-background: rgb(48, 52, 70);
-  --canvas-card-label-color: rgb(81, 87, 109);
-  --canvas-color: 126, 126, 126;
-  --canvas-color-1: 231, 130, 132;
-  --canvas-color-2: 239, 159, 118;
-  --canvas-color-3: 229, 200, 144;
-  --canvas-color-4: 166, 209, 137;
-  --canvas-color-5: 133, 193, 220;
-  --canvas-color-6: 202, 158, 230;
-  --canvas-dot-pattern: rgb(81, 87, 109);
-  --caret-color: rgb(198, 208, 245);
-  --checkbox-border-color: rgb(81, 87, 109);
-  --checkbox-border-color-hover: rgb(165, 173, 206);
-  --checkbox-color: rgb(186, 187, 241);
-  --checkbox-color-hover: rgb(186, 187, 241);
-  --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: rgb(48, 52, 70);
-  --checkbox-radius: 4px;
-  --checkbox-size: 16px;
-  --checklist-done-color: rgb(64, 160, 43);
-  --checklist-done-decoration: line-through;
-  --clickable-icon-radius: 4px;
-  --code-background: rgb(41, 44, 60);
-  --code-border-color: rgb(65, 69, 89);
-  --code-border-width: 0px;
-  --code-bracket-background: rgb(198, 208, 245, 7.5%);
-  --code-comment: rgb(81, 87, 109);
-  --code-function: rgb(229, 200, 144);
-  --code-important: rgb(239, 159, 118);
-  --code-keyword: rgb(244, 184, 228);
-  --code-normal: rgb(165, 173, 206);
-  --code-operator: rgb(231, 130, 132);
-  --code-property: rgb(153, 209, 219);
-  --code-punctuation: rgb(165, 173, 206);
-  --code-radius: 4px;
-  --code-size: 0.875em;
-  --code-string: rgb(166, 209, 137);
-  --code-tag: rgb(231, 130, 132);
-  --code-value: rgb(186, 187, 241);
-  --code-white-space: pre-wrap;
-  --collapse-icon-color: rgb(81, 87, 109);
-  --collapse-icon-color-collapsed: rgb(165, 173, 206);
-  --color-accent: rgb(114, 135, 253);
-  --color-accent-1: rgb(114, 135, 253);
-  --color-accent-2: rgb(114, 135, 253, 90%);
-  --color-accent-hsl: 254, 80%, 68%;
-  --color-base-00: rgb(220, 224, 232);
-  --color-base-05: #fcfcfc;
-  --color-base-10: rgb(230, 233, 239);
-  --color-base-100: rgb(76, 79, 105);
-  --color-base-20: rgb(239, 241, 245);
-  --color-base-25: rgb(204, 208, 218);
-  --color-base-30: rgb(188, 192, 204);
-  --color-base-35: rgb(172, 176, 190);
-  --color-base-40: rgb(156, 160, 176);
-  --color-base-50: rgb(140, 143, 161);
-  --color-base-60: rgb(124, 127, 147);
-  --color-base-70: rgb(108, 111, 133);
-  --color-blue: rgb(30, 102, 245);
-  --color-blue-rgb: 30, 102, 245;
-  --color-cyan: rgb(4, 165, 229);
-  --color-cyan-rgb: 32, 159, 181;
-  --color-green: rgb(64, 160, 43);
-  --color-green-rgb: 64, 160, 43;
-  --color-orange: rgb(254, 100, 11);
-  --color-orange-rgb: 254, 100, 11;
-  --color-pink: rgb(234, 118, 203);
-  --color-pink-rgb: 234, 118, 203;
-  --color-purple: rgb(114, 135, 253);
-  --color-purple-rgb: 136, 57, 239;
-  --color-red: rgb(210, 15, 57);
-  --color-red-rgb: 210, 15, 57;
-  --color-yellow: rgb(223, 142, 29);
-  --color-yellow-rgb: 223, 142, 29;
-  --ctp-accent: 114, 135, 253;
-  --ctp-base: 239, 241, 245;
-  --ctp-blockquote: 242, 213, 207;
-  --ctp-blue: 30, 102, 245;
-  --ctp-bold: 133, 193, 220;
-  --ctp-crust: 220, 224, 232;
-  --ctp-flamingo: 221, 120, 120;
-  --ctp-green: 64, 160, 43;
-  --ctp-h1: 186, 187, 241;
-  --ctp-h2: 186, 187, 241;
-  --ctp-h3: 186, 187, 241;
-  --ctp-h4: 186, 187, 241;
-  --ctp-h5: 186, 187, 241;
-  --ctp-h6: 186, 187, 241;
-  --ctp-italic: 166, 209, 137;
-  --ctp-lavender: 114, 135, 253;
-  --ctp-mantle: 230, 233, 239;
-  --ctp-maroon: 230, 69, 83;
-  --ctp-mauve: 136, 57, 239;
-  --ctp-overlay0: 156, 160, 176;
-  --ctp-overlay1: 140, 143, 161;
-  --ctp-overlay2: 124, 127, 147;
-  --ctp-page-title: 198, 208, 245;
-  --ctp-peach: 254, 100, 11;
-  --ctp-pink: 234, 118, 203;
-  --ctp-red: 210, 15, 57;
-  --ctp-rosewater: 220, 138, 120;
-  --ctp-sapphire: 32, 159, 181;
-  --ctp-sky: 4, 165, 229;
-  --ctp-strikethrough: 234, 153, 156;
-  --ctp-subtext0: 108, 111, 133;
-  --ctp-subtext1: 92, 95, 119;
-  --ctp-surface0: 204, 208, 218;
-  --ctp-surface1: 188, 192, 204;
-  --ctp-surface2: 172, 176, 190;
-  --ctp-tag-pill-color: 186, 187, 241;
-  --ctp-teal: 23, 146, 153;
-  --ctp-text: 76, 79, 105;
-  --ctp-yellow: 223, 142, 29;
-  --cursor: default;
-  --cursor-link: pointer;
-  --dialog-max-height: 85vh;
-  --dialog-max-width: 80vw;
-  --dialog-width: 560px;
-  --direction: 1;
-  --divider-color: rgb(65, 69, 89);
-  --divider-color-hover: rgb(30, 102, 245);
-  --divider-vertical-height: 100%;
-  --divider-width: 1px;
-  --divider-width-hover: 2px;
-  --drag-ghost-background: rgb(0, 0, 0, 85%);
-  --drag-ghost-text-color: rgb(198, 208, 245);
-  --dropdown-background: rgb(204, 208, 218);
-  --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(188, 192, 204);
-  --dropdown-background-position: right 0.5em top 50%, 0 0;
-  --dropdown-background-size: 1em auto, 100%;
-  --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover:
-    0 0 0 1px rgb(65, 69, 89), inset 0 0 0 1px rgb(65, 69, 89);
-  --embed-border-bottom: none;
-  --embed-border-end: none;
-  --embed-border-left: 2px solid rgb(186, 187, 241);
-  --embed-border-right: none;
-  --embed-border-start: 2px solid rgb(186, 187, 241);
-  --embed-border-top: none;
-  --embed-canvas-max-height: 400px;
-  --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 24px;
-  --file-folding-offset: 24px;
-  --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-size: 13px;
-  --file-header-font-weight: 400;
-  --file-header-justify: center;
-  --file-line-width: 700px;
-  --file-margins: 32px;
-  --flair-background: rgb(65, 69, 89);
-  --flair-color: rgb(198, 208, 245);
-  --focus-ring-color: #0df;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
-  --font-black: 900;
-  --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
-  --font-extrabold: 800;
-  --font-extralight: 200;
-  --font-interface:
-    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-interface-override: "??";
-  --font-interface-theme:
-    "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif;
-  --font-light: 300;
-  --font-medium: 500;
-  --font-mermaid:
-    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
-  --font-normal: 400;
-  --font-print:
-    "??", "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial";
-  --font-print-override: "??";
-  --font-semibold: 600;
-  --font-small: 0.933em;
-  --font-smaller: 0.875em;
-  --font-smallest: 0.8em;
-  --font-text:
-    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-override: "??";
-  --font-text-size: 16px;
-  --font-text-theme:
-    "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif;
-  --font-thin: 100;
-  --font-ui-large: 20px;
-  --font-ui-medium: 16px;
-  --font-ui-small: 13px;
-  --font-ui-smaller: 12px;
-  --font-weight: 400;
-  --footnote-divider-color: rgb(65, 69, 89);
-  --footnote-divider-color-active: transparent;
-  --footnote-divider-width: 1px;
-  --footnote-gap: 4px;
-  --footnote-id-color: rgb(165, 173, 206);
-  --footnote-id-color-no-occurrences: rgb(81, 87, 109);
-  --footnote-id-delimiter: ".";
-  --footnote-input-background: transparent;
-  --footnote-input-background-active: rgb(198, 208, 245, 7.5%);
-  --footnote-line-height: 1.5;
-  --footnote-padding-block: 6px;
-  --footnote-padding-inline: 6px;
-  --footnote-radius: 4px;
-  --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
-  --frame-right-space: 0px;
-  --graph-controls-width: 240px;
-  --graph-line: rgb(98, 104, 128);
-  --graph-node: rgb(165, 173, 206);
-  --graph-node-attachment: rgb(229, 200, 144);
-  --graph-node-focused: rgb(186, 187, 241);
-  --graph-node-tag: rgb(166, 209, 137);
-  --graph-node-unresolved: rgb(81, 87, 109);
-  --graph-text: rgb(198, 208, 245);
-  --h1-line-height: 1.5;
-  --h1-size: 2em;
-  --h1-style: normal;
-  --h1-variant: normal;
-  --h1-weight: 700;
-  --h2-line-height: 1.5;
-  --h2-size: 1.6em;
-  --h2-style: normal;
-  --h2-variant: normal;
-  --h2-weight: 600;
-  --h3-line-height: 1.5;
-  --h3-size: 1.37em;
-  --h3-style: normal;
-  --h3-variant: normal;
-  --h3-weight: 600;
-  --h4-line-height: 1.5;
-  --h4-size: 1.25em;
-  --h4-style: normal;
-  --h4-variant: normal;
-  --h4-weight: 600;
-  --h5-line-height: 1.5;
-  --h5-size: 1.12em;
-  --h5-style: normal;
-  --h5-variant: normal;
-  --h5-weight: 600;
-  --h6-line-height: 1.5;
-  --h6-size: 1.12em;
-  --h6-style: normal;
-  --h6-variant: normal;
-  --h6-weight: 600;
-  --header-height: 40px;
-  --heading-formatting: rgb(81, 87, 109);
-  --heading-spacing: calc(1rem * 2.5);
-  --hex-blue: #1e66f5;
-  --hex-green: #40a02b;
-  --hex-lavender: #7287fd;
-  --hex-mauve: #8839ef;
-  --hex-peach: #fe640b;
-  --hex-pink: #ea76cb;
-  --hex-red: #d20f39;
-  --hex-sapphire: #209fb5;
-  --hex-sky: #04a5e5;
-  --hex-teal: #179299;
-  --hex-yellow: #df8e1d;
-  --highlight-mix-blend-mode: darken;
-  --hr-color: rgb(30, 102, 245);
-  --hr-thickness: 2px;
-  --icon-color: rgb(165, 173, 206);
-  --icon-color-active: rgb(186, 187, 241);
-  --icon-color-focused: rgb(198, 208, 245);
-  --icon-color-hover: rgb(41, 44, 60);
-  --icon-l: 18px;
-  --icon-l-stroke-width: 1.75px;
-  --icon-m: 18px;
-  --icon-m-stroke-width: 1.75px;
-  --icon-opacity: 1;
-  --icon-opacity-active: 1;
-  --icon-opacity-hover: 1;
-  --icon-s: 16px;
-  --icon-s-stroke-width: 2px;
-  --icon-size: 18px;
-  --icon-stroke: 1.75px;
-  --icon-xl: 32px;
-  --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
-  --icon-xs-stroke-width: 2px;
-  --indent-size: 4;
-  --indent-unit: 0.5625em;
-  --indentation-guide-color: rgb(188, 192, 204);
-  --indentation-guide-color-active: rgb(32, 159, 181, 70%);
-  --indentation-guide-editing-indent: 0.85em;
-  --indentation-guide-reading-indent: -0.85em;
-  --indentation-guide-source-indent: 0.25em;
-  --indentation-guide-width: 2px;
-  --indentation-guide-width-active: 1px;
-  --inline-title-line-height: 1.5;
-  --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 2em;
-  --inline-title-style: normal;
-  --inline-title-variant: normal;
-  --inline-title-weight: 700;
-  --input-border-width: 1px;
-  --input-border-width-focus: 2px;
-  --input-date-separator: rgb(81, 87, 109);
-  --input-font-weight: 400;
-  --input-height: 30px;
-  --input-padding: 4px 8px;
-  --input-placeholder-color: rgb(81, 87, 109);
-  --input-radius: 5px;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --interactive-accent: rgb(114, 135, 253);
-  --interactive-accent-hover: rgb(114, 135, 253);
-  --interactive-accent-hsl: 254, 80%, 68%;
-  --interactive-accent-rgb: 114, 135, 253;
-  --interactive-hover: rgb(188, 192, 204);
-  --interactive-normal: rgb(204, 208, 218);
-  --interactive-success: rgb(64, 160, 43);
-  --keyboard-height: 0px;
-  --layer-cover: 5;
-  --layer-dragged-item: 80;
-  --layer-menu: 65;
-  --layer-modal: 50;
-  --layer-notice: 60;
-  --layer-popover: 30;
-  --layer-sidedock: 10;
-  --layer-slides: 45;
-  --layer-status-bar: 15;
-  --layer-tooltip: 70;
-  --line-height-normal: 1.5;
-  --line-height-tight: 1.25;
-  --link-color: rgb(140, 170, 238);
-  --link-color-hover: rgb(140, 170, 238);
-  --link-decoration: none;
-  --link-decoration-hover: underline;
-  --link-decoration-thickness: 2px;
-  --link-external-color: rgb(129, 200, 190);
-  --link-external-color-hover: rgb(129, 200, 190);
-  --link-external-decoration: none;
-  --link-external-decoration-hover: underline;
-  --link-external-filter: none;
-  --link-unresolved-color: rgb(234, 153, 156);
-  --link-unresolved-decoration-color: rgb(231, 130, 132);
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-filter: none;
-  --link-unresolved-opacity: 1;
-  --link-weight: 400;
-  --list-bullet-border: none;
-  --list-bullet-end-padding: 1.3rem;
-  --list-bullet-radius: 50%;
-  --list-bullet-size: 0.3em;
-  --list-bullet-transform: none;
-  --list-indent: 2em;
-  --list-indent-editing: 0.75em;
-  --list-indent-source: 0;
-  --list-marker-color: rgb(32, 159, 181);
-  --list-marker-color-collapsed: rgb(186, 187, 241);
-  --list-marker-color-hover: rgb(165, 173, 206);
-  --list-numbered-style: decimal;
-  --list-spacing: 0.1em;
-  --loading-icon-delay: 400ms;
-  --menu-backdrop-filter: none;
-  --menu-background: rgb(41, 44, 60);
-  --menu-border-color: rgb(98, 104, 128);
-  --menu-border-width: 1px;
-  --menu-padding: 6px;
-  --menu-radius: 8px;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --metadata-background: transparent;
-  --metadata-border-color: rgb(65, 69, 89);
-  --metadata-border-radius: 0;
-  --metadata-border-width: 0;
-  --metadata-display-editing: block;
-  --metadata-display-reading: block;
-  --metadata-divider-color: rgb(65, 69, 89);
-  --metadata-divider-color-focus: transparent;
-  --metadata-divider-color-hover: transparent;
-  --metadata-divider-width: 0;
-  --metadata-gap: 3px;
-  --metadata-input-background: transparent;
-  --metadata-input-background-active: rgb(198, 208, 245, 7.5%);
-  --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
-  --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: rgb(198, 208, 245);
-  --metadata-label-background: transparent;
-  --metadata-label-background-active: rgb(198, 208, 245, 7.5%);
-  --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "Nunito Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-font-size: 0.875em;
-  --metadata-label-text-color: rgb(165, 173, 206);
-  --metadata-label-text-color-hover: rgb(165, 173, 206);
-  --metadata-label-width: 9em;
-  --metadata-max-width: none;
-  --metadata-padding: 8px 0;
-  --metadata-property-background: transparent;
-  --metadata-property-background-active: rgb(198, 208, 245, 7.5%);
-  --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(115, 121, 148);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(98, 104, 128);
-  --metadata-property-padding: 0;
-  --metadata-property-radius: 6px;
-  --metadata-property-radius-focus: 6px;
-  --metadata-property-radius-hover: 6px;
-  --metadata-sidebar-input-font-size: 13px;
-  --metadata-sidebar-label-font-size: 13px;
-  --modal-background: rgb(48, 52, 70);
-  --modal-border-color: rgb(115, 121, 148);
-  --modal-border-width: 1px;
-  --modal-community-sidebar-width: 280px;
-  --modal-height: 85vh;
-  --modal-max-height: 1000px;
-  --modal-max-width: 1100px;
-  --modal-max-width-narrow: 800px;
-  --modal-radius: 10px;
-  --modal-width: 90vw;
-  --mono-rgb-0: 220, 224, 232;
-  --mono-rgb-100: 76, 79, 105;
-  --nav-collapse-icon-color: rgb(81, 87, 109);
-  --nav-collapse-icon-color-collapsed: rgb(81, 87, 109);
-  --nav-heading-color: rgb(198, 208, 245);
-  --nav-heading-color-collapsed: rgb(81, 87, 109);
-  --nav-heading-color-collapsed-hover: rgb(165, 173, 206);
-  --nav-heading-color-hover: rgb(198, 208, 245);
-  --nav-heading-weight: 500;
-  --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgb(81, 87, 109);
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-active: rgb(198, 208, 245, 7.5%);
-  --nav-item-background-hover: rgb(198, 208, 245, 7.5%);
-  --nav-item-background-selected: hsl(254, 80%, 68%, 20%);
-  --nav-item-children-margin-left: 12px;
-  --nav-item-children-margin-start: 12px;
-  --nav-item-children-padding-left: 4px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: rgb(165, 173, 206);
   --nav-item-color-active: rgb(41, 44, 60);
@@ -3076,12 +1563,12 @@ body.theme-light {
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px;
   --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: rgb(76, 79, 105, 20%);
-  --scrollbar-bg: rgb(76, 79, 105, 5%);
+  --scrollbar-active-thumb-bg: rgb(198, 208, 245, 20%);
+  --scrollbar-bg: rgb(198, 208, 245, 5%);
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
   --scrollbar-radius: 10px;
-  --scrollbar-thumb-bg: rgb(76, 79, 105, 10%);
+  --scrollbar-thumb-bg: rgb(198, 208, 245, 10%);
   --scrollbar-width: 12px;
   --search-clear-button-color: rgb(165, 173, 206);
   --search-clear-button-size: 13px;
@@ -3092,8 +1579,8 @@ body.theme-light {
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
   --sidebar-markdown-font-size: calc(16px * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -3128,7 +1615,6 @@ body.theme-light {
   --status-bar-font-size: 12px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-scroll-padding: calc(12px + 18px);
   --status-bar-text-color: rgb(165, 173, 206);
   --swatch-height: 24px;
   --swatch-radius: 14px;
@@ -3220,20 +1706,17 @@ body.theme-light {
   --tag-padding-y: 0;
   --tag-radius: 0.8em;
   --tag-size: max(16px, 0.933em);
-  --text-accent: rgb(114, 135, 253);
-  --text-accent-hover: rgb(114, 135, 253);
-  --text-error: rgb(210, 15, 57);
-  --text-error-hover: rgb(210, 15, 57, 80%);
-  --text-faint: rgb(188, 192, 204);
-  --text-highlight-bg: rgb(220, 138, 120, 100%);
-  --text-highlight-bg-active: rgb(220, 138, 120, 100%);
+  --text-accent: rgb(186, 187, 241);
+  --text-accent-hover: rgb(186, 187, 241);
+  --text-error: rgb(231, 130, 132);
+  --text-faint: rgb(81, 87, 109);
+  --text-highlight-bg: rgb(242, 213, 207, 100%);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: rgb(108, 111, 133);
-  --text-muted-rgb: 108, 111, 133;
-  --text-normal: rgb(76, 79, 105);
-  --text-on-accent: rgb(230, 233, 239);
-  --text-on-accent-inverted: rgb(230, 233, 239);
-  --text-selection: rgb(124, 127, 147, 30%);
+  --text-muted: rgb(165, 173, 206);
+  --text-normal: rgb(198, 208, 245);
+  --text-on-accent: rgb(41, 44, 60);
+  --text-on-accent-inverted: rgb(41, 44, 60);
+  --text-selection: rgb(148, 156, 187, 30%);
   --text-success: rgb(166, 209, 137);
   --text-warning: rgb(239, 159, 118);
   --titlebar-background: rgb(41, 44, 60);
@@ -3243,7 +1726,6 @@ body.theme-light {
   --titlebar-height: 30px;
   --titlebar-text-color: rgb(165, 173, 206);
   --titlebar-text-color-focused: rgb(198, 208, 245);
-  --titlebar-text-color-highlighted: rgb(186, 187, 241);
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -3256,15 +1738,6 @@ body.theme-light {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-text-decoration-color: text-decoration-color 0.3s
-    cubic-bezier(0.44, 0.21, 0, 1);
-  --vault-name-color: rgb(198, 208, 245);
-  --vault-name-font-size: 13px;
-  --vault-name-font-weight: 500;
   --vault-profile-actions-display: flex;
   --vault-profile-color: rgb(198, 208, 245);
   --vault-profile-color-hover: rgb(198, 208, 245);
@@ -3276,4 +1749,1442 @@ body.theme-light {
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --zoom-factor: 1;
+  --text-error-hover: rgb(231, 130, 132, 80%);
+  --background-modifier-form-field-highlighted: rgb(35, 38, 52, 22%);
+  --vault-name-color: rgb(198, 208, 245);
+  --ctp-accent: 186, 187, 241;
+  --ctp-base: 48, 52, 70;
+  --ctp-blue: 140, 170, 238;
+  --ctp-crust: 35, 38, 52;
+  --ctp-flamingo: 238, 190, 190;
+  --ctp-green: 166, 209, 137;
+  --ctp-lavender: 186, 187, 241;
+  --ctp-mantle: 41, 44, 60;
+  --ctp-maroon: 234, 153, 156;
+  --ctp-mauve: 202, 158, 230;
+  --ctp-overlay0: 115, 121, 148;
+  --ctp-overlay1: 131, 139, 167;
+  --ctp-overlay2: 148, 156, 187;
+  --ctp-peach: 239, 159, 118;
+  --ctp-pink: 244, 184, 228;
+  --ctp-red: 231, 130, 132;
+  --ctp-rosewater: 242, 213, 207;
+  --ctp-sapphire: 133, 193, 220;
+  --ctp-sky: 153, 209, 219;
+  --ctp-subtext0: 165, 173, 206;
+  --ctp-subtext1: 181, 191, 226;
+  --ctp-surface0: 65, 69, 89;
+  --ctp-surface1: 81, 87, 109;
+  --ctp-surface2: 98, 104, 128;
+  --ctp-teal: 129, 200, 190;
+  --ctp-text: 198, 208, 245;
+  --ctp-yellow: 229, 200, 144;
+  --interactive-success: rgb(166, 209, 137);
+  --text-highlight-bg-active: rgb(242, 213, 207, 100%);
+  --text-muted-rgb: 165, 173, 206;
+  --embed-border-left: 2px solid rgb(186, 187, 241);
+  --embed-border-right: none;
+  --nav-item-children-margin-left: 12px;
+  --nav-item-children-padding-left: 4px;
+  --status-bar-scroll-padding: calc(12px + 18px);
+  --vault-name-font-size: 13px;
+  --vault-name-font-weight: 500;
+  --background-primary-rgb: 48, 52, 70;
+  --ctp-blockquote: 242, 213, 207;
+  --ctp-bold: 133, 193, 220;
+  --ctp-h1: 186, 187, 241;
+  --ctp-h2: 186, 187, 241;
+  --ctp-h3: 186, 187, 241;
+  --ctp-h4: 186, 187, 241;
+  --ctp-h5: 186, 187, 241;
+  --ctp-h6: 186, 187, 241;
+  --ctp-italic: 166, 209, 137;
+  --ctp-page-title: 198, 208, 245;
+  --ctp-strikethrough: 234, 153, 156;
+  --ctp-tag-pill-color: 186, 187, 241;
+  --hex-blue: #8caaee;
+  --hex-green: #a6d189;
+  --hex-lavender: #babbf1;
+  --hex-mauve: #ca9ee6;
+  --hex-peach: #ef9f76;
+  --hex-pink: #f4b8e4;
+  --hex-red: #e78284;
+  --hex-sapphire: #85c1dc;
+  --hex-sky: #99d1db;
+  --hex-teal: #81c8be;
+  --hex-yellow: #e5c890;
+  --titlebar-text-color-highlighted: rgb(186, 187, 241);
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
+  --transition-text-decoration-color: text-decoration-color 0.3s
+    cubic-bezier(0.44, 0.21, 0, 1);
+}
+
+body .markdown-rendered a.external-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  cursor: pointer;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered a.internal-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  cursor: pointer;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  cursor: pointer;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body strong {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(32, 159, 181), rgb(133, 193, 220));
+  cursor: auto;
+  filter: none;
+  font-family:
+    Vollkorn,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: inherit;
+  text-decoration: none solid rgb(133, 193, 220);
+  text-decoration-color: rgb(133, 193, 220);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: text;
+}
+body b {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body em {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(64, 160, 43), rgb(166, 209, 137));
+  cursor: auto;
+  filter: none;
+  font-family:
+    Vollkorn,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: inherit;
+  text-decoration: none solid rgb(166, 209, 137);
+  text-decoration-color: rgb(166, 209, 137);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: text;
+}
+body i {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body .markdown-rendered mark {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body del {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(230, 69, 83), rgb(234, 153, 156));
+  cursor: auto;
+  filter: none;
+  font-family:
+    Vollkorn,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: line-through solid rgb(234, 153, 156);
+  text-decoration-color: rgb(234, 153, 156);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: text;
+}
+body .suggestion-item.is-selected {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body div.suggestion-item {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .markdown-rendered hr {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: solid;
+  border-left-color: rgb(54, 54, 54);
+  border-right-color: rgb(54, 54, 54);
+  border-top-color: rgb(54, 54, 54);
+  border-bottom-color: rgb(54, 54, 54);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 2px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body div.multi-select-pill {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  font-family:
+    "Nunito Sans",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  margin-inline-start: 0px;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: rgba(139, 108, 239, 0.1);
+  border-right-color: rgba(139, 108, 239, 0.1);
+  border-top-color: rgba(139, 108, 239, 0.1);
+  border-bottom-color: rgba(139, 108, 239, 0.1);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 11.2px;
+  border-top-right-radius: 11.2px;
+  border-bottom-left-radius: 11.2px;
+  border-bottom-right-radius: 11.2px;
+}
+body div.multi-select-pill > div.multi-select-pill-content {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .markdown-rendered ul > li {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-align: left;
+}
+body .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  content: normal;
+  pointer-events: auto;
+  transform: none;
+  transition: inherit;
+}
+body .markdown-rendered ol > li {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-align: left;
+}
+body .markdown-rendered ol > li::marker {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .markdown-rendered code {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family: monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body .markdown-rendered pre > code {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow-x: visible;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow-x: visible;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+  appearance: auto;
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: rgb(133, 133, 133);
+  border-right-color: rgb(133, 133, 133);
+  border-top-color: rgb(133, 133, 133);
+  border-bottom-color: rgb(133, 133, 133);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: auto;
+  transition: inherit;
+  position: static;
+  top: auto;
+}
+body ul.contains-task-list > li.task-list-item {
+  list-style: inherit;
+  text-align: left;
+  display: list-item;
+}
+body
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-mask-position: inherit;
+  -webkit-mask-size: inherit;
+  -webkit-mask-repeat: inherit;
+  -webkit-mask-image: inherit;
+}
+body ul > li.task-list-item[data-task="x"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+}
+body .markdown-rendered blockquote {
+  background-color: rgba(0, 0, 0, 0);
+  border-inline-start: inherit;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-style: normal;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+body .footnote-backref {
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline solid rgb(166, 138, 249);
+}
+body .site-body-left-column input.search-bar {
+  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: rgb(133, 133, 133);
+  border-right-color: rgb(133, 133, 133);
+  border-top-color: rgb(133, 133, 133);
+  border-bottom-color: rgb(133, 133, 133);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  font-family: Arial;
+}
+body .search-results {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+}
+body .search-results > * {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  filter: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: none;
+}
+body div.search-results {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .search-results .suggestion-item {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body div.search-results .suggestion-item {
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .search-results .suggestion-item.is-selected {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0);
+}
+body div.search-results .suggestion-item.is-selected {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body .published-container .markdown-rendered h1 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h2 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h3 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h4 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h5 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .published-container .markdown-rendered h6 {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body .outline-view-outer .outline-view .tree-item > .tree-item-self {
+  font-weight: 400;
+}
+body .outline-view-outer .outline-view .tree-item > .tree-item-children {
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+  border-inline-start: inherit;
+}
+body .markdown-preview-sizer {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+}
+body .callout[data-callout="note"] {
+  --callout-color: inherit;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  mix-blend-mode: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+body .callout[data-callout="note"] > .callout-title {
+  gap: inherit;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout > .callout-title > .callout-title-inner {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-weight: 400;
+}
+body .callout > .callout-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body .callout[data-callout="abstract"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="info"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="todo"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="tip"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="success"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="question"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="warning"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="danger"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="failure"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="bug"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="example"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .callout[data-callout="quote"] {
+  --callout-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: rgb(0, 0, 0);
+  stroke: none;
+}
+body .math-block > mjx-container.MathJax {
+  display: inline;
+  text-align: start;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body div.math-block > mjx-container.MathJax {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .math-inline > mjx-container.MathJax > mjx-math {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .nav-view-outer .tree-item-self a {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
+}
+body .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+}
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
+}
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: none solid rgb(218, 218, 218);
 }
