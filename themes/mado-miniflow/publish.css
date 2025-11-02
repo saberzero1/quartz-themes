@@ -1227,1127 +1227,981 @@ body.theme-light {
 }
 
 body.theme-dark {
-  --accent-h: 255 !important;
-  --accent-l: 68% !important;
-  --accent-s: 73% !important;
-  --anim-duration-fast: 140ms !important;
-  --anim-duration-moderate: 300ms !important;
-  --anim-duration-none: 0 !important;
-  --anim-duration-slow: 560ms !important;
-  --anim-duration-superfast: 70ms !important;
-  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
-  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
-  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(255, 73%, 68%, 0.1) !important;
-  --background-modifier-border: hsla(215, 22%, 13%, 1) !important;
-  --background-modifier-border-focus: #555555 !important;
-  --background-modifier-border-hover: hsla(210, 15%, 33%, 1) !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: hsla(365, 90%, 65%, 1) !important;
-  --background-modifier-error-hover: hsla(365, 90%, 65%, 1) !important;
-  --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #2a2a2a !important;
-  --background-modifier-form-field-hover: #2a2a2a !important;
+  --accent-h: 255;
+  --accent-l: 68%;
+  --accent-s: 73%;
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 300ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 560ms;
+  --anim-duration-superfast: 70ms;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-modifier-active-hover: hsla(255, 73%, 68%, 0.1);
+  --background-modifier-border: hsla(215, 22%, 13%, 1);
+  --background-modifier-border-focus: #555555;
+  --background-modifier-border-hover: hsla(210, 15%, 33%, 1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-error: hsla(365, 90%, 65%, 1);
+  --background-modifier-error-hover: hsla(365, 90%, 65%, 1);
+  --background-modifier-error-rgb: 251, 70, 76;
+  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field-hover: #2a2a2a;
   --background-modifier-hover: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #44cf6e !important;
-  --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
+  );
+  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-success: #44cf6e;
+  --background-modifier-success-rgb: 68, 207, 110;
+  --background-primary: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
   --background-primary-alt: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
+  );
   --background-secondary: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --background-secondary-alt: hsla(215, 22%, 13%, 1) !important;
+  );
+  --background-secondary-alt: hsla(215, 22%, 13%, 1);
   --bases-cards-background: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
-  --bases-cards-border-width: 1px !important;
-  --bases-cards-container-background: transparent !important;
+  );
+  --bases-cards-border-width: 1px;
+  --bases-cards-container-background: transparent;
   --bases-cards-cover-background: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --bases-cards-group-padding: 12px !important;
-  --bases-cards-line-height: 24px !important;
-  --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsla(210, 15%, 33%, 1) !important;
-  --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: hsla(215, 22%, 13%, 1) !important;
-  --bases-embed-border-radius: 4px !important;
-  --bases-embed-border-width: 0px !important;
-  --bases-filter-menu-width: 520px !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
-  --bases-header-height: 40px !important;
-  --bases-header-padding-end: 2px !important;
-  --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: hsla(215, 22%, 13%, 1) !important;
+  );
+  --bases-cards-group-padding: 12px;
+  --bases-cards-line-height: 24px;
+  --bases-cards-scale: 1;
+  --bases-cards-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1);
+  --bases-cards-shadow-hover: 0 0 0 1px hsla(210, 15%, 33%, 1);
+  --bases-cards-text-size: 0.875em;
+  --bases-embed-border-color: hsla(215, 22%, 13%, 1);
+  --bases-embed-border-radius: 4px;
+  --bases-embed-border-width: 0px;
+  --bases-filter-menu-width: 520px;
+  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-height: 40px;
+  --bases-header-padding-end: 2px;
+  --bases-header-padding-start: 2px;
+  --bases-table-border-color: hsla(215, 22%, 13%, 1);
   --bases-table-cell-background-active: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
+  );
   --bases-table-cell-background-disabled: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --bases-table-cell-radius-active: 2px !important;
+  );
+  --bases-table-cell-radius-active: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%)) !important;
-  --bases-table-column-border-width: 1px !important;
-  --bases-table-column-max-width: 300 !important;
-  --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
+    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --bases-table-column-border-width: 1px;
+  --bases-table-column-max-width: 300;
+  --bases-table-column-min-width: 40;
+  --bases-table-container-border-radius: 4px;
+  --bases-table-container-border-width: 1px;
   --bases-table-header-background: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
+  );
   --bases-table-header-background-hover: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --bases-table-header-color: hsl(218, 17%, 58%) !important;
-  --bases-table-header-icon-display: flex !important;
+  );
+  --bases-table-header-color: hsl(218, 17%, 58%);
+  --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
     black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
-  --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
-  --bases-table-row-height: 30px !important;
-  --bases-table-text-size: 0.875em !important;
-  --bases-toolbar-badge-display: none !important;
-  --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
+  );
+  --bases-table-header-weight: 400;
+  --bases-table-row-background-hover: transparent;
+  --bases-table-row-border-width: 1px;
+  --bases-table-row-height: 30px;
+  --bases-table-text-size: 0.875em;
+  --bases-toolbar-badge-display: none;
+  --bases-toolbar-label-display: block;
+  --blockquote-background-color: transparent;
   --blockquote-border-color: hsl(
     calc(255 - 0),
     calc(73% + 13%),
     calc(68% + 3%)
-  ) !important;
-  --blockquote-border-thickness: 2px !important;
-  --blockquote-font-style: normal !important;
-  --bold-modifier: 200 !important;
-  --bold-weight: 700 !important;
-  --border-width: 1px !important;
-  --button-radius: 4px !important;
-  --callout-blend-mode: lighten !important;
-  --callout-border-opacity: 0.25 !important;
-  --callout-border-width: 0px !important;
-  --callout-bug: 251, 70, 76 !important;
-  --callout-content-background: transparent !important;
-  --callout-content-padding: 0 11px 0 27px !important;
-  --callout-default: 2, 122, 255 !important;
-  --callout-error: 251, 70, 76 !important;
-  --callout-example: 168, 130, 255 !important;
-  --callout-fail: 251, 70, 76 !important;
-  --callout-important: 83, 223, 221 !important;
-  --callout-info: 2, 122, 255 !important;
-  --callout-padding: 0px !important;
-  --callout-question: 233, 151, 63 !important;
-  --callout-quote: 158, 158, 158 !important;
-  --callout-radius: 4px !important;
-  --callout-success: 68, 207, 110 !important;
-  --callout-summary: 83, 223, 221 !important;
-  --callout-tip: 83, 223, 221 !important;
-  --callout-title-padding: 11px !important;
-  --callout-title-weight: calc(400 + 200) !important;
-  --callout-todo: 2, 122, 255 !important;
-  --callout-warning: 233, 151, 63 !important;
-  --canvas-background: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
-  --canvas-card-label-color: hsla(217, 18%, 50%, 0.7) !important;
-  --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 251, 70, 76 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 68, 207, 110 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-dot-pattern: hsla(215, 22%, 13%, 1) !important;
-  --caret-color: hsla(0, 0%, 73%, 1) !important;
-  --checkbox-border-color: hsla(217, 18%, 50%, 0.7) !important;
-  --checkbox-border-color-hover: hsl(218, 17%, 58%) !important;
-  --checkbox-color: hsl(
-    calc(255 - 0),
-    calc(73% + 13%),
-    calc(68% + 3%)
-  ) !important;
-  --checkbox-color-hover: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --checkbox-margin-inline-start: 0.85em !important;
+  );
+  --blockquote-border-thickness: 2px;
+  --blockquote-font-style: normal;
+  --bold-modifier: 200;
+  --bold-weight: 700;
+  --border-width: 1px;
+  --button-radius: 4px;
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0 11px 0 27px;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 0px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 4px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 11px;
+  --callout-title-weight: calc(400 + 200);
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --canvas-background: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
+  --canvas-card-label-color: hsla(217, 18%, 50%, 0.7);
+  --canvas-color: 126, 126, 126;
+  --canvas-color-1: 251, 70, 76;
+  --canvas-color-2: 233, 151, 63;
+  --canvas-color-3: 224, 222, 113;
+  --canvas-color-4: 68, 207, 110;
+  --canvas-color-5: 83, 223, 221;
+  --canvas-color-6: 168, 130, 255;
+  --canvas-dot-pattern: hsla(215, 22%, 13%, 1);
+  --caret-color: hsla(0, 0%, 73%, 1);
+  --checkbox-border-color: hsla(217, 18%, 50%, 0.7);
+  --checkbox-border-color-hover: hsl(218, 17%, 58%);
+  --checkbox-color: hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --checkbox-color-hover: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: hsla(217, 18%, 50%, 0.7) !important;
-  --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
-  --code-border-color: hsla(215, 22%, 13%, 1) !important;
-  --code-border-width: 0px !important;
+  );
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: hsla(217, 18%, 50%, 0.7);
+  --checklist-done-decoration: line-through;
+  --clickable-icon-radius: 4px;
+  --code-background: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
+  --code-border-color: hsla(215, 22%, 13%, 1);
+  --code-border-width: 0px;
   --code-bracket-background: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --code-comment: hsla(217, 18%, 50%, 0.7) !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: hsl(218, 17%, 58%) !important;
-  --code-operator: hsla(365, 90%, 65%, 1) !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: hsl(218, 17%, 58%) !important;
-  --code-radius: 4px !important;
-  --code-size: 0.875em !important;
-  --code-string: #44cf6e !important;
-  --code-tag: hsla(365, 90%, 65%, 1) !important;
-  --code-value: #a882ff !important;
-  --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsla(217, 18%, 50%, 0.7) !important;
+  );
+  --code-comment: hsla(217, 18%, 50%, 0.7);
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: hsl(218, 17%, 58%);
+  --code-operator: hsla(365, 90%, 65%, 1);
+  --code-property: #53dfdd;
+  --code-punctuation: hsl(218, 17%, 58%);
+  --code-radius: 4px;
+  --code-size: 0.875em;
+  --code-string: #44cf6e;
+  --code-tag: hsla(365, 90%, 65%, 1);
+  --code-value: #a882ff;
+  --code-white-space: pre-wrap;
+  --collapse-icon-color: hsla(217, 18%, 50%, 0.7);
   --collapse-icon-color-collapsed: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --color-accent: hsl(
-    calc(255 - 0),
-    calc(73% + 13%),
-    calc(68% + 3%)
-  ) !important;
-  --color-accent-1: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --color-accent-2: hsl(
-    calc(255 - 0),
-    calc(73% + 7%),
-    calc(68% + 2%)
-  ) !important;
-  --color-accent-hsl: 255, 73%, 68% !important;
-  --color-base-00: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
-  --color-base-05: hsla(
-    calc(215 - 8),
-    calc(17% - 0%),
-    calc(19% - 9%),
-    0.5
-  ) !important;
-  --color-base-10: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
-  --color-base-100: hsla(0, 0%, 73%, 1) !important;
-  --color-base-20: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
-  --color-base-25: #2a2a2a !important;
-  --color-base-30: hsla(215, 22%, 13%, 1) !important;
-  --color-base-35: hsla(210, 15%, 33%, 1) !important;
-  --color-base-40: #555555 !important;
-  --color-base-50: hsla(217, 18%, 50%, 0.7) !important;
-  --color-base-60: #999999 !important;
-  --color-base-70: hsl(218, 17%, 58%) !important;
-  --color-blue: #027aff !important;
-  --color-blue-rgb: 2, 122, 255 !important;
-  --color-cyan: #53dfdd !important;
-  --color-cyan-rgb: 83, 223, 221 !important;
-  --color-green: #44cf6e !important;
-  --color-green-rgb: 68, 207, 110 !important;
-  --color-orange: #e9973f !important;
-  --color-orange-rgb: 233, 151, 63 !important;
-  --color-pink: #fa99cd !important;
-  --color-pink-rgb: 250, 153, 205 !important;
-  --color-purple: #a882ff !important;
-  --color-purple-rgb: 168, 130, 255 !important;
-  --color-red: hsla(365, 90%, 65%, 1) !important;
-  --color-red-rgb: 251, 70, 76 !important;
-  --color-yellow: #e0de71 !important;
-  --color-yellow-rgb: 224, 222, 113 !important;
-  --cursor: default !important;
-  --cursor-link: pointer !important;
-  --dialog-max-height: 85vh !important;
-  --dialog-max-width: 80vw !important;
-  --dialog-width: 560px !important;
-  --direction: 1 !important;
-  --divider-color: hsla(215, 22%, 13%, 1) !important;
-  --divider-color-hover: hsl(
-    calc(255 - 0),
-    calc(73% + 13%),
-    calc(68% + 3%)
-  ) !important;
-  --divider-vertical-height: 100% !important;
-  --divider-width: 4px !important;
-  --divider-width-hover: 3px !important;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
-  --drag-ghost-text-color: #fff !important;
-  --dropdown-background: hsla(215, 22%, 13%, 1) !important;
-  --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsla(210, 15%, 33%, 1) !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  );
+  --color-accent: hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --color-accent-1: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --color-accent-2: hsl(calc(255 - 0), calc(73% + 7%), calc(68% + 2%));
+  --color-accent-hsl: 255, 73%, 68%;
+  --color-base-00: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
+  --color-base-05: hsla(calc(215 - 8), calc(17% - 0%), calc(19% - 9%), 0.5);
+  --color-base-10: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
+  --color-base-100: hsla(0, 0%, 73%, 1);
+  --color-base-20: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
+  --color-base-25: #2a2a2a;
+  --color-base-30: hsla(215, 22%, 13%, 1);
+  --color-base-35: hsla(210, 15%, 33%, 1);
+  --color-base-40: #555555;
+  --color-base-50: hsla(217, 18%, 50%, 0.7);
+  --color-base-60: #999999;
+  --color-base-70: hsl(218, 17%, 58%);
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: hsla(365, 90%, 65%, 1);
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
+  --cursor: default;
+  --cursor-link: pointer;
+  --dialog-max-height: 85vh;
+  --dialog-max-width: 80vw;
+  --dialog-width: 560px;
+  --direction: 1;
+  --divider-color: hsla(215, 22%, 13%, 1);
+  --divider-color-hover: hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --divider-vertical-height: 100%;
+  --divider-width: 4px;
+  --divider-width-hover: 3px;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-text-color: #fff;
+  --dropdown-background: hsla(215, 22%, 13%, 1);
+  --dropdown-background-blend-mode: hard-light;
+  --dropdown-background-hover: hsla(210, 15%, 33%, 1);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-block-shadow-hover:
-    0 0 0 1px hsla(215, 22%, 13%, 1), inset 0 0 0 1px hsla(215, 22%, 13%, 1) !important;
-  --embed-border-bottom: none !important;
-  --embed-border-end: none !important;
+    0 0 0 1px hsla(215, 22%, 13%, 1), inset 0 0 0 1px hsla(215, 22%, 13%, 1);
+  --embed-border-bottom: none;
+  --embed-border-end: none;
   --embed-border-start: 2px solid
-    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%)) !important;
-  --embed-border-top: none !important;
-  --embed-canvas-max-height: 400px !important;
-  --embed-max-height: 4000px !important;
-  --embed-padding: 13px 23px !important;
-  --file-folding-offset: 24px !important;
-  --file-header-border: 1px solid transparent !important;
+    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --embed-border-top: none;
+  --embed-canvas-max-height: 400px;
+  --embed-max-height: 4000px;
+  --embed-padding: 13px 23px;
+  --file-folding-offset: 24px;
+  --file-header-border: 1px solid transparent;
   --file-header-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
-  --file-header-font-weight: 400 !important;
-  --file-header-justify: center !important;
-  --file-line-width: 700px !important;
-  --file-margins: 32px !important;
-  --flair-background: hsla(215, 22%, 13%, 1) !important;
-  --flair-color: hsla(0, 0%, 73%, 1) !important;
-  --focus-ring-color: #0df !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
-  --font-black: 900 !important;
-  --font-bold: 700 !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 13px;
+  --file-header-font-weight: 400;
+  --file-header-justify: center;
+  --file-line-width: 700px;
+  --file-margins: 32px;
+  --flair-background: hsla(215, 22%, 13%, 1);
+  --flair-color: hsla(0, 0%, 73%, 1);
+  --focus-ring-color: #0df;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
+  --font-black: 900;
+  --font-bold: 700;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --font-extrabold: 800 !important;
-  --font-extralight: 200 !important;
+    sans-serif;
+  --font-extrabold: 800;
+  --font-extralight: 200;
   --font-interface:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-override: "??" !important;
-  --font-interface-theme: "??" !important;
-  --font-light: 300 !important;
-  --font-medium: 500 !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
+  --font-light: 300;
+  --font-medium: 500;
   --font-mermaid:
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+    "Source Code Pro", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-override: "??" !important;
-  --font-monospace-theme: "??" !important;
-  --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
-  --font-print-override: "??" !important;
-  --font-semibold: 600 !important;
-  --font-small: 0.933em !important;
-  --font-smaller: 0.875em !important;
-  --font-smallest: 0.8em !important;
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
+  --font-normal: 400;
+  --font-print: "??", "??", "??", "Arial";
+  --font-print-override: "??";
+  --font-semibold: 600;
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --font-smallest: 0.8em;
   --font-text:
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-text-override: "??" !important;
-  --font-text-size: 16px !important;
-  --font-text-theme: "??" !important;
-  --font-thin: 100 !important;
-  --font-ui-large: 20px !important;
-  --font-ui-medium: 15px !important;
-  --font-ui-small: 13px !important;
-  --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: hsla(215, 22%, 13%, 1) !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: hsl(218, 17%, 58%) !important;
-  --footnote-id-color-no-occurrences: hsla(217, 18%, 50%, 0.7) !important;
-  --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
+    "Segoe UI Symbol", sans-serif;
+  --font-text-override: "??";
+  --font-text-size: 16px;
+  --font-text-theme: "??";
+  --font-thin: 100;
+  --font-ui-large: 20px;
+  --font-ui-medium: 15px;
+  --font-ui-small: 13px;
+  --font-ui-smaller: 12px;
+  --font-weight: 400;
+  --footnote-divider-color: hsla(215, 22%, 13%, 1);
+  --footnote-divider-color-active: transparent;
+  --footnote-divider-width: 1px;
+  --footnote-gap: 4px;
+  --footnote-id-color: hsl(218, 17%, 58%);
+  --footnote-id-color-no-occurrences: hsla(217, 18%, 50%, 0.7);
+  --footnote-id-delimiter: ".";
+  --footnote-input-background: transparent;
   --footnote-input-background-active: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 44px) !important;
-  --frame-right-space: 0px !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: hsla(210, 15%, 33%, 1) !important;
-  --graph-node: hsl(218, 17%, 58%) !important;
-  --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: hsla(217, 18%, 50%, 0.7) !important;
-  --graph-text: hsla(0, 0%, 73%, 1) !important;
-  --h1-line-height: 1.2 !important;
-  --h1-size: 1.802em !important;
-  --h1-style: normal !important;
-  --h1-variant: normal !important;
-  --h1-weight: 700 !important;
-  --h2-line-height: 1.2 !important;
-  --h2-size: 1.602em !important;
-  --h2-style: normal !important;
-  --h2-variant: normal !important;
-  --h2-weight: 600 !important;
-  --h3-line-height: 1.3 !important;
-  --h3-size: 1.424em !important;
-  --h3-style: normal !important;
-  --h3-variant: normal !important;
-  --h3-weight: 600 !important;
-  --h4-line-height: 1.4 !important;
-  --h4-size: 1.266em !important;
-  --h4-style: normal !important;
-  --h4-variant: normal !important;
-  --h4-weight: 600 !important;
-  --h5-line-height: 1.5 !important;
-  --h5-size: 1.125em !important;
-  --h5-style: normal !important;
-  --h5-variant: normal !important;
-  --h5-weight: 600 !important;
-  --h6-line-height: 1.5 !important;
-  --h6-size: 1em !important;
-  --h6-style: normal !important;
-  --h6-variant: normal !important;
-  --h6-weight: 600 !important;
-  --header-height: 43px !important;
-  --heading-formatting: hsla(217, 18%, 50%, 0.7) !important;
-  --heading-spacing: calc(1rem * 2.5) !important;
-  --highlight-mix-blend-mode: lighten !important;
-  --hr-color: hsla(215, 22%, 13%, 1) !important;
-  --hr-thickness: 2px !important;
-  --icon-color: hsl(218, 17%, 58%) !important;
-  --icon-color-active: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --icon-color-focused: hsla(0, 0%, 73%, 1) !important;
-  --icon-color-hover: hsl(218, 17%, 58%) !important;
-  --icon-l: 20px !important;
-  --icon-l-stroke-width: 1.75px !important;
-  --icon-m: 20px !important;
-  --icon-m-stroke-width: 1.75px !important;
-  --icon-opacity: 0.85 !important;
-  --icon-opacity-active: 1 !important;
-  --icon-opacity-hover: 1 !important;
-  --icon-s: 16px !important;
-  --icon-s-stroke-width: 2px !important;
-  --icon-size: 20px !important;
-  --icon-stroke: 1.75px !important;
-  --icon-xl: 32px !important;
-  --icon-xl-stroke-width: 1.25px !important;
-  --icon-xs: 14px !important;
-  --icon-xs-stroke-width: 2px !important;
-  --indent-size: 4 !important;
-  --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
-  --indentation-guide-editing-indent: 0.85em !important;
-  --indentation-guide-reading-indent: -0.85em !important;
-  --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
-  --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 1.802em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-date-separator: hsla(217, 18%, 50%, 0.7) !important;
-  --input-font-weight: 400 !important;
-  --input-height: 30px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsla(217, 18%, 50%, 0.7) !important;
-  --input-radius: 5px !important;
+  );
+  --footnote-line-height: 1.5;
+  --footnote-padding-block: 6px;
+  --footnote-padding-inline: 6px;
+  --footnote-radius: 4px;
+  --footnote-size: 0.875em;
+  --frame-left-space: calc(80px - 44px);
+  --frame-right-space: 0px;
+  --graph-controls-width: 240px;
+  --graph-line: hsla(210, 15%, 33%, 1);
+  --graph-node: hsl(218, 17%, 58%);
+  --graph-node-attachment: #e0de71;
+  --graph-node-focused: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: hsla(217, 18%, 50%, 0.7);
+  --graph-text: hsla(0, 0%, 73%, 1);
+  --h1-line-height: 1.2;
+  --h1-size: 1.802em;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h1-weight: 700;
+  --h2-line-height: 1.2;
+  --h2-size: 1.602em;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 600;
+  --h3-line-height: 1.3;
+  --h3-size: 1.424em;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 600;
+  --h4-line-height: 1.4;
+  --h4-size: 1.266em;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 600;
+  --h5-line-height: 1.5;
+  --h5-size: 1.125em;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 600;
+  --h6-line-height: 1.5;
+  --h6-size: 1em;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 600;
+  --header-height: 43px;
+  --heading-formatting: hsla(217, 18%, 50%, 0.7);
+  --heading-spacing: calc(1rem * 2.5);
+  --highlight-mix-blend-mode: lighten;
+  --hr-color: hsla(215, 22%, 13%, 1);
+  --hr-thickness: 2px;
+  --icon-color: hsl(218, 17%, 58%);
+  --icon-color-active: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --icon-color-focused: hsla(0, 0%, 73%, 1);
+  --icon-color-hover: hsl(218, 17%, 58%);
+  --icon-l: 20px;
+  --icon-l-stroke-width: 1.75px;
+  --icon-m: 20px;
+  --icon-m-stroke-width: 1.75px;
+  --icon-opacity: 0.85;
+  --icon-opacity-active: 1;
+  --icon-opacity-hover: 1;
+  --icon-s: 16px;
+  --icon-s-stroke-width: 2px;
+  --icon-size: 20px;
+  --icon-stroke: 1.75px;
+  --icon-xl: 32px;
+  --icon-xl-stroke-width: 1.25px;
+  --icon-xs: 14px;
+  --icon-xs-stroke-width: 2px;
+  --indent-size: 4;
+  --indent-unit: 0.5625em;
+  --indentation-guide-color: rgba(255, 255, 255, 0.12);
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
+  --indentation-guide-editing-indent: 0.85em;
+  --indentation-guide-reading-indent: -0.85em;
+  --indentation-guide-source-indent: 0.25em;
+  --indentation-guide-width: 1px;
+  --indentation-guide-width-active: 1px;
+  --inline-title-line-height: 1.2;
+  --inline-title-margin-bottom: 0.5em;
+  --inline-title-size: 1.802em;
+  --inline-title-style: normal;
+  --inline-title-variant: normal;
+  --inline-title-weight: 700;
+  --input-border-width: 1px;
+  --input-border-width-focus: 2px;
+  --input-date-separator: hsla(217, 18%, 50%, 0.7);
+  --input-font-weight: 400;
+  --input-height: 30px;
+  --input-padding: 4px 8px;
+  --input-placeholder-color: hsla(217, 18%, 50%, 0.7);
+  --input-radius: 5px;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
   --input-shadow-hover:
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(
-    calc(255 - 0),
-    calc(73% + 13%),
-    calc(68% + 3%)
-  ) !important;
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
   --interactive-accent-hover: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --interactive-accent-hsl: 255, 73%, 68% !important;
-  --interactive-hover: hsla(210, 15%, 33%, 1) !important;
-  --interactive-normal: hsla(215, 22%, 13%, 1) !important;
-  --keyboard-height: 0px !important;
-  --layer-cover: 5 !important;
-  --layer-dragged-item: 80 !important;
-  --layer-menu: 65 !important;
-  --layer-modal: 50 !important;
-  --layer-notice: 60 !important;
-  --layer-popover: 30 !important;
-  --layer-sidedock: 10 !important;
-  --layer-slides: 45 !important;
-  --layer-status-bar: 15 !important;
-  --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
-  --line-height-tight: 1.3 !important;
-  --link-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%)) !important;
-  --link-color-hover: hsl(
-    calc(255 - 0),
-    calc(73% + 7%),
-    calc(68% + 2%)
-  ) !important;
-  --link-decoration: underline !important;
-  --link-decoration-hover: underline !important;
-  --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
+  );
+  --interactive-accent-hsl: 255, 73%, 68%;
+  --interactive-hover: hsla(210, 15%, 33%, 1);
+  --interactive-normal: hsla(215, 22%, 13%, 1);
+  --keyboard-height: 0px;
+  --layer-cover: 5;
+  --layer-dragged-item: 80;
+  --layer-menu: 65;
+  --layer-modal: 50;
+  --layer-notice: 60;
+  --layer-popover: 30;
+  --layer-sidedock: 10;
+  --layer-slides: 45;
+  --layer-status-bar: 15;
+  --layer-tooltip: 70;
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.3;
+  --link-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --link-color-hover: hsl(calc(255 - 0), calc(73% + 7%), calc(68% + 2%));
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-external-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
   --link-external-color-hover: hsl(
     calc(255 - 0),
     calc(73% + 7%),
     calc(68% + 2%)
-  ) !important;
-  --link-external-decoration: underline !important;
-  --link-external-decoration-hover: underline !important;
-  --link-external-filter: none !important;
-  --link-unresolved-color: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --link-unresolved-decoration-color: hsla(255, 73%, 68%, 0.3) !important;
-  --link-unresolved-decoration-style: solid !important;
-  --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
-  --list-bullet-border: none !important;
-  --list-bullet-end-padding: 1.3rem !important;
-  --list-bullet-radius: 50% !important;
-  --list-bullet-size: 0.3em !important;
-  --list-bullet-transform: none !important;
-  --list-indent: 37px !important;
-  --list-indent-editing: 0.75em !important;
-  --list-indent-source: 0 !important;
-  --list-marker-color: hsla(217, 18%, 50%, 0.7) !important;
+  );
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --link-unresolved-decoration-color: hsla(255, 73%, 68%, 0.3);
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 0.7;
+  --link-weight: 400;
+  --list-bullet-border: none;
+  --list-bullet-end-padding: 1.3rem;
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.3em;
+  --list-bullet-transform: none;
+  --list-indent: 37px;
+  --list-indent-editing: 0.75em;
+  --list-indent-source: 0;
+  --list-marker-color: hsla(217, 18%, 50%, 0.7);
   --list-marker-color-collapsed: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --list-marker-color-hover: hsl(218, 17%, 58%) !important;
-  --list-numbered-style: decimal !important;
-  --list-spacing: 0.075em !important;
-  --loading-icon-delay: 400ms !important;
-  --menu-backdrop-filter: none !important;
-  --menu-background: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
-  --menu-border-color: hsla(210, 15%, 33%, 1) !important;
-  --menu-border-width: 1px !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
+  );
+  --list-marker-color-hover: hsl(218, 17%, 58%);
+  --list-numbered-style: decimal;
+  --list-spacing: 0.075em;
+  --loading-icon-delay: 400ms;
+  --menu-backdrop-filter: none;
+  --menu-background: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
+  --menu-border-color: hsla(210, 15%, 33%, 1);
+  --menu-border-width: 1px;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --metadata-background: transparent !important;
-  --metadata-border-color: hsla(215, 22%, 13%, 1) !important;
-  --metadata-border-radius: 0 !important;
-  --metadata-border-width: 0 !important;
-  --metadata-display-editing: block !important;
-  --metadata-display-reading: block !important;
-  --metadata-divider-color: hsla(215, 22%, 13%, 1) !important;
-  --metadata-divider-color-focus: transparent !important;
-  --metadata-divider-color-hover: transparent !important;
-  --metadata-divider-width: 0 !important;
-  --metadata-gap: 3px !important;
-  --metadata-input-background: transparent !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --metadata-background: transparent;
+  --metadata-border-color: hsla(215, 22%, 13%, 1);
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-display-editing: block;
+  --metadata-display-reading: block;
+  --metadata-divider-color: hsla(215, 22%, 13%, 1);
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-input-background: transparent;
   --metadata-input-background-active: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --metadata-input-background-hover: transparent !important;
+  );
+  --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
-  --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: hsla(0, 0%, 73%, 1) !important;
-  --metadata-label-background: transparent !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-font-size: 0.875em;
+  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-longtext-lines: 3;
+  --metadata-input-text-color: hsla(0, 0%, 73%, 1);
+  --metadata-label-background: transparent;
   --metadata-label-background-active: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --metadata-label-background-hover: transparent !important;
+  );
+  --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: hsl(218, 17%, 58%) !important;
-  --metadata-label-text-color-hover: hsl(218, 17%, 58%) !important;
-  --metadata-label-width: 9em !important;
-  --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
-  --metadata-property-background: transparent !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font-size: 0.875em;
+  --metadata-label-text-color: hsl(218, 17%, 58%);
+  --metadata-label-text-color-hover: hsl(218, 17%, 58%);
+  --metadata-label-width: 9em;
+  --metadata-max-width: none;
+  --metadata-padding: 8px 0;
+  --metadata-property-background: transparent;
   --metadata-property-background-active: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(210, 15%, 33%, 1) !important;
-  --metadata-property-padding: 0 !important;
-  --metadata-property-radius: 6px !important;
-  --metadata-property-radius-focus: 6px !important;
-  --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
-  --modal-border-color: #555555 !important;
-  --modal-border-width: 1px !important;
-  --modal-community-sidebar-width: 280px !important;
-  --modal-height: 85vh !important;
-  --modal-max-height: 1000px !important;
-  --modal-max-width: 1100px !important;
-  --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
-  --modal-width: 90vw !important;
-  --mono-rgb-0: 0, 0, 0 !important;
-  --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: hsla(217, 18%, 50%, 0.7) !important;
-  --nav-collapse-icon-color-collapsed: hsla(217, 18%, 50%, 0.7) !important;
-  --nav-heading-color: hsla(0, 0%, 73%, 1) !important;
-  --nav-heading-color-collapsed: hsla(217, 18%, 50%, 0.7) !important;
-  --nav-heading-color-collapsed-hover: hsl(218, 17%, 58%) !important;
-  --nav-heading-color-hover: hsla(0, 0%, 73%, 1) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
+  );
+  --metadata-property-background-hover: transparent;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #555555;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(210, 15%, 33%, 1);
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-sidebar-input-font-size: 13px;
+  --metadata-sidebar-label-font-size: 13px;
+  --modal-background: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
+  --modal-border-color: #555555;
+  --modal-border-width: 1px;
+  --modal-community-sidebar-width: 280px;
+  --modal-height: 85vh;
+  --modal-max-height: 1000px;
+  --modal-max-width: 1100px;
+  --modal-max-width-narrow: 800px;
+  --modal-radius: 12px;
+  --modal-width: 90vw;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-collapse-icon-color: hsla(217, 18%, 50%, 0.7);
+  --nav-collapse-icon-color-collapsed: hsla(217, 18%, 50%, 0.7);
+  --nav-heading-color: hsla(0, 0%, 73%, 1);
+  --nav-heading-color-collapsed: hsla(217, 18%, 50%, 0.7);
+  --nav-heading-color-collapsed-hover: hsl(218, 17%, 58%);
+  --nav-heading-color-hover: hsla(0, 0%, 73%, 1);
+  --nav-heading-weight: 500;
+  --nav-heading-weight-hover: 500;
+  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
+  --nav-indentation-guide-width: 1px;
   --nav-item-background-active: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
+  );
   --nav-item-background-hover: hsla(
     calc(215 - 8),
     calc(17% - 0%),
     calc(19% - 9%),
     0.5
-  ) !important;
-  --nav-item-background-selected: hsla(255, 73%, 68%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: hsl(218, 17%, 58%) !important;
-  --nav-item-color-active: hsla(0, 0%, 73%, 1) !important;
+  );
+  --nav-item-background-selected: hsla(255, 73%, 68%, 0.15);
+  --nav-item-children-margin-start: 12px;
+  --nav-item-children-padding-start: 4px;
+  --nav-item-color: hsl(218, 17%, 58%);
+  --nav-item-color-active: hsla(0, 0%, 73%, 1);
   --nav-item-color-highlighted: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --nav-item-color-hover: hsla(0, 0%, 73%, 1) !important;
-  --nav-item-color-selected: hsla(0, 0%, 73%, 1) !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-size: 13px !important;
-  --nav-item-white-space: pre !important;
-  --p-spacing: 1rem !important;
-  --p-spacing-empty: 0rem !important;
-  --page-border: 9px solid transparent !important;
-  --page-margin: 1px auto -8px !important;
-  --pdf-background: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
-  --pdf-page-background: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% - 0%),
-    1
-  ) !important;
-  --pdf-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1) !important;
+  );
+  --nav-item-color-hover: hsla(0, 0%, 73%, 1);
+  --nav-item-color-selected: hsla(0, 0%, 73%, 1);
+  --nav-item-padding: 4px 8px 4px 24px;
+  --nav-item-parent-padding: 4px 8px 4px 24px;
+  --nav-item-size: 13px;
+  --nav-item-white-space: pre;
+  --p-spacing: 1rem;
+  --p-spacing-empty: 0rem;
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdf-background: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
+  --pdf-page-background: hsla(calc(215 - 0), calc(17% - 0%), calc(19% - 0%), 1);
+  --pdf-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1);
   --pdf-sidebar-background: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1) !important;
-  --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsla(215, 22%, 13%, 1) !important;
-  --pill-border-color-hover: hsla(210, 15%, 33%, 1) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(218, 17%, 58%) !important;
-  --pill-color-hover: hsla(0, 0%, 73%, 1) !important;
-  --pill-color-remove: hsla(217, 18%, 50%, 0.7) !important;
+  );
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsla(215, 22%, 13%, 1);
+  --pdfViewer-padding-bottom: 0;
+  --pill-background: transparent;
+  --pill-background-hover: transparent;
+  --pill-border-color: hsla(215, 22%, 13%, 1);
+  --pill-border-color-hover: hsla(210, 15%, 33%, 1);
+  --pill-border-width: 1px;
+  --pill-color: hsl(218, 17%, 58%);
+  --pill-color-hover: hsla(0, 0%, 73%, 1);
+  --pill-color-remove: hsla(217, 18%, 50%, 0.7);
   --pill-color-remove-hover: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --pill-decoration: none !important;
-  --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
-  --pill-padding-x: 0.65em !important;
-  --pill-padding-y: 0.25em !important;
-  --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
-  --popover-height: 400px !important;
-  --popover-max-height: 95vh !important;
-  --popover-pdf-height: 400px !important;
-  --popover-pdf-width: 450px !important;
-  --popover-width: 450px !important;
-  --prompt-border-color: #555555 !important;
-  --prompt-border-width: 1px !important;
-  --prompt-input-height: 40px !important;
-  --prompt-max-height: 70vh !important;
-  --prompt-max-width: 80vw !important;
-  --prompt-width: 700px !important;
-  --radius-l: 12px !important;
-  --radius-m: 8px !important;
-  --radius-s: 4px !important;
-  --radius-xl: 16px !important;
-  --ribbon-background: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
+  );
+  --pill-decoration: none;
+  --pill-decoration-hover: none;
+  --pill-focus-left-adjust: -4px;
+  --pill-focus-width: calc(100% + 6px);
+  --pill-padding-x: 0.65em;
+  --pill-padding-y: 0.25em;
+  --pill-radius: 2em;
+  --popover-font-size: 16px;
+  --popover-height: 400px;
+  --popover-max-height: 95vh;
+  --popover-pdf-height: 400px;
+  --popover-pdf-width: 450px;
+  --popover-width: 450px;
+  --prompt-border-color: #555555;
+  --prompt-border-width: 1px;
+  --prompt-input-height: 40px;
+  --prompt-max-height: 70vh;
+  --prompt-max-width: 80vw;
+  --prompt-width: 700px;
+  --radius-l: 12px;
+  --radius-m: 8px;
+  --radius-s: 4px;
+  --radius-xl: 16px;
+  --ribbon-background: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
   --ribbon-background-collapsed: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
-  --ribbon-padding: 8px 4px 12px !important;
-  --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2) !important;
-  --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
-  --scrollbar-border-width: 3px 3px 3px 2px !important;
-  --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
-  --scrollbar-width: 12px !important;
-  --search-clear-button-color: hsl(218, 17%, 58%) !important;
-  --search-clear-button-size: 13px !important;
-  --search-icon-color: hsl(218, 17%, 58%) !important;
-  --search-icon-size: 18px !important;
+  );
+  --ribbon-padding: 8px 4px 12px;
+  --ribbon-width: 44px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
+  --safe-area-inset-right: 0px;
+  --safe-area-inset-top: 0px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-border-width: 3px 3px 3px 2px;
+  --scrollbar-height: 12px;
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-width: 12px;
+  --search-clear-button-color: hsl(218, 17%, 58%);
+  --search-clear-button-size: 13px;
+  --search-icon-color: hsl(218, 17%, 58%);
+  --search-icon-size: 18px;
   --search-result-background: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
+  );
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
-  --sidebar-tab-text-display: none !important;
-  --size-2-1: 2px !important;
-  --size-2-2: 4px !important;
-  --size-2-3: 6px !important;
-  --size-4-1: 4px !important;
-  --size-4-10: 40px !important;
-  --size-4-12: 48px !important;
-  --size-4-16: 64px !important;
-  --size-4-18: 72px !important;
-  --size-4-2: 8px !important;
-  --size-4-3: 12px !important;
-  --size-4-4: 16px !important;
-  --size-4-5: 20px !important;
-  --size-4-6: 24px !important;
-  --size-4-8: 32px !important;
-  --size-4-9: 36px !important;
-  --slider-s-thumb-position: -5px !important;
-  --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsla(210, 15%, 33%, 1) !important;
-  --slider-thumb-border-width: 1px !important;
-  --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
-  --slider-thumb-width: 18px !important;
-  --slider-thumb-y: -6px !important;
-  --slider-track-background: hsla(215, 22%, 13%, 1) !important;
-  --slider-track-height: 3px !important;
-  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-tab-text-display: none;
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-10: 40px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+  --size-4-18: 72px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --slider-s-thumb-position: -5px;
+  --slider-s-thumb-size: 15px;
+  --slider-thumb-border-color: hsla(210, 15%, 33%, 1);
+  --slider-thumb-border-width: 1px;
+  --slider-thumb-height: 18px;
+  --slider-thumb-radius: 50%;
+  --slider-thumb-width: 18px;
+  --slider-thumb-y: -6px;
+  --slider-track-background: hsla(215, 22%, 13%, 1);
+  --slider-track-height: 3px;
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-background: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --status-bar-border-color: hsla(215, 22%, 13%, 1) !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
-  --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: hsl(218, 17%, 58%) !important;
-  --swatch-height: 22px !important;
-  --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
-  --swatch-width: 22px !important;
-  --sync-avatar-color-1: hsla(365, 90%, 65%, 1) !important;
-  --sync-avatar-color-2: #e9973f !important;
-  --sync-avatar-color-3: #e0de71 !important;
-  --sync-avatar-color-4: #44cf6e !important;
-  --sync-avatar-color-5: #53dfdd !important;
-  --sync-avatar-color-6: #027aff !important;
-  --sync-avatar-color-7: #a882ff !important;
-  --sync-avatar-color-8: #fa99cd !important;
-  --sync-avatar-color-current-user: transparent !important;
+  );
+  --status-bar-border-color: hsla(215, 22%, 13%, 1);
+  --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-font-size: 12px;
+  --status-bar-position: fixed;
+  --status-bar-radius: 8px 0 0 0;
+  --status-bar-text-color: hsl(218, 17%, 58%);
+  --swatch-height: 22px;
+  --swatch-radius: 14px;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --swatch-width: 22px;
+  --sync-avatar-color-1: hsla(365, 90%, 65%, 1);
+  --sync-avatar-color-2: #e9973f;
+  --sync-avatar-color-3: #e0de71;
+  --sync-avatar-color-4: #44cf6e;
+  --sync-avatar-color-5: #53dfdd;
+  --sync-avatar-color-6: #027aff;
+  --sync-avatar-color-7: #a882ff;
+  --sync-avatar-color-8: #fa99cd;
+  --sync-avatar-color-current-user: transparent;
   --tab-background-active: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     1
-  ) !important;
+  );
   --tab-container-background: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --tab-curve: 6px !important;
-  --tab-divider-color: hsla(210, 15%, 33%, 1) !important;
-  --tab-font-size: 13px !important;
-  --tab-max-width: 320px !important;
-  --tab-outline-color: hsla(215, 22%, 13%, 1) !important;
-  --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
-  --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
-  --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 53px !important;
-  --tab-stacked-pane-width: 700px !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
-  --tab-stacked-text-align: start !important;
-  --tab-stacked-text-transform: rotate(0deg) !important;
-  --tab-stacked-text-writing-mode: vertical-lr !important;
+  );
+  --tab-curve: 6px;
+  --tab-divider-color: hsla(210, 15%, 33%, 1);
+  --tab-font-size: 13px;
+  --tab-max-width: 320px;
+  --tab-outline-color: hsla(215, 22%, 13%, 1);
+  --tab-outline-width: 1px;
+  --tab-radius: 4px;
+  --tab-radius-active: 6px 6px 0 0;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-font-weight: 400;
+  --tab-stacked-header-width: 53px;
+  --tab-stacked-pane-width: 700px;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-text-align: start;
+  --tab-stacked-text-transform: rotate(0deg);
+  --tab-stacked-text-writing-mode: vertical-lr;
   --tab-switcher-background: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+  );
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px
-    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%)) !important;
-  --tab-text-color: hsla(217, 18%, 50%, 0.7) !important;
-  --tab-text-color-active: hsl(218, 17%, 58%) !important;
-  --tab-text-color-focused: hsl(218, 17%, 58%) !important;
-  --tab-text-color-focused-active: hsl(218, 17%, 58%) !important;
-  --tab-text-color-focused-active-current: hsla(0, 0%, 73%, 1) !important;
+    hsl(calc(255 - 0), calc(73% + 13%), calc(68% + 3%));
+  --tab-text-color: hsla(217, 18%, 50%, 0.7);
+  --tab-text-color-active: hsl(218, 17%, 58%);
+  --tab-text-color-focused: hsl(218, 17%, 58%);
+  --tab-text-color-focused-active: hsl(218, 17%, 58%);
+  --tab-text-color-focused-active-current: hsla(0, 0%, 73%, 1);
   --tab-text-color-focused-highlighted: hsl(
     calc(255 - 3),
     calc(73% - 13%),
     calc(68% - 3%)
-  ) !important;
-  --tab-width: 200px !important;
-  --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsla(215, 22%, 13%, 1) !important;
-  --table-add-button-border-width: 1px !important;
-  --table-background: transparent !important;
-  --table-border-color: hsla(215, 22%, 13%, 1) !important;
-  --table-border-width: 1px !important;
-  --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
-  --table-column-max-width: none !important;
-  --table-column-min-width: 6ch !important;
-  --table-drag-handle-background: transparent !important;
+  );
+  --tab-width: 200px;
+  --table-add-button-background: transparent;
+  --table-add-button-border-color: hsla(215, 22%, 13%, 1);
+  --table-add-button-border-width: 1px;
+  --table-background: transparent;
+  --table-border-color: hsla(215, 22%, 13%, 1);
+  --table-border-width: 1px;
+  --table-cell-vertical-alignment: top;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-column-max-width: none;
+  --table-column-min-width: 6ch;
+  --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: hsl(
     calc(255 - 0),
     calc(73% + 13%),
     calc(68% + 3%)
-  ) !important;
-  --table-drag-handle-color: hsla(217, 18%, 50%, 0.7) !important;
-  --table-drag-handle-color-active: white !important;
-  --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
-  --table-header-border-color: hsla(215, 22%, 13%, 1) !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: hsla(0, 0%, 73%, 1) !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: calc(400 + 200) !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
-  --table-row-alt-background-hover: transparent !important;
-  --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(255, 73%, 68%, 0.1) !important;
-  --table-selection-blend-mode: lighten !important;
+  );
+  --table-drag-handle-color: hsla(217, 18%, 50%, 0.7);
+  --table-drag-handle-color-active: white;
+  --table-drop-indicator-half-width: 2px;
+  --table-header-background: transparent;
+  --table-header-border-color: hsla(215, 22%, 13%, 1);
+  --table-header-border-width: 1px;
+  --table-header-color: hsla(0, 0%, 73%, 1);
+  --table-header-size: 16px;
+  --table-header-weight: calc(400 + 200);
+  --table-line-height: 1.3;
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: transparent;
+  --table-row-background-hover: transparent;
+  --table-row-last-border-width: 1px;
+  --table-selection: hsla(255, 73%, 68%, 0.1);
+  --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(
     calc(255 - 0),
     calc(73% + 13%),
     calc(68% + 3%)
-  ) !important;
-  --table-selection-border-radius: 4px !important;
-  --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
-  --table-white-space: break-spaces !important;
-  --tag-background: hsla(255, 73%, 68%, 0.1) !important;
-  --tag-background-hover: hsla(255, 73%, 68%, 0.2) !important;
-  --tag-border-color: hsla(255, 73%, 68%, 0.15) !important;
-  --tag-border-color-hover: hsla(255, 73%, 68%, 0.15) !important;
-  --tag-border-width: 0px !important;
-  --tag-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%)) !important;
-  --tag-color-hover: hsl(
-    calc(255 - 3),
-    calc(73% - 13%),
-    calc(68% - 3%)
-  ) !important;
-  --tag-decoration: none !important;
-  --tag-decoration-hover: none !important;
-  --tag-padding-x: 0.65em !important;
-  --tag-padding-y: 0.25em !important;
-  --tag-radius: 2em !important;
-  --tag-size: 0.875em !important;
-  --text-accent: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%)) !important;
-  --text-accent-hover: hsl(
-    calc(255 - 0),
-    calc(73% + 7%),
-    calc(68% + 2%)
-  ) !important;
-  --text-error: hsla(365, 90%, 65%, 1) !important;
-  --text-faint: hsla(217, 18%, 50%, 0.7) !important;
-  --text-highlight-bg: hsla(45, 53%, 53%, 1) !important;
-  --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: hsl(218, 17%, 58%) !important;
-  --text-normal: hsla(0, 0%, 73%, 1) !important;
-  --text-on-accent: white !important;
-  --text-on-accent-inverted: black !important;
-  --text-selection: hsla(255, 73%, 68%, 0.33) !important;
-  --text-success: #44cf6e !important;
-  --text-warning: #e9973f !important;
-  --titlebar-background: hsla(
-    calc(215 - 1),
-    calc(17% + 7%),
-    calc(19% - 4%),
-    1
-  ) !important;
+  );
+  --table-selection-border-radius: 4px;
+  --table-selection-border-width: 2px;
+  --table-text-size: 16px;
+  --table-white-space: break-spaces;
+  --tag-background: hsla(255, 73%, 68%, 0.1);
+  --tag-background-hover: hsla(255, 73%, 68%, 0.2);
+  --tag-border-color: hsla(255, 73%, 68%, 0.15);
+  --tag-border-color-hover: hsla(255, 73%, 68%, 0.15);
+  --tag-border-width: 0px;
+  --tag-color: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --tag-color-hover: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --tag-size: 0.875em;
+  --text-accent: hsl(calc(255 - 3), calc(73% - 13%), calc(68% - 3%));
+  --text-accent-hover: hsl(calc(255 - 0), calc(73% + 7%), calc(68% + 2%));
+  --text-error: hsla(365, 90%, 65%, 1);
+  --text-faint: hsla(217, 18%, 50%, 0.7);
+  --text-highlight-bg: hsla(45, 53%, 53%, 1);
+  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-muted: hsl(218, 17%, 58%);
+  --text-normal: hsla(0, 0%, 73%, 1);
+  --text-on-accent: white;
+  --text-on-accent-inverted: black;
+  --text-selection: hsla(255, 73%, 68%, 0.33);
+  --text-success: #44cf6e;
+  --text-warning: #e9973f;
+  --titlebar-background: hsla(calc(215 - 1), calc(17% + 7%), calc(19% - 4%), 1);
   --titlebar-background-focused: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     1
-  ) !important;
-  --titlebar-border-color: hsla(215, 22%, 13%, 1) !important;
-  --titlebar-border-width: 0px !important;
-  --titlebar-height: 30px !important;
-  --titlebar-text-color: hsl(218, 17%, 58%) !important;
-  --titlebar-text-color-focused: hsla(0, 0%, 73%, 1) !important;
-  --titlebar-text-weight: 700 !important;
-  --toggle-border-width: 2px !important;
-  --toggle-radius: 18px !important;
-  --toggle-s-border-width: 2px !important;
-  --toggle-s-thumb-height: 15px !important;
-  --toggle-s-thumb-width: 15px !important;
-  --toggle-s-width: 34px !important;
-  --toggle-thumb-color: white !important;
-  --toggle-thumb-height: 18px !important;
-  --toggle-thumb-radius: 18px !important;
-  --toggle-thumb-width: 18px !important;
-  --toggle-width: 40px !important;
-  --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsla(0, 0%, 73%, 1) !important;
-  --vault-profile-color-hover: hsla(0, 0%, 73%, 1) !important;
-  --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
-  --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
-  --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
-  --zoom-factor: 1 !important;
-  --blockquote-color: hsl(218, 17%, 62%) !important;
-  --italic-color: hsla(215, 33%, 60%, 1) !important;
-  --window-radius: 23px !important;
-  --window-shadow: 0 0 9px hsla(212, 17%, 0%, 0.3) !important;
-  --border: 1px solid hsla(215, 22%, 13%, 1) !important;
-  --background-fifth: hsla(
-    calc(215 - 0),
-    calc(17% - 7%),
-    calc(19% - 9%),
-    0.1
-  ) !important;
-  --background-fourth: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% + 3%),
-    0.9
-  ) !important;
-  --bgcolor-h: 215 !important;
-  --bgcolor-l: 19% !important;
-  --bgcolor-s: 17% !important;
-  --button-padding-icon: 7px !important;
-  --button-padding-long: 7px 15px !important;
-  --color-base-00-0: hsla(
-    calc(215 - 0),
-    calc(17% - 0%),
-    calc(19% + 3%),
-    0.9
-  ) !important;
+  );
+  --titlebar-border-color: hsla(215, 22%, 13%, 1);
+  --titlebar-border-width: 0px;
+  --titlebar-height: 30px;
+  --titlebar-text-color: hsl(218, 17%, 58%);
+  --titlebar-text-color-focused: hsla(0, 0%, 73%, 1);
+  --titlebar-text-weight: 700;
+  --toggle-border-width: 2px;
+  --toggle-radius: 18px;
+  --toggle-s-border-width: 2px;
+  --toggle-s-thumb-height: 15px;
+  --toggle-s-thumb-width: 15px;
+  --toggle-s-width: 34px;
+  --toggle-thumb-color: white;
+  --toggle-thumb-height: 18px;
+  --toggle-thumb-radius: 18px;
+  --toggle-thumb-width: 18px;
+  --toggle-width: 40px;
+  --vault-profile-actions-display: flex;
+  --vault-profile-color: hsla(0, 0%, 73%, 1);
+  --vault-profile-color-hover: hsla(0, 0%, 73%, 1);
+  --vault-profile-display: flex;
+  --vault-profile-font-size: 13px;
+  --vault-profile-font-weight: 500;
+  --viewer-container-height: 0;
+  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --zoom-factor: 1;
+  --blockquote-color: hsl(218, 17%, 62%);
+  --italic-color: hsla(215, 33%, 60%, 1);
+  --window-radius: 23px;
+  --window-shadow: 0 0 9px hsla(212, 17%, 0%, 0.3);
+  --border: 1px solid hsla(215, 22%, 13%, 1);
+  --background-fifth: hsla(calc(215 - 0), calc(17% - 7%), calc(19% - 9%), 0.1);
+  --background-fourth: hsla(calc(215 - 0), calc(17% - 0%), calc(19% + 3%), 0.9);
+  --bgcolor-h: 215;
+  --bgcolor-l: 19%;
+  --bgcolor-s: 17%;
+  --button-padding-icon: 7px;
+  --button-padding-long: 7px 15px;
+  --color-base-00-0: hsla(calc(215 - 0), calc(17% - 0%), calc(19% + 3%), 0.9);
   --color-base-00-0-trans: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% + 3%),
     0.5
-  ) !important;
+  );
   --color-base-00-trans: hsla(
     calc(215 - 0),
     calc(17% - 0%),
     calc(19% - 0%),
     0.5
-  ) !important;
-  --color-base-20-0: hsla(
-    calc(215 - 0),
-    calc(17% - 7%),
-    calc(19% - 9%),
-    0.1
-  ) !important;
+  );
+  --color-base-20-0: hsla(calc(215 - 0), calc(17% - 7%), calc(19% - 9%), 0.1);
   --color-base-20-trans: hsla(
     calc(215 - 1),
     calc(17% + 7%),
     calc(19% - 4%),
     0.5
-  ) !important;
-  --color-base-hover: hsla(
-    calc(215 - 8),
-    calc(17% - 0%),
-    calc(19% - 9%),
-    0.5
-  ) !important;
-  --color-base-shadow: hsla(207, 10%, 10%, 0.1) !important;
-  --color-base-shadow-hover: hsla(212, 17%, 0%, 0.3) !important;
-  --color-highlight: hsla(45, 63%, 63%, 1) !important;
-  --color-italic: hsla(215, 33%, 60%, 1) !important;
-  --color-muted: hsl(218, 17%, 62%) !important;
-  --color-strikethrough: hsla(217, 18%, 50%, 0.7) !important;
-  --inline-code-color: hsla(365, 90%, 65%, 1) !important;
-  --panel-radius: 8px !important;
-  --panel-shadow: 0 1px 3px hsla(207, 10%, 10%, 0.1) !important;
-  --panel-shadow-hover: 0 3px 5px hsla(212, 17%, 0%, 0.3) !important;
-  --sidebar-size-left: 270px !important;
-  --sidebar-size-right: 270px !important;
-  --window-shadow-left: -4px 0 5px hsla(212, 17%, 0%, 0.3) !important;
-  --window-shadow-right: 4px 0 5px hsla(212, 17%, 0%, 0.3) !important;
+  );
+  --color-base-hover: hsla(calc(215 - 8), calc(17% - 0%), calc(19% - 9%), 0.5);
+  --color-base-shadow: hsla(207, 10%, 10%, 0.1);
+  --color-base-shadow-hover: hsla(212, 17%, 0%, 0.3);
+  --color-highlight: hsla(45, 63%, 63%, 1);
+  --color-italic: hsla(215, 33%, 60%, 1);
+  --color-muted: hsl(218, 17%, 62%);
+  --color-strikethrough: hsla(217, 18%, 50%, 0.7);
+  --inline-code-color: hsla(365, 90%, 65%, 1);
+  --panel-radius: 8px;
+  --panel-shadow: 0 1px 3px hsla(207, 10%, 10%, 0.1);
+  --panel-shadow-hover: 0 3px 5px hsla(212, 17%, 0%, 0.3);
+  --sidebar-size-left: 270px;
+  --sidebar-size-right: 270px;
+  --window-shadow-left: -4px 0 5px hsla(212, 17%, 0%, 0.3);
+  --window-shadow-right: 4px 0 5px hsla(212, 17%, 0%, 0.3);
 }
 
 body .markdown-rendered a.external-link {

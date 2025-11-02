@@ -878,7 +878,7 @@ body.theme-light {
   --h5-color: hsl(258, 88%, 66%) !important;
   --h6-color: hsl(258, 88%, 66%) !important;
   --inline-title-color: hsl(258, 88%, 66%) !important;
-  --blockquote-color:  !important;
+  --blockquote-color:   !important;
   --table-header-background-hover: hsl(258, 88%, 66%) !important;
   --accent-color: hsl(258, 88%, 66%) !important;
   --accent-rgb: from hsl(258, 88%, 66%) r g b !important;
@@ -900,907 +900,841 @@ body.theme-light {
 }
 
 body.theme-dark {
-  --accent-h: 258 !important;
-  --accent-l: 66% !important;
-  --accent-s: 88% !important;
-  --anim-duration-fast: 140ms !important;
-  --anim-duration-moderate: 300ms !important;
-  --anim-duration-none: 0 !important;
-  --anim-duration-slow: 560ms !important;
-  --anim-duration-superfast: 70ms !important;
-  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
-  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
-  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: hsl(258, calc(88% / 3), 35%) !important;
-  --background-modifier-border-focus: hsl(258, calc(88% / 3), 45%) !important;
-  --background-modifier-border-hover: hsl(258, calc(88% / 3), 40%) !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: hsl(5, 88%, 66%) !important;
-  --background-modifier-error-hover: hsl(5, 88%, 66%) !important;
-  --background-modifier-error-rgb: from hsl(5, 88%, 66%) r g b !important;
-  --background-modifier-form-field: hsl(258, calc(88% / 3), 20%) !important;
-  --background-modifier-form-field-hover: hsl(
-    258,
-    calc(88% / 3),
-    20%
-  ) !important;
-  --background-modifier-hover: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --background-modifier-message: hsl(258, 88%, 66%) !important;
-  --background-modifier-success: hsl(100, 88%, 66%) !important;
-  --background-modifier-success-rgb: from hsl(100, 88%, 66%) r g b !important;
-  --background-primary: hsl(258, calc(88% / 3), 10%) !important;
-  --background-primary-alt: hsl(258, calc(88% / 3), 20%) !important;
-  --background-secondary: hsl(258, calc(88% / 3), 15%) !important;
-  --background-secondary-alt: hsl(258, calc(88% / 3), 15%) !important;
-  --bases-cards-background: hsl(258, calc(88% / 3), 10%) !important;
-  --bases-cards-border-width: 1px !important;
-  --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: hsl(258, calc(88% / 3), 20%) !important;
-  --bases-cards-group-padding: 12px !important;
-  --bases-cards-line-height: 24px !important;
-  --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(258, calc(88% / 3), 40%) !important;
-  --bases-cards-text-size: 0.875rem !important;
-  --bases-embed-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --bases-embed-border-radius: 4px !important;
-  --bases-embed-border-width: 0px !important;
-  --bases-filter-menu-width: 520px !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
-  --bases-header-height: 40px !important;
-  --bases-header-padding-end: 2px !important;
-  --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: hsl(258, 88%, 66%) !important;
-  --bases-table-cell-background-active: hsl(258, calc(88% / 3), 10%) !important;
-  --bases-table-cell-background-disabled: hsl(
-    258,
-    calc(88% / 3),
-    20%
-  ) !important;
-  --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --bases-table-column-border-width: 1px !important;
-  --bases-table-column-max-width: 300 !important;
-  --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
-  --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: hsl(258, calc(88% / 3), 10%) !important;
+  --accent-h: 258;
+  --accent-l: 66%;
+  --accent-s: 88%;
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 300ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 560ms;
+  --anim-duration-superfast: 70ms;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+  --background-modifier-border: hsl(258, calc(88% / 3), 35%);
+  --background-modifier-border-focus: hsl(258, calc(88% / 3), 45%);
+  --background-modifier-border-hover: hsl(258, calc(88% / 3), 40%);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-error: hsl(5, 88%, 66%);
+  --background-modifier-error-hover: hsl(5, 88%, 66%);
+  --background-modifier-error-rgb: from hsl(5, 88%, 66%) r g b;
+  --background-modifier-form-field: hsl(258, calc(88% / 3), 20%);
+  --background-modifier-form-field-hover: hsl(258, calc(88% / 3), 20%);
+  --background-modifier-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --background-modifier-message: hsl(258, 88%, 66%);
+  --background-modifier-success: hsl(100, 88%, 66%);
+  --background-modifier-success-rgb: from hsl(100, 88%, 66%) r g b;
+  --background-primary: hsl(258, calc(88% / 3), 10%);
+  --background-primary-alt: hsl(258, calc(88% / 3), 20%);
+  --background-secondary: hsl(258, calc(88% / 3), 15%);
+  --background-secondary-alt: hsl(258, calc(88% / 3), 15%);
+  --bases-cards-background: hsl(258, calc(88% / 3), 10%);
+  --bases-cards-border-width: 1px;
+  --bases-cards-container-background: transparent;
+  --bases-cards-cover-background: hsl(258, calc(88% / 3), 20%);
+  --bases-cards-group-padding: 12px;
+  --bases-cards-line-height: 24px;
+  --bases-cards-scale: 1;
+  --bases-cards-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%);
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(258, calc(88% / 3), 40%);
+  --bases-cards-text-size: 0.875rem;
+  --bases-embed-border-color: hsl(258, calc(88% / 3), 35%);
+  --bases-embed-border-radius: 4px;
+  --bases-embed-border-width: 0px;
+  --bases-filter-menu-width: 520px;
+  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-height: 40px;
+  --bases-header-padding-end: 2px;
+  --bases-header-padding-start: 2px;
+  --bases-table-border-color: hsl(258, 88%, 66%);
+  --bases-table-cell-background-active: hsl(258, calc(88% / 3), 10%);
+  --bases-table-cell-background-disabled: hsl(258, calc(88% / 3), 20%);
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --bases-table-column-border-width: 1px;
+  --bases-table-column-max-width: 300;
+  --bases-table-column-min-width: 40;
+  --bases-table-container-border-radius: 4px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-header-background: hsl(258, calc(88% / 3), 10%);
   --bases-table-header-background-hover: rgba(
     from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --bases-table-header-color: hsl(258, calc(88% / 3), 50%) !important;
-  --bases-table-header-icon-display: flex !important;
+  );
+  --bases-table-header-color: hsl(258, calc(88% / 3), 50%);
+  --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
     black 24px
-  ) !important;
-  --bases-table-header-weight: 400 !important;
+  );
+  --bases-table-header-weight: 400;
   --bases-table-row-background-hover: rgba(
     from hsl(258, 88%, 66%) r g b / 0.15
-  ) !important;
-  --bases-table-row-border-width: 1px !important;
-  --bases-table-row-height: 30px !important;
-  --bases-table-text-size: 0.875rem !important;
-  --bases-toolbar-badge-display: none !important;
-  --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(258, 88%, 66%) !important;
-  --blockquote-border-thickness: 2px !important;
-  --blockquote-font-style: normal !important;
-  --bold-modifier: 200 !important;
-  --bold-weight: calc(400 + 200) !important;
-  --border-width: 1px !important;
-  --button-radius: 5px !important;
-  --callout-blend-mode: lighten !important;
-  --callout-border-opacity: 0.25 !important;
-  --callout-border-width: 0px !important;
-  --callout-bug: from hsl(5, 88%, 66%) r g b !important;
-  --callout-content-background: transparent !important;
-  --callout-content-padding: 0 !important;
-  --callout-default: from hsl(210, 88%, 66%) r g b !important;
-  --callout-error: from hsl(5, 88%, 66%) r g b !important;
-  --callout-example: from hsl(270, 88%, 66%) r g b !important;
-  --callout-fail: from hsl(5, 88%, 66%) r g b !important;
-  --callout-important: from hsl(185, 88%, 66%) r g b !important;
-  --callout-info: from hsl(210, 88%, 66%) r g b !important;
-  --callout-padding: 12px 12px 12px 24px !important;
-  --callout-question: from hsl(25, 88%, 66%) r g b !important;
-  --callout-quote: from hsl(258, 88%, 66%) r g b !important;
-  --callout-radius: 4px !important;
-  --callout-success: from hsl(100, 88%, 66%) r g b !important;
-  --callout-summary: from hsl(185, 88%, 66%) r g b !important;
-  --callout-tip: from hsl(185, 88%, 66%) r g b !important;
-  --callout-title-padding: 0 !important;
-  --callout-title-weight: calc(400 + 200) !important;
-  --callout-todo: from hsl(210, 88%, 66%) r g b !important;
-  --callout-warning: from hsl(25, 88%, 66%) r g b !important;
-  --canvas-background: hsl(258, calc(88% / 3), 10%) !important;
-  --canvas-card-label-color: hsl(258, calc(88% / 3), 35%) !important;
-  --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: from hsl(5, 88%, 66%) r g b !important;
-  --canvas-color-2: from hsl(25, 88%, 66%) r g b !important;
-  --canvas-color-3: from hsl(50, 88%, 66%) r g b !important;
-  --canvas-color-4: from hsl(100, 88%, 66%) r g b !important;
-  --canvas-color-5: from hsl(185, 88%, 66%) r g b !important;
-  --canvas-color-6: from hsl(270, 88%, 66%) r g b !important;
-  --canvas-dot-pattern: hsl(258, calc(88% / 3), 35%) !important;
-  --caret-color: hsl(258, calc(88% / 3), 80%) !important;
-  --checkbox-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
-  --checkbox-color: hsl(258, calc(88% / 3), 50%) !important;
-  --checkbox-color-hover: hsl(258, 88%, 66%) !important;
-  --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: hsl(258, calc(88% / 3), 10%) !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(258, calc(88% / 3), 50%) !important;
-  --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
-  --code-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --code-border-width: 0px !important;
-  --code-bracket-background: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --code-comment: hsl(258, calc(88% / 3), 45%) !important;
-  --code-function: hsl(50, 88%, 66%) !important;
-  --code-important: hsl(25, 88%, 66%) !important;
-  --code-keyword: hsl(320, 88%, 66%) !important;
-  --code-normal: hsl(258, 88%, 66%) !important;
-  --code-operator: hsl(5, 88%, 66%) !important;
-  --code-property: hsl(185, 88%, 66%) !important;
-  --code-punctuation: hsl(258, calc(88% / 3), 50%) !important;
-  --code-radius: 4px !important;
-  --code-string: hsl(100, 88%, 66%) !important;
-  --code-tag: hsl(5, 88%, 66%) !important;
-  --code-value: hsl(270, 88%, 66%) !important;
-  --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsl(258, calc(88% / 3), 35%) !important;
+  );
+  --bases-table-row-border-width: 1px;
+  --bases-table-row-height: 30px;
+  --bases-table-text-size: 0.875rem;
+  --bases-toolbar-badge-display: none;
+  --bases-toolbar-label-display: block;
+  --blockquote-background-color: transparent;
+  --blockquote-border-color: hsl(258, 88%, 66%);
+  --blockquote-border-thickness: 2px;
+  --blockquote-font-style: normal;
+  --bold-modifier: 200;
+  --bold-weight: calc(400 + 200);
+  --border-width: 1px;
+  --button-radius: 5px;
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: from hsl(5, 88%, 66%) r g b;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: from hsl(210, 88%, 66%) r g b;
+  --callout-error: from hsl(5, 88%, 66%) r g b;
+  --callout-example: from hsl(270, 88%, 66%) r g b;
+  --callout-fail: from hsl(5, 88%, 66%) r g b;
+  --callout-important: from hsl(185, 88%, 66%) r g b;
+  --callout-info: from hsl(210, 88%, 66%) r g b;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: from hsl(25, 88%, 66%) r g b;
+  --callout-quote: from hsl(258, 88%, 66%) r g b;
+  --callout-radius: 4px;
+  --callout-success: from hsl(100, 88%, 66%) r g b;
+  --callout-summary: from hsl(185, 88%, 66%) r g b;
+  --callout-tip: from hsl(185, 88%, 66%) r g b;
+  --callout-title-padding: 0;
+  --callout-title-weight: calc(400 + 200);
+  --callout-todo: from hsl(210, 88%, 66%) r g b;
+  --callout-warning: from hsl(25, 88%, 66%) r g b;
+  --canvas-background: hsl(258, calc(88% / 3), 10%);
+  --canvas-card-label-color: hsl(258, calc(88% / 3), 35%);
+  --canvas-color: 126, 126, 126;
+  --canvas-color-1: from hsl(5, 88%, 66%) r g b;
+  --canvas-color-2: from hsl(25, 88%, 66%) r g b;
+  --canvas-color-3: from hsl(50, 88%, 66%) r g b;
+  --canvas-color-4: from hsl(100, 88%, 66%) r g b;
+  --canvas-color-5: from hsl(185, 88%, 66%) r g b;
+  --canvas-color-6: from hsl(270, 88%, 66%) r g b;
+  --canvas-dot-pattern: hsl(258, calc(88% / 3), 35%);
+  --caret-color: hsl(258, calc(88% / 3), 80%);
+  --checkbox-border-color: hsl(258, calc(88% / 3), 35%);
+  --checkbox-border-color-hover: hsl(258, 88%, 66%);
+  --checkbox-color: hsl(258, calc(88% / 3), 50%);
+  --checkbox-color-hover: hsl(258, 88%, 66%);
+  --checkbox-margin-inline-start: 0.85em;
+  --checkbox-marker-color: hsl(258, calc(88% / 3), 10%);
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checklist-done-color: hsl(258, calc(88% / 3), 50%);
+  --checklist-done-decoration: line-through;
+  --clickable-icon-radius: 4px;
+  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  --code-border-color: hsl(258, calc(88% / 3), 35%);
+  --code-border-width: 0px;
+  --code-bracket-background: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --code-comment: hsl(258, calc(88% / 3), 45%);
+  --code-function: hsl(50, 88%, 66%);
+  --code-important: hsl(25, 88%, 66%);
+  --code-keyword: hsl(320, 88%, 66%);
+  --code-normal: hsl(258, 88%, 66%);
+  --code-operator: hsl(5, 88%, 66%);
+  --code-property: hsl(185, 88%, 66%);
+  --code-punctuation: hsl(258, calc(88% / 3), 50%);
+  --code-radius: 4px;
+  --code-string: hsl(100, 88%, 66%);
+  --code-tag: hsl(5, 88%, 66%);
+  --code-value: hsl(270, 88%, 66%);
+  --code-white-space: pre-wrap;
+  --collapse-icon-color: hsl(258, calc(88% / 3), 35%);
   --collapse-icon-color-collapsed: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --color-accent-2: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  ) !important;
-  --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: hsl(258, calc(88% / 3), 10%) !important;
-  --color-base-05: hsl(258, calc(88% / 3), 15%) !important;
-  --color-base-10: hsl(258, calc(88% / 3), 20%) !important;
-  --color-base-100: hsl(258, calc(88% / 3), 80%) !important;
-  --color-base-20: hsl(258, calc(88% / 3), 25%) !important;
-  --color-base-25: hsl(258, calc(88% / 3), 30%) !important;
-  --color-base-30: hsl(258, calc(88% / 3), 35%) !important;
-  --color-base-35: hsl(258, calc(88% / 3), 40%) !important;
-  --color-base-40: hsl(258, calc(88% / 3), 45%) !important;
-  --color-base-50: hsl(258, calc(88% / 3), 50%) !important;
-  --color-base-60: hsl(258, calc(88% / 3), 60%) !important;
-  --color-base-70: hsl(258, calc(88% / 3), 70%) !important;
-  --color-blue: hsl(210, 88%, 66%) !important;
-  --color-blue-rgb: from hsl(210, 88%, 66%) r g b !important;
-  --color-cyan: hsl(185, 88%, 66%) !important;
-  --color-cyan-rgb: from hsl(185, 88%, 66%) r g b !important;
-  --color-green: hsl(100, 88%, 66%) !important;
-  --color-green-rgb: from hsl(100, 88%, 66%) r g b !important;
-  --color-orange: hsl(25, 88%, 66%) !important;
-  --color-orange-rgb: from hsl(25, 88%, 66%) r g b !important;
-  --color-pink: hsl(320, 88%, 66%) !important;
-  --color-pink-rgb: from hsl(320, 88%, 66%) r g b !important;
-  --color-purple: hsl(270, 88%, 66%) !important;
-  --color-purple-rgb: from hsl(270, 88%, 66%) r g b !important;
-  --color-red: hsl(5, 88%, 66%) !important;
-  --color-red-rgb: from hsl(5, 88%, 66%) r g b !important;
-  --color-yellow: hsl(50, 88%, 66%) !important;
-  --color-yellow-rgb: from hsl(50, 88%, 66%) r g b !important;
-  --cursor: default !important;
-  --cursor-link: pointer !important;
-  --dialog-max-height: 85vh !important;
-  --dialog-max-width: 80vw !important;
-  --dialog-width: 560px !important;
-  --direction: 1 !important;
-  --divider-color: hsl(258, calc(88% / 3), 35%) !important;
-  --divider-color-hover: hsl(258, 88%, 66%) !important;
-  --divider-vertical-height: 100% !important;
-  --divider-width: 1px !important;
-  --divider-width-hover: 3px !important;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
-  --drag-ghost-text-color: #fff !important;
-  --dropdown-background: hsl(258, calc(88% / 3), 15%) !important;
-  --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsl(258, calc(88% / 3), 25%) !important;
-  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
-  --dropdown-background-size: 1em auto, 100% !important;
-  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  );
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-base-00: hsl(258, calc(88% / 3), 10%);
+  --color-base-05: hsl(258, calc(88% / 3), 15%);
+  --color-base-10: hsl(258, calc(88% / 3), 20%);
+  --color-base-100: hsl(258, calc(88% / 3), 80%);
+  --color-base-20: hsl(258, calc(88% / 3), 25%);
+  --color-base-25: hsl(258, calc(88% / 3), 30%);
+  --color-base-30: hsl(258, calc(88% / 3), 35%);
+  --color-base-35: hsl(258, calc(88% / 3), 40%);
+  --color-base-40: hsl(258, calc(88% / 3), 45%);
+  --color-base-50: hsl(258, calc(88% / 3), 50%);
+  --color-base-60: hsl(258, calc(88% / 3), 60%);
+  --color-base-70: hsl(258, calc(88% / 3), 70%);
+  --color-blue: hsl(210, 88%, 66%);
+  --color-blue-rgb: from hsl(210, 88%, 66%) r g b;
+  --color-cyan: hsl(185, 88%, 66%);
+  --color-cyan-rgb: from hsl(185, 88%, 66%) r g b;
+  --color-green: hsl(100, 88%, 66%);
+  --color-green-rgb: from hsl(100, 88%, 66%) r g b;
+  --color-orange: hsl(25, 88%, 66%);
+  --color-orange-rgb: from hsl(25, 88%, 66%) r g b;
+  --color-pink: hsl(320, 88%, 66%);
+  --color-pink-rgb: from hsl(320, 88%, 66%) r g b;
+  --color-purple: hsl(270, 88%, 66%);
+  --color-purple-rgb: from hsl(270, 88%, 66%) r g b;
+  --color-red: hsl(5, 88%, 66%);
+  --color-red-rgb: from hsl(5, 88%, 66%) r g b;
+  --color-yellow: hsl(50, 88%, 66%);
+  --color-yellow-rgb: from hsl(50, 88%, 66%) r g b;
+  --cursor: default;
+  --cursor-link: pointer;
+  --dialog-max-height: 85vh;
+  --dialog-max-width: 80vw;
+  --dialog-width: 560px;
+  --direction: 1;
+  --divider-color: hsl(258, calc(88% / 3), 35%);
+  --divider-color-hover: hsl(258, 88%, 66%);
+  --divider-vertical-height: 100%;
+  --divider-width: 1px;
+  --divider-width-hover: 3px;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-text-color: #fff;
+  --dropdown-background: hsl(258, calc(88% / 3), 15%);
+  --dropdown-background-blend-mode: hard-light;
+  --dropdown-background-hover: hsl(258, calc(88% / 3), 25%);
+  --dropdown-background-position: right 0.5em top 50%, 0 0;
+  --dropdown-background-size: 1em auto, 100%;
+  --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-block-shadow-hover:
     0 0 0 1px hsl(258, calc(88% / 3), 35%),
-    inset 0 0 0 1px hsl(258, calc(88% / 3), 35%) !important;
-  --embed-border-bottom: none !important;
-  --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
-  --embed-border-top: none !important;
-  --embed-canvas-max-height: 400px !important;
-  --embed-max-height: 80vh !important;
-  --embed-padding: 0 !important;
-  --file-folding-offset: 24px !important;
-  --file-header-border: 1px solid transparent !important;
+    inset 0 0 0 1px hsl(258, calc(88% / 3), 35%);
+  --embed-border-bottom: none;
+  --embed-border-end: none;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%);
+  --embed-border-top: none;
+  --embed-canvas-max-height: 400px;
+  --embed-max-height: 80vh;
+  --embed-padding: 0;
+  --file-folding-offset: 24px;
+  --file-header-border: 1px solid transparent;
   --file-header-font:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 13px !important;
-  --file-header-font-weight: 400 !important;
-  --file-header-justify: center !important;
-  --file-line-width: 700px !important;
-  --file-margins: 32px !important;
-  --flair-background: hsl(258, calc(88% / 3), 15%) !important;
-  --flair-color: hsl(258, calc(88% / 3), 80%) !important;
-  --focus-ring-color: #0df !important;
-  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
-  --font-black: 900 !important;
-  --font-bold: 700 !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font-size: 13px;
+  --file-header-font-weight: 400;
+  --file-header-justify: center;
+  --file-line-width: 700px;
+  --file-margins: 32px;
+  --flair-background: hsl(258, calc(88% / 3), 15%);
+  --flair-color: hsl(258, calc(88% / 3), 80%);
+  --focus-ring-color: #0df;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
+  --font-black: 900;
+  --font-bold: 700;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --font-extrabold: 800 !important;
-  --font-extralight: 200 !important;
+    sans-serif;
+  --font-extrabold: 800;
+  --font-extralight: 200;
   --font-interface:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface-override: "??" !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface-override: "??";
   --font-interface-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif !important;
-  --font-light: 300 !important;
-  --font-medium: 500 !important;
+    sans-serif;
+  --font-light: 300;
+  --font-medium: 500;
   --font-mermaid:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-    Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-override: "??" !important;
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
   --font-monospace-theme:
     ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-    "DejaVu Sans Mono", monospace !important;
-  --font-normal: 400 !important;
+    "DejaVu Sans Mono", monospace;
+  --font-normal: 400;
   --font-print:
     "??", "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic",
-    source-sans-pro, sans-serif, "Arial" !important;
-  --font-print-override: "??" !important;
-  --font-semibold: 600 !important;
-  --font-small: 0.933rem !important;
-  --font-smaller: 0.875rem !important;
-  --font-smallest: 0.8rem !important;
+    source-sans-pro, sans-serif, "Arial";
+  --font-print-override: "??";
+  --font-semibold: 600;
+  --font-small: 0.933rem;
+  --font-smaller: 0.875rem;
+  --font-smallest: 0.8rem;
   --font-text:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-text-override: "??" !important;
-  --font-text-size: 16px !important;
+    "Segoe UI Symbol", sans-serif;
+  --font-text-override: "??";
+  --font-text-size: 16px;
   --font-text-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif !important;
-  --font-thin: 100 !important;
-  --font-ui-large: 20px !important;
-  --font-ui-medium: 15px !important;
-  --font-ui-small: 13px !important;
-  --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
-  --footnote-divider-color: hsl(258, calc(88% / 3), 35%) !important;
-  --footnote-divider-color-active: transparent !important;
-  --footnote-divider-width: 1px !important;
-  --footnote-gap: 4px !important;
-  --footnote-id-color: hsl(258, calc(88% / 3), 50%) !important;
-  --footnote-id-color-no-occurrences: hsl(258, calc(88% / 3), 35%) !important;
-  --footnote-id-delimiter: "." !important;
-  --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --footnote-line-height: 1.5 !important;
-  --footnote-padding-block: 6px !important;
-  --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
-  --footnote-size: 0.875rem !important;
-  --frame-left-space: calc(80px - 44px) !important;
-  --frame-right-space: 0px !important;
-  --graph-controls-width: 240px !important;
-  --graph-line: hsl(258, calc(88% / 3), 40%) !important;
-  --graph-node: hsl(5, 88%, 66%) !important;
-  --graph-node-attachment: hsl(210, 88%, 66%) !important;
-  --graph-node-focused: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --graph-node-tag: hsl(50, 88%, 66%) !important;
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
-  --graph-text: hsl(258, calc(88% / 3), 80%) !important;
-  --h1-line-height: 1.2 !important;
-  --h1-size: 2.488em !important;
-  --h1-style: normal !important;
-  --h1-variant: normal !important;
-  --h1-weight: 700 !important;
-  --h2-line-height: 1.2 !important;
-  --h2-size: 2.047em !important;
-  --h2-style: normal !important;
-  --h2-variant: normal !important;
-  --h2-weight: 600 !important;
-  --h3-line-height: 1.3 !important;
-  --h3-size: 1.728em !important;
-  --h3-style: normal !important;
-  --h3-variant: normal !important;
-  --h3-weight: 600 !important;
-  --h4-line-height: 1.4 !important;
-  --h4-size: 1.44em !important;
-  --h4-style: normal !important;
-  --h4-variant: normal !important;
-  --h4-weight: 600 !important;
-  --h5-line-height: 1.5 !important;
-  --h5-size: 1.2em !important;
-  --h5-style: normal !important;
-  --h5-variant: normal !important;
-  --h5-weight: 600 !important;
-  --h6-line-height: 1.5 !important;
-  --h6-size: 1em !important;
-  --h6-style: normal !important;
-  --h6-variant: normal !important;
-  --h6-weight: 600 !important;
-  --header-height: 40px !important;
-  --heading-formatting: hsl(258, calc(88% / 3), 35%) !important;
-  --heading-spacing: 1.2em !important;
-  --highlight-mix-blend-mode: lighten !important;
-  --hr-color: hsl(258, 88%, 66%) !important;
-  --hr-thickness: 0.1rem !important;
-  --icon-color: hsl(258, calc(88% / 3), 50%) !important;
-  --icon-color-active: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --icon-color-focused: hsl(258, calc(88% / 3), 60%) !important;
-  --icon-color-hover: hsl(258, calc(88% / 3), 50%) !important;
-  --icon-l: 18px !important;
-  --icon-l-stroke-width: 1.75px !important;
-  --icon-m: 18px !important;
-  --icon-m-stroke-width: 1.75px !important;
-  --icon-opacity: 0.85 !important;
-  --icon-opacity-active: 1 !important;
-  --icon-opacity-hover: 1 !important;
-  --icon-s: 16px !important;
-  --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
-  --icon-xl: 32px !important;
-  --icon-xl-stroke-width: 1.25px !important;
-  --icon-xs: 14px !important;
-  --icon-xs-stroke-width: 2px !important;
-  --indent-size: 4 !important;
-  --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255 / 0.12) !important;
-  --indentation-guide-color-active: rgba(
-    255,
-    255,
-    255 / calc(0.15 * 2)
-  ) !important;
-  --indentation-guide-editing-indent: 0.85em !important;
-  --indentation-guide-reading-indent: -0.85em !important;
-  --indentation-guide-source-indent: 0.25em !important;
-  --indentation-guide-width: 1px !important;
-  --indentation-guide-width-active: 1px !important;
-  --inline-title-line-height: 1.2 !important;
-  --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 2.488em !important;
-  --inline-title-style: normal !important;
-  --inline-title-variant: normal !important;
-  --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
-  --input-date-separator: hsl(258, calc(88% / 3), 35%) !important;
-  --input-font-weight: 400 !important;
-  --input-height: 30px !important;
-  --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsl(258, calc(88% / 3), 35%) !important;
-  --input-radius: 5px !important;
+    sans-serif;
+  --font-thin: 100;
+  --font-ui-large: 20px;
+  --font-ui-medium: 15px;
+  --font-ui-small: 13px;
+  --font-ui-smaller: 12px;
+  --font-weight: 400;
+  --footnote-divider-color: hsl(258, calc(88% / 3), 35%);
+  --footnote-divider-color-active: transparent;
+  --footnote-divider-width: 1px;
+  --footnote-gap: 4px;
+  --footnote-id-color: hsl(258, calc(88% / 3), 50%);
+  --footnote-id-color-no-occurrences: hsl(258, calc(88% / 3), 35%);
+  --footnote-id-delimiter: ".";
+  --footnote-input-background: transparent;
+  --footnote-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --footnote-line-height: 1.5;
+  --footnote-padding-block: 6px;
+  --footnote-padding-inline: 6px;
+  --footnote-radius: 4px;
+  --footnote-size: 0.875rem;
+  --frame-left-space: calc(80px - 44px);
+  --frame-right-space: 0px;
+  --graph-controls-width: 240px;
+  --graph-line: hsl(258, calc(88% / 3), 40%);
+  --graph-node: hsl(5, 88%, 66%);
+  --graph-node-attachment: hsl(210, 88%, 66%);
+  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --graph-node-tag: hsl(50, 88%, 66%);
+  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8);
+  --graph-text: hsl(258, calc(88% / 3), 80%);
+  --h1-line-height: 1.2;
+  --h1-size: 2.488em;
+  --h1-style: normal;
+  --h1-variant: normal;
+  --h1-weight: 700;
+  --h2-line-height: 1.2;
+  --h2-size: 2.047em;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 600;
+  --h3-line-height: 1.3;
+  --h3-size: 1.728em;
+  --h3-style: normal;
+  --h3-variant: normal;
+  --h3-weight: 600;
+  --h4-line-height: 1.4;
+  --h4-size: 1.44em;
+  --h4-style: normal;
+  --h4-variant: normal;
+  --h4-weight: 600;
+  --h5-line-height: 1.5;
+  --h5-size: 1.2em;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 600;
+  --h6-line-height: 1.5;
+  --h6-size: 1em;
+  --h6-style: normal;
+  --h6-variant: normal;
+  --h6-weight: 600;
+  --header-height: 40px;
+  --heading-formatting: hsl(258, calc(88% / 3), 35%);
+  --heading-spacing: 1.2em;
+  --highlight-mix-blend-mode: lighten;
+  --hr-color: hsl(258, 88%, 66%);
+  --hr-thickness: 0.1rem;
+  --icon-color: hsl(258, calc(88% / 3), 50%);
+  --icon-color-active: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --icon-color-focused: hsl(258, calc(88% / 3), 60%);
+  --icon-color-hover: hsl(258, calc(88% / 3), 50%);
+  --icon-l: 18px;
+  --icon-l-stroke-width: 1.75px;
+  --icon-m: 18px;
+  --icon-m-stroke-width: 1.75px;
+  --icon-opacity: 0.85;
+  --icon-opacity-active: 1;
+  --icon-opacity-hover: 1;
+  --icon-s: 16px;
+  --icon-s-stroke-width: 2px;
+  --icon-size: 18px;
+  --icon-stroke: 1.75px;
+  --icon-xl: 32px;
+  --icon-xl-stroke-width: 1.25px;
+  --icon-xs: 14px;
+  --icon-xs-stroke-width: 2px;
+  --indent-size: 4;
+  --indent-unit: 0.5625em;
+  --indentation-guide-color: rgba(255, 255, 255 / 0.12);
+  --indentation-guide-color-active: rgba(255, 255, 255 / calc(0.15 * 2));
+  --indentation-guide-editing-indent: 0.85em;
+  --indentation-guide-reading-indent: -0.85em;
+  --indentation-guide-source-indent: 0.25em;
+  --indentation-guide-width: 1px;
+  --indentation-guide-width-active: 1px;
+  --inline-title-line-height: 1.2;
+  --inline-title-margin-bottom: 0.5em;
+  --inline-title-size: 2.488em;
+  --inline-title-style: normal;
+  --inline-title-variant: normal;
+  --inline-title-weight: 700;
+  --input-border-width: 1px;
+  --input-border-width-focus: 2px;
+  --input-date-separator: hsl(258, calc(88% / 3), 35%);
+  --input-font-weight: 400;
+  --input-height: 30px;
+  --input-padding: 4px 8px;
+  --input-placeholder-color: hsl(258, calc(88% / 3), 35%);
+  --input-radius: 5px;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
   --input-shadow-hover:
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(258, 88%, 66%) !important;
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(258, 88%, 66%);
   --interactive-accent-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: hsl(258, calc(88% / 3), 25%) !important;
-  --interactive-normal: hsl(258, calc(88% / 3), 15%) !important;
-  --keyboard-height: 0px !important;
-  --layer-cover: 5 !important;
-  --layer-dragged-item: 80 !important;
-  --layer-menu: 65 !important;
-  --layer-modal: 50 !important;
-  --layer-notice: 60 !important;
-  --layer-popover: 30 !important;
-  --layer-sidedock: 10 !important;
-  --layer-slides: 45 !important;
-  --layer-status-bar: 15 !important;
-  --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
-  --line-height-tight: 1.3 !important;
-  --link-color: hsl(258, 88%, 66%) !important;
-  --link-color-hover: hsl(258, 88%, 66%) !important;
-  --link-decoration: none !important;
-  --link-decoration-hover: wavy !important;
-  --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(258, 88%, 66%) !important;
-  --link-external-color-hover: hsl(258, 88%, 66%) !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: underline !important;
-  --link-external-filter: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  );
+  --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-hover: hsl(258, calc(88% / 3), 25%);
+  --interactive-normal: hsl(258, calc(88% / 3), 15%);
+  --keyboard-height: 0px;
+  --layer-cover: 5;
+  --layer-dragged-item: 80;
+  --layer-menu: 65;
+  --layer-modal: 50;
+  --layer-notice: 60;
+  --layer-popover: 30;
+  --layer-sidedock: 10;
+  --layer-slides: 45;
+  --layer-status-bar: 15;
+  --layer-tooltip: 70;
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.3;
+  --link-color: hsl(258, 88%, 66%);
+  --link-color-hover: hsl(258, 88%, 66%);
+  --link-decoration: none;
+  --link-decoration-hover: wavy;
+  --link-decoration-thickness: auto;
+  --link-external-color: hsl(258, 88%, 66%);
+  --link-external-color-hover: hsl(258, 88%, 66%);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: hsl(258, 88%, 66%);
   --link-unresolved-decoration-color: rgba(
     from hsl(258, 88%, 66%) r g b / calc(0.15 * 2)
-  ) !important;
-  --link-unresolved-decoration-style: solid !important;
-  --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
-  --link-weight: 400 !important;
-  --list-bullet-border: none !important;
-  --list-bullet-end-padding: 1.3rem !important;
-  --list-bullet-radius: 50% !important;
-  --list-bullet-size: 0.3em !important;
-  --list-bullet-transform: none !important;
-  --list-indent: calc(0.5625em * 4) !important;
-  --list-indent-editing: 0.75em !important;
-  --list-indent-source: 0 !important;
-  --list-marker-color: hsl(258, calc(88% / 3), 50%) !important;
+  );
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 0.7;
+  --link-weight: 400;
+  --list-bullet-border: none;
+  --list-bullet-end-padding: 1.3rem;
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.3em;
+  --list-bullet-transform: none;
+  --list-indent: calc(0.5625em * 4);
+  --list-indent-editing: 0.75em;
+  --list-indent-source: 0;
+  --list-marker-color: hsl(258, calc(88% / 3), 50%);
   --list-marker-color-collapsed: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --list-marker-color-hover: hsl(258, calc(88% / 3), 50%) !important;
-  --list-numbered-style: decimal !important;
-  --list-spacing: 0.075em !important;
-  --loading-icon-delay: 400ms !important;
-  --menu-backdrop-filter: none !important;
-  --menu-background: hsl(258, calc(88% / 3), 15%) !important;
-  --menu-border-color: hsl(258, calc(88% / 3), 40%) !important;
-  --menu-border-width: 1px !important;
-  --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
+  );
+  --list-marker-color-hover: hsl(258, calc(88% / 3), 50%);
+  --list-numbered-style: decimal;
+  --list-spacing: 0.075em;
+  --loading-icon-delay: 400ms;
+  --menu-backdrop-filter: none;
+  --menu-background: hsl(258, calc(88% / 3), 15%);
+  --menu-border-color: hsl(258, calc(88% / 3), 40%);
+  --menu-border-width: 1px;
+  --menu-padding: 6px;
+  --menu-radius: 8px;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --metadata-background: transparent !important;
-  --metadata-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --metadata-border-radius: 0 !important;
-  --metadata-border-width: 0 !important;
-  --metadata-display-editing: block !important;
-  --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(258, calc(88% / 3), 35%) !important;
-  --metadata-divider-color-focus: transparent !important;
-  --metadata-divider-color-hover: transparent !important;
-  --metadata-divider-width: 0 !important;
-  --metadata-gap: 3px !important;
-  --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --metadata-input-background-hover: transparent !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --metadata-background: transparent;
+  --metadata-border-color: hsl(258, calc(88% / 3), 35%);
+  --metadata-border-radius: 0;
+  --metadata-border-width: 0;
+  --metadata-display-editing: block;
+  --metadata-display-reading: block;
+  --metadata-divider-color: hsl(258, calc(88% / 3), 35%);
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-color-hover: transparent;
+  --metadata-divider-width: 0;
+  --metadata-gap: 3px;
+  --metadata-input-background: transparent;
+  --metadata-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875rem !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
-  --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: hsl(258, calc(88% / 3), 80%) !important;
-  --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --metadata-label-background-hover: transparent !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-font-size: 0.875rem;
+  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-longtext-lines: 3;
+  --metadata-input-text-color: hsl(258, calc(88% / 3), 80%);
+  --metadata-label-background: transparent;
+  --metadata-label-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875rem !important;
-  --metadata-label-text-color: hsl(258, calc(88% / 3), 50%) !important;
-  --metadata-label-text-color-hover: hsl(258, calc(88% / 3), 50%) !important;
-  --metadata-label-width: 9em !important;
-  --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
-  --metadata-property-background: transparent !important;
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font-size: 0.875rem;
+  --metadata-label-text-color: hsl(258, calc(88% / 3), 50%);
+  --metadata-label-text-color-hover: hsl(258, calc(88% / 3), 50%);
+  --metadata-label-width: 9em;
+  --metadata-max-width: none;
+  --metadata-padding: 8px 0;
+  --metadata-property-background: transparent;
   --metadata-property-background-active: rgba(
     from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(258, calc(88% / 3), 45%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(258, calc(88% / 3), 40%) !important;
-  --metadata-property-padding: 0 !important;
-  --metadata-property-radius: 6px !important;
-  --metadata-property-radius-focus: 6px !important;
-  --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 13px !important;
-  --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: hsl(258, calc(88% / 3), 10%) !important;
-  --modal-border-color: hsl(258, calc(88% / 3), 45%) !important;
-  --modal-border-width: 1px !important;
-  --modal-community-sidebar-width: 280px !important;
-  --modal-height: 85vh !important;
-  --modal-max-height: 1000px !important;
-  --modal-max-width: 1100px !important;
-  --modal-max-width-narrow: 800px !important;
-  --modal-radius: 12px !important;
-  --modal-width: 90vw !important;
-  --mono-rgb-0: 0, 0, 0 !important;
-  --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: hsl(258, calc(88% / 3), 35%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(258, calc(88% / 3), 35%) !important;
-  --nav-heading-color: hsl(258, calc(88% / 3), 80%) !important;
-  --nav-heading-color-collapsed: hsl(258, calc(88% / 3), 35%) !important;
-  --nav-heading-color-collapsed-hover: hsl(258, calc(88% / 3), 50%) !important;
-  --nav-heading-color-hover: hsl(258, calc(88% / 3), 80%) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255 / 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --nav-item-background-hover: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.2
-  ) !important;
-  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
-  --nav-item-children-margin-start: 12px !important;
-  --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: hsl(258, calc(88% / 3), 50%) !important;
-  --nav-item-color-active: hsl(258, calc(88% / 3), 60%) !important;
+  );
+  --metadata-property-background-hover: transparent;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(258, calc(88% / 3), 45%);
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(258, calc(88% / 3), 40%);
+  --metadata-property-padding: 0;
+  --metadata-property-radius: 6px;
+  --metadata-property-radius-focus: 6px;
+  --metadata-property-radius-hover: 6px;
+  --metadata-sidebar-input-font-size: 13px;
+  --metadata-sidebar-label-font-size: 13px;
+  --modal-background: hsl(258, calc(88% / 3), 10%);
+  --modal-border-color: hsl(258, calc(88% / 3), 45%);
+  --modal-border-width: 1px;
+  --modal-community-sidebar-width: 280px;
+  --modal-height: 85vh;
+  --modal-max-height: 1000px;
+  --modal-max-width: 1100px;
+  --modal-max-width-narrow: 800px;
+  --modal-radius: 12px;
+  --modal-width: 90vw;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-collapse-icon-color: hsl(258, calc(88% / 3), 35%);
+  --nav-collapse-icon-color-collapsed: hsl(258, calc(88% / 3), 35%);
+  --nav-heading-color: hsl(258, calc(88% / 3), 80%);
+  --nav-heading-color-collapsed: hsl(258, calc(88% / 3), 35%);
+  --nav-heading-color-collapsed-hover: hsl(258, calc(88% / 3), 50%);
+  --nav-heading-color-hover: hsl(258, calc(88% / 3), 80%);
+  --nav-heading-weight: 500;
+  --nav-heading-weight-hover: 500;
+  --nav-indentation-guide-color: rgba(255, 255, 255 / 0.12);
+  --nav-indentation-guide-width: 1px;
+  --nav-item-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --nav-item-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15);
+  --nav-item-children-margin-start: 12px;
+  --nav-item-children-padding-start: 4px;
+  --nav-item-color: hsl(258, calc(88% / 3), 50%);
+  --nav-item-color-active: hsl(258, calc(88% / 3), 60%);
   --nav-item-color-highlighted: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --nav-item-color-hover: hsl(258, calc(88% / 3), 80%) !important;
-  --nav-item-color-selected: hsl(258, calc(88% / 3), 80%) !important;
-  --nav-item-padding: 4px 8px 4px 24px !important;
-  --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-size: 13px !important;
-  --nav-item-white-space: pre !important;
-  --p-spacing: calc(1.5 * 1rem) !important;
-  --p-spacing-empty: 0rem !important;
-  --page-border: 9px solid transparent !important;
-  --page-margin: 1px auto -8px !important;
-  --pdf-background: hsl(258, calc(88% / 3), 10%) !important;
-  --pdf-page-background: hsl(258, calc(88% / 3), 10%) !important;
-  --pdf-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%) !important;
-  --pdf-sidebar-background: hsl(258, calc(88% / 3), 10%) !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%) !important;
-  --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --pill-border-color-hover: hsl(258, calc(88% / 3), 40%) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(258, calc(88% / 3), 50%) !important;
-  --pill-color-hover: hsl(258, calc(88% / 3), 80%) !important;
-  --pill-color-remove: hsl(258, calc(88% / 3), 35%) !important;
+  );
+  --nav-item-color-hover: hsl(258, calc(88% / 3), 80%);
+  --nav-item-color-selected: hsl(258, calc(88% / 3), 80%);
+  --nav-item-padding: 4px 8px 4px 24px;
+  --nav-item-parent-padding: 4px 8px 4px 24px;
+  --nav-item-size: 13px;
+  --nav-item-white-space: pre;
+  --p-spacing: calc(1.5 * 1rem);
+  --p-spacing-empty: 0rem;
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdf-background: hsl(258, calc(88% / 3), 10%);
+  --pdf-page-background: hsl(258, calc(88% / 3), 10%);
+  --pdf-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%);
+  --pdf-sidebar-background: hsl(258, calc(88% / 3), 10%);
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(258, calc(88% / 3), 35%);
+  --pdfViewer-padding-bottom: 0;
+  --pill-background: transparent;
+  --pill-background-hover: transparent;
+  --pill-border-color: hsl(258, calc(88% / 3), 35%);
+  --pill-border-color-hover: hsl(258, calc(88% / 3), 40%);
+  --pill-border-width: 1px;
+  --pill-color: hsl(258, calc(88% / 3), 50%);
+  --pill-color-hover: hsl(258, calc(88% / 3), 80%);
+  --pill-color-remove: hsl(258, calc(88% / 3), 35%);
   --pill-color-remove-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --pill-decoration: none !important;
-  --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
-  --pill-padding-x: 0.65em !important;
-  --pill-padding-y: 0.25em !important;
-  --pill-radius: 2em !important;
-  --popover-font-size: 16px !important;
-  --popover-height: 400px !important;
-  --popover-max-height: 95vh !important;
-  --popover-pdf-height: 400px !important;
-  --popover-pdf-width: 450px !important;
-  --popover-width: 450px !important;
-  --prompt-border-color: hsl(258, calc(88% / 3), 45%) !important;
-  --prompt-border-width: 1px !important;
-  --prompt-input-height: 40px !important;
-  --prompt-max-height: 70vh !important;
-  --prompt-max-width: 80vw !important;
-  --prompt-width: 700px !important;
-  --radius-l: 12px !important;
-  --radius-m: 8px !important;
-  --radius-s: 4px !important;
-  --radius-xl: 16px !important;
-  --ribbon-background: hsl(258, calc(88% / 3), 15%) !important;
-  --ribbon-background-collapsed: hsl(258, calc(88% / 3), 10%) !important;
-  --ribbon-padding: 8px 4px 12px !important;
-  --ribbon-width: 44px !important;
-  --safe-area-inset-bottom: 0px !important;
-  --safe-area-inset-left: 0px !important;
-  --safe-area-inset-right: 0px !important;
-  --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255 / 0.2) !important;
-  --scrollbar-bg: rgba(255, 255, 255 / 0.05) !important;
-  --scrollbar-border-width: 3px 3px 3px 2px !important;
-  --scrollbar-height: 12px !important;
-  --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255 / 0.1) !important;
-  --scrollbar-width: 12px !important;
-  --search-clear-button-color: hsl(258, calc(88% / 3), 50%) !important;
-  --search-clear-button-size: 13px !important;
-  --search-icon-color: hsl(258, calc(88% / 3), 50%) !important;
-  --search-icon-size: 18px !important;
-  --search-result-background: hsl(258, calc(88% / 3), 10%) !important;
+  );
+  --pill-decoration: none;
+  --pill-decoration-hover: none;
+  --pill-focus-left-adjust: -4px;
+  --pill-focus-width: calc(100% + 6px);
+  --pill-padding-x: 0.65em;
+  --pill-padding-y: 0.25em;
+  --pill-radius: 2em;
+  --popover-font-size: 16px;
+  --popover-height: 400px;
+  --popover-max-height: 95vh;
+  --popover-pdf-height: 400px;
+  --popover-pdf-width: 450px;
+  --popover-width: 450px;
+  --prompt-border-color: hsl(258, calc(88% / 3), 45%);
+  --prompt-border-width: 1px;
+  --prompt-input-height: 40px;
+  --prompt-max-height: 70vh;
+  --prompt-max-width: 80vw;
+  --prompt-width: 700px;
+  --radius-l: 12px;
+  --radius-m: 8px;
+  --radius-s: 4px;
+  --radius-xl: 16px;
+  --ribbon-background: hsl(258, calc(88% / 3), 15%);
+  --ribbon-background-collapsed: hsl(258, calc(88% / 3), 10%);
+  --ribbon-padding: 8px 4px 12px;
+  --ribbon-width: 44px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
+  --safe-area-inset-right: 0px;
+  --safe-area-inset-top: 0px;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255 / 0.2);
+  --scrollbar-bg: rgba(255, 255, 255 / 0.05);
+  --scrollbar-border-width: 3px 3px 3px 2px;
+  --scrollbar-height: 12px;
+  --scrollbar-radius: 12px;
+  --scrollbar-thumb-bg: rgba(255, 255, 255 / 0.1);
+  --scrollbar-width: 12px;
+  --search-clear-button-color: hsl(258, calc(88% / 3), 50%);
+  --search-clear-button-size: 13px;
+  --search-icon-color: hsl(258, calc(88% / 3), 50%);
+  --search-icon-size: 18px;
+  --search-result-background: hsl(258, calc(88% / 3), 10%);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
-  --sidebar-tab-text-display: none !important;
-  --size-2-1: 2px !important;
-  --size-2-2: 4px !important;
-  --size-2-3: 6px !important;
-  --size-4-1: 4px !important;
-  --size-4-10: 40px !important;
-  --size-4-12: 48px !important;
-  --size-4-16: 64px !important;
-  --size-4-18: 72px !important;
-  --size-4-2: 8px !important;
-  --size-4-3: 12px !important;
-  --size-4-4: 16px !important;
-  --size-4-5: 20px !important;
-  --size-4-6: 24px !important;
-  --size-4-8: 32px !important;
-  --size-4-9: 36px !important;
-  --slider-s-thumb-position: -5px !important;
-  --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsl(258, calc(88% / 3), 40%) !important;
-  --slider-thumb-border-width: 1px !important;
-  --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
-  --slider-thumb-width: 18px !important;
-  --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(258, calc(88% / 3), 35%) !important;
-  --slider-track-height: 3px !important;
-  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(258, calc(88% / 3), 15%) !important;
-  --status-bar-border-color: hsl(258, calc(88% / 3), 50%) !important;
-  --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 12px !important;
-  --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: hsl(258, calc(88% / 3), 50%) !important;
-  --swatch-height: 22px !important;
-  --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255 / 0.15) !important;
-  --swatch-width: 22px !important;
-  --sync-avatar-color-1: hsl(5, 88%, 66%) !important;
-  --sync-avatar-color-2: hsl(25, 88%, 66%) !important;
-  --sync-avatar-color-3: hsl(50, 88%, 66%) !important;
-  --sync-avatar-color-4: hsl(100, 88%, 66%) !important;
-  --sync-avatar-color-5: hsl(185, 88%, 66%) !important;
-  --sync-avatar-color-6: hsl(210, 88%, 66%) !important;
-  --sync-avatar-color-7: hsl(270, 88%, 66%) !important;
-  --sync-avatar-color-8: hsl(320, 88%, 66%) !important;
-  --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(258, calc(88% / 3), 10%) !important;
-  --tab-container-background: hsl(258, calc(88% / 3), 15%) !important;
-  --tab-curve: 6px !important;
-  --tab-divider-color: hsl(258, calc(88% / 3), 40%) !important;
-  --tab-font-size: 13px !important;
-  --tab-max-width: 320px !important;
-  --tab-outline-color: hsl(258, calc(88% / 3), 35%) !important;
-  --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
-  --tab-radius-active: 6px 6px 0 0 !important;
-  --tab-stacked-font-size: 13px !important;
-  --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
-  --tab-stacked-pane-width: 700px !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
-  --tab-stacked-text-align: start !important;
-  --tab-stacked-text-transform: rotate(0deg) !important;
-  --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(258, calc(88% / 3), 15%) !important;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255 / 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --tab-text-color: hsl(258, calc(88% / 3), 35%) !important;
-  --tab-text-color-active: hsl(258, calc(88% / 3), 50%) !important;
-  --tab-text-color-focused: hsl(258, calc(88% / 3), 50%) !important;
-  --tab-text-color-focused-active: hsl(258, calc(88% / 3), 50%) !important;
-  --tab-text-color-focused-active-current: hsl(
-    258,
-    calc(88% / 3),
-    60%
-  ) !important;
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-tab-text-display: none;
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-10: 40px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+  --size-4-18: 72px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --slider-s-thumb-position: -5px;
+  --slider-s-thumb-size: 15px;
+  --slider-thumb-border-color: hsl(258, calc(88% / 3), 40%);
+  --slider-thumb-border-width: 1px;
+  --slider-thumb-height: 18px;
+  --slider-thumb-radius: 50%;
+  --slider-thumb-width: 18px;
+  --slider-thumb-y: -6px;
+  --slider-track-background: hsl(258, calc(88% / 3), 35%);
+  --slider-track-height: 3px;
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --status-bar-background: hsl(258, calc(88% / 3), 15%);
+  --status-bar-border-color: hsl(258, calc(88% / 3), 50%);
+  --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-font-size: 12px;
+  --status-bar-position: fixed;
+  --status-bar-radius: 8px 0 0 0;
+  --status-bar-text-color: hsl(258, calc(88% / 3), 50%);
+  --swatch-height: 22px;
+  --swatch-radius: 14px;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255 / 0.15);
+  --swatch-width: 22px;
+  --sync-avatar-color-1: hsl(5, 88%, 66%);
+  --sync-avatar-color-2: hsl(25, 88%, 66%);
+  --sync-avatar-color-3: hsl(50, 88%, 66%);
+  --sync-avatar-color-4: hsl(100, 88%, 66%);
+  --sync-avatar-color-5: hsl(185, 88%, 66%);
+  --sync-avatar-color-6: hsl(210, 88%, 66%);
+  --sync-avatar-color-7: hsl(270, 88%, 66%);
+  --sync-avatar-color-8: hsl(320, 88%, 66%);
+  --sync-avatar-color-current-user: transparent;
+  --tab-background-active: hsl(258, calc(88% / 3), 10%);
+  --tab-container-background: hsl(258, calc(88% / 3), 15%);
+  --tab-curve: 6px;
+  --tab-divider-color: hsl(258, calc(88% / 3), 40%);
+  --tab-font-size: 13px;
+  --tab-max-width: 320px;
+  --tab-outline-color: hsl(258, calc(88% / 3), 35%);
+  --tab-outline-width: 1px;
+  --tab-radius: 4px;
+  --tab-radius-active: 6px 6px 0 0;
+  --tab-stacked-font-size: 13px;
+  --tab-stacked-font-weight: 400;
+  --tab-stacked-header-width: 40px;
+  --tab-stacked-pane-width: 700px;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-text-align: start;
+  --tab-stacked-text-transform: rotate(0deg);
+  --tab-stacked-text-writing-mode: vertical-lr;
+  --tab-switcher-background: hsl(258, calc(88% / 3), 15%);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-radius: 16px;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255 / 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --tab-text-color: hsl(258, calc(88% / 3), 35%);
+  --tab-text-color-active: hsl(258, calc(88% / 3), 50%);
+  --tab-text-color-focused: hsl(258, calc(88% / 3), 50%);
+  --tab-text-color-focused-active: hsl(258, calc(88% / 3), 50%);
+  --tab-text-color-focused-active-current: hsl(258, calc(88% / 3), 60%);
   --tab-text-color-focused-highlighted: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
-  ) !important;
-  --tab-width: 200px !important;
-  --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --table-add-button-border-width: 0.1rem !important;
-  --table-background: transparent !important;
-  --table-border-color: hsl(258, 88%, 66%) !important;
-  --table-border-width: 0.1rem !important;
-  --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 0.1rem !important;
-  --table-column-last-border-width: 0.1rem !important;
-  --table-column-max-width: none !important;
-  --table-column-min-width: 6ch !important;
-  --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color: hsl(258, calc(88% / 3), 35%) !important;
-  --table-drag-handle-color-active: white !important;
-  --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: hsl(258, 88%, 66%) !important;
-  --table-header-border-color: hsl(258, 88%, 66%) !important;
-  --table-header-border-width: 0.1rem !important;
-  --table-header-color: hsl(258, calc(88% / 3), 10%) !important;
-  --table-header-size: 16px !important;
-  --table-header-weight: calc(400 + 200) !important;
-  --table-line-height: 1.3 !important;
-  --table-row-alt-background: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.15
-  ) !important;
+  );
+  --tab-width: 200px;
+  --table-add-button-background: transparent;
+  --table-add-button-border-color: hsl(258, calc(88% / 3), 35%);
+  --table-add-button-border-width: 0.1rem;
+  --table-background: transparent;
+  --table-border-color: hsl(258, 88%, 66%);
+  --table-border-width: 0.1rem;
+  --table-cell-vertical-alignment: top;
+  --table-column-alt-background: transparent;
+  --table-column-first-border-width: 0.1rem;
+  --table-column-last-border-width: 0.1rem;
+  --table-column-max-width: none;
+  --table-column-min-width: 6ch;
+  --table-drag-handle-background: transparent;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%);
+  --table-drag-handle-color: hsl(258, calc(88% / 3), 35%);
+  --table-drag-handle-color-active: white;
+  --table-drop-indicator-half-width: 2px;
+  --table-header-background: hsl(258, 88%, 66%);
+  --table-header-border-color: hsl(258, 88%, 66%);
+  --table-header-border-width: 0.1rem;
+  --table-header-color: hsl(258, calc(88% / 3), 10%);
+  --table-header-size: 16px;
+  --table-header-weight: calc(400 + 200);
+  --table-line-height: 1.3;
+  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
   --table-row-alt-background-hover: rgba(
     from hsl(258, 88%, 66%) r g b / calc(0.15 * 2)
-  ) !important;
-  --table-row-background-hover: rgba(
-    from hsl(258, 88%, 66%) r g b / 0.15
-  ) !important;
-  --table-row-last-border-width: 0.1rem !important;
-  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
-  --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: hsl(258, 88%, 66%) !important;
-  --table-selection-border-radius: 4px !important;
-  --table-selection-border-width: 2px !important;
-  --table-text-size: 16px !important;
-  --table-white-space: break-spaces !important;
-  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
-  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
-  --tag-border-width: 0px !important;
-  --tag-color: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --tag-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --tag-decoration: none !important;
-  --tag-decoration-hover: none !important;
-  --tag-padding-x: 0.65em !important;
-  --tag-padding-y: 0.25em !important;
-  --tag-radius: 2em !important;
-  --tag-size: 0.875rem !important;
-  --text-accent: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --text-accent-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  ) !important;
-  --text-error: hsl(5, 88%, 66%) !important;
-  --text-faint: hsl(258, calc(88% / 3), 35%) !important;
-  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
-  --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b !important;
-  --text-muted: hsl(258, calc(88% / 3), 50%) !important;
-  --text-normal: hsl(258, calc(88% / 3), 80%) !important;
-  --text-on-accent: white !important;
-  --text-on-accent-inverted: black !important;
-  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
-  --text-success: hsl(100, 88%, 66%) !important;
-  --text-warning: hsl(25, 88%, 66%) !important;
-  --titlebar-background: hsl(258, calc(88% / 3), 15%) !important;
-  --titlebar-background-focused: hsl(258, calc(88% / 3), 15%) !important;
-  --titlebar-border-color: hsl(258, calc(88% / 3), 35%) !important;
-  --titlebar-border-width: 0px !important;
-  --titlebar-height: 30px !important;
-  --titlebar-text-color: hsl(258, calc(88% / 3), 50%) !important;
-  --titlebar-text-color-focused: hsl(258, calc(88% / 3), 80%) !important;
-  --titlebar-text-weight: 700 !important;
-  --toggle-border-width: 2px !important;
-  --toggle-radius: 18px !important;
-  --toggle-s-border-width: 2px !important;
-  --toggle-s-thumb-height: 15px !important;
-  --toggle-s-thumb-width: 15px !important;
-  --toggle-s-width: 34px !important;
-  --toggle-thumb-color: white !important;
-  --toggle-thumb-height: 18px !important;
-  --toggle-thumb-radius: 18px !important;
-  --toggle-thumb-width: 18px !important;
-  --toggle-width: 40px !important;
-  --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsl(258, calc(88% / 3), 60%) !important;
-  --vault-profile-color-hover: hsl(258, calc(88% / 3), 60%) !important;
-  --vault-profile-display: flex !important;
-  --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
-  --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(0, 0, 0 / 0.6) !important;
-  --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
-  --zoom-factor: 1 !important;
-  --h1-color: hsl(258, 88%, 66%) !important;
-  --h2-color: hsl(258, 88%, 66%) !important;
-  --h3-color: hsl(258, 88%, 66%) !important;
-  --h4-color: hsl(258, 88%, 66%) !important;
-  --h5-color: hsl(258, 88%, 66%) !important;
-  --h6-color: hsl(258, 88%, 66%) !important;
-  --inline-title-color: hsl(258, 88%, 66%) !important;
-  --blockquote-color:  !important;
-  --table-header-background-hover: hsl(258, 88%, 66%) !important;
-  --accent-color: hsl(258, 88%, 66%) !important;
-  --accent-rgb: from hsl(258, 88%, 66%) r g b !important;
-  --blue-h: 210 !important;
-  --callout-color: from hsl(258, 88%, 66%) r g b !important;
-  --color-grey: hsl(0, 0%, 66%) !important;
-  --color-grey-rgb: from hsl(0, 0%, 66%) r g b !important;
-  --cyan-h: 185 !important;
+  );
+  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  --table-row-last-border-width: 0.1rem;
+  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection-blend-mode: lighten;
+  --table-selection-border-color: hsl(258, 88%, 66%);
+  --table-selection-border-radius: 4px;
+  --table-selection-border-width: 2px;
+  --table-text-size: 16px;
+  --table-white-space: break-spaces;
+  --tag-background: hsla(258, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
+  --tag-border-color: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-border-width: 0px;
+  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --tag-size: 0.875rem;
+  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-error: hsl(5, 88%, 66%);
+  --text-faint: hsl(258, calc(88% / 3), 35%);
+  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25);
+  --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
+  --text-muted: hsl(258, calc(88% / 3), 50%);
+  --text-normal: hsl(258, calc(88% / 3), 80%);
+  --text-on-accent: white;
+  --text-on-accent-inverted: black;
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-success: hsl(100, 88%, 66%);
+  --text-warning: hsl(25, 88%, 66%);
+  --titlebar-background: hsl(258, calc(88% / 3), 15%);
+  --titlebar-background-focused: hsl(258, calc(88% / 3), 15%);
+  --titlebar-border-color: hsl(258, calc(88% / 3), 35%);
+  --titlebar-border-width: 0px;
+  --titlebar-height: 30px;
+  --titlebar-text-color: hsl(258, calc(88% / 3), 50%);
+  --titlebar-text-color-focused: hsl(258, calc(88% / 3), 80%);
+  --titlebar-text-weight: 700;
+  --toggle-border-width: 2px;
+  --toggle-radius: 18px;
+  --toggle-s-border-width: 2px;
+  --toggle-s-thumb-height: 15px;
+  --toggle-s-thumb-width: 15px;
+  --toggle-s-width: 34px;
+  --toggle-thumb-color: white;
+  --toggle-thumb-height: 18px;
+  --toggle-thumb-radius: 18px;
+  --toggle-thumb-width: 18px;
+  --toggle-width: 40px;
+  --vault-profile-actions-display: flex;
+  --vault-profile-color: hsl(258, calc(88% / 3), 60%);
+  --vault-profile-color-hover: hsl(258, calc(88% / 3), 60%);
+  --vault-profile-display: flex;
+  --vault-profile-font-size: 13px;
+  --vault-profile-font-weight: 500;
+  --viewer-container-height: 0;
+  --workspace-background-translucent: rgba(0, 0, 0 / 0.6);
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --zoom-factor: 1;
+  --h1-color: hsl(258, 88%, 66%);
+  --h2-color: hsl(258, 88%, 66%);
+  --h3-color: hsl(258, 88%, 66%);
+  --h4-color: hsl(258, 88%, 66%);
+  --h5-color: hsl(258, 88%, 66%);
+  --h6-color: hsl(258, 88%, 66%);
+  --inline-title-color: hsl(258, 88%, 66%);
+  --blockquote-color: ;
+  --table-header-background-hover: hsl(258, 88%, 66%);
+  --accent-color: hsl(258, 88%, 66%);
+  --accent-rgb: from hsl(258, 88%, 66%) r g b;
+  --blue-h: 210;
+  --callout-color: from hsl(258, 88%, 66%) r g b;
+  --color-grey: hsl(0, 0%, 66%);
+  --color-grey-rgb: from hsl(0, 0%, 66%) r g b;
+  --cyan-h: 185;
   --font-heading-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif !important;
-  --green-h: 100 !important;
-  --opacity: 0.15 !important;
-  --orange-h: 25 !important;
-  --pink-h: 320 !important;
-  --purple-h: 270 !important;
-  --red-h: 5 !important;
-  --yellow-h: 50 !important;
+    sans-serif;
+  --green-h: 100;
+  --opacity: 0.15;
+  --orange-h: 25;
+  --pink-h: 320;
+  --purple-h: 270;
+  --red-h: 5;
+  --yellow-h: 50;
 }
 
 body .markdown-rendered a.external-link {

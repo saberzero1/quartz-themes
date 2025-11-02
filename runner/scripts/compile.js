@@ -396,7 +396,8 @@ function generateAndWriteCSS(
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
       // For Publish: include all variables
-      bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
+      bodyVarsStringDarkPublish += `  ${key}: ${value};\n`;
+      // bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
