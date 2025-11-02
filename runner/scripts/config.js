@@ -25,6 +25,10 @@ const expansions = {
     "border-top-right-radius",
     "border-bottom-left-radius",
     "border-bottom-right-radius",
+    "border-start-start-radius",
+    "border-start-end-radius",
+    "border-end-start-radius",
+    "border-end-end-radius",
   ],
 };
 
@@ -1621,7 +1625,7 @@ export const config = [
   {
     obsidianSelector: `pre.language-js`,
     publishSelector: `.markdown-rendered pre > code`,
-    quartzSelector: "pre > code",
+    quartzSelector: "pre > code, pre:has(> code)",
     pseudoElement: "",
     properties: [
       "background-color",

@@ -1259,6 +1259,10 @@ body .suggestion-item.is-selected {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(34, 34, 34);
 }
 body div.suggestion-item {
@@ -1279,6 +1283,10 @@ body div.suggestion-item {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(34, 34, 34);
 }
 body .markdown-rendered hr {
@@ -1298,6 +1306,10 @@ body .markdown-rendered hr {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -1342,6 +1354,10 @@ body div.multi-select-pill {
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
+  border-start-start-radius: 28px;
+  border-start-end-radius: 28px;
+  border-end-start-radius: 28px;
+  border-end-end-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(34, 34, 34);
@@ -1368,6 +1384,10 @@ body .markdown-rendered ul > li::marker {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(34, 34, 34);
   content: normal;
   pointer-events: auto;
@@ -1399,6 +1419,10 @@ body .markdown-rendered code {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(34, 34, 34);
   font-family: monospace;
   padding-top: 0px;
@@ -1424,6 +1448,10 @@ body .markdown-rendered pre > code {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   overflow-x: visible;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1451,6 +1479,10 @@ body pre[class*="language-"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   overflow-x: visible;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1477,6 +1509,10 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 2px;
@@ -1564,6 +1600,10 @@ body .site-body-left-column input.search-bar {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(0, 0, 0);
   font-family: Arial;
 }
@@ -1585,6 +1625,10 @@ body .search-results {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
 }
 body .search-results > * {
@@ -1631,6 +1675,10 @@ body div.search-results {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
   color: rgb(34, 34, 34);
@@ -1652,6 +1700,10 @@ body div.search-results .suggestion-item {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
   color: rgb(34, 34, 34);
@@ -1783,6 +1835,10 @@ body .markdown-preview-sizer {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
 }
 body .callout[data-callout="note"] {
@@ -1803,6 +1859,10 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1828,6 +1888,10 @@ body .callout[data-callout="note"] > .callout-title {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -1872,6 +1936,10 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="abstract"]
@@ -1901,6 +1969,10 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="info"]
@@ -1930,6 +2002,10 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="todo"]
@@ -1959,6 +2035,10 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="tip"]
@@ -1988,6 +2068,10 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="success"]
@@ -2017,6 +2101,10 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="question"]
@@ -2046,6 +2134,10 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="warning"]
@@ -2075,6 +2167,10 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="danger"]
@@ -2104,6 +2200,10 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="failure"]
@@ -2133,6 +2233,10 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="bug"]
@@ -2162,6 +2266,10 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="example"]
@@ -2191,6 +2299,10 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="quote"]
