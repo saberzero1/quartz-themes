@@ -1704,7 +1704,7 @@ body .markdown-rendered a.external-link {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1731,7 +1731,7 @@ body .markdown-rendered a.internal-link {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1758,7 +1758,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1785,7 +1785,7 @@ body .markdown-rendered p {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1814,7 +1814,7 @@ body strong {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1841,7 +1841,7 @@ body b {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1870,7 +1870,7 @@ body em {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(153, 153, 153);
-  text-decoration-color: rgb(153, 153, 153);
+  text-decoration-color: light-dark(rgb(112, 112, 112), rgb(153, 153, 153));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1897,7 +1897,7 @@ body i {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1953,7 +1953,7 @@ body del {
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(186, 186, 186);
-  text-decoration-color: rgb(186, 186, 186);
+  text-decoration-color: light-dark(rgb(90, 90, 90), rgb(186, 186, 186));
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1966,6 +1966,10 @@ body .suggestion-item.is-selected {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.suggestion-item {
@@ -1974,10 +1978,10 @@ body div.suggestion-item {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -1986,6 +1990,10 @@ body div.suggestion-item {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
@@ -1993,10 +2001,10 @@ body .markdown-rendered hr {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
+  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 2px;
@@ -2005,6 +2013,10 @@ body .markdown-rendered hr {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -2039,10 +2051,10 @@ body div.multi-select-pill {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(0, 119, 255);
-  border-right-color: rgb(0, 119, 255);
-  border-top-color: rgb(0, 119, 255);
-  border-bottom-color: rgb(0, 119, 255);
+  border-left-color: light-dark(rgb(8, 108, 221), rgb(0, 119, 255));
+  border-right-color: light-dark(rgb(8, 108, 221), rgb(0, 119, 255));
+  border-top-color: light-dark(rgb(8, 108, 221), rgb(0, 119, 255));
+  border-bottom-color: light-dark(rgb(8, 108, 221), rgb(0, 119, 255));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2051,6 +2063,10 @@ body div.multi-select-pill {
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
+  border-start-start-radius: 28px;
+  border-start-end-radius: 28px;
+  border-end-start-radius: 28px;
+  border-end-end-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2065,10 +2081,10 @@ body .markdown-rendered ul > li::marker {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2077,6 +2093,10 @@ body .markdown-rendered ul > li::marker {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   content: normal;
   pointer-events: auto;
@@ -2096,10 +2116,10 @@ body .markdown-rendered code {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2108,6 +2128,10 @@ body .markdown-rendered code {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
   padding-top: 0px;
@@ -2121,10 +2145,10 @@ body .markdown-rendered pre > code {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2133,6 +2157,10 @@ body .markdown-rendered pre > code {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   overflow-x: visible;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2148,10 +2176,10 @@ body pre[class*="language-"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2160,6 +2188,10 @@ body pre[class*="language-"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   overflow-x: visible;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2174,10 +2206,10 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-bottom-style: inset;
   border-right-style: inset;
   border-top-style: inset;
-  border-left-color: rgb(133, 133, 133);
-  border-right-color: rgb(133, 133, 133);
-  border-top-color: rgb(133, 133, 133);
-  border-bottom-color: rgb(133, 133, 133);
+  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-left-width: 2px;
   border-right-width: 2px;
   border-top-width: 2px;
@@ -2186,6 +2218,10 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 2px;
@@ -2227,7 +2263,7 @@ body
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -2261,10 +2297,10 @@ body .site-body-left-column input.search-bar {
   border-bottom-style: inset;
   border-right-style: inset;
   border-top-style: inset;
-  border-left-color: rgb(133, 133, 133);
-  border-right-color: rgb(133, 133, 133);
-  border-top-color: rgb(133, 133, 133);
-  border-bottom-color: rgb(133, 133, 133);
+  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-left-width: 2px;
   border-right-width: 2px;
   border-top-width: 2px;
@@ -2273,6 +2309,10 @@ body .site-body-left-column input.search-bar {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
   font-family: Arial;
 }
@@ -2282,10 +2322,10 @@ body .search-results {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2294,6 +2334,10 @@ body .search-results {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
 }
 body .search-results > * {
@@ -2316,7 +2360,7 @@ body .search-results > * {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2328,10 +2372,10 @@ body div.search-results {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2340,6 +2384,10 @@ body div.search-results {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2349,10 +2397,10 @@ body div.search-results .suggestion-item {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2361,6 +2409,10 @@ body div.search-results .suggestion-item {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2480,10 +2532,10 @@ body .markdown-preview-sizer {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2492,6 +2544,10 @@ body .markdown-preview-sizer {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow: none;
 }
 body .callout[data-callout="note"] {
@@ -2500,10 +2556,10 @@ body .callout[data-callout="note"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2512,6 +2568,10 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2525,10 +2585,10 @@ body .callout[data-callout="note"] > .callout-title {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2537,6 +2597,10 @@ body .callout[data-callout="note"] > .callout-title {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -2569,10 +2633,10 @@ body .callout[data-callout="abstract"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2581,6 +2645,10 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="abstract"]
@@ -2598,10 +2666,10 @@ body .callout[data-callout="info"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2610,6 +2678,10 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="info"]
@@ -2627,10 +2699,10 @@ body .callout[data-callout="todo"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2639,6 +2711,10 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="todo"]
@@ -2656,10 +2732,10 @@ body .callout[data-callout="tip"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2668,6 +2744,10 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="tip"]
@@ -2685,10 +2765,10 @@ body .callout[data-callout="success"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2697,6 +2777,10 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="success"]
@@ -2714,10 +2798,10 @@ body .callout[data-callout="question"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2726,6 +2810,10 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="question"]
@@ -2743,10 +2831,10 @@ body .callout[data-callout="warning"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2755,6 +2843,10 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="warning"]
@@ -2772,10 +2864,10 @@ body .callout[data-callout="danger"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2784,6 +2876,10 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="danger"]
@@ -2801,10 +2897,10 @@ body .callout[data-callout="failure"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2813,6 +2909,10 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="failure"]
@@ -2830,10 +2930,10 @@ body .callout[data-callout="bug"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2842,6 +2942,10 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="bug"]
@@ -2859,10 +2963,10 @@ body .callout[data-callout="example"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2871,6 +2975,10 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="example"]
@@ -2888,10 +2996,10 @@ body .callout[data-callout="quote"] {
   border-bottom-style: none;
   border-right-style: none;
   border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2900,6 +3008,10 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="quote"]
