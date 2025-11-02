@@ -214,15 +214,20 @@ function toHexColors(str) {
 }
 
 // Helper to merge longhand properties into shorthand
+// Create processor instances once for reuse
+const scssProcessor = postcss().use(postcssMergeLonghand());
+const cssProcessor = postcss().use(postcssMergeLonghand());
+
 function mergeLonghandProperties(css, syntax = 'scss') {
   try {
     const postcssOptions = { from: undefined };
+    const processor = syntax === 'scss' ? scssProcessor : cssProcessor;
+    
     if (syntax === 'scss') {
       postcssOptions.syntax = postcssScss;
     }
-    const result = postcss()
-      .use(postcssMergeLonghand())
-      .process(css, postcssOptions).css;
+    
+    const result = processor.process(css, postcssOptions).css;
     return result;
   } catch (e) {
     console.warn("Warning: Could not merge longhand properties:", e.message);
