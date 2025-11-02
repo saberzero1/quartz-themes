@@ -112,6 +112,7 @@ themeCollection.forEach((theme) => {
   const manifest = manifestCollection.find(
     (m) => sanitize(m.name) === theme.name.split(".")[0],
   );
+  console.log(manifest);
   replaceInFile(
     `./themes/${theme.name}/README.md`,
     "%OBSIDIAN_THEME_NAME%",
