@@ -30,6 +30,8 @@ import postcss from "postcss";
 import calc from "postcss-calc";
 import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
 import postcssColorConverter from "postcss-color-converter";
+import postcssMergeLonghand from "postcss-merge-longhand";
+import postcssScss from "postcss-scss";
 import { compileString } from "sass";
 
 let themeName;
@@ -209,6 +211,23 @@ function toHexColors(str) {
   }
 
   return result;
+}
+
+// Helper to merge longhand properties into shorthand
+function mergeLonghandProperties(css, syntax = 'scss') {
+  try {
+    const postcssOptions = { from: undefined };
+    if (syntax === 'scss') {
+      postcssOptions.syntax = postcssScss;
+    }
+    const result = postcss()
+      .use(postcssMergeLonghand())
+      .process(css, postcssOptions).css;
+    return result;
+  } catch (e) {
+    console.warn("Warning: Could not merge longhand properties:", e.message);
+    return css;
+  }
 }
 
 function insertExtras(manifest, themeName) {
@@ -909,6 +928,9 @@ ${insertExtras(manifest, themeName)}
   resultScss = resultScss.replaceAll("--lightningcss-light, ", "");
   resultScss = resultScss.replaceAll("--lightningcss-dark, ", "");
 
+  // Merge longhand properties into shorthand for Quartz SCSS
+  resultScss = mergeLonghandProperties(resultScss, 'scss');
+
   // Generate Publish CSS
   let resultPublishScss = `
 
@@ -972,6 +994,9 @@ ${
   } catch (e) {
     console.error(`Error compiling Publish CSS for ${themeName}:`, e.message);
   }
+
+  // Merge longhand properties into shorthand for Publish CSS
+  resultPublishScss = mergeLonghandProperties(resultPublishScss, 'css');
 
   // Write files
   writeFileSync(targetFile, resultScss, "utf8");

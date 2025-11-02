@@ -57,6 +57,7 @@
     "esbuild": "^0.25.8",
     "mocha": "^11.7.1",
     "obsidian": "^1.8.7",
+    "postcss-merge-longhand": "^7.0.5",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "typescript": "^5.9.2",
