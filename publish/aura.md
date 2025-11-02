@@ -4,10 +4,9 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/aura">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name   | Modes                     | Compatibility                                                                             | License                                                                                                                                             |
+| ------ | ------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `aura` | ![[media/both.svg\|BOTH]] | <img src="media/full.svg" alt="FULL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/aura/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

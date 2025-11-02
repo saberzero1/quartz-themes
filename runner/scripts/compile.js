@@ -397,7 +397,7 @@ function generateAndWriteCSS(
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
       // For Publish: include all variables
       bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
-      
+
       // For Quartz: only include --code-* and --graph-* variables
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
         bodyVarsStringDarkQuartz += `  ${key}: ${value} !important;\n`;
@@ -409,7 +409,7 @@ function generateAndWriteCSS(
     for (const [key, value] of Object.entries(bodyVariables.light)) {
       // For Publish: include all variables
       bodyVarsStringLightPublish += `  ${key}: ${value} !important;\n`;
-      
+
       // For Quartz: only include --code-* and --graph-* variables
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
         bodyVarsStringLightQuartz += `  ${key}: ${value} !important;\n`;

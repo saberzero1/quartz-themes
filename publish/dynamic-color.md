@@ -4,10 +4,9 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dynamic-color">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                            |
+| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `dynamic-color` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dynamic-color/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

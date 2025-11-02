@@ -4,10 +4,9 @@
 - Support the author: <a href="https://www.buymeacoffee.com/lorens" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lorens">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | `lorens` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lorens/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

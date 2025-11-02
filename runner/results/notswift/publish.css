@@ -4,8 +4,10 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
@@ -13,7 +15,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -22,7 +25,8 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -31,8 +35,10 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* math */
 @font-face {
@@ -40,8 +46,21 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 /* symbols */
 @font-face {
@@ -49,8 +68,32 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
 }
 /* vietnamese */
 @font-face {
@@ -58,8 +101,12 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -67,8 +114,12 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
@@ -76,134 +127,195 @@
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 400;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 400;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 300;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 300;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 500;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 500;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 600;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 600;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 700;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 700;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 900;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
 }
 @font-face {
   font-family: "SF Mono";
   font-style: italic;
   font-weight: 900;
-  src: local("SF Mono"), url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff") format("woff");
+  src:
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 100;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 200;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 300;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 600;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 800;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff")
+      format("woff");
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
   font-weight: 900;
-  src: local("SF Pro Display"), url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff") format("woff");
+  src:
+    local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff")
+      format("woff");
 }
 body.theme-light {
   --accent-h: 258 !important;
@@ -219,35 +331,35 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #D8D2D2 !important;
+  --background-modifier-border: #d8d2d2 !important;
   --background-modifier-border-focus: hsl(258, 88%, 66%) !important;
-  --background-modifier-border-hover: #D8D2D2 !important;
+  --background-modifier-border-hover: #d8d2d2 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
   --background-modifier-error: #ec3643 !important;
   --background-modifier-error-hover: #ec3643 !important;
   --background-modifier-error-rgb: 236, 54, 67 !important;
-  --background-modifier-form-field: #FFFFFF !important;
-  --background-modifier-form-field-hover: #FFFFFF !important;
+  --background-modifier-form-field: #ffffff !important;
+  --background-modifier-form-field-hover: #ffffff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #65c756 !important;
   --background-modifier-success-rgb: 101, 199, 86 !important;
-  --background-primary: #FFFFFF !important;
-  --background-primary-alt: #FFFFFF !important;
-  --background-secondary: #F0E8E6 !important;
-  --background-secondary-alt: #FAFAFA !important;
-  --bases-cards-background: #FFFFFF !important;
+  --background-primary: #ffffff !important;
+  --background-primary-alt: #ffffff !important;
+  --background-secondary: #f0e8e6 !important;
+  --background-secondary-alt: #fafafa !important;
+  --bases-cards-background: #ffffff !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #FFFFFF !important;
+  --bases-cards-cover-background: #ffffff !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #D8D2D2 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #D8D2D2 !important;
+  --bases-cards-shadow: 0 0 0 1px #d8d2d2 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #d8d2d2 !important;
   --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: #D8D2D2 !important;
+  --bases-embed-border-color: #d8d2d2 !important;
   --bases-embed-border-radius: 2px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -255,9 +367,9 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #D8D2D2 !important;
-  --bases-table-cell-background-active: #FFFFFF !important;
-  --bases-table-cell-background-disabled: #FFFFFF !important;
+  --bases-table-border-color: #d8d2d2 !important;
+  --bases-table-cell-background-active: #ffffff !important;
+  --bases-table-cell-background-disabled: #ffffff !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-column-border-width: 1px !important;
@@ -265,11 +377,15 @@ body.theme-light {
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: #FFFFFF !important;
+  --bases-table-header-background: #ffffff !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #6E6966 !important;
+  --bases-table-header-color: #6e6966 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -308,8 +424,8 @@ body.theme-light {
   --callout-title-weight: calc(400 + 200) !important;
   --callout-todo: 8, 132, 255 !important;
   --callout-warning: 249, 158, 21 !important;
-  --canvas-background: #FFFFFF !important;
-  --canvas-card-label-color: #B8B2B1 !important;
+  --canvas-background: #ffffff !important;
+  --canvas-card-label-color: #b8b2b1 !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 236, 54, 67 !important;
   --canvas-color-2: 249, 158, 21 !important;
@@ -317,55 +433,67 @@ body.theme-light {
   --canvas-color-4: 101, 199, 86 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 193, 97, 253 !important;
-  --canvas-dot-pattern: #DFD7D7 !important;
+  --canvas-dot-pattern: #dfd7d7 !important;
   --caret-color: rgb(76, 73, 73) !important;
-  --checkbox-border-color: #E0DAD8 !important;
+  --checkbox-border-color: #e0dad8 !important;
   --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 88%, 66%) !important;
-  --checkbox-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --checkbox-color-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #FFFFFF !important;
+  --checkbox-marker-color: #ffffff !important;
   --checkbox-radius: 50% !important;
   --checkbox-size: 10px !important;
-  --checklist-done-color: #B8B2B1 !important;
+  --checklist-done-color: #b8b2b1 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #FAFAFA !important;
-  --code-border-color: #D8D2D2 !important;
+  --code-background: #fafafa !important;
+  --code-border-color: #d8d2d2 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: #B8B2B1 !important;
+  --code-comment: #b8b2b1 !important;
   --code-function: #e0ac00 !important;
   --code-important: #f99e15 !important;
   --code-keyword: #d53984 !important;
   --code-normal: rgb(76, 73, 73) !important;
   --code-operator: #ec3643 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: #6E6966 !important;
+  --code-punctuation: #6e6966 !important;
   --code-radius: 2px !important;
   --code-size: 0.875em !important;
   --code-string: #65c756 !important;
   --code-tag: #ec3643 !important;
   --code-value: #c161fd !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #6E6966 !important;
+  --collapse-icon-color: #6e6966 !important;
   --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
   --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --color-accent-1: hsl(
+    calc(258 - 1),
+    calc(88% * 1.01),
+    calc(66% * 1.075)
+  ) !important;
+  --color-accent-2: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #FFFFFF !important;
-  --color-base-05: #FAFAFA !important;
-  --color-base-10: #FFFFFF !important;
+  --color-base-00: #ffffff !important;
+  --color-base-05: #fafafa !important;
+  --color-base-10: #ffffff !important;
   --color-base-100: rgb(76, 73, 73) !important;
-  --color-base-20: #ECE6E5 !important;
-  --color-base-25: #ECE6E4 !important;
-  --color-base-30: #DFD7D7 !important;
-  --color-base-35: #EBE5E5 !important;
-  --color-base-40: #DFD9D7 !important;
-  --color-base-50: #E0DAD8 !important;
-  --color-base-60: #B8B2B1 !important;
-  --color-base-70: #6E6966 !important;
+  --color-base-20: #ece6e5 !important;
+  --color-base-25: #ece6e4 !important;
+  --color-base-30: #dfd7d7 !important;
+  --color-base-35: #ebe5e5 !important;
+  --color-base-40: #dfd9d7 !important;
+  --color-base-50: #e0dad8 !important;
+  --color-base-60: #b8b2b1 !important;
+  --color-base-70: #6e6966 !important;
   --color-blue: #0884ff !important;
   --color-blue-rgb: 8, 132, 255 !important;
   --color-cyan: #00bfbc !important;
@@ -388,20 +516,21 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #D8D2D2 !important;
-  --divider-color-hover: #D8D2D2 !important;
+  --divider-color: #d8d2d2 !important;
+  --divider-color-hover: #d8d2d2 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0.5px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #FFFFFF !important;
+  --dropdown-background: #ffffff !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #FAFAFA !important;
+  --dropdown-background-hover: #fafafa !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px #D8D2D2, inset 0 0 0 1px #D8D2D2 !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #d8d2d2, inset 0 0 0 1px #d8d2d2 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
@@ -411,29 +540,44 @@ body.theme-light {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 100% !important;
   --file-margins: 32px !important;
-  --flair-background: #FFFFFF !important;
+  --flair-background: #ffffff !important;
   --flair-color: rgb(76, 73, 73) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-interface:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --font-monospace: "??", "??", SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace-default: SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-mermaid:
+    "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-monospace:
+    "??", "??", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -443,7 +587,10 @@ body.theme-light {
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-text:
+    "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: SFPro-Regular !important;
@@ -453,12 +600,12 @@ body.theme-light {
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #D8D2D2 !important;
+  --footnote-divider-color: #d8d2d2 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #6E6966 !important;
-  --footnote-id-color-no-occurrences: #B8B2B1 !important;
+  --footnote-id-color: #6e6966 !important;
+  --footnote-id-color-no-occurrences: #b8b2b1 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(0, 0, 0, 0.067) !important;
@@ -470,12 +617,12 @@ body.theme-light {
   --frame-left-space: calc(80px - 0px) !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #EBE5E5 !important;
-  --graph-node: #6E6966 !important;
+  --graph-line: #ebe5e5 !important;
+  --graph-node: #6e6966 !important;
   --graph-node-attachment: #e0ac00 !important;
   --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: #65c756 !important;
-  --graph-node-unresolved: #B8B2B1 !important;
+  --graph-node-unresolved: #b8b2b1 !important;
   --graph-text: rgb(76, 73, 73) !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2.1rem !important;
@@ -508,15 +655,15 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 100 !important;
   --header-height: 50px !important;
-  --heading-formatting: #B8B2B1 !important;
+  --heading-formatting: #b8b2b1 !important;
   --heading-spacing: calc(0.5rem * 2.5) !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #D8D2D2 !important;
+  --hr-color: #d8d2d2 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #6E6966 !important;
+  --icon-color: #6e6966 !important;
   --icon-color-active: hsl(258, 88%, 66%) !important;
   --icon-color-focused: rgb(76, 73, 73) !important;
-  --icon-color-hover: #6E6966 !important;
+  --icon-color-hover: #6e6966 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.25px !important;
   --icon-m: 18px !important;
@@ -549,19 +696,29 @@ body.theme-light {
   --inline-title-weight: 100 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #B8B2B1 !important;
+  --input-date-separator: #b8b2b1 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #B8B2B1 !important;
+  --input-placeholder-color: #b8b2b1 !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
   --interactive-accent: hsl(258, 88%, 66%) !important;
-  --interactive-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --interactive-accent-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #FAFAFA !important;
-  --interactive-normal: #FFFFFF !important;
+  --interactive-hover: #fafafa !important;
+  --interactive-normal: #ffffff !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -585,8 +742,8 @@ body.theme-light {
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #EA5A47 !important;
-  --link-unresolved-decoration-color: hsla(#EA5A47, 0.3) !important;
+  --link-unresolved-color: #ea5a47 !important;
+  --link-unresolved-decoration-color: hsla(#ea5a47, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -606,19 +763,21 @@ body.theme-light {
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #F0E8E6 !important;
-  --menu-border-color: #D8D2D2 !important;
+  --menu-background: #f0e8e6 !important;
+  --menu-border-color: #d8d2d2 !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 4px !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #D8D2D2 !important;
+  --metadata-border-color: #d8d2d2 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #D8D2D2 !important;
+  --metadata-divider-color: #d8d2d2 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0px !important;
@@ -626,7 +785,10 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: 10px !important;
   --metadata-input-height: calc(16px * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -634,9 +796,12 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-label-font-size: 10px !important;
-  --metadata-label-text-color: #6E6966 !important;
+  --metadata-label-text-color: #6e6966 !important;
   --metadata-label-text-color-hover: hsl(258, 88%, calc(66% + 28%)) !important;
   --metadata-label-width: 8em !important;
   --metadata-max-width: none !important;
@@ -645,15 +810,15 @@ body.theme-light {
   --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #D8D2D2 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #d8d2d2 !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 10px !important;
-  --modal-background: #FFFFFF !important;
-  --modal-border-color: #DFD9D7 !important;
+  --modal-background: #ffffff !important;
+  --modal-border-color: #dfd9d7 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -664,11 +829,11 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #6E6966 !important;
-  --nav-collapse-icon-color-collapsed: #B8B2B1 !important;
+  --nav-collapse-icon-color: #6e6966 !important;
+  --nav-collapse-icon-color-collapsed: #b8b2b1 !important;
   --nav-heading-color: rgb(76, 73, 73) !important;
-  --nav-heading-color-collapsed: #B8B2B1 !important;
-  --nav-heading-color-collapsed-hover: #6E6966 !important;
+  --nav-heading-color-collapsed: #b8b2b1 !important;
+  --nav-heading-color-collapsed-hover: #6e6966 !important;
   --nav-heading-color-hover: rgb(76, 73, 73) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
@@ -679,7 +844,7 @@ body.theme-light {
   --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #6E6966 !important;
+  --nav-item-color: #6e6966 !important;
   --nav-item-color-active: rgb(76, 73, 73) !important;
   --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
   --nav-item-color-hover: rgb(76, 73, 73) !important;
@@ -692,21 +857,23 @@ body.theme-light {
   --p-spacing-empty: 0.2rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #FFFFFF !important;
-  --pdf-page-background: #FFFFFF !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #FFFFFF !important;
+  --pdf-background: #ffffff !important;
+  --pdf-page-background: #ffffff !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: #ffffff !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #D8D2D2 !important;
-  --pill-border-color-hover: #D8D2D2 !important;
+  --pill-border-color: #d8d2d2 !important;
+  --pill-border-color-hover: #d8d2d2 !important;
   --pill-border-width: 1px !important;
-  --pill-color: #6E6966 !important;
+  --pill-color: #6e6966 !important;
   --pill-color-hover: rgb(76, 73, 73) !important;
-  --pill-color-remove: #B8B2B1 !important;
+  --pill-color-remove: #b8b2b1 !important;
   --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -721,7 +888,7 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: #DFD9D7 !important;
+  --prompt-border-color: #dfd9d7 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -731,8 +898,8 @@ body.theme-light {
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 13px !important;
-  --ribbon-background: #F0E8E6 !important;
-  --ribbon-background-collapsed: #FFFFFF !important;
+  --ribbon-background: #f0e8e6 !important;
+  --ribbon-background-collapsed: #ffffff !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 0px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -746,13 +913,17 @@ body.theme-light {
   --scrollbar-radius: 8px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #6E6966 !important;
+  --search-clear-button-color: #6e6966 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #6E6966 !important;
+  --search-icon-color: #6e6966 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #FFFFFF !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --search-result-background: #ffffff !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-markdown-font-size: calc(16px * 0.9) !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
@@ -772,22 +943,22 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #D8D2D2 !important;
+  --slider-thumb-border-color: #d8d2d2 !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #D8D2D2 !important;
+  --slider-track-background: #d8d2d2 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #F0E8E6 !important;
-  --status-bar-border-color: #D8D2D2 !important;
+  --status-bar-background: #f0e8e6 !important;
+  --status-bar-border-color: #d8d2d2 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 4px 0 0 0 !important;
-  --status-bar-text-color: #6E6966 !important;
+  --status-bar-text-color: #6e6966 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -801,13 +972,13 @@ body.theme-light {
   --sync-avatar-color-7: #c161fd !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #FFFFFF !important;
-  --tab-container-background: #F0E8E6 !important;
+  --tab-background-active: #ffffff !important;
+  --tab-container-background: #f0e8e6 !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: #D8D2D2 !important;
+  --tab-divider-color: #d8d2d2 !important;
   --tab-font-size: 10px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #D8D2D2 !important;
+  --tab-outline-color: #d8d2d2 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -819,23 +990,23 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #F0E8E6 !important;
+  --tab-switcher-background: #f0e8e6 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 13px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --tab-text-color: #B8B2B1 !important;
-  --tab-text-color-active: #6E6966 !important;
-  --tab-text-color-focused: #6E6966 !important;
-  --tab-text-color-focused-active: #6E6966 !important;
+  --tab-text-color: #b8b2b1 !important;
+  --tab-text-color-active: #6e6966 !important;
+  --tab-text-color-focused: #6e6966 !important;
+  --tab-text-color-focused-active: #6e6966 !important;
   --tab-text-color-focused-active-current: rgb(76, 73, 73) !important;
   --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #D8D2D2 !important;
+  --table-add-button-border-color: #d8d2d2 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #D8D2D2 !important;
+  --table-border-color: #d8d2d2 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -845,11 +1016,11 @@ body.theme-light {
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color: #B8B2B1 !important;
+  --table-drag-handle-color: #b8b2b1 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #D8D2D2 !important;
+  --table-header-border-color: #d8d2d2 !important;
   --table-header-border-width: 1px !important;
   --table-header-color: rgb(76, 73, 73) !important;
   --table-header-size: 16px !important;
@@ -880,24 +1051,28 @@ body.theme-light {
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
   --text-accent: hsl(258, 88%, 66%) !important;
-  --text-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --text-accent-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --text-error: #ec3643 !important;
-  --text-faint: #B8B2B1 !important;
+  --text-faint: #b8b2b1 !important;
   --text-highlight-bg: hsl(258, 88%, calc(66% + 28%)) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #6E6966 !important;
+  --text-muted: #6e6966 !important;
   --text-normal: rgb(76, 73, 73) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: hsla(258, 88%, 66%, 0.2) !important;
   --text-success: #65c756 !important;
   --text-warning: #f99e15 !important;
-  --titlebar-background: #F0E8E6 !important;
-  --titlebar-background-focused: #FAFAFA !important;
-  --titlebar-border-color: #D8D2D2 !important;
+  --titlebar-background: #f0e8e6 !important;
+  --titlebar-background-focused: #fafafa !important;
+  --titlebar-border-color: #d8d2d2 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #6E6966 !important;
+  --titlebar-text-color: #6e6966 !important;
   --titlebar-text-color-focused: rgb(76, 73, 73) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 1px !important;
@@ -922,37 +1097,44 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --vault-name-color: #6E6966 !important;
-  --h1-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h2-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h3-font: SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h4-font: SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h5-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h6-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --inline-title-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --vault-name-color: #6e6966 !important;
+  --h1-font:
+    SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h2-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h3-font:
+    SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h4-font:
+    SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h5-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h6-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --inline-title-font:
+    SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --color-base-80: #464545ff !important;
-  --color-base-90: #D5D5D5 !important;
-  --link-external-decoration-color: #35B649 !important;
+  --color-base-90: #d5d5d5 !important;
+  --link-external-decoration-color: #35b649 !important;
   --vault-name-font-size: 12px !important;
   --radius-xs: 1px !important;
-  --color-base-15: #F8F2F1 !important;
+  --color-base-15: #f8f2f1 !important;
   --link-decoration-color: hsl(258, 88%, 66%) !important;
   --codeblock-radius: 4px !important;
   --color-base-100-ref: 76, 73, 73 !important;
   --color-base-101: rgb(0, 0, 0) !important;
   --color-base-101-ref: 0, 0, 0 !important;
-  --color-base-17: #F0E8E6 !important;
-  --color-base-51: #C6C0BE !important;
+  --color-base-17: #f0e8e6 !important;
+  --color-base-51: #c6c0be !important;
   --color-base-darklight: hsl(258, 88%, calc(66% - 40%)) !important;
   --color-base-highlight: hsl(258, 88%, 66%) !important;
   --color-base-lowlight: hsl(258, 88%, calc(66% + 20%)) !important;
   --color-base-verylowlight: hsl(258, 88%, calc(66% + 28%)) !important;
-  --color-base-warn: #EA5A47 !important;
+  --color-base-warn: #ea5a47 !important;
   --color-blue-rgb-dark: 3, 48, 93 !important;
   --color-blue-rgb-light: 224, 240, 255 !important;
-  --color-fakeclose-inner: #FE5F57 !important;
-  --color-fakeclose-outer: #DF544C !important;
-  --color-green-rgb-dark: !important;
+  --color-fakeclose-inner: #fe5f57 !important;
+  --color-fakeclose-outer: #df544c !important;
+  --color-green-rgb-dark:  !important;
   --color-green-rgb-light: 235, 255, 232 !important;
   --color-neutral: #414141 !important;
   --color-neutral-rgb: 120, 120, 120 !important;
@@ -965,9 +1147,9 @@ body.theme-light {
   --color-purple-rgb-light: 249, 239, 254 !important;
   --color-red-rgb-dark: 94, 0, 7 !important;
   --color-red-rgb-light: 255, 233, 234 !important;
-  --color-scrollbar-1: #C2C2C2 !important;
-  --color-scrollbar-2: #B4AFAE !important;
-  --color-scrollbar-3: #E2E2E2 !important;
+  --color-scrollbar-1: #c2c2c2 !important;
+  --color-scrollbar-2: #b4afae !important;
+  --color-scrollbar-3: #e2e2e2 !important;
   --font-ui-teeny: 10px !important;
   --font-ui-unreadable: 8px !important;
   --radius-none: 0px !important;
@@ -988,35 +1170,35 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #1E1E1E !important;
+  --background-modifier-border: #1e1e1e !important;
   --background-modifier-border-focus: hsl(258, 80%, 55%) !important;
-  --background-modifier-border-hover: #2F2F2F !important;
+  --background-modifier-border-hover: #2f2f2f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: #ec3643 !important;
   --background-modifier-error-hover: #ec3643 !important;
   --background-modifier-error-rgb: 236, 54, 67 !important;
-  --background-modifier-form-field: #1E1E1E !important;
-  --background-modifier-form-field-hover: #1E1E1E !important;
+  --background-modifier-form-field: #1e1e1e !important;
+  --background-modifier-form-field-hover: #1e1e1e !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #65c756 !important;
   --background-modifier-success-rgb: 101, 199, 86 !important;
-  --background-primary: #1E1E1E !important;
+  --background-primary: #1e1e1e !important;
   --background-primary-alt: #959595 !important;
   --background-secondary: #262626 !important;
-  --background-secondary-alt: #2F2F2F !important;
-  --bases-cards-background: #1E1E1E !important;
+  --background-secondary-alt: #2f2f2f !important;
+  --bases-cards-background: #1e1e1e !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: #959595 !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #1E1E1E !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #2F2F2F !important;
+  --bases-cards-shadow: 0 0 0 1px #1e1e1e !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #2f2f2f !important;
   --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: #1E1E1E !important;
+  --bases-embed-border-color: #1e1e1e !important;
   --bases-embed-border-radius: 2px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -1024,8 +1206,8 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #1E1E1E !important;
-  --bases-table-cell-background-active: #1E1E1E !important;
+  --bases-table-border-color: #1e1e1e !important;
+  --bases-table-cell-background-active: #1e1e1e !important;
   --bases-table-cell-background-disabled: #959595 !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
@@ -1034,11 +1216,15 @@ body.theme-dark {
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: #1E1E1E !important;
+  --bases-table-header-background: #1e1e1e !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-table-header-color: #959595 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -1077,8 +1263,8 @@ body.theme-dark {
   --callout-title-weight: calc(400 + 200) !important;
   --callout-todo: 8, 132, 255 !important;
   --callout-warning: 249, 158, 21 !important;
-  --canvas-background: #1E1E1E !important;
-  --canvas-card-label-color: #B8B2B1 !important;
+  --canvas-background: #1e1e1e !important;
+  --canvas-card-label-color: #b8b2b1 !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 236, 54, 67 !important;
   --canvas-color-2: 249, 158, 21 !important;
@@ -1086,24 +1272,28 @@ body.theme-dark {
   --canvas-color-4: 101, 199, 86 !important;
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 193, 97, 253 !important;
-  --canvas-dot-pattern: #2F2F2F !important;
+  --canvas-dot-pattern: #2f2f2f !important;
   --caret-color: rgb(228, 228, 228) !important;
-  --checkbox-border-color: #2F2F2F !important;
+  --checkbox-border-color: #2f2f2f !important;
   --checkbox-border-color-hover: hsl(258, 80%, 55%) !important;
   --checkbox-color: hsl(258, 88%, 66%) !important;
-  --checkbox-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --checkbox-color-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1E1E1E !important;
+  --checkbox-marker-color: #1e1e1e !important;
   --checkbox-radius: 50% !important;
   --checkbox-size: 10px !important;
-  --checklist-done-color: #B8B2B1 !important;
+  --checklist-done-color: #b8b2b1 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
   --code-background: #171818 !important;
-  --code-border-color: #1E1E1E !important;
+  --code-border-color: #1e1e1e !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: #B8B2B1 !important;
+  --code-comment: #b8b2b1 !important;
   --code-function: #e0de71 !important;
   --code-important: #f99e15 !important;
   --code-keyword: #fa99cd !important;
@@ -1120,20 +1310,28 @@ body.theme-dark {
   --collapse-icon-color: #959595 !important;
   --collapse-icon-color-collapsed: hsl(258, 80%, 55%) !important;
   --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --color-accent-1: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --color-accent-2: hsl(
+    calc(258 - 5),
+    calc(88% * 1.05),
+    calc(66% * 1.29)
+  ) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #1E1E1E !important;
-  --color-base-05: #1E1D1E !important;
+  --color-base-00: #1e1e1e !important;
+  --color-base-05: #1e1d1e !important;
   --color-base-10: #959595 !important;
   --color-base-100: rgb(228, 228, 228) !important;
   --color-base-20: #000000 !important;
-  --color-base-25: #1E1E1E !important;
-  --color-base-30: #2F2F2F !important;
+  --color-base-25: #1e1e1e !important;
+  --color-base-30: #2f2f2f !important;
   --color-base-35: #282828 !important;
   --color-base-40: #605852 !important;
-  --color-base-50: #2F2F2F !important;
-  --color-base-60: #B8B2B1 !important;
+  --color-base-50: #2f2f2f !important;
+  --color-base-60: #b8b2b1 !important;
   --color-base-70: #959595 !important;
   --color-blue: #0884ff !important;
   --color-blue-rgb: 8, 132, 255 !important;
@@ -1164,13 +1362,14 @@ body.theme-dark {
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #1E1E1E !important;
+  --dropdown-background: #1e1e1e !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #1E1D1E !important;
+  --dropdown-background-hover: #1e1d1e !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px #1E1E1E, inset 0 0 0 1px #1E1E1E !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #1e1e1e, inset 0 0 0 1px #1e1e1e !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
@@ -1180,29 +1379,44 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 100% !important;
   --file-margins: 32px !important;
-  --flair-background: #1E1E1E !important;
+  --flair-background: #1e1e1e !important;
   --flair-color: rgb(228, 228, 228) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-interface:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
-  --font-monospace: "??", "??", SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace-default: SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-mermaid:
+    "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-monospace:
+    "??", "??", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1212,7 +1426,10 @@ body.theme-dark {
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --font-text:
+    "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: SFPro-Regular !important;
@@ -1227,7 +1444,7 @@ body.theme-dark {
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
   --footnote-id-color: #959595 !important;
-  --footnote-id-color-no-occurrences: #B8B2B1 !important;
+  --footnote-id-color-no-occurrences: #b8b2b1 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -1242,9 +1459,13 @@ body.theme-dark {
   --graph-line: #282828 !important;
   --graph-node: #959595 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --graph-node-tag: #65c756 !important;
-  --graph-node-unresolved: #B8B2B1 !important;
+  --graph-node-unresolved: #b8b2b1 !important;
   --graph-text: rgb(228, 228, 228) !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2.1rem !important;
@@ -1277,10 +1498,10 @@ body.theme-dark {
   --h6-variant: normal !important;
   --h6-weight: 100 !important;
   --header-height: 50px !important;
-  --heading-formatting: #B8B2B1 !important;
+  --heading-formatting: #b8b2b1 !important;
   --heading-spacing: calc(0.5rem * 2.5) !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #1E1E1E !important;
+  --hr-color: #1e1e1e !important;
   --hr-thickness: 2px !important;
   --icon-color: #959595 !important;
   --icon-color-active: hsl(258, 80%, 55%) !important;
@@ -1318,19 +1539,29 @@ body.theme-dark {
   --inline-title-weight: 100 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #B8B2B1 !important;
+  --input-date-separator: #b8b2b1 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #B8B2B1 !important;
+  --input-placeholder-color: #b8b2b1 !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --interactive-accent: hsl(258, 88%, 66%) !important;
-  --interactive-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --interactive-accent-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #1E1D1E !important;
-  --interactive-normal: #1E1E1E !important;
+  --interactive-hover: #1e1d1e !important;
+  --interactive-normal: #1e1e1e !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1354,8 +1585,8 @@ body.theme-dark {
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #EA5A47 !important;
-  --link-unresolved-decoration-color: hsla(#EA5A47, 0.3) !important;
+  --link-unresolved-color: #ea5a47 !important;
+  --link-unresolved-decoration-color: hsla(#ea5a47, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1376,13 +1607,15 @@ body.theme-dark {
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #262626 !important;
-  --menu-border-color: #2F2F2F !important;
+  --menu-border-color: #2f2f2f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 4px !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #1E1E1E !important;
+  --metadata-border-color: #1e1e1e !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
@@ -1395,7 +1628,10 @@ body.theme-dark {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: 10px !important;
   --metadata-input-height: calc(16px * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1403,7 +1639,10 @@ body.theme-dark {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-label-font-size: 10px !important;
   --metadata-label-text-color: #959595 !important;
   --metadata-label-text-color-hover: hsl(258, 50%, 20%) !important;
@@ -1414,14 +1653,14 @@ body.theme-dark {
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(258, 80%, 55%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #2F2F2F !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #2f2f2f !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 10px !important;
-  --modal-background: #1E1E1E !important;
+  --modal-background: #1e1e1e !important;
   --modal-border-color: #605852 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1434,9 +1673,9 @@ body.theme-dark {
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
   --nav-collapse-icon-color: #959595 !important;
-  --nav-collapse-icon-color-collapsed: #B8B2B1 !important;
+  --nav-collapse-icon-color-collapsed: #b8b2b1 !important;
   --nav-heading-color: rgb(228, 228, 228) !important;
-  --nav-heading-color-collapsed: #B8B2B1 !important;
+  --nav-heading-color-collapsed: #b8b2b1 !important;
   --nav-heading-color-collapsed-hover: #959595 !important;
   --nav-heading-color-hover: rgb(228, 228, 228) !important;
   --nav-heading-weight: 500 !important;
@@ -1450,7 +1689,11 @@ body.theme-dark {
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #959595 !important;
   --nav-item-color-active: rgb(228, 228, 228) !important;
-  --nav-item-color-highlighted: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --nav-item-color-highlighted: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --nav-item-color-hover: rgb(228, 228, 228) !important;
   --nav-item-color-selected: rgb(228, 228, 228) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -1461,22 +1704,26 @@ body.theme-dark {
   --p-spacing-empty: 0.2rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1E1E1E !important;
-  --pdf-page-background: #1E1E1E !important;
-  --pdf-shadow: 0 0 0 1px #1E1E1E !important;
-  --pdf-sidebar-background: #1E1E1E !important;
+  --pdf-background: #1e1e1e !important;
+  --pdf-page-background: #1e1e1e !important;
+  --pdf-shadow: 0 0 0 1px #1e1e1e !important;
+  --pdf-sidebar-background: #1e1e1e !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #1E1E1E !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #1e1e1e !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #1E1E1E !important;
-  --pill-border-color-hover: #2F2F2F !important;
+  --pill-border-color: #1e1e1e !important;
+  --pill-border-color-hover: #2f2f2f !important;
   --pill-border-width: 1px !important;
   --pill-color: #959595 !important;
   --pill-color-hover: rgb(228, 228, 228) !important;
-  --pill-color-remove: #B8B2B1 !important;
-  --pill-color-remove-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --pill-color-remove: #b8b2b1 !important;
+  --pill-color-remove-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1501,7 +1748,7 @@ body.theme-dark {
   --radius-s: 2px !important;
   --radius-xl: 13px !important;
   --ribbon-background: #262626 !important;
-  --ribbon-background-collapsed: #1E1E1E !important;
+  --ribbon-background-collapsed: #1e1e1e !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 0px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1519,9 +1766,13 @@ body.theme-dark {
   --search-clear-button-size: 13px !important;
   --search-icon-color: #959595 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1E1E1E !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --search-result-background: #1e1e1e !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --sidebar-markdown-font-size: calc(16px * 0.9) !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
@@ -1541,13 +1792,13 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #2F2F2F !important;
+  --slider-thumb-border-color: #2f2f2f !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #1E1E1E !important;
+  --slider-track-background: #1e1e1e !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #262626 !important;
@@ -1570,10 +1821,10 @@ body.theme-dark {
   --sync-avatar-color-7: #c161fd !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1E1E1E !important;
+  --tab-background-active: #1e1e1e !important;
   --tab-container-background: #262626 !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: #2F2F2F !important;
+  --tab-divider-color: #2f2f2f !important;
   --tab-font-size: 10px !important;
   --tab-max-width: 320px !important;
   --tab-outline-color: rgb(0, 0, 0) !important;
@@ -1593,18 +1844,22 @@ body.theme-dark {
   --tab-switcher-preview-radius: 13px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --tab-text-color: #B8B2B1 !important;
+  --tab-text-color: #b8b2b1 !important;
   --tab-text-color-active: #959595 !important;
   --tab-text-color-focused: #959595 !important;
   --tab-text-color-focused-active: #959595 !important;
   --tab-text-color-focused-active-current: rgb(228, 228, 228) !important;
-  --tab-text-color-focused-highlighted: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --tab-text-color-focused-highlighted: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #1E1E1E !important;
+  --table-add-button-border-color: #1e1e1e !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #1E1E1E !important;
+  --table-border-color: #1e1e1e !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1614,11 +1869,11 @@ body.theme-dark {
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
-  --table-drag-handle-color: #B8B2B1 !important;
+  --table-drag-handle-color: #b8b2b1 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #1E1E1E !important;
+  --table-header-border-color: #1e1e1e !important;
   --table-header-border-width: 1px !important;
   --table-header-color: rgb(228, 228, 228) !important;
   --table-header-size: 16px !important;
@@ -1640,18 +1895,34 @@ body.theme-dark {
   --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --tag-color: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --tag-color-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --text-accent: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --text-accent-hover: hsl(
+    calc(258 - 5),
+    calc(88% * 1.05),
+    calc(66% * 1.29)
+  ) !important;
   --text-error: #ec3643 !important;
-  --text-faint: #B8B2B1 !important;
+  --text-faint: #b8b2b1 !important;
   --text-highlight-bg: hsl(258, 50%, 20%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #959595 !important;
@@ -1662,8 +1933,8 @@ body.theme-dark {
   --text-success: #65c756 !important;
   --text-warning: #f99e15 !important;
   --titlebar-background: #262626 !important;
-  --titlebar-background-focused: #2F2F2F !important;
-  --titlebar-border-color: #1E1E1E !important;
+  --titlebar-background-focused: #2f2f2f !important;
+  --titlebar-border-color: #1e1e1e !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #959595 !important;
@@ -1692,13 +1963,20 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
   --vault-name-color: #959595 !important;
-  --h1-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h2-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h3-font: SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h4-font: SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h5-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --h6-font: SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --inline-title-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h1-font:
+    SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h2-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h3-font:
+    SFPro-Black, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h4-font:
+    SFPro-Bold, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h5-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --h6-font:
+    SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  --inline-title-font:
+    SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --color-base-80: #464545ff !important;
   --color-base-90: #414141 !important;
   --link-external-decoration-color: #288133 !important;
@@ -1711,17 +1989,17 @@ body.theme-dark {
   --color-base-101: rgb(0, 0, 0) !important;
   --color-base-101-ref: 0, 0, 0 !important;
   --color-base-17: #262626 !important;
-  --color-base-51: #6E665F !important;
+  --color-base-51: #6e665f !important;
   --color-base-darklight: hsl(258, 88%, calc(66% + 40%)) !important;
   --color-base-highlight: hsl(258, 80%, 55%) !important;
-  --color-base-icons: #95908E !important;
+  --color-base-icons: #95908e !important;
   --color-base-lowlight: hsl(258, 50%, 50%) !important;
   --color-base-verylowlight: hsl(258, 50%, 20%) !important;
-  --color-base-warn: #EA5A47 !important;
+  --color-base-warn: #ea5a47 !important;
   --color-blue-rgb-dark: 140, 148, 154 !important;
   --color-blue-rgb-light: 28, 40, 52 !important;
-  --color-fakeclose-inner: #FE5F57 !important;
-  --color-fakeclose-outer: #DF544C !important;
+  --color-fakeclose-inner: #fe5f57 !important;
+  --color-fakeclose-outer: #df544c !important;
   --color-green-rgb-dark: 145, 150, 145 !important;
   --color-green-rgb-light: 37, 47, 36 !important;
   --color-neutral: #414141 !important;
@@ -1737,7 +2015,7 @@ body.theme-dark {
   --color-red-rgb-light: 50, 32, 34 !important;
   --color-scrollbar-1: #959595 !important;
   --color-scrollbar-2: #959595 !important;
-  --color-scrollbar-3: #6B6B6B !important;
+  --color-scrollbar-3: #6b6b6b !important;
   --divider-color-tabv: #524845 !important;
   --font-ui-teeny: 10px !important;
   --font-ui-unreadable: 8px !important;
@@ -1750,7 +2028,18 @@ body .markdown-rendered a.external-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1766,7 +2055,18 @@ body .markdown-rendered a.internal-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1782,7 +2082,18 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1798,7 +2109,18 @@ body .markdown-rendered p {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1814,7 +2136,19 @@ body strong {
   color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
   cursor: auto;
   filter: none;
-  font-family: SFPro-Regular, ui-sans-serif, -apple-system, "system-ui", "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family:
+    SFPro-Regular,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(228, 228, 228);
@@ -1830,7 +2164,18 @@ body b {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1846,7 +2191,19 @@ body em {
   color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
   cursor: auto;
   filter: none;
-  font-family: SFPro-Regular, ui-sans-serif, -apple-system, "system-ui", "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family:
+    SFPro-Regular,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(228, 228, 228);
@@ -1862,7 +2219,18 @@ body i {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1878,7 +2246,18 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -1894,7 +2273,19 @@ body del {
   color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
   cursor: auto;
   filter: none;
-  font-family: SFPro-Regular, ui-sans-serif, -apple-system, "system-ui", "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family:
+    SFPro-Regular,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(228, 228, 228);
@@ -1964,7 +2355,18 @@ body div.multi-select-pill {
   align-items: center;
   background-color: rgba(138, 92, 245, 0.1);
   display: flex;
-  font-family: ui-sans-serif, -apple-system, "system-ui", "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
   border-left-style: solid;
@@ -2073,7 +2475,8 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*=language-], body pre[class*=language-] {
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
   border-left-style: none;
   border-bottom-style: none;
@@ -2139,7 +2542,10 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
+body
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -2152,7 +2558,7 @@ body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task=x] {
+body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -2160,7 +2566,18 @@ body ul > li.task-list-item[data-task=x] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2218,7 +2635,18 @@ body .search-results > * {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -2278,32 +2706,98 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -2334,7 +2828,7 @@ body .markdown-preview-sizer {
   border-bottom-right-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout=note] {
+body .callout[data-callout="note"] {
   --callout-color: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -2359,7 +2853,7 @@ body .callout[data-callout=note] {
   padding-right: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout=note] > .callout-title {
+body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -2382,7 +2876,11 @@ body .callout[data-callout=note] > .callout-title {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -2397,7 +2895,7 @@ body .callout > .callout-content {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout=abstract] {
+body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2418,11 +2916,15 @@ body .callout[data-callout=abstract] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=info] {
+body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2443,11 +2945,15 @@ body .callout[data-callout=info] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=todo] {
+body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2468,11 +2974,15 @@ body .callout[data-callout=todo] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=tip] {
+body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2493,11 +3003,15 @@ body .callout[data-callout=tip] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=success] {
+body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2518,11 +3032,15 @@ body .callout[data-callout=success] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=question] {
+body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2543,11 +3061,15 @@ body .callout[data-callout=question] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=warning] {
+body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2568,11 +3090,15 @@ body .callout[data-callout=warning] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=danger] {
+body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2593,11 +3119,15 @@ body .callout[data-callout=danger] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=failure] {
+body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2618,11 +3148,15 @@ body .callout[data-callout=failure] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=bug] {
+body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2643,11 +3177,15 @@ body .callout[data-callout=bug] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=example] {
+body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2668,11 +3206,15 @@ body .callout[data-callout=example] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=quote] {
+body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -2693,7 +3235,11 @@ body .callout[data-callout=quote] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -2702,18 +3248,62 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -2722,17 +3312,51 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
-body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
