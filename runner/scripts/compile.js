@@ -252,8 +252,23 @@ function generateAndWriteCSS(
   const colorTargets = [
     "color",
     "background-color",
-    "border-color",
     "background",
+    "border-color",
+    "border-block-start-color",
+    "border-block-end-color",
+    "border-inline-start-color",
+    "border-inline-end-color",
+    "border-bottom-color",
+    "border-top-color",
+    "border-left-color",
+    "border-right-color",
+    // "box-shadow",
+    "caret-color",
+    "column-rule-color",
+    "outline-color",
+    // "text-color",
+    "text-decoration-color",
+    "text-emphasis-color",
   ];
 
   let graphColors = { dark: {}, light: {} };
