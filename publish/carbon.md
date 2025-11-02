@@ -4,9 +4,10 @@
 - Support the author: <a href="https://buymeacoffee.com/vhbelvadi" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/carbon">Install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                               |
-| -------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `carbon` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/carbon/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

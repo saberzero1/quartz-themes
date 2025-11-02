@@ -3,102 +3,71 @@
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMJs-dtC4yJtEbtM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMJs-dtC4yJtEbtM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-dtC4yJtEbtM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-dtC4yJtEbtM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-dtC4yJtE.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-dtC4yJtE.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRR232RmYJp8I5zzw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRR232RmYJp8I5zzw.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32RmYJp8I5.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32RmYJp8I5.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_G-bnTfc7AGraJwA.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_G-bnTfc7AGraJwA.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek */
@@ -106,46 +75,32 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_B-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_B-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_N-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_N-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_M-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_M-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bnTfc7AGrY.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bnTfc7AGrY.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /*
 * Remix Icon v4.5.0
@@ -160,20 +115,10 @@
 @font-face {
   font-family: "remixicon";
   src: url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915"); /* IE9*/
-  src:
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff2?t=1730118419915")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff?t=1730118419915")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.ttf?t=1730118419915")
-      format("truetype"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.svg?t=1730118419915#remixicon")
-      format("svg"); /* iOS 4.1- */
+  src: url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff2?t=1730118419915") format("woff2"), url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff?t=1730118419915") format("woff"), url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.ttf?t=1730118419915") format("truetype"), url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.svg?t=1730118419915#remixicon") format("svg"); /* iOS 4.1- */
   font-display: swap;
 }
-[class^="ri-"],
+[class^=ri-],
 [class*=" ri-"] {
   font-family: "remixicon" !important;
   font-style: normal;
@@ -12343,9 +12288,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --background-modifier-active-hover: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --background-modifier-border: oklch(0.8 0 0) !important;
   --background-modifier-border-focus: oklch(0.6 0 0) !important;
   --background-modifier-border-hover: oklch(0.7 0 0) !important;
@@ -12396,11 +12339,7 @@ body.theme-light {
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: oklch(0.3 0 0) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -12531,8 +12470,7 @@ body.theme-light {
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px oklch(0.8 0 0), inset 0 0 0 1px oklch(0.8 0 0) !important;
+  --embed-block-shadow-hover: 0 0 0 1px oklch(0.8 0 0), inset 0 0 0 1px oklch(0.8 0 0) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid oklch(70.7% 0.1737 155.3deg) !important;
@@ -12542,9 +12480,7 @@ body.theme-light {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 0px !important;
-  --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --file-header-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -12556,39 +12492,27 @@ body.theme-light {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --font-interface: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope" !important;
   --font-monospace: "??", "DM Mono", "DM Mono" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "DM Mono" !important;
   --font-normal: 400 !important;
-  --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
+  --font-print: "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --font-text: "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
@@ -12612,9 +12536,7 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: calc(6px * 0.5) !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(
-    calc(80px - calc(16px + 6px * 2 + 4px * 2)) / 1
-  ) !important;
+  --frame-left-space: calc(calc(80px - calc(16px + 6px * 2 + 4px * 2)) / 1) !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
   --graph-line: oklch(0.8 0 0) !important;
@@ -12733,9 +12655,7 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(40.14% 0.0638 202.51deg) !important;
-  --link-unresolved-decoration-color: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 30%
-  ) !important;
+  --link-unresolved-decoration-color: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 30%) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -12775,9 +12695,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-input-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: calc(16px * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -12785,9 +12703,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-label-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(0.3 0 0) !important;
   --metadata-label-text-color-hover: oklch(0.3 0 0) !important;
@@ -12829,9 +12745,7 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 15%
-  ) !important;
+  --nav-item-background-selected: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 15%) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(0.3 0 0) !important;
@@ -12849,12 +12763,10 @@ body.theme-light {
   --page-margin: 1px auto -8px !important;
   --pdf-background: oklch(1 0 0) !important;
   --pdf-page-background: oklch(1 0 0) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: oklch(1 0 0) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -12985,12 +12897,8 @@ body.theme-light {
   --tab-text-color-active: oklch(0.3 0 0) !important;
   --tab-text-color-focused: oklch(0.3 0 0) !important;
   --tab-text-color-focused-active: oklch(0.3 0 0) !important;
-  --tab-text-color-focused-active-current: oklch(
-    40.14% 0.0638 202.51deg
-  ) !important;
-  --tab-text-color-focused-highlighted: oklch(
-    40.14% 0.0638 202.51deg
-  ) !important;
+  --tab-text-color-focused-active-current: oklch(40.14% 0.0638 202.51deg) !important;
+  --tab-text-color-focused-highlighted: oklch(40.14% 0.0638 202.51deg) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(0.8 0 0) !important;
@@ -13005,9 +12913,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: oklch(
-    70.7% 0.1737 155.3deg
-  ) !important;
+  --table-drag-handle-background-active: oklch(70.7% 0.1737 155.3deg) !important;
   --table-drag-handle-color: oklch(0.6 0 0) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -13022,27 +12928,17 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --table-selection: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --table-selection-blend-mode: normal !important;
   --table-selection-border-color: oklch(70.7% 0.1737 155.3deg) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 10%
-  ) !important;
-  --tag-background-hover: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 20%
-  ) !important;
-  --tag-border-color: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 15%
-  ) !important;
-  --tag-border-color-hover: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 15%
-  ) !important;
+  --tag-background: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 10%) !important;
+  --tag-background-hover: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 20%) !important;
+  --tag-border-color: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 15%) !important;
+  --tag-border-color-hover: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 15%) !important;
   --tag-border-width: 0px !important;
   --tag-color: oklch(40.14% 0.0638 202.51deg) !important;
   --tag-color-hover: oklch(40.14% 0.0638 202.51deg) !important;
@@ -13096,9 +12992,7 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
   --default-font: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
-  --text-error-hover: oklch(
-    from #e93147 calc(l - 0.1) c calc(h + 4)
-  ) !important;
+  --text-error-hover: oklch(from #e93147 calc(l - 0.1) c calc(h + 4)) !important;
   --table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --color-base-80: oklch(0.05 0 0) !important;
   --color-base-90: oklch(0.02 0 0) !important;
@@ -13289,44 +13183,24 @@ body.theme-light {
   --ch-color-base-l-l-90: 0.02 !important;
   --ch-color-base-l-l-95: 0.01 !important;
   --checkbox-margin-inline-end: 0.25em !important;
-  --col-background-activeline: oklch(
-    from oklch(0.5 0 0) l c h / calc(alpha - calc(1 - 0.25))
-  ) !important;
+  --col-background-activeline: oklch(from oklch(0.5 0 0) l c h / calc(alpha - calc(1 - 0.25))) !important;
   --col-base-alpha-alh: 0.25 !important;
   --col-base-bg-alh: oklch(0.5 0 0) !important;
   --col-frontmatter-atom: oklch(40.14% 0.0638 202.51deg) !important;
   --col-frontmatter-default: oklch(82.77% 0.1667 79.6deg) !important;
   --col-frontmatter-meta: oklch(70.7% 0.1737 155.3deg) !important;
   --col-frontmatter-number: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h1: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h1: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h1-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h2: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h2: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h2-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h3: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h3: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h3-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h4: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h4: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h4-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h5: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h5: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h6: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
   --col-highlight-0: hsl(46deg 100% 50%) !important;
   --col-highlight-0-org: hsl(60deg 100% 50%) !important;
@@ -13349,17 +13223,7 @@ body.theme-light {
   --color-table-head: oklch(0.95 0 0) !important;
   --color-table-head-hover: rgba(0, 0, 0, 0.067) !important;
   --color-table-odd: oklch(1 0 0) !important;
-  --cssc-banner-gradient-mask: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    oklch(0% 0 0deg / 80%) 75%,
-    oklch(0% 0 0deg / 50%) 80%,
-    oklch(0% 0 0deg / 30%) 85%,
-    oklch(0% 0 0deg / 15%) 90%,
-    oklch(0% 0 0deg / 8%) 95%,
-    transparent 100%
-  ) !important;
+  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0% 0 0deg / 80%) 75%, oklch(0% 0 0deg / 50%) 80%, oklch(0% 0 0deg / 30%) 85%, oklch(0% 0 0deg / 15%) 90%, oklch(0% 0 0deg / 8%) 95%, transparent 100% ) !important;
   --cssc-banner-height: 200px !important;
   --cssc-banner-residual: 0px !important;
   --cssc-cornell-align-left: max(125px, 25%) !important;
@@ -13370,8 +13234,7 @@ body.theme-light {
   --cssc-cornell-text-align-last: right !important;
   --cssc-latex-font-reading: "MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-font-size: 14pt !important;
-  --cssc-latex-font-source:
-    "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX" !important;
+  --cssc-latex-font-source: "DM Mono" ,"MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-text-indent: 0em !important;
   --distant-opacity: 0.2 !important;
   --elements-padding: 4px !important;
@@ -13393,9 +13256,7 @@ body.theme-light {
   --height-norm-sd: 25% !important;
   --height-progress-bar-subline: 4px !important;
   --hover-diff: calc(0.25 * 6px) !important;
-  --hover-diff-sidebar: calc(
-    0.25 * calc(6px - 0.5 * calc(18px - 16px))
-  ) !important;
+  --hover-diff-sidebar: calc(0.25 * calc(6px - 0.5 * calc(18px - 16px))) !important;
   --hover-diff-tab: calc(0.25 * calc(6px + 0.5 * calc(16px - 14px))) !important;
   --hover-frac: 0.25 !important;
   --hover-frac-sidebar: 0.25 !important;
@@ -13466,13 +13327,8 @@ body.theme-light {
   --shape-roundish: 6px !important;
   --sidebar-icon-padding: calc(6px - 0.5 * calc(18px - 16px)) !important;
   --sidebar-icon-size: 18px !important;
-  --sidebar-icon-size-hover: calc(
-    18px + 2 * calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))
-  ) !important;
-  --sidebar-padding-hover: calc(
-    calc(6px - 0.5 * calc(18px - 16px)) -
-      calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))
-  ) !important;
+  --sidebar-icon-size-hover: calc(18px + 2 * calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))) !important;
+  --sidebar-padding-hover: calc(calc(6px - 0.5 * calc(18px - 16px)) - calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))) !important;
   --size-bw-bases: size * 1.5 !important;
   --size-bw-iframe: size * 1.5 !important;
   --size-bw-pdfembed: size * 1.5 !important;
@@ -13493,19 +13349,12 @@ body.theme-light {
   --status-bar-max-width: 85% !important;
   --status-bar-min-height: calc(2 * 4px + calc(1.3 * 16px / 1.5)) !important;
   --status-bar-min-height-intermediary: calc(1.3 * 16px / 1.5) !important;
-  --status-bar-shift-workspace-padding-bottom: calc(
-    calc(2 * 4px + calc(1.3 * 16px / 1.5)) + 4px + 4px + 1px
-  ) !important;
+  --status-bar-shift-workspace-padding-bottom: calc(calc(2 * 4px + calc(1.3 * 16px / 1.5)) + 4px + 4px + 1px) !important;
   --tab-focus-border-width: 1px !important;
   --tab-icon-size: 14px !important;
-  --tab-icon-size-hover: calc(
-    14px + 2 * calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))
-  ) !important;
+  --tab-icon-size-hover: calc(14px + 2 * calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))) !important;
   --tab-padding: calc(6px + 0.5 * calc(16px - 14px)) !important;
-  --tab-padding-hover: calc(
-    calc(6px + 0.5 * calc(16px - 14px)) -
-      calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))
-  ) !important;
+  --tab-padding-hover: calc(calc(6px + 0.5 * calc(16px - 14px)) - calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))) !important;
   --table-drag-handle-size: 16px !important;
   --text-message-progress-bar: oklch(0 0 0) !important;
   --ui-font: "Manrope", "Inter 4.1", "DM Sans" !important;
@@ -13592,18 +13441,14 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  );
+  --background-modifier-active-hover: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%);
   --background-modifier-border: oklch(0.3 0 0);
   --background-modifier-border-focus: oklch(0.48 0 0);
   --background-modifier-border-hover: oklch(0.38 0 0);
   --background-modifier-box-shadow: none;
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-error: #fb464c;
-  --background-modifier-error-hover: oklch(
-    from #fb464c calc(l - 0.1) c calc(h + 4)
-  );
+  --background-modifier-error-hover: oklch(from #fb464c calc(l - 0.1) c calc(h + 4));
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: oklch(0.15 0 0);
   --background-modifier-form-field-hover: oklch(0.15 0 0);
@@ -13647,11 +13492,7 @@ body.theme-dark {
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
   --bases-table-header-color: oklch(0.68 0 0);
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px);
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -13782,8 +13623,7 @@ body.theme-dark {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover:
-    0 0 0 1px oklch(0.3 0 0), inset 0 0 0 1px oklch(0.3 0 0);
+  --embed-block-shadow-hover: 0 0 0 1px oklch(0.3 0 0), inset 0 0 0 1px oklch(0.3 0 0);
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-start: 2px solid oklch(40.14% 0.0638 202.51deg);
@@ -13793,9 +13633,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 0px;
-  --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+  --file-header-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -13807,39 +13645,27 @@ body.theme-dark {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
   --font-black: 900;
   --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+  --font-interface: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-interface-override: "??";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
   --font-monospace: "??", "DM Mono", "DM Mono";
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "DM Mono";
   --font-normal: 400;
-  --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial";
+  --font-print: "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
+  --font-text: "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
@@ -14022,9 +13848,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+  --metadata-input-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -14032,9 +13856,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+  --metadata-label-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: oklch(0.68 0 0);
   --metadata-label-text-color-hover: oklch(0.68 0 0);
@@ -14577,44 +14399,24 @@ body.theme-dark {
   --ch-color-base-l-l-90: 2%;
   --ch-color-base-l-l-95: 1%;
   --checkbox-margin-inline-end: 0.25em;
-  --col-background-activeline: oklch(
-    from oklch(0.58 0 0) l c h / calc(alpha - calc(1 - 0.25))
-  );
+  --col-background-activeline: oklch(from oklch(0.58 0 0) l c h / calc(alpha - calc(1 - 0.25)));
   --col-base-alpha-alh: 0.25;
   --col-base-bg-alh: oklch(0.58 0 0);
   --col-frontmatter-atom: oklch(40.14% 0.0638 202.51deg);
   --col-frontmatter-default: oklch(82.77% 0.1667 79.6deg);
   --col-frontmatter-meta: oklch(70.7% 0.1737 155.3deg);
   --col-frontmatter-number: oklch(82.77% 0.1667 79.6deg);
-  --col-h1: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h1: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h1-bg: oklch(40.14% 0.0638 202.51deg);
-  --col-h2: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h2: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h2-bg: oklch(70.7% 0.1737 155.3deg);
-  --col-h3: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h3: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h3-bg: oklch(82.77% 0.1667 79.6deg);
-  --col-h4: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h4: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h4-bg: oklch(40.14% 0.0638 202.51deg);
-  --col-h5: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h5: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg);
-  --col-h6: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  );
+  --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h);
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg);
   --col-highlight-0: hsl(46deg 100% 50%);
   --col-highlight-0-org: hsl(60deg 100% 50%);
@@ -14640,17 +14442,7 @@ body.theme-dark {
   --color-table-head: oklch(0.19 0 0);
   --color-table-head-hover: rgba(255, 255, 255, 0.067);
   --color-table-odd: oklch(0.13 0 0);
-  --cssc-banner-gradient-mask: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    oklch(0% 0 0deg / 80%) 75%,
-    oklch(0% 0 0deg / 50%) 80%,
-    oklch(0% 0 0deg / 30%) 85%,
-    oklch(0% 0 0deg / 15%) 90%,
-    oklch(0% 0 0deg / 8%) 95%,
-    transparent 100%
-  );
+  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0% 0 0deg / 80%) 75%, oklch(0% 0 0deg / 50%) 80%, oklch(0% 0 0deg / 30%) 85%, oklch(0% 0 0deg / 15%) 90%, oklch(0% 0 0deg / 8%) 95%, transparent 100% );
   --cssc-banner-height: 200px;
   --cssc-banner-residual: 0px;
   --cssc-cornell-align-left: max(125px, 25%);
@@ -14661,7 +14453,7 @@ body.theme-dark {
   --cssc-cornell-text-align-last: right;
   --cssc-latex-font-reading: "MathJax Main", "MJXZERO", "MJXTEX";
   --cssc-latex-font-size: 14pt;
-  --cssc-latex-font-source: "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX";
+  --cssc-latex-font-source: "DM Mono" ,"MathJax Main", "MJXZERO", "MJXTEX";
   --cssc-latex-text-indent: 0em;
   --distant-opacity: 0.2;
   --elements-padding: 4px;
@@ -14754,13 +14546,8 @@ body.theme-dark {
   --shape-roundish: 6px;
   --sidebar-icon-padding: calc(6px - 0.5 * calc(18px - 16px));
   --sidebar-icon-size: 18px;
-  --sidebar-icon-size-hover: calc(
-    18px + 2 * calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))
-  );
-  --sidebar-padding-hover: calc(
-    calc(6px - 0.5 * calc(18px - 16px)) -
-      calc(0.25 * calc(6px - 0.5 * calc(18px - 16px)))
-  );
+  --sidebar-icon-size-hover: calc(18px + 2 * calc(0.25 * calc(6px - 0.5 * calc(18px - 16px))));
+  --sidebar-padding-hover: calc(calc(6px - 0.5 * calc(18px - 16px)) - calc(0.25 * calc(6px - 0.5 * calc(18px - 16px))));
   --size-bw-bases: size * 1.5;
   --size-bw-iframe: size * 1.5;
   --size-bw-pdfembed: size * 1.5;
@@ -14781,19 +14568,12 @@ body.theme-dark {
   --status-bar-max-width: 85%;
   --status-bar-min-height: calc(2 * 4px + calc(1.3 * 16px / 1.5));
   --status-bar-min-height-intermediary: calc(1.3 * 16px / 1.5);
-  --status-bar-shift-workspace-padding-bottom: calc(
-    calc(2 * 4px + calc(1.3 * 16px / 1.5)) + 4px + 4px + 1px
-  );
+  --status-bar-shift-workspace-padding-bottom: calc(calc(2 * 4px + calc(1.3 * 16px / 1.5)) + 4px + 4px + 1px);
   --tab-focus-border-width: 1px;
   --tab-icon-size: 14px;
-  --tab-icon-size-hover: calc(
-    14px + 2 * calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))
-  );
+  --tab-icon-size-hover: calc(14px + 2 * calc(0.25 * calc(6px + 0.5 * calc(16px - 14px))));
   --tab-padding: calc(6px + 0.5 * calc(16px - 14px));
-  --tab-padding-hover: calc(
-    calc(6px + 0.5 * calc(16px - 14px)) -
-      calc(0.25 * calc(6px + 0.5 * calc(16px - 14px)))
-  );
+  --tab-padding-hover: calc(calc(6px + 0.5 * calc(16px - 14px)) - calc(0.25 * calc(6px + 0.5 * calc(16px - 14px))));
   --table-drag-handle-size: 16px;
   --text-message-progress-bar: oklch(0.98 0 0);
   --ui-font: "Manrope", "Inter 4.1", "DM Sans";
@@ -14806,18 +14586,7 @@ body .markdown-rendered a.external-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -14833,18 +14602,7 @@ body .markdown-rendered a.internal-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -14860,18 +14618,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -14887,18 +14634,7 @@ body .markdown-rendered p {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -14914,10 +14650,7 @@ body strong {
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: auto;
   filter: none;
-  font-family:
-    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", Manrope;
+  font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid oklch(98% 0 0deg);
@@ -14933,18 +14666,7 @@ body b {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -14960,10 +14682,7 @@ body em {
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: auto;
   filter: none;
-  font-family:
-    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", Manrope;
+  font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid oklch(98% 0 0deg);
@@ -14979,18 +14698,7 @@ body i {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -15006,18 +14714,7 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -15033,10 +14730,7 @@ body del {
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: auto;
   filter: none;
-  font-family:
-    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-    "DM Sans", "Inter 4.1", Manrope;
+  font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid oklch(98% 0 0deg);
@@ -15061,18 +14755,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15084,18 +14767,8 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15105,10 +14778,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -15116,40 +14786,12 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: light-dark(
-    oklch(70.7% 0.1737 155.3deg / 0.1),
-    rgba(138, 92, 245, 0.1)
-  );
+  background-color: light-dark(oklch(70.7% 0.1737 155.3deg / 0.1), rgba(138, 92, 245, 0.1));
   display: flex;
-  font-family:
-    Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-    Manrope;
+  font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: light-dark(
-    oklch(70.7% 0.1737 155.3deg / 0.15),
-    rgba(138, 92, 245, 0.15)
-  );
-  border-right-color: light-dark(
-    oklch(70.7% 0.1737 155.3deg / 0.15),
-    rgba(138, 92, 245, 0.15)
-  );
-  border-top-color: light-dark(
-    oklch(70.7% 0.1737 155.3deg / 0.15),
-    rgba(138, 92, 245, 0.15)
-  );
-  border-bottom-color: light-dark(
-    oklch(70.7% 0.1737 155.3deg / 0.15),
-    rgba(138, 92, 245, 0.15)
-  );
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px solid light-dark(oklch(70.7% 0.1737 155.3deg / 0.15), rgba(138, 92, 245, 0.15));
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -15168,18 +14810,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15203,18 +14834,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15225,25 +14845,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15253,28 +14859,13 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15284,27 +14875,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15313,14 +14890,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -15335,10 +14906,7 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
+body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -15351,7 +14919,7 @@ body
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task="x"] {
+body ul > li.task-list-item[data-task=x] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -15359,18 +14927,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -15384,18 +14941,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15409,18 +14955,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15436,18 +14971,7 @@ body .search-results > * {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -15459,18 +14983,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15484,18 +14997,7 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15515,98 +15017,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -15619,18 +15055,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15641,20 +15066,9 @@ body .markdown-preview-sizer {
   border-end-end-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout="note"] {
+body .callout[data-callout=note] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15664,26 +15078,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15692,16 +15092,9 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -15711,27 +15104,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15741,30 +15120,15 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15774,30 +15138,15 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15807,30 +15156,15 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="tip"] {
+body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15840,30 +15174,15 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="success"] {
+body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15873,30 +15192,15 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="question"] {
+body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15906,30 +15210,15 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="warning"] {
+body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15939,30 +15228,15 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="danger"] {
+body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15972,30 +15246,15 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="failure"] {
+body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16005,30 +15264,15 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16038,30 +15282,15 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16071,30 +15300,15 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="quote"] {
+body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16104,11 +15318,7 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -16117,62 +15327,18 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -16181,51 +15347,17 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hackthebox">Install instructions</a>
 
-| Name         | Modes                     | Compatibility                          | License                                                                                                                                                       |
-| ------------ | ------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `hackthebox` | ![[media/dark.svg\|DARK]] | <img src="media/full.svg" alt="FULL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hackthebox/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

@@ -4,9 +4,10 @@
 - Support the author: <a href="https://buymeacoffee.com/bhappen" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/space">Install instructions</a>
 
-| Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                      |
-| ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `space` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/space/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

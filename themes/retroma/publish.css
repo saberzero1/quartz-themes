@@ -2,28 +2,22 @@
   font-family: "Avenir";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+  src: local("Avenir"), url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 /* cyrillic-ext */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -31,8 +25,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -40,64 +33,47 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -105,8 +81,7 @@
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -114,58 +89,36 @@
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 body.theme-light {
-  --accent-1: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      l c calc(h + 30)
-  ) !important;
-  --accent-2: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      l c calc(h + 330)
-  ) !important;
+  --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) !important;
+  --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -179,128 +132,35 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
-  --background-modifier-border-focus: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          93% calc(c * 0.4) h
-      )
-      70% c h
-  ) !important;
+  --background-modifier-border: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
+  --background-modifier-border-focus: oklch( from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) 70% c h ) !important;
   --background-modifier-border-hover: #d4d4d4 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: oklch(from #d32f2f 50% 30% h) !important;
-  --background-modifier-error-hover: oklch(from #d32f2f 50% 30% h) !important;
+  --background-modifier-error: oklch( from #d32f2f 50% 30% h ) !important;
+  --background-modifier-error-hover: oklch( from #d32f2f 50% 30% h ) !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
   --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: oklch(from #4caf50 50% 30% h) !important;
+  --background-modifier-success: oklch( from #4caf50 50% 30% h ) !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --background-primary-alt: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      75% calc(c * 0.4) h
-  ) !important;
-  --background-secondary: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
-  --background-secondary-alt: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
-  --bases-cards-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          60% calc(c * 0.4) h
-      )
-      85% c h
-  ) !important;
+  --background-primary: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --background-primary-alt: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h ) !important;
+  --background-secondary: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
+  --background-secondary-alt: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
+  --bases-cards-background: oklch(from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) 85% c h) !important;
   --bases-cards-border-width: 4px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      75% calc(c * 0.4) h
-  ) !important;
+  --bases-cards-cover-background: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h ) !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            80% calc(c * 0.4) h
-        )
-        l c h
-    ) !important;
+  --bases-cards-shadow: 0 0 0 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
   --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --bases-embed-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --bases-embed-border-radius: 12px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -309,49 +169,20 @@ body.theme-light {
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: oklch(from #222222 50% c h / 50%) !important;
-  --bases-table-cell-background-active: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --bases-table-cell-background-disabled: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      75% calc(c * 0.4) h
-  ) !important;
+  --bases-table-cell-background-active: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --bases-table-cell-background-disabled: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h ) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
+  --bases-table-header-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: #5c5c5c !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 100 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -359,22 +190,8 @@ body.theme-light {
   --bases-table-text-size: 0.875em !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h / 50%
-  ) !important;
-  --blockquote-border-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      50% c h / 50%
-  ) !important;
+  --blockquote-background-color: oklch( from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h / 50% ) !important;
+  --blockquote-border-color: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 50% c h / 50%) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -404,17 +221,7 @@ body.theme-light {
   --callout-title-weight: calc(400 + 200) !important;
   --callout-todo: 8, 109, 221 !important;
   --callout-warning: 236, 117, 0 !important;
-  --canvas-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
+  --canvas-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
   --canvas-card-label-color: #ababab !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 233, 49, 71 !important;
@@ -427,84 +234,38 @@ body.theme-light {
   --caret-color: #222222 !important;
   --checkbox-border-color: #ababab !important;
   --checkbox-border-color-hover: #5c5c5c !important;
-  --checkbox-color: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --checkbox-color: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --checkbox-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      98% calc(c * 0.4) h
-  ) !important;
+  --checkbox-marker-color: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) !important;
   --checkbox-radius: 12px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: #5c5c5c !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      85% c h / 50%
-  ) !important;
-  --code-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --code-background: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 85% c h / 50%) !important;
+  --code-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #ababab !important;
-  --code-function: oklch(from #ffeb3b 50% 30% h) !important;
-  --code-important: oklch(from #ff9800 50% 30% h) !important;
+  --code-function: oklch( from #ffeb3b 50% 30% h ) !important;
+  --code-important: oklch( from #ff9800 50% 30% h ) !important;
   --code-keyword: #d53984 !important;
   --code-normal: #222222 !important;
-  --code-operator: oklch(from #d32f2f 50% 30% h) !important;
-  --code-property: oklch(from #00bcd4 50% 30% h) !important;
+  --code-operator: oklch( from #d32f2f 50% 30% h ) !important;
+  --code-property: oklch( from #00bcd4 50% 30% h ) !important;
   --code-punctuation: #5c5c5c !important;
   --code-radius: 12px !important;
   --code-size: 0.875em !important;
-  --code-string: oklch(from #4caf50 50% 30% h) !important;
-  --code-tag: oklch(from #d32f2f 50% 30% h) !important;
-  --code-value: oklch(from #673ab7 50% 30% h) !important;
+  --code-string: oklch( from #4caf50 50% 30% h ) !important;
+  --code-tag: oklch( from #d32f2f 50% 30% h ) !important;
+  --code-value: oklch( from #673ab7 50% 30% h ) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #ababab !important;
   --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
   --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --color-accent-2: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --color-accent-1: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -518,21 +279,21 @@ body.theme-light {
   --color-base-50: #ababab !important;
   --color-base-60: #707070 !important;
   --color-base-70: #5c5c5c !important;
-  --color-blue: oklch(from #2196f3 50% 30% h) !important;
+  --color-blue: oklch( from #2196f3 50% 30% h ) !important;
   --color-blue-rgb: 8, 109, 221 !important;
-  --color-cyan: oklch(from #00bcd4 50% 30% h) !important;
+  --color-cyan: oklch( from #00bcd4 50% 30% h ) !important;
   --color-cyan-rgb: 0, 191, 188 !important;
-  --color-green: oklch(from #4caf50 50% 30% h) !important;
+  --color-green: oklch( from #4caf50 50% 30% h ) !important;
   --color-green-rgb: 8, 185, 78 !important;
-  --color-orange: oklch(from #ff9800 50% 30% h) !important;
+  --color-orange: oklch( from #ff9800 50% 30% h ) !important;
   --color-orange-rgb: 236, 117, 0 !important;
   --color-pink: #d53984 !important;
   --color-pink-rgb: 213, 57, 132 !important;
-  --color-purple: oklch(from #673ab7 50% 30% h) !important;
+  --color-purple: oklch( from #673ab7 50% 30% h ) !important;
   --color-purple-rgb: 120, 82, 238 !important;
-  --color-red: oklch(from #d32f2f 50% 30% h) !important;
+  --color-red: oklch( from #d32f2f 50% 30% h ) !important;
   --color-red-rgb: 233, 49, 71 !important;
-  --color-yellow: oklch(from #ffeb3b 50% 30% h) !important;
+  --color-yellow: oklch( from #ffeb3b 50% 30% h ) !important;
   --color-yellow-rgb: 224, 172, 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -540,22 +301,8 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
-  --divider-color-hover: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --divider-color: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
+  --divider-color-hover: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0px !important;
   --divider-width-hover: 3px !important;
@@ -567,47 +314,17 @@ body.theme-light {
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          l c h
-      ),
-    inset 0 0 0 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          l c h
-      ) !important;
+  --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h), inset 0 0 0 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid
-    hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --embed-border-start: 2px solid hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -619,32 +336,17 @@ body.theme-light {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -654,10 +356,7 @@ body.theme-light {
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -667,17 +366,7 @@ body.theme-light {
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --footnote-divider-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -696,9 +385,9 @@ body.theme-light {
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
-  --graph-node-attachment: oklch(from #ffeb3b 50% 30% h) !important;
+  --graph-node-attachment: oklch( from #ffeb3b 50% 30% h ) !important;
   --graph-node-focused: hsl(258, 88%, 66%) !important;
-  --graph-node-tag: oklch(from #4caf50 50% 30% h) !important;
+  --graph-node-tag: oklch( from #4caf50 50% 30% h ) !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
   --h1-line-height: 1.2 !important;
@@ -779,24 +468,10 @@ body.theme-light {
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #ababab !important;
   --input-radius: 12px !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --interactive-accent: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --interactive-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --interactive-accent: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --interactive-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #ffffff !important;
@@ -813,43 +488,17 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      calc(50% - 15%) 30% h
-  ) !important;
-  --link-color-hover: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          calc(50% - 15%) 30% h
-      )
-      50% 30% h / 80%
-  ) !important;
+  --link-color: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30% h ) !important;
+  --link-color-hover: oklch( from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30% h ) 50% 30% h / 80% ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: oklch(from #d32f2f 50% 30% h) !important;
-  --link-external-color-hover: oklch(
-    from oklch(from #d32f2f 50% 30% h) 50% 30% h / 80%
-  ) !important;
+  --link-external-color: oklch( from #d32f2f 50% 30% h ) !important;
+  --link-external-color-hover: oklch( from oklch( from #d32f2f 50% 30% h ) 50% 30% h / 80% ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          calc(50% - 15%) 30% h
-      )
-      50% 30% h / 60%
-  ) !important;
+  --link-unresolved-color: oklch( from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30% h ) 50% 30% h / 60% ) !important;
   --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -870,55 +519,19 @@ body.theme-light {
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
+  --menu-background: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --metadata-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h / 75%
-  ) !important;
-  --metadata-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --metadata-background: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h / 75%) !important;
+  --metadata-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --metadata-border-radius: 12px !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --metadata-divider-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -926,141 +539,33 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: calc(16px * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #222222 !important;
-  --metadata-label-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          60% calc(c * 0.4) h
-      )
-      l c h / 15%
-  ) !important;
-  --metadata-label-background-active: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          60% calc(c * 0.4) h
-      )
-      l c h / 30%
-  ) !important;
-  --metadata-label-background-hover: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          60% calc(c * 0.4) h
-      )
-      l c h / 30%
-  ) !important;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-background: oklch( from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) l c h / 15% ) !important;
+  --metadata-label-background-active: oklch( from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) l c h / 30% ) !important;
+  --metadata-label-background-hover: oklch( from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) l c h / 30% ) !important;
+  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #5c5c5c !important;
   --metadata-label-text-color-hover: #5c5c5c !important;
   --metadata-label-width: 8em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
-  --metadata-property-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      98% calc(c * 0.4) h
-  ) !important;
+  --metadata-property-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) !important;
   --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
-  --metadata-property-background-hover: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      98% calc(c * 0.4) h
-  ) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from
-                oklch(
-                  from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l
-                    c h
-                )
-                l c calc(h + 330)
-            )
-            93% calc(c * 0.4) h
-        )
-        70% c h
-    ) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 330)
-        )
-        60% calc(c * 0.4) h
-    ) !important;
+  --metadata-property-background-hover: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px oklch( from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) 70% c h ) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 12px !important;
   --metadata-property-radius-focus: 12px !important;
   --metadata-property-radius-hover: 12px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
+  --modal-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1100,58 +605,16 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --pdf-page-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
+  --pdf-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --pdf-page-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --pill-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --pill-border-color-hover: #d4d4d4 !important;
   --pill-border-width: 1px !important;
   --pill-color: #5c5c5c !important;
@@ -1181,16 +644,8 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
-  --ribbon-background-collapsed: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
+  --ribbon-background: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
+  --ribbon-background-collapsed: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1208,23 +663,9 @@ body.theme-light {
   --search-clear-button-size: 13px !important;
   --search-icon-color: #5c5c5c !important;
   --search-icon-size: 18px !important;
-  --search-result-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --search-result-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-markdown-font-size: calc(16px * 0.9) !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
@@ -1250,35 +691,11 @@ body.theme-light {
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      50% c h / 50%
-  ) !important;
+  --slider-track-background: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 50% c h / 50%) !important;
   --slider-track-height: 6px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      60% calc(c * 0.4) h
-  ) !important;
-  --status-bar-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
+  --status-bar-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) !important;
+  --status-bar-border-color: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-text-color: #5c5c5c !important;
@@ -1286,46 +703,22 @@ body.theme-light {
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: oklch(from #d32f2f 50% 30% h) !important;
-  --sync-avatar-color-2: oklch(from #ff9800 50% 30% h) !important;
-  --sync-avatar-color-3: oklch(from #ffeb3b 50% 30% h) !important;
-  --sync-avatar-color-4: oklch(from #4caf50 50% 30% h) !important;
-  --sync-avatar-color-5: oklch(from #00bcd4 50% 30% h) !important;
-  --sync-avatar-color-6: oklch(from #2196f3 50% 30% h) !important;
-  --sync-avatar-color-7: oklch(from #673ab7 50% 30% h) !important;
+  --sync-avatar-color-1: oklch( from #d32f2f 50% 30% h ) !important;
+  --sync-avatar-color-2: oklch( from #ff9800 50% 30% h ) !important;
+  --sync-avatar-color-3: oklch( from #ffeb3b 50% 30% h ) !important;
+  --sync-avatar-color-4: oklch( from #4caf50 50% 30% h ) !important;
+  --sync-avatar-color-5: oklch( from #00bcd4 50% 30% h ) !important;
+  --sync-avatar-color-6: oklch( from #2196f3 50% 30% h ) !important;
+  --sync-avatar-color-7: oklch( from #673ab7 50% 30% h ) !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
-  --tab-container-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
+  --tab-background-active: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --tab-container-background: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
+  --tab-outline-color: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -1337,11 +730,7 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
-  ) !important;
+  --tab-switcher-background: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -1354,17 +743,7 @@ body.theme-light {
   --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --table-add-button-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-color: oklch(from #222222 50% c h / 50%) !important;
@@ -1376,11 +755,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --table-drag-handle-background-active: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1395,23 +770,9 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      80% 30% h / 75%
-  ) !important;
+  --table-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 80% 30% h / 75%) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --table-selection-border-color: hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
@@ -1421,11 +782,7 @@ body.theme-light {
   --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      40% c h / 75%
-  ) !important;
+  --tag-color: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 40% c h / 75%) !important;
   --tag-color-hover: hsl(258, 88%, 66%) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -1434,94 +791,25 @@ body.theme-light {
   --tag-radius: 8px !important;
   --tag-size: 0.875em !important;
   --text-accent: hsl(258, 88%, 66%) !important;
-  --text-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
-  --text-error: oklch(from #d32f2f 50% 30% h) !important;
+  --text-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --text-error: oklch( from #d32f2f 50% 30% h ) !important;
   --text-faint: #ababab !important;
-  --text-highlight-bg: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      80% 30% h / 75%
-  ) !important;
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 80% 30% h / 75%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #5c5c5c !important;
   --text-normal: #222222 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      80% 30% h / 75%
-  ) !important;
-  --text-success: oklch(from #4caf50 50% 30% h) !important;
-  --text-warning: oklch(from #ff9800 50% 30% h) !important;
-  --titlebar-background: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
-  --titlebar-background-focused: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 30)
-      )
-      65% calc(c * 0.4) h
-  ) !important;
-  --titlebar-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
+  --text-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 80% 30% h / 75%) !important;
+  --text-success: oklch( from #4caf50 50% 30% h ) !important;
+  --text-warning: oklch( from #ff9800 50% 30% h ) !important;
+  --titlebar-background: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
+  --titlebar-background-focused: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
+  --titlebar-border-color: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) l c h) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #5c5c5c !important;
-  --titlebar-text-color-focused: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          98% calc(c * 0.4) h
-      )
-      100% c h
-  ) !important;
+  --titlebar-text-color-focused: oklch(from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) 100% c h) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1545,364 +833,60 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: oklch(from #d32f2f 50% 30% h) !important;
-  --h2-color: oklch(from #ff9800 50% 30% h) !important;
-  --h3-color: oklch(from #ffeb3b 50% 30% h) !important;
-  --h4-color: oklch(from #4caf50 50% 30% h) !important;
-  --h5-color: oklch(from #2196f3 50% 30% h) !important;
-  --h6-color: oklch(from #3f51b5 50% 30% h) !important;
-  --inline-title-color: oklch(from #d32f2f 50% 30% h) !important;
-  --table-header-background-hover: oklch(
-    from oklch(from #222222 l c h / 10%) l c h / 15% / 50%
-  ) !important;
-  --bold-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      calc(50% - 15%) 30% calc(h + 100)
-  ) !important;
-  --italic-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      calc(50% - 15%) 30% calc(h + 200)
-  ) !important;
+  --h1-color: oklch( from #d32f2f 50% 30% h ) !important;
+  --h2-color: oklch( from #ff9800 50% 30% h ) !important;
+  --h3-color: oklch( from #ffeb3b 50% 30% h ) !important;
+  --h4-color: oklch( from #4caf50 50% 30% h ) !important;
+  --h5-color: oklch( from #2196f3 50% 30% h ) !important;
+  --h6-color: oklch( from #3f51b5 50% 30% h ) !important;
+  --inline-title-color: oklch( from #d32f2f 50% 30% h ) !important;
+  --table-header-background-hover: oklch( from oklch(from #222222 l c h / 10%) l c h / 15% / 50% ) !important;
+  --bold-color: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30% calc(h + 100) ) !important;
+  --italic-color: oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30% calc(h + 200) ) !important;
   --button-text: #222222 !important;
-  --background-tertiary: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      60% calc(c * 0.4) h
-  ) !important;
-  --color-magenta: oklch(from #e91e63 50% 30% h) !important;
-  --color-teal: oklch(from #009688 50% 30% h) !important;
+  --background-tertiary: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) !important;
+  --color-magenta: oklch( from #e91e63 50% 30% h ) !important;
+  --color-teal: oklch( from #009688 50% 30% h ) !important;
   --img-border-radius: 0px !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
-  --box-shadow:
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ) !important;
+  --box-shadow: inset -2px -2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h), inset -2px -2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h) !important;
   --metadata-label-font-weight: 700 !important;
-  --folder-color-3: oklch(from #ffeb3b 50% 30% h) !important;
-  --folder-color-4: oklch(from #4caf50 50% 30% h) !important;
-  --folder-color-5: oklch(from #2196f3 50% 30% h) !important;
-  --folder-color-6: oklch(from #3f51b5 50% 30% h) !important;
-  --folder-color-7: oklch(from #9c27b0 50% 30% h) !important;
-  --folder-color-8: oklch(from #ff5722 50% 30% h) !important;
-  --folder-color-9: oklch(from #ffb300 50% 30% h) !important;
-  --background-paper: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      98% calc(c * 0.4) h
-  ) !important;
-  --base-accent: oklch(
-    from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-  ) !important;
-  --border-groove: 4px groove
-    oklch(
-      from
-        oklch(
-          from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-        )
-        75% calc(c * 0.4) h
-    ) !important;
-  --border-ridge: 4px ridge
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 330)
-        )
-        93% calc(c * 0.4) h
-    ) !important;
-  --border-solid: 4px solid
-    oklch(
-      from
-        oklch(
-          from
-            oklch(
-              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-            )
-            l c calc(h + 30)
-        )
-        65% calc(c * 0.4) h
-    ) !important;
-  --box-shadow-active:
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ) !important;
-  --box-shadow-active-sm:
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ) !important;
-  --box-shadow-sm:
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ) !important;
-  --button-active: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          80% calc(c * 0.4) h
-      )
-      85% c h
-  ) !important;
-  --button-hover: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          98% calc(c * 0.4) h
-      )
-      l c h
-  ) !important;
-  --button-normal: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      93% calc(c * 0.4) h
-  ) !important;
+  --folder-color-3: oklch( from #ffeb3b 50% 30% h ) !important;
+  --folder-color-4: oklch( from #4caf50 50% 30% h ) !important;
+  --folder-color-5: oklch( from #2196f3 50% 30% h ) !important;
+  --folder-color-6: oklch( from #3f51b5 50% 30% h ) !important;
+  --folder-color-7: oklch( from #9c27b0 50% 30% h ) !important;
+  --folder-color-8: oklch( from #ff5722 50% 30% h ) !important;
+  --folder-color-9: oklch( from #ffb300 50% 30% h ) !important;
+  --background-paper: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) !important;
+  --base-accent: oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) !important;
+  --border-groove: 4px groove oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h ) !important;
+  --border-ridge: 4px ridge oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
+  --border-solid: 4px solid oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h ) !important;
+  --box-shadow-active: inset 2px 2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset -2px -2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset -2px -2px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h) !important;
+  --box-shadow-active-sm: inset 1px 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset -1px -1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset -1px -1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h) !important;
+  --box-shadow-sm: inset -1px -1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h), inset -1px -1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 50% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 100% c h) !important;
+  --button-active: oklch(from oklch( from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h ) 85% c h) !important;
+  --button-hover: oklch(from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h ) l c h) !important;
+  --button-normal: oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h ) !important;
   --chroma: 30% !important;
   --chroma-accent: 0.4 !important;
   --chroma-folder: 30% !important;
-  --color-amber: oklch(from #ffb300 50% 30% h) !important;
-  --color-indigo: oklch(from #3f51b5 50% 30% h) !important;
-  --color-lime: oklch(from #8bc34a 50% 30% h) !important;
-  --color-rose: oklch(from #f48fb1 50% 30% h) !important;
-  --color-vermillion: oklch(from #ff5722 50% 30% h) !important;
-  --color-violet: oklch(from #9c27b0 50% 30% h) !important;
-  --folder-accent-1: oklch(from #d32f2f 50% 30% h) !important;
-  --folder-accent-10: oklch(from #8bc34a 50% 30% h) !important;
-  --folder-accent-11: oklch(from #009688 50% 30% h) !important;
-  --folder-accent-12: oklch(from #673ab7 50% 30% h) !important;
-  --folder-accent-13: oklch(from #e91e63 50% 30% h) !important;
-  --folder-accent-14: oklch(from #f48fb1 50% 30% h) !important;
-  --folder-accent-15: oklch(from #00bcd4 50% 30% h) !important;
-  --folder-accent-2: oklch(from #ff9800 50% 30% h) !important;
+  --color-amber: oklch( from #ffb300 50% 30% h ) !important;
+  --color-indigo: oklch( from #3f51b5 50% 30% h ) !important;
+  --color-lime: oklch( from #8bc34a 50% 30% h ) !important;
+  --color-rose: oklch( from #f48fb1 50% 30% h ) !important;
+  --color-vermillion: oklch( from #ff5722 50% 30% h ) !important;
+  --color-violet: oklch( from #9c27b0 50% 30% h ) !important;
+  --folder-accent-1: oklch( from #d32f2f 50% 30% h ) !important;
+  --folder-accent-10: oklch( from #8bc34a 50% 30% h ) !important;
+  --folder-accent-11: oklch( from #009688 50% 30% h ) !important;
+  --folder-accent-12: oklch( from #673ab7 50% 30% h ) !important;
+  --folder-accent-13: oklch( from #e91e63 50% 30% h ) !important;
+  --folder-accent-14: oklch( from #f48fb1 50% 30% h ) !important;
+  --folder-accent-15: oklch( from #00bcd4 50% 30% h ) !important;
+  --folder-accent-2: oklch( from #ff9800 50% 30% h ) !important;
   --hue-amber: #ffb300 !important;
   --hue-blue: #2196f3 !important;
   --hue-cyan: #00bcd4 !important;
@@ -1918,44 +902,19 @@ body.theme-light {
   --hue-vermillion: #ff5722 !important;
   --hue-violet: #9c27b0 !important;
   --hue-yellow: #ffeb3b !important;
-  --img-border-color: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          60% calc(c * 0.4) h
-      )
-      l 30% h
-  ) !important;
+  --img-border-color: oklch(from oklch( from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h ) l 30% h) !important;
   --img-border-width: 0px !important;
-  --interactive-active: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      50% c h / 50%
-  ) !important;
+  --interactive-active: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 50% c h / 50%) !important;
   --lightness: 50% !important;
-  --mobile-nav-button-safe-area: calc(0px - 0px - 0px) !important;
-  --outline-color: oklch(
-    from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      25% c h
-  ) !important;
+  --mobile-nav-button-safe-area: calc( 0px - 0px - 0px ) !important;
+  --outline-color: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 25% c h) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
 }
 
 body.theme-dark {
   --accent-1: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30));
-  --accent-2: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)
-  );
+  --accent-2: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330));
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -1969,71 +928,35 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-  --background-modifier-border: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
-  --background-modifier-border-focus: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          28% calc(c * 0.3) h
-      )
-      70% c h
-  );
+  --background-modifier-border: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
+  --background-modifier-border-focus: oklch( from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h ) 70% c h );
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-error: oklch(from #d32f2f 70% 20% h);
-  --background-modifier-error-hover: oklch(from #d32f2f 70% 20% h);
+  --background-modifier-error: oklch( from #d32f2f 70% 20% h );
+  --background-modifier-error-hover: oklch( from #d32f2f 70% 20% h );
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: #2a2a2a;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: oklch(from #4caf50 70% 20% h);
+  --background-modifier-success: oklch( from #4caf50 70% 20% h );
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --background-primary-alt: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h
-  );
-  --background-secondary: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
-  --background-secondary-alt: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 22%
-      calc(c * 0.3) h
-  );
-  --bases-cards-background: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
-      )
-      25% c h
-  );
+  --background-primary: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --background-primary-alt: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h );
+  --background-secondary: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
+  --background-secondary-alt: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 22% calc(c * 0.3) h );
+  --bases-cards-background: oklch(from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h ) 25% c h);
   --bases-cards-border-width: 4px;
   --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h
-  );
+  --bases-cards-cover-background: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h );
   --bases-cards-group-padding: 12px;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-        l c h
-    );
+  --bases-cards-shadow: 0 0 0 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f;
   --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --bases-embed-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --bases-embed-border-radius: 12px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
@@ -2042,13 +965,8 @@ body.theme-dark {
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: oklch(from #dadada 50% c h / 50%);
-  --bases-table-cell-background-active: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --bases-table-cell-background-disabled: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h
-  );
+  --bases-table-cell-background-active: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --bases-table-cell-background-disabled: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h );
   --bases-table-cell-radius-active: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
   --bases-table-column-border-width: 1px;
@@ -2056,18 +974,11 @@ body.theme-dark {
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-header-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
+  --bases-table-header-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
   --bases-table-header-color: #b3b3b3;
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px);
   --bases-table-header-weight: 100;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -2075,13 +986,8 @@ body.theme-dark {
   --bases-table-text-size: 0.875em;
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
-  --blockquote-background-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h / 50%
-  );
-  --blockquote-border-color: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%
-  );
+  --blockquote-background-color: oklch( from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h / 50% );
+  --blockquote-border-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%);
   --blockquote-border-thickness: 4px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -2111,10 +1017,7 @@ body.theme-dark {
   --callout-title-weight: calc(400 + 200);
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
+  --canvas-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
   --canvas-card-label-color: #666666;
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 251, 70, 76;
@@ -2128,51 +1031,34 @@ body.theme-dark {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
   --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --checkbox-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32%
-      calc(c * 0.3) h
-  );
+  --checkbox-marker-color: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h );
   --checkbox-radius: 12px;
   --checkbox-size: 16px;
   --checklist-done-color: #b3b3b3;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-      10% c h / 50%
-  );
-  --code-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --code-background: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 10% c h / 50%);
+  --code-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --code-border-width: 0px;
   --code-bracket-background: rgba(255, 255, 255, 0.067);
   --code-comment: #666666;
-  --code-function: oklch(from #ffeb3b 70% 20% h);
-  --code-important: oklch(from #ff9800 70% 20% h);
+  --code-function: oklch( from #ffeb3b 70% 20% h );
+  --code-important: oklch( from #ff9800 70% 20% h );
   --code-keyword: #fa99cd;
   --code-normal: #dadada;
-  --code-operator: oklch(from #d32f2f 70% 20% h);
-  --code-property: oklch(from #00bcd4 70% 20% h);
+  --code-operator: oklch( from #d32f2f 70% 20% h );
+  --code-property: oklch( from #00bcd4 70% 20% h );
   --code-punctuation: #b3b3b3;
   --code-radius: 12px;
   --code-size: 0.875em;
-  --code-string: oklch(from #4caf50 70% 20% h);
-  --code-tag: oklch(from #d32f2f 70% 20% h);
-  --code-value: oklch(from #673ab7 70% 20% h);
+  --code-string: oklch( from #4caf50 70% 20% h );
+  --code-tag: oklch( from #d32f2f 70% 20% h );
+  --code-value: oklch( from #673ab7 70% 20% h );
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent: hsl(258, 88%, 66%);
   --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
@@ -2189,21 +1075,21 @@ body.theme-dark {
   --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
-  --color-blue: oklch(from #2196f3 70% 20% h);
+  --color-blue: oklch( from #2196f3 70% 20% h );
   --color-blue-rgb: 2, 122, 255;
-  --color-cyan: oklch(from #00bcd4 70% 20% h);
+  --color-cyan: oklch( from #00bcd4 70% 20% h );
   --color-cyan-rgb: 83, 223, 221;
-  --color-green: oklch(from #4caf50 70% 20% h);
+  --color-green: oklch( from #4caf50 70% 20% h );
   --color-green-rgb: 68, 207, 110;
-  --color-orange: oklch(from #ff9800 70% 20% h);
+  --color-orange: oklch( from #ff9800 70% 20% h );
   --color-orange-rgb: 233, 151, 63;
   --color-pink: #fa99cd;
   --color-pink-rgb: 250, 153, 205;
-  --color-purple: oklch(from #673ab7 70% 20% h);
+  --color-purple: oklch( from #673ab7 70% 20% h );
   --color-purple-rgb: 168, 130, 255;
-  --color-red: oklch(from #d32f2f 70% 20% h);
+  --color-red: oklch( from #d32f2f 70% 20% h );
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: oklch(from #ffeb3b 70% 20% h);
+  --color-yellow: oklch( from #ffeb3b 70% 20% h );
   --color-yellow-rgb: 224, 222, 113;
   --cursor: default;
   --cursor-link: pointer;
@@ -2211,10 +1097,7 @@ body.theme-dark {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
-  );
+  --divider-color: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
   --divider-color-hover: hsl(258, 88%, 66%);
   --divider-vertical-height: 100%;
   --divider-width: 0px;
@@ -2227,19 +1110,7 @@ body.theme-dark {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover:
-    0 0 0 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-          c h
-      ),
-    inset 0 0 0 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-          c h
-      );
+  --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h), inset 0 0 0 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-start: 2px solid hsl(258, 88%, 66%);
@@ -2249,10 +1120,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2264,32 +1132,17 @@ body.theme-dark {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
   --font-black: 900;
   --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
+  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
@@ -2299,10 +1152,7 @@ body.theme-dark {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2312,10 +1162,7 @@ body.theme-dark {
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
   --font-weight: 400;
-  --footnote-divider-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --footnote-divider-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
@@ -2334,9 +1181,9 @@ body.theme-dark {
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
-  --graph-node-attachment: oklch(from #ffeb3b 70% 20% h);
+  --graph-node-attachment: oklch( from #ffeb3b 70% 20% h );
   --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --graph-node-tag: oklch(from #4caf50 70% 20% h);
+  --graph-node-tag: oklch( from #4caf50 70% 20% h );
   --graph-node-unresolved: #666666;
   --graph-text: #dadada;
   --h1-line-height: 1.2;
@@ -2417,20 +1264,10 @@ body.theme-dark {
   --input-padding: 4px 8px;
   --input-placeholder-color: #666666;
   --input-radius: 12px;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: hsl(258, 88%, 66%);
-  --interactive-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --interactive-accent-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
@@ -2447,27 +1284,17 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h
-  );
-  --link-color-hover: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h)
-      calc(70% + 10%) 20% h / 80%
-  );
+  --link-color: oklch( from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h );
+  --link-color-hover: oklch( from oklch( from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h ) calc(70% + 10%) 20% h / 80% );
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: oklch(from #d32f2f 70% 20% h);
-  --link-external-color-hover: oklch(
-    from oklch(from #d32f2f 70% 20% h) 70% 20% h / 80%
-  );
+  --link-external-color: oklch( from #d32f2f 70% 20% h );
+  --link-external-color-hover: oklch( from oklch( from #d32f2f 70% 20% h ) 70% 20% h / 80% );
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h)
-      calc(70% + 10%) 20% h / 60%
-  );
+  --link-unresolved-color: oklch( from oklch( from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% h ) calc(70% + 10%) 20% h / 60% );
   --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -2482,42 +1309,25 @@ body.theme-dark {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #666666;
-  --list-marker-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --list-marker-color-collapsed: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
-  --menu-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
+  --menu-background: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
   --menu-border-color: #3f3f3f;
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --metadata-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h / 75%
-  );
-  --metadata-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --metadata-background: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h / 75%);
+  --metadata-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --metadata-border-radius: 12px;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --metadata-divider-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
@@ -2525,82 +1335,33 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #dadada;
-  --metadata-label-background: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
-      )
-      l c h / 15%
-  );
-  --metadata-label-background-active: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
-      )
-      l c h / 30%
-  );
-  --metadata-label-background-hover: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
-      )
-      l c h / 30%
-  );
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-background: oklch( from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h ) l c h / 15% );
+  --metadata-label-background-active: oklch( from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h ) l c h / 30% );
+  --metadata-label-background-hover: oklch( from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h ) l c h / 30% );
+  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #b3b3b3;
   --metadata-label-text-color-hover: #b3b3b3;
   --metadata-label-width: 8em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
-  --metadata-property-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32%
-      calc(c * 0.3) h
-  );
+  --metadata-property-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h );
   --metadata-property-background-active: rgba(255, 255, 255, 0.067);
-  --metadata-property-background-hover: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32%
-      calc(c * 0.3) h
-  );
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    oklch(
-      from
-        oklch(
-          from
-            oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-            28% calc(c * 0.3) h
-        )
-        70% c h
-    );
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-        20% calc(c * 0.3) h
-    );
+  --metadata-property-background-hover: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h );
+  --metadata-property-box-shadow-focus: 0 0 0 2px oklch( from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h ) 70% c h );
+  --metadata-property-box-shadow-hover: 0 0 0 1px oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h );
   --metadata-property-padding: 0;
   --metadata-property-radius: 12px;
   --metadata-property-radius-focus: 12px;
   --metadata-property-radius-hover: 12px;
   --metadata-sidebar-input-font-size: 13px;
   --metadata-sidebar-label-font-size: 13px;
-  --modal-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
+  --modal-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
   --modal-border-color: #555555;
   --modal-border-width: 1px;
   --modal-community-sidebar-width: 280px;
@@ -2629,11 +1390,7 @@ body.theme-dark {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #b3b3b3;
   --nav-item-color-active: #dadada;
-  --nav-item-color-highlighted: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --nav-item-color-highlighted: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --nav-item-color-hover: #dadada;
   --nav-item-color-selected: #dadada;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -2644,46 +1401,22 @@ body.theme-dark {
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
-  --pdf-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --pdf-page-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --pdf-shadow: 0 0 0 1px
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-        l c h
-    );
-  --pdf-sidebar-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
+  --pdf-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --pdf-page-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --pdf-shadow: 0 0 0 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
+  --pdf-sidebar-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-        l c h
-    );
+  --pdf-thumbnail-shadow: 0 0 0 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --pill-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --pill-border-color-hover: #3f3f3f;
   --pill-border-width: 1px;
   --pill-color: #b3b3b3;
   --pill-color-hover: #dadada;
   --pill-color-remove: #666666;
-  --pill-color-remove-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --pill-color-remove-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -2707,12 +1440,8 @@ body.theme-dark {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
-  --ribbon-background-collapsed: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
+  --ribbon-background: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
+  --ribbon-background-collapsed: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --safe-area-inset-bottom: 0px;
@@ -2730,16 +1459,9 @@ body.theme-dark {
   --search-clear-button-size: 13px;
   --search-icon-color: #b3b3b3;
   --search-icon-size: 18px;
-  --search-result-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --search-result-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
   --sidebar-markdown-font-size: calc(16px * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -2765,19 +1487,11 @@ body.theme-dark {
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%
-  );
+  --slider-track-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%);
   --slider-track-height: 6px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --status-bar-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20%
-      calc(c * 0.3) h
-  );
-  --status-bar-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
-  );
+  --status-bar-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h );
+  --status-bar-border-color: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12px;
   --status-bar-text-color: #b3b3b3;
@@ -2785,30 +1499,22 @@ body.theme-dark {
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   --swatch-width: 22px;
-  --sync-avatar-color-1: oklch(from #d32f2f 70% 20% h);
-  --sync-avatar-color-2: oklch(from #ff9800 70% 20% h);
-  --sync-avatar-color-3: oklch(from #ffeb3b 70% 20% h);
-  --sync-avatar-color-4: oklch(from #4caf50 70% 20% h);
-  --sync-avatar-color-5: oklch(from #00bcd4 70% 20% h);
-  --sync-avatar-color-6: oklch(from #2196f3 70% 20% h);
-  --sync-avatar-color-7: oklch(from #673ab7 70% 20% h);
+  --sync-avatar-color-1: oklch( from #d32f2f 70% 20% h );
+  --sync-avatar-color-2: oklch( from #ff9800 70% 20% h );
+  --sync-avatar-color-3: oklch( from #ffeb3b 70% 20% h );
+  --sync-avatar-color-4: oklch( from #4caf50 70% 20% h );
+  --sync-avatar-color-5: oklch( from #00bcd4 70% 20% h );
+  --sync-avatar-color-6: oklch( from #2196f3 70% 20% h );
+  --sync-avatar-color-7: oklch( from #673ab7 70% 20% h );
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
-  --tab-container-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
+  --tab-background-active: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --tab-container-background: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
   --tab-curve: 6px;
   --tab-divider-color: #3f3f3f;
   --tab-font-size: 13px;
   --tab-max-width: 320px;
-  --tab-outline-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
-  );
+  --tab-outline-color: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -2820,9 +1526,7 @@ body.theme-dark {
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h
-  );
+  --tab-switcher-background: oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h );
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -2832,17 +1536,10 @@ body.theme-dark {
   --tab-text-color-focused: #b3b3b3;
   --tab-text-color-focused-active: #b3b3b3;
   --tab-text-color-focused-active-current: #dadada;
-  --tab-text-color-focused-highlighted: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --tab-text-color-focused-highlighted: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --table-add-button-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --table-add-button-border-width: 1px;
   --table-background: transparent;
   --table-border-color: oklch(from #dadada 50% c h / 50%);
@@ -2869,10 +1566,7 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45%
-      c h / 75%
-  );
+  --table-selection: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45% c h / 75%);
   --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(258, 88%, 66%);
   --table-selection-border-radius: 4px;
@@ -2894,35 +1588,20 @@ body.theme-dark {
   --tag-size: 0.875em;
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --text-error: oklch(from #d32f2f 70% 20% h);
+  --text-error: oklch( from #d32f2f 70% 20% h );
   --text-faint: #666666;
-  --text-highlight-bg: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50%
-      20% h / 75%
-  );
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% 20% h / 75%);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45%
-      c h / 75%
-  );
-  --text-success: oklch(from #4caf50 70% 20% h);
-  --text-warning: oklch(from #ff9800 70% 20% h);
-  --titlebar-background: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
-  );
-  --titlebar-background-focused: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
-  );
-  --titlebar-border-color: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h) l
-      c h
-  );
+  --text-selection: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45% c h / 75%);
+  --text-success: oklch( from #4caf50 70% 20% h );
+  --text-warning: oklch( from #ff9800 70% 20% h );
+  --titlebar-background: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
+  --titlebar-background-focused: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
+  --titlebar-border-color: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) l c h);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: #b3b3b3;
@@ -2950,180 +1629,60 @@ body.theme-dark {
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --zoom-factor: 1;
-  --h1-color: oklch(from #d32f2f 70% 20% h);
-  --h2-color: oklch(from #ff9800 70% 20% h);
-  --h3-color: oklch(from #ffeb3b 70% 20% h);
-  --h4-color: oklch(from #4caf50 70% 20% h);
-  --h5-color: oklch(from #2196f3 70% 20% h);
-  --h6-color: oklch(from #3f51b5 70% 20% h);
-  --inline-title-color: oklch(from #d32f2f 70% 20% h);
-  --table-header-background-hover: oklch(
-    from oklch(from #dadada l c h / 10%) l c h / 15% / 50%
-  );
-  --bold-color: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 100)
-  );
-  --italic-color: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 200)
-  );
+  --h1-color: oklch( from #d32f2f 70% 20% h );
+  --h2-color: oklch( from #ff9800 70% 20% h );
+  --h3-color: oklch( from #ffeb3b 70% 20% h );
+  --h4-color: oklch( from #4caf50 70% 20% h );
+  --h5-color: oklch( from #2196f3 70% 20% h );
+  --h6-color: oklch( from #3f51b5 70% 20% h );
+  --inline-title-color: oklch( from #d32f2f 70% 20% h );
+  --table-header-background-hover: oklch( from oklch(from #dadada l c h / 10%) l c h / 15% / 50% );
+  --bold-color: oklch( from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 100) );
+  --italic-color: oklch( from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 200) );
   --button-text: #dadada;
-  --background-tertiary: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20%
-      calc(c * 0.3) h
-  );
-  --color-magenta: oklch(from #e91e63 70% 20% h);
-  --color-teal: oklch(from #009688 70% 20% h);
+  --background-tertiary: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h );
+  --color-magenta: oklch( from #e91e63 70% 20% h );
+  --color-teal: oklch( from #009688 70% 20% h );
   --img-border-radius: 0px;
   --button-border-radius: 8px;
   --window-border-radius: 12px;
-  --box-shadow:
-    inset -2px -2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      );
+  --box-shadow: inset -2px -2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 15% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset -2px -2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h);
   --metadata-label-font-weight: 700;
-  --folder-color-3: oklch(from #ffeb3b 70% 20% h);
-  --folder-color-4: oklch(from #4caf50 70% 20% h);
-  --folder-color-5: oklch(from #2196f3 70% 20% h);
-  --folder-color-6: oklch(from #3f51b5 70% 20% h);
-  --folder-color-7: oklch(from #9c27b0 70% 20% h);
-  --folder-color-8: oklch(from #ff5722 70% 20% h);
-  --folder-color-9: oklch(from #ffb300 70% 20% h);
-  --background-paper: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32%
-      calc(c * 0.3) h
-  );
+  --folder-color-3: oklch( from #ffeb3b 70% 20% h );
+  --folder-color-4: oklch( from #4caf50 70% 20% h );
+  --folder-color-5: oklch( from #2196f3 70% 20% h );
+  --folder-color-6: oklch( from #3f51b5 70% 20% h );
+  --folder-color-7: oklch( from #9c27b0 70% 20% h );
+  --folder-color-8: oklch( from #ff5722 70% 20% h );
+  --folder-color-9: oklch( from #ffb300 70% 20% h );
+  --background-paper: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h );
   --base-accent: oklch(from hsl(258, 88%, 66%) l c h);
-  --border-groove: 4px groove
-    oklch(from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h);
-  --border-ridge: 4px ridge
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-        28% calc(c * 0.3) h
-    );
-  --border-solid: 4px solid
-    oklch(
-      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18%
-        calc(c * 0.3) h
-    );
-  --box-shadow-active:
-    inset 2px 2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
-  --box-shadow-active-sm:
-    inset 1px 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
-  --box-shadow-sm:
-    inset -1px -1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      );
-  --button-active: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h)
-      25% c h
-  );
-  --button-hover: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          32% calc(c * 0.3) h
-      )
-      l c h
-  );
-  --button-normal: oklch(
-    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
-  );
+  --border-groove: 4px groove oklch( from oklch(from hsl(258, 88%, 66%) l c h) 26% calc(c * 0.3) h );
+  --border-ridge: 4px ridge oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
+  --border-solid: 4px solid oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h );
+  --box-shadow-active: inset 2px 2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 15% c h), inset -2px -2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset 2px 2px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
+  --box-shadow-active-sm: inset 1px 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 15% c h), inset -1px -1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h);
+  --box-shadow-sm: inset -1px -1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 15% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset -1px -1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h), inset 1px 1px oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 50% c h);
+  --button-active: oklch(from oklch( from oklch(from hsl(258, 88%, 66%) l c h) 24% calc(c * 0.3) h ) 25% c h);
+  --button-hover: oklch(from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h ) l c h);
+  --button-normal: oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h );
   --chroma: 20%;
   --chroma-accent: 0.3;
   --chroma-folder: 20%;
-  --color-amber: oklch(from #ffb300 70% 20% h);
-  --color-indigo: oklch(from #3f51b5 70% 20% h);
-  --color-lime: oklch(from #8bc34a 70% 20% h);
-  --color-rose: oklch(from #f48fb1 70% 20% h);
-  --color-vermillion: oklch(from #ff5722 70% 20% h);
-  --color-violet: oklch(from #9c27b0 70% 20% h);
-  --folder-accent-1: oklch(from #d32f2f 70% 20% h);
-  --folder-accent-10: oklch(from #8bc34a 70% 20% h);
-  --folder-accent-11: oklch(from #009688 70% 20% h);
-  --folder-accent-12: oklch(from #673ab7 70% 20% h);
-  --folder-accent-13: oklch(from #e91e63 70% 20% h);
-  --folder-accent-14: oklch(from #f48fb1 70% 20% h);
-  --folder-accent-15: oklch(from #00bcd4 70% 20% h);
-  --folder-accent-2: oklch(from #ff9800 70% 20% h);
+  --color-amber: oklch( from #ffb300 70% 20% h );
+  --color-indigo: oklch( from #3f51b5 70% 20% h );
+  --color-lime: oklch( from #8bc34a 70% 20% h );
+  --color-rose: oklch( from #f48fb1 70% 20% h );
+  --color-vermillion: oklch( from #ff5722 70% 20% h );
+  --color-violet: oklch( from #9c27b0 70% 20% h );
+  --folder-accent-1: oklch( from #d32f2f 70% 20% h );
+  --folder-accent-10: oklch( from #8bc34a 70% 20% h );
+  --folder-accent-11: oklch( from #009688 70% 20% h );
+  --folder-accent-12: oklch( from #673ab7 70% 20% h );
+  --folder-accent-13: oklch( from #e91e63 70% 20% h );
+  --folder-accent-14: oklch( from #f48fb1 70% 20% h );
+  --folder-accent-15: oklch( from #00bcd4 70% 20% h );
+  --folder-accent-2: oklch( from #ff9800 70% 20% h );
   --hue-amber: #ffb300;
   --hue-blue: #2196f3;
   --hue-cyan: #00bcd4;
@@ -3139,20 +1698,11 @@ body.theme-dark {
   --hue-vermillion: #ff5722;
   --hue-violet: #9c27b0;
   --hue-yellow: #ffeb3b;
-  --img-border-color: oklch(
-    from
-      oklch(
-        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
-      )
-      l 20% h
-  );
+  --img-border-color: oklch(from oklch( from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h ) l 20% h);
   --img-border-width: 0px;
-  --interactive-active: oklch(
-    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%
-  );
+  --interactive-active: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%);
   --lightness: 70%;
-  --mobile-nav-button-safe-area: calc(0px - 0px - 0px);
+  --mobile-nav-button-safe-area: calc( 0px - 0px - 0px );
   --outline-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 25% c h);
   --rotation-1: 30;
   --rotation-2: 330;
@@ -3163,18 +1713,7 @@ body .markdown-rendered a.external-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -3190,18 +1729,7 @@ body .markdown-rendered a.internal-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -3217,18 +1745,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -3244,18 +1761,7 @@ body .markdown-rendered p {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -3271,25 +1777,11 @@ body strong {
   color: light-dark(oklch(35% 0.12 33.5595deg), oklch(80% 0.08 32.4879deg));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid oklch(80% 0.08 32.4879deg);
-  text-decoration-color: light-dark(
-    oklch(35% 0.12 33.5595deg),
-    oklch(80% 0.08 32.4879deg)
-  );
+  text-decoration-color: light-dark(oklch(35% 0.12 33.5595deg), oklch(80% 0.08 32.4879deg));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -3301,18 +1793,7 @@ body b {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -3328,25 +1809,11 @@ body em {
   color: light-dark(oklch(35% 0.12 133.56deg), oklch(80% 0.08 132.488deg));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid oklch(80% 0.08 132.488deg);
-  text-decoration-color: light-dark(
-    oklch(35% 0.12 133.56deg),
-    oklch(80% 0.08 132.488deg)
-  );
+  text-decoration-color: light-dark(oklch(35% 0.12 133.56deg), oklch(80% 0.08 132.488deg));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -3358,18 +1825,7 @@ body i {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -3385,18 +1841,7 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -3412,18 +1857,7 @@ body del {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(218, 218, 218);
@@ -3448,18 +1882,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3471,18 +1894,8 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3492,10 +1905,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -3505,35 +1915,11 @@ body div.multi-select-pill {
   align-items: center;
   background-color: rgba(138, 92, 245, 0.1);
   display: flex;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: light-dark(
-    oklch(40% 0.189206 293.56deg / 0.75),
-    oklch(80% 0.217199 292.488deg / 0.75)
-  );
-  border-right-color: rgba(138, 92, 245, 0.15);
-  border-top-color: rgba(138, 92, 245, 0.15);
-  border-bottom-color: rgba(138, 92, 245, 0.15);
-  border-left-width: 4px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-left: 4px solid light-dark(oklch(40% 0.189206 293.56deg / 0.75), oklch(80% 0.217199 292.488deg / 0.75));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -3552,18 +1938,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3587,18 +1962,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3609,25 +1973,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3637,28 +1987,13 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3668,27 +2003,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3697,14 +2018,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3719,10 +2034,7 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
+body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -3735,7 +2047,7 @@ body
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task="x"] {
+body ul > li.task-list-item[data-task=x] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -3743,18 +2055,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -3768,18 +2069,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3793,18 +2083,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3820,18 +2099,7 @@ body .search-results > * {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -3843,18 +2111,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3868,18 +2125,7 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3899,98 +2145,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -4003,18 +2183,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4025,20 +2194,9 @@ body .markdown-preview-sizer {
   border-end-end-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout="note"] {
+body .callout[data-callout=note] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4048,26 +2206,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4076,16 +2220,9 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -4095,27 +2232,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4125,30 +2248,15 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4158,30 +2266,15 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4191,30 +2284,15 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="tip"] {
+body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4224,30 +2302,15 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="success"] {
+body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4257,30 +2320,15 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="question"] {
+body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4290,30 +2338,15 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="warning"] {
+body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4323,30 +2356,15 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="danger"] {
+body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4356,30 +2374,15 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="failure"] {
+body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4389,30 +2392,15 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4422,30 +2410,15 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4455,30 +2428,15 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="quote"] {
+body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4488,11 +2446,7 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -4501,62 +2455,18 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -4565,51 +2475,17 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

@@ -5,11 +5,7 @@
   font-style: italic;
   font-display: swap;
   font-weight: 400;
-  src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff) format("woff");
 }
 /* ia-writer-duo-latin-700-italic */
 @font-face {
@@ -17,11 +13,7 @@
   font-style: italic;
   font-display: swap;
   font-weight: 700;
-  src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff) format("woff");
 }
 /* ia-writer-mono-latin-400-italic */
 @font-face {
@@ -29,11 +21,7 @@
   font-style: italic;
   font-display: swap;
   font-weight: 400;
-  src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff) format("woff");
 }
 /* ia-writer-mono-latin-700-italic */
 @font-face {
@@ -41,47 +29,31 @@
   font-style: italic;
   font-display: swap;
   font-weight: 700;
-  src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff) format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff") format("woff");
 }
 body.theme-light {
   --accent-h: 228 !important;
@@ -99,47 +71,26 @@ body.theme-light {
   --background-modifier-active-hover: hsla(228, 70%, 66%, 0.1) !important;
   --background-modifier-border: hsl(0, calc(0% + 5%), 85%) !important;
   --background-modifier-border-focus: hsl(0, 0%, calc(100% - 10%)) !important;
-  --background-modifier-border-hover: hsl(
-    0,
-    calc(0% + 5%),
-    50%,
-    0.28
-  ) !important;
+  --background-modifier-border-hover: hsl(0, calc(0% + 5%), 50%, 0.28) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
   --background-modifier-error: #f45757 !important;
   --background-modifier-error-hover: #f45757 !important;
   --background-modifier-error-rgb: 244, 87, 87 !important;
   --background-modifier-form-field: hsl(0, 0%, calc(100% + 3.2%)) !important;
-  --background-modifier-form-field-hover: hsl(
-    0,
-    0%,
-    calc(100% + 3.2%)
-  ) !important;
+  --background-modifier-form-field-hover: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.05) !important;
-  --background-modifier-message: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --background-modifier-message: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
   --background-primary: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --background-primary-alt: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%)) !important;
   --background-secondary: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
-  --background-secondary-alt: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 2%)
-  ) !important;
+  --background-secondary-alt: hsl(0, 0%, calc(calc(100% + 3.2%) - 2%)) !important;
   --bases-cards-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 6%)
-  ) !important;
+  --bases-cards-cover-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%)) !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
@@ -155,19 +106,10 @@ body.theme-light {
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: hsl(0, calc(0% + 5%), 85%) !important;
-  --bases-table-cell-background-active: hsl(
-    0,
-    0%,
-    calc(100% + 3.2%)
-  ) !important;
-  --bases-table-cell-background-disabled: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 6%)
-  ) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, calc(100% + 3.2%)) !important;
+  --bases-table-cell-background-disabled: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%)) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -177,11 +119,7 @@ body.theme-light {
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.05) !important;
   --bases-table-header-color: hsl(0, 0%, calc(15% + 12%)) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -201,11 +139,7 @@ body.theme-light {
   --callout-border-opacity: 0.25 !important;
   --callout-border-width: 0px !important;
   --callout-bug: 213, 57, 132 !important;
-  --callout-content-background: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 6%)
-  ) !important;
+  --callout-content-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%)) !important;
   --callout-content-padding: 10px !important;
   --callout-default: 8, 109, 221 !important;
   --callout-error: 244, 87, 87 !important;
@@ -237,16 +171,8 @@ body.theme-light {
   --caret-color: hsl(0, 0%, calc(15% + 5%)) !important;
   --checkbox-border-color: hsl(0, 0%, calc(15% + 20%)) !important;
   --checkbox-border-color-hover: hsl(0, 0%, calc(15% + 12%)) !important;
-  --checkbox-color: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --checkbox-color-hover: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --checkbox-color: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --checkbox-color-hover: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --checkbox-radius: 10px !important;
@@ -275,16 +201,8 @@ body.theme-light {
   --collapse-icon-color: hsl(0, 0%, calc(15% + 20%)) !important;
   --collapse-icon-color-collapsed: hsl(228, 70%, 66%) !important;
   --color-accent: hsl(228, 70%, 66%) !important;
-  --color-accent-1: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --color-accent-2: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --color-accent-1: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --color-accent-2: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --color-accent-hsl: 228, 70%, 66% !important;
   --color-base-00: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --color-base-05: hsl(0, 0%, calc(calc(100% + 3.2%) - 2%)) !important;
@@ -321,11 +239,7 @@ body.theme-light {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: hsl(0, calc(0% + 5%), 85%) !important;
-  --divider-color-hover: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --divider-color-hover: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0.2px !important;
   --divider-width-hover: 3px !important;
@@ -337,25 +251,17 @@ body.theme-light {
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px hsl(0, calc(0% + 5%), 85%),
-    inset 0 0 0 1px hsl(0, calc(0% + 5%), 85%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0, calc(0% + 5%), 85%), inset 0 0 0 1px hsl(0, calc(0% + 5%), 85%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid
-    hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --embed-border-start: 2px solid hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -367,58 +273,30 @@ body.theme-light {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif !important;
+  --font-interface-theme: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace: "iA Writer Mono S" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print:
-    "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "Arial" !important;
+  --font-print: "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif !important;
+  --font-text-theme: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -443,23 +321,11 @@ body.theme-light {
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
   --graph-line: hsl(0, calc(0% + 5%), 50%, 0.28) !important;
-  --graph-node: hsl(
-    calc(228 + 10),
-    calc(70% + 10%),
-    calc(66% + 10%)
-  ) !important;
+  --graph-node: hsl(calc(228 + 10), calc(70% + 10%), calc(66% + 10%)) !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: hsl(
-    calc(228 + 0),
-    calc(70% + 15%),
-    calc(66% + 15%)
-  ) !important;
+  --graph-node-focused: hsl(calc(228 + 0), calc(70% + 15%), calc(66% + 15%)) !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: hsl(
-    calc(228 + 20),
-    calc(70% + 10%),
-    calc(66% + 5%)
-  ) !important;
+  --graph-node-unresolved: hsl(calc(228 + 20), calc(70% + 10%), calc(66% + 5%)) !important;
   --graph-text: hsl(0, 0%, calc(15% + 5%)) !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.72em !important;
@@ -519,11 +385,7 @@ body.theme-light {
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --indentation-guide-color-active: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -545,16 +407,8 @@ body.theme-light {
   --input-radius: 5px !important;
   --input-shadow: hsl(0, calc(0% + 5%), 85%) 0 0 0 0.8px !important;
   --input-shadow-hover: hsla(228, 70%, 66%, 0.6) 0 0 0px 1px !important;
-  --interactive-accent: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --interactive-accent-hover: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --interactive-accent: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --interactive-accent-hover: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --interactive-accent-hsl: 228, 70%, 66% !important;
   --interactive-hover: hsla(228, 70%, 66%, 0.1) !important;
   --interactive-normal: hsl(0, 0%, calc(calc(100% + 3.2%) - 2%)) !important;
@@ -571,25 +425,13 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.75 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --link-color-hover: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --link-color: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
+  --link-color-hover: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 0.06em !important;
   --link-external-color: hsl(228, 70%, 66%) !important;
-  --link-external-color-hover: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --link-external-color-hover: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
@@ -619,9 +461,7 @@ body.theme-light {
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 12px !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: hsl(0, calc(0% + 5%), 85%) !important;
   --metadata-border-radius: 0 !important;
@@ -636,12 +476,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.05) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: calc(16px * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -649,12 +484,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.05) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: hsl(0, 0%, calc(15% + 12%)) !important;
   --metadata-label-text-color-hover: hsl(0, 0%, calc(15% + 12%)) !important;
@@ -665,8 +495,7 @@ body.theme-light {
   --metadata-property-background-active: rgba(0, 0, 0, 0.05) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, calc(100% - 10%)) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    hsl(0, calc(0% + 5%), 50%, 0.28) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, calc(0% + 5%), 50%, 0.28) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -715,12 +544,10 @@ body.theme-light {
   --page-margin: 1px auto -8px !important;
   --pdf-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --pdf-page-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -774,12 +601,8 @@ body.theme-light {
   --search-icon-color: hsl(0, 0%, calc(15% + 12%)) !important;
   --search-icon-size: 18px !important;
   --search-result-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-markdown-font-size: calc(16px * 0.9) !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
@@ -829,11 +652,7 @@ body.theme-light {
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: hsl(0, 0%, calc(100% + 3.2%)) !important;
-  --tab-container-background: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 5%)
-  ) !important;
+  --tab-container-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: hsl(0, calc(0% + 5%), 85%) !important;
   --tab-font-size: 13px !important;
@@ -850,11 +669,7 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 5%)
-  ) !important;
+  --tab-switcher-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 24px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -863,11 +678,7 @@ body.theme-light {
   --tab-text-color-active: hsl(0, 0%, calc(15% + 12%)) !important;
   --tab-text-color-focused: hsl(0, 0%, calc(15% + 12%)) !important;
   --tab-text-color-focused-active: hsl(0, 0%, calc(15% + 12%)) !important;
-  --tab-text-color-focused-active-current: hsl(
-    0,
-    0%,
-    calc(15% + 5%)
-  ) !important;
+  --tab-text-color-focused-active-current: hsl(0, 0%, calc(15% + 5%)) !important;
   --tab-text-color-focused-highlighted: hsl(228, 70%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -883,19 +694,11 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --table-drag-handle-background-active: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --table-drag-handle-color: hsl(0, 0%, calc(15% + 20%)) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 5%)
-  ) !important;
+  --table-header-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
   --table-header-border-color: hsl(0, calc(0% + 5%), 85%) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: hsl(0, 0%, calc(15% + 5%)) !important;
@@ -908,11 +711,7 @@ body.theme-light {
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(228, 70%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --table-selection-border-color: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.875em !important;
@@ -931,11 +730,7 @@ body.theme-light {
   --tag-radius: 5px !important;
   --tag-size: 0.875em !important;
   --text-accent: hsl(228, 70%, 66%) !important;
-  --text-accent-hover: hsl(
-    calc(228 - 4),
-    calc(70% + 4%),
-    calc(66% + 7%)
-  ) !important;
+  --text-accent-hover: hsl(calc(228 - 4), calc(70% + 4%), calc(66% + 7%)) !important;
   --text-error: #f45757 !important;
   --text-faint: hsl(0, 0%, calc(15% + 20%)) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -948,11 +743,7 @@ body.theme-light {
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: hsl(0, 0%, calc(100% + 3.2%)) !important;
-  --titlebar-background-focused: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 5%)
-  ) !important;
+  --titlebar-background-focused: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
   --titlebar-border-color: hsl(0, calc(0% + 5%), 85%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -981,11 +772,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --table-header-background-hover: hsl(
-    0,
-    0%,
-    calc(calc(100% + 3.2%) - 5%)
-  ) !important;
+  --table-header-background-hover: hsl(0, 0%, calc(calc(100% + 3.2%) - 5%)) !important;
   --font-default-custom: "iA Writer Quattro S" !important;
   --font-monospace-custom: "iA Writer Mono S" !important;
   --font-secondary: "iA Writer Duo S" !important;
@@ -994,11 +781,7 @@ body.theme-light {
   --callout-title-size: 0.98em !important;
   --tag-opacity: 0.25 !important;
   --tag-opacity-hover: 0.2 !important;
-  --link-decoration-color: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --link-decoration-color: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --link-font: "iA Writer Duo S" !important;
   --inline-title-align: center !important;
   --color-muted: #797593 !important;
@@ -1019,11 +802,7 @@ body.theme-light {
   --c-50: calc(15% + 20%) !important;
   --c-60: calc(15% + 15%) !important;
   --c-70: calc(15% + 12%) !important;
-  --cursor-color: hsl(
-    calc(228 - 1),
-    calc(70% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --cursor-color: hsl(calc(228 - 1), calc(70% * 1.01), calc(66% * 1.075)) !important;
   --cursor-width: 2.5px !important;
   --custom-base-c-d: 10% !important;
   --custom-base-c-l: 99% !important;
@@ -1103,17 +882,9 @@ body.theme-dark {
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: hsl(0, 0%, calc(calc(15% - 10%) + 5%));
-  --background-modifier-form-field-hover: hsl(
-    0,
-    0%,
-    calc(calc(15% - 10%) + 5%)
-  );
+  --background-modifier-form-field-hover: hsl(0, 0%, calc(calc(15% - 10%) + 5%));
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-message: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --background-modifier-message: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: hsl(0, 0%, calc(15% - 10%));
@@ -1140,11 +911,7 @@ body.theme-dark {
   --bases-header-padding-start: 2px;
   --bases-table-border-color: hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --bases-table-cell-background-active: hsl(0, 0%, calc(15% - 10%));
-  --bases-table-cell-background-disabled: hsl(
-    0,
-    0%,
-    calc(calc(15% - 10%) + 5%)
-  );
+  --bases-table-cell-background-disabled: hsl(0, 0%, calc(calc(15% - 10%) + 5%));
   --bases-table-cell-radius-active: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(238, 100%, 70%);
   --bases-table-column-border-width: 1px;
@@ -1156,11 +923,7 @@ body.theme-dark {
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
   --bases-table-header-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  );
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px);
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -1240,11 +1003,7 @@ body.theme-dark {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
-  --collapse-icon-color-collapsed: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --collapse-icon-color-collapsed: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --color-accent: hsl(238, 100%, 70%);
   --color-accent-1: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --color-accent-2: hsl(calc(238 - 4), calc(100% + 4%), calc(70% + 5%));
@@ -1296,9 +1055,7 @@ body.theme-dark {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover:
-    0 0 0 1px hsl(0, 0%, calc(calc(15% - 10%) + 19%)),
-    inset 0 0 0 1px hsl(0, 0%, calc(calc(15% - 10%) + 19%));
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0, 0%, calc(calc(15% - 10%) + 19%)), inset 0 0 0 1px hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-start: 2px solid hsl(238, 100%, 70%);
@@ -1308,12 +1065,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --file-header-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1325,58 +1077,30 @@ body.theme-dark {
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
   --font-black: 900;
   --font-bold: 700;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-interface: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
-  --font-interface-theme:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
+  --font-interface-theme: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --font-mermaid: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "iA Writer Mono S";
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print:
-    "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "Arial";
+  --font-print: "??", "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  --font-text: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme:
-    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
-    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
+  --font-text-theme: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -1405,11 +1129,7 @@ body.theme-dark {
   --graph-node-attachment: #e0de71;
   --graph-node-focused: hsl(calc(238 + 0), calc(100% - 15%), calc(70% - 2%));
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: hsl(
-    calc(238 + 20),
-    calc(100% - 10%),
-    calc(70% + 3%)
-  );
+  --graph-node-unresolved: hsl(calc(238 + 20), calc(100% - 10%), calc(70% + 3%));
   --graph-text: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
   --h1-line-height: 1.2;
   --h1-size: 1.72em;
@@ -1492,11 +1212,7 @@ body.theme-dark {
   --input-shadow: hsl(0, 0%, calc(calc(15% - 10%) + 19%)) 0 0 0 0.8px;
   --input-shadow-hover: hsla(238, 100%, 70%, 0.6) 0 0 0px 1px;
   --interactive-accent: hsl(238, 100%, 70%);
-  --interactive-accent-hover: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --interactive-accent-hover: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --interactive-accent-hsl: 238, 100%, 70%;
   --interactive-hover: hsla(238, 100%, 70%, 0.1);
   --interactive-normal: hsl(0, 0%, calc(calc(15% - 10%) + 3%));
@@ -1519,11 +1235,7 @@ body.theme-dark {
   --link-decoration-hover: underline;
   --link-decoration-thickness: 0.06em;
   --link-external-color: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
-  --link-external-color-hover: hsl(
-    calc(238 - 4),
-    calc(100% + 4%),
-    calc(70% + 5%)
-  );
+  --link-external-color-hover: hsl(calc(238 - 4), calc(100% + 4%), calc(70% + 5%));
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
@@ -1542,11 +1254,7 @@ body.theme-dark {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
-  --list-marker-color-collapsed: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --list-marker-color-collapsed: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --list-marker-color-hover: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -1557,9 +1265,7 @@ body.theme-dark {
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 12px;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
   --metadata-background: transparent;
   --metadata-border-color: hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --metadata-border-radius: 0;
@@ -1574,12 +1280,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-input-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: calc(16px * 1.75);
   --metadata-input-longtext-lines: 3;
@@ -1587,12 +1288,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
-    "PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --metadata-label-font: "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic","PingFang SC", "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --metadata-label-text-color-hover: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
@@ -1602,10 +1298,8 @@ body.theme-dark {
   --metadata-property-background: transparent;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    hsl(0, 0%, calc(calc(15% - 10%) + 18%));
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    hsl(0, 0%, calc(calc(15% - 10%) + 19%));
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, calc(calc(15% - 10%) + 18%));
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, calc(calc(15% - 10%) + 19%));
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -1641,11 +1335,7 @@ body.theme-dark {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --nav-item-color-active: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
-  --nav-item-color-highlighted: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --nav-item-color-highlighted: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --nav-item-color-hover: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
   --nav-item-color-selected: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
   --nav-item-padding: 4px 8px 4px 24px;
@@ -1671,11 +1361,7 @@ body.theme-dark {
   --pill-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --pill-color-hover: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
   --pill-color-remove: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
-  --pill-color-remove-hover: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --pill-color-remove-hover: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1719,12 +1405,8 @@ body.theme-dark {
   --search-icon-color: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --search-icon-size: 18px;
   --search-result-background: hsl(0, 0%, calc(15% - 10%));
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
   --sidebar-markdown-font-size: calc(16px * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -1800,16 +1482,8 @@ body.theme-dark {
   --tab-text-color-active: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --tab-text-color-focused: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
   --tab-text-color-focused-active: hsl(0, 0%, calc(calc(15% - 10%) + 60%));
-  --tab-text-color-focused-active-current: hsl(
-    0,
-    0%,
-    calc(calc(15% - 10%) + 68%)
-  );
-  --tab-text-color-focused-highlighted: hsl(
-    calc(238 + 4),
-    calc(100% + 4%),
-    calc(70% + 6%)
-  );
+  --tab-text-color-focused-active-current: hsl(0, 0%, calc(calc(15% - 10%) + 68%));
+  --tab-text-color-focused-highlighted: hsl(calc(238 + 4), calc(100% + 4%), calc(70% + 6%));
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: hsl(0, 0%, calc(calc(15% - 10%) + 19%));
@@ -1993,18 +1667,7 @@ body .markdown-rendered a.external-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -2020,18 +1683,7 @@ body .markdown-rendered a.internal-link {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -2047,18 +1699,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -2074,18 +1715,7 @@ body .markdown-rendered p {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -2101,27 +1731,7 @@ body strong {
   color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
   cursor: auto;
   filter: none;
-  font-family:
-    "iA Writer Quattro S",
-    "Nanum Gothic Coding",
-    "MS PGothic",
-    "PingFang SC",
-    蘋方,
-    "蘋方 SC",
-    "Microsoft YaHei Light",
-    ui-sans-serif,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(186, 186, 186);
@@ -2137,18 +1747,7 @@ body b {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -2164,27 +1763,7 @@ body em {
   color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
   cursor: auto;
   filter: none;
-  font-family:
-    "iA Writer Quattro S",
-    "Nanum Gothic Coding",
-    "MS PGothic",
-    "PingFang SC",
-    蘋方,
-    "蘋方 SC",
-    "Microsoft YaHei Light",
-    ui-sans-serif,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(186, 186, 186);
@@ -2200,18 +1779,7 @@ body i {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -2227,18 +1795,7 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -2254,27 +1811,7 @@ body del {
   color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
   cursor: auto;
   filter: none;
-  font-family:
-    "iA Writer Quattro S",
-    "Nanum Gothic Coding",
-    "MS PGothic",
-    "PingFang SC",
-    蘋方,
-    "蘋方 SC",
-    "Microsoft YaHei Light",
-    ui-sans-serif,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(186, 186, 186);
@@ -2299,18 +1836,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2322,18 +1848,8 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2343,10 +1859,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -2354,46 +1867,12 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: light-dark(
-    rgba(102, 122, 204, 0.25),
-    rgba(102, 105, 204, 0.25)
-  );
+  background-color: light-dark(rgba(102, 122, 204, 0.25), rgba(102, 105, 204, 0.25));
   display: flex;
-  font-family:
-    "iA Writer Quattro S",
-    "Nanum Gothic Coding",
-    "MS PGothic",
-    "PingFang SC",
-    蘋方,
-    "蘋方 SC",
-    "Microsoft YaHei Light",
-    ui-sans-serif,
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC", 蘋方, "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 1px;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(31, 49, 122), rgb(184, 185, 224));
-  border-right-color: light-dark(rgb(31, 49, 122), rgb(184, 185, 224));
-  border-top-color: light-dark(rgb(31, 49, 122), rgb(184, 185, 224));
-  border-bottom-color: light-dark(rgb(31, 49, 122), rgb(184, 185, 224));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(31, 49, 122), rgb(184, 185, 224));
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2412,18 +1891,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2447,18 +1915,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2469,25 +1926,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2497,28 +1940,13 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2528,27 +1956,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2557,14 +1971,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -2579,10 +1987,7 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
+body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -2595,7 +2000,7 @@ body
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task="x"] {
+body ul > li.task-list-item[data-task=x] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2603,18 +2008,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2628,18 +2022,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2653,18 +2036,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2680,18 +2052,7 @@ body .search-results > * {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -2703,18 +2064,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2728,18 +2078,7 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2759,98 +2098,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -2863,18 +2136,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2885,20 +2147,9 @@ body .markdown-preview-sizer {
   border-end-end-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout="note"] {
+body .callout[data-callout=note] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2908,26 +2159,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2936,16 +2173,9 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -2955,27 +2185,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2985,30 +2201,15 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3018,30 +2219,15 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3051,30 +2237,15 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="tip"] {
+body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3084,30 +2255,15 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="success"] {
+body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3117,30 +2273,15 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="question"] {
+body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3150,30 +2291,15 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="warning"] {
+body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3183,30 +2309,15 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="danger"] {
+body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3216,30 +2327,15 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="failure"] {
+body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3249,30 +2345,15 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3282,30 +2363,15 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3315,30 +2381,15 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="quote"] {
+body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3348,11 +2399,7 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -3361,62 +2408,18 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -3425,51 +2428,17 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

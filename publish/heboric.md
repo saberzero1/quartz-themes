@@ -4,9 +4,10 @@
 - Support the author: <a href="https://buymeacoffee.com/nhrrs" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/heboric">Install instructions</a>
 
-| Name      | Modes                     | Compatibility                                  | License                                                                                                                                                |
-| --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `heboric` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/heboric/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 
