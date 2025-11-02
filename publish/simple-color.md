@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/simple-color">Install instructions</a>
 
-| Name           | Modes                     | Compatibility                                  | License                                                                                                                                                                       |
-| -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `simple-color` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/simple-color/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

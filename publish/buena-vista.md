@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/buena-vista">Install instructions</a>
 
-| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                                    |
-| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `buena-vista` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/buena-vista/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

@@ -4,9 +4,10 @@
 - Support the author: <a href="https://www.buymeacoffee.com/pangyajingD" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/Carrie999/wechat" target="_blank" rel="noopener noreferrer">wechat pay</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort">Install instructions</a>
 
-| Name      | Modes                       | Compatibility                                                                                   | License                                                                                                                                                    |
-| --------- | --------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `comfort` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

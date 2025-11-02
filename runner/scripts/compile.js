@@ -385,23 +385,34 @@ function generateAndWriteCSS(
     }
   });
 
-  // Build variable strings from body CSS variables for Quartz
-  // Only include --code-* and --graph-* variables for Quartz
-  let bodyVarsStringDark = "";
-  let bodyVarsStringLight = "";
+  // Build variable strings from body CSS variables
+  // For Quartz: Only include --code-* and --graph-* variables
+  // For Publish: Include ALL variables
+  let bodyVarsStringDarkQuartz = "";
+  let bodyVarsStringLightQuartz = "";
+  let bodyVarsStringDarkPublish = "";
+  let bodyVarsStringLightPublish = "";
 
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
+      // For Publish: include all variables
+      bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
+      
+      // For Quartz: only include --code-* and --graph-* variables
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
-        bodyVarsStringDark += `  ${key}: ${value} !important;\n`;
+        bodyVarsStringDarkQuartz += `  ${key}: ${value} !important;\n`;
       }
     }
   }
 
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
+      // For Publish: include all variables
+      bodyVarsStringLightPublish += `  ${key}: ${value} !important;\n`;
+      
+      // For Quartz: only include --code-* and --graph-* variables
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
-        bodyVarsStringLight += `  ${key}: ${value} !important;\n`;
+        bodyVarsStringLightQuartz += `  ${key}: ${value} !important;\n`;
       }
     }
   }
@@ -414,19 +425,19 @@ function generateAndWriteCSS(
     lightData && darkData
       ? `
 :root:root {
-${bodyVarsStringLight}}
+${bodyVarsStringLightQuartz}}
 :root:root[saved-theme="dark"] {
-${bodyVarsStringDark}}
+${bodyVarsStringDarkQuartz}}
 `
       : lightData
         ? `
 :root:root {
-${bodyVarsStringLight}}
+${bodyVarsStringLightQuartz}}
 `
         : darkData
           ? `
 :root:root {
-${bodyVarsStringDark}}
+${bodyVarsStringDarkQuartz}}
 `
           : "";
 
@@ -893,22 +904,22 @@ ${fontString}
     // Both dark and light modes
     resultPublishScss += `
 body.theme-light {
-${bodyVarsStringLight}}
+${bodyVarsStringLightPublish}}
 
 body.theme-dark {
-${bodyVarsStringDark}}
+${bodyVarsStringDarkPublish}}
 `;
   } else if (lightPublishData) {
     // Light mode only
     resultPublishScss += `
 body.theme-light {
-${bodyVarsStringLight}}
+${bodyVarsStringLightPublish}}
 `;
   } else if (darkPublishData) {
     // Dark mode only
     resultPublishScss += `
 body.theme-dark {
-${bodyVarsStringDark}}
+${bodyVarsStringDarkPublish}}
 `;
   }
 

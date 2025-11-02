@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/transparent">Install instructions</a>
 
-| Name          | Modes                     | Compatibility                                  | License                                                                                                                                                    |
-| ------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `transparent` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/transparent/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

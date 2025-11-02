@@ -2,48 +2,159 @@
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: 400;
-  src:
-    local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff")
-      format("woff");
+  src: local("iA Writer Quattro S"), url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff") format("woff");
 }
 @font-face {
   font-family: "Monaco";
   font-style: normal;
   font-weight: 400;
-  src:
-    local("Monaco"),
-    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+  src: local("Monaco"), url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
 body.theme-dark {
-  --code-background: rgba(0, 0, 0, 0.08) !important;
+  --accent-h: 258 !important;
+  --accent-l: 66% !important;
+  --accent-s: 88% !important;
+  --anim-duration-fast: 140ms !important;
+  --anim-duration-moderate: 300ms !important;
+  --anim-duration-none: 0 !important;
+  --anim-duration-slow: 560ms !important;
+  --anim-duration-superfast: 70ms !important;
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
+  --background-accent: rgba(0,0,0,0.08) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
+  --background-modifier-border: #6f6f6f !important;
+  --background-modifier-border-focus: #555555 !important;
+  --background-modifier-border-hover: #3f3f3f !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6) !important;
+  --background-modifier-error: #3d0000 !important;
+  --background-modifier-error-hover: #470000 !important;
+  --background-modifier-error-rgb: 61, 0, 0 !important;
+  --background-modifier-form-field: #313030 !important;
+  --background-modifier-form-field-hover: #313030 !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
+  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-success: rgba(160,232,92,0.08) !important;
+  --background-modifier-success-rgb: 68, 207, 110 !important;
+  --background-primary: #313030 !important;
+  --background-primary-alt: rgba(0,0,0,0.08) !important;
+  --background-secondary: #313030 !important;
+  --background-secondary-alt: #313030 !important;
+  --bases-cards-background: #313030 !important;
+  --bases-cards-border-width: 1px !important;
+  --bases-cards-container-background: transparent !important;
+  --bases-cards-cover-background: rgba(0,0,0,0.08) !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-line-height: 24px !important;
+  --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px #6f6f6f !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-embed-border-color: #6f6f6f !important;
+  --bases-embed-border-radius: 4px !important;
+  --bases-embed-border-width: 0px !important;
+  --bases-filter-menu-width: 520px !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-height: 40px !important;
+  --bases-header-padding-end: 2px !important;
+  --bases-header-padding-start: 2px !important;
+  --bases-table-border-color: #6f6f6f !important;
+  --bases-table-cell-background-active: #313030 !important;
+  --bases-table-cell-background-disabled: rgba(0,0,0,0.08) !important;
+  --bases-table-cell-radius-active: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgba(0,0,0,0.1) !important;
+  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-max-width: 300 !important;
+  --bases-table-column-min-width: 40 !important;
+  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-width: 1px !important;
+  --bases-table-header-background: #313030 !important;
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
+  --bases-table-header-color: #6f6f6f !important;
+  --bases-table-header-icon-display: flex !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-weight: 400 !important;
+  --bases-table-row-background-hover: transparent !important;
+  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-height: 30px !important;
+  --bases-table-text-size: 0.875em !important;
+  --bases-toolbar-badge-display: none !important;
+  --bases-toolbar-label-display: block !important;
+  --blockquote-background-color: transparent !important;
+  --blockquote-border-color: rgba(0,0,0,0.1) !important;
+  --blockquote-border-thickness: 2px !important;
+  --blockquote-font-style: normal !important;
+  --bold-modifier: 200 !important;
+  --bold-weight: calc(400 + 200) !important;
+  --border-width: 1px !important;
+  --button-radius: 5px !important;
+  --callout-blend-mode: lighten !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 251, 70, 76 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 2, 122, 255 !important;
+  --callout-error: 251, 70, 76 !important;
+  --callout-example: 168, 130, 255 !important;
+  --callout-fail: 251, 70, 76 !important;
+  --callout-important: 83, 223, 221 !important;
+  --callout-info: 2, 122, 255 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 233, 151, 63 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 68, 207, 110 !important;
+  --callout-summary: 83, 223, 221 !important;
+  --callout-tip: 83, 223, 221 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: calc(400 + 200) !important;
+  --callout-todo: 2, 122, 255 !important;
+  --callout-warning: 233, 151, 63 !important;
+  --canvas-background: #313030 !important;
+  --canvas-card-label-color: #6f6f6f !important;
+  --canvas-color: 126, 126, 126 !important;
+  --canvas-color-1: 251, 70, 76 !important;
+  --canvas-color-2: 233, 151, 63 !important;
+  --canvas-color-3: 224, 222, 113 !important;
+  --canvas-color-4: 68, 207, 110 !important;
+  --canvas-color-5: 83, 223, 221 !important;
+  --canvas-color-6: 168, 130, 255 !important;
+  --canvas-dot-pattern: #363636 !important;
+  --caret-color: #fffdf9 !important;
+  --checkbox-border-color: #6f6f6f !important;
+  --checkbox-border-color-hover: #6f6f6f !important;
+  --checkbox-color: rgba(250,250,250,0.1) !important;
+  --checkbox-color-hover: rgba(250,250,250,0.1) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #313030 !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
+  --checklist-done-color: #6f6f6f !important;
+  --checklist-done-decoration: line-through !important;
+  --clickable-icon-radius: 4px !important;
+  --code-background: rgba(0,0,0,0.08) !important;
   --code-border-color: #6f6f6f !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
@@ -61,6 +172,127 @@ body.theme-dark {
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #6f6f6f !important;
+  --collapse-icon-color-collapsed: #3daddb !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important;
+  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)) !important;
+  --color-accent-hsl: 258, 88%, 66% !important;
+  --color-base-00: #1e1e1e !important;
+  --color-base-05: #212121 !important;
+  --color-base-10: #242424 !important;
+  --color-base-100: #dadada !important;
+  --color-base-20: #262626 !important;
+  --color-base-25: #2a2a2a !important;
+  --color-base-30: #363636 !important;
+  --color-base-35: #3f3f3f !important;
+  --color-base-40: #555555 !important;
+  --color-base-50: #666666 !important;
+  --color-base-60: #999999 !important;
+  --color-base-70: #b3b3b3 !important;
+  --color-blue: #027aff !important;
+  --color-blue-rgb: 2, 122, 255 !important;
+  --color-cyan: #53dfdd !important;
+  --color-cyan-rgb: 83, 223, 221 !important;
+  --color-green: #44cf6e !important;
+  --color-green-rgb: 68, 207, 110 !important;
+  --color-orange: #e9973f !important;
+  --color-orange-rgb: 233, 151, 63 !important;
+  --color-pink: #fa99cd !important;
+  --color-pink-rgb: 250, 153, 205 !important;
+  --color-purple: #a882ff !important;
+  --color-purple-rgb: 168, 130, 255 !important;
+  --color-red: #fb464c !important;
+  --color-red-rgb: 251, 70, 76 !important;
+  --color-yellow: #e0de71 !important;
+  --color-yellow-rgb: 224, 222, 113 !important;
+  --cursor: default !important;
+  --cursor-link: pointer !important;
+  --dialog-max-height: 85vh !important;
+  --dialog-max-width: 80vw !important;
+  --dialog-width: 560px !important;
+  --direction: 1 !important;
+  --divider-color: #6f6f6f !important;
+  --divider-color-hover: rgba(0,0,0,0.1) !important;
+  --divider-vertical-height: 100% !important;
+  --divider-width: 1px !important;
+  --divider-width-hover: 3px !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-text-color: #fff !important;
+  --dropdown-background: #313030 !important;
+  --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: rgba(0,0,0,0.05) !important;
+  --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
+  --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --embed-block-shadow-hover: 0 0 0 1px #6f6f6f, inset 0 0 0 1px #6f6f6f !important;
+  --embed-border-bottom: none !important;
+  --embed-border-end: none !important;
+  --embed-border-start: 2px solid rgba(0,0,0,0.1) !important;
+  --embed-border-top: none !important;
+  --embed-canvas-max-height: 400px !important;
+  --embed-max-height: 4000px !important;
+  --embed-padding: 0 0 0 24px !important;
+  --file-folding-offset: 24px !important;
+  --file-header-border: 1px solid transparent !important;
+  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font-size: 13px !important;
+  --file-header-font-weight: 400 !important;
+  --file-header-justify: center !important;
+  --file-line-width: 700px !important;
+  --file-margins: 32px !important;
+  --flair-background: #313030 !important;
+  --flair-color: #fffdf9 !important;
+  --focus-ring-color: #0df !important;
+  --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
+  --font-black: 900 !important;
+  --font-bold: 700 !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-extrabold: 800 !important;
+  --font-extralight: 200 !important;
+  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface-override: "??" !important;
+  --font-interface-theme: "??" !important;
+  --font-light: 300 !important;
+  --font-medium: 500 !important;
+  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-override: "??" !important;
+  --font-monospace-theme: "??" !important;
+  --font-normal: 400 !important;
+  --font-print: "??", "??", "??", "Arial" !important;
+  --font-print-override: "??" !important;
+  --font-semibold: 600 !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
+  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text-override: "??" !important;
+  --font-text-size: 16px !important;
+  --font-text-theme: "??" !important;
+  --font-thin: 100 !important;
+  --font-ui-large: 20px !important;
+  --font-ui-medium: 15px !important;
+  --font-ui-small: 13px !important;
+  --font-ui-smaller: 12px !important;
+  --font-weight: 400 !important;
+  --footnote-divider-color: #6f6f6f !important;
+  --footnote-divider-color-active: transparent !important;
+  --footnote-divider-width: 1px !important;
+  --footnote-gap: 4px !important;
+  --footnote-id-color: #6f6f6f !important;
+  --footnote-id-color-no-occurrences: #6f6f6f !important;
+  --footnote-id-delimiter: "." !important;
+  --footnote-input-background: transparent !important;
+  --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
+  --footnote-line-height: 1.5 !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
+  --footnote-radius: 4px !important;
+  --footnote-size: 0.875em !important;
+  --frame-left-space: calc(80px - 44px) !important;
+  --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #6f6f6f !important;
@@ -69,11 +301,527 @@ body.theme-dark {
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #6f6f6f !important;
   --graph-text: #fffdf9 !important;
+  --h1-line-height: 1.2 !important;
+  --h1-size: 1.802em !important;
+  --h1-style: normal !important;
+  --h1-variant: normal !important;
+  --h1-weight: 700 !important;
+  --h2-line-height: 1.2 !important;
+  --h2-size: 1.602em !important;
+  --h2-style: normal !important;
+  --h2-variant: normal !important;
+  --h2-weight: 600 !important;
+  --h3-line-height: 1.3 !important;
+  --h3-size: 1.424em !important;
+  --h3-style: normal !important;
+  --h3-variant: normal !important;
+  --h3-weight: 600 !important;
+  --h4-line-height: 1.4 !important;
+  --h4-size: 1.266em !important;
+  --h4-style: normal !important;
+  --h4-variant: normal !important;
+  --h4-weight: 600 !important;
+  --h5-line-height: 1.5 !important;
+  --h5-size: 1.125em !important;
+  --h5-style: normal !important;
+  --h5-variant: normal !important;
+  --h5-weight: 600 !important;
+  --h6-line-height: 1.5 !important;
+  --h6-size: 1em !important;
+  --h6-style: normal !important;
+  --h6-variant: normal !important;
+  --h6-weight: 600 !important;
+  --header-height: 40px !important;
+  --heading-formatting: #6f6f6f !important;
+  --heading-spacing: calc(1rem * 2.5) !important;
+  --highlight-mix-blend-mode: lighten !important;
+  --hr-color: hsl(0, 0%, 39%) !important;
+  --hr-thickness: 2px !important;
+  --icon-color: #6f6f6f !important;
+  --icon-color-active: #3daddb !important;
+  --icon-color-focused: #fffdf9 !important;
+  --icon-color-hover: #6f6f6f !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --indent-size: 4 !important;
+  --indent-unit: 0.5625em !important;
+  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
+  --indentation-guide-editing-indent: 0.85em !important;
+  --indentation-guide-reading-indent: -0.85em !important;
+  --indentation-guide-source-indent: 0.25em !important;
+  --indentation-guide-width: 1px !important;
+  --indentation-guide-width-active: 1px !important;
+  --inline-title-line-height: 1.2 !important;
+  --inline-title-margin-bottom: 0.5em !important;
+  --inline-title-size: 1.802em !important;
+  --inline-title-style: normal !important;
+  --inline-title-variant: normal !important;
+  --inline-title-weight: 700 !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-date-separator: #6f6f6f !important;
+  --input-font-weight: 400 !important;
+  --input-height: 30px !important;
+  --input-padding: 4px 8px !important;
+  --input-placeholder-color: #6f6f6f !important;
+  --input-radius: 5px !important;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --interactive-accent: rgba(0,0,0,0.1) !important;
+  --interactive-accent-hover: rgba(250,250,250,0.1) !important;
+  --interactive-accent-hsl: 258, 88%, 66% !important;
+  --interactive-accent-rgb: 72, 54, 153 !important;
+  --interactive-hover: rgba(0,0,0,0.05) !important;
+  --interactive-normal: #313030 !important;
+  --keyboard-height: 0px !important;
+  --layer-cover: 5 !important;
+  --layer-dragged-item: 80 !important;
+  --layer-menu: 65 !important;
+  --layer-modal: 50 !important;
+  --layer-notice: 60 !important;
+  --layer-popover: 30 !important;
+  --layer-sidedock: 10 !important;
+  --layer-slides: 45 !important;
+  --layer-status-bar: 15 !important;
+  --layer-tooltip: 70 !important;
+  --line-height-normal: 1.5 !important;
+  --line-height-tight: 1.3 !important;
+  --link-color: #3daddb !important;
+  --link-color-hover: #6f6f6f !important;
+  --link-decoration: underline !important;
+  --link-decoration-hover: underline !important;
+  --link-decoration-thickness: auto !important;
+  --link-external-color: #3daddb !important;
+  --link-external-color-hover: #6f6f6f !important;
+  --link-external-decoration: underline !important;
+  --link-external-decoration-hover: underline !important;
+  --link-external-filter: none !important;
+  --link-unresolved-color: #3daddb !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --link-unresolved-decoration-style: solid !important;
+  --link-unresolved-filter: none !important;
+  --link-unresolved-opacity: 0.7 !important;
+  --link-weight: 400 !important;
+  --list-bullet-border: none !important;
+  --list-bullet-end-padding: 1.3rem !important;
+  --list-bullet-radius: 50% !important;
+  --list-bullet-size: 0.3em !important;
+  --list-bullet-transform: none !important;
+  --list-indent: calc(0.5625em * 4) !important;
+  --list-indent-editing: 0.75em !important;
+  --list-indent-source: 0 !important;
+  --list-marker-color: #6f6f6f !important;
+  --list-marker-color-collapsed: #3daddb !important;
+  --list-marker-color-hover: #6f6f6f !important;
+  --list-numbered-style: decimal !important;
+  --list-spacing: 0.075em !important;
+  --loading-icon-delay: 400ms !important;
+  --menu-backdrop-filter: none !important;
+  --menu-background: #313030 !important;
+  --menu-border-color: #3f3f3f !important;
+  --menu-border-width: 1px !important;
+  --menu-padding: 6px !important;
+  --menu-radius: 8px !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --metadata-background: transparent !important;
+  --metadata-border-color: #6f6f6f !important;
+  --metadata-border-radius: 0 !important;
+  --metadata-border-width: 0 !important;
+  --metadata-display-editing: block !important;
+  --metadata-display-reading: block !important;
+  --metadata-divider-color: #6f6f6f !important;
+  --metadata-divider-color-focus: transparent !important;
+  --metadata-divider-color-hover: transparent !important;
+  --metadata-divider-width: 0 !important;
+  --metadata-gap: 3px !important;
+  --metadata-input-background: transparent !important;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
+  --metadata-input-background-hover: transparent !important;
+  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font-size: 0.875em !important;
+  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-text-color: #fffdf9 !important;
+  --metadata-label-background: transparent !important;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
+  --metadata-label-background-hover: transparent !important;
+  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font-size: 0.875em !important;
+  --metadata-label-text-color: #6f6f6f !important;
+  --metadata-label-text-color-hover: #6f6f6f !important;
+  --metadata-label-width: 9em !important;
+  --metadata-max-width: none !important;
+  --metadata-padding: 8px 0 !important;
+  --metadata-property-background: transparent !important;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
+  --metadata-property-background-hover: transparent !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f !important;
+  --metadata-property-padding: 0 !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
+  --metadata-sidebar-input-font-size: 13px !important;
+  --metadata-sidebar-label-font-size: 13px !important;
+  --modal-background: #313030 !important;
+  --modal-border-color: #555555 !important;
+  --modal-border-width: 1px !important;
+  --modal-community-sidebar-width: 280px !important;
+  --modal-height: 85vh !important;
+  --modal-max-height: 1000px !important;
+  --modal-max-width: 1100px !important;
+  --modal-max-width-narrow: 800px !important;
+  --modal-radius: 12px !important;
+  --modal-width: 90vw !important;
+  --mono-rgb-0: 0, 0, 0 !important;
+  --mono-rgb-100: 255, 255, 255 !important;
+  --nav-collapse-icon-color: #6f6f6f !important;
+  --nav-collapse-icon-color-collapsed: #6f6f6f !important;
+  --nav-heading-color: #fffdf9 !important;
+  --nav-heading-color-collapsed: #6f6f6f !important;
+  --nav-heading-color-collapsed-hover: #6f6f6f !important;
+  --nav-heading-color-hover: #fffdf9 !important;
+  --nav-heading-weight: 500 !important;
+  --nav-heading-weight-hover: 500 !important;
+  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
+  --nav-indentation-guide-width: 1px !important;
+  --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
+  --nav-item-children-margin-start: 12px !important;
+  --nav-item-children-padding-start: 4px !important;
+  --nav-item-color: #6f6f6f !important;
+  --nav-item-color-active: #fffdf9 !important;
+  --nav-item-color-highlighted: #3daddb !important;
+  --nav-item-color-hover: #fffdf9 !important;
+  --nav-item-color-selected: #fffdf9 !important;
+  --nav-item-padding: 4px 8px 4px 24px !important;
+  --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-size: 13px !important;
+  --nav-item-white-space: pre !important;
+  --p-spacing: 1rem !important;
+  --p-spacing-empty: 0rem !important;
+  --page-border: 9px solid transparent !important;
+  --page-margin: 1px auto -8px !important;
+  --pdf-background: #313030 !important;
+  --pdf-page-background: #313030 !important;
+  --pdf-shadow: 0 0 0 1px #6f6f6f !important;
+  --pdf-sidebar-background: #313030 !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #6f6f6f !important;
+  --pdfViewer-padding-bottom: 0 !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #6f6f6f !important;
+  --pill-border-color-hover: #3f3f3f !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #6f6f6f !important;
+  --pill-color-hover: #fffdf9 !important;
+  --pill-color-remove: #6f6f6f !important;
+  --pill-color-remove-hover: #3daddb !important;
+  --pill-decoration: none !important;
+  --pill-decoration-hover: none !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --pill-padding-x: 0.65em !important;
+  --pill-padding-y: 0.25em !important;
+  --pill-radius: 2em !important;
+  --popover-font-size: 16px !important;
+  --popover-height: 400px !important;
+  --popover-max-height: 95vh !important;
+  --popover-pdf-height: 400px !important;
+  --popover-pdf-width: 450px !important;
+  --popover-width: 450px !important;
+  --prompt-border-color: #555555 !important;
+  --prompt-border-width: 1px !important;
+  --prompt-input-height: 40px !important;
+  --prompt-max-height: 70vh !important;
+  --prompt-max-width: 80vw !important;
+  --prompt-width: 700px !important;
+  --radius-l: 12px !important;
+  --radius-m: 8px !important;
+  --radius-s: 4px !important;
+  --radius-xl: 16px !important;
+  --ribbon-background: #313030 !important;
+  --ribbon-background-collapsed: #313030 !important;
+  --ribbon-padding: 8px 4px 12px !important;
+  --ribbon-width: 44px !important;
+  --safe-area-inset-bottom: 0px !important;
+  --safe-area-inset-left: 0px !important;
+  --safe-area-inset-right: 0px !important;
+  --safe-area-inset-top: 0px !important;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.1) !important;
+  --scrollbar-bg: rgba(0, 0, 0, 0.0) !important;
+  --scrollbar-border-width: 3px 3px 3px 2px !important;
+  --scrollbar-height: 12px !important;
+  --scrollbar-radius: 12px !important;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.08) !important;
+  --scrollbar-width: 12px !important;
+  --search-clear-button-color: #6f6f6f !important;
+  --search-clear-button-size: 13px !important;
+  --search-icon-color: #6f6f6f !important;
+  --search-icon-size: 18px !important;
+  --search-result-background: #313030 !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
+  --sidebar-tab-text-display: none !important;
+  --size-2-1: 2px !important;
+  --size-2-2: 4px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 4px !important;
+  --size-4-10: 40px !important;
+  --size-4-12: 48px !important;
+  --size-4-16: 64px !important;
+  --size-4-18: 72px !important;
+  --size-4-2: 8px !important;
+  --size-4-3: 12px !important;
+  --size-4-4: 16px !important;
+  --size-4-5: 20px !important;
+  --size-4-6: 24px !important;
+  --size-4-8: 32px !important;
+  --size-4-9: 36px !important;
+  --slider-s-thumb-position: -5px !important;
+  --slider-s-thumb-size: 15px !important;
+  --slider-thumb-border-color: #3f3f3f !important;
+  --slider-thumb-border-width: 1px !important;
+  --slider-thumb-height: 18px !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-thumb-width: 18px !important;
+  --slider-thumb-y: -6px !important;
+  --slider-track-background: #6f6f6f !important;
+  --slider-track-height: 3px !important;
+  --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: #313030 !important;
+  --status-bar-border-color: #6f6f6f !important;
+  --status-bar-border-width: 1px 0 0 1px !important;
+  --status-bar-font-size: 12px !important;
+  --status-bar-position: fixed !important;
+  --status-bar-radius: 8px 0 0 0 !important;
+  --status-bar-text-color: #6f6f6f !important;
+  --swatch-height: 22px !important;
+  --swatch-radius: 14px !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  --swatch-width: 22px !important;
+  --sync-avatar-color-1: #fb464c !important;
+  --sync-avatar-color-2: #e9973f !important;
+  --sync-avatar-color-3: #e0de71 !important;
+  --sync-avatar-color-4: #44cf6e !important;
+  --sync-avatar-color-5: #53dfdd !important;
+  --sync-avatar-color-6: #027aff !important;
+  --sync-avatar-color-7: #a882ff !important;
+  --sync-avatar-color-8: #fa99cd !important;
+  --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: #313030 !important;
+  --tab-container-background: #313030 !important;
+  --tab-curve: 6px !important;
+  --tab-divider-color: #3f3f3f !important;
+  --tab-font-size: 13px !important;
+  --tab-max-width: 320px !important;
+  --tab-outline-color: #6f6f6f !important;
+  --tab-outline-width: 1px !important;
+  --tab-radius: 4px !important;
+  --tab-radius-active: 6px 6px 0 0 !important;
+  --tab-stacked-font-size: 13px !important;
+  --tab-stacked-font-weight: 400 !important;
+  --tab-stacked-header-width: 40px !important;
+  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
+  --tab-stacked-text-align: start !important;
+  --tab-stacked-text-transform: rotate(0deg) !important;
+  --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: #313030 !important;
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
+  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color: #6f6f6f !important;
+  --tab-text-color-active: #6f6f6f !important;
+  --tab-text-color-focused: #6f6f6f !important;
+  --tab-text-color-focused-active: #6f6f6f !important;
+  --tab-text-color-focused-active-current: #fffdf9 !important;
+  --tab-text-color-focused-highlighted: #3daddb !important;
+  --tab-width: 200px !important;
+  --table-add-button-background: transparent !important;
+  --table-add-button-border-color: #6f6f6f !important;
+  --table-add-button-border-width: 1px !important;
+  --table-background: transparent !important;
+  --table-border-color: #6f6f6f !important;
+  --table-border-width: 1px !important;
+  --table-cell-vertical-alignment: top !important;
+  --table-column-alt-background: transparent !important;
+  --table-column-first-border-width: 1px !important;
+  --table-column-last-border-width: 1px !important;
+  --table-column-max-width: none !important;
+  --table-column-min-width: 6ch !important;
+  --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: rgba(0,0,0,0.1) !important;
+  --table-drag-handle-color: #6f6f6f !important;
+  --table-drag-handle-color-active: #fffdf9 !important;
+  --table-drop-indicator-half-width: 2px !important;
+  --table-header-background: transparent !important;
+  --table-header-border-color: #6f6f6f !important;
+  --table-header-border-width: 1px !important;
+  --table-header-color: #fffdf9 !important;
+  --table-header-size: 16px !important;
+  --table-header-weight: calc(400 + 200) !important;
+  --table-line-height: 1.3 !important;
+  --table-row-alt-background: transparent !important;
+  --table-row-alt-background-hover: transparent !important;
+  --table-row-background-hover: transparent !important;
+  --table-row-last-border-width: 1px !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-blend-mode: lighten !important;
+  --table-selection-border-color: rgba(0,0,0,0.1) !important;
+  --table-selection-border-radius: 4px !important;
+  --table-selection-border-width: 2px !important;
+  --table-text-size: 16px !important;
+  --table-white-space: break-spaces !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-width: 0px !important;
+  --tag-color: #3daddb !important;
+  --tag-color-hover: #3daddb !important;
+  --tag-decoration: none !important;
+  --tag-decoration-hover: none !important;
+  --tag-padding-x: 0.65em !important;
+  --tag-padding-y: 0.25em !important;
+  --tag-radius: 2em !important;
+  --tag-size: 0.875em !important;
+  --text-accent: #3daddb !important;
+  --text-accent-hover: #6f6f6f !important;
+  --text-error: #800000 !important;
+  --text-faint: #6f6f6f !important;
+  --text-highlight-bg: rgba(250,250,250,0.1) !important;
+  --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: #6f6f6f !important;
+  --text-normal: #fffdf9 !important;
+  --text-on-accent: #fffdf9 !important;
+  --text-on-accent-inverted: black !important;
+  --text-selection: rgba(250,250,250,0.1) !important;
+  --text-success: #44cf6e !important;
+  --text-warning: #e9973f !important;
+  --titlebar-background: #313030 !important;
+  --titlebar-background-focused: #313030 !important;
+  --titlebar-border-color: #6f6f6f !important;
+  --titlebar-border-width: 0px !important;
+  --titlebar-height: 30px !important;
+  --titlebar-text-color: #6f6f6f !important;
+  --titlebar-text-color-focused: #fffdf9 !important;
+  --titlebar-text-weight: 700 !important;
+  --toggle-border-width: 2px !important;
+  --toggle-radius: 18px !important;
+  --toggle-s-border-width: 2px !important;
+  --toggle-s-thumb-height: 15px !important;
+  --toggle-s-thumb-width: 15px !important;
+  --toggle-s-width: 34px !important;
+  --toggle-thumb-color: white !important;
+  --toggle-thumb-height: 18px !important;
+  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-width: 18px !important;
+  --toggle-width: 40px !important;
+  --vault-profile-actions-display: flex !important;
+  --vault-profile-color: #fffdf9 !important;
+  --vault-profile-color-hover: #fffdf9 !important;
+  --vault-profile-display: flex !important;
+  --vault-profile-font-size: 13px !important;
+  --vault-profile-font-weight: 500 !important;
+  --viewer-container-height: 0 !important;
+  --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
+  --xfa-focus-outline: auto !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --zoom-factor: 1 !important;
+  --text-error-hover: #990000 !important;
+  --background-modifier-form-field-highlighted: #313030 !important;
   --code-block: #6f6f6f !important;
+  --inline-code: #6f6f6f !important;
+  --text-title-h1: #fffdf9 !important;
+  --text-title-h2: #fffdf9 !important;
+  --text-title-h3: #fffdf9 !important;
+  --text-title-h4: #fffdf9 !important;
+  --text-title-h5: #fffdf9 !important;
+  --text-title-h6: #fffdf9 !important;
+  --vim-cursor: #474949 !important;
+  --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman !important;
+  --blockquote-border: #3daddb !important;
+  --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next, Times New Roman !important;
+  --blockquote-bg: #313030 !important;
+  --active-title-border: rgba(0,0,0,0.1) !important;
+  --border-color: #6f6f6f !important;
+  --bracket-color: #4c535a !important;
+  --checkbox-enabled: #6f6f6f !important;
+  --file-name-color: #3daddb !important;
+  --font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco !important;
+  --font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next, Times New Roman !important;
+  --font-size-blockquote: 22px !important;
+  --font-size-code: 22px !important;
+  --font-size-footnote: 22px !important;
+  --font-size-h1: 1.9em !important;
+  --font-size-h2: 1.6em !important;
+  --font-size-h3: 1.3em !important;
+  --font-size-h4: 1.2em !important;
+  --font-size-h5: 1.1em !important;
+  --font-size-h6: 1em !important;
+  --font-size-normal: 24px !important;
+  --font-size-side-dock: 16px !important;
+  --font-size-side-dock-title: 18px !important;
+  --font-size-status-bar: 16px !important;
   --graph-line-color: #4c535a !important;
   --graph-line-on-hover: #6f6f6f !important;
   --graph-node-color: #6f6f6f !important;
   --graph-note-name: #fffdf9 !important;
+  --hashtag-color: #313030 !important;
+  --header-before-color: #4c535a !important;
+  --header-before-size-h1: 0.5em !important;
+  --header-before-size-h2: 0.5em !important;
+  --header-before-size-h3: 0.5em !important;
+  --header-before-size-h4: 0.5em !important;
+  --header-before-size-h5: 0.5em !important;
+  --header-before-size-h6: 0.5em !important;
+  --interfa-color-icon: rgba(250,250,250,0.045) !important;
+  --interface-color-action: #fffdf9 !important;
+  --interface-color-background: #415358 !important;
+  --interface-color-background-alt: #313030 !important;
+  --interface-color-border: rgba(250,250,250,0.045) !important;
+  --interface-color-cross: #fc3b44 !important;
+  --interface-color-foreground: #3e3e3e !important;
+  --interface-color-foreground-alt: #3daddb !important;
+  --interface-color-pencil: #fec03e !important;
+  --interface-color-pin: #fffdf9 !important;
+  --interface-color-three-dots: #a0e85b !important;
+  --line-height-footnote: 1.2em !important;
+  --line-height-header-preview: 1em !important;
+  --line-height-preview: 1.7em !important;
+  --link-bg: !important;
+  --link-bg-hover: #3daddb !important;
+  --link-text: #3daddb !important;
+  --link-text-hover: #313030 !important;
+  --pre-code-bg: rgba(0,0,0,0.001) !important;
+  --quick-switcher: rgba(250,250,250,0.1) !important;
+  --tag-bg: #6f6f6f !important;
+  --tag-bg-hover: #6f6f6f !important;
+  --tag-text-color: #313030 !important;
+  --tag-text-hover: #313030 !important;
+  --text-title-font-weight: 600 !important;
+  --ul-line-color: #777 !important;
+  --ul-line-specs: 0.9px solid !important;
+  --text-search-highlight-bg: rgba(262, 127, 125, 0.9) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {
@@ -84,18 +832,7 @@ body .markdown-rendered a.external-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -111,18 +848,7 @@ body .markdown-rendered a.internal-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -138,18 +864,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -165,18 +880,7 @@ body .markdown-rendered p {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -192,9 +896,7 @@ body strong {
   color: rgb(255, 253, 249);
   cursor: auto;
   filter: none;
-  font-family:
-    "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-    "Times New Roman";
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(255, 253, 249);
@@ -210,18 +912,7 @@ body b {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -237,9 +928,7 @@ body em {
   color: rgb(255, 253, 249);
   cursor: auto;
   filter: none;
-  font-family:
-    "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-    "Times New Roman";
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(255, 253, 249);
@@ -255,18 +944,7 @@ body i {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -282,18 +960,7 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -309,9 +976,7 @@ body del {
   color: rgb(255, 253, 249);
   cursor: auto;
   filter: none;
-  font-family:
-    "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-    "Times New Roman";
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(255, 253, 249);
@@ -381,18 +1046,7 @@ body div.multi-select-pill {
   align-items: center;
   background-color: rgba(138, 92, 245, 0.1);
   display: flex;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
   border-left-style: solid;
@@ -501,8 +1155,7 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
   border-left-style: none;
   border-bottom-style: none;
@@ -568,10 +1221,7 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
+body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -584,7 +1234,7 @@ body
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task="x"] {
+body ul > li.task-list-item[data-task=x] {
   color: rgb(218, 218, 218);
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -592,18 +1242,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -661,18 +1300,7 @@ body .search-results > * {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -732,98 +1360,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -854,7 +1416,7 @@ body .markdown-preview-sizer {
   border-bottom-right-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout="note"] {
+body .callout[data-callout=note] {
   --callout-color: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -879,7 +1441,7 @@ body .callout[data-callout="note"] {
   padding-right: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body .callout[data-callout=note] > .callout-title {
   gap: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -902,11 +1464,7 @@ body .callout[data-callout="note"] > .callout-title {
   padding-left: 0px;
   padding-right: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -921,7 +1479,7 @@ body .callout > .callout-content {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -942,15 +1500,11 @@ body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -971,15 +1525,11 @@ body .callout[data-callout="info"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1000,15 +1550,11 @@ body .callout[data-callout="todo"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="tip"] {
+body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1029,15 +1575,11 @@ body .callout[data-callout="tip"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="success"] {
+body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1058,15 +1600,11 @@ body .callout[data-callout="success"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="question"] {
+body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1087,15 +1625,11 @@ body .callout[data-callout="question"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="warning"] {
+body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1116,15 +1650,11 @@ body .callout[data-callout="warning"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="danger"] {
+body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1145,15 +1675,11 @@ body .callout[data-callout="danger"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="failure"] {
+body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1174,15 +1700,11 @@ body .callout[data-callout="failure"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1203,15 +1725,11 @@ body .callout[data-callout="bug"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1232,15 +1750,11 @@ body .callout[data-callout="example"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout="quote"] {
+body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1261,11 +1775,7 @@ body .callout[data-callout="quote"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
+body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1274,62 +1784,18 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -1338,51 +1804,17 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: rgb(218, 218, 218);
   cursor: auto;
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item.is-collapsed
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body
-  .nav-view-outer
-  .nav-view
-  > .tree-item
-  > .tree-item-children
-  > .tree-item
-  > .tree-item-self {
+body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

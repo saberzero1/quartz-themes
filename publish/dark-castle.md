@@ -4,9 +4,10 @@
 - Support the author: <a href="https://buymeacoffee.com/scottgriv" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/sponsors/scottgriv" target="_blank" rel="noopener noreferrer">GitHub Sponsor</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-castle">Install instructions</a>
 
-| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
-| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `dark-castle` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dark-castle/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

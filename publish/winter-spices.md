@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/winter-spices">Install instructions</a>
 
-| Name            | Modes                       | Compatibility                                  | License                                                                                                                                              |
-| --------------- | --------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `winter-spices` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/winter-spices/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

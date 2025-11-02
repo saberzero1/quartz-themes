@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/celestial-night">Install instructions</a>
 
-| Name              | Modes                     | Compatibility                                                                                     | License                                                                                                                                                            |
-| ----------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `celestial-night` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/celestial-night/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

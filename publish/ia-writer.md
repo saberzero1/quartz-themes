@@ -4,9 +4,10 @@
 - Support the author: <a href="https://www.buymeacoffee.com/mrowa44" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ia-writer">Install instructions</a>
 
-| Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
-| ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `ia-writer` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ia-writer/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

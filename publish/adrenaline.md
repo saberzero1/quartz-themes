@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/adrenaline">Install instructions</a>
 
-| Name         | Modes                     | Compatibility                          | License                                                                                                                                           |
-| ------------ | ------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `adrenaline` | ![[media/both.svg\|BOTH]] | <img src="media/full.svg" alt="FULL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/adrenaline/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

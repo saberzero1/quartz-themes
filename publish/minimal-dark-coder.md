@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-dark-coder">Install instructions</a>
 
-| Name                 | Modes                     | Compatibility                                  | License                                                                                                                                                               |
-| -------------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `minimal-dark-coder` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-dark-coder/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 

@@ -4,9 +4,10 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.frappe">Install instructions</a>
 
-| Name                | Modes                     | Compatibility                                                                                     | License                                                                                                                                                  |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name | Modes | Compatibility | License |
+| --- | --- | --- | --- |
 | `catppuccin.frappe` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catppuccin.frappe/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+
 
 # Markdown Formatting Guide for Obsidian
 
