@@ -155,6 +155,68 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #f2efdf !important;
+  --code-border-color: #bec5b2 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #939f91 !important;
+  --code-function: #8da101 !important;
+  --code-important: #f85552 !important;
+  --code-keyword: #3a94c5 !important;
+  --code-normal: #5c6a72 !important;
+  --code-operator: #f57d26 !important;
+  --code-property: #35a77c !important;
+  --code-punctuation: #939f91 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #dfa000 !important;
+  --code-tag: #f57d26 !important;
+  --code-value: #df69ba !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #5c5c5c !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: #5a93a2 !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #939f91 !important;
+  --graph-text: #5c6a72 !important;
+  --code-header: #0004 !important;
+  --code-inline: #3a94c5 !important;
+}
+
+body.theme-dark {
+  --code-background: #293136 !important;
+  --code-border-color: #5d6b66 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #859289 !important;
+  --code-function: #a7c080 !important;
+  --code-important: #e67e80 !important;
+  --code-keyword: #7fbbb3 !important;
+  --code-normal: #d3c6aa !important;
+  --code-operator: #e69875 !important;
+  --code-property: #83c092 !important;
+  --code-punctuation: #859289 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #dbbc7f !important;
+  --code-tag: #e69875 !important;
+  --code-value: #d699b6 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #5a93a2 !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #859289 !important;
+  --graph-text: #d3c6aa !important;
+  --code-header: #0004 !important;
+  --code-inline: #7fbbb3 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

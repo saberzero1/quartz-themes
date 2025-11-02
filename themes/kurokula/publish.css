@@ -87,6 +87,40 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: #141515 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #fcffb8 !important;
+  --code-function: #dbbb43 !important;
+  --code-important: #1ef9f5 !important;
+  --code-keyword: #6890d7 !important;
+  --code-normal: #ffffff !important;
+  --code-operator: #94959b !important;
+  --code-property: #cc83bd !important;
+  --code-punctuation: #94959b !important;
+  --code-radius: 12px !important;
+  --code-size: 0.875em !important;
+  --code-string: #85b1a9 !important;
+  --code-tag: #2ab9ff !important;
+  --code-value: #9d5918 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: rgba(255, 255, 255, 0.8) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(260.488 - 3),
+    calc(18.2222% * 1.02),
+    calc(55.8824% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: rgba(255, 255, 255, 0.6) !important;
+  --graph-text: rgba(255, 255, 255, 1) !important;
+  --code-inline: #dbbb43 !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

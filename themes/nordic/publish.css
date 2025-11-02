@@ -66,6 +66,39 @@
     local("Norwester"),
     url("https://fonts.cdnfonts.com/s/20990/norwester.woff") format("woff");
 }
+body.theme-light {
+  --code-background: #eceff4 !important;
+  --code-border-color: #e5e9f0 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #4c566a !important;
+  --code-function: #ebcb8b !important;
+  --code-important: #d08770 !important;
+  --code-keyword: #b48ead !important;
+  --code-normal: color-mix(in srgb, hsl(210, 34%, 63%), #000 45%) !important;
+  --code-operator: #bf616a !important;
+  --code-property: #61b1bf !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    hsl(210, 34%, 63%),
+    #000 20%
+  ) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #a3be8c !important;
+  --code-tag: #bf616a !important;
+  --code-value: #958eb4 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d8dee9 !important;
+  --graph-node: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --graph-node-attachment: #ebcb8b !important;
+  --graph-node-focused: hsl(210, 34%, 63%) !important;
+  --graph-node-tag: #a3be8c !important;
+  --graph-node-unresolved: #4c566a !important;
+  --graph-text: color-mix(in srgb, hsl(210, 34%, 63%), #000 45%) !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

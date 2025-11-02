@@ -6,6 +6,48 @@
 }
 
 :root:root {
+  --code-background: #04070c !important;
+  --code-border-color: #380b13 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(212, 47, 47, 0.4) !important;
+  --code-comment: #4e5b6f !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #803232 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #803232 !important;
+  --code-radius: 0 !important;
+  --code-size: 0.9em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #571a1a !important;
+  --graph-node: #475569 !important;
+  --graph-node-attachment: #475569 !important;
+  --graph-node-focused: #c5575b !important;
+  --graph-node-tag: #04070c !important;
+  --graph-node-unresolved: #1b262f !important;
+  --graph-text: #475569 !important;
+  --graph-arrow: #803232 !important;
+  --graph-tag: #04070c !important;
+  --graph-bg: rgba(13, 20, 29, 0.51) !important;
+  --code-bg: #04070c !important;
+  --code-shadow: 0 2px 0 black !important;
+  --code-text: #803232 !important;
+  --graph-404: #1b262f !important;
+  --graph-background: rgba(13, 20, 29, 0.51) !important;
+  --graph-controls-section-header-padding: 4px 8px !important;
+  --graph-fill: #c94d4d !important;
+  --graph-focused: #c5575b !important;
+  --graph-img: #475569 !important;
+  --graph-line-hover: #803232 !important;
+  --graph-lines: #571a1a !important;
+  --graph-node-hover-fill: #c94d4d !important;
+  --graph-node-hover-outline: #e5ebee !important;
 }
 
 .darkmode {

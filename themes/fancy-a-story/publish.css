@@ -205,6 +205,80 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: color-mix(in srgb-linear, #e7e7e7, #000000 10%) !important;
+  --code-border-color: color-mix(
+    in srgb-linear,
+    #e7e7e7,
+    #000000 20%
+  ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: color-mix(in srgb-linear, #e7e7e7, #000000 50%) !important;
+  --code-function: rgb(199.455, 175.095, 33.285) !important;
+  --code-important: rgb(180.315, 106.365, 15.015) !important;
+  --code-keyword: rgb(213.375, 68.955, 176.835) !important;
+  --code-normal: #000000 !important;
+  --code-operator: rgb(169.005, 56.775, 56.775) !important;
+  --code-property: rgb(57.645, 141.165, 141.165) !important;
+  --code-punctuation: color-mix(
+    in srgb-linear,
+    #e7e7e7,
+    #000000 70%
+  ) !important;
+  --code-radius: 0 !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(26.325, 99.405, 26.325) !important;
+  --code-tag: rgb(169.005, 56.775, 56.775) !important;
+  --code-value: rgb(102.015, 39.375, 121.155) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix(in srgb-linear, #e7e7e7, #000000 35%) !important;
+  --graph-node: color-mix(in srgb-linear, #e7e7e7, #000000 70%) !important;
+  --graph-node-attachment: rgb(199.455, 175.095, 33.285) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: rgb(26.325, 99.405, 26.325) !important;
+  --graph-node-unresolved: color-mix(
+    in srgb-linear,
+    #e7e7e7,
+    #000000 50%
+  ) !important;
+  --graph-text: #000000 !important;
+}
+
+body.theme-dark {
+  --code-background: color-mix(in lab, #1f1f1f, #d9d9d9 10%) !important;
+  --code-border-color: color-mix(in lab, #1f1f1f, #d9d9d9 20%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: color-mix(in lab, #1f1f1f, #d9d9d9 50%) !important;
+  --code-function: rgb(237.97, 237.97, 16.12) !important;
+  --code-important: rgb(223.18, 158.8, 75.28) !important;
+  --code-keyword: rgb(231.01, 180.55, 231.88) !important;
+  --code-normal: #d9d9d9 !important;
+  --code-operator: rgb(224.92, 103.99, 103.99) !important;
+  --code-property: rgb(123.13, 212.74, 212.74) !important;
+  --code-punctuation: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
+  --code-radius: 0 !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(99.64, 206.65, 99.64) !important;
+  --code-tag: rgb(224.92, 103.99, 103.99) !important;
+  --code-value: rgb(186.64, 137.05, 227.53) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix(in lab, #1f1f1f, #d9d9d9 35%) !important;
+  --graph-node: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
+  --graph-node-attachment: rgb(237.97, 237.97, 16.12) !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: rgb(99.64, 206.65, 99.64) !important;
+  --graph-node-unresolved: color-mix(in lab, #1f1f1f, #d9d9d9 50%) !important;
+  --graph-text: #d9d9d9 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

@@ -63,6 +63,35 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: rgb(54, 57, 63) !important;
+  --code-border-color: #595959 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #999999 !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: rgb(170, 170, 170) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: rgb(49, 156, 180) !important;
+  --code-radius: 4px !important;
+  --code-size: 13.125px !important;
+  --code-string: #44cf6e !important;
+  --code-tag: rgb(49, 156, 180) !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(38, 121, 140) !important;
+  --graph-node: rgb(252, 246, 1) !important;
+  --graph-node-attachment: rgb(214, 105, 188) !important;
+  --graph-node-focused: rgb(38, 121, 140) !important;
+  --graph-node-tag: rgb(93, 188, 210) !important;
+  --graph-node-unresolved: rgb(158, 138, 255) !important;
+  --graph-text: rgb(204, 204, 204) !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

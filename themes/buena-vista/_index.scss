@@ -6,8 +6,64 @@
 }
 
 :root:root {
+  --code-background: hsl(0, 0%, 95.5%) !important;
+  --code-border-color: hsl(0, 0%, 81.2%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(258, 88%, 63.4%, 25%) !important;
+  --code-comment: hsl(0, 0%, 63.4%) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(0, 0%, 10%) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: hsl(0, 0%, 43.4%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(0, 0%, 77%) !important;
+  --graph-node: hsl(0, 0%, 43.4%) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: hsl(0, 0%, 63.4%) !important;
+  --graph-text: hsl(0, 0%, 10%) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(0, 0%, 13.6%) !important;
+  --code-border-color: hsl(0, 0%, 26.7%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(258, 88%, 44.1%, 25%) !important;
+  --code-comment: hsl(0, 0%, 44.1%) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: hsl(0, 0%, 100%) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: hsl(0, 0%, 64.6%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(0, 0%, 30.7%) !important;
+  --graph-node: hsl(0, 0%, 64.6%) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: hsl(0, 0%, 44.1%) !important;
+  --graph-text: hsl(0, 0%, 100%) !important;
 }
 
 html {

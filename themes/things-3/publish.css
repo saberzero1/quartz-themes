@@ -7,6 +7,68 @@
   font-style: normal;
   font-display: swap;
 }
+body.theme-light {
+  --code-background: #f9f9f9 !important;
+  --code-border-color: rgba(200, 200, 200, 0.1) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #ababab !important;
+  --code-function: #ffd500 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #2d2e34 !important;
+  --code-operator: #f83366 !important;
+  --code-property: #54ada4 !important;
+  --code-punctuation: #595959 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #f83366 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #595959 !important;
+  --graph-node-attachment: #ffd500 !important;
+  --graph-node-focused: #0062c1 !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #ababab !important;
+  --graph-text: #2d2e34 !important;
+}
+
+body.theme-dark {
+  --code-background: #3b3b3b !important;
+  --code-border-color: rgba(0, 0, 0, 0.2) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #666666 !important;
+  --code-function: #ffd500 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #dadada !important;
+  --code-operator: #f83366 !important;
+  --code-property: #54ada4 !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #f83366 !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #ffd500 !important;
+  --graph-node-focused: hsl(
+    calc(213 - 3),
+    calc(100% * 1.02),
+    calc(70% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #dadada !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

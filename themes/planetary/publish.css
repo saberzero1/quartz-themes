@@ -69,6 +69,64 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #fdf9f5 !important;
+  --code-border-color: #f6e2db !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
+  --code-comment: hsl(4, 89%, 64%) !important;
+  --code-function: #eacf00 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #f22c96 !important;
+  --code-normal: #765c4f !important;
+  --code-operator: #f85c51 !important;
+  --code-property: rgb(14, 205, 201) !important;
+  --code-punctuation: #b29688 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #0cc77c !important;
+  --code-tag: #f85c51 !important;
+  --code-value: #a29bfe !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #4a3827 !important;
+  --graph-node: #b29688 !important;
+  --graph-node-attachment: #eacf00 !important;
+  --graph-node-focused: hsl(4, 89%, 64%) !important;
+  --graph-node-tag: #0cc77c !important;
+  --graph-node-unresolved: hsl(4, 89%, 64%) !important;
+  --graph-text: #4a3827 !important;
+}
+
+body.theme-dark {
+  --code-background: #181716 !important;
+  --code-border-color: #232120 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: hsl(4, 89%, 64%) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #989692 !important;
+  --code-operator: #f85c51 !important;
+  --code-property: #0acecb !important;
+  --code-punctuation: #807874 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #23d18c !important;
+  --code-tag: #f85c51 !important;
+  --code-value: #a29bfe !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #ffebd1 !important;
+  --graph-node: #807874 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(4, 89%, 64%) !important;
+  --graph-node-tag: #23d18c !important;
+  --graph-node-unresolved: hsl(4, 89%, 64%) !important;
+  --graph-text: #ffebd1 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

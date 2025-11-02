@@ -115,7 +115,13 @@ themeCollection.forEach((manifest) => {
   });
 
   // Generate CSS from mappings
-  generateAndWriteCSS(manifest, themeName, quartzMappings, publishMappings, bodyVariables);
+  generateAndWriteCSS(
+    manifest,
+    themeName,
+    quartzMappings,
+    publishMappings,
+    bodyVariables,
+  );
 });
 
 closeDb();
@@ -156,7 +162,10 @@ function toHexColors(str) {
         .process(result).css;
     } catch (e) {
       // If still failing, return original string
-      console.warn("Warning: Could not process CSS colors, using original:", e.message);
+      console.warn(
+        "Warning: Could not process CSS colors, using original:",
+        e.message,
+      );
       return str;
     }
   }
@@ -179,15 +188,20 @@ function toHexColors(str) {
           .process(result).css;
       } catch (e) {
         // If iteration fails, stop and use previous result
-        console.warn(`Warning: Color conversion iteration ${iteration} failed, stopping iterations:`, e.message);
+        console.warn(
+          `Warning: Color conversion iteration ${iteration} failed, stopping iterations:`,
+          e.message,
+        );
         result = temp;
         break;
       }
       iteration++;
     } while (temp !== result && iteration < maxIterations);
-    
+
     if (iteration >= maxIterations) {
-      console.warn(`Warning: Color conversion reached max iterations (${maxIterations}) without converging`);
+      console.warn(
+        `Warning: Color conversion reached max iterations (${maxIterations}) without converging`,
+      );
     }
   } catch (e) {
     console.error("Error processing CSS to hex colors:", e);
@@ -375,7 +389,7 @@ function generateAndWriteCSS(
   // Only include --code-* and --graph-* variables for Quartz
   let bodyVarsStringDark = "";
   let bodyVarsStringLight = "";
-  
+
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {
@@ -383,7 +397,7 @@ function generateAndWriteCSS(
       }
     }
   }
-  
+
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
       if (key.startsWith("--code-") || key.startsWith("--graph-")) {

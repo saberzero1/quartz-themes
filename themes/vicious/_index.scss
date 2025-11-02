@@ -6,8 +6,64 @@
 }
 
 :root:root {
+  --code-background: #f1f2f5 !important;
+  --code-border-color: #818184 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #f1f2f5 !important;
+  --code-comment: #818184 !important;
+  --code-function: #ebcb8b !important;
+  --code-important: #f19a81 !important;
+  --code-keyword: #ee81f1 !important;
+  --code-normal: #08090e !important;
+  --code-operator: 241, 129, 150 !important;
+  --code-property: #8be3eb !important;
+  --code-punctuation: #818184 !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #81f1a4 !important;
+  --code-tag: 241, 129, 150 !important;
+  --code-value: #ab8beb !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #68696c !important;
+  --graph-node: #818184 !important;
+  --graph-node-attachment: #ebcb8b !important;
+  --graph-node-focused: hsl(39, 80%, 73%) !important;
+  --graph-node-tag: #81f1a4 !important;
+  --graph-node-unresolved: #818184 !important;
+  --graph-text: #08090e !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #17181e !important;
+  --code-border-color: #292a2f !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #17181e !important;
+  --code-comment: #68696c !important;
+  --code-function: #ebcb8b !important;
+  --code-important: #f19a81 !important;
+  --code-keyword: #ee81f1 !important;
+  --code-normal: #fbfcfc !important;
+  --code-operator: #f18196 !important;
+  --code-property: #8be3eb !important;
+  --code-punctuation: #818184 !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #81f1a4 !important;
+  --code-tag: #f18196 !important;
+  --code-value: #ab8beb !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #4f5053 !important;
+  --graph-node: #818184 !important;
+  --graph-node-attachment: #ebcb8b !important;
+  --graph-node-focused: hsl(
+    calc(39 - 3),
+    calc(80% * 1.02),
+    calc(73% * 1.15)
+  ) !important;
+  --graph-node-tag: #81f1a4 !important;
+  --graph-node-unresolved: #68696c !important;
+  --graph-text: #fbfcfc !important;
 }
 
 html {

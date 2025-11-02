@@ -6,6 +6,32 @@
 }
 
 :root:root {
+  --code-background: hsl(196, 11%, calc(3% + 6%)) !important;
+  --code-border-color: hsl(196, 11%, calc(8% + 6%)) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: hsl(196, 11%, calc(29% + 6%)) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: hsl(196, 11%, calc(62% + 6%)) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: hsl(196, 11%, calc(62% + 6%)) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(196, 11%, calc(14% + 6%)) !important;
+  --graph-node: hsl(196, 11%, calc(62% + 6%)) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(254, 80%, calc(68% - 15%)) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: hsl(196, 11%, calc(29% + 6%)) !important;
+  --graph-text: hsl(196, 11%, calc(74% + 6%)) !important;
 }
 
 .darkmode {

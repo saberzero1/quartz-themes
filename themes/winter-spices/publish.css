@@ -6,6 +6,35 @@
     local("Myriad Apple"),
     url("https://fonts.cdnfonts.com/s/13630/MYRIADAT.woff") format("woff");
 }
+body.theme-light {
+  --code-background: #4b213909 !important;
+  --code-border-color: #a48783 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #a48783 !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #666666 !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #c1aeac !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #202430 !important;
+  --graph-node: #c1aeac !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: #527a98 !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #a48783 !important;
+  --graph-text: #666666 !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

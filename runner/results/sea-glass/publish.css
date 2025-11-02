@@ -2,61 +2,91 @@
   font-family: "Euclid Circular A";
   font-style: normal;
   font-weight: 400;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Regular.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Regular.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: italic;
   font-weight: 400;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Italic.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: normal;
   font-weight: 300;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: italic;
   font-weight: 300;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light Italic.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: normal;
   font-weight: 500;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: italic;
   font-weight: 500;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium Italic.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: normal;
   font-weight: 600;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: italic;
   font-weight: 600;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold Italic.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: normal;
   font-weight: 700;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Euclid Circular A";
   font-style: italic;
   font-weight: 700;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff") format("woff");
+  src:
+    local("Euclid Circular A"),
+    url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff")
+      format("woff");
 }
 /**
  * Minified by jsDelivr using clean-css v5.3.2.
@@ -70,25 +100,41 @@
  */
 @font-face {
   font-family: Hack;
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-regular.woff2?sha=3114f1256") format("woff2"), url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-regular.woff?sha=3114f1256") format("woff");
+  src:
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-regular.woff2?sha=3114f1256")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-regular.woff?sha=3114f1256")
+      format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Hack;
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bold.woff2?sha=3114f1256") format("woff2"), url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bold.woff?sha=3114f1256") format("woff");
+  src:
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bold.woff2?sha=3114f1256")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bold.woff?sha=3114f1256")
+      format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Hack;
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-italic.woff2?sha=3114f1256") format("woff2"), url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-italic.woff?sha=3114f1256") format("woff");
+  src:
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-italic.woff2?sha=3114f1256")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-italic.woff?sha=3114f1256")
+      format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: Hack;
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bolditalic.woff2?sha=3114f1256") format("woff2"), url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bolditalic.woff?sha=3114f1256") format("woff");
+  src:
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bolditalic.woff2?sha=3114f1256")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-bolditalic.woff?sha=3114f1256")
+      format("woff");
   font-weight: 700;
   font-style: italic;
 }
@@ -130,7 +176,18 @@ body .markdown-rendered a.external-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -146,7 +203,18 @@ body .markdown-rendered a.internal-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -162,7 +230,18 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -178,7 +257,18 @@ body .markdown-rendered p {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -194,7 +284,19 @@ body strong {
   color: rgb(235, 219, 178);
   cursor: auto;
   filter: none;
-  font-family: "Euclid Circular A", ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    "Euclid Circular A",
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(235, 219, 178);
@@ -210,7 +312,18 @@ body b {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -226,7 +339,19 @@ body em {
   color: rgb(235, 219, 178);
   cursor: auto;
   filter: none;
-  font-family: "Euclid Circular A", ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    "Euclid Circular A",
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(235, 219, 178);
@@ -242,7 +367,18 @@ body i {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -258,7 +394,18 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -274,7 +421,19 @@ body del {
   color: rgb(235, 219, 178);
   cursor: auto;
   filter: none;
-  font-family: "Euclid Circular A", ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    "Euclid Circular A",
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(235, 219, 178);
@@ -344,7 +503,19 @@ body div.multi-select-pill {
   align-items: center;
   background-color: rgba(146, 246, 153, 0.1);
   display: flex;
-  font-family: "Euclid Circular A", ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    "Euclid Circular A",
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
   border-left-style: solid;
@@ -453,7 +624,8 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*=language-], body pre[class*=language-] {
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
   border-left-style: none;
   border-bottom-style: none;
@@ -519,7 +691,10 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
+body
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -532,7 +707,7 @@ body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task=x] {
+body ul > li.task-list-item[data-task="x"] {
   color: rgb(218, 218, 218);
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -540,7 +715,18 @@ body ul > li.task-list-item[data-task=x] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -598,7 +784,18 @@ body .search-results > * {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -658,32 +855,98 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -714,7 +977,7 @@ body .markdown-preview-sizer {
   border-bottom-right-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout=note] {
+body .callout[data-callout="note"] {
   --callout-color: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -739,7 +1002,7 @@ body .callout[data-callout=note] {
   padding-right: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout=note] > .callout-title {
+body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
   border-left-style: none;
   border-bottom-style: none;
@@ -762,7 +1025,11 @@ body .callout[data-callout=note] > .callout-title {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -777,7 +1044,7 @@ body .callout > .callout-content {
   padding-left: 0px;
   padding-right: 0px;
 }
-body .callout[data-callout=abstract] {
+body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -798,11 +1065,15 @@ body .callout[data-callout=abstract] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=info] {
+body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -823,11 +1094,15 @@ body .callout[data-callout=info] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=todo] {
+body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -848,11 +1123,15 @@ body .callout[data-callout=todo] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=tip] {
+body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -873,11 +1152,15 @@ body .callout[data-callout=tip] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=success] {
+body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -898,11 +1181,15 @@ body .callout[data-callout=success] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=question] {
+body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -923,11 +1210,15 @@ body .callout[data-callout=question] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=warning] {
+body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -948,11 +1239,15 @@ body .callout[data-callout=warning] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=danger] {
+body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -973,11 +1268,15 @@ body .callout[data-callout=danger] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=failure] {
+body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -998,11 +1297,15 @@ body .callout[data-callout=failure] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=bug] {
+body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1023,11 +1326,15 @@ body .callout[data-callout=bug] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=example] {
+body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1048,11 +1355,15 @@ body .callout[data-callout=example] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=quote] {
+body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1073,7 +1384,11 @@ body .callout[data-callout=quote] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1082,18 +1397,62 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -1102,17 +1461,51 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: rgb(218, 218, 218);
   cursor: auto;
 }
-body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

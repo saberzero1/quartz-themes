@@ -6,6 +6,32 @@
 }
 
 :root:root {
+  --code-background: #272b33 !important;
+  --code-border-color: #30363d !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(177, 186, 196, 0.12) !important;
+  --code-comment: #6e7681 !important;
+  --code-function: #ffa657 !important;
+  --code-important: #ffa657 !important;
+  --code-keyword: #f47067 !important;
+  --code-normal: #f0f3f6 !important;
+  --code-operator: #f47067 !important;
+  --code-property: #6cb6ff !important;
+  --code-punctuation: #8b949e !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #a5d6ff !important;
+  --code-tag: #f47067 !important;
+  --code-value: #d2a8ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #21262d !important;
+  --graph-node: #8b949e !important;
+  --graph-node-attachment: #d29922 !important;
+  --graph-node-focused: hsl(210, 100%, calc(72% - 3.8%)) !important;
+  --graph-node-tag: #7ee787 !important;
+  --graph-node-unresolved: #6e7681 !important;
+  --graph-text: #c9d1d9 !important;
 }
 
 .darkmode {

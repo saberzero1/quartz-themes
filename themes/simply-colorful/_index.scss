@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: #e7e7e7 !important;
+  --code-border-color: #dadada !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsla(258, 88%, 66%, 0.08) !important;
+  --code-comment: #aaaaaa !important;
+  --code-function: #b6b11c !important;
+  --code-important: #d57929 !important;
+  --code-keyword: #e0308d !important;
+  --code-normal: #222222 !important;
+  --code-operator: #e03035 !important;
+  --code-property: #18ada8 !important;
+  --code-punctuation: #4f4f4f !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #0fa50a !important;
+  --code-tag: #e03035 !important;
+  --code-value: #8330e0 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #c7c7c7 !important;
+  --graph-node: #4f4f4f !important;
+  --graph-node-attachment: #b6b11c !important;
+  --graph-node-focused: #7e55dd !important;
+  --graph-node-tag: #0fa50a !important;
+  --graph-node-unresolved: #aaaaaa !important;
+  --graph-text: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #222222 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsla(258, 88%, 66%, 0.08) !important;
+  --code-comment: #666666 !important;
+  --code-function: #cec92a !important;
+  --code-important: #e08330 !important;
+  --code-keyword: #e0308d !important;
+  --code-normal: #dadada !important;
+  --code-operator: #e03035 !important;
+  --code-property: #2dcec9 !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-radius: 8px !important;
+  --code-size: 0.875em !important;
+  --code-string: #32ce2d !important;
+  --code-tag: #e03035 !important;
+  --code-value: #9149e4 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #4c4c4c !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #cec92a !important;
+  --graph-node-focused: #8a5cf5 !important;
+  --graph-node-tag: #32ce2d !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #dadada !important;
 }
 
 html {

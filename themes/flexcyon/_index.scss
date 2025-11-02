@@ -6,8 +6,67 @@
 }
 
 :root:root {
+  --code-background: color-mix(in hsl, #faf7ef 70%, #edebe5 30%) !important;
+  --code-border-color: color-mix(in hsl, #edebe5, #dddcd6) !important;
+  --code-border-width: 0px !important;
+  --code-comment: #6f768599 !important;
+  --code-function: #e8c62a !important;
+  --code-important: #eb5325 !important;
+  --code-keyword: #3b9ba1 !important;
+  --code-normal: #080808 !important;
+  --code-operator: #5c9fe4 !important;
+  --code-property: #3b9ba1 !important;
+  --code-punctuation: rgba(rgb(235, 83, 37), 0.55) !important;
+  --code-radius: 2px !important;
+  --code-size: 0.875em !important;
+  --code-string: #689523 !important;
+  --code-tag: #797876 !important;
+  --code-value: #e8c62a !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #dddcd6 !important;
+  --graph-node: color-mix(in hsl, #6f768599, #080808) !important;
+  --graph-node-attachment: #e8c62a !important;
+  --graph-node-focused: #5770b9 !important;
+  --graph-node-tag: #6f49ae !important;
+  --graph-node-unresolved: #eb5325 !important;
+  --graph-text: #080808 !important;
+  --graph-control-horiz-padding: 12px !important;
+  --graph-control-verti-padding: 6px !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #14161c !important;
+  --code-border-color: color-mix(in hsl, #191d28, #24262c) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: color-mix(in hsl, #191d28, #24262c) !important;
+  --code-comment: #6f768599 !important;
+  --code-function: #c29e42 !important;
+  --code-important: #c03a47 !important;
+  --code-keyword: #3cb9c2 !important;
+  --code-normal: #d3d5d3 !important;
+  --code-operator: #5a8fcd !important;
+  --code-property: #3cb9c2 !important;
+  --code-punctuation: rgba(rgb(192, 58, 71), 0.55) !important;
+  --code-radius: 2px !important;
+  --code-size: 0.875em !important;
+  --code-string: #a1c05c !important;
+  --code-tag: #898c93 !important;
+  --code-value: #c29e42 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #24262c !important;
+  --graph-node: color-mix(in hsl, #6f768599, #d3d5d3) !important;
+  --graph-node-attachment: #c29e42 !important;
+  --graph-node-focused: hsl(
+    calc(105.5 - 3),
+    calc(77.5% * 1.02),
+    calc(59.5% * 1.15)
+  ) !important;
+  --graph-node-tag: #a461c8 !important;
+  --graph-node-unresolved: #c03a47 !important;
+  --graph-text: #d3d5d3 !important;
+  --graph-control-horiz-padding: 12px !important;
+  --graph-control-verti-padding: 6px !important;
 }
 
 html {

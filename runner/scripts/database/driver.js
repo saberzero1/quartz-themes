@@ -328,13 +328,18 @@ function getAllVariables(themeName, optionSetName, isDarkMode, selector) {
   `;
 
   const stmt = db.prepare(query);
-  const results = stmt.all(themeId, optionSetId, isDarkMode ? 1 : 0, selectorId);
-  
+  const results = stmt.all(
+    themeId,
+    optionSetId,
+    isDarkMode ? 1 : 0,
+    selectorId,
+  );
+
   const variables = {};
   for (const row of results) {
     variables[row.property_name] = row.value;
   }
-  
+
   return variables;
 }
 

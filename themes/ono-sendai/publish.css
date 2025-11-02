@@ -102,6 +102,72 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #e0ded2 !important;
+  --code-border-color: rgb(75, 110, 139) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #9c735c !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #2e3338 !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #694f3a !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #11683f !important;
+  --graph-node: #694f3a !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: #914a29 !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #9c735c !important;
+  --graph-text: #ff3333 !important;
+  --graph-attach: #77f581 !important;
+  --graph-circle: #0cd2ec !important;
+  --graph-bg: black !important;
+  --graph-menutext: #898b85 !important;
+}
+
+body.theme-dark {
+  --code-background: rgb(5, 5, 5) !important;
+  --code-border-color: rgb(0, 0, 0) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #666 !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #dcddde !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #898b85 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #0c496d !important;
+  --graph-node: #898b85 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #28b0ff !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #666 !important;
+  --graph-text: #ff3333 !important;
+  --graph-attach: #4cf15a !important;
+  --graph-circle: #ff2882 !important;
+  --graph-bg: black !important;
+  --graph-menutext: #898b85 !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

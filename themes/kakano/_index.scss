@@ -6,8 +6,124 @@
 }
 
 :root:root {
+  --code-background: light-dark(
+    hsl(from black h s l / 0.06),
+    hsl(from white h s l / 0.06)
+  ) !important;
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.25)
+  ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  --code-comment: light-dark(
+    hsl(from black h s l / 0.5),
+    hsl(from white h s l / 0.5)
+  ) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.9)
+  ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+    transparent 30%
+  ) !important;
+  --code-radius: 0.25rem !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), black calc(100% * 0.9)),
+    transparent 30%
+  ) !important;
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.7)
+  ) !important;
+  --graph-text: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.9)
+  ) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: light-dark(
+    hsl(from black h s l / 0.06),
+    hsl(from white h s l / 0.06)
+  ) !important;
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    black calc(100% * 0.25)
+  ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: hsl(215, 67%, 45%) !important;
+  --code-comment: light-dark(
+    hsl(from black h s l / 0.5),
+    hsl(from white h s l / 0.5)
+  ) !important;
+  --code-function: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --code-important: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
+  --code-keyword: hsl(from hsl(215, 67%, 45%) 331 s l) !important;
+  --code-normal: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.6)
+  ) !important;
+  --code-operator: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-property: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
+    transparent 30%
+  ) !important;
+  --code-radius: 0.25rem !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --code-tag: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
+  --code-value: hsl(from hsl(215, 67%, 45%) 253 s l) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: color-mix(
+    in srgb,
+    color-mix(in srgb, hsl(215, 67%, 45%), white calc(100% * 0.6)),
+    transparent 30%
+  ) !important;
+  --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.25)
+  ) !important;
+  --graph-text: color-mix(
+    in srgb,
+    hsl(215, 67%, 45%),
+    white calc(100% * 0.6)
+  ) !important;
 }
 
 html {

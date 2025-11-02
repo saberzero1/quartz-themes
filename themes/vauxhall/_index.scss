@@ -6,8 +6,128 @@
 }
 
 :root:root {
+  --code-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 90%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --code-function: #ffd85e !important;
+  --code-important: #fa9f50 !important;
+  --code-keyword: #e54f9b !important;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
+  --code-operator: #e3365e !important;
+  --code-property: #3bb2ce !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #47cc91 !important;
+  --code-tag: #e3365e !important;
+  --code-value: #9446f8 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 95%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --graph-node: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 30%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --graph-node-attachment: #ffd85e !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: #47cc91 !important;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(238, 60%, 95%) 60%,
+    hsl(255, 100%, 50%)
+  ) !important;
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 80%,
+    #000
+  ) !important;
+  --code-border-color: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 90%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --code-comment: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --code-function: #ffd85e !important;
+  --code-important: #fa9f50 !important;
+  --code-keyword: #e54f9b !important;
+  --code-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
+  --code-operator: #e3365e !important;
+  --code-property: #43cfea !important;
+  --code-punctuation: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #52eea3 !important;
+  --code-tag: #e3365e !important;
+  --code-value: #9446f8 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 95%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --graph-node: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 30%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --graph-node-attachment: #ffd85e !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: #52eea3 !important;
+  --graph-node-unresolved: color-mix(
+    in srgb,
+    hsl(238, 60%, 11%) 60%,
+    hsl(255, 100%, 80%)
+  ) !important;
+  --graph-text: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
 }
 
 html {

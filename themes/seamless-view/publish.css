@@ -155,6 +155,39 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: #363636 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #666666 !important;
+  --code-function: hsl(207, 82%, 70%) !important;
+  --code-important: #e9973f !important;
+  --code-keyword: hsl(286, 60%, 67%) !important;
+  --code-normal: #dadada !important;
+  --code-operator: hsl(187, 47%, 55%) !important;
+  --code-property: hsl(355, 65%, 70%) !important;
+  --code-punctuation: hsl(29, 54%, 61%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(95, 38%, 62%) !important;
+  --code-tag: hsl(355, 65%, 70%) !important;
+  --code-value: hsl(29, 54%, 61%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: hsl(50, 65%, 70%) !important;
+  --graph-node-focused: hsl(
+    calc(85 - 3),
+    calc(45% * 1.02),
+    calc(40% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #dadada !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

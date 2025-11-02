@@ -58,6 +58,36 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: hsla(50, 14%, 67%, 0.2) !important;
+  --code-border-color: hsl(50, 13%, 83%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: hsl(50, 13%, 73%) !important;
+  --code-function: hsl(27, 82%, 57%) !important;
+  --code-important: hsl(27, 82%, 57%) !important;
+  --code-keyword: hsl(346, 65%, 44%) !important;
+  --code-normal: hsl(27, 82%, 57%) !important;
+  --code-operator: hsl(346, 65%, 44%) !important;
+  --code-property: hsl(199, 42%, 45%) !important;
+  --code-punctuation: hsl(50, 13%, 45%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.8em !important;
+  --code-string: hsl(80, 45%, 45%) !important;
+  --code-tag: hsl(346, 65%, 44%) !important;
+  --code-value: hsl(307, 39%, 34%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(50, 13%, 73%) !important;
+  --graph-node: hsl(50, 13%, 45%) !important;
+  --graph-node-attachment: hsl(39, 97%, 62%) !important;
+  --graph-node-focused: hsl(80, 45%, 45%) !important;
+  --graph-node-tag: hsl(80, 45%, 45%) !important;
+  --graph-node-unresolved: hsl(50, 13%, 73%) !important;
+  --graph-text: hsl(50, 13%, 18%) !important;
+  --code-block-background-color: hsla(50, 14%, 67%, 0.2) !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

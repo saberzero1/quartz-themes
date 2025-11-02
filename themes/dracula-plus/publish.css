@@ -71,6 +71,36 @@
     local("Monaco"),
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
+body.theme-dark {
+  --code-background: #1d1c39 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #ffffff13 !important;
+  --code-comment: #bd93f9 !important;
+  --code-function: #e9e90c !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #ff22b1 !important;
+  --code-normal: #f8f8f2 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #00ffff !important;
+  --code-punctuation: #f8f8f2 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #f8f8f2 !important;
+  --graph-node-attachment: #e9e90c !important;
+  --graph-node-focused: #ffb86c !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #bd93f9 !important;
+  --graph-text: #f8f8f2 !important;
+  --code-block: #8be9fd !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

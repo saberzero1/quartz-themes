@@ -6,6 +6,34 @@
 }
 
 :root:root {
+  --code-background: #282a36 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: #6272a4 !important;
+  --code-function: #ff80bf !important;
+  --code-important: #ff80bf !important;
+  --code-keyword: #9580ff !important;
+  --code-normal: #f8f8f2 !important;
+  --code-operator: #ff80bf !important;
+  --code-property: #80ffea !important;
+  --code-punctuation: #6e6b7e !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #ffff80 !important;
+  --code-tag: #ff80bf !important;
+  --code-value: #8aff80 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(196, 27%, 41%) !important;
+  --graph-node: #6e6b7e !important;
+  --graph-node-attachment: #6e6b7e !important;
+  --graph-node-focused: hsl(317, 62%, 65%) !important;
+  --graph-node-tag: hsl(151, 72%, 65%) !important;
+  --graph-node-unresolved: #6c6498 !important;
+  --graph-text: hsl(224, 26%, 70%) !important;
+  --graph-controls-settings-name: hsl(192, 46%, 62%) !important;
+  --graph-node-resolved: hsl(58, 86%, 66%) !important;
 }
 
 .darkmode {

@@ -100,6 +100,66 @@
     url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
       format("woff");
 }
+body.theme-light {
+  --code-background: rgba(226, 224, 220, 0.5) !important;
+  --code-border-color: rgb(226, 224, 220) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(142, 140, 139, 0.12) !important;
+  --code-comment: rgb(169, 168, 165) !important;
+  --code-function: hsl(24.4deg, 90.8%, 61.8%) !important;
+  --code-important: hsl(268deg, 57%, 66%) !important;
+  --code-keyword: hsl(348.5deg, 79.3%, 63.9%) !important;
+  --code-normal: rgb(84, 81, 81) !important;
+  --code-operator: #e93147 !important;
+  --code-property: hsl(187.4deg, 22.4%, 50%) !important;
+  --code-punctuation: rgb(84, 81, 81) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(114.6deg, 22.4%, 49%) !important;
+  --code-tag: hsl(9.6deg, 66.2%, 46.5%) !important;
+  --code-value: hsl(268deg, 57%, 66%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(226, 224, 220) !important;
+  --graph-node: rgb(84, 81, 81) !important;
+  --graph-node-attachment: hsl(40.2deg, 87.2%, 63.1%) !important;
+  --graph-node-focused: rgb(246, 141, 69) !important;
+  --graph-node-tag: hsl(9.6deg, 66.2%, 46.5%) !important;
+  --graph-node-unresolved: rgb(169, 168, 165) !important;
+  --graph-text: rgb(22, 22, 22) !important;
+  --code-normal-inline: hsl(348.5deg, 79.3%, 63.9%) !important;
+}
+
+body.theme-dark {
+  --code-background: rgb(38, 38, 37) !important;
+  --code-border-color: rgb(58, 56, 56) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(142, 140, 139, 0.16) !important;
+  --code-comment: rgb(112, 110, 109) !important;
+  --code-function: hsl(30.2deg, 98.6%, 72%) !important;
+  --code-important: hsl(268deg, 57%, 66%) !important;
+  --code-keyword: hsl(348.5deg, 79.3%, 63.9%) !important;
+  --code-normal: rgb(199, 197, 194) !important;
+  --code-operator: #fb464c !important;
+  --code-property: hsl(187.4deg, 22.4%, 50%) !important;
+  --code-punctuation: rgb(199, 197, 194) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(96.9deg, 31.8%, 56.9%) !important;
+  --code-tag: hsl(11.2deg, 88.7%, 58.4%) !important;
+  --code-value: hsl(268deg, 57%, 66%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(58, 56, 56) !important;
+  --graph-node: rgb(199, 197, 194) !important;
+  --graph-node-attachment: hsl(40.2deg, 87.2%, 63.1%) !important;
+  --graph-node-focused: rgb(102, 153, 97) !important;
+  --graph-node-tag: hsl(9.6deg, 66.2%, 46.5%) !important;
+  --graph-node-unresolved: rgb(112, 110, 109) !important;
+  --graph-text: rgb(244, 244, 240) !important;
+  --code-normal-inline: hsl(348.5deg, 79.3%, 63.9%) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

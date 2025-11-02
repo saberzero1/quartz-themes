@@ -63,6 +63,64 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: rgba(192, 208, 223, 0.35) !important;
+  --code-border-color: rgb(192, 208, 223) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgb(192, 208, 223) !important;
+  --code-comment: rgb(150, 156, 189) !important;
+  --code-function: rgb(14, 191, 255) !important;
+  --code-important: rgb(255, 32, 144) !important;
+  --code-keyword: rgb(59, 62, 72) !important;
+  --code-normal: rgb(59, 62, 72) !important;
+  --code-operator: rgb(14, 191, 255) !important;
+  --code-property: rgb(14, 191, 255) !important;
+  --code-punctuation: rgb(59, 62, 72) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(1, 218, 178) !important;
+  --code-tag: rgb(1, 218, 178) !important;
+  --code-value: rgb(1, 218, 178) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(192, 208, 223) !important;
+  --graph-node: rgb(59, 62, 72) !important;
+  --graph-node-attachment: rgb(14, 191, 255) !important;
+  --graph-node-focused: rgb(14, 191, 255) !important;
+  --graph-node-tag: rgb(255, 212, 103) !important;
+  --graph-node-unresolved: rgb(192, 208, 223) !important;
+  --graph-text: rgb(59, 62, 72) !important;
+}
+
+body.theme-dark {
+  --code-background: rgb(32, 36, 48) !important;
+  --code-border-color: rgb(33, 36, 47) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgb(33, 36, 47) !important;
+  --code-comment: rgb(118, 124, 157) !important;
+  --code-function: rgb(173, 215, 255) !important;
+  --code-important: rgb(208, 103, 157) !important;
+  --code-keyword: rgb(166, 172, 205) !important;
+  --code-normal: rgb(166, 172, 205) !important;
+  --code-operator: rgb(173, 215, 255) !important;
+  --code-property: rgb(173, 215, 255) !important;
+  --code-punctuation: rgb(166, 172, 205) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(93, 228, 199) !important;
+  --code-tag: rgb(93, 228, 199) !important;
+  --code-value: rgb(93, 228, 199) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(118, 124, 157) !important;
+  --graph-node: rgb(166, 172, 205) !important;
+  --graph-node-attachment: rgb(173, 215, 255) !important;
+  --graph-node-focused: rgb(173, 215, 255) !important;
+  --graph-node-tag: rgb(255, 250, 194) !important;
+  --graph-node-unresolved: rgb(118, 124, 157) !important;
+  --graph-text: rgb(166, 172, 205) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

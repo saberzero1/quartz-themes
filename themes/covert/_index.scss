@@ -6,6 +6,32 @@
 }
 
 :root:root {
+  --code-background: rgb(33, 34, 36) !important;
+  --code-border-color: rgb(45, 45, 46) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: rgb(97, 96, 96) !important;
+  --code-function: rgb(235, 203, 139) !important;
+  --code-important: rgb(208, 135, 112) !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: rgb(97, 96, 96) !important;
+  --code-operator: rgb(97, 96, 96) !important;
+  --code-property: rgb(97, 96, 96) !important;
+  --code-punctuation: rgb(97, 96, 96) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(163, 190, 140) !important;
+  --code-tag: rgb(97, 96, 96) !important;
+  --code-value: rgb(180, 142, 173) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(76, 86, 106) !important;
+  --graph-node: rgb(97, 96, 96) !important;
+  --graph-node-attachment: rgb(163, 190, 140) !important;
+  --graph-node-focused: rgb(208, 135, 112) !important;
+  --graph-node-tag: rgb(97, 96, 96) !important;
+  --graph-node-unresolved: rgb(97, 96, 96) !important;
+  --graph-text: rgb(97, 96, 96) !important;
 }
 
 .darkmode {

@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: hsla(89, 58%, 95%, 1) !important;
+  --code-border-color: #a32d7f36 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #a32d7f52 !important;
+  --code-comment: #412438cd !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #412438cd !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #412438cd !important;
+  --code-radius: 5px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #c8a2c85f !important;
+  --graph-node: #c8a2c8 !important;
+  --graph-node-attachment: #412438 !important;
+  --graph-node-focused: #d560b1 !important;
+  --graph-node-tag: #c8d89bdb !important;
+  --graph-node-unresolved: #412438cd !important;
+  --graph-text: #30222b !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #211f23 !important;
+  --code-border-color: #a32d7f36 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #a32d7f52 !important;
+  --code-comment: #e499e4a2 !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #e499e4a2 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #e499e4a2 !important;
+  --code-radius: 5px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #a540a55f !important;
+  --graph-node: #d8bcd8 !important;
+  --graph-node-attachment: #d6d89b !important;
+  --graph-node-focused: #d560b1 !important;
+  --graph-node-tag: #c8d89bdb !important;
+  --graph-node-unresolved: #e499e4a2 !important;
+  --graph-text: #d8bcd8 !important;
 }
 
 html {

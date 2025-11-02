@@ -12330,6 +12330,64 @@
   content: "\f5cc";
 }
 
+body.theme-light {
+  --code-background: oklch(0.97 0 0) !important;
+  --code-border-color: oklch(0.8 0 0) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: oklch(0.6 0 0) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: oklch(0 0 0) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: oklch(0.3 0 0) !important;
+  --code-radius: calc(6px * 0.5) !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: oklch(0.8 0 0) !important;
+  --graph-node: oklch(0.3 0 0) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: oklch(40.14% 0.0638 202.51deg) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: oklch(0.6 0 0) !important;
+  --graph-text: oklch(0 0 0) !important;
+}
+
+body.theme-dark {
+  --code-background: oklch(0.18 0 0) !important;
+  --code-border-color: oklch(0.3 0 0) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: oklch(0.48 0 0) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: oklch(0.98 0 0) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: oklch(0.68 0 0) !important;
+  --code-radius: calc(6px * 0.5) !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: oklch(0.3 0 0) !important;
+  --graph-node: oklch(0.68 0 0) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: oklch(70.7% 0.1737 155.3deg) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: oklch(0.48 0 0) !important;
+  --graph-text: oklch(0.98 0 0) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

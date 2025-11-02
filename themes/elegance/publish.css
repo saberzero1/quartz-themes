@@ -6,6 +6,64 @@
     local("Monaco"),
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
+body.theme-light {
+  --code-background: rgb(230, 229, 224) !important;
+  --code-border-color: rgb(67, 67, 67) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: rgb(227, 0, 106) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: rgb(6, 6, 6) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: rgb(0, 0, 0) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: rgb(0, 0, 0) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: rgb(235, 118, 0) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: rgb(227, 0, 106) !important;
+  --graph-text: rgb(6, 6, 6) !important;
+}
+
+body.theme-dark {
+  --code-background: rgb(73, 76, 95) !important;
+  --code-border-color: rgb(102, 102, 102) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: rgb(255, 62, 151) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: white !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: rgb(255, 255, 255) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: rgb(255, 255, 255) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: rgb(248, 173, 93) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: rgb(255, 62, 151) !important;
+  --graph-text: white !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

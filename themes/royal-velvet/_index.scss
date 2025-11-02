@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: hsl(235, 15%, 99%) !important;
+  --code-border-color: transparent !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: hsla(234, 14%, 15%, 0.6) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(310, 100%, 43%) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: hsla(234, 14%, 15%, 0.6) !important;
+  --code-radius: 4px !important;
+  --code-size: 1em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: hsla(234, 14%, 15%, 0.6) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(330, 100%, 43%) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: hsla(234, 14%, 15%, 0.6) !important;
+  --graph-text: hsl(234, 14%, 15%) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(235, 15%, 13%) !important;
+  --code-border-color: transparent !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: hsla(60, 30%, 96%, 0.6) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: hsl(285, 100%, 75.1%) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: hsla(60, 30%, 96%, 0.6) !important;
+  --code-radius: 4px !important;
+  --code-size: 1em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: hsla(60, 30%, 96%, 0.6) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(330, 100%, 75.1%) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: hsla(60, 30%, 96%, 0.6) !important;
+  --graph-text: hsl(60, 30%, 96%) !important;
 }
 
 html {

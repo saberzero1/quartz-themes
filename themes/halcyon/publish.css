@@ -155,6 +155,35 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: #171c28 !important;
+  --code-border-color: color-mix(in hsl, #1d2433, #2f3b54) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #2f3b54 !important;
+  --code-comment: #8695b799 !important;
+  --code-function: #ffd580 !important;
+  --code-important: #ef6b73 !important;
+  --code-keyword: #c3a6ff !important;
+  --code-normal: #5ccfe6 !important;
+  --code-operator: #ffae57 !important;
+  --code-property: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --code-punctuation: #c3a6ff !important;
+  --code-radius: 2px !important;
+  --code-size: 0.875em !important;
+  --code-string: #bae67e !important;
+  --code-tag: #a2aabc !important;
+  --code-value: #c3a6ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #2f3b54 !important;
+  --graph-node: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --graph-node-attachment: #ffd580 !important;
+  --graph-node-focused: #ffcc66 !important;
+  --graph-node-tag: #c3a6ff !important;
+  --graph-node-unresolved: #ef6b73 !important;
+  --graph-text: #d7dce2 !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

@@ -63,6 +63,70 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: hsl(204, 6%, calc(17% + 100%)) !important;
+  --code-border-color: hsl(204, 6%, calc(17% + 70%)) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: hsl(204, 6%, calc(17% + 40%)) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(204, 6%, 17%) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: hsl(204, 6%, calc(17% + 30%)) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(204, 6%, calc(17% + 65%)) !important;
+  --graph-node: hsl(204, 6%, calc(17% + 30%)) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(2, 56%, 54%) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: hsl(204, 6%, calc(17% + 40%)) !important;
+  --graph-text: hsl(204, 6%, 17%) !important;
+  --code-block-border-color: hsl(204, 6%, calc(17% + 60%)) !important;
+  --code-block-border-style: solid !important;
+  --code-block-border-width: 1px !important;
+}
+
+body.theme-dark {
+  --code-background: hsl(222, 22%, 15%) !important;
+  --code-border-color: hsl(222, 22%, 15%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: hsl(222, 22%, calc(15% + 60%)) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: hsl(222, 22%, calc(15% + 80%)) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: hsl(222, 22%, calc(15% + 70%)) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(222, 22%, calc(15% - 65%)) !important;
+  --graph-node: hsl(222, 22%, calc(15% + 70%)) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(41, 88%, 71%) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: hsl(222, 22%, calc(15% + 60%)) !important;
+  --graph-text: hsl(222, 22%, calc(15% + 80%)) !important;
+  --code-block-border-color: hsl(222, 22%, calc(15% - 5%)) !important;
+  --code-block-border-style: solid !important;
+  --code-block-border-width: 1px !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

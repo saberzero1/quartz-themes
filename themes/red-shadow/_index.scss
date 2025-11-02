@@ -6,6 +6,35 @@
 }
 
 :root:root {
+  --code-background: #121212 !important;
+  --code-border-color: rgba(247, 14, 14, 0.05) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #bebebe !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #e0e0e0 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #b22222 !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #bebebe !important;
+  --graph-text: #e0e0e0 !important;
+  --code-mono-font:
+    "Fira Code", "Operator Mono", "JetBrains Mono", "Source Code Pro",
+    "OperatorMonoSSmLig-Book", monospace !important;
 }
 
 .darkmode {

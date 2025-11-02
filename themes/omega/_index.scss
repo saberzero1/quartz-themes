@@ -6,6 +6,40 @@
 }
 
 :root:root {
+  --code-background: color-mix(
+    in srgb,
+    rgb(0, 53, 107) 30%,
+    transparent
+  ) !important;
+  --code-border-color: rgb(245, 245, 245) !important;
+  --code-border-width: 2px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: rgb(219, 215, 210) !important;
+  --code-function: rgb(0, 127, 255) !important;
+  --code-important: rgb(228, 77, 46) !important;
+  --code-keyword: rgb(237, 41, 57) !important;
+  --code-normal: rgb(245, 245, 245) !important;
+  --code-operator: rgb(255, 239, 0) !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: rgb(237, 41, 57) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(11, 218, 81) !important;
+  --code-tag: #fb464c !important;
+  --code-value: rgb(128, 0, 255) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: rgb(245, 245, 245) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: rgb(245, 245, 245) !important;
+  --graph-text: rgb(245, 245, 245) !important;
 }
 
 .darkmode {

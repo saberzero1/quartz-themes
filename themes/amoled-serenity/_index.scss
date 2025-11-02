@@ -6,6 +6,36 @@
 }
 
 :root:root {
+  --code-background: #0e0e0e !important;
+  --code-border-color: #333333 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #666666 !important;
+  --code-function: rgb(235, 203, 139) !important;
+  --code-important: rgb(208, 135, 112) !important;
+  --code-keyword: rgb(180, 142, 173) !important;
+  --code-normal: #dddddd !important;
+  --code-operator: #fb464c !important;
+  --code-property: rgb(143, 188, 187) !important;
+  --code-punctuation: #999999 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(163, 190, 140) !important;
+  --code-tag: rgb(191, 97, 106) !important;
+  --code-value: rgb(180, 142, 173) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #363636 !important;
+  --graph-node: #bbbbbb !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #ffffff !important;
 }
 
 .darkmode {

@@ -79,6 +79,64 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: hsl(270, 10%, 75%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
+  --code-comment: hsl(270, 10%, 17.5%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 8%, 35%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 20%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 20%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 10%, 17.5%) !important;
+  --graph-text: hsl(270, 8%, 35%) !important;
+}
+
+body.theme-dark {
+  --code-background: hsl(270, 10%, 17.5%) !important;
+  --code-border-color: hsl(37, 100%, 50%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
+  --code-comment: hsl(270, 13%, 65%) !important;
+  --code-function: hsl(37, 100%, 50%) !important;
+  --code-important: hsl(25, 85%, 50%) !important;
+  --code-keyword: hsl(330, 85%, 47.2%) !important;
+  --code-normal: hsl(270, 10%, 75%) !important;
+  --code-operator: hsl(340, 85%, 48.3%) !important;
+  --code-property: hsla(175, 100%, 50%) !important;
+  --code-punctuation: hsl(270, 10%, 72.5%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsla(100, 90%, 33.5%) !important;
+  --code-tag: hsl(340, 85%, 48.3%) !important;
+  --code-value: hsl(270, 65%, 58.8%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(37, 100%, 40%) !important;
+  --graph-node: hsl(270, 10%, 72.5%) !important;
+  --graph-node-attachment: hsl(25, 85%, 50%) !important;
+  --graph-node-focused: hsl(37, 100%, 50%) !important;
+  --graph-node-tag: hsla(100, 90%, 33.5%) !important;
+  --graph-node-unresolved: hsl(270, 13%, 65%) !important;
+  --graph-text: hsl(270, 10%, 75%) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

@@ -6,8 +6,64 @@
 }
 
 :root:root {
+  --code-background: rgb(238, 230, 225) !important;
+  --code-border-color: transparent !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #8a7e76 !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #eb5757 !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #554d47 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #b6a79d !important;
+  --graph-node: #554d47 !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(12, 31%, 60%) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #8a7e76 !important;
+  --graph-text: #3a3330 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(215, 18%, 19%) !important;
+  --code-border-color: transparent !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #5a616a !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #ff7b72 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #8d949d !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #404650 !important;
+  --graph-node: #8d949d !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(30 - 3),
+    calc(40% * 1.02),
+    calc(65% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #5a616a !important;
+  --graph-text: #e3e7eb !important;
 }
 
 html {

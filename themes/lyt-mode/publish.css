@@ -108,6 +108,39 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: hsl(231, 9%, 15%) !important;
+  --code-border-color: rgba(100, 100, 100, 0.25) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: transparent !important;
+  --code-comment: hsl(225, 17%, 84%) !important;
+  --code-function: hsl(334, 37%, 65%) !important;
+  --code-important: hsl(220, 23%, 90%) !important;
+  --code-keyword: hsl(263, 37%, 69%) !important;
+  --code-normal: hsl(224, 37%, 80%) !important;
+  --code-operator: #fb464c !important;
+  --code-property: hsl(61, 46%, 69%) !important;
+  --code-punctuation: hsl(225, 14%, 40%) !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(124, 54%, 75%) !important;
+  --code-tag: hsl(334, 37%, 65%) !important;
+  --code-value: hsl(183, 29%, 62%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(196, 27%, 41%) !important;
+  --graph-node: hsl(58, 86%, 66%) !important;
+  --graph-node-attachment: hsl(220, 23%, 90%) !important;
+  --graph-node-focused: hsl(225, 14%, 55%) !important;
+  --graph-node-tag: hsl(194, 50%, 47%) !important;
+  --graph-node-unresolved: hsl(263, 46%, 61%) !important;
+  --graph-text: hsl(225, 17%, 88%) !important;
+  --graph-color-line: hsl(196, 27%, 41%) !important;
+  --graph-color-line-hover: hsl(224, 17%, 68%) !important;
+  --graph-color-node-border-hover: hsl(220, 23%, 95%) !important;
+  --graph-color-node-hover: hsl(317, 62%, 65%) !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

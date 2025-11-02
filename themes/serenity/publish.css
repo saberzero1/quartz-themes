@@ -83,6 +83,88 @@
     url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff")
       format("woff");
 }
+body.theme-light {
+  --code-background: hsl(0, 0%, calc(calc(100% + 3.2%) - 6%)) !important;
+  --code-border-color: hsl(0, calc(0% + 5%), 85%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.05) !important;
+  --code-comment: hsl(0, 0%, calc(15% + 20%)) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(0, 0%, calc(15% + 5%)) !important;
+  --code-operator: #f45757 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: hsl(0, 0%, calc(15% + 12%)) !important;
+  --code-radius: 5px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #f45757 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(0, calc(0% + 5%), 50%, 0.28) !important;
+  --graph-node: hsl(
+    calc(228 + 10),
+    calc(70% + 10%),
+    calc(66% + 10%)
+  ) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(
+    calc(228 + 0),
+    calc(70% + 15%),
+    calc(66% + 15%)
+  ) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: hsl(
+    calc(228 + 20),
+    calc(70% + 10%),
+    calc(66% + 5%)
+  ) !important;
+  --graph-text: hsl(0, 0%, calc(15% + 5%)) !important;
+}
+
+body.theme-dark {
+  --code-background: hsl(0, 0%, calc(calc(15% - 10%) + 5%)) !important;
+  --code-border-color: hsl(0, 0%, calc(calc(15% - 10%) + 19%)) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: hsl(0, 0%, calc(calc(15% - 10%) + 60%)) !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: hsl(0, 0%, calc(calc(15% - 10%) + 68%)) !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: hsl(0, 0%, calc(calc(15% - 10%) + 60%)) !important;
+  --code-radius: 5px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(0, 0%, calc(calc(15% - 10%) + 19%)) !important;
+  --graph-node: hsl(
+    calc(238 + 10),
+    calc(100% - 10%),
+    calc(70% + 5%)
+  ) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(238 + 0),
+    calc(100% - 15%),
+    calc(70% - 2%)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: hsl(
+    calc(238 + 20),
+    calc(100% - 10%),
+    calc(70% + 3%)
+  ) !important;
+  --graph-text: hsl(0, 0%, calc(calc(15% - 10%) + 68%)) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

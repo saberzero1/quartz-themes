@@ -155,6 +155,74 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #fffaf3 !important;
+  --code-border-color: #dfdad9 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #f2e9e1 !important;
+  --code-comment: #9893a5 !important;
+  --code-function: #ea9d34 !important;
+  --code-important: #ea9d34 !important;
+  --code-keyword: #286983 !important;
+  --code-normal: #575279 !important;
+  --code-operator: #286983 !important;
+  --code-property: #56949f !important;
+  --code-punctuation: #575279 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #ea9d34 !important;
+  --code-tag: #b4637a !important;
+  --code-value: #d7827e !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #cecacd !important;
+  --graph-node: hsl(3, 53%, 67%) !important;
+  --graph-node-attachment: #286983 !important;
+  --graph-node-focused: #907aa9 !important;
+  --graph-node-tag: #d7827e !important;
+  --graph-node-unresolved: #dfdad9 !important;
+  --graph-text: #575279 !important;
+  --code-builtin: #b4637a !important;
+  --code-definition: #d7827e !important;
+  --code-variable: #575279 !important;
+  --code-boolean: #d7827e !important;
+  --code-parentheses: #797593 !important;
+}
+
+body.theme-dark {
+  --code-background: #3b4252 !important;
+  --code-border-color: #434c5e !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #4c566a !important;
+  --code-comment: #616e88 !important;
+  --code-function: #ebcb8b !important;
+  --code-important: #ebcb8b !important;
+  --code-keyword: #81a1c1 !important;
+  --code-normal: #d8dee9 !important;
+  --code-operator: #81a1c1 !important;
+  --code-property: #88c0d0 !important;
+  --code-punctuation: #d8dee9 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #a3be8c !important;
+  --code-tag: #bf616a !important;
+  --code-value: #b48ead !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #4c566a !important;
+  --graph-node: hsl(210, 34%, 63%) !important;
+  --graph-node-attachment: #81a1c1 !important;
+  --graph-node-focused: #88c0d0 !important;
+  --graph-node-tag: #8fbcbb !important;
+  --graph-node-unresolved: #434c5e !important;
+  --graph-text: #d8dee9 !important;
+  --code-builtin: #88c0d0 !important;
+  --code-definition: #88c0d0 !important;
+  --code-variable: #d8dee9 !important;
+  --code-boolean: #81a1c1 !important;
+  --code-parentheses: #8fbcbb !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

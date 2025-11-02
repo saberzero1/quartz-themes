@@ -15,6 +15,70 @@
     local("Cascadia Code"),
     url("https://fonts.cdnfonts.com/s/29131/Cascadia.woff") format("woff");
 }
+body.theme-light {
+  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
+  --code-border-color: hsl(258, calc(88% / 3), 75%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(
+    from hsl(258, 88%, 66%) r g b / 0.2
+  ) !important;
+  --code-comment: hsl(258, calc(88% / 3), 65%) !important;
+  --code-function: hsl(50, 88%, 66%) !important;
+  --code-important: hsl(25, 88%, 66%) !important;
+  --code-keyword: hsl(320, 88%, 66%) !important;
+  --code-normal: hsl(258, 88%, 66%) !important;
+  --code-operator: hsl(5, 88%, 66%) !important;
+  --code-property: hsl(185, 88%, 66%) !important;
+  --code-punctuation: hsl(258, calc(88% / 3), 60%) !important;
+  --code-radius: 4px !important;
+  --code-string: hsl(100, 88%, 66%) !important;
+  --code-tag: hsl(5, 88%, 66%) !important;
+  --code-value: hsl(270, 88%, 66%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(258, calc(88% / 3), 70%) !important;
+  --graph-node: hsl(5, 88%, 66%) !important;
+  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-tag: hsl(50, 88%, 66%) !important;
+  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-text: hsl(258, calc(88% / 3), 20%) !important;
+}
+
+body.theme-dark {
+  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
+  --code-border-color: hsl(258, calc(88% / 3), 35%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(
+    from hsl(258, 88%, 66%) r g b / 0.2
+  ) !important;
+  --code-comment: hsl(258, calc(88% / 3), 45%) !important;
+  --code-function: hsl(50, 88%, 66%) !important;
+  --code-important: hsl(25, 88%, 66%) !important;
+  --code-keyword: hsl(320, 88%, 66%) !important;
+  --code-normal: hsl(258, 88%, 66%) !important;
+  --code-operator: hsl(5, 88%, 66%) !important;
+  --code-property: hsl(185, 88%, 66%) !important;
+  --code-punctuation: hsl(258, calc(88% / 3), 50%) !important;
+  --code-radius: 4px !important;
+  --code-string: hsl(100, 88%, 66%) !important;
+  --code-tag: hsl(5, 88%, 66%) !important;
+  --code-value: hsl(270, 88%, 66%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(258, calc(88% / 3), 40%) !important;
+  --graph-node: hsl(5, 88%, 66%) !important;
+  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-node-focused: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  ) !important;
+  --graph-node-tag: hsl(50, 88%, 66%) !important;
+  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-text: hsl(258, calc(88% / 3), 80%) !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));

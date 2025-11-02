@@ -87,6 +87,36 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
+  --code-border-color: transparent !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #a1f98f24 !important;
+  --code-comment: #4f4e4e !important;
+  --code-function: #8cd30c !important;
+  --code-important: #b62b2b !important;
+  --code-keyword: #b62b2b !important;
+  --code-normal: #b3b3b3 !important;
+  --code-operator: #7d00b6 !important;
+  --code-property: #2bb668 !important;
+  --code-punctuation: #b62b2b !important;
+  --code-radius: 4px !important;
+  --code-size: 0.8em !important;
+  --code-string: #a7b2b !important;
+  --code-tag: #fb464c !important;
+  --code-value: #957425 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #36a372 !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #b2b2b8 !important;
+  --graph-text: #c7c7c7 !important;
+  --code-border: 1px dashed #4e4f4e42 !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

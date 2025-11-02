@@ -42,6 +42,40 @@
     local("Monaco"),
     url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
+body.theme-dark {
+  --code-background: rgba(0, 0, 0, 0.08) !important;
+  --code-border-color: #6f6f6f !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #6f6f6f !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #fffdf9 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #6f6f6f !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #6f6f6f !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #3daddb !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #6f6f6f !important;
+  --graph-text: #fffdf9 !important;
+  --code-block: #6f6f6f !important;
+  --graph-line-color: #4c535a !important;
+  --graph-line-on-hover: #6f6f6f !important;
+  --graph-node-color: #6f6f6f !important;
+  --graph-note-name: #fffdf9 !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

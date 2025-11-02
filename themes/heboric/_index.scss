@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: #f6f6f6 !important;
+  --code-border-color: #e0e0e0 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #bdbdbd !important;
+  --code-function: hsl(0, 50%, 55%) !important;
+  --code-important: hsl(0, 50%, 55%) !important;
+  --code-keyword: hsl(29, 57%, 55%) !important;
+  --code-normal: #444444 !important;
+  --code-operator: #727272 !important;
+  --code-property: hsl(197, 53%, 55%) !important;
+  --code-punctuation: #bdbdbd !important;
+  --code-radius: 3px !important;
+  --code-size: 0.8rem !important;
+  --code-string: hsl(93, 30%, 65%) !important;
+  --code-tag: hsl(0, 50%, 60%) !important;
+  --code-value: hsl(29, 50%, 55%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #555555 !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: rgb(200, 100, 100) !important;
+  --graph-node-tag: rgb(200, 100, 100) !important;
+  --graph-node-unresolved: rgb(220, 120, 120) !important;
+  --graph-text: #555555 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(221, 8%, 19%) !important;
+  --code-border-color: hsl(221, 8%, 35%) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: hsl(221, 8%, 35%) !important;
+  --code-function: hsl(0, 50%, 60%) !important;
+  --code-important: hsl(0, 50%, 60%) !important;
+  --code-keyword: hsl(29, 57%, 60%) !important;
+  --code-normal: hsl(221, 8%, 85%) !important;
+  --code-operator: hsl(221, 8%, 65%) !important;
+  --code-property: hsl(197, 53%, 65%) !important;
+  --code-punctuation: hsl(221, 8%, 55%) !important;
+  --code-radius: 3px !important;
+  --code-size: 0.8rem !important;
+  --code-string: hsl(93, 44%, 63%) !important;
+  --code-tag: hsl(0, 50%, 65%) !important;
+  --code-value: hsl(29, 50%, 60%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(221, 8%, 40%) !important;
+  --graph-node: hsl(221, 8%, 75%) !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: rgb(200, 100, 100) !important;
+  --graph-node-tag: rgb(200, 100, 100) !important;
+  --graph-node-unresolved: rgb(220, 120, 120) !important;
+  --graph-text: hsl(221, 8%, 75%) !important;
 }
 
 html {

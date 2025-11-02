@@ -6,8 +6,72 @@
 }
 
 :root:root {
+  --code-background: hsl(0, 0%, 100%) !important;
+  --code-border-color: hsl(0, 0%, 69%) !important;
+  --code-border-width: 1px !important;
+  --code-bracket-background: hsla(251, 87%, 94%, 90%) !important;
+  --code-comment: hsl(0, 0%, 47%) !important;
+  --code-function: hsl(38, 62%, 37%) !important;
+  --code-important: hsl(31, 100%, 36%) !important;
+  --code-keyword: hsl(320, 60%, 50%) !important;
+  --code-normal: hsl(0, 0%, 15%) !important;
+  --code-operator: hsl(3, 68%, 52%) !important;
+  --code-property: hsl(184, 100%, 28%) !important;
+  --code-punctuation: hsl(0, 0%, 20%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(93, 100%, 27%) !important;
+  --code-tag: hsl(3, 68%, 52%) !important;
+  --code-value: hsl(258, 75%, 63%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 150px !important;
+  --graph-line: hsl(0, 0%, 69%) !important;
+  --graph-node: hsl(0, 0%, 73%) !important;
+  --graph-node-attachment: hsl(44, 67%, 58%) !important;
+  --graph-node-focused: hsl(252, 84%, 83%) !important;
+  --graph-node-tag: hsl(219, 73%, 78%) !important;
+  --graph-node-unresolved: hsl(7, 82%, 78%) !important;
+  --graph-text: hsl(0, 0%, 15%) !important;
+  --graph-attachment-color-lt: hsl(44, 67%, 58%) !important;
+  --graph-fill-color-lt: hsl(0, 0%, 73%) !important;
+  --graph-fill-focused-color-lt: hsl(252, 84%, 83%) !important;
+  --graph-line-color-lt: hsl(0, 0%, 69%) !important;
+  --graph-tag-color-lt: hsl(219, 73%, 78%) !important;
+  --graph-unresolved-color-lt: hsl(7, 82%, 78%) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(0, 0%, 8%) !important;
+  --code-border-color: hsl(0, 0%, 30%) !important;
+  --code-border-width: 1px !important;
+  --code-bracket-background: hsla(271, 48%, 21%, 90%) !important;
+  --code-comment: hsl(0, 0%, 67%) !important;
+  --code-function: hsl(44, 60%, 53%) !important;
+  --code-important: hsl(26, 85%, 63%) !important;
+  --code-keyword: hsl(330, 64%, 74%) !important;
+  --code-normal: hsl(0, 0%, 91%) !important;
+  --code-operator: hsl(4, 74%, 74%) !important;
+  --code-property: hsl(195, 69%, 58%) !important;
+  --code-punctuation: hsl(0, 0%, 86%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: hsl(124, 48%, 54%) !important;
+  --code-tag: hsl(4, 74%, 74%) !important;
+  --code-value: hsl(267, 52%, 75%) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 150px !important;
+  --graph-line: hsl(0, 0%, 30%) !important;
+  --graph-node: hsl(0, 0%, 67%) !important;
+  --graph-node-attachment: hsl(44, 60%, 53%) !important;
+  --graph-node-focused: hsl(267, 52%, 75%) !important;
+  --graph-node-tag: hsl(225, 61%, 75%) !important;
+  --graph-node-unresolved: hsl(4, 74%, 74%) !important;
+  --graph-text: hsl(0, 0%, 91%) !important;
+  --graph-attachment-color-dt: hsl(44, 60%, 53%) !important;
+  --graph-fill-color-dt: hsl(0, 0%, 67%) !important;
+  --graph-fill-focused-color-dt: hsl(267, 52%, 75%) !important;
+  --graph-line-color-dt: hsl(0, 0%, 30%) !important;
+  --graph-tag-color-dt: hsl(225, 61%, 75%) !important;
+  --graph-unresolved-color-dt: hsl(4, 74%, 74%) !important;
 }
 
 html {

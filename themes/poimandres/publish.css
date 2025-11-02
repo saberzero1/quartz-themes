@@ -155,6 +155,35 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: #20232a !important;
+  --code-border-color: #25272e !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: 40% !important;
+  --code-comment: #b8bfc9 !important;
+  --code-function: #84bfcf !important;
+  --code-important: #c06075 !important;
+  --code-keyword: #6a998f !important;
+  --code-normal: #e4e7ea !important;
+  --code-operator: #6f9fad !important;
+  --code-property: #e4e7ea !important;
+  --code-punctuation: #6a998f !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #7bbfb0 !important;
+  --code-tag: #7bbfb0 !important;
+  --code-value: #7bbfb0 !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #7da0b3 !important;
+  --graph-node: #e4e7ea !important;
+  --graph-node-attachment: #c5d0e6 !important;
+  --graph-node-focused: #d2a5c4 !important;
+  --graph-node-tag: #f2a070 !important;
+  --graph-node-unresolved: #7da0b3 !important;
+  --graph-text: #e4e7ea !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

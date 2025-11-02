@@ -155,6 +155,35 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-dark {
+  --code-background: #161b22 !important;
+  --code-border-color: #30363d !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(177, 186, 196, 0.12) !important;
+  --code-comment: #6e7681 !important;
+  --code-function: #ffa657 !important;
+  --code-important: #ffa657 !important;
+  --code-keyword: #f47067 !important;
+  --code-normal: #8b949e !important;
+  --code-operator: #f47067 !important;
+  --code-property: #00ffff !important;
+  --code-punctuation: #8b949e !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #a5d6ff !important;
+  --code-tag: #f47067 !important;
+  --code-value: #d2a8ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #21262d !important;
+  --graph-node: #84edb5 !important;
+  --graph-node-attachment: #d29922 !important;
+  --graph-node-focused: hsl(212, 100%, calc(67% - 3.8%)) !important;
+  --graph-node-tag: #7ee787 !important;
+  --graph-node-unresolved: #6e7681 !important;
+  --graph-text: #ffffff !important;
+}
+
 body .site-body-left-column-site-theme-toggle {
   display: none;
 }

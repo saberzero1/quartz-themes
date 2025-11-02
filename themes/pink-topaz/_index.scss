@@ -6,8 +6,70 @@
 }
 
 :root:root {
+  --code-background: #ffdece !important;
+  --code-border-color: rgba(0, 0, 0, 0.1) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #37291a !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #37291a !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #37291a !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #fea2c2 !important;
+  --graph-node: #37291a !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: #980000 !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: #37291a !important;
+  --graph-text: #37291a !important;
+  --graph-arrow: #980000 !important;
+  --graph-attach: #f5a7a2 !important;
+  --graph-circle: #fd355c !important;
+  --graph-text-color: #37291a !important;
+  --graph-unresolved: #e87659 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #f937590d !important;
+  --code-border-color: #191919 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #efe9d9 !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #efe9d9 !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #efe9d9 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #ffc3bc !important;
+  --graph-node: #efe9d9 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: #ffccbc !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #efe9d9 !important;
+  --graph-text: #efe9d9 !important;
+  --graph-arrow: #ffc3bc !important;
+  --graph-attach: #ffebec !important;
+  --graph-circle: #f39ba0 !important;
+  --graph-text-color: #efe9d9 !important;
+  --graph-unresolved: #ffccbc !important;
 }
 
 html {

@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: #faf4ed !important;
+  --code-border-color: rgba(223, 218, 217, 0.6) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #9893a5 !important;
+  --code-function: rgb(86, 148, 159) !important;
+  --code-important: rgb(215, 130, 126) !important;
+  --code-keyword: rgb(215, 130, 126) !important;
+  --code-normal: #797593 !important;
+  --code-operator: rgb(234, 157, 52) !important;
+  --code-property: rgb(40, 105, 131) !important;
+  --code-punctuation: rgb(180, 99, 122) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(234, 157, 52) !important;
+  --code-tag: rgb(86, 148, 159) !important;
+  --code-value: rgb(144, 122, 169) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(223, 218, 217) !important;
+  --graph-node: #575279 !important;
+  --graph-node-attachment: rgb(215, 130, 126) !important;
+  --graph-node-focused: rgb(215, 130, 126) !important;
+  --graph-node-tag: rgb(86, 148, 159) !important;
+  --graph-node-unresolved: #9893a5 !important;
+  --graph-text: #575279 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #191724 !important;
+  --code-border-color: rgba(64, 61, 82, 0.6) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #6e6a86 !important;
+  --code-function: rgb(156, 207, 216) !important;
+  --code-important: rgb(235, 188, 186) !important;
+  --code-keyword: rgb(235, 188, 186) !important;
+  --code-normal: #908caa !important;
+  --code-operator: rgb(246, 193, 119) !important;
+  --code-property: rgb(49, 116, 143) !important;
+  --code-punctuation: rgb(235, 111, 146) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(246, 193, 119) !important;
+  --code-tag: rgb(156, 207, 216) !important;
+  --code-value: rgb(196, 167, 231) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(64, 61, 82) !important;
+  --graph-node: #e0def4 !important;
+  --graph-node-attachment: rgb(235, 188, 186) !important;
+  --graph-node-focused: rgb(235, 188, 186) !important;
+  --graph-node-tag: rgb(156, 207, 216) !important;
+  --graph-node-unresolved: #6e6a86 !important;
+  --graph-text: #e0def4 !important;
 }
 
 html {

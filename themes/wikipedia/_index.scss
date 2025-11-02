@@ -6,8 +6,60 @@
 }
 
 :root:root {
+  --code-background: #f8f9fa !important;
+  --code-border-color: #a2a9b1 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #989898 !important;
+  --code-function: rgb(163, 163, 0) !important;
+  --code-important: rgb(230, 111, 0) !important;
+  --code-keyword: rgb(194, 0, 81) !important;
+  --code-normal: #222222 !important;
+  --code-operator: rgb(232, 41, 41) !important;
+  --code-property: rgb(0, 163, 81) !important;
+  --code-punctuation: #5a5a5a !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(82, 163, 0) !important;
+  --code-tag: rgb(232, 41, 41) !important;
+  --code-value: rgb(140, 63, 247) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #d4d4d4 !important;
+  --graph-node: #5a5a5a !important;
+  --graph-node-attachment: rgb(163, 163, 0) !important;
+  --graph-node-focused: hsl(215, 79%, 50%) !important;
+  --graph-node-tag: rgb(82, 163, 0) !important;
+  --graph-node-unresolved: #989898 !important;
+  --graph-text: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: #242629 !important;
+  --code-border-color: #dae1ea31 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: rgb(142, 148, 157) !important;
+  --code-function: rgb(163, 163, 0) !important;
+  --code-important: rgb(230, 111, 0) !important;
+  --code-keyword: rgb(194, 0, 81) !important;
+  --code-normal: #d8dce3 !important;
+  --code-operator: rgb(232, 41, 41) !important;
+  --code-property: rgb(0, 163, 81) !important;
+  --code-punctuation: #d0d4d9 !important;
+  --code-radius: 0px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(82, 163, 0) !important;
+  --code-tag: rgb(232, 41, 41) !important;
+  --code-value: rgb(140, 63, 247) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #313539 !important;
+  --graph-node: #d0d4d9 !important;
+  --graph-node-attachment: rgb(163, 163, 0) !important;
+  --graph-node-focused: hsl(215, 79%, calc(50% + 3.5%)) !important;
+  --graph-node-tag: rgb(82, 163, 0) !important;
+  --graph-node-unresolved: rgb(142, 148, 157) !important;
+  --graph-text: #d8dce3 !important;
 }
 
 html {

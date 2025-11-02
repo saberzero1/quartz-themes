@@ -6,8 +6,64 @@
 }
 
 :root:root {
+  --code-background: hsl(281, 24%, 95%) !important;
+  --code-border-color: #c6b0cf !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: hsl(275, 24%, 55%) !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: hsl(248, 31%, 20%) !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: hsl(251, 29%, 55%) !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: hsl(281, 24%, 70%) !important;
+  --graph-node: hsl(251, 29%, 55%) !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(333, 77%, 78%) !important;
+  --graph-node-tag: #08b94e !important;
+  --graph-node-unresolved: hsl(275, 24%, 55%) !important;
+  --graph-text: hsl(248, 31%, 20%) !important;
 }
 :root:root[saved-theme="dark"] {
+  --code-background: hsl(from #2c233d h s calc(l - 10)) !important;
+  --code-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #c6b0cf !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #f9e8ec !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #fdc4d3 !important;
+  --code-radius: 4px !important;
+  --code-size: 0.875em !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
+  --graph-node: #fdc4d3 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(333 - 3),
+    calc(77% * 1.02),
+    calc(78% * 1.15)
+  ) !important;
+  --graph-node-tag: #44cf6e !important;
+  --graph-node-unresolved: #c6b0cf !important;
+  --graph-text: #f9e8ec !important;
 }
 
 html {

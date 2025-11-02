@@ -155,6 +155,72 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+body.theme-light {
+  --code-background: #f2f3f5 !important;
+  --code-border-color: #ddd !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #f2f3f5 !important;
+  --code-comment: #999999 !important;
+  --code-function: #e0ac00 !important;
+  --code-important: rgb(255, 145, 0) !important;
+  --code-keyword: rgb(245, 0, 87) !important;
+  --code-normal: #2e3338 !important;
+  --code-operator: rgb(255, 23, 68) !important;
+  --code-property: rgb(0, 191, 165) !important;
+  --code-punctuation: #888888 !important;
+  --code-radius: 3px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(0, 191, 165) !important;
+  --code-tag: rgb(255, 82, 82) !important;
+  --code-value: rgb(124, 77, 255) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: rgb(250, 250, 250) !important;
+  --graph-node: #888888 !important;
+  --graph-node-attachment: #e0ac00 !important;
+  --graph-node-focused: hsl(
+    calc(258 - 5),
+    calc(88% - 25%),
+    calc(66% - 4%)
+  ) !important;
+  --graph-node-tag: rgb(100, 221, 23) !important;
+  --graph-node-unresolved: #999999 !important;
+  --graph-text: #2e3338 !important;
+}
+
+body.theme-dark {
+  --code-background: #161616 !important;
+  --code-border-color: #363636 !important;
+  --code-border-width: 0px !important;
+  --code-bracket-background: #161616 !important;
+  --code-comment: #666666 !important;
+  --code-function: #e0de71 !important;
+  --code-important: rgb(255, 145, 0) !important;
+  --code-keyword: rgb(245, 0, 87) !important;
+  --code-normal: #dadada !important;
+  --code-operator: rgb(255, 23, 68) !important;
+  --code-property: rgb(0, 191, 165) !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-radius: 3px !important;
+  --code-size: 0.875em !important;
+  --code-string: rgb(0, 191, 165) !important;
+  --code-tag: rgb(255, 82, 82) !important;
+  --code-value: rgb(124, 77, 255) !important;
+  --code-white-space: pre-wrap !important;
+  --graph-controls-width: 240px !important;
+  --graph-line: #3f3f3f !important;
+  --graph-node: #b3b3b3 !important;
+  --graph-node-attachment: #e0de71 !important;
+  --graph-node-focused: hsl(
+    calc(258 - 5),
+    calc(88% - 30%),
+    calc(66% - 27%)
+  ) !important;
+  --graph-node-tag: rgb(100, 221, 23) !important;
+  --graph-node-unresolved: #666666 !important;
+  --graph-text: #dadada !important;
+}
+
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
