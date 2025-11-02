@@ -6,7 +6,7 @@
 
 | Name                 | Modes                     | Compatibility                                                                                     | License                                                                                                                                                           |
 | -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `its-theme.its-dark` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/its-theme.its-dark/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
+| `its-theme.its-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/its-theme.its-dark/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
