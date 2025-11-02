@@ -265,7 +265,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -293,7 +293,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -321,7 +321,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -349,7 +349,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(245, 247, 249);
-    text-decoration-color: rgb(245, 247, 249);
+    text-decoration-color: light-dark(rgb(46, 52, 64), rgb(245, 247, 249));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -378,7 +378,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -407,7 +407,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -436,7 +436,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -465,7 +465,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -521,7 +521,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: line-through solid rgb(245, 247, 249);
-    text-decoration-color: rgb(245, 247, 249);
+    text-decoration-color: light-dark(rgb(46, 52, 64), rgb(245, 247, 249));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -552,6 +552,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
@@ -572,10 +576,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -584,6 +588,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
@@ -592,10 +600,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: solid;
-    border-left-color: rgb(76, 86, 106);
-    border-right-color: rgb(76, 86, 106);
-    border-top-color: rgb(76, 86, 106);
-    border-bottom-color: rgb(76, 86, 106);
+    border-left-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-right-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-top-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-bottom-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 2px;
@@ -604,6 +612,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: none;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -646,10 +658,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -658,6 +670,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   a.internal.tag-link::before {
@@ -675,10 +691,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -687,6 +703,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     content: normal;
     pointer-events: auto;
@@ -709,10 +729,10 @@ body {
     border-bottom-style: solid;
     border-right-style: solid;
     border-top-style: solid;
-    border-left-color: rgb(76, 86, 106);
-    border-right-color: rgb(76, 86, 106);
-    border-top-color: rgb(76, 86, 106);
-    border-bottom-color: rgb(76, 86, 106);
+    border-left-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-right-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-top-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
+    border-bottom-color: light-dark(rgb(216, 222, 233), rgb(76, 86, 106));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -721,6 +741,10 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
     color: light-dark(rgb(46, 52, 64), rgb(245, 247, 249));
     font-family: monospace;
     padding-top: 3px;
@@ -729,16 +753,17 @@ body {
     padding-right: 5px;
   }
 
-  pre > code {
+  pre > code,
+  pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
     border-left-style: none;
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -747,6 +772,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     overflow-x: visible;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -762,10 +791,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -774,6 +803,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     overflow-x: visible;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -789,10 +822,10 @@ body {
     border-bottom-style: inset;
     border-right-style: inset;
     border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
+    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
@@ -801,6 +834,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 2px;
@@ -842,7 +879,7 @@ body {
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   blockquote {
@@ -879,10 +916,10 @@ body {
     border-bottom-style: inset;
     border-right-style: inset;
     border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
+    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
@@ -891,6 +928,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     font-family: Arial;
   }
@@ -901,10 +942,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -913,6 +954,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: none;
   }
 
@@ -922,10 +967,10 @@ body {
     border-bottom-style: inset;
     border-right-style: inset;
     border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
+    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
@@ -934,6 +979,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: none;
   }
 
@@ -957,7 +1006,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -971,10 +1020,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -983,6 +1032,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -1003,10 +1056,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1015,6 +1068,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -1201,10 +1258,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1213,6 +1270,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: none;
   }
 
@@ -1222,10 +1283,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1234,6 +1295,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     mix-blend-mode: normal;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1247,10 +1312,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1259,6 +1324,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -1291,10 +1360,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1303,6 +1372,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
@@ -1318,10 +1391,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1330,6 +1403,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
@@ -1345,10 +1422,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1357,6 +1434,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
@@ -1372,10 +1453,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1384,6 +1465,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
@@ -1399,10 +1484,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1411,6 +1496,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
@@ -1426,10 +1515,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1438,6 +1527,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
@@ -1453,10 +1546,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1465,6 +1558,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
@@ -1480,10 +1577,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1492,6 +1589,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
@@ -1507,10 +1608,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1519,6 +1620,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
@@ -1534,10 +1639,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1546,6 +1651,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
@@ -1561,10 +1670,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1573,6 +1682,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
@@ -1588,10 +1701,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1600,6 +1713,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
@@ -1615,10 +1732,10 @@ body {
     border-bottom-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left-width: 0px;
     border-right-width: 0px;
     border-top-width: 0px;
@@ -1627,6 +1744,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {

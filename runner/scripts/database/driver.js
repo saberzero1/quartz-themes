@@ -2,6 +2,9 @@ import Database from "better-sqlite3";
 
 let db = null; // Hold the database connection
 
+let debug = false;
+// debug = true;
+
 // --- Prepared Statements (will be populated once db is open) ---
 const preparedStatements = {};
 
@@ -296,6 +299,15 @@ function getStyle(themeName, optionSetName, isDarkMode, selector, property) {
     selectorId,
     propertyId,
   );
+
+  if (debug) {
+    if (!result) {
+      console.log(
+        `getStyle failed for themeName: ${themeName}, optionSetName: ${optionSetName}, isDarkMode: ${isDarkMode}, selector: ${selector}, property: ${property}`,
+      );
+    }
+  }
+
   return result ? result.value : null;
 }
 
