@@ -6,7 +6,7 @@
 }
 
 :root:root {
-  --code-background: #000000 !important;
+  --code-background: black !important;
   --code-border-color: #232221 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: #d8b131 !important;
@@ -304,13 +304,13 @@ body {
   }
 
   div#quartz-root {
-    background-color: #1e1e1e;
-    color: #dadada;
+    background-color: rgb(30, 30, 30);
+    color: rgb(218, 218, 218);
   }
 
   a.external {
-    background-color: #00000000;
-    color: #a68af9;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(166, 138, 249);
     cursor: pointer;
     filter: none;
     font-family:
@@ -328,7 +328,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: #a68af9;
+    text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -337,8 +337,8 @@ body {
   }
 
   a.internal {
-    background-color: #00000000;
-    color: #a68af9;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(166, 138, 249);
     cursor: pointer;
     filter: none;
     font-family:
@@ -356,7 +356,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: #a68af9;
+    text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -365,8 +365,8 @@ body {
   }
 
   a.internal.broken {
-    background-color: #00000000;
-    color: #a68af9;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(166, 138, 249);
     cursor: pointer;
     filter: none;
     font-family:
@@ -384,7 +384,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: #a68af9;
+    text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -393,15 +393,15 @@ body {
   }
 
   p {
-    background-color: #00000000;
-    color: #83888c;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(131, 136, 140);
     cursor: auto;
     filter: none;
     font-family: "Slasher Regular";
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(131, 136, 140);
-    text-decoration-color: #83888c;
+    text-decoration-color: rgb(131, 136, 140);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -411,8 +411,8 @@ body {
 
   .page article p > strong,
   strong {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
     filter: none;
     font-family:
@@ -430,7 +430,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -440,8 +440,8 @@ body {
 
   .page article p > b,
   b {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
     filter: none;
     font-family:
@@ -459,7 +459,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -469,8 +469,8 @@ body {
 
   .page article p > em,
   em {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
     filter: none;
     font-family:
@@ -488,7 +488,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -498,8 +498,8 @@ body {
 
   .page article p > i,
   i {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
     filter: none;
     font-family:
@@ -517,7 +517,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -526,8 +526,8 @@ body {
   }
 
   .text-highlight {
-    background-color: #ffff00;
-    color: #000000;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
     cursor: auto;
     filter: none;
     font-family:
@@ -545,7 +545,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(0, 0, 0);
-    text-decoration-color: #000000;
+    text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -554,15 +554,15 @@ body {
   }
 
   del {
-    background-color: #00000000;
-    color: #83888c;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(131, 136, 140);
     cursor: auto;
     filter: none;
     font-family: "Slasher Regular";
     font-weight: 400;
     outline: inherit;
     text-decoration: line-through solid rgb(131, 136, 140);
-    text-decoration-color: #83888c;
+    text-decoration-color: rgb(131, 136, 140);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -588,7 +588,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -597,7 +597,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   .search
@@ -612,8 +612,8 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -622,12 +622,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   hr {
-    border: 0px #83888c;
-    border-top: 2px solid #83888c;
+    border: 0px rgb(131, 136, 140);
+    border-top: 2px solid rgb(131, 136, 140);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -655,7 +655,7 @@ body {
     > li
     > .match-tag {
     align-items: normal;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     display: block;
     font-family:
       ui-sans-serif,
@@ -671,7 +671,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -683,17 +683,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   ul > li {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     text-align: left;
   }
 
   ul > li::marker {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -702,7 +702,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #dadada;
+    color: rgb(218, 218, 218);
     content: normal;
     pointer-events: auto;
     transform: none;
@@ -710,17 +710,17 @@ body {
   }
 
   ol > li {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     text-align: left;
   }
 
   ol > li::marker {
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   code {
-    background-color: #000000;
-    border: 0px solid #232221;
+    background-color: rgb(0, 0, 0);
+    border: 0px solid rgb(35, 34, 33);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -729,7 +729,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: #83888c;
+    color: rgb(131, 136, 140);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -739,8 +739,8 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -756,8 +756,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -774,7 +774,7 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 2px inset #858585;
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -808,7 +808,7 @@ body {
     position: static;
     width: auto;
     display: list-item;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-mask-position: inherit;
     -webkit-mask-size: inherit;
     -webkit-mask-repeat: inherit;
@@ -816,13 +816,13 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
   }
 
   blockquote {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-inline-start: inherit;
     font-family: "Slasher Regular";
     font-style: normal;
@@ -834,13 +834,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: #a68af9;
+    color: rgb(166, 138, 249);
     text-decoration: underline solid rgb(166, 138, 249);
   }
 
   .search > .search-button {
-    background-color: #121212;
-    border: 2px inset #858585;
+    background-color: rgb(18, 18, 18);
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -849,13 +849,13 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-family: Arial;
   }
 
   .search > .search-container > .search-space {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -868,8 +868,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: #121212;
-    border: 2px inset #858585;
+    background-color: rgb(18, 18, 18);
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -882,8 +882,8 @@ body {
   }
 
   .search > .search-container > .search-space > * {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
     filter: none;
     font-family:
@@ -901,7 +901,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: #dadada;
+    text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -911,7 +911,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -927,7 +927,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   .search
@@ -936,7 +936,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -965,9 +965,9 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-weight: 400;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .search
@@ -1012,11 +1012,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: #dadada;
+    color: rgb(218, 218, 218);
   }
 
   h1 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1033,7 +1033,7 @@ body {
   }
 
   h2 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1050,7 +1050,7 @@ body {
   }
 
   h3 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1067,7 +1067,7 @@ body {
   }
 
   h4 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1084,7 +1084,7 @@ body {
   }
 
   h5 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1101,7 +1101,7 @@ body {
   }
 
   h6 {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1122,12 +1122,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00000000;
-    border: 0px #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1141,7 +1141,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1156,7 +1156,7 @@ body {
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1174,20 +1174,20 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     font-weight: 400;
   }
 
   .callout > .callout-content {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1199,15 +1199,15 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1219,15 +1219,15 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1239,15 +1239,15 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1259,15 +1259,15 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1279,15 +1279,15 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1299,15 +1299,15 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1319,15 +1319,15 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1339,15 +1339,15 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1359,15 +1359,15 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1379,15 +1379,15 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1399,15 +1399,15 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1419,15 +1419,15 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #dadada;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1439,7 +1439,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
@@ -1493,7 +1493,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1512,8 +1512,8 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: #00000000;
-    color: #dadada;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     cursor: auto;
   }
 
@@ -1521,7 +1521,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1540,7 +1540,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: #dadada;
+    color: rgb(218, 218, 218);
     cursor: auto;
     font-family:
       ui-sans-serif,

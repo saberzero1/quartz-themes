@@ -6,18 +6,18 @@
 }
 
 :root:root {
-  --code-background: hsl(15, 20%, 88%) !important;
-  --code-border-color: hsl(226, 40%, 52%) !important;
+  --code-background: rgb(231, 221, 218) !important;
+  --code-border-color: rgb(84, 106, 182) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: hsl(300, 6%, 30%) !important;
+  --code-comment: rgb(81, 72, 81) !important;
   --code-function: 45, 50%, 44% !important;
   --code-important: 22, 50%, 40% !important;
   --code-keyword: 316, 50%, 68% !important;
-  --code-normal: hsl(300, 6%, 14%) !important;
+  --code-normal: rgb(38, 34, 38) !important;
   --code-operator: 346, 50%, 32% !important;
   --code-property: 189, 40%, 42% !important;
-  --code-punctuation: hsl(300, 6%, 22%) !important;
+  --code-punctuation: rgb(59, 53, 59) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: 108, 40%, 42% !important;
@@ -26,26 +26,26 @@
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
-  --graph-node: hsl(300, 6%, 22%) !important;
+  --graph-node: rgb(59, 53, 59) !important;
   --graph-node-attachment: 45, 50%, 44% !important;
-  --graph-node-focused: hsl(226, 40%, 52%) !important;
+  --graph-node-focused: rgb(84, 106, 182) !important;
   --graph-node-tag: 108, 40%, 42% !important;
-  --graph-node-unresolved: hsl(300, 6%, 30%) !important;
-  --graph-text: hsl(300, 6%, 14%) !important;
+  --graph-node-unresolved: rgb(81, 72, 81) !important;
+  --graph-text: rgb(38, 34, 38) !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: hsl(300, 6%, 18%) !important;
-  --code-border-color: hsl(226, 40%, 56%) !important;
+  --code-background: rgb(49, 43, 49) !important;
+  --code-border-color: rgb(98, 119, 188) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: hsl(168, 50%, 54%) !important;
+  --code-comment: rgb(79, 196, 173) !important;
   --code-function: 45, 50%, 44% !important;
   --code-important: 21, 50%, 52% !important;
   --code-keyword: 316, 50%, 80% !important;
-  --code-normal: hsl(160, 50%, 38%) !important;
+  --code-normal: rgb(48, 145, 113) !important;
   --code-operator: 346, 50%, 36% !important;
   --code-property: 189, 40%, 50% !important;
-  --code-punctuation: hsl(160, 50%, 46%) !important;
+  --code-punctuation: rgb(59, 176, 137) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: 108, 40%, 42% !important;
@@ -54,12 +54,12 @@
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
-  --graph-node: hsl(160, 50%, 46%) !important;
+  --graph-node: rgb(59, 176, 137) !important;
   --graph-node-attachment: 45, 50%, 44% !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
+  --graph-node-focused: rgb(166, 139, 249) !important;
   --graph-node-tag: 108, 40%, 42% !important;
-  --graph-node-unresolved: hsl(168, 50%, 54%) !important;
-  --graph-text: hsl(160, 50%, 38%) !important;
+  --graph-node-unresolved: rgb(79, 196, 173) !important;
+  --graph-text: rgb(48, 145, 113) !important;
 }
 
 html {

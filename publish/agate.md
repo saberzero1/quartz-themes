@@ -4,10 +4,9 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/agate">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name    | Modes                       | Compatibility                          | License                                                                                                                                      |
+| ------- | --------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | `agate` | ![[media/light.svg\|LIGHT]] | <img src="media/full.svg" alt="FULL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/agate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

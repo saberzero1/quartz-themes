@@ -4,10 +4,9 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite-pie">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name                | Modes                     | Compatibility                                  | License                                                                                                                                                              |
+| ------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `dark-graphite-pie` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dark-graphite-pie/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

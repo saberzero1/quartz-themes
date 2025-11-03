@@ -168,7 +168,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(40, 71%, 73%, 0.1);
+  --background-modifier-active-hover: rgba(235, 202, 137, 0.1);
   --background-modifier-border: #242424;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
@@ -209,7 +209,7 @@ body.theme-dark {
   --bases-table-cell-background-active: #1c1c1c;
   --bases-table-cell-background-disabled: #1c1c1c;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(40, 71%, 73%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(235, 202, 137);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -232,7 +232,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(40, 71%, 73%);
+  --blockquote-border-color: rgb(235, 202, 137);
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -304,9 +304,9 @@ body.theme-dark {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #87afff;
   --collapse-icon-color-collapsed: #d08770;
-  --color-accent: hsl(40, 71%, 73%);
-  --color-accent-1: hsl(37, 72.42%, 83.95%);
-  --color-accent-2: hsl(35, 74.55%, 94.17%);
+  --color-accent: rgb(235, 202, 137);
+  --color-accent-1: rgb(244, 221, 185);
+  --color-accent-2: rgb(251, 242, 228);
   --color-accent-hsl: 40, 71%, 73%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -343,7 +343,7 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: #242424;
-  --divider-color-hover: hsl(40, 71%, 73%);
+  --divider-color-hover: rgb(235, 202, 137);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -358,7 +358,7 @@ body.theme-dark {
   --embed-block-shadow-hover: 0 0 0 1px #242424, inset 0 0 0 1px #242424;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(40, 71%, 73%);
+  --embed-border-start: 2px solid rgb(235, 202, 137);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -538,8 +538,8 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(40, 71%, 73%);
-  --interactive-accent-hover: hsl(37, 72.42%, 83.95%);
+  --interactive-accent: rgb(235, 202, 137);
+  --interactive-accent-hover: rgb(244, 221, 185);
   --interactive-accent-hsl: 40, 71%, 73%;
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
@@ -567,7 +567,7 @@ body.theme-dark {
   --link-external-decoration-hover: none;
   --link-external-filter: none;
   --link-unresolved-color: #d08770;
-  --link-unresolved-decoration-color: hsla(40, 71%, 73%, 0.3);
+  --link-unresolved-decoration-color: rgba(235, 202, 137, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -665,7 +665,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: rgba(255, 255, 255, 0.067);
   --nav-item-background-hover: rgba(255, 255, 255, 0.067);
-  --nav-item-background-selected: hsla(40, 71%, 73%, 0.15);
+  --nav-item-background-selected: rgba(235, 202, 137, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #cebd9e;
@@ -816,7 +816,7 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(40, 71%, 73%);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(235, 202, 137);
   --tab-text-color: #87afff;
   --tab-text-color-active: #cebd9e;
   --tab-text-color-focused: #cebd9e;
@@ -837,7 +837,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(40, 71%, 73%);
+  --table-drag-handle-background-active: rgb(235, 202, 137);
   --table-drag-handle-color: #87afff;
   --table-drag-handle-color-active: white;
   --table-drop-indicator-half-width: 2px;
@@ -852,17 +852,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: #ebcb8b30;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(40, 71%, 73%, 0.1);
+  --table-selection: rgba(235, 202, 137, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(40, 71%, 73%);
+  --table-selection-border-color: rgb(235, 202, 137);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
   --tag-background: #242424;
   --tag-background-hover: #242424;
-  --tag-border-color: hsla(40, 71%, 73%, 0.15);
-  --tag-border-color-hover: hsla(40, 71%, 73%, 0.15);
+  --tag-border-color: rgba(235, 202, 137, 0.15);
+  --tag-border-color-hover: rgba(235, 202, 137, 0.15);
   --tag-border-width: 0px;
   --tag-color: #ffffd7;
   --tag-color-hover: #d08770;
@@ -913,7 +913,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --h1-color: #ffffd7;
   --h2-color: #ffffd7;

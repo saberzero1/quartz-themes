@@ -148,35 +148,35 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(0, 0%, 46%, 0.12) !important;
-  --background-modifier-border: hsl(0, 0%, 90%) !important;
-  --background-modifier-border-focus: hsl(0, 0%, 76%) !important;
-  --background-modifier-border-hover: hsl(0, 0%, 84%) !important;
-  --background-modifier-box-shadow: #0000001a !important;
+  --background-modifier-border: rgb(230, 230, 230) !important;
+  --background-modifier-border-focus: rgb(194, 194, 194) !important;
+  --background-modifier-border-hover: rgb(214, 214, 214) !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: hsla(0, -70%, 76%, 0.5) !important;
-  --background-modifier-error: #ff000024 !important;
-  --background-modifier-error-hover: #ff000014 !important;
+  --background-modifier-error: rgba(255, 0, 0, 0.14) !important;
+  --background-modifier-error-hover: rgba(255, 0, 0, 0.08) !important;
   --background-modifier-error-rgb: 208, 66, 85 !important;
-  --background-modifier-form-field: #ffffff !important;
-  --background-modifier-form-field-hover: #ffffff !important;
+  --background-modifier-form-field: white !important;
+  --background-modifier-form-field-hover: white !important;
   --background-modifier-hover: hsla(0, 0%, 46%, 0.12) !important;
-  --background-modifier-message: #000000e6 !important;
+  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #a8c373 !important;
   --background-modifier-success-rgb: 168, 195, 115 !important;
-  --background-primary: #ffffff !important;
-  --background-primary-alt: #f5f5f5 !important;
-  --background-secondary: #f5f5f5 !important;
-  --background-secondary-alt: #ffffff !important;
-  --bases-cards-background: #ffffff !important;
+  --background-primary: white !important;
+  --background-primary-alt: rgb(245, 245, 245) !important;
+  --background-secondary: rgb(245, 245, 245) !important;
+  --background-secondary-alt: white !important;
+  --bases-cards-background: white !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #f5f5f5 !important;
+  --bases-cards-cover-background: rgb(245, 245, 245) !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 90%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 84%) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(230, 230, 230) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(214, 214, 214) !important;
   --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: hsl(0, 0%, 90%) !important;
+  --bases-embed-border-color: rgb(230, 230, 230) !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -184,24 +184,24 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: hsl(0, 0%, 90%) !important;
-  --bases-table-cell-background-active: #ffffff !important;
-  --bases-table-cell-background-disabled: #f5f5f5 !important;
+  --bases-table-border-color: rgb(230, 230, 230) !important;
+  --bases-table-cell-background-active: white !important;
+  --bases-table-cell-background-disabled: rgb(245, 245, 245) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(201, 17%, 56%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(124, 149, 162) !important;
   --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: #ffffff !important;
+  --bases-table-header-background: white !important;
   --bases-table-header-background-hover: hsla(0, 0%, 46%, 0.12) !important;
   --bases-table-header-color: hsl(0, -20%, 46%) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
-    #000000 24px
+    black 24px
   ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
@@ -211,7 +211,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(0, 0%, 84%) !important;
+  --blockquote-border-color: rgb(214, 214, 214) !important;
   --blockquote-border-thickness: 1px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -241,7 +241,7 @@ body.theme-light {
   --callout-title-weight: 600 !important;
   --callout-todo: 108, 153, 187 !important;
   --callout-warning: 213, 118, 63 !important;
-  --canvas-background: #ffffff !important;
+  --canvas-background: white !important;
   --canvas-card-label-color: hsl(0, -10%, 71%) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 208, 66, 85 !important;
@@ -250,28 +250,28 @@ body.theme-light {
   --canvas-color-4: 168, 195, 115 !important;
   --canvas-color-5: 115, 187, 178 !important;
   --canvas-color-6: 158, 134, 200 !important;
-  --canvas-dot-pattern: hsl(0, 0%, 84%) !important;
-  --caret-color: hsl(0, 0%, 6%) !important;
+  --canvas-dot-pattern: rgb(214, 214, 214) !important;
+  --caret-color: rgb(15, 15, 15) !important;
   --checkbox-border-color: hsl(0, -10%, 71%) !important;
   --checkbox-border-color-hover: hsl(0, -20%, 46%) !important;
-  --checkbox-color: hsl(201, 17%, 56%) !important;
-  --checkbox-color-hover: #6a8695 !important;
+  --checkbox-color: rgb(124, 149, 162) !important;
+  --checkbox-color-hover: rgb(106, 134, 149) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #ffffff !important;
+  --checkbox-marker-color: white !important;
   --checkbox-radius: 50% !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(0, 0%, 6%) !important;
+  --checklist-done-color: rgb(15, 15, 15) !important;
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #f5f5f5 !important;
-  --code-border-color: hsl(0, 0%, 90%) !important;
+  --code-background: rgb(245, 245, 245) !important;
+  --code-border-color: rgb(230, 230, 230) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: hsla(0, 0%, 46%, 0.12) !important;
   --code-comment: hsl(0, -10%, 71%) !important;
   --code-function: #e5b567 !important;
   --code-important: #d5763f !important;
   --code-keyword: #b05279 !important;
-  --code-normal: hsl(0, 0%, 6%) !important;
+  --code-normal: rgb(15, 15, 15) !important;
   --code-operator: #d04255 !important;
   --code-property: #73bbb2 !important;
   --code-punctuation: hsl(0, -20%, 46%) !important;
@@ -282,10 +282,10 @@ body.theme-light {
   --code-value: #9e86c8 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: hsl(0, -10%, 71%) !important;
-  --collapse-icon-color-collapsed: #6a8695 !important;
-  --color-accent: #6a8695 !important;
-  --color-accent-1: hsl(200, 17.17%, 53.75%) !important;
-  --color-accent-2: hsl(198, 17.34%, 57.5%) !important;
+  --collapse-icon-color-collapsed: rgb(106, 134, 149) !important;
+  --color-accent: rgb(106, 134, 149) !important;
+  --color-accent-1: rgb(118, 144, 158) !important;
+  --color-accent-2: rgb(130, 155, 166) !important;
   --color-accent-hsl: 201, 17%, 50% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -321,23 +321,23 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: hsl(0, 0%, 90%) !important;
-  --divider-color-hover: hsl(201, 17%, 56%) !important;
+  --divider-color: rgb(230, 230, 230) !important;
+  --divider-color-hover: rgb(124, 149, 162) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
-  --drag-ghost-background: #000000d9 !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #ffffff !important;
+  --dropdown-background: white !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsl(0, 0%, 90%) !important;
+  --dropdown-background-hover: rgb(230, 230, 230) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover: none !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(201, 17%, 56%) !important;
+  --embed-border-start: 2px solid rgb(124, 149, 162) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: none !important;
@@ -353,8 +353,8 @@ body.theme-light {
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 8px 48px !important;
-  --flair-background: #ffffff !important;
-  --flair-color: hsl(0, 0%, 6%) !important;
+  --flair-background: white !important;
+  --flair-color: rgb(15, 15, 15) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -407,7 +407,7 @@ body.theme-light {
   --font-ui-small: 13px !important;
   --font-ui-smaller: 11px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: hsl(0, 0%, 90%) !important;
+  --footnote-divider-color: rgb(230, 230, 230) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -427,10 +427,10 @@ body.theme-light {
   --graph-line: #d4d4d4 !important;
   --graph-node: hsl(0, -20%, 46%) !important;
   --graph-node-attachment: #e5b567 !important;
-  --graph-node-focused: #6a8695 !important;
+  --graph-node-focused: rgb(106, 134, 149) !important;
   --graph-node-tag: #a8c373 !important;
   --graph-node-unresolved: hsl(0, -10%, 71%) !important;
-  --graph-text: hsl(0, 0%, 6%) !important;
+  --graph-text: rgb(15, 15, 15) !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.125em !important;
   --h1-style: normal !important;
@@ -465,11 +465,11 @@ body.theme-light {
   --heading-formatting: hsl(0, -10%, 71%) !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: hsl(0, 0%, 90%) !important;
+  --hr-color: rgb(230, 230, 230) !important;
   --hr-thickness: 2px !important;
   --icon-color: hsl(0, -20%, 46%) !important;
-  --icon-color-active: hsl(0, 0%, 6%) !important;
-  --icon-color-focused: hsl(0, 0%, 6%) !important;
+  --icon-color-active: rgb(15, 15, 15) !important;
+  --icon-color-focused: rgb(15, 15, 15) !important;
   --icon-color-hover: hsl(0, -20%, 46%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -488,8 +488,8 @@ body.theme-light {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: #0000001f !important;
-  --indentation-guide-color-active: #0000004d !important;
+  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
+  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -510,17 +510,19 @@ body.theme-light {
   --input-placeholder-color: hsl(0, -10%, 71%) !important;
   --input-radius: 5px !important;
   --input-shadow:
-    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
   --input-shadow-hover:
-    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(201, 17%, 56%) !important;
-  --interactive-accent-hover: #6a8695 !important;
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --interactive-accent: rgb(124, 149, 162) !important;
+  --interactive-accent-hover: rgb(106, 134, 149) !important;
   --interactive-accent-hsl: 201, 17%, 50% !important;
   --interactive-accent-rgb: 220, 220, 220 !important;
-  --interactive-hover: hsl(0, 0%, 90%) !important;
-  --interactive-normal: #ffffff !important;
+  --interactive-hover: rgb(230, 230, 230) !important;
+  --interactive-normal: white !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -534,18 +536,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #6a8695 !important;
-  --link-color-hover: hsl(201, 17%, 42%) !important;
+  --link-color: rgb(106, 134, 149) !important;
+  --link-color-hover: rgb(89, 113, 125) !important;
   --link-decoration: none !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #6a8695 !important;
-  --link-external-color-hover: hsl(201, 17%, 42%) !important;
+  --link-external-color: rgb(106, 134, 149) !important;
+  --link-external-color-hover: rgb(89, 113, 125) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #6a8695 !important;
-  --link-unresolved-decoration-color: #6a86954d !important;
+  --link-unresolved-color: rgb(106, 134, 149) !important;
+  --link-unresolved-decoration-color: rgba(106, 134, 149, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -559,26 +561,27 @@ body.theme-light {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: hsl(0, -10%, 71%) !important;
-  --list-marker-color-collapsed: #6a8695 !important;
+  --list-marker-color-collapsed: rgb(106, 134, 149) !important;
   --list-marker-color-hover: hsl(0, -20%, 46%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #f5f5f5 !important;
-  --menu-border-color: hsl(0, 0%, 84%) !important;
+  --menu-background: rgb(245, 245, 245) !important;
+  --menu-border-color: rgb(214, 214, 214) !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
   --menu-shadow:
-    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012 !important;
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: hsl(0, 0%, 90%) !important;
+  --metadata-border-color: rgb(230, 230, 230) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(0, 0%, 90%) !important;
+  --metadata-divider-color: rgb(230, 230, 230) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -593,7 +596,7 @@ body.theme-light {
   --metadata-input-font-size: 13.91px !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: hsl(0, 0%, 6%) !important;
+  --metadata-input-text-color: rgb(15, 15, 15) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: hsla(0, 0%, 46%, 0.12) !important;
   --metadata-label-background-hover: transparent !important;
@@ -610,15 +613,15 @@ body.theme-light {
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: hsla(0, 0%, 46%, 0.12) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 76%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 84%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(194, 194, 194) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(214, 214, 214) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #ffffff !important;
+  --modal-background: white !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -632,24 +635,24 @@ body.theme-light {
   --mono-rgb-100: 0, 0, 0 !important;
   --nav-collapse-icon-color: hsl(0, -20%, 46%) !important;
   --nav-collapse-icon-color-collapsed: hsl(0, -20%, 46%) !important;
-  --nav-heading-color: hsl(0, 0%, 6%) !important;
+  --nav-heading-color: rgb(15, 15, 15) !important;
   --nav-heading-color-collapsed: hsl(0, -10%, 71%) !important;
   --nav-heading-color-collapsed-hover: hsl(0, -20%, 46%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 6%) !important;
+  --nav-heading-color-hover: rgb(15, 15, 15) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: hsl(0, 0%, 90%) !important;
+  --nav-indentation-guide-color: rgb(230, 230, 230) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: hsla(0, 0%, 46%, 0.12) !important;
   --nav-item-background-hover: hsla(0, 0%, 46%, 0.12) !important;
-  --nav-item-background-selected: #6a869526 !important;
+  --nav-item-background-selected: rgba(106, 134, 149, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: hsl(0, -20%, 46%) !important;
-  --nav-item-color-active: hsl(0, 0%, 6%) !important;
-  --nav-item-color-highlighted: #6a8695 !important;
-  --nav-item-color-hover: hsl(0, 0%, 6%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 6%) !important;
+  --nav-item-color-active: rgb(15, 15, 15) !important;
+  --nav-item-color-highlighted: rgb(106, 134, 149) !important;
+  --nav-item-color-hover: rgb(15, 15, 15) !important;
+  --nav-item-color-selected: rgb(15, 15, 15) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
@@ -658,22 +661,22 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #ffffff !important;
-  --pdf-page-background: #ffffff !important;
+  --pdf-background: white !important;
+  --pdf-page-background: white !important;
   --pdf-shadow: none !important;
-  --pdf-sidebar-background: #ffffff !important;
-  --pdf-spread-shadow: 0 0 0 1px #0000000d !important;
+  --pdf-sidebar-background: white !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: none !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(0, 0%, 90%) !important;
-  --pill-border-color-hover: hsl(0, 0%, 84%) !important;
+  --pill-border-color: rgb(230, 230, 230) !important;
+  --pill-border-color-hover: rgb(214, 214, 214) !important;
   --pill-border-width: 1px !important;
   --pill-color: hsl(0, -20%, 46%) !important;
-  --pill-color-hover: hsl(0, 0%, 6%) !important;
+  --pill-color-hover: rgb(15, 15, 15) !important;
   --pill-color-remove: hsl(0, -10%, 71%) !important;
-  --pill-color-remove-hover: #6a8695 !important;
+  --pill-color-remove-hover: rgb(106, 134, 149) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -687,7 +690,7 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: hsl(0, 0%, 76%) !important;
+  --prompt-border-color: rgb(194, 194, 194) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -697,31 +700,32 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #f5f5f5 !important;
-  --ribbon-background-collapsed: #ffffff !important;
+  --ribbon-background: rgb(245, 245, 245) !important;
+  --ribbon-background-collapsed: white !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: hsl(0, 0%, 76%) !important;
+  --scrollbar-active-thumb-bg: rgb(194, 194, 194) !important;
   --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: hsl(0, 0%, 90%) !important;
+  --scrollbar-thumb-bg: rgb(230, 230, 230) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: hsl(0, -20%, 46%) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: hsl(0, -20%, 46%) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #ffffff !important;
+  --search-result-background: white !important;
   --shadow-l:
-    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
-    0px 15px 30px #0000001a !important;
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s:
-    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012 !important;
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
@@ -741,17 +745,17 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsl(0, 0%, 84%) !important;
+  --slider-thumb-border-color: rgb(214, 214, 214) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(0, 0%, 90%) !important;
+  --slider-track-background: rgb(230, 230, 230) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #f5f5f5 !important;
-  --status-bar-border-color: hsl(0, 0%, 90%) !important;
+  --status-bar-background: rgb(245, 245, 245) !important;
+  --status-bar-border-color: rgb(230, 230, 230) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 11px !important;
   --status-bar-position: fixed !important;
@@ -759,7 +763,7 @@ body.theme-light {
   --status-bar-text-color: hsl(0, -20%, 46%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px #00000026 !important;
+  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
   --sync-avatar-color-1: #d04255 !important;
   --sync-avatar-color-2: #d5763f !important;
@@ -770,13 +774,13 @@ body.theme-light {
   --sync-avatar-color-7: #9e86c8 !important;
   --sync-avatar-color-8: #b05279 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #ffffff !important;
-  --tab-container-background: #f5f5f5 !important;
+  --tab-background-active: white !important;
+  --tab-container-background: rgb(245, 245, 245) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: hsl(0, 0%, 84%) !important;
+  --tab-divider-color: rgb(214, 214, 214) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: hsl(0, 0%, 90%) !important;
+  --tab-outline-color: rgb(230, 230, 230) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -784,27 +788,27 @@ body.theme-light {
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
-  --tab-stacked-shadow: -8px 0 8px 0 #0000000d !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #f5f5f5 !important;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033 !important;
+  --tab-switcher-background: rgb(245, 245, 245) !important;
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px #0000000d !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #6a8695 !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(106, 134, 149) !important;
   --tab-text-color: hsl(0, -10%, 71%) !important;
   --tab-text-color-active: hsl(0, -20%, 46%) !important;
   --tab-text-color-focused: hsl(0, -20%, 46%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 6%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 6%) !important;
-  --tab-text-color-focused-highlighted: #6a8695 !important;
+  --tab-text-color-focused-active: rgb(15, 15, 15) !important;
+  --tab-text-color-focused-active-current: rgb(15, 15, 15) !important;
+  --tab-text-color-focused-highlighted: rgb(106, 134, 149) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(0, 0%, 90%) !important;
+  --table-add-button-border-color: rgb(230, 230, 230) !important;
   --table-add-button-border-width: 0px !important;
   --table-background: transparent !important;
-  --table-border-color: hsl(0, 0%, 90%) !important;
+  --table-border-color: rgb(230, 230, 230) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -815,12 +819,12 @@ body.theme-light {
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: hsla(201, 50%, 76%, 30%) !important;
   --table-drag-handle-color: hsl(0, -10%, 71%) !important;
-  --table-drag-handle-color-active: #6a8695 !important;
+  --table-drag-handle-color-active: rgb(106, 134, 149) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: hsl(0, 0%, 90%) !important;
+  --table-header-border-color: rgb(230, 230, 230) !important;
   --table-header-border-width: 0 !important;
-  --table-header-color: hsl(0, 0%, 6%) !important;
+  --table-header-color: rgb(15, 15, 15) !important;
   --table-header-size: 14px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -830,44 +834,44 @@ body.theme-light {
   --table-row-last-border-width: 0 !important;
   --table-selection: hsla(201, 50%, 76%, 30%) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: #6a8695 !important;
+  --table-selection-border-color: rgb(106, 134, 149) !important;
   --table-selection-border-radius: 0px !important;
   --table-selection-border-width: 0px !important;
   --table-text-size: 14px !important;
   --table-white-space: normal !important;
   --tag-background: transparent !important;
   --tag-background-hover: transparent !important;
-  --tag-border-color: hsl(0, 0%, 90%) !important;
-  --tag-border-color-hover: hsl(0, 0%, 84%) !important;
+  --tag-border-color: rgb(230, 230, 230) !important;
+  --tag-border-color-hover: rgb(214, 214, 214) !important;
   --tag-border-width: 1px !important;
   --tag-color: hsl(0, -20%, 46%) !important;
-  --tag-color-hover: hsl(0, 0%, 6%) !important;
+  --tag-color-hover: rgb(15, 15, 15) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.2em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent: #6a8695 !important;
-  --text-accent-hover: hsl(201, 17%, 42%) !important;
+  --text-accent: rgb(106, 134, 149) !important;
+  --text-accent-hover: rgb(89, 113, 125) !important;
   --text-error: #d04255 !important;
   --text-faint: hsl(0, -10%, 71%) !important;
-  --text-highlight-bg: #ffe10080 !important;
+  --text-highlight-bg: rgba(255, 225, 0, 0.5) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: hsl(0, -20%, 46%) !important;
-  --text-normal: hsl(0, 0%, 6%) !important;
-  --text-on-accent: #ffffff !important;
-  --text-on-accent-inverted: #000000 !important;
+  --text-normal: rgb(15, 15, 15) !important;
+  --text-on-accent: white !important;
+  --text-on-accent-inverted: black !important;
   --text-selection: hsla(201, 50%, 76%, 30%) !important;
   --text-success: #a8c373 !important;
   --text-warning: #d5763f !important;
-  --titlebar-background: #ffffff !important;
-  --titlebar-background-focused: #f5f5f5 !important;
-  --titlebar-border-color: hsl(0, 0%, 90%) !important;
+  --titlebar-background: white !important;
+  --titlebar-background-focused: rgb(245, 245, 245) !important;
+  --titlebar-border-color: rgb(230, 230, 230) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: hsl(0, -20%, 46%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 6%) !important;
+  --titlebar-text-color-focused: rgb(15, 15, 15) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -875,43 +879,43 @@ body.theme-light {
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: #ffffff !important;
+  --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsl(0, 0%, 6%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 6%) !important;
+  --vault-profile-color: rgb(15, 15, 15) !important;
+  --vault-profile-color-hover: rgb(15, 15, 15) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: #f5f5f5b3 !important;
+  --workspace-background-translucent: rgba(245, 245, 245, 0.7) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --background-modifier-form-field-highlighted: #ffffff !important;
+  --background-modifier-form-field-highlighted: white !important;
   --blockquote-color: hsl(0, -20%, 46%) !important;
   --blockquote-style: normal !important;
-  --background-modifier-accent: hsl(201, 17%, 56%) !important;
-  --background-table-rows: #f5f5f5 !important;
-  --frame-divider-color: hsl(0, 0%, 90%) !important;
-  --quote-opening-modifier: hsl(0, 0%, 84%) !important;
+  --background-modifier-accent: rgb(124, 149, 162) !important;
+  --background-table-rows: rgb(245, 245, 245) !important;
+  --frame-divider-color: rgb(230, 230, 230) !important;
+  --quote-opening-modifier: rgb(214, 214, 214) !important;
   --text-blockquote: hsl(0, -20%, 46%) !important;
-  --text-bold: hsl(0, 0%, 6%) !important;
+  --text-bold: rgb(15, 15, 15) !important;
   --text-code: hsl(0, -10%, 36%) !important;
   --text-formatting: hsl(0, -10%, 71%) !important;
-  --text-italic: hsl(0, 0%, 6%) !important;
+  --text-italic: rgb(15, 15, 15) !important;
   --pdf-dark-opacity: 1 !important;
-  --text-highlight-bg-active: #0000001a !important;
+  --text-highlight-bg-active: rgba(0, 0, 0, 0.1) !important;
   --base-h: 0 !important;
   --base-l: 96% !important;
   --base-s: 0% !important;
   --font-editor-theme:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
     sans-serif !important;
-  --icon-hex: #ffffff !important;
+  --icon-hex: white !important;
   --icon-muted: 0.5 !important;
   --line-height: 1.5 !important;
   --line-width: 40rem !important;
@@ -933,17 +937,17 @@ body.theme-light {
   --folding-offset: 32px !important;
   --max-col-width: 18em !important;
   --nested-padding: 1.1em !important;
-  --active-line-bg: #00000009 !important;
+  --active-line-bg: rgba(0, 0, 0, 0.035) !important;
   --font-code: 14.4px !important;
   --cards-border-width: 1px !important;
   --checkbox-left: 0px !important;
   --checkbox-margin: 0px 6px 0px -2em !important;
   --checkbox-top: 2px !important;
-  --bg1: #ffffff !important;
-  --bg2: #f5f5f5 !important;
+  --bg1: white !important;
+  --bg2: rgb(245, 245, 245) !important;
   --bg3: hsla(0, 0%, 46%, 0.12) !important;
-  --shadow-color: #0000001a !important;
-  --btn-shadow-color: #0000000d !important;
+  --shadow-color: rgba(0, 0, 0, 0.1) !important;
+  --btn-shadow-color: rgba(0, 0, 0, 0.05) !important;
   --font-adaptive-normal: 16px !important;
   --font-adaptive-small: 13.91px !important;
   --font-adaptive-smaller: 13px !important;
@@ -954,16 +958,16 @@ body.theme-light {
   --metadata-label-width-multiplier: 9 !important;
   --mobile-left-sidebar-width: 280pt !important;
   --mobile-right-sidebar-width: 240pt !important;
-  --mono0: #ffffff !important;
-  --mono100: #000000 !important;
+  --mono0: white !important;
+  --mono100: black !important;
   --top-left-padding-y: 24px !important;
   --line-number-color: hsl(0, -10%, 71%) !important;
   --adaptive-list-edit-offset: 0.5em !important;
-  --ax1: #6a8695 !important;
-  --ax2: hsl(201, 17%, 42%) !important;
-  --ax3: hsl(201, 17%, 56%) !important;
+  --ax1: rgb(106, 134, 149) !important;
+  --ax2: rgb(89, 113, 125) !important;
+  --ax3: rgb(124, 149, 162) !important;
   --calendar-dot-active: hsl(0, -10%, 71%) !important;
-  --calendar-dot-today: #6a8695 !important;
+  --calendar-dot-today: rgb(106, 134, 149) !important;
   --chart-color-1: #6c99bb !important;
   --chart-color-2: #d04255 !important;
   --chart-color-3: #e5b567 !important;
@@ -991,25 +995,25 @@ body.theme-light {
   --content-line-width: min(40rem, 88%) !important;
   --content-margin: auto !important;
   --content-margin-start: max(calc(50% - 20rem), 6%) !important;
-  --embed-decoration-color: hsl(0, 0%, 84%) !important;
+  --embed-decoration-color: rgb(214, 214, 214) !important;
   --embed-decoration-style: solid !important;
   --focus-animation-duration: 0.1s !important;
-  --frame-background: hsl(201, 17%, 80%) !important;
+  --frame-background: rgb(195, 207, 213) !important;
   --frame-background-h: 201 !important;
   --frame-background-l: 80% !important;
   --frame-background-s: 17% !important;
-  --frame-icon-color: hsl(201, 7%, 45%) !important;
-  --frame-muted-color: hsl(201, 7%, 45%) !important;
-  --frame-outline-color: hsla(201, 17%, 73.5%, 1) !important;
-  --h1l: hsl(0, 0%, 90%) !important;
-  --h2l: hsl(0, 0%, 90%) !important;
-  --h3l: hsl(0, 0%, 90%) !important;
-  --h4l: hsl(0, 0%, 90%) !important;
-  --h5l: hsl(0, 0%, 90%) !important;
-  --h6l: hsl(0, 0%, 90%) !important;
+  --frame-icon-color: rgb(107, 117, 123) !important;
+  --frame-muted-color: rgb(107, 117, 123) !important;
+  --frame-outline-color: hsla(201, 17%, 74%, 1) !important;
+  --h1l: rgb(230, 230, 230) !important;
+  --h2l: rgb(230, 230, 230) !important;
+  --h3l: rgb(230, 230, 230) !important;
+  --h4l: rgb(230, 230, 230) !important;
+  --h5l: rgb(230, 230, 230) !important;
+  --h6l: rgb(230, 230, 230) !important;
   --hider-ribbon-display: none !important;
   --hl1: hsla(201, 50%, 76%, 30%) !important;
-  --hl2: #ffe10080 !important;
+  --hl2: rgba(255, 225, 0, 0.5) !important;
   --iframe-max-width: none !important;
   --image-grid-background: transparent !important;
   --image-grid-fit: cover !important;
@@ -1019,19 +1023,19 @@ body.theme-light {
   --img-margin-start: max(calc(50% - 20rem), 6%) !important;
   --img-max-width: 100% !important;
   --img-width: auto !important;
-  --leaflet-borders: #0000001a !important;
-  --leaflet-buttons: #ffffff !important;
+  --leaflet-borders: rgba(0, 0, 0, 0.1) !important;
+  --leaflet-buttons: white !important;
   --line-number-color-active: hsl(0, -20%, 46%) !important;
   --map-max-width: none !important;
   --map-width: auto !important;
   --minimal-tab-text-color: hsl(0, -20%, 46%) !important;
-  --minimal-tab-text-color-active: hsl(0, 0%, 6%) !important;
-  --mobile-sidebar-background: #ffffff !important;
-  --progress-complete: #6a8695 !important;
-  --progress-outline: hsl(0, 0%, 90%) !important;
+  --minimal-tab-text-color-active: rgb(15, 15, 15) !important;
+  --mobile-sidebar-background: white !important;
+  --progress-complete: rgb(106, 134, 149) !important;
+  --progress-outline: rgb(230, 230, 230) !important;
   --ribbon-animation-duration: 0.1s !important;
-  --sp1: #ffffff !important;
-  --tab-switcher-menubar-background: #ffffff !important;
+  --sp1: white !important;
+  --tab-switcher-menubar-background: white !important;
   --table-cell-padding: 4px 10px !important;
   --table-drag-padding: 16px !important;
   --table-drag-space: 16px !important;
@@ -1039,15 +1043,15 @@ body.theme-light {
   --table-edge-cell-padding-last: 0 !important;
   --table-max-width: none !important;
   --table-wrapper-width: fit-content !important;
-  --title-color: hsl(0, 0%, 6%) !important;
+  --title-color: rgb(15, 15, 15) !important;
   --title-color-inactive: hsl(0, -20%, 46%) !important;
-  --tx1: hsl(0, 0%, 6%) !important;
+  --tx1: rgb(15, 15, 15) !important;
   --tx2: hsl(0, -20%, 46%) !important;
   --tx3: hsl(0, -10%, 71%) !important;
   --tx4: hsl(0, -10%, 36%) !important;
-  --ui1: hsl(0, 0%, 90%) !important;
-  --ui2: hsl(0, 0%, 84%) !important;
-  --ui3: hsl(0, 0%, 76%) !important;
+  --ui1: rgb(230, 230, 230) !important;
+  --ui2: rgb(214, 214, 214) !important;
+  --ui3: rgb(194, 194, 194) !important;
 }
 
 body.theme-dark {
@@ -1064,35 +1068,35 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(0, 0%, 55%, 0.12);
-  --background-modifier-border: hsl(0, 0%, 21%);
-  --background-modifier-border-focus: hsl(0, 0%, 35%);
-  --background-modifier-border-hover: hsl(0, 0%, 27%);
-  --background-modifier-box-shadow: #0000004d;
-  --background-modifier-cover: hsla(0, 0%, 3%, 0.5);
-  --background-modifier-error: #ff14141f;
-  --background-modifier-error-hover: #ff14142e;
+  --background-modifier-border: rgb(54, 54, 54);
+  --background-modifier-border-focus: rgb(89, 89, 89);
+  --background-modifier-border-hover: rgb(69, 69, 69);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(8, 8, 8, 0.5);
+  --background-modifier-error: rgba(255, 20, 20, 0.12);
+  --background-modifier-error-hover: rgba(255, 20, 20, 0.18);
   --background-modifier-error-rgb: 208, 66, 85;
-  --background-modifier-form-field: #262626;
-  --background-modifier-form-field-hover: #262626;
+  --background-modifier-form-field: rgb(38, 38, 38);
+  --background-modifier-form-field-hover: rgb(38, 38, 38);
   --background-modifier-hover: hsla(0, 0%, 55%, 0.12);
-  --background-modifier-message: #000000e6;
+  --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: #a8c373;
   --background-modifier-success-rgb: 168, 195, 115;
-  --background-primary: #262626;
-  --background-primary-alt: hsl(0, 0%, 13%);
-  --background-secondary: hsl(0, 0%, 13%);
-  --background-secondary-alt: #262626;
-  --bases-cards-background: #262626;
+  --background-primary: rgb(38, 38, 38);
+  --background-primary-alt: rgb(33, 33, 33);
+  --background-secondary: rgb(33, 33, 33);
+  --background-secondary-alt: rgb(38, 38, 38);
+  --bases-cards-background: rgb(38, 38, 38);
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: hsl(0, 0%, 13%);
+  --bases-cards-cover-background: rgb(33, 33, 33);
   --bases-cards-group-padding: 12px;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 21%);
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 27%);
+  --bases-cards-shadow: 0 0 0 1px rgb(54, 54, 54);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(69, 69, 69);
   --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: hsl(0, 0%, 21%);
+  --bases-embed-border-color: rgb(54, 54, 54);
   --bases-embed-border-radius: 4px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
@@ -1100,24 +1104,24 @@ body.theme-dark {
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: hsl(0, 0%, 21%);
-  --bases-table-cell-background-active: #262626;
-  --bases-table-cell-background-disabled: hsl(0, 0%, 13%);
+  --bases-table-border-color: rgb(54, 54, 54);
+  --bases-table-cell-background-active: rgb(38, 38, 38);
+  --bases-table-cell-background-disabled: rgb(33, 33, 33);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(201, 17%, 55%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(121, 146, 160);
   --bases-table-column-border-width: 0px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-header-background: #262626;
+  --bases-table-header-background: rgb(38, 38, 38);
   --bases-table-header-background-hover: hsla(0, 0%, 55%, 0.12);
   --bases-table-header-color: hsl(0, -20%, 60%);
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
-    #000000 24px
+    black 24px
   );
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
@@ -1127,7 +1131,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(0, 0%, 27%);
+  --blockquote-border-color: rgb(69, 69, 69);
   --blockquote-border-thickness: 1px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -1157,7 +1161,7 @@ body.theme-dark {
   --callout-title-weight: 600;
   --callout-todo: 108, 153, 187;
   --callout-warning: 213, 118, 63;
-  --canvas-background: #262626;
+  --canvas-background: rgb(38, 38, 38);
   --canvas-card-label-color: hsl(0, -10%, 35%);
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 208, 66, 85;
@@ -1166,21 +1170,21 @@ body.theme-dark {
   --canvas-color-4: 168, 195, 115;
   --canvas-color-5: 115, 187, 178;
   --canvas-color-6: 158, 134, 200;
-  --canvas-dot-pattern: hsl(0, 0%, 27%);
+  --canvas-dot-pattern: rgb(69, 69, 69);
   --caret-color: hsl(0, -10%, 82%);
   --checkbox-border-color: hsl(0, -10%, 35%);
   --checkbox-border-color-hover: hsl(0, -20%, 60%);
-  --checkbox-color: hsl(201, 17%, 55%);
-  --checkbox-color-hover: #889eaa;
+  --checkbox-color: rgb(121, 146, 160);
+  --checkbox-color-hover: rgb(136, 158, 170);
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: #262626;
+  --checkbox-marker-color: rgb(38, 38, 38);
   --checkbox-radius: 50%;
   --checkbox-size: 16px;
   --checklist-done-color: hsl(0, -10%, 82%);
   --checklist-done-decoration: none;
   --clickable-icon-radius: 4px;
-  --code-background: hsl(0, 0%, 13%);
-  --code-border-color: hsl(0, 0%, 21%);
+  --code-background: rgb(33, 33, 33);
+  --code-border-color: rgb(54, 54, 54);
   --code-border-width: 0px;
   --code-bracket-background: hsla(0, 0%, 55%, 0.12);
   --code-comment: hsl(0, -10%, 35%);
@@ -1198,10 +1202,10 @@ body.theme-dark {
   --code-value: #9e86c8;
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(0, -10%, 35%);
-  --collapse-icon-color-collapsed: #889eaa;
-  --color-accent: #889eaa;
-  --color-accent-1: hsl(198, 17.34%, 69%);
-  --color-accent-2: hsl(196, 17.85%, 77.4%);
+  --collapse-icon-color-collapsed: rgb(136, 158, 170);
+  --color-accent: rgb(136, 158, 170);
+  --color-accent-1: rgb(163, 181, 189);
+  --color-accent-2: rgb(186, 201, 207);
   --color-accent-hsl: 201, 17%, 60%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1237,23 +1241,23 @@ body.theme-dark {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: hsl(0, 0%, 21%);
-  --divider-color-hover: hsl(201, 17%, 55%);
+  --divider-color: rgb(54, 54, 54);
+  --divider-color-hover: rgb(121, 146, 160);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: #000000d9;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
   --dropdown-background: hsla(0, 0%, 55%, 0.12);
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: hsl(0, 0%, 21%);
+  --dropdown-background-hover: rgb(54, 54, 54);
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-block-shadow-hover: none;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(201, 17%, 55%);
+  --embed-border-start: 2px solid rgb(121, 146, 160);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: none;
@@ -1323,7 +1327,7 @@ body.theme-dark {
   --font-ui-small: 13px;
   --font-ui-smaller: 11px;
   --font-weight: 400;
-  --footnote-divider-color: hsl(0, 0%, 21%);
+  --footnote-divider-color: rgb(54, 54, 54);
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
@@ -1343,7 +1347,7 @@ body.theme-dark {
   --graph-line: #3f3f3f;
   --graph-node: hsl(0, -20%, 60%);
   --graph-node-attachment: #e5b567;
-  --graph-node-focused: #889eaa;
+  --graph-node-focused: rgb(136, 158, 170);
   --graph-node-tag: #a8c373;
   --graph-node-unresolved: hsl(0, -10%, 35%);
   --graph-text: hsl(0, -10%, 82%);
@@ -1381,7 +1385,7 @@ body.theme-dark {
   --heading-formatting: hsl(0, -10%, 35%);
   --heading-spacing: 2em;
   --highlight-mix-blend-mode: lighten;
-  --hr-color: hsl(0, 0%, 21%);
+  --hr-color: rgb(54, 54, 54);
   --hr-thickness: 2px;
   --icon-color: hsl(0, -20%, 60%);
   --icon-color-active: hsl(0, -10%, 82%);
@@ -1404,8 +1408,8 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: #ffffff1f;
-  --indentation-guide-color-active: #ffffff4d;
+  --indentation-guide-color: rgba(255, 255, 255, 0.12);
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -1426,16 +1430,18 @@ body.theme-dark {
   --input-placeholder-color: hsl(0, -10%, 35%);
   --input-radius: 5px;
   --input-shadow:
-    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
-    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
   --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
-    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
-  --interactive-accent: hsl(201, 17%, 55%);
-  --interactive-accent-hover: #889eaa;
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: rgb(121, 146, 160);
+  --interactive-accent-hover: rgb(136, 158, 170);
   --interactive-accent-hsl: 201, 17%, 60%;
   --interactive-accent-rgb: 66, 66, 66;
-  --interactive-hover: hsl(0, 0%, 21%);
+  --interactive-hover: rgb(54, 54, 54);
   --interactive-normal: hsla(0, 0%, 55%, 0.12);
   --keyboard-height: 0px;
   --layer-cover: 5;
@@ -1450,18 +1456,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #889eaa;
-  --link-color-hover: hsl(201, 17%, 68%);
+  --link-color: rgb(136, 158, 170);
+  --link-color-hover: rgb(160, 178, 187);
   --link-decoration: none;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #889eaa;
-  --link-external-color-hover: hsl(201, 17%, 68%);
+  --link-external-color: rgb(136, 158, 170);
+  --link-external-color-hover: rgb(160, 178, 187);
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #889eaa;
-  --link-unresolved-decoration-color: #889eaa4d;
+  --link-unresolved-color: rgb(136, 158, 170);
+  --link-unresolved-decoration-color: rgba(136, 158, 170, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1475,26 +1481,27 @@ body.theme-dark {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: hsl(0, -10%, 35%);
-  --list-marker-color-collapsed: #889eaa;
+  --list-marker-color-collapsed: rgb(136, 158, 170);
   --list-marker-color-hover: hsl(0, -20%, 60%);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
-  --menu-background: hsl(0, 0%, 13%);
-  --menu-border-color: hsl(0, 0%, 27%);
+  --menu-background: rgb(33, 33, 33);
+  --menu-border-color: rgb(69, 69, 69);
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
   --menu-shadow:
-    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
   --metadata-background: transparent;
-  --metadata-border-color: hsl(0, 0%, 21%);
+  --metadata-border-color: rgb(54, 54, 54);
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: hsl(0, 0%, 21%);
+  --metadata-divider-color: rgb(54, 54, 54);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
@@ -1526,16 +1533,16 @@ body.theme-dark {
   --metadata-property-background: transparent;
   --metadata-property-background-active: hsla(0, 0%, 55%, 0.12);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 35%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 27%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(89, 89, 89);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(69, 69, 69);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 13px;
   --metadata-sidebar-label-font-size: 13px;
-  --modal-background: #262626;
-  --modal-border-color: hsl(0, 0%, 27%);
+  --modal-background: rgb(38, 38, 38);
+  --modal-border-color: rgb(69, 69, 69);
   --modal-border-width: 1px;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -1554,16 +1561,16 @@ body.theme-dark {
   --nav-heading-color-hover: hsl(0, -10%, 82%);
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: hsl(0, 0%, 21%);
+  --nav-indentation-guide-color: rgb(54, 54, 54);
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: hsla(0, 0%, 55%, 0.12);
   --nav-item-background-hover: hsla(0, 0%, 55%, 0.12);
-  --nav-item-background-selected: #889eaa26;
+  --nav-item-background-selected: rgba(136, 158, 170, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: hsl(0, -20%, 60%);
   --nav-item-color-active: hsl(0, -10%, 82%);
-  --nav-item-color-highlighted: #889eaa;
+  --nav-item-color-highlighted: rgb(136, 158, 170);
   --nav-item-color-hover: hsl(0, -10%, 82%);
   --nav-item-color-selected: hsl(0, -10%, 82%);
   --nav-item-padding: 4px 8px 4px 24px;
@@ -1574,22 +1581,22 @@ body.theme-dark {
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
-  --pdf-background: #262626;
-  --pdf-page-background: #262626;
+  --pdf-background: rgb(38, 38, 38);
+  --pdf-page-background: rgb(38, 38, 38);
   --pdf-shadow: none;
-  --pdf-sidebar-background: #262626;
-  --pdf-spread-shadow: 0 0 0 1px #0000000d;
+  --pdf-sidebar-background: rgb(38, 38, 38);
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   --pdf-thumbnail-shadow: none;
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: hsl(0, 0%, 21%);
-  --pill-border-color-hover: hsl(0, 0%, 27%);
+  --pill-border-color: rgb(54, 54, 54);
+  --pill-border-color-hover: rgb(69, 69, 69);
   --pill-border-width: 1px;
   --pill-color: hsl(0, -20%, 60%);
   --pill-color-hover: hsl(0, -10%, 82%);
   --pill-color-remove: hsl(0, -10%, 35%);
-  --pill-color-remove-hover: #889eaa;
+  --pill-color-remove-hover: rgb(136, 158, 170);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1603,7 +1610,7 @@ body.theme-dark {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: hsl(0, 0%, 35%);
+  --prompt-border-color: rgb(89, 89, 89);
   --prompt-border-width: 1px;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -1613,31 +1620,32 @@ body.theme-dark {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: hsl(0, 0%, 13%);
-  --ribbon-background-collapsed: #262626;
+  --ribbon-background: rgb(33, 33, 33);
+  --ribbon-background-collapsed: rgb(38, 38, 38);
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --safe-area-inset-bottom: 0px;
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px;
   --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: hsl(0, 0%, 35%);
+  --scrollbar-active-thumb-bg: rgb(89, 89, 89);
   --scrollbar-bg: transparent;
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
   --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: hsl(0, 0%, 21%);
+  --scrollbar-thumb-bg: rgb(54, 54, 54);
   --scrollbar-width: 12px;
   --search-clear-button-color: hsl(0, -20%, 60%);
   --search-clear-button-size: 13px;
   --search-icon-color: hsl(0, -20%, 60%);
   --search-icon-size: 18px;
-  --search-result-background: #262626;
+  --search-result-background: rgb(38, 38, 38);
   --shadow-l:
-    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
-    0px 30px 90px #00000033;
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
-    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -1657,17 +1665,17 @@ body.theme-dark {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: hsl(0, 0%, 27%);
+  --slider-thumb-border-color: rgb(69, 69, 69);
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: hsl(0, 0%, 21%);
+  --slider-track-background: rgb(54, 54, 54);
   --slider-track-height: 3px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --status-bar-background: hsl(0, 0%, 13%);
-  --status-bar-border-color: hsl(0, 0%, 21%);
+  --status-bar-background: rgb(33, 33, 33);
+  --status-bar-border-color: rgb(54, 54, 54);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 11px;
   --status-bar-position: fixed;
@@ -1675,7 +1683,7 @@ body.theme-dark {
   --status-bar-text-color: hsl(0, -20%, 60%);
   --swatch-height: 22px;
   --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px #ffffff26;
+  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   --swatch-width: 22px;
   --sync-avatar-color-1: #d04255;
   --sync-avatar-color-2: #d5763f;
@@ -1686,13 +1694,13 @@ body.theme-dark {
   --sync-avatar-color-7: #9e86c8;
   --sync-avatar-color-8: #b05279;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: #262626;
-  --tab-container-background: hsl(0, 0%, 13%);
+  --tab-background-active: rgb(38, 38, 38);
+  --tab-container-background: rgb(33, 33, 33);
   --tab-curve: 6px;
-  --tab-divider-color: hsl(0, 0%, 27%);
+  --tab-divider-color: rgb(69, 69, 69);
   --tab-font-size: 13px;
   --tab-max-width: 320px;
-  --tab-outline-color: hsl(0, 0%, 21%);
+  --tab-outline-color: rgb(54, 54, 54);
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -1700,27 +1708,27 @@ body.theme-dark {
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: -8px 0 8px 0 #0000000d;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: hsl(0, 0%, 13%);
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033;
+  --tab-switcher-background: rgb(33, 33, 33);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #889eaa;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(136, 158, 170);
   --tab-text-color: hsl(0, -10%, 35%);
   --tab-text-color-active: hsl(0, -20%, 60%);
   --tab-text-color-focused: hsl(0, -20%, 60%);
   --tab-text-color-focused-active: hsl(0, -10%, 82%);
   --tab-text-color-focused-active-current: hsl(0, -10%, 82%);
-  --tab-text-color-focused-highlighted: #889eaa;
+  --tab-text-color-focused-highlighted: rgb(136, 158, 170);
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: hsl(0, 0%, 21%);
+  --table-add-button-border-color: rgb(54, 54, 54);
   --table-add-button-border-width: 0px;
   --table-background: transparent;
-  --table-border-color: hsl(0, 0%, 21%);
+  --table-border-color: rgb(54, 54, 54);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -1729,12 +1737,12 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: #3375994d;
+  --table-drag-handle-background-active: hsla(201, 50%, 40%, 30%);
   --table-drag-handle-color: hsl(0, -10%, 35%);
-  --table-drag-handle-color-active: #889eaa;
+  --table-drag-handle-color-active: rgb(136, 158, 170);
   --table-drop-indicator-half-width: 2px;
   --table-header-background: transparent;
-  --table-header-border-color: hsl(0, 0%, 21%);
+  --table-header-border-color: rgb(54, 54, 54);
   --table-header-border-width: 0;
   --table-header-color: hsl(0, -10%, 82%);
   --table-header-size: 14px;
@@ -1744,17 +1752,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 0;
-  --table-selection: #3375994d;
+  --table-selection: hsla(201, 50%, 40%, 30%);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: #889eaa;
+  --table-selection-border-color: rgb(136, 158, 170);
   --table-selection-border-radius: 0px;
   --table-selection-border-width: 0px;
   --table-text-size: 14px;
   --table-white-space: normal;
   --tag-background: transparent;
   --tag-background-hover: transparent;
-  --tag-border-color: hsl(0, 0%, 21%);
-  --tag-border-color-hover: hsl(0, 0%, 27%);
+  --tag-border-color: rgb(54, 54, 54);
+  --tag-border-color-hover: rgb(69, 69, 69);
   --tag-border-width: 1px;
   --tag-color: hsl(0, -20%, 60%);
   --tag-color-hover: hsl(0, -10%, 82%);
@@ -1764,22 +1772,22 @@ body.theme-dark {
   --tag-padding-y: 0.2em;
   --tag-radius: 2em;
   --tag-size: 0.8em;
-  --text-accent: #889eaa;
-  --text-accent-hover: hsl(201, 17%, 68%);
+  --text-accent: rgb(136, 158, 170);
+  --text-accent-hover: rgb(160, 178, 187);
   --text-error: #d04255;
   --text-faint: hsl(0, -10%, 35%);
-  --text-highlight-bg: #ffb1504d;
+  --text-highlight-bg: rgba(255, 177, 80, 0.3);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: hsl(0, -20%, 60%);
   --text-normal: hsl(0, -10%, 82%);
-  --text-on-accent: #ffffff;
-  --text-on-accent-inverted: #000000;
-  --text-selection: #3375994d;
+  --text-on-accent: white;
+  --text-on-accent-inverted: black;
+  --text-selection: hsla(201, 50%, 40%, 30%);
   --text-success: #a8c373;
   --text-warning: #d5763f;
-  --titlebar-background: #262626;
-  --titlebar-background-focused: hsl(0, 0%, 13%);
-  --titlebar-border-color: hsl(0, 0%, 21%);
+  --titlebar-background: rgb(38, 38, 38);
+  --titlebar-background-focused: rgb(33, 33, 33);
+  --titlebar-border-color: rgb(54, 54, 54);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: hsl(0, -20%, 60%);
@@ -1791,7 +1799,7 @@ body.theme-dark {
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 34px;
-  --toggle-thumb-color: #ffffff;
+  --toggle-thumb-color: white;
   --toggle-thumb-height: 18px;
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
@@ -1803,31 +1811,31 @@ body.theme-dark {
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
-  --workspace-background-translucent: #262626b3;
+  --workspace-background-translucent: rgba(38, 38, 38, 0.7);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
-  --background-modifier-form-field-highlighted: #262626;
+  --background-modifier-form-field-highlighted: rgb(38, 38, 38);
   --blockquote-color: hsl(0, -20%, 60%);
   --blockquote-style: normal;
-  --background-modifier-accent: hsl(201, 17%, 55%);
-  --background-table-rows: hsl(0, 0%, 13%);
-  --frame-divider-color: hsl(0, 0%, 21%);
-  --quote-opening-modifier: hsl(0, 0%, 27%);
+  --background-modifier-accent: rgb(121, 146, 160);
+  --background-table-rows: rgb(33, 33, 33);
+  --frame-divider-color: rgb(54, 54, 54);
+  --quote-opening-modifier: rgb(69, 69, 69);
   --text-blockquote: hsl(0, -20%, 60%);
   --text-bold: hsl(0, -10%, 82%);
   --text-code: hsl(0, -10%, 65%);
   --text-formatting: hsl(0, -10%, 35%);
   --text-italic: hsl(0, -10%, 82%);
   --pdf-dark-opacity: 1;
-  --text-highlight-bg-active: #ffffff1a;
+  --text-highlight-bg-active: rgba(255, 255, 255, 0.1);
   --base-h: 0;
   --base-l: 15%;
   --base-s: 0%;
   --font-editor-theme:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
     sans-serif;
-  --icon-hex: #000000;
+  --icon-hex: black;
   --icon-muted: 0.5;
   --line-height: 1.5;
   --line-width: 40rem;
@@ -1849,17 +1857,17 @@ body.theme-dark {
   --folding-offset: 32px;
   --max-col-width: 18em;
   --nested-padding: 1.1em;
-  --active-line-bg: #ffffff0a;
+  --active-line-bg: rgba(255, 255, 255, 0.04);
   --font-code: 14.4px;
   --cards-border-width: 1px;
   --checkbox-left: 0px;
   --checkbox-margin: 0px 6px 0px -2em;
   --checkbox-top: 2px;
-  --bg1: #262626;
-  --bg2: hsl(0, 0%, 13%);
+  --bg1: rgb(38, 38, 38);
+  --bg2: rgb(33, 33, 33);
   --bg3: hsla(0, 0%, 55%, 0.12);
-  --shadow-color: #0000004d;
-  --btn-shadow-color: #00000033;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --btn-shadow-color: rgba(0, 0, 0, 0.2);
   --font-adaptive-normal: 16px;
   --font-adaptive-small: 13.91px;
   --font-adaptive-smaller: 13px;
@@ -1870,16 +1878,16 @@ body.theme-dark {
   --metadata-label-width-multiplier: 9;
   --mobile-left-sidebar-width: 280pt;
   --mobile-right-sidebar-width: 240pt;
-  --mono0: #000000;
-  --mono100: #ffffff;
+  --mono0: black;
+  --mono100: white;
   --top-left-padding-y: 24px;
   --line-number-color: hsl(0, -10%, 35%);
   --adaptive-list-edit-offset: 0.5em;
-  --ax1: #889eaa;
-  --ax2: hsl(201, 17%, 68%);
-  --ax3: hsl(201, 17%, 55%);
+  --ax1: rgb(136, 158, 170);
+  --ax2: rgb(160, 178, 187);
+  --ax3: rgb(121, 146, 160);
   --calendar-dot-active: hsl(0, -10%, 35%);
-  --calendar-dot-today: #889eaa;
+  --calendar-dot-today: rgb(136, 158, 170);
   --chart-color-1: #6c99bb;
   --chart-color-2: #d04255;
   --chart-color-3: #e5b567;
@@ -1907,25 +1915,25 @@ body.theme-dark {
   --content-line-width: min(40rem, 88%);
   --content-margin: auto;
   --content-margin-start: max(calc(50% - 20rem), 6%);
-  --embed-decoration-color: hsl(0, 0%, 27%);
+  --embed-decoration-color: rgb(69, 69, 69);
   --embed-decoration-style: solid;
   --focus-animation-duration: 0.1s;
-  --frame-background: hsl(201, 17%, 35%);
+  --frame-background: rgb(74, 94, 104);
   --frame-background-h: 201;
   --frame-background-l: 35%;
   --frame-background-s: 17%;
-  --frame-icon-color: hsl(201, 7%, 60%);
-  --frame-muted-color: hsl(201, 7%, 60%);
-  --frame-outline-color: hsla(201, 15%, 41.5%, 1);
-  --h1l: hsl(0, 0%, 21%);
-  --h2l: hsl(0, 0%, 21%);
-  --h3l: hsl(0, 0%, 21%);
-  --h4l: hsl(0, 0%, 21%);
-  --h5l: hsl(0, 0%, 21%);
-  --h6l: hsl(0, 0%, 21%);
+  --frame-icon-color: rgb(146, 155, 160);
+  --frame-muted-color: rgb(146, 155, 160);
+  --frame-outline-color: hsla(201, 15%, 42%, 1);
+  --h1l: rgb(54, 54, 54);
+  --h2l: rgb(54, 54, 54);
+  --h3l: rgb(54, 54, 54);
+  --h4l: rgb(54, 54, 54);
+  --h5l: rgb(54, 54, 54);
+  --h6l: rgb(54, 54, 54);
   --hider-ribbon-display: none;
-  --hl1: #3375994d;
-  --hl2: #ffb1504d;
+  --hl1: hsla(201, 50%, 40%, 30%);
+  --hl2: rgba(255, 177, 80, 0.3);
   --iframe-max-width: none;
   --image-grid-background: transparent;
   --image-grid-fit: cover;
@@ -1936,19 +1944,19 @@ body.theme-dark {
   --img-max-width: 100%;
   --img-width: auto;
   --kanban-border: 0px;
-  --leaflet-borders: #ffffff1a;
-  --leaflet-buttons: hsl(0, 0%, 13%);
+  --leaflet-borders: rgba(255, 255, 255, 0.1);
+  --leaflet-buttons: rgb(33, 33, 33);
   --line-number-color-active: hsl(0, -20%, 60%);
   --map-max-width: none;
   --map-width: auto;
   --minimal-tab-text-color: hsl(0, -20%, 60%);
   --minimal-tab-text-color-active: hsl(0, -10%, 82%);
-  --mobile-sidebar-background: #262626;
-  --progress-complete: #889eaa;
-  --progress-outline: hsl(0, 0%, 21%);
+  --mobile-sidebar-background: rgb(38, 38, 38);
+  --progress-complete: rgb(136, 158, 170);
+  --progress-outline: rgb(54, 54, 54);
   --ribbon-animation-duration: 0.1s;
-  --sp1: #ffffff;
-  --tab-switcher-menubar-background: #262626;
+  --sp1: white;
+  --tab-switcher-menubar-background: rgb(38, 38, 38);
   --table-cell-padding: 4px 10px;
   --table-drag-padding: 16px;
   --table-drag-space: 16px;
@@ -1962,14 +1970,14 @@ body.theme-dark {
   --tx2: hsl(0, -20%, 60%);
   --tx3: hsl(0, -10%, 35%);
   --tx4: hsl(0, -10%, 65%);
-  --ui1: hsl(0, 0%, 21%);
-  --ui2: hsl(0, 0%, 27%);
-  --ui3: hsl(0, 0%, 35%);
+  --ui1: rgb(54, 54, 54);
+  --ui2: rgb(69, 69, 69);
+  --ui3: rgb(89, 89, 89);
 }
 
 body .markdown-rendered a.external-link {
-  background-color: #00000000;
-  color: light-dark(#8a5cf5, #a68af9);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1987,7 +1995,7 @@ body .markdown-rendered a.external-link {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(#8a5cf5, #a68af9);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1995,8 +2003,8 @@ body .markdown-rendered a.external-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link {
-  background-color: #00000000;
-  color: light-dark(#8a5cf5, #a68af9);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
   font-family:
@@ -2014,7 +2022,7 @@ body .markdown-rendered a.internal-link {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(#8a5cf5, #a68af9);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2022,8 +2030,8 @@ body .markdown-rendered a.internal-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
-  background-color: #00000000;
-  color: light-dark(#8a5cf5, #a68af9);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
   font-family:
@@ -2041,7 +2049,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(#8a5cf5, #a68af9);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2049,8 +2057,8 @@ body .markdown-rendered a.internal-link.is-unresolved {
   user-select: none;
 }
 body .markdown-rendered p {
-  background-color: #00000000;
-  color: light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family:
@@ -2068,7 +2076,7 @@ body .markdown-rendered p {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(#222222, #dadada);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2076,8 +2084,8 @@ body .markdown-rendered p {
   user-select: none;
 }
 body strong {
-  background-color: #00000000;
-  color: light-dark(#0f0f0f, #d1d1d1);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   cursor: auto;
   filter: none;
   font-family:
@@ -2095,7 +2103,7 @@ body strong {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(209, 209, 209);
-  text-decoration-color: light-dark(#0f0f0f, #d1d1d1);
+  text-decoration-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2103,8 +2111,8 @@ body strong {
   user-select: text;
 }
 body b {
-  background-color: #00000000;
-  color: light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family:
@@ -2122,7 +2130,7 @@ body b {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(#222222, #dadada);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2130,8 +2138,8 @@ body b {
   user-select: none;
 }
 body em {
-  background-color: #00000000;
-  color: light-dark(#0f0f0f, #d1d1d1);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   cursor: auto;
   filter: none;
   font-family:
@@ -2149,7 +2157,7 @@ body em {
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(209, 209, 209);
-  text-decoration-color: light-dark(#0f0f0f, #d1d1d1);
+  text-decoration-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2157,8 +2165,8 @@ body em {
   user-select: text;
 }
 body i {
-  background-color: #00000000;
-  color: light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family:
@@ -2176,7 +2184,7 @@ body i {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(#222222, #dadada);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2184,8 +2192,8 @@ body i {
   user-select: none;
 }
 body .markdown-rendered mark {
-  background-color: #ffff00;
-  color: #000000;
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
   font-family:
@@ -2203,7 +2211,7 @@ body .markdown-rendered mark {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: #000000;
+  text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2211,8 +2219,8 @@ body .markdown-rendered mark {
   user-select: none;
 }
 body del {
-  background-color: #00000000;
-  color: light-dark(#0f0f0f, #d1d1d1);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   cursor: auto;
   filter: none;
   font-family:
@@ -2230,7 +2238,7 @@ body del {
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(209, 209, 209);
-  text-decoration-color: light-dark(#0f0f0f, #d1d1d1);
+  text-decoration-color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2238,7 +2246,7 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2247,11 +2255,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.suggestion-item {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2260,11 +2268,11 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(#e0e0e0, #363636);
-  border-top: 2px solid light-dark(#e0e0e0, #363636);
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2282,7 +2290,7 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -2298,7 +2306,7 @@ body div.multi-select-pill {
     sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 1px solid light-dark(#e6e6e6, #363636);
+  border: 1px solid light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
   border-top-left-radius: 27.82px;
   border-top-right-radius: 27.82px;
   border-bottom-left-radius: 27.82px;
@@ -2309,15 +2317,15 @@ body div.multi-select-pill {
   border-end-end-radius: 27.82px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered ul > li {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-align: left;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2326,22 +2334,22 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   content: normal;
   pointer-events: auto;
   transform: none;
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-align: left;
 }
 body .markdown-rendered ol > li::marker {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered code {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2350,13 +2358,13 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2372,8 +2380,8 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2389,7 +2397,7 @@ body pre[class*="language-"] {
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border: 2px inset light-dark(#767676, #858585);
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2424,19 +2432,19 @@ body
   position: static;
   width: auto;
   display: list-item;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(#222222, #dadada);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered blockquote {
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
   font-family:
     ui-sans-serif,
@@ -2458,12 +2466,12 @@ body .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body .footnote-backref {
-  color: light-dark(#8a5cf5, #a68af9);
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration: underline solid rgb(166, 138, 249);
 }
 body .site-body-left-column input.search-bar {
-  background-color: light-dark(#ffffff, #121212);
-  border: 2px inset light-dark(#767676, #858585);
+  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2472,12 +2480,12 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(#000000, #ffffff);
+  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
   font-family: Arial;
 }
 body .search-results {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2489,8 +2497,8 @@ body .search-results {
   box-shadow: none;
 }
 body .search-results > * {
-  background-color: #00000000;
-  color: light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   filter: none;
   font-family:
@@ -2508,7 +2516,7 @@ body .search-results > * {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(#222222, #dadada);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2516,7 +2524,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2527,10 +2535,10 @@ body div.search-results {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2541,15 +2549,15 @@ body div.search-results .suggestion-item {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-weight: 400;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2565,7 +2573,7 @@ body .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2581,7 +2589,7 @@ body .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2597,7 +2605,7 @@ body .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2613,7 +2621,7 @@ body .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2629,7 +2637,7 @@ body .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2653,8 +2661,8 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
-  background-color: #00000000;
-  border: 0px light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2667,7 +2675,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2678,11 +2686,11 @@ body .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 0px;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2698,22 +2706,22 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-weight: 400;
 }
 body .callout > .callout-content {
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2728,14 +2736,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="info"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2750,14 +2758,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2772,14 +2780,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2794,14 +2802,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2816,14 +2824,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="question"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2838,14 +2846,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2860,14 +2868,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="danger"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2882,14 +2890,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2904,14 +2912,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2926,14 +2934,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="example"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2948,14 +2956,14 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
-  background-color: #00000000;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(#222222, #dadada);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2970,7 +2978,7 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
   stroke: none;
 }
 body .math-block > mjx-container.MathJax {
@@ -3020,7 +3028,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
     sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   font-family:
     ui-sans-serif,
@@ -3038,8 +3046,8 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: none solid rgb(218, 218, 218);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: #00000000;
-  color: light-dark(#222222, #dadada);
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
 }
 body
@@ -3049,7 +3057,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   font-family:
     ui-sans-serif,
@@ -3073,7 +3081,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(#222222, #dadada);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: auto;
   font-family:
     ui-sans-serif,

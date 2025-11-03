@@ -2,169 +2,253 @@
   font-family: "Slasher Film";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilm-ALyOA.woff") format("woff");
+  src:
+    local("Slasher Film"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm-ALyOA.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film 3D"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3D-qZLd5.woff") format("woff");
+  src:
+    local("Slasher Film 3D"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3D-qZLd5.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film 3D Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DItalic-VGAjB.woff") format("woff");
+  src:
+    local("Slasher Film 3D Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DItalic-VGAjB.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film 3D Semi-Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film 3D Semi-Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DSemiItalic-JRx6M.woff") format("woff");
+  src:
+    local("Slasher Film 3D Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilm3DSemiItalic-JRx6M.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Condensed"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensed-GOxjg.woff") format("woff");
+  src:
+    local("Slasher Film Condensed"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensed-GOxjg.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Condensed Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedItalic-jE2M0.woff") format("woff");
+  src:
+    local("Slasher Film Condensed Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedItalic-jE2M0.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Condensed Semi-It";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Condensed Semi-It"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedSemiIt-z8EW4.woff") format("woff");
+  src:
+    local("Slasher Film Condensed Semi-It"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmCondensedSemiIt-z8EW4.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Expanded"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpanded-51VdV.woff") format("woff");
+  src:
+    local("Slasher Film Expanded"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpanded-51VdV.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Expanded Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedItalic-7BGLB.woff") format("woff");
+  src:
+    local("Slasher Film Expanded Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedItalic-7BGLB.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Expanded Semi-It";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Expanded Semi-It"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedSemiIt-mL7v2.woff") format("woff");
+  src:
+    local("Slasher Film Expanded Semi-It"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmExpandedSemiIt-mL7v2.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmItalic-d9B1x.woff") format("woff");
+  src:
+    local("Slasher Film Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmItalic-d9B1x.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Leftalic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Leftalic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmLeftalic-PKxjZ.woff") format("woff");
+  src:
+    local("Slasher Film Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmLeftalic-PKxjZ.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough-L3xjE.woff") format("woff");
+  src:
+    local("Slasher Film Rough"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough-L3xjE.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough 3D"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3D-X3zjZ.woff") format("woff");
+  src:
+    local("Slasher Film Rough 3D"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3D-X3zjZ.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough 3D Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DItalic-gxr8p.woff") format("woff");
+  src:
+    local("Slasher Film Rough 3D Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DItalic-gxr8p.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough 3D SemItal";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough 3D SemItal"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DSemital-owd7o.woff") format("woff");
+  src:
+    local("Slasher Film Rough 3D SemItal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRough3DSemital-owd7o.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Cond SemiIt";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Cond SemiIt"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondSemiit-eZ8Rn.woff") format("woff");
+  src:
+    local("Slasher Film Rough Cond SemiIt"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondSemiit-eZ8Rn.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Conden Ital";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Conden Ital"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondenItal-0WV9G.woff") format("woff");
+  src:
+    local("Slasher Film Rough Conden Ital"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondenItal-0WV9G.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Condensed";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Condensed"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondensed-4BVmW.woff") format("woff");
+  src:
+    local("Slasher Film Rough Condensed"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughCondensed-4BVmW.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Exp SemItal";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Exp SemItal"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpSemital-Eaxj8.woff") format("woff");
+  src:
+    local("Slasher Film Rough Exp SemItal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpSemital-Eaxj8.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Expand Ital";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Expand Ital"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpandItal-axnjg.woff") format("woff");
+  src:
+    local("Slasher Film Rough Expand Ital"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpandItal-axnjg.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Expanded";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Expanded"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpanded-WyGjO.woff") format("woff");
+  src:
+    local("Slasher Film Rough Expanded"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughExpanded-WyGjO.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughItalic-OVxjp.woff") format("woff");
+  src:
+    local("Slasher Film Rough Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughItalic-OVxjp.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Leftalic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Leftalic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughLeftalic-ZVxjz.woff") format("woff");
+  src:
+    local("Slasher Film Rough Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughLeftalic-ZVxjz.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Semi-Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Semi-Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiItalic-x3W0q.woff") format("woff");
+  src:
+    local("Slasher Film Rough Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiItalic-x3W0q.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Rough Semi-Leftal";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Rough Semi-Leftal"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiLeftal-3zV78.woff") format("woff");
+  src:
+    local("Slasher Film Rough Semi-Leftal"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmRoughSemiLeftal-3zV78.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Semi-Italic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Semi-Italic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiItalic-DOxjR.woff") format("woff");
+  src:
+    local("Slasher Film Semi-Italic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiItalic-DOxjR.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Slasher Film Semi-Leftalic";
   font-style: normal;
   font-weight: 400;
-  src: local("Slasher Film Semi-Leftalic"), url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff") format("woff");
+  src:
+    local("Slasher Film Semi-Leftalic"),
+    url("https://fonts.cdnfonts.com/s/89380/SlasherFilmSemiLeftalic-p7PmO.woff")
+      format("woff");
 }
 body.theme-dark {
   --accent-h: 258;
@@ -179,21 +263,21 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: #D8B131;
+  --background-modifier-active-hover: #d8b131;
   --background-modifier-border: #232221;
-  --background-modifier-border-focus: #D8B131;
+  --background-modifier-border-focus: #d8b131;
   --background-modifier-border-hover: #232221;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-error: #191919;
-  --background-modifier-error-hover: #D92926;
-  --background-modifier-error-rgb: #D8B131;
+  --background-modifier-error-hover: #d92926;
+  --background-modifier-error-rgb: #d8b131;
   --background-modifier-form-field: #191919;
   --background-modifier-form-field-hover: #191919;
-  --background-modifier-hover: #D8B131;
-  --background-modifier-message: #D92926;
+  --background-modifier-hover: #d8b131;
+  --background-modifier-message: #d92926;
   --background-modifier-success: #232221;
-  --background-modifier-success-rgb: #FF4949;
+  --background-modifier-success-rgb: #ff4949;
   --background-primary: #030308;
   --background-primary-alt: black;
   --background-secondary: #030308;
@@ -220,17 +304,21 @@ body.theme-dark {
   --bases-table-cell-background-active: #030308;
   --bases-table-cell-background-disabled: black;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px #D92926;
+  --bases-table-cell-shadow-active: 0 0 0 2px #d92926;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #030308;
-  --bases-table-header-background-hover: #D8B131;
-  --bases-table-header-color: #83888C;
+  --bases-table-header-background-hover: #d8b131;
+  --bases-table-header-color: #83888c;
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px);
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  );
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -239,11 +327,11 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: #D92926;
+  --blockquote-border-color: #d92926;
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
-  --bold-weight: calc(400 + 200);
+  --bold-weight: 600;
   --border-width: 1px;
   --button-radius: 5px;
   --callout-blend-mode: lighten;
@@ -266,11 +354,11 @@ body.theme-dark {
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: #030308;
-  --canvas-card-label-color: #83888C;
+  --canvas-card-label-color: #83888c;
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -279,41 +367,41 @@ body.theme-dark {
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
   --canvas-dot-pattern: #363636;
-  --caret-color: #83888C;
-  --checkbox-border-color: #83888C;
-  --checkbox-border-color-hover: #83888C;
-  --checkbox-color: #D92926;
-  --checkbox-color-hover: #D8B131;
+  --caret-color: #83888c;
+  --checkbox-border-color: #83888c;
+  --checkbox-border-color-hover: #83888c;
+  --checkbox-color: #d92926;
+  --checkbox-color-hover: #d8b131;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #030308;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: #83888C;
+  --checklist-done-color: #83888c;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: black;
   --code-border-color: #232221;
   --code-border-width: 0px;
-  --code-bracket-background: #D8B131;
-  --code-comment: #83888C;
+  --code-bracket-background: #d8b131;
+  --code-comment: #83888c;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: #83888C;
+  --code-normal: #83888c;
   --code-operator: #fb464c;
   --code-property: #53dfdd;
-  --code-punctuation: #83888C;
+  --code-punctuation: #83888c;
   --code-radius: 4px;
   --code-size: 0.875em;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: #83888C;
-  --collapse-icon-color-collapsed: #FF4949;
-  --color-accent: hsl(258, 88%, 66%);
-  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --collapse-icon-color: #83888c;
+  --collapse-icon-color-collapsed: #ff4949;
+  --color-accent: rgb(138, 92, 245);
+  --color-accent-1: rgb(166, 139, 249);
+  --color-accent-2: rgb(197, 182, 252);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -350,22 +438,22 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: #232221;
-  --divider-color-hover: #D92926;
+  --divider-color-hover: #d92926;
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
-  --dropdown-background: #E4E5E0;
+  --dropdown-background: #e4e5e0;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #D8B131;
+  --dropdown-background-hover: #d8b131;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-block-shadow-hover: 0 0 0 1px #232221, inset 0 0 0 1px #232221;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid #D92926;
+  --embed-border-start: 2px solid #d92926;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -378,13 +466,16 @@ body.theme-dark {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: #E4E5E0;
-  --flair-color: #83888C;
+  --flair-background: #e4e5e0;
+  --flair-color: #83888c;
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface: "Slasher Regular";
@@ -392,9 +483,18 @@ body.theme-dark {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
@@ -404,7 +504,10 @@ body.theme-dark {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -418,26 +521,26 @@ body.theme-dark {
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: #83888C;
-  --footnote-id-color-no-occurrences: #83888C;
+  --footnote-id-color: #83888c;
+  --footnote-id-color-no-occurrences: #83888c;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: #D8B131;
+  --footnote-input-background-active: #d8b131;
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
-  --graph-node: #83888C;
+  --graph-node: #83888c;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #FF4949;
+  --graph-node-focused: #ff4949;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #83888C;
-  --graph-text: #83888C;
+  --graph-node-unresolved: #83888c;
+  --graph-text: #83888c;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
@@ -469,15 +572,15 @@ body.theme-dark {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: #83888C;
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-formatting: #83888c;
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
   --hr-color: #232221;
   --hr-thickness: 2px;
-  --icon-color: #83888C;
-  --icon-color-active: #FF4949;
-  --icon-color-focused: #83888C;
-  --icon-color-hover: #83888C;
+  --icon-color: #83888c;
+  --icon-color-active: #ff4949;
+  --icon-color-focused: #83888c;
+  --icon-color-hover: #83888c;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -510,19 +613,25 @@ body.theme-dark {
   --inline-title-weight: 700;
   --input-border-width: 1px;
   --input-border-width-focus: 2px;
-  --input-date-separator: #83888C;
+  --input-date-separator: #83888c;
   --input-font-weight: 400;
   --input-height: 30px;
   --input-padding: 4px 8px;
-  --input-placeholder-color: #83888C;
+  --input-placeholder-color: #83888c;
   --input-radius: 5px;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: #D92926;
-  --interactive-accent-hover: #D8B131;
-  --interactive-accent-hsl: #D92926;
-  --interactive-hover: #D8B131;
-  --interactive-normal: #E4E5E0;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: #d92926;
+  --interactive-accent-hover: #d8b131;
+  --interactive-accent-hsl: #d92926;
+  --interactive-hover: #d8b131;
+  --interactive-normal: #e4e5e0;
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -536,18 +645,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #FF4949;
-  --link-color-hover: #FFD059;
+  --link-color: #ff4949;
+  --link-color-hover: #ffd059;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #FF4949;
-  --link-external-color-hover: #FFD059;
+  --link-external-color: #ff4949;
+  --link-external-color-hover: #ffd059;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #FF4949;
-  --link-unresolved-decoration-color: hsla(#D92926, 0.3);
+  --link-unresolved-color: #ff4949;
+  --link-unresolved-decoration-color: hsla(#d92926, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -557,12 +666,12 @@ body.theme-dark {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: calc(0.5625em * 4);
+  --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #83888C;
-  --list-marker-color-collapsed: #FF4949;
-  --list-marker-color-hover: #83888C;
+  --list-marker-color: #83888c;
+  --list-marker-color-collapsed: #ff4949;
+  --list-marker-color-hover: #83888c;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --loading-icon-delay: 400ms;
@@ -572,7 +681,9 @@ body.theme-dark {
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
   --metadata-background: transparent;
   --metadata-border-color: #232221;
   --metadata-border-radius: 0;
@@ -585,27 +696,27 @@ body.theme-dark {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: #D8B131;
+  --metadata-input-background-active: #d8b131;
   --metadata-input-background-hover: transparent;
   --metadata-input-font: "Slasher Regular";
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: #83888C;
+  --metadata-input-text-color: #83888c;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: #D8B131;
+  --metadata-label-background-active: #d8b131;
   --metadata-label-background-hover: transparent;
   --metadata-label-font: "Slasher Regular";
   --metadata-label-font-size: 0.875em;
-  --metadata-label-text-color: #83888C;
-  --metadata-label-text-color-hover: #83888C;
+  --metadata-label-text-color: #83888c;
+  --metadata-label-text-color-hover: #83888c;
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: #D8B131;
+  --metadata-property-background-active: #d8b131;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #D8B131;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #d8b131;
   --metadata-property-box-shadow-hover: 0 0 0 1px #232221;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
@@ -625,26 +736,26 @@ body.theme-dark {
   --modal-width: 90vw;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-collapse-icon-color: #83888C;
-  --nav-collapse-icon-color-collapsed: #83888C;
-  --nav-heading-color: #83888C;
-  --nav-heading-color-collapsed: #83888C;
-  --nav-heading-color-collapsed-hover: #83888C;
-  --nav-heading-color-hover: #83888C;
+  --nav-collapse-icon-color: #83888c;
+  --nav-collapse-icon-color-collapsed: #83888c;
+  --nav-heading-color: #83888c;
+  --nav-heading-color-collapsed: #83888c;
+  --nav-heading-color-collapsed-hover: #83888c;
+  --nav-heading-color-hover: #83888c;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: #D8B131;
-  --nav-item-background-hover: #D8B131;
-  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15);
+  --nav-item-background-active: #d8b131;
+  --nav-item-background-hover: #d8b131;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: #83888C;
-  --nav-item-color-active: #83888C;
-  --nav-item-color-highlighted: #FF4949;
-  --nav-item-color-hover: #83888C;
-  --nav-item-color-selected: #83888C;
+  --nav-item-color: #83888c;
+  --nav-item-color-active: #83888c;
+  --nav-item-color-highlighted: #ff4949;
+  --nav-item-color-hover: #83888c;
+  --nav-item-color-selected: #83888c;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 4px 8px 4px 24px;
   --nav-item-size: 13px;
@@ -665,10 +776,10 @@ body.theme-dark {
   --pill-border-color: #232221;
   --pill-border-color-hover: #232221;
   --pill-border-width: 1px;
-  --pill-color: #83888C;
-  --pill-color-hover: #83888C;
-  --pill-color-remove: #83888C;
-  --pill-color-remove-hover: #FF4949;
+  --pill-color: #83888c;
+  --pill-color-hover: #83888c;
+  --pill-color-remove: #83888c;
+  --pill-color-remove-hover: #ff4949;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -707,14 +818,18 @@ body.theme-dark {
   --scrollbar-radius: 12px;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --scrollbar-width: 12px;
-  --search-clear-button-color: #83888C;
+  --search-clear-button-color: #83888c;
   --search-clear-button-size: 13px;
-  --search-icon-color: #83888C;
+  --search-icon-color: #83888c;
   --search-icon-size: 18px;
   --search-result-background: #030308;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -748,7 +863,7 @@ body.theme-dark {
   --status-bar-font-size: 12px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: #83888C;
+  --status-bar-text-color: #83888c;
   --swatch-height: 22px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
@@ -784,13 +899,13 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
-  --tab-text-color: #83888C;
-  --tab-text-color-active: #83888C;
-  --tab-text-color-focused: #83888C;
-  --tab-text-color-focused-active: #83888C;
-  --tab-text-color-focused-active-current: #83888C;
-  --tab-text-color-focused-highlighted: #FF4949;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
+  --tab-text-color: #83888c;
+  --tab-text-color-active: #83888c;
+  --tab-text-color-focused: #83888c;
+  --tab-text-color-focused-active: #83888c;
+  --tab-text-color-focused-active-current: #83888c;
+  --tab-text-color-focused-highlighted: #ff4949;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: #232221;
@@ -805,61 +920,61 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: #D92926;
-  --table-drag-handle-color: #83888C;
+  --table-drag-handle-background-active: #d92926;
+  --table-drag-handle-color: #83888c;
   --table-drag-handle-color-active: #232221;
   --table-drop-indicator-half-width: 2px;
   --table-header-background: transparent;
   --table-header-border-color: #232221;
   --table-header-border-width: 1px;
-  --table-header-color: #83888C;
+  --table-header-color: #83888c;
   --table-header-size: 16px;
-  --table-header-weight: calc(400 + 200);
+  --table-header-weight: 600;
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection: rgba(138, 92, 245, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: #D92926;
+  --table-selection-border-color: #d92926;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(#D92926, 0.1);
-  --tag-background-hover: hsla(#D92926, 0.2);
-  --tag-border-color: hsla(#D92926, 0.15);
-  --tag-border-color-hover: hsla(#D92926, 0.15);
+  --tag-background: hsla(#d92926, 0.1);
+  --tag-background-hover: hsla(#d92926, 0.2);
+  --tag-border-color: hsla(#d92926, 0.15);
+  --tag-border-color-hover: hsla(#d92926, 0.15);
   --tag-border-width: 0px;
-  --tag-color: #FF4949;
-  --tag-color-hover: #FF4949;
+  --tag-color: #ff4949;
+  --tag-color-hover: #ff4949;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: #FF4949;
-  --text-accent-hover: #FFD059;
-  --text-error: #D8B131;
-  --text-faint: #83888C;
+  --text-accent: #ff4949;
+  --text-accent-hover: #ffd059;
+  --text-error: #d8b131;
+  --text-faint: #83888c;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #83888C;
-  --text-normal: #83888C;
+  --text-muted: #83888c;
+  --text-normal: #83888c;
   --text-on-accent: #232221;
   --text-on-accent-inverted: black;
-  --text-selection: #83888C;
-  --text-success: #D92926;
+  --text-selection: #83888c;
+  --text-success: #d92926;
   --text-warning: #e9973f;
   --titlebar-background: #030308;
   --titlebar-background-focused: #030308;
   --titlebar-border-color: #232221;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: #83888C;
-  --titlebar-text-color-focused: #83888C;
+  --titlebar-text-color: #83888c;
+  --titlebar-text-color-focused: #83888c;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -873,33 +988,33 @@ body.theme-dark {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: #83888C;
-  --vault-profile-color-hover: #83888C;
+  --vault-profile-color: #83888c;
+  --vault-profile-color-hover: #83888c;
   --vault-profile-display: flex;
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --oz-fta-file-font-size: 1em;
   --oz-fta-folder-font-size: 1em;
-  --col-accent: #D92926;
-  --col-accent-plus: #FF4949;
-  --col-base: #E4E5E0;
+  --col-accent: #d92926;
+  --col-accent-plus: #ff4949;
+  --col-base: #e4e5e0;
   --col-base-background: #030308;
   --col-bckg-filetreeheader: #030308;
   --col-bckg-mainpanels: #191919;
   --col-bckg-menudropdownhover: #232221;
   --col-bckg-menudropdowns: #191919;
-  --col-bckg-selectedtitles: #D8B131;
+  --col-bckg-selectedtitles: #d8b131;
   --col-danger: #232221;
   --col-ed-background: #030308;
-  --col-ed-bckg-checkbox-empty: #D92926;
-  --col-ed-bckg-checkbox-full: #83888C;
+  --col-ed-bckg-checkbox-empty: #d92926;
+  --col-ed-bckg-checkbox-full: #83888c;
   --col-ed-bckg-codeblock: #232221;
-  --col-ed-bckg-highlight: #D8B131;
+  --col-ed-bckg-highlight: #d8b131;
   --col-ed-bckg-hyperlink-broken: #232221;
   --col-ed-bckg-quote: #030308;
   --col-ed-bckg-quote-callout: #232221;
@@ -908,87 +1023,87 @@ body.theme-dark {
   --col-ed-bckg-tableh: #232221;
   --col-ed-bckg-tagbeg: #232221;
   --col-ed-bckg-tagend: #232221;
-  --col-ed-caret: #FF4949;
-  --col-ed-hr: #83888C;
-  --col-ed-hyperlink: #D8B131;
+  --col-ed-caret: #ff4949;
+  --col-ed-hr: #83888c;
+  --col-ed-hyperlink: #d8b131;
   --col-ed-hyperlink-broken: red;
   --col-ed-hyperlink-highlight-hover: #232221;
-  --col-ed-hyperlink-hover: #FFD059;
-  --col-ed-hyperlink-strikethrough: #9B7F31;
-  --col-ed-txt-checkbox-full: #83888C;
-  --col-ed-txt-codeblock: #D92926;
-  --col-ed-txt-h1: #D92926;
-  --col-ed-txt-h2: #D92926;
-  --col-ed-txt-h3: #D92926;
-  --col-ed-txt-h4: #D92926;
-  --col-ed-txt-h5: #D92926;
-  --col-ed-txt-h6: #D92926;
+  --col-ed-hyperlink-hover: #ffd059;
+  --col-ed-hyperlink-strikethrough: #9b7f31;
+  --col-ed-txt-checkbox-full: #83888c;
+  --col-ed-txt-codeblock: #d92926;
+  --col-ed-txt-h1: #d92926;
+  --col-ed-txt-h2: #d92926;
+  --col-ed-txt-h3: #d92926;
+  --col-ed-txt-h4: #d92926;
+  --col-ed-txt-h5: #d92926;
+  --col-ed-txt-h6: #d92926;
   --col-ed-txt-highlight: #232221;
-  --col-ed-txt-italic: #D92926;
-  --col-ed-txt-ol-bullet: #FF4949;
-  --col-ed-txt-p: #E4E5E0;
-  --col-ed-txt-quote: #FF4949;
-  --col-ed-txt-strikethrough: #83888C;
-  --col-ed-txt-strong: #D92926;
-  --col-ed-txt-table: #E4E5E0;
-  --col-ed-txt-tableh: #D92926;
-  --col-ed-txt-tagbeg: #D8B131;
-  --col-ed-txt-tagend: #D8B131;
-  --col-ed-txt-title: #D92926;
-  --col-ed-txt-ul-bullet: #FF4949;
-  --col-icons: #83888C;
-  --col-important: #D8B131;
-  --col-important-muted: #9B7F31;
-  --col-important-plus: #FFD059;
-  --col-menucheckbox: #D92926;
-  --col-muted: #83888C;
+  --col-ed-txt-italic: #d92926;
+  --col-ed-txt-ol-bullet: #ff4949;
+  --col-ed-txt-p: #e4e5e0;
+  --col-ed-txt-quote: #ff4949;
+  --col-ed-txt-strikethrough: #83888c;
+  --col-ed-txt-strong: #d92926;
+  --col-ed-txt-table: #e4e5e0;
+  --col-ed-txt-tableh: #d92926;
+  --col-ed-txt-tagbeg: #d8b131;
+  --col-ed-txt-tagend: #d8b131;
+  --col-ed-txt-title: #d92926;
+  --col-ed-txt-ul-bullet: #ff4949;
+  --col-icons: #83888c;
+  --col-important: #d8b131;
+  --col-important-muted: #9b7f31;
+  --col-important-plus: #ffd059;
+  --col-menucheckbox: #d92926;
+  --col-muted: #83888c;
   --col-muted-plus: #232221;
   --col-muted-plus-plus: #191919;
   --col-pr-background: #030308;
-  --col-pr-bckg-checkbox-empty: #D92926;
-  --col-pr-bckg-checkbox-full: #83888C;
+  --col-pr-bckg-checkbox-empty: #d92926;
+  --col-pr-bckg-checkbox-full: #83888c;
   --col-pr-bckg-codeblock: #232221;
-  --col-pr-bckg-highlight: #D8B131;
+  --col-pr-bckg-highlight: #d8b131;
   --col-pr-bckg-quote: #030308;
   --col-pr-bckg-quote-callout: #232221;
   --col-pr-bckg-quote-warning: #232221;
   --col-pr-bckg-table: #030308;
   --col-pr-bckg-tableh: #232221;
-  --col-pr-bckg-tag: #D8B131;
-  --col-pr-hr: #83888C;
+  --col-pr-bckg-tag: #d8b131;
+  --col-pr-hr: #83888c;
   --col-pr-hyperlink-broken: red;
-  --col-pr-txt-checkbox-full: #83888C;
-  --col-pr-txt-codeblock: #D92926;
-  --col-pr-txt-h1: #D92926;
-  --col-pr-txt-h2: #D92926;
-  --col-pr-txt-h3: #D92926;
-  --col-pr-txt-h4: #D92926;
-  --col-pr-txt-h5: #D92926;
-  --col-pr-txt-h6: #D92926;
+  --col-pr-txt-checkbox-full: #83888c;
+  --col-pr-txt-codeblock: #d92926;
+  --col-pr-txt-h1: #d92926;
+  --col-pr-txt-h2: #d92926;
+  --col-pr-txt-h3: #d92926;
+  --col-pr-txt-h4: #d92926;
+  --col-pr-txt-h5: #d92926;
+  --col-pr-txt-h6: #d92926;
   --col-pr-txt-highlight: #232221;
-  --col-pr-txt-hyperlink: #D8B131;
+  --col-pr-txt-hyperlink: #d8b131;
   --col-pr-txt-hyperlink-highlight-hover: #232221;
-  --col-pr-txt-hyperlink-hover: #FFD059;
-  --col-pr-txt-hyperlink-strikethrough: #9B7F31;
-  --col-pr-txt-hyperlink-unresolved: #D8B131;
-  --col-pr-txt-italic: #D92926;
-  --col-pr-txt-ol-bullet: #FF4949;
-  --col-pr-txt-p: #E4E5E0;
-  --col-pr-txt-quote: #FF4949;
-  --col-pr-txt-strikethrough: #83888C;
-  --col-pr-txt-strong: #D92926;
-  --col-pr-txt-table: #E4E5E0;
-  --col-pr-txt-tableh: #D92926;
+  --col-pr-txt-hyperlink-hover: #ffd059;
+  --col-pr-txt-hyperlink-strikethrough: #9b7f31;
+  --col-pr-txt-hyperlink-unresolved: #d8b131;
+  --col-pr-txt-italic: #d92926;
+  --col-pr-txt-ol-bullet: #ff4949;
+  --col-pr-txt-p: #e4e5e0;
+  --col-pr-txt-quote: #ff4949;
+  --col-pr-txt-strikethrough: #83888c;
+  --col-pr-txt-strong: #d92926;
+  --col-pr-txt-table: #e4e5e0;
+  --col-pr-txt-tableh: #d92926;
   --col-pr-txt-tag: #232221;
-  --col-pr-txt-title: #D92926;
-  --col-pr-txt-ul-bullet: #FF4949;
+  --col-pr-txt-title: #d92926;
+  --col-pr-txt-ul-bullet: #ff4949;
   --col-safety: #232221;
-  --col-txt-files: #E4E5E0;
-  --col-txt-menudropdownhover: #D92926;
-  --col-txt-menudropdowns: #D92926;
+  --col-txt-files: #e4e5e0;
+  --col-txt-menudropdownhover: #d92926;
+  --col-txt-menudropdowns: #d92926;
   --col-txt-selectedtitles: #232221;
   --col-txt-titlebars: #030308;
-  --col-txt-titles: #D92926;
+  --col-txt-titles: #d92926;
   --files-font-size: 1em;
   --fnt-ed-headers: "Slasher Regular";
   --fnt-ed-text: "Slasher Regular";
@@ -1056,7 +1171,18 @@ body .markdown-rendered a.external-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1072,7 +1198,18 @@ body .markdown-rendered a.internal-link {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1088,7 +1225,18 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: rgb(166, 138, 249);
   cursor: pointer;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
@@ -1104,7 +1252,18 @@ body .markdown-rendered p {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1136,7 +1295,18 @@ body b {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1168,7 +1338,18 @@ body i {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1184,7 +1365,18 @@ body .markdown-rendered mark {
   color: rgb(0, 0, 0);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
@@ -1333,7 +1525,8 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*=language-], body pre[class*=language-] {
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
@@ -1376,7 +1569,10 @@ body ul.contains-task-list > li.task-list-item {
   text-align: left;
   display: list-item;
 }
-body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
+body
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
   content: normal;
   top: auto;
   inset-inline-start: auto;
@@ -1389,7 +1585,7 @@ body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
-body ul > li.task-list-item[data-task=x] {
+body ul > li.task-list-item[data-task="x"] {
   color: rgb(218, 218, 218);
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -1397,7 +1593,18 @@ body ul > li.task-list-item[data-task=x] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -1441,7 +1648,18 @@ body .search-results > * {
   color: rgb(218, 218, 218);
   cursor: auto;
   filter: none;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
@@ -1487,32 +1705,98 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -1536,7 +1820,7 @@ body .markdown-preview-sizer {
   border-end-end-radius: 0px;
   box-shadow: none;
 }
-body .callout[data-callout=note] {
+body .callout[data-callout="note"] {
   --callout-color: inherit;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
@@ -1551,7 +1835,7 @@ body .callout[data-callout=note] {
   padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout=note] > .callout-title {
+body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
@@ -1564,7 +1848,11 @@ body .callout[data-callout=note] > .callout-title {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1576,7 +1864,7 @@ body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
   padding: 0px;
 }
-body .callout[data-callout=abstract] {
+body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1590,11 +1878,15 @@ body .callout[data-callout=abstract] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=info] {
+body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1608,11 +1900,15 @@ body .callout[data-callout=info] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=todo] {
+body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1626,11 +1922,15 @@ body .callout[data-callout=todo] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=tip] {
+body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1644,11 +1944,15 @@ body .callout[data-callout=tip] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=success] {
+body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1662,11 +1966,15 @@ body .callout[data-callout=success] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=question] {
+body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1680,11 +1988,15 @@ body .callout[data-callout=question] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=warning] {
+body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1698,11 +2010,15 @@ body .callout[data-callout=warning] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=danger] {
+body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1716,11 +2032,15 @@ body .callout[data-callout=danger] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=failure] {
+body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1734,11 +2054,15 @@ body .callout[data-callout=failure] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=bug] {
+body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1752,11 +2076,15 @@ body .callout[data-callout=bug] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=example] {
+body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1770,11 +2098,15 @@ body .callout[data-callout=example] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
-body .callout[data-callout=quote] {
+body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
@@ -1788,7 +2120,11 @@ body .callout[data-callout=quote] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
   fill: rgb(0, 0, 0);
   stroke: none;
 }
@@ -1797,18 +2133,62 @@ body .math-block > mjx-container.MathJax {
   text-align: start;
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body div.math-block > mjx-container.MathJax {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
@@ -1817,17 +2197,51 @@ body .nav-view-outer .tree-item-self.mod-active {
   color: rgb(218, 218, 218);
   cursor: auto;
 }
-body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
-body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
+body
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
   color: rgb(218, 218, 218);
   cursor: auto;
-  font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }

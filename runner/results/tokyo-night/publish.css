@@ -117,7 +117,7 @@ body.theme-light {
   --bases-table-cell-background-active: rgb(213, 214, 219) !important;
   --bases-table-cell-background-disabled: rgb(213, 214, 219) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(202, 86%, 43%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(15, 135, 204) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -140,7 +140,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgb(203, 204, 209) !important;
-  --blockquote-border-color: hsl(202, 86%, 43%) !important;
+  --blockquote-border-color: rgb(15, 135, 204) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -212,9 +212,9 @@ body.theme-light {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(150, 153, 163) !important;
   --collapse-icon-color-collapsed: rgb(90, 74, 120) !important;
-  --color-accent: hsl(202, 86%, 43%) !important;
-  --color-accent-1: hsl(201, 86.86%, 46.225%) !important;
-  --color-accent-2: hsl(199, 87.72%, 49.45%) !important;
+  --color-accent: rgb(15, 135, 204) !important;
+  --color-accent-1: rgb(15, 148, 219) !important;
+  --color-accent-2: rgb(15, 165, 235) !important;
   --color-accent-hsl: 202, 86%, 43% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -251,7 +251,7 @@ body.theme-light {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: rgb(220, 222, 226) !important;
-  --divider-color-hover: hsl(202, 86%, 43%) !important;
+  --divider-color-hover: rgb(15, 135, 204) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -267,7 +267,7 @@ body.theme-light {
     0 0 0 1px rgb(220, 222, 226), inset 0 0 0 1px rgb(220, 222, 226) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(202, 86%, 43%) !important;
+  --embed-border-start: 2px solid rgb(15, 135, 204) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -449,7 +449,7 @@ body.theme-light {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: hsl(202, 86%, 43%) !important;
+  --interactive-accent: rgb(15, 135, 204) !important;
   --interactive-accent-hover: rgb(52, 84, 138) !important;
   --interactive-accent-hsl: 202, 86%, 43% !important;
   --interactive-hover: rgb(213, 214, 219) !important;
@@ -479,7 +479,7 @@ body.theme-light {
   --link-external-filter: invert(62%) sepia(9%) saturate(266%)
     hue-rotate(189deg) brightness(97%) contrast(88%) !important;
   --link-unresolved-color: rgb(90, 74, 120) !important;
-  --link-unresolved-decoration-color: hsla(202, 86%, 43%, 0.3) !important;
+  --link-unresolved-decoration-color: rgba(15, 135, 204, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -579,7 +579,7 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgb(220, 222, 226) !important;
   --nav-item-background-hover: rgb(220, 222, 226) !important;
-  --nav-item-background-selected: hsla(202, 86%, 43%, 0.15) !important;
+  --nav-item-background-selected: rgba(15, 135, 204, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(39, 46, 75) !important;
@@ -732,7 +732,7 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 86%, 43%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(15, 135, 204) !important;
   --tab-text-color: rgb(150, 153, 163) !important;
   --tab-text-color-active: rgb(39, 46, 75) !important;
   --tab-text-color-focused: rgb(39, 46, 75) !important;
@@ -753,7 +753,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(202, 86%, 43%) !important;
+  --table-drag-handle-background-active: rgb(15, 135, 204) !important;
   --table-drag-handle-color: rgb(150, 153, 163) !important;
   --table-drag-handle-color-active: rgb(213, 214, 219) !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -768,17 +768,17 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(202, 86%, 43%, 0.1) !important;
+  --table-selection: rgba(15, 135, 204, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(202, 86%, 43%) !important;
+  --table-selection-border-color: rgb(15, 135, 204) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: rgba(90, 74, 120, 0.15) !important;
   --tag-background-hover: rgba(15, 75, 110, 0.15) !important;
-  --tag-border-color: hsla(202, 86%, 43%, 0.15) !important;
-  --tag-border-color-hover: hsla(202, 86%, 43%, 0.15) !important;
+  --tag-border-color: rgba(15, 135, 204, 0.15) !important;
+  --tag-border-color-hover: rgba(15, 135, 204, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: rgb(90, 74, 120) !important;
   --tag-color-hover: rgb(15, 75, 110) !important;
@@ -829,7 +829,7 @@ body.theme-light {
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --h1-color: rgb(140, 67, 81) !important;
   --h2-color: rgb(143, 94, 21) !important;
@@ -962,7 +962,7 @@ body.theme-dark {
   --bases-table-cell-background-active: rgb(26, 27, 38);
   --bases-table-cell-background-disabled: rgb(26, 27, 38);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(202, 100%, 75%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(128, 208, 255);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -985,7 +985,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: rgb(22, 22, 30);
-  --blockquote-border-color: hsl(202, 100%, 75%);
+  --blockquote-border-color: rgb(128, 208, 255);
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -1057,7 +1057,7 @@ body.theme-dark {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(86, 95, 137);
   --collapse-icon-color-collapsed: rgb(187, 154, 247);
-  --color-accent: hsl(202, 100%, 75%);
+  --color-accent: rgb(128, 208, 255);
   --color-accent-1: hsl(199, 102%, 86.25%);
   --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
@@ -1096,7 +1096,7 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: rgb(41, 46, 66);
-  --divider-color-hover: hsl(202, 100%, 75%);
+  --divider-color-hover: rgb(128, 208, 255);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -1112,7 +1112,7 @@ body.theme-dark {
     0 0 0 1px rgb(41, 46, 66), inset 0 0 0 1px rgb(41, 46, 66);
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(202, 100%, 75%);
+  --embed-border-start: 2px solid rgb(128, 208, 255);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -1294,7 +1294,7 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(202, 100%, 75%);
+  --interactive-accent: rgb(128, 208, 255);
   --interactive-accent-hover: rgb(122, 162, 247);
   --interactive-accent-hsl: 202, 100%, 75%;
   --interactive-hover: rgb(26, 27, 38);
@@ -1324,7 +1324,7 @@ body.theme-dark {
   --link-external-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
   --link-unresolved-color: rgb(187, 154, 247);
-  --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3);
+  --link-unresolved-decoration-color: rgba(128, 208, 255, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1424,7 +1424,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: rgb(41, 46, 66);
   --nav-item-background-hover: rgb(41, 46, 66);
-  --nav-item-background-selected: hsla(202, 100%, 75%, 0.15);
+  --nav-item-background-selected: rgba(128, 208, 255, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: rgb(169, 177, 214);
@@ -1575,7 +1575,7 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 100%, 75%);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(128, 208, 255);
   --tab-text-color: rgb(86, 95, 137);
   --tab-text-color-active: rgb(169, 177, 214);
   --tab-text-color-focused: rgb(169, 177, 214);
@@ -1596,7 +1596,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(202, 100%, 75%);
+  --table-drag-handle-background-active: rgb(128, 208, 255);
   --table-drag-handle-color: rgb(86, 95, 137);
   --table-drag-handle-color-active: rgb(26, 27, 38);
   --table-drop-indicator-half-width: 2px;
@@ -1611,17 +1611,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(202, 100%, 75%, 0.1);
+  --table-selection: rgba(128, 208, 255, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(202, 100%, 75%);
+  --table-selection-border-color: rgb(128, 208, 255);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-background-hover: rgba(125, 207, 255, 0.15);
-  --tag-border-color: hsla(202, 100%, 75%, 0.15);
-  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
+  --tag-border-color: rgba(128, 208, 255, 0.15);
+  --tag-border-color-hover: rgba(128, 208, 255, 0.15);
   --tag-border-width: 0px;
   --tag-color: rgb(187, 154, 247);
   --tag-color-hover: rgb(125, 207, 255);
@@ -1672,7 +1672,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --h1-color: rgb(255, 117, 127);
   --h2-color: rgb(224, 175, 104);

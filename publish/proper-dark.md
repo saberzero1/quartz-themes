@@ -4,10 +4,9 @@
 - Support the author: <a href="https://github.com/lukasbach/.github/blob/main/funding.md" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/proper-dark">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
+| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `proper-dark` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/proper-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

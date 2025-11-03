@@ -12,6 +12,7 @@
     "web:misc": "node ./convert.js && npm run format",
     "web:full": "npm run web:run && npm run web:compile && node ./convert.js && npm run format",
     "db:ingest": "node ./runner/scripts/ingest.js",
+    "db:prep": "node ./runner/scripts/prep.js && npm run format",
     "db:drop": "rm ./styles.db ./styles.db-shm ./styles.db-wal",
     "db:full": "npm run db:drop && npm run db:ingest",
     "quartz:theme": "cp -f ./runner/results/abyssal/_index.scss ./runner/quartz/quartz/styles/themes/_index.scss",

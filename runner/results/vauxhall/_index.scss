@@ -8,35 +8,35 @@
 :root:root {
   --code-background: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 90%,
+    rgb(64, 0, 255)
   ) !important;
   --code-border-color: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 90%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 90%,
+    rgb(64, 0, 255)
   ) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 95%,
+    rgb(64, 0, 255)
   ) !important;
   --code-comment: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 60%,
+    rgb(64, 0, 255)
   ) !important;
   --code-function: #ffd85e !important;
   --code-important: #fa9f50 !important;
   --code-keyword: #e54f9b !important;
-  --code-normal: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
+  --code-normal: color-mix(in srgb, rgb(64, 0, 255) 50%, #000) !important;
   --code-operator: #e3365e !important;
   --code-property: #3bb2ce !important;
   --code-punctuation: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 30%,
+    rgb(64, 0, 255)
   ) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
@@ -47,56 +47,52 @@
   --graph-controls-width: 240px !important;
   --graph-line: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 95%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 95%,
+    rgb(64, 0, 255)
   ) !important;
   --graph-node: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 30%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 30%,
+    rgb(64, 0, 255)
   ) !important;
   --graph-node-attachment: #ffd85e !important;
-  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-focused: rgb(138, 92, 245) !important;
   --graph-node-tag: #47cc91 !important;
   --graph-node-unresolved: color-mix(
     in srgb,
-    hsl(238, 60%, 95%) 60%,
-    hsl(255, 100%, 50%)
+    rgb(235, 235, 250) 60%,
+    rgb(64, 0, 255)
   ) !important;
-  --graph-text: color-mix(in srgb, hsl(255, 100%, 50%) 50%, #000) !important;
+  --graph-text: color-mix(in srgb, rgb(64, 0, 255) 50%, #000) !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: color-mix(
-    in srgb,
-    hsl(238, 60%, 11%) 80%,
-    #000
-  ) !important;
+  --code-background: color-mix(in srgb, rgb(11, 12, 45) 80%, #000) !important;
   --code-border-color: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 90%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 90%,
+    rgb(179, 153, 255)
   ) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 95%,
+    rgb(179, 153, 255)
   ) !important;
   --code-comment: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 60%,
+    rgb(179, 153, 255)
   ) !important;
   --code-function: #ffd85e !important;
   --code-important: #fa9f50 !important;
   --code-keyword: #e54f9b !important;
-  --code-normal: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
+  --code-normal: color-mix(in srgb, rgb(179, 153, 255) 30%, #fff) !important;
   --code-operator: #e3365e !important;
   --code-property: #43cfea !important;
   --code-punctuation: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 30%,
+    rgb(179, 153, 255)
   ) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
@@ -107,23 +103,23 @@
   --graph-controls-width: 240px !important;
   --graph-line: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 95%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 95%,
+    rgb(179, 153, 255)
   ) !important;
   --graph-node: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 30%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 30%,
+    rgb(179, 153, 255)
   ) !important;
   --graph-node-attachment: #ffd85e !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
+  --graph-node-focused: rgb(166, 139, 249) !important;
   --graph-node-tag: #52eea3 !important;
   --graph-node-unresolved: color-mix(
     in srgb,
-    hsl(238, 60%, 11%) 60%,
-    hsl(255, 100%, 80%)
+    rgb(11, 12, 45) 60%,
+    rgb(179, 153, 255)
   ) !important;
-  --graph-text: color-mix(in srgb, hsl(255, 100%, 80%) 30%, #fff) !important;
+  --graph-text: color-mix(in srgb, rgb(179, 153, 255) 30%, #fff) !important;
 }
 
 html {

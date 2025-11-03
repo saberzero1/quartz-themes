@@ -4,10 +4,9 @@
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/evergreen-shadow">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name               | Modes                     | Compatibility                                  | License                                                                                                                                                 |
+| ------------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `evergreen-shadow` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/evergreen-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

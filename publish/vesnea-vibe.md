@@ -4,10 +4,9 @@
 - Support the author: <a href="https://ko-fi.com/seavalanche" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vesnea-vibe">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
+| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `vesnea-vibe` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vesnea-vibe/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

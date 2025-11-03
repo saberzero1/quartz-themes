@@ -168,7 +168,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(212, 100%, 48%, 0.1) !important;
+  --background-modifier-active-hover: rgba(0, 114, 245, 0.1) !important;
   --background-modifier-border: oklch(0% 0 0 / 0.06) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(78.75% 0.0025 281) !important;
@@ -216,7 +216,7 @@ body.theme-light {
   --bases-table-cell-background-disabled: oklch(96.2% 0.0025 281) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2.25px
-    color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -310,16 +310,16 @@ body.theme-light {
   --code-value: rgb(178, 74, 236) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(0% 0 0 / 0.32) !important;
-  --collapse-icon-color-collapsed: hsl(212, 100%, 48%) !important;
-  --color-accent: hsl(212, 100%, 48%) !important;
+  --collapse-icon-color-collapsed: rgb(0, 114, 245) !important;
+  --color-accent: rgb(0, 114, 245) !important;
   --color-accent-1: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 100%,
+    rgb(0, 114, 245) 100%,
     transparent 10%
   ) !important;
   --color-accent-2: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 80%,
+    rgb(0, 114, 245) 80%,
     transparent 40%
   ) !important;
   --color-accent-hsl: 212, 100%, 48% !important;
@@ -360,7 +360,7 @@ body.theme-light {
   --divider-color: oklch(0% 0 0 / 0.06) !important;
   --divider-color-hover: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 50%,
+    rgb(0, 114, 245) 50%,
     transparent 75%
   ) !important;
   --divider-vertical-height: 100% !important;
@@ -526,7 +526,7 @@ body.theme-light {
   --hr-color: oklch(0% 0 0 / 0.092) !important;
   --hr-thickness: 2px !important;
   --icon-color: oklch(55% 0.0105 281) !important;
-  --icon-color-active: hsl(212, 100%, 48%) !important;
+  --icon-color-active: rgb(0, 114, 245) !important;
   --icon-color-focused: oklch(28.25% 0.0005 281) !important;
   --icon-color-hover: oklch(28.25% 0.0005 281) !important;
   --icon-l: 18px !important;
@@ -577,12 +577,12 @@ body.theme-light {
     0 0.75px 2px 0.5px oklch(0% 0 0 / 0.06) !important;
   --interactive-accent: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 100%,
+    rgb(0, 114, 245) 100%,
     transparent 10%
   ) !important;
   --interactive-accent-hover: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 80%,
+    rgb(0, 114, 245) 80%,
     transparent 40%
   ) !important;
   --interactive-accent-hsl: 212, 100%, 48% !important;
@@ -601,26 +601,26 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(212, 100%, 48%) !important;
+  --link-color: rgb(0, 114, 245) !important;
   --link-color-hover: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 80%,
+    rgb(0, 114, 245) 80%,
     transparent 40%
   ) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(212, 100%, 48%) !important;
+  --link-external-color: rgb(0, 114, 245) !important;
   --link-external-color-hover: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 80%,
+    rgb(0, 114, 245) 80%,
     transparent 40%
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: oklch(from hsl(212, 100%, 48%) 72% 36% h) !important;
-  --link-unresolved-decoration-color: hsla(212, 100%, 48%, 0.3) !important;
+  --link-unresolved-color: oklch(from rgb(0, 114, 245) 72% 36% h) !important;
+  --link-unresolved-decoration-color: rgba(0, 114, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -634,7 +634,7 @@ body.theme-light {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: oklch(71.5% 0.0105 281) !important;
-  --list-marker-color-collapsed: hsl(212, 100%, 48%) !important;
+  --list-marker-color-collapsed: rgb(0, 114, 245) !important;
   --list-marker-color-hover: oklch(45% 0.0105 281) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.15em !important;
@@ -693,7 +693,7 @@ body.theme-light {
   --metadata-property-background-active: oklch(0% 0 0 / 0.05) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2.25px
-    color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1.625px oklch(0% 0 0 / 0.06) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -725,12 +725,12 @@ body.theme-light {
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: oklch(0% 0 0 / 0.05) !important;
   --nav-item-background-hover: oklch(0% 0 0 / 0.05) !important;
-  --nav-item-background-selected: hsla(212, 100%, 48%, 0.15) !important;
+  --nav-item-background-selected: rgba(0, 114, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(42% 0.0025 281) !important;
   --nav-item-color-active: oklch(22.5% 0.0005 281) !important;
-  --nav-item-color-highlighted: hsl(212, 100%, 48%) !important;
+  --nav-item-color-highlighted: rgb(0, 114, 245) !important;
   --nav-item-color-hover: oklch(22.5% 0.0005 281) !important;
   --nav-item-color-selected: oklch(22.5% 0.0005 281) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -759,7 +759,7 @@ body.theme-light {
   --pill-color: oklch(45% 0.0105 281) !important;
   --pill-color-hover: oklch(28.25% 0.0005 281) !important;
   --pill-color-remove: oklch(71.5% 0.0105 281) !important;
-  --pill-color-remove-hover: hsl(212, 100%, 48%) !important;
+  --pill-color-remove-hover: rgb(0, 114, 245) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -885,13 +885,13 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 18px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 100%, 48%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 114, 245) !important;
   --tab-text-color: oklch(45% 0.0105 281) !important;
   --tab-text-color-active: oklch(22.5% 0.0005 281) !important;
   --tab-text-color-focused: oklch(45% 0.0105 281) !important;
   --tab-text-color-focused-active: oklch(22.5% 0.0005 281) !important;
   --tab-text-color-focused-active-current: oklch(22.5% 0.0005 281) !important;
-  --tab-text-color-focused-highlighted: hsl(212, 100%, 48%) !important;
+  --tab-text-color-focused-highlighted: rgb(0, 114, 245) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(0% 0 0 / 0.06) !important;
@@ -908,7 +908,7 @@ body.theme-light {
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 100%,
+    rgb(0, 114, 245) 100%,
     transparent 10%
   ) !important;
   --table-drag-handle-color: oklch(71.5% 0.0105 281) !important;
@@ -925,11 +925,11 @@ body.theme-light {
   --table-row-alt-background-hover: oklch(25% 0 0 / 0.0275) !important;
   --table-row-background-hover: none !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(212, 100%, 48%, 0.1) !important;
+  --table-selection: rgba(0, 114, 245, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 100%,
+    rgb(0, 114, 245) 100%,
     transparent 10%
   ) !important;
   --table-selection-border-radius: 4px !important;
@@ -938,21 +938,21 @@ body.theme-light {
   --table-white-space: break-spaces !important;
   --tag-background: transparent !important;
   --tag-background-hover: transparent !important;
-  --tag-border-color: hsla(212, 100%, 48%, 0.1) !important;
-  --tag-border-color-hover: hsla(212, 100%, 48%, 0.1) !important;
+  --tag-border-color: rgba(0, 114, 245, 0.1) !important;
+  --tag-border-color-hover: rgba(0, 114, 245, 0.1) !important;
   --tag-border-width: 1px !important;
-  --tag-color: hsl(212, 100%, 48%) !important;
-  --tag-color-hover: hsl(212, 100%, 48%) !important;
+  --tag-color: rgb(0, 114, 245) !important;
+  --tag-color-hover: rgb(0, 114, 245) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.6875em !important;
   --tag-padding-y: 0.3125em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent: hsl(212, 100%, 48%) !important;
+  --text-accent: rgb(0, 114, 245) !important;
   --text-accent-hover: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 80%,
+    rgb(0, 114, 245) 80%,
     transparent 40%
   ) !important;
   --text-error: rgb(240, 42, 28) !important;
@@ -963,7 +963,7 @@ body.theme-light {
   --text-normal: oklch(28.25% 0.0005 281) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(212, 100%, 48%, 0.15) !important;
+  --text-selection: rgba(0, 114, 245, 0.15) !important;
   --text-success: rgb(9, 180, 29) !important;
   --text-warning: rgb(255, 143, 0) !important;
   --titlebar-background: transparent !important;
@@ -994,7 +994,7 @@ body.theme-light {
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --h1-color: oklch(22.5% 0.0005 281) !important;
   --h2-color: oklch(22.5% 0.0005 281) !important;
@@ -1012,7 +1012,7 @@ body.theme-light {
   --radius-xs: 4px !important;
   --color-accent-3: color-mix(
     in oklch,
-    hsl(212, 100%, 48%),
+    rgb(0, 114, 245),
     transparent 5%
   ) !important;
   --background-gradient: radial-gradient(
@@ -1065,17 +1065,17 @@ body.theme-light {
   --code-special: oklch(28.25% 0.0005 281) !important;
   --color-accent-4: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 50%,
+    rgb(0, 114, 245) 50%,
     transparent 75%
   ) !important;
   --color-accent-5: color-mix(
     in oklch,
-    hsla(212, 100%, 48%, 0.15) 100%,
+    rgba(0, 114, 245, 0.15) 100%,
     transparent 75%
   ) !important;
   --color-accent-6: color-mix(
     in oklch,
-    hsla(212, 100%, 48%, 0.15) 40%,
+    rgba(0, 114, 245, 0.15) 40%,
     transparent 100%
   ) !important;
   --color-highlight-rgb: 233, 188, 0 !important;
@@ -1095,13 +1095,13 @@ body.theme-light {
   --h1-weight-alt: 500 !important;
   --hotkey-gradient: linear-gradient(
     to top,
-    hsl(212, 100%, 48%) -30%,
-    color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%) 180%
+    rgb(0, 114, 245) -30%,
+    color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%) 180%
   ) !important;
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: color-mix(
     in oklch,
-    hsl(212, 100%, 48%) 100%,
+    rgb(0, 114, 245) 100%,
     transparent 10%
   ) !important;
   --list-bullet-color: oklch(45% 0.0105 281) !important;
@@ -1117,10 +1117,10 @@ body.theme-light {
   --shadow-code: 0 0.125px 0px 0.375px oklch(0% 0 0 / 0.145) !important;
   --shadow-input: 0 0 0 0.5px oklch(0% 0 0 / 0.114) !important;
   --shadow-input-active: 0 0 0 2.25px
-    color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%) !important;
   --shadow-search-active:
-    0 0 0 1px color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%),
-    0 0 0 3.5px hsla(212, 100%, 48%, 0.15) !important;
+    0 0 0 1px color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%),
+    0 0 0 3.5px rgba(0, 114, 245, 0.15) !important;
   --shadow-status-bar:
     inset -6px 0 8px -6px oklch(0% 0 0 / 0.114),
     -0.25px 1px 1.5px 0.5px oklch(0% 0 0 / 0.114) !important;
@@ -1162,8 +1162,8 @@ body.theme-light {
   --table-text-weight: 400 !important;
   --tag-background-image: linear-gradient(
     to top,
-    hsla(212, 100%, 48%, 0.15) -30%,
-    color-mix(in oklch, hsla(212, 100%, 48%, 0.15) 40%, transparent 100%) 60%
+    rgba(0, 114, 245, 0.15) -30%,
+    color-mix(in oklch, rgba(0, 114, 245, 0.15) 40%, transparent 100%) 60%
   ) !important;
   --text-highlight-bg-search: oklch(
     from rgb(233, 188, 0) 0.875 c h / 0.2
@@ -1182,8 +1182,8 @@ body.theme-light {
   ) !important;
   --toggle-gradient: linear-gradient(
     to bottom,
-    hsl(212, 100%, 48%) -30%,
-    color-mix(in oklch, hsl(212, 100%, 48%) 50%, transparent 75%) 180%
+    rgb(0, 114, 245) -30%,
+    color-mix(in oklch, rgb(0, 114, 245) 50%, transparent 75%) 180%
   ) !important;
   --toggle-track-bg: oklch(0% 0 0 / 0.145) !important;
   --trans-faint-00: oklch(62.5% 0 0 / 0.03) !important;
@@ -1221,7 +1221,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(200, 100%, 49%, 0.1);
+  --background-modifier-active-hover: rgba(0, 167, 250, 0.1);
   --background-modifier-border: oklch(100% 0.05 283 / 0.0625);
   --background-modifier-border-focus: transparent;
   --background-modifier-border-hover: oklch(36.25% 0.00625 275);
@@ -1267,7 +1267,7 @@ body.theme-dark {
   --bases-table-cell-background-disabled: oklch(27.5% 0.00625 275);
   --bases-table-cell-radius-active: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2.25px
-    color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%);
+    color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -1363,14 +1363,14 @@ body.theme-dark {
   --collapse-icon-color: oklch(100% 0.02 283 / 0.35);
   --collapse-icon-color-collapsed: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
-  --color-accent: hsl(200, 100%, 49%);
-  --color-accent-1: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --color-accent: rgb(0, 167, 250);
+  --color-accent-1: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --color-accent-2: color-mix(
     in oklab,
-    color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%),
+    color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%),
     transparent 7%
   );
   --color-accent-hsl: 200, 100%, 49%;
@@ -1411,7 +1411,7 @@ body.theme-dark {
   --divider-color: oklch(100% 0.05 283 / 0.0625);
   --divider-color-hover: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 50%,
+    rgb(0, 167, 250) 50%,
     transparent 75%
   );
   --divider-vertical-height: 100%;
@@ -1578,7 +1578,7 @@ body.theme-dark {
   --hr-color: oklch(100% 0.04 283 / 0.1);
   --hr-thickness: 2px;
   --icon-color: oklch(64.25% 0.0125 275);
-  --icon-color-active: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --icon-color-active: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --icon-color-focused: oklch(87.5% 0.00375 275);
   --icon-color-hover: oklch(87.5% 0.00375 275);
   --icon-l: 18px;
@@ -1627,10 +1627,10 @@ body.theme-dark {
     inset 0 1px 1px 0.5px oklch(100% 0.05 283 / 0.075),
     inset 0 0.0625px 0 0.25px oklch(from oklch(34.5% 0.00625 275) l c h / 0.5),
     0px 1.25px 2.5px 0px oklch(from black l c h / 0.25);
-  --interactive-accent: hsl(200, 100%, 49%);
+  --interactive-accent: rgb(0, 167, 250);
   --interactive-accent-hover: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
   --interactive-accent-hsl: 200, 100%, 49%;
@@ -1649,30 +1649,26 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.6;
   --line-height-tight: 1.3;
-  --link-color: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --link-color: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --link-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%),
+    color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%),
     transparent 7%
   );
   --link-decoration: none;
   --link-decoration-hover: none;
   --link-decoration-thickness: auto;
-  --link-external-color: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --link-external-color: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --link-external-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%),
+    color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%),
     transparent 7%
   );
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: color-mix(
-    in oklab,
-    hsl(200, 100%, 49%) 52%,
-    #fff 38%
-  );
-  --link-unresolved-decoration-color: hsla(200, 100%, 49%, 0.3);
+  --link-unresolved-color: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
+  --link-unresolved-decoration-color: rgba(0, 167, 250, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 1;
@@ -1688,7 +1684,7 @@ body.theme-dark {
   --list-marker-color: oklch(52.5% 0.0125 275);
   --list-marker-color-collapsed: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
   --list-marker-color-hover: oklch(71.25% 0.00625 275);
@@ -1750,7 +1746,7 @@ body.theme-dark {
   --metadata-property-background-active: oklch(100% 0.05 283 / 0.05);
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2.25px
-    color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%);
+    color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%);
   --metadata-property-box-shadow-hover: 0 0 0 1.625px
     oklch(100% 0.05 283 / 0.0625);
   --metadata-property-padding: 0;
@@ -1783,14 +1779,14 @@ body.theme-dark {
   --nav-indentation-guide-width: 2px;
   --nav-item-background-active: oklch(100% 0.05 283 / 0.05);
   --nav-item-background-hover: oklch(100% 0.05 283 / 0.05);
-  --nav-item-background-selected: hsla(200, 100%, 49%, 0.15);
+  --nav-item-background-selected: rgba(0, 167, 250, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: oklch(77.75% 0.00625 275);
   --nav-item-color-active: oklch(87.5% 0.00375 275);
   --nav-item-color-highlighted: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
   --nav-item-color-hover: oklch(87.5% 0.00375 275);
@@ -1820,7 +1816,7 @@ body.theme-dark {
   --pill-color-remove: oklch(52.5% 0.0125 275);
   --pill-color-remove-hover: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
   --pill-decoration: none;
@@ -1942,7 +1938,7 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 18px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(200, 100%, 49%);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 167, 250);
   --tab-text-color: oklch(71.25% 0.00625 275);
   --tab-text-color-active: oklch(87.5% 0.00375 275);
   --tab-text-color-focused: oklch(71.25% 0.00625 275);
@@ -1950,7 +1946,7 @@ body.theme-dark {
   --tab-text-color-focused-active-current: oklch(87.5% 0.00375 275);
   --tab-text-color-focused-highlighted: color-mix(
     in oklab,
-    hsl(200, 100%, 49%) 52%,
+    rgb(0, 167, 250) 52%,
     #fff 38%
   );
   --tab-width: 200px;
@@ -1967,7 +1963,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(200, 100%, 49%);
+  --table-drag-handle-background-active: rgb(0, 167, 250);
   --table-drag-handle-color: oklch(52.5% 0.0125 275);
   --table-drag-handle-color-active: white;
   --table-drop-indicator-half-width: 2px;
@@ -1982,30 +1978,30 @@ body.theme-dark {
   --table-row-alt-background-hover: oklch(100% 0.075 283 / 0.015);
   --table-row-background-hover: none;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(200, 100%, 49%, 0.1);
+  --table-selection: rgba(0, 167, 250, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(200, 100%, 49%);
+  --table-selection-border-color: rgb(0, 167, 250);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 0.90625em;
   --table-white-space: break-spaces;
   --tag-background: transparent;
   --tag-background-hover: transparent;
-  --tag-border-color: hsla(200, 100%, 49%, 0.1);
-  --tag-border-color-hover: hsla(200, 100%, 49%, 0.1);
+  --tag-border-color: rgba(0, 167, 250, 0.1);
+  --tag-border-color-hover: rgba(0, 167, 250, 0.1);
   --tag-border-width: 1px;
-  --tag-color: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
-  --tag-color-hover: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --tag-color: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
+  --tag-color-hover: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.6875em;
   --tag-padding-y: 0.3125em;
   --tag-radius: 2em;
   --tag-size: 0.8em;
-  --text-accent: color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%);
+  --text-accent: color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%);
   --text-accent-hover: color-mix(
     in oklab,
-    color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%),
+    color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%),
     transparent 7%
   );
   --text-error: rgb(251, 72, 79);
@@ -2016,7 +2012,7 @@ body.theme-dark {
   --text-normal: oklch(87.5% 0.00375 275);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(200, 100%, 49%, 0.15);
+  --text-selection: rgba(0, 167, 250, 0.15);
   --text-success: rgb(91, 208, 109);
   --text-warning: rgb(228, 144, 55);
   --titlebar-background: transparent;
@@ -2047,7 +2043,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --h1-color: oklch(93.75% 0.00375 275);
   --h2-color: oklch(93.75% 0.00375 275);
@@ -2063,7 +2059,7 @@ body.theme-dark {
   --color-base-90: oklch(87.5% 0.00375 275);
   --nav-item-weight-active: 400;
   --radius-xs: 4px;
-  --color-accent-3: color-mix(in oklab, hsl(200, 100%, 49%), #fff 20%);
+  --color-accent-3: color-mix(in oklab, rgb(0, 167, 250), #fff 20%);
   --background-gradient: radial-gradient(
     at 50% calc(50% + 22px),
     oklch(28.75% 0.00625 275) 32%,
@@ -2112,19 +2108,15 @@ body.theme-dark {
   --bases-table-header-color-hover: oklch(77.75% 0.00625 275);
   --code-background-alt: oklch(100% 0.05 283 / 0.05);
   --code-special: oklch(87.5% 0.00375 275);
-  --color-accent-4: color-mix(
-    in oklab,
-    hsl(200, 100%, 49%) 50%,
-    transparent 75%
-  );
+  --color-accent-4: color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%);
   --color-accent-5: color-mix(
     in oklab,
-    hsla(200, 100%, 49%, 0.15) 100%,
+    rgba(0, 167, 250, 0.15) 100%,
     transparent 75%
   );
   --color-accent-6: color-mix(
     in oklab,
-    hsla(200, 100%, 49%, 0.15) 40%,
+    rgba(0, 167, 250, 0.15) 40%,
     transparent 100%
   );
   --color-highlight-rgb: 224, 218, 113;
@@ -2144,13 +2136,13 @@ body.theme-dark {
   --h1-weight-alt: 500;
   --hotkey-gradient: linear-gradient(
     to top,
-    hsl(200, 100%, 49%) -10%,
-    color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%) 210%
+    rgb(0, 167, 250) -10%,
+    color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%) 210%
   );
   --icon-stroke-thick: 2.25px;
   --link-color-sidebar: color-mix(
     in oklab,
-    color-mix(in oklab, hsl(200, 100%, 49%) 52%, #fff 38%),
+    color-mix(in oklab, rgb(0, 167, 250) 52%, #fff 38%),
     transparent 7%
   );
   --list-bullet-color: oklch(77.75% 0.00625 275);
@@ -2168,10 +2160,10 @@ body.theme-dark {
     0 0.375px 2px 0px oklch(from black l c h / 0.375);
   --shadow-input: 0px 0px 0px 0.5px oklch(100% 0.04 283 / 0.1);
   --shadow-input-active: 0 0 0 2.25px
-    color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%);
+    color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%);
   --shadow-search-active:
-    0 0 0 1px color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%),
-    0 0 0 3.5px hsla(200, 100%, 49%, 0.15);
+    0 0 0 1px color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%),
+    0 0 0 3.5px rgba(0, 167, 250, 0.15);
   --shadow-status-bar:
     inset -6px 0 8px -6px oklch(100% 0.05 283 / 0.05),
     -0.25px 1px 1.5px 0.5px oklch(from oklch(34.5% 0.00625 275) l c h / 0.5);
@@ -2207,8 +2199,8 @@ body.theme-dark {
   --table-text-weight: 400;
   --tag-background-image: linear-gradient(
     to top,
-    hsla(200, 100%, 49%, 0.15) -50%,
-    color-mix(in oklab, hsla(200, 100%, 49%, 0.15) 40%, transparent 100%) 100%
+    rgba(0, 167, 250, 0.15) -50%,
+    color-mix(in oklab, rgba(0, 167, 250, 0.15) 40%, transparent 100%) 100%
   );
   --text-highlight-bg-search: oklch(from rgb(224, 218, 113) 0.75 0.25 h / 0.25);
   --text-highlight-bg-search-active: oklch(
@@ -2223,8 +2215,8 @@ body.theme-dark {
   );
   --toggle-gradient: linear-gradient(
     to bottom,
-    hsl(200, 100%, 49%) -30%,
-    color-mix(in oklab, hsl(200, 100%, 49%) 50%, transparent 75%) 180%
+    rgb(0, 167, 250) -30%,
+    color-mix(in oklab, rgb(0, 167, 250) 50%, transparent 75%) 180%
   );
   --toggle-track-bg: oklch(100% 0.02 283 / 0.2);
   --trans-dark-00: oklch(from black l c h / 0.375);

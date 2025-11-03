@@ -6,10 +6,10 @@
 }
 
 :root:root {
-  --code-background: #0000000d !important;
+  --code-background: rgba(0, 0, 0, 0.05) !important;
   --code-border-color: #e0e0e0 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: #00000011 !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #ababab !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
@@ -28,16 +28,16 @@
   --graph-line: #d4d4d4 !important;
   --graph-node: #b5b3b1 !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: #8a5cf5 !important;
+  --graph-node-focused: rgb(138, 92, 245) !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #1a1a1a !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: #ffffff0d !important;
+  --code-background: rgba(255, 255, 255, 0.05) !important;
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: #ffffff11 !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #666666 !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
@@ -56,7 +56,7 @@
   --graph-line: #3f3f3f !important;
   --graph-node: #707070 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
+  --graph-node-focused: rgb(166, 139, 249) !important;
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #ccc !important;
@@ -241,13 +241,13 @@ body {
   }
 
   div#quartz-root {
-    background-color: light-dark(#ffffff, #1e1e1e);
-    color: light-dark(#222222, #dadada);
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   a.external {
-    background-color: #00000000;
-    color: light-dark(#8a5cf5, #a68af9);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
     font-family:
@@ -265,7 +265,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(#8a5cf5, #a68af9);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -274,8 +274,8 @@ body {
   }
 
   a.internal {
-    background-color: #00000000;
-    color: light-dark(#8a5cf5, #a68af9);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
     font-family:
@@ -293,7 +293,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(#8a5cf5, #a68af9);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -302,8 +302,8 @@ body {
   }
 
   a.internal.broken {
-    background-color: #00000000;
-    color: light-dark(#8a5cf5, #a68af9);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
     font-family:
@@ -321,7 +321,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(#8a5cf5, #a68af9);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -330,8 +330,8 @@ body {
   }
 
   p {
-    background-color: #00000000;
-    color: light-dark(#1a1a1a, #cccccc);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     cursor: auto;
     filter: none;
     font-family:
@@ -349,7 +349,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(204, 204, 204);
-    text-decoration-color: light-dark(#1a1a1a, #cccccc);
+    text-decoration-color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -359,8 +359,8 @@ body {
 
   .page article p > strong,
   strong {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -378,7 +378,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -388,8 +388,8 @@ body {
 
   .page article p > b,
   b {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -407,7 +407,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -417,8 +417,8 @@ body {
 
   .page article p > em,
   em {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -436,7 +436,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -446,8 +446,8 @@ body {
 
   .page article p > i,
   i {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -465,7 +465,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -474,8 +474,8 @@ body {
   }
 
   .text-highlight {
-    background-color: #ffff00;
-    color: #000000;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
     cursor: auto;
     filter: none;
     font-family:
@@ -493,7 +493,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(0, 0, 0);
-    text-decoration-color: #000000;
+    text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -502,8 +502,8 @@ body {
   }
 
   del {
-    background-color: #00000000;
-    color: light-dark(#1a1a1a, #cccccc);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     cursor: auto;
     filter: none;
     font-family:
@@ -521,7 +521,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: line-through solid rgb(204, 204, 204);
-    text-decoration-color: light-dark(#1a1a1a, #cccccc);
+    text-decoration-color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -547,7 +547,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -556,7 +556,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   .search
@@ -571,8 +571,8 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -581,12 +581,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   hr {
-    border: 0px light-dark(#e0e0e0, #363636);
-    border-top: 2px solid light-dark(#e0e0e0, #363636);
+    border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -614,7 +614,7 @@ body {
     > li
     > .match-tag {
     align-items: normal;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     display: block;
     font-family:
       ui-sans-serif,
@@ -630,7 +630,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -642,17 +642,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   ul > li {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-align: left;
   }
 
   ul > li::marker {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -661,7 +661,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     content: normal;
     pointer-events: auto;
     transform: none;
@@ -669,17 +669,20 @@ body {
   }
 
   ol > li {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-align: left;
   }
 
   ol > li::marker {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   code {
-    background-color: light-dark(#0000000d, #ffffff0d);
-    border: 0px solid light-dark(#e0e0e0, #363636);
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.05),
+      rgba(255, 255, 255, 0.05)
+    );
+    border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -688,7 +691,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(#1a1a1a, #cccccc);
+    color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -698,8 +701,8 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -715,8 +718,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -733,7 +736,7 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 2px inset light-dark(#767676, #858585);
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -767,7 +770,7 @@ body {
     position: static;
     width: auto;
     display: list-item;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-mask-position: inherit;
     -webkit-mask-size: inherit;
     -webkit-mask-repeat: inherit;
@@ -775,13 +778,13 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   blockquote {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-inline-start: inherit;
     font-family:
       ui-sans-serif,
@@ -804,13 +807,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(#8a5cf5, #a68af9);
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration: underline solid rgb(166, 138, 249);
   }
 
   .search > .search-button {
-    background-color: light-dark(#ffffff, #121212);
-    border: 2px inset light-dark(#767676, #858585);
+    background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -819,13 +822,13 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(#000000, #ffffff);
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     font-family: Arial;
   }
 
   .search > .search-container > .search-space {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -838,8 +841,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(#ffffff, #121212);
-    border: 2px inset light-dark(#767676, #858585);
+    background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -852,8 +855,8 @@ body {
   }
 
   .search > .search-container > .search-space > * {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -871,7 +874,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(#222222, #dadada);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -881,7 +884,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -897,7 +900,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   .search
@@ -906,7 +909,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -935,9 +938,9 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-weight: 400;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .search
@@ -982,11 +985,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   h1 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1003,7 +1006,7 @@ body {
   }
 
   h2 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1020,7 +1023,7 @@ body {
   }
 
   h3 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1037,7 +1040,7 @@ body {
   }
 
   h4 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1054,7 +1057,7 @@ body {
   }
 
   h5 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1071,7 +1074,7 @@ body {
   }
 
   h6 {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1092,12 +1095,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00000000;
-    border: 0px light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1111,7 +1114,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1126,7 +1129,7 @@ body {
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1144,20 +1147,20 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-weight: 400;
   }
 
   .callout > .callout-content {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1169,15 +1172,15 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1189,15 +1192,15 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1209,15 +1212,15 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1229,15 +1232,15 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1249,15 +1252,15 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1269,15 +1272,15 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1289,15 +1292,15 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1309,15 +1312,15 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1329,15 +1332,15 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1349,15 +1352,15 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1369,15 +1372,15 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1389,15 +1392,15 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px light-dark(#222222, #dadada);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1409,7 +1412,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
@@ -1463,7 +1466,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1482,8 +1485,8 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: #00000000;
-    color: light-dark(#222222, #dadada);
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
   }
 
@@ -1491,7 +1494,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1510,7 +1513,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(#222222, #dadada);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     font-family:
       ui-sans-serif,

@@ -28,7 +28,7 @@
   --graph-line: #d4d4d4 !important;
   --graph-node: hsl(0, -5%, 37%) !important;
   --graph-node-attachment: #ffda34 !important;
-  --graph-node-focused: hsl(210, 100%, 44%) !important;
+  --graph-node-focused: rgb(0, 112, 224) !important;
   --graph-node-tag: #6ea82c !important;
   --graph-node-unresolved: hsl(0, -5%, 57%) !important;
   --graph-text: #222222 !important;
@@ -38,14 +38,14 @@
   --code-border-color: #272727 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: hsl(0, 0%, 60%) !important;
+  --code-comment: rgb(153, 153, 153) !important;
   --code-function: #ffda34 !important;
   --code-important: #f39b35 !important;
   --code-keyword: #fa99cd !important;
   --code-normal: #dadada !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: hsl(0, 0%, 85%) !important;
+  --code-punctuation: rgb(217, 217, 217) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #6ea82c !important;
@@ -54,11 +54,11 @@
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #272727 !important;
-  --graph-node: hsl(0, 0%, 85%) !important;
+  --graph-node: rgb(217, 217, 217) !important;
   --graph-node-attachment: #ffda34 !important;
-  --graph-node-focused: hsl(210, 100%, 44%) !important;
+  --graph-node-focused: rgb(0, 112, 224) !important;
   --graph-node-tag: #6ea82c !important;
-  --graph-node-unresolved: hsl(0, 0%, 60%) !important;
+  --graph-node-unresolved: rgb(153, 153, 153) !important;
   --graph-text: #dadada !important;
 }
 

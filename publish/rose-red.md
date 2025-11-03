@@ -4,10 +4,9 @@
 - Support the author: <a href="https://buymeacoffee.com/tu2_atmanand" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/sponsors/tu2-atmanand" target="_blank" rel="noopener noreferrer">GitHub Sponsor</a> | <a href="https://paypal.me/tu2atmanand" target="_blank" rel="noopener noreferrer">Paypal</a> | <a href="https://ko-fi.com/atmanandgauns" target="_blank" rel="noopener noreferrer">ko-fi</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-red">Install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
+| Name       | Modes                     | Compatibility                                  | License                                                                                                                                                 |
+| ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `rose-red` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rose-red/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
-
 
 # Markdown Formatting Guide for Obsidian
 

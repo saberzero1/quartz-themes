@@ -7,9 +7,9 @@
 
 :root:root {
   --code-background: #eeeeee !important;
-  --code-border-color: #e6e6e6 !important;
+  --code-border-color: rgb(230, 230, 230) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: #00000011 !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #949494 !important;
   --code-function: #ecd91b !important;
   --code-important: #ffb522 !important;
@@ -28,7 +28,7 @@
   --graph-line: #d4d4d4 !important;
   --graph-node: #999999 !important;
   --graph-node-attachment: #ecd91b !important;
-  --graph-node-focused: #ffbf00 !important;
+  --graph-node-focused: rgb(255, 191, 0) !important;
   --graph-node-tag: #5dd400 !important;
   --graph-node-unresolved: #949494 !important;
   --graph-text: #2f2f2f !important;
@@ -209,13 +209,13 @@ body {
   }
 
   div#quartz-root {
-    background-color: #ffffff;
-    color: #222222;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
   }
 
   a.external {
-    background-color: #00000000;
-    color: #8a5cf5;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(138, 92, 245);
     cursor: pointer;
     filter: none;
     font-family:
@@ -233,7 +233,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(138, 92, 245);
-    text-decoration-color: #8a5cf5;
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -242,8 +242,8 @@ body {
   }
 
   a.internal {
-    background-color: #00000000;
-    color: #8a5cf5;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(138, 92, 245);
     cursor: pointer;
     filter: none;
     font-family:
@@ -261,7 +261,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(138, 92, 245);
-    text-decoration-color: #8a5cf5;
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -270,8 +270,8 @@ body {
   }
 
   a.internal.broken {
-    background-color: #00000000;
-    color: #8a5cf5;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(138, 92, 245);
     cursor: pointer;
     filter: none;
     font-family:
@@ -289,7 +289,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: underline solid rgb(138, 92, 245);
-    text-decoration-color: #8a5cf5;
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -298,8 +298,8 @@ body {
   }
 
   p {
-    background-color: #00000000;
-    color: #2f2f2f;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(47, 47, 47);
     cursor: auto;
     filter: none;
     font-family:
@@ -318,7 +318,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(47, 47, 47);
-    text-decoration-color: #2f2f2f;
+    text-decoration-color: rgb(47, 47, 47);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -328,8 +328,8 @@ body {
 
   .page article p > strong,
   strong {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
@@ -347,7 +347,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -357,8 +357,8 @@ body {
 
   .page article p > b,
   b {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
@@ -376,7 +376,7 @@ body {
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -386,8 +386,8 @@ body {
 
   .page article p > em,
   em {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
@@ -405,7 +405,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -415,8 +415,8 @@ body {
 
   .page article p > i,
   i {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
@@ -434,7 +434,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -443,8 +443,8 @@ body {
   }
 
   .text-highlight {
-    background-color: #ffff00;
-    color: #000000;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
     cursor: auto;
     filter: none;
     font-family:
@@ -462,7 +462,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(0, 0, 0);
-    text-decoration-color: #000000;
+    text-decoration-color: rgb(0, 0, 0);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -471,8 +471,8 @@ body {
   }
 
   del {
-    background-color: #00000000;
-    color: #2f2f2f;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(47, 47, 47);
     cursor: auto;
     filter: none;
     font-family:
@@ -491,7 +491,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: line-through solid rgb(47, 47, 47);
-    text-decoration-color: #2f2f2f;
+    text-decoration-color: rgb(47, 47, 47);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -517,7 +517,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -526,7 +526,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   .search
@@ -541,8 +541,8 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -551,12 +551,12 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   hr {
-    border: 0px #e6e6e6;
-    border-top: 2px solid #e6e6e6;
+    border: 0px rgb(230, 230, 230);
+    border-top: 2px solid rgb(230, 230, 230);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -584,7 +584,7 @@ body {
     > li
     > .match-tag {
     align-items: normal;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     display: block;
     font-family:
       ui-sans-serif,
@@ -600,7 +600,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -612,17 +612,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   ul > li {
-    color: #222222;
+    color: rgb(34, 34, 34);
     text-align: left;
   }
 
   ul > li::marker {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -631,7 +631,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #222222;
+    color: rgb(34, 34, 34);
     content: normal;
     pointer-events: auto;
     transform: none;
@@ -639,17 +639,17 @@ body {
   }
 
   ol > li {
-    color: #222222;
+    color: rgb(34, 34, 34);
     text-align: left;
   }
 
   ol > li::marker {
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   code {
-    background-color: #eeeeee;
-    border: 0px solid #e6e6e6;
+    background-color: rgb(238, 238, 238);
+    border: 0px solid rgb(230, 230, 230);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -658,7 +658,7 @@ body {
     border-start-end-radius: 7px;
     border-end-start-radius: 7px;
     border-end-end-radius: 7px;
-    color: #2f2f2f;
+    color: rgb(47, 47, 47);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -668,8 +668,8 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -685,8 +685,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -703,7 +703,7 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 2px inset #767676;
+    border: 2px inset rgb(118, 118, 118);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -737,7 +737,7 @@ body {
     position: static;
     width: auto;
     display: list-item;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-mask-position: inherit;
     -webkit-mask-size: inherit;
     -webkit-mask-repeat: inherit;
@@ -745,13 +745,13 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: #222222;
+    color: rgb(34, 34, 34);
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
   }
 
   blockquote {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     border-inline-start: inherit;
     font-family:
       Inter,
@@ -775,13 +775,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: #8a5cf5;
+    color: rgb(138, 92, 245);
     text-decoration: underline solid rgb(138, 92, 245);
   }
 
   .search > .search-button {
-    background-color: #ffffff;
-    border: 2px inset #767676;
+    background-color: rgb(255, 255, 255);
+    border: 2px inset rgb(118, 118, 118);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -790,13 +790,13 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-family: Arial;
   }
 
   .search > .search-container > .search-space {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -809,8 +809,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: #ffffff;
-    border: 2px inset #767676;
+    background-color: rgb(255, 255, 255);
+    border: 2px inset rgb(118, 118, 118);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -823,8 +823,8 @@ body {
   }
 
   .search > .search-container > .search-space > * {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
     filter: none;
     font-family:
@@ -842,7 +842,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(34, 34, 34);
-    text-decoration-color: #222222;
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -852,7 +852,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -868,7 +868,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   .search
@@ -877,7 +877,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -906,9 +906,9 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-weight: 400;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .search
@@ -953,11 +953,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: #222222;
+    color: rgb(34, 34, 34);
   }
 
   h1 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -974,7 +974,7 @@ body {
   }
 
   h2 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -991,7 +991,7 @@ body {
   }
 
   h3 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1008,7 +1008,7 @@ body {
   }
 
   h4 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1025,7 +1025,7 @@ body {
   }
 
   h5 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1042,7 +1042,7 @@ body {
   }
 
   h6 {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1063,12 +1063,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00000000;
-    border: 0px #222222;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1082,7 +1082,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1097,7 +1097,7 @@ body {
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1115,20 +1115,20 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: #222222;
+    color: rgb(34, 34, 34);
     font-weight: 400;
   }
 
   .callout > .callout-content {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1140,15 +1140,15 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1160,15 +1160,15 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1180,15 +1180,15 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1200,15 +1200,15 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1220,15 +1220,15 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1240,15 +1240,15 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1260,15 +1260,15 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1280,15 +1280,15 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1300,15 +1300,15 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1320,15 +1320,15 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1340,15 +1340,15 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1360,15 +1360,15 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 0px #222222;
+    border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1380,7 +1380,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: #000000;
+    fill: rgb(0, 0, 0);
     stroke: none;
   }
 
@@ -1434,7 +1434,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: #222222;
+    color: rgb(34, 34, 34);
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1453,8 +1453,8 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: #00000000;
-    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: auto;
   }
 
@@ -1462,7 +1462,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: #222222;
+    color: rgb(34, 34, 34);
     cursor: auto;
     font-family:
       ui-sans-serif,
@@ -1481,7 +1481,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: #222222;
+    color: rgb(34, 34, 34);
     cursor: auto;
     font-family:
       ui-sans-serif,

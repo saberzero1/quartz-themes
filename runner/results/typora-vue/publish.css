@@ -168,7 +168,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(153, 47%, 49%, 0.1) !important;
+  --background-modifier-active-hover: rgba(66, 184, 131, 0.1) !important;
   --background-modifier-border: #e0e0e0 !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: #d4d4d4 !important;
@@ -179,8 +179,8 @@ body.theme-light {
   --background-modifier-error-rgb: 233, 49, 71 !important;
   --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
-  --background-modifier-hover: hsla(153, 47%, 49%, 0.05) !important;
-  --background-modifier-message: hsl(153, 47%, 49%) !important;
+  --background-modifier-hover: rgba(66, 184, 131, 0.05) !important;
+  --background-modifier-message: rgb(66, 184, 131) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
   --background-primary: #ffffff !important;
@@ -209,14 +209,14 @@ body.theme-light {
   --bases-table-cell-background-active: #ffffff !important;
   --bases-table-cell-background-disabled: #fafafa !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(152, 47.47%, 52.675%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(79, 191, 139) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-header-background: #ffffff !important;
-  --bases-table-header-background-hover: hsla(153, 47%, 49%, 0.05) !important;
+  --bases-table-header-background-hover: rgba(66, 184, 131, 0.05) !important;
   --bases-table-header-color: #5c5c5c !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -232,7 +232,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(152, 47.47%, 52.675%) !important;
+  --blockquote-border-color: rgb(79, 191, 139) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -275,8 +275,8 @@ body.theme-light {
   --caret-color: #34495e !important;
   --checkbox-border-color: #ababab !important;
   --checkbox-border-color-hover: #5c5c5c !important;
-  --checkbox-color: hsl(152, 47.47%, 52.675%) !important;
-  --checkbox-color-hover: hsl(150, 47.94%, 56.35%) !important;
+  --checkbox-color: rgb(79, 191, 139) !important;
+  --checkbox-color-hover: rgb(89, 197, 143) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #ffffff !important;
   --checkbox-radius: 4px !important;
@@ -287,7 +287,7 @@ body.theme-light {
   --code-background: #f8f8f8 !important;
   --code-border-color: #e0e0e0 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: hsla(153, 47%, 49%, 0.05) !important;
+  --code-bracket-background: rgba(66, 184, 131, 0.05) !important;
   --code-comment: #ababab !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
@@ -303,10 +303,10 @@ body.theme-light {
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #ababab !important;
-  --collapse-icon-color-collapsed: hsl(153, 47%, 49%) !important;
-  --color-accent: hsl(153, 47%, 49%) !important;
-  --color-accent-1: hsl(152, 47.47%, 52.675%) !important;
-  --color-accent-2: hsl(150, 47.94%, 56.35%) !important;
+  --collapse-icon-color-collapsed: rgb(66, 184, 131) !important;
+  --color-accent: rgb(66, 184, 131) !important;
+  --color-accent-1: rgb(79, 191, 139) !important;
+  --color-accent-2: rgb(89, 197, 143) !important;
   --color-accent-hsl: 153, 47%, 49% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -343,7 +343,7 @@ body.theme-light {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #e0e0e0 !important;
-  --divider-color-hover: hsl(152, 47.47%, 52.675%) !important;
+  --divider-color-hover: rgb(79, 191, 139) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -359,7 +359,7 @@ body.theme-light {
     0 0 0 1px #e0e0e0, inset 0 0 0 1px #e0e0e0 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(152, 47.47%, 52.675%) !important;
+  --embed-border-start: 2px solid rgb(79, 191, 139) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -437,7 +437,7 @@ body.theme-light {
   --footnote-id-color-no-occurrences: #ababab !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: hsla(153, 47%, 49%, 0.05) !important;
+  --footnote-input-background-active: rgba(66, 184, 131, 0.05) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -449,7 +449,7 @@ body.theme-light {
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: hsl(153, 47%, 49%) !important;
+  --graph-node-focused: rgb(66, 184, 131) !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #34495e !important;
@@ -490,9 +490,9 @@ body.theme-light {
   --hr-color: #e0e0e0 !important;
   --hr-thickness: 2px !important;
   --icon-color: #5c5c5c !important;
-  --icon-color-active: hsl(153, 47%, 49%) !important;
+  --icon-color-active: rgb(66, 184, 131) !important;
   --icon-color-focused: #34495e !important;
-  --icon-color-hover: hsl(153, 47%, 49%) !important;
+  --icon-color-hover: rgb(66, 184, 131) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -539,8 +539,8 @@ body.theme-light {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: hsl(152, 47.47%, 52.675%) !important;
-  --interactive-accent-hover: hsl(150, 47.94%, 56.35%) !important;
+  --interactive-accent: rgb(79, 191, 139) !important;
+  --interactive-accent-hover: rgb(89, 197, 143) !important;
   --interactive-accent-hsl: 153, 47%, 49% !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #ffffff !important;
@@ -557,18 +557,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(153, 47%, 49%) !important;
-  --link-color-hover: hsl(150, 47.94%, 56.35%) !important;
+  --link-color: rgb(66, 184, 131) !important;
+  --link-color-hover: rgb(89, 197, 143) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(153, 47%, 49%) !important;
-  --link-external-color-hover: hsl(150, 47.94%, 56.35%) !important;
+  --link-external-color: rgb(66, 184, 131) !important;
+  --link-external-color-hover: rgb(89, 197, 143) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(153, 47%, 49%) !important;
-  --link-unresolved-decoration-color: hsla(153, 47%, 49%, 0.3) !important;
+  --link-unresolved-color: rgb(66, 184, 131) !important;
+  --link-unresolved-decoration-color: rgba(66, 184, 131, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -582,7 +582,7 @@ body.theme-light {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: #ababab !important;
-  --list-marker-color-collapsed: hsl(153, 47%, 49%) !important;
+  --list-marker-color-collapsed: rgb(66, 184, 131) !important;
   --list-marker-color-hover: #5c5c5c !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -608,7 +608,7 @@ body.theme-light {
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: hsla(153, 47%, 49%, 0.05) !important;
+  --metadata-input-background-active: rgba(66, 184, 131, 0.05) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -619,7 +619,7 @@ body.theme-light {
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #34495e !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: hsla(153, 47%, 49%, 0.05) !important;
+  --metadata-label-background-active: rgba(66, 184, 131, 0.05) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -632,7 +632,7 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: hsla(153, 47%, 49%, 0.05) !important;
+  --metadata-property-background-active: rgba(66, 184, 131, 0.05) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #d4d4d4 !important;
@@ -664,15 +664,15 @@ body.theme-light {
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: hsla(153, 47%, 49%, 0.05) !important;
-  --nav-item-background-hover: hsla(153, 47%, 49%, 0.05) !important;
-  --nav-item-background-selected: hsla(153, 47%, 49%, 0.15) !important;
+  --nav-item-background-active: rgba(66, 184, 131, 0.05) !important;
+  --nav-item-background-hover: rgba(66, 184, 131, 0.05) !important;
+  --nav-item-background-selected: rgba(66, 184, 131, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #5c5c5c !important;
-  --nav-item-color-active: hsl(153, 47%, 49%) !important;
-  --nav-item-color-highlighted: hsl(153, 47%, 49%) !important;
-  --nav-item-color-hover: hsl(153, 47%, 49%) !important;
+  --nav-item-color-active: rgb(66, 184, 131) !important;
+  --nav-item-color-highlighted: rgb(66, 184, 131) !important;
+  --nav-item-color-hover: rgb(66, 184, 131) !important;
   --nav-item-color-selected: #34495e !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
@@ -699,7 +699,7 @@ body.theme-light {
   --pill-color: #5c5c5c !important;
   --pill-color-hover: #34495e !important;
   --pill-color-remove: #ababab !important;
-  --pill-color-remove-hover: hsl(153, 47%, 49%) !important;
+  --pill-color-remove-hover: rgb(66, 184, 131) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -819,13 +819,13 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(153, 47%, 49%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(66, 184, 131) !important;
   --tab-text-color: #ababab !important;
   --tab-text-color-active: #5c5c5c !important;
   --tab-text-color-focused: #5c5c5c !important;
   --tab-text-color-focused-active: #5c5c5c !important;
   --tab-text-color-focused-active-current: #34495e !important;
-  --tab-text-color-focused-highlighted: hsl(153, 47%, 49%) !important;
+  --tab-text-color-focused-highlighted: rgb(66, 184, 131) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #e0e0e0 !important;
@@ -840,7 +840,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(152, 47.47%, 52.675%) !important;
+  --table-drag-handle-background-active: rgb(79, 191, 139) !important;
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -855,28 +855,28 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: #f2f2f2 !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(153, 47%, 49%, 0.1) !important;
+  --table-selection: rgba(66, 184, 131, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(152, 47.47%, 52.675%) !important;
+  --table-selection-border-color: rgb(79, 191, 139) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: hsla(153, 47%, 49%, 0.1) !important;
-  --tag-background-hover: hsla(153, 47%, 49%, 0.2) !important;
-  --tag-border-color: hsla(153, 47%, 49%, 0.15) !important;
-  --tag-border-color-hover: hsla(153, 47%, 49%, 0.15) !important;
+  --tag-background: rgba(66, 184, 131, 0.1) !important;
+  --tag-background-hover: rgba(66, 184, 131, 0.2) !important;
+  --tag-border-color: rgba(66, 184, 131, 0.15) !important;
+  --tag-border-color-hover: rgba(66, 184, 131, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(153, 47%, 49%) !important;
-  --tag-color-hover: hsl(153, 47%, 49%) !important;
+  --tag-color: rgb(66, 184, 131) !important;
+  --tag-color-hover: rgb(66, 184, 131) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: hsl(153, 47%, 49%) !important;
-  --text-accent-hover: hsl(150, 47.94%, 56.35%) !important;
+  --text-accent: rgb(66, 184, 131) !important;
+  --text-accent-hover: rgb(89, 197, 143) !important;
   --text-error: #e93147 !important;
   --text-faint: #ababab !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -885,7 +885,7 @@ body.theme-light {
   --text-normal: #34495e !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(153, 47%, 49%, 0.2) !important;
+  --text-selection: rgba(66, 184, 131, 0.2) !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: #ffffff !important;
@@ -916,7 +916,7 @@ body.theme-light {
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --cus-code-block-border: #f4f4f4 !important;
   --cus-highlight-cursor-line: rgba(245, 204, 142, 0.12) !important;
@@ -938,7 +938,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(153, 47%, 49%, 0.1);
+  --background-modifier-active-hover: rgba(66, 184, 131, 0.1);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
@@ -949,8 +949,8 @@ body.theme-dark {
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: hsla(153, 47%, 49%, 0.05);
-  --background-modifier-message: hsl(153, 47%, 49%);
+  --background-modifier-hover: rgba(66, 184, 131, 0.05);
+  --background-modifier-message: rgb(66, 184, 131);
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: #1e1e1e;
@@ -979,14 +979,14 @@ body.theme-dark {
   --bases-table-cell-background-active: #1e1e1e;
   --bases-table-cell-background-disabled: #242424;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(153, 47%, 49%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(66, 184, 131);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #1e1e1e;
-  --bases-table-header-background-hover: hsla(153, 47%, 49%, 0.05);
+  --bases-table-header-background-hover: rgba(66, 184, 131, 0.05);
   --bases-table-header-color: #b3b3b3;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1002,7 +1002,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(153, 47%, 49%);
+  --blockquote-border-color: rgb(66, 184, 131);
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -1045,8 +1045,8 @@ body.theme-dark {
   --caret-color: #eeeeee;
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
-  --checkbox-color: hsl(153, 47%, 49%);
-  --checkbox-color-hover: hsl(150, 47.94%, 56.35%);
+  --checkbox-color: rgb(66, 184, 131);
+  --checkbox-color-hover: rgb(89, 197, 143);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #1e1e1e;
   --checkbox-radius: 4px;
@@ -1057,7 +1057,7 @@ body.theme-dark {
   --code-background: #1a1a1a;
   --code-border-color: #363636;
   --code-border-width: 0px;
-  --code-bracket-background: hsla(153, 47%, 49%, 0.05);
+  --code-bracket-background: rgba(66, 184, 131, 0.05);
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -1073,10 +1073,10 @@ body.theme-dark {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(150, 47.94%, 56.35%);
-  --color-accent: hsl(153, 47%, 49%);
-  --color-accent-1: hsl(150, 47.94%, 56.35%);
-  --color-accent-2: hsl(148, 49.35%, 63.21%);
+  --collapse-icon-color-collapsed: rgb(89, 197, 143);
+  --color-accent: rgb(66, 184, 131);
+  --color-accent-1: rgb(89, 197, 143);
+  --color-accent-2: rgb(114, 207, 158);
   --color-accent-hsl: 153, 47%, 49%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1113,7 +1113,7 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: #363636;
-  --divider-color-hover: hsl(153, 47%, 49%);
+  --divider-color-hover: rgb(66, 184, 131);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -1128,7 +1128,7 @@ body.theme-dark {
   --embed-block-shadow-hover: 0 0 0 1px #363636, inset 0 0 0 1px #363636;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(153, 47%, 49%);
+  --embed-border-start: 2px solid rgb(66, 184, 131);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -1206,7 +1206,7 @@ body.theme-dark {
   --footnote-id-color-no-occurrences: #666666;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: hsla(153, 47%, 49%, 0.05);
+  --footnote-input-background-active: rgba(66, 184, 131, 0.05);
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
@@ -1218,7 +1218,7 @@ body.theme-dark {
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(150, 47.94%, 56.35%);
+  --graph-node-focused: rgb(89, 197, 143);
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #eeeeee;
@@ -1259,9 +1259,9 @@ body.theme-dark {
   --hr-color: #363636;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --icon-color-active: hsl(150, 47.94%, 56.35%);
+  --icon-color-active: rgb(89, 197, 143);
   --icon-color-focused: #eeeeee;
-  --icon-color-hover: hsl(153, 47%, 49%);
+  --icon-color-hover: rgb(66, 184, 131);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -1308,8 +1308,8 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(153, 47%, 49%);
-  --interactive-accent-hover: hsl(150, 47.94%, 56.35%);
+  --interactive-accent: rgb(66, 184, 131);
+  --interactive-accent-hover: rgb(89, 197, 143);
   --interactive-accent-hsl: 153, 47%, 49%;
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
@@ -1326,18 +1326,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: hsl(150, 47.94%, 56.35%);
-  --link-color-hover: hsl(148, 49.35%, 63.21%);
+  --link-color: rgb(89, 197, 143);
+  --link-color-hover: rgb(114, 207, 158);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: hsl(150, 47.94%, 56.35%);
-  --link-external-color-hover: hsl(148, 49.35%, 63.21%);
+  --link-external-color: rgb(89, 197, 143);
+  --link-external-color-hover: rgb(114, 207, 158);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: hsl(150, 47.94%, 56.35%);
-  --link-unresolved-decoration-color: hsla(153, 47%, 49%, 0.3);
+  --link-unresolved-color: rgb(89, 197, 143);
+  --link-unresolved-decoration-color: rgba(66, 184, 131, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1351,7 +1351,7 @@ body.theme-dark {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #666666;
-  --list-marker-color-collapsed: hsl(150, 47.94%, 56.35%);
+  --list-marker-color-collapsed: rgb(89, 197, 143);
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -1377,7 +1377,7 @@ body.theme-dark {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: hsla(153, 47%, 49%, 0.05);
+  --metadata-input-background-active: rgba(66, 184, 131, 0.05);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -1388,7 +1388,7 @@ body.theme-dark {
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #eeeeee;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: hsla(153, 47%, 49%, 0.05);
+  --metadata-label-background-active: rgba(66, 184, 131, 0.05);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -1401,7 +1401,7 @@ body.theme-dark {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: hsla(153, 47%, 49%, 0.05);
+  --metadata-property-background-active: rgba(66, 184, 131, 0.05);
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px #555555;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
@@ -1433,15 +1433,15 @@ body.theme-dark {
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: hsla(153, 47%, 49%, 0.05);
-  --nav-item-background-hover: hsla(153, 47%, 49%, 0.05);
-  --nav-item-background-selected: hsla(153, 47%, 49%, 0.15);
+  --nav-item-background-active: rgba(66, 184, 131, 0.05);
+  --nav-item-background-hover: rgba(66, 184, 131, 0.05);
+  --nav-item-background-selected: rgba(66, 184, 131, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #b3b3b3;
-  --nav-item-color-active: hsl(153, 47%, 49%);
-  --nav-item-color-highlighted: hsl(150, 47.94%, 56.35%);
-  --nav-item-color-hover: hsl(153, 47%, 49%);
+  --nav-item-color-active: rgb(66, 184, 131);
+  --nav-item-color-highlighted: rgb(89, 197, 143);
+  --nav-item-color-hover: rgb(66, 184, 131);
   --nav-item-color-selected: #eeeeee;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 4px 8px 4px 24px;
@@ -1466,7 +1466,7 @@ body.theme-dark {
   --pill-color: #b3b3b3;
   --pill-color-hover: #eeeeee;
   --pill-color-remove: #666666;
-  --pill-color-remove-hover: hsl(150, 47.94%, 56.35%);
+  --pill-color-remove-hover: rgb(89, 197, 143);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1586,13 +1586,13 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(153, 47%, 49%);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(66, 184, 131);
   --tab-text-color: #666666;
   --tab-text-color-active: #b3b3b3;
   --tab-text-color-focused: #b3b3b3;
   --tab-text-color-focused-active: #b3b3b3;
   --tab-text-color-focused-active-current: #eeeeee;
-  --tab-text-color-focused-highlighted: hsl(150, 47.94%, 56.35%);
+  --tab-text-color-focused-highlighted: rgb(89, 197, 143);
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: #363636;
@@ -1607,7 +1607,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(153, 47%, 49%);
+  --table-drag-handle-background-active: rgb(66, 184, 131);
   --table-drag-handle-color: #666666;
   --table-drag-handle-color-active: white;
   --table-drop-indicator-half-width: 2px;
@@ -1622,28 +1622,28 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: #171717;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(153, 47%, 49%, 0.1);
+  --table-selection: rgba(66, 184, 131, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(153, 47%, 49%);
+  --table-selection-border-color: rgb(66, 184, 131);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(153, 47%, 49%, 0.1);
-  --tag-background-hover: hsla(153, 47%, 49%, 0.2);
-  --tag-border-color: hsla(153, 47%, 49%, 0.15);
-  --tag-border-color-hover: hsla(153, 47%, 49%, 0.15);
+  --tag-background: rgba(66, 184, 131, 0.1);
+  --tag-background-hover: rgba(66, 184, 131, 0.2);
+  --tag-border-color: rgba(66, 184, 131, 0.15);
+  --tag-border-color-hover: rgba(66, 184, 131, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(150, 47.94%, 56.35%);
-  --tag-color-hover: hsl(150, 47.94%, 56.35%);
+  --tag-color: rgb(89, 197, 143);
+  --tag-color-hover: rgb(89, 197, 143);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: hsl(150, 47.94%, 56.35%);
-  --text-accent-hover: hsl(148, 49.35%, 63.21%);
+  --text-accent: rgb(89, 197, 143);
+  --text-accent-hover: rgb(114, 207, 158);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
@@ -1652,7 +1652,7 @@ body.theme-dark {
   --text-normal: #eeeeee;
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(153, 47%, 49%, 0.33);
+  --text-selection: rgba(66, 184, 131, 0.33);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #262626;
@@ -1683,7 +1683,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --cus-code-block-border: #1c1c1c;
   --cus-highlight-cursor-line: rgba(225, 225, 225, 0.12);

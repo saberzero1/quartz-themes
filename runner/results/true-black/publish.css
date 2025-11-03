@@ -169,7 +169,7 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-accent: #200;
-  --background-modifier-active-hover: hsla(219, 56%, 55%, 0.1);
+  --background-modifier-active-hover: rgba(76, 121, 205, 0.1);
   --background-modifier-border: #424958;
   --background-modifier-border-focus: #353b47;
   --background-modifier-border-hover: #353b47;
@@ -180,7 +180,7 @@ body.theme-dark {
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3);
-  --background-modifier-hover: hsla(219, 21%, 55%, 0.06);
+  --background-modifier-hover: rgba(116, 133, 164, 0.06);
   --background-modifier-message: #1a1e24;
   --background-modifier-success: #539126;
   --background-modifier-success-rgb: 68, 207, 110;
@@ -210,14 +210,14 @@ body.theme-dark {
   --bases-table-cell-background-active: #000;
   --bases-table-cell-background-disabled: #20242b;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(219, 56%, 55%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(76, 121, 205);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #000;
-  --bases-table-header-background-hover: hsla(219, 21%, 55%, 0.06);
+  --bases-table-header-background-hover: rgba(116, 133, 164, 0.06);
   --bases-table-header-color: #888;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
@@ -233,7 +233,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(219, 56%, 55%);
+  --blockquote-border-color: rgb(76, 121, 205);
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -288,7 +288,7 @@ body.theme-dark {
   --code-background: #20242b;
   --code-border-color: #424958;
   --code-border-width: 0px;
-  --code-bracket-background: hsla(219, 21%, 55%, 0.06);
+  --code-bracket-background: rgba(116, 133, 164, 0.06);
   --code-comment: rgb(81, 86, 99);
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -305,9 +305,9 @@ body.theme-dark {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(81, 86, 99);
   --collapse-icon-color-collapsed: #61afef;
-  --color-accent: hsl(219, 56%, 55%);
-  --color-accent-1: hsl(216, 57.12%, 63.25%);
-  --color-accent-2: hsl(214, 58.8%, 70.95%);
+  --color-accent: rgb(76, 121, 205);
+  --color-accent-1: rgb(107, 150, 214);
+  --color-accent-2: rgb(137, 175, 225);
   --color-accent-hsl: 219, 56%, 55%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -359,7 +359,7 @@ body.theme-dark {
   --embed-block-shadow-hover: 0 0 0 1px #424958, inset 0 0 0 1px #424958;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(219, 56%, 55%);
+  --embed-border-start: 2px solid rgb(76, 121, 205);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -437,7 +437,7 @@ body.theme-dark {
   --footnote-id-color-no-occurrences: rgb(81, 86, 99);
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: hsla(219, 21%, 55%, 0.06);
+  --footnote-input-background-active: rgba(116, 133, 164, 0.06);
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
@@ -539,8 +539,8 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(219, 56%, 55%);
-  --interactive-accent-hover: hsl(219, 61%, 45%);
+  --interactive-accent: rgb(76, 121, 205);
+  --interactive-accent-hover: rgb(45, 94, 185);
   --interactive-accent-hsl: 219, 56%, 55%;
   --interactive-hover: #353b47;
   --interactive-normal: #20242b;
@@ -568,7 +568,7 @@ body.theme-dark {
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: #61afef;
-  --link-unresolved-decoration-color: hsla(219, 56%, 55%, 0.3);
+  --link-unresolved-decoration-color: rgba(76, 121, 205, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -608,7 +608,7 @@ body.theme-dark {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: hsla(219, 21%, 55%, 0.06);
+  --metadata-input-background-active: rgba(116, 133, 164, 0.06);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -619,7 +619,7 @@ body.theme-dark {
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #dcddde;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: hsla(219, 21%, 55%, 0.06);
+  --metadata-label-background-active: rgba(116, 133, 164, 0.06);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -632,7 +632,7 @@ body.theme-dark {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: hsla(219, 21%, 55%, 0.06);
+  --metadata-property-background-active: rgba(116, 133, 164, 0.06);
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px #353b47;
   --metadata-property-box-shadow-hover: 0 0 0 1px #353b47;
@@ -664,9 +664,9 @@ body.theme-dark {
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: hsl(219, 56%, 55%);
-  --nav-item-background-hover: hsla(219, 21%, 55%, 0.06);
-  --nav-item-background-selected: hsla(219, 56%, 55%, 0.15);
+  --nav-item-background-active: rgb(76, 121, 205);
+  --nav-item-background-hover: rgba(116, 133, 164, 0.06);
+  --nav-item-background-selected: rgba(76, 121, 205, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #888;
@@ -817,7 +817,7 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(219, 56%, 55%);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(76, 121, 205);
   --tab-text-color: rgb(81, 86, 99);
   --tab-text-color-active: #888;
   --tab-text-color-focused: #888;
@@ -838,7 +838,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(219, 56%, 55%);
+  --table-drag-handle-background-active: rgb(76, 121, 205);
   --table-drag-handle-color: rgb(81, 86, 99);
   --table-drag-handle-color-active: #dcddde;
   --table-drop-indicator-half-width: 2px;
@@ -853,17 +853,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(219, 56%, 55%, 0.1);
+  --table-selection: rgba(76, 121, 205, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(219, 56%, 55%);
+  --table-selection-border-color: rgb(76, 121, 205);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
   --tag-background: #20242b;
   --tag-background-hover: #20242b;
-  --tag-border-color: hsla(219, 56%, 55%, 0.15);
-  --tag-border-color-hover: hsla(219, 56%, 55%, 0.15);
+  --tag-border-color: rgba(76, 121, 205, 0.15);
+  --tag-border-color-hover: rgba(76, 121, 205, 0.15);
   --tag-border-width: 0px;
   --tag-color: #e5c07b;
   --tag-color-hover: #e5c07b;
@@ -914,7 +914,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --text-error-hover: #c9626a;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
