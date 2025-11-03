@@ -29,7 +29,6 @@ import {
 import postcss from "postcss";
 import calc from "postcss-calc";
 import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
-import postcssColorConverter from "postcss-color-converter";
 import postcssMergeLonghand from "postcss-merge-longhand";
 import postcssScss from "postcss-scss";
 import { compileString } from "sass";
@@ -131,6 +130,7 @@ closeDb();
 // --- Utilities ---
 
 // Helper to convert CSS to hex colors (from compile.old.js)
+// Note: Color conversion removed due to postcss-color-converter causing infinite loops
 function toHexColors(str) {
   let result = "";
 
@@ -139,10 +139,8 @@ function toHexColors(str) {
       .use(postcssColorMixFunction())
       .use(calc({ preserve: false }))
       .use(postcssColorMixFunction())
-      .use(postcssColorConverter({ outputColorFormat: "hex" }))
       .use(calc({ preserve: false }))
       .use(postcssColorMixFunction())
-      .use(postcssColorConverter({ outputColorFormat: "hex" }))
       .process(str).css;
   } catch (e) {
     // Likely opacity is not a float between 0 and 1. Let's fix that.
@@ -157,15 +155,13 @@ function toHexColors(str) {
         .use(postcssColorMixFunction())
         .use(calc({ preserve: false }))
         .use(postcssColorMixFunction())
-        .use(postcssColorConverter({ outputColorFormat: "hex" }))
         .use(calc({ preserve: false }))
         .use(postcssColorMixFunction())
-        .use(postcssColorConverter({ outputColorFormat: "hex" }))
         .process(result).css;
     } catch (e) {
       // If still failing, return original string
       console.warn(
-        "Warning: Could not process CSS colors, using original:",
+        "Warning: Could not process CSS, using original:",
         e.message,
       );
       return str;
@@ -186,12 +182,11 @@ function toHexColors(str) {
           .use(postcssColorMixFunction())
           .use(calc({ preserve: false }))
           .use(postcssColorMixFunction())
-          .use(postcssColorConverter({ outputColorFormat: "hex" }))
           .process(result).css;
       } catch (e) {
         // If iteration fails, stop and use previous result
         console.warn(
-          `Warning: Color conversion iteration ${iteration} failed, stopping iterations:`,
+          `Warning: CSS processing iteration ${iteration} failed, stopping iterations:`,
           e.message,
         );
         result = temp;
@@ -202,11 +197,11 @@ function toHexColors(str) {
 
     if (iteration >= maxIterations) {
       console.warn(
-        `Warning: Color conversion reached max iterations (${maxIterations}) without converging`,
+        `Warning: CSS processing reached max iterations (${maxIterations}) without converging`,
       );
     }
   } catch (e) {
-    console.error("Error processing CSS to hex colors:", e);
+    console.error("Error processing CSS:", e);
     result = fallbackResult; // Fallback to original string on error
   }
 
@@ -215,24 +210,35 @@ function toHexColors(str) {
 
 // Helper to merge longhand properties into shorthand and optimize CSS
 function mergeLonghandProperties(css, syntax = 'scss') {
-  try {
-    const postcssOptions = { from: undefined };
-    
-    if (syntax === 'scss') {
-      postcssOptions.syntax = postcssScss;
-    }
-    
-    const processor = postcss()
-      .use(postcssMergeLonghand())
-      .use(calc({ preserve: false })) // Resolve calc() where possible
-      .use(postcssColorConverter({ outputColorFormat: 'hex' })); // Convert colors to hex
-    
-    const result = processor.process(css, postcssOptions).css;
-    return result;
-  } catch (e) {
-    console.warn("Warning: Could not optimize CSS properties:", e.message);
-    return css;
+  const postcssOptions = { from: undefined };
+  
+  if (syntax === 'scss') {
+    postcssOptions.syntax = postcssScss;
   }
+  
+  let result = css;
+  
+  // Apply each optimization separately to avoid issues with specific plugins
+  try {
+    result = postcss()
+      .use(postcssMergeLonghand())
+      .process(result, postcssOptions).css;
+  } catch (e) {
+    console.warn("Warning: Could not merge longhand properties:", e.message);
+  }
+  
+  try {
+    result = postcss()
+      .use(calc({ preserve: false }))
+      .process(result, postcssOptions).css;
+  } catch (e) {
+    console.warn("Warning: Could not resolve calc():", e.message);
+  }
+  
+  // Note: postcss-color-converter removed due to infinite loop issues on certain themes
+  // Color conversion would be nice but causes compilation to hang
+  
+  return result;
 }
 
 function insertExtras(manifest, themeName) {
