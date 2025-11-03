@@ -1566,7 +1566,7 @@
     "--viewer-container-height": "0",
     "--workspace-background-translucent": "rgba(0, 0, 0, 0.6)",
     "--xfa-focus-outline": "auto",
-    "--xfa-unfocused-field-background": "url(\"data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>\")",
+    "--xfa-unfocused-field-background": "url(\"data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>\")",
     "--zoom-factor": "1",
     "background-color": "rgb(13, 13, 13)",
     "border-block-end-color": "rgb(186, 186, 186)",
