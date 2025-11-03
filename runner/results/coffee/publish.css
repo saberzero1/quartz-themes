@@ -401,7 +401,7 @@ body.theme-light {
   --font-text: "??", "Times New Roman" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:  !important;
+  --font-text-theme:   !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -801,7 +801,7 @@ body.theme-light {
   --table-border-color: #b0a050 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
-  --table-column-alt-background:  !important;
+  --table-column-alt-background:   !important;
   --table-column-first-border-width: 1px !important;
   --table-column-last-border-width: 1px !important;
   --table-column-max-width: none !important;
@@ -827,7 +827,7 @@ body.theme-light {
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background:  !important;
+  --tag-background:   !important;
   --tag-background-hover: #0f0a00 !important;
   --tag-border-color: #0f0a00 !important;
   --tag-border-color-hover: #0f0a00 !important;

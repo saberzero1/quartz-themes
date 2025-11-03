@@ -768,7 +768,7 @@ body.theme-light {
   --active-line-indicator: "—" !important;
   --background-image-editor: None !important;
   --background-image-editor-size: 200px !important;
-  --bg-url:  !important;
+  --bg-url:   !important;
   --callout-font-size-title: 16px !important;
   --callouts-align-text: justify !important;
   --code-size-edit-mode: 15px !important;

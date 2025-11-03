@@ -878,7 +878,7 @@ body.theme-light {
   --h5-color: hsl(258, 88%, 66%) !important;
   --h6-color: hsl(258, 88%, 66%) !important;
   --inline-title-color: hsl(258, 88%, 66%) !important;
-  --blockquote-color:  !important;
+  --blockquote-color:   !important;
   --table-header-background-hover: hsl(258, 88%, 66%) !important;
   --accent-color: hsl(258, 88%, 66%) !important;
   --accent-rgb: from hsl(258, 88%, 66%) r g b !important;
