@@ -59,29 +59,29 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(265, 60%, calc(55% - 5%), 0.12) !important;
+  --background-modifier-active-hover: rgba(265, 60%, 50%, 0.12) !important;
   --background-modifier-border: #e2e8f0 !important;
-  --background-modifier-border-focus: hsl(265, 60%, 55%) !important;
+  --background-modifier-border-focus: #8147d1 !important;
   --background-modifier-border-hover: #cbd5e1 !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(248, 250, 252, 0.8) !important;
-  --background-modifier-error: rgb(180, 30, 50) !important;
-  --background-modifier-error-hover: rgb(200, 50, 70) !important;
+  --background-modifier-box-shadow: #0000001a !important;
+  --background-modifier-cover: #f8fafccc !important;
+  --background-modifier-error: #b41e32 !important;
+  --background-modifier-error-hover: #c83246 !important;
   --background-modifier-error-rgb: 200, 50, 70 !important;
-  --background-modifier-form-field: rgb(240, 242, 246) !important;
-  --background-modifier-form-field-hover: rgb(240, 242, 246) !important;
-  --background-modifier-hover: rgba(255, 255, 255, 0.7) !important;
-  --background-modifier-message: rgba(255, 255, 255, 0.9) !important;
-  --background-modifier-success: rgb(20, 140, 80) !important;
+  --background-modifier-form-field: #f0f2f6 !important;
+  --background-modifier-form-field-hover: #f0f2f6 !important;
+  --background-modifier-hover: #ffffffb3 !important;
+  --background-modifier-message: #ffffffe6 !important;
+  --background-modifier-success: #148c50 !important;
   --background-modifier-success-rgb: 20, 140, 80 !important;
   --background-primary: #f8fafc !important;
-  --background-primary-alt: rgb(248, 250, 252) !important;
+  --background-primary-alt: #f8fafc !important;
   --background-secondary: #f8fafc !important;
-  --background-secondary-alt: rgb(240, 242, 246) !important;
+  --background-secondary-alt: #f0f2f6 !important;
   --bases-cards-background: #f8fafc !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: rgb(248, 250, 252) !important;
+  --bases-cards-cover-background: #f8fafc !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
@@ -98,19 +98,19 @@ body.theme-light {
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: #e2e8f0 !important;
   --bases-table-cell-background-active: #f8fafc !important;
-  --bases-table-cell-background-disabled: rgb(248, 250, 252) !important;
+  --bases-table-cell-background-disabled: #f8fafc !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(265, 60%, 55%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #8147d1 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 6px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-header-background: #f8fafc !important;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.7) !important;
+  --bases-table-header-background-hover: #ffffffb3 !important;
   --bases-table-header-color: #64748b !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, #000000 18px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -118,12 +118,12 @@ body.theme-light {
   --bases-table-text-size: 0.875em !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: rgb(240, 242, 246) !important;
-  --blockquote-border-color: hsl(265, 60%, 55%) !important;
+  --blockquote-background-color: #f0f2f6 !important;
+  --blockquote-border-color: #8147d1 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
-  --bold-weight: calc(400 + 200) !important;
+  --bold-weight: 600 !important;
   --border-width: 1px !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken !important;
@@ -146,7 +146,7 @@ body.theme-light {
   --callout-summary: 0, 120, 180 !important;
   --callout-tip: 0, 120, 180 !important;
   --callout-title-padding: 0 !important;
-  --callout-title-weight: calc(400 + 200) !important;
+  --callout-title-weight: 600 !important;
   --callout-todo: 0, 120, 180 !important;
   --callout-warning: 220, 100, 20 !important;
   --canvas-background: #f8fafc !important;
@@ -161,9 +161,9 @@ body.theme-light {
   --canvas-dot-pattern: #e0e0e0 !important;
   --caret-color: #1e252e !important;
   --checkbox-border-color: #cbd5e1 !important;
-  --checkbox-border-color-hover: rgb(20, 140, 80) !important;
-  --checkbox-color: rgb(20, 140, 80) !important;
-  --checkbox-color-hover: rgb(30, 70, 160) !important;
+  --checkbox-border-color-hover: #148c50 !important;
+  --checkbox-color: #148c50 !important;
+  --checkbox-color-hover: #1e46a0 !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #f8fafc !important;
   --checkbox-radius: 6px !important;
@@ -171,29 +171,29 @@ body.theme-light {
   --checklist-done-color: #64748b !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 6px !important;
-  --code-background: rgb(102, 63, 191, 0.05) !important;
+  --code-background: #663fbf0d !important;
   --code-border-color: #e2e8f0 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.7) !important;
-  --code-comment: rgb(110, 115, 125) !important;
-  --code-function: rgb(180, 120, 0) !important;
-  --code-important: rgb(220, 100, 20) !important;
-  --code-keyword: rgb(160, 30, 140) !important;
+  --code-bracket-background: #ffffffb3 !important;
+  --code-comment: #6e737d !important;
+  --code-function: #b47800 !important;
+  --code-important: #dc6414 !important;
+  --code-keyword: #a01e8c !important;
   --code-normal: #64748b !important;
-  --code-operator: rgb(200, 50, 70) !important;
-  --code-property: rgb(0, 120, 180) !important;
+  --code-operator: #c83246 !important;
+  --code-property: #0078b4 !important;
   --code-punctuation: #64748b !important;
   --code-radius: 6px !important;
   --code-size: 0.875em !important;
-  --code-string: rgb(20, 140, 80) !important;
-  --code-tag: rgb(200, 50, 70) !important;
-  --code-value: rgb(160, 30, 140) !important;
+  --code-string: #148c50 !important;
+  --code-tag: #c83246 !important;
+  --code-value: #a01e8c !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #94a3b8 !important;
-  --collapse-icon-color-collapsed: rgb(102, 63, 191) !important;
-  --color-accent: hsl(265, 60%, 55%) !important;
-  --color-accent-1: hsl(calc(265 - 1), calc(60% * 1.01), calc(55% * 1.075)) !important;
-  --color-accent-2: hsl(calc(265 - 3), calc(60% * 1.02), calc(55% * 1.15)) !important;
+  --collapse-icon-color-collapsed: #663fbf !important;
+  --color-accent: #8147d1 !important;
+  --color-accent-1: hsl(264, 60.6%, 59.125%) !important;
+  --color-accent-2: hsl(262, 61.2%, 63.25%) !important;
   --color-accent-hsl: 265, 60%, 55% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -207,21 +207,21 @@ body.theme-light {
   --color-base-50: #ababab !important;
   --color-base-60: #707070 !important;
   --color-base-70: #5c5c5c !important;
-  --color-blue: rgb(30, 70, 160) !important;
+  --color-blue: #1e46a0 !important;
   --color-blue-rgb: 30, 70, 160 !important;
-  --color-cyan: rgb(0, 120, 180) !important;
+  --color-cyan: #0078b4 !important;
   --color-cyan-rgb: 0, 120, 180 !important;
-  --color-green: rgb(20, 140, 80) !important;
+  --color-green: #148c50 !important;
   --color-green-rgb: 20, 140, 80 !important;
-  --color-orange: rgb(220, 100, 20) !important;
+  --color-orange: #dc6414 !important;
   --color-orange-rgb: 220, 100, 20 !important;
-  --color-pink: rgb(160, 30, 140) !important;
+  --color-pink: #a01e8c !important;
   --color-pink-rgb: 160, 30, 140 !important;
-  --color-purple: rgb(160, 30, 140) !important;
+  --color-purple: #a01e8c !important;
   --color-purple-rgb: 160, 30, 140 !important;
-  --color-red: rgb(200, 50, 70) !important;
+  --color-red: #c83246 !important;
   --color-red-rgb: 200, 50, 70 !important;
-  --color-yellow: rgb(180, 120, 0) !important;
+  --color-yellow: #b47800 !important;
   --color-yellow-rgb: 180, 120, 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -230,13 +230,13 @@ body.theme-light {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #e2e8f0 !important;
-  --divider-color-hover: hsl(265, 60%, 55%) !important;
+  --divider-color-hover: #8147d1 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-background: #000000d9 !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgba(240, 242, 246, 0.3) !important;
+  --dropdown-background: #f0f2f64d !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: #cbd5e1 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
@@ -245,7 +245,7 @@ body.theme-light {
   --embed-block-shadow-hover: 0 0 0 1px #e2e8f0, inset 0 0 0 1px #e2e8f0 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(265, 60%, 55%) !important;
+  --embed-border-start: 2px solid #8147d1 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -302,20 +302,20 @@ body.theme-light {
   --footnote-id-color-no-occurrences: #94a3b8 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.7) !important;
+  --footnote-input-background-active: #ffffffb3 !important;
   --footnote-line-height: 1.6 !important;
   --footnote-padding-block: 5px !important;
   --footnote-padding-inline: 5px !important;
   --footnote-radius: 6px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 44px) !important;
+  --frame-left-space: 36px !important;
   --frame-right-space: 80px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #cbd5e1 !important;
-  --graph-node: rgb(30, 35, 42) !important;
-  --graph-node-attachment: rgb(30, 70, 160) !important;
-  --graph-node-focused: rgb(102, 63, 191) !important;
-  --graph-node-tag: rgb(220, 100, 20) !important;
+  --graph-node: #1e232a !important;
+  --graph-node-attachment: #1e46a0 !important;
+  --graph-node-focused: #663fbf !important;
+  --graph-node-tag: #dc6414 !important;
   --graph-node-unresolved: #94a3b8 !important;
   --graph-text: #1e252e !important;
   --h1-line-height: 1.2 !important;
@@ -350,14 +350,14 @@ body.theme-light {
   --h6-weight: 600 !important;
   --header-height: 40px !important;
   --heading-formatting: #94a3b8 !important;
-  --heading-spacing: calc(1rem * 2.5) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
   --hr-color: #e2e8f0 !important;
   --hr-thickness: 2px !important;
   --icon-color: #64748b !important;
-  --icon-color-active: rgb(102, 63, 191) !important;
-  --icon-color-focused: rgb(102, 63, 191) !important;
-  --icon-color-hover: rgb(102, 63, 191) !important;
+  --icon-color-active: #663fbf !important;
+  --icon-color-focused: #663fbf !important;
+  --icon-color-hover: #663fbf !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -375,8 +375,8 @@ body.theme-light {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgb(120, 125, 135) !important;
-  --indentation-guide-color-active: rgb(120, 125, 135) !important;
+  --indentation-guide-color: #787d87 !important;
+  --indentation-guide-color-active: #787d87 !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -396,10 +396,10 @@ body.theme-light {
   --input-padding: 6px 8px !important;
   --input-placeholder-color: #94a3b8 !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(265, 60%, 55%) !important;
-  --interactive-accent-hover: hsl(265, 60%, calc(55% + 5%)) !important;
+  --input-shadow: inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008, 0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008, 0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
+  --interactive-accent: #8147d1 !important;
+  --interactive-accent-hover: hsl(265, 60%, 60%) !important;
   --interactive-accent-hsl: 265, 60%, 55% !important;
   --interactive-hover: #cbd5e1 !important;
   --interactive-normal: #e2e8f0 !important;
@@ -416,18 +416,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(102, 63, 191) !important;
-  --link-color-hover: rgb(0, 120, 180) !important;
+  --link-color: #663fbf !important;
+  --link-color-hover: #0078b4 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(102, 63, 191) !important;
-  --link-external-color-hover: rgb(0, 120, 180) !important;
+  --link-external-color: #663fbf !important;
+  --link-external-color-hover: #0078b4 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: invert(45%) sepia(85%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(95%) !important;
-  --link-unresolved-color: rgb(102, 63, 191) !important;
-  --link-unresolved-decoration-color: hsla(265, 60%, 55%, 0.3) !important;
+  --link-unresolved-color: #663fbf !important;
+  --link-unresolved-decoration-color: #8147d14d !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -440,9 +440,9 @@ body.theme-light {
   --list-indent: 1.5em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(102, 63, 191) !important;
+  --list-marker-color: #663fbf !important;
   --list-marker-color-collapsed: #64748b !important;
-  --list-marker-color-hover: rgb(140, 100, 220) !important;
+  --list-marker-color-hover: #8c64dc !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0 !important;
   --loading-icon-delay: 400ms !important;
@@ -452,7 +452,7 @@ body.theme-light {
   --menu-border-width: 1px !important;
   --menu-padding: 5px !important;
   --menu-radius: 8px !important;
-  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --menu-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #e2e8f0 !important;
   --metadata-border-radius: 0 !important;
@@ -465,15 +465,15 @@ body.theme-light {
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-input-background-active: #ffffffb3 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #1e252e !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-label-background-active: #ffffffb3 !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
@@ -483,9 +483,9 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.7) !important;
+  --metadata-property-background-active: #ffffffb3 !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(265, 60%, 55%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #8147d1 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #cbd5e1 !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -513,16 +513,16 @@ body.theme-light {
   --nav-heading-color-hover: #1e252e !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgb(255, 255, 255) !important;
+  --nav-indentation-guide-color: #ffffff !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(0, 120, 180) !important;
-  --nav-item-background-hover: rgba(0, 120, 180, 0.08) !important;
-  --nav-item-background-selected: hsla(265, 60%, 55%, 0.15) !important;
+  --nav-item-background-active: #0078b4 !important;
+  --nav-item-background-hover: #0078b414 !important;
+  --nav-item-background-selected: #8147d126 !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #2d3748 !important;
-  --nav-item-color-active: rgb(102, 63, 191) !important;
-  --nav-item-color-highlighted: rgb(102, 63, 191) !important;
+  --nav-item-color-active: #663fbf !important;
+  --nav-item-color-highlighted: #663fbf !important;
   --nav-item-color-hover: #1a202c !important;
   --nav-item-color-selected: #1e252e !important;
   --nav-item-padding: 6px 8px 6px 18px !important;
@@ -535,10 +535,10 @@ body.theme-light {
   --page-margin: 1px auto -8px !important;
   --pdf-background: #f8fafc !important;
   --pdf-page-background: #f8fafc !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px #0000000d, 0 2px 8px #0000001a !important;
   --pdf-sidebar-background: #f8fafc !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-spread-shadow: 0 0 0 1px #0000000d !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033 !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -548,7 +548,7 @@ body.theme-light {
   --pill-color: #64748b !important;
   --pill-color-hover: #1e252e !important;
   --pill-color-remove: #94a3b8 !important;
-  --pill-color-remove-hover: rgb(102, 63, 191) !important;
+  --pill-color-remove-hover: #663fbf !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -580,21 +580,21 @@ body.theme-light {
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.3) !important;
-  --scrollbar-bg: rgba(0, 0, 0, 0.03) !important;
+  --scrollbar-active-thumb-bg: #0000004d !important;
+  --scrollbar-bg: #00000008 !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.15) !important;
+  --scrollbar-thumb-bg: #00000026 !important;
   --scrollbar-width: 3px !important;
   --search-clear-button-color: #64748b !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: #64748b !important;
   --search-icon-size: 18px !important;
   --search-result-background: #f8fafc !important;
-  --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
+  --shadow-l: 0 10px 20px #00000026, 0 3px 6px #0000001a !important;
+  --shadow-s: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -619,7 +619,7 @@ body.theme-light {
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(255, 255, 255) !important;
+  --slider-track-background: #ffffff !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #f8fafc !important;
@@ -631,24 +631,24 @@ body.theme-light {
   --status-bar-text-color: #64748b !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
+  --swatch-shadow: inset 0 0 0 1px #00000026 !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(200, 50, 70) !important;
-  --sync-avatar-color-2: rgb(220, 100, 20) !important;
-  --sync-avatar-color-3: rgb(180, 120, 0) !important;
-  --sync-avatar-color-4: rgb(20, 140, 80) !important;
-  --sync-avatar-color-5: rgb(0, 120, 180) !important;
-  --sync-avatar-color-6: rgb(30, 70, 160) !important;
-  --sync-avatar-color-7: rgb(160, 30, 140) !important;
-  --sync-avatar-color-8: rgb(160, 30, 140) !important;
+  --sync-avatar-color-1: #c83246 !important;
+  --sync-avatar-color-2: #dc6414 !important;
+  --sync-avatar-color-3: #b47800 !important;
+  --sync-avatar-color-4: #148c50 !important;
+  --sync-avatar-color-5: #0078b4 !important;
+  --sync-avatar-color-6: #1e46a0 !important;
+  --sync-avatar-color-7: #a01e8c !important;
+  --sync-avatar-color-8: #a01e8c !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgba(255, 255, 255, 0.95) !important;
+  --tab-background-active: #fffffff2 !important;
   --tab-container-background: #f8fafc !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgba(200, 205, 210, 0.4) !important;
+  --tab-divider-color: #c8cdd266 !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: rgba(180, 185, 190, 0.6) !important;
+  --tab-outline-color: #b4b9be99 !important;
   --tab-outline-width: 2px !important;
   --tab-radius: 8px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -656,21 +656,21 @@ body.theme-light {
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
+  --tab-stacked-shadow: -8px 0 8px 0 #0000000d !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #f8fafc !important;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033 !important;
   --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(265, 60%, 55%) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px #0000000d !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #8147d1 !important;
   --tab-text-color: #94a3b8 !important;
-  --tab-text-color-active: hsl(265, 60%, 55%) !important;
+  --tab-text-color-active: #8147d1 !important;
   --tab-text-color-focused: #64748b !important;
-  --tab-text-color-focused-active: hsla(265, 60%, 55%, 0.8) !important;
-  --tab-text-color-focused-active-current: hsl(265, 60%, 55%) !important;
-  --tab-text-color-focused-highlighted: rgb(102, 63, 191) !important;
+  --tab-text-color-focused-active: #8147d1cc !important;
+  --tab-text-color-focused-active-current: #8147d1 !important;
+  --tab-text-color-focused-highlighted: #663fbf !important;
   --tab-width: 120px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #e2e8f0 !important;
@@ -685,7 +685,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(265, 60%, 55%) !important;
+  --table-drag-handle-background-active: #8147d1 !important;
   --table-drag-handle-color: #94a3b8 !important;
   --table-drag-handle-color-active: #ffffff !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -694,45 +694,45 @@ body.theme-light {
   --table-header-border-width: 1px !important;
   --table-header-color: #1e252e !important;
   --table-header-size: 16px !important;
-  --table-header-weight: calc(400 + 200) !important;
+  --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
   --table-row-alt-background: transparent !important;
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(265, 60%, 55%, 0.1) !important;
+  --table-selection: #8147d11a !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(265, 60%, 55%) !important;
+  --table-selection-border-color: #8147d1 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(102, 63, 191, 0.1) !important;
-  --tag-background-hover: rgba(0, 120, 180, 0.1) !important;
-  --tag-border-color: hsla(265, 60%, 55%, 0.15) !important;
-  --tag-border-color-hover: hsla(265, 60%, 55%, 0.15) !important;
+  --tag-background: #663fbf1a !important;
+  --tag-background-hover: #0078b41a !important;
+  --tag-border-color: #8147d126 !important;
+  --tag-border-color-hover: #8147d126 !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(102, 63, 191) !important;
-  --tag-color-hover: rgb(0, 120, 180) !important;
+  --tag-color: #663fbf !important;
+  --tag-color-hover: #0078b4 !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(102, 63, 191) !important;
-  --text-accent-hover: rgb(0, 120, 180) !important;
-  --text-error: rgb(200, 50, 70) !important;
+  --text-accent: #663fbf !important;
+  --text-accent-hover: #0078b4 !important;
+  --text-error: #c83246 !important;
   --text-faint: #94a3b8 !important;
-  --text-highlight-bg: rgba(220, 100, 20, 0.15) !important;
+  --text-highlight-bg: #dc641426 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #64748b !important;
   --text-normal: #1e252e !important;
   --text-on-accent: #ffffff !important;
-  --text-on-accent-inverted: black !important;
-  --text-selection: rgba(102, 63, 191, 0.15) !important;
-  --text-success: rgb(20, 140, 80) !important;
-  --text-warning: rgb(220, 100, 20) !important;
+  --text-on-accent-inverted: #000000 !important;
+  --text-selection: #663fbf26 !important;
+  --text-success: #148c50 !important;
+  --text-warning: #dc6414 !important;
   --titlebar-background: #f8fafc !important;
   --titlebar-background-focused: #f8fafc !important;
   --titlebar-border-color: #e2e8f0 !important;
@@ -763,67 +763,67 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: rgb(200, 50, 70) !important;
-  --h2-color: rgb(102, 63, 191) !important;
-  --h3-color: rgb(20, 140, 80) !important;
-  --h4-color: rgb(0, 120, 180) !important;
-  --h5-color: rgb(30, 70, 160) !important;
-  --h6-color: rgb(220, 100, 20) !important;
-  --inline-title-color: rgb(200, 50, 70) !important;
-  --text-error-hover: rgb(180, 30, 50) !important;
-  --background-modifier-form-field-highlighted: rgb(240, 242, 246) !important;
+  --h1-color: #c83246 !important;
+  --h2-color: #663fbf !important;
+  --h3-color: #148c50 !important;
+  --h4-color: #0078b4 !important;
+  --h5-color: #1e46a0 !important;
+  --h6-color: #dc6414 !important;
+  --inline-title-color: #c83246 !important;
+  --text-error-hover: #b41e32 !important;
+  --background-modifier-form-field-highlighted: #f0f2f6 !important;
   --blockquote-color: #64748b !important;
   --table-header-background-hover: #f1f5f9 !important;
-  --accent-color: hsl(265, 60%, 55%) !important;
-  --bold-color: rgb(0, 120, 180) !important;
-  --italic-color: rgb(30, 70, 160) !important;
-  --green: rgb(20, 140, 80) !important;
+  --accent-color: #8147d1 !important;
+  --bold-color: #0078b4 !important;
+  --italic-color: #1e46a0 !important;
+  --green: #148c50 !important;
   --green_x: 20, 140, 80 !important;
-  --orange: rgb(220, 100, 20) !important;
+  --orange: #dc6414 !important;
   --orange_x: 220, 100, 20 !important;
-  --purple: rgb(102, 63, 191) !important;
+  --purple: #663fbf !important;
   --purple_x: 102, 63, 191 !important;
-  --red: rgb(200, 50, 70) !important;
+  --red: #c83246 !important;
   --red_x: 200, 50, 70 !important;
-  --yellow: rgb(180, 120, 0) !important;
+  --yellow: #b47800 !important;
   --yellow_x: 180, 120, 0 !important;
-  --interactive-success: rgb(20, 140, 80) !important;
+  --interactive-success: #148c50 !important;
   --text-muted-rgb: 75, 85, 95 !important;
-  --blue: rgb(30, 70, 160) !important;
-  --pink: rgb(200, 30, 140) !important;
-  --blockquote-border: rgb(0, 120, 180) !important;
-  --blockquote-bg: rgba(0, 120, 180, 0.05) !important;
-  --cyan: rgb(0, 120, 180) !important;
-  --embed-background: rgb(240, 242, 246) !important;
-  --internal-link-color: rgb(20, 140, 80) !important;
-  --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
+  --blue: #1e46a0 !important;
+  --pink: #c81e8c !important;
+  --blockquote-border: #0078b4 !important;
+  --blockquote-bg: #0078b40d !important;
+  --cyan: #0078b4 !important;
+  --embed-background: #f0f2f6 !important;
+  --internal-link-color: #148c50 !important;
+  --shadow-m: 0 3px 6px #00000026, 0 2px 4px #0000001f !important;
   --table-width: 88cqw !important;
   --background-primary-rgb: 248, 250, 252 !important;
-  --date-background-color: rgba(30, 70, 160, 0.1) !important;
+  --date-background-color: #1e46a01a !important;
   --flashing-background: rgba(265, 60%, 55%, 0.3) !important;
-  --mermaid-loopline: rgb(30, 70, 160) !important;
-  --mermaid-note: rgb(25, 55, 100) !important;
-  --nav-file-tag: rgba(180, 120, 0, 0.9) !important;
-  --magenta: rgb(160, 30, 140) !important;
-  --comment: rgb(120, 125, 135) !important;
-  --teal: rgb(0, 140, 160) !important;
-  --fg: rgb(30, 35, 42) !important;
+  --mermaid-loopline: #1e46a0 !important;
+  --mermaid-note: #193764 !important;
+  --nav-file-tag: #b47800e6 !important;
+  --magenta: #a01e8c !important;
+  --comment: #787d87 !important;
+  --teal: #008ca0 !important;
+  --fg: #1e232a !important;
   --image-radius: 0px !important;
-  --bg: rgb(248, 250, 252) !important;
-  --purple-light: rgb(140, 100, 220) !important;
-  --tab-background: rgba(240, 242, 246, 0.9) !important;
+  --bg: #f8fafc !important;
+  --purple-light: #8c64dc !important;
+  --tab-background: #f0f2f6e6 !important;
   --tab-min-width: 40px !important;
   --link-external-color-rgb: 102, 63, 191 !important;
-  --mermaid-actor: rgb(75, 85, 95) !important;
+  --mermaid-actor: #4b555f !important;
   --border-radius: 8px !important;
-  --bg_dark2: rgb(230, 232, 236) !important;
-  --bg_highlight: rgb(255, 255, 255) !important;
-  --bg_highlight_dark: rgb(235, 238, 242) !important;
-  --blue0: rgb(25, 55, 100) !important;
-  --fg_dark: rgb(75, 85, 95) !important;
-  --red1: rgb(180, 30, 50) !important;
+  --bg_dark2: #e6e8ec !important;
+  --bg_highlight: #ffffff !important;
+  --bg_highlight_dark: #ebeef2 !important;
+  --blue0: #193764 !important;
+  --fg_dark: #4b555f !important;
+  --red1: #b41e32 !important;
   --unknown: #000000 !important;
-  --bg_dark: rgb(240, 242, 246) !important;
+  --bg_dark: #f0f2f6 !important;
   --bg_dark2_x: 230, 232, 236 !important;
   --bg_dark_x: 240, 242, 246 !important;
   --bg_highlight_dark_x: 235, 238, 242 !important;
@@ -833,35 +833,35 @@ body.theme-light {
   --blue_x: 30, 70, 160 !important;
   --comment_x: 120, 125, 135 !important;
   --cyan_x: 0, 120, 180 !important;
-  --date-color: rgb(30, 70, 160) !important;
+  --date-color: #1e46a0 !important;
   --fg_dark_x: 75, 85, 95 !important;
   --fg_x: 30, 35, 42 !important;
   --magenta_x: 160, 30, 140 !important;
   --pink_x: 200, 30, 140 !important;
   --red1_x: 180, 30, 50 !important;
   --teal_x: 0, 140, 160 !important;
-  --terminal_black: rgb(15, 15, 20) !important;
+  --terminal_black: #0f0f14 !important;
   --terminal_black_x: 15, 15, 20 !important;
   --font-family-monospace: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace !important;
-  --background-modifier: rgba(255, 255, 255, 0.5) !important;
+  --background-modifier: #ffffff80 !important;
   --background-modifier-hover-rgb: 255, 255, 255 !important;
   --background-secondary-rgb: 240, 242, 246 !important;
-  --blockquote-accent: rgb(102, 63, 191) !important;
-  --blockquote-quote-mark: rgba(102, 63, 191, 0.7) !important;
+  --blockquote-accent: #663fbf !important;
+  --blockquote-quote-mark: #663fbfb3 !important;
   --code-comment_x: 110, 115, 125 !important;
-  --code-selection-bg: rgba(102, 63, 191, 0.15) !important;
-  --folder-note-color: rgb(120, 85, 200) !important;
+  --code-selection-bg: #663fbf26 !important;
+  --folder-note-color: #7855c8 !important;
   --folder-note-color_x: 120, 85, 200 !important;
   --font-family-theme: "Inter", system-ui, -apple-system, sans-serif !important;
   --font-size-theme: 16px !important;
-  --insertion-color: rgb(220, 100, 20) !important;
-  --internal-link-color-hover: rgb(30, 70, 160) !important;
+  --insertion-color: #dc6414 !important;
+  --internal-link-color-hover: #1e46a0 !important;
   --line-height-theme: 1.6 !important;
   --link-external-color-hover-rgb: 0, 120, 180 !important;
-  --list-number-color: rgb(160, 30, 140) !important;
-  --list-number-color-hover: rgb(180, 60, 200) !important;
+  --list-number-color: #a01e8c !important;
+  --list-number-color-hover: #b43cc8 !important;
   --magent_hsl: 261 65% 50% !important;
-  --magenta-light: rgb(180, 60, 200) !important;
+  --magenta-light: #b43cc8 !important;
   --magenta-light-rgb: 180, 60, 200 !important;
   --magenta-light_x: 180, 60, 200 !important;
   --magenta-rgb: 160, 30, 140 !important;
@@ -874,11 +874,11 @@ body.theme-light {
   --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --pink_hsl: 320 65% 50% !important;
   --purple-light_x: 140, 100, 220 !important;
-  --shadow-xl: 0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
-  --tab-background-hover: rgba(248, 250, 252, 0.8) !important;
-  --tab-background-unfocused: rgba(235, 238, 242, 0.7) !important;
+  --shadow-xl: 0 15px 25px #00000026, 0 5px 10px #0000000d !important;
+  --tab-background-hover: #f8fafccc !important;
+  --tab-background-unfocused: #ebeef2b3 !important;
   --tab-container-background-focused: #f8fafc !important;
-  --tab-outline-color-active: rgba(120, 125, 135, 0.8) !important;
+  --tab-outline-color-active: #787d87cc !important;
   --text-on-code: #1e252e !important;
   --titlebar-text-color-inactive: #94a3b8 !important;
 }
@@ -896,36 +896,36 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: rgba(125, 207, 255, 0.12);
-  --background-modifier-border: rgb(25, 25, 25);
-  --background-modifier-border-focus: hsl(202, 100%, 75%);
-  --background-modifier-border-hover: rgb(18, 18, 18);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
-  --background-modifier-cover: rgba(2, 2, 2, 0.8);
-  --background-modifier-error: rgb(219, 75, 75);
-  --background-modifier-error-hover: rgb(255, 117, 127);
+  --background-modifier-active-hover: #7dcfff1f;
+  --background-modifier-border: #191919;
+  --background-modifier-border-focus: #80d0ff;
+  --background-modifier-border-hover: #121212;
+  --background-modifier-box-shadow: #00000080;
+  --background-modifier-cover: #020202cc;
+  --background-modifier-error: #db4b4b;
+  --background-modifier-error-hover: #ff757f;
   --background-modifier-error-rgb: 255, 117, 127;
-  --background-modifier-form-field: rgb(8, 8, 8);
-  --background-modifier-form-field-hover: rgb(8, 8, 8);
-  --background-modifier-hover: rgba(25, 25, 25, 0.7);
-  --background-modifier-message: rgba(25, 25, 25, 0.9);
-  --background-modifier-success: rgb(158, 206, 106);
+  --background-modifier-form-field: #080808;
+  --background-modifier-form-field-hover: #080808;
+  --background-modifier-hover: #191919b3;
+  --background-modifier-message: #191919e6;
+  --background-modifier-success: #9ece6a;
   --background-modifier-success-rgb: 158, 206, 106;
   --background-primary: transparent;
-  --background-primary-alt: rgb(15, 15, 15);
+  --background-primary-alt: #0f0f0f;
   --background-secondary: #020202;
-  --background-secondary-alt: rgb(8, 8, 8);
+  --background-secondary-alt: #080808;
   --bases-cards-background: transparent;
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: rgb(15, 15, 15);
+  --bases-cards-cover-background: #0f0f0f;
   --bases-cards-group-padding: 12px;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px rgb(25, 25, 25);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(18, 18, 18);
+  --bases-cards-shadow: 0 0 0 1px #191919;
+  --bases-cards-shadow-hover: 0 0 0 1px #121212;
   --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: rgb(25, 25, 25);
+  --bases-embed-border-color: #191919;
   --bases-embed-border-radius: 6px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
@@ -933,21 +933,21 @@ body.theme-dark {
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: rgb(25, 25, 25);
+  --bases-table-border-color: #191919;
   --bases-table-cell-background-active: transparent;
-  --bases-table-cell-background-disabled: rgb(15, 15, 15);
+  --bases-table-cell-background-disabled: #0f0f0f;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(202, 100%, 75%);
+  --bases-table-cell-shadow-active: 0 0 0 2px #80d0ff;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 6px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: transparent;
-  --bases-table-header-background-hover: rgba(25, 25, 25, 0.7);
+  --bases-table-header-background-hover: #191919b3;
   --bases-table-header-color: #888;
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, black 18px);
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 18px, #000000 18px);
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -955,12 +955,12 @@ body.theme-dark {
   --bases-table-text-size: 0.875em;
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
-  --blockquote-background-color: rgb(8, 8, 8);
-  --blockquote-border-color: hsl(202, 100%, 75%);
+  --blockquote-background-color: #080808;
+  --blockquote-border-color: #80d0ff;
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
-  --bold-weight: calc(400 + 200);
+  --bold-weight: 600;
   --border-width: 1px;
   --button-radius: 5px;
   --callout-blend-mode: lighten;
@@ -983,11 +983,11 @@ body.theme-dark {
   --callout-summary: 125, 207, 255;
   --callout-tip: 125, 207, 255;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 125, 207, 255;
   --callout-warning: 255, 158, 100;
   --canvas-background: transparent;
-  --canvas-card-label-color: rgb(180, 180, 180);
+  --canvas-card-label-color: #b4b4b4;
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 255, 117, 127;
   --canvas-color-2: 255, 158, 100;
@@ -997,10 +997,10 @@ body.theme-dark {
   --canvas-color-6: 187, 154, 247;
   --canvas-dot-pattern: #363636;
   --caret-color: #d0d0d0;
-  --checkbox-border-color: rgb(120, 120, 120);
-  --checkbox-border-color-hover: rgb(158, 206, 106);
-  --checkbox-color: rgb(158, 206, 106);
-  --checkbox-color-hover: rgb(122, 162, 247);
+  --checkbox-border-color: #787878;
+  --checkbox-border-color-hover: #9ece6a;
+  --checkbox-color: #9ece6a;
+  --checkbox-color-hover: #7aa2f7;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: transparent;
   --checkbox-radius: 6px;
@@ -1008,29 +1008,29 @@ body.theme-dark {
   --checklist-done-color: #888;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 6px;
-  --code-background: rgb(187, 154, 247, 0.05);
-  --code-border-color: rgb(25, 25, 25);
+  --code-background: #bb9af70d;
+  --code-border-color: #191919;
   --code-border-width: 0px;
-  --code-bracket-background: rgba(25, 25, 25, 0.7);
-  --code-comment: rgb(115, 125, 165);
-  --code-function: rgb(224, 175, 104);
-  --code-important: rgb(255, 158, 100);
-  --code-keyword: rgb(187, 154, 247);
-  --code-normal: rgb(180, 180, 180);
-  --code-operator: rgb(255, 117, 127);
-  --code-property: rgb(125, 207, 255);
+  --code-bracket-background: #191919b3;
+  --code-comment: #737da5;
+  --code-function: #e0af68;
+  --code-important: #ff9e64;
+  --code-keyword: #bb9af7;
+  --code-normal: #b4b4b4;
+  --code-operator: #ff757f;
+  --code-property: #7dcfff;
   --code-punctuation: #888;
   --code-radius: 6px;
   --code-size: 0.875em;
-  --code-string: rgb(158, 206, 106);
-  --code-tag: rgb(255, 117, 127);
-  --code-value: rgb(187, 154, 247);
+  --code-string: #9ece6a;
+  --code-tag: #ff757f;
+  --code-value: #bb9af7;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: rgb(180, 180, 180);
-  --collapse-icon-color-collapsed: rgb(187, 154, 247);
-  --color-accent: hsl(202, 100%, 75%);
-  --color-accent-1: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --collapse-icon-color: #b4b4b4;
+  --collapse-icon-color-collapsed: #bb9af7;
+  --color-accent: #80d0ff;
+  --color-accent-1: hsl(199, 102%, 86.25%);
+  --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1044,21 +1044,21 @@ body.theme-dark {
   --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
-  --color-blue: rgb(122, 162, 247);
+  --color-blue: #7aa2f7;
   --color-blue-rgb: 122, 162, 247;
-  --color-cyan: rgb(125, 207, 255);
+  --color-cyan: #7dcfff;
   --color-cyan-rgb: 125, 207, 255;
-  --color-green: rgb(158, 206, 106);
+  --color-green: #9ece6a;
   --color-green-rgb: 158, 206, 106;
-  --color-orange: rgb(255, 158, 100);
+  --color-orange: #ff9e64;
   --color-orange-rgb: 255, 158, 100;
-  --color-pink: rgb(187, 154, 247);
+  --color-pink: #bb9af7;
   --color-pink-rgb: 187, 154, 247;
-  --color-purple: rgb(187, 154, 247);
+  --color-purple: #bb9af7;
   --color-purple-rgb: 187, 154, 247;
-  --color-red: rgb(255, 117, 127);
+  --color-red: #ff757f;
   --color-red-rgb: 255, 117, 127;
-  --color-yellow: rgb(224, 175, 104);
+  --color-yellow: #e0af68;
   --color-yellow-rgb: 224, 175, 104;
   --cursor: default;
   --cursor-link: pointer;
@@ -1066,23 +1066,23 @@ body.theme-dark {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: rgb(25, 25, 25);
-  --divider-color-hover: hsl(202, 100%, 75%);
+  --divider-color: #191919;
+  --divider-color-hover: #80d0ff;
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
-  --dropdown-background: rgba(8, 8, 8, 0.3);
+  --dropdown-background: #0808084d;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(25, 25, 25);
+  --dropdown-background-hover: #191919;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(25, 25, 25), inset 0 0 0 1px rgb(25, 25, 25);
+  --embed-block-shadow-hover: 0 0 0 1px #191919, inset 0 0 0 1px #191919;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(202, 100%, 75%);
+  --embed-border-start: 2px solid #80d0ff;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -1095,7 +1095,7 @@ body.theme-dark {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: clamp(5px, 4vw, 20px);
-  --flair-background: rgb(8, 8, 8);
+  --flair-background: #080808;
   --flair-color: #d0d0d0;
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
@@ -1131,29 +1131,29 @@ body.theme-dark {
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
   --font-weight: 400;
-  --footnote-divider-color: rgb(25, 25, 25);
+  --footnote-divider-color: #191919;
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 6px;
   --footnote-id-color: #888;
-  --footnote-id-color-no-occurrences: rgb(180, 180, 180);
+  --footnote-id-color-no-occurrences: #b4b4b4;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: rgba(25, 25, 25, 0.7);
+  --footnote-input-background-active: #191919b3;
   --footnote-line-height: 1.6;
   --footnote-padding-block: 5px;
   --footnote-padding-inline: 5px;
   --footnote-radius: 6px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 80px;
   --graph-controls-width: 240px;
-  --graph-line: rgb(120, 120, 120);
-  --graph-node: rgb(220, 220, 220);
-  --graph-node-attachment: rgb(122, 162, 247);
-  --graph-node-focused: rgb(187, 154, 247);
-  --graph-node-tag: rgb(255, 158, 100);
-  --graph-node-unresolved: rgb(180, 180, 180);
+  --graph-line: #787878;
+  --graph-node: #dcdcdc;
+  --graph-node-attachment: #7aa2f7;
+  --graph-node-focused: #bb9af7;
+  --graph-node-tag: #ff9e64;
+  --graph-node-unresolved: #b4b4b4;
   --graph-text: #d0d0d0;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
@@ -1186,15 +1186,15 @@ body.theme-dark {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: rgb(180, 180, 180);
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-formatting: #b4b4b4;
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
-  --hr-color: rgb(25, 25, 25);
+  --hr-color: #191919;
   --hr-thickness: 2px;
   --icon-color: #888;
-  --icon-color-active: rgb(187, 154, 247);
-  --icon-color-focused: rgb(187, 154, 247);
-  --icon-color-hover: rgb(187, 154, 247);
+  --icon-color-active: #bb9af7;
+  --icon-color-focused: #bb9af7;
+  --icon-color-hover: #bb9af7;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -1212,8 +1212,8 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: rgb(120, 120, 120);
-  --indentation-guide-color-active: rgb(120, 120, 120);
+  --indentation-guide-color: #787878;
+  --indentation-guide-color-active: #787878;
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -1227,19 +1227,19 @@ body.theme-dark {
   --inline-title-weight: 700;
   --input-border-width: 1px;
   --input-border-width-focus: 2px;
-  --input-date-separator: rgb(180, 180, 180);
+  --input-date-separator: #b4b4b4;
   --input-font-weight: 400;
   --input-height: 30px;
   --input-padding: 6px 8px;
-  --input-placeholder-color: rgb(180, 180, 180);
+  --input-placeholder-color: #b4b4b4;
   --input-radius: 5px;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(202, 100%, 75%);
-  --interactive-accent-hover: hsl(202, 100%, calc(75% + 5%));
+  --input-shadow: inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026, 0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d, 0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #80d0ff;
+  --interactive-accent-hover: hsl(202, 100%, 80%);
   --interactive-accent-hsl: 202, 100%, 75%;
-  --interactive-hover: rgb(25, 25, 25);
-  --interactive-normal: rgb(8, 8, 8);
+  --interactive-hover: #191919;
+  --interactive-normal: #080808;
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -1253,18 +1253,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.6;
   --line-height-tight: 1.3;
-  --link-color: rgb(187, 154, 247);
-  --link-color-hover: rgb(125, 207, 255);
+  --link-color: #bb9af7;
+  --link-color-hover: #7dcfff;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: rgb(187, 154, 247);
-  --link-external-color-hover: rgb(125, 207, 255);
+  --link-external-color: #bb9af7;
+  --link-external-color-hover: #7dcfff;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%) contrast(85%);
-  --link-unresolved-color: rgb(187, 154, 247);
-  --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3);
+  --link-unresolved-color: #bb9af7;
+  --link-unresolved-decoration-color: #80d0ff4d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1277,40 +1277,40 @@ body.theme-dark {
   --list-indent: 1.5em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: rgb(187, 154, 247);
+  --list-marker-color: #bb9af7;
   --list-marker-color-collapsed: #888;
-  --list-marker-color-hover: rgb(210, 180, 255);
+  --list-marker-color-hover: #d2b4ff;
   --list-numbered-style: decimal;
   --list-spacing: 0;
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
   --menu-background: #020202;
-  --menu-border-color: rgb(18, 18, 18);
+  --menu-border-color: #121212;
   --menu-border-width: 1px;
   --menu-padding: 5px;
   --menu-radius: 8px;
-  --menu-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --menu-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
   --metadata-background: transparent;
-  --metadata-border-color: rgb(25, 25, 25);
+  --metadata-border-color: #191919;
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: rgb(25, 25, 25);
+  --metadata-divider-color: #191919;
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(25, 25, 25, 0.7);
+  --metadata-input-background-active: #191919b3;
   --metadata-input-background-hover: transparent;
   --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #d0d0d0;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(25, 25, 25, 0.7);
+  --metadata-label-background-active: #191919b3;
   --metadata-label-background-hover: transparent;
   --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
@@ -1320,10 +1320,10 @@ body.theme-dark {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(25, 25, 25, 0.7);
+  --metadata-property-background-active: #191919b3;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(202, 100%, 75%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(18, 18, 18);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #80d0ff;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #121212;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -1331,7 +1331,7 @@ body.theme-dark {
   --metadata-sidebar-input-font-size: 13px;
   --metadata-sidebar-label-font-size: 13px;
   --modal-background: transparent;
-  --modal-border-color: rgb(25, 25, 25);
+  --modal-border-color: #191919;
   --modal-border-width: 1px;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -1342,25 +1342,25 @@ body.theme-dark {
   --modal-width: 90vw;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-collapse-icon-color: rgb(180, 180, 180);
-  --nav-collapse-icon-color-collapsed: rgb(180, 180, 180);
+  --nav-collapse-icon-color: #b4b4b4;
+  --nav-collapse-icon-color-collapsed: #b4b4b4;
   --nav-heading-color: #d0d0d0;
-  --nav-heading-color-collapsed: rgb(180, 180, 180);
+  --nav-heading-color-collapsed: #b4b4b4;
   --nav-heading-color-collapsed-hover: #888;
   --nav-heading-color-hover: #d0d0d0;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgb(25, 25, 25);
+  --nav-indentation-guide-color: #191919;
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgb(25, 25, 25);
-  --nav-item-background-hover: rgb(25, 25, 25);
-  --nav-item-background-selected: hsla(202, 100%, 75%, 0.15);
+  --nav-item-background-active: #191919;
+  --nav-item-background-hover: #191919;
+  --nav-item-background-selected: #80d0ff26;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: rgba(255, 255, 255, 0.9);
-  --nav-item-color-active: rgb(187, 154, 247);
-  --nav-item-color-highlighted: rgb(187, 154, 247);
-  --nav-item-color-hover: rgb(220, 220, 220);
+  --nav-item-color: #ffffffe6;
+  --nav-item-color-active: #bb9af7;
+  --nav-item-color-highlighted: #bb9af7;
+  --nav-item-color-hover: #dcdcdc;
   --nav-item-color-selected: #d0d0d0;
   --nav-item-padding: 6px 8px 6px 18px;
   --nav-item-parent-padding: 4px 16px 4px 8px;
@@ -1372,20 +1372,20 @@ body.theme-dark {
   --page-margin: 1px auto -8px;
   --pdf-background: transparent;
   --pdf-page-background: transparent;
-  --pdf-shadow: 0 0 0 1px rgb(25, 25, 25);
+  --pdf-shadow: 0 0 0 1px #191919;
   --pdf-sidebar-background: transparent;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(25, 25, 25);
+  --pdf-spread-shadow: 0 0 0 1px #0000000d;
+  --pdf-thumbnail-shadow: 0 0 0 1px #191919;
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: rgb(25, 25, 25);
-  --pill-border-color-hover: rgb(18, 18, 18);
+  --pill-border-color: #191919;
+  --pill-border-color-hover: #121212;
   --pill-border-width: 1px;
   --pill-color: #888;
   --pill-color-hover: #d0d0d0;
-  --pill-color-remove: rgb(180, 180, 180);
-  --pill-color-remove-hover: rgb(187, 154, 247);
+  --pill-color-remove: #b4b4b4;
+  --pill-color-remove-hover: #bb9af7;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1399,7 +1399,7 @@ body.theme-dark {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 500px;
-  --prompt-border-color: rgb(25, 25, 25);
+  --prompt-border-color: #191919;
   --prompt-border-width: 1px;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -1417,21 +1417,21 @@ body.theme-dark {
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px;
   --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.3);
-  --scrollbar-bg: rgba(255, 255, 255, 0.03);
+  --scrollbar-active-thumb-bg: #ffffff4d;
+  --scrollbar-bg: #ffffff08;
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
   --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15);
+  --scrollbar-thumb-bg: #ffffff26;
   --scrollbar-width: 3px;
   --search-clear-button-color: #888;
   --search-clear-button-size: 13px;
   --search-icon-color: #888;
   --search-icon-size: 18px;
   --search-result-background: transparent;
-  --shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
-  --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --shadow-l: 0 10px 20px #00000026, 0 3px 6px #0000001a;
+  --shadow-s: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -1450,17 +1450,17 @@ body.theme-dark {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: rgb(18, 18, 18);
+  --slider-thumb-border-color: #121212;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: rgb(25, 25, 25);
+  --slider-track-background: #191919;
   --slider-track-height: 3px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-background: #020202;
-  --status-bar-border-color: rgb(25, 25, 25);
+  --status-bar-border-color: #191919;
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12px;
   --status-bar-position: fixed;
@@ -1468,24 +1468,24 @@ body.theme-dark {
   --status-bar-text-color: #888;
   --swatch-height: 22px;
   --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --swatch-shadow: inset 0 0 0 1px #ffffff26;
   --swatch-width: 22px;
-  --sync-avatar-color-1: rgb(255, 117, 127);
-  --sync-avatar-color-2: rgb(255, 158, 100);
-  --sync-avatar-color-3: rgb(224, 175, 104);
-  --sync-avatar-color-4: rgb(158, 206, 106);
-  --sync-avatar-color-5: rgb(125, 207, 255);
-  --sync-avatar-color-6: rgb(122, 162, 247);
-  --sync-avatar-color-7: rgb(187, 154, 247);
-  --sync-avatar-color-8: rgb(187, 154, 247);
+  --sync-avatar-color-1: #ff757f;
+  --sync-avatar-color-2: #ff9e64;
+  --sync-avatar-color-3: #e0af68;
+  --sync-avatar-color-4: #9ece6a;
+  --sync-avatar-color-5: #7dcfff;
+  --sync-avatar-color-6: #7aa2f7;
+  --sync-avatar-color-7: #bb9af7;
+  --sync-avatar-color-8: #bb9af7;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: rgba(25, 25, 25, 0.95);
+  --tab-background-active: #191919f2;
   --tab-container-background: transparent;
   --tab-curve: 6px;
-  --tab-divider-color: rgba(40, 40, 40, 0.3);
+  --tab-divider-color: #2828284d;
   --tab-font-size: 13px;
   --tab-max-width: 200px;
-  --tab-outline-color: rgba(60, 60, 60, 0.5);
+  --tab-outline-color: #3c3c3c80;
   --tab-outline-width: 2px;
   --tab-radius: 8px;
   --tab-radius-active: 6px 6px 0 0;
@@ -1493,27 +1493,27 @@ body.theme-dark {
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-shadow: -8px 0 8px 0 #0000000d;
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
   --tab-switcher-background: #020202;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033;
   --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(202, 100%, 75%);
-  --tab-text-color: rgb(180, 180, 180);
-  --tab-text-color-active: hsl(202, 100%, 75%);
+  --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #80d0ff;
+  --tab-text-color: #b4b4b4;
+  --tab-text-color-active: #80d0ff;
   --tab-text-color-focused: #888;
-  --tab-text-color-focused-active: hsla(202, 100%, 75%, 0.8);
-  --tab-text-color-focused-active-current: hsl(202, 100%, 75%);
-  --tab-text-color-focused-highlighted: rgb(187, 154, 247);
+  --tab-text-color-focused-active: #80d0ffcc;
+  --tab-text-color-focused-active-current: #80d0ff;
+  --tab-text-color-focused-highlighted: #bb9af7;
   --tab-width: 120px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: rgb(25, 25, 25);
+  --table-add-button-border-color: #191919;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: rgb(25, 25, 25);
+  --table-border-color: #191919;
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -1522,57 +1522,57 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(202, 100%, 75%);
-  --table-drag-handle-color: rgb(180, 180, 180);
+  --table-drag-handle-background-active: #80d0ff;
+  --table-drag-handle-color: #b4b4b4;
   --table-drag-handle-color-active: #ffffff;
   --table-drop-indicator-half-width: 2px;
-  --table-header-background: rgb(25, 25, 25);
-  --table-header-border-color: rgb(25, 25, 25);
+  --table-header-background: #191919;
+  --table-header-border-color: #191919;
   --table-header-border-width: 1px;
   --table-header-color: #d0d0d0;
   --table-header-size: 16px;
-  --table-header-weight: calc(400 + 200);
+  --table-header-weight: 600;
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(202, 100%, 75%, 0.1);
+  --table-selection: #80d0ff1a;
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(202, 100%, 75%);
+  --table-selection-border-color: #80d0ff;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: rgba(187, 154, 247, 0.15);
-  --tag-background-hover: rgba(125, 207, 255, 0.15);
-  --tag-border-color: hsla(202, 100%, 75%, 0.15);
-  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
+  --tag-background: #bb9af726;
+  --tag-background-hover: #7dcfff26;
+  --tag-border-color: #80d0ff26;
+  --tag-border-color-hover: #80d0ff26;
   --tag-border-width: 0px;
-  --tag-color: rgb(187, 154, 247);
-  --tag-color-hover: rgb(125, 207, 255);
+  --tag-color: #bb9af7;
+  --tag-color-hover: #7dcfff;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: rgb(187, 154, 247);
-  --text-accent-hover: rgb(125, 207, 255);
-  --text-error: rgb(255, 117, 127);
-  --text-faint: rgb(180, 180, 180);
-  --text-highlight-bg: rgba(255, 158, 100, 0.25);
+  --text-accent: #bb9af7;
+  --text-accent-hover: #7dcfff;
+  --text-error: #ff757f;
+  --text-faint: #b4b4b4;
+  --text-highlight-bg: #ff9e6440;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #888;
   --text-normal: #d0d0d0;
   --text-on-accent: #ffffff;
-  --text-on-accent-inverted: black;
-  --text-selection: rgba(187, 154, 247, 0.15);
-  --text-success: rgb(158, 206, 106);
-  --text-warning: rgb(255, 158, 100);
+  --text-on-accent-inverted: #000000;
+  --text-selection: #bb9af726;
+  --text-success: #9ece6a;
+  --text-warning: #ff9e64;
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
-  --titlebar-border-color: rgb(25, 25, 25);
+  --titlebar-border-color: #191919;
   --titlebar-border-width: 0px;
   --titlebar-height: 40px;
   --titlebar-text-color: #e8e8e8;
@@ -1596,73 +1596,73 @@ body.theme-dark {
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
-  --workspace-background-translucent: rgba(2, 2, 2, 0.9);
+  --workspace-background-translucent: #020202e6;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --zoom-factor: 1;
-  --h1-color: rgb(255, 117, 127);
-  --h2-color: rgb(187, 154, 247);
-  --h3-color: rgb(158, 206, 106);
-  --h4-color: rgb(125, 207, 255);
-  --h5-color: rgb(122, 162, 247);
-  --h6-color: rgb(255, 158, 100);
-  --inline-title-color: rgb(255, 117, 127);
-  --text-error-hover: rgb(219, 75, 75);
-  --background-modifier-form-field-highlighted: rgb(8, 8, 8);
-  --blockquote-color: rgb(180, 180, 180);
-  --table-header-background-hover: rgb(18, 18, 18);
-  --accent-color: hsl(202, 100%, 75%);
-  --bold-color: rgb(125, 207, 255);
-  --italic-color: rgb(122, 162, 247);
-  --green: rgb(158, 206, 106);
+  --h1-color: #ff757f;
+  --h2-color: #bb9af7;
+  --h3-color: #9ece6a;
+  --h4-color: #7dcfff;
+  --h5-color: #7aa2f7;
+  --h6-color: #ff9e64;
+  --inline-title-color: #ff757f;
+  --text-error-hover: #db4b4b;
+  --background-modifier-form-field-highlighted: #080808;
+  --blockquote-color: #b4b4b4;
+  --table-header-background-hover: #121212;
+  --accent-color: #80d0ff;
+  --bold-color: #7dcfff;
+  --italic-color: #7aa2f7;
+  --green: #9ece6a;
   --green_x: 158, 206, 106;
-  --orange: rgb(255, 158, 100);
+  --orange: #ff9e64;
   --orange_x: 255, 158, 100;
-  --purple: rgb(187, 154, 247);
+  --purple: #bb9af7;
   --purple_x: 187, 154, 247;
-  --red: rgb(255, 117, 127);
+  --red: #ff757f;
   --red_x: 255, 117, 127;
-  --yellow: rgb(224, 175, 104);
+  --yellow: #e0af68;
   --yellow_x: 224, 175, 104;
-  --interactive-success: rgb(158, 206, 106);
+  --interactive-success: #9ece6a;
   --text-muted-rgb: 180, 180, 180;
-  --blue: rgb(122, 162, 247);
-  --pink: rgb(217, 0, 105);
-  --blockquote-border: rgb(125, 207, 255);
-  --blockquote-bg: rgba(125, 207, 255, 0.08);
-  --cyan: rgb(125, 207, 255);
-  --embed-background: rgb(8, 8, 8);
-  --internal-link-color: rgb(158, 206, 106);
-  --shadow-m: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --blue: #7aa2f7;
+  --pink: #d90069;
+  --blockquote-border: #7dcfff;
+  --blockquote-bg: #7dcfff14;
+  --cyan: #7dcfff;
+  --embed-background: #080808;
+  --internal-link-color: #9ece6a;
+  --shadow-m: 0 3px 6px #00000026, 0 2px 4px #0000001f;
   --table-width: 88cqw;
   --background-primary-rgb: 15, 15, 15;
-  --date-background-color: rgba(122, 162, 247, 0.15);
-  --flashing-background: rgba(125, 207, 255, 0.2);
-  --mermaid-loopline: rgb(122, 162, 247);
-  --mermaid-note: rgb(61, 89, 161);
-  --nav-file-tag: rgba(224, 175, 104, 0.9);
+  --date-background-color: #7aa2f726;
+  --flashing-background: #7dcfff33;
+  --mermaid-loopline: #7aa2f7;
+  --mermaid-note: #3d59a1;
+  --nav-file-tag: #e0af68e6;
   --bg-primary: #020202;
-  --magenta: rgb(187, 154, 247);
-  --comment: rgb(120, 120, 120);
-  --teal: rgb(26, 188, 156);
-  --fg: rgb(220, 220, 220);
-  --shadow-color: rgba(0, 0, 0, 0.3);
+  --magenta: #bb9af7;
+  --comment: #787878;
+  --teal: #1abc9c;
+  --fg: #dcdcdc;
+  --shadow-color: #0000004d;
   --image-radius: 0px;
-  --bg: rgb(15, 15, 15);
-  --purple-light: rgb(210, 180, 255);
-  --tab-background: rgba(2, 2, 2, 0.9);
+  --bg: #0f0f0f;
+  --purple-light: #d2b4ff;
+  --tab-background: #020202e6;
   --tab-min-width: 40px;
   --link-external-color-rgb: 187, 154, 247;
-  --mermaid-actor: rgb(180, 180, 180);
+  --mermaid-actor: #b4b4b4;
   --border-radius: 8px;
-  --bg_dark2: rgb(2, 2, 2);
-  --bg_highlight: rgb(25, 25, 25);
-  --bg_highlight_dark: rgb(18, 18, 18);
-  --blue0: rgb(61, 89, 161);
-  --fg_dark: rgb(180, 180, 180);
-  --red1: rgb(219, 75, 75);
+  --bg_dark2: #020202;
+  --bg_highlight: #191919;
+  --bg_highlight_dark: #121212;
+  --blue0: #3d59a1;
+  --fg_dark: #b4b4b4;
+  --red1: #db4b4b;
   --unknown: #ffffff;
-  --bg_dark: rgb(8, 8, 8);
+  --bg_dark: #080808;
   --bg_dark2_x: 2, 2, 2;
   --bg_dark_x: 8, 8, 8;
   --bg_highlight_dark_x: 18, 18, 18;
@@ -1672,38 +1672,38 @@ body.theme-dark {
   --blue_x: 122, 162, 247;
   --comment_x: 120, 120, 120;
   --cyan_x: 125, 207, 255;
-  --date-color: rgb(122, 162, 247);
+  --date-color: #7aa2f7;
   --fg_dark_x: 180, 180, 180;
   --fg_x: 220, 220, 220;
   --magenta_x: 187, 154, 247;
   --pink_x: 217, 0, 105;
   --red1_x: 219, 75, 75;
   --teal_x: 26, 188, 156;
-  --terminal_black: rgb(65, 72, 104);
+  --terminal_black: #414868;
   --terminal_black_x: 65, 72, 104;
   --font-family-monospace: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
-  --background-modifier: rgba(25, 25, 25, 0.5);
+  --background-modifier: #19191980;
   --background-modifier-hover-rgb: 25, 25, 25;
   --background-secondary-rgb: 8, 8, 8;
   --bg-primary-rgb: 2, 2, 2;
   --bg-secondary-rgb: 8, 8, 8;
-  --blockquote-accent: rgb(187, 154, 247);
-  --blockquote-quote-mark: rgba(187, 154, 247, 0.7);
+  --blockquote-accent: #bb9af7;
+  --blockquote-quote-mark: #bb9af7b3;
   --code-comment_x: 115, 125, 165;
-  --code-selection-bg: rgba(125, 207, 255, 0.2);
+  --code-selection-bg: #7dcfff33;
   --cyan_hsl: 202 100% 75%;
-  --folder-note-color: rgb(220, 200, 250);
+  --folder-note-color: #dcc8fa;
   --folder-note-color_x: 220, 200, 250;
   --font-family-theme: "Inter", system-ui, -apple-system, sans-serif;
   --font-size-theme: 16px;
-  --insertion-color: rgb(255, 158, 100);
-  --internal-link-color-hover: rgb(122, 162, 247);
+  --insertion-color: #ff9e64;
+  --internal-link-color-hover: #7aa2f7;
   --line-height-theme: 1.6;
   --link-external-color-hover-rgb: 125, 207, 255;
-  --list-number-color: rgb(187, 154, 247);
-  --list-number-color-hover: rgb(210, 190, 255);
+  --list-number-color: #bb9af7;
+  --list-number-color-hover: #d2beff;
   --magent_hsl: 261 85% 79%;
-  --magenta-light: rgb(210, 190, 255);
+  --magenta-light: #d2beff;
   --magenta-light-rgb: 210, 190, 255;
   --magenta-light_x: 210, 190, 255;
   --magenta-rgb: 187, 154, 247;
@@ -1716,25 +1716,25 @@ body.theme-dark {
   --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --pink_hsl: 331 100% 43%;
   --purple-light_x: 210, 180, 255;
-  --shadow-xl: 0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05);
-  --tab-background-hover: rgba(18, 18, 18, 0.8);
-  --tab-background-unfocused: rgba(8, 8, 8, 0.7);
+  --shadow-xl: 0 15px 25px #00000026, 0 5px 10px #0000000d;
+  --tab-background-hover: #121212cc;
+  --tab-background-unfocused: #080808b3;
   --tab-container-background-focused: transparent;
-  --tab-outline-color-active: rgba(80, 80, 80, 0.8);
-  --text-on-code: rgb(220, 220, 220);
+  --tab-outline-color-active: #505050cc;
+  --text-on-code: #dcdcdc;
   --titlebar-text-color-inactive: #666;
 }
 
 body .markdown-rendered a.external-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1742,15 +1742,15 @@ body .markdown-rendered a.external-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1758,15 +1758,15 @@ body .markdown-rendered a.internal-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1774,15 +1774,15 @@ body .markdown-rendered a.internal-link.is-unresolved {
   user-select: none;
 }
 body .markdown-rendered p {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1790,15 +1790,15 @@ body .markdown-rendered p {
   user-select: none;
 }
 body strong {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(0, 120, 180), rgb(125, 207, 255));
+  background-color: #00000000;
+  color: light-dark(#0078b4, #7dcfff);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   outline: inherit;
   text-decoration: none solid rgb(125, 207, 255);
-  text-decoration-color: light-dark(rgb(0, 120, 180), rgb(125, 207, 255));
+  text-decoration-color: light-dark(#0078b4, #7dcfff);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1806,15 +1806,15 @@ body strong {
   user-select: text;
 }
 body b {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1822,15 +1822,15 @@ body b {
   user-select: none;
 }
 body em {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 70, 160), rgb(122, 162, 247));
+  background-color: #00000000;
+  color: light-dark(#1e46a0, #7aa2f7);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   outline: inherit;
   text-decoration: none solid rgb(122, 162, 247);
-  text-decoration-color: light-dark(rgb(30, 70, 160), rgb(122, 162, 247));
+  text-decoration-color: light-dark(#1e46a0, #7aa2f7);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1838,15 +1838,15 @@ body em {
   user-select: text;
 }
 body i {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1854,15 +1854,15 @@ body i {
   user-select: none;
 }
 body .markdown-rendered mark {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+  background-color: #ffff00;
+  color: #000000;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-color: #000000;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1870,15 +1870,15 @@ body .markdown-rendered mark {
   user-select: none;
 }
 body del {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(200, 50, 70), rgb(255, 117, 127));
+  background-color: #00000000;
+  color: light-dark(#c83246, #ff757f);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(255, 117, 127);
-  text-decoration-color: light-dark(rgb(200, 50, 70), rgb(255, 117, 127));
+  text-decoration-color: light-dark(#c83246, #ff757f);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1886,7 +1886,7 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1895,11 +1895,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body div.suggestion-item {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1908,11 +1908,11 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border: 0px light-dark(#e0e0e0, #363636);
+  border-top: 2px solid light-dark(#e0e0e0, #363636);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1930,12 +1930,12 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: light-dark(rgba(102, 63, 191, 0.1), rgba(187, 154, 247, 0.15));
+  background-color: light-dark(#663fbf1a, #bb9af726);
   display: flex;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px solid light-dark(rgba(129, 71, 209, 0.15), rgba(128, 208, 255, 0.15));
+  border: 0px solid light-dark(#8147d126, #80d0ff26);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -1946,15 +1946,15 @@ body div.multi-select-pill {
   border-end-end-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-align: left;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1963,22 +1963,22 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   content: normal;
   pointer-events: auto;
   transform: none;
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-align: left;
 }
 body .markdown-rendered ol > li::marker {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1987,13 +1987,13 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: monospace;
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2008,8 +2008,8 @@ body .markdown-rendered pre > code {
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*=language-], body pre[class*=language-] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2025,7 +2025,7 @@ body :not(pre) > code[class*=language-], body pre[class*=language-] {
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border: 2px inset light-dark(#767676, #858585);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2057,19 +2057,19 @@ body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   position: static;
   width: auto;
   display: list-item;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task=x] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border-inline-start: inherit;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
@@ -2080,12 +2080,12 @@ body .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(#8a5cf5, #a68af9);
   text-decoration: underline solid rgb(166, 138, 249);
 }
 body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: light-dark(#ffffff, #121212);
+  border: 2px inset light-dark(#767676, #858585);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2094,12 +2094,12 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(#000000, #ffffff);
   font-family: Arial;
 }
 body .search-results {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2111,15 +2111,15 @@ body .search-results {
   box-shadow: none;
 }
 body .search-results > * {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2127,7 +2127,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2138,10 +2138,10 @@ body div.search-results {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2152,40 +2152,40 @@ body div.search-results .suggestion-item {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
@@ -2198,8 +2198,8 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2212,7 +2212,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout=note] {
   --callout-color: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2223,11 +2223,11 @@ body .callout[data-callout=note] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 0px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
 }
 body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2239,22 +2239,22 @@ body .callout[data-callout=note] > .callout-title {
   padding: 0px;
 }
 body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-weight: 400;
 }
 body .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   padding: 0px;
 }
 body .callout[data-callout=abstract] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2265,14 +2265,14 @@ body .callout[data-callout=abstract] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=info] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2283,14 +2283,14 @@ body .callout[data-callout=info] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=todo] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2301,14 +2301,14 @@ body .callout[data-callout=todo] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=tip] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2319,14 +2319,14 @@ body .callout[data-callout=tip] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=success] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2337,14 +2337,14 @@ body .callout[data-callout=success] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=question] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2355,14 +2355,14 @@ body .callout[data-callout=question] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=warning] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2373,14 +2373,14 @@ body .callout[data-callout=warning] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=danger] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2391,14 +2391,14 @@ body .callout[data-callout=danger] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=failure] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2409,14 +2409,14 @@ body .callout[data-callout=failure] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=bug] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2427,14 +2427,14 @@ body .callout[data-callout=bug] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=example] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2445,14 +2445,14 @@ body .callout[data-callout=example] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=quote] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2463,7 +2463,7 @@ body .callout[data-callout=quote] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .math-block > mjx-container.MathJax {
@@ -2480,26 +2480,26 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
 }
 body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
 body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;

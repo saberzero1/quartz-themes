@@ -8,36 +8,36 @@
 
 
 :root:root {
-  --code-background: hsl(231, 9%, 15%) !important;
-  --code-border-color: rgba(100, 100, 100, 0.25) !important;
+  --code-background: #23242a !important;
+  --code-border-color: #64646440 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: transparent !important;
-  --code-comment: hsl(225, 17%, 84%) !important;
-  --code-function: hsl(334, 37%, 65%) !important;
-  --code-important: hsl(220, 23%, 90%) !important;
-  --code-keyword: hsl(263, 37%, 69%) !important;
-  --code-normal: hsl(224, 37%, 80%) !important;
+  --code-comment: #cfd3dd !important;
+  --code-function: #c785a1 !important;
+  --code-important: #e0e4eb !important;
+  --code-keyword: #a993cd !important;
+  --code-normal: #b9c3df !important;
   --code-operator: #fb464c !important;
-  --code-property: hsl(61, 46%, 69%) !important;
-  --code-punctuation: hsl(225, 14%, 40%) !important;
+  --code-property: #d3d48c !important;
+  --code-punctuation: #585f74 !important;
   --code-radius: 0px !important;
   --code-size: 0.875em !important;
-  --code-string: hsl(124, 54%, 75%) !important;
-  --code-tag: hsl(334, 37%, 65%) !important;
-  --code-value: hsl(183, 29%, 62%) !important;
+  --code-string: #9de2a1 !important;
+  --code-tag: #c785a1 !important;
+  --code-value: #82b7ba !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(196, 27%, 41%) !important;
-  --graph-node: hsl(58, 86%, 66%) !important;
-  --graph-node-attachment: hsl(220, 23%, 90%) !important;
-  --graph-node-focused: hsl(225, 14%, 55%) !important;
-  --graph-node-tag: hsl(194, 50%, 47%) !important;
-  --graph-node-unresolved: hsl(263, 46%, 61%) !important;
-  --graph-text: hsl(225, 17%, 88%) !important;
-  --graph-color-line: hsl(196, 27%, 41%) !important;
-  --graph-color-line-hover: hsl(224, 17%, 68%) !important;
-  --graph-color-node-border-hover: hsl(220, 23%, 95%) !important;
-  --graph-color-node-hover: hsl(317, 62%, 65%) !important;
+  --graph-line: #4c7685 !important;
+  --graph-node: #f3ee5e !important;
+  --graph-node-attachment: #e0e4eb !important;
+  --graph-node-focused: #7c849c !important;
+  --graph-node-tag: #3c98b4 !important;
+  --graph-node-unresolved: #916ec9 !important;
+  --graph-text: #dbdee6 !important;
+  --graph-color-line: #4c7685 !important;
+  --graph-color-line-hover: #a0a7bb !important;
+  --graph-color-node-border-hover: #eff1f5 !important;
+  --graph-color-node-hover: #dd6ebe !important;
 }
 
 
@@ -175,20 +175,20 @@ body {
   }
 
   div#quartz-root {
-    background-color: rgb(30, 30, 30);
-  color: rgb(218, 218, 218);
+    background-color: #1e1e1e;
+  color: #dadada;
   }
 
   a.external {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+    background-color: #00000000;
+  color: #a68af9;
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: #a68af9;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -197,15 +197,15 @@ body {
   }
 
   a.internal {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+    background-color: #00000000;
+  color: #a68af9;
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: #a68af9;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -214,15 +214,15 @@ body {
   }
 
   a.internal.broken {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+    background-color: #00000000;
+  color: #a68af9;
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-color: #a68af9;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -231,15 +231,15 @@ body {
   }
 
   p {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(114, 195, 213);
+    background-color: #00000000;
+  color: #72c3d5;
   cursor: auto;
   filter: none;
   font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(114, 195, 213);
-  text-decoration-color: rgb(114, 195, 213);
+  text-decoration-color: #72c3d5;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -248,15 +248,15 @@ body {
   }
 
   .page article p > strong, strong {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -265,15 +265,15 @@ body {
   }
 
   .page article p > b, b {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -282,15 +282,15 @@ body {
   }
 
   .page article p > em, em {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -299,15 +299,15 @@ body {
   }
 
   .page article p > i, i {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -316,15 +316,15 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+    background-color: #ffff00;
+  color: #000000;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-color: #000000;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -333,15 +333,15 @@ body {
   }
 
   del {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(124, 132, 156);
+    background-color: #00000000;
+  color: #7c849c;
   cursor: auto;
   filter: none;
   font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(124, 132, 156);
-  text-decoration-color: rgb(124, 132, 156);
+  text-decoration-color: #7c849c;
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -350,7 +350,7 @@ body {
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -359,12 +359,12 @@ body {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: #dadada;
   }
 
   .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -373,12 +373,12 @@ body {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: #dadada;
   }
 
   hr {
-  border: 0px rgb(67, 72, 81);
-  border-top: 1px solid rgb(67, 72, 81);
+  border: 0px #434851;
+  border-top: 1px solid #434851;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -397,12 +397,12 @@ body {
 
   a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   display: block;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -414,17 +414,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   }
 
   ul > li {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   text-align: left;
   }
 
   ul > li::marker {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -433,7 +433,7 @@ body {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: #dadada;
   content: normal;
   pointer-events: auto;
   transform: none;
@@ -441,17 +441,17 @@ body {
   }
 
   ol > li {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   text-align: left;
   }
 
   ol > li::marker {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   }
 
   code {
-    background-color: rgb(35, 36, 42);
-  border: 0px solid rgba(100, 100, 100, 0.25);
+    background-color: #23242a;
+  border: 0px solid #64646440;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -460,14 +460,14 @@ body {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(185, 195, 223);
+  color: #b9c3df;
   font-family: "DM Mono", "Fira Code", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   padding: 2.1px 4.2px;
   }
 
   pre > code, pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -483,8 +483,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -501,7 +501,7 @@ body {
 
   input[type=checkbox] {
     appearance: auto;
-  border: 2px inset rgb(133, 133, 133);
+  border: 2px inset #858585;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -535,7 +535,7 @@ body {
   position: static;
   width: auto;
   display: list-item;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
   -webkit-mask-repeat: inherit;
@@ -543,13 +543,13 @@ body {
   }
 
   .page article li:has(>input[type=checkbox]:checked) {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
   border-inline-start: inherit;
   font-family: "DM Sans", Inter, "-apple-system BlinkMacSystemFont", "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
@@ -561,13 +561,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: rgb(166, 138, 249);
+    color: #a68af9;
   text-decoration: underline solid rgb(166, 138, 249);
   }
 
   .search > .search-button {
-    background-color: rgb(18, 18, 18);
-  border: 2px inset rgb(133, 133, 133);
+    background-color: #121212;
+  border: 2px inset #858585;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -576,13 +576,13 @@ body {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: Arial;
   }
 
   .search > .search-container > .search-space {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -595,8 +595,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(18, 18, 18);
-  border: 2px inset rgb(133, 133, 133);
+    background-color: #121212;
+  border: 2px inset #858585;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -609,15 +609,15 @@ body {
   }
 
   .search > .search-container > .search-space > * {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration-color: #dadada;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -626,7 +626,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -638,11 +638,11 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card {
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -654,47 +654,47 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   }
 
   h1 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
 
   h2 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
 
   h3 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
 
   h4 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
 
   h5 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
 
   h6 {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
   }
@@ -704,12 +704,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+    background-color: #00000000;
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -723,7 +723,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -738,7 +738,7 @@ body {
 
   .callout .callout-title {
     gap: inherit;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -756,20 +756,20 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   font-weight: 400;
   }
 
   .callout > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #00000000;
   padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -781,15 +781,15 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -801,15 +801,15 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -821,15 +821,15 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -841,15 +841,15 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -861,15 +861,15 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -881,15 +881,15 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -901,15 +901,15 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -921,15 +921,15 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -941,15 +941,15 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -961,15 +961,15 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -981,15 +981,15 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1001,15 +1001,15 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
+  border: 0px #dadada;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1021,7 +1021,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
   stroke: none;
   }
 
@@ -1042,7 +1042,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
@@ -1050,13 +1050,13 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+    background-color: #00000000;
+  color: #dadada;
   cursor: auto;
   }
 
   .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
@@ -1064,7 +1064,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: rgb(218, 218, 218);
+    color: #dadada;
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;

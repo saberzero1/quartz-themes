@@ -65,19 +65,19 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(4, 89%, 64%, 0.15) !important;
+  --background-modifier-active-hover: #f55c5126 !important;
   --background-modifier-border: #f6e2db !important;
   --background-modifier-border-focus: #b29688 !important;
   --background-modifier-border-hover: #4a3827 !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8) !important;
+  --background-modifier-box-shadow: #0000001a !important;
+  --background-modifier-cover: #000000cc !important;
   --background-modifier-error: #f85c51 !important;
   --background-modifier-error-hover: #f85c51 !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
   --background-modifier-form-field: #fffefd !important;
   --background-modifier-form-field-hover: #fffefd !important;
-  --background-modifier-hover: rgba(0, 0, 0, 0.075) !important;
-  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-hover: #00000013 !important;
+  --background-modifier-message: #000000e6 !important;
   --background-modifier-success: #0cc77c !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
   --background-primary: #fffefd !important;
@@ -106,17 +106,17 @@ body.theme-light {
   --bases-table-cell-background-active: #fffefd !important;
   --bases-table-cell-background-disabled: #f6e2db !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(4, 89%, 64%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #f55c51 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-header-background: #fffefd !important;
-  --bases-table-header-background-hover: rgba(0, 0, 0, 0.075) !important;
+  --bases-table-header-background-hover: #00000013 !important;
   --bases-table-header-color: #b29688 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, #000000 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -125,7 +125,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(4, 89%, 64%) !important;
+  --blockquote-border-color: #f55c51 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -152,11 +152,11 @@ body.theme-light {
   --callout-summary: 83, 223, 221 !important;
   --callout-tip: 83, 223, 221 !important;
   --callout-title-padding: 0 !important;
-  --callout-title-weight: calc(400 + 200) !important;
+  --callout-title-weight: 600 !important;
   --callout-todo: 2, 122, 255 !important;
   --callout-warning: 233, 151, 63 !important;
   --canvas-background: #fffefd !important;
-  --canvas-card-label-color: hsl(4, 89%, 64%) !important;
+  --canvas-card-label-color: #f55c51 !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -166,9 +166,9 @@ body.theme-light {
   --canvas-color-6: 168, 130, 255 !important;
   --canvas-dot-pattern: #fdf9f5 !important;
   --caret-color: #4a3827 !important;
-  --checkbox-border-color: hsl(4, 89%, 64%) !important;
+  --checkbox-border-color: #f55c51 !important;
   --checkbox-border-color-hover: #b29688 !important;
-  --checkbox-color: hsl(4, 89%, 64%) !important;
+  --checkbox-color: #f55c51 !important;
   --checkbox-color-hover: #a83e37 !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #fffefd !important;
@@ -180,14 +180,14 @@ body.theme-light {
   --code-background: #fdf9f5 !important;
   --code-border-color: #f6e2db !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
-  --code-comment: hsl(4, 89%, 64%) !important;
+  --code-bracket-background: #00000013 !important;
+  --code-comment: #f55c51 !important;
   --code-function: #eacf00 !important;
   --code-important: #e9973f !important;
   --code-keyword: #f22c96 !important;
   --code-normal: #765c4f !important;
   --code-operator: #f85c51 !important;
-  --code-property: rgb(14, 205, 201) !important;
+  --code-property: #0ecdc9 !important;
   --code-punctuation: #b29688 !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
@@ -195,9 +195,9 @@ body.theme-light {
   --code-tag: #f85c51 !important;
   --code-value: #a29bfe !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsl(4, 89%, 64%) !important;
-  --collapse-icon-color-collapsed: hsl(4, 89%, 64%) !important;
-  --color-accent: hsl(4, 89%, 64%) !important;
+  --collapse-icon-color: #f55c51 !important;
+  --collapse-icon-color-collapsed: #f55c51 !important;
+  --color-accent: #f55c51 !important;
   --color-accent-1: #f85c51 !important;
   --color-accent-2: #a83e37 !important;
   --color-accent-hsl: 4, 89%, 64% !important;
@@ -215,7 +215,7 @@ body.theme-light {
   --color-base-70: #5c5c5c !important;
   --color-blue: #d6e9ff !important;
   --color-blue-rgb: 2, 122, 255 !important;
-  --color-cyan: rgb(14, 205, 201) !important;
+  --color-cyan: #0ecdc9 !important;
   --color-cyan-rgb: 83, 223, 221 !important;
   --color-green: #0cc77c !important;
   --color-green-rgb: 68, 207, 110 !important;
@@ -236,11 +236,11 @@ body.theme-light {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #f6e2db !important;
-  --divider-color-hover: hsl(4, 89%, 64%) !important;
+  --divider-color-hover: #f55c51 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-background: #000000d9 !important;
   --drag-ghost-text-color: #fff !important;
   --dropdown-background: #f6e2db !important;
   --dropdown-background-blend-mode: hard-light !important;
@@ -251,7 +251,7 @@ body.theme-light {
   --embed-block-shadow-hover: 0 0 0 1px #f6e2db, inset 0 0 0 1px #f6e2db !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid hsl(4, 89%, 64%) !important;
+  --embed-border-start: 2px solid #f55c51 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -305,24 +305,24 @@ body.theme-light {
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
   --footnote-id-color: #b29688 !important;
-  --footnote-id-color-no-occurrences: hsl(4, 89%, 64%) !important;
+  --footnote-id-color-no-occurrences: #f55c51 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --footnote-input-background-active: #00000013 !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 44px) !important;
+  --frame-left-space: 36px !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #4a3827 !important;
   --graph-node: #b29688 !important;
   --graph-node-attachment: #eacf00 !important;
-  --graph-node-focused: hsl(4, 89%, 64%) !important;
+  --graph-node-focused: #f55c51 !important;
   --graph-node-tag: #0cc77c !important;
-  --graph-node-unresolved: hsl(4, 89%, 64%) !important;
+  --graph-node-unresolved: #f55c51 !important;
   --graph-text: #4a3827 !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2em !important;
@@ -355,13 +355,13 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: hsl(4, 89%, 64%) !important;
-  --heading-spacing: calc(1rem * 2.5) !important;
+  --heading-formatting: #f55c51 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
   --hr-color: #f6e2db !important;
   --hr-thickness: 2px !important;
   --icon-color: #b29688 !important;
-  --icon-color-active: hsl(4, 89%, 64%) !important;
+  --icon-color-active: #f55c51 !important;
   --icon-color-focused: #4a3827 !important;
   --icon-color-hover: #b29688 !important;
   --icon-l: 18px !important;
@@ -381,8 +381,8 @@ body.theme-light {
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
+  --indentation-guide-color: #0000001f !important;
+  --indentation-guide-color-active: #0000004d !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -396,15 +396,15 @@ body.theme-light {
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: hsl(4, 89%, 64%) !important;
+  --input-date-separator: #f55c51 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsl(4, 89%, 64%) !important;
+  --input-placeholder-color: #f55c51 !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --interactive-accent: hsl(4, 89%, 64%) !important;
+  --input-shadow: inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008, 0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008, 0 1px 2px 0 #0000000a, 0 0 0 0 transparent !important;
+  --interactive-accent: #f55c51 !important;
   --interactive-accent-hover: #a83e37 !important;
   --interactive-accent-hsl: 4, 89%, 64% !important;
   --interactive-hover: #d7c3ba !important;
@@ -422,18 +422,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(4, 89%, 64%) !important;
+  --link-color: #f55c51 !important;
   --link-color-hover: #a83e37 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(4, 89%, 64%) !important;
+  --link-external-color: #f55c51 !important;
   --link-external-color-hover: #a83e37 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(4, 89%, 64%) !important;
-  --link-unresolved-decoration-color: hsla(4, 89%, 64%, 0.3) !important;
+  --link-unresolved-color: #f55c51 !important;
+  --link-unresolved-decoration-color: #f55c514d !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -446,8 +446,8 @@ body.theme-light {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: hsl(4, 89%, 64%) !important;
-  --list-marker-color-collapsed: hsl(4, 89%, 64%) !important;
+  --list-marker-color: #f55c51 !important;
+  --list-marker-color-collapsed: #f55c51 !important;
   --list-marker-color-hover: #b29688 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -458,7 +458,7 @@ body.theme-light {
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-shadow: 0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012 !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #f6e2db !important;
   --metadata-border-radius: 0 !important;
@@ -471,15 +471,15 @@ body.theme-light {
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-input-background-active: #00000013 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #4a3827 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-label-background-active: #00000013 !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
@@ -489,7 +489,7 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-property-background-active: #00000013 !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #b29688 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #4a3827 !important;
@@ -511,19 +511,19 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: hsl(4, 89%, 64%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(4, 89%, 64%) !important;
+  --nav-collapse-icon-color: #f55c51 !important;
+  --nav-collapse-icon-color-collapsed: #f55c51 !important;
   --nav-heading-color: #4a3827 !important;
-  --nav-heading-color-collapsed: hsl(4, 89%, 64%) !important;
+  --nav-heading-color-collapsed: #f55c51 !important;
   --nav-heading-color-collapsed-hover: #b29688 !important;
   --nav-heading-color-hover: #4a3827 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
+  --nav-indentation-guide-color: #0000001f !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-selected: hsla(4, 89%, 64%, 0.15) !important;
+  --nav-item-background-active: #00000013 !important;
+  --nav-item-background-hover: #00000013 !important;
+  --nav-item-background-selected: #f55c5126 !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b29688 !important;
@@ -541,10 +541,10 @@ body.theme-light {
   --page-margin: 1px auto -8px !important;
   --pdf-background: #fffefd !important;
   --pdf-page-background: #fffefd !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px #0000000d, 0 2px 8px #0000001a !important;
   --pdf-sidebar-background: #fffefd !important;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-spread-shadow: 0 0 0 1px #0000000d !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033 !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -553,8 +553,8 @@ body.theme-light {
   --pill-border-width: 1px !important;
   --pill-color: #b29688 !important;
   --pill-color-hover: #4a3827 !important;
-  --pill-color-remove: hsl(4, 89%, 64%) !important;
-  --pill-color-remove-hover: hsl(4, 89%, 64%) !important;
+  --pill-color-remove: #f55c51 !important;
+  --pill-color-remove-hover: #f55c51 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -586,21 +586,21 @@ body.theme-light {
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2) !important;
+  --scrollbar-active-thumb-bg: #00000033 !important;
   --scrollbar-bg: #f6e2db !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
+  --scrollbar-thumb-bg: #0000001a !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #b29688 !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: #b29688 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #fffefd !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
+  --shadow-l: 0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d, 0px 15px 30px #0000001a !important;
+  --shadow-s: 0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -637,13 +637,13 @@ body.theme-light {
   --status-bar-text-color: #b29688 !important;
   --swatch-height: 24px !important;
   --swatch-radius: 14px !important;
-  --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
+  --swatch-shadow: inset 0 0 0 1px #00000026 !important;
   --swatch-width: 24px !important;
   --sync-avatar-color-1: #f85c51 !important;
   --sync-avatar-color-2: #e9973f !important;
   --sync-avatar-color-3: #eacf00 !important;
   --sync-avatar-color-4: #0cc77c !important;
-  --sync-avatar-color-5: rgb(14, 205, 201) !important;
+  --sync-avatar-color-5: #0ecdc9 !important;
   --sync-avatar-color-6: #d6e9ff !important;
   --sync-avatar-color-7: #a29bfe !important;
   --sync-avatar-color-8: #f22c96 !important;
@@ -662,21 +662,21 @@ body.theme-light {
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
+  --tab-stacked-shadow: -8px 0 8px 0 #0000000d !important;
   --tab-stacked-text-align: left !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #fdf9f5 !important;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033 !important;
   --tab-switcher-preview-radius: 16px !important;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(4, 89%, 64%) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px #0000000d !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #f55c51 !important;
   --tab-text-color: #b29688 !important;
   --tab-text-color-active: #b29688 !important;
   --tab-text-color-focused: #b29688 !important;
   --tab-text-color-focused-active: #b29688 !important;
   --tab-text-color-focused-active-current: #4a3827 !important;
-  --tab-text-color-focused-highlighted: hsl(4, 89%, 64%) !important;
+  --tab-text-color-focused-highlighted: #f55c51 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #f6e2db !important;
@@ -691,14 +691,14 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(4, 89%, 64%) !important;
-  --table-drag-handle-color: hsl(4, 89%, 64%) !important;
+  --table-drag-handle-background-active: #f55c51 !important;
+  --table-drag-handle-color: #f55c51 !important;
   --table-drag-handle-color-active: #fffefd !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: #fdf9f5 !important;
   --table-header-border-color: #f6e2db !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: hsl(4, 89%, 64%) !important;
+  --table-header-color: #f55c51 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -706,36 +706,36 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(4, 89%, 64%, 0.1) !important;
+  --table-selection: #f55c511a !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(4, 89%, 64%) !important;
+  --table-selection-border-color: #f55c51 !important;
   --table-selection-border-radius: 8px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: #782b1d52 !important;
-  --tag-background-hover: hsla(4, 89%, 64%, 0.2) !important;
-  --tag-border-color: hsla(4, 89%, 64%, 0.15) !important;
-  --tag-border-color-hover: hsla(4, 89%, 64%, 0.15) !important;
+  --tag-background-hover: #f55c5133 !important;
+  --tag-border-color: #f55c5126 !important;
+  --tag-border-color-hover: #f55c5126 !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(4, 89%, 64%) !important;
-  --tag-color-hover: hsl(4, 89%, 64%) !important;
+  --tag-color: #f55c51 !important;
+  --tag-color-hover: #f55c51 !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: hsl(4, 89%, 64%) !important;
+  --text-accent: #f55c51 !important;
   --text-accent-hover: #a83e37 !important;
   --text-error: #f85c51 !important;
-  --text-faint: hsl(4, 89%, 64%) !important;
+  --text-faint: #f55c51 !important;
   --text-highlight-bg: #d6e9ff !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #b29688 !important;
   --text-normal: #4a3827 !important;
   --text-on-accent: #fffefd !important;
-  --text-on-accent-inverted: black !important;
+  --text-on-accent-inverted: #000000 !important;
   --text-selection: #d7c3ba !important;
   --text-success: #0cc77c !important;
   --text-warning: #e9973f !important;
@@ -753,7 +753,7 @@ body.theme-light {
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: white !important;
+  --toggle-thumb-color: #ffffff !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
@@ -765,26 +765,26 @@ body.theme-light {
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
+  --workspace-background-translucent: #ffffff99 !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: hsl(4, 89%, 64%) !important;
-  --h2-color: hsl(4, 89%, 64%) !important;
-  --h3-color: hsl(4, 89%, 64%) !important;
-  --h4-color: hsl(4, 89%, 64%) !important;
-  --h5-color: hsl(4, 89%, 64%) !important;
-  --h6-color: hsl(4, 89%, 64%) !important;
-  --inline-title-color: hsl(4, 89%, 64%) !important;
+  --h1-color: #f55c51 !important;
+  --h2-color: #f55c51 !important;
+  --h3-color: #f55c51 !important;
+  --h4-color: #f55c51 !important;
+  --h5-color: #f55c51 !important;
+  --h6-color: #f55c51 !important;
+  --inline-title-color: #f55c51 !important;
   --table-header-background-hover: #fdf9f5 !important;
   --vault-name-color: #4a3827 !important;
   --bold-color: #f85c51 !important;
-  --italic-color: rgb(14, 205, 201) !important;
-  --embed-border-left: 2px solid hsl(4, 89%, 64%) !important;
+  --italic-color: #0ecdc9 !important;
+  --embed-border-left: 2px solid #f55c51 !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: 12px !important;
   --nav-item-children-padding-left: 4px !important;
-  --status-bar-scroll-padding: calc(12px + 18px) !important;
+  --status-bar-scroll-padding: 30px !important;
   --vault-name-font-size: 13px !important;
   --vault-name-font-weight: 500 !important;
   --background-code: #f6e2db !important;
@@ -805,7 +805,7 @@ body.theme-light {
   --canvas2: #f6e2db !important;
   --canvas3: #fdf9f5 !important;
   --canvas4: #d7c3ba !important;
-  --color-head: hsl(4, 89%, 64%) !important;
+  --color-head: #f55c51 !important;
 }
 
 body.theme-dark {
@@ -821,19 +821,19 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(4, 89%, 64%, 0.15);
+  --background-modifier-active-hover: #f55c5126;
   --background-modifier-border: #232120;
   --background-modifier-border-focus: #807874;
   --background-modifier-border-hover: #ffebd1;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #000000cc;
   --background-modifier-error: #f85c51;
   --background-modifier-error-hover: #f85c51;
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: #2a2a2a;
   --background-modifier-form-field-hover: #2a2a2a;
-  --background-modifier-hover: rgba(255, 255, 255, 0.075);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-hover: #ffffff13;
+  --background-modifier-message: #000000e6;
   --background-modifier-success: #23d18c;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: #121110;
@@ -862,17 +862,17 @@ body.theme-dark {
   --bases-table-cell-background-active: #121110;
   --bases-table-cell-background-disabled: #232120;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(4, 89%, 64%);
+  --bases-table-cell-shadow-active: 0 0 0 2px #f55c51;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #121110;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.075);
+  --bases-table-header-background-hover: #ffffff13;
   --bases-table-header-color: #807874;
   --bases-table-header-icon-display: flex;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px);
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, #000000 24px);
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
@@ -881,7 +881,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(4, 89%, 64%);
+  --blockquote-border-color: #f55c51;
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -908,11 +908,11 @@ body.theme-dark {
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: #121110;
-  --canvas-card-label-color: hsl(4, 89%, 64%);
+  --canvas-card-label-color: #f55c51;
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -922,9 +922,9 @@ body.theme-dark {
   --canvas-color-6: 168, 130, 255;
   --canvas-dot-pattern: #181716;
   --caret-color: #ffebd1;
-  --checkbox-border-color: hsl(4, 89%, 64%);
+  --checkbox-border-color: #f55c51;
   --checkbox-border-color-hover: #807874;
-  --checkbox-color: hsl(4, 89%, 64%);
+  --checkbox-color: #f55c51;
   --checkbox-color-hover: #a83e37;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #121110;
@@ -936,8 +936,8 @@ body.theme-dark {
   --code-background: #181716;
   --code-border-color: #232120;
   --code-border-width: 0px;
-  --code-bracket-background: rgba(255, 255, 255, 0.075);
-  --code-comment: hsl(4, 89%, 64%);
+  --code-bracket-background: #ffffff13;
+  --code-comment: #f55c51;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -951,9 +951,9 @@ body.theme-dark {
   --code-tag: #f85c51;
   --code-value: #a29bfe;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: hsl(4, 89%, 64%);
-  --collapse-icon-color-collapsed: hsl(4, 89%, 64%);
-  --color-accent: hsl(4, 89%, 64%);
+  --collapse-icon-color: #f55c51;
+  --collapse-icon-color-collapsed: #f55c51;
+  --color-accent: #f55c51;
   --color-accent-1: #f85c51;
   --color-accent-2: #a83e37;
   --color-accent-hsl: 4, 89%, 64%;
@@ -992,11 +992,11 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: #232120;
-  --divider-color-hover: hsl(4, 89%, 64%);
+  --divider-color-hover: #f55c51;
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
   --dropdown-background: #232120;
   --dropdown-background-blend-mode: hard-light;
@@ -1007,7 +1007,7 @@ body.theme-dark {
   --embed-block-shadow-hover: 0 0 0 1px #232120, inset 0 0 0 1px #232120;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(4, 89%, 64%);
+  --embed-border-start: 2px solid #f55c51;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
@@ -1061,24 +1061,24 @@ body.theme-dark {
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
   --footnote-id-color: #807874;
-  --footnote-id-color-no-occurrences: hsl(4, 89%, 64%);
+  --footnote-id-color-no-occurrences: #f55c51;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.075);
+  --footnote-input-background-active: #ffffff13;
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
   --graph-line: #ffebd1;
   --graph-node: #807874;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(4, 89%, 64%);
+  --graph-node-focused: #f55c51;
   --graph-node-tag: #23d18c;
-  --graph-node-unresolved: hsl(4, 89%, 64%);
+  --graph-node-unresolved: #f55c51;
   --graph-text: #ffebd1;
   --h1-line-height: 1.2;
   --h1-size: 2em;
@@ -1111,13 +1111,13 @@ body.theme-dark {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: hsl(4, 89%, 64%);
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-formatting: #f55c51;
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
   --hr-color: #232120;
   --hr-thickness: 2px;
   --icon-color: #807874;
-  --icon-color-active: hsl(4, 89%, 64%);
+  --icon-color-active: #f55c51;
   --icon-color-focused: #ffebd1;
   --icon-color-hover: #807874;
   --icon-l: 18px;
@@ -1137,8 +1137,8 @@ body.theme-dark {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12);
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3);
+  --indentation-guide-color: #ffffff1f;
+  --indentation-guide-color-active: #ffffff4d;
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -1152,15 +1152,15 @@ body.theme-dark {
   --inline-title-weight: 700;
   --input-border-width: 1px;
   --input-border-width-focus: 2px;
-  --input-date-separator: hsl(4, 89%, 64%);
+  --input-date-separator: #f55c51;
   --input-font-weight: 400;
   --input-height: 30px;
   --input-padding: 4px 8px;
-  --input-placeholder-color: hsl(4, 89%, 64%);
+  --input-placeholder-color: #f55c51;
   --input-radius: 5px;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(4, 89%, 64%);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026, 0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d, 0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #f55c51;
   --interactive-accent-hover: #a83e37;
   --interactive-accent-hsl: 4, 89%, 64%;
   --interactive-hover: #403938;
@@ -1178,18 +1178,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: hsl(4, 89%, 64%);
+  --link-color: #f55c51;
   --link-color-hover: #a83e37;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: hsl(4, 89%, 64%);
+  --link-external-color: #f55c51;
   --link-external-color-hover: #a83e37;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: hsl(4, 89%, 64%);
-  --link-unresolved-decoration-color: hsla(4, 89%, 64%, 0.3);
+  --link-unresolved-color: #f55c51;
+  --link-unresolved-decoration-color: #f55c514d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1202,8 +1202,8 @@ body.theme-dark {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: hsl(4, 89%, 64%);
-  --list-marker-color-collapsed: hsl(4, 89%, 64%);
+  --list-marker-color: #f55c51;
+  --list-marker-color-collapsed: #f55c51;
   --list-marker-color-hover: #807874;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -1214,7 +1214,7 @@ body.theme-dark {
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --menu-shadow: 0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --metadata-background: transparent;
   --metadata-border-color: #232120;
   --metadata-border-radius: 0;
@@ -1227,15 +1227,15 @@ body.theme-dark {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.075);
+  --metadata-input-background-active: #ffffff13;
   --metadata-input-background-hover: transparent;
   --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #ffebd1;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.075);
+  --metadata-label-background-active: #ffffff13;
   --metadata-label-background-hover: transparent;
   --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
@@ -1245,7 +1245,7 @@ body.theme-dark {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.075);
+  --metadata-property-background-active: #ffffff13;
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px #807874;
   --metadata-property-box-shadow-hover: 0 0 0 1px #ffebd1;
@@ -1267,19 +1267,19 @@ body.theme-dark {
   --modal-width: 90vw;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-collapse-icon-color: hsl(4, 89%, 64%);
-  --nav-collapse-icon-color-collapsed: hsl(4, 89%, 64%);
+  --nav-collapse-icon-color: #f55c51;
+  --nav-collapse-icon-color-collapsed: #f55c51;
   --nav-heading-color: #ffebd1;
-  --nav-heading-color-collapsed: hsl(4, 89%, 64%);
+  --nav-heading-color-collapsed: #f55c51;
   --nav-heading-color-collapsed-hover: #807874;
   --nav-heading-color-hover: #ffebd1;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
+  --nav-indentation-guide-color: #ffffff1f;
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgba(255, 255, 255, 0.075);
-  --nav-item-background-hover: rgba(255, 255, 255, 0.075);
-  --nav-item-background-selected: hsla(4, 89%, 64%, 0.15);
+  --nav-item-background-active: #ffffff13;
+  --nav-item-background-hover: #ffffff13;
+  --nav-item-background-selected: #f55c5126;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #807874;
@@ -1299,7 +1299,7 @@ body.theme-dark {
   --pdf-page-background: #121110;
   --pdf-shadow: 0 0 0 1px #232120;
   --pdf-sidebar-background: #121110;
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --pdf-spread-shadow: 0 0 0 1px #0000000d;
   --pdf-thumbnail-shadow: 0 0 0 1px #232120;
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
@@ -1309,8 +1309,8 @@ body.theme-dark {
   --pill-border-width: 1px;
   --pill-color: #807874;
   --pill-color-hover: #ffebd1;
-  --pill-color-remove: hsl(4, 89%, 64%);
-  --pill-color-remove-hover: hsl(4, 89%, 64%);
+  --pill-color-remove: #f55c51;
+  --pill-color-remove-hover: #f55c51;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1342,21 +1342,21 @@ body.theme-dark {
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px;
   --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-active-thumb-bg: #ffffff33;
   --scrollbar-bg: #232120;
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
   --scrollbar-radius: 12px;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-bg: #ffffff1a;
   --scrollbar-width: 12px;
   --search-clear-button-color: #807874;
   --search-clear-button-size: 13px;
   --search-icon-color: #807874;
   --search-icon-size: 18px;
   --search-result-background: #121110;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --shadow-l: 0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d, 0px 30px 90px #00000033;
+  --shadow-s: 0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -1393,7 +1393,7 @@ body.theme-dark {
   --status-bar-text-color: #807874;
   --swatch-height: 24px;
   --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --swatch-shadow: inset 0 0 0 1px #ffffff26;
   --swatch-width: 24px;
   --sync-avatar-color-1: #f85c51;
   --sync-avatar-color-2: #e9973f;
@@ -1418,21 +1418,21 @@ body.theme-dark {
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-shadow: -8px 0 8px 0 #0000000d;
   --tab-stacked-text-align: left;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
   --tab-switcher-background: #181716;
-  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033;
   --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(4, 89%, 64%);
+  --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #f55c51;
   --tab-text-color: #807874;
   --tab-text-color-active: #807874;
   --tab-text-color-focused: #807874;
   --tab-text-color-focused-active: #807874;
   --tab-text-color-focused-active-current: #ffebd1;
-  --tab-text-color-focused-highlighted: hsl(4, 89%, 64%);
+  --tab-text-color-focused-highlighted: #f55c51;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: #232120;
@@ -1447,14 +1447,14 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(4, 89%, 64%);
-  --table-drag-handle-color: hsl(4, 89%, 64%);
+  --table-drag-handle-background-active: #f55c51;
+  --table-drag-handle-color: #f55c51;
   --table-drag-handle-color-active: #121110;
   --table-drop-indicator-half-width: 2px;
   --table-header-background: #181716;
   --table-header-border-color: #232120;
   --table-header-border-width: 1px;
-  --table-header-color: hsl(4, 89%, 64%);
+  --table-header-color: #f55c51;
   --table-header-size: 16px;
   --table-header-weight: 600;
   --table-line-height: 1.3;
@@ -1462,36 +1462,36 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(4, 89%, 64%, 0.1);
+  --table-selection: #f55c511a;
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(4, 89%, 64%);
+  --table-selection-border-color: #f55c51;
   --table-selection-border-radius: 8px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
   --tag-background: #782b1d52;
-  --tag-background-hover: hsla(4, 89%, 64%, 0.2);
-  --tag-border-color: hsla(4, 89%, 64%, 0.15);
-  --tag-border-color-hover: hsla(4, 89%, 64%, 0.15);
+  --tag-background-hover: #f55c5133;
+  --tag-border-color: #f55c5126;
+  --tag-border-color-hover: #f55c5126;
   --tag-border-width: 0px;
-  --tag-color: hsl(4, 89%, 64%);
-  --tag-color-hover: hsl(4, 89%, 64%);
+  --tag-color: #f55c51;
+  --tag-color-hover: #f55c51;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: hsl(4, 89%, 64%);
+  --text-accent: #f55c51;
   --text-accent-hover: #a83e37;
   --text-error: #f85c51;
-  --text-faint: hsl(4, 89%, 64%);
+  --text-faint: #f55c51;
   --text-highlight-bg: #69afff;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #807874;
   --text-normal: #ffebd1;
   --text-on-accent: #121110;
-  --text-on-accent-inverted: black;
+  --text-on-accent-inverted: #000000;
   --text-selection: #403938;
   --text-success: #23d18c;
   --text-warning: #e9973f;
@@ -1509,7 +1509,7 @@ body.theme-dark {
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 34px;
-  --toggle-thumb-color: white;
+  --toggle-thumb-color: #ffffff;
   --toggle-thumb-height: 18px;
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
@@ -1521,26 +1521,26 @@ body.theme-dark {
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.6);
+  --workspace-background-translucent: #00000099;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --zoom-factor: 1;
-  --h1-color: hsl(4, 89%, 64%);
-  --h2-color: hsl(4, 89%, 64%);
-  --h3-color: hsl(4, 89%, 64%);
-  --h4-color: hsl(4, 89%, 64%);
-  --h5-color: hsl(4, 89%, 64%);
-  --h6-color: hsl(4, 89%, 64%);
-  --inline-title-color: hsl(4, 89%, 64%);
+  --h1-color: #f55c51;
+  --h2-color: #f55c51;
+  --h3-color: #f55c51;
+  --h4-color: #f55c51;
+  --h5-color: #f55c51;
+  --h6-color: #f55c51;
+  --inline-title-color: #f55c51;
   --table-header-background-hover: #181716;
   --vault-name-color: #ffebd1;
   --bold-color: #f85c51;
   --italic-color: #0acecb;
-  --embed-border-left: 2px solid hsl(4, 89%, 64%);
+  --embed-border-left: 2px solid #f55c51;
   --embed-border-right: none;
   --nav-item-children-margin-left: 12px;
   --nav-item-children-padding-left: 4px;
-  --status-bar-scroll-padding: calc(12px + 18px);
+  --status-bar-scroll-padding: 30px;
   --vault-name-font-size: 13px;
   --vault-name-font-weight: 500;
   --background-code: #232120;
@@ -1561,19 +1561,19 @@ body.theme-dark {
   --canvas2: #232120;
   --canvas3: #181716;
   --canvas4: #403938;
-  --color-head: hsl(4, 89%, 64%);
+  --color-head: #f55c51;
 }
 
 body .markdown-rendered a.external-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1581,15 +1581,15 @@ body .markdown-rendered a.external-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1597,15 +1597,15 @@ body .markdown-rendered a.internal-link {
   user-select: none;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  background-color: #00000000;
+  color: light-dark(#8a5cf5, #a68af9);
   cursor: pointer;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-color: light-dark(#8a5cf5, #a68af9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1613,15 +1613,15 @@ body .markdown-rendered a.internal-link.is-unresolved {
   user-select: none;
 }
 body .markdown-rendered p {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1629,15 +1629,15 @@ body .markdown-rendered p {
   user-select: none;
 }
 body strong {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(248, 92, 81);
+  background-color: #00000000;
+  color: #f85c51;
   cursor: auto;
   filter: none;
   font-family: "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(248, 92, 81);
-  text-decoration-color: rgb(248, 92, 81);
+  text-decoration-color: #f85c51;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1645,15 +1645,15 @@ body strong {
   user-select: text;
 }
 body b {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1661,15 +1661,15 @@ body b {
   user-select: none;
 }
 body em {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(14, 205, 201), rgb(10, 206, 203));
+  background-color: #00000000;
+  color: light-dark(#0ecdc9, #0acecb);
   cursor: auto;
   filter: none;
   font-family: "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(10, 206, 203);
-  text-decoration-color: light-dark(rgb(14, 205, 201), rgb(10, 206, 203));
+  text-decoration-color: light-dark(#0ecdc9, #0acecb);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1677,15 +1677,15 @@ body em {
   user-select: text;
 }
 body i {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1693,15 +1693,15 @@ body i {
   user-select: none;
 }
 body .markdown-rendered mark {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+  background-color: #ffff00;
+  color: #000000;
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-color: #000000;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1709,15 +1709,15 @@ body .markdown-rendered mark {
   user-select: none;
 }
 body del {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(74, 56, 39), rgb(255, 235, 209));
+  background-color: #00000000;
+  color: light-dark(#4a3827, #ffebd1);
   cursor: auto;
   filter: none;
   font-family: "IBM Plex Sans", sans-serif, ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(255, 235, 209);
-  text-decoration-color: light-dark(rgb(74, 56, 39), rgb(255, 235, 209));
+  text-decoration-color: light-dark(#4a3827, #ffebd1);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1725,7 +1725,7 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1734,11 +1734,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body div.suggestion-item {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1747,11 +1747,11 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border: 0px light-dark(#e0e0e0, #363636);
+  border-top: 2px solid light-dark(#e0e0e0, #363636);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1769,12 +1769,12 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: rgba(120, 43, 29, 0.32);
+  background-color: #782b1d52;
   display: flex;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px solid rgba(245, 92, 81, 0.15);
+  border: 0px solid #f55c5126;
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -1785,15 +1785,15 @@ body div.multi-select-pill {
   border-end-end-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-align: left;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1802,22 +1802,22 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   content: normal;
   pointer-events: auto;
   transform: none;
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-align: left;
 }
 body .markdown-rendered ol > li::marker {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1826,13 +1826,13 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: monospace;
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1847,8 +1847,8 @@ body .markdown-rendered pre > code {
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*=language-], body pre[class*=language-] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1864,7 +1864,7 @@ body :not(pre) > code[class*=language-], body pre[class*=language-] {
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border: 2px inset light-dark(#767676, #858585);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1896,19 +1896,19 @@ body ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked {
   position: static;
   width: auto;
   display: list-item;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
   -webkit-mask-repeat: inherit;
   -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task=x] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
 }
 body .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border-inline-start: inherit;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: normal;
@@ -1919,12 +1919,12 @@ body .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(#8a5cf5, #a68af9);
   text-decoration: underline solid rgb(166, 138, 249);
 }
 body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: light-dark(#ffffff, #121212);
+  border: 2px inset light-dark(#767676, #858585);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1933,12 +1933,12 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(#000000, #ffffff);
   font-family: Arial;
 }
 body .search-results {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1950,15 +1950,15 @@ body .search-results {
   box-shadow: none;
 }
 body .search-results > * {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   filter: none;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration-color: light-dark(#222222, #dadada);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1966,7 +1966,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1977,10 +1977,10 @@ body div.search-results {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1991,40 +1991,40 @@ body div.search-results .suggestion-item {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-shadow: none;
 }
@@ -2037,8 +2037,8 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2051,7 +2051,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout=note] {
   --callout-color: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2062,11 +2062,11 @@ body .callout[data-callout=note] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 0px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
 }
 body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2078,22 +2078,22 @@ body .callout[data-callout=note] > .callout-title {
   padding: 0px;
 }
 body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   font-weight: 400;
 }
 body .callout > .callout-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   padding: 0px;
 }
 body .callout[data-callout=abstract] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2104,14 +2104,14 @@ body .callout[data-callout=abstract] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=abstract] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=info] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2122,14 +2122,14 @@ body .callout[data-callout=info] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=info] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=todo] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2140,14 +2140,14 @@ body .callout[data-callout=todo] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=todo] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=tip] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2158,14 +2158,14 @@ body .callout[data-callout=tip] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=tip] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=success] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2176,14 +2176,14 @@ body .callout[data-callout=success] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=success] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=question] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2194,14 +2194,14 @@ body .callout[data-callout=question] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=question] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=warning] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2212,14 +2212,14 @@ body .callout[data-callout=warning] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=warning] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=danger] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2230,14 +2230,14 @@ body .callout[data-callout=danger] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=danger] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=failure] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2248,14 +2248,14 @@ body .callout[data-callout=failure] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=failure] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=bug] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2266,14 +2266,14 @@ body .callout[data-callout=bug] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=bug] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=example] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2284,14 +2284,14 @@ body .callout[data-callout=example] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=example] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .callout[data-callout=quote] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(#222222, #dadada);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2302,7 +2302,7 @@ body .callout[data-callout=quote] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout=quote] > .callout-title > .callout-icon > svg.svg-icon {
-  fill: rgb(0, 0, 0);
+  fill: #000000;
   stroke: none;
 }
 body .math-block > mjx-container.MathJax {
@@ -2319,26 +2319,26 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: #00000000;
+  color: light-dark(#222222, #dadada);
   cursor: auto;
 }
 body .nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(218, 218, 218);
 }
 body .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(#222222, #dadada);
   cursor: auto;
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;

@@ -1842,7 +1842,18 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1854,8 +1865,18 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: solid;
+  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 2px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1865,7 +1886,10 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin: 32px 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -1878,7 +1902,18 @@ body div.multi-select-pill {
   font-family: ui-sans-serif, -apple-system, "system-ui", system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   margin-inline-start: 0px;
-  border: 0px solid light-dark(rgb(204, 204, 204), rgb(102, 102, 102));
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-left-color: light-dark(rgb(204, 204, 204), rgb(102, 102, 102));
+  border-right-color: light-dark(rgb(204, 204, 204), rgb(102, 102, 102));
+  border-top-color: light-dark(rgb(204, 204, 204), rgb(102, 102, 102));
+  border-bottom-color: light-dark(rgb(204, 204, 204), rgb(102, 102, 102));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -1897,7 +1932,18 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1921,7 +1967,18 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1932,11 +1989,25 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1946,13 +2017,27 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*=language-], body pre[class*=language-] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1962,13 +2047,27 @@ body :not(pre) > code[class*=language-], body pre[class*=language-] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1977,8 +2076,14 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 1px 2px;
-  margin: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -2028,7 +2133,18 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-top-style: inset;
+  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2042,7 +2158,18 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2070,7 +2197,18 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2084,7 +2222,18 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2142,7 +2291,18 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2155,7 +2315,18 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout=note] {
   --callout-color: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2165,12 +2336,26 @@ body .callout[data-callout=note] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout=note] > .callout-title {
   gap: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2179,7 +2364,10 @@ body .callout[data-callout=note] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 body .callout[data-callout=note] > .callout-title > .callout-icon > svg.svg-icon {
   fill: rgb(0, 0, 0);
@@ -2191,13 +2379,27 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 body .callout[data-callout=abstract] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2215,7 +2417,18 @@ body .callout[data-callout=info] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2233,7 +2446,18 @@ body .callout[data-callout=todo] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2251,7 +2475,18 @@ body .callout[data-callout=tip] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2269,7 +2504,18 @@ body .callout[data-callout=success] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2287,7 +2533,18 @@ body .callout[data-callout=question] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2305,7 +2562,18 @@ body .callout[data-callout=warning] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2323,7 +2591,18 @@ body .callout[data-callout=danger] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2341,7 +2620,18 @@ body .callout[data-callout=failure] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2359,7 +2649,18 @@ body .callout[data-callout=bug] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2377,7 +2678,18 @@ body .callout[data-callout=example] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2395,7 +2707,18 @@ body .callout[data-callout=quote] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

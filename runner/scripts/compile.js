@@ -213,7 +213,7 @@ function toHexColors(str) {
   return result;
 }
 
-// Helper to merge longhand properties into shorthand
+// Helper to merge longhand properties into shorthand and optimize CSS
 function mergeLonghandProperties(css, syntax = 'scss') {
   try {
     const postcssOptions = { from: undefined };
@@ -222,11 +222,15 @@ function mergeLonghandProperties(css, syntax = 'scss') {
       postcssOptions.syntax = postcssScss;
     }
     
-    const processor = postcss().use(postcssMergeLonghand());
+    const processor = postcss()
+      .use(postcssMergeLonghand())
+      .use(calc({ preserve: false })) // Resolve calc() where possible
+      .use(postcssColorConverter({ outputColorFormat: 'hex' })); // Convert colors to hex
+    
     const result = processor.process(css, postcssOptions).css;
     return result;
   } catch (e) {
-    console.warn("Warning: Could not merge longhand properties:", e.message);
+    console.warn("Warning: Could not optimize CSS properties:", e.message);
     return css;
   }
 }
