@@ -875,7 +875,7 @@ body.theme-light {
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --folder-icon:  !important;
+  --folder-icon:   !important;
   --kanban-lane-background: #f8fbff !important;
   --kanban-lane-border: 3px solid #e1e9f6 !important;
   --bg: #eef3ff !important;
@@ -947,7 +947,7 @@ body.theme-light {
   --file-header-left-color: #d5ddeb !important;
   --file-header-parent-font-weight: 600 !important;
   --file-header-right-color: #f8fbff !important;
-  --file-icon:  !important;
+  --file-icon:   !important;
   --file-icon-color: #d2daee !important;
   --file-icon-margin: 6px !important;
   --file-text-color: #30353a !important;
@@ -1055,7 +1055,7 @@ body.theme-light {
   --hr-icon-color: #30353a !important;
   --hr-icon-font: "its" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-icon-symbol:  !important;
+  --hr-icon-symbol:   !important;
   --hr-width: auto !important;
   --hvr: #99a4bb50 !important;
   --hvr-active: #99a4bb50 !important;
@@ -1093,7 +1093,7 @@ body.theme-light {
   --kanban-lane-box-shadow: 2px 2px 0 #e1e9f6 !important;
   --kanban-lane-padding: 0 4px !important;
   --kanban-link-color: #000000 !important;
-  --kanban-link-symbol:  !important;
+  --kanban-link-symbol:   !important;
   --kanban-tag-background: #f8fbff !important;
   --latex-color: #aab3ca !important;
   --latex-format-color: #d2daee !important;
