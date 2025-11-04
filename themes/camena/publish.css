@@ -827,7 +827,7 @@ body.theme-light {
   --h5-color: rgb(138, 92, 245) !important;
   --h6-color: rgb(138, 92, 245) !important;
   --inline-title-color: rgb(138, 92, 245) !important;
-  --blockquote-color:   !important;
+  --blockquote-color:    !important;
   --table-header-background-hover: rgb(138, 92, 245) !important;
   --accent-color: rgb(138, 92, 245) !important;
   --accent-rgb: from rgb(138, 92, 245) r g b !important;

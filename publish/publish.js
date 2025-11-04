@@ -673,13 +673,28 @@ function ensureModeMatchesTheme(theme) {
   const isDark = document
     .querySelector("div.site-body-left-column-site-theme-toggle")
     .classList.value.includes("is-dark");
+  const bodyElement = document.querySelector("body");
+  const toggleElement = document.querySelector(
+    "div.site-body-left-column-site-theme-toggle",
+  );
   const themeSupportsDark = themeListDark.includes(theme);
   const themeSupportsLight = themeListLight.includes(theme);
 
-  if (isDark && !themeSupportsDark) {
+  if (!isDark && themeSupportsDark) {
+    this.app.setTheme("dark");
+    bodyElement.classList.remove("theme-light");
+    bodyElement.classList.add("theme-dark");
+    toggleElement.classList.add("is-dark");
+  } else if (isDark && !themeSupportsDark) {
     this.app.setTheme("light");
+    bodyElement.classList.remove("theme-dark");
+    bodyElement.classList.add("theme-light");
+    toggleElement.classList.remove("is-dark");
   } else if (!isDark && !themeSupportsLight) {
     this.app.setTheme("dark");
+    bodyElement.classList.remove("theme-light");
+    bodyElement.classList.add("theme-dark");
+    toggleElement.classList.add("is-dark");
   }
 }
 
