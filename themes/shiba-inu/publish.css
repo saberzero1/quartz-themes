@@ -1003,7 +1003,7 @@ body.theme-light {
   --background-secondary-translucent-1: rgba(252, 252, 252, 0.1) !important;
   --bg-color-settings-0: #7d7d7d6b !important;
   --bg-color-settings-0-1: #ffffff77 !important;
-  --bg-color-settings-1: #rgba(252, 252, 252, 0.15) !important;
+  --bg-color-settings-1: rgba(252, 252, 252, 0.15) !important;
   --bg-color-settings-2: rgba(252, 252, 252, 0.3) !important;
   --bg-color-settings-3: rgba(252, 252, 252, 0.8) !important;
   --bg-color-settings-4: rgba(252, 252, 252, 0.7) !important;
@@ -1932,7 +1932,7 @@ body.theme-dark {
   --background-secondary-translucent-1: rgba(42, 45, 61, 0.1);
   --bg-color-settings-0: #07070747;
   --bg-color-settings-0-1: #ffffff00;
-  --bg-color-settings-1: #rgba(42, 45, 61, 0.15);
+  --bg-color-settings-1: rgba(42, 45, 61, 0.15);
   --bg-color-settings-2: rgba(42, 45, 61, 0.3);
   --bg-color-settings-3: rgba(42, 45, 61, 0.8);
   --bg-color-settings-4: rgba(42, 45, 61, 0.7);
