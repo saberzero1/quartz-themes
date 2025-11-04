@@ -168,36 +168,36 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: hsl(0, 0%, 81.2%) !important;
-  --background-modifier-border-focus: hsl(0, 0%, 72.7%) !important;
-  --background-modifier-border-hover: hsl(0, 0%, 77%) !important;
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-border: rgb(207, 207, 207) !important;
+  --background-modifier-border-focus: rgb(186, 186, 186) !important;
+  --background-modifier-border-hover: rgb(196, 196, 196) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: hsl(0, 0%, 92.4%) !important;
-  --background-modifier-form-field-hover: hsl(0, 0%, 92.4%) !important;
-  --background-modifier-hover: hsl(258, 88%, 63.4%, 25%) !important;
+  --background-modifier-form-field: rgb(235, 235, 235) !important;
+  --background-modifier-form-field-hover: rgb(235, 235, 235) !important;
+  --background-modifier-hover: rgb(127, 78, 244) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: hsl(0, 0%, 100%) !important;
-  --background-primary-alt: hsl(0, 0%, 95.5%) !important;
-  --background-secondary: hsl(0, 0%, 81.2%) !important;
-  --background-secondary-alt: hsl(0, 0%, 98.2%) !important;
-  --bases-cards-background: hsl(0, 0%, 100%) !important;
+  --background-primary: rgb(255, 255, 255) !important;
+  --background-primary-alt: rgb(245, 245, 245) !important;
+  --background-secondary: rgb(207, 207, 207) !important;
+  --background-secondary-alt: rgb(250, 250, 250) !important;
+  --bases-cards-background: rgb(255, 255, 255) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: hsl(0, 0%, 95.5%) !important;
+  --bases-cards-cover-background: rgb(245, 245, 245) !important;
   --bases-cards-group-padding: 12px !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 81.2%) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 77%) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(207, 207, 207) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(196, 196, 196) !important;
   --bases-cards-text-size: 0.875em !important;
-  --bases-embed-border-color: hsl(0, 0%, 81.2%) !important;
+  --bases-embed-border-color: rgb(207, 207, 207) !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -205,20 +205,19 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: hsl(0, 0%, 81.2%) !important;
-  --bases-table-cell-background-active: hsl(0, 0%, 100%) !important;
-  --bases-table-cell-background-disabled: hsl(0, 0%, 95.5%) !important;
+  --bases-table-border-color: rgb(207, 207, 207) !important;
+  --bases-table-cell-background-active: rgb(255, 255, 255) !important;
+  --bases-table-cell-background-disabled: rgb(245, 245, 245) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(153, 115, 247) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-header-background: hsl(0, 0%, 100%) !important;
-  --bases-table-header-background-hover: hsl(258, 88%, 63.4%, 25%) !important;
-  --bases-table-header-color: hsl(0, 0%, 43.4%) !important;
+  --bases-table-header-background: rgb(255, 255, 255) !important;
+  --bases-table-header-background-hover: rgb(127, 78, 244) !important;
+  --bases-table-header-color: rgb(110, 110, 110) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -233,15 +232,11 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --blockquote-border-color: rgb(153, 115, 247) !important;
   --blockquote-border-thickness: 0 !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
-  --bold-weight: calc(400 + 200) !important;
+  --bold-weight: 600 !important;
   --border-width: 1px !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken !important;
@@ -264,11 +259,11 @@ body.theme-light {
   --callout-summary: 0, 191, 188 !important;
   --callout-tip: 0, 191, 188 !important;
   --callout-title-padding: 0 !important;
-  --callout-title-weight: calc(400 + 200) !important;
+  --callout-title-weight: 600 !important;
   --callout-todo: 8, 109, 221 !important;
   --callout-warning: 236, 117, 0 !important;
-  --canvas-background: hsl(0, 0%, 100%) !important;
-  --canvas-card-label-color: hsl(0, 0%, 63.4%) !important;
+  --canvas-background: rgb(255, 255, 255) !important;
+  --canvas-card-label-color: rgb(161, 161, 161) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 233, 49, 71 !important;
   --canvas-color-2: 236, 117, 0 !important;
@@ -276,63 +271,55 @@ body.theme-light {
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
-  --canvas-dot-pattern: hsl(0, 0%, 81.2%) !important;
-  --caret-color: hsl(0, 0%, 10%) !important;
-  --checkbox-border-color: hsl(0, 0%, 63.4%) !important;
-  --checkbox-border-color-hover: hsl(0, 0%, 43.4%) !important;
-  --checkbox-color: hsl(258, calc(88% * 0.8), 43.4%) !important;
-  --checkbox-color-hover: hsl(258, 88%, 32.7%) !important;
+  --canvas-dot-pattern: rgb(207, 207, 207) !important;
+  --caret-color: rgb(26, 26, 26) !important;
+  --checkbox-border-color: rgb(161, 161, 161) !important;
+  --checkbox-border-color-hover: rgb(110, 110, 110) !important;
+  --checkbox-color: rgb(79, 33, 186) !important;
+  --checkbox-color-hover: rgb(55, 10, 158) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: hsl(0, 0%, 100%) !important;
+  --checkbox-marker-color: rgb(255, 255, 255) !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(0, 0%, 43.4%) !important;
+  --checklist-done-color: rgb(110, 110, 110) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: hsl(0, 0%, 95.5%) !important;
-  --code-border-color: hsl(0, 0%, 81.2%) !important;
+  --code-background: rgb(245, 245, 245) !important;
+  --code-border-color: rgb(207, 207, 207) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: hsl(258, 88%, 63.4%, 25%) !important;
-  --code-comment: hsl(0, 0%, 63.4%) !important;
+  --code-bracket-background: rgb(127, 78, 244) !important;
+  --code-comment: rgb(161, 161, 161) !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
-  --code-normal: hsl(0, 0%, 10%) !important;
+  --code-normal: rgb(26, 26, 26) !important;
   --code-operator: #e93147 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: hsl(0, 0%, 43.4%) !important;
+  --code-punctuation: rgb(110, 110, 110) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: hsl(0, 0%, 63.4%) !important;
-  --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
-  --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --color-accent-2: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --collapse-icon-color: rgb(161, 161, 161) !important;
+  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
+  --color-accent: rgb(138, 92, 245) !important;
+  --color-accent-1: rgb(153, 115, 247) !important;
+  --color-accent-2: rgb(166, 139, 249) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: hsl(0, 0%, 100%) !important;
-  --color-base-05: hsl(0, 0%, 98.2%) !important;
-  --color-base-10: hsl(0, 0%, 95.5%) !important;
-  --color-base-100: hsl(0, 0%, 10%) !important;
-  --color-base-20: hsl(0, 0%, 88.9%) !important;
-  --color-base-25: hsl(0, 0%, 85.2%) !important;
-  --color-base-30: hsl(0, 0%, 81.2%) !important;
-  --color-base-35: hsl(0, 0%, 77%) !important;
-  --color-base-40: hsl(0, 0%, 72.7%) !important;
-  --color-base-50: hsl(0, 0%, 63.4%) !important;
-  --color-base-60: hsl(0, 0%, 53.7%) !important;
-  --color-base-70: hsl(0, 0%, 43.4%) !important;
+  --color-base-00: rgb(255, 255, 255) !important;
+  --color-base-05: rgb(250, 250, 250) !important;
+  --color-base-10: rgb(245, 245, 245) !important;
+  --color-base-100: rgb(26, 26, 26) !important;
+  --color-base-20: rgb(227, 227, 227) !important;
+  --color-base-25: rgb(217, 217, 217) !important;
+  --color-base-30: rgb(207, 207, 207) !important;
+  --color-base-35: rgb(196, 196, 196) !important;
+  --color-base-40: rgb(186, 186, 186) !important;
+  --color-base-50: rgb(161, 161, 161) !important;
+  --color-base-60: rgb(138, 138, 138) !important;
+  --color-base-70: rgb(110, 110, 110) !important;
   --color-blue: #086ddd !important;
   --color-blue-rgb: 8, 109, 221 !important;
   --color-cyan: #00bfbc !important;
@@ -355,29 +342,24 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: hsl(0, 0%, 81.2%) !important;
-  --divider-color-hover: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --divider-color: rgb(207, 207, 207) !important;
+  --divider-color-hover: rgb(153, 115, 247) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: hsl(0, 0%, 100%) !important;
+  --dropdown-background: rgb(255, 255, 255) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: hsl(0, 0%, 95.5%) !important;
+  --dropdown-background-hover: rgb(245, 245, 245) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px hsl(0, 0%, 81.2%), inset 0 0 0 1px hsl(0, 0%, 81.2%) !important;
+    0 0 0 1px rgb(207, 207, 207), inset 0 0 0 1px rgb(207, 207, 207) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid
-    hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 80vh !important;
@@ -393,8 +375,8 @@ body.theme-light {
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: hsl(0, 0%, 100%) !important;
-  --flair-color: hsl(0, 0%, 10%) !important;
+  --flair-background: rgb(255, 255, 255) !important;
+  --flair-color: rgb(26, 26, 26) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -447,30 +429,30 @@ body.theme-light {
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: hsl(0, 0%, 81.2%) !important;
+  --footnote-divider-color: rgb(207, 207, 207) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: hsl(0, 0%, 43.4%) !important;
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 63.4%) !important;
+  --footnote-id-color: rgb(110, 110, 110) !important;
+  --footnote-id-color-no-occurrences: rgb(161, 161, 161) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: hsl(258, 88%, 63.4%, 25%) !important;
+  --footnote-input-background-active: rgb(127, 78, 244) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 44px) !important;
+  --frame-left-space: 36px !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(0, 0%, 77%) !important;
-  --graph-node: hsl(0, 0%, 43.4%) !important;
+  --graph-line: rgb(196, 196, 196) !important;
+  --graph-node: rgb(110, 110, 110) !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: hsl(258, 88%, 66%) !important;
+  --graph-node-focused: rgb(138, 92, 245) !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: hsl(0, 0%, 63.4%) !important;
-  --graph-text: hsl(0, 0%, 10%) !important;
+  --graph-node-unresolved: rgb(161, 161, 161) !important;
+  --graph-text: rgb(26, 26, 26) !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.802em !important;
   --h1-style: normal !important;
@@ -502,15 +484,15 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: hsl(0, 0%, 63.4%) !important;
-  --heading-spacing: calc(1rem * 2.5) !important;
+  --heading-formatting: rgb(161, 161, 161) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: hsl(0, 0%, 81.2%) !important;
+  --hr-color: rgb(207, 207, 207) !important;
   --hr-thickness: 2px !important;
-  --icon-color: hsl(0, 0%, 43.4%) !important;
-  --icon-color-active: hsl(258, 88%, 66%) !important;
-  --icon-color-focused: hsl(0, 0%, 10%) !important;
-  --icon-color-hover: hsl(258, 88%, 21.5%) !important;
+  --icon-color: rgb(110, 110, 110) !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-focused: rgb(26, 26, 26) !important;
+  --icon-color-hover: rgb(36, 7, 105) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -543,11 +525,11 @@ body.theme-light {
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: hsl(0, 0%, 63.4%) !important;
+  --input-date-separator: rgb(161, 161, 161) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: hsl(0, 0%, 63.4%) !important;
+  --input-placeholder-color: rgb(161, 161, 161) !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -557,19 +539,11 @@ body.theme-light {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --interactive-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --interactive-accent: rgb(153, 115, 247) !important;
+  --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: hsl(0, 0%, 95.5%) !important;
-  --interactive-normal: hsl(0, 0%, 100%) !important;
+  --interactive-hover: rgb(245, 245, 245) !important;
+  --interactive-normal: rgb(255, 255, 255) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -583,26 +557,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: hsl(258, 88%, 66%) !important;
-  --link-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --link-color: rgb(138, 92, 245) !important;
+  --link-color-hover: rgb(166, 139, 249) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: hsl(258, 88%, 66%) !important;
-  --link-external-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --link-external-color: rgb(138, 92, 245) !important;
+  --link-external-color-hover: rgb(166, 139, 249) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --link-unresolved-color: rgb(138, 92, 245) !important;
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -612,18 +578,18 @@ body.theme-light {
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: calc(0.5625em * 4) !important;
+  --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: hsl(0, 0%, 63.4%) !important;
-  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
-  --list-marker-color-hover: hsl(0, 0%, 43.4%) !important;
+  --list-marker-color: rgb(161, 161, 161) !important;
+  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
+  --list-marker-color-hover: rgb(110, 110, 110) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: hsl(0, 0%, 81.2%) !important;
-  --menu-border-color: hsl(0, 0%, 77%) !important;
+  --menu-background: rgb(207, 207, 207) !important;
+  --menu-border-color: rgb(196, 196, 196) !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
@@ -631,53 +597,53 @@ body.theme-light {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: hsl(0, 0%, 81.2%) !important;
+  --metadata-border-color: rgb(207, 207, 207) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(0, 0%, 81.2%) !important;
+  --metadata-divider-color: rgb(207, 207, 207) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: hsl(258, 88%, 63.4%, 25%) !important;
+  --metadata-input-background-active: rgb(127, 78, 244) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: hsl(0, 0%, 10%) !important;
+  --metadata-input-text-color: rgb(26, 26, 26) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: hsl(258, 88%, 63.4%, 25%) !important;
+  --metadata-label-background-active: rgb(127, 78, 244) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: hsl(0, 0%, 43.4%) !important;
-  --metadata-label-text-color-hover: hsl(0, 0%, 43.4%) !important;
+  --metadata-label-text-color: rgb(110, 110, 110) !important;
+  --metadata-label-text-color-hover: rgb(110, 110, 110) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: hsl(258, 88%, 63.4%, 25%) !important;
+  --metadata-property-background-active: rgb(127, 78, 244) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 72.7%) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 77%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(186, 186, 186) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(196, 196, 196) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: hsl(0, 0%, 100%) !important;
-  --modal-border-color: hsl(0, 0%, 72.7%) !important;
+  --modal-background: rgb(255, 255, 255) !important;
+  --modal-border-color: rgb(186, 186, 186) !important;
   --modal-border-width: 0 !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -688,30 +654,26 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: hsl(0, 0%, 63.4%) !important;
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 63.4%) !important;
-  --nav-heading-color: hsl(0, 0%, 10%) !important;
-  --nav-heading-color-collapsed: hsl(0, 0%, 63.4%) !important;
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 43.4%) !important;
-  --nav-heading-color-hover: hsl(0, 0%, 10%) !important;
+  --nav-collapse-icon-color: rgb(161, 161, 161) !important;
+  --nav-collapse-icon-color-collapsed: rgb(161, 161, 161) !important;
+  --nav-heading-color: rgb(26, 26, 26) !important;
+  --nav-heading-color-collapsed: rgb(161, 161, 161) !important;
+  --nav-heading-color-collapsed-hover: rgb(110, 110, 110) !important;
+  --nav-heading-color-hover: rgb(26, 26, 26) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --nav-item-background-hover: hsla(258, 88%, 72.7%, 33%) !important;
-  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
+  --nav-item-background-active: rgb(153, 115, 247) !important;
+  --nav-item-background-hover: rgba(162, 126, 247, 0.33) !important;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: hsl(0, 0%, 43.4%) !important;
+  --nav-item-color: rgb(110, 110, 110) !important;
   --nav-item-color-active: white !important;
-  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
-  --nav-item-color-hover: hsl(258, 88%, 21.5%) !important;
-  --nav-item-color-selected: hsl(0, 0%, 10%) !important;
+  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
+  --nav-item-color-hover: rgb(36, 7, 105) !important;
+  --nav-item-color-selected: rgb(26, 26, 26) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
@@ -720,24 +682,24 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: hsl(0, 0%, 100%) !important;
-  --pdf-page-background: hsl(0, 0%, 100%) !important;
+  --pdf-background: rgb(255, 255, 255) !important;
+  --pdf-page-background: rgb(255, 255, 255) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: hsl(0, 0%, 100%) !important;
+  --pdf-sidebar-background: rgb(255, 255, 255) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(0, 0%, 81.2%) !important;
-  --pill-border-color-hover: hsl(0, 0%, 77%) !important;
+  --pill-border-color: rgb(207, 207, 207) !important;
+  --pill-border-color-hover: rgb(196, 196, 196) !important;
   --pill-border-width: 1px !important;
-  --pill-color: hsl(0, 0%, 43.4%) !important;
-  --pill-color-hover: hsl(0, 0%, 10%) !important;
-  --pill-color-remove: hsl(0, 0%, 63.4%) !important;
-  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
+  --pill-color: rgb(110, 110, 110) !important;
+  --pill-color-hover: rgb(26, 26, 26) !important;
+  --pill-color-remove: rgb(161, 161, 161) !important;
+  --pill-color-remove-hover: rgb(138, 92, 245) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -751,7 +713,7 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: hsl(0, 0%, 72.7%) !important;
+  --prompt-border-color: rgb(186, 186, 186) !important;
   --prompt-border-width: 0 !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -761,8 +723,8 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: hsl(0, 0%, 81.2%) !important;
-  --ribbon-background-collapsed: hsl(0, 0%, 100%) !important;
+  --ribbon-background: rgb(207, 207, 207) !important;
+  --ribbon-background-collapsed: rgb(255, 255, 255) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -776,18 +738,18 @@ body.theme-light {
   --scrollbar-radius: 12px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: hsl(0, 0%, 43.4%) !important;
+  --search-clear-button-color: rgb(110, 110, 110) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: hsl(0, 0%, 43.4%) !important;
+  --search-icon-color: rgb(110, 110, 110) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: hsl(0, 0%, 100%) !important;
+  --search-result-background: rgb(255, 255, 255) !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --sidebar-markdown-font-size: calc(16px * 0.9) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -806,22 +768,22 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: hsl(0, 0%, 77%) !important;
+  --slider-thumb-border-color: rgb(196, 196, 196) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(0, 0%, 81.2%) !important;
+  --slider-track-background: rgb(207, 207, 207) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(0, 0%, 81.2%) !important;
-  --status-bar-border-color: hsl(0, 0%, 81.2%) !important;
+  --status-bar-background: rgb(207, 207, 207) !important;
+  --status-bar-border-color: rgb(207, 207, 207) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: hsl(0, 0%, 43.4%) !important;
+  --status-bar-text-color: rgb(110, 110, 110) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -835,13 +797,13 @@ body.theme-light {
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(0, 0%, 100%) !important;
-  --tab-container-background: hsl(0, 0%, 88.9%) !important;
+  --tab-background-active: rgb(255, 255, 255) !important;
+  --tab-container-background: rgb(227, 227, 227) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: hsl(0, 0%, 77%) !important;
+  --tab-divider-color: rgb(196, 196, 196) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: hsl(0, 0%, 81.2%) !important;
+  --tab-outline-color: rgb(207, 207, 207) !important;
   --tab-outline-width: 0 !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -853,23 +815,23 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(0, 0%, 81.2%) !important;
+  --tab-switcher-background: rgb(207, 207, 207) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
-  --tab-text-color: hsl(0, 0%, 63.4%) !important;
-  --tab-text-color-active: hsl(0, 0%, 43.4%) !important;
-  --tab-text-color-focused: hsl(0, 0%, 43.4%) !important;
-  --tab-text-color-focused-active: hsl(0, 0%, 43.4%) !important;
-  --tab-text-color-focused-active-current: hsl(0, 0%, 10%) !important;
-  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-text-color: rgb(161, 161, 161) !important;
+  --tab-text-color-active: rgb(110, 110, 110) !important;
+  --tab-text-color-focused: rgb(110, 110, 110) !important;
+  --tab-text-color-focused-active: rgb(110, 110, 110) !important;
+  --tab-text-color-focused-active-current: rgb(26, 26, 26) !important;
+  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(0, 0%, 81.2%) !important;
+  --table-add-button-border-color: rgb(207, 207, 207) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: hsl(0, 0%, 81.2%) !important;
+  --table-border-color: rgb(207, 207, 207) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -878,73 +840,61 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
-  --table-drag-handle-color: hsl(0, 0%, 63.4%) !important;
+  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --table-drag-handle-color: rgb(161, 161, 161) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: hsl(0, 0%, 81.2%) !important;
+  --table-header-border-color: rgb(207, 207, 207) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: hsl(0, 0%, 10%) !important;
+  --table-header-color: rgb(26, 26, 26) !important;
   --table-header-size: 16px !important;
-  --table-header-weight: calc(400 + 200) !important;
+  --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
   --table-row-alt-background: transparent !important;
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(
-    calc(258 - 1),
-    calc(88% * 1.01),
-    calc(66% * 1.075)
-  ) !important;
+  --table-selection-border-color: rgb(153, 115, 247) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
-  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-background: rgba(138, 92, 245, 0.1) !important;
+  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
+  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(258, 88%, 66%) !important;
-  --tag-color-hover: hsl(258, 88%, 66%) !important;
+  --tag-color: rgb(138, 92, 245) !important;
+  --tag-color-hover: rgb(138, 92, 245) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: hsl(258, 88%, 66%) !important;
-  --text-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  ) !important;
+  --text-accent: rgb(138, 92, 245) !important;
+  --text-accent-hover: rgb(166, 139, 249) !important;
   --text-error: #e93147 !important;
-  --text-faint: hsl(0, 0%, 63.4%) !important;
-  --text-highlight-bg: hsla(calc(258 + 180), 88%, 66%, 50%) !important;
+  --text-faint: rgb(161, 161, 161) !important;
+  --text-highlight-bg: hsla(438, 88%, 66%, 50%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: hsl(0, 0%, 43.4%) !important;
-  --text-normal: hsl(0, 0%, 10%) !important;
+  --text-muted: rgb(110, 110, 110) !important;
+  --text-normal: rgb(26, 26, 26) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
+  --text-selection: rgba(138, 92, 245, 0.2) !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
-  --titlebar-background: hsl(0, 0%, 88.9%) !important;
+  --titlebar-background: rgb(227, 227, 227) !important;
   --titlebar-background-focused: #e0e0e080 !important;
-  --titlebar-border-color: hsl(0, 0%, 81.2%) !important;
+  --titlebar-border-color: rgb(207, 207, 207) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: hsl(0, 0%, 43.4%) !important;
-  --titlebar-text-color-focused: hsl(0, 0%, 10%) !important;
+  --titlebar-text-color: rgb(110, 110, 110) !important;
+  --titlebar-text-color-focused: rgb(26, 26, 26) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -958,33 +908,32 @@ body.theme-light {
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: hsl(0, 0%, 10%) !important;
-  --vault-profile-color-hover: hsl(0, 0%, 10%) !important;
+  --vault-profile-color: rgb(26, 26, 26) !important;
+  --vault-profile-color-hover: rgb(26, 26, 26) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --bold-color: hsl(calc(258 + 180), 88%, 32.7%) !important;
-  --italic-color: hsl(258, 88%, 32.7%) !important;
-  --color-base-80: hsl(0, 0%, 32.7%) !important;
-  --color-base-90: hsl(0, 0%, 21.5%) !important;
-  --embed-border-left: 1px solid
-    hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important;
+  --bold-color: hsl(438, 88%, 33%) !important;
+  --italic-color: rgb(55, 10, 158) !important;
+  --color-base-80: rgb(84, 84, 84) !important;
+  --color-base-90: rgb(56, 56, 56) !important;
+  --embed-border-left: 1px solid rgb(153, 115, 247) !important;
   --embed-border-right: dashed white 1px !important;
   --accent-l-alt: min(66%, 40%) !important;
-  --color-base-15: hsl(0, 0%, 92.4%) !important;
-  --accent-i-h: calc(258 + 180) !important;
-  --accent-s-alt: min(calc(88% * 1.25), 75%) !important;
-  --background-blurred: hsl(0, 0%, 100%) !important;
-  --background-blurred-alt: hsl(0, 0%, 95.5%) !important;
-  --background-semitransp: hsla(0, 0%, 100%, 85%) !important;
-  --background-semitransp-alt: hsla(0, 0%, 95.5%, 85%) !important;
+  --color-base-15: rgb(235, 235, 235) !important;
+  --accent-i-h: 438 !important;
+  --accent-s-alt: min(110%, 75%) !important;
+  --background-blurred: rgb(255, 255, 255) !important;
+  --background-blurred-alt: rgb(245, 245, 245) !important;
+  --background-semitransp: rgba(255, 255, 255, 0.85) !important;
+  --background-semitransp-alt: rgba(245, 245, 245, 0.85) !important;
   --blur-size: 4 !important;
-  --bold-h: calc(258 + 180) !important;
+  --bold-h: 438 !important;
   --button-alt-h: 258 !important;
   --button-h: 258 !important;
   --callout-background-hsla: 258, 88%, 66%, 20% !important;
@@ -1011,7 +960,7 @@ body.theme-light {
   --italic-h: 258 !important;
   --max-highlight: 65% !important;
   --min-highlight: 45% !important;
-  --text-highlight-h: calc(258 + 180) !important;
+  --text-highlight-h: 438 !important;
 }
 
 body.theme-dark {
@@ -1027,36 +976,36 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
-  --background-modifier-border: hsl(0, 0%, 26.7%);
-  --background-modifier-border-focus: hsl(0, 0%, 34.9%);
-  --background-modifier-border-hover: hsl(0, 0%, 30.7%);
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1);
+  --background-modifier-border: rgb(69, 69, 69);
+  --background-modifier-border-focus: rgb(89, 89, 89);
+  --background-modifier-border-hover: rgb(79, 79, 79);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: hsl(0, 0%, 16.3%);
-  --background-modifier-form-field-hover: hsl(0, 0%, 16.3%);
-  --background-modifier-hover: hsl(258, 88%, 44.1%, 25%);
+  --background-modifier-form-field: rgb(41, 41, 41);
+  --background-modifier-form-field-hover: rgb(41, 41, 41);
+  --background-modifier-hover: rgb(73, 13, 211);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: hsl(0, 0%, 10%);
-  --background-primary-alt: hsl(0, 0%, 13.6%);
-  --background-secondary: hsl(0, 0%, 26.7%);
-  --background-secondary-alt: hsl(0, 0%, 26.7%);
-  --bases-cards-background: hsl(0, 0%, 10%);
+  --background-primary: rgb(26, 26, 26);
+  --background-primary-alt: rgb(36, 36, 36);
+  --background-secondary: rgb(69, 69, 69);
+  --background-secondary-alt: rgb(69, 69, 69);
+  --bases-cards-background: rgb(26, 26, 26);
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: hsl(0, 0%, 13.6%);
+  --bases-cards-cover-background: rgb(36, 36, 36);
   --bases-cards-group-padding: 12px;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
-  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
-  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 30.7%);
+  --bases-cards-shadow: 0 0 0 1px rgb(69, 69, 69);
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(79, 79, 79);
   --bases-cards-text-size: 0.875em;
-  --bases-embed-border-color: hsl(0, 0%, 26.7%);
+  --bases-embed-border-color: rgb(69, 69, 69);
   --bases-embed-border-radius: 4px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
@@ -1064,19 +1013,19 @@ body.theme-dark {
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: hsl(0, 0%, 26.7%);
-  --bases-table-cell-background-active: hsl(0, 0%, 10%);
-  --bases-table-cell-background-disabled: hsl(0, 0%, 13.6%);
+  --bases-table-border-color: rgb(69, 69, 69);
+  --bases-table-cell-background-active: rgb(26, 26, 26);
+  --bases-table-cell-background-disabled: rgb(36, 36, 36);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-header-background: hsl(0, 0%, 10%);
-  --bases-table-header-background-hover: hsl(258, 88%, 44.1%, 25%);
-  --bases-table-header-color: hsl(0, 0%, 64.6%);
+  --bases-table-header-background: rgb(26, 26, 26);
+  --bases-table-header-background-hover: rgb(73, 13, 211);
+  --bases-table-header-color: rgb(166, 166, 166);
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1091,11 +1040,11 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: hsl(258, 88%, 66%);
+  --blockquote-border-color: rgb(138, 92, 245);
   --blockquote-border-thickness: 0;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
-  --bold-weight: calc(400 + 200);
+  --bold-weight: 600;
   --border-width: 1px;
   --button-radius: 5px;
   --callout-blend-mode: lighten;
@@ -1118,11 +1067,11 @@ body.theme-dark {
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: hsl(0, 0%, 10%);
-  --canvas-card-label-color: hsl(0, 0%, 44.1%);
+  --canvas-background: rgb(26, 26, 26);
+  --canvas-card-label-color: rgb(112, 112, 112);
   --canvas-color: 126, 126, 126;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -1130,59 +1079,55 @@ body.theme-dark {
   --canvas-color-4: 68, 207, 110;
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
-  --canvas-dot-pattern: hsl(0, 0%, 26.7%);
-  --caret-color: hsl(0, 0%, 100%);
-  --checkbox-border-color: hsl(0, 0%, 44.1%);
-  --checkbox-border-color-hover: hsl(0, 0%, 64.6%);
-  --checkbox-color: hsl(258, calc(88% * 0.8), 64.6%);
-  --checkbox-color-hover: hsl(258, 88%, 75.9%);
+  --canvas-dot-pattern: rgb(69, 69, 69);
+  --caret-color: rgb(255, 255, 255);
+  --checkbox-border-color: rgb(112, 112, 112);
+  --checkbox-border-color-hover: rgb(166, 166, 166);
+  --checkbox-color: rgb(141, 103, 228);
+  --checkbox-color-hover: rgb(172, 140, 248);
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: hsl(0, 0%, 10%);
+  --checkbox-marker-color: rgb(26, 26, 26);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: hsl(0, 0%, 64.6%);
+  --checklist-done-color: rgb(166, 166, 166);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: hsl(0, 0%, 13.6%);
-  --code-border-color: hsl(0, 0%, 26.7%);
+  --code-background: rgb(36, 36, 36);
+  --code-border-color: rgb(69, 69, 69);
   --code-border-width: 0px;
-  --code-bracket-background: hsl(258, 88%, 44.1%, 25%);
-  --code-comment: hsl(0, 0%, 44.1%);
+  --code-bracket-background: rgb(73, 13, 211);
+  --code-comment: rgb(112, 112, 112);
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: hsl(0, 0%, 100%);
+  --code-normal: rgb(255, 255, 255);
   --code-operator: #fb464c;
   --code-property: #53dfdd;
-  --code-punctuation: hsl(0, 0%, 64.6%);
+  --code-punctuation: rgb(166, 166, 166);
   --code-radius: 4px;
   --code-size: 0.875em;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: hsl(0, 0%, 44.1%);
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
-  --color-accent: hsl(258, 88%, 66%);
-  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --collapse-icon-color: rgb(112, 112, 112);
+  --collapse-icon-color-collapsed: rgb(166, 139, 249);
+  --color-accent: rgb(138, 92, 245);
+  --color-accent-1: rgb(166, 139, 249);
+  --color-accent-2: rgb(197, 182, 252);
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: hsl(0, 0%, 10%);
-  --color-base-05: hsl(0, 0%, 11.4%);
-  --color-base-10: hsl(0, 0%, 13.6%);
-  --color-base-100: hsl(0, 0%, 100%);
-  --color-base-20: hsl(0, 0%, 19.5%);
-  --color-base-25: hsl(0, 0%, 22.9%);
-  --color-base-30: hsl(0, 0%, 26.7%);
-  --color-base-35: hsl(0, 0%, 30.7%);
-  --color-base-40: hsl(0, 0%, 34.9%);
-  --color-base-50: hsl(0, 0%, 44.1%);
-  --color-base-60: hsl(0, 0%, 54%);
-  --color-base-70: hsl(0, 0%, 64.6%);
+  --color-base-00: rgb(26, 26, 26);
+  --color-base-05: rgb(28, 28, 28);
+  --color-base-10: rgb(36, 36, 36);
+  --color-base-100: rgb(255, 255, 255);
+  --color-base-20: rgb(51, 51, 51);
+  --color-base-25: rgb(59, 59, 59);
+  --color-base-30: rgb(69, 69, 69);
+  --color-base-35: rgb(79, 79, 79);
+  --color-base-40: rgb(89, 89, 89);
+  --color-base-50: rgb(112, 112, 112);
+  --color-base-60: rgb(138, 138, 138);
+  --color-base-70: rgb(166, 166, 166);
   --color-blue: #027aff;
   --color-blue-rgb: 2, 122, 255;
   --color-cyan: #53dfdd;
@@ -1205,24 +1150,24 @@ body.theme-dark {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: hsl(0, 0%, 26.7%);
-  --divider-color-hover: hsl(258, 88%, 66%);
+  --divider-color: rgb(69, 69, 69);
+  --divider-color-hover: rgb(138, 92, 245);
   --divider-vertical-height: 100%;
   --divider-width: 1px;
   --divider-width-hover: 3px;
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
-  --dropdown-background: hsl(0, 0%, 26.7%);
+  --dropdown-background: rgb(69, 69, 69);
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: hsl(0, 0%, 30.7%);
+  --dropdown-background-hover: rgb(79, 79, 79);
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-block-shadow-hover:
-    0 0 0 1px hsl(0, 0%, 26.7%), inset 0 0 0 1px hsl(0, 0%, 26.7%);
+    0 0 0 1px rgb(69, 69, 69), inset 0 0 0 1px rgb(69, 69, 69);
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid hsl(258, 88%, 66%);
+  --embed-border-start: 2px solid rgb(138, 92, 245);
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-max-height: 80vh;
@@ -1238,8 +1183,8 @@ body.theme-dark {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: hsl(0, 0%, 26.7%);
-  --flair-color: hsl(0, 0%, 100%);
+  --flair-background: rgb(69, 69, 69);
+  --flair-color: rgb(255, 255, 255);
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
   --font-black: 900;
@@ -1292,30 +1237,30 @@ body.theme-dark {
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
   --font-weight: 400;
-  --footnote-divider-color: hsl(0, 0%, 26.7%);
+  --footnote-divider-color: rgb(69, 69, 69);
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: hsl(0, 0%, 64.6%);
-  --footnote-id-color-no-occurrences: hsl(0, 0%, 44.1%);
+  --footnote-id-color: rgb(166, 166, 166);
+  --footnote-id-color-no-occurrences: rgb(112, 112, 112);
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: hsl(258, 88%, 44.1%, 25%);
+  --footnote-input-background-active: rgb(73, 13, 211);
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
-  --graph-line: hsl(0, 0%, 30.7%);
-  --graph-node: hsl(0, 0%, 64.6%);
+  --graph-line: rgb(79, 79, 79);
+  --graph-node: rgb(166, 166, 166);
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --graph-node-focused: rgb(166, 139, 249);
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: hsl(0, 0%, 44.1%);
-  --graph-text: hsl(0, 0%, 100%);
+  --graph-node-unresolved: rgb(112, 112, 112);
+  --graph-text: rgb(255, 255, 255);
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
@@ -1347,15 +1292,15 @@ body.theme-dark {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: hsl(0, 0%, 44.1%);
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-formatting: rgb(112, 112, 112);
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
-  --hr-color: hsl(0, 0%, 26.7%);
+  --hr-color: rgb(69, 69, 69);
   --hr-thickness: 2px;
-  --icon-color: hsl(0, 0%, 64.6%);
-  --icon-color-active: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --icon-color-focused: hsl(0, 0%, 100%);
-  --icon-color-hover: hsl(258, 88%, 87.7%);
+  --icon-color: rgb(166, 166, 166);
+  --icon-color-active: rgb(166, 139, 249);
+  --icon-color-focused: rgb(255, 255, 255);
+  --icon-color-hover: rgb(214, 197, 251);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -1388,11 +1333,11 @@ body.theme-dark {
   --inline-title-weight: 700;
   --input-border-width: 1px;
   --input-border-width-focus: 2px;
-  --input-date-separator: hsl(0, 0%, 44.1%);
+  --input-date-separator: rgb(112, 112, 112);
   --input-font-weight: 400;
   --input-height: 30px;
   --input-padding: 4px 8px;
-  --input-placeholder-color: hsl(0, 0%, 44.1%);
+  --input-placeholder-color: rgb(112, 112, 112);
   --input-radius: 5px;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1402,15 +1347,11 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: hsl(258, 88%, 66%);
-  --interactive-accent-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --interactive-accent: rgb(138, 92, 245);
+  --interactive-accent-hover: rgb(166, 139, 249);
   --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-hover: hsl(0, 0%, 30.7%);
-  --interactive-normal: hsl(0, 0%, 26.7%);
+  --interactive-hover: rgb(79, 79, 79);
+  --interactive-normal: rgb(69, 69, 69);
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -1424,26 +1365,18 @@ body.theme-dark {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color: rgb(166, 139, 249);
+  --link-color-hover: rgb(197, 182, 252);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-external-color: rgb(166, 139, 249);
+  --link-external-color-hover: rgb(197, 182, 252);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+  --link-unresolved-color: rgb(166, 139, 249);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -1453,22 +1386,18 @@ body.theme-dark {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: calc(0.5625em * 4);
+  --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: hsl(0, 0%, 44.1%);
-  --list-marker-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
-  --list-marker-color-hover: hsl(0, 0%, 64.6%);
+  --list-marker-color: rgb(112, 112, 112);
+  --list-marker-color-collapsed: rgb(166, 139, 249);
+  --list-marker-color-hover: rgb(166, 166, 166);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
-  --menu-background: hsl(0, 0%, 26.7%);
-  --menu-border-color: hsl(0, 0%, 30.7%);
+  --menu-background: rgb(69, 69, 69);
+  --menu-border-color: rgb(79, 79, 79);
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
@@ -1476,53 +1405,53 @@ body.theme-dark {
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --metadata-background: transparent;
-  --metadata-border-color: hsl(0, 0%, 26.7%);
+  --metadata-border-color: rgb(69, 69, 69);
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: hsl(0, 0%, 26.7%);
+  --metadata-divider-color: rgb(69, 69, 69);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: hsl(258, 88%, 44.1%, 25%);
+  --metadata-input-background-active: rgb(73, 13, 211);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: hsl(0, 0%, 100%);
+  --metadata-input-text-color: rgb(255, 255, 255);
   --metadata-label-background: transparent;
-  --metadata-label-background-active: hsl(258, 88%, 44.1%, 25%);
+  --metadata-label-background-active: rgb(73, 13, 211);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
-  --metadata-label-text-color: hsl(0, 0%, 64.6%);
-  --metadata-label-text-color-hover: hsl(0, 0%, 64.6%);
+  --metadata-label-text-color: rgb(166, 166, 166);
+  --metadata-label-text-color-hover: rgb(166, 166, 166);
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: hsl(258, 88%, 44.1%, 25%);
+  --metadata-property-background-active: rgb(73, 13, 211);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 34.9%);
-  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 30.7%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(89, 89, 89);
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(79, 79, 79);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 13px;
   --metadata-sidebar-label-font-size: 13px;
-  --modal-background: hsl(0, 0%, 10%);
-  --modal-border-color: hsl(0, 0%, 34.9%);
+  --modal-background: rgb(26, 26, 26);
+  --modal-border-color: rgb(89, 89, 89);
   --modal-border-width: 0;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -1533,30 +1462,26 @@ body.theme-dark {
   --modal-width: 90vw;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-collapse-icon-color: hsl(0, 0%, 44.1%);
-  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 44.1%);
-  --nav-heading-color: hsl(0, 0%, 100%);
-  --nav-heading-color-collapsed: hsl(0, 0%, 44.1%);
-  --nav-heading-color-collapsed-hover: hsl(0, 0%, 64.6%);
-  --nav-heading-color-hover: hsl(0, 0%, 100%);
+  --nav-collapse-icon-color: rgb(112, 112, 112);
+  --nav-collapse-icon-color-collapsed: rgb(112, 112, 112);
+  --nav-heading-color: rgb(255, 255, 255);
+  --nav-heading-color-collapsed: rgb(112, 112, 112);
+  --nav-heading-color-collapsed-hover: rgb(166, 166, 166);
+  --nav-heading-color-hover: rgb(255, 255, 255);
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: hsl(258, 88%, 66%);
-  --nav-item-background-hover: hsla(258, 88%, 34.9%, 33%);
-  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15);
+  --nav-item-background-active: rgb(138, 92, 245);
+  --nav-item-background-hover: rgba(58, 11, 168, 0.33);
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: hsl(0, 0%, 64.6%);
+  --nav-item-color: rgb(166, 166, 166);
   --nav-item-color-active: white;
-  --nav-item-color-highlighted: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
-  --nav-item-color-hover: hsl(258, 88%, 87.7%);
-  --nav-item-color-selected: hsl(0, 0%, 100%);
+  --nav-item-color-highlighted: rgb(166, 139, 249);
+  --nav-item-color-hover: rgb(214, 197, 251);
+  --nav-item-color-selected: rgb(255, 255, 255);
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 4px 8px 4px 24px;
   --nav-item-size: 13px;
@@ -1565,26 +1490,22 @@ body.theme-dark {
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
-  --pdf-background: hsl(0, 0%, 10%);
-  --pdf-page-background: hsl(0, 0%, 10%);
-  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
-  --pdf-sidebar-background: hsl(0, 0%, 10%);
+  --pdf-background: rgb(26, 26, 26);
+  --pdf-page-background: rgb(26, 26, 26);
+  --pdf-shadow: 0 0 0 1px rgb(69, 69, 69);
+  --pdf-sidebar-background: rgb(26, 26, 26);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 26.7%);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(69, 69, 69);
   --pdfViewer-padding-bottom: 0;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: hsl(0, 0%, 26.7%);
-  --pill-border-color-hover: hsl(0, 0%, 30.7%);
+  --pill-border-color: rgb(69, 69, 69);
+  --pill-border-color-hover: rgb(79, 79, 79);
   --pill-border-width: 1px;
-  --pill-color: hsl(0, 0%, 64.6%);
-  --pill-color-hover: hsl(0, 0%, 100%);
-  --pill-color-remove: hsl(0, 0%, 44.1%);
-  --pill-color-remove-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --pill-color: rgb(166, 166, 166);
+  --pill-color-hover: rgb(255, 255, 255);
+  --pill-color-remove: rgb(112, 112, 112);
+  --pill-color-remove-hover: rgb(166, 139, 249);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1598,7 +1519,7 @@ body.theme-dark {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: hsl(0, 0%, 34.9%);
+  --prompt-border-color: rgb(89, 89, 89);
   --prompt-border-width: 0;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -1608,8 +1529,8 @@ body.theme-dark {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: hsl(0, 0%, 26.7%);
-  --ribbon-background-collapsed: hsl(0, 0%, 10%);
+  --ribbon-background: rgb(69, 69, 69);
+  --ribbon-background-collapsed: rgb(26, 26, 26);
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --safe-area-inset-bottom: 0px;
@@ -1623,18 +1544,18 @@ body.theme-dark {
   --scrollbar-radius: 12px;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --scrollbar-width: 12px;
-  --search-clear-button-color: hsl(0, 0%, 64.6%);
+  --search-clear-button-color: rgb(166, 166, 166);
   --search-clear-button-size: 13px;
-  --search-icon-color: hsl(0, 0%, 64.6%);
+  --search-icon-color: rgb(166, 166, 166);
   --search-icon-size: 18px;
-  --search-result-background: hsl(0, 0%, 10%);
+  --search-result-background: rgb(26, 26, 26);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -1653,22 +1574,22 @@ body.theme-dark {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: hsl(0, 0%, 30.7%);
+  --slider-thumb-border-color: rgb(79, 79, 79);
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: hsl(0, 0%, 26.7%);
+  --slider-track-background: rgb(69, 69, 69);
   --slider-track-height: 3px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --status-bar-background: hsl(0, 0%, 26.7%);
-  --status-bar-border-color: hsl(0, 0%, 26.7%);
+  --status-bar-background: rgb(69, 69, 69);
+  --status-bar-border-color: rgb(69, 69, 69);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: hsl(0, 0%, 64.6%);
+  --status-bar-text-color: rgb(166, 166, 166);
   --swatch-height: 22px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
@@ -1682,13 +1603,13 @@ body.theme-dark {
   --sync-avatar-color-7: #a882ff;
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: hsl(0, 0%, 10%);
-  --tab-container-background: hsl(0, 0%, 19.5%);
+  --tab-background-active: rgb(26, 26, 26);
+  --tab-container-background: rgb(51, 51, 51);
   --tab-curve: 6px;
-  --tab-divider-color: hsl(0, 0%, 30.7%);
+  --tab-divider-color: rgb(79, 79, 79);
   --tab-font-size: 13px;
   --tab-max-width: 320px;
-  --tab-outline-color: hsl(0, 0%, 26.7%);
+  --tab-outline-color: rgb(69, 69, 69);
   --tab-outline-width: 0;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -1700,27 +1621,23 @@ body.theme-dark {
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: hsl(0, 0%, 26.7%);
+  --tab-switcher-background: rgb(69, 69, 69);
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
-  --tab-text-color: hsl(0, 0%, 44.1%);
-  --tab-text-color-active: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused-active: hsl(0, 0%, 64.6%);
-  --tab-text-color-focused-active-current: hsl(0, 0%, 100%);
-  --tab-text-color-focused-highlighted: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
+  --tab-text-color: rgb(112, 112, 112);
+  --tab-text-color-active: rgb(166, 166, 166);
+  --tab-text-color-focused: rgb(166, 166, 166);
+  --tab-text-color-focused-active: rgb(166, 166, 166);
+  --tab-text-color-focused-active-current: rgb(255, 255, 255);
+  --tab-text-color-focused-highlighted: rgb(166, 139, 249);
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: hsl(0, 0%, 26.7%);
+  --table-add-button-border-color: rgb(69, 69, 69);
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: hsl(0, 0%, 26.7%);
+  --table-border-color: rgb(69, 69, 69);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -1729,61 +1646,61 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(258, 88%, 66%);
-  --table-drag-handle-color: hsl(0, 0%, 44.1%);
+  --table-drag-handle-background-active: rgb(138, 92, 245);
+  --table-drag-handle-color: rgb(112, 112, 112);
   --table-drag-handle-color-active: white;
   --table-drop-indicator-half-width: 2px;
   --table-header-background: transparent;
-  --table-header-border-color: hsl(0, 0%, 26.7%);
+  --table-header-border-color: rgb(69, 69, 69);
   --table-header-border-width: 1px;
-  --table-header-color: hsl(0, 0%, 100%);
+  --table-header-color: rgb(255, 255, 255);
   --table-header-size: 16px;
-  --table-header-weight: calc(400 + 200);
+  --table-header-weight: 600;
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(258, 88%, 66%, 0.1);
+  --table-selection: rgba(138, 92, 245, 0.1);
   --table-selection-blend-mode: lighten;
-  --table-selection-border-color: hsl(258, 88%, 66%);
+  --table-selection-border-color: rgb(138, 92, 245);
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-background: rgba(138, 92, 245, 0.1);
+  --tag-background-hover: rgba(138, 92, 245, 0.2);
+  --tag-border-color: rgba(138, 92, 245, 0.15);
+  --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color: rgb(166, 139, 249);
+  --tag-color-hover: rgb(166, 139, 249);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent: rgb(166, 139, 249);
+  --text-accent-hover: rgb(197, 182, 252);
   --text-error: #fb464c;
-  --text-faint: hsl(0, 0%, 44.1%);
-  --text-highlight-bg: hsla(calc(258 + 180), 88%, 66%, 50%);
+  --text-faint: rgb(112, 112, 112);
+  --text-highlight-bg: hsla(438, 88%, 66%, 50%);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: hsl(0, 0%, 64.6%);
-  --text-normal: hsl(0, 0%, 100%);
+  --text-muted: rgb(166, 166, 166);
+  --text-normal: rgb(255, 255, 255);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --text-selection: rgba(138, 92, 245, 0.33);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --titlebar-background: hsl(0, 0%, 19.5%);
+  --titlebar-background: rgb(51, 51, 51);
   --titlebar-background-focused: #36363680;
-  --titlebar-border-color: hsl(0, 0%, 26.7%);
+  --titlebar-border-color: rgb(69, 69, 69);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: hsl(0, 0%, 64.6%);
-  --titlebar-text-color-focused: hsl(0, 0%, 100%);
+  --titlebar-text-color: rgb(166, 166, 166);
+  --titlebar-text-color-focused: rgb(255, 255, 255);
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -1797,32 +1714,32 @@ body.theme-dark {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: hsl(0, 0%, 100%);
-  --vault-profile-color-hover: hsl(0, 0%, 100%);
+  --vault-profile-color: rgb(255, 255, 255);
+  --vault-profile-color-hover: rgb(255, 255, 255);
   --vault-profile-display: flex;
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
-  --bold-color: hsl(calc(258 + 180), 88%, 75.9%);
-  --italic-color: hsl(258, 88%, 75.9%);
-  --color-base-80: hsl(0, 0%, 75.9%);
-  --color-base-90: hsl(0, 0%, 87.7%);
-  --embed-border-left: 1px solid hsl(258, 88%, 66%);
+  --bold-color: hsl(438, 88%, 76%);
+  --italic-color: rgb(172, 140, 248);
+  --color-base-80: rgb(194, 194, 194);
+  --color-base-90: rgb(224, 224, 224);
+  --embed-border-left: 1px solid rgb(138, 92, 245);
   --embed-border-right: dashed white 1px;
   --accent-l-alt: max(66%, 75%);
-  --color-base-15: hsl(0, 0%, 16.3%);
-  --accent-i-h: calc(258 + 180);
-  --accent-s-alt: max(calc(88% * 0.75), 75%);
-  --background-blurred: hsl(0, 0%, 10%);
-  --background-blurred-alt: hsl(0, 0%, 13.6%);
-  --background-semitransp: hsla(0, 0%, 10%, 85%);
-  --background-semitransp-alt: hsla(0, 0%, 13.6%, 85%);
+  --color-base-15: rgb(41, 41, 41);
+  --accent-i-h: 438;
+  --accent-s-alt: max(66%, 75%);
+  --background-blurred: rgb(26, 26, 26);
+  --background-blurred-alt: rgb(36, 36, 36);
+  --background-semitransp: rgba(26, 26, 26, 0.85);
+  --background-semitransp-alt: rgba(36, 36, 36, 0.85);
   --blur-size: 4;
-  --bold-h: calc(258 + 180);
+  --bold-h: 438;
   --button-alt-h: 258;
   --button-h: 258;
   --callout-background-hsla: 258, 88%, 66%, 20%;
@@ -1849,7 +1766,7 @@ body.theme-dark {
   --italic-h: 258;
   --max-highlight: 45%;
   --min-highlight: 35%;
-  --text-highlight-h: calc(258 + 180);
+  --text-highlight-h: 438;
 }
 
 body .markdown-rendered a.external-link {
@@ -2136,18 +2053,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2159,18 +2065,8 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2180,10 +2076,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -2207,18 +2100,7 @@ body div.multi-select-pill {
     sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgba(138, 92, 245, 0.15);
-  border-right-color: rgba(138, 92, 245, 0.15);
-  border-top-color: rgba(138, 92, 245, 0.15);
-  border-bottom-color: rgba(138, 92, 245, 0.15);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px solid rgba(138, 92, 245, 0.15);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -2237,18 +2119,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2272,18 +2143,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2294,25 +2154,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2322,28 +2168,14 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2353,27 +2185,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2382,14 +2200,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -2453,18 +2265,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2478,18 +2279,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2528,18 +2318,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2553,18 +2332,7 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2688,18 +2456,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2712,18 +2469,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2733,26 +2479,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2761,10 +2493,7 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body
   .callout[data-callout="note"]
@@ -2780,27 +2509,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2822,18 +2537,7 @@ body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2855,18 +2559,7 @@ body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2888,18 +2581,7 @@ body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2921,18 +2603,7 @@ body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2954,18 +2625,7 @@ body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2987,18 +2647,7 @@ body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3020,18 +2669,7 @@ body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3053,18 +2691,7 @@ body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3086,18 +2713,7 @@ body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3119,18 +2735,7 @@ body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3152,18 +2757,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
