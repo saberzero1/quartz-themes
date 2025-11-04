@@ -115,18 +115,18 @@ body.theme-light {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(246, 141, 69, 0.15) !important;
   --background-modifier-border: rgb(226, 224, 220) !important;
-  --background-modifier-border-focus: hsl(199.5, 38.8%, 40.4%) !important;
+  --background-modifier-border-focus: rgb(62, 116, 142) !important;
   --background-modifier-border-hover: rgb(226, 224, 220) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(142, 140, 139, 0.12) !important;
-  --background-modifier-error: hsl(9.6, 66.2%, 46.5%) !important;
-  --background-modifier-error-hover: hsl(9.6, 66.2%, 46.5%) !important;
+  --background-modifier-error: rgb(199, 66, 41) !important;
+  --background-modifier-error-hover: rgb(199, 66, 41) !important;
   --background-modifier-error-rgb: 197, 65, 40 !important;
   --background-modifier-form-field: rgb(253, 254, 254) !important;
   --background-modifier-form-field-hover: rgb(253, 254, 254) !important;
   --background-modifier-hover: rgba(142, 140, 139, 0.12) !important;
   --background-modifier-message: rgb(253, 254, 254) !important;
-  --background-modifier-success: hsl(114.6, 22.4%, 49%) !important;
+  --background-modifier-success: rgb(102, 152, 97) !important;
   --background-modifier-success-rgb: 102, 153, 97 !important;
   --background-primary: rgb(244, 244, 240) !important;
   --background-primary-alt: rgb(253, 254, 254) !important;
@@ -202,7 +202,7 @@ body.theme-light {
   --callout-summary: 0, 191, 188 !important;
   --callout-tip: 0, 191, 188 !important;
   --callout-title-padding: 0 !important;
-  --callout-title-weight: calc(400 + 200) !important;
+  --callout-title-weight: 600 !important;
   --callout-todo: 8, 109, 221 !important;
   --callout-warning: 236, 117, 0 !important;
   --canvas-background: rgb(244, 244, 240) !important;
@@ -232,18 +232,18 @@ body.theme-light {
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(142, 140, 139, 0.12) !important;
   --code-comment: rgb(169, 168, 165) !important;
-  --code-function: hsl(24.4, 90.8%, 61.8%) !important;
-  --code-important: hsl(268deg, 57%, 66%) !important;
-  --code-keyword: hsl(348.5, 79.3%, 63.9%) !important;
+  --code-function: rgb(246, 142, 70) !important;
+  --code-important: rgb(119, 119, 119) !important;
+  --code-keyword: rgb(236, 91, 118) !important;
   --code-normal: rgb(84, 81, 81) !important;
   --code-operator: #e93147 !important;
-  --code-property: hsl(187.4, 22.4%, 50%) !important;
+  --code-property: rgb(99, 149, 156) !important;
   --code-punctuation: rgb(84, 81, 81) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
-  --code-string: hsl(114.6, 22.4%, 49%) !important;
-  --code-tag: hsl(9.6, 66.2%, 46.5%) !important;
-  --code-value: hsl(268deg, 57%, 66%) !important;
+  --code-string: rgb(102, 152, 97) !important;
+  --code-tag: rgb(199, 66, 41) !important;
+  --code-value: rgb(119, 119, 119) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(169, 168, 165) !important;
   --collapse-icon-color-collapsed: rgb(246, 141, 69) !important;
@@ -388,14 +388,14 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 44px) !important;
+  --frame-left-space: 36px !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(226, 224, 220) !important;
   --graph-node: rgb(84, 81, 81) !important;
-  --graph-node-attachment: hsl(40.2, 87.2%, 63.1%) !important;
+  --graph-node-attachment: rgb(243, 189, 79) !important;
   --graph-node-focused: rgb(246, 141, 69) !important;
-  --graph-node-tag: hsl(9.6, 66.2%, 46.5%) !important;
+  --graph-node-tag: rgb(199, 66, 41) !important;
   --graph-node-unresolved: rgb(169, 168, 165) !important;
   --graph-text: rgb(22, 22, 22) !important;
   --h1-line-height: 1.2 !important;
@@ -430,7 +430,7 @@ body.theme-light {
   --h6-weight: 600 !important;
   --header-height: 40px !important;
   --heading-formatting: rgb(169, 168, 165) !important;
-  --heading-spacing: calc(1rem * 2.5) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
   --hr-color: rgb(226, 224, 220) !important;
   --hr-thickness: 1.5px !important;
@@ -477,19 +477,13 @@ body.theme-light {
   --input-placeholder-color: rgb(169, 168, 165) !important;
   --input-radius: 4px !important;
   --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0px 0.5px 0.4px hsl(0deg 5% 59% / 0.47),
-    0px 0.8px 0.7px -1px hsl(0deg 5% 59% / 0.4),
-    0px 1.9px 1.7px -2px hsl(0deg 5% 59% / 0.32),
-    0px 4.5px 4px -3px hsl(0deg 5% 59% / 0.25),
-    0.1px 9.4px 8.4px -4.1px hsl(0deg 5% 59% / 0.18) !important;
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0px 0.5px 0.4px rgb(0, 0, 0),
+    0px 0.8px 0.7px -1px rgb(0, 0, 0), 0px 1.9px 1.7px -2px rgb(0, 0, 0),
+    0px 4.5px 4px -3px rgb(0, 0, 0), 0.1px 9.4px 8.4px -4.1px rgb(0, 0, 0) !important;
   --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0px 0.5px 0.5px hsl(0deg 5% 59% / 0.47),
-    0px 0.9px 0.8px -1px hsl(0deg 5% 59% / 0.4),
-    0px 1.9px 1.7px -2px hsl(0deg 5% 59% / 0.33),
-    0px 4.5px 4.1px -3px hsl(0deg 5% 59% / 0.26),
-    0.1px 9.4px 8.5px -4px hsl(0deg 5% 59% / 0.19) !important;
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0px 0.5px 0.5px rgb(0, 0, 0),
+    0px 0.9px 0.8px -1px rgb(0, 0, 0), 0px 1.9px 1.7px -2px rgb(0, 0, 0),
+    0px 4.5px 4.1px -3px rgb(0, 0, 0), 0.1px 9.4px 8.5px -4px rgb(0, 0, 0) !important;
   --interactive-accent: rgb(246, 141, 69) !important;
   --interactive-accent-hover: rgb(246, 141, 69) !important;
   --interactive-accent-hsl: 24.4, 90.8%, 61.8% !important;
@@ -564,7 +558,7 @@ body.theme-light {
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
-  --metadata-input-height: calc(16px * 1.75) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: rgb(22, 22, 22) !important;
   --metadata-label-background: transparent !important;
@@ -583,7 +577,7 @@ body.theme-light {
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(142, 140, 139, 0.12) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(199.5, 38.8%, 40.4%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(62, 116, 142) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(226, 224, 220) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -615,7 +609,7 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(142, 140, 139, 0.2) !important;
   --nav-item-background-hover: rgba(142, 140, 139, 0.12) !important;
-  --nav-item-background-selected: hsla(24.4, 90.8%, 61.8%, 0.2) !important;
+  --nav-item-background-selected: rgba(246, 142, 70, 0.2) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(84, 81, 81) !important;
@@ -804,7 +798,7 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(24.4, 90.8%, 61.8%, 0.1) !important;
+  --table-selection: rgba(246, 142, 70, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: rgb(246, 141, 69) !important;
   --table-selection-border-radius: 4px !important;
@@ -826,7 +820,7 @@ body.theme-light {
   --tag-size: 0.875em !important;
   --text-accent: rgb(246, 141, 69) !important;
   --text-accent-hover: rgb(246, 141, 69) !important;
-  --text-error: hsl(9.6, 66.2%, 46.5%) !important;
+  --text-error: rgb(199, 66, 41) !important;
   --text-faint: rgb(169, 168, 165) !important;
   --text-highlight-bg: rgba(246, 141, 69, 0.7) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -835,7 +829,7 @@ body.theme-light {
   --text-on-accent: rgb(253, 254, 254) !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(246, 141, 69, 0.5) !important;
-  --text-success: hsl(114.6, 22.4%, 49%) !important;
+  --text-success: rgb(102, 152, 97) !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: rgb(244, 244, 240) !important;
   --titlebar-background-focused: rgb(244, 244, 240) !important;
@@ -865,7 +859,7 @@ body.theme-light {
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>") !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --vault-name-color: rgb(22, 22, 22) !important;
   --h1-font:
@@ -896,22 +890,22 @@ body.theme-light {
     "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --text-code: hsl(343.4, 62.8%, 49.6%) !important;
-  --green: hsl(114.6, 22.4%, 49%) !important;
-  --orange: hsl(24.4, 90.8%, 61.8%) !important;
-  --red: hsl(9.6, 66.2%, 46.5%) !important;
+  --text-code: rgb(208, 47, 92) !important;
+  --green: rgb(102, 152, 97) !important;
+  --orange: rgb(246, 142, 70) !important;
+  --red: rgb(199, 66, 41) !important;
   --text-primary: rgb(22, 22, 22) !important;
   --text-secondary: rgb(84, 81, 81) !important;
-  --yellow: hsl(40.2, 87.2%, 63.1%) !important;
+  --yellow: rgb(243, 189, 79) !important;
   --text-highlight-bg-active: rgba(246, 141, 69, 0.7) !important;
-  --blue: hsl(217.1, 31.4%, 47.5%) !important;
+  --blue: rgb(84, 113, 160) !important;
   --font-editor-theme: ?? !important;
-  --pink: hsl(348.5, 79.3%, 63.9%) !important;
+  --pink: rgb(236, 91, 118) !important;
   --embed-border-left: 1px solid rgb(246, 141, 69) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
-  --cyan: hsl(187.4, 22.4%, 50%) !important;
+  --cyan: rgb(99, 149, 156) !important;
   --blockquote-size: 0.9rem !important;
   --white: 253, 254, 254 !important;
   --background: rgb(244, 244, 240) !important;
@@ -956,45 +950,45 @@ body.theme-light {
   --tracking-4: 0.96px !important;
   --indentation-guide: rgba(0, 0, 0, 0.15) !important;
   --indentation-guide-active: rgba(0, 0, 0, 0.3) !important;
-  --lavender: hsl(268deg, 57%, 66%) !important;
+  --lavender: rgb(119, 119, 119) !important;
   --black: 0, 0, 0 !important;
-  --blue-100: hsl(221, 100%, 11.8%) !important;
-  --blue-50: hsl(208.1, 34.2%, 55.9%) !important;
-  --cyan-100: hsl(214.8, 100%, 9.8%) !important;
-  --cyan-50: hsl(187.4, 22.4%, 50%) !important;
+  --blue-100: rgb(0, 19, 61) !important;
+  --blue-50: rgb(105, 145, 181) !important;
+  --cyan-100: rgb(0, 21, 51) !important;
+  --cyan-50: rgb(99, 149, 156) !important;
   --gray-100: 22, 22, 22 !important;
   --gray-50: 142, 140, 139 !important;
-  --green-100: hsl(120, 100%, 5.3%) !important;
-  --green-50: hsl(114.6, 22.4%, 49%) !important;
-  --orange-100: hsl(357.8, 100%, 10.6%) !important;
-  --orange-50: hsl(18.3, 75%, 54.5%) !important;
-  --pink-100: hsl(357.8, 100%, 10.6%) !important;
-  --pink-50: hsl(348.5, 79.3%, 63.9%) !important;
-  --red-100: hsl(357.8, 100%, 10.6%) !important;
-  --red-50: hsl(11.2, 88.7%, 58.4%) !important;
-  --yellow-100: hsl(3.5, 100%, 10.2%) !important;
-  --yellow-50: hsl(42.7, 100%, 36.1%) !important;
+  --green-100: rgb(0, 26, 0) !important;
+  --green-50: rgb(102, 152, 97) !important;
+  --orange-100: rgb(56, 0, 2) !important;
+  --orange-50: rgb(226, 107, 54) !important;
+  --pink-100: rgb(56, 0, 2) !important;
+  --pink-50: rgb(236, 91, 118) !important;
+  --red-100: rgb(56, 0, 2) !important;
+  --red-50: rgb(243, 88, 53) !important;
+  --yellow-100: rgb(51, 3, 0) !important;
+  --yellow-50: rgb(184, 131, 0) !important;
   --shadow-color: 0deg 5% 59% !important;
   --color-accent-rgb: 246, 141, 69 !important;
   --background-active: rgba(142, 140, 139, 0.32) !important;
   --background-hover: rgba(142, 140, 139, 0.12) !important;
   --embed-border-color: rgb(246, 141, 69) !important;
   --callout-title-background: transparent !important;
-  --focus: hsl(199.5, 38.8%, 40.4%) !important;
+  --focus: rgb(62, 116, 142) !important;
   --overlay: rgba(22, 22, 22, 0.5) !important;
   --aside-background: transparent !important;
   --aside-background-hover: rgba(142, 140, 139, 0.12) !important;
   --aside-border-color: rgb(226, 224, 220) !important;
   --aside-text-color: rgb(84, 81, 81) !important;
-  --orange-10: hsl(28.7, 85.2%, 94.7%) !important;
-  --orange-20: hsl(27.8, 79.4%, 86.7%) !important;
-  --orange-30: hsl(30.2, 98.6%, 72%) !important;
-  --orange-40: hsl(24.4, 90.8%, 61.8%) !important;
-  --orange-60: hsl(12.8, 60.5%, 45.7%) !important;
-  --orange-70: hsl(358, 63.4%, 37.5%) !important;
-  --orange-80: hsl(342.1, 82.5%, 24.7%) !important;
-  --orange-90: hsl(346.4, 100%, 16.5%) !important;
-  --green-10: hsl(77.6, 48.6%, 93.1%) !important;
+  --orange-10: rgb(253, 242, 231) !important;
+  --orange-20: rgb(248, 220, 196) !important;
+  --orange-30: rgb(254, 184, 113) !important;
+  --orange-40: rgb(246, 142, 70) !important;
+  --orange-60: rgb(189, 76, 46) !important;
+  --orange-70: rgb(158, 36, 40) !important;
+  --orange-80: rgb(117, 11, 42) !important;
+  --orange-90: rgb(87, 0, 20) !important;
+  --green-10: rgb(241, 246, 228) !important;
   --layer-1: rgb(253, 254, 254) !important;
   --layer-2: rgb(244, 244, 240) !important;
   --active-line-accent: transparent !important;
@@ -1002,14 +996,14 @@ body.theme-light {
   --background-inverse-hover: rgba(84, 81, 81, 0.5) !important;
   --background-selected: rgba(142, 140, 139, 0.2) !important;
   --background-selected-hover: rgba(142, 140, 139, 0.32) !important;
-  --blue-10: hsl(195, 16.7%, 95.3%) !important;
-  --blue-20: hsl(190.9, 16.4%, 86.9%) !important;
-  --blue-30: hsl(190.4, 18.7%, 75.9%) !important;
-  --blue-40: hsl(203.1, 36.3%, 64.9%) !important;
-  --blue-60: hsl(217.1, 31.4%, 47.5%) !important;
-  --blue-70: hsl(215.9, 45.1%, 35.7%) !important;
-  --blue-80: hsl(216.3, 59.4%, 25.1%) !important;
-  --blue-90: hsl(215, 83.7%, 16.9%) !important;
+  --blue-10: rgb(240, 243, 244) !important;
+  --blue-20: rgb(217, 225, 227) !important;
+  --blue-30: rgb(182, 201, 205) !important;
+  --blue-40: rgb(134, 173, 198) !important;
+  --blue-60: rgb(84, 113, 160) !important;
+  --blue-70: rgb(50, 84, 133) !important;
+  --blue-80: rgb(26, 56, 101) !important;
+  --blue-90: rgb(7, 37, 80) !important;
   --border-inverse: rgb(22, 22, 22) !important;
   --border-strong-1: rgb(142, 140, 139) !important;
   --border-strong-2: rgb(142, 140, 139) !important;
@@ -1018,22 +1012,22 @@ body.theme-light {
   --border-subtle-2: rgb(226, 224, 220) !important;
   --border-subtle-selected-1: rgb(199, 197, 194) !important;
   --border-subtle-selected-2: rgb(199, 197, 194) !important;
-  --calendar-dot: hsl(24.4, 90.8%, 61.8%) !important;
-  --calendar-dot-hover: hsl(9.6, 66.2%, 46.5%) !important;
+  --calendar-dot: rgb(246, 142, 70) !important;
+  --calendar-dot-hover: rgb(199, 66, 41) !important;
   --checkbox-checked-color-hover: rgba(102, 153, 97, 0.9) !important;
   --checkbox-color-rgb: 102, 153, 97 !important;
   --checklist-done-strike-color: rgb(169, 168, 165) !important;
-  --code-normal-inline: hsl(348.5, 79.3%, 63.9%) !important;
+  --code-normal-inline: rgb(236, 91, 118) !important;
   --color-accent-rgb-d: 102, 153, 97 !important;
   --color-accent-rgb-l: 246, 141, 69 !important;
-  --cyan-10: hsl(90, 15.4%, 94.9%) !important;
-  --cyan-20: hsl(98.2, 15.9%, 86.5%) !important;
-  --cyan-30: hsl(155, 18.7%, 74.9%) !important;
-  --cyan-40: hsl(182.2, 26.2%, 59.6%) !important;
-  --cyan-60: hsl(199.5, 38.8%, 40.4%) !important;
-  --cyan-70: hsl(202.8, 57.6%, 29.6%) !important;
-  --cyan-80: hsl(200.9, 100%, 18%) !important;
-  --cyan-90: hsl(206.1, 100%, 13.5%) !important;
+  --cyan-10: rgb(242, 244, 240) !important;
+  --cyan-20: rgb(220, 227, 217) !important;
+  --cyan-30: rgb(179, 203, 193) !important;
+  --cyan-40: rgb(126, 178, 180) !important;
+  --cyan-60: rgb(62, 116, 142) !important;
+  --cyan-70: rgb(32, 87, 121) !important;
+  --cyan-80: rgb(0, 60, 92) !important;
+  --cyan-90: rgb(0, 40, 71) !important;
   --elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
   --elevation-2: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
   --embed-border-width: 1px !important;
@@ -1049,29 +1043,29 @@ body.theme-light {
   --gray-70: 84, 81, 81 !important;
   --gray-80: 58, 56, 56 !important;
   --gray-90: 38, 38, 37 !important;
-  --green-20: hsl(76.6, 48.5%, 81%) !important;
-  --green-30: hsl(83.5, 44%, 67.1%) !important;
-  --green-40: hsl(96.9, 31.8%, 56.9%) !important;
-  --green-60: hsl(139, 32.3%, 36.5%) !important;
-  --green-70: hsl(144.9, 52.8%, 24.1%) !important;
-  --green-80: hsl(148.2, 100%, 12.9%) !important;
-  --green-90: hsl(134.7, 100%, 8.8%) !important;
+  --green-20: rgb(217, 230, 183) !important;
+  --green-30: rgb(179, 208, 134) !important;
+  --green-40: rgb(137, 180, 110) !important;
+  --green-60: rgb(64, 125, 83) !important;
+  --green-70: rgb(29, 94, 56) !important;
+  --green-80: rgb(0, 66, 31) !important;
+  --green-90: rgb(0, 46, 11) !important;
   --heading-counter: " " !important;
   --icon-inverse: rgb(253, 254, 254) !important;
   --icon-on-color: rgb(253, 254, 254) !important;
   --icon-primary: rgb(22, 22, 22) !important;
   --icon-secondary: rgb(84, 81, 81) !important;
   --interactive: rgb(246, 141, 69) !important;
-  --lavender-10: hsl(264deg, 63%, 97%) !important;
-  --lavender-100: hsl(266deg, 100%, 15%) !important;
-  --lavender-20: hsl(264deg, 64%, 91%) !important;
-  --lavender-30: hsl(264deg, 61%, 84%) !important;
-  --lavender-40: hsl(266deg, 58%, 75%) !important;
-  --lavender-50: hsl(268deg, 57%, 66%) !important;
-  --lavender-60: hsl(270deg, 55%, 56%) !important;
-  --lavender-70: hsl(271deg, 57%, 43%) !important;
-  --lavender-80: hsl(275deg, 89%, 29%) !important;
-  --lavender-90: hsl(273deg, 100%, 21%) !important;
+  --lavender-10: rgb(243, 243, 243) !important;
+  --lavender-100: rgb(0, 0, 0) !important;
+  --lavender-20: rgb(217, 217, 217) !important;
+  --lavender-30: rgb(189, 189, 189) !important;
+  --lavender-40: rgb(154, 154, 154) !important;
+  --lavender-50: rgb(119, 119, 119) !important;
+  --lavender-60: rgb(81, 81, 81) !important;
+  --lavender-70: rgb(47, 47, 47) !important;
+  --lavender-80: rgb(8, 8, 8) !important;
+  --lavender-90: rgb(0, 0, 0) !important;
   --layer-active-1: rgb(199, 197, 194) !important;
   --layer-active-2: rgb(199, 197, 194) !important;
   --layer-hover-1: rgb(244, 244, 240) !important;
@@ -1110,33 +1104,33 @@ body.theme-light {
   --motion-exit-productive: cubic-bezier(0.2, 0, 1, 0.9) !important;
   --motion-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1) !important;
   --motion-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9) !important;
-  --pink-10: hsl(352.5, 100%, 96.9%) !important;
-  --pink-20: hsl(355.6, 100%, 92%) !important;
-  --pink-30: hsl(352.8, 94.9%, 84.5%) !important;
-  --pink-40: hsl(351.4, 86.2%, 74.5%) !important;
-  --pink-60: hsl(343.4, 62.8%, 49.6%) !important;
-  --pink-70: hsl(339.4, 71.6%, 35.9%) !important;
-  --pink-80: hsl(342.1, 82.5%, 24.7%) !important;
-  --pink-90: hsl(346.4, 100%, 16.5%) !important;
-  --pistachio: hsl(63, 70.9%, 33.7%) !important;
-  --pistachio-10: hsl(69.2, 37.1%, 93.1%) !important;
-  --pistachio-100: hsl(52.8, 100%, 4.9%) !important;
-  --pistachio-20: hsl(67.1, 37.8%, 82.4%) !important;
-  --pistachio-30: hsl(64.8, 36.9%, 67.1%) !important;
-  --pistachio-40: hsl(63.5, 42.6%, 47.8%) !important;
-  --pistachio-50: hsl(63, 70.9%, 33.7%) !important;
-  --pistachio-60: hsl(62.1, 100%, 22.7%) !important;
-  --pistachio-70: hsl(61.4, 100%, 16.7%) !important;
-  --pistachio-80: hsl(60, 100%, 11.6%) !important;
-  --pistachio-90: hsl(58.5, 100%, 7.8%) !important;
-  --red-10: hsl(12.6, 100%, 96.3%) !important;
-  --red-20: hsl(12.9, 100%, 90%) !important;
-  --red-30: hsl(12, 100%, 81.4%) !important;
-  --red-40: hsl(11.7, 94.7%, 70.4%) !important;
-  --red-60: hsl(9.6, 66.2%, 46.5%) !important;
-  --red-70: hsl(358, 63.4%, 37.5%) !important;
-  --red-80: hsl(342.1, 82.5%, 24.7%) !important;
-  --red-90: hsl(346.4, 100%, 16.5%) !important;
+  --pink-10: rgb(255, 240, 242) !important;
+  --pink-20: rgb(255, 214, 217) !important;
+  --pink-30: rgb(253, 180, 189) !important;
+  --pink-40: rgb(246, 136, 152) !important;
+  --pink-60: rgb(208, 47, 92) !important;
+  --pink-70: rgb(158, 26, 71) !important;
+  --pink-80: rgb(117, 11, 42) !important;
+  --pink-90: rgb(87, 0, 20) !important;
+  --pistachio: rgb(142, 148, 25) !important;
+  --pistachio-10: rgb(242, 244, 231) !important;
+  --pistachio-100: rgb(26, 22, 0) !important;
+  --pistachio-20: rgb(222, 227, 192) !important;
+  --pistachio-30: rgb(197, 202, 140) !important;
+  --pistachio-40: rgb(169, 175, 70) !important;
+  --pistachio-50: rgb(142, 148, 25) !important;
+  --pistachio-60: rgb(113, 117, 0) !important;
+  --pistachio-70: rgb(85, 87, 0) !important;
+  --pistachio-80: rgb(61, 61, 0) !important;
+  --pistachio-90: rgb(41, 40, 0) !important;
+  --red-10: rgb(255, 239, 235) !important;
+  --red-20: rgb(255, 215, 204) !important;
+  --red-30: rgb(255, 177, 158) !important;
+  --red-40: rgb(251, 134, 106) !important;
+  --red-60: rgb(199, 66, 41) !important;
+  --red-70: rgb(158, 36, 40) !important;
+  --red-80: rgb(117, 11, 42) !important;
+  --red-90: rgb(87, 0, 20) !important;
   --size-0: 0px !important;
   --size-10: 64px !important;
   --size-11: 80px !important;
@@ -1145,25 +1139,25 @@ body.theme-light {
   --table-hover-highlight-color: rgba(246, 141, 69, 0.15) !important;
   --table-sticky-height: 600px !important;
   --text-placeholder: rgb(169, 168, 165) !important;
-  --viridian: hsl(151.5, 24.9%, 48%) !important;
-  --viridian-10: hsl(96, 18.5%, 94.7%) !important;
-  --viridian-100: hsl(156.9, 100%, 5.1%) !important;
-  --viridian-20: hsl(100, 21.1%, 86.1%) !important;
-  --viridian-30: hsl(111.8, 17.5%, 75.3%) !important;
-  --viridian-40: hsl(144.3, 19%, 61.8%) !important;
-  --viridian-50: hsl(151.5, 24.9%, 48%) !important;
-  --viridian-60: hsl(161, 34.8%, 35.5%) !important;
-  --viridian-70: hsl(165.7, 52.1%, 23.7%) !important;
-  --viridian-80: hsl(168, 100%, 12.7%) !important;
-  --viridian-90: hsl(163.6, 100%, 8.6%) !important;
-  --yellow-10: hsl(44.3, 95.5%, 91.4%) !important;
-  --yellow-20: hsl(41.1, 88.1%, 80.2%) !important;
-  --yellow-30: hsl(40.2, 87.2%, 63.1%) !important;
-  --yellow-40: hsl(41.6, 70.4%, 49%) !important;
-  --yellow-60: hsl(39.5, 100%, 29.8%) !important;
-  --yellow-70: hsl(35, 100%, 23.5%) !important;
-  --yellow-80: hsl(28.4, 100%, 18.2%) !important;
-  --yellow-90: hsl(19.4, 100%, 13.9%) !important;
+  --viridian: rgb(92, 153, 124) !important;
+  --viridian-10: rgb(242, 245, 240) !important;
+  --viridian-100: rgb(0, 26, 16) !important;
+  --viridian-20: rgb(217, 227, 212) !important;
+  --viridian-30: rgb(183, 203, 180) !important;
+  --viridian-40: rgb(140, 177, 155) !important;
+  --viridian-50: rgb(92, 153, 124) !important;
+  --viridian-60: rgb(60, 124, 104) !important;
+  --viridian-70: rgb(29, 93, 78) !important;
+  --viridian-80: rgb(0, 66, 53) !important;
+  --viridian-90: rgb(0, 46, 33) !important;
+  --yellow-10: rgb(254, 243, 210) !important;
+  --yellow-20: rgb(249, 221, 159) !important;
+  --yellow-30: rgb(243, 189, 79) !important;
+  --yellow-40: rgb(212, 159, 37) !important;
+  --yellow-60: rgb(153, 101, 0) !important;
+  --yellow-70: rgb(122, 71, 0) !important;
+  --yellow-80: rgb(92, 43, 0) !important;
+  --yellow-90: rgb(71, 23, 0) !important;
 }
 
 body.theme-dark {
@@ -1181,18 +1175,18 @@ body.theme-dark {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: rgba(102, 153, 97, 0.15);
   --background-modifier-border: rgb(58, 56, 56);
-  --background-modifier-border-focus: hsl(199.5, 38.8%, 40.4%);
+  --background-modifier-border-focus: rgb(62, 116, 142);
   --background-modifier-border-hover: rgb(58, 56, 56);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(142, 140, 139, 0.16);
-  --background-modifier-error: hsl(9.6, 66.2%, 46.5%);
-  --background-modifier-error-hover: hsl(9.6, 66.2%, 46.5%);
+  --background-modifier-error: rgb(199, 66, 41);
+  --background-modifier-error-hover: rgb(199, 66, 41);
   --background-modifier-error-rgb: 197, 65, 40;
   --background-modifier-form-field: rgb(38, 38, 37);
   --background-modifier-form-field-hover: rgb(38, 38, 37);
   --background-modifier-hover: rgba(142, 140, 139, 0.16);
   --background-modifier-message: rgb(38, 38, 37);
-  --background-modifier-success: hsl(114.6, 22.4%, 49%);
+  --background-modifier-success: rgb(102, 152, 97);
   --background-modifier-success-rgb: 102, 153, 97;
   --background-primary: rgb(22, 22, 22);
   --background-primary-alt: rgb(38, 38, 37);
@@ -1268,7 +1262,7 @@ body.theme-dark {
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: rgb(22, 22, 22);
@@ -1298,18 +1292,18 @@ body.theme-dark {
   --code-border-width: 0px;
   --code-bracket-background: rgba(142, 140, 139, 0.16);
   --code-comment: rgb(112, 110, 109);
-  --code-function: hsl(30.2, 98.6%, 72%);
-  --code-important: hsl(268deg, 57%, 66%);
-  --code-keyword: hsl(348.5, 79.3%, 63.9%);
+  --code-function: rgb(254, 184, 113);
+  --code-important: rgb(119, 119, 119);
+  --code-keyword: rgb(236, 91, 118);
   --code-normal: rgb(199, 197, 194);
   --code-operator: #fb464c;
-  --code-property: hsl(187.4, 22.4%, 50%);
+  --code-property: rgb(99, 149, 156);
   --code-punctuation: rgb(199, 197, 194);
   --code-radius: 4px;
   --code-size: 0.875em;
-  --code-string: hsl(96.9, 31.8%, 56.9%);
-  --code-tag: hsl(11.2, 88.7%, 58.4%);
-  --code-value: hsl(268deg, 57%, 66%);
+  --code-string: rgb(137, 180, 110);
+  --code-tag: rgb(243, 88, 53);
+  --code-value: rgb(119, 119, 119);
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(112, 110, 109);
   --collapse-icon-color-collapsed: rgb(102, 153, 97);
@@ -1454,14 +1448,14 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
   --graph-line: rgb(58, 56, 56);
   --graph-node: rgb(199, 197, 194);
-  --graph-node-attachment: hsl(40.2, 87.2%, 63.1%);
+  --graph-node-attachment: rgb(243, 189, 79);
   --graph-node-focused: rgb(102, 153, 97);
-  --graph-node-tag: hsl(9.6, 66.2%, 46.5%);
+  --graph-node-tag: rgb(199, 66, 41);
   --graph-node-unresolved: rgb(112, 110, 109);
   --graph-text: rgb(244, 244, 240);
   --h1-line-height: 1.2;
@@ -1496,7 +1490,7 @@ body.theme-dark {
   --h6-weight: 600;
   --header-height: 40px;
   --heading-formatting: rgb(112, 110, 109);
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
   --hr-color: rgb(58, 56, 56);
   --hr-thickness: 1.5px;
@@ -1544,18 +1538,14 @@ body.theme-dark {
   --input-radius: 4px;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0px 0.5px 0.4px hsl(0deg 0% 1% / 0.47),
-    0px 0.8px 0.7px -1px hsl(0deg 0% 1% / 0.4),
-    0px 1.9px 1.7px -2px hsl(0deg 0% 1% / 0.32),
-    0px 4.5px 4px -3px hsl(0deg 0% 1% / 0.25),
-    0.1px 9.4px 8.4px -4.1px hsl(0deg 0% 1% / 0.18);
+    0px 0.5px 0.4px rgb(0, 0, 0), 0px 0.8px 0.7px -1px rgb(0, 0, 0),
+    0px 1.9px 1.7px -2px rgb(0, 0, 0), 0px 4.5px 4px -3px rgb(0, 0, 0),
+    0.1px 9.4px 8.4px -4.1px rgb(0, 0, 0);
   --input-shadow-hover:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0px 0.5px 0.5px hsl(0deg 0% 1% / 0.47),
-    0px 0.9px 0.8px -1px hsl(0deg 0% 1% / 0.4),
-    0px 1.9px 1.7px -2px hsl(0deg 0% 1% / 0.33),
-    0px 4.5px 4.1px -3px hsl(0deg 0% 1% / 0.26),
-    0.1px 9.4px 8.5px -4px hsl(0deg 0% 1% / 0.19);
+    0px 0.5px 0.5px rgb(0, 0, 0), 0px 0.9px 0.8px -1px rgb(0, 0, 0),
+    0px 1.9px 1.7px -2px rgb(0, 0, 0), 0px 4.5px 4.1px -3px rgb(0, 0, 0),
+    0.1px 9.4px 8.5px -4px rgb(0, 0, 0);
   --interactive-accent: rgb(102, 153, 97);
   --interactive-accent-hover: rgb(102, 153, 97);
   --interactive-accent-hsl: 24.4, 90.8%, 61.8%;
@@ -1630,7 +1620,7 @@ body.theme-dark {
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: rgb(244, 244, 240);
   --metadata-label-background: transparent;
@@ -1649,7 +1639,7 @@ body.theme-dark {
   --metadata-property-background: transparent;
   --metadata-property-background-active: rgba(142, 140, 139, 0.16);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(199.5, 38.8%, 40.4%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(62, 116, 142);
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(58, 56, 56);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
@@ -1681,7 +1671,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: rgba(142, 140, 139, 0.24);
   --nav-item-background-hover: rgba(142, 140, 139, 0.16);
-  --nav-item-background-selected: hsla(24.4, 90.8%, 61.8%, 0.2);
+  --nav-item-background-selected: rgba(246, 142, 70, 0.2);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: rgb(199, 197, 194);
@@ -1868,7 +1858,7 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(24.4, 90.8%, 61.8%, 0.1);
+  --table-selection: rgba(246, 142, 70, 0.1);
   --table-selection-blend-mode: lighten;
   --table-selection-border-color: rgb(102, 153, 97);
   --table-selection-border-radius: 4px;
@@ -1890,7 +1880,7 @@ body.theme-dark {
   --tag-size: 0.875em;
   --text-accent: rgb(102, 153, 97);
   --text-accent-hover: rgb(102, 153, 97);
-  --text-error: hsl(9.6, 66.2%, 46.5%);
+  --text-error: rgb(199, 66, 41);
   --text-faint: rgb(112, 110, 109);
   --text-highlight-bg: rgba(102, 153, 97, 0.7);
   --text-highlight-bg-rgb: 255, 208, 0;
@@ -1899,7 +1889,7 @@ body.theme-dark {
   --text-on-accent: rgb(253, 254, 254);
   --text-on-accent-inverted: black;
   --text-selection: rgba(102, 153, 97, 0.5);
-  --text-success: hsl(114.6, 22.4%, 49%);
+  --text-success: rgb(102, 152, 97);
   --text-warning: #e9973f;
   --titlebar-background: rgb(22, 22, 22);
   --titlebar-background-focused: rgb(22, 22, 22);
@@ -1929,7 +1919,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --vault-name-color: rgb(244, 244, 240);
   --h1-font:
@@ -1960,22 +1950,22 @@ body.theme-dark {
     "??", Inter, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --text-code: hsl(348.5, 79.3%, 63.9%);
-  --green: hsl(114.6, 22.4%, 49%);
-  --orange: hsl(24.4, 90.8%, 61.8%);
-  --red: hsl(9.6, 66.2%, 46.5%);
+  --text-code: rgb(236, 91, 118);
+  --green: rgb(102, 152, 97);
+  --orange: rgb(246, 142, 70);
+  --red: rgb(199, 66, 41);
   --text-primary: rgb(244, 244, 240);
   --text-secondary: rgb(199, 197, 194);
-  --yellow: hsl(40.2, 87.2%, 63.1%);
+  --yellow: rgb(243, 189, 79);
   --text-highlight-bg-active: rgba(102, 153, 97, 0.7);
-  --blue: hsl(217.1, 31.4%, 47.5%);
+  --blue: rgb(84, 113, 160);
   --font-editor-theme: ??;
-  --pink: hsl(348.5, 79.3%, 63.9%);
+  --pink: rgb(236, 91, 118);
   --embed-border-left: 1px solid rgb(102, 153, 97);
   --embed-border-right: none;
   --vault-name-font-size: 14px;
   --vault-name-font-weight: 500;
-  --cyan: hsl(187.4, 22.4%, 50%);
+  --cyan: rgb(99, 149, 156);
   --blockquote-size: 0.9rem;
   --white: 253, 254, 254;
   --background: rgb(22, 22, 22);
@@ -2020,45 +2010,45 @@ body.theme-dark {
   --tracking-4: 0.96px;
   --indentation-guide: rgba(255, 255, 255, 0.15);
   --indentation-guide-active: rgba(255, 255, 255, 0.3);
-  --lavender: hsl(268deg, 57%, 66%);
+  --lavender: rgb(119, 119, 119);
   --black: 0, 0, 0;
-  --blue-100: hsl(221, 100%, 11.8%);
-  --blue-50: hsl(208.1, 34.2%, 55.9%);
-  --cyan-100: hsl(214.8, 100%, 9.8%);
-  --cyan-50: hsl(187.4, 22.4%, 50%);
+  --blue-100: rgb(0, 19, 61);
+  --blue-50: rgb(105, 145, 181);
+  --cyan-100: rgb(0, 21, 51);
+  --cyan-50: rgb(99, 149, 156);
   --gray-100: 22, 22, 22;
   --gray-50: 142, 140, 139;
-  --green-100: hsl(120, 100%, 5.3%);
-  --green-50: hsl(114.6, 22.4%, 49%);
-  --orange-100: hsl(357.8, 100%, 10.6%);
-  --orange-50: hsl(18.3, 75%, 54.5%);
-  --pink-100: hsl(357.8, 100%, 10.6%);
-  --pink-50: hsl(348.5, 79.3%, 63.9%);
-  --red-100: hsl(357.8, 100%, 10.6%);
-  --red-50: hsl(11.2, 88.7%, 58.4%);
-  --yellow-100: hsl(3.5, 100%, 10.2%);
-  --yellow-50: hsl(42.7, 100%, 36.1%);
+  --green-100: rgb(0, 26, 0);
+  --green-50: rgb(102, 152, 97);
+  --orange-100: rgb(56, 0, 2);
+  --orange-50: rgb(226, 107, 54);
+  --pink-100: rgb(56, 0, 2);
+  --pink-50: rgb(236, 91, 118);
+  --red-100: rgb(56, 0, 2);
+  --red-50: rgb(243, 88, 53);
+  --yellow-100: rgb(51, 3, 0);
+  --yellow-50: rgb(184, 131, 0);
   --shadow-color: 0deg 0% 1%;
   --color-accent-rgb: 102, 153, 97;
   --background-active: rgba(142, 140, 139, 0.4);
   --background-hover: rgba(142, 140, 139, 0.16);
   --embed-border-color: rgb(102, 153, 97);
   --callout-title-background: transparent;
-  --focus: hsl(199.5, 38.8%, 40.4%);
+  --focus: rgb(62, 116, 142);
   --overlay: rgba(22, 22, 22, 0.7);
   --aside-background: transparent;
   --aside-background-hover: rgba(142, 140, 139, 0.16);
   --aside-border-color: rgb(58, 56, 56);
   --aside-text-color: rgb(199, 197, 194);
-  --orange-10: hsl(28.7, 85.2%, 94.7%);
-  --orange-20: hsl(27.8, 79.4%, 86.7%);
-  --orange-30: hsl(30.2, 98.6%, 72%);
-  --orange-40: hsl(24.4, 90.8%, 61.8%);
-  --orange-60: hsl(12.8, 60.5%, 45.7%);
-  --orange-70: hsl(358, 63.4%, 37.5%);
-  --orange-80: hsl(342.1, 82.5%, 24.7%);
-  --orange-90: hsl(346.4, 100%, 16.5%);
-  --green-10: hsl(77.6, 48.6%, 93.1%);
+  --orange-10: rgb(253, 242, 231);
+  --orange-20: rgb(248, 220, 196);
+  --orange-30: rgb(254, 184, 113);
+  --orange-40: rgb(246, 142, 70);
+  --orange-60: rgb(189, 76, 46);
+  --orange-70: rgb(158, 36, 40);
+  --orange-80: rgb(117, 11, 42);
+  --orange-90: rgb(87, 0, 20);
+  --green-10: rgb(241, 246, 228);
   --layer-1: rgb(38, 38, 37);
   --layer-2: rgb(58, 56, 56);
   --active-line-accent: transparent;
@@ -2066,14 +2056,14 @@ body.theme-dark {
   --background-inverse-hover: rgba(226, 224, 220, 0.5);
   --background-selected: rgba(142, 140, 139, 0.24);
   --background-selected-hover: rgba(142, 140, 139, 0.32);
-  --blue-10: hsl(195, 16.7%, 95.3%);
-  --blue-20: hsl(190.9, 16.4%, 86.9%);
-  --blue-30: hsl(190.4, 18.7%, 75.9%);
-  --blue-40: hsl(203.1, 36.3%, 64.9%);
-  --blue-60: hsl(217.1, 31.4%, 47.5%);
-  --blue-70: hsl(215.9, 45.1%, 35.7%);
-  --blue-80: hsl(216.3, 59.4%, 25.1%);
-  --blue-90: hsl(215, 83.7%, 16.9%);
+  --blue-10: rgb(240, 243, 244);
+  --blue-20: rgb(217, 225, 227);
+  --blue-30: rgb(182, 201, 205);
+  --blue-40: rgb(134, 173, 198);
+  --blue-60: rgb(84, 113, 160);
+  --blue-70: rgb(50, 84, 133);
+  --blue-80: rgb(26, 56, 101);
+  --blue-90: rgb(7, 37, 80);
   --border-inverse: rgb(244, 244, 240);
   --border-strong-1: rgb(112, 110, 109);
   --border-strong-2: rgb(142, 140, 139);
@@ -2082,22 +2072,22 @@ body.theme-dark {
   --border-subtle-2: rgb(84, 81, 81);
   --border-subtle-selected-1: rgb(84, 81, 81);
   --border-subtle-selected-2: rgb(112, 110, 109);
-  --calendar-dot: hsl(24.4, 90.8%, 61.8%);
-  --calendar-dot-hover: hsl(9.6, 66.2%, 46.5%);
+  --calendar-dot: rgb(246, 142, 70);
+  --calendar-dot-hover: rgb(199, 66, 41);
   --checkbox-checked-color-hover: rgba(102, 153, 97, 0.9);
   --checkbox-color-rgb: 102, 153, 97;
   --checklist-done-strike-color: rgb(112, 110, 109);
-  --code-normal-inline: hsl(348.5, 79.3%, 63.9%);
+  --code-normal-inline: rgb(236, 91, 118);
   --color-accent-rgb-d: 102, 153, 97;
   --color-accent-rgb-l: 246, 141, 69;
-  --cyan-10: hsl(90, 15.4%, 94.9%);
-  --cyan-20: hsl(98.2, 15.9%, 86.5%);
-  --cyan-30: hsl(155, 18.7%, 74.9%);
-  --cyan-40: hsl(182.2, 26.2%, 59.6%);
-  --cyan-60: hsl(199.5, 38.8%, 40.4%);
-  --cyan-70: hsl(202.8, 57.6%, 29.6%);
-  --cyan-80: hsl(200.9, 100%, 18%);
-  --cyan-90: hsl(206.1, 100%, 13.5%);
+  --cyan-10: rgb(242, 244, 240);
+  --cyan-20: rgb(220, 227, 217);
+  --cyan-30: rgb(179, 203, 193);
+  --cyan-40: rgb(126, 178, 180);
+  --cyan-60: rgb(62, 116, 142);
+  --cyan-70: rgb(32, 87, 121);
+  --cyan-80: rgb(0, 60, 92);
+  --cyan-90: rgb(0, 40, 71);
   --elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   --elevation-2: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
   --embed-border-width: 1px;
@@ -2113,29 +2103,29 @@ body.theme-dark {
   --gray-70: 84, 81, 81;
   --gray-80: 58, 56, 56;
   --gray-90: 38, 38, 37;
-  --green-20: hsl(76.6, 48.5%, 81%);
-  --green-30: hsl(83.5, 44%, 67.1%);
-  --green-40: hsl(96.9, 31.8%, 56.9%);
-  --green-60: hsl(139, 32.3%, 36.5%);
-  --green-70: hsl(144.9, 52.8%, 24.1%);
-  --green-80: hsl(148.2, 100%, 12.9%);
-  --green-90: hsl(134.7, 100%, 8.8%);
+  --green-20: rgb(217, 230, 183);
+  --green-30: rgb(179, 208, 134);
+  --green-40: rgb(137, 180, 110);
+  --green-60: rgb(64, 125, 83);
+  --green-70: rgb(29, 94, 56);
+  --green-80: rgb(0, 66, 31);
+  --green-90: rgb(0, 46, 11);
   --heading-counter: " ";
   --icon-inverse: rgb(22, 22, 22);
   --icon-on-color: rgb(253, 254, 254);
   --icon-primary: rgb(244, 244, 240);
   --icon-secondary: rgb(199, 197, 194);
   --interactive: rgb(102, 153, 97);
-  --lavender-10: hsl(264deg, 63%, 97%);
-  --lavender-100: hsl(266deg, 100%, 15%);
-  --lavender-20: hsl(264deg, 64%, 91%);
-  --lavender-30: hsl(264deg, 61%, 84%);
-  --lavender-40: hsl(266deg, 58%, 75%);
-  --lavender-50: hsl(268deg, 57%, 66%);
-  --lavender-60: hsl(270deg, 55%, 56%);
-  --lavender-70: hsl(271deg, 57%, 43%);
-  --lavender-80: hsl(275deg, 89%, 29%);
-  --lavender-90: hsl(273deg, 100%, 21%);
+  --lavender-10: rgb(243, 243, 243);
+  --lavender-100: rgb(0, 0, 0);
+  --lavender-20: rgb(217, 217, 217);
+  --lavender-30: rgb(189, 189, 189);
+  --lavender-40: rgb(154, 154, 154);
+  --lavender-50: rgb(119, 119, 119);
+  --lavender-60: rgb(81, 81, 81);
+  --lavender-70: rgb(47, 47, 47);
+  --lavender-80: rgb(8, 8, 8);
+  --lavender-90: rgb(0, 0, 0);
   --layer-active-1: rgb(84, 81, 81);
   --layer-active-2: rgb(112, 110, 109);
   --layer-hover-1: rgba(58, 56, 56, 0.5);
@@ -2174,33 +2164,33 @@ body.theme-dark {
   --motion-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
   --motion-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
   --motion-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
-  --pink-10: hsl(352.5, 100%, 96.9%);
-  --pink-20: hsl(355.6, 100%, 92%);
-  --pink-30: hsl(352.8, 94.9%, 84.5%);
-  --pink-40: hsl(351.4, 86.2%, 74.5%);
-  --pink-60: hsl(343.4, 62.8%, 49.6%);
-  --pink-70: hsl(339.4, 71.6%, 35.9%);
-  --pink-80: hsl(342.1, 82.5%, 24.7%);
-  --pink-90: hsl(346.4, 100%, 16.5%);
-  --pistachio: hsl(63, 70.9%, 33.7%);
-  --pistachio-10: hsl(69.2, 37.1%, 93.1%);
-  --pistachio-100: hsl(52.8, 100%, 4.9%);
-  --pistachio-20: hsl(67.1, 37.8%, 82.4%);
-  --pistachio-30: hsl(64.8, 36.9%, 67.1%);
-  --pistachio-40: hsl(63.5, 42.6%, 47.8%);
-  --pistachio-50: hsl(63, 70.9%, 33.7%);
-  --pistachio-60: hsl(62.1, 100%, 22.7%);
-  --pistachio-70: hsl(61.4, 100%, 16.7%);
-  --pistachio-80: hsl(60, 100%, 11.6%);
-  --pistachio-90: hsl(58.5, 100%, 7.8%);
-  --red-10: hsl(12.6, 100%, 96.3%);
-  --red-20: hsl(12.9, 100%, 90%);
-  --red-30: hsl(12, 100%, 81.4%);
-  --red-40: hsl(11.7, 94.7%, 70.4%);
-  --red-60: hsl(9.6, 66.2%, 46.5%);
-  --red-70: hsl(358, 63.4%, 37.5%);
-  --red-80: hsl(342.1, 82.5%, 24.7%);
-  --red-90: hsl(346.4, 100%, 16.5%);
+  --pink-10: rgb(255, 240, 242);
+  --pink-20: rgb(255, 214, 217);
+  --pink-30: rgb(253, 180, 189);
+  --pink-40: rgb(246, 136, 152);
+  --pink-60: rgb(208, 47, 92);
+  --pink-70: rgb(158, 26, 71);
+  --pink-80: rgb(117, 11, 42);
+  --pink-90: rgb(87, 0, 20);
+  --pistachio: rgb(142, 148, 25);
+  --pistachio-10: rgb(242, 244, 231);
+  --pistachio-100: rgb(26, 22, 0);
+  --pistachio-20: rgb(222, 227, 192);
+  --pistachio-30: rgb(197, 202, 140);
+  --pistachio-40: rgb(169, 175, 70);
+  --pistachio-50: rgb(142, 148, 25);
+  --pistachio-60: rgb(113, 117, 0);
+  --pistachio-70: rgb(85, 87, 0);
+  --pistachio-80: rgb(61, 61, 0);
+  --pistachio-90: rgb(41, 40, 0);
+  --red-10: rgb(255, 239, 235);
+  --red-20: rgb(255, 215, 204);
+  --red-30: rgb(255, 177, 158);
+  --red-40: rgb(251, 134, 106);
+  --red-60: rgb(199, 66, 41);
+  --red-70: rgb(158, 36, 40);
+  --red-80: rgb(117, 11, 42);
+  --red-90: rgb(87, 0, 20);
   --size-0: 0px;
   --size-10: 64px;
   --size-11: 80px;
@@ -2209,25 +2199,25 @@ body.theme-dark {
   --table-hover-highlight-color: rgba(102, 153, 97, 0.15);
   --table-sticky-height: 600px;
   --text-placeholder: rgb(112, 110, 109);
-  --viridian: hsl(151.5, 24.9%, 48%);
-  --viridian-10: hsl(96, 18.5%, 94.7%);
-  --viridian-100: hsl(156.9, 100%, 5.1%);
-  --viridian-20: hsl(100, 21.1%, 86.1%);
-  --viridian-30: hsl(111.8, 17.5%, 75.3%);
-  --viridian-40: hsl(144.3, 19%, 61.8%);
-  --viridian-50: hsl(151.5, 24.9%, 48%);
-  --viridian-60: hsl(161, 34.8%, 35.5%);
-  --viridian-70: hsl(165.7, 52.1%, 23.7%);
-  --viridian-80: hsl(168, 100%, 12.7%);
-  --viridian-90: hsl(163.6, 100%, 8.6%);
-  --yellow-10: hsl(44.3, 95.5%, 91.4%);
-  --yellow-20: hsl(41.1, 88.1%, 80.2%);
-  --yellow-30: hsl(40.2, 87.2%, 63.1%);
-  --yellow-40: hsl(41.6, 70.4%, 49%);
-  --yellow-60: hsl(39.5, 100%, 29.8%);
-  --yellow-70: hsl(35, 100%, 23.5%);
-  --yellow-80: hsl(28.4, 100%, 18.2%);
-  --yellow-90: hsl(19.4, 100%, 13.9%);
+  --viridian: rgb(92, 153, 124);
+  --viridian-10: rgb(242, 245, 240);
+  --viridian-100: rgb(0, 26, 16);
+  --viridian-20: rgb(217, 227, 212);
+  --viridian-30: rgb(183, 203, 180);
+  --viridian-40: rgb(140, 177, 155);
+  --viridian-50: rgb(92, 153, 124);
+  --viridian-60: rgb(60, 124, 104);
+  --viridian-70: rgb(29, 93, 78);
+  --viridian-80: rgb(0, 66, 53);
+  --viridian-90: rgb(0, 46, 33);
+  --yellow-10: rgb(254, 243, 210);
+  --yellow-20: rgb(249, 221, 159);
+  --yellow-30: rgb(243, 189, 79);
+  --yellow-40: rgb(212, 159, 37);
+  --yellow-60: rgb(153, 101, 0);
+  --yellow-70: rgb(122, 71, 0);
+  --yellow-80: rgb(92, 43, 0);
+  --yellow-90: rgb(71, 23, 0);
 }
 
 body .markdown-rendered a.external-link {
@@ -2520,18 +2510,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2543,18 +2522,8 @@ body div.suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-right-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-bottom-color: light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2564,10 +2533,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -2596,30 +2562,8 @@ body div.multi-select-pill {
     sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: light-dark(
-    rgba(246, 141, 69, 0.15),
-    rgba(102, 153, 97, 0.15)
-  );
-  border-right-color: light-dark(
-    rgba(246, 141, 69, 0.15),
-    rgba(102, 153, 97, 0.15)
-  );
-  border-top-color: light-dark(
-    rgba(246, 141, 69, 0.15),
-    rgba(102, 153, 97, 0.15)
-  );
-  border-bottom-color: light-dark(
-    rgba(246, 141, 69, 0.15),
-    rgba(102, 153, 97, 0.15)
-  );
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px solid
+    light-dark(rgba(246, 141, 69, 0.15), rgba(102, 153, 97, 0.15));
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -2638,18 +2582,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2673,18 +2606,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2695,25 +2617,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2723,28 +2631,14 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2754,27 +2648,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2783,14 +2663,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -2854,18 +2728,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2879,18 +2742,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2929,18 +2781,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2954,18 +2795,7 @@ body .search-results .suggestion-item {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3089,18 +2919,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3113,18 +2932,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3134,26 +2942,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3162,10 +2956,7 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body
   .callout[data-callout="note"]
@@ -3181,27 +2972,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3223,18 +3000,7 @@ body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3256,18 +3022,7 @@ body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3289,18 +3044,7 @@ body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3322,18 +3066,7 @@ body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3355,18 +3088,7 @@ body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3388,18 +3110,7 @@ body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3421,18 +3132,7 @@ body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3454,18 +3154,7 @@ body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3487,18 +3176,7 @@ body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3520,18 +3198,7 @@ body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3553,18 +3220,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

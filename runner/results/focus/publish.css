@@ -76,12 +76,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(
-    106.9879518072deg,
-    62.406%,
-    73.9216%,
-    0.15
-  );
+  --background-modifier-active-hover: hsla(106.9879518072deg, 62%, 74%, 0.15);
   --background-modifier-border: #222222;
   --background-modifier-border-focus: #505050;
   --background-modifier-border-hover: #303030;
@@ -122,8 +117,7 @@ body.theme-dark {
   --bases-table-cell-background-active: #1a1a1a;
   --bases-table-cell-background-disabled: #1a1a1a;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(106.9879518072deg, 62%, 74%);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -146,7 +140,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: rgba(234, 169, 255, 0.1);
-  --blockquote-border-color: hsl(285.3488372093deg, 100%, 83.1373%);
+  --blockquote-border-color: hsl(285.3488372093deg, 100%, 83%);
   --blockquote-border-thickness: 4px;
   --blockquote-font-style: normal;
   --bold-modifier: 200;
@@ -173,7 +167,7 @@ body.theme-dark {
   --callout-summary: 139, 240, 219;
   --callout-tip: 139, 240, 219;
   --callout-title-padding: 0;
-  --callout-title-weight: calc(400 + 200);
+  --callout-title-weight: 600;
   --callout-todo: 151, 192, 243;
   --callout-warning: 255, 200, 163;
   --canvas-background: #1a1a1a;
@@ -189,8 +183,8 @@ body.theme-dark {
   --caret-color: #909090;
   --checkbox-border-color: #505050;
   --checkbox-border-color-hover: #707070;
-  --checkbox-color: hsl(106.9879518072deg, 62.406%, 73.9216%);
-  --checkbox-color-hover: hsl(106.9879518072deg, 62.406%, calc(73.9216% + 10%));
+  --checkbox-color: hsl(106.9879518072deg, 62%, 74%);
+  --checkbox-color-hover: hsl(106.9879518072deg, 62.406%, 83.9216%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #1a1a1a;
   --checkbox-radius: 0px;
@@ -217,10 +211,10 @@ body.theme-dark {
   --code-value: #ac9df2;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #505050;
-  --collapse-icon-color-collapsed: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --collapse-icon-color-collapsed: hsl(106.9879518072deg, 62%, 74%);
   --color-accent: hsl(106.9879518072deg, 62.406%, 73.9216%);
-  --color-accent-1: hsl(106.9879518072deg, 62.406%, calc(73.9216% - 10%));
-  --color-accent-2: hsl(106.9879518072deg, 62.406%, calc(73.9216% + 10%));
+  --color-accent-1: hsl(106.9879518072deg, 62%, 64%);
+  --color-accent-2: hsl(106.9879518072deg, 62.406%, 83.9216%);
   --color-accent-hsl: 106.9879518072deg, 62.406%, 73.9216%;
   --color-base-00: #1a1a1a;
   --color-base-05: #1a1a1a;
@@ -257,7 +251,7 @@ body.theme-dark {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: transparent;
-  --divider-color-hover: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --divider-color-hover: hsl(106.9879518072deg, 62%, 74%);
   --divider-vertical-height: 100%;
   --divider-width: 0px;
   --divider-width-hover: 3px;
@@ -351,13 +345,13 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 0px;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 44px);
+  --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
   --graph-line: #303030;
   --graph-node: #707070;
   --graph-node-attachment: #f0e395;
-  --graph-node-focused: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --graph-node-focused: hsl(106.9879518072deg, 62%, 74%);
   --graph-node-tag: #a5e693;
   --graph-node-unresolved: #505050;
   --graph-text: #909090;
@@ -393,12 +387,12 @@ body.theme-dark {
   --h6-weight: 500;
   --header-height: 40px;
   --heading-formatting: #505050;
-  --heading-spacing: calc(1rem * 2.5);
+  --heading-spacing: 2.5rem;
   --highlight-mix-blend-mode: lighten;
   --hr-color: #222222;
   --hr-thickness: 2px;
   --icon-color: #707070;
-  --icon-color-active: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --icon-color-active: hsl(106.9879518072deg, 62%, 74%);
   --icon-color-focused: #909090;
   --icon-color-hover: #707070;
   --icon-l: 18px;
@@ -441,12 +435,8 @@ body.theme-dark {
   --input-radius: 0px;
   --input-shadow: 0 0 0 0 transparent;
   --input-shadow-hover: 0 0 0 0 transparent;
-  --interactive-accent: hsl(106.9879518072deg, 62.406%, 73.9216%);
-  --interactive-accent-hover: hsl(
-    106.9879518072deg,
-    62.406%,
-    calc(73.9216% + 10%)
-  );
+  --interactive-accent: hsl(106.9879518072deg, 62%, 74%);
+  --interactive-accent-hover: hsl(106.9879518072deg, 62.406%, 83.9216%);
   --interactive-accent-hsl: 106.9879518072deg, 62.406%, 73.9216%;
   --interactive-hover: #303030;
   --interactive-normal: #222222;
@@ -464,26 +454,17 @@ body.theme-dark {
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: hsl(285.3488372093deg, 100%, 83.1373%);
-  --link-color-hover: hsl(285.3488372093deg, 100%, calc(83.1373% + 10%));
+  --link-color-hover: hsl(285.3488372093deg, 100%, 93%);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
   --link-external-color: hsl(285.3488372093deg, 100%, 83.1373%);
-  --link-external-color-hover: hsl(
-    285.3488372093deg,
-    100%,
-    calc(83.1373% + 10%)
-  );
+  --link-external-color-hover: hsl(285.3488372093deg, 100%, 93%);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: hsl(285.3488372093deg, 100%, 83.1373%);
-  --link-unresolved-decoration-color: hsla(
-    106.9879518072deg,
-    62.406%,
-    73.9216%,
-    0.3
-  );
+  --link-unresolved-decoration-color: hsla(106.9879518072deg, 62%, 74%, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -497,7 +478,7 @@ body.theme-dark {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #505050;
-  --list-marker-color-collapsed: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --list-marker-color-collapsed: hsl(106.9879518072deg, 62%, 74%);
   --list-marker-color-hover: #707070;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -529,7 +510,7 @@ body.theme-dark {
     "??", "??", "??", JetBrains Mono, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #909090;
   --metadata-label-background: transparent;
@@ -579,21 +560,12 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: rgba(255, 255, 255, 0.075);
   --nav-item-background-hover: rgba(255, 255, 255, 0.075);
-  --nav-item-background-selected: hsla(
-    106.9879518072deg,
-    62.406%,
-    73.9216%,
-    0.05
-  );
+  --nav-item-background-selected: hsla(106.9879518072deg, 62%, 74%, 0.05);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #707070;
   --nav-item-color-active: #909090;
-  --nav-item-color-highlighted: hsl(
-    106.9879518072deg,
-    62.406%,
-    calc(73.9216% + 10%)
-  );
+  --nav-item-color-highlighted: hsl(106.9879518072deg, 62%, 84%);
   --nav-item-color-hover: #909090;
   --nav-item-color-selected: #909090;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -619,7 +591,7 @@ body.theme-dark {
   --pill-color: #707070;
   --pill-color-hover: #909090;
   --pill-color-remove: #505050;
-  --pill-color-remove-hover: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --pill-color-remove-hover: hsl(106.9879518072deg, 62%, 74%);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -669,7 +641,7 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
     0px 15px 30px rgba(0, 0, 0, 0.15);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -740,17 +712,13 @@ body.theme-dark {
   --tab-switcher-preview-radius: 0px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px
-    hsl(106.9879518072deg, 62.406%, 73.9216%);
+    hsl(106.9879518072deg, 62%, 74%);
   --tab-text-color: #707070;
   --tab-text-color-active: #ffffff;
   --tab-text-color-focused: #707070;
   --tab-text-color-focused-active: #ffffff;
   --tab-text-color-focused-active-current: #ffffff;
-  --tab-text-color-focused-highlighted: hsl(
-    106.9879518072deg,
-    62.406%,
-    73.9216%
-  );
+  --tab-text-color-focused-highlighted: hsl(106.9879518072deg, 62%, 74%);
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: #222222;
@@ -765,11 +733,7 @@ body.theme-dark {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: hsl(
-    106.9879518072deg,
-    62.406%,
-    73.9216%
-  );
+  --table-drag-handle-background-active: hsl(106.9879518072deg, 62%, 74%);
   --table-drag-handle-color: #505050;
   --table-drag-handle-color-active: black;
   --table-drop-indicator-half-width: 2px;
@@ -784,19 +748,19 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(106.9879518072deg, 62.406%, 73.9216%, 0.1);
+  --table-selection: hsla(106.9879518072deg, 62%, 74%, 0.1);
   --table-selection-blend-mode: lighten;
   --table-selection-border-color: hsl(106.9879518072deg, 62.406%, 73.9216%);
   --table-selection-border-radius: 0;
   --table-selection-border-width: 2px;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(106.9879518072deg, 62.406%, 73.9216%, 0.1);
+  --tag-background: hsla(106.9879518072deg, 62%, 74%, 0.1);
   --tag-background-hover: hsla(106.9879518072deg, 62.406%, 73.9216%, 0.2);
-  --tag-border-color: hsla(106.9879518072deg, 62.406%, 73.9216%, 0.15);
+  --tag-border-color: hsla(106.9879518072deg, 62%, 74%, 0.15);
   --tag-border-color-hover: hsla(106.9879518072deg, 62.406%, 73.9216%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --tag-color: hsl(106.9879518072deg, 62%, 74%);
   --tag-color-hover: hsl(106.9879518072deg, 62.406%, 73.9216%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -804,8 +768,8 @@ body.theme-dark {
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
-  --text-accent: hsl(106.9879518072deg, 62.406%, 73.9216%);
-  --text-accent-hover: hsl(106.9879518072deg, 62.406%, calc(73.9216% + 10%));
+  --text-accent: hsl(106.9879518072deg, 62%, 74%);
+  --text-accent-hover: hsl(106.9879518072deg, 62.406%, 83.9216%);
   --text-error: #f5988f;
   --text-faint: #505050;
   --text-highlight-bg: transparent;
@@ -845,7 +809,7 @@ body.theme-dark {
   --viewer-container-height: 0;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --xfa-focus-outline: auto;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
   --h1-color: #ffffff;
   --h2-color: #ffffff;
@@ -856,32 +820,27 @@ body.theme-dark {
   --inline-title-color: #ffffff;
   --vault-name-color: #909090;
   --bold-color: hsl(106.9879518072deg, 62.406%, 73.9216%);
-  --italic-color: hsl(285.3488372093deg, 100%, 83.1373%);
+  --italic-color: hsl(285.3488372093deg, 100%, 83%);
   --color-base-80: #c0c0c0;
   --color-base-90: #e0e0e0;
-  --embed-border-left: 2px solid hsl(106.9879518072deg, 62.406%, 73.9216%);
+  --embed-border-left: 2px solid hsl(106.9879518072deg, 62%, 74%);
   --embed-border-right: none;
   --nav-item-children-margin-left: 12px;
   --nav-item-children-padding-left: 4px;
-  --status-bar-scroll-padding: calc(12px + 18px);
+  --status-bar-scroll-padding: 30px;
   --vault-name-font-size: 13px;
   --vault-name-font-weight: 500;
   --color-base-15: #1a1a1a;
   --color-accent-rgb: 165, 230, 147;
-  --color-complement: hsl(285.3488372093deg, 100%, 83.1373%);
-  --color-complement-1: hsl(285.3488372093deg, 100%, calc(83.1373% - 10%));
-  --color-complement-2: hsl(285.3488372093deg, 100%, calc(83.1373% + 10%));
+  --color-complement: hsl(285.3488372093deg, 100%, 83%);
+  --color-complement-1: hsl(285.3488372093deg, 100%, 73.1373%);
+  --color-complement-2: hsl(285.3488372093deg, 100%, 93%);
   --color-complement-hsl: 285.3488372093deg, 100%, 83.1373%;
   --color-complement-rgb: 234, 169, 255;
   --complement-h: 285.3488372093deg;
   --complement-l: 83.1373%;
   --complement-s: 100%;
-  --mb-background-modifier-active: hsla(
-    106.9879518072deg,
-    62.406%,
-    73.9216%,
-    0.05
-  );
+  --mb-background-modifier-active: hsla(106.9879518072deg, 62%, 74%, 0.05);
   --mb-background-modifier-active-hover: hsla(
     106.9879518072deg,
     62.406%,
@@ -889,8 +848,8 @@ body.theme-dark {
     0.1
   );
   --shiki-code-normal: #909090;
-  --text-complement: hsl(285.3488372093deg, 100%, 83.1373%);
-  --text-complement-hover: hsl(285.3488372093deg, 100%, calc(83.1373% + 10%));
+  --text-complement: hsl(285.3488372093deg, 100%, 83%);
+  --text-complement-hover: hsl(285.3488372093deg, 100%, 93.1373%);
   --text-important: #ffffff;
 }
 
@@ -1154,18 +1113,7 @@ body .suggestion-item.is-selected {
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1177,18 +1125,8 @@ body div.suggestion-item {
   color: rgb(218, 218, 218);
 }
 body .markdown-rendered hr {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: solid;
-  border-left-color: rgb(54, 54, 54);
-  border-right-color: rgb(54, 54, 54);
-  border-top-color: rgb(54, 54, 54);
-  border-bottom-color: rgb(54, 54, 54);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 0px;
+  border: 0px rgb(54, 54, 54);
+  border-top: 2px solid rgb(54, 54, 54);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1198,10 +1136,7 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 32px 0px;
   margin-block-end: 32px;
   margin-block-start: 32px;
   margin-inline-end: 0px;
@@ -1216,18 +1151,7 @@ body div.multi-select-pill {
     "Source Code Pro", monospace;
   font-weight: 400;
   margin-inline-start: 0px;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-left-color: rgba(165, 230, 147, 0.15);
-  border-right-color: rgba(165, 230, 147, 0.15);
-  border-top-color: rgba(165, 230, 147, 0.15);
-  border-bottom-color: rgba(165, 230, 147, 0.15);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px solid rgba(165, 230, 147, 0.15);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -1246,18 +1170,7 @@ body .markdown-rendered ul > li {
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1281,18 +1194,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1303,25 +1205,11 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: rgb(218, 218, 218);
   font-family: monospace;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1331,28 +1219,14 @@ body .markdown-rendered pre > code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1362,27 +1236,13 @@ body pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: rgb(133, 133, 133);
-  border-right-color: rgb(133, 133, 133);
-  border-top-color: rgb(133, 133, 133);
-  border-bottom-color: rgb(133, 133, 133);
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset rgb(133, 133, 133);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1391,14 +1251,8 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 1px 2px;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -1462,18 +1316,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: rgb(18, 18, 18);
-  border-left-style: inset;
-  border-bottom-style: inset;
-  border-right-style: inset;
-  border-top-style: inset;
-  border-left-color: rgb(133, 133, 133);
-  border-right-color: rgb(133, 133, 133);
-  border-top-color: rgb(133, 133, 133);
-  border-bottom-color: rgb(133, 133, 133);
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border: 2px inset rgb(133, 133, 133);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1487,18 +1330,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1537,18 +1369,7 @@ body .search-results > * {
   user-select: none;
 }
 body div.search-results {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1562,18 +1383,7 @@ body .search-results .suggestion-item {
   color: rgb(218, 218, 218);
 }
 body div.search-results .suggestion-item {
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1697,18 +1507,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1721,18 +1520,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1742,26 +1530,12 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1770,10 +1544,7 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body
   .callout[data-callout="note"]
@@ -1789,27 +1560,13 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1831,18 +1588,7 @@ body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1864,18 +1610,7 @@ body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1897,18 +1632,7 @@ body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1930,18 +1654,7 @@ body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1963,18 +1676,7 @@ body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1996,18 +1698,7 @@ body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2029,18 +1720,7 @@ body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2062,18 +1742,7 @@ body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2095,18 +1764,7 @@ body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2128,18 +1786,7 @@ body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2161,18 +1808,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-left-color: rgb(218, 218, 218);
-  border-right-color: rgb(218, 218, 218);
-  border-top-color: rgb(218, 218, 218);
-  border-bottom-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
