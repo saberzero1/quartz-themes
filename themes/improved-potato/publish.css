@@ -958,7 +958,7 @@ body.theme-light {
   --callout-icon-c2: lucide-scan !important;
   --callout-icon-c3: lucide-scan !important;
   --callout-icon-c4: lucide-scan !important;
-  --callout-icon-mt:   !important;
+  --callout-icon-mt:    !important;
   --current-line-number-color: #dac752 !important;
   --line-number-color: #7886a1 !important;
 }
