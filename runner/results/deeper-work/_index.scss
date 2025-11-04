@@ -448,18 +448,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -472,18 +461,8 @@ body {
   }
 
   hr {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: solid;
-    border-left-color: rgb(33, 38, 45);
-    border-right-color: rgb(33, 38, 45);
-    border-top-color: rgb(33, 38, 45);
-    border-bottom-color: rgb(33, 38, 45);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 2px;
-    border-bottom-width: 0px;
+    border: 0px rgb(33, 38, 45);
+    border-top: 2px solid rgb(33, 38, 45);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -493,10 +472,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     box-shadow: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -530,18 +506,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -563,18 +528,7 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -601,18 +555,7 @@ body {
 
   code {
     background-color: rgb(22, 27, 34);
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-right-style: solid;
-    border-top-style: solid;
-    border-left-color: rgb(33, 38, 45);
-    border-right-color: rgb(33, 38, 45);
-    border-top-color: rgb(33, 38, 45);
-    border-bottom-color: rgb(33, 38, 45);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px solid rgb(33, 38, 45);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -623,27 +566,13 @@ body {
     border-end-end-radius: 4px;
     color: rgb(63, 185, 80);
     font-family: "JetBrains Mono";
-    padding-top: 2.4px;
-    padding-bottom: 2.4px;
-    padding-left: 4.8px;
-    padding-right: 4.8px;
+    padding: 2.4px 4.8px;
   }
 
   pre > code,
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -653,28 +582,14 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     overflow-x: visible;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -684,28 +599,14 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     overflow-x: visible;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   input[type="checkbox"] {
     appearance: auto;
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -714,14 +615,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 1px 2px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -788,18 +683,7 @@ body {
 
   .search > .search-button {
     background-color: rgb(18, 18, 18);
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -814,18 +698,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -839,18 +712,7 @@ body {
 
   .search > .search-container > .search-space > input {
     background-color: rgb(18, 18, 18);
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: rgb(133, 133, 133);
-    border-right-color: rgb(133, 133, 133);
-    border-top-color: rgb(133, 133, 133);
-    border-bottom-color: rgb(133, 133, 133);
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset rgb(133, 133, 133);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -892,18 +754,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -928,18 +779,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1130,18 +970,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1155,18 +984,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1176,26 +994,12 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     mix-blend-mode: normal;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout .callout-title {
     gap: inherit;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1204,10 +1008,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
@@ -1222,28 +1023,14 @@ body {
 
   .callout > .callout-content {
     background-color: rgba(0, 0, 0, 0);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1263,18 +1050,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1294,18 +1070,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1325,18 +1090,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1356,18 +1110,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1387,18 +1130,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1418,18 +1150,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1449,18 +1170,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1480,18 +1190,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1511,18 +1210,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1542,18 +1230,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1573,18 +1250,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1604,18 +1270,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-    border-top-color: rgb(218, 218, 218);
-    border-bottom-color: rgb(218, 218, 218);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2016,10 +1671,7 @@ body {
 
       div.sidebar.left,
       div.sidebar.left:has(.explorer) {
-        padding-left: 1rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        padding: 1rem 1.5rem 1rem 1rem;
       }
       div.sidebar.right,
       footer {

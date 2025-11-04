@@ -6,22 +6,18 @@
 }
 
 :root:root {
-  --code-background: rgb(
-    calc(95 * 0.05 + 255 * (1 - 0.05)),
-    calc(75 * 0.05 + 251 * (1 - 0.05)),
-    calc(189 * 0.05 + 255 * (1 - 0.05))
-  ) !important;
+  --code-background: rgb(247, 242.2, 251.7) !important;
   --code-border-color: #fff !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: hsl(258, calc(88% * 0.3), 20%) !important;
+  --code-comment: rgb(46, 38, 64) !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
   --code-normal: #111 !important;
   --code-operator: #e93147 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: hsl(258, calc(88% * 0.3), 20%) !important;
+  --code-punctuation: rgb(46, 38, 64) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
@@ -30,20 +26,16 @@
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
-  --graph-node: hsl(258, calc(88% * 0.3), 20%) !important;
+  --graph-node: rgb(46, 38, 64) !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: hsl(258, calc(88% * 0.6), 50%) !important;
+  --graph-node-focused: rgb(100, 60, 195) !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: hsl(258, calc(88% * 0.3), 20%) !important;
+  --graph-node-unresolved: rgb(46, 38, 64) !important;
   --graph-text: #111 !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: rgb(
-    calc(202 * 0.05 + 28 * (1 - 0.05)),
-    calc(190 * 0.05 + 27 * (1 - 0.05)),
-    calc(255 * 0.05 + 30 * (1 - 0.05))
-  ) !important;
-  --code-border-color: hsl(258, calc(88% * 0.1), 15%) !important;
+  --code-background: rgb(36.7, 35.15, 41.25) !important;
+  --code-border-color: rgb(37, 35, 42) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #666666 !important;
@@ -53,7 +45,7 @@
   --code-normal: #e5e1e5 !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: hsl(258, calc(88% * 0.31), 80%) !important;
+  --code-punctuation: rgb(198, 190, 218) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
@@ -62,9 +54,9 @@
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
-  --graph-node: hsl(258, calc(88% * 0.31), 80%) !important;
+  --graph-node: rgb(198, 190, 218) !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: hsl(258, calc(88% * 0.4), 90%) !important;
+  --graph-node-focused: rgb(226, 221, 238) !important;
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #e5e1e5 !important;
@@ -650,18 +642,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -674,18 +655,8 @@ body {
   }
 
   hr {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: solid;
-    border-left-color: light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
-    border-right-color: light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
-    border-top-color: light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
-    border-bottom-color: light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 2px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
+    border-top: 2px solid light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -695,10 +666,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     box-shadow: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -732,18 +700,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -765,18 +722,7 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -803,18 +749,7 @@ body {
 
   code {
     background-color: light-dark(rgb(232, 225, 249), rgb(69, 66, 76));
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-right-style: solid;
-    border-top-style: solid;
-    border-left-color: light-dark(rgb(255, 255, 255), rgb(37, 35, 42));
-    border-right-color: light-dark(rgb(255, 255, 255), rgb(37, 35, 42));
-    border-top-color: light-dark(rgb(255, 255, 255), rgb(37, 35, 42));
-    border-bottom-color: light-dark(rgb(255, 255, 255), rgb(37, 35, 42));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px solid light-dark(rgb(255, 255, 255), rgb(37, 35, 42));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -828,27 +763,13 @@ body {
       "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas, ui-monospace,
       SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
       "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 2px 4px;
   }
 
   pre > code,
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -858,28 +779,14 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     overflow-x: visible;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -889,28 +796,14 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     overflow-x: visible;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   input[type="checkbox"] {
     appearance: auto;
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -919,14 +812,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 1px 2px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -1006,18 +893,7 @@ body {
 
   .search > .search-button {
     background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1032,18 +908,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1057,18 +922,7 @@ body {
 
   .search > .search-container > .search-space > input {
     background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-    border-left-style: inset;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-top-style: inset;
-    border-left-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-right-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-bottom-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1110,18 +964,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1146,18 +989,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1348,18 +1180,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1373,18 +1194,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1394,26 +1204,12 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     mix-blend-mode: normal;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout .callout-title {
     gap: inherit;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1422,10 +1218,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
@@ -1440,28 +1233,14 @@ body {
 
   .callout > .callout-content {
     background-color: rgba(0, 0, 0, 0);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1481,18 +1260,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1512,18 +1280,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1543,18 +1300,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1574,18 +1320,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1605,18 +1340,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1636,18 +1360,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1667,18 +1380,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1698,18 +1400,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1729,18 +1420,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1760,18 +1440,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1791,18 +1460,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1822,18 +1480,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-right-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2234,10 +1881,7 @@ body {
 
       div.sidebar.left,
       div.sidebar.left:has(.explorer) {
-        padding-left: 1rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        padding: 1rem 1.5rem 1rem 1rem;
       }
       div.sidebar.right,
       footer {
