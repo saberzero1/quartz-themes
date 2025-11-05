@@ -23,8 +23,8 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-testingMode = true;
-const testingTheme = "z";
+// testingMode = true;
+const testingTheme = "l";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
@@ -299,7 +299,9 @@ async function getStylesFromObsidian(
         // await browser.setWindowSize(1920, 10800);
         const darkPage = browser.getObsidianPage();
         await darkPage.loadWorkspaceLayout("default");
+        await sleep(250);
         await darkPage.setTheme(fullName);
+        await sleep(250);
         // await browser.executeObsidianCommand("theme:use-dark");
         await browser.executeObsidian(async ({ app }) => {
           const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
@@ -307,9 +309,9 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
-        await sleep(500);
+        await sleep(250);
         await browser.reloadObsidian();
-        await sleep(500);
+        await sleep(250);
         await browser.executeObsidian(async ({ app, plugins }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
@@ -382,7 +384,9 @@ async function getStylesFromObsidian(
         // await browser.setWindowSize(1920, 10800);
         const lightPage = browser.getObsidianPage();
         await lightPage.loadWorkspaceLayout("default");
+        await sleep(250);
         await lightPage.setTheme(fullName);
+        await sleep(250);
         // await browser.executeObsidianCommand("theme:use-light");
         await browser.executeObsidian(async ({ app }) => {
           const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
@@ -390,9 +394,9 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
-        await sleep(500);
+        await sleep(250);
         await browser.reloadObsidian();
-        await sleep(500);
+        await sleep(250);
         await browser.executeObsidian(async ({ app, plugins }) => {
           const clickableFolder = document.querySelector(
             "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
