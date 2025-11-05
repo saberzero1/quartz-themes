@@ -645,6 +645,7 @@ body {
   --text-highlight-bg: #ffff0088;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
+  --mu-text-highlight-fg: var(--text-normal);
 
   /* Font Settings */
   --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1106,6 +1107,11 @@ input[type="text"],
 input[type="search"] {
   background-color: var(--mu-input-bg-color);
   color: var(--mu-caret-color);
+}
+
+input[type="text"]:hover,
+input[type="search"]:hover {
+  background-color: var(--mu-input-bg-color);
 }
 
 .inline-title:not([data-level]) {
@@ -5428,7 +5434,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 /* Open bg */
 .style-settings-collapse-indicator>svg {
-  width: 11px;
+  width: 30px;
   height: 11px;
   vertical-align: middle;
 }
@@ -7248,9 +7254,22 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
 }
 
 .style-settings-container .themed-color-wrapper .pickr-reset>button {
-  padding: var(--size-4-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-2-2);
   box-shadow: none;
+  background-color: transparent !important;
   border: 0 !important;
+}
+
+.style-settings-container .themed-color-wrapper .pickr-reset>button:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+.is-phone .setting-item-control .pickr button {
+  width: 2em;
+  margin-right: var(--size-4-1);
 }
 
 /* Close button */
@@ -8109,6 +8128,12 @@ button.mod-destructive {
 
 .suggestion-item.mod-complex .suggestion-hotkey:not(:last-child) {
   margin-right: var(--size-4-1);
+}
+
+/* Highlighted text foreground color */
+.markdown-rendered mark,
+span.cm-highlight {
+  color: var(--mu-text-highlight-fg) !important;
 }
 
 /* Style Settings */
@@ -9345,6 +9370,15 @@ settings:
         title: Italic text color
         type: variable-themed-color
         description: Italic text color.
+        format: hex
+        opacity: false
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
+    -
+        id: mu-text-highlight-fg
+        title: Highlighted text foreground color
+        type: variable-themed-color
+        description: Foreground color used in highlighted text.
         format: hex
         opacity: false
         default-light: '#000000'

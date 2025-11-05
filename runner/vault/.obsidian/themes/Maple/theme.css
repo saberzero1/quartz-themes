@@ -1,4 +1,4 @@
-/* Maple Theme v1.1.2 For Obsidian */
+/* Maple Theme v1.2.0 For Obsidian */
 /* @settings
 id: maple-basic
 name: Maple Basic
@@ -81,8 +81,6 @@ settings:
       type: variable-color
       title: Custom Highlight Color (Active)
       title.zh: 自定义高亮色（激活状态）
-      description: Affects saturation and brightness of the background color.
-      description.zh: 影响背景色的饱和度和亮度。
       default: "#"
       format: hsl-split
       opacity: false
@@ -120,12 +118,21 @@ settings:
             value: color-active-alt-dark
           - label: Custom
             value: color-active-custom-dark
+    - id: setting-bg-delta-dark
+      type: variable-number-slider
+      title: Background Brightness
+      title.zh: 背景亮度
+      description: Increase the brightness of background color
+      description.zh: 增加背景色的亮度
+      default: 0
+      format: "%"
+      min: 0
+      max: 8
+      step: 0.1
     - id: setting-color-active-custom-dark
       type: variable-color
       title: Custom Highlight Color (Active)
       title.zh: 自定义高亮色（激活状态）
-      description: Affects saturation and brightness of the background color.
-      description.zh: 影响背景色的饱和度和亮度。
       default: "#"
       format: hsl-split
       opacity: false
@@ -353,7 +360,7 @@ settings:
       type: variable-text
       title: Setting Panel Header Title
       title.zh: 设置面板标题
-      default: Maple 1.1.2
+      default: Maple 1.2.0
       quotes: true
     - id: modal-header-search
       type: class-toggle
@@ -885,10 +892,10 @@ settings:
       type: variable-themed-color
       title: Internal Link Color
       title.zh: 内部链接颜色
-      format: rgb-values
-      opacity: true
-      default-light: "#"
       default-dark: "#"
+      default-light: "#"
+      format: rgb-values
+      opacity: false
     - id: setting-link-internal-color-underline
       type: variable-themed-color
       title: Internal Link Underline Color
@@ -901,10 +908,10 @@ settings:
       type: variable-themed-color
       title: External Link Color
       title.zh: 外部链接颜色
-      format: rgb-values
-      opacity: true
-      default-light: "#"
       default-dark: "#"
+      default-light: "#"
+      format: rgb-values
+      opacity: false
     - id: setting-link-external-color-underline
       type: variable-themed-color
       title: External Link Underline Color
@@ -993,13 +1000,13 @@ settings:
       default-dark: "#"
     - id: heading-h1-center
       type: class-toggle
-      title: H1 Centered Text
-      title.zh: H1 居中文本
+      title: H1 Centered
+      title.zh: H1 居中
       default: true
     - id: heading-h1-italic
       type: class-toggle
-      title: H1 Italic Text
-      title.zh: H1 斜体文本
+      title: H1 Italic Style
+      title.zh: H1 斜体样式
     - id: setting-h1-font
       type: variable-text
       title: H1 Font Family
@@ -1070,13 +1077,13 @@ settings:
       default-dark: "#"
     - id: heading-h2-center
       type: class-toggle
-      title: H2 Centered Text
-      title.zh: H2 居中文本
+      title: H2 Centered
+      title.zh: H2 居中
       default: false
     - id: heading-h2-italic
       type: class-toggle
-      title: H2 Italic Text
-      title.zh: H2 斜体文本
+      title: H2 Italic Style
+      title.zh: H2 斜体样式
     - id: setting-h2-font
       type: variable-text
       title: H2 Font Family
@@ -1147,13 +1154,13 @@ settings:
       default-dark: "#"
     - id: heading-h3-center
       type: class-toggle
-      title: H3 Centered Text
-      title.zh: H3 居中文本
+      title: H3 Centered
+      title.zh: H3 居中
       default: false
     - id: heading-h3-italic
       type: class-toggle
-      title: H3 Italic Text
-      title.zh: H3 斜体文本
+      title: H3 Italic Style
+      title.zh: H3 斜体样式
     - id: setting-h3-font
       type: variable-text
       title: H3 Font Family
@@ -1224,13 +1231,13 @@ settings:
       default-dark: "#"
     - id: heading-h4-center
       type: class-toggle
-      title: H4 Centered Text
-      title.zh: H4 居中文本
+      title: H4 Centered
+      title.zh: H4 居中
       default: false
     - id: heading-h4-italic
       type: class-toggle
-      title: H4 Italic Text
-      title.zh: H4 斜体文本
+      title: H4 Italic Style
+      title.zh: H4 斜体样式
     - id: setting-h4-font
       type: variable-text
       title: H4 Font Family
@@ -1301,13 +1308,13 @@ settings:
       default-dark: "#"
     - id: heading-h5-center
       type: class-toggle
-      title: H5 Centered Text
-      title.zh: H5 居中文本
+      title: H5 Centered
+      title.zh: H5 居中
       default: false
     - id: heading-h5-italic
       type: class-toggle
-      title: H5 Italic Text
-      title.zh: H5 斜体文本
+      title: H5 Italic Style
+      title.zh: H5 斜体样式
     - id: setting-h5-font
       type: variable-text
       title: H5 Font Family
@@ -1378,13 +1385,13 @@ settings:
       default-dark: "#"
     - id: heading-h6-center
       type: class-toggle
-      title: H6 Centered Text
-      title.zh: H6 居中文本
+      title: H6 Centered
+      title.zh: H6 居中
       default: false
     - id: heading-h6-italic
       type: class-toggle
-      title: H6 Italic Text
-      title.zh: H6 斜体文本
+      title: H6 Italic Style
+      title.zh: H6 斜体样式
     - id: setting-h6-font
       type: variable-text
       title: H6 Font Family
@@ -1678,16 +1685,24 @@ settings:
       default-dark: "#"
     - id: code-line-number
       type: class-toggle
-      title: Add Code Block Line Numbers in Live Preview Mode
-      title.zh: 在实时预览模式下为代码块添加行号
+      title: Enable Code Block Line Numbers in Live Preview Mode
+      title.zh: 在实时预览模式下启用代码块行号
       description: Due to the limitation of Obsidian's render strategy, if the code
           block has too many lines, line numbering may be incorrect
       description.zh: 由于 Obsidian 渲染方式的限制，如果代码块行数过多，行号可能会出现错误
       default: true
+    - id: setting-code-language-color
+      type: variable-themed-color
+      title: Language Indicator Color
+      title.zh: 语言标识颜色
+      format: hex
+      opacity: true
+      default-light: "#"
+      default-dark: "#"
     - id: code-language
       type: class-toggle
-      title: Add Code Block Language Indicator in Reading View
-      title.zh: 在阅读视图下为代码块添加语言标识
+      title: Enable Code Block Language Indicator in Reading View
+      title.zh: 在阅读视图下启用代码块语言标识
       default: true
     - id: code-nowrap
       type: class-toggle
@@ -1709,18 +1724,10 @@ settings:
       default: ""
     - id: code-mac-style-header
       type: class-toggle
-      title: Add Mac Style Code Block Header in Reading View
-      title.zh: 在阅读视图下为代码块添加 Mac 风格标题栏
+      title: Add macOS Style Code Block Header in Reading View
+      title.zh: 在阅读视图下为代码块添加 macOS 风格标题栏
       description: No code block border; No effective when exporting PDF
       description.zh: 无代码块边框；导出 PDF 时不生效
-    - id: setting-code-language-color
-      type: variable-themed-color
-      title: Language Indicator Color
-      title.zh: 语言标识颜色
-      format: hex
-      opacity: true
-      default-light: "#"
-      default-dark: "#"
     - id: code-theme
       type: class-toggle
       title: Use Theme's Color Scheme
@@ -2204,9 +2211,9 @@ body {
     calc(var(--theme-accent-active-s) * 0.5),
     calc(8% + var(--theme-accent-active-l) * 0.1 * var(--color-opacity))
   );
-  --background-primary-hsl: var(--base-accent-h), 5%, 11%;
+  --background-primary-hsl: var(--base-accent-h), 6%, 11%;
   --background-primary-alt-hsl: var(--base-accent-h), 10%, 13%;
-  --background-secondary-hsl: calc(var(--base-accent-h) - 18), 6%, 12%;
+  --background-secondary-hsl: calc(var(--base-accent-h) - 8), 6%, 12%;
   --background-modifier-hover: hsl(
     var(--base-accent-h),
     var(--theme-accent-active-s),
@@ -2221,7 +2228,7 @@ body {
   --base-accent-h: var(--setting-color-active-custom-dark-h, 210);
   --background-primary-hsl: var(--base-accent-h), 4%, 10%;
   --background-primary-alt-hsl: var(--base-accent-h), 8%, 12%;
-  --background-secondary-hsl: calc(var(--base-accent-h) - 18), 4%, 12%;
+  --background-secondary-hsl: calc(var(--base-accent-h) - 8), 4%, 12%;
   --frame-bg: hsl(
     var(--base-accent-h),
     calc(var(--theme-accent-active-s) * 0.1),
@@ -2233,6 +2240,13 @@ body {
   --theme-accent-inactive-l: var(--setting-color-inactive-custom-dark-l, 42%);
 }
 .theme-dark.color-use-custom {
+  --bg-delta-dark: var(--setting-bg-delta-dark, 0%);
+  --background-primary-hsl: var(--base-accent-h),
+    calc(5% + var(--bg-delta-dark) / 2), calc(11% + var(--bg-delta-dark));
+  --background-primary-alt-hsl: var(--base-accent-h),
+    calc(10% + var(--bg-delta-dark) / 2), calc(13% + var(--bg-delta-dark));
+  --background-secondary-hsl: calc(var(--base-accent-h) - 18),
+    calc(6% + var(--bg-delta-dark) / 2), calc(12% + var(--bg-delta-dark));
   --base-accent-h: var(--setting-accent-h-dark, 207);
   --theme-accent-active-s: 24%;
   --theme-accent-active-l: 52%;
@@ -2297,14 +2311,14 @@ html[lang=zh] {
   padding: var(--size-4-1);
 }
 
-body:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) {
+body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) {
   position: relative;
 }
-body:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) :is(div, input) {
+body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) :is(div, input) {
   visibility: hidden;
   pointer-events: none;
 }
-body:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color])::before {
+body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color])::before {
   content: var(--system-accent-override-text-cotent, "Controlled by Style Settings Plugin");
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
@@ -2461,12 +2475,15 @@ body.color-use-minimal .setting-item:is([data-id=setting-accent-h-light],
 [data-id=setting-accent-h-dark],
 [data-id=color-active-light],
 [data-id=color-active-dark]),
+body:not(.color-active-custom-light) .setting-item:is([data-id=setting-color-active-custom-light],
+[data-id=setting-color-inactive-custom-light]),
+body:not(.color-active-custom-dark) .setting-item:is([data-id=setting-color-active-custom-dark],
+[data-id=setting-color-inactive-custom-dark]),
 body:not(.editor-custom-bottom-spacing) .setting-item[data-id=setting-editor-bottom-spacing],
 body:not(.list-enable) .setting-item:is([data-id*=setting-list-],
 [data-id=list-checkbox],
 [data-id=list-bullet-thread-style]),
 body:not(.list-bullet-thread-style) .setting-item[data-id=setting-list-guide-color],
-body:not(.code-language) .setting-item[data-id=setting-code-language-color],
 body:not(.code-preview-bg) .setting-item[data-id=setting-code-bg-outer],
 body:not(.modal-header) .setting-item:is([data-id=modal-header-search],
 [data-id=setting-modal-header-title]),
@@ -2534,12 +2551,15 @@ body.color-use-minimal .setting-item:is([data-id=setting-accent-h-light],
 [data-id=setting-accent-h-dark],
 [data-id=color-active-light],
 [data-id=color-active-dark]) + .style-settings-container,
+body:not(.color-active-custom-light) .setting-item:is([data-id=setting-color-active-custom-light],
+[data-id=setting-color-inactive-custom-light]) + .style-settings-container,
+body:not(.color-active-custom-dark) .setting-item:is([data-id=setting-color-active-custom-dark],
+[data-id=setting-color-inactive-custom-dark]) + .style-settings-container,
 body:not(.editor-custom-bottom-spacing) .setting-item[data-id=setting-editor-bottom-spacing] + .style-settings-container,
 body:not(.list-enable) .setting-item:is([data-id*=setting-list-],
 [data-id=list-checkbox],
 [data-id=list-bullet-thread-style]) + .style-settings-container,
 body:not(.list-bullet-thread-style) .setting-item[data-id=setting-list-guide-color] + .style-settings-container,
-body:not(.code-language) .setting-item[data-id=setting-code-language-color] + .style-settings-container,
 body:not(.code-preview-bg) .setting-item[data-id=setting-code-bg-outer] + .style-settings-container,
 body:not(.modal-header) .setting-item:is([data-id=modal-header-search],
 [data-id=setting-modal-header-title]) + .style-settings-container,
@@ -2666,7 +2686,7 @@ body {
 }
 
 body.app-layout-card:not(.is-mobile) {
-  --divider-color: var(--setting-divider-color, transparent);
+  --divider-color: transparent;
   --pdf-background: transparent;
   --tab-divider-color: var(--color-base-35);
   --tab-active-shadow: none !important;
@@ -2714,6 +2734,11 @@ body.app-layout-card:not(.is-mobile) .workspace-split.mod-left-split > .workspac
 }
 body.app-layout-card:not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
   translate: calc(-1 * var(--size-4-1));
+}
+body.app-layout-card:not(.is-mobile) .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tabs > .workspace-leaf-resize-handle {
+  border-color: var(--setting-divider-color, transparent);
+  inset-inline: var(--size-4-1);
+  width: unset;
 }
 body.app-layout-card:not(.is-mobile).app-layout-card-gradient:not(.color-use-minimal) {
   --bg-opacity: 0.6;
@@ -3034,7 +3059,7 @@ body.line-indicator-full .cm-line.HyperMD-codeblock:hover {
 :is(kbd, .setting-hotkey, .prompt-instruction-command) {
   user-select: none;
   text-transform: capitalize;
-  font-family: var(--font-interface) !important;
+  font-family: -apple-system, BlinkMacSystemFont, var(--font-monospace);
   border-radius: 6px;
   background-color: var(--color-base-05);
   padding: 2px var(--size-2-3);
@@ -3224,6 +3249,10 @@ body {
   --code-border-width: 1px;
 }
 
+code {
+  font-family: var(--font-monospace);
+}
+
 .cm-hmd-codeblock.cm-formatting,
 .markdown-rendered code {
   color: var(--inline-code);
@@ -3307,7 +3336,7 @@ code {
 .markdown-source-view.mod-cm6 .code-block-flair {
   --cursor: pointer;
   padding-block: 0;
-  color: var(--inline-code);
+  color: var(--setting-code-language-color, var(--inline-code));
   transition: background-color var(--animation);
   font-family: var(--font-monospace);
   font-weight: 550;
@@ -3914,32 +3943,33 @@ body:is(:not(.css-settings-manager), .code-language) .markdown-rendered pre[clas
 
 @media screen {
   body.code-mac-style-header .markdown-rendered pre {
+    --mac-header-height: calc(var(--font-ui-smaller) + var(--size-4-4));
     border: none;
-    padding-top: calc(var(--code-size) * var(--line-height-normal) * 1.5);
-    padding-bottom: calc(var(--code-size) * 0.5);
+    padding-top: calc(var(--font-ui-smaller) * 0.5 + var(--mac-header-height));
+    padding-bottom: calc(var(--font-ui-smaller) * 0.5);
   }
   body.code-mac-style-header .markdown-rendered pre::after {
     content: "";
-    width: 100%;
-    height: calc(var(--code-size) * var(--line-height-normal) * 1.2);
+    height: var(--mac-header-height);
     background-color: var(--code-mac-style-header-bg);
     top: 0;
-    left: 0;
+    inset-inline: 0;
     position: absolute;
     border-top-left-radius: var(--code-radius);
     border-top-right-radius: var(--code-radius);
   }
   body.code-mac-style-header .markdown-rendered pre::before {
     content: "";
-    width: calc(var(--code-size) - var(--size-2-1));
-    height: calc(var(--code-size) - var(--size-2-1));
     position: absolute;
-    left: 0.6rem;
-    top: calc((var(--code-size) - var(--size-2-1)) * var(--line-height-normal) * 0.6 - var(--code-size) / 4);
+    width: calc(var(--mac-header-height) * 0.4);
+    height: calc(var(--mac-header-height) * 0.4);
+    left: calc(var(--mac-header-height) * 0.4);
+    top: calc(var(--mac-header-height) / 2);
+    translate: 0 -50%;
     border-radius: 50%;
     z-index: 9;
     background-color: rgba(255, 94, 92, var(--color-opacity));
-    box-shadow: calc(var(--size-4-5) * 0.9) 0 0 0 rgba(255, 187, 78, var(--color-opacity)), calc(var(--size-4-5) * 1.8) 0 0 0 rgba(81, 188, 0, var(--color-opacity));
+    box-shadow: calc(var(--mac-header-height) * 0.6) 0 0 0 rgba(255, 187, 78, var(--color-opacity)), calc(var(--mac-header-height) * 1.2) 0 0 0 rgba(81, 188, 0, var(--color-opacity));
   }
   body.code-mac-style-header .markdown-rendered pre .copy-code-button {
     z-index: 10;
@@ -3976,15 +4006,25 @@ body:is(:not(.css-settings-manager), .code-language) .markdown-rendered pre[clas
   --code-bg-s: 50%;
   --code-bg-l: 85%;
 }
-.code-preview-bg .markdown-preview-view .markdown-preview-section div:has(> pre:not([class*=frontmatter])) {
-  padding: var(--size-4-4) var(--size-4-8);
-  margin-block: var(--size-4-4);
-  background-image: var(--setting-code-bg-outer, linear-gradient(-30deg, hsl(calc(var(--base-accent-h) + 145), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 115), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 90), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 65), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 35), var(--code-bg-s), var(--code-bg-l))));
-}
-
-.theme-dark {
+.code-preview-bg.theme-dark {
   --code-bg-s: 20%;
   --code-bg-l: 45%;
+}
+.code-preview-bg .markdown-preview-view .markdown-preview-section .el-pre {
+  padding: var(--size-4-4) var(--size-4-8);
+  margin-block: var(--size-4-4);
+  border-radius: var(--code-radius);
+  background-image: var(--setting-code-bg-outer, linear-gradient(-30deg, hsl(calc(var(--base-accent-h) + 145), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 115), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 90), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 65), var(--code-bg-s), var(--code-bg-l)), hsl(calc(var(--base-accent-h) + 35), var(--code-bg-s), var(--code-bg-l))));
+}
+.code-preview-bg .markdown-preview-view .markdown-preview-section .el-pre pre::before {
+  translate: var(--size-4-8) var(--size-4-4);
+}
+.code-preview-bg .markdown-preview-view .markdown-preview-section .el-pre pre::after {
+  top: var(--size-4-4);
+  inset-inline: var(--size-4-8);
+}
+.code-preview-bg .markdown-preview-view .markdown-preview-section .el-pre button.copy-code-button {
+  translate: calc(var(--size-4-8) * -1) var(--size-4-4);
 }
 
 /* #endregion code */
@@ -6405,6 +6445,7 @@ body.canvas-center .canvas-node-content.markdown-embed > .markdown-embed-content
   padding: var(--size-4-1);
   margin-top: var(--size-4-2);
   gap: var(--size-2-3);
+  transition: background-color var(--animation-fast);
 }
 .metadata-container [data-property-key=tag] .lucide-list {
   -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1zM2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193'/><circle cx='10.5' cy='6.5' r='.5' fill='currentColor'/></g></svg>") no-repeat;
@@ -6516,6 +6557,9 @@ input.metadata-property-key-input,
 .better-command-palette .prompt-instruction {
   display: none;
 }
+.better-command-palette .prompt-instruction-command {
+  font-family: -apple-system, BlinkMacSystemFont, var(--font-monospace);
+}
 .better-command-palette .prompt-instructions::before {
   content: var(var(--prompt-text));
   position: absolute;
@@ -6527,6 +6571,10 @@ input.metadata-property-key-input,
 }
 .better-command-palette .prompt-instructions:hover .prompt-instruction {
   display: inline-block;
+}
+.better-command-palette .suggestion-item .suggestion-hotkey {
+  padding: 0 var(--size-4-2);
+  font-family: -apple-system, BlinkMacSystemFont, var(--font-monospace);
 }
 .better-command-palette[palette-mode=commands] {
   --action: var(--action-text-command, "Command");
@@ -6589,11 +6637,9 @@ body.calendar-swap-year-month #calendar-container .nav .title {
   display: flex;
   flex-direction: row-reverse;
   font-weight: normal;
-  font-size: 1.2rem;
 }
 body.calendar-swap-year-month #calendar-container .nav .title .year {
   color: var(--text-normal);
-  letter-spacing: 0.1rem;
   display: flex;
   align-items: center;
 }
@@ -6605,7 +6651,6 @@ body.calendar-swap-year-month #calendar-container .nav .title .year::after {
 body.calendar-swap-year-month #calendar-container .nav .title .month {
   height: var(--size-4-6);
   line-height: var(--size-4-6);
-  letter-spacing: 0.1rem;
   font-weight: 550;
   color: var(--accent-active);
 }
@@ -6613,6 +6658,8 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 #calendar-container {
   --color-text-today: var(--text-on-accent);
   --color-text-weeknum: var(--accent-active);
+  max-width: var(--setting-calendar-max-width, 500px);
+  margin-inline: auto;
 }
 #calendar-container thead {
   border-bottom: var(--size-2-1) solid var(--accent-active);
@@ -6620,7 +6667,7 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 #calendar-container th {
   padding: 2px 0 4px;
   font-weight: 550;
-  letter-spacing: 0.1em;
+  background-color: transparent !important;
 }
 #calendar-container .nav {
   padding: 0;
@@ -6632,7 +6679,8 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
   margin-left: unset;
 }
 #calendar-container .day {
-  border: 1px solid transparent;
+  padding: var(--size-2-1) var(--size-4-1) !important;
+  border: none;
 }
 #calendar-container .day:hover {
   border-color: var(--accent-inactive);
@@ -6657,7 +6705,6 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 }
 #calendar-container .title {
   line-height: 1;
-  font-size: 1.4rem;
   white-space: nowrap;
 }
 #calendar-container .dot-container {
@@ -6695,15 +6742,6 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 .workspace-leaf-content[data-type=calendar] .view-content {
   padding-inline: var(--size-4-1);
   padding-block: 0;
-}
-
-body #calendar-container {
-  max-width: var(--setting-calendar-max-width, 500px);
-  margin-inline: auto;
-}
-body #calendar-container .day {
-  padding: var(--size-2-1) var(--size-4-1) !important;
-  border: none;
 }
 
 /* #endregion calender */
@@ -6793,7 +6831,7 @@ body #calendar-container .day {
 
 /* #endregion recent-files */
 /* #region shiki */
-.code-mac-style-header .cm-preview-code-block[class*=cm-lang]:not(.cm-lang-query):not(.cm-lang-base) .edit-block-button {
+.code-mac-style-header .cm-preview-code-block[class*=cm-lang]:not(.cm-lang-query):not(.cm-lang-base):not(.cm-lang-dataview) .edit-block-button {
   color: #ddd;
 }
 
@@ -6935,9 +6973,13 @@ body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-cta {
 body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-cta:hover {
   background: linear-gradient(to bottom, transparent -240%, var(--color-accent-1) 100%);
 }
+body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-cta:not(.mod-loading) {
+  color: var(--text-on-accent);
+}
 body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-warning {
   transition: box-shadow var(--animation);
   background: linear-gradient(to bottom, transparent -240%, var(--background-modifier-error) 100%);
+  color: var(--text-on-accent);
 }
 body:is(:not(.css-settings-manager), .modal-control-gradient) button.mod-warning:hover {
   background: linear-gradient(to bottom, transparent -240%, var(--background-modifier-error-hover) 100%);
@@ -7060,26 +7102,26 @@ body:not(.is-mobile).modal-toggle-thin .checkbox-container.is-enabled:active::af
   left: calc(2 * var(--toggle-border-width));
 }
 
+body.modal-header:not(.is-mobile) {
+  --modal-close-button-padding: var(--size-4-2);
+  --modal-header-height: var(--size-4-10);
+}
 body.modal-header:not(.is-mobile) .modal-close-button {
   transition: background-color var(--animation);
   z-index: calc(var(--layer-modal) + 1);
-  top: var(--size-4-3);
-  inset-inline-end: var(--size-4-3);
-}
-body.modal-header:not(.is-mobile) .modal-container {
-  --modal-header-height: var(--size-4-12);
-  --top-search-right: var(--size-4-12);
+  top: var(--modal-close-button-padding);
+  inset-inline-end: var(--modal-close-button-padding);
 }
 body.modal-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
 body.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.1.2");
+  content: var(--setting-modal-header-title, "Maple 1.2.0");
   position: absolute;
   left: 50%;
-  top: var(--size-4-6);
-  transform: translate(-50%, -50%);
-  font-size: calc(1.4 * var(--size-4-4));
+  top: calc(var(--modal-header-height) / 2);
+  translate: -50% -50%;
+  font-size: 18px;
   font-weight: 550;
   color: var(--setting-color-logo, var(--text-accent));
 }
@@ -7112,20 +7154,29 @@ body.modal-header:not(.is-mobile) .mod-settings .modal-content .vertical-tab-con
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
 }
-body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .plugin-list-plugins .setting-item-heading {
-  margin: 0;
+body.modal-header:not(.is-mobile).modal-header-search {
+  --modal-close-button-padding: var(--size-4-3);
+  --modal-header-height: var(--size-4-12);
 }
-body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
-[class="search-input-container mod-hotkey"])) {
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings::before {
+  font-size: 20px;
+}
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content :is(.plugin-list-plugins,
+.vertical-tab-content:is(:has(> .installed-plugins-container),
+:has(> .hotkey-list-container))) > .setting-item:has(input) {
   position: absolute;
   padding: 0;
   top: 0;
-  right: var(--top-search-right);
+  right: var(--modal-header-height);
   border: none;
 }
-body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-item:not(:has(.style-settings-import)):has(:is([class=search-input-container],
-[class="search-input-container mod-hotkey"])) .setting-item-info {
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content :is(.plugin-list-plugins,
+.vertical-tab-content:is(:has(> .installed-plugins-container),
+:has(> .hotkey-list-container))) > .setting-item:has(input) .setting-item-info {
   visibility: hidden;
+}
+body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .plugin-list-plugins .setting-item-heading {
+  margin: 0;
 }
 body.modal-header:not(.is-mobile).modal-header-search .mod-settings .modal-content .setting-filter-container {
   margin-bottom: var(--size-4-1);
@@ -7253,6 +7304,7 @@ body.enable-group-title .modal-container .mod-settings .modal-content .vertical-
 
 :is(.prompt, .popover, .modal) {
   animation: op var(--animation-slow), slide-up var(--animation-slow);
+  will-change: transform, opacity;
 }
 
 body:not(.is-phone) .modal-bg {
@@ -7314,8 +7366,8 @@ body.scrollbar-enable:not(.is-mobile).scrollbar-hover-expand ::-webkit-scrollbar
   border-width: var(--size-2-1) !important;
 }
 body.scrollbar-enable:not(.is-mobile) ::-webkit-scrollbar {
-  width: 0.8rem !important;
-  height: 0.8rem !important;
+  width: 12px !important;
+  height: 12px !important;
   background-color: transparent !important;
 }
 body.scrollbar-enable:not(.is-mobile) ::-webkit-scrollbar-track {
@@ -7324,8 +7376,8 @@ body.scrollbar-enable:not(.is-mobile) ::-webkit-scrollbar-track {
 }
 body.scrollbar-enable:not(.is-mobile) ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
-  border-radius: 0.4rem !important;
-  border: 0.2rem solid transparent !important;
+  border-radius: 8px !important;
+  border: 2.8px solid transparent !important;
   background-color: var(--scrollbar-color) !important;
 }
 body.scrollbar-enable:not(.is-mobile) ::-webkit-scrollbar-thumb:hover {
@@ -7352,7 +7404,7 @@ body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(text
 body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre):hover {
   color: hsla(var(--color-accent-hsl), 24%);
 }
-body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre) * {
+body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre) :not(code) {
   -webkit-text-fill-color: initial;
 }
 body.scrollbar-enable:not(.is-mobile).scrollbar-movein-animation-enable :is(textarea, pre)::-webkit-scrollbar-thumb {
@@ -7401,6 +7453,12 @@ body:is(:not(.css-settings-manager), .explorer-icon) .workspace-tab-header-inner
   display: none;
 }
 
+@media (hover: hover) {
+  .workspace-tab-header-inner,
+  .workspace-drawer-vault-switcher {
+    transition: background-color var(--animation-fast);
+  }
+}
 body:is(:not(.css-settings-manager), .tab-float) {
   --tab-radius: var(--size-2-3);
 }
@@ -7763,22 +7821,9 @@ body.message-modify .notice.is-loading::before {
 
 /* #endregion tag */
 /* #region bookmark */
-.workspace-leaf-content[data-type=bookmarks] {
+.workspace-leaf-content[data-type=bookmarks] .is-active:not(.is-selected) {
   --nav-item-color-active: var(--text-on-accent);
-}
-.workspace-leaf-content[data-type=bookmarks] .tree-item-self.mod-collapsible .tree-item-icon {
-  margin-right: var(--size-4-1);
-}
-.workspace-leaf-content[data-type=bookmarks] .tree-item-self:not(.mod-collapsible) {
-  padding-left: var(--size-2-3);
-}
-.workspace-leaf-content[data-type=bookmarks] .tree-item-self:not(.mod-collapsible) .tree-item-icon {
-  transform: translateY(var(--size-2-1));
-  color: var(--accent-active);
-  width: calc(1.3 * var(--size-4-4));
-}
-.workspace-leaf-content[data-type=bookmarks] .tree-item-self.is-active .tree-item-icon {
-  color: var(--nav-item-color-active);
+  --icon-color: var(--nav-item-color-active);
 }
 
 /* #endregion bookmark */

@@ -264,6 +264,10 @@ pre code {
   color: var(--dracula-string);
 }
 
+.cm-hmd-codeblock.cm-comment {
+  color: var(--dracula-Comment);
+}
+
 /* Preview */
 
 code {

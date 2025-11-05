@@ -1734,6 +1734,7 @@ body.catppuccin-frappe.theme-dark,
 body.catppuccin-macchiato.theme-dark,
 body.catppuccin-mocha.theme-dark {
   --code-normal: var(--cp-green);
+  --code-background: var(--cp-mantle);
 }
 
 /* Scrollbar tweaks scoped to the theme */

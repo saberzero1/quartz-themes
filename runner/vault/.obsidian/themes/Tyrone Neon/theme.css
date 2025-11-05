@@ -297,11 +297,6 @@ body:not(.is-mobile)
 	border: none !important;
 }
 
-.workspace-tab-header-container::before,
-.workspace-tab-header-container::after {
-	display: none !important;
-}
-
 /* Basic headers */
 .workspace-tab-header {
 	border: none !important;
