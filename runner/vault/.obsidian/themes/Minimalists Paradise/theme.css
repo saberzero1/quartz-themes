@@ -42,7 +42,7 @@ settings:
     level: 1
     collapsed: true
 
-  - id: frosted-glass
+  - id: frosted-glass-toggle
     title: frosted glass interface
     description: apply a frosted glass effect to the main componenets of the interface.
     type: class-toggle
@@ -52,7 +52,7 @@ settings:
     title: frosted glass type
     type: class-select
     condition:
-      - id: frosted-glass
+      - id: frosted-glass-toggle
         value: true
     default: frosted-glass
     options:
@@ -501,6 +501,16 @@ settings:
     step: 1
     format: px
     variable: hr-thickness
+
+  - id: checkbox-radius
+    title: checkbox radius
+    type: variable-number-slider
+    default: 16
+    min: 0
+    max: 20
+    step: 1
+    format: px
+    variable: checkbox-radius
 
   - id: p-spacing
     title: paragraph spacing
@@ -1023,14 +1033,10 @@ body:not(.is-mobile) .horizontal-main-container {
   padding-bottom: 24px !important;
 }
 
-::-webkit-scrollbar {
-  background-color: var(--scrollbar-bg);
-  border-radius: var(--default-radius);
-}
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb-bg);
   border-radius: var(--default-radius);
+  width: 2px;
 }
 
 /* ========================================================================== */
@@ -2183,13 +2189,20 @@ body.is-mobile.floating-mobile-nav .mobile-toolbar {
   padding: 0 var(--side-padding) var(--side-padding) !important;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-options-list {
+body.is-tablet.floating-mobile-nav .mobile-toolbar-options-list {
+  gap: 4px;
+  overflow: scroll;
+  border-radius: var(--default-radius);
+  width: calc(100% - 48px - 8px - 48px - 8px);
+}
+
+body.is-phone.floating-mobile-nav .mobile-toolbar-options-list {
   gap: 4px;
   overflow: scroll;
   border-radius: var(--default-radius);
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar {
+body.is-tablet.floating-mobile-nav .mobile-toolbar {
   position: fixed;
   right: 0;
   bottom: max(var(--keyboard-height), 0px);
@@ -2198,6 +2211,17 @@ body.is-mobile.floating-mobile-nav .mobile-toolbar {
   border: none;
   padding: 0 28px max(var(--safe-area-inset-bottom), 16px);
   top: calc(100vh - calc(var(--mobile-toolbar-height) * 1.45));
+}
+
+body.is-phone.floating-mobile-nav .mobile-toolbar {
+  position: fixed;
+  right: 0;
+  bottom: var(--keyboard-height);
+  left: 0;
+  z-index: var(--layer-status-bar);
+  border: none;
+  padding: 0 28px max(var(--safe-area-inset-bottom), 16px);
+  top: unset;
 }
 
 /* ========================================================================== */
@@ -3818,31 +3842,48 @@ body {
   --blur-l: blur(16px) saturate(1.5) brightness(1.025);
 }
 
-.frosted-glass.ice-glass .nav-buttons-container {
+.frosted-glass-toggle.ice-glass .nav-buttons-container {
   background-color: transparent;
   box-shadow: var(--shadow-xxs);
   backdrop-filter: var(--blur-s-alt);
 }
 
-.frosted-glass.frosted-glass .workspace-leaf {
+.frosted-glass-toggle.frosted-glass .workspace-leaf-content {
   box-shadow: var(--shadow-xxs) !important;
   backdrop-filter: var(--blur-l);
   background-color: transparent !important;
 }
 
-.frosted-glass.frosted-glass .nn-navigation-pane,
-.frosted-glass.frosted-glass .nn-list-pane {
+.frosted-glass-toggle.ice-glass .workspace-leaf-content {
   box-shadow: var(--shadow-xxs) !important;
   backdrop-filter: var(--blur-l);
   background-color: transparent !important;
 }
 
-body:not(.is-mobile).frosted-glass.frosted-glass .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+.frosted-glass-toggle.frozen-glass .workspace-leaf-content {
+  box-shadow: var(--shadow-xxs) !important;
+  backdrop-filter: var(--blur-l);
+  background-color: transparent !important;
+}
+
+body.is-mobile.frosted-glass-toggle.frosted-glass .workspace-drawer-inner {
+  box-shadow: var(--shadow-xxs) !important;
+  backdrop-filter: var(--blur-s-alt);
+}
+
+body.is-mobile.frosted-glass-toggle.frosted-glass .workspace-leaf-content[data-type='file-explorer'] {
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+body:not(.is-mobile).frosted-glass-toggle.frosted-glass .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   box-shadow: var(--shadow-xxs) !important;
   backdrop-filter: var(--blur-l);
 }
 
-.frosted-glass.frosted-glass .workspace-tab-header.is-active.mod-active {
+.frosted-glass-toggle.frosted-glass .workspace-tab-header.is-active.mod-active {
   flex-grow: 2 !important;
   max-width: 250px;
   background-color: var(--color-accent);
@@ -3852,8 +3893,8 @@ body:not(.is-mobile).frosted-glass.frosted-glass .workspace-split.mod-left-split
   border: none;
 }
 
-.frosted-glass.frosted-glass .mod-left-split .workspace-tab-header-container .is-active,
-.frosted-glass.frosted-glass .mod-right-split .workspace-tab-header-container .is-active {
+.frosted-glass-toggle.frosted-glass .mod-left-split .workspace-tab-header-container .is-active,
+.frosted-glass-toggle.frosted-glass .mod-right-split .workspace-tab-header-container .is-active {
   background-color: var(--color-accent);
   box-sizing: border-box;
   border: none;
@@ -3861,24 +3902,37 @@ body:not(.is-mobile).frosted-glass.frosted-glass .workspace-split.mod-left-split
   backdrop-filter: var(--blur-s);
 }
 
-.frosted-glass.ice-glass .workspace-tab-header {
+.frosted-glass-toggle.ice-glass .workspace-tab-header {
   box-shadow: var(--shadow-xs) !important;
   backdrop-filter: var(--blur-s);
 }
 
-.frosted-glass.frozen-glass .workspace-tab-header {
+.frosted-glass-toggle.frozen-glass .workspace-tab-header {
   box-shadow: var(--shadow-xs) !important;
   backdrop-filter: var(--blur-s);
 }
 
-.frosted-glass.frozen-glass .nav-buttons-container {
+.frosted-glass-toggle.frozen-glass .nav-buttons-container {
   background-color: transparent;
   box-shadow: var(--shadow-xs);
   backdrop-filter: var(--blur-s-alt);
 }
 
-.frosted-glass.frozen-glass .side-dock-ribbon-action {
+.frosted-glass-toggle.frozen-glass .side-dock-ribbon-action {
   border-radius: var(--tab-radius);
   box-shadow: var(--shadow-xs);
   backdrop-filter: var(--blur-s);
+}
+
+.labeled-nav.frosted-glass-toggle.frosted-glass .mod-left-split .mod-top .workspace-tab-header-container .workspace-tab-header-container-inner {
+  padding: var(--size-4-2) var(--size-4-2);
+  flex-direction: column !important;
+  margin-top: var(--labeled-nav-top-margin);
+  margin-bottom: var(--cards-gap);
+  box-shadow: var(--shadow-xxs) !important;
+  backdrop-filter: var(--blur-l);
+  align-items: flex-start !important;
+  width: 100%;
+  border: 1px solid var(--card-border-color) !important;
+  border-radius: var(--card-radius);
 }
