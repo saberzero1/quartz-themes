@@ -24,7 +24,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 
 let testingMode = false;
 testingMode = true;
-const testingTheme = "shiba";
+const testingTheme = "z";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
@@ -235,6 +235,18 @@ function fixCalloutIconColor(results) {
   return results;
 }
 
+function getCurrentTheme() {
+  // obsidian = dark mode, moonstone = light mode
+  let currentTheme = this.app.getTheme() === "obsidian" ? "dark" : "light";
+  return currentTheme;
+}
+
+function setCurrentTheme(mode) {
+  const currentMode = getCurrentTheme();
+  if (currentMode !== mode) {
+  }
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -246,185 +258,206 @@ async function getStylesFromObsidian(
   darkDefaultStyles,
   lightDefaultStyles,
 ) {
-  const [theme, variation] = manifest.name.split(".");
-  const fullName =
-    manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
-  console.log(
-    `Theme: ${theme}, Variation: ${variation}, Full Name: ${fullName}`,
-  );
-  console.log(`Preset: ${preset}`);
-  writeFileSync(
-    `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
-    preset,
-  );
-  const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
-  mkdirSync(`./runner/results/${folder}`, { recursive: true });
-  let lightResult = {
-    general: {},
-    headings: {},
-    callouts: {},
-    integrations: {},
-  };
-  let darkResult = {
-    general: {},
-    headings: {},
-    callouts: {},
-    integrations: {},
-  };
-  console.log(`Extracting styles for theme: ${theme}`);
+  describe("Quartz Theme Style Extraction", async () => {
+    const [theme, variation] = manifest.name.split(".");
+    const fullName =
+      manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
+    console.log(
+      `Theme: ${theme}, Variation: ${variation}, Full Name: ${fullName}`,
+    );
+    console.log(`Preset: ${preset}`);
+    writeFileSync(
+      `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
+      preset,
+    );
+    const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
+    mkdirSync(`./runner/results/${folder}`, { recursive: true });
+    let lightResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
+    let darkResult = {
+      general: {},
+      headings: {},
+      callouts: {},
+      integrations: {},
+    };
+    console.log(`Extracting styles for theme: ${theme}`);
 
-  if (isDarkTheme(theme)) {
-    before(async () => {
-      const darkPage = browser.getObsidianPage();
-      await darkPage.write(
-        "./.obsidian/plugins/obsidian-style-settings/data.json",
-        preset,
-      );
-      await sleep(500);
-    });
-    it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in dark mode`, async () => {
-      const darkPage = browser.getObsidianPage();
-      await darkPage.loadWorkspaceLayout("default");
-      await darkPage.setTheme(fullName);
-      await browser.executeObsidianCommand("theme:use-dark");
-      await sleep(500);
-      await browser.reloadObsidian();
-      await sleep(500);
-      await browser.executeObsidian(async ({ app, plugins }) => {
-        const clickableFolder = document.querySelector(
-          "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+    if (isDarkTheme(theme)) {
+      before(async () => {
+        const darkPage = browser.getObsidianPage();
+        await darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
         );
-        if (clickableFolder) {
-          clickableFolder.click();
-        }
+        await sleep(500);
       });
-      await sleep(500);
-      await darkPage.openFile("general.md");
-      await sleep(100);
-      await darkPage.openFile("general.md");
-      await sleep(900);
-      darkResult.general = await serializeWithStyles(darkDefaultStyles);
-      await sleep(500);
-      await darkPage.openFile("headings.md");
-      await sleep(100);
-      await darkPage.openFile("headings.md");
-      await sleep(900);
-      darkResult.headings = await serializeWithStyles(darkDefaultStyles);
-      await sleep(500);
-      await darkPage.openFile("callouts.md");
-      await sleep(100);
-      await darkPage.openFile("callouts.md");
-      await sleep(900);
-      darkResult.callouts = await serializeWithStyles(darkDefaultStyles);
-      await sleep(500);
-      await darkPage.openFile("integrations.md");
-      await sleep(100);
-      await darkPage.openFile("integrations.md");
-      await sleep(900);
-      darkResult.integrations = await serializeWithStyles(darkDefaultStyles);
-      await sleep(500);
-    });
-    after(async () => {
-      const darkFileName = `./runner/results/${folder}/dark.json`;
-      // Flatten the result object
-      let darkResultObject = {};
-      for (const [key, value] of Object.entries(darkResult)) {
-        if (typeof value === "object") {
-          for (const [subKey, subValue] of Object.entries(value)) {
-            darkResultObject[`${subKey}`] = subValue;
+      it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in dark mode`, async () => {
+        // await browser.setWindowSize(1920, 10800);
+        const darkPage = browser.getObsidianPage();
+        await darkPage.loadWorkspaceLayout("default");
+        await darkPage.setTheme(fullName);
+        // await browser.executeObsidianCommand("theme:use-dark");
+        await browser.executeObsidian(async ({ app }) => {
+          const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+          if (currentMode !== "dark") {
+            app.commands.executeCommandById("theme:toggle-light-dark");
+          }
+        });
+        await sleep(500);
+        await browser.reloadObsidian();
+        await sleep(500);
+        await browser.executeObsidian(async ({ app, plugins }) => {
+          const clickableFolder = document.querySelector(
+            "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+          );
+          if (clickableFolder) {
+            clickableFolder.click();
+          }
+        });
+        await sleep(500);
+        await darkPage.openFile("general.md");
+        await sleep(100);
+        await darkPage.openFile("general.md");
+        await sleep(900);
+        darkResult.general = await serializeWithStyles(darkDefaultStyles);
+        await sleep(500);
+        await darkPage.openFile("headings.md");
+        await sleep(100);
+        await darkPage.openFile("headings.md");
+        await sleep(900);
+        darkResult.headings = await serializeWithStyles(darkDefaultStyles);
+        await sleep(500);
+        await darkPage.openFile("callouts.md");
+        await sleep(100);
+        await darkPage.openFile("callouts.md");
+        await sleep(900);
+        darkResult.callouts = await serializeWithStyles(darkDefaultStyles);
+        await sleep(500);
+        await darkPage.openFile("integrations.md");
+        await sleep(100);
+        await darkPage.openFile("integrations.md");
+        await sleep(900);
+        darkResult.integrations = await serializeWithStyles(darkDefaultStyles);
+        await sleep(500);
+      });
+      after(async () => {
+        const darkFileName = `./runner/results/${folder}/dark.json`;
+        // Flatten the result object
+        let darkResultObject = {};
+        for (const [key, value] of Object.entries(darkResult)) {
+          if (typeof value === "object") {
+            for (const [subKey, subValue] of Object.entries(value)) {
+              darkResultObject[`${subKey}`] = subValue;
+            }
           }
         }
-      }
-      // Sort the keys alphabetically
-      let sortedKeys = Object.keys(darkResultObject).sort();
-      let sortedDarkResultObject = {};
-      for (const key of sortedKeys) {
-        sortedDarkResultObject[key] = darkResultObject[key];
-      }
-      let resultString = JSON.stringify(sortedDarkResultObject, null, 2);
-      writeFileSync(darkFileName, resultString);
-      console.log(`Dark styles saved to ${darkFileName}`);
-      // unset variables to allow garbage collection
-      printMemoryUsage();
-      await sleep(500);
-    });
-  }
-  if (isLightTheme(theme)) {
-    before(async () => {
-      const lightPage = browser.getObsidianPage();
-      await lightPage.write(
-        "./.obsidian/plugins/obsidian-style-settings/data.json",
-        preset,
-      );
-      await sleep(500);
-    });
-    it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in light mode`, async () => {
-      const lightPage = browser.getObsidianPage();
-      await lightPage.loadWorkspaceLayout("default");
-      await lightPage.setTheme(fullName);
-      await browser.executeObsidianCommand("theme:use-light");
-      await sleep(500);
-      await browser.reloadObsidian();
-      await sleep(500);
-      await browser.executeObsidian(async ({ app, plugins }) => {
-        const clickableFolder = document.querySelector(
-          "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
-        );
-        if (clickableFolder) {
-          clickableFolder.click();
+        // Sort the keys alphabetically
+        let sortedKeys = Object.keys(darkResultObject).sort();
+        let sortedDarkResultObject = {};
+        for (const key of sortedKeys) {
+          sortedDarkResultObject[key] = darkResultObject[key];
         }
+        let resultString = JSON.stringify(sortedDarkResultObject, null, 2);
+        writeFileSync(darkFileName, resultString);
+        console.log(`Dark styles saved to ${darkFileName}`);
+        // unset variables to allow garbage collection
+        printMemoryUsage();
+        await sleep(500);
       });
-      await sleep(500);
-      await lightPage.openFile("general.md");
-      await sleep(100);
-      await lightPage.openFile("general.md");
-      await sleep(900);
-      lightResult.general = await serializeWithStyles(lightDefaultStyles);
-      await sleep(500);
-      await lightPage.openFile("headings.md");
-      await sleep(100);
-      await lightPage.openFile("headings.md");
-      await sleep(900);
-      lightResult.headings = await serializeWithStyles(lightDefaultStyles);
-      await sleep(500);
-      await lightPage.openFile("callouts.md");
-      await sleep(100);
-      await lightPage.openFile("callouts.md");
-      await sleep(900);
-      lightResult.callouts = await serializeWithStyles(lightDefaultStyles);
-      await sleep(500);
-      await lightPage.openFile("integrations.md");
-      await sleep(100);
-      await lightPage.openFile("integrations.md");
-      await sleep(900);
-      lightResult.integrations = await serializeWithStyles(lightDefaultStyles);
-      await sleep(500);
-    });
-    after(async () => {
-      // Save the light result to a file
-      const lightFileName = `./runner/results/${folder}/light.json`;
-      // Flatten the result object
-      let lightResultObject = {};
-      for (const [key, value] of Object.entries(lightResult)) {
-        if (typeof value === "object") {
-          for (const [subKey, subValue] of Object.entries(value)) {
-            lightResultObject[`${subKey}`] = subValue;
+    }
+    if (isLightTheme(theme)) {
+      before(async () => {
+        const lightPage = browser.getObsidianPage();
+        await lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
+        );
+        await sleep(500);
+      });
+      it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in light mode`, async () => {
+        // await browser.setWindowSize(1920, 10800);
+        const lightPage = browser.getObsidianPage();
+        await lightPage.loadWorkspaceLayout("default");
+        await lightPage.setTheme(fullName);
+        // await browser.executeObsidianCommand("theme:use-light");
+        await browser.executeObsidian(async ({ app }) => {
+          const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+          if (currentMode !== "light") {
+            app.commands.executeCommandById("theme:toggle-light-dark");
+          }
+        });
+        await sleep(500);
+        await browser.reloadObsidian();
+        await sleep(500);
+        await browser.executeObsidian(async ({ app, plugins }) => {
+          const clickableFolder = document.querySelector(
+            "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+          );
+          if (clickableFolder) {
+            clickableFolder.click();
+          }
+        });
+        await sleep(500);
+        await lightPage.openFile("general.md");
+        await sleep(100);
+        await lightPage.openFile("general.md");
+        await sleep(900);
+        lightResult.general = await serializeWithStyles(lightDefaultStyles);
+        await sleep(500);
+        await lightPage.openFile("headings.md");
+        await sleep(100);
+        await lightPage.openFile("headings.md");
+        await sleep(900);
+        lightResult.headings = await serializeWithStyles(lightDefaultStyles);
+        await sleep(500);
+        await lightPage.openFile("callouts.md");
+        await sleep(100);
+        await lightPage.openFile("callouts.md");
+        await sleep(900);
+        lightResult.callouts = await serializeWithStyles(lightDefaultStyles);
+        await sleep(500);
+        await lightPage.openFile("integrations.md");
+        await sleep(100);
+        await lightPage.openFile("integrations.md");
+        await sleep(900);
+        lightResult.integrations =
+          await serializeWithStyles(lightDefaultStyles);
+        await sleep(500);
+      });
+      after(async () => {
+        // Save the light result to a file
+        const lightFileName = `./runner/results/${folder}/light.json`;
+        // Flatten the result object
+        let lightResultObject = {};
+        for (const [key, value] of Object.entries(lightResult)) {
+          if (typeof value === "object") {
+            for (const [subKey, subValue] of Object.entries(value)) {
+              lightResultObject[`${subKey}`] = subValue;
+            }
           }
         }
-      }
-      // Sort the keys alphabetically
-      let sortedKeys = Object.keys(lightResultObject).sort();
-      let sortedLightResultObject = {};
-      for (const key of sortedKeys) {
-        sortedLightResultObject[key] = lightResultObject[key];
-      }
-      let lightResultString = JSON.stringify(sortedLightResultObject, null, 2);
-      writeFileSync(lightFileName, lightResultString);
-      console.log(`Light styles saved to ${lightFileName}`);
-      // unset variables to allow garbage collection
-      printMemoryUsage();
-    });
-  }
+        // Sort the keys alphabetically
+        let sortedKeys = Object.keys(lightResultObject).sort();
+        let sortedLightResultObject = {};
+        for (const key of sortedKeys) {
+          sortedLightResultObject[key] = lightResultObject[key];
+        }
+        let lightResultString = JSON.stringify(
+          sortedLightResultObject,
+          null,
+          2,
+        );
+        writeFileSync(lightFileName, lightResultString);
+        console.log(`Light styles saved to ${lightFileName}`);
+        // unset variables to allow garbage collection
+        printMemoryUsage();
+      });
+    }
+  });
 }
 
 const manifestCollection = getManifestCollection();
@@ -434,18 +467,28 @@ writeFileSync(
   "{}",
 );
 
-for (const manifest of themeCollection) {
+// filter duplicates
+const manifestTargets = [];
+themeCollection.forEach((themeManifest) => {
+  if (
+    !manifestTargets.find(
+      (m) => sanitize(m.name) === sanitize(themeManifest.name),
+    )
+  ) {
+    manifestTargets.push(themeManifest);
+  }
+});
+
+for (const manifest of manifestTargets) {
   console.log(`Processing target: ${manifest.name}`);
   const preset = JSON.stringify(manifest.style_settings ?? {});
-  describe("Quartz Theme Style Extraction", async () => {
-    await getStylesFromObsidian(
-      manifest,
-      manifestCollection,
-      preset,
-      darkDefaultStyles,
-      lightDefaultStyles,
-    );
-  });
+  await getStylesFromObsidian(
+    manifest,
+    manifestCollection,
+    preset,
+    darkDefaultStyles,
+    lightDefaultStyles,
+  );
 }
 
 writeFileSync(

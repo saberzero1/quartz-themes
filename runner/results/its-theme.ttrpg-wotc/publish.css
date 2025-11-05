@@ -1040,7 +1040,7 @@ body.theme-light {
   --hr-icon-color: #c14343 !important;
   --hr-icon-font: "its" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-icon-symbol:   !important;
+  --hr-icon-symbol:    !important;
   --hr-width: auto !important;
   --hvr: rgba(255, 0, 0, 0.212) !important;
   --hvr-active: rgba(182, 28, 28, 0.5) !important;
@@ -1078,7 +1078,7 @@ body.theme-light {
   --kanban-lane-box-shadow: 2px 2px 0 #fbb4577e !important;
   --kanban-lane-padding: 0 4px !important;
   --kanban-link-color: #df6262 !important;
-  --kanban-link-symbol:   !important;
+  --kanban-link-symbol:    !important;
   --kanban-tag-background: #cd645e !important;
   --latex-color: #a35158 !important;
   --latex-format-color: #e2b7a3 !important;
