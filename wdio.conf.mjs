@@ -40,7 +40,8 @@ if (process.env.OBSIDIAN_VERSIONS) {
     console.log(`${app}/${installer}`);
   }
 } else {
-  versions = [["1.9.14", "1.9.14"]];
+  // versions = [["1.9.14", "1.9.14"]];
+  versions = [["1.10.2", "1.9.14"]];
 }
 
 export const config = {
@@ -68,7 +69,15 @@ export const config = {
       vault: "./runner/vault",
       copy: true,
       //execArgv: ["--disable-gpu", "--no-sandbox"],
+      appArgs: [
+        "--disable-lazy-frame-loading",
+        "--disable-lazy-image-loading",
+        "--disable-partial-raster",
+      ],
     },
+    // "goog:chromeOptions": {
+    //   appArgs: ["--disable-lazy-frame-loading", "--disable-lazy-image-loading", "--disable-partial-raster"]
+    // },
   })),
 
   framework: "mocha",
