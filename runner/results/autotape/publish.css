@@ -927,7 +927,7 @@ body.theme-light {
   --inline-title-color: rgb(153, 115, 247) !important;
   --bold-color: black !important;
   --italic-color: black !important;
-  --header-color:   !important;
+  --header-color:    !important;
   --header-size: 1.25em !important;
 }
 

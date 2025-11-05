@@ -8046,7 +8046,7 @@ body.theme-light {
   --folder-title: #000000 !important;
   --font-family-better-footnote:
     Arlrdbd, "Source Han Sans", "Segoe UI Emoji" !important;
-  --font-family-em:    !important;
+  --font-family-em:     !important;
   --font-family-folder-file-title:
     "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
     "Segoe UI Emoji", sans-serif !important;
@@ -8054,7 +8054,7 @@ body.theme-light {
     "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
     "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
     "Microsoft YaHei", "Source Code Pro", monospace !important;
-  --font-family-list:    !important;
+  --font-family-list:     !important;
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji" !important;
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
@@ -8065,7 +8065,7 @@ body.theme-light {
   --font-family-tag:
     Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif !important;
-  --font-family-title:    !important;
+  --font-family-title:     !important;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji" !important;
   --font-loading-text:
     "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
@@ -8272,7 +8272,7 @@ body.theme-light {
   --popover-height-factor: 1 !important;
   --popover-width-factor: 1 !important;
   --print-em-color: #099d4e !important;
-  --print-strong-color:    !important;
+  --print-strong-color:     !important;
   --prompt-box-shadow: #bebebe !important;
   --radius-xs: 3px !important;
   --saturate-4-bg: 1 !important;

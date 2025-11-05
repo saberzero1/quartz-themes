@@ -872,7 +872,7 @@ body.theme-light {
   --line-height-footnote: 1.2em !important;
   --line-height-header-preview: 1em !important;
   --line-height-preview: 1.7em !important;
-  --link-bg:   !important;
+  --link-bg:    !important;
   --link-bg-hover: #c15e50 !important;
   --link-text: #c15e50 !important;
   --link-text-hover: rgb(254, 254, 254) !important;

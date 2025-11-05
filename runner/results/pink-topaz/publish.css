@@ -878,13 +878,13 @@ body.theme-light {
   --event-item-color8: #f39ba0 !important;
   --event-item-color9: #f39ba0c4 !important;
   --folder-title: #37291a !important;
-  --font-family-folder-file-title:   !important;
-  --font-family-list:   !important;
+  --font-family-folder-file-title:    !important;
+  --font-family-list:    !important;
   --font-family-special-tag:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
-  --font-family-tag:   !important;
-  --font-family-title:   !important;
-  --font-family-vault:   !important;
+  --font-family-tag:    !important;
+  --font-family-title:    !important;
+  --font-family-vault:    !important;
   --font-size-edit-blockquote: 1em !important;
   --font-size-edit-normal: 1em !important;
   --font-size-embed-file: 1.25em !important;
@@ -951,13 +951,13 @@ body.theme-light {
   --color-specification: #fd355a !important;
   --font-family-YAML:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
-  --font-family-h1:   !important;
-  --font-family-h2:   !important;
-  --font-family-h3:   !important;
-  --font-family-h4:   !important;
-  --font-family-h5:   !important;
-  --font-family-h6:   !important;
-  --font-family-major:   !important;
+  --font-family-h1:    !important;
+  --font-family-h2:    !important;
+  --font-family-h3:    !important;
+  --font-family-h4:    !important;
+  --font-family-h5:    !important;
+  --font-family-h6:    !important;
+  --font-family-major:    !important;
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace !important;
   --font-size-edit-code: 1em !important;
   --mark-highlight: #fd355a !important;
