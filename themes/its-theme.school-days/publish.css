@@ -1109,7 +1109,7 @@ body.theme-light {
   --kanban-lane-box-shadow: 2px 2px 0 #e1e6ed !important;
   --kanban-lane-padding: 0 4px !important;
   --kanban-link-color: #5599d0 !important;
-  --kanban-link-symbol:    !important;
+  --kanban-link-symbol:     !important;
   --kanban-tag-background: #5685c6 !important;
   --latex-color: #5895fa !important;
   --latex-format-color: #9ed3ff !important;

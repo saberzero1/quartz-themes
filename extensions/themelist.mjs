@@ -10,5 +10,5 @@ export default function getThemeCollection() {
     manifestCollection.push(manifest);
   });
 
-  return manifestCollection;
+  return [...new Set(manifestCollection)];
 }
