@@ -50,6 +50,13 @@ const defaults = {
     "margin-inline-start",
   ],
   padding: ["padding-top", "padding-bottom", "padding-left", "padding-right"],
+  transition: [
+    "transition-behavior",
+    "transition-delay",
+    "transition-duration",
+    "transition-property",
+    "transition-timing-function",
+  ],
   whiteSpace: [
     "white-space-collapse",
     "text-wrap-mode",
@@ -2344,9 +2351,16 @@ export const config = [
     obsidianSelector: `div.is-active.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"integrations.md\"]`,
     publishSelector: `.nav-view-outer .tree-item-self.mod-active`,
     quartzSelector:
-      ".explorer .explorer-content ul.explorer-ul li:has(> .active)",
+      // might have to be changed to :has(div.folder-container[data-folderpath="var(--current-page-slug)"]) to encapsulate the entire folder
+      '.explorer .explorer-content ul.explorer-ul li:has(> .active), .explorer .explorer-content ul.explorer-ul li > div.folder-container[data-folderpath="var(--current-page-slug)"]',
     pseudoElement: "",
-    properties: ["background-color", "color", "cursor"],
+    properties: [
+      "background-color",
+      ...defaults.border,
+      "color",
+      "cursor",
+      ...defaults.transition,
+    ],
   },
   {
     // closed
