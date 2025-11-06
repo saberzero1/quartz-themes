@@ -1280,6 +1280,30 @@ body {
     text-shadow: none;
   }
 
+  h2.page-title {
+    color: rgb(230, 217, 219);
+    font-family:
+      -apple-system,
+      "system-ui",
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    text-shadow: none;
+  }
+
   li.depth-0 {
     font-weight: 400;
   }
@@ -2116,48 +2140,48 @@ body {
     }
   }
 
-  .callout {
+  blockquote.callout {
     &[data-callout] {
-      --callout-color: var(--callout-todo);
+      --callout-color: rgb(var(--callout-todo));
     }
     &[data-callout="note"] {
-      --callout-color: var(--callout-note);
+      --callout-color: rgb(var(--callout-note));
     }
     &[data-callout="abstract"] {
-      --callout-color: var(--callout-abstract);
+      --callout-color: rgb(var(--callout-abstract));
     }
     &[data-callout="info"] {
-      --callout-color: var(--callout-info);
+      --callout-color: rgb(var(--callout-info));
     }
     &[data-callout="todo"] {
-      --callout-color: var(--callout-todo);
+      --callout-color: rgb(var(--callout-todo));
     }
     &[data-callout="tip"] {
-      --callout-color: var(--callout-tip);
+      --callout-color: rgb(var(--callout-tip));
     }
     &[data-callout="success"] {
-      --callout-color: var(--callout-success);
+      --callout-color: rgb(var(--callout-success));
     }
     &[data-callout="question"] {
-      --callout-color: var(--callout-question);
+      --callout-color: rgb(var(--callout-question));
     }
     &[data-callout="warning"] {
-      --callout-color: var(--callout-warning);
+      --callout-color: rgb(var(--callout-warning));
     }
     &[data-callout="failure"] {
-      --callout-color: var(--callout-failure);
+      --callout-color: rgb(var(--callout-failure));
     }
     &[data-callout="danger"] {
-      --callout-color: var(--callout-danger);
+      --callout-color: rgb(var(--callout-danger));
     }
     &[data-callout="bug"] {
-      --callout-color: var(--callout-bug);
+      --callout-color: rgb(var(--callout-bug));
     }
     &[data-callout="example"] {
-      --callout-color: var(--callout-example);
+      --callout-color: rgb(var(--callout-example));
     }
     &[data-callout="quote"] {
-      --callout-color: var(--callout-quote);
+      --callout-color: rgb(var(--callout-quote));
     }
   }
 }
