@@ -2280,6 +2280,9 @@ body {
   }
 
   blockquote.callout {
+    .callout-title > .callout-title-inner > p {
+      color: var(--color);
+    }
     &[data-callout] {
       --color: rgb(var(--callout-todo));
     }
