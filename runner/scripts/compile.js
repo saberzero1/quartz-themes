@@ -704,8 +704,9 @@ body {
   }
 
   @media all and not ($desktop) {
-    .page > #quartz-body div.sidebar.right {
+    .page > div#quartz-body div.sidebar.right {
       background-color: transparent;
+      border-left: none;
     }
   }
 
@@ -748,6 +749,10 @@ body {
   }
 
   @media all and ($mobile) {
+    .page > div#quartz-body div.sidebar.left {
+      background-color: transparent;
+      border-right: none;
+    }
     .page > #quartz-body {
       padding: 0;
 
