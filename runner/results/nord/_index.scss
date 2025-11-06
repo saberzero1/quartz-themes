@@ -375,13 +375,13 @@ body {
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(rgb(246, 246, 246), rgb(59, 66, 82));
     color: light-dark(rgb(34, 34, 34), rgb(236, 239, 244));
-    border-right-color: light-dark(rgb(224, 224, 224), rgb(67, 76, 94));
+    border-right: 3px solid light-dark(rgb(224, 224, 224), rgb(67, 76, 94));
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(246, 246, 246), rgb(59, 66, 82));
     color: light-dark(rgb(34, 34, 34), rgb(236, 239, 244));
-    border-left-color: light-dark(rgb(224, 224, 224), rgb(67, 76, 94));
+    border-left: 3px solid light-dark(rgb(224, 224, 224), rgb(67, 76, 94));
   }
 
   a.external {

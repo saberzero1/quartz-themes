@@ -404,10 +404,8 @@ body {
       rgba(40, 37, 32, 0.8)
     );
     color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-    border-right-color: light-dark(
-      rgba(210, 207, 197, 0.533),
-      rgba(74, 71, 62, 0.533)
-    );
+    border-right: 1px solid
+      light-dark(rgba(210, 207, 197, 0.533), rgba(74, 71, 62, 0.533));
   }
 
   .page > div#quartz-body div.sidebar.right {
@@ -416,10 +414,8 @@ body {
       rgba(40, 37, 32, 0.8)
     );
     color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-    border-left-color: light-dark(
-      rgba(210, 207, 197, 0.533),
-      rgba(74, 71, 62, 0.533)
-    );
+    border-left: 1px solid
+      light-dark(rgba(210, 207, 197, 0.533), rgba(74, 71, 62, 0.533));
   }
 
   a.external {
