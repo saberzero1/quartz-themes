@@ -440,7 +440,8 @@ body {
       light-dark(oklch(0.65 0.0756825 323.56), oklch(0.18 0.0651598 322.488));
   }
 
-  a.external {
+  a.external,
+  footer a {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
