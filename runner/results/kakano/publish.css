@@ -293,7 +293,7 @@ body.theme-light {
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
   ) !important;
-  --bases-cards-group-padding: 12px !important;
+  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow:
@@ -358,7 +358,6 @@ body.theme-light {
         color-mix(in srgb, rgb(38, 102, 192), black 25%) 10%,
         transparent
       ) !important;
-  --bases-cards-text-size: 0.875em !important;
   --bases-embed-border-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -367,6 +366,16 @@ body.theme-light {
   --bases-embed-border-radius: 0.25rem !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), black 90%),
+    transparent 30%
+  ) !important;
+  --bases-group-heading-property-display: block !important;
+  --bases-group-heading-property-size: 0.7rem !important;
+  --bases-group-heading-property-weight: 400 !important;
+  --bases-group-heading-value-size: 0.875em !important;
+  --bases-group-heading-value-weight: 600 !important;
   --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 0.5em !important;
@@ -378,13 +387,19 @@ body.theme-light {
   ) !important;
   --bases-table-cell-background-active: white !important;
   --bases-table-cell-background-disabled: #fafafa !important;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
+  --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgb(38, 102, 192) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(38, 102, 192) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 0.25rem !important;
   --bases-table-container-border-width: 1px !important;
+  --bases-table-font-size: 0.875em !important;
+  --bases-table-group-background: #fafafa !important;
+  --bases-table-group-gap: 10px !important;
   --bases-table-header-background: white !important;
   --bases-table-header-background-hover: rgb(38, 102, 192) !important;
   --bases-table-header-color: color-mix(
@@ -402,7 +417,8 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-text-size: 0.875em !important;
+  --bases-table-summary-background: white !important;
+  --bases-table-summary-background-hover: rgb(38, 102, 192) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
@@ -536,6 +552,7 @@ body.theme-light {
   --color-red-rgb: 233, 49, 71 !important;
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l) !important;
   --color-yellow-rgb: 224, 172, 0 !important;
+  --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -688,31 +705,37 @@ body.theme-light {
     black 70%
   ) !important;
   --graph-text: color-mix(in srgb, rgb(38, 102, 192), black 90%) !important;
+  --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 39.81312px !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 100 !important;
+  --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 33.1776px !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 200 !important;
+  --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 27.648px !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 300 !important;
+  --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 23.04px !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 400 !important;
+  --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 19.2px !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 500 !important;
+  --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 16px !important;
   --h6-style: normal !important;
@@ -1039,6 +1062,20 @@ body.theme-light {
   --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
   --nav-item-size: 0.8rem !important;
   --nav-item-white-space: pre !important;
+  --nav-tag-background: transparent !important;
+  --nav-tag-color: color-mix(in srgb, rgb(38, 102, 192), black 70%) !important;
+  --nav-tag-color-active: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), black 90%),
+    transparent 30%
+  ) !important;
+  --nav-tag-color-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), black 90%),
+    transparent 30%
+  ) !important;
+  --nav-tag-radius: 0.25rem !important;
+  --nav-tag-weight: 600 !important;
   --p-spacing: 1em !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -1178,7 +1215,11 @@ body.theme-light {
         color-mix(in srgb, rgb(38, 102, 192), black 25%) 10%,
         transparent
       ) !important;
+  --sidebar-left-toggle-inner-width: 8.33% !important;
+  --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 12.8px !important;
+  --sidebar-right-toggle-inner-width: 8.33% !important;
+  --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -2095,7 +2136,7 @@ body.theme-light {
   --theme-shadow-input:
     0 1px 2px hsl(215, 100.5%, 11%, 0.2),
     0 3.4px 6.7px hsl(215, 67%, 11%, 0.15),
-    0 15px 30px hsl(215, 50.25%, 11.25%, 0.05) !important;
+    0 15px 30px hsl(215, 50%, 11.25%, 0.05) !important;
   --theme-value-gradientContrast: 0.2 !important;
   --theme-value-headingScaleFactor: 1.2 !important;
   --theme-value-sidebarFontScalingFactor: 0.8 !important;
@@ -2171,7 +2212,7 @@ body.theme-dark {
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
   );
-  --bases-cards-group-padding: 12px;
+  --bases-cards-font-size: 0.875em;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
   --bases-cards-shadow:
@@ -2236,11 +2277,20 @@ body.theme-dark {
         color-mix(in srgb, rgb(38, 102, 192), black 90%) 10%,
         transparent
       );
-  --bases-cards-text-size: 0.875em;
   --bases-embed-border-color: color-mix(in srgb, rgb(38, 102, 192), black 25%);
   --bases-embed-border-radius: 0.25rem;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
+  --bases-group-heading-property-color: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), white 60%),
+    transparent 30%
+  );
+  --bases-group-heading-property-display: block;
+  --bases-group-heading-property-size: 0.7rem;
+  --bases-group-heading-property-weight: 400;
+  --bases-group-heading-value-size: 0.875em;
+  --bases-group-heading-value-weight: 600;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 0.5em;
@@ -2252,13 +2302,20 @@ body.theme-dark {
     black 95%
   );
   --bases-table-cell-background-disabled: #242424;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(38, 102, 192);
+  --bases-table-cell-radius-focus: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    color-mix(in srgb, rgb(38, 102, 192), black 25%);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(38, 102, 192);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 0.25rem;
   --bases-table-container-border-width: 1px;
+  --bases-table-font-size: 0.875em;
+  --bases-table-group-background: #242424;
+  --bases-table-group-gap: 10px;
   --bases-table-header-background: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2280,7 +2337,12 @@ body.theme-dark {
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875em;
+  --bases-table-summary-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
+  );
+  --bases-table-summary-background-hover: rgb(38, 102, 192);
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
@@ -2402,6 +2464,7 @@ body.theme-dark {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l);
   --color-yellow-rgb: 224, 222, 113;
+  --corner-smoothing: 0;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2546,31 +2609,37 @@ body.theme-dark {
   --graph-node-tag: hsl(from rgb(38, 102, 192) 124 s l);
   --graph-node-unresolved: color-mix(in srgb, rgb(38, 102, 192), white 25%);
   --graph-text: color-mix(in srgb, rgb(38, 102, 192), white 60%);
+  --h1-letter-spacing: -0.015em;
   --h1-line-height: 1.5;
   --h1-size: 39.81312px;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 100;
+  --h2-letter-spacing: -0.011em;
   --h2-line-height: 1.5;
   --h2-size: 33.1776px;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 200;
+  --h3-letter-spacing: -0.008em;
   --h3-line-height: 1.5;
   --h3-size: 27.648px;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 300;
+  --h4-letter-spacing: -0.005em;
   --h4-line-height: 1.5;
   --h4-size: 23.04px;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 400;
+  --h5-letter-spacing: -0.002em;
   --h5-line-height: 1.5;
   --h5-size: 19.2px;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 500;
+  --h6-letter-spacing: 0em;
   --h6-line-height: 1.5;
   --h6-size: 16px;
   --h6-style: normal;
@@ -2836,6 +2905,20 @@ body.theme-dark {
   --nav-item-parent-padding: 0.25em 0 0.25em 0;
   --nav-item-size: 0.8rem;
   --nav-item-white-space: pre;
+  --nav-tag-background: transparent;
+  --nav-tag-color: color-mix(in srgb, rgb(38, 102, 192), white 25%);
+  --nav-tag-color-active: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), white 60%),
+    transparent 30%
+  );
+  --nav-tag-color-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, rgb(38, 102, 192), white 60%),
+    transparent 30%
+  );
+  --nav-tag-radius: 0.25rem;
+  --nav-tag-weight: 600;
   --p-spacing: 1em;
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
@@ -2962,7 +3045,11 @@ body.theme-dark {
         color-mix(in srgb, rgb(38, 102, 192), black 90%) 10%,
         transparent
       );
+  --sidebar-left-toggle-inner-width: 8.33%;
+  --sidebar-left-toggle-inner-width-open: 24%;
   --sidebar-markdown-font-size: 12.8px;
+  --sidebar-right-toggle-inner-width: 8.33%;
+  --sidebar-right-toggle-inner-width-open: 24%;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;

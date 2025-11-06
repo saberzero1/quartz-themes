@@ -6,39 +6,39 @@
 }
 
 :root:root {
-  --code-background: rgb(217, 201, 180) !important;
-  --code-border-color: #e0e0e0 !important;
+  --code-background: rgb(233, 223, 211) !important;
+  --code-border-color: rgb(111, 111, 155) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: transparent !important;
-  --code-comment: rgb(135, 135, 171) !important;
+  --code-comment: rgb(111, 111, 155) !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
   --code-normal: rgb(52, 52, 75) !important;
   --code-operator: #e93147 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: rgb(135, 135, 171) !important;
-  --code-radius: 0px !important;
+  --code-punctuation: rgb(94, 94, 135) !important;
+  --code-radius: 0rem !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(105, 105, 150) !important;
-  --graph-node: rgb(42, 42, 60) !important;
-  --graph-node-attachment: rgb(217, 201, 180) !important;
+  --graph-line: rgb(111, 111, 155) !important;
+  --graph-node: rgb(236, 107, 60) !important;
+  --graph-node-attachment: rgb(200, 176, 146) !important;
   --graph-node-focused: rgb(236, 107, 60) !important;
-  --graph-node-tag: rgb(236, 107, 60) !important;
-  --graph-node-unresolved: rgb(217, 201, 180) !important;
-  --graph-text: rgb(135, 135, 171) !important;
+  --graph-node-tag: rgb(111, 111, 155) !important;
+  --graph-node-unresolved: rgb(111, 111, 155) !important;
+  --graph-text: rgb(111, 111, 155) !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: rgb(105, 105, 150) !important;
-  --code-border-color: #363636 !important;
+  --code-background: rgb(52, 52, 75) !important;
+  --code-border-color: rgb(200, 176, 146) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: transparent !important;
-  --code-comment: rgb(217, 201, 180) !important;
+  --code-comment: rgb(200, 176, 146) !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
@@ -46,20 +46,20 @@
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
   --code-punctuation: rgb(217, 201, 180) !important;
-  --code-radius: 0px !important;
+  --code-radius: 0rem !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(105, 105, 150) !important;
-  --graph-node: rgb(42, 42, 60) !important;
-  --graph-node-attachment: rgb(105, 105, 150) !important;
+  --graph-line: rgb(200, 176, 146) !important;
+  --graph-node: rgb(236, 107, 60) !important;
+  --graph-node-attachment: rgb(200, 176, 146) !important;
   --graph-node-focused: rgb(236, 107, 60) !important;
-  --graph-node-tag: rgb(236, 107, 60) !important;
-  --graph-node-unresolved: rgb(217, 201, 180) !important;
-  --graph-text: rgb(217, 201, 180) !important;
+  --graph-node-tag: rgb(111, 111, 155) !important;
+  --graph-node-unresolved: rgb(200, 176, 146) !important;
+  --graph-text: rgb(200, 176, 146) !important;
 }
 
 html {
@@ -586,7 +586,7 @@ body {
 
   hr {
     border: 0px light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-    border-top: 2px solid light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
+    border-top: 1px solid light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -678,8 +678,8 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(217, 201, 180), rgb(105, 105, 150));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    background-color: light-dark(rgb(217, 201, 180), rgb(94, 94, 135));
+    border: 0px solid light-dark(rgb(111, 111, 155), rgb(200, 176, 146));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -693,7 +693,7 @@ body {
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 2.1px 4.2px;
+    padding: 3.2px 6.4px;
   }
 
   pre > code,
@@ -781,7 +781,7 @@ body {
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(233, 223, 211), rgb(52, 52, 75));
     border-inline-start: inherit;
     font-family:
       ui-sans-serif,
@@ -798,7 +798,7 @@ body {
     font-style: normal;
     padding-bottom: 0px;
     padding-top: 0px;
-    padding-inline-start: 24px;
+    padding-inline-start: 8px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
