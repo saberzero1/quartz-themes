@@ -2170,10 +2170,12 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(rgb(115, 115, 115), rgb(205, 205, 205));
   cursor: pointer;
   filter: none;
   font-family:
+    "IBM Plex Sans",
+    "Helvetica Neue",
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2187,13 +2189,13 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline solid rgb(5, 128, 128);
+  text-decoration-color: light-dark(rgb(65, 176, 176), rgb(5, 128, 128));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

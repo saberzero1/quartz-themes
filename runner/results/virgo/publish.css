@@ -1758,6 +1758,8 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
+    "LXGW WenKai GB Screen R",
+    jinkaiFont,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -1777,7 +1779,7 @@ body .markdown-rendered a.external-link {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
