@@ -1935,6 +1935,13 @@ export const config = [
     pseudoElement: "",
     properties: sets.headings,
   },
+  {
+    obsidianSelector: `div.inline-title`,
+    publishSelector: null, //TODO
+    quartzSelector: "h2.page-title",
+    pseudoElement: "",
+    properties: sets.headings,
+  },
   // outline
   {
     obsidianSelector: `div.is-clickable.mod-collapsible.tree-item-self`,
