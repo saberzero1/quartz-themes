@@ -770,6 +770,8 @@ body {
     white-space: pre;
 
     & > code {
+      overflow-x: auto;
+
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         color: var(--code-value) !important;
       }
