@@ -1475,7 +1475,7 @@ export const config = [
   {
     obsidianSelector: `a.external-link`,
     publishSelector: `.markdown-rendered a.external-link`,
-    quartzSelector: "a.external",
+    quartzSelector: "a.external, footer a",
     pseudoElement: "",
     properties: sets.text,
   },
