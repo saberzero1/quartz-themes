@@ -2223,8 +2223,22 @@ body .nav-view-outer .tree-item-self a {
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: rgb(196, 205, 142);
+  border: 0px rgb(63, 62, 60);
+  border-top-left-radius: 4.8px;
+  border-top-right-radius: 4.8px;
+  border-bottom-left-radius: 4.8px;
+  border-bottom-right-radius: 4.8px;
+  border-start-start-radius: 4.8px;
+  border-start-end-radius: 4.8px;
+  border-end-start-radius: 4.8px;
+  border-end-end-radius: 4.8px;
   color: rgb(63, 62, 60);
   cursor: default;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 body
   .nav-view-outer

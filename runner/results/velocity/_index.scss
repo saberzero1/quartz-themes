@@ -1954,10 +1954,29 @@ body {
     text-decoration: none solid oklch(0.7775 0.00625 275);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+  .explorer .explorer-content ul.explorer-ul li:has(> .active),
+  .explorer
+    .explorer-content
+    ul.explorer-ul
+    li
+    > div.folder-container[data-folderpath="var(--current-page-slug)"] {
     background-color: light-dark(oklch(0 0 0 / 0.05), oklch(1 0.05 283 / 0.05));
+    border: 0px light-dark(oklch(0.225 0.0005 281), oklch(0.875 0.00375 275));
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-start-start-radius: 6px;
+    border-start-end-radius: 6px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
     color: light-dark(oklch(0.225 0.0005 281), oklch(0.875 0.00375 275));
     cursor: default;
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
   }
 
   .explorer
@@ -2025,6 +2044,8 @@ body {
     font-weight: 600;
     text-decoration: none solid oklab(0.824705 -0.0448075 -0.0843141 / 0.9);
   }
+
+  --current-page-slug: attr(data-slug raw-string);
 
   .search {
     & > .search-button {

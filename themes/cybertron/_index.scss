@@ -1425,10 +1425,29 @@ body {
     text-decoration: none solid rgb(170, 170, 170);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+  .explorer .explorer-content ul.explorer-ul li:has(> .active),
+  .explorer
+    .explorer-content
+    ul.explorer-ul
+    li
+    > div.folder-container[data-folderpath="var(--current-page-slug)"] {
     background-color: rgba(255, 255, 255, 0.067);
+    border: 0px rgb(93, 188, 210);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+    border-end-start-radius: 3px;
+    border-end-end-radius: 3px;
     color: rgb(93, 188, 210);
     cursor: default;
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
   }
 
   .explorer
@@ -1471,6 +1490,8 @@ body {
     font-weight: 500;
     text-decoration: none solid rgb(170, 170, 170);
   }
+
+  --current-page-slug: attr(data-slug raw-string);
 
   .search {
     & > .search-button {

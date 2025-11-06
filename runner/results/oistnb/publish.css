@@ -2903,8 +2903,22 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
+  border: 0px light-dark(rgb(0, 0, 0), rgb(255, 102, 0));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: light-dark(rgb(0, 0, 0), rgb(255, 102, 0));
   cursor: default;
+  transition-behavior: normal, normal;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.3s, 0.3s;
+  transition-property: background-color, color;
+  transition-timing-function: ease, ease;
 }
 body
   .nav-view-outer

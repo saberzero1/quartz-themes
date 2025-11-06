@@ -15752,8 +15752,22 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 3px;
+  border-start-end-radius: 3px;
+  border-end-start-radius: 3px;
+  border-end-end-radius: 3px;
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: default;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 body
   .nav-view-outer

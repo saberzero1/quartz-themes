@@ -487,6 +487,9 @@ body {
   }
 `;
   }
+  resultScss += `
+  --current-page-slug: attr(data-slug raw-string);
+`;
 
   // Add static styles (from compile.old.js lines 466-850)
   resultScss += `

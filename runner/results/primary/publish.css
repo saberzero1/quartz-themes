@@ -5495,8 +5495,22 @@ body .nav-view-outer .tree-item-self a {
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: light-dark(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.125));
+  border: 0px light-dark(rgb(123, 98, 66), rgb(171, 145, 109));
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 6px;
+  border-start-end-radius: 6px;
+  border-end-start-radius: 6px;
+  border-end-end-radius: 6px;
   color: light-dark(rgb(123, 98, 66), rgb(171, 145, 109));
   cursor: pointer;
+  transition-behavior: normal, normal;
+  transition-delay: 0s, 0s;
+  transition-duration: 0s, 0.14s;
+  transition-property: padding, transform;
+  transition-timing-function: ease, cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 body
   .nav-view-outer
