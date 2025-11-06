@@ -1420,6 +1420,7 @@ export const config = [
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
+  // center content
   {
     obsidianSelector: `div.mod-active.workspace-leaf`,
     publishSelector: null, //TODO
@@ -1427,6 +1428,43 @@ export const config = [
       ".page > div#quartz-body div.center, .page > div#quartz-body footer",
     pseudoElement: "",
     properties: ["background-color", "color"],
+  },
+  // sidebars
+  {
+    obsidianSelector: `div.workspace-leaf`,
+    publishSelector: null, //TODO
+    quartzSelector: ".page > div#quartz-body div.sidebar",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  {
+    obsidianSelector: `div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split`,
+    publishSelector: null, //TODO
+    quartzSelector: ".page > div#quartz-body div.sidebar.left",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  {
+    obsidianSelector: `div.mod-horizontal.mod-right-split.mod-sidedock.workspace-split`,
+    publishSelector: null, //TODO
+    quartzSelector: ".page > div#quartz-body div.sidebar.right",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  // separators
+  {
+    obsidianSelector: `hr.workspace-leaf-resize-handle`,
+    publishSelector: null, //TODO
+    quartzSelector: ".page > div#quartz-body div.sidebar.left",
+    pseudoElement: "",
+    properties: ["border-right-color"],
+  },
+  {
+    obsidianSelector: `hr.workspace-leaf-resize-handle`,
+    publishSelector: null, //TODO
+    quartzSelector: ".page > div#quartz-body div.sidebar.right",
+    pseudoElement: "",
+    properties: ["border-left-color"],
   },
   // links
   // TODO: add external link to to markdown so it gets added
@@ -2351,8 +2389,7 @@ export const config = [
     obsidianSelector: `div.is-active.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"integrations.md\"]`,
     publishSelector: `.nav-view-outer .tree-item-self.mod-active`,
     quartzSelector:
-      // might have to be changed to :has(div.folder-container[data-folderpath="var(--current-page-slug)"]) to encapsulate the entire folder
-      '.explorer .explorer-content ul.explorer-ul li:has(> .active), .explorer .explorer-content ul.explorer-ul li > div.folder-container[data-folderpath="var(--current-page-slug)"]',
+      ".explorer .explorer-content ul.explorer-ul li:has(> .active)",
     pseudoElement: "",
     properties: [
       "background-color",
