@@ -1473,7 +1473,7 @@ export const config = [
   // links
   // TODO: add external link to to markdown so it gets added
   {
-    obsidianSelector: `a.external-link`,
+    obsidianSelector: `a.external-link[data-tooltip-position=\"top\"]`,
     publishSelector: `.markdown-rendered a.external-link`,
     quartzSelector: "a.external, footer a",
     pseudoElement: "",

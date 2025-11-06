@@ -261,10 +261,12 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(68, 118, 229), rgb(86, 168, 245));
     cursor: pointer;
     filter: none;
     font-family:
+      Theme-Font,
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       "system-ui",
@@ -278,13 +280,13 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    text-decoration: underline solid rgb(86, 168, 245);
+    text-decoration-color: light-dark(rgb(68, 118, 229), rgb(86, 168, 245));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   a.internal {
@@ -1950,6 +1952,8 @@ body {
       div.sidebar.left,
       div.sidebar.left:has(.explorer) {
         padding: 1rem 1.5rem 1rem 1rem;
+        width: calc(100% - 2.5rem);
+        max-width: calc(100% - 2.5rem);
       }
       div.sidebar.right,
       footer {
@@ -1964,6 +1968,9 @@ body {
         padding-left: 1rem;
         padding-right: 1rem;
       }
+    }
+    .page-title {
+      display: none;
     }
   }
 
@@ -2018,6 +2025,51 @@ body {
 
       background-color: transparent;
       color: var(--code-normal);
+    }
+  }
+
+  .callout {
+    [data-callout] {
+      --callout-color: var(--callout-todo);
+    }
+    [data-callout="note"] {
+      --callout-color: var(--callout-note);
+    }
+    [data-callout="abstract"] {
+      --callout-color: var(--callout-abstract);
+    }
+    [data-callout="info"] {
+      --callout-color: var(--callout-info);
+    }
+    [data-callout="todo"] {
+      --callout-color: var(--callout-todo);
+    }
+    [data-callout="tip"] {
+      --callout-color: var(--callout-tip);
+    }
+    [data-callout="success"] {
+      --callout-color: var(--callout-success);
+    }
+    [data-callout="question"] {
+      --callout-color: var(--callout-question);
+    }
+    [data-callout="warning"] {
+      --callout-color: var(--callout-warning);
+    }
+    [data-callout="failure"] {
+      --callout-color: var(--callout-failure);
+    }
+    [data-callout="danger"] {
+      --callout-color: var(--callout-danger);
+    }
+    [data-callout="bug"] {
+      --callout-color: var(--callout-bug);
+    }
+    [data-callout="example"] {
+      --callout-color: var(--callout-example);
+    }
+    [data-callout="quote"] {
+      --callout-color: var(--callout-quote);
     }
   }
 }

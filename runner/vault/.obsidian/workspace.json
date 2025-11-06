@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "specimen.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "specimen"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "specimen.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
+              "title": "Outline of specimen"
             }
           },
           {
@@ -206,11 +206,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6f3597a7e8c8b206",
+  "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "integrations.md",
     "general.md",
     "Untitled.md",
-    "integrations.md",
     "callouts.md",
     "headings.md",
     "specimen.md",

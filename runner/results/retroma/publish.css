@@ -3163,7 +3163,7 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(oklch(50% 0.12 26.4069deg), oklch(70% 0.08 26.4069deg));
   cursor: pointer;
   filter: none;
   font-family:
@@ -3178,15 +3178,18 @@ body .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline solid oklch(70% 0.08 26.4069deg);
+  text-decoration-color: light-dark(
+    oklch(50% 0.12 26.4069deg),
+    oklch(70% 0.08 26.4069deg)
+  );
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

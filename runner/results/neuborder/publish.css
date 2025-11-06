@@ -1181,8 +1181,8 @@ body .site-body-left-column-site-theme-toggle {
   display: none;
 }
 body .markdown-rendered a.external-link {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(138, 92, 245);
+  background-color: rgb(247, 247, 247);
+  color: rgb(90, 109, 237);
   cursor: pointer;
   filter: none;
   font-family:
@@ -1199,13 +1199,13 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(138, 92, 245);
-  text-decoration-color: rgb(138, 92, 245);
-  text-decoration-line: underline;
+  text-decoration: none solid rgb(90, 109, 237);
+  text-decoration-color: rgb(90, 109, 237);
+  text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgb(247, 247, 247);

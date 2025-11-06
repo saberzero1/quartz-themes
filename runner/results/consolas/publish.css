@@ -859,6 +859,7 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
+    Inconsolata,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -870,7 +871,7 @@ body .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   outline: inherit;
   text-decoration: underline solid rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
@@ -878,7 +879,7 @@ body .markdown-rendered a.external-link {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
