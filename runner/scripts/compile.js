@@ -92,7 +92,8 @@ themeCollection.forEach((manifest) => {
         mapping.properties.forEach((property) => {
           quartzMappings[mode][mapping.quartzSelector][property] =
             getStyleFromDatabase(
-              mapping.quartzSelector,
+              // mapping.quartzSelector,
+              mapping.obsidianSelector,
               property,
               mapping.obsidianSelector,
             );
@@ -105,7 +106,8 @@ themeCollection.forEach((manifest) => {
         mapping.properties.forEach((property) => {
           publishMappings[mode][mapping.publishSelector][property] =
             getStyleFromDatabase(
-              mapping.publishSelector,
+              // mapping.publishSelector,
+              mapping.obsidianSelector,
               property,
               mapping.obsidianSelector,
             );
@@ -235,7 +237,15 @@ function generateAndWriteCSS(
         if (colorTargets.includes(target)) {
           if (darkData[key][target] === lightData[key][target]) {
             data[key][target] = darkData[key][target];
-          } else if (key === "&[data-slug]" && target === "background") {
+          } else if (
+            key === "&[data-slug]" &&
+            [
+              "color",
+              "background",
+              "background-color",
+              "background-images",
+            ].includes(target)
+          ) {
             data[key][target] =
               `light-dark(${lightData[key][target]}, ${darkData[key][target]}) !important`;
           } else {

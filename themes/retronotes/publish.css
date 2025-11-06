@@ -1826,10 +1826,16 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
   cursor: pointer;
   filter: none;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -1843,67 +1849,82 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
-  user-select: none;
-}
-body .markdown-rendered a.internal-link.is-unresolved {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-  cursor: pointer;
-  filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
-  user-select: none;
-}
-body .markdown-rendered p {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: auto;
-  filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(232, 115, 61);
+  text-decoration-color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
+}
+body .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgba(156, 26, 33, 0.85), rgba(232, 115, 61, 0.85));
+  cursor: pointer;
+  filter: none;
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgba(201, 201, 201, 0.3);
+  text-decoration-color: light-dark(
+    rgba(186, 153, 66, 0.3),
+    rgba(201, 201, 201, 0.3)
+  );
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: text;
+}
+body .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  cursor: auto;
+  filter: none;
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: inherit;
+  text-decoration: none solid rgb(255, 254, 251);
+  text-decoration-color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: inherit;
+  transition: inherit;
+  user-select: text;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
@@ -1940,10 +1961,16 @@ body strong {
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(0, 77, 32), rgb(20, 184, 88));
   cursor: auto;
   filter: none;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -1957,13 +1984,13 @@ body b {
     sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(20, 184, 88);
+  text-decoration-color: light-dark(rgb(0, 77, 32), rgb(20, 184, 88));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
@@ -2000,10 +2027,16 @@ body em {
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(156, 26, 33), rgb(0, 138, 207));
   cursor: auto;
   filter: none;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2015,22 +2048,28 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(0, 138, 207);
+  text-decoration-color: light-dark(rgb(156, 26, 33), rgb(0, 138, 207));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered mark {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+  background-color: light-dark(rgb(218, 200, 151), rgb(71, 71, 71));
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
   cursor: auto;
   filter: none;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2044,13 +2083,13 @@ body .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration: none solid rgb(255, 254, 251);
+  text-decoration-color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
@@ -2086,33 +2125,33 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: light-dark(rgb(229, 215, 180), rgb(51, 51, 51));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: light-dark(rgb(22, 50, 89), rgb(208, 208, 208));
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border: 0px light-dark(rgb(186, 153, 66), rgb(130, 130, 130));
+  border-top: 2px solid light-dark(rgb(186, 153, 66), rgb(130, 130, 130));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2122,9 +2161,9 @@ body .markdown-rendered hr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   box-shadow: none;
-  margin: 32px 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -2160,15 +2199,15 @@ body div.multi-select-pill {
   border-end-end-radius: 8px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-align: left;
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  text-align: start;
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2177,66 +2216,69 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgba(0, 0, 0, 0);
   content: normal;
   pointer-events: auto;
   transform: none;
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-align: left;
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgba(0, 0, 0, 0);
 }
 body .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family: monospace;
-  padding: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  font-family:
+    "IBM Plex Mono", Consolas, monospace, ui-monospace, SFMono-Regular,
+    "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+    Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+  padding: 2.1px 4.2px;
 }
 body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  overflow-x: auto;
+  padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
+  text-wrap-mode: wrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  overflow-x: auto;
+  padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
+  text-wrap-mode: wrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
@@ -2262,19 +2304,19 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
 }
 body ul.contains-task-list > li.task-list-item {
   list-style: inherit;
-  text-align: left;
+  text-align: start;
   display: list-item;
 }
 body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  content: normal;
+  content: none;
   top: auto;
   inset-inline-start: auto;
   position: static;
   width: auto;
-  display: list-item;
+  display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
@@ -2282,14 +2324,20 @@ body
   -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(198, 169, 93), rgb(90, 90, 90));
+  text-decoration: none solid rgb(90, 90, 90);
+  text-decoration-color: light-dark(rgb(198, 169, 93), rgb(90, 90, 90));
 }
 body .markdown-rendered blockquote {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
   border-inline-start: inherit;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2304,47 +2352,70 @@ body .markdown-rendered blockquote {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-  text-decoration: underline solid rgb(166, 138, 249);
+  color: light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  text-decoration: none solid rgb(110, 110, 110);
 }
 body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
-  font-family: Arial;
+  background-color: light-dark(rgb(249, 246, 238), rgb(61, 61, 61));
+  border: 1px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .search-results {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  box-shadow: none;
+  background-color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
+  border: 1px solid light-dark(rgb(198, 169, 93), rgb(90, 90, 90));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
   cursor: auto;
   filter: none;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2358,154 +2429,88 @@ body .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(255, 254, 251);
+  text-decoration-color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body div.search-results {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border: 1px solid light-dark(rgb(198, 169, 93), rgb(90, 90, 90));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border: 0px light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(22, 50, 89), rgb(208, 208, 208));
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: light-dark(rgb(229, 215, 180), rgb(51, 51, 51));
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(22, 50, 89), rgb(208, 208, 208));
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-family: Loew, sans-serif;
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  margin-inline-start: 0px;
-  padding-inline-start: 0px;
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
   border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(22, 50, 89), rgb(255, 254, 251));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2518,22 +2523,22 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  mix-blend-mode: normal;
-  padding: 0px;
-  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  mix-blend-mode: lighten;
+  padding: 12px 12px 12px 24px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2549,12 +2554,12 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(66, 192, 255);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-weight: 400;
+  color: light-dark(rgb(156, 26, 33), rgb(232, 115, 61));
+  font-weight: 600;
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
@@ -2562,274 +2567,280 @@ body .callout > .callout-content {
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(218, 223, 225);
 }
 body .callout[data-callout="info"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(66, 192, 255);
 }
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(66, 192, 255);
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(218, 223, 225);
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(20, 184, 87);
 }
 body .callout[data-callout="question"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(235, 133, 86);
 }
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(235, 133, 86);
 }
 body .callout[data-callout="danger"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(227, 94, 102);
 }
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(255, 254, 251);
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(227, 94, 102);
 }
 body .callout[data-callout="example"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgba(255, 254, 251, 0.85);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
+  mix-blend-mode: lighten;
+  border: 2px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(158, 158, 158);
 }
 body .math-block > mjx-container.MathJax {
-  display: inline;
-  text-align: start;
-  white-space-collapse: collapse;
+  display: block;
+  text-align: center;
+  white-space-collapse: break-spaces;
   text-wrap-mode: wrap;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2844,6 +2855,12 @@ body .math-block > mjx-container.MathJax {
 }
 body div.math-block > mjx-container.MathJax {
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2857,23 +2874,15 @@ body div.math-block > mjx-container.MathJax {
     sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: auto;
+  color: light-dark(rgb(218, 200, 151), rgb(208, 208, 208));
+  cursor: default;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2886,12 +2895,12 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(208, 208, 208);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: auto;
+  background-color: light-dark(rgb(186, 153, 66), rgb(108, 0, 18));
+  color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
+  cursor: default;
 }
 body
   .nav-view-outer
@@ -2900,9 +2909,12 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: auto;
+  color: light-dark(rgb(218, 200, 151), rgb(208, 208, 208));
+  cursor: default;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2915,7 +2927,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(208, 208, 208);
 }
 body
   .nav-view-outer
@@ -2924,9 +2936,12 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: auto;
+  color: light-dark(rgb(218, 200, 151), rgb(208, 208, 208));
+  cursor: default;
   font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -2939,5 +2954,5 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(208, 208, 208);
 }

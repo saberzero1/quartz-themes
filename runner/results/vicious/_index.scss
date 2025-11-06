@@ -240,16 +240,20 @@ body {
     --quartz-icon-color: inherit;
   }
 
-  &[data-slug],
+  &[data-slug] {
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14)) !important;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252)) !important;
+  }
+
   div#quartz-root {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(241, 242, 245), rgb(23, 24, 30));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   a.external {
@@ -282,7 +286,7 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: rgb(241, 129, 150);
     cursor: pointer;
     filter: none;
     font-family:
@@ -299,18 +303,18 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-    text-decoration-line: underline;
+    text-decoration: none solid rgb(241, 129, 150);
+    text-decoration-color: rgb(241, 129, 150);
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: rgb(139, 227, 235);
     cursor: pointer;
     filter: none;
     font-family:
@@ -327,13 +331,13 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-    text-decoration-line: underline;
+    text-decoration: none solid rgba(241, 203, 131, 0.3);
+    text-decoration-color: rgba(241, 203, 131, 0.3);
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   p {
@@ -367,7 +371,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 154, 129);
     cursor: auto;
     filter: none;
     font-family:
@@ -384,19 +388,19 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(241, 154, 129);
+    text-decoration-color: rgb(241, 154, 129);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 154, 129);
     cursor: auto;
     filter: none;
     font-family:
@@ -413,19 +417,19 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(241, 154, 129);
+    text-decoration-color: rgb(241, 154, 129);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 201, 129);
     cursor: auto;
     filter: none;
     font-family:
@@ -440,21 +444,21 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(241, 201, 129);
+    text-decoration-color: rgb(241, 201, 129);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 201, 129);
     cursor: auto;
     filter: none;
     font-family:
@@ -469,20 +473,20 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(241, 201, 129);
+    text-decoration-color: rgb(241, 201, 129);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   .text-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
+    background-color: rgb(241, 201, 129);
+    color: rgb(8, 9, 14);
     cursor: auto;
     filter: none;
     font-family:
@@ -499,13 +503,13 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(0, 0, 0);
-    text-decoration-color: rgb(0, 0, 0);
+    text-decoration: none solid rgb(8, 9, 14);
+    text-decoration-color: rgb(8, 9, 14);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   del {
@@ -554,16 +558,16 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(0, 0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(241, 242, 245), rgb(23, 24, 30));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   .search
@@ -579,16 +583,16 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   hr {
@@ -620,9 +624,9 @@ body {
     > ul
     > li
     > .match-tag {
-    align-items: normal;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
+    align-items: center;
+    background-color: rgb(241, 129, 150);
+    display: flex;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -637,29 +641,29 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
   }
 
   ul > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-align: left;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    text-align: start;
   }
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -668,7 +672,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgba(0, 0, 0, 0);
     content: normal;
     pointer-events: auto;
     transform: none;
@@ -676,12 +680,12 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-align: left;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    text-align: start;
   }
 
   ol > li::marker {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgba(0, 0, 0, 0);
   }
 
   code {
@@ -705,37 +709,37 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    overflow-x: visible;
-    padding: 0px;
+    background-color: light-dark(rgb(241, 242, 245), rgb(23, 24, 30));
+    border: 0px solid light-dark(rgb(129, 129, 132), rgb(41, 42, 47));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    overflow-x: auto;
+    padding: 12px 16px;
     white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
+    text-wrap-mode: wrap;
   }
 
   pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    overflow-x: visible;
-    padding: 0px;
+    background-color: light-dark(rgb(241, 242, 245), rgb(23, 24, 30));
+    border: 0px solid light-dark(rgb(129, 129, 132), rgb(41, 42, 47));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    overflow-x: auto;
+    padding: 12px 16px;
     white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
+    text-wrap-mode: wrap;
   }
 
   input[type="checkbox"] {
@@ -763,17 +767,17 @@ body {
 
   ul > li.task-list-item {
     list-style: inherit;
-    text-align: left;
+    text-align: start;
     display: list-item;
   }
 
   input[type="checkbox"]:checked:after {
-    content: normal;
+    content: none;
     top: auto;
     inset-inline-start: auto;
     position: static;
     width: auto;
-    display: list-item;
+    display: inline;
     background-color: rgba(0, 0, 0, 0);
     -webkit-mask-position: inherit;
     -webkit-mask-size: inherit;
@@ -782,9 +786,9 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(129, 129, 132);
+    text-decoration: none solid rgb(129, 129, 132);
+    text-decoration-color: rgb(129, 129, 132);
   }
 
   blockquote {
@@ -811,42 +815,57 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-    text-decoration: underline solid rgb(166, 138, 249);
+    color: light-dark(rgb(129, 129, 132), rgb(104, 105, 108));
+    text-decoration: none solid rgb(104, 105, 108);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
-    font-family: Arial;
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    border: 1px solid light-dark(rgb(129, 129, 132), rgb(41, 42, 47));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      "system-ui",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    box-shadow: none;
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    border: 1px solid light-dark(rgb(104, 105, 108), rgb(79, 80, 83));
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
+    box-shadow:
+      rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+      rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+      rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));
-    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    border: 0px light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    border-bottom: 1px solid light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -860,7 +879,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     cursor: auto;
     filter: none;
     font-family:
@@ -877,26 +896,26 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(251, 252, 252);
+    text-decoration-color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
-    user-select: none;
+    user-select: text;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 1px solid light-dark(rgb(104, 105, 108), rgb(79, 80, 83));
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
   }
 
   .search
@@ -904,7 +923,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   .search
@@ -913,15 +932,15 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .search
@@ -942,9 +961,9 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     font-weight: 400;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(241, 242, 245), rgb(23, 24, 30));
   }
 
   .search
@@ -989,11 +1008,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
   h1 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 129, 150);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1010,7 +1029,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(241, 154, 129);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1027,7 +1046,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(235, 203, 139);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1044,7 +1063,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(188, 241, 129);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1061,7 +1080,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(139, 227, 235);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1078,7 +1097,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(171, 139, 235);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1104,7 +1123,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1118,22 +1137,23 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    mix-blend-mode: normal;
+    border: 1px solid
+      light-dark(rgba(8, 9, 14, 0.64), rgba(251, 252, 252, 0.64));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    mix-blend-mode: lighten;
     padding: 0px;
   }
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1142,7 +1162,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 12px;
   }
 
   .callout .callout-title .callout-icon {
@@ -1151,279 +1171,280 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-weight: 400;
+    color: rgb(8, 9, 14);
+    font-weight: 600;
   }
 
   .callout > .callout-content {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
+    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
+    padding: 8px 16px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    mix-blend-mode: lighten;
+    border: 1px solid
+      light-dark(rgba(8, 9, 14, 0.64), rgba(251, 252, 252, 0.64));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(227, 235, 139);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(227, 235, 139, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(188, 241, 129);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(188, 241, 129, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(139, 227, 235);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(139, 227, 235, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 201, 129);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 201, 129, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(129, 241, 164);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(129, 241, 164, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 154, 129);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 154, 129, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 129, 150);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 129, 150, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(241, 154, 129);
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 129, 150);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 129, 150, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 129, 197);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 129, 197, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(129, 129, 132);
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(241, 201, 129);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(241, 201, 129, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(171, 139, 235);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(171, 139, 235, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(251, 252, 252);
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: normal;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: rgb(139, 227, 235);
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(139, 227, 235, 0.64);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: rgb(0, 0, 0);
-    stroke: none;
+    fill: none;
+    stroke: rgb(8, 9, 14);
   }
 
   .katex-display > .katex {
-    display: inline;
-    text-align: start;
-    white-space-collapse: collapse;
+    display: block;
+    text-align: center;
+    white-space-collapse: break-spaces;
     text-wrap-mode: wrap;
     font-family:
       ui-sans-serif,
@@ -1455,23 +1476,12 @@ body {
   }
 
   .katex > .katex-html {
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: MJXZERO, MJXTEX;
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    cursor: default;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1485,21 +1495,21 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(218, 218, 218);
+    text-decoration: none solid rgb(251, 252, 252);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
+    cursor: default;
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: rgb(8, 9, 14);
+    cursor: default;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1513,12 +1523,12 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(218, 218, 218);
+    text-decoration: none solid rgb(8, 9, 14);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: rgb(8, 9, 14);
+    cursor: default;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1532,7 +1542,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(218, 218, 218);
+    text-decoration: none solid rgb(8, 9, 14);
   }
 
   .search {
