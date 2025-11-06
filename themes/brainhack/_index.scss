@@ -227,19 +227,15 @@ body {
   .page > div#quartz-body div.sidebar.left {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(67, 67, 67), rgb(174, 174, 174));
-    border-right-color: light-dark(
-      rgba(200, 200, 200, 0.44),
-      rgba(105, 105, 105, 0.44)
-    );
+    border-right: 1px dashed
+      light-dark(rgba(200, 200, 200, 0.44), rgba(105, 105, 105, 0.44));
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(67, 67, 67), rgb(174, 174, 174));
-    border-left-color: light-dark(
-      rgba(200, 200, 200, 0.44),
-      rgba(105, 105, 105, 0.44)
-    );
+    border-left: 1px dashed
+      light-dark(rgba(200, 200, 200, 0.44), rgba(105, 105, 105, 0.44));
   }
 
   a.external {
