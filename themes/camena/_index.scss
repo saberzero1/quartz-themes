@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: from rgb(245, 105, 92) r g b !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: from rgb(92, 168, 245) r g b !important;
+  --callout-error: from rgb(245, 105, 92) r g b !important;
+  --callout-example: from rgb(168, 92, 245) r g b !important;
+  --callout-fail: from rgb(245, 105, 92) r g b !important;
+  --callout-important: from rgb(92, 232, 245) r g b !important;
+  --callout-info: from rgb(92, 168, 245) r g b !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: from rgb(245, 156, 92) r g b !important;
+  --callout-quote: from rgb(138, 92, 245) r g b !important;
+  --callout-radius: 4px !important;
+  --callout-success: from rgb(143, 245, 92) r g b !important;
+  --callout-summary: from rgb(92, 232, 245) r g b !important;
+  --callout-tip: from rgb(92, 232, 245) r g b !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: from rgb(92, 168, 245) r g b !important;
+  --callout-warning: from rgb(245, 156, 92) r g b !important;
+  --checkbox-border-color: rgb(184, 173, 210) !important;
+  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
+  --checkbox-color: rgb(141, 123, 183) !important;
+  --checkbox-color-hover: rgb(138, 92, 245) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(249, 248, 251) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: rgba(from rgb(138, 92, 245) r g b / 0.1) !important;
   --code-border-color: rgb(184, 173, 210) !important;
   --code-border-width: 0px !important;
@@ -25,6 +56,8 @@
   --code-tag: rgb(245, 105, 92) !important;
   --code-value: rgb(168, 92, 245) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(184, 173, 210) !important;
+  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(184, 173, 210) !important;
   --graph-node: rgb(245, 105, 92) !important;
@@ -33,8 +66,61 @@
   --graph-node-tag: rgb(245, 219, 92) !important;
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8) !important;
   --graph-text: rgb(45, 36, 66) !important;
+  --icon-color: rgb(141, 123, 183) !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-focused: rgb(90, 72, 132) !important;
+  --icon-color-hover: rgb(141, 123, 183) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-color: from rgb(138, 92, 245) r g b !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: from rgb(245, 105, 92) r g b;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: from rgb(92, 168, 245) r g b;
+  --callout-error: from rgb(245, 105, 92) r g b;
+  --callout-example: from rgb(168, 92, 245) r g b;
+  --callout-fail: from rgb(245, 105, 92) r g b;
+  --callout-important: from rgb(92, 232, 245) r g b;
+  --callout-info: from rgb(92, 168, 245) r g b;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: from rgb(245, 156, 92) r g b;
+  --callout-quote: from rgb(138, 92, 245) r g b;
+  --callout-radius: 4px;
+  --callout-success: from rgb(143, 245, 92) r g b;
+  --callout-summary: from rgb(92, 232, 245) r g b;
+  --callout-tip: from rgb(92, 232, 245) r g b;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: from rgb(92, 168, 245) r g b;
+  --callout-warning: from rgb(245, 156, 92) r g b;
+  --checkbox-border-color: rgb(79, 63, 115) !important;
+  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
+  --checkbox-color: rgb(113, 91, 164) !important;
+  --checkbox-color-hover: rgb(138, 92, 245) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(23, 18, 33) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: rgba(from rgb(138, 92, 245) r g b / 0.15) !important;
   --code-border-color: rgb(79, 63, 115) !important;
   --code-border-width: 0px !important;
@@ -54,6 +140,8 @@
   --code-tag: rgb(245, 105, 92) !important;
   --code-value: rgb(168, 92, 245) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(79, 63, 115) !important;
+  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(79, 63, 115) !important;
   --graph-node: rgb(245, 105, 92) !important;
@@ -62,6 +150,28 @@
   --graph-node-tag: rgb(245, 219, 92) !important;
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8) !important;
   --graph-text: rgb(198, 189, 219) !important;
+  --icon-color: rgb(113, 91, 164) !important;
+  --icon-color-active: rgb(166, 139, 249) !important;
+  --icon-color-focused: rgb(141, 123, 183) !important;
+  --icon-color-hover: rgb(113, 91, 164) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-color: from rgb(138, 92, 245) r g b;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1685,14 +1795,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

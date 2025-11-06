@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 233, 49, 71 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 8, 109, 221 !important;
+  --callout-error: #ffebee !important;
+  --callout-example: 120, 82, 238 !important;
+  --callout-fail: 233, 49, 71 !important;
+  --callout-important: 0, 191, 188 !important;
+  --callout-info: #e3f2fd !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 236, 117, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: #e8f5e8 !important;
+  --callout-summary: 0, 191, 188 !important;
+  --callout-tip: #f3e5f5 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 8, 109, 221 !important;
+  --callout-warning: #fff3e0 !important;
+  --checkbox-border-color: #9aa0a6 !important;
+  --checkbox-border-color-hover: #5f6368 !important;
+  --checkbox-color: #1a73e8 !important;
+  --checkbox-color-hover: #1557b0 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #ffffff !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #f8f9fa !important;
   --code-border-color: #dadce0 !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #9aa0a6 !important;
+  --collapse-icon-color-collapsed: #cc99ff !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5f6368 !important;
@@ -32,8 +65,73 @@
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #9aa0a6 !important;
   --graph-text: #202124 !important;
+  --icon-color: #5f6368 !important;
+  --icon-color-active: #cc99ff !important;
+  --icon-color-focused: #202124 !important;
+  --icon-color-hover: #5f6368 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-note: #f5f5f5 !important;
+  --callout-error-border: #f44336 !important;
+  --callout-error-text: #c62828 !important;
+  --callout-info-border: #2196f3 !important;
+  --callout-info-text: #0d47a1 !important;
+  --callout-note-border: #757575 !important;
+  --callout-note-text: #424242 !important;
+  --callout-success-border: #4caf50 !important;
+  --callout-success-text: #2e7d32 !important;
+  --callout-tip-border: #9c27b0 !important;
+  --callout-tip-text: #6a1b9a !important;
+  --callout-warning-border: #ff9800 !important;
+  --callout-warning-text: #e65100 !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 205, 145, 158;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 95, 158, 160;
+  --callout-error: #2d1b1b;
+  --callout-example: 147, 112, 219;
+  --callout-fail: 205, 145, 158;
+  --callout-important: 95, 158, 160;
+  --callout-info: #1a2332;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 205, 133, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 4px;
+  --callout-success: #1b2d1b;
+  --callout-summary: 95, 158, 160;
+  --callout-tip: #2d1b2d;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 95, 158, 160;
+  --callout-warning: #2d2416;
+  --checkbox-border-color: #a0a0a0 !important;
+  --checkbox-border-color-hover: #d0d0d0 !important;
+  --checkbox-color: #ffd700 !important;
+  --checkbox-color-hover: #ffd700 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgba(10, 10, 10, 0.8) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: rgba(15, 15, 15, 0.8) !important;
   --code-border-color: #404040 !important;
   --code-border-width: 0px !important;
@@ -52,6 +150,8 @@
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #a0a0a0 !important;
+  --collapse-icon-color-collapsed: #cc99ff !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #d0d0d0 !important;
@@ -60,6 +160,40 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #a0a0a0 !important;
   --graph-text: #ffffff !important;
+  --icon-color: #d0d0d0 !important;
+  --icon-color-active: #cc99ff !important;
+  --icon-color-focused: #ffffff !important;
+  --icon-color-hover: #d0d0d0 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-note: #1f1f1f;
+  --callout-error-border: #ef5350;
+  --callout-error-text: #ffcdd2;
+  --callout-info-border: #64b5f6;
+  --callout-info-text: #90caf9;
+  --callout-note-border: #9e9e9e;
+  --callout-note-text: #e0e0e0;
+  --callout-success-border: #66bb6a;
+  --callout-success-text: #c8e6c9;
+  --callout-tip-border: #ba68c8;
+  --callout-tip-text: #e1bee7;
+  --callout-warning-border: #ffb74d;
+  --callout-warning-text: #ffcc02;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1317,14 +1451,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

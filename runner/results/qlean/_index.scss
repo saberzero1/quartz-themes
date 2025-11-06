@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 233, 49, 71 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 8, 109, 221 !important;
+  --callout-error: 233, 49, 71 !important;
+  --callout-example: 120, 82, 238 !important;
+  --callout-fail: 233, 49, 71 !important;
+  --callout-important: 0, 191, 188 !important;
+  --callout-info: 8, 109, 221 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 236, 117, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 0.125em !important;
+  --callout-success: 8, 185, 78 !important;
+  --callout-summary: 0, 191, 188 !important;
+  --callout-tip: 0, 191, 188 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 8, 109, 221 !important;
+  --callout-warning: 236, 117, 0 !important;
+  --checkbox-border-color: #5c5c5c !important;
+  --checkbox-border-color-hover: #737373 !important;
+  --checkbox-color: #22c55e !important;
+  --checkbox-color-hover: rgba(186, 186, 186, 0.5) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #fafafa !important;
+  --checkbox-radius: 0.125em !important;
+  --checkbox-size: 16px !important;
   --code-background: #e5e5e5 !important;
   --code-border-color: #e0e0e0 !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #ababab !important;
+  --collapse-icon-color-collapsed: rgb(26, 26, 26) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #737373 !important;
@@ -32,9 +65,113 @@
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #404040 !important;
+  --icon-color: #737373 !important;
+  --icon-color-active: rgb(26, 26, 26) !important;
+  --icon-color-focused: rgba(26, 26, 26, 0.8) !important;
+  --icon-color-hover: #737373 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-attention-bg-color: rgb(255, 240, 229) !important;
+  --callout-attention-text-color: #f97316 !important;
+  --callout-bug-bg-color: rgb(255, 232, 234) !important;
+  --callout-bug-text-color: #ef4444 !important;
+  --callout-caution-bg-color: rgb(255, 240, 229) !important;
+  --callout-caution-text-color: #f97316 !important;
+  --callout-check-bg-color: rgb(232, 248, 234) !important;
+  --callout-check-text-color: #22c55e !important;
+  --callout-cite-bg-color: rgb(244, 244, 244) !important;
+  --callout-cite-text-color: #171717 !important;
+  --callout-danger-bg-color: rgb(255, 232, 234) !important;
+  --callout-danger-text-color: #ef4444 !important;
+  --callout-dogs-ear-size: 2em !important;
+  --callout-done-bg-color: rgb(232, 248, 234) !important;
+  --callout-done-text-color: #22c55e !important;
+  --callout-error-bg-color: rgb(255, 232, 234) !important;
+  --callout-error-text-color: #ef4444 !important;
+  --callout-example-bg-color: rgb(239, 235, 254) !important;
+  --callout-example-text-color: #8b5cf6 !important;
+  --callout-fail-bg-color: rgb(255, 232, 234) !important;
+  --callout-fail-text-color: #ef4444 !important;
+  --callout-failure-bg-color: rgb(255, 232, 234) !important;
+  --callout-failure-text-color: #ef4444 !important;
+  --callout-faq-bg-color: rgb(255, 240, 229) !important;
+  --callout-faq-text-color: #eab308 !important;
+  --callout-help-bg-color: rgb(255, 240, 229) !important;
+  --callout-help-text-color: #eab308 !important;
+  --callout-hint-bg-color: rgb(232, 248, 248) !important;
+  --callout-hint-text-color: #0ea5e9 !important;
+  --callout-important-bg-color: rgb(232, 248, 248) !important;
+  --callout-important-text-color: #0ea5e9 !important;
+  --callout-info-bg-color: rgb(228, 238, 253) !important;
+  --callout-info-text-color: #171717 !important;
+  --callout-missing-bg-color: rgb(255, 232, 234) !important;
+  --callout-missing-text-color: #ef4444 !important;
+  --callout-note--text-color: #171717 !important;
+  --callout-note-bg-color: rgb(228, 238, 253) !important;
+  --callout-question-bg-color: rgb(255, 240, 229) !important;
+  --callout-question-text-color: #eab308 !important;
+  --callout-quote-bg-color: rgb(244, 244, 244) !important;
+  --callout-quote-text-color: #171717 !important;
+  --callout-success-bg-color: rgb(232, 248, 234) !important;
+  --callout-success-text-color: #22c55e !important;
+  --callout-tip-bg-color: rgb(232, 248, 248) !important;
+  --callout-tip-text-color: #0ea5e9 !important;
+  --callout-todo-bg-color: rgb(228, 238, 253) !important;
+  --callout-todo-text-color: #0ea5e9 !important;
+  --callout-warning-bg-color: rgb(255, 240, 229) !important;
+  --callout-warning-text-color: #f97316 !important;
+  --checkbox-checked-color: rgba(26, 26, 26, 0) !important;
+  --checkbox-unchecked-color-hover: rgba(26, 26, 26, 0.5) !important;
   --code-bg-color: #f5f5f5 !important;
+  --icon-color-hovering: #171717 !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 0.125em;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: #b3b3b3 !important;
+  --checkbox-border-color-hover: #737373 !important;
+  --checkbox-color: #22c55e !important;
+  --checkbox-color-hover: rgba(186, 186, 186, 0.5) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #0a0a0a !important;
+  --checkbox-radius: 0.125em !important;
+  --checkbox-size: 16px !important;
   --code-background: #262626 !important;
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
@@ -53,6 +190,8 @@
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #666666 !important;
+  --collapse-icon-color-collapsed: rgb(230, 230, 230) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #737373 !important;
@@ -61,7 +200,80 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #d4d4d4 !important;
+  --icon-color: #737373 !important;
+  --icon-color-active: rgb(230, 230, 230) !important;
+  --icon-color-focused: rgba(230, 230, 230, 0.8) !important;
+  --icon-color-hover: #737373 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-attention-bg-color: rgb(47, 36, 25);
+  --callout-attention-text-color: #f97316;
+  --callout-bug-bg-color: rgb(50, 26, 26);
+  --callout-bug-text-color: #ef4444;
+  --callout-caution-bg-color: rgb(47, 36, 25);
+  --callout-caution-text-color: #f97316;
+  --callout-check-bg-color: rgb(26, 43, 30);
+  --callout-check-text-color: #22c55e;
+  --callout-cite-bg-color: rgb(36, 36, 36);
+  --callout-cite-text-color: #f5f5f5;
+  --callout-danger-bg-color: rgb(50, 26, 26);
+  --callout-danger-text-color: #ef4444;
+  --callout-dogs-ear-size: 2em;
+  --callout-done-bg-color: rgb(26, 43, 30);
+  --callout-done-text-color: #22c55e;
+  --callout-error-bg-color: rgb(50, 26, 26);
+  --callout-error-text-color: #ef4444;
+  --callout-example-bg-color: rgb(38, 32, 48);
+  --callout-example-text-color: #8b5cf6;
+  --callout-fail-bg-color: rgb(50, 26, 26);
+  --callout-fail-text-color: #ef4444;
+  --callout-failure-bg-color: rgb(50, 26, 26);
+  --callout-failure-text-color: #ef4444;
+  --callout-faq-bg-color: rgb(47, 36, 25);
+  --callout-faq-text-color: #eab308;
+  --callout-help-bg-color: rgb(47, 36, 25);
+  --callout-help-text-color: #eab308;
+  --callout-hint-bg-color: rgb(30, 44, 44);
+  --callout-hint-text-color: #0ea5e9;
+  --callout-important-bg-color: rgb(30, 44, 44);
+  --callout-important-text-color: #0ea5e9;
+  --callout-info-bg-color: rgb(20, 32, 49);
+  --callout-info-text-color: #f5f5f5;
+  --callout-missing-bg-color: rgb(50, 26, 26);
+  --callout-missing-text-color: #ef4444;
+  --callout-note--text-color: #f5f5f5;
+  --callout-note-bg-color: rgb(20, 32, 49);
+  --callout-question-bg-color: rgb(47, 36, 25);
+  --callout-question-text-color: #eab308;
+  --callout-quote-bg-color: rgb(36, 36, 36);
+  --callout-quote-text-color: #f5f5f5;
+  --callout-success-bg-color: rgb(26, 43, 30);
+  --callout-success-text-color: #22c55e;
+  --callout-tip-bg-color: rgb(30, 44, 44);
+  --callout-tip-text-color: #0ea5e9;
+  --callout-todo-bg-color: rgb(20, 32, 49);
+  --callout-todo-text-color: #0ea5e9;
+  --callout-warning-bg-color: rgb(47, 36, 25);
+  --callout-warning-text-color: #f97316;
+  --checkbox-checked-color: rgba(230, 230, 230, 0) !important;
+  --checkbox-unchecked-color-hover: rgba(230, 230, 230, 0.5) !important;
   --code-bg-color: #171717 !important;
+  --icon-color-hovering: #f5f5f5 !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -3663,14 +3875,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

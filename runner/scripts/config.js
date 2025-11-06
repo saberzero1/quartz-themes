@@ -151,13 +151,13 @@ const extractionTargets = {
   general: {
     file: "general.md",
     selectors: [
-      {
-        obsidianSelector: `.quartz-icon-selector`,
-        publishSelector: null,
-        quartzSelector: "div#quartz-body",
-        pseudoElement: "",
-        properties: ["--quartz-icon-color"],
-      },
+      // {
+      //   obsidianSelector: `.quartz-icon-selector`,
+      //   publishSelector: null,
+      //   quartzSelector: "div#quartz-body",
+      //   pseudoElement: "",
+      //   properties: ["--quartz-icon-color"],
+      // },
       {
         obsidianSelector: null,
         publishSelector: null,
