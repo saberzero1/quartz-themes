@@ -365,7 +365,7 @@ body {
       color(srgb 0.300178 0.200444 0.532889 / 0.9),
       color(srgb 0.862096 0.80824 0.98776)
     );
-    border-right-color: rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
@@ -374,7 +374,7 @@ body {
       color(srgb 0.300178 0.200444 0.532889 / 0.9),
       color(srgb 0.862096 0.80824 0.98776)
     );
-    border-left-color: rgba(0, 0, 0, 0);
+    border-left: 0px rgba(0, 0, 0, 0);
   }
 
   a.external {

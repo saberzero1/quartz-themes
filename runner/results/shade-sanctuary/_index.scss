@@ -383,13 +383,13 @@ body {
   .page > div#quartz-body div.sidebar.left {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
-    border-right-color: rgba(0, 0, 0, 0);
+    border-right: 0px rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(250, 244, 237));
-    border-left-color: rgba(0, 0, 0, 0);
+    border-left: 0px rgba(0, 0, 0, 0);
   }
 
   a.external {

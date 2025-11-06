@@ -533,10 +533,11 @@ body {
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
     );
-    border-right-color: light-dark(
-      color(srgb 0.361375 0.549813 0.813625),
-      color(srgb 0.111375 0.299813 0.563625)
-    );
+    border-right: 0px solid
+      light-dark(
+        color(srgb 0.361375 0.549813 0.813625),
+        color(srgb 0.111375 0.299813 0.563625)
+      );
   }
 
   .page > div#quartz-body div.sidebar.right {
@@ -545,10 +546,11 @@ body {
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
     );
-    border-left-color: light-dark(
-      color(srgb 0.361375 0.549813 0.813625),
-      color(srgb 0.111375 0.299813 0.563625)
-    );
+    border-left: 0px solid
+      light-dark(
+        color(srgb 0.361375 0.549813 0.813625),
+        color(srgb 0.111375 0.299813 0.563625)
+      );
   }
 
   a.external {

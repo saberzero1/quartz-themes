@@ -286,13 +286,13 @@ body {
   .page > div#quartz-body div.sidebar.left {
     background-color: rgb(0, 0, 0);
     color: rgb(220, 221, 222);
-    border-right-color: rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: rgb(0, 0, 0);
     color: rgb(220, 221, 222);
-    border-left-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
   }
 
   a.external {

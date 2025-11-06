@@ -9535,13 +9535,13 @@ body {
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(oklch(0.95 0 0), oklch(0.19 0 0));
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
-    border-right-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+    border-right: 1px solid light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(oklch(0.95 0 0), oklch(0.19 0 0));
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
-    border-left-color: light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+    border-left: 1px solid light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
   }
 
   a.external {
