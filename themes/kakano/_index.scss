@@ -516,6 +516,41 @@ body {
     );
   }
 
+  .page > div#quartz-body div.sidebar {
+    background-color: light-dark(
+      rgb(255, 255, 255),
+      color(srgb 0.007425 0.0199875 0.037575)
+    );
+    color: light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
+    border-right-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+  }
+
+  .page > div#quartz-body div.sidebar.right {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
+    border-left-color: light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    );
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -1818,12 +1853,7 @@ body {
     text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active),
-  .explorer
-    .explorer-content
-    ul.explorer-ul
-    li
-    > div.folder-container[data-folderpath="var(--current-page-slug)"] {
+  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgb(38, 102, 192);
     border: 0px
       light-dark(

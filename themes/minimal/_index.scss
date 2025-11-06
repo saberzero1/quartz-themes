@@ -356,6 +356,23 @@ body {
     color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
   }
 
+  .page > div#quartz-body div.sidebar {
+    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-right-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+  }
+
+  .page > div#quartz-body div.sidebar.right {
+    background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
+    color: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
+    border-left-color: light-dark(rgb(230, 230, 230), rgb(54, 54, 54));
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
@@ -1609,12 +1626,7 @@ body {
     text-decoration: none solid rgb(153, 153, 153);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active),
-  .explorer
-    .explorer-content
-    ul.explorer-ul
-    li
-    > div.folder-container[data-folderpath="var(--current-page-slug)"] {
+  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: light-dark(
       rgba(117, 117, 117, 0.12),
       rgba(140, 140, 140, 0.12)
