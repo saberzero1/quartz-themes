@@ -1457,14 +1457,18 @@ export const config = [
     publishSelector: null, //TODO
     quartzSelector: ".page > div#quartz-body div.sidebar.left",
     pseudoElement: "",
-    properties: ["border-right-color"],
+    properties: [
+      "border-right-color",
+      "border-right-style",
+      "border-right-width",
+    ],
   },
   {
     obsidianSelector: `hr.workspace-leaf-resize-handle`,
     publishSelector: null, //TODO
     quartzSelector: ".page > div#quartz-body div.sidebar.right",
     pseudoElement: "",
-    properties: ["border-left-color"],
+    properties: ["border-left-color", "border-left-style", "border-left-width"],
   },
   // links
   // TODO: add external link to to markdown so it gets added
