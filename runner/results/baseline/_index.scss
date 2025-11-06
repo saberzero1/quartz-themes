@@ -10,56 +10,56 @@
   --code-border-color: #e0e0e0 !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: #ababab !important;
-  --code-function: #ff9500 !important;
-  --code-important: #ff9500 !important;
-  --code-keyword: #ff3b30 !important;
-  --code-normal: #5c5c5c !important;
-  --code-operator: #ff3b30 !important;
-  --code-property: #007aff !important;
-  --code-punctuation: #5c5c5c !important;
+  --code-comment: #b6b9c5 !important;
+  --code-function: #b76b02 !important;
+  --code-important: #b76b02 !important;
+  --code-keyword: #e45749 !important;
+  --code-normal: #383a42 !important;
+  --code-operator: #ff383c !important;
+  --code-property: #62afef !important;
+  --code-punctuation: #383a42 !important;
   --code-radius: 8px !important;
   --code-size: 0.8em !important;
-  --code-string: #55bef0 !important;
-  --code-tag: #ff3b30 !important;
-  --code-value: #af52de !important;
+  --code-string: #0d97b3 !important;
+  --code-tag: #e45749 !important;
+  --code-value: #a626a4 !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
   --graph-node-attachment: #ffcc00 !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: #28cd41 !important;
+  --graph-node-tag: #34c759 !important;
   --graph-node-unresolved: #ababab !important;
-  --graph-text: #363636 !important;
+  --graph-text: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
   --code-background: #242424 !important;
   --code-border-color: #363636 !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: #666666 !important;
-  --code-function: #ff9f0a !important;
-  --code-important: #ff9f0a !important;
-  --code-keyword: #ff453a !important;
-  --code-normal: #b3b3b3 !important;
-  --code-operator: #ff453a !important;
-  --code-property: #0a84ff !important;
-  --code-punctuation: #b3b3b3 !important;
+  --code-comment: #5c6370 !important;
+  --code-function: #d19a66 !important;
+  --code-important: #d19a66 !important;
+  --code-keyword: #e16d76 !important;
+  --code-normal: #abb2bf !important;
+  --code-operator: #ff4245 !important;
+  --code-property: #62afef !important;
+  --code-punctuation: #abb2bf !important;
   --code-radius: 8px !important;
   --code-size: 0.8em !important;
-  --code-string: #5ac8f5 !important;
-  --code-tag: #ff453a !important;
-  --code-value: #bf5af2 !important;
+  --code-string: #58b6c2 !important;
+  --code-tag: #e16d76 !important;
+  --code-value: #c678de !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: #ffd60a !important;
+  --graph-node-attachment: #ffd600 !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: #32d74b !important;
+  --graph-node-tag: #30d158 !important;
   --graph-node-unresolved: #666666 !important;
-  --graph-text: #cdcdcd !important;
+  --graph-text: #dadada !important;
 }
 
 html {
@@ -331,7 +331,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -349,8 +349,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(205, 205, 205);
-    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+    text-decoration: none solid rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -504,7 +504,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: auto;
     filter: none;
     font-family:
@@ -522,8 +522,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(205, 205, 205);
-    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+    text-decoration: line-through solid rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -690,7 +690,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+    color: light-dark(rgb(56, 58, 66), rgb(171, 178, 191));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
