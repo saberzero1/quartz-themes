@@ -278,6 +278,23 @@ body {
     color: rgb(111, 110, 106);
   }
 
+  .page > div#quartz-body div.sidebar {
+    background-color: rgb(248, 246, 234);
+    color: rgb(111, 110, 106);
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    background-color: rgb(163, 213, 170);
+    color: rgb(111, 110, 106);
+    border-right-color: rgba(0, 0, 0, 0);
+  }
+
+  .page > div#quartz-body div.sidebar.right {
+    background-color: rgb(163, 213, 170);
+    color: rgb(111, 110, 106);
+    border-left-color: rgba(0, 0, 0, 0);
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(138, 92, 245);
@@ -1287,12 +1304,7 @@ body {
     text-decoration: none solid rgb(98, 102, 102);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active),
-  .explorer
-    .explorer-content
-    ul.explorer-ul
-    li
-    > div.folder-container[data-folderpath="var(--current-page-slug)"] {
+  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgb(163, 213, 170);
     border: 0px rgb(237, 244, 240);
     border-top-left-radius: 4px;
