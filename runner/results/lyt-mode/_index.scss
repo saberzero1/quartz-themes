@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.3;
+  --callout-border-width: 1px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0 20px;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 0 0 0 0;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 2px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: rgb(67, 72, 81) !important;
+  --checkbox-border-color-hover: rgb(67, 72, 81) !important;
+  --checkbox-color: transparent !important;
+  --checkbox-color-hover: transparent !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(124, 132, 156) !important;
+  --checkbox-radius: 2px !important;
+  --checkbox-size: 16px !important;
   --code-background: rgb(35, 36, 42) !important;
   --code-border-color: rgba(100, 100, 100, 0.25) !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: rgb(199, 133, 161) !important;
   --code-value: rgb(130, 183, 186) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(124, 132, 156) !important;
+  --collapse-icon-color-collapsed: rgb(185, 195, 223) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(76, 118, 133) !important;
   --graph-node: rgb(243, 238, 94) !important;
@@ -32,10 +65,32 @@
   --graph-node-tag: rgb(60, 152, 180) !important;
   --graph-node-unresolved: rgb(145, 110, 201) !important;
   --graph-text: rgb(219, 222, 230) !important;
+  --icon-color: rgb(124, 132, 156) !important;
+  --icon-color-active: rgb(184, 148, 255) !important;
+  --icon-color-focused: rgb(184, 148, 255) !important;
+  --icon-color-hover: rgb(184, 148, 255) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 1 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
   --graph-color-line: rgb(76, 118, 133) !important;
   --graph-color-line-hover: rgb(160, 167, 187) !important;
   --graph-color-node-border-hover: rgb(239, 241, 245) !important;
+  --callout-title-background: transparent;
   --graph-color-node-hover: rgb(221, 110, 190) !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 .darkmode {
@@ -1729,14 +1784,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

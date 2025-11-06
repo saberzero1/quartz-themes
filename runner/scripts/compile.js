@@ -366,8 +366,8 @@ function generateAndWriteCSS(
       // bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
-      if (key.startsWith("--code-") || key.startsWith("--graph-")) {
-        bodyVarsStringDarkQuartz += `  ${key}: ${value} !important;\n`;
+      if (isIncludedVariable(key)) {
+        bodyVarsStringDarkQuartz += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
       }
     }
   }
@@ -378,7 +378,7 @@ function generateAndWriteCSS(
       bodyVarsStringLightPublish += `  ${key}: ${value} !important;\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
-      if (key.startsWith("--code-") || key.startsWith("--graph-")) {
+      if (isIncludedVariable(key)) {
         bodyVarsStringLightQuartz += `  ${key}: ${value} !important;\n`;
       }
     }
@@ -392,19 +392,27 @@ function generateAndWriteCSS(
     lightData && darkData
       ? `
 :root:root {
-${bodyVarsStringLightQuartz}}
+${bodyVarsStringLightQuartz}
+  --quartz-icon-color: currentColor;
+}
 :root:root[saved-theme="dark"] {
-${bodyVarsStringDarkQuartz}}
+${bodyVarsStringDarkQuartz}
+  --quartz-icon-color: currentColor;
+}
 `
       : lightData
         ? `
 :root:root {
-${bodyVarsStringLightQuartz}}
+${bodyVarsStringLightQuartz}
+  --quartz-icon-color: currentColor;
+}
 `
         : darkData
           ? `
 :root:root {
-${bodyVarsStringDarkQuartz}}
+${bodyVarsStringDarkQuartz}
+  --quartz-icon-color: currentColor;
+}
 `
           : "";
 
@@ -584,14 +592,12 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
@@ -952,4 +958,21 @@ function fallbackStyle(selector, property) {
   return mode === "dark"
     ? defaultDark[tag]?.[property] || "inherit"
     : defaultLight[tag]?.[property] || "inherit";
+}
+
+function isIncludedVariable(key) {
+  const includedPrefixes = [
+    "--callout-",
+    "--checkbox-",
+    "--code-",
+    "--collapse-icon-color",
+    "--graph-",
+    "--icon-",
+  ];
+  for (const prefix of includedPrefixes) {
+    if (key.startsWith(prefix)) {
+      return true;
+    }
+  }
+  return false;
 }

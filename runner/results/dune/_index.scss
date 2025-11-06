@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 233, 49, 71 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 8, 109, 221 !important;
+  --callout-error: 233, 49, 71 !important;
+  --callout-example: 120, 82, 238 !important;
+  --callout-fail: 233, 49, 71 !important;
+  --callout-important: 0, 191, 188 !important;
+  --callout-info: 8, 109, 221 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 236, 117, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 8, 185, 78 !important;
+  --callout-summary: 0, 191, 188 !important;
+  --callout-tip: 0, 191, 188 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 8, 109, 221 !important;
+  --callout-warning: 236, 117, 0 !important;
+  --checkbox-border-color: #ababab !important;
+  --checkbox-border-color-hover: #5c5c5c !important;
+  --checkbox-color: rgb(153, 115, 247) !important;
+  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #ffffff !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #ffffff !important;
   --code-border-color: #bdbdbd !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #e93147 !important;
   --code-value: #2f74ba !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #ababab !important;
+  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgba(128, 128, 128) !important;
   --graph-node: #5c5c5c !important;
@@ -32,15 +65,79 @@
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
+  --icon-color: #5c5c5c !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-focused: #222222 !important;
+  --icon-color-hover: #5c5c5c !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
   --graph-arrow: #5c5c5c !important;
   --graph-circle-fill-highlight: rgb(153, 115, 247) !important;
+  --callout-margin: 4px !important;
   --graph-circle-fill: #db3434 !important;
   --graph-circle-fill-unresolved: gray !important;
   --graph-fill-tag: darkorange !important;
   --graph-line-highlight: rgb(153, 115, 247) !important;
+  --callout-bg-b: #99ccff !important;
+  --callout-bg-g: #ace573 !important;
+  --callout-bg-m: #bfbfbf !important;
+  --callout-bg-r: #ff8080 !important;
+  --callout-gap: 0.5rem !important;
+  --callout-min-width: 200px !important;
+  --callout-title-b: #378dff !important;
+  --callout-title-g: #52a543 !important;
+  --callout-title-m: dimgray !important;
+  --callout-title-r: #db3434 !important;
+  --checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgb(44, 99, 210)transform: scale(1.3)msFilter:'%3E%3Cpath d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-color: #5c5c5c !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 4px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: #666666 !important;
+  --checkbox-border-color-hover: #b3b3b3 !important;
+  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #1e1e1e !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #1e1e1e !important;
   --code-border-color: #555555 !important;
   --code-border-width: 0px !important;
@@ -59,6 +156,8 @@
   --code-tag: #fb464c !important;
   --code-value: #d86f42 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #666666 !important;
+  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgba(128, 128, 128) !important;
   --graph-node: #b3b3b3 !important;
@@ -67,13 +166,46 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
+  --icon-color: #b3b3b3 !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-focused: #dadada !important;
+  --icon-color-hover: #b3b3b3 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
   --graph-arrow: #b3b3b3 !important;
   --graph-circle-fill-highlight: rgb(138, 92, 245) !important;
+  --callout-margin: 4px;
   --graph-circle-fill: #ff8080 !important;
   --graph-circle-fill-unresolved: gray !important;
   --graph-fill-tag: darkorange !important;
   --graph-line-highlight: rgb(138, 92, 245) !important;
+  --callout-bg-b: rgb(0, 0, 0);
+  --callout-bg-g: rgb(0, 0, 0);
+  --callout-bg-m: dimgray;
+  --callout-bg-r: rgb(0, 0, 0);
+  --callout-gap: 0.5rem;
+  --callout-min-width: 200px;
+  --callout-title-b: #99ccff;
+  --callout-title-g: #ace573;
+  --callout-title-m: #bfbfbf;
+  --callout-title-r: #ff8080;
+  --checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgb(44, 99, 210)transform: scale(1.3)msFilter:'%3E%3Cpath d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-color: #b3b3b3 !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1717,14 +1849,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

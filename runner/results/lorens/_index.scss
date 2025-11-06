@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 255, 120, 129;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 137, 189, 244;
+  --callout-error: 255, 120, 129;
+  --callout-example: 203, 158, 255;
+  --callout-fail: 255, 120, 129;
+  --callout-important: 134, 223, 226;
+  --callout-info: 137, 189, 244;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 251, 187, 131;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 0px;
+  --callout-success: 124, 211, 124;
+  --callout-summary: 134, 223, 226;
+  --callout-tip: 134, 223, 226;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 137, 189, 244;
+  --callout-warning: 251, 187, 131;
+  --checkbox-border-color: rgb(99, 110, 126) !important;
+  --checkbox-border-color-hover: rgb(99, 110, 126) !important;
+  --checkbox-color: rgb(124, 211, 124) !important;
+  --checkbox-color-hover: rgb(124, 211, 124) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(34, 35, 37) !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-border-color: rgba(101, 110, 123, 0.2) !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: rgb(255, 120, 129) !important;
   --code-value: rgb(203, 158, 255) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(99, 110, 126) !important;
+  --collapse-icon-color-collapsed: rgb(86, 109, 143) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: rgb(171, 181, 196) !important;
@@ -32,11 +65,33 @@
   --graph-node-tag: rgb(124, 211, 124) !important;
   --graph-node-unresolved: rgb(99, 110, 126) !important;
   --graph-text: rgb(204, 212, 224) !important;
+  --icon-color: rgb(171, 181, 196) !important;
+  --icon-color-active: rgb(86, 109, 143) !important;
+  --icon-color-focused: rgb(204, 212, 224) !important;
+  --icon-color-hover: rgb(171, 181, 196) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-content-radius: 0px;
   --code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-border: 1px dashed rgba(101, 110, 123, 0.2) !important;
   --code-border-dark: 1px dashed rgba(101, 110, 123, 0.2) !important;
   --code-border-light: 1px dashed rgba(101, 110, 123, 0.2) !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 .darkmode {
@@ -1617,14 +1672,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

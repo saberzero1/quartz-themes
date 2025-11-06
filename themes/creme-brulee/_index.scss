@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 1 !important;
+  --callout-border-width: 1px !important;
+  --callout-bug: 194, 87, 87 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0px 12px !important;
+  --callout-default: 102, 140, 179 !important;
+  --callout-error: 194, 87, 87 !important;
+  --callout-example: 138, 172, 108 !important;
+  --callout-fail: 194, 87, 87 !important;
+  --callout-important: 194, 87, 87 !important;
+  --callout-info: 91, 168, 190 !important;
+  --callout-padding: 0 !important;
+  --callout-question: 225, 177, 81 !important;
+  --callout-quote: 135, 125, 181 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 138, 172, 108 !important;
+  --callout-summary: 91, 168, 190 !important;
+  --callout-tip: 91, 168, 190 !important;
+  --callout-title-padding: 6px 12px !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 102, 140, 179 !important;
+  --callout-warning: 207, 134, 74 !important;
+  --checkbox-border-color: rgb(207, 182, 150) !important;
+  --checkbox-border-color-hover: rgb(138, 103, 66) !important;
+  --checkbox-color: rgb(220, 126, 111) !important;
+  --checkbox-color-hover: rgb(224, 137, 128) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(252, 250, 248) !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: rgb(247, 243, 238) !important;
   --code-border-color: rgb(207, 182, 150) !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #c25757 !important;
   --code-value: #877db5 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(207, 182, 150) !important;
+  --collapse-icon-color-collapsed: rgb(207, 182, 150) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: rgb(138, 103, 66) !important;
@@ -32,10 +65,65 @@
   --graph-node-tag: #8aac6c !important;
   --graph-node-unresolved: rgb(207, 182, 150) !important;
   --graph-text: rgb(74, 52, 28) !important;
+  --icon-color: rgb(138, 103, 66) !important;
+  --icon-color-active: rgb(214, 110, 92) !important;
+  --icon-color-focused: rgb(74, 52, 28) !important;
+  --icon-color-hover: rgb(138, 103, 66) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-margin: 0 0 1em 0 !important;
+  --callout-opacity: 0.01 !important;
+  --callout-title-opacity: 0.1 !important;
   --graph-circle-color: rgb(166, 129, 89) !important;
   --graph-tag-color: rgba(135, 125, 181, 0.7) !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 1;
+  --callout-border-width: 1px;
+  --callout-bug: 194, 87, 87;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0px 12px;
+  --callout-default: 102, 140, 179;
+  --callout-error: 194, 87, 87;
+  --callout-example: 138, 172, 108;
+  --callout-fail: 194, 87, 87;
+  --callout-important: 194, 87, 87;
+  --callout-info: 91, 168, 190;
+  --callout-padding: 0;
+  --callout-question: 225, 177, 81;
+  --callout-quote: 135, 125, 181;
+  --callout-radius: 4px;
+  --callout-success: 138, 172, 108;
+  --callout-summary: 91, 168, 190;
+  --callout-tip: 91, 168, 190;
+  --callout-title-padding: 6px 12px;
+  --callout-title-weight: 600;
+  --callout-todo: 102, 140, 179;
+  --callout-warning: 207, 134, 74;
+  --checkbox-border-color: rgb(95, 79, 58) !important;
+  --checkbox-border-color-hover: rgb(171, 145, 109) !important;
+  --checkbox-color: rgb(214, 110, 92) !important;
+  --checkbox-color-hover: rgb(224, 137, 128) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(31, 26, 20) !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: rgb(36, 30, 25) !important;
   --code-border-color: rgb(95, 79, 58) !important;
   --code-border-width: 0px !important;
@@ -54,6 +142,8 @@
   --code-tag: #c25757 !important;
   --code-value: #877db5 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(95, 79, 58) !important;
+  --collapse-icon-color-collapsed: rgb(95, 79, 58) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: rgb(171, 145, 109) !important;
@@ -62,8 +152,32 @@
   --graph-node-tag: #8aac6c !important;
   --graph-node-unresolved: rgb(95, 79, 58) !important;
   --graph-text: rgb(217, 184, 140) !important;
+  --icon-color: rgb(171, 145, 109) !important;
+  --icon-color-active: rgb(224, 137, 128) !important;
+  --icon-color-focused: rgb(217, 184, 140) !important;
+  --icon-color-hover: rgb(171, 145, 109) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --callout-margin: 0 0 1em 0;
+  --callout-opacity: 0.01;
+  --callout-title-opacity: 0.1;
   --graph-circle-color: rgb(166, 129, 89) !important;
   --graph-tag-color: rgba(135, 125, 181, 0.7) !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1508,14 +1622,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

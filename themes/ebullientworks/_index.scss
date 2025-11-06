@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.4 !important;
+  --callout-border-width: 0 0.05rem 0 0.1rem !important;
+  --callout-bug: 194, 76, 74 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 8px !important;
+  --callout-default: 69, 117, 174 !important;
+  --callout-error: 194, 76, 74 !important;
+  --callout-example: 142, 103, 135 !important;
+  --callout-fail: 194, 76, 74 !important;
+  --callout-important: 62, 125, 121 !important;
+  --callout-info: 69, 117, 174 !important;
+  --callout-padding: 0 !important;
+  --callout-question: 157, 101, 83 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 8px !important;
+  --callout-success: 92, 122, 98 !important;
+  --callout-summary: 62, 125, 121 !important;
+  --callout-tip: 62, 125, 121 !important;
+  --callout-title-padding: 8px !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 69, 117, 174 !important;
+  --callout-warning: 157, 101, 83 !important;
+  --checkbox-border-color: #a0a0a0 !important;
+  --checkbox-border-color-hover: #5d5d5d !important;
+  --checkbox-color: #8e6787 !important;
+  --checkbox-color-hover: #b399ae !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #f8f8f8 !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #f1f1f1 !important;
   --code-border-color: #cdcdcd !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #c24c4a !important;
   --code-value: #8e6787 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #a0a0a0 !important;
+  --collapse-icon-color-collapsed: #8e6787 !important;
   --graph-controls-width: 240px !important;
   --graph-line: #cdcdcd !important;
   --graph-node: #c6b2c3 !important;
@@ -32,8 +65,68 @@
   --graph-node-tag: #91a695 !important;
   --graph-node-unresolved: #b8b8b8 !important;
   --graph-text: #484848 !important;
+  --icon-color: #5d5d5d !important;
+  --icon-color-active: #8e6787 !important;
+  --icon-color-focused: #484848 !important;
+  --icon-color-hover: #5d5d5d !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --checkbox-cancelled: #a0a0a0 !important;
+  --checkbox-checked: #91a695 !important;
+  --checkbox-deferred: #7fa4ca !important;
+  --checkbox-hover: #dbdbdb !important;
+  --checkbox-important: #c24c4a !important;
+  --checkbox-in-progress: #41b0b0 !important;
+  --checkbox-question: #c49a52 !important;
+  --checkbox-review: #91a695 !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.4;
+  --callout-border-width: 0 0.05rem 0 0.1rem;
+  --callout-bug: 237, 166, 165;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0 8px;
+  --callout-default: 159, 187, 216;
+  --callout-error: 237, 166, 165;
+  --callout-example: 198, 178, 195;
+  --callout-fail: 237, 166, 165;
+  --callout-important: 158, 190, 188;
+  --callout-info: 159, 187, 216;
+  --callout-padding: 0;
+  --callout-question: 227, 172, 151;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 8px;
+  --callout-success: 173, 188, 176;
+  --callout-summary: 158, 190, 188;
+  --callout-tip: 158, 190, 188;
+  --callout-title-padding: 8px;
+  --callout-title-weight: 600;
+  --callout-todo: 159, 187, 216;
+  --callout-warning: 227, 172, 151;
+  --checkbox-border-color: #a0a0a0 !important;
+  --checkbox-border-color-hover: #b8b8b8 !important;
+  --checkbox-color: #594054 !important;
+  --checkbox-color-hover: #8e6787 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #1e1e1e !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #272727 !important;
   --code-border-color: #1b1b1b !important;
   --code-border-width: 0px !important;
@@ -52,6 +145,8 @@
   --code-tag: #eda6a5 !important;
   --code-value: #c6b2c3 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #a0a0a0 !important;
+  --collapse-icon-color-collapsed: #c6b2c3 !important;
   --graph-controls-width: 240px !important;
   --graph-line: #484848 !important;
   --graph-node: #8e6787 !important;
@@ -60,6 +155,35 @@
   --graph-node-tag: #91a695 !important;
   --graph-node-unresolved: #b8b8b8 !important;
   --graph-text: #cdcdcd !important;
+  --icon-color: #b8b8b8 !important;
+  --icon-color-active: #c6b2c3 !important;
+  --icon-color-focused: #cdcdcd !important;
+  --icon-color-hover: #b8b8b8 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --checkbox-cancelled: #737373 !important;
+  --checkbox-checked: #5c7a62 !important;
+  --checkbox-deferred: #7fa4ca !important;
+  --checkbox-hover: #898989 !important;
+  --checkbox-important: #a75c70 !important;
+  --checkbox-in-progress: #058080 !important;
+  --checkbox-question: #c49a52 !important;
+  --checkbox-review: #91a695 !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1676,14 +1800,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
