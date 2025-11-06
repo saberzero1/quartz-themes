@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 251, 70, 76 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 2, 122, 255 !important;
+  --callout-error: 251, 70, 76 !important;
+  --callout-example: 168, 130, 255 !important;
+  --callout-fail: 251, 70, 76 !important;
+  --callout-important: 83, 223, 221 !important;
+  --callout-info: 2, 122, 255 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 233, 151, 63 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 68, 207, 110 !important;
+  --callout-summary: 83, 223, 221 !important;
+  --callout-tip: 83, 223, 221 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 2, 122, 255 !important;
+  --callout-warning: 233, 151, 63 !important;
+  --checkbox-border-color: rgb(245, 92, 81) !important;
+  --checkbox-border-color-hover: #b29688 !important;
+  --checkbox-color: rgb(245, 92, 81) !important;
+  --checkbox-color-hover: #a83e37 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #fffefd !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #fdf9f5 !important;
   --code-border-color: #f6e2db !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #f85c51 !important;
   --code-value: #a29bfe !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(245, 92, 81) !important;
+  --collapse-icon-color-collapsed: rgb(245, 92, 81) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #4a3827 !important;
   --graph-node: #b29688 !important;
@@ -32,8 +65,60 @@
   --graph-node-tag: #0cc77c !important;
   --graph-node-unresolved: rgb(245, 92, 81) !important;
   --graph-text: #4a3827 !important;
+  --icon-color: #b29688 !important;
+  --icon-color-active: rgb(245, 92, 81) !important;
+  --icon-color-focused: #4a3827 !important;
+  --icon-color-hover: #b29688 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 4px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: rgb(245, 92, 81) !important;
+  --checkbox-border-color-hover: #807874 !important;
+  --checkbox-color: rgb(245, 92, 81) !important;
+  --checkbox-color-hover: #a83e37 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #121110 !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #181716 !important;
   --code-border-color: #232120 !important;
   --code-border-width: 0px !important;
@@ -52,6 +137,8 @@
   --code-tag: #f85c51 !important;
   --code-value: #a29bfe !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: rgb(245, 92, 81) !important;
+  --collapse-icon-color-collapsed: rgb(245, 92, 81) !important;
   --graph-controls-width: 240px !important;
   --graph-line: #ffebd1 !important;
   --graph-node: #807874 !important;
@@ -60,6 +147,27 @@
   --graph-node-tag: #23d18c !important;
   --graph-node-unresolved: rgb(245, 92, 81) !important;
   --graph-text: #ffebd1 !important;
+  --icon-color: #807874 !important;
+  --icon-color-active: rgb(245, 92, 81) !important;
+  --icon-color-focused: #ffebd1 !important;
+  --icon-color-hover: #807874 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1565,14 +1673,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

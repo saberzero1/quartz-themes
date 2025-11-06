@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.15 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 225, 70, 147 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 0, 132, 255 !important;
+  --callout-error: 250, 30, 14 !important;
+  --callout-example: 180, 68, 241 !important;
+  --callout-fail: 250, 30, 14 !important;
+  --callout-important: 4, 176, 167 !important;
+  --callout-info: 0, 132, 255 !important;
+  --callout-padding: 16px 16px 8px 16px !important;
+  --callout-question: 255, 143, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 8px !important;
+  --callout-success: 9, 180, 29 !important;
+  --callout-summary: 4, 176, 167 !important;
+  --callout-tip: 4, 176, 167 !important;
+  --callout-title-padding: 0 0 0 2px !important;
+  --callout-title-weight: 650 !important;
+  --callout-todo: 0, 132, 255 !important;
+  --callout-warning: 233, 188, 0 !important;
+  --checkbox-border-color: oklch(78.75% 0.0025 281) !important;
+  --checkbox-border-color-hover: oklch(71.5% 0.0105 281) !important;
+  --checkbox-color: transparent !important;
+  --checkbox-color-hover: transparent !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #fff !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: oklch(62.5% 0 0 / 0.03) !important;
   --code-border-color: oklch(0% 0 0 / 0.06) !important;
   --code-border-width: 1px !important;
@@ -24,6 +55,8 @@
   --code-tag: rgb(240, 42, 28) !important;
   --code-value: rgb(178, 74, 236) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: oklch(0% 0 0 / 0.32) !important;
+  --collapse-icon-color-collapsed: rgb(0, 114, 245) !important;
   --graph-controls-width: 220px !important;
   --graph-line: oklch(78.75% 0.0025 281) !important;
   --graph-node: oklch(45% 0.0105 281) !important;
@@ -32,12 +65,65 @@
   --graph-node-tag: rgb(9, 180, 29) !important;
   --graph-node-unresolved: oklch(71.5% 0.0105 281) !important;
   --graph-text: oklch(28.25% 0.0005 281) !important;
+  --icon-color: oklch(55% 0.0105 281) !important;
+  --icon-color-active: rgb(0, 114, 245) !important;
+  --icon-color-focused: oklch(28.25% 0.0005 281) !important;
+  --icon-color-hover: oklch(28.25% 0.0005 281) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.875px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.875px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2.125px !important;
   --code-background-alt: oklch(
     from oklch(100% 0.0005 281) l c h / 0.8
   ) !important;
   --code-special: oklch(28.25% 0.0005 281) !important;
+  --icon-stroke-thick: 2.25px !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.15;
+  --callout-border-width: 0px;
+  --callout-bug: 245, 141, 179;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 40, 165, 238;
+  --callout-error: 251, 72, 79;
+  --callout-example: 194, 126, 233;
+  --callout-fail: 251, 72, 79;
+  --callout-important: 89, 208, 196;
+  --callout-info: 40, 165, 238;
+  --callout-padding: 16px 16px 8px 16px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 150, 150, 160;
+  --callout-radius: 8px;
+  --callout-success: 91, 208, 109;
+  --callout-summary: 89, 208, 196;
+  --callout-tip: 89, 208, 196;
+  --callout-title-padding: 0 0 0 2px;
+  --callout-title-weight: 650;
+  --callout-todo: 40, 165, 238;
+  --callout-warning: 224, 218, 113;
+  --checkbox-border-color: oklch(36.25% 0.00625 275) !important;
+  --checkbox-border-color-hover: oklch(43.75% 0.0125 275) !important;
+  --checkbox-color: transparent !important;
+  --checkbox-color-hover: transparent !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #fff !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: oklch(100% 0.06 283 / 0.025) !important;
   --code-border-color: oklch(100% 0.05 283 / 0.0625) !important;
   --code-border-width: 1px !important;
@@ -56,6 +142,12 @@
   --code-tag: rgb(251, 72, 79) !important;
   --code-value: rgb(194, 126, 233) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: oklch(100% 0.02 283 / 0.35) !important;
+  --collapse-icon-color-collapsed: color-mix(
+    in oklab,
+    rgb(0, 167, 250) 52%,
+    #fff 38%
+  ) !important;
   --graph-controls-width: 220px !important;
   --graph-line: oklch(36.25% 0.00625 275) !important;
   --graph-node: oklch(71.25% 0.00625 275) !important;
@@ -64,8 +156,34 @@
   --graph-node-tag: rgb(91, 208, 109) !important;
   --graph-node-unresolved: oklch(52.5% 0.0125 275) !important;
   --graph-text: oklch(87.5% 0.00375 275) !important;
+  --icon-color: oklch(64.25% 0.0125 275) !important;
+  --icon-color-active: color-mix(
+    in oklab,
+    rgb(0, 167, 250) 52%,
+    #fff 38%
+  ) !important;
+  --icon-color-focused: oklch(87.5% 0.00375 275) !important;
+  --icon-color-hover: oklch(87.5% 0.00375 275) !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.875px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.875px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2.125px !important;
   --code-background-alt: oklch(100% 0.05 283 / 0.05) !important;
   --code-special: oklch(87.5% 0.00375 275) !important;
+  --icon-stroke-thick: 2.25px !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -2010,14 +2128,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

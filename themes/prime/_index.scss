@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: darken !important;
+  --callout-border-opacity: 0.25 !important;
+  --callout-border-width: 0px !important;
+  --callout-bug: 233, 49, 71 !important;
+  --callout-content-background: transparent !important;
+  --callout-content-padding: 0 !important;
+  --callout-default: 8, 109, 221 !important;
+  --callout-error: 233, 49, 71 !important;
+  --callout-example: 120, 82, 238 !important;
+  --callout-fail: 233, 49, 71 !important;
+  --callout-important: 0, 191, 188 !important;
+  --callout-info: 8, 109, 221 !important;
+  --callout-padding: 12px 12px 12px 24px !important;
+  --callout-question: 236, 117, 0 !important;
+  --callout-quote: 158, 158, 158 !important;
+  --callout-radius: 4px !important;
+  --callout-success: 8, 185, 78 !important;
+  --callout-summary: 0, 191, 188 !important;
+  --callout-tip: 0, 191, 188 !important;
+  --callout-title-padding: 0 !important;
+  --callout-title-weight: 600 !important;
+  --callout-todo: 8, 109, 221 !important;
+  --callout-warning: 236, 117, 0 !important;
+  --checkbox-border-color: #8d8d8d !important;
+  --checkbox-border-color-hover: #747474 !important;
+  --checkbox-color: #d0d6e1 !important;
+  --checkbox-color-hover: #d0d6e1 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #0bd065 !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #f9fafc !important;
   --code-border-color: #c5ccdb !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #f6535a !important;
   --code-value: #8c90f9 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #8d8d8d !important;
+  --collapse-icon-color-collapsed: #8c90f9 !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #747474 !important;
@@ -32,8 +65,59 @@
   --graph-node-tag: #0bd065 !important;
   --graph-node-unresolved: #8d8d8d !important;
   --graph-text: #0d1117 !important;
+  --icon-color-active: #8c90f9 !important;
+  --icon-color-focused: #0d1117 !important;
+  --icon-color-hover: #747474 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+
+  --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 4px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: #aea8ba !important;
+  --checkbox-border-color-hover: #c0c0c0 !important;
+  --checkbox-color: #263142 !important;
+  --checkbox-color-hover: #263142 !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: #9cfac7 !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 16px !important;
   --code-background: #19212d !important;
   --code-border-color: #2c394d !important;
   --code-border-width: 0px !important;
@@ -52,6 +136,8 @@
   --code-tag: #ff5555 !important;
   --code-value: #bd93f9 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #aea8ba !important;
+  --collapse-icon-color-collapsed: #9ca0fa !important;
   --graph-controls-width: 240px !important;
   --graph-line: #324158 !important;
   --graph-node: #c0c0c0 !important;
@@ -60,6 +146,26 @@
   --graph-node-tag: #9cfac7 !important;
   --graph-node-unresolved: #aea8ba !important;
   --graph-text: #fafbfc !important;
+  --icon-color-active: #9ca0fa !important;
+  --icon-color-focused: #fafbfc !important;
+  --icon-color-hover: #c0c0c0 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 html {
@@ -1704,14 +1810,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }

@@ -6,6 +6,37 @@
 }
 
 :root:root {
+  --callout-blend-mode: lighten;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 251, 70, 76;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 2, 122, 255;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 0px;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+  --checkbox-border-color: rgb(110, 116, 124) !important;
+  --checkbox-border-color-hover: #b3b3b3 !important;
+  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: rgb(7, 7, 8) !important;
+  --checkbox-radius: 0px !important;
+  --checkbox-size: 16px !important;
   --code-background: rgb(20, 22, 26) !important;
   --code-border-color: rgb(56, 60, 67) !important;
   --code-border-width: 0px !important;
@@ -24,6 +55,8 @@
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: #b3b3b3 !important;
+  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(63, 67, 75) !important;
   --graph-node: #b3b3b3 !important;
@@ -32,6 +65,33 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: rgb(110, 116, 124) !important;
   --graph-text: #a3a5aa !important;
+  --icon-color: #b3b3b3 !important;
+  --icon-color-active: rgb(166, 139, 249) !important;
+  --icon-color-focused: #a3a5aa !important;
+  --icon-color-hover: #b3b3b3 !important;
+  --icon-l: 18px !important;
+  --icon-l-stroke-width: 1.75px !important;
+  --icon-m: 18px !important;
+  --icon-m-stroke-width: 1.75px !important;
+  --icon-opacity: 0.85 !important;
+  --icon-opacity-active: 1 !important;
+  --icon-opacity-hover: 1 !important;
+  --icon-s: 16px !important;
+  --icon-s-stroke-width: 2px !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --icon-xl: 32px !important;
+  --icon-xl-stroke-width: 1.25px !important;
+  --icon-xs: 14px !important;
+  --icon-xs-stroke-width: 2px !important;
+  --icon-close: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVHgBlZFNCoQwDIVbmRvOMHOAAd0K/uDGlYKiCG4VPICi9yu0oCSQoFUXFtKEl6+voZXvr7sKay1TL690FOexY+Hz87i2decOuDKQsNGVe8AGYTRJIh0Y+orBvxszCPllOymlxN06jNE26Qnwg4zdHQLrMhFaawwAqAadDPE1ijwUxhiMKCmxCZk06OMYTz5lAx3xWDeXkLNAAAAAAElFTkSuQmCC") !important;
+  --icon-maximize: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBlZHBCYAwDEVT6YaKbqArOILgBLqBosP1VkhAaQ6S1lKad+ihPy8kxLT9+IACG57r2KqKu2GCBpTYtEMOOQELzrnv4z53I4vDjjJnwXsPJWTOAiJGHVNB5pGwLjPk+AlEBLUY7eFebCosBHOR7vYAAAAASUVORK5CYII=") !important;
+  --icon-maximized: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVHgBlVDLCoMwENwU/7ClvRYK7b2lCIJHEQQ/QEHwqujfBXJIQMnihg34iHPJ7GNm2AhYcL2/JwhAxIuhq3aXb48PiFBna2YFERVHzoQLnAQmSCmxeL5+3rBtSsdpBwVKKTcY+1rY197G+8RRoLVejed94igwxrgB/zXeJ+4Jijz2Erjg+8/WE7ZAt6EgSUsIxQwaJEWv7G6SSgAAAABJRU5ErkJggg==") !important;
+  --icon-minimize: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA7SURBVHgBlY+xDQAgDMNaiQ9B8AHcxAlI/NYtKwj6QOohUzxYc+1HAqQ3e03qXNpwwcyE5QsAaEGjDRf8ZAza6Bz6VQAAAABJRU5ErkJggg==") !important;
+  --icon-tree-minus: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJBAMAAAASvxsjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASUExURbq7vJGRkfr7++3t7Etjp+Pj42YlrUQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAqSURBVBjTY2AUFBRkYBBSUlISQCGFXVycgaSxsbEAg2hoaCiMBKoXZAAAjW0F81JmPWMAAAAASUVORK5CYII=") !important;
+  --icon-tree-plus: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJBAMAAAASvxsjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAYUExURbq7vJGRkfz8/ClCcvr7+0tjp+3t7OPj489iP3EAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA1SURBVBjTY2AUFBRkYBBSUlISAJJGQFLExcQFSIaGhggwiKWZpQkwiJebl4PIciAJVC/IAACvoQeLVKBJMgAAAABJRU5ErkJggg==") !important;
+
+  --quartz-icon-color: currentColor;
 }
 
 .darkmode {
@@ -1616,14 +1676,15 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(
+          --collapse-icon-color-collapsed,
+          var(--quartz-icon-color)
+        );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
-        background: currentcolor;
+        background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
