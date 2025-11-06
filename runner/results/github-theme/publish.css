@@ -2898,8 +2898,22 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(208, 215, 222, 0.32),
     rgba(177, 186, 196, 0.12)
   );
+  border: 0px light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: light-dark(rgb(36, 41, 47), rgb(201, 209, 217));
   cursor: default;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 body
   .nav-view-outer
