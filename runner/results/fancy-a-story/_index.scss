@@ -6,71 +6,59 @@
 }
 
 :root:root {
-  --code-background: color-mix(in srgb-linear, #e7e7e7, #000000 10%) !important;
-  --code-border-color: color-mix(
-    in srgb-linear,
-    #e7e7e7,
-    #000000 20%
-  ) !important;
+  --code-background: #dcdcdc !important;
+  --code-border-color: #c5c5c5 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: color-mix(in srgb-linear, #e7e7e7, #000000 50%) !important;
-  --code-function: rgb(199.455, 175.095, 33.285) !important;
-  --code-important: rgb(180.315, 106.365, 15.015) !important;
-  --code-keyword: rgb(213.375, 68.955, 176.835) !important;
-  --code-normal: #000000 !important;
-  --code-operator: rgb(169.005, 56.775, 56.775) !important;
-  --code-property: rgb(57.645, 141.165, 141.165) !important;
-  --code-punctuation: color-mix(
-    in srgb-linear,
-    #e7e7e7,
-    #000000 70%
-  ) !important;
+  --code-comment: #aaa !important;
+  --code-function: #c7af21 !important;
+  --code-important: #b46a0f !important;
+  --code-keyword: #d545b1 !important;
+  --code-normal: #000 !important;
+  --code-operator: #a93939 !important;
+  --code-property: #3a8d8d !important;
+  --code-punctuation: #868686 !important;
   --code-radius: 0 !important;
   --code-size: 0.875em !important;
-  --code-string: rgb(26.325, 99.405, 26.325) !important;
-  --code-tag: rgb(169.005, 56.775, 56.775) !important;
-  --code-value: rgb(102.015, 39.375, 121.155) !important;
+  --code-string: #1a631a !important;
+  --code-tag: #a93939 !important;
+  --code-value: #662779 !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
-  --graph-line: color-mix(in srgb-linear, #e7e7e7, #000000 35%) !important;
-  --graph-node: color-mix(in srgb-linear, #e7e7e7, #000000 70%) !important;
-  --graph-node-attachment: rgb(199.455, 175.095, 33.285) !important;
+  --graph-line: #bfbfbf !important;
+  --graph-node: #868686 !important;
+  --graph-node-attachment: #c7af21 !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: rgb(26.325, 99.405, 26.325) !important;
-  --graph-node-unresolved: color-mix(
-    in srgb-linear,
-    #e7e7e7,
-    #000000 50%
-  ) !important;
-  --graph-text: #000000 !important;
+  --graph-node-tag: #1a631a !important;
+  --graph-node-unresolved: #aaa !important;
+  --graph-text: #000 !important;
 }
 :root:root[saved-theme="dark"] {
-  --code-background: color-mix(in lab, #1f1f1f, #d9d9d9 10%) !important;
-  --code-border-color: color-mix(in lab, #1f1f1f, #d9d9d9 20%) !important;
+  --code-background: #2f2f2f !important;
+  --code-border-color: #505050 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: color-mix(in lab, #1f1f1f, #d9d9d9 50%) !important;
-  --code-function: rgb(237.97, 237.97, 16.12) !important;
-  --code-important: rgb(223.18, 158.8, 75.28) !important;
-  --code-keyword: rgb(231.01, 180.55, 231.88) !important;
+  --code-comment: #757575 !important;
+  --code-function: #eeee10 !important;
+  --code-important: #df9f4b !important;
+  --code-keyword: #e7b5e8 !important;
   --code-normal: #d9d9d9 !important;
-  --code-operator: rgb(224.92, 103.99, 103.99) !important;
-  --code-property: rgb(123.13, 212.74, 212.74) !important;
-  --code-punctuation: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
+  --code-operator: #e16868 !important;
+  --code-property: #7bd5d5 !important;
+  --code-punctuation: #9c9c9c !important;
   --code-radius: 0 !important;
   --code-size: 0.875em !important;
-  --code-string: rgb(99.64, 206.65, 99.64) !important;
-  --code-tag: rgb(224.92, 103.99, 103.99) !important;
-  --code-value: rgb(186.64, 137.05, 227.53) !important;
+  --code-string: #64cf64 !important;
+  --code-tag: #e16868 !important;
+  --code-value: #bb89e4 !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
-  --graph-line: color-mix(in lab, #1f1f1f, #d9d9d9 35%) !important;
-  --graph-node: color-mix(in lab, #1f1f1f, #d9d9d9 70%) !important;
-  --graph-node-attachment: rgb(237.97, 237.97, 16.12) !important;
+  --graph-line: #595959 !important;
+  --graph-node: #9c9c9c !important;
+  --graph-node-attachment: #eeee10 !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: rgb(99.64, 206.65, 99.64) !important;
-  --graph-node-unresolved: color-mix(in lab, #1f1f1f, #d9d9d9 50%) !important;
+  --graph-node-tag: #64cf64 !important;
+  --graph-node-unresolved: #757575 !important;
   --graph-text: #d9d9d9 !important;
 }
 
@@ -741,15 +729,8 @@ body {
   }
 
   code {
-    background-color: light-dark(
-      color(srgb-linear 0.719014 0.719014 0.719014),
-      lab(19.2501 0.00569969 -0.000334978)
-    );
-    border: 0px solid
-      light-dark(
-        color(srgb-linear 0.639123 0.639124 0.639124),
-        lab(26.7431 0.00691414 -0.000407696)
-      );
+    background-color: light-dark(rgb(220, 220, 220), rgb(47, 47, 47));
+    border: 0px solid light-dark(rgb(197, 197, 197), rgb(80, 80, 80));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;

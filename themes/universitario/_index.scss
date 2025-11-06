@@ -10,7 +10,7 @@
   --code-border-color: #e0e0e0 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
-  --code-comment: #5c5c5c !important;
+  --code-comment: rgb(93, 50, 69) !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
@@ -30,7 +30,7 @@
   --graph-node-attachment: #e0ac00 !important;
   --graph-node-focused: rgb(139, 108, 239) !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: #5c5c5c !important;
+  --graph-node-unresolved: rgb(93, 50, 69) !important;
   --graph-text: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
@@ -38,14 +38,14 @@
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
-  --code-comment: #666666 !important;
+  --code-comment: rgb(216, 182, 197) !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: #b3b3b3 !important;
+  --code-normal: white !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: #b3b3b3 !important;
+  --code-punctuation: white !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
@@ -58,7 +58,7 @@
   --graph-node-attachment: #e0de71 !important;
   --graph-node-focused: rgb(170, 153, 245) !important;
   --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #666666 !important;
+  --graph-node-unresolved: rgb(216, 182, 197) !important;
   --graph-text: #dadada !important;
 }
 
@@ -687,7 +687,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(0, 0, 0), rgb(179, 179, 179));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -780,7 +780,7 @@ body {
   }
 
   blockquote {
-    background-color: light-dark(rgb(255, 255, 255), rgb(36, 36, 36));
+    background-color: light-dark(rgb(191, 206, 248), rgb(60, 32, 58));
     border-inline-start: inherit;
     font-family:
       ui-sans-serif,

@@ -53,16 +53,21 @@ body.theme-light {
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: rgb(227, 222, 237) !important;
-  --bases-cards-group-padding: 12px !important;
+  --bases-cards-font-size: 0.875rem !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgb(184, 173, 210) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(170, 156, 201) !important;
-  --bases-cards-text-size: 0.875rem !important;
   --bases-embed-border-color: rgb(184, 173, 210) !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: rgb(141, 123, 183) !important;
+  --bases-group-heading-property-display: block !important;
+  --bases-group-heading-property-size: 12px !important;
+  --bases-group-heading-property-weight: 400 !important;
+  --bases-group-heading-value-size: 0.875rem !important;
+  --bases-group-heading-value-weight: 600 !important;
   --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
@@ -70,18 +75,24 @@ body.theme-light {
   --bases-table-border-color: rgb(138, 92, 245) !important;
   --bases-table-cell-background-active: rgb(249, 248, 251) !important;
   --bases-table-cell-background-disabled: rgb(227, 222, 237) !important;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-cell-radius-focus: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(155, 140, 192) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
+  --bases-table-font-size: 0.875rem !important;
+  --bases-table-group-background: rgb(227, 222, 237) !important;
+  --bases-table-group-gap: 10px !important;
   --bases-table-header-background: rgb(249, 248, 251) !important;
   --bases-table-header-background-hover: rgba(
     from rgb(138, 92, 245) r g b / 0.2
   ) !important;
-  --bases-table-header-color: rgb(141, 123, 183) !important;
+  --bases-table-header-color: rgb(249, 248, 251) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -94,7 +105,10 @@ body.theme-light {
   ) !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-text-size: 0.875rem !important;
+  --bases-table-summary-background: rgb(249, 248, 251) !important;
+  --bases-table-summary-background-hover: rgba(
+    from rgb(138, 92, 245) r g b / 0.2
+  ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
@@ -203,6 +217,7 @@ body.theme-light {
   --color-red-rgb: from rgb(245, 105, 92) r g b !important;
   --color-yellow: rgb(245, 219, 92) !important;
   --color-yellow-rgb: from rgb(245, 219, 92) r g b !important;
+  --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -328,38 +343,44 @@ body.theme-light {
   --frame-left-space: 36px !important;
   --frame-right-space: 0px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(170, 156, 201) !important;
+  --graph-line: rgb(184, 173, 210) !important;
   --graph-node: rgb(245, 105, 92) !important;
   --graph-node-attachment: rgb(92, 168, 245) !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
   --graph-node-tag: rgb(245, 219, 92) !important;
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8) !important;
   --graph-text: rgb(45, 36, 66) !important;
+  --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 2.488em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 700 !important;
+  --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 2.047em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
+  --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.728em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
+  --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.44em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
+  --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.2em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
+  --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -574,6 +595,12 @@ body.theme-light {
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
+  --nav-tag-background: transparent !important;
+  --nav-tag-color: rgb(184, 173, 210) !important;
+  --nav-tag-color-active: rgb(141, 123, 183) !important;
+  --nav-tag-color-hover: rgb(141, 123, 183) !important;
+  --nav-tag-radius: 4px !important;
+  --nav-tag-weight: 600 !important;
   --p-spacing: 1.5rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -645,7 +672,11 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --sidebar-left-toggle-inner-width: 8.33% !important;
+  --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
+  --sidebar-right-toggle-inner-width: 8.33% !important;
+  --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -827,7 +858,7 @@ body.theme-light {
   --h5-color: rgb(138, 92, 245) !important;
   --h6-color: rgb(138, 92, 245) !important;
   --inline-title-color: rgb(138, 92, 245) !important;
-  --blockquote-color:     !important;
+  --blockquote-color:   !important;
   --table-header-background-hover: rgb(138, 92, 245) !important;
   --accent-color: rgb(138, 92, 245) !important;
   --accent-rgb: from rgb(138, 92, 245) r g b !important;
@@ -884,16 +915,21 @@ body.theme-dark {
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
   --bases-cards-cover-background: rgb(45, 36, 66);
-  --bases-cards-group-padding: 12px;
+  --bases-cards-font-size: 0.875rem;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
   --bases-cards-shadow: 0 0 0 1px rgb(79, 63, 115);
   --bases-cards-shadow-hover: 0 0 0 1px rgb(90, 72, 132);
-  --bases-cards-text-size: 0.875rem;
   --bases-embed-border-color: rgb(79, 63, 115);
   --bases-embed-border-radius: 4px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
+  --bases-group-heading-property-color: rgb(113, 91, 164);
+  --bases-group-heading-property-display: block;
+  --bases-group-heading-property-size: 12px;
+  --bases-group-heading-property-weight: 400;
+  --bases-group-heading-value-size: 0.875rem;
+  --bases-group-heading-value-weight: 600;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
@@ -901,18 +937,24 @@ body.theme-dark {
   --bases-table-border-color: rgb(138, 92, 245);
   --bases-table-cell-background-active: rgb(23, 18, 33);
   --bases-table-cell-background-disabled: rgb(45, 36, 66);
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(138, 92, 245);
+  --bases-table-cell-radius-focus: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(101, 81, 148);
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
+  --bases-table-font-size: 0.875rem;
+  --bases-table-group-background: rgb(45, 36, 66);
+  --bases-table-group-gap: 10px;
   --bases-table-header-background: rgb(23, 18, 33);
   --bases-table-header-background-hover: rgba(
     from rgb(138, 92, 245) r g b / 0.2
   );
-  --bases-table-header-color: rgb(113, 91, 164);
+  --bases-table-header-color: rgb(23, 18, 33);
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -923,7 +965,10 @@ body.theme-dark {
   --bases-table-row-background-hover: rgba(from rgb(138, 92, 245) r g b / 0.15);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875rem;
+  --bases-table-summary-background: rgb(23, 18, 33);
+  --bases-table-summary-background-hover: rgba(
+    from rgb(138, 92, 245) r g b / 0.2
+  );
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
@@ -1030,6 +1075,7 @@ body.theme-dark {
   --color-red-rgb: from rgb(245, 105, 92) r g b;
   --color-yellow: rgb(245, 219, 92);
   --color-yellow-rgb: from rgb(245, 219, 92) r g b;
+  --corner-smoothing: 0;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1153,38 +1199,44 @@ body.theme-dark {
   --frame-left-space: 36px;
   --frame-right-space: 0px;
   --graph-controls-width: 240px;
-  --graph-line: rgb(90, 72, 132);
+  --graph-line: rgb(79, 63, 115);
   --graph-node: rgb(245, 105, 92);
   --graph-node-attachment: rgb(92, 168, 245);
   --graph-node-focused: rgb(166, 139, 249);
   --graph-node-tag: rgb(245, 219, 92);
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8);
   --graph-text: rgb(198, 189, 219);
+  --h1-letter-spacing: -0.015em;
   --h1-line-height: 1.2;
   --h1-size: 2.488em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
+  --h2-letter-spacing: -0.011em;
   --h2-line-height: 1.2;
   --h2-size: 2.047em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
+  --h3-letter-spacing: -0.008em;
   --h3-line-height: 1.3;
   --h3-size: 1.728em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
+  --h4-letter-spacing: -0.005em;
   --h4-line-height: 1.4;
   --h4-size: 1.44em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
+  --h5-letter-spacing: -0.002em;
   --h5-line-height: 1.5;
   --h5-size: 1.2em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
+  --h6-letter-spacing: 0em;
   --h6-line-height: 1.5;
   --h6-size: 1em;
   --h6-style: normal;
@@ -1389,6 +1441,12 @@ body.theme-dark {
   --nav-item-parent-padding: 4px 8px 4px 24px;
   --nav-item-size: 13px;
   --nav-item-white-space: pre;
+  --nav-tag-background: transparent;
+  --nav-tag-color: rgb(79, 63, 115);
+  --nav-tag-color-active: rgb(113, 91, 164);
+  --nav-tag-color-hover: rgb(113, 91, 164);
+  --nav-tag-radius: 4px;
+  --nav-tag-weight: 600;
   --p-spacing: 1.5rem;
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
@@ -1458,7 +1516,11 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
+  --sidebar-left-toggle-inner-width: 8.33%;
+  --sidebar-left-toggle-inner-width-open: 24%;
   --sidebar-markdown-font-size: 14.4px;
+  --sidebar-right-toggle-inner-width: 8.33%;
+  --sidebar-right-toggle-inner-width-open: 24%;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;

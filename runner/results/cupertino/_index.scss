@@ -7,19 +7,19 @@
 
 :root:root {
   --code-background: #fafafa !important;
-  --code-border-color: rgba(31, 34, 37, 0.09) !important;
+  --code-border-color: rgba(0, 0, 0, 0.075) !important;
   --code-border-width: 1px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.05) !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #b6b9c5 !important;
   --code-function: #b76b02 !important;
   --code-important: #b76b02 !important;
   --code-keyword: #e45749 !important;
   --code-normal: #383a42 !important;
-  --code-operator: #ff3b30 !important;
+  --code-operator: #ff383c !important;
   --code-property: #62afef !important;
   --code-punctuation: #383a42 !important;
   --code-radius: 8px !important;
-  --code-size: 0.875em !important;
+  --code-size: 0.8em !important;
   --code-string: #0d97b3 !important;
   --code-tag: #e45749 !important;
   --code-value: #a626a4 !important;
@@ -29,25 +29,25 @@
   --graph-node: #5c5c5c !important;
   --graph-node-attachment: #ffcc00 !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: #28cd41 !important;
+  --graph-node-tag: #34c759 !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
 }
 :root:root[saved-theme="dark"] {
   --code-background: #242424 !important;
-  --code-border-color: rgba(244, 244, 244, 0.12) !important;
+  --code-border-color: rgba(255, 255, 255, 0.15) !important;
   --code-border-width: 1px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.05) !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #5c6370 !important;
   --code-function: #d19a66 !important;
   --code-important: #d19a66 !important;
   --code-keyword: #e16d76 !important;
   --code-normal: #abb2bf !important;
-  --code-operator: #ff453a !important;
+  --code-operator: #ff4245 !important;
   --code-property: #62afef !important;
   --code-punctuation: #abb2bf !important;
   --code-radius: 8px !important;
-  --code-size: 0.875em !important;
+  --code-size: 0.8em !important;
   --code-string: #58b6c2 !important;
   --code-tag: #e16d76 !important;
   --code-value: #c678de !important;
@@ -55,9 +55,9 @@
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: #ffd60a !important;
+  --graph-node-attachment: #ffd600 !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: #32d74b !important;
+  --graph-node-tag: #30d158 !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
 }
@@ -255,7 +255,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(73, 73, 73), rgb(192, 192, 192));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -276,8 +276,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(192, 192, 192);
-    text-decoration-color: light-dark(rgb(73, 73, 73), rgb(192, 192, 192));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -431,7 +431,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(73, 73, 73), rgb(192, 192, 192));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -452,8 +452,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(192, 192, 192);
-    text-decoration-color: light-dark(rgb(73, 73, 73), rgb(192, 192, 192));
+    text-decoration: line-through solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -517,9 +517,9 @@ body {
   }
 
   hr {
-    border: 0px light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+    border: 0px light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
     border-top: 2px solid
-      light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -613,7 +613,7 @@ body {
   code {
     background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
     border: 1px solid
-      light-dark(rgba(31, 34, 37, 0.09), rgba(244, 244, 244, 0.12));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
