@@ -1402,7 +1402,7 @@ export const config = [
   {
     obsidianSelector: `body`,
     publishSelector: null,
-    quartzSelector: "div#quartz-root",
+    quartzSelector: "&[data-slug], div#quartz-root",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
