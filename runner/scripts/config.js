@@ -1400,9 +1400,16 @@ export const config = [
     properties: ["--quartz-icon-color"],
   },
   {
+    obsidianSelector: `div.mod-root.mod-vertical.workspace-split`,
+    publishSelector: null,
+    quartzSelector: "&[data-slug]",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  {
     obsidianSelector: `body`,
     publishSelector: null,
-    quartzSelector: "&[data-slug], div#quartz-root",
+    quartzSelector: "div#quartz-root",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },

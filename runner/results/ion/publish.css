@@ -1032,7 +1032,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+  color: rgb(203, 183, 250);
   cursor: pointer;
   filter: none;
   font-family:
@@ -1049,17 +1049,17 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration: underline solid rgb(203, 183, 250);
+  text-decoration-color: rgb(203, 183, 250);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+  color: rgb(203, 183, 250);
   cursor: pointer;
   filter: none;
   font-family:
@@ -1076,17 +1076,17 @@ body .markdown-rendered a.internal-link.is-unresolved {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  text-decoration: underline solid rgba(138, 92, 245, 0.3);
+  text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
   cursor: auto;
   filter: none;
   font-family:
@@ -1103,13 +1103,13 @@ body .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
+  text-decoration-color: rgb(236, 210, 198);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
@@ -1140,7 +1140,7 @@ body strong {
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(249, 240, 236);
   cursor: auto;
   filter: none;
   font-family:
@@ -1157,13 +1157,13 @@ body b {
     sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(249, 240, 236);
+  text-decoration-color: rgb(249, 240, 236);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
@@ -1194,7 +1194,7 @@ body em {
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
   cursor: auto;
   filter: none;
   font-family:
@@ -1209,19 +1209,19 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
+  text-decoration-color: rgb(236, 210, 198);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered mark {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgba(255, 208, 0, 0.4);
+  color: rgb(236, 210, 198);
   cursor: auto;
   filter: none;
   font-family:
@@ -1238,13 +1238,13 @@ body .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration: none solid rgb(236, 210, 198);
+  text-decoration-color: rgb(236, 210, 198);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
@@ -1274,45 +1274,47 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  background-color: rgba(255, 255, 255, 0.067);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: rgb(236, 210, 198);
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  border: 0px rgb(236, 210, 198);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: rgb(236, 210, 198);
 }
 body .markdown-rendered hr {
-  border: 0px rgb(54, 54, 54);
-  border-top: 2px solid rgb(54, 54, 54);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  box-shadow: none;
-  margin: 32px 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  border: 0px rgb(236, 210, 198);
+  border-top: 1px solid rgb(236, 210, 198);
+  border-top-left-radius: 1790px;
+  border-top-right-radius: 1790px;
+  border-bottom-left-radius: 1790px;
+  border-bottom-right-radius: 1790px;
+  border-start-start-radius: 1790px;
+  border-start-end-radius: 1790px;
+  border-end-start-radius: 1790px;
+  border-end-end-radius: 1790px;
+  box-shadow:
+    rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px,
+    rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -1345,15 +1347,15 @@ body div.multi-select-pill {
   border-end-end-radius: 28px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
 }
 body .markdown-rendered ul > li {
-  color: rgb(218, 218, 218);
-  text-align: left;
+  color: rgb(236, 210, 198);
+  text-align: start;
 }
 body .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(153, 85, 51);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1362,66 +1364,69 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
+  color: rgb(153, 85, 51);
   content: normal;
   pointer-events: auto;
   transform: none;
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: rgb(218, 218, 218);
-  text-align: left;
+  color: rgb(236, 210, 198);
+  text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  color: rgb(218, 218, 218);
+  color: rgb(153, 85, 51);
 }
 body .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
-  font-family: monospace;
-  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  color: rgb(230, 196, 179);
+  font-family:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+    "Source Code Pro", monospace;
+  padding: 2.1px 4.2px;
 }
 body .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  overflow-x: auto;
+  padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
+  text-wrap-mode: wrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  overflow-x: auto;
+  padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
+  text-wrap-mode: wrap;
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
@@ -1447,19 +1452,19 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
 }
 body ul.contains-task-list > li.task-list-item {
   list-style: inherit;
-  text-align: left;
+  text-align: start;
   display: list-item;
 }
 body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  content: normal;
+  content: none;
   top: auto;
   inset-inline-start: auto;
   position: static;
   width: auto;
-  display: list-item;
+  display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
   -webkit-mask-size: inherit;
@@ -1467,9 +1472,9 @@ body
   -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
-  color: rgb(218, 218, 218);
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
+  text-decoration: line-through solid rgb(236, 210, 198);
+  text-decoration-color: rgb(236, 210, 198);
 }
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -1489,44 +1494,57 @@ body .markdown-rendered blockquote {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  padding-inline-start: 24px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 body .footnote-backref {
-  color: rgb(166, 138, 249);
-  text-decoration: underline solid rgb(166, 138, 249);
+  color: rgb(203, 183, 250);
+  text-decoration: none solid rgb(203, 183, 250);
 }
 body .site-body-left-column input.search-bar {
-  background-color: rgb(18, 18, 18);
-  border: 2px inset rgb(133, 133, 133);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(255, 255, 255);
-  font-family: Arial;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  color: rgb(236, 210, 198);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    "system-ui",
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body .search-results {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  box-shadow: none;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(236, 210, 198);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
+  box-shadow:
+    rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px,
+    rgba(191, 106, 64, 0.3) 0px 0px 1.5px 1.5px inset;
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
   cursor: auto;
   filter: none;
   font-family:
@@ -1543,49 +1561,49 @@ body .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
+  text-decoration-color: rgb(236, 210, 198);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body div.search-results {
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border: 1px solid rgb(236, 210, 198);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
 }
 body .search-results .suggestion-item {
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
 }
 body div.search-results .suggestion-item {
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border: 0px rgb(236, 210, 198);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.067);
 }
 body div.search-results .suggestion-item.is-selected {
-  color: rgb(218, 218, 218);
+  color: rgb(236, 210, 198);
 }
 body .published-container .markdown-rendered h1 {
-  color: rgb(218, 218, 218);
+  color: rgb(255, 213, 204);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1598,10 +1616,12 @@ body .published-container .markdown-rendered h1 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(255, 42, 0) 0px 0px 6.472px,
+    rgb(255, 42, 0) 0px 0px 3.236px;
 }
 body .published-container .markdown-rendered h2 {
-  color: rgb(218, 218, 218);
+  color: rgb(255, 255, 204);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1614,10 +1634,12 @@ body .published-container .markdown-rendered h2 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(255, 255, 0) 0px 0px 5.848px,
+    rgb(255, 255, 0) 0px 0px 2.924px;
 }
 body .published-container .markdown-rendered h3 {
-  color: rgb(218, 218, 218);
+  color: rgb(213, 255, 204);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1630,10 +1652,12 @@ body .published-container .markdown-rendered h3 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(43, 255, 0) 0px 0px 5.272px,
+    rgb(43, 255, 0) 0px 0px 2.636px;
 }
 body .published-container .markdown-rendered h4 {
-  color: rgb(218, 218, 218);
+  color: rgb(204, 255, 238);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1646,10 +1670,12 @@ body .published-container .markdown-rendered h4 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(0, 255, 170) 0px 0px 4.752px,
+    rgb(0, 255, 170) 0px 0px 2.376px;
 }
 body .published-container .markdown-rendered h5 {
-  color: rgb(218, 218, 218);
+  color: rgb(204, 230, 255);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1662,10 +1688,12 @@ body .published-container .markdown-rendered h5 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(0, 128, 255) 0px 0px 4.304px,
+    rgb(0, 128, 255) 0px 0px 2.152px;
 }
 body .published-container .markdown-rendered h6 {
-  color: rgb(218, 218, 218);
+  color: rgb(221, 204, 255);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1678,19 +1706,21 @@ body .published-container .markdown-rendered h6 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  text-shadow: none;
+  text-shadow:
+    rgb(85, 0, 255) 0px 0px 4px,
+    rgb(85, 0, 255) 0px 0px 2px;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  margin-inline-start: 0px;
-  padding-inline-start: 0px;
+  margin-inline-start: 12px;
+  padding-inline-start: 4px;
   border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(236, 210, 198);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1703,22 +1733,22 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  mix-blend-mode: normal;
-  padding: 0px;
+  border: 2px solid rgb(230, 239, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  mix-blend-mode: lighten;
+  padding: 12px 12px 12px 24px;
   background-color: rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(230, 239, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1734,12 +1764,12 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 239, 255);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: rgb(218, 218, 218);
-  font-weight: 400;
+  color: rgb(230, 239, 255);
+  font-weight: 600;
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
@@ -1748,271 +1778,271 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(230, 247, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 247, 255);
 }
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(230, 252, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 252, 255);
 }
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(230, 252, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 252, 255);
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(230, 255, 251);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 255, 251);
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(230, 255, 240);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(230, 255, 240);
 }
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(240, 253, 232);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(240, 253, 232);
 }
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(255, 244, 230);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(236, 210, 198);
 }
 body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(255, 230, 235);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(255, 230, 235);
 }
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(255, 230, 230);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(236, 210, 198);
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(255, 230, 239);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(255, 230, 239);
 }
 body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(236, 230, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(236, 210, 198);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  mix-blend-mode: lighten;
+  border: 2px solid rgb(242, 242, 242);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(242, 242, 242);
 }
 body .math-block > mjx-container.MathJax {
-  display: inline;
-  text-align: start;
-  white-space-collapse: collapse;
+  display: block;
+  text-align: center;
+  white-space-collapse: break-spaces;
   text-wrap-mode: wrap;
   font-family:
     ui-sans-serif,
@@ -2042,22 +2072,11 @@ body div.math-block > mjx-container.MathJax {
     sans-serif;
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  color: rgb(236, 210, 198);
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2071,12 +2090,12 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  background-color: rgba(255, 255, 255, 0.067);
+  color: rgb(236, 210, 198);
+  cursor: default;
 }
 body
   .nav-view-outer
@@ -2085,8 +2104,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  color: rgb(236, 210, 198);
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2100,7 +2119,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
 }
 body
   .nav-view-outer
@@ -2109,8 +2128,8 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  color: rgb(236, 210, 198);
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2124,5 +2143,5 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration: none solid rgb(236, 210, 198);
 }
