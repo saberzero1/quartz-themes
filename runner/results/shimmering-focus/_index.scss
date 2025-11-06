@@ -443,7 +443,8 @@ body {
     border-left: 2px solid light-dark(rgb(230, 231, 240), rgb(48, 50, 65));
   }
 
-  a.external {
+  a.external,
+  footer a {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     cursor: pointer;
