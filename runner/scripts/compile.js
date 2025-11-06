@@ -712,7 +712,8 @@ body {
 
   @media all and ($desktop) {
     .page > #quartz-body {
-      div.center {
+      div.center,
+      footer {
         min-width: calc(100% - 3rem);
         max-width: calc(100% - 3rem);
         padding-left: 1.5rem;
@@ -730,7 +731,8 @@ body {
       padding-left: 0;
       padding-right: 0;
 
-      div.center {
+      div.center,
+      footer {
         min-width: calc(100% - 3rem);
         max-width: calc(100% - 3rem);
         padding-left: 1.5rem;
@@ -756,7 +758,8 @@ body {
     .page > #quartz-body {
       padding: 0;
 
-      div.center {
+      div.center,
+      footer {
         min-width: calc(100% - 3rem);
         max-width: calc(100% - 3rem);
         padding-left: 1.5rem;
