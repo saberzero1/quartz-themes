@@ -1745,15 +1745,14 @@ body {
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        background: var(
-          --collapse-icon-color-collapsed,
-          var(--quartz-icon-color)
-        );
+        /* background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color)); */
+        background: currentcolor;
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
-        background: var(--collapse-icon-color, var(--quartz-icon-color));
+        /* background: var(--collapse-icon-color, var(--quartz-icon-color)); */
+        background: currentcolor;
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
       }
