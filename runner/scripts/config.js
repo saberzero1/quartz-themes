@@ -1406,6 +1406,14 @@ export const config = [
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
+  {
+    obsidianSelector: `div.mod-active.workspace-leaf`,
+    publishSelector: null, //TODO
+    quartzSelector:
+      ".page > div#quartz-body div.center, .page > div#quartz-body footer",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
   // links
   // TODO: add external link to to markdown so it gets added
   {

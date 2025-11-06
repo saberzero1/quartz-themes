@@ -213,6 +213,12 @@ body {
     color: rgb(34, 34, 34);
   }
 
+  .page > div#quartz-body div.center,
+  .page > div#quartz-body footer {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
+  }
+
   a.external {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(138, 92, 245);
@@ -1803,6 +1809,8 @@ body {
     white-space: pre;
 
     & > code {
+      overflow-x: auto;
+
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         color: var(--code-value) !important;
       }
