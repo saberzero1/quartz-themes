@@ -2042,7 +2042,7 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(rgb(140, 144, 249), rgb(156, 160, 250));
   cursor: pointer;
   filter: none;
   font-family:
@@ -2059,13 +2059,13 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-  text-decoration-line: underline;
+  text-decoration: none solid rgb(156, 160, 250);
+  text-decoration-color: light-dark(rgb(140, 144, 249), rgb(156, 160, 250));
+  text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

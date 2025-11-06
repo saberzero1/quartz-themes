@@ -1166,10 +1166,12 @@ body .site-body-left-column-site-theme-toggle {
 }
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(138, 92, 245);
+  color: rgb(55, 0, 255);
   cursor: pointer;
   filter: none;
   font-family:
+    "Noto Serif KR",
+    serif,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -1183,13 +1185,13 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(138, 92, 245);
-  text-decoration-color: rgb(138, 92, 245);
+  text-decoration: underline 1px solid rgb(55, 0, 255);
+  text-decoration-color: rgb(55, 0, 255);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

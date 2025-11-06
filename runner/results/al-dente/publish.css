@@ -979,30 +979,38 @@ body .site-body-left-column-site-theme-toggle {
 }
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(138, 92, 245);
+  color: rgb(8, 185, 78);
   cursor: pointer;
   filter: none;
   font-family:
-    ui-sans-serif,
+    "nunito sans",
+    gotham,
+    metropolis,
+    prologue,
+    manrope,
+    inter,
+    poppins,
     -apple-system,
     "system-ui",
-    system-ui,
     "Segoe UI",
     Roboto,
-    Inter,
+    Helvetica,
+    Arial,
+    sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
+    "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(138, 92, 245);
-  text-decoration-color: rgb(138, 92, 245);
+  text-decoration: underline solid rgb(8, 185, 78);
+  text-decoration-color: rgb(8, 185, 78);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
