@@ -4335,10 +4335,11 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(rgb(50, 149, 98), rgb(46, 168, 115));
   cursor: pointer;
   filter: none;
   font-family:
+    Inter,
     ui-sans-serif,
     -apple-system,
     "system-ui",
@@ -4350,15 +4351,19 @@ body .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline 1.5px solid
+    color(srgb 0.1806 0.6594 0.45192 / 0.22);
+  text-decoration-color: light-dark(
+    color(srgb 0.195 0.585 0.3835 / 0.22),
+    color(srgb 0.1806 0.6594 0.45192 / 0.22)
+  );
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

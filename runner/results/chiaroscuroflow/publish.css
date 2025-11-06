@@ -1728,16 +1728,13 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
-    ui-sans-serif,
+    Manrope,
     -apple-system,
     "system-ui",
-    system-ui,
     "Segoe UI",
     Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
+    Helvetica,
+    Arial,
     sans-serif;
   font-weight: 400;
   outline: inherit;
@@ -1747,7 +1744,7 @@ body .markdown-rendered a.external-link {
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);

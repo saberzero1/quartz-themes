@@ -9829,30 +9829,36 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: light-dark(rgb(47, 147, 228), rgb(45, 130, 205));
   cursor: pointer;
   filter: none;
   font-family:
+    Bookerly,
+    Inter,
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
     ui-sans-serif,
     -apple-system,
     "system-ui",
-    system-ui,
     "Segoe UI",
     Roboto,
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
+    "Microsoft YaHei Light",
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration: underline solid rgb(45, 130, 205);
+  text-decoration-color: light-dark(rgb(47, 147, 228), rgb(45, 130, 205));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
-  user-select: none;
+  user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
