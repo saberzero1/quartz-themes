@@ -7028,16 +7028,21 @@ body.theme-light {
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: #e9e9e9 !important;
-  --bases-cards-group-padding: 12px !important;
+  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #dddddd !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
-  --bases-cards-text-size: 0.875em !important;
   --bases-embed-border-color: #dddddd !important;
   --bases-embed-border-radius: 5px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: #7f7f7f !important;
+  --bases-group-heading-property-display: block !important;
+  --bases-group-heading-property-size: 12px !important;
+  --bases-group-heading-property-weight: 400 !important;
+  --bases-group-heading-value-size: 0.875em !important;
+  --bases-group-heading-value-weight: 600 !important;
   --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
@@ -7045,13 +7050,19 @@ body.theme-light {
   --bases-table-border-color: #7d7d7d !important;
   --bases-table-cell-background-active: #ffffff !important;
   --bases-table-cell-background-disabled: #e9e9e9 !important;
+  --bases-table-cell-background-selected: rgba(47, 147, 228, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(64, 159, 231) !important;
+  --bases-table-cell-radius-focus: 2px !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(64, 159, 231) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 5px !important;
   --bases-table-container-border-width: 1px !important;
+  --bases-table-font-size: 0.875em !important;
+  --bases-table-group-background: #e9e9e9 !important;
+  --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #ffffff !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: #7f7f7f !important;
@@ -7065,7 +7076,8 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-text-size: 0.875em !important;
+  --bases-table-summary-background: #ffffff !important;
+  --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
@@ -7173,6 +7185,7 @@ body.theme-light {
   --color-red-rgb: 233, 49, 71 !important;
   --color-yellow: #e0ac00 !important;
   --color-yellow-rgb: 224, 172, 0 !important;
+  --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -7301,31 +7314,37 @@ body.theme-light {
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #7f7f7f !important;
   --graph-text: #0e0e0e !important;
+  --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.5625em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 700 !important;
+  --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.4375em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
+  --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.3125em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
+  --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.1875em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
+  --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.0625em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
+  --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -7527,6 +7546,12 @@ body.theme-light {
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
+  --nav-tag-background: transparent !important;
+  --nav-tag-color: #7f7f7f !important;
+  --nav-tag-color-active: #7f7f7f !important;
+  --nav-tag-color-hover: #7f7f7f !important;
+  --nav-tag-radius: 5px !important;
+  --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -7598,7 +7623,11 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --sidebar-left-toggle-inner-width: 8.33% !important;
+  --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
+  --sidebar-right-toggle-inner-width: 8.33% !important;
+  --sidebar-right-toggle-inner-width-open: 24% !important;
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
@@ -8046,7 +8075,7 @@ body.theme-light {
   --folder-title: #000000 !important;
   --font-family-better-footnote:
     Arlrdbd, "Source Han Sans", "Segoe UI Emoji" !important;
-  --font-family-em:     !important;
+  --font-family-em:   !important;
   --font-family-folder-file-title:
     "??", Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro",
     "Segoe UI Emoji", sans-serif !important;
@@ -8054,7 +8083,7 @@ body.theme-light {
     "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
     "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
     "Microsoft YaHei", "Source Code Pro", monospace !important;
-  --font-family-list:     !important;
+  --font-family-list:   !important;
   --font-family-special-tag: "Lucida Handwriting", "Segoe UI Emoji" !important;
   --font-family-strong:
     Bookerly, "Inter", "Segoe UI", "LXGW WenKai Screen", "LXGW WenKai Screen R",
@@ -8065,7 +8094,7 @@ body.theme-light {
   --font-family-tag:
     Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif !important;
-  --font-family-title:     !important;
+  --font-family-title:   !important;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji" !important;
   --font-loading-text:
     "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
@@ -8272,7 +8301,7 @@ body.theme-light {
   --popover-height-factor: 1 !important;
   --popover-width-factor: 1 !important;
   --print-em-color: #099d4e !important;
-  --print-strong-color:     !important;
+  --print-strong-color:   !important;
   --prompt-box-shadow: #bebebe !important;
   --radius-xs: 3px !important;
   --saturate-4-bg: 1 !important;
@@ -8429,16 +8458,21 @@ body.theme-dark {
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
   --bases-cards-cover-background: #444444;
-  --bases-cards-group-padding: 12px;
+  --bases-cards-font-size: 0.875em;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
   --bases-cards-shadow: 0 0 0 1px #343434;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f;
-  --bases-cards-text-size: 0.875em;
   --bases-embed-border-color: #343434;
   --bases-embed-border-radius: 5px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
+  --bases-group-heading-property-color: #8a8a8a;
+  --bases-group-heading-property-display: block;
+  --bases-group-heading-property-size: 12px;
+  --bases-group-heading-property-weight: 400;
+  --bases-group-heading-value-size: 0.875em;
+  --bases-group-heading-value-weight: 600;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
@@ -8446,13 +8480,19 @@ body.theme-dark {
   --bases-table-border-color: #4a4a4a;
   --bases-table-cell-background-active: #202020;
   --bases-table-cell-background-disabled: #444444;
+  --bases-table-cell-background-selected: rgba(45, 130, 205, 0.1);
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(45, 130, 205);
+  --bases-table-cell-radius-focus: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px #555555;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(45, 130, 205);
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 5px;
   --bases-table-container-border-width: 1px;
+  --bases-table-font-size: 0.875em;
+  --bases-table-group-background: #444444;
+  --bases-table-group-gap: 10px;
   --bases-table-header-background: #202020;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
   --bases-table-header-color: #8a8a8a;
@@ -8466,7 +8506,8 @@ body.theme-dark {
   --bases-table-row-background-hover: transparent;
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
-  --bases-table-text-size: 0.875em;
+  --bases-table-summary-background: #202020;
+  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067);
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: transparent;
@@ -8574,6 +8615,7 @@ body.theme-dark {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --corner-smoothing: 0;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -8701,31 +8743,37 @@ body.theme-dark {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #797979;
   --graph-text: #c6c6c6;
+  --h1-letter-spacing: -0.015em;
   --h1-line-height: 1.2;
   --h1-size: 1.5625em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
+  --h2-letter-spacing: -0.011em;
   --h2-line-height: 1.2;
   --h2-size: 1.4375em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
+  --h3-letter-spacing: -0.008em;
   --h3-line-height: 1.3;
   --h3-size: 1.3125em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
+  --h4-letter-spacing: -0.005em;
   --h4-line-height: 1.4;
   --h4-size: 1.1875em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
+  --h5-letter-spacing: -0.002em;
   --h5-line-height: 1.5;
   --h5-size: 1.0625em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
+  --h6-letter-spacing: 0em;
   --h6-line-height: 1.5;
   --h6-size: 1em;
   --h6-style: normal;
@@ -8927,6 +8975,12 @@ body.theme-dark {
   --nav-item-parent-padding: 4px 8px 4px 24px;
   --nav-item-size: 13px;
   --nav-item-white-space: pre;
+  --nav-tag-background: transparent;
+  --nav-tag-color: #797979;
+  --nav-tag-color-active: #8a8a8a;
+  --nav-tag-color-hover: #8a8a8a;
+  --nav-tag-radius: 5px;
+  --nav-tag-weight: 600;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --page-border: 9px solid transparent;
@@ -8995,7 +9049,11 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
+  --sidebar-left-toggle-inner-width: 8.33%;
+  --sidebar-left-toggle-inner-width-open: 24%;
   --sidebar-markdown-font-size: 14.4px;
+  --sidebar-right-toggle-inner-width: 8.33%;
+  --sidebar-right-toggle-inner-width-open: 24%;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
