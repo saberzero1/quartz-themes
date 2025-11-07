@@ -364,7 +364,8 @@ body {
   }
 
   .page > div#quartz-body div.center,
-  .page > div#quartz-body footer {
+  .page > div#quartz-body footer,
+  html {
     background-color: light-dark(rgb(250, 244, 237), rgb(46, 52, 64));
     color: light-dark(rgb(87, 82, 121), rgb(216, 222, 233));
   }
@@ -2186,15 +2187,23 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
+    background-color: transparent;
+    &:has(.sidebar:hover) {
+      background-color: revert-layer;
+    }
     .sidebar.left,
     .sidebar.right {
       opacity: 1 !important;
+      background-color: transparent;
+      border-color: transparent;
       & > * {
         opacity: 0 !important;
-        transition: opacity 0.2s;
+        transition: opacity background-color 0.2s;
       }
       &:hover > * {
         opacity: 1 !important;
+        background-color: revert-layer;
+        border-color: revert-layer;
       }
     }
   }
