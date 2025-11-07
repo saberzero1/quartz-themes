@@ -2105,7 +2105,7 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    div#quartz-root.page {
+    div#quartz-root.page:not(:has(.sidebar:hover)) {
       background-color: transparent;
     }
     .sidebar.left,
