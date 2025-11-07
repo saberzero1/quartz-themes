@@ -1425,7 +1425,7 @@ export const config = [
     obsidianSelector: `div.mod-active.workspace-leaf`,
     publishSelector: null, //TODO
     quartzSelector:
-      ".page > div#quartz-body div.center, .page > div#quartz-body footer",
+      ".page > div#quartz-body div.center, .page > div#quartz-body footer, html",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
