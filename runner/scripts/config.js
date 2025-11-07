@@ -1482,7 +1482,7 @@ export const config = [
   {
     obsidianSelector: `a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]`,
     publishSelector: `.markdown-rendered a.internal-link`,
-    quartzSelector: "a.internal",
+    quartzSelector: "a.internal, .breadcrumb-container .breadcrumb-element > a",
     pseudoElement: "",
     properties: sets.text,
   },
