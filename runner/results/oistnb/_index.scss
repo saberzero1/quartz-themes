@@ -2198,12 +2198,15 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    div#quartz-root.page:not(:has(.sidebar:hover)) {
-      background-color: transparent;
+    div#quartz-root.page {
       transition: background-color 0.2s;
-      .sidebar {
-        opacity: 0 !important;
-        transition: opacity 0.2s;
+      &:not(:has(.sidebar:hover)) {
+        background-color: transparent;
+        transition: background-color 0.2s;
+        .sidebar {
+          opacity: 0 !important;
+          transition: opacity 0.2s;
+        }
       }
     }
     div#quartz-root.page:not(:has(.center:hover, footer:hover)):hover {
