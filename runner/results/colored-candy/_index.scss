@@ -361,9 +361,9 @@ body {
     color: light-dark(rgb(33, 33, 33), rgb(217, 217, 217));
   }
 
+  &[data-slug],
   .page > div#quartz-body div.center,
-  .page > div#quartz-body footer,
-  :root[reader-mode="on"] body[data-slug] {
+  .page > div#quartz-body footer {
     background-color: light-dark(rgb(182, 169, 214), rgb(55, 41, 86));
     color: light-dark(rgb(33, 33, 33), rgb(217, 217, 217));
   }
