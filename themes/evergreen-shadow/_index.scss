@@ -2161,7 +2161,7 @@ body {
     color: rgb(223, 236, 232);
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: rgb(5, 12, 10);
