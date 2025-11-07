@@ -269,7 +269,7 @@ body {
 
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer,
-  html {
+  :root[reader-mode="on"] body[data-slug] {
     background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
   }
@@ -1867,7 +1867,6 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    background-color: transparent;
     &:has(.sidebar:hover) {
       background-color: revert-layer;
     }
