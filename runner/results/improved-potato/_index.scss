@@ -2226,6 +2226,9 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
+    div#quartz-root.page {
+      background-color: transparent;
+    }
     .sidebar.left,
     .sidebar.right {
       opacity: 0 !important;
