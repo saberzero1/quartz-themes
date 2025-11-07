@@ -427,18 +427,20 @@ ${bodyVarsStringDarkQuartz}
 
 ${colorSchemeSection}
 
-${lightData && darkData
-      ? ""
-      : `
+${
+  lightData && darkData
+    ? ""
+    : `
 .darkmode {
   display: none;
 }
 `
-    }
+}
 
 html {
-${lightData && darkData
-      ? `
+${
+  lightData && darkData
+    ? `
   &[saved-theme="light"] {
     color-scheme: light;
     .callout[data-callout] {
@@ -452,22 +454,22 @@ ${lightData && darkData
     }
   }
 `
-      : lightData
-        ? `
+    : lightData
+      ? `
   color-scheme: only light;
   .callout[data-callout] {
     mix-blend-mode: darken;
   }
 `
-        : darkData
-          ? `
+      : darkData
+        ? `
   color-scheme: only dark;
   .callout[data-callout] {
     mix-blend-mode: lighten;
   }
 `
-          : ""
-    }
+        : ""
+}
 }
 
 ${fontString}
@@ -990,14 +992,15 @@ ${bodyVarsStringDarkPublish}}
 
   resultPublishScss += `
 body {
-${lightPublishData && darkPublishData
-      ? ""
-      : `
+${
+  lightPublishData && darkPublishData
+    ? ""
+    : `
   .site-body-left-column-site-theme-toggle {
     display: none;
   }
 `
-    }`;
+}`;
 
   for (const [key, value] of Object.entries(dataPublish)) {
     const values = Object.entries(value)
