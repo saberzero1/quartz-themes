@@ -176,9 +176,9 @@ body {
     color: rgb(93, 188, 210);
   }
 
+  &[data-slug],
   .page > div#quartz-body div.center,
-  .page > div#quartz-body footer,
-  :root[reader-mode="on"] body[data-slug] {
+  .page > div#quartz-body footer {
     background-color: rgb(47, 49, 54);
     color: rgb(93, 188, 210);
   }

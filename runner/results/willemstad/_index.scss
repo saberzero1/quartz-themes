@@ -9516,9 +9516,9 @@ body {
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
   }
 
+  &[data-slug],
   .page > div#quartz-body div.center,
-  .page > div#quartz-body footer,
-  :root[reader-mode="on"] body[data-slug] {
+  .page > div#quartz-body footer {
     background-color: light-dark(oklch(1 0 0), oklch(0.13 0 0));
     color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
   }
