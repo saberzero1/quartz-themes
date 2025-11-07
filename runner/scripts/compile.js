@@ -772,8 +772,6 @@ body {
         padding-right: 1.5rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
-        width: calc(100% - 2.5rem);
-        max-width: calc(100% - 2.5rem);
       }
       div.sidebar.right,
       footer {
