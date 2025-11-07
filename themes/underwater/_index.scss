@@ -312,7 +312,8 @@ body {
     user-select: text;
   }
 
-  a.internal {
+  a.internal,
+  .breadcrumb-container .breadcrumb-element > a {
     background-color: light-dark(
       rgba(215, 130, 126, 0.1),
       rgba(235, 188, 186, 0.1)
