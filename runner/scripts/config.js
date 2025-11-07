@@ -1424,7 +1424,7 @@ export const config = [
   {
     obsidianSelector: `div.mod-active.workspace-leaf`,
     publishSelector: null, //TODO
-    quartzSelector: `&[data-slug], .page > div#quartz-body div.center, .page > div#quartz-body footer`,
+    quartzSelector: `&[data-slug], &[data-slug] div#quartz-root.page, .page > div#quartz-body div.center, .page > div#quartz-body footer`,
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
@@ -1439,8 +1439,7 @@ export const config = [
   {
     obsidianSelector: `div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split`,
     publishSelector: null, //TODO
-    quartzSelector:
-      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left",
+    quartzSelector: ".page > div#quartz-body div.sidebar.left",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
