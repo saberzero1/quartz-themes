@@ -2011,9 +2011,17 @@ body {
   @media all and ($desktop) {
     div#quartz-root.page {
       /* workaround for reader-mode */
-      width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
-      max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
-      padding: 0 auto;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      div#quartz-body {
+        /* workaround for reader-mode */
+        width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+        max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+        padding: 0 auto;
+      }
     }
     .page > #quartz-body {
       div.center,
