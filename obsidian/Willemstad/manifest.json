@@ -4,8 +4,5 @@
   "minAppVersion": "0.16.0",
   "author": "tingmelvin",
   "authorUrl": "https://notes.tingmelvin.com/ER-Resources/ER2PUB/ER2PUB-01-AboutMe",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

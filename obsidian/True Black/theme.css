@@ -1,9 +1,8 @@
-
 .theme-dark {
   --accent-h: 219;
   --accent-s: 56%;
   --accent-l: 55%;
-  
+
   --background-primary: #000;
   --background-primary-alt: #20242b;
   --background-secondary: #000;
@@ -30,12 +29,16 @@
   --text-on-accent: #dcddde;
   --interactive-normal: #20242b;
   --interactive-hover: #353b47;
-  --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) + 5%), calc(var(--accent-l) - 10%));
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) + 5%),
+    calc(var(--accent-l) - 10%)
+  );
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --panel-border-color: #18191e;
-  --gray-1: #5C6370;
+  --gray-1: #5c6370;
   --gray-2: #abb2bf;
   --red: #e06c75;
   --orange: #d19a66;
@@ -45,7 +48,12 @@
   --blue: #61afef;
   --yellow: #e5c07b;
 
-  --background-modifier-hover: hsla(var(--accent-h), calc(var(--accent-s) - 35%), var(--accent-l), 0.06);
+  --background-modifier-hover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) - 35%),
+    var(--accent-l),
+    0.06
+  );
   --divider-color-hover: #404754;
 }
 
@@ -102,19 +110,35 @@
   left: -0.5px;
 }
 
-.workspace .mod-root .workspace-tab-header:last-child .workspace-tab-header-inner::before {
+.workspace
+  .mod-root
+  .workspace-tab-header:last-child
+  .workspace-tab-header-inner::before {
   position: absolute;
   right: -0.5px;
   width: 1px;
   background-color: var(--tab-divider-color);
-  content: '';
+  content: "";
   height: 20px;
 }
 
-.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::after,
-.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::before,
-.workspace .mod-root  .workspace-tab-header:first-child .workspace-tab-header-inner::after,
-.workspace .mod-root  .workspace-tab-header.is-active + .workspace-tab-header .workspace-tab-header-inner::after {
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner::after,
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner::before,
+.workspace
+  .mod-root
+  .workspace-tab-header:first-child
+  .workspace-tab-header-inner::after,
+.workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  + .workspace-tab-header
+  .workspace-tab-header-inner::after {
   opacity: 0;
 }
 
@@ -162,7 +186,8 @@ mjx-container {
   color: var(--text-muted);
 }
 
-.nav-file, .nav-folder {
+.nav-file,
+.nav-folder {
   padding: 1px 2px;
 }
 
@@ -192,7 +217,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 }
 
 /* Code syntax highlighting */
-code[class*='language-'], pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left !important;
   white-space: pre !important;
   word-spacing: normal !important;
@@ -203,70 +229,107 @@ code[class*='language-'], pre[class*='language-'] {
   hyphens: none !important;
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   /* Code blocks */
   padding: 1em !important;
-  margin: .5em 0 !important;
+  margin: 0.5em 0 !important;
   overflow: auto !important;
 }
 
-:not(pre)>code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   /* Inline code */
-  padding: .1em !important;
-  border-radius: .3em !important;
+  padding: 0.1em !important;
+  border-radius: 0.3em !important;
   white-space: normal !important;
 }
 
-.token.comment, .token.prolog, .token.doctype, .token.cdata,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
 .HyperMD-codeblock .cm-comment {
   color: var(--gray-1) !important;
 }
 
 .token.punctuation,
-.HyperMD-codeblock .cm-hmd-codeblock, .HyperMD-codeblock .cm-bracket {
+.HyperMD-codeblock .cm-hmd-codeblock,
+.HyperMD-codeblock .cm-bracket {
   color: var(--gray-2) !important;
 }
 
-.token.selector, .token.tag,
-.HyperMD-codeblock .cm-tag, .HyperMD-codeblock .cm-property, .HyperMD-codeblock .cm-meta, .HyperMD-codeblock .cm-qualifier, .HyperMD-codeblock .cm-header, .HyperMD-codeblock .cm-quote, .HyperMD-codeblock .cm-hr, .HyperMD-codeblock .cm-link {
+.token.selector,
+.token.tag,
+.HyperMD-codeblock .cm-tag,
+.HyperMD-codeblock .cm-property,
+.HyperMD-codeblock .cm-meta,
+.HyperMD-codeblock .cm-qualifier,
+.HyperMD-codeblock .cm-header,
+.HyperMD-codeblock .cm-quote,
+.HyperMD-codeblock .cm-hr,
+.HyperMD-codeblock .cm-link {
   color: var(--red) !important;
 }
 
-.token.property, .token.boolean, .token.number, .token.constant, .token.symbol, .token.attr-name, .token.deleted,
-.HyperMD-codeblock .cm-number, .HyperMD-codeblock .cm-atom, .HyperMD-codeblock .cm-attribute {
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted,
+.HyperMD-codeblock .cm-number,
+.HyperMD-codeblock .cm-atom,
+.HyperMD-codeblock .cm-attribute {
   color: var(--orange) !important;
 }
 
-.token.string, .token.char, .token.attr-value, .token.builtin, .token.inserted,
-.HyperMD-codeblock .cm-string, .HyperMD-codeblock .cm-builtin {
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted,
+.HyperMD-codeblock .cm-string,
+.HyperMD-codeblock .cm-builtin {
   color: var(--green) !important;
 }
 
-.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string,
-.HyperMD-codeblock .cm-string-2, .HyperMD-codeblock .cm-operator {
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.HyperMD-codeblock .cm-string-2,
+.HyperMD-codeblock .cm-operator {
   color: var(--aqua) !important;
 }
 
-.token.atrule, .token.keyword,
+.token.atrule,
+.token.keyword,
 .HyperMD-codeblock .cm-keyword {
   color: var(--purple) !important;
 }
 
-.token.function, .token.macro.property,
-.HyperMD-codeblock .cm-def, .HyperMD-codeblock .cm-variable {
+.token.function,
+.token.macro.property,
+.HyperMD-codeblock .cm-def,
+.HyperMD-codeblock .cm-variable {
   color: var(--blue) !important;
 }
 
 .token.class-name,
-.HyperMD-codeblock .cm-variable-2, .HyperMD-codeblock .cm-variable-3 {
+.HyperMD-codeblock .cm-variable-2,
+.HyperMD-codeblock .cm-variable-3 {
   color: var(--yellow) !important;
 }
 
-.token.regex, .token.important, .token.variable {
+.token.regex,
+.token.important,
+.token.variable {
   color: var(--purple) !important;
 }
 
-.token.important, .token.bold {
+.token.important,
+.token.bold {
   font-weight: bold !important;
 }
 

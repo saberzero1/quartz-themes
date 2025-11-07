@@ -8,8 +8,5 @@
     "Buy Me a Coffee": "https://www.buymeacoffee.com/pangyajingD",
     "wechat pay": "https://github.com/Carrie999/wechat"
   },
-  "license": {
-    "name": "The Unlicense",
-    "spdx_id": "Unlicense"
-  }
+  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
 }

@@ -2717,9 +2717,9 @@ span.frontmatter-section-label {
 
 /* Modal Contents */
 .modal-title:not(
-    .mod-settings .modal-title,
-    .mod-community-plugin .modal-title
-  ) {
+  .mod-settings .modal-title,
+  .mod-community-plugin .modal-title
+) {
   color: var(--color-yellow-300);
 }
 

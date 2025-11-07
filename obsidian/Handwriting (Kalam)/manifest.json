@@ -4,8 +4,5 @@
   "description": "A clean and friendly handwriting-style theme using Kalam font, with colored headings and academic-friendly formatting.",
   "version": "1.0.0",
   "minAppVersion": "0.12.0",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

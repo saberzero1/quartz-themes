@@ -349,7 +349,15 @@ function getAllVariables(themeName, optionSetName, isDarkMode, selector) {
 
   const variables = {};
   for (const row of results) {
-    variables[row.property_name] = row.value;
+    if (typeof row.value === "string" && row.value.trim() === "") continue;
+    variables[row.property_name] =
+      typeof row.value === "string"
+        ? row.value
+            .trim()
+            .replace(/"\?\?", ?/g, "")
+            .replace(/^\s*,/g, "")
+            .trim()
+        : row.value;
   }
 
   return variables;

@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Naya Singhania",
   "authorUrl": "https://nayasinghania.com",
-  "license": {
-    "name": "No License Found",
-    "spdx_id": "No SPDX ID Found"
-  }
+  "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
 }

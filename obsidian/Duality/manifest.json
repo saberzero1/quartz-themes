@@ -4,8 +4,5 @@
   "minAppVersion": "1.4.0",
   "author": "CascadeThemes",
   "authorUrl": "https://github.com/CascadeThemes",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

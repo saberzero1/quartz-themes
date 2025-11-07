@@ -4,8 +4,5 @@
   "minAppVersion": "0.16.0",
   "author": "Noah Boos",
   "authorUrl": "https://github.com/NoahBoos",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

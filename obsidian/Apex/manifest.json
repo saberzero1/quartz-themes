@@ -4,8 +4,5 @@
   "minAppVersion": "1.5.0",
   "author": "clearlysid",
   "authorUrl": "https://www.twitter.com/clearlysid",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

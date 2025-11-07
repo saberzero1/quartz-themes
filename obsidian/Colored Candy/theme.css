@@ -420,20 +420,20 @@ mark,
 
 .cm-highlight:has(+ .cm-highlight),
 .cm-highlight:has(
-    + .cm-widgetBuffer + :empty + .cm-widgetBuffer + .cm-highlight
-  ),
+  + .cm-widgetBuffer + :empty + .cm-widgetBuffer + .cm-highlight
+),
 .cm-highlight:has(
+  + .cm-widgetBuffer
+    + :empty
     + .cm-widgetBuffer
-      + :empty
-      + .cm-widgetBuffer
-      + .cm-widgetBuffer
-      + :empty
-      + .cm-widgetBuffer
-      + .cm-widgetBuffer
-      + :empty
-      + .cm-widgetBuffer
-      + .cm-highlight
-  ) {
+    + .cm-widgetBuffer
+    + :empty
+    + .cm-widgetBuffer
+    + .cm-widgetBuffer
+    + :empty
+    + .cm-widgetBuffer
+    + .cm-highlight
+) {
   padding-right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

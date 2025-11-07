@@ -3,8 +3,5 @@
   "version": "2.6.80",
   "minAppVersion": "1.6.0",
   "author": "ValCode",
-  "license": {
-    "name": "GNU General Public License v2.0",
-    "spdx_id": "GPL-2.0"
-  }
+  "license": { "name": "GNU General Public License v2.0", "spdx_id": "GPL-2.0" }
 }

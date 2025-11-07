@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Rody Davis",
   "authorUrl": "https://rodydavis.com",
-  "license": {
-    "name": "Apache License 2.0",
-    "spdx_id": "Apache-2.0"
-  }
+  "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
 }

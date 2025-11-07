@@ -6,11 +6,6 @@
   "repo": "Daiki48/sakurajima.obsidian",
   "authorUrl": "https://dnfolio.dev",
   "screenshot": "screenshots/cover.png",
-  "modes": [
-    "dark"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

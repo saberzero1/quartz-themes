@@ -5,8 +5,5 @@
   "author": "nhrrs",
   "authorUrl": "https://github.com/nhrrs",
   "fundingUrl": "https://buymeacoffee.com/nhrrs",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

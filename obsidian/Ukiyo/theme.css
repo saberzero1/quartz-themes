@@ -2329,8 +2329,8 @@ div:has(.callout[data-callout-metadata*="$pop"])
   .cm-line:not(
     :is(
       .cm-line:has(
-          + .cm-line + .cm-line + .cm-line + .cm-line + .cm-line.cm-active
-        ),
+        + .cm-line + .cm-line + .cm-line + .cm-line + .cm-line.cm-active
+      ),
       .cm-line:has(+ .cm-line + .cm-line + .cm-line + .cm-line.cm-active),
       .cm-line:has(+ .cm-line + .cm-line + .cm-line.cm-active),
       .cm-line:has(+ .cm-line + .cm-line.cm-active),

@@ -4,8 +4,5 @@
   "minAppVersion": "1.1.9",
   "author": "@jdanielmourao",
   "authorUrl": "https://github.com/jdanielmourao/",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

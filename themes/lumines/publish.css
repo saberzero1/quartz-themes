@@ -375,7 +375,7 @@ body.theme-light {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", "JetBrains Mono", monospace !important;
+  --file-header-font: "JetBrains Mono", monospace !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -389,14 +389,14 @@ body.theme-light {
   --font-default: "JetBrains Mono", monospace !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", "JetBrains Mono", monospace !important;
+  --font-interface: "JetBrains Mono", monospace !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", "JetBrains Mono", monospace !important;
+  --font-mermaid: "JetBrains Mono", monospace !important;
   --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -406,13 +406,13 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
+  --font-print: "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", "JetBrains Mono", monospace !important;
+  --font-text: "JetBrains Mono", monospace !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -606,16 +606,14 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: transparent !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", "JetBrains Mono", monospace !important;
+  --metadata-input-font: "JetBrains Mono", monospace !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: transparent !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", "JetBrains Mono", monospace !important;
+  --metadata-label-font: "JetBrains Mono", monospace !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #5c5c5c !important;
   --metadata-label-text-color-hover: #5c5c5c !important;
@@ -1197,7 +1195,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "??", "??", "??", "JetBrains Mono", monospace;
+  --file-header-font: "JetBrains Mono", monospace;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1212,14 +1210,14 @@ body.theme-dark {
   --font-default: "JetBrains Mono", monospace;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "??", "??", "??", "JetBrains Mono", monospace;
+  --font-interface: "JetBrains Mono", monospace;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "JetBrains Mono", monospace;
+  --font-mermaid: "JetBrains Mono", monospace;
   --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -1229,13 +1227,13 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "??", "??", "??", "Arial";
+  --font-print: "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "JetBrains Mono", monospace;
+  --font-text: "JetBrains Mono", monospace;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1432,7 +1430,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: transparent;
   --metadata-input-background-hover: transparent;
-  --metadata-input-font: "??", "??", "??", "JetBrains Mono", monospace;
+  --metadata-input-font: "JetBrains Mono", monospace;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1440,7 +1438,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: transparent;
   --metadata-label-background-hover: transparent;
-  --metadata-label-font: "??", "??", "??", "JetBrains Mono", monospace;
+  --metadata-label-font: "JetBrains Mono", monospace;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgb(227, 227, 227);
   --metadata-label-text-color-hover: rgb(227, 227, 227);

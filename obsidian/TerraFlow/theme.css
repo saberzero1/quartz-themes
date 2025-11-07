@@ -823,14 +823,14 @@ html {
 
 /* Hover effects */
 :is(
-    .markdown-rendered a,
-    .markdown-rendered .internal-link,
-    .markdown-rendered .external-link,
-    .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting),
-    .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)
-  ):hover {
+  .markdown-rendered a,
+  .markdown-rendered .internal-link,
+  .markdown-rendered .external-link,
+  .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting),
+  .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)
+):hover {
   background: rgba(var(--link-bg-rgb), 0.12);
   color: var(--link-color-hover);
   border-bottom: 1px solid var(--link-color);
@@ -868,10 +868,10 @@ html {
 
 /* Hover styling for unresolved links */
 :is(
-    .markdown-rendered .internal-link.is-unresolved,
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
-    .markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-hmd-unresolved
-  ):hover {
+  .markdown-rendered .internal-link.is-unresolved,
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
+  .markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-hmd-unresolved
+):hover {
   opacity: 1;
   background: rgba(var(--link-bg-rgb), 0.12);
   color: var(--link-color-hover);
@@ -905,15 +905,15 @@ html {
 
 /* Simple hover effect - same selector group */
 :is(
-    .tag,
-    a.tag,
-    .cm-hashtag,
-    .token.hashtag,
-    .cm-s-obsidian span.cm-hashtag,
-    .markdown-source-view.mod-cm6 .cm-hashtag,
-    .cm-hashtag-begin,
-    .cm-hashtag-end
-  ):hover {
+  .tag,
+  a.tag,
+  .cm-hashtag,
+  .token.hashtag,
+  .cm-s-obsidian span.cm-hashtag,
+  .markdown-source-view.mod-cm6 .cm-hashtag,
+  .cm-hashtag-begin,
+  .cm-hashtag-end
+):hover {
   color: var(--link-color-hover);
   filter: brightness(1.2);
 }
@@ -1008,11 +1008,11 @@ html {
 
 /* Hover effect */
 :is(
-    .markdown-preview-view blockquote,
-    .markdown-rendered blockquote,
-    div:not(.CodeMirror-activeline) > .HyperMD-quote,
-    .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote
-  ):hover {
+  .markdown-preview-view blockquote,
+  .markdown-rendered blockquote,
+  div:not(.CodeMirror-activeline) > .HyperMD-quote,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote
+):hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   border-radius: var(--radius-lg);
@@ -2382,34 +2382,34 @@ input[type="checkbox"]:hover {
 
 /* Hover state */
 :is(
-    button,
-    .nav-action-button,
-    .workspace-tab-header,
-    .suggestion-item,
-    .menu-item,
-    .nav-file-title,
-    .setting-item-control button,
-    input[type="checkbox"],
-    .multi-select-pill-content,
-    .dropdown-item
-  ):hover {
+  button,
+  .nav-action-button,
+  .workspace-tab-header,
+  .suggestion-item,
+  .menu-item,
+  .nav-file-title,
+  .setting-item-control button,
+  input[type="checkbox"],
+  .multi-select-pill-content,
+  .dropdown-item
+):hover {
   transform: scale(1.02);
   filter: brightness(1.02);
 }
 
 /* Active/pressed state */
 :is(
-    button,
-    .nav-action-button,
-    .workspace-tab-header,
-    .suggestion-item,
-    .menu-item,
-    .nav-file-title,
-    .setting-item-control button,
-    input[type="checkbox"],
-    .multi-select-pill-content,
-    .dropdown-item
-  ):active {
+  button,
+  .nav-action-button,
+  .workspace-tab-header,
+  .suggestion-item,
+  .menu-item,
+  .nav-file-title,
+  .setting-item-control button,
+  input[type="checkbox"],
+  .multi-select-pill-content,
+  .dropdown-item
+):active {
   transform: scale(0.98);
   filter: brightness(0.98);
   transition-duration: 0.15s;
@@ -2419,13 +2419,13 @@ input[type="checkbox"]:hover {
 
 /* Focus states for keyboard navigation */
 :is(
-    button,
-    .clickable-icon,
-    .nav-action-button,
-    input,
-    textarea,
-    select
-  ):focus-visible {
+  button,
+  .clickable-icon,
+  .nav-action-button,
+  input,
+  textarea,
+  select
+):focus-visible {
   outline: 2px solid var(--interactive-accent);
   outline-offset: 2px;
 }

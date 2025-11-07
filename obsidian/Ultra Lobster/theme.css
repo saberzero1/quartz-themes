@@ -5281,12 +5281,12 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 */
 
 button:not(
-    .clickable-icon,
-    .canvas-controls button,
-    .mk-inline-button,
-    .mk-tree-wrapper button,
-    .mk-view-selector button
-  ),
+  .clickable-icon,
+  .canvas-controls button,
+  .mk-inline-button,
+  .mk-tree-wrapper button,
+  .mk-view-selector button
+),
 .clickable-icon[aria-label="New note"] {
   background-color: var(--background-primary);
   color: var(--color-accent);

@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "harmtemolder",
   "authorUrl": "https://github.com/harmtemolder",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

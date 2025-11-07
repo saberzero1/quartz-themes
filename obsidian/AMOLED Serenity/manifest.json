@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Darth Demono",
   "authorUrl": "https://darthdemono.rf.gd/",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

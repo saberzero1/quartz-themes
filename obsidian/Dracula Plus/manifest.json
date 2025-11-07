@@ -3,8 +3,5 @@
   "version": "1.4.3",
   "minAppVersion": "0.16.0",
   "author": "saket",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

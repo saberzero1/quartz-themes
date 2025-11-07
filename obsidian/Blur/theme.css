@@ -98,7 +98,6 @@ settings:
         value: brown-glow-general
 */
 
-
 /* ────────────────────────────────────────────────
    🖼️ BACKGROUND IMAGE
    ──────────────────────────────────────────────── */
@@ -108,7 +107,6 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
 
 /* ────────────────────────────────────────────────
    🪞 MAIN EDITOR AREA (Transparent cards)
@@ -122,7 +120,6 @@ body {
   border-radius: 14px;
   padding: 10px;
 }
-
 
 /* ────────────────────────────────────────────────
    🎨 THEME VARIABLES
@@ -147,7 +144,6 @@ body {
   --text-highlight-bg: rgba(255, 255, 255, 0.15);
 }
 
-
 /* ────────────────────────────────────────────────
    📚 SIDEBAR TRANSPARENCY
    ──────────────────────────────────────────────── */
@@ -158,7 +154,6 @@ body {
   gap: 12px;
   border-radius: 12px;
 }
-
 
 /* ────────────────────────────────────────────────
    ⚙️ MODALS & MENUS (Blur + Transparency)
@@ -201,7 +196,6 @@ body {
   background: transparent;
 }
 
-
 /* ────────────────────────────────────────────────
    🔍 PROMPT STYLING (Ctrl+P, Ctrl+O, etc.)
    ──────────────────────────────────────────────── */
@@ -240,7 +234,6 @@ input.prompt-input {
   -webkit-backdrop-filter: blur(10px);
 }
 
-
 /* ────────────────────────────────────────────────
    🪶 EDITOR LABEL
    ──────────────────────────────────────────────── */
@@ -253,7 +246,6 @@ input.prompt-input {
   color: #73737388;
 }
 
-
 /* ────────────────────────────────────────────────
    ✨ TEXT SELECTION
    ──────────────────────────────────────────────── */
@@ -262,7 +254,6 @@ body ::selection,
   background-color: rgba(0, 0, 0, 0.25);
   color: rgba(49, 49, 49, 0.388);
 }
-
 
 /* ────────────────────────────────────────────────
    ⚡ ANIMATIONS
@@ -275,10 +266,15 @@ body ::selection,
 }
 
 @keyframes settingsFadeIn {
-  from { opacity: 0; transform: scale(0.96) translateY(10px); }
-  to { opacity: 1; transform: scale(1) translateY(0); }
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
-
 
 /* ────────────────────────────────────────────────
    📄 WIDE PAGE MODE
@@ -297,13 +293,15 @@ body ::selection,
   margin: 0 auto;
 }
 
-
 /* ────────────────────────────────────────────────
    🧩 UI CLEANUP
    ──────────────────────────────────────────────── */
-.workspace-tab-header { border: none; }
-.no-inline .inline-title { display: none; }
-
+.workspace-tab-header {
+  border: none;
+}
+.no-inline .inline-title {
+  display: none;
+}
 
 /* ────────────────────────────────────────────────
    🧠 CUSTOM INPUTS (Preview + Editor)
@@ -323,8 +321,13 @@ body ::selection,
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-normal);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.02);
-  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    border-color 0.12s ease;
   font-size: 0.95rem;
   outline: none;
 }
@@ -335,7 +338,9 @@ body ::selection,
 .cm-editor textarea:focus {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 30px rgba(50, 80, 200, 0.12), 0 0 0 4px rgba(80, 120, 255, 0.06);
+  box-shadow:
+    0 8px 30px rgba(50, 80, 200, 0.12),
+    0 0 0 4px rgba(80, 120, 255, 0.06);
   background: rgba(255, 255, 255, 0.045);
 }
 
@@ -347,13 +352,14 @@ textarea::placeholder {
 }
 
 /* Remove number arrows */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] { appearance: textfield; }
-
+input[type="number"] {
+  appearance: textfield;
+}
 
 /* ────────────────────────────────────────────────
    🪞 EMBEDS (Transparent + Clean)
@@ -377,7 +383,6 @@ input[type=number] { appearance: textfield; }
   margin: 0;
 }
 
-
 /* ────────────────────────────────────────────────
    🏷️ TAGS (Preview + Editor)
    ──────────────────────────────────────────────── */
@@ -389,7 +394,6 @@ input[type=number] { appearance: textfield; }
   border-radius: 3px;
   padding: 0 3px;
 }
-
 
 /* ────────────────────────────────────────────────
    🔗 HOVER EFFECTS
@@ -445,7 +449,6 @@ select,
    Change fill to another color if needed.
 */
 
-
 /* If you want the chevron to be subtle / grey instead of white, use e.g. %23888888 for fill. */
 
 /* --------------------------
@@ -465,450 +468,688 @@ select:active,
   height: 2.4em;
   padding: 0.2em 2.4em 0.2em 0.6em;
   border-radius: 8px;
-  background-color: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   color: var(--text-normal);
 }
 
-
-
-
-  /* ==============================================================================  
+/* ==============================================================================  
     ✦ General Notes Glow Presets ✦
     ============================================================================== */
 
-  /* ✦ WHITE Glow — General Notes ✦ */
-  body.white-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.white-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.white-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.white-glow-general .tabs-nav-item,
-  body.white-glow-general .tabs-nav-item:hover,
-  body.white-glow-general .markdown-preview-view.homepage .callout-title {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff, 0 0 4px #ffffff;
-  }
-    
-  /* ✦ RAINBOW Glow — General Notes ✦ */
-  body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.rainbow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.rainbow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.rainbow-glow-general .tabs-nav-item,
-  body.rainbow-glow-general .tabs-nav-item:hover,
-  body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff4da6, 0 0 6px #7f00ff, 0 0 10px #00bfff;
-    animation: rainbowGlow 6s linear infinite;
-  }
+/* ✦ WHITE Glow — General Notes ✦ */
+body.white-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.white-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.white-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.white-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.white-glow-general .tabs-nav-item,
+body.white-glow-general .tabs-nav-item:hover,
+body.white-glow-general .markdown-preview-view.homepage .callout-title {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 1px #ffffff,
+    0 0 4px #ffffff;
+}
 
-  /* ✦ GREEN Glow — General Notes ✦ */
-  body.green-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.green-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.green-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.green-glow-general .nav-folder-title:hover,
-  body.green-glow-general .tabs-nav-item,
-  body.green-glow-general .tabs-nav-item:hover,
-  body.green-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #0dff00, 0 0 6px #00ff15, 0 0 10px #00ff15;
-  }
+/* ✦ RAINBOW Glow — General Notes ✦ */
+body.rainbow-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.rainbow-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.rainbow-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.rainbow-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.rainbow-glow-general .tabs-nav-item,
+body.rainbow-glow-general .tabs-nav-item:hover,
+body.rainbow-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff4da6,
+    0 0 6px #7f00ff,
+    0 0 10px #00bfff;
+  animation: rainbowGlow 6s linear infinite;
+}
 
-  /* ✦ YELLOW Glow — General Notes ✦ */
-  body.yellow-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.yellow-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.yellow-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.yellow-glow-general .tabs-nav-item,
-  body.yellow-glow-general .tabs-nav-item:hover,
-  body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ffe600, 0 0 6px #fff700, 0 0 10px #fff700;
-  }
+/* ✦ GREEN Glow — General Notes ✦ */
+body.green-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.green-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.green-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.green-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.green-glow-general .nav-folder-title:hover,
+body.green-glow-general .tabs-nav-item,
+body.green-glow-general .tabs-nav-item:hover,
+body.green-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #0dff00,
+    0 0 6px #00ff15,
+    0 0 10px #00ff15;
+}
 
-  /* ✦ PINK Glow — General Notes ✦ */
-  body.pink-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.pink-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.pink-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.pink-glow-general .tabs-nav-item,
-  body.pink-glow-general .tabs-nav-item:hover,
-  body.pink-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff66cc, 0 0 6px #ff99dd, 0 0 10px #ff99dd;
-  }
+/* ✦ YELLOW Glow — General Notes ✦ */
+body.yellow-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.yellow-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.yellow-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.yellow-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.yellow-glow-general .tabs-nav-item,
+body.yellow-glow-general .tabs-nav-item:hover,
+body.yellow-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ffe600,
+    0 0 6px #fff700,
+    0 0 10px #fff700;
+}
 
-  /* ✦ BLUE Glow — General Notes ✦ */
-  body.blue-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.blue-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.blue-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.blue-glow-general .tabs-nav-item,
-  body.blue-glow-general .tabs-nav-item:hover,
-  body.blue-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #33ccff, 0 0 6px #66d9ff, 0 0 10px #66d9ff;
-  }
+/* ✦ PINK Glow — General Notes ✦ */
+body.pink-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.pink-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.pink-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.pink-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.pink-glow-general .tabs-nav-item,
+body.pink-glow-general .tabs-nav-item:hover,
+body.pink-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff66cc,
+    0 0 6px #ff99dd,
+    0 0 10px #ff99dd;
+}
 
-  /* ✦ PURPLE Glow — General Notes ✦ */
-  body.purple-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.purple-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.purple-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.purple-glow-general .tabs-nav-item,
-  body.purple-glow-general .tabs-nav-item:hover,
-  body.purple-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #b266ff, 0 0 6px #cc99ff, 0 0 10px #cc99ff;
-  }
+/* ✦ BLUE Glow — General Notes ✦ */
+body.blue-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.blue-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.blue-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.blue-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.blue-glow-general .tabs-nav-item,
+body.blue-glow-general .tabs-nav-item:hover,
+body.blue-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #33ccff,
+    0 0 6px #66d9ff,
+    0 0 10px #66d9ff;
+}
 
-  body.aqua-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.aqua-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.aqua-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.aqua-glow-general .tabs-nav-item,
-  body.aqua-glow-general .tabs-nav-item:hover,
-  body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #00ffc3, 0 0 6px #33ffd6, 0 0 10px #66ffe6;
-  }
+/* ✦ PURPLE Glow — General Notes ✦ */
+body.purple-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.purple-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.purple-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.purple-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.purple-glow-general .tabs-nav-item,
+body.purple-glow-general .tabs-nav-item:hover,
+body.purple-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #b266ff,
+    0 0 6px #cc99ff,
+    0 0 10px #cc99ff;
+}
 
-  body.aqua-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #00ffc3, 0 0 6px #33ffd6, 0 0 10px #66ffe6;
-  }
+body.aqua-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.aqua-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.aqua-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.aqua-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.aqua-glow-general .tabs-nav-item,
+body.aqua-glow-general .tabs-nav-item:hover,
+body.aqua-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #00ffc3,
+    0 0 6px #33ffd6,
+    0 0 10px #66ffe6;
+}
 
-  body.red-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.red-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.red-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.red-glow-general .tabs-nav-item,
-  body.red-glow-general .tabs-nav-item:hover,
-  body.red-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff4d4d, 0 0 6px #ff6666, 0 0 10px #ff9999;
-  }
+body.aqua-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #00ffc3,
+    0 0 6px #33ffd6,
+    0 0 10px #66ffe6;
+}
 
-  body.red-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff4d4d, 0 0 6px #ff6666, 0 0 10px #ff9999;
-  }
+body.red-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.red-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.red-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.red-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.red-glow-general .tabs-nav-item,
+body.red-glow-general .tabs-nav-item:hover,
+body.red-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff4d4d,
+    0 0 6px #ff6666,
+    0 0 10px #ff9999;
+}
 
-  body.orange-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.orange-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.orange-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.orange-glow-general .tabs-nav-item,
-  body.orange-glow-general .tabs-nav-item:hover,
-  body.orange-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ffaa33, 0 0 6px #ff9933, 0 0 10px #ffcc66;
-  }
+body.red-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff4d4d,
+    0 0 6px #ff6666,
+    0 0 10px #ff9999;
+}
 
-  body.orange-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ffaa33, 0 0 6px #ff9933, 0 0 10px #ffcc66;
-  }
+body.orange-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.orange-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.orange-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.orange-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.orange-glow-general .tabs-nav-item,
+body.orange-glow-general .tabs-nav-item:hover,
+body.orange-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ffaa33,
+    0 0 6px #ff9933,
+    0 0 10px #ffcc66;
+}
 
-  body.brown-glow-general .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body.brown-glow-general .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body.brown-glow-general .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body.brown-glow-general .tabs-nav-item,
-  body.brown-glow-general .tabs-nav-item:hover,
-  body.brown-glow-general .markdown-preview-view.homepage .callout-title {
-    color: white !important;
-    text-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;
-  }
+body.orange-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ffaa33,
+    0 0 6px #ff9933,
+    0 0 10px #ffcc66;
+}
 
-  body.brown-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #8b4513, 0 0 6px #a0522d, 0 0 10px #cd853f;
-  }
-    
+body.brown-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body.brown-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body.brown-glow-general
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body.brown-glow-general
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body.brown-glow-general .tabs-nav-item,
+body.brown-glow-general .tabs-nav-item:hover,
+body.brown-glow-general .markdown-preview-view.homepage .callout-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #8b4513,
+    0 0 6px #a0522d,
+    0 0 10px #cd853f;
+}
 
-  /* ✦ INLINE TITLES GLOW FOR GENERAL NOTES ✦ */
+body.brown-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #8b4513,
+    0 0 6px #a0522d,
+    0 0 10px #cd853f;
+}
 
-  /* White Glow */
-  body.white-glow-general .inline-title {
-    color: #ffffff !important;
-    text-shadow: 0 0 1px #ffffff, 0 0 4px #ffffff;
-  }
+/* ✦ INLINE TITLES GLOW FOR GENERAL NOTES ✦ */
 
-  /* Rainbow Glow */
-  body.rainbow-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff4da6, 0 0 6px #7f00ff, 0 0 10px #00bfff;
-  }
+/* White Glow */
+body.white-glow-general .inline-title {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 1px #ffffff,
+    0 0 4px #ffffff;
+}
 
-  /* Blue Glow */
-  body.blue-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #33ccff, 0 0 6px #66d9ff, 0 0 10px #66d9ff;
-    font-weight: 600;
-  }
+/* Rainbow Glow */
+body.rainbow-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff4da6,
+    0 0 6px #7f00ff,
+    0 0 10px #00bfff;
+}
 
-  /* Pink Glow */
-  body.pink-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ff66cc, 0 0 6px #ff99dd, 0 0 10px #ff99dd;
-  }
+/* Blue Glow */
+body.blue-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #33ccff,
+    0 0 6px #66d9ff,
+    0 0 10px #66d9ff;
+  font-weight: 600;
+}
 
-  /* Purple Glow */
-  body.purple-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #b266ff, 0 0 6px #cc99ff, 0 0 10px #cc99ff;
-  }
+/* Pink Glow */
+body.pink-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ff66cc,
+    0 0 6px #ff99dd,
+    0 0 10px #ff99dd;
+}
 
-  /* Yellow Glow */
-  body.yellow-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #ffe600, 0 0 6px #fff700, 0 0 10px #fff700;
-  }
+/* Purple Glow */
+body.purple-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #b266ff,
+    0 0 6px #cc99ff,
+    0 0 10px #cc99ff;
+}
 
-  /* Green Glow */
-  body.green-glow-general .inline-title {
-    color: white !important;
-    text-shadow: 0 0 2px #0dff00, 0 0 6px #00ff15, 0 0 10px #00ff15;
-  }
+/* Yellow Glow */
+body.yellow-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #ffe600,
+    0 0 6px #fff700,
+    0 0 10px #fff700;
+}
 
+/* Green Glow */
+body.green-glow-general .inline-title {
+  color: white !important;
+  text-shadow:
+    0 0 2px #0dff00,
+    0 0 6px #00ff15,
+    0 0 10px #00ff15;
+}
 
-  /* === Visible selection throughout the entire vault (including daily), forced === */
-  body ::selection,
-  .daily ::selection {
-    background-color: rgba(180, 180, 180, 0.35) !important; /* translucent gray */
-    color: white !important;
-  }
+/* === Visible selection throughout the entire vault (including daily), forced === */
+body ::selection,
+.daily ::selection {
+  background-color: rgba(180, 180, 180, 0.35) !important; /* translucent gray */
+  color: white !important;
+}
 
-  /* === Custom Style for .embed blocks with adaptive glow === */
-  .embed {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    background: #1a1a1a11;
-    border: 1px solid transparent;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    margin: 1.2em 0;
-    padding: 0;
-    max-width: 100%;
-  }
+/* === Custom Style for .embed blocks with adaptive glow === */
+.embed {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #1a1a1a11;
+  border: 1px solid transparent;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  margin: 1.2em 0;
+  padding: 0;
+  max-width: 100%;
+}
 
-  .embed:hover {
-    transform: translateY(-4px);
-  }
+.embed:hover {
+  transform: translateY(-4px);
+}
 
-  /* Image */
-  .embed img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(0.95) contrast(1.05);
-    transition: filter 0.3s ease;
-  }
+/* Image */
+.embed img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.95) contrast(1.05);
+  transition: filter 0.3s ease;
+}
 
-  .embed:hover img {
-    filter: brightness(1) contrast(1.1);
-  }
+.embed:hover img {
+  filter: brightness(1) contrast(1.1);
+}
 
-  /* === Colors according to General Notes Themes === */
-  body.white-glow-general .embed {
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
-  }
+/* === Colors according to General Notes Themes === */
+body.white-glow-general .embed {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
 
-  body.blue-glow-general .embed {
-    border-color: rgba(113, 186, 255, 0.4);
-    box-shadow: 0 0 20px rgba(113, 186, 255, 0.25);
-  }
+body.blue-glow-general .embed {
+  border-color: rgba(113, 186, 255, 0.4);
+  box-shadow: 0 0 20px rgba(113, 186, 255, 0.25);
+}
 
-  body.pink-glow-general .embed {
-    border-color: rgba(255, 140, 207, 0.4);
-    box-shadow: 0 0 7px rgba(255, 140, 207, 0.25);
-  }
+body.pink-glow-general .embed {
+  border-color: rgba(255, 140, 207, 0.4);
+  box-shadow: 0 0 7px rgba(255, 140, 207, 0.25);
+}
 
-  body.purple-glow-general .embed {
-    border-color: rgba(192, 132, 252, 0.4);
-    box-shadow: 0 0 20px rgba(192, 132, 252, 0.25);
-  }
+body.purple-glow-general .embed {
+  border-color: rgba(192, 132, 252, 0.4);
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.25);
+}
 
-  body.yellow-glow-general .embed {
-    border-color: rgba(250, 204, 21, 0.4);
-    box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
-  }
+body.yellow-glow-general .embed {
+  border-color: rgba(250, 204, 21, 0.4);
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
+}
 
-  body.green-glow-general .embed {
-    border-color: rgba(74, 222, 128, 0.4);
-    box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
-  }
+body.green-glow-general .embed {
+  border-color: rgba(74, 222, 128, 0.4);
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
+}
 
-  body.rainbow-glow-general .embed {
-    border: 1px solid transparent;
-    box-shadow: 0 0 20px rgba(255, 140, 207, 0.25),
-                0 0 25px rgba(250, 204, 21, 0.25),
-                0 0 30px rgba(74, 222, 128, 0.25),
-                0 0 35px rgba(113, 186, 255, 0.25),
-                0 0 40px rgba(192, 132, 252, 0.25);
-  }
+body.rainbow-glow-general .embed {
+  border: 1px solid transparent;
+  box-shadow:
+    0 0 20px rgba(255, 140, 207, 0.25),
+    0 0 25px rgba(250, 204, 21, 0.25),
+    0 0 30px rgba(74, 222, 128, 0.25),
+    0 0 35px rgba(113, 186, 255, 0.25),
+    0 0 40px rgba(192, 132, 252, 0.25);
+}
 
-  body.aqua-glow-general .embed {
-    border-color: rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
-  }
+body.aqua-glow-general .embed {
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+}
 
-  body.red-glow-general .embed {
-    border-color: rgba(255, 90, 90, 0.4);
-    box-shadow: 0 0 20px rgba(255, 90, 90, 0.25);
-  }
+body.red-glow-general .embed {
+  border-color: rgba(255, 90, 90, 0.4);
+  box-shadow: 0 0 20px rgba(255, 90, 90, 0.25);
+}
 
-  body.orange-glow-general .embed {
-    border-color: rgba(255, 165, 0, 0.4);
-    box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
-  }
+body.orange-glow-general .embed {
+  border-color: rgba(255, 165, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.25);
+}
 
-  body.brown-glow-general .embed {
-    border-color: rgba(139, 69, 19, 0.4);
-    box-shadow: 0 0 20px rgba(139, 69, 19, 0.25);
-  }
+body.brown-glow-general .embed {
+  border-color: rgba(139, 69, 19, 0.4);
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.25);
+}
 
+.markdown-source-view.mod-cm6
+  .cm-line
+  span.cm-formatting.cm-formatting-code-block,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border: 5px !important;
+  box-shadow: 5px !important;
+  background-color: rgba(0, 0, 0, 0.095);
+}
 
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 
-  .markdown-source-view.mod-cm6 .cm-line span.cm-formatting.cm-formatting-code-block,
-  .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-    border: 5px !important;
-    box-shadow: 5px !important;
-    background-color: rgba(0, 0, 0, 0.095);
-  }
-
-  .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-  }
-
-
-
-  /* ==============================================================================  
+/* ==============================================================================  
     ✦ Toggle Glow from CSS for General Notes ✦
     ============================================================================== */
 
-  /* When the toggle is OFF, disable all glow */
-  body:not(.toggle-glow) .markdown-preview-view:not(.daily) :is(strong, em, a, mark),
-  body:not(.toggle-glow) .markdown-source-view.mod-cm6:not(.daily) :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
-  body:not(.toggle-glow) .markdown-preview-view:not(.daily) :is(h1, h2, h3, h4, h5, h6),
-  body:not(.toggle-glow) .markdown-source-view.mod-cm6:not(.daily) :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6),
-  body:not(.toggle-glow) .tabs-nav-item,
-  body:not(.toggle-glow) .tabs-nav-item:hover,
-  body:not(.toggle-glow) .markdown-preview-view.homepage .callout-title,
-  body:not(.toggle-glow) .inline-title,
-  body:not(.toggle-glow) .embed {
-    text-shadow: none !important;
-    animation: none !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-  }
+/* When the toggle is OFF, disable all glow */
+body:not(.toggle-glow)
+  .markdown-preview-view:not(.daily)
+  :is(strong, em, a, mark),
+body:not(.toggle-glow)
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(.cm-strong, .cm-em, .cm-highlight, .cm-link, .cm-hmd-internal-link),
+body:not(.toggle-glow)
+  .markdown-preview-view:not(.daily)
+  :is(h1, h2, h3, h4, h5, h6),
+body:not(.toggle-glow)
+  .markdown-source-view.mod-cm6:not(.daily)
+  :is(
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6
+  ),
+body:not(.toggle-glow) .tabs-nav-item,
+body:not(.toggle-glow) .tabs-nav-item:hover,
+body:not(.toggle-glow) .markdown-preview-view.homepage .callout-title,
+body:not(.toggle-glow) .inline-title,
+body:not(.toggle-glow) .embed {
+  text-shadow: none !important;
+  animation: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
 
-
-  
-  /* ==============================================================================  
+/* ==============================================================================  
     ✦ Table ✦
     ============================================================================== */
 
+.markdown-preview-view table,
+.cm-preview table,
+.markdown-source-view.mod-cm6 table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+  margin: 1.2em 0;
+  background: transparent !important;
+  border: 1px solid rgba(176, 176, 176, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.2s ease-in-out;
+}
 
-      .markdown-preview-view table,
-  .cm-preview table,
-  .markdown-source-view.mod-cm6 table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 0.95rem;
-    margin: 1.2em 0;
-    background: transparent !important;
-    border: 1px solid rgba(176, 176, 176, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: all 0.2s ease-in-out;
-  }
+.markdown-preview-view th,
+.cm-preview th,
+.markdown-source-view.mod-cm6 th {
+  background: transparent !important;
+  color: #ffffff;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-shadow:
+    0 0 1px rgba(0, 0, 0, 0.4),
+    0 0 2px rgba(0, 0, 0, 0.3);
+}
 
-  .markdown-preview-view th,
-  .cm-preview th,
-  .markdown-source-view.mod-cm6 th {
-    background: transparent !important;
-    color: #ffffff;
-    padding: 0.6em 0.8em;
-    text-align: center;
-    font-weight: 700;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    text-shadow:
-      0 0 1px rgba(0, 0, 0, 0.4),
-      0 0 2px rgba(0, 0, 0, 0.3);
-  }
+.markdown-preview-view td:nth-child(2),
+.cm-preview td:nth-child(2),
+.markdown-source-view.mod-cm6 td:nth-child(2) {
+  color: var(--text-accent);
+  font-weight: bold;
+  text-align: center;
+}
 
-  .markdown-preview-view td:nth-child(2),
-  .cm-preview td:nth-child(2),
-  .markdown-source-view.mod-cm6 td:nth-child(2) {
-    color: var(--text-accent);
-    font-weight: bold;
-    text-align: center;
-  }
+.markdown-preview-view td,
+.cm-preview td,
+.markdown-source-view.mod-cm6 td {
+  padding: 0.55em 0.8em;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  color: var(--highlight);
+  background: transparent !important;
+}
 
-  .markdown-preview-view td,
-  .cm-preview td,
-  .markdown-source-view.mod-cm6 td {
-    padding: 0.55em 0.8em;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-    color: var(--highlight);
-    background: transparent !important;
-  }
+.markdown-preview-view tr:nth-child(even),
+.cm-preview tr:nth-child(even),
+.markdown-source-view.mod-cm6 tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
 
-  .markdown-preview-view tr:nth-child(even),
-  .cm-preview tr:nth-child(even),
-  .markdown-source-view.mod-cm6 tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.015);
-  }
+.markdown-preview-view td,
+.markdown-preview-view th,
+.cm-preview td,
+.cm-preview th,
+.markdown-source-view.mod-cm6 td,
+.markdown-source-view.mod-cm6 th {
+  border: 1px solid rgba(176, 176, 176, 0.2);
+}
 
-  .markdown-preview-view td,
-  .markdown-preview-view th,
-  .cm-preview td,
-  .cm-preview th,
-  .markdown-source-view.mod-cm6 td,
-  .markdown-source-view.mod-cm6 th {
-    border: 1px solid rgba(176, 176, 176, 0.2);
-  }
+.markdown-preview-view tr:hover,
+.cm-preview tr:hover,
+.markdown-source-view.mod-cm6 tr:hover {
+  background-color: inherit !important;
+}
 
-  .markdown-preview-view tr:hover,
-  .cm-preview tr:hover,
-  .markdown-source-view.mod-cm6 tr:hover {
-    background-color: inherit !important;
-  }
-
-  /* ==============================================================================  
+/* ==============================================================================  
     ✦ Buttons (Input) ✦
     ============================================================================== */
 
-
-
-  body.theme-dark .mb-button.sepia-glow > button {
+body.theme-dark .mb-button.sepia-glow > button {
   background: rgba(255, 255, 255, 0.04) !important;
-  color: #FFFFFF !important;
-  font-family: 'Inter', 'Segoe UI', sans-serif !important;
+  color: #ffffff !important;
+  font-family: "Inter", "Segoe UI", sans-serif !important;
   font-weight: 500;
   font-size: 0.92rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 12px 22px;
   margin: 0.5rem 0;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.45),
-              inset 0 1px 0 rgba(255,255,255,0.02);
-  transition: transform .12s ease,
-              box-shadow .12s ease,
-              border-color .12s ease,
-              background .12s ease;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    border-color 0.12s ease,
+    background 0.12s ease;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -917,7 +1158,8 @@ select:active,
 body.theme-dark .mb-button.sepia-glow > button:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 30px rgba(50,80,200,0.12),
-              0 0 0 4px rgba(80,120,255,0.06);
+  box-shadow:
+    0 8px 30px rgba(50, 80, 200, 0.12),
+    0 0 0 4px rgba(80, 120, 255, 0.06);
   background: rgba(255, 255, 255, 0.06);
 }

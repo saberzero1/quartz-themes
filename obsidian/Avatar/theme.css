@@ -1,5 +1,3 @@
-
-
 /*
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                           AVATAR THEME - DEEP OCEAN                          ║
@@ -13,24 +11,23 @@
 ╚══════════════════════════════════════════════════════════════════════════════╝
 */
 
-
 /* ═══════════════════════════════════════════════════════════════════════════
    🎨 AVATAR THEME - CORE COLOR SYSTEM
    ═══════════════════════════════════════════════════════════════════════════ */
 
 .theme-dark {
   /* Avatar Brand Colors */
-  --avatar-aqua: #7DD3C0;
-  --avatar-aqua-light: #5EEAD4;
-  --avatar-purple: #6366F1;
-  --avatar-purple-light: #A78BFA;
-  --avatar-gold: #FBBF24;
-  --avatar-gold-light: #FDE68A;
-  --avatar-pink: #EF44C0;
-  --avatar-bold: #34D399;  /* Bioluminescent Aqua for bold text */
-  
+  --avatar-aqua: #7dd3c0;
+  --avatar-aqua-light: #5eead4;
+  --avatar-purple: #6366f1;
+  --avatar-purple-light: #a78bfa;
+  --avatar-gold: #fbbf24;
+  --avatar-gold-light: #fde68a;
+  --avatar-pink: #ef44c0;
+  --avatar-bold: #34d399; /* Bioluminescent Aqua for bold text */
+
   /* Background Colors - Deep Ocean Theme */
-  --background-primary: #1a2332;  /* Deep Ocean background */
+  --background-primary: #1a2332; /* Deep Ocean background */
   --background-primary-alt: #2d3748;
   --background-secondary: #374151;
   --background-modifier-border: #4a5568;
@@ -42,7 +39,7 @@
   --background-modifier-error-rgb: 220, 38, 38;
   --background-modifier-error-hover: #b91c1c;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  
+
   /* Text Colors */
   --text-normal: #e2e8f0;
   --text-muted: #a0aec0;
@@ -50,91 +47,97 @@
   --text-accent: #7dd3c0;
   --text-accent-hover: #5eead4;
   --text-on-accent: #1a202c;
-  
+
   /* Interactive Elements */
   --interactive-normal: #374151;
   --interactive-hover: #4a5568;
   --interactive-accent: #7dd3c0;
   --interactive-accent-hover: #5eead4;
   --interactive-success: #059669;
-  
+
   /* Headings */
-  --h1-color: #EF44C0;
+  --h1-color: #ef44c0;
   --h2-color: #a78bfa;
   --h3-color: #fbbf24;
-  --h4-color: #5EEAD4;  /* Using bioluminescent aqua instead of orange */
+  --h4-color: #5eead4; /* Using bioluminescent aqua instead of orange */
   --h5-color: #7dd3c0;
   --h6-color: #6366f1;
   --h1-size: 2.5em;
-  --h2-size: 2.0em;
+  --h2-size: 2em;
   --h3-size: 1.6em;
   --h4-size: 1.3em;
   --h5-size: 1.1em;
-  --h6-size: 1.0em;
+  --h6-size: 1em;
   --h1-weight: 700;
   --h2-weight: 600;
   --h3-weight: 600;
   --h4-weight: 500;
   --h5-weight: 500;
   --h6-weight: 500;
-  
+
   /* Links */
   --link-color: #7dd3c0;
   --link-color-hover: #5eead4;
   --link-external-color: #fbbf24;
   --link-unresolved-color: #6cf58e;
-  
+
   /* Tags */
   --tag-color: #fbbf24;
   --tag-background: rgba(251, 191, 36, 0.2);
   --tag-background-hover: rgba(251, 191, 36, 0.3);
-  
+
   /* Code */
   --code-background: #374151;
   --code-normal: #e2e8f0;
-  
+
   /* Highlights */
   --text-highlight-bg: rgba(251, 191, 36, 0.4);
   --text-highlight-bg-active: rgba(251, 191, 36, 0.6);
-  
+
   /* UI Elements */
-  --titlebar-text-color-focused: #FBBF24;
+  --titlebar-text-color-focused: #fbbf24;
   --titlebar-text-color-unfocused: #a0aec0;
-  --tab-text-color-focused-active: #FBBF24;
+  --tab-text-color-focused-active: #fbbf24;
   --tab-text-color-unfocused-active: #7dd3c0;
   --icon-color: #7dd3c0;
   --icon-color-hover: #fde68a;
   --icon-color-active: #f561ab;
   --icon-color-focused: #fbbf24;
-  
+
   /* Dividers */
   --hr-color: #fbbf24;
-  
+
   /* Blockquotes */
   --blockquote-border-color: #fbbf24;
   --blockquote-border-thickness: 2px;
   --blockquote-font-style: italic;
-  --blockquote-color: #E1DCF2;
-  --blockquote-bg: #303E59;
-  
+  --blockquote-color: #e1dcf2;
+  --blockquote-bg: #303e59;
+
   /* Checkboxes */
   --checkbox-color: #7dd3c0;
   --checkbox-color-hover: #5eead4;
-  
+
   /* Tables */
   --table-border-color: rgba(125, 211, 192, 0.3);
-  --table-header-background: linear-gradient(135deg, rgba(125, 211, 192, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+  --table-header-background: linear-gradient(
+    135deg,
+    rgba(125, 211, 192, 0.15) 0%,
+    rgba(99, 102, 241, 0.15) 100%
+  );
   --table-row-even-background: rgba(125, 211, 192, 0.03);
   --table-row-hover-background: rgba(251, 191, 36, 0.05);
-  
+
   /* Indentation guides */
-  --indentation-guide-color: #59FFD5;
+  --indentation-guide-color: #59ffd5;
   --indentation-guide-color-active: rgba(89, 255, 213, 0.66);
-  
+
   /* Typography */
-  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-text-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-monospace-theme: 'JetBrains Mono', 'Source Code Pro', monospace;
+  --font-interface-theme:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-text-theme:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "Source Code Pro", monospace;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -268,20 +271,24 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, 
-    var(--avatar-aqua) 0%, 
-    var(--avatar-gold) 50%, 
-    var(--avatar-purple) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--avatar-aqua) 0%,
+    var(--avatar-gold) 50%,
+    var(--avatar-purple) 100%
+  );
   border-radius: 12px;
   border: 2px solid rgba(45, 55, 72, 0.5);
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, 
-    var(--avatar-gold) 0%, 
-    var(--avatar-pink) 50%, 
-    var(--avatar-aqua) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--avatar-gold) 0%,
+    var(--avatar-pink) 50%,
+    var(--avatar-aqua) 100%
+  );
   box-shadow: 0 0 10px rgba(125, 211, 192, 0.5);
 }
 
@@ -353,7 +360,7 @@ body {
 .workspace-ribbon {
   background: var(--avatar-focus-color) !important;
   border-right: 1px solid var(--avatar-focus-border);
-  border-radius:  0;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -367,8 +374,6 @@ body {
   color: var(--avatar-aqua);
   background: rgba(125, 211, 192, 0.15);
 }
-
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
    🔧 VIEW HEADERS
@@ -407,43 +412,42 @@ body {
   background: #1a2332 !important;
 }
 
-
 /* ═══════════════════════════════════════════════════════════════════════════
    📝 TYPOGRAPHY & HEADERS
    ═══════════════════════════════════════════════════════════════════════════ */
 
-h1 { 
-  color: var(--h1-color); 
+h1 {
+  color: var(--h1-color);
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
 }
 
-h2 { 
-  color: var(--h2-color); 
+h2 {
+  color: var(--h2-color);
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
 }
 
-h3 { 
-  color: var(--h3-color); 
+h3 {
+  color: var(--h3-color);
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
 }
 
-h4 { 
-  color: var(--h4-color); 
+h4 {
+  color: var(--h4-color);
   font-size: var(--h4-size);
   font-weight: var(--h4-weight);
 }
 
-h5 { 
-  color: var(--h5-color); 
+h5 {
+  color: var(--h5-color);
   font-size: var(--h5-size);
   font-weight: var(--h5-weight);
 }
 
-h6 { 
-  color: var(--h6-color); 
+h6 {
+  color: var(--h6-color);
   font-size: var(--h6-size);
   font-weight: var(--h6-weight);
 }
@@ -488,7 +492,7 @@ a:hover {
 }
 
 strong {
-  color: var(--avatar-bold);  /* Bioluminescent Aqua */
+  color: var(--avatar-bold); /* Bioluminescent Aqua */
   font-weight: 700;
 }
 
@@ -550,7 +554,9 @@ mark,
   background: rgba(251, 191, 36, 0.15) !important;
   color: var(--avatar-gold) !important;
   border-radius: 8px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 /* Tag pane container */
@@ -564,7 +570,8 @@ mark,
    ═══════════════════════════════════════════════════════════════════════════ */
 
 blockquote {
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
   padding: 12px 16px;
@@ -589,7 +596,7 @@ blockquote {
 .callout[data-callout="hint"],
 .callout[data-callout="important"] {
   border-color: #e13ff3 !important;
-  background-color: #0b70c87a   !important;
+  background-color: #0b70c87a !important;
   border-left-width: 4px !important;
 }
 
@@ -610,9 +617,9 @@ blockquote {
 .callout[data-callout="success"],
 .callout[data-callout="check"],
 .callout[data-callout="done"] {
-  border-color: #08faa9  !important;
+  border-color: #08faa9 !important;
   background-color: rgba(125, 211, 192, 0.08) !important;
-   border-left-width: 4px !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="success"] .callout-title,
@@ -634,7 +641,7 @@ blockquote {
 .callout[data-callout="faq"] {
   border-color: var(--avatar-gold) !important;
   background-color: rgba(133, 36, 251, 0.08) !important;
-   border-left-width: 4px !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="question"] .callout-title,
@@ -656,7 +663,7 @@ blockquote {
 .callout[data-callout="missing"] {
   border-color: #d62f23 !important;
   background-color: #e0eb498b !important;
-   border-left-width: 4px !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="failure"] .callout-title,
@@ -675,9 +682,8 @@ blockquote {
 /* Example */
 .callout[data-callout="example"] {
   border-color: var(--avatar-purple) !important;
-  background-color: rgba(99, 102, 241, 0.08) !important;  
+  background-color: rgba(99, 102, 241, 0.08) !important;
   border-left-width: 4px !important;
-
 }
 
 .callout[data-callout="example"] .callout-title {
@@ -707,14 +713,14 @@ blockquote {
 /* Info, Todo - NEEDS WORK */
 .callout[data-callout="info"],
 .callout[data-callout="todo"] {
-  border-color: #F8BF28 !important;
+  border-color: #f8bf28 !important;
   background-color: #4438ca8b !important;
-   border-left-width: 4px !important;
+  border-left-width: 4px !important;
 }
 
 .callout[data-callout="info"] .callout-title,
 .callout[data-callout="todo"] .callout-title {
-  color: #F8BF28 !important;
+  color: #f8bf28 !important;
   /* NO background-color = no inner highlight */
 }
 
@@ -753,12 +759,12 @@ blockquote {
 
 .callout[data-callout="error"] .callout-title,
 .callout[data-callout="danger"] .callout-title,
-.callout[data-callout="bug"] .callout-title { 
-  color: #f6f5f8fd!important;
+.callout[data-callout="bug"] .callout-title {
+  color: #f6f5f8fd !important;
   /* NO background-color = no inner highlight */
 }
 
-.callout[data-callout="error"] .callout-icon, 
+.callout[data-callout="error"] .callout-icon,
 .callout[data-callout="danger"] .callout-icon,
 .callout[data-callout="bug"] .callout-icon {
   color: var(--avatar-pink) !important;
@@ -768,12 +774,9 @@ blockquote {
 .callout[data-callout="note"],
 .callout[data-callout="abstract"],
 .callout[data-callout="summary"] {
-
   border-color: var(--avatar-purple) !important;
   background-color: rgba(99, 102, 241, 0.08) !important;
   border-left-width: 4px !important;
-
-
 }
 
 .callout[data-callout="note"] .callout-title,
@@ -788,8 +791,6 @@ blockquote {
 .callout[data-callout="summary"] .callout-icon {
   color: var(--avatar-purple) !important;
 }
-
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
    📊 TABLES
@@ -862,7 +863,10 @@ blockquote {
   border-radius: 8px;
   padding: 6px 8px !important;
   margin: 1px 0 !important;
-  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .nav-folder-title:hover {
@@ -987,7 +991,8 @@ input[type="checkbox"] {
 }
 
 /* Prompt/suggestion containers */
-.prompt, .suggestion-container {
+.prompt,
+.suggestion-container {
   background: var(--avatar-focus-color);
   border: 1px solid var(--avatar-focus-border);
   border-radius: 12px;
@@ -1049,7 +1054,6 @@ button {
   border-radius: 16px !important;
 }
 
-
 /* ═══════════════════════════════════════════════════════════════════════════
    🎯 == Highlighting Text with == !!!!!!!!!!!!!!!!!
    ═══════════════════════════════════════════════════════════════════════════ */
@@ -1065,7 +1069,6 @@ button {
   --text-highlight-bg: rgba(125, 211, 192, 0.3);
   --text-highlight-color: var(--avatar-pink);
 }
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
    🌊 AVATAR BREADCRUMB NAVIGATION - Papyrus-inspired styling
@@ -1092,19 +1095,16 @@ button {
   letter-spacing: 0.5px !important;
 }
 
-
-
-
 /* Breadcrumb text color - Avatar blue by default, gold when note is focused */
 .view-header-breadcrumb,
 .view-header-breadcrumb-separator {
-  color: var(--avatar-aqua) !important;  /* #7DD3C0 */
+  color: var(--avatar-aqua) !important; /* #7DD3C0 */
 }
 
 /* When the note editor is focused/active, breadcrumbs turn gold */
 .workspace-leaf.mod-active .view-header-breadcrumb,
 .workspace-leaf.mod-active .view-header-breadcrumb-separator {
-  color: var(--avatar-gold) !important;  /* #FBBF24 */
+  color: var(--avatar-gold) !important; /* #FBBF24 */
 }
 
 /* Breadcrumb separators */
@@ -1114,17 +1114,18 @@ button {
 
 /* Hover effect on breadcrumb items */
 .view-header-breadcrumb:hover {
-  color: var(--avatar-gold-light) !important;  /* #FDE68A */
+  color: var(--avatar-gold-light) !important; /* #FDE68A */
   text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
   transition: all 0.2s ease;
 }
 
 /* Active/current breadcrumb item - stays gold when note is active */
 .workspace-leaf.mod-active .view-header-breadcrumb:last-child {
-  color: var(--avatar-gold-light) !important;  /* Lighter gold for current location */
+  color: var(
+    --avatar-gold-light
+  ) !important; /* Lighter gold for current location */
   font-weight: 700 !important;
 }
-
 
 /* ───────────────────────────────────────────────────────────────────────── */
 /*  Override all breadcrumb segments to use your main font, ALL CAPS, and    */
@@ -1132,17 +1133,15 @@ button {
 /* ───────────────────────────────────────────────────────────────────────── */
 .theme-dark .view-header-breadcrumb,
 .theme-dark .view-header-breadcrumb * {
-  font-family: var(--font-text)    !important;  /* main theme font */
-  text-transform: uppercase        !important;  /* force ALL CAPS  */
-  color: var(--text-normal)        !important;  /* uniform color    */
+  font-family: var(--font-text) !important; /* main theme font */
+  text-transform: uppercase !important; /* force ALL CAPS  */
+  color: var(--text-normal) !important; /* uniform color    */
 }
 
 /* If you’d like the separators (“/”) a bit subtler, you can tweak them: */
 .theme-dark .view-header-breadcrumb span {
   opacity: 0.6 !important;
 }
-
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
    🌟 ENHANCED AVATAR GLOW EFFECT (Optional)
@@ -1155,9 +1154,15 @@ button {
 
 /* Pulse animation on hover (like bioluminescence) */
 @keyframes avatarPulse {
-  0% { text-shadow: 0 0 4px rgba(125, 211, 192, 0.5); }
-  50% { text-shadow: 0 0 12px rgba(125, 211, 192, 0.8); }
-  100% { text-shadow: 0 0 4px rgba(125, 211, 192, 0.5); }
+  0% {
+    text-shadow: 0 0 4px rgba(125, 211, 192, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(125, 211, 192, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(125, 211, 192, 0.5);
+  }
 }
 
 .view-header-breadcrumb:hover {
@@ -1195,7 +1200,7 @@ button {
 .view-header-title,
 .view-header-breadcrumb-container .view-header-title {
   color: var(--avatar-gold) !important;
-  font-family: 'Kalam', cursive !important;
+  font-family: "Kalam", cursive !important;
 }
 
 /* When note is not active */
@@ -1254,12 +1259,10 @@ button {
   color: var(--avatar-gold) !important;
 }
 
-
 body.is-unfocused .theme-dark .workspace-tabs {
   background: var(--avatar-focus-color) !important;
   border-bottom: 1px solid var(--avatar-focus-border) !important;
 }
-
 
 /*─────────────────────────────────────────────────────────────────────────*/
 /*  Force Avatar Theme tab-bar border & background when UNFOCUSED         */
@@ -1274,7 +1277,6 @@ body.is-unfocused .theme-dark .workspace-tabs {
   /* (optional) make tab text use your normal text color */
   color: var(--text-normal) !important;
 }
-
 
 /*─────────────────────────────────────────────────────────────────────────*/
 /*  1) Fully-round the left-sidebar collapse/expand toggle button        */
@@ -1331,21 +1333,20 @@ body.is-unfocused .theme-dark .workspace-tabs {
   border-bottom-left-radius: 0 !important;
 }
 
-
 /*─────────────────────────────────────────────────────────────────────────*/
 /*  □ Square off every left-side corner in Avatar Theme (Dark mode)       */
 /*─────────────────────────────────────────────────────────────────────────*/
 
 /* 1) The outer left-split container (removes its 12px curves)           */
 .theme-dark .workspace-split.mod-left-split {
-  border-top-left-radius:    0 !important;
+  border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
 
 /* 2) Any leaf panels inside that split (e.g. file explorer, etc.)       */
 .theme-dark .workspace-split.mod-left-split .workspace-leaf,
 .theme-dark .workspace-split.mod-left-split .workspace-leaf-content {
-  border-top-left-radius:    0 !important;
+  border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
 
@@ -1356,7 +1357,7 @@ body.is-unfocused .theme-dark .workspace-tabs {
 
 /* 4) The vault-profile area at the bottom of the side dock              */
 .theme-dark .workspace-sidedock-vault-profile {
-  border-top-left-radius:    0 !important;
+  border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
 
@@ -1376,8 +1377,6 @@ body.is-unfocused .theme-dark .workspace-tabs {
   color: var(--avatar-gold) !important;
 }
 
-
-
 /*
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                       END AVATAR THEME - DEEP OCEAN                         ║
@@ -1386,4 +1385,3 @@ body.is-unfocused .theme-dark .workspace-tabs {
 ║  This theme is completely standalone and doesn't require any dependencies   ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 */
-

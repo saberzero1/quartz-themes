@@ -5,8 +5,5 @@
   "author": "Lukas Bach",
   "authorUrl": "https://lukasbach.com",
   "fundingUrl": "https://github.com/lukasbach/.github/blob/main/funding.md",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

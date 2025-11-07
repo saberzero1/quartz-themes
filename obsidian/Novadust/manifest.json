@@ -4,8 +4,5 @@
   "minAppVersion": "0.15.0",
   "author": "marta.stl",
   "authorUrl": "https://github.com/mmartamg",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

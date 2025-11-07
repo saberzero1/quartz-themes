@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Hung-Su",
   "authorUrl": "https://github.com/hungsu/",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

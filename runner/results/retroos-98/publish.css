@@ -277,8 +277,7 @@ body.theme-light {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --file-header-font: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -293,16 +292,14 @@ body.theme-light {
   --font-default: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --font-interface: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --font-mermaid: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -312,13 +309,13 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
+  --font-print: "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --font-text: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -515,8 +512,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: transparent !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --metadata-input-font: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -524,8 +520,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: transparent !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
+  --metadata-label-font: "Win95Font", "Inter", "Rubik", "Segoe UI" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #5c5c5c !important;
   --metadata-label-text-color-hover: #5c5c5c !important;
@@ -1066,8 +1061,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --file-header-font: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1082,14 +1076,14 @@ body.theme-dark {
   --font-default: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --font-interface: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --font-mermaid: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-monospace-default:
@@ -1099,13 +1093,13 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "??", "??", "??", "Arial";
+  --font-print: "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --font-text: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1302,8 +1296,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: transparent;
   --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --metadata-input-font: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1311,8 +1304,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: transparent;
   --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    "??", "??", "??", "Win95Font", "Inter", "Rubik", "Segoe UI";
+  --metadata-label-font: "Win95Font", "Inter", "Rubik", "Segoe UI";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #b3b3b3;
   --metadata-label-text-color-hover: #b3b3b3;
