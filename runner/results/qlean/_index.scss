@@ -4246,10 +4246,13 @@ body {
     div#quartz-root.page:not(:has(.sidebar:hover)) {
       background-color: transparent;
       transition: background-color 0.2s;
+      .sidebar {
+        opacity: 0 !important;
+        transition: opacity 0.2s;
+      }
     }
-    .sidebar {
-      opacity: 0 !important;
-      &:hover {
+    div#quartz-root.page:has(.sidebar:hover)) {
+      .sidebar {
         opacity: 1 !important;
         transition: opacity 0.2s;
       }
