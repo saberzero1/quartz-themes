@@ -285,7 +285,8 @@ body {
     user-select: text;
   }
 
-  a.internal {
+  a.internal,
+  .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(26, 26, 26), rgb(204, 204, 204));
     cursor: pointer;

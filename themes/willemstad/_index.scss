@@ -9568,7 +9568,8 @@ body {
     user-select: text;
   }
 
-  a.internal {
+  a.internal,
+  .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0.4014 0.0638 202.51), oklch(0.707 0.1737 155.3));
     cursor: pointer;
