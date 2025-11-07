@@ -5,8 +5,5 @@
   "author": "Rohit Saluja",
   "authorUrl": "https://www.rohit04saluja.com",
   "fundingUrl": "https://buymecoffee.rohit04saluja.com",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

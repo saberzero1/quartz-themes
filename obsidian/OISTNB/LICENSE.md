@@ -1,4 +1,3 @@
-
 # The "Orange Is The New Black" Obsidian Theme License
 
 ## (aka The Penal Code of Productivity)
@@ -24,11 +23,11 @@ This theme comes with absolutely no warranty. It's like expecting gourmet cuisin
 ### Section 3: Limitation of Liability
 
 The creators of this theme are not responsible for:
-   a) Eyestrain
-   b) Carpal tunnel syndrome
-   c) Existential dread
-   d) Sudden urges to organize your sock drawer by color and thread count
-   e) The inevitable heat death of the universe
+a) Eyestrain
+b) Carpal tunnel syndrome
+c) Existential dread
+d) Sudden urges to organize your sock drawer by color and thread count
+e) The inevitable heat death of the universe
 , [2024]
 
 ### Preamble: Welcome to Your Life Sentence

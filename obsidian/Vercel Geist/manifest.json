@@ -5,8 +5,5 @@
   "description": "A clean, modern Obsidian theme inspired by Vercel's design system with dark and light modes",
   "author": "en3sis",
   "authorUrl": "https://github.com/en3sis",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -251,9 +251,9 @@ body.theme-light {
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid rgb(228, 215, 195) !important;
   --file-header-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -272,19 +272,19 @@ body.theme-light {
   --font-extrabold: 850 !important;
   --font-extralight: 250 !important;
   --font-interface:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "Inter" !important;
   --font-light: 350 !important;
   --font-medium: 550 !important;
   --font-mermaid:
-    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -294,14 +294,14 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "Cascadia Code" !important;
   --font-normal: 450 !important;
-  --font-print: "??", "??", "Inter", "Arial" !important;
+  --font-print: "Inter", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 650 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
@@ -521,9 +521,9 @@ body.theme-light {
   --metadata-input-background-active: rgba(255, 255, 255, 0.45) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -532,9 +532,9 @@ body.theme-light {
   --metadata-label-background-active: rgba(255, 255, 255, 0.45) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: rgb(131, 107, 73) !important;
   --metadata-label-text-color-hover: rgb(131, 107, 73) !important;
@@ -1475,18 +1475,6 @@ body.theme-light {
   --flair-count-color: rgb(183, 157, 123) !important;
   --flair-count-padding: 2px 4px !important;
   --flair-count-radius: 5px !important;
-  --font-blockid-size:  !important;
-  --font-blockquote-size:  !important;
-  --font-callout-size:  !important;
-  --font-callout-title-size:  !important;
-  --font-codeblock-btn-size:  !important;
-  --font-codeblock-size:  !important;
-  --font-footnotes-flag-size:  !important;
-  --font-footnotes-size:  !important;
-  --font-footnotes-title-size:  !important;
-  --font-inlinecode-size:  !important;
-  --font-nav-item-size:  !important;
-  --font-tree-item-size:  !important;
   --graph-node-highlight-fill: rgb(157, 128, 98) !important;
   --graph-node-highlight-line: rgb(207, 182, 150) !important;
   --graph-node-unresolved-opacity: 1 !important;
@@ -2433,9 +2421,9 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid rgb(59, 48, 38);
   --file-header-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -2454,19 +2442,19 @@ body.theme-dark {
   --font-extrabold: 850;
   --font-extralight: 250;
   --font-interface:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "Inter";
   --font-light: 350;
   --font-medium: 550;
   --font-mermaid:
-    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -2476,14 +2464,14 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "Cascadia Code";
   --font-normal: 450;
-  --font-print: "??", "??", "Inter", "Arial";
+  --font-print: "Inter", "Arial";
   --font-print-override: "??";
   --font-semibold: 650;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
@@ -2699,9 +2687,9 @@ body.theme-dark {
   --metadata-input-background-active: rgba(0, 0, 0, 0.2);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -2710,9 +2698,9 @@ body.theme-dark {
   --metadata-label-background-active: rgba(0, 0, 0, 0.2);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgb(171, 145, 109);
   --metadata-label-text-color-hover: rgb(171, 145, 109);
@@ -3686,18 +3674,6 @@ body.theme-dark {
   --flair-count-color: rgb(107, 86, 61);
   --flair-count-padding: 2px 4px;
   --flair-count-radius: 5px;
-  --font-blockid-size: ;
-  --font-blockquote-size: ;
-  --font-callout-size: ;
-  --font-callout-title-size: ;
-  --font-codeblock-btn-size: ;
-  --font-codeblock-size: ;
-  --font-footnotes-flag-size: ;
-  --font-footnotes-size: ;
-  --font-footnotes-title-size: ;
-  --font-inlinecode-size: ;
-  --font-nav-item-size: ;
-  --font-tree-item-size: ;
   --graph-node-highlight-fill: rgb(199, 177, 148);
   --graph-node-highlight-line: rgb(107, 86, 61);
   --graph-node-unresolved-opacity: 1;

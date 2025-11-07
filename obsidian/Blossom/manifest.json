@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "BlossomTheme",
   "authorUrl": "https://blossomtheme.github.io",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

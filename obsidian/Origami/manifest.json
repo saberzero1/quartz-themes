@@ -3,8 +3,5 @@
   "version": "2.0.0.1",
   "minAppVersion": "1.0.0",
   "author": "kneecaps",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

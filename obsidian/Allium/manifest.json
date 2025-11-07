@@ -3,8 +3,5 @@
   "version": "2.0.7",
   "minAppVersion": "1.1.8",
   "author": "Xainapse",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

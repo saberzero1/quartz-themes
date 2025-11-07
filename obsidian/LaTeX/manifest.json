@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Ben Finch",
   "authorUrl": "https://phooey.foo",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

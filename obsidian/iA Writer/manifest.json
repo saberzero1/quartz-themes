@@ -5,8 +5,5 @@
   "author": "mrowa44",
   "fundingUrl": "https://www.buymeacoffee.com/mrowa44",
   "authorUrl": "http://github.com/mrowa44",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

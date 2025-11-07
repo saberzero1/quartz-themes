@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "codeisconfusing",
   "authorUrl": "https://github.com/codeisconfusing",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

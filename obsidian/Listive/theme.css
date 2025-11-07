@@ -1423,9 +1423,9 @@ li [alt*="list-embed"].internal-embed.is-loaded.markdown-embed.markdown-embed {
 :is(.list-embed-global :not(.popover))
   :is(.markdown-embed:hover, .file-embed:hover),
 :is([alt*="list-embed"].internal-embed):is(
-    .markdown-embed:hover,
-    .file-embed:hover
-  ) {
+  .markdown-embed:hover,
+  .file-embed:hover
+) {
   background-color: var(--background-secondary);
 }
 

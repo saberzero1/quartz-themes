@@ -249,10 +249,10 @@ body.theme-light {
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -271,10 +271,10 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
@@ -282,12 +282,12 @@ body.theme-light {
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
@@ -301,15 +301,15 @@ body.theme-light {
     "DejaVu Sans Mono", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    "??", "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic",
-    source-sans-pro, sans-serif, "Arial" !important;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933rem !important;
   --font-smaller: 0.875rem !important;
   --font-smallest: 0.8rem !important;
   --font-text:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
@@ -518,10 +518,10 @@ body.theme-light {
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875rem !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -532,10 +532,10 @@ body.theme-light {
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875rem !important;
   --metadata-label-text-color: rgb(141, 123, 183) !important;
   --metadata-label-text-color-hover: rgb(141, 123, 183) !important;
@@ -858,7 +858,6 @@ body.theme-light {
   --h5-color: rgb(138, 92, 245) !important;
   --h6-color: rgb(138, 92, 245) !important;
   --inline-title-color: rgb(138, 92, 245) !important;
-  --blockquote-color:  !important;
   --table-header-background-hover: rgb(138, 92, 245) !important;
   --accent-color: rgb(138, 92, 245) !important;
   --accent-rgb: from rgb(138, 92, 245) r g b !important;
@@ -1107,10 +1106,10 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1129,10 +1128,10 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
@@ -1140,12 +1139,12 @@ body.theme-dark {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
@@ -1159,15 +1158,15 @@ body.theme-dark {
     "DejaVu Sans Mono", monospace;
   --font-normal: 400;
   --font-print:
-    "??", "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic",
-    source-sans-pro, sans-serif, "Arial";
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933rem;
   --font-smaller: 0.875rem;
   --font-smallest: 0.8rem;
   --font-text:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
@@ -1370,10 +1369,10 @@ body.theme-dark {
   --metadata-input-background-active: rgba(from rgb(138, 92, 245) r g b / 0.2);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875rem;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1382,10 +1381,10 @@ body.theme-dark {
   --metadata-label-background-active: rgba(from rgb(138, 92, 245) r g b / 0.2);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875rem;
   --metadata-label-text-color: rgb(113, 91, 164);
   --metadata-label-text-color-hover: rgb(113, 91, 164);
@@ -1696,7 +1695,6 @@ body.theme-dark {
   --h5-color: rgb(138, 92, 245);
   --h6-color: rgb(138, 92, 245);
   --inline-title-color: rgb(138, 92, 245);
-  --blockquote-color: ;
   --table-header-background-hover: rgb(138, 92, 245);
   --accent-color: rgb(138, 92, 245);
   --accent-rgb: from rgb(138, 92, 245) r g b;

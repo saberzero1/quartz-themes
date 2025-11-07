@@ -2145,14 +2145,14 @@ body:not(.no-cardboard) {
   content: " 🐳";
 }
 .setting-item:is(
-    [data-id="theme-colors"],
-    [data-id="editor-colors"],
-    [data-id="options"],
-    [data-id="plugins"],
-    [data-id="settings"],
-    [data-id="bg-image"],
-    [data-id="headings-color"]
-  ) {
+  [data-id="theme-colors"],
+  [data-id="editor-colors"],
+  [data-id="options"],
+  [data-id="plugins"],
+  [data-id="settings"],
+  [data-id="bg-image"],
+  [data-id="headings-color"]
+) {
   background-color: var(--base);
   padding: 2px 25px;
   border-radius: 5px;

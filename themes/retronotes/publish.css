@@ -279,8 +279,8 @@ body.theme-light {
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
@@ -300,8 +300,8 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "IBM Plex Mono", "Consolas", monospace !important;
@@ -313,7 +313,7 @@ body.theme-light {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    "??", "IBM Plex Mono", "Consolas", monospace, ui-monospace, SFMono-Regular,
+    "IBM Plex Mono", "Consolas", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -324,7 +324,7 @@ body.theme-light {
   --font-monospace-theme: "IBM Plex Mono", "Consolas", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
+    "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
     monospace, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
@@ -533,8 +533,8 @@ body.theme-light {
   --metadata-input-background-active: #802d44 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
@@ -544,8 +544,8 @@ body.theme-light {
   --metadata-label-background-active: #e5d7b4 !important;
   --metadata-label-background-hover: #e5d7b4 !important;
   --metadata-label-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #163259 !important;
@@ -1151,8 +1151,8 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
   --file-header-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
@@ -1172,8 +1172,8 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "IBM Plex Mono", "Consolas", monospace;
@@ -1185,7 +1185,7 @@ body.theme-dark {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-monospace:
-    "??", "IBM Plex Mono", "Consolas", monospace, ui-monospace, SFMono-Regular,
+    "IBM Plex Mono", "Consolas", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -1196,7 +1196,7 @@ body.theme-dark {
   --font-monospace-theme: "IBM Plex Mono", "Consolas", monospace;
   --font-normal: 400;
   --font-print:
-    "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
+    "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
     monospace, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
@@ -1405,8 +1405,8 @@ body.theme-dark {
   --metadata-input-background-active: #6c0012;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
@@ -1416,8 +1416,8 @@ body.theme-dark {
   --metadata-label-background-active: #333333;
   --metadata-label-background-hover: #333333;
   --metadata-label-font:
-    "??", "IBM Plex Mono", "Consolas", monospace, "??", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "IBM Plex Mono", "Consolas", monospace, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: #fffefb;

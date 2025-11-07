@@ -3333,12 +3333,12 @@ ribbon styles
 /* ========================================================================== */
 
 button:not(
-    .clickable-icon,
-    .canvas-controls button,
-    .mk-inline-button,
-    .mk-tree-wrapper button,
-    .mk-view-selector button
-  ) {
+  .clickable-icon,
+  .canvas-controls button,
+  .mk-inline-button,
+  .mk-tree-wrapper button,
+  .mk-view-selector button
+) {
   background-color: var(--background-secondary);
   color: var(--text-normal);
   border: var(--bb-border-alt);
@@ -3372,8 +3372,8 @@ button:not(
 }
 
 .clickable-icon:not(
-    .workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon
-  ) {
+  .workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon
+) {
   border: 1px solid transparent;
   transition: 700ms;
   color: var(--text-normal);

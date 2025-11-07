@@ -5,8 +5,5 @@
   "author": "@kepano",
   "authorUrl": "https://twitter.com/kepano",
   "fundingUrl": "https://www.buymeacoffee.com/kepano",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

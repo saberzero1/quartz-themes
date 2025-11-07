@@ -2556,8 +2556,8 @@ body .another-quick-switcher__status__count-input {
   right: 1rem;
 }
 .another-quick-switcher__item__title:not(
-    .another-quick-switcher__item__title__header_hit
-  ) {
+  .another-quick-switcher__item__title__header_hit
+) {
   font-weight: 500;
 }
 .another-quick-switcher__status__search-command {

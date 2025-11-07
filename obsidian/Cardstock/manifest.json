@@ -4,8 +4,5 @@
   "minAppVersion": "0.8.0",
   "author": "cassidoo",
   "authorUrl": "https://github.com/cassidoo",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

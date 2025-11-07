@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "PedroHenrique17",
   "authorUrl": "https://github.com/PedroHenrique17",
-  "license": {
-    "name": "The Unlicense",
-    "spdx_id": "Unlicense"
-  }
+  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
 }

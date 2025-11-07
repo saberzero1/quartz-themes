@@ -4,8 +4,5 @@
   "minAppVersion": "1.8.0",
   "author": "ddspog",
   "authorUrl": "https://github.com/ddspog",
-  "license": {
-    "name": "The Unlicense",
-    "spdx_id": "Unlicense"
-  }
+  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
 }

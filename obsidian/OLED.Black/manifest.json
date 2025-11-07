@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.1",
   "author": "Inc44",
   "authorUrl": "https://github.com/Inc44",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -1819,12 +1819,12 @@ settings:
   background-color: var(--interactive-normal);
 }
 :is(
-    .style-settings-import,
-    .style-settings-export,
-    .style-settings-copy,
-    .style-settings-download,
-    .style-settings-import-label
-  ):hover {
+  .style-settings-import,
+  .style-settings-export,
+  .style-settings-copy,
+  .style-settings-download,
+  .style-settings-import-label
+):hover {
   box-shadow: var(--input-shadow-hover);
   background-color: var(--interactive-hover);
 }
@@ -2111,9 +2111,9 @@ body:not(.is-mobile)
   transition: var(--animation);
 }
 :is(
-    .style-settings-heading[data-level="0"] + .style-settings-container,
-    .style-settings-container
-  ):hover {
+  .style-settings-heading[data-level="0"] + .style-settings-container,
+  .style-settings-container
+):hover {
   border-left-color: var(--accent-active);
 }
 
@@ -3276,13 +3276,13 @@ body:is(:not(.css-settings-manager), .code-language)
   :is(.markdown-rendered, .markdown-source-view.mod-cm6)
   :is(
     .token:is(
-        .tag,
-        .constant,
-        .symbol,
-        .deleted,
-        .class-name,
-        .maybe-class-name
-      ),
+      .tag,
+      .constant,
+      .symbol,
+      .deleted,
+      .class-name,
+      .maybe-class-name
+    ),
     .cm-tag,
     .cm-operator
   ) {
@@ -3313,13 +3313,13 @@ body:is(:not(.css-settings-manager), .code-language)
   :is(.markdown-rendered, .markdown-source-view.mod-cm6)
   :is(
     .token:is(
-        .entity,
-        .parameter,
-        .property,
-        .property-access,
-        .url,
-        .variable
-      ),
+      .entity,
+      .parameter,
+      .property,
+      .property-access,
+      .url,
+      .variable
+    ),
     :is(.language-css, .style) .token.string,
     .cm-def,
     .cm-number + .cm-variable
@@ -6528,9 +6528,9 @@ body.modal-toggle-round .checkbox-container::after {
   box-shadow: 0 4px 2px 0 var(--toggle-shadow);
 }
 :is(
-    body.modal-toggle-round .checkbox-container:hover,
-    body.modal-toggle-round .checkbox-container:focus
-  )::after {
+  body.modal-toggle-round .checkbox-container:hover,
+  body.modal-toggle-round .checkbox-container:focus
+)::after {
   bottom: 10%;
   box-shadow: 0 2px 2px 0 var(--toggle-shadow);
 }
@@ -7598,15 +7598,15 @@ body.titlebar-button-style.is-maximized .mod-maximize svg {
     )
     svg,
   svg:is(
-      .excalidraw-icon,
-      .spreadsheet,
-      [class*="lucide-folder"],
-      .lucide-sticky-note,
-      .lucide-image,
-      .lucide-file,
-      .lucide-copy,
-      .database-folder-icon
-    )
+    .excalidraw-icon,
+    .spreadsheet,
+    [class*="lucide-folder"],
+    .lucide-sticky-note,
+    .lucide-image,
+    .lucide-file,
+    .lucide-copy,
+    .database-folder-icon
+  )
 ) {
   background-color: currentColor;
   -webkit-mask-size: 100% 100%;
@@ -7621,15 +7621,15 @@ body.titlebar-button-style.is-maximized .mod-maximize svg {
       )
       svg,
     svg:is(
-        .excalidraw-icon,
-        .spreadsheet,
-        [class*="lucide-folder"],
-        .lucide-sticky-note,
-        .lucide-image,
-        .lucide-file,
-        .lucide-copy,
-        .database-folder-icon
-      )
+      .excalidraw-icon,
+      .spreadsheet,
+      [class*="lucide-folder"],
+      .lucide-sticky-note,
+      .lucide-image,
+      .lucide-file,
+      .lucide-copy,
+      .database-folder-icon
+    )
   )
   path {
   display: none;
@@ -7640,14 +7640,14 @@ body.titlebar-button-style.is-maximized .mod-maximize svg {
 }
 
 :where(
-    body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title,
-    body.link-icon
-      :is(
-        :is(.markdown-source-view, .markdown-preview-view)
-          a.internal-link:not(.is-unresolved),
-        .cm-hmd-internal-link .cm-underline
-      )
-  )::before {
+  body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title,
+  body.link-icon
+    :is(
+      :is(.markdown-source-view, .markdown-preview-view)
+        a.internal-link:not(.is-unresolved),
+      .cm-hmd-internal-link .cm-underline
+    )
+)::before {
   -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M14 2v6h6m-4 5H8m8 4H8m2-8H8"/></g></svg> ');
 }
 
@@ -8512,9 +8512,9 @@ body:is(:not(.css-settings-manager), .explorer-icon)
   transform: translateY(-50%);
 }
 :is(
-    body.explorer-nav-decoration .nav-file-title,
-    body.setting-nav-decoration .vertical-tab-nav-item
-  )::after {
+  body.explorer-nav-decoration .nav-file-title,
+  body.setting-nav-decoration .vertical-tab-nav-item
+)::after {
   content: "";
   position: absolute;
   right: 4px;

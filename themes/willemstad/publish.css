@@ -12558,8 +12558,8 @@ body.theme-light {
   --file-folding-offset: 24px !important;
   --file-header-border: 0px !important;
   --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -12578,14 +12578,14 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope" !important;
-  --font-monospace: "??", "DM Mono", "DM Mono" !important;
+  --font-monospace: "DM Mono", "DM Mono" !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -12594,16 +12594,16 @@ body.theme-light {
   --font-monospace-theme: "DM Mono" !important;
   --font-normal: 400 !important;
   --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
+    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1",
+    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1",
+    "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
@@ -12795,8 +12795,8 @@ body.theme-light {
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -12805,8 +12805,8 @@ body.theme-light {
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(0.3 0 0) !important;
   --metadata-label-text-color-hover: oklch(0.3 0 0) !important;
@@ -13822,8 +13822,8 @@ body.theme-dark {
   --file-folding-offset: 24px;
   --file-header-border: 0px;
   --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope";
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -13842,14 +13842,14 @@ body.theme-dark {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope";
   --font-interface-override: "??";
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope";
-  --font-monospace: "??", "DM Mono", "DM Mono";
+  --font-monospace: "DM Mono", "DM Mono";
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -13857,17 +13857,16 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "DM Mono";
   --font-normal: 400;
-  --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial";
+  --font-print: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
+    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1",
+    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1",
+    "DM Sans", "Inter 4.1", "Manrope";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
@@ -14057,8 +14056,8 @@ body.theme-dark {
   --metadata-input-background-active: rgba(255, 255, 255, 0.067);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -14067,8 +14066,8 @@ body.theme-dark {
   --metadata-label-background-active: rgba(255, 255, 255, 0.067);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope";
+    "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+    "Manrope";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: oklch(0.68 0 0);
   --metadata-label-text-color-hover: oklch(0.68 0 0);
