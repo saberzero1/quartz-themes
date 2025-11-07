@@ -1960,6 +1960,8 @@ body {
       div.sidebar.left,
       div.sidebar.left:has(.explorer) {
         padding: 1rem 1.5rem 1rem 1rem;
+        width: 100%;
+        max-width: 100%;
       }
       div.sidebar.right,
       footer {
