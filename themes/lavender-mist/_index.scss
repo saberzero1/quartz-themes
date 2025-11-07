@@ -3903,16 +3903,18 @@ body {
     .sidebar.left,
     .sidebar.right {
       opacity: 1 !important;
-      background-color: transparent;
-      border-color: transparent;
+      background-color: transparent !important;
+      border-color: transparent !important;
       & > * {
         opacity: 0 !important;
-        transition: opacity background-color 0.2s;
+        transition: opacity 0.2s;
+      }
+      &:hover {
+        background-color: revert-layer !imporant;
+        border-color: revert-layer !imporant;
       }
       &:hover > * {
         opacity: 1 !important;
-        background-color: revert-layer;
-        border-color: revert-layer;
       }
     }
   }
