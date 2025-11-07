@@ -120,7 +120,7 @@ body {
   }
 
   &[data-slug],
-  &[data-slug] div#quartz-root.page,
+  &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: rgb(26, 27, 36);
@@ -132,16 +132,20 @@ body {
     color: rgb(187, 192, 197);
   }
 
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: rgb(26, 27, 36);
     color: rgb(187, 192, 197);
-    border-right: 1px solid rgba(146, 161, 161, 0.5);
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: rgb(26, 27, 36);
     color: rgb(187, 192, 197);
     border-left: 1px solid rgba(146, 161, 161, 0.5);
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    border-right: 1px solid rgba(146, 161, 161, 0.5);
   }
 
   a.external,

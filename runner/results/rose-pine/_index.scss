@@ -355,7 +355,7 @@ body {
   }
 
   &[data-slug],
-  &[data-slug] div#quartz-root.page,
+  &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(250, 244, 237), rgb(25, 23, 36));
@@ -367,16 +367,20 @@ body {
     color: light-dark(rgb(87, 82, 121), rgb(224, 222, 244));
   }
 
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(rgb(255, 250, 243), rgb(31, 29, 46));
     color: light-dark(rgb(87, 82, 121), rgb(224, 222, 244));
-    border-right: 1px solid light-dark(rgb(242, 233, 225), rgb(38, 35, 58));
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(255, 250, 243), rgb(31, 29, 46));
     color: light-dark(rgb(87, 82, 121), rgb(224, 222, 244));
     border-left: 1px solid light-dark(rgb(242, 233, 225), rgb(38, 35, 58));
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    border-right: 1px solid light-dark(rgb(242, 233, 225), rgb(38, 35, 58));
   }
 
   a.external,
