@@ -498,6 +498,7 @@ body {
   }
 
   &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(
@@ -521,13 +522,17 @@ body {
     );
   }
 
-  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
     );
+    border-right: 0px solid
+      light-dark(
+        color(srgb 0.361375 0.549813 0.813625),
+        color(srgb 0.111375 0.299813 0.563625)
+      );
   }
 
   .page > div#quartz-body div.sidebar.right {
@@ -537,14 +542,6 @@ body {
       color(srgb 0.6594 0.7599 0.9006)
     );
     border-left: 0px solid
-      light-dark(
-        color(srgb 0.361375 0.549813 0.813625),
-        color(srgb 0.111375 0.299813 0.563625)
-      );
-  }
-
-  .page > div#quartz-body div.sidebar.left {
-    border-right: 0px solid
       light-dark(
         color(srgb 0.361375 0.549813 0.813625),
         color(srgb 0.111375 0.299813 0.563625)
