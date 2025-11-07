@@ -360,11 +360,6 @@ body {
     --quartz-icon-color: inherit;
   }
 
-  &[data-slug] {
-    background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14)) !important;
-    color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252)) !important;
-  }
-
   div#quartz-root {
     background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
     color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
@@ -381,16 +376,20 @@ body {
     color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
   }
 
+  &[data-slug],
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
     color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
-    border-right: 4px solid rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(251, 252, 252), rgb(8, 9, 14));
     color: light-dark(rgb(8, 9, 14), rgb(251, 252, 252));
     border-left: 4px solid rgba(0, 0, 0, 0);
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    border-right: 4px solid rgba(0, 0, 0, 0);
   }
 
   a.external,

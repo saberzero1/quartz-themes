@@ -1406,13 +1406,13 @@ export const config = [
     pseudoElement: "",
     properties: ["--quartz-icon-color"],
   },
-  {
-    obsidianSelector: `div.mod-root.mod-vertical.workspace-split`,
-    publishSelector: null,
-    quartzSelector: "&[data-slug]",
-    pseudoElement: "",
-    properties: ["background-color", "color"],
-  },
+  // {
+  //   obsidianSelector: `div.mod-root.mod-vertical.workspace-split`,
+  //   publishSelector: null,
+  //   quartzSelector: "&[data-slug]",
+  //   pseudoElement: "",
+  //   properties: ["background-color", "color"],
+  // },
   {
     obsidianSelector: `body`,
     publishSelector: null,
@@ -1440,7 +1440,7 @@ export const config = [
   {
     obsidianSelector: `div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split`,
     publishSelector: null, //TODO
-    quartzSelector: ".page > div#quartz-body div.sidebar.left",
+    quartzSelector: "&[data-slug], .page > div#quartz-body div.sidebar.left",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },

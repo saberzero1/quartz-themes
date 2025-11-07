@@ -262,11 +262,6 @@ body {
     --quartz-icon-color: inherit;
   }
 
-  &[data-slug] {
-    background-color: rgb(43, 47, 58);
-    color: rgb(229, 231, 235);
-  }
-
   div#quartz-root {
     background-color: rgb(43, 47, 58);
     color: rgb(229, 231, 235);
@@ -283,16 +278,20 @@ body {
     color: rgb(229, 231, 235);
   }
 
+  &[data-slug],
   .page > div#quartz-body div.sidebar.left {
     background-color: rgb(58, 63, 76);
     color: rgb(229, 231, 235);
-    border-right: 1px solid rgb(54, 54, 54);
   }
 
   .page > div#quartz-body div.sidebar.right {
     background-color: rgb(58, 63, 76);
     color: rgb(229, 231, 235);
     border-left: 1px solid rgb(54, 54, 54);
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    border-right: 1px solid rgb(54, 54, 54);
   }
 
   a.external,
