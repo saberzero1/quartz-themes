@@ -373,7 +373,7 @@ body {
     color: light-dark(oklch(0.2825 0.0005 281), oklch(0.875 0.00375 275));
   }
 
-  &[data-slug] div#quartz-root.page,
+  &[data-slug],
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(
@@ -391,7 +391,7 @@ body {
     color: light-dark(oklch(0.2825 0.0005 281), oklch(0.875 0.00375 275));
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0.2825 0.0005 281), oklch(0.875 0.00375 275));

@@ -354,7 +354,7 @@ body {
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
   }
 
-  &[data-slug] div#quartz-root.page,
+  &[data-slug],
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(246, 249, 251), rgb(14, 22, 27));
@@ -366,7 +366,7 @@ body {
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(rgb(239, 243, 246), rgb(7, 11, 13));
     color: light-dark(rgb(20, 31, 37), rgb(189, 209, 219));
