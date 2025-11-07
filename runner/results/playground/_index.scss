@@ -152,7 +152,7 @@ body {
     color: oklch(0.92 0.004 279.29);
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: oklch(0.135 0.01 279.29);

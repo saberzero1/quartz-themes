@@ -354,7 +354,7 @@ body {
     color: light-dark(rgb(55, 38, 34), rgb(163, 165, 170));
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(245, 237, 227), rgb(17, 15, 16));

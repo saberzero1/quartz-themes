@@ -332,7 +332,7 @@ body {
     );
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(228, 228, 228), rgb(22, 22, 22));
