@@ -1694,13 +1694,9 @@ body {
   @media all and ($desktop) {
     div#quartz-root.page {
       /* workaround for reader-mode */
-      width: 100%;
-      max-width: 100%;
-      padding: 0
-        max(
-          0px,
-          calc((100dvw - (#{map.get($breakpoints, desktop)} + 300px)) / 2)
-        );
+      width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+      max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+      padding: 0 auto;
     }
     .page > #quartz-body {
       div.center,
