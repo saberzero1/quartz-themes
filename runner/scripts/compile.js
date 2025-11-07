@@ -716,7 +716,7 @@ body {
       /* workaround for reader-mode */
       width: 100%;
       max-width: 100%;
-      padding: 0 max(0px, calc((100% - (#{map.get($breakpoints, desktop)} + 300px)) / 2));
+      padding: 0 max(0px, calc(100dvw - (#{map.get($breakpoints, desktop)} + 300px) / 2));
     }
     .page > #quartz-body {
       div.center,
