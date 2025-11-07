@@ -1,873 +1,935 @@
 /* Presets */
 /* Poltchageist */
 body.preset-poltchageist {
-    --accent-h: 114;
-    --accent-s: 30%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(30, 14%, 80%);
-    --grotto-day-2: hsl(30, 14%, 70%);
-    --grotto-night-0: hsl(60, 10%, 8%);
-    --grotto-night-1: hsl(60, 10%, 12%);
-    --grotto-night-2: hsl(60, 10%, 24%);
-    --grotto-night-3: hsl(60, 10%, 32%);
-    --grotto-accent-1: hsl(114, 30%, 50%);
+  --accent-h: 114;
+  --accent-s: 30%;
+  --accent-l: 50%;
+  --grotto-day-1: hsl(30, 14%, 80%);
+  --grotto-day-2: hsl(30, 14%, 70%);
+  --grotto-night-0: hsl(60, 10%, 8%);
+  --grotto-night-1: hsl(60, 10%, 12%);
+  --grotto-night-2: hsl(60, 10%, 24%);
+  --grotto-night-3: hsl(60, 10%, 32%);
+  --grotto-accent-1: hsl(114, 30%, 50%);
 }
 
 /* Volcarona */
 body.preset-volcarona {
-    --accent-h: 27;
-    --accent-s: 85%;
-    --accent-l: 52%;
-    --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(187, 45%, 71%);
-    --grotto-night-0: hsl(194, 60%, 18%);
-    --grotto-night-1: hsl(194, 60%, 24%);
-    --grotto-night-2: hsl(194, 60%, 32%);
-    --grotto-night-3: hsl(194, 60%, 44%);
-    --grotto-accent-1: hsl(27, 85%, 52%);
+  --accent-h: 27;
+  --accent-s: 85%;
+  --accent-l: 52%;
+  --grotto-day-1: hsl(0, 0%, 90%);
+  --grotto-day-2: hsl(187, 45%, 71%);
+  --grotto-night-0: hsl(194, 60%, 18%);
+  --grotto-night-1: hsl(194, 60%, 24%);
+  --grotto-night-2: hsl(194, 60%, 32%);
+  --grotto-night-3: hsl(194, 60%, 44%);
+  --grotto-accent-1: hsl(27, 85%, 52%);
 }
 
 /* Darkrai */
 body.preset-darkrai {
-    --accent-h: 5;
-    --accent-s: 79%;
-    --accent-l: 53%;
-    --grotto-day-1: hsl(212, 0%, 90%);
-    --grotto-day-2: hsl(212, 0%, 80%);
-    --grotto-night-0: hsl(0, 0%, 14%);
-    --grotto-night-1: hsl(0, 0%, 19%);
-    --grotto-night-2: hsl(0, 0%, 25%);
-    --grotto-night-3: hsl(0, 0%, 40%);
-    --grotto-accent-1: hsl(5, 79%, 53%);
+  --accent-h: 5;
+  --accent-s: 79%;
+  --accent-l: 53%;
+  --grotto-day-1: hsl(212, 0%, 90%);
+  --grotto-day-2: hsl(212, 0%, 80%);
+  --grotto-night-0: hsl(0, 0%, 14%);
+  --grotto-night-1: hsl(0, 0%, 19%);
+  --grotto-night-2: hsl(0, 0%, 25%);
+  --grotto-night-3: hsl(0, 0%, 40%);
+  --grotto-accent-1: hsl(5, 79%, 53%);
 }
 
 /* Clobbopus*/
-body, body.preset-clobbopus {
-    --accent-h: 16;
-    --accent-s: 82%;
-    --accent-l: 58%;
-    --grotto-day-1: hsl(33, 33%, 87%);
-    --grotto-day-2: hsl(33, 33%, 78%);
-    --grotto-night-0: hsl(240, 18%, 20%);
-    --grotto-night-1: hsl(240, 18%, 25%);
-    --grotto-night-2: hsl(240, 18%, 50%);
-    --grotto-night-3: hsl(240, 18%, 60%);
-    --grotto-accent-1: hsl(16, 82%, 58%);
+body,
+body.preset-clobbopus {
+  --accent-h: 16;
+  --accent-s: 82%;
+  --accent-l: 58%;
+  --grotto-day-1: hsl(33, 33%, 87%);
+  --grotto-day-2: hsl(33, 33%, 78%);
+  --grotto-night-0: hsl(240, 18%, 20%);
+  --grotto-night-1: hsl(240, 18%, 25%);
+  --grotto-night-2: hsl(240, 18%, 50%);
+  --grotto-night-3: hsl(240, 18%, 60%);
+  --grotto-accent-1: hsl(16, 82%, 58%);
 }
 .theme-light {
-    --background-primary: var(--grotto-day-1);
-    --background-primary-alt: var(--grotto-day-1);
-    --background-secondary: var(--grotto-night-1);
-    --background-secondary-alt: var(--grotto-night-1);
-    --text-normal: var(--grotto-night-1);
-    --text-muted: var(--grotto-night-3);
-    --text-faint: var(--grotto-night-3);
-    --grotto-item-hover: var(--grotto-day-2);
-    --code-background: var(--grotto-day-2);
-    --grotto-sidebar-text-color: var(--grotto-day-1);
-    --background-modifier-hover: transparent;
-    --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
+  --background-primary: var(--grotto-day-1);
+  --background-primary-alt: var(--grotto-day-1);
+  --background-secondary: var(--grotto-night-1);
+  --background-secondary-alt: var(--grotto-night-1);
+  --text-normal: var(--grotto-night-1);
+  --text-muted: var(--grotto-night-3);
+  --text-faint: var(--grotto-night-3);
+  --grotto-item-hover: var(--grotto-day-2);
+  --code-background: var(--grotto-day-2);
+  --grotto-sidebar-text-color: var(--grotto-day-1);
+  --background-modifier-hover: transparent;
+  --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
 }
-.theme-dark, .is-mobile.theme-dark {
-    --background-primary: var(--grotto-night-1);
-    --background-primary-alt: var(--grotto-night-1);
-    --background-secondary: var(--grotto-night-0);
-    --background-secondary-alt: var(--grotto-night-0);
-    --text-normal: var(--grotto-day-1);
-    --text-muted: var(--grotto-day-2);
-    --text-faint: var(--grotto-day-2);
-    --grotto-item-hover: var(--grotto-night-2);
-    --code-background: var(--grotto-night-2);
-    --grotto-sidebar-text-color: var(--grotto-day-1);
-    --background-modifier-hover: transparent;
-    --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
+.theme-dark,
+.is-mobile.theme-dark {
+  --background-primary: var(--grotto-night-1);
+  --background-primary-alt: var(--grotto-night-1);
+  --background-secondary: var(--grotto-night-0);
+  --background-secondary-alt: var(--grotto-night-0);
+  --text-normal: var(--grotto-day-1);
+  --text-muted: var(--grotto-day-2);
+  --text-faint: var(--grotto-day-2);
+  --grotto-item-hover: var(--grotto-night-2);
+  --code-background: var(--grotto-night-2);
+  --grotto-sidebar-text-color: var(--grotto-day-1);
+  --background-modifier-hover: transparent;
+  --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
 }
 body {
-    --grotto-tag-pointer-events: none;                          /* Plugin check*/
-    --grotto-image-border-color: transparent;                   /* Plugin */
-    --tag-radius: 0px;
-    --tag-padding-x: 0.4em;
-    --tag-padding-y: 0.2em;
-    --scrollbar-bg: var(--grotto-accent-1);
-    --scrollbar-thumb-bg: var(--grotto-accent-1);
-    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
-    --scrollbar-border-width: 0px;
-    --scrollbar-radius: 0px;
-    --scrollbar-width: 8px;
-    --blockquote-border-thickness: 2px;
-    --blockquote-border-color: var(--grotto-accent-1);          /* Plugin check*/
-    --blockquote-background-color: transparent;                 /* Plugin check*/
-    --embed-max-height: 4000px;                                 /* Plugin check*/
-    --p-spacing: 8px;
-    --checkbox-marker-color: transparent;
-    --checkbox-color: var(--grotto-accent-1);
-    --checkbox-color-hover: var(--grotto-accent-1);
-    font-weight: 400;                                           /* Plugin check*/
-    --table-background: var(--background-primary);              /* Plugin check*/
-    --table-border-width: 1px;
-    --table-border-color: var(--text-normal);
-    --table-header-background-hover: var(--table-background);
-    --table-text-color: var(--text-normal);
-    --table-add-button-border-color: var(--table-border-color);
-    --grotto-table-cell-width: max-content;                     /* Plugin check*/
-    --grotto-table-border-style: separate;                      /* Plugin check*/
-    --grotto-navbar-icon-color: var(--background-primary);      /* Plugin */
-    --grotto-navbar-background-color: var(--text-normal);       /* Plugin */
-    --grotto-toolbar-color: var(--background-primary);          /* Plugin */
-    --grotto-toolbar-background-color: var(--text-normal);      /* Plugin */
-    --grotto-toolbar-rows: 2;                                   /* Plugin check*/
-    --grotto-calendar-pointer-events: auto;                     /* Plugin */
-    --graph-line: var(--text-faint);
-    --graph-node-tag: var(--grotto-accent-1);
-    --vault-profile-color: var(--grotto-sidebar-text-color);
-    --border-width: 0px;
-    --divider-width: 0px;
-    --file-line-width: 100%;                                    /* Plugin check*/
-    --icon-xs-stroke-width: 1px;
-    --icon-s-stroke-width: 1px;
-    --icon-m-stroke-width: 1px;
-    --icon-l-stroke-width: 1px;
-    --icon-xl-stroke-width: 1px;
-    --input-radius: 0px;
-    --radius-s: 0px;
-    --radius-m: 0px;
-    --radius-l: 0px;
-    --radius-xl: 0px;
-    --tab-curve: 0px;
-    --nav-indentation-guide-width: 0px;
-    --metadata-property-radius: 0px;
-    --metadata-property-radius-hover: 0px;
-    --metadata-property-radius-focus: 0px;
-    --tab-outline-width: 0px;
-    --tab-radius-active: 0px;
-    --list-bullet-radius: 0px;
-    --grotto-system-status-color: var(--background-primary);    /* Plugin check*/
-    --graph-node-tag: var(--grotto-accent-1);
-    --list-marker-color: var(--text-normal);
-    --list-marker-color-hover: var(--text-faint);
-    --list-marker-color-collapsed: var(--text-muted);
-    --graph-text: var(--text-faint);
-    --graph-line: var(--grotto-night-2);
-    --graph-node: var(--grotto-night-0);
-    --graph-node-attachment: var(--grotto-item-hover);
-    --graph-node-unresolved: var(--grotto-day-2);
-    --graph-node-focused: var(--grotto-accent-1);
-    --graph-node-tag: var(--grotto-accent-1);
-    --slider-track-background: var(--grotto-accent-1);
-    --icon-color-hover: var(--grotto-accent-1);
-    --nav-item-color-hover: var(--grotto-sidebar-text-color);
-    --grotto-callout-icon: none;
-    --grotto-callout-background-color: var(--background-primary);
+  --grotto-tag-pointer-events: none; /* Plugin check*/
+  --grotto-image-border-color: transparent; /* Plugin */
+  --tag-radius: 0px;
+  --tag-padding-x: 0.4em;
+  --tag-padding-y: 0.2em;
+  --scrollbar-bg: var(--grotto-accent-1);
+  --scrollbar-thumb-bg: var(--grotto-accent-1);
+  --scrollbar-active-thumb-bg: var(--grotto-accent-1);
+  --scrollbar-border-width: 0px;
+  --scrollbar-radius: 0px;
+  --scrollbar-width: 8px;
+  --blockquote-border-thickness: 2px;
+  --blockquote-border-color: var(--grotto-accent-1); /* Plugin check*/
+  --blockquote-background-color: transparent; /* Plugin check*/
+  --embed-max-height: 4000px; /* Plugin check*/
+  --p-spacing: 8px;
+  --checkbox-marker-color: transparent;
+  --checkbox-color: var(--grotto-accent-1);
+  --checkbox-color-hover: var(--grotto-accent-1);
+  font-weight: 400; /* Plugin check*/
+  --table-background: var(--background-primary); /* Plugin check*/
+  --table-border-width: 1px;
+  --table-border-color: var(--text-normal);
+  --table-header-background-hover: var(--table-background);
+  --table-text-color: var(--text-normal);
+  --table-add-button-border-color: var(--table-border-color);
+  --grotto-table-cell-width: max-content; /* Plugin check*/
+  --grotto-table-border-style: separate; /* Plugin check*/
+  --grotto-navbar-icon-color: var(--background-primary); /* Plugin */
+  --grotto-navbar-background-color: var(--text-normal); /* Plugin */
+  --grotto-toolbar-color: var(--background-primary); /* Plugin */
+  --grotto-toolbar-background-color: var(--text-normal); /* Plugin */
+  --grotto-toolbar-rows: 2; /* Plugin check*/
+  --grotto-calendar-pointer-events: auto; /* Plugin */
+  --graph-line: var(--text-faint);
+  --graph-node-tag: var(--grotto-accent-1);
+  --vault-profile-color: var(--grotto-sidebar-text-color);
+  --border-width: 0px;
+  --divider-width: 0px;
+  --file-line-width: 100%; /* Plugin check*/
+  --icon-xs-stroke-width: 1px;
+  --icon-s-stroke-width: 1px;
+  --icon-m-stroke-width: 1px;
+  --icon-l-stroke-width: 1px;
+  --icon-xl-stroke-width: 1px;
+  --input-radius: 0px;
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --radius-xl: 0px;
+  --tab-curve: 0px;
+  --nav-indentation-guide-width: 0px;
+  --metadata-property-radius: 0px;
+  --metadata-property-radius-hover: 0px;
+  --metadata-property-radius-focus: 0px;
+  --tab-outline-width: 0px;
+  --tab-radius-active: 0px;
+  --list-bullet-radius: 0px;
+  --grotto-system-status-color: var(--background-primary); /* Plugin check*/
+  --graph-node-tag: var(--grotto-accent-1);
+  --list-marker-color: var(--text-normal);
+  --list-marker-color-hover: var(--text-faint);
+  --list-marker-color-collapsed: var(--text-muted);
+  --graph-text: var(--text-faint);
+  --graph-line: var(--grotto-night-2);
+  --graph-node: var(--grotto-night-0);
+  --graph-node-attachment: var(--grotto-item-hover);
+  --graph-node-unresolved: var(--grotto-day-2);
+  --graph-node-focused: var(--grotto-accent-1);
+  --graph-node-tag: var(--grotto-accent-1);
+  --slider-track-background: var(--grotto-accent-1);
+  --icon-color-hover: var(--grotto-accent-1);
+  --nav-item-color-hover: var(--grotto-sidebar-text-color);
+  --grotto-callout-icon: none;
+  --grotto-callout-background-color: var(--background-primary);
 }
 
 /* Tags */
-a.tag, a.tag:hover, 
-.cm-hashtag, 
-.cm-hashtag:hover, 
+a.tag,
+a.tag:hover,
+.cm-hashtag,
+.cm-hashtag:hover,
 .cm-s-obsidian span.cm-quote.cm-hashtag {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    pointer-events: var(--grotto-tag-pointer-events);
-    caret-color: currentColor;
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  pointer-events: var(--grotto-tag-pointer-events);
+  caret-color: currentColor;
 }
 
 /* Text Formatting */
-.cm-strong, strong {
-    font-weight: 800;
-    color: var(--grotto-accent-1);
+.cm-strong,
+strong {
+  font-weight: 800;
+  color: var(--grotto-accent-1);
 }
-.cm-em, em {
-    color: var(--grotto-accent-1);
+.cm-em,
+em {
+  color: var(--grotto-accent-1);
 }
-.markdown-source-view.mod-cm6 .cm-underline, 
-.markdown-rendered .internal-link, 
+.markdown-source-view.mod-cm6 .cm-underline,
+.markdown-rendered .internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
-.markdown-source-view.mod-cm6 .cm-underline:hover, 
-.markdown-rendered .internal-link:hover, 
+.markdown-source-view.mod-cm6 .cm-underline:hover,
+.markdown-rendered .internal-link:hover,
 .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    opacity: 0.8;
-    color: var(--grotto-accent-1);
+  opacity: 0.8;
+  color: var(--grotto-accent-1);
 }
 .cm-comment {
-    color: var(--grotto-accent-1);
-    opacity: 0.5;
+  color: var(--grotto-accent-1);
+  opacity: 0.5;
 }
 
 /* Embedded Image */
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid var(--grotto-image-border-color);
-    max-width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--grotto-image-border-color);
+  max-width: auto;
 }
 
 /* Notice */
-.notice, .is-phone .notice {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+.notice,
+.is-phone .notice {
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Suggestions */
 .suggestion-container {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
-.suggestion-item, 
+.suggestion-item,
 .is-mobile .suggestion-item {
-    color: var(--text-normal);
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0px;
+  color: var(--text-normal);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px;
 }
-.suggestion-item.is-selected, 
+.suggestion-item.is-selected,
 .suggestion-item.mobile-tap {
-    background-color: var(--grotto-item-hover);
-    border: 1px solid var(--text-normal);
+  background-color: var(--grotto-item-hover);
+  border: 1px solid var(--text-normal);
 }
 .suggestion-flair .svg-icon {
-    color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 /* Scrollbar */
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
-    border-color: var(--text-normal);
+  border-color: var(--text-normal);
 }
 
 /* Dropdown */
-select, 
-.combobox-button, 
+select,
+.combobox-button,
 .dropdown {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
-select:hover, 
-.combobox-button:hover, 
-.dropdown:hover, 
-.dropdown.mobile-tap, 
-select:focus, 
-.combobox-button:focus, 
+select:hover,
+.combobox-button:hover,
+.dropdown:hover,
+.dropdown.mobile-tap,
+select:focus,
+.combobox-button:focus,
 .dropdown:focus {
-    background-color: var(--grotto-item-hover);
-    box-shadow: none;
+  background-color: var(--grotto-item-hover);
+  box-shadow: none;
 }
 .dropdown option {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Button */
-button:not(.clickable-icon), 
+button:not(.clickable-icon),
 button.mod-cta {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
-button:not(.clickable-icon):hover, 
-button.mod-cta:hover, 
+button:not(.clickable-icon):hover,
+button.mod-cta:hover,
 button:not(.clickable-icon).mobile-tap {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    filter: brightness(120%);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  filter: brightness(120%);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Blockquote */
-.markdown-rendered-blockquote, 
+.markdown-rendered-blockquote,
 .HyperMD-quote {
-    padding: 8px;
-    caret-color: currentColor;
+  padding: 8px;
+  caret-color: currentColor;
 }
 
 /* Embeds */
 .markdown-embed {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    --embed-padding: 8px 16px;
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  --embed-padding: 8px 16px;
 }
 .embed-title {
-    display: none;
+  display: none;
 }
-.markdown-embed-link, 
-.markdown-source-view.mod-cm6 .edit-block-button, 
+.markdown-embed-link,
+.markdown-source-view.mod-cm6 .edit-block-button,
 .markdown-source-view.mod-cm6 .code-block-flair {
-    color: var(--background-primary);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+  color: var(--background-primary);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
 }
-.markdown-embed-link:hover, 
-.markdown-source-view.mod-cm6 .edit-block-button:hover, 
+.markdown-embed-link:hover,
+.markdown-source-view.mod-cm6 .edit-block-button:hover,
 .markdown-source-view.mod-cm6 .code-block-flair:hover {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    --background-modifier-hover: var(--grotto-accent-1);
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  --background-modifier-hover: var(--grotto-accent-1);
 }
 
 /* Callout */
 .callout {
-    color: var(--text-normal);
-    background-color: var(--grotto-callout-background-color);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    padding: 8px 16px;
+  color: var(--text-normal);
+  background-color: var(--grotto-callout-background-color);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  padding: 8px 16px;
 }
 .callout-title {
-    color: var(--text-normal);
-    border-bottom: 1px solid var(--text-normal);
-    border-radius: 0px;
-    gap: 0px;
-    font-size: 1.6em;
+  color: var(--text-normal);
+  border-bottom: 1px solid var(--text-normal);
+  border-radius: 0px;
+  gap: 0px;
+  font-size: 1.6em;
 }
 .callout-content p {
-    margin: 4px;
+  margin: 4px;
 }
 .callout-icon .svg-icon {
-    display: var(--grotto-callout-icon);
+  display: var(--grotto-callout-icon);
 }
 /* Code */
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock, 
-.markdown-rendered pre, 
-.markdown-rendered code, 
-.cm-s-obsidian span.cm-inline-code, 
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.markdown-rendered pre,
+.markdown-rendered code,
+.cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
-    color: var(--text-normal);
-    border-radius: 0px;
-    caret-color: currentColor;
+  color: var(--text-normal);
+  border-radius: 0px;
+  caret-color: currentColor;
 }
 
 /* Checkbox */
-input[type = checkbox], input[type = checkbox]:hover {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+input[type="checkbox"],
+input[type="checkbox"]:hover {
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
 }
-input[type=checkbox]:checked, input[type=checkbox]:checked:hover {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:hover {
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
 }
 
 /* Headers */
-.markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1, 
-.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2, 
-.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3, 
-.markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4, 
-.markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5, 
-.markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
-    font-size: 1.5em;
-    letter-spacing: 0px;
-    line-height: 1.5em;
-    width: fit-content;
-    caret-color: currentColor;
-    font-weight: inherit;
-    border-radius: 0px;
-    padding: 0px 8px;
+.markdown-rendered h1,
+.HyperMD-header-1,
+.cm-s-obsidian .cm-line.HyperMD-header-1,
+.markdown-rendered h2,
+.HyperMD-header-2,
+.cm-s-obsidian .cm-line.HyperMD-header-2,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.cm-s-obsidian .cm-line.HyperMD-header-3,
+.markdown-rendered h4,
+.HyperMD-header-4,
+.cm-s-obsidian .cm-line.HyperMD-header-4,
+.markdown-rendered h5,
+.HyperMD-header-5,
+.cm-s-obsidian .cm-line.HyperMD-header-5,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.cm-s-obsidian .cm-line.HyperMD-header-6 {
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  line-height: 1.5em;
+  width: fit-content;
+  caret-color: currentColor;
+  font-weight: inherit;
+  border-radius: 0px;
+  padding: 0px 8px;
 }
-.markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--text-normal);
+.markdown-rendered h1,
+.HyperMD-header-1,
+.cm-s-obsidian .cm-line.HyperMD-header-1 {
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--text-normal);
 }
-.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2 {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border-left: 1px solid var(--grotto-accent-1);
+.markdown-rendered h2,
+.HyperMD-header-2,
+.cm-s-obsidian .cm-line.HyperMD-header-2 {
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  border-left: 1px solid var(--grotto-accent-1);
 }
-.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
+.markdown-rendered h3,
+.HyperMD-header-3,
+.cm-s-obsidian .cm-line.HyperMD-header-3 {
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
-.markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4 {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
+.markdown-rendered h4,
+.HyperMD-header-4,
+.cm-s-obsidian .cm-line.HyperMD-header-4 {
+  color: var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
-.markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5 {
-    border: 1px solid transparent;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--grotto-accent-1);
+.markdown-rendered h5,
+.HyperMD-header-5,
+.cm-s-obsidian .cm-line.HyperMD-header-5 {
+  border: 1px solid transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--grotto-accent-1);
 }
-.markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
-    color: var(--text-normal);
-    border: 1px solid transparent;
+.markdown-rendered h6,
+.HyperMD-header-6,
+.cm-s-obsidian .cm-line.HyperMD-header-6 {
+  color: var(--text-normal);
+  border: 1px solid transparent;
 }
 
 /* Table */
-.markdown-preview-view td, .markdown-preview-view th {
-    white-space: nowrap !important;
+.markdown-preview-view td,
+.markdown-preview-view th {
+  white-space: nowrap !important;
 }
-.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper, 
-th, .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
-    color: var(--text-normal);
-    width: var(--grotto-table-cell-width);
-    --caret-color: currentColor;
-    min-width: 40px;
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper,
+th,
+.markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
+  color: var(--text-normal);
+  width: var(--grotto-table-cell-width);
+  --caret-color: currentColor;
+  min-width: 40px;
 }
-.markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle, .markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+.markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle {
+  color: var(--text-normal);
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
 }
 :is(th, td):has(> .table-cell-wrapper > .cm-s-obsidian) {
-    border: 1px solid var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
 .markdown-rendered table {
-    border-collapse: var(--grotto-table-border-style, collapse);
+  border-collapse: var(--grotto-table-border-style, collapse);
 }
 
 /* Mobile Color Swatch */
 .is-mobile input[type="color"] {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 /* Mobile Quick Action */
-.pull-down-action, .pull-out-action {
-    border-radius: 0px;
-    padding: 8px;
-    color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    width: fit-content;
+.pull-down-action,
+.pull-out-action {
+  border-radius: 0px;
+  padding: 8px;
+  color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  width: fit-content;
 }
 
 /* Canvas */
 .canvas-control-group {
-    border-radius: 0px;
-    box-shadow: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 .canvas-control-item {
-    background-color: var(--text-normal);
-    color: var(--background-primary);
-    border: 0px solid transparent;
+  background-color: var(--text-normal);
+  color: var(--background-primary);
+  border: 0px solid transparent;
 }
 .canvas-control-item:hover {
-    background-color: var(--text-faint);
+  background-color: var(--text-faint);
 }
 .canvas-node-container {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
 }
 .canvas-group-label {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border-radius: 0px;
+  color: var(--text-normal);
+  background-color: var(--grotto-accent-1);
+  border-radius: 0px;
 }
 .canvas-edges path.canvas-display-path {
-    stroke: var(--grotto-accent-1);
-    stroke-width: 1px;
+  stroke: var(--grotto-accent-1);
+  stroke-width: 1px;
 }
 .canvas-edges polygon.canvas-path-end {
-    stroke: var(--grotto-accent-1);
-    fill: var(--grotto-accent-1);
+  stroke: var(--grotto-accent-1);
+  fill: var(--grotto-accent-1);
 }
 
 /* Mobile NavBar */
 .mobile-navbar {
-    border-radius: 0px;
-    background-color: var(--grotto-navbar-background-color);
-    padding: 0px;
+  border-radius: 0px;
+  background-color: var(--grotto-navbar-background-color);
+  padding: 0px;
 }
 .mobile-navbar-actions {
-    --icon-color: var(--grotto-navbar-icon-color);
-    border-top: 0px solid transparent;
-    padding: 4px;
+  --icon-color: var(--grotto-navbar-icon-color);
+  border-top: 0px solid transparent;
+  padding: 4px;
 }
 
 /* Multi-Row Toolbar */
 .mobile-toolbar {
-    border-radius: 0px;
-    position: sticky;
-    width: auto;
-    overflow-y: auto;
-    margin: 0px 12px 0px 12px;
-    padding: 0px;
-    height: calc(0px + (var(--grotto-toolbar-rows) * 34px));
+  border-radius: 0px;
+  position: sticky;
+  width: auto;
+  overflow-y: auto;
+  margin: 0px 12px 0px 12px;
+  padding: 0px;
+  height: calc(0px + (var(--grotto-toolbar-rows) * 34px));
 }
 .mobile-toolbar::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 .mobile-toolbar-options-container {
-    height: auto;
-    padding: 8px 0px;
-    border: 0px solid var(--grotto-toolbar-color);
-    border-radius: 0px;
-    background-color: var(--grotto-toolbar-background-color);
+  height: auto;
+  padding: 8px 0px;
+  border: 0px solid var(--grotto-toolbar-color);
+  border-radius: 0px;
+  background-color: var(--grotto-toolbar-background-color);
 }
 .mobile-toolbar-options-list {
-    flex-flow: wrap;
-    padding: 0px;
-    gap: 8px 4px;
-    justify-content: center;
+  flex-flow: wrap;
+  padding: 0px;
+  gap: 8px 4px;
+  justify-content: center;
 }
 .mobile-toolbar-option {
-    color: var(--grotto-toolbar-color);
+  color: var(--grotto-toolbar-color);
 }
 .mobile-toolbar-spacer {
-    display: none;
+  display: none;
 }
 
 /* Command Prompt */
-.theme-dark.is-mobile .prompt, .theme-light.is-mobile .prompt, .prompt {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    background-color: var(--background-primary);
+.theme-dark.is-mobile .prompt,
+.theme-light.is-mobile .prompt,
+.prompt {
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  background-color: var(--background-primary);
 }
-input.prompt-input:hover, 
-input.prompt-input:focus, 
-input.prompt-input:focus-visible, 
-.theme-dark.is-mobile .prompt input.prompt-input, 
-.theme-light.is-mobile .prompt input.prompt-input, 
+input.prompt-input:hover,
+input.prompt-input:focus,
+input.prompt-input:focus-visible,
+.theme-dark.is-mobile .prompt input.prompt-input,
+.theme-light.is-mobile .prompt input.prompt-input,
 .prompt input.prompt-input {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    caret-color: currentColor;
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  caret-color: currentColor;
 }
 .prompt-results .suggestion-hotkey {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border-radius: 0px;
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  border-radius: 0px;
 }
 .search-input-clear-button {
-    color: var(--text-faint);
+  color: var(--text-faint);
 }
-.search-input-clear-button:hover, .search-input-clear-button:active {
-    color: var(--grotto-accent-1);
+.search-input-clear-button:hover,
+.search-input-clear-button:active {
+  color: var(--grotto-accent-1);
 }
 .prompt-instructions {
-    color: var(--text-normal);
+  color: var(--text-normal);
 }
 .is-mobile .prompt {
-    border-radius: 0px;
-    position: relative;
-    top: 0%;
-    height: 40vh;
-    width: 94%;
-    background-color: var(--text-normal);
-    padding: 0px;
+  border-radius: 0px;
+  position: relative;
+  top: 0%;
+  height: 40vh;
+  width: 94%;
+  background-color: var(--text-normal);
+  padding: 0px;
 }
 
 /* Status Bar */
 .status-bar {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--grotto-sidebar-text-color);
-    border-width: 1px 0px 0px 1px;
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  border: 1px solid var(--grotto-sidebar-text-color);
+  border-width: 1px 0px 0px 1px;
 }
 .status-bar-item {
-    color: var(--background-primary);
+  color: var(--background-primary);
 }
 .status-bar-item.mod-clickable:hover {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 
 /* Viewer Header */
 .is-mobile .view-actions {
-    position: fixed;
-    display: flex;
-    width: fit-content;
-    overflow: hidden;
-    bottom: 12px;
-    right: 12px;
-    border-radius: 0px;
-    background-color: transparent;
-    padding: 1px 6px 1px 6px;
-    gap: 8px;
+  position: fixed;
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 1px 6px 1px 6px;
+  gap: 8px;
 }
 .is-mobile .view-header .clickable-icon {
-    color: var(--grotto-navbar-icon-color);
-    border: 0px solid var(--grotto-navbar-background-color);
-    border-radius: 0px;
+  color: var(--grotto-navbar-icon-color);
+  border: 0px solid var(--grotto-navbar-background-color);
+  border-radius: 0px;
 }
 .is-mobile .view-header {
-    height: 0px;
+  height: 0px;
 }
-.is-mobile .view-header-title-container, .is-mobile .view-header-left {
-    display: none;
+.is-mobile .view-header-title-container,
+.is-mobile .view-header-left {
+  display: none;
 }
 .is-mobile .view-header .view-action {
-    color: var(--grotto-navbar-icon-color);
-    background-color: var(--grotto-navbar-background-color);
+  color: var(--grotto-navbar-icon-color);
+  background-color: var(--grotto-navbar-background-color);
 }
 .is-mobile .view-header .view-action[aria-label="More options"] {
-    --icon-stroke: 1.75px;
+  --icon-stroke: 1.75px;
 }
 
 /* Calendar Plugin */
 #calendar-container .day {
-    pointer-events: var(--grotto-calendar-pointer-events);
-    padding: 6px 0px 0px 0px;
-    color: var(--grotto-sidebar-text-color);
-    border: 0px solid transparent;
-    border-radius: 0px;
+  pointer-events: var(--grotto-calendar-pointer-events);
+  padding: 6px 0px 0px 0px;
+  color: var(--grotto-sidebar-text-color);
+  border: 0px solid transparent;
+  border-radius: 0px;
 }
 #calendar-container .day.active {
-    color: var(--text-normal);
-    
+  color: var(--text-normal);
 }
 #calendar-container .today {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 #calendar-container .month {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
 #calendar-container .year {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 #calendar-container {
-    --color-arrow: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-accent-1);
-    width: 100%;
-    --interactive-hover: var(--grotto-night-2);
+  --color-arrow: var(--grotto-accent-1);
+  border: 1px solid var(--grotto-accent-1);
+  width: 100%;
+  --interactive-hover: var(--grotto-night-2);
 }
 #calendar-container th.svelte-pcimu8 {
-    background-color: var(--grotto-accent-1);
-    color: var(--grotto-sidebar-text-color);
+  background-color: var(--grotto-accent-1);
+  color: var(--grotto-sidebar-text-color);
 }
 #calendar-container .title {
-    padding-left: 12px;
+  padding-left: 12px;
 }
 #calendar-container .reset-button {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
 
 /* Community Item */
 .community-item {
-    border: 1px solid var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
 .community-item:hover {
-    border: 1px solid var(--grotto-accent-1);
+  border: 1px solid var(--grotto-accent-1);
 }
 
 /* Graph Controls */
 .graph-controls-button {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border-radius: 0px;
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  border-radius: 0px;
 }
 .graph-controls-button:hover {
-    background-color: var(--text-faint);
+  background-color: var(--text-faint);
 }
 .graph-controls:not(.is-close) {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
+  border: 1px solid var(--text-normal);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Navigate Files */
-.nav-file-title, 
-.nav-folder-title, 
-.tree-item-self.is-clickable, 
-.clickable-icon.nav-action-button, 
-.side-dock-settings .side-dock-ribbon-action, 
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self.is-clickable,
+.clickable-icon.nav-action-button,
+.side-dock-settings .side-dock-ribbon-action,
 .side-dock-actions .side-dock-ribbon-action {
-    color: var(--grotto-sidebar-text-color);
-    border: 1px solid transparent;
+  color: var(--grotto-sidebar-text-color);
+  border: 1px solid transparent;
 }
 .nav-file-tag {
-    color: var(--background-secondary);
-    background-color: var(--grotto-sidebar-text-color);
-    border-radius: 0px;
+  color: var(--background-secondary);
+  background-color: var(--grotto-sidebar-text-color);
+  border-radius: 0px;
 }
 .clickable-icon.nav-action-button.is-active {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
-.side-dock-settings .side-dock-ribbon-action:hover, 
+.side-dock-settings .side-dock-ribbon-action:hover,
 .side-dock-actions .side-dock-ribbon-action:hover {
-    color: var(--grotto-accent-1);
-    background-color: transparent;
+  color: var(--grotto-accent-1);
+  background-color: transparent;
 }
 .workspace-drawer-vault-actions .clickable-icon {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
 .workspace-drawer-vault-actions .clickable-icon:hover {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
-.nav-file-title.is-active, 
+.nav-file-title.is-active,
 .nav-folder-title.is-active {
-    color: var(--grotto-sidebar-text-color);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--grotto-sidebar-text-color);
 }
-body:not(.is-grabbing) .nav-file-title.is-active:hover, 
-body:not(.is-grabbing)  .nav-folder-title:hover, 
-body:not(.is-grabbing) .tree-item-self.is-clickable:hover, 
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title:hover,
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
 body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap {
-    color: var(--grotto-sidebar-text-color);
-    background-color: var(--grotto-night-2);
-    border: 1px solid var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
+  background-color: var(--grotto-night-2);
+  border: 1px solid var(--grotto-sidebar-text-color);
 }
 .is-mobile .workspace-drawer-header {
-    background-color: var(--background-secondary);
-    --text-normal: var(--grotto-sidebar-text-color);
-    --text-muted: var(--grotto-sidebar-text-color);
+  background-color: var(--background-secondary);
+  --text-normal: var(--grotto-sidebar-text-color);
+  --text-muted: var(--grotto-sidebar-text-color);
 }
 .sidebar-toggle-button {
-    --icon-color: var(--grotto-accent-1);
-    background-color: var(--background-secondary);
-    --icon-color-hover: var(--grotto-sidebar-text-color);
-    height: var(--header-height);
+  --icon-color: var(--grotto-accent-1);
+  background-color: var(--background-secondary);
+  --icon-color-hover: var(--grotto-sidebar-text-color);
+  height: var(--header-height);
 }
-body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top {
-    --tab-container-background: var(--background-secondary);
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: var(--background-secondary);
 }
 .search-row .clickable-icon {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 
 /* Rename Bar Customization */
 .tree-item-self.is-being-renamed:focus-within {
-    color: var(--background-secondary);
-    background-color: var(--grotto-sidebar-text-color);
-    border-radius: 0px;
-    caret-color: currentColor;
+  color: var(--background-secondary);
+  background-color: var(--grotto-sidebar-text-color);
+  border-radius: 0px;
+  caret-color: currentColor;
 }
 .tree-item-self {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 /* Mobile Specific */
 .is-phone {
-    --border-width: 0px;
+  --border-width: 0px;
 }
 .is-mobile {
-    --icon-l-stroke-width: 1px;
-    --caret-color: currentColor;
-    --checkbox-size: 16px;
-    --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
-    --file-margins: 0px 18px 0px 26px;
-    --mobile-sidebar-radius: 0px;
-    --mobile-sidebar-width: 80vw;
-    --system-status-background: var(--grotto-system-status-color);
-    --mobile-sidebar-background: var(--background-secondary);
-    --background-modifier-form-field: transparent;
+  --icon-l-stroke-width: 1px;
+  --caret-color: currentColor;
+  --checkbox-size: 16px;
+  --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
+  --file-margins: 0px 18px 0px 26px;
+  --mobile-sidebar-radius: 0px;
+  --mobile-sidebar-width: 80vw;
+  --system-status-background: var(--grotto-system-status-color);
+  --mobile-sidebar-background: var(--background-secondary);
+  --background-modifier-form-field: transparent;
 }
 
 /* Titlebar */
 .titlebar-button {
-    height: var(--header-height);
-    background-color: var(--background-primary);
+  height: var(--header-height);
+  background-color: var(--background-primary);
 }
 .titlebar-button:hover {
-    background-color: var(--grotto-item-hover);
+  background-color: var(--grotto-item-hover);
 }
 .workspace-ribbon.mod-left.is-collapsed {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 .workspace-tab-header-inner-title {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
 .workspace-tab-header-inner .workspace-tab-header-inner-icon {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon, 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, 
-
+.mod-left-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
 .workspace-tab-header-inner .workspace-tab-header-inner-icon:hover {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title, 
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
 .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-    color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 /* Settings */
 .vertical-tab-nav-item {
-    color: var(--grotto-sidebar-text-color);
-    border: 1px solid transparent;
+  color: var(--grotto-sidebar-text-color);
+  border: 1px solid transparent;
 }
 .is-phone .vertical-tab-nav-item {
-    color: var(--text-normal);
-    border: 1px solid transparent;
+  color: var(--text-normal);
+  border: 1px solid transparent;
 }
-body:not(.is-phone) .horizontal-tab-nav-item:hover, 
+body:not(.is-phone) .horizontal-tab-nav-item:hover,
 body:not(.is-phone) .vertical-tab-nav-item:hover {
-    background-color: var(--grotto-night-2);
-    border: 1px solid var(--grotto-sidebar-text-color);
+  background-color: var(--grotto-night-2);
+  border: 1px solid var(--grotto-sidebar-text-color);
 }
-body:not(.is-phone) .horizontal-tab-nav-item.is-active, 
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-sidebar-text-color);
+  background-color: var(--grotto-accent-1);
+  border: 1px solid var(--grotto-sidebar-text-color);
 }
 .setting-item {
-    border-width: 0px;
+  border-width: 0px;
 }
 .is-phone .setting-item {
-    padding-bottom: 8px;
-    padding-top: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 .is-phone .setting-item-heading {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 /* Input types */
-input[type = number], input[type = number]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
+input[type="number"],
+input[type="number"]:hover {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  caret-color: currentColor;
 }
-.prompt input[type = text], .prompt input[type = text]:hover {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
+.prompt input[type="text"],
+.prompt input[type="text"]:hover {
+  color: var(--background-primary);
+  background-color: var(--text-normal);
+  border: 1px solid var(--text-normal);
+  caret-color: currentColor;
 }
-input[type = text], input[type = text]:hover, input[type = search], input[type = search]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
+input[type="text"],
+input[type="text"]:hover,
+input[type="search"],
+input[type="search"]:hover {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  caret-color: currentColor;
 }
-input[type='date'], input[type='datetime-local'], input[type='email'], input[type='password'], .multi-select-container:hover, input.metadata-input-text:hover, input[type='date']:hover, input[type='datetime-local']:hover, input[type='email']:hover, input[type='password']:hover, textarea.webviewer-adblock-lists {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="password"],
+.multi-select-container:hover,
+input.metadata-input-text:hover,
+input[type="date"]:hover,
+input[type="datetime-local"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea.webviewer-adblock-lists {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  caret-color: currentColor;
 }
 .search-suggest-info-text {
-    color: var(--grotto-sidebar-text-color);
-    opacity: 0.5;
+  color: var(--grotto-sidebar-text-color);
+  opacity: 0.5;
 }
 .suggestion-container.mod-property-key .suggestion-item {
-    background-color: var(--text-normal);
-    color: var(--background-primary);
+  background-color: var(--text-normal);
+  color: var(--background-primary);
 }
 .search-input-container input {
-    border: 1px solid var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
 .search-suggest-item.suggestion-item {
-    color: var(--grotto-sidebar-text-color);
-    background-color: transparent;
+  color: var(--grotto-sidebar-text-color);
+  background-color: transparent;
 }
 .search-suggest-item.suggestion-item:hover {
-    background-color: var(--grotto-night-2);
+  background-color: var(--grotto-night-2);
 }
 .workspace-drawer-ribbon {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 /* Color Swatch */
 input[type="color"]::-webkit-color-swatch {
-    border: 1px solid var(--text-normal);
+  border: 1px solid var(--text-normal);
 }
 
 /* Mobile Menus */
@@ -878,309 +940,312 @@ input[type="color"]::-webkit-color-swatch {
   background-color: var(--background-primary);
 }
 .workspace-drawer-active-tab-header {
-    --text-normal: var(--background-secondary);
-    background-color: var(--grotto-sidebar-text-color);
+  --text-normal: var(--background-secondary);
+  background-color: var(--grotto-sidebar-text-color);
 }
 .workspace-drawer-active-tab-header.tappable.mobile-tap {
-    --text-normal: var(--background-secondary);
-    background-color: var(--grotto-day-2);
+  --text-normal: var(--background-secondary);
+  background-color: var(--grotto-day-2);
 }
-.menu-item-title, .menu-item-icon .svg-icon {
-    color: var(--text-normal);
+.menu-item-title,
+.menu-item-icon .svg-icon {
+  color: var(--text-normal);
 }
 .is-phone .menu-scroll {
-    background-color: var(--background-primary);
-    border-width: 0px;
+  background-color: var(--background-primary);
+  border-width: 0px;
 }
 .is-phone .menu-item:not(.is-label) {
-    background-color: transparent;
-    border-width: 0px;
+  background-color: transparent;
+  border-width: 0px;
 }
 .is-phone .menu-group .menu-item:not(:last-child) {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
-.menu-item.selected:not(.is-label):not(.is-disabled){
-    background-color: transparent;
+.menu-item.selected:not(.is-label):not(.is-disabled) {
+  background-color: transparent;
 }
 .is-phone .menu-group .menu-item.tappable.mobile-tap {
-    background-color: var(--grotto-item-hover);
+  background-color: var(--grotto-item-hover);
 }
 .menu-scroll {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
 }
-.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
+.is-phone .menu .suggestion-group .suggestion-item:not(.is-label),
 .is-phone .menu-item:not(.is-label) {
-    color: var(--text-normal);
-    background-color: transparent;
+  color: var(--text-normal);
+  background-color: transparent;
 }
-.is-phone .menu .suggestion-group .suggestion-item.mobile-tap:not(.is-label), 
+.is-phone .menu .suggestion-group .suggestion-item.mobile-tap:not(.is-label),
 .is-phone .menu-item.mobile-tap:not(.is-label) {
-    color: var(--text-normal);
-    background-color: var(--grotto-item-hover);
+  color: var(--text-normal);
+  background-color: var(--grotto-item-hover);
 }
 
 /* Bases */
-.is-phone .bases-toolbar-menu-container input[type=search], 
-.is-phone .combobox .search-input-container input[type=search] {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+.is-phone .bases-toolbar-menu-container input[type="search"],
+.is-phone .combobox .search-input-container input[type="search"] {
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
 }
-.metadata-property-value .metadata-input-text, .metadata-property-value .metadata-input-number, .metadata-property-value .multi-select-container {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+.metadata-property-value .metadata-input-text,
+.metadata-property-value .metadata-input-number,
+.metadata-property-value .multi-select-container {
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
 }
 .formula-editor {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
 }
-.is-phone .bases-query-container .filter-expression, .bases-query-container .filter-expression {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+.is-phone .bases-query-container .filter-expression,
+.bases-query-container .filter-expression {
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
 }
 .bases-cards-item {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
+  box-shadow: none;
+  border: 1px solid var(--text-normal);
 }
 .bases-cards-cover {
-    border-bottom: 1px solid var(--text-normal);
-    
+  border-bottom: 1px solid var(--text-normal);
 }
 
 /* Color Types */
 body.primary-type-normal {
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 25%);
+  --grotto-day-1: hsl(0, 0%, 87%);
+  --grotto-day-2: hsl(0, 0%, 80%);
+  --grotto-night-0: hsl(0, 0%, 12%);
+  --grotto-night-1: hsl(0, 0%, 18%);
+  --grotto-night-2: hsl(0, 0%, 25%);
 }
 body.secondary-type-normal {
-    --accent-h: 0;
-    --accent-s: 0%;
-    --accent-l: 40%;
-    --grotto-accent-1: hsl(0, 0%, 60%);
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 40%;
+  --grotto-accent-1: hsl(0, 0%, 60%);
 }
 body.primary-type-fighting {
-    --grotto-day-1: hsl(2, 65%, 96%); 
-    --grotto-day-2: hsl(2, 65%, 90%);
-    --grotto-night-0: hsl(2, 65%, 25%); 
-    --grotto-night-1: hsl(2, 65%, 32%); 
-    --grotto-night-2: hsl(2, 65%, 40%);
+  --grotto-day-1: hsl(2, 65%, 96%);
+  --grotto-day-2: hsl(2, 65%, 90%);
+  --grotto-night-0: hsl(2, 65%, 25%);
+  --grotto-night-1: hsl(2, 65%, 32%);
+  --grotto-night-2: hsl(2, 65%, 40%);
 }
 body.secondary-type-fighting {
-    --accent-h: 2;
-    --accent-s: 65%;
-    --accent-l: 58%;
-    --grotto-accent-1: hsl(2, 65%, 58%); 
+  --accent-h: 2;
+  --accent-s: 65%;
+  --accent-l: 58%;
+  --grotto-accent-1: hsl(2, 65%, 58%);
 }
 body.primary-type-flying {
-    --grotto-day-1: hsl(225, 65%, 94%); 
-    --grotto-day-2: hsl(225, 65%, 86%);
-    --grotto-night-0: hsl(225, 35%, 20%); 
-    --grotto-night-1: hsl(225, 45%, 30%); 
-    --grotto-night-2: hsl(225, 60%, 40%);
+  --grotto-day-1: hsl(225, 65%, 94%);
+  --grotto-day-2: hsl(225, 65%, 86%);
+  --grotto-night-0: hsl(225, 35%, 20%);
+  --grotto-night-1: hsl(225, 45%, 30%);
+  --grotto-night-2: hsl(225, 60%, 40%);
 }
 body.secondary-type-flying {
-    --accent-h: 225;
-    --accent-s: 65%;
-    --accent-l: 58%;
-    --grotto-accent-1: hsl(225, 65%, 65%); 
+  --accent-h: 225;
+  --accent-s: 65%;
+  --accent-l: 58%;
+  --grotto-accent-1: hsl(225, 65%, 65%);
 }
 body.primary-type-poison {
-    --grotto-day-1: hsl(310, 40%, 93%); 
-    --grotto-day-2: hsl(310, 40%, 85%);
-    --grotto-night-0: hsl(310, 40%, 20%); 
-    --grotto-night-1: hsl(310, 40%, 25%); 
-    --grotto-night-2: hsl(310, 40%, 40%);
+  --grotto-day-1: hsl(310, 40%, 93%);
+  --grotto-day-2: hsl(310, 40%, 85%);
+  --grotto-night-0: hsl(310, 40%, 20%);
+  --grotto-night-1: hsl(310, 40%, 25%);
+  --grotto-night-2: hsl(310, 40%, 40%);
 }
 body.secondary-type-poison {
-    --accent-h: 310;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(310, 40%, 50%); 
+  --accent-h: 310;
+  --accent-s: 40%;
+  --accent-l: 50%;
+  --grotto-accent-1: hsl(310, 40%, 50%);
 }
 body.primary-type-ground {
-    --grotto-day-1: hsl(36, 50%, 93%); 
-    --grotto-day-2: hsl(36, 50%, 82%);
-    --grotto-night-0: hsl(36, 50%, 32%); 
-    --grotto-night-1: hsl(36, 50%, 38%); 
-    --grotto-night-2: hsl(36, 50%, 44%);
+  --grotto-day-1: hsl(36, 50%, 93%);
+  --grotto-day-2: hsl(36, 50%, 82%);
+  --grotto-night-0: hsl(36, 50%, 32%);
+  --grotto-night-1: hsl(36, 50%, 38%);
+  --grotto-night-2: hsl(36, 50%, 44%);
 }
 body.secondary-type-ground {
-    --accent-h: 36;
-    --accent-s: 50%;
-    --accent-l: 56%;
-    --grotto-accent-1: hsl(36, 50%, 56%); 
+  --accent-h: 36;
+  --accent-s: 50%;
+  --accent-l: 56%;
+  --grotto-accent-1: hsl(36, 50%, 56%);
 }
 body.primary-type-rock {
-    --grotto-day-1: hsl(50, 40%, 95%); 
-    --grotto-day-2: hsl(50, 40%, 84%);
-    --grotto-night-0: hsl(50, 40%, 20%); 
-    --grotto-night-1: hsl(50, 40%, 25%); 
-    --grotto-night-2: hsl(50, 40%, 40%);
+  --grotto-day-1: hsl(50, 40%, 95%);
+  --grotto-day-2: hsl(50, 40%, 84%);
+  --grotto-night-0: hsl(50, 40%, 20%);
+  --grotto-night-1: hsl(50, 40%, 25%);
+  --grotto-night-2: hsl(50, 40%, 40%);
 }
 body.secondary-type-rock {
-    --accent-h: 50;
-    --accent-s: 50%;
-    --accent-l: 60%;
-    --grotto-accent-1: hsl(50, 40%, 50%); 
+  --accent-h: 50;
+  --accent-s: 50%;
+  --accent-l: 60%;
+  --grotto-accent-1: hsl(50, 40%, 50%);
 }
 body.primary-type-bug {
-    --grotto-day-1: hsl(80, 51%, 93%); 
-    --grotto-day-2: hsl(80, 51%, 82%);
-    --grotto-night-0: hsl(80, 38%, 20%); 
-    --grotto-night-1: hsl(80, 40%, 30%); 
-    --grotto-night-2: hsl(80, 40%, 40%);
+  --grotto-day-1: hsl(80, 51%, 93%);
+  --grotto-day-2: hsl(80, 51%, 82%);
+  --grotto-night-0: hsl(80, 38%, 20%);
+  --grotto-night-1: hsl(80, 40%, 30%);
+  --grotto-night-2: hsl(80, 40%, 40%);
 }
 body.secondary-type-bug {
-    --accent-h: 73;
-    --accent-s: 51%;
-    --accent-l: 55%;
-    --grotto-accent-1: hsl(66, 51%, 50%); 
+  --accent-h: 73;
+  --accent-s: 51%;
+  --accent-l: 55%;
+  --grotto-accent-1: hsl(66, 51%, 50%);
 }
 body.primary-type-ghost {
-    --grotto-day-1: hsl(250, 40%, 93%); 
-    --grotto-day-2: hsl(250, 40%, 82%);
-    --grotto-night-0: hsl(250, 40%, 20%); 
-    --grotto-night-1: hsl(250, 40%, 30%); 
-    --grotto-night-2: hsl(250, 40%, 40%);
+  --grotto-day-1: hsl(250, 40%, 93%);
+  --grotto-day-2: hsl(250, 40%, 82%);
+  --grotto-night-0: hsl(250, 40%, 20%);
+  --grotto-night-1: hsl(250, 40%, 30%);
+  --grotto-night-2: hsl(250, 40%, 40%);
 }
 body.secondary-type-ghost {
-    --accent-h: 250;
-    --accent-s: 40%;
-    --accent-l: 60%;
-    --grotto-accent-1: hsl(250, 40%, 65%); 
+  --accent-h: 250;
+  --accent-s: 40%;
+  --accent-l: 60%;
+  --grotto-accent-1: hsl(250, 40%, 65%);
 }
 body.primary-type-steel {
-    --grotto-day-1: hsl(180, 20%, 93%); 
-    --grotto-day-2: hsl(180, 20%, 82%);
-    --grotto-night-0: hsl(180, 20%, 20%); 
-    --grotto-night-1: hsl(180, 20%, 30%); 
-    --grotto-night-2: hsl(180, 20%, 40%); 
+  --grotto-day-1: hsl(180, 20%, 93%);
+  --grotto-day-2: hsl(180, 20%, 82%);
+  --grotto-night-0: hsl(180, 20%, 20%);
+  --grotto-night-1: hsl(180, 20%, 30%);
+  --grotto-night-2: hsl(180, 20%, 40%);
 }
 body.secondary-type-steel {
-    --accent-h: 180;
-    --accent-s: 20%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(180, 20%, 60%); 
+  --accent-h: 180;
+  --accent-s: 20%;
+  --accent-l: 50%;
+  --grotto-accent-1: hsl(180, 20%, 60%);
 }
 body.primary-type-fire {
-    --grotto-day-1: hsl(19, 72%, 93%); 
-    --grotto-day-2: hsl(19, 72%, 82%);
-    --grotto-night-0: hsl(19, 72%, 20%); 
-    --grotto-night-1: hsl(19, 72%, 30%); 
-    --grotto-night-2: hsl(19, 72%, 40%); 
+  --grotto-day-1: hsl(19, 72%, 93%);
+  --grotto-day-2: hsl(19, 72%, 82%);
+  --grotto-night-0: hsl(19, 72%, 20%);
+  --grotto-night-1: hsl(19, 72%, 30%);
+  --grotto-night-2: hsl(19, 72%, 40%);
 }
 body.secondary-type-fire {
-    --accent-h: 19;
-    --accent-s: 72%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(19, 72%, 60%); 
+  --accent-h: 19;
+  --accent-s: 72%;
+  --accent-l: 50%;
+  --grotto-accent-1: hsl(19, 72%, 60%);
 }
 body.primary-type-water {
-    --grotto-day-1: hsl(200, 81%, 93%); 
-    --grotto-day-2: hsl(200, 81%, 82%);
-    --grotto-night-0: hsl(200, 81%, 25%); 
-    --grotto-night-1: hsl(200, 81%, 30%); 
-    --grotto-night-2: hsl(200, 81%, 40%); 
+  --grotto-day-1: hsl(200, 81%, 93%);
+  --grotto-day-2: hsl(200, 81%, 82%);
+  --grotto-night-0: hsl(200, 81%, 25%);
+  --grotto-night-1: hsl(200, 81%, 30%);
+  --grotto-night-2: hsl(200, 81%, 40%);
 }
 body.secondary-type-water {
-    --accent-h: 200;
-    --accent-s: 81%;
-    --accent-l: 46%;
-    --grotto-accent-1: hsl(200, 81%, 55%); 
+  --accent-h: 200;
+  --accent-s: 81%;
+  --accent-l: 46%;
+  --grotto-accent-1: hsl(200, 81%, 55%);
 }
 body.primary-type-grass {
-    --grotto-day-1: hsl(130, 40%, 93%); 
-    --grotto-day-2: hsl(130, 40%, 82%);
-    --grotto-night-0: hsl(130, 40%, 24%); 
-    --grotto-night-1: hsl(130, 40%, 30%); 
-    --grotto-night-2: hsl(130, 40%, 40%);
+  --grotto-day-1: hsl(130, 40%, 93%);
+  --grotto-day-2: hsl(130, 40%, 82%);
+  --grotto-night-0: hsl(130, 40%, 24%);
+  --grotto-night-1: hsl(130, 40%, 30%);
+  --grotto-night-2: hsl(130, 40%, 40%);
 }
 body.secondary-type-grass {
-    --accent-h: 130;
-    --accent-s: 40%;
-    --accent-l: 56%;
-    --grotto-accent-1: hsl(130, 40%, 56%); 
+  --accent-h: 130;
+  --accent-s: 40%;
+  --accent-l: 56%;
+  --grotto-accent-1: hsl(130, 40%, 56%);
 }
 body.primary-type-electric {
-    --grotto-day-1: hsl(45, 89%, 93%); 
-    --grotto-day-2: hsl(45, 89%, 88%);
-    --grotto-night-0: hsl(45, 65%, 50%); 
-    --grotto-night-1: hsl(45, 89%, 45%); 
-    --grotto-night-2: hsl(45, 89%, 35%); 
+  --grotto-day-1: hsl(45, 89%, 93%);
+  --grotto-day-2: hsl(45, 89%, 88%);
+  --grotto-night-0: hsl(45, 65%, 50%);
+  --grotto-night-1: hsl(45, 89%, 45%);
+  --grotto-night-2: hsl(45, 89%, 35%);
 }
 body.secondary-type-electric {
-    --accent-h: 45;
-    --accent-s: 82%;
-    --accent-l: 58%;
-    --grotto-accent-1: hsl(45, 82%, 64%); 
+  --accent-h: 45;
+  --accent-s: 82%;
+  --accent-l: 58%;
+  --grotto-accent-1: hsl(45, 82%, 64%);
 }
 body.primary-type-psychic {
-    --grotto-day-1: hsl(337, 75%, 93%); 
-    --grotto-day-2: hsl(337, 75%, 82%);
-    --grotto-night-0: hsl(337, 75%, 31%); 
-    --grotto-night-1: hsl(337, 75%, 40%); 
-    --grotto-night-2: hsl(337, 75%, 50%); 
+  --grotto-day-1: hsl(337, 75%, 93%);
+  --grotto-day-2: hsl(337, 75%, 82%);
+  --grotto-night-0: hsl(337, 75%, 31%);
+  --grotto-night-1: hsl(337, 75%, 40%);
+  --grotto-night-2: hsl(337, 75%, 50%);
 }
 body.secondary-type-psychic {
-    --accent-h: 37;
-    --accent-s: 75%;
-    --accent-l: 72%;
-    --grotto-accent-1: hsl(337, 75%, 72%); 
+  --accent-h: 37;
+  --accent-s: 75%;
+  --accent-l: 72%;
+  --grotto-accent-1: hsl(337, 75%, 72%);
 }
 body.primary-type-ice {
-    --grotto-day-1: hsl(175, 56%, 93%); 
-    --grotto-day-2: hsl(175, 56%, 82%);
-    --grotto-night-0: hsl(175, 56%, 31%); 
-    --grotto-night-1: hsl(175, 56%, 40%); 
-    --grotto-night-2: hsl(175, 56%, 50%);
+  --grotto-day-1: hsl(175, 56%, 93%);
+  --grotto-day-2: hsl(175, 56%, 82%);
+  --grotto-night-0: hsl(175, 56%, 31%);
+  --grotto-night-1: hsl(175, 56%, 40%);
+  --grotto-night-2: hsl(175, 56%, 50%);
 }
 body.secondary-type-ice {
-    --accent-h: 175;
-    --accent-s: 56%;
-    --accent-l: 40%;
-    --grotto-accent-1: hsl(175, 56%, 72%); 
+  --accent-h: 175;
+  --accent-s: 56%;
+  --accent-l: 40%;
+  --grotto-accent-1: hsl(175, 56%, 72%);
 }
 body.primary-type-dragon {
-    --grotto-day-1: hsl(240, 40%, 93%); 
-    --grotto-day-2: hsl(240, 40%, 82%);
-    --grotto-night-0: hsl(240, 40%, 31%); 
-    --grotto-night-1: hsl(240, 40%, 40%); 
-    --grotto-night-2: hsl(240, 40%, 50%);
+  --grotto-day-1: hsl(240, 40%, 93%);
+  --grotto-day-2: hsl(240, 40%, 82%);
+  --grotto-night-0: hsl(240, 40%, 31%);
+  --grotto-night-1: hsl(240, 40%, 40%);
+  --grotto-night-2: hsl(240, 40%, 50%);
 }
 body.secondary-type-dragon {
-    --accent-h: 240;
-    --accent-s: 40%;
-    --accent-l: 56%;
-    --grotto-accent-1: hsl(240, 40%, 56%); 
+  --accent-h: 240;
+  --accent-s: 40%;
+  --accent-l: 56%;
+  --grotto-accent-1: hsl(240, 40%, 56%);
 }
 body.primary-type-dark {
-    --grotto-day-1: hsl(250, 10%, 93%); 
-    --grotto-day-2: hsl(250, 10%, 82%);
-    --grotto-night-0: hsl(250, 10%, 16%); 
-    --grotto-night-1: hsl(250, 10%, 24%); 
-    --grotto-night-2: hsl(250, 10%, 32%);
+  --grotto-day-1: hsl(250, 10%, 93%);
+  --grotto-day-2: hsl(250, 10%, 82%);
+  --grotto-night-0: hsl(250, 10%, 16%);
+  --grotto-night-1: hsl(250, 10%, 24%);
+  --grotto-night-2: hsl(250, 10%, 32%);
 }
 body.secondary-type-dark {
-    --accent-h: 250;
-    --accent-s: 10%;
-    --accent-l: 40%;
-    --grotto-accent-1: hsl(250, 10%, 40%); 
+  --accent-h: 250;
+  --accent-s: 10%;
+  --accent-l: 40%;
+  --grotto-accent-1: hsl(250, 10%, 40%);
 }
 body.primary-type-fairy {
-    --grotto-day-1: hsl(316, 82%, 93%); 
-    --grotto-day-2: hsl(316, 82%, 82%);
-    --grotto-night-0: hsl(316, 82%, 31%); 
-    --grotto-night-1: hsl(316, 82%, 40%); 
-    --grotto-night-2: hsl(316, 82%, 50%);
+  --grotto-day-1: hsl(316, 82%, 93%);
+  --grotto-day-2: hsl(316, 82%, 82%);
+  --grotto-night-0: hsl(316, 82%, 31%);
+  --grotto-night-1: hsl(316, 82%, 40%);
+  --grotto-night-2: hsl(316, 82%, 50%);
 }
 body.secondary-type-fairy {
-    --accent-h: 316;
-    --accent-s: 82%;
-    --accent-l: 75%;
-    --grotto-accent-1: hsl(316, 82%, 75%); 
+  --accent-h: 316;
+  --accent-s: 82%;
+  --accent-l: 75%;
+  --grotto-accent-1: hsl(316, 82%, 75%);
 }
 
 /* Changes for V1.0.2*/
@@ -1188,85 +1253,95 @@ body.secondary-type-fairy {
 /* Divider between 2 tabs */
 
 .workspace-leaf-resize-handle {
-    border-color: var(--grotto-item-hover);
-    --divider-width: 1px;
+  border-color: var(--grotto-item-hover);
+  --divider-width: 1px;
 }
 .modal-sidebar {
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
+  border: 1px solid var(--text-normal);
+  background-color: var(--background-primary);
 }
 .menu-item.selected:not(.is-label):not(.is-disabled) {
-    background-color: var(--grotto-item-hover);
-    border: 1px solid var(--text-normal);
+  background-color: var(--grotto-item-hover);
+  border: 1px solid var(--text-normal);
 }
 .menu-item:not(.is-label):not(.is-disabled) {
-    background-color: transparent;
-    border: 1px solid transparent;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
-.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-    color: var(--grotto-accent-1);
+.mod-left-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.has-active-menu
+  .workspace-tab-header-inner-icon,
+.mod-left-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.mod-right-split
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--grotto-accent-1);
 }
 
 .modal-sidebar {
-    border: 1px solid var(--text-normal)
+  border: 1px solid var(--text-normal);
 }
 
 .search-result-file-match-destination-file {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
+  box-shadow: none;
+  border: 1px solid var(--text-normal);
+  background-color: var(--background-primary);
 }
 .search-result-file-match-destination-file:hover {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
+  box-shadow: none;
+  border: 1px solid var(--text-normal);
+  background-color: var(--background-primary);
 }
 
 .modal.mod-settings .vertical-tab-header {
-    border-inline-end: 0px solid transparent;
-    border: 1px solid var(--grotto-sidebar-text-color);
-    border-width: 1px 0px 1px 1px;
+  border-inline-end: 0px solid transparent;
+  border: 1px solid var(--grotto-sidebar-text-color);
+  border-width: 1px 0px 1px 1px;
 }
 .vertical-tab-content {
-    border: 1px solid var(--grotto-sidebar-text-color);
-    border-width: 1px 1px 1px 0px;
+  border: 1px solid var(--grotto-sidebar-text-color);
+  border-width: 1px 1px 1px 0px;
 }
 
 .modal-close-button:hover {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 .mod-community-modal .modal-sidebar button.clickable-icon:hover {
-    color: var(--grotto-accent-1);
+  color: var(--grotto-accent-1);
 }
 .community-modal-info {
-    border: 1px solid var(--text-normal);
-    border-width: 0px 1px 1px 0px;
+  border: 1px solid var(--text-normal);
+  border-width: 0px 1px 1px 0px;
 }
 .modal-setting-nav-bar {
-    border: 1px solid var(--text-normal);
-    border-width: 1px 1px 0px 0px;
+  border: 1px solid var(--text-normal);
+  border-width: 1px 1px 0px 0px;
 }
 .bases-toolbar-menu-item {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 .bases-toolbar-menu-item:hover {
-    background-color: var(--grotto-item-hover);
-    border: 1px solid var(--text-normal);
+  background-color: var(--grotto-item-hover);
+  border: 1px solid var(--text-normal);
 }
 
-.is-phone .modal.mod-settings .vertical-tab-header, 
-.is-phone .modal.mod-settings .vertical-tab-content, 
-.is-phone .modal-sidebar, 
+.is-phone .modal.mod-settings .vertical-tab-header,
+.is-phone .modal.mod-settings .vertical-tab-content,
+.is-phone .modal-sidebar,
 .is-phone .community-modal-info {
-    border: 0px solid red;
+  border: 0px solid red;
 }
 
 hr {
-    border-color: var(--text-normal);
+  border-color: var(--text-normal);
 }
 
 .mobile-tab-switcher-menu-button.tappable {
-    color: var(--grotto-sidebar-text-color);
+  color: var(--grotto-sidebar-text-color);
 }
-

@@ -230,7 +230,7 @@ body.theme-light {
   --embed-padding: 0 10px 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "its-Bookerly", "Bookerly", Inter !important;
+  --file-header-font: "its-Bookerly", "Bookerly", Inter !important;
   --file-header-font-size: 15px !important;
   --file-header-font-weight: 600 !important;
   --file-header-justify: center !important;
@@ -245,7 +245,7 @@ body.theme-light {
   --font-default: "its-Bookerly", "Bookerly", Inter !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "its-Bookerly", "Bookerly", Inter !important;
+  --font-interface: "its-Bookerly", "Bookerly", Inter !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
@@ -255,8 +255,7 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print:
-    "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial" !important;
+  --font-print: "its-Bookerly", "Bookerly", Inter, "Arial" !important;
   --font-print-override: "its-Bookerly", "Bookerly", Inter !important;
   --font-semibold: 600 !important;
   --font-small: 0.95em !important;
@@ -451,7 +450,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: #fae0be60 !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "its-Bookerly", "Bookerly", Inter !important;
+  --metadata-input-font: "its-Bookerly", "Bookerly", Inter !important;
   --metadata-input-font-size: 0.9em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -459,7 +458,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: #fae0be60 !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "its-Bookerly", "Bookerly", Inter !important;
+  --metadata-label-font: "its-Bookerly", "Bookerly", Inter !important;
   --metadata-label-font-size: 0.9em !important;
   --metadata-label-text-color: #697580 !important;
   --metadata-label-text-color-hover: #697580 !important;
@@ -1069,7 +1068,6 @@ body.theme-light {
   --hr-icon-color: #c14343 !important;
   --hr-icon-font: "its" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-icon-symbol:   !important;
   --hr-width: auto !important;
   --hvr: rgba(255, 0, 0, 0.212) !important;
   --hvr-active: rgba(182, 28, 28, 0.5) !important;
@@ -1107,7 +1105,6 @@ body.theme-light {
   --kanban-lane-box-shadow: 2px 2px 0 #fbb4577e !important;
   --kanban-lane-padding: 0 4px !important;
   --kanban-link-color: #df6262 !important;
-  --kanban-link-symbol:   !important;
   --kanban-tag-background: #cd645e !important;
   --latex-color: #a35158 !important;
   --latex-format-color: #e2b7a3 !important;
@@ -1534,7 +1531,7 @@ body.theme-dark {
   --embed-padding: 0 10px 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "??", "its-Bookerly", "Bookerly", Inter;
+  --file-header-font: "its-Bookerly", "Bookerly", Inter;
   --file-header-font-size: 15px;
   --file-header-font-weight: 600;
   --file-header-justify: center;
@@ -1549,7 +1546,7 @@ body.theme-dark {
   --font-default: "its-Bookerly", "Bookerly", Inter;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "??", "its-Bookerly", "Bookerly", Inter;
+  --font-interface: "its-Bookerly", "Bookerly", Inter;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
@@ -1559,7 +1556,7 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial";
+  --font-print: "its-Bookerly", "Bookerly", Inter, "Arial";
   --font-print-override: "its-Bookerly", "Bookerly", Inter;
   --font-semibold: 600;
   --font-small: 0.95em;
@@ -1754,7 +1751,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: #06080c60;
   --metadata-input-background-hover: transparent;
-  --metadata-input-font: "??", "its-Bookerly", "Bookerly", Inter;
+  --metadata-input-font: "its-Bookerly", "Bookerly", Inter;
   --metadata-input-font-size: 0.9em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1762,7 +1759,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: #06080c60;
   --metadata-label-background-hover: transparent;
-  --metadata-label-font: "??", "its-Bookerly", "Bookerly", Inter;
+  --metadata-label-font: "its-Bookerly", "Bookerly", Inter;
   --metadata-label-font-size: 0.9em;
   --metadata-label-text-color: #97a1b9;
   --metadata-label-text-color-hover: #97a1b9;
@@ -2321,7 +2318,6 @@ body.theme-dark {
   --hr-icon-color: #c14343;
   --hr-icon-font: "its";
   --hr-icon-padding-x: 4px;
-  --hr-icon-symbol: ;
   --hr-width: auto;
   --hvr: rgba(168, 60, 60, 0.4);
   --hvr-active: rgba(212, 47, 47, 0.4);
@@ -2359,7 +2355,6 @@ body.theme-dark {
   --kanban-lane-box-shadow: 2px 2px 0 #0000008c;
   --kanban-lane-padding: 0 4px;
   --kanban-link-color: #61afef;
-  --kanban-link-symbol: ;
   --kanban-tag-background: #652121;
   --latex-color: #c94d4d;
   --latex-format-color: #586477;

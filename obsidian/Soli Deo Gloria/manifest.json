@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "agodlyman",
   "authorUrl": "https://github.com/GodlyMan-bit",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

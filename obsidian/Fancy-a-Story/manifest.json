@@ -4,8 +4,5 @@
   "minAppVersion": "1.6.7",
   "author": "Kapirklaa",
   "authorUrl": "https://github.com/ElsaTam",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

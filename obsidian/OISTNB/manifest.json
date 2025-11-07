@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "omsandeeppatil",
   "authorUrl": "https://github.com/omsandippatil",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

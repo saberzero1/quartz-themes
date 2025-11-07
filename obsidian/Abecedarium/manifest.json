@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "zalenza",
   "authorUrl": "https://notes.zacklenza.com",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

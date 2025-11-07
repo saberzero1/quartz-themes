@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.2",
   "author": "pr0methevs",
   "authorUrl": "https://github.com/pr0methevs",
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

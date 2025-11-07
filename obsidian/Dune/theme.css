@@ -4010,35 +4010,35 @@ a.tag {
   ----------------------------------------------------------------*/
 
 a:is(
-    [href="#red"],
-    [href="#rot"],
-    [href="#green"],
-    [href="#grün"],
-    [href="#blue"],
-    [href="#blau"],
-    [href="#gray"],
-    [href="#grau"],
-    [href="#cite-de"],
-    [href="#cite-br"],
-    [href="#cite-fr"],
-    [href="#zitat-de"],
-    [href="#zitat-br"],
-    [href="#zitat-fr"],
-    [href="#sub"],
-    [href="#sup"],
-    [href="#line-a"],
-    [href="#line-b"],
-    [href="#line-c"],
-    [href="#strich-a"],
-    [href="#strich-b"],
-    [href="#strich-c"],
-    [href="#indent"],
-    [href="#einzug"],
-    [href="#raisecap"],
-    [href="#majuskel"],
-    [href="#dropcap"],
-    [href="#initiale"]
-  ) {
+  [href="#red"],
+  [href="#rot"],
+  [href="#green"],
+  [href="#grün"],
+  [href="#blue"],
+  [href="#blau"],
+  [href="#gray"],
+  [href="#grau"],
+  [href="#cite-de"],
+  [href="#cite-br"],
+  [href="#cite-fr"],
+  [href="#zitat-de"],
+  [href="#zitat-br"],
+  [href="#zitat-fr"],
+  [href="#sub"],
+  [href="#sup"],
+  [href="#line-a"],
+  [href="#line-b"],
+  [href="#line-c"],
+  [href="#strich-a"],
+  [href="#strich-b"],
+  [href="#strich-c"],
+  [href="#indent"],
+  [href="#einzug"],
+  [href="#raisecap"],
+  [href="#majuskel"],
+  [href="#dropcap"],
+  [href="#initiale"]
+) {
   display: none !important;
 }
 
@@ -5010,20 +5010,20 @@ span.cm-hmd-codeblock.cm-meta {
   CALLOUTS 
   ----------------------------------------------------------------*/
 .callout:is(
-    [data-callout-metadata~="l"],
-    [data-callout-metadata~="lh"],
-    [data-callout-metadata~="lv"]
-  ) {
+  [data-callout-metadata~="l"],
+  [data-callout-metadata~="lh"],
+  [data-callout-metadata~="lv"]
+) {
   float: left;
   clear: left;
   margin-right: 1em;
 }
 
 .callout:is(
-    [data-callout-metadata~="r"],
-    [data-callout-metadata~="rh"],
-    [data-callout-metadata~="rv"]
-  ) {
+  [data-callout-metadata~="r"],
+  [data-callout-metadata~="rh"],
+  [data-callout-metadata~="rv"]
+) {
   float: right;
   clear: right;
   margin-left: 1em;

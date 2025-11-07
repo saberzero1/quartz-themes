@@ -1,7 +1,9 @@
 # Obsidian Theme Orange
+
 Copyright (c) [Alex Frangiamore] [2024]
 
 ## License
+
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Theme"), to deal in the Theme without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Theme, and to permit persons to whom the Theme is furnished to do so, subject to the following conditions:

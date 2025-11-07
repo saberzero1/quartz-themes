@@ -4,8 +4,5 @@
   "minAppVersion": "1.2.1",
   "author": "jaysan0",
   "authorUrl": "https://github.com/jaysan0",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -4,8 +4,5 @@
   "minAppVersion": "0.1.0",
   "author": "bluecosmo",
   "authorUrl": "https://cosmodiumcs.com",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

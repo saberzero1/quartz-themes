@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.1",
   "author": "Atmanand Gauns",
   "authorUrl": "https://github.com/tu2-atmanand",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

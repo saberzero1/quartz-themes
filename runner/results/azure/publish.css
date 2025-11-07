@@ -404,7 +404,7 @@ body.theme-light {
   --font-medium: 500 !important;
   --font-mermaid: "Consolas", monospace !important;
   --font-monospace:
-    "??", "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -415,7 +415,7 @@ body.theme-light {
   --font-monospace-theme: "Consolas", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    "??", "Consolas", monospace, "Consolas", monospace, "Arial" !important;
+    "Consolas", monospace, "Consolas", monospace, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 16px !important;
@@ -1245,7 +1245,7 @@ body.theme-dark {
   --font-medium: 500;
   --font-mermaid: "Consolas", monospace;
   --font-monospace:
-    "??", "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
   --font-monospace-default:
@@ -1255,7 +1255,7 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "Consolas", monospace;
   --font-normal: 400;
-  --font-print: "??", "Consolas", monospace, "Consolas", monospace, "Arial";
+  --font-print: "Consolas", monospace, "Consolas", monospace, "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 16px;

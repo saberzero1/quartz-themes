@@ -1,7 +1,7 @@
 {
-	"name": "Noctilux",
-	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "RastGame",
-	"authorUrl": "https://github.com/rastgame"
+  "name": "Noctilux",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "author": "RastGame",
+  "authorUrl": "https://github.com/rastgame"
 }

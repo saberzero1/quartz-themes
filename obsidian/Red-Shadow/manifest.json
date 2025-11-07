@@ -5,8 +5,5 @@
   "author": "@dkliberty",
   "authorUrl": "https://github.com/DKLiberty",
   "fundingUrl": "https://www.buymeacoffee.com/dkliberty",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

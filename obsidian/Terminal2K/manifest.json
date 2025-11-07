@@ -6,12 +6,6 @@
   "repo": "isax785/Terminal2K",
   "screenshot": "img/screenshot.png",
   "authorUrl": "https://github.com/isax785",
-  "modes": [
-    "dark",
-    "light"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark", "light"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Josef Bisits",
   "authorUrl": "https://jbisits.github.io/",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

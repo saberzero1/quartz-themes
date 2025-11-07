@@ -378,9 +378,9 @@ body.theme-light {
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
-    noto, arial, sans-serif !important;
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif !important;
   --font-monospace:
     "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace !important;
@@ -391,16 +391,16 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
+  --font-print: "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
-    noto, arial, sans-serif !important;
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1176,9 +1176,9 @@ body.theme-dark {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
-    noto, arial, sans-serif;
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   --font-monospace:
     "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
@@ -1189,16 +1189,16 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "??", "??", "??", "Arial";
+  --font-print: "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
-    noto, arial, sans-serif;
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";

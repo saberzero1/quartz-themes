@@ -3,8 +3,5 @@
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
   "author": "solmi",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

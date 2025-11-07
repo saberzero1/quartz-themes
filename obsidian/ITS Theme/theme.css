@@ -13121,9 +13121,9 @@ body:not(.default-callout-quote, .callout-no-quote)
 
 .callout-original .callout,
 .callout:is(
-    [data-callout-metadata~="callout-original"],
-    [data-callout-metadata~="co-o"]
-  ) {
+  [data-callout-metadata~="callout-original"],
+  [data-callout-metadata~="co-o"]
+) {
   --callout-padding: 0;
   --callout-title-padding: 10px 15px;
   --callout-content-padding: 5px 15px;
@@ -13145,9 +13145,9 @@ body:not(.default-callout-quote, .callout-no-quote)
 
 .callout-block .callout,
 .callout:is(
-    [data-callout-metadata~="callout-block"],
-    [data-callout-metadata~="co-block"]
-  ) {
+  [data-callout-metadata~="callout-block"],
+  [data-callout-metadata~="co-block"]
+) {
   --callout-padding: 0;
   --callout-content-padding: 0 10px;
   --callout-title-padding: 6px 10px;

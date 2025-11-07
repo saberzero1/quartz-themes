@@ -4,8 +4,5 @@
   "minAppVersion": "1.0",
   "author": "zamsyt",
   "authorUrl": "https://github.com/zamsyt",
-  "license": {
-    "name": "The Unlicense",
-    "spdx_id": "Unlicense"
-  }
+  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
 }

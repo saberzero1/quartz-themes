@@ -1231,10 +1231,10 @@ body:is(:not(.css-settings-manager), .toggle-note-animation)
 
 /* easier hover adaption color */
 :is(
-    .workspace-tab-header-status-icon,
-    .workspace-tab-header-inner-close-button,
-    .clickable-icon
-  ):hover {
+  .workspace-tab-header-status-icon,
+  .workspace-tab-header-inner-close-button,
+  .clickable-icon
+):hover {
   background-color: var(--background-modifier-hover);
   filter: brightness(0.8);
 }

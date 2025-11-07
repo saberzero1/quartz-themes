@@ -5,11 +5,6 @@
   "minAppVersion": "1.6.3",
   "author": "bladeacer",
   "screenshot": "./docs/dark.png",
-  "modes": [
-    "dark"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

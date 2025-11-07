@@ -4,8 +4,5 @@
   "minAppVersion": "1.9.0",
   "author": "Isaac Freeman",
   "authorUrl": "https://isaac.freeman.org.nz",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "GuiMar10",
   "authorUrl": "https://github.com/GuiMar10",
-  "license": {
-    "name": "Mozilla Public License 2.0",
-    "spdx_id": "MPL-2.0"
-  }
+  "license": { "name": "Mozilla Public License 2.0", "spdx_id": "MPL-2.0" }
 }

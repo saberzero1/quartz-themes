@@ -9,8 +9,5 @@
     "Ko-Fi": "https://ko-fi.com/pseudometa",
     "PayPal": "https://www.paypal.me/ChrisGrieser"
   },
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -5,8 +5,5 @@
   "author": "eliz-abeth",
   "authorUrl": "https://github.com/eliz-abeth",
   "fundingUrl": "http://ko-fi.com/eliz0beth",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -5,8 +5,5 @@
   "description": "This is the GitHub theme with color modifications made for Trace Labs",
   "author": "Trace Labs",
   "authorUrl": "https://github.com/tracelabs",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

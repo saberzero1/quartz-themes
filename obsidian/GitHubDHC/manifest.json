@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "Scott Kirvan",
   "authorUrl": "https://github.com/ScottKirvan",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

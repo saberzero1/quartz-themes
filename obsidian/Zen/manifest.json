@@ -4,8 +4,5 @@
   "minAppVersion": "1.6.7",
   "author": "laughmaker",
   "authorUrl": "https://github.com/laughmaker",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }
