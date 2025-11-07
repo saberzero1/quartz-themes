@@ -427,20 +427,18 @@ ${bodyVarsStringDarkQuartz}
 
 ${colorSchemeSection}
 
-${
-  lightData && darkData
-    ? ""
-    : `
+${lightData && darkData
+      ? ""
+      : `
 .darkmode {
   display: none;
 }
 `
-}
+    }
 
 html {
-${
-  lightData && darkData
-    ? `
+${lightData && darkData
+      ? `
   &[saved-theme="light"] {
     color-scheme: light;
     .callout[data-callout] {
@@ -454,22 +452,22 @@ ${
     }
   }
 `
-    : lightData
-      ? `
+      : lightData
+        ? `
   color-scheme: only light;
   .callout[data-callout] {
     mix-blend-mode: darken;
   }
 `
-      : darkData
-        ? `
+        : darkData
+          ? `
   color-scheme: only dark;
   .callout[data-callout] {
     mix-blend-mode: lighten;
   }
 `
-        : ""
-}
+          : ""
+    }
 }
 
 ${fontString}
@@ -930,12 +928,15 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    div#quartz-root.page:not(:has(.sidebar:hover)) {
-      background-color: transparent;
+    div#quartz-root.page {
       transition: background-color .2s;
-      .sidebar {
-        opacity: 0 !important;
-        transition: opacity .2s;
+      &:not(:has(.sidebar:hover)) {
+        background-color: transparent;
+        transition: background-color .2s;
+        .sidebar {
+          opacity: 0 !important;
+          transition: opacity .2s;
+        }
       }
     }
     div#quartz-root.page:not(:has(.center:hover, footer:hover)):hover {
@@ -989,15 +990,14 @@ ${bodyVarsStringDarkPublish}}
 
   resultPublishScss += `
 body {
-${
-  lightPublishData && darkPublishData
-    ? ""
-    : `
+${lightPublishData && darkPublishData
+      ? ""
+      : `
   .site-body-left-column-site-theme-toggle {
     display: none;
   }
 `
-}`;
+    }`;
 
   for (const [key, value] of Object.entries(dataPublish)) {
     const values = Object.entries(value)
