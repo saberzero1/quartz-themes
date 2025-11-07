@@ -1906,6 +1906,8 @@ body {
   @media all and ($desktop) {
     div#quartz-root.page {
       /* workaround for reader-mode */
+      display: grid;
+      place-items: center;
       width: 100%;
       min-width: 100%;
       max-width: 100%;
