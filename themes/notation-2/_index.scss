@@ -1881,8 +1881,8 @@ body {
         transition: opacity 0.2s;
       }
       &:hover {
-        background-color: revert-layer !imporant;
-        border-color: revert-layer !imporant;
+        background-color: revert-layer !important;
+        border-color: revert-layer !important;
       }
       &:hover > * {
         opacity: 1 !important;
