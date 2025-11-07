@@ -938,7 +938,7 @@ body {
         transition: opacity .2s;
       }
     }
-    div#quartz-root.page:not(:has(.center:hover, footer:hover)):has(.sidebar:hover) {
+    div#quartz-root.page:not(:has(.center:hover, footer:hover)):hover {
       .sidebar {
         opacity: 1 !important;
         transition: opacity .2s;
