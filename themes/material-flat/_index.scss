@@ -2526,8 +2526,8 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    &:has(.sidebar:hover) {
-      background-color: revert-layer;
+    &:not(:has(.sidebar:hover)) {
+      background-color: transparent;
     }
     .sidebar.left,
     .sidebar.right {
