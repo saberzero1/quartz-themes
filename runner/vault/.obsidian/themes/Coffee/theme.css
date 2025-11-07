@@ -227,7 +227,7 @@ body {
   --h6-color: var(--crema);
 
   --code-normal: var(--dark-green-beans);
-  --code-background:var(--latte) ; 
+  --code-background: var(--latte);
   --code-background-hver: var(--americano);
 
   --nav-header-color: var(--americano);
@@ -246,7 +246,7 @@ body {
   --nav-collapse-icon-color: var(--crema);
   --nav-collapse-icon-color-collapsed: var(--moccacino);
 
-  --link-color:var(--moccacino);
+  --link-color: var(--moccacino);
   --link-color-hover: var(--crema);
   --link-unresolved-color: var(--moccacino);
   --link-unresolved-opacity:80%;
@@ -271,9 +271,9 @@ body {
 
   --tag-color: var(--moccacino);
   --tag-color-hover: var(--crema);
-  --tag-background:;  var(--americano);
+  --tag-background: var(--americano);
   --tag-background-hover: var(--americano);
-  --tag-border-color:var(--americano) ;
+  --tag-border-color: var(--americano);
   --tag-border-color-hover: var(--americano);
   
   --table-border-color: var(--background-secondary-alt);
@@ -284,9 +284,9 @@ body {
   --table-header-weight: bold;
   --table-header-color: var(--text-accent);
   --table-text-color: var(--text-normal);
-  --table-column-alt-background:;
-  --table-row-background-hover: var(--background-secondary-alt) ;
-  --table-row-alt-background var(--background-secondary-alt);
+  --table-column-alt-background: transparent;
+  --table-row-background-hover: var(--background-secondary-alt);
+  --table-row-alt-background: var(--background-secondary-alt);
   --table-selection: var(--cappucino);
   --table-selection-blend-mode: soft-light ;
   --table-selection-border-color: var(--cappucino);
@@ -421,7 +421,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
 input.prompt-input {
     border-radius: 5px;
     margin: 5px;
-    background: var(--background-settings-2);x
+    background: var(--background-settings-2);
     padding: 15px; 
 }
 /* Prompt ====================================== prompt ====================================== propmt */
