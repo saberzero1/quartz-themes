@@ -159,9 +159,9 @@ body {
     color: rgb(39, 56, 75);
   }
 
+  &[data-slug],
   .page > div#quartz-body div.center,
-  .page > div#quartz-body footer,
-  :root[reader-mode="on"] body[data-slug] {
+  .page > div#quartz-body footer {
     background-color: rgb(254, 254, 254);
     color: rgb(39, 56, 75);
   }
