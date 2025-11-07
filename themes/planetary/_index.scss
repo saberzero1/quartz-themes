@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../variables.scss" as *;
 
 :root {
@@ -1846,6 +1847,13 @@ body {
   }
 
   @media all and ($desktop) {
+    div#quartz-root.page {
+      /* workaround for reader-mode */
+      width: 100%;
+      max-width: 100%;
+      padding: 0
+        max(0, calc((100% - (#{map.get($breakpoints, desktop)} + 300px)) / 2));
+    }
     .page > #quartz-body {
       div.center,
       footer {
