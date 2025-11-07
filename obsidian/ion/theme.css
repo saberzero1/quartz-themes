@@ -172,15 +172,15 @@ h6 {
 }
 
 :is(
-    textarea,
-    input:is(
-        [type="text"],
-        [type="search"],
-        [type="email"],
-        [type="password"],
-        [type="number"]
-      )
-  )::placeholder {
+  textarea,
+  input:is(
+    [type="text"],
+    [type="search"],
+    [type="email"],
+    [type="password"],
+    [type="number"]
+  )
+)::placeholder {
   color: hsl(var(--ion-hs), 40%);
 }
 
@@ -235,10 +235,10 @@ a,
   --callout-l-p: 63;
 }
 .callout:is(
-    [data-callout="abstract"],
-    [data-callout="summary"],
-    [data-callout="tldr"]
-  ) {
+  [data-callout="abstract"],
+  [data-callout="summary"],
+  [data-callout="tldr"]
+) {
   --callout-h: 198;
   --callout-s: 100%;
   --callout-l-p: 50;
@@ -249,46 +249,46 @@ a,
   --callout-l-p: 41;
 }
 .callout:is(
-    [data-callout="tip"],
-    [data-callout="hint"],
-    [data-callout="important"]
-  ) {
+  [data-callout="tip"],
+  [data-callout="hint"],
+  [data-callout="important"]
+) {
   --callout-h: 171;
   --callout-s: 100%;
   --callout-l-p: 37;
 }
 .callout:is(
-    [data-callout="success"],
-    [data-callout="check"],
-    [data-callout="done"]
-  ) {
+  [data-callout="success"],
+  [data-callout="check"],
+  [data-callout="done"]
+) {
   --callout-h: 144;
   --callout-s: 100%;
   --callout-l-p: 39;
 }
 .callout:is(
-    [data-callout="question"],
-    [data-callout="help"],
-    [data-callout="faq"]
-  ) {
+  [data-callout="question"],
+  [data-callout="help"],
+  [data-callout="faq"]
+) {
   --callout-h: 96;
   --callout-s: 81%;
   --callout-l-p: 47;
 }
 .callout:is(
-    [data-callout="warning"],
-    [data-callout="caution"],
-    [data-callout="attention"]
-  ) {
+  [data-callout="warning"],
+  [data-callout="caution"],
+  [data-callout="attention"]
+) {
   --callout-h: 34;
   --callout-s: 100%;
   --callout-l-p: 50;
 }
 .callout:is(
-    [data-callout="failure"],
-    [data-callout="fail"],
-    [data-callout="missing"]
-  ) {
+  [data-callout="failure"],
+  [data-callout="fail"],
+  [data-callout="missing"]
+) {
   --callout-h: 0;
   --callout-s: 100%;
   --callout-l-p: 66;

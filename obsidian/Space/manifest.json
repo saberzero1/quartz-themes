@@ -5,8 +5,5 @@
   "author": "BHappen",
   "authorUrl": "https://bhappen.com",
   "fundingUrl": "https://buymeacoffee.com/bhappen",
-  "license": {
-    "name": "Other",
-    "spdx_id": "NOASSERTION"
-  }
+  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
 }

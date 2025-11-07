@@ -6,12 +6,6 @@
   "authorUrl": "https://github.com/Seniblue",
   "repo": "Seniblue/Underwater",
   "screenshot": "uw.png",
-  "modes": [
-    "dark",
-    "light"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark", "light"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

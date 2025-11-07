@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "nickmilo",
   "authorUri": "https://github.com/nickmilo/Cybertron/",
-  "license": {
-    "name": "No License Found",
-    "spdx_id": "No SPDX ID Found"
-  }
+  "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
 }

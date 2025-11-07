@@ -26,245 +26,224 @@ body {
   --h6-size: 1em;
 }
 
-.theme-dark
-      {
-      --button-hover-bg-color: #a271c0; /* Darker Yellow Background for Hover */
-      --button-hover-text-color: #d8d8d8; /* White Text for Hover */
-      --button-bg-color: #915cb2; /* Gray-Black Background */
-      --button-text-color: #d8d8d8; /* Light Gray Text */   
-      --background-primary:         #181818;
-      --background-primary-alt:     #373737;
-      --background-secondary:       #000000;
-      --background-secondary-alt:   #2c2c2c;
-      
-      --text-normal:                #e7e7e7;
-      --text-faint:                 #af9edb;
-      --text-title-h1:              #ffffff;
-      --text-title-h2:              #ffffff;
-      --text-title-h3:              #ffffff;
-      --text-title-h4:              #ffffff;
-      --text-title-h5:              #ffffff;
-      --text-title-h6:              #ffffff;
-      --text-h1-background:         #991e2a;
-      --text-h2-background:         #771675;
-      --text-h3-background:         #1952a2;
-      --text-h4-background:         #146464;
-      --text-h5-background:         #126127;
-      --text-h6-background:         #d1920a;
-      --text-highlight-bg:          #e36600;
-      --text-link:                  #83a598; 
-      --text-a-hover:               #83a598; 
-      --text-accent-hover:          #da9fff;
+.theme-dark {
+  --button-hover-bg-color: #a271c0; /* Darker Yellow Background for Hover */
+  --button-hover-text-color: #d8d8d8; /* White Text for Hover */
+  --button-bg-color: #915cb2; /* Gray-Black Background */
+  --button-text-color: #d8d8d8; /* Light Gray Text */
+  --background-primary: #181818;
+  --background-primary-alt: #373737;
+  --background-secondary: #000000;
+  --background-secondary-alt: #2c2c2c;
 
-      --titlebar-text-color-focused: #ffffff;
-      --titlebar-text-color:         #ffffff;
-      --status-bar-text-color:       #ffffff;
-/* ^^^ added for hover over bracket internal links */
-      --icon-color:                 #d65fd4;
-      --icon-color-focused:         #dba0ff;
-      --icon-color-hover:           #e3b7ff;
+  --text-normal: #e7e7e7;
+  --text-faint: #af9edb;
+  --text-title-h1: #ffffff;
+  --text-title-h2: #ffffff;
+  --text-title-h3: #ffffff;
+  --text-title-h4: #ffffff;
+  --text-title-h5: #ffffff;
+  --text-title-h6: #ffffff;
+  --text-h1-background: #991e2a;
+  --text-h2-background: #771675;
+  --text-h3-background: #1952a2;
+  --text-h4-background: #146464;
+  --text-h5-background: #126127;
+  --text-h6-background: #d1920a;
+  --text-highlight-bg: #e36600;
+  --text-link: #83a598;
+  --text-a-hover: #83a598;
+  --text-accent-hover: #da9fff;
 
-      
- /* ^^^ added for hover over bracket internal links */
-      --inline-code:                #83a598; 
-      --code-background:            #333333;
-      --code-block:                 #83a598;
-      --code-size:                  var(--font-medium); 
-      --text-a:                     #c76cff; 
-      --interactive-accent:         #c76cff;
-      --text-accent:                #9748c9; 
-      --text-on-accent:             #fff;
-      --interactive-accent-rgb:     #c76cff; 
-      --vim-cursor:                 #c76cff; 
-      /*  --text-mark:                  add text-mark if needed, this should work together with 'mark' */
-      --pre-code:                   #;
-      --interactive-before:         #7c6f64;
-      --text-selection:             #915cb2;
+  --titlebar-text-color-focused: #ffffff;
+  --titlebar-text-color: #ffffff;
+  --status-bar-text-color: #ffffff;
+  /* ^^^ added for hover over bracket internal links */
+  --icon-color: #d65fd4;
+  --icon-color-focused: #dba0ff;
+  --icon-color-hover: #e3b7ff;
 
-      --nav-item-color-active:      #d8d8d8;
-      --nav-item-color-hover:       #ffeeee;
-      --nav-item-color-selected:    #eba2a2;
-         
-      --font-monospace: var(--font-code-blocks);
-      --font-interface: var(--font-text-normal);
-      --font-text: var(--font-text-normal);
+  /* ^^^ added for hover over bracket internal links */
+  --inline-code: #83a598;
+  --code-background: #333333;
+  --code-block: #83a598;
+  --code-size: var(--font-medium);
+  --text-a: #c76cff;
+  --interactive-accent: #c76cff;
+  --text-accent: #9748c9;
+  --text-on-accent: #fff;
+  --interactive-accent-rgb: #c76cff;
+  --vim-cursor: #c76cff;
+  /*  --text-mark:                  add text-mark if needed, this should work together with 'mark' */
+  --pre-code: #;
+  --interactive-before: #7c6f64;
+  --text-selection: #915cb2;
 
-      --font-headers: var(--font-text-headers);
-      --inline-title-font: var(--font-text-headers);
-    
-      --tab-font-weight: bold;
-      --nav-item-weight: bold;
-      }
+  --nav-item-color-active: #d8d8d8;
+  --nav-item-color-hover: #ffeeee;
+  --nav-item-color-selected: #eba2a2;
 
-.theme-dark .cm-s-obsidian span.obsidian-search-match-highlight 
-{
-    color: var(--text-normal);
-    background-color: #3b2c1f;
+  --font-monospace: var(--font-code-blocks);
+  --font-interface: var(--font-text-normal);
+  --font-text: var(--font-text-normal);
+
+  --font-headers: var(--font-text-headers);
+  --inline-title-font: var(--font-text-headers);
+
+  --tab-font-weight: bold;
+  --nav-item-weight: bold;
 }
 
-.theme-dark .workspace-leaf.mod-active .clickable-icon
-{
-    color:#d38dff;
-    opacity: 1;
+.theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
+  color: var(--text-normal);
+  background-color: #3b2c1f;
 }
 
-.theme-dark .tree-item-self
-{
-    --text-normal:rgb(255, 255, 255);
+.theme-dark .workspace-leaf.mod-active .clickable-icon {
+  color: #d38dff;
+  opacity: 1;
 }
 
-.theme-dark .workspace-tab-header-inner-icon
-{
-    --tab-text-color-focused-active-current:         #ffffff;
-}
-.theme-dark .workspace-tab-header
-{
-    color: #c76fe2;
-    font-family: var(--font-code-blocks);
+.theme-dark .tree-item-self {
+  --text-normal: rgb(255, 255, 255);
 }
 
-.theme-dark .menu-item-title
-{
-    color:#ffffff;
+.theme-dark .workspace-tab-header-inner-icon {
+  --tab-text-color-focused-active-current: #ffffff;
 }
-.theme-dark .menu-item-icon
-{
-    color:var(--icon-color)
-}
-
-.theme-light
-     {
-        
-         --background-primary:         #e7e7e7;
-         --background-secondary:       #991e2a;
-          /* thick menu border */
-         --background-primary-alt:     #707070;
-         --background-secondary-alt:   #991e2a; /* ← ↓  corner */
-         --text-normal:                #000000;
-         --text-faint:                 #ff8585;
-         --text-title-h1:              #e7e7e7;
-         --text-title-h2:              #e7e7e7;
-         --text-title-h3:              #e7e7e7;
-         --text-title-h4:              #e7e7e7;
-         --text-title-h5:              #e7e7e7;
-         --text-title-h6:              #640a0d;
-         --text-h1-background:         #C21F25;
-         --text-h2-background:         #e93538;
-         --text-h3-background:         #380a74;
-         --text-h4-background:         #87007f;
-         --text-h5-background:         #67bc45;
-         --text-link:                  #424448;
-         --text-a-hover:               #8a8e96;
-         --text-accent-hover:          #8e929b;
-        
-         --titlebar-text-color-focused: #ffffff;
-         --titlebar-text-color:         #ffffff;
-         --status-bar-text-color:       #ffffff;
-/* ^^^ added for hover over bracket internal links */
-         --inline-code:                #458588;
-         --code-background:            #ebd9d9;
-         --code-size:                  var(--font-medium); 
-
-         --icon-color:                 #bebebe;
-         --icon-color-focused:         #d8d8d8;
-         --icon-color-hover:           #ffffff;
-
-         /*  --text-mark:                  add if needed */
-         --pre-code:                   #bebebe;
-         --text-highlight-bg:          #5ea9ff;
-         --interactive-before:         #a89984;
-         --background-modifier-border: #af303d;
-         --text-a:                     #ff3e3e;
-         --interactive-accent:         #ff3e3e;
-         --text-accent:                #ff3e3e;
-         --interactive-accent-rgb:     #ff3e3e;
-         --vim-cursor:                 #ff3e3e;
-         --text-selection:             #8fc3ff;
-         --text-white:                 #ffffff;
-         --nav-item-color-active:      #ffffff;
-         --nav-item-color-hover:       #ffeeee;
-         --nav-item-color-selected:    #eba2a2;
-
-         --font-monospace: var(--font-code-blocks);
-        --font-interface: var(--font-text-normal);
-        --font-text: var(--font-text-normal);
-
-        --font-headers: var(--font-text-headers);
-        --inline-title-font: var(--font-text-headers);
-
-  	--tab-font-weight: bold;
-  	--nav-item-weight: bold;
-  	--nav-item-weight-hover: bold;
-  	--nav-item-weight-active: bold;
-     }
-     
-.theme-light .workspace-leaf.mod-active .clickable-icon
-{
-    color:#8a8e96;
-    opacity: 1;
+.theme-dark .workspace-tab-header {
+  color: #c76fe2;
+  font-family: var(--font-code-blocks);
 }
 
-.theme-light .tree-item-self
-{
-    --text-normal:rgb(255, 255, 255);
+.theme-dark .menu-item-title {
+  color: #ffffff;
+}
+.theme-dark .menu-item-icon {
+  color: var(--icon-color);
 }
 
-.theme-light .workspace-tab-header-inner-icon
-{
-    --tab-text-color-focused-active-current:         #ffffff;
-    
+.theme-light {
+  --background-primary: #e7e7e7;
+  --background-secondary: #991e2a;
+  /* thick menu border */
+  --background-primary-alt: #707070;
+  --background-secondary-alt: #991e2a; /* ← ↓  corner */
+  --text-normal: #000000;
+  --text-faint: #ff8585;
+  --text-title-h1: #e7e7e7;
+  --text-title-h2: #e7e7e7;
+  --text-title-h3: #e7e7e7;
+  --text-title-h4: #e7e7e7;
+  --text-title-h5: #e7e7e7;
+  --text-title-h6: #640a0d;
+  --text-h1-background: #c21f25;
+  --text-h2-background: #e93538;
+  --text-h3-background: #380a74;
+  --text-h4-background: #87007f;
+  --text-h5-background: #67bc45;
+  --text-link: #424448;
+  --text-a-hover: #8a8e96;
+  --text-accent-hover: #8e929b;
+
+  --titlebar-text-color-focused: #ffffff;
+  --titlebar-text-color: #ffffff;
+  --status-bar-text-color: #ffffff;
+  /* ^^^ added for hover over bracket internal links */
+  --inline-code: #458588;
+  --code-background: #ebd9d9;
+  --code-size: var(--font-medium);
+
+  --icon-color: #bebebe;
+  --icon-color-focused: #d8d8d8;
+  --icon-color-hover: #ffffff;
+
+  /*  --text-mark:                  add if needed */
+  --pre-code: #bebebe;
+  --text-highlight-bg: #5ea9ff;
+  --interactive-before: #a89984;
+  --background-modifier-border: #af303d;
+  --text-a: #ff3e3e;
+  --interactive-accent: #ff3e3e;
+  --text-accent: #ff3e3e;
+  --interactive-accent-rgb: #ff3e3e;
+  --vim-cursor: #ff3e3e;
+  --text-selection: #8fc3ff;
+  --text-white: #ffffff;
+  --nav-item-color-active: #ffffff;
+  --nav-item-color-hover: #ffeeee;
+  --nav-item-color-selected: #eba2a2;
+
+  --font-monospace: var(--font-code-blocks);
+  --font-interface: var(--font-text-normal);
+  --font-text: var(--font-text-normal);
+
+  --font-headers: var(--font-text-headers);
+  --inline-title-font: var(--font-text-headers);
+
+  --tab-font-weight: bold;
+  --nav-item-weight: bold;
+  --nav-item-weight-hover: bold;
+  --nav-item-weight-active: bold;
 }
-.theme-light .workspace-tab-header
-{
-    color: #e77474;
-    font-family: var(--font-code-blocks);
+
+.theme-light .workspace-leaf.mod-active .clickable-icon {
+  color: #8a8e96;
+  opacity: 1;
 }
 
-.theme-light .menu-item-title, .theme-light .menu-item-icon
-{
-    color:#e6e6e6;
+.theme-light .tree-item-self {
+  --text-normal: rgb(255, 255, 255);
 }
 
-.nav-file-title, .nav-folder-title {
-    color: white;
+.theme-light .workspace-tab-header-inner-icon {
+  --tab-text-color-focused-active-current: #ffffff;
 }
-.workspace-drawer-vault-name
-{
-    color:rgb(231, 231, 231);
+.theme-light .workspace-tab-header {
+  color: #e77474;
+  font-family: var(--font-code-blocks);
 }
 
+.theme-light .menu-item-title,
+.theme-light .menu-item-icon {
+  color: #e6e6e6;
+}
 
+.nav-file-title,
+.nav-folder-title {
+  color: white;
+}
+.workspace-drawer-vault-name {
+  color: rgb(231, 231, 231);
+}
 
-
-.nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover 
-{
-    background-color: var(--background-modifier-border);
-    color: white;
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--background-modifier-border);
+  color: white;
 }
 
 .cm-s-obsidian span.cm-formatting-link {
-    color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 .CodeMirror-guttermarker-subtle {
-    color: var(--text-normal) !important;
-    
+  color: var(--text-normal) !important;
 }
 
 button.mod-cta {
-    background-color: var(--interactive-accent);
-    color: var(--text-normal);
-    
+  background-color: var(--interactive-accent);
+  color: var(--text-normal);
 }
 
-.vertical-tab-header-group
-{
-    color: var(--text-white);
+.vertical-tab-header-group {
+  color: var(--text-white);
 }
 
-.inline-title
-{
-    text-transform:uppercase;
+.inline-title {
+  text-transform: uppercase;
 }
 
 .cm-header-1,

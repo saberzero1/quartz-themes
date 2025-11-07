@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "dragonwocky",
   "authorUrl": "https://dragonwocky.me",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

@@ -10,8 +10,5 @@
     "Paypal": "https://paypal.me/tu2atmanand",
     "ko-fi": "https://ko-fi.com/atmanandgauns"
   },
-  "license": {
-    "name": "GNU General Public License v3.0",
-    "spdx_id": "GPL-3.0"
-  }
+  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
 }

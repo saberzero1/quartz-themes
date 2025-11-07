@@ -3,12 +3,6 @@
   "version": "2.0.1",
   "minAppVersion": "1.0.0",
   "author": "fabdub",
-  "modes": [
-    "dark",
-    "light"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark", "light"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

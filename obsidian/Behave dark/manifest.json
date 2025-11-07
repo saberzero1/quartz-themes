@@ -4,8 +4,5 @@
   "minAppVersion": "0.16.0",
   "author": "Chrismettal",
   "authorUrl": "https://gitlab.com/chrismettal",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

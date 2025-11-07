@@ -4,8 +4,5 @@
   "minAppVersion": "1.6.1",
   "author": "Spekulucius",
   "authorUrl": "https://github.com/Spekulucius",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

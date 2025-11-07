@@ -1199,19 +1199,19 @@ input[type="search"] {
 }
 
 button:not(
-    .mod-cta,
-    .clickable-icon.view-action,
-    .clickable-icon[aria-disabled="true"],
-    .mod-warning,
-    .mod-tappable,
-    .kanban-plugin__new-item-button,
-    .kanban-plugin__lane-action-add,
-    .color-picker__button,
-    .excalidraw .dropdown-menu-item.dropdown-menu-item-base,
-    .Dialog__action-button,
-    .ToolIcon_type_button,
-    .fc-button
-  ) {
+  .mod-cta,
+  .clickable-icon.view-action,
+  .clickable-icon[aria-disabled="true"],
+  .mod-warning,
+  .mod-tappable,
+  .kanban-plugin__new-item-button,
+  .kanban-plugin__lane-action-add,
+  .color-picker__button,
+  .excalidraw .dropdown-menu-item.dropdown-menu-item-base,
+  .Dialog__action-button,
+  .ToolIcon_type_button,
+  .fc-button
+) {
   color: var(--text-normal);
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-hover);

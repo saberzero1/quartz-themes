@@ -4,8 +4,5 @@
   "minAppVersion": "1.0.0",
   "author": "zc",
   "authorUrl": "https://github.com/ZeChArtiahSaher",
-  "license": {
-    "name": "No License Found",
-    "spdx_id": "No SPDX ID Found"
-  }
+  "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
 }

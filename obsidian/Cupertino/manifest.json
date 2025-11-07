@@ -5,8 +5,5 @@
   "author": "Alexis C",
   "authorUrl": "https://github.com/aaaaalexis",
   "fundingUrl": "https://www.buymeacoffee.com/sevenaxis",
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

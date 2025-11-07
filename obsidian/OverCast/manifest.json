@@ -5,11 +5,6 @@
   "minAppVersion": "0.16",
   "repo": "IxBlazarxI/Obsidian-Theme-OverCast",
   "screenshot": "Thumbnail.jpg",
-  "modes": [
-    "dark"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

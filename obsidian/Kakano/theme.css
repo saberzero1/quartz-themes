@@ -2788,8 +2788,8 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   .workspace-drawer-active-tab-icon + .workspace-drawer-active-tab-title:hover,
   .workspace-drawer-active-tab-icon:hover + .workspace-drawer-active-tab-title,
   .workspace-drawer-active-tab-icon:has(
-      + .workspace-drawer-active-tab-title:hover
-    ) {
+    + .workspace-drawer-active-tab-title:hover
+  ) {
     color: var(--theme-color-controlHover);
     background-color: var(--background-modifier-hover);
   }
@@ -3705,13 +3705,13 @@ body.mod-windows {
     margin: 0 0 0 0;
   }
   .workspace-tab-header-container-inner:has(
-      .workspace-tab-header[data-type="markdown"].is-active:last-child
-    ) {
+    .workspace-tab-header[data-type="markdown"].is-active:last-child
+  ) {
     border-bottom-right-radius: 0;
   }
   .workspace-tab-header-container-inner:has(
-      .workspace-tab-header[data-type="markdown"].is-active:first-child
-    ) {
+    .workspace-tab-header[data-type="markdown"].is-active:first-child
+  ) {
     border-bottom-left-radius: 0;
   }
   .workspace-leaf-content {
@@ -6805,8 +6805,8 @@ body.theme-setting-overrideDataview {
 
   /* Table query */
   .block-language-dataview:has(
-      .dataview.table-view-table .dataview.table-view-table
-    ) {
+    .dataview.table-view-table .dataview.table-view-table
+  ) {
     border-radius: 0;
   }
   .dataview.table-view-table {

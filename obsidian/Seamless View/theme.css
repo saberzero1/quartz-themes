@@ -210,21 +210,21 @@ div:has(> :is(p, ul, ol, pre, blockquote, .callout, div)):has(
   ),
 div:has(
     > :is(
-        p,
-        ul,
-        ol,
-        pre,
-        blockquote,
-        .callout,
-        table,
-        div,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6
-      )
+      p,
+      ul,
+      ol,
+      pre,
+      blockquote,
+      .callout,
+      table,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6
+    )
   ):has(+ .mod-footer) {
   margin-bottom: 1.5em;
 }

@@ -4,8 +4,5 @@
   "minAppVersion": "0.16.0",
   "author": "SlRvb",
   "authorUrl": "https://github.com/SlRvb",
-  "license": {
-    "name": "GNU General Public License v2.0",
-    "spdx_id": "GPL-2.0"
-  }
+  "license": { "name": "GNU General Public License v2.0", "spdx_id": "GPL-2.0" }
 }

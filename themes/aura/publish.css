@@ -314,7 +314,7 @@ body.theme-light {
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", "iA Writer Quattro S" !important;
+  --file-header-font: "iA Writer Quattro S" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -329,12 +329,12 @@ body.theme-light {
   --font-default: "iA Writer Quattro S" !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", "iA Writer Quattro S" !important;
+  --font-interface: "iA Writer Quattro S" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", "iA Writer Quattro S" !important;
+  --font-mermaid: "iA Writer Quattro S" !important;
   --font-monospace: "iA Writer Mono S" !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -343,13 +343,13 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", "??", "Arial" !important;
+  --font-print: "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", "iA Writer Quattro S" !important;
+  --font-text: "iA Writer Quattro S" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -546,7 +546,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(241, 230, 214, 0.7) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", "iA Writer Quattro S" !important;
+  --metadata-input-font: "iA Writer Quattro S" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -554,7 +554,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(241, 230, 214, 0.7) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", "iA Writer Quattro S" !important;
+  --metadata-label-font: "iA Writer Quattro S" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: rgba(74, 52, 28, 0.9) !important;
   --metadata-label-text-color-hover: rgba(74, 52, 28, 0.9) !important;
@@ -1128,7 +1128,7 @@ body.theme-dark {
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 1px solid transparent;
-  --file-header-font: "??", "??", "??", "iA Writer Quattro S";
+  --file-header-font: "iA Writer Quattro S";
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1143,12 +1143,12 @@ body.theme-dark {
   --font-default: "iA Writer Quattro S";
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: "??", "??", "??", "iA Writer Quattro S";
+  --font-interface: "iA Writer Quattro S";
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "iA Writer Quattro S";
+  --font-mermaid: "iA Writer Quattro S";
   --font-monospace: "iA Writer Mono S";
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -1157,13 +1157,13 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "??", "??", "??", "Arial";
+  --font-print: "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "iA Writer Quattro S";
+  --font-text: "iA Writer Quattro S";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1360,7 +1360,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: rgba(18, 18, 18, 0.7);
   --metadata-input-background-hover: transparent;
-  --metadata-input-font: "??", "??", "??", "iA Writer Quattro S";
+  --metadata-input-font: "iA Writer Quattro S";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1368,7 +1368,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(18, 18, 18, 0.7);
   --metadata-label-background-hover: transparent;
-  --metadata-label-font: "??", "??", "??", "iA Writer Quattro S";
+  --metadata-label-font: "iA Writer Quattro S";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgba(240, 240, 240, 0.7);
   --metadata-label-text-color-hover: rgba(240, 240, 240, 0.7);

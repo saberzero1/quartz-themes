@@ -5,12 +5,6 @@
   "version": "1.2.1",
   "repo": "chenbihao/obsidian-theme-dark-clarity",
   "screenshot": "screenshot.png",
-  "modes": [
-    "dark",
-    "light"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "modes": ["dark", "light"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }

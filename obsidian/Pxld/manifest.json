@@ -6,11 +6,6 @@
   "authorUrl": "https://github.com/Lina674",
   "description": "This theme is inspired by pixelated games.",
   "theme": true,
-  "files": [
-    "theme.css"
-  ],
-  "license": {
-    "name": "MIT License",
-    "spdx_id": "MIT"
-  }
+  "files": ["theme.css"],
+  "license": { "name": "MIT License", "spdx_id": "MIT" }
 }
