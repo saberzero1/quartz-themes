@@ -1938,7 +1938,7 @@ export const config = [
   {
     obsidianSelector: `div.inline-title`,
     publishSelector: null, //TODO
-    quartzSelector: "h2.page-title",
+    quartzSelector: "h2.page-title, h2.page-title a",
     pseudoElement: "",
     properties: sets.headings,
   },

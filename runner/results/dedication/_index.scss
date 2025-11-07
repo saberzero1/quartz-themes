@@ -1039,7 +1039,8 @@ body {
     text-shadow: rgb(204, 204, 0) 0px 0px 6.4px;
   }
 
-  h2.page-title {
+  h2.page-title,
+  h2.page-title a {
     color: light-dark(rgb(26, 32, 35), rgb(250, 242, 214));
     font-family: "Times New Roman", Times, serif;
     text-shadow: none;
@@ -1848,13 +1849,13 @@ body {
       color: var(--color);
     }
     &[data-callout] {
-      --color: rgb(var(--callout-todo));
+      --color: rgb(var(--callout-info));
     }
     &[data-callout="note"] {
-      --color: rgb(var(--callout-note));
+      --color: rgb(var(--callout-default));
     }
     &[data-callout="abstract"] {
-      --color: rgb(var(--callout-abstract));
+      --color: rgb(var(--callout-summary));
     }
     &[data-callout="info"] {
       --color: rgb(var(--callout-info));
@@ -1875,10 +1876,10 @@ body {
       --color: rgb(var(--callout-warning));
     }
     &[data-callout="failure"] {
-      --color: rgb(var(--callout-failure));
+      --color: rgb(var(--callout-fail));
     }
     &[data-callout="danger"] {
-      --color: rgb(var(--callout-danger));
+      --color: rgb(var(--callout-bug));
     }
     &[data-callout="bug"] {
       --color: rgb(var(--callout-bug));

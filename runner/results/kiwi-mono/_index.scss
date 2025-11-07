@@ -1097,7 +1097,8 @@ body {
     text-shadow: none;
   }
 
-  h2.page-title {
+  h2.page-title,
+  h2.page-title a {
     color: light-dark(rgb(68, 68, 68), rgb(170, 170, 170));
     font-family:
       ui-sans-serif,
@@ -1894,13 +1895,13 @@ body {
       color: var(--color);
     }
     &[data-callout] {
-      --color: rgb(var(--callout-todo));
+      --color: rgb(var(--callout-info));
     }
     &[data-callout="note"] {
-      --color: rgb(var(--callout-note));
+      --color: rgb(var(--callout-default));
     }
     &[data-callout="abstract"] {
-      --color: rgb(var(--callout-abstract));
+      --color: rgb(var(--callout-summary));
     }
     &[data-callout="info"] {
       --color: rgb(var(--callout-info));
@@ -1921,10 +1922,10 @@ body {
       --color: rgb(var(--callout-warning));
     }
     &[data-callout="failure"] {
-      --color: rgb(var(--callout-failure));
+      --color: rgb(var(--callout-fail));
     }
     &[data-callout="danger"] {
-      --color: rgb(var(--callout-danger));
+      --color: rgb(var(--callout-bug));
     }
     &[data-callout="bug"] {
       --color: rgb(var(--callout-bug));
