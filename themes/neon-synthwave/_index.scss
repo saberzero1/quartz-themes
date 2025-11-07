@@ -268,7 +268,7 @@ body {
     color: rgb(212, 245, 255);
   }
 
-  &[data-slug] div#quartz-root.page,
+  &[data-slug],
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: rgb(38, 35, 53);
@@ -280,7 +280,7 @@ body {
     color: rgb(212, 245, 255);
   }
 
-  &[data-slug],
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: rgb(36, 27, 47);
     color: rgb(212, 245, 255);
