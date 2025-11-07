@@ -1830,8 +1830,6 @@ body {
       div.sidebar.left,
       div.sidebar.left:has(.explorer) {
         padding: 1rem 1.5rem 1rem 1rem;
-        width: calc(100% - 2.5rem);
-        max-width: calc(100% - 2.5rem);
       }
       div.sidebar.right,
       footer {
