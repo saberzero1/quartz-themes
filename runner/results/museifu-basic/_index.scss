@@ -333,7 +333,7 @@ body {
   }
 
   &[data-slug],
-  &[data-slug] div#quartz-root.page,
+  &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(228, 228, 228), rgb(22, 22, 22));
@@ -351,13 +351,13 @@ body {
     );
   }
 
+  &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left {
     background-color: light-dark(rgb(197, 197, 197), rgb(24, 24, 24));
     color: light-dark(
       color(srgb 0.300178 0.200444 0.532889 / 0.9),
       color(srgb 0.862096 0.80824 0.98776)
     );
-    border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.right {
@@ -367,6 +367,10 @@ body {
       color(srgb 0.862096 0.80824 0.98776)
     );
     border-left: 0px rgba(0, 0, 0, 0);
+  }
+
+  .page > div#quartz-body div.sidebar.left {
+    border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
   a.external,
