@@ -913,15 +913,23 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
+    background-color: transparent;
+    &:has(.sidebar:hover) {
+      background-color: revert-layer;
+    }
     .sidebar.left,
     .sidebar.right {
       opacity: 1 !important;
+      background-color: transparent;
+      border-color: transparent;
       & > * {
         opacity: 0 !important;
-        transition: opacity .2s;
+        transition: opacity background-color .2s;
       }
       &:hover > * {
         opacity: 1 !important;
+        background-color: revert-layer;
+        border-color: revert-layer;
       }
     }
   }
