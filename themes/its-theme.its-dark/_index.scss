@@ -1870,21 +1870,16 @@ body {
 
 :root[reader-mode="on"] {
   body[data-slug] {
-    &:not(:has(.sidebar:hover)) {
-      background-color: transparent;
-    }
     .sidebar.left,
     .sidebar.right {
-      opacity: 1 !important;
-      background-color: transparent !important;
-      border-color: transparent !important;
+      opacity: 0 !important;
+      &:hover {
+        opacity: 1 !important;
+        transition: opacity 0.2s;
+      }
       & > * {
         opacity: 0 !important;
         transition: opacity 0.2s;
-      }
-      &:hover {
-        background-color: revert-layer !important;
-        border-color: revert-layer !important;
       }
       &:hover > * {
         opacity: 1 !important;
