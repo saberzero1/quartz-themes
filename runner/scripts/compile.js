@@ -938,8 +938,8 @@ body {
         transition: opacity .2s;
       }
     }
-    div#quartz-root.page:has(.sidebar:hover)) {
-      .sidebar {
+    div#quartz-root.page:not(:has(.center:hover, footer:hover))) {
+      .sidebar:hover {
         opacity: 1 !important;
         transition: opacity .2s;
       }
