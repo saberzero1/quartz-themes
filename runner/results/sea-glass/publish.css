@@ -88,16 +88,7 @@
     url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff")
       format("woff");
 }
-/**
- * Minified by jsDelivr using clean-css v5.3.2.
- * Original file: /npm/hack-font@3.3.0/build/web/hack.css
- *
- * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */
-/*!
- *  Hack typeface https://github.com/source-foundry/Hack
- *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
- */
+
 @font-face {
   font-family: Hack;
   src:
