@@ -3633,9 +3633,55 @@ settings:
     #    type: class-toggle
 */
 
+/*
 body blockquote.callout {
   &[data-callout] {
     --color: rgb(var(--callout-color));
     --border: rgb(var(--callout-border-color));
   }
-}
+
+  &.statblocks {
+    mix-blend-mode: unset;
+
+    table {
+      th,
+      td,
+      tr {
+        min-width: unset;
+        padding: unset;
+        color: unset;
+        border-bottom: unset;
+      }
+
+      & > * {
+        line-height: unset;
+      }
+    }
+
+    tbody,
+    li,
+    p {
+      line-height: unset;
+    }
+
+    .callout.checks {
+      --bg: transparent;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      padding: unset;
+      margin: unset;
+      background-color: unset;
+    }
+  }
+}*/
