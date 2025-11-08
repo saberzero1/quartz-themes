@@ -1,4 +1,3 @@
-/* cyrillic-ext */
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -8,7 +7,7 @@
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -17,7 +16,7 @@
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* greek-ext */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -26,7 +25,7 @@
     format("woff2");
   unicode-range: U+1F00-1FFF;
 }
-/* greek */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -36,7 +35,7 @@
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
-/* vietnamese */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -48,7 +47,7 @@
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
     U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -60,7 +59,7 @@
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
@@ -72,7 +71,7 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -82,7 +81,7 @@
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -91,7 +90,7 @@
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* greek-ext */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -100,7 +99,7 @@
     format("woff2");
   unicode-range: U+1F00-1FFF;
 }
-/* greek */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -110,7 +109,7 @@
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
-/* latin-ext */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -122,7 +121,7 @@
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -134,7 +133,7 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
@@ -144,7 +143,7 @@
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-/* vietnamese */
+
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
@@ -156,7 +155,7 @@
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
     U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
@@ -168,7 +167,7 @@
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
@@ -180,7 +179,7 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -191,7 +190,7 @@
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -201,7 +200,7 @@
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* greek-ext */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -211,7 +210,7 @@
     format("woff2");
   unicode-range: U+1F00-1FFF;
 }
-/* greek */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -222,7 +221,7 @@
   unicode-range:
     U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
-/* vietnamese */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -235,7 +234,7 @@
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
     U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -248,7 +247,7 @@
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
@@ -261,7 +260,7 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
-/* [0] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -270,7 +269,7 @@
     format("woff2");
   unicode-range: U+1f1e6-1f1ff;
 }
-/* [1] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -282,7 +281,7 @@
     U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
     U+e0077, U+e007f;
 }
-/* [2] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -308,7 +307,7 @@
     U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e,
     U+1f9e1, U+1fa75-1fa77, U+1faaf;
 }
-/* [3] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -330,7 +329,7 @@
     U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86,
     U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
 }
-/* [4] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -347,7 +346,7 @@
     U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85,
     U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
 }
-/* [5] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -364,7 +363,7 @@
     U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3,
     U+1fa7c;
 }
-/* [6] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -376,7 +375,7 @@
     U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
     U+1fad0-1fadb;
 }
-/* [7] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -393,7 +392,7 @@
     U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf,
     U+1face-1facf, U+1fae7;
 }
-/* [8] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -411,7 +410,7 @@
     U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9,
     U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
 }
-/* [9] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -429,7 +428,7 @@
     U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1,
     U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
 }
-/* [10] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -442,7 +441,7 @@
     U+1f642, U+1f6b6, U+1f7e9, U+1f7eb, U+1f9af, U+1f9bc-1f9bd, U+1f9ce,
     U+1f9d1-1f9d2;
 }
-/* [11] */
+
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
@@ -455,7 +454,6 @@ body {
   --google-font-color-notocoloremoji: colrv1;
 }
 
-/* [0] */
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -464,7 +462,7 @@ body {
     format("woff2");
   unicode-range: U+1f1e6-1f1ff;
 }
-/* [1] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -476,7 +474,7 @@ body {
     U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
     U+e0077, U+e007f;
 }
-/* [2] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -502,7 +500,7 @@ body {
     U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e,
     U+1f9e1, U+1fa75-1fa77, U+1faaf;
 }
-/* [3] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -524,7 +522,7 @@ body {
     U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86,
     U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
 }
-/* [4] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -541,7 +539,7 @@ body {
     U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85,
     U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
 }
-/* [5] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -558,7 +556,7 @@ body {
     U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3,
     U+1fa7c;
 }
-/* [6] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -570,7 +568,7 @@ body {
     U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
     U+1fad0-1fadb;
 }
-/* [7] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -587,7 +585,7 @@ body {
     U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf,
     U+1face-1facf, U+1fae7;
 }
-/* [8] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -605,7 +603,7 @@ body {
     U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9,
     U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
 }
-/* [9] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -623,7 +621,7 @@ body {
     U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1,
     U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
 }
-/* [10] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -636,7 +634,7 @@ body {
     U+1f642, U+1f6b6, U+1f7e9, U+1f7eb, U+1f9af, U+1f9bc-1f9bd, U+1f9ce,
     U+1f9d1-1f9d2;
 }
-/* [11] */
+
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
@@ -645,7 +643,7 @@ body {
     format("woff2");
   unicode-range: U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
 }
-/* cyrillic-ext */
+
 @font-face {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -656,7 +654,7 @@ body {
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-/* cyrillic */
+
 @font-face {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -666,7 +664,7 @@ body {
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+
 @font-face {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -679,7 +677,7 @@ body {
     U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
     U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
+
 @font-face {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -692,7 +690,7 @@ body {
     U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: "Nunito Sans";
   font-style: normal;
