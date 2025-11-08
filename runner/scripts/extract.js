@@ -24,7 +24,7 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 
 let testingMode = false;
 testingMode = true;
-const testingTheme = "coffee";
+const testingTheme = "its";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
@@ -271,8 +271,7 @@ async function getStylesFromObsidian(
       preset,
     );
     const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
-    const snippets = manifest.snippets ?? [];
-    const extras = manifest.use_extended_syntax ? manifest.extras : [];
+    const extras = manifest.extra_extract_files ?? [];
     mkdirSync(`./runner/results/${folder}`, { recursive: true });
     let lightResult = {
       general: {},
@@ -297,6 +296,29 @@ async function getStylesFromObsidian(
           "./.obsidian/plugins/obsidian-style-settings/data.json",
           preset,
         );
+        // Write all snippets to the temporary vault
+        mkdirSync(`${darkPage.getVaultPath()}/.obsidian/snippets/`, {
+          recursive: true,
+        });
+        for (const snippet of manifest.snippets ?? []) {
+          writeFileSync(
+            `${darkPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
+            readFileSync(
+              `./runner/vault/.obsidian/snippets/${snippet}.css`,
+              "utf-8",
+            ),
+          );
+        }
+        const defaultAppearanceObject = {
+          theme: "obsidian",
+          cssTheme: fullName,
+          enabledCssSnippets: manifest.snippets ?? [],
+          nativeMenus: false,
+        };
+        writeFileSync(
+          `${darkPage.getVaultPath()}/.obsidian/appearance.json`,
+          JSON.stringify(defaultAppearanceObject, null, 2),
+        );
         await sleep(500);
       });
       it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in dark mode`, async () => {
@@ -313,12 +335,6 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
-        for (const snippet in snippets) {
-          await browser.executeObsidian(async ({ app }) => {
-            app.customCss.setCssEnabledStatus(snippet, true);
-            await sleep(250);
-          });
-        }
         await sleep(250);
         await browser.reloadObsidian();
         await sleep(250);
@@ -356,22 +372,13 @@ async function getStylesFromObsidian(
         darkResult.integrations = await serializeWithStyles(darkDefaultStyles);
         await sleep(500);
         if (extras.length > 0) {
-          for (const extra in extras) {
-            await darkPage.openFile(extra);
+          extras.forEach(async (extra) => {
+            await darkPage.openFile(`theme-extras/${extra}`);
             await sleep(100);
-            await darkPage.openFile(extra);
+            await darkPage.openFile(`theme-extras/${extra}`);
             await sleep(900);
-            darkResult.extras = {
-              ...darkResult.extras,
-              ...(await serializeWithStyles(darkDefaultStyles)),
-            };
-          }
-        }
-        await sleep(500);
-        for (const snippet in snippets) {
-          await browser.executeObsidian(async ({ app }) => {
-            app.customCss.setCssEnabledStatus(snippet, false);
-            await sleep(250);
+            const result = await serializeWithStyles(darkDefaultStyles);
+            darkResult.extras = { ...darkResult.extras, ...result };
           });
         }
         await sleep(500);
@@ -408,6 +415,29 @@ async function getStylesFromObsidian(
           "./.obsidian/plugins/obsidian-style-settings/data.json",
           preset,
         );
+        // Write all snippets to the temporary vault
+        mkdirSync(`${lightPage.getVaultPath()}/.obsidian/snippets/`, {
+          recursive: true,
+        });
+        for (const snippet of manifest.snippets ?? []) {
+          writeFileSync(
+            `${lightPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
+            readFileSync(
+              `./runner/vault/.obsidian/snippets/${snippet}.css`,
+              "utf-8",
+            ),
+          );
+        }
+        const defaultAppearanceObject = {
+          theme: "moonstone",
+          cssTheme: fullName,
+          enabledCssSnippets: manifest.snippets ?? [],
+          nativeMenus: false,
+        };
+        writeFileSync(
+          `${lightPage.getVaultPath()}/.obsidian/appearance.json`,
+          JSON.stringify(defaultAppearanceObject, null, 2),
+        );
         await sleep(500);
       });
       it(`should extract styles for theme: ${theme}, variation: ${variation ?? "default"} in light mode`, async () => {
@@ -424,12 +454,6 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
-        for (const snippet in snippets) {
-          await browser.executeObsidian(async ({ app }) => {
-            app.customCss.setCssEnabledStatus(snippet, true);
-            await sleep(250);
-          });
-        }
         await sleep(250);
         await browser.reloadObsidian();
         await sleep(250);
@@ -468,22 +492,13 @@ async function getStylesFromObsidian(
           await serializeWithStyles(lightDefaultStyles);
         await sleep(500);
         if (extras.length > 0) {
-          for (const extra in extras) {
-            await lightPage.openFile(extra);
+          extras.forEach(async (extra) => {
+            await lightPage.openFile(`theme-extras/${extra}`);
             await sleep(100);
-            await lightPage.openFile(extra);
+            await lightPage.openFile(`theme-extras/${extra}`);
             await sleep(900);
-            lightResult.extras = {
-              ...lightResult.extras,
-              ...(await serializeWithStyles(lightDefaultStyles)),
-            };
-          }
-        }
-        await sleep(500);
-        for (const snippet in snippets) {
-          await browser.executeObsidian(async ({ app }) => {
-            app.customCss.setCssEnabledStatus(snippet, false);
-            await sleep(250);
+            const result = await serializeWithStyles(lightDefaultStyles);
+            lightResult.extras = { ...lightResult.extras, ...result };
           });
         }
         await sleep(500);
@@ -526,6 +541,16 @@ writeFileSync(
   `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
   "{}",
 );
+const defaultAppearanceObject = {
+  theme: "obsidian",
+  cssTheme: "",
+  enabledCssSnippets: [],
+  nativeMenus: false,
+};
+writeFileSync(
+  `./runner/vault/.obsidian/appearance.json`,
+  JSON.stringify(defaultAppearanceObject, null, 2),
+);
 
 // filter duplicates
 const manifestTargets = [];
@@ -554,4 +579,8 @@ for (const manifest of manifestTargets) {
 writeFileSync(
   `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
   "{}",
+);
+writeFileSync(
+  `./runner/vault/.obsidian/appearance.json`,
+  JSON.stringify(defaultAppearanceObject, null, 2),
 );

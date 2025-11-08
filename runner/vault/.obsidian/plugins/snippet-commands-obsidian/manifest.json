@@ -1,0 +1,10 @@
+{
+  "id": "snippet-commands-obsidian",
+  "name": "Snippet Commands",
+  "version": "0.0.2",
+  "minAppVersion": "0.9.18",
+  "description": "Registers custom css snippets as commands (which you can bind hotkeys to)",
+  "author": "death_au",
+  "authorUrl": "https://github.com/deathau",
+  "isDesktopOnly": false
+}

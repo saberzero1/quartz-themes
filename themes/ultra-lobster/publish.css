@@ -7,7 +7,7 @@
     url("https://fonts.cdnfonts.com/s/58996/Nightingale Sample.woff")
       format("woff");
 }
-/* monaspace-neon-latin-400-normal */
+
 @font-face {
   font-family: "Monaspace Neon";
   font-style: normal;
@@ -19,7 +19,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-neon@5.2.5/files/monaspace-neon-latin-400-normal.woff)
       format("woff");
 }
-/* monaspace-neon-latin-400-italic */
+
 @font-face {
   font-family: "Monaspace Neon";
   font-style: italic;
@@ -31,7 +31,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-neon@5.2.5/files/monaspace-neon-latin-400-italic.woff)
       format("woff");
 }
-/* monaspace-neon-latin-400-normal */
+
 @font-face {
   font-family: "Monaspace Neon";
   font-style: normal;
@@ -43,7 +43,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-neon@5.2.5/files/monaspace-neon-latin-400-normal.woff)
       format("woff");
 }
-/* monaspace-neon-latin-400-italic */
+
 @font-face {
   font-family: "Monaspace Neon";
   font-style: italic;
