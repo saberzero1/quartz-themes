@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "p",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,7 +206,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b9547fcabc7c6807",
+  "active": "1298f15d19bec7c3",
   "lastOpenFiles": [
     "theme-extras/its-theme/checkboxes.md",
     "theme-extras/its-theme/callouts/statblocks.md",
