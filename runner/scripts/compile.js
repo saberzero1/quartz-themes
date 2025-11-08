@@ -957,6 +957,9 @@ ${insertExtras(manifest, themeName)}
   resultScss = resultScss.replaceAll("--lightningcss-light, ", "");
   resultScss = resultScss.replaceAll("--lightningcss-dark, ", "");
 
+  // Remove CSS comments
+  resultScss = resultScss.replace(/\/\*[\s\S]*?\*\//g, "");
+
   // Merge longhand properties into shorthand for Quartz SCSS
   resultScss = mergeLonghandProperties(resultScss, "scss");
 
@@ -1020,6 +1023,8 @@ ${
   // Compile Publish to CSS
   try {
     resultPublishScss = compileString(resultPublishScss).css;
+    // Remove CSS comments
+    resultPublishScss = resultPublishScss.replace(/\/\*[\s\S]*?\*\//g, "");
   } catch (e) {
     console.error(`Error compiling Publish CSS for ${themeName}:`, e.message);
   }

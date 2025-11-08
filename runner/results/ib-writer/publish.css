@@ -1,4 +1,3 @@
-/* ia-writer-quattro-latin-400-italic */
 @font-face {
   font-family: "iA Writer Quattro";
   font-style: italic;
@@ -10,7 +9,7 @@
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-quattro@latest/latin-400-italic.woff)
       format("woff");
 }
-/* ia-writer-quattro-latin-700-italic */
+
 @font-face {
   font-family: "iA Writer Quattro";
   font-style: italic;

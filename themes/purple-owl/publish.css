@@ -1,4 +1,3 @@
-/* monaspace-argon-latin-400-normal */
 @font-face {
   font-family: "Monaspace Argon";
   font-style: normal;
@@ -10,7 +9,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-argon@5.2.5/files/monaspace-argon-latin-400-normal.woff)
       format("woff");
 }
-/* monaspace-argon-latin-400-italic */
+
 @font-face {
   font-family: "Monaspace Argon";
   font-style: italic;
@@ -22,7 +21,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-argon@5.2.5/files/monaspace-argon-latin-400-italic.woff)
       format("woff");
 }
-/* monaspace-argon-latin-400-normal */
+
 @font-face {
   font-family: "Monaspace Argon";
   font-style: normal;
@@ -34,7 +33,7 @@
     url(https://cdn.jsdelivr.net/npm/@fontsource/monaspace-argon@5.2.5/files/monaspace-argon-latin-400-normal.woff)
       format("woff");
 }
-/* monaspace-argon-latin-400-italic */
+
 @font-face {
   font-family: "Monaspace argon";
   font-style: italic;

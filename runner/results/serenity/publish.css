@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ia-writer-duo-latin-400-italic */
+
 @font-face {
   font-family: "iA Writer Duo";
   font-style: italic;
@@ -11,7 +11,7 @@
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff)
       format("woff");
 }
-/* ia-writer-duo-latin-700-italic */
+
 @font-face {
   font-family: "iA Writer Duo";
   font-style: italic;
@@ -23,7 +23,7 @@
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff)
       format("woff");
 }
-/* ia-writer-mono-latin-400-italic */
+
 @font-face {
   font-family: "iA Writer Mono";
   font-style: italic;
@@ -35,7 +35,7 @@
     url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff)
       format("woff");
 }
-/* ia-writer-mono-latin-700-italic */
+
 @font-face {
   font-family: "iA Writer Mono";
   font-style: italic;

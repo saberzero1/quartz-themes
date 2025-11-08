@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "extras/its-theme/checkboxes.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "checkboxes"
+              "title": "general"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "extras/its-theme/checkboxes.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of checkboxes"
+              "title": "Outline of general"
             }
           },
           {
@@ -208,13 +208,15 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "extras/its-theme/callouts/callouts.md",
-    "extras/its-theme/checkboxes.md",
-    "callouts.md",
+    "theme-extras/its-theme/checkboxes.md",
     "general.md",
-    "extras/its-theme/callouts",
-    "extras/its-theme",
-    "extras",
+    "theme-extras/its-theme/callouts/columns.md",
+    "theme-extras/its-theme/callouts/infoboxes.md",
+    "theme-extras/its-theme/callouts/Image.png",
+    "callouts.md",
+    "theme-extras/its-theme/callouts",
+    "theme-extras/its-theme",
+    "theme-extras",
     "per-theme/80s-neon.md",
     "specimen.md",
     "per-theme/zenburn.md",
@@ -236,7 +238,6 @@
     "per-theme/virgo.md",
     "per-theme/violet-evening.md",
     "per-theme/vicious.md",
-    "per-theme/vibrant.md",
     "per-theme",
     "folder/collapsed",
     "folder/nested",
