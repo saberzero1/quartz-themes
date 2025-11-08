@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "theme-extras/its-theme/callouts/statblocks.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "statblocks"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "theme-extras/its-theme/callouts/statblocks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
+              "title": "Outline of statblocks"
             }
           },
           {
@@ -209,14 +209,20 @@
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
     "theme-extras/its-theme/checkboxes.md",
-    "general.md",
-    "theme-extras/its-theme/callouts/columns.md",
+    "theme-extras/its-theme/callouts/statblocks.md",
     "theme-extras/its-theme/callouts/infoboxes.md",
+    "theme-extras/its-theme/callouts/columns.md",
     "theme-extras/its-theme/callouts/Image.png",
-    "callouts.md",
     "theme-extras/its-theme/callouts",
     "theme-extras/its-theme",
     "theme-extras",
+    "extras/its-theme/checkboxes.md",
+    "extras/its-theme/callouts/callouts.md",
+    "callouts.md",
+    "general.md",
+    "extras/its-theme/callouts",
+    "extras/its-theme",
+    "extras",
     "per-theme/80s-neon.md",
     "specimen.md",
     "per-theme/zenburn.md",
@@ -235,9 +241,6 @@
     "per-theme/wasp.md",
     "per-theme/w95.md",
     "per-theme/vortex.md",
-    "per-theme/virgo.md",
-    "per-theme/violet-evening.md",
-    "per-theme/vicious.md",
     "per-theme",
     "folder/collapsed",
     "folder/nested",

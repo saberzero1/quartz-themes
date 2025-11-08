@@ -3315,3 +3315,10 @@ settings:
     #    id: co-ttl-ctr
     #    type: class-toggle
 */
+
+body blockquote.callout {
+  &[data-callout] {
+    --color: rgb(var(--callout-color));
+    --border: rgb(var(--callout-border-color));
+  }
+}
