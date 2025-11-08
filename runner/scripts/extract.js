@@ -5,7 +5,7 @@ import {
   dark as darkDefaultStyles,
   light as lightDefaultStyles,
 } from "./default-styles.js";
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import getThemeCollection from "../../extensions/themelist.mjs";
 import {
@@ -271,18 +271,22 @@ async function getStylesFromObsidian(
       preset,
     );
     const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
+    const snippets = manifest.snippets ?? [];
+    const extras = manifest.use_extended_syntax ? manifest.extras : [];
     mkdirSync(`./runner/results/${folder}`, { recursive: true });
     let lightResult = {
       general: {},
       headings: {},
       callouts: {},
       integrations: {},
+      extras: {},
     };
     let darkResult = {
       general: {},
       headings: {},
       callouts: {},
       integrations: {},
+      extras: {},
     };
     console.log(`Extracting styles for theme: ${theme}`);
 
@@ -309,6 +313,12 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
+        for (const snippet in snippets) {
+          await browser.executeObsidian(async ({ app }) => {
+            app.customCss.setCssEnabledStatus(snippet, true);
+            await sleep(250);
+          });
+        }
         await sleep(250);
         await browser.reloadObsidian();
         await sleep(250);
@@ -344,6 +354,26 @@ async function getStylesFromObsidian(
         await darkPage.openFile("integrations.md");
         await sleep(900);
         darkResult.integrations = await serializeWithStyles(darkDefaultStyles);
+        await sleep(500);
+        if (extras.length > 0) {
+          for (const extra in extras) {
+            await darkPage.openFile(extra);
+            await sleep(100);
+            await darkPage.openFile(extra);
+            await sleep(900);
+            darkResult.extras = {
+              ...darkResult.extras,
+              ...(await serializeWithStyles(darkDefaultStyles)),
+            };
+          }
+        }
+        await sleep(500);
+        for (const snippet in snippets) {
+          await browser.executeObsidian(async ({ app }) => {
+            app.customCss.setCssEnabledStatus(snippet, false);
+            await sleep(250);
+          });
+        }
         await sleep(500);
       });
       after(async () => {
@@ -394,6 +424,12 @@ async function getStylesFromObsidian(
             app.commands.executeCommandById("theme:toggle-light-dark");
           }
         });
+        for (const snippet in snippets) {
+          await browser.executeObsidian(async ({ app }) => {
+            app.customCss.setCssEnabledStatus(snippet, true);
+            await sleep(250);
+          });
+        }
         await sleep(250);
         await browser.reloadObsidian();
         await sleep(250);
@@ -430,6 +466,26 @@ async function getStylesFromObsidian(
         await sleep(900);
         lightResult.integrations =
           await serializeWithStyles(lightDefaultStyles);
+        await sleep(500);
+        if (extras.length > 0) {
+          for (const extra in extras) {
+            await lightPage.openFile(extra);
+            await sleep(100);
+            await lightPage.openFile(extra);
+            await sleep(900);
+            lightResult.extras = {
+              ...lightResult.extras,
+              ...(await serializeWithStyles(lightDefaultStyles)),
+            };
+          }
+        }
+        await sleep(500);
+        for (const snippet in snippets) {
+          await browser.executeObsidian(async ({ app }) => {
+            app.customCss.setCssEnabledStatus(snippet, false);
+            await sleep(250);
+          });
+        }
         await sleep(500);
       });
       after(async () => {

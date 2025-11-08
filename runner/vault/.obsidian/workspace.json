@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "specimen.md",
+                "file": "extras/its-theme/checkboxes.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "specimen"
+              "title": "checkboxes"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "specimen.md",
+                "file": "extras/its-theme/checkboxes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of specimen"
+              "title": "Outline of checkboxes"
             }
           },
           {
@@ -208,18 +208,38 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "integrations.md",
-    "general.md",
-    "Untitled.md",
+    "extras/its-theme/callouts/callouts.md",
+    "extras/its-theme/checkboxes.md",
     "callouts.md",
-    "headings.md",
+    "general.md",
+    "extras/its-theme/callouts",
+    "extras/its-theme",
+    "extras",
+    "per-theme/80s-neon.md",
     "specimen.md",
-    "folder/note.md",
-    "folder/nested/deeper.md",
-    "folder/collapsed/hidden.md",
+    "per-theme/zenburn.md",
+    "per-theme/zen.md",
+    "per-theme/zario.md",
+    "per-theme/yue.md",
+    "per-theme/xscriptor.md",
+    "per-theme/wyrd.md",
+    "per-theme/wy-console.md",
+    "per-theme/wombat.md",
+    "per-theme/wiselight.md",
+    "per-theme/winter-spices.md",
+    "per-theme/willemstad.md",
+    "per-theme/wilcoxone.md",
+    "per-theme/wikipedia.md",
+    "per-theme/wasp.md",
+    "per-theme/w95.md",
+    "per-theme/vortex.md",
+    "per-theme/virgo.md",
+    "per-theme/violet-evening.md",
+    "per-theme/vicious.md",
+    "per-theme/vibrant.md",
+    "per-theme",
     "folder/collapsed",
     "folder/nested",
-    "folder",
-    "Welcome.md"
+    "folder"
   ]
 }
