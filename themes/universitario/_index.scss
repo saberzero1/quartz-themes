@@ -2312,7 +2312,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: light-dark(rgba(139, 108, 239, 0.9), rgb(255, 255, 255));
+    border: 0px light-dark(rgba(139, 108, 239, 0.9), rgb(255, 255, 255));
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    border-start-start-radius: 60%;
+    border-start-end-radius: 60%;
+    border-end-start-radius: 60%;
+    border-end-end-radius: 60%;
     color: light-dark(rgba(139, 108, 239, 0.9), rgb(255, 255, 255));
+    content: "​";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {

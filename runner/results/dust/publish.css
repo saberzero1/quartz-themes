@@ -1275,7 +1275,21 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
+  background-color: rgb(150, 155, 170);
+  border: 0px rgb(150, 155, 170);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-start-start-radius: 50%;
+  border-start-end-radius: 50%;
+  border-end-start-radius: 50%;
+  border-end-end-radius: 50%;
   color: rgb(150, 155, 170);
+  content: "​";
+  pointer-events: none;
+  transform: none;
+  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: rgb(52, 57, 65);

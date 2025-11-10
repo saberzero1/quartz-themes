@@ -3055,7 +3055,21 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
+  background-color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
+  border: 0px light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
+  content: "​";
+  pointer-events: none;
+  transform: none;
+  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));

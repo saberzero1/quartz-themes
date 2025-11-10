@@ -15133,7 +15133,21 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
+  background-color: light-dark(oklch(60% 0 0deg), oklch(48% 0 0deg));
+  border: 0px light-dark(oklch(60% 0 0deg), oklch(48% 0 0deg));
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-start-start-radius: 50%;
+  border-start-end-radius: 50%;
+  border-end-start-radius: 50%;
+  border-end-end-radius: 50%;
   color: light-dark(oklch(60% 0 0deg), oklch(48% 0 0deg));
+  content: "​";
+  pointer-events: none;
+  transform: none;
+  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: light-dark(oklch(97% 0 0deg), oklch(18% 0 0deg));

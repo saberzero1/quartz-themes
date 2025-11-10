@@ -2545,7 +2545,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: rgb(138, 92, 245);
+    border: 0px rgb(138, 92, 245);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-start-start-radius: 100%;
+    border-start-end-radius: 100%;
+    border-end-start-radius: 100%;
+    border-end-end-radius: 100%;
     color: rgb(138, 92, 245);
+    content: "​";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {

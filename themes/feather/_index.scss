@@ -2373,7 +2373,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: rgb(123, 137, 207);
+    border: 0px rgb(123, 137, 207);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-start-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
     color: rgb(123, 137, 207);
+    content: "​";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {

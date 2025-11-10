@@ -2230,7 +2230,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: rgb(128, 128, 128);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     color: rgb(128, 128, 128);
+    content: "​";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {

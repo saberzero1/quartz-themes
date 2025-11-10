@@ -2032,7 +2032,21 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
+  background-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-start-start-radius: 50%;
+  border-start-end-radius: 50%;
+  border-end-start-radius: 50%;
+  border-end-end-radius: 50%;
   color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  content: "​";
+  pointer-events: none;
+  transform: none;
+  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: rgba(179, 178, 178, 0.14);

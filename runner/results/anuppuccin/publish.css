@@ -2164,7 +2164,21 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
+  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  border: 0px light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-start-start-radius: 50%;
+  border-start-end-radius: 50%;
+  border-end-start-radius: 50%;
+  border-end-end-radius: 50%;
   color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  content: "​";
+  pointer-events: none;
+  transform: none;
+  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));

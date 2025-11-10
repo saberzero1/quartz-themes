@@ -3030,7 +3030,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(oklch(0.715 0.0105 281), oklch(1 0.02 283 / 0.35));
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-start-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
     color: light-dark(oklch(0.715 0.0105 281), oklch(1 0.02 283 / 0.35));
+    content: "— ";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {

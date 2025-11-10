@@ -1665,7 +1665,18 @@ export const config = [
     publishSelector: `.markdown-rendered ol > li::marker`,
     quartzSelector: "ol > li::marker",
     pseudoElement: "::marker",
-    properties: ["color"],
+    properties: [
+      "background-color",
+      //"border",
+      //"border-color",
+      //"border-radius",
+      ...defaults.border,
+      "color",
+      "content",
+      "pointer-events",
+      "transform",
+      "transition",
+    ],
   },
   // code blocks
   {
