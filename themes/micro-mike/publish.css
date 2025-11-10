@@ -2001,7 +2001,6 @@ body .markdown-rendered ul > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: rgb(111, 116, 124);
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -2022,7 +2021,6 @@ body .markdown-rendered ol > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: rgb(111, 116, 124);
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;

@@ -3045,7 +3045,6 @@ body .markdown-rendered ul > li::marker {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -3066,7 +3065,6 @@ body .markdown-rendered ol > li::marker {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;

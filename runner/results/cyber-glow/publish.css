@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: "Ballet";
   font-style: normal;
@@ -2069,7 +2067,6 @@ body .markdown-rendered ul > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  content: "▻";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -2090,7 +2087,6 @@ body .markdown-rendered ol > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  content: "▻";
   pointer-events: none;
   transform: none;
   transition: inherit;

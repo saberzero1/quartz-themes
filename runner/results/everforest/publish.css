@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: Hack;
   src:
@@ -2150,7 +2148,6 @@ body .markdown-rendered ul > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -2171,7 +2168,6 @@ body .markdown-rendered ol > li::marker {
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
   color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;

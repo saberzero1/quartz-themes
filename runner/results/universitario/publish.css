@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Avenir";
   font-style: normal;
@@ -2171,7 +2170,6 @@ body .markdown-rendered ul > li::marker {
   border-end-start-radius: 60%;
   border-end-end-radius: 60%;
   color: light-dark(rgba(139, 108, 239, 0.9), rgb(255, 255, 255));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -2192,7 +2190,6 @@ body .markdown-rendered ol > li::marker {
   border-end-start-radius: 60%;
   border-end-end-radius: 60%;
   color: light-dark(rgba(139, 108, 239, 0.9), rgb(255, 255, 255));
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
