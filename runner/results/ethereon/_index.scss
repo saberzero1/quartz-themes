@@ -1800,7 +1800,9 @@ body {
   }
 
   &[data-slug] div#quartz-root.page,
-  .page > div#quartz-body div.sidebar.left {
+  .page > div#quartz-body div.sidebar.left,
+  .page > div#quartz-body div.sidebar.left:has(.explorer),
+  .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
     background-color: light-dark(rgb(196, 195, 197), rgb(49, 50, 52));
     color: light-dark(rgb(29, 31, 33), rgb(226, 224, 210));
   }
