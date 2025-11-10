@@ -3094,8 +3094,8 @@ body {
   }
 
   ul > li::marker {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(145, 46, 46), rgb(134, 55, 55));
+    border: 0px light-dark(rgb(145, 46, 46), rgb(134, 55, 55));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3104,9 +3104,9 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgba(0, 0, 0, 0);
-    content: normal;
-    pointer-events: auto;
+    color: light-dark(rgb(145, 46, 46), rgb(134, 55, 55));
+    content: "​";
+    pointer-events: none;
     transform: none;
     transition: inherit;
   }
@@ -3117,7 +3117,7 @@ body {
   }
 
   ol > li::marker {
-    color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(145, 46, 46), rgb(134, 55, 55));
   }
 
   code {

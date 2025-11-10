@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Avenir";
   font-style: normal;
@@ -2512,8 +2513,8 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgba(0, 0, 0, 0);
+  background-color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
+  border: 0px light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2522,9 +2523,9 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgba(0, 0, 0, 0);
-  content: normal;
-  pointer-events: auto;
+  color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
+  content: "​";
+  pointer-events: none;
   transform: none;
   transition: inherit;
 }
@@ -2533,7 +2534,7 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(217, 201, 180), rgb(94, 94, 135));
