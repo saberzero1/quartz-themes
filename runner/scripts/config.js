@@ -1440,7 +1440,7 @@ export const config = [
     obsidianSelector: `div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split`,
     publishSelector: null, //TODO
     quartzSelector:
-      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left",
+      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
