@@ -1635,7 +1635,7 @@ export const config = [
     properties: sets.list,
   },
   {
-    obsidianSelector: `span.list-bullet`,
+    obsidianSelector: `span.list-bullet::after`,
     publishSelector: `.markdown-rendered ul > li::marker`,
     quartzSelector: "ul > li::marker",
     pseudoElement: "::after",
@@ -1661,7 +1661,7 @@ export const config = [
   },
   {
     // TODO: add ::marker to pseudoElements
-    obsidianSelector: `span.list-bullet`,
+    obsidianSelector: `span.list-bullet::after`,
     publishSelector: `.markdown-rendered ol > li::marker`,
     quartzSelector: "ol > li::marker",
     pseudoElement: "::marker",
