@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -4177,7 +4175,6 @@ body .markdown-rendered ul > li::marker {
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -4211,7 +4208,6 @@ body .markdown-rendered ol > li::marker {
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
-  content: "​";
   pointer-events: none;
   transform: none;
   transition: inherit;
