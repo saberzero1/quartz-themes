@@ -2984,8 +2984,8 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgba(0, 0, 0, 0);
+  background-color: light-dark(rgb(67, 193, 165), rgb(55, 136, 118));
+  border: 0px light-dark(rgb(67, 193, 165), rgb(55, 136, 118));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2994,9 +2994,9 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgba(0, 0, 0, 0);
-  content: normal;
-  pointer-events: auto;
+  color: light-dark(rgb(67, 193, 165), rgb(55, 136, 118));
+  content: "​";
+  pointer-events: none;
   transform: none;
   transition: inherit;
 }
@@ -3005,7 +3005,7 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(67, 193, 165), rgb(55, 136, 118));
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(241, 245, 255), rgb(35, 40, 49));
