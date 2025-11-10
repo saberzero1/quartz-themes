@@ -1478,7 +1478,21 @@ body {
   }
 
   ol > li::marker {
+    background-color: rgba(137, 60, 245, 0.847);
+    border: 0px rgba(137, 60, 245, 0.847);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-start-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
     color: rgba(137, 60, 245, 0.847);
+    content: "​";
+    pointer-events: none;
+    transform: none;
+    transition: inherit;
   }
 
   code {
