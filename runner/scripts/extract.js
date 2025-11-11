@@ -35,8 +35,8 @@ To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
 let testingMode = false;
-// testingMode = true;
-const testingTheme = "its";
+testingMode = true;
+const testingTheme = "z";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
