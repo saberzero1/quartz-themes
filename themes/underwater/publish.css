@@ -1837,7 +1837,7 @@ body.theme-dark {
 
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(40, 105, 131), rgb(49, 116, 143));
+  color: light-dark(rgb(40, 105, 131), rgb(60, 118, 153));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1868,8 +1868,8 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(49, 116, 143);
-  text-decoration-color: light-dark(rgb(40, 105, 131), rgb(49, 116, 143));
+  text-decoration: none solid rgb(60, 118, 153);
+  text-decoration-color: light-dark(rgb(40, 105, 131), rgb(60, 118, 153));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1879,7 +1879,7 @@ body .markdown-rendered a.external-link {
 body .markdown-rendered a.internal-link {
   background-color: light-dark(
     rgba(215, 130, 126, 0.1),
-    rgba(235, 188, 186, 0.1)
+    rgba(235, 188, 186, 0.094)
   );
   color: light-dark(rgb(215, 130, 126), rgb(235, 188, 186));
   cursor: pointer;
@@ -1923,7 +1923,7 @@ body .markdown-rendered a.internal-link {
 body .markdown-rendered a.internal-link.is-unresolved {
   background-color: light-dark(
     rgba(215, 130, 126, 0.1),
-    rgba(235, 188, 186, 0.1)
+    rgba(235, 188, 186, 0.094)
   );
   color: light-dark(rgb(121, 117, 147), rgb(144, 140, 170));
   cursor: pointer;
@@ -2529,8 +2529,8 @@ body .markdown-rendered blockquote {
   margin-inline-end: 0px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
-  text-decoration: none solid rgb(110, 106, 134);
+  color: light-dark(rgb(152, 147, 165), rgb(109, 106, 131));
+  text-decoration: none solid rgb(109, 106, 131);
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(242, 233, 225), rgb(38, 35, 58));
