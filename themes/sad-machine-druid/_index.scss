@@ -896,7 +896,7 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: #363636 !important;
+  --background-modifier-border: #525c62 !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: #3f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -910,20 +910,20 @@
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #1e1e1e !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: #262626 !important;
-  --background-secondary-alt: #363636 !important;
-  --bases-cards-background: #1e1e1e !important;
+  --background-primary: #2f383e !important;
+  --background-primary-alt: #2f383e !important;
+  --background-secondary: #2f383e !important;
+  --background-secondary-alt: #2f383e !important;
+  --bases-cards-background: #2f383e !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #242424 !important;
+  --bases-cards-cover-background: #2f383e !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #363636 !important;
+  --bases-cards-shadow: 0 0 0 1px #525c62 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
-  --bases-embed-border-color: #363636 !important;
+  --bases-embed-border-color: #525c62 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -937,23 +937,23 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #363636 !important;
-  --bases-table-cell-background-active: #1e1e1e !important;
-  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-border-color: #525c62 !important;
+  --bases-table-cell-background-active: #2f383e !important;
+  --bases-table-cell-background-disabled: #2f383e !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #569d79 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
+  --bases-table-group-background: #2f383e !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #1e1e1e !important;
+  --bases-table-header-background: #2f383e !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-table-header-color: #b3b3b3 !important;
   --bases-table-header-icon-display: flex !important;
@@ -966,12 +966,12 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #1e1e1e !important;
+  --bases-table-summary-background: #2f383e !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(138, 92, 245) !important;
+  --blockquote-border-color: #569d79 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -1001,8 +1001,8 @@
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: #1e1e1e !important;
-  --canvas-card-label-color: #666666 !important;
+  --canvas-background: #2f383e !important;
+  --canvas-card-label-color: #859289 !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -1011,27 +1011,27 @@
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
   --canvas-dot-pattern: #363636 !important;
-  --caret-color: #dadada !important;
-  --checkbox-border-color: #666666 !important;
+  --caret-color: #beb39b !important;
+  --checkbox-border-color: #859289 !important;
   --checkbox-border-color-hover: #b3b3b3 !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-color: #569d79 !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1e1e1e !important;
+  --checkbox-marker-color: #2f383e !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: #b3b3b3 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #242424 !important;
-  --code-border-color: #363636 !important;
+  --code-background: #2f383e !important;
+  --code-border-color: #525c62 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: #666666 !important;
+  --code-comment: #859289 !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: #dadada !important;
+  --code-normal: #beb39b !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
   --code-punctuation: #b3b3b3 !important;
@@ -1041,8 +1041,8 @@
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #666666 !important;
-  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
+  --collapse-icon-color: #859289 !important;
+  --collapse-icon-color-collapsed: #5b928c !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
@@ -1082,8 +1082,8 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #363636 !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color: #525c62 !important;
+  --divider-color-hover: #569d79 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1096,10 +1096,10 @@
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #363636, inset 0 0 0 1px #363636 !important;
+    0 0 0 1px #525c62, inset 0 0 0 1px #525c62 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid #569d79 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1116,7 +1116,7 @@
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
   --flair-background: #363636 !important;
-  --flair-color: #dadada !important;
+  --flair-color: #beb39b !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -1139,10 +1139,7 @@
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1169,12 +1166,12 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #363636 !important;
+  --footnote-divider-color: #525c62 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
   --footnote-id-color: #b3b3b3 !important;
-  --footnote-id-color-no-occurrences: #666666 !important;
+  --footnote-id-color-no-occurrences: #859289 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -1189,10 +1186,10 @@
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: rgb(166, 139, 249) !important;
+  --graph-node-focused: #5b928c !important;
   --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
+  --graph-node-unresolved: #859289 !important;
+  --graph-text: #beb39b !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1230,14 +1227,14 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #666666 !important;
+  --heading-formatting: #859289 !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #363636 !important;
+  --hr-color: #525c62 !important;
   --hr-thickness: 2px !important;
   --icon-color: #b3b3b3 !important;
-  --icon-color-active: rgb(166, 139, 249) !important;
-  --icon-color-focused: #dadada !important;
+  --icon-color-active: #5b928c !important;
+  --icon-color-focused: #beb39b !important;
   --icon-color-hover: #b3b3b3 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -1271,11 +1268,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #666666 !important;
+  --input-date-separator: #859289 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #666666 !important;
+  --input-placeholder-color: #859289 !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1285,9 +1282,10 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
+  --interactive-accent: #569d79 !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
+  --interactive-accent-rgb: #5b928c !important;
   --interactive-hover: #3f3f3f !important;
   --interactive-normal: #363636 !important;
   --keyboard-height: 0px !important;
@@ -1303,17 +1301,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(166, 139, 249) !important;
+  --link-color: #5b928c !important;
   --link-color-hover: rgb(197, 182, 252) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(166, 139, 249) !important;
+  --link-external-color: #5b928c !important;
   --link-external-color-hover: rgb(197, 182, 252) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(166, 139, 249) !important;
+  --link-unresolved-color: #5b928c !important;
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -1327,14 +1325,14 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #666666 !important;
-  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
+  --list-marker-color: #859289 !important;
+  --list-marker-color-collapsed: #5b928c !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #262626 !important;
+  --menu-background: #2f383e !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -1343,12 +1341,12 @@
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #363636 !important;
+  --metadata-border-color: #525c62 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #363636 !important;
+  --metadata-divider-color: #525c62 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1363,7 +1361,7 @@
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #dadada !important;
+  --metadata-input-text-color: #beb39b !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
@@ -1388,7 +1386,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #1e1e1e !important;
+  --modal-background: #2f383e !important;
   --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1400,12 +1398,12 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #666666 !important;
-  --nav-collapse-icon-color-collapsed: #666666 !important;
-  --nav-heading-color: #dadada !important;
-  --nav-heading-color-collapsed: #666666 !important;
+  --nav-collapse-icon-color: #859289 !important;
+  --nav-collapse-icon-color-collapsed: #859289 !important;
+  --nav-heading-color: #beb39b !important;
+  --nav-heading-color-collapsed: #859289 !important;
   --nav-heading-color-collapsed-hover: #b3b3b3 !important;
-  --nav-heading-color-hover: #dadada !important;
+  --nav-heading-color-hover: #beb39b !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
@@ -1416,16 +1414,16 @@
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b3b3b3 !important;
-  --nav-item-color-active: #dadada !important;
-  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
-  --nav-item-color-hover: #dadada !important;
-  --nav-item-color-selected: #dadada !important;
+  --nav-item-color-active: #beb39b !important;
+  --nav-item-color-highlighted: #5b928c !important;
+  --nav-item-color-hover: #beb39b !important;
+  --nav-item-color-selected: #beb39b !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #666666 !important;
+  --nav-tag-color: #859289 !important;
   --nav-tag-color-active: #b3b3b3 !important;
   --nav-tag-color-hover: #b3b3b3 !important;
   --nav-tag-radius: 4px !important;
@@ -1434,22 +1432,22 @@
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1e1e1e !important;
-  --pdf-page-background: #1e1e1e !important;
-  --pdf-shadow: 0 0 0 1px #363636 !important;
-  --pdf-sidebar-background: #1e1e1e !important;
+  --pdf-background: #2f383e !important;
+  --pdf-page-background: #2f383e !important;
+  --pdf-shadow: 0 0 0 1px #525c62 !important;
+  --pdf-sidebar-background: #2f383e !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #363636 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #525c62 !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #363636 !important;
+  --pill-border-color: #525c62 !important;
   --pill-border-color-hover: #3f3f3f !important;
   --pill-border-width: 1px !important;
   --pill-color: #b3b3b3 !important;
-  --pill-color-hover: #dadada !important;
-  --pill-color-remove: #666666 !important;
-  --pill-color-remove-hover: rgb(166, 139, 249) !important;
+  --pill-color-hover: #beb39b !important;
+  --pill-color-remove: #859289 !important;
+  --pill-color-remove-hover: #5b928c !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1473,8 +1471,8 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #262626 !important;
-  --ribbon-background-collapsed: #1e1e1e !important;
+  --ribbon-background: #2f383e !important;
+  --ribbon-background-collapsed: #2f383e !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1492,7 +1490,7 @@
   --search-clear-button-size: 13px !important;
   --search-icon-color: #b3b3b3 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1e1e1e !important;
+  --search-result-background: #2f383e !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1528,11 +1526,11 @@
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #363636 !important;
+  --slider-track-background: #525c62 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #262626 !important;
-  --status-bar-border-color: #363636 !important;
+  --status-bar-background: #2f383e !important;
+  --status-bar-border-color: #525c62 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
@@ -1551,13 +1549,13 @@
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1e1e1e !important;
-  --tab-container-background: #262626 !important;
+  --tab-background-active: #2f383e !important;
+  --tab-container-background: #2f383e !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #363636 !important;
+  --tab-outline-color: #525c62 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -1569,23 +1567,23 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #262626 !important;
+  --tab-switcher-background: #2f383e !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #666666 !important;
+  --tab-text-color: #859289 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
   --tab-text-color-focused-active: #b3b3b3 !important;
-  --tab-text-color-focused-active-current: #dadada !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-text-color-focused-active-current: #beb39b !important;
+  --tab-text-color-focused-highlighted: #5b928c !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #363636 !important;
+  --table-add-button-border-color: #525c62 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #363636 !important;
+  --table-border-color: #525c62 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1594,14 +1592,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
-  --table-drag-handle-color: #666666 !important;
+  --table-drag-handle-background-active: #569d79 !important;
+  --table-drag-handle-color: #859289 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #363636 !important;
+  --table-header-border-color: #525c62 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #dadada !important;
+  --table-header-color: #beb39b !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -1611,7 +1609,7 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --table-selection-border-color: #569d79 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
@@ -1621,34 +1619,34 @@
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(166, 139, 249) !important;
-  --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-color: #5b928c !important;
+  --tag-color-hover: #5b928c !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(166, 139, 249) !important;
+  --text-accent: #5b928c !important;
   --text-accent-hover: rgb(197, 182, 252) !important;
   --text-error: #fb464c !important;
-  --text-faint: #666666 !important;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --text-faint: #859289 !important;
+  --text-highlight-bg: #404d44 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #b3b3b3 !important;
-  --text-normal: #dadada !important;
+  --text-normal: #beb39b !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.33) !important;
+  --text-selection: #525c62 !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: #262626 !important;
-  --titlebar-background-focused: #363636 !important;
-  --titlebar-border-color: #363636 !important;
+  --titlebar-background: #2f383e !important;
+  --titlebar-background-focused: #2f383e !important;
+  --titlebar-border-color: #525c62 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #b3b3b3 !important;
-  --titlebar-text-color-focused: #dadada !important;
+  --titlebar-text-color-focused: #beb39b !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1662,8 +1660,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #dadada !important;
-  --vault-profile-color-hover: #dadada !important;
+  --vault-profile-color: #beb39b !important;
+  --vault-profile-color-hover: #beb39b !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1672,6 +1670,89 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --bg-light: #fdf6e3 !important;
+  --h1-color: #68925b !important;
+  --h2-color: #569d79 !important;
+  --h3-color: #705b92 !important;
+  --h4-color: #925b62 !important;
+  --h5-color: #b98c70 !important;
+  --h6-color: #d3b879 !important;
+  --inline-title-color: #68925b !important;
+  --bg-dark: #2f383e !important;
+  --bg0-dark: #22282c !important;
+  --bg0-light: #f0edd8 !important;
+  --bg1-dark: #272f34 !important;
+  --bg1-light: #f6f1dd !important;
+  --bg2-dark: #374247 !important;
+  --bg2-light: #f3efda !important;
+  --bg3-dark: #404c51 !important;
+  --bg3-light: #edead5 !important;
+  --bg4-dark: #4a555b !important;
+  --bg4-light: #e4e1cd !important;
+  --bg5-dark: #525c62 !important;
+  --bg5-light: #dfdbc8 !important;
+  --bg_blue: #394f5a !important;
+  --bg_blue_light: #e9f0e9 !important;
+  --bg_green: #404d44 !important;
+  --bg_green_light: #f0f1d2 !important;
+  --bg_red: #4e3e43 !important;
+  --bg_red_light: #fbe3da !important;
+  --bg_visual: #503946 !important;
+  --bg_visual_light: #eaedc8 !important;
+  --bg_yellow: #4a4940 !important;
+  --bg_yellow_light: #faedcd !important;
+  --code-block: #beb39b !important;
+  --dim-aqua: #569d79 !important;
+  --dim-blue: #5b928c !important;
+  --dim-green: #68925b !important;
+  --dim-orange: #b98c70 !important;
+  --dim-purple: #705b92 !important;
+  --dim-red: #925b62 !important;
+  --dim-yellow: #d3b879 !important;
+  --faded-aqua: #83c092 !important;
+  --faded-blue: #7fbbb3 !important;
+  --faded-green: #a7c080 !important;
+  --faded-orange: #e69875 !important;
+  --faded-purple: #d699b6 !important;
+  --faded-red: #e67e80 !important;
+  --faded-yellow: #dbbc7f !important;
+  --fg-dark: #beb39b !important;
+  --fg-light: #5c6a72 !important;
+  --grey0-dark: #7f897d !important;
+  --grey0-light: #a4ad9e !important;
+  --grey1-dark: #859289 !important;
+  --grey1-light: #939f91 !important;
+  --grey2-dark: #9aa79d !important;
+  --grey2-light: #879686 !important;
+  --inline-code: #5b928c !important;
+  --interactive-before: #525c62 !important;
+  --light-aqua: #639479 !important;
+  --light-blue: #67a6bd !important;
+  --light-dim-aqua: #689b7f !important;
+  --light-dim-blue: #64a9c2 !important;
+  --light-dim-green: #829e66 !important;
+  --light-dim-orange: #e04c18 !important;
+  --light-dim-purple: #9e6886 !important;
+  --light-dim-red: #e04340 !important;
+  --light-dim-yellow: #a89f48 !important;
+  --light-green: #99b87b !important;
+  --light-orange: #f56126 !important;
+  --light-purple: #a56e8c !important;
+  --light-red: #f85552 !important;
+  --light-yellow: #a7a049 !important;
+  --pre-code: #272f34 !important;
+  --shadow: #00000070 !important;
+  --shadow-light: #3c474d20 !important;
+  --text-a: #569d79 !important;
+  --text-a-hover: #83c092 !important;
+  --text-link: #7fbbb3 !important;
+  --text-title-h1: #68925b !important;
+  --text-title-h2: #569d79 !important;
+  --text-title-h3: #705b92 !important;
+  --text-title-h4: #925b62 !important;
+  --text-title-h5: #b98c70 !important;
+  --text-title-h6: #d3b879 !important;
+  --vim-cursor: #7fbbb3 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1738,45 +1819,45 @@ body {
   }
 
   div#quartz-root {
-    background-color: light-dark(rgb(253, 246, 227), rgb(30, 30, 30));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: light-dark(rgb(253, 246, 227), rgb(30, 30, 30));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(253, 246, 227), rgb(38, 38, 38));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(253, 246, 227), rgb(38, 38, 38));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(253, 246, 227), rgb(38, 38, 38));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
-    border-left: 1px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
+    border-left: 1px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 1px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    border-right: 1px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
   }
 
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1793,8 +1874,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    text-decoration: underline solid rgb(91, 146, 140);
+    text-decoration-color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1805,7 +1886,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1822,8 +1903,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    text-decoration: underline solid rgb(91, 146, 140);
+    text-decoration-color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1833,7 +1914,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1861,7 +1942,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -1878,8 +1959,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1890,7 +1971,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -1907,8 +1988,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1919,7 +2000,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -1936,8 +2017,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1948,7 +2029,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -1965,8 +2046,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1977,7 +2058,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -1994,8 +2075,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2004,8 +2085,8 @@ body {
   }
 
   .text-highlight {
-    background-color: light-dark(rgb(130, 158, 102), rgba(255, 208, 0, 0.4));
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    background-color: light-dark(rgb(130, 158, 102), rgb(64, 77, 68));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -2022,8 +2103,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2033,7 +2114,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -2050,8 +2131,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: line-through solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2077,10 +2158,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(
-      rgba(189, 174, 147, 0.5),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: light-dark(rgba(189, 174, 147, 0.5), rgb(82, 92, 98));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2089,7 +2167,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   .search
@@ -2105,7 +2183,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2114,12 +2192,12 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   hr {
-    border: 0px light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
-    border-top: 2px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    border: 0px light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
+    border-top: 2px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2175,17 +2253,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(130, 158, 102), rgb(166, 138, 249));
+    color: light-dark(rgb(130, 158, 102), rgb(91, 146, 140));
   }
 
   ul > li {
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-align: start;
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
-    border: 0px light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
+    background-color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
+    border: 0px light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2194,20 +2272,20 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
+    color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   ol > li {
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-align: start;
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
-    border: 0px light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
+    background-color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
+    border: 0px light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2216,15 +2294,15 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
+    color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   code {
-    background-color: light-dark(rgb(246, 241, 221), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    background-color: light-dark(rgb(246, 241, 221), rgb(39, 47, 52));
+    border: 0px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2233,18 +2311,15 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(103, 166, 189), rgb(218, 218, 218));
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
-    padding: 2.1px 4.2px;
+    color: light-dark(rgb(103, 166, 189), rgb(91, 146, 140));
+    font-family: "Hack Nerd Font", "Source Code Pro", monospace;
+    padding: 2.16px 4.32px;
   }
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(246, 241, 221), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    background-color: light-dark(rgb(246, 241, 221), rgb(39, 47, 52));
+    border: 0px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2260,8 +2335,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(253, 246, 227), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    border: 0px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2349,13 +2424,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(147, 159, 145), rgb(102, 102, 102));
-    text-decoration: none solid rgb(102, 102, 102);
+    color: light-dark(rgb(147, 159, 145), rgb(133, 146, 137));
+    text-decoration: none solid rgb(133, 146, 137);
   }
 
   .search > .search-button {
     background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    border: 1px solid light-dark(rgb(223, 219, 200), rgb(54, 54, 54));
+    border: 1px solid light-dark(rgb(223, 219, 200), rgb(82, 92, 98));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -2364,7 +2439,7 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2380,7 +2455,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(253, 246, 227), rgb(30, 30, 30));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
     border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2397,9 +2472,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(253, 246, 227), rgb(30, 30, 30));
-    border: 0px light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
-    border-bottom: 1px solid light-dark(rgb(253, 246, 227), rgb(38, 38, 38));
+    background-color: light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
+    border: 0px light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
+    border-bottom: 1px solid light-dark(rgb(253, 246, 227), rgb(47, 56, 62));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2413,7 +2488,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: auto;
     filter: none;
     font-family:
@@ -2430,8 +2505,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    text-decoration: none solid rgb(190, 179, 155);
+    text-decoration-color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2457,7 +2532,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   .search
@@ -2466,7 +2541,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2495,12 +2570,9 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     font-weight: 400;
-    background-color: light-dark(
-      rgba(189, 174, 147, 0.5),
-      rgba(255, 255, 255, 0.067)
-    );
+    background-color: light-dark(rgba(189, 174, 147, 0.5), rgb(82, 92, 98));
   }
 
   .search
@@ -2545,11 +2617,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
   }
 
   h1 {
-    color: light-dark(rgb(248, 85, 82), rgb(218, 218, 218));
+    color: light-dark(rgb(248, 85, 82), rgb(104, 146, 91));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2566,7 +2638,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(245, 97, 38), rgb(218, 218, 218));
+    color: light-dark(rgb(245, 97, 38), rgb(86, 157, 121));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2583,7 +2655,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(167, 160, 73), rgb(218, 218, 218));
+    color: light-dark(rgb(167, 160, 73), rgb(112, 91, 146));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2600,7 +2672,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(153, 184, 123), rgb(218, 218, 218));
+    color: light-dark(rgb(153, 184, 123), rgb(146, 91, 98));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2617,7 +2689,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(99, 148, 121), rgb(218, 218, 218));
+    color: light-dark(rgb(99, 148, 121), rgb(185, 140, 112));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2634,7 +2706,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(165, 110, 140), rgb(218, 218, 218));
+    color: light-dark(rgb(165, 110, 140), rgb(211, 184, 121));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2652,7 +2724,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: light-dark(rgb(248, 85, 82), rgb(218, 218, 218));
+    color: light-dark(rgb(248, 85, 82), rgb(104, 146, 91));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2678,7 +2750,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3020,7 +3092,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(218, 218, 218);
+    stroke: rgb(190, 179, 155);
   }
 
   .callout[data-callout="quote"] {
@@ -3105,16 +3177,16 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(92, 106, 114), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(92, 106, 114), rgb(190, 179, 155));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;

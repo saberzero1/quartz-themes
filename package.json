@@ -7,7 +7,7 @@
   "scripts": {
     "web:build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "web:run-old": "npm run web:build && wdio run ./wdio.conf.mjs --waitforTimeout=300000",
-    "web:run": "npm run web:build && node ./runner/scripts/extract.js -- --waitforTimeout=300000",
+    "web:run": "npm run web:build && node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000",
     "web:compile-old": "node ./runner/scripts/compile.js && node ./convert.js && just format",
     "web:compile": "node ./runner/scripts/compile.js && npm run format",
     "web:misc": "node ./convert.js && npm run format",

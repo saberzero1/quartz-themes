@@ -842,6 +842,7 @@ body.theme-dark {
   --accent: #803232;
   --text: #475569;
   --bullet: "";
+  --hr-width: auto;
   --graph-arrow: #803232;
   --graph-tag: #04070c;
   --he-title-bar-active-action: #c94d4d;
@@ -1064,7 +1065,6 @@ body.theme-dark {
   --hr-icon-font: "its";
   --hr-icon-padding-x: 4px;
   --hr-icon-symbol: "";
-  --hr-width: auto;
   --hvr: rgba(60, 8, 8, 0.46);
   --hvr-active: rgba(212, 47, 47, 0.4);
   --hvr2: rgba(139, 6, 6, 0.4);

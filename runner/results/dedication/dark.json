@@ -26113,7 +26113,7 @@
     "mask-position": "50% 50%",
     "mask-repeat": "no-repeat",
     "mask-size": "contain",
-    "opacity": "0.938954",
+    "opacity": "0.930852",
     "outline-color": "rgb(192, 176, 160)",
     "overflow-block": "visible",
     "overflow-inline": "visible",
@@ -26121,7 +26121,7 @@
     "text-decoration": "none solid rgb(192, 176, 160)",
     "text-decoration-color": "rgb(192, 176, 160)",
     "text-emphasis-color": "rgb(192, 176, 160)",
-    "transform": "matrix(1.06948, 0, 0, 1.06948, 0, 0)",
+    "transform": "matrix(1.06543, 0, 0, 1.06543, 0, 0)",
     "unicode-bidi": "normal"
   },
   "div.plugin-sync.status-bar-item[data-tooltip-position=\"top\"]": {
@@ -27182,14 +27182,14 @@
     "mask-position": "50% 50%",
     "mask-repeat": "no-repeat",
     "mask-size": "contain",
-    "opacity": "0.917085",
+    "opacity": "0.934015",
     "outline-color": "rgb(192, 176, 160)",
     "overflow-block": "visible",
     "overflow-inline": "visible",
     "text-decoration": "none solid rgb(192, 176, 160)",
     "text-decoration-color": "rgb(192, 176, 160)",
     "text-emphasis-color": "rgb(192, 176, 160)",
-    "transform": "matrix(1.05854, 0, 0, 1.05854, 0, 0)",
+    "transform": "matrix(1.06701, 0, 0, 1.06701, 0, 0)",
     "unicode-bidi": "normal"
   },
   "div.search-info-container": {

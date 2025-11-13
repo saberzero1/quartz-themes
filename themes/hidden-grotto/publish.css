@@ -297,22 +297,22 @@ body.theme-light {
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0px !important;
   --code-background: rgb(233, 223, 211) !important;
-  --code-border-color: rgb(111, 111, 155) !important;
-  --code-border-width: 0px !important;
+  --code-border-color: rgb(52, 52, 75) !important;
+  --code-border-width: 1px !important;
   --code-bracket-background: transparent !important;
   --code-comment: rgb(111, 111, 155) !important;
-  --code-function: #e0ac00 !important;
-  --code-important: #ec7500 !important;
-  --code-keyword: #d53984 !important;
+  --code-function: rgb(149, 138, 80) !important;
+  --code-important: rgb(184, 153, 122) !important;
+  --code-keyword: rgb(201, 156, 179) !important;
   --code-normal: rgb(52, 52, 75) !important;
-  --code-operator: #e93147 !important;
-  --code-property: #00bfbc !important;
+  --code-operator: rgb(184, 122, 122) !important;
+  --code-property: rgb(89, 166, 153) !important;
   --code-punctuation: rgb(94, 94, 135) !important;
   --code-radius: 0rem !important;
   --code-size: 0.875em !important;
-  --code-string: #08b94e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #7852ee !important;
+  --code-string: rgb(89, 166, 89) !important;
+  --code-tag: rgb(184, 122, 122) !important;
+  --code-value: rgb(179, 156, 201) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(111, 111, 155) !important;
   --collapse-icon-color-collapsed: rgb(236, 107, 60) !important;
@@ -379,10 +379,7 @@ body.theme-light {
   --embed-padding: 8px 16px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 0px solid transparent !important;
-  --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --file-header-font: "??" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -400,22 +397,13 @@ body.theme-light {
     sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-interface: "??" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
-  --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??" !important;
+  --font-monospace: "??" !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -423,16 +411,13 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-text: "??" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -576,7 +561,7 @@ body.theme-light {
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: rgb(236, 107, 60) !important;
-  --link-external-color-hover: rgb(238, 121, 79) !important;
+  --link-external-color-hover: rgb(242, 131, 100) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
@@ -621,10 +606,7 @@ body.theme-light {
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: transparent !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-input-font: "??" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -632,10 +614,7 @@ body.theme-light {
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: transparent !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-label-font: "??" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: rgb(94, 94, 135) !important;
   --metadata-label-text-color-hover: rgb(94, 94, 135) !important;
@@ -937,7 +916,6 @@ body.theme-light {
   --table-header-background-hover: transparent !important;
   --table-text-color: rgb(52, 52, 75) !important;
   --grotto-accent-1: rgb(236, 107, 60) !important;
-  --grotto-accent-2: rgb(238, 121, 79) !important;
   --grotto-background-tertiary: rgb(217, 201, 180) !important;
   --grotto-bases-cards-background-color: rgb(233, 223, 211) !important;
   --grotto-bases-cards-background-color-hover: rgb(236, 107, 60) !important;
@@ -947,10 +925,12 @@ body.theme-light {
   --grotto-bases-cards-label-color: rgb(52, 52, 75) !important;
   --grotto-bases-cards-label-color-hover: rgb(52, 52, 75) !important;
   --grotto-bases-radius: 0rem !important;
+  --grotto-blockquote-alignment: start !important;
+  --grotto-blockquote-style: normal !important;
+  --grotto-blur: 0px !important;
   --grotto-bold-color: rgb(236, 107, 60) !important;
   --grotto-bold-font-weight: 800 !important;
   --grotto-button-background-color: rgb(236, 107, 60) !important;
-  --grotto-button-background-color-hover: rgb(238, 121, 79) !important;
   --grotto-button-border-color: rgb(52, 52, 75) !important;
   --grotto-button-color: rgb(52, 52, 75) !important;
   --grotto-button-error-background: rgb(41, 41, 41) !important;
@@ -992,7 +972,6 @@ body.theme-light {
   --grotto-day-2: rgb(217, 201, 180) !important;
   --grotto-day-3: rgb(200, 176, 146) !important;
   --grotto-dropdown-background-color: rgb(236, 107, 60) !important;
-  --grotto-dropdown-background-color-hover: rgb(238, 121, 79) !important;
   --grotto-dropdown-border-color: rgb(52, 52, 75) !important;
   --grotto-dropdown-color: rgb(52, 52, 75) !important;
   --grotto-dropdown-radius: 0rem !important;
@@ -1037,13 +1016,15 @@ body.theme-light {
   --grotto-italic-color: rgb(236, 107, 60) !important;
   --grotto-italic-font-weight: 400 !important;
   --grotto-link-color: rgb(236, 107, 60) !important;
-  --grotto-link-color-hover: rgb(238, 121, 79) !important;
   --grotto-link-weight: 400 !important;
   --grotto-menu-background-color: rgb(233, 223, 211) !important;
   --grotto-menu-background-color-active: rgb(236, 107, 60) !important;
   --grotto-menu-border-color: rgb(52, 52, 75) !important;
   --grotto-menu-color: rgb(52, 52, 75) !important;
   --grotto-menu-color-active: rgb(52, 52, 75) !important;
+  --grotto-metadata-background-color: transparent !important;
+  --grotto-metadata-border-color: rgb(52, 52, 75) !important;
+  --grotto-metadata-radius: 0rem !important;
   --grotto-mobile-drawer-header-active-background-color: rgb(
     233,
     223,
@@ -1083,10 +1064,13 @@ body.theme-light {
   --grotto-prompt-color-hover: rgb(233, 223, 211) !important;
   --grotto-properties-color: rgb(233, 223, 211) !important;
   --grotto-properties-tag-color: rgb(42, 42, 60) !important;
+  --grotto-properties-view-caret-color: rgb(52, 52, 75) !important;
+  --grotto-properties-view-color: rgb(52, 52, 75) !important;
   --grotto-pull-background-color: rgb(236, 107, 60) !important;
   --grotto-pull-border-color: rgb(52, 52, 75) !important;
   --grotto-pull-color: rgb(52, 52, 75) !important;
   --grotto-pull-radius: 0rem !important;
+  --grotto-redacted: "Flow Circular" !important;
   --grotto-rename-background-color: rgb(233, 223, 211) !important;
   --grotto-rename-color: rgb(52, 52, 75) !important;
   --grotto-resize-handle-color: rgb(236, 107, 60) !important;
@@ -1149,7 +1133,6 @@ body.theme-light {
   --grotto-toggle-background-color-hover: rgb(200, 176, 146) !important;
   --grotto-toggle-color: rgb(233, 223, 211) !important;
   --grotto-toggle-enabled-background-color: rgb(236, 107, 60) !important;
-  --grotto-toggle-enabled-background-color-hover: rgb(238, 121, 79) !important;
   --grotto-toggle-handle-border-color: rgb(42, 42, 60) !important;
   --grotto-toolbar-background-color: rgb(52, 52, 75) !important;
   --grotto-toolbar-border-color: rgb(233, 223, 211) !important;
@@ -1305,22 +1288,22 @@ body.theme-dark {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 0px;
   --code-background: rgb(52, 52, 75);
-  --code-border-color: rgb(200, 176, 146);
-  --code-border-width: 0px;
+  --code-border-color: rgb(233, 223, 211);
+  --code-border-width: 1px;
   --code-bracket-background: transparent;
   --code-comment: rgb(200, 176, 146);
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
+  --code-function: rgb(149, 138, 80);
+  --code-important: rgb(184, 153, 122);
+  --code-keyword: rgb(201, 156, 179);
   --code-normal: rgb(233, 223, 211);
-  --code-operator: #fb464c;
-  --code-property: #53dfdd;
+  --code-operator: rgb(184, 122, 122);
+  --code-property: rgb(89, 166, 153);
   --code-punctuation: rgb(217, 201, 180);
   --code-radius: 0rem;
   --code-size: 0.875em;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-string: rgb(89, 166, 89);
+  --code-tag: rgb(184, 122, 122);
+  --code-value: rgb(179, 156, 201);
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(200, 176, 146);
   --collapse-icon-color-collapsed: rgb(236, 107, 60);
@@ -1387,10 +1370,7 @@ body.theme-dark {
   --embed-padding: 8px 16px;
   --file-folding-offset: 24px;
   --file-header-border: 0px solid transparent;
-  --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --file-header-font: "??";
   --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1408,22 +1388,13 @@ body.theme-dark {
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --font-interface: "??";
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
-  --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace;
+  --font-mermaid: "??";
+  --font-monospace: "??";
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1431,16 +1402,13 @@ body.theme-dark {
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: "Arial";
+  --font-print: "??";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --font-text: "??";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1584,7 +1552,7 @@ body.theme-dark {
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
   --link-external-color: rgb(236, 107, 60);
-  --link-external-color-hover: rgb(238, 121, 79);
+  --link-external-color-hover: rgb(246, 157, 136);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
@@ -1629,10 +1597,7 @@ body.theme-dark {
   --metadata-input-background: transparent;
   --metadata-input-background-active: transparent;
   --metadata-input-background-hover: transparent;
-  --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --metadata-input-font: "??";
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -1640,10 +1605,7 @@ body.theme-dark {
   --metadata-label-background: transparent;
   --metadata-label-background-active: transparent;
   --metadata-label-background-hover: transparent;
-  --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --metadata-label-font: "??";
   --metadata-label-font-size: 0.875em;
   --metadata-label-text-color: rgb(217, 201, 180);
   --metadata-label-text-color-hover: rgb(217, 201, 180);
@@ -1945,7 +1907,6 @@ body.theme-dark {
   --table-header-background-hover: transparent;
   --table-text-color: rgb(233, 223, 211);
   --grotto-accent-1: rgb(236, 107, 60);
-  --grotto-accent-2: rgb(238, 121, 79);
   --grotto-background-tertiary: rgb(94, 94, 135);
   --grotto-bases-cards-background-color: rgb(52, 52, 75);
   --grotto-bases-cards-background-color-hover: rgb(236, 107, 60);
@@ -1955,10 +1916,12 @@ body.theme-dark {
   --grotto-bases-cards-label-color: rgb(233, 223, 211);
   --grotto-bases-cards-label-color-hover: rgb(233, 223, 211);
   --grotto-bases-radius: 0rem;
+  --grotto-blockquote-alignment: start;
+  --grotto-blockquote-style: normal;
+  --grotto-blur: 0px;
   --grotto-bold-color: rgb(236, 107, 60);
   --grotto-bold-font-weight: 800;
   --grotto-button-background-color: rgb(236, 107, 60);
-  --grotto-button-background-color-hover: rgb(238, 121, 79);
   --grotto-button-border-color: rgb(233, 223, 211);
   --grotto-button-color: rgb(233, 223, 211);
   --grotto-button-error-background: rgb(41, 41, 41);
@@ -2000,7 +1963,6 @@ body.theme-dark {
   --grotto-day-2: rgb(217, 201, 180);
   --grotto-day-3: rgb(200, 176, 146);
   --grotto-dropdown-background-color: rgb(236, 107, 60);
-  --grotto-dropdown-background-color-hover: rgb(238, 121, 79);
   --grotto-dropdown-border-color: rgb(233, 223, 211);
   --grotto-dropdown-color: rgb(233, 223, 211);
   --grotto-dropdown-radius: 0rem;
@@ -2045,13 +2007,15 @@ body.theme-dark {
   --grotto-italic-color: rgb(236, 107, 60);
   --grotto-italic-font-weight: 400;
   --grotto-link-color: rgb(236, 107, 60);
-  --grotto-link-color-hover: rgb(238, 121, 79);
   --grotto-link-weight: 400;
   --grotto-menu-background-color: rgb(52, 52, 75);
   --grotto-menu-background-color-active: rgb(236, 107, 60);
   --grotto-menu-border-color: rgb(233, 223, 211);
   --grotto-menu-color: rgb(233, 223, 211);
   --grotto-menu-color-active: rgb(233, 223, 211);
+  --grotto-metadata-background-color: transparent;
+  --grotto-metadata-border-color: rgb(233, 223, 211);
+  --grotto-metadata-radius: 0rem;
   --grotto-mobile-drawer-header-active-background-color: rgb(233, 223, 211);
   --grotto-mobile-drawer-header-background-color: rgb(42, 42, 60);
   --grotto-mobile-drawer-header-color: rgb(233, 223, 211);
@@ -2087,10 +2051,13 @@ body.theme-dark {
   --grotto-prompt-color-hover: rgb(52, 52, 75);
   --grotto-properties-color: rgb(233, 223, 211);
   --grotto-properties-tag-color: rgb(42, 42, 60);
+  --grotto-properties-view-caret-color: rgb(233, 223, 211);
+  --grotto-properties-view-color: rgb(233, 223, 211);
   --grotto-pull-background-color: rgb(236, 107, 60);
   --grotto-pull-border-color: rgb(233, 223, 211);
   --grotto-pull-color: rgb(233, 223, 211);
   --grotto-pull-radius: 0rem;
+  --grotto-redacted: "Flow Circular";
   --grotto-rename-background-color: rgb(233, 223, 211);
   --grotto-rename-color: rgb(52, 52, 75);
   --grotto-resize-handle-color: rgb(236, 107, 60);
@@ -2149,7 +2116,6 @@ body.theme-dark {
   --grotto-toggle-background-color-hover: rgb(200, 176, 146);
   --grotto-toggle-color: rgb(233, 223, 211);
   --grotto-toggle-enabled-background-color: rgb(236, 107, 60);
-  --grotto-toggle-enabled-background-color-hover: rgb(238, 121, 79);
   --grotto-toggle-handle-border-color: rgb(42, 42, 60);
   --grotto-toolbar-background-color: rgb(233, 223, 211);
   --grotto-toolbar-border-color: rgb(52, 52, 75);
@@ -2168,18 +2134,7 @@ body .markdown-rendered a.external-link {
   color: rgb(236, 107, 60);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(236, 107, 60);
@@ -2195,18 +2150,7 @@ body .markdown-rendered a.internal-link {
   color: rgb(236, 107, 60);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(236, 107, 60);
@@ -2222,18 +2166,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   color: rgb(236, 107, 60);
   cursor: pointer;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgba(236, 107, 60, 0.3);
@@ -2249,18 +2182,7 @@ body .markdown-rendered p {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(233, 223, 211);
@@ -2276,18 +2198,7 @@ body strong {
   color: rgb(236, 107, 60);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 800;
   outline: inherit;
   text-decoration: none solid rgb(236, 107, 60);
@@ -2303,18 +2214,7 @@ body b {
   color: rgb(236, 107, 60);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 800;
   outline: inherit;
   text-decoration: none solid rgb(236, 107, 60);
@@ -2330,18 +2230,7 @@ body em {
   color: rgb(236, 107, 60);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(236, 107, 60);
@@ -2357,18 +2246,7 @@ body i {
   color: rgb(236, 107, 60);
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(236, 107, 60);
@@ -2384,18 +2262,7 @@ body .markdown-rendered mark {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(233, 223, 211);
@@ -2411,18 +2278,7 @@ body del {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(233, 223, 211);
@@ -2480,18 +2336,7 @@ body div.multi-select-pill {
   align-items: center;
   background-color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   display: flex;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   margin-inline-start: 0px;
   border: 0px solid rgba(236, 107, 60, 0.15);
@@ -2549,7 +2394,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(217, 201, 180), rgb(94, 94, 135));
-  border: 0px solid light-dark(rgb(111, 111, 155), rgb(200, 176, 146));
+  border: 1px solid light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2559,15 +2404,12 @@ body .markdown-rendered code {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  font-family: "??";
   padding: 3.2px 6.4px;
 }
 body .markdown-rendered pre > code {
   background-color: light-dark(rgb(217, 201, 180), rgb(94, 94, 135));
-  border: 0px solid light-dark(rgb(111, 111, 155), rgb(200, 176, 146));
+  border: 1px solid light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2584,7 +2426,7 @@ body .markdown-rendered pre > code {
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: light-dark(rgb(217, 201, 180), rgb(94, 94, 135));
-  border: 0px solid light-dark(rgb(111, 111, 155), rgb(200, 176, 146));
+  border: 1px solid light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2649,18 +2491,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: light-dark(rgb(233, 223, 211), rgb(52, 52, 75));
   border-inline-start: inherit;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -2684,18 +2515,7 @@ body .site-body-left-column input.search-bar {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(233, 223, 211);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
 }
 body .search-results {
   background-color: light-dark(rgb(233, 223, 211), rgb(52, 52, 75));
@@ -2715,18 +2535,7 @@ body .search-results > * {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
   cursor: auto;
   filter: none;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(233, 223, 211);
@@ -2772,98 +2581,32 @@ body div.search-results .suggestion-item.is-selected {
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(rgb(233, 223, 211), rgb(52, 52, 75));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: light-dark(rgb(52, 52, 75), rgb(233, 223, 211));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   text-shadow: none;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-self {
@@ -3201,32 +2944,10 @@ body .math-block > mjx-container.MathJax {
   text-align: center;
   white-space-collapse: break-spaces;
   text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
 }
 body div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
 }
 body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
@@ -3234,18 +2955,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
 body .nav-view-outer .tree-item-self a {
   color: rgb(233, 223, 211);
   cursor: default;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   text-decoration: none solid rgb(233, 223, 211);
 }
@@ -3277,18 +2987,7 @@ body
   > .tree-item-self {
   color: rgb(233, 223, 211);
   cursor: default;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   text-decoration: none solid rgb(233, 223, 211);
 }
@@ -3301,18 +3000,7 @@ body
   > .tree-item-self {
   color: rgb(233, 223, 211);
   cursor: default;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    "system-ui",
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "??";
   font-weight: 400;
   text-decoration: none solid rgb(233, 223, 211);
 }

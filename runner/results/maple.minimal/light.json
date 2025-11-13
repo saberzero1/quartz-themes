@@ -21151,7 +21151,6 @@
     "min-height": "0px",
     "min-inline-size": "0px",
     "min-width": "0px",
-    "opacity": "0.991129",
     "overflow-block": "hidden",
     "overflow-inline": "hidden",
     "overflow-wrap": "break-word",
@@ -21161,7 +21160,6 @@
     "right": "211px",
     "tab-size": "4",
     "top": "80px",
-    "transform": "matrix(1, 0, 0, 1, 0, 0.0386925)",
     "user-select": "text",
     "will-change": "transform, opacity",
     "z-index": "1"
