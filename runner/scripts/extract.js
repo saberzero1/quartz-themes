@@ -15,8 +15,12 @@ import {
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../../util/util.mjs";
 
-const VERSION = "1.10.2";
-const INSTALLER_VERSION = "1.9.14";
+const VERSION = "1.10.3";
+const INSTALLER_VERSION = "1.10.3";
+
+let testingMode = false;
+testingMode = true;
+const testingTheme = "a";
 
 const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(
   (file) => file.endsWith(".css") || file.endsWith(".json"),
@@ -34,30 +38,45 @@ const pluginList = readdirSync("./runner/vault/.obsidian/plugins").filter(
 To load a theme by name: `app.customCss.setTheme("Abyssal");`
 */
 
-let testingMode = false;
-testingMode = true;
-const testingTheme = "z";
 const startingIndex = 0;
 const numberOfThemesToProcess = -1;
 const numberOfThemesInManifest = getThemeCollection().length;
+const themeIndexFromName = (name) => {
+  const index = getThemeCollection().findIndex(
+    (m) => sanitize(m.name) === sanitize(name),
+  );
+  console.log(
+    `Theme "${name}" found at index: ${index} (out of ${getThemeCollection().length} themes)`,
+  );
+  return index;
+};
+
+/*
+const themeCollection = testingMode
+  ? getThemeCollection().filter((m) =>
+    m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
+  )
+  : // Start at startingIndex
+  numberOfThemesToProcess > 0
+    ? getThemeCollection().slice(
+      startingIndex,
+      Math.min(
+        startingIndex + numberOfThemesToProcess,
+        numberOfThemesInManifest,
+      ),
+    )
+    : numberOfThemesToProcess === 0
+      ? getThemeCollection().slice(startingIndex, undefined)
+      : getThemeCollection();
+*/
+
+// const themeCollection = getThemeCollection().slice(themeIndexFromName("solitude") - 1, undefined);
 
 const themeCollection = testingMode
   ? getThemeCollection().filter((m) =>
       m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
     )
-  : // Start at startingIndex
-    numberOfThemesToProcess > 0
-    ? getThemeCollection().slice(
-        startingIndex,
-        Math.min(
-          startingIndex + numberOfThemesToProcess,
-          numberOfThemesInManifest,
-        ),
-      )
-    : numberOfThemesToProcess === 0
-      ? getThemeCollection().slice(startingIndex, undefined)
-      : getThemeCollection();
-
+  : getThemeCollection();
 // console.log(themeCollection);
 
 function printMemoryUsage() {
@@ -253,6 +272,12 @@ function getCurrentTheme() {
   return currentTheme;
 }
 
+async function ensureLayoutReady(browser) {
+  return browser.executeObsidian(async ({ app }) => {
+    await app.workspace.onLayoutReady(() => {});
+  });
+}
+
 function setCurrentTheme(mode) {
   const currentMode = getCurrentTheme();
   if (currentMode !== mode) {
@@ -263,6 +288,17 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function enableSnippets(snippets) {
+  const appearance = JSON.parse(
+    readFileSync("./runner/vault/.obsidian/appearance.json"),
+  );
+  appearance.enabledCssSnippets = snippets;
+  writeFileSync(
+    "./runner/vault/.obsidian/appearance.json",
+    JSON.stringify(appearance),
+  );
+}
+
 async function getStylesFromObsidian(
   manifest,
   manifestCollection,
@@ -270,6 +306,7 @@ async function getStylesFromObsidian(
   darkDefaultStyles,
   lightDefaultStyles,
   browser,
+  obsidianPage,
 ) {
   const [theme, variation] = manifest.name.split(".");
   const fullName =
@@ -282,6 +319,7 @@ async function getStylesFromObsidian(
     `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
     preset,
   );
+  enableSnippets(manifest.snippets ?? []);
   const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
   const extras = manifest.extra_extract_files ?? [];
   mkdirSync(`./runner/results/${folder}`, { recursive: true });
@@ -302,117 +340,157 @@ async function getStylesFromObsidian(
   console.log(`Extracting styles for theme: ${theme}`);
 
   if (isDarkTheme(theme)) {
-    const darkPage = await browser.getObsidianPage();
-    await darkPage.write(
-      "./.obsidian/plugins/obsidian-style-settings/data.json",
-      preset,
-    );
+    const darkPage = obsidianPage;
+    await ensureLayoutReady(browser);
+    // while (ready === false) {
+    //   await sleep(100);
+    // }
+    // await darkPage.write(
+    //   "./.obsidian/plugins/obsidian-style-settings/data.json",
+    //   preset,
+    // );
     // Write all snippets to the temporary vault
-    mkdirSync(`${darkPage.getVaultPath()}/.obsidian/snippets/`, {
-      recursive: true,
-    });
-    for (const snippet of manifest.snippets ?? []) {
-      writeFileSync(
-        `${darkPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
-        readFileSync(
-          `./runner/vault/.obsidian/snippets/${snippet}.css`,
-          "utf-8",
+    // mkdirSync(`${darkPage.getVaultPath()}/.obsidian/snippets/`, {
+    //   recursive: true,
+    // });
+    // for (const snippet of manifest.snippets ?? []) {
+    //   writeFileSync(
+    //     `${darkPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
+    //     readFileSync(
+    //       `./runner/vault/.obsidian/snippets/${snippet}.css`,
+    //       "utf-8",
+    //     ),
+    //   );
+    // }
+    // const defaultAppearanceObject = {
+    //   theme: "obsidian",
+    //   cssTheme: fullName,
+    //   enabledCssSnippets: manifest.snippets ?? [],
+    //   nativeMenus: false,
+    // };
+    // writeFileSync(
+    //   `${darkPage.getVaultPath()}/.obsidian/appearance.json`,
+    //   JSON.stringify(defaultAppearanceObject, null, 2),
+    // );
+    // await sleep(500);
+    // await sleep(1);
+    // await darkPage.loadWorkspaceLayout("default");
+    // await sleep(250);
+    // await sleep(1);
+    // await darkPage.setTheme(fullName);
+    // await sleep(250);
+    // await sleep(1);
+    // await browser.executeObsidianCommand("theme:use-dark");
+    await ensureLayoutReady(browser)
+      .then(() => darkPage.loadWorkspaceLayout("default"))
+      .then(() => darkPage.setTheme(fullName))
+      .then(() =>
+        browser.executeObsidian(async ({ app }) => {
+          const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+          if (currentMode !== "dark") {
+            app.commands.executeCommandById("theme:toggle-light-dark");
+          }
+        }),
+      )
+      .then(() =>
+        darkPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
         ),
       );
-    }
-    const defaultAppearanceObject = {
-      theme: "obsidian",
-      cssTheme: fullName,
-      enabledCssSnippets: manifest.snippets ?? [],
-      nativeMenus: false,
-    };
-    writeFileSync(
-      `${darkPage.getVaultPath()}/.obsidian/appearance.json`,
-      JSON.stringify(defaultAppearanceObject, null, 2),
-    );
-    // await sleep(500);
-    await sleep(1);
-    await darkPage.loadWorkspaceLayout("default");
-    // await sleep(250);
-    await sleep(1);
-    await darkPage.setTheme(fullName);
-    // await sleep(250);
-    await sleep(1);
-    // await browser.executeObsidianCommand("theme:use-dark");
-    await browser.executeObsidian(async ({ app }) => {
-      const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
-      if (currentMode !== "dark") {
-        app.commands.executeCommandById("theme:toggle-light-dark");
-      }
-    });
     // await sleep(100);
-    await sleep(1);
-    await browser.reloadObsidian();
-    // await sleep(100);
-    await sleep(1);
-    await browser.executeObsidian(async ({ app, plugins }) => {
-      const clickableFolder = document.querySelector(
-        "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+    // await sleep(1);
+    await ensureLayoutReady(browser)
+      .then(() => browser.reloadObsidian())
+      .then(() => ensureLayoutReady(browser))
+      .then(() =>
+        browser.executeObsidian(async ({ app, plugins }) => {
+          const clickableFolder = document.querySelector(
+            "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+          );
+          if (clickableFolder) {
+            clickableFolder.click();
+          }
+        }),
       );
-      if (clickableFolder) {
-        clickableFolder.click();
-      }
-    });
-    // await sleep(500);
-    await sleep(1);
-    await darkPage.openFile("general.md");
+    // await ensureLayoutReady(browser);
     // await sleep(100);
-    await sleep(1);
-    await darkPage.openFile("general.md");
-    // await sleep(900);
-    await sleep(1);
-    darkResult.general = await serializeWithStyles(darkDefaultStyles, browser);
+    // await sleep(1);
+    // await browser.executeObsidian(async ({ app, plugins }) => {
+    //   const clickableFolder = document.querySelector(
+    //     "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+    //   );
+    //   if (clickableFolder) {
+    //     clickableFolder.click();
+    //   }
+    // });
     // await sleep(500);
-    await sleep(1);
-    await darkPage.openFile("headings.md");
+    // await sleep(1);
+    // await darkPage.openFile("general.md");
     // await sleep(100);
-    await sleep(1);
-    await darkPage.openFile("headings.md");
+    // await sleep(1);
+    // await darkPage.openFile("general.md");
     // await sleep(900);
-    await sleep(1);
-    darkResult.headings = await serializeWithStyles(darkDefaultStyles, browser);
+    // await sleep(1);
+    darkResult.general = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("general.md"))
+      .then(() => darkPage.openFile("general.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
-    await darkPage.openFile("callouts.md");
+    // await sleep(1);
+    // await darkPage.openFile("headings.md");
     // await sleep(100);
-    await sleep(1);
-    await darkPage.openFile("callouts.md");
+    // await sleep(1);
+    // await darkPage.openFile("headings.md");
     // await sleep(900);
-    await sleep(1);
-    darkResult.callouts = await serializeWithStyles(darkDefaultStyles, browser);
+    // await sleep(1);
+    darkResult.headings = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("headings.md"))
+      .then(() => darkPage.openFile("headings.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
-    await darkPage.openFile("integrations.md");
+    // await sleep(1);
+    // await darkPage.openFile("callouts.md");
     // await sleep(100);
-    await sleep(1);
-    await darkPage.openFile("integrations.md");
+    // await sleep(1);
+    // await darkPage.openFile("callouts.md");
     // await sleep(900);
-    await sleep(1);
-    darkResult.integrations = await serializeWithStyles(
-      darkDefaultStyles,
-      browser,
-    );
+    // await sleep(1);
+    darkResult.callouts = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("callouts.md"))
+      .then(() => darkPage.openFile("callouts.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
+    // await sleep(1);
+    // await darkPage.openFile("integrations.md");
+    // await sleep(100);
+    // await sleep(1);
+    // await darkPage.openFile("integrations.md");
+    // await sleep(900);
+    // await sleep(1);
+    darkResult.integrations = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("integrations.md"))
+      .then(() => darkPage.openFile("integrations.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    // await sleep(500);
+    // await sleep(1);
     if (extras.length > 0) {
       extras.forEach(async (extra) => {
-        await darkPage.openFile(`theme-extras/${extra}`);
+        // await darkPage.openFile(`theme-extras/${extra}`);
         // await sleep(100);
-        await sleep(1);
-        await darkPage.openFile(`theme-extras/${extra}`);
+        // await sleep(1);
+        // await darkPage.openFile(`theme-extras/${extra}`);
         // await sleep(900);
-        await sleep(1);
-        const result = await serializeWithStyles(darkDefaultStyles, browser);
+        // await sleep(1);
+        const result = await ensureLayoutReady(browser)
+          .then(() => darkPage.openFile(`theme-extras/${extra}`))
+          .then(() => darkPage.openFile(`theme-extras/${extra}`))
+          .then(() => serializeWithStyles(darkDefaultStyles, browser));
         darkResult.extras = { ...darkResult.extras, ...result };
       });
     }
     // await sleep(500);
-    await sleep(1);
+    // await sleep(1);
     const darkFileName = `./runner/results/${folder}/dark.json`;
     // Flatten the result object
     let darkResultObject = {};
@@ -435,130 +513,179 @@ async function getStylesFromObsidian(
     // unset variables to allow garbage collection
     printMemoryUsage();
     // await sleep(500);
-    await sleep(1);
+    // await sleep(1);
   }
   if (isLightTheme(theme)) {
-    const lightPage = await browser.getObsidianPage();
-    await lightPage.write(
-      "./.obsidian/plugins/obsidian-style-settings/data.json",
-      preset,
-    );
+    const lightPage = obsidianPage;
+    await ensureLayoutReady(browser);
+    // await lightPage.write(
+    //   "./.obsidian/plugins/obsidian-style-settings/data.json",
+    //   preset,
+    // );
     // Write all snippets to the temporary vault
-    mkdirSync(`${lightPage.getVaultPath()}/.obsidian/snippets/`, {
-      recursive: true,
-    });
-    for (const snippet of manifest.snippets ?? []) {
-      writeFileSync(
-        `${lightPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
-        readFileSync(
-          `./runner/vault/.obsidian/snippets/${snippet}.css`,
-          "utf-8",
+    // mkdirSync(`${lightPage.getVaultPath()}/.obsidian/snippets/`, {
+    //   recursive: true,
+    // });
+    // for (const snippet of manifest.snippets ?? []) {
+    //   writeFileSync(
+    //     `${lightPage.getVaultPath()}/.obsidian/snippets/${snippet}.css`,
+    //     readFileSync(
+    //       `./runner/vault/.obsidian/snippets/${snippet}.css`,
+    //       "utf-8",
+    //     ),
+    //   );
+    // }
+    // const defaultAppearanceObject = {
+    //   theme: "moonstone",
+    //   cssTheme: fullName,
+    //   enabledCssSnippets: manifest.snippets ?? [],
+    //   nativeMenus: false,
+    // };
+    // writeFileSync(
+    //   `${lightPage.getVaultPath()}/.obsidian/appearance.json`,
+    //   JSON.stringify(defaultAppearanceObject, null, 2),
+    // );
+    // await sleep(500);
+    // await sleep(1);
+    // await browser.setWindowSize(1920, 10800);
+    await ensureLayoutReady(browser)
+      .then(() => lightPage.loadWorkspaceLayout("default"))
+      .then(() => lightPage.setTheme(fullName))
+      .then(() =>
+        browser.executeObsidian(async ({ app }) => {
+          const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+          if (currentMode !== "light") {
+            app.commands.executeCommandById("theme:toggle-light-dark");
+          }
+        }),
+      )
+      .then(() =>
+        lightPage.write(
+          "./.obsidian/plugins/obsidian-style-settings/data.json",
+          preset,
         ),
       );
-    }
-    const defaultAppearanceObject = {
-      theme: "moonstone",
-      cssTheme: fullName,
-      enabledCssSnippets: manifest.snippets ?? [],
-      nativeMenus: false,
-    };
-    writeFileSync(
-      `${lightPage.getVaultPath()}/.obsidian/appearance.json`,
-      JSON.stringify(defaultAppearanceObject, null, 2),
-    );
-    // await sleep(500);
-    await sleep(1);
-    // await browser.setWindowSize(1920, 10800);
-    await lightPage.loadWorkspaceLayout("default");
     // await sleep(250);
-    await sleep(1);
-    await lightPage.setTheme(fullName);
+    // await sleep(1);
+    // await lightPage.setTheme(fullName);
     // await sleep(250);
-    await sleep(1);
+    // await sleep(1);
     // await browser.executeObsidianCommand("theme:use-light");
-    await browser.executeObsidian(async ({ app }) => {
-      const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
-      if (currentMode !== "light") {
-        app.commands.executeCommandById("theme:toggle-light-dark");
-      }
-    });
+    // await browser.executeObsidian(async ({ app }) => {
+    //   const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+    //   if (currentMode !== "light") {
+    //     app.commands.executeCommandById("theme:toggle-light-dark");
+    //   }
+    // });
     // await sleep(250);
-    await sleep(1);
-    await browser.reloadObsidian();
-    // await sleep(250);
-    await sleep(1);
-    await browser.executeObsidian(async ({ app, plugins }) => {
-      const clickableFolder = document.querySelector(
-        "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+    // await sleep(1);
+    await ensureLayoutReady(browser)
+      .then(() => browser.reloadObsidian())
+      .then(() => ensureLayoutReady(browser))
+      .then(() =>
+        browser.executeObsidian(async ({ app, plugins }) => {
+          const clickableFolder = document.querySelector(
+            "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+          );
+          if (clickableFolder) {
+            clickableFolder.click();
+          }
+        }),
       );
-      if (clickableFolder) {
-        clickableFolder.click();
-      }
-    });
+    // await sleep(250);
+    // await sleep(1);
+    // await browser.executeObsidian(async ({ app, plugins }) => {
+    //   const clickableFolder = document.querySelector(
+    //     "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div.tree-item.nav-folder.is-collapsed > div",
+    //   );
+    //   if (clickableFolder) {
+    //     clickableFolder.click();
+    //   }
+    // });
     // await sleep(500);
-    await sleep(1);
-    await lightPage.openFile("general.md");
+    // await sleep(1);
+    // await lightPage.openFile("general.md");
     // await sleep(100);
-    await sleep(1);
-    await lightPage.openFile("general.md");
+    // await sleep(1);
+    // await lightPage.openFile("general.md");
     // await sleep(900);
-    await sleep(1);
-    lightResult.general = await serializeWithStyles(
-      lightDefaultStyles,
-      browser,
-    );
+    // await sleep(1);
+    // lightResult.general = await serializeWithStyles(
+    //   lightDefaultStyles,
+    //   browser,
+    // );
+    lightResult.general = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("general.md"))
+      .then(() => lightPage.openFile("general.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
-    await lightPage.openFile("headings.md");
+    // await sleep(1);
+    // await lightPage.openFile("headings.md");
     // await sleep(100);
-    await sleep(1);
-    await lightPage.openFile("headings.md");
+    // await sleep(1);
+    // await lightPage.openFile("headings.md");
     // await sleep(900);
-    await sleep(1);
-    lightResult.headings = await serializeWithStyles(
-      lightDefaultStyles,
-      browser,
-    );
+    // await sleep(1);
+    // lightResult.headings = await serializeWithStyles(
+    //   lightDefaultStyles,
+    //   browser,
+    // );
+    lightResult.headings = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("headings.md"))
+      .then(() => lightPage.openFile("headings.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
-    await lightPage.openFile("callouts.md");
+    // await sleep(1);
+    // await lightPage.openFile("callouts.md");
     // await sleep(100);
-    await sleep(1);
-    await lightPage.openFile("callouts.md");
+    // await sleep(1);
+    // await lightPage.openFile("callouts.md");
     // await sleep(900);
-    await sleep(1);
-    lightResult.callouts = await serializeWithStyles(
-      lightDefaultStyles,
-      browser,
-    );
+    // await sleep(1);
+    // lightResult.callouts = await serializeWithStyles(
+    //   lightDefaultStyles,
+    //   browser,
+    // );
+    lightResult.callouts = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("callouts.md"))
+      .then(() => lightPage.openFile("callouts.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
-    await lightPage.openFile("integrations.md");
+    // await sleep(1);
+    // await lightPage.openFile("integrations.md");
     // await sleep(100);
-    await sleep(1);
-    await lightPage.openFile("integrations.md");
+    // await sleep(1);
+    // await lightPage.openFile("integrations.md");
     // await sleep(900);
-    await sleep(1);
-    lightResult.integrations = await serializeWithStyles(
-      lightDefaultStyles,
-      browser,
-    );
+    // await sleep(1);
+    // lightResult.integrations = await serializeWithStyles(
+    //   lightDefaultStyles,
+    //   browser,
+    // );
+    lightResult.integrations = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("integrations.md"))
+      .then(() => lightPage.openFile("integrations.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
     // await sleep(500);
-    await sleep(1);
+    // await sleep(1);
     if (extras.length > 0) {
       extras.forEach(async (extra) => {
-        await lightPage.openFile(`theme-extras/${extra}`);
+        // await lightPage.openFile(`theme-extras/${extra}`);
         // await sleep(100);
-        await sleep(1);
-        await lightPage.openFile(`theme-extras/${extra}`);
+        // await sleep(1);
+        // await lightPage.openFile(`theme-extras/${extra}`);
         // await sleep(900);
-        await sleep(1);
-        const result = await serializeWithStyles(lightDefaultStyles, browser);
+        // await sleep(1);
+        // const result = await serializeWithStyles(lightDefaultStyles, browser);
+        const result = await ensureLayoutReady(browser)
+          .then(() => lightPage.openFile(`theme-extras/${extra}`))
+          .then(() => lightPage.openFile(`theme-extras/${extra}`))
+          .then(() => serializeWithStyles(lightDefaultStyles, browser));
         lightResult.extras = { ...lightResult.extras, ...result };
       });
     }
     // await sleep(500);
-    await sleep(1);
+    // await sleep(1);
     // Save the light result to a file
     const lightFileName = `./runner/results/${folder}/light.json`;
     // Flatten the result object
@@ -636,6 +763,10 @@ const browser = await startWdioSession({
   },
 });
 
+enableSnippets([]);
+
+const obsidianPage = browser.getObsidianPage();
+
 for (const manifest of manifestTargets) {
   console.log(`Processing target: ${manifest.name}`);
   const preset = JSON.stringify(manifest.style_settings ?? {});
@@ -646,6 +777,7 @@ for (const manifest of manifestTargets) {
     darkDefaultStyles,
     lightDefaultStyles,
     browser,
+    obsidianPage,
   );
 }
 
@@ -654,6 +786,8 @@ try {
 } catch {
   // silent catch
 }
+
+enableSnippets([]);
 
 writeFileSync(
   `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,

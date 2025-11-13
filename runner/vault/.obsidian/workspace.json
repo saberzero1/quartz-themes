@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-extras/its-theme/callouts/statblocks.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "statblocks"
+              "title": "general"
             }
           }
         ]
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "p",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-extras/its-theme/callouts/statblocks.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of statblocks"
+              "title": "Outline of general"
             }
           },
           {
@@ -206,10 +206,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "1298f15d19bec7c3",
+  "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-extras/its-theme/checkboxes.md",
+    "headings.md",
+    "general.md",
     "theme-extras/its-theme/callouts/statblocks.md",
+    "theme-extras/its-theme/checkboxes.md",
     "theme-extras/its-theme/callouts/infoboxes.md",
     "theme-extras/its-theme/callouts/columns.md",
     "theme-extras/its-theme/callouts/Image.png",
@@ -219,7 +221,6 @@
     "extras/its-theme/checkboxes.md",
     "extras/its-theme/callouts/callouts.md",
     "callouts.md",
-    "general.md",
     "extras/its-theme/callouts",
     "extras/its-theme",
     "extras",
@@ -240,7 +241,6 @@
     "per-theme/wikipedia.md",
     "per-theme/wasp.md",
     "per-theme/w95.md",
-    "per-theme/vortex.md",
     "per-theme",
     "folder/collapsed",
     "folder/nested",

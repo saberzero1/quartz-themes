@@ -838,6 +838,7 @@ body.theme-light {
   --accent: #800008 !important;
   --text: #393636 !important;
   --bullet: "" !important;
+  --hr-width: auto !important;
   --graph-arrow: #5c1c16 !important;
   --graph-tag: #5d0000 !important;
   --he-title-bar-active-action: #e58000 !important;
@@ -1058,7 +1059,6 @@ body.theme-light {
   --hr-icon-color: #ca9759 !important;
   --hr-icon-font: "its" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-width: auto !important;
   --hvr: rgba(191, 0, 0, 0.2) !important;
   --hvr-active: #e5800040 !important;
   --hvr2: rgba(191, 0, 0, 0.2) !important;
@@ -2126,6 +2126,7 @@ body.theme-dark {
   --accent: #863737;
   --text: #bccad8;
   --bullet: "";
+  --hr-width: auto;
   --graph-arrow: #97a1b9;
   --graph-tag: #a22b30;
   --he-title-bar-active-action: #c94d4d;
@@ -2345,7 +2346,6 @@ body.theme-dark {
   --hr-icon-color: #ddaf78;
   --hr-icon-font: "its";
   --hr-icon-padding-x: 4px;
-  --hr-width: auto;
   --hvr: rgba(191, 0, 0, 0.2);
   --hvr-active: #e5800040;
   --hvr2: rgba(191, 0, 0, 0.2);

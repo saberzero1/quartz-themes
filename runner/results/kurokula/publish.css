@@ -890,12 +890,12 @@ body.theme-dark {
   --embed-border-right: none;
   --vault-name-font-size: 16px;
   --vault-name-font-weight: 500;
-  --italic-weight: 300;
   --tag-weight: 100;
   --code-inline: #dbbb43;
   --h-font-style: oblique 10deg;
   --h-font-variant: proportional-nums;
   --h-weight: 900;
+  --italic-weight: 300;
   --kuro-black-dark: #141515;
   --kuro-black-dark-rgb: 20, 21, 21;
   --kuro-black-light: #515151;
