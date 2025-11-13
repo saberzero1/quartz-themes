@@ -953,7 +953,6 @@ body.theme-dark {
   --light-blue: #303f51;
   --bold-color: #b9e678;
   --italic-color: #f8c260;
-  --italic-weight: bold;
   --tag-weight: 600;
   --callout-title-color: none;
   --dark-blue: #1d2833;
@@ -964,6 +963,7 @@ body.theme-dark {
   --bright-red: #ff695d;
   --bright-yellow: #f8c260;
   --soft-white: #eeead1;
+  --italic-weight: bold;
   --almost-white: #f7f5e9;
   --basic-gray: #cfd1d1;
   --blue-gray: #c4d1d1;

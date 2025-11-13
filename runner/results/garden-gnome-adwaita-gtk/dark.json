@@ -13233,6 +13233,8 @@
     "font-size": "13px",
     "line-break": "after-white-space",
     "line-height": "16.9px",
+    "margin-inline-start": "-64px",
+    "margin-left": "-64px",
     "min-block-size": "0px",
     "min-height": "0px",
     "min-inline-size": "0px",
