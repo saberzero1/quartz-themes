@@ -2894,7 +2894,7 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(255, 255, 255, 0.067)
   );
   border: 0px light-dark(rgb(38, 38, 38), rgb(244, 244, 244));
-  border-left: 3px solid light-dark(rgb(15, 98, 254), rgb(56, 136, 255));
+  border-left: 3px solid light-dark(rgb(244, 244, 244), rgb(38, 38, 38));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
