@@ -1385,7 +1385,7 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(161, 249, 143, 0.14);
+    background-color: rgba(163, 249, 145, 0.137);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -1816,7 +1816,7 @@ body {
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(199, 199, 199);
     font-weight: 400;
-    background-color: rgba(161, 249, 143, 0.14);
+    background-color: rgba(163, 249, 145, 0.137);
   }
 
   .search

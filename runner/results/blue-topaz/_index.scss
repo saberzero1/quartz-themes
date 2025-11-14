@@ -9831,7 +9831,7 @@ body {
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(39, 39, 39), rgb(179, 179, 179));
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -9840,7 +9840,7 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: light-dark(rgb(39, 39, 39), rgb(179, 179, 179));
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
