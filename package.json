@@ -20,6 +20,7 @@
     "quartz:install": "cd ./runner/quartz && npm i -D",
     "quartz:serve": "cd ./runner/quartz && npx quartz build -d docs --serve",
     "quartz:full": "npm run web:full && npm run quartz:install && npm run quartz:serve",
+    "everything": "npm run web:run && just lint && npm run db:prep && just lint && npm run db:drop && npm run db:ingest && npm run web:compile && npm run web:misc && just lint && git status",
     "build": "just build",
     "compile": "just compile",
     "compile-all": "just compile-all",

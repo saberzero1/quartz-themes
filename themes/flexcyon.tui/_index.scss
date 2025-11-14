@@ -4114,10 +4114,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0),
-      color(srgb 0.118646 0.130793 0.165667)
-    );
+    background-color: rgba(0, 0, 0, 0);
     border: 0px light-dark(rgb(87, 112, 185), rgb(148, 238, 111));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;

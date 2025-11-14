@@ -1,0 +1,37 @@
+- [ ] empty
+- [ ] unchecked
+- [x] checked
+- [/] forward slash
+- [_] underscore
+- [*] star
+- [+] plus sign
+- [-] minus sign
+- [=] equal sign
+- [&] ampersand
+- [@] at sign
+- [$] dollar sign
+- ['] single quote
+- ["] double quote
+- [:] colon
+- [;] semicolon
+- [|] pipe
+- [?] question mark
+- [!] exclaimation mark
+- [~] tilde
+- [`] backtick
+- [#] hashtag
+- [.] period
+- [,] comma
+- [<] less than sign
+- [>] greater than sign
+- [%] percent sign
+- [1] one
+- [2] two
+- [3] three
+- [4] four
+- [5] five
+- [6] six
+- [7] seven
+- [8] eight
+- [9] nine
+- [0] zero

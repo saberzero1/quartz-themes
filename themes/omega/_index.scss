@@ -2391,9 +2391,9 @@ body {
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
-    transition-duration: 1s;
-    transition-property: background-position, color;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
   }
 
   .explorer

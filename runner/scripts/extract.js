@@ -2,6 +2,7 @@
 import { startWdioSession } from "wdio-obsidian-service";
 import { memoryUsage } from "process";
 // import { extractionTargets } from "./config.wip.js";
+import { resolve } from "path";
 import {
   dark as darkDefaultStyles,
   light as lightDefaultStyles,
@@ -19,9 +20,10 @@ const VERSION = "1.10.3";
 const INSTALLER_VERSION = "1.10.3";
 
 let testingMode = false;
-testingMode = true;
-const testingTheme = "a";
+// testingMode = true;
+const testingTheme = "its";
 
+const cacheDir = resolve(".obsidian-cache");
 const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(
   (file) => file.endsWith(".css") || file.endsWith(".json"),
 );
@@ -74,8 +76,8 @@ const themeCollection = testingMode
 
 const themeCollection = testingMode
   ? getThemeCollection().filter((m) =>
-      m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
-    )
+    m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
+  )
   : getThemeCollection();
 // console.log(themeCollection);
 
@@ -148,36 +150,35 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
               : psuedoRegular) {
               const computedStyle =
                 e.tagName.toLowerCase() === "body" ||
-                e.tagName.toLowerCase() === "html"
+                  e.tagName.toLowerCase() === "html"
                   ? e.computedStyleMap()
                   : toStyleMap(window.getComputedStyle(e, psuedoElement));
               const defaultStyle =
                 defaultStylesByTagName[e.tagName.toUpperCase()];
               const classes = e.classList
                 ? e.classList
-                    .toString()
-                    .split(" ")
-                    .filter((c) => c.trim() !== "")
+                  .toString()
+                  .split(" ")
+                  .filter((c) => c.trim() !== "")
                 : [];
               const attributes = e.attributes
                 ? Array.from(e.attributes)
-                    .filter(
-                      (attr) =>
-                        (attr.name.startsWith("data") &&
-                          !attr.name.endsWith("-id")) ||
-                        attr.name === "type",
-                    )
-                    .map((attr) => `${attr.name}="${attr.value}"`)
+                  .filter(
+                    (attr) =>
+                      (attr.name.startsWith("data") &&
+                        !attr.name.endsWith("-id")) ||
+                      attr.name === "type",
+                  )
+                  .map((attr) => `${attr.name}="${attr.value}"`)
                 : [];
               const selectorKey = ["html", "body"].includes(
                 e.tagName.toLowerCase(),
               )
                 ? e.tagName.toLowerCase()
-                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${
-                    attributes.length > 0
-                      ? "[" + attributes.toSorted().join("][") + "]"
-                      : ""
-                  }${psuedoElement ?? ""}`;
+                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${attributes.length > 0
+                  ? "[" + attributes.toSorted().join("][") + "]"
+                  : ""
+                }${psuedoElement ?? ""}`;
               for (const [prop, val] of computedStyle) {
                 if (
                   (prop &&
@@ -187,7 +188,7 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                     !prop.startsWith("--") &&
                     !prop.startsWith("-webkit-") &&
                     /*computedStyle.getPropertyValue(prop)*/ val.toString() !==
-                      (defaultStyle ? defaultStyle[prop] : undefined) &&
+                    (defaultStyle ? defaultStyle[prop] : undefined) &&
                     ![
                       "-electron-corner-smoothing",
                       "anchor-scope",
@@ -259,7 +260,7 @@ function fixCalloutIconColor(results) {
       "background-color"
     ] =
       results[
-        `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
+      `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
       ]["color"];
   });
 
@@ -274,7 +275,7 @@ function getCurrentTheme() {
 
 async function ensureLayoutReady(browser) {
   return browser.executeObsidian(async ({ app }) => {
-    await app.workspace.onLayoutReady(() => {});
+    await app.workspace.onLayoutReady(() => { });
   });
 }
 
@@ -328,6 +329,7 @@ async function getStylesFromObsidian(
     headings: {},
     callouts: {},
     integrations: {},
+    checkboxes: {},
     extras: {},
   };
   let darkResult = {
@@ -335,6 +337,7 @@ async function getStylesFromObsidian(
     headings: {},
     callouts: {},
     integrations: {},
+    checkboxes: {},
     extras: {},
   };
   console.log(`Extracting styles for theme: ${theme}`);
@@ -474,20 +477,35 @@ async function getStylesFromObsidian(
       .then(() => serializeWithStyles(darkDefaultStyles, browser));
     // await sleep(500);
     // await sleep(1);
-    if (extras.length > 0) {
-      extras.forEach(async (extra) => {
-        // await darkPage.openFile(`theme-extras/${extra}`);
-        // await sleep(100);
-        // await sleep(1);
-        // await darkPage.openFile(`theme-extras/${extra}`);
-        // await sleep(900);
-        // await sleep(1);
-        const result = await ensureLayoutReady(browser)
-          .then(() => darkPage.openFile(`theme-extras/${extra}`))
-          .then(() => darkPage.openFile(`theme-extras/${extra}`))
-          .then(() => serializeWithStyles(darkDefaultStyles, browser));
-        darkResult.extras = { ...darkResult.extras, ...result };
-      });
+    const checkboxesSpecial = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-checkboxes/special.md"))
+      .then(() => darkPage.openFile("theme-checkboxes/special.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const checkboxesLowercase = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-checkboxes/lower.md"))
+      .then(() => darkPage.openFile("theme-checkboxes/lower.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const checkboxesUppercase = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-checkboxes/upper.md"))
+      .then(() => darkPage.openFile("theme-checkboxes/upper.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    darkResult.checkboxes = {
+      ...checkboxesSpecial,
+      ...checkboxesLowercase,
+      ...checkboxesUppercase,
+    };
+    for (const extra of extras) {
+      // await darkPage.openFile(`theme-extras/${extra}`);
+      // await sleep(100);
+      // await sleep(1);
+      // await darkPage.openFile(`theme-extras/${extra}`);
+      // await sleep(900);
+      // await sleep(1);
+      const result = await ensureLayoutReady(browser)
+        .then(() => darkPage.openFile(`theme-extras/${extra}`))
+        .then(() => darkPage.openFile(`theme-extras/${extra}`))
+        .then(() => serializeWithStyles(darkDefaultStyles, browser));
+      darkResult.extras = { ...darkResult.extras, ...result };
     }
     // await sleep(500);
     // await sleep(1);
@@ -668,22 +686,38 @@ async function getStylesFromObsidian(
       .then(() => serializeWithStyles(lightDefaultStyles, browser));
     // await sleep(500);
     // await sleep(1);
-    if (extras.length > 0) {
-      extras.forEach(async (extra) => {
-        // await lightPage.openFile(`theme-extras/${extra}`);
-        // await sleep(100);
-        // await sleep(1);
-        // await lightPage.openFile(`theme-extras/${extra}`);
-        // await sleep(900);
-        // await sleep(1);
-        // const result = await serializeWithStyles(lightDefaultStyles, browser);
-        const result = await ensureLayoutReady(browser)
-          .then(() => lightPage.openFile(`theme-extras/${extra}`))
-          .then(() => lightPage.openFile(`theme-extras/${extra}`))
-          .then(() => serializeWithStyles(lightDefaultStyles, browser));
-        lightResult.extras = { ...lightResult.extras, ...result };
-      });
+    const checkboxesSpecial = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-checkboxes/special.md"))
+      .then(() => lightPage.openFile("theme-checkboxes/special.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const checkboxesLowercase = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-checkboxes/lower.md"))
+      .then(() => lightPage.openFile("theme-checkboxes/lower.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const checkboxesUppercase = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-checkboxes/upper.md"))
+      .then(() => lightPage.openFile("theme-checkboxes/upper.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    lightResult.checkboxes = {
+      ...checkboxesSpecial,
+      ...checkboxesLowercase,
+      ...checkboxesUppercase,
+    };
+    for (const extra of extras) {
+      // await lightPage.openFile(`theme-extras/${extra}`);
+      // await sleep(100);
+      // await sleep(1);
+      // await lightPage.openFile(`theme-extras/${extra}`);
+      // await sleep(900);
+      // await sleep(1);
+      // const result = await serializeWithStyles(lightDefaultStyles, browser);
+      const result = await ensureLayoutReady(browser)
+        .then(() => lightPage.openFile(`theme-extras/${extra}`))
+        .then(() => lightPage.openFile(`theme-extras/${extra}`))
+        .then(() => serializeWithStyles(lightDefaultStyles, browser));
+      lightResult.extras = { ...lightResult.extras, ...result };
     }
+
     // await sleep(500);
     // await sleep(1);
     // Save the light result to a file
@@ -761,11 +795,20 @@ const browser = await startWdioSession({
       ],
     },
   },
+  waitforInterval: 5 * 60 * 1000,
+  waitforTimeout: 15 * 60 * 1000,
+  cacheDir: cacheDir,
+  logLevel: "warn",
+  execArgv: ["--expose-gc", "--max-old-space-size=12288"],
 });
 
 enableSnippets([]);
 
 const obsidianPage = browser.getObsidianPage();
+
+await ensureLayoutReady(browser)
+  .then(() => browser.reloadObsidian())
+  .then(() => ensureLayoutReady(browser));
 
 for (const manifest of manifestTargets) {
   console.log(`Processing target: ${manifest.name}`);
@@ -781,13 +824,13 @@ for (const manifest of manifestTargets) {
   );
 }
 
+enableSnippets([]);
+
 try {
   await browser?.deleteSession();
 } catch {
   // silent catch
 }
-
-enableSnippets([]);
 
 writeFileSync(
   `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,

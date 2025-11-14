@@ -3775,10 +3775,7 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: none solid color(srgb 0.684468 0.713571 0.708941 / 0.8);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0),
-    color(srgb 0.118646 0.130793 0.165667)
-  );
+  background-color: rgba(0, 0, 0, 0);
   border: 0px light-dark(rgb(87, 112, 185), rgb(148, 238, 111));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
